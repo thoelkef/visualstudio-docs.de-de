@@ -1,8 +1,7 @@
 ---
 title: "CreateNewFolder-Element (Visual Studio-Vorlagen) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "CreateNewFolder-Element [Visual Studio-Projektvorlagen]"
 ms.assetid: acef2016-4140-45d6-ace8-b8160eabd676
 caps.latest.revision: 14
-caps.handback.revision: 14
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # CreateNewFolder-Element (Visual Studio-Vorlagen)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

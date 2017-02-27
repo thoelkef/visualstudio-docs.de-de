@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Schreiben einer Berichtsfunktion f&#252;r Laufzeitfehler | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,10 +22,10 @@ helpviewer_keywords:
   - "Laufzeitfehler, Berichtsfunktionen"
 ms.assetid: 989bf312-5038-44f3-805f-39a34d18760e
 caps.latest.revision: 15
-caps.handback.revision: 15
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 15
 ---
 # Gewusst wie: Schreiben einer Berichtsfunktion f&#252;r Laufzeitfehler
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Hinzuf&#252;gen von Knoten aus der Ausgangsansicht zum Arbeitsbereich | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 3fc7af94-dcb8-4226-a577-43f03664388b
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 5
 ---
 # Gewusst wie: Hinzuf&#252;gen von Knoten aus der Ausgangsansicht zum Arbeitsbereich
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

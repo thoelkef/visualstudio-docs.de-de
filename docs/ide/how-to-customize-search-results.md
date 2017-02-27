@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Anpassen von Suchergebnissen | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,10 +13,10 @@ helpviewer_keywords:
   - "Suchergebnisse anpassen [Help Viewer 2.0]"
 ms.assetid: 3431ec03-0221-4be2-9936-887a1c36db89
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 6
 ---
 # Gewusst wie: Anpassen von Suchergebnissen
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,16 +1,16 @@
 ---
 title: "Gewusst wie: Bereitstellen einen asynchronen Visual Studio-Dienst | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0448274c-d3d2-4e12-9d11-8aca78a1f3f5
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # Gewusst wie: Bereitstellen einen asynchronen Visual Studio-Dienst
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

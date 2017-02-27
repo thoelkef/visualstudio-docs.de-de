@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Festlegen eines Threadnamens in verwaltetem Code | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,10 +20,10 @@ helpviewer_keywords:
   - "Threading [Visual Studio], Namen"
 ms.assetid: c0c4d74a-0314-4b71-81c9-b0b019347ab8
 caps.latest.revision: 28
-caps.handback.revision: 28
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 28
 ---
 # Gewusst wie: Festlegen eines Threadnamens in verwaltetem Code
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

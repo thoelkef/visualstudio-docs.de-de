@@ -1,8 +1,7 @@
 ---
 title: "Speichern und Exportieren von Daten aus Leistungstools | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "Leistungstools, Speichern und Exportieren von Berichten"
 ms.assetid: 2e9b28fe-3ed2-4e1d-b9cb-0a5e384380b0
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # Speichern und Exportieren von Daten aus Leistungstools
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

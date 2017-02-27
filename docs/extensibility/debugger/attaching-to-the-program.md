@@ -1,8 +1,7 @@
 ---
 title: "Anf&#252;gen an das Programm | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Debugmodule, Anhängen an Programme"
 ms.assetid: 9a3f5b83-60b5-4ef0-91fe-a432105bd066
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # Anf&#252;gen an das Programm
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

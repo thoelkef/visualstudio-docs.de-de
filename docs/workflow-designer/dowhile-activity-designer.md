@@ -1,8 +1,7 @@
 ---
 title: "DoWhile-Aktivit&#228;tsdesigner | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -11,10 +10,10 @@ f1_keywords:
   - "System.Activities.Statements.DoWhile.UI"
 ms.assetid: 948deb35-d72f-462b-bea6-4b119c10a148
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 7
 ---
 # DoWhile-Aktivit&#228;tsdesigner
 Die <xref:System.Activities.Statements.DoWhile>\-Aktivität führt die in ihrem <xref:System.Activities.Statements.DoWhile.Body%2A>\-Element enthaltene Aktivität mindestens einmal aus, bis eine angegebene Bedingung **false** ergibt.Wenn die in einem Schleifentext enthaltene Anwendung der 0 \(null\) oder mehrmals ausgeführt werden soll, verwenden Sie stattdessen die <xref:System.Activities.Statements.While>\-Aktivität.  

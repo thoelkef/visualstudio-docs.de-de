@@ -1,8 +1,7 @@
 ---
 title: "Optionen und Optionen (Seiten) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,9 +16,9 @@ helpviewer_keywords:
   - "Optionen (Seiten) [Visual Studio SDK] Attribute-Tools"
 ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 caps.latest.revision: 34
-caps.handback.revision: 34
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 34
 ---
 # Optionen und Optionen (Seiten)
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

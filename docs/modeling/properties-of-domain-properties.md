@@ -1,8 +1,7 @@
 ---
 title: "Eigenschaften von Dom&#228;neneigenschaften | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-tfs-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -11,10 +10,10 @@ helpviewer_keywords:
   - "Domänenspezifische Sprache, Domäneneigenschaften"
 ms.assetid: a9471562-d6f2-46bf-9872-e0d66ba03150
 caps.latest.revision: 24
-caps.handback.revision: 24
 author: "alancameronwills"
 ms.author: "awills"
 manager: "douge"
+caps.handback.revision: 24
 ---
 # Eigenschaften von Dom&#228;neneigenschaften
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

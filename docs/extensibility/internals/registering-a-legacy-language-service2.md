@@ -1,8 +1,7 @@
 ---
-title: "Registrieren einer Legacy-Sprachdienst | Microsoft Docs"
+title: "Registrieren eine &#228;ltere Sprache Service2 | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Sprachdienste-Registrierung"
 ms.assetid: ca312aa3-f9f1-4572-8553-89bf3a724deb
 caps.latest.revision: 24
-caps.handback.revision: 24
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 24
 ---
 # Registrieren einer Legacy-Sprachdienst
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

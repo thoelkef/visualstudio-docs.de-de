@@ -1,8 +1,7 @@
 ---
 title: "Shader-Designer-Knoten | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f5192fbd-c78f-40a8-a4d4-443209610268
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "BrianPeek"
 ms.author: "brpeek"
 manager: "ghogen"
+caps.handback.revision: 6
 ---
 # Shader-Designer-Knoten
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

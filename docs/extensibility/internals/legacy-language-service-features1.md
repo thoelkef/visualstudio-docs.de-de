@@ -1,8 +1,7 @@
 ---
-title: "Legacy-Dienst-Sprachfunktionen | Microsoft Docs"
+title: "&#196;ltere Sprache Service Features1 | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Sprachdienste [Verwaltetes Paketframework]"
 ms.assetid: a646e4f0-767d-4cd1-8e1a-9a2aa210a1b7
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # Legacy-Dienst-Sprachfunktionen
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

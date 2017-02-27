@@ -1,8 +1,7 @@
 ---
 title: "Referenz zu den Leistungsregeln der Profilerstellungstools | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 59fc9424-76ca-4365-ae47-bb14a736c9c2
 caps.latest.revision: 14
-caps.handback.revision: 14
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # Referenz zu den Leistungsregeln der Profilerstellungstools
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

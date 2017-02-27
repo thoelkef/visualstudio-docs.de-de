@@ -1,8 +1,7 @@
 ---
 title: "Codeanalysewarnungen f&#252;r verwalteten Code nach CheckId | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -261,10 +260,10 @@ f1_keywords:
   - "CA5122"
 ms.assetid: 5cb221f6-dc59-4abf-9bfa-adbd6f907f96
 caps.latest.revision: 21
-caps.handback.revision: 21
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 21
 ---
 # Codeanalysewarnungen f&#252;r verwalteten Code nach CheckId
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

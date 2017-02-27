@@ -1,8 +1,7 @@
 ---
 title: "Text-Puffer-Ereignisse in der Legacy-API | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Editoren [Visual Studio SDK] legacy - Puffer Ereignisse"
 ms.assetid: 9be49e9f-1864-41c2-8a3c-f66895881341
 caps.latest.revision: 16
-caps.handback.revision: 16
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 16
 ---
 # Text-Puffer-Ereignisse in der Legacy-API
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

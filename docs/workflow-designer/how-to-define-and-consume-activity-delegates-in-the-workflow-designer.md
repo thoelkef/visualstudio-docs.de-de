@@ -1,17 +1,16 @@
 ---
 title: "Vorgehensweise: Definieren und Verarbeiten von Aktivit&#228;tsdelegaten im Workflow-Designer | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
 caps.latest.revision: 3
-caps.handback.revision: 3
 ms.author: "sdanie"
 manager: "erikre"
+caps.handback.revision: 3
 ---
 # Vorgehensweise: Definieren und Verarbeiten von Aktivit&#228;tsdelegaten im Workflow-Designer
 [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] enthält einen neuen vordefinierten Designer für die <xref:System.Activities.Statements.InvokeDelegate>\-Aktivität.Der Designer kann verwendet werden, um der Aktivität Delegate zuzuweisen, die von <xref:System.Activities.ActivityDelegate>, wie <xref:System.Activities.ActivityAction> oder <xref:System.Activities.ActivityFunc%601>, abgeleitet werden.  

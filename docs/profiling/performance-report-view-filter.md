@@ -1,8 +1,7 @@
 ---
 title: "Filter f&#252;r die Berichtsansicht der Profilerstellungstools | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,10 +13,10 @@ helpviewer_keywords:
   - "Filter für die Profiler-Berichtsansicht, Profilerstellungstools"
 ms.assetid: 35f89d86-4683-4db1-aa0c-ae0ce65fa524
 caps.latest.revision: 16
-caps.handback.revision: 16
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 16
 ---
 # Filter f&#252;r die Berichtsansicht der Profilerstellungstools
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

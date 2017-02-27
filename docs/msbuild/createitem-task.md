@@ -1,8 +1,7 @@
 ---
 title: "CreateItem Task | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,10 +20,10 @@ helpviewer_keywords:
   - "MSBuild, CreateItem task"
 ms.assetid: c4311f38-979e-4324-b524-9e8c1cbdc41a
 caps.latest.revision: 15
-caps.handback.revision: 15
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 15
 ---
 # CreateItem Task
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

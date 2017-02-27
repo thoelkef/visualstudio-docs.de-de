@@ -1,8 +1,7 @@
 ---
 title: "Befehle und Men&#252;s, die mithilfe von Interop-Assemblys | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,9 +15,9 @@ helpviewer_keywords:
   - "Befehlsbehandlung mit Interop-Assemblys"
 ms.assetid: 8f4af525-39e5-4e69-92c8-d3efabe80bb2
 caps.latest.revision: 13
-caps.handback.revision: 13
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # Befehle und Men&#252;s, die mithilfe von Interop-Assemblys
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

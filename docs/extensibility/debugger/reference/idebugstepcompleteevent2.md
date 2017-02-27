@@ -1,8 +1,7 @@
 ---
 title: "IDebugStepCompleteEvent2 | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "IDebugStepCompleteEvent2-Schnittstelle"
 ms.assetid: eba2b76e-f90d-486b-ae5c-c47f1b8ba2e5
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # IDebugStepCompleteEvent2
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

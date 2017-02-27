@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Debuggen von eingef&#252;gtem Code | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -28,10 +27,10 @@ helpviewer_keywords:
   - "Quellcode anzeigen (Befehl) [Debugger]"
 ms.assetid: a1b4104d-d49e-451f-a91e-e39ceaf35875
 caps.latest.revision: 17
-caps.handback.revision: 17
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 17
 ---
 # Gewusst wie: Debuggen von eingef&#252;gtem Code
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

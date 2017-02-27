@@ -1,7 +1,7 @@
 ---
 title: "CA5350: Verwenden Sie keine schwachen kryptografischen Algorithmen. | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -10,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 4c51bb8a-fcfa-46aa-ab61-634be84c4a7a
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 11
 ---
 # CA5350: Verwenden Sie keine schwachen kryptografischen Algorithmen.
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

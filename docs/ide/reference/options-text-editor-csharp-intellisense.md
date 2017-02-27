@@ -1,8 +1,7 @@
 ---
 title: "Optionen, Text-Editor, C#, IntelliSense | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,10 +20,10 @@ helpviewer_keywords:
   - "Text-Editor-Optionen (Dialogfeld), IntelliSense"
 ms.assetid: 3466dedb-e5f4-424c-8dd8-e4941b2f4fc2
 caps.latest.revision: 25
-caps.handback.revision: 25
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 25
 ---
 # Optionen, Text-Editor, C#, IntelliSense
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Ein Programm zum Debuggen aktivieren | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Debuggen [Debugging-SDK], mit dessen Hilfe für Programme"
 ms.assetid: 61d24820-0cd9-48b6-8674-6813f7493237
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # Ein Programm zum Debuggen aktivieren
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Problembehandlung bei Vorlagen | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "Visual Studio-Vorlagen, Problembehandlung"
 ms.assetid: 3e577ad2-f725-4c11-93b3-477f2404ec81
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # Gewusst wie: Problembehandlung bei Vorlagen
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

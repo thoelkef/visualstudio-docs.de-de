@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Angeben von Symboldateispeicherorten &#252;ber die Befehlszeile | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 8aa067bb-e8bf-4081-aff0-cfbcf65934a0
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Gewusst wie: Angeben von Symboldateispeicherorten &#252;ber die Befehlszeile
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

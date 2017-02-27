@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Erstellen eines standardm&#228;&#223;igen Farbshaders | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: c301328a-079a-49e8-b688-4749c01657c0
 caps.latest.revision: 24
-caps.handback.revision: 24
 author: "BrianPeek"
 ms.author: "brpeek"
 manager: "ghogen"
+caps.handback.revision: 24
 ---
 # Gewusst wie: Erstellen eines standardm&#228;&#223;igen Farbshaders
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

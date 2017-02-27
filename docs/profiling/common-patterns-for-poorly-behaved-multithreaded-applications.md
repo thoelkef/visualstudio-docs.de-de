@@ -1,8 +1,7 @@
 ---
 title: "H&#228;ufige Muster von Multithreadanwendungen mit unerw&#252;nschtem Verhalten | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "Concurrency Visualizer, Häufige Muster von Multithreadanwendungen mit unerwünschtem Verhalten"
 ms.assetid: 00d10629-e20f-4d6d-8643-c59a3879812e
 caps.latest.revision: 12
-caps.handback.revision: 12
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # H&#228;ufige Muster von Multithreadanwendungen mit unerw&#252;nschtem Verhalten
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

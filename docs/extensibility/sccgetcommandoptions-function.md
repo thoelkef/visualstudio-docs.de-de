@@ -1,8 +1,7 @@
 ---
 title: "SccGetCommandOptions-Funktion | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "SccGetCommandOptions-Funktion"
 ms.assetid: bbe4aa4e-b4b0-403e-b7a0-5dd6eb24e5a9
 caps.latest.revision: 14
-caps.handback.revision: 14
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # SccGetCommandOptions-Funktion
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

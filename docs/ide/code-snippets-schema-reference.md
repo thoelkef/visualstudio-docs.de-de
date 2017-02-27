@@ -1,8 +1,7 @@
 ---
 title: "Schemareferenz f&#252;r Codeausschnitte | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,10 +15,10 @@ helpviewer_keywords:
   - "Ausschnitte [Visual Studio], Schemareferenz"
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
 caps.latest.revision: 17
-caps.handback.revision: 17
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 17
 ---
 # Schemareferenz f&#252;r Codeausschnitte
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

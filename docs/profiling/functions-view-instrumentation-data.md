@@ -1,8 +1,7 @@
 ---
 title: "Funktionsansicht - Profiler-Instrumentationsdaten | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "Funktionsansicht"
 ms.assetid: 595d91c8-a42b-4644-85b8-39e8140a5dfe
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Funktionsansicht - Profiler-Instrumentationsdaten
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

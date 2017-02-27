@@ -1,8 +1,7 @@
 ---
 title: "Benutzeroberfl&#228;chenhilfe von Visual Studio Designer f&#252;r Windows Workflow Foundation (Vorg&#228;ngerversion) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "Visual Studio 2005-Erweiterungen für Windows Workflow Foundation, Benutzeroberflächenreferenz"
 ms.assetid: b3a0104f-4485-45ac-9794-82d54e45fb09
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 6
 ---
 # Benutzeroberfl&#228;chenhilfe von Visual Studio Designer f&#252;r Windows Workflow Foundation (Vorg&#228;ngerversion)
 Dieser Abschnitt enthält die kontextbezogenen Hilfethemen für die Vorgängerversion von [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] in [!INCLUDE[vs2010](../modeling/includes/vs2010_md.md)].Verwenden Sie den Legacydesigner, wenn Sie auf [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] oder [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] abzielen möchten.  

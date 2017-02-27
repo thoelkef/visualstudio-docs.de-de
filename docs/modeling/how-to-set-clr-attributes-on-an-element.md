@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Festlegen von CLR-Attributen f&#252;r ein Element | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-tfs-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "Domänenspezifische Sprache, benutzerdefinierte Attribute"
 ms.assetid: b3db3c74-920c-4701-9544-6f75cbe8b7c9
 caps.latest.revision: 19
-caps.handback.revision: 19
 author: "alancameronwills"
 ms.author: "awills"
 manager: "douge"
+caps.handback.revision: 19
 ---
 # Gewusst wie: Festlegen von CLR-Attributen f&#252;r ein Element
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

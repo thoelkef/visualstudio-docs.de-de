@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Exportieren einer Textur f&#252;r die Verwendung mit Direct2D- oder Javascript-Apps | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 241c25fe-764e-4e1b-ad32-b1377dcbb605
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "BrianPeek"
 ms.author: "brpeek"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Gewusst wie: Exportieren einer Textur f&#252;r die Verwendung mit Direct2D- oder Javascript-Apps
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

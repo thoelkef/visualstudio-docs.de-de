@@ -1,8 +1,7 @@
 ---
 title: "Analysieren der Codequalit&#228;t von Store-Apps mit der statischen Codeanalyse von Visual Studio | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 2341013d-a08b-49a7-b6fd-a7b6aaa797e0
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "erickson-doug"
 ms.author: "douge"
 manager: "douge"
+caps.handback.revision: 11
 ---
 # Analysieren der Codequalit&#228;t von Store-Apps mit der statischen Codeanalyse von Visual Studio
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

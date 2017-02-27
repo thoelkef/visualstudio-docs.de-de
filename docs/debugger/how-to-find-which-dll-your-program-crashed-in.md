@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Feststellen, welche DLL zum Absturz des Programms gef&#252;hrt hat | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -28,10 +27,10 @@ helpviewer_keywords:
   - "Module (Fenster)"
 ms.assetid: ecf62568-8b65-4a41-b8a4-e962ff2dfb71
 caps.latest.revision: 17
-caps.handback.revision: 17
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 17
 ---
 # Gewusst wie: Feststellen, welche DLL zum Absturz des Programms gef&#252;hrt hat
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

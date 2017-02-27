@@ -1,8 +1,7 @@
 ---
 title: "Festlegen einer eindeutigen Automatisierungseigenschaft f&#252;r Windows Store-Steuerelemente f&#252;r Tests | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 9bdd74ff-2534-4fc7-a5c3-a77bf7843037
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "mlearned"
 manager: "douge"
+caps.handback.revision: 10
 ---
 # Festlegen einer eindeutigen Automatisierungseigenschaft f&#252;r Windows Store-Steuerelemente f&#252;r Tests
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

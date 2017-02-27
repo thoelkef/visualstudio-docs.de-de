@@ -1,8 +1,7 @@
 ---
 title: "Include-Element | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,9 +15,9 @@ helpviewer_keywords:
   - "VSCT XML-Schemaelemente, einschließen"
 ms.assetid: c923dfe6-084a-4105-aec1-f0a3f8399c54
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # Include-Element
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Erstellen ein Quellcodeverwaltungs-Plug-in | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Datenquellen-Steuerelement [Visual Studio SDK]-Plug-ins"
 ms.assetid: c7e69fa4-150e-469a-a6fc-fa1260bdbb07
 caps.latest.revision: 18
-caps.handback.revision: 18
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 18
 ---
 # Erstellen ein Quellcodeverwaltungs-Plug-in
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

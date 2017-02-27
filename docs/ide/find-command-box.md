@@ -1,8 +1,7 @@
 ---
 title: "Such/Befehlsfeld | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "Suchen (Feld)"
 ms.assetid: c81736dd-7a26-4e11-95c8-c2a2e56d7a41
 caps.latest.revision: 17
-caps.handback.revision: 17
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 17
 ---
 # Such/Befehlsfeld
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

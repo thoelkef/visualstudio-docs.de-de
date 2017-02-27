@@ -1,8 +1,7 @@
 ---
 title: "Verwenden der Aufgabenliste | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,10 +17,10 @@ helpviewer_keywords:
   - "Visual Studio, Aufgabenliste"
 ms.assetid: f46a75a8-47b3-4cb6-bb59-b72e3356a664
 caps.latest.revision: 29
-caps.handback.revision: 29
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 29
 ---
 # Verwenden der Aufgabenliste
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

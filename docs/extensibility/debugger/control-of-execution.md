@@ -1,8 +1,7 @@
 ---
 title: "Steuerung der Ausf&#252;hrung | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Debuggen [Debuggen SDK], Steuerung der Ausführung"
 ms.assetid: 97071846-007e-450f-95a6-f072d0f5e61e
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # Steuerung der Ausf&#252;hrung
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

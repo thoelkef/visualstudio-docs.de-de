@@ -1,8 +1,7 @@
 ---
 title: "Optionen, Text-Editor, Alle Sprachen, Registerkarten | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,10 +22,10 @@ helpviewer_keywords:
   - "Code-Editor, Registerkarten"
 ms.assetid: 7e208e1d-5e3a-4bf7-a27b-4417e3e049c7
 caps.latest.revision: 17
-caps.handback.revision: 17
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 17
 ---
 # Optionen, Text-Editor, Alle Sprachen, Registerkarten
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Dropdown-Leiste | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Editoren [Visual Studio SDK], Legacy - Dropdown-Menüleiste"
 ms.assetid: 4bb621bd-72f5-43d5-916f-9f66617da049
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # Dropdown-Leiste
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

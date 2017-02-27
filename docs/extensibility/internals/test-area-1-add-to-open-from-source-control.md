@@ -1,8 +1,7 @@
 ---
 title: "Testbereich 1: F&#252;gen Sie zu &#246;ffnen hinzu, From Source Control | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Source Control-Plug-ins hinzufügen und Öffnen von Projektmappen"
 ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
 caps.latest.revision: 20
-caps.handback.revision: 20
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 20
 ---
 # Testbereich 1: F&#252;gen Sie und &#214;ffnen von Datenquellen-Steuerelement hinzu
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

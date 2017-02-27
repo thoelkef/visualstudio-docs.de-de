@@ -1,8 +1,7 @@
 ---
 title: "SccGetExtendedCapabilities-Funktion | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "SccGetExtendedCapabilities-Funktion"
 ms.assetid: 588c6a92-2147-4d8b-a357-96ca7da0a092
 caps.latest.revision: 16
-caps.handback.revision: 16
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 16
 ---
 # SccGetExtendedCapabilities-Funktion
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

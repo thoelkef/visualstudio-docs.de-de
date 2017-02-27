@@ -1,17 +1,16 @@
 ---
 title: "Zustandsautomatenaktivit&#228;ts-Designer | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/27/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 97f0bff5-7e48-4914-8f04-8015a1c6bfae
 caps.latest.revision: 5
-caps.handback.revision: 5
 ms.author: "sdanie"
 manager: "erikre"
+caps.handback.revision: 5
 ---
 # Zustandsautomatenaktivit&#228;ts-Designer
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] umfasst eine Reihe von Aktivitätsdesignern, die Sie zum Erstellen von Workflows verwenden können.Dieser Abschnitt enthält die vom System bereitgestellten Aktivitätsdesigner, die verwendet werden, um Zustandsautomatworkflows zu erstellen und zu verwalten.In den folgenden Themen werden diese Designer beschrieben und Anleitungen zu ihrer Verwendung bereitgestellt.  

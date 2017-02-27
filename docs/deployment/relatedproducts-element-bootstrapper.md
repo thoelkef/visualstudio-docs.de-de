@@ -1,8 +1,7 @@
 ---
 title: "&lt;RelatedProducts&gt;-Element (Bootstrapper) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,10 +23,10 @@ helpviewer_keywords:
   - "<RelatedProducts>-Element [Bootstrapper]"
 ms.assetid: bf152712-4c1e-48bd-9b7f-311cf0fdb832
 caps.latest.revision: 12
-caps.handback.revision: 12
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 12
 ---
 # &lt;RelatedProducts&gt;-Element (Bootstrapper)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

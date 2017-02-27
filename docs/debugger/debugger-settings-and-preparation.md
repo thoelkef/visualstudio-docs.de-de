@@ -1,8 +1,7 @@
 ---
 title: "Einstellungen und Vorbereitung f&#252;r das Debuggen | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,10 +20,10 @@ helpviewer_keywords:
   - "Debugger, Festlegen von Optionen"
 ms.assetid: f15a1400-b204-418d-8878-ab7755470fd7
 caps.latest.revision: 37
-caps.handback.revision: 37
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 37
 ---
 # Einstellungen und Vorbereitung f&#252;r das Debuggen
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

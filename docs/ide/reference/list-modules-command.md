@@ -1,8 +1,7 @@
 ---
 title: "Befehl &quot;Module auflisten&quot; | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "ListModules-Befehl"
 ms.assetid: 3cb73774-6ac0-43b2-b781-75ed47175bfd
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 6
 ---
 # Befehl &quot;Module auflisten&quot;
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

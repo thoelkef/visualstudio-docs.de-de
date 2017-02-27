@@ -1,8 +1,7 @@
 ---
 title: "Testbereich 2: Abrufen von Datenquellen-Steuerelement | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Abrufen von Elementen aus der Datenquellen-Steuerelement [Visual Studio SDK]"
 ms.assetid: cbd345c5-ca43-4630-b7a4-85564f4e2090
 caps.latest.revision: 18
-caps.handback.revision: 18
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 18
 ---
 # Testbereich 2: Abrufen von Datenquellen-Steuerelement
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

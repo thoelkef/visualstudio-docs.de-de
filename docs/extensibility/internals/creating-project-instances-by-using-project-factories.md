@@ -1,8 +1,7 @@
 ---
 title: "Erstellen von Instanzen von Project mithilfe von Project-Factorys | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Projekte [Visual Studio SDK], Projekt-Factorys"
 ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
 caps.latest.revision: 13
-caps.handback.revision: 13
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # Erstellen von Instanzen von Project mithilfe von Project-Factorys
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

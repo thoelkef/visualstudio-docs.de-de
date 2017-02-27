@@ -1,8 +1,7 @@
 ---
 title: "Rethrow-Aktivit&#228;tsdesigner | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/21/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -11,10 +10,10 @@ f1_keywords:
   - "System.Activities.Statements.Rethrow.UI"
 ms.assetid: 9cfa2eda-395f-4cf3-9154-83fadd4f7452
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 5
 ---
 # Rethrow-Aktivit&#228;tsdesigner
 Der **Rethrow**\-Aktivitätsdesigner wird verwendet, um eine <xref:System.Activities.Statements.Rethrow>\-Aktivität zu erstellen und zu konfigurieren.  

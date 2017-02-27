@@ -1,8 +1,7 @@
 ---
 title: "Auflisten von lokalen Variablen | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Auswertung von Ausdrücken, die lokal auflisten"
 ms.assetid: 254a88e7-d3a7-447a-bd0c-8985e73d85cf
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # Auflisten von lokalen Variablen
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

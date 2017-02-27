@@ -1,8 +1,7 @@
 ---
 title: "TemplateID-Element (Visual Studio-Vorlagen) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,9 +15,9 @@ helpviewer_keywords:
   - "TemplateID-Element [Visual Studio-Vorlagen]"
 ms.assetid: 6ca24b4e-0325-4a9e-855e-0cbbe7361d8f
 caps.latest.revision: 15
-caps.handback.revision: 15
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 15
 ---
 # TemplateID-Element (Visual Studio-Vorlagen)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

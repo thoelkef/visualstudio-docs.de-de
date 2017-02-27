@@ -1,8 +1,7 @@
 ---
 title: "Extern-Element | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,9 +15,9 @@ helpviewer_keywords:
   - "Extern-Element (VSCT-XML-Schema)"
 ms.assetid: db6c3ddd-a1ba-450a-897a-bb568a5377fc
 caps.latest.revision: 15
-caps.handback.revision: 15
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 15
 ---
 # Extern-Element
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

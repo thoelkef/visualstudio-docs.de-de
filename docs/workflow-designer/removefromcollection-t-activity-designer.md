@@ -1,8 +1,7 @@
 ---
 title: "emoveFromCollection&lt;T&gt;-Aktivit&#228;tsdesigner | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/21/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -11,10 +10,10 @@ f1_keywords:
   - "System.Activities.Statements.RemoveFromCollection`1.UI"
 ms.assetid: 6617ba26-c8bc-4aed-b746-112bf490d288
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 6
 ---
 # emoveFromCollection&lt;T&gt;-Aktivit&#228;tsdesigner
 Der **RemoveFromCollection\<T\>**\-Aktivitätsdesigner wird verwendet, um eine <xref:System.Activities.Statements.RemoveFromCollection%601>\-Aktivität zu erstellen und zu konfigurieren.  

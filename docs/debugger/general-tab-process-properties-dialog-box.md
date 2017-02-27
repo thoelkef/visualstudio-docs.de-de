@@ -1,8 +1,7 @@
 ---
 title: "Registerkarte &quot;Allgemein&quot;, Dialogfeld &quot;Prozesseigenschaften&quot; | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "Prozesseigenschaften für Windows NT"
 ms.assetid: 86f4d61d-a594-4aac-8960-c5279b4a10fd
 caps.latest.revision: 4
-caps.handback.revision: 4
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 4
 ---
 # Registerkarte &quot;Allgemein&quot;, Dialogfeld &quot;Prozesseigenschaften&quot;
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

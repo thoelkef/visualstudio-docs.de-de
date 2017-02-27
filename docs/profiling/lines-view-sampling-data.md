@@ -1,8 +1,7 @@
 ---
 title: "Zeilenansicht - Profiler-Samplingdaten | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "Zeilenansicht"
 ms.assetid: 46497249-c797-42c5-a02c-3e4bb3b4ee60
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Zeilenansicht - Profiler-Samplingdaten
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

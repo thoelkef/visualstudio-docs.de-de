@@ -1,8 +1,7 @@
 ---
 title: "METADATA_ADDRESS_PARAM | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "METADATA_ADDRESS_PARAM-Struktur"
 ms.assetid: 90904f19-0e71-4cb3-a56e-6a2e92f66dfc
 caps.latest.revision: 6
-caps.handback.revision: 6
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 6
 ---
 # METADATA_ADDRESS_PARAM
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

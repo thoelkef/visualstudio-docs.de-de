@@ -1,8 +1,7 @@
 ---
 title: "Regeln propagieren &#196;nderungen innerhalb des Modells | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-tfs-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -12,10 +11,10 @@ helpviewer_keywords:
   - "Domain-Specific Language, Regeln"
 ms.assetid: 1690a38a-c8f5-4bc6-aab9-015771ec6647
 caps.latest.revision: 30
-caps.handback.revision: 30
 author: "alancameronwills"
 ms.author: "awills"
 manager: "douge"
+caps.handback.revision: 30
 ---
 # Regeln propagieren &#196;nderungen innerhalb des Modells
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

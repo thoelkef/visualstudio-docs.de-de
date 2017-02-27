@@ -1,8 +1,7 @@
 ---
 title: "Visual Studio-Befehlsaliase | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "Visual Studio, Befehle"
 ms.assetid: de8bb378-8c1c-4087-a9a5-537fa8314c19
 caps.latest.revision: 17
-caps.handback.revision: 17
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 17
 ---
 # Visual Studio-Befehlsaliase
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Schritt&#160;5: Hinzuf&#252;gen von Enter-Ereignishandlern f&#252;r die NumericUpDown-Steuerelemente | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 45a99a5d-c881-4298-b74d-adb481dec5ee
 caps.latest.revision: 18
-caps.handback.revision: 18
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 18
 ---
 # Schritt&#160;5: Hinzuf&#252;gen von Enter-Ereignishandlern f&#252;r die NumericUpDown-Steuerelemente
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

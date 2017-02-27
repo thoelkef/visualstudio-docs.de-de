@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Debuggen von Inline-Assemblycode | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,10 +22,10 @@ helpviewer_keywords:
   - "Inlineassembly, Debuggen"
 ms.assetid: cc5664e0-0b38-40c1-bb65-04ae720c2adb
 caps.latest.revision: 21
-caps.handback.revision: 21
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 21
 ---
 # Gewusst wie: Debuggen von Inline-Assemblycode
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

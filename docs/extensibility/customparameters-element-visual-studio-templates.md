@@ -1,8 +1,7 @@
 ---
 title: "CustomParameters-Element (Visual Studio-Vorlagen) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "CustomParameters-Element [Visual Studio-Projektvorlagen]"
 ms.assetid: cf3efc91-1532-4022-bbb8-a18658424fee
 caps.latest.revision: 6
-caps.handback.revision: 6
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 6
 ---
 # CustomParameters-Element (Visual Studio-Vorlagen)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

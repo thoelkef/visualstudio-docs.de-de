@@ -1,8 +1,7 @@
 ---
 title: "Task-Klasse - interne Member | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Task-Klasse [Debugmodule [.NET Framework]"
 ms.assetid: 28e47c3b-9323-424a-80ac-6cc3bf19e09b
 caps.latest.revision: 14
-caps.handback.revision: 14
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # Task-Klasse - interne Member
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

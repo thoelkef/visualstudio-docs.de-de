@@ -1,8 +1,7 @@
 ---
 title: "Vorgehensweise: Erstellen einer sequenziellen Workflowbibliothek (Vorg&#228;ngerversion) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -14,10 +13,10 @@ helpviewer_keywords:
   - "Workflows, Sequenzielle Workflowbibliothek"
 ms.assetid: 9433ccf3-1eab-4d53-90ff-2e7b2341676c
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 5
 ---
 # Vorgehensweise: Erstellen einer sequenziellen Workflowbibliothek (Vorg&#228;ngerversion)
 Führen Sie die folgenden Schritte aus, um ein Projekt für eine sequenzielle Workflowbibliothek mithilfe der Vorgängerversion von [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] zu erstellen, die von [!INCLUDE[vs2010](../modeling/includes/vs2010_md.md)] bereitgestellt wird.Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] oder [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] abzielen möchten.  

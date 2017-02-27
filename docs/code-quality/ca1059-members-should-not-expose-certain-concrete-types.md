@@ -1,8 +1,7 @@
 ---
 title: "CA1059: Member sollten bestimmte konkrete Typen nicht verf&#252;gbar machen | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "MembersShouldNotExposeCertainConcreteTypes"
 ms.assetid: 59f61f52-8d6c-49cb-aefb-191910523a3c
 caps.latest.revision: 18
-caps.handback.revision: 18
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 18
 ---
 # CA1059: Member sollten bestimmte konkrete Typen nicht verf&#252;gbar machen
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

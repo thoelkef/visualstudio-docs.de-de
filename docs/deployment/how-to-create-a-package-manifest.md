@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Erstellen eines Paketmanifests | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,10 +20,10 @@ helpviewer_keywords:
   - "Voraussetzungen, Benutzerdefiniertes Bootstrapperpaket"
 ms.assetid: 5aecc507-2764-42f2-ae6f-c227971cf0af
 caps.latest.revision: 12
-caps.handback.revision: 12
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 12
 ---
 # Gewusst wie: Erstellen eines Paketmanifests
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

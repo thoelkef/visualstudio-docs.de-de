@@ -1,17 +1,16 @@
 ---
 title: "Im Workflow-Designer nicht unterst&#252;tzte Debugszenarien | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 6adbe379-41d0-4681-9cd0-b91f187c3c2c
 caps.latest.revision: 4
-caps.handback.revision: 4
 ms.author: "sdanie"
 manager: "erikre"
+caps.handback.revision: 4
 ---
 # Im Workflow-Designer nicht unterst&#252;tzte Debugszenarien
 Im Workflow\-Designer in [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)] wurden viele neue Funktionen hinzugefügt. Es gibt jedoch nach wie vor einige Debugszenarien, die nicht unterstützt werden.In diesem Dokument werden die vom Workflow\-Designer nicht unterstützten Debugszenarien ausführlich beschrieben.  

@@ -1,8 +1,7 @@
 ---
 title: "Erstellen benutzerdefinierter Codeanalyse-Regels&#228;tze | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 88db3a0a-1b92-496d-9fae-b2bb980f5933
 caps.latest.revision: 12
-caps.handback.revision: 12
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 12
 ---
 # Erstellen benutzerdefinierter Codeanalyse-Regels&#228;tze
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Tipps und Tricks f&#252;r Visual Studio | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 20489db9-7441-4f8b-97de-c72070d569b1
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # Tipps und Tricks f&#252;r Visual Studio
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

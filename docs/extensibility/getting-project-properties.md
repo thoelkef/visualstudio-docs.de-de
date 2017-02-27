@@ -1,8 +1,7 @@
 ---
 title: "Abrufen von Projekteigenschaften | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Toolfenster, Projekt-Eigenschaften anzeigen"
 ms.assetid: 96ba07ca-0811-4013-8602-12550ac4ba79
 caps.latest.revision: 29
-caps.handback.revision: 29
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 29
 ---
 # Abrufen von Projekteigenschaften
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

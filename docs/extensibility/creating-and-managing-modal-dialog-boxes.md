@@ -1,8 +1,7 @@
 ---
 title: "Erstellen und Verwalten von modalen Dialogfeldern | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Dialogfelder in Visual Studio verwalten"
 ms.assetid: 491bc0de-7dba-478c-a76b-923440e090f3
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # Erstellen und Verwalten von modalen Dialogfeldern
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

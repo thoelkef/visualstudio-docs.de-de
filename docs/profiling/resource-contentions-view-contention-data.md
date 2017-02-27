@@ -1,8 +1,7 @@
 ---
 title: "Ressourcenkonfliktansicht – Profiler-Konfliktdaten | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "Ressourcenkonflikte (Ansicht)"
 ms.assetid: 14a7f774-211f-4ef8-af05-94d1c8f65d2f
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # Ressourcenkonfliktansicht – Profiler-Konfliktdaten
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

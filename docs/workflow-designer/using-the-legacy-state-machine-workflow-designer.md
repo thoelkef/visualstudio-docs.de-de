@@ -1,8 +1,7 @@
 ---
 title: "Verwenden des Zustandsautomatworkflow-Designers der Vorg&#228;ngerversion | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -18,10 +17,10 @@ helpviewer_keywords:
   - "StateInitializationActivity-Aktivität"
 ms.assetid: 2cd21123-35c2-4eaf-82f6-86fce7a8f04d
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 5
 ---
 # Verwenden des Zustandsautomatworkflow-Designers der Vorg&#228;ngerversion
 Wenn Sie ein neues Zustandsautomat\-Workflowprojekt in [!INCLUDE[vs2010](../modeling/includes/vs2010_md.md)] erstellen, das auf [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] oder [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] abzielt, können Sie die Projektvorlage des Zustandsautomatworkflowprojekt erstellen, können Sie wählen, entweder die **Konsolenanwendung für Zustandsautomatworkflows** oder die Projektvorlage aus der Vorgängerversion **Zustandsautomat\-Workflowbibliothek** verwenden.Bei Auswahl einer der Zustandsautomatprojektvorlagen wird der Zustandsautomatdesigner als Workflow\-Designer\-Benutzeroberfläche der Vorgängerversion angezeigt.Weitere Informationen zu den Zustandsautomatprojektvorlagen der Vorgängerversion finden Sie unter [Vorgehensweise: Erstellen von Konsolenanwendungen für Zustandsautomatworkflows \(Vorgängerversion\)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) und [Vorgehensweise: Erstellen einer Zustandsautomatworkflowbibliothek \(Vorgängerversion\)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  

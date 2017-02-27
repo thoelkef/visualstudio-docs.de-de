@@ -1,8 +1,7 @@
 ---
 title: "&#220;berpr&#252;fen die Haltepunkte in einem Legacy-Sprachdienst | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Sprachdienste [Verwaltetes Paketframework], Haltepunkt-Überprüfung"
 ms.assetid: a7e873cd-dfe1-474f-bda5-fd7532774b15
 caps.latest.revision: 14
-caps.handback.revision: 14
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # &#220;berpr&#252;fen die Haltepunkte in einem Legacy-Sprachdienst
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Hinzuf&#252;gen von Knoten aus dem XML-Schema-Explorer zum Arbeitsbereich | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 3b5a5749-9693-4b29-b0c2-8e07e0e55514
 caps.latest.revision: 3
-caps.handback.revision: 3
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 3
 ---
 # Gewusst wie: Hinzuf&#252;gen von Knoten aus dem XML-Schema-Explorer zum Arbeitsbereich
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

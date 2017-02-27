@@ -1,8 +1,7 @@
 ---
 title: "&#214;ffnen und Speichern von Projektelementen | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Editoren [Visual Studio SDK], Datei-Persistenz"
 ms.assetid: f71898ad-335f-4c43-a177-4da87078afd1
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # &#214;ffnen und Speichern von Projektelementen
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

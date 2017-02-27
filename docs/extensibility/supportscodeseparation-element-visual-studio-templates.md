@@ -1,8 +1,7 @@
 ---
 title: "SupportsCodeSeparation-Element (Visual Studio-Vorlagen) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,9 +15,9 @@ helpviewer_keywords:
   - "SupportsCodeSeparation-Element [Visual Studio-Vorlagen]"
 ms.assetid: 8112aac8-a269-40e5-b92b-9b9a6ff5a542
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # SupportsCodeSeparation-Element (Visual Studio-Vorlagen)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Hinzuf&#252;gen und Entfernen von Eigenschaftenseiten | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Eigenschaftenseiten, entfernen"
 ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
 caps.latest.revision: 29
-caps.handback.revision: 29
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 29
 ---
 # Hinzuf&#252;gen und Entfernen von Eigenschaftenseiten
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

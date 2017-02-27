@@ -1,8 +1,7 @@
 ---
 title: "Es sind mehrere Kategorien vorhanden | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "Parallelitätsschnellansicht, Es sind mehrere Kategorien vorhanden"
 ms.assetid: f5c7ec07-8052-4df7-a0ca-7ec8bb3eee18
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # Es sind mehrere Kategorien vorhanden
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

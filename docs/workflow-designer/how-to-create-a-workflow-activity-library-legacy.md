@@ -1,8 +1,7 @@
 ---
 title: "Vorgehensweise: Erstellen einer Workflowaktivit&#228;tsbibliothek (Vorg&#228;ngerversion) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "Workflows, Aktivitätsbibliothekprojekte"
 ms.assetid: fb5aa940-2ae8-4b52-b52c-51c20861a7b4
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 8
 ---
 # Vorgehensweise: Erstellen einer Workflowaktivit&#228;tsbibliothek (Vorg&#228;ngerversion)
 Führen Sie die folgenden Schritte aus, um ein Projekt für eine Workflowaktivitätsbibliothek mithilfe der Vorgängerversion von [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] zu erstellen, die von [!INCLUDE[vs2010](../modeling/includes/vs2010_md.md)] bereitgestellt wird.Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] oder [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] abzielen möchten.  

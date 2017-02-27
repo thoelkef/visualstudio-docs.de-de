@@ -1,8 +1,7 @@
 ---
 title: "Richtlinienfehler bei der Codeanalyse | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "Richtlinienfehler, Codeanalyse"
 ms.assetid: d1f221cd-68c0-4277-9397-b76ad0dbae77
 caps.latest.revision: 19
-caps.handback.revision: 19
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 19
 ---
 # Richtlinienfehler bei der Codeanalyse
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

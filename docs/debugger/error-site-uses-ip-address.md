@@ -1,8 +1,7 @@
 ---
 title: "Fehler: Site verwendet IP-Adresse | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,10 +19,10 @@ helpviewer_keywords:
   - "Debugger, Webanwendungsfehler"
 ms.assetid: b2b8ddc8-746d-46e3-87a6-b956b1ee048d
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # Fehler: Site verwendet IP-Adresse
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

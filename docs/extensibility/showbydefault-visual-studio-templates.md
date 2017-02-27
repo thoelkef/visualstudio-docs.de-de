@@ -1,8 +1,7 @@
 ---
 title: "ShowByDefault (Visual Studio-Vorlagen) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,9 +15,9 @@ helpviewer_keywords:
   - "ShowByDefault-Element [Visual Studio-Vorlagen]"
 ms.assetid: 7be783f6-0ef6-42bc-924a-df9a2eba7781
 caps.latest.revision: 7
-caps.handback.revision: 7
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # ShowByDefault (Visual Studio-Vorlagen)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

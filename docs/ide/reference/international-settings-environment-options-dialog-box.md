@@ -1,8 +1,7 @@
 ---
 title: "Internationale Einstellungen, Umgebung, Dialogfeld &quot;Optionen&quot; | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,10 +20,10 @@ helpviewer_keywords:
   - "Sprachen, Angeben der Standardsprache"
 ms.assetid: e3a8815c-6995-4099-8e88-34f91fad55b2
 caps.latest.revision: 14
-caps.handback.revision: 14
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # Internationale Einstellungen, Umgebung, Dialogfeld &quot;Optionen&quot;
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

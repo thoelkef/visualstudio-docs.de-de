@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Debuggen einer ausf&#252;hrbaren Datei, die keiner Visual Studio-Projektmappe angeh&#246;rt | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,10 +23,10 @@ helpviewer_keywords:
   - "Ausführbare Dateien, Importieren"
 ms.assetid: 3ea176e8-1ce5-42c4-b7a2-abe3a2765033
 caps.latest.revision: 23
-caps.handback.revision: 23
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 23
 ---
 # Gewusst wie: Debuggen einer ausf&#252;hrbaren Datei, die keiner Visual Studio-Projektmappe angeh&#246;rt
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

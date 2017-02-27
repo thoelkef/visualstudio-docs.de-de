@@ -1,8 +1,7 @@
 ---
 title: "Mobilit&#228;tswarnungen | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "Warnungen, Mobilität"
 ms.assetid: 9808054c-593b-4fc3-92cc-1fc45f41569c
 caps.latest.revision: 17
-caps.handback.revision: 17
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 17
 ---
 # Mobilit&#228;tswarnungen
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

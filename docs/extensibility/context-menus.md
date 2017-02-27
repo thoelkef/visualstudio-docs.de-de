@@ -1,8 +1,7 @@
 ---
 title: "Kontextmen&#252;s | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Editoren [Visual Studio SDK] legacy - Kontextmenüs"
 ms.assetid: 44fd9e6a-6d42-4aba-80ba-f37fa0070f1d
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # Kontextmen&#252;s
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "StateMachine-Aktivit&#228;ts-Designer | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/27/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -12,9 +11,9 @@ f1_keywords:
   - "System.Activities.Statements.StateMachine.UI"
 ms.assetid: 474d5fb3-1049-4b3f-bc6b-7524dbbe1672
 caps.latest.revision: 5
-caps.handback.revision: 5
 ms.author: "sdanie"
 manager: "erikre"
+caps.handback.revision: 5
 ---
 # StateMachine-Aktivit&#228;ts-Designer
 Die <xref:System.Activities.Statements.StateMachine>\-Aktivität enthält eine Auflistung von Zustands\- und Modellworkflows, die das bekannte Zustandsautomatparadigma verwenden.  

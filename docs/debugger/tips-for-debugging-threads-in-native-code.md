@@ -1,8 +1,7 @@
 ---
 title: "Tipps zum Debuggen von Threads in systemeigenem Code | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "Threading [Visual Studio], Debuggen"
 ms.assetid: 0374c8c6-57a3-4cfe-8047-2effef5ff5dc
 caps.latest.revision: 22
-caps.handback.revision: 22
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 22
 ---
 # Tipps zum Debuggen von Threads in systemeigenem Code
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

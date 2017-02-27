@@ -1,8 +1,7 @@
 ---
 title: "Fehler: Der Benutzer konnte die gespeicherte Prozedur &quot;sp_enable_sql_debug&quot; nicht ausf&#252;hren | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,10 +17,10 @@ dev_langs:
   - "C++"
 ms.assetid: 11957495-c238-4cc5-8937-e4026f5e10e1
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 6
 ---
 # Fehler: Der Benutzer konnte die gespeicherte Prozedur &quot;sp_enable_sql_debug&quot; nicht ausf&#252;hren
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Debugfehler und Warnmeldungen | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,10 +23,10 @@ helpviewer_keywords:
   - "Problembehandlung bei Visual Studio, Debuggerfehler"
 ms.assetid: 73baaf39-3026-48c9-be48-8b9ba0063cde
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # Debugfehler und Warnmeldungen
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

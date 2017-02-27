@@ -1,8 +1,7 @@
 ---
 title: "ForEach&lt;T&gt;-Aktivit&#228;tsdesigner | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -11,10 +10,10 @@ f1_keywords:
   - "System.Activities.Statements.ForEach`1.UI"
 ms.assetid: 67097b3a-fcf5-4a72-beb1-2c7784151a86
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 5
 ---
 # ForEach&lt;T&gt;-Aktivit&#228;tsdesigner
 Die <xref:System.Activities.Statements.ForEach%601>\-Aktivität führt die in ihrem <xref:System.Activities.Statements.ForEach%601.Body%2A> enthaltene Aktivität für jedes Element einer angegebenen <xref:System.Activities.Statements.ForEach%601.Values%2A>\-Auflistung aus.  

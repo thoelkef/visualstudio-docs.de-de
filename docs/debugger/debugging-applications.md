@@ -1,8 +1,7 @@
 ---
 title: "Debuggen von Anwendungen | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,10 +15,10 @@ dev_langs:
   - "C++"
 ms.assetid: f7f08402-610e-47f0-ba10-575dd395a0f0
 caps.latest.revision: 2
-caps.handback.revision: 2
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 2
 ---
 # Debuggen von Anwendungen
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

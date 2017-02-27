@@ -1,8 +1,7 @@
 ---
 title: "NAME_MATCH | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "NAME_MATCH-enumeration"
 ms.assetid: 3842c417-a3c9-4259-a05f-52b64b829ef6
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # NAME_MATCH
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

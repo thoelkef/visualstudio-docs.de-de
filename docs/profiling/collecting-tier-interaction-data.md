@@ -1,8 +1,7 @@
 ---
 title: "Erfassen von Ebeneninteraktionsdaten mit der Visual Studio-IDE | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,10 +17,10 @@ helpviewer_keywords:
   - "ADO.NET-Leistungsprofilerstellung"
 ms.assetid: 47a944c2-3098-497c-8fc7-e1f43d750bbc
 caps.latest.revision: 13
-caps.handback.revision: 13
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # Erfassen von Ebeneninteraktionsdaten mit der Visual Studio-IDE
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

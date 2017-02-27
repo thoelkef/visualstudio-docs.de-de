@@ -1,8 +1,7 @@
 ---
-title: "ParameterInfo in einer Legacy-Sprachdienst | Microsoft Docs"
+title: "ParameterInfo in einer Vorg&#228;ngerversion Sprache Service2 | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "ParameterInfo (IntelliSense) sowie Unterstützung in Sprachdienste [Verwaltetes Paketframework]"
 ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 23
-caps.handback.revision: 23
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 23
 ---
 # ParameterInfo in einer Legacy-Sprachdienst
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

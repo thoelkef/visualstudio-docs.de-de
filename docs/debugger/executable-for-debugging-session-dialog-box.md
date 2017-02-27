@@ -1,8 +1,7 @@
 ---
 title: "Dialogfeld &quot;Ausf&#252;hrbare Datei f&#252;r die Debugsitzung&quot; | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,10 +22,10 @@ helpviewer_keywords:
   - "Ausführbare Datei für die Debugsitzung (Dialogfeld)"
 ms.assetid: c0ddbe32-b99f-4425-acf1-f48842804f56
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # Dialogfeld &quot;Ausf&#252;hrbare Datei f&#252;r die Debugsitzung&quot;
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

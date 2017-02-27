@@ -1,8 +1,7 @@
 ---
 title: "Eigenschaften-Fenster-Schaltfl&#228;chen | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Im Eigenschaftenfenster für Schaltflächen"
 ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
 caps.latest.revision: 14
-caps.handback.revision: 14
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # Eigenschaften-Fenster-Schaltfl&#228;chen
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

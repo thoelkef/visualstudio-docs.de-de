@@ -1,8 +1,7 @@
 ---
 title: "Unterst&#252;tzung f&#252;r die Navigationsleiste in einem Legacy-Sprachdienst | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Sprachdienste [Verwaltetes Paketframework], Navigationsleiste"
 ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
 caps.latest.revision: 16
-caps.handback.revision: 16
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 16
 ---
 # Unterst&#252;tzung f&#252;r die Navigationsleiste in einem Legacy-Sprachdienst
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

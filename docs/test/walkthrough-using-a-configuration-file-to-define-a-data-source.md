@@ -1,8 +1,7 @@
 ---
 title: "Exemplarische Vorgehensweise: Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Komponententests, Exemplarische Vorgehensweise"
 ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 32
-caps.handback.revision: 32
 ms.author: "mlearned"
 manager: "douge"
+caps.handback.revision: 32
 ---
 # Exemplarische Vorgehensweise: Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

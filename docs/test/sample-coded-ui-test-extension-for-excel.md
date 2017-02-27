@@ -1,8 +1,7 @@
 ---
 title: "Sample Coded UI Test Extension for Excel | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Coded UI tests, Extensions for Excel"
 ms.assetid: 451e4d14-7fac-42f9-af56-2bdc8414c6c7
 caps.latest.revision: 13
-caps.handback.revision: 13
 ms.author: "mlearned"
 manager: "douge"
+caps.handback.revision: 13
 ---
 # Sample Coded UI Test Extension for Excel
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

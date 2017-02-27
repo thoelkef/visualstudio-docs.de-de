@@ -1,8 +1,7 @@
 ---
 title: "Enthaltene Sprachen | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Editoren [Visual Studio SDK] legacy - enthaltenen Sprachen"
 ms.assetid: b75bbb51-8e42-41b1-bece-09ab0b1f03cc
 caps.latest.revision: 18
-caps.handback.revision: 18
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 18
 ---
 # Enthaltene Sprachen
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

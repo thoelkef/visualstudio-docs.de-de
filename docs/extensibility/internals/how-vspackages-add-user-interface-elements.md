@@ -1,8 +1,7 @@
 ---
 title: "Wie VSPackages Benutzeroberfl&#228;chenelemente hinzuf&#252;gen | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "VSPackages, Benutzeroberflächenelemente beitragen."
 ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 caps.latest.revision: 60
-caps.handback.revision: 60
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 60
 ---
 # Wie VSPackages Benutzeroberfl&#228;chenelemente hinzuf&#252;gen
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

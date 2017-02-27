@@ -1,8 +1,7 @@
 ---
 title: "Bietet einen Dienstkontext Sprache mit der Legacy-API | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Editoren [Visual Studio SDK] legacy - Language-Dienstkontext"
 ms.assetid: daa2df22-9181-4bad-b007-a7d40302bce1
 caps.latest.revision: 14
-caps.handback.revision: 14
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # Bietet einen Dienstkontext Sprache mit der Legacy-API
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Aufrufer-/Aufgerufener-Ansicht – Profiler-Samplingdaten | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,10 +13,10 @@ helpviewer_keywords:
   - "Aufrufer-/Aufgerufener-Ansicht"
 ms.assetid: 28e85ed5-1512-4b59-bb84-138a2abca7dd
 caps.latest.revision: 14
-caps.handback.revision: 14
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # Aufrufer-/Aufgerufener-Ansicht – Profiler-Samplingdaten
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

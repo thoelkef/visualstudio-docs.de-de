@@ -1,8 +1,7 @@
 ---
 title: "AddToCollection&lt;T&gt;-Aktivit&#228;tsdesigner | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/21/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -11,10 +10,10 @@ f1_keywords:
   - "System.Activities.Statements.AddToCollection`1.UI"
 ms.assetid: f7fc0702-164e-4370-8946-bb2f9f9384b7
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 5
 ---
 # AddToCollection&lt;T&gt;-Aktivit&#228;tsdesigner
 Der **AddToCollection\<T\>**\-Aktivitätsdesigner wird verwendet, um eine <xref:System.Activities.Statements.AddToCollection%601>\-Aktivität zu erstellen und zu konfigurieren.  

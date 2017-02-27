@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Erstellen von Projektvorlagen | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "Visual Studio-Vorlagen, Projektvorlagen"
 ms.assetid: a1a6999d-a34c-48a8-b1cf-027eb5c76398
 caps.latest.revision: 19
-caps.handback.revision: 19
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 19
 ---
 # Gewusst wie: Erstellen von Projektvorlagen
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

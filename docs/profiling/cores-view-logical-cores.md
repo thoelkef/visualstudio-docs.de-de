@@ -1,8 +1,7 @@
 ---
 title: "Logische Kerne in der Kernansicht | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "Parallelitätsschnellansicht, Logische Kerne in der Kernansicht"
 ms.assetid: 8a471929-9a26-43e4-adef-d3b40f00f9e3
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 6
 ---
 # Logische Kerne in der Kernansicht
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

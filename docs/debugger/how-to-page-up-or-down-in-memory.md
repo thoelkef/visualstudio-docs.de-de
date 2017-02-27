@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Bildlauf nach oben oder unten im Arbeitsspeicher | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,10 +24,10 @@ helpviewer_keywords:
   - "Speicherfenster, Paging im Arbeitsspeicher"
 ms.assetid: 50b30a68-66f6-43f8-a48b-59ce12c95471
 caps.latest.revision: 18
-caps.handback.revision: 18
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 18
 ---
 # Gewusst wie: Bildlauf nach oben oder unten im Arbeitsspeicher
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

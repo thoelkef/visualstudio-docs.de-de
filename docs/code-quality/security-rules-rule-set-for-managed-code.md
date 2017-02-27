@@ -1,8 +1,7 @@
 ---
 title: "Regelsatz f&#252;r Sicherheitsregeln f&#252;r verwalteten Code | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 564aeac6-03fa-41b0-b655-88179f0ab01b
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 9
 ---
 # Regelsatz f&#252;r Sicherheitsregeln f&#252;r verwalteten Code
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

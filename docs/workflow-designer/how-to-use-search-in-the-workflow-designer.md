@@ -1,17 +1,16 @@
 ---
 title: "Vorgehensweise: Verwenden der Suche im Workflow-Designer | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: f42d3115-2ed2-4941-8f1e-92dac41c30fa
 caps.latest.revision: 3
-caps.handback.revision: 3
 ms.author: "sdanie"
 manager: "erikre"
+caps.handback.revision: 3
 ---
 # Vorgehensweise: Verwenden der Suche im Workflow-Designer
 Um das Erstellen größerer, komplexerer Workflows zu erleichtern, können Elemente im Workflow\-Designer nach Schlüsselwort gesucht werden.Beachten Sie, dass "Ersetzen" vom Designer nicht unterstützt wird.Die Suche findet folgende Elemente im Designer:  

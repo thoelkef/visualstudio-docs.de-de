@@ -1,8 +1,7 @@
 ---
 title: "Vorlagenparameter | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,10 +15,10 @@ helpviewer_keywords:
   - "Visual Studio-Vorlagen, Parameter"
 ms.assetid: 1b567143-08c6-4d7a-b484-49f0671754fe
 caps.latest.revision: 24
-caps.handback.revision: 24
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 24
 ---
 # Vorlagenparameter
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

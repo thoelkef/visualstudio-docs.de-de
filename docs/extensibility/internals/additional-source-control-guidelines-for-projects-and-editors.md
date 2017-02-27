@@ -1,8 +1,7 @@
 ---
 title: "Richtlinien f&#252;r zus&#228;tzliche Quelle f&#252;r Projekte und Editoren | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Datenquellen-Steuerelement [Visual Studio SDK], Richtlinien für Projekte und Editoren"
 ms.assetid: 2483cce5-321c-4d3c-9c5c-ee8385263f74
 caps.latest.revision: 14
-caps.handback.revision: 14
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # Richtlinien f&#252;r zus&#228;tzliche Quelle f&#252;r Projekte und Editoren
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

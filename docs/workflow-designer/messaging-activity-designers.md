@@ -1,18 +1,17 @@
 ---
 title: "Messaging-Aktivit&#228;tsdesigner | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 897e63cf-a42f-4edd-876f-c4ccfffaf6d6
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 7
 ---
 # Messaging-Aktivit&#228;tsdesigner
 Messaging\-Aktivitätsdesigner werden verwendet, um Messaging\-Aktivitäten zu erstellen und zu konfigurieren, die [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)]\-Nachrichten in einer [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]\-Anwendung senden und empfangen.Der [!INCLUDE[netfx40_long](../workflow-designer/includes/netfx40_long_md.md)] führt fünf Messaging\-Aktivitäten ein, und der [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] stellt zwei neue Vorlagen\-Designer bereit, die Ihnen ermöglichen, das Messaging innerhalb eines Workflows zu verwalten.Die Themen, die in diesem Abschnitt enthalten und in der folgenden Tabelle aufgeführt sind, enthalten Anleitungen dazu, wie die [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]\-Aktivitäts\- und Vorlagen\-Designer verwendet werden.  

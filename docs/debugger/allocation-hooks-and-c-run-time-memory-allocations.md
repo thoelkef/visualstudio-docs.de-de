@@ -1,8 +1,7 @@
 ---
 title: "Reservierungshooks und Speicherreservierungen von C-Laufzeitbibliotheken | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,10 +23,10 @@ helpviewer_keywords:
   - "Speicherreservierung, Problembehandlung bei Reservierungshooks"
 ms.assetid: cc34ee96-3d91-41bd-a019-aa3759139e7e
 caps.latest.revision: 14
-caps.handback.revision: 14
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # Reservierungshooks und Speicherreservierungen von C-Laufzeitbibliotheken
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

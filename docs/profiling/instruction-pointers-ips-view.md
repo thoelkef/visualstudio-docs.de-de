@@ -1,8 +1,7 @@
 ---
 title: "Anweisungszeigeransicht | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,10 +19,10 @@ helpviewer_keywords:
   - "Profilerstellungstools, IP-Ansicht"
 ms.assetid: 5e26e0fd-383b-4fb6-a29d-a458d8232828
 caps.latest.revision: 17
-caps.handback.revision: 17
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 17
 ---
 # Anweisungszeigeransicht
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Beschr&#228;nken der Instrumentation auf bestimmte DLLs | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "Profilerstellungstools, Laufzeit-Profilerstellungssteuerung (Fenster)"
 ms.assetid: 17c5996f-e3d0-4e44-b175-52b401b0f2d5
 caps.latest.revision: 19
-caps.handback.revision: 19
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 19
 ---
 # Gewusst wie: Beschr&#228;nken der Instrumentation auf bestimmte DLLs
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

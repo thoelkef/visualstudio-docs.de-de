@@ -1,8 +1,7 @@
 ---
 title: "Vorbedingungen f&#252;r die Anwendungsbereitstellung | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,10 +21,10 @@ helpviewer_keywords:
   - "Voraussetzungen, ClickOnce"
 ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
 caps.latest.revision: 51
-caps.handback.revision: 51
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 51
 ---
 # Vorbedingungen f&#252;r die Anwendungsbereitstellung
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

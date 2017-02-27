@@ -1,8 +1,7 @@
 ---
 title: "M_contingentProperties Feld | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "M_contingentProperties Feld Task-Klasse [Debugmodule [.NET Framework]"
 ms.assetid: 49e8cb36-db39-440b-acda-a325651f1165
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # M_contingentProperties Feld
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

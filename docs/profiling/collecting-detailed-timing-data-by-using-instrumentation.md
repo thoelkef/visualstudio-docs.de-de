@@ -1,8 +1,7 @@
 ---
 title: "Sammeln ausf&#252;hrlicher Zeitsteuerungsdaten mithilfe der Instrumentation | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,10 +13,10 @@ helpviewer_keywords:
   - "Instrumentationsprofilerstellungs-Methode"
 ms.assetid: e9deb370-c459-45ac-84d3-14d646590d05
 caps.latest.revision: 18
-caps.handback.revision: 18
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 18
 ---
 # Sammeln ausf&#252;hrlicher Zeitsteuerungsdaten mithilfe der Instrumentation
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

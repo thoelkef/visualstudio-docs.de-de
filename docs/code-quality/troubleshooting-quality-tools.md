@@ -1,8 +1,7 @@
 ---
 title: "Problembehandlung f&#252;r Qualit&#228;tstools | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "Visual Studio ALM, Entwickeln der Anwendung"
 ms.assetid: 535b9e67-ce9e-4a3e-8d28-9365f257036e
 caps.latest.revision: 17
-caps.handback.revision: 17
 author: "erickson-doug"
 ms.author: "douge"
 manager: "douge"
+caps.handback.revision: 17
 ---
 # Problembehandlung f&#252;r Qualit&#228;tstools
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

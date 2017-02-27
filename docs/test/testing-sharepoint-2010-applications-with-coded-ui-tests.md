@@ -1,8 +1,7 @@
 ---
 title: "Testen von SharePoint 2010-Anwendungen mit Tests der codierten UI | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 30
-caps.handback.revision: 30
 ms.author: "mlearned"
 manager: "douge"
+caps.handback.revision: 30
 ---
 # Testen von SharePoint 2010-Anwendungen mit Tests der codierten UI
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

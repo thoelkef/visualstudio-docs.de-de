@@ -1,8 +1,7 @@
 ---
 title: "Befehl &quot;Anweisung auswerten&quot; | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,10 +15,10 @@ helpviewer_keywords:
   - "Anweisung auswerten (Befehl)"
 ms.assetid: 032039bc-9477-4f93-9b9d-66d4be0e90f4
 caps.latest.revision: 12
-caps.handback.revision: 12
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # Befehl &quot;Anweisung auswerten&quot;
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

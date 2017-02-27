@@ -1,8 +1,7 @@
 ---
 title: "Anpassen des Editors | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,10 +13,10 @@ helpviewer_keywords:
   - "Editoren, Code-Editor-Anpassung"
 ms.assetid: 7f4eee2a-586f-49ae-a763-4d9c0ac5bc71
 caps.latest.revision: 21
-caps.handback.revision: 21
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 21
 ---
 # Anpassen des Editors
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

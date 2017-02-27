@@ -1,8 +1,7 @@
 ---
 title: "Einf&#252;gen von Steuerelementen und &#196;ndern des Verhaltens im XAML-Designer | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a80fff74-bf01-41c9-ab85-ada7a873c3a9
 caps.latest.revision: 15
-caps.handback.revision: 15
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 15
 ---
 # Einf&#252;gen von Steuerelementen und &#196;ndern des Verhaltens im XAML-Designer
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

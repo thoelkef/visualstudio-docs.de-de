@@ -1,8 +1,7 @@
 ---
 title: "Unterst&#252;tzung f&#252;r das Visual Studio SDK | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,9 +16,9 @@ helpviewer_keywords:
   - "Websites, Visual Studio SDK-Unterstützung"
 ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
 caps.latest.revision: 22
-caps.handback.revision: 22
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 22
 ---
 # Unterst&#252;tzung f&#252;r das Visual Studio SDK
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

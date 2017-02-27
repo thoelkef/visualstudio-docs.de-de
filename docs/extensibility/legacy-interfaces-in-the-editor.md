@@ -1,8 +1,7 @@
 ---
 title: "Legacy-Schnittstellen im Editor | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "ältere Editoren [Visual Studio SDK]"
 ms.assetid: 741d45f5-0ea3-4614-972a-8728fe054e07
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # Legacy-Schnittstellen im Editor
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

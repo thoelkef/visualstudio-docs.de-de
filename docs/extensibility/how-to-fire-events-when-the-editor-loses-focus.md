@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Ereignisse auszul&#246;sen, wenn der Editor den Fokus verliert. | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Editoren [Visual Studio SDK] legacy - auslösen Ereignisse Fokus"
 ms.assetid: 64d40695-6917-468a-8037-a253453ac159
 caps.latest.revision: 8
-caps.handback.revision: 8
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # Gewusst wie: Ereignisse auszul&#246;sen, wenn der Editor den Fokus verliert.
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Dienste (Source Control VSPackage) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Source Control-Pakete, Dienste"
 ms.assetid: 9db07d70-87d2-4401-bc88-e3a49d81e9a2
 caps.latest.revision: 15
-caps.handback.revision: 15
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 15
 ---
 # Dienste (Source Control VSPackage)
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

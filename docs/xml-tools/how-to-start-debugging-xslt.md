@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Starten des Debuggens von XSLT | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 8358335a-fcb0-45e0-a37e-45b43e49ec0a
 caps.latest.revision: 2
-caps.handback.revision: 2
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 2
 ---
 # Gewusst wie: Starten des Debuggens von XSLT
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

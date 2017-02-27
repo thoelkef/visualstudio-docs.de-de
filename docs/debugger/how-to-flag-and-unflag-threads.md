@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Kennzeichnen von Threads und Aufheben der Kennzeichnung | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,10 +17,10 @@ helpviewer_keywords:
   - "Threads, Wechsel [Debuggen]"
 ms.assetid: 952d579d-6911-413e-b3e5-54e7e797e70c
 caps.latest.revision: 33
-caps.handback.revision: 33
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 33
 ---
 # Gewusst wie: Kennzeichnen von Threads und Aufheben der Kennzeichnung
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

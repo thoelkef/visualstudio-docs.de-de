@@ -1,8 +1,7 @@
 ---
 title: "Glossar f&#252;r Visual Studio-Debugger | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Debuggen [Debugging-SDK]-Glossar"
 ms.assetid: 4a2cfaab-1fbd-4a23-bd00-9ac4cc50d7fd
 caps.latest.revision: 13
-caps.handback.revision: 13
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # Glossar f&#252;r Visual Studio-Debugger
 [!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]

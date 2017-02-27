@@ -1,8 +1,7 @@
 ---
 title: "Anzeigen von Dateien mit &#214;ffnen mit (Befehl) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Persistenz, Unterstützung von Befehl Öffnen mit"
 ms.assetid: 53794bc3-1b73-4d40-954e-cfade1abddcf
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # Anzeigen von Dateien mit &#214;ffnen mit (Befehl)
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

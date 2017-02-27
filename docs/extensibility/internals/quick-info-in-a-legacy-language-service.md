@@ -1,8 +1,7 @@
 ---
 title: "QuickInfo in einem Legacy-Sprachdienst | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Sprachdienste [Verwaltetes Paketframework], IntelliSense-QuickInfo"
 ms.assetid: 159ccb0b-f5d6-4912-b88b-e9612924ed5e
 caps.latest.revision: 16
-caps.handback.revision: 16
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 16
 ---
 # QuickInfo in einem Legacy-Sprachdienst
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

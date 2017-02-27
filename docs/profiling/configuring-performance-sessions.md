@@ -1,8 +1,7 @@
 ---
 title: "Konfigurieren von Leistungssitzungen f&#252;r Profilerstellungstools | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,10 +15,10 @@ helpviewer_keywords:
   - "Leistung, Ermitteln von Daten"
 ms.assetid: e1c3ba41-ffca-4edf-9a7f-8a5a9244ef9b
 caps.latest.revision: 36
-caps.handback.revision: 36
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 36
 ---
 # Konfigurieren von Leistungssitzungen f&#252;r Profilerstellungstools
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "SccBackgroundGet-Funktion | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "SccBackgroundGet-Funktion"
 ms.assetid: 69817e52-b9ac-4f4d-820b-2cc9c384f0dc
 caps.latest.revision: 13
-caps.handback.revision: 13
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # SccBackgroundGet-Funktion
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

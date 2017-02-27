@@ -1,8 +1,7 @@
 ---
 title: "CA1047: Gesch&#252;tzte Member in versiegelten Typen nicht deklarieren | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "DoNotDeclareProtectedMembersInSealedTypes"
 ms.assetid: 829033b5-a9d8-4f26-a719-45494c9dd035
 caps.latest.revision: 16
-caps.handback.revision: 16
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 16
 ---
 # CA1047: Gesch&#252;tzte Member in versiegelten Typen nicht deklarieren
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
