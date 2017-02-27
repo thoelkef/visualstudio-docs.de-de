@@ -1,8 +1,7 @@
 ---
 title: "Testbereich 7: Freigabe | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Source Control-Plug-ins Freigabe Elemente"
 ms.assetid: 6ec4780a-bda4-4327-bb3e-c6c9e7eabf35
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Testbereich 7: Freigabe
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

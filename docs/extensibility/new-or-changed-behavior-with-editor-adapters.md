@@ -1,8 +1,7 @@
 ---
 title: "Neue oder ge&#228;nderte Verhalten mit Editor-Adaptern | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Editoren [Visual Studio SDK] legacy - Verhalten des Adapters"
 ms.assetid: 5555b116-cfdb-4773-ba62-af80fda64abd
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # Neue oder ge&#228;nderte Verhalten mit Editor-Adaptern
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

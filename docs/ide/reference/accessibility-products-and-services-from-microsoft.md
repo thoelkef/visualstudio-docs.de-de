@@ -1,8 +1,7 @@
 ---
 title: "Produkte und Dienste von Microsoft f&#252;r Barrierefreiheit | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,10 +20,10 @@ helpviewer_keywords:
   - "Aufgezeichnete Dokumentation"
 ms.assetid: ef3c6247-9f59-4ef4-aa8b-a8922b3e0943
 caps.latest.revision: 14
-caps.handback.revision: 14
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # Produkte und Dienste von Microsoft f&#252;r Barrierefreiheit
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

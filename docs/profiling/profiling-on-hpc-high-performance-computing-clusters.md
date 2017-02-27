@@ -1,8 +1,7 @@
 ---
 title: "Profilerstellung bei HPC-Clustern | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,10 +22,10 @@ helpviewer_keywords:
   - "HPC-Profilerstellung"
 ms.assetid: 1525bbdb-27da-4088-8487-a486cee5e7b3
 caps.latest.revision: 22
-caps.handback.revision: 22
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 22
 ---
 # Profilerstellung bei HPC-Clustern
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

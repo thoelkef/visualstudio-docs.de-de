@@ -1,8 +1,7 @@
 ---
 title: "Bearbeiten und Fortfahren (Visual&#160;C#) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,10 +20,10 @@ helpviewer_keywords:
   - "Bearbeiten und Fortfahren [C#]"
 ms.assetid: 591bd1b7-ef10-4d10-817b-3f92ca4be006
 caps.latest.revision: 18
-caps.handback.revision: 18
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 18
 ---
 # Bearbeiten und Fortfahren (Visual&#160;C#)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

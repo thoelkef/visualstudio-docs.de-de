@@ -1,8 +1,7 @@
 ---
 title: "Vorgehensweise: Festlegen von Haltepunkten in Workflows (Vorg&#228;ngerversion) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -14,10 +13,10 @@ helpviewer_keywords:
   - "Workflows, Festlegen von Haltepunkten"
 ms.assetid: 78e0be39-3e99-487c-bfef-19db0daf6f42
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 6
 ---
 # Vorgehensweise: Festlegen von Haltepunkten in Workflows (Vorg&#228;ngerversion)
 In diesem Thema wird das Festlegen von Haltepunkten in [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]\-Anwendungen mithilfe der Vorgängerversion von [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] beschrieben.Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] verwenden, wenn Ihre [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)]\-Anwendungen auf [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] oder [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] abzielen muss.  

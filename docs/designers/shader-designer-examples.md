@@ -1,8 +1,7 @@
 ---
 title: "Beispiele f&#252;r den Shader-Designer | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f12f5dee-63ab-4376-9952-7f87f269e9c4
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "BrianPeek"
 ms.author: "brpeek"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # Beispiele f&#252;r den Shader-Designer
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

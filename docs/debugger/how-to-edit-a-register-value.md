@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Bearbeiten eines Registerwerts | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,10 +24,10 @@ helpviewer_keywords:
   - "Register (Fenster), Bearbeiten von Registerwerten"
 ms.assetid: e27b6bd8-e6d4-4f1d-8a86-9f4047bb1167
 caps.latest.revision: 24
-caps.handback.revision: 24
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 24
 ---
 # Gewusst wie: Bearbeiten eines Registerwerts
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "How to: Manage Updates for a ClickOnce Application | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,10 +21,10 @@ helpviewer_keywords:
   - "application updates"
 ms.assetid: a3f23f05-e7f1-4620-b23c-2d68f9643684
 caps.latest.revision: 13
-caps.handback.revision: 13
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 13
 ---
 # How to: Manage Updates for a ClickOnce Application
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

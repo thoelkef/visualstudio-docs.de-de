@@ -1,8 +1,7 @@
 ---
 title: "Vorgehensweise: Erstellen von Workflowprojekten (Vorg&#228;ngerversion) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -12,10 +11,10 @@ helpviewer_keywords:
   - "Workflowprojekte, Erstellen"
 ms.assetid: 32299555-662c-469d-a90d-89f4700dc78c
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 6
 ---
 # Vorgehensweise: Erstellen von Workflowprojekten (Vorg&#228;ngerversion)
 Führen Sie die folgenden Schritte aus, um ein [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]\-Projekt zu erstellen, das auf [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] oder [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] abzielt.In dieser Vorgehensweise wird die Vorgängerversion von [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] verwendet, die von [!INCLUDE[vs2010](../modeling/includes/vs2010_md.md)] bereitgestellt wird.  

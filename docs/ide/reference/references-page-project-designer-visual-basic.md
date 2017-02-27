@@ -1,8 +1,7 @@
 ---
 title: "Seite &quot;Verweise&quot;, Projekt-Designer (Visual Basic) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "Nicht verwendete Verweise (Dialogfeld)"
 ms.assetid: 5a47c595-e084-401c-86e1-74e0bf74fd86
 caps.latest.revision: 34
-caps.handback.revision: 34
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 34
 ---
 # Seite &quot;Verweise&quot;, Projekt-Designer (Visual Basic)
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

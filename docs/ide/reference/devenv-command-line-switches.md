@@ -1,49 +1,31 @@
 ---
-title: Devenv-Befehlszeilenschalter | Microsoft-Dokumentation
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- switches, Devenv
-- builds [Team System], command-line
-- applications [Visual Studio], executing
-- compiling source code, Devenv
-- command-line switches, Devenv
-- command line [Visual Studio], switches
-- Devenv
-- environment, Devenv commands
-- compilers, Devenv commands
-- switches
-- Devenv, syntax and list of switches
+title: "Devenv-Befehlszeilenschalter | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-general"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "Anwendungen [Visual Studio], Ausführen"
+  - "Builds [Team System], Befehlszeile"
+  - "Befehlszeile [Visual Studio], Schalter"
+  - "Befehlszeilenschalter, Devenv"
+  - "Compiler, Devenv-Befehle"
+  - "Kompilieren von Quellcode, Devenv"
+  - "Devenv"
+  - "Devenv, Syntax und Liste mit Schaltern"
+  - "Umgebung, Devenv-Befehle"
+  - "Schalter"
+  - "Schalter, Devenv"
 ms.assetid: e12bc6ed-74fd-4bea-8d7c-89b99c20bad8
 caps.latest.revision: 33
-author: kempb
-ms.author: kempb
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: e6d73f518f62cefc1fbb791d6c51a6d42a4cfae5
-
+author: "kempb"
+ms.author: "kempb"
+manager: "ghogen"
+caps.handback.revision: 29
 ---
 # <a name="devenv-command-line-switches"></a>Devenv-Befehlszeilenschalter
 Mit Devenv können Sie von der Befehlszeile aus verschiedene Optionen für die integrierte Entwicklungsumgebung (IDE) festlegen sowie Projekte erstellen, debuggen und bereitstellen. Verwenden Sie diese Schalter, um die IDE von einem Skript oder einer BAT-Datei aus auszuführen, z. B. einem über Nacht ausgeführten Buildskript, oder um die IDE in einer bestimmten Konfiguration zu starten.  

@@ -1,8 +1,7 @@
 ---
 title: "Befehle im Men&#252; &quot;Struktur&quot; | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "Befehle im Menü "Struktur""
 ms.assetid: ffc1b893-17b1-477f-92a1-e4a59261ca1a
 caps.latest.revision: 3
-caps.handback.revision: 3
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 3
 ---
 # Befehle im Men&#252; &quot;Struktur&quot;
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

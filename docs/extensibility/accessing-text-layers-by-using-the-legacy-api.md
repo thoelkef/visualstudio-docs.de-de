@@ -1,8 +1,7 @@
 ---
 title: "Zugreifen auf Textebenen mithilfe der Legacy-API | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Editoren [Visual Studio SDK] legacy - Textebenen"
 ms.assetid: 2258fcdd-38d1-479d-b8f8-1d4e6525f72c
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Zugreifen auf Textebenen mithilfe der Legacy-API
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Menu-Element | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Menüs-Element (VSCT-XML-Schema)"
 ms.assetid: ce0560f3-b4c9-4ab2-a99c-d4e10f37b9e0
 caps.latest.revision: 16
-caps.handback.revision: 16
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 16
 ---
 # Menu-Element
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

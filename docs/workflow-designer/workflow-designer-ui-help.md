@@ -1,8 +1,7 @@
 ---
 title: "Workflow-Designer-Benutzeroberfl&#228;chenhilfe | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -12,10 +11,10 @@ helpviewer_keywords:
   - "Workflow-Designer [WFD], Benutzeroberflächenhilfe"
 ms.assetid: f7afc443-7c7f-4b0f-9517-c58070a640de
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 5
 ---
 # Workflow-Designer-Benutzeroberfl&#228;chenhilfe
 Dieser Abschnitt enthält die kontextbezogenen Hilfethemen für [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)].Wenn Sie in [!INCLUDE[vs2010](../modeling/includes/vs2010_md.md)] arbeiten, können Sie diese Themen über die Benutzeroberfläche aufrufen, indem Sie **F1** drücken, während ein [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]\-Dialogfeld geöffnet ist.  

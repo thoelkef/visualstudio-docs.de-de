@@ -1,18 +1,17 @@
 ---
 title: "Gewusst wie: Hinzuf&#252;gen eines neuen Elements zu einem Workflowprojekt | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 5c6180ca-af10-4513-b0cb-7d478fd84eab
 caps.latest.revision: 14
-caps.handback.revision: 14
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 14
 ---
 # Gewusst wie: Hinzuf&#252;gen eines neuen Elements zu einem Workflowprojekt
 Nach der Erstellung eines Workflowprojekts können Sie diesem Projekt Workflowaktivitäten, Designer und andere bekannte [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-Elemente hinzufügen.  

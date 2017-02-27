@@ -1,8 +1,7 @@
 ---
 title: "InitializeCorrelation-Aktivit&#228;tsdesigner | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/23/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -11,10 +10,10 @@ f1_keywords:
   - "System.ServiceModel.Activities.InitializeCorrelation.UI"
 ms.assetid: 4c54f34c-ee84-42a6-abb0-ec260c1ccb76
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 6
 ---
 # InitializeCorrelation-Aktivit&#228;tsdesigner
 Der **InitializeCorrelation**\-Aktivitätsdesigner wird verwendet, um eine <xref:System.ServiceModel.Activities.InitializeCorrelation>\-Aktivität zu erstellen, die verwendet wird, um eine Korrelation zwischen Nachrichten festzulegen und zu konfigurieren, bevor diese gesendet oder empfangen werden.  

@@ -1,8 +1,7 @@
 ---
 title: "Einschr&#228;nkungen der Zeichenfolge | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Source Control-Plug-ins Einschränkungen der Zeichenfolge"
 ms.assetid: 877173d2-ca27-43b3-b1f4-8379f7c5e268
 caps.latest.revision: 14
-caps.handback.revision: 14
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # Einschr&#228;nkungen der Zeichenfolge
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

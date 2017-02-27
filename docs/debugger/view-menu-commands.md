@@ -1,8 +1,7 @@
 ---
 title: "Befehle im Men&#252; &quot;Ansicht&quot; | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "Befehle im Menü "Ansicht""
 ms.assetid: 86a66cce-3436-4532-bc3e-3b0662c8b198
 caps.latest.revision: 3
-caps.handback.revision: 3
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 3
 ---
 # Befehle im Men&#252; &quot;Ansicht&quot;
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

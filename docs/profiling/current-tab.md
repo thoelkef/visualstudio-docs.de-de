@@ -1,8 +1,7 @@
 ---
 title: "Aktuelle Registerkarte | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "Nebenläufigkeitsschnellansicht, Aufrufliste am Auswahlpunkt"
 ms.assetid: 2c7b1ae5-3756-4795-bc59-f6bb113f2ba5
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # Aktuelle Registerkarte
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

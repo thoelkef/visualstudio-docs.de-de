@@ -1,8 +1,7 @@
 ---
 title: "DA0026: &#220;berm&#228;&#223;ige CPU-Zeit f&#252;r die Kernelverarbeitung | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ f1_keywords:
   - "vs.performance.26"
 ms.assetid: 4cfc8a29-b29b-4a72-b386-03d8856fdf8a
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # DA0026: &#220;berm&#228;&#223;ige CPU-Zeit f&#252;r die Kernelverarbeitung
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

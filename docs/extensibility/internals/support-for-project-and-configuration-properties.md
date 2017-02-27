@@ -1,8 +1,7 @@
 ---
 title: "Unterst&#252;tzung f&#252;r Projekt- und Konfigurationseigenschaften | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Konfigurationseigenschaften, Suppporting mit Visual Studio SDK"
 ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
 caps.latest.revision: 25
-caps.handback.revision: 25
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 25
 ---
 # Unterst&#252;tzung f&#252;r Projekt- und Konfigurationseigenschaften
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

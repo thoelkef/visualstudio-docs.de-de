@@ -1,8 +1,7 @@
 ---
 title: "CA1012: Abstrakte Typen d&#252;rfen keine Konstruktoren aufweisen | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,10 +15,10 @@ helpviewer_keywords:
   - "CA1012"
 ms.assetid: 09f458ac-dd88-4cd7-a47f-4106c1e80ece
 caps.latest.revision: 25
-caps.handback.revision: 25
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 25
 ---
 # CA1012: Abstrakte Typen d&#252;rfen keine Konstruktoren aufweisen
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

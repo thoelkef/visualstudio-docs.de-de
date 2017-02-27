@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Erstellen eines lokalisierten Bootstrapperpakets | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "Voraussetzungen, Erstellen von lokalisierten Bootstrapperpaketen"
 ms.assetid: 66a1bc7e-6540-4164-963d-557196a69d8a
 caps.latest.revision: 15
-caps.handback.revision: 15
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 15
 ---
 # Gewusst wie: Erstellen eines lokalisierten Bootstrapperpakets
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

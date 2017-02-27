@@ -1,8 +1,7 @@
 ---
 title: "Kan&#228;le (Threadansicht) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "Nebenläufigkeitsschnellansicht, Kanäle (Threadansicht)"
 ms.assetid: 2f798c17-2363-42a4-be94-a5751d208eac
 caps.latest.revision: 16
-caps.handback.revision: 16
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 16
 ---
 # Kan&#228;le (Threadansicht)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

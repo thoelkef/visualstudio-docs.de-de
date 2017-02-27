@@ -1,8 +1,7 @@
 ---
 title: "Threaddetailansicht - Profiler-Konfliktdaten | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "Threaddetailansicht"
 ms.assetid: 874c3b1c-88d8-479a-bb35-1291d9aa8e67
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # Threaddetailansicht - Profiler-Konfliktdaten
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

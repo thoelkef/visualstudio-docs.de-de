@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Konfigurieren der Rauschunterdr&#252;ckung in Berichtsansichten der Profilerstellungstools | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "Profilerstellungstools, Faltung"
 ms.assetid: b07e0375-bb73-47e3-8d1d-b9b492fb16c9
 caps.latest.revision: 13
-caps.handback.revision: 13
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # Gewusst wie: Konfigurieren der Rauschunterdr&#252;ckung in Berichtsansichten der Profilerstellungstools
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

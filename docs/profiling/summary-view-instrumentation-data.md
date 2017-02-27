@@ -1,8 +1,7 @@
 ---
 title: "Zusammenfassungsansicht – Profiler-Instrumentationsdaten | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "Zusammenfassungsansicht"
 ms.assetid: 0a3b3a1f-e22b-4ac8-b46e-71694e9b2cf1
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Zusammenfassungsansicht – Profiler-Instrumentationsdaten
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "H&#228;ufig gestellte Fragen: Konvertieren von Add-Ins in VSPackage-Erweiterungen | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,9 +10,9 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
 caps.latest.revision: 22
-caps.handback.revision: 20
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 22
 ---
 # H&#228;ufig gestellte Fragen: Konvertieren von Add-Ins in VSPackage-Erweiterungen
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

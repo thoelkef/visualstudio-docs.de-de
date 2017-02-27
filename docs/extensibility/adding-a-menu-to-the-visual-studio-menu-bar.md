@@ -1,8 +1,7 @@
 ---
 title: "Der Visual Studio-Men&#252;leiste hinzuf&#252;gen ein Men&#252; | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Menüs der obersten Ebene"
 ms.assetid: 58fc1a31-2aeb-441c-8e48-c7d5cbcfe501
 caps.latest.revision: 51
-caps.handback.revision: 51
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 51
 ---
 # Der Visual Studio-Men&#252;leiste hinzuf&#252;gen ein Men&#252;
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Erstellen und &#196;ndern von MIP-Ebenen | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f64d4369-2307-4175-a39a-2e45506f7fa1
 caps.latest.revision: 14
-caps.handback.revision: 14
 author: "BrianPeek"
 ms.author: "brpeek"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # Gewusst wie: Erstellen und &#196;ndern von MIP-Ebenen
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

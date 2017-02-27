@@ -1,8 +1,7 @@
 ---
 title: "Zugriff auf den Textpuffer mit der Legacy-API | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Editoren [Visual Studio SDK] legacy - Textpuffer"
 ms.assetid: cd6cf4ae-fff5-4e23-b293-7cbafdb8aed2
 caps.latest.revision: 15
-caps.handback.revision: 15
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 15
 ---
 # Zugriff auf den Textpuffer mit der Legacy-API
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

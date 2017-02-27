@@ -1,8 +1,7 @@
 ---
 title: "Steuerung der Ausf&#252;hrung und Auswertung Zustand | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Auswertung von Ausdrücken, Steuerung der Ausführung"
 ms.assetid: 55adde38-1622-4b51-83cb-ce1b04c1ca7a
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # Steuerung der Ausf&#252;hrung und Auswertung Zustand
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

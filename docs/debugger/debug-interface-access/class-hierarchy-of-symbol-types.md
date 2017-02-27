@@ -1,8 +1,7 @@
 ---
 title: "Klassenhierarchie der Symboltypen | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "Symbole [DIA-SDK], Klassenhierarchien"
 ms.assetid: 0ccd6990-4654-44cd-a6f3-bdd82fe90f6c
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # Klassenhierarchie der Symboltypen
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

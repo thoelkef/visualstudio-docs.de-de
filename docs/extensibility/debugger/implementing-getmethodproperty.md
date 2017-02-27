@@ -1,8 +1,7 @@
 ---
 title: "Implementieren von GetMethodProperty | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "IDebugExpressionEvaluator2-Eigenschaft"
 ms.assetid: 6305874f-a2c4-4432-834c-07530ea84bff
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Implementieren von GetMethodProperty
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

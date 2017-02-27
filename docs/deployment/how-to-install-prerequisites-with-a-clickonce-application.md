@@ -1,8 +1,7 @@
 ---
 title: "How to: Install Prerequisites with a ClickOnce Application | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "components, bootstrapping"
 ms.assetid: e964fca5-fdfd-47cf-a1c9-7fb96b1c88b5
 caps.latest.revision: 13
-caps.handback.revision: 13
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 13
 ---
 # How to: Install Prerequisites with a ClickOnce Application
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

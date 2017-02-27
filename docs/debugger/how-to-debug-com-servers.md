@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Debuggen von COM-Servern | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,10 +24,10 @@ helpviewer_keywords:
   - "Einzeldokumentoberfläche (SDI), Debuggen"
 ms.assetid: 9f013c2b-0306-4b34-ba7f-d4445a874da1
 caps.latest.revision: 16
-caps.handback.revision: 16
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 16
 ---
 # Gewusst wie: Debuggen von COM-Servern
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

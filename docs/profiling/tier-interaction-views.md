@@ -1,8 +1,7 @@
 ---
 title: "Ebeneninteraktions-Ansicht | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "Profilerstellungstools, Ansichten der Ebeneninteraktionsmethode"
 ms.assetid: c187791c-cd3f-4904-bffc-9656cefe38b0
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # Ebeneninteraktions-Ansicht
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

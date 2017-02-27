@@ -1,8 +1,7 @@
 ---
 title: "Verwenden von Laufzeit&#252;berpr&#252;fungen ohne die C-Laufzeitbibliothek | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -29,10 +28,10 @@ helpviewer_keywords:
   - "Laufzeitfehler, Laufzeitüberprüfungen"
 ms.assetid: 30ed90f3-9323-4784-80a4-937449eb54f6
 caps.latest.revision: 15
-caps.handback.revision: 15
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 15
 ---
 # Verwenden von Laufzeit&#252;berpr&#252;fungen ohne die C-Laufzeitbibliothek
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

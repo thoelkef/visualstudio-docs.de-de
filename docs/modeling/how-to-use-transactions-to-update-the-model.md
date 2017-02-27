@@ -1,18 +1,17 @@
 ---
 title: "Gewusst wie: Verwenden von Transaktionen zum Aktualisieren des Modells | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-tfs-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e24436a5-7f97-401b-bc83-20d188d10d5b
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "alancameronwills"
 ms.author: "awills"
 manager: "douge"
+caps.handback.revision: 7
 ---
 # Gewusst wie: Verwenden von Transaktionen zum Aktualisieren des Modells
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Modell f&#252;r Source Control-Pakete | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Datenquellensteuerelement-Modell [Visual Studio SDK]"
 ms.assetid: 6164b2d3-a622-4de8-bef3-a6de985e9ebd
 caps.latest.revision: 13
-caps.handback.revision: 13
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # Modell f&#252;r Source Control-Pakete
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

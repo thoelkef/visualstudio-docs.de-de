@@ -1,8 +1,7 @@
 ---
 title: "DA0018: 32-Bit-Anwendung wird an den vom Prozess verwalteten Speicherlimits ausgef&#252;hrt | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ f1_keywords:
   - "vs.performance.rules.DA0018"
 ms.assetid: 98eb2d96-f92f-42f9-915c-e5ac2330ffbf
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # DA0018: 32-Bit-Anwendung wird an den vom Prozess verwalteten Speicherlimits ausgef&#252;hrt
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

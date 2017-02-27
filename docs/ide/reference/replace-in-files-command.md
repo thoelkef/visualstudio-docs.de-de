@@ -1,8 +1,7 @@
 ---
 title: "Befehl &quot;In Dateien ersetzen&quot; | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "ReplaceInFiles-Befehl"
 ms.assetid: f116066a-4f65-4f2c-94ef-12cbd8cfb598
 caps.latest.revision: 12
-caps.handback.revision: 12
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # Befehl &quot;In Dateien ersetzen&quot;
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

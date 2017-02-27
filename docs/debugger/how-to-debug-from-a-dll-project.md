@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Debuggen &#252;ber ein DLL-Projekt | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,10 +21,10 @@ helpviewer_keywords:
   - "DLLs, Debuggen von Projekten"
 ms.assetid: 40a94339-d3f7-4ab9-b8a1-b8cf82942f44
 caps.latest.revision: 30
-caps.handback.revision: 30
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 30
 ---
 # Gewusst wie: Debuggen &#252;ber ein DLL-Projekt
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

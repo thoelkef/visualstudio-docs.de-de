@@ -1,8 +1,7 @@
 ---
 title: "Ausf&#252;hren eines Komponententest als 64-Bit-Prozess | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Komponententests, Ausführen"
 ms.assetid: d23a9ee7-58e3-4e8b-a38c-b2207ea73fea
 caps.latest.revision: 25
-caps.handback.revision: 25
 ms.author: "mlearned"
 manager: "douge"
+caps.handback.revision: 25
 ---
 # Ausf&#252;hren eines Komponententest als 64-Bit-Prozess
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

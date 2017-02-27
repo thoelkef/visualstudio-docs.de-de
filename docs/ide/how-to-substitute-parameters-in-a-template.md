@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Ersetzen von Parametern in einer Vorlage | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,10 +13,10 @@ helpviewer_keywords:
   - "Visual Studio-Vorlagen, Verwenden von Parametern"
 ms.assetid: a62924a7-4ba0-413d-b606-fdbe1fcf2807
 caps.latest.revision: 14
-caps.handback.revision: 14
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # Gewusst wie: Ersetzen von Parametern in einer Vorlage
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Erstellen eines XML-Dokuments auf Grundlage eines XSD-Schemas | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
 caps.latest.revision: 2
-caps.handback.revision: 2
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 2
 ---
 # Gewusst wie: Erstellen eines XML-Dokuments auf Grundlage eines XSD-Schemas
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

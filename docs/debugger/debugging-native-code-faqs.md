@@ -1,8 +1,7 @@
 ---
 title: "FAQs zum Debuggen von systemeigenem Code | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,10 +23,10 @@ helpviewer_keywords:
   - "Problembehandlung für systemeigenen Code"
 ms.assetid: 9a497032-cf73-441e-923b-4bbd5d37a6da
 caps.latest.revision: 18
-caps.handback.revision: 18
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 18
 ---
 # FAQs zum Debuggen von systemeigenem Code
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

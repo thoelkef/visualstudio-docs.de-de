@@ -1,8 +1,7 @@
 ---
 title: "Hinzuf&#252;gen von Symbolen zu Men&#252;befehlen | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Befehle [Visual Studio], Hinzufügen von Symbolen"
 ms.assetid: 362a0c7e-5729-4297-a83f-1aba1a37fd44
 caps.latest.revision: 13
-caps.handback.revision: 13
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # Hinzuf&#252;gen von Symbolen zu Men&#252;befehlen
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

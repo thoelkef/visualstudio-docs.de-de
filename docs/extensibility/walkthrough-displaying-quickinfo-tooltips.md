@@ -1,8 +1,7 @@
 ---
 title: "Exemplarische Vorgehensweise: Anzeigen von QuickInfos | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Editoren [Visual Studio SDK] neue - QuickInfo"
 ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
 caps.latest.revision: 27
-caps.handback.revision: 27
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 27
 ---
 # Exemplarische Vorgehensweise: Anzeigen von QuickInfos
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

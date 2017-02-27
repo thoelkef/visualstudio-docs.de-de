@@ -1,8 +1,7 @@
 ---
 title: "&#220;bersicht &#252;ber die Benutzeroberfl&#228;che f&#252;r dom&#228;nenspezifische Sprachtools | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-tfs-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "Domänenspezifische Sprachtools, Benutzeroberfläche"
 ms.assetid: 81ae6b35-6819-41d0-953b-6b4ed81f9227
 caps.latest.revision: 25
-caps.handback.revision: 25
 author: "alancameronwills"
 ms.author: "awills"
 manager: "douge"
+caps.handback.revision: 25
 ---
 # &#220;bersicht &#252;ber die Benutzeroberfl&#228;che f&#252;r dom&#228;nenspezifische Sprachtools
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

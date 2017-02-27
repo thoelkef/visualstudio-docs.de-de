@@ -1,8 +1,7 @@
 ---
 title: "Ausf&#252;hrungszeit (Threadansicht) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "Nebenläufigkeitsschnellansicht, Ausführungszeit (Threadansicht)"
 ms.assetid: 80c100f8-2502-4613-bfef-4f4f2e09cc8d
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # Ausf&#252;hrungszeit (Threadansicht)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

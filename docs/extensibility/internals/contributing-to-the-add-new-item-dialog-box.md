@@ -1,8 +1,7 @@
 ---
 title: "Zu den im Dialogfeld Neues Element hinzuf&#252;gen | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Fügen Sie zu Dialogfeld Neues Element hinzu"
 ms.assetid: b2e53175-9372-4d17-8c2b-9264c9e51e9c
 caps.latest.revision: 18
-caps.handback.revision: 18
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 18
 ---
 # Zu den im Dialogfeld Neues Element hinzuf&#252;gen
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Unterdr&#252;cken von Codeanalysewarnungen f&#252;r generierten Code | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 3a96434e-d419-43a7-81ba-95cccac835b8
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 5
 ---
 # Gewusst wie: Unterdr&#252;cken von Codeanalysewarnungen f&#252;r generierten Code
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

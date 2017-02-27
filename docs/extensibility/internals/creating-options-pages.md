@@ -1,8 +1,7 @@
 ---
 title: "Optionen (Seiten) erstellen | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Tools Optionsseiten [Visual Studio SDK] Paketframework verwaltet erstellen mit"
 ms.assetid: 1bf11fec-dece-4943-8053-6de1483c43eb
 caps.latest.revision: 29
-caps.handback.revision: 29
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 29
 ---
 # Optionen (Seiten) erstellen
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,18 +1,17 @@
 ---
 title: "Vorgehensweise: Erstellen einer Konsolenanwendung f&#252;r Workflows | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
 ms.assetid: 51a2eea7-921c-49f1-b358-68afc27f1ee9
 caps.latest.revision: 16
-caps.handback.revision: 16
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 16
 ---
 # Vorgehensweise: Erstellen einer Konsolenanwendung f&#252;r Workflows
 Mit [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] können Sie Workflows zum Ausführen von Systemprozessen oder menschlichen Prozessen erstellen.Der [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] stellt die Entwurfsoberfläche zum Erstellen dieser Workflows bereit.Der [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] kann verwendet werden, um Workflows in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zu erstellen, oder er kann in andere Anwendungen integriert werden, die den Designer neu hosten.  

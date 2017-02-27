@@ -1,8 +1,7 @@
 ---
 title: "Hinzuf&#252;gen eines Befehls auf der Symbolleiste des Projektmappen-Explorers | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Projektmappen-Explorer das Hinzufügen von Schaltflächen"
 ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 39
-caps.handback.revision: 39
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 39
 ---
 # Hinzuf&#252;gen eines Befehls auf der Symbolleiste des Projektmappen-Explorers
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

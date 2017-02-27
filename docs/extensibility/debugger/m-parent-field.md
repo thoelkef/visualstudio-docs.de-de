@@ -1,8 +1,7 @@
 ---
 title: "M_Parent Feld | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "M_Parent Feld Task-Klasse [Debugmodule [.NET Framework]"
 ms.assetid: da9e3dc7-8e9b-4c3a-a9e0-12921b5300c6
 caps.latest.revision: 9
-caps.handback.revision: 9
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # M_Parent Feld
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

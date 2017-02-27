@@ -1,8 +1,7 @@
 ---
 title: "Bereitstellen von benutzerdefinierte Startseiten | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Bereitstellen der Startseite"
 ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 caps.latest.revision: 21
-caps.handback.revision: 21
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 21
 ---
 # Bereitstellen von benutzerdefinierte Startseiten
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

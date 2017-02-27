@@ -1,8 +1,7 @@
 ---
 title: "Exemplarische Vorgehensweise: Profilerstellung &#252;ber die Befehlszeile mit Sampling | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "Leistungstools, Befehlszeilentools"
 ms.assetid: 1d53972f-6f35-4842-8c74-1b627f18c70a
 caps.latest.revision: 21
-caps.handback.revision: 21
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 21
 ---
 # Exemplarische Vorgehensweise: Profilerstellung &#252;ber die Befehlszeile mit Sampling
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

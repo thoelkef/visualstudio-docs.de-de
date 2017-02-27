@@ -1,8 +1,7 @@
 ---
 title: "Interop-Aktivit&#228;tsdesigner | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -11,10 +10,10 @@ f1_keywords:
   - "System.Activities.Statements.Interop.UI"
 ms.assetid: 800a3403-ba86-41c4-8de1-c4fee9703eb1
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 6
 ---
 # Interop-Aktivit&#228;tsdesigner
 Der **Interop**\-Aktivitätsdesigner wird verwendet, um eine <xref:System.Activities.Statements.Interop>\-Aktivität zu erstellen und zu konfigurieren.  

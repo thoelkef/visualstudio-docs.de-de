@@ -1,8 +1,7 @@
 ---
 title: "Registrieren von Einzeldatei-Generatoren | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Benutzerdefinierte Tools, definieren Einstellungen in der Registrierung"
 ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 caps.latest.revision: 16
-caps.handback.revision: 16
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 16
 ---
 # Registrieren von Einzeldatei-Generatoren
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

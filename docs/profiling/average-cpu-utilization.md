@@ -1,8 +1,7 @@
 ---
 title: "Durchschnittliche CPU-Auslastung | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "Parallelitätsschnellansicht, Durchschnittliche CPU-Auslastung"
 ms.assetid: 5797d004-2325-46cf-bbf3-6739a15958ec
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # Durchschnittliche CPU-Auslastung
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Gefilterte Vervollst&#228;ndigungslisten in Visual Basic | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "IntelliSense, Filtern"
 ms.assetid: c9e3b223-8ac2-4a2a-b8c2-91786d2a73e2
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # Gefilterte Vervollst&#228;ndigungslisten in Visual Basic
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

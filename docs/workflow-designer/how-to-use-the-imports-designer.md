@@ -1,8 +1,7 @@
 ---
 title: "Vorgehensweise: Verwenden des Imports-Designers | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -11,10 +10,10 @@ f1_keywords:
   - "System.Activities.Presentation.View.ImportDesigner.UI"
 ms.assetid: 61328ab6-9b66-4e12-8630-22e30ee8c9d1
 caps.latest.revision: 10
-caps.handback.revision: 10
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 10
 ---
 # Vorgehensweise: Verwenden des Imports-Designers
 Der Importe\-Designer ermöglicht es Ihnen, Namespaces für die Typen einzugeben, die Sie in den Ausdrücken verwenden.Ähnlich wie das Schlüsselwort **Imports** oder **using** in Visual Basic .NET bzw. C\# ermöglicht die Angabe von Namespaces im Importe\-Designer es Ihnen, einfach einen Typnamen statt eines vollqualifizierten Versionstypnamens in einen Ausdruck einzugeben.  

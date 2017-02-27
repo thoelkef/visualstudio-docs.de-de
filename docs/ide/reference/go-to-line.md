@@ -1,8 +1,7 @@
 ---
 title: "Gehe zu Zeile | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,10 +15,10 @@ helpviewer_keywords:
   - "Gehe zu Zeile (Dialogfeld)"
 ms.assetid: 529fa251-b7b3-49cf-863c-10e0b82ac7cc
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 8
 ---
 # Gehe zu Zeile
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

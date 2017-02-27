@@ -1,8 +1,7 @@
 ---
 title: "SccGetUserOption-Funktion | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "SccGetUserOption-Funktion"
 ms.assetid: 17863747-1901-4c53-a2b3-ed996085e120
 caps.latest.revision: 12
-caps.handback.revision: 12
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # SccGetUserOption-Funktion
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

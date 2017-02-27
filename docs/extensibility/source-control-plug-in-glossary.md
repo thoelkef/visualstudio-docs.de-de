@@ -1,8 +1,7 @@
 ---
 title: "Source Control-Plug-in-Glossar | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Source Control-Plug-ins, Glossar"
 ms.assetid: f224bbc9-38fc-4c80-ab09-51dcc8969f8e
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Source Control-Plug-in-Glossar
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

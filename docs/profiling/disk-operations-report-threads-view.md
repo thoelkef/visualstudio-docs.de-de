@@ -1,8 +1,7 @@
 ---
 title: "Bericht &#252;ber Datentr&#228;gervorg&#228;nge (Threadansicht) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "Concurrency Visualizer, Bericht über Dateioperationen (Threadansicht)"
 ms.assetid: e352f4f3-f654-45eb-96ed-417863487ddc
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Bericht &#252;ber Datentr&#228;gervorg&#228;nge (Threadansicht)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

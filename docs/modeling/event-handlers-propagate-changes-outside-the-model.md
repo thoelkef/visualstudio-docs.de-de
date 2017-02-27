@@ -1,8 +1,7 @@
 ---
 title: "Ereignishandler propagieren &#196;nderungen au&#223;erhalb des Modells | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-tfs-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -12,10 +11,10 @@ helpviewer_keywords:
   - "Domänenspezifische Sprache, Programmierdomänenmodelle"
 ms.assetid: 0ac8d1e4-239f-4370-ba1d-3769bb38b8a5
 caps.latest.revision: 18
-caps.handback.revision: 18
 author: "alancameronwills"
 ms.author: "awills"
 manager: "douge"
+caps.handback.revision: 18
 ---
 # Ereignishandler propagieren &#196;nderungen au&#223;erhalb des Modells
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

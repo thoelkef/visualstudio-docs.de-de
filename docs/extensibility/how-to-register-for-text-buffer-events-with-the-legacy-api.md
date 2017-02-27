@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Registrieren f&#252;r Ereignisse Puffer mit der Legacy-API | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Editoren [Visual Studio SDK] legacy - registrieren Text-Puffer-Ereignisse"
 ms.assetid: 5fc00ced-882c-4b48-b46c-1fa5a2469f94
 caps.latest.revision: 13
-caps.handback.revision: 13
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # Gewusst wie: Registrieren f&#252;r Ereignisse Puffer mit der Legacy-API
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

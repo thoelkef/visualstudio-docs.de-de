@@ -1,8 +1,7 @@
 ---
 title: "Receive-Aktivit&#228;tsdesigner | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/23/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -11,10 +10,10 @@ f1_keywords:
   - "System.ServiceModel.Activities.Receive.UI"
 ms.assetid: f58d3c70-944d-4bb4-90a7-e68c103caddc
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 8
 ---
 # Receive-Aktivit&#228;tsdesigner
 Der **Receive**\-Aktivitätsdesigner wird verwendet, um eine <xref:System.ServiceModel.Activities.Receive>\-Aktivität zu erstellen und zu konfigurieren.Eine <xref:System.ServiceModel.Activities.Receive>\-Aktivität ist eine Aktivität, die eine Nachricht empfängt, die entweder ein integrierter Datentyp, etwa ein <xref:System.ServiceModel.Channels.Message>\-, <xref:System.IO.Stream>\- oder ein <xref:System.Xml.Linq.XElement>\-Typ sein kann oder ein anwendungsdefinierter Datenvertrag, ein Nachrichtenvertrag oder eine XML\-Klasse, die serialisiert werden kann.  

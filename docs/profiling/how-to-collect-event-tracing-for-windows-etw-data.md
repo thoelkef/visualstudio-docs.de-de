@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Sammeln von Daten der Ereignisablaufverfolgung f&#252;r Windows (ETW) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "Leistungstools, Aktivieren von Ereignisablaufverfolgungsanbietern"
 ms.assetid: aa2261fe-d5f5-49fc-a171-d18842e1dc7d
 caps.latest.revision: 26
-caps.handback.revision: 26
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 26
 ---
 # Gewusst wie: Sammeln von Daten der Ereignisablaufverfolgung f&#252;r Windows (ETW)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

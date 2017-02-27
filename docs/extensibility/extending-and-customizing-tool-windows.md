@@ -1,8 +1,7 @@
 ---
 title: "Erweitern und Anpassen von Toolfenstern | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Toolfenster, standard"
 ms.assetid: 46b2892e-7b2b-4b3f-83a7-b884f1e114ee
 caps.latest.revision: 20
-caps.handback.revision: 20
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 20
 ---
 # Erweitern und Anpassen von Toolfenstern
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

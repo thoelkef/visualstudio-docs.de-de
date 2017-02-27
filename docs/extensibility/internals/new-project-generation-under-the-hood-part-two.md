@@ -1,8 +1,7 @@
 ---
 title: "Neue Projektgenerierung: Hinter den Kulissen Teil 2 | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Projekte [Visual Studio] neue project generation"
 ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
 caps.latest.revision: 14
-caps.handback.revision: 14
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # Neue Projektgenerierung: Hinter den Kulissen Teil 2
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

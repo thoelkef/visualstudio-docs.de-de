@@ -1,8 +1,7 @@
 ---
 title: "Stop-Anweisungen in Visual&#160;Basic | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,10 +22,10 @@ helpviewer_keywords:
   - "Stop-Anweisungen, Informationen über Stop-Anweisungen"
 ms.assetid: 4ad3fe5c-3dfb-4913-b2eb-a0b635751c18
 caps.latest.revision: 13
-caps.handback.revision: 13
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 13
 ---
 # Stop-Anweisungen in Visual&#160;Basic
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

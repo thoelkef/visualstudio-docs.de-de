@@ -1,22 +1,19 @@
 ---
 title: "Gewusst wie: Filtern der Berichtsansichten der Profilerstellungstools, um nur eigenen Code anzuzeigen | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "vs-ide-debug"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-helpviewer_keywords: 
-  - "Visual Studio ALM, Nur mein Code (Leistungsberichte)"
 ms.assetid: e45c7903-f945-495d-b43b-11cdd09052aa
 caps.latest.revision: 15
-caps.handback.revision: 15
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 15
 ---
 # Gewusst wie: Filtern der Berichtsansichten der Profilerstellungstools, um nur eigenen Code anzuzeigen
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "CA2121: Statische Konstruktoren sollten privat sein | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "StaticConstructorsShouldBePrivate"
 ms.assetid: ee93c620-8fc1-4e47-866c-d389c3ca9f2e
 caps.latest.revision: 16
-caps.handback.revision: 16
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 16
 ---
 # CA2121: Statische Konstruktoren sollten privat sein
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

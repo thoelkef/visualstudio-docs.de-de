@@ -1,8 +1,7 @@
 ---
 title: "Angabe des VSPackage Dateispeicherorts f&#252;r die VS-Shell | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "VSPackages, verwaltete Dateispeicherort"
 ms.assetid: beb8607a-4183-4ed2-9ac8-7527f11513b1
 caps.latest.revision: 20
-caps.handback.revision: 20
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 20
 ---
 # Angabe des VSPackage Dateispeicherorts f&#252;r die VS-Shell
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

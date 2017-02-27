@@ -1,8 +1,7 @@
 ---
 title: "SendAndReceiveReply-Vorlagendesigner | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/23/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -12,10 +11,10 @@ f1_keywords:
   - "System.ServiceModel.Activities.ReceiveReply.UI"
 ms.assetid: 818a8c84-6593-416d-b016-1d91b85ffb68
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 6
 ---
 # SendAndReceiveReply-Vorlagendesigner
 Die **SendAndReceiveReply**\-Vorlage wird verwendet, um ein Paar vorkonfigurierter <xref:System.ServiceModel.Activities.Send>\- und <xref:System.ServiceModel.Activities.ReceiveReply>\-Aktivitäten innerhalb einer <xref:System.Activities.Statements.Sequence>\-Aktivität zu erstellen. Diese Aktivitäten sind sich einander entsprechende Teile eines Anforderungs\-\/Antwort\-Nachrichtenaustauschmusters auf dem Client.  

@@ -1,8 +1,7 @@
 ---
 title: "Implementieren benutzerdefinierte Kategorien und Anzeigeelemente | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "benutzerdefinierte Kategorien"
 ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
 caps.latest.revision: 25
-caps.handback.revision: 25
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 25
 ---
 # Implementieren benutzerdefinierte Kategorien und Anzeigeelemente
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

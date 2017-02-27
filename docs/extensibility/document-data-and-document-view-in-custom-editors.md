@@ -1,8 +1,7 @@
 ---
 title: "Dokumentdaten und Dokumentansicht in benutzerdefinierten Editoren | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Editoren [Visual Studio SDK] benutzerdefinierte - Dokumentdaten und Dokumentansicht"
 ms.assetid: 71eea623-f566-4feb-84cd-ca1ba71bc493
 caps.latest.revision: 23
-caps.handback.revision: 23
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 23
 ---
 # Dokumentdaten und Dokumentansicht in benutzerdefinierten Editoren
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Dialogfeld &quot;Fenster suchen&quot; | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,10 +13,10 @@ helpviewer_keywords:
   - "Suchen nach Fenstern mit Spy++"
 ms.assetid: ee733077-d17a-4439-8a49-bc2f5dbc60d0
 caps.latest.revision: 4
-caps.handback.revision: 4
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 4
 ---
 # Dialogfeld &quot;Fenster suchen&quot;
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

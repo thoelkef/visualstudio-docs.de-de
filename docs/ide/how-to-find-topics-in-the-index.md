@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Suchen vom Themen im Index | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,10 +17,10 @@ helpviewer_keywords:
   - "Help Viewer 2.0, Index filtern"
 ms.assetid: cb071e93-f297-459c-a6fa-8ae0dabc42a4
 caps.latest.revision: 15
-caps.handback.revision: 15
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 15
 ---
 # Gewusst wie: Suchen vom Themen im Index
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

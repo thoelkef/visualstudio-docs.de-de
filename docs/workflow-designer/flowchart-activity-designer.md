@@ -1,8 +1,7 @@
 ---
 title: "Flussdiagramm-Aktivit&#228;tsdesigner | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/27/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -13,10 +12,10 @@ f1_keywords:
   - "System.Activities.Core.Presentation.FlowStart.UI"
 ms.assetid: d5af2276-5215-4138-880a-cf2b90bbf3a0
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 5
 ---
 # Flussdiagramm-Aktivit&#228;tsdesigner
 Die <xref:System.Activities.Statements.Flowchart>\-Aktivität wird verwendet, um Workflows zu erstellen, die komplexe Flusssteuerungen definieren und verwalten.Ein <xref:System.Activities.Statements.Flowchart> kann entweder im Code oder mit [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] erstellt werden.Dieses Thema zeigt die Verwendung von [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].Der [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]\-Workflowaktivitätsdesigner ermöglicht es Entwicklern, Workflows auf eine natürliche Weise zu erstellen.  

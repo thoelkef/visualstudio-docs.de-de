@@ -1,18 +1,17 @@
 ---
 title: "Generieren von Code f&#252;r eine dom&#228;nenspezifische Sprache | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-tfs-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e3706cc9-2afd-456a-a879-68425a248ebc
 caps.latest.revision: 13
-caps.handback.revision: 13
 author: "alancameronwills"
 ms.author: "awills"
 manager: "douge"
+caps.handback.revision: 13
 ---
 # Generieren von Code f&#252;r eine dom&#228;nenspezifische Sprache
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

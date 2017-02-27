@@ -1,8 +1,7 @@
 ---
 title: "Registerkarte &quot;Stile&quot;, Dialogfeld &quot;Fenstereigenschaften&quot; | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "Fenstereigenschaften (Dialogfeld), Registerkarte „Formatvorlagen“"
 ms.assetid: 4ac1eae8-d6ce-4f05-98f0-a29065f471d4
 caps.latest.revision: 4
-caps.handback.revision: 4
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 4
 ---
 # Registerkarte &quot;Stile&quot;, Dialogfeld &quot;Fenstereigenschaften&quot;
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

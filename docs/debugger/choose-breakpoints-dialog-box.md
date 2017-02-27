@@ -1,8 +1,7 @@
 ---
 title: "Dialogfeld &quot;Haltepunkte w&#228;hlen&quot; | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -27,10 +26,10 @@ helpviewer_keywords:
   - "Dialogfeld "Haltepunkte wählen""
 ms.assetid: 35cbd591-4c4f-4035-8731-8162ba1c8318
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Dialogfeld &quot;Haltepunkte w&#228;hlen&quot;
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

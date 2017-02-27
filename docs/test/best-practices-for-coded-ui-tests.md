@@ -1,8 +1,7 @@
 ---
 title: "Empfohlene Vorgehensweisen f&#252;r Tests der codierten UI | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Tests für codierte UI, Bewährte Methoden"
 ms.assetid: d5aef766-a24c-4f1f-ac9b-e5462b6627d4
 caps.latest.revision: 39
-caps.handback.revision: 39
 ms.author: "mlearned"
 manager: "douge"
+caps.handback.revision: 39
 ---
 # Empfohlene Vorgehensweisen f&#252;r Tests der codierten UI
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Fenster &quot;Fehlerliste&quot; | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,10 +17,10 @@ helpviewer_keywords:
   - "Fehler [Visual Studio], Fenster „Fehlerliste“"
 ms.assetid: b7f6d45a-733b-4ad8-bc2f-737a37509e56
 caps.latest.revision: 32
-caps.handback.revision: 32
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 32
 ---
 # Fenster &quot;Fehlerliste&quot;
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

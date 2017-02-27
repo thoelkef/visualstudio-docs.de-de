@@ -1,8 +1,7 @@
 ---
 title: "Arbeiten mit dem DSL-Definitionsdiagramm | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-tfs-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -18,10 +17,10 @@ helpviewer_keywords:
   - "Domänenspezifische Sprachtools, Split Tree"
 ms.assetid: 1a4c7a58-e134-438e-848e-efd98f92bf10
 caps.latest.revision: 21
-caps.handback.revision: 21
 author: "alancameronwills"
 ms.author: "awills"
 manager: "douge"
+caps.handback.revision: 21
 ---
 # Arbeiten mit dem DSL-Definitionsdiagramm
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

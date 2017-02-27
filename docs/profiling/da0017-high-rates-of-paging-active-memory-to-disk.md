@@ -1,8 +1,7 @@
 ---
 title: "DA0017: Hohes Ma&#223; an Paging von aktivem Speicher auf den Datentr&#228;ger | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ f1_keywords:
   - "vs.performance.DA0017"
 ms.assetid: 01011eec-5930-43b3-980d-2cb01e2ca7f6
 caps.latest.revision: 7
-caps.handback.revision: 7
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # DA0017: Hohes Ma&#223; an Paging von aktivem Speicher auf den Datentr&#228;ger
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

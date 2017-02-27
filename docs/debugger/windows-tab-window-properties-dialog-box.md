@@ -1,8 +1,7 @@
 ---
 title: "Registerkarte &quot;Fenster&quot;, Dialogfeld &quot;Fenstereigenschaften&quot; | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "Fenstereigenschaften (Dialogfeld), Registerkarte „Fenster“"
 ms.assetid: 9001342a-09a8-4f5e-b6ed-881a3b9d7246
 caps.latest.revision: 4
-caps.handback.revision: 4
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 4
 ---
 # Registerkarte &quot;Fenster&quot;, Dialogfeld &quot;Fenstereigenschaften&quot;
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

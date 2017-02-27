@@ -1,8 +1,7 @@
 ---
 title: "Fehler: Der Webserver konnte die angeforderte Ressource nicht finden | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,10 +17,10 @@ helpviewer_keywords:
   - "Debugger, Webanwendungsfehler"
 ms.assetid: 1ceeaf30-918c-42bb-ace1-96944530fef3
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # Fehler: Der Webserver konnte die angeforderte Ressource nicht finden
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Exemplarische Vorgehensweise: Anzeigen von &#252;bereinstimmenden geschweiften Klammern | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Editoren [Visual Studio SDK] neue - Klammer"
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 caps.latest.revision: 27
-caps.handback.revision: 27
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 27
 ---
 # Exemplarische Vorgehensweise: Anzeigen von &#252;bereinstimmenden geschweiften Klammern
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

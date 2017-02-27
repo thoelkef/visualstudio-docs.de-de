@@ -1,38 +1,21 @@
 ---
-title: Tipps und Tricks zu Barrierefreiheit | Microsoft Dokumentation
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- accessibility [Visual Studio]
+title: "Tipps und Tricks zu Barrierefreiheit | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-general"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "Eingabehilfen [Visual Studio]"
 ms.assetid: 6b491d88-f79e-4686-8841-857624bdcfda
 caps.latest.revision: 22
-author: kempb
-ms.author: kempb
-manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: c1e4fdf79ac11095501ca8823ff247cb48374824
-
+author: "kempb"
+ms.author: "kempb"
+manager: "ghogen"
+caps.handback.revision: 21
 ---
 # <a name="accessibility-tips-and-tricks"></a>Tipps und Tricks zu Barrierefreiheit
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] enthält integrierte Barrierefreiheitsfeatures, sodass Sie problemlos über die Tastatur arbeiten und Bildschirmsprachausgaben sowie andere technische Hilfsmittel verwenden können. Dieses Thema enthält einige Vorschläge zum Optimieren der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] für Barrierefreiheit sowie nützliche Tastenkombinationen.  

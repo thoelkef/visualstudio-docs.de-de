@@ -1,8 +1,7 @@
 ---
 title: "Lexikalische Hierarchie der Symboltypen | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,10 +14,10 @@ helpviewer_keywords:
   - "Symbole [DIA-SDK], Typhierarchien"
 ms.assetid: 912da653-ddfe-45a4-84aa-64281283739a
 caps.latest.revision: 15
-caps.handback.revision: 15
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 15
 ---
 # Lexikalische Hierarchie der Symboltypen
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

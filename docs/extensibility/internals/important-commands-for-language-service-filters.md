@@ -1,8 +1,7 @@
 ---
 title: "Wichtige Befehle f&#252;r Language Service-Filter | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Language Services, Befehle unterstützen"
 ms.assetid: 4948c494-3d4d-4f50-b3f9-959e73f90e4d
 caps.latest.revision: 16
-caps.handback.revision: 16
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 16
 ---
 # Wichtige Befehle f&#252;r Language Service-Filter
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

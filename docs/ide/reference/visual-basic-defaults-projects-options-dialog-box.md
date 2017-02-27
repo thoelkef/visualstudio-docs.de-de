@@ -1,8 +1,7 @@
 ---
 title: "VB-Standard, Projekte, Dialogfeld &quot;Optionen&quot; | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "Option Strict-Anweisung, Festlegen in der IDE"
 ms.assetid: 2465cd9d-18b6-4c4a-b1ea-86dbab23fc79
 caps.latest.revision: 19
-caps.handback.revision: 19
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 19
 ---
 # VB-Standard, Projekte, Dialogfeld &quot;Optionen&quot;
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

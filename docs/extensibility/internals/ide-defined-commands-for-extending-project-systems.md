@@ -1,8 +1,7 @@
 ---
 title: "IDE-definierte Befehle f&#252;r die Erweiterung Projektsysteme | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Projektsysteme, Umgebung benutzerdefinierte Befehle"
 ms.assetid: 0e33b8e9-16fa-4400-a941-e92d56120e7e
 caps.latest.revision: 19
-caps.handback.revision: 19
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 19
 ---
 # IDE-definierte Befehle f&#252;r die Erweiterung Projektsysteme
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

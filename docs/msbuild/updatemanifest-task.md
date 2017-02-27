@@ -1,8 +1,7 @@
 ---
 title: "UpdateManifest Task | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "UpdateManifest task [MSBuild]"
 ms.assetid: 1291fd33-b89e-4e15-8fb1-69f9625cf2d2
 caps.latest.revision: 4
-caps.handback.revision: 4
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 4
 ---
 # UpdateManifest Task
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

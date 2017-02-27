@@ -1,8 +1,7 @@
 ---
 title: "Erweitern Sie den Projektmappen-Explorer-Filter | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Erweiterbarkeit [Visual Studio], Projekte und Projektmappen"
 ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
 caps.latest.revision: 25
-caps.handback.revision: 25
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 25
 ---
 # Erweitern Sie den Projektmappen-Explorer-Filter
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

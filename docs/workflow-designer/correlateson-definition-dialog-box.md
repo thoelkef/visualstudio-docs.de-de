@@ -1,8 +1,7 @@
 ---
 title: "CorrelatesOn-Definition (Dialogfeld) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -11,10 +10,10 @@ f1_keywords:
   - "CorrelatesOnDefinition.UI"
 ms.assetid: 8b2b627a-f236-4479-aa09-525df65e3413
 caps.latest.revision: 6
-caps.handback.revision: 6
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 6
 ---
 # CorrelatesOn-Definition (Dialogfeld)
 Das Dialogfeld **CorrelatesOn** wird in [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] verwendet, um die <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A>\-Eigenschaft einer <xref:System.ServiceModel.Activities.Receive>\-Aktivität zu bearbeiten.[!INCLUDE[crdefault](../test/includes/crdefault_md.md)] dem folgenden Thema: [Receive](../workflow-designer/receive-activity-designer.md).  

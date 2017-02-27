@@ -1,8 +1,7 @@
 ---
 title: "Message Task | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,10 +20,10 @@ helpviewer_keywords:
   - "Message task [MSBuild]"
 ms.assetid: 2293309d-42b6-46dc-9684-8c146f66bc28
 caps.latest.revision: 23
-caps.handback.revision: 23
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 23
 ---
 # Message Task
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

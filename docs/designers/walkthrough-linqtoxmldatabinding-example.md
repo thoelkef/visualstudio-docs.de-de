@@ -1,8 +1,7 @@
 ---
 title: "Exemplarische Vorgehensweise: &#39;LinqToXmlDataBinding&#39;-Beispiel | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: aedf42e8-896c-48fa-88df-7f7c9536aa69
 caps.latest.revision: 2
-caps.handback.revision: 2
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 2
 ---
 # Exemplarische Vorgehensweise: &#39;LinqToXmlDataBinding&#39;-Beispiel
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

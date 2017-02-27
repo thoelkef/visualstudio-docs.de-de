@@ -1,8 +1,7 @@
 ---
 title: "Unterst&#252;tzung f&#252;r Benutzereinstellungen | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Persistenz, Einstellungen registrieren"
 ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
 caps.latest.revision: 26
-caps.handback.revision: 26
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 26
 ---
 # Unterst&#252;tzung f&#252;r Benutzereinstellungen
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

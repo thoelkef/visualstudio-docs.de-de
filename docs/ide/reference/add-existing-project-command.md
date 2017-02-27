@@ -1,8 +1,7 @@
 ---
 title: "Befehl &quot;Vorhandenes Projekt hinzuf&#252;gen&quot; | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,10 +15,10 @@ helpviewer_keywords:
   - "File.AddExistingProject"
 ms.assetid: 71cf3e31-c76b-405b-ad6a-1b1bc654bd40
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Befehl &quot;Vorhandenes Projekt hinzuf&#252;gen&quot;
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

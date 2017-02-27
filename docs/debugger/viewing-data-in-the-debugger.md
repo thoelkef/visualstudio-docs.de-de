@@ -1,8 +1,7 @@
 ---
 title: "Anzeigen von Daten im Debugger | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,10 +24,10 @@ helpviewer_keywords:
   - "Debuggen [Visual Studio], Prüfen von Programmen"
 ms.assetid: 13e1105f-f987-402e-9108-ec6ac12be042
 caps.latest.revision: 30
-caps.handback.revision: 30
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 30
 ---
 # Anzeigen von Daten im Debugger
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

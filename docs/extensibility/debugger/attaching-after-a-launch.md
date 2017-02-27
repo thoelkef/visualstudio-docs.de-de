@@ -1,8 +1,7 @@
 ---
 title: "Nach einem starten Anf&#252;gen | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Debugmodule, Anhängen an Programme"
 ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
 caps.latest.revision: 14
-caps.handback.revision: 14
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 14
 ---
 # Nach einem starten Anf&#252;gen
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

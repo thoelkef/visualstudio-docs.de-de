@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Erstellen einer Basistextur | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0222e8bf-d29f-421b-9b1f-123d500fa179
 caps.latest.revision: 15
-caps.handback.revision: 15
 author: "BrianPeek"
 ms.author: "brpeek"
 manager: "ghogen"
+caps.handback.revision: 15
 ---
 # Gewusst wie: Erstellen einer Basistextur
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

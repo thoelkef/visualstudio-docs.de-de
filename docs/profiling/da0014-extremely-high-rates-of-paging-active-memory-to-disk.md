@@ -1,8 +1,7 @@
 ---
 title: "DA0014: &#196;u&#223;erst hohes Ma&#223; an Paging von aktivem Speicher auf den Datentr&#228;ger | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,10 +15,10 @@ f1_keywords:
   - "vs.performance.rules.DA0014"
 ms.assetid: a7fa3749-9191-437a-9331-9d917181e62f
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # DA0014: &#196;u&#223;erst hohes Ma&#223; an Paging von aktivem Speicher auf den Datentr&#228;ger
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

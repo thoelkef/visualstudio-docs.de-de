@@ -1,8 +1,7 @@
 ---
 title: "Sicherheitsereignisse | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Debugereignisse [Debugging-SDK]"
 ms.assetid: 09f61652-7e16-4bb0-8055-f61a84bf384e
 caps.latest.revision: 7
-caps.handback.revision: 7
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 7
 ---
 # Sicherheitsereignisse
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

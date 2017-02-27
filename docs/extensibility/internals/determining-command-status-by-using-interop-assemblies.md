@@ -1,8 +1,7 @@
 ---
 title: "Bestimmen des Status des Befehls mithilfe von Interop-Assemblys | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Befehlsbehandlung mit Interop-Assemblys, status"
 ms.assetid: 2f5104d1-7b4c-4ca0-a626-50530a8f7f5c
 caps.latest.revision: 18
-caps.handback.revision: 18
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 18
 ---
 # Bestimmen des Status des Befehls mithilfe von Interop-Assemblys
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

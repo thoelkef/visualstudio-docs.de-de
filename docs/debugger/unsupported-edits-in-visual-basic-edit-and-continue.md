@@ -1,8 +1,7 @@
 ---
 title: "Nicht unterst&#252;tzte Bearbeitungen beim Bearbeiten und Fortsetzen in Visual Basic | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "Bearbeiten und Fortfahren [Visual Basic], Nicht unterstützte Bearbeitungen von Methoden- und Eigenschaftentext"
 ms.assetid: 9b8fdc41-a193-49ad-ad72-dfcadd46f4b3
 caps.latest.revision: 28
-caps.handback.revision: 28
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 28
 ---
 # Nicht unterst&#252;tzte Bearbeitungen beim Bearbeiten und Fortsetzen in Visual Basic
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Dialogfeld &quot;Beim Erreichen eines Haltepunktes&quot; | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,10 +22,10 @@ dev_langs:
   - "C++"
 ms.assetid: 476e3d98-cf35-4338-b124-cd0f3010d854
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Dialogfeld &quot;Beim Erreichen eines Haltepunktes&quot;
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Regelsatz f&#252;r die erweiterten Regeln f&#252;r Richtigkeit f&#252;r verwalteten Code | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 5b181f5b-6c7a-4e46-a783-360e1da427a0
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 11
 ---
 # Regelsatz f&#252;r die erweiterten Regeln f&#252;r Richtigkeit f&#252;r verwalteten Code
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

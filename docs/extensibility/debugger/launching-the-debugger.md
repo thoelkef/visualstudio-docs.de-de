@@ -1,8 +1,7 @@
 ---
 title: "Starten des Debuggers | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,9 +13,9 @@ helpviewer_keywords:
   - "Debugger [Debugging-SDK], starten"
 ms.assetid: f24da1a1-f923-48b4-989f-18a22b581d1b
 caps.latest.revision: 11
-caps.handback.revision: 11
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Starten des Debuggers
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

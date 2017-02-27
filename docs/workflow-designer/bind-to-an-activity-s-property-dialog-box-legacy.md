@@ -1,8 +1,7 @@
 ---
 title: "Dialogfeld &quot;Binden an die Eigenschaft einer Aktivit&#228;t&quot; (Vorg&#228;ngerversion) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "Binden an die Eigenschaft einer Aktivität (Dialogfeld)"
 ms.assetid: 19ebb207-e0a9-4642-8f5f-a5e31395c683
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 5
 ---
 # Dialogfeld &quot;Binden an die Eigenschaft einer Aktivit&#228;t&quot; (Vorg&#228;ngerversion)
 In diesem Thema wird die Verwendung des Dialogfelds **Binden an die Eigenschaft einer Aktivität** in der Vorgängerversion von [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] beschrieben.Verwenden Sie die Vorgängerversion von [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)], wenn Sie entweder auf [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] oder [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] abzielen möchten.  

@@ -1,8 +1,7 @@
 ---
 title: "CA2002: Auf Objekten mit schwacher Identit&#228;t nicht sperren | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "DoNotLockOnObjectsWithWeakIdentity"
 ms.assetid: 16100b39-c6fc-452b-8fca-8b459a26c286
 caps.latest.revision: 16
-caps.handback.revision: 16
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 16
 ---
 # CA2002: Auf Objekten mit schwacher Identit&#228;t nicht sperren
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

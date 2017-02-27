@@ -1,8 +1,7 @@
 ---
 title: "Versionskompatibilit&#228;t f&#252;r die Eincheckrichtlinien der Codeanalyse | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/12/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,10 +13,10 @@ helpviewer_keywords:
   - "Versionskompatibilität, Eincheckrichtlinie für die Codeanalyse"
 ms.assetid: 1af376e3-3be7-4445-803b-76a858567a5b
 caps.latest.revision: 15
-caps.handback.revision: 15
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 15
 ---
 # Versionskompatibilit&#228;t f&#252;r die Eincheckrichtlinien der Codeanalyse
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "MSBuild Task Reference | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,10 +17,10 @@ helpviewer_keywords:
   - "MSBuild, tasks"
 ms.assetid: b3144b27-a426-4259-b8ae-5f7991b202b6
 caps.latest.revision: 32
-caps.handback.revision: 32
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 32
 ---
 # MSBuild Task Reference
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

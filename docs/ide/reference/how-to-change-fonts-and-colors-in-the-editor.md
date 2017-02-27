@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: &#196;ndern der im Editor verwendeten Schriftarten und Farben | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "Text, Schriftarten"
 ms.assetid: 3f7629d1-1cdf-4046-9a31-0632517f234d
 caps.latest.revision: 11
-caps.handback.revision: 11
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 11
 ---
 # Gewusst wie: &#196;ndern der im Editor verwendeten Schriftarten und Farben
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Aktivit&#228;tsansichten (Vorg&#228;ngerversion) | Microsoft Docs"
 ms.custom: ""
-ms.date: "11/23/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "Ansichten, Aktivität"
 ms.assetid: 83dc68cd-2cb2-45c2-9a6e-10d82053171a
 caps.latest.revision: 5
-caps.handback.revision: 5
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 5
 ---
 # Aktivit&#228;tsansichten (Vorg&#228;ngerversion)
 In vielen der Aktivitäten, die von [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] bereitgestellt werden, und aus denen Workflows bestehen, stehen mehrere Entwurfsansichten in der Vorgängerversion von [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] zur Verfügung.Wird ein Aktivitätsdesigner aus der **Toolbox** in die Entwurfsoberfläche gezogen und wird die Aktivität später ausgewählt, können Sie mit dem Menü **Workflow** oder mit einen Rechtsklick auf die ausgewählte Aktivität zwischen den verschiedenen Entwurfsansichten wechseln.Und wenn Sie den Mauszeiger auf den Namen einer ausgewählten Aktivität verschieben, wird ein Dropdownsatz mit Registerkarten aufgerufen, mit denen Sie zwischen den verschiedenen Ansichten wechseln können.  

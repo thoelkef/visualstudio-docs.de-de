@@ -1,8 +1,7 @@
 ---
 title: "Gliederung und ausgeblendeten Text in einem Legacy-Sprachdienst | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Gliedern, Unterstützung von in systemeigenem code"
 ms.assetid: 252c5221-2e64-461c-8dcf-b622e400e0be
 caps.latest.revision: 5
-caps.handback.revision: 5
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 5
 ---
 # Gliederung und ausgeblendeten Text in einem Legacy-Sprachdienst
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "CA2140: Transparenter Code darf nicht auf sicherheitskritische Elemente verweisen | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "SecurityTransparentCodeShouldNotReferenceNonpublicSecurityCriticalCode"
 ms.assetid: 251a12da-0557-47f5-a4f7-0229d590ae7b
 caps.latest.revision: 17
-caps.handback.revision: 17
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 17
 ---
 # CA2140: Transparenter Code darf nicht auf sicherheitskritische Elemente verweisen
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

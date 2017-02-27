@@ -1,8 +1,7 @@
 ---
 title: "Throw-Aktivit&#228;tsdesigner | Microsoft Docs"
 ms.custom: ""
-ms.date: "09/21/2016"
-ms.prod: ".net-framework-4.6"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -11,10 +10,10 @@ f1_keywords:
   - "System.Activities.Statements.Throw.UI"
 ms.assetid: 5e97c947-be39-4a1f-af04-000e2e09528a
 caps.latest.revision: 4
-caps.handback.revision: 4
 author: "ErikRe"
 ms.author: "erikre"
 manager: "erikre"
+caps.handback.revision: 4
 ---
 # Throw-Aktivit&#228;tsdesigner
 Der **Throw**\-Aktivitätsdesigner wird verwendet, um eine <xref:System.Activities.Statements.Throw>\-Aktivität zu erstellen und zu konfigurieren.  

@@ -1,8 +1,7 @@
 ---
 title: "Dialogfeld &quot;Erweiterte Sicherheitseinstellungen&quot; | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,10 +19,10 @@ helpviewer_keywords:
   - "Erweiterte Sicherheitseinstellungen (Dialogfeld)"
 ms.assetid: 2e7aefe9-6d20-4f3e-b257-aee1ebcc6f5d
 caps.latest.revision: 17
-caps.handback.revision: 17
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 17
 ---
 # Dialogfeld &quot;Erweiterte Sicherheitseinstellungen&quot;
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

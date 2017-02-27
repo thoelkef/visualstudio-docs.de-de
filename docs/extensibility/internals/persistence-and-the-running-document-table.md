@@ -1,8 +1,7 @@
 ---
 title: "Persistenz und der Document-Tabelle ausgef&#252;hrt wird | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,9 +15,9 @@ helpviewer_keywords:
   - "ausgeführten Dokumenttabelle (RDT), Architektur"
 ms.assetid: 27117eae-6c58-4189-a61a-1397a43b5ecf
 caps.latest.revision: 10
-caps.handback.revision: 10
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 10
 ---
 # Persistenz und der Document-Tabelle ausgef&#252;hrt wird
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

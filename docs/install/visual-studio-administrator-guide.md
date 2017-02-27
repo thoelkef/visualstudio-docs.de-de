@@ -1,41 +1,23 @@
 ---
-title: "Administratorhandbuch für Visual Studio | Microsoft-Dokumentation"
-ms.custom: 
-ms.date: 01/12/2017
-ms.prod: visual-studio-dev15
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-install
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- network installation, Visual Studio
-- administrator guide, Visual Studio
-- installing Visual Studio, administrator guide
+title: "Administratorhandbuch f&#252;r Visual Studio | Microsoft Docs"
+ms.custom: ""
+ms.date: "01/12/2017"
+ms.prod: "visual-studio-dev15"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-install"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "Netzwerkinstallation, Visual Studio"
+  - "Administratorhandbuch, Visual Studio"
+  - "Installieren von Visual Studio, Administratorhandbuch"
 ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
-author: TerryGLee
-ms.author: tglee
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5e1ab0284a11fb9ecf30694d22b8bb5dc7a52a6d
-ms.openlocfilehash: 91fb897e0bf124234484c3aada08ac57c4be1923
-
+author: "TerryGLee"
+ms.author: "tglee"
+manager: "ghogen"
+caps.handback.revision: 68
 ---
 # <a name="visual-studio-administrator-guide-for-visual-studio-2017-rc"></a>Administratorhandbuch für Visual Studio 2017 RC
 

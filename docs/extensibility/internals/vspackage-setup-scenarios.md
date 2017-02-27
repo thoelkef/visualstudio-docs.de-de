@@ -1,8 +1,7 @@
 ---
 title: "VSPackage-Setup-Szenarien | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,9 +12,9 @@ helpviewer_keywords:
   - "Aspekte der Bereitstellung von VSPackages"
 ms.assetid: d2928498-f27c-46b4-a9cd-cba41fd85a10
 caps.latest.revision: 21
-caps.handback.revision: 21
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 21
 ---
 # VSPackage-Setup-Szenarien
 [!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]

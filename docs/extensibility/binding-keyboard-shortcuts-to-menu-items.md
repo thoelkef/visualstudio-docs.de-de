@@ -1,8 +1,7 @@
 ---
 title: "Bindung-Tastenkombinationen f&#252;r Men&#252;elemente | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,9 +16,9 @@ helpviewer_keywords:
   - "Menüelemente"
 ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 15
-caps.handback.revision: 15
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 15
 ---
 # Bindung-Tastenkombinationen f&#252;r Men&#252;elemente
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

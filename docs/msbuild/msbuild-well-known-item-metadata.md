@@ -1,8 +1,7 @@
 ---
 title: "MSBuild Well-known Item Metadata | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,10 +18,10 @@ helpviewer_keywords:
   - "MSBuild, well-known item metadata"
 ms.assetid: b5e791b5-c68f-4978-ad8a-9247d03bb6c0
 caps.latest.revision: 12
-caps.handback.revision: 12
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 12
 ---
 # MSBuild Well-known Item Metadata
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Festlegen von Buildereignissen (Visual&#160;Basic) | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,10 +16,10 @@ helpviewer_keywords:
   - "Präbuildereignisse"
 ms.assetid: 40dc83bf-a7c5-4a14-816a-fa0980b6e4c3
 caps.latest.revision: 26
-caps.handback.revision: 26
 author: "kempb"
 ms.author: "kempb"
 manager: "ghogen"
+caps.handback.revision: 26
 ---
 # Gewusst wie: Festlegen von Buildereignissen (Visual&#160;Basic)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

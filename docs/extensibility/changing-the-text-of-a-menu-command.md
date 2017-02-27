@@ -1,8 +1,7 @@
 ---
 title: "&#196;ndern des Texts eines Men&#252;befehls | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,9 +14,9 @@ helpviewer_keywords:
   - "Befehle, Ändern von text"
 ms.assetid: 5cb676a0-c6e2-47e5-bd2b-133dc8842e46
 caps.latest.revision: 25
-caps.handback.revision: 25
 ms.author: "gregvanl"
 manager: "ghogen"
+caps.handback.revision: 25
 ---
 # &#196;ndern des Texts eines Men&#252;befehls
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

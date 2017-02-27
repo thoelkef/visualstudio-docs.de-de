@@ -1,8 +1,7 @@
 ---
 title: "Zeilenansicht - Profiler-Konfliktdaten | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "Zeilenansicht"
 ms.assetid: 859b02d2-eddf-4ad3-95de-0df67ee2ab03
 caps.latest.revision: 9
-caps.handback.revision: 9
 author: "mikejo5000"
 ms.author: "mikejo"
 manager: "ghogen"
+caps.handback.revision: 9
 ---
 # Zeilenansicht - Profiler-Konfliktdaten
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

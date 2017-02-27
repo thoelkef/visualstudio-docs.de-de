@@ -1,8 +1,7 @@
 ---
 title: "Regelsatz f&#252;r gemischte Mindestregeln | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -11,10 +10,10 @@ ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
 caps.latest.revision: 4
-caps.handback.revision: 4
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 4
 ---
 # Regelsatz f&#252;r gemischte Mindestregeln
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]

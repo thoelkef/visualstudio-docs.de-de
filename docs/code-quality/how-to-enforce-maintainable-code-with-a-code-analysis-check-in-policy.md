@@ -1,8 +1,7 @@
 ---
 title: "Gewusst wie: Erzwingen von wartbarem Code mit einer Eincheckrichtlinie f&#252;r die Codeanalyse | Microsoft Docs"
 ms.custom: ""
-ms.date: "12/12/2016"
-ms.prod: "visual-studio-dev14"
+ms.date: "11/04/2016"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,10 +12,10 @@ helpviewer_keywords:
   - "Codeanalyse, Eincheckrichtlinien"
 ms.assetid: d1b3b04f-4dd9-40e6-b2d4-b414d33fb647
 caps.latest.revision: 8
-caps.handback.revision: 8
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+caps.handback.revision: 8
 ---
 # Gewusst wie: Erzwingen von wartbarem Code mit einer Eincheckrichtlinie f&#252;r die Codeanalyse
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
