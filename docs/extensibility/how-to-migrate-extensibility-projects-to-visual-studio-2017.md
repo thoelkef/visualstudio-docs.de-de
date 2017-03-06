@@ -28,9 +28,9 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 translationtype: Machine Translation
-ms.sourcegitcommit: 09f14e5b28a506d4f2112f82ee4fd6b0855a8f93
-ms.openlocfilehash: 67e143e1b95a0e4d881d7d6bccae0d7445897aa2
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 4f93b8c1db59dd8d8a407c82002240641be43018
+ms.openlocfilehash: 1f9248442357c4447703ac6d6dac8a27934904e8
+ms.lasthandoff: 03/01/2017
 
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Gewusst wie: Migrieren von Erweiterungsprojekte in Visual Studio 2017
@@ -76,6 +76,8 @@ So aktualisieren Sie die NuGet-Verweise auf Microsoft.VSSDK.BuildTools
 ## <a name="make-changes-to-the-vsix-extension-manifest"></a>Ändern Sie die VSIX-Erweiterung
 
 Um sicherzustellen, dass der Benutzer die Installation von Visual Studio alle Assemblys, die zum Ausführen der Erweiterung erforderlich ist, geben Sie alle erforderlichen Komponenten oder Pakete in der Manifestdatei für die Erweiterung ein. Wenn ein Benutzer versucht, die Erweiterung zu installieren, wird die VSIXInstaller überprüfen, um festzustellen, ob alle erforderlichen Komponenten installiert sind. Wenn einige fehlen, wird der Benutzer aufgefordert werden, um die fehlenden Komponenten im Rahmen der Installation der Erweiterung zu installieren.
+
+>**Hinweis:** zumindest sollten alle Erweiterungen der Visual Studio Core-Editor-Komponente als erforderliche Komponente angeben.
 
 * Bearbeiten Sie die Erweiterung der Manifestdatei (in der Regel als "Source.Extension.vsixmanifest" bezeichnet).
 * Stellen Sie sicher `InstallationTarget` 15.0 enthält.
@@ -190,7 +192,7 @@ Warten Sie, bis die Prozesse beendet, oder beenden Sie Aufgaben manuell. Sie fin
 
 Bei der Suche nach Ihren Abhängigkeiten, finden Sie, dass eine Abhängigkeit an mehreren Komponenten zugeordnet werden. Welche Abhängigkeiten festlegen sollten angeben als die erforderliche Komponente, es wird empfohlen, dass Sie eine Komponente mit einer Funktionalität ist vergleichbar mit der Erweiterung und berücksichtigen auch Benutzer und welche Art von Komponenten würden sie wahrscheinlich installiert haben oder ausmacht, würde nicht installieren. Es wird empfohlen, erstellen, die Ihre Erweiterungen in einer Weise, in denen die erforderlichen Komponenten nur die Mindestanforderungen, die die Erweiterung erfüllen ausgeführt werden kann, und für zusätzliche Features haben sie inaktiv, wenn bestimmte Komponenten nicht erkannt werden.
 
-Um weitere Anleitungen zu gewährleisten, haben wir einige allgemeine Erweiterungstypen und ihre Vorkenntnisse identifiziert:
+Um weitere Anleitungen bereitzustellen, haben wir einige allgemeine Erweiterungstypen und ihre Vorkenntnisse identifiziert:
 
 Erweiterungstyp | Anzeigename |    Id
 --- | --- | ---
@@ -215,3 +217,4 @@ Beispiele:
 
 * Wenn Sie eine Debuggererweiterung und wissen, dass das Projekt einen Verweis auf VSDebugEng.dll und VSDebug.dll, klicken Sie auf die Schaltfläche "Filter" in der **Binärdateien / Dateinamen** Header.  Suchen Sie nach "VSDebugEng.dll", und wählen Sie OK.  Als Nächstes klicken Sie auf die Schaltfläche "Filter" in der **Binärdateien / Dateinamen** Header erneut aus und suchen Sie nach "VSDebug.dll".  Aktivieren Sie das Kontrollkästchen "Aktuelle Auswahl filtern hinzufügen", und wählen Sie OK.  Jetzt Durchsuchen der **Komponentenname** eine Komponente suchen, die am häufigsten im Zusammenhang mit den Erweiterungstyp. In diesem Beispiel würde gewählten Just-In-Time-debugger und die Vsixmanifest hinzugefügt.
 * Wenn Sie wissen, dass Ihr Projekt Debugger Elemente behandelt, können Sie suchen, klicken Sie auf "Debugger" in das Suchfeld Filter angezeigt, welche Komponenten Debugger im Namen enthalten.
+
