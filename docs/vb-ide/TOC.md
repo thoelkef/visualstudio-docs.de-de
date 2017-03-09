@@ -1,7 +1,5 @@
-# [Verwenden der Visual Studio-Entwicklungsumgebung für C#](using-the-visual-studio-development-environment-for-csharp.md)
-## [Gewusst wie: Hinzufügen einer Anwendungskonfigurationsdatei zu einem C#-Projekt](how-to-add-an-application-configuration-file-to-a-csharp-project.md)
-## [Metadaten als Quelle](metadata-as-source.md)
-## [Refactoring](refactoring-csharp.md)
+# Verwenden der Visual Studio-Entwicklungsumgebung für Visual Basic
+## [Refactoring](refactoring-vb.md)
 ### [Methodensignatur ändern](refactoring/change-method-signature.md)
 ### [Feld kapseln](refactoring/encapsulate-field.md)
 ### [Schnittstelle extrahieren](refactoring/extract-interface.md)
@@ -9,7 +7,7 @@
 ### [Inline temporär variabel](refactoring/inline-temporary-variable.md)
 ### [Typ in passende Datei verschieben](refactoring/move-type-to-matching-file.md)
 ### [Umbenennen](refactoring/rename.md)
-## [Codegenerierung](code-generation-csharp.md)
+## [Codegenerierung](code-generation-vb.md)
 ### [Klasse/Typ generieren](code-generation/generate-class-type.md)
 ### [Methode generieren](code-generation/generate-method.md)
 ### [Feld/Eigenschaft/Lokales Element generieren](code-generation/generate-field-property-local.md)

@@ -1,0 +1,7 @@
+# [Windows Script-Schnittstellen](windows-script-interfaces.md)
+# [Windows Script Hosts](windows-script-hosts.md)
+# [Windows Script-Module](windows-script-engines.md)
+# [Debuggen mit Active Script – Übersicht](active-script-debugging-overview.md)
+## [Implementieren von Smart Host-Hilfsprogrammschnittstellen](implementing-smart-host-helper-interfaces.md)
+# [Active Script-Profilerstellung – Übersicht](active-script-profiling-overview.md)
+# [Windows Script-Schnittstellenreferenz](reference/TOC.md)
