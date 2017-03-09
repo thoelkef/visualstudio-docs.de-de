@@ -43,9 +43,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 4b82b8583ec54af9eee383255d20b40674e7c2c1
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: dac3cb1d7767c2ff76ac25f6a486ad30a8d54831
+ms.openlocfilehash: 99a485f2b7ebda9169797db06212ae56dc4d9eb1
+ms.lasthandoff: 03/03/2017
 
 ---
 # <a name="managing-references-in-a-project"></a>Verwalten von Verweisen in einem Projekt
@@ -72,7 +72,7 @@ Bevor Sie Code schreiben können, der sich auf eine externe Komponente oder eine
 ### <a name="project-references"></a>Projektverweise  
  Projekte der universellen Windows-Plattform (UWP), die auf Windows 10 ausgerichtet sind, können in der Projektmappe Verweise auf andere UWP-Projekte oder auf Windows Store-Projekte bzw. auf Binärdateien für [!INCLUDE[win81](../debugger/includes/win81_md.md)] erstellen. Voraussetzung hierfür ist, dass diese Projekte keine APIs verwenden, die in Windows 10 nicht mehr verwendet werden. Weitere Informationen finden Sie unter [Move from Windows Runtime 8 to UWP](https://msdn.microsoft.com/en-us/library/windows/apps/dn954974.aspx)(Von Windows-Laufzeit zu UWP) (möglicherweise in englischer Sprache).  
 
- Informationen zur Neuausrichtung der [!INCLUDE[win81](../debugger/includes/win81_md.md)]-Projekte auf Windows 10 finden Sie unter [Portieren, Migrieren und Aktualisieren von Visual Studio-Projekten](../porting/porting-migrating-and-upgrading-visual-studio-projects.md).  
+ Informationen zur Neuausrichtung der [!INCLUDE[win81](../debugger/includes/win81_md.md)]-Projekte auf Windows 10 finden Sie unter [Portieren, Migrieren und Aktualisieren von Visual Studio-Projekten](../porting/port-migrate-and-upgrade-visual-studio-projects.md).  
 
 ### <a name="extension-sdk-references"></a>Verweise auf das Erweiterungs-SDK  
  Visual Basic-, C#-, C++- und JavaScript-Windows Store-Projekte, die auf UWP (Universal Windows Platform) abzielen, können auf Erweiterungs-SDKs verweisen, die auf [!INCLUDE[win81](../debugger/includes/win81_md.md)] ausgerichtet sind, sofern diese Erweiterungs-SDKs keine APIs verwenden, die in Windows 10 als veraltet gelten. Überprüfen Sie die Website des Anbieters des Erweiterungs-SDKs, um festzustellen, ob Windows Store-Projekte, die auf UWP abzielen, auf das SKD verweisen können.  
