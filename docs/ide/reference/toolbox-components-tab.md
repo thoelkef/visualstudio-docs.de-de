@@ -1,77 +1,92 @@
 ---
-title: "Toolbox, Registerkarte &quot;Komponenten&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Toolbox, Registerkarte „Komponenten“"
+title: "Toolbox, Registerkarte „Komponenten“ | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Toolbox, Components tab
 ms.assetid: 332fafab-a763-4244-b388-15d1b5b5cc04
 caps.latest.revision: 14
-caps.handback.revision: 14
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# Toolbox, Registerkarte &quot;Komponenten&quot;
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
+ms.openlocfilehash: a267468b7b23dd0d2ed6c43df6c63c78d862ddbb
+ms.lasthandoff: 02/22/2017
 
-Zeigt Komponenten an, die Sie [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]\- und [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]\-Designern hinzufügen können.  Neben den in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] enthaltenen [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)]\-Komponenten, beispielsweise den Komponenten <xref:System.Messaging.MessageQueue> und <xref:System.Diagnostics.EventLog>, können Sie auf dieser Registerkarte eigene oder Drittanbieterkomponenten hinzufügen.  Weitere Informationen finden Sie unter [How to: Manipulate Toolbox Tabs](http://msdn.microsoft.com/de-de/21285050-cadd-455a-b1f5-a2289a89c4db).  
+---
+# <a name="toolbox-components-tab"></a>Toolbox, Registerkarte „Komponenten“
+Zeigt die Komponenten, die Sie zu [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]- und [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]-Designern hinzufügen können. Zusätzlich zu den [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)]-Komponenten, die in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] enthalten sind, wie z.B. die Komponenten <xref:System.Messaging.MessageQueue> und <xref:System.Diagnostics.EventLog>, können Sie eigene Komponenten oder Drittanbieter-Komponenten zu dieser Registerkarte hinzufügen. Weitere Informationen finden Sie unter [Vorgehensweise: Ändern von Registerkarten der Toolbox](http://msdn.microsoft.com/en-us/21285050-cadd-455a-b1f5-a2289a89c4db).  
   
- Um diese Registerkarte anzuzeigen, wählen Sie im Menü **Ansicht** die Option **Toolbox**.  Wählen Sie anschließend in der **Toolbox** die Registerkarte **Komponenten**.  
+ Wählen Sie im Menü **Ansicht** die Option **Toolbox**, um diese Registerkarte anzuzeigen. Wählen Sie in der **Toolbox** die Registerkarte **Komponenten**.  
   
  **BackgroundWorker**  
- Erstellt eine Instanz der `System.ComponentModel.BackgroundWorker`\-Komponente, mit der Sie eine Operation auf einem separaten, dedizierten Thread ausführen können.  
+ Erstellt eine `System.ComponentModel.BackgroundWorker`-Komponenteninstanz, die einen Vorgang auf einem separaten, dedizierten Thread ausführen kann.  
   
  **DirectoryEntry**  
- Erstellt eine Instanz der <xref:System.DirectoryServices.DirectoryEntry>\-Komponente, mit der Sie einen Knoten oder ein Objekt in der Active Directory\-Hierarchie kapseln und mit Active Directory\-Dienstanbietern interagieren können.  
+ Erstellt eine <xref:System.DirectoryServices.DirectoryEntry>-Komponenteninstanz, die einen Knoten oder ein Objekt in der Active Directory-Hierarchie kapselt und für die Interaktion mit Active Directory-Dienstanbietern verwendet werden kann.  
   
  **DirectorySearcher**  
- Erstellt eine Instanz der <xref:System.DirectoryServices.DirectorySearcher>\-Komponente, mit der Sie Suchabfragen in Active Directory durchführen können.  
+ Erstellt eine <xref:System.DirectoryServices.DirectorySearcher>-Komponenteninstanz, mit der Sie Active Directory-Abfragen durchführen können.  
   
  **ErrorProvider**  
- Erstellt eine Instanz der `System.Windows.Forms.ErrorProvider`\-Komponente, die dem Endbenutzer anzeigt, dass ein Steuerelement auf einem Formular fehlerhaft ist.  
+ Erstellt eine `System.Windows.Forms.ErrorProvider`-Komponenteninstanz, die dem Endbenutzer anzeigt, dass für ein Steuerelement auf einem Formular ein Fehler vorliegt.  
   
  **EventLog**  
- Erstellt eine Instanz der <xref:System.Diagnostics.EventLog>\-Komponente, über die Sie mit systemeigenen und benutzerdefinierten Ereignisprotokollen interagieren können; dies umfasst das Protokollieren von Ereignissen und das Lesen von Protokolleinträgen.  Weitere Informationen finden Sie unter [Einführung in die EventLog\-Komponente](http://msdn.microsoft.com/de-de/a2ba4f28-4b1a-435e-99ef-51b28e21f805).  
+ Erstellt eine <xref:System.Diagnostics.EventLog>-Komponenteninstanz, mit der sie mit nativen und benutzerdefinierten Ereignisprotokollen interagieren und unter anderem Ereignisse in ein Protokoll schreiben und Protokolldaten lesen können. Weitere Informationen finden Sie unter [Einführung in die EventLog-Komponente](http://msdn.microsoft.com/en-us/a2ba4f28-4b1a-435e-99ef-51b28e21f805).  
   
  **FileSystemWatcher**  
- Erstellt eine Instanz der <xref:System.IO.FileSystemWatcher>\-Komponente, mit der Sie Änderungen an Verzeichnissen oder Dateien überwachen können, auf die Sie Zugriff haben.  Weitere Informationen hierzu finden Sie unter [How to: Configure FileSystemWatcher Component Instances](http://msdn.microsoft.com/de-de/2e628234-4951-4135-8a86-28b924070d50).  
+ Erstellt eine <xref:System.IO.FileSystemWatcher>-Komponenteninstanz, mit der Sie Verzeichnisse oder Dateien, auf die Sie Zugriff haben, auf Veränderungen überwachen können. Weitere Informationen finden Sie unter [Vorgehensweise: Konfigurieren von Instanzen von FileSystemWatcher-Komponenten](http://msdn.microsoft.com/en-us/2e628234-4951-4135-8a86-28b924070d50).  
   
  **HelpProvider**  
- Erstellt eine Instanz der `System.Windows.Forms.HelpProvider`\-Komponente, die eine Popup\- oder Onlinehilfe für Steuerelemente bereitstellt.  
+ Erstellt eine `System.Windows.Forms.HelpProvider`-Komponenteninstanz, die Popup- oder Onlinehilfe für Steuerelemente bereitstellt.  
   
  **ImageList**  
- Erstellt eine Instanz der `System.Windows.Forms.ImageList`\-Komponente, die Methoden zur Verwaltung einer Auflistung von `System.Drawing.Image`\-Objekten bereitstellt.  
+ Erstellt eine `System.Windows.Forms.ImageList`-Komponenteninstanz, die Methoden zur Verwaltung einer Auflistung von `System.Drawing.Image`-Objekten bereitstellt.  
   
  **MessageQueue**  
- Erstellt eine Instanz der <xref:System.Messaging.MessageQueue>\-Komponente, über die Sie mit Meldungswarteschlangen interagieren können; dies umfasst das Lesen und Schreiben von Meldungen in Warteschlangen, das Verarbeiten von Transaktionen sowie das Ausführen von Aufgaben zur Warteschlangenverwaltung.  Weitere Informationen finden Sie unter [Using Messaging Components](http://msdn.microsoft.com/de-de/922dbac7-26f0-4e39-b666-ccfc184793d7).  
+ Erstellt eine <xref:System.Messaging.MessageQueue>-Komponenteninstanz, mit der Sie mit Meldungswarteschlangen interagieren und unter anderem Nachrichten von Warteschlangen lesen und an diese schreiben, Transaktionen verarbeiten und Verwaltungsaufgaben für die Warteschlange ausführen können. Weitere Informationen finden Sie unter [Verwenden von Messagingkomponenten](http://msdn.microsoft.com/en-us/922dbac7-26f0-4e39-b666-ccfc184793d7).  
   
  **PerformanceCounter**  
- Erstellt eine Instanz der <xref:System.Diagnostics.PerformanceCounter>\-Komponente, über die Sie mit Windows\-Leistungsindikatoren interagieren können; dies umfasst das Erstellen neuer Kategorien und Instanzen, das Lesen von Indikatorwerten sowie das Ausführen von Berechnungen für Indikatordaten.  Weitere Informationen finden Sie unter [Überwachen von Leistungsschwellenwerten](http://msdn.microsoft.com/de-de/b8b44a55-31d0-4b45-9517-8c1b1e4fdc91).  
+ Erstellt eine <xref:System.Diagnostics.PerformanceCounter>-Komponenteninstanz, mit der sie mit Windows-Leistungsindikatoren interagieren und unter anderem neue Kategorien und Instanzen erstellen, Werte von Leistungsindikatoren lesen und Berechnungen zu Indikatorendaten durchführen können. Weitere Informationen finden Sie unter [Überwachen von Leistungsschwellenwerten](http://msdn.microsoft.com/en-us/b8b44a55-31d0-4b45-9517-8c1b1e4fdc91).  
   
- **Prozess**  
- Erstellt eine Instanz der <xref:System.Diagnostics.Process>\-Komponente, über die Sie die mit den Systemprozessen verknüpften Daten anhalten, starten und bearbeiten können.  Ausführliche Informationen erhalten Sie unter [Überwachen und Verwalten von Windows\-Prozessen](http://msdn.microsoft.com/de-de/a86bd4c1-b92c-49a0-8f32-61d67837b45e).  
+ **Process**  
+ Erstellt eine <xref:System.Diagnostics.Process>-Komponenteninstanz, mit der Sie die Daten von Prozessen auf Ihrem System beenden, starten und bearbeiten können. Weitere Informationen finden Sie unter [Monitoring and Managing Windows Processes (Überwachen und Verwalten von Windows-Prozessen)](http://msdn.microsoft.com/en-us/a86bd4c1-b92c-49a0-8f32-61d67837b45e).  
   
  **SerialPort**  
- Erstellt eine Instanz der `System.IO.Ports.SerialPort`\-Komponente, die synchrone und ereignisgesteuerte E\/A\-Vorgänge, Zugriff auf Pin\- und Unterbrechungszustände sowie Zugriff auf die Treibereigenschaften für den seriellen Anschluss bereitstellt.  
+ Erstellt eine `System.IO.Ports.SerialPort`-Komponenteninstanz, die synchrone und ereignisgesteuerte E/A-Vorgänge, Zugriff auf Pin- und Unterbrechungszustände sowie Zugriff auf die Treibereigenschaften für den seriellen Anschluss bietet.  
   
  **ServiceController**  
- Erstellt eine Instanz der <xref:System.ServiceProcess.ServiceController>\-Komponente, mit der Sie vorhandene Dienste bearbeiten, anhalten und starten oder Befehle an einen Dienst senden können.  Weitere Informationen finden Sie unter [Überwachen von Windows\-Diensten](http://msdn.microsoft.com/de-de/4542ee3f-e052-4cb9-8726-58e9420de222).  
+ Erstellt eine <xref:System.ServiceProcess.ServiceController>-Komponenteninstanz, mit der Sie vorhandene Dienste bearbeiten und unter anderem Dienste starten und beenden sowie Befehle an sie senden können. Weitere Informationen finden Sie unter [Monitoring Windows Services (Überwachen von Windows-Diensten)](http://msdn.microsoft.com/en-us/4542ee3f-e052-4cb9-8726-58e9420de222).  
   
- **Timer**  
- Erstellt eine Instanz der <xref:System.Windows.Forms.Timer>\-Komponente, mit der Sie Windows\-basierten Anwendungen zeitgebundene Funktionen hinzufügen können.  Weitere Informationen finden Sie unter [Timer\-Komponente](../Topic/Timer%20Component%20\(Windows%20Forms\).md).  
+ **Zeitgeber**  
+ Erstellt eine <xref:System.Windows.Forms.Timer>-Komponenteninstanz, mit der Sie zeitbasierte Funktionen zu Ihren Windows-basierten Anwendungen hinzufügen können. Weitere Informationen finden Sie unter [Timer Component (Timer-Komponente)](http://msdn.microsoft.com/Library/6700e534-6382-43d5-98ed-14205435fff7).  
   
 > [!NOTE]
->  Ein <xref:System.Timers.Timer>, den Sie der **Toolbox** hinzufügen können, steht ebenfalls zur Verfügung. Dieser <xref:System.Timers.Timer> ist für Serveranwendungen optimiert. Für Windows Forms ist der Windows Forms\-<xref:System.Windows.Forms.Timer> am besten geeignet.  
+>  Es gibt auch eine systembasierte <xref:System.Timers.Timer>, die Sie zur **Toolbox** hinzufügen können. Diese <xref:System.Timers.Timer> ist für Serveranwendungen optimiert, und die <xref:System.Windows.Forms.Timer> eignet sich am besten für die Verwendung in Windows Forms.  
   
-## Siehe auch  
- [Programming with Components](../Topic/Programming%20with%20Components.md)   
- [Component Programming Walkthroughs](../Topic/Component%20Programming%20Walkthroughs.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Programmieren mit Komponenten](http://msdn.microsoft.com/Library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3)   
+ [Exemplarische Vorgehensweisen für das Programmieren von Komponenten](http://msdn.microsoft.com/Library/373cacf7-479e-4b05-991c-5cb18824e913)   
  [Toolbox](../../ide/reference/toolbox.md)   
- [Choose Toolbox Items Dialog Box \(Visual Studio\)](http://msdn.microsoft.com/de-de/bd07835f-18a8-433e-bccc-7141f65263bb)
+ [Dialogfeld „Toolboxelemente auswählen“ (Visual Studio)](http://msdn.microsoft.com/en-us/bd07835f-18a8-433e-bccc-7141f65263bb)

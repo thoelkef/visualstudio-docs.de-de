@@ -1,288 +1,250 @@
 ---
-title: "JavaScript IntelliSense | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "<reference>-JavaScript-XML-Tag"
-  - "Codekommentare, JavaScript IntelliSense"
-  - "IntelliSense [JavaScript]"
-  - "IntelliSense [JavaScript], Informationen über"
-  - "IntelliSense-Erweiterungen [JavaScript]"
-  - "JavaScript-Code-Editor"
-  - "JavaScript-Editor"
-  - "JavaScript, IntelliSense"
-  - "JavaScript, Verweisdirektive"
-  - "JavaScript, Verweisgruppen"
-  - "JavaScript, XML-Dokumentationskommentare"
-  - "Verweisdirektiven [JavaScript]"
-  - "Verweisgruppen [JavaScript]"
-  - "reference-JavaScript-XML-Tag"
-  - "XML-Codekommentare, JavaScript IntelliSense"
-  - "XML-Dokumentationskommentare [JavaScript]"
+title: JavaScript IntelliSense | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IntelliSense [JavaScript]
+- <reference> JavaScript XML tag
+- JavaScript Code Editor
+- XML code comments, JavaScript IntelliSense
+- reference JavaScript XML tag
+- JavaScript, IntelliSense
+- code comments, JavaScript IntelliSense
+- JavaScript, reference groups
+- JavaScript Editor
+- reference directives [JavaScript]
+- JavaScript, XML documentation comments
+- reference groups [JavaScript]
+- JavaScript, reference directives
+- IntelliSense [JavaScript], about
+- IntelliSense extensibility [JavaScript]
+- XML documentation comments [JavaScript]
 ms.assetid: af1a3171-c9d8-45a3-9c96-a763e3b163ef
 caps.latest.revision: 63
-caps.handback.revision: 63
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# JavaScript IntelliSense
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: d07820eda0d76163d99d7752789750eaf56182fd
+ms.openlocfilehash: 1f8372fe201d6b23ee2c65e0f6d6a2fa28976654
+ms.lasthandoff: 02/22/2017
 
-IntelliSense hilft Ihnen dabei, Code schneller und mit weniger Fehlern zu schreiben, indem Sie relevante Informationen direkt bei der Eingabe von Code zur Hand haben.  Während Sie mit Clientskripts in JavaScript\-Editor arbeiten, listet IntelliSense die Objekte, Funktionen, Eigenschaften und Parameter, die im aktuellen Kontext für Sie verfügbar sind, direkt auf.  Sie können eine Codierungsoption aus der von IntelliSense bereitgestellten Popupliste auswählen, um den Code zu vervollständigen.  
-  
- IntelliSense vereinfacht die Ausführung folgender Aufgaben:  
-  
--   Suchen nach Memberinformationen  
-  
--   Einfügen von Sprachelementen direkt in den Code  
-  
--   Beibehalten des Kontexts, ohne den Code\-Editor verlassen zu müssen  
-  
--   Unterstützen Sie benutzerdefinierte IntelliSense\-Elemente mit XML\-Dokumentationskommentaren und JavaScript\-IntelliSense\-Erweiterbarkeit.  
-  
- Dieses Thema enthält folgende Abschnitte:  
-  
--   [Bestimmen des IntelliSense\-Kontexts](#DeterminingIntelliSenseContext)  
-  
--   [Verarbeiten von IntelliSense\-Informationen](#ProcessingIntelliSenseInformation)  
-  
--   [JavaScript\-IntelliSense\-Funktionen](#Features)  
-  
--   [JavaScript\-IntelliSense\-Erweiterbarkeit](#Extensibility)  
-  
--   [JavaScript\-Validierung](#Validation)  
-  
- Weitere Informationen zur IntelliSense\-Funktionalität von [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] finden Sie unter [Verwenden von IntelliSense](../ide/using-intellisense.md).  
-  
-##  <a name="DeterminingIntelliSenseContext"></a> Bestimmen des IntelliSense\-Kontexts  
- JavaScript\-IntelliSense bietet die Möglichkeit, Codeelemente auszuwählen, die für den gesamten Skriptcode in Ihrem aktuellen Skriptkontext geeignet sind.  Dies beinhaltet nicht nur Skriptelemente in der aktuellen Datei,  sondern auch den gesamten Code auf den direkt oder indirekt vom Skript verwiesen wird, also Verweise auf Skriptdateien, Assemblyskripts, Dienste sowie seitenbezogene Verweise.  
-  
- Der aktuelle Skriptkontext wird auf Grundlage der folgenden Elemente erstellt:  
-  
--   Funktionen, die in allen Skriptblöcken im aktiven Dokument definiert werden.  Inline\-Skriptblöcke werden in Dateien mit folgenden Dateinamenerweiterungen unterstützt: .aspx., .ascx, .master, .html und .htm.  
-  
--   `script`\-Elemente mit `src`\-Attributen, die auf eine andere Skriptdatei zeigen.  Die Zielskriptdatei muss über die Dateinamenerweiterung .js verfügen.  
-  
--   JavaScript\-Dateien, die über eine `reference`\-Direktive auf andere JavaScript\-Dateien verweisen.  
-  
--   Verweisgruppen für globale Objekte, IntelliSense\-Erweiterungen oder verzögert geladene Skriptdateien.  
-  
--   Verweise auf XML\-Webdienste.  
-  
--   Das <xref:System.Web.UI.ScriptManager>\-Steuerelement und das <xref:System.Web.UI.ScriptManagerProxy>\-Steuerelement, wenn die Webanwendung eine AJAX\-fähige .NET\-ASP\-Anwendung ist.  
-  
--   [!INCLUDE[atlaslib_current_ext](../ide/includes/atlaslib_current_ext_md.md)], wenn Sie in einer AJAX\-fähigen ASP.NET\-Webanwendung arbeiten.  
-  
-    > [!NOTE]
-    >  Skripts in Ereignishandlerattributen für HTML\-Elemente oder in `href`\-Attributen definierte Skripts werden von IntelliSense nicht unterstützt.  
-  
-##  <a name="ProcessingIntelliSenseInformation"></a> Verarbeiten von IntelliSense\-Informationen  
- Um JavaScript\-IntelliSense bereitzustellen, führt der Sprachdienst die folgenden Vorgänge aus:  
-  
--   Erstellen einer Liste abhängiger JavaScript\-Dateien, die auf Verweisen im aktiven Dokument sowie auf rekursiven Überprüfungen der Skriptverweise in den Dateien basieren, auf die verwiesen wird.  
-  
--   Durchlaufen der Liste und Erfassen von Typinformationen sowie anderer relevanter Daten aus den einzelnen Dateien.  
-  
--   Aggregieren und Übergeben der Daten an den JavaScript\-Sprachdienst, über den die Typinformationen und Daten für IntelliSense bereitgestellt werden.  
-  
--   Überwachen der Dateien auf Änderungen, die sich auf die IntelliSense\-Liste auswirken könnten, und Aktualisieren der Liste nach Bedarf.  Skripts auf Remotespeichern \(z. B. Speicher, auf die mit HTTP verwiesen wird\) werden nicht überwacht.  
-  
-##  <a name="Features"></a> JavaScript\-IntelliSense\-Funktionen  
- JavaScript\-IntelliSense unterstützt die folgenden Objekte:  
-  
--   [Elemente des Dokumentobjektmodells \(DOM\)](#HTMLDom)  
-  
--   [Systeminterne Objekte](#IntrinsicObjects)  
-  
--   [Benutzerdefinierte Variablen, Funktionen und Objekte](#UserDefined)  
-  
--   Objekte, die in externen Dateien mit Verweisen wie [Skriptverweise](#Script), [References\-Direktive](#ReferenceDirectives) und [Verweisgruppen](#ReferenceGroups) definiert werden.  
-  
--   Objekte, die in Remotedateien definiert werden, die von Visual Studio heruntergeladen werden.  
-  
--   Objekte, die in [XML\-Dokumentationskommentaren](#XMLDocComments), wie Parametern und Feldern, angegeben werden.  
-  
--   Objekte, die mit JavaScript\-Standardkommentartags \(\/\/\) beschrieben werden.  Weitere Informationen finden Sie unter [Erweitern von JavaScript IntelliSense](../ide/extending-javascript-intellisense.md).  
-  
--   Objekte, die mithilfe des [JavaScript-IntelliSense-Erweiterbarkeit](#Extensibility)\-Mechanismus unterstützt werden.  Weitere Informationen finden Sie unter [Erweitern von JavaScript IntelliSense](../ide/extending-javascript-intellisense.md).  
-  
--   [ASP.NET\-AJAX\-Objekte](#ASPNet)  
-  
- Wenn IntelliSense den Typ eines Objekts nicht bestimmen kann, stellt es Optionen für die Anweisungsvervollständigung mithilfe der Bezeichner im aktiven Dokument bereit.  Weitere Informationen finden Sie unter [Anweisungsvervollständigung für Bezeichner](../ide/statement-completion-for-identifiers.md).  
-  
-###  <a name="HTMLDom"></a> HTML\-DOM\-Elemente  
- JavaScript\-IntelliSense umfasst Programmierreferenzen für Dynamic HTML \(DHTML\)\-DOM\-Elemente, z. B. `body`, `form` und `div`.  Nur die Elemente, die im aktuellen Dokument enthalten sind, und die Masterseite werden von IntelliSense angezeigt.  JavaScript\-IntelliSense unterstützt außerdem das `window`\-Objekt und das `document`\-Objekt sowie zugehörige Member.  
-  
-###  <a name="IntrinsicObjects"></a> Systeminterne Objekte  
- JavaScript\-IntelliSense umfasst Programmierreferenzen für systeminterne Objekte wie `Array`, `String`, `Math`, `Date` und `Number`.  Weitere Informationen zu systeminternen Objekten finden Sie unter [Systeminterne Objekte](../Topic/Intrinsic%20Objects%20\(JavaScript\).md).  
-  
-###  <a name="UserDefined"></a> Benutzerdefinierte Variablen, Funktionen und Objekte  
- Wenn Sie eine JavaScript\-Datei ändern, werden Dokumente, die geöffnet sind und auf die verwiesen wird, von [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] überprüft, um alle verfügbaren Coderessourcen zu ermitteln.  Dies schließt auch die von Ihnen erstellten Variablen, Funktionen und Objekte ein.  Diese Ressourcen stehen dann für JavaScript\-IntelliSense zur Verfügung.  
-  
- Weitere Informationen zu benutzerdefinierten Variablen, Funktionen und Objekten finden Sie unter [Erstellen von Objekten](http://go.microsoft.com/fwlink/?LinkId=108671) auf der MSDN\-Website.  
-  
-###  <a name="External"></a> Externe Dateiverweise  
- Sie können verschiedene externe Dateiverweise einschließen, um IntelliSense\-Unterstützung im Code zu erreichen.  Externe Dateiverweise können Skriptverweise oder Reference\-Direktiven sein oder sie können mit Verweisgruppen angegeben werden.  
-  
-####  <a name="Script"></a> Skriptverweise  
- Anstatt das gesamte Clientskript auf einer Seite zu schreiben, können Sie auf externe Dateien verweisen, die Skriptcode enthalten.  Auf diese Weise können Sie Code einfach seitenübergreifend wiederverwenden, und das Clientskript kann vom Browser zwischengespeichert werden.  
-  
- Wenn Sie keine ASP.NET\-AJAX\-fähige Webseite verwenden, können Sie mit dem `src`\-Attribut im Starttag eines `script`\-Elements auf externe Skriptdateien verweisen.  Das `src`\-Attribut gibt die URL zu einer externen Datei an, die den Quellcode oder die Daten enthält.  
-  
- Das folgende Beispiel enthält Markup, das das `src`\-Attribut in einem \<`script`\>\-Tag zum Verweisen auf eine Skriptdatei verwendet.  
-  
-```html  
-<script type="text/javascript" src="~/Scripts/JavaScript.js">  
-  
-</script>  
-```  
-  
- Bei Verwendung einer ASP.NET\-AJAX\-fähigen Webseite können Sie mithilfe des <xref:System.Web.UI.ScriptReference>\-Objekts des <xref:System.Web.UI.ScriptManager>\-Steuerelements auf Skriptdateien verweisen.  
-  
- Das folgende Beispiel enthält Markup, das ein <xref:System.Web.UI.ScriptReference>\-Objekt in einem <xref:System.Web.UI.ScriptManager>\-Steuerelement zum Verweisen auf eine Skriptdatei verwendet.  
-  
-```html  
-<asp:ScriptManager ID="ScriptManager1" runat="server">  
-  <Scripts>  
-    <asp:ScriptReference Path="~/Scripts/JavaScript.js" />  
-  </Scripts>  
-</asp:ScriptManager>  
-```  
-  
- IntelliSense bietet zusätzlich Unterstützung für Skriptdateien, die als Ressourcen in einer Assembly in ASP.NET\-AJAX\-Webanwendungen eingebettet sind.  Weitere Informationen zu eingebetteten Skriptressourcen finden Sie unter [Walkthrough: Embedding a JavaScript File as a Resource in an Assembly](../Topic/Walkthrough:%20Embedding%20a%20JavaScript%20File%20as%20a%20Resource%20in%20an%20Assembly.md).  
-  
-####  <a name="ReferenceDirectives"></a> Reference\-Direktiven  
- Mithilfe einer `reference`\-Direktive kann [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] eine Beziehung zwischen dem gerade von Ihnen bearbeiteten und anderen Skripts herstellen.  Die `reference`\-Direktive bietet Ihnen die Möglichkeit, eine Skriptdatei in den Skriptkontext der aktuellen Skriptdatei einzubeziehen.  Dadurch kann IntelliSense auf extern definierte Funktionen, Typen und Felder verweisen, während Sie den Code erstellen.  
-  
- Sie erstellen eine `reference`\-Direktive in Form eines XML\-Kommentars.  Die Direktive muss in der Datei vor allen möglichen Skripts deklariert werden.  Eine `reference`\-Direktive kann Skriptverweise enthalten, die auf Datenträgern, Assemblys, Diensten oder Seiten basieren.  
-  
- Im Folgenden wird anhand verschiedener Beispiele die Verwendung datenträgerbasierter Reference\-Direktiven veranschaulicht.  Im ersten Beispiel sucht der Sprachdienst nach der Datei in dem Ordner, der die Projektdatei enthält \(z. B. JSPROJ\).  
-  
- `/// <reference path="ScriptFile1.js" />`  
-  
- `/// <reference path="Scripts/ScriptFile2.js" />`  
-  
- `/// <reference path="../ScriptFile3.js" />`  
-  
- `/// <reference path="~/Scripts/ScriptFile4.js" />`  
-  
- Das folgende Beispiel zeigt, wie ein Verweis auf ein assemblybasiertes Skript erstellt wird.  
-  
- `/// <reference name "Ajax.js" assembly="System.Web.Extensions, ..." />`  
-  
- Das folgende Beispiel zeigt, wie auf ein dienstbasiertes Skript verwiesen wird:  
-  
- `/// <reference path="MyService.asmx" />`  
-  
- `/// <reference path="Services/MyService.asmx" />`  
-  
- `/// <reference path="../MyService.asmx" />`  
-  
- `/// <reference path="~/Services/MyService.asmx" />`  
-  
+---
+# <a name="javascript-intellisense"></a>JavaScript IntelliSense
+[!include[vs_dev15](../misc/includes/vs_dev15_md.md)] bietet eine leistungsfähige direkte JavaScript-Zuordnung. Unterstützt von einem TypeScript-basierten Sprachdienst, bietet Visual Studio umfangreichere IntelliSense, Support für moderne JavaScript-Funktionen und verbesserte Produktivitätsfeatures wie die „Gehe zu Definition“, die Umgestaltung und vieles mehr.
+
 > [!NOTE]
->  Bei Skripts innerhalb von Webdienstdateien \(.asmx\) in Webanwendungsprojekten \(WAP\) wird JavaScript\-IntelliSense nicht unterstützt.  
-  
- Das folgende Beispiel zeigt, wie auf ein seitenbasiertes Skript verwiesen wird.  
-  
- `/// <reference path="Default.aspx" />`  
-  
- `/// <reference path="Admin/Default.aspx" />`  
-  
- `/// <reference path="../Default.aspx" />`  
-  
- `/// <reference path="~/Admin/Default.aspx" />`  
-  
- Die folgenden Regeln beziehen sich auf eine `reference`\-Direktive.  
-  
--   Der `reference`\-XML\-Kommentar muss vor allen möglichen Skripts deklariert werden.  
-  
--   Es muss XML\-Kommentarsyntax mit drei Schrägstrichen verwendet werden.  Verweise, die unter Verwendung der standardmäßigen Kommentarsyntax \(zwei Schrägstriche\) erstellt wurden, werden ignoriert.  
-  
--   Pro Direktive kann nur eine Datei oder Ressource angegeben werden.  
-  
--   Mehrere Verweise auf seitenbasierte Skripts sind nicht zulässig.  
-  
--   Wenn ein Seitenverweis angegeben wird, ist kein anderer Reference\-Direktiventyp zulässig.  
-  
--   Dateinamen verwenden relative Pfade.  Sie können den Tildeoperator \(`~`\) verwenden, um Pfade relativ zum Stammverzeichnis der Anwendung anzugeben.  
-  
--   Absolute Pfade werden ignoriert.  
-  
--   Reference\-Direktiven in Seiten, auf die verwiesen wird, werden nicht verarbeitet. Dies bedeutet, dass Reference\-Direktiven für Seiten nicht rekursiv aufgelöst werden.  Es wird nur Skriptcode berücksichtigt, auf den direkt von der Seite verwiesen wird.  
-  
-####  <a name="ReferenceGroups"></a> Verweisgruppen  
- Sie können vordefinierte Verweisgruppen verwenden, um anzugeben, dass bestimmte IntelliSense\-JS\-Dateien für verschiedene JavaScript\-Projekte verfügbar sind.  Die folgenden Verweisgruppentypen sind verfügbar:  
-  
--   Implizit \(Windows\) für [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]\-Apps, die JavaScript verwenden.  Die Dateien, die in dieser Gruppe enthalten sind, sind für jede JS\-Datei verfügbar, die im Code\-Editor für das Projekt des angegebenen Typs geöffnet ist.  
-  
--   Implizit \(Internet\), für HTML5\-Projekte.  Die Dateien, die in dieser Gruppe enthalten sind, sind im Bereich für jede JS\-Datei, die im Code\-Editor für die Projekttypen geöffnet ist.  
-  
--   Dedizierte Workerverweisgruppen, für HTML5\-Web\-Worker.  Die Dateien, die in dieser Gruppe angegeben werden, sind für JS\-Dateien verfügbar, die einen expliziten Verweis auf eine dedizierte Workerverweisgruppe haben.  
-  
--   Generisch, für andere JavaScript\-Projekttypen.  
-  
- In den meisten Szenarien müssen Sie Verweisgruppen nicht ändern.  Wenn Sie Änderungen vornehmen möchten, können Sie Konfigurationseinstellungen für JavaScript\-Code\-Editor verwenden, um die in den Verweisgruppen enthaltenen Dateien anzugeben.  Anleitungen zur Verwendung dieser Funktion finden Sie unter [Optionen, Text\-Editor, JavaScript, IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md).  
-  
-> [!TIP]
->  Die IntelliSense\-Verweise werden normalerweise verwendet, um die IntelliSense\-Unterstützung für globale Objekte und für IntelliSense\-[Erweiterungen](#Extensibility) bereitzustellen.  Sie können diese Funktion auch für Skripts verwenden, die mithilfe des Skriptladeprogramms zur Laufzeit geladen werden müssen.  
-  
-### Remotedateiverweise  
- Sie können Visual Studio anweisen, die JavaScript\-Remotedateien herunterzuladen, auf die in einer JavaScript\-Datei verwiesen wird, um IntelliSense\-Unterstützung für die Remotedatei oder die Bibliothek bereitzustellen.  Wenn Sie diese Funktion verwenden, werden die Dateien herunterladen, wenn Sie sie als Verweis in die JavaScript\-Datei einschließen.  
-  
+>  Der JavaScript-Sprachdienst in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] verwendet ein neues Modul für den Sprachdienst („Salsa“). Details sind hier in diesem Thema enthalten. Möglicherweise möchten Sie auch diesen [Blogbeitrag](https://blogs.msdn.microsoft.com/visualstudio/2016/04/08/previewing-salsa-javascript-language-service-visual-studio-15/) lesen. Die neue Zuordnung gilt meistens auch im VS Code. Finden Sie unter [VS Code docs (VS Code Dokumentation)](https://code.visualstudio.com/docs/languages/javascript) weitere Informationen.
+
+Weitere Informationen zur allgemeinen IntelliSense-Funktionalität von [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] finden Sie unter [Verwenden von IntelliSense](../ide/using-intellisense.md). 
+
+## <a name="whats-new-in-the-javascript-language-service-in-includevsdev15miscincludesvsdev15mdmd"></a>Neues im JavaScript-Sprachdienst in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+
+- Umfangreichere IntelliSense
+
+    JavaScript IntelliSense in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] zeigt jetzt eine Vielzahl weiterer Informationen für Parameter- und Memberlisten an.
+Diese neuen Informationen werden vom TypeScript-Sprachdienst bereitgestellt, der statische Analyse im Hintergrund verwendet, um Ihren Code besser zu verstehen.
+TypeScript verwendet mehrere Quellen, um diese Informationen zu erstellen.
+    - [IntelliSense basierend auf dem Typrückschluss](#TypeInference)
+    - [IntelliSense basierend auf JSDoc](#JsDoc)
+    - [IntelliSense basierend auf TypeScript Deklarationsdateien](#TSDeclFiles)
+
+- [Automatische Übernahme von Typdefinitionen](#Auto)
+- [Support für ES6 und darüber hinaus](#ES6)
+- [Support für JSX-Syntax](#JSX)
+
+## <a name="TypeInference"></a>IntelliSense basierend auf den Typrückschluss
+In JavaScript ist in den meisten Fällen keine explizite Typinformationen verfügbar. Glücklicherweise ist es in der Regel recht einfach, einen Typ mit dem angegebenen umgebenden Codekontext abzuleiten.
+Dieser Prozess wird als Typrückschluss bezeichnet.
+
+Für eine Variable oder eine Eigenschaft ist der Typ in der Regel der Typ des Werts, der verwendet wird, um sie oder die aktuelle Zuweisung von Werten zu initialisieren. 
+
+```js
+var nextItem = 10;
+nextItem; // here we know nextItem is a number
+
+nextItem = "box";
+nextItem; // now we know nextItem is a string
+```
+
+Für eine Funktion kann der Rückgabetyp von den return-Anweisungen hergeleitet werden. 
+
+Für die Funktionsparameter ist derzeit kein Rückschluss vorhanden, aber es gibt Möglichkeiten, dieses Problem mithilfe von JSDoc oder TypeScript `.d.ts`-Dateien (siehe weiter unten) zu umgehen.
+
+Darüber hinaus gibt es spezielle Rückschlüsse für Folgendes:
+ - „ES3-Style“-Klassen, die mit einer Konstruktorfunktion und Zuweisungen der prototype-Eigenschaft angegeben sind.
+ - CommonJS-Stil Modul Muster, die als Eigenschaftenzuweisungen auf das `exports`-Objekt oder Zuweisungen zu der `module.exports`-Eigenschaft angegeben sind.
+
+```js
+function Foo(param1) {
+    this.prop = param1;
+}
+Foo.prototype.getIt = function () { return this.prop; };
+// Foo will appear as a class, and instances will have a 'prop' property and a 'getIt' method.
+
+exports.Foo = Foo;
+// This file will appear as an external module with a 'Foo' export.
+// Note that assigning a value to "module.exports" is also supported.
+```
+
+## <a name="JsDoc"></a> IntelliSense basierend auf JSDoc
+
+Wo der Typrückschluss nicht die gewünschten Typinformationen bietet (oder die Dokumentation unterstützt), können Typinformationen ausdrücklich über JSDoc-Anmerkungen angegeben werden.  Sie können beispielsweise den `@type`-Tag wie im Folgenden verwenden, um einem teilweise deklarierten Objekt einen bestimmten Typ zu geben:
+
+```js
+/**
+ * @type {{a: boolean, b: boolean, c: number}}
+ */
+var x = {a: true};
+x.b = false;
+x. // <- "x" is shown as having properties a, b, and c of the types specified
+```
+
+Wie bereits erwähnt, werden Funktionsparameter nie hergeleitet. Verwenden Sie jedoch den JSDoc `@param`-Tag, können Sie auch Typen zu Funktionsparametern hinzufügen. 
+
+```js
+/**
+ * @param {string} param1 - The first argument to this function
+ */
+function Foo(param1) {
+    this.prop = param1; // "param1" (and thus "this.prop") are now of type "string".
+}
+```
+ 
+Weitere Informationen finden Sie unter [diesem Dokument](https://github.com/Microsoft/TypeScript/wiki/JsDoc-support-in-JavaScript) für JsDoc-Anmerkungen, die derzeit unterstützt werden.
+
+## <a name="TsDeclFiles"></a> IntelliSense basierend auf TypeScript Deklarationsdateien
+
+Da JavaScript und TypeScript jetzt auf dem gleichen Sprachdienst basieren, können sie auf umfangreichere Weise interagieren. Beispielsweise kann JavaScript IntelliSense für die deklarierten Werte in der `.d.ts`-Datei bereitgestellt werden ([Weitere Infos](https://github.com/Microsoft/TypeScript-Handbook/blob/master/pages/Writing%20Definition%20Files.md)), und in TypeScript deklarierte Typen wie Schnittstellen und Klassen stehen für die Verwendung als Typen in JsDoc-Kommentaren zur Verfügung. 
+
+Im folgenden zeigen wir ein einfaches Beispiel für eine TypeScript-Definitionsdatei, die solche Typinformationen (über eine Schnittstelle) in eine JavaScript-Datei im selben Projekt (mit einem JsDoc-Tag) bereitstellt.
+
+_**TypeScript-Deklarationen, die in JavaScript verwendet werden**_
+
+<img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640"/>
+
+## <a name="Auto"></a> Automatische Übernahme von Typdefinitionen
+In der TypeScript-Welt lassen die am häufigsten verwendeten JavaScript-Bibliotheken ihre APIs durch `.d.ts`-Dateien beschreiben, und die am häufigsten verwendete Repository für diese Definitionen befindet sich auf [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped).
+
+Standardmäßig versucht der Sprachdienst Salsa zu ermitteln, welche JavaScript-Bibliotheken verwendet werden. Er lädt die entsprechende `.d.ts`-Datei, die die Bibliothek beschreibt, um umfangreichere IntelliSense bereitzustellen, automatisch herunter und verweist darauf. Die Dateien werden auf einen Cache, der sich unter dem Benutzerordner auf `%LOCALAPPDATA%\Microsoft\TypeScript` befindet, heruntergeladen. 
+
 > [!NOTE]
->  Außer für Webprojekte ist diese Funktion nur für JavaScript\-Dateien verfügbar, die außerhalb des Kontexts eines Projekts geöffnet sind.  Für Webprojekte werden die Remotedateien, auf die im Projekt verwiesen wird, standardmäßig heruntergeladen.  
-  
- Anleitungen zur Verwendung dieser Funktion finden Sie unter [Optionen, Text\-Editor, JavaScript, IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md).  
-  
-> [!WARNING]
->  Wenn Sie diese Funktion aktivieren und einen Rückgang der Leistung im Code\-Editor feststellen, wird empfohlen, sie zu deaktivieren.  
-  
-###  <a name="XMLDocComments"></a> XML\-Dokumentationskommentare  
- XML\-Dokumentationskommentare sind Textbeschreibungen von Codeelementen, die Sie dem Skript hinzufügen.  Diese Textbeschreibungen werden in IntelliSense angezeigt, wenn Sie auf das kommentierte Skript verweisen.  Sie können beispielsweise Informationen zu den Parametern und dem Rückgabewert einer Funktion bereitzustellen.  XML\-Dokumentationskommentare sind nur in den Dateien, Assemblys und Diensten verfügbar, auf die verwiesen wurde.  Weitere Informationen finden Sie unter [XML\-Dokumentationskommentare](../ide/xml-documentation-comments-javascript.md) und [Gewusst wie: Erstellen von JavaScript\-XML\-Dokumentationskommentaren](../ide/create-xml-documentation-comments-for-javascript-intellisense.md).  
-  
- IntelliSense kann XML\-Dokumentationskommentare in den folgenden Szenarien anzeigen:  
-  
--   JS\-Datei, die auf eine andere JS\-Datei verweist.  
-  
--   JS\-Datei, die auf eine ASPX\-Datei verweist.  
-  
--   ASPX\-Datei, die auf eine JS\-Datei verweist.  
-  
- IntelliSense ist nicht verfügbar, wenn eine ASPX\-Datei auf eine andere ASPX\-Datei verweist.  
-  
-###  <a name="ASPNet"></a> ASP.NET\-AJAX\-Objekte  
- JavaScript\-IntelliSense wird außerdem von ASP.NET AJAX unterstützt.  ASP.NET AJAX umfasst ein Clientframework, durch das die in ECMAScript \(JavaScript\) verfügbaren Standardtypen erweitert werden.  Damit JavaScript\-IntelliSense Einzelheiten zu ASP.NET AJAX\-Objekten bereitstellen kann, müssen XML\-Dokumentationskommentare über [!INCLUDE[atlaslib_current_ext](../ide/includes/atlaslib_current_ext_md.md)] hinzugefügt werden.  Diese XML\-Dokumentationskommentare werden angezeigt, wenn Sie Typen und Member aus der ASP.NET AJAX\-Bibliothek verwenden.  
-  
+> Dieses Feature ist standardmäßig **deaktiviert**, wenn eine `tsconfig.json`-Konfigurationsdatei verwendet wird, aber kann wie weiter unten beschrieben auf „aktiviert“ festgelegt werden.
+
+Die automatische Erkennung arbeitet derzeit für Abhängigkeiten, die von npm heruntergeladen werden (durch Lesen der `package.json`-Datei), Bower (durch Lesen der `bower.json`-Datei), und für lose Dateien im Projekt, die einer Liste mit den ungefähr 400 beliebtesten JavaScript-Bibliotheken entsprechen. Angenommen Sie haben `jquery-1.10.min.js` in Ihrem Projekt, dann wird die Datei `jquery.d.ts` abgerufen und geladen, um eine bessere Zuordnung zu bieten. Diese `.d.ts`-Datei hat keine Auswirkung auf Ihr Projekt. 
+
+Wenn Sie die automatische Übernahme nicht verwenden möchten, deaktivieren Sie sie durch das Hinzufügen einer Konfigurationsdatei, wie unten beschrieben. Sie können immer noch manuell Definitionsdateien für die Verwendung direkt in Ihrem Projekt hinzufügen.
+
+## <a name="ES6"></a> Support für ES6 und darüber hinaus
+
+ES6 oder ECMAScript 2015 ist die nächste Version von JavaScript. Dadurch erhält die Programmiersprache neue Syntax, z.B. Klassen, Pfeilfunktionen, `let`/`const`, und vieles mehr. Die neue Syntax wird in Visual Studio unterstützt.
+
+Eine der wichtigsten Features, die TypeScript bietet, ist die Möglichkeit, ES6-Funktionen zu verwenden, und Code auszugeben, der in JavaScript-Laufzeiten ausgeführt werden kann, die noch nicht die neueren Funktionen verstehen. Dies wird häufig als „Transpilierung“ bezeichnet. Da JavaScript den gleichen Sprachdienst verwendet, kann es auch Vorteile aus der ES6+ bis ES5-Transpilation ziehen.
+
+Bevor dies eingerichtet werden kann, ist ein Verständnis für die Konfigurationsoptionen erforderlich.  TypeScript ist über eine `tsconfig.json`-Datei konfiguriert. Wenn eine solche Datei nicht vorhanden ist, werden einige Standardwerte verwendet. Aus Gründen der Kompatibilität unterscheiden sind diese Standards in einem Kontext, in dem nur JavaScript-Dateien (und optional `.d.ts`-Dateien) vorhanden sind. Um JavaScript-Dateien zu kompilieren, muss eine `tsconfig.json`-Datei hinzugefügt werden, und einige Standardeinstellungen müssen dann explizit festgelegt werden.
+
+Die erforderlichen Einstellungen für die tsconfig-Datei werden im Folgenden beschrieben:
+
+ - `allowJs`: Dieser Wert muss auf `true` festgelegt werden, damit JavaScript-Dateien erkannt werden.
+Standardmäßig ist dies `false`, da TypeScript in JavaScript kompiliert wird, und dies ist erforderlich, um zu vermeiden, dass der Compiler Dateien enthält, die gerade kompiliert wurden.
+ - `outDir`: Dies sollte an einem Speicherort festgelegt werden, der nicht im Projekt enthalten ist, damit die ausgegebenen JavaScript-Dateien nicht erkannt und anschließend in das Projekt einbezogen werden (siehe `exclude` unten).
+ - `module`: Wenn Sie Module verwenden, weist diese Einstellung den Compiler an, welches Modulformat der ausgegebene Code verwenden sollte (z.B. `commonjs` für Knoten oder Bundler wie Browserify).
+ - `exclude`: Diese Einstellung gibt die Ordner an, die nicht im Projekt eingeschlossen werden sollen. 
+ Sowohl der Ausgabeort als auch Ordner, die nicht Teil des Projekts sind, wie z.B. `node_modules` oder `temp`, sollten zu dieser Einstellung hinzugefügt werden.
+ - `enableAutoDiscovery`: Diese Einstellung ermöglicht die automatische Erkennung und das Herunterladen von Definitionsdateien, wie oben beschrieben.
+ - `compileOnSave`: Diese Einstellung weist den Compiler an, ob er jederzeit neu kompilieren soll, wenn eine Quelldatei in Visual Studio gespeichert ist.
+
+Um JavaScript-Dateien in CommonJS-Modulen in einen `./out`-Ordner zu konvertieren, müssen möglicherweise Einstellungen in einer `tsconfig.json`-Datei enthalten sein, ähnlich wie die unten.
+
+```json
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "allowJs": true,
+    "outDir": "out"
+  },
+  "exclude": [
+    "node_modules",
+    "wwwroot",
+    "out"
+  ],
+  "compileOnSave": true,
+  "typingOptions": {
+    "enableAutoDiscovery": true
+  }
+}
+```
+
+Mit den obigen Einstellungen an einem Standort, wenn eine Quelldatei (`./app.js`) vorhanden ist, die mehrere ECMAScript 2015-Sprachfunktionen wie unten dargestellt enthält:
+
+```js
+import {Subscription} from 'rxjs/Subscription';
+
+class Foo {
+    sayHi(name) {
+        return `Hi ${name}, welcome to Salsa!`;
+    }
+}
+
+export let sqr = x => x * x;
+export default Subscription;
+```
+
+Dann würde eine Datei zu `./out/app.js` ausgegeben werden, mit ECMAScript 5 (Standard) als Ziel, die etwa so aussieht wie unten:
+
+```js
+"use strict";
+var Subscription_1 = require('rxjs/Subscription');
+var Foo = (function () {
+    function Foo() {
+    }
+    Foo.prototype.sayHi = function (name) {
+        return "Hi " + name + ", welcome to Salsa!";
+    };
+    return Foo;
+}());
+exports.sqr = function (x) { return x * x; };
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = Subscription_1.Subscription;
+//# sourceMappingURL=app.js.map
+```
+
+## <a name="JSX"></a> Support für JSX-Syntax
+
+JavaScript in Visual Studio 2017 bietet einen umfangreichen Support für die JSX-Syntax. JSX ist ein Syntaxset, das HTML-Tags in JavaScript-Dateien erlaubt. 
+
+Die folgende Abbildung zeigt eine react-Komponente, die in der `comps.tsx`-TypeScript-Datei definiert ist, und anschließend wird diese Komponente von der `app.jsx`-Datei verwendet, die mit IntelliSense für Abschlüsse und Dokumentation in die JSX-Ausdrücke ausgeführt wird.
+Sie brauchen hier kein TypeScript, dieses spezielle Beispiel enthält hier nur auch einige TypeScript-Codes.
+<img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/react.png" height="500" width="640"/>
+
 > [!NOTE]
->  Private Member werden nicht von JavaScript\-IntelliSense angezeigt.  Private Member werden in ASP.NET\-AJAX als Member gekennzeichnet, die mit einem Unterstrich \(\_\) beginnen.  
-  
-##  <a name="Extensibility"></a> JavaScript\-IntelliSense\-Erweiterbarkeit  
- Der JavaScript\-Sprachdienst stellt Objekte und Funktionen bereit, die es Ihnen ermöglichen, die IntelliSense\-Erfahrung für Entwickler zu verändern, die Bibliotheken von Drittanbietern verwenden.  Diese Funktionen sind besonders nützlich, wenn der Standardsprachdienst nicht alle Informationen liefern kann, die Sie für Kunden bereitstellen möchten.  Weitere Informationen finden Sie unter [Erweitern von JavaScript IntelliSense](../ide/extending-javascript-intellisense.md).  
-  
-##  <a name="Validation"></a> JavaScript\-Validierung  
- Die JavaScript\-Skriptvalidierung wird ständig im Hintergrund ausgeführt.  Wenn [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] Syntaxfehler im JavaScript\-Code erkennt, wird wie folgt Feedback bereitgestellt:  
-  
--   Unterstrichene Elemente im Editor.  Wellenförmige rote Unterstreichungen weisen auf Fehler hin.  Wenn Sie den Mauszeiger über den Fehler bewegen, wird die Fehlerbeschreibung in einer QuickInfo angezeigt.  
-  
--   Fenster **Fehlerliste**.  Im Fenster **Fehlerliste** werden die Fehlerbeschreibung, die Datei, in der der Fehler aufgetreten ist, Zeilen\- und Spaltennummer und das Projekt angezeigt.  Klicken Sie im Menü **Ansicht** auf die Option **Fehlerliste**, um das Fenster **Fehlerliste** anzuzeigen.  
-  
--   Das Ausgabefenster zeigt Verweise an, die nicht geladen wurden.  
-  
-## Siehe auch  
- [Verwenden von IntelliSense](../ide/using-intellisense.md)   
- [Gewusst wie: Erstellen von JavaScript\-XML\-Dokumentationskommentaren](../ide/create-xml-documentation-comments-for-javascript-intellisense.md)   
- [Erweitern von JavaScript IntelliSense](../ide/extending-javascript-intellisense.md)   
- [Anweisungsvervollständigung für Bezeichner](../ide/statement-completion-for-identifiers.md)   
- [XML\-Dokumentationskommentare](../ide/xml-documentation-comments-javascript.md)   
- [Info zum DHTML\-Objektmodell](http://go.microsoft.com/fwlink/?LinkID=92344)   
- [List Members](http://msdn.microsoft.com/de-de/1b9cc469-9cd4-4d42-9999-1f9479635ff8)   
- [SRC\-Attribut &#124; src\-Eigenschaft](http://go.microsoft.com/fwlink/?LinkId=92345)
+> Für die Konvertierung der JSX-Syntax in React-Aufrufe, muss die Einstellung `"jsx": "react"` in `compilerOptions` in der `tsconfig.json`-Datei hinzugefügt werden, wie oben beschrieben.
+
+Der JavaScript-Datei, die in `./out/app.js' beim Build erstellt wird, würde diesen Code enthalten:
+
+```js
+"use strict";
+var comps_1 = require('./comps');
+var x = React.createElement(comps_1.RepoDisplay, {description: "test"});
+```
+

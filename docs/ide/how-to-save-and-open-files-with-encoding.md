@@ -1,32 +1,47 @@
 ---
-title: "Gewusst wie: Speichern und &#214;ffnen von Dateien mit Codierung | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Bidirektionale Sprachenunterstützung, Codierte Dateien"
-  - "Dateicodierung, Bidirektionale Sprachen"
-  - "Dateien, encoding"
-  - "Unicode, Bidirektionale Sprachenunterstützung"
+title: "Vorgehensweise: Speichern und Öffnen von Dateien mit Codierung | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Unicode, bi-directional language support
+- files, encoding
+- bi-directional language support, encoded files
+- file encoding, bi-directional languages
 ms.assetid: cb52b732-b395-4ba1-a3ef-104b3942a12a
 caps.latest.revision: 8
-caps.handback.revision: 8
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# Gewusst wie: Speichern und &#214;ffnen von Dateien mit Codierung
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
+ms.openlocfilehash: 6b0b95bfd2112383229c6a36ee7b9c6cdab827eb
+ms.lasthandoff: 02/22/2017
 
-Sie können Dateien mit ausgewählter Zeichencodierung speichern, sodass bidirektionale Sprachen unterstützt werden.  Sie können außerdem auch beim Öffnen einer Datei eine Codierung angeben, sodass Visual Studio die Datei korrekt anzeigt.  
+---
+# <a name="how-to-save-and-open-files-with-encoding"></a>Gewusst wie: Speichern und Öffnen von Dateien mit Codierung
+Sie können Dateien mit ausgewählter Zeichencodierung speichern, sodass bidirektionale Sprachen unterstützt werden. Sie können außerdem auch beim Öffnen einer Datei eine Codierung angeben, sodass Visual Studio die Datei korrekt anzeigt.  
   
-### So speichern Sie eine codierte Datei  
+### <a name="to-save-a-file-with-encoding"></a>So speichern Sie eine codierte Datei  
   
 1.  Klicken Sie im Menü **Datei** auf **Datei speichern unter**, und klicken Sie dann neben der Schaltfläche **Speichern** auf die Dropdownschaltfläche.  
   
@@ -38,19 +53,19 @@ Sie können Dateien mit ausgewählter Zeichencodierung speichern, sodass bidirek
   
      Diese Option ist sehr praktisch, wenn Sie die Datei an Benutzer eines anderen Betriebssystems weitergeben möchten.  
   
-     Wenn Sie mit einer Datei arbeiten möchten, von der Sie wissen, wie sie codiert wurde, können Sie in Visual Studio angeben, dass diese Codierung beim Öffnen verwendet werden soll.  Welche Methode Sie verwenden, hängt davon ab, ob die Datei Teil des Projekts ist.  
+     Wenn Sie mit einer Datei arbeiten möchten, von der Sie wissen, wie sie codiert wurde, können Sie in Visual Studio angeben, dass diese Codierung beim Öffnen verwendet werden soll. Welche Methode Sie verwenden, hängt davon ab, ob die Datei Teil des Projekts ist.  
   
-### So öffnen Sie eine codierte Datei, die Teil eines Projekts ist  
+### <a name="to-open-an-encoded-file-that-is-part-of-a-project"></a>So öffnen Sie eine codierte Datei, die Teil eines Projekts ist  
   
-1.  Klicken Sie im **Projektmappen\-Explorer** mit der rechten Maustaste auf die Datei, und wählen Sie **Öffnen mit** aus.  
+1.  Klicken Sie im **Projektmappen**-Explorer mit der rechten Maustaste auf die Datei, und wählen Sie **Öffnen mit** aus.  
   
 2.  Wählen Sie im Dialogfeld **Öffnen mit** den Editor aus, mit dem die Datei geöffnet werden soll.  
   
-     Viele der Editoren von Visual Studio, z. B. der Formular\-Editor, erkennen die Codierung automatisch und öffnen die Datei dann entsprechend.  Wenn Sie einen Editor verwenden, bei dem Sie eine Codierung auswählen können, wird das Dialogfeld **Codierung** angezeigt.  
+     Viele der Editoren von Visual Studio, z. B. der Formular-Editor, erkennen die Codierung automatisch und öffnen die Datei dann entsprechend. Wenn Sie einen Editor verwenden, bei dem Sie eine Codierung auswählen können, wird das Dialogfeld **Codierung** angezeigt.  
   
 3.  Wählen Sie in diesem Fall im Dialogfeld **Codierung** die vom Editor zu verwendende Codierung aus.  
   
-### So öffnen Sie eine codierte Datei, die nicht Teil eines Projekts ist  
+### <a name="to-open-an-encoded-file-that-is-not-part-of-a-project"></a>So öffnen Sie eine codierte Datei, die nicht Teil eines Projekts ist  
   
 1.  Zeigen Sie im Menü **Datei** auf **Öffnen**, wählen Sie **Datei** oder **Datei im Web** aus, und wählen Sie dann die zu öffnende Datei aus.  
   
@@ -58,6 +73,6 @@ Sie können Dateien mit ausgewählter Zeichencodierung speichern, sodass bidirek
   
 3.  Führen Sie die Schritte 2 und 3 der vorherigen Prozedur aus.  
   
-## Siehe auch  
- [Codierung und die Globalisierung von Windows Forms](../Topic/Encoding%20and%20Windows%20Forms%20Globalization.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Codierung und die Globalisierung von Windows Forms](http://msdn.microsoft.com/Library/22e8965d-a712-42b3-8167-3ee346bd70f9)   
  [Globalisieren und Lokalisieren von Anwendungen](../ide/globalizing-and-localizing-applications.md)

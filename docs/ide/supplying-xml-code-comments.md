@@ -1,37 +1,52 @@
 ---
-title: "Anzeigen von XML-Codekommentaren | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vc.tools.viewing.comments"
-helpviewer_keywords: 
-  - "Codekommentare"
-  - "Kommentare"
-  - "XML-Dokumentationskommentare"
+title: Anzeigen von XML-Codekommentaren | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vc.tools.viewing.comments
+helpviewer_keywords:
+- comments
+- XML documentation comments
+- code comments
 ms.assetid: f36b46af-443a-4fa6-a2c3-0c4962bbd4aa
 caps.latest.revision: 21
-caps.handback.revision: 21
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# Anzeigen von XML-Codekommentaren
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
+ms.openlocfilehash: cf427f2c06e377895dd6477d67dacbd04c996ec5
+ms.lasthandoff: 02/22/2017
 
-Sie können Kommentare in Quellcodedateien machen, die als IntelliSense verfügbar sind.  Wenn Sie den \/doc\- dem Visual Basic\-, C\#\- oder C\+\+\-Compiler Befehlszeile hinzugefügt, wird eine XML\-Datei generiert, die als Basis für IntelliSense\-Dokumentation dient.  
+---
+# <a name="supplying-xml-code-comments"></a>Anzeigen von XML-Codekommentaren
+Sie können die Kommentare in Quellcodedateien als IntelliSense zur Verfügung stellen. Wenn Sie der Visual Basic-, C#- oder C++-Compilerbefehlszeile den Schalter „/doc“ hinzufügen, wird eine XML-Datei generiert, die als Basis für die IntelliSense-Dokumentation dient.  
   
- Weitere Informationen zur Dokumentation des Codes in Visual Basic finden Sie unter [How to: Create XML Documentation](../Topic/How%20to:%20Create%20XML%20Documentation%20in%20Visual%20Basic.md)anzuzeigen.  
+ Weitere Informationen über das Dokumentieren von Code in Visual Basic finden Sie unter [Vorgehensweise: Erstellen einer XML-Dokumentation](http://msdn.microsoft.com/Library/27b5b06c-09b9-496a-8245-f9542d846230).  
   
- Weitere Informationen zur Dokumentation von Code in C\# finden Sie unter [XML\-Dokumentationskommentare](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments).  
+ Weitere Informationen über das Dokumentieren von Code in C# finden Sie unter [XML-Dokumentationskommentare](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments).  
   
- Weitere Informationen zur Dokumentation von Code in C\+\+ finden Sie unter [C\+\+\-Kommentare](/visual-cpp/cpp/comments-cpp) und [XML\-Dokumentation](/visual-cpp/ide/xml-documentation-visual-cpp).  
+ Weitere Informationen über das Dokumentieren von Code in C++ finden Sie unter [Kommentare](/visual-cpp/cpp/comments-cpp) und [XML-Dokumentation](/visual-cpp/ide/xml-documentation-visual-cpp).  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Verwenden von IntelliSense](../ide/using-intellisense.md)
