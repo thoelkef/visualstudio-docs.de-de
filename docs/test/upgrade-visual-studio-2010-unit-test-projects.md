@@ -1,0 +1,50 @@
+---
+title: "Upgrade der Komponententestprojekte von Visual Studio 2010 | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/16/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-devops-test"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+ms.assetid: f1502b51-d6db-4894-9fbf-4a5723e4bb1a
+caps.latest.revision: 8
+caps.handback.revision: 8
+ms.author: "mlearned"
+manager: "douge"
+---
+# Upgrade der Komponententestprojekte von Visual Studio 2010
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+[!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] enthält Testprojektkompatibilität Testprojekten mit [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 ein.  Beispielsweise können Testprojekte, die Sie mit [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] ab SP1 erstellt haben, mit [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] ohne ein Upgrade geöffnet sein.  Daher kann das Team [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 und [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] verwenden, um mit demselben Testprojekt zu arbeiten.  Weitere Informationen finden Sie unter [Aktualisieren von Tests in Visual Studio 2010](http://msdn.microsoft.com/de-de/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).  
+  
+ [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] werden mehrere Änderungen für Komponententests vor.  Aufgrund dieser Änderungen ist es wichtig, bei denen Kompatibilitätsprobleme zwischen früheren Versionen von Visual Studio und [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] zu verstehen.  Unter den Änderungen am Komponententest, ist eine wesentliche Änderung, dass [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] mehrere eine Testprojektvorlage enthält, einschließlich einer Komponententestprojektvorlage.  Neue Komponententests wird der neuen Komponententestprojektvorlage hinzugefügt.  Komponententests können in einer anderen neuen Testprojektvorlage ebenfalls eingeschlossen werden, die die Tests der codierten UI\-Projektvorlage aufgerufen wird.  Weitere Informationen zu neuen Testprojektvorlagen, finden Sie unter [Upgrading Tests from Earlier Versions of Visual Studio](http://msdn.microsoft.com/de-de/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).  Die neuen Komponententestprojekte enthalten nicht mehr eine Testeinstellungsdatei standardmäßig.  Indem die Testeinstellungsdatei ausschließt, verbessert sich die Leistung der Komponententests.  Um Kompatibilität können Sie Ihre vorhandenen Testprojekte weiterhin verwenden, die Sie mit Visual Studio 2010 erstellt haben.  Es wird jedoch empfohlen, die Testeinstellungsdatei entfernen, die mit dem Testprojekt aus Leistungsgründen zugeordnet wird, es sei denn, eine bestimmte Anforderung für die Testeinstellungsdatei haben.  Beispielsweise könnten Sie, um die Testeinstellungsdatei beizubehalten, wenn die Komponententests, die in einer verteilten Umgebung oder Sie ausgeführt werden, spezifische Diagnosedaten sammeln müssen.  Wenn Sie eine ähnliche Anforderung mithilfe der neuen Komponententestprojektvorlage oder der Test der codierten UI\-Projektvorlage haben, können Sie eine Testeinstellungsdatei ihnen manuell hinzufügen.  
+  
+> [!NOTE]
+>  Vorhandene Komponententests in den Testprojekten aus [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 arbeiten nahtlos zwischen [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 und [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  Keine Änderungen werden den Testprojektdateien, wenn ein Visual Studio 2010\-Testprojekt, das die Komponententests enthält, in [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], oder umgekehrt geändert.  
+  
+> [!CAUTION]
+>  Visual Studio 2010 kann ein Projekt \+\+\/CLI nicht öffnen, das auf 11,0, Toolset\-dass, ist ein Projekt ausgerichtet ist, das in Visual Studio 2012 erstellt wurde.  Diese Einschränkung gilt für alle Projekte C\+\+\/CLI, nicht nur C\+\+\/CLI\-Komponententestprojekte.  
+  
+> [!NOTE]
+>  Sie können die neuen Komponententests mit vstest.console.exe von der Befehlszeile ausführen.  Weitere Informationen zur Verwendung von vstest.console.exe finden Sie unter [Befehlszeilenoptionen für VSTest.Console.exe](/devops-test-docs/test/vstest-console-exe-command-line-options), oder führen Sie den Befehl aus, indem Sie den Hilfeschalter verwenden: **vstest.console.exe \/?**.  Sie können weiterhin, um die bestehenden von Komponententests mit MStest.exe zu machen.  Weitere Informationen finden Sie unter [Ausführen von automatisierten Tests über die Befehlszeile mit MSTest](/devops-test-docs/test/run-automated-tests-from-the-command-line-using-mstest) und [MSTest.exe \(Befehlszeilenoptionen\)](/devops-test-docs/test/mstest-exe-command-line-options).  
+  
+ Eine weitere wesentliche Änderung ist der neue Test\-Explorer.  In [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] sind einige der Testsfenster, die bei von früherer Version von Visual Studio vertraut sind, z das Testansichtsfenster veraltet.  Der Test\-Explorer wurde entworfen, um Stützentwickler und \-teams zu verbessern, die Komponententests in ihrer Verfahren enthalten.  Weitere Informationen finden Sie unter [Ausführen von Komponententests mit dem Test\-Explorer](../test/run-unit-tests-with-test-explorer.md).  
+  
+## Kompatibilitätsprobleme zwischen Visual Studio 2010 SP1 und Visual Studio 2012  
+ Im Folgenden einige Probleme, zu beachten zu sein, wenn Sie Komponententests zwischen Visual Studio 2010 SP1 und [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] migrieren:  
+  
+|Funktionalität für Komponententests bereit|Problem|Lösung|  
+|------------------------------------------------|-------------|------------|  
+|Testlisten \(VSMDI\-Dateien\) werden in [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] veraltet.|Sie sind nicht mehr in der Lage, neue Testlisten \(VSMDI\-Dateien\) erstellen oder Testlisten in Visual Studio auszuführen. **Tip:**  Testkategorien bieten mehr Flexibilität als die Testlistenfunktion in früheren Versionen von Microsoft Visual Studio.  Sie können mit Testkategorien logische Operatoren verwenden, um Tests aus mehreren Kategorien gemeinsam auszuführen oder um die Ausführung auf Tests zu beschränken, die mehreren Kategorien angehören.  Testkategorien können ganz einfach beim Erstellen der Testmethoden hinzugefügt werden. Sie müssen keine Testlisten mehr verwalten, nachdem Sie die Testmethoden erstellt haben.  Mit Testkategorien verwenden, müssen Sie die Datei **\<solution name\>.vsmdi** nicht einchecken und auschecken, die die Testlisten verwaltet werden.  Weitere Informationen finden Sie unter [Definieren von Testkategorien zum Gruppieren von Tests](/devops-test-docs/test/defining-test-categories-to-group-your-tests).|-   Um Kompatibilität mit den vorhandenen Testprojekten beizubehalten die Testlisten verwenden, können Sie noch die .vsmdi\-Dateien in Visual Studio zu bearbeiten.<br />-   Obwohl Sie migrierte Testlisten mit Visual Studio nicht ausführen können, können Sie sie mit mstest.exe in der Befehlszeile noch ausführen.  Weitere Informationen finden Sie unter [Ausführen von automatisierten Tests über die Befehlszeile mit MSTest](/devops-test-docs/test/run-automated-tests-from-the-command-line-using-mstest)<br />-   Wenn Sie eine Testliste in der Builddefinition verwendeten, können Sie diese Testliste weiterhin verwenden.  Weitere Informationen finden Sie unter [How to: Configure and Run Scheduled Tests After Building Your Application](http://msdn.microsoft.com/de-de/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd) und [Ausführen von Testläufen im Buildprozess](../Topic/Run%20tests%20in%20your%20build%20process.md).|  
+|Private Accessoren werden in [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] veraltet.<br /><br /> In früheren Versionen von Visual Studio, können Sie verwenden publizieren, um interne Anwendungsprogrammierschnittstellen \(API\) angeben und öffentliche API Entsprechung, die Sie in Ihren Tests aufrufen können, die wiederum, wurden Aufruf zu erstellen in die interner APIs des Produkts.  Sie können sich dann verwenden, um Codeausschnittinnere Test\-Stubs zu erstellen und zu generieren, die roden.|Sie sind nicht mehr in der Lage, private Accessoren zu erstellen.|<ul><li>Visual Studio 2010\-Testprojekte kompiliert und funktionieren in [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  Der Build enthält Ausgabewarnungen.</li><li>Falls weiterhin interne APIs testen müssen, haben Sie folgende Optionen:<br /><br /> <ul><li>Verwenden Sie die <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateObject>\-Klasse, um im Zugriff auf die internal\-Methoden und privaten APIs im Code zu erleichtern.  Dies wird in der Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll\-Assembly gefunden.</li><li>Erstellen Sie ein Reflektionsframework, das vorhanden ist, sich auf Code wiederzugeben, um auf die privaten oder internen APIs zuzugreifen.</li><li>Wenn der Code, den Sie zuzugreifen versuchen, wird intern, Sie in der Lage ist, auf die APIs mit <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> zuzugreifen, sodass der Code Zugriff auf die internen APIs haben kann.</li></ul></li></ul>|  
+|Testauswirkung werden entfernt|||  
+|Freigabe der Ausführung wird durch TRX\-Protokolle im Test\-Explorer.||Sie können TRX\-Protokolle über die Befehlszeile und von Team Build abrufen.|  
+  
+## Siehe auch  
+ [Portieren, Migrieren und Aktualisieren von Visual Studio\-Projekten](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)   
+ [Komponententest für Code](../test/unit-test-your-code.md)   
+ [Upgrading Tests from Earlier Versions of Visual Studio](http://msdn.microsoft.com/de-de/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)   
+ [Upgrade der Tests der codierten UI von Visual Studio 2010](../test/upgrading-coded-ui-tests-from-visual-studio-2010.md)
