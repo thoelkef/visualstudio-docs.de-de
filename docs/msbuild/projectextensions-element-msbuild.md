@@ -1,42 +1,57 @@
 ---
-title: "ProjectExtensions-Element (MSBuild) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/msbuild/2003#ProjectExtensions"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "< ProjectExtensions >-Element [MSBuild]"
-  - "ProjectExtensions-Element [MSBuild]"
+title: ProjectExtensions-Element (MSBuild) | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#ProjectExtensions
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- <ProjectExtensions> element [MSBuild]
+- ProjectExtensions element [MSBuild]
 ms.assetid: f95f312f-ff92-41eb-9469-ad99e236a307
 caps.latest.revision: 18
-caps.handback.revision: 18
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# ProjectExtensions-Element (MSBuild)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 3ba7680d46345f2b49019659c715cfb418933d39
+ms.openlocfilehash: f219301ec954442b4c9913c254e234a520177169
+ms.lasthandoff: 02/22/2017
 
-Ermöglicht [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Projektdateien nicht enthalten[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Informationen. Alles innerhalb von einer `ProjectExtensions` Element vom ignoriert [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
+---
+# <a name="projectextensions-element-msbuild"></a>ProjectExtensions-Element (MSBuild)
+Ermöglicht es [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projektdateien, nicht-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Informationen zu enthalten. Alles innerhalb eines `ProjectExtensions`-Elements wird von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ignoriert.  
   
- \< Projekt>  
- \< ProjectExtensions>  
+ \<Project>  
+ \<ProjectExtensions>  
   
 ## <a name="syntax"></a>Syntax  
   
-```  
+```xml  
 <ProjectExtensions>  
     Non-MSBuild information to include in file.  
 </ProjectExtensions>  
@@ -55,15 +70,15 @@ Ermöglicht [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsb
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
-|[Projekt](../msbuild/project-element-msbuild.md)|Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] -Projektdatei.|  
+|[Projekt](../msbuild/project-element-msbuild.md)|Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projektdatei.|  
   
 ## <a name="remarks"></a>Hinweise  
- Nur ein `ProjectExtensions` Element kann verwendet werden, einem [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Projekt.  
+ Nur ein `ProjectExtensions`-Element kann in einem [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekt verwendet werden.  
   
 ## <a name="example"></a>Beispiel  
- Das folgende Codebeispiel zeigt Informationen aus der IDE, die in gespeichert werden, ein `ProjectExtensions` Element.  
+ Das folgende Codebeispiel zeigt Informationen aus der IDE, die in einem `ProjectExtensions`-Element gespeichert werden.  
   
-```  
+```xml  
 <ProjectExtensions>  
     <VSIDE>  
         <External>  
@@ -77,4 +92,4 @@ Ermöglicht [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsb
   
 ## <a name="see-also"></a>Siehe auch  
  [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)  
- [MSBuild](../msbuild/msbuild1.md)
+ [MSBuild](../msbuild/msbuild.md)

@@ -1,39 +1,54 @@
 ---
-title: "Vergleich von Eigenschaften und Elementen | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "MSBuild Msbuild-Eigenschaften"
+title: Vergleich von Eigenschaften und Elementen | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- msbuild, msbuild properties
 ms.assetid: b9da45ae-d6a6-4399-8628-397deed31486
 caps.latest.revision: 16
-caps.handback.revision: 16
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# Vergleich von Eigenschaften und Elementen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
+ms.openlocfilehash: cf04644c98062ffb2aee5b4b826f8426070c3d60
+ms.lasthandoff: 02/22/2017
 
-MSBuild-Eigenschaften und Elemente werden beide verwendet, um Informationen an Aufgaben übergeben, Bedingungen auszuwerten und speichern Sie die Werte, die in der gesamten Projektdatei verwiesen werden können.  
+---
+# <a name="comparing-properties-and-items"></a>Vergleich von Eigenschaften und Elementen
+Sowohl MSBuild-Eigenschaften als auch MSBuild-Elemente werden verwendet, um Informationen an Aufgaben zu übergeben, Bedingungen auszuwerten und Werte zu speichern, auf die in der gesamten Projektdatei verwiesen werden kann.  
   
--   Eigenschaften sind Name / Wert-Paare. Weitere Informationen finden Sie unter [MSBuild-Eigenschaften](../msbuild/msbuild-properties.md).  
+-   Eigenschaften sind Name/Wert-Paare. Weitere Informationen finden Sie unter [MSBuild-Eigenschaften](../msbuild/msbuild-properties.md).  
   
--   Elemente sind Objekte, die in der Regel Dateien darstellen. Objekte können Metadaten-Sammlungen zugeordnet. Metadaten sind Name-Wert-Paare. Weitere Informationen finden Sie unter [Elemente](../msbuild/msbuild-items.md).  
+-   Elemente sind Objekte, die in der Regel Dateien darstellen. Elementobjekten können Metadatensammlungen zugeordnet sein. Metadaten sind Name/Wert-Paare. Weitere Informationen finden Sie unter [Elemente](../msbuild/msbuild-items.md).  
   
 ## <a name="scalars-and-vectors"></a>Skalare und Vektoren  
- Da MSBuild-Eigenschaften Name-Wert-Paare sind, nur einen Zeichenfolgenwert aufweisen, werden sie häufig beschrieben als *skalare*. Da MSBuild-Elementtypen Listen von Elementen sind, werden sie häufig beschrieben als *Vektor*. Allerdings in der Praxis Eigenschaften können mehrere Werte darstellen, und Elementtypen können 0 (null) oder ein Element aufweisen.  
+ Da MSBuild-Eigenschaften Name/Wert-Paare sind, die nur einen Zeichenfolgenwert aufweisen, werden sie häufig als *Skalar* bezeichnet. Da MSBuild-Elementtypen Listen von Elementen sind, werden sie häufig als *Vektor* bezeichnet. In der Praxis können Eigenschaften jedoch mehrere Werte darstellen, und Elementtypen können null oder ein Element aufweisen.  
   
-### <a name="target-dependency-injection"></a>Target Dependency Injection  
- Um zu sehen, wie Eigenschaften für mehrere Werte darstellen können, sollten Sie ein häufiges Verwendungsmuster zum Hinzufügen eines Ziels, um eine Liste der zu erstellenden Ziele aus. Diese Liste wird in der Regel durch einen Eigenschaftswert, mit dem Zielnamen durch Semikolons getrennt dargestellt.  
+### <a name="target-dependency-injection"></a>Zielabhängigkeitsinjektion  
+ Um zu verstehen, wie Eigenschaften mehrere Werte darstellen können, können Sie sich ein häufiges Verwendungsmuster für das Hinzufügen eines Ziels zu einer zu erstellenden Liste von Zielen vorstellen. Diese Liste wird in der Regel durch einen Eigenschaftswert dargestellt, wobei die Zielnamen durch Semikolons getrennt sind.  
   
-```  
+```xml  
 <PropertyGroup>  
     <BuildDependsOn>  
         BeforeBuild;  
@@ -43,9 +58,9 @@ MSBuild-Eigenschaften und Elemente werden beide verwendet, um Informationen an A
 </PropertyGroup>  
 ```  
   
- Die `BuildDependsOn` Eigenschaft wird normalerweise verwendet, als Argument eines Ziels `DependsOnTargets` effektiv konvertieren in eine Elementliste-Attribut. Diese Eigenschaft kann überschrieben werden, um ein Ziel hinzuzufügen oder die Ausführungsreihenfolge der Ziele zu ändern. Beispiel:  
+ Die `BuildDependsOn`-Eigenschaft wird normalerweise als Argument eines Ziel-`DependsOnTargets`-Attributs verwendet, wodurch sie effektiv in eine Elementliste konvertiert wird. Diese Eigenschaft kann überschrieben werden, um ein Ziel hinzuzufügen oder die Ausführungsreihenfolge der Ziele zu ändern. Beispiel:  
   
-```  
+```xml  
 <PropertyGroup>  
     <BuildDependsOn>  
         $(BuildDependsOn);  
@@ -54,14 +69,14 @@ MSBuild-Eigenschaften und Elemente werden beide verwendet, um Informationen an A
 </PropertyGroup>  
 ```  
   
- der Zielliste das Ziel CustomBuild zu hinzugefügt erteilen `BuildDependsOn` den Wert `BeforeBuild;CoreBuild;AfterBuild;CustomBuild`.  
+ Der obige Code fügt das Ziel CustomBuild zur Zielliste hinzu, wodurch `BuildDependsOn` den Wert `BeforeBuild;CoreBuild;AfterBuild;CustomBuild` erhält.  
   
- Ab MSBuild 4.0 ist die Abhängigkeitsinjektion Ziel veraltet. Verwenden der `AfterTargets` und `BeforeTargets` stattdessen Attribute. Weitere Informationen finden Sie unter [Buildreihenfolge für Ziele](../msbuild/target-build-order.md).  
+ Ab MSBuild 4.0 ist die Zielabhängigkeitsinjektion veraltet. Verwenden Sie stattdessen die Attribute `AfterTargets` und `BeforeTargets`. Weitere Informationen finden Sie unter [Buildreihenfolge für Ziele](../msbuild/target-build-order.md).  
   
 ### <a name="conversions-between-strings-and-item-lists"></a>Konvertierungen zwischen Zeichenfolgen und Elementlisten  
- MSBuild führt Konvertierungen von Elementtypen und Zeichenfolgenwerte nach Bedarf. Um zu sehen, wie eine Elementliste ein String-Wert werden kann, erwägen Sie, was geschieht, wenn ein Elementtyp als Wert der MSBuild-Eigenschaft verwendet wird:  
+ MSBuild führt nach Bedarf Konvertierungen von und nach Elementtypen und Zeichenfolgenwerten durch. Um zu verstehen, wie eine Elementliste zu einem Zeichenfolgenwert werden kann, können Sie sich vorstellen, was geschieht, wenn ein Elementtyp als Wert einer MSBuild-Eigenschaft verwendet wird:  
   
-```  
+```xml  
 <ItemGroup>  
     <OutputDir Include="KeyFiles\;Certificates\" />  
   </ItemGroup>  
@@ -70,46 +85,46 @@ MSBuild-Eigenschaften und Elemente werden beide verwendet, um Informationen an A
 </PropertyGroup>  
 ```  
   
- Der Elementtyp OutputDir hat ein `Include` Attribut mit dem Wert "Schlüsseln\\; Zertifikate\\". MSBuild analysiert diese Zeichenfolge in zwei Elemente: Zertifikate und KeyFiles\\\. Wenn der OutputDir-Elementtyp als Wert der Eigenschaft OutputDirList verwendet wird, konvertiert oder den Elementtyp zur durch Semikolons getrennte Zeichenfolge "vereinfacht" MSBuild "Schlüsseln\\; Zertifikate\\".  
+ Der Elementtyp OutputDir hat ein `Include`-Attribut mit dem Wert „KeyFiles\\;Certificates\\“. MSBuild analysiert diese Zeichenfolge, und es resultieren die beiden Elemente KeyFiles\ und Certificates\\. Wenn der Elementtyp OutputDir als Wert der Eigenschaft OutputDirList verwendet wird, konvertiert („vereinfacht“) MSBuild den Elementtyp in die durch Semikolons getrennte Zeichenfolge „KeyFiles\\;Certificates\\“.  
   
 ## <a name="properties-and-items-in-tasks"></a>Eigenschaften und Elemente in Aufgaben  
- Eigenschaften und Elemente werden als Eingaben und Ausgaben von MSBuild-Aufgaben verwendet. Weitere Informationen finden Sie unter [Aufgaben](../msbuild/msbuild-tasks.md).  
+ Eigenschaften und Elemente werden als Ein- und Ausgaben für MSBuild-Aufgaben verwendet. Weitere Informationen finden Sie unter [MSBuild-Aufgaben](../msbuild/msbuild-tasks.md).  
   
- Eigenschaften werden als Attribute an Aufgaben übergeben. Innerhalb der Aufgabe wird eine MSBuild-Eigenschaft durch einen Eigenschaftentyp dargestellt, dessen Wert in und aus einer Zeichenfolge konvertiert werden kann. Die unterstützten Datentypen gehören `bool`, `char`, `DateTime`, `Decimal`, `Double`, `int`, `string`, sowie alle Typen, <xref:System.Convert.ChangeType%2A> behandeln können.  
+ Eigenschaften werden als Attribute an Aufgaben übergeben. Innerhalb der Aufgabe wird eine MSBuild-Eigenschaft durch einen Eigenschaftentyp dargestellt, dessen Wert in und aus einer Zeichenfolge konvertiert werden kann. Die unterstützten Eigenschaftentypen umfassen `bool`, `char`, `DateTime`, `Decimal`, `Double`, `int`, `string` und alle Typen, die <xref:System.Convert.ChangeType%2A> verarbeiten kann.  
   
- Elemente werden an Aufgaben übergeben <xref:Microsoft.Build.Framework.ITaskItem> Objekte. Innerhalb der Aufgabe <xref:Microsoft.Build.Framework.ITaskItem.ItemSpec%2A> stellt den Wert des Elements und <xref:Microsoft.Build.Framework.ITaskItem.GetMetadata%2A> Ruft die Metadaten ab.  
+ Elemente werden als <xref:Microsoft.Build.Framework.ITaskItem>-Objekte an Aufgaben übergeben. Innerhalb der Aufgabe stellt <xref:Microsoft.Build.Framework.ITaskItem.ItemSpec%2A> den Wert des Elements dar, und <xref:Microsoft.Build.Framework.ITaskItem.GetMetadata%2A> ruft seine Metadaten ab.  
   
- Die Elementliste eines Elementtyps kann als Array von übergeben werden `ITaskItem` Objekte. Ab .NET Framework 3.5 können Elemente können entfernt werden aus einer Elementliste in einem Ziel mithilfe der `Remove` Attribut. Da Elemente aus einer Elementliste entfernt werden können, kann ein Elementtyp 0 (null) Elemente verfügen. Wenn eine Elementliste an eine Aufgabe übergeben wird, sollte der Code in der Aufgabe diese Möglichkeit überprüfen.  
+ Die Elementliste eines Elementtyps kann als Array von `ITaskItem`-Objekten übergeben werden. Ab .NET Framework 3.5 können Elemente mithilfe des `Remove`-Attributs aus einer Elementliste in einem Ziel entfernt werden. Da Elemente aus einer Elementliste entfernt werden können, kann ein Elementtyp über&0; (null) Elemente verfügen. Wenn eine Elementliste an eine Aufgabe übergeben wird, muss der Code in der Aufgabe diese Möglichkeit überprüfen.  
   
-## <a name="property-and-item-evaluation-order"></a>Eigenschaft und die Reihenfolge der Auswertung von Element  
- Während der Auswertungsphase eines Builds werden die importierte Dateien in den Build in der Reihenfolge integriert werden. Eigenschaften und Elemente werden in drei Durchläufen in der folgenden Reihenfolge definiert:  
+## <a name="property-and-item-evaluation-order"></a>Auswertungsreihenfolge von Eigenschaften und Elementen  
+ Während der Auswertungsphase eines Builds werden importierte Dateien in der Reihenfolge in den Build integriert, in der sie vorkommen. Eigenschaften und Elemente werden in drei Durchläufen in der folgenden Reihenfolge definiert:  
   
--   Eigenschaften sind definiert und geändert, in der Reihenfolge, in der sie angezeigt werden.  
+-   Eigenschaften werden in der Reihenfolge definiert und geändert, in der sie vorkommen.  
   
--   Elementdefinitionen sind definiert und geändert, in der Reihenfolge, in der sie angezeigt werden.  
+-   Elementdefinitionen werden in der Reihenfolge definiert und geändert, in der sie vorkommen.  
   
--   Elemente werden definiert und geändert, in der Reihenfolge, in der sie angezeigt werden.  
+-   Elemente werden in der Reihenfolge definiert und geändert, in der sie vorkommen.  
   
- Während der Ausführungsphase eines Builds werden Eigenschaften und Elemente, die in den Zielen definiert werden zusammen in einer einzelnen Phase in der Reihenfolge ausgewertet werden.  
+ Während der Ausführungsphase eines Builds werden in Zielen definierte Eigenschaften und Elemente gemeinsam in einer einzigen Phase in der Reihenfolge ausgewertet, in der sie vorkommen.  
   
- Dies ist jedoch nicht die ganze Geschichte. Wenn eine Eigenschaft, eine Elementdefinition oder ein Element definiert ist, wird der Wert ausgewertet. Die Auswertung eines Ausdrucks erweitert die Zeichenfolge, die den Wert angibt. Die Erweiterung der Zeichenfolge ist abhängig von der Build-Phase. Hier ist eine detailliertere und Auswertungsreihenfolge:  
+ Das stimmt allerdings nicht ganz. Wenn eine Eigenschaft, eine Elementdefinition oder ein Element definiert ist, wird der zugehörige Wert ausgewertet. Der Ausdrucksauswerter erweitert die Zeichenfolge, die den Wert angibt. Die Erweiterung der Zeichenfolge ist von der Build-Phase abhängig. Unten sehen Sie eine detailliertere Auswertungsreihenfolge für Eigenschaften und Elemente:  
   
 -   Während der Auswertungsphase eines Builds:  
   
-    -   Eigenschaften sind definiert und geändert, in der Reihenfolge, in der sie angezeigt werden. Eigenschaftenfunktionen werden ausgeführt. Eigenschaftswerte der Form $(propertyname) werden in den Ausdrücken erweitert. Der Eigenschaftswert wird auf den erweiterten Ausdruck festgelegt.  
+    -   Eigenschaften werden in der Reihenfolge definiert und geändert, in der sie vorkommen. Eigenschaftenfunktionen werden ausgeführt. Eigenschaftswerte der Form $(PropertyName) werden in Ausdrücken erweitert. Der Eigenschaftswert wird auf den erweiterten Ausdruck gesetzt.  
   
-    -   Elementdefinitionen sind definiert und geändert, in der Reihenfolge, in der sie angezeigt werden. Eigenschaftenfunktionen wurden bereits in den Ausdrücken erweitert. Metadatenwerte werden auf die erweiterten Ausdrücke festgelegt.  
+    -   Elementdefinitionen werden in der Reihenfolge definiert und geändert, in der sie vorkommen. Eigenschaftenfunktionen wurden bereits in Ausdrücken erweitert. Metadatenwerte werden auf die erweiterten Ausdrücke gesetzt.  
   
-    -   Elementtypen werden definiert und geändert, in der Reihenfolge, in der sie angezeigt werden. Element Werte in der Form @(ItemType) werden erweitert. Elementtransformationen werden ebenfalls erweitert. Funktionen, Eigenschaften und Werte wurden bereits in den Ausdrücken erweitert. Der Elementwerte und die Metadatenwerte werden auf die erweiterten Ausdrücke festgelegt.  
+    -   Elementtypen werden in der Reihenfolge definiert und geändert, in der sie vorkommen. Elementwerte in der Form @(Elementtyp) werden erweitert. Elementtransformationen werden ebenfalls erweitert. Eigenschaftenfunktionen und -werte wurden bereits in Ausdrücken erweitert. Die Elementliste und die Metadatenwerte werden auf die erweiterten Ausdrücke gesetzt.  
   
--   Während der Ausführungsphase eines Builds:  
+-   Während der Auswertungsphase eines Builds:  
   
-    -   Eigenschaften und Elemente, die in den Zielen definiert sind, werden zusammen in der Reihenfolge ausgewertet werden. Eigenschaftenfunktionen werden ausgeführt, und Eigenschaftswerte werden in Ausdrücken erweitert. Elementwerte und Elementtransformationen werden ebenfalls erweitert. Die Eigenschaftswerte, Elementtypwerte und Metadatenwerte werden auf die erweiterten Ausdrücke festgelegt.  
+    -   Eigenschaften und Elemente, die in Zielen definiert sind, werden zusammen in der Reihenfolge ausgewertet, in der sie vorkommen. Eigenschaftenfunktionen werden ausgeführt, und Eigenschaftswerte werden in Ausdrücken erweitert. Elementwerte und Elementtransformationen werden ebenfalls erweitert. Die Eigenschaftswerte, Elementtypwerte und Metadatenwerte werden auf die erweiterten Ausdrücke gesetzt.  
   
-### <a name="subtle-effects-of-the-evaluation-order"></a>Raffinierten Effekten, der die Reihenfolge der Auswertung  
- In der Auswertungsphase eines Builds vorausgeht Auswertung Element-Bewertung. Trotzdem können Eigenschaften Werte besitzen, die scheinbar von Elementwerten abhängen. Betrachten Sie das folgende Skript aus.  
+### <a name="subtle-effects-of-the-evaluation-order"></a>Geringfügige Auswirkungen der Auswertungsreihenfolge  
+ In der Auswertungsphase eines Builds erfolgt die Auswertung von Eigenschaften vor der Auswertung von Elementen. Trotzdem können Eigenschaften Werte besitzen, die scheinbar von Elementwerten abhängen. Sehen Sie sich das folgende Skript an.  
   
-```  
+```xml  
 <ItemGroup>  
     <KeyFile Include="KeyFile.cs">  
         <Version>1.0.0.3</Version>  
@@ -123,21 +138,21 @@ MSBuild-Eigenschaften und Elemente werden beide verwendet, um Informationen an A
 </Target>  
 ```  
   
- Die Message-Aufgabe ausgeführt, wird diese Meldung angezeigt:  
+ Beim Ausführen der Meldungsaufgabe wird folgende Meldung angezeigt:  
   
 ```  
 KeyFileVersion: 1.0.0.3  
 ```  
   
- Grund hierfür ist der Wert des `KeyFileVersion` ist eigentlich die Zeichenfolge "@(KeyFile->'%(Version)')". Element und Elementtransformationen wurden nicht erweitert, wenn die Eigenschaft zunächst definiert wurde, damit der `KeyFileVersion` -Eigenschaft den Wert des nicht erweiterten Zeichenfolge zugewiesen wurde.  
+ Dies liegt darin begründet, dass der Wert von `KeyFileVersion` eigentlich die Zeichenfolge „@(Schlüsseldatei->'%(Version)')“ ist. Element und Elementtransformationen wurden nicht erweitert, als die Eigenschaft ursprünglich definiert wurde, sodass der `KeyFileVersion`-Eigenschaft der Wert der nicht erweiterten Zeichenfolge zugewiesen wurde.  
   
- Während der Ausführungsphase des Builds, bei der Verarbeitung der Message-Aufgabe MSBuild erweitert die Zeichenfolge "@(KeyFile->'%(Version)')" "1.0.0.3" ergeben.  
+ Wenn während der Ausführungsphase des Builds die Meldungsaufgabe verarbeitet wird, erweitert MSBuild die Zeichenfolge „@(Schlüsseldatei->'%(Version)')“, sodass sie „1.0.0.3“ ergibt.  
   
- Beachten Sie, dass die gleiche Nachricht angezeigt wird, auch wenn die Eigenschaften- und Elementgruppen Reihenfolge umgekehrter.  
+ Beachten Sie, dass dieselbe Meldung auch dann angezeigt würde, wenn die Reihenfolge der Eigenschaften- und Elementgruppen umgekehrt würde.  
   
- Als zweites Beispiel beachten Sie, was passieren kann, wenn die Eigenschaften- und Elementgruppen in den Zielen befinden:  
+ Im zweiten Beispiel sollten Sie beachten, was passieren kann, wenn sich die Eigenschaften- und Elementgruppen innerhalb von Zielen befinden:  
   
-```  
+```xml  
 <Target Name="AfterBuild">  
     <PropertyGroup>  
         <KeyFileVersion>@(KeyFile->'%(Version)')</KeyFileVersion>  
@@ -151,17 +166,17 @@ KeyFileVersion: 1.0.0.3
 </Target>  
 ```  
   
- Die Message-Aufgabe wird diese Meldung angezeigt:  
+ Die Meldungsaufgabe zeigt folgende Meldung an:  
   
 ```  
 KeyFileVersion:   
 ```  
   
- Dies ist, da während der Ausführungsphase des Builds, Eigenschaften- und Elementgruppen in den Zielen definierte ausgewertet werden von oben nach unten zur gleichen Zeit. Wenn `KeyFileVersion` definiert ist, `KeyFile` ist unbekannt. Daher wird die Elementtransformation auf eine leere Zeichenfolge erweitert.  
+ Dies liegt daran, dass während der Ausführungsphase des Builds innerhalb von Zielen definierte Eigenschaften- und Elementgruppen gleichzeitig von oben nach unten ausgewertet werden. Wenn `KeyFileVersion` definiert ist, ist `KeyFile` unbekannt. Daher wird die Elementtransformation auf eine leere Zeichenfolge erweitert.  
   
- In diesem Fall werden beim Umkehren der Reihenfolge der Gruppen und die ursprüngliche Nachricht wiederhergestellt:  
+ In diesem Fall wird beim Umkehren der Reihenfolge der Eigenschaften- und Elementgruppen die ursprüngliche Meldung wiederhergestellt:  
   
-```  
+```xml  
 <Target Name="AfterBuild">  
     <ItemGroup>  
         <KeyFile Include="KeyFile.cs">  
@@ -175,11 +190,11 @@ KeyFileVersion:
 </Target>  
 ```  
   
- Der Wert der `KeyFileVersion` festgelegt ist, klicken Sie auf "1.0.0.3" und nicht auf "@(KeyFile->'%(Version)')". zeigt diese Meldung an die Message-Aufgabe:  
+ Der Wert von `KeyFileVersion` wird auf „1.0.0.3“ und nicht auf „@(Schlüsseldatei->'%(Version)')“ gesetzt. Die Meldungsaufgabe zeigt folgende Meldung an:  
   
 ```  
 KeyFileVersion: 1.0.0.3  
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Erweiterte Konzepte](../msbuild/msbuild-advanced-concepts.md)
+ [MSBuild Advanced Concepts (Weiterführende MSBuild-Konzepte)](../msbuild/msbuild-advanced-concepts.md)

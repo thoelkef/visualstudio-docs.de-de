@@ -1,51 +1,67 @@
 ---
-title: "Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Speicherverluste, JavaScript-Beispiel"
+title: 'Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript) | Microsoft-Dokumentation'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- memory leaks, JavaScript example
 ms.assetid: f595412f-776b-49a2-8433-ea0062c6904d
 caps.latest.revision: 31
-caps.handback.revision: 29
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+translationtype: Human Translation
+ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
+ms.openlocfilehash: 7e848a57962636a8ca346e809f3dadad675a7963
+ms.lasthandoff: 02/22/2017
 
-![Gilt für Windows und Windows Phone](../debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+---
+# <a name="walkthrough-find-a-memory-leak-javascript"></a>Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript)
+![Gilt für Windows und Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- Diese exemplarische Vorgehensweise führt Sie durch den Prozess zum Identifizieren und Beheben eines einfachen Arbeitsspeicherproblems mithilfe der JavaScript\-Speicheranalyse. Die JavaScript\-Speicheranalyse ist in Visual Studio für Windows Store\-Apps verfügbar, die für Windows mit JavaScript erstellt wurden. In diesem Szenario erstellen Sie eine App, die fehlerhafterweise DOM\-Elemente im Speicher behält, anstatt Elemente mit derselben Geschwindigkeit zu löschen, mit der sie erstellt werden.  
+ Diese exemplarische Vorgehensweise führt Sie durch den Prozess zum Identifizieren und Beheben eines einfachen Arbeitsspeicherproblems mithilfe der JavaScript-Speicheranalyse. Die JavaScript-Speicheranalyse ist in Visual Studio für Windows Store-Apps verfügbar, die für Windows mit JavaScript erstellt wurden. In diesem Szenario erstellen Sie eine App, die fehlerhafterweise DOM-Elemente im Speicher behält, anstatt Elemente mit derselben Geschwindigkeit zu löschen, mit der sie erstellt werden.  
   
  Obwohl die Ursache für den Speicherverlust in dieser App sehr spezifisch ist, demonstrieren die hier gezeigten Schritte einen Workflow, der normalerweise wirkungsvoll die Objekte isoliert, die den Speicherverlust verursachen.  
   
-### Ausführen der Test\-App zur JavaScript\-Speicheranalyse  
+### <a name="running-the-javascript-memory-analyzer-test-app"></a>Ausführen der Test-App zur JavaScript-Speicheranalyse  
   
-1.  Wählen Sie in Visual Studio **Datei**, **Neu**, **Projekt** aus.  
+1.  Wählen Sie in Visual Studio **Datei**, **Neu**, **Projekt**aus.  
   
-2.  Wählen Sie im linken Bereich **JavaScript** und anschließend **Windows**, **Windows 8** und dann entweder **Universell** oder **Windows Phone\-Apps** aus.  
+2.  Wählen Sie im linken Bereich **JavaScript** und anschließend **Windows**, **Windows 8**und dann entweder **Universell** oder **Windows Phone-Apps**aus.  
   
     > [!IMPORTANT]
-    >  Die in diesem Thema gezeigten Ergebnisse der Speicherauslastung werden für eine Windows 8\-App getestet.  
+    >  Die in diesem Thema gezeigten Ergebnisse der Speicherauslastung werden für eine Windows 8-App getestet.  
   
 3.  Wählen Sie dann im mittleren Bereich die Projektvorlage **Leere App** aus.  
   
-4.  Geben Sie im Feld **Name** einen Namen wie `JS_Mem_Tester` an, und wählen Sie dann **OK** aus.  
+4.  Geben Sie im Feld **Name** einen Namen wie `JS_Mem_Tester`an, und wählen Sie dann **OK**aus.  
   
-5.  Öffnen Sie im **Projektmappen\-Explorer** default.html, und fügen Sie den folgenden Code zwischen den \<body\>\-Tags ein:  
+5.  Öffnen Sie im **Projektmappen-Explorer** „default.html“, und fügen Sie den folgenden Code zwischen den \<body>-Tags ein:  
   
     ```html  
     <div class="wrapper">  
@@ -55,9 +71,9 @@ manager: "ghogen"
     ```  
   
     > [!IMPORTANT]
-    >  Wenn Sie eine Vorlage für universelle Windows 8.1\-Apps verwenden, müssen Sie HTML\- und CSS\-Code sowohl in den ".Windows"\- als auch in den ".WindowsPhone"\-Projekten aktualisieren.  
+    >  Wenn Sie eine Vorlage für universelle Windows 8.1-Apps verwenden, müssen Sie HTML- und CSS-Code sowohl in den ".Windows"- als auch in den ".WindowsPhone"-Projekten aktualisieren.  
   
-6.  Öffnen Sie default.css, und fügen Sie den folgenden CSS\-Code hinzu:  
+6.  Öffnen Sie default.css, und fügen Sie den folgenden CSS-Code hinzu:  
   
     ```css  
     .memleak {  
@@ -126,24 +142,24 @@ manager: "ghogen"
     })();  
     ```  
   
-8.  Drücken Sie die F5\-TASTE, um das Debuggen zu starten. Überprüfen Sie, dass die Schaltfläche **Speicherverlust** auf der Seite angezeigt wird.  
+8.  Drücken Sie die F5-TASTE, um das Debuggen zu starten. Überprüfen Sie, dass die Schaltfläche **Speicherverlust** auf der Seite angezeigt wird.  
   
-9. Wechseln Sie zu Visual Studio zurück \(ALT\+TAB\), und drücken Sie die Tastenkombination UMSCHALT\+F5, um das Debugging zu beenden.  
+9. Wechseln Sie zu Visual Studio zurück (ALT+TAB), und drücken Sie die Tastenkombination UMSCHALT+F5, um das Debugging zu beenden.  
   
      Nachdem die Funktionsweise der App sichergestellt wurde, können Sie die Speicherauslastung überprüfen.  
   
-### Analysieren der Speicherauslastung  
+### <a name="analyzing-the-memory-usage"></a>Analysieren der Speicherauslastung  
   
-1.  Wählen Sie auf der Symbolleiste **Debuggen** in der Liste **Debuggen starten** das Debugziel für das aktualisierte Projekt aus, entweder die Windows Phone\-Emulatoren oder den **Simulator**.  
+1.  Wählen Sie auf der Symbolleiste **Debuggen** in der Liste **Debuggen starten** das Debugziel für das aktualisierte Projekt aus, entweder die Windows Phone-Emulatoren oder den **Simulator**.  
   
     > [!TIP]
-    >  Für eine Windows Store\-App können Sie in dieser Liste auch **Lokaler Computer** oder **Remotecomputer** auswählen. Allerdings liegt der Vorteil des Emulators oder Simulators darin, dass Sie ihn neben Visual Studio platzieren und problemlos zwischen der laufenden App und der JavaScript\-Speicheranalyse wechseln können. Weitere Informationen finden Sie unter [Ausführen von Apps aus Visual Studio](../debugger/run-store-apps-from-visual-studio.md) und [Ausführen von Windows Store\-Apps auf einem Remotecomputer](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
+    >  Für eine Windows Store-App können Sie in dieser Liste auch **Lokaler Computer** oder **Remotecomputer** auswählen. Allerdings liegt der Vorteil des Emulators oder Simulators darin, dass Sie ihn neben Visual Studio platzieren und problemlos zwischen der laufenden App und der JavaScript-Speicheranalyse wechseln können. Weitere Informationen finden Sie unter [Ausführen von Apps aus Visual Studio](../debugger/run-store-apps-from-visual-studio.md) und [Ausführen von Windows Store-Apps auf einem Remotecomputer](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
-2.  Wählen Sie im Menü **Debuggen** die Option **Diagnosetools ohne Debugging starten** aus.  
+2.  Klicken Sie im Menü **Debuggen** auf **Leistungsprofiler…**.  
   
-3.  Wählen Sie unter **Verfügbare Tools** die Option **JavaScript\-Memory** aus, und wählen Sie dann **Starten**.  
+3.  Wählen Sie unter **Verfügbare Tools**die Option **JavaScript-Memory**aus, und wählen Sie dann **Starten**.  
   
-     In diesem Lernprogramm fügen Sie die Speicheranalyse an das Startprojekt an. Informationen zu anderen Optionen, wie das Anfügen des Arbeitsspeicheranalyzers an eine installierte App, finden Sie unter [JavaScript\-Speicher](../profiling/javascript-memory.md).  
+     In diesem Lernprogramm fügen Sie die Speicheranalyse an das Startprojekt an. Informationen zu anderen Optionen, wie dem Anfügen des Arbeitsspeicheranalyzers an eine installierte App, finden Sie unter [JavaScript-Speicher](../profiling/javascript-memory.md).  
   
      Bei Start des Arbeitsspeicheranalyzers, wird möglicherweise eine Benutzerkontensteuerung die Berechtigung zum Ausführen der Datei "VsEtwCollector.exe" abfragen. Klicken Sie auf **Ja**.  
   
@@ -154,79 +170,79 @@ manager: "ghogen"
     > [!TIP]
     >  Durch die Wiederholung des Szenarios, das Sie auf einen Speicherverlust testen möchten, wird es einfacher, irrelevante Informationen herauszufiltern. Dazu zählen beispielsweise Objekte, die dem Heap während des Startens der App oder beim Laden einer Seite hinzugefügt werden.  
   
-5.  Wechseln Sie aus der ausgeführten App zu Visual Studio \(ALT\+TAB\).  
+5.  Wechseln Sie aus der ausgeführten App zu Visual Studio (ALT+TAB).  
   
-     Die JavaScript\-Speicheranalyse zeigt Informationen auf einer neuen Registerkarte in Visual Studio an.  
+     Die JavaScript-Speicheranalyse zeigt Informationen auf einer neuen Registerkarte in Visual Studio an.  
   
-     Das Arbeitsspeicherdiagramm in dieser Zusammenfassungsansicht veranschaulicht die Prozessspeicherauslastung im Zeitverlauf. Die Ansicht bietet auch Befehle wie **Heap\-Momentaufnahme erstellen**. Eine Momentaufnahme stellt ausführliche Informationen zur Speicherauslastung zu einem bestimmten Zeitpunkt bereit. Weitere Informationen finden Sie unter [JavaScript\-Speicher](../profiling/javascript-memory.md).  
+     Das Arbeitsspeicherdiagramm in dieser Zusammenfassungsansicht veranschaulicht die Prozessspeicherauslastung im Zeitverlauf. Die Ansicht bietet auch Befehle wie **Heap-Momentaufnahme erstellen**. Eine Momentaufnahme stellt ausführliche Informationen zur Speicherauslastung zu einem bestimmten Zeitpunkt bereit. Weitere Informationen finden Sie unter [JavaScript-Speicher](../profiling/javascript-memory.md).  
   
-6.  Wählen Sie **Heap\-Momentaufnahme erstellen** aus.  
+6.  Wählen Sie **Heap-Momentaufnahme erstellen**aus.  
   
-7.  Wechseln Sie zur App, und wählen Sie **Speicherverlust** aus.  
+7.  Wechseln Sie zur App, und wählen Sie **Speicherverlust**aus.  
   
-8.  Wechseln Sie zu Visual Studio, und wählen Sie erneut **Heap\-Momentaufnahme erstellen** aus.  
+8.  Wechseln Sie zu Visual Studio, und wählen Sie erneut **Heap-Momentaufnahme erstellen** aus.  
   
-     Diese Abbildung zeigt die Baselinemomentaufnahme \(Nr. 1\) und die Momentaufnahme Nr. 2.  
+     Diese Abbildung zeigt die Baselinemomentaufnahme (Nr. 1) und die Momentaufnahme Nr. 2.  
   
-     ![Baseline&#45;Momentaufnahme und Momentaufnahme 2](../profiling/media/js_mem_app_snapshot2.png "JS\_Mem\_App\_Snapshot2")  
+     ![Baseline-Momentaufnahme und Momentaufnahme 2](../profiling/media/js_mem_app_snapshot2.png "JS_Mem_App_Snapshot2")  
   
     > [!NOTE]
-    >  Der Windows Phone\-Emulator zeigt keinen Screenshot von der App zum Zeitpunkt der Momentaufnahme.  
+    >  Der Windows Phone-Emulator zeigt keinen Screenshot von der App zum Zeitpunkt der Momentaufnahme.  
   
 9. Wechseln Sie zur App, und wählen Sie die Schaltfläche **Speicherverlust** erneut aus.  
   
-10. Wechseln Sie zu Visual Studio, und wählen Sie zum dritten Mal **Heap\-Momentaufnahme erstellen** aus.  
+10. Wechseln Sie zu Visual Studio, und wählen Sie zum dritten Mal **Heap-Momentaufnahme erstellen** aus.  
   
     > [!TIP]
-    >  Indem eine dritte Momentaufnahme in diesem Workflow aufgenommen wird, können Sie Änderungen zwischen der Baselinemomentaufnahme zur zweiten Momentaufnahme herausfiltern, die mit Arbeitsspeicherverlusten nichts zu tun haben. Es gibt z. B. möglicherweise erwartete Änderungen, wie Aktualisieren von Kopf\- und Fußzeilen auf einer Seite, die einige Änderungen bei der Speicherauslastung generiert, aber mit Arbeitsspeicherverlusten nicht in Verbindung steht.  
+    >  Indem eine dritte Momentaufnahme in diesem Workflow aufgenommen wird, können Sie Änderungen zwischen der Baselinemomentaufnahme zur zweiten Momentaufnahme herausfiltern, die mit Arbeitsspeicherverlusten nichts zu tun haben. Es gibt z. B. möglicherweise erwartete Änderungen, wie Aktualisieren von Kopf- und Fußzeilen auf einer Seite, die einige Änderungen bei der Speicherauslastung generiert, aber mit Arbeitsspeicherverlusten nicht in Verbindung steht.  
   
      Diese Abbildung zeigt Momentaufnahme Nr. 2 und Momentaufnahme Nr. 3.  
   
-     ![Momentaufnahme 2 und Momentaufnahme 3](../profiling/media/js_mem_app_snapshot3.png "JS\_Mem\_App\_Snapshot3")  
+     ![Momentaufnahme 2 und Momentaufnahme 3](../profiling/media/js_mem_app_snapshot3.png "JS_Mem_App_Snapshot3")  
   
 11. Wählen Sie in Visual Studio **Beenden** aus, um die Profilerstellung zu beenden.  
   
 12. Vergleichen Sie die Momentaufnahmen in Visual Studio. Momentaufnahme 2 zeigt Folgendes:  
   
-    -   Die Heapgröße \(angezeigt durch den roten Pfeil nach oben auf der linken Seite\) hat sich verglichen mit Momentaufnahme Nr. 1 um mehrere KB erhöht.  
+    -   Die Heapgröße (angezeigt durch den roten Pfeil nach oben auf der linken Seite) hat sich verglichen mit Momentaufnahme Nr. 1 um mehrere KB erhöht.  
   
         > [!IMPORTANT]
         >  Die genauen Speicherauslastungswerte für die Heapgröße hängen vom Debugziel ab.  
   
-    -   Die Anzahl der Objekte im Heap \(angezeigt durch den roten Pfeil nach oben auf der rechten Seite\) hat sich verglichen mit Momentaufnahme Nr. 1 erhöht. Ein Objekt wurde hinzugefügt \(\+ 1\), und es wurden keine Objekte entfernt \(– 0\).  
+    -   Die Anzahl der Objekte im Heap (angezeigt durch den roten Pfeil nach oben auf der rechten Seite) hat sich verglichen mit Momentaufnahme Nr. 1 erhöht. Ein Objekt wurde hinzugefügt (+&1;), und es wurden keine Objekte entfernt (–&0;).  
   
      Momentaufnahme 3 zeigt Folgendes:  
   
     -   Die Heapgröße hat sich verglichen mit Momentaufnahme Nr. 2 wieder um mehrere hundert Bytes erhöht.  
   
-    -   Die Anzahl der Objekte im Heap hat verglichen mit Momentaufnahme Nr. 2 wieder zugenommen. Ein Objekt wurde hinzugefügt \(\+ 1\), und es wurden keine Objekte entfernt \(– 0\).  
+    -   Die Anzahl der Objekte im Heap hat verglichen mit Momentaufnahme Nr. 2 wieder zugenommen. Ein Objekt wurde hinzugefügt (+&1;), und es wurden keine Objekte entfernt (–&0;).  
   
-13. Wählen Sie in Momentaufnahme Nr. 3 den Linktext auf der rechten Seite aus, der einen Wert von \+1\/\-0 neben dem roten Pfeil nach oben anzeigt.  
+13. Wählen Sie in Momentaufnahme Nr. 3 den Linktext auf der rechten Seite aus, der einen Wert von +1/-0 neben dem roten Pfeil nach oben anzeigt.  
   
-     ![Link zur anderen Ansicht der Heap&#45;Objekte](../profiling/media/js_mem_app_link.png "JS\_Mem\_App\_Link")  
+     ![Link zur anderen Ansicht der Heap-Objekte](../profiling/media/js_mem_app_link.png "JS_Mem_App_Link")  
   
-     Hierdurch wird die differenzielle Ansicht der Objekte im Heap mit dem Namen **Momentaufnahme \#3 \- Momentaufnahme \#2** aufgerufen, bei der die Ansicht "Typen" standardmäßig anzeigt wird. Standardmäßig sehen Sie eine Liste von Objekten, die dem Heap zwischen Momentaufnahme Nr. 2 und Momentaufnahme Nr. 3 hinzugefügt wurden.  
+     Hierdurch wird die differenzielle Ansicht der Objekte im Heap mit dem Namen **Momentaufnahme #3 - Momentaufnahme #2**aufgerufen, bei der die Ansicht "Typen" standardmäßig anzeigt wird. Standardmäßig sehen Sie eine Liste von Objekten, die dem Heap zwischen Momentaufnahme Nr. 2 und Momentaufnahme Nr. 3 hinzugefügt wurden.  
   
-14. Wählen Sie im Filter **Bereich** die Option **Übrige Objekte der Momentaufnahme \#2** aus.  
+14. Wählen Sie im Filter **Bereich** die Option **Übrige Objekte der Momentaufnahme #2**aus.  
   
-15. Öffnen Sie das HTMLDivElement\-Objekt oben in der Objektstruktur wie hier gezeigt.  
+15. Öffnen Sie das HTMLDivElement-Objekt oben in der Objektstruktur wie hier gezeigt.  
   
-     ![Vergleichsansicht der Objektanzahl auf dem Heap](../profiling/media/js_mem_app_typesdiff.png "JS\_Mem\_App\_TypesDiff")  
+     ![Andere Ansicht der Objektanzahl auf dem Heap](../profiling/media/js_mem_app_typesdiff.png "JS_Mem_App_TypesDiff")  
   
      Diese Ansicht zeigt nützliche Informationen zum Speicherverlust, wie beispielsweise Folgende:  
   
-    -   Diese Ansicht zeigt ein DIV\-Element mit der ID `item`. Die beibehaltene Größe für das Objekt beträgt mehrere hundert Bytes \(der exakte Wert variiert\).  
+    -   Diese Ansicht zeigt ein DIV-Element mit der ID `item`. Die beibehaltene Größe für das Objekt beträgt mehrere hundert Bytes (der exakte Wert variiert).  
   
     -   Dieses Objekt ist ein übrig gebliebenes Objekt von Momentaufnahme Nr. 2 und stellt einen potenziellen Speicherverlust dar.  
   
-     An diesem Punkt sind Kenntnisse der App nützlich: Durch Auswählen der Schaltfläche **Speicherverlust** sollte ein DIV\-Element entfernt sowie ein Element hinzugefügt werden. Der Code scheint also nicht richtig zu funktionieren, d. h. er weist einen Speicherverlust auf. Im nächsten Abschnitt wird beschrieben, wie die behoben werden kann.  
+     An diesem Punkt sind Kenntnisse der App nützlich: Durch Auswählen der Schaltfläche **Speicherverlust** sollte ein DIV-Element entfernt sowie ein Element hinzugefügt werden. Der Code scheint also nicht richtig zu funktionieren, d. h. er weist einen Speicherverlust auf. Im nächsten Abschnitt wird beschrieben, wie die behoben werden kann.  
   
     > [!TIP]
-    >  Manchmal kann das Lokalisieren eines Objekts in Bezug auf das `Global`\-Objekt helfen, das Objekt zu identifizieren. Öffnen Sie hierzu das Kontextmenü für den Bezeichner, und wählen Sie dann **In Stammansicht anzeigen** aus.  
+    >  Manchmal kann das Lokalisieren eines Objekts in Bezug auf das `Global` -Objekt helfen, das Objekt zu identifizieren. Öffnen Sie hierzu das Kontextmenü für den Bezeichner, und wählen Sie dann **In Stammansicht anzeigen**aus.  
   
 ##  <a name="FixingMemory"></a> Korrigieren des Arbeitsspeicherproblems  
   
-1.  Unter Verwendung von Daten, die der Profiler erkannt hat, untersuchen Sie den Code, durch den DOM\-Elemente mit der ID "item" entfernt werden. Dies tritt in der `initialize()`\-Funktion auf.  
+1.  Unter Verwendung von Daten, die der Profiler erkannt hat, untersuchen Sie den Code, durch den DOM-Elemente mit der ID "item" entfernt werden. Dies tritt in der `initialize()`-Funktion auf.  
   
     ```javascript  
     function initialize() {  
@@ -237,9 +253,9 @@ manager: "ghogen"
     }  
     ```  
   
-     Möglicherweise funktioniert `elem.removeNode(true)` nicht ordnungsgemäß. Sie untersuchen, wie der Code das DOM\-Element zwischenspeichert, und finden ein Problem: Der Verweis auf das zwischengespeicherte Element wird nicht aktualisiert.  
+     Möglicherweise funktioniert `elem.removeNode(true)` nicht ordnungsgemäß. Sie untersuchen, wie der Code das DOM-Element zwischenspeichert, und finden ein Problem: Der Verweis auf das zwischengespeicherte Element wird nicht aktualisiert.  
   
-2.  Fügen Sie in default.js die folgende Codezeile zur Lastfunktion hinzu, unmittelbar bevor `appendChild` aufgerufen wird:  
+2.  Fügen Sie in default.js die folgende Codezeile zur Lastfunktion hinzu, unmittelbar bevor `appendChild`aufgerufen wird:  
   
     ```javascript  
     elem = newDiv;  
@@ -264,27 +280,27 @@ manager: "ghogen"
   
 3.  Klicken Sie im Menü **Debuggen** auf **Leistung und Diagnose**.  
   
-4.  Wählen Sie unter **Verfügbare Tools** die Option **JavaScript\-Memory** aus, und wählen Sie dann **Starten**.  
+4.  Wählen Sie unter **Verfügbare Tools**die Option **JavaScript-Memory**aus, und wählen Sie dann **Starten**.  
   
 5.  Befolgen Sie die gleiche Vorgehensweise wie zuvor, um drei Momentaufnahmen zu erstellen. Die erforderlichen Schritte werden hier zusammengefasst:  
   
     1.  Wählen Sie in der App viermal nacheinander die Schaltfläche **Speicherverlust** aus.  
   
-    2.  Wechseln Sie zu Visual Studio, und wählen Sie für die Baselinemomentaufnahme **Heap\-Momentaufnahme erstellen** aus.  
+    2.  Wechseln Sie zu Visual Studio, und wählen Sie für die Baselinemomentaufnahme **Heap-Momentaufnahme erstellen** aus.  
   
     3.  Wählen Sie in der App die Schaltfläche **Speicherverlust** aus.  
   
-    4.  Wechseln Sie zu Visual Studio, und wählen Sie für die zweite Momentaufnahme **Heap\-Momentaufnahme erstellen** aus.  
+    4.  Wechseln Sie zu Visual Studio, und wählen Sie für die zweite Momentaufnahme **Heap-Momentaufnahme erstellen** aus.  
   
     5.  Wählen Sie in der App die Schaltfläche **Speicherverlust** aus.  
   
-    6.  Wechseln Sie zu Visual Studio, und wählen Sie für die dritte Momentaufnahme **Heap\-Momentaufnahme erstellen** aus.  
+    6.  Wechseln Sie zu Visual Studio, und wählen Sie für die dritte Momentaufnahme **Heap-Momentaufnahme erstellen** aus.  
   
-     Momentaufnahme Nr. 3 zeigt für die Heapgröße jetzt **Keine Zunahme** seit der Momentaufnahme Nr. 2 an, und der Objektzähler zeigt \+ 1\/– 1 an, womit angegeben wird, dass ein Objekt hinzugefügt und ein Objekt entfernt wurde. Dies ist das gewünschte Verhalten.  
+     Momentaufnahme Nr. 3 zeigt für die Heapgröße jetzt **Keine Zunahme** seit der Momentaufnahme Nr. 2 an, und der Objektzähler zeigt + 1/– 1 an, womit angegeben wird, dass ein Objekt hinzugefügt und ein Objekt entfernt wurde. Dies ist das gewünschte Verhalten.  
   
      Die folgende Abbildung zeigt Momentaufnahme Nr. 2 und Momentaufnahme Nr. 3.  
   
-     ![Momentaufnahmen mit korrigiertem Arbeitsspeicherverlust](../profiling/media/js_mem_app_fixed_snapshot3.png "JS\_Mem\_App\_Fixed\_Snapshot3")  
+     ![Momentaufnahmen mit korrigiertem Arbeitsspeicherverlust](../profiling/media/js_mem_app_fixed_snapshot3.png "JS_Mem_App_Fixed_Snapshot3")  
   
-## Siehe auch  
- [JavaScript\-Speicher](../profiling/javascript-memory.md)
+## <a name="see-also"></a>Siehe auch  
+ [JavaScript-Speicher](../profiling/javascript-memory.md)

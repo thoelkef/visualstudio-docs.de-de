@@ -1,126 +1,168 @@
 ---
-title: "Einf&#252;hrung in die Leistungsprofilerstellung | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/08/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
-f1_keywords: 
-  - "vs.performance.wizard.intropage"
-helpviewer_keywords: 
-  - "Leistungstools, Assistent"
-  - "Leistungs-Assistent"
-  - "Profilerstellungstools, Schnellstart"
+title: "Einführung in die Leistungsprofilerstellung | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: get-started-article
+f1_keywords:
+- vs.performance.wizard.intropage
+helpviewer_keywords:
+- Profiling Tools, quick start
+- Diagnostics Tools, CPU Usage
+- CPU Usage
+- Diagnostics Tools
 ms.assetid: da2fbf8a-2d41-4654-a509-dd238532d25a
 caps.latest.revision: 45
-caps.handback.revision: 43
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# Einf&#252;hrung in die Leistungsprofilerstellung
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 53907b9b88deca671ee0695385dcbc856a35d309
+ms.openlocfilehash: edc4f1e6a332a3c515a1d1a65b15ae3f1b989ed8
+ms.lasthandoff: 02/22/2017
 
-Sie können Visual Studio\-Profilerstellungstools verwenden, um Leistungsprobleme in der Anwendung zu analysieren.  Dieses Verfahren veranschaulicht die Verwendung von **Sampling**\-Daten.  
+---
+# <a name="beginners-guide-to-performance-profiling"></a>Einführung in die Leistungsprofilerstellung
+Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsprobleme in der Anwendung zu analysieren. Dieses Verfahren veranschaulicht die Verwendung der Registerkarte **CPU-Auslastung** der Diagnosetools, um Leistungsdaten Ihrer App zu erhalten. Die Diagnosetools werden für die .NET-Entwicklung in Visual Studio, darunter ASP.NET, sowie für die native/C++-Entwicklung unterstützt.
   
- Beim Sampling handelt es sich um eine statistische Profilerstellungsmethode, die Aufschluss über die Funktionen gibt, von denen in der Anwendung die meisten Benutzermodusarbeiten ausgeführt werden.  Das Sampling stellt einen guten Ausgangspunkt für die Suche nach Bereichen dar, in denen sich die Geschwindigkeit der Anwendung optimieren lässt.  
+Wenn der Debugger angehalten wird, sammelt das Tool **CPU-Auslastung** Informationen zu den in der Anwendung ausgeführten Funktionen. Das Tool listet auch die Funktionen auf, die Aufgaben ausgeführt haben. Außerdem wird ein Zeitachsendiagramm zur Verfügung gestellt, das Sie verwenden können, um sich auf bestimmte Segmente der Samplingsitzung zu konzentrieren.
+
+Der Diagnosehub bietet Ihnen viele weitere Optionen zum Ausführen und Verwalten Ihrer Diagnosesitzung. Wenn Sie von **CPU-Auslastung** nicht die benötigten Daten erhalten, stehen andere [Profiling Tools (Profilerstellungstools)](../profiling/Profiling-Tools.md) zur Verfügung, um andere Arten von hilfreichen Informationen zu erhalten. In vielen Fällen kann der Leistungsengpass Ihrer Anwendung durch etwas anderes als die CPU ausgelöst werden, z.B. durch den Speicher, das Rendern der Benutzeroberfläche oder die Anforderungszeit des Netzwerks. Der Diagnosehub bietet Ihnen viele andere Optionen zum Aufzeichnen und Analysieren dieser Art von Daten.
+
+Dieses Thema behandelt die Analyse der CPU-Auslastung in einem normalen Debuggingworkflow. Sie können die CPU-Auslastung auch ohne Debugger analysieren, oder indem Sie eine ausgeführte App als Ziel setzen. Weitere Informationen finden Sie unter [Run profiling tools without debugging (Profilerstellungstools ohne Debuggen ausführen)](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
   
- Von der Samplingmethode werden in angegebenen Intervallen Informationen zu den in der Anwendung ausgeführten Funktionen gesammelt.  Nach Abschluss einer Profilerstellung zeigt die Ansicht **Zusammenfassung** der Profilerstellungsdaten die aktivste Funktionsaufrufstruktur \(**Langsamster Pfad**\), in der die meisten Aufgaben in der Anwendung ausgeführt wurden.  In der Ansicht sind auch die Funktionen aufgeführt, die die meiste individuelle Arbeit ausgeführt haben. Außerdem wird ein Zeitachsendiagramm zur Verfügung gestellt, das Sie verwenden können, um sich auf bestimmte Segmente der Samplingsitzung zu konzentrieren.  
+##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Schritt 1: Sammeln von Profilerstellungsdaten 
   
- Wenn Sie beim **Sampling** nicht die benötigten Daten erhalten, stehen in den Profilerstellungstools weitere Sammlungsmethoden zur Verfügung, um andere Arten von hilfreichen Informationen zu erhalten.  Weitere Informationen zu diesen anderen Methoden finden Sie unter [Gewusst wie: Auswählen von Sammlungsmethoden](../profiling/how-to-choose-collection-methods.md).  
+1.  Öffnen Sie das Projekt, das Sie in Visual Studio debuggen möchten, und legen Sie in Ihrer App einen Haltepunkt an dem Punkt fest, an dem Sie die CPU-Auslastung untersuchen möchten.
+
+2.  Legen Sie einen zweiten Haltepunkt am Ende der Funktion oder des Codebereichs an, den Sie analysieren möchten.
+
+    > [!TIP]
+    > Durch das Festlegen von zwei Haltepunkten können Sie die Datensammlung auf die Teile des Code begrenzen, die Sie analysieren möchten.
   
+3.  Das Fenster **Diagnosetools** wird automatisch angezeigt, es sei denn, Sie haben es deaktiviert. Klicken Sie auf **Debuggen / Windows / Diagnosetools anzeigen**, um das Fenster erneut aufzurufen.
+
+4.  Mithilfe der Einstellung **Auswahltools** auf der Symbolleiste können Sie auswählen, ob Sie die **CPU-Auslastung**, [Speicherauslastung](../profiling/Memory-Usage.md) oder beides anzeigen möchten. Wenn Sie Visual Studio Enterprise ausführen, können Sie auch IntelliTrace unter **Extras / Optionen / IntelliTrace** aktivieren oder deaktivieren.
+
+     ![Anzeigen von Diagnosetools](../profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
+
+     Wir werden hauptsächlich die CPU-Auslastung betrachten, stellen Sie also sicher, dass **CPU-Auslastung** aktiviert ist (ist standardmäßig aktiviert).
+
+5.  Klicken Sie auf **Debuggen / Debugging starten** (oder auf **Start** auf der Symbolleiste oder auf **F5**).
+
+     Wenn das Laden der Anwendung abgeschlossen ist, wird die Zusammenfassungsansicht der Diagnosetools angezeigt.
+
+     ![Zusammenfassung Diagnosetools](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
+
+     Weitere Informationen zu den Ereignissen finden Sie unter [Start Debugging (Suchen und Filtern auf der Registerkarte „Ereignisse“ im Fenster „Diagnosetools“)](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).
+
+6.  Führen Sie das Szenario aus, bei dem Ihr erster Haltepunkt erreicht wird.
+
+7.  Aktivieren Sie während der Debugger angehalten wird die Sammlung von CPU-Auslastungsdaten, und öffnen Sie anschließend die Registerkarte **CPU-Auslastung**.
+
+     ![Diagnosetool CPU-Profilerstellung aktivieren](../profiling/media/DiagToolsEnableCPUProfiling.png "DiagToolsEnableCPUProfiling")
+
+     Wenn Sie **CPU-Profilerstellung aktivieren** auswählen, beginnt Visual Studio, Ihre Funktionen und die für die Ausführung benötigte Zeit aufzuzeichnen. Sie können diese gesammelten Daten nur anzeigen lassen, wenn Ihre Anwendung an einem Haltepunkt angehalten wird.
+
+8.  Drücken Sie F5, um die App bis zum zweiten Haltepunkt auszuführen.
+
+     Jetzt verfügen Sie über Leistungsdaten für Ihre Anwendung, die speziell für den Codebereich gelten, der zwischen den beiden Haltepunkten liegt.
+
+9.  Wählen Sie die Region aus, die Sie in der CPU-Zeitachse analysieren möchten (es muss sich um eine Region handeln, die Profilerstellungsdaten anzeigt).
+
+     ![Diagnosetools Auswahl eines Zeitsegments](../profiling/media/DiagToolsSelectTimeSegment.png "DiagToolsSelectTimeSegment")
+
+     Der Profiler beginnt, Threaddaten vorzubereiten. Warten Sie, bis dieser Vorgang abgeschlossen ist.
+
+     ![Diagnosetools Threads Vorbereiten](../profiling/media/DiagToolsPreparingThreads.png "DiagToolsPreparingThreads")
+  
+     Das CPU-Auslastungstool zeigt den Bericht unter der Registerkarte **CPU-Auslastung** an.
+  
+     ![Diagnosetools Registerkarte CPU-Auslastung](../profiling/media/DiagToolsCPUUsageTab.png "DiagToolsCPUUsageTab")
+
+     An diesem Punkt können Sie beginnen, die Daten zu analysieren.
+
+## <a name="Step2"></a> Schritt 2: Analysieren der CPU-Auslastungsdaten
+
+Beginnen Sie bei der Datenanalyse am besten mit der Liste der Funktionen unter „CPU-Auslastung“, stellen Sie fest welche Funktionen die meisten Aufgaben ausführen, und betrachten Sie die einzelnen Funktionen näher.
+
+1. Untersuchen Sie in der Liste der Funktionen die Funktionen, die am meisten Aufgaben ausführen.
+
+    ![Diagnosetools CPU-Auslastung Liste der Funktionen](../profiling/media/DiagToolsCPUUsageFunctionList.png "DiagToolsCPUUsageFunctionList")
+
+    > [!TIP]
+    > Die Auflistung der Funktionen beginnt mit der Funktion, die die meisten Aufgaben ausführt (sie sind nicht in der Reihenfolge der Aufrufe gelistet). Dadurch können Sie schnell feststellen, welche Funktionen am längsten ausgeführt werden.
+
+2. Doppelklicken Sie in der Liste der Funktionen auf eine der Funktionen Ihrer App, die viele Aufgaben ausführt.
+
+    Wenn Sie auf eine Funktion doppelklicken, öffnet sich die Ansicht **Aufrufer/Aufgerufener** im linken Bereich. 
+
+    ![Diagnosetools Ansicht Aufrufer-Aufgerufener](../profiling/media/DiagToolsCallerCallee.png "DiagToolsCallerCallee")
+
+    In dieser Ansicht erscheint die ausgewählte Funktion in der Überschrift und im Feld **Aktuelle Funktion** ( in diesem Beispiel „GetNumber“). Die Funktion, die die aktuelle Funktion aufgerufen hat, wird links unter **Calling Function** (Aufrufende Funktion) angezeigt, und alle Funktionen, die von der aktuellen Funktion aufgerufen wurden werden im Feld **Called Functions** (Aufgerufene Funktionen) auf der rechten Seite angezeigt. (Sie können beide Felder auswählen, um die aktuelle Funktion zu ändern.)
+
+    In dieser Ansicht wird Ihnen die Gesamtzeit (ms) und der Prozentsatz der gesamten Ausführungszeit der App angezeigt, den die Funktion bis zum Abschluss eingenommen hat.
+
+    Unter **Funktionsrumpf** wird ebenso die Gesamtzeit (und der Prozentsatz der Zeit) angezeigt, die im Funktionsrumpf aufgewendet wurde. Die Zeit, die in aufrufenden und aufgerufenen Funktionen aufgewendet wurde, ist nicht enthalten. (In diesem Beispiel wurden 3713 von 3729 ms im Funktionsrumpf aufgewendet, und die verbleibenden 16 ms wurden im von dieser Funktion aufgerufenen externen Code aufgewendet).
+
+    > [!TIP]
+    > Hohe Werte unter **Funktionsrumpf** deuten auf einen Leistungsengpass in der Funktion selbst hin.
+
+3. Wenn Sie eine allgemeinere Übersicht anzeigen möchten, in der die Reihenfolge, in der die Funktionen aufgerufen werden, dargestellt wird, wählen Sie aus der Dropdownliste am oberen Rand des Bereichs **Aufrufstruktur** aus.
+ 
+    Jeder nummerierte Bereich in der Abbildung bezieht sich auf einen Schritt in der Prozedur.
+  
+    ![Diagnosetools Aufrufstruktur](../profiling/media/DiagToolsCallTree.png "DiagToolsCallTree")
+  
+|||
+|-|-|
+|![Schritt 1](../profiling/media/ProcGuid_1.png "ProcGuid_1")|Der oberste Knoten in CPU-Auslastungsaufrufstrukturen ist ein Pseudoknoten.|  
+|![Schritt 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|Wenn die Option [Externen Code anzeigen](#BKMK_External_Code) deaktiviert ist, ist in den meisten Apps der Knoten der zweiten Ebene ein **[External Code]** -Knoten, der den System- und Frameworkcode enthält, der die App startet und beendet, die Benutzeroberfläche zeichnet, die Threadplanung steuert und andere Dienste der unteren Ebene für die App bereitstellt.|  
+|![Schritt 3](../profiling/media/ProcGuid_3.png "ProcGuid_3")|Die untergeordneten Elemente des Knotens der zweiten Ebene sind die Benutzercodemethoden und asynchronen Routinen, die vom System- und Frameworkcode der zweiten Ebene aufgerufen oder erstellt werden.|
+|![Schritt 4](../profiling/media/ProcGuid_4.png "ProcGuid_4")|Untergeordnete Knoten einer Methode enthalten Daten nur für die Aufrufe der übergeordneten Methode. Wenn **Externen Code anzeigen** deaktiviert ist, können App-Methoden auch den Knoten **[Externer Code]** enthalten.|
+
+Hier finden Sie weitere Informationen zu den Spaltenwerten:
+
+- Mit dem Wert **Gesamt-CPU** wird das Pensum angegeben, das von der Funktion und den von der Funktion aufgerufenen Funktionen bewältigt wurde. Hohe Werte bei „Gesamt-CPU“ deuten auf die insgesamt aufwändigsten Funktionen hin.
+  
+- Mit dem Wert **Eigen-CPU** wird das bewältigte Pensum des Codes im Funktionsrumpf angegeben. Das Pensum der Funktionen, die durch den Code aufgerufen wurden, ist nicht enthalten. Hohe Werte bei **Eigen-CPU** deuten auf einen Leistungsengpass in der Funktion selbst hin.
+
+- **Module** Der Name des Moduls mit der Funktion oder die Anzahl der Module, die die Funktionen in einem Knoten vom Typ [Externer Code] enthalten.
+
+## <a name="BKMK_External_Code"></a> Externen Code anzeigen
+
+Externer Code umfasst Funktionen in System- und Frameworkkomponenten, die vom Code ausgeführt werden, den Sie schreiben. Externer Code umfasst Funktionen, die die App starten und beenden, die Benutzeroberfläche zeichnen, das Threading steuern und der App andere hardwarenahe Dienste bereitstellen. In den meisten Fällen sind Sie nicht an externem Code interessiert, weshalb das CPU-Auslastungstool die externen Funktionen einer Benutzermethode im Knoten **[Externer Code]** sammelt.
+  
+Wenn Sie die Aufrufpfade von externem Code anzeigen möchten, wählen Sie aus der Liste **Filteransicht** die Option **Externen Code anzeigen** und dann **Übernehmen**aus.  
+  
+![Filteransicht auswählen, dann Externen Code anzeigen](../profiling/media/DiagToolsShowExternalCode.png "DiagToolsShowExternalCode")  
+  
+Achten Sie darauf, dass viele externe Codeaufrufketten tief verschachtelt sind, sodass die Breite der Spalte mit dem Funktionsnamen die Anzeigebreite aller außer sehr großer Computerbildschirme überschreiten kann. In diesem Fall werden Funktionsnamen als **[…]**angezeigt.
+  
+Verwenden Sie das Suchfeld, um nach einem gewünschten Knoten zu suchen, und verwenden Sie dann die horizontale Bildlaufleiste, um die Daten sichtbar zu machen.
+
 > [!TIP]
->  Vergewissern Sie sich bei der Profilerstellung für Code, von dem Windows\-Funktionen aufgerufen werden, dass Sie über die neuesten PDB\-Dateien verfügen.  Ohne diese Dateien werden in den Berichtsansichten kryptische und schwer verständliche Namen von Windows\-Funktionen aufgeführt.  Weitere Informationen zum Sicherstellen, dass Sie über die erforderlichen Dateien verfügen, finden Sie unter [Gewusst wie: Verweisen auf Windows\-Symbolinformationen](../profiling/how-to-reference-windows-symbol-information.md).  
+> Vergewissern Sie sich bei der Profilerstellung für externen Code, von dem Windows-Funktionen aufgerufen werden, dass Sie über die neuesten .pdb-Dateien verfügen. Ohne diese Dateien werden in den Berichtsansichten kryptische und schwer verständliche Namen von Windows-Funktionen aufgeführt. Weitere Informationen zum Sicherstellen, dass Sie über die erforderlichen Dateien verfügen, finden Sie unter [Specify Symbol (.pdb) and Source Files in the Debugger (Symbol- (.pdb) und Quelldateien im Debugger angeben)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
   
-##  <a name="Step1"></a> Erstellen und Ausführen einer Leistungssitzung  
- Zum Abrufen der zu analysierenden Daten muss zunächst eine Leistungssitzung erstellt und ausgeführt werden.  Diese beiden Schritte können mithilfe des Leistungs\-Assistenten ausgeführt werden.  
-  
-#### So können Sie eine Leistungssitzung erstellen und ausführen  
-  
-1.  Öffnen Sie die Lösung in Visual Studio.  Legen Sie die Konfiguration auf „Release“ fest.  \(Das Feld **Projektmappenkonfigurationen** finden Sie in der Symbolleiste. Es ist standardmäßig auf **Debuggen** festgelegt.  Ändern Sie es in **Release**.\)  
-  
-    > [!IMPORTANT]
-    >  Wenn Sie auf dem Computer, den Sie verwenden, kein Administrator sind, sollten Sie Visual Studio während der Verwendung des Profilers als Administrator ausführen.  \(Klicken Sie mit der rechten Maustaste auf das Anwendungssymbol für Visual Studio, und klicken Sie dann auf **Als Administrator ausführen**.\)  
-  
-2.  Klicken Sie im Menü **Debuggen** auf die Option **Diagnosetools ohne Debugging starten**.  
-  
-3.  Aktivieren Sie den **Leistungs\-Assistenten**, und klicken Sie auf **Starten**.  
-  
-4.  Aktivieren Sie die Option **CPU Sampling \(empfohlen\)**, und klicken Sie auf **Fertig stellen**.  
-  
-5.  Die Anwendung wird gestartet, und die Datensammlung durch den Profiler beginnt.  
-  
-6.  Verwenden Sie die Funktionen, bei denen möglicherweise Leistungsprobleme vorliegen.  
-  
-7.  Schließen Sie die Anwendung wie gewohnt.  
-  
-     Nach Beendigung der Anwendung wird im Hauptfenster von Visual Studio die Ansicht **Zusammenfassung** mit den Profilerstellungsdaten angezeigt, und im Fenster **Leistungs\-Explorer** erscheint ein Symbol für die neue Sitzung.  
-  
-##  <a name="Step2"></a> Schritt 2: Analysieren der Samplingdaten  
- Nach Beendigung einer Leistungssitzung wird im Hauptfenster von Visual Studio die Ansicht **Zusammenfassung** des Profilerstellungsberichts angezeigt.  
-  
- Beginnen Sie bei der Datenanalyse am besten mit dem **langsamsten Pfad**, fahren Sie mit der Liste der Funktionen fort, von denen die meisten Aufgaben ausgeführt werden, und richten Sie Ihr Augenmerk schließlich mithilfe der **Zeitachsenübersicht** auf andere Funktionen.  Sie können auch Profilerstellungsvorschläge und Warnungen im Fenster **Fehlerliste** anzeigen.  
-  
- Beachten Sie, dass Sie aufgrund der Samplingmethode unter Umständen nicht die benötigten Informationen erhalten.  So werden Beispieldaten beispielsweise nur gesammelt, wenn von der Anwendung Benutzermoduscode ausgeführt wird.  Aus diesem Grund werden beim Sampling einige Funktionen \(beispielsweise Eingabe\- und Ausgabevorgänge\) nicht erfasst.  In den Profilerstellungstools stehen mehrere Sammlungsmethoden zur Verfügung, die es Ihnen ermöglichen, sich auf die wichtigen Daten zu konzentrieren.  Weitere Informationen zu den anderen Methoden finden Sie unter [Gewusst wie: Auswählen von Sammlungsmethoden](../profiling/how-to-choose-collection-methods.md).  
-  
- Jeder nummerierte Bereich in der Abbildung bezieht sich auf einen Schritt in der Prozedur.  
-  
- ![Ansicht des Zusammenfassungsberichts für Sampling](../profiling/media/summary_sampling.png "Summary\_Sampling")  
-  
-#### So analysieren Sie Samplingdaten  
-  
-1.  In der Ansicht **Zusammenfassung** finden Sie unter **Langsamster Pfad** die Verzweigung der Anwendungsaufrufstruktur mit den höchsten inklusiven Samplings.  Hierbei handelt es sich um den Ausführungspfad, der beim Sammeln der Daten am aktivsten war.  Hohe inklusive Werte können darauf hindeuten, dass der Algorithmus zum Generieren der Aufrufstruktur optimiert werden kann.  Suchen Sie im Code die Funktion, die im Pfad am niedrigsten ist.  Beachten Sie, dass der Pfad auch Systemfunktionen oder Funktionen in externen Modulen enthalten kann.  
-  
-     ![Profiler &#45; Langsamster Pfad](../profiling/media/profiler_hotpath.png "Profiler\_HotPath")  
-  
-    1.  Mit dem Wert für **Inklusive Samplings** wird das Pensum angegeben, das von der Funktion und den von der Funktion aufgerufenen Funktionen bewältigt wurde.  Ein hohes Maß an inklusiven Samplings deutet auf die insgesamt aufwändigsten Funktionen hin.  
-  
-    2.  Mit dem Wert für **Exklusive Samplings** wird das bewältigte Pensum des Codes im Funktionstext angegeben – ohne das Pensum der Funktionen, die durch den Code aufgerufen wurden.  Ein hohes Maß an exklusiven Samplings deutet auf einen Leistungsengpass in der Funktion selbst hin.  
-  
-2.  Klicken Sie auf den Funktionsnamen, um die Ansicht **Funktionsdetails** der Profilerstellungsdaten anzuzeigen.  Die Ansicht **Funktionsdetails** enthält eine grafische Darstellung der Profilerstellungsdaten für die ausgewählte Funktion. Hier werden alle Funktionen angezeigt, von denen die Funktion aufgerufen wurde, sowie alle Funktionen, die von der ausgewählten Funktion aufgerufen wurden.  
-  
-    -   Die Größe der Blöcke der aufrufenden und aufgerufenen Funktionen stellt die relative Häufigkeit dar, mit der die Funktionen aufgerufen wurden oder ein Aufruf durch die Funktionen erfolgt ist.  
-  
-    -   Sie können auf den Namen einer aufrufenden oder aufgerufenen Funktion klicken, um sie in der Funktionsdetailansicht auszuwählen.  
-  
-    -   Im unteren Bereich des Fensters **Funktionsdetails** wird der eigentliche Funktionscode angezeigt.  Sollten Sie beim Untersuchen des Codes eine Möglichkeit zur Leistungsoptimierung finden, klicken Sie auf den Quelldateinamen, um die Datei im Visual Studio\-Editor zu öffnen.  
-  
-3.  Kehren Sie zum Fortsetzen der Analyse zur Ansicht **Zusammenfassung** zurück, indem Sie in der Dropdownliste Ansicht die Option **Zusammenfassung** auswählen.  Untersuchen Sie dann die Funktionen unter **Funktionen, die die meisten Einzelaufgaben durchführen**.  Diese Liste enthält die Funktionen mit den höchsten exklusiven Samplings.  Durch den Code im Funktionstext dieser Funktionen wurde eine Vielzahl von Aufgaben ausgeführt, und er lässt sich unter Umständen optimieren.  Klicken Sie zur ausführlicheren Analyse einer bestimmten Funktion auf den Funktionsnamen, um sie in der Ansicht **Funktionsdetails** anzuzeigen.  
-  
-     ![Liste von Funktionen, die die meiste Arbeit erledigen](../profiling/media/functions_mostwork.png "Functions\_MostWork")  
-  
-     Wenn Sie mit der Untersuchung der Profilerstellung fortfahren möchten, können Sie mithilfe der Zeitachse in der Ansicht **Zusammenfassung** ein Segment der Profilerstellungsdaten erneut analysieren, um die Werte für **Langsamster Pfad** und **Funktionen, die die meisten Einzelaufgaben durchführen** eines ausgewählten Segments anzuzeigen.  So werden bei der Untersuchung einer kleineren Spitze auf der Zeitachse unter Umständen aufwändige Aufrufstrukturen und Funktionen ersichtlich, die bei der Analyse der gesamten Profilerstellung nicht sichtbar waren.  
-  
-     Um ein Segment erneut zu analysieren, wählen Sie im Feld Zeitachsenübersicht ein Segment aus, und klicken Sie dann auf **Nach Auswahl filtern**.  
-  
-     ![Leistungszusammenfassung &#45; Zeitachse anzeigen](../profiling/media/performancesummary.png "PerformanceSummary")  
-  
-4.  Der Profiler schlägt zudem anhand eines Satzes von Regeln Möglichkeiten zur Verbesserung der Profilerstellungsausführung vor und erkennt Leistungsprobleme.  Wenn ein Problem gefunden wurde, wird im Fenster **Fehlerliste** eine Warnung angezeigt.  Klicken Sie zum Öffnen des Fensters **Fehlerliste** im Menü **Ansicht** auf **Fehlerliste**.  
-  
-    -   Zum Anzeigen der Funktion, die eine Warnung ausgelöst hat, doppelklicken Sie in der Ansicht **Funktionsdetails** auf die Warnung.  
-  
-    -   Wenn Sie ausführliche Informationen zur Warnung anzeigen möchten, klicken mit der rechten Maustaste auf den Fehler, und klicken Sie dann auf **Hilfe zu Fehlern anzeigen**  
-  
-##  <a name="Step3"></a> Schritt 3: Überarbeiten des Codes und erneutes Ausführen einer Sitzung  
- Nachdem Sie Funktionen mit Optimierungsbedarf gefunden und optimiert haben, können Sie die Profilerstellung wiederholen und die Daten vergleichen, um zu ermitteln, wie sich die vorgenommenen Änderungen auf die Anwendungsleistung ausgewirkt haben.  
-  
-#### So können Sie den Code überarbeiten und den Profiler erneut ausführen  
-  
-1.  Ändern Sie den Code.  
-  
-2.  Klicken Sie zum Öffnen des Leistungs\-Explorers im Menü **Ansicht** auf **Weitere Fenster** und anschließend auf **Leistungs\-Explorer**.  
-  
-3.  Klicken Sie im Leistungs\-Explorer mit der rechten Maustaste auf die Sitzung, die Sie erneut ausführen möchten, und klicken Sie anschließend auf **Mit Profilerstellung starten**.  
-  
-4.  Nach dem erneuten Ausführen der Sitzung wird dem Ordner **Berichte** für die Sitzung im Leistungs\-Explorer eine weitere Datendatei hinzugefügt.  Wählen Sie sowohl die ursprünglichen als auch die neuen Profilerstellungsdaten aus, klicken Sie mit der rechten Maustaste auf die Auswahl, und klicken Sie anschließend auf **Leistungsberichte vergleichen**.  
-  
-     Ein neues Berichtsfenster mit den Ergebnissen des Vergleichs wird geöffnet.  Weitere Informationen zum Verwenden der Vergleichsansicht finden Sie unter [Gewusst wie: Vergleichen der Profilerdatendateien](../profiling/how-to-compare-performance-data-files.md).  
-  
-## Siehe auch  
- [Verwenden von Profilerstellungstools](../profiling/performance-explorer.md)   
- [Erste Schritte](../profiling/getting-started-with-performance-tools.md)   
- [Übersichten](../profiling/overviews-performance-tools.md)
+## <a name="see-also"></a>Siehe auch  
+ [[Speicherauslastung](../profiling/memory-usage.md)
+</ph> [CPU-Auslastung](../profiling/cpu-usage.md)
+<ph id=" [Profilerstellungstools](../profiling/profiling-tools.md)

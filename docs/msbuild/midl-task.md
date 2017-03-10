@@ -1,294 +1,309 @@
 ---
-title: "MIDL-Aufgabe | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCMidlTool.ServerStubFile"
-  - "VC.Project.VCMidlTool.ApplicationConfigurationMode"
-  - "VC.Project.VCMidlTool.GenerateServerFiles"
-  - "VC.Project.VCMidlTool.ClientStubFile"
-  - "VC.Project.VCMidlTool.LocaleID"
-  - "VC.Project.VCMidlTool.GenerateClientFiles"
-  - "VC.Project.VCMidlTool.SuppressCompilerWarnings"
-  - "VC.Project.VCMidlTool.TypeLibFormat"
-  - "vc.task.midl"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "MSBuild (Visual C++) MIDL-Aufgabe"
-  - "MIDL-Aufgabe (MSBuild [Visual C++])"
+title: MIDL-Aufgabe | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VC.Project.VCMidlTool.ServerStubFile
+- VC.Project.VCMidlTool.ApplicationConfigurationMode
+- VC.Project.VCMidlTool.GenerateServerFiles
+- VC.Project.VCMidlTool.ClientStubFile
+- VC.Project.VCMidlTool.LocaleID
+- VC.Project.VCMidlTool.GenerateClientFiles
+- VC.Project.VCMidlTool.SuppressCompilerWarnings
+- VC.Project.VCMidlTool.TypeLibFormat
+- vc.task.midl
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- MSBuild (Visual C++), MIDL task
+- MIDL task (MSBuild (Visual C++))
 ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
 caps.latest.revision: 8
-caps.handback.revision: 8
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# MIDL-Aufgabe
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
+ms.openlocfilehash: b3d922c4aee9136a35e1a2c9669f7cf3380d7609
+ms.lasthandoff: 02/22/2017
 
-Umschließt das Compilertool von Microsoft Interface Definition Language (MIDL) midl.exe. Weitere Informationen finden Sie unter "MIDL Command-Line Reference" auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website.  
+---
+# <a name="midl-task"></a>MIDL-Aufgabe
+Umschließt das MIDL (Microsoft Interface Definition Language)-Compilertool („midl.exe“). Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“.  
   
 ## <a name="parameters"></a>Parameter  
- Die folgende Tabelle beschreibt die Parameter der **MIDL** Aufgabe. Die meisten Aufgabenparameter und einige Sätze von Parametern entsprechen einer Befehlszeilenoption.  
+ In der folgenden Tabelle werden die Parameter der **MIDL**-Aufgabe beschrieben. Die meisten Aufgabenparameter und einige andere Parameter entsprechen einer Befehlszeilenoption.  
   
 -   **AdditionalIncludeDirectories**  
   
-     Optionale **String []** Parameter.  
+     Optionaler **String[]**-Parameter.  
   
-     Fügt ein Verzeichnis zur Liste der Verzeichnisse, die für importierte IDL-Dateien, eingeschlossene Headerdateien und Anwendungskonfigurationsdateien (ACF) durchsucht werden.  
+     Fügt ein Verzeichnis zur Liste der Verzeichnisse hinzu, die auf importierte IDL-Dateien durchsucht werden, einschließlich Headerdateien und Anwendungskonfigurationsdateien (ACF).  
   
-     Weitere Informationen finden Sie unter der **/i** in "MIDL Command-Line Reference" auf die option der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/I**.  
   
 -   **AdditionalOptions**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Eine Liste der Befehlszeilenoptionen. Z. B. **"***option1/option2 /option#*". Verwenden Sie diesen Parameter, um Befehlszeilenoptionen anzugeben, die nicht von einem beliebigen anderen MIDL-Aufgabenparameter dargestellt werden.  
+     Eine Liste der Befehlszeilenoptionen. Zum Beispiel **„***/option1 /option2 /option#*“. Verwenden Sie diesen Parameter, um Befehlszeilenoptionen anzugeben, die nicht durch einen anderen MIDL-Aufgabenparameter repräsentiert werden.  
   
-     Weitere Informationen finden Sie unter "MIDL Command-Line Reference" auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“.  
   
 -   **ApplicationConfigurationMode**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
-     Wenn `true`, können einige ACF-Schlüsselwörter in der IDL-Datei verwendet.  
+     Wenn `true`, dann können Sie einige ACF-Schlüsselwörter in der IDL-Datei benutzen.  
   
-     Weitere Informationen finden Sie unter der **/app_config** in "MIDL Command-Line Reference" auf die option der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/app_config**.  
   
 -   **ClientStubFile**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Gibt den Namen der Client-Stub-Datei für eine RPC-Schnittstelle.  
+     Gibt den Namen der Client-Stub-Datei für eine RPC-Schnittstelle an.  
   
-     Weitere Informationen finden Sie unter der **/cstub** in "MIDL Command-Line Reference" auf die option der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website. Siehe auch die **ServerStubFile** -Parameter in dieser Tabelle.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/cstub**. Siehe auch den Parameter **ServerStubFile** in dieser Tabelle.  
   
 -   **CPreprocessOptions**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Gibt Optionen an, an die C/C++-Präprozessor übergeben. Geben Sie eine durch Leerzeichen getrennte Liste der Präprozessor Optionen.  
+     Gibt Optionen für die Übergabe an den C++-Präprozessor an. Geben eine durch Leerzeichen getrennte Liste mit Präprozessoroptionen an.  
   
-     Weitere Informationen finden Sie unter der **/cpp_opt** in "MIDL Command-Line Reference" auf die option der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/cpp_opt**.  
   
 -   **DefaultCharType**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Gibt den Standardtyp für Zeichen, den der C#-Compiler zum Kompilieren des generierten Codes verwenden.  
+     Gibt den standardmäßigen Zeichentyp an, den der C-Compiler verwendet, um den generierten Code zu kompilieren.  
   
      Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
     |Wert|Befehlszeilenoption|  
     |-----------|--------------------------|  
-    |**Signiert**|**/Char signiert**|  
-    |**Ohne Vorzeichen**|**/Char ohne Vorzeichen**|  
-    |**ASCII**|**/Char ascii7**|  
+    |**Signed**|**/char signed**|  
+    |**Unsigned**|**/char unsigned**|  
+    |**Ascii**|**/char ascii7**|  
   
-     Weitere Informationen finden Sie unter der **/char** in "MIDL Command-Line Reference" auf die option der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/char**.  
   
 -   **DllDataFileName**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Gibt den Dateinamen für die generierte *Dlldata* -Datei für eine Proxy-DLL.  
+     Gibt den Dateinamen für die generierte *dlldata*-Datei für eine Proxy-DLL an.  
   
-     Weitere Informationen finden Sie unter der **/dlldata** in "MIDL Command-Line Reference" auf die option der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/dlldata**.  
   
 -   **EnableErrorChecks**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Gibt den Typ des Fehlers überprüfen, dass die generierten Stubs zur Laufzeit ausgeführt werden.  
+     Gibt den Fehlertyp an, und überprüft, dass die generierten Stubs in der Laufzeit ausgeführt werden.  
   
      Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
     |Wert|Befehlszeilenoption|  
     |-----------|--------------------------|  
-    |**Keine**|**/ Error none**|  
-    |**EnableCustom**|**/ Error**|  
-    |**Alle**|**alle/Error**|  
+    |**Keine**|**/error none**|  
+    |**EnableCustom**|**/error**|  
+    |**All**|**/error all**|  
   
-     Weitere Informationen finden Sie unter der **/Error** in "MIDL Command-Line Reference" auf die option der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/error**.  
   
 -   **ErrorCheckAllocations**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher**-Parameter.  
   
-     Wenn `true`, überprüfen Sie Out-of-Memory-Fehler.  
+     Wenn `true`, stellen Sie sicher, das keine Fehler aufgrund von unzureichendem Arbeitsspeicher aufgetreten sind.  
   
-     Weitere Informationen finden Sie unter der **/Error Zuweisung** in "MIDL Command-Line Reference" auf die option der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/error allocation**.  
   
 -   **ErrorCheckBounds**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher**-Parameter.  
   
-     Wenn `true`, wird die Größe konform veränderlicher und veränderlicher Arrays mit der Übertragungslängenangabe.  
+     Wenn `true`, dann wird die Größe der konform-variierenden und variierenden Arrays mit der Übertragungslängenspezifikation abgeglichen.  
   
-     Weitere Informationen finden Sie unter der **/error Bounds_check** in "MIDL Command-Line Reference" auf die option der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/error bounds_check**.  
   
 -   **ErrorCheckEnumRange**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher**-Parameter.  
   
-     Wenn `true`, überprüft, ob Enumerationswerte im zulässigen Bereich sind.  
+     Wenn `true`, wird überprüft, ob sich die Enumerationswerte im zulässigen Bereich befinden.  
   
-     Weitere Informationen finden Sie unter der **/Error Enum** Option in der Befehlszeilenhilfe (**/?**) für midl.exe.  
+     Weitere Informationen finden Sie auf der Seite „Befehlszeilenhilfe“ (**/?**) für midl.exe unter der Option **error-Enumeration**.  
   
 -   **ErrorCheckRefPointers**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher**-Parameter.  
   
-     Wenn `true`, überprüfen Sie, die keine null-Verweis-Zeiger auf Client-Stub übergeben werden.  
+     Wenn `true`, stellen Sie sicher, dass keine NULL-Verweiszeiger an die Client-Stubs übergeben werden.  
   
-     Weitere Informationen finden Sie unter der **/Error Ref** in "MIDL Command-Line Reference" auf die option der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/error ref**.  
   
 -   **ErrorCheckStubData**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher**-Parameter.  
   
-     Wenn `true`, generiert einen Stub, der Marshalling rückgängig machende Ausnahmen auf der Serverseite abfängt und an den Client weitergegeben.  
+     Wenn `true`, wird ein Stub generiert, das Unmarshalling-Ausnahmen auf Serverseite erkennt, und überträgt sie zurück an den Client.  
   
-     Weitere Informationen finden Sie unter der **/error Stub_data** in "MIDL Command-Line Reference" auf die option der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/error stub_data**.  
   
 -   **GenerateClientFiles**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Gibt an, ob der Compiler clientseitige C-Quelldateien für eine RPC-Schnittstelle generiert.  
+     Legt fest, ob der Compiler clientseitige C-Quelldateien für eine RPC-Schnittstelle generiert.  
   
      Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
     |Wert|Befehlszeilenoption|  
     |-----------|--------------------------|  
-    |**Keine**|**/ Client keine**|  
-    |**Stub**|**/ Client-stub**|  
+    |**Keine**|**/client none**|  
+    |**Stub**|**/client stub**|  
   
-     Weitere Informationen finden Sie unter der **/Client** in "MIDL Command-Line Reference" auf die option der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/client**.  
   
 -   **GenerateServerFiles**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Gibt an, ob der Compiler serverseitige C-Quelldateien für eine RPC-Schnittstelle generiert.  
+     Legt fest, ob der Compiler serverseitige C-Quelldateien für eine RPC-Schnittstelle generiert.  
   
      Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
     |Wert|Befehlszeilenoption|  
     |-----------|--------------------------|  
-    |**Keine**|**/ Server keine**|  
-    |**Stub**|**/ Server-stub**|  
+    |**Keine**|**/server none**|  
+    |**Stub**|**/server stub**|  
   
-     Weitere Informationen finden Sie unter der **/Server** in "MIDL Command-Line Reference" auf die option der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/server**.  
   
 -   **GenerateStublessProxies**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher**-Parameter.  
   
-     Wenn `true`, vollständig interpretierte Stubs zusammen mit Proxys ohne Stubs für Schnittstellen generiert.  
+     Wenn `true`, werden vollständig interpretierte Stubs mit Proxys ohne Stubs für Objektschnittstellen generiert.  
   
-     Weitere Informationen finden Sie unter der **/Oicf** in "MIDL Command-Line Reference" auf die option der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/Oicf**.  
   
 -   **GenerateTypeLibrary**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher**-Parameter.  
   
-     Wenn `true`, eine Typbibliotheksdatei (.tlb) wird nicht generiert.  
+     Wenn `true`, dann wird keine Typbibliotheksdatei (.tlb) generiert.  
   
-     Weitere Informationen finden Sie unter der **Erstellen/notlb** in "MIDL Command-Line Reference" auf die option der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/notlb**.  
   
 -   **HeaderFileName**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Gibt den Namen der generierten Headerdatei.  
+     Gibt den Namen der generierten Headerdatei an.  
   
-     Weitere Informationen finden Sie unter der **/h** oder **/Header** in "MIDL Command-Line Reference" auf die option der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter den Optionen **/h** und **/header**.  
   
 -   **IgnoreStandardIncludePath**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher**-Parameter.  
   
-     Wenn `true`, die MIDL-Aufgabe durchsucht nur die mit angegebenen Verzeichnisse der **AdditionalIncludeDirectories** wechseln, und das aktuelle Verzeichnis und die von der INCLUDE-Umgebungsvariablen angegebenen Verzeichnisse werden ignoriert.  
+     Wenn `true`, dann sucht die MIDL-Aufgabe nur in den angegebenen Verzeichnissen mithilfe des Schalters **AdditonalIncludeDirectories**, und ignoriert das aktuelle Verzeichnis und die durch die Umgebungsvariable „INCLUDE“ angegebenen Verzeichnisse.  
   
-     Weitere Informationen finden Sie unter der **/no_def_idir** in "MIDL Command-Line Reference" auf die option der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/no_def_idir**.  
   
 -   **InterfaceIdentifierFileName**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Gibt den Namen der *Bezeichner Schnittstellendatei* für eine COM-Schnittstelle. Dies überschreibt den Standardnamen durch Hinzufügen von "_i.c" auf den Namen der IDL-Datei abgerufen.  
+     Gibt den Namen für die *Schnittstellen-Bezeichnerdatei* für die COM-Schnittstelle an. Dies setzt den Standardnamen außer Kraft, der durch ein Anhängen von „_i.c“ an den IDL-Dateinamen entsteht.  
   
-     Weitere Informationen finden Sie unter der **/iid** in "MIDL Command-Line Reference" auf die option der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/iid**.  
   
--   **Gebietsschema-ID**  
+-   **LocaleID**  
   
-     Optionale **Int** Parameter.  
+     Optionaler **int**-Parameter.  
   
-     Gibt die *Gebietsschemabezeichner* ermöglicht die Verwendung internationaler Zeichen in Eingabedateien, Dateinamen und Verzeichnispfaden. Geben Sie einen dezimalen Gebietsschemabezeichner.  
+     Gibt den *Gebietsschemabezeichner* an, der den Gebrauch von internationalen Zeichen in der Eingabedatei, dem Dateinamen und den Verzeichnispfaden ermöglicht. Geben Sie einen dezimalen Gebietsschemabezeichner an.  
   
-     Weitere Informationen finden Sie unter der **/LCID** in "MIDL Command-Line Reference" auf die option der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website. Siehe auch "Locale IDs Assigned by Microsoft" in der MSDN LIBRARY.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/lcid**. Siehe auch „Microsoft-Zuweisungen der Gebietsschema-IDs“ auf MSDN.  
   
 -   **MkTypLibCompatible**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher**-Parameter.  
   
-     Wenn `true`, erfordert das Format der Eingabedatei mit mktyplib.exe, Version 2.03 kompatibel sein.  
+     Wenn `true`, dann muss das Format der Eingabedatei mit mktyplib.exe Version 2.03 kompatibel sein.  
   
-     Weitere Informationen finden Sie unter der **/mktyplib203** in "MIDL Command-Line Reference" auf die option der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website. Siehe auch "ODL File Syntax" auf der MSDN-Website.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/mktyplib203**. Siehe auch „Syntax der ODL-Datei“ auf MSDN.  
   
 -   **OutputDirectory**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Gibt das Standardverzeichnis, in dem die MIDL-Aufgabe Ausgabedateien speichern.  
+     Gibt das Standardverzeichnis an, in dem die MIDL-Aufgabe Ausgabedateien schreibt.  
   
-     Weitere Informationen finden Sie unter der **/out** in "MIDL Command-Line Reference" auf die option der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/out**.  
   
 -   **PreprocessorDefinitions**  
   
-     Optionale **String []** Parameter.  
+     Optionaler **String[]**-Parameter.  
   
-     Gibt ein oder mehrere *definiert*; d. h. einen Namen und einen optionalen Wert an den C-Präprozessor wie übergeben werden bei einer `#define` Richtlinie. Das Format jeder definieren ist, *Name [= Value]*.  
+     Gibt einen oder mehrere *defines* an; d.h., einen Namen oder einen optionalen Wert, der an einen C-Präprozessor wie von einer `#define`-Direktive weitergegeben werden soll. Jedes „define“ ist folgendermaßen aufgebaut: *name[=value]*.  
   
-     Weitere Informationen finden Sie unter der **/d** in "MIDL Command-Line Reference" auf die option der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website. Siehe auch die **UndefinePreprocessorDefinitions** -Parameter in dieser Tabelle.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/D**. Siehe auch die Parameter **UndefinePreprocessorDefinitions** in dieser Tabelle.  
   
 -   **ProxyFileName**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Gibt den Namen der Schnittstellenproxydatei für eine COM-Schnittstelle.  
+     Gibt den Namen für die Schnittstellen-Proxydatei für die COM-Schnittstelle an.  
   
-     Weitere Informationen finden Sie unter der **/Proxy** in "MIDL Command-Line Reference" auf die option der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/proxy**.  
   
 -   **RedirectOutputAndErrors**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Leitet die Ausgabe z. B. Fehlermeldungen und Warnungen, aus dem Standardausgabestream in der angegebenen Datei.  
+     Leitet Ausgaben, wie z.B. Fehlermeldungen und Warnungen, aus der Standardausgabe in die angegebenen Dateien weiter.  
   
-     Weitere Informationen finden Sie unter der **/o** in "MIDL Command-Line Reference" auf die option der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/o**.  
   
 -   **ServerStubFile**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Gibt den Namen der Server-Stub-Datei für eine RPC-Schnittstelle.  
+     Gibt den Namen der Server-Stub-Datei für eine RPC-Schnittstelle an.  
   
-     Weitere Informationen finden Sie unter der **/sstub** in "MIDL Command-Line Reference" auf die option der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website. Siehe auch die **ClientStubFile** -Parameter in dieser Tabelle.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/sstub**. Siehe auch den Parameter **ClientStubFile** in dieser Tabelle.  
   
--   **Datenquelle**  
+-   **Source**  
   
      Erforderlicher `ITaskItem[]`-Parameter.  
   
@@ -296,29 +311,29 @@ Umschließt das Compilertool von Microsoft Interface Definition Language (MIDL) 
   
 -   **StructMemberAlignment**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Gibt die Ausrichtung (*packen Ebene*) der Strukturen im Zielsystem.  
+     Gibt die Zuweisung (*Komprimierungsebene*) der Strukturen im Zielsystem an.  
   
      Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
     |Wert|Befehlszeilenoption|  
     |-----------|--------------------------|  
-    |**NotSet**|*\< none>*|  
-    |**1**|**/ Zp1**|  
-    |**2**|**/ Zp2**|  
-    |**4**|**/ Zp4 Leerräume**|  
-    |**8**|**/ Zp8**|  
+    |**NotSet**|*\<none>*|  
+    |**1**|**/Zp1**|  
+    |**2**|**/Zp2**|  
+    |**4**|**/Zp4**|  
+    |**8**|**/Zp8**|  
   
-     Weitere Informationen finden Sie unter der **/Zp** in "MIDL Command-Line Reference" auf die option der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website. Die **/Zp** Option entspricht der **Pack** Option und das ältere **/ align** Option.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/Zp**. Die Option **/Zp** ist äquivalent zu der Option **/pack** und der älteren Option **/align**.  
   
 -   **SuppressCompilerWarnings**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher**-Parameter.  
   
-     Wenn `true`, unterdrückt die Warnung Nachrichten von der MIDL-Aufgabe.  
+     Wenn `true`, dann werden Warnmeldungen aus der MIDL-Aufgabe unterdrückt.  
   
-     Weitere Informationen finden Sie unter der **/no_warn** in "MIDL Command-Line Reference" auf die option der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/no_warn**.  
   
 -   **SuppressStartupBanner**  
   
@@ -326,34 +341,34 @@ Umschließt das Compilertool von Microsoft Interface Definition Language (MIDL) 
   
      Bei `true` wird die Anzeige der Copyright- und Versionsnummernmeldung bei Aufgabenstart verhindert.  
   
-     Weitere Informationen finden Sie unter der **/nologo** in "MIDL Command-Line Reference" auf die option der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/nologo**.  
   
 -   **TargetEnvironment**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Gibt die Umgebung, in der die Anwendung ausgeführt wird.  
+     Gibt die Umgebung an, in der die Anwendung ausgeführt wird.  
   
      Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
     |Wert|Befehlszeilenoption|  
     |-----------|--------------------------|  
-    |**NotSet**|*\< none>*|  
-    |**Win32**|**win32/env**|  
-    |**Itanium**|**/ env ia64**|  
-    |**X64**|**/ env x64**|  
+    |**NotSet**|*\<none>*|  
+    |**Win32**|**/env win32**|  
+    |**Itanium**|**/env ia64**|  
+    |**X64**|**/env x64**|  
   
-     Weitere Informationen finden Sie unter der **/env** in "MIDL Command-Line Reference" auf die option der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/env**.  
   
 -   **TrackerLogDirectory**  
   
      Optionaler `String` -Parameter.  
   
-     Gibt das temporäre Verzeichnis, in dem Nachverfolgungsprotokolle für diese Aufgabe gespeichert werden.  
+     Gibt das Zwischenverzeichnis an, in dem die Nachverfolgungsprotokolle für diese Aufgabe gespeichert sind.  
   
 -   **TypeLibFormat**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
      Gibt das Format der Typbibliotheksdatei an.  
   
@@ -364,61 +379,61 @@ Umschließt das Compilertool von Microsoft Interface Definition Language (MIDL) 
     |**NewFormat**|**/newtlb**|  
     |**OldFormat**|**/oldtlb**|  
   
-     Weitere Informationen finden Sie unter der **/newtlb** und **/oldtlb** Optionen in "MIDL Command-Line Reference" auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter den Optionen **/newtlb** und **/oldtlb**.  
   
 -   **TypeLibraryName**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
      Gibt den Namen der Typbibliotheksdatei an.  
   
-     Weitere Informationen finden Sie unter der **/tlb** in "MIDL Command-Line Reference" auf die option der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/tlb**.  
   
 -   **UndefinePreprocessorDefinitions**  
   
-     Optionale **String []** Parameter.  
+     Optionaler **String[]**-Parameter.  
   
-     Entfernt jede vorherige Definition eines Namens durch Übergeben des Namens an dem C-Präprozessor wie bei einer `#undefine` Richtlinie. Geben Sie mindestens einen zuvor definierte Namen.  
+     Entfernt jede vorherige Definition eines Namens, indem er den Namen wie eine `#undefine`-Direktive an den C-Präprozessor weitergibt. Geben Sie eine oder mehrere vorher definierte Namen ein.  
   
-     Weitere Informationen finden Sie unter der **/u** in "MIDL Command-Line Reference" auf die option der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website. Siehe auch die **PreprocessorDefinitions** -Parameter in dieser Tabelle.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/U**. Siehe auch die Parameter **PreprocessorDefinitions** in dieser Tabelle.  
   
 -   **ValidateAllParameters**  
   
      Optionaler `Boolean` -Parameter.  
   
-     Wenn `true`, zusätzliche Überprüfung Informationen generiert, die zum Ausführen der integritätsprüfungen zur Laufzeit verwendet wird. Wenn `false`, die Überprüfung von Fehlern Informationen werden nicht generiert.  
+     Wenn `true`, dann werden zusätzliche Dateifehler-Überprüfungsinformationen generiert, die für Integritätsprüfungen in der Laufzeit verwendet werden. Wenn `false`, dann werden keine Dateifehler-Überprüfungsinformationen generiert.  
   
-     Weitere Informationen finden Sie unter der **/ robust** und **/no_robust** Optionen in "MIDL Command-Line Reference" auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter den Optionen **/robust** und **/no_robist**.  
   
 -   **WarnAsError**  
   
      Optionaler `Boolean` -Parameter.  
   
-     Wenn `true`, alle Warnungen als Fehler behandelt.  
+     Wenn `true`, werden alle Warnungen als Fehler behandelt.  
   
-     Wenn die **WarningLevel** MIDL-Aufgabenparamenter nicht angegeben ist, Warnungen auf der Standardebene, Ebene 1 als Fehler behandelt werden.  
+     Wenn der MIDL-Aufgabenparameter **WarningLevel** nicht angegeben ist, werden Warnungen auf Standardlevel und auf Level 1 wie Fehler behandelt.  
   
-     Weitere Informationen finden Sie unter der **/WX** Optionen in "MIDL Command-Line Reference" auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website. Siehe auch die **WarningLevel** -Parameter in dieser Tabelle.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/WX**. Siehe auch den Parameter **WarningLevel** in dieser Tabelle.  
   
 -   **WarningLevel**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Gibt den Schweregrad (*Warnstufe*) von Warnungen ausgegeben. Für einen Wert von 0 wird keine Warnung ausgegeben. Andernfalls wird eine Warnung ausgegeben, wenn die Warnstufe numerisch ist kleiner oder gleich dem angegebenen Wert.  
+     Gibt den Schweregrad (*Warnstufe*) von auszugebenden Warnungen an. Für den Wert 0 wird keine Warnung ausgegeben. Andernfalls wird eine Warnung ausgegeben, wenn ihre Warnstufe numerisch kleiner als oder gleich der angegebene Wert ist.  
   
      Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
     |Wert|Befehlszeilenoption|  
     |-----------|--------------------------|  
-    |**0**|**/ W0**|  
-    |**1**|**/ W1**|  
-    |**2**|**/ W2**|  
-    |**3**|**/ W3**|  
-    |**4**|**/ W4**|  
+    |**0**|**/W0**|  
+    |**1**|**/W1**|  
+    |**2**|**/W2**|  
+    |**3**|**/W3**|  
+    |**4**|**/W4**|  
   
-     Weitere Informationen finden Sie unter der **/w** in "MIDL Command-Line Reference" auf die option der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website. Siehe auch die **WarnAsError** -Parameter in dieser Tabelle.  
+     Weitere Informationen finden Sie auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website unter „MIDL-Befehlszeilenreferenz“ unter der Option **/W**. Siehe auch den Parameter **WarningLevel** in dieser Tabelle.  
   
 ## <a name="remarks"></a>Hinweise  
   
 ## <a name="see-also"></a>Siehe auch  
- [Referenz zu Aufgaben](../msbuild/msbuild-task-reference.md)
+ [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)

@@ -1,55 +1,70 @@
 ---
-title: "MSBuild-Aufgaben | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Aufgaben"
-  - "MSBuild-Aufgaben"
+title: MSBuild-Aufgaben | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- tasks
+- MSBuild, tasks
 ms.assetid: 5d3cc4a7-e5db-4f73-b707-8b6882fddcf8
 caps.latest.revision: 18
-caps.handback.revision: 18
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# MSBuild-Aufgaben
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 3ba7680d46345f2b49019659c715cfb418933d39
+ms.openlocfilehash: cde7cf37c372caff4faa9ec88ecc5958112f0c6f
+ms.lasthandoff: 02/22/2017
 
-Eine Buildplattform benötigt die Fähigkeit, eine beliebige Anzahl von Aktionen während des Buildprozesses auszuführen. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] verwendet *Aufgaben* zum Ausführen dieser Aktionen. Eine Aufgabe ist eine Einheit von ausführbarem Code verwendet werden, indem [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] atomare Vorgänge ausführen.  
+---
+# <a name="msbuild-tasks"></a>MSBuild-Aufgaben
+Eine Buildplattform muss während des Buildprozesses eine beliebige Anzahl von Aktionen auszuführen können. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] verwendet dazu *Aufgaben*. Eine Aufgabe ist eine Einheit von ausführbarem Code, der von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] verwendet wird, um atomische Buildoperationen auszuführen.  
   
-## <a name="task-logic"></a>Task-Logik  
- Die [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] XML-Projektdateiformat kann nicht vollständig ausgeführt werden Vorgänge für eine eigene, sodass die Aufgabenlogik müssen, außerhalb der Projektdatei implementiert werden erstellen.  
+## <a name="task-logic"></a>Aufgabenlogik  
+ Das XML-Projektdateiformat von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] kann Buildoperationen selbst nicht vollständig ausführen. Daher muss die Aufgabenlogik außerhalb der Projektdatei implementiert werden.  
   
- Die Ausführungslogik einer Aufgabe wird als eine Klasse von .NET, implementiert implementiert die <xref:Microsoft.Build.Framework.ITask> -Schnittstelle, definiert in der <xref:Microsoft.Build.Framework> Namespace.  
+ Die Ausführungslogik einer Aufgabe wird als eine .NET-Klasse implementiert, die die im Namespace <xref:Microsoft.Build.Framework> definierte Schnittstelle <xref:Microsoft.Build.Framework.ITask> implementiert.  
   
- Die Task-Klasse definiert auch die verfügbaren Eingabe- und Parameter an die Aufgabe in der Projektdatei. Alle konfigurierbare öffentliche nicht statischen und nicht abstrakten Eigenschaften, die von der Aufgabenklasse verfügbar gemacht werden können in der Projektdatei zugegriffen werden, durch die Platzierung eines entsprechenden Attributs mit demselben Namen auf die [Task](../msbuild/task-element-msbuild.md) Element.  
+ Die Aufgabenklasse definiert darüber hinaus die für eine Aufgabe in der Projektdatei verfügbaren Eingabe- und Ausgabeparameter. Auf alle konfigurierbaren öffentlichen nicht statischen und nicht abstrakten Eigenschaften, die von der Aufgabenklasse verfügbar gemacht werden, kann in der Projektdatei zugegriffen werden, indem ein entsprechendes Attribut mit demselben Namen auf dem [Aufgabe](../msbuild/task-element-msbuild.md)-Element platziert wird.  
   
- Sie können eine eigene Aufgabe schreiben, erstellen Sie eine verwaltete Klasse, die implementiert die <xref:Microsoft.Build.Framework.ITask> Schnittstelle. Weitere Informationen finden Sie unter [Schreiben von Aufgaben](../msbuild/task-writing.md).  
+ Sie können eine eigene Aufgabe schreiben, indem Sie eine verwaltete Klasse erstellen, die die Schnittstelle <xref:Microsoft.Build.Framework.ITask> implementiert. Weitere Informationen finden Sie unter [Task Writing](../msbuild/task-writing.md) (Schreiben von Aufgaben).  
   
 ## <a name="executing-a-task-from-a-project-file"></a>Ausführen einer Aufgabe aus einer Projektdatei  
- Vor dem Ausführen einer Aufgabe in der Projektdatei, müssen Sie zuerst den Typ in der Assembly, die die Aufgabe für den Aufgabennamen mit implementiert Zuordnen der [UsingTask](../msbuild/usingtask-element-msbuild.md) Element. Auf diese Weise können [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] erkennen, wo sich die Ausführungslogik der Aufgabe beim Auffinden in der Projektdatei.  
+ Vor dem Ausführen einer Aufgabe in der Projektdatei müssen Sie zuerst den Typ in der Assembly zuordnen, der die Aufgabe mithilfe des Elements [UsingTask](../msbuild/usingtask-element-msbuild.md) in den Aufgabennamen implementiert. Auf diese Weise kann [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] erkennen, wo sich die Ausführungslogik der Aufgabe befindet, wenn es sie in der Projektdatei findet.  
   
- Zum Ausführen einer Aufgabe in einem [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Projektdatei, erstellen Sie ein Element mit dem Namen der Aufgabe als untergeordnetes Element des ein `Target` Element. Wenn eine Aufgabe Parameter akzeptiert, werden diese als Attribute des Elements übergeben.  
+ Erstellen Sie ein Element mit dem Namen der Aufgabe als untergeordnetes Element eines `Target`-Elements, um eine Aufgabe in einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projektdatei auszuführen. Wenn eine Aufgabe Parameter akzeptiert, werden diese als Attribute des Elements übergeben.  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Artikel können Listen und Eigenschaften als Parameter verwendet werden. Z. B. im folgenden code wird die `MakeDir` Aufgabe und legt den Wert der die `Directories` Eigenschaft der `MakeDir` Objekt gleich dem Wert von der `BuildDir` Eigenschaft deklariert wird, im vorherigen Beispiel.  
+ Als Parameter können Eigenschaften und Elementlisten von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] verwendet werden. Der folgende Code erstellt z.B. die `MakeDir`-Aufgabe und legt für die `Directories`-Eigenschaft des `MakeDir`-Objekts denselben Wert fest, der im vorherigen Beispiel auch für die `BuildDir`-Eigenschaft deklariert wurde.  
   
-```  
+```xml  
 <Target Name="MakeBuildDirectory">  
     <MakeDir  
         Directories="$(BuildDir)" />  
 </Target>  
 ```  
   
- Aufgaben können Informationen auch aus der Projektdatei zurückgeben, die Elemente oder Eigenschaften für die spätere Verwendung gespeichert werden können. Z. B. im folgenden code wird die `Copy` Aufgabe und speichert die Informationen aus der `CopiedFiles` Ausgabeeigenschaft in der `SuccessfullyCopiedFiles` Liste.  
+ Aufgaben können zudem Informationen an die Projektdatei zurückgeben, die für die spätere Verwendung in Elementen oder Eigenschaften gespeichert werden können. Der folgende Code ruft z.B. die `Copy`-Aufgabe auf und speichert die Informationen aus der `CopiedFiles`-Ausgabeeigenschaft in der `SuccessfullyCopiedFiles`-Elementliste.  
   
-```  
+```xml  
 <Target Name="CopyFiles">  
     <Copy  
         SourceFiles="@(MySourceFiles)"  
@@ -61,14 +76,14 @@ Eine Buildplattform benötigt die Fähigkeit, eine beliebige Anzahl von Aktionen
 </Target>  
 ```  
   
-## <a name="included-tasks"></a>Bereits enthaltene Aufgaben  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] wird mit zahlreichen Aufgaben, wie z. B. [Kopie](../msbuild/copy-task.md), Kopieren von Dateien, [MakeDir](../msbuild/makedir-task.md), Erstellen von Verzeichnissen und [Csc](../msbuild/csc-task.md), welche kompiliert [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Quellcodedateien. Eine vollständige Liste der verfügbaren Aufgaben sowie Nutzungsinformationen finden Sie unter [Aufgabenreferenz](../msbuild/msbuild-task-reference.md).  
+## <a name="included-tasks"></a>Verfügbare Aufgaben  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] bietet zahlreiche Aufgaben wie z.B. [Copy](../msbuild/copy-task.md) zum Kopieren von Dateien, [MakeDir](../msbuild/makedir-task.md) zum Erstellen von Verzeichnissen und [Csc](../msbuild/csc-task.md) zum Kompilieren von [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Quellcodedateien. Eine Liste mit allen verfügbaren Aufgaben sowie Informationen zu ihrer jeweiligen Verwendung finden Sie unter [Task Reference](../msbuild/msbuild-task-reference.md) (MSBuild-Aufgabenreferenz).  
   
 ## <a name="overridden-tasks"></a>Überschriebene Aufgaben  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Sucht nach Aufgaben an verschiedenen Orten. Der erste Speicherort ist in Dateien mit der Erweiterung. Außerkraftsetzen in den .NET Framework-Verzeichnissen gespeichert. Aufgaben in diesen Dateien überschreiben alle anderen Aufgaben mit den gleichen Namen, einschließlich Aufgaben in der Projektdatei. Der zweite Speicherort ist in Dateien mit der Erweiterung. Aufgaben in den .NET Framework-Verzeichnissen. Wenn der Task nicht in einem dieser beiden Speicherorte gefunden wird, wird die Aufgabe in der Projektdatei verwendet.  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] sucht in mehreren Speicherorten nach Aufgaben. Beim ersten Speicherort handelt es sich um Dateien mit der Erweiterung .OverrideTasks, die in den .NET Framework-Verzeichnissen gespeichert sind. Aufgaben in diesen Dateien überschreiben alle anderen Aufgaben mit denselben Namen, einschließlich Aufgaben in der Projektdatei. Beim zweiten Speicherort handelt es sich um Dateien mit der Erweiterung .Tasks, die in den .NET Framework-Verzeichnissen gespeichert sind. Wird die Aufgabe in keinem dieser beiden Speicherorte gefunden, so wird die Aufgabe in der Projektdatei verwendet.  
   
 ## <a name="see-also"></a>Siehe auch  
- [MSBuild-Konzepte](../msbuild/msbuild-concepts.md)   
- [MSBuild](../msbuild/msbuild1.md)   
- [Schreiben von Aufgaben](../msbuild/task-writing.md)   
- [Inline-Tasks](../msbuild/msbuild-inline-tasks.md)
+ [MSBuild Concepts](../msbuild/msbuild-concepts.md)  (MSBuild-Grundlagen)  
+ [MSBuild](../msbuild/msbuild.md)   
+ [Task Writing](../msbuild/task-writing.md)  (Schreiben von Aufgaben)  
+ [Inline Tasks](../msbuild/msbuild-inline-tasks.md) (MSBuild-Inlineaufgaben)

@@ -1,48 +1,63 @@
 ---
-title: "How to: Configure Targets and Tasks | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'Vorgehensweise: Konfigurieren von Zielen und Aufgaben | Microsoft-Dokumentation'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 92814100-392a-471d-96fd-e26f637d6cc2
 caps.latest.revision: 5
-caps.handback.revision: 5
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# How to: Configure Targets and Tasks
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
+ms.openlocfilehash: ac979e7287046164db37848778f648656f7230a6
+ms.lasthandoff: 02/22/2017
 
-Auswählen von MSBuild\-Aufgaben können so festgelegt werden, dass sie in der CLR\-Umgebung ausgeführt, unabhängig von der Umgebung für das jeweilige computers.  Wenn Sie z. B. einem 64\-Bit\-Computer verwenden, um eine Anwendung zu erstellen, die eine 32\-Bit\-Architektur abzielt, sind ausgewählte Aufgaben in einem 32\-Bit\-Prozess ausgeführt.  
+---
+# <a name="how-to-configure-targets-and-tasks"></a>Gewusst wie: Konfigurieren von Zielen und Aufgaben
+Ausgewählte MSBuild-Aufgaben können unabhängig von der Umgebung des Entwicklungscomputers zur Ausführung in der Umgebung, für die sie bestimmt sind, eingestellt werden. Wenn Sie z.B. einen 64-Bit-Computer zum Erstellen einer Anwendung verwenden, die in einer 32-Bit-Architektur ausgeführt werden soll, werden ausgewählte Vorgänge in einem 32-Bit-Prozess ausgeführt.  
   
 > [!NOTE]
->  Wenn eine Erstellung aufgabe in einer .NET\-Sprache wie Visual C\# oder Visual Basic, und verwendet keine systemeigene Ressourcen oder Tools geschrieben wird, wird sie in jedem Zielkontext ohne Anpassung.  
+>  Wenn eine Buildaufgabe in einer .NET-Sprache wie z.B. Visual C# oder Visual Basic geschrieben ist und keine nativen Ressourcen oder Tools verwendet, wird sie in jedem Zielkontext ohne Anpassung ausgeführt.  
   
-## UsingTask\-Attribute und Aufgabenparameter  
- Die folgenden `UsingTask`\-Attribute wirken sich auf alle Vorgänge einer Aufgabe in einem bestimmten Buildvorgang:  
+## <a name="usingtask-attributes-and-task-parameters"></a>UsingTask-Attribute und Aufgabenparameter  
+ Die folgenden `UsingTask`-Attribute wirken sich auf alle Vorgänge einer Aufgabe in einem bestimmten Buildprozess aus:  
   
--   Das Attribut `Runtime`, sofern vorhanden, welche Version der Common Language Runtime \(CLR\) festgelegt und eines dieser Werte annehmen kann: `CLR2`, `CLR4`, `CurrentRuntime`oder `*` beliebig \(Common Language Runtime\).  
+-   Das `Runtime`-Attribut, sofern vorhanden, legt die Version der Common Language Runtime (CLR) fest, und kann einen der folgenden Werte annehmen: `CLR2`, `CLR4`, `CurrentRuntime` oder `*` (beliebige Runtime).  
   
--   Das Attribut `Architecture`, sofern vorhanden, die Plattform und Bitanzahl festgelegt und eines dieser Werte annehmen kann: `x86`, `x64`, `CurrentArchitecture`oder `*` \(jede architektonische\).  
+-   Das `Architecture`-Attribut, sofern vorhanden, legt Plattform und Bitanzahl fest und kann einen der folgenden Werte annehmen: `x86`, `x64`, `CurrentArchitecture` oder `*` (beliebige Architektur).  
   
--   Das Attribut `TaskFactory`, sofern vorhanden, wird die Aufgabenfactory, die die Aufgabeninstanz erstellt und ausgeführt werden, fest und verwendet nur den Wert `TaskHostFactory`.  Weitere Informationen finden Sie im Abschnitt Aufgaben\-Factory weiter unten in diesem Dokument.  
+-   Das `TaskFactory`-Attribut, sofern vorhanden, legt die Aufgabenfactory fest, die die Aufgabeninstanz erstellt und ausführt, und nimmt nur den Wert `TaskHostFactory` an. Weitere Informationen finden Sie im Abschnitt „Aufgabenfactorys“ weiter unten in diesem Dokument.  
   
-```  
+```xml  
 <UsingTask TaskName="SimpleTask"   
    Runtime="CLR2"  
    Architecture="x86"  
    AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v3.5.dll" />  
 ```  
   
- Sie können die `MSBuildRuntime` und `MSBuildArchitecture`\-Parameter auch verwenden, um den Zielkontext einer einzelnen Aufgabe festzulegen.  
+ Sie können auch mit den Parametern `MSBuildRuntime` und `MSBuildArchitecture` den Zielkontext einer einzelnen Aufgabe festlegen.  
   
-```  
+```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
    <Target Name="MyTarget">  
       <SimpleTask MSBuildRuntime="CLR2" MSBuildArchitecture= "x86"/>  
@@ -50,14 +65,14 @@ Auswählen von MSBuild\-Aufgaben können so festgelegt werden, dass sie in der C
 </Project>  
 ```  
   
- Bevor MSBuild eine Aufgabe ausführt, sucht er nach übereinstimmenden `UsingTask`, die denselben Zielkontext verfügt.  Parameter, die in `UsingTask` aber nicht in der entsprechenden Aufgabe angegeben werden, werden als übereinstimmende betrachtet.  Parameter, die in der Aufgabe aber nicht an den entsprechenden `UsingTask` angegeben haben, werden auch als übereinstimmende betrachtet.  Wenn Parameterwerte entweder nicht in `UsingTask` oder in der Aufgabe angegeben werden, werden die Werte in `*` \(entweder Parameter\).  
+ Bevor MSBuild eine Aufgabe ausführt, wird nach einer übereinstimmenden `UsingTask` mit gleichem Zielkontext gesucht.  In der `UsingTask`, jedoch nicht in der entsprechenden Aufgabe angegebene Parameter werden als übereinstimmend betrachtet.  In der Aufgabe, jedoch nicht in der entsprechenden `UsingTask` angegebene Parameter werden auch als übereinstimmend betrachtet. Wenn Parameterwerte weder in der `UsingTask` noch in der Aufgabe angegeben sind, sind die Werte standardmäßig `*` (beliebiger Parameter).  
   
 > [!WARNING]
->  Wenn mehr als ein `UsingTask` vorhanden ist und alle übereinstimmende `TaskName`, `Runtime`und `Architecture`\-Attribute verfügen, ersetzt das zuletzt ausgewertet werden, die einen anderen.  
+>  Wenn mehr als eine `UsingTask` vorhanden ist und alle übereinstimmende `TaskName`-, `Runtime`- und `Architecture`-Attribute haben, ersetzt die zuletzt ausgewertete die anderen.  
   
- Wenn Parameter in der Aufgabe festgelegt werden, `UsingTask` MSBuild versucht, die diese Parameter übereinstimmt, oder es handelt sich um mindestens nicht im Widerspruch zu ihnen.  Mehr als ein `UsingTask` kann den Zielkontext der gleichen Aufgabe angeben.  Zum Beispiel ähnelte möglicherweise eine Aufgabe, die andere ausführbare Dateien für unterschiedliche Zielumgebung hat dies:  
+ Wenn Parameter für die Aufgabe festgelegt sind, versucht MSBuild, eine `UsingTask` zu finden, die mit diesen Parametern übereinstimmt oder zumindest nicht in Konflikt mit ihnen steht.  Mehr als eine `UsingTask` können den Zielkontext der gleichen Aufgabe angeben.  Beispielsweise könnte eine Aufgabe mit verschiedenen ausführbaren Dateien für unterschiedliche Zielumgebungen dieser ähneln:  
   
-```  
+```xml  
 <UsingTask TaskName="MyTool"   
    Runtime="CLR2"  
    Architecture="x86"  
@@ -76,20 +91,20 @@ Auswählen von MSBuild\-Aufgaben können so festgelegt werden, dass sie in der C
   
 ```  
   
-## Aufgaben\-Factorys  
- Bevor Sie eine Aufgabe ausführt, MSBuild\-Überprüfungen, um zu überprüfen, ob sie zur Ausführung im aktuellen Software\-Kontext festgelegt ist.  Wenn die Aufgabe so festgelegt ist, führt MSBuild sie in den AssemblyTaskFactory, das sie im aktuellen Prozess ausgeführt wird. Andernfalls führt MSBuild das die Aufgabe TaskHostFactory, das die Aufgabe in einem Prozess ausgeführt wird, der den Zielkontext übereinstimmt.  Auch wenn der aktuelle Kontext und den Zielkontext entsprechen, können Sie eine Aufgabe erzwingen, dass prozessexterne \(für Isolierung, Sicherheits\- oder anderen Gründen\), indem Sie `TaskFactory` auf Ausführen `TaskHostFactory`festlegen.  
+## <a name="task-factories"></a>Aufgabenfactorys  
+ Bevor eine Aufgabe ausgeführt wird, überprüft MSBuild, ob sie zur Ausführung im aktuellen Softwarekontext bestimmt ist.  Wenn die Aufgabe hierfür bestimmt ist, übergibt MSBuild sie an die AssemblyTaskFactory, die sie im aktuellen Prozess ausführt; andernfalls übergibt MSBuild die Aufgabe an die TaskHostFactory, die die Aufgabe in einem Prozess ausführt, der dem Zielkontext entspricht. Auch wenn aktueller Kontext und Zielkontext übereinstimmen, können Sie durch Festlegen von `TaskFactory` auf `TaskHostFactory` erzwingen, dass eine Aufgabe prozessextern ausgeführt wird (zur Isolation, zur Sicherheit oder aus anderen Gründen).  
   
-```  
+```xml  
 <UsingTask TaskName="MisbehavingTask"   
    TaskFactory="TaskHostFactory"  
    AssemblyFile="$(MSBuildToolsPath)\MyTasks.dll">  
 </UsingTask>  
 ```  
   
-## Phantomaufgaben\-Parameter  
- Wie alle anderen Aufgabenparameter können `MSBuildRuntime` und `MSBuildArchitecture` von Buildeigenschaften festgelegt werden.  
+## <a name="phantom-task-parameters"></a>Phantomaufgabenparameter  
+ Wie alle anderen Aufgabenparameter können `MSBuildRuntime` und `MSBuildArchitecture` über die Buildeigenschaften festgelegt werden .  
   
-```  
+```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
    <PropertyGroup>  
       <FrameworkVersion>3.0</FrameworkVersion>  
@@ -98,17 +113,17 @@ Auswählen von MSBuild\-Aufgaben können so festgelegt werden, dass sie in der C
       <SimpleTask MSBuildRuntime="$(FrameworkVerion)" MSBuildArchitecture= "x86"/>  
    </Target>  
 </Project>  
-```  
+```xml  
   
- Im Gegensatz zu anderen Aufgabenparameter sind `MSBuildRuntime` und `MSBuildArchitecture` für die Aufgabe selbst nicht offensichtlich.  Um eine Aufgabe berücksichtigt die den Kontext zum Schreiben in den sie ausgeführt wird, müssen Sie entweder den Kontext indem Sie .NET Framework testen oder Buildeigenschaften verwenden, um die Kontextinformationen über andere Aufgabenparameter zu übergeben.  
-  
-> [!NOTE]
->  `UsingTask`\-Attribute können Toolset\- und Umgebungseigenschaften festgelegt werden.  
-  
- Die `MSBuildRuntime``MSBuildArchitecture`\-Parameter angeben und die flexibelste Methode für den Zielkontext festzulegen, sondern auch das begrenzteste im Bereich.  Einerseits da sie für die Aufgabeninstanz selbst und nicht ausgewertet werden, bis die Aufgabe gerade ausgeführt werden, können sie ihren Wert aus dem vollständigen Bereich von Eigenschaften abgeleitet werden, die unter Auswertung gültige und unter Build gültige verfügbar sind.  Ebenso erfüllen diese Parameter nur für eine bestimmte Instanz einer Aufgabe in einem bestimmten Ziel auf.  
+ Unlike other task parameters, `MSBuildRuntime` and `MSBuildArchitecture` are not apparent to the task itself.  To write a task that is aware of the context in which it runs, you must either test the context by calling the .NET Framework, or use build properties to pass the context information through other task parameters.  
   
 > [!NOTE]
->  Aufgabenparameter werden im Kontext des übergeordneten Knotens, nicht im Kontext des Tasks Language Runtime\-Hosts ausgewertet. Umgebungsvariablen, die die sind bzw. Architektur abhängiges Element \(z. B. den Speicherort der Programmdateien Werten\) den Wert aus, der den übergeordneten Knoten entspricht.  Wenn jedoch die gleiche Umgebungsvariable direkt von der Aufgabe gelesen wird, wird er im Bereich des Tasks korrekt gehostet ausgewertet.  
+>  `UsingTask` attributes can be set from toolset and environment properties.  
   
-## Siehe auch  
+ The `MSBuildRuntime` and `MSBuildArchitecture` parameters provide the most flexible way to set the target context, but also the most limited in scope.  On the one hand, because they are set on the task instance itself and are not evaluated until the task is about to run, they can derive their value from the full scope of properties available at both evaluation-time and build-time.  On the other hand, these parameters only apply to a particular instance of a task in a particular target.  
+  
+> [!NOTE]
+>  Task parameters are evaluated in the context of the parent node, not in the context of the task host.Environment variables that are runtime- or architecture- dependent (such as the Program files location) will evaluate to the value that matches the parent node.  However, if the same environment variable is read directly by the task, it will correctly be evaluated in the context of the task host.  
+  
+## See Also  
  [Configuring Targets and Tasks](../msbuild/configuring-targets-and-tasks.md)

@@ -1,49 +1,64 @@
 ---
-title: "UidManager Task | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "UidManager task [WPF MSBuild]"
-  - "UidManager task [WPF MSBuild], parameters"
-  - "managing UIDs when localizing XAML elements [WPF MSBuild]"
-  - "localizing XAML elements [WPF MSBuild], managing UIDs"
-  - "checking UIDs when localizing XAML elements [WPF MSBuild]"
+title: UidManager-Aufgabe| Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- UidManager task [WPF MSBuild]
+- UidManager task [WPF MSBuild], parameters
+- managing UIDs when localizing XAML elements [WPF MSBuild]
+- localizing XAML elements [WPF MSBuild], managing UIDs
+- checking UIDs when localizing XAML elements [WPF MSBuild]
 ms.assetid: 4fc7b5a5-11b0-46ca-9656-8c2a0b08d1fe
 caps.latest.revision: 5
-caps.handback.revision: 5
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# UidManager Task
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
+ms.openlocfilehash: 44e4e2f2baa22e5e0f0fed6e27fdb0677b5a4bb9
+ms.lasthandoff: 02/22/2017
 
-Mit der <xref:Microsoft.Build.Tasks.Windows.UidManager>\-Aufgabe werden eindeutige Bezeichner \(UIDs\) überprüft, aktualisiert oder entfernt, um alle [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)]\-Elemente in den [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]\-Quelldateien zu lokalisieren.  
+---
+# <a name="uidmanager-task"></a>UidManager-Aufgabe
+Die <xref:Microsoft.Build.Tasks.Windows.UidManager>-Aufgabe überprüft, aktualisiert oder entfernt eindeutige Bezeichner (UIDs), um alle [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)]-Elemente zu lokalisieren, die in den Quell-[!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Dateien enthalten sind.  
   
-## Aufgabenparameter  
+## <a name="task-parameters"></a>Aufgabenparameter  
   
 |Parameter|Beschreibung|  
-|---------------|------------------|  
-|`IntermediateDirectory`|Optionaler **String**\-Parameter.<br /><br /> Gibt das Verzeichnis zur Sicherung der [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]\-Quelldateien an, die durch den **MarkupFiles**\-Parameter angegeben werden.|  
-|`MarkupFiles`|Erforderlicher **ITaskItem\[\]**\-Parameter.<br /><br /> Gibt die [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]\-Quelldateien an, die für das Überprüfen, Aktualisieren oder Entfernen der UID berücksichtigt werden müssen.|  
-|`Task`|Erforderlicher **String**\-Parameter.<br /><br /> Gibt die UID\-Verwaltungsaufgabe an, die Sie ausführen möchten.  Gültige Optionen sind **Check**, **Update** und **Remove**.|  
+|---------------|-----------------|  
+|`IntermediateDirectory`|Optionaler **String**-Parameter.<br /><br /> Gibt das Verzeichnis an, das zur Sicherung der Quell-[!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Dateien verwendet wird, die vom **MarkupFiles**-Parameter angegeben werden.|  
+|`MarkupFiles`|Erforderlicher **ITaskItem[]**-Parameter.<br /><br /> Gibt die Quell-[!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Dateien an, die für UID-Überprüfung, -Aktualisierung oder -Entfernung einbezogen werden.|  
+|`Task`|Erforderlicher **String**-Parameter.<br /><br /> Gibt die UID-Verwaltungsaufgabe an, die Sie ausführen möchten. Gültige Optionen sind **Check**, **Update** oder **Remove**.|  
   
-## Beispiel  
- Im folgenden Beispiel wird mithilfe der <xref:Microsoft.Build.Tasks.Windows.UidManager>\-Aufgabe überprüft, ob die angegebenen [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]\-Quelldateien [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]\-Elemente mit geeigneten UIDs enthalten.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel wird mit der <xref:Microsoft.Build.Tasks.Windows.UidManager>-Aufgabe überprüft, ob die angegebenen Quell-[!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Dateien [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Elemente enthalten, die über geeignete UIDs verfügen.  
   
-```  
+```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <UsingTask   
     TaskName="Microsoft.Build.Tasks.Windows.UidManager"   
@@ -57,10 +72,10 @@ Mit der <xref:Microsoft.Build.Tasks.Windows.UidManager>\-Aufgabe werden eindeuti
 </Project>  
 ```  
   
-## Siehe auch  
- [WPF MSBuild Reference](../msbuild/wpf-msbuild-reference.md)   
- [Task Reference](../msbuild/wpf-msbuild-task-reference.md)   
- [MSBuild Reference](../msbuild/msbuild-reference.md)   
- [Task Reference](../msbuild/msbuild-task-reference.md)   
- [Erstellen einer WPF\-Anwendung \(WPF\)](../Topic/Building%20a%20WPF%20Application%20\(WPF\).md)   
- [Gewusst wie: Lokalisieren einer Anwendung](../Topic/How%20to:%20Localize%20an%20Application.md)
+## <a name="see-also"></a>Siehe auch  
+ [WPF-MSBuild-Referenz](../msbuild/wpf-msbuild-reference.md)   
+ [Task Reference](../msbuild/wpf-msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
+ [MSBuild Reference](../msbuild/msbuild-reference.md)  (MSBuild-Referenz)  
+ [Task Reference](../msbuild/msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
+ [Erstellen einer WPF-Anwendung (WPF)](http://msdn.microsoft.com/Library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
+ [Gewusst wie: Lokalisieren einer Anwendung](http://msdn.microsoft.com/Library/5001227e-9326-48a4-9dcd-ba1b89ee6653)

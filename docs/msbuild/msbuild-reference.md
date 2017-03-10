@@ -1,97 +1,112 @@
 ---
-title: "MSBuild-Referenz | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "MSBuild-Referenz"
+title: MSBuild-Referenz | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- MSBuild, reference
 ms.assetid: 093395e1-70da-4f74-b34d-046c5e2b32e8
 caps.latest.revision: 22
-caps.handback.revision: 22
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# MSBuild-Referenz
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: f6c59188abc8cbb9909c12438bc58fa9301d8af9
+ms.openlocfilehash: 25d55f075a3586356cc291e2811520a9bbafadf0
+ms.lasthandoff: 02/22/2017
 
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ist das Buildsystem für [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Führen Sie die folgenden Links zu Themen mit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Informationen zu verweisen.  
+---
+# <a name="msbuild-reference"></a>MSBuild-Referenz
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ist das Buildsystem für [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Die folgenden Links verweisen auf [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Referenzinformationen.  
   
 ## <a name="in-this-section"></a>In diesem Abschnitt  
- [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)  
- Beschreibt die XML-Elemente, aus denen die [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Dateiformat.  
+ [Project File Schema Reference](../msbuild/msbuild-project-file-schema-reference.md) (Referenz zum Projektdateischema von MSBuild)  
+ Beschreibt die XML-Elemente, aus denen das [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Dateiformat besteht.  
   
- [Referenz zu Aufgaben](../msbuild/msbuild-task-reference.md)  
- Beschreibt einige der häufiger Aufgaben, die in enthaltenen [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
+ [Task Reference](../msbuild/msbuild-task-reference.md) (MSBuild-Aufgabenreferenz)  
+ Beschreibt einige der typischen Aufgaben, die in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] verfügbar sind.  
   
- [Bedingungen](../msbuild/msbuild-conditions.md)  
- Die Faktoren beschrieben, die in verfügbaren [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Dateien.  
+ [Conditions](../msbuild/msbuild-conditions.md) (MSBuild-Bedingungen)  
+ Beschreibt die Bedingungen, die in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Dateien verfügbar sind.  
   
- [Bedingte Konstrukte](../msbuild/msbuild-conditional-constructs.md)  
- Beschreibt, wie die `Choose`, `When`, und `Otherwise` Elemente.  
+ [Conditional Constructs](../msbuild/msbuild-conditional-constructs.md) (Bedingte Konstrukte in MSBuild)  
+ Beschreibt, wie die Elemente `Choose`, `When` und `Otherwise` zu verwenden sind.  
   
- [MSBuild reservierte und bekannte Eigenschaften](../msbuild/msbuild-reserved-and-well-known-properties.md)  
- Beschreibt die [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] reservierte Eigenschaften.  
+ [Reservierte und bekannte Eigenschaften für MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)  
+ Beschreibt die reservierten [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Eigenschaften.  
   
  [Gemeinsame MSBuild-Projekteigenschaften](../msbuild/common-msbuild-project-properties.md)  
- Beschreibt Projekteigenschaften, die für alle Projekttypen gelten, sowie die Eigenschaften, die von bestimmten Projekttypen häufig verwendet werden.  
+ Beschreibt Projekteigenschaften, die für alle Projekttypen gelten, sowie Eigenschaften, die von bestimmten Projekttypen häufig verwendet werden.  
   
  [Gemeinsame MSBuild-Projektelemente](../msbuild/common-msbuild-project-items.md)  
- Beschreibt die Projektelemente, die für alle Projekttypen gelten, sowie die Elemente, die von bestimmten Projekttypen häufig verwendet werden.  
+ Beschreibt Projektelemente, die für alle Projekttypen gelten, sowie Elemente, die von bestimmten Projekttypen häufig verwendet werden.  
   
- [Befehlszeilenreferenz](../msbuild/msbuild-command-line-reference.md)  
- Beschreibt die Argumente und Optionen, die mit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].exe.  
+ [Command-Line Reference](../msbuild/msbuild-command-line-reference.md) (MSBuild-Befehlszeilenreferenz)  
+ Beschreibt die Argumente und Schalter, die mit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].exe verwendet werden können.  
   
- [. TARGETS-Dateien](../msbuild/msbuild-dot-targets-files.md)  
- Beschreibt die. TARGETS-Datei, die in enthalten ist [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
+ [.Targets Files](../msbuild/msbuild-dot-targets-files.md) (TARGETS-Dateien von MSBuild)  
+ Beschreibt die in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] verfügbare TARGETS-Datei.  
   
- [Bekannte Elementmetadaten](../msbuild/msbuild-well-known-item-metadata.md)  
- Listet die Metadaten, die zusammen mit jedem Element erstellt wird.  
+ [Well-known Item Metadata](../msbuild/msbuild-well-known-item-metadata.md) (Bekannte Elementmetadaten in MSBuild)  
+ Listet die Metadaten auf, die zusammen mit den einzelnen Elementen erstellt werden.  
   
- [Antwortdateien](../msbuild/msbuild-response-files.md)  
+ [Response Files](../msbuild/msbuild-response-files.md) (MSBuild-Antwortdateien)  
  Erläutert die RSP-Dateien, die Befehlszeilenschalter enthalten.  
   
- [Zusätzliche Ressourcen](../msbuild/additional-resources-for-msbuild.md)  
- Enthält Links zu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Websites und Newsgroups.  
+ [Additional Resources](../msbuild/additional-resources-for-msbuild.md) (Zusätzliche MSBuild-Ressourcen)  
+ Enthält Links zu Websites und Newsgroups von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
   
- [Referenz zu WPF MSBuild](../msbuild/wpf-msbuild-reference.md)  
- Enthält eine [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Zielen und Task-Referenz für Windows Presentation Foundation (WPF).  
+ [WPF-MSBuild-Referenz](../msbuild/wpf-msbuild-reference.md)  
+ Enthält eine Ziele- und Aufgabenreferenz von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] für Windows Presentation Foundation (WPF).  
   
  [Sonderzeichen mit Escapezeichen](../msbuild/special-characters-to-escape.md)  
- Führt die Zeichen, die "maskiert" werden um richtig interpretiert werden können. Eine Escapesequenz ist eine Reihe von Zeichen, der angibt, dass eine alternative Auslegung folgt.  
+ Listet Zeichen auf, die möglicherweise mit Escapezeichen versehen werden müssen, damit sie richtig interpretiert werden können. Eine Escapesequenz besteht aus einer Reihe von Zeichen, die angibt, dass eine alternative Interpretation folgt.  
   
 ## <a name="related-sections"></a>Verwandte Abschnitte  
- [Übersicht über MSBuild  ](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/d920ff78-3d00-482b-80a5-743ae3c8ab10/locales/en-US)
- führt [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] und enthält Links zu Themen, die erklären, wie Sie es verwenden, um Projekte zu erstellen.  
+ [Übersicht über MSBuild](../msbuild/msbuild.md)
+ Bietet eine Einführung in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] und enthält Links zu Artikeln, in denen erläutert wird, wie Sie damit Projekte erstellen können.  
   
  <xref:Microsoft.Build.Conversion>  
- Enthält die Referenz zum Konvertierungs-namespace  
+ Enthält die Namespace-Referenz für die Konvertierung.  
   
  <xref:Microsoft.Build.Evaluation>  
- Enthält den Namespaceverweis Auswertung  
+ Enthält die Namespace-Referenz für die Auswertung.  
   
  <xref:Microsoft.Build.Execution>  
- Enthält den Execution-Namespaceverweis  
+ Enthält die Namespace-Referenz für die Ausführung.  
   
  <xref:Microsoft.Build.Framework>  
- Enthält den Framework-Namespaceverweis  
+ Enthält die Namespace-Referenz für Framework.  
   
  <xref:Microsoft.Build.Logging>  
- Enthält den Namespaceverweis Protokollierung  
+ Enthält die Namespace-Referenz für die Protokollierung.  
   
  <xref:Microsoft.Build.Tasks>  
- Enthält den Namespaceverweis Aufgaben  
+ Enthält die Namespace-Referenz für Aufgaben.  
   
  <xref:Microsoft.Build.Utilities>  
- Enthält den Utilities-Namespaceverweis
+ Enthält die Namespace-Referenz für Dienstprogramme.

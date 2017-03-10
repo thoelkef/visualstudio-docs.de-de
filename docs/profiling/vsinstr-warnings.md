@@ -1,49 +1,64 @@
 ---
-title: "VSInstr-Warnungen | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Instrumentierung, VSInstr-Tool"
-  - "Leistungstools, VSInstr-Tool"
-  - "VSInstr-Tool"
-  - "Warnungen"
-  - "Warnungen, VSInstr-Tool"
+title: VSInstr-Warnungen | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- instrumentation, VSInstr tool
+- warnings
+- VSInstr tool
+- warnings, VSInstr tool
+- performance tools, VSInstr tool
 ms.assetid: 47512bc9-a8e9-4628-883a-d9888edab786
 caps.latest.revision: 20
-caps.handback.revision: 20
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# VSInstr-Warnungen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
+ms.openlocfilehash: a116306cdd3fc0cd636077bf2a0d6bc87b49e96b
+ms.lasthandoff: 02/22/2017
 
-In der folgenden Tabelle werden die vom Tool VSInstr.exe ausgegebenen Warnungen aufgelistet.  Sie können die NOWARN\-Option zusammen mit den Warnnummern verwenden, um das Anzeigen einer Warnung zu unterdrücken.  
+---
+# <a name="vsinstr-warnings"></a>VSInstr-Warnungen
+Die folgende Tabelle enthält die vom Tool VSInstr.exe ausgegebenen Warnungen. Sie können die NOWARN-Option zusammen mit den Warnungsnummern verwenden, um die Anzeige der Warnung zu unterdrücken.  
   
-|Warnnummer|**Beschreibung**|  
-|----------------|----------------------|  
-|**VSP2000**|Interner Fehler.  Der Moduldateiname für diese ausführbare Datei kann nicht abgerufen werden.|  
-|**VSP2001**|\<Assemblyname\> ist eine stark benannte Assembly.  Sie muss neu signiert werden, bevor sie ausgeführt werden kann.<br /><br /> Diese Warnung wird bei der Instrumentation einer signierten Assembly ausgegeben.  Sie können das Tool "sn.exe" verwenden, um die Binärdatei zu entfernen oder die Anforderung für starke Namen vorübergehend zu deaktivieren.  Weitere Informationen finden Sie unter [Sn.exe \(Strong Name Tool\)](../Topic/Sn.exe%20\(Strong%20Name%20Tool\).md).|  
-|**VSP2002**|Die Funktion \<funcname\> im Dateidateinamen nicht \<gefunden\><br /><br /> Diese Warnung wird ausgegeben, wenn eine Funktion in der angegebenen Datei nicht gefunden wurde.|  
-|**VSP2003**|Es wurden keine Quersprünge zur Funktion \<funcname\> in Datei \<filename\> gefunden.<br /><br /> Diese Warnung wird ausgegeben, wenn VSInstr keine Quersprünge aufheben kann.  Quersprünge werden zur Codeoptimierung verwendet.|  
-|**VSP2004**|Funktion \<funcname\> wurde ausgeschlossen, indem der EXCLUDE\-Befehlszeilenschalter verwendet wurde, jedoch erforderlich war, da ein Quersprung enthielt.<br /><br /> Diese Warnung wird ausgegeben, wenn die Funktion mithilfe der EXCLUDE\-Option ausgeschlossen wurde, die Funktion während des Instrumentationsvorgangs jedoch erforderlich war.  Der Profiler schließt automatisch die erforderliche Funktion ein.|  
-|**VSP2005**|Interner Instrumentations\-Fehler \<Fehlertext\><br /><br /> Diese Warnung wird ausgegeben, wenn die Instrumentation nicht ausgeführt werden kann.  Überprüfen Sie den Fehlertext, um herauszufinden, ob der Fehler korrigiert werden kann.|  
-|**VSP2006**|Könnte PDB für \<Namen nicht gefunden\><br /><br /> Diese Warnung wird ausgegeben, wenn die PDB\-Datei im Suchpfad nicht vorhanden ist oder der Binärdatei nicht entspricht.|  
-|**VSP2007**|\<Dateiname\> enthält keinen instrumentable Code.<br /><br /> Diese Warnung wird ausgegeben, wenn die Funktionen in der Binärdatei alle ausgeschlossen wurden oder die angegebene Datei nur Ressourcen enthält.|  
-|**VSP2008**|Die Sicherheitsattribute, vom Namen \<abzurufen\>.  Fehlercode \<code\><br /><br /> Diese Warnung wird ausgegeben, wenn der Benutzer nicht über die READ\_DAC\-Berechtigung verfügt.  Während des Instrumentationsvorgangs versucht der Profiler, die ursprüngliche freigegebene Zugriffssteuerungsliste \(Discretionary Access Control List – DACL\) für die Binärdatei zu erhalten.  Da die ursprüngliche Binärdatei jedoch durch eine neue Binärdatei ersetzt wird, muss die DACL aus der ursprünglichen Binärdatei kopiert und für die neue Binärdatei übernommen werden.  Dieser Vorgang schlägt fehl, wenn der Benutzer nicht über READ\_DAC\-Zugriff auf die ursprüngliche Binärdatei verfügt.|  
-|**VSP2009**|Die Sicherheitsattribute, auf \<Namen\>festzulegen.  Fehlercode \<fehlernummer\><br /><br /> Diese Warnung wird ausgegeben, wenn der Benutzer nicht über die WRITE\_DAC\-Berechtigung verfügt.  Während des Instrumentationsvorgangs versucht der Profiler, die ursprüngliche freigegebene Zugriffssteuerungsliste \(Discretionary Access Control List – DACL\) für die Binärdatei zu erhalten.  Da die ursprüngliche Binärdatei jedoch durch eine neue Binärdatei ersetzt wird, muss die DACL aus der ursprünglichen Binärdatei kopiert und für die neue Binärdatei übernommen werden.  Dieser Vorgang schlägt fehl, wenn der Benutzer nicht über WRITE\_DAC\-Zugriff auf die neue Binärdatei verfügt.|  
-|**VSP2010**|Es sind keine Funktionen speziell für die Instrumentation aufgrund von \/INCLUDE\- oder \/EXCLUDE\-Optionen ausgewählt.|  
-|**VSP2011**|Schließen Sie ein, und schließen Sie funcspec \<Namen\> übereinstimmt keine Funktionen aus|  
-|**VSP2012**|Das Abbild enthält keinen Code, der für die Codeabdeckung instrumentiert werden kann.<br /><br /> Der folgende Codetyp wird vom Profiler nicht instrumentiert:<br /><br /> -   Statische CRT\-Funktionen<br />-   Verwaltete mit NonUserCodeAttribute attributierte Methoden<br />-   Verwaltete mit DebuggerHiddenAttribute attributierte Methoden<br />-   MASM\-Blöcke<br /><br /> Diese Warnung wird generiert, wenn nach dieser Filterung kein Code mehr übrig ist.|  
-|**VSP2013**|Für die Instrumentation dieses Image ist es erforderlich, das Image als 32\-Bit\-Prozess auszuführen.  Die CLR\-Headerflags wurden hierfür aktualisiert.<br /><br /> Der Profiler ändert die Binärdatei, damit 64\-Bit\-Betriebssysteme den 32\-Bit\-Prozess im WOW64\-Emulator öffnen können.  Diese Vorgehensweise schlägt bei Bibliotheken \(DLLs\) u. U. fehl, wenn sie in einen vorhandenen 64\-Bit\-Prozess geladen werden.  Diese Warnung informiert den Benutzer über die Abhängigkeit.|  
-|**VSP2014**|Das sich ergebende instrumentierte Abbild ist scheinbar ungültig und wird möglicherweise nicht ausgeführt.<br /><br /> Diese Meldung wird ausgegeben, wenn die fertige instrumentierte Assembly über einen ungültigen PE\-Header verfügt.|  
+|Warnnummer|Beschreibung|  
+|--------------------|-----------------|  
+|**VSP2000**|Interner Fehler. Der Moduldateiname für diese ausführbare Datei kann nicht abgerufen werden.|  
+|**VSP2001**|\<assembly name> ist eine Assembly mit starkem Namen. Sie muss neu signiert werden, bevor sie ausgeführt werden kann.<br /><br /> Diese Warnung tritt auf, wenn eine signierte Assembly instrumentiert wird. Sie können das Tool „sn.exe“ verwenden, um die Binärdatei neu zu signieren oder die Anforderung des starken Namens vorübergehend zu deaktivieren. Weitere Informationen finden Sie unter [Sn.exe (Strong Name-Tool)](http://msdn.microsoft.com/Library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6).|  
+|**VSP2002**|Die Funktion \<Funktionsname> wurde in der Datei \<Dateiname> nicht gefunden.<br /><br /> Diese Warnung tritt auf, wenn eine Funktion in der angegebenen Datei nicht gefunden werden kann.|  
+|**VSP2003**|Es konnten keine Quersprünge zur Funktion \<Funktionsname> in der Datei \<Dateiname> gefunden werden.<br /><br /> Diese Warnung tritt auf, wenn VSInstr keine Quersprünge aufheben kann. Quersprünge werden für die Codeoptimierung verwendet.|  
+|**VSP2004**|Die Funktion \<Funktionsname> wurde mithilfe des EXCLUDE-Befehlszeilenschalters ausgeschlossen, sie war jedoch erforderlich, da sie einen Quersprung enthielt.<br /><br /> Diese Warnung tritt auf, wenn die Funktion mithilfe der EXCLUDE-Option ausgeschlossen wurde, aber während des Instrumentierungsvorgangs erforderlich ist. Der Profiler schließt automatisch die erforderliche Funktion ein.|  
+|**VSP2005**|Interner Instrumentationsfehler \<Fehlertext><br /><br /> Diese Warnung wird ausgegeben, wenn die Instrumentierung nicht ausgeführt werden kann. Überprüfen Sie den Fehlertext, um festzustellen, ob er korrigiert werden kann.|  
+|**VSP2006**|PDB für \<Name> konnte nicht gefunden werden.<br /><br /> Diese Warnung tritt auf, wenn die PDB-Datei im Suchpfad nicht vorhanden ist oder nicht der Binärdatei entspricht.|  
+|**VSP2007**|\<Dateiname> enthält keinen instrumentierbaren Code.<br /><br /> Diese Warnung wird ausgegeben, wenn alle Funktionen in der Binärdatei ausgeschlossen wurden, oder wenn die angegebene Datei nur Ressourcen enthält.|  
+|**VSP2008**|Sicherheitsattribute können nicht aus \<Name> abgerufen werden. Fehlercode \<Code><br /><br /> Diese Warnung tritt auf, wenn der Benutzer nicht über READ_DAC-Berechtigung verfügt. Während des Instrumentierungsvorgangs versucht der Profiler, die ursprüngliche DACL für die Binärdatei zu erhalten. Da die ursprüngliche Binärdatei durch eine neue Binärdatei ersetzt wird, muss die DACL aus der ursprünglichen Binärdatei kopiert und auf die neue Binärdatei angewendet werden. Hierbei kann ein Fehler auftreten, wenn der Benutzer nicht über READ_DAC-Zugriff auf die ursprüngliche Binärdatei verfügt.|  
+|**VSP2009**|Sicherheitsattribute für \<Name> können nicht festgelegt werden. Fehlercode \<Fehlernummer><br /><br /> Diese Warnung tritt auf, wenn der Benutzer nicht über WRITE_DAC-Berechtigung verfügt. Während des Instrumentierungsvorgangs versucht der Profiler, die ursprüngliche DACL für die Binärdatei zu erhalten. Da die ursprüngliche Binärdatei durch eine neue Binärdatei ersetzt wird, muss die DACL aus der ursprünglichen Binärdatei kopiert und auf die neue Binärdatei angewendet werden. Hierbei kann ein Fehler auftreten, wenn der Benutzer nicht über WRITE_DAC-Zugriff auf die neue Binärdatei verfügt.|  
+|**VSP2010**|Es sind keine Funktionen speziell für die Instrumentation aufgrund von /INCLUDE- oder /EXCLUDE-Optionen ausgewählt.|  
+|**VSP2011**|Funcspec \<Name> zum Einschließen/Ausschließen stimmt mit keiner Funktion überein.|  
+|**VSP2012**|Das Abbild enthält keinen Code, der für die Codeabdeckung instrumentiert werden kann.<br /><br /> Der Profiler instrumentiert folgende Art von Code nicht:<br /><br /> – Statische CRT-Funktionen<br />– Verwaltete Methoden, die mit dem NonUserCodeAttribute-Attribut versehen sind<br />– Verwaltete Methoden, die mit dem DebuggerHiddenAttribute-Attribut versehen sind<br />– MASM-Blöcke<br /><br /> Diese Warnung wird generiert, wenn nach dieser Filterung kein Code mehr vorhanden ist.|  
+|**VSP2013**|Für die Instrumentation dieses Abbilds ist es erforderlich, das Abbild als 32-Bit-Prozess auszuführen. Die CLR-Headerflags wurden hierfür aktualisiert.<br /><br /> Der Profiler ändert die Binärdatei, sodass 64-Bit-Betriebssysteme den 32-Bit-Prozess im WOW64-Emulator öffnen können. Bei Bibliotheken (DLLs) kann hierbei ein Fehler auftreten, wenn sie in einen vorhandenen 64-Bit-Prozess geladen werden. Diese Warnung informiert den Benutzer über die Abhängigkeit.|  
+|**VSP2014**|Das sich ergebende instrumentierte Abbild ist scheinbar ungültig und wird möglicherweise nicht ausgeführt.<br /><br /> Diese Meldung tritt auf, wenn die endgültige instrumentierte Assembly über einen ungültigen PE-Header verfügt.|  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [VSInstr](../profiling/vsinstr.md)

@@ -1,52 +1,68 @@
 ---
-title: "DA0023: Hohe GC-CPU-Zeit | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.DA0023"
-  - "vs.performance.23"
-  - "vs.performance.rules.DA0023"
+title: 'DA0023: Hohe GC-CPU-Zeit | Microsoft-Dokumentation'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.performance.DA0023
+- vs.performance.23
+- vs.performance.rules.DA0023
 ms.assetid: aba875fe-9cbc-418d-a2c4-6eb47519a5bb
 caps.latest.revision: 10
-caps.handback.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# DA0023: Hohe GC-CPU-Zeit
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+translationtype: Human Translation
+ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
+ms.openlocfilehash: f62c4888f66823b0c42a1fbb04458ae6274d2c4c
+ms.lasthandoff: 02/22/2017
 
+---
+# <a name="da0023-high-gc-cpu-time"></a>DA0023: Hohe GC-CPU-Zeit
 |||  
 |-|-|  
 |Regel-ID|DA0023|  
 |Kategorie|.NET Framework-Verwendung|  
 |Profilerstellungsmethode|Alle|  
-|Meldung|GC-Zeitdauer in ist relativ hoch. Diese Angabe der übermäßigen Mehraufwand Garbage Collection kann die Reaktionsfähigkeit der Anwendung beeinträchtigen, werden. Sie können .NET Speicher Zuordnung Daten- und Lebensdauerinformationen erfassen um das Muster der speicherbelegung zu verstehen, die Ihre Anwendung besser verwendet.|  
+|Meldung|Die GC-Zeitdauer in Prozent ist relativ hoch. Dies ist ein Hinweis auf einen sehr hohen Mehraufwand für die Garbage Collection, der sich möglicherweise auf die Reaktionsfähigkeit Ihrer Anwendung auswirkt. Sammeln Sie die .NET-Speicherbelegungsdaten und die Informationen zur Objektlebensdauer, um besser nachvollziehen zu können, welches Speicherbelegungsmuster von der Anwendung verwendet wird.|  
 |Regeltyp|Information|  
   
- Wenn Sie ein Profil mithilfe der Sampling, .NET Speicher oder Ressourcen Konflikte Methoden erstellen, müssen Sie mindestens 10 Beispiele zum Auslösen von dieser Regel sammeln.  
+ Wenn Sie Profile mithilfe der Sampling-, .NET-Arbeitsspeicher- oder Ressourcenkonfliktmethode Profile erstellen, müssen mindestens 10 Samplings erfasst werden, damit diese Regel ausgelöst wird.  
   
 ## <a name="cause"></a>Ursache  
- System-Leistungsdaten, die während der profilerstellung gesammelt werden gibt an, dass die Zeitspanne, die Garbagecollection aufgewendet wird erhebliche verglichen mit der gesamten Verarbeitung.  
+ Die bei der Profilerstellung erfassten Systemleistungsdaten deuten darauf hin, dass für die Garbage Collection im Vergleich zur gesamten Anwendungsverarbeitung viel Zeit aufgewendet wird.  
   
 ## <a name="rule-description"></a>Regelbeschreibung  
- Der Microsoft .NET common Language Runtime (CLR) bietet einen Mechanismus zur Verwaltung von automatischen Speicher, der einen Garbage Collector verwendet zum Freigeben von Speicher von Objekten, die die Anwendung nicht mehr verwendet. Der Garbage Collector ist Generation orientiert, basierend auf der Annahme, dass viele Zuordnungen kurzlebig sind. Lokale Variablen, sollten beispielsweise kurzlebig sein. Starten Sie die neu erstellte Objekte in Generation 0 (Gen 0), und werden auf Generation 1 sie Überleben bei einer Ausführung der Garbagecollection und schließlich zu Generation 2 an, wenn die Anwendung weiterhin verwendet.  
+ Die Microsoft .NET-CLR (Common Language Runtime) verfügt über einen automatischen Speicherverwaltungsmechanismus, durch den der Speicher von Objekten, die von der Anwendung nicht mehr verwendet werden, mithilfe eines Garbage Collectors freigegeben wird. Der Garbage Collector ist generationsorientiert, da angenommen wird, dass viele Speicherbelegungen kurzlebig sind. Lokale Variablen müssen beispielsweise kurzlebig sein. Neu erstellte Objekte beginnen in Generation 0 (gen 0) und werden zu Generation 1, wenn sie nach einer Ausführung der Garbage Collection noch vorhanden sind, und schließlich zu Generation 2, wenn sie von der Anwendung auch weiterhin verwendet werden.  
   
- Objekte in Generation 0 werden häufig und i. d. r. äußerst effizient gesammelt. Objekte in Generation 1 werden weniger häufig und weniger effizient gesammelt. Schließlich sollten langlebige Objekte in Generation 2 noch seltener gesammelt werden. Collection der Generation 2, die eine vollständige Garbagecollection ausgeführt wird, ist auch der aufwändigste Vorgang.  
+ Objekte in der Generation 0 werden häufig und i. d. R. äußerst effizient gesammelt. Objekte in der Generation 1 werden nicht so häufig und weniger effizient gesammelt. Und langlebige Objekte in der Generation 2 werden schließlich noch seltener gesammelt. Die Collection der Generation 2, bei der es sich um eine vollständige Ausführung der Garbage Collection handelt, ist zudem der aufwändigste Vorgang.  
   
- Diese Regel wird ausgelöst, wenn die Zeitspanne, die Garbagecollection aufgewendet wird erhebliche Zeit verglichen mit der gesamten Verarbeitung.  
+ Diese Regel wird ausgelöst, wenn für die Garbage Collection im Vergleich zur gesamten Anwendungsverarbeitung viel Zeit aufgewendet wird.  
   
 > [!NOTE]
->  Wenn der Anteil der Zeit, die Garbagecollection aufgewendet wird eine übermäßige verglichen mit der gesamten Verarbeitung, die [DA0024: Übermäßige GC-CPU-Zeit](../profiling/da0024-excessive-gc-cpu-time.md) Warnung ausgelöst wird, anstatt diese Regel.  
+>  Wenn für die Garbage Collection im Vergleich zur gesamten Anwendungsverarbeitung übermäßig viel Zeit aufgewendet wird, wird anstelle dieser Regel die Warnung [DA0024: Übermäßige GC-CPU-Zeit](../profiling/da0024-excessive-gc-cpu-time.md) ausgelöst.  
   
-## <a name="how-to-investigate-a-warning"></a>Eine Warnung untersuchen.  
- Doppelklicken Sie auf die Meldung im Fenster Fehlerliste zum Navigieren der [Markierungsansicht](../profiling/marks-view.md) der Profilerstellungsdaten. Suchen Sie die **.NET CLR-Speicher\\% GC-Zeitdauer in** Spalte. Bestimmen Sie, ob bestimmte Phasen der Ausführung des Programms, in dem die verwalteten Arbeitsspeicher-Garbagecollection schwerer als andere Phasen ist. Vergleichen Sie die Werte des GC-Zeitdauer in der Garbagecollection-Rate Wert gemeldet wird, der **Auflistungsanzahl der Generation 0**, **Auflistungsanzahl der Generation 1**, **Auflistungsanzahl der Generation 2** Werte.  
+## <a name="how-to-investigate-a-warning"></a>Vorgehensweise bei der Überprüfung einer Warnung  
+ Doppelklicken Sie auf die Meldung im Fenster „Fehlerliste“, um zur Ansicht [Markierungen](../profiling/marks-view.md) der Profilerstellungsdaten zu navigieren. Suchen Sie die Spalte **.NET CLR-Speicher\\GC-Zeitdauer in Prozent**. Überprüfen Sie, ob der Mehraufwand für die Garbage Collection bei verwaltetem Speicher in bestimmten Phasen der Programmausführung besonders häufig auftritt. Vergleichen Sie die Werte der Spalte „GC-Zeitdauer in Prozent“ mit der Garbage Collection-Rate aus den Spalten **Auflistungsanzahl der Generation 0**, **Auflistungsanzahl der Generation 1** und **Auflistungsanzahl der Generation 2**.  
   
- Die Zeit im GC-Wert % versucht, die Zeit gemeldet, die eine Anwendung ausführen Garbagecollection proportional zu den Gesamtbetrag der Verarbeitung benötigt. Denken Sie daran, dass es gibt Situationen, wenn die Zeit im GC-Wert % einen sehr hohen Wert melden kann, jedoch nicht aufgrund übermäßiger Garbagecollection. Weitere Informationen darüber, wie die % Zeit in GC-Wert berechnet wird, finden Sie unter der [Unterschied zwischen Perf Data Reported by Different Tools – 4](http://go.microsoft.com/fwlink/?LinkId=177863) Eintrag des **Maonis Weblog** auf MSDN. Seitenfehler auftreten, oder die Anwendung wird während der Garbagecollection durch andere höhere Priorität arbeiten auf dem Computer belegt, wird die % Zeit in GC-Indikator diese zusätzlichen Verzögerungen wider.
+ Die Werte der Spalte „GC-Zeitdauer in Prozent“ geben an, wie viel Zeit von einer Anwendung für die Garbage Collection im Vergleich zur Gesamtverarbeitungszeit aufgewendet wird. In einigen Situationen kann der Wert für die GC-Zeitdauer in Prozent sehr hoch sein, ohne dass dies auf eine übermäßige Garbage Collection zurückzuführen ist. Weitere Informationen zur Berechnung des Werts für die GC-Zeitdauer in Prozent finden Sie im Beitrag [Difference Between Perf Data Reported by Different Tools – 4 (Unterschied zwischen Leistungsdaten unterschiedlicher Tools – 4)](http://go.microsoft.com/fwlink/?LinkId=177863) in **Maoni's Weblog** auf MSDN. Treten Seitenfehler auf oder wird die Anwendung aufgrund von Aufgaben mit höherer Priorität auf dem Computer vorzeitig entfernt, werden diese zusätzlichen Verzögerungen bei der Berechnung des Werts für die GC-Zeitdauer in Prozent berücksichtigt.

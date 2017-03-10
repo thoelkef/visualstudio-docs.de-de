@@ -1,33 +1,48 @@
 ---
-title: "Gewusst wie: Verwenden reservierter XML-Zeichen in Projektdateien | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "MSBuild verwenden von reservierten XML-Zeichen"
-  - "MSBuild reservierte XML-Zeichen"
+title: 'Vorgehensweise: Verwenden reservierter XML-Zeichen in Projektdateien | Microsoft-Dokumentation'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- MSBuild, using reserved XML characters
+- MSBuild, reserved XML characters
 ms.assetid: 1ae37275-96bf-4e6e-897b-6b048e5bbe93
 caps.latest.revision: 14
-caps.handback.revision: 14
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# Gewusst wie: Verwenden reservierter XML-Zeichen in Projektdateien
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 3ba7680d46345f2b49019659c715cfb418933d39
+ms.openlocfilehash: f4b909c055e6ae3734ef8d53717c119c534689df
+ms.lasthandoff: 02/22/2017
 
-Wenn Sie Projektdateien erstellen, müssen Sie reservierte XML-Zeichen, z. B. in Eigenschaftswerte oder Aufgabe Parameterwerte verwenden. Einige reservierten Zeichen müssen jedoch durch eine benannte Entität ersetzt werden, so, dass die Projektdatei analysiert werden kann.  
+---
+# <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Gewusst wie: Verwenden reservierter XML-Zeichen in Projektdateien
+Wenn Sie Projektdateien erstellen, müssen Sie reservierte XML-Zeichen verwenden, z.B. in Eigenschaftswerten oder Aufgabenparameterwerten. Einige reservierte Zeichen müssen jedoch durch eine benannte Entität ersetzt werden, sodass die Projektdatei analysiert werden kann.  
   
-## <a name="using-reserved-characters"></a>Verwenden von reservierten Zeichen  
+## <a name="using-reserved-characters"></a>Reservierte Zeichen verwenden  
  Die folgende Tabelle beschreibt die reservierten XML-Zeichen, die durch die entsprechende benannte Entität ersetzt werden müssen, damit die Projektdatei analysiert werden kann.  
   
-|Reservierte Zeichen|Benannte Entität|  
+|Reserviertes Zeichen|Benannte Entität|  
 |------------------------|------------------|  
 |\<|&lt;|  
 |>|&gt;|  
@@ -35,18 +50,18 @@ Wenn Sie Projektdateien erstellen, müssen Sie reservierte XML-Zeichen, z. B. in
 |"|&quot;|  
 |'|&apos;|  
   
-#### <a name="to-use-double-quotes-in-a-project-file"></a>Verwenden Sie doppelte Anführungszeichen in einer Projektdatei  
+#### <a name="to-use-double-quotes-in-a-project-file"></a>Doppelte Anführungszeichen in einer Projektdatei verwenden  
   
--   Ersetzen Sie die doppelten Anführungszeichen durch die entsprechenden benannten Entität &quot;. Um beispielsweise doppelte Anführungszeichen zu setzen die `EXEFile` Element aus, geben:  
+-   Ersetzen Sie die doppelten Anführungszeichen durch die entsprechende benannte Entität &quot;. Um beispielsweise doppelte Anführungszeichen um die `EXEFile`-Elementliste zu setzen, geben Sie Folgendes ein:  
   
-    ```  
+    ```xml  
     <Message Text="The output file is "@(EXEFile)"."/>  
     ```  
   
 ## <a name="example"></a>Beispiel  
- Im folgenden Codebeispiel werden doppelte Anführungszeichen zum Markieren Sie des Dateinamen in der Meldung, die ausgegeben wird von der Projektdatei.  
+ Im folgenden Codebeispiel werden doppelte Anführungszeichen zum Markieren des Dateinamens in der Meldung benutzt, die von der Projektdatei ausgegeben wird.  
   
-```  
+```xml  
 <Project DefaultTargets="Compile"  
     xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >  
     <!-- Set the application name as a property -->  
@@ -74,5 +89,5 @@ Wenn Sie Projektdateien erstellen, müssen Sie reservierte XML-Zeichen, z. B. in
 ```  
   
 ## <a name="see-also"></a>Siehe auch  
- [Referenz zu MSBuild-](../msbuild/msbuild-reference.md)
- [MSBuild](../msbuild/msbuild1.md)
+ [MSBuild-Referenz](../msbuild/msbuild-reference.md)
+ [MSBuild](../msbuild/msbuild.md)

@@ -1,0 +1,164 @@
+---
+title: MSBuild-Eigenschaften | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- MSBuild, properties
+ms.assetid: 962912ac-8931-49bf-a88c-0200b6e37362
+caps.latest.revision: 32
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 3ba7680d46345f2b49019659c715cfb418933d39
+ms.openlocfilehash: 6a83d555cf8968b6c1419633730e4b80d3b9aa3d
+ms.lasthandoff: 02/22/2017
+
+---
+# <a name="msbuild-properties"></a>MSBuild-Eigenschaften
+Eigenschaften sind Name/Wert-Paare, die zur Konfiguration von Builds verwendet werden können. Sie sind hilfreich, um Werte an Aufgaben zu übergeben, Bedingungen auszuwerten und Werte zu speichern, auf die in der gesamten Projektdatei verwiesen wird.  
+  
+## <a name="defining-and-referencing-properties-in-a-project-file"></a>Definieren von und Verweisen auf Eigenschaften in einer Projektdatei  
+ Eigenschaften werden deklariert, indem ein Element mit dem Namen der Eigenschaft als untergeordnetes Element eines [PropertyGroup](../msbuild/propertygroup-element-msbuild.md)-Elements erstellt wird. Durch das folgende XML wird beispielsweise die Eigenschaft `BuildDir` mit dem Wert `Build` erstellt.  
+  
+```xml  
+<PropertyGroup>  
+    <BuildDir>Build</BuildDir>  
+</PropertyGroup>  
+```  
+  
+ In der gesamten Projektdatei wird mit der Syntax $(`PropertyName`) auf Eigenschaften verwiesen. Beispielsweise wird mit $(BuildDir) auf die Eigenschaft im vorangehenden Beispiel verwiesen.  
+  
+ Eigenschaftswerte können durch Neudefinieren der Eigenschaft geändert werden. Der Wert der Eigenschaft `BuildDir` kann mit folgendem XML geändert werden:  
+  
+```xml  
+<PropertyGroup>  
+    <BuildDir>Alternate</BuildDir>  
+</PropertyGroup>  
+```  
+  
+ Eigenschaften werden in der Reihenfolge ausgewertet, in der sie in der Projektdatei angezeigt werden. Der neue Wert für `BuildDir` muss deklariert werden, nachdem der alte Wert zugewiesen wurde.  
+  
+## <a name="reserved-properties"></a>Reservierte Eigenschaften  
+ Einige Eigenschaftennamen werden von MSBuild reserviert, um Informationen zur Projektdatei und zu den Binärdateien von MSBuild zu speichern. Auf diese Eigenschaften wird wie auf jede andere Eigenschaft mit der $-Notation verwiesen. Beispielsweise gibt $(MSBuildProjectFile) den vollständigen Namen der Projektdatei einschließlich der Dateierweiterung zurück.  
+  
+ Weitere Informationen finden Sie unter [How to: Reference the Name or Location of the Project File](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) (Vorgehensweise: Verweisen auf Namen oder Speicherort der Projektdatei) und [MSBuild Reserved and Well-Known Properties](../msbuild/msbuild-reserved-and-well-known-properties.md) (Reservierte und bekannte Eigenschaften für MSBuild).  
+  
+## <a name="environment-properties"></a>Umgebungseigenschaften  
+ Auf Umgebungsvariablen in Projektdateien kann auf die gleiche Weise verwiesen werden wie auf reservierte Eigenschaften. Um die `PATH`-Umgebungsvariable in der Projektdatei zu verwenden, verwenden Sie beispielsweise $(Path). Wenn das Projekt eine Eigenschaftendefinition enthält, die denselben Namen wie eine Umgebungseigenschaft hat, wird der Wert der Umgebungsvariablen von der Eigenschaft im Projekt überschrieben.  
+  
+ Jedes MSBuild-Projekt hat einen isolierten Umgebungsblock: Es sieht nur Lese- und Schreibvorgänge im eigenen Block.  MSBuild liest Umgebungsvariablen nur, wenn die Eigenschaftenauflistung vor der Auswertung oder Erstellung der Projektdatei initialisiert wird. Danach sind Umgebungseigenschaften statisch, d. h jedes generierte Tool beginnt mit denselben Namen und Werten.  
+  
+ Verwenden Sie die [Eigenschaftenfunktionen](../msbuild/property-functions.md) System.Environment.GetEnvironmentVariable, um den aktuellen Wert von Umgebungsvariablen aus einem generierten Tool abzurufen. Als bevorzugte Methode dient jedoch die Verwendung der Aufgabenparameter <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A>. Die Umgebungseigenschaften, die in diesem Zeichenfolgenarray festgelegt sind, können an das generierte Tool übergeben werden, ohne die Systemumgebungsvariablen zu beeinflussen.  
+  
+> [!TIP]
+>  Nicht alle Umgebungsvariablen werden gelesen, um sie zu anfänglichen Eigenschaften zu machen. Jede Umgebungsvariable, deren Name kein gültiger MSBuild-Eigenschaftenname ist, wie beispielsweise "386", wird ignoriert.  
+  
+ Weitere Informationen finden Sie unter [How to: Use Environment Variables in a Build](../msbuild/how-to-use-environment-variables-in-a-build.md) (Verwenden von Umgebungsvariablen in einem Build).  
+  
+## <a name="registry-properties"></a>Registrierungseigenschaften  
+ Systemregistrierungswerte können mit der nachfolgend angegebenen Syntax gelesen werden. Dabei steht `Hive` für den Registrierungshive (z. B. HKEY_LOCAL_MACHINE), `Key` steht für den Schlüsselnamen, `SubKey` für den Unterschlüsselnamen, und `Value` ist der Wert des Unterschlüssels.  
+  
+```  
+$(registry:Hive\MyKey\MySubKey@Value)  
+```  
+  
+ Lassen Sie `Value` weg, um den Standardunterschlüsselwert abzurufen.  
+  
+```  
+$(registry:Hive\MyKey\MySubKey)  
+```  
+  
+ Mit diesem Registrierungswert kann eine Buildeigenschaft initialisiert werden. Beispielsweise können Sie mit dem folgenden Code eine Buildeigenschaft erstellen, die die Webbrowser-Homepage für Visual Studio darstellt:  
+  
+```xml  
+<PropertyGroup>  
+  <VisualStudioWebBrowserHomePage>  
+    $(registry:HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\12.0\WebBrowser@HomePage)  
+  </VisualStudioWebBrowserHomePage>  
+<PropertyGroup>  
+```  
+  
+## <a name="global-properties"></a>Globale Eigenschaften  
+ Mit MSBuild können Sie die Eigenschaften in der Befehlszeile mithilfe des Schalters **/property** (oder **/p**) festlegen. Diese globalen Eigenschaftswerte überschreiben Eigenschaftswerte, die in der Projektdatei festgelegt werden. Dies betrifft auch Umgebungseigenschaften, nicht jedoch reservierte Eigenschaften ein, die nicht geändert werden können.  
+  
+ Im folgenden Beispiel wird die globale `Configuration`-Eigenschaft auf `DEBUG` festgelegt.  
+  
+```  
+msbuild.exe MyProj.proj /p:Configuration=DEBUG  
+```  
+  
+ Globale Eigenschaften können auch für untergeordnete Projekte in einem Build mit mehreren Projekten festgelegt oder geändert werden, indem das `Properties`-Attribut der MSBuild-Aufgabe verwendet wird. Weitere Informationen finden Sie unter [MSBuild Task](../msbuild/msbuild-task.md) (MSBuild-Aufgabe).  
+  
+ Wenn Sie eine Eigenschaft angeben, indem Sie das `TreatAsLocalProperty`-Attribut in einem Projekttag verwenden, überschreibt dieser globale Eigenschaftswert nicht den Eigenschaftswert, der in der Projektdatei festgelegt ist. Weitere Informationen finden Sie unter [Project Element (MSBuild)](../msbuild/project-element-msbuild.md) (Project-Element (MSBuild)) und [How to: Build the Same Source Files with Different Options](../msbuild/how-to-build-the-same-source-files-with-different-options.md) (Vorgehensweise: Erstellen identischer Quelldateien mit unterschiedlichen Optionen).  
+  
+## <a name="property-functions"></a>Eigenschaftenfunktionen  
+ Ab .NET Framework Version 4 können Sie Eigenschaftenfunktionen verwenden, um MSBuild-Skripts auszuwerten. Sie können die Systemzeit lesen, Zeichenfolgen vergleichen, reguläre Ausdrücke abgleichen und viele weitere Aktionen ohne MSBuild-Aufgaben im Buildskript ausführen.  
+  
+ Sie können Zeichenfolgen-(Instanz-)Methoden für beliebige Eigenschaftswerte verwenden, und Sie können die statischen Methoden für zahlreiche Systemklassen aufrufen. Beispielsweise können Sie so eine Buildeigenschaft auf das heutige Datum festlegen:  
+  
+```xml  
+<Today>$([System.DateTime]::Now.ToString("yyyy.MM.dd"))</Today>  
+```  
+  
+ Weitere Informationen sowie eine Liste der verfügbaren Eigenschaftenfunktionen finden Sie unter [Property Functions](../msbuild/property-functions.md) (Eigenschaftenfunktionen).  
+  
+## <a name="creating-properties-during-execution"></a>Erstellen von Eigenschaften während der Ausführung  
+ Eigenschaften außerhalb von `Target`-Elementen werden die Werte im Rahmen der Auswertungsphase eines Builds zugewiesen. Während der anschließenden Ausführungsphase können die Eigenschaften erstellt oder geändert werden, wie nachfolgend veranschaulicht:  
+  
+-   Eigenschaften können von einer beliebigen Aufgabe ausgegeben werden. Das [Task](../msbuild/task-element-msbuild.md)-Element muss über ein untergeordnetes [Output](../msbuild/output-element-msbuild.md)-Element mit einem `PropertyName`-Attribut verfügen, um eine Eigenschaft auszugeben.  
+  
+-   Eigenschaften lassen sich mithilfe der [CreateProperty](../msbuild/createproperty-task.md)-Aufgabe ausgeben. Diese Verwendung ist veraltet.  
+  
+-   Ab .NET Framework 3.5 können `Target`-Elemente mit Eigenschaftendeklarationen in `PropertyGroup`-Elementen enthalten sein.  
+  
+## <a name="storing-xml-in-properties"></a>Speichern von XML in Eigenschaften  
+ Eigenschaften können beliebigen XML-Code enthalten, um die Übergabe von Werten an Aufgaben oder das Anzeigen von Protokollierungsinformationen zu unterstützen. Im folgenden Beispiel wird die `ConfigTemplate`-Eigenschaft veranschaulicht, die über einen Wert verfügt, der XML- und andere Eigenschaftenverweise enthält. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ersetzt die Eigenschaftenverweise durch ihre jeweiligen Eigenschaftswerte. Eigenschaftswerte werden in der Reihenfolge zugewiesen, in der sie angezeigt werden. `$(MySupportedVersion)`, `$(MyRequiredVersion)` und `$(MySafeMode)` sollten in diesem Beispiel daher bereits definiert worden sein.  
+  
+```xml  
+  
+<PropertyGroup>  
+    <ConfigTemplate>  
+        <Configuration>  
+            <Startup>  
+                <SupportedRuntime  
+                    ImageVersion="$(MySupportedVersion)"  
+                    Version="$(MySupportedVersion)"/>  
+                <RequiredRuntime  
+                    ImageVersion="$(MyRequiredVersion)  
+                    Version="$(MyRequiredVersion)"  
+                    SafeMode="$(MySafeMode)"/>  
+            </Startup>  
+        </Configuration>  
+    </ConfigTemplate>  
+</PropertyGroup>  
+```  
+  
+## <a name="see-also"></a>Siehe auch  
+ [MSBuild-Grundlagen](../msbuild/msbuild-concepts.md)  
+ [MSBuild](../msbuild/msbuild.md)  
+ [How to: Use Environment Variables in a Build](../msbuild/how-to-use-environment-variables-in-a-build.md)  (Vorgehensweise: Verwenden von Umgebungsvariablen in einem Build)  
+ [How to: Reference the Name or Location of the Project File](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)  (Vorgehensweise: Verweisen auf Namen oder Speicherort der Projektdatei)  
+ [How to: Build the Same Source Files with Different Options](../msbuild/how-to-build-the-same-source-files-with-different-options.md)  (Vorgehensweise: Erstellen identischer Quelldateien mit unterschiedlichen Optionen)  
+ [MSBuild Reserved and Well-Known Properties](../msbuild/msbuild-reserved-and-well-known-properties.md)  (Reservierte und bekannte Eigenschaften für MSBuild)  
+ [Property-Element (MSBuild)](../msbuild/property-element-msbuild.md)

@@ -1,36 +1,51 @@
 ---
-title: "Beispielprojekt zum Erstellen von Komponententests | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Komponententestbeispiel [Visual Studio]"
-  - "Komponententests, Beispiele"
+title: Beispielprojekt zum Erstellen von Komponententests | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- unit test sample [Visual Studio]
+- unit tests, samples
 ms.assetid: db80aaf2-0652-4d3f-a8c5-2a98fd8502a2
 caps.latest.revision: 30
-caps.handback.revision: 30
-ms.author: "mlearned"
-manager: "douge"
----
-# Beispielprojekt zum Erstellen von Komponententests
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: mlearned
+manager: douge
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
+ms.openlocfilehash: 85a4222db883846e2da0bb64b4c39be1e737dcd2
+ms.lasthandoff: 02/22/2017
 
+---
+# <a name="sample-project-for-creating-unit-tests"></a>Beispielprojekt zum Erstellen von Komponententests
 Dieser Beispielcode wird zur Verwendung in den folgenden exemplarischen Vorgehensweisen bereitgestellt:  
   
--   [Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).  Diese exemplarische Vorgehensweise führt Sie durch die Schritte zum Erstellen und Anpassen von Komponententests, deren Ausführung und das Überprüfen der Testergebnisse.  
+-   [Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Diese exemplarische Vorgehensweise führt Sie durch die Schritte zum Erstellen und Anpassen von Komponententests, deren Ausführung und das Überprüfen der Testergebnisse.  
   
--   [Walkthrough: Run tests and view code coverage](http://msdn.microsoft.com/de-de/d4aab8e2-2140-4975-b4e3-41ef3fa944c8).  Diese exemplarische Vorgehensweise veranschaulicht, wie Sie Codeabdeckungsdaten anzeigen, die den Anteil des Projektcodes zeigen, der getestet wird.  
+-   [Exemplarische Vorgehensweise: Ausführen von Tests und Anzeigen der Codeabdeckung](http://msdn.microsoft.com/en-us/d4aab8e2-2140-4975-b4e3-41ef3fa944c8). Diese exemplarische Vorgehensweise veranschaulicht, wie Sie Code Coverage-Daten anzeigen, die den Anteil des Projektcodes zeigen, der getestet wird.  
   
--   [Exemplarische Vorgehensweise: Verwenden des Befehlszeilen\-Testprogramms](../Topic/Walkthrough:%20using%20the%20command-line%20test%20utility.md).  In dieser exemplarischen Vorgehensweise verwenden Sie das Befehlszeilenhilfsprogramm MSTest.exe, um Tests auszuführen und Ergebnisse anzuzeigen.  
+-   [Exemplarische Vorgehensweise: Verwenden des Befehlszeilen-Testprogramms](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867). In dieser exemplarischen Vorgehensweise verwenden Sie das Befehlszeilenhilfsprogramm MSTest.exe, um Tests auszuführen und Ergebnisse anzuzeigen.  
   
-## Beispielcode  
- Der einzige absichtliche Fehler in diesem Beispiel ist, dass die In\-Debit\-Methode „m\_balance \+\= amount“ ein Minuszeichen statt eines Pluszeichens vor dem Gleichheitszeichen haben sollte.  
+## <a name="sample-code"></a>Beispielcode  
+ Der einzige absichtliche Fehler in diesem Beispiel ist, dass die In-Debit-Methode „m_balance += amount“ ein Minuszeichen statt eines Pluszeichens vor dem Gleichheitszeichen haben sollte.  
   
 ```  
 using System;   
@@ -126,12 +141,12 @@ namespace BankAccountNS
 }  
 ```  
   
- \/\* Die in den Beispielen genannten Unternehmen, Organisationen, Produkte, Domänennamen, E\-Mail\-Adressen, Logos, Personen, Orte und Ereignisse sind frei erfunden.  Jede Ähnlichkeit mit tatsächlichen Firmen, Organisationen, Produkten, Domänen, Personen, Orten, Ereignissen, E\-Mail\-Adressen und Logos ist rein zufällig.  \*\/  
+ /* Die in den Beispielen genannten Unternehmen, Organisationen, Produkte, Domänennamen, E-Mail-Adressen, Logos, Personen, Orte und Ereignisse sind frei erfunden.  Jede Ähnlichkeit mit tatsächlichen Firmen, Organisationen, Produkten, Domänen, Personen, Orten, Ereignissen, E-Mail-Adressen und Logos ist rein zufällig. \*/  
   
-## Arbeiten mit dem Code  
- Um mit diesem Code zu arbeiten, müssen Sie dafür zuerst in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ein Projekt erstellen.  Führen Sie die Schritte im Abschnitt „Vorbereiten der exemplarischen Vorgehensweise“ unter [Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) aus.  
+## <a name="working-with-the-code"></a>Arbeiten mit dem Code  
+ Um mit diesem Code zu arbeiten, müssen Sie dafür zuerst in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ein Projekt erstellen. Führen Sie die Schritte im Abschnitt „Vorbereiten der exemplarischen Vorgehensweise“ unter [Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) aus.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)   
- [Walkthrough: Run tests and view code coverage](http://msdn.microsoft.com/de-de/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)   
- [Exemplarische Vorgehensweise: Verwenden des Befehlszeilen\-Testprogramms](../Topic/Walkthrough:%20using%20the%20command-line%20test%20utility.md)
+ [Exemplarische Vorgehensweise: Ausführen von Tests und Anzeigen der Codeabdeckung](http://msdn.microsoft.com/en-us/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)   
+ [Exemplarische Vorgehensweise: Verwenden des Befehlszeilen-Testprogramms](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)

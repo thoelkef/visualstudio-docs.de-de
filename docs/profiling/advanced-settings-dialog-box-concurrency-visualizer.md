@@ -1,91 +1,107 @@
 ---
-title: "Erweiterte Einstellungen (Dialogfeld) (Parallelit&#228;tsschnellansicht) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.cv.settings"
+title: "Erweiterte Einstellungen (Dialogfeld) (Parallelitätsschnellansicht) | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.cv.settings
 ms.assetid: bb3d90aa-5f08-4953-9be0-be6cea11633d
 caps.latest.revision: 9
-caps.handback.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# Erweiterte Einstellungen (Dialogfeld) (Parallelit&#228;tsschnellansicht)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+translationtype: Human Translation
+ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
+ms.openlocfilehash: 0b25d326d103c5da3b09b79d3a574734debed071
+ms.lasthandoff: 02/22/2017
 
-Im Dialogfeld **Erweiterte Einstellungen** in der Parallelitätsschnellansicht verwenden, können Sie steuern, z Ablaufverfolgungen erfasst werden.  Das Dialogfeld verfügt über Registerkarten für Symbole, Nur mein Code, Pufferung, Filtern, CLR\-Ereignisse, Markierung, Anbieter und Dateien.  
+---
+# <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Erweiterte Einstellungen (Dialogfeld) (Parallelitätsschnellansicht)
+Mithilfe des Dialogfelds **Erweiterte Einstellungen** in der Parallelitätsschnellansicht können Sie steuern, wie Ablaufverfolgungen erfasst werden.  Das Dialogfeld enthält Registerkarten für Symbole, „Nur eigenen Code“, Pufferung, Filterung, CLR-Ereignisse, Marker, Anbieter und Dateien.  
   
-## "Symbols"  
- Die Parallelitätsschnellansicht verwendet dieselben Symboleinstellungen wie der Visual Studio\-Debugger.  Die Parallelitätsschnellansicht Einstellungen verwendet, um mit Aufruflisten aufzulösen, die Leistungsdaten zugeordnet werden.  Wenn sie Prozess Ablaufverfolgungen, die Parallelitätsschnellansicht auf die Symbolserver zugreift, die auf der Seite "Einstellungen" angegeben werden.  Wenn auf diese Daten zu einem Netzwerk zugegriffen werden, kann das Ablaufverfolgungsverarbeiten.  Um die Zeitdauer zu reduzieren die erforderlich ist Symbole zu beheben, können Sie Symbole lokal zwischengespeichert.  Wenn Symbole heruntergeladen wurden, lädt Visual Studio sie vom lokalen Cache.  
+## <a name="symbols"></a>Symbole  
+ Die Parallelitätsschnellansicht verwendet die gleichen Symboleinstellungen wie der Visual Studio Debugger. Die Parallelitätsschnellansicht verwendet die Einstellungen zum Auflösen von Aufruflisten, die Leistungsdaten zugeordnet sind.  Bei der Verarbeitung von Ablaufverfolgungen greift die Parallelitätsschnellansicht auf die Symbolserver zu, die auf der Einstellungenseite angegeben sind.  Wenn über ein Netzwerk auf diese Daten zugegriffen wird, wird die Verarbeitung der Ablaufverfolgung verlangsamt.  Um die Zeitspanne zu reduzieren, die erforderlich ist, um Symbole aufzulösen, können Sie Symbole lokal zwischenspeichern. Wenn Symbole heruntergeladen wurden, lädt Visual Studio sie aus dem lokalen Cache.  
   
-## Nur eigenen Code  
- Standardmäßig momentan mein Code der EXE\- und DLL\-Dateien, die mit der aktuellen Projektmappe in Visual Studio zugeordnet werden.  Die Parallelitätsschnellansicht wird diesen Satz Dateien aus, wenn das gerechte My Codefunktion verwenden, um zu Aufruflisten filtern.  Klicken Sie im gerechten My Coderegisterkarte, können Verzeichnisse hinzufügen, die EXE\- und DLL\-Dateien zu Stellen enthalten, die die Parallelitätsschnellansicht für Nur mein Code.  
+## <a name="just-my-code"></a>Nur eigenen Code  
+ „Nur eigenen Code“ ist standardmäßig der Satz von EXE- und DLL-Dateien, die der aktuellen Projektmappe in Visual Studio zugeordnet sind. Die Parallelitätsschnellansicht bewertet diesen Satz von Dateien, wenn Sie das Feature „Nur eigenen Code“ zum Filtern der Aufruflisten verwenden. Auf der Registerkarte „Nur eigenen Code“ können Sie Verzeichnisse, die EXE- und DLL-Dateien enthalten, den Speicherorten hinzufügen, die die Parallelitätsschnellansicht für „Nur eigenen Code“ verwendet.  
   
- Die Pfade des der EXE\- und DLL\-Dateien werden Ablaufverfolgungsdatei in der gespeichert, wenn die Ablaufverfolgung wird erfasst.  Das Ändern dieser Einstellung wirkt sich keine zuvor aufgelisteten Ablaufverfolgungen.  
+ Die Pfade der EXE- und DLL-Dateien werden in der Ablaufverfolgungsdatei gespeichert, wenn die Ablaufverfolgung erfasst wird.  Das Ändern dieser Einstellung wirkt sich nicht auf zuvor erfasste Ablaufverfolgungen aus.  
   
-## Buffering  
- Die Parallelitätsschnellansicht verwendet Ereignisablaufverfolgung für Windows \(ETW\) wenn eine Ablaufverfolgung erfasst.  ETW verwendet verschiedene Puffer, das Ereignisse speichert.  Puffereinstellungen Die standardmäßigen ETW sind möglicherweise nicht in allen Fällen optimal, und in einigen Fällen, könnte Probleme wie verlorene Ereignisse verursachen.  Sie können die Pufferungsregisterkarte verwenden, um ETW\-Puffereinstellungen zu konfigurieren.  Weitere Informationen finden Sie und [Ereignisablaufverfolgung](http://go.microsoft.com/fwlink/?LinkId=234579) [EVENT\_TRACE\_PROPERTIES\-Struktur](http://go.microsoft.com/fwlink/?LinkId=234580).  
+## <a name="buffering"></a>Pufferung  
+ Die Parallelitätsschnellansicht verwendet die Ereignisablaufverfolgung für Windows (Event Tracing for Windows, ETW), wenn sie eine Ablaufverfolgung erfasst.  ETW verwendet beim Speichern von Ereignissen verschiedene Puffer.  Die Standardeinstellungen für ETW-Puffer sind möglicherweise nicht in allen Fällen optimal und könnten in einigen Fällen Probleme wie z.B. den Verlust von Ereignissen verursachen.  Auf der Registerkarte Pufferung können Sie die ETW-Puffereinstellungen konfigurieren. Weitere Informationen finden Sie unter [Event Tracing](http://go.microsoft.com/fwlink/?LinkId=234579) (Ereignisablaufverfolgung) und [EVENT_TRACE_PROPERTIES structure](http://go.microsoft.com/fwlink/?LinkId=234580) (EVENT_TRACE_PROPERTIES-Struktur).  
   
-## Filter  
- Auf der Filterregisterkarte können Sie den Satz von Ereignissen aktivieren, die die Parallelitätsschnellansicht erfasst.  Eine Teilmenge Ereignisse auswählen, schränkt die Typen von Daten, die in Berichten angezeigt werden, wird die Größe der Ablaufverfolgung und reduziert die Uhrzeit ein, die den Prozess Ablaufverfolgungen benötigt wird.  
+## <a name="filter"></a>Filter  
+ Auf der Registerkarte „Filter“ können Sie den Satz der Ereignisse auswählen, die die Parallelitätsschnellansicht erfasst. Die Auswahl einer Teilmenge von Ereignissen schränkt die Typen der Daten ein, die in den Berichten angezeigt werden, reduziert die Größe der einzelnen Ablaufverfolgungen und die Zeit, die erforderlich ist, um Ablaufverfolgungen zu verarbeiten.  
   
-### CLR\-Ereignisse  
- Die Ereignisse, die durch Common Language Runtime \(CLR\) generiert werden, aktivieren die Parallelitätsschnellansicht, um verwalteten Aufruflisten aufzulösen.  Wenn Sie Auflistung CLR\-Ereignisse deaktivieren, wird die Ablaufverfolgungsgröße reduziert, aber mehrere Aufruflisten lösen nicht auf.  Dadurch würde etwa CPU\-Threadaktivität falsch kategorisiert werden.  
+### <a name="clr-events"></a>CLR-Ereignisse  
+ Durch die Common Language Runtime (CLR) generierte Ereignisse ermöglichen der Parallelitätsschnellansicht, verwaltete Aufruflisten aufzulösen.  Wenn Sie das Erfassen von CLR-Ereignissen deaktivieren, wird die Größe der Ablaufverfolgung reduziert, aber einige Aufruflisten können nicht aufgelöst werden.  Infolge dessen könnte manche CPU-Threadaktivität falsch kategorisiert werden.  
   
-### Für systemeigene Prozesse auflisten  
- CLR\-Ereignisse Standardmäßig werden nur erfasst, wenn ein verwalteter Prozess ein Profil erstellt wird, weil sie normalerweise für systemeigene Prozesse nicht erforderlich sind.  In einigen Fällen \(beispielsweise, wenn ein systemeigener Prozess die CLR hostet\), müssen Sie möglicherweise einen systemeigener Prozess für CLR\-Ereignisse sammeln.  Wenn dies der Fall ist, aktivieren Sie das Kontrollkästchen **Für systemeigene Prozesse auflisten**.  
+### <a name="collect-for-native-processes"></a>Erfassen für native Prozesse  
+ Standardmäßig werden CLR-Ereignisse nur erfasst, wenn ein verwalteter Prozess geprofilet wird, da sie normalerweise für native Prozesse nicht erforderlich sind.  In einigen Fällen (wenn z.B. ein nativer Prozess die CLR hostet) müssen Sie möglicherweise CLR-Ereignisse für einen nativen Prozess erfassen.  Wenn dies der Fall ist, aktivieren Sie das Kontrollkästchen **Für systemeigene Prozesse auflisten**.  
   
-### Rundown\-Ereignisse deaktivieren  
- Die CLR generiert Ereignisse von zwei Anbieter: Laufzeit und Rundown.  Wenn Sie CLR\-Ablaufereignisse sammeln möchten, aber Rundownereignisse, sammeln vermeiden möchten, aktivieren Sie das Kontrollkästchen **Rundown\-Ereignisse deaktivieren**.  Dadurch wird die Größe der Ablaufverfolgungsdatei, durch die Auflistung generiert wird, jedoch einige Stapel wurde möglicherweise nicht auf.  Weitere Informationen finden Sie unter [CLR ETW Providers](../Topic/CLR%20ETW%20Providers.md)  
+### <a name="disable-rundown-events"></a>Deaktivieren von Rundown-Ereignissen  
+ Die CLR generiert Ereignisse von zwei Anbietern: Runtime und Rundown.  Wenn Sie CLR-Runtime-Ereignisse erfassen möchten, aber das Erfassen von Rundown-Ereignissen vermeiden möchten, aktivieren Sie das Kontrollkästchen **Rundown-Ereignisse deaktivieren**.  Dies reduziert die Größe der Ablaufverfolgungsdatei, die von der Erfassung generiert wird, aber einige Stapel können möglicherweise nicht aufgelöst werden. Weitere Informationen finden Sie unter [CLR ETW Providers](http://msdn.microsoft.com/Library/0beafad4-b2c8-47f4-b342-83411d57a51f) (CLR-ETW-Anbieter).  
   
-### Samplingereignisse  
- Sie können Samplingereignisse verwenden, um zu Aufruflisten sammeln, die mit Threadausführung zugeordnet werden.  Diese Ereignisse werden etwa einmal pro Millisekunde für Threads erfasst, die im aktuellen Prozess ausführen.  Wenn Sie die Auflistung von Samplingereignissen deaktivieren, wird die Größe der erfassten Ablaufverfolgung reduziert, aber keine mit Aufruflisten anzeigen, die Threadausführung zugeordnet werden.  
+### <a name="sample-events"></a>Samplingereignisse  
+ Sie können Samplingereignisse verwenden, um Aufruflisten zu erfassen, die der Threadausführung zugeordnet sind. Diese Ereignisse werden ungefähr einmal pro Millisekunde für Threads erfasst, die im aktuellen Prozess ausgeführt werden. Wenn Sie die Erfassung von Samplingereignissen deaktivieren, wird die Größe der erfassten Ablaufverfolgung reduziert, aber Sie können keine Aufruflisten anzeigen, die der Threadausführung zugeordnet sind.  
   
-### GPU\-Ereignisse  
- GPU\-Ereignisse sind die Ereignisse, die von DirectX generiert werden.  Wenn Sie die Auflistung von GPU\-Ereignissen deaktivieren, wird die Größe der erfassten Ablaufverfolgung reduziert, aber keine GPU\-Aktivität in der Auslastungsansicht oder DirectX\-Modulaktivität in der Threadansicht anzeigen.  
+### <a name="gpu-events"></a>GPU-Ereignisse  
+ GPU-Ereignisse werden von DirectX generiert. Wenn Sie die Erfassung der GPU-Ereignisse deaktivieren, wird die Größe der erfassten Ablaufverfolgung reduziert, aber Sie können weder GPU-Aktivität in der Auslastungsansicht noch DirectX-Modul-Aktivität in der Threadansicht anzeigen.  
   
-### Datei\-E\/A\-Ereignisse  
- Datei\-E\/A\-Ereignisse stellen auf dem Datenträger im Namen des Stromprozesses dar.  Wenn Sie Datei\-E\/A\-Ereignisse deaktivieren, wird die Größe der Ablaufverfolgung reduziert, aber die Threadansicht meldet keine Informationen über Datenträger\-Vorgänge Datenträgerchannels oder.  
+### <a name="file-io-events"></a>Datei-E/A-Ereignisse  
+ Datei-E/A-Ereignisse stellen Zugriffe auf den Datenträger durch den aktuellen Prozess dar.  Wenn Sie „Datei-E/A-Ereignisse“ deaktivieren, wird die Größe der Ablaufverfolgung reduziert, aber die Threadansicht meldet keine Informationen über Datenträgerkanäle oder Datenträgervorgänge.  
   
-## Markers  
- Auf den Markierungen Registerkarte, können Sie den Satz von ETW\-Anbietern konfigurieren, die als Markierung in der Parallelitätsschnellansicht angezeigt werden.  Sie können die Markerauflistung auf Grundlage Wichtigkeitsstufe und ETW\-Kategorie auch filtern.  Wenn Sie [Parallelitätsschnellansichts\-SDK](../profiling/concurrency-visualizer-sdk.md) verwenden und eigene Markeranbieter verwenden, können Sie diesen hier registrieren, damit er in der Threadansicht wird.  
+## <a name="markers"></a>Marker  
+ Auf der Registerkarte „Marker“ können Sie den Satz von ETW-Anbietern konfigurieren, die als Marker in der Parallelitätsschnellansicht angezeigt werden.  Sie können die Markererfassung auch basierend auf Wichtigkeitsstufe und ETW-Kategorie filtern.  Bei Verwendung des [Parallelitätsschnellansichts-SDK](../profiling/concurrency-visualizer-sdk.md) und Ihres eigenen Markeranbieters können Sie ihn hier registrieren, damit er in der Threadansicht angezeigt wird.  
   
-### Hinzufügen eines neuen Anbieter  
- Wenn der Code unter [Parallelitätsschnellansichts\-SDK](../profiling/concurrency-visualizer-sdk.md) oder ETW\-Ereignisse generiert, die der <xref:System.Diagnostics.Tracing.EventSource> \- Konvention folgen, können Sie diese Ereignisse in der Parallelitätsschnellansicht anzeigen, indem Sie sie in diesem Dialogfeld registrieren.  
+### <a name="adding-a-new-provider"></a>Hinzufügen eines neuen Anbieters  
+ Wenn der Code das [Parallelitätsschnellansichts-SDK](../profiling/concurrency-visualizer-sdk.md) oder generierte ETW-Ereignisse verwendet, die der Konvention <xref:System.Diagnostics.Tracing.EventSource> entsprechen, können Sie diese Ereignisse in der Parallelitätsschnellansicht anzeigen, indem Sie sie in diesem Dialogfeld registrieren.  
   
- Auf Namensfeld geben Sie einen Namen ein, der die Typen von Ereignissen beschreibt, die vom Anbieter generiert werden.  Klicken Sie im GUID\-Gebiet geben Sie die GUID ein, die mit diesem Anbieter zugeordnet ist. \(Eine GUID wird mit jedem ETW\-Anbieter zugeordnet.\)  
+ Geben Sie im Feld „Name“ einen Namen ein, der die Typen von Ereignissen beschreibt, die vom Anbieter generiert werden.  Geben Sie im Feld „GUID“ die GUID ein, die diesem Anbieter zugeordnet ist. (Eine GUID ist jedem ETW-Anbieter zugeordnet.)  
   
- Optional können Sie angeben, ob Ereignisse dieses Anbieters, basierend auf der Kategorie oder Wichtigkeitsstufe herausfiltert.  Sie können das Feld Category verwenden, um auf Grundlage der Parallelitätsschnellansicht SDK\-Kategorien zu filtern.  Hierzu, geben Sie eine durch Trennzeichen getrennte Zeichenfolge von Kategorien oder Bereichen von Kategorien ein.  Dies gibt die Kategorien der Ereignisse im aktuellen Anbieter, um darzustellen.  Wenn Sie einem <xref:System.Diagnostics.Tracing.EventSource> Anbieter hinzufügen, können Sie das Feld Category verwenden, um durch ETW\-Schlüsselwort zu filtern.  Da das Schlüsselwort eine Bitmaske ist, können Sie eine durch Trennzeichen getrennte Zeichenfolge von ganzen Zahlen verwenden, um anzugeben, die Bits in der Maske gesetzt werden.  Durch "1,2 " legt die erste und zweite Bits festgelegt, und dieses übersetzt bis 6 im Dezimal\-.  
+ Optional können Sie angeben, ob Ereignisse von diesem Anbieter basierend auf Kategorie oder Wichtigkeitsstufe herausgefiltert werden.  Sie können mithilfe des Kategoriefelds auf Grundlage der Kategorien des Parallelitätsschnellansicht-SDK filtern.  Geben Sie zu diesem Zweck eine durch Kommas getrennte Zeichenfolge von Kategorien oder einen Bereich von Kategorien ein.  Hiermit geben Sie an, welche Kategorien von Ereignissen im aktuellen Anbieter angezeigt werden.  Wenn Sie einen <xref:System.Diagnostics.Tracing.EventSource>-Anbieter hinzufügen, können Sie das Kategoriefeld zum Filtern nach dem ETW-Schlüsselwort verwenden.  Da das Schlüsselwort eine Bitmaske ist, können Sie eine durch Kommas getrennte Zeichenfolge von ganzen Zahlen verwenden, um anzugeben, welche Bits in der Maske festgelegt sind. Mit „1,2“ legen Sie z.B. das erste und zweite Bit fest, und daraus ergibt sich 6 im Dezimalformat.  
   
- Sie können die Wichtigkeitsstufenliste verwenden, um Ereignisse, die eine Bedeutung oder ETW\-Ebene, die kleiner haben, als der angegebene Wert ist herauszufiltern.  
+ Mit dieser Wichtigkeitsstufenliste können Sie Ereignisse herausfiltern, deren Wichtigkeits- oder ETW-Stufe unter dem angegebenen Wert liegt.  
   
-### Konfigurieren eines vorhandenen Anbieters  
- Um Einstellungen bearbeiten die einem vorhandenen Anbieter zugeordnet werden, wählen Sie diesen in der Liste aus, und wählen Sie dann die Schaltfläche **Anbieter bearbeiten** aus.  Sie können den Namen, die GUID und die Filterungseinstellungen ändern.  
+### <a name="configuring-an-existing-provider"></a>Konfigurieren eines vorhandenen Anbieters  
+ Um Einstellungen zu bearbeiten, die einem vorhandenen Anbieter zugeordnet sind, wählen Sie sie in der Liste aus, und wählen Sie dann die Schaltfläche **Anbieter bearbeiten**.  Sie können Namen, GUID und Filterungseinstellungen ändern.  
   
-### Filter\-Marker\-Daten aus Nebenläufigkeitsschnellansichts\-Berichten Auschecken  
- Wenn Sie keine Daten sollen, damit ein bestimmter Anbieter in zukünftigen Ablaufverfolgungen wird, deaktivieren Sie das Kontrollkästchen neben dem Anbieter, die Sie entfernen möchten.  
+### <a name="filter-marker-data-out-of-concurrency-visualizer-reports"></a>Herausfiltern von Markerdaten aus den Parallelitätsschnellansicht-Berichten  
+ Wenn Sie nicht wünschen, dass die Daten für einen bestimmten Anbieter in zukünftigen Ablaufverfolgungen angezeigt werden, deaktivieren Sie das Kontrollkästchen neben dem Anbieter, den Sie entfernen möchten.  
   
-## Dateien  
- Auf der Registerkarte **Dateien** Sie können das Verzeichnis angeben, unter dem Ablaufverfolgungsdateien jedes Mal eine Ablaufverfolgung erfasst gespeichert werden.  Die Parallelitätsschnellansicht generiert vier Dateien für jede Ablaufverfolgung, die sie erfasst:  
+## <a name="files"></a>Dateien  
+ Auf der Registerkarte **Dateien** können Sie das Verzeichnis angeben, unter dem Ablaufverfolgungsdateien bei jedem Erfassen einer Ablaufverfolgung gespeichert werden.  Die Parallelitätsschnellansicht generiert vier Dateien für jede Ablaufverfolgung, die sie erfasst:  
   
--   Eine Kernelmodusereignisablaufverfolgungsprotokoll\-\(ETL\)\- Datei \(\*.kernel.etl\)  
+-   Eine Ereignisablaufverfolgungs-Protokolldatei (ETL) für den Kernelmodus (*.kernel.etl)  
   
--   Eine Benutzermodusereignisablaufverfolgungsprotokolldatei \(\*.user.etl\)  
+-   Eine Ereignisablaufverfolgungs-Protokolldatei (ETL) für den Benutzermodus (*.user.etl)  
   
--   Eine Nebenläufigkeitsschnellansichts\-Datendatei \(\*.CVData\)  
+-   Eine Parallelitätsschnellansicht-Datendatei (*.CVData)  
   
--   Eine Nebenläufigkeitsschnellansichts\-Ablaufverfolgungsdatei \(\*.CVTrace\)  
+-   Eine Parallelitätsschnellansicht-Ablaufverfolgungsdatei (*.CVTrace)  
   
- Die ETL\-Dateien zwei speichern die unformatierten Ablaufverfolgungsdaten, und die beiden Nebenläufigkeitsschnellansichtsdateien speichern den verarbeiteten Daten.  Die ETL\-Dateien unformatierten werden in der Regel nicht verwendet, nachdem eine Ablaufverfolgung verarbeitet wird.  Das Das Kontrollkästchen aktivieren **Ereignisablaufverfolgungs\-Protokolldateien \(Event Trace Log, ETL\) nach der Analyse löschen** reduziert die Menge der Ablaufverfolgungsdaten, die auf dem Datenträger gespeichert wird.  
+ Die zwei ETL-Dateien speichern die unformatierten Ablaufverfolgungsdaten, und die beiden Parallelitätsschnellansicht-Dateien speichern die verarbeiteten Daten.  Die unformatierten ETL-Dateien werden nach der Verarbeitung einer Ablaufverfolgung in der Regel nicht verwendet.  Wenn Sie das Kontrollkästchen **Ereignisablaufverfolgungs-Protokolldateien (Event Trace Log, ETL) nach der Analyse löschen** aktivieren, wird die Menge der Ablaufverfolgungsdaten verringert, die auf dem Datenträger gespeichert werden.  
   
-## Siehe auch  
- [Nur mein Code](../profiling/just-my-code-threads-view.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Nur eigenen Code](../profiling/just-my-code-threads-view.md)   
  [Parallelitätsschnellansichtsmarker](../profiling/concurrency-visualizer-markers.md)

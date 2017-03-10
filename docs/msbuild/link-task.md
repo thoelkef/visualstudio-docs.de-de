@@ -1,202 +1,217 @@
 ---
-title: "Link-Aufgabe | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCLinkerTool.ForceFileOutput"
-  - "VC.Project.VCLinkerTool.LinkStatus"
-  - "VC.Project.VCLinkerTool.CLRUnmanagedCodeCheck"
-  - "VC.Project.VCLinkerTool.SpecifySectionAttributes"
-  - "VC.Project.VCLinkerTool.SupportNobindOfDelayLoadedDLL"
-  - "VC.Project.VCLinkerTool.MinimumRequiredVersion"
-  - "VC.Project.VCLinkerTool.PerUserRedirection"
-  - "VC.Project.VCLinkerTool.CreateHotPatchableImage"
-  - "VC.Project.VCLinkerTool.DataExecutionPrevention"
-  - "VC.Project.VCLinkerTool.TreatLinkerWarningsAsErrors"
-  - "vc.task.link"
-  - "VC.Project.VCLinkerTool.ImageHasSafeExceptionHandlers"
-  - "VC.Project.VCLinkerTool.CLRSupportLastError"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "MSBuild (Visual C++), Link-Aufgabe"
-  - "Link-Aufgabe (MSBuild (Visual C++))"
+title: Link-Aufgabe | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VC.Project.VCLinkerTool.ForceFileOutput
+- VC.Project.VCLinkerTool.LinkStatus
+- VC.Project.VCLinkerTool.CLRUnmanagedCodeCheck
+- VC.Project.VCLinkerTool.SpecifySectionAttributes
+- VC.Project.VCLinkerTool.SupportNobindOfDelayLoadedDLL
+- VC.Project.VCLinkerTool.MinimumRequiredVersion
+- VC.Project.VCLinkerTool.PerUserRedirection
+- VC.Project.VCLinkerTool.CreateHotPatchableImage
+- VC.Project.VCLinkerTool.DataExecutionPrevention
+- VC.Project.VCLinkerTool.TreatLinkerWarningsAsErrors
+- vc.task.link
+- VC.Project.VCLinkerTool.ImageHasSafeExceptionHandlers
+- VC.Project.VCLinkerTool.CLRSupportLastError
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- MSBuild (Visual C++), Link task
+- Link task (MSBuild (Visual C++))
 ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
 caps.latest.revision: 12
-caps.handback.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# Link-Aufgabe
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
+ms.openlocfilehash: 7efa5c21454ec3cde3e07aa091919703544cc908
+ms.lasthandoff: 02/22/2017
 
-Umschließt das Visual C++-Linkertool link.exe. Das Linkertool verbindet Common Object File Format (COFF)-Objektdateien und Bibliotheken zum Erstellen einer ausführbaren Datei (.exe) oder eine Dynamic Link Library (DLL). Weitere Informationen finden Sie unter [Linkeroptionen](/visual-cpp/build/reference/linker-options).  
+---
+# <a name="link-task"></a>Link-Aufgabe
+Umschließt das Visual C++-Linkertool link.exe. Das Linkertool ist ein Tool, das Objektdateien und Bibliotheken im COFF-Format (Common Object File Format) miteinander verbindet, um eine ausführbare Datei (.exe) oder eine DLL (Dynamic Link Library) zu erstellen. Weitere Informationen finden Sie unter [Linkeroptionen](/visual-cpp/build/reference/linker-options).  
   
 ## <a name="parameters"></a>Parameter  
- Die folgende Tabelle beschreibt die Parameter der **Link** Aufgabe. Die meisten Aufgabenparameter und einige Sätze von Parametern entsprechen einer Befehlszeilenoption.  
+ In der folgenden Tabelle werden die Parameter der **Link**-Aufgabe beschrieben. Die meisten Aufgabenparameter und einige andere Parameter entsprechen einer Befehlszeilenoption.  
   
 -   **AdditionalDependencies**  
   
-     Optionale **String []** Parameter.  
+     Optionaler **String[]**-Parameter.  
   
-     Gibt eine Liste von Eingabedateien, die dem Befehl hinzufügen.  
+     Gibt eine Liste von Eingabedateien an, die dem Befehl hinzugefügt werden sollen.  
   
      Weitere Informationen finden Sie unter [LINK-Eingabedateien](/visual-cpp/build/reference/link-input-files).  
   
 -   **AdditionalLibraryDirectories**  
   
-     Optionale **String []** Parameter.  
+     Optionaler **String[]**-Parameter.  
   
      Überschreibt den Bibliothekspfad der Umgebung. Geben Sie einen Verzeichnisnamen an.  
   
-     Weitere Informationen finden Sie unter [/LIBPATH (Libpath-Pfad)](/visual-cpp/build/reference/libpath-additional-libpath).  
+     Weitere Informationen finden Sie unter [/LIBPATH (Libpath-Pfad hinzufügen)](/visual-cpp/build/reference/libpath-additional-libpath).  
   
 -   **AdditionalManifestDependencies**  
   
-     Optionale **String []** Parameter.  
+     Optionaler **String[]**-Parameter.  
   
-     Gibt Attribute, die in eingefügt werden, die `dependency` Abschnitt der Manifestdatei.  
+     Gibt Attribute an, die in den `dependency`-Abschnitt der Manifestdatei eingefügt werden.  
   
-     Weitere Informationen finden Sie unter [/MANIFESTDEPENDENCY (Specify Manifest Dependencies)](/visual-cpp/build/reference/manifestdependency-specify-manifest-dependencies). Siehe auch "Publisher Configuration Files" auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) Website.  
+     Weitere Informationen finden Sie unter [/MANIFESTDEPENDENCY (Angeben von Manifestabhängigkeiten)](/visual-cpp/build/reference/manifestdependency-specify-manifest-dependencies). Siehe auch „Publisher Configuration Files“ auf der [MSDN](http://go.microsoft.com/fwlink/?LinkId=737)-Website.  
   
 -   **AdditionalOptions**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Eine Liste der Optionen des Linkers wie angegeben in der Befehlszeile. Z. B. **"***option1/option2 /option#*". Mit diesem Parameter können Sie die Optionen des Linkers angeben, die nicht von einem beliebigen anderen dargestellt werden **Link** Task-Parameter.  
+     Eine Liste von Linkeroptionen, wie in der Befehlszeile angegeben. Beispiel: **"***/option1 /option2 /option#*". Verwenden Sie diesen Parameter, um Linkeroptionen anzugeben, die nicht durch einen anderen **Link**-Aufgabenparameter repräsentiert werden.  
   
      Weitere Informationen finden Sie unter [Linkeroptionen](/visual-cpp/build/reference/linker-options).  
   
 -   **AddModuleNamesToAssembly**  
   
-     Optionale **String []** Parameter.  
+     Optionaler **String[]**-Parameter.  
   
-     Fügt einen Modulverweis in eine Assembly.  
+     Fügt einer Assembly einen Modulverweis hinzu.  
   
-     Weitere Informationen finden Sie unter [ASSEMBLYMODULE (Add MSIL-Modul zur Assembly)](/visual-cpp/build/reference/assemblymodule-add-a-msil-module-to-the-assembly).  
+     Weiter Informationen finden Sie unter [/ASSEMBLYMODULE (MSIL-Modul zur Assembly hinzufügen)](/visual-cpp/build/reference/assemblymodule-add-a-msil-module-to-the-assembly).  
   
 -   **AllowIsolation**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true`, bewirkt, dass das Betriebssystem nach Manifesten und lädt. Wenn `false`, gibt an, dass DLLs geladen werden, als ob es kein Manifest gäbe.  
+     `true` bewirkt, dass das Betriebssystem Manifestsuch- und -ladevorgänge durchführt. `false` gibt an, dass DLLs geladen werden, als ob es kein Manifest gäbe.  
   
-     Weitere Informationen finden Sie unter [/ALLOWISOLATION (Manifest Lookup)](/visual-cpp/build/reference/allowisolation-manifest-lookup).  
+     Weitere Informationen finden Sie unter [/ALLOWISOLATION (Manifestsuche)](/visual-cpp/build/reference/allowisolation-manifest-lookup).  
   
 -   **AssemblyDebug**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true`, gibt die **DebuggableAttribute** Attribut zusammen mit Debug Informationen nachverfolgen und deaktiviert die JIT-Optimierungen. Wenn `false`, gibt die **DebuggableAttribute** Attribut aber deaktiviert die Überwachung von Debuginformationen und aktiviert JIT-Optimierungen.  
+     `true` gibt das **DebuggableAttribute**-Attribut mit Debuginformationsnachverfolgung aus und deaktiviert die JIT-Optimierungen. Wenn `false` das **DebuggableAttribute**-Attribut ausgibt, aber Debuginformationsnachverfolgung deaktiviert und JIT-Optimierungen aktiviert.  
   
-     Weitere Informationen finden Sie unter [ASSEMBLYDEBUG (DebuggableAttribute hinzufügen)](/visual-cpp/build/reference/assemblydebug-add-debuggableattribute).  
+     Weitere Informationen finden Sie unter [/ASSEMBLYDEBUG (DebuggableAttribute hinzufügen)](/visual-cpp/build/reference/assemblydebug-add-debuggableattribute).  
   
 -   **AssemblyLinkResource**  
   
-     Optionale **String []** Parameter.  
+     Optionaler **String[]**-Parameter.  
   
-     Erstellt einen Link zu einer .NET Framework-Ressource in der Ausgabedatei an. die Ressourcendatei wird nicht in der Ausgabedatei platziert. Geben Sie den Namen der Ressource.  
+     Erstellt einen Link zu einer .NET Framework-Ressource in der Ausgabedatei. Die Ressourcendatei wird nicht in der Ausgabedatei platziert. Geben Sie den Namen der Ressource an.  
   
-     Weitere Informationen finden Sie unter [/ASSEMBLYLINKRESOURCE (mit .NET Framework-Ressource verknüpfen)](/visual-cpp/build/reference/assemblylinkresource-link-to-dotnet-framework-resource).  
+     Weitere Informationen finden Sie unter [/ASSEMBLYLINKRESOURCE (Mit .NET Framework-Ressource verknüpfen)](/visual-cpp/build/reference/assemblylinkresource-link-to-dotnet-framework-resource).  
   
 -   **AttributeFileTracking**  
   
-     Implizite **booleschen** Parameter.  
+     Impliziter **boolescher** Parameter.  
   
-     Ermöglicht tiefere Datei nachverfolgen, um die inkrementelle Verknüpfung Verhalten zu erfassen. Gibt immer `true` zurück.  
+     Ermöglicht die Nachverfolgung tieferer Dateien, um das inkrementelle Verhalten des Links zu erfassen. Gibt immer `true` zurück.  
   
--   **BaseAddress-Element**  
+-   **BaseAddress**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Legt eine Basisadresse für das Programm oder die DLL erstellt wird. Geben Sie `{address[,size] | @filename,key}` an.  
+     Legt eine Basisadresse für das Programm oder die erstellte DLL fest. Geben Sie `{address[,size] | @filename,key}` an.  
   
-     Weitere Informationen finden Sie unter [/Base (Basisadresse)](/visual-cpp/build/reference/base-base-address).  
+     Weitere Informationen finden Sie unter [/BASE (Basisadresse)](/visual-cpp/build/reference/base-base-address).  
   
 -   **BuildingInIDE**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     True gibt an, dass MSBuild von der IDE aufgerufen wird. Andernfalls gibt an, dass MSBuild von der Befehlszeile aus aufgerufen wird.  
+     Zeigt bei TRUE an, dass MSBuild von der IDE aufgerufen wird. Andernfalls zeigt er an, dass MSBuild von der Befehlszeile aufgerufen wird.  
   
      Dieser Parameter hat keine entsprechende Linkeroption.  
   
 -   **CLRImageType**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Legt den Typ eines Image der common Language Runtime (CLR) fest.  
+     Legt den Typ eines Common Language Runtime (CLR) Images fest.  
   
-     Geben Sie einen der folgenden Werte an, von die jeder einer Linkeroption entspricht.  
+     Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-    -   **Standard-** - *\< none>*  
+    -   **Standard** - *\<none>*  
   
     -   **ForceIJWImage** - **/CLRIMAGETYPE:IJW**  
   
-    -   **ForcePureILImage** - **/CLRIMAGETYPE: PURE**  
+    -   **ForcePureILImage** - **/CLRIMAGETYPE:PURE**  
   
     -   **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**  
   
-     Weitere Informationen finden Sie unter [/CLRIMAGETYPE (angeben Type of CLR Image)](/visual-cpp/build/reference/clrimagetype-specify-type-of-clr-image).  
+     Weitere Informationen finden Sie unter [/CLRIMAGETYPE (Angeben des CLR-Bildtyps)](/visual-cpp/build/reference/clrimagetype-specify-type-of-clr-image).  
   
 -   **CLRSupportLastError**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Behält den letzten Fehlercode von Funktionen, die durch den P/Invoke-Mechanismus aufgerufen.  
+     Behält den letzten Fehlercode von Funktionen bei, die vom P/Invoke-Mechanismus aufgerufen werden.  
   
-     Geben Sie einen der folgenden Werte an, von die jeder einer Linkeroption entspricht.  
+     Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
     -   **Aktiviert** - **/CLRSupportLastError**  
   
-    -   **Deaktivierte** - **/CLRSupportLastError:NO**  
+    -   **Deaktiviert** - **/CLRSupportLastError:NO**  
   
     -   **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**  
   
-     Weitere Informationen finden Sie unter [/CLRSUPPORTLASTERROR (beibehalten letzten Fehlercode für PInvoke-Aufrufe)](/visual-cpp/build/reference/clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls).  
+     Weitere Informationen finden Sie unter [/CLRSUPPORTLASTERROR (Letzten Fehlercode für PInvoke-Aufrufe beibehalten)](/visual-cpp/build/reference/clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls).  
   
 -   **CLRThreadAttribute**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Das Threadingattribut für den Einstiegspunkt des CLR-Programms angibt explizit.  
+     Gibt das Threadingattribut für den Einstiegspunkt des CLR-Programms explizit an.  
   
-     Geben Sie einen der folgenden Werte an, von die jeder einer Linkeroption entspricht.  
+     Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-    -   **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE: KEINE**  
+    -   **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE:NONE**  
   
     -   **MTAThreadingAttribute** - **/CLRTHREADATTRIBUTE:MTA**  
   
     -   **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**  
   
-     Weitere Informationen finden Sie unter [/CLRTHREADATTRIBUTE (Set CLR Thread Attribute)](/visual-cpp/build/reference/clrthreadattribute-set-clr-thread-attribute).  
+     Weitere Informationen finden Sie unter [/CLRTHREADATTRIBUTE (Festlegen des CLR-Threadattributs)](/visual-cpp/build/reference/clrthreadattribute-set-clr-thread-attribute).  
   
 -   **CLRUnmanagedCodeCheck**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Gibt an, ob der Linker **SuppressUnmanagedCodeSecurityAttribute** auf vom Linker generierte P/Invoke-Aufrufe von verwaltetem Code in systemeigene DLLs.  
+     Gibt an, ob der Linker **SuppressUnmanagedCodeSecurityAttribute** auf vom Linker generierte PInvoke-Anrufe von verwaltetem Code an nativen DLLs anwendet.  
   
      Weitere Informationen finden Sie unter [/CLRUNMANAGEDCODECHECK (Hinzufügen von SuppressUnmanagedCodeSecurity-Attribut)](/visual-cpp/build/reference/clrunmanagedcodecheck-add-supressunmanagedcodesecurityattribute).  
   
 -   **CreateHotPatchableImage**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
      Bereitet ein Image für Hotpatching vor.  
   
-     Geben Sie einen der folgenden Werte, die eine Linkeroption entspricht.  
+     Geben Sie einen der folgenden Werte an, der einer Linkeroption entspricht.  
   
     -   **Aktiviert** - **/FUNCTIONPADMIN**  
   
@@ -210,185 +225,185 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool verbindet Common 
   
 -   **DataExecutionPrevention**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true`, gibt an, dass eine ausführbare Datei mit der Windows-Feature Datenausführungsverhinderung kompatibel ist.  
+     `true` gibt an, dass eine ausführbare Datei mit der Windows-Funktion zur Datenausführungsverhinderung kompatibel ist.  
   
      Weitere Informationen finden Sie unter [/NXCOMPAT (kompatibel mit Datenausführungsverhinderung)](/visual-cpp/build/reference/nxcompat-compatible-with-data-execution-prevention).  
   
 -   **DelayLoadDLLs**  
   
-     Optionale **String []** Parameter.  
+     Optionaler **String[]**-Parameter.  
   
-     Mit diesem Parameter wird *Verzögertes Laden* DLLs. Geben Sie den Namen einer DLL für verzögertes Laden.  
+     Dieser Parameter bewirkt ein *verzögertes Laden* des DLLs. Geben Sie den Namen einer DLL an, die mit einer Verzögerung geladen werden soll.  
   
      Weitere Informationen finden Sie unter [/DELAYLOAD (Laden von Import verzögern)](/visual-cpp/build/reference/delayload-delay-load-import).  
   
 -   **DelaySign**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true`, eine Assembly teilweise signiert. Standardmäßig ist der Wert `false`.  
+     `true` signiert eine Assembly teilweise. In der Standardeinstellung ist der Wert `false`.  
   
-     Weitere Informationen finden Sie unter [/delaysign (teilweise Signieren eine Assembly)](/visual-cpp/build/reference/delaysign-partially-sign-an-assembly).  
+     Weitere Informationen finden Sie unter [/DELAYSIGN (Assembly teilweise signieren)](/visual-cpp/build/reference/delaysign-partially-sign-an-assembly).  
   
 -   **Treiber**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Geben Sie diesen Parameter, um einen Windows NT-Kernelmodustreiber zu erstellen.  
+     Geben Sie diesen Parameter an, um einen Windows NT-Kernelmodustreiber zu erstellen.  
   
-     Geben Sie einen der folgenden Werte an, von die jeder einer Linkeroption entspricht.  
+     Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-    -   **NotSet** - *\< none>*  
+    -   **NotSet** - *\<none>*  
   
-    -   **Treiber** - **Image**  
+    -   **Treiber** - **/Driver**  
   
     -   **UpOnly** - **/DRIVER:UPONLY**  
   
-    -   **WDM** - **/DRIVER: WDM**  
+    -   **WDM** - **/DRIVER:WDM**  
   
-     Weitere Informationen finden Sie unter [/Driver (Treiber für Windows NT-Kernel-Modus)](/visual-cpp/build/reference/driver-windows-nt-kernel-mode-driver).  
+     Weitere Informationen finden Sie unter [/DRIVER (Treiber für den Kernelmodus von Windows NT)](/visual-cpp/build/reference/driver-windows-nt-kernel-mode-driver).  
   
 -   **EmbedManagedResourceFile**  
   
-     Optionale **String []** Parameter.  
+     Optionaler **String[]**-Parameter.  
   
-     Bettet eine Ressourcendatei in eine Assembly. Geben Sie den Dateinamen für die angeforderte Ressource. Geben Sie optional den logischen Namen, die zum Laden der Ressource verwendet wird, und die **PRIVATE** Option, die im Assemblymanifest gibt an, dass die Ressourcendatei privat ist.  
+     Bettet eine Ressourcendatei in eine Assembly ein. Geben Sie den Dateinamen für die angeforderte Ressource an. Geben Sie optional den logischen Namen ein, der zum Laden der Ressource verwendet wird, und die **PRIVATE**-Option, die im Assemblymanifest angibt, dass die Ressourcendatei privat ist.  
   
-     Weitere Informationen finden Sie unter [/ASSEMBLYRESOURCE (Embed a Managed Resource)](/visual-cpp/build/reference/assemblyresource-embed-a-managed-resource).  
+     Weitere Informationen finden Sie unter [/ASSEMBLYRESOURCE (Verwaltete Ressource einbetten)](/visual-cpp/build/reference/assemblyresource-embed-a-managed-resource).  
   
 -   **EnableCOMDATFolding**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true`, können Sie identische COMDAT-Faltung.  
+     `true` ermöglicht eine identische COMDAT-Faltung.  
   
-     Weitere Informationen finden Sie unter der `ICF[= iterations]` Argument der [/OPT (Optimierungen)](/visual-cpp/build/reference/opt-optimizations).  
+     Weitere Informationen finden Sie unter dem `ICF[= iterations]`-Argument der [/OPT (Optimierungen)](/visual-cpp/build/reference/opt-optimizations).  
   
 -   **EnableUAC**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true`, gibt an, dass Informationen zur Benutzerkontensteuerung (UAC) in das Programmmanifest eingebettet werden.  
+     `true` gibt an, dass Informationen zur Benutzerkontensteuerung (UAC) in das Programmmanifest eingebettet werden.  
   
-     Weitere Informationen finden Sie unter [/MANIFESTUAC (bettet UAC-Informationen in Manifest)](/visual-cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).  
+     Weitere Informationen finden Sie unter [/MANIFESTUAC (bettet UAC-Informationen in Manifest ein)](/visual-cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).  
   
 -   **EntryPointSymbol**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Gibt eine Einstiegspunktfunktion als Startadresse für eine .exe-Datei oder DLL an. Geben Sie einen Funktionsnamen als Parameterwert an.  
+     Gibt eine Einstiegspunktfunktion als Startadresse für eine EXE-Datei oder DLL an. Geben Sie einen Funktionsnamen als Parameterwert an.  
   
-     Weitere Informationen finden Sie unter [/Entry (Symbol für Einstiegspunkt)](/visual-cpp/build/reference/entry-entry-point-symbol).  
+     Weitere Informationen finden Sie unter [/ENTRY (Symbol für Einstiegspunkt)](/visual-cpp/build/reference/entry-entry-point-symbol).  
   
 -   **FixedBaseAddress**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true`, ein Programm oder eine DLL, die geladen werden kann nur an seine bevorzugte Basisadresse erstellt.  
+     `true` erstellt ein Programm oder eine DLL, das nur an seiner bevorzugten Basisadresse geladen werden kann.  
   
-     Weitere Informationen finden Sie unter [/fixed (Feste Basisadresse)](/visual-cpp/build/reference/fixed-fixed-base-address).  
+     Weitere Informationen finden Sie unter [/FIXED (Feste Basisadresse)](/visual-cpp/build/reference/fixed-fixed-base-address).  
   
 -   **ForceFileOutput**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Weist den Linker an, erstellen Sie eine gültige .exe-Datei oder DLL selbst ein Symbol, aber nicht verwiesen wird definiert, oder mehrfach definiert ist.  
+     Weist den Linker an, eine gültige EXE-Datei oder DLL auch dann zu erstellen, wenn auf ein Symbol verwiesen wird, dieses Symbol aber nicht oder mehrmals definiert wurde.  
   
      Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
     -   **Aktiviert** - **/FORCE**  
   
-    -   **MultiplyDefinedSymbolOnly** - **/Force: Multiple**  
+    -   **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**  
   
-    -   **UndefinedSymbolOnly** - **/FORCE: nicht AUFGELÖSTE**  
+    -   **UndefinedSymbolOnly** - **/FORCE:UNRESOLVED**  
   
-     Weitere Informationen finden Sie unter [/Force (DateiAusgabe erzwingen)](/visual-cpp/build/reference/force-force-file-output).  
+     Weitere Informationen finden Sie unter [//FORCE (Dateiausgabe erzwingen)](/visual-cpp/build/reference/force-force-file-output).  
   
 -   **ForceSymbolReferences**  
   
-     Optionale **String []** Parameter.  
+     Optionaler **String[]**-Parameter.  
   
-     Dieser Parameter weist den Linker an das angegebene Symbol der Symboltabelle hinzuzufügen.  
+     Dieser Parameter weist den Linker an, der Symboltabelle ein bestimmtes Symbol hinzuzufügen.  
   
-     Weitere Informationen finden Sie unter [/Include (Symbolverweise erzwingen)](/visual-cpp/build/reference/include-force-symbol-references).  
+     Weitere Informationen finden Sie unter [/INCLUDE (Symbolverweise erzwingen)](/visual-cpp/build/reference/include-force-symbol-references).  
   
 -   **FunctionOrder**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Dieser Parameter optimiert das Programm durch die Platzierung der angegebenen Paketfunktionen (COMDATs) in das Bild in einer vorherbestimmten Reihenfolge.  
+     Dieser Parameter optimiert das Programm durch die Platzierung der angegebenen Paketfunktionen (COMDATs) in das Image in einer vorherbestimmten Reihenfolge.  
   
-     Weitere Informationen finden Sie unter [/Order (Put Functions in Order)](/visual-cpp/build/reference/order-put-functions-in-order).  
+     Weitere Informationen finden Sie unter [/ORDER (Reihenfolge von Funktionen festlegen)](/visual-cpp/build/reference/order-put-functions-in-order).  
   
 -   **GenerateDebugInformation**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true`, werden Debuginformationen für die .exe-Datei oder DLL erstellt.  
+     `true` erstellt Debuginformationen für die EXE-Datei oder DLL.  
   
-     Weitere Informationen finden Sie unter [/Debug (Debuginfo generieren)](/visual-cpp/build/reference/debug-generate-debug-info).  
+     Weitere Informationen finden Sie unter [/DEBUG (Debuginfo generieren)](/visual-cpp/build/reference/debug-generate-debug-info).  
   
 -   **GenerateManifest**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true`, wird eine Seite-an-Seite-Manifestdatei erstellt.  
+     `true` erstellt eine parallele Manifestdatei.  
   
-     Weitere Informationen finden Sie unter [/Manifest (Create Side-by-Side Assemblymanifest)](/visual-cpp/build/reference/manifest-create-side-by-side-assembly-manifest).  
+     Weitere Informationen finden Sie unter [/MANIFEST (Erstellen eines Manifests für eine parallele Assembly)](/visual-cpp/build/reference/manifest-create-side-by-side-assembly-manifest).  
   
 -   **GenerateMapFile**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true`, erstellt eine *Zuordnungsdatei*. Die Erweiterung der Zuordnungsdatei ist .map.  
+     `true` erstellt eine *Zuordnungsdatei*. Das Suffix der Zuordnungsdatei ist .map.  
   
-     Weitere Informationen finden Sie unter [/Map (Zuordnungsdatei generieren)](/visual-cpp/build/reference/map-generate-mapfile).  
+     Weitere Informationen hierzu finden Sie unter [/MAP (Zuordnungsdatei generieren)](/visual-cpp/build/reference/map-generate-mapfile).  
   
 -   **HeapCommitSize**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Gibt die Menge des physischen Speichers auf dem Heap zu einem Zeitpunkt belegt werden soll.  
+     Gibt die physische Speichermenge auf dem Heap an, die zu einem Zeitpunkt zugeordnet werden soll.  
   
-     Weitere Informationen finden Sie unter der `commit` -Argument in [/HEAP (Heapgröße festlegen)](/visual-cpp/build/reference/heap-set-heap-size). Siehe auch die **HeapReserveSize** Parameter.  
+     Weitere Informationen finden Sie unter dem `commit`-Argument in [/HEAP (Heapgröße festlegen)](/visual-cpp/build/reference/heap-set-heap-size). Siehe auch den **HeapReserveSize**-Parameter.  
   
 -   **HeapReserveSize**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Gibt die gesamte Heapreservierung im virtuellen Speicher an.  
+     Gibt die Gesamtgröße der Heapzuordnung im virtuellen Speicher an.  
   
-     Weitere Informationen finden Sie unter der `reserve` -Argument in [/HEAP (Heapgröße festlegen)](/visual-cpp/build/reference/heap-set-heap-size). Siehe auch die **HeapCommitSize** -Parameter in dieser Tabelle.  
+     Weitere Informationen finden Sie unter dem `reserve`-Argument in [/HEAP (Heapgröße festlegen)](/visual-cpp/build/reference/heap-set-heap-size). Siehe auch den Parameter **HeapCommitSize** in dieser Tabelle.  
   
 -   **IgnoreAllDefaultLibraries**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true`, weist den Linker an, entfernen Sie eine oder mehrere Standardbibliotheken aus der Liste der Bibliotheken durchsucht beim Auflösen externer Verweise.  
+     `true` weist den Linker an, mindestens eine Standardbibliothek aus der Liste der Bibliotheken, die durchsucht werden, zu entfernen, wenn externe Verweise aufgelöst werden.  
   
      Weitere Informationen finden Sie unter [/NODEFAULTLIB (Bibliotheken ignorieren)](/visual-cpp/build/reference/nodefaultlib-ignore-libraries).  
   
 -   **IgnoreEmbeddedIDL**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true`, gibt an, dass die IDL-Attribute im Quellcode nicht in eine IDL-Datei verarbeitet werden sollen.  
+     `true` gibt an, dass IDL-Attribute im Quellcode nicht in einer IDL-Datei verarbeitet werden sollten.  
   
-     Weitere Informationen finden Sie unter [/IGNOREIDL (Don't Process Attributes into MIDL)](/visual-cpp/build/reference/ignoreidl-don-t-process-attributes-into-midl).  
+     Weiter Informationen finden Sie unter [/IGNOREIDL (Attribute nicht in MIDL verarbeiten)](/visual-cpp/build/reference/ignoreidl-don-t-process-attributes-into-midl).  
   
 -   **IgnoreImportLibrary**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true`, gibt an, dass die von dieser Konfiguration generierte Importbibliothek nicht in abhängige Projekte importiert werden soll.  
+     `true` gibt an, dass die von dieser Konfiguration generierte Importbibliothek nicht in abhängige Projekte importiert werden sollte.  
   
      Dieser Parameter entspricht keiner Linkeroption.  
   
 -   **IgnoreSpecificDefaultLibraries**  
   
-     Optionale **String []** Parameter.  
+     Optionaler **String[]**-Parameter.  
   
      Gibt einen oder mehrere Namen der zu ignorierenden Standardbibliotheken an. Trennen Sie mehrere Bibliotheken mit Semikolons.  
   
@@ -396,79 +411,79 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool verbindet Common 
   
 -   **ImageHasSafeExceptionHandlers**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true`, der Linker erstellt ein Abbild nur, wenn auch eine Tabelle sicherer Ausnahmehandler für das Abbild erstellt werden kann.  
+     Bei `true` erstellt der Linker nur dann ein Image, wenn auch eine Tabelle mit den sicheren Ausnahmehandlern des Images erstellt werden kann.  
   
      Weitere Informationen finden Sie unter [/SAFESEH (Abbild verfügt über sichere Ausnahmehandler)](/visual-cpp/build/reference/safeseh-image-has-safe-exception-handlers).  
   
 -   **ImportLibrary**  
   
-     Ein Name der benutzerdefinierten importieren, die die Standard-Bibliotheksnamen ersetzt.  
+     Ein benutzerdefinierter Importbibliotheksname, der den Standard-Bibliotheksnamen ersetzt.  
   
      Weitere Informationen finden Sie unter [/IMPLIB (Name der Importbibliothek)](/visual-cpp/build/reference/implib-name-import-library).  
   
 -   **KeyContainer**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
      Container, der den Schlüssel für eine signierte Assembly enthält.  
   
-     Weitere Informationen finden Sie unter [/keycontainer (Geben Sie einen Schlüsselcontainer zum Signieren einer Assembly)](/visual-cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly). Siehe auch die **KeyFile** -Parameter in dieser Tabelle.  
+     Weitere Informationen finden Sie unter [/KEYCONTAINER (Schlüsselcontainer zum Signieren einer Assembly festlegen)](/visual-cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly). Siehe auch den Parameter **KeyFile** in dieser Tabelle.  
   
 -   **KeyFile**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Gibt eine Datei, die den Schlüssel für eine signierte Assembly enthält.  
+     Gibt eine Datei an, die den Schlüssel für eine signierte Assembly enthält.  
   
-     Weitere Informationen finden Sie unter [/keyfile (Geben Sie Schlüssel oder Schlüsselpaar zum Signieren einer Assembly)](/visual-cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly). Siehe auch die **KeyContainer** Parameter.  
+     Weitere Informationen finden Sie unter [/KEYFILE (Schlüsselcontainer oder Schlüsselpaar zum Signieren einer Assembly festlegen)](/visual-cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly). Siehe auch den Parameter **KeyContainer**.  
   
 -   **LargeAddressAware**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true`, Adressen, die größer als 2 GB von der Anwendung verarbeitet werden kann.  
+     Bei `true` kann die Anwendung Adressen verarbeiten, die größer als 2 GB sind.  
   
-     Weitere Informationen finden Sie unter [/LARGEADDRESSAWARE (umfangreiche Adressen verarbeiten)](/visual-cpp/build/reference/largeaddressaware-handle-large-addresses).  
+     Weitere Informationen finden Sie unter [/LARGEADDRESSAWARE (Umfangreiche Adressen verarbeiten)](/visual-cpp/build/reference/largeaddressaware-handle-large-addresses).  
   
 -   **LinkDLL**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true`, erstellt eine DLL als Hauptausgabe-Datei.  
+     `true` erstellt eine DLL als Hauptausgabedatei.  
   
      Weitere Informationen finden Sie unter [/DLL (DLL erstellen)](/visual-cpp/build/reference/dll-build-a-dll).  
   
 -   **LinkErrorReporting**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Sie können Informationen interner Compilerfehler (ICE) direkt an Microsoft zu senden.  
+     Ermöglicht Ihnen, Informationen über interne Compilerfehler direkt an Microsoft zu senden.  
   
      Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-    -   **NoErrorReport** - **/errorreport: NONE**  
+    -   **NoErrorReport** - **/ERRORREPORT:NONE**  
   
-    -   **PromptImmediately** - **Absturzinformationen**  
+    -   **PromptImmediately** - **/ERRORREPORT:PROMPT**  
   
     -   **QueueForNextLogin** - **/ERRORREPORT:QUEUE**  
   
-    -   **SendErrorReport** - **/errorreport: Send**  
+    -   **SendErrorReport** - **/ERRORREPORT:SEND**  
   
-     Weitere Informationen finden Sie unter [/errorreport (internen Linkerfehlern)](/visual-cpp/build/reference/errorreport-report-internal-linker-errors).  
+     Weitere Informationen finden Sie unter [/ERRORREPORT (Weiterleiten von internen Linkerfehlern)](/visual-cpp/build/reference/errorreport-report-internal-linker-errors).  
   
 -   **LinkIncremental**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true`, wird inkrementelles Verknüpfen aktiviert.  
+     `true` aktiviert die inkrementelle Verknüpfung.  
   
      Weitere Informationen finden Sie unter [/INCREMENTAL (inkrementell verknüpfen)](/visual-cpp/build/reference/incremental-link-incrementally).  
   
 -   **LinkLibraryDependencies**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
      `true` gibt an, dass die Bibliotheksausgaben von Projektabhängigkeiten automatisch eingebunden werden.  
   
@@ -476,127 +491,127 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool verbindet Common 
   
 -   **LinkStatus**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true`, gibt an, dass der Linker eine Statusanzeige angezeigt, die anzeigt, welcher Anteil des abgeschlossen ist.  
+     `true` gibt an, dass der Linker eine Statusanzeige ausgibt, die anzeigt, welcher Prozentsatz des Links abgeschlossen ist.  
   
-     Weitere Informationen finden Sie unter der `STATUS` Argument der [/LTCG (Link-Time Code Generation)](/visual-cpp/build/reference/ltcg-link-time-code-generation).  
+     Weitere Informationen finden Sie unter dem`STATUS`-Argument in [/LTCG (Code zur Verknüpfungszeit generieren)](/visual-cpp/build/reference/ltcg-link-time-code-generation).  
   
 -   **LinkTimeCodeGeneration**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Gibt Optionen für Profilgesteuerte Optimierung.  
+     Gibt Optionen für die profilgesteuerte Optimierung an.  
   
      Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-    -   **Standard-** - *\< none>*  
+    -   **Standard** - *\<none>*  
   
-    -   **UseLinkTimeCodeGeneration** - **"/ LTCG"**  
+    -   **UseLinkTimeCodeGeneration** - **/LTCG**  
   
-    -   **PGInstrument** - **/LTCG: PGINSTRUMENT**  
+    -   **PGInstrument** - **/LTCG:PGInstrument**  
   
-    -   **PGOptimization** - **/LTCG: PGOPTIMIZE**  
+    -   **PGOptimization** - **/LTCG:PGOptimize**  
   
     -   **PGUpdate**  
   
-         \- **PGUPDATE**  
+         \- **/LTCG:PGUpdate**  
   
-     Weitere Informationen finden Sie unter [/LTCG (Link-Time Code Generation)](/visual-cpp/build/reference/ltcg-link-time-code-generation).  
+     Weitere Informationen finden Sie unter [/LTCG (Code zur Verknüpfungszeit generieren)](/visual-cpp/build/reference/ltcg-link-time-code-generation).  
   
 -   **ManifestFile**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Ändert den Standardnamen der Manifestdatei an den angegebenen Dateinamen.  
+     Ändert den Standardnamen der Manifestdatei in den angegebenen Dateinamen.  
   
-     Weitere Informationen finden Sie unter [ManifestFile (Name Manifest File)](/visual-cpp/build/reference/manifestfile-name-manifest-file).  
+     Weitere Informationen finden Sie unter [/MANIFESTFILE (Benennen der Manifestdatei)](/visual-cpp/build/reference/manifestfile-name-manifest-file).  
   
 -   **MapExports**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true`, weist den Linker an, exportierte Funktionen in eine Zuordnungsdatei einzufügen.  
+     `true` weist den Linker an, exportierte Funktionen in eine Zuordnungsdatei einzufügen.  
   
-     Weitere Informationen finden Sie unter der `EXPORTS` Argument der [/MapInfo (Include Information in Mapfile)](/visual-cpp/build/reference/mapinfo-include-information-in-mapfile).  
+     Weitere Informationen finden Sie unter dem `EXPORTS`-Argument in [/MAPINFO (Daten in Zuordnungsdatei einfügen)](/visual-cpp/build/reference/mapinfo-include-information-in-mapfile).  
   
 -   **MapFileName**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Ändert den Standardnamen für die Zuordnung zu dem angegebenen Dateinamen.  
+     Ändert den Standardnamen der Zuordnungsdatei in den angegebenen Dateinamen.  
   
 -   **MergedIDLBaseFileName**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Gibt den Dateinamen und die Erweiterung der IDL-Datei.  
+     Gibt den Dateinamen und die Dateinamenerweiterung der IDL-Datei an.  
   
-     Weitere Informationen finden Sie unter [/IDLOUT (Namen MIDL-Ausgabedateien)](/visual-cpp/build/reference/idlout-name-midl-output-files).  
+     Weitere Informationen finden Sie unter [/IDLOUT (Namen der MIDL-Ausgabedateien)](/visual-cpp/build/reference/idlout-name-midl-output-files).  
   
 -   **MergeSections**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Kombiniert Abschnitte in einem Bild. Geben Sie `from-section=to-section` an.  
+     Kombiniert Abschnitte in einem Image. Geben Sie `from-section=to-section` an.  
   
-     Weitere Informationen finden Sie unter [/Merge (Abschnitte kombinieren)](/visual-cpp/build/reference/merge-combine-sections).  
+     Weitere Informationen finden Sie unter [/MERGE (Abschnitte kombinieren)](/visual-cpp/build/reference/merge-combine-sections).  
   
 -   **MidlCommandFile**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Geben Sie den Namen einer Datei, die MIDL-Befehlszeilenoptionen enthält.  
+     Geben Sie den Namen einer Datei an, die MIDL-Befehlszeilenoptionen enthält.  
   
      Weitere Informationen finden Sie unter [/MIDL (Optionen für MIDL-Befehlszeile festlegen)](/visual-cpp/build/reference/midl-specify-midl-command-line-options).  
   
 -   **MinimumRequiredVersion**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
      Gibt die mindestens erforderliche Version des Subsystems an. Die Argumente sind Dezimalzahlen im Bereich von 0 bis 65535.  
   
 -   **ModuleDefinitionFile**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Gibt den Namen einer [Moduldefinitionsdatei](/visual-cpp/build/reference/module-definition-dot-def-files).  
+     Gibt den Namen einer [Moduldefinitionsdatei](/visual-cpp/build/reference/module-definition-dot-def-files) an.  
   
      Weitere Informationen finden Sie unter [/DEF (Moduldefinitionsdatei festlegen)](/visual-cpp/build/reference/def-specify-module-definition-file).  
   
 -   **MSDOSStubFileName**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Fügt das angegebene MS-DOS-Stub-Programm an ein Win32-Programm an.  
+     Fügt ein MS-DOS-Stubprogramm an ein Win32-Programm an.  
   
-     Weitere Informationen finden Sie unter [/Stub (Name der MS-DOS-Stubdatei)](/visual-cpp/build/reference/stub-ms-dos-stub-file-name).  
+     Weitere Informationen finden Sie unter [/STUB (Name der MS-DOS-Stubdatei)](/visual-cpp/build/reference/stub-ms-dos-stub-file-name).  
   
 -   **NoEntryPoint**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true`, wird eine reine Ressourcen-DLL.  
+     `true` gibt eine DLL an, die nur als Ressource dient.  
   
-     Weitere Informationen finden Sie unter [/NOENTRY (kein Einstiegspunkt)](/visual-cpp/build/reference/noentry-no-entry-point).  
+     Weitere Informationen finden Sie unter [/NOENTRY (Kein Einstiegspunkt)](/visual-cpp/build/reference/noentry-no-entry-point).  
   
 -   **ObjectFiles**  
   
-     Implizite **String []** Parameter.  
+     Impliziter **String[]**-Parameter.  
   
-     Gibt die Objektdateien, die verknüpft sind.  
+     Gibt die Objektdateien an, die verknüpft sind.  
   
 -   **OptimizeReferences**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true`, löscht Funktionen und/oder Daten, die nie verwiesen werden.  
+     `true` schließt Funktionen und/oder Daten aus, auf die nie verwiesen wird.  
   
-     Weitere Informationen finden Sie unter der `REF` -Argument in [/OPT (Optimierungen)](/visual-cpp/build/reference/opt-optimizations).  
+     Weitere Informationen finden Sie unter dem `REF`-Argument der [/OPT (Optimierungen)](/visual-cpp/build/reference/opt-optimizations).  
   
--   **Ausgabedatei**  
+-   **OutputFile**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
      Überschreibt den Standardnamen und den Speicherort des Programms, das der Linker erstellt.  
   
@@ -604,91 +619,91 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool verbindet Common 
   
 -   **PerUserRedirection**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true` und Ausgabe registrieren aktiviert ist, erzwingt Registrierung schreibt in **HKEY_CLASSES_ROOT** umgeleitet werden **HKEY_CURRENT_USER**.  
+     Wenn `true` und Ausgabe registrieren aktiviert ist, erzwingen die Registrierungsschreibvorgänge die Umleitung von **HKEY_CLASSES_ROOT** nach **HKEY_CURRENT_USER**.  
   
 -   **PreprocessOutput**  
   
      Optionaler `ITaskItem[]`-Parameter.  
   
-     Definiert ein Array, der Präprozessorausgabe-Elemente, die genutzt und Aufgaben ausgegeben werden können.  
+     Definiert ein Array von Präprozessor-Ausgabeelementen, die verbraucht und von Aufgaben ausgegeben werden können.  
   
 -   **PreventDllBinding**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true`, Bind.exe gibt an, dass das verknüpfte Image nicht gebunden werden soll.  
+     `true` gibt Bind.exe an, dass das verknüpfte Image nicht gebunden werden soll.  
   
-     Weitere Informationen finden Sie unter [/ALLOWBIND (Prevent DLL Binding)](/visual-cpp/build/reference/allowbind-prevent-dll-binding).  
+     Weitere Informationen finden Sie unter [/ALLOWBIND (DLL-Bindung verhindern)](/visual-cpp/build/reference/allowbind-prevent-dll-binding).  
   
 -   **Profil**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true`, erzeugt eine Ausgabedatei, die mit verwendet werden, kann die **Leistungstools** Profiler.  
+     `true` erstellt eine Ausgabedatei, die mit dem **Leistungstools**-Profiler verwendet werden kann.  
   
-     Weitere Informationen finden Sie unter [/Profile (Leistungstools-Profiler)](/visual-cpp/build/reference/profile-performance-tools-profiler).  
+     Weitere Informationen finden Sie unter [/PROFILE (Leistungstools-Profiler)](/visual-cpp/build/reference/profile-performance-tools-profiler).  
   
 -   **ProfileGuidedDatabase**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Gibt den Namen der PGD-Datei, die zum Speichern von Informationen zum ausgeführten Programm verwendet werden  
+     Gibt den Namen der PGD-Datei an, die zum Speichern von Informationen zum ausgeführten Programm verwendet werden  
   
-     Weitere Informationen finden Sie unter [/PGD (Angeben der Datenbank für die profilgesteuerte Optimierung)](/visual-cpp/build/reference/pgd-specify-database-for-profile-guided-optimizations).  
+     Weitere Informationen finden Sie unter [/PGD (Angeben einer Datenbank für die profilgesteuerte Optimierungen)](/visual-cpp/build/reference/pgd-specify-database-for-profile-guided-optimizations).  
   
 -   **ProgramDatabaseFile**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Gibt einen Namen für die Programmdatenbank (PDB), die der Linker erstellt.  
+     Gibt einen Namen für die Programmdatenbank (PDB) an, die der Linker erstellt.  
   
      Weitere Informationen finden Sie unter [/PDB (Programmdatenbank verwenden)](/visual-cpp/build/reference/pdb-use-program-database).  
   
 -   **RandomizedBaseAddress**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true`, generiert ein ausführbares Abbild, die nach dem Zufallsprinzip zur Ladezeit mit zurückgesetzt werden kann die *Adresse Space Layout Randomization* (ASLR)-Funktion von Windows.  
+     `true` generiert ein ausführbares Image, für das zur Ladezeit mit der *Address Space Layout Randomization*-Funktion (ASLR) von Windows nach dem Zufallsprinzip ein Rebase-Vorgang ausgeführt werden kann.  
   
-     Weitere Informationen finden Sie unter [/DynamicBase (Address Space Layout Randomization verwenden)](/visual-cpp/build/reference/dynamicbase-use-address-space-layout-randomization).  
+     Weitere Informationen finden Sie unter [/DYNAMICBASE (Address Space Layout Randomization verwenden)](/visual-cpp/build/reference/dynamicbase-use-address-space-layout-randomization).  
   
 -   **RegisterOutput**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true`, die primäre Ausgabe dieses Builds registriert.  
+     `true` registriert die primäre Ausgabe dieses Builds.  
   
 -   **SectionAlignment**  
   
-     Optionale **Ganzzahl** Parameter.  
+     Optionaler **Integer**-Parameter.  
   
-     Gibt die Ausrichtung der einzelnen Abschnitte innerhalb des linearen Adressraums des Programms. Der Parameterwert ist eine Einheit Anzahl von Bytes und eine Potenz von zwei ist.  
+     Gibt die Ausrichtung der einzelnen Abschnitte innerhalb des linearen Adressraums des Programms an. Der Parameterwert ist eine Einheit von Bytes und eine Potenz von zwei.  
   
-     Weitere Informationen finden Sie unter [/align (Abschnittsausrichtung)](/visual-cpp/build/reference/align-section-alignment).  
+     Weitere Informationen finden Sie unter [/ALIGN (Abschnittsausrichtung)](/visual-cpp/build/reference/align-section-alignment).  
   
 -   **SetChecksum**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true`, wird die Prüfsumme im Header einer .exe-Datei.  
+     `true` legt die Prüfsumme im Header einer EXE-Datei fest.  
   
-     Weitere Informationen finden Sie unter [/Release (Prüfsumme festlegen)](/visual-cpp/build/reference/release-set-the-checksum).  
+     Weitere Informationen finden Sie unter [/RELEASE (Prüfsumme festlegen)](/visual-cpp/build/reference/release-set-the-checksum).  
   
 -   **ShowProgress**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
      Gibt den Ausführlichkeitsgrad von Statusberichten für die Verknüpfungsoperation an.  
   
      Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-    -   **NotSet** - *\< none>*  
+    -   **NotSet** - *\<none>*  
   
     -   **LinkVerbose** - **/VERBOSE**  
   
-    -   **LinkVerboseLib** - **/verbose: lib**  
+    -   **LinkVerboseLib** - **/VERBOSE:Lib**  
   
     -   **LinkVerboseICF** - **/VERBOSE:ICF**  
   
@@ -698,9 +713,9 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool verbindet Common 
   
     -   **LinkVerboseCLR** - **/VERBOSE:CLR**  
   
-     Weitere Informationen finden Sie unter [/Verbose (Print Progress Messages)](/visual-cpp/build/reference/verbose-print-progress-messages).  
+     Weitere Informationen finden Sie unter [/VERBOSE (Statusmeldungen ausgeben)](/visual-cpp/build/reference/verbose-print-progress-messages).  
   
--   **Datenquellen**  
+-   **Sources**  
   
      Erforderlicher `ITaskItem[]`-Parameter.  
   
@@ -708,55 +723,55 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool verbindet Common 
   
 -   **SpecifySectionAttributes**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Gibt die Attribute eines Abschnitts. Dies überschreibt die Attribute, die beim Kompilieren der OBJ-Datei für den Abschnitt festgelegt wurden.  
+     Gibt die Attribute eines Abschnitts an. Dies überschreibt die Attribute, die beim Kompilieren der OBJ-Datei für den Abschnitt festgelegt wurden.  
   
-     Weitere Informationen finden Sie unter [/Section (Abschnittsattribute festlegen)](/visual-cpp/build/reference/section-specify-section-attributes).  
+     Weitere Informationen finden Sie unter [/SECTION (Abschnittsattribute festlegen)](/visual-cpp/build/reference/section-specify-section-attributes).  
   
 -   **StackCommitSize**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
      Gibt die Menge an physikalischem Speicher in jeder Zuordnung an, wenn zusätzlicher Speicher belegt wird.  
   
-     Weitere Informationen finden Sie unter der `commit` Argument der [/Stack (Stapelreservierungen)](/visual-cpp/build/reference/stack-stack-allocations).  
+     Weitere Informationen finden Sie unter dem `commit`-Argument in [/STACK (Stapelreservierungen)](/visual-cpp/build/reference/stack-stack-allocations).  
   
 -   **StackReserveSize**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Gibt die Gesamtanzahl der stapelreservierung im virtuellen Speicher.  
+     Gibt die Gesamtgröße der Stapelreservierung im virtuellen Speicher an.  
   
-     Weitere Informationen finden Sie unter der `reserve` Argument der [/Stack (Stapelreservierungen)](/visual-cpp/build/reference/stack-stack-allocations).  
+     Weitere Informationen finden Sie unter dem `reserve`-Argument in [/STACK (Stapelreservierungen)](/visual-cpp/build/reference/stack-stack-allocations).  
   
 -   **StripPrivateSymbols**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Erstellt eine zweite Programmdatenbank (PDB)-Datei, die keine Symbole enthält, die Sie nicht an Ihre Kunden verteilen möchten. Geben Sie den Namen der zweiten PDB-Datei.  
+     Erstellt eine zweite Programmdatenbank (PDB)-Datei, die keine Symbole enthält, die Sie nicht an Ihre Kunden verteilen möchten. Geben Sie den Namen der zweiten PDB-Datei an.  
   
      Weitere Informationen finden Sie unter [/PDBSTRIPPED (Private Symbole entfernen)](/visual-cpp/build/reference/pdbstripped-strip-private-symbols).  
   
 -   **SubSystem**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
      Gibt die Umgebung für die ausführbare Datei an.  
   
      Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-    -   **NotSet** - *\< none>*  
+    -   **NotSet** - *\<none>*  
   
-    -   **Konsole** - **/Subsystem: Console**  
+    -   **Konsole** - **/SUBSYSTEM:CONSOLE**  
   
-    -   **Windows** - **/Subsystem: Windows**  
+    -   **Windows** - **/SUBSYSTEM:WINDOWS**  
   
-    -   **Systemeigene** - **/Subsystem: native**  
+    -   **Nativ** - **/SUBSYSTEM:NATIVE**  
   
     -   **EFI-Anwendung** - **/SUBSYSTEM:EFI_APPLICATION**  
   
-    -   **EFI-Start-Service-Treiber** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**  
+    -   **EFI-Startdiensttreiber** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**  
   
     -   **EFI-ROM** - **/SUBSYSTEM:EFI_ROM**  
   
@@ -766,57 +781,57 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool verbindet Common 
   
     -   **POSIX** - **/SUBSYSTEM:POSIX**  
   
-     Weitere Informationen finden Sie unter [/Subsystem (Subsystem angeben)](/visual-cpp/build/reference/subsystem-specify-subsystem).  
+     Weitere Informationen finden Sie unter [/SUBSYSTEM (Subsystem angeben)](/visual-cpp/build/reference/subsystem-specify-subsystem).  
   
 -   **SupportNobindOfDelayLoadedDLL**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true`, weist den Linker nicht bindbar Importadresstabelle (IAT) in das endgültige Image einzuschließen.  
+     `true` weist den Linker an, keine bindbare Importadresstabelle (IAT) in das endgültige Image einzuschließen.  
   
-     Weitere Informationen finden Sie unter der `NOBIND` Argument der [/Delay (Laden von Importeinstellungen verzögern)](/visual-cpp/build/reference/delay-delay-load-import-settings).  
+     Weitere Informationen finden Sie unter dem `NOBIND`-Argument in [/DELAY (Laden von Importeinstellungen verzögern)](/visual-cpp/build/reference/delay-delay-load-import-settings).  
   
 -   **SupportUnloadOfDelayLoadedDLL**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true`, weist die Hilfsfunktion verzögert zu laden, um explizite Entladen der DLL zu unterstützen.  
+     `true` weist die Hilfsfunktion für das verzögerte Laden an, das explizite Entladen der DLL zu unterstützen.  
   
-     Weitere Informationen finden Sie unter der `UNLOAD` Argument der [/Delay (Laden von Importeinstellungen verzögern)](/visual-cpp/build/reference/delay-delay-load-import-settings).  
+     Weitere Informationen finden Sie unter dem `UNLOAD`-Argument in [/DELAY (Laden von Importeinstellungen verzögern)](/visual-cpp/build/reference/delay-delay-load-import-settings).  
   
 -   **SuppressStartupBanner**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **Boolean**-Parameter.  
   
      Bei `true` wird die Anzeige der Copyright- und Versionsnummernmeldung bei Aufgabenstart verhindert.  
   
-     Weitere Informationen finden Sie unter [/nologo (Startbanner unterdrücken) (Linker)](/visual-cpp/build/reference/nologo-suppress-startup-banner-linker).  
+     Weitere Informationen finden Sie unter [/NOLOGO (Startbanner unterdrücken) (Linker)](/visual-cpp/build/reference/nologo-suppress-startup-banner-linker).  
   
 -   **SwapRunFromCD**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true`, weist das Betriebssystem zuerst die Linker-Ausgabe in eine Auslagerungsdatei zu kopieren und dann die Bilddatei von dort aus auszuführen.  
+     `true` weist das Betriebssystem an, zuerst die Linker-Ausgabe in eine Auslagerungsdatei zu kopieren und dann das Image von dort aus auszuführen.  
   
-     Weitere Informationen finden Sie unter der `CD` Argument der [/SWAPRUN (Linkerausgabe in Auslagerungsdatei laden)](/visual-cpp/build/reference/swaprun-load-linker-output-to-swap-file). Siehe auch die **SwapRunFromNET** Parameter.  
+     Weitere Informationen finden Sie unter dem `CD`-Argument in [/SWAPRUN (Linkerausgabe in Auslagerungsdatei laden)](/visual-cpp/build/reference/swaprun-load-linker-output-to-swap-file). Siehe auch den **SwapRunFromNET**-Parameter.  
   
 -   **SwapRunFromNET**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true`, weist das Betriebssystem zuerst die Linker-Ausgabe in eine Auslagerungsdatei zu kopieren und dann die Bilddatei von dort aus auszuführen.  
+     `true` weist das Betriebssystem an, zuerst die Linker-Ausgabe in eine Auslagerungsdatei zu kopieren und dann das Image von dort aus auszuführen.  
   
-     Weitere Informationen finden Sie unter der `NET` Argument der [/SWAPRUN (Linkerausgabe in Auslagerungsdatei laden)](/visual-cpp/build/reference/swaprun-load-linker-output-to-swap-file). Siehe auch die **SwapRunFromCD** -Parameter in dieser Tabelle.  
+     Weitere Informationen finden Sie unter dem `NET`-Argument in [/SWAPRUN (Linkerausgabe in Auslagerungsdatei laden)](/visual-cpp/build/reference/swaprun-load-linker-output-to-swap-file). Siehe auch den **SwapRunFromCD**-Parameter in dieser Tabelle.  
   
 -   **TargetMachine**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
      Gibt die Zielplattform für das Programm oder die DLL an.  
   
      Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-    -   **NotSet** - *\< none>*  
+    -   **NotSet** - *\<none>*  
   
     -   **MachineARM** - **/MACHINE:ARM**  
   
@@ -836,95 +851,95 @@ Umschließt das Visual C++-Linkertool link.exe. Das Linkertool verbindet Common 
   
     -   **MachineTHUMB** - **/MACHINE:THUMB**  
   
-    -   **MachineX64** - **/MACHINE:X 64**  
+    -   **MachineX64** - **/MACHINE:X64**  
   
-    -   **MachineX86** - **/MACHINE:X 86**  
+    -   **MachineX86** - **/MACHINE:X86**  
   
-     Weitere Informationen finden Sie unter [/Machine (Zielplattform angeben)](/visual-cpp/build/reference/machine-specify-target-platform).  
+     Weitere Informationen finden Sie unter [/MACHINE (Zielplattform angeben)](/visual-cpp/build/reference/machine-specify-target-platform).  
   
 -   **TerminalServerAware**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true`, setzt ein Flag in das Feld IMAGE_OPTIONAL_HEADER DllCharacteristics Programm Header des Abbilds optional. Wenn dieses Flag festgelegt ist, wird Terminalserver nicht bestimmte Änderungen an der Anwendung vornehmen.  
+     `true` setzt ein Flag in das Feld IMAGE_OPTIONAL_HEADER DllCharacteristics im optionalen Header des Programm-Images. Wenn dieses Flag festgelegt ist, wird der Terminalserver keine bestimmten Änderungen an der Anwendung vornehmen.  
   
-     Weitere Informationen finden Sie unter [/TSAWARE (Terminal Server beachten Anwendung erstellen)](/visual-cpp/build/reference/tsaware-create-terminal-server-aware-application).  
+     Weitere Informationen finden Sie unter [/TSAWARE (Terminalserverfähige Anwendung erstellen)](/visual-cpp/build/reference/tsaware-create-terminal-server-aware-application).  
   
 -   **TrackerLogDirectory**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
      Gibt das Verzeichnis des Nachverfolgungsprotokolls an.  
   
 -   **TreatLinkerWarningAsErrors**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true`, wird keine Ausgabedatei generiert, wenn der Linker eine Warnung generiert.  
+     `true` bewirkt, dass keine Ausgabedatei generiert wird, wenn der Linker eine Warnung generiert.  
   
      Weitere Informationen finden Sie unter [/WX (Linkerwarnungen als Fehler behandeln)](/visual-cpp/build/reference/wx-treat-linker-warnings-as-errors).  
   
 -   **TurnOffAssemblyGeneration**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true`, ein Bild für die aktuelle Ausgabedatei ohne .NET Framework-Assembly erstellt.  
+     `true` erstellt ein Image für die aktuelle Ausgabedatei ohne eine .NET Framework-Assembly.  
   
-     Weitere Informationen finden Sie unter [/NOASSEMBLY (Erstellen eines MSIL-Moduls)](/visual-cpp/build/reference/noassembly-create-a-msil-module).  
+     Weitere Informationen finden Sie unter [/NOASSEMBLY (MSIL-Modul erstellen)](/visual-cpp/build/reference/noassembly-create-a-msil-module).  
   
 -   **TypeLibraryFile**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Gibt den Dateinamen und die Erweiterung der TLB-Datei. Geben Sie einen Dateinamen oder einen Pfad und Dateinamen ein.  
+     Gibt den Dateinamen und die Dateinamenerweiterung der TLB-Datei an. Geben Sie einen Dateinamen oder einen Pfad und Dateinamen ein.  
   
-     Weitere Informationen finden Sie unter [/TLBOUT (Name. TLB-Datei)](/visual-cpp/build/reference/tlbout-name-dot-tlb-file).  
+     Weitere Informationen finden Sie unter [/TLBOUT (TLB-Datei benennen)](/visual-cpp/build/reference/tlbout-name-dot-tlb-file).  
   
 -   **TypeLibraryResourceID**  
   
-     Optionale **Ganzzahl** Parameter.  
+     Optionaler **Integer**-Parameter.  
   
-     Kennzeichnet einen benutzerdefinierten Wert für die vom Linker erstellte Typbibliothek. Geben Sie einen Wert zwischen 1 und 65535 ein.  
+     Kennzeichnet einen benutzerdefinierten Wert für die vom Linker erstellte Typbibliothek. Geben Sie einen Wert von 1 bis 65535 an.  
   
      Weitere Informationen finden Sie unter [/TLBID (Ressourcen-ID für TypeLib festlegen)](/visual-cpp/build/reference/tlbid-specify-resource-id-for-typelib).  
   
 -   **UACExecutionLevel**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Gibt die angeforderte Ausführungsebene für die Anwendung an, mit der Benutzerkontensteuerung unter ausgeführt wird.  
+     Gibt die angeforderte Ausführungsebene für die Anwendung an, wenn diese mit Benutzerkontensteuerung ausgeführt wird.  
   
      Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
-    -   **"AsInvoker"** - `level='asInvoker'`  
+    -   **AsInvoker** - `level='asInvoker'`  
   
-    -   **"HighestAvailable"** - `level='highestAvailable'`  
+    -   **HighestAvailable** - `level='highestAvailable'`  
   
-    -   **"RequireAdministrator"** - `level='requireAdministrator'`  
+    -   **RequireAdministrator** - `level='requireAdministrator'`  
   
-     Weitere Informationen finden Sie unter der `level` Argument der [/MANIFESTUAC (bettet UAC-Informationen in Manifest)](/visual-cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).  
+     Weitere Informationen finden Sie unter dem `level`-Argument in [/MANIFESTUAC (bettet UAC-Informationen in Manifest ein)](/visual-cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).  
   
 -   **UACUIAccess**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true`, die Anwendung Sicherheitsebenen für Benutzeroberflächen umgangen, und die Eingaben für höhere Berechtigungen von Windows auf dem Desktop, und andernfalls `false`.  
+     Bei `true` umgeht die Anwendung Sicherheitsebenen für Benutzeroberflächen und steuert die Eingabe in Fenster mit höheren Berechtigungen auf dem Desktop; andernfalls `false`.  
   
-     Weitere Informationen finden Sie unter der `uiAccess` Argument der [/MANIFESTUAC (bettet UAC-Informationen in Manifest)](/visual-cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).  
+     Weitere Informationen finden Sie unter dem `uiAccess`-Argument in [/MANIFESTUAC (bettet UAC-Informationen in Manifest ein)](/visual-cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).  
   
 -   **UseLibraryDependencyInputs**  
   
-     Optionale **booleschen** Parameter.  
+     Optionaler **boolescher** Parameter.  
   
-     Wenn `true`, die Eingaben für das Bibliothekarstool verwendet werden, sondern die Bibliotheksdatei beim Bibliothek Projekt Abhängigkeiten gibt sich selbst verknüpft werden.  
+     Bei `true` werden die Eingaben in das Bibliothekstool eher verwendet als die Bibliotheksdatei selbst, wenn Bibliotheksausgaben von Projektabhängigkeiten verknüpft sind.  
   
 -   **Version**  
   
-     Optionale **Zeichenfolge** Parameter.  
+     Optionaler **String**-Parameter.  
   
-     Fügen Sie eine Versionsnummer im Header des .exe oder .dll-Datei. Geben Sie "`major[.minor]`". Die `major` und `minor` Argumente sind Dezimalzahlen im Bereich von 0 bis 65535.  
+     Fügen Sie eine Versionsnummer im Header der EXE- oder DLL-Datei ein. Geben Sie „`major[.minor]`“ an. Die `major` und `minor`-Argumente sind Dezimalzahlen von 0 bis 65535.  
   
-     Weitere Informationen finden Sie unter [/Version (Versionsinformationen)](/visual-cpp/build/reference/version-version-information).  
+     Weitere Informationen finden Sie unter [/VERSION (Versionsinformationen)](/visual-cpp/build/reference/version-version-information).  
   
 ## <a name="see-also"></a>Siehe auch  
- [Referenz zu Aufgaben](../msbuild/msbuild-task-reference.md)
+ [Aufgabenreferenz](../msbuild/msbuild-task-reference.md)

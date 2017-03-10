@@ -1,23 +1,39 @@
 ---
-title: "Schreiben von Komponententests f&#252;r C-C++ mit dem Microsoft-Komponententestframework f&#252;r C++ | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/08/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Schreiben von Komponententests für C/C++ mit dem Microsoft-Komponententest-Framework für C++ | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 14
-caps.handback.revision: 14
-ms.author: "mlearned"
-manager: "douge"
----
-# Schreiben von Komponententests f&#252;r C/C++ mit dem Microsoft-Unittest-Framework f&#252;r C++
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: mlearned
+manager: douge
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+translationtype: Human Translation
+ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
+ms.openlocfilehash: dd88409bb0774342e0a9f50178e1204cabf72e46
+ms.lasthandoff: 02/22/2017
 
+---
+# <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Schreiben von Komponententests für C/C++ mit dem Microsoft-Unittest-Framework für C++
 In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht verwalteten Code erstellen. Nicht verwalteter Code wird gelegentlich als „systemeigener Code“ bezeichnet.  
   
  Das folgende Verfahren enthält wichtige Informationen, die Ihnen den Einstieg erleichtern. Die späteren Abschnitte enthalten eine exemplarische Vorgehensweise, in der die ersten Schritte ausführlicher beschrieben werden.  
@@ -82,7 +98,7 @@ In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht v
   
         3.  Wählen Sie im Kontextmenü für einen Test **Ausgewählten Test debuggen** , um den Test im Debugger auszuführen.  
   
-##  <a name="a-namewalkthrougha-walkthrough-developing-an-unmanaged-dll-with-test-explorer"></a><a name="walkthrough"></a> Exemplarische Vorgehensweise: Entwickeln einer nicht verwalteten DLL mit Test-Explorer  
+##  <a name="walkthrough"></a> Exemplarische Vorgehensweise: Entwickeln einer nicht verwalteten DLL mit Test-Explorer  
  Sie können diese exemplarische Vorgehensweise für die Entwicklung Ihrer eigenen DLL anpassen. Die wichtigsten Schritte werden im Folgenden beschrieben:  
   
 1.  [Erstellen Sie ein systemeigenes Testprojekt](#unitTestProject). Die Tests werden in einem anderem Projekt als dem DLL-Projekt erstellt, das Sie entwickeln.  
@@ -101,7 +117,7 @@ In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht v
   
 8.  [Isolieren Sie Einheiten von externen Ressourcen](https://msdn.microsoft.com/library/hh549174.aspx). In der Regel ist eine DLL abhängig von anderen Komponenten des Systems, das Sie entwickeln, wie z. B. anderen DLLs, Datenbanken, oder Remotesubsystemen. Es ist hilfreich, jede Einheit isoliert von seinen Abhängigkeiten zu testen. Externe Komponenten können bewirken, dass Tests langsamer ausgeführt werden. Während der Entwicklung sind die anderen Komponenten möglicherweise noch nicht vollständig.  
   
-###  <a name="a-nameunittestprojecta-create-a-native-unit-test-project"></a><a name="unitTestProject"></a> Ein natives Komponententestprojekt erstellen  
+###  <a name="unitTestProject"></a> Ein natives Komponententestprojekt erstellen  
   
 1.  Wählen Sie im Menü **Datei** die Optionsfolge **Neu**, **Projekt**aus.  
   
@@ -150,13 +166,13 @@ In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht v
   
          ![Komponententest-Explorer mit einem bestandenen Test](../test/media/utecpp04.png "UteCpp04")  
   
-###  <a name="a-namecreatedllprojecta-create-an-unmanaged-dll-project"></a><a name="createDllProject"></a> Erstellen eines nicht verwalteten DLL-Projekts  
+###  <a name="createDllProject"></a> Erstellen eines nicht verwalteten DLL-Projekts  
   
 1.  Erstellen Sie ein **Visual C++** -Projekt mithilfe der Vorlage **Win32-Projekt** .  
   
      In dieser exemplarischen Vorgehensweise wird das Projekt `RootFinder`benannt.  
   
-     ![Erstellen eines C&#43;&#43;-Win32-Projekts](../test/media/utecpp05.png "UteCpp05")  
+     ![Erstellen eines C&#43;&#43; Win32-Projekts](../test/media/utecpp05.png "UteCpp05")  
   
 2.  Wählen Sie **DLL** und **Symbole exportieren** im Win32-Anwendungs-Assistenten aus.  
   
@@ -180,19 +196,19 @@ In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht v
     }  
     ```  
   
-###  <a name="a-namecoupleprojectsa-couple-the-test-project-to-the-dll-project"></a><a name="coupleProjects"></a> Verknüpfen des Testprojekts mit dem DLL-Projekt  
+###  <a name="coupleProjects"></a> Verknüpfen des Testprojekts mit dem DLL-Projekt  
   
 1.  Fügen Sie das DLL-Projekt den Projektverweisen des Testprojekts hinzu:  
   
     1.  Öffnen Sie die Eigenschaften des Testprojekts, und wählen Sie **Allgemeine Eigenschaften**, **Framework und Verweise**aus.  
   
-         ![C&#43;&#43;-Projekteigenschaften – Framework und Verweise](../test/media/utecpp08.png "UteCpp08")  
+         ![C&#43;&#43;-Projekteigenschaften &#45; Framework und Verweise](../test/media/utecpp08.png "UteCpp08")  
   
     2.  Wählen Sie **Neuen Verweis hinzufügen**.  
   
          Wählen Sie im Dialogfeld **Verweis hinzufügen** das DLL-Projekt aus, und wählen Sie **Hinzufügen**.  
   
-         ![C&#43;&#43;-Projekteigenschaften – neuen Verweis hinzufügen](../test/media/utecpp09.png "UteCpp09")  
+         ![C&#43;&#43;-Projekteigenschaften &#45; neuen Verweis hinzufügen](../test/media/utecpp09.png "UteCpp09")  
   
 2.  Schließen Sie in der Komponententest-CPP-Datei die .h-Datei des DLL-Codes ein:  
   
@@ -226,11 +242,11 @@ In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht v
   
 5.  Wählen Sie im Test-Explorer **Alle ausführen**aus.  
   
-     ![Komponententest-Explorer – einfacher Test bestanden](../test/media/utecpp10.png "UteCpp10")  
+     ![Komponententest-Explorer &#45; einfacher Test bestanden](../test/media/utecpp10.png "UteCpp10")  
   
  Sie haben den Test und die Codeprojekte eingerichtet und überprüft, dass Sie Tests ausführen können, die Funktionen im Codeprojekt ausführen. Jetzt können Sie beginnen, echte Tests und Code zu schreiben.  
   
-###  <a name="a-nameiteratea-iteratively-augment-the-tests-and-make-them-pass"></a><a name="iterate"></a> Die Tests iterativ steigern und erfolgreich abschließen  
+###  <a name="iterate"></a> Die Tests iterativ steigern und erfolgreich abschließen  
   
 1.  Fügen Sie einen neuen Test hinzu:  
   
@@ -283,12 +299,12 @@ In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht v
   
      Beide Tests sind erfolgreich.  
   
-     ![Komponententest-Explorer – Bereichstest bestanden](../test/media/utecpp12.png "UteCpp12")  
+     ![Komponententest-Explorer &#45; Bereichstest bestanden](../test/media/utecpp12.png "UteCpp12")  
   
     > [!TIP]
     >  Entwickeln Sie Code, indem Sie währenddessen Tests hinzufügen. Stellen Sie sicher, dass alle Tests nach jeder Iteration erfolgreich sind.  
   
-###  <a name="a-namedebuga-debug-a-failing-test"></a><a name="debug"></a> Einen nicht bestandenen Test debuggen  
+###  <a name="debug"></a> Einen nicht bestandenen Test debuggen  
   
 1.  Fügen Sie einen anderen Test hinzu:  
   
@@ -358,12 +374,12 @@ In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht v
   
 6.  Alle Tests sind nun erfolgreich.  
   
-     ![Alle Tests erfolgreich](../test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")  
+     ![Alle Tests bestanden](../test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")  
   
 > [!TIP]
 >  Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie die parallele Testausführung über die Umschaltfläche ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.  
   
-###  <a name="a-namerefactora-refactor-the-code-without-changing-tests"></a><a name="refactor"></a> Umgestalten des Codes, ohne Tests zu ändern  
+###  <a name="refactor"></a> Umgestalten des Codes, ohne Tests zu ändern  
   
 1.  Vereinfachen Sie die zentrale Berechnung in der SquareRoot-Funktion:  
   
@@ -397,5 +413,5 @@ In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht v
  [Verwenden von Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md)   
  [Überblick über die Interoperabilität von verwaltetem/nicht verwaltetem Code](http://msdn.microsoft.com/library/ms973872.aspx)   
  [Debuggen von nativem Code](../debugger/debugging-native-code.md)   
- [Exemplarische Vorgehensweise: Erstellen und Verwenden einer Dynamic Link Library (C++)](../Topic/Walkthrough:%20Creating%20and%20Using%20a%20Dynamic%20Link%20Library%20\(C++\).md)   
+ [Exemplarische Vorgehensweise: Erstellen und Verwenden einer Dynamic Link Library (C++)](http://msdn.microsoft.com/Library/3ae94848-44e7-4955-bbad-7d40f493e941)   
  [Importieren und Exportieren](/visual-cpp/build/importing-and-exporting)
