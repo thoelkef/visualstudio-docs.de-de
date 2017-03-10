@@ -41,9 +41,9 @@
 ### [Optionen, Text-Editor, Alle Sprachen](options-text-editor-all-languages.md)
 ### [Optionen, Text-Editor, Alle Sprachen, Registerkarten](options-text-editor-all-languages-tabs.md)
 ### [Optionen, Text-Editor, Standard (Visual Basic)](options-text-editor-basic-visual-basic.md)
-### [Optionen, Text-Editor, C/C++, Formatierung](options-text-editor-c-cpp-formatting.md)
-### [Optionen, Text-Editor, C/C++, Erweitert](options-text-editor-c-cpp-advanced.md)
-### [Optionen, Text-Editor, C/C++, Experimentell](options-text-editor-c-cpp-experimental.md)
+### [Optionen, Text-Editor, C-C++, Formatierung](options-text-editor-c-cpp-formatting.md)
+### [Optionen, Text-Editor, C-C++, Erweitert](options-text-editor-c-cpp-advanced.md)
+### [Optionen, Text-Editor, C-C++, Experimentell](options-text-editor-c-cpp-experimental.md)
 ### [Optionen, Text-Editor, C#, Formatierung](options-text-editor-csharp-formatting.md)
 ### [Optionen, Text-Editor, C#, Erweitert](options-text-editor-csharp-advanced.md)
 ### [Optionen, Text-Editor, C#, IntelliSense](options-text-editor-csharp-intellisense.md)
@@ -88,6 +88,7 @@
 ### [Toolbox, Registerkarte „Komponenten“](toolbox-components-tab.md)
 ### [Toolbox, Registerkarte „Daten“](toolbox-data-tab.md)
 ### [Toolbox, Registerkarte „HTML“](toolbox-html-tab.md)
+## [XAML-Designer, Seite „Optionen“](xaml-designer.md)
 # [Devenv-Befehlszeilenschalter](devenv-command-line-switches.md)
 ## [-? (devenv.exe)](q-devenv-exe.md)
 ## [-Build (devenv.exe)](build-devenv-exe.md)
@@ -162,8 +163,3 @@
 ## [Produkte und Dienste von Microsoft für Barrierefreiheit](accessibility-products-and-services-from-microsoft.md)
 ## [Ressourcen für das Entwerfen von Anwendungen mit Barrierefreiheit](resources-for-designing-accessible-applications.md)
 ## [Proxyautorisierung erforderlich](proxy-authorization-required.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

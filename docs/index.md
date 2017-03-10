@@ -4,9 +4,9 @@ hide_bc: true
 title: Visual Studio-Dokumentation
 description: "Erfahren Sie, wie Sie Visual Studio 2017 für die Entwicklung von Anwendungen, Diensten und Tools in der Sprache Ihrer Wahl für Ihre Plattformen und Geräte verwenden können."
 translationtype: Human Translation
-ms.sourcegitcommit: c1eb1e58e423ff79928708c1fd83a4342eec489d
-ms.openlocfilehash: 030d9cf3f28bf03afba94638da7929105e5746db
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: 2a782993b8e2787c99c384c6df9c72316fe11521
+ms.lasthandoff: 03/07/2017
 
 ---
 <div id="main" class="v2">
@@ -32,7 +32,7 @@ ms.lasthandoff: 02/22/2017
                 </a>
             </li>
             <li>
-                <a href="/visualstudio/ide/get-started-with-visual-studio">
+                <a href="/visualstudio/ide/visual-studio-ide">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -61,7 +61,7 @@ ms.lasthandoff: 02/22/2017
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>Neuigkeiten in Visual Studio 2017 RC</h3>
+                                    <h3>Neues in Visual Studio 2017</h3>
                                 </div>
                             </div>
                         </div>
@@ -95,7 +95,7 @@ ms.lasthandoff: 02/22/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Entwicklung auf der universellen Windows-Plattform</h3>
+                                                    <h3>Entwicklung für die universelle Windows-Plattform</h3>
                                                     <p>Entwickeln Sie Anwendungen für Windows 10 mit der universellen Windows-Plattform und C#, VB, oder C++.</p>
                                                 </div>
                                             </div>
@@ -114,8 +114,8 @@ ms.lasthandoff: 02/22/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>.NET-Desktopentwicklung</h3>
-                                                    <p>Erstellen Sie mithilfe von .NET Framework WPF-, Windows Forms- und Konsolenanwendungen.</p>
+                                                    <h3>.NET Desktopentwicklung</h3>
+                                                    <p>Erstellen Sie mithilfe von .NET Framework WPF Windows Forms und Konsolenanwendungen.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -134,7 +134,7 @@ ms.lasthandoff: 02/22/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Windows-Entwicklung mit C++</h3>
-                                                    <p>Erstellen Sie mit den Funktionen von MFC, ATL und des Microsoft C++-Toolsets klassische Windows-basierte Anwendungen.</p>
+                                                    <p>Erstellen Sie klassische Windows-basierte Anwendungen mithilfe der Leistung von MFC, ATL und des Microsoft C++-Toolsets.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -144,11 +144,11 @@ ms.lasthandoff: 02/22/2017
                         </ul>
                     </li>
                     <li>
-                        <a href="#web">Web &amp; Cloud</a>
+                        <a href="#web">Web &amp; und Cloud</a>
                         <ul id="web" class="cardsC">
                             <li>
                                 <div class="container intro">
-                                    <p>Entwickeln Sie moderne Web-Apps mit Visual Studio und leistungsfähigen offenen Tools.
+                                    <p>Entwickeln Sie moderne Web-Anwendungen mit Visual Studio und leistungsfähigen Open-Tools.
                                     </p>
                                 </div>
                             </li>
@@ -164,7 +164,7 @@ ms.lasthandoff: 02/22/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Webentwicklung</h3>
-                                                    <p>Erstellen Sie Web-Apps mit ASP.NET und standardbasierten Technologien wie HTML, JavaScript und CSS.</p>
+                                                    <p>Erstellen Sie Web-Anwendungen mit ASP.NET und standardbasierten Technologien wie HTML, JavaScript und CSS.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -182,7 +182,7 @@ ms.lasthandoff: 02/22/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Azure-Entwicklung und -Verwaltung</h3>
+                                                    <h3>Azure-Entwicklung und Verwaltung</h3>
                                                     <p>In der Microsoft-Cloud können Sie ganz einfach skalierbare Apps und Dienste erstellen, testen, bereitstellen und verwalten.</p>
                                                 </div>
                                             </div>
@@ -201,7 +201,7 @@ ms.lasthandoff: 02/22/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Python</h3>
+                                                    <h3>Python (Vorschau)</h3>
                                                     <p>Interaktive Entwicklung für Python-Apps mithilfe von vertrauten Frameworks wie Django und Flask.</p>
                                                 </div>
                                             </div>
@@ -221,7 +221,7 @@ ms.lasthandoff: 02/22/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Node.js</h3>
-                                                    <p>Erstellen Sie skalierbare Netzwerkanwendungen mit Node.js, einer asynchronen, ereignisgesteuerten JavaScript-Laufzeit.</p>
+                                                    <p>Erstellen Sie skalierbare Netzwerkanwendungen mit Node.js, eine asynchrone, ereignisgesteuerte JavaScript-Laufzeit.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -246,26 +246,7 @@ ms.lasthandoff: 02/22/2017
                                         </div>
                                     </div>
                                 </a>
-                            </li>
-                            <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=834748">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_web-6.svg" src="./images/vs_web-6.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Data Science und analytische Anwendungen</h3>
-                                                    <p>Sprachen und Tools zum Erstellen von Data Science-Anwendungen, einschließlich Python, R und F#.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
+                            </li>                            
                             <li>
                                 <a href="https://go.microsoft.com/fwlink/?linkid=833075">
                                     <div class="cardSize">
@@ -277,8 +258,8 @@ ms.lasthandoff: 02/22/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Office-/SharePoint-Entwicklung</h3>
-                                                    <p>Erstellen Sie Office- und SharePoint-Add-Ins und -Lösungen mit C#, Visual Basic und JavaScript.</p>
+                                                    <h3>Office/SharePoint-Entwicklung</h3>
+                                                    <p>Erstellen Sie Office und SharePoint-Add-Ins und Lösungen mit C#, Visual Basic und JavaScript.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -288,7 +269,7 @@ ms.lasthandoff: 02/22/2017
                         </ul>
                     </li>
                     <li>
-                        <a href="#mobile">Mobil &amp; Gaming</a>
+                        <a href="#mobile">Mobil &amp; und Gaming</a>
                         <ul id="mobile" class="cardsC">
                             <li>
                                 <div class="container intro">
@@ -363,7 +344,7 @@ ms.lasthandoff: 02/22/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Entwicklung mobiler Apps mit C++</h3>
+                                                    <h3>Mobile Entwicklung mit C++</h3>
                                                     <p>Erstellen Sie mit C++ plattformübergreifende Anwendungen für iOS, Android oder Windows.</p>
                                                 </div>
                                             </div>
@@ -382,7 +363,7 @@ ms.lasthandoff: 02/22/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Entwicklung von Spielen mit C++</h3>
+                                                    <h3>Spieleentwicklung mit C++</h3>
                                                     <p>Verwenden Sie die volle Leistung von C++, um professionelle Spiele zu erstellen, die von DirectX, Unreal oder Cocos2D unterstützt werden.</p>
                                                 </div>
                                             </div>
@@ -438,13 +419,13 @@ ms.lasthandoff: 02/22/2017
                 </ul>
             </li>
             <li>
-                <a href="#features">Features</a>
+                <a href="#features">Funktionen</a>
                 <ul id="features">
                     <li>
                         <a href="#features1"> </a>
                         <ul id="features1" class="cardsC">
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833076">
+                                <a href="https://docs.microsoft.com/en-us/visualstudio/ide/index-writing-code">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -531,7 +512,7 @@ ms.lasthandoff: 02/22/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Bereitstellen</h3>
-                                                    <p>Geben Sie Ihre Apps beispielsweise mit WebDeploy, InstallShield und Continuous Integration frei.</p>
+                                                    <p>Geben Sie beispielsweise Ihre Apps mit WebDeploy, InstallShield und Continuous Integration frei.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -568,8 +549,8 @@ ms.lasthandoff: 02/22/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Verbessern der Leistung</h3>
-                                                    <p>Ermitteln Sie Engpässe, und optimieren Sie die Codeleistung mithilfe von Diagnosetools.
+                                                    <h3>Leistungssteigerung</h3>
+                                                    <p>Ermitteln Sie Engpässe und optimieren Sie die Codeleistung mithilfe von Diagnosetools.
                                                     </p>
                                                 </div>
                                             </div>
@@ -638,7 +619,7 @@ ms.lasthandoff: 02/22/2017
                                             <div class="cardText">
                                                 <a href="https://go.microsoft.com/fwlink/?linkid=833060">
                                                     <h3>Visual Basic</h3>
-                                                    <p>Eine moderne, leicht zu lernende, objektorientierte Programmiersprache für die .NET-Plattform, mit einem Fokus auf dem leichten Erstellen von Windows-Anwendungen.</p>
+                                                    <p>Eine moderne, leicht zu lernende, objektorientierte Programmiersprache für die .NET-Plattform, mit einem Fokus auf das leichte Erstellen von Windows-Anwendungen.</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -732,7 +713,7 @@ ms.lasthandoff: 02/22/2017
                                             </div>
                                             <div class="cardText">
                                                 <a href="https://go.microsoft.com/fwlink/?linkid=833068">
-                                                    <h3>Python</h3>
+                                                    <h3>Python (Vorschau)</h3>
                                                     <p>Eine dynamische objektorientierte Programmiersprache auf hohem Niveau, die häufig für eine schnelle Anwendungsentwicklung verwendet wird.</p>
                                                 </a>
                                             </div>
@@ -775,7 +756,7 @@ ms.lasthandoff: 02/22/2017
                 <a href="https://go.microsoft.com/fwlink/?linkid=833101"> Twitter </a>
             </li>
             <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833103"> Stack Overflow </a>
+                <a href="https://go.microsoft.com/fwlink/?linkid=833103"> Stapelüberlauf </a>
             </li>
             <li>
                 <a href="https://go.microsoft.com/fwlink/?linkid=833104"> Problemberichte </a>
@@ -786,3 +767,4 @@ ms.lasthandoff: 02/22/2017
         </ul>
     </div>
 </div>
+
