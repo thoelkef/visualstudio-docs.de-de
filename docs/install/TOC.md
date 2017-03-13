@@ -4,4 +4,5 @@
 # [Administratorhandbuch für Visual Studio](visual-studio-administrator-guide.md)
 ## [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 ## [Erstellen einer Offlineinstallation von Visual Studio](create-an-offline-installation-of-visual-studio.md)
+## [Automatisches Anwenden von Produktschlüsseln bei der Bereitstellung von Visual Studio](automatically-apply-product-keys-when-deploying-visual-studio.md)
 ## [Arbeitsauslastung und Komponenten-IDs von Visual Studio](workload-and-component-ids.md)
