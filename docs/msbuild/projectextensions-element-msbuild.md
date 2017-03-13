@@ -1,7 +1,7 @@
 ---
 title: ProjectExtensions-Element (MSBuild) | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 03/13/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -45,39 +45,39 @@ ms.lasthandoff: 02/22/2017
 ---
 # <a name="projectextensions-element-msbuild"></a>ProjectExtensions-Element (MSBuild)
 Ermöglicht es [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projektdateien, nicht-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Informationen zu enthalten. Alles innerhalb eines `ProjectExtensions`-Elements wird von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ignoriert.  
-  
+
  \<Project>  
  \<ProjectExtensions>  
-  
+
 ## <a name="syntax"></a>Syntax  
-  
-```xml  
+
+```  
 <ProjectExtensions>  
     Non-MSBuild information to include in file.  
 </ProjectExtensions>  
 ```  
-  
+
 ## <a name="attributes-and-elements"></a>Attribute und Elemente  
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
-  
+
 ### <a name="attributes"></a>Attribute  
  Keine  
-  
+
 ### <a name="child-elements"></a>Untergeordnete Elemente  
  Keine  
-  
+
 ### <a name="parent-elements"></a>Übergeordnete Elemente  
-  
+
 |Element|Beschreibung|  
 |-------------|-----------------|  
 |[Projekt](../msbuild/project-element-msbuild.md)|Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projektdatei.|  
-  
+
 ## <a name="remarks"></a>Hinweise  
  Nur ein `ProjectExtensions`-Element kann in einem [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekt verwendet werden.  
-  
+
 ## <a name="example"></a>Beispiel  
  Das folgende Codebeispiel zeigt Informationen aus der IDE, die in einem `ProjectExtensions`-Element gespeichert werden.  
-  
+
 ```xml  
 <ProjectExtensions>  
     <VSIDE>  
@@ -89,7 +89,8 @@ Ermöglicht es [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstec
     </VSIDE>  
 </ProjectExtensions>  
 ```  
-  
+
 ## <a name="see-also"></a>Siehe auch  
  [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)  
  [MSBuild](../msbuild/msbuild.md)
+
