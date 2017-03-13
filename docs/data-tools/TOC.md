@@ -64,7 +64,6 @@
 #### [Die Eigenschaft <property name> kann nicht gelöscht werden, da sie Teil der Zuordnung <association name> ist](the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)
 #### [Die Eigenschaft <property name> kann nicht gelöscht werden](the-property-property-name-cannot-be-deleted.md)
 #### [Die Verbindungseigenschaft in der Application Settings-Datei fehlt oder ist fehlerhaft](the-connection-property-in-the-application-settings-file-is-missing-or-incorrect.md)
-<!--#### [You have selected a database object from an unsupported database provider](you-have-selected-a-database-object-from-an-unsupported-database-provider.md)-->
 #### [Eine Zuordnung <association name> kann nicht erstellt werden – Eigenschaftstypen stimmen nicht überein](cannot-create-an-association-association-name-property-types-do-not-match.md)
 #### [Warnung. Sie haben Änderungen am Dialogfeld "Verhalten konfigurieren" vorgenommen, die nicht übernommen wurden](warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied.md)
 #### [Diese verknüpfte Methode ist die dahinter liegende Methode für die folgenden standardmäßigen Insert-, Update- und Delete-Methoden](this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods.md)
@@ -99,7 +98,7 @@
 ### [Gewusst wie: Anpassen der Erstellung von Beschriftungen für datengebundene Steuerelemente durch Visual Studio](customize-how-visual-studio-creates-captions-for-data-bound-controls.md)
 ## [Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio](windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 ### [Gewusst wie: Herstellen einer Verbindung mit Daten in einem Dienst](how-to-connect-to-data-in-a-service.md)
-### [Exemplarische Vorgehensweise: Erstellen eines einfachen WCF-Diensts in Windows Forms](walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)
+### [Exemplarische Vorgehensweise: Erstellen eines WCF-Diensts in Windows Forms](walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)
 ### [Exemplarische Vorgehensweise: Erstellen von und Zugreifen auf einen WCF-Datendienst in Visual Studio](walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)
 ### [Arbeiten mit einem konzeptionellen Modell (WCF Data Services)](working-with-a-conceptual-model-wcf-data-services.md)
 ### [Problembehandlung bei Dienstverweisen](troubleshooting-service-references.md)
