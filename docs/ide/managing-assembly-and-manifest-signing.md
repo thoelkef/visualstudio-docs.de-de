@@ -1,7 +1,7 @@
 ---
 title: Verwalten der Signierung von Assemblys und Manifesten | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 02/17/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -33,9 +33,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 85474fe229980aac7c57205f111656d4264045d1
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 68358885d93e9e6b7f231750c35065be9521c3fe
+ms.openlocfilehash: b1ce5a5c4dc05cb9d0a2ebcb68a10a5054b68893
+ms.lasthandoff: 03/01/2017
 
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Verwalten der Signierung von Assemblys und Manifesten
@@ -46,6 +46,9 @@ Durch eine Signierung mit starkem Namen erhalten Softwarekomponenten eine global
  Informationen zum Signieren von Assemblys in Visual Basic- und C#-Projekten finden Sie unter [Erstellen und Verwenden von Assemblys mit starkem Namen](http://msdn.microsoft.com/Library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9).  
   
  Informationen zum Signieren von Assemblys in Visual C++-Projekten finden Sie unter [Assemblys mit starken Namen (Assemblysignierung) (C++/CLI)](/visual-cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).  
+
+> [!NOTE]
+>  Die Signierung mit starken Namen schützt nicht gegen Reverse Engineering (Zurückentwicklung) der Assembly.  Informationen zum Schutz gegen Reverse Engineering finden Sie unter [Dotfuscator Community Edition (CE)](dotfuscator/index.md).
   
 ## <a name="asset-types-and-signing"></a>Objekttypen und Signierung  
  Sie können .NET-Assemblys und Anwendungsmanifeste signieren. Hierzu gehört Folgendes:  
