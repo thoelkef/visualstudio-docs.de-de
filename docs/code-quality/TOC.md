@@ -272,7 +272,7 @@
 ### [Verwenden von Regelsätzen zum Festlegen von C++-Regeln für die Ausführung](using-rule-sets-to-specify-the-cpp-rules-to-run.md)
 ### [Verwenden der C++-Core-Richtlinienprüfungen](using-the-cpp-core-guidelines-checkers.md)
 ### [Übersicht über die Codeanalyse für C/C++](code-analysis-for-c-cpp-overview.md)
-### [Gewusst wie: Festlegen von Codeanalyseeigenschaften für C/C++-Projekte](how-to-set-code-analysis-properties-for-c-cpp-projects.md)
+### [Vorgehensweise: Festlegen von Codeanalyseeigenschaften für C/C++-Projekte](how-to-set-code-analysis-properties-for-c-cpp-projects.md)
 ### [Exemplarische Vorgehensweise: Analysieren von C/C++-Code auf Fehler](walkthrough-analyzing-c-cpp-code-for-defects.md)
 #### [Demobeispiel](demo-sample.md)
 ### [Verwenden von SAL-Anmerkungen zum Reduzieren von C/C++-Codefehlern](using-sal-annotations-to-reduce-c-cpp-code-defects.md)
