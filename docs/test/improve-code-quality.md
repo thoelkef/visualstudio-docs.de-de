@@ -1,7 +1,7 @@
 ---
 title: "Verbessern der Codequalität"
 ms.custom: na
-ms.date: 10/14/2016
+ms.date: 02/17/2017
 ms.reviewer: na
 ms.suite: na
 ms.technology:
@@ -30,9 +30,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 93f70de0acfa8b5efcfe141a1f8060061a4ba15d
-ms.openlocfilehash: 0c439304b8a23166293fc4cc6d984947fd51f133
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 7a282fc04c1eb01f0c56b1d76880276fc270686d
+ms.openlocfilehash: df5195e7cc435f6da8ebfee4589d7c6258018993
+ms.lasthandoff: 03/01/2017
 
 ---
 # <a name="improve-code-quality"></a>Verbessern der Codequalität
@@ -50,8 +50,6 @@ Was ist Codequalität? Korrektheit, Wartbarkeit und sogar Eleganz spielen beim E
 |[Komponententest für Code](../test/unit-test-your-code.md)|Test-Explorer vereinfacht die Integration von Komponententests in die Entwicklungspraxis. Sie können entweder das Microsoft-Komponententest-Framework oder ein Drittanbieter- oder Open-Source-Framework verwenden.|  
 |[Analysieren der Anwendungsqualität](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)|Analysetools für statischen Code finden Entwurfs-, Nutzungs-, Wartbarkeits- und Formatprobleme in C++ und verwaltetem Code. Viele dieser Probleme können zu Fehlern führen, die in der Standardtestumgebung nur schwer zu reproduzieren sind.|  
 |[Messen von Komplexität und Verwaltbarkeit verwalteten Codes](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Bei der Codemetrik handelt es sich um eine Reihe von Softwaremaßstäben, die Entwicklern einen besseren Einblick in den von ihnen entwickelten Code bieten. Die Metrik umfasst einen Wartbarkeitsindex für Funktionen und Klassen, die zyklomatische Komplexität von Funktionen, die Vererbungstiefe von Klassen und die Anzahl der Kopplungen von Klassen.|  
-|[PreEmptive Analytics für Team Foundation Server](http://msdn.microsoft.com/library/hh973124.aspx)|PreEmptive Analytics für TFS CE unterstützt Sie dabei, feedbackorientierte Entwicklungsprozesse in den Entwicklungsworkflow zu integrieren. Sobald Fehler während der Ausführung von Anwendungen auftreten, senden die Anwendungen automatisch Ausnahmeberichtdaten an Ihren PreEmptive Analytics-Dienst. Der Dienst erstellt dann auf Grundlage von selbst definierten Regeln und Schwellenwerten Arbeitselemente in Microsoft Team Foundation Server oder aktualisiert diese.|  
-|[PreEmptive Dotfuscator und Analytics CE](assetId:///25d195d4-9f76-4dcc-9fbb-eeb9bdca9a3f)|PreEmptive Dotfuscator ist ein .NET-Verbergungs- und Komprimierungsprogramm. Es schützt Programme vor Reverse Engineering und macht sie gleichzeitig kleiner und effizienter.|  
   
 ## <a name="related-scenarios"></a>Ähnliche Szenarien  
  [Nutzen von Visual Studio und Team Foundation Server für Application Lifecycle Management](assetId:///7ae9182f-4762-4bd3-b238-39ce987932e5)  
@@ -62,6 +60,9 @@ Was ist Codequalität? Korrektheit, Wartbarkeit und sogar Eleganz spielen beim E
   
  [Testen der Anwendung](https://www.visualstudio.com/docs/test/overview)  
  Verwenden Sie [!INCLUDE[vsPreShort](../test/includes/vspreshort_md.md)] und [!INCLUDE[vsUltShort](../test/includes/vsultshort_md.md)], um Ihre Produktivität für den gesamten Testlebenszyklus zu steigern. Mit [!INCLUDE[vsPreShort](../test/includes/vspreshort_md.md)] oder [!INCLUDE[vsUltShort](../test/includes/vsultshort_md.md)] planen Sie den Testaufwand. Sie können sowohl manuelle als auch automatisierte Tests erstellen, verwalten, bearbeiten und ausführen. Außerdem können Sie den Testfortschritt anhand Ihres Plans überprüfen.  
+  
+ [Schützen der Anwendung mit PreEmptive Protection – Dotfuscator](../ide/dotfuscator/index.md)  
+ Verwenden Sie die kostenlose Dotfuscator Community Edition (CE), um Geschäftsgeheimnisse und sonstiges geistiges Eigentum zu sichern, Piraterie und Fälschungen zu reduzieren und Schutz vor Manipulationen und nicht autorisiertem Debuggen zu bieten.  Dotfuscator schützt und sichert kompilierte Assemblys ohne zusätzliche Programmierung und sogar ohne Zugriff auf den Quellcode.
   
  [Erstellen der Anwendung](https://www.visualstudio.com/docs/build/overview)  
  Sie können [!INCLUDE[esprbuild](../test/includes/esprbuild_md.md)] verwenden, um automatisierte Builds für den Code zu erstellen und zu verwalten. [!INCLUDE[esprbuild](../test/includes/esprbuild_md.md)] ermöglicht das Erstellen von Ablageservern zum Bereitstellen von Builds. Außerdem können Sie Buildtrends analysieren.  

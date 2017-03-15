@@ -29,9 +29,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 65bceca75b87aaf187926ebbed1a54ce4f0e8eec
-ms.openlocfilehash: 5978cf2b0edd1e5d979f6f9679717389278a1f55
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 8a3c6e60d0ea85d93281764ec3a3435538b9baa0
+ms.openlocfilehash: b81ce391ad842085f95ff0a4a6e906036406230a
+ms.lasthandoff: 02/28/2017
 
 ---
 # <a name="memory-usage"></a>Speicherauslastung
@@ -41,7 +41,7 @@ Suchen Sie Speicherverluste und ineffiziente Arbeitsspeichernutzung während des
   
 -   Sie können auch einen Vergleich zweier Momentaufnahmen einer App vornehmen, um Bereiche im Code aufzuspüren, die dazu führen, dass die Arbeitsspeichernutzung im Zeitverlauf zunimmt.  
   
- Folgende Abbildung zeigt das Fenster **Diagnosetools** in Visual Studio 2015 Update 1:  
+ Das folgende Bild zeigt das Fenster **Diagnosetools** (verfügbar in Visual Studio 2015 Update 1 und höheren Versionen):  
   
  ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
@@ -52,50 +52,83 @@ Suchen Sie Speicherverluste und ineffiziente Arbeitsspeichernutzung während des
 > [!NOTE]
 >  **Unterstützung für benutzerdefinierte Zuweisungen** Die systemeigene Speicherprofilerstellung funktioniert dadurch, dass speicherbelegungsbezogene [ETW-](https://msdn.microsoft.com/en-us/library/windows/desktop/bb968803\(v=vs.85\).aspx) -Ereignisdaten gesammelt werden, die während der Laufzeit ausgegeben wurden.  Zuweisungen im CRT und Windows SDK wurden auf Quellebene kommentiert, sodass ihre Speicherbelegungsdaten erfasst werden können.  Wenn Sie Ihre eigenen Zuweisungen schreiben, kann jede Funktion, die einen Zeiger auf neu zugewiesenen Heapspeicher zurückgibt, mit [__declspec](/visual-cpp/cpp/declspec)(allocator) ergänzt werden, wie in diesem Beispiel für myMalloc zu sehen ist:  
 >   
->  `__declspec(allocator) void* myMalloc(size_t size)`  
+>  `__declspec(allocator) void* myMalloc(size_t size)` 
+
+## <a name="collect-memory-usage-data"></a>Sammeln von Speicherauslastungsdaten
+
+1.  Öffnen Sie das Projekt, das Sie in Visual Studio debuggen möchten, und legen Sie in Ihrer App einen Haltepunkt an dem Punkt fest, an dem Sie die CPU-Auslastung untersuchen möchten.
+
+    Wenn Sie über einen Bereich verfügen, bei dem Sie ein Speicherproblem vermuten, legen Sie den ersten Haltepunkt fest, bevor das Speicherproblem auftritt.
+
+    > [!TIP]
+    >  Da es schwierig sein kann, das Speicherprofil eines Vorgangs zu erfassen, der für Sie von Interesse ist, wenn Ihre App häufig Speicher zuweist und dessen Speicherung wieder aufhebt, richten Sie zu Beginn und zum Ende des Vorgangs Haltepunkte ein (oder gehen Sie schrittweise durch den Vorgang), um so den genauen Punkt zu finden, an dem sich der Speicher geändert hat. 
+
+2.  Legen Sie einen zweiten Haltepunkt am Ende der Funktion oder des Codebereichs an, den Sie analysieren möchten (oder nachdem ein vermutetes Speicherproblem aufgetreten ist).
   
-## <a name="analyze-memory-use-with-the-debugger"></a>Analysieren der Arbeitsspeichernutzung mithilfe des Debuggers  
+3.  Das Fenster **Diagnosetools** wird automatisch angezeigt, es sei denn, Sie haben es deaktiviert. Klicken Sie auf **Debuggen / Windows / Diagnosetools anzeigen**, um das Fenster erneut aufzurufen.
+
+4.  Wählen Sie **Speicherauslastung** mit der Einstellung **Auswahltools** auf der Symbolleiste aus.
+
+     ![Anzeigen von Diagnosetools](../profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
+
+5.  Klicken Sie auf **Debuggen / Debugging starten** (oder auf **Start** auf der Symbolleiste oder auf **F5**).
+
+     Wenn das Laden der Anwendung abgeschlossen ist, wird die Zusammenfassungsansicht der Diagnosetools angezeigt.
+
+     ![Diagnosetools-Registerkarte Zusammenfassung](../profiling/media/DiagToolsSummaryTab.png "DiagToolsZusammenfassungRegisterkarte")
+
+     > [!NOTE]
+     >  Da das Erfassen von Speicherdaten die Debugleistung Ihrer systemeigenen Apps oder Ihrer Apps mit gemischtem Modus beeinträchtigen kann, sind Speichermomentaufnahmen standardmäßig deaktiviert. Starten Sie eine Debugsitzung (Tastenkombination: **F5**), um Momentaufnahmen in nativen Apps oder in Apps im gemischten Modus zu aktivieren. Wenn das Fenster **Diagnosetools** eingeblendet wird, wählen Sie die Registerkarte „Speicherauslastung“ und dann **Heap Profiling** (Heapprofilerstellung) aus.  
+     >   
+     >  ![Momentaufnahmen aktivieren](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
+     >   
+     >  Beenden Sie den Debugvorgang (Tastenkombination: **UMSCHALT+F5**), und starten Sie ihn neu.  
+
+6.  Um eine Momentaufnahme zu Beginn der Debugsitzung zu erstellen, wählen Sie auf der Übersichtssymbolleiste **Speicherauslastung** die Option **Momentaufnahme erstellen** aus. (Es kann hilfreich sein, auch hier einen Haltepunkt festzulegen.)
+
+    ![Momentaufnahme](../profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot") 
+     
+     > [!TIP]
+     >  -   Um eine Basislinie für Speichervergleiche zu erstellen, sollten Sie zu Beginn Ihrer Debugsitzung eine Momentaufnahme erstellen.  
+
+6.  Führen Sie das Szenario aus, bei dem Ihr erster Haltepunkt erreicht wird.
+
+7.  Wählen Sie **Momentaufnahme erstellen** auf der Übersichtssymbolleiste **Speicherauslastung** aus, während der Debugger am ersten Haltepunkt angehalten wird.  
+
+8.  Drücken Sie F5, um die App bis zum zweiten Haltepunkt auszuführen.
+
+9.  Erstellen Sie nun eine andere Momentaufnahme.
+
+     An diesem Punkt können Sie beginnen, die Daten zu analysieren.    
   
-> [!NOTE]
->  Da das Erfassen von Speicherdaten die Debugleistung Ihrer systemeigenen Apps oder Ihrer Apps mit gemischtem Modus beeinträchtigen kann, sind Speichermomentaufnahmen standardmäßig deaktiviert. Starten Sie eine Debugsitzung (Tastenkombination: **F5**), um Momentaufnahmen von nativen Apps oder von Apps im gemischten Modus zu aktivieren. Wenn das Fenster **Diagnosetools** eingeblendet wird, wählen Sie die Registerkarte "Speicherauslastung". Dann wählen Sie **Momentaufnahmen aktivieren**.  
->   
->  ![Momentaufnahmen aktivieren](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
->   
->  Beenden Sie den Debugvorgang (Tastenkombination: **UMSCHALT+F5**), und starten Sie ihn neu.  
+## <a name="analyze-memory-usage-data"></a>Analysieren der Speicherauslastungsdaten
+Die Zeilen der Speicherauslastungs-Übersichtstabelle führt die Momentaufnahmen auf, die Sie während der Debugsitzung erstellt haben, und bietet Links zu detaillierteren Ansichten.
+
+![Speicherzusammenfassungs-Tabelle](../profiling/media/dbgdiag_mem_summarytable.png "DBGDIAG_MEM_SummaryTable")
+
+ Der Name der Spalten ist abhängig von dem Debugmodus, den Sie in den Projekteigenschaften gewählt haben: .NET, nativ oder gemischt (sowohl .NET als auch nativ).  
   
- Wenn Sie den Status des Arbeitsspeichers aufzeichnen möchten, wählen Sie **Momentaufnahme** in der Übersichtssymbolleiste **Speicherauslastung** .  
+-   Die Spalten **Objekte (Diff.)**und **Zuweisungen (Diff.)** zeigen die Anzahl der Objekte im .NET-Speicher und im nativen Speicher zum Zeitpunkt der Erstellung der Momentaufnahme an.  
   
- ![Momentaufnahme](../profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")  
+-   Die Spalte **Heapgröße (Diff)** zeigt die Anzahl der Bytes in den .NET- und nativen Heaps 
+
+Wenn Sie mehrere Momentaufnahmen erstellt haben, beinhalten die Zellen der Übersichtstabelle die Wertänderung zwischen Zeilenmomentaufnahme und vorheriger Momentaufnahme.  
   
-> [!TIP]
->  -   Um eine Basislinie für Speichervergleiche zu erstellen, sollten Sie zu Beginn Ihrer Debugsitzung eine Momentaufnahme erstellen.  
-> -   Da es schwierig sein kann, das Speicherprofil eines Vorgangs zu erfassen, der für Sie von Interesse ist, wenn Ihre App häufig Speicher zuweist und dessen Speicherung wieder aufhebt, richten Sie zu Beginn und zum Ende des Vorgangs Haltepunkte ein oder gehen Sie schrittweise durch den Vorgang, um so den genauen Punkt zu finden, an dem sich der Speicher geändert hat.  
+![Speicherzusammenfassungs-Tabelle](../profiling/media/dbgdiag_mem_summarytablecell.png "DBGDIAG_MEM_SummaryTableCell")  
+
+Um die Speicherauslastung zu analysieren, klicken Sie auf einen der Links. Ein detaillierter Bericht der Speicherauslastung wird geöffnet:  
+
+-   Um die Details des Unterschiedes zwischen aktueller Momentaufnahme und vorheriger Momentaufnahme anzuzeigen, wählen Sie die Änderungsverknüpfung links des Pfeils aus (![Zunahme der Speicherauslastung](../profiling/media/prof-tour-mem-usage-up-arrow.png "Zunahme der Speicherauslastung")). Ein roter Pfeil zeigt eine Zunahme der Speicherauslastung und ein grüner Pfeil die Abnahme der Speicherauslastung.
+
+    > [!TIP]
+    >  Um Speicherprobleme schnell zu identifizieren, werden die Unterschiedsberichte nach Objekttypen sortiert, deren Anzahl sich am stärksten erhöht hat (Änderungsverknüpfung in der Spalte **Objekte (Diff.)**) oder deren gesamte Heapgröße sich am signifikantesten erhöht hat (Änderungsverknüpfung in der Spalte **Heapgröße (Diff.)**).
+
+-   Um nur die Details der ausgewählten Momentaufnahme anzuzeigen, wählen Sie die Verknüpfung ohne Änderung aus. 
   
-## <a name="viewing-memory-snapshot-details"></a>Anzeigen von Arbeitsspeichermomentaufnahme-Details  
- Die Zeilen der Speicherauslastungs-Übersichtstabelle führt die Momentaufnahmen auf, die Sie während der Debugsitzung erstellt haben.  
-  
- Die Spalten der Zeile sind abhängig von dem Debugmodus, den Sie in den Projekteigenschaften gewählt haben: .NET, systemeigen oder gemischt (sowohl .NET als auch systemeigen).  
-  
--   Die Spalten **Verwaltete Objekte**und **Systemeigene Zuordnungen** zeigen die Anzahl der Objekte im .NET-Speicher und im systemeigenen Speicher zum Zeitpunkt der Erstellung der Momentaufnahme an.  
-  
--   Die Spalten **Verwaltete Heapgröße** und **Systemeigene Heapgröße** zeigen die Anzahl der Bytes in den .NET-Heaps und in den systemeigenen Heaps an.  
-  
--   Wenn Sie mehrere Momentaufnahmen erstellt haben, beinhalten die Zellen der Übersichtstabelle die Wertänderung zwischen Zeilenmomentaufnahme und vorheriger Momentaufnahme.  
-  
-     ![Speicherzusammenfassungs-Tabelle](../profiling/media/dbgdiag_mem_summarytablecell.png "DBGDIAG_MEM_SummaryTableCell")  
-  
- **So zeigen Sie einen detaillierten Bericht an:**  
-  
--   Um nur die Details der ausgewählten Momentaufnahme anzuzeigen, wählen Sie die aktuelle Verknüpfung aus.  
-  
--   Um die Details des Unterschiedes zwischen aktueller Momentaufnahme und vorheriger Momentaufnahme anzuzeigen, wählen Sie die Änderungsverknüpfung aus.  
-  
- Der Bericht wird in einem separaten Fenster angezeigt.  
-  
-## <a name="memory-usage-details-reports"></a>Speicherauslastungsdetail-Berichte  
+ Der Bericht wird in einem separaten Fenster angezeigt.   
   
 ### <a name="managed-types-reports"></a>Berichte zu den verwalteten Typen  
- Wählen Sie die aktuelle Verknüpfung einer Zelle **Verwaltete Objekte** oder **Verwaltete Heapgröße** in der Speicherauslastungs-Übersichtstabelle.  
+ Wählen Sie die aktuelle Verknüpfung einer **Objekte (Diff.)**- oder **Zuweisungen (Diff.)**-Zelle in der Übersichtstabelle der Speicherauslastung aus.  
   
  ![Bericht über vom Debugger verwaltete Typen &#45; Pfade zum Stamm](../profiling/media/dbgdiag_mem_managedtypesreport_pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")  
   
@@ -114,7 +147,7 @@ Suchen Sie Speicherverluste und ineffiziente Arbeitsspeichernutzung während des
  Die Ansicht **Instanzen** zeigt die Instanzen des ausgewählten Objekts in der Momentaufnahme des oberen Bereichs an. Der Bereich "Pfade zum Stamm" und "Referenzierte Objekte" zeigt die Objekte an, die auf die ausgewählte Instanz verweisen, sowie die Typen, auf die die ausgewählte Instanz verweist. Wenn der Debugger an dem Punkt beendet wird, an  dem die Momentaufnahme erstellt wurde, können Sie den Mauszeiger über die Zelle "Wert" führen, um die Werte des Objekts in einer QuickInfo anzuzeigen.  
   
 ### <a name="native-type-reports"></a>Berichte zu den systemeigenen Typen  
- Wählen Sie die aktuelle Verknüpfung einer Zelle **Systemeigene Zuordnungen** oder **Systemeigene Heapgröße** aus der Speicherauslastungs-Übersichtstabelle des Fensters **Diagnosetools** .  
+ Wählen Sie die aktuelle Verknüpfung einer Zelle **Zuordnungen (Diff.)** oder **Heapgröße (Diff.)** aus der Speicherauslastungs-Übersichtstabelle des Fensters **Diagnosetools** aus.  
   
  ![Ansicht des nativen Typs](../profiling/media/dbgdiag_mem_native_typesview.png "DBGDIAG_MEM_Native_TypesView")  
   

@@ -31,9 +31,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 5ec205ee98f61b400112a39197e1f2aa9dddbd7d
-ms.openlocfilehash: 2d6ec94f7e68a84a4bb4a606882997fadec49e01
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 8f844c2d7d975476bc4c059d211a1d6cb0df64eb
+ms.openlocfilehash: 4c995fb6df6316ce7f84fae7075b81063b54ebf7
+ms.lasthandoff: 02/28/2017
 
 ---
 # <a name="profiling-tools"></a>Profilerstellungstools
@@ -62,12 +62,12 @@ Profilerstellungs- und Diagnosetools helfen bei der Diagnose von Speicher- und C
 ## <a name="gpu-usage"></a>GPU-Nutzung  
  ![DiagGPUUsage](../profiling/media/diaggpuusage.png "DiagGPUUsage")  
   
- Verwenden Sie das Tool [GPU-Nutzung](../debugger/gpu-usage.md), um die Nutzung übergeordneter Hardware Ihrer Direct3D-App besser zu verstehen. Sie können dieses Tool jeweils mit Desktop- und universellen Windows-Apps verwenden, jedoch nicht mit ASP.NET-Apps. Das Tool **GPU-Nutzung** kann entweder während des Debuggens über das Fenster **Diagnosetools** ausgeführt werden (**Debuggen &gt; Diagnosetools anzeigen**) oder außerhalb des Debuggers (**Debuggen &gt; Leistungsanalyse...**).  
+ Verwenden Sie das Tool [GPU-Nutzung](../debugger/gpu-usage.md), um die Nutzung übergeordneter Hardware Ihrer Direct3D-App besser zu verstehen. Sie können dieses Tool jeweils mit Desktop- und universellen Windows-Apps verwenden, jedoch nicht mit ASP.NET-Apps. Das Tool **GPU-Nutzung** kann außerhalb des Debuggers ausgeführt werden (**Debuggen/Leisungsprofiler...**).  
   
 ## <a name="application-timeline"></a>Anwendungszeitachse  
  ![DiagAppTimeline](../profiling/media/diagapptimeline.png "DiagAppTimeline")  
   
- Das [Application Timeline](../profiling/application-timeline.md)-Tool hilft Ihnen dabei, die Leistung von XAML-Anwendungen zu verbessern, indem es eine detaillierte Ansicht des Ressourcenverbrauchs der Anwendung bereitstellt. Sie können die **Anwendungszeitachse** mit Desktop- und universellen Windows-Apps verwenden, jedoch nicht mit ASP.NET-Apps. Das Tool **Anwendungszeitachse** kann im Fenster **Diagnosetools** (**Debuggen &gt; Leistungsanalyse...**) ausgeführt werden.
+ Das [Application Timeline](../profiling/application-timeline.md)-Tool hilft Ihnen dabei, die Leistung von XAML-Anwendungen zu verbessern, indem es eine detaillierte Ansicht des Ressourcenverbrauchs der Anwendung bereitstellt. Sie können die **Anwendungszeitachse** mit Desktop- und universellen Windows-Apps verwenden, jedoch nicht mit ASP.NET-Apps. Das Tool **Anwendungszeitachse** kann außerhalb des Debuggers ausgeführt werden (**Debuggen/Leisungsprofiler...**).
   
 ## <a name="perftips"></a>PerfTips  
  ![DiagPerfTips](../profiling/media/diagperftips.png "DiagPerfTips")  
@@ -85,12 +85,12 @@ Profilerstellungs- und Diagnosetools helfen bei der Diagnose von Speicher- und C
 ## <a name="javascript-memory"></a>JavaScript-Memory  
  ![DiagJSMemory](../profiling/media/diagjsmemory.png "DiagJSMemory")  
   
- Mit den [JavaScript Memory](../profiling/javascript-memory.md)-Tools können Sie leistungsbezogene Codeprobleme messen, auswerten und beheben, indem Sie Zeitsteuerungsinformationen bei jedem Aufrufen und Beenden jeder Funktion in Ihrer App sammeln. Sie können dieses Toll mit universellen Windows-HTML-Apps verwenden. Das Tool **JavaScript-Funktionstiming** kann im Fenster **Diagnosetools** (**Debuggen &gt; Leistungsanalyse...**) ausgeführt werden.  
+ Mit dem [JavaScript-Memory](../profiling/javascript-memory.md)-Tool können Sie Speicherverluste und ineffiziente Speichernutzung in Ihren Apps ermitteln. Sie können mit dem Tool Momentaufnahmen des JavaScript-Heaps erstellen. Sie können dieses Toll mit universellen Windows-HTML-Apps verwenden. Das Tool **JavaScript-Memory** kann außerhalb des Debuggers ausgeführt werden (**Debuggen/Leisungsprofiler...**).  
   
 ## <a name="html-ui-responsiveness"></a>HTML-UI-Reaktionsfähigkeit  
  ![DiagHTMLResp](../profiling/media/diaghtmlresp.png "DiagHTMLResp")  
   
- Mit dem [HTML-UI-Reaktionsfähigkeit](../profiling/html-ui-responsiveness.md)-Tool können Sie Leistungsprobleme in Ihren Apps isolieren, einschließlich fehlende Reaktionsfähigkeit, langsame Ladezeit und visuelle Updates, die weniger häufig als erwartet auftreten. Sie können dieses Toll mit universellen Windows-HTML-Apps verwenden. Das Tool **HTML-UI-Reaktionsfähigkeit** kann im Fenster **Diagnosetools** (**Debuggen &gt; Leistungsanalyse...**) ausgeführt werden.  
+ Mit dem [HTML-UI-Reaktionsfähigkeit](../profiling/html-ui-responsiveness.md)-Tool können Sie Leistungsprobleme in Ihren Apps isolieren, einschließlich fehlende Reaktionsfähigkeit, langsame Ladezeit und visuelle Updates, die weniger häufig als erwartet auftreten. Sie können dieses Toll mit universellen Windows-HTML-Apps verwenden. Das Tool **HTML-UI-Reaktionsfähigkeit** kann außerhalb des Debuggers ausgeführt werden (**Debuggen/Leisungsprofiler...**).  
   
 ## <a name="intellitrace"></a>IntelliTrace  
  ![DiagIntelliTrace](../profiling/media/diagintellitrace.png "DiagIntelliTrace")  
