@@ -1,0 +1,400 @@
+---
+title: "Gewusst wie: Abfangen eines Klicks auf eine Form oder einen Decorator | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "Domänenspezifische Sprache, Programmierdomänenmodelle"
+ms.assetid: e2bc3124-c0c0-4104-9779-a5bf565d7f51
+caps.latest.revision: 21
+author: "alancameronwills"
+ms.author: "awills"
+manager: "douge"
+caps.handback.revision: 21
+---
+# Gewusst wie: Abfangen eines Klicks auf eine Form oder einen Decorator
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Die folgenden Verfahren wird veranschaulicht, wie ein Klick auf einem Formular oder einem Symbol decorator\-element abfängt.  Sie können feststellen, klicken Doppelklicke, Ziehen und anderen wechselt den Stift und ermöglicht das Element reagieren.  
+  
+## So abzufangen klickt auf Forms  
+ Im dsl\-Projekt in einer Codedatei, die getrennt von den generierten Codedateien ist, schreiben Sie eine partielle Klassendefinition für die Form Klasse.  Überschreiben Sie `OnDoubleClick()` oder einer der anderen Methoden, die einen Namen beginnen mit `On...`verfügt.  Beispiele:  
+  
+```  
+public partial class MyShape // change  
+  {  
+    public override void OnDoubleClick(DiagramPointEventArgs e)  
+    {  
+      base.OnDoubleClick(e);  
+      System.Windows.Forms.MessageBox.Show("Click");  
+      e.Handled = true;  
+  }  }  
+```  
+  
+> [!NOTE]
+>  Legen Sie `e.Handled` zu `true`fest, es sei denn, Sie das Ereignis in das Diagramm oder im enthaltenden übergeben werden soll.  
+  
+## So Decorator\-Elementen klickt auf abzufangen  
+ Bild decorator\-elemente werden auf einer Instanz von ImageField\-Klasse übertragen, die ein OnDoubleClick\-Methode verfügt.  Sie können dann abzufangen, wenn Sie eine ImageField\-Unterklasse schreiben.  Die Felder sind in der InitializeShapeFields\-Methode.  Daher müssen Sie diese Methode ändern, um die Unterklasse anstelle des regulären ImageField zu instanziieren.  Die InitializeShapeFields\-Methode wird im generierten Code der Form Klasse.  Sie können die Form Klasse überschreiben `Generates Double Derived` beim Festlegen seiner Eigenschaften, wie in der folgenden Prozedur beschrieben.  
+  
+ Obwohl InitializeShapeFields eine Instanzmethode handelt, wird es nur einmal für jede Klasse aufgerufen.  Deshalb ist nur eine Instanz von ClickableImageField für jedes Feld in einer Klasse keine Instanz für jede Form im Diagramm.  Wenn der Benutzer auf eine Instanz doppelklickt, müssen Sie ermitteln, welche Instanz ermittelt wurde, da der Code im Beispiel veranschaulicht.  
+  
+#### So fügen Sie einen Klick auf ein Symbol decorator\-element abfangen  
+  
+1.  Öffnen oder erstellen Sie eine DSL\-Projektmappe.  
+  
+2.  Wählen Sie aus, oder erstellen Sie eine Form, das ein Symbol decorator\-element hat, und ordnen Sie sie in eine Domänenklasse.  
+  
+3.  In einer Codedatei, die getrennt von den Dateien im Ordner `GeneratedCode` ist, stellen Sie die neue Unterklasse von ImageField:  
+  
+    ```  
+    using Microsoft.VisualStudio.Modeling;  
+    using Microsoft.VisualStudio.Modeling.Design;  
+    using Microsoft.VisualStudio.Modeling.Diagrams;  
+    using System.Collections.Generic;  
+    using System.Linq;  
+  
+    namespace Fabrikam.MyDsl { // Change to your namespace  
+    internal class ClickableImageField : ImageField  
+    {  
+      // You can also override OnClick and so on.  
+      public override void OnDoubleClick(DiagramPointEventArgs e)  
+      {  
+        base.OnDoubleClick(e);  
+        // Work out which instance was hit.  
+        MyShape shapeHit = e.HitDiagramItem.Shape as MyShape;  
+        if (shapeHit != null)  
+        {  
+          MyDomainClass element =   
+              shapeHit.ModelElement as MyDomainClass;  
+          System.Windows.Forms.MessageBox.Show(  
+             "Double click on shape for " + element.Name);  
+          // If we do not set Handled, the event will  
+          // be passed to the containing shape:  
+          e.Handled = true;  
+        }  
+      }  
+  
+       public ClickableImageField(string fieldName)  
+         : base(fieldName)  
+       { }  
+    }  
+    ```  
+  
+     Sie sollten auf True festlegen, behandelt, wenn Sie das Ereignis nicht auf die enthaltende Form übergeben werden soll.  
+  
+4.  Überschreiben Sie die InitializeShapeFields\-Methode in Your Form classs, indem Sie die folgende Definition der partiellen Klasse hinzugefügt werden.  
+  
+    ```  
+    public partial class MyShape // change  
+    {  
+     protected override void InitializeShapeFields  
+          (IList<ShapeField> shapeFields)  
+     {  
+      base.InitializeShapeFields(shapeFields);  
+      // You can see the above method in MyShapeBase   
+      // in the generated Shapes.cs  
+      // It has already added fields for the Icons.  
+      // So you will have to retrieve them and replace with your own.  
+      ShapeField unwantedField = shapeFields.First  
+          (field => field.Name == "IconDecorator1");  
+      shapeFields.Remove(unwantedField);  
+  
+      // Now replicate the generated code from the base class   
+      // in Shape.cs, but with your own image constructor.  
+      ImageField field2 = new ClickableImageField("IconDecorator1");        
+      field2.DefaultImage = ImageHelper.GetImage(  
+        MyDslDomainModel.SingletonResourceManager  
+        .GetObject("MyShapeIconDecorator1DefaultImage"));  
+          shapeFields.Add(field2);  
+    }  
+    ```  
+  
+1.  Erstellen Sie die Projektmappe, und führen Sie sie aus  
+  
+2.  Doppelklicken Sie auf das Symbol für eine Instanz der Form.  Die Testmeldung sollte angezeigt werden.  
+  
+## Die Umbruch und klickt auf Ziehen CompartmentShape\-Listen  
+ Im folgenden Beispiel ermöglicht es Benutzern, um Elemente in einem Depot Form neu anordnen, indem diese zieht.  Wenn Sie diesen Code ausführen:  
+  
+1.  Erstellen Sie eine neue DSL\-Projektmappe, indem Sie die Vorlage **Klassendiagramme** Projektmappen verwenden.  
+  
+     Sie können mit einer Projektmappe arbeiten auch von Ihrem eigenen das Depot modellieren enthält.  In diesem Code wird davon ausgegangen, dass ein Einbettungs\-Verhältnis zwischen Modellelementen gibt, die von der Form dargestellt werden, und die Elemente an, die im Depot Listenelemente dargestellt werden.  
+  
+2.  Legen Sie die **Generiert abgeleitetes Double**\-Eigenschaft der Form Depot fest.  
+  
+3.  Fügen Sie diesen Code in einer Datei im **Dsl** Projekt hinzu.  
+  
+4.  Passen Sie die Domänenklasse und \- Formnamen in diesem Code, um ein eigenes DSL übereinstimmt.  
+  
+ Zusammenfassend kann der Code wie folgt.  In diesem Beispiel lautet der Name der `ClassShape` Depot Form.  
+  
+-   Ein Satz von Mausereignishandler wird für jede Instanz des Depot angefügt, wenn sie erstellt wird.  
+  
+-   Das Ereignis `ClassShape.MouseDown` speichert das aktuelle Element.  
+  
+-   Wenn die Maus aus dem aktuellen Element heraus bewegt wird, wird eine Instanz von MouseAction erstellt, das den Cursor festgelegt und die Maus aufzeichnet, bis sie wieder losgelassen wird.  
+  
+     Um andere Mausaktionen, z. B. Auswahl des Texts eines Elements zu beeinflussen zu vermeiden, wird das MouseAction nicht erstellt bis der Mauszeiger das ursprüngliche Element verlassen hat.  
+  
+     Eine Alternative zum Erstellen eines MouseAction kann auf einfache Weise zu überwachen Ereignisse MouseUp sein.  Allerdings würde dies ordnungsgemäß wenn die Benutzer lässt die Maus nicht funktionieren, nachdem sie außerhalb des Depots gezogen hat.  Das MouseAction ist in der Lage, die entsprechende Aktion auszuführen, unabhängig davon, wo sich der Mauszeiger wieder zugänglich gemacht wird.  
+  
+-   Wenn die Maustaste losgelassen wird, ordnet MouseAction.MouseUp die Reihenfolge der Links zwischen Modellelementen an.  
+  
+-   Die Änderung der Reihenfolge löst eine Regel aus, die die Anzeige aktualisiert.  Dieses Verhalten ist bereits definiert ist und kein zusätzlicher Code erforderlich.  
+  
+```c#  
+using Microsoft.VisualStudio.Modeling;  
+using Microsoft.VisualStudio.Modeling.Design;  
+using Microsoft.VisualStudio.Modeling.Diagrams;  
+using System.Collections.Generic;  
+using System.Linq;  
+  
+// This sample allows users to re-order items in a compartment shape by dragging.  
+  
+// This example is built on the "Class Diagrams" solution template of VMSDK (DSL Tools).  
+// You will need to change the following domain class names to your own:  
+// ClassShape = a compartment shape  
+// ClassModelElement = the domain class displayed using a ClassShape  
+// This code assumes that the embedding relationships   
+// displayed in the compartments don't use inheritance   
+// (don't have base or derived domain relationships).  
+  
+namespace Company.CompartmentDrag  
+{  
+ /// <summary>  
+ /// Manage the mouse while dragging a compartment item.  
+ /// </summary>  
+ public class CompartmentDragMouseAction : MouseAction  
+ {  
+  private ModelElement sourceChild;  
+  private ClassShape sourceShape;  
+  private RectangleD sourceCompartmentBounds;  
+  
+  public CompartmentDragMouseAction(ModelElement sourceChildElement, ClassShape sourceParentShape, RectangleD bounds)  
+   : base (sourceParentShape.Diagram)  
+  {  
+   sourceChild = sourceChildElement;  
+   sourceShape = sourceParentShape;  
+   sourceCompartmentBounds = bounds; // For cursor.  
+  }  
+  
+  /// <summary>  
+  /// Call back to the source shape to drop the dragged item.  
+  /// </summary>  
+  /// <param name="e"></param>  
+  protected override void OnMouseUp(DiagramMouseEventArgs e)  
+  {  
+   base.OnMouseUp(e);  
+   sourceShape.DoMouseUp(sourceChild, e);  
+   this.Cancel(e.DiagramClientView);  
+   e.Handled = true;  
+  }  
+  
+  /// <summary>  
+  /// Ideally, this shouldn't happen. This action should only be active  
+  /// while the mouse is still pressed. However, it can happen if you  
+  /// move the mouse rapidly out of the source shape, let go, and then   
+  /// click somewhere else in the source shape.  
+  /// </summary>  
+  /// <param name="e"></param>  
+  protected override void OnMouseDown(DiagramMouseEventArgs e)  
+  {  
+   base.OnMouseDown(e);  
+   this.Cancel(e.DiagramClientView);  
+   e.Handled = false;  
+  }  
+  
+  /// <summary>  
+  /// Display an appropriate cursor while the drag is in progress:  
+  /// Up-down arrow if we are inside the original compartment.  
+  /// No entry if we are elsewhere.  
+  /// </summary>  
+  /// <param name="currentCursor"></param>  
+  /// <param name="diagramClientView"></param>  
+  /// <param name="mousePosition"></param>  
+  /// <returns></returns>  
+  public override System.Windows.Forms.Cursor GetCursor(System.Windows.Forms.Cursor currentCursor, DiagramClientView diagramClientView, PointD mousePosition)  
+  {  
+   // If the cursor is inside the original compartment, show up-down cursor.  
+   return sourceCompartmentBounds.Contains(mousePosition)   
+    ? System.Windows.Forms.Cursors.SizeNS // Up-down arrow.  
+    : System.Windows.Forms.Cursors.No;  
+  }  
+ }  
+  
+ /// <summary>  
+ /// Override some methods of the compartment shape.  
+ /// *** GenerateDoubleDerived must be set for this shape in DslDefinition.dsl. ****  
+ /// </summary>  
+ public partial class ClassShape  
+ {  
+  /// <summary>  
+  /// Model element that is being dragged.  
+  /// </summary>  
+  private static ClassModelElement dragStartElement = null;  
+  /// <summary>  
+  /// Absolute bounds of the compartment, used to set the cursor.  
+  /// </summary>  
+  private static RectangleD compartmentBounds;  
+  
+  /// <summary>  
+  /// Attach mouse listeners to the compartments for the shape.  
+  /// This is called once per compartment shape.  
+  /// The base method creates the compartments for this shape.  
+  /// </summary>  
+  public override void EnsureCompartments()  
+  {  
+   base.EnsureCompartments();  
+   foreach (Compartment compartment in this.NestedChildShapes.OfType<Compartment>())  
+   {  
+    compartment.MouseDown += new DiagramMouseEventHandler(compartment_MouseDown);  
+    compartment.MouseUp += new DiagramMouseEventHandler(compartment_MouseUp);  
+    compartment.MouseMove += new DiagramMouseEventHandler(compartment_MouseMove);  
+   }  
+  }  
+  
+  /// <summary>  
+  /// Remember which item the mouse was dragged from.  
+  /// We don't create an Action immediately, as this would inhibit the  
+  /// inline text editing feature. Instead, we just remember the details  
+  /// and will create an Action when/if the mouse moves off this list item.  
+  /// </summary>  
+  /// <param name="sender"></param>  
+  /// <param name="e"></param>  
+  void compartment_MouseDown(object sender, DiagramMouseEventArgs e)  
+  {  
+   dragStartElement = e.HitDiagramItem.RepresentedElements  
+     .OfType<ClassModelElement>().FirstOrDefault();  
+   compartmentBounds = e.HitDiagramItem.Shape.AbsoluteBoundingBox;  
+  }  
+  
+  /// <summary>  
+  /// When the mouse moves away from the initial list item,  
+  /// but still inside the compartment, create an Action   
+  /// to supervise the cursor and handle subsequent mouse events.  
+  /// Transfer the details of the initial mouse position to the Action.  
+  /// </summary>  
+  /// <param name="sender"></param>  
+  /// <param name="e"></param>  
+  void compartment_MouseMove(object sender, DiagramMouseEventArgs e)  
+  {  
+   if (dragStartElement != null)  
+   {  
+    if (dragStartElement != e.HitDiagramItem.RepresentedElements.OfType<ClassModelElement>().FirstOrDefault())  
+    {  
+     e.DiagramClientView.ActiveMouseAction = new CompartmentDragMouseAction(dragStartElement, this, compartmentBounds);  
+     dragStartElement = null;  
+    }  
+   }  
+  }  
+  
+  /// <summary>  
+  /// User has released the mouse button.   
+  /// </summary>  
+  /// <param name="sender"></param>  
+  /// <param name="e"></param>  
+  void compartment_MouseUp(object sender, DiagramMouseEventArgs e)  
+  {  
+    dragStartElement = null;  
+  }  
+  
+  /// <summary>  
+  /// Forget the source item if mouse up occurs outside the  
+  /// compartment.  
+  /// </summary>  
+  /// <param name="e"></param>  
+  public override void OnMouseUp(DiagramMouseEventArgs e)  
+  {  
+   base.OnMouseUp(e);  
+   dragStartElement = null;  
+  }  
+  
+  /// <summary>  
+  /// Called by the Action when the user releases the mouse.  
+  /// If we are still on the same compartment but in a different list item,  
+  /// move the starting item to the position of the current one.  
+  /// </summary>  
+  /// <param name="dragFrom"></param>  
+  /// <param name="e"></param>  
+  public void DoMouseUp(ModelElement dragFrom, DiagramMouseEventArgs e)  
+  {  
+   // Original or "from" item:  
+   ClassModelElement dragFromElement = dragFrom as ClassModelElement;  
+   // Current or "to" item:  
+   ClassModelElement dragToElement = e.HitDiagramItem.RepresentedElements.OfType<ClassModelElement>().FirstOrDefault();  
+   if (dragFromElement != null && dragToElement != null)  
+   {  
+    // Find the common parent model element, and the relationship links:  
+    ElementLink parentToLink = GetEmbeddingLink(dragToElement);  
+    ElementLink parentFromLink = GetEmbeddingLink(dragFromElement);  
+    if (parentToLink != parentFromLink && parentFromLink != null && parentToLink != null)  
+    {  
+     // Get the static relationship and role (= end of relationship):  
+     DomainRelationshipInfo relationshipFrom = parentFromLink.GetDomainRelationship();  
+     DomainRoleInfo parentFromRole = relationshipFrom.DomainRoles[0];  
+     // Get the node in which the element is embedded, usually the element displayed in the shape:  
+     ModelElement parentFrom = parentFromLink.LinkedElements[0];  
+  
+     // Same again for the target:  
+     DomainRelationshipInfo relationshipTo = parentToLink.GetDomainRelationship();  
+     DomainRoleInfo parentToRole = relationshipTo.DomainRoles[0];  
+     ModelElement parentTo = parentToLink.LinkedElements[0];  
+  
+     // Mouse went down and up in same parent and same compartment:  
+     if (parentTo == parentFrom && relationshipTo == relationshipFrom)  
+     {  
+      // Find index of target position:  
+      int newIndex = 0;  
+      var elementLinks = parentToRole.GetElementLinks(parentTo);  
+      foreach (ElementLink link in elementLinks)  
+      {  
+       if (link == parentToLink) { break; }  
+       newIndex++;  
+      }  
+  
+      if (newIndex < elementLinks.Count)  
+      {  
+       using (Transaction t = parentFrom.Store.TransactionManager.BeginTransaction("Move list item"))  
+       {  
+        parentFromLink.MoveToIndex(parentFromRole, newIndex);  
+        t.Commit();  
+       }  
+      }  
+     }  
+    }  
+   }  
+  }  
+  
+  /// <summary>  
+  /// Get the embedding link to this element.  
+  /// Assumes there is no inheritance between embedding relationships.  
+  /// (If there is, you need to make sure you've got the relationship  
+  /// that is represented in the shape compartment.)  
+  /// </summary>  
+  /// <param name="child"></param>  
+  /// <returns></returns>  
+  ElementLink GetEmbeddingLink(ClassModelElement child)  
+  {  
+   foreach (DomainRoleInfo role in child.GetDomainClass().AllEmbeddedByDomainRoles)  
+   {  
+    foreach (ElementLink link in role.OppositeDomainRole.GetElementLinks(child))  
+    {  
+     // Just the assume the first embedding link is the only one.  
+     // Not a valid assumption if one relationship is derived from another.  
+     return link;  
+    }  
+   }  
+   return null;  
+  }  
+ }  
+}  
+  
+```  
+  
+## Siehe auch  
+ [Reagieren auf und Propagieren von Änderungen](../modeling/responding-to-and-propagating-changes.md)   
+ [Eigenschaften von Decorators](../modeling/properties-of-decorators.md)
