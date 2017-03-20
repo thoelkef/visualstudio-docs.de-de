@@ -1,7 +1,7 @@
 ---
 title: Erstellen von portablen, benutzerdefinierten Editor-Einstellungen | Microsoft-Dokumente
 ms.custom: 
-ms.date: 12/14/2016
+ms.date: 02/17/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -33,8 +33,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 31f433b28b67dc6f3179be87cb5894b5b3f0aa4f
-ms.openlocfilehash: 8c986958f141d3efc2ffe29b4176b43e9960e0e1
+ms.sourcegitcommit: 203e1e27cc892e96b103fc6cb22a73672a8e16af
+ms.openlocfilehash: 70f3c6c7e4356a698aa6c1dd265f6c79c662673e
+ms.lasthandoff: 03/01/2017
 
 ---
 # <a name="create-portable-custom-editor-settings"></a>Erstellen von portablen, benutzerdefinierten Editor-Einstellungen
@@ -86,8 +87,15 @@ Wenn Sie jetzt die TAB-TASTE drücken, erhalten Sie Tabstoppzeichen anstelle von
 > [!NOTE]
 >  Das Hinzufügen einer EDITORCONFIG-Datei zu Ihrem Projekt oder Ihrer Codebasis bewirkt keine Umwandlung der vorhandenen Formate in die neuen, sondern wirkt sich nur auf neu hinzugefügte Zeilen aus. Wenn Sie eine EDITORCONFIG-Datei aus Ihrem Projekt oder Ihrer Codebasis entfernen, müssen Sie die Codedateien neu laden, damit die Editor-Einstellungen wieder auf die globalen Einstellungen zurückgesetzt werden. Alle Fehler in EDITORCONFIG-Dateien werden im Fehlerfenster in Visual Studio gemeldet.
 
+## <a name="support-editorconfig-for-your-language-service"></a>Support von EditorConfig für Ihren Sprachdienst
 
+In den meisten Fällen ist bei der Implementierung eines Visual Studio-Sprachdiensts keine zusätzliche Arbeit erforderlich, um universelle EditorConfig-Eigenschaften zu unterstützen. Der Haupteditor ermittelt und liest die .editorconfig-Datei automatisch, wenn Benutzer Dateien öffnen, und er legt den entsprechenden Textpuffer und die Ansichtsoptionen fest. Jedoch verwenden einige Sprachdienste lieber eine entsprechende kontextbezogene Ansichtsoption, statt globale Einstellungen für Elemente, wie z.B. Registerkarten und Leerzeichen, wenn ein Benutzer einen Text bearbeitet oder formatiert. In diesen Fällen muss der Sprachdienst aktualisiert werden, um EditorConfig-Dateien zu unterstützen.
 
-<!--HONumber=Feb17_HO4-->
+Die folgende Tabelle enthält die erforderlichen Änderungen, um einen Sprachdienst für den Support von EditorConfig-Dateien zu aktualisieren.
 
+| Veraltete globale sprachspezifische Option | Ersetzen der kontextbezogenen Option |
+| :------------- | :------------- |
+| Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.fInsertTabs oder Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs | !textBufferOptions.GetOptionValue(DefaultOptions.ConvertTabsToSpacesOptionId) oder !textView.Options.GetOptionValue(DefaultOptions.ConvertTabsToSpacesOptionId) |
+| Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uIndentSize oder Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs.IndentSize | textBufferOptions.GetOptionValue(DefaultOptions. IndentSizeOptionId) oder textView.Options.GetOptionValue(DefaultOptions. IndentSizeOptionId) |
+| Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uTabSize oder Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs.TabSize | textBufferOptions.GetOptionValue(DefaultOptions.TabSizeOptionId) oder textView.Options.GetOptionValue(DefaultOptions.TabSizeOptionId) |
 

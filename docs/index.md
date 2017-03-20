@@ -599,7 +599,7 @@ ms.lasthandoff: 03/07/2017
                                             </div>
                                             <div class="cardText">
                                                 <a href="https://go.microsoft.com/fwlink/?linkid=833062">
-                                                    <h3>A#</h3>
+                                                    <h3>C#</h3>
                                                     <p>Eine moderne, objektorientierte Programmiersprache mit funktionalen Programmierfunktionen zum Erstellen einer Anwendung auf der .NET-Plattform.</p>
                                                 </a>
                                             </div>

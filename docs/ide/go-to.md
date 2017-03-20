@@ -27,16 +27,18 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: b259c5d02a452bfaa3bd59f2096b43ee1c1c5942
-ms.openlocfilehash: 352de7f71f8a6c16439061c9815219e5f2b3840a
+ms.sourcegitcommit: 3b812629bf0f655f39c35a56eb1b3ca9113303a6
+ms.openlocfilehash: 8bf6d49b21d128d15f5312fb230d4a8e7a8195af
+ms.lasthandoff: 03/01/2017
 
 ---
 
 # <a name="go-to"></a>Gehe zu
 Es bieten sich viele Möglichkeiten zur komfortablen Navigation im Code innerhalb der Visual Studio IDE, sowohl mit der Tastatur als auch mit der Maus.
 
+<!-- VERSIONLESS -->
 ## <a name="go-to-all"></a>Gehe zu allen
-Navigieren Sie durch Ihren Code, um die bestimmten Bits zu finden, nach denen Sie suchen.  Sie können auf einer einfachen Oberfläche nach einer bestimmten Zeile, einem Symbol, einer Datei und mehr suchen.
+Dieses Funktion ist in Visual Studio 2017 und höher vorhanden.  Dies ermöglicht es Ihnen durch Ihren Code zu navigieren, um die bestimmten Bits zu finden, nach denen Sie suchen.  Sie können auf einer einfachen, einheitlichen Oberfläche nach einer bestimmten Zeile, einem Typ, einem Symbol, einer Datei und mehr suchen.
 
 ### <a name="how-to-use"></a>Verwendung
 * **Tastatur**
@@ -81,6 +83,7 @@ Einstellung | Beschreibung
 Vorschauregisterkarte verwenden | Das ausgewählte Element sofort auf der Vorschauregisterkarte der IDE anzeigen
 Details anzeigen    | Zeigt Projekt-, Datei-, Zeilen- und Zusammenfassungsinformationen aus Dokumentationskommentaren im Fenster an
 Fenster zentrieren   | Das Fenster in die Mitte der IDE verschieben, statt an die Standardposition oben rechts
+<!-- END VERSIONLESS -->
 
 ## <a name="go-to-definition"></a>Gehe zu Definition
 Zur Quelle eines Typs navigieren und das Ergebnis auf einer neuen Registerkarte öffnen:
@@ -125,8 +128,3 @@ Eingabe        | Funktion
 **STRG+UMSCHALT+-**    | Vorwärts durch den Stapel navigieren
 
 Sie können außerdem die Menüelemente **Ansicht > Rückwärts navigieren** und **Ansicht > Vorwärts navigieren** verwenden.
-
-
-<!--HONumber=Feb17_HO4-->
-
-
