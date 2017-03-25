@@ -1,5 +1,5 @@
 ---
-title: Profilerstellungstools | Microsoft-Dokumentation
+title: Profilerstellungstools in Visual Studio | Microsoft-Dokumentation
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -31,9 +31,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 8f844c2d7d975476bc4c059d211a1d6cb0df64eb
-ms.openlocfilehash: 4c995fb6df6316ce7f84fae7075b81063b54ebf7
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: 0d129b4820944f5717c63243cb8550bc4fed3385
+ms.openlocfilehash: 380b65540d8f5c6ea6d8a8adf1f3c5575f5dd9dc
+ms.lasthandoff: 03/20/2017
 
 ---
 # <a name="profiling-tools"></a>Profilerstellungstools
@@ -103,15 +103,16 @@ Profilerstellungs- und Diagnosetools helfen bei der Diagnose von Speicher- und C
 ## <a name="which-tool-should-i-use"></a>Welches Tool soll ich verwenden?  
  Hier sehen Sie eine Tabelle, in der die verschiedenen Tools aufgelistet sind, die Visual Studio anbietet sowie die verschiedenen Projekttypen, die Sie mit diesen verwenden können:  
   
-|Leistungstool|Windows-Desktop|Windows Universell/Store|ASP.NET|  
+|Leistungstool|Windows-Desktop|Windows Universell/Store|ASP.NET/ASP.NET Core|  
 |----------------------|---------------------|------------------------------|-------------|  
 |[Speicherauslastung](../profiling/memory-usage.md)|ja|ja|ja|  
 |[CPU-Auslastung](../profiling/cpu-usage.md)|ja|ja|ja|  
 |[GPU-Nutzung](../debugger/gpu-usage.md)|ja|ja|nein|  
 |[Anwendungszeitachse](../profiling/application-timeline.md)|ja|ja|nein|  
-|[PerfTips](../profiling/perftips.md)|ja|ja für XAML, nicht für HTML|nein|  
-|[Leistungs-Explorer](../profiling/performance-explorer.md)|ja|nein|ja|  
-|[IntelliTrace](../debugger/intellitrace.md)|nur .NET Enterprise|nur .NET Enterprise|nur .NET Enterprise|  
+|[PerfTips](../profiling/perftips.md)|ja|ja für XAML, nicht für HTML|ja|  
+|[Leistungs-Explorer](../profiling/performance-explorer.md)|ja|nein|Ja (Nein für ASP.NET Core)|  
+|[IntelliTrace](../debugger/intellitrace.md)|nur .NET Enterprise|nur .NET Enterprise|nur .NET Enterprise|
+|[Netzwerkverwendung](../profiling/network-usage.md)|nein|ja|nein| 
 |[HTML-UI-Reaktionsfähigkeit](../profiling/html-ui-responsiveness.md)|nein|ja für HTML, nicht für XAML|nein|  
 |[JavaScript-Speicher](../profiling/javascript-memory.md)|nein|ja für HTML, nicht für XAML|nein|  
   
