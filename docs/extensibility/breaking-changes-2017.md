@@ -28,14 +28,12 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 translationtype: Machine Translation
-ms.sourcegitcommit: 221f4911981deec0330f76a82c0cc8a1b968e56e
-ms.openlocfilehash: 081a569fc7e38fecc8cc1ae5b0f8138ae8f25521
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 8163a0e1230712734936b7548bef1753ee0c1d2a
+ms.openlocfilehash: 2e6e4b3d9d1528d57fe181b3765e1ce3624bebad
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Änderungen in Visual Studio 2017-Erweiterbarkeit
-
->**Hinweis:** diese Dokumentation ist vorläufig und basierend auf der Visual Studio 2017 RC-Version.
 
 Mit Visual Studio 2017 bieten wir eine [schnellere, schlankere Erfahrung von Visual Studio-Installation](https://blogs.msdn.microsoft.com/visualstudio/2016/04/01/faster-leaner-visual-studio-installer) , die durch die Reduzierung von Visual Studio auf Benutzer-Systemen und größere Auswahl bietet den Benutzern über die Arbeitslasten und Features, die installiert werden. Um diese Verbesserungen unterstützen, wir das Erweiterbarkeitsmodell Änderungen vorgenommen haben und einige grundlegende Änderungen vorgenommen haben, um Visual Studio-Erweiterbarkeit. Dieses Dokument wird beschrieben, die technischen Details der diese Änderungen und Aktionen durchgeführt werden können, um diese zu beheben. Bitte beachten Sie, dass einige Implementierungsdetails von Point-in-Time und später geändert werden kann.
 
@@ -46,7 +44,7 @@ Wir bei der Einführung von der VSIX-v3-Format (Version 3) zur Unterstützung de
 An das VSIX-Format enthalten:
 
 * Die Deklaration der Setup-Komponenten. Zum Übermitteln von für die Zusage der einfache, schnelle Installation von Visual Studio bietet das Installationsprogramm jetzt mehr Konfigurationsoptionen für Benutzer. Daher sicherstellen, dass die Features und Komponenten, die erforderlich sind, von einer Erweiterung installiert sind, müssen Erweiterungen ihre Abhängigkeiten zu deklarieren.
-  * Mit der RC-Version bietet Visual Studio 2017 Installationsprogramm automatisch erwerben und installieren die erforderlichen Komponenten für den Benutzer im Rahmen der Installation der Erweiterungs.
+  * Der Installer für Visual Studio 2017 bietet automatisch erwerben und installieren die erforderlichen Komponenten für den Benutzer im Rahmen der Installation der Erweiterungs.
   * Benutzer werden auch gewarnt, wenn Sie versuchen, eine Erweiterung zu installieren, die mit dem neuen VSIX-v3-Format nicht erstellt wurde, selbst wenn sie im Manifest als Version 15.0 Zielgruppenadressierung markiert wurden.
 * Erweiterte Funktionen für das VSIX-Format. Die Bereitstellen einer [mit geringen Auswirkungen installieren](https://blogs.msdn.microsoft.com/visualstudio/2016/04/25/anatomy-of-a-low-impact-visual-studio-install) von Visual Studio, die Side-by-Side Installation ebenfalls unterstützt, wir nicht mehr speichern Sie die meisten Konfigurationsdaten in der Registrierung und Visual Studio-spezifischen Assemblys aus dem GAC verschoben haben. Wir erhöhten auch die Funktionen der VSIX-Format und des Moduls des VSIX-Installation, und Sie können es statt eine MSI- oder EXE-Datei verwenden, die Erweiterungen für einige Installationstypen installieren.
 
