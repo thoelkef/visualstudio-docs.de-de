@@ -1,8 +1,8 @@
 ---
 title: "Welche Optionen für die Veröffentlichung sind für mich geeignet? | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 1/31/2017
-ms.reviewer: 
+ms.date: 03/09/2017
+ms.reviewer: riande
 ms.suite: 
 ms.technology:
 - vs-ide-general
@@ -30,8 +30,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 85a7f3ef705d3b110ab0dc39d08d0cee235bf307
-ms.openlocfilehash: 1ecb87d748a7770101bdf6e0ffe34250a36c97a8
+ms.sourcegitcommit: 5951e9c6b61e1cb868d792a5aee9389235cfef30
+ms.openlocfilehash: 6bc4d5116517402825317611c44d4b594ee79b2a
+ms.lasthandoff: 03/10/2017
 
 ---
 
@@ -44,7 +45,7 @@ Webanwendungen können aus Visual Studio direkt auf die folgenden Ziele veröffe
 - [Dateisystem](#file-system)
 - [Benutzerdefinierte Ziele (IIS, FTP usw.)](#custom-targets), darunter alle beliebigen Webserver.
 
-Auf der Registerkarte **Veröffentlichen** können Sie ein vorhandenes Veröffentlichungsprofil auswählen, ein vorhandenes Veröffentlichungsprofil importieren oder ein neues Veröffentlichungsprofil mit den hier beschriebenen Optionen erstellen. 
+Auf der Registerkarte **Veröffentlichen** können Sie ein vorhandenes Veröffentlichungsprofil auswählen, ein vorhandenes Veröffentlichungsprofil importieren oder ein neues Veröffentlichungsprofil mit den hier beschriebenen Optionen erstellen.
 
 ## <a name="azure-app-service"></a>Azure App Service
 
@@ -52,15 +53,15 @@ Auf der Registerkarte **Veröffentlichen** können Sie ein vorhandenes Veröffen
 
 Insbesondere für Webanwendungen stellt ein App Service einen Container für eine [*Web-App*](https://azure.microsoft.com/en-us/documentation/articles/app-service-web-overview/) dar, die Ihren Vorstellungen eines herkömmlichen Webhosts stark ähnelt. Das heißt, eine Web-App stellt die erforderlichen Computingressourcen bereit, die Ihren serverseitigen Code ausführen und dem Internet zur Verfügung stellen können.
 
-Sie bestimmen, wie viel Computingleistung einer Web-App zur Verfügung stehen, indem Sie einen [Tarif oder Plan](https://azure.microsoft.com/documentation/articles/azure-web-sites-web-hosting-plans-in-depth-overview/)) für den enthaltenden App-Dienst auswählen. Sie können mehrere Web-Apps (und andere App-Typen) ohne Tarifänderung denselben App Service nutzen lassen. Sie können z.B. Entwicklungs-, Staging- und Produktions-Web-Apps gemeinsam im selben App Service hosten. 
+Sie bestimmen, wie viel Computingleistung einer Web-App zur Verfügung stehen, indem Sie einen [Tarif oder Plan](https://azure.microsoft.com/documentation/articles/azure-web-sites-web-hosting-plans-in-depth-overview/) für den enthaltenden App-Dienst auswählen. Sie können mehrere Web-Apps (und andere App-Typen) ohne Tarifänderung den gleichen App Service nutzen lassen. Sie können z.B. Entwicklungs-, Staging- und Produktions-Web-Apps gemeinsam im selben App Service hosten.
 
-Ein App Service wird auf in der Cloud gehosteten virtuellen Computern in Azure ausgeführt, aber diese virtuellen Maschinen werden für Sie verwaltet. Jeder Web-App in einem App Service wird eine eindeutige „*. azurewebsites.net“-URL zugeordnet. Alle Tarife (außer „kostenlos“) ermöglichen zudem, dass Sie der Website benutzerdefinierte Domänennamen zuweisen.  
+Ein App Service wird auf in der Cloud gehosteten virtuellen Computern in Azure ausgeführt, aber diese virtuellen Maschinen werden für Sie verwaltet. Jeder Web-App in einem App Service wird eine eindeutige „\*. azurewebsites.net“-URL zugeordnet. Alle Tarife (außer „kostenlos“) ermöglichen, dass Sie der Website benutzerdefinierte Domänennamen zuweisen.
 
 ### <a name="when-to-choose-azure-app-service"></a>Wann sollten Sie Azure App Service wählen?
 
 - Sie möchten eine Webanwendung bereitstellen, auf die über das Internet zugegriffen werden kann.
 - Sie möchten Ihre Webanwendung automatisch entsprechend Ihrem Bedarf skalieren, ohne sie erneut bereitstellen zu müssen.
-- Sie möchten keine Serverinfrastruktur (einschließlich aller Softwareupdates) verwalten.
+- Sie möchten keine Serverinfrastruktur (einschließlich Softwareupdates) verwalten.
 - Auf den Servern, auf denen Ihre Anwendung gehostet wird, sind keine Anpassungen auf Computerebene erforderlich.
 
 
@@ -69,9 +70,9 @@ Ein App Service wird auf in der Cloud gehosteten virtuellen Computern in Azure a
 
 ## <a name="azure-virtual-machines"></a>Azure Virtual Machines
 
-Mit [Azure Virtual Machines (VMs)](https://azure.microsoft.com/documentation/services/virtual-machines/) können Sie eine beliebige Anzahl von Computingressourcen in der Cloud erstellen und verwalten. Indem Sie die Verantwortung für die gesamte Software und alle Updates auf den VMs übernehmen, können Sie diese wie gewünscht dem Bedarf Ihrer Webanwendung anpassen. Sie können auch direkt über den Remotedesktop auf die Server zugreifen, und jeder behält, sofern gewünscht, die ihm zugewiesene IP-Adresse bei.
+Mit [Azure Virtual Machines (VMs)](https://azure.microsoft.com/documentation/services/virtual-machines/) können Sie eine beliebige Anzahl von Computingressourcen in der Cloud erstellen und verwalten. Indem Sie die Verantwortung für die gesamte Software und alle Updates auf den VMs übernehmen, können Sie diese wie gewünscht dem Bedarf Ihrer Webanwendung anpassen. Sie können direkt über den Remotedesktop auf die VMs zugreifen, und jeder behält, sofern gewünscht, die ihm zugewiesene IP-Adresse bei.
 
-Beim Skalieren einer Webanwendung, die auf virtuellen Computern gehostet wird, werden zusätzliche VMs entsprechend dem Bedarf sowie die erforderliche Software bereitgestellt. Diese zusätzliche Kontrollebene ermöglicht Ihnen, in verschiedenen Regionen weltweit unterschiedliche Skalierungen vorzunehmen. Wenn Ihre Anwendung beispielsweise von Mitarbeitern in einer Vielzahl von Zweigstellen eingesetzt wird, können Sie Ihre virtuellen Computer entsprechend der Anzahl der Mitarbeiter in diesen Regionen skalieren und damit potenziell Kosten senken. 
+Beim Skalieren einer Webanwendung, die auf virtuellen Computern gehostet wird, werden zusätzliche VMs entsprechend dem Bedarf sowie die erforderliche Software bereitgestellt. Diese zusätzliche Kontrollebene ermöglicht Ihnen, in verschiedenen Regionen weltweit unterschiedliche Skalierungen vorzunehmen. Wenn Ihre Anwendung beispielsweise von Mitarbeitern in einer Vielzahl von Zweigstellen eingesetzt wird, können Sie Ihre virtuellen Computer entsprechend der Anzahl der Mitarbeiter in diesen Regionen skalieren und damit potenziell Kosten senken.
 
 Weitere Informationen finden Sie in dem [detaillierten Vergleich](https://azure.microsoft.com/documentation/articles/choose-web-site-cloud-service-vm/) zwischen Azure App Service, Azure Virtual Machines und anderen Azure-Diensten, die Sie als Bereitstellungsziel mithilfe der Option „Benutzerdefiniert“ in Visual Studio verwenden können.
 
@@ -87,11 +88,11 @@ Weitere Informationen finden Sie in dem [detaillierten Vergleich](https://azure.
 
 ## <a name="file-system"></a>Dateisystem
 
-Bereitstellung im Dateisystem bedeutet einfach, dass Sie die Dateien Ihrer Webanwendung in einen bestimmten Ordner auf Ihrem eigenen Computer kopieren. Dies erfolgt meistens zu Testzwecken oder zum Bereitstellen der Anwendung für die Verwendung durch eine begrenzte Anzahl von Personen, wenn auf dem Computer auch ein Webserver ausgeführt wird. Wird der Zielordner in einem Netzwerk freigegeben, können die Webanwendungsdateien durch das Bereitstellen im Dateisystem auch für andere Personen verfügbar gemacht werden, die diese dann auf bestimmten Servern bereitstellen können.  
+Bereitstellung im Dateisystem bedeutet einfach, dass Sie die Dateien Ihrer Webanwendung in einen bestimmten Ordner auf Ihrem eigenen Computer kopieren. Dies erfolgt meistens zu Testzwecken oder zum Bereitstellen der Anwendung für die Verwendung durch eine begrenzte Anzahl von Personen, wenn auf dem Computer auch ein Webserver ausgeführt wird. Wird der Zielordner in einem Netzwerk freigegeben, können die Webanwendungsdateien durch das Bereitstellen im Dateisystem für andere Personen verfügbar gemacht werden, die diese dann auf bestimmten Servern bereitstellen können.
 
-Alle lokalen Computer, auf denen ein Webserver ausgeführt wird, können die Anwendung, abhängig von Konfiguration und Netzwerkverbindungen, über das Internet oder ein Intranet verfügbar machen. (Wenn Sie einen Computer direkt mit dem Internet verbinden, müssen Sie ihn besonders vor externen Sicherheitsrisiken schützen.) Da Sie diese Computer verwalten, haben Sie vollständige Kontrolle über die Software- und Hardwarekonfigurationen. 
+Alle lokalen Computer, auf denen ein Webserver ausgeführt wird, können die Anwendung, abhängig von Konfiguration und Netzwerkverbindungen, über das Internet oder ein Intranet verfügbar machen. (Wenn Sie einen Computer direkt mit dem Internet verbinden, müssen Sie ihn besonders vor externen Sicherheitsrisiken schützen.) Da Sie diese Computer verwalten, haben Sie vollständige Kontrolle über die Software- und Hardwarekonfigurationen.
 
-Beachten Sie Folgendes: Wenn die Verwendung von Clouddiensten wie Azure App Service oder Azure Virtual Machines aus irgendeinem Grund (z.B. Computerzugriff) nicht möglich ist, können Sie [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) in Ihrem eigenen Datencenter verwenden. Azure Stack ermöglicht die lokale Verwaltung und Verwendung von Computerressourcen über Azure App Service und Azure Virtual Machines.  
+Beachten Sie Folgendes: Wenn die Verwendung von Clouddiensten wie Azure App Service oder Azure Virtual Machines aus irgendeinem Grund (z.B. Computerzugriff) nicht möglich ist, können Sie [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) in Ihrem eigenen Datencenter verwenden. Azure Stack ermöglicht die lokale Verwaltung und Verwendung von Computerressourcen über Azure App Service und Azure Virtual Machines.
 
 ### <a name="when-to-choose-file-system-deployment"></a>Wann sollten Sie die Bereitstellung im Dateisystem wählen?
 
@@ -103,21 +104,20 @@ Beachten Sie Folgendes: Wenn die Verwendung von Clouddiensten wie Azure App Serv
 
 ## <a name="custom-targets"></a>Benutzerdefinierte Ziele
 
-Ein benutzerdefiniertes Ziel ermöglicht Ihnen die Bereitstellung Ihrer Webanwendung auf einem anderen Ziel als Azure App Service, Azure Virtual Machines oder dem lokalen Dateisystem. Sie können die Webanwendung in einem Dateisystem oder auf einem anderen Server (Internet oder Intranet) bereitstellen, auf das bzw. den Sie Zugriff haben, einschließlich Ziele in anderen Clouddiensten. Es funktioniert mit Web Deploy (Dateien oder ZIP) und FTP. 
+Ein benutzerdefiniertes Ziel ermöglicht Ihnen die Bereitstellung Ihrer Webanwendung auf einem anderen Ziel als Azure App Service, Azure Virtual Machines oder dem lokalen Dateisystem. Sie können die Webanwendung in einem Dateisystem oder auf einem anderen Server (Internet oder Intranet) bereitstellen, auf das bzw. den Sie Zugriff haben, einschließlich Ziele in anderen Clouddiensten. Es funktioniert mit Web Deploy (Dateien oder ZIP) und FTP.
 
-Wenn Sie ein benutzerdefiniertes Ziel auswählen, fordert Visual Studio Sie auf, einen Profilnamen anzugeben, und erfasst anschließend zusätzliche Informationen zur **Verbindung**, einschließlich Zielserver oder Speicherort, Standortnamen und Anmeldeinformationen. Sie können auch bestimmte Verhaltensweisen über die Registerkarte **Einstellungen** steuern, beispielsweise welche Konfiguration bereitgestellt wird, ob vorhandene Dateien aus dem Ziel entfernt werden, ob während der Veröffentlichung eine Vorkompilierung erfolgt und ob Dateien im Ordner „App_Data“ von der Bereitstellung ausgeschlossen werden. 
+Wenn Sie ein benutzerdefiniertes Ziel auswählen, fordert Visual Studio Sie auf, einen Profilnamen anzugeben, und erfasst anschließend zusätzliche Informationen zur **Verbindung**, einschließlich Zielserver oder Speicherort, Standortnamen und Anmeldeinformationen. Sie können folgendes Verhalten auf der Registerkarte **Einstellungen** steuern:
 
-Sie können in Visual Studio beliebig viele benutzerdefinierte Bereitstellungsprofile erstellen, wodurch Sie bei Bedarf Profile mit leicht unterschiedlichen Einstellungen verwalten können.
+- Die Konfiguration, die Sie bereitstellen möchten.
+- Ob vorhandene Dateien aus dem Ziel entfernt werden.
+- Ob während der Veröffentlichung vorkompiliert wird.
+- Ob Dateien im Ordner „App_Data“ von der Bereitstellung ausgeschlossen sind.
+
+Sie können in Visual Studio beliebig viele benutzerdefinierte Bereitstellungsprofile erstellen, wodurch Sie Profile mit unterschiedlichen Einstellungen verwalten können.
 
 ### <a name="when-to-choose-custom-deployment"></a>Wann sollten Sie die benutzerdefinierte Bereitstellung wählen?
 
 - Sie verwenden Clouddienste in einer anderen als einer auf Azure-Bereitstellung, auf die über URLs zugegriffen werden kann.
 - Sie möchten eine Bereitstellung mit anderen als den in Visual Studio verwendeten oder den direkt mit Ihren Azure-Konten verknüpften Anmeldeinformationen durchführen.
-- Sie möchten bei jeder Bereitstellung Dateien vom Ziel löschen. 
-
-
-
-
-<!--HONumber=Feb17_HO4-->
-
+- Sie möchten bei jeder Bereitstellung Dateien vom Ziel löschen.
 
