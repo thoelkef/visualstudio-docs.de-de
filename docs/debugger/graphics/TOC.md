@@ -2,7 +2,6 @@
 # [Übersicht über Visual Studio-Grafikdiagnose](overview-of-visual-studio-graphics-diagnostics.md)
 # [Erste Schritte mit Visual Studio-Grafikdiagnose](getting-started-with-visual-studio-graphics-diagnostics.md)
 # [Aufzeichnen von Grafikinformationen](capturing-graphics-information.md)
-# [GPU-Nutzung](gpu-usage.md)
 # [Grafikprotokolldokument](graphics-log-document.md)
 # [Grafikframe-Analyse](graphics-frame-analysis.md)
 ## [1x1-Viewportgrößenvariante](1x1-viewport-size-variant.md)

@@ -7,6 +7,7 @@
 ### [Speicherauslastung ohne Debuggen](memory-usage-without-debugging2.md)
 ## [CPU-Auslastung](cpu-usage.md)
 ### [Analysieren der CPU-Auslastung in einer universellen Windows-App](analyze-cpu-usage-in-a-windows-universal-app.md)
+## [GPU-Nutzung](gpu-usage.md)
 ## [Anwendungszeitachse](application-timeline.md)
 ## [PerfTips](perftips.md)
 ## [JavaScript-Speicher](javascript-memory.md)
