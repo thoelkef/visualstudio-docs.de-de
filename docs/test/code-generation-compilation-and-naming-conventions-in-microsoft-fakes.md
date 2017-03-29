@@ -282,7 +282,7 @@ attribute of the Assembly element in the .fakes:
 |Ein **Typ**`T`|T<br /><br /> Der Namespace, die geschachtelte Struktur und die generischen Tics werden verworfen.|  
 |Ein **out-Parameter**`out T`|`TOut`|  
 |Ein **ref-Parameter**`ref T`|`TRef`|  
-|Ein **Arraytyp **`T[]`|`TArray`|  
+|Ein **Arraytyp**`T[]`|`TArray`|  
 |Ein **mehrdimensionales Array**, Typ `T[ , , ]`|`T3`|  
 |Ein **Zeiger**, Typ `T*`|`TPtr`|  
 |Ein **generischer Typ**`T<R1, …>`|`TOfR1`|  

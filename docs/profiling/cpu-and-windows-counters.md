@@ -141,7 +141,7 @@ Der Visual Studio-Profiler ermöglicht das Sammeln von Leistungsdaten, die vom B
   
      **\<Visual Studio Performance Tools Directory>\VSPerfCmd /querycounters**  
   
-     Dabei ist ** \<Visual Studio Performance Tools Directory >** der Pfad zum Performance Tools-Verzeichnis der Visual Studio-Installation. Dieser lautet normalerweise  
+     Dabei ist **\<Visual Studio Performance Tools Directory >** der Pfad zum Performance Tools-Verzeichnis der Visual Studio-Installation. Dieser lautet normalerweise  
   
      C:\Programme\Microsoft Visual Studio 10.0 \Team Tools\Performance Tools  
   

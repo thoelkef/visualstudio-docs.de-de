@@ -87,7 +87,7 @@ Automatisierte Tests, die die Anwendung über die Benutzeroberfläche (UI) steue
   
      Tests der programmierten UI müssen in ein Testprojekt für programmierte UI integriert sein. Erstellen Sie ein Testprojekt der programmierten UI (sofern noch nicht vorhanden). Wählen Sie im **Projektmappen-Explorer** im Kontextmenü der Projektmappe **Hinzufügen**, **Neues Projekt** und anschließend entweder **Visual Basic** oder **Visual C#** aus. Wählen Sie dann **Test**, **Test der programmierten UI** aus.  
   
-    -   *Die Projektvorlagen für **Tests der programmierten UI** werden nicht angezeigt.*  
+    -   *Die Projektvorlagen für**Tests der programmierten UI**werden nicht angezeigt.*  
   
          Möglicherweise verwenden Sie eine Version von Visual Studio, die Tests der programmierten UI nicht unterstützt. Zum Erstellen von Tests der programmierten UI müssen Sie Visual Studio Enterprise verwenden.  
   
