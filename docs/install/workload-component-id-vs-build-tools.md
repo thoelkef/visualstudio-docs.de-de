@@ -1,14 +1,10 @@
 ---
-title:
-- Arbeitsauslastungs- und Komponenten-IDs in Visual Studio Build Tools 2017 | Microsoft-Dokumentation
+title: Arbeitsauslastungs- und Komponenten-IDs in Visual Studio Build Tools 2017 | Microsoft-Dokumentation
 description: Verwenden von Arbeitsauslastungs- und Komponenten-IDs in Visual Studio zum Erstellen klassischer Windows-basierter Anwendungen
 keywords: 
-author:
-- TerryGLee
-ms.author:
-- tglee
-manager:
-- ghogen
+author: TerryGLee
+ms.author: tglee
+manager: ghogen
 ms.date: 03/07/2017
 ms.topic: article
 helpviewer_keywords:

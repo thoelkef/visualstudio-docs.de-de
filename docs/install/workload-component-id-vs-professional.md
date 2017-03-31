@@ -1,14 +1,10 @@
 ---
-title:
-- Arbeitsauslastungs- und Komponenten-IDs in Visual Studio Professional 2017 | Microsoft-Dokumentation
+title: Arbeitsauslastungs- und Komponenten-IDs in Visual Studio Professional 2017 | Microsoft-Dokumentation
 description: "Verwenden Sie Arbeitsauslastungs- und Komponenten-IDs, um Visual Studio über die Befehlszeile zu installieren oder um sie als Abhängigkeit in einem VSIX-Manifest anzugeben"
 keywords: 
-author:
-- TerryGLee
-ms.author:
-- tglee
-manager:
-- ghogen
+author: TerryGLee
+ms.author: tglee
+manager: ghogen
 ms.date: 03/07/2017
 ms.topic: article
 helpviewer_keywords:
