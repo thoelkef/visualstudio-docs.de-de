@@ -18,9 +18,9 @@ manager: ghogen
 f1_keywords:
 - vs.performancecenter
 translationtype: Human Translation
-ms.sourcegitcommit: ba88bad0753653dcde8a4d28b4dd1c71522d6506
-ms.openlocfilehash: 435197f1536dc9006691c0f2e58fafd0fcf27718
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: 27a265dbbb1f9426ba2dd254095c84239bbd0db7
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Optimieren der Startzeit von Visual Studio
@@ -28,7 +28,7 @@ Im Idealfall sollte Visual Studio immer so schnell wie möglich starten. Allerdi
 
 ## <a name="control-startup-behavior"></a>Steuern des Startverhaltens
 
-Um das Verlängern der Startzeit zu verhindern, vermeidet Visual Studio 2017 RC das Laden von Erweiterungen beim Start mithilfe von Ladevorgängen bei Bedarf. Das bedeutet, dass Erweiterungen nicht sofort nach dem Start von Visual Studio, sondern erst später asynchron auf Bedarfsbasis geöffnet werden. Da Toolfenster, die in einer früheren Visual Studio-Sitzung offen gelassen wurden, die Startzeit verlängern können, öffnet Visual Studio Toolfenster auf intelligentere Weise, um Auswirkungen auf die Startzeit zu vermeiden.
+Um das Verlängern der Startzeit zu verhindern, vermeidet Visual Studio 2017 das Laden von Erweiterungen beim Start mithilfe von Ladevorgängen bei Bedarf. Das bedeutet, dass Erweiterungen nicht sofort nach dem Start von Visual Studio, sondern erst später asynchron auf Bedarfsbasis geöffnet werden. Da Toolfenster, die in einer früheren Visual Studio-Sitzung offen gelassen wurden, die Startzeit verlängern können, öffnet Visual Studio Toolfenster auf intelligentere Weise, um Auswirkungen auf die Startzeit zu vermeiden.
 
 Wenn Visual Studio einen langsamen Start erkennt, wird eine Popupmeldung angezeigt, die Sie auf die Erweiterung oder das Toolfenster hinweist, die bzw. das für die Verzögerung verantwortlich ist. Die Meldung enthält darüber hinaus eine Verknüpfung zum Dialogfeld **Visual Studio-Leistung verwalten**, in dem die Erweiterungen und Toolfenster aufgelistet sind, die sich auf die Leistung beim Start auswirken. In diesem Dialogfeld können Sie die Einstellungen für Erweiterungen und Toolfenster ändern, um die Leistung beim Start zu verbessern.
 
@@ -55,7 +55,7 @@ Wenn Sie Ihre Meinung zu einem späteren Zeitpunkt ändern, können Sie jede die
 
 ## <a name="speed-up-solution-load"></a>Beschleunigen des Ladens von Projektmappen
 
-Mit Visual Studio 2017 RC wird eine neue Funktion mit der Bezeichnung **Lightweight-Ladevorgang für Projektmappen** eingeführt, mit der sich die erforderliche Zeit und der benötigte Arbeitsspeicher beim Laden von Projektmappen in der IDE verringern lassen. Wenn Sie mit einer großen Projektmappe arbeiten, die viele C#-, VB- oder C++-Projekte enthält, werden Sie wahrscheinlich eine deutlich verbesserte Leistung feststellen, wenn Sie den Lightweight-Ladevorgang für Projektmappen aktivieren.
+Mit Visual Studio 2017 wird eine neue Funktion mit der Bezeichnung **Lightweight-Ladevorgang für Projektmappen** eingeführt, mit der sich die erforderliche Zeit und der benötigte Arbeitsspeicher beim Laden von Projektmappen in der IDE verringern lassen. Wenn Sie mit einer großen Projektmappe arbeiten, die viele C#-, VB- oder C++-Projekte enthält, werden Sie wahrscheinlich eine deutlich verbesserte Leistung feststellen, wenn Sie den Lightweight-Ladevorgang für Projektmappen aktivieren.
 
 Da einige IDE-Funktionen bei aktiviertem Lightweight-Ladevorgang für Projektmappen nicht vollständig verfügbar sind, ist die Funktion standardmäßig deaktiviert. Die folgenden Abschnitte geben Ihnen Hilfestellung bei der Entscheidung, ob Sie diese Funktion aktivieren sollen.
 
@@ -77,7 +77,7 @@ Wenn Sie die Einstellung für den Lightweight-Ladevorgang für Projektmappen än
 
 ### <a name="automatically-enable-lightweight-solution-load"></a>Automatisches Aktivieren des Lightweight-Ladevorgangs für Projektmappen
 
-Wenn Sie eine umfangreiche Projektmappe in Visual Studio 2017 RC öffnen, sehen Sie möglicherweise eine Popupnachricht, die das Aktivieren des Lightweight-Ladevorgangs für Projektmappen anbietet. Die Nachricht wird nur für Projektmappen angezeigt, die viele C#-, VB- oder C++-Projekte enthalten. Wenn Sie den Befehl **Aktivieren** auswählen, wird der Lightweight-Ladevorgang für Projektmappen nur für die betreffende Projektmappe aktiviert. Die IDE-weite Einstellung wird nicht geändert.
+Wenn Sie eine umfangreiche Projektmappe in Visual Studio 2017 öffnen, sehen Sie möglicherweise eine Popupnachricht, die das Aktivieren des Lightweight-Ladevorgangs für Projektmappen anbietet. Die Nachricht wird nur für Projektmappen angezeigt, die viele C#-, VB- oder C++-Projekte enthalten. Wenn Sie den Befehl **Aktivieren** auswählen, wird der Lightweight-Ladevorgang für Projektmappen nur für die betreffende Projektmappe aktiviert. Die IDE-weite Einstellung wird nicht geändert.
 
 ![Popupfenster](../ide/media/VSIDE_LSL Popup.png)
 
