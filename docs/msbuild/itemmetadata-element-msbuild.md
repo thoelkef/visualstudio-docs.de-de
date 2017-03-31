@@ -1,75 +1,96 @@
 ---
-title: "ItemMetadata Element (MSBuild) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "ItemMetadata Element [MSBuild]"
-  - "<ItemMetadata> Element [MSBuild]"
+title: ItemMetadata-Element (MSBuild) | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 03/13/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- ItemMetadata Element [MSBuild]
+- <ItemMetadata> Element [MSBuild]
 ms.assetid: e3db5122-202d-43a9-b2f4-3e0ec4ed3d08
 caps.latest.revision: 17
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 17
----
-# ItemMetadata Element (MSBuild)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 0e5a449ef396e7b9fd23a2c018bdc7f8791b7b38
+ms.openlocfilehash: 3c92bc200ac47bdd5b1b0f6f707cd2cb9f9aada5
+ms.lasthandoff: 03/13/2017
 
-Enthält einen benutzerdefinierten Elementmetadatenschlüssel, der den Elementmetadatenwert enthält.  Ein Element kann beliebig viele Metadatenschlüssel\/Wert\-Paare aufweisen.  
-  
-## Syntax  
-  
+---
+# <a name="itemmetadata-element-msbuild"></a>ItemMetadata-Element (MSBuild)
+Enthält einen benutzerdefinierten Elementmetadatenschlüssel, der den Elementmetadatenwert enthält. Ein Element kann über eine beliebige Anzahl von Metadaten-Schlüssel-Wert-Paaren verfügen.  
+
+ \<Project>  
+ \<ItemGroup>  
+ \<Item>  
+
+## <a name="syntax"></a>Syntax  
+
 ```  
-<ItemMetadataName> Item Metadata value </ItemMetadataName>  
+<ItemMetadataName> Item Metadata value</ItemMetadataName>  
 ```  
-  
-## Attribute und Elemente  
+
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
-  
-### Attribute  
-  
+
+### <a name="attributes"></a>Attribute  
+
 |Attribut|Beschreibung|  
-|--------------|------------------|  
-|`Condition`|Optionales Attribut.<br /><br /> Die auszuwertende Bedingung.  Weitere Informationen finden Sie unter [Conditions](../msbuild/msbuild-conditions.md).|  
-  
-### Untergeordnete Elemente  
- Keine.  
-  
-### Übergeordnete Elemente  
-  
+|---------------|-----------------|  
+|`Condition`|Optionales Attribut.<br /><br /> Die auszuwertende Bedingung. Weitere Informationen finden Sie unter [Conditions (Bedingungen)](../msbuild/msbuild-conditions.md).|  
+
+### <a name="child-elements"></a>Untergeordnete Elemente  
+ Keine  
+
+### <a name="parent-elements"></a>Übergeordnete Elemente  
+
 |Element|Beschreibung|  
-|-------------|------------------|  
-|[Element](../msbuild/item-element-msbuild.md)|Ein benutzerdefiniertes Element, das die Eingaben für den Buildprozess definiert.|  
-  
-## Textwert  
+|-------------|-----------------|  
+|[Item](../msbuild/item-element-msbuild.md)|Ein benutzerdefiniertes Element, das die Eingaben für den Buildprozess definiert.|  
+
+## <a name="text-value"></a>Textwert  
  Ein Textwert ist optional.  
-  
- Dieser Text gibt den Elementmetadatenwert an, der entweder das Text\- oder das XML\-Format aufweisen kann.  
-  
-## Hinweise  
-  
-## Beispiel  
- Im folgenden Codebeispiel wird veranschaulicht, wie dem Element `CSFile` `Culture`\-Metadaten mit dem Wert `fr` hinzugefügt werden.  
-  
-```  
+
+ Dieser Text legt den Elementmetadatenwert fest, der im Text- oder XML-Format vorhanden sein kann.  
+
+## <a name="remarks"></a>Hinweise  
+
+## <a name="example"></a>Beispiel  
+ Das folgende Codebeispiel veranschaulicht das Hinzufügen von `Culture`-Metadaten mit dem Wert `fr` zum Element `CSFile`.  
+
+```xml  
 <ItemGroup>  
     <CSFile Include="main.cs" >  
         <Culture>fr</Culture>  
     </CSFile>  
 </ItemGroup>  
 ```  
-  
-## Siehe auch  
- [Project File Schema Reference](../msbuild/msbuild-project-file-schema-reference.md)   
- [Items](../msbuild/msbuild-items.md)
+
+## <a name="see-also"></a>Siehe auch  
+ [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)   
+ [Items](../msbuild/msbuild-items.md) (MSBuild-Elemente)
+

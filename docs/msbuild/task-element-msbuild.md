@@ -1,35 +1,54 @@
 ---
-title: "Task Element (MSBuild) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "Task element [MSBuild]"
-  - "<Task> element [MSBuild]"
+title: Task-Element (MSBuild) | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 03/13/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- Task element [MSBuild]
+- <Task> element [MSBuild]
 ms.assetid: d82e2485-e5f0-4936-a357-745bacccc299
 caps.latest.revision: 22
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 22
----
-# Task Element (MSBuild)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 0e5a449ef396e7b9fd23a2c018bdc7f8791b7b38
+ms.openlocfilehash: 0632ff6bf62885527158194ef317d18220bbbe89
+ms.lasthandoff: 03/13/2017
 
-Erstellt eine Instanz einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]\-Aufgabe und führt diese aus.  Der Elementname wird durch den Namen der Aufgabe bestimmt, die erstellt wird.  
-  
-## Syntax  
-  
+---
+# <a name="task-element-msbuild"></a>Aufgabenelement (MSBuild)
+Erstellt und führt eine Instanz einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Aufgabe aus. Der Elementname wird durch den Namen der erstellten Aufgabe bestimmt.  
+
+ \<Project>  
+ \<Target>  
+
+## <a name="syntax"></a>Syntax  
+
 ```  
 <Task Parameter1="Value1"... ParameterN="ValueN"  
     ContinueOnError="WarnAndContinue/true/ErrorAndContinue/ErrorAndStop/false"  
@@ -37,39 +56,39 @@ Erstellt eine Instanz einer [!INCLUDE[vstecmsbuild](../extensibility/internals/i
     <Output... />  
 </Task>  
 ```  
-  
-## Attribute und Elemente  
+
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
-  
-### Attribute  
-  
-|Attribut|Description|  
-|--------------|-----------------|  
-|`Condition`|Optionales Attribut.  Die auszuwertende Bedingung.  Weitere Informationen finden Sie unter [Conditions](../msbuild/msbuild-conditions.md).|  
-|`ContinueOnError`|Optionales Attribut.  Kann einen der folgenden Werte enthalten:<br /><br /> -   **WarnAndContinue** oder **true**.  Wenn eine Aufgabe fehlschlägt, werden folgende Aufgaben im [Ziel](../msbuild/target-element-msbuild.md)\-Element und im Build fort, um auszuführen, und alle Fehler von der Aufgabe werden als Warnungen behandelt.<br />-   **ErrorAndContinue**.  Wenn eine Aufgabe fehlschlägt, werden folgende Aufgaben im `Target`\-Element und im Build fort, um auszuführen, und alle Fehler von der Aufgabe werden als Fehler behandelt.<br />-   **ErrorAndStop** oder **false** \(Standard\).  Wenn eine Aufgabe fehlschlägt, werden die übrigen Aufgaben im `Target`\-Element und im Build nicht ausgeführt, und das gesamte `Target`\-Element und der Build wird angenommen fehlgeschlagen sein.<br /><br /> .NET Framework\-Versionen vor 4,5 unterstützten nur die `true` und `false`\-Werte.<br /><br /> Weitere Informationen finden Sie unter [How to: Ignore Errors in Tasks](../msbuild/how-to-ignore-errors-in-tasks.md).|  
-|`Parameter`|Erforderlich, wenn die Aufgabenklasse eine oder mehrere Eigenschaften mit dem `[Required]`\-Attribut enthält.<br /><br /> Ein benutzerdefinierter Aufgabenparameter, dessen Wert dem Parameterwert entspricht.  Das `Task`\-Element kann beliebig viele Parameter enthalten, wobei jedes Attribute einer .NET\-Eigenschaft in der Aufgabenklasse zugeordnet wird.|  
-  
-### Untergeordnete Elemente  
-  
-|Element|Description|  
+
+### <a name="attributes"></a>Attribute  
+
+|Attribut|Beschreibung|  
+|---------------|-----------------|  
+|`Condition`|Optionales Attribut. Die auszuwertende Bedingung. Weitere Informationen finden Sie unter [Conditions (Bedingungen)](../msbuild/msbuild-conditions.md).|  
+|`ContinueOnError`|Optionales Attribut. Kann einen oder mehrere der folgenden Werte enthalten:<br /><br /> -   **WarnAndContinue** oder **true**. Wenn eine Aufgabe fehlschlägt, werden nachfolgende Aufgabe im Element [Ziel](../msbuild/target-element-msbuild.md) und im Build weiterhin ausgeführt, und alle Fehler von der Aufgabe werden als Warnungen behandelt.<br />-   **ErrorAndContinue**. Wenn eine Aufgabe fehlschlägt, werden nachfolgende Aufgabe im Element `Target` und im Build weiterhin ausgeführt, und alle Fehler von der Aufgabe werden als Fehler behandelt.<br />-   **ErrorAndStop** oder **false** (Standard). Wenn eine Aufgabe fehlschlägt, werden die übrigen Aufgaben im Element `Target` und im Build nicht ausgeführt, und das komplette Element `Target` sowie der Build wird als fehlgeschlagen betrachtet.<br /><br /> Versionen von .NET Framework vor 4.5 unterstützten nur die Werte `true` und `false`.<br /><br /> Weitere Informationen finden Sie unter [Gewusst wie: Ignorieren von Fehlern in Aufgaben](../msbuild/how-to-ignore-errors-in-tasks.md).|  
+|`Parameter`|Erforderlich, wenn die Aufgabenklasse eine oder mehrere Eigenschaften enthält, die mit dem `[Required]`-Attribut gekennzeichnet sind.<br /><br /> Ein benutzerdefinierter Aufgabenparameter, der den Parameterwert als Wert enthält. Das `Task`-Element kann eine beliebige Anzahl von Parametern enthalten, wobei jedes Attribut einer .NET-Eigenschaft in der Aufgabenklasse zugeordnet ist.|  
+
+### <a name="child-elements"></a>Untergeordnete Elemente  
+
+|Element|Beschreibung|  
 |-------------|-----------------|  
-|[Ausgabe](../msbuild/output-element-msbuild.md)|Speichert die Ausgaben der Aufgabe in der Projektdatei.  Es kann keine oder mehrere `Output`\-Elemente in einer Aufgabe geben.|  
-  
-### Übergeordnete Elemente  
-  
-|Element|Description|  
+|[Ausgabe](../msbuild/output-element-msbuild.md)|Speichert die Ausgaben der Aufgabe in der Projektdatei. Die Aufgabe kann keine oder mehrere `Output`-Elemente enthalten.|  
+
+### <a name="parent-elements"></a>Übergeordnete Elemente  
+
+|Element|Beschreibung|  
 |-------------|-----------------|  
-|[Target](../msbuild/target-element-msbuild.md)|Containerelement für [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]\-Aufgaben.|  
-  
-## Hinweise  
- Ein `Task`\-Element in einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]\-Projektdatei erstellt eine Instanz einer Aufgabe, legt entsprechende Eigenschaften fest und führt die Aufgabe aus.  Das `Output`\-Element speichert Ausgabeparameter in Eigenschaften oder Elementen, die an anderer Stelle in der Projektdatei verwendet werden sollen.  
-  
- Wenn das übergeordnete `Target`\-Element einer Aufgabe [OnError](../msbuild/onerror-element-msbuild.md)\-Elemente enthält, werden diese auch ausgewertet, falls die Aufgabe fehlschlägt und `ContinueOnError` den Wert `false` aufweist.  Weitere Informationen zu Aufgaben finden Sie unter [Tasks](../msbuild/msbuild-tasks.md).  
-  
-## Beispiel  
- Im folgenden Codebeispiel wird eine Instanz der [Csc task](../msbuild/csc-task.md)\-Aufgabe erstellt, dann werden sechs Eigenschaften festgelegt, und die Aufgabe wird ausgeführt.  Nach der Ausführung wird der Wert der `OutputAssembly`\-Eigenschaft des Objekts in eine Elementliste mit dem Namen `FinalAssemblyName` eingefügt.  
-  
-```  
+|[Ziel](../msbuild/target-element-msbuild.md)|Containerelement für [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Aufgaben.|  
+
+## <a name="remarks"></a>Hinweise  
+ Ein `Task`-Element in einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projektdatei erstellt eine Instanz einer Aufgabe, legt entsprechende Eigenschaften fest und führt sie aus. Das `Output`-Element speichert Ausgabeparameter in Eigenschaften oder Elementen, damit sie an anderer Stelle in der Projektdatei verwendet werden können.  
+
+ Auch bei [OnError](../msbuild/onerror-element-msbuild.md)-Elementen im übergeordneten `Target`-Element einer Aufgabe werden sie ausgewertet, wenn die Aufgabe fehlschlägt und `ContinueOnError` den Wert `false` aufweist. Weitere Informationen zu Aufgaben finden Sie unter [Aufgaben](../msbuild/msbuild-tasks.md).  
+
+## <a name="example"></a>Beispiel  
+ Das folgende Codebeispiel erstellt eine Instanz der [Csc-Aufgabenklasse](../msbuild/csc-task.md), legt sechs Eigenschaften fest und führt die Aufgabe aus. Nach der Ausführung wird der Wert der `OutputAssembly`-Eigenschaft des Objekts in eine Liste mit dem Namen `FinalAssemblyName` aufgenommen.  
+
+```xml  
 <Target Name="Compile" DependsOnTarget="Resources" >  
     <Csc Sources="@(CSFile)"  
           TargetType="library"  
@@ -82,8 +101,9 @@ Erstellt eine Instanz einer [!INCLUDE[vstecmsbuild](../extensibility/internals/i
     </Csc>  
 </Target>  
 ```  
-  
-## Siehe auch  
- [Tasks](../msbuild/msbuild-tasks.md)   
- [Task Reference](../msbuild/msbuild-task-reference.md)   
- [Project File Schema Reference](../msbuild/msbuild-project-file-schema-reference.md)
+
+## <a name="see-also"></a>Siehe auch  
+ [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
+ [Task Reference](../msbuild/msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
+ [Referenz zum MSBuild-Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)
+

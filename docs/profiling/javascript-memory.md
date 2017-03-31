@@ -1,6 +1,6 @@
 ---
-title: JavaScript-Speicher | Microsoft-Dokumentation
-ms.custom: 
+title: Analysieren von JavaScript-Speicherauslastung in UWP-Apps | Microsoft-Dokumentation
+ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
@@ -43,13 +43,13 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: f76e8b2846f0a9dfd37799f6e6f205bee446bbe4
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: e4be61999c3530698f90ea5381b980223791325f
+ms.lasthandoff: 03/07/2017
 
 ---
-# <a name="javascript-memory"></a>JavaScript-Memory
-Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen dabei helfen, die Speicherauslastung zu verstehen und Speicherverluste in Windows Store-Apps zu finden, die mit JavaScript für Windows erstellt wurden. Unterstützt werden Apps für den Windows Phone Store und Windows Store.  
+# <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analysieren von JavaScript-Speicherauslastung in UWP-Apps
+Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen dabei helfen, die Speicherauslastung zu verstehen und Speicherverluste in Windows Store-Apps zu finden, die mit JavaScript für Windows erstellt wurden. Zu den unterstützten Apps zählen Apps für universelle Windows-Apps.
   
  Der JavaScript-Arbeitsspeicheranalyse bietet folgende Möglichkeiten:  
   
