@@ -1,7 +1,7 @@
 ---
-title: "Einführung in CPU-Sampling | Microsoft-Dokumentation"
-ms.custom: 
-ms.date: 11/04/2016
+title: "Einführung in CPU-Sampling in Visual Studio | Microsoft-Dokumentation"
+ms.custom: H1Hack27Feb2017
+ms.date: 03/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -34,9 +34,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 53907b9b88deca671ee0695385dcbc856a35d309
-ms.openlocfilehash: 072783e138fcc20d80ccbe8ec8b66905778cf67d
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: ddd52c1af0a164235de2e5055896e020dc8715c3
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Einführung in CPU-Sampling
@@ -66,7 +66,7 @@ Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsprobleme
     > [!IMPORTANT]
     >  Wenn Sie auf dem Computer, den Sie verwenden, kein Administrator sind, sollten Sie Visual Studio während der Verwendung des Profilers als Administrator ausführen. (Klicken Sie mit der rechten Maustaste auf das Anwendungssymbol für Visual Studio, und klicken Sie dann auf **Als Administrator ausführen**.)  
   
-2.  Klicken Sie im Menü **Debuggen** auf **Leistungsprofiler**.  
+2.  Wählen Sie im Menü **Debuggen** die Option **Profiler** und danach **Leistungsprofiler** aus.  
   
 3.  Aktivieren Sie den **Leistungs-Assistenten**, und klicken Sie auf **Starten**.  
   

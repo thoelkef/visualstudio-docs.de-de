@@ -1,6 +1,6 @@
 ---
-title: CPU-Auslastung | Microsoft-Dokumentation
-ms.custom: 
+title: Analysieren der CPU-Auslastung in Visual Studio | Microsoft-Dokumentation
+ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
@@ -29,12 +29,12 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 8a3c6e60d0ea85d93281764ec3a3435538b9baa0
-ms.openlocfilehash: d89f4c4bf3d1d4230592896be14dd7d64d90825f
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: bb13868209d29ee88aaca25d37bbe0041f49961b
+ms.lasthandoff: 03/07/2017
 
 ---
-# <a name="cpu-usage"></a>CPU-Auslastung
+# <a name="analyze-cpu-usage"></a>Analysieren der CPU-Auslastung
 Wenn Sie Leistungsprobleme in Ihrer App untersuchen müssen, ist ein guter Ausgangspunkt die Untersuchung der CPU-Nutzung. Das Tool **CPU-Auslastung** zeigt Ihnen, wo die CPU Zeit für die Ausführung von Visual C++-, Visual C#/Visual Basic und JavaScript-Code verbringt. Ab Visual Studio 2015 Update 1 können Sie eine Aufteilung nach Funktion der CPU-Auslastung anzeigen, ohne den Debugger zu verlassen. Sie können die CPU-Profilerstellung während des Debuggens ein- und ausschalten und die Ergebnisse anzeigen, wenn die Ausführung angehalten wird, z. B. an einem Haltepunkt.  
   
 Zum Ausführen und Verwalten Ihrer Diagnosesitzung stehen Ihnen mehrere Optionen zur Verfügung. Sie können z. B. das Tool **CPU-Auslastung** auf lokalen oder Remotecomputern oder in einem Simulator oder Emulator ausführen. Sie können die Leistung eines geöffneten Projekts in Visual Studio analysieren, eine Verbindung mit einer ausgeführten App herstellen oder eine App starten, die aus dem Windows Store installiert wurde. Weitere Informationen finden Sie unter [Run Profiling Tools with or without the Debugger (Ausführen von Profilerstellungstools mit und ohne Debugger)](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Eine exemplarische Vorgehensweise, die die Leistung von Windows Store-Apps analysiert, finden Sie unter [Analysieren der CPU-Auslastung in Store-Apps](https://msdn.microsoft.com/en-us/library/windows/apps/dn641982.aspx). 

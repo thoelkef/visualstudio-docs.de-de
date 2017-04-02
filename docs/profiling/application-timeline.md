@@ -1,6 +1,6 @@
 ---
-title: Anwendungszeitachse | Microsoft-Dokumentation
-ms.custom: 
+title: Analysieren des Ressourcenverbrauchs in XAML-Apps in Visual Studio | Microsoft-Dokumentation
+ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
@@ -29,12 +29,12 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: bdfe341252a7c4340a8c0a624d4394124c3efada
-ms.openlocfilehash: 03ac5f6c12163ff56f0a77a4922cc4366d463e07
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: 5455d9a16004fef1aec02fbaf856f336c67dfb05
+ms.lasthandoff: 03/07/2017
 
 ---
-# <a name="application-timeline"></a>Anwendungszeitachse
+# <a name="analyze-resource-consumption-and-ui-thread-acitivity-xaml"></a>Analysieren des Ressourcenverbrauchs und der Threadaktivitäten auf Benutzeroberflächen (XAML)
 Verwenden Sie den Profiler **Anwendungszeitachse** , um Leistungsprobleme in Bezug auf die Anwendungsinteraktion in XAML-Anwendungen zu suchen und zu beheben. Mit diesem Tool können Sie die Leistung von XAML-Anwendungen verbessern, indem Sie eine detaillierte Ansicht des Ressourcenverbrauchs einer Anwendung bereitstellen. Sie können analysieren, wie viel Zeit Ihre Anwendung zum Vorbereiten von Benutzeroberflächenframes (Anordnen und Rendern), zum Verarbeiten von Netzwerk- und Datenträgeranforderungen sowie in Szenarien wie Starten von Anwendungen, Laden von Seiten und Ändern von Fenstergrößen benötigt.  
   
  Die **Anwendungszeitachse** ist eines der Tools, die Sie mit dem Befehl **Debuggen/Leistungsprofiler...** starten können.  

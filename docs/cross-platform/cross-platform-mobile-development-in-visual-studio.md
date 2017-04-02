@@ -30,9 +30,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: f78e2b713e75c5601a07907e7f717db92571568b
-ms.openlocfilehash: 0e180e257a6c03a4971207bfa4df422037ef67ec
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 77e7ce26df70e41e2328442454fe78c7a663f1f3
+ms.openlocfilehash: 7ceaa18fa104d8131ad415a890cd15baf3efcacb
+ms.lasthandoff: 03/08/2017
 
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Plattformübergreifende, mobile Entwicklung in Visual Studio
@@ -134,7 +134,7 @@ Sie können Apps für Android-, iOS- oder Windows-Geräte mithilfe von Visual St
 |**Weitere Informationen**|
 |--------------------|
 |[Installieren von Visual Studio](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[Erste Schritte mit Visual Studio-Tools für Apache Cordova](http://taco.visualstudio.com/en-us/docs/get-started-vs-tools-apache-cordova/) (taco.visualstudio.com)|
+|[Erste Schritte mit Visual Studio-Tools für Apache Cordova](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/) (docs.microsoft.com)|
 |[Informationen zum Visual Studio Emulator für Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
 ##  <a name="CPP"></a>Erstellen einer App für Android und Windows (C++)
