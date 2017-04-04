@@ -16,7 +16,7 @@ helpviewer_keywords:
 - unit tests, authoring
 ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 83
-ms.author: mlearned
+ms.author: douge
 manager: douge
 translation.priority.ht:
 - de-de
@@ -434,3 +434,4 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 ```  
   
  In diesem letzten Abschnitt hat die Verbesserung des Testcodes zu robusteren und informativeren Testmethoden geführt. Noch wichtiger ist jedoch, dass die zusätzliche Analyse auch zu besserem Code im zu testenden Projekt geführt hat.
+

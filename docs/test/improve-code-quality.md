@@ -13,7 +13,7 @@ helpviewer_keywords:
 - team-based development
 ms.assetid: 73baa961-c21f-43fe-bb92-3f59ae9b5945
 caps.latest.revision: 39
-ms.author: mlearned
+ms.author: douge
 manager: douge
 translation.priority.ht:
 - cs-cz
@@ -70,3 +70,4 @@ Was ist Codequalität? Korrektheit, Wartbarkeit und sogar Eleganz spielen beim E
   
  [Nachverfolgen von Arbeit mit Visual Studio Online oder Team Foundation Server](https://www.visualstudio.com/docs/work/overview)  
  Mithilfe von [!INCLUDE[vstsTfsLong](../test/includes/vststfslong_md.md)] können Sie Projekte planen und nachverfolgen, unabhängig davon, ob Sie den agilen Prozess, den formalen Prozess oder eine Variation dieser Prozesse verwenden. Indem Sie Ihre Projekte planen, den Status im Hinblick auf den Plan nachverfolgen und notwendige Anpassungen vornehmen, können Sie Risiken minimieren, unerfreuliche Überraschungen vermeiden und die Kosten der Projekte verwalten.
+

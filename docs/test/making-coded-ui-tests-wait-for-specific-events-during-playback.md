@@ -10,7 +10,7 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: 41981ad6-673e-492e-b739-9863b14157b1
 caps.latest.revision: 24
-ms.author: mlearned
+ms.author: douge
 manager: douge
 translation.priority.ht:
 - cs-cz
@@ -133,3 +133,4 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
  [Aufbau eines Tests der programmierten UI](../test/anatomy-of-a-coded-ui-test.md)   
  [Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
  [Vorgehensweise: Einfügen einer Verzögerung vor einer UI-Aktion mithilfe des Test-Editors der programmierten UI](http://msdn.microsoft.com/Library/509f8ef7-e105-4049-b11b-d64549e055b0)
+
