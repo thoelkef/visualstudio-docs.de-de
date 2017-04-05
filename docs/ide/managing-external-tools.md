@@ -91,7 +91,7 @@ Sie können externe Tools aus Visual Studio mithilfe des **Extras**-Menüs aufru
 *  **Codeausschnitt-Manager...** zum [Organisieren von Codeausschnitten](code-snippets.md#code-snippet-manager)
 *  **PreEmptive-Schutz: Dotfuscator** zum Starten von [Dotfuscator Community Edition (CE)](dotfuscator/index.md), sofern [installiert](dotfuscator/install.md).
 *  **Anpassen...** zum [Anpassen von Menüs und Symbolleisten](how-to-customize-menus-and-toolbars-in-visual-studio)
-*  **Optionen... ** zum [Festlegen einer Vielzahl verschiedener Optionen für die Visual Studio-IDE und andere Tools](reference/options-dialog-box-visual-studio.md)
+*  **Optionen...** zum [Festlegen einer Vielzahl verschiedener Optionen für die Visual Studio-IDE und andere Tools](reference/options-dialog-box-visual-studio.md)
 
 ## <a name="add-new-tools-to-the-tools-menu"></a>Neue Tools zum Menü „Extras“ hinzufügen 
  So können im Menü **Extras** ein externes Tool hinzufügen. Öffnen Sie das Dialogfeld **Externe Tools...**, und klicken Sie auf **Hinzufügen**. Geben Sie dann die Informationen ein. Beispielsweise führt der folgende Eintrag dazu, dass Windows Explorer in dem Verzeichnis der Datei geöffnet wird, das Sie zurzeit in Visual Studio geöffnet haben:  
@@ -112,7 +112,7 @@ Sie können externe Tools aus Visual Studio mithilfe des **Extras**-Menüs aufru
 |Elementpfad|$(ItemPath)|Der vollständige Dateiname der aktuellen Datei (Laufwerk + Pfad + Dateiname).|  
 |Elementverzeichnis|$(ItemDir)|Das Verzeichnisses der aktuellen Datei (Laufwerk + Pfad).|  
 |Elementdateiname|$(ItemFilename)|Der Dateiname der aktuellen Datei (Dateiname).|  
-|Elementerweiterung|$(ItemExt)|Die Dateinamenerweiterung der aktuellen Datei..|  
+|Elementerweiterung|$(ItemExt)|Die Dateinamenerweiterung der aktuellen Datei.|  
 |Aktuelle Zeile|&(CurLine)|Die aktuelle Zeilenposition des Cursors im Codefenster.|  
 |Aktuelle Spalte|&(CurCol)|Die aktuelle Spaltenposition des Cursors im Codefenster.|  
 |Aktueller Text|&(CurText)|Der ausgewählte Text.|  
