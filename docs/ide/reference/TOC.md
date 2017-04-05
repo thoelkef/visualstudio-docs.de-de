@@ -153,7 +153,7 @@
 ## [Befehl "Haltepunkt ein/aus"](toggle-breakpoint-command.md)
 ## [Befehl "Überwachung"](watch-command.md)
 # [XML-Tools in Visual Studio](../../xml-tools/xml-tools-in-visual-studio.md)
-# [MSBuild](../../msbuild/msbuild1.md)
+# [MSBuild](../../msbuild/msbuild.md)
 # [Barrierefreiheit für Personen mit Behinderungen](accessibility-for-people-with-disabilities.md)
 ## [Barrierefreiheitsfunktionen in Visual Studio](accessibility-features-of-visual-studio.md)
 ### [Gewusst wie: Festlegen von IDE-Barrierefreiheitsoptionen](how-to-set-ide-accessibility-options.md)
