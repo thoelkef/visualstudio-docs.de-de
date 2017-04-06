@@ -1,8 +1,8 @@
 ---
-title: "Deinstallieren von Visual Studio 2017 RC | Microsoft-Dokumentation"
+title: "Deinstallieren von Visual Studio 2017 | Microsoft-Dokumentation"
 description: "Erfahren Sie Schritt für Schritt, wie Sie Visual Studio deinstallieren."
 ms.custom: 
-ms.date: 11/18/2016
+ms.date: 03/27/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
-- uninstalling
-- uninstalling visual studio
 - uninstall
 - uninstall Visual Studio
 ms.assetid: 0e445255-b796-426d-ad93-a4d8e36da2c5
@@ -34,8 +32,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 5e1ab0284a11fb9ecf30694d22b8bb5dc7a52a6d
-ms.openlocfilehash: b6d48bb2236a3291adea3ac849f52537707ad518
+ms.sourcegitcommit: 9e635a28d3338bcf518a0aec69c476280eedf6e2
+ms.openlocfilehash: 3a4dda7736409ce60d6f1a1aa42b820978d63074
+ms.lasthandoff: 03/27/2017
 
 ---
 
@@ -44,29 +43,24 @@ Diese Seite führt Sie durch die Deinstallation von Visual Studio, unserer integ
 
 1.  Suchen Sie den Visual Studio-Installer auf Ihrem Computer.  
 
-     Auf einem Computer mit Windows 10 Anniversary Update klicken Sie beispielsweise auf **Start** und blättern dann zum Buchstaben **M**, wo das Installationsprogramm als **Microsoft Visual Studio-Installer** angezeigt wird.  
+     Auf einem Computer mit Windows 10 Anniversary Update klicken Sie beispielsweise auf **Start** und blättern dann zum Buchstaben **V**, wo das Installationsprogramm als **Visual Studio-Installer** angezeigt wird.  
 
-     ![00-ModifyingDev15Prev5-FindTheVisualStudioInstaller](../install/media/00-modifyingdev15prev5-findthevisualstudioinstaller.png)
+     ![Visual Studio-Installer](media/vs2017-locate-the-visual-studio-installer.PNG "Suchen des Microsoft Visual Studio-Installers")
 
-2.  Starten Sie das Installationsprogramm, indem Sie darauf klicken, klicken Sie auf das Symbol ![Details](media/vs2017uninstall-UninstallIcon.png), und klicken Sie dann auf **Deinstallieren**.  
+     >[!NOTE]
+     Auf manchen Computern ist der Visual Studio-Installer unter dem Buchstaben **„M“** als **Microsoft Visual Studio-Installer** aufgelistet.
 
-     ![Ändern von Visual Studio 2017 RC, starten oder ändern](media/vs2017uninstall-ChooseUninstallFromInstaller.png "Reparieren oder Deinstallieren von Visual Studio 2017 RC")  
+2.  Starten Sie das Installationsprogramm, indem Sie darauf klicken, klicken Sie auf das Symbol ![Details](media/vs2017uninstall-UninstallIcon.png "wählen Sie das Symbol „Optionen“"), und klicken Sie dann auf **Deinstallieren**.  
+
+     ![Ändern von Visual Studio 2017; Ändern, Starten, Reparieren oder Deinstallieren](media/vs2017-uninstall.PNG "Reparieren oder Deinstallieren von Visual Studio 2017")  
 
 3.  Klicken Sie zur Bestätigung Ihrer Auswahl auf **OK**.
 
-     ![Ändern von Visual Studio 2017 RC, starten oder ändern](media/vs2017uninstall-UninstallConfirm.png "Bestätigen der Deinstallation von Visual Studio 2017 RC")  
+     ![Ändern von Visual Studio 2017; Deinstallieren des Produkts](media/vs2017-uninstall-confirm.PNG "Bestätigen der Deinstallation von Visual Studio 2017")  
 
-Wenn Sie Ihre Meinung später ändern und Visual Studio 2017 RC erneut installieren möchten, starten Sie den Visual Studio-Installer einfach erneut, und klicken Sie dann auf dem Auswahlbildschirm auf **Installieren**.
-
-> [!IMPORTANT]
-> Während Visual Studio 2017 RC im Allgemeinen für die Verwendung in einer Produktionsumgebung unterstützt wird, werden die Arbeitsauslastungen und Komponenten, die in der Benutzeroberfläche der Installation als „Vorschau“ gekennzeichnet sind, nicht für die Verwendung in einer Produktionsumgebung unterstützt.
+Wenn Sie Ihre Meinung später ändern und Visual Studio 2017 erneut installieren möchten, starten Sie den Visual Studio-Installer einfach erneut, und wählen Sie dann auf dem Auswahlbildschirm **Installieren** aus.
 
 ## <a name="see-also"></a>Siehe auch  
 * [Installieren von Visual Studio](install-visual-studio.md)
-* [Melden eines Problems mit Visual Studio 2017 RC](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
-
-
-
-<!--HONumber=Feb17_HO4-->
-
+* [Melden eines Problems mit Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
 

@@ -31,43 +31,29 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: a1edc88394193474b273968d8435e8df06415044
-ms.openlocfilehash: a3fcafe5c191987668dc6e0dce8835d748742ed7
+ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
+ms.openlocfilehash: 780c643c25f0d43ec0564e43bc50d2f36f1aee79
+ms.lasthandoff: 03/27/2017
 
 ---
 # <a name="options-text-editor-cc-experimental"></a>Optionen, Text-Editor, C/C++, Experimentell
-Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ das Verhalten ändern, das mit IntelliSense und der Suchdatenbank zusammenhängt.  
+Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ das Verhalten ändern, das mit IntelliSense und der Suchdatenbank zusammenhängt. Diese Features sind rein experimentell und werden möglicherweise in einer zukünftigen Version geändert oder komplett aus Visual Studio entfernt.  
   
  Um auf diese Seite zuzugreifen, erweitern Sie im Dialogfeld **Optionen** im linken Bereich den Eintrag **Text-Editor**, erweitern Sie **C/C++**, und wählen Sie dann **Experimental**aus.  
-  
- Diese Features sind in einer Visual Studio 2015 Update 1 RC-Installation verfügbar.  
+
+ Diese Features sind mit einer Visual Studio 2017-Installation verfügbar.  
   
 > [!NOTE]
->  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Informationen hierzu finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio)](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Informationen hierzu finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio)](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
-## <a name="browsingnavigation"></a>Durchsuchen/Navigation  
- **Neues Datenbankmodul aktivieren**  
- Dadurch sollten automatisch das Auffüllen einer Datenbank sowie alle Datenbankvorgänge für Vorgänge wie etwa **Gehe zu Definition** und **Alle Verweise suchen**(ohne Genauigkeitsverlust) beschleunigt werden. (Sie müssen Ihre Projektmappe nur schließen und erneut öffnen , um die Änderungen anzuwenden. Es ist nicht erforderlich, Visual Studio neu zu starten.)  
-  
-## <a name="intellisense"></a>IntelliSense  
- **Punkt in Pfeil in der Memberliste aktivieren**  
- Ersetzt „.“ durch „->“, sofern dies für die Memberliste anwendbar ist.  
-  
-## <a name="refactoring"></a>Umgestaltung  
- **Extraktionsfunktion aktivieren**  
- Ausgewählter Code wird in seine eigene Funktion extrahiert, und der Code wird durch einen Aufruf der neuen Funktion ersetzt. Um auf dieses Feature zuzugreifen, klicken Sie mit der rechten Maustaste auf den ausgewählten Code, und wählen Sie **Schnelle Aktionen**aus, oder drücken Sie einfach die Standardtastenkombination STRG + Punkt [STRG + .].  
-  
- **Ändern der Signatur aktivieren**  
- Parameter einer Funktion können hinzugefügt, neu angeordnet und gelöscht werden, und die Änderungen werden an alle Aufrufsites weitergegeben. Um auf dieses Feature zuzugreifen, klicken Sie mit der rechten Maustaste auf irgendeinen Aufruf der Funktion, und wählen Sie **Schnelle Aktionen**aus, oder drücken Sie einfach die Standardtastenkombination STRG + Punkt [STRG + .].  
-  
-## <a name="text-editor"></a>Text-Editor  
- **Erweiterungsbereiche aktivieren**  
- Ist diese Option aktiviert, können Sie markierten Text in geschweifte Klammern setzen, indem Sie '{' im Text-Editor eingeben.  
-  
- **Erweiterungsrangfolge aktivieren**  
- Ist diese Option aktiviert, können Sie markierten Text in runde Klammern setzen, indem Sie '(' im Text-Editor eingeben.  
-  
- Weitere Text-Editor-Features für die Visual Studio Gallery finden Sie in der Liste [hier](http://go.microsoft.com/fwlink/?LinkId=692016). Ein Beispiel ist [C++ Quick Fixes](https://visualstudiogallery.msdn.microsoft.com/be91feef-8dc3-4f7a-ac9f-f34e7ca5918f), das Folgendes unterstützt:  
+## <a name="enable-predictive-intellisense"></a>Predictive IntelliSense aktivieren
+Predictive IntelliSense beschränkt die Anzahl von angezeigten Ergebnissen in der Dropdownliste in IntelliSense, sodass nur für Ihren Kontext relevante Ergebnisse angezeigt werden. Wenn Sie <code>int x =</code> eingeben und das Dropdownmenü in IntelliSense aufrufen, werden Ihnen nur ganze Zahlen oder Funktionen, die ganze Zahlen zurückgeben, angezeigt. Standardmäßig ist Predictive IntelliSense deaktiviert.
+
+## <a name="enable-faster-project-load"></a>„Schnelleres Laden von Projekten“ aktivieren
+Mit dieser Option wird das Feature „Lightweight-Lösung laden“ aktiviert. Wenn „Lightweight-Lösung laden“ aktiviert ist, lädt Visual Studio Projekte nur dann vollständig, wenn Sie sie auch tatsächlich benötigen. Für viele übliche Aufgaben, wie z.B. das Navigieren durch eine CodeBase, das Bearbeiten von Code und das Erstellen von Projekten, ist das vollständige Laden von Projekten nicht vonnöten. Wenn diese Option aktiviert ist, können Sie schneller mit diesen üblichen Aufgaben beginnen, ohne vorher auf das Laden des Projekts warten zu müssen.  
+
+## <a name="additional-features-in-the-visual-studio-gallery"></a>Zusätzliche Features in der Visual Studio Gallery
+Weitere Text-Editor-Features für die Visual Studio Gallery finden Sie in [dieser Liste](http://go.microsoft.com/fwlink/?LinkId=692016). Ein Beispiel ist [C++ Quick Fixes](https://visualstudiogallery.msdn.microsoft.com/be91feef-8dc3-4f7a-ac9f-f34e7ca5918f), das Folgendes unterstützt:  
   
 -   **Add missing #include** - Schlägt zutreffende #include-Anweisungen für unbekannte Symbole in Ihrem Code vor.  
   
@@ -82,9 +68,4 @@ Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ da
 ## <a name="see-also"></a>Siehe auch  
  [Festlegen von sprachspezifischen Editor-Optionen](../../ide/reference/setting-language-specific-editor-options.md)   
  [Umgestaltung in C++ (VC-Blog)](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx)
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 
