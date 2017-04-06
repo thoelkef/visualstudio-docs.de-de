@@ -28,9 +28,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 76721dbf816cf7b7b8691efc10d22aac6b69cb05
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 84549f28f33933eacbf44742b5be129df8ab780e
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Schreiben von Komponententests für C/C++ mit dem Microsoft-Unittest-Framework für C++
@@ -48,7 +48,7 @@ In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht v
   
     -   `#include` eine `.h`-Datei, die Deklarationen der extern zugreifbaren Funktionen der DLL enthält.  
   
-         Die `.h`-Datei sollte Funktionsdeklarationen enthalten, die mit `_declspec(dllimport)` gekennzeichnet sind. Alternativ können Sie die Methoden mit einer DEF-Datei exportieren. Weitere Informationen finden Sie unter [Importieren und Exportieren](/visual-cpp/build/importing-and-exporting).  
+         Die `.h`-Datei sollte Funktionsdeklarationen enthalten, die mit `_declspec(dllimport)` gekennzeichnet sind. Alternativ können Sie die Methoden mit einer DEF-Datei exportieren. Weitere Informationen finden Sie unter [Importieren und Exportieren](/cpp/build/importing-and-exporting).  
   
          Komponententests können nur auf Funktionen zugreifen, die von der zu testenden DLL exportiert werden.  
   
@@ -184,7 +184,7 @@ In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht v
   
      ![Neues DLL-Codeprojekt und .h-Datei mit API-Makros](../test/media/utecpp07.png "UteCpp07")  
   
-     Der Deklarator `__declspec(dllexport)` bewirkt, dass die öffentlichen und die geschützten Member der Klasse außerhalb der DLL sichtbar sind. Weitere Informationen finden Sie unter [Using dllimport and dllexport in C++ Classes](/visual-cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes).  
+     Der Deklarator `__declspec(dllexport)` bewirkt, dass die öffentlichen und die geschützten Member der Klasse außerhalb der DLL sichtbar sind. Weitere Informationen finden Sie unter [Using dllimport and dllexport in C++ Classes](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes).  
   
 4.  Fügen Sie in der wichtigsten CPP-Datei einen minimalen Text für die Funktion hinzu:  
   
@@ -414,5 +414,5 @@ In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht v
  [Überblick über die Interoperabilität von verwaltetem/nicht verwaltetem Code](http://msdn.microsoft.com/library/ms973872.aspx)   
  [Debuggen von nativem Code](../debugger/debugging-native-code.md)   
  [Exemplarische Vorgehensweise: Erstellen und Verwenden einer Dynamic Link Library (C++)](http://msdn.microsoft.com/Library/3ae94848-44e7-4955-bbad-7d40f493e941)   
- [Importieren und Exportieren](/visual-cpp/build/importing-and-exporting)
+ [Importieren und Exportieren](/cpp/build/importing-and-exporting)
 

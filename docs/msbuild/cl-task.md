@@ -41,13 +41,13 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 4ad346483c37e1f221ebd396a60d30b5bf94a028
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: bde2b08fb3cc1b183d224ab3282e44f21a094403
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="cl-task"></a>CL-Aufgabe
-Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführbare Dateien (EXE), Dynamic Link Library-Dateien (DLL) oder Codemoduldateien (NETMODULE). Weitere Informationen finden Sie unter [Compileroptionen](/visual-cpp/build/reference/compiler-options).  
+Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführbare Dateien (EXE), Dynamic Link Library-Dateien (DLL) oder Codemoduldateien (NETMODULE). Weitere Informationen finden Sie unter [Compileroptionen](/cpp/build/reference/compiler-options).  
   
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der **CL**-Aufgabe beschrieben. Die meisten Aufgabenparameter und einige Parametersätze entsprechen einer Befehlszeilenoption.  
@@ -58,7 +58,7 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
      Fügt ein Verzeichnis zur Liste der Verzeichnisse hinzu, die nach Includedateien durchsucht werden.  
   
-     Weitere Informationen finden Sie unter [/I (Zusätzliche Includeverzeichnisse)](/visual-cpp/build/reference/i-additional-include-directories).  
+     Weitere Informationen finden Sie unter [/I (Zusätzliche Includeverzeichnisse)](/cpp/build/reference/i-additional-include-directories).  
   
 -   **AdditionalOptions**  
   
@@ -66,14 +66,14 @@ Umschließt das Visual C++-Compilertool cl.exe. Der Compiler generiert ausführb
   
      Eine Liste von Befehlszeilenoptionen. Beispielsweise „/*option1* /*option2* /*option#*“. Verwenden Sie diesen Parameter, um Befehlszeilenoptionen anzugeben, die nicht durch einen anderen Aufgabenparameter dargestellt werden.  
   
-     Weitere Informationen finden Sie unter [Compileroptionen](/visual-cpp/build/reference/compiler-options).  
+     Weitere Informationen finden Sie unter [Compileroptionen](/cpp/build/reference/compiler-options).  
   
 -   **AdditionalUsingDirectories**
 Optionaler String[]-Parameter.  
   
      Gibt ein Verzeichnis an, das der Compiler durchsucht, um Dateiverweise aufzulösen, die an die **#using**-Anweisung übergeben wurden.  
   
-     Weitere Informationen finden Sie unter [/AI (Metadatenverzeichnisse festlegen)](/visual-cpp/build/reference/ai-specify-metadata-directories).  
+     Weitere Informationen finden Sie unter [/AI (Metadatenverzeichnisse festlegen)](/cpp/build/reference/ai-specify-metadata-directories).  
   
 -   **AlwaysAppend**  
   
@@ -85,7 +85,7 @@ Optionaler String[]-Parameter.
   
      Erstellt eine Listendatei, die Assemblycode enthält.  
   
-     Weitere Informationen finden Sie unter der **/Fa**-Option in [/FA, /Fa (Listendatei)](/visual-cpp/build/reference/fa-fa-listing-file).  
+     Weitere Informationen finden Sie unter der **/Fa**-Option in [/FA, /Fa (Listendatei)](/cpp/build/reference/fa-fa-listing-file).  
   
 -   **AssemblerOutput**  
   
@@ -105,13 +105,13 @@ Optionaler String[]-Parameter.
   
     -   **All** - **/FAcs**  
   
-     Weitere Informationen finden Sie unter den Optionen **/FA**, **/FAc**, **/FAs** und **/FAcs** in [/FA, /Fa (Listendatei)](/visual-cpp/build/reference/fa-fa-listing-file).  
+     Weitere Informationen finden Sie unter den Optionen **/FA**, **/FAc**, **/FAs** und **/FAcs** in [/FA, /Fa (Listendatei)](/cpp/build/reference/fa-fa-listing-file).  
   
 -   **BasicRuntimeChecks**  
   
      Optionaler String-Parameter.  
   
-     Aktiviert und deaktiviert die Funktion für Laufzeitfehlerüberprüfungen in Verbindung mit dem [runtime_checks](/visual-cpp/preprocessor/runtime-checks)-Pragma.  
+     Aktiviert und deaktiviert die Funktion für Laufzeitfehlerüberprüfungen in Verbindung mit dem [runtime_checks](/cpp/preprocessor/runtime-checks)-Pragma.  
   
      Geben Sie einen der folgenden Werte an, von denen jeder einer Befehlszeilenoption entspricht.  
   
@@ -123,7 +123,7 @@ Optionaler String[]-Parameter.
   
     -   **EnableFastChecks** -                          **/RTC1**  
   
-     Weitere Informationen finden Sie unter [/RTC (Laufzeitfehlerüberprüfungen)](/visual-cpp/build/reference/rtc-run-time-error-checks).  
+     Weitere Informationen finden Sie unter [/RTC (Laufzeitfehlerüberprüfungen)](/cpp/build/reference/rtc-run-time-error-checks).  
   
 -   **BrowseInformation**  
   
@@ -131,7 +131,7 @@ Optionaler String[]-Parameter.
   
      Bei `true` wird eine Browseinformationsdatei erstellt.  
   
-     Weitere Informationen finden Sie unter der **/FR**-Option in [/FR, /Fr (SBR-Datei erstellen)](/visual-cpp/build/reference/fr-fr-create-dot-sbr-file).  
+     Weitere Informationen finden Sie unter der **/FR**-Option in [/FR, /Fr (SBR-Datei erstellen)](/cpp/build/reference/fr-fr-create-dot-sbr-file).  
   
 -   **BrowseInformationFile**  
   
@@ -139,7 +139,7 @@ Optionaler String[]-Parameter.
   
      Gibt einen Dateinamen für die Browseinformationsdatei an.  
   
-     Weitere Informationen finden Sie unter dem Parameter **BrowseInformation** in dieser Tabelle und unter [/FR, /Fr (SBR-Datei erstellen)](/visual-cpp/build/reference/fr-fr-create-dot-sbr-file).  
+     Weitere Informationen finden Sie unter dem Parameter **BrowseInformation** in dieser Tabelle und unter [/FR, /Fr (SBR-Datei erstellen)](/cpp/build/reference/fr-fr-create-dot-sbr-file).  
   
 -   **BufferSecurityCheck**  
   
@@ -147,7 +147,7 @@ Optionaler String[]-Parameter.
   
      Bei `true` werden einige Pufferüberläufe erkannt, die die Rückgabeadresse überschreiben – ein gängiges Verfahren zur Nutzung von Code, der keine Puffergrößeneinschränkungen erzwingt.  
   
-     Weitere Informationen finden Sie unter [/GS (Puffer-Sicherheitsüberprüfung)](/visual-cpp/build/reference/gs-buffer-security-check).  
+     Weitere Informationen finden Sie unter [/GS (Puffer-Sicherheitsüberprüfung)](/cpp/build/reference/gs-buffer-security-check).  
   
 -   **BuildingInIDE**  
   
@@ -169,7 +169,7 @@ Optionaler String[]-Parameter.
   
     -   **StdCall** -                          **/Gz**  
   
-     Weitere Informationen finden Sie unter [/Gd, /Gr, /Gv, /Gz (Aufrufkonvention)](/visual-cpp/build/reference/gd-gr-gv-gz-calling-convention).  
+     Weitere Informationen finden Sie unter [/Gd, /Gr, /Gv, /Gz (Aufrufkonvention)](/cpp/build/reference/gd-gr-gv-gz-calling-convention).  
   
 -   **CompileAs**  
   
@@ -185,7 +185,7 @@ Optionaler String[]-Parameter.
   
     -   **CompileAsCpp** - **/TP**  
   
-     Weitere Informationen finden Sie unter [/Tc, /Tp, /TC, /TP (Typ der Quelldatei angeben)](/visual-cpp/build/reference/tc-tp-tc-tp-specify-source-file-type).  
+     Weitere Informationen finden Sie unter [/Tc, /Tp, /TC, /TP (Typ der Quelldatei angeben)](/cpp/build/reference/tc-tp-tc-tp-specify-source-file-type).  
   
 -   **CompileAsManaged**  
   
@@ -205,7 +205,7 @@ Optionaler String[]-Parameter.
   
     -   **OldSyntax** - **/clr:oldSyntax**  
   
-     Weitere Informationen finden Sie unter [/clr (Common Language Runtime-Kompilierung)](/visual-cpp/build/reference/clr-common-language-runtime-compilation).  
+     Weitere Informationen finden Sie unter [/clr (Common Language Runtime-Kompilierung)](/cpp/build/reference/clr-common-language-runtime-compilation).  
   
 -   **CreateHotpatchableImage**  
   
@@ -213,7 +213,7 @@ Optionaler String[]-Parameter.
   
      Bei `true` wird der Compiler angewiesen, ein Abbild für *Hotpatching* vorzubereiten. Durch diesen Parameter wird sichergestellt, dass die erste Anweisung jeder Funktion mindestens über die für das Hotpatching erforderliche Größe von zwei Bytes verfügt.  
   
-     Weitere Informationen finden Sie unter [/hotpatch (Erstellen eines Hotpatch-fähigen Abbildes)](/visual-cpp/build/reference/hotpatch-create-hotpatchable-image).  
+     Weitere Informationen finden Sie unter [/hotpatch (Erstellen eines Hotpatch-fähigen Abbildes)](/cpp/build/reference/hotpatch-create-hotpatchable-image).  
   
 -   **DebugInformationFormat**  
   
@@ -229,7 +229,7 @@ Optionaler String[]-Parameter.
   
     -   **EditAndContinue** - **/ZI**  
   
-     Weitere Informationen finden Sie unter [/Z7, /Zi, /ZI (Debuginformationsformat)](/visual-cpp/build/reference/z7-zi-zi-debug-information-format).  
+     Weitere Informationen finden Sie unter [/Z7, /Zi, /ZI (Debuginformationsformat)](/cpp/build/reference/z7-zi-zi-debug-information-format).  
   
 -   **DisableLanguageExtensions**  
   
@@ -237,7 +237,7 @@ Optionaler String[]-Parameter.
   
      Bei **TRUE** wird der Compiler angewiesen, einen Fehler für Sprachkonstrukte auszugeben, die weder mit ANSI C noch mit ANSI C++ kompatibel sind.  
   
-     Weitere Informationen finden Sie unter der **/Za**-Option in [/Za, /Ze (Spracherweiterungen deaktivieren)](/visual-cpp/build/reference/za-ze-disable-language-extensions).  
+     Weitere Informationen finden Sie unter der **/Za**-Option in [/Za, /Ze (Spracherweiterungen deaktivieren)](/cpp/build/reference/za-ze-disable-language-extensions).  
   
 -   **DisableSpecificWarnings**  
   
@@ -245,7 +245,7 @@ Optionaler String[]-Parameter.
   
      Deaktiviert die Warnzahlen, die in einer durch Semikolons getrennten Liste angegeben werden.  
   
-     Weitere Informationen finden Sie unter der `/wd`-Option in [/w, /Wn, /WX, /Wall, /wln, /wdn, /wen, /won (Warnstufe)](/visual-cpp/build/reference/compiler-option-warning-level).  
+     Weitere Informationen finden Sie unter der `/wd`-Option in [/w, /Wn, /WX, /Wall, /wln, /wdn, /wen, /won (Warnstufe)](/cpp/build/reference/compiler-option-warning-level).  
   
 -   **EnableEnhancedInstructionSet**  
   
@@ -259,7 +259,7 @@ Optionaler String[]-Parameter.
   
     -   **StreamingSIMDExtensions2** - **/arch:SSE2**  
   
-     Weitere Informationen finden Sie unter [/arch (x86)](/visual-cpp/build/reference/arch-x86).  
+     Weitere Informationen finden Sie unter [/arch (x86)](/cpp/build/reference/arch-x86).  
   
 -   **EnableFiberSafeOptimizations**  
   
@@ -267,7 +267,7 @@ Optionaler String[]-Parameter.
   
      Bei `true` wird Fiber-Sicherheit für Daten unterstützt, die mit statischem lokalen Threadspeicher zugewiesen werden, d.h. mit `__declspec(thread)` zugewiesene Daten.  
   
-     Weitere Informationen finden Sie unter [/GT (Fiber-sicheren lokalen Thread-Speicher unterstützen)](/visual-cpp/build/reference/gt-support-fiber-safe-thread-local-storage).  
+     Weitere Informationen finden Sie unter [/GT (Fiber-sicheren lokalen Thread-Speicher unterstützen)](/cpp/build/reference/gt-support-fiber-safe-thread-local-storage).  
   
 -   **EnablePREfast**  
   
@@ -275,7 +275,7 @@ Optionaler String[]-Parameter.
   
      Bei `true` wird die Codeanalyse aktiviert.  
   
-     Weitere Informationen finden Sie unter [/analyze (Codeanalyse)](/visual-cpp/build/reference/analyze-code-analysis).  
+     Weitere Informationen finden Sie unter [/analyze (Codeanalyse)](/cpp/build/reference/analyze-code-analysis).  
   
 -   **ErrorReporting**  
   
@@ -293,7 +293,7 @@ Optionaler String[]-Parameter.
   
     -   **Send** - **/errorReport:send**  
   
-     Weitere Informationen finden Sie unter [/errorReport (Meldung über interne Compilerfehler)](/visual-cpp/build/reference/errorreport-report-internal-compiler-errors).  
+     Weitere Informationen finden Sie unter [/errorReport (Meldung über interne Compilerfehler)](/cpp/build/reference/errorreport-report-internal-compiler-errors).  
   
 -   **ExceptionHandling**  
   
@@ -311,7 +311,7 @@ Optionaler String[]-Parameter.
   
     -   **SyncCThrow** - **/EHs**  
   
-     Weitere Informationen finden Sie unter [/EH (Ausnahmebehandlungsmodell)](/visual-cpp/build/reference/eh-exception-handling-model).  
+     Weitere Informationen finden Sie unter [/EH (Ausnahmebehandlungsmodell)](/cpp/build/reference/eh-exception-handling-model).  
   
 -   **ExpandAttributedSource**  
   
@@ -319,7 +319,7 @@ Optionaler String[]-Parameter.
   
      Bei `true` wird eine Listendatei mit erweiterten Attributen erstellt, die in die Quelldatei eingefügt wird.  
   
-     Weitere Informationen finden Sie unter [/Fx (Eingefügten Code zusammenführen)](/visual-cpp/build/reference/fx-merge-injected-code).  
+     Weitere Informationen finden Sie unter [/Fx (Eingefügten Code zusammenführen)](/cpp/build/reference/fx-merge-injected-code).  
   
 -   **FavorSizeOrSpeed**  
   
@@ -335,7 +335,7 @@ Optionaler String[]-Parameter.
   
     -   **Speed** - **/Ot**  
   
-     Weitere Informationen finden Sie unter [/Os, /Ot (Kompakten Code bevorzugen, Schnellen Code bevorzugen)](/visual-cpp/build/reference/os-ot-favor-small-code-favor-fast-code).  
+     Weitere Informationen finden Sie unter [/Os, /Ot (Kompakten Code bevorzugen, Schnellen Code bevorzugen)](/cpp/build/reference/os-ot-favor-small-code-favor-fast-code).  
   
 -   **FloatingPointExceptions**  
   
@@ -343,7 +343,7 @@ Optionaler String[]-Parameter.
   
      Bei `true` wird das verlässliche Modell für Gleitkommaausnahmen aktiviert. Ausnahmen werden sofort ausgelöst, wenn sie auftreten.  
   
-     Weitere Informationen finden Sie unter der Option /**fp:except** in [/fp (Festlegen des Gleitkommaverhaltens)](/visual-cpp/build/reference/fp-specify-floating-point-behavior).  
+     Weitere Informationen finden Sie unter der Option /**fp:except** in [/fp (Festlegen des Gleitkommaverhaltens)](/cpp/build/reference/fp-specify-floating-point-behavior).  
   
 -   **FloatingPointModel**  
   
@@ -359,13 +359,13 @@ Optionaler String[]-Parameter.
   
     -   **Fast** - **/fp:fast**  
   
-     Weitere Informationen finden Sie unter [/fp (Festlegen des Gleitkommaverhaltens)](/visual-cpp/build/reference/fp-specify-floating-point-behavior).  
+     Weitere Informationen finden Sie unter [/fp (Festlegen des Gleitkommaverhaltens)](/cpp/build/reference/fp-specify-floating-point-behavior).  
   
 -   **ForceConformanceInForLoopScope**  
   
      Optionaler boolescher Parameter.  
   
-     Bei `true` wird Standard-C++-Verhalten in [for](/visual-cpp/cpp/for-statement-cpp)-Schleifen implementiert, die Microsoft-Erweiterungen ([/Ze](/visual-cpp/build/reference/za-ze-disable-language-extensions)) verwenden.  
+     Bei `true` wird Standard-C++-Verhalten in [for](/cpp/cpp/for-statement-cpp)-Schleifen implementiert, die Microsoft-Erweiterungen ([/Ze](/cpp/build/reference/za-ze-disable-language-extensions)) verwenden.  
   
      Weitere Informationen finden Sie unter [/Zc:forScope (Übereinstimmung in for-Schleifenbereich erzwingen)](http://msdn.microsoft.com/Library/3031f02d-3b14-4ad0-869e-22b0110c3aed).  
   
@@ -375,7 +375,7 @@ Optionaler String[]-Parameter.
   
      Weist den Präprozessor an, eine oder mehrere angegebene Headerdateien zu verarbeiten.  
   
-     Weitere Informationen finden Sie unter [/FI (Name der expliziten Includedatei)](/visual-cpp/build/reference/fi-name-forced-include-file).  
+     Weitere Informationen finden Sie unter [/FI (Name der expliziten Includedatei)](/cpp/build/reference/fi-name-forced-include-file).  
   
 -   **ForcedUsingFiles**  
   
@@ -383,7 +383,7 @@ Optionaler String[]-Parameter.
   
      Weist den Präprozessor an, eine oder mehrere angegebene **#using**-Datei zu verarbeiten.  
   
-     Weitere Informationen finden Sie unter [/FU (Name der expliziten #using-Datei)](/visual-cpp/build/reference/fu-name-forced-hash-using-file).  
+     Weitere Informationen finden Sie unter [/FU (Name der expliziten #using-Datei)](/cpp/build/reference/fu-name-forced-hash-using-file).  
   
 -   **FunctionLevelLinking**  
   
@@ -391,7 +391,7 @@ Optionaler String[]-Parameter.
   
      Bei `true` wird dem Compiler ermöglicht, einzelne Funktionen in Form von kompilierten Funktionen (COMDATs) zu kompilieren.  
   
-     Weitere Informationen finden Sie unter [/Gy (Funktionslevel-Linking aktivieren)](/visual-cpp/build/reference/gy-enable-function-level-linking).  
+     Weitere Informationen finden Sie unter [/Gy (Funktionslevel-Linking aktivieren)](/cpp/build/reference/gy-enable-function-level-linking).  
   
 -   **GenerateXMLDocumentationFiles**  
   
@@ -399,7 +399,7 @@ Optionaler String[]-Parameter.
   
      Bei `true` werden vom Compiler Dokumentationskommentare in Quellcodedateien verarbeitet, und für jede derartige Quellcodedatei mit Dokumentationskommentaren wird eine XDC-Datei erstellt.  
   
-     Weitere Informationen finden Sie unter [/doc (Verarbeiten von Dokumentationskommentaren) (C/C++)](/visual-cpp/build/reference/doc-process-documentation-comments-c-cpp). Siehe auch den Parameter **XMLDocumentationFileName** in dieser Tabelle.  
+     Weitere Informationen finden Sie unter [/doc (Verarbeiten von Dokumentationskommentaren) (C/C++)](/cpp/build/reference/doc-process-documentation-comments-c-cpp). Siehe auch den Parameter **XMLDocumentationFileName** in dieser Tabelle.  
   
 -   **IgnoreStandardIncludePath**  
   
@@ -407,7 +407,7 @@ Optionaler String[]-Parameter.
   
      Hindert bei `true` den Compiler daran, in den Verzeichnissen, die in den Umgebungsvariablen PATH und INCLUDE angegeben sind, nach Includedateien zu suchen.  
   
-     Weitere Informationen finden Sie unter [/X (Standardincludepfade ignorieren)](/visual-cpp/build/reference/x-ignore-standard-include-paths).  
+     Weitere Informationen finden Sie unter [/X (Standardincludepfade ignorieren)](/cpp/build/reference/x-ignore-standard-include-paths).  
   
 -   **InlineFunctionExpansion**  
   
@@ -425,7 +425,7 @@ Optionaler String[]-Parameter.
   
     -   **AnySuitable** - **/Ob2**  
   
-     Weitere Informationen finden Sie unter [/Ob (Inlinefunktionserweiterung)](/visual-cpp/build/reference/ob-inline-function-expansion).  
+     Weitere Informationen finden Sie unter [/Ob (Inlinefunktionserweiterung)](/cpp/build/reference/ob-inline-function-expansion).  
   
 -   **IntrinsicFunctions**  
   
@@ -433,7 +433,7 @@ Optionaler String[]-Parameter.
   
      Bei `true` werden einige Funktionsaufrufe durch systeminterne oder sonstige spezielle Formen der Funktion ersetzt, die dazu beitragen, dass die Arbeitsgeschwindigkeit der Anwendung erhöht wird.  
   
-     Weitere Informationen finden Sie unter [/Oi (Systeminterne Funktionen erstellen)](/visual-cpp/build/reference/oi-generate-intrinsic-functions).  
+     Weitere Informationen finden Sie unter [/Oi (Systeminterne Funktionen erstellen)](/cpp/build/reference/oi-generate-intrinsic-functions).  
   
 -   **MinimalRebuild**  
   
@@ -441,7 +441,7 @@ Optionaler String[]-Parameter.
   
      Bei `true` wird die Mindestneuerstellung aktiviert, die bestimmt, ob C++-Quelldateien, die geänderte C++-Klassendefinitionen enthalten (die in Headerdateien (H) gespeichert sind), neu kompiliert werden müssen.  
   
-     Weitere Informationen finden Sie unter [/Gm (Minimale Neuerstellung aktivieren)](/visual-cpp/build/reference/gm-enable-minimal-rebuild).  
+     Weitere Informationen finden Sie unter [/Gm (Minimale Neuerstellung aktivieren)](/cpp/build/reference/gm-enable-minimal-rebuild).  
   
 -   **MultiProcessorCompilation**  
   
@@ -449,7 +449,7 @@ Optionaler String[]-Parameter.
   
      Bei `true` werden mehrere Prozessoren für das Kompilieren verwendet. Dieser Parameter erstellt einen Prozess für jeden effektiven Prozessor auf dem Computer.  
   
-     Weitere Informationen finden Sie unter [/MP (Erstellen mit mehreren Prozessen)](/visual-cpp/build/reference/mp-build-with-multiple-processes). Siehe auch den Parameter **ProcessorNumber** in dieser Tabelle.  
+     Weitere Informationen finden Sie unter [/MP (Erstellen mit mehreren Prozessen)](/cpp/build/reference/mp-build-with-multiple-processes). Siehe auch den Parameter **ProcessorNumber** in dieser Tabelle.  
   
 -   **ObjectFileName**  
   
@@ -457,7 +457,7 @@ Optionaler String[]-Parameter.
   
      Gibt einen Namen für die Objektdatei (OBJ) oder das Verzeichnis an, der anstelle des Standardwerts verwendet werden soll.  
   
-     Weitere Informationen finden Sie unter [/Fo (Name der Objektdatei)](/visual-cpp/build/reference/fo-object-file-name).  
+     Weitere Informationen finden Sie unter [/Fo (Name der Objektdatei)](/cpp/build/reference/fo-object-file-name).  
   
 -   **ObjectFiles**  
   
@@ -471,7 +471,7 @@ Optionaler String[]-Parameter.
   
      Bei `true` wird der Name der Standard-C-Laufzeitbibliothek in der Objektdatei (OBJ) weggelassen. Standardmäßig legt der Compiler den Namen der Bibliothek in der OBJ-Datei ab, um den Linker zur richtigen Bibliothek zu leiten.  
   
-     Weitere Informationen finden Sie unter [/Zl (Kein Standardbibliotheksname)](/visual-cpp/build/reference/zl-omit-default-library-name).  
+     Weitere Informationen finden Sie unter [/Zl (Kein Standardbibliotheksname)](/cpp/build/reference/zl-omit-default-library-name).  
   
 -   **OmitFramePointers**  
   
@@ -479,7 +479,7 @@ Optionaler String[]-Parameter.
   
      Bei `true` wird die Erstellung von Framezeigern in der Anrufliste unterdrückt.  
   
-     Weitere Informationen finden Sie unter [/Oy (Framezeiger unterdrücken)](/visual-cpp/build/reference/oy-frame-pointer-omission).  
+     Weitere Informationen finden Sie unter [/Oy (Framezeiger unterdrücken)](/cpp/build/reference/oy-frame-pointer-omission).  
   
 -   **OpenMPSupport**  
   
@@ -487,7 +487,7 @@ Optionaler String[]-Parameter.
   
      Bei `true` verarbeitet der Compiler OpenMP-Klauseln und -Direktiven.  
   
-     Weitere Informationen finden Sie unter [/openmp (Aktivieren der OpenMP 2.0-Unterstützung)](/visual-cpp/build/reference/openmp-enable-openmp-2-0-support).  
+     Weitere Informationen finden Sie unter [/openmp (Aktivieren der OpenMP 2.0-Unterstützung)](/cpp/build/reference/openmp-enable-openmp-2-0-support).  
   
 -   **Optimization**  
   
@@ -505,7 +505,7 @@ Optionaler String[]-Parameter.
   
     -   **Full** - **/Ox**  
   
-     Weitere Informationen finden Sie unter [/O-Optionen (Code optimieren)](/visual-cpp/build/reference/o-options-optimize-code).  
+     Weitere Informationen finden Sie unter [/O-Optionen (Code optimieren)](/cpp/build/reference/o-options-optimize-code).  
   
 -   **PrecompiledHeader**  
   
@@ -521,7 +521,7 @@ Optionaler String[]-Parameter.
   
     -   **Use** - **/Yu**  
   
-     Weitere Informationen finden Sie unter [/Yc (Datei der vorkompilierten Header erstellen)](/visual-cpp/build/reference/yc-create-precompiled-header-file) und [/Yu (Vorkompilierte Headerdatei verwenden)](/visual-cpp/build/reference/yu-use-precompiled-header-file). Siehe auch die Parameter **PrecompiledHeaderFile** und **PrecompiledHeaderOutputFile** in dieser Tabelle.  
+     Weitere Informationen finden Sie unter [/Yc (Datei der vorkompilierten Header erstellen)](/cpp/build/reference/yc-create-precompiled-header-file) und [/Yu (Vorkompilierte Headerdatei verwenden)](/cpp/build/reference/yu-use-precompiled-header-file). Siehe auch die Parameter **PrecompiledHeaderFile** und **PrecompiledHeaderOutputFile** in dieser Tabelle.  
   
 -   **PrecompiledHeaderFile**  
   
@@ -529,7 +529,7 @@ Optionaler String[]-Parameter.
   
      Gibt den Namen einer vorkompilierten Headerdatei an, die erstellt oder verwendet werden soll.  
   
-     Weitere Informationen finden Sie unter [/Yc (Datei der vorkompilierten Header erstellen)](/visual-cpp/build/reference/yc-create-precompiled-header-file) und [/Yu (Vorkompilierte Headerdatei verwenden)](/visual-cpp/build/reference/yu-use-precompiled-header-file).  
+     Weitere Informationen finden Sie unter [/Yc (Datei der vorkompilierten Header erstellen)](/cpp/build/reference/yc-create-precompiled-header-file) und [/Yu (Vorkompilierte Headerdatei verwenden)](/cpp/build/reference/yu-use-precompiled-header-file).  
   
 -   **PrecompiledHeaderOutputFile**  
   
@@ -537,7 +537,7 @@ Optionaler String[]-Parameter.
   
      Gibt einen Pfadnamen für einen vorkompilierten Header an, der anstelle des Standardpfadnamens verwendet wird.  
   
-     Weitere Informationen finden Sie unter [/Fp (Name der PCH-Datei)](/visual-cpp/build/reference/fp-name-dot-pch-file).  
+     Weitere Informationen finden Sie unter [/Fp (Name der PCH-Datei)](/cpp/build/reference/fp-name-dot-pch-file).  
   
 -   **PreprocessKeepComments**  
   
@@ -545,7 +545,7 @@ Optionaler String[]-Parameter.
   
      Bei `true` werden Kommentare bei der Vorverarbeitung beibehalten.  
   
-     Weitere Informationen finden Sie unter [/C (Kommentare bei der Vorverarbeitung beibehalten)](/visual-cpp/build/reference/c-preserve-comments-during-preprocessing).  
+     Weitere Informationen finden Sie unter [/C (Kommentare bei der Vorverarbeitung beibehalten)](/cpp/build/reference/c-preserve-comments-during-preprocessing).  
   
 -   **PreprocessorDefinitions**  
   
@@ -553,7 +553,7 @@ Optionaler String[]-Parameter.
   
      Definiert ein Präprozessorsymbol für Ihre Quelldatei.  
   
-     Weitere Informationen finden Sie unter [/D (Präprozessordefinitionen)](/visual-cpp/build/reference/d-preprocessor-definitions).  
+     Weitere Informationen finden Sie unter [/D (Präprozessordefinitionen)](/cpp/build/reference/d-preprocessor-definitions).  
   
 -   **PreprocessOutput**  
   
@@ -567,7 +567,7 @@ Optionaler String[]-Parameter.
   
      Gibt den Namen der Ausgabedatei an, in die der **PreprocessToFile**-Parameter die vorverarbeitete Ausgabe schreibt.  
   
-     Weitere Informationen finden Sie unter [/Fi (Ausgabedateiname vorverarbeiten)](/visual-cpp/build/reference/fi-preprocess-output-file-name).  
+     Weitere Informationen finden Sie unter [/Fi (Ausgabedateiname vorverarbeiten)](/cpp/build/reference/fi-preprocess-output-file-name).  
   
 -   **PreprocessSuppressLineNumbers**  
   
@@ -575,7 +575,7 @@ Optionaler String[]-Parameter.
   
      Bei `true` werden C- und C++-Quelldateien vorverarbeitet, und die vorverarbeiteten Dateien werden auf das Standardausgabegerät kopiert.  
   
-     Weitere Informationen finden Sie unter [/EP (Vorverarbeitung an „stdout“ ohne #line-Direktiven)](/visual-cpp/build/reference/ep-preprocess-to-stdout-without-hash-line-directives).  
+     Weitere Informationen finden Sie unter [/EP (Vorverarbeitung an „stdout“ ohne #line-Direktiven)](/cpp/build/reference/ep-preprocess-to-stdout-without-hash-line-directives).  
   
 -   **PreprocessToFile**  
   
@@ -583,7 +583,7 @@ Optionaler String[]-Parameter.
   
      Bei `true` werden C- und C++-Quelldateien vorverarbeitet, und die vorverarbeitete Ausgabe wird in eine Datei geschrieben.  
   
-     Weitere Informationen finden Sie unter [/P (Vorverarbeitung in eine Datei)](/visual-cpp/build/reference/p-preprocess-to-a-file).  
+     Weitere Informationen finden Sie unter [/P (Vorverarbeitung in eine Datei)](/cpp/build/reference/p-preprocess-to-a-file).  
   
 -   **ProcessorNumber**  
   
@@ -597,7 +597,7 @@ Optionaler String[]-Parameter.
   
      Gibt einen Dateinamen für die Programmdatenbankdatei (PDB) an.  
   
-     Weitere Informationen finden Sie unter [/Fd (Programmdatenbank-Dateiname)](/visual-cpp/build/reference/fd-program-database-file-name).  
+     Weitere Informationen finden Sie unter [/Fd (Programmdatenbank-Dateiname)](/cpp/build/reference/fd-program-database-file-name).  
   
 -   **RuntimeLibrary**  
   
@@ -615,7 +615,7 @@ Optionaler String[]-Parameter.
   
     -   **MultiThreadedDebugDLL** - **/MDd**  
   
-     Weitere Informationen finden Sie unter [/MD, /MT, /LD (Laufzeitbibliothek verwenden)](/visual-cpp/build/reference/md-mt-ld-use-run-time-library).  
+     Weitere Informationen finden Sie unter [/MD, /MT, /LD (Laufzeitbibliothek verwenden)](/cpp/build/reference/md-mt-ld-use-run-time-library).  
   
 -   **RuntimeTypeInfo**  
   
@@ -623,7 +623,7 @@ Optionaler String[]-Parameter.
   
      Bei `true` wird Code hinzugefügt, um C++-Objekttypen während der Laufzeit zu überprüfen (Laufzeit-Typeninformationen).  
   
-     Weitere Informationen finden Sie unter [/GR (Laufzeit-Typeninformation aktivieren)](/visual-cpp/build/reference/gr-enable-run-time-type-information).  
+     Weitere Informationen finden Sie unter [/GR (Laufzeit-Typeninformation aktivieren)](/cpp/build/reference/gr-enable-run-time-type-information).  
   
 -   **ShowIncludes**  
   
@@ -631,7 +631,7 @@ Optionaler String[]-Parameter.
   
      Bei `true` gibt der Compiler eine Liste der Includedateien aus.  
   
-     Weitere Informationen finden Sie unter [/showIncludes (Includedateien auflisten)](/visual-cpp/build/reference/showincludes-list-include-files).  
+     Weitere Informationen finden Sie unter [/showIncludes (Includedateien auflisten)](/cpp/build/reference/showincludes-list-include-files).  
   
 -   **SmallerTypeCheck**  
   
@@ -639,7 +639,7 @@ Optionaler String[]-Parameter.
   
      Bei `true` wird ein Laufzeitfehler gemeldet, wenn ein Wert einem kleineren Datentyp zugewiesen wird und dies einen Datenverlust verursacht.  
   
-     Weitere Informationen finden Sie unter der Option **/RTCc** in [/RTC (Laufzeitfehlerüberprüfungen)](/visual-cpp/build/reference/rtc-run-time-error-checks).  
+     Weitere Informationen finden Sie unter der Option **/RTCc** in [/RTC (Laufzeitfehlerüberprüfungen)](/cpp/build/reference/rtc-run-time-error-checks).  
   
 -   **Sources**  
   
@@ -653,7 +653,7 @@ Optionaler String[]-Parameter.
   
      Bei `true` kann der Compiler eine Kopie identischer Zeichenfolgen im Programmabbild erstellen.  
   
-     Weitere Informationen finden Sie unter [/GF (Doppelte Zeichenfolgen beseitigen)](/visual-cpp/build/reference/gf-eliminate-duplicate-strings).  
+     Weitere Informationen finden Sie unter [/GF (Doppelte Zeichenfolgen beseitigen)](/cpp/build/reference/gf-eliminate-duplicate-strings).  
   
 -   **StructMemberAlignment**  
   
@@ -675,7 +675,7 @@ Optionaler String[]-Parameter.
   
     -   **16Bytes** - **/Zp16**  
   
-     Weitere Informationen finden Sie unter [/Zp (Ausrichten des Strukturmembers)](/visual-cpp/build/reference/zp-struct-member-alignment).  
+     Weitere Informationen finden Sie unter [/Zp (Ausrichten des Strukturmembers)](/cpp/build/reference/zp-struct-member-alignment).  
   
 -   **SuppressStartupBanner**  
   
@@ -683,7 +683,7 @@ Optionaler String[]-Parameter.
   
      Bei `true` wird die Anzeige der Copyright- und Versionsnummernmeldung bei Aufgabenstart verhindert.  
   
-     Weitere Informationen finden Sie unter [/nologo (Startbanner unterdrücken) (C/C++)](/visual-cpp/build/reference/nologo-suppress-startup-banner-c-cpp).  
+     Weitere Informationen finden Sie unter [/nologo (Startbanner unterdrücken) (C/C++)](/cpp/build/reference/nologo-suppress-startup-banner-c-cpp).  
   
 -   **TrackerLogDirectory**  
   
@@ -699,7 +699,7 @@ Optionaler String[]-Parameter.
   
      Behandelt die angegebene Liste von Compilerwarnungen als Fehler.  
   
-     Weitere Informationen finden Sie unter der Option **/we**`n` in [/w, /Wn, /WX, /Wall, /wln, /wdn, /wen, /won (Warnstufe)](/visual-cpp/build/reference/compiler-option-warning-level).  
+     Weitere Informationen finden Sie unter der Option **/we**`n` in [/w, /Wn, /WX, /Wall, /wln, /wdn, /wen, /won (Warnstufe)](/cpp/build/reference/compiler-option-warning-level).  
   
 -   **TreatWarningAsError**  
   
@@ -707,7 +707,7 @@ Optionaler String[]-Parameter.
   
      Bei `true` werden alle Compilerwarnungen als Fehler behandelt.  
   
-     Weitere Informationen finden Sie unter der Option **/WX** in [/w, /Wn, /WX, /Wall, /wln, /wdn, /wen, /won (Warnstufe)](/visual-cpp/build/reference/compiler-option-warning-level).  
+     Weitere Informationen finden Sie unter der Option **/WX** in [/w, /Wn, /WX, /Wall, /wln, /wdn, /wen, /won (Warnstufe)](/cpp/build/reference/compiler-option-warning-level).  
   
 -   **TreatWChar_tAsBuiltInType**  
   
@@ -723,7 +723,7 @@ Optionaler String[]-Parameter.
   
      Bei `true` wird die Definition der Microsoft-spezifischen Symbole aufgehoben, die der Compiler definiert.  
   
-     Weitere Informationen finden Sie unter der Option **/u** in [/U, /u (Symboldefinitionen aufheben)](/visual-cpp/build/reference/u-u-undefine-symbols).  
+     Weitere Informationen finden Sie unter der Option **/u** in [/U, /u (Symboldefinitionen aufheben)](/cpp/build/reference/u-u-undefine-symbols).  
   
 -   **UndefinePreprocessorDefinitions**  
   
@@ -731,7 +731,7 @@ Optionaler String[]-Parameter.
   
      Gibt eine Liste mit einem oder mehreren Präprozessorsymbolen an, deren Definition aufgehoben werden soll.  
   
-     Weitere Informationen finden Sie unter der Option **/U** in [/U, /u (Symboldefinitionen aufheben)](/visual-cpp/build/reference/u-u-undefine-symbols).  
+     Weitere Informationen finden Sie unter der Option **/U** in [/U, /u (Symboldefinitionen aufheben)](/cpp/build/reference/u-u-undefine-symbols).  
   
 -   **UseFullPaths**  
   
@@ -739,7 +739,7 @@ Optionaler String[]-Parameter.
   
      Bei `true` wird der vollständige Pfad der Quellcodedateien angezeigt, die in der Diagnostik an den Compiler übergeben werden.  
   
-     Weitere Informationen finden Sie unter [/FC (Vollständiger Pfad der Quellcodedatei in Diagnostik)](/visual-cpp/build/reference/fc-full-path-of-source-code-file-in-diagnostics).  
+     Weitere Informationen finden Sie unter [/FC (Vollständiger Pfad der Quellcodedatei in Diagnostik)](/cpp/build/reference/fc-full-path-of-source-code-file-in-diagnostics).  
   
 -   **UseUnicodeForAssemblerListing**  
   
@@ -747,7 +747,7 @@ Optionaler String[]-Parameter.
   
      Bei `true` wird die Ausgabedatei im UTF-8-Format erstellt.  
   
-     Weitere Informationen finden Sie unter der Option **/FAu** in [/FA, /Fa (Listendatei)](/visual-cpp/build/reference/fa-fa-listing-file).  
+     Weitere Informationen finden Sie unter der Option **/FAu** in [/FA, /Fa (Listendatei)](/cpp/build/reference/fa-fa-listing-file).  
   
 -   **WarningLevel**  
   
@@ -769,7 +769,7 @@ Optionaler String[]-Parameter.
   
     -   **EnableAllWarnings** - **/Wall**  
   
-     Weitere Informationen finden Sie unter der Option **/W***n* in [/w, /Wn, /WX, /Wall, /wln, /wdn, /wen, /won (Warnstufe)](/visual-cpp/build/reference/compiler-option-warning-level).  
+     Weitere Informationen finden Sie unter der Option **/W***n* in [/w, /Wn, /WX, /Wall, /wln, /wdn, /wen, /won (Warnstufe)](/cpp/build/reference/compiler-option-warning-level).  
   
 -   **WholeProgramOptimization**  
   
@@ -777,7 +777,7 @@ Optionaler String[]-Parameter.
   
      Bei `true` wird die Optimierung des ganzen Programms aktiviert.  
   
-     Weitere Informationen finden Sie unter [/GL (Optimierung des ganzen Programms)](/visual-cpp/build/reference/gl-whole-program-optimization).  
+     Weitere Informationen finden Sie unter [/GL (Optimierung des ganzen Programms)](/cpp/build/reference/gl-whole-program-optimization).  
   
 -   **XMLDocumentationFileName**  
   
@@ -785,7 +785,7 @@ Optionaler String[]-Parameter.
   
      Gibt den Namen der generierten XML-Dokumentationsdateien an. Bei diesem Parameter kann es sich um einen Datei- oder Verzeichnisnamen handeln.  
   
-     Weitere Informationen finden Sie unter dem `name`-Argument in [/doc (Verarbeiten von Dokumentationskommentaren) (C/C++)](/visual-cpp/build/reference/doc-process-documentation-comments-c-cpp). Beachten Sie auch den Parameter **GenerateXMLDocumentationFiles** in dieser Tabelle.  
+     Weitere Informationen finden Sie unter dem `name`-Argument in [/doc (Verarbeiten von Dokumentationskommentaren) (C/C++)](/cpp/build/reference/doc-process-documentation-comments-c-cpp). Beachten Sie auch den Parameter **GenerateXMLDocumentationFiles** in dieser Tabelle.  
   
 -   **MinimalRebuildFromTracking**  
   
