@@ -28,9 +28,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: ac979e7287046164db37848778f648656f7230a6
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ce1142acf4acb0e44e85b7e9ab313136d7ed7727
+ms.openlocfilehash: 0ef80ff90b0182405f72f9413de13b699aed971d
+ms.lasthandoff: 03/28/2017
 
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Gewusst wie: Konfigurieren von Zielen und Aufgaben
@@ -113,17 +113,18 @@ Ausgewählte MSBuild-Aufgaben können unabhängig von der Umgebung des Entwicklu
       <SimpleTask MSBuildRuntime="$(FrameworkVerion)" MSBuildArchitecture= "x86"/>  
    </Target>  
 </Project>  
-```xml  
+```  
   
- Unlike other task parameters, `MSBuildRuntime` and `MSBuildArchitecture` are not apparent to the task itself.  To write a task that is aware of the context in which it runs, you must either test the context by calling the .NET Framework, or use build properties to pass the context information through other task parameters.  
-  
-> [!NOTE]
->  `UsingTask` attributes can be set from toolset and environment properties.  
-  
- The `MSBuildRuntime` and `MSBuildArchitecture` parameters provide the most flexible way to set the target context, but also the most limited in scope.  On the one hand, because they are set on the task instance itself and are not evaluated until the task is about to run, they can derive their value from the full scope of properties available at both evaluation-time and build-time.  On the other hand, these parameters only apply to a particular instance of a task in a particular target.  
+ Im Gegensatz zu anderen Aufgabenparametern sind `MSBuildRuntime` und `MSBuildArchitecture` für die Aufgabe selbst nicht ersichtlich.  Um eine Aufgabe zu schreiben, die sich des Kontexts bewusst ist, in dem sie ausgeführt wird, müssen Sie entweder den Kontext durch Aufrufen von .NET Framework testen oder Buildeigenschaften verwenden, um die Kontextinformationen über andere Aufgabenparameter zu übergeben.  
   
 > [!NOTE]
->  Task parameters are evaluated in the context of the parent node, not in the context of the task host.Environment variables that are runtime- or architecture- dependent (such as the Program files location) will evaluate to the value that matches the parent node.  However, if the same environment variable is read directly by the task, it will correctly be evaluated in the context of the task host.  
+>  `UsingTask`-Attribute können aus Toolset und Umgebungseigenschaften festgelegt werden.  
   
-## See Also  
- [Configuring Targets and Tasks](../msbuild/configuring-targets-and-tasks.md)
+ Die Parameter `MSBuildRuntime` und `MSBuildArchitecture` bieten die flexibelste Möglichkeit, um den Zielkontext festzulegen, zugleich ist der Umfang aber am stärksten begrenzt.  Einerseits können sie ihren Wert aus dem vollen Umfang an Eigenschaften ableiten, die zur Auswertungs- und Buildzeit verfügbar sind, da sie auf der Aufgabeninstanz selbst festgelegt werden und nicht ausgewertet werden, bis die Aufgabe ausgeführt wird.  Andererseits gelten diese Parameter nur für eine bestimmte Instanz einer Aufgabe in einem bestimmten Ziel.  
+  
+> [!NOTE]
+>  Aufgabenparameter werden im Kontext des übergeordneten Knotens ausgewertet, nicht im Kontext des Aufgabenhosts. Umgebungsvariablen, die von der Laufzeit oder Architektur abhängen (wie der Speicherort der Programmdateien) ergeben bei der Auswertung den Wert, der dem übergeordneten Knoten entspricht.  Wenn dieselbe Umgebungsvariable jedoch direkt von der Aufgabe gelesen wird, wird sie ordnungsgemäß im Kontext des Aufgabenhosts ausgewertet.  
+  
+## <a name="see-also"></a>Siehe auch  
+ [Konfigurieren von Zielen und Aufgaben](../msbuild/configuring-targets-and-tasks.md)
+
