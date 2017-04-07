@@ -1,31 +1,50 @@
 ---
-title: "Devenv-Befehlszeilenschalter | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Anwendungen [Visual Studio], Ausführen"
-  - "Builds [Team System], Befehlszeile"
-  - "Befehlszeile [Visual Studio], Schalter"
-  - "Befehlszeilenschalter, Devenv"
-  - "Compiler, Devenv-Befehle"
-  - "Kompilieren von Quellcode, Devenv"
-  - "Devenv"
-  - "Devenv, Syntax und Liste mit Schaltern"
-  - "Umgebung, Devenv-Befehle"
-  - "Schalter"
-  - "Schalter, Devenv"
+title: Devenv-Befehlszeilenschalter | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- switches, Devenv
+- builds [Team System], command-line
+- applications [Visual Studio], executing
+- compiling source code, Devenv
+- command-line switches, Devenv
+- command line [Visual Studio], switches
+- Devenv
+- environment, Devenv commands
+- compilers, Devenv commands
+- switches
+- Devenv, syntax and list of switches
 ms.assetid: e12bc6ed-74fd-4bea-8d7c-89b99c20bad8
 caps.latest.revision: 33
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 29
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+translationtype: Human Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 5666566315e94f109c5ca214dcf5b2a539911203
+ms.lasthandoff: 04/05/2017
+
 ---
 # <a name="devenv-command-line-switches"></a>Devenv-Befehlszeilenschalter
 Mit Devenv können Sie von der Befehlszeile aus verschiedene Optionen für die integrierte Entwicklungsumgebung (IDE) festlegen sowie Projekte erstellen, debuggen und bereitstellen. Verwenden Sie diese Schalter, um die IDE von einem Skript oder einer BAT-Datei aus auszuführen, z. B. einem über Nacht ausgeführten Buildskript, oder um die IDE in einer bestimmten Konfiguration zu starten.  
@@ -73,7 +92,7 @@ Mit Devenv können Sie von der Befehlszeile aus verschiedene Optionen für die i
 |[/Log (devenv.exe)](../../ide/reference/log-devenv-exe.md)|Startet [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] und protokolliert sämtliche Aktivitäten in der Protokolldatei.|  
 |[/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md) oder `/r`|Kompiliert die angegebene Projektmappe und führt sie aus.|  
 |[/Runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md)|Kompiliert die angegebene Projektmappe und führt sie aus, minimiert die IDE bei der Ausführung der Projektmappe und schließt die IDE nach beendeter Ausführung der Projektmappe.|  
-|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|Führt dazu, dass die IDE für die [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]-Kompilierung die Umgebungsvariablen PATH, INCLUDE und LIB anstelle der im Dialogfeld **Optionen** unter **Projekte** im Abschnitt „VC++-Verzeichnisse“ angegebenen Einstellungen verwendet. Weitere Informationen finden Sie unter [Festlegen der Pfad- und Umgebungsvariablen für Befehlszeilenbuilds](/visual-cpp/build/setting-the-path-and-environment-variables-for-command-line-builds).|  
+|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|Führt dazu, dass die IDE für die [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]-Kompilierung die Umgebungsvariablen PATH, INCLUDE und LIB anstelle der im Dialogfeld **Optionen** unter **Projekte** im Abschnitt „VC++-Verzeichnisse“ angegebenen Einstellungen verwendet. Weitere Informationen finden Sie unter [Festlegen der Pfad- und Umgebungsvariablen für Befehlszeilenbuilds](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds).|  
 |[/Edit (devenv.exe)](../../ide/reference/edit-devenv-exe.md)|Öffnet die angegebenen Dateien in einer ausgeführten Instanz dieser Anwendung. Wenn keine ausgeführten Instanzen vorhanden sind, wird eine neue Instanz mit einem vereinfachten Fensterlayout gestartet.|  
 |[/ResetAddin (devenv.exe)](../../ide/reference/resetaddin-devenv-exe.md)|Startet eine Instanz der Visual Studio IDE, ohne das angegebene Add-In zu laden.|  
 |[/SafeMode (devenv.exe)](../../ide/reference/safemode-devenv-exe.md)|Startet [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] im abgesicherten Modus und lädt nur die Standardumgebung und die Standarddienste sowie im Lieferumfang enthaltene Versionen von Drittanbieterpaketen.|  
@@ -100,8 +119,3 @@ Mit Devenv können Sie von der Befehlszeile aus verschiedene Optionen für die i
   
 ## <a name="see-also"></a>Siehe auch  
  [Allgemein, Umgebung, Optionen (Dialogfeld)](../../ide/reference/general-environment-options-dialog-box.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-
