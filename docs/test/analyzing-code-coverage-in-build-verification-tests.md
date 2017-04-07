@@ -10,7 +10,7 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: 59c07d15-511e-4fd0-b398-bde9d5ed00d9
 caps.latest.revision: 8
-ms.author: mlearned
+ms.author: douge
 manager: douge
 translation.priority.ht:
 - de-de
@@ -44,7 +44,7 @@ Die Code Coverage-Analyse in Microsoft Visual Studio zeigt Ihnen, wie viel Ihres
   
      Wenn Sie über mehrere Testquelldefinitionen verfügen, wiederholen Sie diesen Schritt für jede einzelne Definition.  
   
-    -   *Es ist jedoch kein Feld mit dem Namen **Type of Run Settings File**(Typ der Laufzeiteinstellungsdatei) vorhanden.*  
+    -   *Es ist jedoch kein Feld mit dem Namen**Type of Run Settings File**(Typ der Laufzeiteinstellungsdatei) vorhanden.*  
   
          Wählen Sie **Testassembly** unter **Automatisierte Tests**, und klicken Sie auf die Schaltfläche mit den Auslassungspunkten **[...]** am Ende der Zeile. Wählen Sie unter **Test Runner** im Dialogfeld **Testlauf hinzufügen/bearbeiten** die Option **Visual Studio Test Runner** aus.  
   
@@ -54,3 +54,4 @@ Die Code Coverage-Analyse in Microsoft Visual Studio zeigt Ihnen, wie viel Ihres
   
 ## <a name="see-also"></a>Siehe auch  
  [Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)
+

@@ -1,6 +1,6 @@
 ---
-title: Speicherauslastung ohne Debuggen | Microsoft-Dokumentation
-ms.custom: 
+title: Analysieren der Speicherauslastung ohne Visual Studio-Debugger | Microsoft-Dokumentation
+ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
@@ -34,12 +34,12 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: bdfe341252a7c4340a8c0a624d4394124c3efada
-ms.openlocfilehash: d0d021c01cc97a97aa75eda58a17ccd1c2089520
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: 9ff0dfb7330f70bb66597127347c8375f2c4c9ea
+ms.lasthandoff: 03/07/2017
 
 ---
-# <a name="memory-usage-without-debugging"></a>Speicherauslastung ohne Debuggen
+# <a name="memory-usage-without-the-debugger"></a>Speicherauslastung ohne Debuggen
 Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folgenden Aktionen ausführen:  
   
 -   Die Speicherauslastung Ihrer App direkt in Visual Studio überwachen, während Sie ein Szenario entwickeln.  

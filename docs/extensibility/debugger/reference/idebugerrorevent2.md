@@ -1,57 +1,73 @@
 ---
-title: "IDebugErrorEvent2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugErrorEvent2"
-helpviewer_keywords: 
-  - "IDebugErrorEvent2-Schnittstelle"
+title: IDebugErrorEvent2 | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugErrorEvent2
+helpviewer_keywords:
+- IDebugErrorEvent2 interface
 ms.assetid: 275b6f38-b3d4-4cae-8491-491177f524fb
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugErrorEvent2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: dc59f85492a4792d8f72cd35306844832ca5df53
+ms.lasthandoff: 04/05/2017
 
-Diese Schnittstelle gibt an eine Fehlermeldung an den Benutzer ausgegeben werden soll.  
+---
+# <a name="idebugerrorevent2"></a>IDebugErrorEvent2
+Diese Schnittstelle gibt eine Fehlermeldung an den Benutzer ausgegeben werden.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugErrorEvent2 : IUnknown  
 ```  
   
-## Hinweise für Implementierer  
- Das Debugmodul \(DE\) implementiert diese Schnittstelle, um Fehler als Nur\-Text Nachrichten zu melden.  Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)\-Schnittstelle muss auf dasselbe Objekt wie diese Schnittstelle implementiert werden.  Das SDM [QueryInterface](/visual-cpp/atl/queryinterface) verwendet, um die `IDebugEvent2`\-Schnittstelle zuzugreifen.  
+## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
+ Die Debugging-Modul (DE) implementiert diese Schnittstelle zum Melden von Fehlern als lesbare Nachrichten. Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) -Schnittstelle muss auf das gleiche Objekt wie diese Schnittstelle implementiert werden. Verwendet die SDM [QueryInterface](/cpp/atl/queryinterface) für den Zugriff auf die `IDebugEvent2` Schnittstelle.  
   
-## Hinweise für Aufrufer  
- DE erstellt und sendet das Ereignisobjekt ein Fehler gemeldet.  Das Ereignis wird gesendet, indem die [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Rückruffunktion verwendet, die vom SDM angegeben wurde, als sie angefügt haben dem Programm, das gedebuggt wurde.  
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
+ Die DE erstellt und sendet diese Ereignisobjekt, um einen Fehlerbericht zu erstellen. Das Ereignis wird gesendet, mit der [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Rückruffunktion, die durch die SDM bereitgestellt wird, wenn diese an die derzeit debuggte Programm angefügt.  
   
-## Methoden in die Vtable\-Reihenfolge  
- Diese Schnittstelle implementiert die folgende Weise:  
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
+ Diese Schnittstelle implementiert, die folgende Methode:  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|`GetErrorMessage`|Gibt einen Fehler, wenn lesbare Zeichenfolge zurück.|  
+|------------|-----------------|  
+|`GetErrorMessage`|Gibt einen Fehler als eine lesbare Zeichenfolge zurück.|  
   
-## Hinweise  
- Wenn das Debugmodul einen Fehler entdeckt, kann dieser Schnittstelle können Sie die Meldung von Visual Studio den Benutzer zu melden.  
+## <a name="remarks"></a>Hinweise  
+ Wenn Debugging-Modul ein Fehler auftritt, kann es diese Schnittstelle verwenden, auf die Nachricht mithilfe von Visual Studio dem Benutzer unterstellt.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

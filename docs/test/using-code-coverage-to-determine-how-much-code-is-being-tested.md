@@ -12,7 +12,7 @@ helpviewer_keywords:
 - code coverage
 ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 36
-ms.author: mlearned
+ms.author: douge
 manager: douge
 translation.priority.ht:
 - cs-cz
@@ -271,7 +271,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
   
      Wenn Sie über mehrere Testquelldefinitionen verfügen, wiederholen Sie diesen Schritt für jede einzelne Definition.  
   
-    -   *Es ist jedoch kein Feld mit dem Namen **Type of Run Settings File**(Typ der Laufzeiteinstellungsdatei) vorhanden.*  
+    -   *Es ist jedoch kein Feld mit dem Namen**Type of Run Settings File**(Typ der Laufzeiteinstellungsdatei) vorhanden.*  
   
          Wählen Sie **Testassembly** unter **Automatisierte Tests**, und klicken Sie auf die Schaltfläche mit den Auslassungspunkten **[...]** am Ende der Zeile. Wählen Sie unter **Test Runner** im Dialogfeld **Testlauf hinzufügen/bearbeiten** die Option **Visual Studio Test Runner** aus.  
   
@@ -302,3 +302,4 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
  [Anpassen der Code Coverage-Analyse](../test/customizing-code-coverage-analysis.md)   
  [Problembehandlung bei der Codeabdeckung](../test/troubleshooting-code-coverage.md)   
  [Komponententest für Code](../test/unit-test-your-code.md)
+

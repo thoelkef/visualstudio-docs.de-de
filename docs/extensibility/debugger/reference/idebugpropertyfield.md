@@ -1,58 +1,74 @@
 ---
-title: "IDebugPropertyField | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPropertyField"
-helpviewer_keywords: 
-  - "IDebugPropertyField-Schnittstelle"
+title: IDebugPropertyField | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugPropertyField
+helpviewer_keywords:
+- IDebugPropertyField interface
 ms.assetid: b50edb2c-fb8d-4def-993d-17d23d2027c1
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugPropertyField
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: cbb7047dc06feebc82c49b9d6a549babd7463852
+ms.lasthandoff: 04/05/2017
 
-Diese Schnittstelle stellt Funktionen bereit, die das Abrufen und Festlegen einer Eigenschaft ermöglichen.  
+---
+# <a name="idebugpropertyfield"></a>IDebugPropertyField
+Diese Schnittstelle stellt die Funktionen, die es ermöglichen, abrufen und Festlegen einer Eigenschaft.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
-IDebugPropertyField : IDebugContainerField  
+IDebugPropertyField : IDebugContainerField  
 ```  
   
-## Hinweise für Implementierer  
- Ein Symbol Anbieter implementiert diese Schnittstelle für dasselbe Objekt, das [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)implementiert.  Diese Schnittstelle ist eine Spezialisierung, die das Konzept von Eigenschaften für eine Klasse unterstützt.  
+## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
+ Ein Symbol-Anbieter implementiert diese Schnittstelle für das gleiche Objekt, das implementiert die [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md). Diese Schnittstelle ist eine Spezialisierung, die das Konzept der Eigenschaften einer Klasse unterstützt.  
   
-## Hinweise für Aufrufer  
- [QueryInterface](/visual-cpp/atl/queryinterface) Verwendung dieser Schnittstelle aus der [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)\-Schnittstelle abzurufen, wenn die [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)\-Methode `FIELD_KIND_PROP`zurückgibt.  
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
+ Verwendung [QueryInterface](/cpp/atl/queryinterface) beim Abrufen dieser Schnittstelle aus der [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) Schnittstelle, wenn die [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) -Methode zurückkehrt `FIELD_KIND_PROP`.  
   
-## Methoden in die Vtable\-Reihenfolge  
- Zusätzlich zu den Methoden für den [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)[IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) und Schnittstellen implementiert diese Schnittstelle die folgenden Methoden:  
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
+ Zusätzlich zu den Methoden für die [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) und [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) Schnittstellen, die diese Schnittstelle implementiert, die folgenden Methoden:  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md)|Ruft die Methode ab, mit der die Eigenschaft abgerufen werden soll.|  
-|[GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md)|Ruft die Methode ab, die die Eigenschaft festlegt.|  
+|------------|-----------------|  
+|[GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md)|Ruft die Methode ab, die die Eigenschaft abruft.|  
+|[GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md)|Ruft die Methode ab, die der Eigenschaft festlegt.|  
   
-## Hinweise  
- Eine Eigenschaft ist ein verwaltetes Code Konzept und stellt eine Möglichkeit dar, die als Variable behandelt wird.  Eigenschaften sind nicht in nicht verwaltetem C\+\+.  
+## <a name="remarks"></a>Hinweise  
+ Eine Eigenschaft ist ein Konzept von verwaltetem Code und stellt eine Methode, die als eine Variable behandelt wird. Eigenschaften sind in nicht verwalteten C++ nicht vorhanden.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
- [Symbol\-Provider\-Schnittstellen](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Symbol-Anbieter-Schnittstellen](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

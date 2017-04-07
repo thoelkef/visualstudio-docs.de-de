@@ -10,7 +10,7 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: 20221de4-2a9e-4787-b99a-b5855bb90872
 caps.latest.revision: 16
-ms.author: mlearned
+ms.author: douge
 manager: douge
 translation.priority.ht:
 - cs-cz
@@ -282,7 +282,7 @@ attribute of the Assembly element in the .fakes:
 |Ein **Typ**`T`|T<br /><br /> Der Namespace, die geschachtelte Struktur und die generischen Tics werden verworfen.|  
 |Ein **out-Parameter**`out T`|`TOut`|  
 |Ein **ref-Parameter**`ref T`|`TRef`|  
-|Ein **Arraytyp **`T[]`|`TArray`|  
+|Ein **Arraytyp**`T[]`|`TArray`|  
 |Ein **mehrdimensionales Array**, Typ `T[ , , ]`|`T3`|  
 |Ein **Zeiger**, Typ `T*`|`TPtr`|  
 |Ein **generischer Typ**`T<R1, …>`|`TOfR1`|  
@@ -304,3 +304,4 @@ attribute of the Assembly element in the .fakes:
   
 ## <a name="see-also"></a>Siehe auch  
  [Isolieren von getestetem Code mithilfe von Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
+

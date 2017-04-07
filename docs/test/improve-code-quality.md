@@ -13,7 +13,7 @@ helpviewer_keywords:
 - team-based development
 ms.assetid: 73baa961-c21f-43fe-bb92-3f59ae9b5945
 caps.latest.revision: 39
-ms.author: mlearned
+ms.author: douge
 manager: douge
 translation.priority.ht:
 - cs-cz
@@ -30,9 +30,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 7a282fc04c1eb01f0c56b1d76880276fc270686d
-ms.openlocfilehash: df5195e7cc435f6da8ebfee4589d7c6258018993
-ms.lasthandoff: 03/01/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: 2fa87621ed76fb93a9e92d558be5519d783274c5
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="improve-code-quality"></a>Verbessern der Codequalität
@@ -48,6 +48,7 @@ Was ist Codequalität? Korrektheit, Wartbarkeit und sogar Eleganz spielen beim E
 |||  
 |-|-|  
 |[Komponententest für Code](../test/unit-test-your-code.md)|Test-Explorer vereinfacht die Integration von Komponententests in die Entwicklungspraxis. Sie können entweder das Microsoft-Komponententest-Framework oder ein Drittanbieter- oder Open-Source-Framework verwenden.|  
+|[Live Unit Testing mit Visual Studio 2017](../test/live-unit-testing.md)|Live Unit Testing führt automatisch Komponententests im Hintergrund aus und stellt Codeabdeckung und Testergebnisse im Code-Editor von Visual Studio grafisch dar.|  
 |[Analysieren der Anwendungsqualität](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)|Analysetools für statischen Code finden Entwurfs-, Nutzungs-, Wartbarkeits- und Formatprobleme in C++ und verwaltetem Code. Viele dieser Probleme können zu Fehlern führen, die in der Standardtestumgebung nur schwer zu reproduzieren sind.|  
 |[Messen von Komplexität und Verwaltbarkeit verwalteten Codes](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Bei der Codemetrik handelt es sich um eine Reihe von Softwaremaßstäben, die Entwicklern einen besseren Einblick in den von ihnen entwickelten Code bieten. Die Metrik umfasst einen Wartbarkeitsindex für Funktionen und Klassen, die zyklomatische Komplexität von Funktionen, die Vererbungstiefe von Klassen und die Anzahl der Kopplungen von Klassen.|  
   
@@ -69,3 +70,4 @@ Was ist Codequalität? Korrektheit, Wartbarkeit und sogar Eleganz spielen beim E
   
  [Nachverfolgen von Arbeit mit Visual Studio Online oder Team Foundation Server](https://www.visualstudio.com/docs/work/overview)  
  Mithilfe von [!INCLUDE[vstsTfsLong](../test/includes/vststfslong_md.md)] können Sie Projekte planen und nachverfolgen, unabhängig davon, ob Sie den agilen Prozess, den formalen Prozess oder eine Variation dieser Prozesse verwenden. Indem Sie Ihre Projekte planen, den Status im Hinblick auf den Plan nachverfolgen und notwendige Anpassungen vornehmen, können Sie Risiken minimieren, unerfreuliche Überraschungen vermeiden und die Kosten der Projekte verwalten.
+

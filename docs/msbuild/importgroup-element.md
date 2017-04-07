@@ -1,69 +1,88 @@
 ---
-title: "ImportGroup Element | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "<ImportGroup> element [MSBuild]"
-  - "ImportGroup element [MSBuild]"
+title: ImportGroup-Element | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 03/13/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- <ImportGroup> element [MSBuild]
+- ImportGroup element [MSBuild]
 ms.assetid: dac3fa2d-6678-4017-af35-93686f53f302
 caps.latest.revision: 4
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 4
----
-# ImportGroup Element
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 0e5a449ef396e7b9fd23a2c018bdc7f8791b7b38
+ms.openlocfilehash: 6581493cef22954bddea70f900c45b4e616423d0
+ms.lasthandoff: 03/13/2017
 
-Enthält eine Auflistung von `Import`\-Elementen, die unter einer optionalen Bedingung gruppiert sind.  Weitere Informationen finden Sie unter [Import\-Element \(MSBuild\)](../msbuild/import-element-msbuild.md).  
-  
-## Syntax  
-  
+---
+# <a name="importgroup-element"></a>ImportGroup-Element
+Enthält eine Sammlung von `Import`-Elementen, die unter einer optionalen Bedingung gruppiert sind. Weitere Informationen finden Sie unter [Import-Element (MSBuild)](../msbuild/import-element-msbuild.md).  
+
+ \<Project>  
+ \<ImportGroup>  
+
+## <a name="syntax"></a>Syntax  
+
 ```  
 <ImportGroup Condition="'String A' == 'String B'">  
     <Import ... />  
     <Import ... />  
 </ImportGroup>  
 ```  
-  
-## Attribute und Elemente  
+
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
-  
-### Attribute  
-  
+
+### <a name="attributes"></a>Attribute  
+
 |Attribut|Beschreibung|  
-|--------------|------------------|  
-|`Condition`|Optionales Attribut.<br /><br /> Die Bedingung wird ausgewertet.  Weitere Informationen finden Sie unter [Conditions](../msbuild/msbuild-conditions.md).|  
-  
-### Untergeordnete Elemente  
-  
+|---------------|-----------------|  
+|`Condition`|Optionales Attribut.<br /><br /> Die auszuwertende Bedingung. Weitere Informationen finden Sie unter [Conditions (Bedingungen)](../msbuild/msbuild-conditions.md).|  
+
+### <a name="child-elements"></a>Untergeordnete Elemente  
+
 |Element|Beschreibung|  
-|-------------|------------------|  
-|[Importieren](../msbuild/import-element-msbuild.md)|Importiert den Inhalt einer Projektdatei in eine andere Projektdatei.|  
-  
-### Übergeordnete Elemente  
-  
+|-------------|-----------------|  
+|[Importieren](../msbuild/import-element-msbuild.md)|Importiert die Inhalte einer Projektdatei in eine andere Projektdatei.|  
+
+### <a name="parent-elements"></a>Übergeordnete Elemente  
+
 |Element|Beschreibung|  
-|-------------|------------------|  
-|[Project](../msbuild/project-element-msbuild.md)|Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]\-Projektdatei.|  
-  
-## Hinweise  
-  
-## Beispiel  
- Im folgenden Codebeispiel ist das `ImportGroup`\-Element dargestellt.  
-  
-```  
+|-------------|-----------------|  
+|[Projekt](../msbuild/project-element-msbuild.md)|Erforderliches Stammelement einer [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projektdatei.|  
+
+## <a name="remarks"></a>Hinweise  
+
+## <a name="example"></a>Beispiel  
+ Im folgenden Codebeispiel wird das `ImportGroup`-Element dargestellt.  
+
+```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
     <ImportGroup>  
         <Import Project="$(Targets1.targets) />  
@@ -72,7 +91,8 @@ Enthält eine Auflistung von `Import`\-Elementen, die unter einer optionalen Bed
 ...  
 </Project>  
 ```  
-  
-## Siehe auch  
- [Project File Schema Reference](../msbuild/msbuild-project-file-schema-reference.md)   
- [Items](../msbuild/msbuild-items.md)
+
+## <a name="see-also"></a>Siehe auch  
+ [Referenz zum Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)   
+ [Items](../msbuild/msbuild-items.md) (MSBuild-Elemente)
+

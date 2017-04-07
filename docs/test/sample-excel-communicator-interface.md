@@ -1,39 +1,57 @@
 ---
-title: "Beispiel f&#252;r Excel-Communicator-Schnittstelle | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Beispiel für Excel-Communicator-Schnittstelle | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 1dbf1090-762c-4824-82dd-2d7c2c6f00b6
 caps.latest.revision: 11
-ms.author: "mlearned"
-manager: "douge"
-caps.handback.revision: 11
----
-# Beispiel f&#252;r Excel-Communicator-Schnittstelle
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: douge
+manager: douge
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+translationtype: Human Translation
+ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
+ms.openlocfilehash: 58423d52947c920d42c91508922e5a84ef239b23
+ms.lasthandoff: 04/04/2017
 
-Die Beispielschnittstelle für `IExcelUICommunication` wird im `ExcelUICommunicator`\-Objekt im `ExcelAddIn`\-Projekt verwendet.  
+---
+# <a name="sample-excel-communicator-interface"></a>Beispiel für Excel-Communicator-Schnittstelle
+Die beispielhafte `IExcelUICommunication`-Schnittstelle wird im `ExcelUICommunicator`-Objekt im `ExcelAddIn`-Projekt verwendet.  
   
-## IExcelUICommunications\-Schnittstelle  
- Diese Schnittstelle definiert die Kommunikationspunkte zwischen dem `CodedUIExtension`\-Objekt, das im Prozess des Tests der codierten UI ausgeführt wird, und dem `ExcelCodedUIAddIn`\-Objekt, das im [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)]\-Prozess ausgeführt wird.  
+## <a name="iexceluicommunication-interface"></a>IExcelUICommunication-Schnittstelle  
+ Diese Schnittstelle definiert die Kommunikationspunkte zwischen `CodedUIExtension`, die im codierten UI-Testprozess und `ExcelCodedUIAddIn`, die im [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)]-Prozess ausgeführt wird.  
   
- Die `ExcelCodedUIAddinHelper`\-Assembly verfügt über eine `ExcelUICommunicator`\-Klasse, die von dieser Schnittstelle abgeleitet ist und das Excel\-Objektmodell zum Verarbeiten der Methoden verwendet.  
+ Die `ExcelCodedUIAddinHelper`-Assembly verfügt über eine `ExcelUICommunicator`-Klasse, die von dieser Schnittstelle abgeleitet wird und das Excel-Objektmodell verwendet, um die Methoden zu verarbeiten.  
   
- Einige Methoden rufen die angeforderten Informationen von Excel ab und erstellen dann eines der Informationsobjekte und geben es zurück, z. B. das `CellInformation`\-Objekt.  
+ Einige Methoden rufen die angeforderten Informationen aus Excel auf und erstellen und geben eines der Informationsobjekte zurück, z.B. das `CellInformation`-Objekt.  
   
- Andere Methoden verwenden ein bereitgestelltes Informationsobjekt, suchen das entsprechende Steuerelement in Excel und führen einen Prozess für das Steuerelement aus.  Die `ScrollIntoView`\-Methode führt z. B. einen Bildlauf im Arbeitsblatt durch, damit die festgelegte Zelle sichtbar ist.  
+ Andere Methoden verwenden ein bereitgestelltes Informationsobjekt, suchen das entsprechende Steuerelement in Excel und führen einen Prozess für das Steuerelement aus. Zum Beispiel führt die `ScrollIntoView`-Methode einen Bildlauf im Arbeitsblatt aus, damit die festgelegte Zelle sichtbar ist.  
   
-## Kommunikation von CodedUIExtensibilitySample und ExcelCodedUIAddinHelper  
- Die `ExcelCodedUIAddinHelper`\-Assembly wird im Excel\-Prozess ausgeführt und verfügt über die `UICommunicator`\-Klasse, die die `IExcelUITestCommunication`\-Schnittstelle implementiert und die erforderlichen Informationen direkt von der Excel\-Benutzeroberfläche abruft oder festlegt.  
+## <a name="codeduiextensibilitysample-and-excelcodeduiaddinhelper-communication"></a>CodedUIExtensibilitySample und ExcelCodedUIAddinHelper-Kommunikation  
+ Die `ExcelCodedUIAddinHelper`-Assembly wird im Excel-Prozess ausgeführt und enthält die `UICommunicator`-Klasse, die die `IExcelUITestCommunication`-Schnittstelle implementiert und ruft die erforderliche Informationen direkt von der Excel-Benutzeroberfläche auf oder legt sie dort ab.  
   
- Die `CodedUIExtensibilitySample`\-Assembly wird im Prozess des Tests der codierten UI von Visual Studio ausgeführt.  Diese Assembly verfügt über die `Communicator`\-Klasse, die einen .NET\-Remotingchannel öffnet, und stellt eine `Instance`\-Eigenschaft bereit, die mithilfe der `IExcelUICommunication`\-Schnittstelle das `UICommunicator`\-Objekt in der `ExcelCodedUIAddinHelper`\-Assembly verwendet, um Anforderungen und Informationsobjekte zwischen den beiden Assemblys zu übergeben, z. B. ein `CellInformation`\-Objekt.  
+ Die `CodedUIExtensibilitySample`-Assembly wird im codierten UI-Testprozess von Visual Studio ausgeführt. Diese Assembly verfügt über die `Communicator`-Klasse, die einen .NET Remoting-Kanal öffnet und eine `Instance`-Eigenschaft zur Verfügung stellt, die die `IExcelUICommunication`-Schnittstelle verwendet, um das `UICommunicator`-Objekt in der `ExcelCodedUIAddinHelper`-Assembly zu verwenden, um Anforderungen und Informationsobjekte, wie z.B. ein `CellInformation`-Objekt zwischen den beiden Assemblys zu übergeben.  
   
-## Siehe auch  
- [Extending Coded UI Tests and Action Recordings to Support Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)   
- [Sample Excel Add\-In for Coded UI Testing](../test/sample-excel-add-in-for-coded-ui-testing.md)   
- [Sample Coded UI Test Extension for Excel](../test/sample-coded-ui-test-extension-for-excel.md)
+## <a name="see-also"></a>Siehe auch  
+ [Extending Coded UI Tests and Action Recordings to Support Microsoft Excel (Erweitern von programmierten UI-Tests und Aktionsaufzeichnungen zur Unterstützung von Microsoft Excel)](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)   
+ [Sample Excel Add-In for Coded UI Testing (Beispiel-Add-Ins für programmierte UI-Test für Excel)](../test/sample-excel-add-in-for-coded-ui-testing.md)   
+ [Sample Coded UI Test Extension for Excel (Beispielerweiterungen für programmierte UI-Test für Excel)](../test/sample-coded-ui-test-extension-for-excel.md)
+

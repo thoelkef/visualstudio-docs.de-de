@@ -1,72 +1,88 @@
 ---
-title: "IDebugProperty3 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProperty3"
-helpviewer_keywords: 
-  - "IDebugProperty3-Schnittstelle"
+title: IDebugProperty3 | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProperty3
+helpviewer_keywords:
+- IDebugProperty3 interface
 ms.assetid: 8f9be68d-4490-4eca-8f6b-8a10ed77e226
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
----
-# IDebugProperty3
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 295baf524d3b1261826090164ccdf657b9672122
+ms.lasthandoff: 04/05/2017
 
-Diese Schnittstelle unterstützt:  
+---
+# <a name="idebugproperty3"></a>IDebugProperty3
+Diese Schnittstelle bietet Unterstützung für:  
   
--   Eine willkürlich lange Zeichenfolge der Eigenschaft zugeordneten abrufen.  
+-   Abrufen von einer beliebig lange Zeichenfolge, die der Eigenschaft zugeordnet.  
   
--   Eine eindeutige ID mit der Standardzuordnung einer Eigenschaft.  
+-   Verknüpfen eine eindeutige ID, mit der Eigenschaft.  
   
--   Eine Liste der benutzerdefinierten Viewern für die Eigenschaft abrufen.  
+-   Eine Liste der benutzerdefinierten Viewer für die Eigenschaft abgerufen.  
   
--   Ruft den Wert einer Eigenschaft mit der Fähigkeit festlegen, alle resultierenden Fehler zu melden  
+-   Festlegen des Werts einer Eigenschaft die Möglichkeit, alle resultierenden Fehler zu melden.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugProperty3 : IDebugProperty2  
 ```  
   
-## Hinweise für Implementierer  
- Das Debugmodul \(DE\) implementiert diese Schnittstelle für dasselbe Objekt, das [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) implementiert, um Unterstützung für lange Zeichenfolgen, Eigenschaften\-ID und benutzerdefinierten Viewer zu unterstützen.  
+## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
+ Die Debugging-Modul (DE) implementiert diese Schnittstelle für das gleiche Objekt, das implementiert [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) um Unterstützung für lange Zeichenfolgen, die Eigenschaft-IDs und benutzerdefinierten Viewer bereitzustellen.  
   
-## Hinweise für Aufrufer  
- Aufruf [QueryInterface](/visual-cpp/atl/queryinterface) auf einer `IDebugProperty2`\-Schnittstelle zum Abrufen dieser Schnittstelle.  
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
+ Rufen Sie [QueryInterface](/cpp/atl/queryinterface) auf eine `IDebugProperty2` Schnittstelle, um diese Schnittstelle zu erhalten.  
   
-## Methoden in die Vtable\-Reihenfolge  
- Zusätzlich zu den von `IDebugProperty2` geerbten Methoden macht die `IDebugProperty3`\-Schnittstelle die folgenden Methoden verfügbar.  
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
+ Zusätzlich zu den von geerbten Methoden `IDebugProperty2`, `IDebugProperty3` Schnittstelle macht die folgenden Methoden verfügbar.  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[GetStringCharLength](../../../extensibility/debugger/reference/idebugproperty3-getstringcharlength.md)|Gibt die Länge der Zeichenfolge zurück, die der Eigenschaft zugeordnet ist.|  
-|[GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md)|Gibt die Zeichenfolge in einem vom Benutzer angegebenen Puffer zurück.|  
-|[CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md)|Erstellt eine eindeutige ID für diese Eigenschaft.|  
-|[DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md)|Zerstört die eindeutige ID für diese Eigenschaft.|  
-|[GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)|Gibt die Anzahl von benutzerdefinierten Viewern zurück, dass diese angezeigt werden kann.|  
-|[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)|Gibt die Liste der benutzerdefinierten Viewern zurück, dass diese angezeigt werden kann.|  
-|[SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)|Legt den Wert der Eigenschaft fest und gibt eine Fehlermeldung zurück, wenn alle schief wurde.|  
+|------------|-----------------|  
+|[GetStringCharLength](../../../extensibility/debugger/reference/idebugproperty3-getstringcharlength.md)|Gibt die Länge der Zeichenfolge, die der Eigenschaft zugeordnet.|  
+|[GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md)|Gibt die Zeichenfolge in einem vom Benutzer bereitgestellte Puffer zurück.|  
+|[CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md)|Erstellt eine eindeutige ID für diese Eigenschaft an.|  
+|[DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md)|Zerstört die eindeutige ID für diese Eigenschaft an.|  
+|[GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)|Gibt die Anzahl der benutzerdefinierten Viewer, denen diese Eigenschaft angezeigt werden kann.|  
+|[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)|Gibt die Liste der benutzerdefinierten Viewer, denen diese Eigenschaft angezeigt werden kann.|  
+|[SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)|Legt den Wert dieser Eigenschaft, die eine Fehlermeldung zurückgegeben wird, wenn nichts ein aufgetretenes Problem.|  
   
-## Hinweise  
- [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) ist die bevorzugte Methode für den Debug\- Manager der Sitzung \(SDM\) einen Wert der Eigenschaft festzulegen.  
+## <a name="remarks"></a>Hinweise  
+ [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) ist die bevorzugte Methode für die Sitzung Debug-Manager (SDM) Wert einer Eigenschaft festgelegt.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
- [Core\-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Core-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)

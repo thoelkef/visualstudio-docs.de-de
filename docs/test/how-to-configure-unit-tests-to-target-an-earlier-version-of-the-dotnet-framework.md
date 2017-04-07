@@ -1,113 +1,129 @@
 ---
-title: "Gewusst wie: Konfigurieren von Komponententests zur Ausrichtung auf eine fr&#252;here Version von .NET Framework | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Vorgehensweise: Konfigurieren von Komponententests zur Ausrichtung auf eine frühere Version von .NET Framework | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: 12
-caps.handback.revision: 12
-ms.author: "mlearned"
-manager: "douge"
----
-# Gewusst wie: Konfigurieren von Komponententests zur Ausrichtung auf eine fr&#252;here Version von .NET Framework
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: douge
+manager: douge
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+translationtype: Human Translation
+ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
+ms.openlocfilehash: 0009feca183c184417be7caec5de9f482e4ecf57
+ms.lasthandoff: 04/04/2017
 
-Wenn Sie ein Testprojekt in Microsoft Visual Studio erstellen, wird die neueste Version von .NET Framework als Ziel, standardmäßig festgelegt.  Wenn Sie Testprojekte von früheren Versionen von Visual Studio aktualisieren, werden sie aktualisiert, um auf die aktuelle Version von .NET Framework festzulegen.  Indem Sie die Projekteigenschaften bearbeiten, können Sie das Projekt in früheren Versionen von .NET Framework umleiten explizit.  
+---
+# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Gewusst wie: Konfigurieren von Komponententests zur Ausrichtung auf eine frühere Version von .NET Framework
+Wenn Sie in Microsoft Visual Studio ein Testprojekt erstellen, wird die neueste Version von .NET Framework standardmäßig als Ziel festgelegt. Wenn Sie ein Upgrade von Projekten aus früheren Versionen von Visual Studio durchführen, werden Projektupgrades darüber hinaus auf die neueste Version von .NET Framework durchgeführt. Durch Bearbeiten der Projekteigenschaften können Sie das Projekt auf frühere Versionen von .NET Framework explizit umleiten.  
   
- Sie können Komponententestprojekte erstellen, die für bestimmte Versionen von .NET Framework abzielen.  Die verwendete Version muss 3,5 oder höher sein und kann keine Clientversion sein.  Visual Studio bietet die folgende grundlegende Unterstützung für Komponententests, die für bestimmte Versionen ausgerichtet sind:  
+ Sie können Komponententestprojekte erstellen, die auf bestimmte Versionen von .NET Framework abzielen. Die Zielversion muss 3.5 oder höher sein und darf keine Clientversion sein. Visual Studio ermöglicht die folgende grundlegende Unterstützung für Komponententests, die auf bestimmte Versionen abzielen:  
   
--   Sie können Komponententestprojekte erstellen und darauf zu einer bestimmten Version von .NET Framework abzielen.  
+-   Sie können Komponententestprojekte erstellen und sie auf eine bestimmte Version von .NET Framework leiten.  
   
--   Sie können Komponententests, die auf eine bestimmte Version von .NET Framework von Visual Studio auf dem lokalen Computer ausgelegt.  
+-   Sie können Komponententests ausführen, die auf eine bestimmte Version von .NET Framework in Visual Studio auf Ihrem lokalen Computer abzielen.  
   
--   Sie können Komponententests, die auf eine bestimmte Version von .NET Framework abzielen, über einen Aufruf von MSTest.exe von der Eingabeaufforderung verwenden.  
+-   Sie können Komponententests ausführen, die mithilfe von „MSTest.exe“ über die Eingabeaufforderung auf eine bestimmte Version von .NET Framework abzielen.  
   
--   Sie können Komponententests auf einem Build\-Agent als Teil eines Builds ausführen.  
+-   Sie können Komponententests auf einen Build-Agent als Teil eines Builds ausführen.  
   
- **Tests\-SharePoint\-Anwendungen**  
+ **Testen von SharePoint-Anwendungen**  
   
- Die Funktionen, die weiter oben aufgeführten aktivieren Sie auch, um Komponententests und Integrationstests für SharePoint\-Anwendungen mit Visual Studio zu schreiben.  [!INCLUDE[crabout](../test/includes/crabout_md.md)], wie SharePoint\-Anwendungen mit Visual Studio finden, [Erstellen von SharePoint\-Lösungen](/office-dev/office-dev/create-sharepoint-solutions), [Erstellen und Debuggen von SharePoint\-Lösungen](/office-dev/office-dev/building-and-debugging-sharepoint-solutions) und [Überprüfen und Debuggen von SharePoint\-Code](/office-dev/office-dev/verifying-and-debugging-sharepoint-code) entwickelt.  
+ Die oben genannten Funktionen helfen Ihnen auch beim Schreiben von Komponenten- und Integrationstest für SharePoint-Anwendungen, die Visual Studio verwenden. [!INCLUDE[crabout](../test/includes/crabout_md.md)] Informationen zum Entwickeln von SharePoint-Anwendung mithilfe von Visual Studio finden Sie unter [Erstellen von SharePoint-Lösungen](/office-dev/office-dev/create-sharepoint-solutions), [Erstellen und Debuggen von SharePoint-Lösungen](/office-dev/office-dev/building-and-debugging-sharepoint-solutions) und [Überprüfen und Debuggen von SharePoint-Code](/office-dev/office-dev/verifying-and-debugging-sharepoint-code).  
   
  **Einschränkungen**  
   
- Die folgenden Einschränkungen gelten, wenn Sie die Testprojekte umleiten, frühere Versionen von .NET Framework zu verwenden:  
+ Die folgenden Einschränkungen gelten, wenn Sie Ihre Testprojekte zum Verwenden von früheren .NET Framework-Versionen umleiten:  
   
--   In .NET Framework 3.5 wird die Festlegung von mehreren Zielversionen nur für Testprojekte unterstützt, die ausschließlich Komponententests enthalten.  .NET Framework 3.5 unterstützt keine anderen Testtypen, z. B. codierte Benutzeroberflächen\- oder Auslastungstest.  Die Neudefinition der Zielversion wird für andere Testtypen als Komponententests blockiert.  
+-   In .NET Framework 3.5 wird die Festlegung von Zielversionen für Testprojekte unterstützt, die nur Komponententests enthalten. .NET Framework 3.5 unterstützt keine anderen Testtypen, z.B. Tests der programmierten UI oder Auslastungstests. Die Umleitung ist für Testtypen, die keine Komponententests sind, blockiert.  
   
--   Ausführung von Tests auf, die an einer früheren Version von .NET Framework abzielen, wird nur im Standardhostadapter unterstützt.  Im ASP.NET\-Hostadapter wird sie nicht unterstützt.  ASP.NET\-Anwendungen, die im ASP.NET Development Server\-Kontext ausgeführt werden müssen, müssen mit der aktuellen Version von .NET Framework kompatibel sein.  
+-   Ausführung von Tests, die auf eine frühere Version von .NET Framework abzielen, ist nur im standardmäßigen Hostadapter unterstützt. Es wird nicht im Hostadapter „ASP.NET“ unterstützt. ASP.NET-Anwendungen, die unter dem Kontext „ASP.NET Development Server“ ausgeführt werden müssen, müssen mit der aktuellen Version von .NET Framework kompatibel sein.  
   
--   Die Unterstützung der Datensammlung wird deaktiviert, wenn Sie Tests ausführen, welche die .NET Framework 3.5\-Funktion zur Festlegung von mehreren Zielversionen unterstützen.  Sie können mit den Visual Studio\-Befehlszeilentools Testläufe ausführen, denen Statistiken zur Codeabdeckung zugeordnet sind.  
+-   Die Unterstützung der Datensammlung ist deaktiviert, wenn Sie Tests ausführen, die die Festlegung von Zielversionen in .NET Framework 3.5 unterstützen. Sie können Code Coverage mithilfe der Visual Studio-Befehlszeilentools ausführen.  
   
--   Komponententests, die .NET Framework 3.5 verwenden, können nicht auf einem Remotecomputer ausgeführt werden.  
+-   Komponententests, die .NET Framework 3.5 verwenden, können nicht auf einem Remotecomputer ausgeführt.  
   
--   Sie können auf Komponententests nicht auf früheren Clientversionen des Frameworks abzielen.  
+-   Sie können keine Komponententests zu früheren Clientversionen des Frameworks leiten.  
   
-### Umleiten zu einer bestimmten Version von .NET Framework für Visual Basic\-Komponententestprojekte  
+### <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-basic-unit-test-projects"></a>Umleiten zu einer bestimmten Version von .NET Framework für Visual Basic-Komponententestprojekte  
   
-1.  Erstellen Sie ein neues Visual Basic\-Komponententestprojekt.  Wählen Sie im Menü **Datei** die Option **Neu** aus, und klicken Sie dann auf **Projekt**.  
+1.  Erstellen Sie ein neues Visual Basic-Komponententestprojekt. Wählen Sie im Menü **Datei** die Option **Neu** und anschließend **Projekt** aus.  
   
      Das Dialogfeld **Neues Projekt** wird angezeigt.  
   
-2.  Erweitern Sie unter **Installierte Vorlagen** den Ordner **Visual Basic**.  Wählen Sie **Test** und anschließend die Vorlage **Testprojekt** aus.  
+2.  Klicken Sie unter **Installierte Vorlagen**auf **Visual Basic**. Wählen Sie **Test** und anschließend die Vorlage **Testprojekt** aus.  
   
-3.  Im Textfeld **Name** geben Sie einen Namen für das Visual Basic\-Testprojekt ein und wählen Sie dann **OK** aus.  
+3.  Geben Sie im Textfeld **Name** einen Namen für das Projekt ein, und klicken Sie anschließend auf **OK**.  
   
-4.  Wählen Sie im Projektmappen\-Explorer, im Kontextmenü des neuen Visual Basic\-Testprojekts **Eigenschaften** aus.  
+4.  Wählen Sie im Projektmappen-Explorer **Eigenschaften** unter dem Kontextmenü des neuen Visual Basic-Testprojekts aus.  
   
-     Die Eigenschaften des Visual Basic\-Testprojekts werden angezeigt.  
+     Die Eigenschaften für Ihr Visual Basic-Testprojekt werden angezeigt.  
   
-5.  Auf der Registerkarte **Kompilieren** wählen Sie wie in der folgenden Abbildung gezeigt **Erweiterte Kompilierungsoptionen** aus.  
+5.  Klicken sie auf der Registerkarte **Kompilieren** auf **Erweiterte Kompilierungsoptionen**, wie es in der folgenden Abbildung gezeigt wird.  
   
      ![Erweiterte Kompilierungsoptionen](../test/media/howtoconfigureunittest35frameworka.png "HowToConfigureUnitTest35FrameworkA")  
   
-6.  Verwenden Sie die Dropdownliste **Zielframework \(alle Konfigurationen\)**, um das Zielframework auf **.NET Framework 3.5** oder eine höhere Version zu ändern wie in Legende B der folgenden Abbildung dargestellt.  Sie sollten eine Clientversion nicht angeben.  
+6.  Verwenden Sie die Dropdownliste **Zielframework (alle Konfigurationen)**, um das Zielframework auf **.NET Framework 3.5** oder eine höhere Version zu ändern, wie es im Beispiel B der folgenden Abbildung gezeigt wird. Sie sollten keine Clientversion angeben.  
   
-     ![Dropdownliste für Ziel&#45;Framework](../test/media/howtoconfigureunitest35frameworkstepb.png "HowToConfigureUniTest35FrameworkStepB")  
+     ![Dropdownliste des Zielframeworks](../test/media/howtoconfigureunitest35frameworkstepb.png "HowToConfigureUniTest35FrameworkStepB")  
   
-### Umleiten zu einer bestimmten Version von .NET Framework für Visual C\#\-Komponententestprojekte  
+### <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-c-unit-test-projects"></a>Umleiten zu einer bestimmten Version von .NET Framework für Visual C#-Komponententestprojekte  
   
-1.  Erstellen Sie ein neues Visual C\#\-Komponententestprojekt.  Wählen Sie im Menü **Datei** die Option **Neu** aus, und klicken Sie dann auf **Projekt**.  
+1.  Erstellen Sie ein neues Visual C#-Komponententestprojekt. Wählen Sie im Menü **Datei** die Option **Neu** und anschließend **Projekt** aus.  
   
      Das Dialogfeld **Neues Projekt** wird angezeigt.  
   
-2.  Erweitern Sie unter **Installierte Vorlagen** den Ordner **Visual C\#**.  Wählen Sie **Test** und anschließend die Vorlage **Testprojekt** aus.  
+2.  Klicken Sie unter **Installierte Vorlagen**auf **Visual C#**. Wählen Sie **Test** und anschließend die Vorlage **Testprojekt** aus.  
   
-3.  Im Textfeld **Name** geben Sie einen Namen für das Visual C\#\-Testprojekt ein und wählen Sie dann **OK** aus.  
+3.  Geben Sie im Textfeld **Name** einen Namen für Ihr Visual C#-Testprojekt ein, und klicken Sie anschließend auf **OK**.  
   
-4.  Wählen Sie im Projektmappen\-Explorer, im Kontextmenü des neuen Visual C\#testprojekts **Eigenschaften** aus.  
+4.  Wählen Sie im Projektmappen-Explorer **Eigenschaften** unter dem Kontextmenü des neuen Visual C#-Testprojekts aus.  
   
-     Die Eigenschaften des Visual C\#\-Testprojekts werden angezeigt.  
+     Die Eigenschaften für Ihr Visual C#-Testprojekt werden angezeigt.  
   
-5.  Auf der Registerkarte **Anwendung** wählen Sie dann oder höher aus der Dropdownliste **Zielframework**, um das Ziel framework.as zu ändern, das in der folgenden Abbildung.  Sie sollten eine Clientversion nicht angeben.  
+5.  Klicken Sie zum Ändern des Zielframeworks in der Registerkarte **Anwendung** auf **Zielframework** und wählen Sie anschließend von der Dropdownliste **.NET Framework 3.5** oder eine spätere Version aus, wie es in der folgenden Abbildung gezeigt wird. Sie sollten keine Clientversion angeben.  
   
-     ![Dropdownliste für Ziel&#45;Framework](../test/media/howtoconfigureunittest35frameworkcsharp.png "HowToConfigureUnitTest35FrameworkCSharp")  
+     ![Dropdownliste des Zielframeworks](../test/media/howtoconfigureunittest35frameworkcsharp.png "HowToConfigureUniTest35FrameworkCSharp")  
   
-### Umleiten zu einer bestimmten Version von .NET Framework für C\+\+\/CLI\-Komponententestprojekte  
+### <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-ccli-unit-test-projects"></a>Umleiten zu einer bestimmten Version von .NET Framework für C++/CLI-Komponententestprojekte  
   
-1.  Erstellen Sie ein neues C\+\+\-Komponententestprojekt.  Klicken Sie im Menü **Datei** auf **Neu** und dann auf **Projekt**.  
+1.  Erstellen Sie ein neues C++-Komponententestprojekt. Klicken Sie im Menü **Datei** auf **Neu** und anschließend auf **Projekt**.  
   
      Das Dialogfeld **Neues Projekt** wird angezeigt.  
   
     > [!WARNING]
-    >  Um C\+\+\/CLI\-Komponententests für eine frühere Version des .NET\-Frameworks für Visual C\+\+ erstellen, müssen Sie die entsprechende Version von Visual Studio.  Zur Festlegung auf .NET Framework 3.5, müssen Sie [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] und [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] Service Pack 1 installieren.  
+    >  Sie müssen die entsprechende Version von Visual Studio verwenden, um C++/CLI-Komponententestprojekte für eine frühere Version von .NET Framework für C++ zu erstellen. Sie müssen Service Pack 1 von [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] und [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] installieren, um z.B. auf .NET Framework 3.5 abzuleiten.  
   
-2.  Erweitern Sie unter **Installierte Vorlagen** den Ordner **Visual C\+\+**.  Wählen Sie **Test** und anschließend die Vorlage **Testprojekt** aus.  
+2.  Klicken Sie unter **Installierte Vorlagen**auf **Visual C ++**. Wählen Sie **Test** und anschließend die Vorlage **Testprojekt** aus.  
   
-3.  Geben Sie im Textfeld **Name** einen Namen für das Visual C\+\+\-Testprojekt ein, und klicken Sie dann auf **OK**.  
+3.  Geben Sie im Textfeld **Name** einen Namen für Ihr Visual C++-Testprojekt ein, und klicken Sie anschließend auf **OK**.  
   
-4.  Wählen Sie im Projektmappen\-Explorer, der das neue Visual C\+\+\-Testprojekt **Projekt entladen** aus.  
+4.  Wählen Sie im Projektmappen-Explorer **Projekt entladen** von dem neuen Visual C++-Testprojekt.  
   
-5.  Wählen Sie im Projektmappen\-Explorer, das entladen akzeptierte Visual C\+\+\-Testprojekt aus und wählen dann **Bearbeiten \<Projektname\>.vcxproj** aus.  
+5.  Wählen Sie im Projektmappen-Explorer das entladene Visual C++-Testprojekt, und wählen Sie anschließend **\<Projektname> .vcxproj bearbeiten**.  
   
-     Die VCXPROJ\-Datei wird im Editor geöffnet.  
+     Die VCXPROJ-Datei wird im Editor geöffnet.  
   
-6.  Legen Sie `TargetFrameworkVersion` auf Version 3.5 fest, oder eine höhere Version in `PropertyGroup` beschriftete `"Globals"`.  Sie sollten eine Clientversion nicht angeben:  
+6.  Legen Sie `TargetFrameworkVersion` auf Version 3.5 oder höher in `PropertyGroup`, die als `"Globals"` bezeichnet wird, fest. Sie sollten keine Clientversion angeben:  
   
     ```  
     <PropertyGroup Label="Globals">  
@@ -121,12 +137,13 @@ Wenn Sie ein Testprojekt in Microsoft Visual Studio erstellen, wird die neueste 
   
     ```  
   
-7.  Speichern und schließen Sie die VCXPROJ\-Datei.  
+7.  Speichern und schließen Sie die VCXPROJ-Datei.  
   
-8.  Wählen Sie im Projektmappen\-Explorer, **Projekt erneut laden** auswählen im Kontextmenü des neuen Visual C\+\+\-Testprojekts aus.  
+8.  Wählen Sie im Projektmappen-Explorer **Projekt erneut laden** unter dem Kontextmenü des neuen Visual C#-Testprojekts aus.  
   
-## Siehe auch  
- [Creating and Running Unit Tests for Existing Code](http://msdn.microsoft.com/de-de/e8370b93-085b-41c9-8dec-655bd886f173)   
- [Erstellen von SharePoint\-Lösungen](/office-dev/office-dev/create-sharepoint-solutions)   
- [Erstellen und Debuggen von SharePoint\-Lösungen](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)   
- [Dialogfeld "Erweiterte Compilereinstellungen \(Visual Basic\)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)
+## <a name="see-also"></a>Siehe auch  
+ [Erstellen und Ausführen von Komponententests für vorhandenen Code](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
+ [Erstellen von SharePoint-Lösungen](/office-dev/office-dev/create-sharepoint-solutions)   
+ [Erstellen und Debuggen von SharePoint-Lösungen](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)   
+ [Dialogfeld „Erweiterte Compilereinstellungen“ (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)
+

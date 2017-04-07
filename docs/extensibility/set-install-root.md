@@ -28,14 +28,12 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 translationtype: Machine Translation
-ms.sourcegitcommit: 4e8ceb1c988f639d0ea18b94e206ddec2d3e764c
-ms.openlocfilehash: 5c103b5f038260a17f64af56f78f0b3f37e3bb32
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 8163a0e1230712734936b7548bef1753ee0c1d2a
+ms.openlocfilehash: 6d87c86d0a7793f661c6a3b28e95340f3a28c616
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="installing-outside-the-extensions-folder"></a>Installieren von außerhalb der Ordner "Extensions"
-
->**Hinweis:** diese Dokumentation ist vorläufig und basierend auf der Visual Studio 2017 RC-Version.
 
 Beginnend mit Visual Studio 2017 und VSIX v3 (Version 3) wird jetzt unterstützt für die Installation der Erweiterung Ressourcen außerhalb der Ordner "Extensions". Derzeit werden die folgenden Speicherorte als gültige Installationsorte aktiviert (wobei [Installdir] zum Installationsverzeichnis von Visual Studio-Instanz zugeordnet ist):
 

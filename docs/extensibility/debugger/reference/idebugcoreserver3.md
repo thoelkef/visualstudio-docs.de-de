@@ -1,64 +1,80 @@
 ---
-title: "IDebugCoreServer3 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCoreServer3"
-helpviewer_keywords: 
-  - "IDebugCoreServer3-Schnittstelle"
+title: IDebugCoreServer3 | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugCoreServer3
+helpviewer_keywords:
+- IDebugCoreServer3 interface
 ms.assetid: 51f5f41b-a5a4-4df0-a703-41f3d1811d7f
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# IDebugCoreServer3
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: caa07706e507bb6f6b8aa84404eab5e67579be5b
+ms.lasthandoff: 04/05/2017
 
-Diese Schnittstelle weist den Zugriff auf Informationen über den Server, auf dem der Prozess ausgeführt wird.  
+---
+# <a name="idebugcoreserver3"></a>IDebugCoreServer3
+Diese Schnittstelle ermöglicht Zugriff auf Informationen über den Server, den der Prozess ausgeführt wird.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugCoreServer3 : IDebugCoreServer2  
 ```  
   
-## Hinweise für Implementierer  
+## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
  Visual Studio implementiert diese Schnittstelle.  
   
-## Hinweise für Aufrufer  
- Verwenden Sie [QueryInterface](/visual-cpp/atl/queryinterface) , um diese Schnittstelle aus einer [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)\-Schnittstelle zu erhalten.  Ein Aufruf von [GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md) kann diese Schnittstelle auch zurückgeben.  Diese Schnittstelle wird am häufigsten für ein benutzerdefiniertes Anschlusslieferanten verwendet, um Programme auf einem Server zu starten \(entweder lokal oder remote\).  
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
+ Verwendung [QueryInterface](/cpp/atl/queryinterface) beim Abrufen dieser Schnittstelle aus einem [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) Schnittstelle. Ein Aufruf von [GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md) kann diese Schnittstelle auch zurückgeben. Diese Schnittstelle wird durch einen benutzerdefinierten Port Lieferanten am häufigsten verwendet, um Programme auf einem Server (lokal oder remote) zu starten.  
   
-## Methoden in die Vtable\-Reihenfolge  
- Zusätzlich zu den Methoden der [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)\-Schnittstelle implementiert diese Schnittstelle die folgenden Methoden:  
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
+ Zusätzlich zu den Methoden für die [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) diese Schnittstelle implementiert, die folgenden Methoden:  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
+|------------|-----------------|  
 |[GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)|Ruft den Namen des Servers ab.|  
-|[GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md)|Ruft eine benutzerfreundliche Version des Servernamens ab|  
-|[EnableAutoAttach](../../../extensibility/debugger/reference/idebugcoreserver3-enableautoattach.md)|Teilt gesagt, das auf Module ermöglichen, Debugsymbolinformationen auf Prozesse automatisch beim Start dieser Prozesse anhängen.|  
-|[DiagnoseWebDebuggingError](../../../extensibility/debugger/reference/idebugcoreserver3-diagnosewebdebuggingerror.md)|Ruft einen bestimmten Fehlercode ab, wenn das automatische Anhängen fehlschlägt.|  
-|[CreateInstanceInServer](../../../extensibility/debugger/reference/idebugcoreserver3-createinstanceinserver.md)|Erstellt eine Instanz eines Debugmoduls auf dem Server.|  
-|[QueryIsLocal](../../../extensibility/debugger/reference/idebugcoreserver3-queryislocal.md)|Ruft ein Flag ab, das angibt, ob der Server auf dem gleichen Computer wie der Aufrufer ist.|  
-|[GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)|Ruft einen Wert ab, der das Protokoll angibt, das verwendet wird, um mit dem Server zu kommunizieren.|  
-|[DisableAutoAttach](../../../extensibility/debugger/reference/idebugcoreserver3-disableautoattach.md)|Deaktiviert alle selbstklebenden Einstellungen für alle Debuginformationen Module, die ungefähr Server kennt.|  
+|[GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md)|Ruft eine benutzerfreundliche Version des Servernamens.|  
+|[EnableAutoAttach](../../../extensibility/debugger/reference/idebugcoreserver3-enableautoattach.md)|Weist bestimmten Debugmodule für Prozesse, die automatisch angefügt wird, wenn diese Prozesse starten.|  
+|[DiagnoseWebDebuggingError](../../../extensibility/debugger/reference/idebugcoreserver3-diagnosewebdebuggingerror.md)|Ruft einen bestimmten Fehlercode ab, wenn automatische anfügen erzeugt einen Fehler.|  
+|[CreateInstanceInServer](../../../extensibility/debugger/reference/idebugcoreserver3-createinstanceinserver.md)|Erstellt eine Instanz von Debugging-Modul auf dem Server.|  
+|[QueryIsLocal](../../../extensibility/debugger/reference/idebugcoreserver3-queryislocal.md)|Ruft ein Flag, der angibt, ob der Server auf demselben Computer wie der Aufrufer ab.|  
+|[GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)|Ruft einen Wert, der angibt, des Protokolls für die Kommunikation mit dem Server verwendet wird.|  
+|[DisableAutoAttach](../../../extensibility/debugger/reference/idebugcoreserver3-disableautoattach.md)|Deaktiviert alle Anhängen Einstellungen für alle Debugmodule, denen diesem Server kennt automatische.|  
   
-## Hinweise  
- Ein benutzerdefinierter Port lieferant empfängt die [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)\-Schnittstelle für einen Aufruf von [Ereignis](../../../extensibility/debugger/reference/idebugportevents2-event.md).  Die `IDebugCoreServer3`\-Schnittstelle kann von dieser Schnittstelle abgerufen werden.  
+## <a name="remarks"></a>Hinweise  
+ Ein benutzerdefinierten Port Lieferanten empfängt die [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) Schnittstelle bei einem Aufruf von [Ereignis](../../../extensibility/debugger/reference/idebugportevents2-event.md). Die `IDebugCoreServer3` Schnittstelle kann von dieser Schnittstelle abgerufen werden.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)   
  [GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)

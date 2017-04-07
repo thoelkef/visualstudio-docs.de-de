@@ -28,18 +28,16 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 translationtype: Machine Translation
-ms.sourcegitcommit: 4f93b8c1db59dd8d8a407c82002240641be43018
-ms.openlocfilehash: 1f9248442357c4447703ac6d6dac8a27934904e8
-ms.lasthandoff: 03/01/2017
+ms.sourcegitcommit: 5b6334c38a6c058f274498c06f8e07c934931910
+ms.openlocfilehash: efd17a3317302fedcb9bd42aded7a38adee2f75f
+ms.lasthandoff: 03/22/2017
 
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Gewusst wie: Migrieren von Erweiterungsprojekte in Visual Studio 2017
 
->**Hinweis:** diese Dokumentation ist vorläufig und basierend auf der Visual Studio 2017 RC-Version.
-
 Dieses Dokument beschreibt die Erweiterbarkeit Projekte auf Visual Studio 2017 zu aktualisieren. Zusätzlich zu beschreiben, wie die Projektdateien aktualisieren, beschreibt es auch von der Erweiterung manifest v2 Version 2 (VSIX) zum neuen Version 3 VSIX-manifest-Format (VSIX v3) aktualisieren.
 
-## <a name="install-visual-studio-2017-rc-with-required-workloads"></a>Installieren von Visual Studio 2017 RC mit erforderlichen workloads
+## <a name="install-visual-studio-2017-with-required-workloads"></a>Installieren Sie Visual Studio 2017 mit erforderlichen workloads
 
 Stellen Sie sicher, dass die Installation die folgenden Arbeitslasten enthält:
 
@@ -59,19 +57,16 @@ Die Projektdatei (z. B. *.csproj) werden aktualisiert:
 
 >**Hinweis:** , wenn Ihre Lösung nicht das Microsoft.VSSDK.BuildTools NuGet-Paket verwiesen wird, können Sie diesen Schritt überspringen.
 
-Um die Erweiterung in die neue VSIX v3 erstellen (Version 3)-Format, die Projektmappe wird mit den neuen VSSDK Build-Tools erstellt werden müssen. Dies wird mit Visual Studio 2017 RC installiert werden, aber die VSIX-v2-Erweiterung kann einen Verweis auf eine ältere Version über NuGet belegen. Wenn dies der Fall ist, müssen Sie ein Update des Microsoft.VSSDK.BuildTools NuGet-Pakets für die Projektmappe manuell zu installieren. Zum Zeitpunkt der RC-Version wird dieses Paket im Status "Vorabversion" sein.
+Um die Erweiterung in die neue VSIX v3 erstellen (Version 3)-Format, die Projektmappe wird mit den neuen VSSDK Build-Tools erstellt werden müssen. Dies wird mit Visual Studio 2017 installiert werden, aber die VSIX-v2-Erweiterung kann einen Verweis auf eine ältere Version über NuGet belegen. Wenn dies der Fall ist, müssen Sie ein Update des Microsoft.VSSDK.BuildTools NuGet-Pakets für die Projektmappe manuell zu installieren.
 
 So aktualisieren Sie die NuGet-Verweise auf Microsoft.VSSDK.BuildTools
 
 * Mit der rechten Maustaste auf die Projektmappe, und wählen Sie **NuGet-Pakete verwalten...**
 * Navigieren Sie zu der **Updates** Registerkarte.
-* Aktivieren Sie das Kontrollkästchen **Include Prerelease**.
 * Wählen Sie Microsoft.VSSDK.BuildTools (neueste Version).
 * Drücken Sie **Update**.
 
 ![VSSDK-Buildtools](media/vssdk-build-tools.png)
-
->**Hinweis:** der Screenshot zeigt eine andere Version von den BuildTools. Wählen Sie die RC-Version.
 
 ## <a name="make-changes-to-the-vsix-extension-manifest"></a>Ändern Sie die VSIX-Erweiterung
 
@@ -161,7 +156,7 @@ Test, der der VSIX-Datei auf einem Computer mit der Installation aller erforderl
 
 Versuchen Sie, die Erweiterung zu installieren:
 
-* In Visual Studio 2017 RC
+* In Visual Studio 2017
 
 ![VSIX-Installationsprogramm auf Visual Studio 2017](media/vsixinstaller-vs-2017.png)
 
@@ -170,7 +165,7 @@ Versuchen Sie, die Erweiterung zu installieren:
   * Sollte für Visual Studio 2012, Visual Studio 2013, Visual Studio 2015 funktionieren.
 * Optional: Überprüfen Sie, ob VSIX-Installationsprogramm Version Checker zwischen Versionen bietet.
   * Frühere Versionen von Visual Studio enthält, (falls installiert).
-  * Enthält Visual Studio 2017 RC.
+  * Enthält Visual Studio 2017.
 
 Wenn Visual Studio zuletzt geöffnet wurde, wird möglicherweise ein Dialogfeld wie folgt angezeigt:
 
@@ -182,7 +177,7 @@ Warten Sie, bis die Prozesse beendet, oder beenden Sie Aufgaben manuell. Sie fin
 
 ## <a name="check-when-missing-the-required-prerequisites"></a>Überprüfen Sie, wenn die erforderlichen Komponenten nicht vorhanden.
 
-* Versuchen Sie zum Installieren der Erweiterung auf einem Computer mit Visual Studio 2017 RC, enthalten nicht alle Komponenten, die in die erforderlichen Komponenten (siehe oben) definiert.
+* Versuchen Sie zum Installieren der Erweiterung auf einem Computer mit Visual Studio 2017, enthalten nicht alle Komponenten, die in die erforderlichen Komponenten (siehe oben) definiert.
 * Überprüfen Sie, dass die Installation die fehlende Komponente/s identifiziert und sie als erforderliche Komponente für die VSIXInstaller zeigt.
 * Hinweis: Erhöhte Rechte ist erforderlich, wenn alle erforderlichen Komponenten mit der Erweiterung installiert werden müssen.
 
@@ -192,11 +187,11 @@ Warten Sie, bis die Prozesse beendet, oder beenden Sie Aufgaben manuell. Sie fin
 
 Bei der Suche nach Ihren Abhängigkeiten, finden Sie, dass eine Abhängigkeit an mehreren Komponenten zugeordnet werden. Welche Abhängigkeiten festlegen sollten angeben als die erforderliche Komponente, es wird empfohlen, dass Sie eine Komponente mit einer Funktionalität ist vergleichbar mit der Erweiterung und berücksichtigen auch Benutzer und welche Art von Komponenten würden sie wahrscheinlich installiert haben oder ausmacht, würde nicht installieren. Es wird empfohlen, erstellen, die Ihre Erweiterungen in einer Weise, in denen die erforderlichen Komponenten nur die Mindestanforderungen, die die Erweiterung erfüllen ausgeführt werden kann, und für zusätzliche Features haben sie inaktiv, wenn bestimmte Komponenten nicht erkannt werden.
 
-Um weitere Anleitungen bereitzustellen, haben wir einige allgemeine Erweiterungstypen und ihre Vorkenntnisse identifiziert:
+Um weitere Anleitungen zu gewährleisten, haben wir einige allgemeine Erweiterungstypen und ihre Vorkenntnisse identifiziert:
 
 Erweiterungstyp | Anzeigename |    Id
 --- | --- | ---
-Editor | Core-Editor von Visual Studio    | Microsoft.VisualStudio.CoreEditor
+Editor | Core-Editor von Visual Studio    | Microsoft.VisualStudio.Component.CoreEditor
 Roslyn | C# und Visual Basic | Microsoft.VisualStudio.Component.Roslyn.LanguageServices
 WPF | Verwaltete Desktop Arbeitslast Core | Microsoft.VisualStudio.Component.ManagedDesktop.Core
 Debugger | Just-In-Time-debugger | Microsoft.VisualStudio.Component.Debugger.JustInTime

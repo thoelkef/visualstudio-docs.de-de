@@ -29,13 +29,18 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 28eaaaff0c69ab9588a9d1351aee595abf957e2e
-ms.openlocfilehash: d8c8a0908e7ddd630cfac7b879fae0521acd6944
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 91fde66abf2f325ef0a6a0a2fd30e36981f44033
+ms.openlocfilehash: 8c13675dbd06111bb0eced77f9343c80959afba1
+ms.lasthandoff: 03/08/2017
 
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Änderungsprotokoll (Visual Studio-Tools für Unity)
 Visual Studio-Tools für Unity (Änderungsprotokoll)  
+
+## <a name="3001"></a>3.0.0.1
+ Veröffentlichung: 07.03.2017
+
+### <a name="this-version-includes-all-new-features-and-bug-fixes-introduced-with-28x-series"></a>Diese Version enthält alle neuen Funktionen und Fehlerbehebungen, die in der Serie 2.8.x eingeführt wurden.
 
 ## <a name="282-30-preview-3"></a>2.8.2 (3.0 Preview 3)
  Veröffentlichung: 25.1.2017

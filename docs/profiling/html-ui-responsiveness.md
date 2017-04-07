@@ -1,6 +1,6 @@
 ---
-title: "Reaktionsfähigkeit der HTML-Benutzeroberfläche | Microsoft-Dokumentation"
-ms.custom: 
+title: "Analysieren der HTML-UI-Reaktionsfähigkeit in UWP-Apps | Microsoft-Dokumentation"
+ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
@@ -40,12 +40,12 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: bdfe341252a7c4340a8c0a624d4394124c3efada
-ms.openlocfilehash: 1d230cb011c93ce48a855e86355d4a6ccdf55a29
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
+ms.openlocfilehash: 618aaec3a0ae735560d14bea43cc2b08bd9e5445
+ms.lasthandoff: 03/07/2017
 
 ---
-# <a name="html-ui-responsiveness"></a>HTML-UI-Reaktionsfähigkeit
+# <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analysieren der HTML-UI-Reaktionsfähigkeit in UWP-Apps
 In diesem Thema wird das Isolieren von Leistungsproblemen in Ihren Apps mithilfe des Benutzeroberflächen-Reaktionsfähigkeits-Profilers beschrieben, einem Leistungstool für universelle Windows-Apps.  
   
  Mit dem Benutzeroberflächen-Reaktionsfähigkeits-Profiler können Sie Probleme mit der Reaktionsfähigkeit der Benutzeroberfläche oder Plattformnebeneffekte isolieren, die normalerweise mit den folgenden Symptomen auftreten:  

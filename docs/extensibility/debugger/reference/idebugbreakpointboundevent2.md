@@ -1,59 +1,75 @@
 ---
-title: "IDebugBreakpointBoundEvent2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBreakpointBoundEvent2"
-helpviewer_keywords: 
-  - "IDebugBreakpointBoundEvent2"
+title: IDebugBreakpointBoundEvent2 | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugBreakpointBoundEvent2
+helpviewer_keywords:
+- IDebugBreakpointBoundEvent2
 ms.assetid: 24ba362e-5be1-481a-b071-e1ebd3cae6e8
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugBreakpointBoundEvent2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 5ddebff576658538c7ae82860f8934272da15b51
+ms.lasthandoff: 04/05/2017
 
-Diese Schnittstelle wird der Sitzung Debugem Manager \(SDM\), den ein anstehender Haltepunkt erfolgreich zu einem geladenen Programm gebunden wurde.  
+---
+# <a name="idebugbreakpointboundevent2"></a>IDebugBreakpointBoundEvent2
+Diese Schnittstelle weist dem Sitzungs-Manager (SDM), dass ein ausstehender Haltepunkt erfolgreich an ein Programm geladenen gebunden wurde.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugBreakpointBoundEvent2 : IUnknown  
 ```  
   
-## Hinweise für Implementierer  
- DE implementiert diese Schnittstelle als Teil der Unterstützung für Haltepunkte.  Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)\-Schnittstelle muss auf dasselbe Objekt wie diese Schnittstelle implementiert werden. \(SDM das [QueryInterface](/visual-cpp/atl/queryinterface) verwendet, um die `IDebugEvent2`\-Schnittstelle zuzugreifen\).  
+## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
+ Die DE implementiert diese Schnittstelle als Teil der Unterstützung für Haltepunkte. Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) -Schnittstelle muss implementiert werden, auf das gleiche Objekt wie diese Schnittstelle (verwendet die SDM [QueryInterface](/cpp/atl/queryinterface) für den Zugriff auf die `IDebugEvent2` Schnittstelle).  
   
-## Hinweise für Aufrufer  
- DE erstellt und sendet das Ereignisobjekt, wenn ein anstehender Haltepunkt erfolgreich gebunden ist, auf das Programm, das gedebuggt wird.  Das Ereignis wird gesendet, indem die [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Rückruffunktion verwendet, die vom SDM angegeben wurde, als es an das Programm, das gedebuggt wurde angefügt haben.  
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
+ Die DE erstellt und sendet diese Ereignisobjekt aus, wenn ein ausstehender Haltepunkt erfolgreich an den zu debuggenden Programms gebunden ist. Das Ereignis wird gesendet, mit der [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Rückruffunktion, die durch die SDM angegeben werden, wenn es an das derzeit debuggte Programm angefügt.  
   
-## Methoden in die Vtable\-Reihenfolge  
- In der folgenden Tabelle werden die Methoden von `IDebugBreakpointBoundEvent2`an.  
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
+ Die folgende Tabelle zeigt die Methoden der `IDebugBreakpointBoundEvent2`.  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md)|Ruft den anstehenden Haltepunkt ab, der gebunden wird.|  
-|[EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md)|Erstellt einen Enumerator von Haltepunkten, die für dieses Ereignis gebunden wurden.|  
+|------------|-----------------|  
+|[GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md)|Ruft die ausstehenden Haltepunkt, der gebunden wird.|  
+|[EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md)|Erstellt einen Enumerator von Haltepunkten, die zu diesem Ereignis verbunden waren.|  
   
-## Hinweise  
- Sobald ein Haltepunkt gebunden ist, wird ein Ereignis zum SDM gesendet.  Wenn der Haltepunkt nicht gebunden werden kann, wird [IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) gesendet. Andernfalls wird `IDebugBreakpointBoundEvent2` gesendet.  
+## <a name="remarks"></a>Hinweise  
+ Wenn Sie ein Haltepunkt gebunden ist, wird ein Ereignis an die SDM gesendet. Wenn der Haltepunkt gebunden werden, ein [IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) gesendet wurde, andernfalls wird ein `IDebugBreakpointBoundEvent2` gesendet wird.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   

@@ -313,7 +313,7 @@ End Namespace
   
  ![Visual3D-Beispielscreenshot](../designers/media/wpfintrofigure13.png "WPFIntroFigure13")  
   
- Weitere Informationen finden Sie unter [Übersicht über&3;D-Grafiken](https://msdn.microsoft.com/en-us/library/ms747437\(v=vs.100\).aspx).  
+ Weitere Informationen finden Sie unter [Übersicht über 3D-Grafiken](https://msdn.microsoft.com/en-us/library/ms747437\(v=vs.100\).aspx).  
   
 ##  <a name="Animation"></a> Animation  
  Die WPF-Animationsunterstützung ermöglicht es Ihnen, Steuerelemente wachsen, bewegen, schütteln sowie ein- und ausblenden zu lassen, um interessante Seitenübergänge zu erstellen, und vieles mehr. Die meisten WPF-Klassen, selbst benutzerdefinierte Klassen, können animiert werden. In der folgenden Abbildung wird eine einfache Animation in Aktion gezeigt.  

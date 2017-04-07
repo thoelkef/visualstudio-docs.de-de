@@ -1,62 +1,78 @@
 ---
-title: "IDebugModule3 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugModule3"
-helpviewer_keywords: 
-  - "IDebugModule3-Schnittstelle"
+title: IDebugModule3 | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugModule3
+helpviewer_keywords:
+- IDebugModule3 interface
 ms.assetid: 44f8e96e-9c59-4ffc-9a08-9c908a0e4de7
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugModule3
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 8d06621cc46499d763fd16797813d9dd71e9fdfb
+ms.lasthandoff: 04/05/2017
 
-Diese Schnittstelle stellt ein Modul dar, der alternative Speicherorte von Symbolen und JustMyCode\-Zuständen unterstützt.  
+---
+# <a name="idebugmodule3"></a>IDebugModule3
+Diese Schnittstelle stellt ein Modul, alternative Speicherorte der Symbole und JustMyCode-Status unterstützt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugModule3 : IDebugModule2  
 ```  
   
-## Hinweise für Implementierer  
- Das Debugmodul \(DE\) implementiert diese Schnittstelle, um alternative Speicherorte von Symbolen zu unterstützen und mit JustMyCode\-Zuständen arbeiten \(siehe [Glossar für Visual Studio\-Debugger](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md) für eine Definition von „JustMyCode“\).  
+## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
+ Die Debugging-Modul (DE) implementiert diese Schnittstelle, um alternative Speicherorte der Symbole zu unterstützen, auch zum Arbeiten mit JustMyCode-Status (finden Sie unter der [Visual Studio-Debugger-Glossar](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md) eine Definition der "JustMyCode").  
   
-## Hinweise für Aufrufer  
- Ein Aufruf von [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) gibt diese Schnittstelle zurück.  DE sendet die [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)\-Schnittstelle zum Debuggen von Manager der Sitzung \(SDM\) mithilfe der [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)\-Methode.  Außerdem wird ein Aufruf [QueryInterface](/visual-cpp/atl/queryinterface) auf einer [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)\-Schnittstelle wird von dieser Schnittstelle zurück.  
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
+ Ein Aufruf von [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) gibt diese Schnittstelle. Sendet die DE der [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) Schnittstelle zu der Sitzung Debug-Manager (SDM) mithilfe der [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) Methode. Darüber hinaus einen Aufruf von [QueryInterface](/cpp/atl/queryinterface) auf eine [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) Schnittstelle gibt diese Schnittstelle.  
   
-## Methoden in die Vtable\-Reihenfolge  
- Zusätzlich zu den Methoden der [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)\-Schnittstelle implementiert diese Schnittstelle die folgenden Methoden:  
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
+ Zusätzlich zu den Methoden für die [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) diese Schnittstelle implementiert, die folgenden Methoden:  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|["Getsymbolinfo"](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)|Gibt eine Liste von Pfaden zurück, die nach Symbolen und die Ergebnisse eines Pfads gegesucht gefunden werden.|  
+|------------|-----------------|  
+|[GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)|Gibt eine Liste von Pfaden für Symbole und die Ergebnisse der Suche jeder Pfad durchsucht.|  
 |[LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md)|Lädt und initialisiert Symbole für das aktuelle Modul.|  
-|[IsUserCode](../../../extensibility/debugger/reference/idebugmodule3-isusercode.md)|Gibt das Flag zurück, die angibt, ob das Modul Benutzercode darstellt.|  
-|[SetJustMyCodeState](../../../extensibility/debugger/reference/idebugmodule3-setjustmycodestate.md)|Gibt an, ob das Modul als Benutzercode betrachtet werden soll oder nicht.|  
+|[IsUserCode](../../../extensibility/debugger/reference/idebugmodule3-isusercode.md)|Gibt Kennzeichen, das angibt, ob das Modul Benutzercode darstellt.|  
+|[SetJustMyCodeState](../../../extensibility/debugger/reference/idebugmodule3-setjustmycodestate.md)|Gibt an, ob das Modul Benutzercode oder nicht berücksichtigt werden soll.|  
   
-## Hinweise  
- Visual Studio stellt der typische Nutzer dieser Schnittstelle.  
+## <a name="remarks"></a>Hinweise  
+ Visual Studio ist die typische Consumer dieser Schnittstelle.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
- [Core\-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Core-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)   
  [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)   
  [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)

@@ -50,7 +50,7 @@ Sie können die Visual Studio-Startseite standardmäßig auf unterschiedliche We
 
 2.  Erweitern Sie **Umgebung**, und wählen Sie dann **Start** aus.  
 
-3.  Wählen Sie in der Liste** Beim Start** das gewünschte Element für die Anpassung aus.  
+3.  Wählen Sie in der Liste**Beim Start** das gewünschte Element für die Anpassung aus.  
 
 ## <a name="show-a-custom-start-page"></a>Anzeigen einer benutzerdefinierten Startseite  
 

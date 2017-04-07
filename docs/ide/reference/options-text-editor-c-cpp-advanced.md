@@ -34,8 +34,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: a1edc88394193474b273968d8435e8df06415044
-ms.openlocfilehash: 6169b6d1805808c96647425706bf555e379679a8
+ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
+ms.openlocfilehash: ba9c9b60de651eecc92ea10ba44579a7dadc36df
+ms.lasthandoff: 03/27/2017
 
 ---
 # <a name="options-text-editor-cc-advanced"></a>Optionen, Text-Editor, C/C++, Erweitert
@@ -139,7 +140,10 @@ Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ da
  Die maximale Anzahl von Übersetzungseinheiten, die zu einem beliebigen Zeitpunkt für IntelliSense-Anforderungen aktiv gehalten werden. Sie müssen einen Wert zwischen 2 und 15 angeben. Diese Zahl bezieht sich direkt auf die maximale Anzahl von ausgeführten VCPkgSrv.exe-Prozessen (für eine angegebene Instanz von Visual Studio). Der Standardwert ist 2. Wenn Sie jedoch verfügbaren Arbeitsspeicher haben, können Sie diesen Wert erhöhen und erzielen möglicherweise eine bessere IntelliSense-Leistung.  
   
  Weitere Informationen zu Übersetzungseinheiten finden Sie unter [Phasen der Übersetzung](/visual-cpp/preprocessor/phases-of-translation).  
-  
+
+ **Punkt in Pfeil in der Memberliste aktivieren**  
+ Ersetzt „.“ durch „->“, sofern dies für die Memberliste anwendbar ist.
+
  **Aggressive Memberliste deaktivieren**  
  Die Memberliste wird nicht angezeigt, während Sie den Namen eines Typs oder einer Variablen eingeben. Die Liste wird nur nach Eingabe eines der Commitzeichen angezeigt, die in der Option **Commitzeichen der Memberliste** definiert wurden.  
   
@@ -169,12 +173,14 @@ Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ da
  Blendet alle nicht bestätigten Elemente in den Ergebnissen von "Alle Verweise suchen" aus. Wenn Sie die Option "Auflösen deaktiveren" nicht festlegen, können Sie mit dieser Option unbestätigte Elemente in den Ergebnissen ausblenden.  
   
  **Markieren von Verweisen deaktivieren**  
+
+ ## <a name="text-editor"></a>Text-Editor
+ **Erweiterungsbereiche aktivieren**  
+ Ist diese Option aktiviert, können Sie markierten Text in geschweifte Klammern setzen, indem Sie '{' im Text-Editor eingeben.  
+  
+ **Erweiterungsrangfolge aktivieren**  
+ Ist diese Option aktiviert, können Sie markierten Text in runde Klammern setzen, indem Sie '(' im Text-Editor eingeben.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Festlegen von sprachspezifischen Editoroptionen](../../ide/reference/setting-language-specific-editor-options.md)
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 

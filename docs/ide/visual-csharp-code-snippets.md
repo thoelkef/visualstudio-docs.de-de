@@ -35,8 +35,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: a4721d8bbd5dd6ec29f555ee8d4848ef3660243f
-ms.openlocfilehash: 0e1c37c0ce85cc44f7d43d895f3b4a4615539e3e
+ms.sourcegitcommit: 5b6334c38a6c058f274498c06f8e07c934931910
+ms.openlocfilehash: 01c13c4e0c9107f07580fb1701f81eac74a5022f
+ms.lasthandoff: 03/22/2017
 
 ---
 # <a name="visual-c-code-snippets"></a>Visual C#-Codeausschnitte
@@ -77,7 +78,7 @@ Codeausschnitte sind vorgefertigte Ausschnitte aus Code, die Sie schnell in Ihre
 |mbox|Erstellt einen Aufruf an <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. Sie müssen möglicherweise einen Verweis auf „System.Windows.Forms.dll“ hinzufügen.|In einer Methode, einem Indexer, einem Eigenschaftenaccessor oder einem Ereignisaccessor.|  
 |namespace|Erstellt eine [namespace](/dotnet/csharp/language-reference/keywords/namespace)-Deklaration.|In einem Namespace (einschließlich des globalen Namespaces).|  
 |prop|Erstellt eine Deklaration mit [automatisch implementierter Eigenschaft](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties).|Innerhalb einer Klasse oder Struktur.|  
-ropfull|Erstellt eine Eigenschaftendeklaration mit get-Accessor und set-Accessor.|Innerhalb einer Klasse oder Struktur.|  
+propfull|Erstellt eine Eigenschaftendeklaration mit get-Accessor und set-Accessor.|Innerhalb einer Klasse oder Struktur.|  
 |propg|Erstellt eine schreibgeschützte [automatisch implementierte Eigenschaft](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties) mit einem privaten „set“-Accessor.|Innerhalb einer Klasse oder Struktur.|  
 |sim|Erstellt eine Deklaration der Main-Methode mit [static](/dotnet/csharp/language-reference/keywords/static)[int](/dotnet/csharp/language-reference/keywords/int).|Innerhalb einer Klasse oder Struktur.|  
 |struct|Erstellt eine [struct](/dotnet/csharp/language-reference/keywords/struct)-Deklaration.|In einem Namespace (einschließlich des globalen Namespaces), einer Klasse oder einer Struktur.|  
@@ -97,8 +98,4 @@ ropfull|Erstellt eine Eigenschaftendeklaration mit get-Accessor und set-Accessor
  [Vorlagenparameter](../ide/template-parameters.md)   
  [Gewusst wie: Verwenden von umschließenden Codeausschnitten](../ide/how-to-use-surround-with-code-snippets.md)   
  
-
-
-<!--HONumber=Feb17_HO4-->
-
 
