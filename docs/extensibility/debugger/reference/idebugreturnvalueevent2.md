@@ -1,57 +1,73 @@
 ---
-title: "IDebugReturnValueEvent2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugReturnValueEvent2"
-helpviewer_keywords: 
-  - "IDebugReturnValueEvent2"
+title: IDebugReturnValueEvent2 | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugReturnValueEvent2
+helpviewer_keywords:
+- IDebugReturnValueEvent2
 ms.assetid: 2daded43-e427-4fbb-a19e-f3834e3723af
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugReturnValueEvent2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 808c9620cd8a2ece981ef66fcac8632eebc592dd
+ms.lasthandoff: 04/05/2017
 
-Diese Schnittstelle wird durch das Senden Debugmodul \(DE Debuggen\) zum Manager der Sitzung \(SDM\) oder nachdem er über eine Funktion aufgetreten ist.  
+---
+# <a name="idebugreturnvalueevent2"></a>IDebugReturnValueEvent2
+Diese Schnittstelle wird durch die Debugging-Modul (DE) an dem Sitzung Debug-Manager (SDM) gesendet, nach dem Ausführen in Einzelschritten aus oder über eine Funktion.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugReturnValueEvent2 : IUnknown  
 ```  
   
-## Hinweise für Implementierer  
- DE implementiert diese Schnittstelle, um den Rückgabewert einer Funktion, out aus oder hergestellt wurde.  Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)\-Schnittstelle muss auf dasselbe Objekt wie diese Schnittstelle implementiert werden.  Das SDM [QueryInterface](/visual-cpp/atl/queryinterface) verwendet, um die `IDebugEvent2`\-Schnittstelle zuzugreifen.  
+## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
+ Die DE implementiert diese Schnittstelle, um den Rückgabewert einer Funktion zu melden, die von oder im Zeitverlauf Einzelschrittmodus wurde. Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) -Schnittstelle muss auf das gleiche Objekt wie diese Schnittstelle implementiert werden. Verwendet die SDM [QueryInterface](/cpp/atl/queryinterface) für den Zugriff auf die `IDebugEvent2` Schnittstelle.  
   
-## Hinweise für Aufrufer  
- DE erstellt und sendet das Ereignisobjekt, um den Rückgabewert einer Funktion.  Das Ereignis wird gesendet, indem die [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Rückruffunktion verwendet, die vom SDM angegeben wird, wenn sie dem Programm verknüpft ist, das gedebuggt wird.  
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
+ Die DE erstellt und sendet diese Ereignisobjekt, um den Rückgabewert einer Funktion zu melden. Das Ereignis wird gesendet, mit der [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Rückruffunktion, die durch die SDM bereitgestellt wird, wenn es an das derzeit debuggte Programm angefügt ist.  
   
-## Methoden in die Vtable\-Reihenfolge  
- In der folgenden Tabelle sind die Methode von `IDebugReturnValueEvent2`an.  
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
+ Die folgende Tabelle zeigt die Methode der `IDebugReturnValueEvent2`.  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[GetReturnValue](../../../extensibility/debugger/reference/idebugreturnvalueevent2-getreturnvalue.md)|Ruft den Wert ab, der für das schrittweise Ausführen einer Funktion zurückgegeben wird.|  
+|------------|-----------------|  
+|[GetReturnValue](../../../extensibility/debugger/reference/idebugreturnvalueevent2-getreturnvalue.md)|Ruft den Wert für eine Funktion mit dem verlassen zurückgegeben wird.|  
   
-## Hinweise  
- Der Wert, der von einer Funktion zurückgegeben wird, kann abgerufen werden, indem [GetReturnValue](../../../extensibility/debugger/reference/idebugreturnvalueevent2-getreturnvalue.md)aufruft.  Der zurückgegebene Wert wird im **Auto** Fenster.  
+## <a name="remarks"></a>Hinweise  
+ Der von einer Funktion zurückgegebenen Wert abgerufen werden kann, durch den Aufruf [GetReturnValue](../../../extensibility/debugger/reference/idebugreturnvalueevent2-getreturnvalue.md). Der zurückgegebene Wert wird angezeigt, der **"Auto"** Fenster.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
- [Core\-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Core-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

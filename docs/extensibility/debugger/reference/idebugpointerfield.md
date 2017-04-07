@@ -1,58 +1,74 @@
 ---
-title: "IDebugPointerField | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPointerField"
-helpviewer_keywords: 
-  - "IDebugPointerField-Schnittstelle"
+title: IDebugPointerField | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugPointerField
+helpviewer_keywords:
+- IDebugPointerField interface
 ms.assetid: d51bd5b2-f18e-4e27-b4fb-e6f652fbf635
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# IDebugPointerField
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 82656209181d02aa6514def10af1cff17ae1bcf5
+ms.lasthandoff: 04/05/2017
 
-Diese Schnittstelle stellt einen Zeigertyp dar.  
+---
+# <a name="idebugpointerfield"></a>IDebugPointerField
+Diese Schnittstelle stellt einen Zeigertyp.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugPointerField : IDebugContainerField  
 ```  
   
-## Hinweise für Implementierer  
- Der Symbol für implementiert diese Schnittstelle, um einen Zeiger darzustellen.  
+## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
+ Die Symbol-Anbieter implementiert diese Schnittstelle, um einen Zeiger darstellen.  
   
-## Hinweise für Aufrufer  
- Verwenden Sie [QueryInterface](/visual-cpp/atl/queryinterface) , um diese Schnittstelle aus der [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)\-Schnittstelle abzurufen, wenn [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)`FIELD_TYPE_POINTER`zurückgibt.  
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
+ Verwendung [QueryInterface](/cpp/atl/queryinterface) beim Abrufen dieser Schnittstelle aus der [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Schnittstelle, wenn [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) gibt `FIELD_TYPE_POINTER`.  
   
-## Methoden in die Vtable\-Reihenfolge  
- Zusätzlich zu den Methoden für den `IDebugField` und Schnittstellen implementiert diese Schnittstelle `IDebugContainerField` die folgende Methode:  
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
+ Zusätzlich zu den Methoden für die `IDebugField` und `IDebugContainerField` Schnittstellen, die diese Schnittstelle implementiert, die folgende Methode:  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[GetDereferencedField](../../../extensibility/debugger/reference/idebugpointerfield-getdereferencedfield.md)|Gibt [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) zurück, das das Ziel des Zeigers beschreibt.|  
+|------------|-----------------|  
+|[GetDereferencedField](../../../extensibility/debugger/reference/idebugpointerfield-getdereferencedfield.md)|Gibt eine [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) , beschreibt das Ziel des Zeigers.|  
   
-## Hinweise  
- In C\/C\+\+ kann ein Zeiger ein Container sein, wenn er mit Arraynotation verwendet wird.  Beispielsweise verfügt ein angegebenes `char *pString`, `pString` einen Typ Zeiger auf `char`.  `pString[3]` hat den Typ eines Containers, der ein Zeiger auf `char` handelt, der das vierte Element dieses Containers verweist.  
+## <a name="remarks"></a>Hinweise  
+ In C/C++ kann ein Zeiger auf einen Container sein, wenn er mit der Arraynotation verwendet wird. Angenommen, `char *pString`, `pString` verfügt über einen Typ eines Zeigers auf `char`. `pString[3]`weist den Typ von einem Container ist ein Zeiger auf `char` , verweist das vierte Element des Containers.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
- [Symbol\-Provider\-Schnittstellen](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Symbol-Anbieter-Schnittstellen](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

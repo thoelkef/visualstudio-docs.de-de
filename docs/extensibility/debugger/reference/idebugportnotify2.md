@@ -1,58 +1,74 @@
 ---
-title: "IDebugPortNotify2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPortNotify2"
-helpviewer_keywords: 
-  - "IDebugPortNotify2-Schnittstelle"
+title: IDebugPortNotify2 | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugPortNotify2
+helpviewer_keywords:
+- IDebugPortNotify2 interface
 ms.assetid: 43278b79-bf16-4c08-bcf1-6f7f7a17feab
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugPortNotify2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: de163fdf55052ff4cc2f1599bc8ddfd162d03df3
+ms.lasthandoff: 04/05/2017
 
-Diese Schnittstelle registriert oder hebt die Registrierung eines Programms mit dem Port gedebuggt werden kann, den sie ausgeführt wird.  
+---
+# <a name="idebugportnotify2"></a>IDebugPortNotify2
+Diese Schnittstelle registriert oder hebt die Registrierung ein Programm, das mit dem Port gedebuggt werden kann, ausgeführt wird.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugPortNotify2 : IUnknown  
 ```  
   
-## Hinweise für Implementierer  
- Ein benutzerdefinierter Port lieferant implementiert diese Schnittstelle, um das Hinzufügen und Entfernen von Programmen auf dem Port zu unterstützen.  Sie wird i. d. R. in demselben Objekt implementiert, das die [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)\-Schnittstelle implementiert.  
+## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
+ Ein benutzerdefinierten Port Lieferanten implementiert diese Schnittstelle zum Hinzufügen und Entfernen von Programmen vom Port unterstützt. Er ist in der Regel implementiert, auf das gleiche Objekt, implementiert die [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) Schnittstelle.  
   
-## Hinweise für Aufrufer  
- Ein Aufruf von [QueryInterface](/visual-cpp/atl/queryinterface) auf der `IDebugPort2`\-Schnittstelle wird von dieser Schnittstelle zurück.  Außerdem wird ein Aufruf [GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md) gibt diese Schnittstelle zurück.  Ein Debuggen Modul kann diese Schnittstelle als Parameter an [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)sehen.  
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
+ Ein Aufruf von [QueryInterface](/cpp/atl/queryinterface) auf die `IDebugPort2` Schnittstelle gibt diese Schnittstelle. Darüber hinaus einen Aufruf von [GetPortNotify](../../../extensibility/debugger/reference/idebugdefaultport2-getportnotify.md) gibt diese Schnittstelle. Ein Debugmodul sehen diese Schnittstelle als Parameter an [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md).  
   
-## Methoden in die Vtable\-Reihenfolge  
- In der folgenden Tabelle werden die Methoden von `IDebugPortNotify2`an.  
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
+ Die folgende Tabelle zeigt die Methoden der `IDebugPortNotify2`.  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)|Registriert ein Programm, das dem Port gedebuggt werden kann, den er ausgeführt wird.|  
-|[RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)|Hebt die Registrierung eines Programms vom Port gedebuggt werden kann, den er ausgeführt wird.|  
+|------------|-----------------|  
+|[AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)|Registriert ein Programm, das gedebuggt werden kann mit dem Port, den es ausgeführt wird.|  
+|[RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)|Hebt die Registrierung eines Programms, das vom Port gedebuggt werden kann, ausgeführt wird.|  
   
-## Hinweise  
- Sofern ein Multithreaded Anschluss verfügt eine Möglichkeit festzustellen, wann Programme geladen oder entladen werden, muss ein benutzerdefinierter Port lieferant diese Schnittstelle implementieren.  Alle Programme, die für das Debuggen durch einen bestimmten Anschluss geladen werden, werden mithilfe dieser Schnittstelle überwacht.  
+## <a name="remarks"></a>Hinweise  
+ Es sei denn, ein Debugport feststellen können, wenn Sie Programme geladen oder entladen wird, muss ein benutzerdefinierten Port Lieferanten diese Schnittstelle implementieren. Alle Programme, die geladen werden, für das Debuggen über einen bestimmten Port werden die Verwendung dieser Schnittstelle nachverfolgt.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
- [Core\-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Core-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

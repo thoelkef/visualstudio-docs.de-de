@@ -1,66 +1,82 @@
 ---
-title: "IDebugProcessEx2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProcessEx2"
-helpviewer_keywords: 
-  - "IDebugProcessEx2-Schnittstelle"
+title: IDebugProcessEx2 | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProcessEx2
+helpviewer_keywords:
+- IDebugProcessEx2 interface
 ms.assetid: 44e309ba-1d6f-499b-aa7e-9b34858a6d57
 caps.latest.revision: 21
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 21
----
-# IDebugProcessEx2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Machine Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 56483c55810f75042184439be9f0d7bcfb2d6836
+ms.lasthandoff: 04/05/2017
 
-Diese Schnittstelle ermöglicht die Sitzung, die Multithreaded Manager \(SDM\) einen Prozess benachrichtigen, dass er anfügt oder trennt sich vom Prozess.  
+---
+# <a name="idebugprocessex2"></a>IDebugProcessEx2
+Dieser Schnittstelle können die Sitzung mit dem Debug-Manager (SDM) ein Prozesses, das zum Anfügen oder Trennen vom Prozess zu benachrichtigen.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugProcessEx2 : IUnknown  
 ```  
   
-## Hinweise für Implementierer  
- Ein benutzerdefinierter Port lieferant implementiert diese Schnittstelle für dasselbe Objekt wie die [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)\-Schnittstelle zu:  
+## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
+ Ein benutzerdefinierten Port Lieferanten implementiert diese Schnittstelle auf das gleiche Objekt wie die [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) -Schnittstelle um:  
   
--   Sichern Sie die Nachverfolgung von Sitzungen, die an einen Prozess verbunden sind  
+-   Unterstützung für Überwachung der Sitzungen verbunden an einen Prozess  
   
--   Unterstützung für mehrere Module Debuggen zu selbstklebend  
+-   Unterstützung für das automatische Anhängen über mehrere Debugmodule  
   
- Der benutzerdefinierte Port lieferant kann diese Schnittstelle implementieren, wenn er ausgewählt wird.  
+ Der benutzerdefinierten Port Lieferanten kann diese Schnittstelle implementieren, wenn er entscheidet.  
   
-## Hinweise für Aufrufer  
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
   
--   Das SDM ruft [QueryInterface](/visual-cpp/atl/queryinterface) auf einer `IDebugProcess2`\-Schnittstelle an, die zum Abrufen dieser Schnittstelle.  
+-   Ruft die SDM [QueryInterface](/cpp/atl/queryinterface) auf eine `IDebugProcess2` Schnittstelle, um diese Schnittstelle zu erhalten.  
   
-## Methoden in die Vtable\-Reihenfolge  
- In der folgenden Tabelle werden die Methoden von `IDebugProcessEx2`an.  
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
+ Die folgende Tabelle zeigt die Methoden der `IDebugProcessEx2`.  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[Anfügen](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|Informiert den Prozess, dass eine Sitzung jetzt den Prozess gedebuggt wird.|  
-|[Trennen](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|Informiert den Prozess, dass eine Sitzung nicht mehr den Prozess gedebuggt wird.|  
-|[AddImplicitProgramNodes](../../../extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes.md)|Fügt dem Programm Eine Liste der Knoten Debuggen die Option Module hinzufügen.|  
+|------------|-----------------|  
+|[Anfügen](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|Informiert, dass eine Sitzung jetzt den Prozess Debuggen wird dem Prozess.|  
+|[Trennen](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|Informiert, dass eine Sitzung nicht mehr den Prozess Debuggen wird dem Prozess.|  
+|[AddImplicitProgramNodes](../../../extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes.md)|Programm-Knoten eine Liste der Debugmodule hinzugefügt.|  
   
-## Hinweise  
- Diese Schnittstelle ist zwischen dem SDM und dem Prozess privat.  
+## <a name="remarks"></a>Hinweise  
+ Diese Schnittstelle ist privat zwischen den SDM und den Prozess.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: Portpriv.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
- [Core\-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Core-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
