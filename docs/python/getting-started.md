@@ -28,9 +28,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 7d726441c2d6953bd7b50451bec7fff05d5d71b0
-ms.openlocfilehash: 0b87d25195b8e288252e6c53279897d1edff93bd
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
+ms.openlocfilehash: 2659c1a3b1adfc3f462971205460942c5fe5171f
+ms.lasthandoff: 03/27/2017
 
 ---
 
@@ -230,6 +230,8 @@ Zusätzlich zum Verwalten von Projekten, das mit seinen umfassenden Bearbeitungs
     > if __name__ == "__main__":  
     >     sys.exit(int(main() or 0))      
     > ```
+    > 
+    > Wenn Sie sich aber je in Situationen befinden, in denen sich das Ausgabefenster automatisch schließt, obwohl es das nicht soll, klicken Sie mit der rechten Maustaste auf das Projekt, wählen Sie **Eigenschaften** und dann die Registerkarte **Debuggen** aus, und fügen Sie anschließend `-i` zum Feld **Interpreterargumente** hinzu. Dadurch wird der Interpreter nach Abschluss des Programms in den interaktiven Modus versetzt, und das Fenster bleibt dabei offen, bis Sie STRG + Z, EINGABETASTE zum Beenden drücken.
 
 1. Legen Sie in der ersten Zeile der `main`-Funktion durch Klicken auf den linken grauen Rand dieser Zeile oder Platzieren des Caretzeichens in dieser Zeile einen Haltepunkt fest, und verwenden Sie den Befehl *Debuggen > Haltepunkt ein/aus** (F9). Ein roter Punkt wird im grauen Rand angezeigt und kennzeichnet den Haltepunkt (siehe blauer Pfeil unten):
 

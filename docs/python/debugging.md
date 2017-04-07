@@ -29,9 +29,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: b0d84db6a16861fb9554af2a644423f906784748
-ms.openlocfilehash: 3ca6c45cd1f61dc4a4419ab01794e24c0c19d44a
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
+ms.openlocfilehash: b5d72a83092c2b97b30b7a8af539a0b1aca50418
+ms.lasthandoff: 03/27/2017
 
 ---
 
@@ -67,7 +67,7 @@ Weitere Informationen finden Sie auch in den folgenden szenariospezifischen Them
 
 Der grundlegende Debugworkflow umfasst das Festlegen von Haltepunkten, die Einzelschrittausführung des Codes, das Untersuchen von Code und das Behandeln von Ausnahmen, wie in den folgenden Abschnitten beschrieben. Vollständige Informationen zum Visual Studio-Debugger finden Sie unter [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md).
 
-Eine Debugsitzung wird mit dem Befehl **Debuggen > Debuggen starten**, der Schaltfläche **Start** auf der Symbolleiste oder der Taste F5 gestartet. Dies öffnet die Startdatei Ihres Projekts (im Projektmappen-Explorer fett hervorgehoben) mit der aktiven Umgebung des Projekts und allen Befehlszeilenargumenten oder Suchpfaden, die in den Projekteigenschaften festgelegt wurden (siehe [Projektbezogene Debugoptionen](#project-debugging-options)).
+Eine Debugsitzung wird mit dem Befehl **Debuggen > Debuggen starten**, der Schaltfläche **Start** auf der Symbolleiste oder der Taste F5 gestartet. Dies öffnet die Startdatei Ihres Projekts (im Projektmappen-Explorer fett hervorgehoben) mit der aktiven Umgebung des Projekts und allen Befehlszeilenargumenten oder Suchpfaden, die in den Projekteigenschaften festgelegt wurden (siehe [Projektbezogene Debugoptionen](#project-debugging-options)). Wenn Sie aus irgendeinem Grund jedoch keine festgelegte Startdatei besitzen, wird ein Python-Ausgabefenster kurz angezeigt und wieder ausgeblendet. Klicken Sie in diesem Fall mit der rechten Maustaste auf die entsprechende Datei, und wählen Sie **Als Startdatei festlegen**aus.
 
 > [!Note]
 > Der Debugger startet immer mit der aktiven Python-Umgebung für das Projekt. Um die Umgebung zu ändern, legen Sie eine andere Umgebung als aktiv fest, wie unter [Python-Umgebungen](python-environments.md) beschrieben.
