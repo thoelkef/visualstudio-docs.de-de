@@ -30,6 +30,7 @@ translation.priority.ht:
 translationtype: Human Translation
 ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
 ms.openlocfilehash: 5b845b8be2d60e1a32cc570fd59ae94f2063c116
+ms.lasthandoff: 02/22/2017
 
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Produktivitätstipps für Visual Studio
@@ -49,7 +50,7 @@ Wenn Sie diese Tipps befolgen, können Sie den Code in Visual Studio schneller u
   
  [Verwalten von Dateien, Symbolleisten und Fenstern](../ide/productivity-tips-for-visual-studio.md#BKMK_Managing)  
   
-##  <a name="a-namebkmkaccessa-accessing-visual-studio-tools"></a><a name="BKMK_Access"></a>Zugriff auf die Visual Studio-Tools  
+##  <a name="BKMK_Access"></a>Zugriff auf die Visual Studio-Tools  
  Sie können einfacher auf die Developer-Eingabeaufforderung oder auf ein anderes Tool zugreifen, wenn Sie diese auf der Startseite oder in der Taskleiste fixieren.  
   
 1.  Geben Sie auf der Startseite `Visual Studio Tools` ein, und drücken sie dann die EINGABETASTE.  
@@ -74,7 +75,7 @@ Wenn Sie diese Tipps befolgen, können Sie den Code in Visual Studio schneller u
   
 3.  Wählen Sie **An Taskleiste anheften** oder **An „Start“ anheften** aus.  
   
-##  <a name="a-namebkmkwritinga-writing-code"></a><a name="BKMK_Writing"></a>Schreiben von Code  
+##  <a name="BKMK_Writing"></a>Schreiben von Code  
  Schreiben Sie Code schneller, indem Sie die folgenden Funktionen verwenden.  
   
 -   **Verwenden von Beispielanwendungen**. Sie können Anwendungsentwicklung beschleunigen, indem Sie Beispielanwendungen von der MSDN Code Gallery herunterladen und installieren. Sie können eine bestimmte Technologie oder ein Programmierkonzept auch kennenlernen, indem Sie ein Beispielpaket für diesen Bereich herunterladen und untersuchen.  
@@ -107,7 +108,7 @@ Wenn Sie diese Tipps befolgen, können Sie den Code in Visual Studio schneller u
   
      Um eine Definition in einem Popupfenster zu öffnen, markieren Sie das Element und wählen Sie dann die Tasten ALT+F12 aus, oder öffnen Sie das Kontextmenü für das Element, und wählen Sie dann **Definition einsehen** aus. Um eine Definition in einem separaten Codefenster zu öffnen, öffnen Sie das Kontextmenü für das Codeelement, und wählen Sie dann **Gehe zu Definition** aus.  
   
-##  <a name="a-namebkmknavigatinga-navigating-within-your-code"></a><a name="BKMK_Navigating"></a>Navigieren innerhalb des Codes  
+##  <a name="BKMK_Navigating"></a>Navigieren innerhalb des Codes  
  Sie können verschiedene Methoden verwenden, um bestimmte Positionen im Code schneller zu finden und dorthin zu wechseln.  
   
 -   **Speichern von Codezeilen als Lesezeichen**. Sie können Lesezeichen verwenden, um schnell zu bestimmten Codezeilen in einer Datei zu navigieren.  
@@ -118,9 +119,9 @@ Wenn Sie diese Tipps befolgen, können Sie den Code in Visual Studio schneller u
   
      Um auf diese Funktion zuzugreifen, wählen Sie in der Menüleiste **Bearbeiten**, **Navigieren zu** aus.  
   
--   **Durchsuchen der Gesamtstruktur des Codes**. Im **Projektmappen-Explorer** können Sie Klassen und ihre Typen und Member in den Projekten suchen. Sie können auch nach Symbolen suchen, die Aufrufhierarchie einer Methode anzeigen, Symbolverweise suchen und andere Aufgaben ausführen. Wenn Sie ein Codeelement im **Projektmappen-Explorer** auswählen, wird die dazugehörige Datei auf einer Registerkarte **Vorschau** angezeigt, und der Cursor wird auf das Element in der Datei verschoben. Weitere Informationen finden Sie unter [Anzeigen der Codestruktur](../ide/viewing-the-structure-of-code.md)..  
+-   **Durchsuchen der Gesamtstruktur des Codes**. Im **Projektmappen-Explorer** können Sie Klassen und ihre Typen und Member in den Projekten suchen. Sie können auch nach Symbolen suchen, die Aufrufhierarchie einer Methode anzeigen, Symbolverweise suchen und andere Aufgaben ausführen. Wenn Sie ein Codeelement im **Projektmappen-Explorer** auswählen, wird die dazugehörige Datei auf einer Registerkarte **Vorschau** angezeigt, und der Cursor wird auf das Element in der Datei verschoben. Weitere Informationen finden Sie unter [Anzeigen der Codestruktur](../ide/viewing-the-structure-of-code.md).  
   
-##  <a name="a-namebkmkfindinga-finding-items-faster"></a><a name="BKMK_Finding"></a> Schnelleres Suchen von Elementen  
+##  <a name="BKMK_Finding"></a> Schnelleres Suchen von Elementen  
  Sie können in der IDE nach Befehlen, Dateien und Optionen suchen und gleichzeitig die Inhalte der Toolfenster filtern, um relevante Informationen nur für die aktuelle Aufgabe anzuzeigen.  
   
 -   **Filtern der Inhalte von Toolfenstern**. Sie können in den Inhalten vieler Toolfenster, z. B. der Fenster **Toolbox**, **Eigenschaften** und im **Projektmappen-Explorer** suchen. Es werden aber nur Elemente angezeigt, deren Namen die Zeichen enthalten, die Sie angeben.  
@@ -135,7 +136,7 @@ Wenn Sie diese Tipps befolgen, können Sie den Code in Visual Studio schneller u
   
      **Schnellstart** zeigt unter anderem Links zum Dialogfeld **Neues Projekt**, zum Dialogfeld **Neues Element hinzufügen** und zur Projekt- und Projektmappenseite im Dialogfeld **Optionen** an. Ergebnisse des Schnellstarts können auch Projektdateien und Toolfenster enthalten.  
   
-##  <a name="a-namebkmkdebugginga-debugging-code"></a><a name="BKMK_Debugging"></a>Debuggen von Code  
+##  <a name="BKMK_Debugging"></a>Debuggen von Code  
  Debuggen kann viel Zeit in Anspruch nehmen, aber die folgenden Tipps können Ihnen helfen, den Prozess zu beschleunigen.  
   
 -   **Testen Sie die gleiche Seite, Anwendung oder Website in unterschiedlichen Browsern**. Wenn Sie den Code debuggen, können Sie zwischen den installierten Webbrowsern, einschließlich [Seitenprüfung (Visual Studio)](http://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209), problemlos wechseln, ohne dass Sie das Dialogfeld **Browserauswahl** öffnen müssen. Sie können die Liste **Debugziel** verwenden, die auf der Symbolleiste **Standard** neben der Schaltfläche **Debuggen starten** zu finden ist, um beim Debuggen oder Anzeigen von Seiten schnell zu überprüfen, welchen Browser Sie verwenden.  
@@ -158,7 +159,7 @@ Wenn Sie diese Tipps befolgen, können Sie den Code in Visual Studio schneller u
   
      Weitere Informationen zu weiteren Befehlen finden Sie unter [Visual Studio-Befehlsaliase](../ide/reference/visual-studio-command-aliases.md).  
   
-##  <a name="a-namebkmkmanaginga-managing-files-toolbars-and-windows"></a><a name="BKMK_Managing"></a>Verwalten von Dateien, Symbolleisten und Fenstern  
+##  <a name="BKMK_Managing"></a>Verwalten von Dateien, Symbolleisten und Fenstern  
  Bei der Entwicklung einer Anwendung möchten Sie jederzeit in mehreren Codedateien arbeiten und sich in mehreren Toolfenstern bewegen können. Mit folgenden Tipps behalten Sie die Übersicht.  
   
 -   **Halten Sie Dateien, die Sie häufig verwenden, im Editor sichtbar**. Sie können die Dateien, die Sie häufig verwenden, an der linken Seite der Registerkartenreihe anheften, damit Sie unabhängig davon, wie viele Dateien im Editor geöffnet sind, sichtbar bleiben.  
@@ -176,8 +177,3 @@ Wenn Sie diese Tipps befolgen, können Sie den Code in Visual Studio schneller u
  [Gewusst wie: Anpassen von Menüs und Symbolleisten](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)   
  [Exemplarische Vorgehensweise: Erstellen einer einfachen Anwendung](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)   
  [Tipps und Tricks zu Barrierefreiheit](../ide/reference/accessibility-tips-and-tricks.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-
