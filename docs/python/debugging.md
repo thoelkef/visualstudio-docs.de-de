@@ -29,9 +29,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
-ms.openlocfilehash: b5d72a83092c2b97b30b7a8af539a0b1aca50418
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: adf122a478b29674dc2924dcf7d42972a5a3f52e
+ms.openlocfilehash: 1d26ca1a464e2ec15c0d5d338a46b6fb1e7e1d65
+ms.lasthandoff: 04/10/2017
 
 ---
 
@@ -105,7 +105,7 @@ Nachdem der Code an einem Haltepunkt angehalten wurde, haben Sie verschiedene M�
 
 ### <a name="inspecting-and-modifying-values"></a>Untersuchen und Ändern von Werten
 
-Wenn der Debugger angehalten hat, können Sie die Werte von Variablen überprüfen und ändern. Sie können auch das Überwachungsfenster verwenden, um einzelne Variablen sowie benutzerdefinierte Ausdrücke zu überwachen. (Allgemeine Informationen dazu finden Sie unter [Überprüfen von Variablen](../debugger/getting-started-with-the-debugger.md#BKMK_Inspect_Variables).)
+Wenn der Debugger angehalten hat, können Sie die Werte von Variablen überprüfen und ändern. Sie können auch das Überwachungsfenster verwenden, um einzelne Variablen sowie benutzerdefinierte Ausdrücke zu überwachen. (Allgemeine Informationen dazu finden Sie unter [Überprüfen von Variablen](../debugger/getting-started-with-the-debugger.md#inspect-variables-with-the-autos-and-locals-windows).)
 
 Um einen Wert mithilfe von DataTips anzuzeigen, zeigen Sie einfach mit dem Mauszeiger auf eine beliebige Variable im Editor. Klicken Sie auf den Wert, um ihn zu ändern:
 
