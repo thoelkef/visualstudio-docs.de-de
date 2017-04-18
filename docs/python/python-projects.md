@@ -1,7 +1,7 @@
 ---
 title: Python-Projekte in Visual Studio | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 4/10/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -29,9 +29,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 7d726441c2d6953bd7b50451bec7fff05d5d71b0
-ms.openlocfilehash: 8ae79f6b8e7eb87c0138b0152d8f9ce46eac9a69
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
+ms.openlocfilehash: eb3abd0f37e52f2b1db3793a5471b74a5e0c37ff
+ms.lasthandoff: 04/10/2017
 
 ---
 
@@ -47,7 +47,7 @@ Visual Studio bietet eine Vielzahl von Python-Projektvorlagen, mit der Sie schne
 
 In diesem Thema:
 
-- [Hinzufügen von Dateien, Zuweisen einer Startdatei und Festlegen von Umgebungen](#adding-file-assigning-a-startup-file-and-setting-environments)
+- [Hinzufügen von Dateien, Zuweisen einer Startdatei und Festlegen von Umgebungen](#adding-files-assigning-a-startup-file-and-setting-environments)
 - [Projektvorlagen](#project-templates)
 - [Verknüpfte Dateien](#linked-files)
 - [Verweise](#references)
@@ -73,6 +73,9 @@ Bei der Entwicklung Ihrer Anwendung müssen Sie dem Projekt in der Regel neue Da
 
 Jedem Python-Projekt ist eine im Projektmappen-Explorer fett angezeigte Startdatei zugewiesen. Diese Datei wird ausgeführt, wenn Sie das Debuggen starten (F5 oder **Debuggen > Debuggen starten**) oder das Projekt im interaktiven Fenster ausführen (UMSCHALT+ALT+ F5 oder **Debuggen > Projekt in interaktivem Python ausführen**). Um dies zu ändern, klicken Sie mit der rechten Maustaste auf die neue Datei, und wählen Sie **Als Startdatei festlegen**.
 
+> [!Tip]
+> Wenn Sie die ausgewählte Datei aus einem Projekt entfernen und keine neue auswählen, wird beim Versuch, Ihr Projekt auszuführen, ein Python-Ausgabefenster angezeigt, dass aber daraufhin sofort wieder verschwindet. Wenn dieses Verhalten auftritt, überprüfen Sie, ob Sie eine zugewiesene Startdatei haben. Damit das Ausgabefenster in Fällen wie diesem geöffnet bleibt, klicken Sie mit der rechten Maustaste auf Ihr Projekt, wählen Sie **Eigenschaften** und dann die Registerkarte **Debuggen** aus, fügen Sie anschließend `-i` zum Feld **Interpreterargumente** hinzu. Dadurch wird der Interpreter nach Abschluss des Programms in den interaktiven Modus versetzt, und das Fenster bleibt dabei offen, bis Sie STRG + Z, EINGABETASTE zum Beenden drücken.
+
 Ein neues Projekt ist immer der standardmäßigen globalen Python-Umgebung zugeordnet. Um das Projekt einer anderen Umgebung zuzuordnen (einschließlich virtueller Umgebungen), klicken Sie mit der rechten Maustaste auf den **Python-Umgebungen**-Knoten im Projekt, wählen Sie **Python-Umgebungen hinzufügen/entfernen**, und wählen Sie die gewünschten Umgebungen. Um die aktive Umgebung zu ändern, klicken Sie mit der rechten Maustaste auf die gewünschte Umgebung, und wählen Sie **Umgebung aktivieren**, wie unten dargestellt. Nähere Informationen finden Sie unter [Python-Umgebungen](python-environments.md#project-specific-environments).
 
 ![Aktivieren einer Umgebung für ein Python-Projekt](media/projects-activate-environment.png)
@@ -97,6 +100,7 @@ Die folgende Tabelle fasst die in Visual Studio 2017 verfügbaren Vorlagen zusam
 | IronPython-Silverlight-Webseite | Ein IronPython-Projekt, das in einem Browser mit Silverlight ausgeführt wird. Der Python-Code für die Anwendung ist auf der Webseite als Skript enthalten. Ein Codebaustein-Skript-Tag übernimmt JavaScript-Code, der die Ausführung von IronPython in Silverlight initialisiert, von wo aus der Python-Code mit dem DOM kommunizieren kann. |
 | IronPython-Windows Forms-Anwendung | Eine Projektstruktur mit IronPython, wo die Benutzeroberfläche mithilfe von Windows Forms-Code erstellt wird. Die Anwendung wird ohne Anzeige einer Konsole ausgeführt. |
 | Hintergrundanwendung (IoT) | Unterstützt die Bereitstellung von Python-Projekten zur Ausführung als Hintergrunddienste auf Geräten. Unter [Windows 10 IoT Core](https://dev.windows.com/en-us/iot) erhalten Sie weitere Informationen. |
+| Python-Erweiterungsmodul | Diese Vorlage erscheint unter Visual C++, wenn Sie die **nativen Python-Entwicklungstools** mit der Python-Arbeitsauslastung in Visual Studio 2017 Preview installiert haben (weitere Informationen finden Sie unter [Installation](installation.md)). Sie stellt die grundlegende Struktur für eine C++-Erweiterungs-DLL bereit, ganz ähnlich der, die unter [Erstellen einer C++-Erweiterung für Python](cpp-and-python.md) beschrieben ist. |
 
 <a name="create-project-from-existing-files"</a>
 ### <a name="creating-a-project-from-existing-files"></a>Erstellen eines Projekts aus vorhandenen Dateien

@@ -27,9 +27,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: b0d84db6a16861fb9554af2a644423f906784748
-ms.openlocfilehash: b2ff9c3505b117469854a24cad8e9b13d8039db8
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: 06cdfb076120ffd7459a16b56c659bb86942cd7f
+ms.openlocfilehash: c8276097c53ea49d223c43ada5511ab5d5f38036
+ms.lasthandoff: 03/31/2017
 
 ---
 # <a name="visual-studio-ide-feature-tour"></a>Führung durch Features von Visual Studio-IDE
@@ -68,7 +68,7 @@ Laden Sie zum Einstieg Visual Studio herunter und installieren Sie es auf Ihrem 
 
 Visual Studio ist jetzt kompakter als je zuvor! Mit dem neuen modularen Installationsprogramm können Sie *Arbeitsauslastungen* auswählen und installieren, welche Gruppen von Funktionen sind, die für Ihre bevorzugte Programmiersprache oder Plattform erforderlich sind. Diese Strategie hält den Platzbedarf der Visual Studio-Installation kleiner als je zuvor, d.h. Updates werden auch schneller installiert und aktualisiert.
 
-![Visual Studio-Installationsprogramm](../install/media/vs2017-workloads.png)
+![Visual Studio-Installationsprogramm](../ide/media/vside_tour_install_dialog.png)
 
 Neben der verbesserten Installationsleistung wurden viele weitere Verbesserungen in Visual Studio 2017 vorgenommen, um die gesamte Start- und Projektmappen-Ladedauer von IDE zu optimieren. Die Auswahl der neuen Funktion „Lightweight-Ladevorgang für Projektmappen“ im Hauptmenü unter **Tools**, **Optionen**, **Projekte und Projektmappen** ermöglicht z.B., größere Projektmappen schneller zu laden. Weitere Informationen zum Einrichten von Visual Studio auf Ihrem System finden Sie unter [Installieren von Visual Studio 2017 RC](https://docs.microsoft.com/visualstudio/install/install-visual-studio).
 
@@ -83,6 +83,8 @@ Sie lernen etwas am besten kennen, wenn Sie damit arbeiten! Darum werden wir mit
 1. Öffnen Sie Visual Studio. Wählen Sie im Menü **Datei**, **Neu**, **Projekt** aus. (Verwenden Sie die standardmäßigen Projektwerte.)
 
   ![Screenshot](../ide/media/VSIDE_Tour_NewProject1.png)
+
+  Als Alternative können Sie mithilfe der Startseite ein neues Projekt erstellen. Weitere Informationen finden Sie unter [Harness the Power of the Redesigned Start Page (blog) (Nutzen Sie die Macht der neu gestaltenen Startseite (Blog))](https://blogs.msdn.microsoft.com/visualstudio/2016/11/29/harness-the-power-of-the-redesigned-start-page/).
 
 1. Im Dialogfeld **Neues Projekt** werden mehrere Projektvorlagen angezeigt. Wählen Sie die Kategorie **Windows Universal** unter **Visual C#**, die Vorlage **Leere App (Universelle Windows-App)** und dann die Schaltfläche **OK**.
 
@@ -193,15 +195,14 @@ Im Folgenden werden einige weitere allgemeine Produktivitätsfunktionen in Visua
 
   ![„System.Timer“ im Objektkatalog](../ide/media/objectbrowser.png)  
 
-## <a name="collaborate-with-others-and-control-your-source-code"></a>Zusammenarbeiten mit anderen und Steuern Ihres Quellcodes
-Sie können Ihren Quellcode in Git-Repositorys verwalten, die von beliebigen Anbietern gehostet werden, einschließlich GitHub. Oder verwenden Sie [Visual Studio Team Services (VSTS)](https://www.visualstudio.com/team-services/), um Code zusammen mit Programmfehlern und Arbeitsaufgaben für Ihr gesamtes Projekt zu verwalten.
+## <a name="manage-your-source-code-and-collaborate-with-others"></a>Verarbeiten Ihres Quellcodes und Zusammenarbeiten mit anderen
+Sie können Ihren Quellcode in Git-Repositorys verwalten, die von beliebigen Anbietern gehostet werden, einschließlich GitHub. Oder verwenden Sie [Visual Studio Team Services (VSTS)](https://www.visualstudio.com/team-services/), um Code zusammen mit Programmfehlern und Arbeitsaufgaben für Ihr gesamtes Projekt zu verwalten. Weitere Informationen zur Verwaltung von Git-Repositorys in Visual Studio mithilfe von Team Explorer finden Sie unter [Get Started with Git and Team Services (Erste Schritte mit Git und Team Services)](https://www.visualstudio.com/en-us/docs/git/gitquickstart-vs2017).  Visual Studio verfügt auch über andere integrierte Quellcodeverwaltungsfunktionen. Weitere Informationen dazu finden Sie unter [New Git Features in Visual Studio 2017 (blog) (Neue Git-Funktionen in Visual Studio 2017 (Blog))](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/).
 
 Visual Studio Online Team Services ist ein cloudbasierter Dienst zum Hosten von Softwareprojekten und für die Zusammenarbeit in Teams. VSTS unterstützt Git- und Team Foundation-Quellcodeverwaltungssysteme sowie die Scrum-, CMMI- und Agile-Entwicklungsmethoden. Team Foundation-Versionskontrolle (TFVC) verwendet ein einzelnes, zentralisiertes Serverrepository zum Nachverfolgen von Versionsdateien. Lokale Änderungen werden immer beim zentralen Server eingecheckt, damit andere Entwickler die neuesten Änderungen abrufen können.
 
 Team Foundation Server (TFS) ist der Anwendungslebenszyklus-Verwaltungshub für Visual Studio. Auf diese Weise können alle am Entwicklungsprozess beteiligten Personen mithilfe einer einzigen Projektmappe am Prozess teilnehmen. TFS ist auch nützlich für die Verwaltung heterogener Teams und Projekte.
 
-Wenn Sie in Ihrem Netzwerk über ein Visual Studio Team Services-Konto oder einen Team Foundation Server verfügen, können Sie über das Fenster „Team Explorer“ eine Verbindung mit dem Konto bzw. Server in Visual Studio herstellen. Über dieses Fenster können Sie Code in die Quellcodeverwaltung einchecken oder daraus auschecken, Arbeitsaufgaben verwalten, Builds starten und auf Teamräume und Arbeitsbereiche zugreifen. Öffnen Sie Team Explorer über das Feld **Schnellstart** oder über das Hauptmenü unter **Ansicht, Team Explorer** oder **Team, Verbindungen verwalten**.  
-
+Wenn Sie in Ihrem Netzwerk über ein Visual Studio Team Services-Konto oder einen Team Foundation Server verfügen, können Sie über das Fenster „Team Explorer“ eine Verbindung mit dem Konto bzw. Server in Visual Studio herstellen. Über dieses Fenster können Sie Code in die Quellcodeverwaltung einchecken oder daraus auschecken, Arbeitsaufgaben verwalten, Builds starten und auf Teamräume und Arbeitsbereiche zugreifen. Öffnen Sie Team Explorer über das Feld **Schnellstart** oder über das Hauptmenü unter **Ansicht, Team Explorer** oder **Team, Verbindungen verwalten**.
 Die folgende Abbildung zeigt das Team Explorer-Fenster für eine Projektmappe, die in VSTS gehostet wird:
 
 ![Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer.png)  
@@ -232,7 +233,8 @@ Sie können Ihre Azure-basierten Cloudressourcen innerhalb von Visual Studio mit
 Wenn Visual Studio nicht genau die Funktionalität besitzt, die Sie benötigen, können Sie sie hinzufügen! Sie können die IDE basierend auf Ihrem Workflow und Stil personalisieren, Unterstützung für externe Tools hinzufügen, die noch nicht in Visual Studio integriert sind, und vorhandene Funktionalität ändern, um Ihre Produktivität zu steigern. Visual Studio bietet Tools, Steuerelemente und Vorlagen von Microsoft, unseren Partnern und der Community. Weitere Informationen zum Erweitern von Visual Studio finden Sie unter [Erweitern der Visual Studio-IDE](https://www.visualstudio.com/vs/extend/).
 
 ## <a name="learn-more-and-find-out-whats-new"></a>Weitere Informationen und Neuigkeiten
-Wenn Sie Visual Studio noch nie verwendet haben, lernen Sie zuerst die Grundlagen mit [Erste Schritte mit Visual Studio](../ide/get-started-with-visual-studio.md), oder sehen Sie sich die kostenlosen Visual Studio-Kurse der [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033) an. Informationen zu neuen Features in Visual Studio 2017 finden Sie unter [Neuerungen in Visual Studio 2017](../ide/whats-new-in-visual-studio.md).
+Wenn Sie Visual Studio noch nie verwendet haben, lernen Sie zuerst die Grundlagen mit [Erste Schritte mit Visual Studio](../ide/get-started-with-visual-studio.md), oder sehen Sie sich die kostenlosen Visual Studio-Kurse der [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033).
+Wenn Sie die neuen Funktionen in Visual Studio 2017 RC ausprobieren möchten, finden Sie Informationen unter [Neues in Visual Studio 2017 RC](../ide/whats-new-in-visual-studio.md).
 
 Sie haben die Führung zu Visual Studio-IDE erfolgreich absolviert! Wir hoffen, dass Sie nützliche Kenntnisse von einigen der wichtigsten Features gewonnen haben.
 

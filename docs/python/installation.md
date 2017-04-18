@@ -29,9 +29,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 7d726441c2d6953bd7b50451bec7fff05d5d71b0
-ms.openlocfilehash: dbedb933ce3cabf000e7487fcf03133db3a326b4
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
+ms.openlocfilehash: e0a51155a42fb51244114da86a292381a7a28a21
+ms.lasthandoff: 03/27/2017
 
 ---
 
@@ -52,13 +52,13 @@ Um die Python-Unterstützung nach den Installationsschritten schnell zu testen, 
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
-1. Installieren Sie [Früher Zugriff auf Visual Studio 2017 Preview](https://www.visualstudio.com/vs/preview). Dies ist derzeit die einzige Möglichkeit, die Python-Arbeitsauslastung für Visual Studio 2017 zu installieren.
+1. Installieren Sie [„Visual Studio 2017 Preview“ von https://www.visualstudio.com/vs/preview](https://www.visualstudio.com/vs/preview). **HINWEIS:** Dieser Preview-Kanal *unterscheidet sich* von der veröffentlichten Version von Visual Studio 2017 und enthält Features in der Entwicklung für zukünftige Visual Studio 2017-Updates, einschließlich Python-Support.
 
 1. Wählen Sie im Preview-Installationsprogramm die Arbeitsauslastung **Web und Cloud > Python-Entwicklung**:
 
     ![Arbeitsauslastung zur Python-Entwicklung im Visual Studio-Installationsprogramm](media/installation-python-workload.png)
 
-1. Wählen Sie auf der rechten Seite des Installationsprogramms die Python-Interpreter und andere verwandte Tools, die Sie einbeziehen möchten.
+1. Wählen Sie auf der rechten Seite des Installationsprogramms die Python-Interpreter und andere verwandte Tools, die Sie einbeziehen möchten. Wenn Sie z.B. planen, C++-Erweiterungen für Python zu entwickeln, schließen Sie die Option **Native Python-Entwicklungstools** ein.
 
     ![Optionen zur Python-Entwicklung im Visual Studio-Installationsprogramm](media/installation-python-options.png)
 

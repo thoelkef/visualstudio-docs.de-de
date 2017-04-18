@@ -43,9 +43,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 8c478c49ee429e0c5d96dc60f035fcb460b902c8
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: 06cdfb076120ffd7459a16b56c659bb86942cd7f
+ms.openlocfilehash: 890e181643d2cc5d4861d64ffd9052e0400126d0
+ms.lasthandoff: 03/31/2017
 
 ---
 # <a name="managing-references-in-a-project"></a>Verwalten von Verweisen in einem Projekt
@@ -70,9 +70,9 @@ Bevor Sie Code schreiben können, der sich auf eine externe Komponente oder eine
 ## <a name="windows-store-app-references"></a>Verweise auf Windows Store-App  
 
 ### <a name="project-references"></a>Projektverweise  
- Projekte der universellen Windows-Plattform (UWP), die auf Windows 10 ausgerichtet sind, können in der Projektmappe Verweise auf andere UWP-Projekte oder auf Windows Store-Projekte bzw. auf Binärdateien für [!INCLUDE[win81](../debugger/includes/win81_md.md)] erstellen. Voraussetzung hierfür ist, dass diese Projekte keine APIs verwenden, die in Windows 10 nicht mehr verwendet werden. Weitere Informationen finden Sie unter [Move from Windows Runtime 8 to UWP](https://msdn.microsoft.com/en-us/library/windows/apps/dn954974.aspx)(Von Windows-Laufzeit zu UWP) (möglicherweise in englischer Sprache).  
+ Projekte der universellen Windows-Plattform (UWP), die auf Windows 10 ausgerichtet sind, können in der Projektmappe Verweise auf andere UWP-Projekte oder auf Windows Store-Projekte bzw. auf Binärdateien für [!INCLUDE[win81](../debugger/includes/win81_md.md)] erstellen. Voraussetzung hierfür ist, dass diese Projekte keine APIs verwenden, die in Windows 10 nicht mehr verwendet werden. Weitere Informationen finden Sie unter [Move from Windows Runtime 8 to UWP](https://docs.microsoft.com/en-us/windows/uwp/porting/w8x-to-uwp-root)(Von Windows-Laufzeit zu UWP) (möglicherweise in englischer Sprache).  
 
- Informationen zur Neuausrichtung der [!INCLUDE[win81](../debugger/includes/win81_md.md)]-Projekte auf Windows 10 finden Sie unter [Portieren, Migrieren und Aktualisieren von Visual Studio-Projekten](../porting/port-migrate-and-upgrade-visual-studio-projects.md).  
+ Informationen zur Neuausrichtung der [!INCLUDE[win81](../debugger/includes/win81_md.md)]-Projekte auf Windows 10 finden Sie unter [Übertragung, Migration und Upgrade der Visual Studio-Projekte](../porting/port-migrate-and-upgrade-visual-studio-projects.md).  
 
 ### <a name="extension-sdk-references"></a>Verweise auf das Erweiterungs-SDK  
  Visual Basic-, C#-, C++- und JavaScript-Windows Store-Projekte, die auf UWP (Universal Windows Platform) abzielen, können auf Erweiterungs-SDKs verweisen, die auf [!INCLUDE[win81](../debugger/includes/win81_md.md)] ausgerichtet sind, sofern diese Erweiterungs-SDKs keine APIs verwenden, die in Windows 10 als veraltet gelten. Überprüfen Sie die Website des Anbieters des Erweiterungs-SDKs, um festzustellen, ob Windows Store-Projekte, die auf UWP abzielen, auf das SKD verweisen können.  
@@ -107,7 +107,7 @@ Bevor Sie Code schreiben können, der sich auf eine externe Komponente oder eine
 > [!NOTE]
 >  Alle Projekte enthalten einen impliziten Verweis auf "mscorlib". Visual Basic-Projekte enthalten einen impliziten Verweis auf `Microsoft.VisualBasic`.  
 >   
->  Alle Projekte in Visual Studio&2010; enthalten einen impliziten Verweis auf `System.Core`. Dies gilt auch, wenn `System.Core` aus der Liste der Verweise entfernt wird.  
+>  Alle Projekte in Visual Studio 2010 enthalten einen impliziten Verweis auf `System.Core`. Dies gilt auch, wenn `System.Core` aus der Liste der Verweise entfernt wird.  
 
 ## <a name="references-to-shared-components-at-run-time"></a>Verweise auf freigegebene Komponenten zur Laufzeit  
  Zur Laufzeit müssen sich Komponenten entweder im Ausgabepfad des Projekts oder im Globalen Assemblycache (GAC) befinden. Wenn das Projekt einen Verweis auf ein Objekt enthält, der sich nicht an einem dieser Orte befindet, müssen Sie den Verweis beim Erstellen des Projekts in den Ausgabepfad des Projekts kopieren. Die <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> -Eigenschaft gibt an, ob diese Kopie erstellt werden muss. Wenn der Wert **True**lautet, wird der Verweis beim Erstellen des Projekts in das Projektverzeichnis kopiert. Wenn der Wert **False**ist, wird der Verweis nicht kopiert.  

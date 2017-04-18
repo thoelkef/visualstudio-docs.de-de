@@ -31,8 +31,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 9f7b45efa01eb245cc4c933126578bbf9aa52f81
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 168e14b8f7e913a2dc4656f01f8cc5cc8ff80284
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="visual-c-enumerations-in-class-designer"></a>Visual C++-Enumerationen im Klassen-Designer
@@ -58,13 +59,8 @@ enum class CardSuit {
   
  Eine C++-Enumerationsform in einem Klassendiagramm gleicht in Struktur und Funktionsweise einer Strukturform, sie trägt allerdings die Bezeichnung **Enum** oder **Enumerationsklasse**, sie ist nicht blau, sondern rosa und wird mit farbigem Rahmen an der linken und oberen Begrenzung angezeigt. Sowohl Enumerationsformen als auch Strukturformen sind eckig.  
   
- Weitere Informationen zur Verwendung des `enum`-Typs finden Sie unter [Enumerationen](/visual-cpp/cpp/enumerations-cpp).  
+ Weitere Informationen zur Verwendung des `enum`-Typs finden Sie unter [Enumerationen](/cpp/cpp/enumerations-cpp).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Arbeiten mit Visual C++-Code (Klassen-Designer)](../ide/working-with-visual-cpp-code-class-designer.md)   
- [Enumerationen](/visual-cpp/cpp/enumerations-cpp)
-
-
-<!--HONumber=Feb17_HO4-->
-
-
+ [Enumerationen](/cpp/cpp/enumerations-cpp)

@@ -1,40 +1,55 @@
 ---
-title: "Verwenden von Stubs, um f&#252;r Komponententests Teile der Anwendung voneinander zu trennen | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Verwenden von Stubs, um für Komponententests Teile der Anwendung voneinander zu trennen | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 73519dd9-f3d5-49b6-a634-38881b459ea4
 caps.latest.revision: 17
-caps.handback.revision: 17
-ms.author: "mlearned"
-manager: "douge"
----
-# Verwenden von Stubs, um f&#252;r Komponententests Teile der Anwendung voneinander zu trennen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: douge
+manager: douge
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
+ms.openlocfilehash: a4c6024c6e35e8e88ce04b607a784e4adfa87d61
+ms.lasthandoff: 04/04/2017
 
-*Stub\-Typen* gehören zu einer von zwei Technologien des Microsoft Fakes\-Frameworks. Sie können damit eine Komponente, die Sie testen, einfacher von den anderen aufgerufenen Komponenten isolieren.  Ein Stub ist ein kleiner Codeabschnitt, der während des Tests an die Stelle einer anderen Komponente tritt.  Der Vorteil eines Stubs liegt darin, dass dieser konsistente Ergebnisse zurückgibt und so das Schreiben des Tests erleichtert.  Außerdem können Sie Tests ausführen, auch wenn die anderen Komponenten noch nicht funktionieren.  
+---
+# <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Verwenden von Stubs, um für Komponententests Teile der Anwendung voneinander zu trennen
+*Stub-Typen* gehören zu einer von zwei Technologien des Microsoft Fakes-Frameworks. Sie können damit eine Komponente, die Sie testen, einfacher von den anderen aufgerufenen Komponenten isolieren. Ein Stub ist ein kleiner Codeabschnitt, der während des Tests an die Stelle einer anderen Komponente tritt. Der Vorteil eines Stubs liegt darin, dass dieser konsistente Ergebnisse zurückgibt und so das Schreiben des Tests erleichtert. Außerdem können Sie Tests ausführen, auch wenn die anderen Komponenten noch nicht funktionieren.  
   
- Eine Übersicht und ein Schnellstarthandbuch für Fakes finden Sie unter [Isolieren von getestetem Code mithilfe von Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).  
+ Eine Übersicht und ein Schnellstarthandbuch für Fakes finden Sie unter [Isolieren von Komponententestmethoden mit Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).  
   
- Zur Verwendung von Stubs muss die Komponente so geschrieben werden, dass sie nur Schnittstellen und keine Klassen zum Verweis auf andere Teile der Anwendung verwendet.  Dies ist eine bewährte Designpraktik, da die Wahrscheinlichkeit gering ist, dass Änderungen in einem Teil des Codes auch Änderungen in einem anderen Teil erfordern.  Zu Testzwecken können Sie eine reale Komponente durch einen Stub ersetzen.  
+ Zur Verwendung von Stubs muss die Komponente so geschrieben werden, dass sie nur Schnittstellen und keine Klassen zum Verweis auf andere Teile der Anwendung verwendet. Dies ist eine bewährte Designpraktik, da die Wahrscheinlichkeit gering ist, dass Änderungen in einem Teil des Codes auch Änderungen in einem anderen Teil erfordern. Zu Testzwecken können Sie eine reale Komponente durch einen Stub ersetzen.  
   
- Im Diagramm soll die StockAnalyzer\-Komponente getestet werden.  Sie verwendet normalerweise eine andere Komponente, den RealStockFeed.  RealStockFeed gibt jedoch bei jedem Aufruf seiner Methoden unterschiedliche Ergebnisse zurück. Daher ist es schwierig, den StockAnalyzer zu testen.  Ersetzen Sie ihn während des Tests durch eine andere Klasse, dem StubStockFeed.  
+ Im Diagramm soll die StockAnalyzer-Komponente getestet werden. Sie verwendet normalerweise eine andere Komponente, den RealStockFeed. RealStockFeed gibt jedoch bei jedem Aufruf seiner Methoden unterschiedliche Ergebnisse zurück. Daher ist es schwierig, den StockAnalyzer zu testen.  Ersetzen Sie ihn während des Tests durch eine andere Klasse, dem StubStockFeed.  
   
- ![Real&#45; und Stub&#45;Klassen beziehen sich auf die gleiche Schnittstelle](../test/media/fakesinterfaces.png "FakesInterfaces")  
+ ![Real- und Stub-Klassen beziehen sich auf die gleiche Schnittstelle.](../test/media/fakesinterfaces.png "FakesInterfaces")  
   
- Da Stubs darauf beruhen, dass Sie Ihren Code auf diese Weise strukturieren, verwenden Sie in der Regel Stubs, um einen Teil der Anwendung von einem anderen zu isolieren.  Um diesen Teil von anderen Assemblys zu isolieren, die Sie nicht steuern können, z. B. System.dll, würden Sie normalerweise Shims verwenden.  Weitere Informationen finden Sie unter [Verwenden von Shims, um zu Komponententests die Anwendung von anderen Assemblys zu trennen](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).  
+ Da Stubs darauf beruhen, dass Sie Ihren Code auf diese Weise strukturieren, verwenden Sie in der Regel Stubs, um einen Teil der Anwendung von einem anderen zu isolieren. Um diesen Teil von anderen Assemblys zu isolieren, die Sie nicht steuern können, z. B. System.dll, würden Sie normalerweise Shims verwenden. Weitere Informationen finden Sie unter [Verwenden von Shims, um zu Komponententests die Anwendung von anderen Assemblys zu trennen](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)  
   
  **Anforderungen**  
   
 -   Visual Studio Enterprise  
   
-## In diesem Thema  
+## <a name="in-this-topic"></a>In diesem Thema  
   
 -   [Verwendung von Stubs](#how)  
   
@@ -42,7 +57,7 @@ manager: "douge"
   
     -   [Generieren von Stubs](#GeneratingStubs)  
   
-    -   [Schreiben des Tests mit Stubs](#WriteTest)  
+    -   [Den Test mit Stubs schreiben](#WriteTest)  
   
     -   [Überprüfen von Parameterwerten](#mocks)  
   
@@ -67,9 +82,9 @@ manager: "douge"
 ##  <a name="How"></a> Verwendung von Stubs  
   
 ###  <a name="Dependency"></a> Entwurf für Zielabhängigkeit  
- Um Stubs zu verwenden, muss die Anwendung so entwickelt werden, dass die verschiedenen Komponenten nicht voneinander, sondern nur von Schnittstellendefinitionen abhängen.  Anstatt zur Kompilierzeit verknüpft zu werden, erfolgt die Verbindung von Komponenten zur Laufzeit.  Dieses Muster hilft bei der Erstellung von Software, die stabil und einfach zu aktualisieren ist, da Änderungen eher nicht über Komponentenbegrenzungen hinweg weitergegeben werden.  Es empfiehlt sich, dieses Muster anzuwenden, auch wenn Sie keine Stubs verwenden.  Wenn Sie neuen Code schreiben, können Sie problemlos dem Muster zur [Abhängigkeitseinfügung](http://en.wikipedia.org/wiki/Dependency_injection) folgen.  Wenn Sie Tests für vorhandene Software schreiben, müssen Sie diese möglicherweise umgestalten.  Sollte das nicht möglich sein, können Sie stattdessen Shims verwenden.  
+ Um Stubs zu verwenden, muss die Anwendung so entwickelt werden, dass die verschiedenen Komponenten nicht voneinander, sondern nur von Schnittstellendefinitionen abhängen. Anstatt zur Kompilierzeit verknüpft zu werden, erfolgt die Verbindung von Komponenten zur Laufzeit. Dieses Muster hilft bei der Erstellung von Software, die stabil und einfach zu aktualisieren ist, da Änderungen eher nicht über Komponentenbegrenzungen hinweg weitergegeben werden. Es empfiehlt sich, dieses Muster anzuwenden, auch wenn Sie keine Stubs verwenden. Wenn Sie neuen Code schreiben, können Sie problemlos dem Muster zur [Abhängigkeitseinfügung](http://en.wikipedia.org/wiki/Dependency_injection) folgen. Wenn Sie Tests für vorhandene Software schreiben, müssen Sie diese möglicherweise umgestalten. Sollte das nicht möglich sein, können Sie stattdessen Shims verwenden.  
   
- Beginnen wir diese Erläuterung mit einem anschaulichen Beispiel – dem Beispiel im Diagramm.  Die StockAnalyzer\-Klasse liest die Aktienkurse aus und generiert einige interessante Ergebnisse.  Sie verfügt über einige öffentliche Methoden, die getestet werden sollen.  Um dieses Beispiel möglichst einfach zu halten, sehen wir uns hier nur eine der Methoden an – und zwar eine sehr einfache – die zur Meldung des aktuellen Preises einer bestimmten Aktie.  Es soll ein Komponententest dieser Methode geschrieben werden.  Im Folgenden sehen Sie einen ersten Entwurf des Tests:  
+ Beginnen wir diese Erläuterung mit einem anschaulichen Beispiel – dem Beispiel im Diagramm. Die StockAnalyzer-Klasse liest die Aktienkurse aus und generiert einige interessante Ergebnisse. Sie verfügt über einige öffentliche Methoden, die getestet werden sollen. Um dieses Beispiel möglichst einfach zu halten, sehen wir uns hier nur eine der Methoden an – und zwar eine sehr einfache – die zur Meldung des aktuellen Preises einer bestimmten Aktie. Es soll ein Komponententest dieser Methode geschrieben werden. Im Folgenden sehen Sie einen ersten Entwurf des Tests:  
   
 ```c#  
 [TestMethod]  
@@ -97,7 +112,7 @@ End Sub
   
  Ein Problem mit diesem Test wird sofort offensichtlich: Aktienkurse variieren, und daher schlägt die Assertion normalerweise fehl.  
   
- Ein weiteres Problem könnte darin bestehen, dass die vom StockAnalyzer verwendete StockFeed\-Komponente noch in Entwicklung ist.  Dies ist der erste Entwurf des Codes der zu testenden Methode:  
+ Ein weiteres Problem könnte darin bestehen, dass die vom StockAnalyzer verwendete StockFeed-Komponente noch in Entwicklung ist. Dies ist der erste Entwurf des Codes der zu testenden Methode:  
   
 ```c#  
 public int GetContosoPrice()  
@@ -114,19 +129,19 @@ Public Function GetContosoPrice()
 End Function  
 ```  
   
- Bislang kompiliert diese Methode möglicherweise nicht oder löst eventuell eine Ausnahme aus, da die StockFeed\-Klasse noch nicht fertig ausgearbeitet ist.  
+ Bislang kompiliert diese Methode möglicherweise nicht oder löst eventuell eine Ausnahme aus, da die StockFeed-Klasse noch nicht fertig ausgearbeitet ist.  
   
  Beide Probleme werden durch die Schnittstelleneinfügung behandelt.  
   
  Die Schnittstelleneinfügung wendet folgende Regel an:  
   
--   Der Code der Komponenten Ihrer Anwendung sollte niemals explizit auf eine Klasse in einer anderen Komponente verweisen, weder in einer Deklaration noch in einer `new`\-Anweisung.  Stattdessen sollten Variablen und Parameter mit Schnittstellen deklariert werden.  Komponenteninstanzen sollten nur vom Container der Komponente erstellt werden.  
+-   Der Code der Komponenten Ihrer Anwendung sollte niemals explizit auf eine Klasse in einer anderen Komponente verweisen, weder in einer Deklaration noch in einer `new`-Anweisung. Stattdessen sollten Variablen und Parameter mit Schnittstellen deklariert werden. Komponenteninstanzen sollten nur vom Container der Komponente erstellt werden.  
   
-     "Komponente" bedeutet in diesem Fall eine Klasse oder eine Gruppe von Klassen, die Sie gemeinsam entwickeln und aktualisieren.  Eine Komponente ist in der Regel der Code in einem Visual Studio\-Projekt.  Es ist nicht so wichtig, Klassen innerhalb einer Komponente zu entkoppeln, da sie gleichzeitig aktualisiert werden.  
+     "Komponente" bedeutet in diesem Fall eine Klasse oder eine Gruppe von Klassen, die Sie gemeinsam entwickeln und aktualisieren. Eine Komponente ist in der Regel der Code in einem Visual Studio-Projekt. Es ist nicht so wichtig, Klassen innerhalb einer Komponente zu entkoppeln, da sie gleichzeitig aktualisiert werden.  
   
-     Es ist auch nicht so wichtig, die Komponenten von den Klassen einer relativ stabilen Plattform wie "System.dll" zu entkoppeln.  Schnittstellen für alle diese Klassen zu schreiben würde den Code überlasten.  
+     Es ist auch nicht so wichtig, die Komponenten von den Klassen einer relativ stabilen Plattform wie "System.dll" zu entkoppeln. Schnittstellen für alle diese Klassen zu schreiben würde den Code überlasten.  
   
- Der StockAnalyzer\-Code kann daher durch das Entkoppeln vom StockFeed und der Verwendung einer Schnittstelle wie folgt verbessert werden:  
+ Der StockAnalyzer-Code kann daher durch das Entkoppeln vom StockFeed und der Verwendung einer Schnittstelle wie folgt verbessert werden:  
   
 ```c#  
 public interface IStockFeed  
@@ -166,30 +181,30 @@ End Class
   
 ```  
   
- In diesem Beispiel wird StockAnalyzer eine Implementierung von einem IStockFeed bei dessen Erstellung übergeben.  In der fertigen Anwendung würde der Initialisierungscode die Verbindung ausführen:  
+ In diesem Beispiel wird StockAnalyzer eine Implementierung von einem IStockFeed bei dessen Erstellung übergeben. In der fertigen Anwendung würde der Initialisierungscode die Verbindung ausführen:  
   
 ```  
 analyzer = new StockAnalyzer(new StockFeed())  
 ```  
   
- Es gibt flexiblere Methoden für die Ausführung dieser Verbindung.  Beispielsweise könnte der StockAnalyzer ein Factoryobjekt akzeptieren, das verschiedene Implementierungen von IStockFeed unter unterschiedlichen Bedingungen instanziieren kann.  
+ Es gibt flexiblere Methoden für die Ausführung dieser Verbindung. Beispielsweise könnte der StockAnalyzer ein Factoryobjekt akzeptieren, das verschiedene Implementierungen von IStockFeed unter unterschiedlichen Bedingungen instanziieren kann.  
   
-###  <a name="GeneratingStubs"></a> Stubs generieren  
- Sie haben die Klasse, die Sie testen möchten, von den anderen verwendeten Komponenten entkoppelt.  Die Entkopplung macht Ihre Anwendung nicht nur robuster und flexibler, sie ermöglicht auch die Herstellung einer Verbindung für Testzwecke zwischen den zu testenden Komponenten und den Stubimplementierungen der Schnittstellen.  
+###  <a name="GeneratingStubs"></a> Generieren von Stubs  
+ Sie haben die Klasse, die Sie testen möchten, von den anderen verwendeten Komponenten entkoppelt. Die Entkopplung macht Ihre Anwendung nicht nur robuster und flexibler, sie ermöglicht auch die Herstellung einer Verbindung für Testzwecke zwischen den zu testenden Komponenten und den Stubimplementierungen der Schnittstellen.  
   
- Sie können die Stubs einfach wie gewohnt als Klassen schreiben.  Microsoft Fakes bietet eine dynamischere Methode zur Erstellung des für jeden Test am besten geeigneten Stubs.  
+ Sie können die Stubs einfach wie gewohnt als Klassen schreiben. Microsoft Fakes bietet eine dynamischere Methode zur Erstellung des für jeden Test am besten geeigneten Stubs.  
   
- Um Stubs zu verwenden, müssen Sie zuerst Stub\-Typen aus den Schnittstellendefinitionen generieren.  
+ Um Stubs zu verwenden, müssen Sie zuerst Stub-Typen aus den Schnittstellendefinitionen generieren.  
   
-##### Hinzufügen einer Fakes\-Assembly  
+##### <a name="adding-a-fakes-assembly"></a>Hinzufügen einer Fakes-Assembly  
   
-1.  Erweitern Sie im Projektmappen\-Explorer die **Verweise** des Komponententestprojekts.  
+1.  Erweitern Sie im Projektmappen-Explorer die **Verweise** des Komponententestprojekts.  
   
-    -   Wenn Sie mit Visual Basic arbeiten, müssen Sie auf der Symbolleiste des Projektmappen\-Explorers **Alle Dateien anzeigen** auswählen, um die Verweisliste zu finden.  
+    -   Wenn Sie mit Visual Basic arbeiten, müssen Sie auf der Symbolleiste des Projektmappen-Explorers **Alle Dateien anzeigen** auswählen, um die Verweisliste zu finden.  
   
 2.  Wählen Sie die Assembly aus, in der die Schnittstellendefinitionen enthalten sind, für die Sie Stubs erstellen möchten.  
   
-3.  Wählen Sie im Kontextmenü **Fakes\-Assembly hinzufügen** aus.  
+3.  Wählen Sie im Kontextmenü **Fakes-Assembly hinzufügen** aus.  
   
 ###  <a name="WriteTest"></a> Den Test mit Stubs schreiben  
   
@@ -249,12 +264,12 @@ End Class
   
 ```  
   
- Das Besondere hierbei ist die `StubIStockFeed`\-Klasse.  Der Microsoft Fakes\-Mechanismus generiert eine Stubklasse für jeden öffentlichen Typ in der Assembly, auf die verwiesen wird.  Der Name der Stubklasse wird vom Namen der Schnittstelle abgeleitet. Dabei ist "`Fakes.Stub`" das Präfix, und die Parametertypnamen werden angefügt.  
+ Das Besondere hierbei ist die `StubIStockFeed`-Klasse. Der Microsoft Fakes-Mechanismus generiert eine Stubklasse für jeden öffentlichen Typ in der Assembly, auf die verwiesen wird. Der Name der Stubklasse wird vom Namen der Schnittstelle abgeleitet. Dabei ist "`Fakes.Stub`" das Präfix, und die Parametertypnamen werden angefügt.  
   
  Stubs werden auch für die Getter und Setter von Eigenschaften, für Ereignisse sowie für generische Methoden generiert.  
   
 ###  <a name="mocks"></a> Überprüfen von Parameterwerten  
- Sie können überprüfen, ob die richtigen Werte übergeben werden, wenn Ihre Komponente eine andere Komponente aufruft.  Sie können entweder eine Assertion im Stub einfügen, oder Sie können den Wert und speichern und ihn im Hauptteil des Tests überprüfen.  Beispiel:  
+ Sie können überprüfen, ob die richtigen Werte übergeben werden, wenn Ihre Komponente eine andere Komponente aufruft. Sie können entweder eine Assertion im Stub einfügen, oder Sie können den Wert und speichern und ihn im Hauptteil des Tests überprüfen. Zum Beispiel:  
   
 ```c#  
 [TestClass]  
@@ -334,7 +349,7 @@ End Class
 ##  <a name="BKMK_Stub_basics"></a> Stubs für verschiedene Arten von Typmembern  
   
 ###  <a name="BKMK_Methods"></a> Methoden  
- Wie im Beispiel beschrieben, kann ein Stub für Methoden ausgeführt werden, indem ein Delegat an eine Instanz der Stubklasse angefügt wird.  Der Name des Stub\-Typs wird von den Namen der Methode und der Parameter abgeleitet.  Beispielsweise bei Angabe der folgenden `IMyInterface`\-Schnittstelle und `MyMethod`\-Methode:  
+ Wie im Beispiel beschrieben, kann ein Stub für Methoden ausgeführt werden, indem ein Delegat an eine Instanz der Stubklasse angefügt wird. Der Name des Stub-Typs wird von den Namen der Methode und der Parameter abgeleitet. Beispielsweise bei Angabe der folgenden `IMyInterface`-Schnittstelle und `MyMethod`-Methode:  
   
 ```c#  
 // application under test  
@@ -353,10 +368,10 @@ interface IMyInterface
   
 ```  
   
- Wenn Sie keinen Stub für eine Funktion bereitstellen, generiert Fakes eine Funktion, die den Standardwert des Rückgabetyps zurückgibt.  Für Zahlen lautet der Standardwert 0, und für Klassentypen lautet er `null` \(C\#\) oder `Nothing` \(Visual Basic\).  
+ Wenn Sie keinen Stub für eine Funktion bereitstellen, generiert Fakes eine Funktion, die den Standardwert des Rückgabetyps zurückgibt. Für Zahlen lautet der Standardwert 0, und für Klassentypen lautet er `null` (C#) oder `Nothing` (Visual Basic).  
   
 ###  <a name="BKMK_Properties"></a> Eigenschaften  
- Getter oder Setter für Eigenschaften werden als separate Delegaten verfügbar gemacht. Es kann ein separater Stub für diese Delegaten ausgeführt werden.  Ziehen Sie zum Beispiel die `Value`\-Eigenschaft von `IMyInterface` in Erwägung:  
+ Getter oder Setter für Eigenschaften werden als separate Delegaten verfügbar gemacht. Es kann ein separater Stub für diese Delegaten ausgeführt werden. Ziehen Sie zum Beispiel die `Value`-Eigenschaft von `IMyInterface` in Erwägung:  
   
 ```c#  
 // code under test  
@@ -367,7 +382,7 @@ interface IMyInterface
   
 ```  
   
- Wir fügen Delegaten an den Getter und Setter von `Value` an, um eine Auto\-Eigenschaft zu simulieren:  
+ Wir fügen Delegaten an den Getter und Setter von `Value` an, um eine Auto-Eigenschaft zu simulieren:  
   
 ```c#  
 // unit test code  
@@ -381,7 +396,7 @@ stub.ValueSet = (value) => i = value;
  Wenn Sie keine Stubmethoden für den Setter oder Getter einer Eigenschaft bereitstellen, generiert Fakes einen Stub, der Werte speichert, sodass die Stubeigenschaft als einfache Variable funktioniert.  
   
 ###  <a name="BKMK_Events"></a> Ereignisse  
- Ereignisse werden als Delegatfelder verfügbar gemacht.  Daher kann jedes Ereignis, für das ein Stub ausgeführt wird, einfach durch Aufruf des dahinter liegenden Ereignisfelds ausgelöst werden.  Betrachten wir die folgende Schnittstelle, für die ein Stub ausgeführt werden soll:  
+ Ereignisse werden als Delegatfelder verfügbar gemacht. Daher kann jedes Ereignis, für das ein Stub ausgeführt wird, einfach durch Aufruf des dahinter liegenden Ereignisfelds ausgelöst werden. Betrachten wir die folgende Schnittstelle, für die ein Stub ausgeführt werden soll:  
   
 ```c#  
 // code under test  
@@ -391,7 +406,7 @@ interface IWithEvents
 }  
 ```  
   
- Um das `Changed`\-Ereignis auszulösen, wird einfach der dahinter liegende Delegat aufgerufen:  
+ Um das `Changed`-Ereignis auszulösen, wird einfach der dahinter liegende Delegat aufgerufen:  
   
 ```c#  
 // unit test code  
@@ -402,7 +417,7 @@ interface IWithEvents
 ```  
   
 ###  <a name="BKMK_Generic_methods"></a> Generische Methoden  
- Es ist möglich, einen Stub mit generischen Methoden aufzurufen, indem ein Delegat für alle gewünschten Instanziierungen der Methode bereitgestellt wird.  Betrachten Sie beispielsweise die folgende Schnittstelle, die eine generische Methode enthält:  
+ Es ist möglich, einen Stub mit generischen Methoden aufzurufen, indem ein Delegat für alle gewünschten Instanziierungen der Methode bereitgestellt wird. Betrachten Sie beispielsweise die folgende Schnittstelle, die eine generische Methode enthält:  
   
 ```c#  
 // code under test  
@@ -412,7 +427,7 @@ interface IGenericMethod
 }  
 ```  
   
- Sie können einen Test schreiben, mit dem ein Stub für die `GetValue<int>`\-Instanziierung ausgeführt wird:  
+ Sie können einen Test schreiben, mit dem ein Stub für die `GetValue<int>`-Instanziierung ausgeführt wird:  
   
 ```c#  
 // unit test code  
@@ -430,7 +445,7 @@ public void TestGetValue()
  Ruft der Code `GetValue<T>` mit einer anderen Instanziierung auf, würde der Stub einfach das Verhalten aufrufen.  
   
 ###  <a name="BKMK_Partial_stubs"></a> Stubs von virtuellen Klassen  
- In den vorherigen Beispielen wurden die Stubs aus Schnittstellen generiert.  Sie können Stubs auch aus einer Klasse generieren, die über virtuelle oder abstrakte Member verfügt.  Beispiel:  
+ In den vorherigen Beispielen wurden die Stubs aus Schnittstellen generiert. Sie können Stubs auch aus einer Klasse generieren, die über virtuelle oder abstrakte Member verfügt. Beispiel:  
   
 ```c#  
 // Base class in application under test  
@@ -444,7 +459,7 @@ public void TestGetValue()
     }  
 ```  
   
- Im Stub, der aus dieser Klasse generiert wird, können Sie Delegatenmethoden für DoAbstract\(\) und DoVirtual\(\), jedoch nicht für DoConcrete\(\) festlegen.  
+ Im Stub, der aus dieser Klasse generiert wird, können Sie Delegatenmethoden für DoAbstract() und DoVirtual(), jedoch nicht für DoConcrete() festlegen.  
   
 ```c#  
 // unit test  
@@ -454,7 +469,7 @@ public void TestGetValue()
   
 ```  
   
- Wenn Sie keinen Delegaten für eine virtuelle Methode bereitstellen, kann Fakes entweder das Standardverhalten bereitstellen oder die Methode in der Basisklasse aufrufen.  Legen Sie die `CallBase`\-Eigenschaft zum Aufrufen der Basismethode wie folgt fest:  
+ Wenn Sie keinen Delegaten für eine virtuelle Methode bereitstellen, kann Fakes entweder das Standardverhalten bereitstellen oder die Methode in der Basisklasse aufrufen. Legen Sie die `CallBase`-Eigenschaft zum Aufrufen der Basismethode wie folgt fest:  
   
 ```c#  
 // unit test code  
@@ -469,18 +484,18 @@ Assert.AreEqual(43,stub.DoVirtual(1));
 ```  
   
 ##  <a name="BKMK_Debugging_stubs"></a> Stubs debuggen  
- Die Stub\-Typen wurden entwickelt, um einen reibungslosen Debugvorgang zu gewährleisten.  Standardmäßig wird der Debugger angewiesen, sämtlichen generierten Code zu überspringen und die benutzerdefinierten Memberimplementierungen, die an den Stub angefügt wurden, direkt in Einzelschritten auszuführen.  
+ Die Stub-Typen wurden entwickelt, um einen reibungslosen Debugvorgang zu gewährleisten. Standardmäßig wird der Debugger angewiesen, sämtlichen generierten Code zu überspringen und die benutzerdefinierten Memberimplementierungen, die an den Stub angefügt wurden, direkt in Einzelschritten auszuführen.  
   
 ##  <a name="BKMK_Stub_limitation"></a> Einschränkungen für Stubs  
   
 1.  Methodensignaturen mit Zeigern werden nicht unterstützt.  
   
-2.  Für versiegelte Klassen oder statische Methoden kann kein Stub ausgeführt werden, da Stub\-Typen auf dem Dispatch von virtuellen Methoden basieren.  Verwenden Sie in solchen Fällen shim\-Typen wie unter [Verwenden von Shims, um zu Komponententests die Anwendung von anderen Assemblys zu trennen](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md) beschrieben.  
+2.  Für versiegelte Klassen oder statische Methoden kann kein Stub ausgeführt werden, da Stub-Typen auf dem Dispatch von virtuellen Methoden basieren. Verwenden Sie in solchen Fällen Shim-Typen, so wie in [Verwenden von Shims, um zu Komponententests die Anwendung von anderen Assemblys zu trennen](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md) beschrieben.  
   
 ##  <a name="BKMK_Changing_the_default_behavior_of_stubs"></a> Ändern des Standardverhaltens der Stubs  
- Jeder generierte Stub\-Typ enthält eine Instanz der `IStubBehavior`\-Schnittstelle \(durch die `IStub.InstanceBehavior`\-Eigenschaft\).  Das Verhalten wird aufgerufen, wenn ein Client einen Member ohne angefügten benutzerdefinierten Delegaten aufruft.  Wenn das Verhalten nicht festgelegt wurde, wird die Instanz verwendet, die durch die `StubsBehaviors.Current`\-Eigenschaft zurückgegeben wird.  Standardmäßig gibt diese Eigenschaft ein Verhalten zurück, das eine `NotImplementedException`\-Ausnahme auslöst.  
+ Jeder generierte Stub-Typ enthält eine Instanz der `IStubBehavior`-Schnittstelle (durch die `IStub.InstanceBehavior`-Eigenschaft). Das Verhalten wird aufgerufen, wenn ein Client einen Member ohne angefügten benutzerdefinierten Delegaten aufruft. Wenn das Verhalten nicht festgelegt wurde, wird die Instanz verwendet, die durch die `StubsBehaviors.Current`-Eigenschaft zurückgegeben wird. Standardmäßig gibt diese Eigenschaft ein Verhalten zurück, das eine `NotImplementedException`-Ausnahme auslöst.  
   
- Das Verhalten kann jederzeit durch Festlegen der `InstanceBehavior`\-Eigenschaft auf jede beliebige Stub\-Instanz geändert werden.  Beispielsweise ändert der folgende Ausschnitt ein Verhalten, das keine Aktion ausführt oder den Standardwert des Rückgabetyps zurückgibt: `default(T)`:  
+ Das Verhalten kann jederzeit durch Festlegen der `InstanceBehavior`-Eigenschaft auf jede beliebige Stub-Instanz geändert werden. Beispielsweise ändert der folgende Ausschnitt ein Verhalten, das keine Aktion ausführt oder den Standardwert des Rückgabetyps zurückgibt: `default(T)`:  
   
 ```c#  
 // unit test code  
@@ -489,7 +504,7 @@ var stub = new StubIFileSystem();
 stub.InstanceBehavior = StubsBehaviors.DefaultValue;  
 ```  
   
- Das Verhalten kann auch global für alle Stubobjekte, für die das Verhalten nicht festgelegt wurde, durch Festlegung der `StubsBehaviors.Current`\-Eigenschaft geändert werden:  
+ Das Verhalten kann auch global für alle Stubobjekte, für die das Verhalten nicht festgelegt wurde, durch Festlegung der `StubsBehaviors.Current`-Eigenschaft geändert werden:  
   
 ```c#  
 // unit test code  
@@ -499,10 +514,11 @@ StubBehaviors.Current =
     BehavedBehaviors.DefaultValue;  
 ```  
   
-## Externe Ressourcen  
+## <a name="external-resources"></a>Externe Ressourcen  
   
-### Empfehlungen  
- [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests](http://go.microsoft.com/fwlink/?LinkID=255188)  
+### <a name="guidance"></a>Empfehlungen  
+ [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests)](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Isolieren von getestetem Code mithilfe von Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
+

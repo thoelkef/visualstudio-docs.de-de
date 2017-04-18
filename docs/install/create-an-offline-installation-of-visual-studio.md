@@ -2,7 +2,7 @@
 title: "Erstellen eines Offlineinstallationsprogramms für Visual Studio 2017 | Microsoft-Dokumentation"
 description: Hier erfahren Sie, wie Sie ein Offlineinstallationsprogramm von Visual Studio erstellen.
 ms.custom: 
-ms.date: 03/21/2017
+ms.date: 04/05/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -34,9 +34,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 5b6334c38a6c058f274498c06f8e07c934931910
-ms.openlocfilehash: 563c78a49eb55886b1ddbd4f437951c99c6568e5
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: 4e33dc3ebb32569b547aa9bcb6db9a15dbe4fc21
+ms.openlocfilehash: fda1a4fbfebd856312174fe24ff161b0e9d04bb9
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="create-an-offline-installer-for-visual-studio-2017"></a>Erstellen eines Offlineinstallationsprogramms für Visual Studio 2017
@@ -66,7 +66,7 @@ Um eine Offlineinstallation mit allen Sprachen und allen Funktionen zu erstellen
 - Führen Sie für Visual Studio Professional aus: <br> ```vs_professional.exe --layout c:\vs2017offline```
 - Führen Sie für Visual Studio-Community aus: <br> ```vs_community.exe --layout c:\vs2017offline```
 
-Weitere Beispiele finden Sie auf dieser Seite im Abschnitt [Gewusst wie: Anpassen Ihres Offlineinstallationsprogramms](#how-to-customize-your-offline- installer).
+Weitere Beispiele finden Sie auf dieser Seite im Abschnitt [Gewusst wie: Anpassen Ihres Offlineinstallationsprogramms](#how-to-customize-your-offline-installer).
 
 ## <a name="install-from-the-offline-installation-folder"></a>Installieren aus dem Offlineinstallationsordner
 Führen Sie die Offlineinstallation jetzt oder später durch; die Entscheidung liegt bei Ihnen. Aber gehen Sie dabei folgendermaßen vor.
@@ -98,6 +98,7 @@ Manchmal geht etwas schief. Hier ist eine Tabelle mit bekannten Problemen und ei
 
 | Problem       | Element                   | Lösung |
 | ----------- | ---------------------- | -------- |
+| Sie erhalten eine Fehlermeldung vom Installer für Visual Studio mit der Meldung „Setup completed with warning“ (Setup mit Warnung abgeschlossen), und die Installation des Windows-Emulators schlägt fehl. | Windows 10-Emulator | Öffnen Sie den Offlineinstallationsordner für Visual Studio, wechseln Sie zum Unterordner „Win10_Emulator_10.0.15063,version=10.0.15063.12,chip=x64“, und führen Sie dann „EmulatorSetup.exe“ zum Installieren des Windows-Emulators aus. |
 | Sie erhalten die Warnmeldung, dass Sie nicht in der Lage seien, einige Komponenten und Pakete zu installieren.  | Android SDK-Installation (API-Ebene) | Wenn Sie Android SDK-Pakete (API-Ebene) einschließen möchten, benötigen Sie eine Internetverbindung bei der Erstellung des Offlineinstallationsprogramms. In einem eingeschränkten Netzwerk müssen Sie den Zugriff auf die folgenden URLs zulassen: <br><br> - http://dl.google.com:443 <br> - http://dl-ssl.google.com:443 <br>  - https://dl-ssl.google.com/android/repository/*<br><br>Weitere Informationen zur Behebung möglicher Probleme mit Proxyeinstellungen finden Sie im Blogbeitrag [Visual Studio 2015 install failures (Android SDK Setup) behind a Proxy](https://blogs.msdn.microsoft.com/peterhauge/2016/09/22/visual-studio-2015-install-failures-android-sdk-setup-behind-a-proxy/) (Fehler bei der Installation von Visual Studio 2015 – Android SDK-Installation – hinter einem Proxy).  |  
 | Benutzer haben keinen Zugriff auf Dateien. | Berechtigungen (ACLs) | Stellen Sie sicher, dass Sie die Berechtigungen (ACLs) so anpassen, dass anderen Benutzern Lesezugriff erteilt wird, *bevor* Sie die Offlineinstallation freigeben. |
 | Neue Arbeitslasten, Komponenten oder Sprachen werden nicht installiert.  | `--layout`  | Stellen Sie sicher, dass Sie über Internetzugriff verfügen, wenn Sie eine Installation aus einem partiellen Layout heraus ausführen und Arbeitsauslastungen, Komponenten oder Sprachen auswählen, die im früheren Layout nicht verfügbar sind. |

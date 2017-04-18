@@ -35,9 +35,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: f70339a150a53d346ab9a6f59b4b1634263f5b9e
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 80ce7de7e89844d8c9cb1052499b2d873e04965e
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="options-text-editor-cc-formatting"></a>Optionen, Text-Editor, C/C++, Formatierung
@@ -81,16 +81,16 @@ Ermöglicht es Ihnen, das Standardverhalten des Code-Editors zu ändern, wenn Si
  Wenn Sie eine Datei im Text-Editor öffnen, können Sie die Gliederungsfunktion aktivieren. Weitere Informationen finden Sie unter [Gliedern](../../ide/outlining.md). Wenn diese Option ausgewählt ist, wird die Gliederungsfunktion beim Öffnen einer Datei aktiviert.  
   
  **Automatische Gliederung von #pragma-Bereich-Blöcken**  
- Wenn diese Option aktiviert wird, wird die automatische Gliederung für [Pragma-Anweisungen](/visual-cpp/preprocessor/pragma-directives-and-the-pragma-keyword) aktiviert. Damit können Sie Pragmabereichsblocks im gegliederten Modus erweitern oder reduzieren.  
+ Wenn diese Option aktiviert wird, wird die automatische Gliederung für [Pragma-Anweisungen](/cpp/preprocessor/pragma-directives-and-the-pragma-keyword) aktiviert. Damit können Sie Pragmabereichsblocks im gegliederten Modus erweitern oder reduzieren.  
   
  **Automatische Gliederung von Anweisungsblöcken**  
  Wenn diese Option ausgewählt ist, wird die automatische Gliederung für die folgenden Anweisungskonstrukte aktiviert:  
   
 -   [if-else](/dotnet/csharp/language-reference/keywords/if-else)  
   
--   [switch-Anweisung (C++)](/visual-cpp/cpp/switch-statement-cpp)  
+-   [switch-Anweisung (C++)](/cpp/cpp/switch-statement-cpp)  
   
--   [while-Anweisung (C++)](/visual-cpp/cpp/while-statement-cpp)  
+-   [while-Anweisung (C++)](/cpp/cpp/while-statement-cpp)  
   
 ## <a name="see-also"></a>Siehe auch  
  [Allgemein, Umgebung, Dialogfeld „Optionen“](../../ide/reference/general-environment-options-dialog-box.md)   

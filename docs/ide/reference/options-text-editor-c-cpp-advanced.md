@@ -34,9 +34,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
-ms.openlocfilehash: ba9c9b60de651eecc92ea10ba44579a7dadc36df
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 9c9e9e8c63d69e797a28ce4f8b1ac0adcf074b77
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="options-text-editor-cc-advanced"></a>Optionen, Text-Editor, C/C++, Erweitert
@@ -139,7 +139,7 @@ Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ da
  **Maximale Anzahl zwischengespeicherter Übersetzungseinheiten**  
  Die maximale Anzahl von Übersetzungseinheiten, die zu einem beliebigen Zeitpunkt für IntelliSense-Anforderungen aktiv gehalten werden. Sie müssen einen Wert zwischen 2 und 15 angeben. Diese Zahl bezieht sich direkt auf die maximale Anzahl von ausgeführten VCPkgSrv.exe-Prozessen (für eine angegebene Instanz von Visual Studio). Der Standardwert ist 2. Wenn Sie jedoch verfügbaren Arbeitsspeicher haben, können Sie diesen Wert erhöhen und erzielen möglicherweise eine bessere IntelliSense-Leistung.  
   
- Weitere Informationen zu Übersetzungseinheiten finden Sie unter [Phasen der Übersetzung](/visual-cpp/preprocessor/phases-of-translation).  
+ Weitere Informationen zu Übersetzungseinheiten finden Sie unter [Phasen der Übersetzung](/cpp/preprocessor/phases-of-translation).  
 
  **Punkt in Pfeil in der Memberliste aktivieren**  
  Ersetzt „.“ durch „->“, sofern dies für die Memberliste anwendbar ist.

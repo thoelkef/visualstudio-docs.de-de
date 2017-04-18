@@ -36,9 +36,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 118223d1a5c07188b8f8d8c7b6990792dcd94ff5
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 989bc338e0cb8c49a2342d998e1e09e8f6b0eb9f
+ms.lasthandoff: 04/05/2017
 
 ---
 # <a name="output-window"></a>Ausgabefenster
@@ -76,7 +76,7 @@ Das Fenster **Ausgabe** zeigt die Statusmeldungen für verschiedene Funktionen i
   
  Sie können auch eigene Anwendungen so programmieren, dass sie Diagnosemeldungen zur Laufzeit in einen **Ausgabe**-Bereich ausgeben. Dazu können Sie die Klassen <xref:System.Diagnostics.Debug> oder <xref:System.Diagnostics.Trace> im Namespace <xref:System.Diagnostics> der .NET Framework-Klassenbibliothek verwenden. Wenn Sie Debugkonfigurationen von einer Projektmappe oder einem Projekt erstellen, wird die Ausgabe von Membern der Klasse <xref:System.Diagnostics.Debug> angezeigt. Beim Erstellen einer Debug- oder Releasekonfiguration wird die Ausgabe von Membern der Klasse <xref:System.Diagnostics.Trace> angezeigt. Weitere Informationen finden Sie unter [Diagnosemeldungen im Ausgabefenster](../../debugger/diagnostic-messages-in-the-output-window.md).  
   
- Sie können unter [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] benutzerdefinierte Buildschritte und Buildereignisse erstellen, deren Warnungen und Fehler im Bereich **Ausgabe** angezeigt und gezählt werden. Durch Drücken von F1 in einer Ausgabezeile wird ein entsprechendes Hilfethema angezeigt. Weitere Informationen finden Sie unter [Formatieren der Ausgabe eines benutzerdefinierten Buildschritts oder eines benutzerdefinierten Buildereignisses](/visual-cpp/ide/formatting-the-output-of-a-custom-build-step-or-build-event).  
+ Sie können unter [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] benutzerdefinierte Buildschritte und Buildereignisse erstellen, deren Warnungen und Fehler im Bereich **Ausgabe** angezeigt und gezählt werden. Durch Drücken von F1 in einer Ausgabezeile wird ein entsprechendes Hilfethema angezeigt. Weitere Informationen finden Sie unter [Formatieren der Ausgabe eines benutzerdefinierten Buildschritts oder eines benutzerdefinierten Buildereignisses](/cpp/ide/formatting-the-output-of-a-custom-build-step-or-build-event).  
   
 ## <a name="scrolling-behavior"></a>Bildlauf-Verhalten  
  Wenn Sie den automatischen Bildlauf im Ausgabefenster verwenden und dann navigieren, indem Sie die Maus oder Pfeiltasten verwenden, wird der automatische Bildlauf beendet. Verwenden Sie zum Fortsetzen des automatischen Bildlaufs STRG+ENDE.  

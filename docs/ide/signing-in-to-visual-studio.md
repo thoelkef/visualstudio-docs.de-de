@@ -31,6 +31,7 @@ translation.priority.mt:
 translationtype: Human Translation
 ms.sourcegitcommit: 2f67cbb9e3a2895dc6c35e68dbd6b262862c6514
 ms.openlocfilehash: 5a42f721c30dba9c14f7871a0d771f07054e2550
+ms.lasthandoff: 02/22/2017
 
 ---
 # <a name="sign-in-to-visual-studio"></a>Anmelden bei Visual Studio
@@ -76,9 +77,4 @@ Sie können Ihre Bereitstellungsumgebung in Visual Studio personalisieren und op
 4.  Ändern Sie die Einstellungen.  
 
 5.  Wählen Sie anschließend **Änderungen speichern** .
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 
