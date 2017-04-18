@@ -2,7 +2,7 @@
 title: "Installieren von Visual Studio 2017 | Microsoft-Dokumentation"
 description: "Erfahren Sie Schritt für Schritt, wie Sie Visual Studio installieren."
 ms.custom: 
-ms.date: 03/07/2017
+ms.date: 04/03/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -37,9 +37,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 8c4e45eadd81c54a372885ce89ccced1256d3b3d
-ms.openlocfilehash: 5552f67ae880e3b7ec832d6d035382e2abcca116
-ms.lasthandoff: 03/09/2017
+ms.sourcegitcommit: af9699b63fdfb81a274affb78856817520c38b05
+ms.openlocfilehash: 47688935cec36db174c3a0c424b1705ae47c6118
+ms.lasthandoff: 04/03/2017
 
 ---
 # <a name="install-visual-studio-2017"></a>Installieren von Visual Studio 2017
@@ -102,10 +102,12 @@ Zum Installieren von Visual Studio 2017 in einer bestimmten Sprache Ihrer Wahl k
 
 Standardmäßig versucht das Installationsprogramm bei der ersten Ausführung die Sprache des Betriebssystems zu verwenden. Das Installationsprogramm speichert diese Einstellung. Sie können die Einstellung ändern, indem Sie das Installationsprogramm über die Befehlszeile ausführen. Mit dem Befehl `vs_installer.exe --locale en-US` können Sie z.B. erzwingen, dass das Installationsprogramm auf Englisch ausgeführt wird. Das Installationsprogramm speichert diese Einstellung für zukünftige Ausführungen. Das Installationsprogramm unterstützt die folgenden Sprachtoken: zh-CN, zh-TW, cs-CZ, en-US, fr-FR, de-DE, it-IT, ja-JP, ko-KR, pl-PL, pt-BR, ru-RU, es-ES und tr-TR.
 
+## <a name="get-support"></a>Support aufrufen
+Manchmal kann etwas schiefgehen. Wenn die Installation von Visual Studio fehlschlägt, suchen Sie im KB-Artikel [Problembehandlung bei Installations- und Upgradefehlern in Visual Studio 2017](https://support.microsoft.com/help/4015967/troubleshooting-visual-studio-2017-installation-and-upgrade-failures) für Tipps zur Problembehandlung.
 
 ## <a name="see-also"></a>Siehe auch  
 * [Ändern von Visual Studio 2017 RC](modify-visual-studio.md)
 * [Deinstallieren von Visual Studio 2017](uninstall-visual-studio.md)
-* [Administratorhandbuch für Visual Studio&2017; RC](visual-studio-administrator-guide.md)
+* [Administratorhandbuch für Visual Studio 2017 RC](visual-studio-administrator-guide.md)
 * [Melden eines Problems mit Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
 

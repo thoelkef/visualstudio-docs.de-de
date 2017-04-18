@@ -1,43 +1,60 @@
 ---
-title: "Ausf&#252;hren eines Komponententest als 64-Bit-Prozess | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Komponententests, Erstellen"
-  - "Komponententests, Ausführen"
+title: "Ausführen eines Komponententests als 64-Bit-Prozess | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- unit tests, creating
+- unit tests, running
 ms.assetid: d23a9ee7-58e3-4e8b-a38c-b2207ea73fea
 caps.latest.revision: 25
-ms.author: "mlearned"
-manager: "douge"
-caps.handback.revision: 25
----
-# Ausf&#252;hren eines Komponententest als 64-Bit-Prozess
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: douge
+manager: douge
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
+ms.openlocfilehash: c5a24ac7491631c87acb66b4ed19a2fc082adab3
+ms.lasthandoff: 04/04/2017
 
-Wenn Sie einen 64\-Bit\-Computer verwenden, können Sie Komponententests und Informationen zur Codeabdeckung als 64\-Bit\-Prozess ausgeführt.  
+---
+# <a name="run-a-unit-test-as-a-64-bit-process"></a>Ausführen eines Komponententest als 64-Bit-Prozess
+Wenn Sie über einen 64-Bit-Computer verfügen, können Sie Komponententests ausführen und Code Coverage-Informationen als 64-Bit-Prozess erfassen.  
   
-## Ausführen eines Komponententests als 64\-Bit\-Prozess  
+## <a name="running-a-unit-test-as-a-64-bit-process"></a>Ausführen eines Komponententest als 64-Bit-Prozess  
   
-#### So führen Sie einen Komponententest als 64\-Bit\-Prozess aus  
+#### <a name="to-run-a-unit-test-as-a-64-bit-process"></a>So führen Sie einen Komponententest als 64-Bit-Prozess aus  
   
-1.  Wenn der Code oder Test als 32\-Bit\-\/x86\-Prozess kompiliert wurde, nun aber als 64\-Bit\-Prozess ausgeführt werden soll, kompilieren Sie ihn mit **Any CPU** oder optional mit **64\-Bit** neu.  
+1.  Wenn Ihr Code oder Ihre Tests als 32-Bit/X86 kompiliert wurden, aber Sie diese als ein 64-Bit-Prozess ausführen möchten, kompilieren Sie sie als **Beliebige CPU** oder optional als **64-Bit**.  
   
     > [!TIP]
-    >  Maximale Flexibilität erhalten Sie, wenn Sie die Testprojekte mit der Konfiguration **Any CPU** kompilieren.  Die Ausführung ist dann auf 32\- und auf 64\-Bit\-Agents möglich.  Das Kompilieren von Testprojekten mit der **64\-Bit**\-Konfiguration bietet keinen Vorteil.  
+    >  Maximale Flexibilität erhalten Sie, wenn Sie die Testprojekte mit der Konfiguration **Beliebige CPU** kompilieren. Die Ausführung ist dann auf 32- und auf 64-Bit-Agents möglich. Das Kompilieren von Testprojekten mit der **64-Bit**-Konfiguration bietet keinen Vorteil.  
   
-2.  Vom Visual Studio\-Menü wählen Sie **Test** aus, und wählen Sie **Einstellungen** und wählen Sie dann **Prozessorarchitektur** aus.  Wählen **x64**, um die Tests als 64\-Bit\-Prozess zu machen.  
+2.  Wählen Sie im Visual Studio-Menü **Test**, wählen Sie dann **Einstellungen** und anschließend **Prozessorarchitektur** aus. Wählen Sie **x64** zum Ausführen der Tests als 64-Bit-Prozess aus.  
   
-     – oder –  
+     \- oder –  
   
-     Geben Sie `<TargetPlatform>x64</TargetPlatform>` in um eine RUNSETTINGS\-Datei an.  Ein Vorteil dieser Methode ist, dass Sie Gruppen von Einstellungen in verschiedenen Dateien angeben und zwischen verschiedenen Einstellungen schnell wechseln können.  Sie können Einstellungen zwischen Projektmappen auch kopieren.  Weitere Informationen finden Sie unter [Konfigurieren von Komponententests mithilfe einer .runsettings\-Datei](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).  
+     Geben Sie `<TargetPlatform>x64</TargetPlatform>` in einer RUNSETTINGS-Datei. Ein Vorteil dieser Methode ist, dass Sie Gruppen von Einstellungen in verschiedenen Dateien angeben und schnell zwischen verschiedenen Einstellungen wechseln können. Sie können auch die Einstellungen zwischen Projektmappen kopieren. Weitere Informationen hierzu finden Sie unter [Configure unit tests by using a .runsettings file (Konfigurieren von Komponententests mithilfe einer .runsettings-Datei)](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).  
   
-## Siehe auch  
- [Ausführen von Komponententests mit dem Test\-Explorer](../test/run-unit-tests-with-test-explorer.md)   
- [Komponententest für Code](../test/unit-test-your-code.md)   
- [Angeben von Testeinstellungen für Visual Studio\-Tests](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests)
+## <a name="see-also"></a>Siehe auch  
+ [Ausführen von Komponententests mit dem Test-Explorer](../test/run-unit-tests-with-test-explorer.md)   
+ [Unit Test Your Code (Komponententest für Code)](../test/unit-test-your-code.md)   
+ [Angeben von Testeinstellungen für Tests mit Visual Studio](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests)
+

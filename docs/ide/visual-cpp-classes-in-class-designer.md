@@ -1,45 +1,60 @@
 ---
-title: "Visual C++ Classes in Class Designer | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.classdesigner.inheritancelinelabel"
-helpviewer_keywords: 
-  - "Class Designer [Visual Studio], classes"
+title: Visual C++-Klassen im Klassen-Designer | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.classdesigner.inheritancelinelabel
+helpviewer_keywords:
+- Class Designer [Visual Studio], classes
 ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
 caps.latest.revision: 19
-caps.handback.revision: 19
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# Visual C++ Classes in Class Designer
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+translationtype: Human Translation
+ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
+ms.openlocfilehash: 02cd1cabf8cf296130ace9a3dcf37a237805dfe9
+ms.lasthandoff: 04/05/2017
 
-Vom Klassen\-Designer werden C\+\+\-Klassen unterstützt und systemeigene C\+\+\-Klassen auf die gleiche Weise wie Visual Basic\- oder Visual C\#\-Klassenformen grafisch dargestellt, mit der Ausnahme, dass C\+\+\-Klassen mehrere Vererbungsbeziehungen aufweisen können.  Sie können die Klassenform erweitern, um weitere Felder und Methoden in der Klasse anzuzeigen, oder die Klassenform reduzieren, um Platz zu sparen.  
+---
+# <a name="visual-c-classes-in-class-designer"></a>Visual C++-Klassen im Klassen-Designer
+Der Klassen-Designer unterstützt C++-Klassen und visualisiert native C++-Klassen auf die gleiche Weise wie Visual Basic- und Visual C#-Klassenformen, mit Ausnahme, dass C++-Klassen über mehrere Vererbungsbeziehungen verfügen können. Sie können die Klassenform erweitern, um mehr Felder und Methoden in der Klasse anzuzeigen, oder sie aus Platzgründen reduzieren.  
   
 > [!NOTE]
->  Vom Klassen\-Designer werden keine Unions unterstützt \(ein spezieller Klassentyp, in dem der belegte Speicherplatz nur so groß wie der größte Datenmember der Union ist\).  
+>  Der Klassen-Designer unterstützt keine Unions (eine besondere Art von Klasse, bei der der zugeordnete Arbeitsspeicher nur so groß wie der größte Datenmember der Union ist).  
   
-## Einfache Vererbung  
- Wenn Sie mehrere Klassen mit einer Vererbungsbeziehung in ein Klassendiagramm ziehen, sind diese durch einen Pfeil verbunden.  Der Pfeil zeigt in die Richtung der Basisklasse.  Wenn beispielsweise die folgenden Klassen in einem Klassendiagramm angezeigt werden, sind sie durch einen Pfeil von B nach A verbunden:  
+## <a name="simple-inheritance"></a>Einfache Vererbung  
+ Wenn Sie mehr als eine Klasse in ein Klassendiagramm ziehen, und die Klassen verfügen über eine Klassenvererbungsbeziehung, werden sie durch einen Pfeil verbunden. Der Pfeil zeigt in Richtung der Basisklasse. Wenn z.B. die folgenden Klassen in einem Klassendiagramm angezeigt werden, werden sie durch einen Pfeil verbunden, der von B nach A zeigt:  
   
 ```  
 class A {};  
 class B : A {};  
 ```  
   
- Sie können auch nur Klasse B in das Klassendiagramm ziehen, mit der rechten Maustaste auf die Klassenform für B klicken und anschließend auf **Basisklassen anzeigen** klicken.  Hierdurch wird ihre Basisklasse angezeigt: A.  
+ Sie können auch nur Klasse B in das Klassendiagramm ziehen: Klicken Sie mit der rechten Maustaste auf die Klassenform für B, und klicken Sie dann auf **Basisklassen anzeigen**. Dadurch wird die Basisklasse angezeigt: A.  
   
-## Mehrfachvererbung  
- Der Klassen\-Designer unterstützt die Visualisierung von Vererbungsbeziehungen für mehrere Klassen.  *Mehrfachvererbung* wird verwendet, wenn eine abgeleitete Klasse Attribute von mehreren Basisklassen enthält.  Folgendes ist ein Beispiel für Mehrfachvererbung:  
+## <a name="multiple-inheritance"></a>Mehrfachvererbung  
+ Der Klassen-Designer unterstützt die Visualisierung der Vererbungsbeziehungen mehrerer Klassen. *Mehrfache Vererbung* wird verwendet, wenn eine abgeleitete Klasse Attribute von mehr als einer Basisklasse hat. Es folgt ein Beispiel für mehrfache Vererbung:  
   
 ```  
 class Bird {};  
@@ -47,17 +62,17 @@ class Swimmer {};
 class Penguin : public Bird, public Swimmer {};  
 ```  
   
- Wenn Sie mehrere Klassen mit einer Vererbungsbeziehung in das Klassendiagramm ziehen, sind diese durch einen Pfeil verbunden.  Der Pfeil zeigt in Richtung der Basisklassen.  
+ Wenn Sie mehr als eine Klasse in das Klassendiagramm ziehen, und die Klassen verfügen über eine Vererbungsbeziehung mehrerer Klassen, werden sie durch einen Pfeil verbunden. Der Pfeil zeigt in Richtung der Basisklassen.  
   
- Wenn Sie mit der rechten Maustaste auf eine Klassenform und anschließend auf **Basisklassen anzeigen** klicken, werden die Basisklassen für die ausgewählte Klasse angezeigt.  
+ Durch einen Rechtsklick auf eine Klassenform und anschließend durch Klicken auf **Basisklassen anzeigen**, wird die Basisklasse für die ausgewählte Klasse angezeigt,  
   
 > [!NOTE]
->  Der Befehl **Abgeleitete Klassen anzeigen** wird für C\+\+\-Code nicht unterstützt.  Sie können abgeleitete Klassen anzeigen, indem Sie zur Klassenansicht wechseln, den Typknoten und den Unterordner **Abgeleitete Typen** erweitern und diese Typen dann in das Klassendiagramm ziehen.  
+>  Der Befehl **Abgeleitete Klassen anzeigen** wird für C++-Code nicht unterstützt. Sie können abgeleitete Klassen anzeigen, indem Sie zur Klassenansicht wechseln, den Typknoten erweitern, den Unterordner **Abgeleitete Typen** erweitern und anschließend diese Typen in das Klassendiagramm ziehen.  
   
- Weitere Informationen zu Mehrfachvererbung finden Sie unter [\(NOTINBUILD\) Multiple Inheritance](http://msdn.microsoft.com/de-de/3b74185e-2beb-4e29-8684-441e51d2a2ca) und unter [Mehrere Basisklassen](/visual-cpp/cpp/multiple-base-classes).  
+ Weitere Informationen über die Vererbung von mehreren Klasse finden Sie unter [(NOTINBUILD) Mehrfachvererbung](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca) und [Mehrere Basisklassen](/cpp/cpp/multiple-base-classes).  
   
-## Abstrakte Klassen  
- Der Klassen\-Designer unterstützt abstrakte Klassen \(auch als "abstrakte Basisklassen" bezeichnet\).  Dies sind Klassen, die nicht instanziiert werden, von denen jedoch andere Klassen abgeleitet werden können.  Unter Verwendung eines Beispiels aus "Mehrfachvererbung" weiter oben in diesem Dokument können Sie die `Bird`\-Klasse als einzelne Objekte wie folgt instanziieren:  
+## <a name="abstract-classes"></a>Abstrakte Klassen  
+ Der Klassen-Designer unterstützt abstrakte Klassen (auch als „abstrakte Basisklassen“ bezeichnet). Dies sind Klassen, die nicht instanziiert, aber von denen andere Klassen abgeleitet werden können. Wenn Sie ein Beispiel aus „Mehrfachvererbungs“ weiter oben in diesem Dokument verwenden, können Sie womöglich die `Bird`-Klasse als einzelne Objekte wie folgt instanziieren:  
   
 ```  
 int main()  
@@ -68,9 +83,9 @@ int main()
 }  
 ```  
   
- Es ist jedoch nicht möglich, die `Swimmer`\-Klasse als einzelne Objekte zu instanziieren.  Sie können davon nur andere Tierklassentypen ableiten, beispielsweise `Penguin`, `Whale` und `Fish`.  In diesem Fall würde die `Swimmer`\-Klasse als abstrakte Basisklasse deklariert werden.  
+ Sie können jedoch nicht die `Swimmer`-Klasse als einzelnes Objekt instanziieren. Sie können nur andere Tierklassen davon ableiten, z.B. `Penguin`, `Whale` und `Fish`. In diesem Fall müssten Sie die `Swimmer`-Klasse als eine abstrakte Basisklasse deklarieren.  
   
- Eine Klasse kann mit dem `abstract`\-Schlüsselwort als abstrakt deklariert werden.  Member, die als abstrakt gekennzeichnet oder in einer abstrakten Klasse enthalten sind, sind virtuell und müssen von Klassen implementiert werden, die von der abstrakten Klasse abgeleitet sind.  
+ Um eine Klasse als abstrakt zu deklarieren, können Sie das Schlüsselwort `abstract` verwenden. Als abstrakt markierte Member oder Member in einer abstrakten Klasse sind virtuell und müssen von Klassen, die von der abstrakten Klasse abgeleitet wurden, implementiert werden.  
   
 ```  
 class Swimmer abstract  
@@ -90,9 +105,9 @@ class Swimmer
 };  
 ```  
   
- Wenn diese Deklarationen in einem Klassendiagramm angezeigt werden, wird der Klassenname `Swimmer` und dessen rein virtuelle Funktion `swim` kursiv in Form einer abstrakten Klassen zusammen mit der Bezeichnung **Abstrakte Klasse** angezeigt.  Beachten Sie, dass die Typform der abstrakten Klasse die einer normalen Klasse ist, außer dass der Rahmen eine gepunktete Linie ist.  
+ Beim Anzeigen dieser Deklarationen in einem Klassendiagramm werden der Klassenname `Swimmer` und dessen rein virtuelle Funktion `swim` als kursiv in einer abstrakten Klassenform zusammen mit der Bezeichnung **Abstrakte Klasse** angezeigt. Beachten Sie, dass die Typform der abstrakten Klasse identisch mit einer normalen Klasse ist, außer dass der Rahmen eine gepunktete Linie ist.  
   
- Eine Klasse, die von der abstrakten Basisklasse abgeleitet ist, muss jede rein virtuelle Funktion in der Basisklasse überschreiben, andernfalls kann die abgeleitete Klasse nicht instanziiert werden.  Wenn beispielsweise eine `Fish`\-Klasse von der `Swimmer`\-Klasse abgeleitet wird, muss `Fish` die `swim`\-Methode überschreiben:  
+ Eine von einer abstrakten Klasse abgeleitete Klasse muss jede rein virtuelle Funktion in der Basisklasse überschreiben, oder die abgeleitete Klasse kann nicht instanziiert werden. In diesem Fall muss z.B. bei der Ableitung einer `Fish`-Klasse von der `Swimmer`-Klasse, `Fish` die `swim`-Methode überschreiben:  
   
 ```  
 class Fish : public Swimmer  
@@ -106,10 +121,10 @@ int main()
 }  
 ```  
   
- Wenn dieser Code in einem Klassendiagramm angezeigt wird, zeichnet der Klassen\-Designer eine Vererbungslinie von `Fish` zu `Swimmer`.  
+ Wenn dieser Code in einem Klassendiagramm angezeigt wird, zeichnet der Klassen-Designer eine Vererbungslinie von `Fish` zu `Swimmer`.  
   
-## Anonyme Klassen  
- Der Klassen\-Designer unterstützt anonyme Klassen.  *Anonyme Klassentypen* sind Klassen, die ohne Bezeichner deklariert werden.  Sie können keinen Konstruktor oder Destruktor enthalten und weder als Argumente an Funktionen übergeben noch als Rückgabewerte von Funktionen zurückgegeben werden.  Sie können eine anonyme Klasse verwenden, um einen Klassennamen durch den Namen einer Typdefinition \(typedef\) zu ersetzen, wie in dem folgenden Beispiel:  
+## <a name="anonymous-classes"></a>Anonyme Klassen  
+ Der Klassen-Designer unterstützt anonyme Klassen. *Anonyme Klassentypen* sind Klassen, die ohne Bezeichner deklariert werden. Sie können keinen Konstruktor oder Destruktor besitzen, können nicht als Argumente oder Funktionen übergeben werden und können nicht als Rückgabewerte von Funktionen zurückgegeben werden. Sie können eine anonyme Klasse verwenden, um einen Klassennamen durch einen TypeDef-Namen wie im folgenden Beispiel zu ersetzen:  
   
 ```  
 typedef struct  
@@ -119,60 +134,60 @@ typedef struct
 } POINT;  
 ```  
   
- Auch Strukturen können anonym sein.  Vom Klassen\-Designer werden anonyme Klassen angezeigt und auf die gleiche Weise wie der jeweilige Typ strukturiert.  Der von Ihnen festgelegte Tagname wird vom Klassen\-Designer nicht verwendet, obwohl Sie anonyme Klassen und Strukturen deklarieren und anzeigen können.  Der Name wird verwendet, der von der Klassenansicht generiert wird.  Die Klasse bzw. Struktur wird in der Klassenansicht und im Klassen\-Designer als ein Element mit der Bezeichnung **\_\_unnamed** \(unbenannt\) angezeigt.  
+ Strukturen können auch anonym sein. Der Klassen-Designer werden anonyme Klassen und Strukturen auf die gleiche Weise wie der entsprechende Typ angezeigt. Obwohl Sie anonyme Klassen und Strukturen deklarieren und anzeigen können, verwendet der Klassen-Designer nicht den von Ihnen angegebenen Tagnamen. Es wird der Name verwendet, der von der Klassenansicht generiert wird. Die Klasse oder Struktur wird in der Klassenansicht und im Klassen-Designer als ein Element namens **__unnamed** angezeigt.  
   
- Weitere Informationen zu anonymen Klassen finden Sie unter [Anonyme Klassentypen](/visual-cpp/cpp/anonymous-class-types).  
+ Weitere Informationen zu anonymen Klassen finden Sie unter [Anonyme Klassentypen](/cpp/cpp/anonymous-class-types).  
   
-## Vorlagenklassen  
- Der Klassen\-Designer unterstützt die Visualisierung von Vorlagenklassen.  Geschachtelte Deklarationen werden unterstützt.  In der folgenden Tabelle sind einige typische Deklarationen dargestellt.  
+## <a name="template-classes"></a>Vorlagenklassen  
+ Der Klassen-Designer unterstützt die Visualisierung von Vorlagenklassen. Geschachtelte Deklarationen werden unterstützt. Die folgende Tabelle zeigt einige Standarddeklarationen.  
   
-|Codeelement|Ansicht Klassen\-Designer|  
-|-----------------|-------------------------------|  
+|Codeelement|Ansicht „Klassen-Designer“|  
+|------------------|-------------------------|  
 |`template <class T>`<br /><br /> `class A {};`|`A<T>`<br /><br /> Vorlagenklasse|  
 |`template <class T, class U>`<br /><br /> `class A {};`|`A<T, U>`<br /><br /> Vorlagenklasse|  
 |`template <class T, int i>`<br /><br /> `class A {};`|`A<T, i>`<br /><br /> Vorlagenklasse|  
 |`template <class T, template <class K> class U>`<br /><br /> `class A {};`|`A<T, U>`<br /><br /> Vorlagenklasse|  
   
- In der folgenden Tabelle sind einige Beispiele für teilweise Spezialisierungen dargestellt.  
+ Die folgende Tabelle zeigt einige Beispiele für die teilweise Spezialisierung.  
   
-|Codeelement|Ansicht Klassen\-Designer|  
-|-----------------|-------------------------------|  
+|Codeelement|Ansicht „Klassen-Designer“|  
+|------------------|-------------------------|  
 |`template<class T, class U>`<br /><br /> `class A {};`|`A<T, U>`<br /><br /> Vorlagenklasse|  
 |`template<class T>`<br /><br /> `class A<T, T> {};`|`A<T, T>`<br /><br /> Vorlagenklasse|  
 |`template <class T>`<br /><br /> `class A<T, int> {};`|`A<T, int>`<br /><br /> Vorlagenklasse|  
 |`template <class T1, class T2>`<br /><br /> `class A<T1*, T2*> {};`|`A<T1*, T2*>`<br /><br /> Vorlagenklasse|  
   
- In der folgenden Tabelle sind einige Beispiele für Vererbungen in teilweisen Spezialisierungen dargestellt.  
+ Die folgende Tabelle zeigt einige Beispiele der Vererbung in der partiellen Spezialisierung.  
   
-|Codeelement|Ansicht Klassen\-Designer|  
-|-----------------|-------------------------------|  
-|`template <class T, class U>`<br /><br /> `class A {};`<br /><br /> `template <class TC>`<br /><br /> `class A<T, int> {};`<br /><br /> `class B : A<int, float>`<br /><br /> `{};`<br /><br /> `class C : A<int, int>`<br /><br /> `{};`|`A<T, U>`<br /><br /> Vorlagenklasse<br /><br /> `B`<br /><br /> Klasse<br /><br /> \(zeigt auf Klasse A\)<br /><br /> `C`<br /><br /> Klasse<br /><br /> \(zeigt auf Klasse A\)|  
+|Codeelement|Ansicht „Klassen-Designer“|  
+|------------------|-------------------------|  
+|`template <class T, class U>`<br /><br /> `class A {};`<br /><br /> `template <class TC>`<br /><br /> `class A<T, int> {};`<br /><br /> `class B : A<int, float>`<br /><br /> `{};`<br /><br /> `class C : A<int, int>`<br /><br /> `{};`|`A<T, U>`<br /><br /> Vorlagenklasse<br /><br /> `B`<br /><br /> Klasse<br /><br /> (zeigt auf Klasse A)<br /><br /> `C`<br /><br /> Klasse<br /><br /> (zeigt auf Klasse A)|  
   
- In der folgenden Tabelle sind einige Beispiele für Vorlagenfunktionen von teilweisen Spezialisierungen dargestellt.  
+ Die folgende Tabelle zeigt einige Beispiele für die partielle Spezialisierung von Vorlagenfunktionen.  
   
-|Codeelement|Ansicht Klassen\-Designer|  
-|-----------------|-------------------------------|  
-|`class A`<br /><br /> `{`<br /><br /> `template <class T, class U>`<br /><br /> `void func(T a, U b);`<br /><br /> `template <class T>`<br /><br /> `void func(T a, int b);`<br /><br /> `};`|`A`<br /><br /> func\<T, U\> \(\+ 1 overload\)|  
-|`template <class T1>`<br /><br /> `class A {`<br /><br /> `template <class T2>`<br /><br /> `class B {};`<br /><br /> `};`<br /><br /> `template<> template<>`<br /><br /> `class A<type>::B<type> {};`|`A<T1>`<br /><br /> Vorlagenklasse<br /><br /> `B<T2>`<br /><br /> Vorlagenklasse<br /><br /> \(B ist in Klasse A unter **Geschachtelte Typen** enthalten\)|  
-|`template <class T>`<br /><br /> `class C {};`<br /><br /> `class A : C<int> {};`|`A`<br /><br /> Klasse<br /><br /> \-\> C\<int\><br /><br /> `C<T>`<br /><br /> Vorlagenklasse|  
+|Codeelement|Ansicht „Klassen-Designer“|  
+|------------------|-------------------------|  
+|`class A`<br /><br /> `{`<br /><br /> `template <class T, class U>`<br /><br /> `void func(T a, U b);`<br /><br /> `template <class T>`<br /><br /> `void func(T a, int b);`<br /><br /> `};`|`A`<br /><br /> func\<T, U> (+ 1 overload)|  
+|`template <class T1>`<br /><br /> `class A {`<br /><br /> `template <class T2>`<br /><br /> `class B {};`<br /><br /> `};`<br /><br /> `template<> template<>`<br /><br /> `class A<type>::B<type> {};`|`A<T1>`<br /><br /> Vorlagenklasse<br /><br /> `B<T2>`<br /><br /> Vorlagenklasse<br /><br /> (B ist in Klasse A unter **geschachtelte Typen** enthalten)|  
+|`template <class T>`<br /><br /> `class C {};`<br /><br /> `class A : C<int> {};`|`A`<br /><br /> Klasse<br /><br /> C\<int><br /><br /> `C<T>`<br /><br /> Vorlagenklasse|  
   
- In der folgenden Tabelle sind einige Beispiele für Vorlagenvererbungen dargestellt.  
+ Die folgende Tabelle zeigt einige Beispiele der Vorlagenvererbung.  
   
-|Codeelement|Ansicht Klassen\-Designer|  
-|-----------------|-------------------------------|  
-|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {`<br /><br /> `class B {};`<br /><br /> `}`<br /><br /> `class A : C<int>::B {};`|`A`<br /><br /> Klasse<br /><br /> \-\>B<br /><br /> `C<int>`<br /><br /> Klasse<br /><br /> \(B ist in Klasse C unter **Geschachtelte Typen** enthalten\)<br /><br /> `C<T>`<br /><br /> Vorlagenklasse|  
+|Codeelement|Ansicht „Klassen-Designer“|  
+|------------------|-------------------------|  
+|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {`<br /><br /> `class B {};`<br /><br /> `}`<br /><br /> `class A : C<int>::B {};`|`A`<br /><br /> Klasse<br /><br /> ->B<br /><br /> `C<int>`<br /><br /> Klasse<br /><br /> (B ist in Klasse C unter **geschachtelte Typen** enthalten )<br /><br /> `C<T>`<br /><br /> Vorlagenklasse|  
   
- In der folgenden Tabelle sind einige Beispiele für kanonisch spezialisierte Klassenverbindungen dargestellt.  
+ Die folgende Tabelle zeigt einige Beispiele der kanonischen spezialisierten Klassenverbindung.  
   
-|Codeelement|Ansicht Klassen\-Designer|  
-|-----------------|-------------------------------|  
-|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> Klasse<br /><br /> \-\>C\<int\><br /><br /> `C<int>`<br /><br /> Klasse<br /><br /> `C<T>`<br /><br /> Vorlagenklasse<br /><br /> `D`<br /><br /> Klasse<br /><br /> \-\>C\<float\>|  
-|`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T\>|  
+|Codeelement|Ansicht „Klassen-Designer“|  
+|------------------|-------------------------|  
+|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> Klasse<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> Klasse<br /><br /> `C<T>`<br /><br /> Vorlagenklasse<br /><br /> `D`<br /><br /> Klasse<br /><br /> ->C\<float>|  
+|`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T>|  
   
-## Siehe auch  
- [Working with Visual C\+\+ Code \(Class Designer\)](../ide/working-with-visual-cpp-code-class-designer.md)   
- [Klassen und Strukturen](/visual-cpp/cpp/classes-and-structs-cpp)   
- [Anonyme Klassentypen](/visual-cpp/cpp/anonymous-class-types)   
- [\(NOTINBUILD\) Multiple Inheritance](http://msdn.microsoft.com/de-de/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
- [Mehrere Basisklassen](/visual-cpp/cpp/multiple-base-classes)   
- [Vorlagen](/visual-cpp/cpp/templates-cpp)
+## <a name="see-also"></a>Siehe auch  
+ [Arbeiten mit Visual C++-Code (Klassen-Designer)](../ide/working-with-visual-cpp-code-class-designer.md)   
+ [Klassen und Strukturen](/cpp/cpp/classes-and-structs-cpp)   
+ [Anonyme Klassentypen](/cpp/cpp/anonymous-class-types)   
+ [(NOTINBUILD) Mehrfache Vererbung](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
+ [Mehrere Basisklassen](/cpp/cpp/multiple-base-classes)   
+ [Vorlagen](/cpp/cpp/templates-cpp)

@@ -29,9 +29,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 7d726441c2d6953bd7b50451bec7fff05d5d71b0
-ms.openlocfilehash: 69740c73cc133e08254fc546d2b59885270725f2
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: 2a6555eb9c0a88b1533428cf2aa932b3fc4960ec
+ms.openlocfilehash: 2a92d10d4e47983de6e3f3c5b55adfcc5dc68c8a
+ms.lasthandoff: 03/30/2017
 
 ---
 
@@ -89,6 +89,11 @@ Im Beispiel oben ist Python 3.4 (32-Bit-CPython) zusammen mit den 32- und 64-Bit
 >
 > ![Erweiterte Ansicht des Fensters „Python-Umgebungen“](media/environments-expanded-view.png)
 
+> [!Note]
+> Obwohl Visual Studio die Option „system-site-packages“ beachtet, gibt es keine Möglichkeit, sie in Visual Studio zu ändern.
+
+### <a name="creating-an-environment-for-an-existing-interpreter"></a>Erstellen eine Umgebung für einen vorhandenen Interpreter
+
 Visual Studio sucht normalerweise in der Registrierung nach einem installierten Python-Interpreter. Diese Suche ist jedoch möglicherweise nicht erfolgreich, wenn der Interpreter nicht auf standardisierte Weise installiert wurde. In solchen Fällen können Sie Visual Studio wie folgt direkt auf den Interpreter verweisen:
 
 1. Wählen Sie im Fenster „Python-Umgebungen“ **+ Benutzerdefiniert** aus. Damit wird eine neue Umgebung erstellt, und die [Registerkarte **Konfigurieren**](#configure-tab) wird geöffnet, die weiter unten beschrieben wird.
@@ -100,9 +105,6 @@ Visual Studio sucht normalerweise in der Registrierung nach einem installierten 
 1. Wählen Sie **Automatisch erkennen** aus, damit Visual Studio die verbleibenden Felder ausfüllt, oder füllen Sie sie manuell aus.
 1. Wählen Sie **Übernehmen** aus, um die Umgebung zu speichern.
 1. Wenn Sie die Umgebung entfernen möchten, wählen Sie auf der Registerkarte **Konfigurieren** den Befehl **Entfernen** aus.
-
-> [!Note]
-> Obwohl Visual Studio die Option „system-site-packages“ beachtet, gibt es keine Möglichkeit, sie in Visual Studio zu ändern.
 
 ### <a name="overview-tab"></a>Registerkarte „Übersicht“
 
