@@ -5,7 +5,7 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 03/07/2017
+ms.date: 04/06/2017
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -32,9 +32,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 8163a0e1230712734936b7548bef1753ee0c1d2a
-ms.openlocfilehash: c7fb39d5a9c39f5436c9f3953cc2783409eeb3be
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: 47c39bd711b69efdb863d71f11e3e472054a3ce3
+ms.openlocfilehash: 6b981d8ec1594da3db8fa1384ddeeee9da519837
+ms.lasthandoff: 04/06/2017
 
 ---
 
@@ -58,21 +58,24 @@ Weitere Informationen zur Verwendung dieser IDs finden Sie auf der Seite [Verwen
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
-Komponenten-ID | Name | Abhängigkeitstyp
---- | --- | ---
-Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | Erforderlich
+Komponenten-ID | Name | Version | Abhängigkeitstyp
+--- | --- | --- | ---
+Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.0.26208.0 | Erforderlich
+
 ## <a name="unaffiliated-components"></a>Nicht zugeordnete Komponenten
 
 Dies sind Komponenten, die in keiner Arbeitsauslastung enthalten sind, jedoch als einzelne Komponenten ausgewählt werden können.
 
-Komponenten-ID | Name
---- | ---
-n/v | n/v
+Komponenten-ID | Name | Version
+--- | --- | ---
+n/v | nicht verfügbar | n/v
+
 
 ## <a name="see-also"></a>Siehe auch
 
 * [Arbeitsauslastung und Komponenten-IDs von Visual Studio](workload-and-component-ids.md)
-* [Administratorhandbuch für Visual Studio](visual-studio-administrator-guide.md)
+* [Administratorhandbuch für Visual Studio 2017 RC](visual-studio-administrator-guide.md)
 * [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+  * [Beispiele für Befehlszeilenparameter](command-line-parameter-examples.md)
 * [Erstellen einer Offlineinstallation von Visual Studio](create-an-offline-installation-of-visual-studio.md)
 

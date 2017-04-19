@@ -1,6 +1,6 @@
 ---
-title: Arbeitsauslastungs- und Komponenten-IDs in Visual Studio Test Controller 2017 | Microsoft-Dokumentation
-description: Verwenden Sie Arbeitsauslastungs- und Komponenten-IDs in Visual Studio, um automatisierte Tests auf mehrere Computer zu verteilen
+title: Arbeitsauslastungs- und Komponenten-IDs in Visual Studio Team Explorer 2017 | Microsoft-Dokumentation
+description: Verwenden Sie Arbeitsauslastungs- und Komponenten-IDs in Visual Studio, um Generalisten beim Testen integrierte Testtools bereitzustellen
 keywords: 
 author: TerryGLee
 ms.author: tglee
@@ -15,7 +15,7 @@ ms.prod: visual-studio-dev15
 ms.service: 
 ms.technology:
 - vs-ide-install
-ms.assetid: fbbda9c8-d2c6-474d-b52d-a95227d52fe7
+ms.assetid: c6ef9a3b-d13d-49b4-9faa-51fa06b21e1f
 translation.priority.ht:
 - de-de
 - es-es
@@ -32,17 +32,17 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 47c39bd711b69efdb863d71f11e3e472054a3ce3
-ms.openlocfilehash: 9c219b6f1076339679fa5a4a7f3dc8cb011ae3f6
-ms.lasthandoff: 04/06/2017
+ms.sourcegitcommit: 293d694cfff4c375b342d8322483c84fbbeb446c
+ms.openlocfilehash: 7a4538f04e18630da5adeb8189716a5ac34f3c47
+ms.lasthandoff: 04/07/2017
 
 ---
 
-# <a name="visual-studio-test-controller-2017-component-directory"></a>Visual Studio Test Controller 2017-Komponentenverzeichnis
+# <a name="visual-studio-team-explorer-2017-component-directory"></a>Visual Studio Team Explorer 2017: Komponentenverzeichnis
 
 In den Tabellen auf dieser Seite sind die IDs aufgeführt, die Sie verwenden können, um Visual Studio über die Befehlszeile zu installieren. Beachten Sie, dass weitere Komponenten hinzugefügt werden, wenn wir Updates für Visual Studio veröffentlichen.
 
-Beachten Sie zudem Folgendes im Hinblick auf die Seite:
+Beachten Sie zudem Folgendes im Hinblick auf diese Seite:
 
 * Für jede Arbeitsauslastung gibt es einen eigenen Abschnitt, gefolgt von der Arbeitsauslastungs-ID und einer Tabelle der Komponenten, die für die Arbeitsauslastung zur Verfügung stehen.
 * Die **erforderlichen** Komponenten werden standardmäßig bei der Installation der Arbeitsauslastung installiert. Bei Bedarf können Sie auch die **empfohlenen** und **optionalen** Komponenten installieren.
@@ -50,17 +50,17 @@ Beachten Sie zudem Folgendes im Hinblick auf die Seite:
 
 Weitere Informationen zur Verwendung dieser IDs finden Sie auf der Seite [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md). Eine Liste der Arbeitsauslastungs- und Komponenten-IDs für andere Produkte finden Sie auf der Seite [Arbeitsauslastungs- und Komponenten-IDs in Visual Studio 2017](workload-and-component-ids.md).
 
-## <a name="test-controller"></a>Testcontroller
+## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2017"></a>Visual Studio-Kern-Editor (in Visual Studio Team Explorer 2017 enthalten)
 
-**ID:** Microsoft.VisualStudio.Workload.TestController
+**ID:** Microsoft.VisualStudio.Workload.CoreEditor
 
-**Beschreibung:** Verteilt automatisierte Tests auf mehrere Computer.
+**Beschreibung:** Die Shell-Kernbenutzeroberfläche von Visual Studio, die syntaxfähige Codebearbeitung, Quellcodeverwaltung und Arbeitselementverwaltung bereitstellt.
 
 ### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
 Komponenten-ID | Name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
-Microsoft.VisualStudio.ComponentGroup.TestTools.TestController | Test Controller-Hauptfunktionen | 15.0.26208.0 | Erforderlich
+Microsoft.VisualStudio.Component.CoreEditor | Visual Studio-Kern-Editor | 15.0.26208.0 | Erforderlich
 ## <a name="unaffiliated-components"></a>Nicht zugeordnete Komponenten
 
 Dies sind Komponenten, die in keiner Arbeitsauslastung enthalten sind, jedoch als einzelne Komponenten ausgewählt werden können.
@@ -68,6 +68,7 @@ Dies sind Komponenten, die in keiner Arbeitsauslastung enthalten sind, jedoch al
 Komponenten-ID | Name | Version
 --- | --- | ---
 n/v | nicht verfügbar | n/v
+
 
 ## <a name="see-also"></a>Siehe auch
 
