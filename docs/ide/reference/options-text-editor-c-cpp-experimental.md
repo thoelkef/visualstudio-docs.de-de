@@ -31,15 +31,15 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
-ms.openlocfilehash: 780c643c25f0d43ec0564e43bc50d2f36f1aee79
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 47c39bd711b69efdb863d71f11e3e472054a3ce3
+ms.openlocfilehash: 889d538b732b360b475788ec6d67b47920703c73
+ms.lasthandoff: 04/06/2017
 
 ---
 # <a name="options-text-editor-cc-experimental"></a>Optionen, Text-Editor, C/C++, Experimentell
-Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ das Verhalten ändern, das mit IntelliSense und der Suchdatenbank zusammenhängt. Diese Features sind rein experimentell und werden möglicherweise in einer zukünftigen Version geändert oder komplett aus Visual Studio entfernt.  
+Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ das Verhalten ändern, das mit IntelliSense und der Suchdatenbank zusammenhängt. Diese Features sind rein experimentell und werden möglicherweise in einer zukünftigen Version geändert oder komplett aus Visual Studio entfernt. In diesem Thema werden die Optionen in Visual Studio 2017 beschrieben. Informationen zu Visual Studio 2015 finden Sie unter [Optionen, Text-Editor, C/C++, Experimentell](https://msdn.microsoft.com/library/mt591979.aspx) 
   
- Um auf diese Seite zuzugreifen, erweitern Sie im Dialogfeld **Optionen** im linken Bereich den Eintrag **Text-Editor**, erweitern Sie **C/C++**, und wählen Sie dann **Experimental**aus.  
+ Drücken Sie **STRG + Q**, um `Quick Launch` zu aktivieren, und geben Sie anschließend „experimentell“ ein, um auf diese Eigenschaftenseite zuzugreifen. Der Schnellstart findet die Seite nach den ersten Buchstaben. Sie können auch darauf zugreifen, indem Sie **Tool | Optionen** auswählen, den **Text-Editor** und **C/C++** erweitern und anschließend **Experimentell** auswählen.  
 
  Diese Features sind mit einer Visual Studio 2017-Installation verfügbar.  
   
@@ -50,7 +50,7 @@ Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ da
 Predictive IntelliSense beschränkt die Anzahl von angezeigten Ergebnissen in der Dropdownliste in IntelliSense, sodass nur für Ihren Kontext relevante Ergebnisse angezeigt werden. Wenn Sie <code>int x =</code> eingeben und das Dropdownmenü in IntelliSense aufrufen, werden Ihnen nur ganze Zahlen oder Funktionen, die ganze Zahlen zurückgeben, angezeigt. Standardmäßig ist Predictive IntelliSense deaktiviert.
 
 ## <a name="enable-faster-project-load"></a>„Schnelleres Laden von Projekten“ aktivieren
-Mit dieser Option wird das Feature „Lightweight-Lösung laden“ aktiviert. Wenn „Lightweight-Lösung laden“ aktiviert ist, lädt Visual Studio Projekte nur dann vollständig, wenn Sie sie auch tatsächlich benötigen. Für viele übliche Aufgaben, wie z.B. das Navigieren durch eine CodeBase, das Bearbeiten von Code und das Erstellen von Projekten, ist das vollständige Laden von Projekten nicht vonnöten. Wenn diese Option aktiviert ist, können Sie schneller mit diesen üblichen Aufgaben beginnen, ohne vorher auf das Laden des Projekts warten zu müssen.  
+Durch diese Option kann Visual Studio Projektdaten zwischenspeichern, damit es, wenn Sie die Projekte das nächste Mal öffnen, die zwischengespeicherten Daten abrufen kann, statt sie erneut aus den Projektdateien berechnen zu müssen. Durch zwischengespeicherte Daten kann die Projektladezeit deutlich verringert werden.  
 
 ## <a name="additional-features-in-the-visual-studio-gallery"></a>Zusätzliche Features in der Visual Studio Gallery
 Weitere Text-Editor-Features für die Visual Studio Gallery finden Sie in [dieser Liste](http://go.microsoft.com/fwlink/?LinkId=692016). Ein Beispiel ist [C++ Quick Fixes](https://visualstudiogallery.msdn.microsoft.com/be91feef-8dc3-4f7a-ac9f-f34e7ca5918f), das Folgendes unterstützt:  
