@@ -1,7 +1,7 @@
 ---
 title: Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 03/07/2017
+ms.date: 04/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -32,16 +32,16 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 2a6555eb9c0a88b1533428cf2aa932b3fc4960ec
-ms.openlocfilehash: e8ddcebccc5a8a949c75a33de6732d42134e6445
-ms.lasthandoff: 03/30/2017
+ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
+ms.openlocfilehash: 09c6971e21e48d250e3a9869860459fd8cbbb50f
+ms.lasthandoff: 04/10/2017
 
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio 2017
-Wenn Sie Visual Studio 2017 von einer Befehlszeile aus installieren, können Sie die verschiedene Befehlszeilenparameter verwenden, um die Installation zu steuern und anzupassen. Sie können von der Befehlszeile aus Folgendes tun:
-- Die Installation mit bestimmten vorab ausgewählten starten 
+Wenn Sie Visual Studio 2017 von einer Befehlszeile aus installieren, können Sie die verschiedene Befehlszeilenparameter verwenden, um die Installation zu steuern und anzupassen. Sie können über die Befehlszeile Folgendes tun:
+- Die Installation mit bestimmten vorab ausgewählten Optionen starten
 - Den Installationsprozess automatisieren
-- Einen Cache (Layout) der Installationsdateien für den späteren Gebrauch erstellen 
+- Einen Cache (Layout) der Installationsdateien für den späteren Gebrauch erstellen
 
 Die Befehlszeilenoptionen werden in Verbindung mit dem Setup-Bootstrapper, die kleine Datei (ca. 1 MB), die den Downloadprozess initiiert, verwendet. Der Bootstrapper ist die erste ausführbare Datei, die gestartet wird, wenn Sie von der Visual Studio-Website herunterladen. Sie können einen direkten Link auf den neuesten Release-Bootstrapper für die Produktversion abrufen, die Sie über diese Links installieren:
 
@@ -54,11 +54,12 @@ Die Befehlszeilenoptionen werden in Verbindung mit dem Setup-Bootstrapper, die k
 
 >  Syntax: `vs_enterprise.exe [command] <options>...`
 
-(ersetzen Sie `vs_enterprise.exe` nach Bedarf mit der Produktversion, die Sie installieren)
+(Ersetzen Sie `vs_enterprise.exe` nach Bedarf mit der Produktversion, die Sie installieren) Beispiele finden Sie auf der Seite [Beispiele für Befehlszeilenparameter](command-line-parameter-examples.md).)
+
 
 | **Befehl** | **Beschreibung** |
-| ----------------------- | --------------- | 
-| (leer) | Installiert das Produkt. | 
+| ----------------------- | --------------- |
+| (leer) | Installiert das Produkt. |
 | ```modify``` | Ändert ein installiertes Produkt. |
 | ```update``` | Aktualisiert ein installiertes Produkt. |
 | ```repair``` | Repariert ein installiertes Produkt. |
@@ -108,7 +109,6 @@ Eine Liste der Arbeitsauslastungs- und Komponenten-IDs, sortiert nach Visual Stu
 | de-DE | Deutsch |
 | en-US | Englisch |
 | es-ES | Spanisch |
-| cs-CZ | Tschechisch |
 | fr-FR | Französisch |
 | it-IT | Italienisch |
 | ja-JP | Japanisch |
@@ -123,17 +123,19 @@ Eine Liste der Arbeitsauslastungs- und Komponenten-IDs, sortiert nach Visual Stu
 
 ## <a name="error-codes"></a>Fehlercodes
 Je nach Ergebnis des Vorgangs wird die Umgebungsvariable `%ERRORLEVEL%` auf einen der folgenden Werte festgelegt.
+
 | **Wert** | **Ergebnis** |
 | --------- | ---------- |
 | 0 | Der Vorgang wurde erfolgreich abgeschlossen. |
 | 3010 | Der Vorgang wurde erfolgreich abgeschlossen, für die Installation ist jedoch ein Neustart erforderlich, bevor sie verwendet werden kann. |
 | Andere | Es ist ein Fehler aufgetreten – Überprüfen Sie die Protokolle für weitere Informationen |
 
-Jeder Vorgang generiert mehrere Protokolldateien im `%TEMP%`-Verzeichnis, die den Status der Installation angeben. Sortieren Sie die Ordner nach Datum, und suchen Sie Dateien für jeweils den Bootstrapper, die Installer-App und das Setupmodul, die mit `dd_bootstrapper`, `dd_client` und `dd_setup` beginnen. 
+Jeder Vorgang generiert mehrere Protokolldateien im `%TEMP%`-Verzeichnis, die den Status der Installation angeben. Sortieren Sie die Ordner nach Datum, und suchen Sie Dateien für jeweils den Bootstrapper, die Installer-App und das Setupmodul, die mit `dd_bootstrapper`, `dd_client` und `dd_setup` beginnen.
 
 ## <a name="see-also"></a>Siehe auch
 
- * [Installieren von Visual Studio](install-visual-studio.md)
+ * [Installieren von Visual Studio 2017](install-visual-studio.md)
  * [Erstellen einer Offlineinstallation von Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
- * [Melden eines Problems mit Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
+ * [Beispiele für Befehlszeilenparameter für die Installation von Visual Studio 2017](command-line-parameter-examples.md)
+ * [Melden eines Problems mit Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
 

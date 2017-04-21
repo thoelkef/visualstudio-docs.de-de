@@ -1,7 +1,7 @@
 ---
 title: Aktualisieren von Visual Studio 2017 | Microsoft-Dokumentation
 description: "Erfahren Sie Schritt für Schritt, wie Sie Visual Studio aktualisieren."
-ms.date: 04/05/2017
+ms.date: 04/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -32,9 +32,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 4e33dc3ebb32569b547aa9bcb6db9a15dbe4fc21
-ms.openlocfilehash: 24c955a8c571ab0466f33de4d61fd8e65f8ef18c
-ms.lasthandoff: 04/05/2017
+ms.sourcegitcommit: 47c39bd711b69efdb863d71f11e3e472054a3ce3
+ms.openlocfilehash: d97358681ba486d75b30d59da1aba8b460c6f757
+ms.lasthandoff: 04/06/2017
 
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Aktualisieren Sie Visual Studio 2017 auf die neueste Version
@@ -47,13 +47,15 @@ Wir aktualisieren Visual Studio häufig, um die Funktionalität zu erweitern und
 
   Klicken oder tippen Sie auf das Benachrichtigungssymbol zum Öffnen des **Benachrichtigungshubs**.
 
-  ![Aktualisieren von Visual Studio 2017 mithilfe des Benachrichtigungshub](media/notification-center.png "Der Benachrichtigungshub in Visual Studio")
+  ![Aktualisieren von Visual Studio 2017 mithilfe des Benachrichtigungshub](media/notifications-hub.png "Der Benachrichtigungshub in Visual Studio")
 
-  Anschließend klicken oder tippen Sie auf **"Visual Studio Update" is available** („Visual Studio-Update“ steht zur Verfügung), um das Dialogfeld **Erweiterungen und Updates** zu öffnen.
+2. Klicken oder tippen Sie auf **"Visual Studio Update" is available** („Visual Studio-Update“ steht zur Verfügung), womit das Dialogfeld **Erweiterungen und Updates** geöffnet wird.
 
-  ![Aktualisieren von Visual Studio 2017 mithilfe des Benachrichtigungshubs](media/notification-extension-and-updates.png "Das Dialogfeld „Erweiterungen und Updates“ in Visual Studio")
+  ![Aktualisieren von Visual Studio 2017 mithilfe des Benachrichtigungshub](media/notifications-hub-select.png "Der Benachrichtigungshub in Visual Studio")
 
-2. Klicken oder tippen Sie auf die **Update**-Schaltfläche.
+3. Klicken oder tippen Sie im Dialgofeld **Erweiterungen und Aktualisierungen** auf die Schaltfläche **Update**.
+
+  ![Aktualisieren von Visual Studio 2017 mithilfe des Benachrichtigungshubs](media/notifications-extensions-and-updates.png "Das Dialogfeld „Erweiterungen und Updates“ in Visual Studio")
 
 ## <a name="update-by-using-the-visual-studio-installer"></a>Aktualisieren mithilfe des Installers für Visual Studio
 1.    Öffnen Sie den Installer. Möglicherweise müssen Sie den Installer aktualisieren, bevor Sie fortfahren. Ist dies der Fall, werden Sie dazu aufgefordert.
@@ -62,7 +64,9 @@ Wir aktualisieren Visual Studio häufig, um die Funktionalität zu erweitern und
 
 2.    Auf der **Produkt**-Seite im Installer suchen Sie nach der Edition von Visual Studio, die Sie installiert haben.
 
-3.    Wenn ein Update verfügbar ist, sehen Sie eine Schaltfläche **Update**. (Es kann einige Sekunden dauern, bis der Installer bestimmen kann, ob ein Update verfügbar ist.) Klicken oder tippen Sie auf die **Update**-Schaltfläche, um die Updates zu installieren.
+3.    Wenn ein Update verfügbar ist, sehen Sie eine Schaltfläche **Update**. (Es kann einige Sekunden dauern, bis der Installer bestimmen kann, ob ein Update verfügbar ist.)
+
+  Klicken oder tippen Sie auf die **Update**-Schaltfläche, um die Updates zu installieren.
 
      ![Aktualisieren von Visual Studio 2017 mithilfe des Visual Studio-Installers](media/update-visual-studio.png "Aktualisieren von Visual Studio 2017 mithilfe des Installers für Visual Studio")
 
@@ -71,7 +75,8 @@ Manchmal kann etwas schiefgehen. Wenn die Installation von Visual Studio fehlsch
 
 ## <a name="see-also"></a>Siehe auch
 * [Installieren von Visual Studio 2017](https://go.microsoft.com/fwlink/?linkid=833223)
-* [Ändern von Visual Studio](modify-visual-studio.md)
+* [Ändern von Visual Studio 2017 RC](modify-visual-studio.md)
 * [Deinstallieren von Visual Studio 2017](uninstall-visual-studio.md)
+* [Administratorhandbuch für Visual Studio 2017](visual-studio-administrator-guide.md)
 * [Melden eines Problems mit Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
 
