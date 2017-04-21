@@ -1,7 +1,7 @@
 ---
 title: "Vorlage für Azure Cloud Services-Projekte für Python | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 4/10/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -29,15 +29,15 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 10ea76d474d96ba4b5aa95584fd1893abe05d991
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
+ms.openlocfilehash: 5dd1c40c925327c9494e3a334cdf348692a4981d
+ms.lasthandoff: 04/10/2017
 
 ---
 
 # <a name="azure-cloud-service-projects-for-python"></a>Azure Cloud Services-Projekte für Python
 
-Python-Tools für Visual Studio (PTVS) enthalten Vorlagen, die Ihnen bei der Verwendung von Azure Cloud Services mithilfe von Python helfen.
+Visual Studio enthält Vorlagen, die Ihnen bei der Verwendung von Azure Cloud Services mithilfe von Python helfen.
 
 Ein [Clouddienst](http://go.microsoft.com/fwlink/?LinkId=306052) besteht aus einer beliebigen Anzahl von *Workerrollen* und *Webrollen*, von denen jede eine konzeptionell gesonderte Aufgabe ausführt und nach Skalierungsbedarf separat über virtuelle Computer repliziert werden kann. Webrollen bieten das Hosting für Front-End-Webanwendungen. Im Zusammenhang mit Python kann jedes Webframework, das WSGI unterstützt, zum Schreiben einer solchen Anwendung verwendet werden (wie von der [Webprojektvorlage](template-web.md) unterstützt). Workerrollen sind für lang andauernde Prozesse vorgesehen, die nicht direkt mit den Benutzern interagieren. Sie nutzen in der Regel die Bibliotheken mit [Daten](http://go.microsoft.com/fwlink/?LinkId=401571) und [Anwendungsdiensten](http://go.microsoft.com/fwlink/?LinkId=401572), die mit `pip install`&nbsp;[`azure`](http://pypi.org/project/azure) installiert werden können.
 
@@ -58,7 +58,7 @@ Dieses Thema enthält Details über die Projektvorlage und sonstige Unterstützu
 
 1. Nachdem Sie dem Projekt eine neue Rolle hinzugefügt haben, sehen Sie einige Konfigurationsanweisungen. Diese sind in der Regel nicht erforderlich, können aber für die zukünftige Anpassung Ihrer Projekte hilfreich sein. Beachten Sie, dass nur die Anweisungen für die letzte Rolle geöffnet bleiben, wenn Sie mehrere Rollen gleichzeitig hinzufügen. Sie finden jedoch Anweisungen und Tipps zur Problembehandlung für die anderen Rollen in den jeweiligen `readme.mht`-Dateien, die sich im Stammverzeichnis der Rolle oder im Ordner `bin` befinden.
 
-1. Der Ordner `bin` eines Projekts enthält auch ein oder zwei PowerShell-Skripts, die verwendet werden, um die virtuellen Remotecomputer zu konfigurieren. Dies umfasst die Installation von Python, [requirements.txt](#requirementstxt)-Dateien in Ihrem Projekt und bei Bedarf die Einrichtung von IIS. Sie können diese Dateien nach Bedarf für Ihre Bereitstellung bearbeiten. Allerdings können die am häufigsten verwendeten Optionen auf andere Weise verwaltet werden (siehe [Konfigurieren der Rollenbereitstellung](#configuring-role-deployment) weiter unten). Es empfiehlt sich nicht, diese Dateien zu entfernen, da ein älteres Konfigurationsskript verwendet wird, wenn sie nicht verfügbar sind.
+1. Der Ordner `bin` eines Projekts enthält auch ein oder zwei PowerShell-Skripts, die verwendet werden, um die virtuellen Remotecomputer zu konfigurieren. Dies umfasst die Installation von Python, [requirements.txt](#dependencies)-Dateien in Ihrem Projekt und bei Bedarf die Einrichtung von IIS. Sie können diese Dateien nach Bedarf für Ihre Bereitstellung bearbeiten. Allerdings können die am häufigsten verwendeten Optionen auf andere Weise verwaltet werden (siehe [Konfigurieren der Rollenbereitstellung](#configuring-role-deployment) weiter unten). Es empfiehlt sich nicht, diese Dateien zu entfernen, da ein älteres Konfigurationsskript verwendet wird, wenn sie nicht verfügbar sind.
 
     ![Unterstützungsdateien für Workerrollen](media/template-azure-cloud-service-worker-role-support-files.png)
 

@@ -1,7 +1,7 @@
 ---
-title: "Symbole für das Debuggen im gemischten Modus mit Python Tools für Visual Studio | Microsoft-Dokumentation"
+title: "Symbole für den gemischten Python-C++-Debugmodus in Visual Studio | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 4/4/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -29,41 +29,60 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 9f7ba91262875344ded1e09277883abff292f359
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: adf122a478b29674dc2924dcf7d42972a5a3f52e
+ms.openlocfilehash: b8bf362f506255c09468934f01a7beeef3a632dd
+ms.lasthandoff: 04/10/2017
 
 ---
 
 # <a name="installing-debugging-symbols-for-python-interpreters"></a>Installieren von Debugsymbolen für Python-Interpreter
 
-Um ein vollständiges Debuggen zu ermöglichen, muss der [Debugger für den gemischten Modus](debugging-mixed-mode.md) in Python Tools für Visual Studio (PTVS) zahlreiche interne Datenstrukturen im verwendeten Python-Interpreter analysieren. Dazu sind Debugsymbole für den Interpreter selbst erforderlich. Die entsprechende Symboldatei für „python27.dll“ beispielsweise ist „python27.pdb“.
+Um ein vollständiges Debuggen zu ermöglichen, muss der [Python-Debugger für den gemischten Modus](debugging-mixed-mode.md) in Visual Studio zahlreiche interne Datenstrukturen im verwendeten Python-Interpreter analysieren. Dazu sind Debugsymbole für den Interpreter selbst erforderlich. Für python27.dll ist die entsprechende Symboldatei zum Beispiel python27.pdb, und für python36.dll ist die Symboldatei python36.pdb. Jede Version des Interpreters bietet auch Symboldateien für eine Vielzahl von Modulen.
 
-Wenn PTVS erkennt, dass Symbole benötigt werden, werden Sie dazu aufgefordert, entweder einen Pfad zum Ordner mit Symboldateien anzugeben oder die Symbole herunterzuladen:
+Mit Visual Studio 2017 installieren die Interpreter „Python 3“ und „Anaconda 3“ automatisch die entsprechenden Symbole, und Visual Studio findet diese automatisch. Für Visual Studio 2015 und frühere Versionen oder bei Verwendung anderer Interpreter müssen Sie Symbole separat herunterladen und dann Visual Studio über das Dialogfeld **Tools > Optionen** in der Registerkarte **Debuggen > Symbole** darauf aufmerksam machen. Diese Schritte werden in den folgenden Abschnitten ausführlich beschrieben.
 
-![Aufforderung zum Bereitstellen von Symbolen beim Debuggen im gemischten Modus](media/mixed-mode-debugging-symbols-required.png) 
+Visual Studio fordert Sie möglicherweise zur Eingabe auf, wenn diese Symbole benötigt werden. In der Regel ist dies beim Starten einer Debugsitzung im gemischten Modus der Fall. In diesem Fall wird ein Dialogfeld mit zwei Optionen angezeigt:
 
-Sie können Symboldateien aus der [offiziellen Distribution](#official-distribution) oder von [Enthought Canopy](#enthought-canopy) herunterladen, wie im Folgenden beschrieben. Wenn Sie die Python-Distribution eines Drittanbieters wie z.B. ActiveState Python verwenden, müssen Sie sich an die Autoren dieser Distribution wenden und sie um die Symbole bitten. (WinPython dagegen enthält den Python-Standardinterpreter in unveränderter Form, verwenden Sie dafür also die Symbole der offiziellen Distribution für die entsprechende Versionsnummer.)
+- Über **Dialogfeld mit Symboleinstellungen öffnen** wird das Dialogfeld **Optionen** der Registerkarte **Debuggen > Symbole** geöffnet.
+- Über **Symbole für meinen Interpreter herunterladen** wird diese aktuelle Dokumentationsseite geöffnet. Wählen Sie in diesem Fall **Tools > Optionen** aus, und navigieren Sie zur Registerkarte **Debuggen > Symbole**, um fortzufahren.
 
-Nachdem Sie die PDB-Dateien für Ihren Interpreter erhalten haben, stellen Sie diese auf folgende Weise für PTVS zur Verfügung, sodass sie zu Beginn einer Debugsitzung automatisch geladen werden:
+    ![Aufforderung für Debugsymbole im gemischten Modus](media/mixed-mode-debugging-symbols-required.png)
 
-1. Wählen Sie den Menübefehl **Tools > Optionen**, und navigieren Sie dann zu **Debuggen > Symbole**:
+## <a name="downloading-symbols"></a>Symbole werden heruntergeladen.
 
-![Symboloptionen für den Debugger im gemischten Modus](media/mixed-mode-debugging-symbols.png)
+- Python 3.5 und höher: Debugsymbole über das Python-Installationsprogramm erhalten. Wählen Sie **Benutzerdefinierte Installation** und **Weiter**, um zu **Erweiterte Optionen** zu gelangen, und aktivieren Sie dann die Kontrollkästchen für **Debugsymbole herunterladen** und **Debugbinärdateien herunterladen**:
 
-1. Wählen Sie auf der Symbolleiste die Schaltfläche „Hinzufügen“ (im obigen Screenshot die zweite Schaltfläche von links, direkt neben dem Ausrufezeichen), navigieren Sie zum Ordner mit den PDB-Dateien, und wählen Sie **OK** aus.
+    ![Installationsprogramm für Python 3.x mit Debugsymbolen](media/mixed-mode-debugging-symbols-installer35.png)
 
+    Die Symboldateien (`.pdb`) befinden sich dann im Stammordner für die Installation (Symboldateien für einzelne Module befinden sich auch im `DLLs`-Ordner). Aus diesem Grund werden sie von Visual Studio automatisch gefunden, und es sind keine weiteren Schritte erforderlich.
 
-## <a name="official-distribution"></a>Offizielle Distribution
+- Python 3.4.x und früher: Symbole sind als herunterladbare ZIP-Dateien aus [Offizielle Distributionen](#official-distributions) oder [Enthought Canopy](#enthought-canopy) verfügbar, wie unten beschrieben. Extrahieren Sie nach dem Download die Dateien in einen lokalen Ordner, z.B. in einen `Symbols`-Ordner im Python-Ordner.
 
-In Python 3.5 und höher können Sie Debugsymbole über das Installationsprogramm einschließen (sowohl bei neuen als auch bei vorhandenen Installationen). Wählen Sie **Benutzerdefinierte Installation** und **Weiter**, um zu **Erweiterte Optionen** zu gelangen, und wählen Sie dann die Felder für **Debugsymbole herunterladen**und**Debugbinärdateien herunterladen**:
+    > [!Important]
+    > Symbole unterscheiden sich zwischen kleineren Builds von Python sowie zwischen 32- und 64-Bit-Builds, weshalb die Versionen genau übereinstimmen sollten. Erweitern Sie den *Knoten* **Python-Umgebungen** unterhalb des Projekts im Projektmappen-Explorer, und beachten Sie den Umgebungsnamen, um zu überprüfen, welcher Interpreter verwendet wird. Wechseln Sie dann zum *Fenster* **Python-Umgebungen**, und beachten Sie den Speicherort für die Installation. Öffnen Sie dann ein Befehlsfenster an diesem Speicherort, und starten Sie `python.exe`, wodurch die genaue Version angezeigt wird sowie ob es sich um einen 32- oder 64-Bit-Build handelt.
 
-![Installationsprogramm für Python 3.x mit Debugsymbolen](media/mixed-mode-debugging-symbols-installer35.png)
+- Bei jeder anderen Python-Distribution eines Drittanbieters wie z.B. ActiveState Python müssen Sie sich an die Autoren dieser Distribution wenden und sie um die Symbole bitten. WinPython dagegen enthält den Python-Standardinterpreter in unveränderter Form. Verwenden Sie dafür also die Symbole der offiziellen Distribution für die entsprechende Versionsnummer.
 
-Für Python 3.4.x und früher sind Symbole als herunterladbare ZIP-Dateien verfügbar. Extrahieren Sie diese Dateien nach dem Herunterladen in einen Ordner, und folgen Sie den Anweisungen im vorherigen Abschnitt, um sie bei PTVS zu registrieren.
+## <a name="pointing-visual-studio-to-the-symbols"></a>Visual Studio auf die Symbole aufmerksam machen
+
+Wenn Sie Symbole separat heruntergeladen haben, führen Sie folgende Schritte aus, um Visual Studio auf sie aufmerksam zu machen. Wenn Sie Symbole mit dem Installationsprogramm von Python 3.5 oder höher installiert haben, werden sie von Visual Studio automatisch gefunden.
+
+1. Wählen Sie das Menü **Tools > Optionen** aus, und navigieren Sie zu **Debuggen > Symbole**.
+    
+1. Klicken Sie auf die Schaltfläche „Hinzufügen“ auf der Symbolleiste (siehe unten), geben Sie den Ordner an, in dem Sie die heruntergeladenen Symbole erweitert haben (in dem sich `python.pdb` befindet, also z.B. `c:\python34\Symbols` wie unten gezeigt), und klicken Sie auf **OK**. 
+
+    ![Symboloptionen für den Debugger im gemischten Modus](media/mixed-mode-debugging-symbols.png)
+
+1. Während einer Debugsitzung werden Sie von Visual Studio möglicherweise auch aufgefordert, den Speicherort einer Quelldatei für den Python-Interpreter anzugeben. Wenn Sie diese heruntergeladen haben (z.B. von [python.org/downloads](https://www.python.org/downloads)), können Sie natürlich auch diese angeben.
+
+> [!Note]
+> Die Funktionen zum Zwischenspeichern von Symbolen im Dialogfeld werden verwendet, um einen lokalen Cache für Symbole zu erstellen, die von einer Onlinequelle bezogen wurden. Diese Funktionen werden für die Symbole des Python-Interpreters nicht benötigt, da Sie diese bereits lokal heruntergeladen haben. In jedem Fall finden Sie weitere Informationen unter [Specify Symbols and Source Files in the Visual Studio Debugger (Angeben von Symbolen und Quelldateien im Visual Studio-Debugger)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+
+## <a name="official-distributions"></a>Offizielle Distributionen
 
 | Python-Version | Downloads | 
 | --- | --- | 
+| 3.5 und höher | Installieren Sie Symbole mit dem Python-Installationsprogramm. | 
 | 3.4.4 | [32 Bit](https://www.python.org/ftp/python/3.4.4/python-3.4.4-pdb.zip) - [64 Bit](https://www.python.org/ftp/python/3.4.4/python-3.4.4.amd64-pdb.zip) |
 | 3.4.3 | [32 Bit](https://www.python.org/ftp/python/3.4.3/python-3.4.3-pdb.zip) - [64 Bit](https://www.python.org/ftp/python/3.4.3/python-3.4.3.amd64-pdb.zip) |
 | 3.4.2 | [32 Bit](https://www.python.org/ftp/python/3.4.2/python-3.4.2-pdb.zip) - [64 Bit](https://www.python.org/ftp/python/3.4.2/python-3.4.2.amd64-pdb.zip) |

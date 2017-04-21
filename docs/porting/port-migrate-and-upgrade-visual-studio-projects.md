@@ -39,9 +39,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: 5951e9c6b61e1cb868d792a5aee9389235cfef30
-ms.openlocfilehash: 533294abad4df8e0c782bbf5d0f98d93e661f406
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: 7c10c85c6bb6a300a117cd4a08cf80280cb431db
+ms.openlocfilehash: 16458816633f954da30b8ca78ff6f6ae0f2fced5
+ms.lasthandoff: 04/11/2017
 
 ---
 # <a name="port-migrate-and-upgrade-visual-studio-projects"></a>Übertragung, Migration und Upgrade der Visual Studio-Projekte
@@ -76,6 +76,7 @@ In der folgenden Liste wird die Unterstützung in Visual Studio 2017 für Projek
 | SharePoint 2010 | Wenn ein SharePoint-Projektmappenprojekt mit Visual Studio 2017 geöffnet wird, wird es entweder auf SharePoint 2013 oder SharePoint 2016 aktualisiert. Die Arbeitsauslastung „.NET-Desktopentwicklung“ muss für die Aktualisierung in Visual Studio 2017 installiert werden.<br/><br/>Weitere Informationen zum Aktualisieren von SharePoint-Projekten finden Sie unter [Upgrade auf SharePoint 2013](https://technet.microsoft.com/en-us/library/cc303420.aspx), [Aktualisieren von Workflows in SharePoint Server 2013](https://technet.microsoft.com/en-us/library/dn133867.aspx) und [Erstellen einer SharePoint 2016-Farm für ein Upgrade einer Datenbankanfügung](https://technet.microsoft.com/en-us/library/cc263026(v=office.16).aspx). |
 | SharePoint 2016 | In Office Developer Tools Preview 2 erstellte SharePoint-Add-In-Projekte können nicht in Visual Studio 2017 geöffnet werden. Um dieses Problem zu umgehen, müssen Sie in der `.csproj`- oder `.vbproj`-Datei `MinimumVisualStudioVersion` auf 12.0 und `MinimumOfficeToolsVersion` auf 12.2 aktualisieren. |
 | Silverlight | Silverlight-Projekte werden in Visual Studio 2017 nicht unterstützt. Um Silverlight-Anwendungen zu verwalten, verwenden Sie weiterhin Visual Studio 2015. |
+| SQL Server Reporting Services, SQL Server Analysis Services (SSDT, SSAS, MSAS, SSDT) | Unterstützung für diese Projekttypen wird über zwei Erweiterungen in der Visual Studio Gallery bereitgestellt: [Microsoft Analysis Services-Modellierungsprojekte](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) und [Microsoft-Berichtsprojekte für Visual Studio](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio). |
 | Visual C++ | Sie können Visual Studio 2017 verwenden, um Projektmappen und Projekte zu öffnen, die unverändert in Visual Studio 2015 erstellt wurden. Projekte, die in älteren Versionen von Visual Studio erstellt wurden, benötigen möglicherweise ein Upgrade des Projekts oder die Neuausrichtung an ein neueres Toolset zum Erstellen mit Visual Studio 2017. Weitere Informationen finden Sie unter [Vorgehensweise: Upgrade von Visual C++-Projekten auf Visual Studio 2015](https://msdn.microsoft.com/en-us/library/hh690665.aspx) und [Visual C++-Handbuch: Portieren und Aktualisieren](https://msdn.microsoft.com/en-us/library/dn986839.aspx). |
 | Visual Studio-Erweiterbarkeit/VSIX | Projekte mit dem Element MinimumVersion 14.0 oder weniger werden aktualisiert, um das Element MinimumVersion 15.0 zu deklarieren. Dadurch wird verhindert, dass das Projekt in früheren Versionen von Visual Studio geöffnet werden kann. Damit Sie ein Projekt in früheren Versionen öffnen können, legen Sie MinimumVersion auf `$(VisualStudioVersion)` fest. Weitere Informationen finden Sie unter [Vorgehensweise: Migrieren von Erweiterungsprojekten zu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
 | Visual Studio Lab Management | Sie können Microsoft Test Manager oder Visual Studio 2010 SP1 und höher verwenden, Umgebungen zu öffnen, die in einer dieser Versionen erstellt wurden. Allerdings muss die Version für Visual Studio 2010 SP1 von Microsoft Test Manager mit der Version von Team Foundation Server übereinstimmen, bevor Sie Umgebungen erstellen können. |
