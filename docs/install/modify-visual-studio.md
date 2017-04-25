@@ -2,7 +2,7 @@
 title: "Ändern von Visual Studio 2017 | Microsoft-Dokumentation"
 description: "Erfahren Sie Schritt für Schritt, wie Sie Visual Studio ändern."
 ms.custom: H1Hack27Feb2017
-ms.date: 04/03/2017
+ms.date: 04/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -34,9 +34,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: af9699b63fdfb81a274affb78856817520c38b05
-ms.openlocfilehash: d1da76eee8295865740720e8575e7258b3719e7e
-ms.lasthandoff: 04/03/2017
+ms.sourcegitcommit: 47c39bd711b69efdb863d71f11e3e472054a3ce3
+ms.openlocfilehash: dc52353b476d38b7c069aa4acd95ceaa260717c4
+ms.lasthandoff: 04/06/2017
 
 ---
 # <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Ändern von Visual Studio 2017 durch Hinzufügen oder Entfernen von Arbeitsauslastungen und Komponenten
@@ -77,6 +77,7 @@ Manchmal kann etwas schiefgehen. Wenn die Installation von Visual Studio fehlsch
 
 ## <a name="see-also"></a>Siehe auch  
 * [Installieren von Visual Studio 2017](https://go.microsoft.com/fwlink/?linkid=833223)
+* [Aktualisieren von Visual Studio](update-visual-studio.md)
 * [Deinstallieren von Visual Studio 2017](uninstall-visual-studio.md)
 * [Melden eines Problems mit Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
 
