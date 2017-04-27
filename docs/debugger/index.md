@@ -103,7 +103,7 @@ Mit dem Visual Studio-Debugger können Sie das Laufzeitverhalten eines Programms
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/debug-multithreaded-applications-in-visual-studio">
+        <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/get-started-debugging-multithreaded-applications">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

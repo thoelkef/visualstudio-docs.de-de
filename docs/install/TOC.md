@@ -1,4 +1,5 @@
 # [Installieren von Visual Studio](install-visual-studio.md)
+# [Aktualisieren von Visual Studio](update-visual-studio.md)
 # [Ändern von Visual Studio](modify-visual-studio.md)
 # [Deinstallieren von Visual Studio](uninstall-visual-studio.md)
 # [Administratorhandbuch für Visual Studio](visual-studio-administrator-guide.md)

@@ -29,9 +29,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 46846db26bee30841e6cb35913d533b512d01ba0
-ms.openlocfilehash: 730207e42f42c0cd5d1b78dc558e58267343d186
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
+ms.openlocfilehash: 002c77b27f7283ecd28d7ec5470b0ed44b2bb7a4
+ms.lasthandoff: 04/10/2017
 
 ---
 
@@ -45,7 +45,7 @@ Module, die in C++ (oder C#) geschrieben werden, werden häufig verwendet, um di
 
 Dieses Thema führt Sie durch die Erstellung eines C++-Erweiterungsmoduls für CPython, das einen Hyperbeltangens berechnet und diesen aus dem Python-Code abruft. Sie erstellen und testen die Routine zunächst in Python, um den Leistungsunterschied zu demonstrieren.
 
-Der Ansatz hier gilt für CPython-Standarderweiterungen, so wie in der [Python-Dokumentation](https://docs.python.org/e/c-api/) beschrieben. Ein Vergleich zwischen dieser und anderen Maßnahmen ist unter [Alternative Ansätze](#alternative-approaches) am Ende dieses Themas beschrieben.
+Der Ansatz hier gilt für CPython-Standarderweiterungen, so wie in der [Python-Dokumentation](https://docs.python.org/3/c-api/) beschrieben. Ein Vergleich zwischen dieser und anderen Maßnahmen ist unter [Alternative Ansätze](#alternative-approaches) am Ende dieses Themas beschrieben.
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
@@ -231,7 +231,7 @@ Sie können das Modul alternativ in der globalen Python-Umgebung installieren, w
 
 1. Wenn Sie Visual Studio 2017 verwenden, führen Sie den Visual Studio-Installer aus, wählen Sie **Ändern** aus und anschließend **Einzelne Komponenten > Compiler, Buildtools und Runtimes > Visual C++ 2015.3 v140-Toolset**. Der Grund dafür ist, dass Python (für Windows) selbst mit Visual Studio 2015 (Version 14.0) erstellt wurde und erwartet, dass diese Tools beim Erstellen einer Erweiterung über die hier beschriebene Methode verfügbar ist.
 
-1. Erstellen Sie eine Datei namens `setup.py` in Ihrem C++-Projekt, indem Sie mit der rechten Maustaste auf das Projekt klicken, **Hinzufügen > Neue Elemente...* auswählen, nach „Python“ suchen und**Python-Datei**auswählen. Nennen Sie diese anschließend „setup.py“, und klicken Sie auf**OK**. Wenn die Datei im Editor angezeigt wird, fügen Sie den nachstehenden Code ein:
+1. Erstellen Sie eine Datei mit dem Namen `setup.py` in Ihrem C++-Projekt, indem Sie mit der rechten Maustaste auf das Projekt klicken, *Hinzufügen > Neue Elemente...* auswählen, nach „Python“ suchen und **Python-Datei** auswählen. Nennen Sie diese „setup.py“, und klicken Sie auf **OK**. Wenn die Datei im Editor angezeigt wird, fügen Sie den nachstehenden Code ein:
 
     ```python
     from distutils.core import setup, Extension, DEBUG
@@ -284,7 +284,7 @@ Es gibt andere Methoden, um Python-Erweiterungen zu erstellen, wie in der folgen
 
 | Ansatz | Generation | Rechtsvertreter | Pro(s) | Kon(s) |
 | --- | --- | --- | --- | --- |
-| C/C++-Erweiterungsmodule für CPython | 1991 | Standardbibliothek | [Ausführliche Dokumentation und Tutorials](https://docs.python.org/e/c-api/) Vollständige Kontrolle. | Kompilierung, Portabilität, Verweisverwaltung Hohe C-Kenntnisse. |
+| C/C++-Erweiterungsmodule für CPython | 1991 | Standardbibliothek | [Ausführliche Dokumentation und Tutorials](https://docs.python.org/3/c-api/) Vollständige Kontrolle. | Kompilierung, Portabilität, Verweisverwaltung Hohe C-Kenntnisse. |
 | SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | Generieren von Bindungen gleichzeitig für mehrere Sprachen | Übermäßiger Mehraufwand, wenn Python das einzige Ziel darstellt |
 | ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | Keine Kompilierung, breite Verfügbarkeit | Unpraktisches und fehleranfälliges Zugreifen und Mutieren von C-Strukturen |
 | Cython | 2007 | [gevent](http://www.gevent.org/), [kivy](https://kivy.org/) | Python-ähnlich. Sehr fortgeschrittenen. Hohe Leistung. | Kompilierung, neue Syntax und Toolkette |

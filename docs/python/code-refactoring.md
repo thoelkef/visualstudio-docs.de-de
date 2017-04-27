@@ -1,7 +1,7 @@
 ---
-title: "Umgestalten von Code in Python Tools für Visual Studio | Microsoft-Dokumentation"
+title: Umgestalten von Python-Code in Visual Studio| Microsoft-Dokumentation
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 4/10/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -29,15 +29,15 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: b0d84db6a16861fb9554af2a644423f906784748
-ms.openlocfilehash: dc51f41277c91288c0812cb5c22f48d827d741aa
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
+ms.openlocfilehash: ea69604524010ab794a4de0e85aea1e5fd680ac4
+ms.lasthandoff: 04/10/2017
 
 ---
 
 # <a name="refactoring-python-code"></a>Umgestalten von Python-Code
 
-Python Tools für Visual Studio (PTVS) bietet verschiedene Befehle zum automatischen Transformieren und Bereinigen Ihres Quellcodes:
+Visual Studio bietet verschiedene Befehle zum automatischen Transformieren und Bereinigen Ihres Python-Quellcodes:
 
 - [Umbenennen](#rename): Benennt eine ausgewählte Klasse, Methode oder Variable um.
 - [Methode extrahieren](#extract-method): Erstellt eine neue Methode aus dem ausgewählten Code.
@@ -72,7 +72,7 @@ Python Tools für Visual Studio (PTVS) bietet verschiedene Befehle zum automatis
 
 ## <a name="add-import"></a>Import hinzufügen
 
-Wenn Sie den Textcursor in einem Bezeichner platzieren, der keine Informationen enthält, stellt PTVS ein Smarttag bereit (das Glühbirnensymbol links neben dem Code), dessen Befehle die erforderliche `import`- oder `from ... import`-Anweisung hinzufügen:
+Wenn Sie den Textcursor in einem Bezeichner platzieren, der keine Typinformationen enthält, stellt Visual Studio ein Smarttag bereit (das Glühbirnensymbol links neben dem Code), dessen Befehle die erforderliche `import`- oder `from ... import`-Anweisung hinzufügen:
 
 ![Smarttag „Import hinzufügen“](media/code-refactor-add-import-1.png)
 
@@ -80,23 +80,23 @@ Wenn Sie den Textcursor in einem Bezeichner platzieren, der keine Informationen 
 
 ![Hinzufügen eines Imports – Ergebnis](media/code-refactor-add-import-2.png)
 
-PTVS versucht, Member herauszufiltern, die nicht tatsächlich in einem Modul definiert sind, wie z.B. Module, die in ein anderes Modul importiert werden, aber keine untergeordneten Elemente des Moduls sind, das den Importvorgang ausführt. Viele Module verwenden z.B. `import sys` statt `from xyz import sys`, daher bietet PTVS keinen Abschluss beim Importieren von `sys` aus anderen Modulen, auch wenn in den Modulen ein `__all__`-Member fehlt, der `sys` ausschließt.
+Visual Studio versucht, Member herauszufiltern, die nicht tatsächlich in einem Modul definiert sind, wie z.B. Module, die in ein anderes Modul importiert werden, aber keine untergeordneten Elemente des Moduls sind, das den Importvorgang ausführt. Viele Module verwenden z.B. `import sys` statt `from xyz import sys`, daher sehen Sie keinen Abschluss beim Importieren von `sys` aus anderen Modulen, auch wenn in den Modulen ein `__all__`-Member fehlt, der `sys` ausschließt.
 
-Auf ähnliche Weise filtert PTVS Funktionen, die aus anderen Modulen oder aus dem integrierten Namespace importiert werden. Wenn ein Modul z.B. die `settrace`-Funktion aus dem `sys`-Modul importiert, könnten Sie die Funktion theoretisch aus diesem Modul importieren. Es empfiehlt sich jedoch, `import settrace from sys` direkt zu verwenden, daher bietet PTVS diese Anweisung separat an.
+Auf ähnliche Weise filtert Visual Studio Funktionen, die aus anderen Modulen oder aus dem integrierten Namespace importiert werden. Wenn ein Modul z.B. die `settrace`-Funktion aus dem `sys`-Modul importiert, könnten Sie die Funktion theoretisch aus diesem Modul importieren. Es empfiehlt sich jedoch, `import settrace from sys` direkt zu verwenden, daher bietet Visual Studio diese Anweisung separat an.
 
-Wenn ein Element aufgrund der oben genannten Regeln ausgeschlossen würde, aber andere Werte enthält, die eingeschlossen würden (weil dem Namen z.B. im Modul ein Wert zugewiesen wurde), schließt PTVS den Import trotzdem aus. Dabei wird davon ausgegangen, dass der Wert nicht exportiert werden sollte, weil er in einem anderen Modul definiert wurde und daher die zusätzliche Zuweisung wahrscheinlich einen Pseudowert erzeugt, der ebenfalls nicht exportiert wird.
+Wenn ein Element aufgrund der oben genannten Regeln ausgeschlossen würde, aber andere Werte enthält, die eingeschlossen würden (weil dem Namen z.B. im Modul ein Wert zugewiesen wurde), schließt Visual Studio den Import trotzdem aus. Dabei wird davon ausgegangen, dass der Wert nicht exportiert werden sollte, weil er in einem anderen Modul definiert wurde und daher die zusätzliche Zuweisung wahrscheinlich einen Pseudowert erzeugt, der ebenfalls nicht exportiert wird.
 
 <a name="remove-imports"</a>
 ## <a name="remove-unused-imports"></a>Nicht verwendete Importe entfernen
 
-Beim Schreiben von Code entstehen leicht `import`-Anweisungen für Module, die gar nicht verwendet werden. PTVS analysiert Ihren Code und kann daher automatisch ermitteln, ob eine `import`-Anweisung benötigt wird. Dafür prüft PTVS, ob der importierte Name in dem Geltungsbereich verwendet wird, in dem die Anweisung auftritt.
+Beim Schreiben von Code entstehen leicht `import`-Anweisungen für Module, die gar nicht verwendet werden. Visual Studio analysiert Ihren Code und kann daher automatisch ermitteln, ob eine `import`-Anweisung benötigt wird. Dafür prüft Visual Studio, ob der importierte Name in dem Geltungsbereich verwendet wird, in dem die Anweisung auftritt.
 
 Klicken Sie mit der rechten Maustaste auf eine beliebige Stelle im Editor, und wählen Sie **Importe entfernen** aus. Sie können aus den Optionen **Alle Geltungsbereiche** oder **Aktueller Geltungsbereich** auswählen:
 
 ![Menü zum Entfernen von Importen](media/code-refactor-remove-imports-1.png)
 
-PTVS nimmt dann die entsprechenden Änderungen am Code vor:
+Visual Studio nimmt dann die entsprechenden Änderungen am Code vor:
 
 ![Entfernen von Importen – Auswirkungen](media/code-refactor-remove-imports-2.png)
 
-Beachten Sie, dass PTVS keine Ablaufsteuerung berücksichtigt – die Verwendung eines Namens vor einer `import`-Anweisung wird genauso verarbeitet, als würde der Name tatsächlich verwendet. PTVS ignoriert auch alle `from __future__`-Importe, Importe, die innerhalb einer Klassendefinition ausgeführt werden, sowie Importe aus `from ... import *`-Anweisungen.
+Beachten Sie, dass Visual Studio keine Ablaufsteuerung berücksichtigt – die Verwendung eines Namens vor einer `import`-Anweisung wird genauso verarbeitet, als würde der Name tatsächlich verwendet. Visual Studio ignoriert auch alle `from __future__`-Importe, Importe, die innerhalb einer Klassendefinition ausgeführt werden, sowie Importe aus `from ... import *`-Anweisungen.

@@ -1,7 +1,7 @@
 ---
-title: "Debuggen im gemischten Modus in Python Tools für Visual Studio | Microsoft-Dokumentation"
+title: "Debuggen im gemischten Modus für Python in Visual Studio | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 4/10/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -29,9 +29,9 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
-ms.openlocfilehash: ddbac5b8ed52e6ed7afae7e7b04dc2fa15f7a0c2
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
+ms.openlocfilehash: bdc621831893f907beba7ec5ad503fe4d96c0042
+ms.lasthandoff: 04/10/2017
 
 ---
 
@@ -70,7 +70,7 @@ Eine Einführung in das Erstellen, Testen und Debuggen von nativen C-Modulen mit
 
 - [Kombinierte Aufrufliste](#combined-call-stack)
 - [Abwechselnde Einzelschrittausführung zwischen Python und nativem Code](#stepping-between-python-and-native-code)
-- [Ansicht der PyObject-Werte im nativen Code](#pyobject-values-in-native-code)
+- [Ansicht der PyObject-Werte im nativen Code](#pyobject-values-view-in-native-code)
 - [Ansicht der nativen Werte im Python-Code](#native-values-view-in-python-code)
 
 ### <a name="combined-call-stack"></a>Kombinierte Aufrufliste
@@ -153,7 +153,7 @@ Der Debugger für den gemischten Modus unterscheidet sich vom [Python-Standardde
 - Nicht unterstützte Funktionen: Bedingte Haltepunkte, Fenster zum interaktiven Debuggen und plattformübergreifendes Remotedebuggen.
 - Direktfenster: Ist verfügbar, aber mit eingeschränktem Funktionssatz – einschließlich aller hier aufgeführten Einschränkungen.
 - Unterstützte Python-Versionen: Nur CPython 2.7 und 3.3+.
-- Visual Studio Shell: Bei Verwendung von PTVS mit Visual Studio Shell (wenn Sie PTVS beispielsweise mithilfe des integrierten Installationsprogramms installiert haben) kann Visual Studio keine C++-Projekte öffnen, und für C++-Dateien stehen nur die Bearbeitungsfunktionen eines einfachen Text-Editors zur Verfügung. Das C/C++-Debuggen und das Debuggen im gemischten Modus werden in Shell jedoch vollständig unterstützt, einschließlich Quellcode, Einzelschrittausführung im nativen Code und C++-Ausdrucksauswertung in Debuggerfenstern.
+- Visual Studio Shell: Bei Verwendung von Python mit Visual Studio Shell (wenn Sie Python beispielsweise mithilfe des integrierten Installationsprogramms installiert haben) kann Visual Studio keine C++-Projekte öffnen, und für C++-Dateien stehen nur die Bearbeitungsfunktionen eines einfachen Text-Editors zur Verfügung. Das C/C++-Debuggen und das Debuggen im gemischten Modus werden in Shell jedoch vollständig unterstützt, einschließlich Quellcode, Einzelschrittausführung im nativen Code und C++-Ausdrucksauswertung in Debuggerfenstern.
 - Anzeigen und Erweitern von Objekten: Beim Anzeigen von Python-Objekten in den Toolfenstern für lokale Variablen und Überwachung zeigt der Debugger im gemischten Modus nur die Struktur der Objekte an. Es werden weder automatisch Eigenschaften ausgewertet noch berechnete Attribute angezeigt. Bei Auflistungen werden nur Elemente für integrierte Auflistungstypen angezeigt (`tuple`, `list`, `dict`, `set`). Benutzerdefinierte Auflistungstypen werden nur dann als Auflistungen visualisiert, wenn sie von einem integrierten Auflistungstyp vererbt werden.
 - Ausdrucksauswertung: Siehe oben.
 

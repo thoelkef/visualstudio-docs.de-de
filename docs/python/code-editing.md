@@ -1,7 +1,7 @@
 ---
-title: "Bearbeiten von Code in Python Tools für Visual Studio | Microsoft-Dokumentation"
+title: Bearbeiten von Python-Code in Visual Studio | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 4/10/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -29,15 +29,15 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 79d7c18b672119b745258feee0f646dff96c1922
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
+ms.openlocfilehash: 0f2ecd6ca52a04e8813610c0f406251ef4604354
+ms.lasthandoff: 04/10/2017
 
 ---
 
 # <a name="editing-python-code"></a>Bearbeiten von Python-Code
 
-Entwickler verbringen viel Zeit mit dem Code-Editor, daher bietet Python Tools für Visual Studio (PTVS) Funktionen, mit denen Entwickler produktiver arbeiten können: IntelliSense-Syntaxhervorhebung, automatische Vervollständigung, Signaturhilfe, Methodenüberschreibungen sowie Such- und Navigationsfunktionen. 
+Entwickler verbringen viel Zeit mit dem Code-Editor, daher bietet die Python-Unterstützung für Visual Studio Funktionen, mit denen Entwickler produktiver arbeiten können, darunter IntelliSense-Syntaxhervorhebung, automatische Vervollständigung, Signaturhilfe, Methodenüberschreibungen sowie Such- und Navigationsfunktionen. 
 
 In diesem Thema:
 
@@ -45,9 +45,9 @@ In diesem Thema:
 - [Codeausschnitte](#code-snippets)
 - [Navigieren im Code](#navigating-your-code)
 
-Eine allgemeine Dokumentation zur Codebearbeitung in Visual Studio finden Sie unter [Schreiben von Code im Code- und Text-Editor](../ide/writing-code-in-the-code-and-text-editor.md). Lesen Sie auch den Artikel [Gliederung in Visual Studio](../ide/outlining.md) mit Informationen dazu, wie Sie Code ein- und ausblenden, um sich auf bestimmte Abschnitte Ihres Codes zu konzentrieren. PTVS unterstützt den Visual Studio-Objektkatalog (**Ansicht > Weitere Fenster > Objektkatalog** oder STRG+W, J), um die in den einzelnen Modulen definierten Klassen und die in diesen Klassen definierten Funktionen zu überprüfen. 
+Eine allgemeine Dokumentation zur Codebearbeitung in Visual Studio finden Sie unter [Schreiben von Code im Code- und Text-Editor](../ide/writing-code-in-the-code-and-text-editor.md). Lesen Sie auch den Artikel [Gliederung in Visual Studio](../ide/outlining.md) mit Informationen dazu, wie Sie Code ein- und ausblenden, um sich auf bestimmte Abschnitte Ihres Codes zu konzentrieren. Die Python-Unterstützung umfasst den Visual Studio-Objektkatalog (**Ansicht > Weitere Fenster > Objektkatalog** oder STRG+W, J), um die in den einzelnen Modulen definierten Klassen und die in diesen Klassen definierten Funktionen zu überprüfen. 
 
-Eine Einführung in die Bearbeitung von Python-Code finden Sie in diesem Video: [Getting Started with PTVS, Part 3: Editing](https://youtu.be/uZGZNEyyeKs?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (youtube.com, 3 Minuten, 48 Sekunden):
+Eine Einführung in die Bearbeitung von Python-Code finden Sie im Video [Getting Started with Python in Visual Studio, Part 3: Editing (Erste Schritte mit Python in Visual Studio, Teil 3: Bearbeiten)](https://youtu.be/uZGZNEyyeKs?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (youtube.com, 3 Minuten 48 Sekunden):
 
 > [!VIDEO https://www.youtube.com/embed/uZGZNEyyeKs]
 
@@ -136,12 +136,12 @@ Sie können die verfügbaren Codeausschnitte im Codeausschnitt-Manager (**Tools 
 Informationen zum Erstellen eigener Codeausschnitte finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts](https://docs.microsoft.com/en-us/visualstudio/ide/walkthrough-creating-a-code-snippet).
 Codeausschnitte können angepasst werden, indem Sie [einen Codeausschnitt erstellen](https://msdn.microsoft.com/en-us/library/ms165394.aspx) und importieren. 
 
-Wenn Sie einen Codeausschnitt geschrieben haben, den Sie gerne für andere Benutzer freigeben möchten, posten Sie ihn in einem Gist, und [informieren Sie uns darüber](https://github.com/Microsoft/PTVS/issues). Möglicherweise verwenden wir den Codeausschnitt in einer zukünftigen Version von PTVS.
+Wenn Sie einen Codeausschnitt geschrieben haben, den Sie gerne für andere Benutzer freigeben möchten, posten Sie ihn in einem Gist, und [informieren Sie uns darüber](https://github.com/Microsoft/PTVS/issues). Möglicherweise verwenden wir den Codeausschnitt in einer zukünftigen Version von Visual Studio.
 
 
 ## <a name="navigating-your-code"></a>Navigieren im Code
 
-PTVS bietet verschiedene Möglichkeiten, schnell im Code zu navigieren, z.B. Bibliotheken, für die Quellcode verfügbar ist: die [Navigationsleiste](#navigation-bar), [Gehe zu Definition](#go-to-definition), [Navigieren zu](#navigate-to), [Alle Verweise suchen](#find-all-references) und den [Objektkatalog](#object-browser).
+Die Python-Unterstützung in Visual Studio bietet verschiedene Möglichkeiten, schnell im Code zu navigieren, darunter Bibliotheken, für die Quellcode verfügbar ist: die [Navigationsleiste](#navigation-bar), [Gehe zu Definition](#go-to-definition), [Navigieren zu](#navigate-to) und [Alle Verweise suchen](#find-all-references), wie unten beschrieben. Sie können auch den [Objektkatalog](../ide/viewing-the-structure-of-code.md#BKMK_ObjectBrowser) von Visual Studio verwenden.
 
 ### <a name="navigation-bar"></a>Navigationsleiste
 

@@ -2,7 +2,7 @@
 title: "Installieren von Visual Studio 2017 | Microsoft-Dokumentation"
 description: "Erfahren Sie Schritt für Schritt, wie Sie Visual Studio installieren."
 ms.custom: 
-ms.date: 04/03/2017
+ms.date: 04/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -37,9 +37,9 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 translationtype: Human Translation
-ms.sourcegitcommit: af9699b63fdfb81a274affb78856817520c38b05
-ms.openlocfilehash: 47688935cec36db174c3a0c424b1705ae47c6118
-ms.lasthandoff: 04/03/2017
+ms.sourcegitcommit: 47c39bd711b69efdb863d71f11e3e472054a3ce3
+ms.openlocfilehash: 059dd2068c5aa0d55f94f293d8430a1f401354ba
+ms.lasthandoff: 04/06/2017
 
 ---
 # <a name="install-visual-studio-2017"></a>Installieren von Visual Studio 2017
@@ -76,7 +76,7 @@ Willkommen Sie bei einer neuen Möglichkeit zur Installation von Visual Studio. 
 
 1.  Suchen Sie die gewünschten Arbeitsauslastungen im Bildschirm **Visual Studio wird installiert**.  
 
-  ![Visual Studio 2017-Setupdialogfeld](media/vs2017-workloads.PNG "Visual Studio 2017 wird installiert")
+  ![Visual Studio 2017-Setupdialogfeld](media/vs2017-workloads.PNG "Installieren von Visual Studio 2017")
 
      Wählen Sie beispielsweise die Arbeitsauslastung für .NET Desktop-Entwicklung aus. Sie wird mit dem standardmäßigen Kern-Editor bereitgestellt, der die grundlegende Codebearbeitung für über 20 Sprachen, die Möglichkeit, Code aus einem beliebigen Ordner heraus zu öffnen und zu bearbeiten, ohne dass ein Projekt erforderlich ist, und die integrierte Quellcodekontrolle unterstützt.  
 
@@ -90,7 +90,7 @@ Willkommen Sie bei einer neuen Möglichkeit zur Installation von Visual Studio. 
 
 Wenn Sie das praktische Arbeitsauslastungsfeature zum Anpassen Ihrer Visual Studio-Installation nicht verwenden möchten, klicken Sie im Visual Studio-Installer auf die Option **Einzelne Komponenten**, wählen Sie die gewünschten Komponenten aus, und folgen Sie den Anweisungen.
 
-  ![Visual Studio 2017: Installieren einzelner Komponenten](media/vs2017-workloads.PNG "Installieren einzelner Visual Studio-Komponenten")
+  ![Visual Studio 2017: Installieren einzelner Komponenten](media/vs2017-components.PNG "Installieren einzelner Visual Studio-Komponenten")
 
 ## <a name="install-language-packs"></a>Installieren von Language Packs
 
@@ -107,7 +107,10 @@ Manchmal kann etwas schiefgehen. Wenn die Installation von Visual Studio fehlsch
 
 ## <a name="see-also"></a>Siehe auch  
 * [Ändern von Visual Studio 2017 RC](modify-visual-studio.md)
+* [Visual Studio aktualisieren](update-visual-studio.md)
 * [Deinstallieren von Visual Studio 2017](uninstall-visual-studio.md)
 * [Administratorhandbuch für Visual Studio 2017 RC](visual-studio-administrator-guide.md)
+* [Erstellen eines Offlineinstallationsprogramms für Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
+* [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) 
 * [Melden eines Problems mit Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
 

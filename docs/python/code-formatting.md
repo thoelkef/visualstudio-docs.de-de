@@ -1,7 +1,7 @@
 ---
-title: "Formatieren von Code in Python Tools für Visual Studio | Microsoft-Dokumentation"
+title: Formatieren von Python-Code in Visual Studio | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 4/10/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -29,22 +29,22 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 7d726441c2d6953bd7b50451bec7fff05d5d71b0
-ms.openlocfilehash: c1d7a19438b796c5666daecef33052e43d1f720f
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
+ms.openlocfilehash: b9e1c2b6be671adb99a13e4a0eb4357fbba477b2
+ms.lasthandoff: 04/10/2017
 
 ---
 
 # <a name="formatting-python-code"></a>Formatieren von Python-Code
 
-Mithilfe der Codeformatierung in Python Tools für Visual Studio (PTVS) Version 2.0 und höher können Sie Code schnell neu formatieren, um ihn an vorkonfigurierte Formatierungsoptionen anzupassen.
+Mit Visual Studio können Sie Code schnell neu formatieren, um die vorkonfigurierten Formatierungsoptionen zu erfüllen.
 
 - Zum Formatieren von ausgewähltem Code wählen Sie **Bearbeiten > Erweitert > Auswahl formatieren** aus oder drücken STRG+E, F.
 - Um die gesamte Datei zu formatieren, wählen Sie **Bearbeiten > Erweitert > Dokument formatieren** oder drücken STRG+E, D.
 
 Optionen werden über **Tools > Optionen > Text-Editor > Python > Formatierung** und die zugehörigen untergeordneten Registerkarten festgelegt. Standardmäßig sind sie so festgelegt, dass sie einer Obermenge des [PEP 8-Styleguides](http://www.python.org/dev/peps/pep-0008/) entsprechen. Auf der Registerkarte **Allgemein** wird festgelegt, wann die Formatierung angewendet wird. Die drei weiteren untergeordneten Registerkarten werden in den folgenden Abschnitten erläutert.
 
-PTVS fügt dem Menü **Bearbeiten > Erweitert** auch den nützlichen Befehl [Kommentarabsatz ausfüllen](#fill-comment-paragraph) hinzu, wie unten beschrieben.
+Die Python-Unterstützung in Visual Studio fügt dem Menü **Bearbeiten > Erweitert** auch den nützlichen Befehl [Kommentarabsatz ausfüllen](#fill-comment-paragraph-command) hinzu, wie unten beschrieben.
 
 ## <a name="spacing"></a>Abstand
 
@@ -109,7 +109,7 @@ In den folgenden Tabellen finden Sie Beispiele für die verschiedenen Optionen.
 
 ## <a name="wrapping"></a>Umbruch
 
-Mit der Option **Umbruch** können Sie die **Maximale Breite für Kommentare** festlegen (Standardwert: 80), sodass PTVS beim Festlegen der Option **Umbruch für Kommentare, die die maximale Breite überschreiten** Kommentare neu formatiert, damit diese die Breite nicht überschreiten.
+Mit der Option **Umbruch** können Sie die **Maximale Breite für Kommentare** festlegen (Standardwert: 80), sodass Visual Studio beim Festlegen der Option **Umbruch für Kommentare, die die maximale Breite überschreiten** Kommentare neu formatiert, damit diese die Breite nicht überschreiten.
 
 ```python
 # Wrapped to 40 columns
