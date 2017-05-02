@@ -43,7 +43,7 @@ Diese Abschnitte beschreiben die Elemente, die die [!INCLUDE[javascript](../../j
   
 -   Weitere Informationen zu [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-APIs finden Sie unter [API\-Referenz für Windows\-Runtime und Windows\-Bibliothek für JavaScript](http://go.microsoft.com/fwlink/p/?LinkID=250938).  
   
- Der JavaScript\-Editor in Visual Studio bietet IntelliSense\-Unterstützung.  Weitere Informationen finden Sie unter [JavaScript IntelliSense](../Topic/JavaScript%20IntelliSense.md).  
+ Der JavaScript\-Editor in Visual Studio bietet IntelliSense\-Unterstützung.  Weitere Informationen finden Sie unter [JavaScript IntelliSense](~/ide/javascript-intellisense.md).  
   
 ## In diesem Abschnitt  
  [Versionsinformationen](../../javascript/reference/javascript-version-information.md)  

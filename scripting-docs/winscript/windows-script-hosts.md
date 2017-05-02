@@ -37,4 +37,4 @@ Wenn Sie Microsoft Windows\-Skripthost implementieren, können Sie sich davon au
  Keine dieser Einschränkungen gelten für einen Host zu, der beschreibt, wie eine Freethreadmodell [IActiveScriptSite](../winscript/reference/iactivescriptsite.md)\-Schnittstelle und ein Freethreadobjektmodell zu implementieren.  Ein solcher Host kann die [IActiveScript](../winscript/reference/iactivescript.md)\-Schnittstelle von jedem Thread, ohne Einschränkung verwenden.  
   
 ## Siehe auch  
- [\<PAVE OVER\> Microsoft Windows\-Skriptschnittstellen – Einführung](../Topic/%3CPAVE%20OVER%3E%20Microsoft%20Windows%20Script%20Interfaces%20-%20Introduction.md)
+ [\<PAVE OVER\> Microsoft Windows\-Skriptschnittstellen – Einführung](http://msdn.microsoft.com/library/3d10169f-2984-49ef-90c6-dd89c97f1dd6)

@@ -30,7 +30,7 @@ Wenn Sie eine [!INCLUDE[win8_appname_long](../javascript/includes/win8-appname-l
  Die Referenzdokumentation finden Sie unter [Windows Runtime reference](http://msdn.microsoft.com/de-de/8fe97dbf-8cd4-435f-b481-9e83d0519f9e).  Codebeispiele sind in JavaScript sowie in C\+\+, C\# und Visual Basic verfügbar.  
   
 ## Schreiben von Windows\-Runtime\-Komponenten in C\+\+, C\# oder Visual Basic  
- Informationen über Anweisungen und Richtlinien zum Schreiben von Windows\-Runtime\-Komponenten, die in JavaScript verwendet werden können, finden Sie unter [Erstellen von Windows\-Runtime\-Komponenten](../Topic/Creating%20Windows%20Runtime%20Components.md).  
+ Informationen über Anweisungen und Richtlinien zum Schreiben von Windows\-Runtime\-Komponenten, die in JavaScript verwendet werden können, finden Sie unter [Erstellen von Windows\-Runtime\-Komponenten](http://msdn.microsoft.com/library/9a6b8f0a-7d5e-40a0-a9c5-a59b4908e133).  
   
 ## Groß\-\/Kleinschreibungskonventionen in Windows\-Runtime\-Funktionen  
  Groß\-\/Kleinschreibungskonventionen für Windows\-Runtime\-Funktionen in JavaScript unterscheiden sich ein wenig von denen in anderen Sprachen:  
