@@ -1,0 +1,3 @@
+Wird im Internet Explorer 11\-Standarddokumentmodus unterstützt. Wird auch unterstützt von Apps aus dem Windows Store \(Windows 8.1\). Siehe [Versionsinformationen](../javascript/reference/javascript-version-information.md).  
+  
+ Wird in den folgenden Dokumentmodi nicht unterstützt: Quirksmodus, Internet Explorer 6\-Standardmodus, Internet Explorer 7\-Standardmodus, Internet Explorer 8\-Standardmodus, Internet Explorer 9\-Standardmodus, Internet Explorer 10\-Standardmodus. Wird in Windows 8 oder Windows Phone 8.1 nicht unterstützt.

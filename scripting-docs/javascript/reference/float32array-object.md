@@ -1,0 +1,103 @@
+---
+title: "Float32Array-Objekt | Microsoft Docs"
+ms.custom: ""
+ms.date: "01/18/2017"
+ms.prod: "windows-client-threshold"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "devlang-javascript"
+ms.tgt_pltfrm: ""
+ms.topic: "language-reference"
+dev_langs: 
+  - "JavaScript"
+  - "TypeScript"
+  - "DHTML"
+ms.assetid: 4b29456a-1488-4006-ae66-5bf4c05003b1
+caps.latest.revision: 17
+author: "mikejo5000"
+ms.author: "mikejo"
+manager: "ghogen"
+caps.handback.revision: 17
+---
+# Float32Array-Objekt
+Ein typisiertes Array von 32\-Bit\-Gleitkommawerten.  Der Inhalt wird mit 0 initialisiert.  Wenn die angeforderte Anzahl von Bytes nicht zugeordnet werden kann, wird eine Ausnahme ausgelöst.  
+  
+## Syntax  
+  
+```  
+  
+float32Array = new Float32Array( length ); float32Array = new Float32Array( array ); float32Array = new Float32Array( buffer, byteOffset, length);  
+```  
+  
+## Parameter  
+ `float32Array`  
+ Erforderlich.  Der Variablenname, dem das **Float32Array**\-Objekt zugewiesen ist.  
+  
+ `length`  
+ Gibt die Anzahl der Elemente im Array an.  
+  
+ `array`  
+ Das Array \(oder typisierte Array\), das in diesem Array enthalten ist.  Der Inhalt wird mit dem Inhalt des angegebenen Arrays oder des typisierten Arrays initialisiert, wobei jedes Element in den Float32\-Typ konvertiert wird.  
+  
+ `buffer`  
+ Das ArrayBuffer\-Objekt, das das Float32Array darstellt.  
+  
+ `byteOffset`  
+ Dies ist optional.  Gibt den Offset in Bytes vom Beginn des Puffers an, bei dem das Float32Array beginnen soll.  
+  
+ `length`  
+ Die Anzahl der Elemente im Array.  
+  
+## Konstanten  
+ In der folgenden Tabelle werden die Konstanten des `Float32Array`\-Objekts aufgelistet.  
+  
+|Konstante|Beschreibung|  
+|---------------|------------------|  
+|[BYTES\_PER\_ELEMENT\-Konstante](../../javascript/reference/bytes-per-element-constant-float32array.md)|Die Größe jedes Elements im Array in Bytes.|  
+  
+## Eigenschaften  
+ In der folgenden Tabelle werden die Konstanten des `Float32Array`\-Objekts aufgelistet.  
+  
+|Eigenschaft|Beschreibung|  
+|-----------------|------------------|  
+|[Puffereigenschaft](../../javascript/reference/buffer-property-float32array.md)|Schreibgeschützt.  Ruft den ArrayBuffer ab, auf den durch dieses Array verwiesen wird.|  
+|[byteLength\-Eigenschaft](../../javascript/reference/bytelength-property-float32array.md)|Schreibgeschützt.  Die Länge dieses Arrays vom Beginn des ArrayBuffers in Bytes, so wie bei der Konstruktion festgelegt.|  
+|[byteOffset\-Eigenschaft](../../javascript/reference/byteoffset-property-float32array.md)|Schreibgeschützt.  Der Offset dieses Arrays vom Beginn des ArrayBuffers in Bytes, so wie bei der Konstruktion festgelegt.|  
+|[Längeneigenschaft](../../javascript/reference/length-property-float32array.md)|Die Länge des Arrays.|  
+|||  
+  
+## Methoden  
+ In der folgenden Tabelle werden die Methoden des `Float32Array`\-Objekts aufgelistet.  
+  
+|Methode|Beschreibung|  
+|-------------|------------------|  
+|[Get\-Methode](../../javascript/reference/get-method-float32array.md)|Kann unterdrückt werden.  Ruft das Element am angegebenen Index ab.|  
+|[Set\-Methode \(Float32Array\)](../../javascript/reference/set-method-float32array.md)|Legt einen Wert oder ein Wertearray fest.|  
+|[subarray\-Methode \(Float32Array\)](../../javascript/reference/subarray-method-float32array.md)|Ruft eine neue Float32Array\-Ansicht des ArrayBuffer\-Speichers für dieses Array ab.|  
+  
+## Beispiel  
+ Im folgenden Beispiel wird gezeigt, wie ein Float32Array\-Objekt verwendet wird, um die von einem XmlHttpRequest abgerufenen Binärdaten zu verarbeiten:  
+  
+```javascript  
+var req = new XMLHttpRequest();  
+    req.open('GET', "http://www.example.com");  
+    req.responseType = "arraybuffer";  
+    req.send();  
+  
+    req.onreadystatechange = function () {  
+        if (req.readyState === 4) {  
+            var buffer = req.response;  
+            var dataview = new DataView(buffer);  
+            var ints = new Float32Array(buffer.byteLength / 4);  
+            for (var i = 0; i < ints.length; i++) {  
+                ints[i] = dataview.getFloat32(i * 4);  
+            }  
+        alert(ints[10]);  
+        }  
+    }  
+  
+```  
+  
+## Anforderungen  
+ [!INCLUDE[jsv10](../../includes/jsv10-md.md)]
