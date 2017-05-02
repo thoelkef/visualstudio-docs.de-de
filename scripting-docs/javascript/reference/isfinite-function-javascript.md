@@ -40,7 +40,7 @@ isFinite(number)
  Die `isFinite`\-Funktion gibt `true` zurück, wenn `number` nicht `NaN`, negativ unendlich oder positiv unendlich ist.  In diesen drei Fällen wird **false** zurückgegeben.  
   
 ## Anforderungen  
- [!INCLUDE[jsv3](../../includes/jsv3-md.md)]  
+ [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
  **Gilt für**: [Global\-Objekt](../../javascript/reference/global-object-javascript.md)  
   

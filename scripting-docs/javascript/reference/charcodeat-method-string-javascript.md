@@ -54,7 +54,7 @@ document.write(str.charCodeAt(str.length - 1));
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv55](../../includes/jsv55-md.md)]  
+ [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
 ## Siehe auch  
  [String.fromCharCode\-Funktion](../../javascript/reference/string-fromcharcode-function-javascript.md)

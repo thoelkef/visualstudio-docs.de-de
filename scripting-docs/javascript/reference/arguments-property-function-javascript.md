@@ -70,7 +70,7 @@ document.write(ArgTest(1, 2, "hello"));
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv2](../../includes/jsv2-md.md)]  
+ [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]  
   
 ## Siehe auch  
  [arguments\-Objekt](../../javascript/reference/arguments-object-javascript.md)   

@@ -73,7 +73,7 @@ var temp = ~5;
 |~5|11111111 11111111 11111111 11111010|\-6|  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## Siehe auch  
  [Logischer NOT\-Operator \(\!\)](../../javascript/reference/logical-not-operator-decrement-exclpt-javascript.md)   

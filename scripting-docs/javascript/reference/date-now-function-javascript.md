@@ -55,7 +55,7 @@ document.write("You took " + elapsed + " seconds" + " to type: " + response);
 ```  
   
 ## Anforderungen  
- Wird nicht in installierten Versionen unterstützt, die älter sind als Internet Explorer 9.  Wird jedoch in den folgenden Dokumentmodi unterstützt: Quirksmodus, Internet Explorer 6 \(Standardmodus\), Internet Explorer 7 \(Standardmodus\), Internet Explorer 8 \(Standardmodus\), Internet Explorer 9 \(Standardmodus\) und Internet Explorer 10 \(Standardmodus\).  Wird außerdem in [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]\-Apps unterstützt.  
+ Wird nicht in installierten Versionen unterstützt, die älter sind als Internet Explorer 9.  Wird jedoch in den folgenden Dokumentmodi unterstützt: Quirksmodus, Internet Explorer 6 \(Standardmodus\), Internet Explorer 7 \(Standardmodus\), Internet Explorer 8 \(Standardmodus\), Internet Explorer 9 \(Standardmodus\) und Internet Explorer 10 \(Standardmodus\).  Wird außerdem in [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-Apps unterstützt.  
   
 ## Siehe auch  
  [getTime\-Methode \(Datum\)](../../javascript/reference/gettime-method-date-javascript.md)   

@@ -34,4 +34,4 @@ mapObj.clear()
  Erforderlich.  Die zu löschende Zuordnung.  
   
 ## Anforderungen  
- [!INCLUDE[jsv11](../../includes/jsv11-md.md)]
+ [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]

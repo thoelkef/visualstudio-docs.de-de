@@ -56,7 +56,7 @@ else if (myDate == myDate.maxDate())
   
 ```  
   
- Alle systeminternen [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Objekte verfügen über eine `prototype`\-Eigenschaft, die schreibgeschützt ist.  Dem Prototyp können Eigenschaften und Methoden hinzugefügt werden, dem Objekt kann jedoch kein anderer Prototyp zugewiesen werden.  Benutzerdefinierten Objekten kann jedoch ein neuer Prototyp zugewiesen werden.  
+ Alle systeminternen [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Objekte verfügen über eine `prototype`\-Eigenschaft, die schreibgeschützt ist.  Dem Prototyp können Eigenschaften und Methoden hinzugefügt werden, dem Objekt kann jedoch kein anderer Prototyp zugewiesen werden.  Benutzerdefinierten Objekten kann jedoch ein neuer Prototyp zugewiesen werden.  
   
 ## Anforderungen  
- [!INCLUDE[jsv2](../../includes/jsv2-md.md)]
+ [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]

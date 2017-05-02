@@ -46,7 +46,7 @@ parseFloat("1.2abc")   // Returns 1.2.
  Eine Überprüfung auf `NaN` können Sie mit der `isNaN`\-Funktion durchführen.  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
  **Gilt für**: [Global\-Objekt](../../javascript/reference/global-object-javascript.md)  
   

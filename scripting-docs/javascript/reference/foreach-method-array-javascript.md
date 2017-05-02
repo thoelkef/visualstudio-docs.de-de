@@ -156,7 +156,7 @@ numbers.forEach(function(value, index) { this.showResults(value, index) }, obj);
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv9](../../includes/jsv9-md.md)]  
+ [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
 ## Siehe auch  
  [filter\-Methode \(Array\)](../../javascript/reference/filter-method-array-javascript.md)   

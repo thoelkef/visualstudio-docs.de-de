@@ -17,7 +17,7 @@ manager: "ghogen"
 caps.handback.revision: 5
 ---
 # IActiveScriptProfilerControl2::CompleteProfilerStart
-Benachrichtigt den Profiler, dass Sie die Profilerstellung auf alle gültigen Skriptmodulen gestartet haben.  Mit dieser Methode wird, erhalten Sie die vollständige Aufrufliste, wenn [!INCLUDE[javascript](../../includes/javascript-md.md)] ausgeführt wird, wenn Sie die Profilerstellung starten.  
+Benachrichtigt den Profiler, dass Sie die Profilerstellung auf alle gültigen Skriptmodulen gestartet haben.  Mit dieser Methode wird, erhalten Sie die vollständige Aufrufliste, wenn [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] ausgeführt wird, wenn Sie die Profilerstellung starten.  
   
 ## Syntax  
   

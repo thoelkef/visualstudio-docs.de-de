@@ -48,7 +48,7 @@ if(window.ScriptEngineBuildVersion) {
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv5](../../includes/jsv5-md.md)]  
+ [!INCLUDE[jsv5](../../javascript/reference/includes/jsv5-md.md)]  
   
 ## Siehe auch  
  [ScriptEngine\-Funktion](../../javascript/reference/scriptengine-function-javascript.md)   

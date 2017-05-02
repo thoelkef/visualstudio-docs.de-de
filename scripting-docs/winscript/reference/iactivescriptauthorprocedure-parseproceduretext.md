@@ -69,7 +69,7 @@ HRESULT ParseProcedureText(
 |`S_OK`|Die Methode war erfolgreich.|  
   
 ## Hinweise  
- Das aktuelle [!INCLUDE[javascript](../../includes/javascript-md.md)] Modul implementiert diese Methode nicht.  
+ Das aktuelle [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Modul implementiert diese Methode nicht.  
   
 ## Siehe auch  
  [IActiveScriptAuthorProcedure\-Schnittstelle](../../winscript/reference/iactivescriptauthorprocedure-interface.md)

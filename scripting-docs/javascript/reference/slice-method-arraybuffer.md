@@ -68,7 +68,7 @@ var req = new XMLHttpRequest();
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv11_winonly](../../includes/jsv11-winonly-md.md)]  
+ [!INCLUDE[jsv11_winonly](../../javascript/reference/includes/jsv11-winonly-md.md)]  
   
 ## Siehe auch  
  [ArrayBuffer\-Objekt](../../javascript/reference/arraybuffer-object.md)

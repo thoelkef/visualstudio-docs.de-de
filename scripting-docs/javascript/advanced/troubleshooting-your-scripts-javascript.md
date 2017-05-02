@@ -24,21 +24,21 @@ manager: "ghogen"
 caps.handback.revision: 9
 ---
 # Problembehandlung bei Skripts (JavaScript)
-In jeder Programmiersprache gibt es Stellen, die Überraschungen bereit halten.  So verhält sich beispielsweise der `null`\-Wert in [!INCLUDE[javascript](../../includes/javascript-md.md)] nicht wie die gleiche `Null`\-Wert in den Programmiersprachen C oder C\+\+.  
+In jeder Programmiersprache gibt es Stellen, die Überraschungen bereit halten.  So verhält sich beispielsweise der `null`\-Wert in [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] nicht wie die gleiche `Null`\-Wert in den Programmiersprachen C oder C\+\+.  
   
- Im Folgenden werden einige mögliche Problembereiche beim Schreiben von Skripts in [!INCLUDE[javascript](../../includes/javascript-md.md)] erörtert.  
+ Im Folgenden werden einige mögliche Problembereiche beim Schreiben von Skripts in [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] erörtert.  
   
 ## Syntaxfehler  
  Beim Schreiben von Skripts ist es wichtig, Details zu beachten.  So müssen z. B. Zeichenfolgen in Anführungszeichen eingeschlossen werden.  
   
 ## Reihenfolge der Skriptinterpretation  
- Die [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Interpretation ist Teil des HTML\-Analyseprozesses des Webbrowsers.  Wenn Sie ein Skript innerhalb des \<HEAD\>\-Tags eines Dokuments platzieren, wird dieses vor allen Teilen des \<BODY\>\-Tags interpretiert.  Wenn Sie über Objekte verfügen, die im \<BODY\>\-Tag erstellt wurden, sind diese zum Zeitpunkt der \<HEAD\>\-Analyse nicht vorhanden, und können nicht vom Skript bearbeitet werden.  
+ Die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Interpretation ist Teil des HTML\-Analyseprozesses des Webbrowsers.  Wenn Sie ein Skript innerhalb des \<HEAD\>\-Tags eines Dokuments platzieren, wird dieses vor allen Teilen des \<BODY\>\-Tags interpretiert.  Wenn Sie über Objekte verfügen, die im \<BODY\>\-Tag erstellt wurden, sind diese zum Zeitpunkt der \<HEAD\>\-Analyse nicht vorhanden, und können nicht vom Skript bearbeitet werden.  
   
 > [!NOTE]
 >  Dieses Verhalten ist spezifisch für Internet Explorer.  ASP und WSH verfügen über andere Ausführungsmodelle \(wie auch andere Hosts\).  
   
 ## Automatische Typumwandlung  
- [!INCLUDE[javascript](../../includes/javascript-md.md)] ist eine Sprache mit flexibler Typbindung und automatischer Umwandlung.  Obwohl die Werte mit verschiedenen Typen nicht identisch sind, werden die Ausdrücke im folgenden Beispiel zu **true** ausgewertet.  
+ [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] ist eine Sprache mit flexibler Typbindung und automatischer Umwandlung.  Obwohl die Werte mit verschiedenen Typen nicht identisch sind, werden die Ausdrücke im folgenden Beispiel zu **true** ausgewertet.  
   
 ```javascript  
 "100" == 100;  

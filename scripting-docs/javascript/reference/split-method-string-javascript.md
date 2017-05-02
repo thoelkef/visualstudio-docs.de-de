@@ -72,7 +72,7 @@ for (var i in ss) {
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv3](../../includes/jsv3-md.md)]  
+ [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
  **Gilt für**: [String\-Objekt](../../javascript/reference/string-object-javascript.md)  
   

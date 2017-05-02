@@ -66,7 +66,7 @@ else
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## Siehe auch  
  [if...else\-Anweisung](../../javascript/reference/if-dot-dot-dot-else-statement-javascript.md)   

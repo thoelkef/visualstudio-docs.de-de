@@ -34,12 +34,12 @@ void expression
 ```  
   
 ## Hinweise  
- Das `expression`\-Argument ist jeder gültige [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Ausdruck.  
+ Das `expression`\-Argument ist jeder gültige [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Ausdruck.  
   
  Der Operator `void` wertet seinen Ausdruck aus, und gibt `undefined` zurück.  Er wird meistens in Situationen verwendet, in denen ein Ausdruck ausgewertet werden, das Ergebnis aber im weiteren Verlauf des Skriptes nicht sichtbar sein soll.  
   
 ## Anforderungen  
- [!INCLUDE[jsv2](../../includes/jsv2-md.md)]  
+ [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]  
   
 ## Siehe auch  
  [Operatorrangfolge](../../javascript/operator-subtractprecedence-javascript.md)   

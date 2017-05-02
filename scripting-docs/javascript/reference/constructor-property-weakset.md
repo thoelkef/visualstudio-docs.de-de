@@ -35,4 +35,4 @@ weakset.constructor
  Die `constructor`\-Eigenschaft ist ein Member des Prototyps eines jeden Objekts, das einen Prototyp besitzt.  Dies schließt alle systeminternen JavaScript\-Objekte mit Ausnahme der Objekte `Global` und `Math` ein.  Die `constructor`\-Eigenschaft enthält einen Verweis auf die Funktion, mit der die Instanzen des betreffenden Objekts erstellt werden.  
   
 ## Anforderungen  
- [!INCLUDE[jsv12](../../includes/jsv12-md.md)]
+ [!INCLUDE[jsv12](../../javascript/reference/includes/jsv12-md.md)]

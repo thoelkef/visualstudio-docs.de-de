@@ -32,7 +32,7 @@ caps.handback.revision: 18
 Führt bedingt eine Gruppe von Anweisungen aus, abhängig vom Wert eines Ausdrucks.  
   
 > [!WARNING]
->  Die bedingte Kompilierung wird im Standardmodus von Internet Explorer 11 und den [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]\-Apps nicht unterstützt.  Die bedingte Kompilierung wird im Standardmodus von Internet Explorer 10 und allen früheren Versionen unterstützt.  
+>  Die bedingte Kompilierung wird im Standardmodus von Internet Explorer 11 und den [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-Apps nicht unterstützt.  Die bedingte Kompilierung wird im Standardmodus von Internet Explorer 10 und allen früheren Versionen unterstützt.  
   
 ## Syntax  
   
@@ -92,7 +92,7 @@ Führt bedingt eine Gruppe von Anweisungen aus, abhängig vom Wert eines Ausdruc
 ```  
   
 ## Anforderungen  
- Wird in allen Versionen von Internet Explorer, jedoch nicht in [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]\-Apps unterstützt.  
+ Wird in allen Versionen von Internet Explorer, jedoch nicht in [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-Apps unterstützt.  
   
 ## Siehe auch  
  [Bedingte Kompilierung](../../javascript/advanced/conditional-compilation-javascript.md)   

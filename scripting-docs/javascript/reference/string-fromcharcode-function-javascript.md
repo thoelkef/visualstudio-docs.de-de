@@ -55,7 +55,7 @@ document.write(test);
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv3](../../includes/jsv3-md.md)]  
+ [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
 ## Siehe auch  
  [charCodeAt\-Methode \(String\)](../../javascript/reference/charcodeat-method-string-javascript.md)

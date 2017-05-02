@@ -23,7 +23,7 @@ manager: "ghogen"
 caps.handback.revision: 9
 ---
 # Der zu decodierende URI ist keine g&#252;ltige Codierung
-Sie haben versucht, einen falsch formatierten URI \(Uniform Resource Identifier\) zu decodieren.  URIs weisen eine besondere Syntax auf. Die meisten nicht alphanumerischen Zeichen müssen vor der Verwendung in einem URI codiert werden.  Sie können die Methoden `encodeURI` und `encodeURIComponent` verwenden, um einen URI aus einer normalen [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Zeichenfolge zu erstellen.  
+Sie haben versucht, einen falsch formatierten URI \(Uniform Resource Identifier\) zu decodieren.  URIs weisen eine besondere Syntax auf. Die meisten nicht alphanumerischen Zeichen müssen vor der Verwendung in einem URI codiert werden.  Sie können die Methoden `encodeURI` und `encodeURIComponent` verwenden, um einen URI aus einer normalen [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Zeichenfolge zu erstellen.  
   
  Ein vollständiger URI ist aus einer Folge von Komponenten und Trennzeichen zusammengesetzt.  Das allgemeine Format ist:  
   
@@ -35,7 +35,7 @@ Sie haben versucht, einen falsch formatierten URI \(Uniform Resource Identifier\
   
 ### So beheben Sie diesen Fehler  
   
--   Stellen Sie sicher, dass nur gültige URIs decodiert werden.  Normale [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Zeichenfolgen können nicht decodiert werden, da sie möglicherweise ungültige Zeichen enthalten.  
+-   Stellen Sie sicher, dass nur gültige URIs decodiert werden.  Normale [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Zeichenfolgen können nicht decodiert werden, da sie möglicherweise ungültige Zeichen enthalten.  
   
 ## Siehe auch  
  [decodeURI\-Funktion](../../javascript/reference/decodeuri-function-javascript.md)   

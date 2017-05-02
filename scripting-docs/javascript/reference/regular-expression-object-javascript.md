@@ -57,9 +57,9 @@ re = new RegExp("pattern"[,"flags"])
   
 -   m \(mehrzeilige Suche\)  
   
--   u \(Unicode\), aktiviert EcmaScript 6\-[Unicode\-Funktionen](../../javascript/advanced/special-characters-javascript.md).  Wird nur in [!INCLUDE[jsv12text](../../includes/jsv12text-md.md)] unterstützt.  
+-   u \(Unicode\), aktiviert EcmaScript 6\-[Unicode\-Funktionen](../../javascript/advanced/special-characters-javascript.md).  Wird nur in [!INCLUDE[jsv12text](../../javascript/includes/jsv12text-md.md)] unterstützt.  
   
--   y \(Übereinstimmung\) sucht nach Übereinstimmungen in der `lastIndex`\-Eigenschaft des regulären Ausdrucks \(und sucht nicht in späteren Indizes\).  Wird in [!INCLUDE[jsv12textExp](../../includes/jsv12textexp-md.md)] unterstützt.  
+-   y \(Übereinstimmung\) sucht nach Übereinstimmungen in der `lastIndex`\-Eigenschaft des regulären Ausdrucks \(und sucht nicht in späteren Indizes\).  Wird in [!INCLUDE[jsv12textExp](../../javascript/includes/jsv12textexp-md.md)] unterstützt.  
   
 ## Hinweise  
  Das **Regular Expression**\-Objekt sollte nicht mit dem globalen `RegExp`\-Objekt verwechselt werden.  Es sieht so aus, als wären es dieselben Objekte, sie sind jedoch verschieden.  Die Eigenschaften des **Regular Expression**\-Objekts enthalten nur Informationen über eine bestimmte **Regular Expression**\-Instanz, während die Eigenschaften des globalen `RegExp`\-Objekts ständig aktualisierte Informationen über jede aufgetretene Übereinstimmung enthalten.  
@@ -153,11 +153,11 @@ if(console && console.log) {
  [compile\-Methode](../../javascript/reference/compile-method-regular-expression-javascript.md) &#124; [exec\-Methode](../../javascript/reference/exec-method-regular-expression-javascript.md) &#124; [test\-Methode](../../javascript/reference/test-method-regular-expression-javascript.md)  
   
 ## Anforderungen  
- [!INCLUDE[jsv3](../../includes/jsv3-md.md)]  
+ [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- Das u\-Flag wird in [!INCLUDE[jsv12text](../../includes/jsv12text-md.md)] unterstützt.  
+ Das u\-Flag wird in [!INCLUDE[jsv12text](../../javascript/includes/jsv12text-md.md)] unterstützt.  
   
- Das y\-Flag wird in [!INCLUDE[jsv12textExp](../../includes/jsv12textexp-md.md)] unterstützt.  
+ Das y\-Flag wird in [!INCLUDE[jsv12textExp](../../javascript/includes/jsv12textexp-md.md)] unterstützt.  
   
 ## Siehe auch  
  [RegExp\-Objekt](../../javascript/reference/regexp-object-javascript.md)   

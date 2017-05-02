@@ -50,7 +50,7 @@ dateObj.setUTCFullYear(numYear[, numMonth[, numDate]])
  Optional.  Ein dem Tag des Monats entsprechender numerischer Wert.  
   
 ## Hinweise  
- Alle **set**\-Methoden, denen optionale Argumente übergeben werden, verwenden den von den entsprechenden **get**\-Methoden zurückgegebenen Wert, wenn kein optionales Argument angegeben wurde.  Wenn beispielsweise das `numMonth`\-Argument nicht angegeben wird, verwendet [!INCLUDE[javascript](../../includes/javascript-md.md)] den Wert, der von der `getUTCMonth`\-Methode zurückgegeben wird.  
+ Alle **set**\-Methoden, denen optionale Argumente übergeben werden, verwenden den von den entsprechenden **get**\-Methoden zurückgegebenen Wert, wenn kein optionales Argument angegeben wurde.  Wenn beispielsweise das `numMonth`\-Argument nicht angegeben wird, verwendet [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] den Wert, der von der `getUTCMonth`\-Methode zurückgegeben wird.  
   
  Wenn darüber hinaus der Wert eines Arguments größer als dessen Bereich oder eine negative Zahl ist, werden andere gespeicherte Werte entsprechend geändert.  
   
@@ -75,7 +75,7 @@ document.write (dtSecond.toUTCString());
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv3](../../includes/jsv3-md.md)]  
+ [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
  **Gilt für**: [Date\-Objekt](../../javascript/reference/date-object-javascript.md)  
   

@@ -31,7 +31,7 @@ Ein systeminternes Objekt zum Zusammenfassen von globalen Funktionen und Konstan
  Das `Global`\-Objekt wird niemals direkt verwendet und kann nicht mit dem Operator `new` erstellt werden.  Es wird beim Initialisieren des Skriptmoduls erstellt, wodurch seine Funktionen und Konstanten sofort verfügbar werden.  
   
 ## Anforderungen  
- [!INCLUDE[jsv5](../../includes/jsv5-md.md)]  
+ [!INCLUDE[jsv5](../../javascript/reference/includes/jsv5-md.md)]  
   
 ## Konstanten  
  [Infinity\-Konstante](../../javascript/reference/infinity-constant-javascript.md) &#124; [NaN\-Konstante](../../javascript/reference/nan-constant-javascript.md) &#124; [undefined\-Konstante](../../javascript/reference/undefined-constant-javascript.md)  

@@ -30,7 +30,7 @@ manager: "ghogen"
 caps.handback.revision: 28
 ---
 # try...catch...finally-Anweisung (JavaScript)
-Richtet Codeblöcke ein, in denen Fehler, die in einem Block ausgelöst werden, in einem anderen behandelt werden.  Fehler, die innerhalb des `try`\-Blocks ausgelöst werden, werden im `catch`\-Block abgefangen.  [!INCLUDE[javascript](../../includes/javascript-md.md)].  
+Richtet Codeblöcke ein, in denen Fehler, die in einem Block ausgelöst werden, in einem anderen behandelt werden.  Fehler, die innerhalb des `try`\-Blocks ausgelöst werden, werden im `catch`\-Block abgefangen.  [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ## Syntax  
   
@@ -60,7 +60,7 @@ finally {
  Optional.  Anweisungen, die ohne Bedingung ausgeführt werden, nachdem die Behandlung sämtlicher Fehler abgeschlossen ist.  
   
 ## Hinweise  
- Die `try...catch...finally`\-Anweisung stellt eine Möglichkeit zum Behandeln einiger oder aller Fehler dar, die in einem bestimmten Codeblock auftreten können, während der Code weiter ausgeführt wird.  Wenn Fehler auftreten, die nicht behandelt werden, stellt [!INCLUDE[javascript](../../includes/javascript-md.md)] die normale Fehlermeldung bereit.  
+ Die `try...catch...finally`\-Anweisung stellt eine Möglichkeit zum Behandeln einiger oder aller Fehler dar, die in einem bestimmten Codeblock auftreten können, während der Code weiter ausgeführt wird.  Wenn Fehler auftreten, die nicht behandelt werden, stellt [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] die normale Fehlermeldung bereit.  
   
  Der `try`\-Block enthält Code, der möglicherweise einen Fehler verursacht, während der `catch`\-Block den Code enthält, der einige oder alle Fehler behandelt.  Wenn ein Fehler im `try`\-Block auftritt, wird die Programmsteuerung an den `catch`\-Block übergeben.  Der Wert von `exception` ist der Wert des Fehlers, der im `try`\-Block aufgetreten ist.  Wenn kein Fehler auftritt, wird der Code im `catch`\-Block niemals ausgeführt.  
   
@@ -127,7 +127,7 @@ finally {
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv5](../../includes/jsv5-md.md)]  
+ [!INCLUDE[jsv5](../../javascript/reference/includes/jsv5-md.md)]  
   
 > [!NOTE]
 >  Beginnend mit dem Standards\-Modus von Internet Explorer 8 ist der **catch**\- Block nicht mehr erforderlich, damit `finally` ausgeführt wird.  

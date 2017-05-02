@@ -43,7 +43,7 @@ boolObj = new Boolean([boolValue])
  Optional.  Der anfängliche Boolesche Wert des neuen Objekts.  Ist `boolvalue` nicht vorhanden oder `false`, 0, `null`, `NaN` oder eine leere Zeichenfolge, ist der anfängliche Wert des Boolean\-Objekts `false`.  Andernfalls ist der anfängliche Wert `true`.  
   
 ## Hinweise  
- Das `Boolean`\-Objekt ist ein Wrapper für den Booleschen Datentyp.  [!INCLUDE[javascript](../../includes/javascript-md.md)] verwendet implizit das `Boolean`\-Objekt, wenn ein Boolescher Datentyp in ein `Boolean`\-Objekt konvertiert wird.  
+ Das `Boolean`\-Objekt ist ein Wrapper für den Booleschen Datentyp.  [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] verwendet implizit das `Boolean`\-Objekt, wenn ein Boolescher Datentyp in ein `Boolean`\-Objekt konvertiert wird.  
   
  Das `Boolean`\-Objekt wird selten explizit instanziiert.  
   
@@ -65,4 +65,4 @@ boolObj = new Boolean([boolValue])
 |[valueOf\-Methode](../../javascript/reference/valueof-method-boolean.md)|Ruft einen Verweis auf das Boolean\-Objekt ab.|  
   
 ## Anforderungen  
- [!INCLUDE[jsv2](../../includes/jsv2-md.md)]
+ [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]

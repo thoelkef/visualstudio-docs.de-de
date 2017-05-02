@@ -65,7 +65,7 @@ const myarray = new Array();
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv11](../../includes/jsv11-md.md)]  
+ [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]  
   
 ## Siehe auch  
  [let\-Anweisung](../../javascript/reference/let-statement-javascript.md)   

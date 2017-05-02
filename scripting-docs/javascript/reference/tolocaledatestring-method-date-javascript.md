@@ -81,11 +81,11 @@ document.write(date.toLocaleDateString("hi-IN", options));
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv55](../../includes/jsv55-md.md)]  
+ [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
  `locales`\- und `options`\-Parameter:  
   
- [!INCLUDE[jsv11](../../includes/jsv11-md.md)]  
+ [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]  
   
 ## Siehe auch  
  [toDateString\-Methode \(Datum\)](../../javascript/reference/todatestring-method-date-javascript.md)   

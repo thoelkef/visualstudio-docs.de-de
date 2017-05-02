@@ -25,7 +25,7 @@ manager: "ghogen"
 caps.handback.revision: 43
 ---
 # JSON-Objekt (JavaScript)
-Ein systeminternes Objekt, das Funktionen zum Konvertieren von [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Werten in das und aus dem JSON\-Format \(JavaScript Objekt Notation\) bereitstellt.  Die `JSON.stringify`\-Funktion serialisiert einen [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Wert in JSON\-Text.  Die `JSON.parse`\-Funktion deserialisiert JSON\-Text, um einen [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Wert zu erzeugen.  
+Ein systeminternes Objekt, das Funktionen zum Konvertieren von [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Werten in das und aus dem JSON\-Format \(JavaScript Objekt Notation\) bereitstellt.  Die `JSON.stringify`\-Funktion serialisiert einen [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Wert in JSON\-Text.  Die `JSON.parse`\-Funktion deserialisiert JSON\-Text, um einen [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Wert zu erzeugen.  
   
 ## Syntax  
   
@@ -52,7 +52,7 @@ if (!this.JSON) {
     }  
 ```  
   
- Im vorherigen Beispiel wird `!this.JSON` in [!INCLUDE[jsv58text](../../includes/jsv58text-md.md)] als "false" ausgewertet.  Daher wird der Code in der `if`\-Anweisung nicht ausgeführt.  
+ Im vorherigen Beispiel wird `!this.JSON` in [!INCLUDE[jsv58text](../../javascript/reference/includes/jsv58text-md.md)] als "false" ausgewertet.  Daher wird der Code in der `if`\-Anweisung nicht ausgeführt.  
   
 ## Funktionen  
  [JSON.parse\-Funktion](../../javascript/reference/json-parse-function-javascript.md)  
@@ -60,7 +60,7 @@ if (!this.JSON) {
  [JSON.stringify\-Funktion](../../javascript/reference/json-stringify-function-javascript.md)  
   
 ## Anforderungen  
- [!INCLUDE[jsv58](../../includes/jsv58-md.md)]  
+ [!INCLUDE[jsv58](../../javascript/reference/includes/jsv58-md.md)]  
   
 ## Siehe auch  
  [toJSON\-Methode \(Datum\)](../../javascript/reference/tojson-method-date-javascript.md)   

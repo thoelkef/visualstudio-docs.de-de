@@ -59,7 +59,7 @@ document.write(Rectangle.prototype.isPrototypeOf(rec));
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv55](../../includes/jsv55-md.md)]  
+ [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
 ## Siehe auch  
  [prototype\-Eigenschaft \(Objekt\)](../../javascript/reference/prototype-property-object-javascript.md)

@@ -51,7 +51,7 @@ JSON.parse(text [, reviver])
  Ein Objekt oder ein Array.  
   
 ## Ausnahmen  
- Wenn diese Funktion einen [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Parserfehler auslöst \(wie "SCRIPT1014: Ungültiges Zeichen"\), entspricht der Eingabetext nicht JSON\-Syntax. Führen Sie einen der folgenden Schritte aus, um den Fehler zu beheben:  
+ Wenn diese Funktion einen [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Parserfehler auslöst \(wie "SCRIPT1014: Ungültiges Zeichen"\), entspricht der Eingabetext nicht JSON\-Syntax. Führen Sie einen der folgenden Schritte aus, um den Fehler zu beheben:  
   
 -   Ändern Sie das `text`\-Argument, sodass es JSON\-Syntax entspricht. Weitere Information finden Sie im Thema zur [BNF\-Syntaxschreibweise](http://go.microsoft.com/fwlink/?LinkId=125203) für JSON\-Objekte.  
   
@@ -127,7 +127,7 @@ function dateReviver(key, value) {
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv58](../../includes/jsv58-md.md)]  
+ [!INCLUDE[jsv58](../../javascript/reference/includes/jsv58-md.md)]  
   
 ## Siehe auch  
  [JSON.stringify\-Funktion](../../javascript/reference/json-stringify-function-javascript.md)   

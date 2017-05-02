@@ -65,7 +65,7 @@ document.write(ArgTest(1, 2));
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv2](../../includes/jsv2-md.md)]  
+ [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]  
   
 ## Siehe auch  
  [arguments\-Eigenschaft \(Funktion\)](../../javascript/reference/arguments-property-function-javascript.md)   

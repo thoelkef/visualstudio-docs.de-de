@@ -76,7 +76,7 @@ document.write(result);
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## Siehe auch  
  [Bitweiser AND\-Zuweisungsoperator \(&\=\)](../../javascript/reference/bitwise-and-assignment-operator-decrement-equal-javascript.md)   

@@ -37,7 +37,7 @@ x
  Der Rückgabewert ist identisch mit `(exp(x) - exp(-x))/(exp(x) + exp(-x))`.  Wenn `x` gleich `NaN` ist, lautet das Ergebnis `NaN`.  
   
 ## Anforderungen  
- [!INCLUDE[jsv12](../../includes/jsv12-md.md)]  
+ [!INCLUDE[jsv12](../../javascript/reference/includes/jsv12-md.md)]  
   
  **Gilt für**: [Math\-Objekt](../../javascript/reference/math-object-javascript.md)  
   

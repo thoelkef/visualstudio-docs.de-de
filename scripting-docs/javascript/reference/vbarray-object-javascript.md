@@ -28,7 +28,7 @@ caps.handback.revision: 17
 Bietet Zugriff auf sichere Visual Basic\-Arrays.  
   
 > [!WARNING]
->  Dieses Objekt wird nur in Internet Explorer unterstützt, nicht in [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]\-Apps.  
+>  Dieses Objekt wird nur in Internet Explorer unterstützt, nicht in [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-Apps.  
   
 ## Syntax  
   
@@ -50,7 +50,7 @@ varName = new VBArray(safeArray)
  VBArrays können über mehrere Dimensionen verfügen. Die Indizes der einzelnen Dimensionen können unterschiedlich sein. Die **dimensions**\-Methode ruft die Anzahl der Dimensionen im Array ab; die `lbound`\- und `ubound`\-Methoden rufen den von jeder Dimension verwendeten Indexbereich ab.  
   
 ## Beispiel  
- Das folgende Beispiel besteht aus drei Teilen. Der erste Teil ist VBScript\-Code zum Erstellen eines sicheren Visual Basic\-Arrays. Der zweite Teil ist [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Code, der das sichere Visual Basic\-Array in ein [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Array konvertiert. Beide Teile gehören in den \<HEAD\>\-Abschnitt einer HTML\-Seite. Der dritte Teil ist der [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Code, der in den \<BODY\>\-Abschnitt eingeführt wird, um die anderen beiden Teile auszuführen.  
+ Das folgende Beispiel besteht aus drei Teilen. Der erste Teil ist VBScript\-Code zum Erstellen eines sicheren Visual Basic\-Arrays. Der zweite Teil ist [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Code, der das sichere Visual Basic\-Array in ein [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Array konvertiert. Beide Teile gehören in den \<HEAD\>\-Abschnitt einer HTML\-Seite. Der dritte Teil ist der [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Code, der in den \<BODY\>\-Abschnitt eingeführt wird, um die anderen beiden Teile auszuführen.  
   
 ```javascript  
 <head>  
@@ -104,7 +104,7 @@ function VBArrayTest(vbarray){
  [dimensions\-Methode](../../javascript/reference/dimensions-method-vbarray-javascript.md) &#124; [getItem\-Methode](../../javascript/reference/getitem-method-vbarray-javascript.md) &#124; [lbound\-Methode](../../javascript/reference/lbound-method-vbarray-javascript.md) &#124; [toArray\-Methode](../../javascript/reference/toarray-method-vbarray-javascript.md) &#124; [ubound\-Methode](../../javascript/reference/ubound-method-vbarray-javascript.md)  
   
 ## Anforderungen  
- Wird in den folgenden Dokumentmodi unterstützt: Quirksmodus, Internet Explorer 6\-Standardmodus, Internet Explorer 7\-Standardmodus, Internet Explorer 8\-Standardmodus, Internet Explorer 9\-Standardmodus und Internet Explorer 10\-Standardmodus. Wird in [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]\-Apps nicht unterstützt. Siehe [Versionsinformationen](../../javascript/reference/javascript-version-information.md).  
+ Wird in den folgenden Dokumentmodi unterstützt: Quirksmodus, Internet Explorer 6\-Standardmodus, Internet Explorer 7\-Standardmodus, Internet Explorer 8\-Standardmodus, Internet Explorer 9\-Standardmodus und Internet Explorer 10\-Standardmodus. Wird in [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-Apps nicht unterstützt. Siehe [Versionsinformationen](../../javascript/reference/javascript-version-information.md).  
   
 ## Siehe auch  
  [Array\-Objekt](../../javascript/reference/array-object-javascript.md)

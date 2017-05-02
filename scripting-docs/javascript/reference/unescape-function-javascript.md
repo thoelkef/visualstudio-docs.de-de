@@ -44,7 +44,7 @@ unescape(charString)
 >  Die `unescape`\-Funktion sollte nicht zum Decodieren von Uniform Resource Identifiers \(URIs\) verwendet werden.  Verwenden Sie stattdessen die `decodeURI`\-Funktion und die `decodeURIComponent`\-Funktion.  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
  **Gilt für**: [Global\-Objekt](../../javascript/reference/global-object-javascript.md)  
   

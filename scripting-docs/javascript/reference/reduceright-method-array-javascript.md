@@ -209,7 +209,7 @@ document.write(result);
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv9](../../includes/jsv9-md.md)]  
+ [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
 ## Siehe auch  
  [reduce\-Methode \(Array\)](../../javascript/reference/reduce-method-array-javascript.md)

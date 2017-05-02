@@ -26,4 +26,4 @@ Wird verwendet, um anzugeben, ob das Skriptmodul vollständig funktionsfähig ge
 ```  
   
 ## Anforderungen  
- Diese Eigenschaft wird nur in der Version von activscp.idl, das mit [!INCLUDE[win8](../../includes/win8-md.md)], mit 2707082 KB für Internet Explorer 8 auf [!INCLUDE[win7](../../includes/win7-md.md)] oder mit 2722913 KB für Internet Explorer 9 auf [!INCLUDE[win7](../../includes/win7-md.md)] oder [!INCLUDE[vista_first](../../includes/vista-first-md.md)] installiert ist.
+ Diese Eigenschaft wird nur in der Version von activscp.idl, das mit [!INCLUDE[win8](../../javascript/includes/win8-md.md)], mit 2707082 KB für Internet Explorer 8 auf [!INCLUDE[win7](../../winscript/reference/includes/win7-md.md)] oder mit 2722913 KB für Internet Explorer 9 auf [!INCLUDE[win7](../../winscript/reference/includes/win7-md.md)] oder [!INCLUDE[vista_first](../../winscript/reference/includes/vista-first-md.md)] installiert ist.

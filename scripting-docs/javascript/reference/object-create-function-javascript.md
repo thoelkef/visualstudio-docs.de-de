@@ -37,7 +37,7 @@ Object.create(prototype, descriptors)
  Erforderlich.  Das als Prototyp zu verwendende Objekt.  Kann `null` sein.  
   
  `descriptors`  
- Optional.  Ein [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Objekt, das eine oder mehrere Eigenschaftendeskriptoren enthält.  
+ Optional.  Ein [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Objekt, das eine oder mehrere Eigenschaftendeskriptoren enthält.  
   
  Eine *Dateneigenschaft* ist eine Eigenschaft, die einen Wert abrufen und festlegen kann.  Ein Dateneigenschaftendeskriptor enthält ein `value`\-Attribut sowie die Attribute `writable`, `enumerable` und `configurable`.  Werden die letzten drei Attribute nicht angegeben, werden sie standardmäßig auf `false` festgelegt.  Eine *Accessoreigenschaft* ruft immer dann eine vom Benutzer bereitgestellte Funktion auf, wenn der Wert abgerufen oder festgelegt wird.  Ein Accessoreigenschaftendeskriptor enthält ein `set`\-Attribut, ein `get`\-Attribut oder beides.  Weitere Informationen finden Sie unter [Object.defineProperty\-Funktion](../../javascript/reference/object-defineproperty-function-javascript.md).  
   
@@ -125,7 +125,7 @@ var Square = Object.create(Object.getPrototypeOf(Shape));
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv9](../../includes/jsv9-md.md)]  
+ [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
 ## Siehe auch  
  [Object.getPrototypeOf\-Funktion](../../javascript/reference/object-getprototypeof-function-javascript.md)   

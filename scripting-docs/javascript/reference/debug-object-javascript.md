@@ -37,9 +37,9 @@ Debug.function
 ## Hinweise  
  Das Debug\-Objekt wird nicht instanziiert. Sie können auf alle zugehörigen Eigenschaften und Methoden zugreifen, indem Sie `function` aufrufen.  
   
- Es gibt verschiedene Möglichkeiten, Internet Explorer\- und [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]\-Apps zu debuggen. In [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]\-Apps zeigen die `write`\- und `writeln`\-Funktionen des `Debug`\-Objekte Zeichenfolgen zur Laufzeit im Visual Studio\-Fenster **Ausgabe** an. Weitere Informationen über das Debuggen von [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]\-Apps finden Sie unter [Debuggen von Apps in Visual Studio](../Topic/Debug%20Store%20apps%20in%20Visual%20Studio.md).  
+ Es gibt verschiedene Möglichkeiten, Internet Explorer\- und [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-Apps zu debuggen. In [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-Apps zeigen die `write`\- und `writeln`\-Funktionen des `Debug`\-Objekte Zeichenfolgen zur Laufzeit im Visual Studio\-Fenster **Ausgabe** an. Weitere Informationen über das Debuggen von [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-Apps finden Sie unter [Debuggen von Apps in Visual Studio](../Topic/Debug%20Store%20apps%20in%20Visual%20Studio.md).  
   
- Zum Debuggen von Internet Explorer\-Skripts, muss ein Skriptdebugger installiert sein, und das Skript muss im Debugmodus ausgeführt werden. Internet Explorer 8 und neuere Versionen enthalten den [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Debugger. Wenn Sie eine frühere Version von Internet Explorer verwenden, finden Sie unter [Gewusst wie: Aktivieren und Starten des Skriptdebuggings in Internet Explorer](http://go.microsoft.com/fwlink/?LinkId=133801) weitere Informationen.  
+ Zum Debuggen von Internet Explorer\-Skripts, muss ein Skriptdebugger installiert sein, und das Skript muss im Debugmodus ausgeführt werden. Internet Explorer 8 und neuere Versionen enthalten den [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Debugger. Wenn Sie eine frühere Version von Internet Explorer verwenden, finden Sie unter [Gewusst wie: Aktivieren und Starten des Skriptdebuggings in Internet Explorer](http://go.microsoft.com/fwlink/?LinkId=133801) weitere Informationen.  
   
  Wenn das Skript nicht debuggt wird, haben die Funktionen keine Auswirkungen.  
   
@@ -51,7 +51,7 @@ var counter = 42; Debug.write("The value of counter is " + counter);
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv3](../../includes/jsv3-md.md)]  
+ [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
 ## Konstanten  
  [Debug\-Konstanten](../../javascript/reference/debug-constants.md)  

@@ -66,7 +66,7 @@ dateObj = new Date(year, month, date[, hours[, minutes[, seconds[,ms]]]])
  Optional.  Eine ganze Zahl zwischen 0 und 999, die die Millisekunden angibt.  
   
 ## Hinweise  
- Ein `Date`\-Objekt enthält eine Zahl, die einen bestimmten Zeitpunkt bis auf eine Millisekunde genau darstellt.  Ist der Wert eines Arguments größer als dessen Bereich bzw. eine negative Zahl, werden andere gespeicherte Werte entsprechend geändert.  Wenn Sie z. B. 150 Sekunden angeben, macht [!INCLUDE[javascript](../../includes/javascript-md.md)] daraus 2 Minuten und 30 Sekunden.  
+ Ein `Date`\-Objekt enthält eine Zahl, die einen bestimmten Zeitpunkt bis auf eine Millisekunde genau darstellt.  Ist der Wert eines Arguments größer als dessen Bereich bzw. eine negative Zahl, werden andere gespeicherte Werte entsprechend geändert.  Wenn Sie z. B. 150 Sekunden angeben, macht [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] daraus 2 Minuten und 30 Sekunden.  
   
  Ist die Zahl `NaN`, stellt das Objekt keinen bestimmten Zeitpunkt dar.  Wenn Sie keine Parameter an das `Date`\-Objekt übergeben, wird es mit der aktuellen Zeit \(UTC\) initialisiert.  Dem Objekt muss ein Wert zugewiesen werden, bevor Sie es verwenden können.  
   
@@ -93,7 +93,7 @@ document.write(dateString);
 ```  
   
 ## Anforderungen  
- Das `Date object` wurde in [!INCLUDE[jsv1text](../../includes/jsv1text-md.md)] eingeführt.  Einige Member der folgenden Listen wurden in höheren Versionen eingeführt.  Weitere Informationen finden Sie unter [Versionsinformationen](../../javascript/reference/javascript-version-information.md) oder in der Dokumentation für die einzelnen Member.  
+ Das `Date object` wurde in [!INCLUDE[jsv1text](../../javascript/reference/includes/jsv1text-md.md)] eingeführt.  Einige Member der folgenden Listen wurden in höheren Versionen eingeführt.  Weitere Informationen finden Sie unter [Versionsinformationen](../../javascript/reference/javascript-version-information.md) oder in der Dokumentation für die einzelnen Member.  
   
 ## Eigenschaften  
  In der folgenden Tabelle sind die Eigenschaften des `Date Object`s aufgelistet.  

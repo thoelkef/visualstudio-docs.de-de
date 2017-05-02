@@ -115,11 +115,11 @@ document.write (arr[0].localeCompare(arr[3], "de-DE"));  // Returns 1
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv55](../../includes/jsv55-md.md)]  
+ [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
  `locales`\- und `options`\-Parameter:  
   
- [!INCLUDE[jsv11](../../includes/jsv11-md.md)]  
+ [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]  
   
 ## Siehe auch  
  [toLocaleString\-Methode \(Objekt\)](../../javascript/reference/tolocalestring-method-object-javascript.md)

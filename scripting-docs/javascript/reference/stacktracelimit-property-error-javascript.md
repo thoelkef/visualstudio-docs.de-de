@@ -59,7 +59,7 @@ catch(e)
 ```  
   
 ## Anforderungen  
- Wird in Internet Explorer 10 und in der [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]\-App unterstützt.  
+ Wird in Internet Explorer 10 und in der [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-App unterstützt.  
   
  **Gilt für**: [Error\-Objekt](../../javascript/reference/error-object-javascript.md)  
   

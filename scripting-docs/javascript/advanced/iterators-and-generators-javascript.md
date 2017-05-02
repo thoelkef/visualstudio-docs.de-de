@@ -23,10 +23,10 @@ caps.handback.revision: 14
 # Iteratoren und Generatoren (JavaScript)
 Ein Iterator ist ein Objekt, das verwendet wird, um ein Containerobjekt wie eine Liste zu durchlaufen.  In JavaScript ist ein Iterator\-Objekt kein bestimmtes, integriertes Objekt, ist jedoch ein Objekt, das eine `next`Methode implementiert, um auf das nächste Element im Container\-Objekt zuzugreifen.  
   
- In [!INCLUDE[jsv12text](../../includes/jsv12text-md.md)]können Sie Ihre eigenen benutzerdefinierten Iteratoren erstellen.  Es ist jedoch im Allgemeinen einfacher, Generatoren zu verwenden, die die Erstellung von Iteratoren erheblich vereinfachen.  Generatoren sind ein Funktionstyp, der als Factory für Iteratoren dient.  Weitere Informationen zum Erstellen eines benutzerdefinierten Iterators mithilfe einer Genratorfunktion finden Sie unter [Generatoren](#Generators).  
+ In [!INCLUDE[jsv12text](../../javascript/includes/jsv12text-md.md)]können Sie Ihre eigenen benutzerdefinierten Iteratoren erstellen.  Es ist jedoch im Allgemeinen einfacher, Generatoren zu verwenden, die die Erstellung von Iteratoren erheblich vereinfachen.  Generatoren sind ein Funktionstyp, der als Factory für Iteratoren dient.  Weitere Informationen zum Erstellen eines benutzerdefinierten Iterators mithilfe einer Genratorfunktion finden Sie unter [Generatoren](#Generators).  
   
 > [!CAUTION]
->  Generatoren werden in [!INCLUDE[jsv12textExp](../../includes/jsv12textexp-md.md)] unterstützt.  
+>  Generatoren werden in [!INCLUDE[jsv12textExp](../../javascript/includes/jsv12textexp-md.md)] unterstützt.  
   
 ## Iteratoren  
  Zur Implementierung eines JavaScript\-Iterators gehören zwei oder drei Objekte, die bestimmten Schnittstellen entsprechen:  

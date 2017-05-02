@@ -23,13 +23,13 @@ manager: "ghogen"
 caps.handback.revision: 7
 ---
 # Die Zuweisung zu &quot;this&quot; ist nicht m&#246;glich
-Sie haben versucht, **this** einen Wert zuzuweisen.  **this** ist ein [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Schlüsselwort, das auf Folgendes verweisen kann:  
+Sie haben versucht, **this** einen Wert zuzuweisen.  **this** ist ein [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Schlüsselwort, das auf Folgendes verweisen kann:  
   
 -   das Objekt, das derzeit eine Methode ausführt, oder  
   
 -   das globale Objekt, wenn keine aktuelle Methode vorhanden ist \(oder die Methode zu keinem anderen Objekt gehört\).  
   
- Eine Methode ist eine [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Funktion, die über ein Objekt aufgerufen wird.  Das **this**\-Schlüsselwort ist in einer Methode ein Verweis auf das Objekt, über das die Methode aufgerufen wurde. Dies ist das Objekt, das durch Aufrufen des Klassenkonstruktors mit dem **new**\-Operator erstellt wurde.  
+ Eine Methode ist eine [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Funktion, die über ein Objekt aufgerufen wird.  Das **this**\-Schlüsselwort ist in einer Methode ein Verweis auf das Objekt, über das die Methode aufgerufen wurde. Dies ist das Objekt, das durch Aufrufen des Klassenkonstruktors mit dem **new**\-Operator erstellt wurde.  
   
  In einer Methode können Sie mit **this** auf das aktuelle Objekt verweisen. Sie können **this** jedoch keinen neuen Wert zuweisen.  
   
@@ -38,7 +38,7 @@ Sie haben versucht, **this** einen Wert zuzuweisen.  **this** ist ein [!INCLUDE[
 -   Versuchen Sie nicht, **this** etwas zuzuweisen.  Verwenden Sie den Punktoperator \(z.B. circle**.**radius\), um auf eine Eigenschaft oder Methode eines instanziierten Objekts zuzugreifen.  
   
     > [!NOTE]
-    >  Sie können eine vom Benutzer erstellte Variable nicht mit **this** benennen, da dies in [!INCLUDE[javascript](../../includes/javascript-md.md)] ein reserviertes Wort ist.  
+    >  Sie können eine vom Benutzer erstellte Variable nicht mit **this** benennen, da dies in [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] ein reserviertes Wort ist.  
   
 ## Siehe auch  
  [this\-Anweisung](../../javascript/reference/this-statement-javascript.md)   

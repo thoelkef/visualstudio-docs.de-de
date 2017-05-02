@@ -49,7 +49,7 @@ dateObj.getVarDate()
  Die `getVarDate`\-Methode wird verwendet, wenn JavaScript\-Code mit COM\-Objekten, ActiveX\-Objekten oder anderen Objekten interagiert, die Datumswerte im VT\_DATE\-Format akzeptieren und zurückgegeben. Hierzu gehören Objekte in Visual Basic und Visual Basic Scripting Edition \(VBScript\). Das tatsächliche Format des zurückgegebenen Werts hängt von regionalen Einstellungen ab.  
   
 ## Anforderungen  
- Wird in den folgenden Dokumentmodi unterstützt: Quirksmodus, Internet Explorer 6\-Standardmodus, Internet Explorer 7\-Standardmodus, Internet Explorer 8\-Standardmodus, Internet Explorer 9\-Standardmodus und Internet Explorer 10\-Standardmodus. Wird in [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]\-Apps nicht unterstützt. Siehe [Versionsinformationen](../../javascript/reference/javascript-version-information.md).  
+ Wird in den folgenden Dokumentmodi unterstützt: Quirksmodus, Internet Explorer 6\-Standardmodus, Internet Explorer 7\-Standardmodus, Internet Explorer 8\-Standardmodus, Internet Explorer 9\-Standardmodus und Internet Explorer 10\-Standardmodus. Wird in [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-Apps nicht unterstützt. Siehe [Versionsinformationen](../../javascript/reference/javascript-version-information.md).  
   
  **Gilt für**: [Date\-Objekt](../../javascript/reference/date-object-javascript.md)  
   

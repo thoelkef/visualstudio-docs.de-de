@@ -71,7 +71,7 @@ function RegExpTest()
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv3](../../includes/jsv3-md.md)]  
+ [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
  **Gilt für**: [RegExp\-Objekt](../../javascript/reference/regexp-object-javascript.md)  
   

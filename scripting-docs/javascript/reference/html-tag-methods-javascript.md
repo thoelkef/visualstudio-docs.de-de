@@ -51,8 +51,8 @@ Sie können HTML\-Tag\-Methoden verwenden, um in einem `String`\-Objekt HTML\-El
 |`string1`.blink \(\)|Fügt die HTML\-Tags \<BLINK\> vor und nach dem Text ein.  Das \<BLINK\>\-Tag wird in Internet Explorer nicht unterstützt.||Nicht im Standard|  
 |`string1`.bold\(\)|Fügt die HTML\-Tags \<B\> vor und nach dem Text ein.||Abzuraten|  
 |`string1`.fixed\(\)|Fügt die HTML\-Tags \<TT\> vor und nach dem Text ein.||Abzuraten|  
-|`string1`.fontcolor \(`color`\)|Fügt die HTML\-Tags \<FONT\> mit einem COLOR\-Attribut vor und nach dem Text ein.|Der `color`\-Parameter ist ein Zeichenfolgenwert, der den Hexadezimalwert oder den vordefinierten Namen einer Farbe enthält.  Die gültigen vordefinierten Farbnamen hängen vom [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Hostbrowser und dessen Version ab.|Veraltet|  
-|`string1`.fontsize\(`size`\)|Fügt die HTML\-Tags \<FONT\> mit einem SIZE\-Attribut vor und nach dem Text ein.|Der `size`\-Parameter ist ein ganzzahliger Wert, der die Größe des Texts angibt.  Die gültigen ganzzahligen Werte hängen vom [!INCLUDE[javascript](../../includes/javascript-md.md)] Hostbrowser und deren Version ab.|Veraltet|  
+|`string1`.fontcolor \(`color`\)|Fügt die HTML\-Tags \<FONT\> mit einem COLOR\-Attribut vor und nach dem Text ein.|Der `color`\-Parameter ist ein Zeichenfolgenwert, der den Hexadezimalwert oder den vordefinierten Namen einer Farbe enthält.  Die gültigen vordefinierten Farbnamen hängen vom [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Hostbrowser und dessen Version ab.|Veraltet|  
+|`string1`.fontsize\(`size`\)|Fügt die HTML\-Tags \<FONT\> mit einem SIZE\-Attribut vor und nach dem Text ein.|Der `size`\-Parameter ist ein ganzzahliger Wert, der die Größe des Texts angibt.  Die gültigen ganzzahligen Werte hängen vom [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Hostbrowser und deren Version ab.|Veraltet|  
 |`string1`.italics\(\)|Fügt die HTML\-Tags \<I\> vor und nach dem Text ein.||Abzuraten|  
 |`string1`.link\(`href`\)|Platziert ein HTML\-Tag anchor mit einem HREF\-Attribut vor und nach dem Text.|Der `href`\-Parameter ist der Text, der in das HREF\-Attribut des HTML\-Tags anchor eingefügt werden soll.||  
 |`string1`.small\(\)|Fügt die HTML\-Tags \<SMALL\> vor und nach dem Text ein.||Abzuraten|  
@@ -134,7 +134,7 @@ document.write(strVariable.sup());
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
  **Gilt für**: [String\-Objekt](../../javascript/reference/string-object-javascript.md)  
   

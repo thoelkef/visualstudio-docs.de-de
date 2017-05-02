@@ -37,4 +37,4 @@ weakmap.prototype
  Um beispielsweise dem `WeakMap`\-Objekt eine Methode hinzuzufügen, die den Wert des größten Elements der `WeakMap` zurückgibt, deklarieren Sie die Funktion, fügen Sie sie `WeakMap.prototype` hinzu, und verwenden Sie sie dann.  
   
 ## Anforderungen  
- [!INCLUDE[jsv11](../../includes/jsv11-md.md)]
+ [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]

@@ -48,7 +48,7 @@ result /= expression
  Die Verwendung des `/=`\-Operators entspricht der Angabe von `result = result / expression`.  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## Siehe auch  
  [Divisionsoperator \(\/\)](../../javascript/reference/division-operator-decrement-javascript.md)   

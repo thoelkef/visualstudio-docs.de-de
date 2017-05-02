@@ -23,7 +23,7 @@ manager: "ghogen"
 caps.handback.revision: 7
 ---
 # JavaScript-Objekt erwartet
-Sie haben versucht, ein Nicht\-[!INCLUDE[javascript](../../includes/javascript-md.md)]\-Objekt an eine integrierte Funktion zu übergeben, die ein [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Objekt erwartet.  Verschiedene integrierte Funktionen erfordern Objekte, die in [!INCLUDE[javascript](../../includes/javascript-md.md)] definiert sind \(im Gegensatz zu Objekten, die vom Host oder einer externen Komponente wie einem Steuerelement definiert sind\).  
+Sie haben versucht, ein Nicht\-[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Objekt an eine integrierte Funktion zu übergeben, die ein [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Objekt erwartet.  Verschiedene integrierte Funktionen erfordern Objekte, die in [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] definiert sind \(im Gegensatz zu Objekten, die vom Host oder einer externen Komponente wie einem Steuerelement definiert sind\).  
   
 ### So beheben Sie diesen Fehler  
   

@@ -63,7 +63,7 @@ result = result | expression
  Jedes Mal, wenn einer der Ausdrücke eine 1 an einer Stelle aufweist, hat auch das Ergebnis an dieser Stelle eine 1.  Andernfalls enthält das Ergebnis eine 0 an dieser Stelle.  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## Siehe auch  
  [Bitweiser OR\-Operator \(&#124;\)](../../javascript/reference/bitwise-or-operator-decrement-javascript.md)   

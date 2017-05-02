@@ -37,9 +37,9 @@ objectname.toJSON()
  Erforderlich.  Ein Objekt, für das JSON\-Serialisierung erforderlich ist.  
   
 ## Hinweise  
- Die `toJSON`\-Methode wird von der `JSON.stringify`\-Funktion verwendet.  `JSON.stringify` serialisiert einen [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Wert in JSON\-Text.  Wenn eine `toJSON`\-Methode für `JSON.stringify` bereitgestellt wird, wird die `toJSON`\-Methode aufgerufen, wenn `JSON.stringify` aufgerufen wird.  
+ Die `toJSON`\-Methode wird von der `JSON.stringify`\-Funktion verwendet.  `JSON.stringify` serialisiert einen [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Wert in JSON\-Text.  Wenn eine `toJSON`\-Methode für `JSON.stringify` bereitgestellt wird, wird die `toJSON`\-Methode aufgerufen, wenn `JSON.stringify` aufgerufen wird.  
   
- Die `toJSON`\-Methode ist ein integrierter Member des [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Objekts [Date](../../javascript/reference/date-object-javascript.md) Sie gibt eine ISO\-formatierte Datumszeichenfolge für die UTC\-Zeitzone zurück \(gekennzeichnet durch das Suffix Z\).  
+ Die `toJSON`\-Methode ist ein integrierter Member des [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Objekts [Date](../../javascript/reference/date-object-javascript.md) Sie gibt eine ISO\-formatierte Datumszeichenfolge für die UTC\-Zeitzone zurück \(gekennzeichnet durch das Suffix Z\).  
   
  Sie können die `toJSON`\-Methode für den `Date`\-Typ überschreiben, oder eine `toJSON`\-Methode für andere Objekttypen definieren, um die Daten eines bestimmten Objekttyps vor der JSON\-Serialisierung zu transformieren.  
   
@@ -86,7 +86,7 @@ var jsonText = JSON.stringify(dt);
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv58](../../includes/jsv58-md.md)] **Gilt für:** [Date\-Objekt](../../javascript/reference/date-object-javascript.md)  
+ [!INCLUDE[jsv58](../../javascript/reference/includes/jsv58-md.md)] **Gilt für:** [Date\-Objekt](../../javascript/reference/date-object-javascript.md)  
   
 ## Siehe auch  
  [JSON\-Objekt](../../javascript/reference/json-object-javascript.md)   

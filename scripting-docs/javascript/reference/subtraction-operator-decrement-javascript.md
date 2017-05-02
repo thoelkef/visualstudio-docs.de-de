@@ -69,7 +69,7 @@ result = number1 - number2;
  Der Operator wird auf die resultierende Zahl angewendet.  Wenn das Ergebnis in Syntax 2 ungleich Null ist, entspricht *result* der resultierenden Zahl mit umgekehrtem Vorzeichen.  Wenn die resultierende Zahl Null ist, ist *result* gleich Null.  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## Siehe auch  
  [Subtraktionszuweisungsoperator \(\-\=\)](../../javascript/reference/subtraction-assignment-operator-decrement-equal-javascript.md)   

@@ -65,7 +65,7 @@ document.write(s);
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv55](../../includes/jsv55-md.md)]  
+ [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
  **Gilt für**: [RegExp\-Objekt](../../javascript/reference/regexp-object-javascript.md)  
   

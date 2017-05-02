@@ -70,4 +70,4 @@ var req = new XMLHttpRequest();
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv10](../../includes/jsv10-md.md)]
+ [!INCLUDE[jsv10](../../javascript/reference/includes/jsv10-md.md)]

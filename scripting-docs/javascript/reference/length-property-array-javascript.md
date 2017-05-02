@@ -69,7 +69,7 @@ document.write(a.length);
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv2](../../includes/jsv2-md.md)]  
+ [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]  
   
 > [!NOTE]
 >  Ab Internet Explorer 9 \(Standardmodus\) werden in die Initialisierung eines Arrays eingeschlossene nachfolgende Trennzeichen anders behandelt.

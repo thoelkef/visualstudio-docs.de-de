@@ -50,7 +50,7 @@ dateObj.setFullYear(numYear[, numMonth[, numDate]])
  Dies ist optional.  Ein numerischer Wert gleich während Tag des Monats.  
   
 ## Hinweise  
- Alle **set**\-Methoden, denen optionale Argumente übergeben werden, verwenden den von den entsprechenden **get**\-Methoden zurückgegebenen Wert, wenn das optionale Argument nicht angegeben wurde.  Wenn das `numMonth`\-Argument optional ist, jedoch kein angegeben, [!INCLUDE[javascript](../../includes/javascript-md.md)] verwendet, die der Wert von der **getMonth**\-Methode zurückgegeben wurde.  
+ Alle **set**\-Methoden, denen optionale Argumente übergeben werden, verwenden den von den entsprechenden **get**\-Methoden zurückgegebenen Wert, wenn das optionale Argument nicht angegeben wurde.  Wenn das `numMonth`\-Argument optional ist, jedoch kein angegeben, [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] verwendet, die der Wert von der **getMonth**\-Methode zurückgegeben wurde.  
   
  Wenn der Wert eines Arguments größer als sein Kalenderbereich ist oder negativ ist, die Datumsrollforwards oder das rückwärts nach Bedarf.  
   
@@ -79,7 +79,7 @@ document.write (date2.toLocaleString());
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv3](../../includes/jsv3-md.md)]  
+ [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
  **Gilt für**: [Date\-Objekt](../../javascript/reference/date-object-javascript.md)  
   

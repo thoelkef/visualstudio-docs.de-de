@@ -104,7 +104,7 @@ document.write (s);
 >  Verwenden Sie das `Enumerator`\-Objekt, um die Member einer Auflistung zu durchlaufen.  
   
 ## Anforderungen  
- [!INCLUDE[jsv5](../../includes/jsv5-md.md)]  
+ [!INCLUDE[jsv5](../../javascript/reference/includes/jsv5-md.md)]  
   
 ## Siehe auch  
  [for\-Anweisung](../../javascript/reference/for-statement-javascript.md)   

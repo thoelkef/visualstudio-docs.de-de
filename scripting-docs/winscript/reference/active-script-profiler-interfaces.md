@@ -15,7 +15,7 @@ manager: "ghogen"
 caps.handback.revision: 14
 ---
 # Active Script Profiler-Schnittstelle
-Active Script\-Profilerschnittstellen geben Ihnen die Möglichkeit, Profilerstellungsereignisse vom [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Modul zu empfangen.  
+Active Script\-Profilerschnittstellen geben Ihnen die Möglichkeit, Profilerstellungsereignisse vom [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Modul zu empfangen.  
   
  Die Headerdatei "activprof.h" stellt die Schnittstellen bereit, die in diesem Abschnitt aufgeführt werden.  
   
@@ -45,7 +45,7 @@ Active Script\-Profilerschnittstellen geben Ihnen die Möglichkeit, Profilerstel
 > [!NOTE]
 >  Die Active Script\-Profilerschnittstellen waren erstmalig in Internet Explorer 8 enthalten.  Die Schnittstellen `IActiveScriptProfilerControl2` und `IActiveScriptProfilerCallback2` waren erstmalig in Internet Explorer 9 enthalten.  Die Schnittstellen [IActiveScriptProfilerControl3\-Schnittstelle](../../winscript/reference/iactivescriptprofilercontrol3-interface.md), [IActiveScriptProfilerCallback3\-Schnittstelle](../../winscript/reference/iactivescriptprofilercallback3-interface.md) und [IActiveScriptProfilerHeapEnum\-Schnittstelle](../../winscript/reference/iactivescriptprofilerheapenum-interface.md) waren erstmalig in Internet Explorer 10 enthalten.  Die [IActiveScriptProfilerControl5\-Schnittstelle](../../winscript/reference/iactivescriptprofilercontrol5-interface.md) war erstmalig in Internet Explorer 11 enthalten.  
 >   
->  In Internet Explorer 8 und in Internet Explorer 9 verwendet nur die [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Programmiersprache diese Schnittstellen, um Skriptprofilerstellung zu unterstützen.  
+>  In Internet Explorer 8 und in Internet Explorer 9 verwendet nur die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Programmiersprache diese Schnittstellen, um Skriptprofilerstellung zu unterstützen.  
   
 ## Siehe auch  
  [Windows Script\-Schnittstellenverweis](../../winscript/reference/windows-script-interfaces-reference.md)

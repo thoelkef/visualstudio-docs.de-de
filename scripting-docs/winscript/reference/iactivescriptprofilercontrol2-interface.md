@@ -23,8 +23,8 @@ Stellt Methoden bereit, die die Fähigkeit hinzu ein Profil zu erstellen oder zu
   
 |Methode|Description|  
 |-------------|-----------------|  
-|[IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)|Benachrichtigt den Profiler, dass Sie die Profilerstellung auf alle gültigen Skriptmodulen gestartet haben.  Dies ermöglicht Ihnen, erhält die vollständige Aufrufliste, wenn [!INCLUDE[javascript](../../includes/javascript-md.md)] ausgeführt wird, wenn Sie die Profilerstellung starten.|  
-|[IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)|Benachrichtigt den Profiler, dass Sie auf allen, anwendbaren Skriptmodulen Profilerstellung beendet werden.  Dies ermöglicht Ihnen, erhält die vollständige Aufrufliste, wenn [!INCLUDE[javascript](../../includes/javascript-md.md)] ausgeführt wird, wenn Sie beenden ein Profil zu erstellen.|  
+|[IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)|Benachrichtigt den Profiler, dass Sie die Profilerstellung auf alle gültigen Skriptmodulen gestartet haben.  Dies ermöglicht Ihnen, erhält die vollständige Aufrufliste, wenn [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] ausgeführt wird, wenn Sie die Profilerstellung starten.|  
+|[IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)|Benachrichtigt den Profiler, dass Sie auf allen, anwendbaren Skriptmodulen Profilerstellung beendet werden.  Dies ermöglicht Ihnen, erhält die vollständige Aufrufliste, wenn [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] ausgeführt wird, wenn Sie beenden ein Profil zu erstellen.|  
   
 ## Siehe auch  
  [IActiveScriptProfilerControl\-Schnittstelle](../../winscript/reference/iactivescriptprofilercontrol-interface.md)   

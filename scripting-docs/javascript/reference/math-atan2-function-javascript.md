@@ -48,7 +48,7 @@ Math.atan2(y, x)
  **Gilt für**: [Math\-Objekt](../../javascript/reference/math-object-javascript.md)  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## Siehe auch  
  [Math.atan\-Funktion](../../javascript/reference/math-atan-function-javascript.md)   

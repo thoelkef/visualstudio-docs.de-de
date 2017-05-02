@@ -38,7 +38,7 @@ Debugkonstanten geben konstante Werte zurück, die Eigenschaften des `Debug`\-Ob
 |`Debug.MS_ASYNC_OP_STATUS_ERROR`|Der asynchrone Vorgang verursachte einen Fehler.|3|  
   
 ## Anforderungen  
- [!INCLUDE[jsv11](../../includes/jsv11-md.md)]  
+ [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]  
   
 ## Siehe auch  
  [Debug.msTraceAsyncOperationCompleted\-Funktion](../../javascript/reference/debug-mstraceasyncoperationcompleted-function.md)   

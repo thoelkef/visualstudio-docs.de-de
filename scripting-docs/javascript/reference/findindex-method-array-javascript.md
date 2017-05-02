@@ -78,4 +78,4 @@ arrayObj.findIndex(callbackfn [, thisArg]);
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv12](../../includes/jsv12-md.md)]
+ [!INCLUDE[jsv12](../../javascript/reference/includes/jsv12-md.md)]

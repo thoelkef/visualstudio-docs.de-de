@@ -46,10 +46,10 @@ manager: "ghogen"
 caps.handback.revision: 20
 ---
 # JavaScript-Laufzeitfehler
-[!INCLUDE[javascript](../../includes/javascript-md.md)]\-Laufzeitfehler treten auf, wenn das Skript versucht, eine Aktion durchzuführen, die das System nicht ausführen kann. Laufzeitfehler können z. B. beim Auswerten von variablen Ausdrücken oder beim Zuordnen von Arbeitsspeicher auftreten.  
+[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Laufzeitfehler treten auf, wenn das Skript versucht, eine Aktion durchzuführen, die das System nicht ausführen kann. Laufzeitfehler können z. B. beim Auswerten von variablen Ausdrücken oder beim Zuordnen von Arbeitsspeicher auftreten.  
   
 ## Windows\-Runtime\-Fehler  
- Wenn Sie Windows\-Runtime\-APIs in Ihrer [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]\-App verwenden, werden möglicherweise JavaScript\-Fehler angezeigt, die aus Windows\-Runtime\-HRESULTs konvertiert wurden. Windows\-Runtime\-HRESULTs im Bereich über 0x80070000 werden in JavaScript\-Fehler konvertiert, indem der Hexadezimalwert der niedrigen Bits in einen Dezimalwert konvertiert wird. So wird beispielsweise das HRESULT 0x80070032 in den Dezimalwert 50 konvertiert, und der JavaScript\-Fehler lautet SCRIPT50. Das HRESULT 0x80074005 wird in den Dezimalwert 16389 konvertiert, und der JavaScript\-Fehler lautet SCRIPT16389.  
+ Wenn Sie Windows\-Runtime\-APIs in Ihrer [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-App verwenden, werden möglicherweise JavaScript\-Fehler angezeigt, die aus Windows\-Runtime\-HRESULTs konvertiert wurden. Windows\-Runtime\-HRESULTs im Bereich über 0x80070000 werden in JavaScript\-Fehler konvertiert, indem der Hexadezimalwert der niedrigen Bits in einen Dezimalwert konvertiert wird. So wird beispielsweise das HRESULT 0x80070032 in den Dezimalwert 50 konvertiert, und der JavaScript\-Fehler lautet SCRIPT50. Das HRESULT 0x80074005 wird in den Dezimalwert 16389 konvertiert, und der JavaScript\-Fehler lautet SCRIPT16389.  
   
 ## Fehler  
   

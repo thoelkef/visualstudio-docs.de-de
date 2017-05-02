@@ -34,7 +34,7 @@ Object.defineProperty(object, propertyname, descriptor)
   
 ## Parameter  
  `object`  
- Erforderlich.  Das Objekt, zu dem die Eigenschaft hinzugefügt oder dessen Eigenschaft geändert werden soll.  Dies kann ein systemeigenes [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Objekt \(d. h., ein benutzerdefiniertes Objekt oder ein integriertes Objekt\) oder ein DOM\-Objekt sein.  
+ Erforderlich.  Das Objekt, zu dem die Eigenschaft hinzugefügt oder dessen Eigenschaft geändert werden soll.  Dies kann ein systemeigenes [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Objekt \(d. h., ein benutzerdefiniertes Objekt oder ein integriertes Objekt\) oder ein DOM\-Objekt sein.  
   
  `propertyname`  
  Erforderlich.  Eine Zeichenfolge, die den Namen der Eigenschaft enthält.  
@@ -231,9 +231,9 @@ document.write(elem.querySelector);
 ```  
   
 ## Anforderungen  
- Internet Explorer 9 \(Standardmodus\) und Internet Explorer 10 \(Standardmodus\) sowie [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]\-Apps unterstützen alle Funktionen.  
+ Internet Explorer 9 \(Standardmodus\) und Internet Explorer 10 \(Standardmodus\) sowie [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-Apps unterstützen alle Funktionen.  
   
- [!INCLUDE[jsv58textspecific](../../includes/jsv58textspecific-md.md)] unterstützt DOM\-Objekte, jedoch keine benutzerdefinierten Objekte.  Die Attribute `enumerable` und `configurable` können angegeben werden, werden jedoch nicht verwendet.  
+ [!INCLUDE[jsv58textspecific](../../javascript/reference/includes/jsv58textspecific-md.md)] unterstützt DOM\-Objekte, jedoch keine benutzerdefinierten Objekte.  Die Attribute `enumerable` und `configurable` können angegeben werden, werden jedoch nicht verwendet.  
   
 ## Siehe auch  
  [Dokumentobjektmodell\-Prototypen, Teil 2: Unterstützung des Accessors \(Getter\/Setter\)](http://msdn.microsoft.com/library/dd229916\(v=VS.85\).aspx)   

@@ -46,12 +46,12 @@ dateObj.getYear()
 > [!IMPORTANT]
 >  Diese Methode ist veraltet und wird nur aus Gründen der Abwärtskompatibilität bereitgestellt.  Verwenden Sie stattdessen die `getFullYear`\-Methode.  
   
- In [!INCLUDE[jsv1textspecific](../../includes/jsv1textspecific-md.md)] und dann in Internet Explorer\-Versionen, die mit [!INCLUDE[jsv9textspecific](../../includes/jsv9textspecific-md.md)] beginnen, ist der zurückgegebene Wert das gespeicherte Jahr minus 1900.  Das Jahr 1899 wird z. B. als \-1 und das Jahr 2000 als 100 zurückgegeben.  
+ In [!INCLUDE[jsv1textspecific](../../javascript/reference/includes/jsv1textspecific-md.md)] und dann in Internet Explorer\-Versionen, die mit [!INCLUDE[jsv9textspecific](../../javascript/reference/includes/jsv9textspecific-md.md)] beginnen, ist der zurückgegebene Wert das gespeicherte Jahr minus 1900.  Das Jahr 1899 wird z. B. als \-1 und das Jahr 2000 als 100 zurückgegeben.  
   
- In [!INCLUDE[jsv3textspecific](../../includes/jsv3textspecific-md.md)] durch [!INCLUDE[jsv58textspecific](../../includes/jsv58textspecific-md.md)], hängt die Formel im Jahr ab.  Während der Jahre 1900 bis 1999, ist der zurückgegebene Wert ein zweistelliger Wert, der das gespeicherte Jahr minus 1900 ist.  Für Datumsangabenaußenseite, das der Fensterbereich, wird die vierstellige Jahreszahl zurückgegeben.  Beispielsweise wird 1996 als 96 zurückgegeben, aber 1825 und 2025 werden zurückgegeben, wie ist.  
+ In [!INCLUDE[jsv3textspecific](../../javascript/reference/includes/jsv3textspecific-md.md)] durch [!INCLUDE[jsv58textspecific](../../javascript/reference/includes/jsv58textspecific-md.md)], hängt die Formel im Jahr ab.  Während der Jahre 1900 bis 1999, ist der zurückgegebene Wert ein zweistelliger Wert, der das gespeicherte Jahr minus 1900 ist.  Für Datumsangabenaußenseite, das der Fensterbereich, wird die vierstellige Jahreszahl zurückgegeben.  Beispielsweise wird 1996 als 96 zurückgegeben, aber 1825 und 2025 werden zurückgegeben, wie ist.  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
  **Gilt für**: [Date\-Objekt](../../javascript/reference/date-object-javascript.md)  
   

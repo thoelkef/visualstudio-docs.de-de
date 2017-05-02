@@ -51,7 +51,7 @@ document.write(x);
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## Siehe auch  
  [Math.min\-Funktion](../../javascript/reference/math-min-function-javascript.md)

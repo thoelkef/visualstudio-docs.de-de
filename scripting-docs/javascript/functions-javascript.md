@@ -23,21 +23,21 @@ manager: "ghogen"
 caps.handback.revision: 24
 ---
 # Funktionen (JavaScript)
-[!INCLUDE[javascript](../includes/javascript-md.md)]\-Funktionen führen Aktionen aus; sie können auch Werte zurückgeben.  Manchmal handelt es sich dabei um Ergebnisse von Berechnungen oder Vergleichen.  Funktionen werden auch als „globale Methoden“ bezeichnet.  
+[!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Funktionen führen Aktionen aus; sie können auch Werte zurückgeben.  Manchmal handelt es sich dabei um Ergebnisse von Berechnungen oder Vergleichen.  Funktionen werden auch als „globale Methoden“ bezeichnet.  
   
  Funktionen vereinen mehrere Vorgänge unter einem einzigen Namen.  Auf diese Weise können Sie den Code optimieren.  Sie können einen Satz Anweisungen schreiben, ihn benennen und dann den gesamten Anweisungssatz ausführen, indem Sie ihn aufrufen und alle erforderlichen Daten an ihn übergeben.  
   
  Sie übergeben Informationen an eine Funktion, indem Sie die Informationen nach dem Namen der Funktion in Klammern einschließen.  An eine Funktion übergebene Informationen werden als Argumente oder Parameter bezeichnet.  Manche Funktionen akzeptieren überhaupt keine Argumente, während andere ein oder mehrere Argumente verwenden können.  Bei einigen Funktionen hängt die Anzahl der Argumente davon ab, wie Sie die Funktion verwenden.  
   
- [!INCLUDE[javascript](../includes/javascript-md.md)] unterstützt zwei Arten von Funktionen: in die Sprache integrierte und vom Benutzer erstellte Funktionen.  
+ [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] unterstützt zwei Arten von Funktionen: in die Sprache integrierte und vom Benutzer erstellte Funktionen.  
   
 ## Integrierte Funktionen  
- Die [!INCLUDE[javascript](../includes/javascript-md.md)]\-Sprache enthält mehrere integrierte Funktionen.  Mit einigen dieser Funktionen können Sie Ausdrücke und Sonderzeichen verarbeiten, während andere Zeichenfolgen in numerische Werte konvertieren.  
+ Die [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Sprache enthält mehrere integrierte Funktionen.  Mit einigen dieser Funktionen können Sie Ausdrücke und Sonderzeichen verarbeiten, während andere Zeichenfolgen in numerische Werte konvertieren.  
   
  Informationen zu diesen integrierten Funktionen finden Sie unter [JavaScript\-Methoden](../javascript/reference/javascript-methods.md)  
   
 ## Erstellen eigener Funktionen  
- Sie können eigene Funktionen erstellen und dort einsetzen, wo Sie sie benötigen.  Eine Funktionsdefinition besteht aus einer Funktionsanweisung und einem Block von [!INCLUDE[javascript](../includes/javascript-md.md)]\-Anweisungen.  
+ Sie können eigene Funktionen erstellen und dort einsetzen, wo Sie sie benötigen.  Eine Funktionsdefinition besteht aus einer Funktionsanweisung und einem Block von [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Anweisungen.  
   
  Die **checkTriplet**\-Funktion im folgenden Beispiel verwendet als Argumente die Seitenlängen eines Dreiecks.  Mit diesen Informationen berechnet die Funktion, ob es sich um ein rechtwinkliges Dreieck handelt. Dazu wird geprüft, ob die drei Zahlen den Satz des Pythagoras erfüllen \(das Quadrat der Länge der Hypotenuse eines rechtwinkligen Dreiecks ist gleich der Summe der Quadrate der beiden anderen Seiten\).  Die checkTriplet\-Funktion ruft eine von zwei weiteren Funktionen auf, um diesen Test durchzuführen.  
   
@@ -131,7 +131,7 @@ var result = checkTriplet(sideA, sideB, sideC);
  Werte auf der linken Seite des Pfeils, die in Klammern eingeschlossen sein können, geben die an die Funktion übergebenen Argumente an.  Für ein einzelnes Funktionsargument sind keine Klammern erforderlich.  Klammern sind erforderlich, wenn keine Argumente übergeben werden.  Die Funktionsdefinition auf der rechten Seite des Pfeils kann entweder ein Ausdruck sein, z. B. `v + 1`, oder ein Block von Anweisungen, die in geschweifte Klammern \({}\) eingeschlossen sind.  
   
 > [!IMPORTANT]
->  Die Pfeilfunktionssyntax wird nur in [!INCLUDE[jsv12text](../includes/jsv12text-md.md)] unterstützt.  
+>  Die Pfeilfunktionssyntax wird nur in [!INCLUDE[jsv12text](../javascript/includes/jsv12text-md.md)] unterstützt.  
   
  Der `new`\-Operator kann für eine Pfeilfunktion nicht verwendet werden.  
   
@@ -207,7 +207,7 @@ var bob = {
  Sie können einen Standardwert für einen Parameter in einer Funktion angeben, indem Sie ihm einen Anfangswert zuweisen.  Der Standardwert kann ein konstanter Wert oder ein Ausdruck sein.  
   
 > [!IMPORTANT]
->  Standardparameter werden nur in [!INCLUDE[jsv12textExp](../includes/jsv12textexp-md.md)] unterstützt.  
+>  Standardparameter werden nur in [!INCLUDE[jsv12textExp](../javascript/includes/jsv12textexp-md.md)] unterstützt.  
   
  Im folgenden Beispiel hat „y“ den Standardwert 10 und „z“ den Standardwert 20.  Die Funktion verwendet 10 als Wert von „y“, es sei denn, die aufrufende Funktion übergibt einen eindeutigen \(oder nicht definierten\) Wert als zweites Argument.  Die Funktion verwendet 20 als Wert von „z“, es sei denn, die aufrufende Funktion übergibt einen eindeutigen \(oder nicht definierten\) Wert als drittes Argument.  
   
@@ -239,7 +239,7 @@ console.log(f(3, 3, 3));
 -   Ein Rest\-Parameter enthält nur die aufeinander folgenden Argumente, die nicht als separate \(benannte\) Argumente übergeben werden \(im Gegensatz dazu enthält das `arguments`\-Objekt alle Argumente, die an die Funktion übergeben werden\).  
   
 > [!IMPORTANT]
->  Rest\-Parameter und der Spread\-Operator werden nur in [!INCLUDE[jsv12text](../includes/jsv12text-md.md)] unterstützt.  
+>  Rest\-Parameter und der Spread\-Operator werden nur in [!INCLUDE[jsv12text](../javascript/includes/jsv12text-md.md)] unterstützt.  
   
  Im folgenden Codebeispiel werden „hello“ und „true“ als Arraywerte übergeben und im y\-Parameter gespeichert.  Der Rest\-Parameter muss der letzte Parameter der Funktion sein.  
   

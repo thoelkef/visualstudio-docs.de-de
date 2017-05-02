@@ -55,7 +55,7 @@ result += expression
 |Ein Ausdruck ist numerisch, der andere eine Zeichenfolge|Verketten|  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## Siehe auch  
  [Additionsoperator \(\+\)](../../javascript/reference/addition-operator-decrement-javascript.md)   

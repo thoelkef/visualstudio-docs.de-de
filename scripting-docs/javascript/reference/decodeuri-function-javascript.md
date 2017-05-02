@@ -61,7 +61,7 @@ document.write (uriDecode);
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv55](../../includes/jsv55-md.md)]  
+ [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
 ## Siehe auch  
  [decodeURIComponent\-Funktion](../../javascript/reference/decodeuricomponent-function-javascript.md)   

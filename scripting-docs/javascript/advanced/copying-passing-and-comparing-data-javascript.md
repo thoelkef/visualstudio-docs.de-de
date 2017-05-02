@@ -31,7 +31,7 @@ manager: "ghogen"
 caps.handback.revision: 9
 ---
 # Kopieren, &#220;bergeben und Vergleichen von Daten (JavaScript)
-Die Verarbeitung von Daten in [!INCLUDE[javascript](../../includes/javascript-md.md)] hängt vom Datentyp ab.  
+Die Verarbeitung von Daten in [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] hängt vom Datentyp ab.  
   
 ## Nach Wert oder Nach Verweis  
  Zahlen und boolesche Werte \(**true** und **false**\) werden *nach Wert* kopiert, übergeben und verglichen.  Beim Kopieren oder Übergeben nach Wert belegen Sie Speicherplatz auf dem Computer und kopieren den Wert des Originals dorthin.  Wenn Sie dann das Original ändern, ist die Kopie davon nicht betroffen \(und umgekehrt\), da es sich um zwei getrennte Entitäten handelt.  

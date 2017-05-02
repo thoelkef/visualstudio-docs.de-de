@@ -26,8 +26,8 @@ caps.handback.revision: 15
 # Operatorrangfolge (JavaScript)
 Die Operatorrangfolge definiert die Reihenfolge, in der Vorgänge ausgeführt werden, wenn ein Ausdruck ausgewertet wird.  Operationen mit höherem Vorrang werden vor solchen mit niedrigerem Vorrang durchgeführt.  Beispielsweise wird eine Multiplikation vor einer Addition durchgeführt.  
   
-## [!INCLUDE[javascript](../includes/javascript-md.md)]\-Operatoren  
- Die folgende Tabelle zeigt die [!INCLUDE[javascript](../includes/javascript-md.md)]\-Operatoren von der höchsten bis zur niedrigsten Rangfolge.  Operatoren mit der gleichen Rangfolge werden von links nach rechts ausgewertet.  
+## [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Operatoren  
+ Die folgende Tabelle zeigt die [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Operatoren von der höchsten bis zur niedrigsten Rangfolge.  Operatoren mit der gleichen Rangfolge werden von links nach rechts ausgewertet.  
   
 |Operator|Beschreibung|  
 |--------------|------------------|  

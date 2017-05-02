@@ -50,4 +50,4 @@ if (x.constructor == Error)
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv2](../../includes/jsv2-md.md)]
+ [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]

@@ -48,10 +48,10 @@ dateObj.setYear(numYear)
  Um die Jahreszahl eines `Date`\-Objekts auf 1997 festzulegen, verwenden Sie den Aufruf **setYear\(97\)**.  Um die Jahreszahl auf 2010 festzulegen, verwenden Sie den Aufruf **setYear\(2010\)**.  Um das Jahr auf einen Bereich von 0 bis 99 festzulegen, verwenden Sie die `setFullYear`\-Methode.  
   
 > [!NOTE]
->  Bei [!INCLUDE[javascript](../../includes/javascript-md.md)] Version 1.0 verwendet `setYear` einen Wert, der sich aus der Addition von 1900 und der Jahreszahl ergibt, die von `numYear` bereitgestellt wird. Dabei ist die Jahreszahl nicht relevant.  Wenn Sie z. B. das Jahr 1899 festlegen möchten, ist `numYear` \-1. Wenn Sie das Jahr 2000 festlegen möchten, entspricht `numYear` 100.  
+>  Bei [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Version 1.0 verwendet `setYear` einen Wert, der sich aus der Addition von 1900 und der Jahreszahl ergibt, die von `numYear` bereitgestellt wird. Dabei ist die Jahreszahl nicht relevant.  Wenn Sie z. B. das Jahr 1899 festlegen möchten, ist `numYear` \-1. Wenn Sie das Jahr 2000 festlegen möchten, entspricht `numYear` 100.  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
  **Gilt für**: [Date\-Objekt](../../javascript/reference/date-object-javascript.md)  
   

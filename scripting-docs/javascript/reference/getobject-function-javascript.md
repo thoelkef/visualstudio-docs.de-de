@@ -52,7 +52,7 @@ GetObject([pathname] [, class])
  Erforderlich.  Typ oder Klasse des zu erstellenden Objekts.  
   
 ## Hinweise  
- Die `GetObject`\-Funktion wird in [!INCLUDE[jsv9text](../../includes/jsv9text-md.md)] und höher nicht unterstützt.  
+ Die `GetObject`\-Funktion wird in [!INCLUDE[jsv9text](../../javascript/includes/jsv9text-md.md)] und höher nicht unterstützt.  
   
  Verwenden Sie die `GetObject`\-Funktion, um auf ein Automatisierungsobjekt aus einer Datei zuzugreifen.  Weisen Sie der Objektvariablen das durch `GetObject` zurückgegebene Objekt zu.  Beispiel:  
   

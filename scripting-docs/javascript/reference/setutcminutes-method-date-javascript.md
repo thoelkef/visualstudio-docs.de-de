@@ -51,7 +51,7 @@ dateObj.setUTCMinutes(numMinutes[, numSeconds[, numMilli]])
  Optional.  Ein den Millisekunden entsprechender numerischer Wert.  
   
 ## Hinweise  
- Alle **set**\-Methoden, denen optionale Argumente übergeben werden, verwenden den von den entsprechenden **get**\-Methoden zurückgegebenen Wert, wenn kein optionales Argument angegeben wurde.  Wenn beispielsweise das *numSeconds*\-Argument nicht angegeben wird, verwendet [!INCLUDE[javascript](../../includes/javascript-md.md)] den Wert, der von der `getUTCSeconds`\-Methode zurückgegeben wird.  
+ Alle **set**\-Methoden, denen optionale Argumente übergeben werden, verwenden den von den entsprechenden **get**\-Methoden zurückgegebenen Wert, wenn kein optionales Argument angegeben wurde.  Wenn beispielsweise das *numSeconds*\-Argument nicht angegeben wird, verwendet [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] den Wert, der von der `getUTCSeconds`\-Methode zurückgegeben wird.  
   
  Um den Minutenwert unter Verwendung der Ortszeit zu ändern, verwenden Sie die `setMinutes`\-Methode.  
   
@@ -73,7 +73,7 @@ function SetUTCMinutesDemo(nmin, nsec){
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv3](../../includes/jsv3-md.md)]  
+ [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
  **Gilt für**: [Date\-Objekt](../../javascript/reference/date-object-javascript.md)  
   

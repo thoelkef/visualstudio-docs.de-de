@@ -87,4 +87,4 @@ var req = new XMLHttpRequest();
  Weitere Informationen zur Verwendung von `XmlHttpRequest` finden Sie unter [XMLHttpRequest enhancements](http://msdn.microsoft.com/de-de/be09137c-6546-441b-b953-dcbf72b77069).  
   
 ## Anforderungen  
- [!INCLUDE[jsv10](../../includes/jsv10-md.md)]
+ [!INCLUDE[jsv10](../../javascript/reference/includes/jsv10-md.md)]

@@ -59,7 +59,7 @@ document.write(dt);
 > [!IMPORTANT]
 >  Die Zeitzone, die in der Datumszeichenfolge angezeigt wird, entspricht der Zeitzone, die auf dem lokalen Computer festgelegt ist.  
 >   
->  [!INCLUDE[javascript](../includes/javascript-md.md)] ist flexibel bezüglich des Formats der Zeichenfolge, die Sie als Parameter verwenden.  Beispielsweise können Sie "8\-24\-2009", "24. August 2009" oder "24. Aug 2009" angeben.  
+>  [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] ist flexibel bezüglich des Formats der Zeichenfolge, die Sie als Parameter verwenden.  Beispielsweise können Sie "8\-24\-2009", "24. August 2009" oder "24. Aug 2009" angeben.  
   
  Sie können auch eine Zeit angeben.  Im folgenden Beispiel wird eine Möglichkeit dargestellt, ein Datum und eine Uhrzeit in ISO\-Format anzugeben.  Das "Z" steht für UTC\-Zeit.  
   
@@ -238,7 +238,7 @@ document.write("You are " + years + " years old.");
 ```  
   
 ## Vergleichen von Datumsangaben  
- Wenn Sie Daten in [!INCLUDE[javascript](../includes/javascript-md.md)] vergleichen, sollten Sie beachten, dass der `==`\-Operator nur dann `true` zurückgibt, wenn die Daten auf beiden Seiten des Operators auf das gleiche Objekt verweisen.  Wenn Sie zwei verschiedene `Date`\-Objekte auf dasselbe Datum festgelegt haben, gibt `date1 == date2``false` zurück.  Außerdem wird ein `Date`\-Objekt, für das lediglich das Datum, aber nicht die Uhrzeit festgelegt wird, so initialisiert, dass die Uhrzeit der Mitternacht des Datums entspricht.  Wenn Sie daher ein `Date` ohne festgelegte Uhrzeit mit beispielsweise `Date.now` vergleichen, sollten Sie beachten, dass `Date` auf Mitternacht festgelegt ist und `Date.now` nicht.  
+ Wenn Sie Daten in [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] vergleichen, sollten Sie beachten, dass der `==`\-Operator nur dann `true` zurückgibt, wenn die Daten auf beiden Seiten des Operators auf das gleiche Objekt verweisen.  Wenn Sie zwei verschiedene `Date`\-Objekte auf dasselbe Datum festgelegt haben, gibt `date1 == date2``false` zurück.  Außerdem wird ein `Date`\-Objekt, für das lediglich das Datum, aber nicht die Uhrzeit festgelegt wird, so initialisiert, dass die Uhrzeit der Mitternacht des Datums entspricht.  Wenn Sie daher ein `Date` ohne festgelegte Uhrzeit mit beispielsweise `Date.now` vergleichen, sollten Sie beachten, dass `Date` auf Mitternacht festgelegt ist und `Date.now` nicht.  
   
  Im folgenden Beispiel wird überprüft, ob das aktuelle Datum mit einem angegebenen Datum übereinstimmt, oder davor oder danach liegt.  Um das aktuelle Datum in `todayAtMidn` festzulegen, erstellt das Skript ein `Date`\-Objekt für das aktuelle Jahr, den Monat und den Tag.  
   

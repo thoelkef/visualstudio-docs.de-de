@@ -45,7 +45,7 @@ safeArray.lbound(dimension)
  Ist das VBArray leer, gibt die `lbound`\-Methode "undefined" zurück.  Ist `dimension` größer als die Anzahl der Dimensionen im VBArray oder negativ, generiert die Methode den Fehler "Index außerhalb des definierten Bereichs".  
   
 ## Beispiel  
- Das folgende Beispiel besteht aus drei Teilen.  Der erste Teil ist VBScript\-Code zum Erstellen eines Visual Basic\-SafeArrays.  Der zweite Teil besteht aus [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Code, der die Anzahl der Dimensionen des SafeArrays und die untere Grenze der einzelnen Dimensionen bestimmt.  Da das SafeArray in VBScript und nicht in Visual Basic erstellt wird, ist die untere Grenze immer gleich Null.  Beide Teile gehören in den \<HEAD\>\-Abschnitt einer HTML\-Seite.  Der dritte Teil ist [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Code, der vom \<BODY\>\-Abschnitt aus die Ausführung der beiden anderen Teile bewirkt.  
+ Das folgende Beispiel besteht aus drei Teilen.  Der erste Teil ist VBScript\-Code zum Erstellen eines Visual Basic\-SafeArrays.  Der zweite Teil besteht aus [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Code, der die Anzahl der Dimensionen des SafeArrays und die untere Grenze der einzelnen Dimensionen bestimmt.  Da das SafeArray in VBScript und nicht in Visual Basic erstellt wird, ist die untere Grenze immer gleich Null.  Beide Teile gehören in den \<HEAD\>\-Abschnitt einer HTML\-Seite.  Der dritte Teil ist [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Code, der vom \<BODY\>\-Abschnitt aus die Ausführung der beiden anderen Teile bewirkt.  
   
 ```javascript  
 <head>  
@@ -93,7 +93,7 @@ function VBArrayTest(vba){
 ```  
   
 ## Anforderungen  
- Wird in den folgenden Dokumentmodi unterstützt: Quirksmodus, Internet Explorer 6 \(Standardmodus\), Internet Explorer 7 \(Standardmodus\), Internet Explorer 8 \(Standardmodus\), Internet Explorer 9 \(Standardmodus\) und Internet Explorer 10 \(Standardmodus\).  Wird in [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]\-Apps nicht unterstützt.  Weitere Informationen finden Sie unter [Versionsinformationen](../../javascript/reference/javascript-version-information.md).  
+ Wird in den folgenden Dokumentmodi unterstützt: Quirksmodus, Internet Explorer 6 \(Standardmodus\), Internet Explorer 7 \(Standardmodus\), Internet Explorer 8 \(Standardmodus\), Internet Explorer 9 \(Standardmodus\) und Internet Explorer 10 \(Standardmodus\).  Wird in [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-Apps nicht unterstützt.  Weitere Informationen finden Sie unter [Versionsinformationen](../../javascript/reference/javascript-version-information.md).  
   
  **Gilt für**: [VBArray\-Objekt](../../javascript/reference/vbarray-object-javascript.md)  
   

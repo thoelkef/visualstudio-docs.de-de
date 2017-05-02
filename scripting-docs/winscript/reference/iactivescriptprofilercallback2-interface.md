@@ -32,7 +32,7 @@ Stellt Methoden bereit, die durch das Skriptmodul verwendet werden, um ein Profi
  Benachrichtigung von Funktionsaufrufen, die nicht Aufrufe in das DOM sind, wird von [IActiveScriptProfilerCallback\-Schnittstelle](../../winscript/reference/iactivescriptprofilercallback-interface.md) bereitgestellt.  
   
 > [!NOTE]
->  Um die Möglichkeit hinzuzufügen Profilerstellung starten und beenden wann ein Skript ausgeführt wird, rufen Sie die folgenden Methoden an.  Mit diesen Methoden, erhalten Sie die vollständige Aufrufliste, wenn [!INCLUDE[javascript](../../includes/javascript-md.md)] ausgeführt wird, wenn Sie die Profilerstellung starten oder beenden.  
+>  Um die Möglichkeit hinzuzufügen Profilerstellung starten und beenden wann ein Skript ausgeführt wird, rufen Sie die folgenden Methoden an.  Mit diesen Methoden, erhalten Sie die vollständige Aufrufliste, wenn [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] ausgeführt wird, wenn Sie die Profilerstellung starten oder beenden.  
 >   
 >  -   Rufen Sie [IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md) an, um den Profiler zu benachrichtigen, dass Sie die Profilerstellung gestartet haben.  
 > -   Rufen Sie [IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md) an, um den Profiler zu benachrichtigen, dass Sie bald beenden ein Profil zu erstellen.  

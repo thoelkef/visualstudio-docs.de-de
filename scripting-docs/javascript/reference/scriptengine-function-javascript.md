@@ -34,7 +34,7 @@ ScriptEngine()
 ```  
   
 ## Hinweise  
- Die Funktion `ScriptEngine` gibt „JScript“ zurück, womit [!INCLUDE[javascript](../../includes/javascript-md.md)] als das aktuelle Skriptmodul angegeben wird.  
+ Die Funktion `ScriptEngine` gibt „JScript“ zurück, womit [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] als das aktuelle Skriptmodul angegeben wird.  
   
 ## Beispiel  
  Das folgende Beispiel veranschaulicht die Verwendung der `ScriptEngine`\-Funktion:  
@@ -48,7 +48,7 @@ if (window.ScriptEngine) {
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv5](../../includes/jsv5-md.md)]  
+ [!INCLUDE[jsv5](../../javascript/reference/includes/jsv5-md.md)]  
   
 ## Siehe auch  
  [ScriptEngineBuildVersion\-Funktion](../../javascript/reference/scriptenginebuildversion-function-javascript.md)   

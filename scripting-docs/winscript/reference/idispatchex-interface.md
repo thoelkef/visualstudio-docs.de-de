@@ -21,7 +21,7 @@ caps.handback.revision: 12
 `IDispatchEx`, eine Erweiterung der `IDispatch`\-Schnittstelle, Stützfunktionen entsprechend für dynamische Sprachen wie Skriptsprachen.  In diesem Abschnitt werden die `IDispatchEx`\-Schnittstelle selbst, die Unterschiede zwischen `IDispatch` und `IDispatchEx` und das Grundprinzip für die Erweiterungen.  Es wird erwartet, dass Leser mit `IDispatch` vertraut sind und Zugriff auf die `IDispatch` Dokumentation haben.  
   
 ## Hinweise  
- `IDispatch` wurde im Wesentlichen für Microsoft Visual Basic entwickelt.  Die primäre Einschränkung von `IDispatch` ist, dass sie ausgegangen wird, dass Objekte statisch sind.  Das heißt, da Objekte nicht während der Laufzeit ändern, können Typinformationen sie vollständig zur Kompilierzeit beschreiben.  Dynamische Ablaufmodelle, die in den Skriptsprachen wie Visual Basic Scripting Edition \(VBScript\) und [!INCLUDE[javascript](../../includes/javascript-md.md)] und Objektmodelle wie Dynamic HTML gefunden werden, eine flexiblere Schnittstelle erfordern.  
+ `IDispatch` wurde im Wesentlichen für Microsoft Visual Basic entwickelt.  Die primäre Einschränkung von `IDispatch` ist, dass sie ausgegangen wird, dass Objekte statisch sind.  Das heißt, da Objekte nicht während der Laufzeit ändern, können Typinformationen sie vollständig zur Kompilierzeit beschreiben.  Dynamische Ablaufmodelle, die in den Skriptsprachen wie Visual Basic Scripting Edition \(VBScript\) und [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] und Objektmodelle wie Dynamic HTML gefunden werden, eine flexiblere Schnittstelle erfordern.  
   
  `IDispatchEx` wurde entwickelt, um alle Dienste von `IDispatch` sowie von einige Erweiterungen bereitzustellen, die für dynamischere spät gebundenen Sprachen wie Skriptsprachen geeignet sind.  Die zusätzlichen Funktionen von `IDispatchEx` über die hinaus, die von `IDispatch` bereitgestellt werden, sind:  
   
@@ -56,7 +56,7 @@ caps.handback.revision: 12
 -   Das DISPID muss von einem `IDispatch` oder des `IDispatchEx` ordnungsgemäß akzeptiert werden, die Methode\-sie den Member erkennen muss, wie gelöscht und einen entsprechenden Fehlercode zurückgeben \(normalerweise DISP\_E\_MEMBERNOTFOUND oder S\_FALSE\).  
   
 ## Beispiele  
- Dieser [!INCLUDE[javascript](../../includes/javascript-md.md)] Code in der Funktion test\(\) bewirkt Folgendes:  
+ Dieser [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Code in der Funktion test\(\) bewirkt Folgendes:  
   
 -   Erstellt ein neues Objekt, durch Aufrufen des `Object`\-Konstruktors und weist einen Zeiger auf das neue Objekt an den variablen Obj zu.  
   
@@ -113,7 +113,7 @@ function cat()
 </html>  
 ```  
   
- Code vom Steuerelement, Test, wird die gleiche Aufgabe wie die [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Funktion `test()`.  Beachten Sie, dass diese, Dispatchaufrufe in das ausgeführte [!INCLUDE[javascript](../../includes/javascript-md.md)] Modul gemacht und ändern Sie den Zustand des Moduls:  
+ Code vom Steuerelement, Test, wird die gleiche Aufgabe wie die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Funktion `test()`.  Beachten Sie, dass diese, Dispatchaufrufe in das ausgeführte [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Modul gemacht und ändern Sie den Zustand des Moduls:  
   
 -   Erhält der Dispatchzeiger zur Katzenfunktion mithilfe `GetDispID()`.  
   

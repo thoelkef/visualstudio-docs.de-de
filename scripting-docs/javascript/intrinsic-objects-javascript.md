@@ -24,7 +24,7 @@ manager: "ghogen"
 caps.handback.revision: 19
 ---
 # Systeminterne Objekte (JavaScript)
-[!INCLUDE[javascript](../includes/javascript-md.md)] stellt systeminterne \(oder „integrierte“\) Objekte bereit.  Es handelt sich dabei um die Objekte `Array`, `Boolean`, `Date`, `Error`, `Function`, **Global**, **JSON**, **Math**, **Number**, `Object`, `RegExp` und `String`.  Die systeminternen Objekte verfügen über zugehörige Methoden, Funktionen, Eigenschaften und Konstanten, die in der [Sprachreferenz](../javascript/reference/javascript-reference.md) ausführlich beschrieben werden.  
+[!INCLUDE[javascript](../javascript/includes/javascript-md.md)] stellt systeminterne \(oder „integrierte“\) Objekte bereit.  Es handelt sich dabei um die Objekte `Array`, `Boolean`, `Date`, `Error`, `Function`, **Global**, **JSON**, **Math**, **Number**, `Object`, `RegExp` und `String`.  Die systeminternen Objekte verfügen über zugehörige Methoden, Funktionen, Eigenschaften und Konstanten, die in der [Sprachreferenz](../javascript/reference/javascript-reference.md) ausführlich beschrieben werden.  
   
 ## Array\-Objekt  
  Die Feldindizes eines Arrays können als Eigenschaften eines Objekts betrachtet werden und werden durch ihren numerischen Index bezeichnet.  Beachten Sie, dass die benannten Eigenschaften, die einem Array hinzugefügt werden, nicht durch Zahlen indiziert werden können; sie sind von den Arrayelementen getrennt.  
@@ -47,17 +47,17 @@ theMonths[10] = "Nov";
 theMonths[11] = "Dec";  
 ```  
   
- Wenn Sie unter Verwendung des Schlüsselworts `Array` ein Array erstellen, nimmt [!INCLUDE[javascript](../includes/javascript-md.md)] eine **length**\-Eigenschaft in das Array auf, die die Anzahl der Einträge aufzeichnet.  Wenn Sie keine Zahl angeben, wird die Länge auf 0 gesetzt, und das Array enthält keine Einträge.  Wenn Sie eine Zahl angeben, wird die length\-Eigenschaft auf diesen Wert festgelegt.  Wenn Sie mehr als einen Parameter angeben, werden diese Parameter als Einträge im Array verwendet.  Der length\-Eigenschaft wird zusätzlich die Anzahl der Parameter zugewiesen. Betrachten Sie dazu das folgende Beispiel, das äquivalent zum vorherigen Beispiel ist.  
+ Wenn Sie unter Verwendung des Schlüsselworts `Array` ein Array erstellen, nimmt [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] eine **length**\-Eigenschaft in das Array auf, die die Anzahl der Einträge aufzeichnet.  Wenn Sie keine Zahl angeben, wird die Länge auf 0 gesetzt, und das Array enthält keine Einträge.  Wenn Sie eine Zahl angeben, wird die length\-Eigenschaft auf diesen Wert festgelegt.  Wenn Sie mehr als einen Parameter angeben, werden diese Parameter als Einträge im Array verwendet.  Der length\-Eigenschaft wird zusätzlich die Anzahl der Parameter zugewiesen. Betrachten Sie dazu das folgende Beispiel, das äquivalent zum vorherigen Beispiel ist.  
   
 ```javascript  
 var theMonths = new Array("Jan", "Feb", "Mar", "Apr", "May", "Jun",   
 "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");  
 ```  
   
- [!INCLUDE[javascript](../includes/javascript-md.md)] ändert automatisch den Wert von **length**, wenn Sie Elemente einem Array hinzufügen, das mit dem Schlüsselwort `Array` erstellt wurde.  Arrayindizes beginnen in [!INCLUDE[javascript](../includes/javascript-md.md)] immer bei 0 und nicht bei 1. Daher ist der Wert der length\-Eigenschaft stets um eins größer als der höchste Index im Array.  
+ [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] ändert automatisch den Wert von **length**, wenn Sie Elemente einem Array hinzufügen, das mit dem Schlüsselwort `Array` erstellt wurde.  Arrayindizes beginnen in [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] immer bei 0 und nicht bei 1. Daher ist der Wert der length\-Eigenschaft stets um eins größer als der höchste Index im Array.  
   
 ## String\-Objekt  
- In [!INCLUDE[javascript](../includes/javascript-md.md)] können Sie Zeichenfolgen \(und Zahlen\) so behandeln als wären es Objekte.  Das [string\-Objekt](../javascript/reference/string-object-javascript.md) verfügt über bestimmte integrierte Methoden, die Sie mit Zeichenfolgen verwenden können.  Eine dieser Methoden ist die [substring\-Methode](../javascript/reference/substring-method-string-javascript.md), die einen Teil der Zeichenfolge zurückgibt.  Der Methode werden zwei Zahlen als Argumente übergeben.  
+ In [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] können Sie Zeichenfolgen \(und Zahlen\) so behandeln als wären es Objekte.  Das [string\-Objekt](../javascript/reference/string-object-javascript.md) verfügt über bestimmte integrierte Methoden, die Sie mit Zeichenfolgen verwenden können.  Eine dieser Methoden ist die [substring\-Methode](../javascript/reference/substring-method-string-javascript.md), die einen Teil der Zeichenfolge zurückgibt.  Der Methode werden zwei Zahlen als Argumente übergeben.  
   
 ```javascript  
 var aString = "0123456789";  
@@ -95,7 +95,7 @@ var volume = (4/3)*(Math.PI*Math.pow(radius,3));
 ```  
   
 ## Date\-Objekt  
- Mit dem `Date`\-Objekt können beliebige Datums\- und Uhrzeitangaben dargestellt, das aktuelle Systemdatum abgerufen und die Zeit zwischen Datumsangaben berechnet werden.  Es verfügt über mehrere vordefinierte Eigenschaften und Methoden.  Im Allgemeinen stellt das `Date`\-Objekt den Wochentag, den Monat, den Tag und das Jahr sowie die Uhrzeit in Stunden, Minuten und Sekunden bereit.  Diese Informationen basieren auf der Anzahl von Millisekunden seit dem 1. Januar 1970, 00:00: 00,000 GMT, d. h. Greenwich Mean Time \(der bevorzugte Begriff lautet UTC oder „Universal Coordinated Time“ bzw. koordinierte Weltzeit und bezieht sich auf die vom Weltzeitstandard ausgegebenen Signale\).  [!INCLUDE[javascript](../includes/javascript-md.md)] kann Datumsangaben verarbeiten, die ungefähr im Bereich von 250.000 v. Chr.  bis 255.000 n. Chr. liegen.  
+ Mit dem `Date`\-Objekt können beliebige Datums\- und Uhrzeitangaben dargestellt, das aktuelle Systemdatum abgerufen und die Zeit zwischen Datumsangaben berechnet werden.  Es verfügt über mehrere vordefinierte Eigenschaften und Methoden.  Im Allgemeinen stellt das `Date`\-Objekt den Wochentag, den Monat, den Tag und das Jahr sowie die Uhrzeit in Stunden, Minuten und Sekunden bereit.  Diese Informationen basieren auf der Anzahl von Millisekunden seit dem 1. Januar 1970, 00:00: 00,000 GMT, d. h. Greenwich Mean Time \(der bevorzugte Begriff lautet UTC oder „Universal Coordinated Time“ bzw. koordinierte Weltzeit und bezieht sich auf die vom Weltzeitstandard ausgegebenen Signale\).  [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] kann Datumsangaben verarbeiten, die ungefähr im Bereich von 250.000 v. Chr.  bis 255.000 n. Chr. liegen.  
   
  Um ein neues `Date`\-Objekt zu erstellen, verwenden Sie den **new**\-Operator, wie im folgenden Beispiel gezeigt.  
   
@@ -107,7 +107,7 @@ var thisDay = thisMonth  + " " + toDay.getDate() + ", " + thisYear;
 ```  
   
 ## Number\-Objekt  
- Zusätzlich zu den speziellen numerischen Konstanten \(z. B. `PI`\), die im **Math**\-Objekt verfügbar sind, sind einige andere Konstanten in [!INCLUDE[javascript](../includes/javascript-md.md)] über das **Number**\-Objekt verfügbar.  
+ Zusätzlich zu den speziellen numerischen Konstanten \(z. B. `PI`\), die im **Math**\-Objekt verfügbar sind, sind einige andere Konstanten in [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] über das **Number**\-Objekt verfügbar.  
   
 |Konstante|Beschreibung|  
 |---------------|------------------|  

@@ -33,7 +33,7 @@ array.constructor
 ## Hinweise  
  Der erforderliche `array`\-Parameter enthält den Namen eines Arrays.  
   
- Die `constructor`\-Eigenschaft ist ein Member des Prototyps eines jeden Objekts, das einen Prototyp besitzt.  Dies schließt alle systeminternen [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Objekte mit Ausnahme der Objekte `Global` und `Math` ein.  Die `constructor`\-Eigenschaft enthält einen Verweis auf die Funktion, mit der die Instanzen des betreffenden Objekts erstellt werden.  
+ Die `constructor`\-Eigenschaft ist ein Member des Prototyps eines jeden Objekts, das einen Prototyp besitzt.  Dies schließt alle systeminternen [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Objekte mit Ausnahme der Objekte `Global` und `Math` ein.  Die `constructor`\-Eigenschaft enthält einen Verweis auf die Funktion, mit der die Instanzen des betreffenden Objekts erstellt werden.  
   
 ## Beispiel  
  Das folgende Beispiel veranschaulicht die Verwendung der constructor\-Eigenschaft.  
@@ -52,4 +52,4 @@ else
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv2](../../includes/jsv2-md.md)]
+ [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]

@@ -31,7 +31,7 @@ caps.handback.revision: 10
  Das Sprachmodul implementiert [IActiveScriptProfilerControl\-Schnittstelle](../winscript/reference/iactivescriptprofilercontrol-interface.md).  
   
 > [!NOTE]
->  Die [!INCLUDE[javascript](../includes/javascript-md.md)] Sprachenlaufzeit überprüft die JS\_PROFILER\-Umgebungsvariable auf Erstellung, ob die Profilerstellung zu bestimmen, aktiviert werden soll.  Wenn diese Variable auf den CLSID des Profilers festgelegt wird, erstellt die Sprachenlaufzeit eine Instanz des COM\-Objekts Profiler, mit dem Wert der Variablen, um zu bestimmen, die zum Erstellen der Profiler.  
+>  Die [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] Sprachenlaufzeit überprüft die JS\_PROFILER\-Umgebungsvariable auf Erstellung, ob die Profilerstellung zu bestimmen, aktiviert werden soll.  Wenn diese Variable auf den CLSID des Profilers festgelegt wird, erstellt die Sprachenlaufzeit eine Instanz des COM\-Objekts Profiler, mit dem Wert der Variablen, um zu bestimmen, die zum Erstellen der Profiler.  
   
 ## Host  
  Der Host stellt das Sprachmodul erstellt und enthält das Sprachmodul mit den Skripts, ausgeführt werden.  Ein Smarthost stellt auch den Dokumentenkontext, der von einem Debugger oder einen Profiler verwendet werden kann, um eine bessere Informationen bereitzustellen, wenn Sie debuggen oder ein Profil erstellen.  

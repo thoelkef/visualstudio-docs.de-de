@@ -23,7 +23,7 @@ manager: "ghogen"
 caps.handback.revision: 10
 ---
 # JavaScript-Operatoren
-In der folgenden Tabelle werden die [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Operatoren aufgeführt.  
+In der folgenden Tabelle werden die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Operatoren aufgeführt.  
   
 ## Operatoren  
   

@@ -42,7 +42,7 @@ Debug.msTraceAsyncCallbackStarting(asyncOperationId)
  `asyncOperationId` muss dem Vorgangsnamen entsprechen, der zuvor von `Debug.msTraceAsyncOperationStarting` zurückgegeben wurde.  
   
 ## Beispiel  
- Der folgende Code enthält ein Beispiel für das Verfolgen eines asynchronen Aufrufs für eine [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]\-App.  
+ Der folgende Code enthält ein Beispiel für das Verfolgen eines asynchronen Aufrufs für eine [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-App.  
   
 ```javascript  
 function asyncWrapperFunction() {  
@@ -67,4 +67,4 @@ asyncWrapperFunction();
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv11](../../includes/jsv11-md.md)]
+ [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]

@@ -23,7 +23,7 @@ manager: "ghogen"
 caps.handback.revision: 13
 ---
 # Operatoren (JavaScript)
-[!INCLUDE[javascript](../includes/javascript-md.md)] verfügt über eine umfassende Auswahl von arithmetischen Operatoren. Neben einigen nicht kategorisierbaren Operatoren sind dies u. a. arithmetische, logische, bitweise und Zuweisungsoperatoren.  Weitere Erläuterungen und Beispiele finden Sie in den Themen zu bestimmten Operatoren.  
+[!INCLUDE[javascript](../javascript/includes/javascript-md.md)] verfügt über eine umfassende Auswahl von arithmetischen Operatoren. Neben einigen nicht kategorisierbaren Operatoren sind dies u. a. arithmetische, logische, bitweise und Zuweisungsoperatoren.  Weitere Erläuterungen und Beispiele finden Sie in den Themen zu bestimmten Operatoren.  
   
 ## Arithmetische Operatoren  
   

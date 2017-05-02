@@ -83,7 +83,7 @@ Error Name: TypeError
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv55](../../includes/jsv55-md.md)]  
+ [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
  **Gilt für**: [Error\-Objekt](../../javascript/reference/error-object-javascript.md)  
   

@@ -49,7 +49,7 @@ result = expression
  Der Operator \= verhält sich wie andere Operatoren, sodass Ausdrücke, die ihn enthalten, einen Wert haben.  Somit können Zuweisungsoperatoren wie folgt verkettet werden: `j = k = l = 0`.  In diesem Fall sind `j`, `k` und `l` gleich 0 \(null\).  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## Siehe auch  
  [Operatorrangfolge](../../javascript/operator-subtractprecedence-javascript.md)   

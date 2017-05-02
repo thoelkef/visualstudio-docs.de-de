@@ -26,7 +26,7 @@ manager: "ghogen"
 caps.handback.revision: 13
 ---
 # Comment-Anweisungen (JavaScript)
-Veranlasst den [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Parser, Kommentare zu ignorieren.  
+Veranlasst den [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Parser, Kommentare zu ignorieren.  
   
 ## Syntax  
   
@@ -54,7 +54,7 @@ condStatement
 ## Hinweise  
  Das `comment`\-Argument ist der Text eines Kommentars, den Sie in Ihr Skript einschließen möchten.  Das `condStatement`\-Argument muss verwendet werden, wenn die bedingte Kompilierung aktiviert ist.  Wenn einzeilige Kommentare verwendet werden, darf kein Leerzeichen zwischen den "\/ \/"\- und "@"\-Zeichen stehen.  
   
- Verwenden Sie Kommentare, um zu verhindern, dass Teile eines Skripts vom [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Parser gelesen werden.  Sie können Kommentare für erläuternde Hinweise in einem Programm verwenden.  
+ Verwenden Sie Kommentare, um zu verhindern, dass Teile eines Skripts vom [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Parser gelesen werden.  Sie können Kommentare für erläuternde Hinweise in einem Programm verwenden.  
   
  Wenn einzeilige Kommentare verwendet werden, ignoriert der Parser Text zwischen den Kommentarzeichen und dem Ende der Zeile.  Wenn mehrzeilige Kommentare verwendet werden, ignoriert der Parser Text zwischen den Start\- und Endzeichen.  
   
@@ -87,4 +87,4 @@ function myfunction(arg1, arg2){
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]

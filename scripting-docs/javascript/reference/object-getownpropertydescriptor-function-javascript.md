@@ -85,9 +85,9 @@ for (var prop in desc2) {
 ```  
   
 ## Anforderungen  
- Alle Funktionen werden in [!INCLUDE[jsv9text](../../includes/jsv9text-md.md)] unterstützt.  
+ Alle Funktionen werden in [!INCLUDE[jsv9text](../../javascript/includes/jsv9text-md.md)] unterstützt.  
   
- [!INCLUDE[jsv58textspecific](../../includes/jsv58textspecific-md.md)] unterstützt DOM\-Objekte, jedoch keine benutzerdefinierten Objekte.  Die Attribute `enumerable` und `configurable` können angegeben werden, werden jedoch nicht verwendet.  
+ [!INCLUDE[jsv58textspecific](../../javascript/reference/includes/jsv58textspecific-md.md)] unterstützt DOM\-Objekte, jedoch keine benutzerdefinierten Objekte.  Die Attribute `enumerable` und `configurable` können angegeben werden, werden jedoch nicht verwendet.  
   
 ## Siehe auch  
  [Dokumentobjektmodell\-Prototypen, Teil 2: Accessorunterstützung \(getter\/setter\)](http://msdn.microsoft.com/library/dd229916\(v=VS.85\).aspx)   

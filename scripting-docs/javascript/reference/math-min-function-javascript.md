@@ -50,7 +50,7 @@ document.write(x);
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## Siehe auch  
  [Math.max\-Funktion](../../javascript/reference/math-max-function-javascript.md)

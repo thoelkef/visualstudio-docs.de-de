@@ -67,7 +67,7 @@ with (Math){
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## Siehe auch  
  [this\-Anweisung](../../javascript/reference/this-statement-javascript.md)

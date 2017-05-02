@@ -57,7 +57,7 @@ document.write(ar.toString());
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv55](../../includes/jsv55-md.md)]  
+ [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
 ## Siehe auch  
  [shift\-Methode \(Array\)](../../javascript/reference/shift-method-array-javascript.md)

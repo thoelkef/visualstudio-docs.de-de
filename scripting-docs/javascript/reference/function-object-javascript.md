@@ -51,12 +51,12 @@ functionName = new Function( [argname1,  [... argnameN,]] body );
  Optional.  Eine Liste der Argumente, die die Funktion akzeptiert.  
   
  `body`  
- Optional.  Eine Zeichenfolge mit dem [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Codeblock, der ausgeführt werden soll, wenn die Funktion aufgerufen wird.  
+ Optional.  Eine Zeichenfolge mit dem [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Codeblock, der ausgeführt werden soll, wenn die Funktion aufgerufen wird.  
   
 ## Hinweise  
- Die Funktion ist ein Basisdatentyp in [!INCLUDE[javascript](../../includes/javascript-md.md)].  Syntax 1 erstellt einen Funktionswert, den [!INCLUDE[javascript](../../includes/javascript-md.md)] gegebenenfalls in ein `Function`\-Objekt konvertiert.  [!INCLUDE[javascript](../../includes/javascript-md.md)] konvertiert `Function`\-Objekte, die von Syntax 2 erstellt wurden, beim Aufruf der Funktion in Funktionswerte.  
+ Die Funktion ist ein Basisdatentyp in [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  Syntax 1 erstellt einen Funktionswert, den [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] gegebenenfalls in ein `Function`\-Objekt konvertiert.  [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] konvertiert `Function`\-Objekte, die von Syntax 2 erstellt wurden, beim Aufruf der Funktion in Funktionswerte.  
   
- Syntax 1 ist die Standardmethode zum Erstellen neuer Funktionen in [!INCLUDE[javascript](../../includes/javascript-md.md)].  Syntax 2 ist eine alternative Form zum expliziten Erstellen von Funktionsobjekten.  
+ Syntax 1 ist die Standardmethode zum Erstellen neuer Funktionen in [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  Syntax 2 ist eine alternative Form zum expliziten Erstellen von Funktionsobjekten.  
   
  Beispielsweise können Sie eine Funktion, die zwei an sie übergebene Argumente addiert, auf eine der beiden folgenden Weisen deklarieren:  
   
@@ -94,7 +94,7 @@ add(2, 3);
  [apply\-Methode](../../javascript/reference/apply-method-function-javascript.md) &#124; [bind\-Methode](../../javascript/reference/bind-method-function-javascript.md) &#124; [call\-Methode](../../javascript/reference/call-method-function-javascript.md) &#124; [toString\-Methode](../../javascript/reference/tostring-method-object-javascript.md) &#124; [valueOf\-Methode](../../javascript/reference/valueof-method-object-javascript.md)  
   
 ## Anforderungen  
- [!INCLUDE[jsv2](../../includes/jsv2-md.md)]  
+ [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]  
   
 ## Siehe auch  
  [function\-Anweisung](../../javascript/reference/function-statement-javascript.md)   

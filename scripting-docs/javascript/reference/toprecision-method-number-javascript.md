@@ -66,7 +66,7 @@ document.write(prec);
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv55](../../includes/jsv55-md.md)]  
+ [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
  **Gilt für**: [Number\-Objekt](../../javascript/reference/number-object-javascript.md)  
   

@@ -53,7 +53,7 @@ result = variable--
  Wenn der Operator vor der Variablen steht, wird der Wert geändert, bevor der Ausdruck ausgewertet wird.  Wenn der Operator hinter der Variablen steht, wird der Wert geändert, nachdem der Ausdruck ausgewertet wurde.  Das heißt, bei `j = ++k;` wäre der Wert von `j` der ursprüngliche Wert von `k` plus eins; bei `j = k++;` wäre der Wert von `j` der ursprüngliche Wert von `k`, der erst erhöht wird, nachdem er `j` zugewiesen wurde.  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## Siehe auch  
  [Operatorrangfolge](../../javascript/operator-subtractprecedence-javascript.md)   

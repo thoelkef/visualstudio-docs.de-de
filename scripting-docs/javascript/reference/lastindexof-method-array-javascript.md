@@ -84,7 +84,7 @@ document.write(ar.lastIndexOf("ab", -3) + "<br/>");
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv9](../../includes/jsv9-md.md)]  
+ [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
 ## Siehe auch  
  [indexOf\-Methode \(Array\)](../../javascript/reference/indexof-method-array-javascript.md)   

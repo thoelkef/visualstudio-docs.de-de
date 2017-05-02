@@ -25,11 +25,11 @@ manager: "ghogen"
 caps.handback.revision: 62
 ---
 # JavaScript-Sprachreferenz
-[!INCLUDE[javascript](../includes/javascript-md.md)] ist eine Skriptsprache, die in Webseiten und anderen Anwendungen eingebettet werden kann.  
+[!INCLUDE[javascript](../javascript/includes/javascript-md.md)] ist eine Skriptsprache, die in Webseiten und anderen Anwendungen eingebettet werden kann.  
   
  Diese Dokumentation beschreibt die Microsoft\-Implementierung von JavaScript, die mit der 5. Ausgabe der ECMAScript\-Sprachenspezifikationen kompatibel ist. Sie stellt auch zusätzliche Funktionen bereit, die nicht in den ECMA\-Standards enthalten sind.  
   
- Sie können [!INCLUDE[javascript](../includes/javascript-md.md)]\-Code in Browseranwendungen zusammen mit HTML, CSS und dem DOM \(Document Object Model\) verwenden, das HTML\- und Browserobjekte darstellt.  
+ Sie können [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Code in Browseranwendungen zusammen mit HTML, CSS und dem DOM \(Document Object Model\) verwenden, das HTML\- und Browserobjekte darstellt.  
   
 -   Weitere Informationen über HTML finden Sie in der [HTML\/XHTML\-Referenz](http://go.microsoft.com/fwlink/p/?LinkId=251007).  
   
@@ -37,11 +37,11 @@ caps.handback.revision: 62
   
 -   Weitere Informationen über DOM finden Sie unter [Dokumentobjektmodell \(DOM\)](http://go.microsoft.com/fwlink/p/?LinkId=251009).  
   
- Sie können [!INCLUDE[javascript](../includes/javascript-md.md)]\-Code auch in Windows Store\-Apps verwenden, die unter [!INCLUDE[win8](../includes/win8-md.md)] und [!INCLUDE[win81](../includes/win81-md.md)] ausgeführt werden, und in UWP \(Universelle Windows\-Plattform\)\-Apps, die unter Windows 10 ausgeführt werden. Windows Store\-Apps können in [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] und [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] und UWP\-Apps in [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] entwickelt werden.  
+ Sie können [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Code auch in Windows Store\-Apps verwenden, die unter [!INCLUDE[win8](../javascript/includes/win8-md.md)] und [!INCLUDE[win81](../javascript/includes/win81-md.md)] ausgeführt werden, und in UWP \(Universelle Windows\-Plattform\)\-Apps, die unter Windows 10 ausgeführt werden. Windows Store\-Apps können in [!INCLUDE[vs_dev11_long](../javascript/includes/vs-dev11-long-md.md)], [!INCLUDE[vs_dev12](../javascript/includes/vs-dev12-md.md)] und [!INCLUDE[vs_dev14](../javascript/includes/vs-dev14-md.md)] und UWP\-Apps in [!INCLUDE[vs_dev14](../javascript/includes/vs-dev14-md.md)] entwickelt werden.  
   
--   Weitere Informationen über JavaScript in [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]\-Apps finden Sie unter [JavaScript\-Roadmap](https://msdn.microsoft.com/en-us/library/windows/apps/hh465037.aspx).  
+-   Weitere Informationen über JavaScript in [!INCLUDE[win8_appname_long](../javascript/includes/win8-appname-long-md.md)]\-Apps finden Sie unter [JavaScript\-Roadmap](https://msdn.microsoft.com/en-us/library/windows/apps/hh465037.aspx).  
   
--   Weitere Informationen über HTML und CSS in [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]\-Apps finden Sie unter [HTML\/CSS für Windows Store\-Apps](http://go.microsoft.com/fwlink/p/?LinkId=250939).  
+-   Weitere Informationen über HTML und CSS in [!INCLUDE[win8_appname_long](../javascript/includes/win8-appname-long-md.md)]\-Apps finden Sie unter [HTML\/CSS für Windows Store\-Apps](http://go.microsoft.com/fwlink/p/?LinkId=250939).  
   
 -   Weitere Informationen zu Windows\-Runtime und zur Windows\-Bibliothek für JavaScript\-APIs finden Sie unter [API\-Referenz für Windows\-Runtime und Windows\-Bibliothek für JavaScript](http://go.microsoft.com/fwlink/p/?LinkID=250938).  
   

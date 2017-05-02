@@ -30,7 +30,7 @@ Sie haben versucht, eine Aufzeichnung, eine Assertion oder eine Gruppe für regu
 -   Fügen Sie die am weitesten rechts befindlichen schließenden Klammer hinzu.  
   
     > [!NOTE]
-    >  Wenn Sie eine einzelne Klammer anpassen möchten, versehen Sie diese mit einem umgekehrten Schrägstrich \- \\\( \- als Escapezeichen, damit es nicht als Sonderzeichen von [!INCLUDE[javascript](../../includes/javascript-md.md)] interpretiert wird.  
+    >  Wenn Sie eine einzelne Klammer anpassen möchten, versehen Sie diese mit einem umgekehrten Schrägstrich \- \\\( \- als Escapezeichen, damit es nicht als Sonderzeichen von [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] interpretiert wird.  
   
 ## Siehe auch  
  [Regular Expression\-Objekt](../../javascript/reference/regular-expression-object-javascript.md)   

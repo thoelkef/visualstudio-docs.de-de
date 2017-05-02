@@ -89,7 +89,7 @@ document.write(obj.newProp);
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv9](../../includes/jsv9-md.md)]  
+ [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
 ## Siehe auch  
  [Object.seal\-Funktion](../../javascript/reference/object-seal-function-javascript.md)   

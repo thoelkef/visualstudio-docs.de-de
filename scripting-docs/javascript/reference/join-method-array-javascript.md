@@ -61,7 +61,7 @@ document.write(b);
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv2](../../includes/jsv2-md.md)]  
+ [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]  
   
 ## Siehe auch  
  [String\-Objekt](../../javascript/reference/string-object-javascript.md)

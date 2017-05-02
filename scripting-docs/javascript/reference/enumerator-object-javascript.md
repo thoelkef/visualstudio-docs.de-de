@@ -28,7 +28,7 @@ caps.handback.revision: 21
 Ermöglicht das Aufzählen der Elemente in einer Auflistung.  
   
 > [!WARNING]
->  Dieses Objekt wird nur in Internet Explorer unterstützt, nicht in [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]\-Apps.  
+>  Dieses Objekt wird nur in Internet Explorer unterstützt, nicht in [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-Apps.  
   
 ## Syntax  
   
@@ -97,7 +97,7 @@ document.write(driveString);
  [atEnd\-Methode](../../javascript/reference/atend-method-enumerator-javascript.md) &#124; [item\-Methode](../../javascript/reference/item-method-enumerator-javascript.md) &#124; [moveFirst\-Methode](../../javascript/reference/movefirst-method-enumerator-javascript.md) &#124; [moveNext\-Methode](../../javascript/reference/movenext-method-enumerator-javascript.md)  
   
 ## Anforderungen  
- Wird in den folgenden Dokumentmodi unterstützt: Quirksmodus, Internet Explorer 6\-Standardmodus, Internet Explorer 7\-Standardmodus, Internet Explorer 8\-Standardmodus, Internet Explorer 9\-Standardmodus und Internet Explorer 10\-Standardmodus. Wird in [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]\-Apps nicht unterstützt. Siehe [Versionsinformationen](../../javascript/reference/javascript-version-information.md).  
+ Wird in den folgenden Dokumentmodi unterstützt: Quirksmodus, Internet Explorer 6\-Standardmodus, Internet Explorer 7\-Standardmodus, Internet Explorer 8\-Standardmodus, Internet Explorer 9\-Standardmodus und Internet Explorer 10\-Standardmodus. Wird in [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-Apps nicht unterstützt. Siehe [Versionsinformationen](../../javascript/reference/javascript-version-information.md).  
   
 ## Siehe auch  
  [Boolean\-Objekt](../../javascript/reference/boolean-object-javascript.md)

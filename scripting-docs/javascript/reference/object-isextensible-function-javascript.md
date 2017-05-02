@@ -82,7 +82,7 @@ undefined
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv9](../../includes/jsv9-md.md)]  
+ [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
 ## Siehe auch  
  [Object.preventExtensions\-Funktion](../../javascript/reference/object-preventextensions-function-javascript.md)   

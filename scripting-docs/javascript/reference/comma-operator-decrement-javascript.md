@@ -55,7 +55,7 @@ for (i = 0; i < 10; i++, j++)
  Die `for`\-Anweisung lässt nur die Ausführung eines einzigen Ausdrucks am Ende jedes Schleifendurchlaufs zu.  Der `,`\-Operator kann mehrere Ausdrücke zu einem Ausdruck zusammenfassen, sodass beide Variablen inkrementiert werden können.  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## Siehe auch  
  [for\-Anweisung](../../javascript/reference/for-statement-javascript.md)   

@@ -35,7 +35,7 @@ Number.isInteger(numValue)
 ## Hinweise  
   
 ## Anforderungen  
- [!INCLUDE[jsv12](../../includes/jsv12-md.md)]  
+ [!INCLUDE[jsv12](../../javascript/reference/includes/jsv12-md.md)]  
   
  **Gilt für**: [Number\-Objekt](../../javascript/reference/number-object-javascript.md)  
   

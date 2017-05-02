@@ -144,7 +144,7 @@ If (console && console.log) {
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv11](../../includes/jsv11-md.md)]  
+ [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]  
   
 ## Siehe auch  
  [toLocaleString \(Date\)](../../javascript/reference/tolocalestring-date.md)   

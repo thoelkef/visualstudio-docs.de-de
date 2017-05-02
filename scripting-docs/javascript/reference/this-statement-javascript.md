@@ -66,7 +66,7 @@ document.getElementById("clicker").addEventListener("click", eventHandler, false
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## Siehe auch  
  [new\-Operator](../../javascript/reference/new-operator-decrementjavascript.md)   

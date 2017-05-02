@@ -24,9 +24,9 @@ manager: "ghogen"
 caps.handback.revision: 13
 ---
 # Verwenden von Arrays (JavaScript)
-In [!INCLUDE[javascript](../../includes/javascript-md.md)] haben Arrays eine *geringe Dichte*.  Das heißt, wenn ein Array mit drei Elementen mit den Nummern 0, 1 und 2 gegeben ist, können Sie das Element 50 erstellen, ohne sich über die Elemente 3 bis 49 Gedanken machen zu müssen.  Wenn das Array eine automatische Längenvariable \(unter [Systeminterne Objekte](../../javascript/intrinsic-objects-javascript.md) finden Sie eine Erläuterung der automatischen Überwachung der Arraylänge\) besitzt, wird die Längenvariable auf 51 und nicht auf 4 festgelegt.  Sie können Arrays erstellen, deren Nummerierung der Elemente keine Lücken aufweist, dies ist jedoch nicht erforderlich.  
+In [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] haben Arrays eine *geringe Dichte*.  Das heißt, wenn ein Array mit drei Elementen mit den Nummern 0, 1 und 2 gegeben ist, können Sie das Element 50 erstellen, ohne sich über die Elemente 3 bis 49 Gedanken machen zu müssen.  Wenn das Array eine automatische Längenvariable \(unter [Systeminterne Objekte](../../javascript/intrinsic-objects-javascript.md) finden Sie eine Erläuterung der automatischen Überwachung der Arraylänge\) besitzt, wird die Längenvariable auf 51 und nicht auf 4 festgelegt.  Sie können Arrays erstellen, deren Nummerierung der Elemente keine Lücken aufweist, dies ist jedoch nicht erforderlich.  
   
- In [!INCLUDE[javascript](../../includes/javascript-md.md)] sind Objekte und Arrays miteinander fast identisch.  Die beiden Hauptunterschiede bestehen darin, dass Objekte, die kein Array sind, keine automatische Längeneigenschaft besitzen, und dass Arrays nicht die Eigenschaften und Methoden eines Objekts aufweisen.  
+ In [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] sind Objekte und Arrays miteinander fast identisch.  Die beiden Hauptunterschiede bestehen darin, dass Objekte, die kein Array sind, keine automatische Längeneigenschaft besitzen, und dass Arrays nicht die Eigenschaften und Methoden eines Objekts aufweisen.  
   
 ## Adressieren von Arrays  
  Arrays werden mithilfe von Klammern \(\[\]\) adressiert, wie im folgenden Beispiel gezeigt.  Die Klammern schließen entweder einen numerischen Wert oder einen Ausdruck ein, der zu einer ganzen Zahl ausgewertet wird.  

@@ -77,7 +77,7 @@ ArgTest(1, 2, "hello", new Date())
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## Siehe auch  
  [0...n\-Eigenschaften \(Argumente\)](../../javascript/reference/0-dot-dot-dot-n-properties-arguments-javascript.md)   

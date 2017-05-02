@@ -75,7 +75,7 @@ var p = timeout(1000).then(() => {
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv12](../../includes/jsv12-md.md)]  
+ [!INCLUDE[jsv12](../../javascript/reference/includes/jsv12-md.md)]  
   
 ## Funktionen  
  In der folgenden Tabelle werden die Funktionen des `Promise`\-Objekts beschrieben.  

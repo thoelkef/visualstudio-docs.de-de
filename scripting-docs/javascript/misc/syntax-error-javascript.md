@@ -23,7 +23,7 @@ manager: "ghogen"
 caps.handback.revision: 7
 ---
 # Syntaxfehler (JavaScript)
-Sie haben eine Anweisung erstellt, die gegen eine oder mehrere grammatikalische Regeln von [!INCLUDE[javascript](../../includes/javascript-md.md)] verstößt.  
+Sie haben eine Anweisung erstellt, die gegen eine oder mehrere grammatikalische Regeln von [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] verstößt.  
   
 ### So beheben Sie diesen Fehler  
   

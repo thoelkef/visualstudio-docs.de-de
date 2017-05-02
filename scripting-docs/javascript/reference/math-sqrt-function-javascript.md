@@ -43,7 +43,7 @@ number
  Wenn `number` negativ ist, wird der Wert `NaN` zurückgegeben.  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
  **Gilt für**: [Math\-Objekt](../../javascript/reference/math-object-javascript.md)  
   

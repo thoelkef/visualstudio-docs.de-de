@@ -47,7 +47,7 @@ result = number1 / number2
  Beliebiger numerischer Ausdruck.  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## Siehe auch  
  [Divisionszuweisungsoperator \(\/\=\)](../../javascript/reference/division-assignment-operator-decrement-equal-javascript.md)   

@@ -30,7 +30,7 @@ Sie haben versucht, eine Zeichenklasse für die Übereinstimmung eines reguläre
 -   Fügen Sie die rechte Klammer dem regulären Ausdruck hinzu.  
   
     > [!NOTE]
-    >  Wenn Sie eine einzelne Klammer anpassen möchten, versehen Sie diese mit einem umgekehrten Schrägstrich \- \\\[ \- als Escapezeichen, damit es nicht als Sonderzeichen von [!INCLUDE[javascript](../../includes/javascript-md.md)] interpretiert wird.  
+    >  Wenn Sie eine einzelne Klammer anpassen möchten, versehen Sie diese mit einem umgekehrten Schrägstrich \- \\\[ \- als Escapezeichen, damit es nicht als Sonderzeichen von [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] interpretiert wird.  
   
 ## Siehe auch  
  [Regular Expression\-Objekt](../../javascript/reference/regular-expression-object-javascript.md)   

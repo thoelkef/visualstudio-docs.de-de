@@ -47,7 +47,7 @@ result = number1*number2
  Ein beliebiger Ausdruck.  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## Siehe auch  
  [Multiplikationszuweisungsoperator \(\*\=\)](../../javascript/reference/multiplication-assignment-operator-decrement-equal-javascript.md)   

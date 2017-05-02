@@ -49,7 +49,7 @@ escape(charString)
  **Gilt für**: [Global\-Objekt](../../javascript/reference/global-object-javascript.md)  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## Siehe auch  
  [encodeURI\-Funktion](../../javascript/reference/encodeuri-function-javascript.md)   

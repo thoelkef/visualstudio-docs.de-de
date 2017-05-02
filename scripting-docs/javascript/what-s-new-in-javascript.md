@@ -21,12 +21,12 @@ manager: "ghogen"
 caps.handback.revision: 33
 ---
 # Neues bei JavaScript
-In diesem Dokument sind neue Features in JavaScript aufgeführt, die sowohl im [Edgemodus](http://blogs.msdn.com/b/ie/archive/2014/11/11/living-on-the-edge-our-next-step-in-interoperability.aspx), [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], als auch in Windows Phone Store\-Apps unterstützt werden.  
+In diesem Dokument sind neue Features in JavaScript aufgeführt, die sowohl im [Edgemodus](http://blogs.msdn.com/b/ie/archive/2014/11/11/living-on-the-edge-our-next-step-in-interoperability.aspx), [!INCLUDE[win8_appname_long](../javascript/includes/win8-appname-long-md.md)], als auch in Windows Phone Store\-Apps unterstützt werden.  
   
- Informationen zu JavaScript\-Elementen, die im Edgemodus unterstützt werden, jedoch in [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]\-Apps veraltet sind, finden Sie unter [Versionsinformationen](../javascript/reference/javascript-version-information.md).  
+ Informationen zu JavaScript\-Elementen, die im Edgemodus unterstützt werden, jedoch in [!INCLUDE[win8_appname_long](../javascript/includes/win8-appname-long-md.md)]\-Apps veraltet sind, finden Sie unter [Versionsinformationen](../javascript/reference/javascript-version-information.md).  
   
 > [!IMPORTANT]
->  Informationen zum Erstellen von [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]\- und Windows Phone Store\-Apps mit JavaScript, einschließlich Informationen zum Visual Studio JavaScript\-Editor und anderen Features, finden Sie unter [Entwickeln von Apps mit Visual Studio 2013](http://go.microsoft.com/fwlink/p/?LinkID=238263).  
+>  Informationen zum Erstellen von [!INCLUDE[win8_appname_long](../javascript/includes/win8-appname-long-md.md)]\- und Windows Phone Store\-Apps mit JavaScript, einschließlich Informationen zum Visual Studio JavaScript\-Editor und anderen Features, finden Sie unter [Entwickeln von Apps mit Visual Studio 2013](http://go.microsoft.com/fwlink/p/?LinkID=238263).  
   
 ## Neue Features in JavaScript  
   

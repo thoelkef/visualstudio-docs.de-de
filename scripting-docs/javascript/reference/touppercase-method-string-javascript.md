@@ -51,7 +51,7 @@ document.write(str2);
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
  **Gilt für**: [String\-Objekt](../../javascript/reference/string-object-javascript.md)  
   

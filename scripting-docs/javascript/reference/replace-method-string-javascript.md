@@ -43,7 +43,7 @@ stringObj. replace(rgExp, replaceText)
  Erforderlich.  Eine Instanz eines **Regular Expression**\-Objekts, die das Muster des regulären Ausdrucks sowie anwendbare Flags enthält.  Kann auch ein `String`\-Objekt oder \-Zeichenfolgenliteral sein, das den regulären Ausdruck darstellt.  Wenn `rgExp` keine Instanz eines **Regular Expression**\-Objekts ist, wird es in eine Zeichenfolge konvertiert, und es wird eine exakte Suche nach den Ergebnissen durchgeführt. Es wird kein Versuch unternommen, die Zeichenfolge in einen regulären Ausdruck zu konvertieren.  
   
  `replaceText`  
- Erforderlich.  Ein `String`\-Objekt oder \-Zeichenfolgenliteral, das den Text enthält, der jede Übereinstimmung von `rgExp` in `stringObj` ersetzen soll.  In [!INCLUDE[jsv55textspecific](../../includes/jsv55textspecific-md.md)] oder höher kann das `replaceText`\-Argument auch eine Funktion sein, die den Ersetzungstext zurückgibt.  
+ Erforderlich.  Ein `String`\-Objekt oder \-Zeichenfolgenliteral, das den Text enthält, der jede Übereinstimmung von `rgExp` in `stringObj` ersetzen soll.  In [!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] oder höher kann das `replaceText`\-Argument auch eine Funktion sein, die den Ersetzungstext zurückgibt.  
   
 ## Rückgabewert  
  Das Ergebnis der **replace**\-Methode ist eine Kopie von `stringObj`, nachdem die angegebenen Ersetzungen durchgeführt wurden.  
@@ -53,12 +53,12 @@ stringObj. replace(rgExp, replaceText)
   
 |Zeichen|Bedeutung|  
 |-------------|---------------|  
-|**$$**|`$` \([!INCLUDE[jsv55textspecific](../../includes/jsv55textspecific-md.md)] oder höher\)|  
-|**$&**|Gibt diesen Teil von `stringObj` an, der mit dem gesamten Muster übereinstimmt.  \([!INCLUDE[jsv55textspecific](../../includes/jsv55textspecific-md.md)] oder höher\)|  
-|`$``|Gibt den Teil von `stringObj` an, der der durch **$&** beschriebenen Übereinstimmung vorangestellt wird.  \([!INCLUDE[jsv55textspecific](../../includes/jsv55textspecific-md.md)] oder höher\)|  
-|`$'`|Gibt den Teil von `stringObj` an, der der durch **$&** beschriebenen Übereinstimmung folgt.  \([!INCLUDE[jsv55textspecific](../../includes/jsv55textspecific-md.md)] oder höher\)|  
-|`$`  ***n***|Die *n*\-te erfasste Teilübereinstimmung, wobei *n* eine einfache Dezimalzahl zwischen 1 und 9 ist.  \([!INCLUDE[jsv55textspecific](../../includes/jsv55textspecific-md.md)] oder höher\)|  
-|`$`  ***nn***|Die *nn*\-te erfasste Teilübereinstimmung, wobei *nn* eine zweistellige Dezimalzahl zwischen 01 und 99 ist.  \([!INCLUDE[jsv55textspecific](../../includes/jsv55textspecific-md.md)] oder höher\)|  
+|**$$**|`$` \([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] oder höher\)|  
+|**$&**|Gibt diesen Teil von `stringObj` an, der mit dem gesamten Muster übereinstimmt.  \([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] oder höher\)|  
+|`$``|Gibt den Teil von `stringObj` an, der der durch **$&** beschriebenen Übereinstimmung vorangestellt wird.  \([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] oder höher\)|  
+|`$'`|Gibt den Teil von `stringObj` an, der der durch **$&** beschriebenen Übereinstimmung folgt.  \([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] oder höher\)|  
+|`$`  ***n***|Die *n*\-te erfasste Teilübereinstimmung, wobei *n* eine einfache Dezimalzahl zwischen 1 und 9 ist.  \([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] oder höher\)|  
+|`$`  ***nn***|Die *nn*\-te erfasste Teilübereinstimmung, wobei *nn* eine zweistellige Dezimalzahl zwischen 01 und 99 ist.  \([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] oder höher\)|  
   
  Wenn `replaceText` eine Funktion ist, wird die Funktion für jede übereinstimmende untergeordnete Zeichenfolge mit den Argumenten *m* \+ 3 aufgerufen, wobei *m* der Anzahl von links schließenden Klammern in `rgExp` entspricht.  Das erste Argument ist die übereinstimmende untergeordnete Zeichenfolge.  Die nächsten *m*\-Argumente sind alle Erfassungen, die aus der Suche resultieren.  Das Argument *m* \+ 2 ist der Offset in `stringObj`, an dem die Übereinstimmung auftrat, und das Argument *m* \+ 3 ist `stringObj`.  Das Ergebnis ist eine Zeichenfolge, die daraus resultiert, dass jede übereinstimmende untergeordnete Zeichenfolge durch den entsprechenden Rückgabewert des Funktionsaufrufs ersetzt wird.  
   
@@ -90,7 +90,7 @@ document.write(result);
 // Output:  quick The fox brown over jumps lazy the dog.  
 ```  
   
- Im folgenden Beispiel, das in [!INCLUDE[jsv55textspecific](../../includes/jsv55textspecific-md.md)] und höher ausgeführt werden kann, wird die Verwendung einer Funktion gezeigt, die den Ersatztext zurückgibt.  Sie ersetzt jede Instanz einer Zahl, auf die „F“ folgt, durch eine Celsiuskonvertierung.  
+ Im folgenden Beispiel, das in [!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] und höher ausgeführt werden kann, wird die Verwendung einer Funktion gezeigt, die den Ersatztext zurückgibt.  Sie ersetzt jede Instanz einer Zahl, auf die „F“ folgt, durch eine Celsiuskonvertierung.  
   
 ```javascript  
 function f2c(s1) {  
@@ -113,7 +113,7 @@ document.write(f2c("Water freezes at 32F and boils at 212F."));
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
  **Gilt für**: [String\-Objekt](../../javascript/reference/string-object-javascript.md)  
   

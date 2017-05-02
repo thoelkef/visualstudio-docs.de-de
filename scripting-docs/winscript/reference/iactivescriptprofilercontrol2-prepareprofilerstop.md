@@ -17,7 +17,7 @@ manager: "ghogen"
 caps.handback.revision: 5
 ---
 # IActiveScriptProfilerControl2::PrepareProfilerStop
-Benachrichtigt den Profiler, dass Sie auf allen, anwendbaren Skriptmodulen Profilerstellung beendet werden.  Mit dieser Methode wird, erhalten Sie die vollständige Aufrufliste, wenn [!INCLUDE[javascript](../../includes/javascript-md.md)] ausgeführt wird, wenn Sie beenden ein Profil zu erstellen.  
+Benachrichtigt den Profiler, dass Sie auf allen, anwendbaren Skriptmodulen Profilerstellung beendet werden.  Mit dieser Methode wird, erhalten Sie die vollständige Aufrufliste, wenn [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] ausgeführt wird, wenn Sie beenden ein Profil zu erstellen.  
   
 ## Syntax  
   

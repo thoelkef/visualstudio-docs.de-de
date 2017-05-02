@@ -46,7 +46,7 @@ let variable1 = value1
   
  Eine Variable, die mit `let` deklariert wird, kann nicht vor ihrer Deklaration verwendet werden, andernfalls tritt ein Fehler auf.  
   
- Wenn Sie die Variable in der `let`\-Anweisung nicht initialisieren, wird ihr automatisch der [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Wert `undefined` zugewiesen.  
+ Wenn Sie die Variable in der `let`\-Anweisung nicht initialisieren, wird ihr automatisch der [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Wert `undefined` zugewiesen.  
   
 ## Beispiel  
  Das folgende Beispiel veranschaulicht die Verwendung der `let`\-Anweisung.  
@@ -68,7 +68,7 @@ let myarray = new Array();
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv11](../../includes/jsv11-md.md)]  
+ [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]  
   
 ## Siehe auch  
  [const\-Anweisung](../../javascript/reference/const-statement-javascript.md)   

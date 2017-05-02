@@ -47,7 +47,7 @@ debugger
 > [!NOTE]
 >  Um dieses Beispiel auszuführen, müssen Sie einen Skriptdebugger installiert haben, und das Skript muss im Debugmodus ausgeführt werden.  
 >   
->  Internet Explorer 8 enthält den [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Debugger.  Wenn Sie eine frühere Version von Internet Explorer verwenden, finden Sie unter [Gewusst wie: Aktivieren und Starten des Skriptdebuggings in Internet Explorer](http://go.microsoft.com/fwlink/?LinkId=133801) weitere Informationen.  
+>  Internet Explorer 8 enthält den [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Debugger.  Wenn Sie eine frühere Version von Internet Explorer verwenden, finden Sie unter [Gewusst wie: Aktivieren und Starten des Skriptdebuggings in Internet Explorer](http://go.microsoft.com/fwlink/?LinkId=133801) weitere Informationen.  
   
 ```javascript  
 for(i = 1; i<5; i++) {  
@@ -59,7 +59,7 @@ for(i = 1; i<5; i++) {
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv3](../../includes/jsv3-md.md)]  
+ [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
 ## Siehe auch  
  [JavaScript\-Anweisungen](../../javascript/reference/javascript-statements.md)   

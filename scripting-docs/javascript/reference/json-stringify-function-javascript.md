@@ -23,7 +23,7 @@ manager: "ghogen"
 caps.handback.revision: 40
 ---
 # JSON.stringify-Funktion (JavaScript)
-Konvertiert einen [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Wert in eine Zeichenfolge von JSON\-Objekten \(JavaScript Objekt Notation\).  
+Konvertiert einen [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Wert in eine Zeichenfolge von JSON\-Objekten \(JavaScript Objekt Notation\).  
   
 ## Syntax  
   
@@ -35,7 +35,7 @@ value [, replacer] [, space])
   
 ## Parameter  
  `value`  
- Erforderlich.  Ein zu konvertierender [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Wert, normalerweise ein Objekt oder ein Array.  
+ Erforderlich.  Ein zu konvertierender [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Wert, normalerweise ein Objekt oder ein Array.  
   
  `replacer`  
  Dies ist optional.  Eine Funktion oder ein Array zum Transformieren der Ergebnisse.  
@@ -166,7 +166,7 @@ document.write(jsonText);
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv58](../../includes/jsv58-md.md)]  
+ [!INCLUDE[jsv58](../../javascript/reference/includes/jsv58-md.md)]  
   
 ## Siehe auch  
  [JSON.parse\-Funktion](../../javascript/reference/json-parse-function-javascript.md)   

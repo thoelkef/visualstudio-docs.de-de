@@ -127,7 +127,7 @@ ints[3] = 11.5; // 12 will be assigned (rounded to the nearest
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv11_winonly](../../includes/jsv11-winonly-md.md)]  
+ [!INCLUDE[jsv11_winonly](../../javascript/reference/includes/jsv11-winonly-md.md)]  
   
 ## Siehe auch  
  [Uint8Array\-Objekt](../../javascript/reference/uint8array-object.md)   

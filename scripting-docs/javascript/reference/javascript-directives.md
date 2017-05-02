@@ -23,10 +23,10 @@ manager: "ghogen"
 caps.handback.revision: 5
 ---
 # JavaScript-Direktiven
-In der folgenden Tabelle sind die [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Direktiven aufgelistet.  
+In der folgenden Tabelle sind die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Direktiven aufgelistet.  
   
 ## Direktiven  
   
 |Beschreibung|Sprachelement|  
 |------------------|-------------------|  
-|Fügt bestimmte syntaktische und semantische Einschränkungen hinzu.  Wird in Internet Explorer 10 und in [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]\-Apps unterstützt.|[Strict verwenden](../../javascript/reference/use-strict-directive.md)|
+|Fügt bestimmte syntaktische und semantische Einschränkungen hinzu.  Wird in Internet Explorer 10 und in [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-Apps unterstützt.|[Strict verwenden](../../javascript/reference/use-strict-directive.md)|

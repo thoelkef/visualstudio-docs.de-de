@@ -58,7 +58,7 @@ result = expression1 + expression2
 |Ein Ausdruck ist numerisch, der andere eine Zeichenfolge|Verketten|  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## Siehe auch  
  [Additionszuweisungsoperator \(\+\=\)](../../javascript/reference/addition-assignment-operator-decrement-equal-javascript.md)   

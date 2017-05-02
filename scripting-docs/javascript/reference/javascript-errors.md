@@ -24,11 +24,11 @@ manager: "ghogen"
 caps.handback.revision: 8
 ---
 # JavaScript-Fehler
-In der folgenden Tabelle werden die Typen von [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Fehlern aufgelistet:  
+In der folgenden Tabelle werden die Typen von [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Fehlern aufgelistet:  
   
 ## Fehlertypen  
   
 |Weitere Informationen über|finden Sie unter|  
 |--------------------------------|----------------------|  
-|Liste der [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Laufzeitfehler|[Laufzeitfehler](../../javascript/reference/javascript-run-time-errors.md)|  
-|Liste der [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Syntaxfehler|[Syntaxfehler](../../javascript/reference/javascript-syntax-errors.md)|
+|Liste der [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Laufzeitfehler|[Laufzeitfehler](../../javascript/reference/javascript-run-time-errors.md)|  
+|Liste der [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Syntaxfehler|[Syntaxfehler](../../javascript/reference/javascript-syntax-errors.md)|

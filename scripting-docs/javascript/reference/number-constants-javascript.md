@@ -41,21 +41,21 @@ Die folgenden Zahlenkonstanten sind Eigenschaften des `Number`\-Objekts.
   
 |Konstante|Zurückgegebener Wert|  
 |---------------|--------------------------|  
-|`Number.EPSILON`|Die kleinste Zahl, die in [!INCLUDE[javascript](../../includes/javascript-md.md)] dargestellt werden kann.  Ist ungefähr gleich 2,2204460492503130808472633361816E\-16.|  
+|`Number.EPSILON`|Die kleinste Zahl, die in [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] dargestellt werden kann.  Ist ungefähr gleich 2,2204460492503130808472633361816E\-16.|  
 |`Number.MAX_SAFE_INTEGER`|Die größte Zahl, die in JavaScript sicher dargestellt werden kann.  Gleich 9007199254740991.|  
-|`Number.MAX_VALUE`|Die größte Zahl, die in [!INCLUDE[javascript](../../includes/javascript-md.md)] dargestellt werden kann.  Ist ungefähr gleich 1,79E\+308.|  
+|`Number.MAX_VALUE`|Die größte Zahl, die in [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] dargestellt werden kann.  Ist ungefähr gleich 1,79E\+308.|  
 |`Number.MIN_SAFE_INTEGER`|Die kleinste Zahl, die in JavaScript sicher dargestellt werden kann.  Gleich −9007199254740991.|  
-|`Number.MIN_VALUE`|Die Null am nächsten liegende Zahl, die in [!INCLUDE[javascript](../../includes/javascript-md.md)] dargestellt werden kann.  Ist ungefähr gleich 5,00E\-324.|  
+|`Number.MIN_VALUE`|Die Null am nächsten liegende Zahl, die in [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] dargestellt werden kann.  Ist ungefähr gleich 5,00E\-324.|  
 |`Number.NaN`|Ein Wert, der keine Zahl ist.<br /><br /> In Gleichheitsvergleichen entspricht `NaN` keinem Wert, sich selbst eingeschlossen.  Um zu testen, ob ein Wert `NaN` entspricht, verwenden Sie die [isNaN\-Funktion](../../javascript/reference/isnan-function-javascript.md).|  
-|`Number.NEGATIVE_INFINITY`|Ein Wert, der kleiner als die größte negative Zahl ist, die in [!INCLUDE[javascript](../../includes/javascript-md.md)] dargestellt werden kann.<br /><br /> [!INCLUDE[javascript](../../includes/javascript-md.md)] zeigt `NEGATIVE_INFINITY`\-Werte als `-infinity` an.|  
-|`Number.POSITIVE_INFINITY`|Ein Wert, der größer als die größte Zahl ist, die in [!INCLUDE[javascript](../../includes/javascript-md.md)] dargestellt werden kann.<br /><br /> [!INCLUDE[javascript](../../includes/javascript-md.md)] zeigt `POSITIVE_INFINITY`\-Werte als `infinity` an.|  
+|`Number.NEGATIVE_INFINITY`|Ein Wert, der kleiner als die größte negative Zahl ist, die in [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] dargestellt werden kann.<br /><br /> [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] zeigt `NEGATIVE_INFINITY`\-Werte als `-infinity` an.|  
+|`Number.POSITIVE_INFINITY`|Ein Wert, der größer als die größte Zahl ist, die in [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] dargestellt werden kann.<br /><br /> [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] zeigt `POSITIVE_INFINITY`\-Werte als `infinity` an.|  
   
 ## Anforderungen  
- [!INCLUDE[jsv2](../../includes/jsv2-md.md)]  
+ [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]  
   
  Für `Number.EPSILON`, `Number.MAX_SAFE_INTEGER` und `Number.MIN_SAFE_INTEGER`:  
   
- [!INCLUDE[jsv12](../../includes/jsv12-md.md)]  
+ [!INCLUDE[jsv12](../../javascript/reference/includes/jsv12-md.md)]  
   
  **Gilt für**: [Number\-Objekt](../../javascript/reference/number-object-javascript.md)  
   

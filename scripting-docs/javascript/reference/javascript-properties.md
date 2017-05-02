@@ -23,11 +23,11 @@ manager: "ghogen"
 caps.handback.revision: 17
 ---
 # JavaScript-Eigenschaften
-In der folgenden Tabelle sind die [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Eigenschaften aufgelistet.  
+In der folgenden Tabelle sind die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Eigenschaften aufgelistet.  
   
 ## Eigenschaften  
   
-|Eigenschaft|Beschreibung|[!INCLUDE[javascript](../../includes/javascript-md.md)]\-Objekt|  
+|Eigenschaft|Beschreibung|[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Objekt|  
 |-----------------|------------------|------------------------------------------------------------------------|  
 |[\_\_proto\_\_\-Eigenschaft](../../javascript/reference/proto-property-object-javascript.md)|Legt den Prototyp für ein Objekt fest.|`Object`|  
 |[0...n Eigenschaften](../../javascript/reference/0-dot-dot-dot-n-properties-arguments-javascript.md)|Gibt den Wert einzelner Argumente aus einem **arguments**\-Objekt zurück.|`arguments`|  

@@ -24,7 +24,7 @@ manager: "ghogen"
 caps.handback.revision: 10
 ---
 # Zusammensetzungszuweisungsoperatoren (JavaScript)
-In der folgenden Tabelle werden die [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Zuweisungsoperatoren aufgelistet.  
+In der folgenden Tabelle werden die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Zuweisungsoperatoren aufgelistet.  
   
 ## Zuweisungsoperatoren  
   

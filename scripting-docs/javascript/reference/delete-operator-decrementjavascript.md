@@ -36,7 +36,7 @@ delete expression
 ```  
   
 ## Hinweise  
- Das `expression`\-Argument ist ein gültiger [!INCLUDE[javascript](../../includes/javascript-md.md)] Ausdruck, der normalerweise einen Eigenschaftennamen oder ein Arrayelement ergibt.  
+ Das `expression`\-Argument ist ein gültiger [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Ausdruck, der normalerweise einen Eigenschaftennamen oder ein Arrayelement ergibt.  
   
  Wenn das Ergebnis von `expression` ein Objekt ist, die in `expression` angegebene Eigenschaft existiert und das Objekt nicht zulässt, diese zu löschen, wird `false` zurückgegeben.  
   
@@ -84,7 +84,7 @@ document.write ("count: " + myObj.count);
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv3](../../includes/jsv3-md.md)]  
+ [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
 ## Siehe auch  
  [Operatorrangfolge](../../javascript/operator-subtractprecedence-javascript.md)   

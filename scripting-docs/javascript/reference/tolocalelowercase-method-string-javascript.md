@@ -40,7 +40,7 @@ stringVar.toLocaleLowerCase( )
  Die `toLocaleLowerCase`\-Methode konvertiert die Zeichen in einer Zeichenfolge unter Berücksichtigung des aktuellen Gebietsschemas der Hostumgebung.  In den meisten Fällen wird dasselbe Ergebnis erzielt wie mit der `toLowerCase`\-Methode.  Die Ergebnisse sind unterschiedlich, wenn die Regeln für eine Sprache mit den regulären Unicodezuordnungen der Groß\-\/Kleinschreibung in Konflikt stehen.  
   
 ## Anforderungen  
- [!INCLUDE[jsv55](../../includes/jsv55-md.md)]  
+ [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
  **Gilt für**: [String\-Objekt](../../javascript/reference/string-object-javascript.md)  
   

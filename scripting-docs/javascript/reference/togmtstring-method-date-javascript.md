@@ -42,7 +42,7 @@ dateObj.toGMTString()
  Die `toGMTString`\-Methode gibt ein `String`\-Objekt im Format der GMT\-Konvention zurück.  Der Rückgabewert hat folgendes Format: "5. Januar 1996 00:00: 00 GMT".  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
  **Gilt für**: [Date\-Objekt](../../javascript/reference/date-object-javascript.md)  
   

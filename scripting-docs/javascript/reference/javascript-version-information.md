@@ -23,17 +23,17 @@ manager: "ghogen"
 caps.handback.revision: 93
 ---
 # JavaScript-Versionsinformationen
-Unterschiedliche Versionen von JavaScript unterstützen unterschiedliche Sätze von JavaScript\-Elementen.[!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]\-Apps unterstützen einen etwas anderen Satz von Funktionen als Internet Explorer.  
+Unterschiedliche Versionen von JavaScript unterstützen unterschiedliche Sätze von JavaScript\-Elementen.[!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-Apps unterstützen einen etwas anderen Satz von Funktionen als Internet Explorer.  
   
 > [!IMPORTANT]
->  Eine [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]\-App ist eine neue Anwendungsart, die auf [!INCLUDE[win8](../../includes/win8-md.md)]\-Geräten ausgeführt wird. Mehr über [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]\-Apps finden Sie unter [What's a Windows Store app?](http://msdn.microsoft.com/de-de/231c1fba-9f87-468e-94aa-45dd57edcc70)  
+>  Eine [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-App ist eine neue Anwendungsart, die auf [!INCLUDE[win8](../../javascript/includes/win8-md.md)]\-Geräten ausgeführt wird. Mehr über [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-Apps finden Sie unter [What's a Windows Store app?](http://msdn.microsoft.com/de-de/231c1fba-9f87-468e-94aa-45dd57edcc70)  
   
  Der Standardmodus \(der bis zu Internet Explorer 11 in allen Versionen von Internet Explorer verwendete Modus, sofern die `<!doctype>`\-Direktive vorhanden ist\) unterstützt einen anderen Elementsatz als der Quirksmodus \(der Modus, der verwendet wird, wenn keine `<!doctype>`\-Direktive vorhanden ist\). Weitere Informationen zur Versionsverwaltung finden Sie unter [Definieren der Dokumentkompatibilität](http://go.microsoft.com/fwlink/?LinkId=208537).  
   
- In der folgenden Tabelle werden die Dokumentmodi in Internet Explorer \(und Store\-Apps, die [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] und [!INCLUDE[winphone_appname](../../includes/winphone-appname-md.md)] darstellen\) angezeigt, die bestimmte Sprachelemente unterstützen. Dokumentmodi, die ein bestimmtes Element unterstützen, werden mit dem Buchstaben **J** angezeigt. Dokumentmodi, die kein bestimmtes Element unterstützen, werden mit dem Buchstaben **N** angezeigt.  
+ In der folgenden Tabelle werden die Dokumentmodi in Internet Explorer \(und Store\-Apps, die [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] und [!INCLUDE[winphone_appname](../../javascript/reference/includes/winphone-appname-md.md)] darstellen\) angezeigt, die bestimmte Sprachelemente unterstützen. Dokumentmodi, die ein bestimmtes Element unterstützen, werden mit dem Buchstaben **J** angezeigt. Dokumentmodi, die kein bestimmtes Element unterstützen, werden mit dem Buchstaben **N** angezeigt.  
   
 > [!IMPORTANT]
->  [!INCLUDE[jsv12text](../../includes/jsv12text-md.md)] \(Edge\-Browser in Windows 10\) bietet keine Unterstützung für ältere Dokumentmodi. Unterstützung von [!INCLUDE[winphone_appname](../../includes/winphone-appname-md.md)]\-Apps beginnt mit Windows Phone 8.1. Experimentelle Features \(about:flags\) sind mit „Exp.“ gekennzeichnet.  
+>  [!INCLUDE[jsv12text](../../javascript/includes/jsv12text-md.md)] \(Edge\-Browser in Windows 10\) bietet keine Unterstützung für ältere Dokumentmodi. Unterstützung von [!INCLUDE[winphone_appname](../../javascript/reference/includes/winphone-appname-md.md)]\-Apps beginnt mit Windows Phone 8.1. Experimentelle Features \(about:flags\) sind mit „Exp.“ gekennzeichnet.  
   
  Die Tabelle enthält zusammenfassende Informationen. Genauere Informationen finden Sie in der Dokumentation für das Sprachelement  
   

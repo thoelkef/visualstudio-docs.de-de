@@ -78,7 +78,7 @@ catch(e)
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv10](../../includes/jsv10-md.md)]  
+ [!INCLUDE[jsv10](../../javascript/reference/includes/jsv10-md.md)]  
   
  **Gilt für**: [Error\-Objekt](../../javascript/reference/error-object-javascript.md)  
   

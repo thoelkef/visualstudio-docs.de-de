@@ -68,7 +68,7 @@ document.write(ss);
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## Siehe auch  
  [substr\-Methode \(String\)](../../javascript/reference/substr-method-string-javascript.md)

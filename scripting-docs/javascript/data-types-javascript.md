@@ -23,7 +23,7 @@ manager: "ghogen"
 caps.handback.revision: 35
 ---
 # Datentypen (JavaScript)
-In [!INCLUDE[javascript](../includes/javascript-md.md)] gibt es drei primäre Datentypen, zwei zusammengesetzte Datentypen und zwei spezielle Datentypen.  
+In [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] gibt es drei primäre Datentypen, zwei zusammengesetzte Datentypen und zwei spezielle Datentypen.  
   
 ## Primäre Datentypen  
  Die primären \(primitiven\) Datentypen lauten:  
@@ -49,7 +49,7 @@ In [!INCLUDE[javascript](../includes/javascript-md.md)] gibt es drei primäre Da
 -   Nicht definiert  
   
 ## String\-Datentyp  
- Ein Zeichenfolgenwert ist eine Kette aus null oder mehr miteinander verketteten Unicode\-Zeichen \(Buchstaben, Ziffern und Satzzeichen\).  Der Zeichenfolgen\-Datentyp dient zur Darstellung von Text in [!INCLUDE[javascript](../includes/javascript-md.md)].  Sie können Zeichenfolgenliterale in Skripts einfügen, indem Sie sie in Paare einfacher oder doppelter Anführungszeichen einschließen.  Doppelte Anführungszeichen können in Zeichenfolgen enthalten sein, die von einfachen Anführungszeichen eingeschlossen sind, und einfache Anführungszeichen können in Zeichenfolgen enthalten sein, die von doppelten Anführungszeichen eingeschlossen sind.  Nachstehend sind einige Beispiele für Zeichenfolgen aufgeführt:  
+ Ein Zeichenfolgenwert ist eine Kette aus null oder mehr miteinander verketteten Unicode\-Zeichen \(Buchstaben, Ziffern und Satzzeichen\).  Der Zeichenfolgen\-Datentyp dient zur Darstellung von Text in [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].  Sie können Zeichenfolgenliterale in Skripts einfügen, indem Sie sie in Paare einfacher oder doppelter Anführungszeichen einschließen.  Doppelte Anführungszeichen können in Zeichenfolgen enthalten sein, die von einfachen Anführungszeichen eingeschlossen sind, und einfache Anführungszeichen können in Zeichenfolgen enthalten sein, die von doppelten Anführungszeichen eingeschlossen sind.  Nachstehend sind einige Beispiele für Zeichenfolgen aufgeführt:  
   
 ```javascript  
 "Happy am I; from care I'm free!"  
@@ -58,15 +58,15 @@ In [!INCLUDE[javascript](../includes/javascript-md.md)] gibt es drei primäre Da
 'c'  
 ```  
   
- Beachten Sie, dass [!INCLUDE[javascript](../includes/javascript-md.md)] über keinen Typ zur Darstellung eines einzelnen Zeichens verfügt.  Um ein einzelnes Zeichen in [!INCLUDE[javascript](../includes/javascript-md.md)] darzustellen, erstellen Sie eine Zeichenfolge, die aus nur einem Zeichen besteht.  Eine Zeichenfolge, die keine Zeichen enthält \(""\), ist eine leere Zeichenfolge \(mit der Länge 0\).  
+ Beachten Sie, dass [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] über keinen Typ zur Darstellung eines einzelnen Zeichens verfügt.  Um ein einzelnes Zeichen in [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] darzustellen, erstellen Sie eine Zeichenfolge, die aus nur einem Zeichen besteht.  Eine Zeichenfolge, die keine Zeichen enthält \(""\), ist eine leere Zeichenfolge \(mit der Länge 0\).  
   
- [!INCLUDE[javascript](../includes/javascript-md.md)] stellt Escapesequenzen bereit, die Sie in Zeichenfolgen einfügen können, um Zeichen zu erstellen, die nicht direkt eingegeben werden können.  So gibt beispielsweise `\t` ein Tabstoppzeichen an.  Weitere Informationen finden Sie unter [Sonderzeichen](../javascript/advanced/special-characters-javascript.md).  
+ [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] stellt Escapesequenzen bereit, die Sie in Zeichenfolgen einfügen können, um Zeichen zu erstellen, die nicht direkt eingegeben werden können.  So gibt beispielsweise `\t` ein Tabstoppzeichen an.  Weitere Informationen finden Sie unter [Sonderzeichen](../javascript/advanced/special-characters-javascript.md).  
   
 ## Zahlen\-Datentyp  
- In [!INCLUDE[javascript](../includes/javascript-md.md)] gibt es keine Unterscheidung zwischen ganzzahligen und Gleitkommawerten; eine [!INCLUDE[javascript](../includes/javascript-md.md)]\-Zahl kann beides sein \(intern stellt [!INCLUDE[javascript](../includes/javascript-md.md)] alle Zahlen als Gleitkommawerte dar\).  
+ In [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] gibt es keine Unterscheidung zwischen ganzzahligen und Gleitkommawerten; eine [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Zahl kann beides sein \(intern stellt [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] alle Zahlen als Gleitkommawerte dar\).  
   
 ### Ganzzahlige Werte  
- Ganzzahlige Werte können positive ganze Zahlen, negative ganze Zahlen und 0 sein.  Sie können mit der Basis 10 \(dezimal\), der Basis 16 \(hexadezimal\) und der Basis 8 \(oktal\) dargestellt werden.  Die meisten Zahlen in [!INCLUDE[javascript](../includes/javascript-md.md)] werden als Dezimalzahlen geschrieben.  
+ Ganzzahlige Werte können positive ganze Zahlen, negative ganze Zahlen und 0 sein.  Sie können mit der Basis 10 \(dezimal\), der Basis 16 \(hexadezimal\) und der Basis 8 \(oktal\) dargestellt werden.  Die meisten Zahlen in [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] werden als Dezimalzahlen geschrieben.  
   
  Hexadezimale \("hex"\) ganze Zahlen werden mit dem Präfix "0x" \(null und x&#124;X\) bezeichnet.  Sie können nur die Ziffern 0 bis 9 und die Buchstaben A bis F \(entweder in Groß\- oder in Kleinschreibung\) enthalten.  Mit den Buchstaben A bis F werden die Zahlen 10 bis 15 zur Basis 10 als einzelne Ziffern dargestellt.  D. h., 0xF ist äquivalent zu 15, und 0x10 ist äquivalent zu 16.  
   
@@ -75,12 +75,12 @@ In [!INCLUDE[javascript](../includes/javascript-md.md)] gibt es drei primäre Da
  Sowohl Hexadezimal\- als auch Oktalzahlen können negativ sein, sie können jedoch weder Nachkommastellen besitzen noch in wissenschaftlicher \(exponentieller\) Notation geschrieben werden.  
   
 > [!NOTE]
->  Ab [!INCLUDE[jsv9text](../includes/jsv9text-md.md)] behandelt die [parseInt\-Funktion](../javascript/reference/parseint-function-javascript.md) keine Zeichenfolge mit dem Präfix "0" als oktale Zahl.  Wenn Sie die `parseInt`\-Funktion jedoch nicht verwenden, können Zeichenfolgen mit dem Präfix von "0" dennoch als oktale Zahlen interpretiert werden.  
+>  Ab [!INCLUDE[jsv9text](../javascript/includes/jsv9text-md.md)] behandelt die [parseInt\-Funktion](../javascript/reference/parseint-function-javascript.md) keine Zeichenfolge mit dem Präfix "0" als oktale Zahl.  Wenn Sie die `parseInt`\-Funktion jedoch nicht verwenden, können Zeichenfolgen mit dem Präfix von "0" dennoch als oktale Zahlen interpretiert werden.  
   
 ### Gleitkommawerte  
- Gleitkommawerte können ganze Zahlen mit Nachkommastellen sein.  Außerdem besteht die Möglichkeit, sie in wissenschaftlicher Notation auszudrücken.  Das heißt, dass mit dem Buchstaben "e" in Groß\- oder Kleinschreibung der Wert "zehn hoch" dargestellt wird.  [!INCLUDE[javascript](../includes/javascript-md.md)] stellt Zahlen mithilfe des 8\-Byte\-Gleitkommastandards IEEE 754 für die numerische Darstellung dar.  Dies bedeutet, dass Sie Zahlen bis maximal 1.79769x10<sup>308</sup> und minimal 5x10<sup>-324</sup> schreiben können.  Eine Zahl, die ein Dezimaltrennzeichen und eine einzelne "0" vor dem Dezimaltrennzeichen enthält, wird als dezimale Gleitkommazahl interpretiert.  
+ Gleitkommawerte können ganze Zahlen mit Nachkommastellen sein.  Außerdem besteht die Möglichkeit, sie in wissenschaftlicher Notation auszudrücken.  Das heißt, dass mit dem Buchstaben "e" in Groß\- oder Kleinschreibung der Wert "zehn hoch" dargestellt wird.  [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] stellt Zahlen mithilfe des 8\-Byte\-Gleitkommastandards IEEE 754 für die numerische Darstellung dar.  Dies bedeutet, dass Sie Zahlen bis maximal 1.79769x10<sup>308</sup> und minimal 5x10<sup>-324</sup> schreiben können.  Eine Zahl, die ein Dezimaltrennzeichen und eine einzelne "0" vor dem Dezimaltrennzeichen enthält, wird als dezimale Gleitkommazahl interpretiert.  
   
- Beachten Sie, dass eine Zahl, die mit "0x" oder "00" beginnt und ein Dezimaltrennzeichen enthält, einen Fehler auslöst.  Im Folgenden finden Sie einige Beispiele für [!INCLUDE[javascript](../includes/javascript-md.md)]\-Zahlen.  
+ Beachten Sie, dass eine Zahl, die mit "0x" oder "00" beginnt und ein Dezimaltrennzeichen enthält, einen Fehler auslöst.  Im Folgenden finden Sie einige Beispiele für [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Zahlen.  
   
 |Nummer|Beschreibung|Dezimales Äquivalent|  
 |------------|------------------|--------------------------|  
@@ -96,20 +96,20 @@ In [!INCLUDE[javascript](../includes/javascript-md.md)] gibt es drei primäre Da
 |0x3e7|Eine hexadezimale ganze Zahl.  Beachten Sie, dass der Buchstabe 'e' nicht als Potenzierung behandelt wird.|999|  
 |0x3,45e2|Das ist ein Fehler.  Hexadezimalzahlen dürfen keine Nachkommastellen besitzen.|N\/A \(Compilerfehler\)|  
   
- Außerdem enthält [!INCLUDE[javascript](../includes/javascript-md.md)] Zahlen mit speziellen Werten.  Diese lauten wie folgt:  
+ Außerdem enthält [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] Zahlen mit speziellen Werten.  Diese lauten wie folgt:  
   
 -   NaN \(Not a Number, keine Zahl\).  Dieser Wert wird verwendet, wenn eine mathematische Operation für ungeeignete Daten durchgeführt wird, z. B. für Zeichenfolgen oder den Wert undefined.  
   
--   Positive Unendlichkeit.  Dieser Wert wird verwendet, wenn eine positive Zahl zu groß ist, um in [!INCLUDE[javascript](../includes/javascript-md.md)] dargestellt zu werden.  
+-   Positive Unendlichkeit.  Dieser Wert wird verwendet, wenn eine positive Zahl zu groß ist, um in [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] dargestellt zu werden.  
   
--   Negative Unendlichkeit.  Dieser Wert wird verwendet, wenn eine negative Zahl zu groß ist, um in [!INCLUDE[javascript](../includes/javascript-md.md)] dargestellt zu werden.  
+-   Negative Unendlichkeit.  Dieser Wert wird verwendet, wenn eine negative Zahl zu groß ist, um in [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] dargestellt zu werden.  
   
--   Positive und negative 0 \(null\).  [!INCLUDE[javascript](../includes/javascript-md.md)] unterscheidet zwischen positiver und negativer Null.  
+-   Positive und negative 0 \(null\).  [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] unterscheidet zwischen positiver und negativer Null.  
   
 ## Boolescher Datentyp  
  Während die Datentypen "Zeichenfolge" und "Zahl" eine praktisch unbegrenzte Anzahl von unterschiedlichen Werten haben können, kann der Boolesche Datentyp nur zwei Werte haben.  Dies sind die Literale `true` und `false`.  Ein Boolescher Wert ist ein Wahrheitswert: Er drückt die Gültigkeit einer Bedingung aus \(d. h. er gibt an, ob die Bedingung erfüllt ist oder nicht\).  
   
- Vergleiche, die Sie in Skripts durchführen, liefern stets ein Ergebnis vom Typ Boolesch.  Betrachten Sie die folgende [!INCLUDE[javascript](../includes/javascript-md.md)]\-Codezeile.  
+ Vergleiche, die Sie in Skripts durchführen, liefern stets ein Ergebnis vom Typ Boolesch.  Betrachten Sie die folgende [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Codezeile.  
   
 ```javascript  
 y = (x == 2000);  
@@ -117,7 +117,7 @@ y = (x == 2000);
   
  Hier wird überprüft, ob der Wert der Variablen `x` der Zahl 2000 entspricht.  Wenn ja, wird der boolesche Wert **true** als Vergleichsergebnis zurückgegeben und der Variablen `y` zugewiesen.  Wenn `x` ungleich 2000 ist, ergibt der Vergleich den booleschen Wert `false`.  
   
- Boolesche Werte sind insbesondere in Steuerstrukturen hilfreich.  Der folgende Code kombiniert einen Vergleich, der einen Booleschen Wert erzeugt, direkt mit einer Anweisung, die ihn verwendet.  Betrachten Sie das folgende [!INCLUDE[javascript](../includes/javascript-md.md)]\-Codebeispiel.  
+ Boolesche Werte sind insbesondere in Steuerstrukturen hilfreich.  Der folgende Code kombiniert einen Vergleich, der einen Booleschen Wert erzeugt, direkt mit einer Anweisung, die ihn verwendet.  Betrachten Sie das folgende [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Codebeispiel.  
   
 ```javascript  
 if (x == 2000) {  
@@ -128,7 +128,7 @@ else {
 }  
 ```  
   
- Die `if/else`\-Anweisung in [!INCLUDE[javascript](../includes/javascript-md.md)] führt eine Aktion aus, Anweisung in JavaScript führt eine Aktion aus, wenn ein Boolescher Wert `true` \(`z = z + 1`\) ist, und eine andere Aktion, wenn der boolesche Wert `false` \(`x = x + 1`\) ist.  
+ Die `if/else`\-Anweisung in [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] führt eine Aktion aus, Anweisung in JavaScript führt eine Aktion aus, wenn ein Boolescher Wert `true` \(`z = z + 1`\) ist, und eine andere Aktion, wenn der boolesche Wert `false` \(`x = x + 1`\) ist.  
   
  Sie können einen beliebigen Ausdruck als Vergleichsausdruck verwenden.  Jeder Ausdruck, der 0, Null, nicht definiert oder eine leere Zeichenfolge ergibt, wird als `false` interpretiert.  Ein Ausdruck, der einen anderen Wert ergibt, wird als `true` interpretiert.  Beispielsweise können Sie einen Ausdruck wie den folgenden verwenden:  
   
@@ -147,11 +147,11 @@ if (x == y + z)
  Weitere Informationen zu Vergleichen finden Sie unter [Steuern des Programmablaufs](../javascript/controlling-program-flow-javascript.md).  
   
 ## Null\-Datentyp  
- Der `null`\-Datentyp hat nur einen Wert in [!INCLUDE[javascript](../includes/javascript-md.md)]: NULL.  Das `null`\-Schlüsselwort kann nicht als Name einer Funktion oder Variablen verwendet werden.  
+ Der `null`\-Datentyp hat nur einen Wert in [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]: NULL.  Das `null`\-Schlüsselwort kann nicht als Name einer Funktion oder Variablen verwendet werden.  
   
  Eine Variable, die `null` enthält, hat keine gültige Zahl oder Zeichenfolge, kein gültiges Array oder Objekt bzw. keinen gültigen Booleschen Wert.  Sie können den Inhalt einer Variablen löschen \(ohne die Variable selbst zu löschen\), indem Sie ihr den Wert NULL zuweisen.  
   
- Beachten Sie, dass in [!INCLUDE[javascript](../includes/javascript-md.md)] `null` nicht \(wie in C und C\+\+\) mit 0 identisch ist.  Der Operator `typeof` in [!INCLUDE[javascript](../includes/javascript-md.md)] meldet bei `null`\-Werten, dass diese vom Typ `Object` und nicht vom Typ `null` sind.  Dieses möglicherweise irreführende Verhalten wird aus Gründen der Abwärtskompatibilität beibehalten.  
+ Beachten Sie, dass in [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] `null` nicht \(wie in C und C\+\+\) mit 0 identisch ist.  Der Operator `typeof` in [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] meldet bei `null`\-Werten, dass diese vom Typ `Object` und nicht vom Typ `null` sind.  Dieses möglicherweise irreführende Verhalten wird aus Gründen der Abwärtskompatibilität beibehalten.  
   
 ## Datentyp nicht definiert  
  Der `undefined`\-Wert wird zurückgegeben, wenn Sie eine Objekteigenschaft, die nicht vorhanden ist, oder eine Variable verwenden, die deklariert, der aber nie ein Wert zugewiesen wurde.  

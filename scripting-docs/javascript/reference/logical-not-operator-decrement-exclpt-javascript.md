@@ -66,7 +66,7 @@ result = !expression
  Für den logischen Operator **\!** gilt: Ist *expression* ungleich Null, so ist *result* gleich Null.  Ist *expression* gleich Null, so ist *result* gleich 1.  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## Siehe auch  
  [Bitweiser NOT\-Operator \(~\)](../../javascript/reference/bitwise-not-operator-decrement-tilde-javascript.md)   

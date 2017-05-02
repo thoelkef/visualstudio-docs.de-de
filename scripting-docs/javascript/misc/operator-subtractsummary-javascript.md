@@ -21,7 +21,7 @@ manager: "ghogen"
 caps.handback.revision: 6
 ---
 # Zusammenfassung der Operatoren (JavaScript)
-In den folgenden Tabellen sind die [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Operatoren in den jeweiligen Kategorien aufgelistet.  
+In den folgenden Tabellen sind die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Operatoren in den jeweiligen Kategorien aufgelistet.  
   
 ## Arithmetische Operatoren  
   
@@ -83,4 +83,4 @@ In den folgenden Tabellen sind die [!INCLUDE[javascript](../../includes/javascri
  [void](../../javascript/reference/void-operator-decrementjavascript.md)  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]

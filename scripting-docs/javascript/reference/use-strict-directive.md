@@ -28,7 +28,7 @@ manager: "ghogen"
 caps.handback.revision: 10
 ---
 # Use Strict-Direktive
-Schränkt die Verwendung einiger Funktionen in JavaScript ein.  Wird in Internet Explorer 10 und nur in [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]\-Apps unterstützt.  
+Schränkt die Verwendung einiger Funktionen in JavaScript ein.  Wird in Internet Explorer 10 und nur in [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-Apps unterstützt.  
   
 ## Syntax  
   

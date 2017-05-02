@@ -134,7 +134,7 @@ function MyObjectType(obj) {
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv3](../../includes/jsv3-md.md)]  
+ [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
 ## Siehe auch  
  [break\-Anweisung](../../javascript/reference/break-statement-javascript.md)   

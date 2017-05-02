@@ -24,7 +24,7 @@ manager: "ghogen"
 caps.handback.revision: 9
 ---
 # WinRTError-Objekt (JavaScript)
-Wenn ein Windows\-Runtime\-Aufruf ein HRESULT zurückgibt, das einen Fehler angibt, wird dieser von JavaScript in einen speziellen Windows\-Runtime\-Fehler konvertiert.  Diese Funktion steht nur in [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]\-Apps zur Verfügung, wenn die Windows\-Runtime verfügbar ist \(als Teil des globalen JavaScript\-Namespace\).  
+Wenn ein Windows\-Runtime\-Aufruf ein HRESULT zurückgibt, das einen Fehler angibt, wird dieser von JavaScript in einen speziellen Windows\-Runtime\-Fehler konvertiert.  Diese Funktion steht nur in [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-Apps zur Verfügung, wenn die Windows\-Runtime verfügbar ist \(als Teil des globalen JavaScript\-Namespace\).  
   
 ## Syntax  
   
@@ -55,7 +55,7 @@ try {
  Das WinRTError\-Objekt hat die gleichen Eigenschaften wie das [Error\-Objekt](../../javascript/reference/error-object-javascript.md)\-Objekt.  
   
 ## Anforderungen  
- Das WinRTError\-Objekt wird nur in [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]\-Apps unterstützt, nicht jedoch in Internet Explorer.  
+ Das WinRTError\-Objekt wird nur in [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-Apps unterstützt, nicht jedoch in Internet Explorer.  
   
 ## Siehe auch  
  [Error\-Objekt](../../javascript/reference/error-object-javascript.md)

@@ -43,7 +43,7 @@ newString = new String(["stringLiteral"])
  Optional.  Eine beliebige Gruppe mit Unicode\-Zeichen.  
   
 ## Hinweise  
- [!INCLUDE[javascript](../../includes/javascript-md.md)] bietet Escapesequenzen, die Sie in Zeichenfolgen einfügen können, um Zeichen zu erstellen, die Sie nicht direkt tippen können.  So gibt beispielsweise `\t` ein Tabstoppzeichen an.  Weitere Informationen finden Sie unter [Sonderzeichen](../../javascript/advanced/special-characters-javascript.md).  
+ [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] bietet Escapesequenzen, die Sie in Zeichenfolgen einfügen können, um Zeichen zu erstellen, die Sie nicht direkt tippen können.  So gibt beispielsweise `\t` ein Tabstoppzeichen an.  Weitere Informationen finden Sie unter [Sonderzeichen](../../javascript/advanced/special-characters-javascript.md).  
   
 ## Zeichenfolgenliterale  
  Ein *Zeichenfolgenliteral* besteht aus null oder mehr Zeichen, die in einfache oder doppelte Anführungszeichen eingeschlossen sind.  Ein Zeichenfolgenliteral hat den primären \(primitiven\) Datentyp `string`.  Ein *String\-Objekt* wird mithilfe des [new\-Operators](../../javascript/reference/new-operator-decrementjavascript.md) erstellt und hat den Datentyp `Object`.  
@@ -83,7 +83,7 @@ document.write(result2);
 ```  
   
 ## Zugreifen auf ein einzelnes Zeichen  
- Sie können auf ein einzelnes Zeichen einer Zeichenfolge als schreibgeschützte indizierte Array\-Eigenschaft zugreifen.  Diese Funktion wurde in [!INCLUDE[jsv9text](../../includes/jsv9text-md.md)] eingeführt.  Im folgenden Beispiel wird auf einzelne Zeichen der Zeichenfolge zugegriffen.  
+ Sie können auf ein einzelnes Zeichen einer Zeichenfolge als schreibgeschützte indizierte Array\-Eigenschaft zugreifen.  Diese Funktion wurde in [!INCLUDE[jsv9text](../../javascript/includes/jsv9text-md.md)] eingeführt.  Im folgenden Beispiel wird auf einzelne Zeichen der Zeichenfolge zugegriffen.  
   
 ```javascript  
 var str = "abcd";  
@@ -97,7 +97,7 @@ document.write(result);
 ```  
   
 ## Anforderungen  
- Das `String Object` wurde in [!INCLUDE[jsv1text](../../includes/jsv1text-md.md)] eingeführt.  Einige Member der folgenden Listen wurden in höheren Versionen eingeführt.  
+ Das `String Object` wurde in [!INCLUDE[jsv1text](../../javascript/reference/includes/jsv1text-md.md)] eingeführt.  Einige Member der folgenden Listen wurden in höheren Versionen eingeführt.  
   
 <a name="js56jsobjstringprop"></a>   
 ## Eigenschaften  

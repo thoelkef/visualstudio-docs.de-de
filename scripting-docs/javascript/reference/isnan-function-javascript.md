@@ -44,7 +44,7 @@ isNaN(numValue)
  Alternativ kann eine Variable, die `NaN` oder einen anderen Wert enthält, mit sich selbst verglichen werden.  Ergibt der Vergleich eine Ungleichheit, so hat die Variable den Wert `NaN`.  Dies liegt daran, dass `NaN` der einzige Wert ist, der nicht mit sich selbst gleich ist.  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
  **Gilt für**: [Global\-Objekt](../../javascript/reference/global-object-javascript.md)  
   

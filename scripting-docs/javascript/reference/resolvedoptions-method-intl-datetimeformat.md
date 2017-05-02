@@ -37,7 +37,7 @@ dateTimeFormatObj.resolvedOptions()
  Die Eigenschaften des zurückgegebenen Objekts entsprechen den berechneten Eigenschaften des `DateTimeFormat`\-Objekts.  
   
 ## Anforderungen  
- [!INCLUDE[jsv11](../../includes/jsv11-md.md)]  
+ [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]  
   
 ## Siehe auch  
  [Intl.DateTimeFormat\-Objekt](../../javascript/reference/intl-datetimeformat-object-javascript.md)

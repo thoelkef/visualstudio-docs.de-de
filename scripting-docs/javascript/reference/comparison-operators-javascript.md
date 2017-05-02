@@ -50,7 +50,7 @@ expression1 comparisonoperator expression2
  Ein beliebiger Ausdruck.  
   
 ## Hinweise  
- Beim Vergleich von Zeichenfolgen verwendet [!INCLUDE[javascript](../../includes/javascript-md.md)] den Unicodezeichenwert des Zeichenfolgenausdrucks.  
+ Beim Vergleich von Zeichenfolgen verwendet [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] den Unicodezeichenwert des Zeichenfolgenausdrucks.  
   
  Im Folgenden wird beschrieben, wie sich die verschiedenen Operatorgruppen abhängig von Typ und Wert der beiden Ausdrücke `expression1` und `expression2` verhalten:  
   
@@ -87,7 +87,7 @@ expression1 comparisonoperator expression2
  Diese Operatoren verhalten sich genauso wie die equality\-Operatoren, außer dass keine Typkonvertierung ausgeführt wird.  Wenn die Typen beider Ausdrücke nicht identisch sind, geben diese Ausdrücke immer `false` zurück.  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## Siehe auch  
  [Operatorrangfolge](../../javascript/operator-subtractprecedence-javascript.md)   

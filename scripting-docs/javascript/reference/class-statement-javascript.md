@@ -50,13 +50,13 @@ class classname () [extends object] {
  Optional.  Eine optionale durch Trennzeichen getrennte Liste von Argumenten, die die Funktion versteht.  
   
  `statements`  
- Optional.  Eine oder mehrere [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Anweisungen.  
+ Optional.  Eine oder mehrere [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Anweisungen.  
   
  `static`  
  Optional.  Gibt eine statische Methode an.  
   
  `method`  
- Optional.  Eine oder mehrere [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Instanzen oder statische Methoden, die in einer Klasseninstanz aufgerufen werden können.  
+ Optional.  Eine oder mehrere [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Instanzen oder statische Methoden, die in einer Klasseninstanz aufgerufen werden können.  
   
 ## Hinweise  
  Mit einer Klasse können Sie neue Objekte mithilfe der prototypbasierten Vererbung sowie mithilfe von Konstruktoren, Instanzmethoden und statischen Methoden erstellen.  Sie können das `super`\-Objekt in einem Klassenkonstruktor oder einer Klassenmethode verwenden, um den gleichen Konstruktor oder die gleiche Methode in der übergeordneten Klassen oder dem übergeordneten Objekt aufzurufen.  Verwenden Sie optional die `extends`\-Anweisung nach dem Klassennamen, um die Klasse oder das Objekt anzugeben, von der bzw. dem die neue Klasse erbt.  
@@ -124,4 +124,4 @@ console.log(s.prop_42);
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv12exp](../../includes/jsv12exp-md.md)]
+ [!INCLUDE[jsv12exp](../../javascript/reference/includes/jsv12exp-md.md)]

@@ -23,7 +23,7 @@ manager: "ghogen"
 caps.handback.revision: 7
 ---
 # Ung&#252;ltiges Zeichen (JavaScript)
-Sie haben einen Bezeichner erstellt, der mindestens ein Zeichen enthält, das vom [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Compiler nicht als gültig erkannt wird.  Gültige Zeichen müssen den folgenden Regeln entsprechen:  
+Sie haben einen Bezeichner erstellt, der mindestens ein Zeichen enthält, das vom [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Compiler nicht als gültig erkannt wird.  Gültige Zeichen müssen den folgenden Regeln entsprechen:  
   
 -   Das erste Zeichen muss ein ACSII\-Buchstabe \(Großbuchstabe oder Kleinbuchstabe\) oder ein Unterstrich \(\_\) sein.  
   
@@ -33,7 +33,7 @@ Sie haben einen Bezeichner erstellt, der mindestens ein Zeichen enthält, das vo
   
 ### So beheben Sie diesen Fehler  
   
--   Verwenden Sie keine Zeichen, die für die [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Sprache nicht definiert sind.  
+-   Verwenden Sie keine Zeichen, die für die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Sprache nicht definiert sind.  
   
 ## Siehe auch  
  [Variablen](../../javascript/variables-javascript.md)   

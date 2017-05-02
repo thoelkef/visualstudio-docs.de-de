@@ -53,7 +53,7 @@ dateObj.setHours(numHours[, numMin[, numSec[, numMilli]]])
  Optional.  Ein den Millisekunden entsprechender numerischer Wert.  
   
 ## Hinweise  
- Alle **set**\-Methoden, denen optionale Argumente übergeben werden, verwenden den von den entsprechenden **get**\-Methoden zurückgegebenen Wert, wenn kein optionales Argument angegeben wurde.  Wenn beispielsweise das `numMinutes`\-Argument nicht angegeben wird, verwendet [!INCLUDE[javascript](../../includes/javascript-md.md)] den Wert, der von der `getMinutes`\-Methode zurückgegeben wird.  
+ Alle **set**\-Methoden, denen optionale Argumente übergeben werden, verwenden den von den entsprechenden **get**\-Methoden zurückgegebenen Wert, wenn kein optionales Argument angegeben wurde.  Wenn beispielsweise das `numMinutes`\-Argument nicht angegeben wird, verwendet [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] den Wert, der von der `getMinutes`\-Methode zurückgegeben wird.  
   
  Um den Stundenwert unter Verwendung der koordinierten Weltzeit \(Universal Coordinated Time, UTC\) festzulegen, verwenden Sie die `setUTCHours`\-Methode.  
   
@@ -73,7 +73,7 @@ function SetHoursDemo(nhr, nmin, nsec){
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv3](../../includes/jsv3-md.md)]  
+ [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
  **Gilt für**: [Date\-Objekt](../../javascript/reference/date-object-javascript.md)  
   

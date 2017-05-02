@@ -62,7 +62,7 @@ while (number != undefined)
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv55](../../includes/jsv55-md.md)]  
+ [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
 ## Siehe auch  
  [push\-Methode \(Array\)](../../javascript/reference/push-method-array-javascript.md)

@@ -58,7 +58,7 @@ temp = 14 << 2
  Die *temp*\-Variable hat einen Wert von 56, da 14 \(binär 00001110\), um zwei Bits nach links verschoben, 56 ergibt \(binär 00111000\).  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## Siehe auch  
  [Left Shift\-Zuweisungsoperator \(\<\<\=\)](../../javascript/reference/left-shift-assignment-operator-decrement-equal-javascript.md)   

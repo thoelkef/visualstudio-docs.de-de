@@ -127,7 +127,7 @@ document.write(result);
 ```  
   
 ## Beispiel  
- Im folgenden Beispiel wird eine integrierte [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Methode als Rückruffunktion verwendet.  
+ Im folgenden Beispiel wird eine integrierte [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Methode als Rückruffunktion verwendet.  
   
 ```javascript  
 // Apply Math.sqrt(value) to each element in an array.  
@@ -167,7 +167,7 @@ document.write(result);
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv9](../../includes/jsv9-md.md)]  
+ [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
 ## Siehe auch  
  [JavaScript\-Methoden](../../javascript/reference/javascript-methods.md)   

@@ -34,10 +34,10 @@ object.defineProperties(object, descriptors)
   
 ## Parameter  
  `object`  
- Erforderlich.  Das Objekt, zu dem die Eigenschaft hinzugefügt oder dessen Eigenschaften geändert werden sollen.  Dies kann ein systemeigenes [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Objekt oder ein DOM\-Objekt sein.  
+ Erforderlich.  Das Objekt, zu dem die Eigenschaft hinzugefügt oder dessen Eigenschaften geändert werden sollen.  Dies kann ein systemeigenes [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Objekt oder ein DOM\-Objekt sein.  
   
  `descriptors`  
- Erforderlich.  Ein [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Objekt, das eine oder mehrere Deskriptorobjekte enthält.  Jedes Deskriptorobjekt beschreibt eine Dateneigenschaft oder eine Accessoreigenschaft.  
+ Erforderlich.  Ein [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Objekt, das eine oder mehrere Deskriptorobjekte enthält.  Jedes Deskriptorobjekt beschreibt eine Dateneigenschaft oder eine Accessoreigenschaft.  
   
 ## Rückgabewert  
  Das an die Funktion übergebene Objekt.  
@@ -149,7 +149,7 @@ Object.defineProperties(obj, {
 ```  
   
 ## Anforderungen  
- Wird in Internet Explorer 9 \(Standardmodus\), in Internet Explorer 10 \(Standardmodus\) und in [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]\-Apps unterstützt.  Unterstützt in Internet Explorer 8 für DOM\-Objekte; andernfalls keine Unterstützung.  
+ Wird in Internet Explorer 9 \(Standardmodus\), in Internet Explorer 10 \(Standardmodus\) und in [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-Apps unterstützt.  Unterstützt in Internet Explorer 8 für DOM\-Objekte; andernfalls keine Unterstützung.  
   
 ## Siehe auch  
  [Object.getOwnPropertyDescriptor\-Funktion](../../javascript/reference/object-getownpropertydescriptor-function-javascript.md)   

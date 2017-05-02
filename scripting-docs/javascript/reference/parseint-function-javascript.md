@@ -51,12 +51,12 @@ parseInt("12abc");   // Returns 12.
  Eine Überprüfung auf `NaN` können Sie mit der `isNaN`\-Funktion durchführen.  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
  **Gilt für**: [Global\-Objekt](../../javascript/reference/global-object-javascript.md)  
   
 > [!NOTE]
->  Ab [!INCLUDE[jsv9textspecific](../../includes/jsv9textspecific-md.md)] behandelt die `parseInt`\-Funktion eine Zeichenfolge mit dem Präfix "0" nicht als oktale Zahl.  Wenn Sie die `parseInt`\-Funktion jedoch nicht verwenden, können Zeichenfolgen mit dem Präfix "0" weiterhin als oktale Zahlen interpretiert werden.  Weitere Informationen über ganze oktale Zahlen finden Sie unter [Datentypen](../../javascript/data-types-javascript.md).  
+>  Ab [!INCLUDE[jsv9textspecific](../../javascript/reference/includes/jsv9textspecific-md.md)] behandelt die `parseInt`\-Funktion eine Zeichenfolge mit dem Präfix "0" nicht als oktale Zahl.  Wenn Sie die `parseInt`\-Funktion jedoch nicht verwenden, können Zeichenfolgen mit dem Präfix "0" weiterhin als oktale Zahlen interpretiert werden.  Weitere Informationen über ganze oktale Zahlen finden Sie unter [Datentypen](../../javascript/data-types-javascript.md).  
   
 ## Siehe auch  
  [isNaN\-Funktion](../../javascript/reference/isnan-function-javascript.md)   

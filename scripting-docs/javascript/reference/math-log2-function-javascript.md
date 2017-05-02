@@ -33,7 +33,7 @@ Math.log2(x)
  Wenn `x` gleich `NaN` ist, gibt diese Funktion `NaN` zurück.  Wenn `x` kleiner als Null \(0\) ist, gibt diese Funktion `NaN` zurück.  
   
 ## Anforderungen  
- [!INCLUDE[jsv12](../../includes/jsv12-md.md)]  
+ [!INCLUDE[jsv12](../../javascript/reference/includes/jsv12-md.md)]  
   
  **Gilt für**: [Math\-Objekt](../../javascript/reference/math-object-javascript.md)  
   

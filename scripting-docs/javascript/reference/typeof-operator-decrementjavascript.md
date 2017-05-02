@@ -78,7 +78,7 @@ var result = (typeof obj.propNotDeclared === 'undefined');
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## Siehe auch  
  [Array.isArray\-Funktion](../../javascript/reference/array-isarray-function-javascript.md)   

@@ -29,7 +29,7 @@ caps.handback.revision: 14
 Erstellt Variablen, die in bedingten Kompilierungsanweisungen verwendet werden.  
   
 > [!WARNING]
->  Die bedingte Kompilierung wird im Standardmodus von Internet Explorer 11 und den [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]\-Apps nicht unterstützt.  Die bedingte Kompilierung wird im Standardmodus von Internet Explorer 10 und allen früheren Versionen unterstützt.  
+>  Die bedingte Kompilierung wird im Standardmodus von Internet Explorer 11 und den [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-Apps nicht unterstützt.  Die bedingte Kompilierung wird im Standardmodus von Internet Explorer 10 und allen früheren Versionen unterstützt.  
   
 ## Syntax  
   
@@ -40,13 +40,13 @@ Erstellt Variablen, die in bedingten Kompilierungsanweisungen verwendet werden.
   
 ## Parameter  
  *varname*  
- Erforderlich.  Gültiger [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Variablenname.  Dem Namen muss stets das Zeichen "@" vorangestellt sein.  
+ Erforderlich.  Gültiger [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Variablenname.  Dem Namen muss stets das Zeichen "@" vorangestellt sein.  
   
  `term`  
  Erforderlich.  Keine unäre Operatoren oder mehrere unäre Operatoren, auf die eine Konstante, eine bedingte Kompilierungsvariable oder ein in Klammern gesetzter Ausdruck folgt.  
   
 ## Hinweise  
- Numerische und boolesche Variablen werden bei der bedingten Kompilierung unterstützt.  Zeichenfolgen werden nicht unterstützt.  Unter Verwendung von `@set` erstellte Variablen werden hauptsächlich in Anweisungen für bedingte Kompilierungen eingesetzt. In [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Code können sie jedoch an beliebigen Stellen verwendet werden.  
+ Numerische und boolesche Variablen werden bei der bedingten Kompilierung unterstützt.  Zeichenfolgen werden nicht unterstützt.  Unter Verwendung von `@set` erstellte Variablen werden hauptsächlich in Anweisungen für bedingte Kompilierungen eingesetzt. In [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Code können sie jedoch an beliebigen Stellen verwendet werden.  
   
  Beispiele für Variablendeklarationen sehen wie folgt aus:  
   
@@ -87,7 +87,7 @@ Erstellt Variablen, die in bedingten Kompilierungsanweisungen verwendet werden.
  Dies funktioniert, da `NaN` der einzige Wert ist, der ungleich sich selbst ist.  
   
 ## Anforderungen  
- Wird in allen Versionen von Internet Explorer, jedoch nicht in [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]\-Apps unterstützt.  
+ Wird in allen Versionen von Internet Explorer, jedoch nicht in [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-Apps unterstützt.  
   
 ## Siehe auch  
  [Bedingte Kompilierung](../../javascript/advanced/conditional-compilation-javascript.md)   

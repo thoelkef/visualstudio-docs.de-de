@@ -26,7 +26,7 @@ caps.handback.revision: 11
 Folgende vordefinierte Variablen stehen für die bedingte Kompilierung zur Verfügung.  Wenn eine Variable nicht **true** ist, wird sie nicht definiert und verhält sich als `NaN`, wenn auf sie zugegriffen wird.  
   
 > [!WARNING]
->  Die bedingte Kompilierung wird in allen Versionen von Internet Explorer vor Internet Explorer 11 unterstützt.  Die bedingte Kompilierung wird im Standardmodus von Internet Explorer 11 und den [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]\-Apps nicht unterstützt.  
+>  Die bedingte Kompilierung wird in allen Versionen von Internet Explorer vor Internet Explorer 11 unterstützt.  Die bedingte Kompilierung wird im Standardmodus von Internet Explorer 11 und den [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-Apps nicht unterstützt.  
   
 ## Variablen  
   
@@ -40,5 +40,5 @@ Folgende vordefinierte Variablen stehen für die bedingte Kompilierung zur Verf�
 |@\_mc680x0|True bei Ausführung auf einem Motorola 680x0\-Prozessor.|  
 |@\_PowerPC|True bei Ausführung auf einem Motorola PowerPC\-Prozessor.|  
 |@\_jscript|Stets true.|  
-|@\_jscript\_build|Enthält die Buildnummer des [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Skriptmoduls.|  
-|@\_jscript\_version|Enthält die [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Versionsnummer im Format Hauptversion.Nebenversion.|
+|@\_jscript\_build|Enthält die Buildnummer des [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Skriptmoduls.|  
+|@\_jscript\_version|Enthält die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Versionsnummer im Format Hauptversion.Nebenversion.|

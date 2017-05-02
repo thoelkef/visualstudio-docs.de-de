@@ -24,7 +24,7 @@ manager: "ghogen"
 caps.handback.revision: 15
 ---
 # Objekte und Arrays (JavaScript)
-[!INCLUDE[javascript](../includes/javascript-md.md)]\-Objekte sind Auflistungen von Eigenschaften und Methoden.  Eine Methode ist eine Funktion, die ein Member eines Objekts ist.  Eine Eigenschaft ist ein Wert oder ein Satz von Werten \(in Form eines Arrays oder eines Objekts\), der Member eines Objekts ist.  [!INCLUDE[javascript](../includes/javascript-md.md)] unterstützt vier Arten von Objekten:  
+[!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Objekte sind Auflistungen von Eigenschaften und Methoden.  Eine Methode ist eine Funktion, die ein Member eines Objekts ist.  Eine Eigenschaft ist ein Wert oder ein Satz von Werten \(in Form eines Arrays oder eines Objekts\), der Member eines Objekts ist.  [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] unterstützt vier Arten von Objekten:  
   
 -   Systeminterne Objekte, wie z. B. `Array` und `String`.  
   
@@ -35,7 +35,7 @@ caps.handback.revision: 15
 -   ActiveX\-Objekte.  
   
 ## Expando\-Eigenschaften und \-Methoden  
- Alle Objekte in [!INCLUDE[javascript](../includes/javascript-md.md)] unterstützen "expando"\-Eigenschaften\- und Methoden, die zur Laufzeit hinzugefügt und entfernt werden können.  Diese Eigenschaften und Methoden können beliebige Namen haben und von Zahlen identifiziert werden.  Wenn der Name der Eigenschaft oder der Methode ein einfacher Bezeichner ist, kann er mit einem Punkt nach dem Objektnamen geschrieben werden, z. B. wie `myObj.name`, `myObj.age` und `myObj.getAge` im folgenden Code:  
+ Alle Objekte in [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] unterstützen "expando"\-Eigenschaften\- und Methoden, die zur Laufzeit hinzugefügt und entfernt werden können.  Diese Eigenschaften und Methoden können beliebige Namen haben und von Zahlen identifiziert werden.  Wenn der Name der Eigenschaft oder der Methode ein einfacher Bezeichner ist, kann er mit einem Punkt nach dem Objektnamen geschrieben werden, z. B. wie `myObj.name`, `myObj.age` und `myObj.getAge` im folgenden Code:  
   
 ```javascript  
 var myObj = new Object();  
@@ -60,7 +60,7 @@ document.write(myObj.getAge());
   
 ```  
   
- Wenn der Name der Eigenschaft oder der Methode kein einfacher Bezeichner ist oder beim Erstellen des Skripts nicht bekannt ist, können Sie einen beliebigen Ausdruck in eckigen Klammern verwenden, um die Eigenschaft zu indizieren.  In [!INCLUDE[javascript](../includes/javascript-md.md)] werden die Namen aller expando\-Eigenschaften in Zeichenfolgen konvertiert, bevor sie zum Objekt hinzugefügt werden.  
+ Wenn der Name der Eigenschaft oder der Methode kein einfacher Bezeichner ist oder beim Erstellen des Skripts nicht bekannt ist, können Sie einen beliebigen Ausdruck in eckigen Klammern verwenden, um die Eigenschaft zu indizieren.  In [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] werden die Namen aller expando\-Eigenschaften in Zeichenfolgen konvertiert, bevor sie zum Objekt hinzugefügt werden.  
   
 ```javascript  
 var myObj = new Object();  
@@ -79,7 +79,7 @@ myObj[100] = "100";
  Informationen zum Erstellen eines Objekts anhand einer Definition finden Sie unter [Erstellen von Objekten](../javascript/creating-objects-javascript.md).  
   
 ## Arrays als Objekte  
- In [!INCLUDE[javascript](../includes/javascript-md.md)] werden Objekte und Arrays fast identisch behandelt, da Arrays lediglich eine spezielle Art von Objekten sind.  Sowohl Objekte als auch Arrays können Eigenschaften und Methoden besitzen.  
+ In [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] werden Objekte und Arrays fast identisch behandelt, da Arrays lediglich eine spezielle Art von Objekten sind.  Sowohl Objekte als auch Arrays können Eigenschaften und Methoden besitzen.  
   
  Arrays haben eine `length`\-Eigenschaft, Objekte hingegen nicht.  Wenn Sie einem Element eines Arrays einen Wert zuweisen, dessen Index größer als seine Länge \(beispielsweise, `myArray[100] = "hello"`\) ist, wird die `length`\-Eigenschaft automatisch auf die neue Länge erhöht.  Dementsprechend werden alle Elemente, deren Index sich außerhalb der Länge des Arrays befinden, gelöscht, wenn Sie die `length`\-Eigenschaft eines Arrays verringern.  
   
@@ -129,7 +129,7 @@ myArray.forEach(function (item) {
 ```  
   
 ## Mehrdimensionale Arrays  
- [!INCLUDE[javascript](../includes/javascript-md.md)] unterstützt nicht direkt mehrdimensionale Arrays, aber Sie können das Verhalten von mehrdimensionalen Arrays abrufen, indem Sie Arrays in den Elementen eines anderen Arrays speichern. \(Sie können jede Art von Daten innerhalb der Arrayelemente speichern, einschließlich andere Arrays.\) Mit dem folgenden Code wird z. B. eine Multiplikationstabelle für die Zahlen bis 5 erstellt.  
+ [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] unterstützt nicht direkt mehrdimensionale Arrays, aber Sie können das Verhalten von mehrdimensionalen Arrays abrufen, indem Sie Arrays in den Elementen eines anderen Arrays speichern. \(Sie können jede Art von Daten innerhalb der Arrayelemente speichern, einschließlich andere Arrays.\) Mit dem folgenden Code wird z. B. eine Multiplikationstabelle für die Zahlen bis 5 erstellt.  
   
 ```javascript  
 // The size of the table.  

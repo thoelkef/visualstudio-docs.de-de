@@ -37,4 +37,4 @@ collator.prototype
  Um beispielsweise dem `Intl.Collator`\-Objekt eine Methode hinzuzufügen, die den Wert des größten Elements des Satzes zurückgibt, deklarieren Sie die Funktion, fügen Sie sie `Intl.Collator.prototype` hinzu, und verwenden Sie sie dann.  
   
 ## Anforderungen  
- [!INCLUDE[jsv11](../../includes/jsv11-md.md)]
+ [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]

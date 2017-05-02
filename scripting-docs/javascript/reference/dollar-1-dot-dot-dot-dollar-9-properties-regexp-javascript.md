@@ -104,7 +104,7 @@ document.write(s);
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
  **Gilt für**: [RegExp\-Objekt](../../javascript/reference/regexp-object-javascript.md)  
   

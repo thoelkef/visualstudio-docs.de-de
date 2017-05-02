@@ -62,12 +62,12 @@ document.write(myArray.max());
   
 ```  
   
- Alle systeminternen [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Objekte verfügen über eine `prototype`\-Eigenschaft, die schreibgeschützt ist.  Dem Prototyp können Eigenschaften und Methoden hinzugefügt werden, dem Objekt kann jedoch kein anderer Prototyp zugewiesen werden.  Benutzerdefinierten Objekten kann jedoch ein neuer Prototyp zugewiesen werden.  
+ Alle systeminternen [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Objekte verfügen über eine `prototype`\-Eigenschaft, die schreibgeschützt ist.  Dem Prototyp können Eigenschaften und Methoden hinzugefügt werden, dem Objekt kann jedoch kein anderer Prototyp zugewiesen werden.  Benutzerdefinierten Objekten kann jedoch ein neuer Prototyp zugewiesen werden.  
   
  In den Methoden\- und Eigenschaftenlisten für jedes systeminterne Objekt in diesem Sprachverzeichnis wird angegeben, welche Bestandteil des Objektprototyps sind und welche nicht.  
   
 ## Anforderungen  
- [!INCLUDE[jsv2](../../includes/jsv2-md.md)]  
+ [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]  
   
 ## Siehe auch  
  [constructor\-Eigenschaft \(Objekt\)](../../javascript/reference/constructor-property-object-javascript.md)

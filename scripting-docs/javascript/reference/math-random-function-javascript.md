@@ -38,10 +38,10 @@ Math.random( )
 ```  
   
 ## Hinweise  
- Die generierte Pseudozufallszahl liegt zwischen 0 \(einschließlich\) und 1 \(ausschließlich\), d. h., die zurückgegebene Zahl kann 0 sein, ist aber stets kleiner als 1.  Der Zufallszahlengenerator erhält seinen Startwert automatisch beim erstmaligen Laden von [!INCLUDE[javascript](../../includes/javascript-md.md)].  
+ Die generierte Pseudozufallszahl liegt zwischen 0 \(einschließlich\) und 1 \(ausschließlich\), d. h., die zurückgegebene Zahl kann 0 sein, ist aber stets kleiner als 1.  Der Zufallszahlengenerator erhält seinen Startwert automatisch beim erstmaligen Laden von [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
  **Gilt für**: [Math\-Objekt](../../javascript/reference/math-object-javascript.md)  
   

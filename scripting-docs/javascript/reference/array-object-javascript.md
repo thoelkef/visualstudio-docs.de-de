@@ -48,7 +48,7 @@ arrayObj = new Array([element0[, element1[, ...[, elementN]]]])
  Optional.  Die im Array zu platzierenden Elemente.  Es wird ein Array mit *n* \+ 1 Elementen und einer Länge `length` von *n* \+ 1 erstellt.  Für diese Syntax müssen Sie mehr als ein Element bereitstellen.  
   
 ## Hinweise  
- Nachdem ein Array erstellt wurde, können Sie auf die einzelnen Elemente des Arrays zugreifen, indem Sie die \[\]\-Notation verwenden.  Beachten Sie, dass Arrays in [!INCLUDE[javascript](../../includes/javascript-md.md)] nullbasiert sind.  
+ Nachdem ein Array erstellt wurde, können Sie auf die einzelnen Elemente des Arrays zugreifen, indem Sie die \[\]\-Notation verwenden.  Beachten Sie, dass Arrays in [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] nullbasiert sind.  
   
 ```javascript  
 var my_array = new Array();  
@@ -91,7 +91,7 @@ one
  JavaScript\-Arrays sind Arrays mit geringer Datendichte, was bedeutet, dass nicht alle Elemente in einem Array Daten enthalten.  In JavaScript sind nur die Elemente im Array vorhanden, die tatsächlich Daten enthalten.  Dadurch wird der vom Array verwendete Speicherplatz reduziert.  
   
 ## Anforderungen  
- [!INCLUDE[jsv2](../../includes/jsv2-md.md)]  
+ [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]  
   
  Einige Member der folgenden Listen wurden in höheren Versionen eingeführt.  Weitere Informationen finden Sie unter [Versionsinformationen](../../javascript/reference/javascript-version-information.md) oder in der Dokumentation für die einzelnen Member.  
   

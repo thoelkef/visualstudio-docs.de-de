@@ -118,7 +118,7 @@ if (console && console.log) {
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv11](../../includes/jsv11-md.md)]  
+ [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]  
   
 ## Siehe auch  
  [toLocaleString \(Number\)](../../javascript/reference/tolocalestring-number.md)   

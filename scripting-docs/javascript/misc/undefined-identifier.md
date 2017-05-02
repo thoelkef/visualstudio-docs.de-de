@@ -23,7 +23,7 @@ manager: "ghogen"
 caps.handback.revision: 7
 ---
 # Nicht definierter Bezeichner
-Sie haben versucht, einen Bezeichner zu verwenden, den der [!INCLUDE[javascript](../../includes/javascript-md.md)] Compiler nicht erkennt.  Der Wert "nicht definiert" wird in folgenden Fällen zurückgegeben:  
+Sie haben versucht, einen Bezeichner zu verwenden, den der [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Compiler nicht erkennt.  Der Wert "nicht definiert" wird in folgenden Fällen zurückgegeben:  
   
 -   Es wird eine Variable verwendet, die nicht vorhanden ist.  
   

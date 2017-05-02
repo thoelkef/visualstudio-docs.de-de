@@ -25,9 +25,9 @@ manager: "ghogen"
 caps.handback.revision: 28
 ---
 # JavaScript-Referenz
-Diese Abschnitte beschreiben die Elemente, die die [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Sprache bilden.  
+Diese Abschnitte beschreiben die Elemente, die die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Sprache bilden.  
   
- [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Code in Internet Explorer kann mit HTML, CSS und dem Dokumentobjektmodell \(DOM\) interagieren, das HTML\- und Browserobjekte darstellt.  
+ [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Code in Internet Explorer kann mit HTML, CSS und dem Dokumentobjektmodell \(DOM\) interagieren, das HTML\- und Browserobjekte darstellt.  
   
 -   Weitere Informationen über HTML finden Sie in der [HTML\/XHTML\-Referenz](http://go.microsoft.com/fwlink/p/?LinkId=251007).  
   
@@ -35,19 +35,19 @@ Diese Abschnitte beschreiben die Elemente, die die [!INCLUDE[javascript](../../i
   
 -   Weitere Informationen zum DOM finden Sie in dem [Thema zum Dokumentobjektmodell \(DOM\)](http://go.microsoft.com/fwlink/p/?LinkId=251009).  
   
- [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Code kann in Browseranwendungen wie in [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]\-Apps verwendet werden.  [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]\-Apps werden in [!INCLUDE[win8](../../includes/win8-md.md)] mithilfe von [!INCLUDE[vs_dev11_long](../../includes/vs-dev11-long-md.md)] unterstützt und in [!INCLUDE[win81](../../includes/win81-md.md)] mithilfe von [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] unterstützt.  
+ [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Code kann in Browseranwendungen wie in [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-Apps verwendet werden.  [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-Apps werden in [!INCLUDE[win8](../../javascript/includes/win8-md.md)] mithilfe von [!INCLUDE[vs_dev11_long](../../javascript/includes/vs-dev11-long-md.md)] unterstützt und in [!INCLUDE[win81](../../javascript/includes/win81-md.md)] mithilfe von [!INCLUDE[vs_dev12](../../javascript/includes/vs-dev12-md.md)] unterstützt.  
   
--   Weitere Informationen über JavaScript in [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] finden Sie unter [JavaScript roadmap](http://msdn.microsoft.com/de-de/4f28182b-1e4b-4bbd-8ae9-dcc504de4341).  
+-   Weitere Informationen über JavaScript in [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] finden Sie unter [JavaScript roadmap](http://msdn.microsoft.com/de-de/4f28182b-1e4b-4bbd-8ae9-dcc504de4341).  
   
--   Weitere Informationen über HTML und CSS in [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] finden Sie unter [HTML\/CSS für Windows Store\-Apps](http://go.microsoft.com/fwlink/p/?LinkId=250939).  
+-   Weitere Informationen über HTML und CSS in [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] finden Sie unter [HTML\/CSS für Windows Store\-Apps](http://go.microsoft.com/fwlink/p/?LinkId=250939).  
   
--   Weitere Informationen zu [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]\-APIs finden Sie unter [API\-Referenz für Windows\-Runtime und Windows\-Bibliothek für JavaScript](http://go.microsoft.com/fwlink/p/?LinkID=250938).  
+-   Weitere Informationen zu [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-APIs finden Sie unter [API\-Referenz für Windows\-Runtime und Windows\-Bibliothek für JavaScript](http://go.microsoft.com/fwlink/p/?LinkID=250938).  
   
  Der JavaScript\-Editor in Visual Studio bietet IntelliSense\-Unterstützung.  Weitere Informationen finden Sie unter [JavaScript IntelliSense](../Topic/JavaScript%20IntelliSense.md).  
   
 ## In diesem Abschnitt  
  [Versionsinformationen](../../javascript/reference/javascript-version-information.md)  
- Stellt eine Liste von [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Sprachfunktionen und die Internet Explorer\-Versionen bereit, in denen sie eingeführt wurden.  
+ Stellt eine Liste von [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Sprachfunktionen und die Internet Explorer\-Versionen bereit, in denen sie eingeführt wurden.  
   
  [Objekte](../../javascript/reference/javascript-objects.md)  
  Enthält eine Liste von Objekten mit Links zu Informationen über jedes Objekt.  
@@ -84,7 +84,7 @@ Diese Abschnitte beschreiben die Elemente, die die [!INCLUDE[javascript](../../i
   
 ## Verwandte Abschnitte  
  [JavaScript\-Grundlagen](../../javascript/javascript-fundamentals.md)  
- Stellt Informationen zur Verwendung von [!INCLUDE[javascript](../../includes/javascript-md.md)] bereit.  
+ Stellt Informationen zur Verwendung von [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] bereit.  
   
  [HTML\- und DHTML\-Referenz](http://go.microsoft.com/fwlink/?LinkId=148095)  
  Stellt Referenzinformationen zur Dynamic HTML\-\(DHTML\)\-API bereit.

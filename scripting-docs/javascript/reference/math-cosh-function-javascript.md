@@ -36,7 +36,7 @@ Math.cosh(x)
  **Gilt für**: [Math\-Objekt](../../javascript/reference/math-object-javascript.md)  
   
 ## Anforderungen  
- [!INCLUDE[jsv12](../../includes/jsv12-md.md)]  
+ [!INCLUDE[jsv12](../../javascript/reference/includes/jsv12-md.md)]  
   
 ## Siehe auch  
  [Math.acos\-Funktion](../../javascript/reference/math-acos-function-javascript.md)   

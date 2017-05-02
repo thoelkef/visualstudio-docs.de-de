@@ -38,7 +38,7 @@ NaN
  Die `NaN`\-Konstante \(Not a Number\) ist ein Member des `Global`\-Objekts. Sie steht nach der Initialisierung des Skriptmoduls zur Verfügung.  
   
 ## Anforderungen  
- Die `NaN`\-Eigenschaft wurde in [!INCLUDE[jsv3text](../../includes/jsv3text-md.md)] eingeführt und in [!INCLUDE[jsv9textspecific](../../includes/jsv9textspecific-md.md)] mit einem Schreibschutz versehen.  
+ Die `NaN`\-Eigenschaft wurde in [!INCLUDE[jsv3text](../../javascript/reference/includes/jsv3text-md.md)] eingeführt und in [!INCLUDE[jsv9textspecific](../../javascript/reference/includes/jsv9textspecific-md.md)] mit einem Schreibschutz versehen.  
   
  **Gilt für**: [Global\-Objekt](../../javascript/reference/global-object-javascript.md)  
   

@@ -116,7 +116,7 @@ catch(e)
  [constructor\-Eigenschaft \(Fehler\)](../../javascript/reference/constructor-property-error.md) &#124; [description\-Eigenschaft](../../javascript/reference/description-property-error-javascript.md) &#124; [message\-Eigenschaft](../../javascript/reference/message-property-error-javascript.md) &#124; [name\-Eigenschaft](../../javascript/reference/name-property-error-javascript.md) &#124; [number\-Eigenschaft](../../javascript/reference/number-property-error-javascript.md) &#124; [prototype\-Eigenschaft \(Fehler\)](../../javascript/reference/prototype-property-error.md) &#124; [stack\-Eigenschaft \(Fehler\)](../../javascript/reference/stack-property-error-javascript.md) &#124; [stackTraceLimit\-Eigenschaft \(Fehler\)](../../javascript/reference/stacktracelimit-property-error-javascript.md)  
   
 ## Anforderungen  
- [!INCLUDE[jsv5](../../includes/jsv5-md.md)]  
+ [!INCLUDE[jsv5](../../javascript/reference/includes/jsv5-md.md)]  
   
 ## Siehe auch  
  [new\-Operator](../../javascript/reference/new-operator-decrementjavascript.md)   

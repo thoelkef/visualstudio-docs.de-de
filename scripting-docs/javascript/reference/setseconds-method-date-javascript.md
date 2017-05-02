@@ -48,7 +48,7 @@ numSeconds[, numMilli])
  Optional.  Ein den Millisekunden entsprechender numerischer Wert.  
   
 ## Hinweise  
- Alle **set**\-Methoden, denen optionale Argumente übergeben werden, verwenden den von den entsprechenden **get**\-Methoden zurückgegebenen Wert, wenn kein optionales Argument angegeben wurde.  Wenn beispielsweise das `numMilli`\-Argument nicht angegeben wird, wird in [!INCLUDE[javascript](../../includes/javascript-md.md)] der von der **getMilliseconds**\-Methode zurückgegebene Wert verwendet wird.  
+ Alle **set**\-Methoden, denen optionale Argumente übergeben werden, verwenden den von den entsprechenden **get**\-Methoden zurückgegebenen Wert, wenn kein optionales Argument angegeben wurde.  Wenn beispielsweise das `numMilli`\-Argument nicht angegeben wird, wird in [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] der von der **getMilliseconds**\-Methode zurückgegebene Wert verwendet wird.  
   
  Um den Sekundenwert unter Verwendung der koordinierten Weltzeit \(Universal Time Coordinated, UTC\) festzulegen, verwenden Sie die `setUTCSeconds`\-Methode.  
   
@@ -70,7 +70,7 @@ function SetSecondsDemo(nsec){
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
  **Gilt für**: [Date\-Objekt](../../javascript/reference/date-object-javascript.md)  
   

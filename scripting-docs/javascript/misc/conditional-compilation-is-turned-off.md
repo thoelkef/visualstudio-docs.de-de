@@ -23,7 +23,7 @@ manager: "ghogen"
 caps.handback.revision: 9
 ---
 # Die bedingte Kompilierung ist deaktiviert
-Sie haben versucht, eine Variable für die bedingten Kompilierung zu verwenden, ohne die bedingte Kompilierung zuerst aktiviert zu haben.  Durch die Aktivierung der bedingten Kompilierung wird der [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Compiler angewiesen, die Bezeichner, die mit @ beginnen, als Variablen für die bedingte Kompilierung zu interpretieren.  Hierzu beginnen Sie den Bedingungscode mit folgender Anweisung:  
+Sie haben versucht, eine Variable für die bedingten Kompilierung zu verwenden, ohne die bedingte Kompilierung zuerst aktiviert zu haben.  Durch die Aktivierung der bedingten Kompilierung wird der [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Compiler angewiesen, die Bezeichner, die mit @ beginnen, als Variablen für die bedingte Kompilierung zu interpretieren.  Hierzu beginnen Sie den Bedingungscode mit folgender Anweisung:  
   
 ```  
 /*@cc_on @*/  

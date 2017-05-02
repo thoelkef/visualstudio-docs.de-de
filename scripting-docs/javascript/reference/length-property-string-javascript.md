@@ -66,4 +66,4 @@ var str = "every good boy does fine";
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]

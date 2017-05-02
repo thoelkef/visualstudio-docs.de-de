@@ -71,7 +71,7 @@ document.write(dateStr);
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## Siehe auch  
  [getDate\-Methode \(Datum\)](../../javascript/reference/getdate-method-date-javascript.md)

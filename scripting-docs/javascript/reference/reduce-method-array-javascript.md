@@ -200,7 +200,7 @@ document.write("result array=" + resultArray);
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv9](../../includes/jsv9-md.md)]  
+ [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
 ## Siehe auch  
  [reduceRight\-Methode \(Array\)](../../javascript/reference/reduceright-method-array-javascript.md)

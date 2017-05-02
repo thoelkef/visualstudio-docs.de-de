@@ -23,11 +23,11 @@ manager: "ghogen"
 caps.handback.revision: 38
 ---
 # JavaScript-Methoden
-In der folgenden Tabelle werden die [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Methoden aufgeführt.  
+In der folgenden Tabelle werden die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Methoden aufgeführt.  
   
 ## Methoden  
   
-|Methode|Beschreibung|[!INCLUDE[javascript](../../includes/javascript-md.md)]\-Objekt|  
+|Methode|Beschreibung|[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Objekt|  
 |-------------|------------------|------------------------------------------------------------------------|  
 |[anchor\-Methode](../../javascript/reference/html-tag-methods-javascript.md)|Fügt vor und nach dem Text einen HTML\-Anker mit einem NAME\-Attribut ein.|`String`|  
 |[apply\-Methode](../../javascript/reference/apply-method-function-javascript.md)|Übernimmt eine Methode eines Objekts und ersetzt dabei das aktuelle Objekt durch ein anderes Objekt.|`Function`|  
@@ -125,7 +125,7 @@ In der folgenden Tabelle werden die [!INCLUDE[javascript](../../includes/javascr
 |[substring\-Methode](../../javascript/reference/substring-method-string-javascript.md)|Gibt die Teilzeichenfolge zurück, die sich innerhalb eines `String`\-Objekts an der angegebenen Position befindet.|`String`|  
 |[sup\-Methode](../../javascript/reference/html-tag-methods-javascript.md)|Fügt vor und nach dem Text \<SUP\>\-HTML\-Tags ein.|`String`|  
 |[test\-Methode](../../javascript/reference/test-method-regular-expression-javascript.md)|Gibt einen booleschen Wert zurück, der angibt, ob ein Muster in einer durchsuchten Zeichenfolge vorhanden ist.|`Regular Expression`|  
-|[toArray\-Methode](../../javascript/reference/toarray-method-vbarray-javascript.md)|Gibt ein aus einem VBArray konvertiertes [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Standardarray zurück.|`VBArray`|  
+|[toArray\-Methode](../../javascript/reference/toarray-method-vbarray-javascript.md)|Gibt ein aus einem VBArray konvertiertes [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Standardarray zurück.|`VBArray`|  
 |[toDateString\-Methode](../../javascript/reference/todatestring-method-date-javascript.md)|Gibt ein Datum als Zeichenfolgenwert zurück.|`Date`|  
 |[toExponential\-Methode](../../javascript/reference/toexponential-method-number-javascript.md)|Gibt eine Zeichenfolge zurück, die eine in Exponentialnotation dargestellte Zahl enthält.|`Number`|  
 |[toFixed\-Methode](../../javascript/reference/tofixed-method-number-javascript.md)|Gibt eine Zeichenfolge zurück, die eine Zahl in Festkommanotation darstellt.|`Number`|  

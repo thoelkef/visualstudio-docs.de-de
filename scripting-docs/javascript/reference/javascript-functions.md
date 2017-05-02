@@ -25,11 +25,11 @@ manager: "ghogen"
 caps.handback.revision: 19
 ---
 # JavaScript-Funktionen
-In der folgenden Tabelle sind [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Funktionen aufgeführt.  
+In der folgenden Tabelle sind [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Funktionen aufgeführt.  
   
 ## Funktionen  
   
-|Funktion|Beschreibung|[!INCLUDE[javascript](../../includes/javascript-md.md)]\-Objekt|  
+|Funktion|Beschreibung|[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Objekt|  
 |--------------|------------------|------------------------------------------------------------------------|  
 |[abs\-Funktion](../../javascript/reference/math-abs-function-javascript.md)|Gibt den absoluten Wert einer Zahl zurück.|`Math`|  
 |[acos\-Funktion](../../javascript/reference/math-acos-function-javascript.md)|Gibt den Arkuskosinus einer Zahl zurück.|`Math`|  
@@ -46,7 +46,7 @@ In der folgenden Tabelle sind [!INCLUDE[javascript](../../includes/javascript-md
 |[encodeURI\-Funktion](../../javascript/reference/encodeuri-function-javascript.md)|Codiert eine Textzeichenfolge als gültigen URI \(Uniform Resource Identifier\).|`Global`|  
 |[encodeURIComponent\-Funktion](../../javascript/reference/encodeuricomponent-function-javascript.md)|Codiert eine Textzeichenfolge als gültige Komponente eines URIs \(Uniform Resource Identifier\).|`Global`|  
 |[escape\-Funktion](../../javascript/reference/escape-function-javascript.md)|Codiert `String`\-Objekte so, dass sie auf allen Computern gelesen werden können.|`Global`|  
-|[eval\-Funktion](../../javascript/reference/eval-function-javascript.md)|Wertet [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Code aus und führt diesen aus.|`Global`|  
+|[eval\-Funktion](../../javascript/reference/eval-function-javascript.md)|Wertet [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Code aus und führt diesen aus.|`Global`|  
 |[exp\-Funktion](../../javascript/reference/math-exp-function-javascript.md)|Berechnet die Exponentialfunktion *e*. e ist die Basis des natürlichen Logarithmus.|`Math`|  
 |[floor\-Funktion](../../javascript/reference/math-floor-function-javascript.md)|Gibt die größte ganze Zahl zurück, die kleiner oder gleich dem numerischen Argument ist.|`Math`|  
 |[freeze\-Funktion](../../javascript/reference/object-freeze-function-javascript.md)|Verhindert die Änderung von vorhandenen Eigenschaftattributen und \-werten und verhindert die Einführung von neuen Eigenschaften.|`Object`|  

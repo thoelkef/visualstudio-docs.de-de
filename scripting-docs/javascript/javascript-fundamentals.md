@@ -23,23 +23,23 @@ manager: "ghogen"
 caps.handback.revision: 27
 ---
 # JavaScript-Grundlagen
-[!INCLUDE[javascript](../includes/javascript-md.md)] ist eine interpretierte, objektbasierte Skriptsprache.  
+[!INCLUDE[javascript](../javascript/includes/javascript-md.md)] ist eine interpretierte, objektbasierte Skriptsprache.  
   
- Die [!INCLUDE[javascript](../includes/javascript-md.md)]\-Sprache verwendet eine ähnliche Syntax wie C und unterstützt strukturierte Konstrukte, wie `if...else`, `for` und `do...while`.  Geschweifte Klammern \({}\) werden verwendet, um Anweisungsblöcke abzugrenzen.  Die Sprache unterstützt verschiedene Datentypen, einschließlich `String`, `Number`, `Boolean`, `Object` und `Array`.  Sie enthält Unterstützung für verbesserte Datumsfunktionen, trigonometrische Funktionen und reguläre Ausdrücke.  
+ Die [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Sprache verwendet eine ähnliche Syntax wie C und unterstützt strukturierte Konstrukte, wie `if...else`, `for` und `do...while`.  Geschweifte Klammern \({}\) werden verwendet, um Anweisungsblöcke abzugrenzen.  Die Sprache unterstützt verschiedene Datentypen, einschließlich `String`, `Number`, `Boolean`, `Object` und `Array`.  Sie enthält Unterstützung für verbesserte Datumsfunktionen, trigonometrische Funktionen und reguläre Ausdrücke.  
   
- [!INCLUDE[javascript](../includes/javascript-md.md)] verwendet Prototypen anstelle von Klassen.  Sie können ein Objekt definieren, indem Sie eine Konstruktorfunktion erstellen.  
+ [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] verwendet Prototypen anstelle von Klassen.  Sie können ein Objekt definieren, indem Sie eine Konstruktorfunktion erstellen.  
   
- [!INCLUDE[javascript](../includes/javascript-md.md)] ist eine schwach typisierte Sprache, d. h., Sie deklarieren die Datentypen von Variablen nicht explizit.  In vielen Fällen führt [!INCLUDE[javascript](../includes/javascript-md.md)] Konvertierungen automatisch aus, wenn sie benötigt werden.  Wenn Sie beispielsweise eine Zahl zu einem Element hinzufügen, das aus Text \(einer Zeichenfolge\) besteht, wird die Zahl in Text konvertiert.  
+ [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] ist eine schwach typisierte Sprache, d. h., Sie deklarieren die Datentypen von Variablen nicht explizit.  In vielen Fällen führt [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] Konvertierungen automatisch aus, wenn sie benötigt werden.  Wenn Sie beispielsweise eine Zahl zu einem Element hinzufügen, das aus Text \(einer Zeichenfolge\) besteht, wird die Zahl in Text konvertiert.  
   
 ## In diesem Abschnitt  
  [Schreiben von JavaScript\-Code](../javascript/writing-javascript-code.md)  
- Erläutert die Organisation von Elementen innerhalb des [!INCLUDE[javascript](../includes/javascript-md.md)]\-Codes.  
+ Erläutert die Organisation von Elementen innerhalb des [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Codes.  
   
  [JavaScript\-Variablen](../javascript/variables-javascript.md)  
- Erklärt das Konzept von Variablen in [!INCLUDE[javascript](../includes/javascript-md.md)].  
+ Erklärt das Konzept von Variablen in [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].  
   
  [Datentypen](../javascript/data-types-javascript.md)  
- Listet Datentypen in [!INCLUDE[javascript](../includes/javascript-md.md)] auf und erläutert den Zweck jedes Typs.  
+ Listet Datentypen in [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] auf und erläutert den Zweck jedes Typs.  
   
  [Operatoren](../javascript/operators-javascript.md)  
  Enthält eine Liste der Operatoren mit Links zu Informationen über jeden Operator.  
@@ -48,16 +48,16 @@ caps.handback.revision: 27
  Erläutert die Regeln, die die Reihenfolge steuern, in der Vorgänge ausgeführt werden, wenn ein Ausdruck ausgewertet wird.  
   
  [Steuern des Programmablaufs](../javascript/controlling-program-flow-javascript.md)  
- Erläutert bedingte Anweisungen und Schleifen in [!INCLUDE[javascript](../includes/javascript-md.md)].  
+ Erläutert bedingte Anweisungen und Schleifen in [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].  
   
  [Funktionen](../javascript/functions-javascript.md)  
  Beschreibt die integrierten Funktionen und erläutert, wie neue Funktionen erstellt werden.  
   
  [Objekte](../javascript/objects-and-arrays-javascript.md)  
- Erläutert das Konzept von Objekten in [!INCLUDE[javascript](../includes/javascript-md.md)].  
+ Erläutert das Konzept von Objekten in [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].  
   
  [Systeminterne Objekte](../javascript/intrinsic-objects-javascript.md)  
- Listet die Objekte auf, die standardmäßig Teil von [!INCLUDE[javascript](../includes/javascript-md.md)] sind und erläutert den Zweck jedes Objekts.  
+ Listet die Objekte auf, die standardmäßig Teil von [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] sind und erläutert den Zweck jedes Objekts.  
   
  [Erstellen eigener Objekte](../javascript/creating-objects-javascript.md)  
  Erläutert, wie ein Objekt durch Definieren einer Konstruktorfunktion erstellt wird.  
@@ -73,7 +73,7 @@ caps.handback.revision: 27
   
 ## Verwandte Abschnitte  
  [Erweitertes JavaScript](../javascript/advanced/advanced-javascript.md)  
- Erklärt erweiterte [!INCLUDE[javascript](../includes/javascript-md.md)]\-Funktionen, wie Rekursion, Arrays, Problembehandlung usw.  
+ Erklärt erweiterte [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Funktionen, wie Rekursion, Arrays, Problembehandlung usw.  
   
  [JavaScript\-Sprachverweis](../javascript/reference/javascript-reference.md)  
- Beschreibt die Elemente, die die Sprache von [!INCLUDE[javascript](../includes/javascript-md.md)] bilden.
+ Beschreibt die Elemente, die die Sprache von [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] bilden.

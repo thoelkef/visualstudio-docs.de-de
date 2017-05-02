@@ -69,7 +69,7 @@ document.write(newArray);
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv3](../../includes/jsv3-md.md)]  
+ [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
 ## Siehe auch  
  [slice\-Methode \(String\)](../../javascript/reference/slice-method-string-javascript.md)   

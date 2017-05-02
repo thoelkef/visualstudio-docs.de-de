@@ -26,7 +26,7 @@ manager: "ghogen"
 caps.handback.revision: 18
 ---
 # Erweitertes JavaScript
-In diesen Abschnitten werden erweiterte [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Leistungsmerkmale wie Rekursion, Arrays, Problembehandlung usw. erläutert.  
+In diesen Abschnitten werden erweiterte [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Leistungsmerkmale wie Rekursion, Arrays, Problembehandlung usw. erläutert.  
   
 ## In diesem Abschnitt  
  [Verwenden von Konstruktoren zum Erstellen von Objekten](../../javascript/advanced/using-constructors-to-define-types.md)  
@@ -39,7 +39,7 @@ In diesen Abschnitten werden erweiterte [!INCLUDE[javascript](../../includes/jav
  Erläutert den Unterschied zwischen Dateneigenschaften und Accessoreigenschaften.  
   
  [Rekursion](../../javascript/advanced/recursion-javascript.md)  
- Erläutert, wie Rekursion und Schleifen in [!INCLUDE[javascript](../../includes/javascript-md.md)] verwendet werden.  
+ Erläutert, wie Rekursion und Schleifen in [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] verwendet werden.  
   
  [Variablenbereich](../../javascript/advanced/variable-scope-javascript.md)  
  Beschreibt die Unterscheidung zwischen globalen und lokalen Bereichen.  
@@ -48,7 +48,7 @@ In diesen Abschnitten werden erweiterte [!INCLUDE[javascript](../../includes/jav
  Erläutert das Konzept des Übergebens mithilfe eines Werts oder Verweises.  
   
  [Verwenden von Arrays](../../javascript/advanced/using-arrays-javascript.md)  
- Beschreibt das Konzept von Arrays in [!INCLUDE[javascript](../../includes/javascript-md.md)].  
+ Beschreibt das Konzept von Arrays in [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
  [Typisierte Arrays](../../javascript/advanced/typed-arrays-javascript.md)  
  Beschreibt typisierte Arrays.  
@@ -75,7 +75,7 @@ In diesen Abschnitten werden erweiterte [!INCLUDE[javascript](../../includes/jav
  Erläutert, wie häufige Skriptfehler gefunden werden.  
   
  [Bedingte Kompilierung](../../javascript/advanced/conditional-compilation-javascript.md)  
- Beschreibt die Anweisungen, die [!INCLUDE[javascript](../../includes/javascript-md.md)] abhängig von bestimmten Bedingungen zum Kompilieren verwendet.  
+ Beschreibt die Anweisungen, die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] abhängig von bestimmten Bedingungen zum Kompilieren verwendet.  
   
  [Variablen für die bedingte Kompilierung](../../javascript/advanced/conditional-compilation-variables-javascript.md)  
  Listet die Variablen auf, die für die bedingte Kompilierung zur Verfügung stehen.  

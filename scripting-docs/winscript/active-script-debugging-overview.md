@@ -22,7 +22,7 @@ Die Active Script\-Debugschnittstellen ermöglichen sprachunabhängiges, hostneu
  ![Script Host&#45;Prozess](../winscript/media/scp56activdbgarchgif.png "Scp56ActivDbgArchgif")  
 Abbildung 1  
   
- Eine sprachneutrale Debugumgebung kann jede Programmiersprache oder Mischung von Programmiersprachen, ohne bestimmtes Kenntnisse der keiner dieser Sprachen verfügen unterstützen.  Die Debugumgebung unterstützt auch das sprachübergreifende schrittweise Ausführung und die Haltepunkte.  \(Diese Übersicht konzentriert sich hauptsächlich auf Stützskriptsprachen, wie VBScript und [!INCLUDE[javascript](../includes/javascript-md.md)].\)  
+ Eine sprachneutrale Debugumgebung kann jede Programmiersprache oder Mischung von Programmiersprachen, ohne bestimmtes Kenntnisse der keiner dieser Sprachen verfügen unterstützen.  Die Debugumgebung unterstützt auch das sprachübergreifende schrittweise Ausführung und die Haltepunkte.  \(Diese Übersicht konzentriert sich hauptsächlich auf Stützskriptsprachen, wie VBScript und [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].\)  
   
  Ein hostneutraler Debugger kann mit jedem Active Scripting\-Host, wie Internet Explorer oder einem benutzerdefinierten Host automatisch verwendet werden.  Die Hoststeuerelemente, was der Debugger dem Benutzer, der Struktur der Dokumentstruktur dem Inhalt und der Syntaxfarbe der Debug\- Dokumente darstellt.  Dies ermöglicht dem debuggten im Kontext des Dokuments angezeigt werden, Quellcode.  Beispielsweise kann ein Skript in Internet Explorer einer HTML\-Seite anzeigen.  
   

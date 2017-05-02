@@ -26,7 +26,7 @@ manager: "ghogen"
 caps.handback.revision: 10
 ---
 # JavaScript-Syntaxfehler
-[!INCLUDE[javascript](../../includes/javascript-md.md)]\-Syntaxfehler treten auf, wenn die Struktur einer der [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Anweisungen gegen mindestens eine syntaktische Regel verstößt.  
+[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Syntaxfehler treten auf, wenn die Struktur einer der [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Anweisungen gegen mindestens eine syntaktische Regel verstößt.  
   
 ## Fehler  
   

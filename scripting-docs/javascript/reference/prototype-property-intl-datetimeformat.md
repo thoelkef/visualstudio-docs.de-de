@@ -37,4 +37,4 @@ dateTimeFormat.prototype
  Um beispielsweise dem `Intl.DateTimeFormat`\-Objekt eine Methode hinzuzufügen, die den Wert des größten Elements des Satzes zurückgibt, deklarieren Sie die Funktion, fügen Sie sie `Intl.DateTimeFormat.prototype` hinzu, und verwenden Sie sie dann.  
   
 ## Anforderungen  
- [!INCLUDE[jsv11](../../includes/jsv11-md.md)]
+ [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]

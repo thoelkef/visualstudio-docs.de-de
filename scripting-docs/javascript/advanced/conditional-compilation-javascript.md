@@ -26,13 +26,13 @@ manager: "ghogen"
 caps.handback.revision: 16
 ---
 # Bedingte Kompilierung (JavaScript)
-Die bedingte Kompilierung ermöglicht Ihnen, in [!INCLUDE[javascript](../../includes/javascript-md.md)] neue Sprachfeatures zu verwenden, ohne auf die Kompatibilität mit älteren Versionen zu verzichten, die diese Features nicht unterstützen.  
+Die bedingte Kompilierung ermöglicht Ihnen, in [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] neue Sprachfeatures zu verwenden, ohne auf die Kompatibilität mit älteren Versionen zu verzichten, die diese Features nicht unterstützen.  
   
 > [!WARNING]
->  Die bedingte Kompilierung wird in allen Versionen von Internet Explorer vor Internet Explorer 11 unterstützt.  Die bedingte Kompilierung wird im Standardmodus von Internet Explorer 11 und den [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]\-Apps nicht unterstützt.  
+>  Die bedingte Kompilierung wird in allen Versionen von Internet Explorer vor Internet Explorer 11 unterstützt.  Die bedingte Kompilierung wird im Standardmodus von Internet Explorer 11 und den [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-Apps nicht unterstützt.  
   
 ## Anweisungen  
- Die bedingte Kompilierung wird mit der `@cc_on`\-Anweisung oder einer `@if`\-Anweisung bzw. `@set`\-Anweisung aktiviert.  Zu den typischen Anwendungsmöglichkeiten der bedingten Kompilierung gehört das Verwenden neuer Features in [!INCLUDE[javascript](../../includes/javascript-md.md)], das Einbetten von Debuggingunterstützung in ein Skript und das Verfolgen der Codeausführung.  
+ Die bedingte Kompilierung wird mit der `@cc_on`\-Anweisung oder einer `@if`\-Anweisung bzw. `@set`\-Anweisung aktiviert.  Zu den typischen Anwendungsmöglichkeiten der bedingten Kompilierung gehört das Verwenden neuer Features in [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], das Einbetten von Debuggingunterstützung in ein Skript und das Verfolgen der Codeausführung.  
   
  Platzieren Sie den Code für die bedingte Kompilierung stets in Kommentaren, damit er von Hosts \(wie Netscape Navigator\), die die bedingte Kompilierung nicht unterstützen, ignoriert wird.  Im Folgenden ein Beispiel.  
   

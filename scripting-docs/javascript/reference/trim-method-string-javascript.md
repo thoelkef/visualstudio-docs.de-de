@@ -60,7 +60,7 @@ document.write("length: " + message.trim().length);
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv9](../../includes/jsv9-md.md)]  
+ [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
 ## Siehe auch  
  [Sonderzeichen](../../javascript/advanced/special-characters-javascript.md)   

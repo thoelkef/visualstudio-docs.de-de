@@ -23,11 +23,11 @@ manager: "ghogen"
 caps.handback.revision: 10
 ---
 # JavaScript-Konstanten
-In der folgenden Tabelle werden vordefinierte [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Konstanten für die Verwendung in Ausdrücken aufgeführt.  
+In der folgenden Tabelle werden vordefinierte [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Konstanten für die Verwendung in Ausdrücken aufgeführt.  
   
 ## Konstanten  
   
-|Konstante|Beschreibung|[!INCLUDE[javascript](../../includes/javascript-md.md)]\-Objekt|  
+|Konstante|Beschreibung|[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Objekt|  
 |---------------|------------------|------------------------------------------------------------------------|  
 |[E](../../javascript/reference/math-constants-javascript.md)|Die mathematische Konstante e.  Die Eulersche Zahl, Basis natürlicher Logarithmen.|`Math`|  
 |[Unendlich](../../javascript/reference/infinity-constant-javascript.md)|Ein Wert, der größer als die größte Gleitkommazahl ist.  Negative Infinity \(\-unendlich\) ist kleiner als die kleinste Gleitkommazahl.|`Global`|  
@@ -35,8 +35,8 @@ In der folgenden Tabelle werden vordefinierte [!INCLUDE[javascript](../../includ
 |[LN10](../../javascript/reference/math-constants-javascript.md)|Der natürliche Logarithmus von 10.|`Math`|  
 |[LOG2E](../../javascript/reference/math-constants-javascript.md)|Der Logarithmus zur Basis 2 von e.|`Math`|  
 |[LOG10E](../../javascript/reference/math-constants-javascript.md)|Der Logarithmus zur Basis 10 von e.|`Math`|  
-|[MAX\_VALUE](../../javascript/reference/number-constants-javascript.md)|Die größte Zahl, die in [!INCLUDE[javascript](../../includes/javascript-md.md)] dargestellt werden kann.|`Number`|  
-|[MIN\_VALUE](../../javascript/reference/number-constants-javascript.md)|Die Zahl, die Null \(0\) am nächsten kommt und in [!INCLUDE[javascript](../../includes/javascript-md.md)] dargestellt werden kann.|`Number`|  
+|[MAX\_VALUE](../../javascript/reference/number-constants-javascript.md)|Die größte Zahl, die in [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] dargestellt werden kann.|`Number`|  
+|[MIN\_VALUE](../../javascript/reference/number-constants-javascript.md)|Die Zahl, die Null \(0\) am nächsten kommt und in [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] dargestellt werden kann.|`Number`|  
 |[NaN](../../javascript/reference/number-constants-javascript.md)|Gibt an, dass ein arithmetischer Ausdruck einen Wert zurückgegeben hat, bei dem es sich nicht um eine Zahl handelt.|`Number`|  
 |[NaN \(Global\)](../../javascript/reference/nan-constant-javascript.md)|Ein Wert, der angibt, dass es sich bei einem Ausdruck nicht um eine Zahl handelt.|`Global`|  
 |[NEGATIVE\_INFINITY](../../javascript/reference/number-constants-javascript.md)|Ein Wert, der kleiner als die kleinste Gleitkommazahl ist.|`Number`|  

@@ -55,7 +55,7 @@ function ArgTest(a, b){
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv55](../../includes/jsv55-md.md)]  
+ [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
  **Gilt für**: [arguments\-Objekt](../../javascript/reference/arguments-object-javascript.md)&#124; [Function\-Objekt](../../javascript/reference/function-object-javascript.md)  
   

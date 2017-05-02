@@ -40,7 +40,7 @@ objDate.toDateString( )
  Die `toDateString`\-Methode gibt einen Zeichenfolgenwert zurück, der das Datum in der aktuellen Zeitzone in einem benutzerfreundlichen, leicht lesbaren Format enthält.  
   
 ## Anforderungen  
- [!INCLUDE[jsv55](../../includes/jsv55-md.md)]  
+ [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
  **Gilt für**: [Date\-Objekt](../../javascript/reference/date-object-javascript.md)  
   

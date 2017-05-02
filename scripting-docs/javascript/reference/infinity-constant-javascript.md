@@ -37,7 +37,7 @@ Infinity
  Die Konstante `Infinity` ist ein Member des `Global`\-Objekts. Sie ist nach der Initialisierung des Skriptmoduls verfügbar.  
   
 ## Anforderungen  
- Die `Infinity`\-Eigenschaft wurde in [!INCLUDE[jsv3text](../../includes/jsv3text-md.md)] eingeführt und in [!INCLUDE[jsv9textspecific](../../includes/jsv9textspecific-md.md)] mit einem Schreibschutz versehen.  
+ Die `Infinity`\-Eigenschaft wurde in [!INCLUDE[jsv3text](../../javascript/reference/includes/jsv3text-md.md)] eingeführt und in [!INCLUDE[jsv9textspecific](../../javascript/reference/includes/jsv9textspecific-md.md)] mit einem Schreibschutz versehen.  
   
  **Gilt für**: [Global\-Objekt](../../javascript/reference/global-object-javascript.md)  
   

@@ -45,4 +45,4 @@ Object.is(value1, value2)
  Der von `Object.is` angewendete Vergleich ähnelt dem vom \=\=\= Operator angewendeten Vergleich, außer dass `Object.is` `Number.isNaN` als den gleichen Wert wie `NaN`.  Es behandelt \+ 0 und \-0 ebenfalls als unterschiedliche Werte.  
   
 ## Anforderungen  
- [!INCLUDE[jsv12](../../includes/jsv12-md.md)]
+ [!INCLUDE[jsv12](../../javascript/reference/includes/jsv12-md.md)]

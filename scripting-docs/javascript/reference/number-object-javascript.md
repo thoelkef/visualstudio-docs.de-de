@@ -42,14 +42,14 @@ numObj = new Number(value)
  Erforderlich.  Der numerische Wert.  
   
 ## Hinweise  
- [!INCLUDE[javascript](../../includes/javascript-md.md)] erstellt `Number`\-Objekte, wenn eine Variable auf einen numerischen Wert festgelegt wird, beispielsweise `var num = 255.336;`.  `Number`\-Objekte müssen nur selten explizit erstellt werden.  
+ [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] erstellt `Number`\-Objekte, wenn eine Variable auf einen numerischen Wert festgelegt wird, beispielsweise `var num = 255.336;`.  `Number`\-Objekte müssen nur selten explizit erstellt werden.  
   
  Das `Number`\-Objekt verfügt zusätzlich zu den Eigenschaften und Methoden, die von `Object` geerbt werden, über eigene Eigenschaften und Methoden.  Zahlen werden unter bestimmten Umständen in Zeichenfolgen konvertiert, z. B. dann, wenn eine Zahl einer Zeichenfolge hinzugefügt oder mit dieser verkettet wird, sowie mithilfe der `toString`\-Methode.  Weitere Informationen finden Sie unter [Additionsoperator \(\+\)](../../javascript/reference/addition-operator-decrement-javascript.md).  
   
  JavaScript verfügt über mehrere Zahlenkonstanten.  Eine vollständige Liste finden Sie unter [Nummerkonstanten](../../javascript/reference/number-constants-javascript.md).  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## Eigenschaften  
  In der folgenden Tabelle werden die Eigenschaften des `Number` \-Objekts aufgeführt.  

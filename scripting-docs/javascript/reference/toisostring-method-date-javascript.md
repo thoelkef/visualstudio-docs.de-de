@@ -59,7 +59,7 @@ document.write(dt.toUTCString());
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv9](../../includes/jsv9-md.md)]  
+ [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
 ## Siehe auch  
  [Date\-Objekt](../../javascript/reference/date-object-javascript.md)   

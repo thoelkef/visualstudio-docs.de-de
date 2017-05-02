@@ -23,7 +23,7 @@ manager: "ghogen"
 caps.handback.revision: 9
 ---
 # Der Arrayl&#228;nge muss eine endliche positive Zahl zugewiesen werden
-Beim Festlegen der **length** \-Eigenschaft eines vorhandenen **Array**\-Objekts haben Sie eine Arraylänge angegeben, die keine positive Zahl oder Null war.  Dieser Fehler tritt auf, wenn Sie einen Wert der **length**\-Eigenschaft eines `Array`\-Objekts einen Wert zuweisen, der negativ oder keine Zahl \(`NaN`\) ist.  Beachten Sie, dass [!INCLUDE[javascript](../../includes/javascript-md.md)] Bruchzahlen automatisch in ganze Zahlen konvertiert.  
+Beim Festlegen der **length** \-Eigenschaft eines vorhandenen **Array**\-Objekts haben Sie eine Arraylänge angegeben, die keine positive Zahl oder Null war.  Dieser Fehler tritt auf, wenn Sie einen Wert der **length**\-Eigenschaft eines `Array`\-Objekts einen Wert zuweisen, der negativ oder keine Zahl \(`NaN`\) ist.  Beachten Sie, dass [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Bruchzahlen automatisch in ganze Zahlen konvertiert.  
   
 ### So beheben Sie diesen Fehler  
   

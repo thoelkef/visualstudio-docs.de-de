@@ -46,7 +46,7 @@ Math.exp(number)
  **Gilt für**: [Math\-Objekt](../../javascript/reference/math-object-javascript.md)  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## Siehe auch  
  [Math\-Konstanten](../../javascript/reference/math-constants-javascript.md)

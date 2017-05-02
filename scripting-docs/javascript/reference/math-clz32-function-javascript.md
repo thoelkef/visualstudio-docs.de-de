@@ -36,6 +36,6 @@ number
  Wenn `number` 0 ist, lautet das Ergebnis 32.  Wenn das wichtigste Bit der 32\-Bit\-Binärverschlüsselung von `number` 1 ist, lautet das Ergebnis 0.  
   
 ## Anforderungen  
- [!INCLUDE[jsv12](../../includes/jsv12-md.md)]  
+ [!INCLUDE[jsv12](../../javascript/reference/includes/jsv12-md.md)]  
   
  **Gilt für**: [Math\-Objekt](../../javascript/reference/math-object-javascript.md)

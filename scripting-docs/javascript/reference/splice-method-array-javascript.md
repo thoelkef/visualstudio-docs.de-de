@@ -63,7 +63,7 @@ document.write(arr);
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv55](../../includes/jsv55-md.md)]  
+ [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
 ## Siehe auch  
  [slice\-Methode \(Array\)](../../javascript/reference/slice-method-array-javascript.md)

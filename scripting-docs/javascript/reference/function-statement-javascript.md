@@ -46,7 +46,7 @@ function functionname ([arg1 [, arg2 [,...[, argN]]]]) {
  Optional.  Eine optionale, durch Trennzeichen getrennte Liste von Argumenten, die die Funktion versteht.  
   
  `statements`  
- Optional.  Eine oder mehrere [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Anweisungen.  
+ Optional.  Eine oder mehrere [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Anweisungen.  
   
 ## Hinweise  
  Verwenden Sie die `function`\-Anweisung, um eine Funktion für den späteren Gebrauch zu deklarieren.  Der in `statements` enthaltene Code wird erst ausgeführt, wenn die Funktion von anderer Stelle im Skript aus aufgerufen wird.  
@@ -93,7 +93,7 @@ var result = MyFunc(123);
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## Siehe auch  
  [new\-Operator](../../javascript/reference/new-operator-decrementjavascript.md)

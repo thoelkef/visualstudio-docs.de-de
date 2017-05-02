@@ -23,7 +23,7 @@ manager: "ghogen"
 caps.handback.revision: 7
 ---
 # &quot;@end&quot; erwartet
-Sie haben versucht, einen bedingt kompilierten Codeblock zu erstellen, haben jedoch die **@end**\-Anweisung nicht am Ende eingefügt.  [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Anweisungen können bedingt kompiliert werden, indem sie innerhalb eines **@if\/@end**\-Blocks eingeschlossen werden.  
+Sie haben versucht, einen bedingt kompilierten Codeblock zu erstellen, haben jedoch die **@end**\-Anweisung nicht am Ende eingefügt.  [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Anweisungen können bedingt kompiliert werden, indem sie innerhalb eines **@if\/@end**\-Blocks eingeschlossen werden.  
   
 ### So beheben Sie diesen Fehler  
   

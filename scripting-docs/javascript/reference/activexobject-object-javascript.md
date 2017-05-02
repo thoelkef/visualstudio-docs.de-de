@@ -31,7 +31,7 @@ Ermöglicht einen Verweis auf ein Automatisierungsobjekt und gibt diesen zurück
  Dieses Objekt wird nur zur Instanziierung von Automatisierungsobjekten verwendet und besitzt keine Member.  
   
 > [!WARNING]
->  Dieses Objekt ist eine Microsoft\-Erweiterung und wird nur in Internet Explorer, nicht jedoch in [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]\-Apps unterstützt.  
+>  Dieses Objekt ist eine Microsoft\-Erweiterung und wird nur in Internet Explorer, nicht jedoch in [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-Apps unterstützt.  
   
 ## Syntax  
   
@@ -94,10 +94,10 @@ ExcelSheet.Application.Quit();
 ```  
   
 ## Anforderungen  
- Wird in den folgenden Dokumentmodi unterstützt: Quirks, Internet Explorer 6 \(Standardmodus\), Internet Explorer 7 \(Standardmodus\), Internet Explorer 8 \(Standardmodus\), Internet Explorer 9 \(Standardmodus\), Internet Explorer 10 \(Standardmodus\) und Internet Explorer 11 \(Standardmodus\).  Wird in [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]\-Apps nicht unterstützt.  Siehe [Versionsinformationen](../../javascript/reference/javascript-version-information.md).  
+ Wird in den folgenden Dokumentmodi unterstützt: Quirks, Internet Explorer 6 \(Standardmodus\), Internet Explorer 7 \(Standardmodus\), Internet Explorer 8 \(Standardmodus\), Internet Explorer 9 \(Standardmodus\), Internet Explorer 10 \(Standardmodus\) und Internet Explorer 11 \(Standardmodus\).  Wird in [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]\-Apps nicht unterstützt.  Siehe [Versionsinformationen](../../javascript/reference/javascript-version-information.md).  
   
 > [!NOTE]
->  Das Erstellen von `ActiveXObject` auf einem Remoteserver wird in [!INCLUDE[jsv9text](../../includes/jsv9text-md.md)] und höher nicht unterstützt.  
+>  Das Erstellen von `ActiveXObject` auf einem Remoteserver wird in [!INCLUDE[jsv9text](../../javascript/includes/jsv9text-md.md)] und höher nicht unterstützt.  
   
 ## Siehe auch  
  [GetObject\-Funktion](../../javascript/reference/getobject-function-javascript.md)   

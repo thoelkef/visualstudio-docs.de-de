@@ -70,7 +70,7 @@ document.write(d);
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv3](../../includes/jsv3-md.md)]  
+ [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
 ## Siehe auch  
  [concat\-Methode \(String\)](../../javascript/reference/concat-method-string-javascript.md)   

@@ -19,7 +19,7 @@ manager: "ghogen"
 caps.handback.revision: 13
 ---
 # Verwenden von Windows-Runtime in JavaScript
-Wenn Sie eine [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]\- oder eine Windows Phone Store\-App mithilfe von JavaScript schreiben, können Sie Windows Runtime\-Klassen, \-Methoden und \-Eigenschaften praktisch in derselben Weise nutzen, als wenn sie native JavaScript\-Objekte, \-Methoden und \-Eigenschaften verwenden würden.  Dieses Thema bietet einführende Informationen und Links zu Themen, die die grundlegenden Konzepte der Verwendung von Windows\-Runtime\-APIs in JavaScript erklären, darunter eine Erklärung, wie Windows\-Runtime\-Typen dargestellt werden, wie asynchrone Windows\-Runtime\-Verfahren verwendet werden und wie Windows\-Runtime\-Ereignisse wahrgenommen und verarbeitet werden.  
+Wenn Sie eine [!INCLUDE[win8_appname_long](../javascript/includes/win8-appname-long-md.md)]\- oder eine Windows Phone Store\-App mithilfe von JavaScript schreiben, können Sie Windows Runtime\-Klassen, \-Methoden und \-Eigenschaften praktisch in derselben Weise nutzen, als wenn sie native JavaScript\-Objekte, \-Methoden und \-Eigenschaften verwenden würden.  Dieses Thema bietet einführende Informationen und Links zu Themen, die die grundlegenden Konzepte der Verwendung von Windows\-Runtime\-APIs in JavaScript erklären, darunter eine Erklärung, wie Windows\-Runtime\-Typen dargestellt werden, wie asynchrone Windows\-Runtime\-Verfahren verwendet werden und wie Windows\-Runtime\-Ereignisse wahrgenommen und verarbeitet werden.  
   
  Die JavaScript\-Referenzdokumentation finden Sie unter [JavaScript\-Sprachreferenz](../javascript/javascript-language-reference.md).  
   

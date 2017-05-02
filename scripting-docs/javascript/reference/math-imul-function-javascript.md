@@ -52,4 +52,4 @@ var result2 = Math.imul(Math.pow(2, 32) - 1, Math.pow(2, 32) - 2);
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv12](../../includes/jsv12-md.md)]
+ [!INCLUDE[jsv12](../../javascript/reference/includes/jsv12-md.md)]

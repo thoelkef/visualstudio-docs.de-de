@@ -23,11 +23,11 @@ manager: "ghogen"
 caps.handback.revision: 7
 ---
 # Syntaxfehler im regul&#228;ren Ausdruck (JavaScript)
-Die Struktur der Suchzeichenfolge verstößt gegen eine oder mehrere grammatikalische Regeln für reguläre Ausdrücke in [!INCLUDE[javascript](../../includes/javascript-md.md)].  
+Die Struktur der Suchzeichenfolge verstößt gegen eine oder mehrere grammatikalische Regeln für reguläre Ausdrücke in [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ### So beheben Sie diesen Fehler  
   
--   Stellen Sie sicher, dass die Struktur der Suchzeichenfolge mit einem regulären Ausdruck der [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Syntax für reguläre Ausdrücke entspricht.  
+-   Stellen Sie sicher, dass die Struktur der Suchzeichenfolge mit einem regulären Ausdruck der [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Syntax für reguläre Ausdrücke entspricht.  
   
 ## Siehe auch  
  [Regular Expression\-Objekt](../../javascript/reference/regular-expression-object-javascript.md)   

@@ -68,7 +68,7 @@ while (number != undefined)
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv55](../../includes/jsv55-md.md)]  
+ [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
 ## Siehe auch  
  [concat\-Methode \(Array\)](../../javascript/reference/concat-method-array-javascript.md)   

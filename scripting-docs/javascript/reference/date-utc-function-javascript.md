@@ -58,7 +58,7 @@ Date.UTC(year, month, day[, hours[, minutes[, seconds[,ms]]]])
  Optional.  Eine ganze Zahl zwischen 0 und 999, die die Millisekunden angibt.  
   
 ## Hinweise  
- Die `Date.UTC`\-Funktion gibt die Anzahl der Millisekunden zwischen dem 1. Januar 1970, Mitternacht, und dem angegebenen Datum gemäß koordinierter Weltzeit \(Universal Coordinated Time, UTC\) zurück.  Dieser Rückgabewert kann in der `setTime`\-Methode und im `Date`\-Objektkonstruktor verwendet werden.  Ist der Wert eines Arguments größer als dessen Bereich bzw. eine negative Zahl, werden andere gespeicherte Werte entsprechend geändert.  Wenn Sie z. B. 150 Sekunden angeben, macht [!INCLUDE[javascript](../../includes/javascript-md.md)] daraus 2 Minuten und 30 Sekunden.  
+ Die `Date.UTC`\-Funktion gibt die Anzahl der Millisekunden zwischen dem 1. Januar 1970, Mitternacht, und dem angegebenen Datum gemäß koordinierter Weltzeit \(Universal Coordinated Time, UTC\) zurück.  Dieser Rückgabewert kann in der `setTime`\-Methode und im `Date`\-Objektkonstruktor verwendet werden.  Ist der Wert eines Arguments größer als dessen Bereich bzw. eine negative Zahl, werden andere gespeicherte Werte entsprechend geändert.  Wenn Sie z. B. 150 Sekunden angeben, macht [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] daraus 2 Minuten und 30 Sekunden.  
   
  Der Unterschied zwischen der `Date.UTC`\-Funktion und dem `Date`\-Objektkonstruktor, der ein Datum akzeptiert, liegt darin, dass die `Date.UTC`\-Funktion von UTC und der `Date`\-Objektkonstruktor von der Ortszeit ausgeht.  
   
@@ -93,7 +93,7 @@ document.write(days);
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## Siehe auch  
  [setTime\-Methode \(Datum\)](../../javascript/reference/settime-method-date-javascript.md)

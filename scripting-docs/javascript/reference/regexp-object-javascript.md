@@ -122,7 +122,7 @@ document.write(s);
  Für das `RegExp`\-Objekt sind keine Methoden verfügbar.  
   
 ## Anforderungen  
- [!INCLUDE[jsv3](../../includes/jsv3-md.md)]  
+ [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
 ## Siehe auch  
  [Regular Expression\-Objekt](../../javascript/reference/regular-expression-object-javascript.md)   

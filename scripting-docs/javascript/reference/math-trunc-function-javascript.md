@@ -35,4 +35,4 @@ Math.trunc(number)
  Wenn `number` gleich `NaN` ist, wird `NaN` zurückgegeben.  
   
 ## Anforderungen  
- [!INCLUDE[jsv12](../../includes/jsv12-md.md)]
+ [!INCLUDE[jsv12](../../javascript/reference/includes/jsv12-md.md)]

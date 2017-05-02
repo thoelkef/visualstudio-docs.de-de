@@ -51,7 +51,7 @@ result = result * expression
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## Siehe auch  
  [Multiplikationsoperator \(\*\)](../../javascript/reference/multiplication-operator-decrement-javascript.md)   

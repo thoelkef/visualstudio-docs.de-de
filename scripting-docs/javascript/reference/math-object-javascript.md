@@ -43,7 +43,7 @@ Math.[{property | method}]
  Das **Math**\-Objekt kann nicht mit dem Operator **new** erstellt werden; bei dessen Verwendung wird eine Fehlermeldung ausgegeben.  Wenn das Skriptmodul geladen ist, erstellt es das Objekt.  Alle seine Methoden und Eigenschaften sind jederzeit für das Skript verfügbar.  
   
 ## Anforderungen  
- Das `Math`\-Objekt wurde in [!INCLUDE[jsv1text](../../includes/jsv1text-md.md)] eingeführt.  
+ Das `Math`\-Objekt wurde in [!INCLUDE[jsv1text](../../javascript/reference/includes/jsv1text-md.md)] eingeführt.  
   
 <a name="js56jsobjmathprop"></a>   
 ## Konstanten  

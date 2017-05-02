@@ -127,11 +127,11 @@ document.write(myDate.getHours() + ":" + myDate.getMinutes() + ":" + myDate.getS
  Die [toISOString\-Methode \(Datum\)](../javascript/reference/toisostring-method-date-javascript.md) verwendet immer das erweiterte Jahr für die Jahre, die vor 0 und nach 9999 liegen.  
   
 > [!NOTE]
->  [!INCLUDE[jsv9](../includes/jsv9-md.md)]  
+>  [!INCLUDE[jsv9](../javascript/includes/jsv9-md.md)]  
   
 <a name="OtherDateFormats"></a>   
 ## Andere Datumsformate  
- Wenn eine Datumszeichenfolge nicht im ISO\-Format vorliegt, wird sie in [!INCLUDE[javascript](../includes/javascript-md.md)] unter Verwendung der folgenden Regeln analysiert.  
+ Wenn eine Datumszeichenfolge nicht im ISO\-Format vorliegt, wird sie in [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] unter Verwendung der folgenden Regeln analysiert.  
   
  Kurze Datumangaben  
   
@@ -159,7 +159,7 @@ document.write(myDate.getHours() + ":" + myDate.getMinutes() + ":" + myDate.getS
   
 -   Für eine Zeichenfolge, die ein ungültiges Datum enthält, wird NaN zurückgegeben.  Beispielsweise wird für eine Zeichenfolge, die zwei Jahre oder zwei Monate enthält, NaN zurückgegeben.  
   
--   [!INCLUDE[javascript](../includes/javascript-md.md)] unterstützt alle Standardzeitzonen sowie koordinierte Weltzeit \(UTC\) und GMT \(Greenwich Mean Time\).  \(Das ISO\-Format unterstützt keine Zeitzonen.\)  
+-   [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] unterstützt alle Standardzeitzonen sowie koordinierte Weltzeit \(UTC\) und GMT \(Greenwich Mean Time\).  \(Das ISO\-Format unterstützt keine Zeitzonen.\)  
   
 -   Text, der in Klammern eingeschlossen ist, wird als Kommentar behandelt.  Klammern können geschachtelt werden.  
   

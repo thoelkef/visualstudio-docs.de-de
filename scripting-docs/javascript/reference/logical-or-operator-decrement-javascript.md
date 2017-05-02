@@ -55,7 +55,7 @@ result = expression1 || expression2
 |False|True|True|  
 |False|False|False|  
   
- [!INCLUDE[javascript](../../includes/javascript-md.md)] verwendet bei der Konvertierung nicht boolescher Werte in boolesche Werte die folgenden Regeln:  
+ [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] verwendet bei der Konvertierung nicht boolescher Werte in boolesche Werte die folgenden Regeln:  
   
 -   Alle Objekte werden als "true" interpretiert.  
   
@@ -66,7 +66,7 @@ result = expression1 || expression2
 -   Zahlen gelten nur dann als false, wenn sie 0 sind.  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## Siehe auch  
  [Operatorrangfolge](../../javascript/operator-subtractprecedence-javascript.md)   

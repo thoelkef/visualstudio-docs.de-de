@@ -21,7 +21,7 @@ manager: "ghogen"
 caps.handback.revision: 7
 ---
 # Vorlagenzeichenfolgen (JavaScript)
-Mit Vorlagenzeichenfolgen können Sie in [!INCLUDE[jsv12text](../../includes/jsv12text-md.md)] Zeichenfolgenliterale mit eingebetteten Ausdrücken erstellen.  Vorlagenzeichenfolgen bieten außerdem integrierte Unterstützung für mehrzeilige Zeichenfolgen.  
+Mit Vorlagenzeichenfolgen können Sie in [!INCLUDE[jsv12text](../../javascript/includes/jsv12text-md.md)] Zeichenfolgenliterale mit eingebetteten Ausdrücken erstellen.  Vorlagenzeichenfolgen bieten außerdem integrierte Unterstützung für mehrzeilige Zeichenfolgen.  
   
  Verwenden Sie zum Erstellen einer Vorlagenzeichenfolge das Graviszeichen \(auch Backtick genannt\) \(\`\), um die Zeichenfolge anstelle von einfachen oder doppelten Anführungszeichen einzuschließen.  Das folgende Codebeispiel veranschaulicht eine einfache Vorlagenzeichenfolge.  
   

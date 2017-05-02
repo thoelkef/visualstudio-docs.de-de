@@ -23,7 +23,7 @@ manager: "ghogen"
 caps.handback.revision: 12
 ---
 # JavaScript-Anweisungen
-In der folgenden Tabelle sind [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Anweisungen aufgeführt.  
+In der folgenden Tabelle sind [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Anweisungen aufgeführt.  
   
 ## Anweisungen  
   
@@ -33,7 +33,7 @@ In der folgenden Tabelle sind [!INCLUDE[javascript](../../includes/javascript-md
 |Enthält Anweisungen, die ausgeführt werden, wenn im Code innerhalb des **try**\-Blocks ein Fehler auftritt.|[catch\-Anweisung](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)|  
 |Aktiviert die Unterstützung der bedingten Kompilierung.|[@cc\_on\-Anweisung](../../javascript/reference/at-cc-on-statement-javascript.md)|  
 |Deklariert eine neue Klasse.|[class\-Anweisung](../../javascript/reference/class-statement-javascript.md)|  
-|Veranlasst den [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Parser, Kommentare zu ignorieren.|[Comment\-Anweisungen](../../javascript/reference/comment-statements-javascript.md)|  
+|Veranlasst den [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Parser, Kommentare zu ignorieren.|[Comment\-Anweisungen](../../javascript/reference/comment-statements-javascript.md)|  
 |Deklariert eine Block\-bewertete Variable mit einem konstanten Wert.|[const](../../javascript/reference/const-statement-javascript.md)|  
 |Beendet die aktuelle Iteration einer Schleife und beginnt eine neue Iteration.|[continue\-Anweisung](../../javascript/reference/continue-statement-javascript.md)|  
 |Startet den Debugger.|[debugger\-Anweisung](../../javascript/reference/debugger-statement-javascript.md)|  
@@ -51,7 +51,7 @@ In der folgenden Tabelle sind [!INCLUDE[javascript](../../includes/javascript-md
 |Aktiviert die Ausführung einer oder mehrerer Anweisungen, wenn der Wert eines festgelegten Ausdrucks einer Marke entspricht.|[switch\-Anweisung](../../javascript/reference/switch-statement-javascript.md)|  
 |Verweist auf das aktuelle Objekt.|[this\-Anweisung](../../javascript/reference/this-statement-javascript.md)|  
 |Generiert einen Fehlerzustand, der von einer **try...catch**\-Anweisung behandelt werden kann.|[throw\-Anweisung](../../javascript/reference/throw-statement-javascript.md)|  
-|Implementiert die Fehlerbehandlung für [!INCLUDE[javascript](../../includes/javascript-md.md)].|[try\-Anweisung](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)|  
+|Implementiert die Fehlerbehandlung für [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].|[try\-Anweisung](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)|  
 |Deklariert eine Variable.|[var\-Anweisung](../../javascript/reference/var-statement-javascript.md)|  
 |Führt eine Anweisung aus, bis eine festgelegte Bedingung **false** ergibt.|[while\-Anweisung](../../javascript/reference/while-statement-javascript.md)|  
 |Legt das Standardobjekt für eine Anweisung fest.|[with\-Anweisung](../../javascript/reference/with-statement-javascript.md)|

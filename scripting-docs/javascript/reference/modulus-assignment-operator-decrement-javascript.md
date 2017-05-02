@@ -51,7 +51,7 @@ result = result % expression
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## Siehe auch  
  [Modulus\-Operator](../../javascript/reference/modulus-operator-decrementjavascript.md)   

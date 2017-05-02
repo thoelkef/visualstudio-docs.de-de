@@ -38,7 +38,7 @@ functionName.caller
 ## Hinweise  
  Das `functionName`\-Objekt ist der Name einer beliebigen ausgeführten Funktion.  
   
- Die `caller`\-Eigenschaft einer Funktion ist nur während ihrer Ausführung definiert.  Wenn die Funktion auf der obersten Ebene eines [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Programms aufgerufen wird, enthält `caller` den Wert `null`.  
+ Die `caller`\-Eigenschaft einer Funktion ist nur während ihrer Ausführung definiert.  Wenn die Funktion auf der obersten Ebene eines [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Programms aufgerufen wird, enthält `caller` den Wert `null`.  
   
  Wird die `caller`\-Eigenschaft in einer Zeichenfolge verwendet, entspricht dies `functionName`.`toString`, d. h., der dekompilierte Text der Funktion wird angezeigt.  
   
@@ -58,7 +58,7 @@ document.write(CallLevel());
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv2](../../includes/jsv2-md.md)]  
+ [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]  
   
 ## Siehe auch  
  [function\-Anweisung](../../javascript/reference/function-statement-javascript.md)

@@ -62,7 +62,7 @@ function toLocaleStrDemo(){
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
  **Gilt für**: [Array\-Objekt](../../javascript/reference/array-object-javascript.md)&#124; [Date\-Objekt](../../javascript/reference/date-object-javascript.md)&#124; [Number\-Objekt](../../javascript/reference/number-object-javascript.md)&#124; [Object\-Objekt](../../javascript/reference/object-object-javascript.md)  
   

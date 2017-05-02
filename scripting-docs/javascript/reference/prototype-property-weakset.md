@@ -37,4 +37,4 @@ weakset.prototype
  Um beispielsweise dem `WeakSet`\-Objekt eine Methode hinzuzufügen, die den Wert des größten Elements des Satzes zurückgibt, deklarieren Sie die Funktion, fügen Sie sie `WeakSet.prototype` hinzu, und verwenden Sie sie dann.  
   
 ## Anforderungen  
- [!INCLUDE[jsv12](../../includes/jsv12-md.md)]
+ [!INCLUDE[jsv12](../../javascript/reference/includes/jsv12-md.md)]

@@ -24,7 +24,7 @@ manager: "ghogen"
 caps.handback.revision: 20
 ---
 # Variablen (JavaScript)
-In [!INCLUDE[javascript](../includes/javascript-md.md)] enthält eine Variable einen Wert, wie z. B. "Hello" oder 5.  Wenn Sie die Variable verwenden, verweisen Sie auf die entsprechenden Daten, beispielsweise `NumberOfDaysLeft = EndDate – TodaysDate`.  
+In [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] enthält eine Variable einen Wert, wie z. B. "Hello" oder 5.  Wenn Sie die Variable verwenden, verweisen Sie auf die entsprechenden Daten, beispielsweise `NumberOfDaysLeft = EndDate – TodaysDate`.  
   
  Sie verwenden Variablen, um im Code vorhandene Werte zu speichern, abzurufen und zu bearbeiten.  Versuchen Sie, den Variablen aussagekräftige Namen zu geben, um anderen Personen das Verständnis für Ihren Code zu erleichtern.  
   
@@ -43,7 +43,7 @@ var count = 0, amount = 100;
  Wenn Sie die Variable nicht in der Anweisung `var` initialisieren, übernimmt diese automatisch den Wert `undefined`.  
   
 ## Benennen von Variablen  
- [!INCLUDE[javascript](../includes/javascript-md.md)] ist eine Sprache, in der zwischen Groß\- und Kleinschreibung unterschieden wird.  Daher unterscheidet sich der Variablenname "myCounter" vom Variablennamen "MYCounter".  Variablennamen können beliebig lang sein.  Beim Erstellen von zulässigen Variablennamen müssen folgenden Regeln beachtet werden:  
+ [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] ist eine Sprache, in der zwischen Groß\- und Kleinschreibung unterschieden wird.  Daher unterscheidet sich der Variablenname "myCounter" vom Variablennamen "MYCounter".  Variablennamen können beliebig lang sein.  Beim Erstellen von zulässigen Variablennamen müssen folgenden Regeln beachtet werden:  
   
 -   Das erste Zeichen muss ein ACSII\-Buchstabe \(Großbuchstabe oder Kleinbuchstabe\) oder ein Unterstrich \(\_\) sein.  Beachten Sie, dass als erstes Zeichen keine Zahl verwendet werden darf.  
   
@@ -100,9 +100,9 @@ var area = length * width;
 ```  
   
 ## Konvertierung  
- [!INCLUDE[javascript](../includes/javascript-md.md)] ist im Gegensatz zu stark typisierten Sprachen wie C\+\+ eine lose typisierte Sprache.  Dies bedeutet, dass JavaScript\-Variablen keinen vordefinierten Typ aufweisen.  Stattdessen ist der Typ einer Variablen der Typ des Werts.  Daher können Sie einen Wert so behandeln, als ob es sich um einem anderen Typ handelte.  
+ [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] ist im Gegensatz zu stark typisierten Sprachen wie C\+\+ eine lose typisierte Sprache.  Dies bedeutet, dass JavaScript\-Variablen keinen vordefinierten Typ aufweisen.  Stattdessen ist der Typ einer Variablen der Typ des Werts.  Daher können Sie einen Wert so behandeln, als ob es sich um einem anderen Typ handelte.  
   
- In [!INCLUDE[javascript](../includes/javascript-md.md)] können Sie Vorgänge mit Werten unterschiedlichen Datentyps ausführen, ohne dass der Compiler eine Ausnahme auslöst.  Der [!INCLUDE[javascript](../includes/javascript-md.md)]\-Interpreter konvertiert oder *wandelt* einen der Datentypen implizit in den vom des anderen um, und führt anschließend den Vorgang aus.  Bei der Umwandlung der Zeichenfolge, der Anzahl und der booleschen Werte gelten die folgenden Regeln:  
+ In [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] können Sie Vorgänge mit Werten unterschiedlichen Datentyps ausführen, ohne dass der Compiler eine Ausnahme auslöst.  Der [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Interpreter konvertiert oder *wandelt* einen der Datentypen implizit in den vom des anderen um, und führt anschließend den Vorgang aus.  Bei der Umwandlung der Zeichenfolge, der Anzahl und der booleschen Werte gelten die folgenden Regeln:  
   
 -   Wenn Sie eine Zahl und eine Zeichenfolge hinzufügen, wird die Zahl in eine Zeichenfolge konvertiert.  
   

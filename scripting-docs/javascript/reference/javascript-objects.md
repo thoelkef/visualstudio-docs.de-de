@@ -23,7 +23,7 @@ manager: "ghogen"
 caps.handback.revision: 33
 ---
 # JavaScript-Objekte
-In der folgenden Tabelle sind [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Objekte aufgeführt.  
+In der folgenden Tabelle sind [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Objekte aufgeführt.  
   
 ## erzwingen  
   
@@ -38,7 +38,7 @@ In der folgenden Tabelle sind [!INCLUDE[javascript](../../includes/javascript-md
 |Ermöglicht grundlegendes Speichern und Abrufen von Datums\- und Zeitangaben.|[Date\-Objekt](../../javascript/reference/date-object-javascript.md)|  
 |Ein systeminternes Objekt, das die Ausgabe an einen Skriptdebugger senden kann.|[Debug\-Objekt](../../javascript/reference/debug-object-javascript.md)|  
 |Ermöglicht das Aufzählen der Elemente in einer Auflistung.  Dieses Objekt wird nur in Internet Explorer unterstützt.|[Enumeratorobjekt](../../javascript/reference/enumerator-object-javascript.md)|  
-|Ein Objekt, dass Informationen zu Fehlern enthält, die während dem Ausführen von [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Code auftreten.|[Error\-Objekt](../../javascript/reference/error-object-javascript.md)|  
+|Ein Objekt, dass Informationen zu Fehlern enthält, die während dem Ausführen von [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Code auftreten.|[Error\-Objekt](../../javascript/reference/error-object-javascript.md)|  
 |Ein typisiertes Array von 32\-Bit\-Gleitkommawerten.|[Float32Array\-Objekt](../../javascript/reference/float32array-object.md)|  
 |Ein typisiertes Array von 64\-Bit\-Gleitkommawerten.|[Float64Array\-Objekt](../../javascript/reference/float64array-object.md)|  
 |Erstellt eine neue Funktion.|[Function\-Objekt](../../javascript/reference/function-object-javascript.md)|  
@@ -53,7 +53,7 @@ In der folgenden Tabelle sind [!INCLUDE[javascript](../../includes/javascript-md
 |Eine Auflistung von Schlüssel\-Wert\-Paaren.|[Zuordnungsobjekt](../../javascript/reference/map-object-javascript.md)|  
 |Ein systeminternes Objekt, das grundlegende mathematische Funktionen und Konstanten bereitstellt.|[Math\-Objekt](../../javascript/reference/math-object-javascript.md)|  
 |Eine Objektdarstellung des Number\-Datentyps und Platzhalter für numerische Konstanten.|[Number\-Objekt](../../javascript/reference/number-object-javascript.md)|  
-|Bietet für alle [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Objekte gemeinsame Funktionen.|[Object\-Objekt](../../javascript/reference/object-object-javascript.md)|  
+|Bietet für alle [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Objekte gemeinsame Funktionen.|[Object\-Objekt](../../javascript/reference/object-object-javascript.md)|  
 |Stellt einen Mechanismus zur Planung von Vorgängen bereit, die für einen Wert auszuführen sind, der noch nicht berechnet wurde.|[Promise\-Objekt](../../javascript/reference/promise-object-javascript.md)|  
 |Aktiviert das benutzerdefinierte Verhalten eines Objekts.|[Proxy\-Objekt](../../javascript/reference/proxy-object-javascript.md)|  
 |Stellt Methoden zur Verwendung in Vorgängen bereit, die abgefangen werden.|[Reflect\-Objekt](../../javascript/reference/reflect-object-javascript.md)|  

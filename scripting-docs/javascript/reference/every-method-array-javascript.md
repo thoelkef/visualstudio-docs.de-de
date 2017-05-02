@@ -146,7 +146,7 @@ else
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv9](../../includes/jsv9-md.md)]  
+ [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
 ## Siehe auch  
  [some\-Methode \(Array\)](../../javascript/reference/some-method-array-javascript.md)   

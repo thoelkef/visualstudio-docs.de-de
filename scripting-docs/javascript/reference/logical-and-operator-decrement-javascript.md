@@ -48,7 +48,7 @@ result = expression1 && expression2
 ## Hinweise  
  Wenn `expression1` `false` ergibt, lautet `result` `expression1`.  Andernfalls lautet `result` `expression2`.  Der Vorgang gibt daher `true` zurück, wenn beide true sind; andernfalls wird `false` zurückgegeben.  
   
- [!INCLUDE[javascript](../../includes/javascript-md.md)] verwendet die folgenden Regeln für die Konvertierung nicht boolescher Werte in boolesche Werte:  
+ [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] verwendet die folgenden Regeln für die Konvertierung nicht boolescher Werte in boolesche Werte:  
   
 -   Alle Objekte gelten als `true`.  
   
@@ -59,7 +59,7 @@ result = expression1 && expression2
 -   Eine Zahl `false`, wenn Sie Null lautet.  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## Siehe auch  
  [Operatorrangfolge](../../javascript/operator-subtractprecedence-javascript.md)   

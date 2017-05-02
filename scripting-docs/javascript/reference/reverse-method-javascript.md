@@ -64,7 +64,7 @@ document.write(reverseArr);
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv2](../../includes/jsv2-md.md)]  
+ [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]  
   
 ## Siehe auch  
  [concat\-Methode \(Array\)](../../javascript/reference/concat-method-array-javascript.md)

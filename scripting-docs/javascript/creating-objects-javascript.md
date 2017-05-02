@@ -71,9 +71,9 @@ var pasta = {
  Sie können ein Objektliteral auch innerhalb eines Konstruktors verwenden.  
   
 > [!CAUTION]
->  Die unten beschriebenen Features werden nur in [!INCLUDE[jsv12text](../includes/jsv12text-md.md)] unterstützt.  
+>  Die unten beschriebenen Features werden nur in [!INCLUDE[jsv12text](../javascript/includes/jsv12text-md.md)] unterstützt.  
   
- In [!INCLUDE[jsv12text](../includes/jsv12text-md.md)] können Sie ein Objektliteral anhand der Kurzsyntax erstellen.  
+ In [!INCLUDE[jsv12text](../javascript/includes/jsv12text-md.md)] können Sie ein Objektliteral anhand der Kurzsyntax erstellen.  
   
 ```javascript  
 var key = 'a';  
@@ -110,7 +110,7 @@ var obj = {
 };  
 ```  
   
- Zudem lassen sich Eigenschaftennamen in Objektliteralen in [!INCLUDE[jsv12text](../includes/jsv12text-md.md)] dynamisch festlegen.  Im folgenden Codebeispiel wird ein Eigenschaftenname für ein Objekt mithilfe der Set\-Syntax dynamisch erstellt.  
+ Zudem lassen sich Eigenschaftennamen in Objektliteralen in [!INCLUDE[jsv12text](../javascript/includes/jsv12text-md.md)] dynamisch festlegen.  Im folgenden Codebeispiel wird ein Eigenschaftenname für ein Objekt mithilfe der Set\-Syntax dynamisch erstellt.  
   
 ```javascript  
 var propName = "prop_42";  

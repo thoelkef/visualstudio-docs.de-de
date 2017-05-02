@@ -25,7 +25,7 @@ manager: "ghogen"
 caps.handback.revision: 25
 ---
 # Object-Objekt (JavaScript)
-Stellt Funktionen bereit, die allen [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Objekten gemeinsam sind.  
+Stellt Funktionen bereit, die allen [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Objekten gemeinsam sind.  
   
 ## Syntax  
   
@@ -40,15 +40,15 @@ obj
  Erforderlich.  Der Variablenname, dem das `Object`\-Objekt zugewiesen ist.  
   
  *Wert*  
- Optional.  Ein beliebiger der primitiven [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Datentypen \(Zahl, Boolescher Wert oder String\).  Wenn der Wert ein Objekt ist, wird das Objekt ungeändert zurückgegeben.  Wenn *Wert* `null`, **nicht definiert** oder nicht angegeben ist, wird ein leeres Objekt erstellt.  
+ Optional.  Ein beliebiger der primitiven [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Datentypen \(Zahl, Boolescher Wert oder String\).  Wenn der Wert ein Objekt ist, wird das Objekt ungeändert zurückgegeben.  Wenn *Wert* `null`, **nicht definiert** oder nicht angegeben ist, wird ein leeres Objekt erstellt.  
   
 ## Hinweise  
- Das `Object`\-Objekt ist in allen anderen [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Objekten enthalten; alle seine Methoden und Eigenschaften sind in allen anderen Objekten verfügbar.  Die Methoden können in benutzerdefinierten Objekten neu definiert werden und werden von [!INCLUDE[javascript](../../includes/javascript-md.md)] zu den entsprechenden Zeitpunkten aufgerufen.  Die **toString**\-Methode ist ein Beispiel einer häufig neu definierten `Object`\-Methode.  
+ Das `Object`\-Objekt ist in allen anderen [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Objekten enthalten; alle seine Methoden und Eigenschaften sind in allen anderen Objekten verfügbar.  Die Methoden können in benutzerdefinierten Objekten neu definiert werden und werden von [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] zu den entsprechenden Zeitpunkten aufgerufen.  Die **toString**\-Methode ist ein Beispiel einer häufig neu definierten `Object`\-Methode.  
   
- In dieser Sprachreferenz enthält die Beschreibung jeder `Object`\-Methode sowohl standardmäßige als auch objektspezifische Implementierungsinformationen für die systeminternen [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Objekte.  
+ In dieser Sprachreferenz enthält die Beschreibung jeder `Object`\-Methode sowohl standardmäßige als auch objektspezifische Implementierungsinformationen für die systeminternen [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Objekte.  
   
 ## Anforderungen  
- Das `Object Object` wurde in [!INCLUDE[jsv3text](../../includes/jsv3text-md.md)] eingeführt.  Einige Member der folgenden Listen wurden in höheren Versionen eingeführt.  
+ Das `Object Object` wurde in [!INCLUDE[jsv3text](../../javascript/reference/includes/jsv3text-md.md)] eingeführt.  Einige Member der folgenden Listen wurden in höheren Versionen eingeführt.  
   
 ## Eigenschaften  
  In der folgenden Tabelle sind die Eigenschaften des `Object Object`s aufgelistet.  

@@ -49,7 +49,7 @@ Debug.writeln([str1 [, str2 [, ... [, strN]]]])
 > [!NOTE]
 >  Um dieses Beispiel auszuführen, müssen Sie einen Skriptdebugger installiert haben, und das Skript muss im Debugmodus ausgeführt werden.  
 >   
->  Internet Explorer 8 enthält den [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Debugger.  Wenn Sie eine frühere Version von Internet Explorer verwenden, finden Sie unter [Gewusst wie: Aktivieren und Starten des Skriptdebuggings in Internet Explorer](http://go.microsoft.com/fwlink/?LinkId=133801) weitere Informationen.  
+>  Internet Explorer 8 enthält den [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Debugger.  Wenn Sie eine frühere Version von Internet Explorer verwenden, finden Sie unter [Gewusst wie: Aktivieren und Starten des Skriptdebuggings in Internet Explorer](http://go.microsoft.com/fwlink/?LinkId=133801) weitere Informationen.  
   
 ```javascript  
 var counter = 42;  
@@ -57,7 +57,7 @@ Debug.writeln("The value of counter is " + counter);
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv3](../../includes/jsv3-md.md)]  
+ [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
  **Gilt für**: [Debugobjekt](../../javascript/reference/debug-object-javascript.md)  
   

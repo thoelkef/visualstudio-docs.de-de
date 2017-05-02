@@ -48,7 +48,7 @@ var variable1 = value1
   
  Sie können eine Variable deklarieren, ohne das `var`\-Schlüsselwort in der Deklaration zu verwenden und ihr einen Wert zuzuweisen.  Dies wird als *implizite Deklaration* bezeichnet und ist nicht empfehlenswert.  Eine implizite Deklaration resultiert im globalen Gültigkeitsbereich der Variablen.  Wenn eine Variable auf Prozedurebene deklariert wird, soll diese jedoch meist keinen globalen Gültigkeitsbereich haben.  Um zu verhindern, dass die Variable einen globalen Gültigkeitsbereich erhält, müssen Sie das `var`\-Schlüsselwort in der Variablendeklaration verwenden.  
   
- Wenn Sie die Variable in der `var`\-Anweisung nicht initialisieren, wird ihr automatisch der [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Wert `undefined` zugewiesen.  
+ Wenn Sie die Variable in der `var`\-Anweisung nicht initialisieren, wird ihr automatisch der [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Wert `undefined` zugewiesen.  
   
 ## Beispiel  
  Die folgenden Beispiele veranschaulichen die Verwendung der `var`\-Anweisung.  
@@ -61,7 +61,7 @@ var myarray = new Array();
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv1](../../includes/jsv1-md.md)]  
+ [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## Siehe auch  
  [function\-Anweisung](../../javascript/reference/function-statement-javascript.md)   

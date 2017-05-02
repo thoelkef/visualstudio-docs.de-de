@@ -83,7 +83,7 @@ document.write (ar.indexOf("ab", -2) + "<br/>");
 ```  
   
 ## Anforderungen  
- [!INCLUDE[jsv9](../../includes/jsv9-md.md)]  
+ [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
 ## Siehe auch  
  [JavaScript\-Methoden](../../javascript/reference/javascript-methods.md)   

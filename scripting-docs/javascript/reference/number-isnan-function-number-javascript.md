@@ -42,7 +42,7 @@ Number.isNaN(numValue)
  `Number.isNaN` behebt Probleme mit der globalen `isNaN`\-Funktion.  `Number.isNaN` konvertiert das Argument erst nach dem Vergleich mit `NaN` in den Typ „Zahl“.  Daher gibt es `true` nur dann zurück, wenn das übergebene Argument genau den gleichen Wert wie `NaN` aufweist.  Die globale `isNaN`\-Funktion konvertiert das Argument vor dem Vergleich in den Typ „Zahl“, was dazu führen kann, dass nicht\-numerische Werte `true` zurückgeben, während sie `true` möglicherweise nicht für `Number.isNaN` zurückgeben.  
   
 ## Anforderungen  
- [!INCLUDE[jsv12](../../includes/jsv12-md.md)]  
+ [!INCLUDE[jsv12](../../javascript/reference/includes/jsv12-md.md)]  
   
  **Gilt für**: [Number\-Objekt](../../javascript/reference/number-object-javascript.md)  
   

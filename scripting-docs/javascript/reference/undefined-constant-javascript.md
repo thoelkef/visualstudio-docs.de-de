@@ -67,7 +67,7 @@ document.write("typeof notDeclared is " + typeof(notDeclared));
 ```  
   
 ## Anforderungen  
- Die `undefined`\-Eigenschaft wurde in [!INCLUDE[jsv55text](../../includes/jsv55text-md.md)] eingeführt und in [!INCLUDE[jsv9textspecific](../../includes/jsv9textspecific-md.md)] mit einem Schreibschutz versehen.  
+ Die `undefined`\-Eigenschaft wurde in [!INCLUDE[jsv55text](../../javascript/reference/includes/jsv55text-md.md)] eingeführt und in [!INCLUDE[jsv9textspecific](../../javascript/reference/includes/jsv9textspecific-md.md)] mit einem Schreibschutz versehen.  
   
  **Gilt für**: [Global\-Objekt](../../javascript/reference/global-object-javascript.md)  
   

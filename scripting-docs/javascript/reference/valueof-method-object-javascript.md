@@ -35,9 +35,9 @@ object.valueOf( )
 ```  
   
 ## Hinweise  
- Der erforderliche `object`\-Verweis ist ein beliebiges systeminternes [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Objekt.  
+ Der erforderliche `object`\-Verweis ist ein beliebiges systeminternes [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Objekt.  
   
- Die `valueOf`\-Methode wird für jedes systeminterne [!INCLUDE[javascript](../../includes/javascript-md.md)]\-Objekt unterschiedlich definiert.  
+ Die `valueOf`\-Methode wird für jedes systeminterne [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Objekt unterschiedlich definiert.  
   
 |Objekt|Rückgabewert|  
 |------------|------------------|  
@@ -52,7 +52,7 @@ object.valueOf( )
  Die Objekte **Math** und `Error` haben keine `valueOf`\-Methode.  
   
 ## Anforderungen  
- [!INCLUDE[jsv2](../../includes/jsv2-md.md)]  
+ [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]  
   
  **Gilt für**: [Array\-Objekt](../../javascript/reference/array-object-javascript.md)&#124; [Boolean\-Objekt](../../javascript/reference/boolean-object-javascript.md)&#124; [Date\-Objekt](../../javascript/reference/date-object-javascript.md)&#124; [Function\-Objekt](../../javascript/reference/function-object-javascript.md)&#124; [Number\-Objekt](../../javascript/reference/number-object-javascript.md)&#124; [Object\-Objekt](../../javascript/reference/object-object-javascript.md)&#124; [String\-Objekt](../../javascript/reference/string-object-javascript.md)  
   
