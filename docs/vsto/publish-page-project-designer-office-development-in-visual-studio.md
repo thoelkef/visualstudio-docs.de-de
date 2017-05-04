@@ -99,7 +99,7 @@ caps.handback.revision: 27
  **Sprache für Veröffentlichung**  
  Diese Option legt die Sprache für die Microsoft\-Softwarelizenzbedingungen fest und bezieht die Language Packs in die Liste der erforderlichen Komponenten ein. Sie wirkt sich nicht auf die Sprache der Anpassung aus. Die Sprache im Setupprogramm wird durch die installierten Sprachen von Visual Studio bestimmt.  
   
- Weitere Informationen zum Ändern der **Sprache für Veröffentlichung** finden Sie unter [How to: Change the Publish Language for a ClickOnce Application](../Topic/How%20to:%20Change%20the%20Publish%20Language%20for%20a%20ClickOnce%20Application.md).  
+ Weitere Informationen zum Ändern der **Sprache für Veröffentlichung** finden Sie unter [How to: Change the Publish Language for a ClickOnce Application](~/deployment/how-to-change-the-publish-language-for-a-clickonce-application.md).  
   
  **Veröffentlichungsversion**  
  Legt die Versionsnummer für die Anpassung fest. Wenn die Versionsnummer geändert wird, erfolgt die Veröffentlichung der Anwendung als Update. Für jede Version wird während des Buildprozesses ein neuer Ordner erstellt, um das Überschreiben der zuvor veröffentlichten Version zu verhindern. Jeder Teil der Veröffentlichungsversion \(**Hauptversion**, **Nebenversion**, **Build**, **Revision**\) kann bis zu fünf Ziffern umfassen.  

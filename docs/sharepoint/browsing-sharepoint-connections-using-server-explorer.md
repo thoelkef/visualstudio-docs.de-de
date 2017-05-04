@@ -54,7 +54,7 @@ caps.handback.revision: 19
 |[Gewusst wie: Hinzufügen oder Entfernen von SharePoint-Verbindungen](../sharepoint/how-to-add-or-remove-sharepoint-connections.md)|Beschreibt die erforderlichen Schritte zum Hinzufügen einer neuen SharePoint\-Website zum Knoten **SharePoint\-Verbindungen** im **Server\-Explorer**.|  
   
 ## Siehe auch  
- [Server Explorer](../Topic/Server%20Explorer.md)   
+ [Server Explorer](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d)   
  [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md)  
   
   

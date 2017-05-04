@@ -39,7 +39,7 @@ caps.handback.revision: 47
   
 1.  Öffnen Sie in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ein Word\-Projekt auf Dokumentebene, während das Dokument im Designer geöffnet ist.  
   
-2.  Öffnen Sie das Fenster **Datenquellen**, und erstellen Sie eine Datenquelle auf Grundlage einer Datenbank.  Weitere Informationen finden Sie unter [Gewusst wie: Herstellen einer Verbindung zu Daten in einer Datenbank](../Topic/How%20to:%20Connect%20to%20Data%20in%20a%20Database.md).  
+2.  Öffnen Sie das Fenster **Datenquellen**, und erstellen Sie eine Datenquelle auf Grundlage einer Datenbank.  Weitere Informationen finden Sie unter [Gewusst wie: Herstellen einer Verbindung zu Daten in einer Datenbank](~/data-tools/how-to-connect-to-data-in-a-database.md).  
   
 3.  Ziehen Sie das gewünschte Feld vom Fenster **Datenquellen** in Ihr Dokument.  
   
@@ -52,11 +52,11 @@ caps.handback.revision: 47
   
 -   Ein typisiertes Dataset, das die Datentabellen kapselt, mit denen Sie in der Datenbank eine Verbindung hergestellt haben.  Weitere Informationen finden Sie unter [Arbeiten mit Datasets in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).  
   
--   Eine <xref:System.Windows.Forms.BindingSource>, durch die das Steuerelement mit dem typisierten Dataset verbunden wird.  Weitere Informationen finden Sie unter [Übersicht über die BindingSource-Komponente](../Topic/BindingSource%20Component%20Overview.md).  
+-   Eine <xref:System.Windows.Forms.BindingSource>, durch die das Steuerelement mit dem typisierten Dataset verbunden wird.  Weitere Informationen finden Sie unter [Übersicht über die BindingSource-Komponente](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f).  
   
 -   Eine TableAdapter, durch die das typisierte Dataset mit der Datenbank verbunden wird.  Weitere Informationen finden Sie unter [Übersicht über TableAdapters](/visual-studio/data-tools/tableadapter-overview).  
   
--   Ein TableAdapterManager dient zum Koordinieren von Tabellenadaptern im Dataset, um hierarchische Updates zu ermöglichen.  Weitere Informationen finden Sie unter [Hierarchische Aktualisierung](../data-tools/hierarchical-update.md) und [Übersicht über TableAdapterManager](../Topic/TableAdapterManager%20Overview.md).  
+-   Ein TableAdapterManager dient zum Koordinieren von Tabellenadaptern im Dataset, um hierarchische Updates zu ermöglichen.  Weitere Informationen finden Sie unter [Hierarchische Aktualisierung](../data-tools/hierarchical-update.md) und [Übersicht über TableAdapterManager](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  
   
  Beim Ausführen des Projekts zeigt das Steuerelement den ersten Datensatz in der Datenquelle an.  Sie können die <xref:System.Windows.Forms.BindingSource> verwenden, um Benutzern einen Bildlauf in den Datensätzen zu ermöglichen.  
   
@@ -74,6 +74,6 @@ caps.handback.revision: 47
  [Gewusst wie: Aktualisieren einer Datenquelle mit Daten eines Hoststeuerelements](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
  [Übersicht über die Verwendung lokaler Datenbankdateien in Office-Lösungen](../vsto/using-local-database-files-in-office-solutions-overview.md)   
  [Herstellen einer Verbindung mit Daten in Windows Forms-Anwendungen](/visual-studio/data-tools/connecting-to-data-in-windows-forms-applications)   
- [Übersicht über die BindingSource-Komponente](../Topic/BindingSource%20Component%20Overview.md)  
+ [Übersicht über die BindingSource-Komponente](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)  
   
   

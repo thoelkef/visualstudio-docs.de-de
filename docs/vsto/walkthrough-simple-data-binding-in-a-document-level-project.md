@@ -191,7 +191,7 @@ caps.handback.revision: 57
   
 -   Binden von Zellen an mehrere Spalten in einer Tabelle, anstatt nur an ein Feld.  Weitere Informationen hierzu finden Sie unter [Exemplarische Vorgehensweise: Komplexe Datenbindung in Projekten auf Dokumentebene](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).  
   
--   Verwenden eines <xref:System.Windows.Forms.BindingNavigator>\-Steuerelements, um einen Bildlauf durch die Datensätze durchzuführen.  Weitere Informationen finden Sie unter [Gewusst wie: Datennavigation mithilfe des DataNavigator-Steuerelements in Windows Forms](../Topic/How%20to:%20Navigate%20Data%20with%20the%20Windows%20Forms%20BindingNavigator%20Control.md).  
+-   Verwenden eines <xref:System.Windows.Forms.BindingNavigator>\-Steuerelements, um einen Bildlauf durch die Datensätze durchzuführen.  Weitere Informationen finden Sie unter [Gewusst wie: Datennavigation mithilfe des DataNavigator-Steuerelements in Windows Forms](http://msdn.microsoft.com/library/0e5d4f34-bc9b-47cf-9b8d-93acbb1f1dbb).  
   
 ## Siehe auch  
  [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md)   

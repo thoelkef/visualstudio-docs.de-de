@@ -206,7 +206,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
   
  "Die Anpassung konnte nicht geladen werden, weil die Anwendungsdomäne nicht erstellt werden konnte."  
   
- Visual Studio speichert die Assemblys vor dem Laden von Office\-Projektmappen mithilfe von Fusion, dem Assemblyladeprogramm von .NET Framework, zwischen.  Stellen Sie sicher, dass Visual Studio in den Fusion\-Cache schreiben kann, und versuchen Sie es erneut.  Weitere Informationen finden Sie unter [Erstellen von Schattenkopien von Assemblys](../Topic/Shadow%20Copying%20Assemblies.md).  
+ Visual Studio speichert die Assemblys vor dem Laden von Office\-Projektmappen mithilfe von Fusion, dem Assemblyladeprogramm von .NET Framework, zwischen.  Stellen Sie sicher, dass Visual Studio in den Fusion\-Cache schreiben kann, und versuchen Sie es erneut.  Weitere Informationen finden Sie unter [Erstellen von Schattenkopien von Assemblys](http://msdn.microsoft.com/library/de8b8759-fca7-4260-896b-5a4973157672).  
   
 ### Fehler beim Beenden des Debuggers in einem Projekt auf Dokumentebene nach der Verwendung von "Bearbeiten und Fortfahren"  
  Wenn Sie "Bearbeiten und Fortfahren" verwenden, um Änderungen am Code in einem Projekt auf Dokumentebene für Excel oder Word vorzunehmen, während sich das Projekt im Unterbrechungsmodus befindet, wird beim anschließenden Beenden des Debuggers möglicherweise ein Dialogfeld mit der folgenden Fehlermeldung angezeigt.  

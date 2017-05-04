@@ -30,7 +30,7 @@ caps.handback.revision: 21
   
 1.  Erstellen Sie ein Klassenbibliotheksprojekt mit der folgenden Konfiguration:  
   
-    -   Zielt auf .NET Framework, Version 3.5, ab.  Weitere Informationen zur Auswahl des Zielframeworks finden Sie unter [Gewusst wie: .NET Framework-Version als Ziel](../Topic/How%20to:%20Target%20a%20Version%20of%20the%20.NET%20Framework.md).  
+    -   Zielt auf .NET Framework, Version 3.5, ab.  Weitere Informationen zur Auswahl des Zielframeworks finden Sie unter [Gewusst wie: .NET Framework-Version als Ziel](~/ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
     -   Zielt auf die AnyCPU\- oder x64\-Plattform ab.  Standardmäßig ist die Zielplattform für Klassenbibliotheksprojekte AnyCPU.  Weitere Informationen zur Auswahl der Zielplattform finden Sie unter [NIB: How to: Optimize an Application for a Specific CPU Type](http://msdn.microsoft.com/de-de/294a75d2-4279-4b72-8298-2bea05be907a).  
   
@@ -53,7 +53,7 @@ caps.handback.revision: 21
   
     -   Optional kann ein Rückgabewert festgelegt werden.  
   
-    -   Der zweite Parameter und der Rückgabewert müssen einen Typ aufweisen, der von Windows Communication Foundation \(WCF\) serialisiert werden kann.  Weitere Informationen finden Sie unter [Vom Datenvertragsserialisierer unterstützte Typen](../Topic/Types%20Supported%20by%20the%20Data%20Contract%20Serializer.md) und [Verwenden der XmlSerializer-Klasse](../Topic/Using%20the%20XmlSerializer%20Class.md).  
+    -   Der zweite Parameter und der Rückgabewert müssen einen Typ aufweisen, der von Windows Communication Foundation \(WCF\) serialisiert werden kann.  Weitere Informationen finden Sie unter [Vom Datenvertragsserialisierer unterstützte Typen](http://msdn.microsoft.com/library/7381b200-437a-4506-9556-d77bf1bc3f34) und [Verwenden der XmlSerializer-Klasse](http://msdn.microsoft.com/library/c680602d-39d3-44f1-bf22-8e6654ad5069).  
   
     -   Die Methode kann über jede Sichtbarkeit \(**public**, **internal** oder **private**\) verfügen und kann statisch oder nicht statisch sein.  
   

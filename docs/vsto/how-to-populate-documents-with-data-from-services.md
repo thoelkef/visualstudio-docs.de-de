@@ -34,7 +34,7 @@ caps.handback.revision: 39
   
 ### So füllen Sie ein Projekt auf Dokumentebene mit Daten aus einem Webdienst auf  
   
-1.  Öffnen Sie das Fenster **Datenquellen**, und erstellen Sie für Ihr Projekt eine Dienstdatenquelle. Weitere Informationen finden Sie unter [Gewusst wie: Herstellen einer Verbindung mit Daten in einem Dienst](../Topic/How%20to:%20Connect%20to%20Data%20in%20a%20Service.md).  
+1.  Öffnen Sie das Fenster **Datenquellen**, und erstellen Sie für Ihr Projekt eine Dienstdatenquelle. Weitere Informationen finden Sie unter [Gewusst wie: Herstellen einer Verbindung mit Daten in einem Dienst](~/data-tools/how-to-connect-to-data-in-a-service.md).  
   
 2.  Ziehen Sie die gewünschte Tabelle oder das gewünschte Feld vom Fenster **Datenquellen** in Ihr Dokument.  
   

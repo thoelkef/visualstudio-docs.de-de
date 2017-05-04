@@ -28,12 +28,12 @@ caps.handback.revision: 40
   
 |Element|Beschreibung|Attribute|  
 |-------------|------------------|---------------|  
-|[&#60;assembly&#62; Element &#40;ClickOnce Application&#41;](../Topic/%3Cassembly%3E%20Element%20(ClickOnce%20Application).md)|Erforderlich. Ein Element der obersten Ebene.|`manifestVersion`|  
-|[&#60;assemblyIdentity&#62; Element &#40;ClickOnce Application&#41;](../Topic/%3CassemblyIdentity%3E%20Element%20(ClickOnce%20Application).md)|Erforderlich. Gibt die primäre Assembly der [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]\-Anwendung an.|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language`|  
-|[&#60;trustInfo&#62; Element &#40;ClickOnce Application&#41;](../Topic/%3CtrustInfo%3E%20Element%20(ClickOnce%20Application).md)|Gibt die Sicherheitsanforderungen der Anwendung an.|Keine|  
-|[&#60;entryPoint&#62; Element &#40;ClickOnce Application&#41;](../Topic/%3CentryPoint%3E%20Element%20(ClickOnce%20Application).md)|Erforderlich. Gibt den Einstiegspunkt des Anwendungscodes für die Ausführung an.|`name`<br /><br /> `dependencyName`<br /><br /> `customHostSpecified`|  
-|[&#60;dependency&#62; Element &#40;ClickOnce Application&#41;](../Topic/%3Cdependency%3E%20Element%20(ClickOnce%20Application).md)|Erforderlich. Gibt jede Abhängigkeit an, die für die Ausführung der Anwendung erforderlich ist. Gibt optional Assemblys an, die vorinstalliert werden müssen.|Keine|  
-|[&#60;file&#62; Element &#40;ClickOnce Application&#41;](../Topic/%3Cfile%3E%20Element%20(ClickOnce%20Application).md)|Erforderlich. Gibt jede Nicht\-Assemblydatei an, die von der Anwendung verwendet wird. Kann COM\-Isolationsdaten \(Component Object Model\) enthalten, die der Datei zugeordnet sind.|`name`<br /><br /> `size`|  
+|[&#60;assembly&#62; Element &#40;ClickOnce Application&#41;](~/deployment/assembly-element-clickonce-application.md)|Erforderlich. Ein Element der obersten Ebene.|`manifestVersion`|  
+|[&#60;assemblyIdentity&#62; Element &#40;ClickOnce Application&#41;](~/deployment/assemblyidentity-element-clickonce-application.md)|Erforderlich. Gibt die primäre Assembly der [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]\-Anwendung an.|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language`|  
+|[&#60;trustInfo&#62; Element &#40;ClickOnce Application&#41;](~/deployment/trustinfo-element-clickonce-application.md)|Gibt die Sicherheitsanforderungen der Anwendung an.|Keine|  
+|[&#60;entryPoint&#62; Element &#40;ClickOnce Application&#41;](~/deployment/entrypoint-element-clickonce-application.md)|Erforderlich. Gibt den Einstiegspunkt des Anwendungscodes für die Ausführung an.|`name`<br /><br /> `dependencyName`<br /><br /> `customHostSpecified`|  
+|[&#60;dependency&#62; Element &#40;ClickOnce Application&#41;](~/deployment/dependency-element-clickonce-application.md)|Erforderlich. Gibt jede Abhängigkeit an, die für die Ausführung der Anwendung erforderlich ist. Gibt optional Assemblys an, die vorinstalliert werden müssen.|Keine|  
+|[&#60;file&#62; Element &#40;ClickOnce Application&#41;](~/deployment/file-element-clickonce-application.md)|Erforderlich. Gibt jede Nicht\-Assemblydatei an, die von der Anwendung verwendet wird. Kann COM\-Isolationsdaten \(Component Object Model\) enthalten, die der Datei zugeordnet sind.|`name`<br /><br /> `size`|  
   
  Anwendungsmanifeste für Office\-Projektmappen verwenden das folgenden Element im `co.v1`\-Elemente.  
   
@@ -70,7 +70,7 @@ caps.handback.revision: 40
 |[&#60;vstoRuntime&#62;-Element &#40;Office-Entwicklung in Visual Studio&#41;](../vsto/vstoruntime-element-office-development-in-visual-studio.md)|Erforderlich. Beschreibt eine bestimmte Version der Visual Studio Tools for Office\-Laufzeit, die von der Office\-Projektmappe unterstützt wird.|`release`<br /><br /> `version`<br /><br /> `supportUrl`|  
   
 ## Hinweise  
- Anwendungs\- und Bereitstellungsmanifeste in Office\-Projektmappen können manuell bearbeitet werden. Anschließend müssen Sie die Anwendung und die Bereitstellungsmanifeste mit dem Tool zur Generierung und Bearbeitung von Manifesten \(„mage.exe“ und „mageui.exe“\) erneut signieren. Weitere Informationen finden Sie unter [How to: Re-sign Application and Deployment Manifests](../Topic/How%20to:%20Re-sign%20Application%20and%20Deployment%20Manifests.md).  
+ Anwendungs\- und Bereitstellungsmanifeste in Office\-Projektmappen können manuell bearbeitet werden. Anschließend müssen Sie die Anwendung und die Bereitstellungsmanifeste mit dem Tool zur Generierung und Bearbeitung von Manifesten \(„mage.exe“ und „mageui.exe“\) erneut signieren. Weitere Informationen finden Sie unter [How to: Re-sign Application and Deployment Manifests](~/deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## Dateiort  
  Ein Anwendungsmanifest ist für eine einzelne Version einer Projektmappe spezifisch. Aus diesem Grund müssen die Anwendungsmanifeste getrennt von Bereitstellungsmanifesten gespeichert werden.[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] platziert die versionsspezifischen Dateien in einem Unterverzeichnis, das gemäß der zugewiesenen Version im Unterverzeichnis **Application Files** im Ordner „Publish“ benannt wird.  

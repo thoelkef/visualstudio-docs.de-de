@@ -50,7 +50,7 @@ caps.handback.revision: 22
 ### assemblyIdentity  
  Erforderlich. Das `assemblyIdentity`\-Element im `vstav3` \-Namespace verweist auf ein vorhandenes `assemblyIdentity`\-Element im [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]\-Anwendungsmanifest.  
   
- Die Rolle von `assemblyIdentity` und seiner Attribute ist in [&#60;assemblyIdentity&#62; Element &#40;ClickOnce Application&#41;](../Topic/%3CassemblyIdentity%3E%20Element%20(ClickOnce%20Application).md) definiert.  
+ Die Rolle von `assemblyIdentity` und seiner Attribute ist in [&#60;assemblyIdentity&#62; Element &#40;ClickOnce Application&#41;](~/deployment/assemblyidentity-element-clickonce-application.md) definiert.  
   
 ## Beispiel für die Anpassung auf Dokumentebene  
   

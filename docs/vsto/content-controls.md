@@ -155,7 +155,7 @@ caps.handback.revision: 64
  Eine Übersicht über das Binden von Hoststeuerelementen in Office\-Lösungen an Daten finden Sie unter [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
 ### Verwenden des Windows Forms\-Datenbindungsmodells  
- Die meisten Inhaltssteuerelemente unterstützen das einfache Datenbindungsmodell, das Windows Forms verwendet.  Einfache Datenbindung bedeutet, dass ein Steuerelement an ein einzelnes Datenelement gebunden ist, z. B. an einen Wert in einer Spalte einer Datentabelle.  Weitere Informationen finden Sie unter [Datenbindung und Windows Forms](../Topic/Data%20Binding%20and%20Windows%20Forms.md).  
+ Die meisten Inhaltssteuerelemente unterstützen das einfache Datenbindungsmodell, das Windows Forms verwendet.  Einfache Datenbindung bedeutet, dass ein Steuerelement an ein einzelnes Datenelement gebunden ist, z. B. an einen Wert in einer Spalte einer Datentabelle.  Weitere Informationen finden Sie unter [Datenbindung und Windows Forms](http://msdn.microsoft.com/library/419aac5e-819b-4aad-88b0-73a2f8c0bd27).  
   
  In Projekten auf Dokumentebene können Sie Daten an Inhaltssteuerelemente binden, indem Sie das Fenster **Datenquellen** in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] verwenden.  Weitere Informationen zum Hinzufügen von datengebundenen Inhaltssteuerelementen an Dokumente finden Sie unter [Gewusst wie: Auffüllen von Dokumenten mit Daten aus einer Datenbank](../vsto/how-to-populate-documents-with-data-from-a-database.md) und [Gewusst wie: Auffüllen von Dokumenten mit Daten von Objekten](../vsto/how-to-populate-documents-with-data-from-objects.md).  
   

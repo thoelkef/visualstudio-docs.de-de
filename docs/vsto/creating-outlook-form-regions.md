@@ -135,7 +135,7 @@ caps.handback.revision: 41
   
  Wählen Sie ein Ereignis aus der Methodennamenliste oben im Code\-Editor aus, um Ereignisse in einem Visual Basic\-Projekt zu behandeln.  
   
- Um Ereignisse in einem C\#\-Projekt zu behandeln, abonnieren Sie Steuerelementereignisse in der Methode <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing>.  Weitere Informationen finden Sie unter [Gewusst wie: Abonnieren von Ereignissen und Kündigen von Ereignisabonnements &#40;C&#35;-Programmierhandbuch&#41;](../Topic/How%20to:%20Subscribe%20to%20and%20Unsubscribe%20from%20Events%20(C%23%20Programming%20Guide).md).  
+ Um Ereignisse in einem C\#\-Projekt zu behandeln, abonnieren Sie Steuerelementereignisse in der Methode <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing>.  Weitere Informationen finden Sie unter [Gewusst wie: Abonnieren von Ereignissen und Kündigen von Ereignisabonnements &#40;C&#35;-Programmierhandbuch&#41;](http://msdn.microsoft.com/library/6319f39f-282c-4173-8a62-6c4657cf51cd).  
   
  Sie können die Eigenschaften von Formularbereichen in der Methode `InitializeManifest` der Formularbereichsfactory\-Klasse ändern.  
   

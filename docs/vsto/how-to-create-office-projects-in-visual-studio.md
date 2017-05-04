@@ -44,7 +44,7 @@ caps.handback.revision: 95
      Das Dialogfeld **Neues Projekt** wird angezeigt.  
   
     > [!NOTE]  
-    >  Standardmäßig wird für Office\-Projekte [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] als Ziel festgelegt.  Weitere Informationen finden Sie in der [.NET Framework Client Profile](../Topic/.NET%20Framework%20Client%20Profile.md).  
+    >  Standardmäßig wird für Office\-Projekte [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] als Ziel festgelegt.  Weitere Informationen finden Sie in der [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).  
   
 2.  Erweitern Sie im Vorlagenbereich unter dem Knoten für die Sprache, die Sie verwenden möchten, die Option **Office\/SharePoint**.  
   
@@ -95,7 +95,7 @@ caps.handback.revision: 95
      Das Dialogfeld **Neues Projekt** wird angezeigt.  
   
     > [!NOTE]  
-    >  Standardmäßig wird für Office\-Projekte [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] als Ziel festgelegt.  Weitere Informationen finden Sie in der [.NET Framework Client Profile](../Topic/.NET%20Framework%20Client%20Profile.md).  
+    >  Standardmäßig wird für Office\-Projekte [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] als Ziel festgelegt.  Weitere Informationen finden Sie in der [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).  
   
 2.  Erweitern Sie im Vorlagenbereich unter dem Knoten für die Sprache, die Sie verwenden möchten, die Option **Office\/SharePoint**.  
   

@@ -38,7 +38,7 @@ caps.handback.revision: 38
   
 1.  Öffnen Sie in Visual Studio ein Projekt auf Dokumentebene für Excel. Dabei ist das Arbeitsblatt im Designer geöffnet.  
   
-2.  Öffnen Sie das **Datenquellenfenster**, und erstellen Sie für Ihr Projekt eine Datenquelle.  Weitere Informationen finden Sie unter [Gewusst wie: Herstellen einer Verbindung zu Daten in einer Datenbank](../Topic/How%20to:%20Connect%20to%20Data%20in%20a%20Database.md).  
+2.  Öffnen Sie das **Datenquellenfenster**, und erstellen Sie für Ihr Projekt eine Datenquelle.  Weitere Informationen finden Sie unter [Gewusst wie: Herstellen einer Verbindung zu Daten in einer Datenbank](~/data-tools/how-to-connect-to-data-in-a-database.md).  
   
 3.  Ziehen Sie das gewünschte Feld oder die gewünschte Tabelle vom **Datenquellenfenster** in das Arbeitsblatt.  
   
@@ -55,11 +55,11 @@ caps.handback.revision: 38
   
 -   Ein typisiertes Dataset, das die Datentabellen kapselt, zu denen Sie in der Datenbank eine Verbindung hergestellt haben.  Weitere Informationen finden Sie unter [Arbeiten mit Datasets in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).  
   
--   Eine <xref:System.Windows.Forms.BindingSource>, die das Steuerelement mit dem typisierten Dataset verbindet.  Weitere Informationen finden Sie unter [Übersicht über die BindingSource-Komponente](../Topic/BindingSource%20Component%20Overview.md).  
+-   Eine <xref:System.Windows.Forms.BindingSource>, die das Steuerelement mit dem typisierten Dataset verbindet.  Weitere Informationen finden Sie unter [Übersicht über die BindingSource-Komponente](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f).  
   
 -   Ein TableAdapter, der das typisierte Dataset mit der Datenbank verbindet.  Weitere Informationen finden Sie unter [Übersicht über TableAdapters](/visual-studio/data-tools/tableadapter-overview).  
   
--   Ein TableAdapterManager, der verwendet wird, um Tabellenadapter im Dataset zu koordinieren und so hierarchische Updates zu aktivieren.  Weitere Informationen finden Sie unter [Hierarchische Aktualisierung](../data-tools/hierarchical-update.md) und [Übersicht über TableAdapterManager](../Topic/TableAdapterManager%20Overview.md).  
+-   Ein TableAdapterManager, der verwendet wird, um Tabellenadapter im Dataset zu koordinieren und so hierarchische Updates zu aktivieren.  Weitere Informationen finden Sie unter [Hierarchische Aktualisierung](../data-tools/hierarchical-update.md) und [Übersicht über TableAdapterManager](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  
   
  Wenn Sie das Projekt ausführen, zeigt das Steuerelement den ersten Datensatz in der Datenquelle an.  Sie können die <xref:System.Windows.Forms.BindingSource> verwenden, um es Benutzern zu ermöglichen, einen Bildlauf durch die Datensätze durchzuführen.  
   

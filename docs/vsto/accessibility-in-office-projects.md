@@ -60,7 +60,7 @@ caps.handback.revision: 23
 ## Barrierefreiheit zur Laufzeit  
   
 ### Windows Forms\-Steuerelemente in Office\-Dokumenten  
- Windows Forms\-Steuerelemente machen Barrierefreiheitseigenschaften verfügbar, sodass Barrierefreiheit\-Hilfsmittel, z. B. die Bildschirmsprachausgabe, Informationen über das Steuerelement abrufen können.  Wenn sich die Steuerelemente in einem Office\-Dokument in einer Anpassung auf Dokumentebene befinden, können Sie diese Barrierefreiheitseigenschaften nutzen.  Weitere Informationen finden Sie unter [Informationen über Eingabehilfen für Steuerelemente in Windows Forms](../Topic/Providing%20Accessibility%20Information%20for%20Controls%20on%20a%20Windows%20Form.md).  
+ Windows Forms\-Steuerelemente machen Barrierefreiheitseigenschaften verfügbar, sodass Barrierefreiheit\-Hilfsmittel, z. B. die Bildschirmsprachausgabe, Informationen über das Steuerelement abrufen können.  Wenn sich die Steuerelemente in einem Office\-Dokument in einer Anpassung auf Dokumentebene befinden, können Sie diese Barrierefreiheitseigenschaften nutzen.  Weitere Informationen finden Sie unter [Informationen über Eingabehilfen für Steuerelemente in Windows Forms](http://msdn.microsoft.com/library/887dee6f-5059-4d57-957d-7c6fcd4acb10).  
   
  Allerdings gibt es zur Laufzeit einige Einschränkungen der Barrierefreiheit, wenn Windows Forms\-Steuerelemente in einer Excel\-Arbeitsmappe bzw. einem Word\-Dokument gehostet werden:  
   

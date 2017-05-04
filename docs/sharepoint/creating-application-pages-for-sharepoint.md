@@ -77,8 +77,8 @@ caps.handback.revision: 35
   
 ## Siehe auch  
  [SharePoint Foundations\-Entwicklung detailliert](http://go.microsoft.com/fwlink/?LinkID=182103)   
- [Übersicht über ASP.NET\-Webseiten](../Topic/ASP.NET%20Web%20Forms%20Pages%20Overview.md)   
- [Übersicht über die Syntax von ASP.NET\-Webseiten](../Topic/ASP.NET%20Web%20Forms%20Page%20Syntax%20Overview.md)   
+ [Übersicht über ASP.NET\-Webseiten](http://msdn.microsoft.com/library/52fa0455-41ea-4315-8208-2861d1527da2)   
+ [Übersicht über die Syntax von ASP.NET\-Webseiten](http://msdn.microsoft.com/library/09074b20-ece9-46fa-bc8f-ab2595ed2c02)   
  [Programmieren von ASP.NET\-Webseiten](http://msdn.microsoft.com/de-de/5626c661-8057-4de8-b658-c2e35ed4b4c9)  
   
   

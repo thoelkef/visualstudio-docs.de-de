@@ -71,7 +71,7 @@ caps.handback.revision: 22
   
  Um den Zugriff auf ein Steuerelement von außerhalb der Formularbereich\-Codedatei zu ermöglichen, erstellen Sie in der Formularbereich\-Codedatei eine Eigenschaft, um dieses Steuerelement zurückzugeben.  
   
- Weitere Informationen zum Erstellen von Eigenschaften in C\# finden Sie unter [Gewusst wie: Deklarieren und Verwenden von Lese-&#47;Schreibeigenschaften &#40;C&#35;-Programmierhandbuch&#41;](../Topic/How%20to:%20Declare%20and%20Use%20Read%20Write%20Properties%20(C%23%20Programming%20Guide).md).  
+ Weitere Informationen zum Erstellen von Eigenschaften in C\# finden Sie unter [Gewusst wie: Deklarieren und Verwenden von Lese-&#47;Schreibeigenschaften &#40;C&#35;-Programmierhandbuch&#41;](http://msdn.microsoft.com/library/a4962fef-af7e-4c4b-a929-4ae4d646ab8a).  
   
  Weitere Informationen zum Erstellen von Eigenschaften in Visual Basic finden Sie unter [NICHT IM BUILD: Gewusst wie: Hinzufügen von Feldern und Eigenschaften zu einer Klasse](http://msdn.microsoft.com/de-de/ae53f61b-3abc-413e-8931-703c5f5e8fc2).  
   

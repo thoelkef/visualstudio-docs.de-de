@@ -53,7 +53,7 @@ caps.handback.revision: 51
   
 -   Im Fenster **Datenquellen**.  
   
-     Sie können das <xref:Microsoft.Office.Tools.Word.Bookmark>\-Steuerelement vom Fenster **Datenquellen** auf Ihr Dokument ziehen. Dies ist hilfreich, wenn Sie das Steuerelement gleichzeitig an Daten binden möchten. Sie können das Hoststeuerelement auf die gleiche Weise hinzufügen wie das Windows Forms\-Steuerelement aus dem Fenster **Datenquellen**. Weitere Informationen finden Sie unter [Datenbindung und Windows Forms](../Topic/Data%20Binding%20and%20Windows%20Forms.md).  
+     Sie können das <xref:Microsoft.Office.Tools.Word.Bookmark>\-Steuerelement vom Fenster **Datenquellen** auf Ihr Dokument ziehen. Dies ist hilfreich, wenn Sie das Steuerelement gleichzeitig an Daten binden möchten. Sie können das Hoststeuerelement auf die gleiche Weise hinzufügen wie das Windows Forms\-Steuerelement aus dem Fenster **Datenquellen**. Weitere Informationen finden Sie unter [Datenbindung und Windows Forms](http://msdn.microsoft.com/library/419aac5e-819b-4aad-88b0-73a2f8c0bd27).  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   

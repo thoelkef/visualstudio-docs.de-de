@@ -25,7 +25,7 @@ manager: "ghogen"
 caps.handback.revision: 19
 ---
 # Erstellen von wiederverwendbaren Steuerelementen f&#252;r Webparts oder Anwendungsseiten
-  In Visual Studio können Sie benutzerdefinierte, wiederverwendbare Steuerelemente erstellen, die von Anwendungsseiten und Webparts genutzt werden können, die in SharePoint ausgeführt werden.  Diese Steuerelemente werden Benutzersteuerelemente genannt.  Weitere Informationen über Benutzersteuerelemente finden Sie unter [ASP.NET User Controls](../Topic/ASP.NET%20User%20Controls.md).  
+  In Visual Studio können Sie benutzerdefinierte, wiederverwendbare Steuerelemente erstellen, die von Anwendungsseiten und Webparts genutzt werden können, die in SharePoint ausgeführt werden.  Diese Steuerelemente werden Benutzersteuerelemente genannt.  Weitere Informationen über Benutzersteuerelemente finden Sie unter [ASP.NET User Controls](http://msdn.microsoft.com/library/5e601b3d-bb16-4dbe-9e35-7e92a34565ca).  
   
 ## Erstellen eines Benutzersteuerelements  
  Um ein Benutzersteuerelement zu erstellen, fügen Sie einem **leeren SharePoint\-Projekt** ein **Benutzersteuerelement** hinzu.  Weitere Informationen finden Sie unter [Gewusst wie: Erstellen eines Benutzersteuerelements für eine SharePoint-Anwendungsseite oder ein SharePoint-Webpart](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md).  
@@ -44,7 +44,7 @@ caps.handback.revision: 19
 ## Verwenden des Benutzersteuerelements  
  Benutzersteuerelemente werden erst in SharePoint angezeigt, wenn Sie sie in eine Anwendungsseite oder ein Webpart einschließen.  
   
- Um ein Benutzersteuerelement in eine Anwendungsseite einzuschließen, fügen Sie der Anwendungsseite eine [@ Register](http://msdn.microsoft.com/de-de/66f34922-be41-4e36-9dc8-1774d85311d1)\-Direktive hinzu, und deklarieren Sie dann das Benutzersteuerelement innerhalb eines oder mehrerer Inhaltsplatzhalter auf der Seite.  Ein Beispiel zum Ausführen dieser Aufgabe in einer Standard\-ASP.NET\-Webseite finden Sie unter [How to: Include a User Control in an ASP.NET Web Page](../Topic/How%20to:%20Include%20a%20User%20Control%20in%20an%20ASP.NET%20Web%20Page.md).  
+ Um ein Benutzersteuerelement in eine Anwendungsseite einzuschließen, fügen Sie der Anwendungsseite eine [@ Register](http://msdn.microsoft.com/de-de/66f34922-be41-4e36-9dc8-1774d85311d1)\-Direktive hinzu, und deklarieren Sie dann das Benutzersteuerelement innerhalb eines oder mehrerer Inhaltsplatzhalter auf der Seite.  Ein Beispiel zum Ausführen dieser Aufgabe in einer Standard\-ASP.NET\-Webseite finden Sie unter [How to: Include a User Control in an ASP.NET Web Page](http://msdn.microsoft.com/library/7c3bfd74-846c-4b88-b1ef-45d75860af92).  
   
  Um ein Benutzersteuerelement in ein Webpart einzuschließen, fügen Sie der <xref:System.Web.UI.WebControls.WebParts.Part.Controls%2A>\-Auflistung des Webparts das Benutzersteuerelement in der Webpartcodedatei hinzu.  Im folgenden Beispiel wird der <xref:System.Web.UI.WebControls.WebParts.Part.Controls%2A>\-Auflistung eines Webparts ein Benutzersteuerelement hinzugefügt.  
   

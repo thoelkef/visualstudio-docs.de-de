@@ -31,7 +31,7 @@ caps.handback.revision: 55
  Die Stapelreihenfolge der Steuerelemente hängt davon ab, ob der Aktionsbereich vertikal oder horizontal angedockt ist.  
   
 > [!NOTE]  
->  Sie können die Steuerelemente so einstellen, dass ihre Größe bei einer Änderung der Größe des Aktionsbereichs durch den Benutzer zur Laufzeit mit geändert wird.  Sie können die <xref:System.Windows.Forms.Control.Anchor%2A>\-Eigenschaft eines Windows Forms\-Steuerelements zum Verankern von Steuerelementen im Aktionsbereich verwenden.  Weitere Informationen finden Sie unter [Gewusst wie: Verankern von Steuerelementen in Windows Forms](../Topic/How%20to:%20Anchor%20Controls%20on%20Windows%20Forms.md).  
+>  Sie können die Steuerelemente so einstellen, dass ihre Größe bei einer Änderung der Größe des Aktionsbereichs durch den Benutzer zur Laufzeit mit geändert wird.  Sie können die <xref:System.Windows.Forms.Control.Anchor%2A>\-Eigenschaft eines Windows Forms\-Steuerelements zum Verankern von Steuerelementen im Aktionsbereich verwenden.  Weitere Informationen finden Sie unter [Gewusst wie: Verankern von Steuerelementen in Windows Forms](http://msdn.microsoft.com/library/59ea914f-fbd3-427a-80fe-decd02f7ae6d).  
   
 > [!NOTE]  
 >  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten.  Die von Ihnen verwendete Visual Studio\-Edition und die Einstellungen legen diese Elemente fest.  Weitere Informationen finden Sie unter [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/de-de/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  

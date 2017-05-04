@@ -41,12 +41,12 @@ caps.handback.revision: 33
   
 5.  Klicken Sie auf **Hinzufügen**.  
   
-6.  Erstellen Sie die Konfigurationsdatei gemäß dem Schema für Anwendungskonfigurationsdateien.  Weitere Informationen finden Sie unter [Konfigurationsdateischema für .NET Framework](../Topic/Configuration%20File%20Schema%20for%20the%20.NET%20Framework.md).  
+6.  Erstellen Sie die Konfigurationsdatei gemäß dem Schema für Anwendungskonfigurationsdateien.  Weitere Informationen finden Sie unter [Konfigurationsdateischema für .NET Framework](http://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38).  
   
  Bei der Verwendung von Konfigurationsdateien in Office\-Projekten sind keine besonderen Überlegungen erforderlich.  
   
 ## Siehe auch  
- [Konfigurationsdateischema für .NET Framework](../Topic/Configuration%20File%20Schema%20for%20the%20.NET%20Framework.md)   
+ [Konfigurationsdateischema für .NET Framework](http://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)   
  [Entwerfen und Erstellen von Office-Lösungen](../vsto/designing-and-creating-office-solutions.md)   
  [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md)  
   

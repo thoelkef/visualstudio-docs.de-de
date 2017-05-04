@@ -44,6 +44,6 @@ caps.handback.revision: 47
  [Gewusst wie: Programmgesteuertes Verwenden integrierter Dialogfelder in Word](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)   
  [Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md)   
  [Späte Bindung in Office-Lösungen](../vsto/late-binding-in-office-solutions.md)   
- [Reflektion &#40;C&#35; und Visual Basic&#41;](../Topic/Reflection%20(C%23%20and%20Visual%20Basic).md)  
+ [Reflektion &#40;C&#35; und Visual Basic&#41;](http://msdn.microsoft.com/library/5d1d1bcf-08de-4d0b-97a8-912d17c00f26)  
   
   

@@ -49,7 +49,7 @@ caps.handback.revision: 43
   
  Kenntnisse der folgenden Konzepte sind hilfreich, wenn auch für die Durchführung der exemplarischen Vorgehensweise nicht erforderlich:  
   
--   Assistenten für Projekt\- und Elementvorlagen in Visual Studio.  Weitere Informationen finden Sie unter [Gewusst wie: Verwenden von Assistenten mit Projektvorlagen](../Topic/How%20to:%20Use%20Wizards%20with%20Project%20Templates.md) und der <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>\-Schnittstelle.  
+-   Assistenten für Projekt\- und Elementvorlagen in Visual Studio.  Weitere Informationen finden Sie unter [Gewusst wie: Verwenden von Assistenten mit Projektvorlagen](~/extensibility/how-to-use-wizards-with-project-templates.md) und der <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>\-Schnittstelle.  
   
 -   Benutzerdefinierte Aktionen in SharePoint.  Weitere Informationen finden Sie im Thema zu [benutzerdefinierten Aktionen](http://go.microsoft.com/fwlink/?LinkId=177800) \(möglicherweise in englischer Sprache\).  
   
@@ -84,7 +84,7 @@ caps.handback.revision: 43
   
 2.  In **Projekt\-Designer** stellen Sie sicher, dass das Zielframework in .NET Framework 4.5 festgelegt ist.  
   
-     Für Visual C\#projekte können Sie diesen Wert auf der Registerkarte **Anwendung** festlegen.  In Visual Basic\-Projekten können Sie diesen Wert auf der Registerkarte **Kompilieren** festlegen.  Weitere Informationen finden Sie unter [Gewusst wie: .NET Framework-Version als Ziel](../Topic/How%20to:%20Target%20a%20Version%20of%20the%20.NET%20Framework.md).  
+     Für Visual C\#projekte können Sie diesen Wert auf der Registerkarte **Anwendung** festlegen.  In Visual Basic\-Projekten können Sie diesen Wert auf der Registerkarte **Kompilieren** festlegen.  Weitere Informationen finden Sie unter [Gewusst wie: .NET Framework-Version als Ziel](~/ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
 3.  Im **ItemTemplateWizard** Projekt fügen Sie ein **Fenster \(WPF\)**\-Element zum Projekt hinzu, und benennen Sie dann das Element **WizardWindow**.  
   
@@ -354,7 +354,7 @@ caps.handback.revision: 43
  [Defining Custom SharePoint Project Item Types](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [Creating Item Templates and Project Templates for SharePoint Project Items](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Gewusst wie: Verwenden von Assistenten mit Projektvorlagen](../Topic/How%20to:%20Use%20Wizards%20with%20Project%20Templates.md)   
+ [Gewusst wie: Verwenden von Assistenten mit Projektvorlagen](~/extensibility/how-to-use-wizards-with-project-templates.md)   
  [Standardspeicherorte und \-IDs für benutzerdefinierte Aktionen](http://go.microsoft.com/fwlink/?LinkId=181964)  
   
   

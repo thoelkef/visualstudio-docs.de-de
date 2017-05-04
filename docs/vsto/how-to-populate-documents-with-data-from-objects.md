@@ -39,7 +39,7 @@ caps.handback.revision: 39
   
 #### So fügen Sie ein Datenobjekt hinzu  
   
--   Öffnen Sie das Fenster **Datenquellen**, und erstellen Sie eine Datenquelle auf Grundlage eines Objekts. Weitere Informationen finden Sie unter [Gewusst wie: Herstellen einer Verbindung mit Daten in Objekten](../Topic/How%20to:%20Connect%20to%20Data%20in%20Objects.md).  
+-   Öffnen Sie das Fenster **Datenquellen**, und erstellen Sie eine Datenquelle auf Grundlage eines Objekts. Weitere Informationen finden Sie unter [Gewusst wie: Herstellen einer Verbindung mit Daten in Objekten](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b).  
   
 ## Verbinden des Datenobjekts mit der BindingSource\-Komponente  
  In Projekten auf Dokumentebene fügen Sie Ihrem Dokument Steuerelemente hinzu und binden diese zur Entwurfszeit an Daten.  
@@ -75,6 +75,6 @@ caps.handback.revision: 39
  [Gewusst wie: Auffüllen von Dokumenten mit Daten aus einer Datenbank](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
  [Gewusst wie: Aktualisieren einer Datenquelle mit Daten eines Hoststeuerelements](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
  [Herstellen einer Verbindung mit Daten in Windows Forms-Anwendungen](/visual-studio/data-tools/connecting-to-data-in-windows-forms-applications)   
- [Übersicht über die BindingSource-Komponente](../Topic/BindingSource%20Component%20Overview.md)  
+ [Übersicht über die BindingSource-Komponente](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)  
   
   

@@ -77,9 +77,9 @@ caps.handback.revision: 13
   
     ```  
   
-     Informationen zum Erstellen eines Postbuildereignisses in einem C\#\-Projekt finden Sie unter [Gewusst wie: Angeben von Buildereignissen &#40;C&#35;&#41;](../Topic/How%20to:%20Specify%20Build%20Events%20(C%23).md).  
+     Informationen zum Erstellen eines Postbuildereignisses in einem C\#\-Projekt finden Sie unter [Gewusst wie: Angeben von Buildereignissen &#40;C&#35;&#41;](~/ide/how-to-specify-build-events-csharp.md).  
   
-     Weitere Informationen zum Erstellen eines Postbuildereignisses in einem Visual Basic\-Projekt finden Sie unter [Gewusst wie: Angeben von Buildereignissen &#40;C&#35;&#41;](../Topic/How%20to:%20Specify%20Build%20Events%20(C%23).md).  
+     Weitere Informationen zum Erstellen eines Postbuildereignisses in einem Visual Basic\-Projekt finden Sie unter [Gewusst wie: Angeben von Buildereignissen &#40;C&#35;&#41;](~/ide/how-to-specify-build-events-csharp.md).  
   
 ##  <a name="Publish"></a> Office\-Projektmappen mit Windows Installer veröffentlichen  
  Wenn Sie die Projektmappe mit Windows Installer veröffentlichen, umgeht Visual Studio 2010\-Tools für Office\-Laufzeit beim Laden des VSTO\-Add\-Ins die folgenden Schritte.  

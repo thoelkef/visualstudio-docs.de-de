@@ -34,7 +34,7 @@ caps.handback.revision: 69
   
  Hoststeuerelemente erweitern Objekte in den Word\- und Excel\-Objektmodellen, beispielsweise Inhaltssteuerelemente in Word und benannte Bereiche in Excel. Weitere Informationen finden Sie unter [Übersicht über Hostelemente und Hoststeuerelemente](../vsto/host-items-and-host-controls-overview.md).  
   
- Sowohl in Windows Forms\- als auch in Hoststeuerelementen wird das Windows Forms\-Datenbindungsmodell verwendet, das sowohl *einfache Datenbindung* als auch *komplexe Datenbindung* an Datenquellen wie Datasets und Datentabellen unterstützt. Umfassende Informationen über das Datenbindungsmodell in Windows Forms finden Sie unter [Datenbindung und Windows Forms](../Topic/Data%20Binding%20and%20Windows%20Forms.md).  
+ Sowohl in Windows Forms\- als auch in Hoststeuerelementen wird das Windows Forms\-Datenbindungsmodell verwendet, das sowohl *einfache Datenbindung* als auch *komplexe Datenbindung* an Datenquellen wie Datasets und Datentabellen unterstützt. Umfassende Informationen über das Datenbindungsmodell in Windows Forms finden Sie unter [Datenbindung und Windows Forms](http://msdn.microsoft.com/library/419aac5e-819b-4aad-88b0-73a2f8c0bd27).  
   
  ![Link zu Video](../vsto/media/playvideo.png "Link zu Video") Eine entsprechende Videodemo finden Sie unter [How Do I: Consume Database Data in Excel?](http://go.microsoft.com/fwlink/?LinkID=130287).  
   
@@ -53,7 +53,7 @@ caps.handback.revision: 69
 ## Komplexe Datenbindung  
  Eine komplexe Datenbindung besteht dann, wenn eine Steuerelementeigenschaft an mindestens zwei Datenelemente \(z. B. mehrere Spalten einer Datentabelle\) gebunden ist. Das <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelement für Excel ist das einzige Hoststeuerelement, das komplexe Datenbindung unterstützt. Zudem unterstützen viele Windows Forms\-Steuerelemente komplexe Datenbindung, etwa das <xref:System.Windows.Forms.DataGridView>\-Steuerelement.  
   
- Um eine komplexe Datenbindung auszuführen, legen Sie die DataSource\-Eigenschaft des Steuerelements auf ein Datenquellenobjekt fest, das von komplexer Datenbindung unterstützt wird. Beispielsweise kann die <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A>\-Eigenschaft des <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelements an mehrere Spalten einer Datentabelle gebunden werden. Alle Daten in der Datentabelle werden im <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelement angezeigt, und wenn sich die Daten in der Datentabelle ändern, ändert sich auch aus <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelement.  Eine Liste der Datenquellen, die Sie für komplexe Datenbindung verwenden können, finden Sie unter [Von Windows Forms unterstützte Datenquellen](../Topic/Data%20Sources%20Supported%20by%20Windows%20Forms.md).  
+ Um eine komplexe Datenbindung auszuführen, legen Sie die DataSource\-Eigenschaft des Steuerelements auf ein Datenquellenobjekt fest, das von komplexer Datenbindung unterstützt wird. Beispielsweise kann die <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A>\-Eigenschaft des <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelements an mehrere Spalten einer Datentabelle gebunden werden. Alle Daten in der Datentabelle werden im <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelement angezeigt, und wenn sich die Daten in der Datentabelle ändern, ändert sich auch aus <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelement.  Eine Liste der Datenquellen, die Sie für komplexe Datenbindung verwenden können, finden Sie unter [Von Windows Forms unterstützte Datenquellen](http://msdn.microsoft.com/library/3d2c43f6-462b-4d35-9c86-13e9afe012e1).  
   
  Im folgenden Codebeispiel wird ein <xref:System.Data.DataSet> mit zwei <xref:System.Data.DataTable>\-Objekten erstellt, und eine der Tabellen wird mit Daten aufgefüllt. Im Code wird dann das <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelement an die Tabelle gebunden, die Daten enthält. Dieses Beispiel gilt für ein Excel\-Projekt auf Dokumentebene.  
   
@@ -63,7 +63,7 @@ caps.handback.revision: 69
  Exemplarische Vorgehensweisen, in denen komplexe Datenbindung veranschaulicht wird, finden Sie unter [Exemplarische Vorgehensweise: Komplexe Datenbindung in Projekten auf Dokumentebene](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md) für ein Projekt auf Dokumentebene sowie unter [Exemplarische Vorgehensweise: Komplexe Datenbindung in einem VSTO-Add-In-Projekt](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md) für ein VSTO\-Add\-In\-Projekt.  
   
 ## Anzeigen von Daten in Dokumenten und Arbeitsmappen  
- In Projekten auf Dokumentebene können Sie mithilfe des Fensters **Datenquellen** Dokumenten oder Arbeitsmappen datengebundene Steuerelemente auf die gleiche einfache Weise wie für Windows Forms hinzufügen. Weitere Informationen über die Verwendung des Fensters **Datenquellen** finden Sie unter [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../Topic/Binding%20Windows%20Forms%20controls%20to%20data%20in%20Visual%20Studio.md) und [Datenquellenfenster](../Topic/Data%20Sources%20Window.md).  
+ In Projekten auf Dokumentebene können Sie mithilfe des Fensters **Datenquellen** Dokumenten oder Arbeitsmappen datengebundene Steuerelemente auf die gleiche einfache Weise wie für Windows Forms hinzufügen. Weitere Informationen über die Verwendung des Fensters **Datenquellen** finden Sie unter [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../Topic/Binding%20Windows%20Forms%20controls%20to%20data%20in%20Visual%20Studio.md) und [Datenquellenfenster](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).  
   
 ### Ziehen von Steuerelementen aus dem Fenster „Datenquellen“  
  Auf einem Dokument wird ein Steuerelement erstellt, wenn Sie aus dem Fenster **Datenquellen** ein Objekt auf das Dokument ziehen. Der Typ des erstellten Steuerelements ist davon abhängig, ob Sie an eine einzelne Datenspalte oder an mehrere Datenspalten binden.  
@@ -103,8 +103,8 @@ caps.handback.revision: 69
   
 ## Siehe auch  
  [How Do I: Consume Database Data in Excel?](http://go.microsoft.com/fwlink/?LinkID=130287)   
- [Datenbindung und Windows Forms](../Topic/Data%20Binding%20and%20Windows%20Forms.md)   
- [Gewusst wie: Erstellen eines einfach gebundenen Steuerelements in einem Windows Form](../Topic/How%20to:%20Create%20a%20Simple-Bound%20Control%20on%20a%20Windows%20Form.md)   
+ [Datenbindung und Windows Forms](http://msdn.microsoft.com/library/419aac5e-819b-4aad-88b0-73a2f8c0bd27)   
+ [Gewusst wie: Erstellen eines einfach gebundenen Steuerelements in einem Windows Form](http://msdn.microsoft.com/library/3bcaded8-0f1a-4cc0-8830-f59be253bf4e)   
  [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../Topic/Binding%20Windows%20Forms%20controls%20to%20data%20in%20Visual%20Studio.md)   
  [Speichern von Daten in Datasets](../Topic/Saving%20data%20back%20to%20the%20database.md)   
  [Gewusst wie: Aktualisieren von Daten mit einem TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)   

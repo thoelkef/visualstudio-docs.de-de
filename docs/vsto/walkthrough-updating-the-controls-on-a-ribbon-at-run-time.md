@@ -291,7 +291,7 @@ caps.handback.revision: 50
 ## Siehe auch  
  [Zugreifen auf die Multifunktionsleiste zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Übersicht über die Multifunktionsleiste](../vsto/ribbon-overview.md)   
- [Language\-Integrated Query \(LINQ\)](../Topic/LINQ%20(Language-Integrated%20Query).md)   
+ [Language\-Integrated Query \(LINQ\)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)   
  [Gewusst wie: Erste Schritte beim Anpassen der Multifunktionsleiste](../vsto/how-to-get-started-customizing-the-ribbon.md)   
  [Multifunktionsleisten-Designer](../vsto/ribbon-designer.md)   
  [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit dem Multifunktionsleisten-Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   

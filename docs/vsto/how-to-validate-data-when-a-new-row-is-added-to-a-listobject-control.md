@@ -32,7 +32,7 @@ caps.handback.revision: 42
  Sobald einem <xref:Microsoft.Office.Tools.Excel.ListObject>, das an Daten gebunden ist, eine Zeile hinzugefügt wird, wird das <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow>\-Ereignis ausgelöst. Sie können dieses Ereignis behandeln, um Ihre Datenüberprüfung durchzuführen. Wenn die Anwendung z. B. erfordert, dass der Datenquelle nur Mitarbeiter zwischen 18 und 65 Jahren hinzugefügt werden, können Sie vor dem Hinzufügen der Zeile überprüfen, ob das eingegebene Alter innerhalb dieses Bereichs liegt.  
   
 > [!NOTE]  
->  Zusätzlich zum Client sollte die Benutzereingabe auch immer auf dem Server überprüft werden. Weitere Informationen finden Sie unter [Sichere Clientanwendungen](../Topic/Secure%20Client%20Applications.md).  
+>  Zusätzlich zum Client sollte die Benutzereingabe auch immer auf dem Server überprüft werden. Weitere Informationen finden Sie unter [Sichere Clientanwendungen](http://msdn.microsoft.com/library/6239592e-fa7d-4dea-9f00-d296d0048b01).  
   
 #### So überprüfen Sie Daten, wenn dem datengebundenen ListObject\-Steuerelement eine neue Zeile hinzugefügt wird  
   

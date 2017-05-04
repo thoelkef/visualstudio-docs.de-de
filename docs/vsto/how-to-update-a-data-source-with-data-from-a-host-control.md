@@ -98,7 +98,7 @@ caps.handback.revision: 52
   
 1.  Rufen Sie die <xref:System.Windows.Forms.BindingSource.EndEdit%2A>\-Methode der <xref:System.Windows.Forms.BindingSource>\-Instanz für das Steuerelement auf.  
   
-     Die <xref:System.Windows.Forms.BindingSource>\-Instanz wird automatisch generiert, wenn Sie einem Dokument oder einer Arbeitsmappe zur Entwurfszeit ein datengebundenes Steuerelement hinzufügen. Die <xref:System.Windows.Forms.BindingSource>\-Instanz verbindet das Steuerelement mit dem typisierten Dataset im Projekt. Weitere Informationen finden Sie unter [Übersicht über die BindingSource-Komponente](../Topic/BindingSource%20Component%20Overview.md).  
+     Die <xref:System.Windows.Forms.BindingSource>\-Instanz wird automatisch generiert, wenn Sie einem Dokument oder einer Arbeitsmappe zur Entwurfszeit ein datengebundenes Steuerelement hinzufügen. Die <xref:System.Windows.Forms.BindingSource>\-Instanz verbindet das Steuerelement mit dem typisierten Dataset im Projekt. Weitere Informationen finden Sie unter [Übersicht über die BindingSource-Komponente](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f).  
   
      Für das folgende Codebeispiel wird vorausgesetzt, dass das Projekt eine <xref:System.Windows.Forms.BindingSource>\-Instanz namens `customersBindingSource` enthält.  
   

@@ -95,11 +95,11 @@ caps.handback.revision: 14
   
  In einem VSPackage können Sie mit einer der folgenden Methoden ein <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>\-Objekt anfordern:  
   
--   Die <xref:System.IServiceProvider.GetService%2A>\-Methode eines verwalteten VSPackages, das sich von der <xref:Microsoft.VisualStudio.Shell.Package>\-Klasse ableitet.  Weitere Informationen finden Sie unter [Gewusst wie: Abrufen eines Diensts](../Topic/How%20to:%20Get%20a%20Service.md).  
+-   Die <xref:System.IServiceProvider.GetService%2A>\-Methode eines verwalteten VSPackages, das sich von der <xref:Microsoft.VisualStudio.Shell.Package>\-Klasse ableitet.  Weitere Informationen finden Sie unter [Gewusst wie: Abrufen eines Diensts](~/extensibility/how-to-get-a-service.md).  
   
--   Die statische <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>\-Methode.  Weitere Informationen finden Sie unter [Gewusst wie: Verwenden von GetGlobalService](../Topic/How%20to:%20Use%20GetGlobalService.md).  
+-   Die statische <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>\-Methode.  Weitere Informationen finden Sie unter [Gewusst wie: Verwenden von GetGlobalService](~/misc/how-to-use-getglobalservice.md).  
   
- In einer Visual Studio\-Erweiterung mit Zugriff auf ein <xref:EnvDTE80.DTE2>\-Objekt können Sie ein <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>\-Objekt anfordern, indem Sie die <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A>\-Methode eines <xref:Microsoft.VisualStudio.Shell.ServiceProvider>\-Objekts verwenden.  Weitere Informationen finden Sie unter [Gewusst wie: Abrufen eines Diensts vom DTE-Objekt](../Topic/How%20to:%20Get%20a%20Service%20from%20the%20DTE%20Object.md).  
+ In einer Visual Studio\-Erweiterung mit Zugriff auf ein <xref:EnvDTE80.DTE2>\-Objekt können Sie ein <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>\-Objekt anfordern, indem Sie die <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A>\-Methode eines <xref:Microsoft.VisualStudio.Shell.ServiceProvider>\-Objekts verwenden.  Weitere Informationen finden Sie unter [Gewusst wie: Abrufen eines Diensts vom DTE-Objekt](~/misc/how-to-get-a-service-from-the-dte-object.md).  
   
 ### Beispiel  
  Im folgenden Codebeispiel wird veranschaulicht, wie der Projektdienst in einem Visual Studio\-Add\-In abgerufen wird.  Wenn Sie diesen Code verwenden möchten, führen Sie ihn von der `Connect`\-Klasse in einem Add\-In\-Projekt aus.  Das `_applicationObject`\-Objekt wird automatisch in Add\-In\-Projekte generiert. Dieses Objekt ist eine Instanz der <xref:EnvDTE80.DTE2>\-Schnittstelle.  
@@ -109,15 +109,15 @@ caps.handback.revision: 14
   
  Dieses Beispiel setzt Folgendes voraus:  
   
--   Ein Visual Studio\-Add\-In\-Projekt.  Weitere Informationen finden Sie unter [Gewusst wie: Erstellen von Add-Ins](../Topic/How%20to:%20Create%20an%20Add-In.md).  
+-   Ein Visual Studio\-Add\-In\-Projekt.  Weitere Informationen finden Sie unter [Gewusst wie: Erstellen von Add-Ins](http://msdn.microsoft.com/library/50be56d2-e3a5-4cd2-8569-2a0666b268ce).  
   
 -   Verweise auf die Assemblys Microsoft.VisualStudio.OLE.Interop, Microsoft.VisualStudio.Shell und Microsoft.VisualStudio.SharePoint.  
   
 ## Siehe auch  
  [Using the SharePoint Project Service](../sharepoint/using-the-sharepoint-project-service.md)   
- [Gewusst wie: Erstellen von Add-Ins](../Topic/How%20to:%20Create%20an%20Add-In.md)   
- [Gewusst wie: Abrufen eines Diensts](../Topic/How%20to:%20Get%20a%20Service.md)   
- [Gewusst wie: Abrufen eines Diensts vom DTE-Objekt](../Topic/How%20to:%20Get%20a%20Service%20from%20the%20DTE%20Object.md)   
- [Gewusst wie: Verwenden von Assistenten mit Projektvorlagen](../Topic/How%20to:%20Use%20Wizards%20with%20Project%20Templates.md)  
+ [Gewusst wie: Erstellen von Add-Ins](http://msdn.microsoft.com/library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)   
+ [Gewusst wie: Abrufen eines Diensts](~/extensibility/how-to-get-a-service.md)   
+ [Gewusst wie: Abrufen eines Diensts vom DTE-Objekt](~/misc/how-to-get-a-service-from-the-dte-object.md)   
+ [Gewusst wie: Verwenden von Assistenten mit Projektvorlagen](~/extensibility/how-to-use-wizards-with-project-templates.md)  
   
   

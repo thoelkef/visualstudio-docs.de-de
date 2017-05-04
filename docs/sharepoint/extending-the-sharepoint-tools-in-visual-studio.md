@@ -48,7 +48,7 @@ caps.handback.revision: 38
   
  Zudem wird die Installation von [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)] empfohlen.  Das SDK enthält Projektvorlagen und Tools, mit denen Sie Visual Studio erweitern können.  Vor allem enthält das SDK eine Projektvorlage, mit der Sie leicht Visual Studio\-Erweiterungspakete \(VSIX\) erstellen können.  VSIX\-Pakete sind die bevorzugte Methode für Visual Studio\-Erweiterungen in Visual Studio bereitzustellen.  Alle Erweiterungen der SharePoint\-Tools müssen mit VSIX\-Paketen bereitgestellt werden.  In allen exemplarischen Vorgehensweisen in dieser Dokumentation wird davon ausgegangen, dass [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)] installiert wurde.  
   
- Das SDK kann unter [http:\/\/go.microsoft.com\/fwlink\/?LinkId\=164562](http://go.microsoft.com/fwlink/?LinkId=164562) heruntergeladen werden.  Weitere Informationen zu Visual Studio\-Erweiterungen finden Sie unter [Entwickeln von Visual Studio-Erweiterungen](../Topic/Developing%20Visual%20Studio%20Extensions.md).  
+ Das SDK kann unter [http:\/\/go.microsoft.com\/fwlink\/?LinkId\=164562](http://go.microsoft.com/fwlink/?LinkId=164562) heruntergeladen werden.  Weitere Informationen zu Visual Studio\-Erweiterungen finden Sie unter [Entwickeln von Visual Studio-Erweiterungen](http://msdn.microsoft.com/library/5b1b5db3-6005-44cf-83b0-e608d7764d14).  
   
 ## Siehe auch  
  [Overview of the Programming Model of SharePoint Tools Extensions](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)   

@@ -35,7 +35,7 @@ caps.handback.revision: 32
   
 1.  Öffnen Sie in Visual Studio ein Excel\-Anwendungsprojekt.  
   
-2.  Öffnen Sie das **Datenquellenfenster**, und erstellen Sie eine Datenquelle aus der Datenbank.  Weitere Informationen finden Sie unter [Gewusst wie: Herstellen einer Verbindung zu Daten in einer Datenbank](../Topic/How%20to:%20Connect%20to%20Data%20in%20a%20Database.md).  
+2.  Öffnen Sie das **Datenquellenfenster**, und erstellen Sie eine Datenquelle aus der Datenbank.  Weitere Informationen finden Sie unter [Gewusst wie: Herstellen einer Verbindung zu Daten in einer Datenbank](~/data-tools/how-to-connect-to-data-in-a-database.md).  
   
 3.  Erweitern Sie die Tabelle, in der die anzuzeigenden Daten enthalten sind, und wählen Sie die entsprechende Spalte aus.  
   
@@ -43,7 +43,7 @@ caps.handback.revision: 32
   
 5.  Ziehen Sie das <xref:Microsoft.Office.Tools.Excel.NamedRange>\-Steuerelement auf die Zelle, in der die Daten angezeigt werden sollen.  
   
-6.  Fügen Sie dem Arbeitsblatt ein <xref:System.Windows.Forms.BindingNavigator>\-Steuerelement von der Registerkarte **Windows Forms** in der **Toolbox** hinzu, und legen Sie die zu verwendenden Steuerelemente fest.  Weitere Informationen finden Sie unter [Übersicht über das BindingNavigator-Steuerelement &#40;Windows Forms&#41;](../Topic/BindingNavigator%20Control%20Overview%20(Windows%20Forms).md).  
+6.  Fügen Sie dem Arbeitsblatt ein <xref:System.Windows.Forms.BindingNavigator>\-Steuerelement von der Registerkarte **Windows Forms** in der **Toolbox** hinzu, und legen Sie die zu verwendenden Steuerelemente fest.  Weitere Informationen finden Sie unter [Übersicht über das BindingNavigator-Steuerelement &#40;Windows Forms&#41;](http://msdn.microsoft.com/library/4423eede-f8d1-4d02-822f-5bf8432680d0).  
   
 ## Siehe auch  
  [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md)  

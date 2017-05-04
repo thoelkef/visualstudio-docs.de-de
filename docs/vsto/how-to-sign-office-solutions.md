@@ -28,7 +28,7 @@ caps.handback.revision: 17
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- Wenn Sie Anwendungs\- und Bereitstellungsmanifeste mit dem Tool zum Generieren und Bearbeiten von Manifesten \(mage.exe und mageui.exe\) manuell bearbeiten, müssen Sie die Manifeste erneut signieren, bevor Sie sie verwenden können.  Weitere Informationen finden Sie unter [How to: Re-sign Application and Deployment Manifests](../Topic/How%20to:%20Re-sign%20Application%20and%20Deployment%20Manifests.md).  
+ Wenn Sie Anwendungs\- und Bereitstellungsmanifeste mit dem Tool zum Generieren und Bearbeiten von Manifesten \(mage.exe und mageui.exe\) manuell bearbeiten, müssen Sie die Manifeste erneut signieren, bevor Sie sie verwenden können.  Weitere Informationen finden Sie unter [How to: Re-sign Application and Deployment Manifests](~/deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## Signieren mithilfe eines Zertifikats  
  Ein Zertifikat ist eine Datei, die einen eindeutigen Schlüssel und die Identität des Projektmappenherausgebers enthält.  Sie können Zertifikate bei einer Zertifizierungsstelle erwerben oder Ihr eigenes Zertifikat erstellen, welches Sie von einer Zertifizierungsstelle signieren lassen.  

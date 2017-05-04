@@ -53,7 +53,7 @@ caps.handback.revision: 53
   
  Kenntnisse der folgenden Konzepte sind hilfreich, wenn auch für die Durchführung der exemplarischen Vorgehensweise nicht erforderlich:  
   
--   Assistenten für Projekt\- und Elementvorlagen in Visual Studio.  Weitere Informationen finden Sie unter [Gewusst wie: Verwenden von Assistenten mit Projektvorlagen](../Topic/How%20to:%20Use%20Wizards%20with%20Project%20Templates.md) und der <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>\-Schnittstelle.  
+-   Assistenten für Projekt\- und Elementvorlagen in Visual Studio.  Weitere Informationen finden Sie unter [Gewusst wie: Verwenden von Assistenten mit Projektvorlagen](~/extensibility/how-to-use-wizards-with-project-templates.md) und der <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>\-Schnittstelle.  
   
 -   Websitespalten in SharePoint  Weitere Informationen finden Sie unter [Spalten](http://go.microsoft.com/fwlink/?LinkId=183547).  
   
@@ -121,7 +121,7 @@ caps.handback.revision: 53
   
 3.  Stellen Sie sicher, dass für das Zielframework .NET Framework 4.5 und nicht .NET Framework 4.5 Client Profile festgelegt ist.  
   
-     Weitere Informationen finden Sie unter [Gewusst wie: .NET Framework-Version als Ziel](../Topic/How%20to:%20Target%20a%20Version%20of%20the%20.NET%20Framework.md).  
+     Weitere Informationen finden Sie unter [Gewusst wie: .NET Framework-Version als Ziel](~/ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
 4.  Öffnen Sie das Kontextmenü des Projekts **ProjectTemplateWizard**, und wählen Sie **Hinzufügen** und dann **Neues Element** aus.  
   
@@ -168,7 +168,7 @@ caps.handback.revision: 53
   
 13. Wenn Sie ein Visual Basic\-Projekt entwickeln, importieren Sie mit dem **Projekt\-Designer** den ProjectTemplateWizard\-Namespace in das Projekt.  
   
-     Weitere Informationen finden Sie unter [Gewusst wie: Hinzufügen oder Entfernen von importierten Namespaces &#40;Visual Basic&#41;](../Topic/How%20to:%20Add%20or%20Remove%20Imported%20Namespaces%20(Visual%20Basic).md).  
+     Weitere Informationen finden Sie unter [Gewusst wie: Hinzufügen oder Entfernen von importierten Namespaces &#40;Visual Basic&#41;](~/ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
   
 #### So konfigurieren Sie das SharePointCommands\-Projekt  
   
@@ -551,6 +551,6 @@ caps.handback.revision: 53
  [Defining Custom SharePoint Project Item Types](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [Creating Item Templates and Project Templates for SharePoint Project Items](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Gewusst wie: Verwenden von Assistenten mit Projektvorlagen](../Topic/How%20to:%20Use%20Wizards%20with%20Project%20Templates.md)  
+ [Gewusst wie: Verwenden von Assistenten mit Projektvorlagen](~/extensibility/how-to-use-wizards-with-project-templates.md)  
   
   
