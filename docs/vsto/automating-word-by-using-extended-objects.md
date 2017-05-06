@@ -1,5 +1,5 @@
 ---
-title: "Automatisieren von Word mithilfe von erweiterten Objekten | Microsoft Docs"
+title: "Automatisieren von Word mithilfe von erweiterten Objekten"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Exemplarische Vorgehensweise: Programmieren in Abh&#228;ngigkeit von Ereignissen eines NamedRange-Steuerelements | Microsoft Docs"
+title: "Exemplarische Vorgehensweise: Programmieren in Abh&#228;ngigkeit von Ereignissen eines NamedRange-Steuerelements"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

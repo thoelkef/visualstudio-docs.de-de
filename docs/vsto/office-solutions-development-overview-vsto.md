@@ -1,5 +1,5 @@
 ---
-title: "&#220;bersicht &#252;ber die Entwicklung von Office-Projektmappen (VSTO) | Microsoft Docs"
+title: "&#220;bersicht &#252;ber die Entwicklung von Office-Projektmappen (VSTO)"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

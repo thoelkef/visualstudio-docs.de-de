@@ -1,5 +1,5 @@
 ---
-title: "Durchsuchen von SharePoint-Verbindungen mit dem Server-Explorer | Microsoft Docs"
+title: "Durchsuchen von SharePoint-Verbindungen mit dem Server-Explorer"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Programmgesteuerte Einschr&#228;nkungen von Hostelementen und Hoststeuerelementen | Microsoft Docs"
+title: "Programmgesteuerte Einschr&#228;nkungen von Hostelementen und Hoststeuerelementen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

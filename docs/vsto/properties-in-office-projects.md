@@ -1,5 +1,5 @@
 ---
-title: "Eigenschaften in Office-Projekten | Microsoft Docs"
+title: "Eigenschaften in Office-Projekten"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

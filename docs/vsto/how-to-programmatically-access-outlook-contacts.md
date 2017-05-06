@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Zugreifen auf Outlook-Kontakte | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Zugreifen auf Outlook-Kontakte"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

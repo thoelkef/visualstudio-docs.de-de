@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Hinzuf&#252;gen von benutzerdefinierten XML-Abschnitten zu Anpassungen auf Dokumentebene | Microsoft Docs"
+title: "Gewusst wie: Hinzuf&#252;gen von benutzerdefinierten XML-Abschnitten zu Anpassungen auf Dokumentebene"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

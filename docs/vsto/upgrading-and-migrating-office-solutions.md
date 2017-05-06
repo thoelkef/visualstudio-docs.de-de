@@ -1,5 +1,5 @@
 ---
-title: "Aktualisieren und Migrieren von Office-Projektmappen | Microsoft Docs"
+title: "Aktualisieren und Migrieren von Office-Projektmappen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

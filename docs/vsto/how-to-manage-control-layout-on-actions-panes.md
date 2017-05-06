@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Verwalten des Steuerelementlayouts in Aktionsbereichen | Microsoft Docs"
+title: "Gewusst wie: Verwalten des Steuerelementlayouts in Aktionsbereichen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

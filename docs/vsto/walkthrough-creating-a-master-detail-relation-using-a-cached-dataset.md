@@ -1,5 +1,5 @@
 ---
-title: "Exemplarische Vorgehensweise: Erstellen einer Master/Detail-Beziehung mithilfe eines zwischengespeicherten Datasets | Microsoft Docs"
+title: "Exemplarische Vorgehensweise: Erstellen einer Master/Detail-Beziehung mithilfe eines zwischengespeicherten Datasets"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

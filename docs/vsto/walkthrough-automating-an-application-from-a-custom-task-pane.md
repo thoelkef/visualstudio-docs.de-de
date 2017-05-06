@@ -1,5 +1,5 @@
 ---
-title: "Exemplarische Vorgehensweise: Automatisieren einer Anwendung &#252;ber einen benutzerdefinierten Aufgabenbereich | Microsoft Docs"
+title: "Exemplarische Vorgehensweise: Automatisieren einer Anwendung &#252;ber einen benutzerdefinierten Aufgabenbereich"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

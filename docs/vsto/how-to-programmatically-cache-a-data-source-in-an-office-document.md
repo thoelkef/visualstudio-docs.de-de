@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Zwischenspeichern von Datenquellen in einem Office-Dokument | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Zwischenspeichern von Datenquellen in einem Office-Dokument"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Auff&#252;llen von Dokumente mit Daten aus Diensten | Microsoft Docs"
+title: "Gewusst wie: Auff&#252;llen von Dokumente mit Daten aus Diensten"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Anf&#252;gen von Erweiterungen durch verwalteten Code an Dokumente | Microsoft Docs"
+title: "Gewusst wie: Anf&#252;gen von Erweiterungen durch verwalteten Code an Dokumente"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

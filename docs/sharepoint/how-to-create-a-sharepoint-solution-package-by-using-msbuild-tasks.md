@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Erstellen eines SharePoint-L&#246;sungspakets mithilfe von MSBuild-Zielen | Microsoft Docs"
+title: "Gewusst wie: Erstellen eines SharePoint-L&#246;sungspakets mithilfe von MSBuild-Zielen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

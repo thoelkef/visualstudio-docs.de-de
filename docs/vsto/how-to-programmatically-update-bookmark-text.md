@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Aktualisieren von Lesezeichentext | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Aktualisieren von Lesezeichentext"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

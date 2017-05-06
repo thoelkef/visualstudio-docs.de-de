@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Hinzuf&#252;gen von Steuerelementen zur Backstage-Ansicht | Microsoft Docs"
+title: "Gewusst wie: Hinzuf&#252;gen von Steuerelementen zur Backstage-Ansicht"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

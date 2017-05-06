@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Hinzuf&#252;gen und Entfernen von Elementen in SharePoint-Funktionen | Microsoft Docs"
+title: "Gewusst wie: Hinzuf&#252;gen und Entfernen von Elementen in SharePoint-Funktionen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

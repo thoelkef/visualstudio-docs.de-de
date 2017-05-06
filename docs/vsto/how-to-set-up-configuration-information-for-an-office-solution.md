@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Einrichten von Konfigurationsinformationen f&#252;r eine Office-Projektmappe | Microsoft Docs"
+title: "Gewusst wie: Einrichten von Konfigurationsinformationen f&#252;r eine Office-Projektmappe"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Assemblys in Visual Studio Tools for Office Runtime | Microsoft Docs"
+title: "Assemblys in Visual Studio Tools for Office Runtime"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

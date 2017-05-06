@@ -1,5 +1,5 @@
 ---
-title: "Microsoft&#160;Office ist auf diesem Computer nicht installiert | Microsoft Docs"
+title: "Microsoft&#160;Office ist auf diesem Computer nicht installiert"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

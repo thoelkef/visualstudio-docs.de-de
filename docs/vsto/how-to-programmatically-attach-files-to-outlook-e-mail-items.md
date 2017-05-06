@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Anf&#252;gen von Dateien an Outlook-E-Mail-Elemente | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Anf&#252;gen von Dateien an Outlook-E-Mail-Elemente"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Ver&#246;ffentlichungsassistent (Office-Entwicklung in Visual Studio) | Microsoft Docs"
+title: "Ver&#246;ffentlichungsassistent (Office-Entwicklung in Visual Studio)"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

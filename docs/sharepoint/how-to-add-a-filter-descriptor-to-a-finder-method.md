@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Hinzuf&#252;gen eines Filterdeskriptors zu einer Finder-Methode | Microsoft Docs"
+title: "Gewusst wie: Hinzuf&#252;gen eines Filterdeskriptors zu einer Finder-Methode"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

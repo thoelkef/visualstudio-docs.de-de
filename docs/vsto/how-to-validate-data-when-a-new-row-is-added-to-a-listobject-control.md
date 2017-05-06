@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: &#220;berpr&#252;fen der Daten, wenn einem ListObject-Steuerelement eine neue Zeile hinzugef&#252;gt wird | Microsoft Docs"
+title: "Gewusst wie: &#220;berpr&#252;fen der Daten, wenn einem ListObject-Steuerelement eine neue Zeile hinzugef&#252;gt wird"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

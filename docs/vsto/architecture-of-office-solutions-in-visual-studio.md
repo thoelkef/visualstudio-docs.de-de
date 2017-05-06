@@ -1,5 +1,5 @@
 ---
-title: "Architektur von Office-Projektmappen in Visual Studio | Microsoft Docs"
+title: "Architektur von Office-Projektmappen in Visual Studio"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

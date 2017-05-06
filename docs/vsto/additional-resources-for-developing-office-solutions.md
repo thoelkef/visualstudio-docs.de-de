@@ -1,5 +1,5 @@
 ---
-title: "Zus&#228;tzliche Ressourcen f&#252;r das Entwickeln von Office-L&#246;sungen | Microsoft Docs"
+title: "Zus&#228;tzliche Ressourcen f&#252;r das Entwickeln von Office-L&#246;sungen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

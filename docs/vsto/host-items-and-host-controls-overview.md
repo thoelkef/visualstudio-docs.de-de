@@ -1,5 +1,5 @@
 ---
-title: "&#220;bersicht &#252;ber Hostelemente und Hoststeuerelemente | Microsoft Docs"
+title: "&#220;bersicht &#252;ber Hostelemente und Hoststeuerelemente"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "&#220;bersicht &#252;ber benutzerdefinierte XML-Abschnitte | Microsoft Docs"
+title: "&#220;bersicht &#252;ber benutzerdefinierte XML-Abschnitte"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

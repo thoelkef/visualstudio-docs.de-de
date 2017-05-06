@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Verhindern der Anzeige eines Formularbereichs in Outlook | Microsoft Docs"
+title: "Gewusst wie: Verhindern der Anzeige eines Formularbereichs in Outlook"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

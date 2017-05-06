@@ -1,5 +1,5 @@
 ---
-title: "Exemplarische Vorgehensweise: Hinzuf&#252;gen von Funktionsereignisempf&#228;ngern | Microsoft Docs"
+title: "Exemplarische Vorgehensweise: Hinzuf&#252;gen von Funktionsereignisempf&#228;ngern"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Hinzuf&#252;gen eines Bereichs zu einem Outlook-Add-In-Projekt | Microsoft Docs"
+title: "Gewusst wie: Hinzuf&#252;gen eines Bereichs zu einem Outlook-Add-In-Projekt"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

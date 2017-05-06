@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Hinzuf&#252;gen von Elementen zu einem SharePoint-Projekt | Microsoft Docs"
+title: "Gewusst wie: Hinzuf&#252;gen von Elementen zu einem SharePoint-Projekt"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

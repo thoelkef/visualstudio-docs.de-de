@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Erstellen neuer Dokumente | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Erstellen neuer Dokumente"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

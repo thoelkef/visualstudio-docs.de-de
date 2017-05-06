@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Anwenden von Formaten auf Bereiche in Arbeitsmappen | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Anwenden von Formaten auf Bereiche in Arbeitsmappen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

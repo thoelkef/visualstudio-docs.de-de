@@ -1,5 +1,5 @@
 ---
-title: "Excel-Projektmappen | Microsoft Docs"
+title: "Excel-Projektmappen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

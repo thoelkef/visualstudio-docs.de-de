@@ -1,5 +1,5 @@
 ---
-title: "Arbeiten mit Arbeitsbl&#228;ttern | Microsoft Docs"
+title: "Arbeiten mit Arbeitsbl&#228;ttern"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

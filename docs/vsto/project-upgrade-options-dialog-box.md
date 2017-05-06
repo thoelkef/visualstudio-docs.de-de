@@ -1,5 +1,5 @@
 ---
-title: "Dialogfeld &quot;Optionen&quot;, &quot;Projektupdate&quot; | Microsoft Docs"
+title: "Dialogfeld &quot;Optionen&quot;, &quot;Projektupdate&quot;"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

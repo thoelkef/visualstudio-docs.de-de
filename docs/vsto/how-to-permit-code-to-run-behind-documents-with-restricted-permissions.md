@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Zulassen der Ausf&#252;hrung von Code im Hintergrund von Dokumenten mit eingeschr&#228;nkten Berechtigungen | Microsoft Docs"
+title: "Gewusst wie: Zulassen der Ausf&#252;hrung von Code im Hintergrund von Dokumenten mit eingeschr&#228;nkten Berechtigungen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

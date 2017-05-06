@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Suchen nach Text in Arbeitsblattbereichen | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Suchen nach Text in Arbeitsblattbereichen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Exemplarische Vorgehensweise: Entwerfen eines Outlook-Formularbereichs | Microsoft Docs"
+title: "Exemplarische Vorgehensweise: Entwerfen eines Outlook-Formularbereichs"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

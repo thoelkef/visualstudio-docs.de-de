@@ -1,5 +1,5 @@
 ---
-title: "Anpassung der Office-Benutzeroberfl&#228;che | Microsoft Docs"
+title: "Anpassung der Office-Benutzeroberfl&#228;che"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

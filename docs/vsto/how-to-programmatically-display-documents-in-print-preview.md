@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Anzeigen von Dokumenten in der Seitenansicht | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Anzeigen von Dokumenten in der Seitenansicht"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

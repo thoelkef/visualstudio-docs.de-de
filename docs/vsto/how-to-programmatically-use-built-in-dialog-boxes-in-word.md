@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Verwenden integrierter Dialogfelder in Word | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Verwenden integrierter Dialogfelder in Word"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Hinzuf&#252;gen eines Parameters zu einer Methode | Microsoft Docs"
+title: "Gewusst wie: Hinzuf&#252;gen eines Parameters zu einer Methode"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

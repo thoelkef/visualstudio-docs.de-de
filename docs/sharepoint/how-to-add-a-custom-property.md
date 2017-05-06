@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Hinzuf&#252;gen einer benutzerdefinierten Eigenschaft | Microsoft Docs"
+title: "Gewusst wie: Hinzuf&#252;gen einer benutzerdefinierten Eigenschaft"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

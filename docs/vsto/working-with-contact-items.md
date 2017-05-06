@@ -1,5 +1,5 @@
 ---
-title: "Arbeiten mit Kontaktelementen | Microsoft Docs"
+title: "Arbeiten mit Kontaktelementen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

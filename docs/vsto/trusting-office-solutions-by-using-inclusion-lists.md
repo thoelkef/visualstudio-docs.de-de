@@ -1,5 +1,5 @@
 ---
-title: "Gew&#228;hren von Vertrauensw&#252;rdigkeit f&#252;r Office-Projektmappen mithilfe von Aufnahmelisten | Microsoft Docs"
+title: "Gew&#228;hren von Vertrauensw&#252;rdigkeit f&#252;r Office-Projektmappen mithilfe von Aufnahmelisten"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

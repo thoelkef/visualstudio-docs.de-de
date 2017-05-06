@@ -1,5 +1,5 @@
 ---
-title: "Bookmark-Steuerelement | Microsoft Docs"
+title: "Bookmark-Steuerelement"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

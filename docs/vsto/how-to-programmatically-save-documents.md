@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Speichern von Dokumenten | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Speichern von Dokumenten"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

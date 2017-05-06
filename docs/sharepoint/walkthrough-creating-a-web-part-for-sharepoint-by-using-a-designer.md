@@ -1,5 +1,5 @@
 ---
-title: "Exemplarische Vorgehensweise: Erstellen eines Webparts f&#252;r SharePoint mithilfe eines Designers | Microsoft Docs"
+title: "Exemplarische Vorgehensweise: Erstellen eines Webparts f&#252;r SharePoint mithilfe eines Designers"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

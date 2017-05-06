@@ -1,5 +1,5 @@
 ---
-title: "&#220;bersicht &#252;ber die Verwendung lokaler Datenbankdateien in Office-L&#246;sungen | Microsoft Docs"
+title: "&#220;bersicht &#252;ber die Verwendung lokaler Datenbankdateien in Office-L&#246;sungen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Hinzuf&#252;gen von Shapes zu Visio-Dokumenten | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Hinzuf&#252;gen von Shapes zu Visio-Dokumenten"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

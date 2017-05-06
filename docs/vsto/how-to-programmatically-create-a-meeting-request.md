@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Erstellen einer Besprechungsanfrage | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Erstellen einer Besprechungsanfrage"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

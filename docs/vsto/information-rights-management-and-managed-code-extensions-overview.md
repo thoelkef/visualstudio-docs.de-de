@@ -1,5 +1,5 @@
 ---
-title: "&#220;bersicht &#252;ber Information Rights Management und Erweiterungen durch verwalteten Code | Microsoft Docs"
+title: "&#220;bersicht &#252;ber Information Rights Management und Erweiterungen durch verwalteten Code"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

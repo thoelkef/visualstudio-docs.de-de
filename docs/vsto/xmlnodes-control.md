@@ -1,5 +1,5 @@
 ---
-title: "XMLNodes-Steuerelement | Microsoft Docs"
+title: "XMLNodes-Steuerelement"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

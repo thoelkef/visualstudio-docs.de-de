@@ -1,5 +1,5 @@
 ---
-title: "Barrierefreiheit in Office-Projekten | Microsoft Docs"
+title: "Barrierefreiheit in Office-Projekten"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

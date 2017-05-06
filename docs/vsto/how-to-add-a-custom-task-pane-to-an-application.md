@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Hinzuf&#252;gen eines benutzerdefinierten Aufgabenbereichs zu einer Anwendung | Microsoft Docs"
+title: "Gewusst wie: Hinzuf&#252;gen eines benutzerdefinierten Aufgabenbereichs zu einer Anwendung"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

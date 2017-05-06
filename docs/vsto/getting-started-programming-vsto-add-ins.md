@@ -1,5 +1,5 @@
 ---
-title: "Erste Schritte beim Programmieren von VSTO-Add-Ins | Microsoft Docs"
+title: "Erste Schritte beim Programmieren von VSTO-Add-Ins"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

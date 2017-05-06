@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Speichern von Visio-Dokumenten | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Speichern von Visio-Dokumenten"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

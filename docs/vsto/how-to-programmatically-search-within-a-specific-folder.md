@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuerte Suche in einem bestimmten Ordner | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuerte Suche in einem bestimmten Ordner"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Websiteworkflowaktivit&#228;t | Microsoft Docs"
+title: "Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Websiteworkflowaktivit&#228;t"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

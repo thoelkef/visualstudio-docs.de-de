@@ -1,5 +1,5 @@
 ---
-title: "&#220;bersicht &#252;ber die Multifunktionsleiste | Microsoft Docs"
+title: "&#220;bersicht &#252;ber die Multifunktionsleiste"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

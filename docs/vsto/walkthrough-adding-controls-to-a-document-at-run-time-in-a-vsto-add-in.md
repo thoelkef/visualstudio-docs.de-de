@@ -1,5 +1,5 @@
 ---
-title: "Exemplarische Vorgehensweise: Hinzuf&#252;gen von Steuerelementen zu einem Dokument zur Laufzeit in einem VSTO-Add-In | Microsoft Docs"
+title: "Exemplarische Vorgehensweise: Hinzuf&#252;gen von Steuerelementen zu einem Dokument zur Laufzeit in einem VSTO-Add-In"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

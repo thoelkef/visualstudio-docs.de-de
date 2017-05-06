@@ -1,5 +1,5 @@
 ---
-title: "Exemplarische Vorgehensweise: Importieren von Elementen aus einer vorhandenen SharePoint-Website | Microsoft Docs"
+title: "Exemplarische Vorgehensweise: Importieren von Elementen aus einer vorhandenen SharePoint-Website"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

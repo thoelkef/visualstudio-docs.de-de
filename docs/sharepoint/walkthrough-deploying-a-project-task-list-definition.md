@@ -1,5 +1,5 @@
 ---
-title: "Exemplarische Vorgehensweise: Bereitstellen einer Aufgabenlistendefinition f&#252;r Projekte | Microsoft Docs"
+title: "Exemplarische Vorgehensweise: Bereitstellen einer Aufgabenlistendefinition f&#252;r Projekte"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

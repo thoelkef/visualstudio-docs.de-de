@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Hinzuf&#252;gen und L&#246;schen von Arbeitsblattkommentaren | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Hinzuf&#252;gen und L&#246;schen von Arbeitsblattkommentaren"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Hinzuf&#252;gen von Text und Formatierungen zu Zellen in Word-Tabellen | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Hinzuf&#252;gen von Text und Formatierungen zu Zellen in Word-Tabellen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

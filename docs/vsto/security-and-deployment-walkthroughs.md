@@ -1,5 +1,5 @@
 ---
-title: "Exemplarische Vorgehensweisen f&#252;r Sicherheit und Bereitstellung | Microsoft Docs"
+title: "Exemplarische Vorgehensweisen f&#252;r Sicherheit und Bereitstellung"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Exemplarische Vorgehensweise: Erstellen der ersten Anpassung auf Dokumentebene f&#252;r Word | Microsoft Docs"
+title: "Exemplarische Vorgehensweise: Erstellen der ersten Anpassung auf Dokumentebene f&#252;r Word"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

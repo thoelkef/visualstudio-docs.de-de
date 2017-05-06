@@ -1,5 +1,5 @@
 ---
-title: "Integrieren von Gesch&#228;ftsdaten in SharePoint | Microsoft Docs"
+title: "Integrieren von Gesch&#228;ftsdaten in SharePoint"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

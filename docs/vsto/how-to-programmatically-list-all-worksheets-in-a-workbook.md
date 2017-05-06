@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Auflisten aller Arbeitsbl&#228;tter in einer Arbeitsmappe | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Auflisten aller Arbeitsbl&#228;tter in einer Arbeitsmappe"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

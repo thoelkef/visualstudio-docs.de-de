@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Zuordnen einer Webseite zu einem Outlook-Ordner | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Zuordnen einer Webseite zu einem Outlook-Ordner"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

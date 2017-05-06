@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes L&#246;schen von Arbeitsbl&#228;ttern aus Arbeitsmappen | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes L&#246;schen von Arbeitsbl&#228;ttern aus Arbeitsmappen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

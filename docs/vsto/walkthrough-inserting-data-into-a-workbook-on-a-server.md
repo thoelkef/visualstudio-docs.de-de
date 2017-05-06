@@ -1,5 +1,5 @@
 ---
-title: "Exemplarische Vorgehensweise: Einf&#252;gen von Daten in eine Arbeitsmappe auf einem Server | Microsoft Docs"
+title: "Exemplarische Vorgehensweise: Einf&#252;gen von Daten in eine Arbeitsmappe auf einem Server"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

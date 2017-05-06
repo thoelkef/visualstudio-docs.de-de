@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Entfernen von Erweiterungen durch verwalteten Code aus Dokumenten | Microsoft Docs"
+title: "Gewusst wie: Entfernen von Erweiterungen durch verwalteten Code aus Dokumenten"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Hinzuf&#252;gen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen | Microsoft Docs"
+title: "Gewusst wie: Hinzuf&#252;gen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

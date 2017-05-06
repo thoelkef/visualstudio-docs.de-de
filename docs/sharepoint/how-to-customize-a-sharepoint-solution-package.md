@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Anpassen eines SharePoint-L&#246;sungspakets | Microsoft Docs"
+title: "Gewusst wie: Anpassen eines SharePoint-L&#246;sungspakets"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

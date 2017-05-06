@@ -1,5 +1,5 @@
 ---
-title: "Exemplarische Vorgehensweisen in Excel | Microsoft Docs"
+title: "Exemplarische Vorgehensweisen in Excel"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

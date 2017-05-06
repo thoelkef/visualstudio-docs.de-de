@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Auflisten zuletzt verwendeter Arbeitsmappendateien | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Auflisten zuletzt verwendeter Arbeitsmappendateien"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

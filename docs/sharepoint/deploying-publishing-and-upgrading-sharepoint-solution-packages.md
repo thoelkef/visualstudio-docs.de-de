@@ -1,5 +1,5 @@
 ---
-title: "Bereitstellen, Ver&#246;ffentlichen und Aktualisieren von SharePoint-L&#246;sungspaketen | Microsoft Docs"
+title: "Bereitstellen, Ver&#246;ffentlichen und Aktualisieren von SharePoint-L&#246;sungspaketen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

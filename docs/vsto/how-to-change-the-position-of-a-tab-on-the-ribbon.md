@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: &#196;ndern der Position einer Registerkarte im Men&#252;band | Microsoft Docs"
+title: "Gewusst wie: &#196;ndern der Position einer Registerkarte im Men&#252;band"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

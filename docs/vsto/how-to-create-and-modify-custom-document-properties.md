@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Erstellen und &#196;ndern von benutzerdefinierten Dokumenteigenschaften | Microsoft Docs"
+title: "Gewusst wie: Erstellen und &#196;ndern von benutzerdefinierten Dokumenteigenschaften"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

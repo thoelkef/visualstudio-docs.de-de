@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Bereitstellen und Ver&#246;ffentlichen einer SharePoint-L&#246;sung auf einer lokalen SharePoint-Website | Microsoft Docs"
+title: "Gewusst wie: Bereitstellen und Ver&#246;ffentlichen einer SharePoint-L&#246;sung auf einer lokalen SharePoint-Website"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

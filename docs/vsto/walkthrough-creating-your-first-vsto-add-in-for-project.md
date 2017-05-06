@@ -1,5 +1,5 @@
 ---
-title: "Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins f&#252;r Project | Microsoft Docs"
+title: "Exemplarische Vorgehensweise: Erstellen des ersten VSTO-Add-Ins f&#252;r Project"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "&#220;bersicht &#252;ber Windows&#160;Forms-Steuerelemente in Office-Dokumenten | Microsoft Docs"
+title: "&#220;bersicht &#252;ber Windows&#160;Forms-Steuerelemente in Office-Dokumenten"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

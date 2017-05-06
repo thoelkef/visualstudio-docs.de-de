@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Hinzuf&#252;gen von Befehlen zu Kontextmen&#252;s | Microsoft Docs"
+title: "Gewusst wie: Hinzuf&#252;gen von Befehlen zu Kontextmen&#252;s"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

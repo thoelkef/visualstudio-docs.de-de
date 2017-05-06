@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Einf&#252;gen von Text in Word-Dokumente | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Einf&#252;gen von Text in Word-Dokumente"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

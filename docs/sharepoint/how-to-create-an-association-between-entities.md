@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Erstellen einer Assoziation zwischen Entit&#228;ten | Microsoft Docs"
+title: "Gewusst wie: Erstellen einer Assoziation zwischen Entit&#228;ten"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

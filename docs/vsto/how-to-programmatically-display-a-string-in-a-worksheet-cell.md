@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Anzeigen einer Zeichenfolge in einer Arbeitsblattzelle | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Anzeigen einer Zeichenfolge in einer Arbeitsblattzelle"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

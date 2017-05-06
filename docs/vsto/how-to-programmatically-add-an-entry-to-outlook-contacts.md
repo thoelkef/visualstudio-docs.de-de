@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Hinzuf&#252;gen eines Eintrags zu Outlook-Kontakten | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Hinzuf&#252;gen eines Eintrags zu Outlook-Kontakten"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

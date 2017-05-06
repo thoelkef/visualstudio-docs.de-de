@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Erstellen von Ereignishandlern in Office-Projekten | Microsoft Docs"
+title: "Gewusst wie: Erstellen von Ereignishandlern in Office-Projekten"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

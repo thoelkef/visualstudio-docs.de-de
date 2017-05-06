@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Verschieben von Arbeitsbl&#228;ttern in Arbeitsmappen | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Verschieben von Arbeitsbl&#228;ttern in Arbeitsmappen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

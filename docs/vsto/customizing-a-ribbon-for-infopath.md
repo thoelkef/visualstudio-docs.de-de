@@ -1,5 +1,5 @@
 ---
-title: "Anpassen eines Men&#252;bands f&#252;r InfoPath | Microsoft Docs"
+title: "Anpassen eines Men&#252;bands f&#252;r InfoPath"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Anpassen einer SharePoint-Funktion | Microsoft Docs"
+title: "Gewusst wie: Anpassen einer SharePoint-Funktion"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

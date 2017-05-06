@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Ausf&#252;hren eines Bildlaufs durch Datenbankdatens&#228;tze in einem Arbeitsblatt | Microsoft Docs"
+title: "Gewusst wie: Ausf&#252;hren eines Bildlaufs durch Datenbankdatens&#228;tze in einem Arbeitsblatt"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

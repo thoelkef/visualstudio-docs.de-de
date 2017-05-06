@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Konfigurieren eines Computers zum Entwickeln von Office-Projektmappen | Microsoft Docs"
+title: "Gewusst wie: Konfigurieren eines Computers zum Entwickeln von Office-Projektmappen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Erstellen eines Benutzersteuerelements f&#252;r eine SharePoint-Anwendungsseite oder ein SharePoint-Webpart | Microsoft Docs"
+title: "Gewusst wie: Erstellen eines Benutzersteuerelements f&#252;r eine SharePoint-Anwendungsseite oder ein SharePoint-Webpart"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

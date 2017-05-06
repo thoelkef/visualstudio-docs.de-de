@@ -1,5 +1,5 @@
 ---
-title: "Aufrufen von Code in VSTO-Add-Ins aus anderen Office-Projektmappen | Microsoft Docs"
+title: "Aufrufen von Code in VSTO-Add-Ins aus anderen Office-Projektmappen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

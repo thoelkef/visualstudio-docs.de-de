@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Hinzuf&#252;gen von XMLNodes-Steuerelementen zu Word-Dokumenten | Microsoft Docs"
+title: "Gewusst wie: Hinzuf&#252;gen von XMLNodes-Steuerelementen zu Word-Dokumenten"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

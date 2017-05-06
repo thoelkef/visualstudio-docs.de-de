@@ -1,5 +1,5 @@
 ---
-title: "Erstellen von wiederverwendbaren Steuerelementen f&#252;r Webparts oder Anwendungsseiten | Microsoft Docs"
+title: "Erstellen von wiederverwendbaren Steuerelementen f&#252;r Webparts oder Anwendungsseiten"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

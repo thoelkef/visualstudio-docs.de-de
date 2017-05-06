@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Hinzuf&#252;gen von Kopf- und Fu&#223;zeilen zu Dokumenten | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Hinzuf&#252;gen von Kopf- und Fu&#223;zeilen zu Dokumenten"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

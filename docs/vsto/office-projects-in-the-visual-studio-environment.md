@@ -1,5 +1,5 @@
 ---
-title: "Office-Projekte in der Visual Studio-Umgebung | Microsoft Docs"
+title: "Office-Projekte in der Visual Studio-Umgebung"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

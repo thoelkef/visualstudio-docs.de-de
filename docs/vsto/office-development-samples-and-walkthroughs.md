@@ -1,5 +1,5 @@
 ---
-title: "Beispiele und exemplarische Vorgehensweisen f&#252;r die Programmierung mit Office | Microsoft Docs"
+title: "Beispiele und exemplarische Vorgehensweisen f&#252;r die Programmierung mit Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

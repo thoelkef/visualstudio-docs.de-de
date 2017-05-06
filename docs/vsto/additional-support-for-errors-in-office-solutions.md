@@ -1,5 +1,5 @@
 ---
-title: "Zus&#228;tzliche Unterst&#252;tzung f&#252;r Fehler in Office-Projektmappen | Microsoft Docs"
+title: "Zus&#228;tzliche Unterst&#252;tzung f&#252;r Fehler in Office-Projektmappen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

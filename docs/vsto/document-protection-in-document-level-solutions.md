@@ -1,5 +1,5 @@
 ---
-title: "Dokumentschutz in Projektmappen auf Dokumentebene | Microsoft Docs"
+title: "Dokumentschutz in Projektmappen auf Dokumentebene"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

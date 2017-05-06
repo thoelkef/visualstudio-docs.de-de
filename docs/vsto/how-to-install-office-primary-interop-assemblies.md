@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Installieren von prim&#228;ren Interopassemblys f&#252;r Office | Microsoft Docs"
+title: "Gewusst wie: Installieren von prim&#228;ren Interopassemblys f&#252;r Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

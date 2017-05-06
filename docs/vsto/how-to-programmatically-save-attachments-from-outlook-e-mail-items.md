@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Speichern von Anlagen von Outlook-E-Mail-Elementen | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Speichern von Anlagen von Outlook-E-Mail-Elementen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

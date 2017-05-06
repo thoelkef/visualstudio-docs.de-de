@@ -1,5 +1,5 @@
 ---
-title: "Exemplarische Vorgehensweise: Komplexe Datenbindung in Projekten auf Dokumentebene | Microsoft Docs"
+title: "Exemplarische Vorgehensweise: Komplexe Datenbindung in Projekten auf Dokumentebene"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

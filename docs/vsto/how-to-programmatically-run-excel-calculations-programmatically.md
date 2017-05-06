@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Ausf&#252;hren von Excel-Berechnungen | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Ausf&#252;hren von Excel-Berechnungen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

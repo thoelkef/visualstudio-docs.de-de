@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Hinzuf&#252;gen und Entfernen von Funktionsabh&#228;ngigkeiten | Microsoft Docs"
+title: "Gewusst wie: Hinzuf&#252;gen und Entfernen von Funktionsabh&#228;ngigkeiten"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

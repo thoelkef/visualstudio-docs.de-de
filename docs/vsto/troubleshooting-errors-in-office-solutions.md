@@ -1,5 +1,5 @@
 ---
-title: "Problembehandlung in Office-Projektmappen | Microsoft Docs"
+title: "Problembehandlung in Office-Projektmappen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

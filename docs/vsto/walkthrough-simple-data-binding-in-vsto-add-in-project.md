@@ -1,5 +1,5 @@
 ---
-title: "Exemplarische Vorgehensweise: Einfache Datenbindung in einem VSTO-Add-In-Projek | Microsoft Docs"
+title: "Exemplarische Vorgehensweise: Einfache Datenbindung in einem VSTO-Add-In-Projek"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Sch&#252;tzen von Teilen von Dokumenten mithilfe von Inhaltssteuerelementen | Microsoft Docs"
+title: "Gewusst wie: Sch&#252;tzen von Teilen von Dokumenten mithilfe von Inhaltssteuerelementen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

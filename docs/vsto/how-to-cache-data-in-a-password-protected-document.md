@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Zwischenspeichern von Daten in einem kennwortgesch&#252;tzten Dokument | Microsoft Docs"
+title: "Gewusst wie: Zwischenspeichern von Daten in einem kennwortgesch&#252;tzten Dokument"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

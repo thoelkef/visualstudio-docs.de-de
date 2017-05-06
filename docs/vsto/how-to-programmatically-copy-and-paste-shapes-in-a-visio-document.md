@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Kopieren und Einf&#252;gen von Shapes in ein Visio-Dokument | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Kopieren und Einf&#252;gen von Shapes in ein Visio-Dokument"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

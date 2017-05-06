@@ -1,5 +1,5 @@
 ---
-title: "Exemplarische Vorgehensweisen f&#252;r Anpassungen der Office-Benutzeroberfl&#228;che | Microsoft Docs"
+title: "Exemplarische Vorgehensweisen f&#252;r Anpassungen der Office-Benutzeroberfl&#228;che"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

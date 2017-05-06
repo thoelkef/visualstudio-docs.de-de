@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Einschlie&#223;en von Dateien mithilfe eines Moduls | Microsoft Docs"
+title: "Gewusst wie: Einschlie&#223;en von Dateien mithilfe eines Moduls"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

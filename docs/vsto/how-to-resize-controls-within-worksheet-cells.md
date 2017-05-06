@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: &#196;ndern der Gr&#246;&#223;e von Steuerelementen innerhalb der Arbeitsblattzellen | Microsoft Docs"
+title: "Gewusst wie: &#196;ndern der Gr&#246;&#223;e von Steuerelementen innerhalb der Arbeitsblattzellen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

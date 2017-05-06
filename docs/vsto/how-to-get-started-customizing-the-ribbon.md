@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Erste Schritte beim Anpassen der Multifunktionsleiste | Microsoft Docs"
+title: "Gewusst wie: Erste Schritte beim Anpassen der Multifunktionsleiste"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

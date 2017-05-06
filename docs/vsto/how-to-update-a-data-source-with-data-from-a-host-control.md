@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Aktualisieren einer Datenquelle mit Daten eines Hoststeuerelements | Microsoft Docs"
+title: "Gewusst wie: Aktualisieren einer Datenquelle mit Daten eines Hoststeuerelements"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

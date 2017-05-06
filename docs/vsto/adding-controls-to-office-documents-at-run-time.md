@@ -1,5 +1,5 @@
 ---
-title: "Hinzuf&#252;gen von Steuerelementen zu Office-Dokumenten zur Laufzeit | Microsoft Docs"
+title: "Hinzuf&#252;gen von Steuerelementen zu Office-Dokumenten zur Laufzeit"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

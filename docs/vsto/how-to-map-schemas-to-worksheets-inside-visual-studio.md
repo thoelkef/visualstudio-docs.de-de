@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Zuordnen von Schemas zu Arbeitsbl&#228;ttern in Visual Studio | Microsoft Docs"
+title: "Gewusst wie: Zuordnen von Schemas zu Arbeitsbl&#228;ttern in Visual Studio"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

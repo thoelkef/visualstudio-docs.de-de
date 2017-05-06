@@ -1,5 +1,5 @@
 ---
-title: "Referenz zur nicht verwalteten API (Office-Entwicklung in Visual&#160;Studio) | Microsoft Docs"
+title: "Referenz zur nicht verwalteten API (Office-Entwicklung in Visual&#160;Studio)"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

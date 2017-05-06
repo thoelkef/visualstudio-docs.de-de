@@ -1,5 +1,5 @@
 ---
-title: "Ereignisprotokollierung f&#252;r Office-L&#246;sungen | Microsoft Docs"
+title: "Ereignisprotokollierung f&#252;r Office-L&#246;sungen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

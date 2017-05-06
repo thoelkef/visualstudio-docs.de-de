@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Erstellen eines Ereignisempf&#228;ngers f&#252;r eine bestimmte Listeninstanz | Microsoft Docs"
+title: "Gewusst wie: Erstellen eines Ereignisempf&#228;ngers f&#252;r eine bestimmte Listeninstanz"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

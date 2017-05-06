@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Hinzuf&#252;gen neuer Arbeitsbl&#228;tter zu Arbeitsmappen | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Hinzuf&#252;gen neuer Arbeitsbl&#228;tter zu Arbeitsmappen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

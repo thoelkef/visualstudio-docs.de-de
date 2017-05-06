@@ -1,5 +1,5 @@
 ---
-title: "Exemplarische Vorgehensweise: Abrufen zwischengespeicherter Daten aus einer Arbeitsmappe auf einem Server | Microsoft Docs"
+title: "Exemplarische Vorgehensweise: Abrufen zwischengespeicherter Daten aus einer Arbeitsmappe auf einem Server"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: &#214;ffnen von Office-Projektmappen ohne die Ausf&#252;hrung von Code | Microsoft Docs"
+title: "Gewusst wie: &#214;ffnen von Office-Projektmappen ohne die Ausf&#252;hrung von Code"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

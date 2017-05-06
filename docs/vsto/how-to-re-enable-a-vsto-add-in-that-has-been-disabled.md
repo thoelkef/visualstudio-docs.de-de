@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Erneutes Aktivieren eines VSTO-Add-Ins, das deaktiviert wurde | Microsoft Docs"
+title: "Gewusst wie: Erneutes Aktivieren eines VSTO-Add-Ins, das deaktiviert wurde"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

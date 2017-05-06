@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Ausschlie&#223;en von Absatzmarken beim Erstellen von Bereichen | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Ausschlie&#223;en von Absatzmarken beim Erstellen von Bereichen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

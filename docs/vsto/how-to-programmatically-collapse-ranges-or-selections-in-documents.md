@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Reduzieren von Bereichen oder Markierungen in Dokumenten | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Reduzieren von Bereichen oder Markierungen in Dokumenten"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Bearbeiten einer SharePoint-Bereitstellungskonfiguration | Microsoft Docs"
+title: "Gewusst wie: Bearbeiten einer SharePoint-Bereitstellungskonfiguration"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

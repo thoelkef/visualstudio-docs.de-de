@@ -1,5 +1,5 @@
 ---
-title: "Exemplarische Vorgehensweise: Erstellen eines einfachen Projekts f&#252;r eine Websitedefinition | Microsoft Docs"
+title: "Exemplarische Vorgehensweise: Erstellen eines einfachen Projekts f&#252;r eine Websitedefinition"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Vergleich von VBA- und Office-Projektmappen in Visual Studio | Microsoft Docs"
+title: "Vergleich von VBA- und Office-Projektmappen in Visual Studio"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

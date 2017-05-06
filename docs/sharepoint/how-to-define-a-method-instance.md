@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Definieren einer Methodeninstanz | Microsoft Docs"
+title: "Gewusst wie: Definieren einer Methodeninstanz"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

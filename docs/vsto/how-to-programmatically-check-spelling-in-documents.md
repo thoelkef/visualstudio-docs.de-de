@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes &#220;berpr&#252;fen der Rechtschreibung in Dokumenten | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes &#220;berpr&#252;fen der Rechtschreibung in Dokumenten"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

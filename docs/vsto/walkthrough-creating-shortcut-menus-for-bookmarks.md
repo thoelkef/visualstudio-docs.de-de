@@ -1,5 +1,5 @@
 ---
-title: "Exemplarische Vorgehensweise: Erstellen von Kontextmen&#252;s f&#252;r Lesezeichen | Microsoft Docs"
+title: "Exemplarische Vorgehensweise: Erstellen von Kontextmen&#252;s f&#252;r Lesezeichen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

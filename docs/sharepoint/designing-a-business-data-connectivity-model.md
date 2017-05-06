@@ -1,5 +1,5 @@
 ---
-title: "Entwerfen eines Business Data Connectivity-Modells | Microsoft Docs"
+title: "Entwerfen eines Business Data Connectivity-Modells"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

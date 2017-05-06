@@ -1,5 +1,5 @@
 ---
-title: "Richtlinien f&#252;r das Importieren von wiederverwendbaren Workflows | Microsoft Docs"
+title: "Richtlinien f&#252;r das Importieren von wiederverwendbaren Workflows"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

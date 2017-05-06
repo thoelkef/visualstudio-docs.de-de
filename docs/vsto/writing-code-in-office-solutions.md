@@ -1,5 +1,5 @@
 ---
-title: "Schreiben von Code in Office-Projektmappen | Microsoft Docs"
+title: "Schreiben von Code in Office-Projektmappen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

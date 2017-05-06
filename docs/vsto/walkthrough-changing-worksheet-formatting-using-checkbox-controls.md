@@ -1,5 +1,5 @@
 ---
-title: "Exemplarische Vorgehensweise: &#196;ndern der Arbeitsblattformatierung mithilfe von CheckBox-Steuerelementen | Microsoft Docs"
+title: "Exemplarische Vorgehensweise: &#196;ndern der Arbeitsblattformatierung mithilfe von CheckBox-Steuerelementen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

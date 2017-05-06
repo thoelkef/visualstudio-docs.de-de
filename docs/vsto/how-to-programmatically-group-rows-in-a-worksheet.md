@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Gruppieren von Zeilen in einem Arbeitsblatt | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Gruppieren von Zeilen in einem Arbeitsblatt"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

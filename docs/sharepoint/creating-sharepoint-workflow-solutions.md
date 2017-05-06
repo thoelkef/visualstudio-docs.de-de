@@ -1,5 +1,5 @@
 ---
-title: "Erstellen von SharePoint-Workflow-Projektmappen | Microsoft Docs"
+title: "Erstellen von SharePoint-Workflow-Projektmappen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

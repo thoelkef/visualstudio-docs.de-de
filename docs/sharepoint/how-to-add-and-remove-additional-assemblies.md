@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Hinzuf&#252;gen und Entfernen zus&#228;tzlicher Assemblys | Microsoft Docs"
+title: "Gewusst wie: Hinzuf&#252;gen und Entfernen zus&#228;tzlicher Assemblys"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

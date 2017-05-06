@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Lokalisieren von ASPX-Markup | Microsoft Docs"
+title: "Gewusst wie: Lokalisieren von ASPX-Markup"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

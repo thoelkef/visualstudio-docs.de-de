@@ -1,5 +1,5 @@
 ---
-title: "Arbeiten mit Visio-Shapes | Microsoft Docs"
+title: "Arbeiten mit Visio-Shapes"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

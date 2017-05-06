@@ -1,5 +1,5 @@
 ---
-title: "Exemplarische Vorgehensweise: Erstellen eines Projektelements &quot;Websitespalte&quot; mit einer Projektvorlage, Teil&#160;1 | Microsoft Docs"
+title: "Exemplarische Vorgehensweise: Erstellen eines Projektelements &quot;Websitespalte&quot; mit einer Projektvorlage, Teil&#160;1"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

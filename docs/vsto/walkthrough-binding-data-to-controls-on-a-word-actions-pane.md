@@ -1,5 +1,5 @@
 ---
-title: "Exemplarische Vorgehensweise: Binden von Daten an Steuerelemente in einem Word-Aktionsbereich | Microsoft Docs"
+title: "Exemplarische Vorgehensweise: Binden von Daten an Steuerelemente in einem Word-Aktionsbereich"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

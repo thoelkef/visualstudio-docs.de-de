@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Bereitstellen, Ver&#246;ffentlichen und Aktualisieren von SharePoint-L&#246;sungen auf einem Remoteserver | Microsoft Docs"
+title: "Gewusst wie: Bereitstellen, Ver&#246;ffentlichen und Aktualisieren von SharePoint-L&#246;sungen auf einem Remoteserver"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

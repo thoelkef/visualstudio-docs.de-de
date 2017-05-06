@@ -1,5 +1,5 @@
 ---
-title: "Exemplarische Vorgehensweise: Aufrufen von Code aus VBA in einem VSTO-Add-In | Microsoft Docs"
+title: "Exemplarische Vorgehensweise: Aufrufen von Code aus VBA in einem VSTO-Add-In"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

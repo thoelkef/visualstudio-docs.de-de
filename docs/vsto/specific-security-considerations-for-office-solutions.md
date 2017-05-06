@@ -1,5 +1,5 @@
 ---
-title: "&#220;berlegungen zur Sicherheit von Office-Projektmappen | Microsoft Docs"
+title: "&#220;berlegungen zur Sicherheit von Office-Projektmappen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

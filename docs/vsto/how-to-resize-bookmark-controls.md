@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: &#196;ndern der Gr&#246;&#223;e von Bookmark-Steuerelementen | Microsoft Docs"
+title: "Gewusst wie: &#196;ndern der Gr&#246;&#223;e von Bookmark-Steuerelementen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

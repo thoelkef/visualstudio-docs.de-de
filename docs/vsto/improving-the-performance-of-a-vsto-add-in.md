@@ -1,5 +1,5 @@
 ---
-title: "Verbessern der Leistung eines VSTO-Add-Ins | Microsoft Docs"
+title: "Verbessern der Leistung eines VSTO-Add-Ins"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

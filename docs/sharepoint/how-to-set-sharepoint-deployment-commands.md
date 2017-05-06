@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Festlegen von SharePoint-Bereitstellungsbefehlen | Microsoft Docs"
+title: "Gewusst wie: Festlegen von SharePoint-Bereitstellungsbefehlen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

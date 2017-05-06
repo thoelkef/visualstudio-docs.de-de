@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Wiederherstellen der Auswahl nach Suchvorg&#228;ngen | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Wiederherstellen der Auswahl nach Suchvorg&#228;ngen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

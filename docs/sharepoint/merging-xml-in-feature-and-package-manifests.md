@@ -1,5 +1,5 @@
 ---
-title: "Zusammenf&#252;hren von XML in Funktions- und Paketmanifesten | Microsoft Docs"
+title: "Zusammenf&#252;hren von XML in Funktions- und Paketmanifesten"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

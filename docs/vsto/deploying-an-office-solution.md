@@ -1,5 +1,5 @@
 ---
-title: "Bereitstellen einer Office-Projektmappe | Microsoft Docs"
+title: "Bereitstellen einer Office-Projektmappe"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Verwenden von Office-Funktionen in Visual Studio | Microsoft Docs"
+title: "Verwenden von Office-Funktionen in Visual Studio"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Verweisen auf Arbeitsblattbereiche im Code | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Verweisen auf Arbeitsblattbereiche im Code"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

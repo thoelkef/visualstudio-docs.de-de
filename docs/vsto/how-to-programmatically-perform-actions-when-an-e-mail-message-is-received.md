@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Ausf&#252;hren von Aktionen beim Empfang einer E-Mail-Nachricht | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Ausf&#252;hren von Aktionen beim Empfang einer E-Mail-Nachricht"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

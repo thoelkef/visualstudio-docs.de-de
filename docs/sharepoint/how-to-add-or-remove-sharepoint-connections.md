@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Hinzuf&#252;gen oder Entfernen von SharePoint-Verbindungen | Microsoft Docs"
+title: "Gewusst wie: Hinzuf&#252;gen oder Entfernen von SharePoint-Verbindungen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

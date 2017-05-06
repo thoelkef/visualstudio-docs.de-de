@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Verf&#252;gbarmachen von Code f&#252;r VBA in einem Visual C#-Projekt | Microsoft Docs"
+title: "Gewusst wie: Verf&#252;gbarmachen von Code f&#252;r VBA in einem Visual C#-Projekt"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

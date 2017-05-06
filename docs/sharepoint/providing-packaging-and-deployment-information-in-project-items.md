@@ -1,5 +1,5 @@
 ---
-title: "Bereitstellen von Pack- und Bereitstellungsinformationen in Projektelementen | Microsoft Docs"
+title: "Bereitstellen von Pack- und Bereitstellungsinformationen in Projektelementen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

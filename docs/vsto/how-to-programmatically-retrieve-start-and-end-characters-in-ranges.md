@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Abrufen von Start- und Endzeichen in Bereichen | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Abrufen von Start- und Endzeichen in Bereichen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

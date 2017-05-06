@@ -1,5 +1,5 @@
 ---
-title: "Registrierungseintr&#228;ge f&#252;r VSTO-Add-Ins | Microsoft Docs"
+title: "Registrierungseintr&#228;ge f&#252;r VSTO-Add-Ins"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

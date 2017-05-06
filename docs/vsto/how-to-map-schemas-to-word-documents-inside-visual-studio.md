@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Zuordnen von Schemas zu Word-Dokumenten in Visual&#160;Studio | Microsoft Docs"
+title: "Gewusst wie: Zuordnen von Schemas zu Word-Dokumenten in Visual&#160;Studio"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

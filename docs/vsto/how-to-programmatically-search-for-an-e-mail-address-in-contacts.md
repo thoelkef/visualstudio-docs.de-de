@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuerte Suche einer E-Mail-Adresse in den Kontakten | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuerte Suche einer E-Mail-Adresse in den Kontakten"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

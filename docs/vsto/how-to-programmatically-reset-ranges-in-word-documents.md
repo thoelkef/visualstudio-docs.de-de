@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Zur&#252;cksetzen von Bereichen in Word-Dokumenten | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Zur&#252;cksetzen von Bereichen in Word-Dokumenten"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

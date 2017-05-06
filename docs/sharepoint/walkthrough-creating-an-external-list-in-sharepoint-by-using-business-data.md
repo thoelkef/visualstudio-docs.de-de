@@ -1,5 +1,5 @@
 ---
-title: "Exemplarische Vorgehensweise: Erstellen einer externen Liste in SharePoint mithilfe von Gesch&#228;ftsdaten | Microsoft Docs"
+title: "Exemplarische Vorgehensweise: Erstellen einer externen Liste in SharePoint mithilfe von Gesch&#228;ftsdaten"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

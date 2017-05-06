@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Hinzuf&#252;gen einer Projektausgabereferenz | Microsoft Docs"
+title: "Gewusst wie: Hinzuf&#252;gen einer Projektausgabereferenz"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

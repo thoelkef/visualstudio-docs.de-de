@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Speichern und Abrufen von Datumswerten in Excel-Bereichen | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Speichern und Abrufen von Datumswerten in Excel-Bereichen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

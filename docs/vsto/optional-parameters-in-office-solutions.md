@@ -1,5 +1,5 @@
 ---
-title: "Optionale Parameter in Office-L&#246;sungen | Microsoft Docs"
+title: "Optionale Parameter in Office-L&#246;sungen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

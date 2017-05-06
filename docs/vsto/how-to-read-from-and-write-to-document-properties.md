@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Lesen von und Schreiben in Dokumenteigenschaften | Microsoft Docs"
+title: "Gewusst wie: Lesen von und Schreiben in Dokumenteigenschaften"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Exemplarische Vorgehensweise: Aufrufen von Code von VBA in einem Visual Basic-Projekt | Microsoft Docs"
+title: "Exemplarische Vorgehensweise: Aufrufen von Code von VBA in einem Visual Basic-Projekt"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

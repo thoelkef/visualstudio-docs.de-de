@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Sch&#252;tzen von Dokumenten und Dokumentteilen | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Sch&#252;tzen von Dokumenten und Dokumentteilen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

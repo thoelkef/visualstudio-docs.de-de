@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Kopieren von Arbeitsbl&#228;ttern | Microsoft Docs"
+title: "Gewusst wie: Programmgesteuertes Kopieren von Arbeitsbl&#228;ttern"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

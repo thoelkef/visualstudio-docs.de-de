@@ -1,5 +1,5 @@
 ---
-title: "Erste Schritte beim Programmieren von Anpassungen auf Dokumentebene f&#252;r Excel | Microsoft Docs"
+title: "Erste Schritte beim Programmieren von Anpassungen auf Dokumentebene f&#252;r Excel"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

@@ -1,5 +1,5 @@
 ---
-title: "Bereitstellungsmanifeste f&#252;r Office-Projektmappen | Microsoft Docs"
+title: "Bereitstellungsmanifeste f&#252;r Office-Projektmappen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

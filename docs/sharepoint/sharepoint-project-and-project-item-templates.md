@@ -1,5 +1,5 @@
 ---
-title: "Vorlagen f&#252;r SharePoint-Projekte und Projektelemente | Microsoft Docs"
+title: "Vorlagen f&#252;r SharePoint-Projekte und Projektelemente"
 ms.custom: ""
 ms.date: "02/22/2017"
 ms.prod: "visual-studio-dev14"

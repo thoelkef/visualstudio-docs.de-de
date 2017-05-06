@@ -1,5 +1,5 @@
 ---
-title: "Ausf&#252;hren von L&#246;sungen in unterschiedlichen Versionen von Microsoft Office | Microsoft Docs"
+title: "Ausf&#252;hren von L&#246;sungen in unterschiedlichen Versionen von Microsoft Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

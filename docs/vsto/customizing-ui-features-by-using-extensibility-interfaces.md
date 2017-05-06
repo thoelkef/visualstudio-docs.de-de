@@ -1,5 +1,5 @@
 ---
-title: "Anpassen von Features der Benutzeroberfl&#228;che mithilfe von Erweiterungsschnittstellen | Microsoft Docs"
+title: "Anpassen von Features der Benutzeroberfl&#228;che mithilfe von Erweiterungsschnittstellen"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

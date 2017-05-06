@@ -1,5 +1,5 @@
 ---
-title: "Zuordnen eines Formularbereichs zu einer Outlook-Nachrichtenklasse | Microsoft Docs"
+title: "Zuordnen eines Formularbereichs zu einer Outlook-Nachrichtenklasse"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

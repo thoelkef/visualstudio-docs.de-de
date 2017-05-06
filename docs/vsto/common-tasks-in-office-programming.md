@@ -1,5 +1,5 @@
 ---
-title: "H&#228;ufige Aufgaben bei der Programmierung mit Office | Microsoft Docs"
+title: "H&#228;ufige Aufgaben bei der Programmierung mit Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

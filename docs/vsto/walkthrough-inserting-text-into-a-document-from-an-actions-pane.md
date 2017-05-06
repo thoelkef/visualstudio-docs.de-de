@@ -1,5 +1,5 @@
 ---
-title: "Exemplarische Vorgehensweise: Einf&#252;gen von Text in ein Dokument aus einem Aktionsbereich | Microsoft Docs"
+title: "Exemplarische Vorgehensweise: Einf&#252;gen von Text in ein Dokument aus einem Aktionsbereich"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

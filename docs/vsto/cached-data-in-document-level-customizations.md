@@ -1,5 +1,5 @@
 ---
-title: "Zwischengespeicherte Daten in Anpassungen auf Dokumentebene | Microsoft Docs"
+title: "Zwischengespeicherte Daten in Anpassungen auf Dokumentebene"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

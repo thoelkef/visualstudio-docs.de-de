@@ -1,5 +1,5 @@
 ---
-title: "Verwalten von Dokumenten auf einem Server mit der ServerDocument-Klasse | Microsoft Docs"
+title: "Verwalten von Dokumenten auf einem Server mit der ServerDocument-Klasse"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

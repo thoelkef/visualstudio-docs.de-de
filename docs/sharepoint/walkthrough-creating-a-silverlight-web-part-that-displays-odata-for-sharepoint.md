@@ -1,5 +1,5 @@
 ---
-title: "Exemplarische Vorgehensweise: Erstellen eines Silverlight-Webparts, das OData f&#252;r SharePoint anzeigt | Microsoft Docs"
+title: "Exemplarische Vorgehensweise: Erstellen eines Silverlight-Webparts, das OData f&#252;r SharePoint anzeigt"
 ms.custom: ""
 ms.date: "02/22/2017"
 ms.prod: "visual-studio-dev14"

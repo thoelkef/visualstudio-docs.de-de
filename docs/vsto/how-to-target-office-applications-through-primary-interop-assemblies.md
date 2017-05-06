@@ -1,5 +1,5 @@
 ---
-title: "Verweisen auf Office-Anwendungen durch prim&#228;re Interopassemblys | Microsoft Docs"
+title: "Verweisen auf Office-Anwendungen durch prim&#228;re Interopassemblys"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

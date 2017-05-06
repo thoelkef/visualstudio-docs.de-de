@@ -1,5 +1,5 @@
 ---
-title: "Einschr&#228;nkungen f&#252;r Windows&#160;Forms-Steuerelemente in Office-Dokumenten | Microsoft Docs"
+title: "Einschr&#228;nkungen f&#252;r Windows&#160;Forms-Steuerelemente in Office-Dokumenten"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

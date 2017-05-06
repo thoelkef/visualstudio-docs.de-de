@@ -1,5 +1,5 @@
 ---
-title: "Prim&#228;re Interopassemblys in Office | Microsoft Docs"
+title: "Prim&#228;re Interopassemblys in Office"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

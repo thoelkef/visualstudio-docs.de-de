@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Ausblenden von Steuerelementen auf Arbeitsbl&#228;ttern beim Drucken | Microsoft Docs"
+title: "Gewusst wie: Ausblenden von Steuerelementen auf Arbeitsbl&#228;ttern beim Drucken"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

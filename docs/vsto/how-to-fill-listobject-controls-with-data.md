@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: F&#252;llen eines ListObject-Steuerelements mit Daten | Microsoft Docs"
+title: "Gewusst wie: F&#252;llen eines ListObject-Steuerelements mit Daten"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

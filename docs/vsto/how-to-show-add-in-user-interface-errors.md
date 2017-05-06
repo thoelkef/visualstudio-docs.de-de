@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Anzeigen von Add-In-Benutzeroberfl&#228;chenfehlern | Microsoft Docs"
+title: "Gewusst wie: Anzeigen von Add-In-Benutzeroberfl&#228;chenfehlern"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

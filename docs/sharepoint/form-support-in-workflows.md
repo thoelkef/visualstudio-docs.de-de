@@ -1,5 +1,5 @@
 ---
-title: "Unterst&#252;tung von Formularen in Workflows | Microsoft Docs"
+title: "Unterst&#252;tung von Formularen in Workflows"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"

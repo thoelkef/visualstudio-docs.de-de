@@ -1,5 +1,5 @@
 ---
-title: "Gewusst wie: Auff&#252;llen von Arbeitsbl&#228;ttern mit Daten aus einer Datenbank | Microsoft Docs"
+title: "Gewusst wie: Auff&#252;llen von Arbeitsbl&#228;ttern mit Daten aus einer Datenbank"
 ms.custom: ""
 ms.date: "02/02/2017"
 ms.prod: "visual-studio-dev14"
