@@ -36,18 +36,19 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 47c39bd711b69efdb863d71f11e3e472054a3ce3
 ms.openlocfilehash: 059dd2068c5aa0d55f94f293d8430a1f401354ba
+ms.contentlocale: de-de
 ms.lasthandoff: 04/06/2017
 
 ---
 # <a name="install-visual-studio-2017"></a>Installieren von Visual Studio 2017
-Willkommen Sie bei einer neuen Möglichkeit zur Installation von Visual Studio. Mit unserer neuesten Version können Sie nun ganz einfach nur die Funktionen auswählen und installieren, die Sie benötigen. Gleichzeitig wurde der Mindestspeicherplatz für Visual Studio reduziert, sodass die Installation schneller erfolgt und mit geringerer Beeinträchtigung des Systems verbunden ist, als je zuvor.  
+Willkommen Sie bei einer neuen Möglichkeit zur Installation von Visual Studio. Mit unserer neuesten Version können Sie nun ganz einfach nur die Funktionen auswählen und installieren, die Sie benötigen. Gleichzeitig wurde der Mindestspeicherplatz für Visual Studio reduziert, sodass die Installation schneller erfolgt und mit geringerer Beeinträchtigung des Systems verbunden ist, als je zuvor.
 
  Sie möchten mehr zu weiteren Neuerungen wissen? Sehen Sie sich die [Anmerkungen zur Version](https://www.visualstudio.com/news/releasenotes/vs15-relnotes) an. Ausführlichere Informationen zum neuen Design der Installationsumgebung finden Sie in den Blogbeiträgen „[Faster and leaner Visual Studio installer](https://blogs.msdn.microsoft.com/visualstudio/2016/04/01/faster-leaner-visual-studio-installer/)“ (Der schnellere und schlankere Visual Studio-Installer) sowie „[Anatomy of a low-impact Visual Studio installation](https://blogs.msdn.microsoft.com/visualstudio/2016/04/25/anatomy-of-a-low-impact-visual-studio-install/)“ (Anatomie einer Visual Studio-Installation mit geringen Auswirkungen).  
 
- Bereit für die Installation? Schauen Sie sich diese schrittweise Vorführung an. Fangen wir also an.  
+ Bereit für die Installation? Schauen Sie sich diese schrittweise Vorführung an. Fangen wir also an.
 
 ## <a name="install-the-installer"></a>Installieren des Installationsprogramms  
  Wenn Sie Visual Studio 2017 herunterladen, erhalten Sie eine Bootstrapperdatei, die wiederum das neue Lightweight-Installationsprogramm installiert. Dieses neue Installationsprogramm enthält alles, was Sie benötigen, um Ihre Installation anzupassen.  
