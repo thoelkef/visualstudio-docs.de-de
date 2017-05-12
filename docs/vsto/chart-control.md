@@ -1,0 +1,87 @@
+---
+title: "Chart-Steuerelement"
+ms.custom: ""
+ms.date: "02/02/2017"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "office-development"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "VST.ProjectItem.ExcelChart"
+dev_langs: 
+  - "VB"
+  - "CSharp"
+helpviewer_keywords: 
+  - "Chart-Steuerelement [Office-Entwicklung in Visual Studio]"
+  - "Chart-Steuerelement [Office-Entwicklung in Visual Studio], Datenbindung"
+  - "Chart-Steuerelement [Office-Entwicklung in Visual Studio], Ereignisse"
+ms.assetid: 64f1a7cc-cc66-47da-aaeb-44a62ae53909
+caps.latest.revision: 51
+author: "kempb"
+ms.author: "kempb"
+manager: "ghogen"
+caps.handback.revision: 50
+---
+# Chart-Steuerelement
+  Das <xref:Microsoft.Office.Tools.Excel.Chart>\-Steuerelement ist ein Diagrammobjekt, das Ereignisse verfügbar macht.  Beim Hinzufügen eines Diagramms zu einem Arbeitsblatt erstellt Visual Studio ein <xref:Microsoft.Office.Tools.Excel.Chart>\-Objekt, für das Sie direkt programmieren können, ohne das Objektmodell von Microsoft Office Excel zu durchlaufen.  
+  
+ [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
+  
+## Erstellen des Steuerelements  
+ Sie können einem Microsoft Office Excel\-Arbeitsblatt in einem Projekt auf Dokumentebene <xref:Microsoft.Office.Tools.Excel.Chart>\-Steuerelemente zur Entwurfszeit oder zur Laufzeit hinzufügen.  
+  
+ Sie können einem Arbeitsblatt <xref:Microsoft.Office.Tools.Excel.Chart>\-Steuerelemente zur Laufzeit in einem VSTO\-Add\-In hinzufügen.  Weitere Informationen finden Sie unter [Gewusst wie: Hinzufügen von Diagrammsteuerelementen zu Arbeitsblättern](../vsto/how-to-add-chart-controls-to-worksheets.md).  
+  
+> [!NOTE]  
+>  Dynamisch erstellte Diagrammobjekte werden nicht im Arbeitsblatt als Hoststeuerelemente dauerhaft gespeichert, wenn das Arbeitsblatt geschlossen wird.  Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+  
+## Formatierung  
+ Die gesamte Formatierung, die auf <xref:Microsoft.Office.Interop.Excel.Chart> angewendet werden kann, ist auch auf ein <xref:Microsoft.Office.Tools.Excel.Chart>\-Steuerelement anwendbar.  Dies umfasst Rahmen, Schriftarten, Diagrammtypen, Gitternetzlinien, Legenden und Datenbezeichnungen.  
+  
+## Ereignisse  
+ Die folgenden Ereignisse sind für das <xref:Microsoft.Office.Tools.Excel.Chart>\-Steuerelement verfügbar:  
+  
+-   <xref:Microsoft.Office.Tools.Excel.Chart.ActivateEvent>  
+  
+-   <xref:Microsoft.Office.Tools.Excel.Chart.BeforeDoubleClick>  
+  
+-   <xref:Microsoft.Office.Tools.Excel.Chart.BeforeRightClick>  
+  
+-   <xref:Microsoft.Office.Tools.Excel.Chart.BindingContextChanged>  
+  
+-   <xref:Microsoft.Office.Tools.Excel.Chart.Calculate>  
+  
+-   <xref:Microsoft.Office.Tools.Excel.Chart.Deactivate>  
+  
+-   <xref:System.ComponentModel.Component.Disposed>  
+  
+-   <xref:Microsoft.Office.Tools.Excel.Chart.DragOver>  
+  
+-   <xref:Microsoft.Office.Tools.Excel.Chart.DragPlot>  
+  
+-   <xref:Microsoft.Office.Tools.Excel.Chart.MouseDown>  
+  
+-   <xref:Microsoft.Office.Tools.Excel.Chart.MouseMove>  
+  
+-   <xref:Microsoft.Office.Tools.Excel.Chart.MouseUp>  
+  
+-   <xref:Microsoft.Office.Tools.Excel.Chart.Resize>  
+  
+-   <xref:Microsoft.Office.Tools.Excel.Chart.SelectEvent>  
+  
+-   <xref:Microsoft.Office.Tools.Excel.Chart.SeriesChange>  
+  
+## Siehe auch  
+ [Beispiele und exemplarische Vorgehensweisen für die Programmierung mit Office](../vsto/office-development-samples-and-walkthroughs.md)   
+ [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
+ [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)   
+ [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md)   
+ [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md)   
+ [Gewusst wie: Hinzufügen von Diagrammsteuerelementen zu Arbeitsblättern](../vsto/how-to-add-chart-controls-to-worksheets.md)   
+ [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md)   
+ [Programmgesteuerte Einschränkungen von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
+  
+  

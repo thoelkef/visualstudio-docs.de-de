@@ -1,0 +1,3 @@
+Wird in Microsoft Edge mit aktivierten, experimentelle Funktionen für JavaScript \(about:flags\) unterstützt. Siehe [Versionsinformationen](../../../javascript/reference/javascript-version-information.md).  
+  
+ Wird in den folgenden Dokumentmodi nicht unterstützt: Quirks, Internet Explorer 6 \(Standardmodus\), Internet Explorer 7 \(Standardmodus\), Internet Explorer 8 \(Standardmodus\), Internet Explorer 9 \(Standardmodus\), Internet Explorer 10 \(Standardmodus\) und Internet Explorer 11 \(Standardmodus\). Wird nicht in Windows 8 unterstützt.

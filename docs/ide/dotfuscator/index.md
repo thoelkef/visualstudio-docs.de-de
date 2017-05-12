@@ -1,6 +1,6 @@
 ---
 title: Dotfuscator Community Edition (CE) | Microsoft-Dokumentation
-ms.date: 2017-02-08
+ms.date: 2017-05-10
 ms.prod: visual-studio-dev15
 ms.devlang: dotnet
 ms.technology:
@@ -32,9 +32,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 507ff049dae50698d86e1536ed21ab982da1af85
 ms.openlocfilehash: a4dd4e0f9a8f6c89452bc20e05139dfa5d062e0f
+ms.contentlocale: de-de
 ms.lasthandoff: 02/22/2017
 
 ---
@@ -43,6 +44,8 @@ ms.lasthandoff: 02/22/2017
 
 *PreEmptive Protection – Dotfuscator* bietet umfassenden Schutz für .NET-Anwendungen, der problemlos in den sicheren Lebenszyklus der Softwareentwicklung passt. Verwenden Sie die Lösung, um Desktop-, mobile, Server- und eingebettete Anwendungen zu härten, zu schützen und zu bereinigen. Dadurch können Sie Geschäftsgeheimnisse und sonstiges geistiges Eigentum sichern, Piraterie und Fälschungen reduzieren und Schutz vor Manipulationen und nicht autorisiertem Debuggen bieten.
 Dotfuscator arbeitet in kompilierten Assemblys ohne zusätzliche Programmierung und sogar ohne Zugriff auf den Quellcode.
+
+![](media/header.svg)
 
 ## <a name="why-protection-matters"></a>Gründe für die Bedeutung von Schutz
 
@@ -121,3 +124,4 @@ Ausführliche Anweisungen zur Verwendung finden Sie im [vollständigen Dotfuscat
 [features]: https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/analytics_features.html
 
 [full]: https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/index.html
+
