@@ -1,421 +1,483 @@
 ---
-title: "Schriftarten und Formatierungen f&#252;r Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Schriftarten und Formatierungen für Visual Studio | Microsoft Docs"
+ms.custom: 
+ms.date: 04/26/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 caps.latest.revision: 5
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 5
----
-# Schriftarten und Formatierungen f&#252;r Visual Studio
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Machine Translation
+ms.sourcegitcommit: 9524ecc3cadef58821fba857de8e82e59eea9b43
+ms.openlocfilehash: c55c135034f5b3b2dd09ccf94e22e56e8f04797e
+ms.contentlocale: de-de
+ms.lasthandoff: 05/04/2017
 
-##  <a name="BKMK_TheEnvironmentFont"></a> Die Umgebungsschriftart  
- Alle Zeichen innerhalb von Visual Studio müssen der Benutzer für die Anpassung verfügbar gemacht werden. Dies geschieht hauptsächlich durch die **Schriftarten und Farben** Seite der **Tools \> Optionen** Dialogfeld. Die drei Hauptkategorien von Schriftarten sind:  
+---
+# <a name="fonts-and-formatting-for-visual-studio"></a>Schriftarten und Formatierungen für Visual Studio
+##  <a name="BKMK_TheEnvironmentFont"></a>Die Umgebungsschriftart verwendet  
+ Alle Schriftarten in Visual Studio müssen der Benutzer für die Anpassung verfügbar gemacht werden. Dies erfolgt in erster Linie durch die **Schriftarten und Farben** auf der Seite der **Tools > Optionen** Dialogfeld. Die drei Hauptkategorien von schriftarteinstellungen sind:  
   
--   **Umgebungsschriftart** – die primäre Schriftart für die IDE \(integrated Development Environment\), für alle Elemente der Benutzeroberfläche, z. B. Dialogfelder, Menüs, Toolfenstern und Dokumentfenstern. Standardmäßig ist die Umgebungsschriftart an eine Systemschriftart gebunden, die als 9 pt Segoe UI in aktuellen Versionen von Windows angezeigt. Mithilfe einer Schriftart für alle Elemente der Benutzeroberfläche, eine einheitliche Schriftarten Darstellung in der IDE sichergestellt.  
+-   **Umgebungsschriftart** – die primäre Schriftart für die IDE (integrated Development Environment), für alle Elemente der Benutzeroberfläche, z. B. Dialogfelder, Menüs, Toolfenstern und Dokumentfenstern verwendet. Standardmäßig ist die Umgebungsschriftart an eine Systemschriftart gebunden, die als 9 pt Segoe UI in der aktuellen Version von Windows angezeigt wird. Verwenden eine Schriftart für alle Elemente der Benutzeroberfläche kann sichergestellt werden eine konsistente Schriftart Darstellung in der IDE.  
   
--   **Texteditor** \-Elementen, die Flächen in Code und andere textbasierte Editoren im Text\-Editor angepasst werden können, Seite **Tools \> Optionen**.  
+-   **Text-Editor** -Elementen, die im Code und andere-Oberfläche textbasierten Editoren im Text-Editor angepasst werden können, auf der Seite **Tools > Optionen**.  
   
--   **Bestimmte Sammlungen** – Designerfenstern, die Anpassung ihrer Elemente der Benutzeroberfläche unter Umständen Schriftarten speziell für ihren Entwurf ausgesetzt bieten eigene Einstellungen auf der Seite auf Fläche **Tools \> Optionen**.  
+-   **Bestimmte Sammlungen** – Designerfenstern, die Anpassung ihrer Elemente der Benutzeroberfläche, Schriftarten, die spezifisch für ihren Entwurf kann ausgesetzt bieten Oberfläche in ihre eigenen Seite "Einstellungen" in **Tools > Optionen**.  
   
-### Anpassung der Editor\-Schriftart und Größe  
- Benutzer werden häufig vergrößern oder verkleinern die Größe und\/oder die Farbe des Texts im Editor entsprechend ihren Einstellungen, unabhängig von der allgemeinen\-Benutzeroberfläche. Da die Umgebungsschriftart auf Elemente verwendet wird, die in oder als Teil einer Editor\-Designer angezeigt werden, ist es wichtig, das erwartete Verhalten beachten, wenn einer dieser Klassifizierungen Schriftart geändert wird.  
+### <a name="editor-font-customization-and-resizing"></a>Editor-Schriftart-Anpassung und Ändern der Größe  
+ Benutzer werden häufig vergrößern oder Verkleinern der Größe und/oder die Farbe des Texts im Editor entsprechend ihre Voreinstellung, unabhängig von der allgemeinen-Benutzeroberfläche. Da die Umgebungsschriftart für Elemente, die innerhalb oder als Teil einer-Editor-Designer angezeigt werden verwendet wird, ist es wichtig, um das erwartete Verhalten beachten, wenn einer dieser Klassifizierungen Schriftart geändert wird.  
   
- Beim Erstellen der UI\-Elemente in Editor, jedoch sind nicht Teil der *Inhalt*, es ist wichtig, die Umgebungsschriftart und nicht die Schriftart des Texts zu verwenden, sodass Elemente in einer vorhersagbaren Weise angepasst werden.  
+ Beim Erstellen der UI-Elemente, die angezeigt werden im Editor, aber sind nicht Teil der *Inhalt*, es ist wichtig, die Umgebungsschriftart verwendet und nicht die Schriftart des Texts zu verwenden, damit Elemente auf einer vorhersagbaren Weise ändern.  
   
-1.  Von Code in den Editor Größe mit Code Text festgelegt, und der Editor Text Zoomstufe beantworten.  
+1.  Für den Codetext im Editor die mit dem Code Text schriftarteinstellung Größe und zur Zoomstufe für den Editor Text zu reagieren.  
   
-2.  Alle anderen Elemente der Benutzeroberfläche der Umgebung Schriftart Einstellung gebunden werden soll, und klicken Sie auf globale Änderungen in der Umgebung reagieren. Dies umfasst \(aber nicht beschränkt auf\):  
+2.  Alle anderen Elemente der Benutzeroberfläche an Schriftart umgebungseinstellung gebunden werden soll und auf alle globalen Änderungen in der Umgebung reagieren. Dies umfasst (aber nicht beschränkt auf):  
   
     -   Text in Kontextmenüs  
   
-    -   Text in einem Zusatzelement Editor, z. B. Glühbirne Menütext, schnelle Suchen Editorbereich, und navigieren Sie zum Bereich  
+    -   Text in eine Editor-Randsteuerelement wie Glühbirne Menütext, Schnellsuche-Editorfenster, und navigieren Sie zum Bereich  
   
-    -   Beschriften von Text in Dialogfeldern, z. B. in Dateien suchen oder Umgestalten  
+    -   Bezeichnen von Text in Dialogfeldern, z. B. **in Dateien suchen** oder **Umgestalten**  
   
-### Zugreifen auf die Umgebungsschriftart  
- In WinForms oder systemeigenen Code, die Umgebungsschriftart ist möglich durch Aufrufen der Methode **IUIHostLocale::GetDialogFont** nach der Abfrage der Schnittstelle aus der SID\_SUIHostLocale\-Dienst.  
+### <a name="accessing-the-environment-font"></a>Zugreifen auf die Umgebungsschriftart verwendet  
+ Im einheitlichen Modus oder WinForms-Code, der Umgebungsschriftart möglich durch Aufrufen der Methode `IUIHostLocale::GetDialogFont` nach der Abfrage der Schnittstelle aus dem `SID_SUIHostLocale` Dienst.  
   
- Für Windows Presentation Foundation \(WPF\), der Shell die Dialogfeld\-Fensterklasse abgeleitet **DialogWindow** \-Klasse anstelle der WPF **Fenster** Klasse.  
+ Für Windows Presentation Foundation (WPF), leiten Sie eine Dialogfeld Fenster-Klasse von der Shell `DialogWindow` Klasse anstelle der WPF `Window` Klasse.  
   
- In XAML sieht der Code folgendermaßen aus:  
-  
-```  
-<ui:DialogWindow x:Class"MyNameSpace.MyWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:s="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:ui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.11.0" ShowInTaskbar="False" WindowStartupLocation="CenterOwner" Title="My Dialog"> </ui:DialogWindow> code behind: internal partial class WebConfigModificationWindow : DialogWindow { }  
+ In XAML sieht der Code:  
   
 ```  
+<ui:DialogWindow  
+    x:Class"MyNameSpace.MyWindow"  
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
+    xmlns:s="http://schemas.microsoft.com/winfx/2006/xaml"  
+    xmlns:ui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.11.0"  
+    ShowInTaskbar="False"  
+    WindowStartupLocation="CenterOwner"  
+    Title="My Dialog">  
+</ui:DialogWindow>  
   
- \(Ersetzen Sie `Microsoft.VisualStudio.Shell.11.0` mit der aktuellen Version der Dll MPF.\)  
+code behind:  
   
- Um das Dialogfeld anzuzeigen, rufen Sie "**ShowModal\(\)**" für die Klasse über **OpenFileDialog**.**ShowModal\(\)** legt den richtigen modalen Status in der Shell, wird sichergestellt, das Dialogfeld ist zentriert im übergeordneten Fenster und So weiter.  
-  
- Der Code lautet wie folgt:  
-  
-```  
-MyWindow window = new MyWindow(); window.ShowModal()  
-  
-```  
-  
- **ShowModal** gibt einen booleschen Wert? \(auf NULL festlegbare Boolean\) mit den **DialogResult**, die verwendet werden kann, falls erforderlich. Der Rückgabewert ist True, wenn das Dialogfeld geschlossen wurde, mit **OK**.  
-  
- Wenn Sie einige WPF UI, das ist ein Dialogfeld, und befindet sich in einem eigenen anzeigen müssen **HwndSource**, z. B. ein Popup\-Fenster oder ein untergeordnetes Fenster WPF, der eine Win32\/WinForms übergeordneten Fenster, müssen Sie festlegen der **FontFamily** und **FontSize** für das Stammelement der WPF\-Elements. \(Die Shell die Eigenschaften für das Hauptfenster festgelegt, aber wird nicht nach einem HWND vererbt werden\). Die Shell stellt Ressourcen, die an die Eigenschaften können, wie folgt gebunden werden:  
-  
-```  
-<Setter property="FontFamily" Value="{DynamicResource VsFont.EnvironmentFontFamily}" /> <Setter property="FontSize" Value="{DynamicResource VsFont.EnvironmentFontSize}" />  
-  
+internal partial class WebConfigModificationWindow : DialogWindow  
+{  
+}  
 ```  
   
-###  <a name="BKMK_Formatting"></a> Formatierung \(Skalierung\/\-Stärke\)\-Referenz  
- Einige Dialogfelder erfordern bestimmte Text fett formatiert wird oder eine andere Größe als die Umgebungsschriftart. Bisher waren die Schriftarten, die größer als die Umgebungsschriftart codierten als "Umgebungsschriftart \+ 2" oder ähnlich. Mithilfe der bereitgestellten Codeausschnitte wird Hochauflösenden Monitors unterstützen und sicherzustellen, dass Anzeigetext immer an die richtige Größe und Gewicht \(z. B. "Light" oder "Semilight"\) angezeigt wird.  
+ (Ersetzen Sie `Microsoft.VisualStudio.Shell.11.0` mit der aktuellen Version der Dll MPF.)  
   
-> **Hinweis: Bevor Sie die Formatierung anwenden, sicherzustellen, folgen Sie die Anleitung finden Sie in [Textstil](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).**  
+ Um das Dialogfeld anzuzeigen, rufen Sie "`ShowModal()`" für die Klasse über `ShowDialog()`. `ShowModal()`den richtigen modalen Status in der Shell wird festgelegt, wird sichergestellt, dass das Dialogfeld "in das übergeordnete Fenster usw. zentriert ist.  
   
- Legen Sie den Stil des TextBlock oder der Bezeichnung wie angegeben, um die Umgebungsschriftart zu skalieren. Alle diese Codeausschnitte ordnungsgemäß verwendet wird, wird die richtige Schriftart, einschließlich der entsprechenden Größe und Gewicht Variationen generiert.  
-  
- "Vsui" ist, in dem ein Verweis auf den Namespace Microsoft.VisualStudio.Shell:  
+ Der Code sieht folgendermaßen aus:  
   
 ```  
-xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"  
-  
+MyWindow window = new MyWindow();  
+window.ShowModal()  
 ```  
   
-#### Umgebungsschriftart 375 % \+ dünne Darstellung  
+ `ShowModal`Gibt einen booleschen Wert an? (NULL-Werte zulässt, Boolean) mit der `DialogResult`, die bei Bedarf verwendet werden können. Der Rückgabewert ist true, wenn das Dialogfeld geschlossen wurde, mit **OK**.  
+  
+ Wenn Sie einige WPF UI, das ein Dialogfeld ist und gehostet wird in eine eigene anzeigen müssen `HwndSource`, z. B. ein Popupfenster oder ein untergeordnetes Fenster WPF, der eine Win32/WinForms übergeordnete Fenster, müssen Sie festlegen der `FontFamily` und `FontSize` für das Stammelement des WPF-Elements. (Die Shell legt die Eigenschaften fest, auf das Hauptfenster, aber wird nicht nach geerbt werden eine `HWND`). Die Shell stellt Ressourcen, die an die die Eigenschaften können, wie folgt gebunden werden:  
+  
+```  
+<Setter property="FontFamily" Value="{DynamicResource VsFont.EnvironmentFontFamily}" />  
+<Setter property="FontSize" Value="{DynamicResource VsFont.EnvironmentFontSize}" />  
+```  
+  
+###  <a name="BKMK_Formatting"></a>Formatierung (Skalierung/Fettformatieren)-Referenz  
+ Einige Dialogfelder erforderlich bestimmtem Text fett formatiert wird eine Größe als die Umgebungsschriftart verwendet wird. Zuvor, Schriftarten, die größer als die Umgebungsschriftart codiert wurde, als "`environment font +2`" oder ähnliches. Mithilfe der bereitgestellten Codeausschnitte wird Unterstützung hoher DPI-Einstellung überwacht, und stellen Sie sicher, dass Anzeigetext immer an die richtige Größe und Gewicht (z. B. Licht oder halb dünne Darstellung) angezeigt wird.  
+  
+> **Hinweis: Bevor Sie die Formatierung anwenden, stellen Sie sicher sind Sie die Anleitungen in die folgenden [Textart](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).**  
+  
+ Wenn die Umgebungsschriftart skaliert werden sollen, legen Sie den Stil der TextBlock oder Bezeichnung wie angegeben. Jede diese Codeausschnitte, die bei korrekter Verwendung generiert die richtige Schriftart, einschließlich der entsprechenden Größe und Gewicht Variationen.  
+  
+ Wobei "`vsui`" ist ein Verweis auf den Namespace `Microsoft.VisualStudio.Shell`:  
+  
+```  
+xmlns:vsui="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0" 
+```  
+  
+#### <a name="375-environment-font--light"></a>Umgebungsschriftart 375 % + dünne Darstellung  
  **Wird als:** 34 pt Segoe UI Light  
-  
- **Für verwenden:** \(selten\) eindeutig mit Branding\-Benutzeroberfläche, z. B. die Startseite  
-  
- **Prozedurcode:** in denen "TextBlock" wird eine zuvor definierte TextBlock und "Label" ist eine zuvor definierte Bezeichnung.  
-  
-```  
-textBlock.SetResourceReference(TextBlock.StyleProperty, VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey); label.SetResourceReference(Label.StyleProperty, VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey);  
+ **Verwendung:** (selten) eindeutige Marke Benutzeroberfläche, z. B. auf der Startseite
+
+ **Prozeduraler Code:** , in denen `textBlock` ist ein zuvor definierter TextBlock und `label` ist eine zuvor definierte Bezeichnung:  
   
 ```  
-  
- **XAML:** legen Sie den Stil des TextBlock oder der Bezeichnung wie dargestellt.  
-  
-```  
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock> <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey}}">Label: 375 Percent Scaling</Label>  
-  
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
+        VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey);  
 ```  
   
-#### Umgebungsschriftart 310 % \+ dünne Darstellung  
- **Wird als:** 28 pt Segoe UI Light  
-  
- **Für verwenden:** große Signatur Dialogfeld Titel, main Überschrift in Berichten  
-  
- **Prozedurcode:** in denen "TextBlock" wird eine zuvor definierte TextBlock und "Label" ist eine zuvor definierte Bezeichnung.  
+ **XAML:** den Stil der TextBlock oder Bezeichnung wie dargestellt festgelegt.  
   
 ```  
-textBlock.SetResourceReference(TextBlock.StyleProperty, VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey); label.SetResourceReference(Label.StyleProperty, VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey);  
-  
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment375PercentFontSizeStyleKey}}">TextBlock: 375 Percent Scaling</TextBlock>   
+<Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment375PercentFontSizeStyleKey}}">Label: 375 Percent Scaling</Label>  
 ```  
   
- **XAML:** legen Sie den Stil des TextBlock oder der Bezeichnung wie dargestellt.  
+#### <a name="310-environment-font--light"></a>Umgebungsschriftart 310 % + dünne Darstellung  
+ **Wird als:** 28 pt Segoe UI Light   
+ **Verwendung:** große Signatur Dialogfeld Titel, main Überschrift in Berichten  
+  
+ **Prozeduraler Code:** , in denen `textBlock` ist ein zuvor definierter TextBlock und `label` ist eine zuvor definierte Bezeichnung:  
   
 ```  
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey}}">TextBlock: 310 Percent Scaling</TextBlock> <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey}}">Label: 310 Percent Scaling</Label>  
-  
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
+        VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey);    
 ```  
   
-#### Umgebungsschriftart 200 % \+ halb dünne Darstellung  
- **Wird als:** 18 pt Segoe UI Semilight  
-  
- **Für verwenden:** Unterüberschriften, Titel in kleinen und mittleren Dialogfelder  
-  
- **Prozedurcode:** in denen "TextBlock" wird eine zuvor definierte TextBlock und "Label" ist eine zuvor definierte Bezeichnung.  
+ **XAML:** den Stil der TextBlock oder Bezeichnung wie dargestellt festgelegt.  
   
 ```  
-textBlock.SetResourceReference(TextBlock.StyleProperty, VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey); label.SetResourceReference(Label.StyleProperty, VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey);  
-  
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment310PercentFontSizeStyleKey}}">TextBlock: 310 Percent Scaling</TextBlock>   
+<Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment310PercentFontSizeStyleKey}}">Label: 310 Percent Scaling</Label>     
 ```  
   
- **XAML:** legen Sie den Stil des TextBlock oder der Bezeichnung wie dargestellt.  
+#### <a name="200-environment-font--semilight"></a>Umgebungsschriftart 200 % + halb dünne Darstellung  
+ **Wird als:** 18 pt Segoe UI semilight als    
+ **Verwendung:** Aufgliederung, Titel in kleinen und mittleren Dialogfeldern  
+  
+ **Prozeduraler Code:** , in denen `textBlock` ist ein zuvor definierter TextBlock und `label` ist eine zuvor definierte Bezeichnung: 
   
 ```  
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey}}">TextBlock: 200 Percent Scaling</TextBlock> <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey}}">Label: 200 Percent Scaling</Label>  
-  
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
+        VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey);    
 ```  
   
-#### Umgebungsschriftart mit 155 %  
- **Wird als:** 14 pt Segoe UI  
-  
- **Für verwenden:** Abschnittsüberschriften in Dokument auch Benutzeroberflächen oder Berichten  
-  
- **Prozedurcode:** in denen "TextBlock" wird eine zuvor definierte TextBlock und "Label" ist eine zuvor definierte Bezeichnung.  
+ **XAML:** den Stil der TextBlock oder Bezeichnung wie dargestellt festgelegt:  
   
 ```  
-textBlock.SetResourceReference(TextBlock.StyleProperty, VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey); label.SetResourceReference(Label.StyleProperty, VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey);  
-  
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment200PercentFontSizeStyleKey}}">TextBlock: 200 Percent Scaling</TextBlock>   
+<Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment200PercentFontSizeStyleKey}}">Label: 200 Percent Scaling</Label>    
 ```  
   
- **XAML:** legen Sie den Stil des TextBlock oder der Bezeichnung wie dargestellt.  
+#### <a name="155-environment-font"></a>Umgebungsschriftart mit 155 %  
+ **Wird als:** 14 pt Segoe UI    
+ **Verwendung:** Überschriften im Dokument gut Benutzeroberflächen oder Berichten  
+  
+ **Prozeduraler Code:** , in denen `textBlock` ist ein zuvor definierter TextBlock und `label` ist eine zuvor definierte Bezeichnung:  
   
 ```  
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey}}">TextBlock: 155 Percent Scaling</TextBlock> <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey}}">Label: 155 Percent Scaling</Label>  
-  
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
+        VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey);    
 ```  
   
-#### Umgebungsschriftart mit 133 %  
- **Wird als:** 12 pt Segoe UI  
-  
- **Für verwenden:** kleinere Unterüberschriften Signatur Dialoge und Dokument und Benutzeroberfläche  
-  
- **Prozedurcode:** in denen "TextBlock" wird eine zuvor definierte TextBlock und "Label" ist eine zuvor definierte Bezeichnung.  
+ **XAML:** den Stil der TextBlock oder Bezeichnung wie dargestellt festgelegt:  
   
 ```  
-textBlock.SetResourceReference(TextBlock.StyleProperty, VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey); label.SetResourceReference(Label.StyleProperty, VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey);  
-  
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment155PercentFontSizeStyleKey}}">TextBlock: 155 Percent Scaling</TextBlock>   
+<Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment155PercentFontSizeStyleKey}}">Label: 155 Percent Scaling</Label>  
 ```  
   
- **XAML:** legen Sie den Stil des TextBlock oder der Bezeichnung wie dargestellt.  
+#### <a name="133-environment-font"></a>Umgebungsschriftart mit 133 %  
+ **Wird als:** 12 pt Segoe UI    
+ **Verwendung:** kleinere Aufgliederung Signatur Dialogfelder und Dokument gut UI  
+  
+ **Prozeduraler Code:** , in denen `textBlock` ist ein zuvor definierter TextBlock und `label` ist eine zuvor definierte Bezeichnung:  
   
 ```  
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey}}">TextBlock: 133 Percent Scaling</TextBlock> <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey}}">Label: 133 Percent Scaling</Label>  
-  
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
+        VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey);    
 ```  
   
-#### Umgebungsschriftart mit 122 %  
- **Wird als:** 11 pt Segoe UI  
-  
- **Für verwenden:** Abschnitt Überschriften in der Signatur Dialoge, top\-Knoten in der Strukturansicht vertikaler Tabulator\-Navigation  
-  
- **Prozedurcode:** in denen "TextBlock" wird eine zuvor definierte TextBlock und "Label" ist eine zuvor definierte Bezeichnung.  
+ **XAML:** den Stil der TextBlock oder Bezeichnung wie dargestellt festgelegt:  
   
 ```  
-textBlock.SetResourceReference(TextBlock.StyleProperty, VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey); label.SetResourceReference(Label.StyleProperty, VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey);  
-  
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment133PercentFontSizeStyleKey}}">TextBlock: 133 Percent Scaling</TextBlock>   
+<Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment133PercentFontSizeStyleKey}}">Label: 133 Percent Scaling</Label>    
 ```  
   
- **XAML:** legen Sie den Stil des TextBlock oder der Bezeichnung wie dargestellt.  
+#### <a name="122-environment-font"></a>Umgebungsschriftart mit 122 %  
+ **Wird als:** 11 pt Segoe UI    
+ **Verwendung:** Abschnitt Überschriften in Dialogfeldern Signatur, die ersten Knoten in der Strukturansicht vertikaler Tabulator-Navigation  
+  
+ **Prozeduraler Code:** , in denen `textBlock` ist ein zuvor definierter TextBlock und `label` ist eine zuvor definierte Bezeichnung:  
   
 ```  
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey}}">TextBlock: 122 Percent Scaling</TextBlock> <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey}}">Label: 122 Percent Scaling</Label>  
-  
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
+        VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey);    
 ```  
   
-#### Umgebungsschriftart \+ fett  
- **Wird als:** Fett 9 pt Segoe UI  
-  
- **Für verwenden:** Bezeichnungen und Unterüberschriften in Signatur Dialogfelder, Berichte und Dokument und Benutzeroberfläche  
-  
- **Prozedurcode:** in denen "TextBlock" wird eine zuvor definierte TextBlock und "Label" ist eine zuvor definierte Bezeichnung.  
+ **XAML:** den Stil der TextBlock oder Bezeichnung wie dargestellt festgelegt:  
   
 ```  
-textBlock.SetResourceReference(TextBlock.StyleProperty, VsResourceKeys.TextBlockEnvironmentBoldStyleKey); label.SetResourceReference(Label.StyleProperty, VsResourceKeys.LabelEnvironmentBoldStyleKey);  
-  
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironment122PercentFontSizeStyleKey}}">TextBlock: 122 Percent Scaling</TextBlock>   
+<Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironment122PercentFontSizeStyleKey}}">Label: 122 Percent Scaling</Label>    
 ```  
   
- **XAML:** legen Sie den Stil des TextBlock oder der Bezeichnung wie dargestellt.  
+#### <a name="environment-font--bold"></a>Umgebungsschriftart + fett  
+ **Wird als:** Fett 9 pt Segoe UI    
+ **Verwendung:** Bezeichnungen und untergeordnete in Signatur Dialogfelder, Berichte und Dokumente sowie UI  
+  
+ **Prozeduraler Code:** , in denen `textBlock` ist ein zuvor definierter TextBlock und `label` ist eine zuvor definierte Bezeichnung:  
   
 ```  
-<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironmentBoldStyleKey}}"> Bold TextBlock</TextBlock> <Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironmentBoldStyleKey}}"> Bold Label</Label>  
-  
+textBlock.SetResourceReference(TextBlock.StyleProperty,    
+        VsResourceKeys.TextBlockEnvironmentBoldStyleKey);   
+label.SetResourceReference(Label.StyleProperty,    
+        VsResourceKeys.LabelEnvironmentBoldStyleKey);    
 ```  
   
-### Lokalisierbare Stile  
- In einigen Fällen müssen Lokalisierer Schriftschnitte für verschiedene Gebietsschemas, z. B. das Entfernen von\-Stärke aus Text für ostasiatische Sprachen zu ändern. Um die Lokalisierung von Schriftarten zu ermöglichen, müssen diese Formate in der RESX\-Datei sein. Die beste Möglichkeit, dies und noch bearbeiten Schriftschnitte in der Visual Studio\-Formular\-Designer ist die Schriftarten zur Entwurfszeit explizit festlegen. Obwohl dies ein Schriftartobjekt für die vollständige erstellt und scheint unterbrechen die Vererbung von übergeordneten Schriftarten, wird nur die FontStyle\-Eigenschaft verwendet, die Schriftart fest.  
-  
- Die Lösung besteht darin, Verknüpfen des Formulars Dialog **FontChanged** Ereignis. In der **FontChanged** Ereignis, das Durchlaufen aller Steuerelemente, und überprüfen Sie, ob die Schriftart festgelegt ist. Wenn sie festgelegt ist, ändern Sie ihn auf eine neue Schriftart basierend auf der Schriftart des Formulars und vorherigen Schriftart des Steuerelements. Ein Beispiel dafür im Code ist:  
+ **XAML:** den Stil der TextBlock oder Bezeichnung wie dargestellt festgelegt:  
   
 ```  
-private void Form1_FontChanged(object sender, System.EventArgs e) { SetFontStyles(); } /// <summary> /// SetFontStyles - This function will iterate all controls on a page /// and recreate their font with the desired fontstyle. /// It should be called in the OnFontChanged handler (and also in the constructor /// in case the IUIService is not available so OnFontChange doesn't fire). /// This way, when the VS shell font is given to us the controls that have /// a different style for the font (bolded for example) will recreate their font /// and use the VS shell font but with a style variation (bolded ...). /// </summary> protected void SetFontStyles() { SetFontStyles(this, this, this.Font); } protected static void SetFontStyles(Control topControl, Control parent, Font referenceFont) { foreach(Control c in parent.Controls) { if (c.Controls != null && c.Controls.Count > 0) { SetFontStyles(topControl, c, referenceFont); } if (c.Font != topControl.Font) { c.Font = new Font(referenceFont, c.Font.Style); } } }  
+<TextBlock Style="{DynamicResource {x:Static vsui:VsResourceKeys.TextBlockEnvironmentBoldStyleKey}}"> Bold TextBlock</TextBlock>   
+<Label Style="{DynamicResource {x:Static vsui:VsResourceKeys.LabelEnvironmentBoldStyleKey}}"> Bold Label</Label>    
 ```  
   
- Mit diesem Code wird sichergestellt, dass bei der Aktualisierung der Schriftart des Formulars sowie die Schriftarten Steuerelemente aktualisiert werden. Diese Methode sollte ebenfalls vom Konstruktor des Formulars aufgerufen werden, da das Dialogfeld fehlschlagen kann, um eine Instanz des **IUIService** und **FontChanged** Ereignis wird nie ausgelöst. Einbinden von **FontChanged** können Dialoge dynamisch die neue Schriftart auswählen, auch wenn das Dialogfeld bereits geöffnet ist.  
+### <a name="localizable-styles"></a>Lokalisierbare Stile  
+ In einigen Fällen müssen Lokalisierungsexperten Schriftschnitte für verschiedene Gebietsschemas, z. B. Fettformatieren von Text für ostasiatische Sprachen entfernen ändern. Um die Lokalisierung von Schriftschnitte möglich ist, müssen diese Stile in die RESX-Datei sein. Die beste Möglichkeit, dies zu erreichen und trotzdem bearbeiten Schriftschnitte in der Visual Studio-Formular-Designer ist die Schriftschnitte zur Entwurfszeit explizit festlegen. Obwohl dies eine vollständige Font-Objekt erstellt und scheinen unterbrechen die Vererbung von übergeordneten Schriftarten, wird der FontStyle-Eigenschaft verwendet, die Schriftart fest.  
   
-### Testen die Umgebungsschriftart  
- Um sicherzustellen, dass die Benutzeroberfläche die Umgebungsschriftart und die Einstellungen berücksichtigt, öffnen **Extras \> Optionen \> Umgebung \> Schriftarten und Farben** und wählen Sie unter "Umgebungsschriftart" der "Einstellungen anzeigen für:" im Dropdown\-Menü.  
+ Die Lösung besteht darin, Verknüpfen des Formulars Dialog `FontChanged` Ereignis. In der `FontChanged` -Ereignis, alle Steuerelemente zu durchlaufen, und überprüfen Sie, ob ihre Schriftart festgelegt ist. Wenn sie festgelegt ist, ändern Sie ihn auf eine neue Schriftart auf Grundlage des Formulars Schriftart und vorherigen Schriftschnitt des Steuerelements ein. Ein Beispiel dafür im Code ist:  
   
- ![Fonts and Colors page in Tools &#62; Options dialog](../../extensibility/ux-guidelines/media/0201-a_optionsfonts.png "0201\-a\_OptionsFonts")  
+```  
+private void Form1_FontChanged(object sender, System.EventArgs e)  
+{  
+          SetFontStyles();  
+}  
   
- **Schriftarten und Farben Einstellungen im Menü Extras \> Dialogfeld "Optionen"**  
+/// <summary>  
+/// SetFontStyles - This function will iterate all controls on a page  
+/// and recreate their font with the desired fontstyle.  
+/// It should be called in the OnFontChanged handler (and also in the constructor  
+/// in case the IUIService is not available so OnFontChange doesn't fire).  
+/// This way, when the VS shell font is given to us the controls that have  
+/// a different style for the font (bolded for example) will recreate their font  
+/// and use the VS shell font but with a style variation (bolded ...).  
+/// </summary>   
+protected void SetFontStyles()  
+{  
+     SetFontStyles(this, this, this.Font);  
+}  
   
- Legen Sie die Schriftart auf etwas ganz anderes als die Standardeinstellung. Um es offensichtlich, die Benutzeroberfläche nicht aktualisiert wird, wählen Sie eine Schriftart mit Serifen \(z. B. "Times New Roman"\) und legen Sie sehr groß. Anschließend testen Sie die Benutzeroberfläche, um sicherzustellen, dass die Umgebung berücksichtigt. Hier ist ein Beispiel mit dem Dialogfeld Lizenz:  
+protected static void SetFontStyles(Control topControl, Control parent, Font referenceFont)  
+{  
+     foreach(Control c in parent.Controls)  
+     {  
+          if (c.Controls != null && c.Controls.Count > 0) {  
+               SetFontStyles(topControl, c, referenceFont);  
+          }  
+          if (c.Font != topControl.Font) {  
+               c.Font = new Font(referenceFont, c.Font.Style);  
+          }  
+     }  
+}  
+```  
   
- ![Example of dialog not using the environment font](../../extensibility/ux-guidelines/media/0201-b_wrongfontdialog.png "0201\-b\_WrongFontDialog")  
+ Mit diesem Code wird sichergestellt, dass bei der Aktualisierung des Formulars Schriftart sowie die Schriftarten Steuerelemente aktualisiert werden. Diese Methode sollte auch aus den Konstruktor des Formulars, aufgerufen werden, da das Dialogfeld "nicht, zum Abrufen einer Instanz des ausgeführt kann `IUIService` und `FontChanged` Ereignis wird nie ausgelöst. Einbinden `FontChanged` lässt Dialogfelder, um zu der neuen Schriftart dynamisch übernehmen, auch wenn das Dialogfeld "bereits geöffnet ist.  
   
- **Beispiel für Benutzeroberflächen\-Text, der berücksichtigen nicht die Umgebungsschriftart verwendet**  
+### <a name="testing-the-environment-font"></a>Testen der Umgebungsschriftart  
+ Um sicherzustellen, dass die Benutzeroberfläche der Umgebungsschriftart verwendet und die größeneinstellungen respektiert, öffnen Sie **Extras > Optionen > Umgebung > Schriftarten und Farben** , und wählen Sie unter "Umgebungsschriftart" der "Einstellungen anzeigen für:" Dropdown-Menü.  
   
- In diesem Fall werden "Benutzerinformationen" und "Produktinformationen" die Schriftart nicht beachten. In einigen Fällen möglicherweise eine explizite entwurfsentscheidung, aber es kann ein Fehler sein, wenn die explizite Schriftart nicht als Teil der Spezifikationen \(rote Linie\) angegeben wird.  
+ ![Schriftarten und Farben Einstellungen in den Tools &gt; Dialogfeld "Optionen"](../../extensibility/ux-guidelines/media/0201-a_optionsfonts.png "0201-a_OptionsFonts")<br />Schriftarten und Farben Einstellungen in den Tools &gt; Dialogfeld "Optionen"
   
- Um die Schriftart zurückzusetzen, klicken Sie auf "Standard verwenden" unter **Extras \> Optionen \> Umgebung \> Schriftarten und Farben**.  
+ Legen Sie etwas ganz anderes als die Standardzeit. Um es offensichtlich, die Benutzeroberfläche nicht aktualisiert wird, wählen Sie eine Schriftart mit Serifen (z. B. "Times New Roman") und legen Sie sehr groß. Anschließend testen Sie die Benutzeroberfläche, um sicherzustellen, dass die Umgebung berücksichtigt. Hier ist ein Beispiel mit dem Dialogfeld "Lizenz":  
   
-##  <a name="BKMK_TextStyle"></a> Textstil  
- Textformat bezieht sich auf den Schriftgrad, Gewichtung und Groß\-\/Kleinschreibung. Implementierungsleitfaden für die finden Sie unter [Die Umgebungsschriftart](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).  
+ ![Beispiel für die UI-Text, der berücksichtigen nicht die Umgebungsschriftart verwendet](../../extensibility/ux-guidelines/media/0201-b_wrongfontdialog.png "0201-b_WrongFontDialog")<br />Beispiel für die UI-Text, der berücksichtigen nicht die Umgebungsschriftart verwendet
   
-### Text Groß\-\/Kleinschreibung  
+ In diesem Fall werden "Benutzerinformationen" und "Produktinformationen" die Schriftart nicht ressourcenbezogene. In einigen Fällen möglicherweise einen expliziten Entwurfsoption allerdings möglich einen Fehler, wenn die explizite Schriftart nicht als Teil von den Spezifikationen (rote Linie) angegeben wird.  
   
-#### Großbuchstaben  
- Verwenden Sie nicht Großbuchstaben für Titel oder Bezeichnungen in Visual Studio.  
+ Um die Schriftart zurückzusetzen, klicken Sie auf "Standard verwenden" unter **Extras > Optionen > Umgebung > Schriftarten und Farben**.  
   
-#### Kleinbuchstaben  
- Verwenden Sie nur Kleinbuchstaben für Titeln oder Bezeichnungen in Visual Studio.  
+##  <a name="BKMK_TextStyle"></a>Textformat  
+ Textart bezieht sich auf Schriftgrad, Gewichtung und Groß-/Kleinschreibung. Implementierungsleitfaden für die finden Sie unter [der Umgebungsschriftart](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).  
   
-#### Satz\- und Titel Groß\-\/Kleinschreibung  
- Text in Visual Studio sollten Anfangsbuchstaben oder Großbuchstaben, je nach Situation verwenden.  
+### <a name="text-casing"></a>Text Groß-/Kleinschreibung  
   
-|Verwenden Sie für große Anfangsbuchstaben:|Verwenden Sie Großbuchstaben für:|  
-|------------------------------------------------|---------------------------------------|  
-|Dialogfeld\-Titel|Bezeichnungen|  
+#### <a name="all-caps"></a>GROSSBUCHSTABEN  
+ Verwenden Sie nicht alle gross für Titeln oder Bezeichnungen in Visual Studio.  
+  
+#### <a name="all-lowercase"></a>Kleinbuchstaben  
+ Verwenden Sie nicht alle Kleinbuchstaben für Titeln oder Bezeichnungen in Visual Studio.  
+  
+#### <a name="sentence-and-title-case"></a>Satz- und Titel Groß-/Kleinschreibung  
+ Text in Visual Studio sollten Anfangsbuchstaben oder Satz Groß-/Kleinschreibung, je nach Situation verwenden.  
+  
+|Verwenden Sie die Anfangsbuchstaben für:|Satz-Anwendungsfall für:|  
+|-------------------------|----------------------------|  
+|Dialogfeld-Titel|Bezeichnungen|  
 |Gruppenfelder|Kontrollkästchen|  
 |Menüelemente|Optionsfelder|  
 |Elemente des Kontextmenüs|Listenfeldelemente|  
 |Schaltflächen|Statusleisten|  
-|Tabelle labels||  
-|Spaltenüberschriften||  
+|Tabelle-Bezeichnungen||  
+|Spaltenheader||  
 |QuickInfos||  
   
-##### Großschreibung  
- Großschreibung ist ein Format, in dem die ersten Buchstaben der meisten oder alle Wörter in einem Satz groß geschrieben werden. In Visual Studio wird die Großschreibung für viele Elemente, einschließlich verwendet:  
+##### <a name="title-case"></a>Titel Groß-/Kleinschreibung  
+ Titel Groß-/Kleinschreibung ist ein Format, in dem die ersten Buchstaben der meisten oder alle Wörter in einem Satz groß geschrieben werden. In Visual Studio wird die Anfangsbuchstaben für viele Elemente, einschließlich verwendet:  
   
 -   **QuickInfos.** Beispiel: "Vorschau der ausgewählten Elemente"  
   
--   **Spaltenüberschriften.** Beispiel: "Antwort"  
+-   **Spaltenheader.** Beispiel: "Systemantwort"  
   
 -   **Menüelemente.** Beispiel: "Alle speichern"  
   
- Wenn große Anfangsbuchstaben verwenden, sind dies die Richtlinien für wann Wörter in Großbuchstaben umwandelt und wann lassen sie Kleinbuchstaben:  
+ Wenn Sie Titel Groß-/Kleinschreibung zu verwenden, sind dies die Richtlinien für wann Wörter in Großbuchstaben umwandelt und wann sie Kleinbuchstaben lassen:  
   
 |Großbuchstaben|Kommentare und Beispiele|  
-|--------------------|------------------------------|  
+|---------------|---------------------------|  
 |Alle Nomen||  
-|Alle Verben|Einschließlich "Is" und andere Arten von "werden"|  
-|Alle Adverbien|"Als" sowie ""|  
+|Alle Verben|Z. B. "Is" und andere Formen von "be"|  
+|Alle Adverbien|Einschließlich "Als" und ""|  
 |Alle Adjektive|Z. B. "This" und ""|  
-|Alle Pronomen|Einschließlich der Possessive "Die" sowie ", wird" ein Zusammenschluss der das Pronomen "it" und das Verb "is"|  
-|Vor\- und Nachnamen ausgedrückt, unabhängig von Wortarten||  
-|Präpositionen, in der ein Ausdruck sind|"Schließt alle Fenster" oder "Das System herunterzufahren"|  
-|Alle Buchstaben der Abkürzung|HTML, XML, URL, IDE, RGB|  
-|Die zweite Wort im ein zusammengesetztes Wort, wenn es ein Nomen oder Adjektiv, das richtige ist oder Wörter die gleiche Gewichtung haben|Querverweis vor Microsoft\-Software, Lese\-\/Schreibzugriff auf, die zur Laufzeit|  
+|Alle Pronomen|Einschließlich der Possessive "Der" sowie ", wird" ein Zusammenschluss der das Pronomen "es" und das Verb "is"|  
+|Vor- und Nachnamen Wörter, unabhängig von Wortarten||  
+|Präpositionen, die Teil eines Ausdrucks verb|"Alle Windows wird geschlossen" oder "Das System herunterzufahren"|  
+|Alle Buchstaben des Abkürzung|HTML, XML, URL, IDE, RGB|  
+|Die zweite word im ein zusammengesetztes Wort wird jedoch ein Nomen oder Adjektiv Eigennamens oder ggf. die Wörter gleich Gewichtung|Querverweisen vor Microsoft-Software-Lese-/Schreibzugriff, zur Laufzeit|  
   
 |Kleinbuchstaben|Beispiele|  
-|---------------------|---------------|  
-|Das zweite Wort ein zusammengesetztes Wort, wenn er einen anderen Teil der Sprache oder eine Änderung des ersten Worts Partizip|Gewusst\-wie\-Take\-aus|  
-|Die Artikel, es sei denn, eine das erste Wort im Titel|ein, der|  
-|Koordinieren von Konjunktionen|und, aber für, noch ist, oder|  
-|Präpositionen mit Wörtern von vier oder weniger Zeichen als ein Ausdruck|in auf, wie für out\-of, auf den|  
-|Option "zu", wenn Sie in eine unendliche Ausdruck verwendet|"Gewusst wie: Formatieren der Festplatte"|  
+|---------------|--------------|  
+|Das zweite Worte im ein zusammengesetztes Wort, wenn sie einen anderen Teil der Sprache oder eine Partizip ändern das erste Wort ist|Gewusst wie: Take deaktivieren|  
+|Die Artikel, es sei denn, eine auf das erste Wort im Titel ist|ein, der|  
+|Koordinieren Konjunktionen|und, aber für, nor, oder|  
+|Präpositionen mit Wörtern von maximal vier Buchstaben außerhalb einer Verb-Ausdruck|in auf, wie für out, auf den Anfang|  
+|Option "to", bei der Verwendung in eine unendliche Ausdruck|"Gewusst wie: Formatieren der Festplatte"|  
   
-##### Großbuchstaben  
- Großbuchstaben ist die Großschreibung\-Methode zum Schreiben in die nur das erste Wort des Satzes groß geschrieben wird, sowie alle Eigennamen und das Pronomen "I". Großbuchstaben ist im Allgemeinen einfacher für einem weltweiten Publikum zu lesen, insbesondere wenn der Inhalt von einem Computer übersetzt werden. Verwenden Sie Großbuchstaben für:  
+##### <a name="sentence-case"></a>Satz Groß-/Kleinschreibung  
+ Satz Groß-/Kleinschreibung ist die standardmäßige Groß-/Kleinschreibung-Methode zum Schreiben in die nur das erste Wort des Satzes großgeschrieben ist, sowie alle Eigennamen und das Pronomen "I". Satz Groß-/Kleinschreibung ist im Allgemeinen einfacher für einem weltweiten Publikum zu lesen, insbesondere wenn der Inhalt von einem Computer übersetzt wird. Satz-Anwendungsfall für:  
   
-1.  **Statusleistenmeldungen.** Diese sind also einfach und liefert nur Statusinformationen. Beispiel: "Laden Projektdatei"  
+1.  **Statusleistenmeldungen.** Diese einfache, kurz und geben Sie nur die Statusinformationen. Beispiel: "Laden Projektdatei"  
   
-2.  **Alle anderen Elemente der Benutzeroberfläche**, einschließlich Etiketten, Kontrollkästchen, Optionsfelder und Kontrollkästchen Listenelemente. Beispiel: "wählen alle Elemente in der Liste"  
+2.  **Alle anderen Benutzeroberflächenelementen**, einschließlich Bezeichnungen, die relevanten Kontrollkästchen, Optionsfelder und Kontrollkästchen Listenelemente. Beispiel: "Wählen Sie alle Elemente in der Liste"  
   
-### Formatieren von Text  
- Standardtext\-Formatierung in Visual Studio 2013 wird gesteuert, indem eine [Die Umgebungsschriftart](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont). Dieser Dienst ermöglicht eine einheitliche Schriftarten Darstellung in der IDE \(integrated Development Environment\) stellen Sie sicher, und Sie müssen es verwenden, um eine konsistente Umgebung für Ihre Benutzer zu gewährleisten.  
+### <a name="text-formatting"></a>Formatieren von Text  
+ Standardtextformatierung an, die in Visual Studio 2013 wird gesteuert, indem [der Umgebungsschriftart](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont). Dieser Dienst unterstützt eine konsistente Schriftart Darstellung in der IDE (integrated Development Environment) stellen Sie sicher, und Sie müssen ihn verwenden, um eine konsistente Umgebung für Ihre Benutzer zu gewährleisten.  
   
- Die Standardgröße von der Visual Studio\-Schriftart\-Dienst verwendeten stammt aus Windows und wird als 9 pt.  
+ Die Standardgröße von Visual Studio-Schriftart-Dienst verwendete stammt von Windows und als 9 pt angezeigt wird.  
   
- Sie können die Formatierung in die Umgebungsschriftart anwenden. In diesem Thema, wie und wo Formate verwendet werden. Implementierungsinformationen finden Sie unter [Die Umgebungsschriftart](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).  
+ Sie können die Formatierung der Schriftart, die Umgebung anwenden. Dieses Thema behandelt, wie und wo Formate verwendet werden. Informationen der Implementierung finden Sie unter [der Umgebungsschriftart](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).  
   
-#### Fett formatierter text  
- Fett formatierter Text wird in Visual Studio nur selten verwendet und für reserviert werden soll:  
+#### <a name="bold-text"></a>Fett formatierter text  
+ Fett formatierter Text wird in Visual Studio nur selten verwendet und für reserviert werden sollten:  
   
--   Frage Bezeichnungen in Assistenten  
+-   Frage Bezeichnungen Assistenten  
   
--   Festlegen des aktiven Projekts im Projektmappen\-Explorer  
+-   Festlegen des aktiven Projekts im Projektmappen-Explorer  
   
--   überschreiben die Werte im Eigenschaftenfenster  
+-   überschreiben die Werte in den Eigenschaften-Toolfenster  
   
--   bestimmte Ereignisse in den Dropdownlisten für Visual Basic\-editor  
+-   bestimmte Ereignisse in den Dropdownlisten Visual Basic-editor  
   
--   Server erstellte Inhalte im Dokumentgliederungsfenster für Webseiten  
+-   vom Server generierte Inhalt in der dokumentgliederung für Webseiten  
   
--   Abschnittsnamen in komplexer oder Designer\-Benutzeroberfläche  
+-   Abschnittsheader in komplexen Dialog- oder Designer-Benutzeroberfläche  
   
-#### Kursiv  
- Visual Studio verwendet nicht kursiv oder fett kursiv.  
+#### <a name="italics"></a>Kursiv  
+ Visual Studio verwendet keine kursiv oder fett formatierten Text kursiven.  
   
-#### Farbe  
+#### <a name="color"></a>Farbe  
   
--   Blau ist für Links \(Navigation und Befehle\) reserviert und sollte nie für die Ausrichtung verwendet werden.  
+-   Blau ist für Links (Navigation und Befehle) reserviert und sollte nie für die Ausrichtung verwendet werden.  
   
--   Größere Überschriften \(Umgebungsschriftart x 155 % oder höher\) können für diese Zwecke zugewiesen werden:  
+-   Größere Überschriften (Umgebungsschriftart x mit 155 % oder höher) können für diese Zwecke gefärbt:  
   
-    -   Die Signatur Visual Studio\-Benutzeroberfläche visuell ansprechender bereitstellen  
+    -   Bereitstellen von visuell ansprechender Signatur Visual Studio-Benutzeroberfläche  
   
     -   Die Aufmerksamkeit auf einen bestimmten Bereich  
   
-    -   Fehleranfällige die Farbe des dunklen Grau\/schwarzen Umgebung anbieten  
+    -   Die Textfarbe standardumgebung dunkel grau/schwarzen Rahmen anbieten.  
   
--   Farbe in Überschriften sollten vorhandene Visual Studio Marke Farben in erster Linie die wichtigsten Violett \#FF68217A nutzen.  
+-   Farbe in Überschriften sollten vorhandene Visual Studio Brand Farben, in erster Linie die wichtigsten Violett #FF68217A nutzen.  
   
--   Wenn Farbe in Überschriften verwenden möchten, müssen Sie folgen, die [Windows Farbe Richtlinien](https://msdn.microsoft.com/en-us/library/dn742482.aspx), einschließlich Kontrastverhältnis und andere Aspekte der Eingabehilfen.  
+-   Bei Farbe in Überschriften verwenden zu können, müssen Sie berücksichtigt werden die [Windows Farbe Richtlinien](https://msdn.microsoft.com/en-us/library/dn742482.aspx), einschließlich Kontrast und andere Aspekte der Barrierefreiheit.  
   
-### Schriftgrad  
- Entwurf der Visual Studio\-Benutzeroberfläche bietet eine hellere Darstellung mit mehr Leerzeichen. Wo möglich, Chrome und Titelleisten reduziert oder entfernt wurden. Während der informationsdichte in Visual Studio ist, weiterhin Typografie wichtig, mit Schwerpunkt auf offenen Zeilenabstand und eine Variante der Schriftgrade und Weights.  
+### <a name="font-size"></a>Schriftgrad  
+ Entwurf von Visual Studio-Benutzeroberfläche bietet eine hellere Darstellung mit mehr Leerzeichen. Wenn möglich, haben Titel-und Chrome reduziert oder entfernt wurde. Während informationsdichte in Visual Studio erforderlich ist, weiterhin Typografie mit Schwerpunkt auf Zeilenabstand mehr öffnen und eine Variante der Schriftgrade Ihren Bedürfnissen und Gewichtungen wichtig sein.  
   
- Die folgenden Tabellen enthält Einzelheiten und Beispiele für die in Visual Studio verwendeten Schriftarten. Einige anzeigevarianten müssen, die Größe und Gewicht, z. B. Semilight oder Licht in ihrer Darstellung codiert.  
+ Die folgenden Tabellen enthält Details zum Design und visual Beispiele für die Schriftarten in Visual Studio verwendet. Einige Schriftart datenvisualisierungsoption müssen die Größe und die Gewichtung, z. B. halb dünne Darstellung oder Licht, in deren Darstellung codiert.  
   
- Implementierung von Codeausschnitte für alle Schriftarten Sie unter finden anzeigen [Formatierung (Skalierung/-Stärke)-Referenz](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_Formatting).  
+ Codeausschnitte für alle Schriftarten Implementierung finden Sie im [Formatierung (Skalierung/Fettformatieren) Verweis](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_Formatting).  
   
-#### Umgebungsschriftart 375 % \+ dünne Darstellung  
-  
-|||  
-|-|-|  
-|**Verwendung:** selten. Eindeutige Branding UI nur.<br /><br /> **Führen Sie aus:**<br /><br /> -   Verwenden Sie Großbuchstaben<br />-   Verwenden Sie immer Lightweight<br /><br /> **Beachten Sie:**<br /><br /> -   Verwenden für die Benutzeroberfläche als Signatur Benutzeroberfläche, z. B. Startseite<br />-   Fett, kursiv oder fett kursiv<br />-   Verwenden Sie für den Textkörper<br />-   Verwenden Sie im Toolfenster|**Wird als:** 34 pt Segoe UI Light<br /><br /> **Visual\-Beispiel:**<br /><br /> *Derzeit nicht verwendet. Kann auf der Startseite verwendet werden.*|  
-  
-#### Umgebungsschriftart 310 % \+ dünne Darstellung  
+#### <a name="375-environment-font--light"></a>Umgebungsschriftart 375 % + dünne Darstellung  
   
 |||  
 |-|-|  
-|**Syntax:**<br /><br /> -   Größere Überschrift in der Signatur\-Dialogfelder<br />-   Hauptbericht Überschrift<br /><br /> **Führen Sie aus:**<br /><br /> -   Verwenden Sie Großbuchstaben<br />-   Verwenden Sie immer Lightweight<br /><br /> **Beachten Sie:**<br /><br /> -   Verwenden für die Benutzeroberfläche als Signatur Benutzeroberfläche, z. B. Startseite<br />-   Fett, kursiv oder fett kursiv<br />-   Verwenden Sie für den Textkörper<br />-   Verwenden Sie im Toolfenster|**Wird als:** 28 pt Segoe UI Light<br /><br /> **Visual\-Beispiel:**<br /><br /> ![Example of 310% Environment font &#43; Light heading](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202\-a\_EF310")|  
+|**Syntax:** selten. Eindeutige Branding UI nur.<br /><br /> **Führen Sie aus:**<br /><br /> -Satz Groß-/Kleinschreibung verwendet<br />-Lightweight immer verwenden<br /><br /> **Tue nicht:**<br /><br /> -Verwendung für die Benutzeroberfläche als Signatur Benutzeroberfläche, z. B. die Startseite<br />-Fett, kursiv oder fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie im Toolfenster|**Wird als:** 34 pt Segoe UI Light<br /><br /> **Bildbeispiel:**<br /><br /> *Derzeit verwendet nicht. Kann auf der Startseite verwendet werden.*|  
   
-#### Umgebungsschriftart 200 % \+ halb dünne Darstellung  
-  
-|||  
-|-|-|  
-|**Syntax:**<br /><br /> -   Untertitel<br />-   Titel in kleinen und mittleren Dialogfelder<br /><br /> **Führen Sie aus:**<br /><br /> -   Verwenden Sie Großbuchstaben<br />-   Verwenden Sie immer Semilight Gewicht<br /><br /> **Beachten Sie:**<br /><br /> -   Fett, kursiv oder fett kursiv<br />-   Verwenden Sie für den Textkörper<br />-   Verwenden Sie im Toolfenster|**Wird als:** 18 pt Segoe UI Semillight<br /><br /> **Visual\-Beispiel:**<br /><br /> ![Example of 200% Environment font &#43; Semilight](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202\-b\_EF200")|  
-  
-#### Umgebungsschriftart mit 155 %  
+#### <a name="310-environment-font--light"></a>Umgebungsschriftart 310 % + dünne Darstellung  
   
 |||  
 |-|-|  
-|**Syntax:**<br /><br /> -   Überschriften im Dokument und Benutzeroberfläche<br />-   Berichte<br /><br /> **Führen:** Satz Anwendungsfall<br /><br /> **Beachten Sie:**<br /><br /> -   Fett, kursiv oder fett kursiv<br />-   Verwenden Sie für den Textkörper<br />-   Verwenden Sie im Standard\-Steuerelemente von Visual Studio<br />-   Verwenden Sie im Toolfenster|**Wird als:** 14 pt Segoe UI<br /><br /> **Visual\-Beispiel:**<br /><br /> ![Example of 155% Environment font heading](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202\-c\_EF155")|  
+|**Syntax:**<br /><br /> -Größere Überschrift in der Signatur-Dialogfelder<br />-Main Berichtskopf<br /><br /> **Führen Sie aus:**<br /><br /> -Satz Groß-/Kleinschreibung verwendet<br />-Lightweight immer verwenden<br /><br /> **Tue nicht:**<br /><br /> -Verwendung für die Benutzeroberfläche als Signatur Benutzeroberfläche, z. B. die Startseite<br />-Fett, kursiv oder fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie im Toolfenster|**Wird als:** 28 pt Segoe UI Light<br /><br /> **Bildbeispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart 310 % &#43; Überschrift](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|  
   
-#### Umgebungsschriftart mit 133 %  
-  
-|||  
-|-|-|  
-|**Syntax:**<br /><br /> -   Kleinere Unterüberschriften in der Signatur\-Dialogfelder<br />-   Kleinere Unterüberschriften im Dokument und Benutzeroberfläche<br /><br /> **Führen:** Satz Anwendungsfall<br /><br /> **Beachten Sie:**<br /><br /> -   Fett, kursiv oder fett kursiv<br />-   Verwenden Sie für den Textkörper<br />-   Verwenden Sie im Standard\-Steuerelemente von Visual Studio<br />-   Verwenden Sie im Toolfenster|**Wird als:** 12 pt Segoe UI<br /><br /> **Visual\-Beispiel:**<br /><br /> ![Example of 133% Environment font heading](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202\-d\_EF133")|  
-  
-#### Umgebungsschriftart mit 122 %  
+#### <a name="200-environment-font--semilight"></a>Umgebungsschriftart 200 % + halb dünne Darstellung  
   
 |||  
 |-|-|  
-|**Syntax:**<br /><br /> -   Abschnittsüberschriften von Signatur\-Dialogfelder<br />-   Knoten auf oberster Ebene in der Strukturansicht<br />-   Vertikaler Tabulator\-navigation<br /><br /> **Führen:** Satz Anwendungsfall<br /><br /> **Beachten Sie:**<br /><br /> -   Fett, kursiv oder fett kursiv<br />-   Verwenden Sie für den Textkörper<br />-   Verwenden Sie im Standard\-Steuerelemente von Visual Studio<br />-   Verwenden Sie im Toolfenster|**Wird als:** 11 pt Segoe UI<br /><br /> **Visual\-Beispiel:**<br /><br /> ![Example of 122% Environment font heading](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202\-e\_EF122")|  
+|**Syntax:**<br /><br /> -Aufgliederung<br />-Titel in kleinen und mittleren Dialogfelder<br /><br /> **Führen Sie aus:**<br /><br /> -Satz Groß-/Kleinschreibung verwendet<br />-Verwenden Sie immer Gewichtung halb dünne Darstellung<br /><br /> **Tue nicht:**<br /><br /> -Fett, kursiv oder fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie im Toolfenster|**Wird als:** 18 pt Segoe UI Semillight<br /><br /> **Bildbeispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart 200 % &#43; Halb dünne Darstellung](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202-b_EF200")|  
   
-#### Umgebungsschriftart \+ fett  
-  
-|||  
-|-|-|  
-|**Syntax:**<br /><br /> -   Etiketten und Unterüberschriften in Dialogfeldern Signatur<br />-   Etiketten und Unterüberschriften in Berichten<br />-   Etiketten und Unterüberschriften im Dokument und Benutzeroberfläche<br /><br /> **Führen Sie aus:**<br /><br /> -   Verwenden Sie Großbuchstaben<br />-   Verwenden Sie die Schriftbreite fett<br /><br /> **Beachten Sie:**<br /><br /> -   Kursiv oder fett kursiv<br />-   Verwenden Sie für den Textkörper<br />-   Verwenden Sie im Standard\-Steuerelemente von Visual Studio<br />-   Verwenden Sie im Toolfenster|**Wird als:** Fett 9 pt Segoe UI<br /><br /> **Visual\-Beispiel:**<br /><br /> ![Example of Environment font &#43; Bold heading](../../extensibility/ux-guidelines/media/0202-f_efb.png "0202\-f\_EFB")|  
-  
-#### Umgebungsschriftart  
+#### <a name="155-environment-font"></a>Umgebungsschriftart mit 155 %  
   
 |||  
 |-|-|  
-|**Verwendung:** alle anderen Text<br /><br /> **Führen:** Satz Anwendungsfall<br /><br /> **Nicht:** kursiv oder kursiv|**Wird als:** 9 pt Segoe UI<br /><br /> **Visual\-Beispiel:**<br /><br /> ![Example of Environment font](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202\-g\_EF")|  
+|**Syntax:**<br /><br /> -Section-Überschriften in Dokument gut UI<br />-Berichte<br /><br /> **:** Satz Groß-/Kleinschreibung<br /><br /> **Tue nicht:**<br /><br /> -Fett, kursiv oder fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie in Visual Studio-Standardsteuerelementen<br />– Verwenden Sie im Toolfenster|**Wird als:** 14 pt Segoe UI<br /><br /> **Bildbeispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart mit 155 %, Überschrift](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202-c_EF155")|  
   
-### Abstand  
- Überschriften erfordern zwischen ihnen die entsprechenden Betonung gewähren. Dieser Speicherplatz variiert je nach Größe und was in der Nähe der Überschrift, z. B. eine horizontale Linie oder eine Textzeile in der Umgebungsschriftart befindet.  
+#### <a name="133-environment-font"></a>Umgebungsschriftart mit 133 %  
   
--   Die ideale Auffüllung für eine Überschrift allein sollte 90 % des Speicherplatzes Höhe großes Zeichen sein. Z. B. Überschrift Segoe UI Light 28 pt hat eine Höhe von 26 pt und der Textabstand sollte ungefähr 23 pt oder ungefähr 31 Pixel sein.  
+|||  
+|-|-|  
+|**Syntax:**<br /><br /> -Kleinere Aufgliederung in Dialogfeldern Signatur<br />-Im Dokument kleinere Aufgliederung gut UI<br /><br /> **:** Satz Groß-/Kleinschreibung<br /><br /> **Tue nicht:**<br /><br /> -Fett, kursiv oder fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie in Visual Studio-Standardsteuerelementen<br />– Verwenden Sie im Toolfenster|**Wird als:** 12 pt Segoe UI<br /><br /> **Bildbeispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart mit 133 %, Überschrift](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202-d_EF133")|  
   
--   Der mindestens erforderliche Speicherplatz, um eine Überschrift sollte es sich um 50 % der Zeichenhöhe großes sein. Weniger Speicherplatz kann verwendet werden, wenn eine Regel oder ein anderes Element eine enge Anpassung eine Überschrift begleitet wird.  
+#### <a name="122-environment-font"></a>Umgebungsschriftart mit 122 %  
   
--   Fett formatierte Umgebung Schriftart Text befolgen Höhe von Standard\-Zeilenabstand und Abstände.  
+|||  
+|-|-|  
+|**Syntax:**<br /><br /> -Section-Überschriften in Signatur-Dialogfelder<br />-Obersten Knoten in der Strukturansicht<br />-Navigation vertikaler Tabulator<br /><br /> **:** Satz Groß-/Kleinschreibung<br /><br /> **Tue nicht:**<br /><br /> -Fett, kursiv oder fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie in Visual Studio-Standardsteuerelementen<br />– Verwenden Sie im Toolfenster|**Wird als:** 11 pt Segoe UI<br /><br /> **Bildbeispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart mit 122 %, Überschrift](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202-e_EF122")|  
   
-## Siehe auch  
- [MSDN: Schriftarten \(Windows\)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742483\(v=vs.85\).aspx)   
- [MSDN: Benutzeroberflächentext \(Windows\)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742478\(v=vs.85\).aspx)
+#### <a name="environment-font--bold"></a>Umgebungsschriftart + fett  
+  
+|||  
+|-|-|  
+|**Syntax:**<br /><br /> -"Bezeichnungen" und untergeordnete in Dialogfeldern Signatur<br />-"Bezeichnungen" und untergeordnete in Berichten<br />-"Bezeichnungen" Unterüberschriften im Dokument außerdem UI<br /><br /> **Führen Sie aus:**<br /><br /> -Satz Groß-/Kleinschreibung verwendet<br />– Verwenden Sie die fett formatierten Gewichtung<br /><br /> **Tue nicht:**<br /><br /> -Auswahl kursiver oder fett kursiv<br />-Verwendung für den Textkörper<br />– Verwenden Sie in Visual Studio-Standardsteuerelementen<br />– Verwenden Sie im Toolfenster|**Wird als:** Fett 9 pt Segoe UI<br /><br /> **Bildbeispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart &#43; Überschrift in fettformatierung](../../extensibility/ux-guidelines/media/0202-f_efb.png "0202-f_EFB")|  
+  
+#### <a name="environment-font"></a>Umgebungsschriftart  
+  
+|||  
+|-|-|  
+|**Syntax:** gesamten anderen Text<br /><br /> **:** Satz Groß-/Kleinschreibung<br /><br /> **Keine:** kursiv oder kursiv|**Wird als:** 9 pt Segoe UI<br /><br /> **Bildbeispiel:**<br /><br /> ![Beispiel für Umgebungsschriftart](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202-g_EF")|  
+  
+### <a name="padding-and-spacing"></a>Abstand  
+ Überschriften Speicherplatz darum geben die entsprechenden Betonung benötigt wird. Dieser Speicherplatz variiert je nach Größe und was in der Nähe der Überschrift, z. B. eine horizontale Linie oder einer Zeile des Texts in der Umgebungsschriftart ist.  
+  
+-   Die ideale Auffüllung für eine Überschrift allein sollte 90 % des Speicherplatzes Höhe Kapitalkosten Zeichen sein. Z. B. eine 28 pt Segoe UI Light Überschrift hat eine Höhe von 26 pt, und die Auffüllung sollte ungefähr 23 pt oder ungefähr 31 Pixel sein.  
+  
+-   Die minimale Platz, um eine Überschrift sollte 50 % der Zeichenhöhe Kapitalkosten sein. Weniger Speicherplatz kann verwendet werden, wenn eine Regel oder ein anderes Element enge Anpassung eine Überschrift begleitet wird.  
+  
+-   Fett formatierte Umgebung Schriftart Text sollte standardmäßig Höhe Zeilenabstand und Auffüllung folgen.  
+  
+## <a name="see-also"></a>Siehe auch  
+ [MSDN: Schriftarten (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742483\(v=vs.85\).aspx)   
+ [MSDN: Benutzeroberflächentext (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742478\(v=vs.85\).aspx)

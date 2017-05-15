@@ -1,7 +1,7 @@
 ---
-title: "Komponententests in Python Tools für Visual Studio | Microsoft-Dokumentation"
+title: "Komponententests für Python in Visual Studio | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 5/8/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -28,10 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: adf122a478b29674dc2924dcf7d42972a5a3f52e
-ms.openlocfilehash: 878bd0baaa0e08a31274645213b222bf6faeb412
-ms.lasthandoff: 04/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: 2597583912c7694495617c53839f41aa13cda871
+ms.contentlocale: de-de
+ms.lasthandoff: 05/09/2017
 
 ---
 
@@ -39,13 +40,13 @@ ms.lasthandoff: 04/10/2017
 
 Komponententests sind Codeelemente, die andere Codeeinheiten in einer Anwendung testen, in der Regel isolierte Funktionen, Klassen usw. Wenn eine Anwendung alle Komponententests besteht, können Sie sich zumindest darauf verlassen, dass die Funktionalität im Detail korrekt ist.
 
-In Python werden Komponententests ausgiebig zum Überprüfen von Szenarien beim Entwurf eines Programms verwendet. Python-Tools für Visual Studio (PTVS) bietet Unterstützung für das Ermitteln, Ausführen und Debuggen von Komponententests im Kontext Ihres Entwicklungsprozesses, sodass sie nicht separat ausgeführt werden müssen.
+In Python werden Komponententests ausgiebig zum Überprüfen von Szenarien beim Entwurf eines Programms verwendet. Die Python-Unterstützung in Visual Studio umfasst das Ermitteln, Ausführen und Debuggen von Komponententests im Kontext Ihres Entwicklungsprozesses, sodass sie nicht separat ausgeführt werden müssen.
 
 Dieses Thema enthält eine kurze Übersicht über die Komponententestfunktionen in Visual Studio mit Python. Weitere Informationen zu Komponententests im Allgemeinen finden Sie unter [Komponententest für Code](../test/unit-test-your-code.md).
 
 ## <a name="discovering-and-viewing-tests"></a>Ermitteln und Anzeigen von Tests
 
-Gemäß der Konvention erkennt PTVS Tests als Methoden, deren Namen mit „Test“ beginnen. Um dies zu untersuchen, führen Sie die folgenden Schritte aus:
+Gemäß der Konvention erkennt Visual Studio Tests als Methoden, deren Namen mit „Test“ beginnen. Um dies zu untersuchen, führen Sie die folgenden Schritte aus:
 
 1. Öffnen Sie ein in Visual Studio geladenes [Python-Projekt](python-projects.md), klicken Sie mit der rechten Maustaste auf Ihr Projekt, wählen Sie **Hinzufügen > Neues Element**, und wählen Sie dann **Python-Komponententest**, gefolgt von **Hinzufügen**.
 
@@ -98,13 +99,13 @@ Tests werden im Hintergrund ausgeführt, und der Test-Explorer aktualisiert den 
 
 ## <a name="debugging-tests"></a>Debuggen von Tests
 
-Da Komponententests Codeteile sind, können sie genau wie jeder andere Code Fehler aufweisen und müssen gelegentlich in einem Debugger ausgeführt werden, in dem Sie Breakpoints festlegen, Variablen untersuchen und den Code schrittweise durchlaufen können. PTVS bietet auch Diagnosetools
+Da Komponententests Codeteile sind, können sie genau wie jeder andere Code Fehler aufweisen und müssen gelegentlich in einem Debugger ausgeführt werden, in dem Sie Breakpoints festlegen, Variablen untersuchen und den Code schrittweise durchlaufen können. Visual Studio bietet auch Diagnosetools.
 
 Um mit dem Debuggen zu beginnen, legen Sie einen anfänglichen Haltepunkt im Code fest, klicken Sie im Test-Explorer mit der rechten Maustaste auf den Test (oder eine Auswahl), und wählen Sie **Ausgewählte Tests debuggen**. Visual Studio startet den Python-Debugger auf dieselbe Weise wie für Anwendungscode.
 
 ![Debuggen eines Tests](media/unit-test-debugging.png)
 
-Je nach PTVS-Version können Sie auch die Befehle **Code Coverage für ausgewählte Tests analysieren** und **Profiltest** verwenden. (Informationen finden Sie in der [Featurematrix](python-in-visual-studio.md#features-matrix).)
+Je nach Visual Studio-Version können Sie auch die Befehle **Code Coverage für ausgewählte Tests analysieren** und **Profiltest** verwenden. (Informationen finden Sie in der [Featurematrix](python-in-visual-studio.md#features-matrix).)
 
 ### <a name="known-issues"></a>Bekannte Probleme
 

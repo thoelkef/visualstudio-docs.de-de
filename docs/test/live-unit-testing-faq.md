@@ -26,10 +26,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
-ms.openlocfilehash: 03abb5a6508a6c93c6770bd9373381c9173b7103
-ms.lasthandoff: 03/27/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: c9df048a49580f3526b48e29041ef3758722ed27
+ms.openlocfilehash: 08677472bc13d58d9ab0b42b856955f8434089e4
+ms.contentlocale: de-de
+ms.lasthandoff: 05/03/2017
 
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing – häufig gestellte Fragen
@@ -229,6 +230,8 @@ Sie haben mehrere Möglichkeiten, um ausführlichere Protokolle zu sammeln:
 - Wechseln Sie zu **Extras**, **Optionen** und dann **Live Unit Testing**, und ändern Sie die Protokollierungsoption in **Ausführlich**. Dadurch werden ausführlichere Protokolle im Ausgabefenster angezeigt. 
 
 - Legen Sie die `LiveUnitTesting_BuildLog`-Benutzerumgebungsvariable auf den Namen der Datei fest, die Sie verwenden möchten, um das MSBuild-Protokoll zu erfassen. Detaillierte MSBuild-Protokollmeldungen von Live Unit Testing-Builds können dann aus dieser Datei abgerufen werden.
+
+- Legen Sie die Umgebungsvariable`LiveUnitTesting_TestPlatformLog` auf `1` fest, um das Protokoll der Testplattform zu erfassen. Detaillierte Testplattform-Protokollmeldungen zu Live Unit Testing-Ausführungen können dann aus `[Solution Root]\.vs\[Solution Name]\log\[VisualStudio Process ID]` abgerufen werden.
 
 - Erstellen Sie eine Umgebungsvariable auf Benutzerebene mit dem Namen `VS_UTE_DIAGNOSTICS`, legen Sie sie auf 1 (oder einen beliebigen Wert) fest, und starten Sie Visual Studio neu. Jetzt sollten Sie eine umfangreiche Protokollierung auf der Registerkarte **Ausgabe – Tests** in Visual Studio sehen. 
  

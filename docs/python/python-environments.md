@@ -1,7 +1,7 @@
 ---
-title: "Python-Umgebungen in Python-Tools für Visual Studio | Microsoft-Dokumentation"
+title: Python-Umgebungen in Visual Studio | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 5/8/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -28,18 +28,26 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: adf122a478b29674dc2924dcf7d42972a5a3f52e
-ms.openlocfilehash: 1f8f68e36f94aaf253d304edaa2360333b261be3
-ms.lasthandoff: 04/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: 9140ca7549eefc3ac221f3ca0aa54fde482c8623
+ms.contentlocale: de-de
+ms.lasthandoff: 05/09/2017
 
 ---
 
 # <a name="python-environments"></a>Python-Umgebungen
 
-Python-Code wird immer innerhalb einer bestimmten Python-*Umgebung* ausgeführt, die aus einem Interpreter, einer Bibliothek (in der Regel die Python-Standardbibliothek) und einem Satz von installierten Paketen besteht. Gemeinsam bestimmen diese Komponenten, welche Sprachkonstrukte und Syntax gültig sind, auf welche Betriebssystemfunktionen Sie zugreifen können und welche Pakete Sie verwenden können.
+Python in Visual Studio erleichtert das Verwalten mehrerer Python-Umgebungen und den Wechsel zwischen den Umgebungen für verschiedene Projekte. 
 
-Die Python-Arbeitsauslastung in Visual Studio erleichtert das Verwalten mehrerer Python-Umgebungen und den Wechsel zwischen den Umgebungen für verschiedene Projekte. Eine Umgebung enthält auch eine IntelliSense-Datenbank für die Bibliotheken einer Umgebung. Wenn Sie also eine Anweisung wie `import` im Visual Studio-Editor eingeben, wird automatisch eine Liste der verfügbaren Bibliotheken sowie der Module in diesen Bibliotheken angezeigt.
+Hinweis: Wenn Sie noch nicht mit Python in Visual Studio vertraut sind, sollten Sie sich zunächst mit den folgenden Themen beschäftigen, da die aktuelle Diskussion auf ihnen basiert:
+
+    - [Arbeiten mit Python in Visual Studio](python-in-visual-studio.md)
+    - [Installieren von Python-Unterstützung für Visual Studio](installation.md)
+
+Eine Python-*Umgebung*, in der Python-Code stets ausgeführt wird, besteht aus einem Interpreter, einer Bibliothek (in der Regel die Python-Standardbibliothek) und einer Gruppe installierter Pakete. Gemeinsam bestimmen diese Komponenten, welche Sprachkonstrukte und Syntax gültig sind, auf welche Betriebssystemfunktionen Sie zugreifen können und welche Pakete Sie verwenden können.
+
+In Visual Studio enthält eine Umgebung auch eine IntelliSense-Datenbank für die Bibliotheken der Umgebung. Wenn Sie also eine Anweisung wie `import` im Visual Studio-Editor eingeben, wird automatisch eine Liste der verfügbaren Bibliotheken sowie der Module in diesen Bibliotheken angezeigt.
 
 Häufig nutzen Entwickler nur eine globale Python-Umgebung. Andere müssen aber mehrere globale Umgebungen, projektspezifische Umgebungen und vielleicht auch virtuelle Umgebungen verwalten, wie in diesem Thema erläutert:
 
@@ -57,7 +65,7 @@ Ein Einführungsvideo finden Sie unter [Deep Dive: Python Interpreters](https://
 
 ## <a name="selecting-and-installing-python-interpreters"></a>Auswählen und Installieren von Python-Interpretern
 
-Außer bei Visual Studio 2017 Preview umfasst die Python-Unterstützung keinen Python-Interpreter. Sie müssen also einen der folgenden Interpreter zum Ausführen des Codes installieren. Im Allgemeinen erkennt Visual Studio neu installierte Interpreter automatisch und richtet eine Umgebung für sie ein. Wenn dies nicht der Fall ist, finden Sie unter [Erstellen einer Umgebung für einen vorhandenen Interpreter](#creating-an-environment-for-an-existing-interpreter) weiter unten weitere Informationen.
+Außer bei Visual Studio 2017 umfasst die Python-Unterstützung keinen Python-Interpreter. Sie müssen also einen der folgenden Interpreter zum Ausführen des Codes installieren. Im Allgemeinen erkennt Visual Studio neu installierte Interpreter automatisch und richtet eine Umgebung für sie ein. Wenn dies nicht der Fall ist, finden Sie unter [Erstellen einer Umgebung für einen vorhandenen Interpreter](#creating-an-environment-for-an-existing-interpreter) weiter unten weitere Informationen.
 
 | Interpreter | Beschreibung | 
 | --- | --- | 
@@ -82,7 +90,7 @@ In jedem Fall wird das Fenster „Python-Umgebungen“ als gleichgeordnete Regis
 
 ![Fenster „Python-Umgebungen“](media/environments-default-view.png)
 
-Im Beispiel oben ist Python 3.4 (32-Bit-CPython) zusammen mit den 32- und 64-Bit-Versionen von IronPython installiert. Die Standardumgebung in Fettdruck ist Python 3.4, die für alle neuen Projekte verwendet wird. Wenn keine Umgebungen angezeigt werden, bedeutet dies, dass Sie Python-Tools für Visual Studio installiert haben, aber noch keinen Python-Interpreter (siehe [Auswählen und Installieren von Python-Interpretern](#selecting-and-installing-python-interpreters) oben).
+Im Beispiel oben ist Python 3.4 (32-Bit-CPython) zusammen mit den 32- und 64-Bit-Versionen von IronPython 2.7 installiert. In diesem Fall ist die Standardumgebung in Fettdruck Python 3.4, die für alle neuen Projekte verwendet wird. Wenn keine Umgebungen angezeigt werden, bedeutet dies, dass Sie Python-Tools für Visual Studio in Visual Studio 2015 oder früher installiert haben, aber noch keinen Python-Interpreter (siehe [Auswählen und Installieren von Python-Interpretern](#selecting-and-installing-python-interpreters) oben). 
 
 > [!Tip]
 > Wenn das Fenster **Python-Umgebungen* schmal ist, wie oben dargestellt ist, werden die Umgebungen oben und die verschiedenen Registerkarten unten aufgeführt. Wenn Sie das Fenster jedoch ausreichend erweitern, sehen Sie eine breite Ansicht, in der Sie möglicherweise bequemer arbeiten können.

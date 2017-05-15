@@ -28,16 +28,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
-ms.openlocfilehash: eb3abd0f37e52f2b1db3793a5471b74a5e0c37ff
-ms.lasthandoff: 04/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: 3190be68fbba464a84a7a25b2d829979944bdb1f
+ms.contentlocale: de-de
+ms.lasthandoff: 05/09/2017
 
 ---
 
 # <a name="python-projects"></a>Python-Projekte
 
-Python-Anwendungen werden in der Regel nur mit Ordnern und Dateien definiert, aber dies kann bei größeren Anwendungen, die vielleicht automatisch generierte Dateien, JavaScript für Webanwendungen usw. einbeziehen, komplex werden. Um diese Komplexität zu verwalten, können Sie Visual Studio-Projekte für Python-Anwendungen erstellen. Ein Python-Projekt (eine `.pyproj`-Datei) identifiziert alle Quell- und Inhaltsdateien des Projekts, enthält Buildinformationen für jede Datei, verwaltet die Informationen zur Integration in Quellcodeverwaltungssysteme und hilft Ihnen, Ihre Anwendung in logischen Komponenten zu organisieren.
+Python-Anwendungen werden in der Regel nur mit Ordnern und Dateien definiert, aber dies kann bei größeren Anwendungen, die vielleicht automatisch generierte Dateien, JavaScript für Webanwendungen usw. einbeziehen, komplex werden. Um diese Komplexität in den Griff zu bekommen, können Sie Visual Studio-Projekte für Python-Anwendungen erstellen. Ein Python-Projekt (eine `.pyproj`-Datei) identifiziert alle Quell- und Inhaltsdateien des Projekts, enthält Buildinformationen für jede Datei, verwaltet die Informationen zur Integration in Quellcodeverwaltungssysteme und hilft Ihnen, Ihre Anwendung in logischen Komponenten zu organisieren.
 
 Darüber hinaus werden Projekte immer in einer Visual Studio-*Projektmappe* verwaltet, die eine beliebige Anzahl von Projekten enthalten kann, die möglicherweise aufeinander verweisen. Ein Python-Projekt kann z.B. auf ein C++-Projekt für ein Erweiterungsmodul verweisen, sodass Visual Studio (falls erforderlich) automatisch das C++-Projekt erstellt, wenn Sie mit dem Debuggen des Python-Projekts beginnen. (Eine allgemeine Erörterung finden Sie unter [Projektmappen und Projekte in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md).)
 
@@ -100,7 +101,7 @@ Die folgende Tabelle fasst die in Visual Studio 2017 verfügbaren Vorlagen zusam
 | IronPython-Silverlight-Webseite | Ein IronPython-Projekt, das in einem Browser mit Silverlight ausgeführt wird. Der Python-Code für die Anwendung ist auf der Webseite als Skript enthalten. Ein Codebaustein-Skript-Tag übernimmt JavaScript-Code, der die Ausführung von IronPython in Silverlight initialisiert, von wo aus der Python-Code mit dem DOM kommunizieren kann. |
 | IronPython-Windows Forms-Anwendung | Eine Projektstruktur mit IronPython, wo die Benutzeroberfläche mithilfe von Windows Forms-Code erstellt wird. Die Anwendung wird ohne Anzeige einer Konsole ausgeführt. |
 | Hintergrundanwendung (IoT) | Unterstützt die Bereitstellung von Python-Projekten zur Ausführung als Hintergrunddienste auf Geräten. Unter [Windows 10 IoT Core](https://dev.windows.com/en-us/iot) erhalten Sie weitere Informationen. |
-| Python-Erweiterungsmodul | Diese Vorlage erscheint unter Visual C++, wenn Sie die **nativen Python-Entwicklungstools** mit der Python-Arbeitsauslastung in Visual Studio 2017 Preview installiert haben (weitere Informationen finden Sie unter [Installation](installation.md)). Sie stellt die grundlegende Struktur für eine C++-Erweiterungs-DLL bereit, ganz ähnlich der, die unter [Erstellen einer C++-Erweiterung für Python](cpp-and-python.md) beschrieben ist. |
+| Python-Erweiterungsmodul | Diese Vorlage wird unter Visual C++ angezeigt, wenn Sie die **nativen Python-Entwicklungstools** mit der Python-Arbeitsauslastung in Visual Studio 2017 installiert haben (weitere Informationen finden Sie unter [Installation](installation.md)). Sie stellt die grundlegende Struktur für eine C++-Erweiterungs-DLL bereit, ganz ähnlich der, die unter [Erstellen einer C++-Erweiterung für Python](cpp-and-python.md) beschrieben ist. |
 
 <a name="create-project-from-existing-files"</a>
 ### <a name="creating-a-project-from-existing-files"></a>Erstellen eines Projekts aus vorhandenen Dateien

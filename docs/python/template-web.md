@@ -1,7 +1,7 @@
 ---
-title: "Webprojektvorlage in Python-Tools für Visual Studio | Microsoft-Dokumentation"
+title: "Webprojektvorlage für Python in Visual Studio | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 5/8/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -28,16 +28,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 7d726441c2d6953bd7b50451bec7fff05d5d71b0
-ms.openlocfilehash: 2375c0c3b1a692d03d8790e400e3fea606355831
-ms.lasthandoff: 03/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: 20edb7a53adf400fba94556e659b4215a0060c1b
+ms.contentlocale: de-de
+ms.lasthandoff: 05/09/2017
 
 ---
 
 # <a name="python-web-project-templates"></a>Python-Webprojektvorlagen
 
-Python-Tools für Visual Studio (PTVS) umfassen Unterstützung für die Entwicklung von Webprojekten in Frameworks wie Bottle, Django und Flask. Hierzu gehören Projektvorlagen und ein Debugstartprogramm, das für die Verarbeitung verschiedener Frameworks konfiguriert werden kann. PTVS enthält jedoch nicht die Frameworks selbst. Diese müssen Sie getrennt installieren, indem Sie mit der rechten Maustaste auf das Projekt klicken und **Python > Framework installieren/aktualisieren** wählen.
+Die Python-Unterstützung in Visual Studio umfasst Unterstützung für die Entwicklung von Webprojekten in Frameworks wie Bottle, Django und Flask. Hierzu gehören Projektvorlagen und ein Debugstartprogramm, das für die Verarbeitung verschiedener Frameworks konfiguriert werden kann. Visual Studio enthält jedoch nicht die Frameworks selbst. Diese müssen Sie getrennt installieren, indem Sie mit der rechten Maustaste auf das Projekt klicken und **Python > Framework installieren/aktualisieren** wählen.
 
 Jede Vorlage (zugänglich über **Datei > Neu > Projekt**) startet einen Webserver mit einem zufällig ausgewählten lokalen Port, öffnen Ihren Standardbrowser beim Debuggen und ermöglicht eine direkte Veröffentlichung in [Microsoft Azure](http://www.azure.com). Vorlagen werden für Bottle, Flask und Django bereitgestellt und können Sie die generische Vorlage „Webprojekt“ für andere Frameworks wie Pyramid nutzen.
 
@@ -59,7 +60,7 @@ Eine Einführung in Python-Webprojekte finden Sie in diesem Video: [Getting Star
 
 ## <a name="debugging"></a>Debuggen
 
-Wenn ein Webprojekt für das Debuggen gestartet wird, startet PTVS den Webserver lokal und öffnet Ihren Standardbrowser mit dieser Adresse und diesem Port. Um zusätzliche Optionen anzugeben, klicken Sie mit der rechten Maustaste auf das Projekt, wählen Sie **Eigenschaften**, und wählen Sie die Registerkarte **Webstartprogramm**:
+Wenn ein Webprojekt zum Debuggen gestartet wird, startet Visual Studio den Webserver lokal und öffnet Ihren Standardbrowser mit dieser Adresse und diesem Port. Um zusätzliche Optionen anzugeben, klicken Sie mit der rechten Maustaste auf das Projekt, wählen Sie **Eigenschaften**, und wählen Sie die Registerkarte **Webstartprogramm**:
 
   ![Eigenschaften des Webstartprogramms für die generische Webvorlage](media/template-web-launcher-properties.png)
 
@@ -67,7 +68,7 @@ Gruppe **Debuggen**:
 
 - **Suchpfade**, **Skriptargumente**, **Interpreterargumente** und **Interpreterpfad**: Diese Optionen stimmen mit denen für das [normale Debuggen](debugging.md) überein.
 - **Start-URL**: Gibt die URL an, die in Ihrem Browser geöffnet wird. Sie wird standardmäßig auf `localhost` festgelegt.
-- **Portnummer**: Gibt den Port an, der verwendet wird, wenn in der URL keiner angegeben ist. (Standardmäßig wird er von PTVS automatisch ausgewählt.) Dadurch können Sie den Standardwert der `SERVER_PORT`-Umgebungsvariablen außer Kraft setzen, der von den Vorlagen zur Konfiguration des Ports verwendet wird, auf den der lokale Debugserver lauscht.
+- **Portnummer**: Gibt den Port an, der verwendet wird, wenn in der URL keiner angegeben ist. (Standardmäßig wird er von Visual Studio automatisch ausgewählt.) Dadurch können Sie den Standardwert der `SERVER_PORT`-Umgebungsvariablen außer Kraft setzen, der von den Vorlagen zur Konfiguration des Ports verwendet wird, auf den der lokale Debugserver lauscht.
 
 Durch die Eigenschaften in den Gruppen **Serverbefehl ausführen** und **Debugserverbefehl** (letzterer befindet sich weiter unten und wird in der Abbildung nicht gezeigt) wird festgelegt, wie der Webserver gestartet wird. Da für viele Frameworks die Verwendung eines Skripts außerhalb des aktuellen Projekts erforderlich ist, kann das Skript hier konfiguriert und der Name des Startmoduls als Parameter übergeben werden.
 
@@ -94,7 +95,7 @@ Die Bottle-Webprojektvorlage enthält Codebausteine, die die erforderliche Konfi
     - **Befehl**: `bottle` (Modul)
     - **Argumente**: `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
-Die `--reload`-Option wird nicht empfohlen, wenn Sie PTVS für das Debuggen verwenden.
+Die `--reload`-Option wird nicht empfohlen, wenn Sie Visual Studio für das Debuggen verwenden.
 
 ### <a name="sample-pyramid-configuration"></a>Beispiel für eine Pyramid-Konfiguration
 
