@@ -28,10 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
-ms.openlocfilehash: 002c77b27f7283ecd28d7ec5470b0ed44b2bb7a4
-ms.lasthandoff: 04/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: f8a0bef07667e5f876473c966ed3d14a1b84dd0b
+ms.contentlocale: de-de
+ms.lasthandoff: 05/09/2017
 
 ---
 
@@ -49,11 +50,14 @@ Der Ansatz hier gilt für CPython-Standarderweiterungen, so wie in der [Python-D
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
-Diese exemplarische Vorgehensweise wurde für Visual Studio 2017 Preview mit jeweils den Arbeitsauslastungen **Desktopentwicklung mit C++** und **Python-Entwicklung** mit den Standardoptionen (z.B. Python 3.6 als Standardinterpreter) geschrieben. Überprüfen Sie in der Arbeitsauslastung der **Python-Entwicklung** auch das Feld auf der rechten Seite für **Native Python-Entwicklungstools**, was den Großteil der in diesem Thema beschriebenen Optionen festlegt. (Diese Option enthält automatisch auch die C++-Arbeitsauslastung.)
+Diese exemplarische Vorgehensweise wurde für Visual Studio 2017 mit jeweils den Arbeitsauslastungen **Desktopentwicklung mit C++** und **Python-Entwicklung** mit den Standardoptionen (z.B. Python 3.6 als Standardinterpreter) geschrieben. Überprüfen Sie in der Arbeitsauslastung der **Python-Entwicklung** auch das Feld auf der rechten Seite für **Native Python-Entwicklungstools**, was den Großteil der in diesem Thema beschriebenen Optionen festlegt. (Diese Option enthält automatisch auch die C++-Arbeitsauslastung.) 
 
 ![Auswählen der Option „Native Python-Entwicklungstools“](media/cpp-install-native.png)
 
 Weitere Details finden Sie unter [Installieren von Python-Unterstützung für Visual Studio](installation.md), einschließlich der Verwendung anderer Versionen von Visual Studio. Wenn Sie Python separat installieren, stellen Sie sicher, dass Sie **Download debugging symbols** (Debugsymbole herunterladen) und **Download debug binaries** (Debugbinärdateien herunterladen) unter **Erweiterte Optionen** im Installer auswählen. Dadurch wird sichergestellt, dass Sie über die erforderlichen Debugbibliotheken verfügen, wenn Sie einen Debugbuild ausführen.
+
+> [!Note]
+> Python ist auch über die Arbeitsauslastung **Data Science und analytische Anwendungen** verfügbar, zu der standardmäßig Anaconda 3 64-Bit (mit der neuesten Version von CPython) und die Option **Native Python-Entwicklungstools** gehören.
 
 ## <a name="create-the-python-application"></a>Erstellen der Python-Anwendung
 
@@ -265,7 +269,7 @@ Sie können nun den `tanh`-Code des Moduls aufrufen und dessen Leistung mit der 
 
 ## <a name="debug-the-c-code"></a>Debuggen des C++-Codes
 
-Die Python-Unterstützung in Visual Studio bietet die Möglichkeit, [Python- und C++-Code zusammen zu debuggen](debugging-mixed-mode.md). Um dies zu tun, führen Sie die folgenden Schritte aus:
+[Die Unterstützung von Python in Visual Studio](debugging-mixed-mode.md) bietet die Möglichkeit, [Python- und C++-Code zusammen zu debuggen](installation.md). Um dies zu tun, führen Sie die folgenden Schritte aus:
 
 1. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf das Python-Projekt, wählen Sie **Eigenschaften** und die Registerkarte **Debuggen** aus, und wählen Sie anschließend die Option **Debuggen > Debuggen von nativem Code aktivieren** aus.
 

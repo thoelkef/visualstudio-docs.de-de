@@ -1,7 +1,7 @@
 ---
-title: "Debuggen in Python Tools für Visual Studio | Microsoft-Dokumentation"
+title: Debuggen von Python in Visual Studio | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 5/8/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -28,16 +28,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: adf122a478b29674dc2924dcf7d42972a5a3f52e
-ms.openlocfilehash: 1d26ca1a464e2ec15c0d5d338a46b6fb1e7e1d65
-ms.lasthandoff: 04/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: e15edc1f2739cad0960619aa6cb4b089589eebd8
+ms.contentlocale: de-de
+ms.lasthandoff: 05/09/2017
 
 ---
 
 # <a name="debugging-your-python-code"></a>Debuggen Ihres Python-Codes
 
-Python Tools für Visual Studio (PTVS) bietet umfangreiche Debugfunktionen für Python, u.a. Folgende: Anfügen an ausgeführte Prozesse, Auswerten von Ausdrücken in den Überwachungs- und Direktfenstern, Untersuchen lokaler Variablen, Haltepunkte, Anweisungsausführung in Einzelschritten, Prozedurschritten oder bis Rücksprung, Festlegen der nächsten Anweisung und viele weitere. 
+Visual Studio bietet umfangreiche Debugfunktionen für Python, u.a. Folgende: Anfügen an ausgeführte Prozesse, Auswerten von Ausdrücken in den Überwachungs- und Direktfenstern, Untersuchen lokaler Variablen, Haltepunkte, Anweisungsausführung in Einzelschritten, Prozedurschritten oder bis Rücksprung, Festlegen der nächsten Anweisung und viele weitere. 
 
 Eine Übersicht über das Debuggen erhalten Sie in diesem Video: [Getting Started with PTVS, Part 4: Debugging](https://youtu.be/bO7wpzgy74A?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (youtube.com, 3 Minuten, 30 Sekunden).
 
@@ -58,7 +59,7 @@ Weitere Informationen finden Sie auch in den folgenden szenariospezifischen Them
 
 <a name="debugging-without-a-project"</a>
 > [!Tip]
-> PTVS unterstützt das Debuggen ohne Projekt. Wenn eine eigenständige Python-Datei in Visual Studio geöffnet ist, klicken Sie mit der rechten Maustaste in den Editor, und wählen Sie **Mit Debuggen starten** aus. PTVS startet das Skript mit der globalen Umgebung (siehe [Python-Umgebungen](python-environments.md)) und ohne Argumente. Danach verfügen Sie über vollständige Debuggingunterstützung.
+> Python in Visual Studio unterstützt das Debuggen ohne ein Projekt. Wenn eine eigenständige Python-Datei geöffnet ist, klicken Sie mit der rechten Maustaste in den Editor, und wählen Sie **Mit Debuggen starten** aus. Visual Studio startet das Skript mit der globalen Umgebung (siehe [Python-Umgebungen](python-environments.md)) und ohne Argumente. Danach verfügen Sie über vollständige Debuggingunterstützung.
 >
 > Um die Umgebung und Argumente zu steuern, müssen Sie ein Projekt für den Code erstellen. Nutzen Sie hierfür die Anweisungen unter [Aus vorhandenem Python-Code](python-projects.md#creating-a-project-from-existing-files).
 
