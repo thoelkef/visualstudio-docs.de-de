@@ -1,7 +1,7 @@
 ---
 title: Analysieren der Speicherauslastung in Visual Studio | Microsoft-Dokumentation
 ms.custom: H1Hack27Feb2017
-ms.date: 11/04/2016
+ms.date: 04/25/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -28,10 +28,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 697b8f5517ad9a953a04f920be39c9ef2cfa2558
-ms.lasthandoff: 04/05/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 137f6faa156d188afb99cafb2b1e9dbababdeb4f
+ms.openlocfilehash: a7de37fd82f94fdcef6f839884ea30c5c77061e5
+ms.contentlocale: de-de
+ms.lasthandoff: 04/28/2017
 
 ---
 # <a name="analyze-memory-usage"></a>Analysieren der Speicherauslastung
@@ -47,7 +48,7 @@ Suchen Sie Speicherverluste und ineffiziente Arbeitsspeichernutzung während des
   
  Obwohl Sie Speichermomentaufnahmen des Arbeitsspeichers zu jedem beliebigen Zeitpunkt im **Speicherauslastungstool** erfassen können, können Sie mit dem Visual Studio-Debugger kontrollieren, wie Ihre Anwendung die Ausführung vornimmt, und dabei Leistungsprobleme untersuchen. Festlegen von Haltepunkten, schrittweises Ausführen, alles unterbrechen und andere Debugger-Aktionen können Ihnen helfen, Ihre Leistungsuntersuchungen auf die relevantesten Codepfade zu fokussieren. Durch die Ausführung dieser Aktionen, während Ihre App ausgeführt wird, kann das Rauschen, das Sie nicht interessiert, vom Code entfernt werden, wodurch sich der Zeitaufwand, den Sie zur Diagnose eines Problems benötigen, maßgeblich verringert.  
   
- Sie können das Speichertool auch außerhalb des Debuggers verwenden. Siehe [Memory Usage without the Debugger](../profiling/memory-usage-without-debugging2.md) (Speicherauslastung ohne Debugger).  
+ Sie können das Speichertool auch außerhalb des Debuggers verwenden. Siehe [Memory Usage without Debugging](../profiling/memory-usage-without-debugging2.md).  
   
 > [!NOTE]
 >  **Unterstützung für benutzerdefinierte Zuweisungen** Die systemeigene Speicherprofilerstellung funktioniert dadurch, dass speicherbelegungsbezogene [ETW-](https://msdn.microsoft.com/en-us/library/windows/desktop/bb968803\(v=vs.85\).aspx) -Ereignisdaten gesammelt werden, die während der Laufzeit ausgegeben wurden.  Zuweisungen im CRT und Windows SDK wurden auf Quellebene kommentiert, sodass ihre Speicherbelegungsdaten erfasst werden können.  Wenn Sie Ihre eigenen Zuweisungen schreiben, kann jede Funktion, die einen Zeiger auf neu zugewiesenen Heapspeicher zurückgibt, mit [__declspec](/cpp/cpp/declspec)(allocator) ergänzt werden, wie in diesem Beispiel für myMalloc zu sehen ist:  
@@ -89,7 +90,7 @@ Suchen Sie Speicherverluste und ineffiziente Arbeitsspeichernutzung während des
     ![Momentaufnahme](../profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot") 
      
      > [!TIP]
-     >  -   Um eine Basislinie für Speichervergleiche zu erstellen, sollten Sie zu Beginn Ihrer Debugsitzung eine Momentaufnahme erstellen.  
+     >  Um eine Basislinie für Speichervergleiche zu erstellen, sollten Sie zu Beginn Ihrer Debugsitzung eine Momentaufnahme erstellen.  
 
 6.  Führen Sie das Szenario aus, bei dem Ihr erster Haltepunkt erreicht wird.
 
@@ -113,17 +114,15 @@ Die Zeilen der Speicherauslastungs-Übersichtstabelle führt die Momentaufnahmen
 -   Die Spalte **Heapgröße (Diff)** zeigt die Anzahl der Bytes in den .NET- und nativen Heaps 
 
 Wenn Sie mehrere Momentaufnahmen erstellt haben, beinhalten die Zellen der Übersichtstabelle die Wertänderung zwischen Zeilenmomentaufnahme und vorheriger Momentaufnahme.  
-  
-![Speicherzusammenfassungs-Tabelle](../profiling/media/dbgdiag_mem_summarytablecell.png "DBGDIAG_MEM_SummaryTableCell")  
 
 Um die Speicherauslastung zu analysieren, klicken Sie auf einen der Links. Ein detaillierter Bericht der Speicherauslastung wird geöffnet:  
 
 -   Um die Details des Unterschiedes zwischen aktueller Momentaufnahme und vorheriger Momentaufnahme anzuzeigen, wählen Sie die Änderungsverknüpfung links des Pfeils aus (![Zunahme der Speicherauslastung](../profiling/media/prof-tour-mem-usage-up-arrow.png "Zunahme der Speicherauslastung")). Ein roter Pfeil zeigt eine Zunahme der Speicherauslastung und ein grüner Pfeil die Abnahme der Speicherauslastung.
 
     > [!TIP]
-    >  Um Speicherprobleme schnell zu identifizieren, werden die Unterschiedsberichte nach Objekttypen sortiert, deren Anzahl sich am stärksten erhöht hat (Änderungsverknüpfung in der Spalte **Objekte (Diff.)**) oder deren gesamte Heapgröße sich am signifikantesten erhöht hat (Änderungsverknüpfung in der Spalte **Heapgröße (Diff.)**).
+    >  Um Speicherprobleme schnell auszumachen, werden die Unterschiedsberichte nach Objekttypen sortiert, deren Anzahl sich am stärksten erhöht hat (klicken Sie auf die Änderungsverknüpfung in der Spalte **Objekte (Diff.)**) oder deren gesamte Heapgröße sich am signifikantesten erhöht hat (klicken Sie auf die Änderungsverknüpfung in der Spalte **Heapgröße (Diff.)**).
 
--   Um nur die Details der ausgewählten Momentaufnahme anzuzeigen, wählen Sie die Verknüpfung ohne Änderung aus. 
+-   Um nur die Details der ausgewählten Momentaufnahme anzuzeigen, klicken Sie auf die Verknüpfung ohne Änderung. 
   
  Der Bericht wird in einem separaten Fenster angezeigt.   
   
@@ -178,10 +177,10 @@ Um die Speicherauslastung zu analysieren, klicken Sie auf einen der Links. Ein d
  ![Diff-Ansicht nativer Typen](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
   
 ## <a name="blogs-and-videos"></a>Blogs und Videos  
- [Diagnostic Tools debugger window in Visual Studio 2015 (Fenster des Diagnosetoolsdebugger in Visual Studio 2015)](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
+ [Diagnostic Tools debugger window in Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
   
- [Blog: Memory Usage Tool while debugging in Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/13/memory-usage-tool-while-debugging-in-visual-studio-2015.aspx) (Speicherauslastungstool beim Debuggen in Visual Studio 2015)  
+ [Blog: Memory Usage Tool while debugging in Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/13/memory-usage-tool-while-debugging-in-visual-studio-2015.aspx)  
   
- [Visual C++-Blog: Native Memory Diagnostics in VS2015 Preview](http://blogs.msdn.com/b/vcblog/archive/2014/11/21/native-memory-diagnostics-in-vs2015-preview.aspx) (Diagnose von nativem Speicher in VS2015)  
+ [Visual C++ Blog: Native Memory Diagnostics in VS2015 Preview](http://blogs.msdn.com/b/vcblog/archive/2014/11/21/native-memory-diagnostics-in-vs2015-preview.aspx)  
   
- [Visual C++-Blog: Native Memory Diagnostic Tools for Visual Studio 2015 CTP](http://blogs.msdn.com/b/vcblog/archive/2014/06/04/native-memory-diagnostic-tools-for-visual-studio-14-ctp1.aspx) (Diagnosetools für nativen Speicher für Visual Studio 2015 CTP)
+ [Visual C++ Blog: Native Memory Diagnostic Tools for Visual Studio 2015 CTP](http://blogs.msdn.com/b/vcblog/archive/2014/06/04/native-memory-diagnostic-tools-for-visual-studio-14-ctp1.aspx)
