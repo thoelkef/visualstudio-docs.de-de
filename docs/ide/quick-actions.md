@@ -1,7 +1,7 @@
 ---
 title: Schnelle Aktionen | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 03/10/2017
+ms.date: 05/08/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -10,8 +10,8 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.devlang: csharp
 ms.assetid: e173fb7d-c5bd-4568-ba0f-aa61913b3244
-author: BrianPeek
-ms.author: brpeek
+author: kempb
+ms.author: kempb
 manager: ghogen
 dev_langs:
 - CSharp
@@ -30,15 +30,16 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 46846db26bee30841e6cb35913d533b512d01ba0
-ms.openlocfilehash: 226e51ace56d51945cc380aaaf3450ae7dacf8e4
-ms.lasthandoff: 03/27/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 2831d252fbc9601e62c372ac3df7704e1dc65f2a
+ms.openlocfilehash: e59204427c8d7d1706ca6c85261733efdcbc440e
+ms.contentlocale: de-de
+ms.lasthandoff: 05/10/2017
 
 ---
 # <a name="quick-actions"></a>Schnelle Aktionen
 
-Mit [schnellen Aktionen](refactoring-code-generation-quick-actions.md#quick-actions) können Sie ganz leicht Code mit einer einzelnen Aktion umgestalten, generieren oder anderweitig ändern.  Während es viele schnelle Aktionen gibt, die entweder nur für C# oder Visual Basic gelten, gibt es auch einige, die sowohl für C#- als auch Visual Basic-Projekte gültig sind.  Diese können mithilfe des Glühbirnensymbols ![Small Light Bulb Icon](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") oder durch das Drücken von **STRG + .** angewendet werden , wenn sich Ihr Cursor auf der entsprechenden Codezeile befindet.
+Mit [schnellen Aktionen](refactoring-code-generation-quick-actions.md#quick-actions) können Sie ganz leicht Code mit einer einzelnen Aktion umgestalten, generieren oder anderweitig ändern.  Während es viele schnelle Aktionen gibt, die entweder nur für C# oder Visual Basic gelten, gibt es auch einige, die sowohl für C#- als auch Visual Basic-Projekte gültig sind.  Diese können mithilfe des Glühbirnensymbols ![Kleines Glühbirnensymbol](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") oder durch das Drücken von **STRG + .** angewendet werden , wenn sich Ihr Cursor in der entsprechenden Codezeile befindet.
 
 Sie sehen eine Glühbirne, wenn eine rote Wellenlinie vorhanden ist und Visual Studio über eine Empfehlung verfügt, um das Problem zu beheben. Wenn beispielsweise ein Fehler durch eine rote Wellenlinie gekennzeichnet ist, wird eine Glühbirne angezeigt, wenn Behebungsmaßnahmen für diesen Fehler verfügbar sind. Für jede Sprache können Drittanbieter benutzerdefinierte Diagnosen und Empfehlungen bereitstellen, beispielsweise als Bestandteil eines SDKs. Anhand dieser Regeln leuchten Visual Studio-Glühbirnen dann auf.  
 
@@ -46,7 +47,7 @@ Sie sehen eine Glühbirne, wenn eine rote Wellenlinie vorhanden ist und Visual S
 
 1. In vielen Fällen werden Glühbirnen spontan angezeigt, wenn Sie mit dem Mauszeiger auf die Position eines Fehlers zeigen, oder am linken Rand des Editors, wenn Sie die Einfügemarke in eine Zeile verschieben, die einen Fehler enthält. Wenn eine rote Wellenlinie angezeigt wird, können Sie den Mauszeiger darüber bewegen, um die Glühbirne anzuzeigen. Sie können auch veranlassen, dass eine Glühbirne angezeigt wird, wenn Sie die Maus oder Tastatur verwenden, um zu einem beliebigen Punkt in der Zeile zu wechseln, wo das Problem auftritt.  
 
-2. Drücken Sie **STRG + .** an einer beliebigen Stelle in einer Zeile, um die Glühbirne aufzurufen und direkt zur Liste mit den potenziellen Fehlerbehebungen zu wechseln.  
+2. Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG + .** , um die Glühbirne aufzurufen und direkt zur Liste mit den potenziellen Fehlerbehebungen zu wechseln.  
 
    ![Glühbirne mit Mauszeigerbewegung](../ide/media/vs2015_lightbulb_hover.png "VS2017_LightBulb_Hover")  
 
@@ -105,7 +106,7 @@ switch(myEnum)
     case MyEnum.Item3:
         break;
     default:
-        break;    
+        break;
 }
 ```
 
@@ -313,7 +314,7 @@ Debug.WriteLine("Hello")
 ```
 
 ### <a name="convert-to-interpolated-string"></a>Konvertieren in eine interpolierte Zeichenfolge
-[Interpolierte Zeichenfolgen](/dotnet/articles/csharp/language-reference/keywords/interpolated-strings) sind eine einfache Möglichkeit, Zeichenfolgen mit eingebetteten Variablen auszudrücken, ähnlich wie mit der **[String.Format](https://msdn.microsoft.com/library/system.string.format(v=vs.110).aspx)**-Methode.  Diese schnelle Aktion erkennt Fälle, in denen Zeichenfolgen verkettet sind oder **String.Format** verwenden, und den ändern das Verwenden in eine interpolierte Zeichenfolge.
+[Interpolierte Zeichenfolgen](/dotnet/articles/csharp/language-reference/keywords/interpolated-strings) sind eine einfache Möglichkeit, Zeichenfolgen mit eingebetteten Variablen auszudrücken, ähnlich wie mit der **[String.Format](https://msdn.microsoft.com/library/system.string.format.aspx)**-Methode.  Diese schnelle Aktion erkennt Fälle, in denen Zeichenfolgen verkettet sind oder **String.Format** verwenden, und ändert die Verwendung in eine interpolierte Zeichenfolge.
 
 ```CSharp
 // Before
@@ -339,5 +340,95 @@ Dim num as Integer = 3
 Dim s As String = $"My string with {num} in the middle"
 ```
 
+### <a name="remove-merge-conflict-markers"></a>Entfernen von Markierungen für Zusammenführungskonflikte
+Diese schnellen Aktionen ermöglichen das Auflösen von Zusammenführungskonflikten durch das „Vornehmen einer Änderung“, wodurch der in Konflikt stehende Code und die Markierungen entfernt werden. (Nur in Visual Studio 2017 [Version 15.3 - Preview] verfügbar.)
+
+![Refactoring: Auflösen von Zusammenführungskonflikten](../ide/media/vside-refactoring-merge-conflicts.png)
+
+### <a name="add-null-checks-for-parameters"></a>Hinzufügen von Überprüfungen auf NULL für Parameter
+Diese schnelle Aktion ermöglicht Ihnen das Hinzufügen einer Prüfung zu Ihrem Code, um zu ermitteln, ob ein Parameter NULL ist. (Nur in Visual Studio 2017 [Version 15.3 - Preview] verfügbar.)
+
+![Refactoring: Hinzufügen von Prüfung auf NULL](../ide/media/vside-refactoring-nullcheck.png)
+
+### <a name="constructor-generator-improvements"></a>Verbesserungen beim Generator von Konstruktoren
+Wenn Sie einen Konstruktor erstellen, ermöglicht Ihnen diese schnelle Aktion das Auswählen der zu erstellenden Eigenschaften oder Felder oder das Generieren des Konstruktors aus einem leeren Textkörper. Sie können sie auch verwenden, um von der Aufrufsite aus einem vorhandenen Konstruktor Parameter hinzuzufügen. (Nur in Visual Studio 2017 [Version 15.3 - Preview] verfügbar.)
+
+![Refactoring: Generieren von Konstruktoren](../ide/media/vside-refactoring-constructors.png)
+
+### <a name="remove-unused-variables"></a>Entfernen nicht verwendeter Variablen
+Diese schnelle Aktion ermöglicht Ihnen das Entfernen von Variablen, die zwar deklariert, aber nie in Ihrem Code verwendet wurden. (Nur in Visual Studio 2017 [Version 15.3 - Preview] verfügbar.)
+
+![Refactoring: Nicht verwendete Variablen](../ide/media/vside-refactoring-unusedvars.png)
+
+### <a name="generate-overrides"></a>Generieren von Überschreibungen
+Mit dieser schnellen Aktion können Sie eine Überschreibung anhand einer leeren Zeile in einer Klasse oder Struktur erstellen. Im Dialogfeld **Member auswählen** können Sie die zu überschreibenden Member auswählen. (Nur in Visual Studio 2017 [Version 15.3 - Preview] verfügbar.)
+
+![Refactoring: Überschreibungen](../ide/media/vside-refactoring-overrides.png)
+
+![Refactoring: Dialogfeld „Überschreibungen“](../ide/media/vside-refactoring-overrides-dialog.png)
+
+### <a name="change-base-for-numeric-literals"></a>Ändern der Basis für numerische Literale
+Mithilfe dieser schnellen Aktion können Sie ein numerisches Literal von einem numerischen Basissystem in ein anderes konvertieren. Beispielsweise können Sie eine Zahl in das hexadezimale oder binäre Format ändern. (Nur in Visual Studio 2017 [Version 15.3 - Preview] verfügbar.)
+
+![Refactoring: Ändern der Basis](../ide/media/vside-refactoring-changebase1.png)
+
+![Refactoring: Ändern der Basis](../ide/media/vside-refactoring-changebase2.png)
+
+### <a name="insert-digit-separators-into-literals"></a>Einfügen von Zifferntrennzeichen in Literale
+Mithilfe dieser schnellen Aktion können Sie Zifferntrennzeichen in Literale einfügen. (Nur in Visual Studio 2017 [Version 15.3 - Preview] verfügbar.)
+
+![Refactoring: Ändern von Zifferntrennzeichen](../ide/media/vside-refactoring-separators.png)
+
+### <a name="convert-if-construct-to-switch"></a>Konvertieren von **if**-Konstrukt in **switch**
+Mit dieser schnellen Aktionen können Sie ein **if-then-else**-Konstrukt in ein **switch**-Konstrukt konvertieren. (Nur in Visual Studio 2017 [Version 15.3 - Preview] verfügbar.)
+
+```CSharp
+// Before
+if (obj is string s)
+{
+  Console.WriteLine("obj is a string: " + s);  
+}
+
+else if (obj is int i && i > 10)
+{
+  Console.WriteLine("obj is an int greater than 10");
+}
+
+// Convert to switch
+
+// After
+switch (obj)
+{
+  case string s:
+    Console.WriteLine("Obj is a string: " + s);
+    break;
+  case int i when i > 10:
+    Console.WriteLine("obj is an int greater than 10");
+    break;
+}
+```
+
+```VB
+' Before
+If TypeOf obj Is String s Then
+    Console.WriteLine("obj is a string: " + s)
+Else If TypeOf obj Is Integer i And i > 10 Then
+    Console.WriteLine("obj is an int greater than 10")
+End If
+
+' Convert to switch
+
+' After
+Select Case obj
+  Case String s
+    Console.WriteLine("Obj is a string: " + s)
+    Exit Sub
+  Case Integer i when i > 10
+    Console.WriteLine("obj is an int greater than 10")
+    Exit Sub
+End Select
+```
+
 # <a name="see-also"></a>Siehe auch
 * [Codeformate und schnelle Aktionen](code-styles-and-quick-actions.md)
+
