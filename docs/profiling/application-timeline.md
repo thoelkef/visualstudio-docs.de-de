@@ -28,13 +28,14 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 5455d9a16004fef1aec02fbaf856f336c67dfb05
-ms.lasthandoff: 03/07/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 4c744284c198a645440494ee79ee0e722904fda5
+ms.openlocfilehash: b6fd9ebbd931604b12c772f4e2514c86f5c9dd70
+ms.contentlocale: de-de
+ms.lasthandoff: 05/04/2017
 
 ---
-# <a name="analyze-resource-consumption-and-ui-thread-acitivity-xaml"></a>Analysieren des Ressourcenverbrauchs und der Threadaktivitäten auf Benutzeroberflächen (XAML)
+# <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analysieren des Ressourcenverbrauchs und der Threadaktivitäten auf Benutzeroberflächen (XAML)
 Verwenden Sie den Profiler **Anwendungszeitachse** , um Leistungsprobleme in Bezug auf die Anwendungsinteraktion in XAML-Anwendungen zu suchen und zu beheben. Mit diesem Tool können Sie die Leistung von XAML-Anwendungen verbessern, indem Sie eine detaillierte Ansicht des Ressourcenverbrauchs einer Anwendung bereitstellen. Sie können analysieren, wie viel Zeit Ihre Anwendung zum Vorbereiten von Benutzeroberflächenframes (Anordnen und Rendern), zum Verarbeiten von Netzwerk- und Datenträgeranforderungen sowie in Szenarien wie Starten von Anwendungen, Laden von Seiten und Ändern von Fenstergrößen benötigt.  
   
  Die **Anwendungszeitachse** ist eines der Tools, die Sie mit dem Befehl **Debuggen/Leistungsprofiler...** starten können.  
@@ -88,7 +89,7 @@ Verwenden Sie den Profiler **Anwendungszeitachse** , um Leistungsprobleme in Bez
   
 2.  Überprüfen Sie anhand der Informationen in den Diagrammen **Auslastung des UI-Threads** bzw. **Visueller Durchsatz (FPS)** die Details in der Ansicht **Zeitachse** , um mögliche Ursachen für eine mangelhafte Reaktionsfähigkeit zu ermitteln.  
   
-###  <a name="BKMK_Report_scenarios_categories_and_events"></a> Berichtsszenarios, Kategorien und Ereignisse  
+###  <a name="BKMK_Report_scenarios_categories_and_events"></a> Berichtsszenarien, Kategorien und Ereignisse  
  Das Tool **Anwendungszeitachse** zeigt zeitbezogene Daten zu Szenarien, Kategorien und Ereignissen im Zusammenhang mit der XAML-Leistung.  
   
 ###  <a name="BKMK_Diagnostic_session_timeline"></a> Zeitachse der Diagnosesitzung  
@@ -119,7 +120,7 @@ Verwenden Sie den Profiler **Anwendungszeitachse** , um Leistungsprobleme in Bez
 |**Layout**|In großen Anwendungen können Tausende von Elementen zur gleichen Zeit auf dem Bildschirm angezeigt werden. Dies kann zu einer niedrigen UI-Framerate und einer entsprechend geringen Reaktionsfähigkeit der Anwendung führen. Das Layoutereignis bestimmt genau die Kosten für die Anordnung jedes Elements (d. h. die Zeit, die für Arrange-, Measure-, ApplyTemplate- und ArrangeOverride-Vorgänge aufgewendet wird) und erstellt die visuelle Struktur, die an einem Layoutdurchlauf beteiligt war. Sie können diese Visualisierung verwenden, um zu ermitteln, welche Ihrer logischen Strukturen bereinigt werden muss, oder um andere Verzögerungsmechanismen auszuwerten, um den Layoutdurchlauf zu optimieren.|  
 |**Rendern**|Zeitaufwand für das Zeichnen von XAML-Elementen auf dem Bildschirm.|  
 |**E/A**|Zeitaufwand für das Abrufen von Daten vom lokalen Datenträger oder von Netzwerkressourcen, auf die über die [Microsoft Windows Internet-API (WinINet)](https://msdn.microsoft.com/en-us/library/windows/desktop/aa385331.aspx)zugegriffen wird.|  
-|**App-Code**|Zeitaufwand für die Ausführung von Anwendungs- bzw. Benutzercode, der nicht mit der Analyse oder dem Layout im Zusammenhang steht.|  
+|**App Code**|Zeitaufwand für die Ausführung von Anwendungs- bzw. Benutzercode, der nicht mit der Analyse oder dem Layout im Zusammenhang steht.|  
 |**Andere XAML**|Zeitaufwand für die Ausführung von XAML-Laufzeitcode.|  
   
 > [!TIP]

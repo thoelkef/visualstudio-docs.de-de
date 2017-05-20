@@ -1,7 +1,7 @@
 ---
 title: Einstieg in die Arbeit mit Python in Visual Studio | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 5/1/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -27,16 +27,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
-ms.openlocfilehash: 2659c1a3b1adfc3f462971205460942c5fe5171f
-ms.lasthandoff: 03/27/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: 8001036077b8b14af80fabceafad5d3aff9b25f4
+ms.contentlocale: de-de
+ms.lasthandoff: 05/09/2017
 
 ---
 
 # <a name="getting-started-with-python-in-visual-studio"></a>Erste Schritte mit Python in Visual Studio
 
-Sobald Sie Visual Studio mit der Python-Arbeitsauslastung (Visual Studio 2017) oder mit den Python-Tools für Visual Studio (Visual Studio 2015 und früher) installiert haben, können Sie die Python-Entwicklungsumgebung erforschen.
+Sobald Sie Visual Studio mit der Python-Arbeitsauslastung (Visual Studio 2017) oder mit den Python-Tools für Visual Studio (Visual Studio 2015 und früher) installiert haben, können Sie die Python-Entwicklungsumgebung erforschen. (Siehe bei Bedarf [Installation](installation.md).)
 
 In dieser exemplarischen Vorgehensweise erstellen Sie eine neue leere Python-Anwendung, wählen eine Python-Umgebung für Ihre Arbeit aus und beginnen, Code zu schreiben, um IntelliSense kennenzulernen. Sie arbeiten dann für kurze Zeit mit dem interaktiven REPL-Fenster, um mehr Code zu erstellen, schließen dann das Programm ab und führen es sowohl eigenständig als auch im Debugger aus.
 
@@ -271,4 +272,5 @@ Zusätzlich zu den obigen „Vertiefung“-Links behandeln folgende Themen zusä
 - Visual Studio bietet die Möglichkeit zum Debuggen Ihrer Anwendung auf Remoteservern. Dies wird unter [Remotely Debugging Python Code](debugging-cross-platform-remote.md) (Remotedebuggen von Python Code) und [Remotely Debugging Python Code on Azure](debugging-azure-remote.md) (Remotedebuggen von Python Code in Azure) beschrieben.
 - Sie können die Leistung Ihres Python-Codes mit [Visual Studio-Profilerstellung](profiling.md) auswerten.
 - In Python geschriebene Komponententests werden direkt in den Visual Studio-Test-Explorer integriert, wie in [Setting Up Unit Testing for Python Code](unit-testing.md) (Einrichten von Komponententests für Python Code) erläutert.
+- [Kostenlose Python-Kurse in der Microsoft Virtual Academy](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
 
