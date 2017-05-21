@@ -3,10 +3,11 @@ layout: HubPage
 hide_bc: true
 title: Visual Studio-Dokumentation
 description: "Erfahren Sie, wie Sie Visual Studio 2017 für die Entwicklung von Anwendungen, Diensten und Tools in der Sprache Ihrer Wahl für Ihre Plattformen und Geräte verwenden können."
-translationtype: Human Translation
-ms.sourcegitcommit: 06cdfb076120ffd7459a16b56c659bb86942cd7f
-ms.openlocfilehash: 5a8448dff45473fa40892fb07604759a9d015021
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 2831d252fbc9601e62c372ac3df7704e1dc65f2a
+ms.openlocfilehash: a8f12e3418da5ec6fe778d3a7eaed610c120a859
+ms.contentlocale: de-de
+ms.lasthandoff: 05/10/2017
 
 ---
 <div id="main" class="v2">
@@ -201,7 +202,7 @@ ms.lasthandoff: 03/31/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Python (Vorschau)</h3>
+                                                    <h3>Python</h3>
                                                     <p>Interaktive Entwicklung für Python-Apps mithilfe von vertrauten Frameworks wie Django und Flask.</p>
                                                 </div>
                                             </div>
@@ -247,6 +248,25 @@ ms.lasthandoff: 03/31/2017
                                     </div>
                                 </a>
                             </li>                            
+                            <li>        
+                                <a href="https://go.microsoft.com/fwlink/?linkid=834748">        
+                                  <div class="cardSize">        
+                                    <div class="cardPadding">        
+                                      <div class="card">        
+                                        <div class="cardImageOuter">        
+                                          <div class="cardImage bgdAccent1 cardScaleImage">        
+                                            <img data-scaleimage="./images/vs_web-6.svg" src="./images/vs_web-6.svg" alt="" />        
+                                        </div>        
+                                        </div>        
+                                          <div class="cardText">        
+                                            <h3>Data Science und analytische Anwendungen</h3>        
+                                            <p>Sprachen und Tools zum Erstellen von Data Science-Anwendungen, einschließlich Python, R und F#.</p>        
+                                        </div>        
+                                      </div>        
+                                    </div>        
+                                  </div>        
+                                </a>        
+                            </li>
                             <li>
                                 <a href="https://go.microsoft.com/fwlink/?linkid=833075">
                                     <div class="cardSize">
@@ -258,7 +278,7 @@ ms.lasthandoff: 03/31/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Office/SharePoint-Entwicklung</h3>
+                                                    <h3>Office-/SharePoint-Entwicklung</h3>
                                                     <p>Erstellen Sie Office und SharePoint-Add-Ins und Lösungen mit C#, Visual Basic und JavaScript.</p>
                                                 </div>
                                             </div>
@@ -287,7 +307,7 @@ ms.lasthandoff: 03/31/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Mobile Entwicklung mit .NET</h3>
+                                                    <h3>Mobile Entwicklung für .NET</h3>
                                                     <p>Erstellen Sie mit Xamarin plattformübergreifende Anwendungen für iOS, Android oder Windows.</p>
                                                 </div>
                                             </div>
@@ -589,7 +609,7 @@ ms.lasthandoff: 03/31/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Daten</h3>
-                                                    <p>Erstellen Sie Anwendungen, die sich mit Daten jedes Formats in quasi jedem Datenbankprodukt oder Dienst verbinden. Dabei spielt es keine Rolle, ob sie sich auf einem lokalen Rechner, in einem lokalen Netzwerk oder in einer öffentlichen, privaten oder hybriden Cloud befinden.</p>
+                                                    <p>Erstellen Sie Daten-Apps, die sich überall, ob lokal oder in der Cloud, mit beliebigen Datenbanken und Diensten verbinden können. </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -731,7 +751,7 @@ ms.lasthandoff: 03/31/2017
                                             </div>
                                             <div class="cardText">
                                                 <a href="https://go.microsoft.com/fwlink/?linkid=833068">
-                                                    <h3>Python (Vorschau)</h3>
+                                                    <h3>Python</h3>
                                                     <p>Eine dynamische objektorientierte Programmiersprache auf hohem Niveau, die häufig für eine schnelle Anwendungsentwicklung verwendet wird.</p>
                                                 </a>
                                             </div>
@@ -774,7 +794,7 @@ ms.lasthandoff: 03/31/2017
                 <a href="https://go.microsoft.com/fwlink/?linkid=833101"> Twitter </a>
             </li>
             <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833103"> Stapelüberlauf </a>
+                <a href="https://go.microsoft.com/fwlink/?linkid=833103"> Stack Overflow </a>
             </li>
             <li>
                 <a href="https://go.microsoft.com/fwlink/?linkid=833104"> Problemberichte </a>
