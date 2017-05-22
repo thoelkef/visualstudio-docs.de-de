@@ -28,16 +28,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
-ms.openlocfilehash: 0f2ecd6ca52a04e8813610c0f406251ef4604354
-ms.lasthandoff: 04/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: b71d44150662c97f355c9b0c14a7888baf6c0683
+ms.contentlocale: de-de
+ms.lasthandoff: 05/09/2017
 
 ---
 
 # <a name="editing-python-code"></a>Bearbeiten von Python-Code
 
-Entwickler verbringen viel Zeit mit dem Code-Editor, daher bietet die Python-Unterstützung für Visual Studio Funktionen, mit denen Entwickler produktiver arbeiten können, darunter IntelliSense-Syntaxhervorhebung, automatische Vervollständigung, Signaturhilfe, Methodenüberschreibungen sowie Such- und Navigationsfunktionen. 
+Entwickler verbringen viel Zeit mit dem Code-Editor. Daher bietet die [Python-Unterstützung für Visual Studio](installation.md) Funktionen, mit denen Entwickler produktiver arbeiten können, darunter IntelliSense-Syntaxhervorhebung, automatische Vervollständigung, Signaturhilfe, Methodenüberschreibungen sowie Such- und Navigationsfunktionen. 
 
 In diesem Thema:
 

@@ -28,10 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: adf122a478b29674dc2924dcf7d42972a5a3f52e
-ms.openlocfilehash: df4d74d9fe884f3aff1998f4b0b38dbff6d1359f
-ms.lasthandoff: 04/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: fa3d69cbb34a61a327d0b4c27430ff04b670a568
+ms.contentlocale: de-de
+ms.lasthandoff: 05/09/2017
 
 ---
 
@@ -111,7 +112,10 @@ In diesen Schritten legen wir einen einfachen Haltepunkt fest, um den Remoteproz
 
 1. Legen Sie im nun angezeigten Dialogfeld **An den Prozess anhängen** den **Verbindungstyp** auf **Python remote (ptvsd)** fest. (In älteren Versionen von Visual Studio wird dies als **Transport** und **Python-Remotedebuggen** bezeichnet.)
 
-1. Geben Sie in das Feld **Verbindungsziel** (in älteren Versionen als **Qualifizierer** bezeichnet) `tcp://<secret>@<ip_address>:5678` ein, wobei `<secret>` für die übergebene Zeichenfolge `enable_attach` im Python-Code, `<ip_address>` für den Remotecomputer (entweder eine explizite Adresse oder ein Name wie myvm.cloudapp.net) und `:5678` für die Portnummer beim Remotedebuggen steht. 
+1. Geben Sie in das Feld **Verbindungsziel** (in älteren Versionen als **Qualifizierer** bezeichnet) `tcp://<secret>@<ip_address>:5678` ein, wobei `<secret>` für die übergebene Zeichenfolge `enable_attach` im Python-Code, `<ip_address>` für den Remotecomputer (entweder eine explizite Adresse oder ein Name wie myvm.cloudapp.net) und `:5678` für die Portnummer beim Remotedebuggen steht.
+
+    > [!Warning]
+    > Wenn Sie eine Verbindung über das öffentliche Internet herstellen, sollten Sie stattdessen `tcps` verwenden und die nachstehende Anweisung unten [Sichern der Debuggerverbindung mit SSL](#securing-the-debugger-connection-with-ssl) befolgen.
 
 1. Drücken Sie die EINGABETASTE, um die Liste der auf diesem Computer verfügbaren ptvsd-Prozesse aufzufüllen:
 
@@ -194,5 +198,5 @@ Visual Studio meldet Ihnen beim Herstellen einer Verbindung über SSL mögliche 
     ![SSL-Zertifikatwarnung Hostname](media/remote-debugging-ssl-warning2.png)
 
 > [!Warning]
-> Derzeit funktioniert Visual Studio 2017 Preview nicht mehr, wenn Sie diese Warnungen ignorieren. Achten Sie darauf, dass Sie alle Probleme beheben, bevor Sie versuchen, eine Verbindung herzustellen.
+> Derzeit hängt sich Visual Studio 2017 auf, wenn Sie diese Warnungen ignorieren. Achten Sie darauf, dass Sie alle Probleme beheben, bevor Sie versuchen, eine Verbindung herzustellen.
 

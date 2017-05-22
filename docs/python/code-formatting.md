@@ -28,10 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
-ms.openlocfilehash: b9e1c2b6be671adb99a13e4a0eb4357fbba477b2
-ms.lasthandoff: 04/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: a14bc7e8c9194fff3a1bec2739c9e9c2480e905b
+ms.contentlocale: de-de
+ms.lasthandoff: 05/09/2017
 
 ---
 
@@ -44,7 +45,7 @@ Mit Visual Studio können Sie Code schnell neu formatieren, um die vorkonfigurie
 
 Optionen werden über **Tools > Optionen > Text-Editor > Python > Formatierung** und die zugehörigen untergeordneten Registerkarten festgelegt. Standardmäßig sind sie so festgelegt, dass sie einer Obermenge des [PEP 8-Styleguides](http://www.python.org/dev/peps/pep-0008/) entsprechen. Auf der Registerkarte **Allgemein** wird festgelegt, wann die Formatierung angewendet wird. Die drei weiteren untergeordneten Registerkarten werden in den folgenden Abschnitten erläutert.
 
-Die Python-Unterstützung in Visual Studio fügt dem Menü **Bearbeiten > Erweitert** auch den nützlichen Befehl [Kommentarabsatz ausfüllen](#fill-comment-paragraph-command) hinzu, wie unten beschrieben.
+Die [Python-Unterstützung in Visual Studio](installation.md) fügt dem Menü **Bearbeiten > Erweitert** auch den nützlichen Befehl [Kommentarabsatz ausfüllen](#fill-comment-paragraph-command) hinzu, wie unten beschrieben.
 
 ## <a name="spacing"></a>Abstand
 

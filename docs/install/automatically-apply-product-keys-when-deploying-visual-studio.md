@@ -1,8 +1,8 @@
 ---
 title: "Automatisches Anwenden von Produktschlüsseln bei der Bereitstellung von Visual Studio | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 3/10/2017
-ms.reviewer: 
+ms.date: 05/06/2017
+ms.reviewer: tims
 ms.suite: 
 ms.technology:
 - vs-ide-install
@@ -28,51 +28,52 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: af9699b63fdfb81a274affb78856817520c38b05
-ms.openlocfilehash: 36a774583f5125ecc09210c9ad5da15ec800f870
-ms.lasthandoff: 04/03/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
+ms.openlocfilehash: 493ea235a3d89a04a4c6accfa491e622792e4397
+ms.contentlocale: de-de
+ms.lasthandoff: 05/09/2017
 
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Automatisches Anwenden von Produktschlüsseln bei der Bereitstellung von Visual Studio
-Sie können den Product Key programmgesteuert als Teil eines Skripts anwenden, das zum Automatisieren der Bereitstellung von Visual Studio verwendet wird. Product Keys können während der Installation von Visual Studio oder nach der abgeschlossenen Installation auf einem Gerät programmgesteuert festgelegt werden.  
+Sie können den Product Key programmgesteuert als Teil eines Skripts anwenden, das zum Automatisieren der Bereitstellung von Visual Studio verwendet wird. Product Keys können während der Installation von Visual Studio oder nach der abgeschlossenen Installation auf einem Gerät programmgesteuert festgelegt werden.
 
-## <a name="apply-the-license-during-installation"></a>Anwenden der Lizenz während der Installation  
- Verwenden Sie den `--productKey`-Parameter, um einen Product Key beim Setupvorgang von Visual Studio anzuwenden. Dieser Setupparameter kann mit dem `--quiet parameter`-Parameter verwendet werden, um Visual Studio in einem bereits lizenzierten Status für den Endbenutzer zu installieren. Öffnen Sie zum Verwenden des `--productKey`-Parameters eine Eingabeaufforderung. Führen Sie das Setupprogramm (z.B. „vs_enterprise.exe“ oder „vs_professional.exe“) aus, und legen Sie den `--productKey`-Parameter mit einem Product Key (25 Zeichen) mit oder ohne Bindestriche fest:  
+## <a name="apply-the-license-after-installation"></a>Anwenden der Lizenz nach der Installation
+ Sie können eine installierte Version von Visual Studio mit einem Product Key aktivieren, indem Sie das Hilfsprogramm `StorePID.exe` auf den Zielcomputern im automatischen Modus verwenden. `StorePID.exe` ist ein Hilfsprogramm im Installationsumfang von Visual Studio 2017, das am folgenden Standardspeicherort installiert wird: <br> `C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE`
 
- Dies ist eine Beispielbefehl für die Installation von Visual Studio 2015 Enterprise mit Product Key AAAAABBBBBCCCCCDDDDDEEEEEEE:  
+ Führen Sie `StorePID.exe` mit erhöhten Rechten aus, indem Sie entweder einen System Center-Agent oder eine Eingabeaufforderung mit erhöhten Rechten gefolgt vom Product Key (einschließlich der Bindestriche) und dem Microsoft Product Code (MPC) verwenden. Schließen Sie unbedingt die Bindestriche in den Product Key mit ein.
 
- `vs_enterprise.exe [any other setup parameters] --productKey AAAAABBBBBCCCCCDDDDDDEEEEEE`  
+ ```
+ StorePID.exe [product key including the dashes] [MPC]
+ ```
 
-## <a name="apply-the-license-after-installation"></a>Anwenden der Lizenz nach der Installation  
- Sie können eine installierte Version von Visual Studio mit einem Product Key aktivieren, indem Sie das Hilfsprogramm „storePID.exe“ auf den Zielcomputern im automatischen Modus verwenden. „StorePID.exe“ ist ein Hilfsprogramm, das mit Visual Studio **\<Laufwerk>:\\\Program Files (x86)\Microsoft Visual Studio 15.0\Common7\IDE\StorePID.exe** installiert wird.  
+ Dies ist eine Beispielbefehlszeile für die Anwendung der Lizenz für Visual Studio 2017 Enterprise mit dem MPC 08860 und dem Product Key `AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE`, vorausgesetzt, die Installation erfolgt an einem Standardspeicherort:
 
- Führen Sie das Hilfsprogramm „storePID.exe“ mit erhöhten Rechten aus, indem Sie entweder einen System Center-Agent oder eine Eingabeaufforderung mit erhöhten Rechten gefolgt vom Product Key (einschließlich der Bindestriche) und dem Microsoft Product Code (MPC) verwenden. Schließen Sie unbedingt die Bindestriche in den Product Key mit ein.  
+ ```cmd
+ C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\StorePID.exe AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE 08860
+ ```
 
- `StorePID.exe [product key including the dashes] [MPC]`  
+ In der folgenden Tabelle werden die MPC-Codes für jede Edition von Visual Studio aufgelistet:
 
- Dies ist eine Beispielbefehlszeile für die Installation von Visual Studio 2017 Enterprise mit einem MPC von 08860 und dem Product Key „AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE“:  
+| Visual Studio-Edition                | MPC   |
+|--------------------------------------|-------|
+| Visual Studio Enterprise 2017        | 08860 |
+| Visual Studio Professional 2017      | 08862 |
+| Visual Studio Test Professional 2017 | 08866 |
 
- `C:\Program Files (x86)\Microsoft Visual Studio 15.0\Common7\IDE\StorePID.exe AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE 08860`  
+Wenn der Product Key im Hilfsprogramm `StorePID.exe` erfolgreich angewendet wurde, wird als Wert von `%ERRORLEVEL%` 0 zurückgegeben. Wenn Fehler auftreten, wird ein Code entsprechend der Fehlerbedingung zurückgegeben:
 
- In der folgenden Tabelle werden die MPC-Codes für jede Edition von Visual Studio aufgelistet:  
+| Fehler                     | Code |
+|---------------------------|------|
+| `PID_ACTION_SUCCESS`      | 0    |
+| `PID_ACTION_NOTINSTALLED` | 1    |
+| `PID_ACTION_INVALID`      | 2    |
+| `PID_ACTION_EXPIRED`      | 3    |
+| `PID_ACTION_INUSE`        | 4    |
+| `PID_ACTION_FAILURE`      | 5    |
+| `PID_ACTION_NOUPGRADE`    | 6    |
 
-|Visual Studio-Edition | MPC |  
-|---------------------------|---------|
-|Visual Studio Enterprise 2017|08860|  
-|Visual Studio Professional 2017|08862|  
-|Visual Studio Test Professional 2017|08866|
-|Visual Studio Enterprise 2015|07060|  
-|Visual Studio Professional 2015|07062|  
-|Visual Studio Test Professional 2015|07066|  
-|Visual Studio Ultimate 2013|06181|  
-|Visual Studio Premium 2013|06191|  
-|Visual Studio Professional 2013|06177|  
-|Visual Studio Test Professional 2013|06194|  
-
-Wenn der Product Key im Hilfsprogramm „StorePID.exe“ erfolgreich angewendet wurde, wird 0 zurückgegeben. Wenn Fehler gefunden werden, wird eine Zahl zwischen 1 und 6 zurückgegeben.  
-
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>Siehe auch
  * [Installieren von Visual Studio](../install/install-visual-studio.md)
  * [Erstellen einer Offlineinstallation von Visual Studio](../install/create-an-offline-installation-of-visual-studio.md)
 
