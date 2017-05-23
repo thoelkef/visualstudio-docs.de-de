@@ -42,8 +42,8 @@ Python in Visual Studio erleichtert das Verwalten mehrerer Python-Umgebungen und
 
 Hinweis: Wenn Sie noch nicht mit Python in Visual Studio vertraut sind, sollten Sie sich zunächst mit den folgenden Themen beschäftigen, da die aktuelle Diskussion auf ihnen basiert:
 
-    - [Arbeiten mit Python in Visual Studio](python-in-visual-studio.md)
-    - [Installieren von Python-Unterstützung für Visual Studio](installation.md)
+- [Arbeiten mit Python in Visual Studio](python-in-visual-studio.md)
+- [Installieren von Python-Unterstützung für Visual Studio](installation.md)
 
 Eine Python-*Umgebung*, in der Python-Code stets ausgeführt wird, besteht aus einem Interpreter, einer Bibliothek (in der Regel die Python-Standardbibliothek) und einer Gruppe installierter Pakete. Gemeinsam bestimmen diese Komponenten, welche Sprachkonstrukte und Syntax gültig sind, auf welche Betriebssystemfunktionen Sie zugreifen können und welche Pakete Sie verwenden können.
 
