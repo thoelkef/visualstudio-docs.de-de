@@ -28,9 +28,10 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 2f67cbb9e3a2895dc6c35e68dbd6b262862c6514
 ms.openlocfilehash: 5a42f721c30dba9c14f7871a0d771f07054e2550
+ms.contentlocale: de-de
 ms.lasthandoff: 02/22/2017
 
 ---
@@ -72,7 +73,7 @@ Sie können Ihre Bereitstellungsumgebung in Visual Studio personalisieren und op
 
 2.  Wählen Sie im Dialogfeld **Kontoeinstellungen** den Link **Visual Studio-Profil verwalten** aus.  
 
-3.  Wählen Sie auf der Seite für die eigenen **** Microsoft-Informationen im Browser die Schaltfläche **Informationen bearbeiten** aus.  
+3.  Wählen Sie auf der Seite für die eigenen **Microsoft-Informationen** im Browser die Schaltfläche **Informationen bearbeiten** aus.  
 
 4.  Ändern Sie die Einstellungen.  
 
