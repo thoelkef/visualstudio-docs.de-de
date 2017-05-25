@@ -28,10 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
 ms.openlocfilehash: 444f6bf46c3eac65a2771655616fd67d8ed83b32
-ms.lasthandoff: 04/04/2017
+ms.contentlocale: de-de
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Empfohlene Vorgehensweisen für Tests der programmierten UI
@@ -60,7 +61,7 @@ In diesem Thema werden die besten Verfahren zur Entwicklung von Tests der progra
   
 -   Wenn sich die Benutzeroberfläche (User Interface, UI) ändert, zeichnen Sie die Testmethoden oder die Assertionsmethoden erneut auf, oder zeichnen Sie die betroffenen Abschnitte einer vorhandenen Testmethode erneut auf.  
   
--   Erstellen Sie eine separate <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>-Datei für jedes Modul in Ihrer getesteten Anwendung. Weitere Informationen finden Sie unter [Testing a Large Application with Multiple UI Maps (Testen einer großen Anwendung mit mehreren UI-Zuordnungen)](../test/testing-a-large-application-with-multiple-ui-maps.md).  
+-   Erstellen Sie eine separate <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>-Datei für jedes Modul in der getesteten Anwendung. Weitere Informationen finden Sie unter [Testing a Large Application with Multiple UI Maps (Testen einer großen Anwendung mit mehreren UI-Zuordnungen)](../test/testing-a-large-application-with-multiple-ui-maps.md).  
   
 -   Verwenden Sie in der getesteten Anwendung aussagekräftige Namen, wenn Sie Benutzeroberflächen-Steuerelemente erstellen. Dadurch wird die Aussagekraft und die Benutzerfreundlichkeit der automatisch generierten Steuerelementnamen erhöht.  
   
@@ -70,7 +71,7 @@ In diesem Thema werden die besten Verfahren zur Entwicklung von Tests der progra
   
  Tests der codierten UI werden automatisch an zahlreiche Änderungen in der Benutzeroberfläche angepasst. Wenn z. B. ein Benutzeroberflächenelement Position oder Farbe geändert hat, wird beim Test der programmierten UI in den meisten Fällen dennoch das richtige Element gefunden.  
   
- Während eines Testlaufs werden die UI-Steuerelemente vom Testframework mithilfe eines Satzes von Sucheigenschaften gesucht, die für jede Steuerelementklasse in den Definitionen angewendet werden, die durch den **Test-Generator der programmierten UI** in der `UIMap.Designer.cs`-Datei erstellt werden. Die Sucheigenschaften enthalten Name/Wert-Paare von Eigenschaftennamen und Eigenschaftswerten, die zur Identifizierung des Steuerelements verwendet werden können, z.B. die Eigenschaften <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FriendlyName%2A>, <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Name%2A> und <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.ControlType%2A> des Steuerelements. Wenn die Sucheigenschaften unverändert sind, findet der Test der programmierten UI erfolgreich das Steuerelement in der Benutzeroberfläche. Wenn die Sucheigenschaften geändert wurden, findet ein intelligenter Vergleichsalgorithmus der Tests der codierten UI anhand von Heuristik Steuerelemente und Fenster in der Benutzeroberfläche. Wenn die Benutzeroberfläche geändert wurde, können Sie möglicherweise die Sucheigenschaften von zuvor identifizierten Elementen ändern, um sicherstellen, dass sie gefunden werden.  
+ Während eines Testlaufs werden die UI-Steuerelemente vom Testframework mithilfe eines Satzes von Sucheigenschaften gesucht, die für jede Steuerelementklasse in den Definitionen angewendet werden, die durch den **Test-Generator der programmierten UI** in der `UIMap.Designer.cs`-Datei erstellt werden. Die Sucheigenschaften enthalten Name-Wert-Paare von Eigenschaftennamen und Eigenschaftenwerte, die verwendet werden können, um das Steuerelement zu identifizieren, z. B. die <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FriendlyName%2A>-, <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Name%2A>- und <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.ControlType%2A>-Eigenschaften des Steuerelements. Wenn die Sucheigenschaften unverändert sind, findet der Test der codierten UI erfolgreich das Steuerelement in der Benutzeroberfläche. Wenn die Sucheigenschaften geändert wurden, findet ein intelligenter Vergleichsalgorithmus der Tests der codierten UI anhand von Heuristik Steuerelemente und Fenster in der Benutzeroberfläche. Wenn die Benutzeroberfläche geändert wurde, können Sie möglicherweise die Sucheigenschaften von zuvor identifizierten Elementen ändern, um sicherstellen, dass sie gefunden werden.  
   
 ## <a name="what-to-do-if-your-user-interface-changes"></a>Vorgehensweise bei geänderter Benutzeroberfläche  
  Benutzeroberflächen werden während der Entwicklung häufig geändert. Nachfolgend finden Sie einige Möglichkeiten, um die Auswirkungen dieser Änderungen zu reduzieren:  
@@ -88,7 +89,7 @@ In diesem Thema werden die besten Verfahren zur Entwicklung von Tests der progra
  Weitere Informationen über das Aufzeichnen von Tests der programmierten UI finden Sie unter [Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes ](../test/use-ui-automation-to-test-your-code.md).  
   
 ## <a name="what-to-do-if-a-background-process-needs-to-complete-before-the-test-can-continue"></a>Vorgehensweise, wenn ein Hintergrundprozess abgeschlossen werden muss, bevor der Test fortgesetzt werden kann  
- Möglicherweise müssen Sie warten, bis ein Prozess beendet wird, bevor Sie mit der nächsten Benutzeroberflächen-Aktion fortfahren können. Hierzu können Sie <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.WaitForReadyLevel%2A> verwenden, um zu warten, bevor der Test wie im folgenden Beispiel fortgeführt wird.  
+ Möglicherweise müssen Sie warten, bis ein Prozess beendet wird, bevor Sie mit der nächsten Benutzeroberflächen-Aktion fortfahren können. Hierzu können Sie wie im folgenden Beispiel <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.WaitForReadyLevel%2A> verwenden, um zu warten, bevor der Test fortgesetzt wird.  
   
 ```  
 // Set the playback to wait for all threads to finish  

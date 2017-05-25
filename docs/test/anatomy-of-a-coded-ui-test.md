@@ -28,10 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
 ms.openlocfilehash: bf50213627703ac18257e3f0ec44c20cc7bb2cc9
-ms.lasthandoff: 04/04/2017
+ms.contentlocale: de-de
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Anatomy of a Coded UI Test
@@ -73,10 +74,10 @@ using Mouse = Microsoft.VisualStudio.TestTools.UITesting.Mouse;
 using MouseButtons = System.Windows.Forms.MouseButtons;  
 ```  
   
- Der Namespace <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls> ist für eine Windows-Benutzeroberfläche (UI) enthalten. Der Namespace für eine Webseiten-Benutzeroberfläche wäre <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>; der Namespache für eine Windows Presentation Foundation-Benutzeroberfläche wäre <xref:Microsoft.VisualStudio.TestTools.UITesting.WpfControls>.  
+ Der <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls>-Namespace bezieht sich auf eine Windows-Benutzeroberfläche (UI). Für eine Webseiten-Benutzeroberfläche wird der <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>-Namespace verwendet und für eine Windows Presentation Foundation-Benutzeroberfläche der <xref:Microsoft.VisualStudio.TestTools.UITesting.WpfControls>-Namespace.  
   
 ####  <a name="UIMapClass"></a> UIMap-Klasse  
- Im nächsten Abschnitt der Datei wird die <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>-Klasse erläutert.  
+ Der nächste Abschnitt der Datei ist die <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>-Klasse.  
   
 ```  
 [GeneratedCode("Coded UITest Builder", "10.0.21221.0")]  
@@ -94,7 +95,7 @@ public void VerifyTotal()
 public void CleanUp()  
 ```  
   
- Dieser Teil der <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>-Klasse enthält auch den generierten Code für jede Eigenschaft, die von den Methoden erfordert werden.  
+ Dieser Teil der <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>-Klasse enthält auch den generierten Code für die einzelnen Eigenschaften, die für die Methoden erforderlich sind.  
   
 ```  
 public virtual LaunchCalculatorParams LaunchCalculatorParams  
@@ -155,7 +156,7 @@ Assert.AreEqual(
     uIItemEdit.Text);  
 ```  
   
- Der Textfeldname wird als unbekannt aufgeführt, da der Entwickler der Windows-Rechneranwendung keinen öffentlich verfügbaren Namen für das Steuerelement bereitgestellt hat. Die <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A?displayProperty=fullName>-Methode schlägt fehl, wenn der tatsächliche Wert nicht dem erwarteten Wert entspricht, und der Test würde fehlschlagen. Beachten Sie außerdem, dass der erwartete Wert ein Dezimaltrennzeichen gefolgt von einem Leerzeichen enthält. Wenn Sie die Funktion dieses spezifischen Tests ändern müssen, müssen Sie dieses Dezimaltrennzeichen und das Leerzeichen berücksichtigen.  
+ Der Textfeldname wird als unbekannt aufgeführt, da der Entwickler der Windows-Rechneranwendung keinen öffentlich verfügbaren Namen für das Steuerelement bereitgestellt hat. Bei der <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A?displayProperty=fullName>-Methode tritt ein Fehler auf, wenn der tatsächliche Wert nicht dem erwarteten Wert entspricht. In diesem Fall kommt es bei dem Test zu einem Fehler. Beachten Sie außerdem, dass der erwartete Wert ein Dezimaltrennzeichen gefolgt von einem Leerzeichen enthält. Wenn Sie die Funktion dieses spezifischen Tests ändern müssen, müssen Sie dieses Dezimaltrennzeichen und das Leerzeichen berücksichtigen.  
   
 #####  <a name="UIMapProperties"></a> UIMap-Eigenschaften  
  Der Code für die einzelnen Eigenschaften ist in der gesamten Klasse ebenfalls weitgehend standardisiert. Der folgende Code für die `AddItemsParams`-Eigenschaft wird in der `AddItems()`-Methode verwendet.  
@@ -199,15 +200,15 @@ public class AddItemsParams
 }  
 ```  
   
- Wie alle Klassen in der `UIMap.cs`-Datei beginnt diese Klasse mit dem <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>. In dieser kleinen Klasse befindet sich ein `Fields`-Bereich, der definiert, dass die Zeichenfolgen als Parameter für die <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName>-Methode verwendet werden, die in der `UIMap.AddItems()`-Methode verwendet wird, die vorher besprochen wurde. Sie können vor dem Aufruf der Methode, in der diese Parameter verwendet werden, Code schreiben, um die Werte in diesen Zeichenfolgenfeldern zu ersetzen.  
+ Wie alle Klassen in der `UIMap.cs`-Datei beginnt diese Klasse mit dem <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>. Diese kleine Klasse enthält den `Fields`-Abschnitt, in dem die Zeichenfolgen definiert sind, die als Parameter für die <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName>-Methode in der zuvor erläuterten `UIMap.AddItems()`-Methode verwendet werden. Sie können vor dem Aufruf der Methode, in der diese Parameter verwendet werden, Code schreiben, um die Werte in diesen Zeichenfolgenfeldern zu ersetzen.  
   
 ###  <a name="UIMapCS"></a> UIMap.cs  
  Standardmäßig enthält diese Datei eine partielle `UIMap`-Klasse ohne Methoden oder Eigenschaften.  
   
 #### <a name="uimap-class"></a>UIMap-Klasse  
- Hier können Sie benutzerdefinierten Code erstellen, um die Funktionalität der <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>-Klasse zu erweitern. Der in dieser Datei erstellte Code wird nicht bei jeder Änderung eines Tests vom **Test-Generator der programmierten UI** erneut generiert.  
+ In dieser Klasse können Sie benutzerdefinierten Code erstellen, um die Funktion der <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>-Klasse zu erweitern. Der in dieser Datei erstellte Code wird nicht bei jeder Änderung eines Tests vom **Test-Generator der programmierten UI** erneut generiert.  
   
- Alle Teile der <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> können Methoden und Eigenschaften von anderen Teilen der <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>-Klasse verwenden.  
+ In allen Teilen der <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> können die Methoden und Eigenschaften aus einem beliebigen anderen Teil der <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>-Klasse verwendet werden.  
   
 ###  <a name="CodedUITestCS"></a> CodedUITest1.cs  
  Diese Datei wird vom **Test-Generator der programmierten UI** generiert, aber nicht bei jeder Änderung des Tests neu erstellt. Der Code in dieser Datei kann daher geändert werden. Der Name der Datei wird auf Grundlage des Namens generiert, den Sie beim Erstellen für den Test angegeben haben.  
@@ -273,7 +274,7 @@ public void MyTestCleanup()
 }  
 ```  
   
- Die `MyTestInitialize()`-Methode verfügt über die auf sie angewendete <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute>, die das Testframework auffordert, diese Methode vor allen anderen Testmethoden aufzurufen. Entsprechend verfügt die `MyTestCleanup()`-Methode über die auf sie angewendete <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>, die das Testframework auffordert, diese Methode nach allen anderen Testmethoden aufzurufen. Die Verwendung dieser Methoden ist optional. Für diesen Test könnte die `UIMap.LaunchCalculator()`-Methode von `MyTestInitialize()` und die `UIMap.CloseCalculator()`-Methode von `MyTestCleanup()` aufgerufen werden, anstatt von `CodedUITest1Method1()`.  
+ Der `MyTestInitialize()`-Methode ist das <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute> zugewiesen, wodurch das Testframework angewiesen wird, diese Methode vor allen anderen Testmethoden aufzurufen. Desgleichen ist der `MyTestCleanup()`-Methode das <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute> zugewiesen, wodurch das Testframework angewiesen wird, diese Methode nach allen anderen Testmethoden aufzurufen. Die Verwendung dieser Methoden ist optional. Für diesen Test könnte die `UIMap.LaunchCalculator()`-Methode von `MyTestInitialize()` und die `UIMap.CloseCalculator()`-Methode von `MyTestCleanup()` aufgerufen werden, anstatt von `CodedUITest1Method1()`.  
   
  Wenn Sie dieser Klasse weitere Methoden mit dem <xref:Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute> hinzufügen, wird im Rahmen des Tests jede Methode vom Testframework aufgerufen.  
   
