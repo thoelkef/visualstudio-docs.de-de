@@ -5,9 +5,10 @@ ms.author: apexprodleads
 ms.topic: landing-page
 title: Visual Studio-IDE-Dokumentation
 description: Erfahren Sie, wie die integrierte Entwicklungsumgebung (IDE) von Visual Studio Ihnen helfen kann, Apps mit nahezu jeder Codesprache zu entwickeln.
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 0e5a449ef396e7b9fd23a2c018bdc7f8791b7b38
 ms.openlocfilehash: 7f55b5d4cc58620e292cc11399c086e26184081f
+ms.contentlocale: de-de
 ms.lasthandoff: 03/13/2017
 
 ---
@@ -54,7 +55,7 @@ Lernprogramme, Videos und andere Dokumentation veranschaulichen, wie Sie Code un
         </a>
     </li>
     <li>
-        <a href="/dotnet/articles/welcome">
+        <a href="/dotnet/welcome">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
