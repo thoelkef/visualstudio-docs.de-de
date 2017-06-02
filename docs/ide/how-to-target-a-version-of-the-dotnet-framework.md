@@ -30,9 +30,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
 ms.openlocfilehash: 7ebf1dfaa3753f1a1908b0327e8ed938115f1f13
+ms.contentlocale: de-de
 ms.lasthandoff: 02/22/2017
 
 ---
@@ -84,7 +85,7 @@ In diesem Dokument wird beschrieben, wie eine bestimmte .NET Framework-Version f
      ![Visual Studio, App-Eigenschaften, Registerkarte „Anwendung“](../ide/media/vs_slnexplorer_properties_applicationtab.png "vs_slnExplorer_Properties_ApplicationTab")  
   
     > [!NOTE]
-    >  Nachdem Sie eine Windows Store-App in Visual Studio&2013; erstellt haben, können Sie weder die Windows-Zielversion noch die .NET Framework-Zielversion ändern.  
+    >  Nachdem Sie eine Windows Store-App in Visual Studio 2013 erstellt haben, können Sie weder die Windows-Zielversion noch die .NET Framework-Zielversion ändern.  
   
 3.  Wählen Sie in der Liste **Zielframework** die gewünschte Zielversion aus.  
   
