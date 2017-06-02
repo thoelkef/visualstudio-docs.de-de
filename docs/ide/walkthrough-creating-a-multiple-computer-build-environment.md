@@ -30,9 +30,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
 ms.openlocfilehash: 2587e4a10a4caa1192a0efc31448078db553dfb4
+ms.contentlocale: de-de
 ms.lasthandoff: 04/05/2017
 
 ---
@@ -307,7 +308,7 @@ Sie können eine Buildumgebung in der Organisation erstellen, indem Sie Visual S
     |x86_amd64|x64 Cross|x86, x64|x64|  
     |amd64|x64 (Systemeigen)|x64|x64|  
   
-     Wenn „vcvarsall.bat“ erfolgreich ausgeführt wird, d.h., es werden keine Fehlermeldung angezeigt, können Sie den nächsten Schritt überspringen und mit dem Abschnitt [Installing MSBuild assemblies to the Global Assembly Cache (GAC) on the build computer](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC) dieses Dokuments fortfahren.  
+     Wenn „vcvarsall.bat“ erfolgreich ausgeführt wird, d.h., es werden keine Fehlermeldung angezeigt, können Sie den nächsten Schritt überspringen und mit dem Abschnitt [Installieren von MSBuild-Assemblys auf den globalen Assemblycache (GAC) auf dem Buildcomputer](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC) dieses Dokuments fortfahren.   
   
 #### <a name="to-manually-set-environment-variables"></a>So legen Sie Umgebungsvariablen manuell fest  
   
