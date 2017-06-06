@@ -33,9 +33,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 06cdfb076120ffd7459a16b56c659bb86942cd7f
 ms.openlocfilehash: ffcc69f2a329799fe7800b8e2ebf9eae9d5c5fa3
+ms.contentlocale: de-de
 ms.lasthandoff: 03/31/2017
 
 ---
@@ -75,7 +76,7 @@ Wenn die Anwendung versucht, einen fehlerhaften Verweis zu verwenden, wird ein A
 
 3.  Wenn Sie Visual Basic verwenden, wählen Sie die Seite **Verweise** aus, und klicken Sie auf die Schaltfläche **Verweispfade**. Geben Sie im Dialogfeld **Verweispfade** im Feld **Ordner** den Pfad des Ordners mit dem Element an, auf das verwiesen werden soll, und klicken Sie dann auf die Schaltfläche **Ordner hinzufügen**.  
 
-     - oder -   
+     -oder-   
 
      Wenn Sie Visual C# verwenden, wählen Sie die Seite **Verweispfade** aus. Geben Sie im Feld **Ordner** den Pfad des Ordners mit dem Element an, auf das verwiesen werden soll, und klicken Sie dann auf die Schaltfläche **Ordner hinzufügen**.  
 
