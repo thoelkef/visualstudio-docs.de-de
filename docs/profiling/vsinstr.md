@@ -1,65 +1,83 @@
 ---
-title: "VSInstr | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Leistungstools, Instrumentation"
-  - "Instrumentation, VSInstr-Tool"
-  - "Profilerstellungstools, VSInstr"
-  - "Befehlszeilentools, Instrumentation"
-  - "Befehlszeile, Tools"
-  - "VSInstr"
-  - "VSInstr-Tool"
-  - "Leistungstools, VSInstr-Tool"
+title: VSInstr | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- performance tools, instrumentation
+- instrumentation, VSInstr tool
+- profiling tools,VSInstr
+- command-line tools, instrumentation
+- command line, tools
+- VSInstr
+- VSInstr tool
+- performance tools, VSInstr tool
 ms.assetid: 7b1334f7-f9b0-4a82-a145-d0607bfa8467
 caps.latest.revision: 44
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 44
----
-# VSInstr
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 63aad78bdc7df685ca3a73ec16a9cbc87b78151f
+ms.openlocfilehash: f8a98aebc2d6c8a0ad53988f92ea327948ae14a6
+ms.contentlocale: de-de
+ms.lasthandoff: 06/15/2017
 
-Mithilfe des VSInstr\-Tools werden Binärdateien instrumentiert.  Das Tool wird über diese Syntax aufgerufen:  
+---
+# <a name="vsinstr"></a>VSInstr
+Das VSInstr-Tool wird zum Instrumentieren von Binärdateien verwendet. Es wird mithilfe der folgenden Syntax aufgerufen:  
   
 ```  
 VSInstr [/U] filename [/options]  
 ```  
   
- In der folgenden Tabelle werden die Optionen des VSInstr\-Tools beschrieben:  
+ In der folgenden Tabelle werden die Optionen des VSInstr-Tools beschrieben:  
   
-|Optionen|**Beschreibung**|  
-|--------------|----------------------|  
+|Optionen|Beschreibung|  
+|-------------|-----------------|  
 |**Help** oder **?**|Zeigt die Hilfe an.|  
-|**U**|Umgeleitete Konsolenausgaben werden als Unicode geschrieben.  Diese Option muss zuerst angegeben werden.|  
-|`@filename`|Legt den Namen einer Antwortdatei fest, die eine Befehlsoption pro Zeile enthält.  Verwenden Sie keine Anführungszeichen.|  
-|**OutputPath** `:path`|Gibt ein Zielverzeichnis für das instrumentierte Image an.  Wird kein Ausgabepfad angegeben, wird die ursprüngliche Binärdatei umbenannt, indem im selben Verzeichnis "Orig" an den Dateinamen angehängt wird, und eine Kopie der ursprünglichen Binärdatei wird instrumentiert.|  
-|**Exclude** `:funcspec`|Gibt eine Funktionsspezifikation an, die mithilfe von Überprüfungen von der Instrumentation ausgeschlossen werden soll.  Dies ist hilfreich, wenn das Einfügen von Profilerstellungsüberprüfungen in eine Funktion zu unvorhersehbaren und unerwünschten Ergebnissen führt.<br /><br /> Geben Sie keine **Exclude**\-Option oder **Include**\-Option an, die auf Funktionen in derselben Binärdatei verweist.<br /><br /> Geben Sie die **Exclude**\-Option mehrmals an, wenn Sie mehrere Funktionen ausschließen möchten.<br /><br /> `funcspec` wird folgendermaßen definiert:<br /><br /> \[namespaceseparator1\<\>\] \[classseparator2\<\>\] Funktion<br /><br /> \<separator1\> ist `::` für systemeigenen Code und `.` für verwalteten Code.<br /><br /> \<separator2\> ist immer `::`<br /><br /> **Exclude** wird mit Codeabdeckung unterstützt.<br /><br /> Das Platzhalterzeichen \* wird unterstützt.  Zum Beispiel können Sie alle Funktionen in einem Namespace ausschließen:<br /><br /> MyNamespace::\*<br /><br /> Sie können die vollständigen Namen von Funktionen in der angegebenen Binärdatei mithilfe von **VSInstr \/DumpFuncs** aufführen.|  
-|**Include** `:funcspec`|Gibt eine Funktionsspezifikation in einer Binärdatei an, die mit Überprüfungen instrumentiert werden soll.  Alle anderen Funktionen in den Binärdateien werden nicht instrumentiert.<br /><br /> Geben Sie die **Include**\-Option mehrmals an, wenn Sie mehrere Funktionsspezifikationen angeben möchten.<br /><br /> Geben Sie keine **Include**\-Option oder **Exclude**\-Option an, die auf Funktionen in derselben Binärdatei verweist.<br /><br /> **Include** wird nicht mit Codeabdeckung unterstützt.<br /><br /> `funcspec` wird folgendermaßen definiert:<br /><br /> \[namespaceseparator1\<\>\] \[classseparator2\<\>\] Funktion<br /><br /> \<separator1\> ist `::` für systemeigenen Code und `.` für verwalteten Code.<br /><br /> \<separator2\> ist immer `::`<br /><br /> Das Platzhalterzeichen \* wird unterstützt.  Zum Beispiel können Sie alle Funktionen in einem Namespace einschließen:<br /><br /> MyNamespace::\*<br /><br /> Sie können die vollständigen Namen von Funktionen in der angegebenen Binärdatei mithilfe von **VSInstr \/DumpFuncs** aufführen.|  
-|**DumpFuncs**|Listet die Funktionen im angegebenen Image auf.  Es wird keine Instrumentation durchgeführt.|  
-|**ExcludeSmallFuncs**|Schließt kleine Funktionen aus der Instrumentation aus. Hierbei handelt es sich um kurze Funktionen, die keine Funktionsaufrufe ausführen.  Die **ExcludeSmallFuncs**\-Option bietet einen geringeren Instrumentationsmehraufwand und damit eine verbesserte Instrumentationsgeschwindigkeit.<br /><br /> Durch den Ausschluss kleiner Funktionen wird auch die Größe von VSP\-Dateien und die für die Analyse erforderliche Zeit reduziert.|  
-|**Mark:**{**Before** `&#124;`  **After** `&#124;`  **Top** `&#124;` **Bottom**}`,funcname,markid`|Fügt eine Profilmarkierung \(einen Bezeichner zum Unterteilen der Daten in Berichten\) ein, mit der der Beginn und das Ende eines Datenbereichs in einer VSP\-Berichtsdatei identifiziert werden können.<br /><br /> **Before**  ``  – Unmittelbar vor dem Aufrufen der Zielfunktion.<br /><br /> **After**  ``  – Unmittelbar nach dem Verlassen der Zielfunktion.<br /><br /> **Top**  ``  – Unmittelbar nach dem Aufrufen der Zielfunktion.<br /><br /> **Bottom**  ``  – Unmittelbar vor jeder Rückkehr in der Zielfunktion.<br /><br /> `funcname` – Der Name der Zielfunktion.<br /><br /> `Markid`\- Eine positive ganze Zahl \(lang\), die als Bezeichner für die Profilmarkierung verwendet wird.|  
-|**Coverage**|Führt eine Abdeckungsinstrumentation durch.  Es kann nur mit den folgenden Optionen verwendet werden: **Verbose**, **OutputPath**, **Exclude** und **Logfile**.|  
-|**Verbose**|Die **Verbose**\-Option wird zum Anzeigen detaillierter Informationen zum Instrumentationsvorgang verwendet.|  
-|**NoWarn** `[:[Message Number[;Message Number]]]`|Unterdrückt alle oder bestimmte Warnungen.<br /><br /> `Message Number` – Die Warnnummer.  Wenn die `Message Number` weggelassen wird, werden alle Warnungen unterdrückt.<br /><br /> Weitere Informationen finden Sie unter [VSInstr\-Warnungen](../profiling/vsinstr-warnings.md).|  
-|**Control** `:{` **Thread** `&#124;`  **Process** `&#124;` **Global** `}`|Gibt die Profilebene der folgenden VSInstr\-Optionen für die Steuerung der Datensammlung an:<br /><br /> **Start**<br /><br /> **StartOnly**<br /><br /> **Suspend**<br /><br /> **StopOnly**<br /><br /> **SuspendOnly**<br /><br /> **ResumeOnly**<br /><br /> **Thread**  ``  – Gibt die Steuerungsfunktionen für die Datensammlung auf Threadebene an.  Die Profilerstellung wird nur für den aktuellen Thread gestartet oder beendet.  Der Profilerstellungszustand anderer Threads wird nicht beeinflusst.  Der Standardwert ist thread.<br /><br /> **Process**  ``  – Gibt die Steuerungsfunktionen für die Sammlung von Profilerstellungsdaten auf Prozessebene an.  Die Profilerstellung wird für alle Threads im aktuellen Prozess gestartet oder beendet.  Der Profilerstellungszustand für andere Prozesse wird nicht beeinflusst.<br /><br /> **Global**  ``  – Gibt die Steuerungsfunktionen für die Datensammlung auf globaler Ebene \(prozessübergreifend\) an.<br /><br /> Wenn Sie keine Profilebene angeben, tritt ein Fehler auf.|  
-|**Start** `:{` **Inside** `&#124;` **Outside** `},funcname`|Beschränkt die Datensammlung auf die Zielfunktion sowie die von dieser Funktion aufgerufenen untergeordneten Funktionen.<br /><br /> **Inside**  ``  – Fügt die StartProfile\-Funktion unmittelbar nach dem Aufrufen der Zielfunktion ein.  Fügt die StopProfile\-Funktion unmittelbar vor jeder Rückkehr in die Zielfunktion ein.<br /><br /> **Outside**  ``  – Fügt die StartProfile\-Funktion unmittelbar vor jedem Aufruf der Zielfunktion ein.  Fügt die StopProfile\-Funktion unmittelbar nach einem Aufruf in die Zielfunktion ein.<br /><br /> `funcname` – Der Name der Zielfunktion.|  
-|**Suspend** `:{` **Inside** `&#124;` **Outside** `},funcname`|Schließt die Datensammlung für die Zielfunktion und untergeordnete von der Funktion aufgerufene Funktionen aus.<br /><br /> **Inside**  ``  – Fügt die SuspendProfile\-Funktion unmittelbar nach dem Aufrufen der Zielfunktion ein.  Fügt die ResumeProfile\-Funktion unmittelbar vor jeder Rückkehr in die Zielfunktion ein.<br /><br /> **Outside**  ``  – Fügt die SuspendProfile\-Funktion unmittelbar vor dem Aufrufen der Zielfunktion ein.  Fügt die ResumeProfile\-Funktion unmittelbar nach dem Verlassen der Zielfunktion ein.<br /><br /> `funcname` – Der Name der Zielfunktion.<br /><br /> Wenn die Zielfunktion eine StartProfile\-Funktion enthält, wird die SuspendProfile\-Funktion davor eingefügt.  Wenn die Zielfunktion eine StopProfile\-Funktion enthält, wird die ResumeProfile\-Funktion danach eingefügt.|  
-|**StartOnly:** `{` **Before** `&#124;`  **After** `&#124;`  **Top** `&#124;` **Bottom** `},funcname`|Startet während einer Profilerstellungsausführung die Datensammlung.  Diese Option fügt die StartProfile\-API\-Funktion an der angegebenen Stelle ein.<br /><br /> **Before**  `` – Unmittelbar vor dem Aufrufen der Zielfunktion.<br /><br /> **After**  `` – Unmittelbar nach dem Verlassen der Zielfunktion.<br /><br /> **Top**  ``  – Unmittelbar nach dem Aufrufen der Zielfunktion.<br /><br /> **Bottom**  `` – Unmittelbar vor jeder Rückkehr in der Zielfunktion.<br /><br /> `funcname` – Der Name der Zielfunktion.|  
-|**StopOnly:**{**Before** `&#124;`  **After** `&#124;`  **Top** `&#124;` **Bottom**}`,funcname`|Stoppt während einer Profilerstellungsausführung die Datensammlung.  Die Option fügt die StopProfile\-Funktion an der angegebenen Stelle ein.<br /><br /> **Before**  `` – Unmittelbar vor dem Aufrufen der Zielfunktion.<br /><br /> **After**  `` – Unmittelbar nach dem Verlassen der Zielfunktion.<br /><br /> **Top**  ``  – Unmittelbar nach dem Aufrufen der Zielfunktion.<br /><br /> **Bottom**  `` – Unmittelbar vor jeder Rückkehr in der Zielfunktion.<br /><br /> `funcname` – Der Name der Zielfunktion.|  
-|**SuspendOnly:**{**Before** `&#124;`  **After** `&#124;`  **Top** `&#124;` **Bottom**}`,funcname`|Stoppt während einer Profilerstellungsausführung die Datensammlung.  Die Option fügt die SuspendProfile\-API\-Funktion an der angegebenen Stelle ein.<br /><br /> **Before**  `` – Unmittelbar vor dem Aufrufen der Zielfunktion.<br /><br /> **After**  `` – Unmittelbar nach dem Verlassen der Zielfunktion.<br /><br /> **Top**  ``  – Unmittelbar nach dem Aufrufen der Zielfunktion.<br /><br /> **Bottom**  `` – Unmittelbar vor jeder Rückkehr in der Zielfunktion.<br /><br /> `funcname` – Der Name der Zielfunktion.<br /><br /> Wenn die Zielfunktion eine StartProfile\-Funktion enthält, wird die SuspendProfile\-Funktion davor eingefügt.|  
-|**ResumeOnly:**{**Before** `&#124;`  **After** `&#124;`  **Top** `&#124;` **Bottom**}`,funcname`|Beginnt oder setzt während einer Profilerstellungsausführung die Datensammlung fort.<br /><br /> Normalerweise wird sie verwendet, um die Profilerstellung zu starten, wenn durch eine **SuspendOnly**\-Option die Profilerstellung angehalten wurde.  Die Option fügt eine ResumeProfile\-API\-Funktion an der angegebenen Stelle ein.<br /><br /> **Before**  `` – Unmittelbar vor dem Aufrufen der Zielfunktion.<br /><br /> **After**  `` – Unmittelbar nach dem Verlassen der Zielfunktion.<br /><br /> **Top**  ``  – Unmittelbar nach dem Aufrufen der Zielfunktion.<br /><br /> **Bottom**  `` – Unmittelbar vor jeder Rückkehr in der Zielfunktion.<br /><br /> `funcname` – Der Name der Zielfunktion.<br /><br /> Wenn die Zielfunktion eine StopProfile\-Funktion enthält, wird die ResumeProfile\-Funktion danach eingefügt.|  
+|**U**|Schreibt die umgeleitete Konsolenausgabe als Unicode. Dabei muss es sich um die erste angegebene Option handeln.|  
+|`@filename`|Gibt den Namen einer Antwortdatei an, die eine Befehlsoption pro Zeile enthält.  Verwenden Sie keine Anführungszeichen.|  
+|**OutputPath** `:path`|Gibt ein Zielverzeichnis für das instrumentierte Image an. Wenn kein Ausgabepfad angegeben wird, wird die ursprüngliche Binärdatei umbenannt, indem „Orig“ an den Dateinamen im gleichen Verzeichnis angefügt wird, und es wird eine Kopie der Binärdatei instrumentiert.|  
+|**Exclude** `:funcspec`|Gibt eine Funktionsspezifikation zum Ausschließen von der Instrumentierung durch Überprüfungen an. Dies ist hilfreich, wenn die Profilerstellung zum Einfügen der Überprüfung in einer Funktion unvorhersehbare oder unerwünschte Ergebnisse verursacht.<br /><br /> Verwenden Sie keine **Exclude**- und **Include**-Optionen, die sich auf Funktionen in der gleichen Binärdatei beziehen.<br /><br /> Sie können mehrere Funktionsspezifikationen mit separaten **Exclude**-Optionen angeben.<br /><br /> `funcspec` wird folgendermaßen definiert:<br /><br /> [Namespace\<Trennzeichen1>] [Klasse\<Trennzeichen2>]Funktion<br /><br /> \<Trennzeichen1 > ist `::` für nativen Code und `.` für verwalteten Code.<br /><br /> \<Trennzeichen2> ist immer `::`<br /><br /> **Exclude** wird mit Code Coverage unterstützt.<br /><br /> Das Platzhalterzeichen \* wird unterstützt. Verwenden Sie beispielsweise Folgendes, um alle Funktionen in einem Namespace auszuschließen:<br /><br /> MyNamespace::\*<br /><br /> Sie können **VSInstr /DumpFuncs** verwenden, um die vollständigen Namen von Funktionen in der angegebenen Binärdatei aufzulisten.|  
+|**Include** `:funcspec`|Gibt eine Funktionsspezifikation in einer Binärdatei an, um mit Überprüfungen zu instrumentieren. Alle anderen Funktionen in den Binärdateien werden nicht instrumentiert.<br /><br /> Sie können mehrere Funktionsspezifikationen mit separaten **Include**-Optionen angeben.<br /><br /> Verwenden Sie keine **Include**- und **Exclude**-Optionen, die sich auf Funktionen in der gleichen Binärdatei beziehen.<br /><br /> **Include** wird mit Code Coverage nicht unterstützt.<br /><br /> `funcspec` wird folgendermaßen definiert:<br /><br /> [Namespace\<Trennzeichen1>] [Klasse\<Trennzeichen2>]Funktion<br /><br /> \<Trennzeichen1 > ist `::` für nativen Code und `.` für verwalteten Code.<br /><br /> \<Trennzeichen2> ist immer `::`<br /><br /> Das Platzhalterzeichen \* wird unterstützt. Verwenden Sie beispielsweise Folgendes, um alle Funktionen in einem Namespace einzuschließen:<br /><br /> MyNamespace::\*<br /><br /> Sie können **VSInstr /DumpFuncs** verwenden, um die vollständigen Namen von Funktionen in der angegebenen Binärdatei aufzulisten.|  
+|**DumpFuncs**|Listet die Funktionen innerhalb des angegebenen Images auf. Es wird keine Instrumentierung durchgeführt.|  
+|**ExcludeSmallFuncs**|Schließt kleine Funktionen, also kurze Funktionen, die keine Funktionsaufrufe ausführen, aus der Instrumentierung aus. Die Option **ExcludeSmallFuncs** bietet bei weniger Instrumentierungsoverhead eine daher verbesserte Instrumentierungsgeschwindigkeit.<br /><br /> Der Ausschluss kleiner Funktionen reduziert auch die Größe der VSP-Datei und den Zeitaufwand für die Analyse.|  
+|**Mark:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname,markid`|Fügt eine Profilmarkierung (ein Bezeichner, der zum Einschränken der Daten in Berichten verwendet wird) ein, die Sie zum Identifizieren des Beginns oder des Endes eines Datenbereichs in der VSP-Berichtsdatei verwenden können.<br /><br /> **Before**: Unmittelbar vor dem Zielfunktionseintrag.<br /><br /> **After**: Unmittelbar nach dem Zielfunktionsausgang.<br /><br /> **Top**: Unmittelbar nach dem Zielfunktionseintrag.<br /><br /> **Bottom**: Unmittelbar vor jeder Rückgabe in der Zielfunktion.<br /><br /> `funcname`: Name der Zielfunktion<br /><br /> `Markid`: Eine positive ganze Zahl (lang), die als Bezeichner der Profilmarkierung verwendet werden soll.|  
+|**Coverage**|Führt die Coverage-Instrumentierung durch. Kann nur mit den folgenden Optionen verwendet werden: **Verbose**, **OutputPath**, **Exclude** und **Logfile**.|  
+|**Verbose**|Die **Verbose**-Option wird verwendet, um detaillierte Informationen zum Instrumentierungsprozess anzuzeigen.|  
+|**NoWarn** `[:[Message Number[;Message Number]]]`|Alle oder bestimmte Warnungen unterdrücken.<br /><br /> `Message Number`: Warnnummer. Wenn `Message Number` ausgelassen wird, werden alle Warnungen unterdrückt.<br /><br /> Weitere Informationen finden Sie unter [VSInstr-Warnungen](../profiling/vsinstr-warnings.md).|  
+|**Control** `:{` **Thread** `&#124;` **Process** `&#124;` **Global** `}`|Gibt die Profilerstellungsebene der folgenden VSInstr-Steuerungsoptionen für die Datensammlung an:<br /><br /> **Start**<br /><br /> **StartOnly**<br /><br /> **Suspend**<br /><br /> **StopOnly**<br /><br /> **SuspendOnly**<br /><br /> **ResumeOnly**<br /><br /> **Thread**: Gibt die Steuerungsfunktionen für die Datensammlung auf Thread-Ebene an. Die Profilerstellung wird nur für den aktuellen Thread gestartet oder angehalten. Der Profilerstellungsstatus anderer Threads ist nicht betroffen. Der Standardwert ist Thread.<br /><br /> **Process**: Gibt die Steuerungsfunktionen für die Profildatensammlung auf Prozessebene an. Die Profilerstellung wird für alle Threads im aktuellen Prozess gestartet oder angehalten. Der Profilerstellungsstatus anderer Prozesse ist nicht betroffen.<br /><br /> **Global**: Gibt die Steuerungsfunktionen für die Datensammlung auf globaler Ebene (prozessübergreifend) an.<br /><br /> Wenn Sie die Profilerstellungsebene nicht angeben, tritt ein Fehler auf.|  
+|**Start** `:{` **Inside** `&#124;` **Outside** `},funcname`|Beschränkt die Datensammlung auf die Zielfunktion und die untergeordneten Funktionen, die von dieser Funktion aufgerufen werden.<br /><br /> **Inside**: Fügt die Funktion „StartProfile“ direkt nach dem Eintrag zur Zielfunktion ein. Fügt die Funktion „StopProfile“ direkt vor jeder Rückgabe in der Zielfunktion ein.<br /><br /> **Outside**: Fügt die Funktion „StartProfile“ direkt vor jedem Aufruf zur Zielfunktion ein. Fügt die Funktion „StopProfile“ direkt vor nach jedem Aufruf zur Zielfunktion ein.<br /><br /> `funcname`: Der Name der Zielfunktion.|  
+|**Suspend** `:{` **Inside** `&#124;` **Outside** `},funcname`|Beschränkt die Datensammlung für die Zielfunktion und die untergeordneten Funktionen, die von der Funktion aufgerufen werden.<br /><br /> **Inside**: Fügt die Funktion „SuspendProfile“ direkt nach dem Eintrag zur Zielfunktion ein. Fügt die Funktion „ResumeProfile“ direkt vor jeder Rückgabe in der Zielfunktion ein.<br /><br /> **Outside**: Fügt die Funktion „SuspendProfile“ direkt vor dem Eintrag zur Zielfunktion ein. Fügt die Funktion „ResumeProfile“ direkt nach dem Ausgang der Zielfunktion ein.<br /><br /> `funcname`: Name der Zielfunktion.<br /><br /> Wenn die Zielfunktion eine „StartProfile“-Funktion enthält, wird die Funktion „SuspendProfile“ vor dieser eingefügt. Wenn die Zielfunktion eine „StopProfile“-Funktion enthält, wird die Funktion „ResumeProfile“ nach dieser eingefügt.|  
+|**StartOnly:** `{` **Before** `&#124;` **After** `&#124;` **Top** `&#124;` **Bottom** `},funcname`|Startet die Datensammlung während einer Profilerstellung. Fügt die StartProfile-API-Funktion an der angegebenen Position ein.<br /><br /> **Before**: Unmittelbar vor dem Zielfunktionseintrag.<br /><br /> **After**: Unmittelbar nach dem Zielfunktionsausgang.<br /><br /> **Top**: Unmittelbar nach dem Zielfunktionseintrag.<br /><br /> **Bottom**: Unmittelbar vor jeder Rückgabe in der Zielfunktion.<br /><br /> `funcname`: Name der Zielfunktion.|  
+|**StopOnly:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname`|Stoppt die Datensammlung während einer Profilerstellung. Fügt die „StopProfile“-Funktion an der angegebenen Position ein.<br /><br /> **Before**: Unmittelbar vor dem Zielfunktionseintrag.<br /><br /> **After**: Unmittelbar nach dem Zielfunktionsausgang.<br /><br /> **Top**: Unmittelbar nach dem Zielfunktionseintrag.<br /><br /> **Bottom**: Unmittelbar vor jeder Rückgabe in der Zielfunktion.<br /><br /> `funcname`: Name der Zielfunktion.|  
+|**SuspendOnly:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname`|Stoppt die Datensammlung während einer Profilerstellung. Fügt die „SuspendProfile“-API an der angegebenen Position ein.<br /><br /> **Before**: Unmittelbar vor dem Zielfunktionseintrag.<br /><br /> **After**: Unmittelbar nach dem Zielfunktionsausgang.<br /><br /> **Top**: Unmittelbar nach dem Zielfunktionseintrag.<br /><br /> **Bottom**: Unmittelbar vor jeder Rückgabe in der Zielfunktion.<br /><br /> `funcname`: Name der Zielfunktion.<br /><br /> Wenn die Zielfunktion eine „StartProfile“-Funktion enthält, wird die Funktion „SuspendProfile“ vor dieser eingefügt.|  
+|**ResumeOnly:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname`|Startet die Datensammlung während einer Profilerstellung oder setzt sie fort.<br /><br /> Wird normalerweise dazu verwendet, die Profilerstellung zu starten, nachdem die Option **SuspendOnly** die Profilerstellung beendet hat. Fügt eine ResumeProfile-API an der angegebenen Position ein.<br /><br /> **Before**: Unmittelbar vor dem Zielfunktionseintrag.<br /><br /> **After**: Unmittelbar nach dem Zielfunktionsausgang.<br /><br /> **Top**: Unmittelbar nach dem Zielfunktionseintrag.<br /><br /> **Bottom**: Unmittelbar vor jeder Rückgabe in der Zielfunktion.<br /><br /> `funcname`: Name der Zielfunktion.<br /><br /> Wenn die Zielfunktion eine „StopProfile“-Funktion enthält, wird die Funktion „ResumeProfile“ nach dieser eingefügt.|  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [VSPerfMon](../profiling/vsperfmon.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [VSPerfReport](../profiling/vsperfreport.md)   
- [VSInstr\-Warnungen](../profiling/vsinstr-warnings.md)   
- [Berichtsansichten für Profilerstellungstools](../profiling/performance-report-views.md)
+ [VSInstr-Warnungen](../profiling/vsinstr-warnings.md)   
+ [Leistungsberichtansichten](../profiling/performance-report-views.md)
