@@ -126,8 +126,6 @@ Lernprogramme, Videos und andere Dokumentation veranschaulichen, wie Sie Code un
         </div>
         </a>
     </li>
-</ul>
-<ul class="panelContent cardsFTitle">    
     <li>
         <a href="https://mva.microsoft.com/product-training/visual-studio-courses">
         <div class="cardSize">
