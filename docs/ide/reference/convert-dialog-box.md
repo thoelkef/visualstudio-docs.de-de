@@ -44,7 +44,7 @@ ms.lasthandoff: 03/03/2017
 # <a name="convert-dialog-box"></a>Dialogfeld "Konvertieren"
 Mithilfe des Dialogfelds **Konvertieren** können Sie ein Konvertierungstool auswählen, um ein neues Projekt aus einem alten zu erstellen. Sie können z.B. ein [!INCLUDE[vbprvblong](../../ide/reference/includes/vbprvblong_md.md)]-Projekt aus einem Visual Basic 6-Projekt erstellen. Sie können auch den [Visual Studio-Projektkonverter](http://go.microsoft.com/fwlink/?LinkID=246465)verwenden, der auf der CodePlex-Website verfügbar ist, um Projekte zu upgraden, die in früheren Versionen von Visual Studio erstellt wurden.  
   
- [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)].  
+ [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]  
   
 ## <a name="opening-the-convert-dialog-box"></a>Öffnen des Dialogfelds „Konvertieren“  
   
