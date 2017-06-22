@@ -26,10 +26,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 6dfb5758833d9ecda1a6ac378eb3f5069cc80561
-ms.lasthandoff: 04/04/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 1d64aafdb107e0398c25f6efed7203524c111f18
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Verwenden von Shims, um zu Komponententests die Anwendung von anderen Assemblys zu trennen
@@ -46,7 +47,7 @@ ms.lasthandoff: 04/04/2017
  Weitere Informationen finden Sie unter [Video (1h16): Testing Un-testable Code with Fakes in Visual Studio 2012 (Testen von nicht-testbarem Code mit Fakes in Visual Studio 2012)](http://go.microsoft.com/fwlink/?LinkId=261837).  
   
 ## <a name="in-this-topic"></a>In diesem Thema  
- In diesem Thema lernen Sie Folgendes:  
+ In diesem Thema erfahren Sie Folgendes:  
   
  [Beispiel: Der Y2K-Fehler](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Example__The_Y2K_bug)  
   
@@ -102,7 +103,7 @@ public static class Y2KChecker {
   
 ```  
   
- Das Testen diese Methode ist besonders problematisch, da das Programm `DateTime.Now` benötigt, eine Methode, die von der Systemuhr des Computers abhängt, also eine von der Umgebung abhängige, nicht deterministische Methode ist. Darüber hinaus ist `DateTime.Now` eine statische Eigenschaft ist, sodass hier kein Stubtyp verwendet werden kann. Dieses Problem ist ein Symptom des Isolationsproblems bei Komponententests: Für Programme, die Datenbank-APIs direkt aufrufen, mit Webdiensten kommunizieren usw., sind Komponententests schwer auszuführen, da die Logik von der Umgebung abhängig ist.  
+ Das Testen diese Methode ist besonders problematisch, da das Programm `DateTime.Now` benötigt, eine Methode, die von der Systemuhr des Computers abhängt, also eine von der Umgebung abhängige, nicht deterministische Methode ist. Darüber hinaus ist `DateTime.Now` eine statische Eigenschaft, sodass hier kein Stub-Typ verwendet werden kann. Dieses Problem ist ein Symptom des Isolationsproblems bei Komponententests: Für Programme, die Datenbank-APIs direkt aufrufen, mit Webdiensten kommunizieren usw., sind Komponententests schwer auszuführen, da die Logik von der Umgebung abhängig ist.  
   
  In diesem Fall sollten Shimtypen verwendet werden. Shimtypen bieten einen Mechanismus, beliebige .NET-Methoden an einen benutzerdefinierten Delegaten umzuleiten. Shimtypen werden vom Fakes-Generator mit Code generiert und verwenden Delegaten, die als Shimtypen bezeichnet werden, um die neuen Methodenimplementierungen anzugeben.  
   
@@ -512,7 +513,7 @@ ShimMyClass.BehaveAsNotImplemented();
 ```  
   
 ##  <a name="BKMK_Concurrency"></a> Parallelität  
- Shimtypen gelten für alle Threads in der AppDomain und haben keine Threadaffinität. Dies ist wichtig, wenn Sie planen, einen Test Runner zu verwenden, der Nebenläufigkeit unterstützt: Tests unter Verwendung von Shimtypen können nicht gleichzeitig ausgeführt werden. Diese Eigenschaft wird von der Fakes-Laufzeit nicht durchgesetzt.  
+ Shim-Typen gelten für alle Threads in der AppDomain und haben keine Threadaffinität. Dies ist wichtig, wenn Sie planen, einen Test Runner zu verwenden, der Nebenläufigkeit unterstützt: Tests unter Verwendung von Shimtypen können nicht gleichzeitig ausgeführt werden. Diese Eigenschaft wird von der Fakes-Laufzeit nicht durchgesetzt.  
   
 ##  <a name="BKMK_Calling_the_original_method_from_the_shim_method"></a> Aufrufen der ursprüngliche Methode aus der Shimmethode  
  Angenommen, der Text soll tatsächlich in das Dateisystem geschrieben werden, nachdem der an die Methode übergebene Dateiname überprüft wurde. In diesem Fall muss die ursprüngliche Methode in der Mitte der Shimmethode aufgerufen werden.  
@@ -539,7 +540,7 @@ ShimFile.WriteAllTextStringString = (fileName, content) => {
 ShimsDelegates.Action<string, string> shim = null;  
 shim = (fileName, content) => {  
   try {  
-    Console.WriteLine("enter”);  
+    Console.WriteLine("enter");  
     // remove shim in order to call original method  
     ShimFile.WriteAllTextStringString = null;  
     File.WriteAllText(fileName, content);  
@@ -562,7 +563,7 @@ ShimFile.WriteAllTextStringString = shim;
 ## <a name="external-resources"></a>Externe Ressourcen  
   
 ### <a name="guidance"></a>Empfehlungen  
- [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests)](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Testing for Continuous Delivery with Visual Studio 2012 - Chapter 2: Unit Testing: Testing the Inside (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests)](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Siehe auch  
  [Isolieren von getestetem Code mithilfe von Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)   

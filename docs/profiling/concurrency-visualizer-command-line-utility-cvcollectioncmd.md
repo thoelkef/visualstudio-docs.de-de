@@ -30,10 +30,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 2981d5082fdbcc9f15c1b36552787e0a78727e38
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: da79533a7a40b6e1b79c66f023beba2c1162bd08
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Befehlszeilenhilfsprogramm für die Parallelitätsschnellansicht (CVCollectionCmd)
@@ -83,8 +84,8 @@ Sie können das Befehlszeilenprogramm Concurrency Visualizer (CVCollectionCmd.ex
 |Tag|Beschreibung|Werte|  
 |---------|-----------------|------------|  
 |Konfigurationen|Grenzt die gesamte Config-Datei ab.|Muss folgende Elemente enthalten:<br /><br /> - MinorVersion<br />- MajorVersion|  
-|MajorVersion|Gibt die Hauptversion der Konfigurationsdatei an.|Muss 1 sein für [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]-Projekte. Wenn nicht 1, dann funktioniert das Dienstprogramm nicht.|  
-|MinorVersion|Legt die Nebenversion der Konfigurationsdatei fest.|Muss 0 sein für [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]-Projekte. Wenn nicht 0, dann funktioniert das Dienstprogramm nicht.|  
+|MajorVersion|Gibt die Hauptversion der Konfigurationsdatei an.|Muss 1 sein für [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] -Projekte. Wenn nicht 1, dann funktioniert das Dienstprogramm nicht.|  
+|MinorVersion|Legt die Nebenversion der Konfigurationsdatei fest.|Muss 0 sein für [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] -Projekte. Wenn nicht 0, dann funktioniert das Dienstprogramm nicht.|  
 |IncludeEnvSymbolPath|Legt einen Wert fest, der bestimmt, ob der Umgebungssymbolpfad (_NT_SYMBOL_PATH) verwendet wird.|- TRUE<br />- FALSE|  
 |DeleteEtlsAfterAnalysis|Gibt einen Wert an, der festlegt, ob die ETL-Dateien nach Abschluss der Analyse gelöscht werden.|- TRUE<br />- FALSE|  
 |SymbolPath|Gibt den Pfad des Symbolservers an. Weitere Informationen finden Sie unter [Beziehen von Debugsymboldateien über den Microsoft-Symbolserver](http://go.microsoft.com/fwlink/?LinkID=149389).|Ein Verzeichnisname oder eine URL.|  

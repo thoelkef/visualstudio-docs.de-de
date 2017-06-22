@@ -26,10 +26,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 1641996f0fb3027f912426aa71e7ef132cfac92c
-ms.lasthandoff: 04/04/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: b7ef6829b8fca9f08b9c1fc526c975dad54f24d2
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Exemplarische Vorgehensweise: Erstellen, Bearbeiten und Verwalten von Tests der programmierten UI
@@ -160,7 +161,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine einfache Windows Pres
   
      Weitere Informationen zu den Optionen im Dialogfeld finden Sie unter [Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
   
-8.  Klicken Sie auf dem „UIMap – Test-Generator der programmierten UI“ auf **Aufzeichnung starten**.  
+8.  Klicken Sie auf dem UIMap – Test-Generator der programmierten UI auf **Aufzeichnung starten**.  
   
      ![Starten der Aufzeichnung](../test/media/cuit_builder_record.png "CUIT_Builder_Record")  
   
@@ -187,7 +188,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine einfache Windows Pres
   
 14. Geben Sie im Feld "Methodenname" den Namen **SimpleAppTest** ein, und klicken Sie auf **Hinzufügen und generieren**. Der Test der programmierten UI wird nach wenigen Sekunden angezeigt und der Projektmappe hinzugefügt.  
   
-15. Schließen Sie den UIMap – Test-Generator für codierte UI.  
+15. Schließen Sie den UIMap – Test-Generator der programmierten UI.  
   
      Die Datei "CodedUITest1.cs" wird im Code-Editor geöffnet.  
   
@@ -226,7 +227,7 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine einfache Windows Pres
   
      Der Test der codierten UI wird im Editor für den Test der codierten UI angezeigt. Sie können nun den Test der programmierten UI anzeigen und bearbeiten.  
   
-6.  Wählen Sie im Bereich **UI-Aktion** die Testmethode(SimpleAppTest) aus, die Sie in die Datei „UIMap.cs“ oder „UIMap.vb“ verschieben möchten. Dadurch vereinfachen Sie die Funktion für benutzerdefinierten Code, die beim erneuten Kompilieren des Tests nicht überschrieben wird.  
+6.  Wählen Sie im Bereich **UI-Aktion** die Testmethode (SimpleAppTest) aus, die Sie in die Datei „UIMap.cs“ oder „UIMap.vb“ verschieben möchten. Dadurch vereinfachen Sie die Funktion für benutzerdefinierten Code, die beim erneuten Kompilieren des Tests nicht überschrieben wird.  
   
 7.  Klicken Sie auf der Symbolleiste des Editors für den Test der programmierten UI auf die Schaltfläche **Code verschieben**.  
   
@@ -312,11 +313,11 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine einfache Windows Pres
   
 1.  Klicken Sie in der Datei „CodedUITest1.cs“ in der **CodedUITestMethod1()**-Methode mit der rechten Maustaste, wählen Sie **Code für den Test der programmierten UI generieren** aus, und klicken Sie dann auf **Test-Generator für programmierte UI verwenden**.  
   
-     Der UIMap – Test-Generator der programmierten UI wird angezeigt.  
+     Der UIMap – Test-Generator der programmierten UI wird angezeigt.  
   
 2.  Führen Sie mithilfe der zuvor erstellten Desktopverknüpfung die Anwendung "SimpleWPFApp" aus, die Sie ebenfalls zuvor erstellt haben.  
   
-3.  Ziehen Sie auf dem UIMap – Test-Generator für programmierte UI das Fadenkreuztool auf die Schaltfläche **Start** in „SimpleWPFApp“.  
+3.  Ziehen Sie auf dem UIMap – Test-Generator der programmierten UI das Fadenkreuztool auf die Schaltfläche **Start** in „SimpleWPFApp“.  
   
      Die Schaltfläche **Start** ist mit einem blauen Rahmen versehen, und der Test-Generator der programmierten UI braucht einige Sekunden, um die Daten für das ausgewählte Steuerelement zu verarbeiten. Dann werden die Steuerelementeigenschaften angezeigt. Beachten Sie, dass **AutomationUId** die Bezeichnung **buttonA** trägt.  
   
@@ -334,9 +335,9 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine einfache Windows Pres
   
 8.  Schließen Sie "SimpleWPFApp.exe".  
   
-9. Schließen Sie "UIMap – Test-Generator für codierte UI".  
+9. Schließen Sie den UIMap – Test-Generator für programmierte UI.  
   
-     "UIMap – Test-Generator für codierte UI" benötigt einige Sekunden für die Verarbeitung der Änderungen an den UI-Steuerelementzuordnungen.  
+     Der UIMap – Test-Generator für programmierte UI benötigt einige Sekunden für die Verarbeitung der Änderungen an den UI-Steuerelementzuordnungen.  
   
 10. Öffnen Sie im Projektmappen-Explorer die Datei "UIMap.Designer.cs".  
   
@@ -394,9 +395,9 @@ In dieser exemplarischen Vorgehensweise erstellen Sie eine einfache Windows Pres
  [MSDN Virtual Lab: Introduction to Creating Coded UI Tests with Visual Studio 2010 (MSDN Virtual Lab: Einführung in die Erstellung programmierter UI-Tests mit Visual Studio 2010)](http://go.microsoft.com/fwlink/?LinkID=22508)  
   
 ### <a name="faq"></a>FAQ  
- [Coded UI Tests FAQ – 1 (Tests der programmierten UI – FAQ 1)](http://go.microsoft.com/fwlink/?LinkID=230576)  
+ [Tests der codierten UI – FAQ 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
   
- [Coded UI Tests FAQ -2 (Tests der programmierten UI – FAQ 2)](http://go.microsoft.com/fwlink/?LinkID=230578)  
+ [Tests der codierten UI – FAQ 2](http://go.microsoft.com/fwlink/?LinkID=230578)  
   
 ### <a name="forum"></a>Forum  
  [Visual Studio UI Automation Testing (includes CodedUI) (Tests der Benutzeroberflächenautomatisierung (einschließlich programmierte UI) in Visual Studio)](http://go.microsoft.com/fwlink/?LinkID=224497)  

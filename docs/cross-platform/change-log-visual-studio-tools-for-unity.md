@@ -28,10 +28,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 47c39bd711b69efdb863d71f11e3e472054a3ce3
-ms.openlocfilehash: 2af148cb8367ea3a584ac8e028c8167e4ad6123b
-ms.lasthandoff: 04/06/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 7aa8de1116409f30cf1a0cd2fd689c03c2242724
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Änderungsprotokoll (Visual Studio-Tools für Unity)
@@ -760,7 +761,7 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
   
 -   Korrektur von Bug UVS-11: Lokale Variablen in Co-Routinen.  
   
-## <a name="11--beta-release"></a>1.1 – Betaversion  
+## <a name="11---beta-release"></a>1.1 – Betaversion  
  Veröffentlichung: 09.10.2014  
   
 ## <a name="1013"></a>1.0.13  
@@ -963,6 +964,6 @@ Visual Studio-Tools für Unity (Änderungsprotokoll)
   
 -   Korrektur der Vervollständigung für DLL-Dateien im Ordner "Asset" für UnityScript und Boo.  
   
-## <a name="10--initial-release"></a>1.0 – Erstveröffentlichung  
+## <a name="10---initial-release"></a>1.0 – Erstveröffentlichung  
  Veröffentlichung: 22.08.2012
 

@@ -39,10 +39,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 618aaec3a0ae735560d14bea43cc2b08bd9e5445
-ms.lasthandoff: 03/07/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 90fed413835f118e59bc32f0b94cb62a40baaca1
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analysieren der HTML-UI-Reaktionsfähigkeit in UWP-Apps
@@ -149,7 +150,7 @@ In diesem Thema wird das Isolieren von Leistungsproblemen in Ihren Apps mithilfe
   
 13. Wenn das Diagramm vergrößert ist, wählen Sie einen Teil des Diagramms für die CPU-Auslastung oder des Diagramms für den visuellen Durchsatz aus. Wenn Sie eine Auswahl treffen, ändert sich das Zeitachsendetaildiagramm im unteren Bereich des Profilers und zeigt nur den ausgewählten Zeitraum an.  
   
-###  <a name="IsolateVisualThroughput"></a> Isolieren eines Problems mit dem visuellen Durchsatz  
+###  <a name="IsolateVisualThroughput"></a> Isolate a visual throughput problem  
  Zeiten übermäßiger CPU-Auslastung können zu niedrigen oder ungleichmäßigen Frameraten führen. Wenn Sie Rich-Media-Apps und Spiele entwickeln, stellt das visuelle Durchsatzdiagramm eventuell wichtigere Daten als das CPU-Auslastungsdiagramm bereit.  
   
  Um ein visuelles Durchsatzproblem zu isolieren, führen Sie die im vorherigen Abschnitt beschriebenen Schritte aus, doch verwenden Sie das visuelle Durchsatzdiagramm als einen der Hauptdatenpunkte.  
@@ -204,7 +205,7 @@ if (performance.mark && performance.measure) {
   
  App-Lebenszyklusereignisse werden als Diamantsymbole angezeigt. Es handelt sich um DOM-Ereignisse, beispielsweise:  
   
--   `DOMContentLoaded`-Ereignisse und `Load`-Ereignisse, die normalerweise im aktivierten Ereignishandler im Code auftreten. In einer QuickInfo für das Ereignis werden das Ereignis und die URL angezeigt.  
+-   `DOMContentLoaded` -Ereignisse und `Load` -Ereignisse, die normalerweise im aktivierten Ereignishandler im Code auftreten. In einer QuickInfo für das Ereignis werden das Ereignis und die URL angezeigt.  
   
 -   Ein Navigationsereignis, das auftritt, wenn Sie zu einer anderen Seite navigieren. In einer QuickInfo für das Ereignis wird die URL der Zielseite angezeigt.  
   
@@ -325,20 +326,20 @@ if (performance.mark && performance.measure) {
 ##  <a name="SaveSession"></a> Speichern einer Diagnosesitzung  
  In Visual Studio können Sie eine Diagnosesitzung speichern, wenn Sie die Registerkarte schließen, die der Sitzung zugeordnet ist. Gespeicherte Sitzungen können zu einem späteren Zeitpunkt erneut geöffnet werden.  
   
-##  <a name="ProfilerEvents"></a> Profilerereignisreferenz  
+##  <a name="ProfilerEvents"></a> Profiler event reference  
  Profilerereignisse sind kategorisiert und im Benutzeroberflächen-Reaktionsfähigkeits-Profiler farbcodiert. Beispiele für Ereigniskategorien:  
   
--   **Laden.** Gibt die Zeit an, die beim ersten Laden der App für den Abruf von App-Ressourcen und die Analyse von HTML und CSS aufgebracht wurde. Dazu können auch Netzwerkanforderungen gehören.  
+-   **Ladevorgang.** Gibt die Zeit an, die beim ersten Laden der App für den Abruf von App-Ressourcen und die Analyse von HTML und CSS aufgebracht wurde. Dazu können auch Netzwerkanforderungen gehören.  
   
--   **Skripterstellung.** Gibt die Zeit an, die für die Analyse und die Ausführung von JavaScript aufgewendet wurde. Dazu gehören DOM-Ereignissen, Timer, Skriptauswertung und Animationsframeaufgaben. Umfasst sowohl Benutzercode als auch Bibliothekscode.  
+-   **Skripterstellung** Gibt die Zeit an, die für die Analyse und die Ausführung von JavaScript aufgewendet wurde. Dazu gehören DOM-Ereignissen, Timer, Skriptauswertung und Animationsframeaufgaben. Umfasst sowohl Benutzercode als auch Bibliothekscode.  
   
 -   **GC.** Gibt die Zeit an, die auf die Garbage Collection aufgewendet wurde.  
   
 -   **Formatieren.** Gibt die Zeit an, die für die Analyse von CSS und die Berechnung der Präsentation und des Layouts von Elementen aufgewendet wurde.  
   
--   **Rendern.** Gibt die Zeit an, die für die Formatübertragung des Bildschirms aufgewendet wurde.  
+-   **Rendering.** Gibt die Zeit an, die für die Formatübertragung des Bildschirms aufgewendet wurde.  
   
--   **Bilddekodierung.** Gibt die Zeit an, die für das Dekomprimieren und Decodieren von Bildern aufgewendet wurde.  
+-   **Decodieren von Bildern.** Gibt die Zeit an, die für das Dekomprimieren und Decodieren von Bildern aufgewendet wurde.  
   
  Für die Kategorien Skript und Formatieren stellt der Benutzeroberflächen-Reaktionsfähigkeits-Profiler möglicherweise Daten bereit, die Sie im Zeitachsendetaildiagramm bearbeiten können. Wenn Sie Skripterstellungsprobleme festgestellt haben, können Sie den CPU-Sampling-Profiler mit dem Benutzeroberflächen-Reaktionsfähigkeits-Profiler ausführen. Um ausführlichere Daten abzurufen, können Sie alternativ den Visual Studio-Funktionsprofiler verwenden. Weitere Informationen finden Sie unter [JavaScript-Speicher](../profiling/javascript-memory.md).  
   

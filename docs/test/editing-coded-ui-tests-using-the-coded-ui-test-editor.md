@@ -31,10 +31,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 398ea8d18a2aa6de572d83a1c9c96dc7361598d5
-ms.lasthandoff: 04/04/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 55fd09e8c704152b1c88050adc567f28f37a7047
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Bearbeiten von Tests der programmierten UI mithilfe des Editors für Tests der programmierten UI
@@ -51,7 +52,7 @@ Mit dem Editor für Tests der programmierten UI können Sie Tests der programmie
   
 1.  Mit [Suchen](../ide/finding-and-replacing-text.md) können Sie nach UI-Aktionen und -Steuerelementen suchen.  
   
-2.  Mit [Löschen](#CodedUITestEditor_DeleteUIActions) können Sie unerwünschte UI-Aktionen entfernen.  
+2.  Mit[Löschen](#CodedUITestEditor_DeleteUIActions) können Sie unerwünschte UI-Aktionen entfernen.  
   
 3.  Mit**Umbenennen** können Sie die Namen für Testmethoden und Steuerelemente ändern.  
   
@@ -65,7 +66,7 @@ Mit dem Editor für Tests der programmierten UI können Sie Tests der programmie
   
 8.  Mit[UI-Steuerelement suchen](#CodedUITestEditor_LocateUIControl) wird die Position des Steuerelements in der Benutzeroberfläche der getesteten Anwendung ermittelt.  
   
-9. Mit[Alle suchen](#CodedUITestEditor_LocateDecendants) können Sie Steuerelementeigenschaften und bedeutende Änderungen an den Steuerelementen der Anwendung überprüfen.  
+9. Mit [Alle suchen](#CodedUITestEditor_LocateDecendants) können Sie Steuerelementeigenschaften und bedeutende Änderungen an den Steuerelementen der Anwendung überprüfen.  
   
 ## <a name="how-do-i-do-this"></a>Vorgehensweise  
  Beim Öffnen der Datei „UIMap.uitest“ in [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], die mit dem Test der programmierten UI im Testprojekt der programmierten UI verbunden ist, wird der Test der programmierten UI automatisch im Editor für Tests der programmierten UI angezeigt. In den folgenden Verfahren wird beschrieben, wie Sie mithilfe der Symbolleiste und den Kontextmenüs des Editors die Testmethoden, Eigenschaften für die UI-Aktionen und Steuerelemente finden und bearbeiten können.  
@@ -91,16 +92,16 @@ Bearbeiten der Eigenschaften der UI-Aktion
   
  Erweitern Sie zum Ändern der Eigenschaften einer UI-Aktion die Testmethode im Bereich **UI-Aktion** , die die UI-Aktion mit den zu bearbeitenden Eigenschaften enthält. Wählen Sie die UI-Aktion aus, und ändern Sie dann die Eigenschaften im Fenster „Eigenschaften“.  
   
- Wenn ein Server beispielsweise nicht verfügbar ist und Sie über eine UI-Aktion **Zur Webseite http://Contoso1/default.aspx wechseln**verfügen, die Ihrem Webbrowser zugeordnet ist, können Sie die URL in `‘http://Contoso2/default.aspx’`ändern.  
+ Wenn ein Server beispielsweise nicht verfügbar ist und Sie über eine UI-Aktion **Zur Webseite http://Contoso1/default.aspx wechseln** verfügen, die Ihrem Webbrowser zugeordnet ist, können Sie die URL in `'http://Contoso2/default.aspx'` ändern.  
   
  ![Steuerelementeigenschaften](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 Bearbeiten von Steuerelementeigenschaften  
   
  Die Änderung der Eigenschaften eines Steuerelements erfolgt auf die gleiche Weise wie die der UI-Aktionen. Wählen Sie im Bereich **UI-Steuerelementzuordnung** das zu bearbeitende Steuerelement aus, und bearbeiten Sie seine Eigenschaften im Fenster „Eigenschaften“.  
   
- Ein Entwickler könnte z. B. die **(ID)** -Eigenschaft auf einem Schaltflächen-Steuerelement im Quellcode für die getestete Anwendung von „idSubmit“ in „idLogin“ geändert haben. Wenn die **(ID)** -Eigenschaft in der Anwendung geändert wurde, kann der Test der programmierten UI nicht das Schaltflächen-Steuerelement finden, und es wird ein Fehler ausgegeben. In diesem Fall kann der Tester die Auflistung **Sucheigenschaften** öffnen und die **ID** -Eigenschaft auf den neuen Wert festlegen, den der Entwickler in der Anwendung verwendet hat. Der Tester kann auch den Eigenschaftswert von **Anzeigename** von „Submit“ in „Login“ ändern. Durch diese Änderung wird die zugeordnete UI-Aktion im Editor für Tests der programmierten UI von „Schaltfläche 'Submit' auswählen“ in „Schaltfläche 'Login' auswählen" geändert.  
+ Ein Entwickler kann z.B. die **(ID)**-Eigenschaft auf einem Schaltflächensteuerelement im Quellcode für die getestete Anwendung von „idSubmit“ in „idLogin“ geändert haben. Wenn die **(ID)** -Eigenschaft in der Anwendung geändert wurde, kann der Test der programmierten UI nicht das Schaltflächen-Steuerelement finden, und es wird ein Fehler ausgegeben. In diesem Fall kann der Tester die Auflistung **Sucheigenschaften** öffnen und die **ID** -Eigenschaft auf den neuen Wert festlegen, den der Entwickler in der Anwendung verwendet hat. Der Tester kann auch den Eigenschaftswert von **Anzeigename** von „Submit“ in „Login“ ändern. Durch diese Änderung wird die zugeordnete UI-Aktion im Editor für Tests der programmierten UI von „Schaltfläche ‚Submit‘ auswählen“ in „Schaltfläche ‚Login‘ auswählen“ geändert.  
   
- Nachdem Sie die Änderungen abgeschlossen haben, speichern Sie die Änderungen in der Datei „UIMap.Designer“, indem Sie auf der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Symbolleiste **Speichern** auswählen.  
+ Nachdem Sie die Änderungen abgeschlossen haben, speichern Sie die Änderungen in der Datei „UIMap.Designer“, indem Sie auf der **-Symbolleiste** Speichern [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] auswählen.  
   
  *Was sollte ich noch wissen?*  
  **Tipps**  
@@ -109,7 +110,7 @@ Bearbeiten von Steuerelementeigenschaften
   
 -   ![Tipp](../test/media/tip.png "Tip") Wählen Sie **Rückgängig** aus dem Menü **Bearbeiten** aus, oder drücken Sie STRG+Z, wenn Sie die an den Eigenschaften vorgenommenen Änderungen rückgängig machen möchten.  
   
--   ![Tipp](../test/media/tip.png "Tip") Mit der Schaltfläche **Suchen** in der Symbolleiste des Editors für Tests der programmierten UI können Sie das Tool zum Suchen und Ersetzen in Visual Studio öffnen. Anschließend können Sie mit dem Steuerelement „Suchen“ nach einer UI-Aktion im Editor für Tests der programmierten UI suchen. Sie können z. B. die Option „Auf die Schaltfläche 'Anmelden' klicken“ suchen. Dies kann bei umfangreichen Tests hilfreich sein. Beachten Sie, dass Sie die Ersetzungsfunktion nicht im Tool zum Suchen und Ersetzen im Editor für Tests der programmierten UI verwenden können. Weitere Informationen finden Sie unter „Steuerelement Suchen‘“ in [Suchen und Ersetzen von Text](../ide/finding-and-replacing-text.md).  
+-   ![Tipp](../test/media/tip.png "Tip") Mit der Schaltfläche **Suchen** in der Symbolleiste des Editors für Tests der programmierten UI können Sie das Tool zum Suchen und Ersetzen in Visual Studio öffnen. Anschließend können Sie mit dem Steuerelement „Suchen“ nach einer UI-Aktion im Editor für Tests der programmierten UI suchen. Sie können z.B. die Option „Auf die Schaltfläche ‚Anmelden‘ klicken“ suchen. Dies kann bei umfangreichen Tests hilfreich sein. Beachten Sie, dass Sie die Ersetzungsfunktion nicht im Tool zum Suchen und Ersetzen im Editor für Tests der programmierten UI verwenden können. Weitere Informationen finden Sie unter „Steuerelement Suchen‘“ in [Suchen und Ersetzen von Text](../ide/finding-and-replacing-text.md).  
   
 -   ![Tipp](../test/media/tip.png "Tip") Manchmal kann die Darstellung der Position der Steuerelemente in der Benutzeroberfläche der getesteten Anwendung schwierig sein. Zu den Funktionen des Editors für Tests der programmierten UI zählen die Möglichkeiten zum Auswählen eines Steuerelements, das in der UI-Steuerelementzuordnung aufgeführt ist, und zum Anzeigen der Position in der getesteten Anwendung. [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][Suchen eines UI-Steuerelements in der getesteten Anwendung](#CodedUITestEditor_LocateUIControl) im weiteren Verlauf dieses Themas.  
   
@@ -131,7 +132,7 @@ Bearbeiten von Steuerelementeigenschaften
   
  Erweitern Sie im Bereich **UI-Aktion** die Testmethode, die Sie in zwei separate Methoden aufteilen möchten, und wählen Sie die UI-Aktion, die als Anfang der neuen Testmethode dienen soll. Öffnen Sie entweder das Kontextmenü für die UI-Aktion, und wählen Sie dann **In eine neue Methode aufteilen**, oder wählen Sie die Schaltfläche **In eine neue Methode aufteilen** auf der Symbolleiste des Editors für Tests der programmierten UI. Die neue Testmethode wird im Bereich „UI-Aktionen“ angezeigt. Sie enthält UI-Aktionen, beginnend mit der Aktion, in der Sie die Aufteilung angegeben haben.  
   
- Wenn Sie die Aufteilung der Methode abgeschlossen haben, speichern Sie die Änderungen in der Datei „UIMap.Designer“, indem Sie **Speichern** auf der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Symbolleiste wählen.  
+ Wenn Sie die Aufteilung der Methode abgeschlossen haben, speichern Sie die Änderungen in der Datei „UIMap.Designer“, indem Sie **Speichern** auf der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Symbolleiste wählen.  
   
  *Was sollte ich noch wissen?*  
  **Häufige Probleme**  
@@ -153,9 +154,9 @@ Bearbeiten von Steuerelementeigenschaften
 ##  <a name="CodedUITestEditor_MoveMethods"></a> Eine Testmethode in die UIMap-Datei verschieben, um Anpassungen zu vereinfachen  
  Wenn Sie feststellen, dass eine der Testmethoden im Test der programmierten UI benutzerdefinierten Code erfordert, müssen Sie sie in die Datei „UIMap.cs“ oder „UIMap.vb“ verschieben. Andernfalls wird der Code beim erneuten Kompilieren des Tests der programmierten UI überschrieben. Wenn Sie die Methode nicht verschieben, wird der benutzerdefinierte Code bei jedem erneuten Kompilieren des Tests überschrieben.  
   
- Wählen Sie im Bereich **UI-Aktion** die Testmethode aus, die Sie in die Datei "UIMap.cs" oder "UIMap.vb" verschieben möchten. Dadurch vereinfachen Sie die Funktion für benutzerdefinierten Code, die beim erneuten Kompilieren des Tests nicht überschrieben wird. Wählen Sie als Nächstes die Schaltfläche **Code verschieben** auf der Symbolleiste des Editors für Tests der programmierten UI, oder öffnen Sie das Kontextmenü für die Testmethode und wählen **Code verschieben**aus. Die Testmethode wird aus der UIMap.uitest-Datei entfernt und nicht mehr im Bereich der UI-Aktionen angezeigt. Öffnen Sie zum Bearbeiten der verschobenen Testdatei die Datei „UIMap.cs“ oder „UIMap.vb“ im Projektmappen-Explorer.  
+ Wählen Sie im Bereich **UI-Aktion** die Testmethode aus, die Sie in die Datei „UIMap.cs“ oder „UIMap.vb“ verschieben möchten. Dadurch vereinfachen Sie die Funktion für benutzerdefinierten Code, die beim erneuten Kompilieren des Tests nicht überschrieben wird. Wählen Sie als Nächstes die Schaltfläche **Code verschieben** auf der Symbolleiste des Editors für Tests der programmierten UI, oder öffnen Sie das Kontextmenü für die Testmethode und wählen **Code verschieben**aus. Die Testmethode wird aus der UIMap.uitest-Datei entfernt und nicht mehr im Bereich der UI-Aktionen angezeigt. Öffnen Sie zum Bearbeiten der verschobenen Testdatei die Datei „UIMap.cs“ oder „UIMap.vb“ im Projektmappen-Explorer.  
   
- Wenn Sie das Verschieben der Methode abgeschlossen haben, speichern Sie die Änderungen in der Datei „UIMap.Designer“, indem Sie **Speichern** auf der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Symbolleiste wählen.  
+ Wenn Sie das Verschieben der Methode abgeschlossen haben, speichern Sie die Änderungen in der Datei „UIMap.Designer“, indem Sie **Speichern** auf der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Symbolleiste wählen.  
   
  *Was sollte ich noch wissen?*  
  **Häufige Probleme**  
@@ -166,7 +167,7 @@ Bearbeiten von Steuerelementeigenschaften
   
 -   ![Tipp](../test/media/tip.png "Tip") Wählen Sie zum Rückgängigmachen der Verschiebung **Rückgängig** im Menü **Bearbeiten** aus, oder drücken Sie STRG+Z. Allerdings müssen Sie den Code dann manuell aus der Datei „UIMap.cs“ oder „UIMap.vb“ entfernen.  
   
-##  <a name="CodedUITestEditor_LocateUIControl"></a> Suchen eines UI-Steuerelements in der getesteten Anwendung  
+##  <a name="CodedUITestEditor_LocateUIControl"></a> Locating a UI Control in the application under test  
  Manchmal kann die Darstellung der Position der Steuerelemente in der Benutzeroberfläche der getesteten Anwendung schwierig sein. Zu den Funktionen des Editors für Tests der programmierten UI zählen die Möglichkeiten zum Auswählen eines Steuerelements, das in der UI-Steuerelementzuordnung aufgeführt ist, und zum Anzeigen der Position in der getesteten Anwendung. Mit der Funktion **UI-Steuerelemente suchen** in der getesteten Anwendung können auch Änderungen der Sucheigenschaften überprüft werden, die an einem Steuerelement vorgenommen wurden.  
   
  ![UI-Steuerelement suchen](../test/media/codeduilocatecontrol.png "CodedUILocateControl")  
@@ -207,7 +208,7 @@ Bearbeiten von Steuerelementeigenschaften
   
  Erweitern Sie im Bereich **UI-Aktion** die Testmethode mit der UI-Aktion, vor die Sie eine Verzögerung einfügen möchten. Wählen Sie die UI-Aktion aus. Öffnen Sie das Kontextmenü für die UI-Aktion, und wählen Sie **Verzögerung einfügen vor**. Eine Verzögerung wird vor der ausgewählten UI-Aktion mit dem folgenden Text eingefügt und hervorgehoben: **1 Sekunde auf Benutzerverzögerungen zwischen Aktionen warten**. Ändern Sie im Fenster „Eigenschaften“ den Wert für die Eigenschaft **Verzögerung** auf die gewünschte Anzahl von Millisekunden.  
   
- Wenn Sie das Einfügen der Verzögerung abgeschlossen haben, speichern Sie die Änderungen in der Datei „UIMap.Designer“, indem Sie **Speichern** auf der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Symbolleiste wählen.  
+ Wenn Sie das Einfügen der Verzögerung abgeschlossen haben, speichern Sie die Änderungen in der Datei „UIMap.Designer“, indem Sie **Speichern** auf der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Symbolleiste wählen.  
   
  *Was sollte ich noch wissen?*  
  **Notizen**  
@@ -221,12 +222,12 @@ Bearbeiten von Steuerelementeigenschaften
 ## <a name="external-resources"></a>Externe Ressourcen  
   
 ### <a name="guidance"></a>Empfehlungen  
- [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests)](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ### <a name="faq"></a>FAQ  
- [Coded UI Tests FAQ – 1 (Tests der programmierten UI – FAQ 1)](http://go.microsoft.com/fwlink/?LinkID=230576)  
+ [Tests der codierten UI – FAQ 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
   
- [Coded UI Tests FAQ -2 (Tests der programmierten UI – FAQ 2)](http://go.microsoft.com/fwlink/?LinkID=230578)  
+ [Tests der codierten UI – FAQ 2](http://go.microsoft.com/fwlink/?LinkID=230578)  
   
 ### <a name="forum"></a>Forum  
  [Visual Studio UI Automation Testing (includes CodedUI) (Tests der Benutzeroberflächenautomatisierung (einschließlich programmierte UI) in Visual Studio)](http://go.microsoft.com/fwlink/?LinkID=224497)  

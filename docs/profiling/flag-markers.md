@@ -1,53 +1,71 @@
 ---
-title: "Flag-Marker | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.cv.markers.flag"
+title: Flag-Marker | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.cv.markers.flag
 ms.assetid: f3ec919e-63e5-484b-adbf-8f0e79342e75
 caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# Flag-Marker
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 0095311f5188260bf1207e4094c1ceb87b1bbb86
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
-Ein Flagmarker stellt einige dar, das zu einem bestimmten Zeitpunkt in einer App aufgetreten ist.  Ein Flag kann viele Arten Anwendungsereignisse darstellen.  Beispielsweise könnte ein Flag darstellen, wenn eine bestimmte Arbeitsaufgabe geplant wurde, oder als eine Ausnahme ausgelöst wurde.  Laufzeiten wie die Task Parallel Library können auch Flags generieren.  
+---
+# <a name="flag-markers"></a>Flag-Marker
+Ein Flag-Marker stellt ein Ereignis dar, das zu einem bestimmten Zeitpunkt in einer App aufgetreten ist. Ein Flag kann verschiedene Anwendungsereignisse darstellen. Ein Flag kann z.B. die Planung eines bestimmten Arbeitselements oder eine ausgelöste Ausnahme anzeigen. Runtimes wie die Task Parallel Library können auch Flags generieren.  
   
-## Flag\-Bedeutung  
- Flags sind in unterschiedlichen Größen je nach deren Bedeutung angezeigt.  Wie jeder Markierung kann die Bedeutung niedrig, normal oder hoch, wichtig sein.  Diese Abbildung wird die Darstellung von Markern durch Wichtigkeitsstufe an:  
+## <a name="flag-importance"></a>Wichtigkeit der Flags  
+ Je nach ihrer Wichtigkeit werden Flags in unterschiedlichen Größen angezeigt. Wie bei allen Markern kann die Wichtigkeit niedrig, normal, hoch oder kritisch sein.  Diese Abbildung zeigt die Darstellung der Marker nach ihrer Wichtigkeit geordnet:  
   
- ![Marker für Wichtigkeit: Niedrig, Normal, Hoch und Kritisch](../profiling/media/cvmarkerimportance.png "CVMarkerImportance")  
-Markierungen, die Flagbedeutung anzeigen  
+ ![Marker nach ihrer Wichtigkeit geordnet: Niedrig, Normal, Hoch und Kritisch](../profiling/media/cvmarkerimportance.png "CVMarkerImportance")  
+Marker zeigen die Wichtigkeit von Flags an  
   
-## Flag\-Kategorie  
- Ein Flag ist in eine von fünf unterschiedlichen Farben je nach ihrer Kategorie angezeigt.  Die Farben werden wiederverwendet, wenn mehr als fünf Kategorien gibt.  Sie können die Farbe nicht auswählen.  Wie jeder Markierung kann die Kategorie eine ganze Zahl sein.  Die folgende Abbildung zeigt die Farben für die ersten fünf Kategorien angezeigt.  
+## <a name="flag-category"></a>Flag-Kategorie  
+ Je nach Kategorie wird ein Flag in einer dieser fünf Farben angezeigt. Die Farben werden wiederverwendet, wenn mehr als fünf Kategorien vorhanden sind. Sie können die Farbe nicht auswählen. Wie bei Markern kann die Kategorie jede beliebige Ganzzahl sein. Die folgende Abbildung zeigt die Farben der ersten fünf Kategorien an.  
   
- ![Fünf Farben an Kategoriemarkern](../profiling/media/cvmarkercategory.png "CVMarkerCategory")  
-Markierungen, Kategorien anzeigen  
+ ![Die Fünf Farben der Kategoriemarker](../profiling/media/cvmarkercategory.png "CVMarkerCategory")  
+Marker zeigen Kategorien an  
   
-## Warnungen  
- Eine Warnung ist eine RED\-farbiges Flag, das ein wichtiges Anwendungsereignis darstellt, wie eine Ausnahme.  Im Folgenden eine Warnung:  
+## <a name="alerts"></a>Benachrichtigungen  
+ Eine Warnung ist ein rotfarbiges Flag, das ein wichtiges Anwendungsereignis wie etwa eine Ausnahme angibt.  So sieht eine Warnung aus:  
   
  ![Warnungsmarker für Parallelitätsschnellansicht](../profiling/media/cvmarkeralert.png "CVMarkerAlert")  
-Ein wachsamer Markierung  
+Eine Warnung  
   
-## Aggregations\-Flags  
- Manchmal treten Flags auf, das Sie schließen beieinander in der Parallelitätsschnellansicht, dass sie nicht einzeln gezeichnet werden können.  Wenn dies auftritt, wird ein graues *Aggregationsflag*, die das zugrunde liegenden Flags darstellt, angezeigt.  Wenn Sie den Mauszeiger auf einem dieser Symbole zeigen, Anzeigen einer QuickInfo die Zahl des zugrunde liegens von Flags, die dargestellt werden.  Um die Flags anzuzeigen, Vergrößern Sie.  Beim Einchecken ähnlich Vergrößern und dennoch ein Aggregationsflag erhalten, können Sie das zugrunde liegenden Flags im [Markerbericht](../profiling/markers-report.md) anzeigen.  
+## <a name="aggregation-flags"></a>Aggregationsflags  
+ Manchmal treten Flags so nah nebeneinander in der Parallelitätsschnellansicht auf, dass sie nicht einzeln gezeichnet werden können. In diesem Fall wird ein graues *Aggregationsflag* angezeigt, das die zugrundeliegenden Flags darstellt. Wenn Sie mit dem Mauszeiger über eines dieser Symbole fahren, zeigt eine QuickInfo die Anzahl der zugrunde liegenden Flags an, die dargestellt werden. Zoomen Sie herein, um die Flags anzuzeigen. Wenn Sie bis zur maximalen Stufe vergrößern und weiterhin ein Aggregationsflag angezeigt wird, können Sie die zugrundeliegenden Flags im [Markerbericht](../profiling/markers-report.md) anzeigen.  
   
- Aggregationsflags werden in unterschiedlichen Größen gezeichnet.  Die Größe hängt von der Wichtigkeitsstufe der wichtigsten Flags in der Aggregation ab.  Die folgende Abbildung zeigt Aggregationsflags in aufsteigender Reihenfolge von Bedeutung aufgeführt.  
+ Aggregationsflags werden in unterschiedlichen Größen gezeichnet. Die Größe hängt von der Wichtigkeit des wichtigsten Flags in der Aggregation ab. Die folgende Abbildung zeigt die Aggregationsflags in aufsteigender Reihenfolge nach ihrer Wichtigkeit.  
   
- ![Aggregatskennzeichen zur Anzeige von vier Wichtigkeitsebenen](../profiling/media/cvmarkeraggregate.png "CVMarkerAggregate")  
-Aggregationsflags von Ebene von Bedeutung  
+ ![Aggregationsflags zeigen vier Wichtigkeitsstufen an](../profiling/media/cvmarkeraggregate.png "CVMarkerAggregate")  
+Aggregationsflags nach Wichtigkeit  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Parallelitätsschnellansichtsmarker](../profiling/concurrency-visualizer-markers.md)   
- [Parallelitätsschnellansichts\-SDK](../profiling/concurrency-visualizer-sdk.md)
+ [Parallelitätsschnellansichts-SDK](../profiling/concurrency-visualizer-sdk.md)

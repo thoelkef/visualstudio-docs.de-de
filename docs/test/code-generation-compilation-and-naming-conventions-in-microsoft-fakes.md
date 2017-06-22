@@ -26,10 +26,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 2aff9b2c34bf8897adc7edee3a1205317258fc0f
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 5acc74abd56b128bf9df708ab7c0f3451c6eb270
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Codegenerierung, Kompilierung und Benennungskonventionen in Microsoft Fakes
@@ -40,15 +41,32 @@ In diesem Thema werden Optionen und Probleme der Fakes-Codegenerierung und -Code
 -   Visual Studio Enterprise  
   
 ##  <a name="BKMK_In_this_topic"></a> In diesem Thema  
- [Codegenerierung und -kompilierung](#BKMK_Code_generation_and_compilation)  
   
--   [Konfigurieren der Codegenerierung der Stubs](#BKMK_Configuring_code_generation_of_stubs) • [Typfilterung](#BKMK_Type_filtering) • [Ausführen eines Stubs für konkrete Klassen und virtuelle Methoden](#BKMK_Stubbing_concrete_classes_and_virtual_methods) • [Interne Typen](#BKMK_Internal_types) • [Optimieren von Buildzeiten](#BKMK_Optimizing_build_times) • [Vermeiden von Konflikten bei Assemblynamen](#BKMK_Avoiding_assembly_name_clashing)  
+-   [Codegenerierung und -kompilierung](#BKMK_Code_generation_and_compilation)  
   
- [Fakes-Namenskonventionen](#BKMK_Fakes_naming_conventions)  
+-   [Konfigurieren der Codegenerierung von Stubs](#BKMK_Configuring_code_generation_of_stubs)
   
--   [Namenskonventionen für Shim-Typ und Stub-Typ](#BKMK_Shim_type_and_stub_type_naming_conventions) • [Namenskonventionen für Shim-Delegateigenschaften oder Stub-Delegatfelder](#BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions) • [Namenskonventionen für Parametertypen](#BKMK_Parameter_type_naming_conventions) • [Rekursive Regeln](#BKMK_Recursive_rules)  
+-   [Typfilterung](#BKMK_Type_filtering)
   
- [Externe Ressourcen](#BKMK_External_resources)  
+-   [Ausführen eines Stubs für konkrete Klassen und virtuelle Methoden](#BKMK_Stubbing_concrete_classes_and_virtual_methods)
+  
+-   [Interne Typen](#BKMK_Internal_types)
+  
+-   [Optimieren von Buildzeiten](#BKMK_Optimizing_build_times)
+  
+-   [Vermeiden von Konflikten bei Assemblynamen](#BKMK_Avoiding_assembly_name_clashing)  
+  
+-   [Fakes-Namenskonventionen](#BKMK_Fakes_naming_conventions)  
+  
+-   [Namenskonventionen für Shim-Typ und Stub-Typ](#BKMK_Shim_type_and_stub_type_naming_conventions)
+  
+-   [Namenskonventionen für Shim-Delegateigenschaften oder Stub-Delegatfelder](#BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions)
+  
+-   [Namenskonventionen für Parametertypen](#BKMK_Parameter_type_naming_conventions)
+  
+-   [Rekursive Regeln](#BKMK_Recursive_rules)  
+  
+-   [Externe Ressourcen](#BKMK_External_resources)  
   
 -   [Leitfaden](#BKMK_Guidance)  
   
@@ -184,7 +202,7 @@ In diesem Thema werden Optionen und Probleme der Fakes-Codegenerierung und -Code
   
  In den Komponententestprojekten können Sie einfach einen Verweis auf die kompilierten Fakes-Assemblys erstellen, die sich im Projektordner unter "FakesAssemblies" befinden.  
   
-1.  Erstellen Sie eine neue Klassenbibliothek mit der .NET-Laufzeitversion, die mit Ihren Testprojekten übereinstimmt. Nennen wir sie Fakes.Prebuild. Entfernen Sie die Datei "class1.cs" aus dem Projekt, da diese nicht benötigt wird.  
+1.  Erstellen Sie eine neue Klassenbibliothek mit der .NET-Laufzeitversion, die mit Ihren Testprojekten übereinstimmt. Nennen wir sie „Fakes.Prebuild“. Entfernen Sie die Datei "class1.cs" aus dem Projekt, da diese nicht benötigt wird.  
   
 2.  Fügen Sie Verweise auf alle Systemassemblys und Assemblys von Drittanbietern hinzu, für die Sie Fakes benötigen.  
   
@@ -254,7 +272,7 @@ attribute of the Assembly element in the .fakes:
   
  **Spezielle Methodennamen** wie beispielsweise Eigenschaften-Getter oder -Setter werden so wie in der folgenden Tabelle beschrieben behandelt.  
   
-|Methode|Beispiel|Methodenname angefügt|  
+|Wenn die Methode Folgendes ist...|Beispiel|Methodenname angefügt|  
 |-------------------|-------------|--------------------------|  
 |Ein **Konstruktor**|`.ctor`|`Constructor`|  
 |Ein statischer **Konstruktor**|`.cctor`|`StaticConstructor`|  
@@ -277,15 +295,15 @@ attribute of the Assembly element in the .fakes:
   
 ###  <a name="BKMK_Parameter_type_naming_conventions"></a> Namenskonventionen für Parametertypen  
   
-|Vorgabe|Angefügte Zeichenfolge|  
+|Vorgabe|Angefügte Zeichenfolge ist...|  
 |-----------|-------------------------|  
 |Ein **Typ**`T`|T<br /><br /> Der Namespace, die geschachtelte Struktur und die generischen Tics werden verworfen.|  
 |Ein **out-Parameter**`out T`|`TOut`|  
 |Ein **ref-Parameter**`ref T`|`TRef`|  
-|Ein **Arraytyp**`T[]`|`TArray`|  
+|Ein **Arraytyp** `T[]`|`TArray`|  
 |Ein **mehrdimensionales Array**, Typ `T[ , , ]`|`T3`|  
 |Ein **Zeiger**, Typ `T*`|`TPtr`|  
-|Ein **generischer Typ**`T<R1, …>`|`TOfR1`|  
+|Ein **generischer Typ**`T<R1, ...>`|`TOfR1`|  
 |Ein **generisches Typargument**`!i` des Typs `C<TType>`|`Ti`|  
 |Ein **generisches Methodenargument**`!!i` der `M<MMethod>`-Methode|`Mi`|  
 |Ein **geschachtelter Typ**`N.T`|`N` und dann `T` werden angefügt.|  
@@ -300,7 +318,7 @@ attribute of the Assembly element in the .fakes:
 ##  <a name="BKMK_External_resources"></a> Externe Ressourcen  
   
 ###  <a name="BKMK_Guidance"></a> Empfehlungen  
- [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests)](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Siehe auch  
  [Isolieren von getestetem Code mithilfe von Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)

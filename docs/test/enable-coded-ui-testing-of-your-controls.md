@@ -26,14 +26,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 82335c611d4904188de6acc4a3a9496156eba4b5
-ms.lasthandoff: 04/04/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 59c18804574725c584b1b06df8f1ba8a5cf37824
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Aktivieren von Tests der programmierten UI Ihrer Steuerelemente
-Steuerelemente können einfacher getestet werden, wenn Sie Unterstützung für das Framework für den Test der programmierten UI implementieren. Der Umfang der Unterstützung kann schrittweise erweitert werden. Sie können zunächst mit der Unterstützung von Aufzeichnung und Wiedergabe sowie Eigenschaftenvalidierung beginnen. Darauf aufbauend können Sie dem Test-Generator für codierte UI ermöglichen, die benutzerdefinierten Eigenschaften des Steuerelements zu erkennen, und benutzerdefinierte Klassen bereitstellen, um mit generiertem Code auf diese Eigenschaften zuzugreifen. Außerdem können Sie dazu beitragen, dass Aktionen vom Test-Generator der programmierten UI auf eine Art aufgezeichnet werden, die den Zweck der jeweiligen Aktion genauer widerspiegelt.  
+Steuerelemente können einfacher getestet werden, wenn Sie Unterstützung für das Framework für den Test der programmierten UI implementieren. Der Umfang der Unterstützung kann schrittweise erweitert werden. Sie können zunächst mit der Unterstützung von Aufzeichnung und Wiedergabe sowie Eigenschaftenvalidierung beginnen. Darauf aufbauend können Sie dem Test-Generator für programmierte UI ermöglichen, die benutzerdefinierten Eigenschaften des Steuerelements zu erkennen, und benutzerdefinierte Klassen bereitstellen, um mit generiertem Code auf diese Eigenschaften zuzugreifen. Außerdem können Sie dazu beitragen, dass Aktionen vom Test-Generator der programmierten UI auf eine Art aufgezeichnet werden, die den Zweck der jeweiligen Aktion genauer widerspiegelt.  
   
  **In diesem Thema:**  
   
@@ -61,7 +62,7 @@ Steuerelemente können einfacher getestet werden, wenn Sie Unterstützung für d
   
  ![CUIT&#95;Accessible](../test/media/cuit_accessible.png "CUIT_Accessible")  
   
-1.  Implementieren Sie eine Klasse, die von <xref:System.Windows.Forms.Control.ControlAccessibleObject> abgeleitet ist, und überschreiben Sie die <xref:System.Windows.Forms.Control.AccessibilityObject%2A>-Eigenschaft, sodass sie ein Objekt Ihrer Klasse zurückgibt.  
+1.  Implementieren Sie eine von <xref:System.Windows.Forms.Control.ControlAccessibleObject> abgeleitete Klasse, und überschreiben Sie die <xref:System.Windows.Forms.Control.AccessibilityObject%2A>-Eigenschaft, um ein Objekt der Klasse zurückzugeben.  
   
     ```c#  
     public partial class ChartControl : UserControl  
@@ -86,17 +87,17 @@ Steuerelemente können einfacher getestet werden, wenn Sie Unterstützung für d
     }  
     ```  
   
-2.  Überschreiben Sie die Eigenschaften und Methoden <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> und <xref:System.Windows.Forms.AccessibleObject.GetChildCount%2A> des Barrierefreiheitsobjekts.  
+2.  Überschreiben Sie die Eigenschaften und Methoden <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> sowie <xref:System.Windows.Forms.AccessibleObject.GetChildCount%2A> des Barrierefreiheitsobjekts.  
   
 3.  Implementieren Sie ein anderes Barrierefreiheitsobjekt für das untergeordnete Steuerelement, und überschreiben Sie die <xref:System.Windows.Forms.Control.AccessibilityObject%2A>-Eigenschaft dieses Steuerelements, um das Barrierefreiheitsobjekt zurückzugeben.  
   
-4.  Überschreiben Sie die Eigenschaften und Methoden <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A> und <xref:System.Windows.Forms.AccessibleObject.Select%2A> für das Barrierefreiheitsobjekt des untergeordneten Steuerelements.  
+4.  Überschreiben Sie die Eigenschaften und Methoden <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A> sowie <xref:System.Windows.Forms.AccessibleObject.Select%2A> für das Barrierefreiheitsobjekt des untergeordneten Steuerelements.  
   
 > [!NOTE]
 >  Dieses Thema beginnt mit dem Barrierefreiheitsbeispiel für das <xref:System.Windows.Forms.AccessibleObject> in dieser Prozedur. Darauf aufbauend werden anschließend die restlichen Prozeduren erläutert. Zum Erstellen einer funktionierenden Version des Barrierefreiheitsbeispiels entwickeln Sie eine Konsolenanwendung und ersetzen dann den Code in "Program.cs" durch den Beispielcode. Sie müssen Verweise auf Barrierefreiheit, System.Drawing und System.Windows.Forms hinzufügen. Sie sollten für die Barrierefreiheit **Interoptypen einbetten** zu **FALSE** ändern, um eine Buildwarnungen zu vermeiden. Sie können den Ausgabetyp des Projekts von **Konsolenanwendung** in **Windows-Anwendung** ändern, damit beim Ausführen der Anwendung kein Konsolenfenster angezeigt wird.  
   
 ##  <a name="customproprties"></a> Benutzerdefinierte Eigenschaftenvalidierung durch Implementierung eines Eigenschaftenanbieters unterstützen  
- Sobald Sie grundlegende Unterstützung für die Aufzeichnung und Wiedergabe sowie die Eigenschaftenvalidierung implementiert haben, können Sie die benutzerdefinierten Eigenschaften des Steuerelements für Tests der programmierten UI verfügbar machen, indem Sie ein <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider> Plug-In implementieren. Beispielsweise wird von der folgenden Prozedur ein Eigenschaftenanbieter erstellt, mit dem Tests der programmierten UI auf die Zustandseigenschaft der untergeordneten CurveLegend-Steuerelemente des Diagrammsteuerelements zugreifen können.  
+ Sobald Sie grundlegende Unterstützung für die Aufzeichnung und Wiedergabe sowie die Eigenschaftenvalidierung implementiert haben, können Sie die benutzerdefinierten Eigenschaften des Steuerelements für Tests der programmierten UI verfügbar machen, indem Sie ein <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>-Plug-In implementieren. Beispielsweise wird von der folgenden Prozedur ein Eigenschaftenanbieter erstellt, mit dem Tests der programmierten UI auf die Zustandseigenschaft der untergeordneten CurveLegend-Steuerelemente des Diagrammsteuerelements zugreifen können.  
   
  ![CUIT&#95;CustomProps](../test/media/cuit_customprops.png "CUIT_CustomProps")  
   
@@ -113,8 +114,8 @@ Steuerelemente können einfacher getestet werden, wenn Sie Unterstützung für d
         {  
             get  
             {  
-                // Add “;” and the state value to the end  
-                // of the curve legend’s description  
+                // Add ";" and the state value to the end  
+                // of the curve legend's description  
                 return "CurveLegend; " + State.ToString();  
             }  
         }  
@@ -123,7 +124,7 @@ Steuerelemente können einfacher getestet werden, wenn Sie Unterstützung für d
   
 2.  Erstellen Sie ein UI-Test-Erweiterungspaket für das Steuerelement, indem Sie ein Klassenbibliotheksprojekt erstellen und Verweise auf Barrierefreiheit, Microsoft.VisualStudio.TestTools.UITesting, Microsoft.VisualStudio.TestTools.UITest.Common sowie Microsoft.VisualStudio.TestTools.Extension hinzufügen. Ändern Sie für die Barrierefreiheit **Interoptypen einbetten** zu **FALSE**.  
   
-3.  Fügen Sie eine Eigenschaftenanbieterklasse hinzu, die von <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider> abgeleitet wurde.  
+3.  Fügen Sie eine von <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider> abgeleitete Eigenschaftenanbieterklasse hinzu.  
   
     ```c#  
     using System;  
@@ -142,22 +143,22 @@ Steuerelemente können einfacher getestet werden, wenn Sie Unterstützung für d
     }  
     ```  
   
-4.  Implementieren Sie den Eigenschaftenanbieter durch Platzieren von Eigenschaftennamen und Eigenschaftendeskriptoren in eine <xref:System.Collections.Generic.Dictionary%602>  
+4.  Implementieren Sie den Eigenschaftenanbieter, indem Sie Eigenschaftennamen und Eigenschaftendeskriptoren in <xref:System.Collections.Generic.Dictionary%602> einfügen.  
   
 <CodeContentPlaceHolder>3</CodeContentPlaceHolder>  
-5.  Überschreiben Sie <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetControlSupportLevel%2A?displayProperty=fullName>, um anzugeben, dass Ihre Assembly steuerelementspezifische Unterstützung für Ihr Steuerelement und dessen untergeordnete Steuerelemente bereitstellt.  
+5.  Überschreiben Sie <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetControlSupportLevel%2A?displayProperty=fullName>, um anzugeben, dass die Assembly steuerelementspezifische Unterstützung für das Steuerelement und dessen untergeordneten Elemente bietet.  
   
 <CodeContentPlaceHolder>4</CodeContentPlaceHolder>  
-6.  Überschreiben Sie die abstrakten Methoden von<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider?displayProperty=fullName>.  
+6.  Überschreiben Sie die verbleibenden abstrakten Methoden von <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider?displayProperty=fullName>.  
   
 <CodeContentPlaceHolder>5</CodeContentPlaceHolder>  
-7.  Fügen Sie eine Erweiterungspaketklasse hinzu, die von <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage> abgeleitet wurde.  
+7.  Fügen Sie ein von <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage> abgeleitete Erweiterungspaketklasse hinzu.  
   
 <CodeContentPlaceHolder>6</CodeContentPlaceHolder>  
 8.  Definieren Sie das `UITestExtensionPackage`-Attribut für die Assembly.  
   
 <CodeContentPlaceHolder>7</CodeContentPlaceHolder>  
-9. Überschreiben Sie in der Erweiterungspaketklasse <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A?displayProperty=fullName>, um die Eigenschaftenanbieterklasse zurückzugeben, wenn ein Eigenschaftenanbieter angefordert wird.  
+9. Überschreiben Sie in der Erweiterungspaketklasse <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A?displayProperty=fullName>, um bei Anforderung eines Eigenschaftenanbieters die entsprechende Klasse zurückzugeben.  
   
 <CodeContentPlaceHolder>8</CodeContentPlaceHolder>  
 10. Überschreiben Sie die verbleibenden abstrakten Methoden und Eigenschaften von <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>.  
@@ -166,10 +167,10 @@ Steuerelemente können einfacher getestet werden, wenn Sie Unterstützung für d
 11. Erstellen Sie die Binärdateien, und kopieren Sie sie nach **%ProgramFiles%\Gemeinsame Dateien\Microsoft Shared\VSTT\10.0\UITestExtensionPackages**.  
   
 > [!NOTE]
->  Dieses Erweiterungspaket wird auf jedes Steuerelement vom Typ "Text" angewendet. Mehrere Steuerelemente des gleichen Typs müssen separat getestet werden, und Sie müssen die beim Aufzeichnen der Tests bereitzustellenden Erweiterungspakete verwalten.  
+>  Dieses Erweiterungspaket wird auf jedes Steuerelement vom Typ „Text“ angewendet. Mehrere Steuerelemente des gleichen Typs müssen separat getestet werden, und Sie müssen die beim Aufzeichnen der Tests bereitzustellenden Erweiterungspakete verwalten.  
   
 ##  <a name="codegeneration"></a> Codegenerierung durch Implementierung einer Klasse zum Zugriff auf benutzerdefinierte Eigenschaften unterstützen  
- Wenn der Test-Generator der programmierten UI aus einer Sitzungsaufzeichnung Code generiert, wird für den Zugriff auf die Steuerelemente die <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>-Klasse verwendet.  
+ Wenn der Test-Generator für codierte UI aus einer Sitzungsaufzeichnung Code generiert, wird für den Zugriff auf die Steuerelemente die <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>-Klasse verwendet.  
   
 <CodeContentPlaceHolder>10</CodeContentPlaceHolder>  
  Wenn ein Eigenschaftenanbieter für den Zugriff auf die benutzerdefinierten Eigenschaften des Steuerelements implementiert wurde, können Sie hierfür eine spezialisierte Klasse hinzufügen, um den generierten Code zu vereinfachen.  
@@ -184,10 +185,10 @@ Steuerelemente können einfacher getestet werden, wenn Sie Unterstützung für d
 2.  Implementieren Sie die benutzerdefinierten Eigenschaften des Steuerelements als Eigenschaften der Klasse.  
   
 <CodeContentPlaceHolder>13</CodeContentPlaceHolder>  
-3.  Überschreiben Sie die <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetSpecializedClass%2A?displayProperty=fullName>-Methode Ihres Eigenschaftenanbieters, um den Typ der neuen klasse für die untergeordneten Kurvenlegendensteuerelemente zurückzugeben.  
+3.  Überschreiben Sie die <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetSpecializedClass%2A?displayProperty=fullName>-Methode des Eigenschaftenanbieters, um den Typ der neuen Klasse für die untergeordneten Kurvenlegendensteuerelemente zurückzugeben.  
   
 <CodeContentPlaceHolder>14</CodeContentPlaceHolder>  
-4.  Überschreiben Sie die <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetPropertyNamesClassType%2A>-Methode Ihres Eigenschaftenanbieters, um den Typ der PropertyNames-Methode der neuen Klasse zurückzugeben.  
+4.  Überschreiben Sie die <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetPropertyNamesClassType%2A>-Methode des Eigenschaftenanbieters, um den Typ der PropertyNames-Methode der neuen Klasse zurückzugeben.  
   
 <CodeContentPlaceHolder>15</CodeContentPlaceHolder>  
 ##  <a name="intentawareactions"></a> Absichtsbewusste Aktionen durch Implementierung eines Aktionsfilters unterstützen  
@@ -196,13 +197,13 @@ Steuerelemente können einfacher getestet werden, wenn Sie Unterstützung für d
 ### <a name="to-support-intent-aware-actions"></a>So unterstützen Sie absichtbewusste Aktionen  
  ![CUIT&#95;Actions](../test/media/cuit_actions.png "CUIT_Actions")  
   
-1.  Implementieren Sie eine Aktionsfilterklasse, die von <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter> abstammt und die Eigenschaften <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ApplyTimeout%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Category%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Enabled%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.FilterType%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Group%2A> und<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Name%2A> überschreibt.  
+1.  Implementieren Sie eine von <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter> abgeleitete Aktionsfilterklasse, von der die Eigenschaften <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ApplyTimeout%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Category%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Enabled%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.FilterType%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Group%2A> und <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Name%2A> überschrieben werden.  
   
 <CodeContentPlaceHolder>16</CodeContentPlaceHolder>  
 2.  Überschreiben Sie <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ProcessRule%2A>. In diesem Beispiel wird eine Doppelklickaktion durch eine Einzelklickaktion ersetzt.  
   
 <CodeContentPlaceHolder>17</CodeContentPlaceHolder>  
-3.  Fügen Sie den Aktionsfilter der <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A>-Methode Ihres Erweiterungspakets hinzu.  
+3.  Fügen Sie den Aktionsfilter der <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A>-Methode des Erweiterungspakets hinzu.  
   
 <CodeContentPlaceHolder>18</CodeContentPlaceHolder>  
 4.  Erstellen Sie die Binärdateien, und kopieren Sie sie nach „%ProgramFiles%\Gemeinsame Dateien\Microsoft Shared\VSTT\10.0\UITestExtensionPackages“.  
@@ -232,7 +233,7 @@ Steuerelemente können einfacher getestet werden, wenn Sie Unterstützung für d
 ## <a name="external-resources"></a>Externe Ressourcen  
   
 ### <a name="guidance"></a>Empfehlungen  
- [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests)](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:System.Windows.Forms.AccessibleObject>   

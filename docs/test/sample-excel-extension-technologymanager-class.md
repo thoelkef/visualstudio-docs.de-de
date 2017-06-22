@@ -27,29 +27,30 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
 ms.openlocfilehash: 07e37b1a1d7b02992bb4da69bd158878095dd789
-ms.lasthandoff: 04/04/2017
+ms.contentlocale: de-de
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="sample-excel-extension-technologymanager-class"></a>Sample Excel Extension: TechnologyManager Class
-Diese Klasse erweitert die <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager>-Klasse und stellt Kerndienste für die [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)]-Erweiterung bereit. Obwohl die Basisklasse über viele Methoden verfügt, wird in diesem Beispiel nur eine Teilmenge der Methoden verwendet.  
+Diese Klasse erweitert die <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager>-Klasse und stellt Kerndiensten für die Erweiterung [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)] bereit. Obwohl die Basisklasse über viele Methoden verfügt, wird in diesem Beispiel nur eine Teilmenge der Methoden verwendet.  
   
- Einige Methoden geben nur einen Eigenschaftswert zurück. Viele der Methoden ermöglichen es dem Entwickler, in das Modul für Tests der programmierten UI integrierte Standardalgorithmen zu überschreiben. Diese Methoden lösen eine <xref:System.NotSupportedException> aus oder aus oder geben `null` zurück, wodurch das Framework angewiesen wird, den Standardalgorithmus zu verwenden.  
+ Einige Methoden geben nur einen Eigenschaftswert zurück. Viele der Methoden ermöglichen es dem Entwickler, in das Modul für Tests der programmierten UI integrierte Standardalgorithmen zu überschreiben. Diese Methoden lösen eine Ausnahme des Typs <xref:System.NotSupportedException> aus oder geben `null` zurück, wodurch das Framework angewiesen wird, den Standardalgorithmus zu verwenden.  
   
  Abhängig von der Komplexität der zugrunde liegenden Technologie konnte die Entwicklung des Codes des Technologie-Managers einige Wochen, aber auch Monate in Anspruch nehmen. Excel bietet die Möglichkeit, einen potenziell sehr umfangreichen Technologie-Manager zu erstellen. Dieses Beispiel wurde bewusst auf Excel-Arbeitsblätter und -Zellen und die Verwendung einer eingeschränkten Formatierung begrenzt.  
   
  Nach Möglichkeit wird im Code des Technologie-Managers der von der `Communicator`-Klasse geöffnete .NET-Remotingkanal verwendet, um Informationen aus dem im Excel-Prozess ausgeführten Add-In zu extrahieren.  
   
 ## <a name="com-visibility"></a>COM-Sichtbarkeit  
- Diese Klasse und alle Elementklassen, die die <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>-Klasse erweitern, verfügen über das <xref:System.Runtime.InteropServices.ComVisibleAttribute> mit dem Wert `true`, um sicherzustellen, dass die Klassen für COM sichtbar sind.  
+ Beachten Sie, dass diese Klasse und alle Elementklassen, die die <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>-Klasse erweitern, das Attribut <xref:System.Runtime.InteropServices.ComVisibleAttribute> mit dem Wert `true` aufweisen, das sicherstellt, dass die Klassen für COM sichtbar sind.  
   
 ## <a name="technologyname-property"></a>TechnologyName-Eigenschaft  
- Diese Überschreibung der <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.TechnologyName%2A?displayProperty=fullName>-Eigenschaft muss einen eindeutigen und aussagekräftigen Namen bereitstellen, der die zugrunde liegende Technologie für jede andere Komponente der Erweiterung identifiziert. Für diese Erweiterung ist der Wert „Excel“.  
+ Bei der Überschreibung der Eigenschaft <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.TechnologyName%2A?displayProperty=fullName> muss ein eindeutiger und aussagekräftiger Name bereitgestellt werden, über den die zu Grunde liegende Technologie für jede andere Komponente der Erweiterung identifizierbar ist. Für diese Erweiterung ist der Wert „Excel“.  
   
 ## <a name="getcontrolsupportlevel-method"></a>GetControlSupportLevel-Methode  
- Diese Überschreibung der <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetControlSupportLevel%2A?displayProperty=fullName>-Methode gibt eine Zahl zurück, die die Unterstützungsebene angibt, die der Technologie-Manager für das durch das bereitgestellte Handle dargestellte Steuerelement bieten kann. Je höher der zurückgegebene Wert, desto umfassender die Unterstützung des Technologie-Managers für das Steuerelement. In diesem Fall überprüft die Methode das Fenster mit dem Steuerelement und gibt den höchsten Wert zurück, wenn es sich um ein Excel-Arbeitsblatt handelt. Andernfalls wird 0 (null) zurückgegeben, was bedeutet, dass keine Unterstützung verfügbar ist.  
+ Dieser Überschreibung der Methode <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetControlSupportLevel%2A?displayProperty=fullName> gibt eine Zahl zurück, die angibt, in welchem Maße der Technologie-Manager Unterstützung für das vom bereitgestellten Handler repräsentierte Steuerelement leisten kann. Je höher der zurückgegebene Wert, desto umfassender die Unterstützung des Technologie-Managers für das Steuerelement. In diesem Fall überprüft die Methode das Fenster mit dem Steuerelement und gibt den höchsten Wert zurück, wenn es sich um ein Excel-Arbeitsblatt handelt. Andernfalls wird 0 (null) zurückgegeben, was bedeutet, dass keine Unterstützung verfügbar ist.  
   
 ## <a name="methods-to-get-an-element"></a>Methoden zum Abrufen eines Elements  
  Es sind mehrere wichtige Methoden verfügbar, die vom Framework für den Test der programmierten UI verwendet werden, um ein spezifisches Element der Technologie oder ein Element einer anderen Technologie abzurufen, indem ein Handle (ein Punkt auf dem Bildschirm) bereitgestellt wird. Der Code für diese Methoden ist selbsterklärend. Folgende Basismethoden sind verfügbar:  
@@ -65,10 +66,10 @@ Diese Klasse erweitert die <xref:Microsoft.VisualStudio.TestTools.UITest.Extensi
 -   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.ConvertToThisTechnology%2A?displayProperty=fullName>  
   
 ## <a name="parsequeryid-method"></a>ParseQueryId-Methode  
- Beim Erstellen eines Tests der programmierten UI kann der Benutzer Eigenschaftswerte für einige oder alle Steuerelemente im Test angeben. Diese Eigenschaftswerte werden vom Testframework verwendet, um als Sucheigenschaften bezeichnete Name-Wert-Paare zu erstellen, mit deren Hilfe während des Tests nach bestimmten UI-Steuerelementen gesucht wird. Zusammen stellen alle Sucheigenschaften den Wert der <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.QueryId%2A?displayProperty=fullName>-Eigenschaft aller Elemente in der Technologie dar, die jedes Steuerelement umfasst. Da ein Steuerelement während eines Tests möglicherweise mehrmals gesucht werden muss, bietet diese Methode dem Technologie-Manager die Möglichkeit, die Analyse der Sucheigenschaften für das jeweilige Steuerelement zu optimieren. Diese Methode gibt auch ein Cookie zurück, das vom Framework für nachfolgende Suchen nach diesem Steuerelement verwendet werden kann. Bei dieser Implementierung der Methode werden die Sucheigenschaften mithilfe der <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.AndCondition.Match%2A?displayProperty=fullName>-Methode analysiert.  
+ Beim Erstellen eines Tests der programmierten UI kann der Benutzer Eigenschaftswerte für einige oder alle Steuerelemente im Test angeben. Diese Eigenschaftswerte werden vom Testframework verwendet, um als Sucheigenschaften bezeichnete Name-Wert-Paare zu erstellen, mit deren Hilfe während des Tests nach bestimmten UI-Steuerelementen gesucht wird. Alle Sucheigenschaften zusammen bilden den Wert der Eigenschaft <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.QueryId%2A?displayProperty=fullName> jedes Elements in der Technologie, einschließlich aller Steuerelemente. Da ein Steuerelement während eines Tests möglicherweise mehrmals gesucht werden muss, bietet diese Methode dem Technologie-Manager die Möglichkeit, die Analyse der Sucheigenschaften für das jeweilige Steuerelement zu optimieren. Diese Methode gibt auch ein Cookie zurück, das vom Framework für nachfolgende Suchen nach diesem Steuerelement verwendet werden kann. Bei der Implementierung der Methode werden die Sucheigenschaften mithilfe der Methode <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.AndCondition.Match%2A?displayProperty=fullName> analysiert.  
   
 ## <a name="matchelement-method"></a>MatchElement-Methode  
- Um eine Steuerelementsuche mit dem Technologie-Manager auszuführen, können Sie die <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.Search%2A?displayProperty=fullName>-Methode implementieren, um entweder ein Array möglicher Übereinstimmungen zurückzugeben oder die <xref:System.NotSupportedException> auszulösen, wodurch das Framework angewiesen wird, seinen eigenen Suchalgorithmus zu verwenden. In beiden Fällen müssen Sie die <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.MatchElement%2A>-Methode implementieren, wobei wieder die <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.AndCondition.Match%2A?displayProperty=fullName>-Methode verwendet wird.  
+ Um mit dem Technologie-Manager eine Steuerelementsuche auszuführen, können sie die Methode <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.Search%2A?displayProperty=fullName> implementieren, damit entweder ein Array mögliche Treffer zurückgegeben oder eine Ausnahme vom Typ <xref:System.NotSupportedException> ausgelöst wird. So wird das Framework angewiesen, seinen eigenen Suchalgorithmus zu verwenden. In beiden Fällen müssen Sie die <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.MatchElement%2A>-Methode implementieren. Dies erfordert jedoch die Implementierung der Methode <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.AndCondition.Match%2A?displayProperty=fullName>.  
   
 ## <a name="navigation-methods"></a>Navigationsmethoden  
  Diese Methoden rufen das übergeordnete Element, untergeordnete Elemente oder gleichgeordnete Elemente des angegebenen Elements aus der Benutzeroberflächenhierarchie ab. Der Code ist einfach und mit verständlichen Kommentaren versehen.  
@@ -82,5 +83,5 @@ Diese Klasse erweitert die <xref:Microsoft.VisualStudio.TestTools.UITest.Extensi
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>   
  <xref:System.Runtime.InteropServices.ComVisibleAttribute>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.QueryId%2A>   
- [Extending Coded UI Tests and Action Recordings to Support Microsoft Excel (Erweitern von Tests der programmierten UI und Aktionsaufzeichnungen zur Unterstützung von Microsoft Excel)](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
+ [Erweitern von Tests der codierten UI-Tests und Aktionsaufzeichnungen zur Unterstützung von Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 

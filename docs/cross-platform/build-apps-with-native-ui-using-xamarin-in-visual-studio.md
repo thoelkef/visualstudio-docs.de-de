@@ -28,10 +28,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: f78e2b713e75c5601a07907e7f717db92571568b
-ms.openlocfilehash: b9e8ab5432e5c546776a61b364c0886d9f96c096
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 48b5010ae161b2ce6ad22513afbca4a8e5fe82d3
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Erstellen von Apps mit nativer Benutzeroberfläche über Xamarin in Visual Studio
@@ -76,11 +77,11 @@ Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-
   
 1.  Erstellen Sie in Visual Studio eine neue Projektmappe **Leere App (Native Portable)**, und nennen Sie diese **WeatherApp**. Sie finden diese Vorlage am einfachsten, indem Sie **Native Portable** in das Suchfeld eingeben.  
   
-     Wenn Sie sie dort nicht finden, müssen Sie möglicherweise Xamarin installieren oder das Visual Studio 2015-Feature aktivieren, wie dies unter [Setup und Installation](../cross-platform/setup-and-install.md)beschrieben wird.  
+     Wenn Sie sie dort nicht finden, müssen Sie möglicherweise Xamarin installieren oder das Visual Studio 2015-Feature aktivieren, wie unter [Setup and install (Setup und Installation)](../cross-platform/setup-and-install.md) beschrieben.  
   
 2.  Nachdem Sie auf „OK“ geklickt haben, um die Projektmappe zu erstellen, verfügen Sie über eine Reihe einzelner Projekte:  
   
-    -   **WeatherApp (Portable)**: die PCL, in die Sie Code schreiben, der plattformübergreifend freigegeben wird, einschließlich allgemeiner Geschäftslogik und UI-Code, die mit Xamarin.Forms verwendet werden.  
+    -   **WeatherApp (Portable)**: die PCL, in die Sie Code schreiben, der plattformübergreifend freigegeben wird, einschließlich allgemeiner Geschäftslogik und UI-Code, die mit Xamarin.Forms verwendet werden  
   
     -   **WeatherApp.Droid**: das Projekt, das den systemeigenen Android-Code enthält. Dieses wird als Standardstartprojekt festgelegt.  
   
@@ -181,7 +182,7 @@ Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-
     }  
     ```  
   
-6.  Fügen Sie der PCL eine dritte Klasse hinzu, und nennen Sie diese **Core** . Darin wird die freigegebene Geschäftslogik abgelegt, z.B. Logik, die mithilfe einer Postleitzahl eine Abfragezeichenfolge bildet, den Wetterdatendienst aufruft und anschließend eine Instanz der **Weather** -Klasse auffüllt.  
+6.  Fügen Sie der PCL eine dritte Klasse hinzu, und nennen Sie diese **Core**. Darin wird die freigegebene Geschäftslogik abgelegt, z.B. Logik, die mithilfe einer Postleitzahl eine Abfragezeichenfolge bildet, den Wetterdatendienst aufruft und anschließend eine Instanz der **Weather**-Klasse auffüllt.  
   
 7.  Ersetzen Sie den Inhalt von **Core.cs** durch folgenden Code:  
   
@@ -298,8 +299,8 @@ Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-
   
     |Eigenschaft|Wert|  
     |--------------|-----------|  
-    |**text**|**Zip Code**|  
-    |**id**|`@+id/ZipCodeLabel`|  
+    |**Text**|**Zip Code**|  
+    |**ID**|`@+id/ZipCodeLabel`|  
     |**layout_marginLeft**|`10dp`|  
     |**layout_marginTop**|`5dp`|  
   
@@ -320,7 +321,7 @@ Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-
   
     |Eigenschaft|Wert|  
     |--------------|-----------|  
-    |**id**|`@+id/zipCodeEntry`|  
+    |**ID**|`@+id/zipCodeEntry`|  
     |**layout_marginLeft**|`10dp`|  
     |**layout_marginBottom**|`10dp`|  
     |**width**|`165dp`|  
@@ -343,8 +344,8 @@ Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-
   
     |Eigenschaft|Wert|  
     |--------------|-----------|  
-    |**id**|`@+id/weatherBtn`|  
-    |**text**|**Get Weather**|  
+    |**ID**|`@+id/weatherBtn`|  
+    |**Text**|**Get Weather**|  
     |**layout_marginLeft**|`20dp`|  
     |**layout_alignBottom**|`@id/zipCodeEntry`|  
     |**width**|`165dp`|  

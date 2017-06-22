@@ -42,10 +42,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: e4be61999c3530698f90ea5381b980223791325f
-ms.lasthandoff: 03/07/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 24250d68042f77a653fe9ef36c743dd4f32ee57c
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analysieren von JavaScript-Speicherauslastung in UWP-Apps
@@ -69,9 +70,9 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
   
  [Ausführen der JavaScript-Speicheranalyse](#Run)   
  [Überprüfen der Speicherauslastung](#Check)   
- [Isolieren eines Speicherverlusts](#Isolate)   
+ [Isolate a memory leak](#Isolate)   
  [Anzeigen der Zusammenfassung der Live-Speicherauslastung](#LiveMemory)   
- [Anzeigen einer Momentaufnahmenzusammenfassung](#SnapshotSummary)   
+ [View a snapshot summary](#SnapshotSummary)   
  [Anzeigen von Momentaufnahmedetails](#SnapshotDetails)   
  [Anzeigen eines Momentaufnahmevergleichs](#SnapshotDiff)   
  [Anzeigen von Objekten nach Dominator](#FoldObjects)   
@@ -80,7 +81,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
  [Anzeigen von freigegebenen Objektverweisen](#References)   
  [Anzeigen integrierter Objekte](#BuiltInValues)   
  [Speichern von Diagnosesitzungsdateien](#Save)   
- [Zuordnen von Quellcode zu Speicherauslastungsdaten](#JSConsoleCommands)   
+ [Associate source code with memory usage data](#JSConsoleCommands)   
  [Tipps zum Identifizieren von Arbeitsspeicherproblemen](#Tips)  
   
 ##  <a name="Run"></a> Ausführen der JavaScript-Speicheranalyse  
@@ -141,7 +142,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
   
 -   [Anzeigen eines Momentaufnahmevergleichs](#SnapshotDiff). Es werden differenzielle Werte zwischen Momentaufnahmen angezeigt. Diese Ansichten zeigen Unterschiede in der Objektgröße und -anzahl an.  
   
-##  <a name="Isolate"></a> Isolieren eines Speicherverlusts  
+##  <a name="Isolate"></a> Isolate a memory leak  
  In den folgenden Schritten wird ein Workflow vorgeschlagen, mit dem Sie die JavaScript-Speicheranalyse effektiver verwenden können. Diese Schritte können hilfreich sein, wenn Sie Speicherverlust bei der App vermuten. Ein Lernprogramm, das Sie durch den Prozess zum Identifizieren eines Speicherverlusts in einer funktionierenden App führt, finden Sie unter [Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
 1.  Öffnen Sie die App in Visual Studio.  
@@ -218,7 +219,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
   
  Ein Teil des im Arbeitsspeicherdiagramm dargestellten Arbeitsspeichers wird von der JavaScript-Laufzeit zugeordnet. Sie können diese Speicherauslastung in der App nicht steuern. Die im Diagramm dargestellte Speicherauslastung erhöht sich bei Erstellen der ersten Momentaufnahme und erhöht sich geringfügig bei jeder weiteren Momentaufnahme.  
   
-##  <a name="SnapshotSummary"></a> Anzeigen einer Momentaufnahmenzusammenfassung  
+##  <a name="SnapshotSummary"></a> View a snapshot summary  
  Um eine Momentaufnahme des aktuellen Zustands der Speicherauslastung der App zu erstellen, wählen Sie im Arbeitsspeicherdiagramm **Heap-Momentaufnahme erstellen** aus. Eine Kachel zur Momentaufnahmen-Zusammenfassung wird in der Zusammenfassung der Live-Speicherauslastung (bei laufender App) und in der Momentaufnahmenzusammenfassung (bei beendeter App) angezeigt und enthält Informationen zum JavaScript-Heap sowie Links zu ausführlicheren Informationen. Bei mindestens zwei erstellten Momentaufnahmen stellt eine Momentaufnahme zusätzliche Informationen zum Vergleich der aktuellen Daten mit denen der vorherigen Momentaufnahme bereit.  
   
 > [!NOTE]
@@ -347,7 +348,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
 ##  <a name="Save"></a> Speichern von Diagnosesitzungsdateien  
  Momentaufnahmen-Zusammenfassungen zu Diagnosezwecken sowie die zugeordneten Detailansichten werden als .diagsessions-Dateien gespeichert. Der**Projektmappen-Explorer** zeigt vorherige Diagnosesitzungen im Ordner "Diagnosesitzungen" an. Im **Projektmappen-Explorer**können Sie vorherige Sitzungen öffnen oder Dateien entfernen bzw. umbenennen.  
   
-##  <a name="JSConsoleCommands"></a> Zuordnen von Quellcode zu Speicherauslastungsdaten  
+##  <a name="JSConsoleCommands"></a> Associate source code with memory usage data  
  Zur Isolierung des Codeabschnitts, bei dem ein Arbeitsspeicherproblem vorliegt, verwenden Sie die folgenden Methoden:  
   
 -   Suchen Sie nach Klassennamen und IDs für DOM-Elemente in den Details und den differenziellen Ansichten.  
@@ -402,7 +403,7 @@ if (performance && performance.mark) {
   
     -   Einige Objekte stellen möglicherweise eine `dispose` -Methode und Verwendungsempfehlungen bereit. So sollten Sie zum Beispiel `dispose` für ein [WinJS.Binding.List](http://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) aufrufen, wenn Sie die `createFiltered` -Methode der Liste aufrufen und dann von einer Seite weg navigieren.  
   
-    -   Sie müssen unter Umständen einen oder mehrere Eventlistener entfernen. Weitere Informationen finden Sie unter [Anzeigen von DOM-Ereignislistenern](../debugger/view-dom-event-listeners.md).  
+    -   Sie müssen unter Umständen einen oder mehrere Eventlistener entfernen. Weitere Informationen finden Sie unter [View DOM event listeners](../debugger/view-dom-event-listeners.md).  
   
 -   Sehen Sie sich den letzten Teil [dieses Video](http://channel9.msdn.com/Events/Build/2013/3-316) von der Build 2013-Konferenz über die JavaScript-Speicheranalyse an.  
   

@@ -29,16 +29,16 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
-ms.openlocfilehash: 919227fb624f4b6dc51e13ccadea8e2682b9816f
+ms.sourcegitcommit: 90b2481b0ec4f9387fe3a2c0b733a103e8c03845
+ms.openlocfilehash: 9e8ac0cbafe296223de68eb5b4f1b89680f61088
 ms.contentlocale: de-de
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 05/23/2017
 
 ---
 
 # <a name="debugging-python-and-c-together"></a>Gemeinsames Debuggen von Python und C++
 
-Die meisten Python-Debugger unterstützten das Debuggen nur von Python-Code. In der Praxis wird Python jedoch zusammen mit C oder C++ verwendet, wenn eine hohe Leistung erforderlich ist oder Plattform-APIs direkt aufgerufen werden müssen (Ein Beispiel finden Sie unter [Erstellen einer C++-Erweiterung für Python](cpp-and-python.md)). Visual Studio bietet ein integriertes, simultanes Debuggen im gemischten Modus für Python und natives C/C++ mit folgenden Funktionen: kombinierte Aufruflisten, abwechselnde Einzelschrittausführung in Python und nativem Code, Haltepunkte in jedem Codetyp sowie die Möglichkeit, Python-Darstellungen von Objekten in nativen Frames und umgekehrt anzuzeigen:
+Die meisten Python-Debugger unterstützten das Debuggen nur von Python-Code. In der Praxis wird Python jedoch zusammen mit C oder C++ verwendet, wenn eine hohe Leistung erforderlich ist oder Plattform-APIs direkt aufgerufen werden müssen (Ein Beispiel finden Sie unter [Erstellen einer C++-Erweiterung für Python](cpp-and-python.md)). Wenn ein Python-Projekt geladen wird, bietet Visual Studio ein integriertes, simultanes Debuggen im gemischten Modus für Python und natives C/C++ mit folgenden Funktionen: kombinierte Aufruflisten, abwechselnde Einzelschrittausführung in Python und nativem Code, Haltepunkte in jedem Codetyp sowie die Möglichkeit, Python-Darstellungen von Objekten in nativen Frames und umgekehrt anzuzeigen:
 
 ![Debuggen im gemischten Modus](media/mixed-mode-debugging.png) 
 
@@ -69,6 +69,13 @@ Eine Einführung in das Erstellen, Testen und Debuggen von nativen C-Modulen mit
 1. Wenn Sie das Debuggen im gemischten Modus zum ersten Mal starten, wird womöglich das Dialogfeld **Python-Symbole erforderlich** angezeigt. Weitere Informationen hierzu finden Sie unter [Symbole für das Debuggen im gemischten Modus](debugging-symbols-for-mixed-mode.md). Sie müssen Symbole für jede Python-Umgebung nur einmal installieren. Beachten Sie, dass wenn Sie die Python-Unterstützung über den Visual Studio 2017-Installer installieren, Symbole automatisch hinzugefügt werden.
 
 1. Sie möchten womöglich auch den Python-Quellcode selbst zur Verfügung haben. Für die Python-Standardsprache kann dieser von [https://www.python.org/downloads/source/](https://www.python.org/downloads/source/) abgerufen werden. Laden Sie das für Ihre Version passende Archiv herunter, und extrahieren Sie es in einen Ordner. Sie verweisen Visual Studio auf bestimmte Dateien in diesem Ordner, egal zu welchem Punkt Sie aufgefordert werden.
+
+> [!Note]
+> So wie hier beschrieben wird das Debuggen im gemischten Modus nur aktiviert, wenn Sie ein Python-Projekt in Visual Studio geladen haben. Dieses Projekt bestimmt den Debugmodus von Visual Studio, der die Option des gemischten Modus verfügbar macht. Wenn Sie jedoch ein C++-Projekt geladen haben (was Sie tun würden, wenn Sie [Python in eine andere Anwendung, wie unter python.org beschrieben, einbetten würden](https://docs.python.org/3/extending/embedding.html)), verwendet Visual Studio den nativen C++-Debugger, der das Debuggen im gemischten Modus nicht unterstützt.
+>
+> Starten Sie in diesem Fall das C++-Projekt ohne Debuggen (**Debuggen > Starten ohne Debugging** oder STRG+F5), und verwenden Sie anschließend **Debuggen > An den Prozess anhängen...**. Wählen Sie im angezeigten Dialogfeld den passenden Prozess, und klicken Sie anschließend auf die Schaltfläche **Auswählen**, um das Dialogfeld **Codetyp auswählen** zu öffnen, in dem Sie Python auswählen können, so wie hier dargestellt. Klicken Sie auf **OK**, um das Dialogfeld zu schließen, dann auf **Anfügen**, um den Debugger zu starten. Beachten Sie, dass Sie möglicherweise eine angemessene Pause oder Verzögerung in der C++-App einführen müssen, um sicherzustellen, dass sie das Python-Projekt, das Sie debuggen möchten, nicht aufruft, bevor Sie den Debugger anfügen können.
+>
+> ![Auswählen von Python als Debugtyp beim Anfügen eines Debuggers](media/mixed-mode-debugging-attach-type.png)
 
 ## <a name="mixed-mode-specific-features"></a>Spezifische Funktionen des gemischten Modus
 

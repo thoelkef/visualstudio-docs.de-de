@@ -1,47 +1,64 @@
 ---
-title: "DA0005: H&#228;ufige GC2-Auflistung | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.DA0005"
-  - "vs.performance.rules.DAManyGC2Collections"
-  - "vs.performance.5"
-  - "vs.performance.rules.DA0005"
+title: "DA0005: Häufige GC2-Auflistungen | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.performance.DA0005
+- vs.performance.rules.DAManyGC2Collections
+- vs.performance.5
+- vs.performance.rules.DA0005
 ms.assetid: 8d3f267c-8a74-4cf4-91a5-0b06a76dc2bd
 caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# DA0005: H&#228;ufige GC2-Auflistung
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 40c7e8f21c6e9c8ef212860a639a7e8e16381dc7
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
+---
+# <a name="da0005-frequent-gc2-collections"></a>DA0005: Häufige GC2-Auflistung
 |||  
 |-|-|  
-|Regel\-ID|DA0005|  
-|Kategorie \(Category\)|.NET Framework\-Verwendung|  
-|Profilerstellungsmethode|.NET\-Arbeitsspeicher|  
-|Meldung|Viele Ihrer Objekte werden in der Garbage Collection, Generation 2, aufgelistet.|  
-|Meldungstyp|Warnung|  
+|RuleId|DA0005|  
+|Kategorie|.NET Framework-Verwendung|  
+|Profilerstellungsmethode|.NET-Arbeitsspeicher|  
+|Meldung|Einige Ihrer Objekte werden bei der Garbage Collection der zweiten Generation gesammelt.|  
+|Nachrichtentyp|Warnung|  
   
-## Ursache  
- Bei der Garbage Collection der zweiten Generation wird eine hohe Anzahl von .NET\-Speicherobjekten freigegeben.  
+## <a name="cause"></a>Ursache  
+ Bei der Garbage Collection der Generation 2 wird eine hohe Anzahl von .NET-Speicherobjekten freigegeben.  
   
-## Regelbeschreibung  
- Die Microsoft .NET\-CLR \(Common Language Runtime\) verfügt über einen automatischen Speicherverwaltungsmechanismus, durch den der Speicher von Objekten, die von der Anwendung nicht mehr verwendet werden, mithilfe eines Garbage Collectors freigegeben wird.  Der Garbage Collector ist generationsorientiert, da angenommen wird, dass viele Speicherbelegungen kurzlebig sind.  Lokale Variablen müssen beispielsweise kurzlebig sein.  Neu erstellte Objekte beginnen in Generation 0 \(gen 0\) und werden zu Generation 1, wenn sie nach einer Ausführung der Garbage Collection noch vorhanden sind, und schließlich zu Generation 2, wenn sie von der Anwendung auch weiterhin verwendet werden.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Die Microsoft .NET-CLR (Common Language Runtime) verfügt über einen automatischen Speicherverwaltungsmechanismus, durch den der Speicher von Objekten, die von der Anwendung nicht mehr verwendet werden, mithilfe eines Garbage Collectors freigegeben wird. Der Garbage Collector ist generationsorientiert, da angenommen wird, dass viele Speicherbelegungen kurzlebig sind. Lokale Variablen müssen beispielsweise kurzlebig sein. Neu erstellte Objekte beginnen in Generation 0 (gen 0) und werden zu Generation 1, wenn sie nach einer Ausführung der Garbage Collection noch vorhanden sind, und schließlich zu Generation 2, wenn sie von der Anwendung auch weiterhin verwendet werden.  
   
- Objekte in der Generation 0 werden häufig und i. d. R. äußerst effizient gesammelt.  Objekte in der Generation 1 werden nicht so häufig und weniger effizient gesammelt.  Und langlebige Objekte in der Generation 2 werden schließlich noch seltener gesammelt.  Die Collection der Generation 2, bei der es sich um eine vollständige Ausführung der Garbage Collection handelt, ist zudem der aufwändigste Vorgang.  
+ Objekte in der Generation 0 werden häufig und i. d. R. äußerst effizient gesammelt. Objekte in der Generation 1 werden nicht so häufig und weniger effizient gesammelt. Und langlebige Objekte in der Generation 2 werden schließlich noch seltener gesammelt. Die Collection der Generation 2, bei der es sich um eine vollständige Ausführung der Garbage Collection handelt, ist zudem der aufwändigste Vorgang.  
   
- Diese Regel wird ausgelöst, wenn anteilsmäßig zu viele Garbage Collections der Generation 2 aufgetreten sind.  Sind nach der Collection der Generation 1 zu viele relativ kurzlebige Objekte vorhanden, die dann aber im Rahmen einer vollständigen Collection der Generation 2 gesammelt werden können, wird der Aufwand für die Speicherverwaltung unter Umständen leicht zu groß.  Weitere Informationen finden Sie den [Lebensmittekrise](http://go.microsoft.com/fwlink/?LinkId=177835) Anteil des Leckerbissen der Leistung Rico Marianis auf der MSDN\-Website.  
+ Diese Regel wird ausgelöst, wenn anteilsmäßig zu viele Garbage Collections der zweiten Generation aufgetreten sind. Sind nach der Collection der ersten Generation zu viele relativ kurzlebige Objekte vorhanden, die dann aber im Rahmen einer vollständigen Collection der zweiten Generation gesammelt werden können, wird der Aufwand für die Speicherverwaltung unter Umständen zu groß. Weitere Informationen finden Sie im Beitrag [Mid-life crisis (Mid­life-Cri­sis)](http://go.microsoft.com/fwlink/?LinkId=177835) unter „Rico Mariani's Performance Tidbits“ (Schmankerln zum Thema Leistung von Rico Mariani) auf der MSDN-Website.  
   
-## Vorgehensweise bei der Überprüfung einer Warnung  
- In den [.NET\-Arbeitsspeicherdatenansichten](../profiling/dotnet-memory-data-views.md) finden Sie Informationen zum Speicherbelegungsmuster der Anwendung.  Ermitteln Sie mithilfe der [Objektlebensdaueransicht](../profiling/object-lifetime-view.md), welche von den Datenobjekten des Programms bei der Generierung 2 noch vorhanden sind und von dort aus freigegeben werden.  Ermitteln Sie mithilfe der [Zuordnungsansicht](../profiling/dotnet-memory-allocations-view.md) den Ausführungspfad, der zu diesen Speicherbelegungen geführt hat.  
+## <a name="how-to-investigate-a-warning"></a>Vorgehensweise bei der Überprüfung einer Warnung  
+ In den [.NET-Arbeitsspeicherdatenansichten](../profiling/dotnet-memory-data-views.md) finden Sie Informationen zum Speicherbelegungsmuster der Anwendung. Ermitteln Sie mithilfe der [Objektlebensdaueransicht](../profiling/object-lifetime-view.md) welche Datenobjekte des Programms in der zweiten Generation noch vorhanden sind und von dort aus freigegeben werden. Ermitteln Sie mithilfe der [Zuordnungsansicht](../profiling/dotnet-memory-allocations-view.md) den Ausführungspfad, der zu diesen Speicherbelegungen geführt hat.  
   
- Informationen darüber, wie der Garbage Collection\-Leistung, finden Sie auf [Garbage Collector\-Grundlagen und Leistungs\-Hinweise](http://go.microsoft.com/fwlink/?LinkId=148226) der Microsoft\-Website verbessert.  Informationen zum Mehraufwand der automatischen Garbage Collection, Sie finden. [Großes Objektheap zumindest teilweise nicht überdeckt](http://go.microsoft.com/fwlink/?LinkId=177836)
+ Informationen zur Verbesserung der Garbage Collection-Leistung finden Sie unter [Garbage Collector-Grundlagen und Tipps zur Leistung](http://go.microsoft.com/fwlink/?LinkId=148226) auf der Microsoft-Website. Informationen zum Mehraufwand der automatischen Garbage Collection finden Sie unter [Large Object Heap Uncovered (Informationen zum Heap für große Objekte)](http://go.microsoft.com/fwlink/?LinkId=177836).

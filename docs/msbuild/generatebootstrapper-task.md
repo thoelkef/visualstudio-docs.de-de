@@ -37,10 +37,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: 6a67893ef4326eaef3d3ca016f6da23e4687c780
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: e22d2cb649528d527cf37e80fda0ad49671863d3
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper-Aufgabe
@@ -71,7 +72,7 @@ Bietet eine automatisierte Methode zum Erkennen, Herunterladen und Installieren 
   
      Optionaler `String` -Parameter.  
   
-     Gibt die Webadresse an, die das Installationsprogramm der Anwendung hostet.  
+     Gibt die Webadresse an, die das Installationsprogramm der Anwendung hostet  
   
 -   `BootstrapperComponentFiles`  
   
@@ -81,7 +82,7 @@ Bietet eine automatisierte Methode zum Erkennen, Herunterladen und Installieren 
   
 -   `BootstrapperItems`  
   
-     Optionaler Parameter `[]` <xref:Microsoft.Build.Framework.ITaskItem>.  
+     Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter  
   
      Gibt die Produkte an, die im Bootstrapper erstellt werden. Die Elemente, die an diesen Parameter übergeben werden, sollten folgende Syntax haben:  
   
@@ -167,7 +168,7 @@ Bietet eine automatisierte Methode zum Erkennen, Herunterladen und Installieren 
      Wenn `true`, führt der Bootstrapper die XSD-Validierung der angegebenen Bootstrapper-Eingabeelemente durch. Der Standardwert dieses Parameters ist `false`.  
   
 ## <a name="remarks"></a>Hinweise  
- Neben den oben genannten Parametern übernimmt diese Aufgabe Parameter von der Klasse <xref:Microsoft.Build.Tasks.TaskExtension>, die diese wiederum von der Klasse <xref:Microsoft.Build.Utilities.Task> übernimmt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension Base Class (TaskExtension-Basisklasse)](../msbuild/taskextension-base-class.md).  
+ Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Beispiel  
  Im folgenden Beispiel wird die Aufgabe `GenerateBootstrapper` zur Installation einer Anwendung verwendet, die [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] als Voraussetzung installiert haben muss.  

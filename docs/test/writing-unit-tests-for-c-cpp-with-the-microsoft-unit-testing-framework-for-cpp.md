@@ -27,10 +27,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 84549f28f33933eacbf44742b5be129df8ab780e
-ms.lasthandoff: 04/05/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 203cc6111870cbf3342fd84c5931a0dadc2bdde0
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Schreiben von Komponententests für C/C++ mit dem Microsoft-Unittest-Framework für C++
@@ -46,7 +47,7 @@ In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht v
   
 2.  Stellen Sie die DLL für das Testprojekt zur Verfügung:  
   
-    -   `#include` eine `.h`-Datei, die Deklarationen der extern zugreifbaren Funktionen der DLL enthält.  
+    -   Schließen Sie (`#include`) eine `.h`-Datei ein, die Deklarationen der extern zugreifbaren Funktionen der DLL enthält.  
   
          Die `.h`-Datei sollte Funktionsdeklarationen enthalten, die mit `_declspec(dllimport)` gekennzeichnet sind. Alternativ können Sie die Methoden mit einer DEF-Datei exportieren. Weitere Informationen finden Sie unter [Importieren und Exportieren](/cpp/build/importing-and-exporting).  
   
@@ -402,7 +403,7 @@ In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht v
   
 -   **Isolation.** Die meisten DLLs sind von anderen Subsystemen abhängig, z. B. Datenbanken und anderen DLLs. Häufig werden diese anderen Komponenten parallel entwickelt. Um Komponententests zu ermöglichen während die anderen Komponenten noch nicht verfügbar sind, müssen Sie Pseudoobjekte ersetzen oder  
   
--   **Buildüberprüfungstests.** Sie können Tests haben, die auf dem Buildserver des Teams in festgelegten Intervallen ausgeführt werden. Dadurch wird sichergestellt, dass Fehler nicht eingefügt werden, wenn die Arbeit von Teammitgliedern integriert wird.  
+-   **Buildüberprüfungstests.** Tests können auf dem Buildserver des Teams in festgelegten Intervallen ausgeführt werden. Dadurch wird sichergestellt, dass Fehler nicht eingefügt werden, wenn die Arbeit von Teammitgliedern integriert wird.  
   
 -   **Einchecktests.** Sie können festlegen, dass mehrere Tests ausgeführt werden, bevor jedes Teammitglied Code in die Quellcodeverwaltung eincheckt. In der Regel ist dies eine Teilmenge des vollständigen Satzes von Buildüberprüfungstests.  
   

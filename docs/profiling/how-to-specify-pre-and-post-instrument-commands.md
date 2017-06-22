@@ -1,92 +1,110 @@
 ---
-title: "Gewusst wie: Festlegen von Pr&#228;instrumentations- und Postinstrumentationsbefehlen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.property.instrument"
-helpviewer_keywords: 
-  - "Profilerstellungstools, Präinstrumentationsereignisse"
-  - "Ereignisse [Visual Studio], Präinstrumentation"
-  - "Präinstrumentationsereignisse, Leistungstools"
+title: "Vorgehensweise: Festlegen von Präinstrumentations- und Postinstrumentationsbefehlen | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.performance.property.instrument
+helpviewer_keywords:
+- profiling tools, pre-instrument events
+- events [Visual Studio], pre-instrument
+- pre-instrument events, performance tools
 ms.assetid: 6a8d5340-1d1b-4d81-88dd-8e1f435eb828
 caps.latest.revision: 28
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 28
----
-# Gewusst wie: Festlegen von Pr&#228;instrumentations- und Postinstrumentationsbefehlen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: afbc73dbeda9d8201d1ed0cfccdf80025fc82306
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
-Sie können Befehle angeben, die vor oder nach dem Instrumentieren der Binärdateien in einer Leistungssitzung ausgeführt werden.  Jeder Befehl, der über die Befehlszeile ausgegeben werden kann, kann als Präinstrumentations\- oder Postinstrumentationsereignis festgelegt werden.  Sie können z. B. in einer Batchdatei Befehle angeben, um das erneute Signieren einer Assembly mit einem Schlüssel für einen starken Namen zu automatisieren. Die Batchdatei wird ausgeführt, nachdem die Binärdateien instrumentiert wurden.  
+---
+# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Gewusst wie: Festlegen von Präinstrumentations- und Postinstrumentationsbefehlen
+Sie können Befehle angeben, die ausgeführt werden, bevor oder nachdem die Binärdateien in einer Leistungssitzung instrumentiert werden. Jeder Befehl, der über die Befehlszeile ausgegeben werden kann, kann als Präinstrumentations- oder Postinstrumentationsereignis angegeben werden. Beispielsweise können Sie Befehle angeben, die das erneute Signieren einer Assembly mit einem Schlüssel mit starkem Namen in einer Batchdatei automatisiert, die ausgeführt wird, nachdem die Binärdateien instrumentiert werden.  
   
- Sie können Befehle für alle instrumentierten Binärdateien in der Profilerstellung oder für einzelne Binärdateien angeben.  Es kann jedoch nur ein Präinstrumentationsbefehl \(zum Ausführen vor dem Instrumentationsprozess\) und ein Postinstrumentationsbefehl \(zum Ausführen nach dem Instrumentationsprozess\) angegeben werden.  Das gleichzeitige Angeben von Befehlen für alle und von Befehlen für einzelne Binärdateien ist nicht möglich.  Wenn Sie Befehle für alle Binärdateien angeben, werden die Befehle vor oder nach der Instrumentation jeder Binärdatei in der Sitzung ausgeführt.  
+ Sie können Befehle für alle instrumentierten Binärdateien in der Profilerstellung oder für einzelne Binärdateien angeben. Sie können jedoch nur jeweils ein Präinstrumentationsbefehl vor dem Ausführen und nur ein Postinstrumentationsbefehl zum Ausführen nach dem Instrumentationsprozess angeben. Sie können keine Befehle für jeweils alle und für einzelne Binärdateien angeben. Wenn Sie Befehle für alle Binärdateien angeben, werden die Befehle vor oder nach der Instrumentation jeder Binärdatei in der Sitzung ausgeführt.  
   
- **Voraussetzungen**  
+ **Anforderungen**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
- Das Arbeitsverzeichnis, in dem die Befehle ausgeführt werden, hängt vom Betriebssystem ab, auf dem [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] ausgeführt wird, sowie von der Zielplattform der Anwendung, für die das Profil erstellt wird.  
+ Das Arbeitsverzeichnis, in dem die Befehle ausgeführt werden, hängt vom Betriebssystem ab, auf dem Sie [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] ausführen und von der Zielplattform der profilierten Anwendung.  
   
- **32\-Bit\-Computer**  
+ **32-Bit-Computer**  
   
- Auf 32\-Bit\-Computern lautet das Standardverzeichnis für die Profilerstellungstools Laufwerk\\Programme\\Microsoft Visual Studio 10.0 \\Team Tools\\Performance Tools.  
+ Auf 32-Bit-Computern ist das Standardverzeichnis für Profilerstellungstools Laufwerk\Programme\Microsoft Visual Studio 10.0\Team Tools\Performance Tools.  
   
- **64\-Bit\-Computer**  
+ **64-Bit-Computer**  
   
- Auf 64\-Bit\-Computern geben Sie den Pfad entsprechend der Zielplattform der profilierten Anwendung an:  
+ Auf 64-Bit-Computern legen Sie den Pfad entsprechend der Zielplattform der profilierten Anwendung fest:  
   
--   Für 32\-Bit\-Anwendungen lautet das Standarverzeichnis für die Profilerstellungstools wie folgt:  
+-   Bei 32-Bit-Anwendungen lautet das Standardverzeichnis für Profilerstellungstools:  
   
-     *Drive*\\ Programme \(x86\)\\Microsoft Visual Studio 10.0\\Team Tools\\Performance Tools  
+     *Laufwerk*\Programme (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools  
   
--   Für 64\-Bit\-Anwendungen lautet das Standardverzeichnis für die Profilerstellungstools wie folgt:  
+-   Bei 64-Bit-Anwendungen lautet das Standardverzeichnis für Profilerstellungstools:  
   
-     *Drive*\\ Programme \(x86\)\\Microsoft Visual Studio 10.0\\Team Tools\\Performance Tools\\x64  
+     *Laufwerk*\Programme (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64  
   
-### So geben Sie Präinstrumentationsbefehle an  
-  
-1.  Führen Sie einen der folgenden Schritte aus:  
-  
-    -   Wählen Sie im Leistungs\-Explorer den Leistungssitzungsknoten aus, klicken Sie mit der rechten Maustaste, und klicken Sie anschließend auf **Eigenschaften**, um Präinstrumentationsbefehle für alle Binärdateien in einer Leistungssitzung anzugeben.  
-  
-    -   Klicken Sie in der Liste **Ziele** der Leistungssitzung mit der rechten Maustaste auf den Namen einer Binärdatei, und klicken Sie anschließend auf **Eigenschaften**, um Präinstrumentationsbefehle für die Binärdatei anzugeben.  
-  
-2.  Klicken Sie auf den **Eigenschaftenseiten** auf **Instrumentation**.  
-  
-3.  Geben Sie den Befehl in das Textfeld **Befehlszeile** unter **Präinstrumentationsereignisse** ein.  
-  
-    > [!NOTE]
-    >  Sie können neben dem Feld **Befehlszeile** auf die Schaltfläche mit den Auslassungszeichen **\(…\)** klicken, um die entsprechende EXE\-, CMD\- oder BAT\-Datei zu suchen und auszuwählen.  
-  
-4.  Klicken Sie auf **OK**.  
-  
-     Um den Befehl zu deaktivieren, ohne ihn zu entfernen, aktivieren Sie das Kontrollkästchen **Aus Instrumentation ausschließen**.  Verwenden Sie zum Ändern von Compiler\- oder Linkereinstellungen die Projekteigenschaftenseiten.  
-  
-### So geben Sie Postinstrumentationsbefehle an  
+### <a name="to-specify-pre-instrument-commands"></a>So geben Sie Präinstrumentationsbefehle an  
   
 1.  Führen Sie einen der folgenden Schritte aus:  
   
-    -   Um Postinstrumentationsbefehle für alle Binärdateien in einer Leistungssitzung anzugeben, wählen Sie den Leistungssitzungsknoten im **Leistungs\-Explorer** aus, klicken Sie dann mit der rechten Maustaste, und wählen Sie **Eigenschaften** aus.  
+    -   Zum Angeben von Präinstrumentationsbefehle für alle Binärdateien in einer Leistungssitzung wählen Sie den Knoten Leistungssitzung im **Leistungs-Explorer**, klicken Sie anschließend mit der rechten Maustaste und wählen Sie **Eigenschaften** aus.  
   
-    -   Um Postinstrumentationsbefehle für eine bestimmte Binärdatei anzugeben, klicken Sie in der Liste **Ziele** der Leistungssitzung mit der rechten Maustaste auf den Namen der Binärdatei, und wählen Sie dann **Eigenschaften** aus.  
+    -   Zum Angeben von Präinstrumentationsbefehlen für eine bestimmte Binärdatei klicken Sie mit der rechten Maustaste auf die Binärdatei in der Liste **Ziele** der Leistungssitzung und wählen Sie anschließend **Eigenschaften** aus.  
   
-2.  Klicken Sie auf den **Eigenschaftenseiten** auf **Instrumentation**.  
+2.  Klicken Sie auf den **Eigenschaftenseiten** auf **Instrumentation** .  
   
-3.  Geben Sie den Befehl in das Textfeld **Befehlszeile** unter **Postinstrumentationsereignisse** ein.  
+3.  Geben Sie den Befehl im Textfeld **Befehlszeile** unter **Präinstrumentationsereignisse** ein.  
   
     > [!NOTE]
-    >  Sie können neben dem Feld **Befehlszeile** auf die Schaltfläche mit den Auslassungszeichen **\(…\)** klicken, um die entsprechende EXE\-, CMD\- oder BAT\-Datei zu suchen und auszuwählen.  
+    >  Sie können auf die Auslassungszeichen **(…)** klicken, die neben dem Feld **Befehlszeile** stehen, um die entsprechende EXE-, CMD- oder BAT-Datei zu suchen und auszuwählen.  
   
 4.  Klicken Sie auf **OK**.  
   
-     Um den Befehl zu deaktivieren, ohne ihn zu entfernen, aktivieren Sie das Kontrollkästchen **Aus Instrumentation ausschließen**.  Verwenden Sie zum Ändern von Compiler\- oder Linkereinstellungen die Projekteigenschaftenseiten.  
+     Um den Befehl zu deaktivieren, ohne ihn zu entfernen, wählen Sie das Kontrollkästchen **Aus Instrumentation ausschließen** aus. Verwenden Sie zum Ändern der Compiler- oder Linkereinstellungen die Eigenschaftenseiten des Projekts.  
   
-## Siehe auch  
+### <a name="to-specify-post-instrument-commands"></a>So geben Sie Postinstrumentationsbefehle an  
+  
+1.  Führen Sie einen der folgenden Schritte aus:  
+  
+    -   Zum Angeben von Postinstrumentationsbefehlen für alle Binärdateien in einer Leistungssitzung wählen Sie den Knoten Leistungssitzung im **Leistungs-Explorer**, klicken Sie anschließend mit der rechten Maustaste und wählen Sie **Eigenschaften** aus.  
+  
+    -   Zum Angeben von Präinstrumentationsbefehlen für eine bestimmte Binärdatei klicken Sie mit der rechten Maustaste auf die Binärdatei in der Liste **Ziele** der Leistungssitzung und wählen Sie anschließend **Eigenschaften** aus.  
+  
+2.  Klicken Sie auf den **Eigenschaftenseiten** auf **Instrumentation** .  
+  
+3.  Geben Sie den Befehl im Textfeld **Befehlszeile** unter **Postinstrumentationsereignisse** ein.  
+  
+    > [!NOTE]
+    >  Sie können auf die Auslassungszeichen **(…)** klicken, die neben dem Feld **Befehlszeile** stehen, um die entsprechende EXE-, CMD- oder BAT-Datei zu suchen und auszuwählen.  
+  
+4.  Klicken Sie auf **OK**.  
+  
+     Um den Befehl zu deaktivieren, ohne ihn zu entfernen, wählen Sie das Kontrollkästchen **Aus Instrumentation ausschließen** aus. Verwenden Sie zum Ändern der Compiler- oder Linkereinstellungen die Eigenschaftenseiten des Projekts.  
+  
+## <a name="see-also"></a>Siehe auch  
  [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)

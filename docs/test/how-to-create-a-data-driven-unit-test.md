@@ -34,10 +34,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
 ms.openlocfilehash: 2eaf4aa44fdc1bec56bb513af54ea7db72dcf3db
-ms.lasthandoff: 04/04/2017
+ms.contentlocale: de-de
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Gewusst wie: Erstellen eines datengesteuerten Komponententests
@@ -63,11 +64,11 @@ Sie können mithilfe des Microsoft Komponententestframework für verwaltenden Co
   
 1.  Erstellen Sie eine Datenquelle, die die Werte enthält, die Sie in der Testmethode verwenden. Die Datenquelle kann jeder Typ sein, der auf dem Computer registriert ist, auf dem der Test ausgeführt wird.  
   
-2.  Fügen Sie eine privates Feld „<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext>“ sowie eine öffentliche Eigenschaft `TestContext` zu der Testklasse hinzu.  
+2.  Fügen Sie der Testklasse ein privates <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext>-Feld sowie eine öffentliche `TestContext`-Eigenschaft hinzu.  
   
-3.  Erstellen Sie eine Komponententestmethode, und fügen Sie zu dieser Methode ein Attribut „<xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>“ hinzu.  
+3.  Erstellen Sie eine Komponententestmethode, und fügen Sie ihr ein <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>-Attribut an.  
   
-4.  Verwenden Sie die Indexereigenschaft „<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A>“, um die Werte zu abzurufen, die Sie in einem Test verwenden.  
+4.  Verwenden Sie die <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A>-Indexereigenschaft, um die Werte abzurufen, die Sie in einem Test verwenden.  
   
 ##  <a name="BKMK_The_method_under_test"></a> Die zu testende Methode  
  Nehmen wir zum Beispiel an, dass wir folgendes erstellt haben:  
@@ -182,7 +183,7 @@ public void AddIntegers_FromDataSourceTest()
 ```  
   
 ###  <a name="BKMK_Using_TestContext_DataRow_to_access_the_data"></a> Verwenden von TestContext.DataRow, um auf die Daten zuzugreifen  
- Verwenden Sie den Indexer `AddIntegersData`, um auf die Daten in der Tabelle `TestContext.DataRow` zuzugreifen. `DataRow` ist ein Objekt „<xref:System.Data.DataRow>“. Dadurch werden Spaltenwerte anhand des Index oder der Spaltennamen abgerufen. Da die Werte als Objekte zurückgegeben werden, müssen sie in den entsprechenden Typ konvertiert werden:  
+ Verwenden Sie den Indexer `AddIntegersData`, um auf die Daten in der Tabelle `TestContext.DataRow` zuzugreifen. `DataRow` ist ein Objekt <xref:System.Data.DataRow>. Dadurch werden Spaltenwerte anhand des Index oder der Spaltennamen abgerufen. Da die Werte als Objekte zurückgegeben werden, müssen sie in den entsprechenden Typ konvertiert werden:  
   
 ```  
 int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);  

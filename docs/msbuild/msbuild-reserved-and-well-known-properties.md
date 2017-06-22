@@ -34,10 +34,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 078576d6e1988bf1cefbb09646ea44f61085f5cf
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 7a873df77756e5a957d327049566c8e0db1f3a8a
+ms.openlocfilehash: f1f9931e6e7c8dda4cb74f407901f41467c690cc
+ms.contentlocale: de-de
+ms.lasthandoff: 05/11/2017
 
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Reservierte und bekannte Eigenschaften für MSBuild
@@ -64,6 +65,7 @@ ms.lasthandoff: 02/22/2017
 |`MSBuildProjectFile`|Der vollständige Dateiname der Projektdatei, einschließlich der Dateinamenerweiterung, z. B. "MyApp.proj".|Reserviert|  
 |`MSBuildProjectFullPath`|Der absolute Pfad und der vollständige Dateiname der Projektdatei, einschließlich der Dateinamenerweiterung, beispielsweise "C:\MyCompany\MyProduct\MyApp.proj".|Reserviert|  
 |`MSBuildProjectName`|Der Dateiname der Projektdatei ohne die Dateinamenerweiterung, z. B. "MyApp".|Reserviert|  
+|`MSBuildRuntimeType`|Der Typ der Laufzeit, der derzeit ausgeführt wird. Eingeführt in MSBuild 15. Der Wert ist möglicherweise nicht definiert (vor MSBuild 15). `Full` gibt an, dass MSBuild auf dem Desktop .NET Framework ausgeführt wird, `Core`, dass MSBuild unter .NET Core ausgeführt wird und `Mono`, dass MSBuild unter Mono ausgeführt wird.|Reserviert|  
 |`MSBuildStartupDirectory`|Der absolute Pfad des Ordners, in dem [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] aufgerufen wird. Wenn Sie diese Eigenschaft verwenden, können Sie alles unterhalb eines bestimmten Punkts in einer Projektstruktur erstellen, ohne "dirs.proj"-Dateien in jedem Verzeichnis zu erstellen. Stattdessen haben Sie wie hier gezeigt nur ein Projekt, beispielsweise "C:\traversal.proj":<br /><br /> `<Project ...>     <ItemGroup>         <ProjectFiles              Include="$            (MSBuildStartupDirectory)            **\*.csproj"/>     </ItemGroup>     <Target Name="build">         <MSBuild             Projects="@(ProjectFiles)"/>     </Target> </Project>`<br /><br /> Geben Sie für die Erstellung an einem beliebigen Punkt in der Struktur Folgendes ein:<br /><br /> `msbuild c:\traversal.proj`<br /><br /> Schließen Sie nicht den abschließenden umgekehrten Schrägstrich in dieser Eigenschaft ein.|Reserviert|  
 |`MSBuildThisFile`|Der Teil von `MSBuildThisFileFullPath`, der den Dateinamen und die Dateierweiterung angibt.|Reserviert|  
 |`MSBuildThisFileDirectory`|Der Teil von `MSBuildThisFileFullPath`, der das Verzeichnis angibt.<br /><br /> Schließen Sie den abschließenden umgekehrten Schrägstrich in den Pfad ein.|Reserviert|  
