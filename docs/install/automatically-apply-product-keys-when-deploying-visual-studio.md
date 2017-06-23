@@ -50,7 +50,7 @@ Sie können den Product Key programmgesteuert als Teil eines Skripts anwenden, d
  Dies ist eine Beispielbefehlszeile für die Anwendung der Lizenz für Visual Studio 2017 Enterprise mit dem MPC 08860 und dem Product Key `AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE`, vorausgesetzt, die Installation erfolgt an einem Standardspeicherort:
 
  ```cmd
- C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\StorePID.exe AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE 08860
+ "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\StorePID.exe" AAAAA-BBBBB-CCCCC-DDDDDD-EEEEEE 08860
  ```
 
  In der folgenden Tabelle werden die MPC-Codes für jede Edition von Visual Studio aufgelistet:
