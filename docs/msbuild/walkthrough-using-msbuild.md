@@ -29,9 +29,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 3ba7680d46345f2b49019659c715cfb418933d39
 ms.openlocfilehash: ecfd08a410983561f3c1e761eb25302b6d9281c4
+ms.contentlocale: de-de
 ms.lasthandoff: 02/22/2017
 
 ---
@@ -482,7 +483,7 @@ $(PropertyName)
 ## <a name="item-metadata"></a>Elementmetadaten  
  Zusätzlich zu den Informationen aus dem Include-Attribut und dem Exclude-Attribut können Elemente Metadaten enthalten. Diese Metadaten können von Aufgaben verwendet werden, die neben dem Elementwert weitere Informationen zu den Elementen erfordern.  
   
- Elementmetadaten werden in der Projektdatei deklariert, indem ein Element mit dem Namen der Metadaten als untergeordnetes Element des Elements erstellt wird. Ein Element kann über&0; (null) oder mehr Metadatenwerte verfügen. Das folgende CSFile-Element weist z. B. Culture-Metadaten mit dem Wert "Fr" auf:  
+ Elementmetadaten werden in der Projektdatei deklariert, indem ein Element mit dem Namen der Metadaten als untergeordnetes Element des Elements erstellt wird. Ein Element kann über 0 (null) oder mehr Metadatenwerte verfügen. Das folgende CSFile-Element weist z. B. Culture-Metadaten mit dem Wert "Fr" auf:  
   
 ```xml  
 <ItemGroup>  
