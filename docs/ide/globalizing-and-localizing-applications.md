@@ -34,18 +34,21 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 6d5beadf7ee6812a3318166adabbbe8e90716341
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: 409becfa400b7275da07fd8ac0035660f8b941eb
+ms.contentlocale: de-de
+ms.lasthandoff: 05/30/2017
 
 ---
-# <a name="globalizing-and-localizing-applications"></a>Globalisieren und Lokalisieren von Anwendungen
+# Globalisieren und Lokalisieren von Anwendungen
+<a id="globalizing-and-localizing-applications" class="xliff"></a>
 Wenn Sie vorhaben, ein Programm international zu vertreiben, müssen Sie in der Entwicklungs- und Entwurfsphase einige Dinge berücksichtigen. Selbst wenn Sie derzeit keine internationale Anwendung planen, können Sie mit geringem Aufwand dafür sorgen, dass Sie später sehr viel Arbeit sparen, sollten Sie Ihre Meinung doch noch ändern. Dank der in [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] verfügbaren Dienste ist es sehr einfach, mit der verwalteten Entwicklung in Visual Studio eine einzelne Anwendung zu entwickeln, die für verschiedene Gebietsschemas geeignet ist.  
   
  Visual Studio war von Anfang an darauf ausgerichtet, mithilfe der in [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] integrierten Dienste die Entwicklung in einem internationalen Umfeld zu erleichtern. Auf den folgenden Seiten können Sie sich einen Überblick über die in Visual Studio verfügbaren Funktionen für die Internationalisierung verschaffen.  
   
-## <a name="in-this-section"></a>In diesem Abschnitt  
+## In diesem Abschnitt
+<a id="in-this-section" class="xliff"></a>  
  [Einführung in internationale Anwendungen basierend auf .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
  Einführung in die Konzepte der Softwareentwicklung für einen internationalen Markt mithilfe von Visual Studio und [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
@@ -55,7 +58,8 @@ Wenn Sie vorhaben, ein Programm international zu vertreiben, müssen Sie in der 
  [Globalisieren von Anwendungen](../ide/globalizing-applications.md)  
  Enthält Links zu Seiten, die Informationen zum Erstellen von Anwendungen enthalten, die mehrere Kulturen unterstützen.  
   
-## <a name="related-sections"></a>Verwandte Abschnitte  
+## Verwandte Abschnitte
+<a id="related-sections" class="xliff"></a>  
  [Globalisieren Ihrer App (HTML)](http://go.microsoft.com/fwlink/?LinkId=258266)  
  Enthält Vorgehensweisen und Richtlinien, die Ihnen bei der Globalisierung und Lokalisierung der mit JavaScript und HTML erstellten [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]-App helfen.  
   
@@ -65,7 +69,7 @@ Wenn Sie vorhaben, ein Programm international zu vertreiben, müssen Sie in der 
  [Empfehlungen für die Entwicklung weltweit einsatzfähiger Anwendungen](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  Enthält Hintergrundinformationen zur Programmierung für den internationalen Markt.  
   
- [Übersicht über die Klassenbibliothek](http://msdn.microsoft.com/Library/7e4c5921-955d-4b06-8709-101873acf157)  
+ [Übersicht über die Klassenbibliothek](/dotnet/standard/class-library-overview)  
  Bietet eine Einführung in die Klassen, Schnittstellen und Werttypen, die den Entwicklungsprozess beschleunigen und optimieren und den Zugriff auf Systemfunktionen ermöglichen.  
   
  <xref:System.Globalization>  

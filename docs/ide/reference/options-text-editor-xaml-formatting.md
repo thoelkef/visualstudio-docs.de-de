@@ -49,19 +49,22 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 7c944afe8c89b8a5e30bf1e5937e848e078954ac
-ms.openlocfilehash: 6594d739b29dcd8a8296f5650fc364f5179bbd98
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: 0d087d735f3db1f1d8fa7f37f049b6208e5242c0
+ms.contentlocale: de-de
+ms.lasthandoff: 05/30/2017
 
 ---
-# <a name="options-text-editor-xaml-formatting"></a>Optionen, Text-Editor, XAML, Formatierung
+# Optionen, Text-Editor, XAML, Formatierung
+<a id="options-text-editor-xaml-formatting" class="xliff"></a>
 Verwenden Sie die **Formatierung**-Eigenschaftenseite, um anzugeben, wie Elemente und Attribute in Ihren XAML-Dokumenten formatiert werden. Klicken Sie zum Öffnen des Dialogfelds **Optionen** auf das Menü **Tools** und anschließend auf **Optionen**. Erweitern Sie für den Zugriff auf die **Formatierung**-Eigenschaftenseite den **Text-Editor**, **XAML** und den **Formatierungs**-Knoten.  
 
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).  
 
-## <a name="auto-formatting-events"></a>Autoformatierungsereignisse  
+## Autoformatierungsereignisse
+<a id="auto-formatting-events" class="xliff"></a>  
  Die automatische Formatierung kann auftreten, wenn eines der folgenden Ereignisse erkannt wird.  
 
 -   Bei Vervollständigung des Endtags oder eines einfachen Tags  
@@ -80,7 +83,8 @@ Verwenden Sie die **Formatierung**-Eigenschaftenseite, um anzugeben, wie Element
 |**Bei Vervollständigung des Starttags**|Automatische Formatierung tritt auf, wenn Sie einen Starttag eingegeben haben.|  
 |**Bei Einfügen aus der Zwischenablage**|Die automatische Formatierung tritt auf, wenn Sie XAML aus der Zwischenablage in XAML-Ansicht einfügen.|  
 
-## <a name="quotation-mark-style"></a>Anführungszeichenformat  
+## Anführungszeichenformat
+<a id="quotation-mark-style" class="xliff"></a>  
  Diese Einstellung gibt an, ob Attributwerte in einfache oder doppelte Anführungszeichen eingeschlossen werden. Die automatische Formatierung und automatische Vervollständigung von IntelliSense verwenden diese Einstellung.  
 
  Nachdem Sie diese Option festgelegt haben, sind nur Attribute betroffen, die später entweder mithilfe des Designers oder manuell in die XAML-Ansicht hinzugefügt werden.  
@@ -90,7 +94,8 @@ Verwenden Sie die **Formatierung**-Eigenschaftenseite, um anzugeben, wie Element
 |**Doppelte Anführungszeichen (")**|Attributwerte werden in doppelte Anführungszeichen eingeschlossen.<br /><br /> `<Button Name="button1">Hello</Button>`|  
 |**Einfache Anführungszeichen (')**|Attributwerte werden in einfache Anführungszeichen eingeschlossen.<br /><br /> `<Button Name='button1'>Hello</Button>`|  
 
-## <a name="tag-wrapping"></a>Tagumbrüche  
+## Tagumbrüche
+<a id="tag-wrapping" class="xliff"></a>  
  Sie können eine Zeilenlänge für Tagumbrüche angeben. Wenn Tagumbrüche aktiviert sind, wird jedes XAML, das später mithilfe des Designers hinzugefügt wird, entsprechend umgebrochen.  
 
 |||  
@@ -98,7 +103,8 @@ Verwenden Sie die **Formatierung**-Eigenschaftenseite, um anzugeben, wie Element
 |**Tags bei Überschreitung der angegebenen Länge umbrechen**|Gibt an, ob Zeilen bei der durch **Länge** angegebenen Zeilenlänge umgebrochen werden.|  
 |**Länge**|Die Anzahl der Zeichen, die eine Zeile enthalten kann. Falls erforderlich, könnten einige XAML-Zeilen die angegebene Zeilenlänge überschreiten.|  
 
-## <a name="attribute-spacing"></a>Attributabstand  
+## Attributabstand
+<a id="attribute-spacing" class="xliff"></a>  
  Mit dieser Einstellung können Sie steuern, wie Attribute im XAML-Dokument angeordnet sind  
 
 |||  
@@ -108,7 +114,8 @@ Verwenden Sie die **Formatierung**-Eigenschaftenseite, um anzugeben, wie Element
 |**Jedes Attribut in einer eigenen Zeile anordnen**|Jedes Attribut umfasst seine eigene Zeile. Dies ist nützlich, wenn viele Attribute vorhanden sind.<br /><br /> `<Button`<br /><br /> `Height="23"`<br /><br /> `Name="button1"`<br /><br /> `Width="75">Hello</Button>`|  
 |**Erstes Attribut in derselben Zeile wie Starttag positionieren**|Wenn dieses Kontrollkästchen aktiviert ist, wird das erste Attribut auf derselben Zeile wie der Starttag des Elements angezeigt.<br /><br /> `<Button Height="23"`<br /><br /> `Name="button1"`<br /><br /> `Width="75">Hello</Button>`|  
 
-## <a name="element-spacing"></a>Elementabstand  
+## Elementabstand
+<a id="element-spacing" class="xliff"></a>  
  Mit dieser Einstellung können Sie steuern, wie Attribute in Ihrem XAML-Dokument angeordnet sind.  
 
 |||  
@@ -117,7 +124,8 @@ Verwenden Sie die **Formatierung**-Eigenschaftenseite, um anzugeben, wie Element
 |**Mehrere Leerzeilen im Inhalt auf eine Zeile reduzieren**|Leerzeilen im Elementinhalt werden zu einer einzelnen Zeile reduziert.<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>`|  
 |**Leerzeilen im Inhalt entfernen**|Alle Leerzeilen im Elementinhalt werden entfernt.<br /><br /> `<Grid>`<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> `</Grid>`|  
 
-## <a name="miscellaneous-section-auto-insert"></a>Abschnitt Sonstiges, Automatisch einfügen  
+## Abschnitt Sonstiges, Automatisch einfügen
+<a id="miscellaneous-section-auto-insert" class="xliff"></a>  
  Verwenden Sie diese Einstellung, um zu steuern, wann Tags und Anführungszeichen automatisch generiert werden.  
 
 |||  
@@ -127,8 +135,9 @@ Verwenden Sie die **Formatierung**-Eigenschaftenseite, um anzugeben, wie Element
 |**Schließende geschweifte Klammern für MarkupExtensions**|Gibt an, ob eine Markuperweiterung schließende geschweifte Klammer (}) automatisch generiert wird, wenn Sie das öffnende geschweifte Klammerzeichen ({) eingeben.|  
 |**Kommas zum Trennen von MarkupExtension-Parametern**|Gibt an, ob Kommas generiert werden, wenn Sie mehr als einen Parameter in einer Markuperweiterung eingeben.|  
 
-## <a name="see-also"></a>Siehe auch  
- [XAML in WPF](http://msdn.microsoft.com/Library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)   
+## Siehe auch
+<a id="see-also" class="xliff"></a>  
+ [XAML in WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)   
  [Gewusst wie: Ändern von XAML-Ansichtseinstellungen](http://msdn.microsoft.com/en-us/aee87c79-ca01-4f84-8fb7-a9e47048ee47)   
  [Exemplarische Vorgehensweisen zu XAML und Code](http://msdn.microsoft.com/en-us/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)
 

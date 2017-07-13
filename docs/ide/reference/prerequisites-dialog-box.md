@@ -36,18 +36,21 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: b88c533d613d531a7dcc24e0610e2fb2a7a3d880
-ms.lasthandoff: 04/05/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 8bf0b097be929b30627e0f1139c6e0b145933ab4
+ms.openlocfilehash: 5a8237e5c437878b22bd3c67a3a4ba2cdc3fa126
+ms.contentlocale: de-de
+ms.lasthandoff: 05/26/2017
 
 ---
-# <a name="prerequisites-dialog-box"></a>Prerequisites Dialog Box
+# Prerequisites Dialog Box
+<a id="prerequisites-dialog-box" class="xliff"></a>
 In diesem Dialogfeld wird angegeben, welche erforderlichen Komponenten installiert werden, wie die Installation ausgeführt wird, und in welcher Reihenfolge die Pakete installiert werden.  
   
  Wählen Sie zum Aufrufen des Dialogfelds im **Projektmappen-Explorer** einen Projektknoten aus, und klicken Sie anschließend im Menü **Projekt** auf **Eigenschaften**. Sobald der **Projekt-Designer** angezeigt wird, klicken Sie auf die Registerkarte **Veröffentlichen** . Klicken Sie auf der Seite **Veröffentlichen** auf **Erforderliche Komponenten**. Klicken Sie bei Setupprojekten im Menü **Projekt** auf **Eigenschaften**. Wenn das Dialogfeld **Eigenschaftenseiten** angezeigt wird, klicken Sie auf **Erforderliche Komponenten**.  
   
-## <a name="uielement-list"></a>UIElement-Liste  
+## UIElement-Liste
+<a id="uielement-list" class="xliff"></a>  
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
@@ -58,15 +61,16 @@ In diesem Dialogfeld wird angegeben, welche erforderlichen Komponenten installie
 |**Erforderliche Komponenten von demselben Speicherort wie Anwendung herunterladen**|Dies gibt an, dass die erforderlichen Komponenten vom gleichen Speicherort wie die Anwendung installiert werden müssen. Dadurch werden alle erforderlichen Pakete an den Speicherort für die Veröffentlichung kopiert. Damit diese Option funktioniert, müssen sich die erforderlichen Pakete auf dem Entwicklungscomputer befinden.|  
 |**Erforderliche Komponenten von folgendem Speicherort herunterladen**|Dies gibt an, dass die erforderlichen Komponenten vom ausgewählten Speicherort aus installiert werden müssen. Mithilfe der Schaltfläche **Durchsuche**n können Sie einen Speicherort auswählen.|  
   
-## <a name="prerequisites-information"></a>Informationen über erforderliche Komponenten  
+## Informationen über erforderliche Komponenten
+<a id="prerequisites-information" class="xliff"></a>  
  Die im Dialogfeld **Erforderliche Komponenten** aufgeführten erforderlichen Komponenten können von den in der folgenden Liste genannten abweichen. Die im Dialogfeld **Erforderliche Komponenten** aufgelisteten Pakete mit erforderlichen Komponenten werden automatisch festgelegt, wenn Sie das Dialogfeld zum ersten Mal öffnen. Wenn im Nachhinein Änderungen am Zielframework des Projekts vorgenommen werden, müssen die erforderlichen Komponenten manuell ausgewählt werden, um dem neuen Zielframework zu entsprechen.  
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
 |**.NET Framework 3.5 SP1**|Mit diesem Paket wird Folgendes installiert:<br /><br /> – .NET Framework-Versionen 2.0, 3.0 und 3.5.<br />– Unterstützung für alle .NET Framework-Versionen auf 32-Bit- und 64-Bit-Betriebssystemen (x86 und x64).<br />– Sprachpakete für jede .NET Framework-Version, die mit dem Paket installiert wird.<br />– Service Packs für .NET Framework 2.0 und 3.0.<br /><br /> .NET Framework 3.0 ist im Lieferumfang von Windows Vista enthalten, und .NET Framework 3.5 ist in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] enthalten. .NET Framework 3.5 ist für alle Visual Basic- und Visual C#-Projekte erforderlich, die explizit für 32-Bit-Betriebssysteme kompiliert werden und für die das Zielframework auf **.NET Framework 3.5** festgelegt ist sowie für alle Visual Basic- und Visual C#-Projekte, die für 64-Bit-Betriebssysteme kompiliert werden. (IA64 wird nicht unterstützt) Beachten Sie, dass Visual Basic-Projekte und Visual C#-Projekte standardmäßig für jede CPU-Architektur kompiliert sind. Weitere Informationen finden Sie unter [Übersicht über die Ausrichtung auf mehrere Zielversionen in Visual Studio](../../ide/visual-studio-multi-targeting-overview.md), [Verteilen von .NET Framework mit Ihrer Anwendung](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287) und [Bereitstellen der erforderlichen Komponenten für 64-Bit-Anwendungen](../../deployment/deploying-prerequisites-for-64-bit-applications.md).<br /><br /> Dieses Element ist standardmäßig ausgewählt.|  
-|**.NET Framework 3.5 SP1 Client Profile**|Das .NET Framework Client Profile ist ein Bestandteil von .NET Framework 3.5 SP1, das auf Clientanwendungen ausgerichtet ist. Es bietet eine optimierte Auswahl der Funktionen von Windows Presentation Foundation (WPF), Windows Forms, Windows Communication Foundation (WCF) und ClickOnce-Funktionen. Dadurch werden schnelle Bereitstellungsszenarien für WPF, Windows Forms, WCF und Konsolenanwendungen ermöglicht, für die auf .NET Framework Client Profile ausgerichtet sind. Weitere Informationen finden Sie unter [.NET Framework Client Profile](http://msdn.microsoft.com/Library/f0219919-1f02-4588-8704-327a62fd91f1).|  
+|**.NET Framework 3.5 SP1 Client Profile**|Das .NET Framework Client Profile ist ein Bestandteil von .NET Framework 3.5 SP1, das auf Clientanwendungen ausgerichtet ist. Es bietet eine optimierte Auswahl der Funktionen von Windows Presentation Foundation (WPF), Windows Forms, Windows Communication Foundation (WCF) und ClickOnce-Funktionen. Dadurch werden schnelle Bereitstellungsszenarien für WPF, Windows Forms, WCF und Konsolenanwendungen ermöglicht, für die auf .NET Framework Client Profile ausgerichtet sind. Weitere Informationen finden Sie unter [.NET Framework Client Profile](/dotnet/framework/deployment/client-profile).|  
 |**Microsoft .NET Framework 4 (x86 und x64)**|Mit dem Paket wird das .NET Framework 4 sowohl für die x86- als auch die x64-Plattform installiert.<br /><br /> Weitere Informationen finden Sie unter [Übersicht über die Ausrichtung auf mehrere Zielversionen in Visual Studio](../../ide/visual-studio-multi-targeting-overview.md), [Verteilen von .NET Framework mit Ihrer Anwendung](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287) und [Bereitstellen der erforderlichen Komponenten für 64-Bit-Anwendungen](../../deployment/deploying-prerequisites-for-64-bit-applications.md).<br /><br /> Dieses Element ist standardmäßig ausgewählt.|  
-|**Microsoft .NET Framework 4 Client Profile (x86 und x64)**|Das .NET Framework 4 Client Profile ist ein Bestandteil von .NET Framework 4, das auf Clientanwendungen ausgerichtet ist. Es bietet eine optimierte Auswahl der Funktionen von Windows Presentation Foundation (WPF), Windows Forms, Windows Communication Foundation (WCF) und ClickOnce-Funktionen. Dadurch werden schnelle Bereitstellungsszenarien für WPF Windows Forms und Konsolenanwendungen ermöglicht, für die auf .NET Framework 4 Client Profile ausgerichtet sind. Weitere Informationen finden Sie unter [.NET Framework Client Profile](http://msdn.microsoft.com/Library/f0219919-1f02-4588-8704-327a62fd91f1).|  
+|**Microsoft .NET Framework 4 Client Profile (x86 und x64)**|Das .NET Framework 4 Client Profile ist ein Bestandteil von .NET Framework 4, das auf Clientanwendungen ausgerichtet ist. Es bietet eine optimierte Auswahl der Funktionen von Windows Presentation Foundation (WPF), Windows Forms, Windows Communication Foundation (WCF) und ClickOnce-Funktionen. Dadurch werden schnelle Bereitstellungsszenarien für WPF Windows Forms und Konsolenanwendungen ermöglicht, für die auf .NET Framework 4 Client Profile ausgerichtet sind. Weitere Informationen finden Sie unter [.NET Framework Client Profile](/dotnet/framework/deployment/client-profile).|  
 |**Primäre Interopassemblys für Microsoft Office 2007**|Mit diesem Paket werden die primären Interopassemblys für Microsoft Office 2007-Produkte installiert. Mithilfe der primären Interopassembly kann verwalteter Code mit dem COM-basierten Objektmodell einer Microsoft Office-Anwendung interagieren. Weitere Informationen finden Sie unter [Primäre Interop-Assemblys in Office](/office-dev/office-dev/office-primary-interop-assemblies).|  
 |**Microsoft Visual Basic PowerPacks Version 10.0**|Power Packs sind Add-Ins, Steuerelemente, Komponenten und Tools zur Unterstützung bei der Entwicklung von Visual Basic-Anwendungen. In dieser Version ist die Komponente <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm> zum Drucken des Inhalts eines Windows Forms und die Druckerkompatibilitätsbibliothek enthalten, mit der Visual Basic 6.0-Printer-Code unverändert ausgeführt werden kann.|  
 |**Microsoft Visual F#-Laufzeit für .NET 2.0**|Mit diesem Paket werden die Visual F#-Laufzeitbibliotheken für die x86-und x64-Betriebssysteme installiert, die funktionale Programmierung sowie herkömmliche objektorientierte und obligatorische (verfahrensbezogene) Programmierung unterstützen. Dieses Paket muss installiert werden, wenn die Anwendung oder deren Komponenten in Visual F# und .NET Framework 2.0, .NET Framework 3.0 oder .NET Framework 3.5 erstellt werden.<br /><br /> Weitere Informationen finden Sie unter [F#-Sprachreferenz](http://msdn.microsoft.com/Library/16b706f8-b5f2-4ff7-b2c1-64df33cd6adf).|  
@@ -81,7 +85,8 @@ In diesem Dialogfeld wird angegeben, welche erforderlichen Komponenten installie
 |**Windows Installer 3.1**|Mit diesem Paket wird die verteilbare Version 3.1 von Microsoft Windows Installer für die Installation von Windows Installer-Setupprojekten installiert. Es ist unter Windows Server 2003 mit SP1 und höher vorinstalliert.<br /><br /> Dieses Element ist standardmäßig ausgewählt.|  
 |**Windows Installer 4.5**|Mit diesem Paket wird die verteilbare Version 4.5 von Microsoft Windows Installer für die Installation von Windows Installer-Setupprojekten installiert.|  
   
-## <a name="see-also"></a>Siehe auch  
+## Siehe auch
+<a id="see-also" class="xliff"></a>  
  [Seite „Veröffentlichen“, Projekt-Designer](../../ide/reference/publish-page-project-designer.md)   
  [Vorbedingungen für die Anwendungsbereitstellung](../../deployment/application-deployment-prerequisites.md)   
  [Verteilen des .NET Framework](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287)   

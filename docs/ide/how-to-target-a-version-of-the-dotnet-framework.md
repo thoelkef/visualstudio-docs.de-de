@@ -31,17 +31,18 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 7ebf1dfaa3753f1a1908b0327e8ed938115f1f13
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: eea7cb983f264fb58a4b1131f84f3ec1cb196be5
 ms.contentlocale: de-de
-ms.lasthandoff: 02/22/2017
+ms.lasthandoff: 05/30/2017
 
 ---
-# <a name="how-to-target-a-version-of-the-net-framework"></a>Gewusst wie: .NET Framework-Version als Ziel
+# Gewusst wie: .NET Framework-Version als Ziel
+<a id="how-to-target-a-version-of-the-net-framework" class="xliff"></a>
 In diesem Dokument wird beschrieben, wie eine bestimmte .NET Framework-Version für ein Projekt gewählt wird und wie diese Zielversion in vorhandenen Visual Basic-, Visual C#- oder Visual F#-Projekten geändert werden kann.  
   
 > [!IMPORTANT]
->  Weitere Informationen zum Ändern der Zielversion für C++-Projekte finden Sie unter [Vorgehensweise: Ändern des Zielframeworks und Plattformtoolset](http://msdn.microsoft.com/Library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
+>  Weitere Informationen zum Ändern der Zielversion für C++-Projekte finden Sie unter [Vorgehensweise: Ändern des Zielframeworks und Plattformtoolset](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).  
   
  **In diesem Thema**  
   
@@ -55,7 +56,8 @@ In diesem Dokument wird beschrieben, wie eine bestimmte .NET Framework-Version f
 > [!NOTE]
 >  In den Express-Editionen von Visual Studio müssen Sie zuerst das Projekt erstellen und können dann erst die Zielversion ändern, wie unter [Ändern der Zielversion](../ide/how-to-target-a-version-of-the-dotnet-framework.md#bkmk_existing) weiter unten in diesem Thema beschrieben.  
   
-#### <a name="to-target-a-version-when-you-create-a-project"></a>So richten Sie ein Projekt bei der Erstellung auf eine Zielversion aus  
+#### So richten Sie ein Projekt bei der Erstellung auf eine Zielversion aus
+<a id="to-target-a-version-when-you-create-a-project" class="xliff"></a>  
   
 1.  Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.  
   
@@ -71,14 +73,15 @@ In diesem Dokument wird beschrieben, wie eine bestimmte .NET Framework-Version f
 ##  <a name="bkmk_existing"></a> Ändern der Zielversion  
  Die folgenden Schritte zeigen, wie eine .NET Framework-Zielversion in einem vorhandenen Visual Basic-, Visual C#- oder Visual F#-Projekt geändert wird.  
   
-#### <a name="to-change-the-targeted-version"></a>So ändern Sie die Zielversion  
+#### So ändern Sie die Zielversion
+<a id="to-change-the-targeted-version" class="xliff"></a>  
   
 1.  Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das zu ändernde Projekt, und wählen Sie **Eigenschaften** aus.  
   
      ![Visual Studio Eigenschaften des Projektmappen-Explorer](../ide/media/vs_slnexplorer_properties.png "vs_slnExplorer_Properties")  
   
     > [!IMPORTANT]
-    >  Weitere Informationen zum Ändern der Zielversion für C++-Projekte finden Sie unter [Vorgehensweise: Ändern des Zielframeworks und Plattformtoolset](http://msdn.microsoft.com/Library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
+    >  Weitere Informationen zum Ändern der Zielversion für C++-Projekte finden Sie unter [Vorgehensweise: Ändern des Zielframeworks und Plattformtoolset](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).  
   
 2.  Im linken Bereich des Fensters Eigenschaften wählen Sie die Registerkarte **Anwendung** aus.  
   
@@ -96,11 +99,12 @@ In diesem Dokument wird beschrieben, wie eine bestimmte .NET Framework-Version f
     > [!NOTE]
     >  Sollte der Code Verweise auf eine .NET Framework-Version enthalten, die nicht die Zielversion ist, werden möglicherweise Fehlermeldungen angezeigt, wenn Sie den Code kompilieren oder ausführen. Um diese Fehler zu beheben, müssen Sie die Verweise ändern. Weitere Informationen finden Sie unter [Problembehandlung bei .NET Framework-Zielversionsfehlern](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md).  
   
-## <a name="see-also"></a>Siehe auch  
+## Siehe auch
+<a id="see-also" class="xliff"></a>  
  [Übersicht über die Ausrichtung auf mehrere Zielversionen in Visual Studio](../ide/visual-studio-multi-targeting-overview.md)   
  [.NET Framework Multi-Targeting for ASP.NET Web Projects (.NET-Framework-Zielversionen für ASP.NET-Webprojekte)](http://msdn.microsoft.com/Library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)   
  [Problembehandlung bei .NET Framework-Zielversionsfehlern](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)   
  [Seite „Anwendung“, Projekt-Designer (C#)](../ide/reference/application-page-project-designer-csharp.md)   
  [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
  [Konfigurieren von Projekten](http://msdn.microsoft.com/Library/a1489abb-6294-4f8f-b71f-2cb126393526)   
- [Vorgehensweise: Ändern des Zielframeworks und des Plattformtoolsets](http://msdn.microsoft.com/Library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)
+ [Vorgehensweise: Ändern des Zielframeworks und des Plattformtoolsets](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)
