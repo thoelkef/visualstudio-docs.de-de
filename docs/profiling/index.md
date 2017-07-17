@@ -1,13 +1,17 @@
 ---
 layout: LandingPage
-title: Profilerstellung in Visual Studio
-translationtype: Human Translation
-ms.sourcegitcommit: dac3cb1d7767c2ff76ac25f6a486ad30a8d54831
-ms.openlocfilehash: 06edcb5e4d6656b3b5c3441879bc48951b0585da
-ms.lasthandoff: 03/03/2017
+title: "Profilerstellung für Ihre Apps mit Visual Studio"
+description: "Erfahren Sie, wie Sie Visual Studio 2017 für Profilerstellung für die Leistung Ihrer Anwendungen, Dienste und Tools in der Sprache Ihrer Wahl verwenden können."
+ms.technology: vs-ide-debug
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
+ms.openlocfilehash: 6b54253dadb80dd6881ba366b5bb466f4eae7706
+ms.contentlocale: de-de
+ms.lasthandoff: 06/30/2017
 
 ---
-#<a name="profiling-in-visual-studio"></a>Profilerstellung in Visual Studio
+# Profilerstellung in Visual Studio
+<a id="profiling-in-visual-studio" class="xliff"></a>
 
 Profilerstellungs- und Diagnosetools helfen bei der Diagnose von Speicher- und CPU-Auslastung und anderen Problemen auf Anwendungsebene. Mit diesen Tools können Sie Daten (z.B. Variablenwerte, Funktionsaufrufe und Ereignisse) über einen Zeitraum sammeln, in dem Sie Ihre Anwendung im Debugger ausführen. Sie können den Status Ihrer Anwendung an verschiedenen Punkten der Codeausführung anzeigen. 
 
