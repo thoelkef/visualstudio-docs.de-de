@@ -35,9 +35,10 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: 7e848a57962636a8ca346e809f3dadad675a7963
+ms.contentlocale: de-de
 ms.lasthandoff: 02/22/2017
 
 ---
@@ -209,13 +210,13 @@ ms.lasthandoff: 02/22/2017
         > [!IMPORTANT]
         >  Die genauen Speicherauslastungswerte für die Heapgröße hängen vom Debugziel ab.  
   
-    -   Die Anzahl der Objekte im Heap (angezeigt durch den roten Pfeil nach oben auf der rechten Seite) hat sich verglichen mit Momentaufnahme Nr. 1 erhöht. Ein Objekt wurde hinzugefügt (+&1;), und es wurden keine Objekte entfernt (–&0;).  
+    -   Die Anzahl der Objekte im Heap (angezeigt durch den roten Pfeil nach oben auf der rechten Seite) hat sich verglichen mit Momentaufnahme Nr. 1 erhöht. Ein Objekt wurde hinzugefügt (+ 1), und es wurden keine Objekte entfernt (– 0).  
   
      Momentaufnahme 3 zeigt Folgendes:  
   
     -   Die Heapgröße hat sich verglichen mit Momentaufnahme Nr. 2 wieder um mehrere hundert Bytes erhöht.  
   
-    -   Die Anzahl der Objekte im Heap hat verglichen mit Momentaufnahme Nr. 2 wieder zugenommen. Ein Objekt wurde hinzugefügt (+&1;), und es wurden keine Objekte entfernt (–&0;).  
+    -   Die Anzahl der Objekte im Heap hat verglichen mit Momentaufnahme Nr. 2 wieder zugenommen. Ein Objekt wurde hinzugefügt (+ 1), und es wurden keine Objekte entfernt (– 0).  
   
 13. Wählen Sie in Momentaufnahme Nr. 3 den Linktext auf der rechten Seite aus, der einen Wert von +1/-0 neben dem roten Pfeil nach oben anzeigt.  
   

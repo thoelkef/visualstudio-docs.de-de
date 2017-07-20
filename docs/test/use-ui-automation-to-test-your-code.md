@@ -36,16 +36,17 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 753a39940ba32052cff14460f007a8f8a2d191dd
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 0719aac1c8a0b59b34234aeeee8ec0a3ce418168
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes 
 Automatisierte Tests, die die Anwendung über die Benutzeroberfläche (UI) steuern, werden als *Tests der programmierten UI* (CUITs) bezeichnet. Zu diesen Tests gehören Funktionstests der Benutzeroberflächen-Steuerelemente. Mithilfe dieser Tests können Sie überprüfen, ob die gesamte Anwendung einschließlich der Benutzeroberfläche ordnungsgemäß funktioniert. Tests der codierten UI sind besonders bei der Überprüfung oder einer anderen Logik der Benutzeroberfläche hilfreich, beispielsweise einer Webseite. Außerdem werden sie häufig zum Automatisieren eines vorhandenen manuellen Tests verwendet.  
   
- Wie in der folgenden Abbildung dargestellt könnte es sich bei einer typischen Entwicklungsumgebung um eine Umgebung handeln, bei der Sie einfach zu Beginn die Anwendung (F5) erstellen und durch die UI-Steuerelemente klicken, um sicherzustellen, dass alles ordnungsgemäß funktioniert. Anschließend können Sie einen codierten Test ausführen, statt die Anwendung weiterhin manuell zu testen. Abhängig von den jeweiligen in der Anwendung getesteten Funktionen können Sie entweder Code für einen Funktions- oder einen Integrationstest schreiben und festlegen, ob Tests auf Benutzeroberflächenebene einbezogen werden. Wenn Sie einfach auf einen Teil der Geschäftslogik direkt zugreifen möchten, können Sie Code für einen Komponententest schreiben. Unter bestimmten Umständen, kann es jedoch nützlich sein, Tests der verschiedenen UI-Steuerelemente in die Anwendung einzubeziehen. Ein Test der programmierten UI kann das ursprüngliche Szenario (F5) automatisieren und überprüfen, ob Codeänderungen die Funktionalität der Anwendung beeinflussen.  
+ Wie in der folgenden Abbildung dargestellt könnte es sich bei einer typischen Entwicklungsumgebung um eine Umgebung handeln, bei der Sie einfach zu Beginn die Anwendung (F5) erstellen und durch die UI-Steuerelemente klicken, um sicherzustellen, dass alles ordnungsgemäß funktioniert. Anschließend können Sie einen codierten Test erstellen, statt die Anwendung weiterhin manuell zu testen. Abhängig von den jeweiligen in der Anwendung getesteten Funktionen können Sie entweder Code für einen Funktions- oder einen Integrationstest schreiben und festlegen, ob Tests auf Benutzeroberflächenebene einbezogen werden. Wenn Sie einfach auf einen Teil der Geschäftslogik direkt zugreifen möchten, können Sie Code für einen Komponententest schreiben. Unter bestimmten Umständen, kann es jedoch nützlich sein, Tests der verschiedenen UI-Steuerelemente in die Anwendung einzubeziehen. Ein Test der programmierten UI kann das ursprüngliche Szenario (F5) automatisieren und überprüfen, ob Codeänderungen die Funktionalität der Anwendung beeinflussen.  
   
  ![Test während der Anwendungsentwicklung](../test/media/cuit_overview.png "CUIT_Overview")  
   
@@ -87,7 +88,7 @@ Automatisierte Tests, die die Anwendung über die Benutzeroberfläche (UI) steue
   
      Tests der programmierten UI müssen in ein Testprojekt für programmierte UI integriert sein. Erstellen Sie ein Testprojekt der programmierten UI (sofern noch nicht vorhanden). Wählen Sie im **Projektmappen-Explorer** im Kontextmenü der Projektmappe **Hinzufügen**, **Neues Projekt** und anschließend entweder **Visual Basic** oder **Visual C#** aus. Wählen Sie dann **Test**, **Test der programmierten UI** aus.  
   
-    -   *Die Projektvorlagen für**Tests der programmierten UI**werden nicht angezeigt.*  
+    -   *Die Projektvorlagen für **Tests der programmierten UI** werden nicht angezeigt.*  
   
          Möglicherweise verwenden Sie eine Version von Visual Studio, die Tests der programmierten UI nicht unterstützt. Zum Erstellen von Tests der programmierten UI müssen Sie Visual Studio Enterprise verwenden.  
   
@@ -166,7 +167,7 @@ Automatisierte Tests, die die Anwendung über die Benutzeroberfläche (UI) steue
   
 8.  **Führen Sie den Test aus**.  
   
-     Verwenden Sie Test-Explorer, oder öffnen Sie das Kontextmenü in der Testmethode, und wählen Sie **Tests ausführen** aus. Weitere Informationen zum Ausführen von Tests finden Sie unter [Run unit tests with Test Explorer (Ausführen von Komponententests mit dem Test-Explorer)](../test/run-unit-tests-with-test-explorer.md) und *Weitere Optionen zum Ausführen von Tests der programmierten UI* im Abschnitt [Weitere Informationen](#VerifyCodeUsingCUITWhatsNext) am Ende dieses Themas.  
+     Verwenden Sie Test-Explorer, oder öffnen Sie das Kontextmenü in der Testmethode, und wählen Sie **Tests ausführen** aus. Weitere Informationen zum Ausführen von Tests finden Sie unter [Ausführen von Komponententests mit dem Test-Explorer](../test/run-unit-tests-with-test-explorer.md) und *Weitere Optionen zum Ausführen von Tests der programmierten UI* im Abschnitt [Ausblick](#VerifyCodeUsingCUITWhatsNext) am Ende dieses Themas.  
   
  Die restlichen Abschnitten dieses Themas enthalten weitere Informationen über die Schritte in dieser Prozedur.  
   
@@ -184,7 +185,7 @@ Automatisierte Tests, die die Anwendung über die Benutzeroberfläche (UI) steue
 -   ![Erforderliche Komponente](../test/media/prereq.png "Prereq") Sie können eine Testbereinigungsmethode hinzufügen, die durch ein [TestCleanup]-Attribut gekennzeichnet ist, mit dem am Ende jeder Testmethode Code ausgeführt wird. Zum Beispiel kann die Methode zum Schließen der Anwendung mit der TestCleanup-Methode aufgerufen werden.  
   
 ###  <a name="VerifyingCodeUsingCUITGenerateAssertions"></a> Überprüfen der Eigenschaften von UI-Steuerelementen  
- Mithilfe des **Generators für Tests der programmierten UI** können Sie der <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> ein Benutzeroberflächensteuerelement (UI) für den Test hinzufügen oder Code für eine Validierungsmethode generieren, in der eine Assertion für ein UI-Steuerelement verwendet wird.  
+ Mithilfe des **Generators für den Test der programmierten UI** können Sie der <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>-Klasse für den Test ein Steuerelement für die Benutzeroberfläche (UI) hinzufügen oder Code für eine Validierungsmethode generieren, in der eine Assertion für ein UI-Steuerelement verwendet wird.  
   
  Wählen Sie zum Generieren von Assertionen für die UI-Steuerelemente im Generator für Tests der programmierten UI das Tool **Assertionen hinzufügen** aus, und ziehen es auf das Steuerelement der getesteten Anwendung, die Sie überprüfen möchten. Lassen Sie die Maustaste los, sobald das Feld das Steuerelement enthält. Der Code der Steuerelementklasse wird sofort in der Datei `UIMap.Designer.cs` erstellt.  
   
@@ -381,7 +382,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
     public partial class UIMap // Same partial class  
     {  
       /// <summary>  
-      /// Add two numbers – parameterized version  
+      /// Add two numbers - parameterized version  
       /// </summary>  
       public void AddTwoNumbers(int firstNumber, int secondNumber)  
       { ...   // Code modified to use parameters.  
@@ -408,21 +409,21 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   
  **Zugreifen auf Aktionen von UI-Teststeuerelementen**  
   
- Verwenden Sie zum Ausführen von Aktionen für UI-Teststeuerelementen wie Mausklicks oder Tastaturaktionen die Methoden in den Klassen <xref:Microsoft.VisualStudio.TestTools.UITesting.Mouse> und <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard>:  
+ Verwenden Sie zum Ausführen von Aktionen für UI-Teststeuerelemente, z. B. Mausklicks oder Tastaturaktionen, die Methoden in der <xref:Microsoft.VisualStudio.TestTools.UITesting.Mouse>-Klasse und in der <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard>-Klasse:  
   
--   Verwenden Sie zum Ausführen von mausorientierten Aktionen für UI-Teststeuerelemente wie Mausklicks <xref:Microsoft.VisualStudio.TestTools.UITesting.Mouse.Click%2A>.  
+-   Um eine mausorientierte Aktion, z. B. einen Mausklick, für ein UI-Teststeuerelement auszuführen, verwenden Sie <xref:Microsoft.VisualStudio.TestTools.UITesting.Mouse.Click%2A>.  
   
      `Mouse.Click(buttonCancel);`  
   
--   Verwenden Sie zum Ausführen von tastaturorientierten Aktionen wie die Eingabe in ein Bearbeitungssteuerelement <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A>.  
+-   Um eine tastaturorientierte Aktion, z. B. die Eingabe in ein Bearbeitungssteuerelement über die Tastatur, auszuführen, verwenden Sie <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A>.  
   
      `Keyboard.SendKeys(textBoxDestination, @"C:\Temp\Output.txt");`  
   
  **Zugreifen auf Eigenschaften von UI-Teststeuerelementen**  
   
- Zum Abrufen und Festlegen von Eigenschaftswerten, die für UI-Steuerelemente gelten, können Sie die Werte der Eigenschaften eines Steuerelements direkt abrufen bzw. festlegen oder Sie können die Methoden <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A?displayProperty=fullName> und <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A?displayProperty=fullName> mit dem Namen der jeweiligen Eigenschaft verwenden, die Sie abrufen oder festlegen möchten.  
+ Um für UI-Steuerelemente bestimmte Eigenschaftswerte abzurufen und festzulegen, können Sie die Werte und Eigenschaften eines Steuerelements direkt abrufen und festlegen, oder Sie können die <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A?displayProperty=fullName>-Methode und die <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A?displayProperty=fullName>-Methode mit dem Namen der speziellen Eigenschaft verwenden, die Sie Sie abrufen oder festlegen möchten.  
   
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> gibt ein Objekt zurück, das in den entsprechenden <xref:System.Type> umgewandelt werden kann. <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A> akzeptiert ein Objekt für den Wert der Eigenschaft.  
+ <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> gibt ein Objekt zurück, das anschließend in das entsprechende <xref:System.Type>-Objekt umgewandelt werden kann. <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A> akzeptiert ein Objekt für den Wert der Eigenschaft.  
   
 ##### <a name="to-get-or-set-properties-from-ui-test-controls-directly"></a>So rufen Sie Eigenschaften von UI-Teststeuerelementen ab oder legen sie fest  
   
@@ -435,11 +436,11 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   
 ##### <a name="to-get-properties-from-ui-test-controls"></a>So rufen Sie Eigenschaften aus UI-Teststeuerelementen ab  
   
--   Verwenden Sie zum Abrufen eines Eigenschaftswerts aus einem Steuerelement <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A>.  
+-   Um einen Eigenschaftswert von einem Steuerelement abzurufen, verwenden Sie <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A>.  
   
 -   Um die Eigenschaft des abzurufenden Steuerelements anzugeben, verwenden Sie die entsprechende Zeichenfolge aus der `PropertyNames`-Klasse in jedem Steuerelement als Parameter für <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A>.  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> gibt den entsprechenden Datentyp zurück. Dieser Rückgabewert wird jedoch in ein <xref:System.Object> umgewandelt. Das zurückgegebene <xref:System.Object> muss dann in den entsprechenden Typ umgewandelt werden.  
+-   <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> gibt den entsprechenden Datentyp zurück, aber dieser Rückgabewert wird in ein <xref:System.Object> umgewandelt. Das zurückgegebene <xref:System.Object> muss dann in den entsprechenden Typ umgewandelt werden.  
   
      Beispiel:  
   
@@ -447,9 +448,9 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   
 ##### <a name="to-set-properties-for-ui-test-controls"></a>So legen Sie Eigenschaften für UI-Teststeuerelemente fest  
   
--   Verwenden Sie zum Festlegen einer Eigenschaft in einem Steuerelement <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>.  
+-   Zum Festlegen einer Eigenschaft in einem Steuerelement verwenden Sie <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>.  
   
--   Verwenden Sie zum Angeben der Eigenschaft des festzulegenden Steuerelements die entsprechende Zeichenfolge aus der `PropertyNames`-Klasse als ersten Parameter für <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>, wobei der Eigenschaftswert als zweiter Parameter verwendet wird.  
+-   Um die Eigenschaft des festzulegenden Steuerelements anzugeben, verwenden Sie die entsprechende Zeichenfolge aus der `PropertyNames`-Klasse als ersten Parameter für <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>, wobei der Eigenschaftswert als zweiter Parameter fungiert.  
   
      Beispiel:  
   
@@ -458,7 +459,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 ###  <a name="debugging"></a> Debuggen  
  Sie können Tests der programmierten UI mithilfe von Testprotokollen der programmierten UI analysieren. Testprotokolle für codierte UI filtern wichtige Informationen zum ausgeführten Test der codierten UI und zeichnen diese auf. Durch das Format der Protokolle können Sie Probleme schnell debuggen. Weitere Informationen finden Sie unter [Analyzing Coded UI Tests Using Coded UI Test Logs (Analysieren von Tests der programmierten UI mithilfe der Testprotokolle der programmierten UI)](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).  
   
-##  <a name="VerifyCodeUsingCUITWhatsNext"></a> Weitere Informationen  
+##  <a name="VerifyCodeUsingCUITWhatsNext"></a> Ausblick  
  **Weitere Optionen zum Ausführen von Tests der programmierten UI:** Sie können Tests der programmierten UI direkt in Visual Studio ausführen, wie weiter oben in diesem Thema beschrieben. Außerdem können Sie automatisierte UI-Tests von [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] oder [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] ausführen. Wenn Tests der programmierten UI automatisiert werden, müssen sie im Gegensatz zu anderen automatisierten Tests bei der Ausführung mit dem Desktop interagieren.  
   
 -   [Gewusst wie: Ausführen von Tests in Microsoft Visual Studio](http://msdn.microsoft.com/Library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)  
@@ -486,14 +487,14 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 ## <a name="external-resources"></a>Externe Ressourcen  
   
 ### <a name="guidance"></a>Empfehlungen  
- [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests)](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Testing for Continuous Delivery with Visual Studio 2012 - Chapter 2: Unit Testing: Testing the Inside (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests)](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
- [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 5 Automatisieren von Systemtests)](http://go.microsoft.com/fwlink/?LinkID=255196)  
+ [Testing for Continuous Delivery with Visual Studio 2012 - Chapter 5: Automating System Tests (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 5 Automatisieren von Systemtests)](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
 ### <a name="faq"></a>FAQ  
- [Coded UI Tests FAQ – 1 (Tests der programmierten UI – FAQ 1)](http://go.microsoft.com/fwlink/?LinkID=230576)  
+ [Tests der codierten UI – FAQ 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
   
- [Coded UI Tests FAQ -2 (Tests der programmierten UI – FAQ&2;)](http://go.microsoft.com/fwlink/?LinkID=230578)  
+ [Tests der codierten UI – FAQ 2](http://go.microsoft.com/fwlink/?LinkID=230578)  
   
 ### <a name="forum"></a>Forum  
  [Visual Studio UI Automation Testing (includes CodedUI) (Tests der Benutzeroberflächenautomatisierung (einschließlich programmierte UI) in Visual Studio)](http://go.microsoft.com/fwlink/?LinkID=224497)  

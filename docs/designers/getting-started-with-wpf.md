@@ -28,10 +28,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: b4c56d1428506de5998f4f430239422d72df9a44
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: a737c447bc97738c6e8f5285f672e9964578061b
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="getting-started-with-wpf"></a>Erste Schritte mit WPF

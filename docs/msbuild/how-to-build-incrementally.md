@@ -1,45 +1,62 @@
 ---
-title: "How to: Build Incrementally | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "MSBuild, incremental builds"
-  - "incremental builds"
-  - "MSBuild, building incrementally"
+title: 'Vorgehensweise: Inkrementelles Erstellen | Microsoft-Dokumentation'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- MSBuild, incremental builds
+- incremental builds
+- MSBuild, building incrementally
 ms.assetid: 8d82d7d8-a2f1-4df6-9d2f-80b9e0cb3ac3
 caps.latest.revision: 21
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 21
----
-# How to: Build Incrementally
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 1ba53f1aef3e4ae97016e9618b8f0c7abc594f2a
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
-Wenn Sie ein großes Projekt erstellen, ist es wichtig, dass zuvor erstellte Komponenten, die immer noch aktuell sind, nicht neu erstellt werden.  Wenn alle Ziele jedes Mal neu erstellt werden, können die einzelnen Buildvorgänge sehr lange dauern.  Um inkrementelle Builds zu ermöglichen \(d. h. Builds, in denen nur zuvor nicht bereits erstellte bzw. nicht mehr aktuelle Ziele neu erstellt werden\), kann [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] \([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]\) die Timestamps der Eingabedateien mit den Timestamps der Ausgabedateien vergleichen und feststellen, ob ein Ziel übersprungen, erstellt oder teilweise neu erstellt wird.  Es muss jedoch eine 1:1\-Zuordnung zwischen Ein\- und Ausgaben vorliegen.  Sie können Transformationen verwenden, um die Identifizierung dieser direkten Zuordnung für Ziele zu aktivieren.  Weitere Informationen zu Transformationen finden Sie unter [Transforms](../msbuild/msbuild-transforms.md).  
+---
+# <a name="how-to-build-incrementally"></a>Gewusst wie: Inkrementelles Erstellen
+Wenn Sie ein großes Projekt erstellen, dann ist es sehr wichtig, dass zuvor erstellte Komponenten, die noch immer auf dem neuesten Stand sind, nicht neu erstellt werden. Wenn alle Ziele jedes mal neu erstellt werden, braucht jeder Build sehr lange, bis er abgeschlossen wird. Um inkrementelle Builds zu aktivieren (es werden nur Builds mit den Zielen neu erstellt, die zuvor noch nicht erstellt wurden oder mit Zielen, die nicht mehr aktuell sind) kann [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) die Zeitstempel der Eingabedateien mit jenen der Ausgabedateien vergleichen und bestimmen, ob ein Ziel übersprungen, erstellt oder teilweise neu erstellt wird. Es muss jedoch eine 1:1-Zuordnung zwischen Eingaben und Ausgaben bestehen. Sie können Transformationen verwenden, damit Ziele diese direkte Zuordnung identifizieren können. Weitere Informationen zu Transformationen finden Sie unter [MSBuild Transforms (Transformationen)](../msbuild/msbuild-transforms.md).  
   
-## Angeben von Eingaben und Ausgaben  
- Ein Ziel kann inkrementell erstellt werden, wenn die Ein\- und Ausgaben in der Projektdatei angegeben wurden.  
+## <a name="specifying-inputs-and-outputs"></a>Angeben von Eingaben und Ausgaben  
+ Ein Ziel kann inkrementell erstellt werden, wenn die Eingaben und Ausgaben in der Projektdatei angegeben werden.  
   
-#### So geben Sie Ein\- und Ausgaben für ein Ziel an  
+#### <a name="to-specify-inputs-and-outputs-for-a-target"></a>So geben Sie Eingaben und Ausgaben für ein Ziel an  
   
--   Verwenden Sie das `Inputs`\-Attribut und das `Outputs`\-Attribut des `Target`\-Elements.  Beispiel:  
+-   Verwenden Sie die `Inputs`- und `Outputs`-Attribute des `Target`-Elements an. Zum Beispiel:  
   
-    ```  
+    ```xml  
     <Target Name="Build"  
         Inputs="@(CSFile)"  
         Outputs="hello.exe">  
     ```  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] kann die Timestamps der Eingabedateien mit den Timestamps der Ausgabedateien vergleichen und feststellen, ob ein Ziel übersprungen, erstellt oder teilweise neu erstellt wird.  Wenn eine beliebige Datei in der `@(CSFile)`\-Elementliste aktueller als die Datei "hello.exe" ist, führt [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] das Ziel im folgenden Beispiel aus. Andernfalls wird es übersprungen:  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] kann die Zeitstempel der Eingabedatei mit den Zeitstempeln der Ausgabedateien bestimmen und festlegen, ob ein Ziel übersprungen, erstellt oder teilweise neu erstellt wird. Wenn im folgenden Beispiel eine Datei in der `@(CSFile)`-Elementauflistung neuer als die „hello.exe“-Datei ist, führt [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] das Ziel aus; andernfalls wird es übersprungen.  
   
-```  
+```xml  
 <Target Name="Build"   
     Inputs="@(CSFile)"   
     Outputs="hello.exe">  
@@ -50,28 +67,28 @@ Wenn Sie ein großes Projekt erstellen, ist es wichtig, dass zuvor erstellte Kom
 </Target>  
 ```  
   
- Wenn Ein\- und Ausgaben in einem Ziel angegeben wurden, können die einzelnen Ausgaben entweder nur einer Eingabe zugeordnet werden, oder es ist keine direkte Zuordnung zwischen Aus\- und Eingaben möglich.  In der vorherigen [Csc Task](../msbuild/csc-task.md)\-Aufgabe kann die Ausgabe hello.exe beispielsweise keiner einzelnen Eingabe zugeordnet werden, da sie von allen Eingaben abhängig ist.  
+ Wenn Eingaben und Ausgaben in einem Ziel angegeben sind, kann entweder jede Ausgabe nur einer Eingabe zugeordnet werden, oder es entsteht keine Zuordnung zwischen Aus- und Eingaben. In der vorherigen [Csc-Aufgabe](../msbuild/csc-task.md) kann z.B. die Ausgabedatei „hello.exe“ keiner einzelnen Eingabe zugeordnet werden – sie hängt von allen Eingaben ab.  
   
 > [!NOTE]
->  Ein Ziel, bei dem keine direkte Zuordnung zwischen Ein\- und Ausgaben stattfindet, wird immer häufiger erstellt als ein Ziel, bei dem die einzelnen Ausgaben nur einer Eingabe zugeordnet werden können. Dies resultiert daraus, dass [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] nicht feststellen kann, welche Ausgaben neu erstellt werden müssen, wenn sich einige der Eingaben geändert haben.  
+>  Ein Ziel, in dem keine direkte Zuordnung zwischen den Ein- und Ausgaben besteht, führt immer öfter eine Erstellung durch, als ein Ziel, in dem jede Ausgabe nur einer Eingabe zugeordnet werden kann, da [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] nicht bestimmen kann, welche Ausgaben neu erstellt werden müssen, wenn sich einige der Eingaben verändert haben.  
   
- Aufgaben, in denen eine direkte Zuordnung zwischen den Aus\- und Eingaben festgestellt werden kann, beispielsweise die Aufgabe [LC Task](../msbuild/lc-task.md), eignen sich im Unterschied zu Aufgaben wie `Csc` und [Vbc](../msbuild/vbc-task.md), die eine Ausgabeassembly aus einer Reihe von Eingaben erstellen, besonders für inkrementelle Builds.  
+ Aufgaben, in denen Sie eine direkte Zuordnung zwischen den Aus- und Eingaben erkennen können, z.B. die [LC-Aufgabe](../msbuild/lc-task.md), sind am besten für inkrementelle Builds geeignet, im Gegensatz zu Aufgaben wie `Csc` und [Vbc](../msbuild/vbc-task.md), die nur eine Ausgabeassembly aus einer Reihe von Eingaben erstellen.  
   
-## Beispiel  
- Im folgenden Beispiel wird ein Projekt verwendet, das Hilfedateien für ein hypothetisches Hilfesystem erstellt.  Das Projekt konvertiert TXT\-Quelldateien in CONTENT\-Zwischendateien, die anschließend mit XML\-Metadatendateien kombiniert werden, um schließlich die vom Hilfesystem verwendete HELP\-Datei zu erstellen.  Das Projekt verwendet die folgenden hypothetischen Aufgaben:  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel verwendet ein Projekt, das Hilfedateien für ein hypothetisches Hilfesystem erstellt. Das Projekt arbeitet, indem TXT-Quelldateien in CONTENT-Zwischendateien konvertiert werden, die dann mit XML-Metadatendateien kombiniert werden, um die finale Hilfedatei zu erstellen, die vom Hilfesystem verwendet wird. Das Projekt verwendet die folgenden hypothetischen Aufgaben:  
   
--   `GenerateContentFiles`: Konvertiert TXT\-Dateien in CONTENT\-Dateien.  
+-   `GenerateContentFiles`: Konvertiert TXT-Dateien in CONTENT-Dateien.  
   
--   `BuildHelp`: Kombiniert CONTENT\-Dateien und XML\-Metadatendateien, um die HELP\-Datei zu erstellen.  
+-   `BuildHelp`: Kombiniert CONTENT-Dateien und XML-Metadatendateien, um die finale Hilfedatei zu erstellen.  
   
- Das Projekt verwendet Transformationen, um eine 1:1\-Zuordnung zwischen Ein\- und Ausgaben in der `GenerateContentFiles`\-Aufgabe zu erstellen.  Weitere Informationen finden Sie unter [Transforms](../msbuild/msbuild-transforms.md).  Außerdem wurde für das `Output`\-Element festgelegt, dass die Ausgaben aus der `GenerateContentFiles`\-Aufgabe automatisch als Eingaben für die `BuildHelp`\-Aufgabe verwendet werden.  
+ Das Projekt verwendet Transformationen, um eine 1:1-Zuordnung zwischen Eingaben und Ausgaben in der `GenerateContentFiles`-Ausgabe zu erstellen. Weitere Informationen finden Sie unter [MSBuild Transforms (Transformationen)](../msbuild/msbuild-transforms.md). Es wird ebenso festgelegt, dass das `Output`-Element automatisch die Ausgaben der `GenerateContentFiles`-Aufgabe als Eingaben für die `BuildHelp`-Aufgabe verwendet.  
   
- Diese Projektdatei enthält sowohl das `Convert`\-Ziel als auch das `Build`\-Ziel.  Die `GenerateContentFiles`\-Aufgabe und die `BuildHelp`\-Aufgabe werden dem `Convert`\-Ziel bzw. dem `Build`\-Ziel hinzugefügt, sodass jedes Ziel inkrementell erstellt werden kann.  Durch Verwendung des `Output`\-Elements werden die Ausgaben der `GenerateContentFiles`\-Aufgabe in die `ContentFile`\-Elementliste aufgenommen, wo sie als Eingaben für die `BuildHelp`\-Aufgabe verwendet werden können.  Wenn Sie das `Output`\-Element auf diese Weise verwenden, werden die Ausgaben aus einer Aufgabe automatisch als Eingaben für eine andere Aufgabe bereitgestellt, sodass Sie die einzelnen Elemente oder Elementlisten nicht in jeder Aufgabe manuell aufführen müssen.  
+ Diese Projektdatei enthält jeweils die Ziele `Convert` und `Build`. Die `GenerateContentFiles`- und `BuildHelp`-Aufgaben sind jeweils in den Zielen `Convert` und `Build` platziert, sodass jedes Ziel inkrementell erstellt werden kann. Indem das `Output`-Element verwendet wird, werden die Ausgaben der `GenerateContentFiles`-Aufgabe in der `ContentFile`-Elementauflistung platziert, wo sie als Eingaben für die `BuildHelp`-Aufgabe verwendet werden können. Wenn Sie das `Output`-Element so nutzen, werden automatisch die Ausgaben aus einer Aufgabe als Eingaben für eine andere Aufgabe verwendet, sodass Sie nicht die einzelnen Elemente oder Elementauflistungen manuell in jeder Aufgabe eingeben müssen.  
   
 > [!NOTE]
->  Obwohl das `GenerateContentFiles`\-Ziel inkrementell erstellt werden kann, sind alle Ausgaben dieses Ziels immer als Eingaben für das `BuildHelp`\-Ziel erforderlich.  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] stellt alle Ausgaben eines Ziels automatisch als Eingaben für ein anderes Ziel bereit, wenn Sie das `Output`\-Element verwenden.  
+>  Obwohl das `GenerateContentFiles`-Ziel eine inkrementelle Erstellung vornehmen kann, werden alle Ausgaben aus diesem Ziel immer als Eingaben für das `BuildHelp`-Ziel benötigt. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] stellt automatisch alle Ausgaben von einem Ziel als Eingaben für ein anderes Ziel bereit, wenn Sie das `Output`-Element verwenden.  
   
-```  
+```xml  
 <Project DefaultTargets="Build"  
     xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >  
   
@@ -103,9 +120,9 @@ Wenn Sie ein großes Projekt erstellen, ist es wichtig, dass zuvor erstellte Kom
 </Project>  
 ```  
   
-## Siehe auch  
- [Targets](../msbuild/msbuild-targets.md)   
- [Target\-Element \(MSBuild\)](../msbuild/target-element-msbuild.md)   
- [Transforms](../msbuild/msbuild-transforms.md)   
- [Csc Task](../msbuild/csc-task.md)   
- [Vbc Task](../msbuild/vbc-task.md)
+## <a name="see-also"></a>Siehe auch  
+ [Ziele](../msbuild/msbuild-targets.md)   
+ [Target-Element (MSBuild)](../msbuild/target-element-msbuild.md)   
+ [Transformationen](../msbuild/msbuild-transforms.md)   
+ [Csc-Aufgabe](../msbuild/csc-task.md)   
+ [Vbc-Aufgabe](../msbuild/vbc-task.md)

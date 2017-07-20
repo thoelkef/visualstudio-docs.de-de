@@ -29,10 +29,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 3ba7680d46345f2b49019659c715cfb418933d39
-ms.openlocfilehash: cba81e0eee6a0ce278c65e8952e75b23a6ebf3cc
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 754cec0effaaa0cf68cf1a4bbc4d536dbdcf0298
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="msbuild-items"></a>MSBuild-Elemente
@@ -111,7 +112,7 @@ MSBuild-Elemente sind Eingaben in das Buildsystem. In der Regel handelt es sich 
   
 -   Das Platzhalterzeichen ? entspricht einem einzelnen Zeichen.  
   
--   Das Platzhalterzeichen * entspricht&0; (null) oder mehr Zeichen.  
+-   Das Platzhalterzeichen * entspricht 0 (null) oder mehr Zeichen.  
   
 -   Die Platzhalterzeichenfolge ** entspricht einem partiellen Pfad.  
   
@@ -138,7 +139,7 @@ MSBuild-Elemente sind Eingaben in das Buildsystem. In der Regel handelt es sich 
 </ItemGroup>  
 ```  
   
- Das `Exclude`-Attribut wirkt sich nur auf Elemente aus, die über das `Include`-Attribut in dem Item-Element hinzugefügt wurden, das beide enthält. Im folgenden Beispiel würde also nicht die im vorherigen Item-Element hinzugefügte Datei Form1.cs ausgeschlossen werden.  
+ Das `Exclude`-Attribut wirkt sich nur auf Elemente aus, die über das `Include`-Attribut in dem Item-Element hinzugefügt wurden, das beide enthält. Im folgenden Beispiel würde also nicht die im vorherigen Item-Element hinzugefügte Datei „form1.cs“ ausgeschlossen werden.  
   
 ```xml  
 <Compile Include="*.cs" />  
@@ -162,7 +163,7 @@ MSBuild-Elemente sind Eingaben in das Buildsystem. In der Regel handelt es sich 
 </ItemGroup>  
 ```  
   
- Ein Element kann über&0; (null) oder mehr Metadatenwerte verfügen. Metadaten lassen sich immer ändern. Wenn Sie Metadaten auf einen leeren Wert festlegen, entfernen Sie sie unwiderruflich aus dem Build.  
+ Ein Element kann über 0 (null) oder mehr Metadatenwerte verfügen. Metadaten lassen sich immer ändern. Wenn Sie Metadaten auf einen leeren Wert festlegen, entfernen Sie sie unwiderruflich aus dem Build.  
   
 ###  <a name="BKMK_ReferencingItemMetadata"></a>Verweisen auf Elementmetadaten in einer Projektdatei  
  Mithilfe der Syntax %(`ItemMetadataName`) kann in der gesamten Projektdatei auf Elementmetadaten verwiesen werden. Bei Mehrdeutigkeiten können Sie mit dem Namen des Elementtyps einen Verweis qualifizieren. Sie können z.B. %(*ItemType.ItemMetaDataName*). angeben. Im folgenden Beispiel erfolgt die Batchverarbeitung der Meldungsaufgabe mithilfe der Anzeige von Metadaten. Weitere Informationen zur Verwendung von Elementmetadaten für die Batchverarbeitung finden Sie unter [Item Metadata in Task Batching (Elementmetadaten bei der Batchverarbeitung von Aufgaben)](../msbuild/item-metadata-in-task-batching.md).  

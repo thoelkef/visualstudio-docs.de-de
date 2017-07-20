@@ -1,57 +1,74 @@
 ---
-title: "How to: Display an Item List Separated with Commas | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "MSBuild, separating items with semicolons"
-  - "MSBuild, formatting item collections"
+title: 'Vorgehensweise: Anzeigen einer durch Trennzeichen getrennten Elementliste | Microsoft-Dokumentation'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- MSBuild, separating items with semicolons
+- MSBuild, formatting item collections
 ms.assetid: 3cae844c-7c6d-4144-82dc-efad10ba458f
 caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
----
-# How to: Display an Item List Separated with Commas
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 38c6099f912424d21df2aeea4cfdd0401ba57465
+ms.openlocfilehash: 9366ae0f599f7ae37de40fb1ae556c04f6e73292
+ms.contentlocale: de-de
+ms.lasthandoff: 07/14/2017
 
-Wenn Sie mit Elementlisten in [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] \([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]\) arbeiten, ist es zeitweise hilfreich, den Inhalt dieser Elementlisten in einer leicht lesbaren Form anzuzeigen.  Möglicherweise verfügen Sie aber auch über eine Aufgabe mit einer Liste von Elementen, die durch ein bestimmtes Trennzeichen getrennt sind.  In beiden Fällen können Sie ein Trennzeichen für eine Elementliste festlegen.  
+---
+# <a name="how-to-display-an-item-list-separated-with-commas"></a>Gewusst wie: Anzeigen einer durch Trennzeichen getrennten Elementliste
+Beim Arbeiten mit dem Elementlisten in [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) ist es manchmal hilfreich, den Inhalt dieser Elementlisten in einer leicht lesbaren Ansicht anzuzeigen. Oder Sie haben eine Aufgabe, die eine Liste von durch ein bestimmtes Trennzeichen getrennten Elementen akzeptiert. In beiden Fällen haben Sie die Möglichkeit, eine Trennzeichenabfolge für eine Elementliste anzugeben.  
   
-## Trennen von Elementen in einer Liste mit Kommas  
- Standardmäßig verwendet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Semikolons, um Elemente in einer Liste zu trennen.  Angenommen, Sie verfügen über ein `Message`\-Element mit folgendem Wert:  
+## <a name="separating-items-in-a-list-with-commas"></a>Trennen von Elementen in einer Liste mit Kommas  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] verwendet standardmäßig Semikolons zum Trennen von Elementen in einer Liste. Sehen Sie sich beispielsweise das `Message`-Element mit dem folgenden Wert an:  
   
  `<Message Text="This is my list of TXT files: @(TXTFile)"/>`  
   
- Wenn die `@(TXTFile)`\-Elementliste die Elemente App1.txt, App2.txt und App3.txt enthält, lautet die Meldung:  
+ Wenn die `@(TXTFile)`-Elementliste die Elemente „app1.txt“, „app2.txt“ und „app3.txt“ enthält, lautet die Meldung:  
   
  `This is my list of TXT files: App1.txt;App2.txt;App3.txt`  
   
- Wenn Sie das Standardverhalten ändern möchten, können Sie ein eigenes Trennzeichen eingeben.  Die Syntax zum Festlegen eines Trennzeichens für Elementlisten lautet:  
+ Wenn Sie das Standardverhalten ändern möchten, können Sie ein eigenes Trennzeichen angeben. Die Syntax eines Trennzeichens für Elementlisten ist:  
   
  `@(ItemListName, '<separator>')`  
   
- Das Trennzeichen kann entweder ein einzelnes Zeichen oder eine Zeichenfolge sein und muss in einfache Anführungszeichen eingeschlossen werden.  
+ Das Trennzeichen kann ein einzelnes Zeichen oder eine Zeichenfolge sein und muss in einfache Anführungszeichen eingeschlossen werden.  
   
-#### So fügen Sie ein Komma und ein Leerzeichen zwischen Elementen ein  
+#### <a name="to-insert-a-comma-and-a-space-between-items"></a>So fügen Sie ein Komma und ein Leerzeichen zwischen Elementen ein  
   
--   Verwenden Sie eine mit folgendem Beispiel vergleichbare Elementnotation:  
+-   Verwenden Sie in etwa diese Elementnotation:  
   
      `@(TXTFile, ', ')`  
   
-## Beispiel  
- In diesem Beispiel wird das Tool findstr von der Aufgabe [Exec](../msbuild/exec-task.md) ausgeführt, um die angegebenen Textzeichenfolgen in der Datei Phrases.txt zu suchen.  Im findstr\-Befehl werden Zeichenfolgen für die wörtliche Suche durch den **\/c:**\-Schalter angegeben. Folglich wird das Elementtrennzeichen `/c:` zwischen Elementen in der `@(Phrase)`\-Elementliste eingefügt.  
+## <a name="example"></a>Beispiel  
+ In diesem Beispiel führt die Aufgabe [Exec](../msbuild/exec-task.md) das Tool „findstr“ aus, um die angegebenen Textzeichenfolgen in der Datei „phrases.txt“ zu suchen. Im Befehl „findstr“ werden buchstabengetreue Suchzeichenfolgen mit dem Schalter **/c:** gekennzeichnet. Das Elementtrennzeichen `/c:` wird also zwischen Elementen in der `@(Phrase)`-Elementliste eingefügt.  
   
- Der entsprechende Befehlszeilenbefehl für dieses Beispiel lautet:  
+ In diesem Beispiel lautet die entsprechende Befehlszeile:  
   
  `findstr /i /c:hello /c:world /c:msbuild phrases.txt`  
   
-```  
+```xml  
 <Project DefaultTargets = "Find"  
     xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >  
   
@@ -68,6 +85,6 @@ Wenn Sie mit Elementlisten in [!INCLUDE[vstecmsbuildengine](../msbuild/includes/
 </Project>  
 ```  
   
-## Siehe auch  
- [MSBuild Reference](../msbuild/msbuild-reference.md)   
- [Items](../msbuild/msbuild-items.md)
+## <a name="see-also"></a>Siehe auch  
+ [MSBuild Reference](../msbuild/msbuild-reference.md)  (MSBuild-Referenz)  
+ [Items](../msbuild/msbuild-items.md) (MSBuild-Elemente)

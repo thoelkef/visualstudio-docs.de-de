@@ -38,9 +38,10 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: 753b4abd76b56ff46406b3a2f5ab5b8fb008c526
+ms.contentlocale: de-de
 ms.lasthandoff: 02/22/2017
 
 ---
@@ -254,7 +255,7 @@ Diese exemplarische Vorgehensweise führt Sie durch den Prozess zum Identifizier
     }  
     ```  
   
-     Diese feste Version des Codes enthält eine 1000-Millisekunden-Verzögerung, die aus der früheren Version des Codes weggelassen wurde, was zur Verwendung eines Standardverzögerungswerts führte. Auf Basis der Profilerdaten ist anzunehmen, dass der Standardwert&0; Millisekunden beträgt, wodurch die `setValues()`-Funktion zu häufig ausgeführt wird.  
+     Diese feste Version des Codes enthält eine 1000-Millisekunden-Verzögerung, die aus der früheren Version des Codes weggelassen wurde, was zur Verwendung eines Standardverzögerungswerts führte. Auf Basis der Profilerdaten ist anzunehmen, dass der Standardwert 0 Millisekunden beträgt, wodurch die `setValues()`-Funktion zu häufig ausgeführt wird.  
   
 2.  Führen Sie den Profiler für die HTML-UI-Reaktionsfähigkeit erneut aus, und überprüfen Sie das CPU-Auslastungsdiagramm. Sie werden feststellen, dass die überzähligen Ereignisse verschwunden sind und die CPU-Auslastung beinahe auf null gesunken ist. Problem behoben!  
   

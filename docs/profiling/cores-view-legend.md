@@ -1,41 +1,59 @@
 ---
-title: "Legende der Kernansicht | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.cv.cores.legend"
-helpviewer_keywords: 
-  - "Concurrency Visualizer, Legende der Kernansicht"
+title: Legende der Kernansicht | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.cv.cores.legend
+helpviewer_keywords:
+- Concurrency Visualizer, Cores View Legend
 ms.assetid: e160384c-fcfe-49b3-86b7-229adb736c51
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
----
-# Legende der Kernansicht
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 4fac3ff28de087401a7ce3efd5ac86ea4e7b8670
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
-In der Legende der Kernansicht ist jeder Thread mit Farbe und Namen angegeben.  Sie enthält Spalten ein, die Werte für kernübergreifende Kontextwechsel, gesamte Kontextwechsel und Prozentualer Anteil der Kontextwechsel, die durch Kerne verlaufen.  Zeilen in der Legende sind nach Anzahl der kernübergreifenden Kontextwechsel, in absteigender Reihenfolge sortiert.  
+---
+# <a name="cores-view-legend"></a>Legende der Kernansicht
+Die Legende der Kernansicht identifiziert jeden Thread durch Farbe und Namen. Sie enthält folgende Spalten: Anzahl der kernübergreifenden Kontextwechsel, Gesamtzahl der Kontextwechsel und Prozentsatz der Kontextwechsel, die durch Kerne verlaufen. Die Legende ist nach der Anzahl der kernübergreifenden Kontextwechsel in absteigender Reihenfolge angeordnet.  
   
- Sie können Zeilen in der Legende auswählen, um die Threads zu filtern, die in der Zeitachse angezeigt werden.  Nur die ausgewählten Threads werden in der Zeitachse dargestellt.  Wenn keine Zeilen ausgewählt werden, werden alle Zeilen der Zeitachse dargestellt.  
+ Sie können in der Legende Zeilen auswählen, um Threads zu filtern, die auf der Zeitachse angezeigt werden. Nur die ausgewählten Threads werden auf der Zeitachse angezeigt. Wenn keine Zeilen ausgewählt sind, werden alle Zeilen auf der Zeitachse angezeigt.  
   
- Kernübergreifende Kontextwechsel kosten mehr im Mehraufwand und Leistung als Schalter, die auf demselben logischen Kern nicht.  Während der Kontextwechsel werden die Prozessorregister gespeichert und wiederhergestellt, wird der Betriebssystemkernelcode ausgeführt, werden die Adressenumsetzpuffereinträge erneut geladen, und die Prozessorpipeline wird geleert.  Kernübergreifende Kontextwechsel können als andere Kontextwechsel sogar kostenintensiv sein, da die Cachedaten für den Thread auf einen anderen Kern ungültig sind.  Wenn ein Thread auf den Kern Kontext\-umgeschaltet wird, wurde er zuvor ausgeführt, ist es wahrscheinlich, dass die nützliche noch Daten im Cache.  Wenn kernübergreifende Kontextwechsel durch Versuche, zur Verwaltung der Threadaffinität erhöht wurden und die Leistung beeinträchtigt wird, überprüfen Sie, ob dieses Problem verweist.  Anfang, indem Threadaffinität beseitigt, und beachten dann auf das resultierende kernübergreifende Verhalten.  
+ Kernübergreifende Kontextwechsel erfordern mehr Verwaltungsaufwand und sind leistungsintensiver als Wechsel, die auf dem logischen Kern verbleiben. Während der Kontextwechsel werden die Prozessorregister gespeichert und wiederhergestellt. Der Betriebssystem-Kernelcode wird ausgeführt, die Übersetzungslookaside-Puffereinträge werden neu geladen, und die Prozessorpipeline wird geleert. Kernübergreifende Kontextwechsel können sogar teurer als andere Kontextwechsel sein, da die Cachedaten für diesen Thread auf einem anderen Kern ungültig sind. Bei einem Thread hingegen, für den der Kontextwechsel auf dem Kern erfolgt, auf dem er zuvor ausgeführt wurde, sind die nützlichen Daten wahrscheinlich immer noch im Cache vorhanden. Die Anzahl kernübergreifender Kontextwechsel kann aufgrund von Versuchen, die Threadaffinität zu verwalten, zunehmen. Wenn die Leistung zudem beeinträchtigt ist, sollten Sie sich um eine Lösung bemühen. Beginnen Sie damit, die Threadaffinität zu beseitigen, und beobachten Sie, wie sich das kernübergreifende Verhalten daraufhin verändert.  
   
- In der folgenden Tabelle sind die Legendenelemente beschrieben.  
+ In der folgenden Tabelle werden die Legendenelemente beschrieben.  
   
 |Element|Definition|  
 |-------------|----------------|  
-|Thread Name|Zeigt die Farbe des Threads auf der Zeitachse des vorherigen Kerns sowie den Namen des betreffenden Threads.|  
-|Kernübergreifende Kontextwechsel|Die Anzahl der Kontextwechsel für einen Thread, bei denen auch von einem logischen Kern zu einem anderen gewechselt wurde.  Dabei wird nicht zwischen kernübergreifenden Kontextwechseln, bei denen von einem Prozessorwürfel zu anderen für die schneiden, die auf demselben Löschen bleiben.|  
-|Gesamte Kontextwechsel|Die Gesamtzahl der Kontextwechsel für einen angegebenen Thread während des Samplingzeitraums.  Jedes Mal, wenn ein Thread den Kontext wechselt \(z. B. von der Ausführung zur Synchronisierung\), wird ein Kontextwechsel gezählt.|  
-|Prozentualer Anteil der Kontextwechsel, die durch Kerne verlaufen|Wird als Prozentsatz berechnet, indem die Anzahl der kernübergreifenden Kontextwechsel durch die Anzahl der gesamten Kontextwechsel geteilt wird.  Je höher dieser Prozentsatz ist, desto größer sind die Gesamtauswirkungen des Mehraufwands durch kernübergreifende Kontextwechsel auf die Leistung des betreffenden Threads.|  
+|Thread Name|Zeigt die Farbe des Threads auf der Zeitachse der vorherigen Kerne sowie den Namen des Threads|  
+|Kernübergreifende Kontextwechsel|Die Anzahl der Kontextwechsel für einen Thread, der zudem von einem logischen Kern zu einem anderen umgeschaltet hat. Dabei wird nicht zwischen kernübergreifenden Kontextwechseln unterschieden, die von einem Prozessorwürfel zu einem anderen wechseln, und jenen, die auf dem gleichen Würfel bleiben.|  
+|Gesamte Kontextwechsel|Die Gesamtzahl der Kontextwechsel für einen angegebenen Thread während des Samplingzeitraums. Jede Kontextänderung eines Threads (z.B. von der Ausführung zur Synchronisierung) entspricht einem Kontextwechsel.|  
+|Prozentualer Anteil der Kontextwechsel, die durch Kerne verlaufen|Dieser Anteil wird als Prozentsatz ausgedrückt und entsteht dadurch, dass die Anzahl der kernübergreifenden Kontextwechsel durch die Gesamtzahl der Kontextwechsel dividiert wird. Je höher der Prozentsatz, desto stärker wirkt sich der Aufwand der kernübergreifenden Kontextwechsel auf die Leistung dieses speziellen Threads aus.|  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Kernansicht](../profiling/cores-view.md)

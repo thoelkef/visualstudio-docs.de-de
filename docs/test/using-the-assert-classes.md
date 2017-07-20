@@ -32,17 +32,18 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
 ms.openlocfilehash: 5a4f1fd5bf35a6010c2d919194b8ef21073e9a18
-ms.lasthandoff: 04/04/2017
+ms.contentlocale: de-de
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="using-the-assert-classes"></a>Verwenden der Assert-Klassen
 Verwenden Sie die Assert-Klassen des UnitTestingFramework-Namespace, um bestimmte Funktionen zu überprüfen. Eine Komponententestmethode führt den Code einer Methode im Entwicklungscode aus. Ob sich der Code ordnungsgemäß verhält, wird jedoch nur angegeben, wenn Sie Assert-Anweisungen einbinden.  
   
 ## <a name="kinds-of-asserts"></a>Arten von Assertionen  
- Der <xref:Microsoft.VisualStudio.TestTools.UnitTesting>-Namespace stellt verschiedene Arten von Assert-Klassen bereit:  
+ Der <xref:Microsoft.VisualStudio.TestTools.UnitTesting>-Namespace stellt mehrere Arten von Assert-Klassen bereit:  
   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>  
   

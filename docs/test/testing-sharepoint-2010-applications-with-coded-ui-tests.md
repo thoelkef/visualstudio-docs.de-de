@@ -27,10 +27,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 0ac46d6701e713195f9ad4f7449743308ebe92e0
-ms.lasthandoff: 04/04/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 7ab8ce7199fec306a0f50344619200266a2261b8
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Testen von SharePoint 2010-Anwendungen mit Tests der programmierten UI
@@ -41,7 +42,7 @@ Durch das Einbeziehen von Tests der programmierten UI in einer SharePoint-Anwend
 -   Visual Studio Enterprise  
   
 ## <a name="what-else-should-i-know-about-coded-ui-tests"></a>Was sollte ich sonst noch über Tests der codierten UI wissen?  
- Weitere Informationen zu den Vorteilen der Verwendung von Tests der programmierten UI finden Sie unter [Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes ](../test/use-ui-automation-to-test-your-code.md) und [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 5 Automatisieren von Systemtests](http://go.microsoft.com/fwlink/?LinkID=255196).  
+ Weitere Informationen zu den Vorteilen der Verwendung von Tests der programmierten UI finden Sie unter [Use UI Automation To Test Your Code (Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes)](../test/use-ui-automation-to-test-your-code.md) und [Testing for Continuous Delivery with Visual Studio 2012 - Chapter 5 Automating System Tests (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 5 Automatisieren von Systemtests)](http://go.microsoft.com/fwlink/?LinkID=255196).  
   
  **Notizen**  
   
@@ -154,7 +155,7 @@ uiGridKeyboardInputEdit.Text=value;
  [Inhaltsindex für den Test der programmierten UI](http://blogs.msdn.com/b/mathew_aniyan/archive/2010/02/11/content-index-for-coded-ui-test.aspx)  
   
 ### <a name="guidance"></a>Empfehlungen  
- [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 5 Automatisieren von Systemtests)](http://go.microsoft.com/fwlink/?LinkID=255196)  
+ [Testing for Continuous Delivery with Visual Studio 2012 - Chapter 5 Automating System Tests (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 5 Automatisieren von Systemtests)](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
 ### <a name="forum"></a>Forum  
  [Visual Studio ALM + Team Foundation Server Blog](http://go.microsoft.com/fwlink/?LinkID=254496)  

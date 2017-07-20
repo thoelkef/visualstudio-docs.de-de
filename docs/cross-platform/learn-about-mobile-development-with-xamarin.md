@@ -26,14 +26,15 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: f78e2b713e75c5601a07907e7f717db92571568b
-ms.openlocfilehash: 53f6b9dbc91369266857ae73a3abe4745cbab7ce
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: a8acd1f49f66ff0e5fb3023bff5de18db9c8c308
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Erfahren Sie mehr über die Entwicklung für mobile Plattformen mit Xamarin
-Dieses Thema führt Sie zu Unterrichtsmaterial, das Ihnen die Grundlagen des Entwickelns von plattformübergreifenden mobilen Apps mit Xamarin vermittelt. Wenn Sie Visual Studio und Xamarin noch nicht installiert haben, starten Sie zuerst den Prozess [Setup und Installation](../cross-platform/setup-and-install.md), und kehren Sie dann hierher zurück, um sich durch diese Ressourcen zu arbeiten, während die Installationsprogramme ausgeführt werden.  
+Dieses Thema führt Sie zu Unterrichtsmaterial, das Ihnen die Grundlagen des Entwickelns von plattformübergreifenden mobilen Apps mit Xamarin vermittelt. Wenn Sie Visual Studio und Xamarin noch nicht installiert haben, starten Sie zuerst den [Setup and install](../cross-platform/setup-and-install.md) -Prozess, und kehren Sie dann hierher zurück, um sich durch diese Ressourcen zu arbeiten, während die Installationsprogramme ausgeführt werden.  
   
 > [!NOTE]
 >  Falls nicht anders beschrieben, empfehlen wir Ihnen, sich anfangs auf die hier direkt verlinkten Seiten zu beschränken und Unterseiten zunächst zu ignorieren. Wenn der Installationsvorgang nach dem Durcharbeiten dieser Liste immer noch ausgeführt wird, können Sie hierher zurückkehren und weitere Themen erforschen.  
@@ -66,7 +67,7 @@ Dieses Thema führt Sie zu Unterrichtsmaterial, das Ihnen die Grundlagen des Ent
 2.  (Optional) In [Case Study: Tasky](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/case_study-tasky/) (xamarin.com) sind einige bewährte Methoden zum Entwerfen und Strukturieren einer vollständigen App beschrieben, etwa das Strukturieren des Projekts mit einer PCL für freigegebenen Code, in dem Daten, Datenzugriff und Geschäftsschichten voneinander getrennt sind.  
   
 ## <a name="essentials-native-and-xamarinforms-ui-layers"></a>Grundlagen: Xamarin Native- und Xamarin.Forms-Benutzeroberflächenebenen  
- *10–40 Minuten*  
+ *10-40 Minuten*  
   
  Xamarin bietet zwei Möglichkeiten, großartige systemeigene Apps zu erstellen: Xamarin Native und Xamarin.Forms.  
   
@@ -94,24 +95,24 @@ Dieses Thema führt Sie zu Unterrichtsmaterial, das Ihnen die Grundlagen des Ent
   
 4.  (Optional) Beispiele, wie Sie mit OnPlatform Anpassungen vornehmen können, finden Sie in der Dokumentation von [Device Class](http://developer.xamarin.com/guides/xamarin-forms/platform-features/device/) (xamarin.com).  
   
-5.  (Optional) Unter [Gemeinsames Verwenden von Benutzeroberflächencode auf mobilen Plattformen mit Xamarin.Forms](https://msdn.microsoft.com/magazine/dn904669.aspx) von Jason Smith (MSDN Magazin) sind die verschiedenen Anpassungsoptionen skizziert, die es in Xamarin.Forms gibt. Ausführlichere Informationen zu diesen Optionen finden Sie unter [Customizing Controls on Each Platform (Steuerelemente auf jeder Plattform anpassen) (xamarin.com)](http://developer.xamarin.com/guides/xamarin-forms/custom-renderer/).  
+5.  (Optional) In [Gemeinsames Verwenden von Benutzeroberflächencode auf mobilen Plattformen mit Xamarin.Forms](https://msdn.microsoft.com/magazine/dn904669.aspx) von Jason Smith (MSDN Magazin) sind die verschiedenen Anpassungsoptionen skizziert, die es in Xamarin.Forms gibt. Ausführlichere Informationen zu diesen Optionen finden Sie unter [Customizing Controls on Each Platform](http://developer.xamarin.com/guides/xamarin-forms/custom-renderer/) (xamarin.com).  
   
 ## <a name="deeper-dive-debugging-with-emulators"></a>Vertiefung: Debuggen mit Emulatoren  
  *10–15 Minuten*  
   
  Wenn Sie plattformübergreifende Apps debuggen möchten, ohne ein physisches Gerät zu verwenden, müssen Sie folgendes Tool verwenden:  
   
-1.  **Ein Android-Emulator.** Je nachdem, mit welcher Version von Windows Sie arbeiten, sollten Sie entweder Microsofts Visual Studio Emulator für Android oder den Xamarin Player verwenden, die beide hohe Leistung bieten und eine Vielzahl von Gerätefunktionen unterstützen:  
+1.  **Einen Android-Emulator.** Je nachdem, mit welcher Version von Windows Sie arbeiten, sollten Sie entweder Microsofts Visual Studio Emulator für Android oder den Xamarin Player verwenden, die beide hohe Leistung bieten und eine Vielzahl von Gerätefunktionen unterstützen:  
   
-    -   **Computer mit Windows 8+:** Es wird dringend empfohlen, Microsofts [Visual Studio Emulator für Android](https://www.visualstudio.com/en-us/features/msft-android-emulator-vs.aspx)zu verwenden, der mit Visual Studio installiert wurde.  Das Video zum [Visual Studio-Emulator für Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) (Channel9, 5 m 55 s) enthält eine Übersicht und eine Demonstration.  
+    -   **Computer mit Windows 8 und höher:** Es wird dringend empfohlen, Microsofts [Visual Studio-Emulator für Android](https://www.visualstudio.com/en-us/features/msft-android-emulator-vs.aspx) zu verwenden, der mit Visual Studio installiert wurde.  Das Video zum [Visual Studio-Emulator für Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) (Channel9, 5 m 55 s) enthält eine Übersicht und eine Demonstration.  
   
     -   **Windows 7 oder früher/Windows unter Mac OS X**: Verwenden Sie den [Xamarin Android Player](http://developer.xamarin.com/guides/android/getting_started/installation/android-player) (xamarin.com).  
   
-2.  **iOS-Simulator von Apple.** Weitere Informationen hierzu finden Sie unter [Getting Started in Simulator (Erste Schritte im Simulator)](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com).  
+2.  **Apples iOS-Simulator.** Weitere Informationen hierzu finden Sie unter [Getting Started in Simulator](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com).  
   
-3.  **Microsoft Windows Phone Emulator.** Weitere Informationen hierzu finden Sie unter [Ausführen von Windows Phone 8-Apps im Emulator](https://msdn.microsoft.com/library/dn632391.aspx).  
+3.  **Microsoft Windows Phone Emulator.** Weitere Informationen hierzu finden Sie unter [Ausführen von Windows Phone-Apps im Emulator](https://msdn.microsoft.com/library/dn632391.aspx).  
   
-##  <a name="components"></a> Vertiefung: Xamarin-Komponenten  
+##  <a name="components"></a> Deeper Dive: Xamarin Components  
  *10 Minuten*  
   
  Viele erweiterte Leistungsmerkmale stehen Xamarin-Apps über Xamarin-Komponenten zur Verfügung. Den Gesamtkatalog, der Komponenten für zusätzliche Steuerelemente der Benutzeroberfläche, Authentifizierung, eine Vielzahl von Clouddiensten wie Microsoft Azure uvm. enthält, können Sie unter [http://components.xamarin.com/](http://components.xamarin.com/)herunterladen.

@@ -33,10 +33,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 22eb436711a7539a63f0d4198b4cd176890af3d0
-ms.openlocfilehash: 6871e525345ae5c1ffc79e0126e47176bedbe110
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 28a8636db753eb71a90cb89f921f58b97aabdc59
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>Analysieren des Energieverbrauchs in Store-Apps

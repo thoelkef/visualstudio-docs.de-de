@@ -31,10 +31,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 7ec312bf7c85759fef700f0746c0981f263d46e2
-ms.lasthandoff: 03/07/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 362a756e434f93eb39776c76382d059cc2744cae
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="welcome-to-visual-studio-2017"></a>Willkommen bei Visual Studio 2017!
@@ -90,7 +91,7 @@ Zusätzlich können Sie Office 365-REST-APIs in Ihre eigene App integrieren, um 
  Verwenden Sie [Visual Studio Team Services](https://www.visualstudio.com/team-services/), um den Code ohne Wartung eines lokalen Servers in der Cloud zu speichern. Wenn Sie über einen lokalen Server verfügen möchten, verwenden Sie [Team Foundation Server](https://www.visualstudio.com/tfs/). Jedes Mal, wenn Sie ein Codeprojekt erstellen, haben Sie die Möglichkeit, es der Versionskontrolle hinzuzufügen. Informationen darüber, welches Versionskontrollsystem für Ihre Anforderungen am besten geeignet ist, finden Sie unter [Choosing the right version control for your project (Auswählen der richtigen Versionskontrolle für Ihr Projekt)](https://www.visualstudio.com/en-us/docs/tfvc/comparison-git-tfvc).  
 
 ### <a name="build-your-app"></a>Erstellen der App  
- Sie können [Ihre App lokal erstellen](ide/compiling-and-building-in-visual-studio.md) und sicherstellen, dass sie ordnungsgemäß funktioniert. Dann verwenden Sie die [Debugtools](debugger/debugging-in-visual-studio.md), um Probleme mit der App zu beheben. Sie können auch Projekte auf freigegebenen Buildservern oder in der Cloud erstellen. Automatisieren Sie den Buildprozess, um den Code zu erstellen, den die Entwickler in Ihrem Team in die Versionskontrolle eingecheckt haben. Beispielsweise können Sie ein Projekt oder mehrere Projekte jede Nacht oder bei jedem Einchecken dieses Code ausführen. Weitere Informationen finden Sie unter [Continuous integration on any platform (Fortlaufende Integration auf jeder Plattform)](https://www.visualstudio.com/en-us/docs/build/overview).
+ Sie können Ihre [App lokal erstellen](ide/compiling-and-building-in-visual-studio.md) und sicherstellen, dass sie ordnungsgemäß funktioniert. Dann verwenden Sie die [Debugtools](debugger/debugging-in-visual-studio.md) , um Probleme mit der App zu beheben. Sie können auch Projekte auf freigegebenen Buildservern oder in der Cloud erstellen. Automatisieren Sie den Buildprozess, um den Code zu erstellen, den die Entwickler in Ihrem Team in die Versionskontrolle eingecheckt haben. Beispielsweise können Sie ein Projekt oder mehrere Projekte jede Nacht oder bei jedem Einchecken dieses Code ausführen. Weitere Informationen finden Sie unter [Continuous integration on any platform (Fortlaufende Integration auf jeder Plattform)](https://www.visualstudio.com/en-us/docs/build/overview).
 
 ### <a name="test-and-improve-your-app"></a>Testen und Verbessern Ihrer App  
 [Erstellen Sie Komponententests](test/unit-test-your-code.md) zur Verbesserung der Qualität Ihrer App. Diese Tests können bei jedem Einchecken und als Teil des Builds ausgeführt werden.  
@@ -100,21 +101,21 @@ Sie können manuelle und automatisierte Tests für die App planen, erstellen und
 Diagnostizieren Sie Speicher- und CPU-Auslastung und andere Probleme auf Anwendungsebene. Weitere Informationen finden Sie unter [Profiling tools (Profilerstellungstools)](profiling/profiling-tools.md).
 
 ### <a name="deliver-your-teams-code-faster"></a>Schnellere Bereitstellung von Code des Teams  
- Beseitigen Sie Barrieren zwischen Mitgliedern Ihres Teams, und verbessern Sie die Zusammenarbeit. Gehen Sie noch weiter, und automatisieren Sie die Freigabe Ihrer App in den einzelnen Phasen der Entwicklung bis hin zur Produktion. Überwachen Sie die Leistung und Verfügbarkeit Ihrer App zur Laufzeit. Sammeln Sie Echtzeit-Nutzungsdaten dazu, wie Ihre Kunden die App tatsächlich verwenden. Weitere Informationen finden Sie unter [DevOps und Anwendungslebenszyklus-Verwaltung](https://www.visualstudio.com/en-us/docs/vsts-tfs-overview).  
+ Beseitigen Sie Barrieren zwischen Mitgliedern Ihres Teams, und verbessern Sie die Zusammenarbeit. Gehen Sie noch weiter, und automatisieren Sie die Freigabe Ihrer App in den einzelnen Phasen der Entwicklung bis hin zur Produktion. Überwachen Sie die Leistung und Verfügbarkeit Ihrer App zur Laufzeit. Sammeln Sie Echtzeit-Nutzungsdaten dazu, wie Ihre Kunden die App tatsächlich verwenden. Ausführliche Informationen finden Sie unter [DevOps und Anwendungslebenszyklus-Verwaltung](https://www.visualstudio.com/en-us/docs/vsts-tfs-overview) .  
 
-## <a name="whats-new"></a>Neuerungen?  
+## <a name="whats-new"></a>Neuigkeiten  
 Erfahren Sie mehr zu den Neuerungen in Visual Studio.
 
 |||  
 |-|-|  
-|[Neues in Visual Studio 2017](ide/whats-new-in-visual-studio.md)|[What’s new for Visual C++ (Neues bei Visual C++)](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
-|[What’s new for Visual C# (Neues bei Visual C#)](/dotnet/articles/csharp/csharp-7)|
+|[Neuerungen in Visual Studio 2017](ide/whats-new-in-visual-studio.md)|[Neuerungen bei Visual C++ in Visual Studio 2017](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
+|[Neues bei Visual C#](/dotnet/articles/csharp/csharp-7)|
 
 
 ## <a name="extend-visual-studio"></a>Erweitern von Visual Studio  
 Fügen Sie Ihre eigene Visual Studio-Erweiterung hinzu, um ein Tool oder Skript einzuschließen, das Sie beim Schreiben von Code häufig verwenden. Sie können benutzerdefinierte Menüelemente und Toolfenster erstellen und auf diese Weise eigene Tools in die Visual Studio-IDE integrieren. Sie können den Visual Studio-Editor so erweitern, dass Code analysiert und Fehler behoben werden, oder einen neuen Projekttyp hinzufügen, um genau die benötigten Elemente einzuschließen.  
 
-Unter [Visual Studio SDK](extensibility/visual-studio-sdk.md) finden Sie die neueste Version der Visual Studio-Erweiterbarkeitstools (VS SDK).  
+Unter [Visual Studio SDK](extensibility/visual-studio-sdk.md)finden Sie die neueste Version der Visual Studio-Erweiterbarkeitstools (VS SDK).  
 
 Sie können die .NET Compiler Platform (Roslyn) zum Schreiben eigener Code-Analyzer und Code-Generatoren verwenden. Unter [Roslyn](https://github.com/dotnet/Roslyn)finden Sie alles Nötige.  
 

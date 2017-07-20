@@ -30,19 +30,22 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 5c6c36ca969d5ca9ca3957a886ce45597159bc5c
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: a41015624d9c64e053770707bf09b73d8606cb03
+ms.contentlocale: de-de
+ms.lasthandoff: 05/24/2017
 
 ---
-# <a name="projects-and-solutions-options-dialog-box"></a>Projekte und Projektmappen, Dialogfeld "Optionen"
+# Projekte und Projektmappen, Dialogfeld "Optionen"
+<a id="projects-and-solutions-options-dialog-box" class="xliff"></a>
 Legt den Standardpfad der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]-Projektordner fest und bestimmt das Standardverhalten der Fenster **Ausgabe**, **Aufgabenliste** und **Projektmappen-Explorer** bei der Entwicklung und Erstellung von Projekten. Klicken Sie zum Zugriff auf dieses Dialogfeld auf **Extras/Optionen**, erweitern Sie **Projekte und Projektmappen**, und klicken Sie auf **Allgemein**.  
   
 > [!NOTE]
->  Die in einem Dialogfeld verfügbaren Optionen sowie die Namen und Positionen der angezeigten Menübefehle können sich je nach den persönlichen aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen Optionen unterscheiden. Diese Hilfeseite wurde unter Berücksichtigung der Option **Allgemeine Entwicklungseinstellungen** verfasst. Klicken Sie im Menü **Tools** auf Einstellungen **Importieren und Exportieren**, um die Einstellungen anzuzeigen oder zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Die in einem Dialogfeld verfügbaren Optionen sowie die Namen und Positionen der angezeigten Menübefehle können sich je nach den persönlichen aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen Optionen unterscheiden. Diese Hilfeseite wurde unter Berücksichtigung der Option **Allgemeine Entwicklungseinstellungen** verfasst. Klicken Sie im Menü **Tools** auf Einstellungen **Importieren und Exportieren**, um die Einstellungen anzuzeigen oder zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="settings"></a>Einstellungen  
+## Einstellungen
+<a id="settings" class="xliff"></a>  
  **Speicherort der Projekte**  
  Legt den Standardspeicherort fest, in dem neue Projekte und Projektmappenordner sowie Verzeichnisse erstellt werden. Verschiedene Dialogfelder verwenden auch den in dieser Option festgelegten Speicherort als Ausgangspunkt für Ordner. So verwendet z. B. das Dialogfeld "Projekt öffnen" diesen Speicherort für die Verknüpfung "Meine Projekte".  
   
@@ -78,5 +81,6 @@ Legt den Standardpfad der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_m
  **Beim Umbenennen von Dateien zum symbolischen Umbenennen auffordern**  
  Wenn diese Option aktiviert ist, werden Sie in einer Meldung gefragt, ob [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] alle im Projekt enthaltenen Verweise auf das Codeelement umbenennen soll.  
   
-## <a name="see-also"></a>Siehe auch  
+## Siehe auch
+<a id="see-also" class="xliff"></a>  
  [Dialogfeld „Optionen“, Projekte und Projektmappen, Erstellen und Ausführen](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)

@@ -27,16 +27,17 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 04c981d458912aaf3802e727369893759faab3a5
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 1600207e0c504f4b4dcbf620e92bcc06e14ec035
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurieren von Komponententests mithilfe einer .runsettings-Datei
-Komponententests in Visual Studio können mithilfe einer .runsettings-Datei konfiguriert werden. (Der Dateiname ist unerheblich, sofern Sie die Erweiterung ". runsettings" verwenden) Beispielsweise können Sie die .NET Framework-Version, auf der die Tests durchgeführt werden, das Verzeichnis, in dem Testergebnisse gespeichert werden, sowie die während eines Testlaufs gesammelten Daten ändern.  
+Komponententests in Visual Studio können mithilfe einer .runsettings-Datei konfiguriert werden. (Der Dateiname ist unerheblich, sofern Sie die Erweiterung „.runsettings“ verwenden) Beispielsweise können Sie die .NET Framework-Version, auf der die Tests durchgeführt werden, das Verzeichnis, in dem Testergebnisse gespeichert werden, sowie die während eines Testlaufs gesammelten Daten ändern.  
   
- Wenn Sie keine spezielle Konfiguration möchten, benötigen Sie keine Datei "*.runsettings". Sie wird meistens dazu verwendet, die [Code Coverage](../test/customizing-code-coverage-analysis.md) anzupassen.  
+ Wenn Sie keine spezielle Konfiguration möchten, benötigen Sie keine Datei „*.runsettings“. Sie wird meistens dazu verwendet, die [Code Coverage](../test/customizing-code-coverage-analysis.md) anzupassen.  
   
 > [!NOTE]
 >  **RUNSETTINGS- und TESTSETTINGS-Dateien**  
@@ -47,7 +48,7 @@ Komponententests in Visual Studio können mithilfe einer .runsettings-Datei konf
   
 ## <a name="customizing-tests-with-a-runsettings-file"></a>Anpassen von Tests mit einer .runsetting-Datei  
   
-1.  Fügen Sie Ihrer Visual Studio-Projektmappe eine XML-Datei hinzu und benennen Sie sie um. (Der Dateiname ist unerheblich, aber die Dateierweiterung muss ".runsettings" sein.)  
+1.  Fügen Sie Ihrer Visual Studio-Projektmappe eine XML-Datei hinzu und benennen Sie sie um. (Der Dateiname ist unerheblich, aber die Dateierweiterung muss „.runsettings“ sein.)  
   
 2.  Ersetzen Sie den Inhalt der Datei durch das [Beispiel](#example).  
   

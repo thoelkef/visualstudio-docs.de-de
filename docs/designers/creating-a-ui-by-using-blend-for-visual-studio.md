@@ -29,10 +29,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 5c2ab4063911852bbc79b8239693a01e0818b4a9
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: f880816f383712f87624467c9ed3b45a1c2ccb8c
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Erstellen einer Benutzeroberfläche mit Blend für Visual Studio
@@ -92,8 +93,8 @@ Mit Blend für Visual Studio können Sie XAML-basierte Windows-Desktop-, Web-, [
 |||  
 |-|-|  
 |![](../designers/media/b1_1.png "B1_1")|**Objektansicht** Zeigt die visuelle Struktur eines Dokuments an. Sie können einen Drilldown zu verschiedenen Detailebenen durchführen. Sie können auch zum Organisieren von Objekten auf der Zeichenfläche weitere Ebenen hinzufügen. Auf diese Weise können Sie sie sperren und als Gruppe ausblenden.|  
-|![](../designers/media/b1_2.png "B1_2")|**Anzeige für Aufzeichnungsmodus** Zeigt an, wenn Sie Eigenschaftenänderungen in einer Zeitachse aufzeichnen.|  
-|![](../designers/media/b1_3.png "B1_3")|**Storyboardauswahl** Zeigt eine Liste der von Ihnen erstellten Storyboards an.|  
+|![](../designers/media/b1_2.png "B1_2")|**Anzeige für Aufzeichnungsmodus** Prüfen Sie, ob Sie Eigenschaftenänderungen in einer Zeitachse aufzeichnen.|  
+|![](../designers/media/b1_3.png "B1_3")|**Storyboardauswahl** Zeigen Sie eine Liste der von von Ihnen erstellten Storyboards an.|  
 |![](../designers/media/b1_4.png "B1_4")|**Storyboard schließen** Schließt das aktuelle Storyboard.|  
 |![](../designers/media/b1_5.png "B1_5")|**Storyboard-Optionen** Erstellen, Kopieren, Umkehren, Löschen, Umbenennen oder Schließen eines Storyboards.|  
 |![](../designers/media/b1_6.png "B1_6")|**Wiedergabesteuerelemente** Navigieren durch die Zeitachse. Sie können die Position auch ziehen, um auf der Zeitachse zu navigieren oder *Scrubbing* auszuführen.|  

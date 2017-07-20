@@ -27,10 +27,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: e9a05d008f671fb79d6813a14c594b82f27697e3
-ms.openlocfilehash: 1613943840c79028e3c60db0f54a73243eb3948c
-ms.lasthandoff: 03/27/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: a2958c20bbfbd9f4f3d03946dbe230326894b1c1
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="gpu-usage"></a>GPU-Nutzung
@@ -68,7 +69,7 @@ Verwenden Sie das GPU-Nutzungstool im Visual Studio-Leistungs- und Diagnosehub, 
   
  Allgemeine Informationen, die in Echtzeit angezeigt werden, umfassen Frametiming, Framerate und GPU-Auslastung. Jedes dieser Datenelemente wird unabhängig voneinander in einem Diagramm dargestellt, es wird jedoch eine gemeinsamen Zeitskala verwendet, sodass Sie diese problemlos in Beziehung zueinander setzen können.  
   
- Die Diagramme **Framedauer (ms)** und **Frames pro Sekunde (FPS)** enthalten zwei rote, horizontale Linien, die Leistungsziele von 60 und 30 Frames pro Sekunde darstellen. Im Diagramm **Framedauer** überschreitet Ihre App das Leistungsziel, wenn sich das Diagramm unterhalb der Linie befindet, und verfehlt es, wenn sich das Diagramm oberhalb der Linie befindet. Im Diagramm „Frames pro Sekunde“ verhält es sich umgekehrt. Wenn sich das Diagramm oberhalb der Linie befindet, überschreitet die App das Leistungsziel, und wenn es sich unterhalb der Linie befindet, verfehlt sie das Leistungsziel. Diese Diagramme werden in erster Linie verwendet, um eine allgemeine Vorstellung der Leistung Ihrer App zu erhalten und ggf. Leistungseinbußen zu ermitteln, u. a. einen plötzlichen Abfall der Framerate oder einen Spitzenwert der GPU-Auslastung.  
+ Die Diagramme **Framedauer (ms)** und **Frames pro Sekunde (FPS)** enthalten zwei rote, horizontale Linien, die Leistungsziele von 60 und 30 Frames pro Sekunde darstellen. Im Diagramm **Framedauer** überschreitet Ihre App das Leistungsziel, wenn sich das Diagramm unterhalb der Linie befindet, und verfehlt es, wenn sich das Diagramm oberhalb der Linie befindet. Im Diagramm „Frames pro Sekunde“ verhält es sich umgekehrt. Wenn sich das Diagramm oberhalb der Linie befindet, überschreitet die App das Leistungsziel, und wenn es sich unterhalb der Linie befindet, verfehlt sie das Leistungsziel. Diese Diagramme werden in erster Linie verwendet, um eine allgemeine Vorstellung der Leistung Ihrer App zu erhalten und ggf. Leistungseinbußen zu ermitteln, u.a. einen plötzlichen Abfall der Framerate oder einen Spitzenwert der GPU-Auslastung.  
   
  Wenn Sie Ihre App im GPU-Nutzungstool ausführen, erfasst die Diagnosesitzung auch detaillierte Informationen zu den auf GPU ausgeführten Grafikereignissen. Diese Informationen werden verwendet, um einen präziseren Bericht zur Hardwarenutzung Ihrer App zu erstellen. Da es einige Zeit dauert, diesen Bericht anhand der erfassten Informationen zu generieren, steht dieser nur zur Verfügung, wenn die Diagnosesitzung das Erfassen von Informationen bereits abgeschlossen hat.  
   

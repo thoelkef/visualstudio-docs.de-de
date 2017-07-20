@@ -34,25 +34,29 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 80ce7de7e89844d8c9cb1052499b2d873e04965e
-ms.lasthandoff: 04/05/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 41cca3051eaf1bfdc90f6616900699b8996033b0
+ms.contentlocale: de-de
+ms.lasthandoff: 05/24/2017
 
 ---
-# <a name="options-text-editor-cc-formatting"></a>Optionen, Text-Editor, C/C++, Formatierung
+# Optionen, Text-Editor, C/C++, Formatierung
+<a id="options-text-editor-cc-formatting" class="xliff"></a>
 Ermöglicht es Ihnen, das Standardverhalten des Code-Editors zu ändern, wenn Sie in C oder C++ programmieren.  
   
  Um diese Seite zu öffnen, klicken Sie im linken Fenster auf das Dialogfeld **Optionen**, erweitern Sie den **Text-Editor** und **C/C++** und klicken dann auf **Formatieren**.  
   
 > [!NOTE]
->  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).  
   
-## <a name="cc-options"></a>C/C++-Optionen  
+## C/C++-Optionen
+<a id="cc-options" class="xliff"></a>  
  **Automatische QuickInfos aktivieren**  
  Aktiviert oder deaktiviert die IntelliSense-Funktion QuickInfo.  
   
-## <a name="inactive-code"></a>Inaktiver Code  
+## Inaktiver Code
+<a id="inactive-code" class="xliff"></a>  
  **Inaktive Codeblöcke anzeigen**  
  Code, der aufgrund von `#ifdef`-Deklarationen inaktiv ist, wird eingefärbt, damit inaktiver Code besser erkennbar ist.  
   
@@ -62,21 +66,24 @@ Ermöglicht es Ihnen, das Standardverhalten des Code-Editors zu ändern, wenn Si
  **Deckkraftprozentsatz für inaktiven Code**  
  Der Deckkraftgrad für inaktive Codeblöcke kann angepasst werden.  
   
-## <a name="indentation"></a>Indentation  
+## Indentation
+<a id="indentation" class="xliff"></a>  
  **Geschweifte Klammern einrücken**  
  Sie können konfigurieren, wie geschweifte Klammern ausgerichtet werden, wenn Sie die EINGABETASTE drücken, nachdem Sie einen Codeblock, z. B. eine Funktion oder eine `for`-Schleife, begonnen haben. Die geschweiften Klammern können entweder am ersten Zeichen des Codeblocks ausgerichtet oder eingezogen sein.  
   
  **Automatischer Einzug auf Registerkarte**  
  Sie können konfigurieren, was auf der aktuellen Codezeile geschieht, wenn Sie die TAB-TASTE drücken. Entweder wird die Zeile eingezogen oder ein Tabulator eingefügt.  
   
-## <a name="miscellaneous"></a>Verschiedenes  
+## Verschiedenes
+<a id="miscellaneous" class="xliff"></a>  
  **Bemerkungen im Fenster Aufgabenliste auflisten**  
  Der Editor kann geöffnete Quelldateien in den Kommentaren nach voreingestellten Wörtern scannen. Er erstellt einen Eintrag im Fenster **Aufgabenliste** für beliebige Schlüsselwörter, die gefunden werden.  
   
  **Zugehörige Token hervorheben**  
  Wenn sich der Cursor neben einer geschweiften Klammer befindet, kann der Editor die entsprechende geschweifte Klammer hervorheben, damit Sie den enthaltenen Code leichter sehen können.  
   
-## <a name="outlining"></a>Gliedern  
+## Gliedern
+<a id="outlining" class="xliff"></a>  
  **Beim Öffnen von Dateien in Gliederungsmodus wechseln**  
  Wenn Sie eine Datei im Text-Editor öffnen, können Sie die Gliederungsfunktion aktivieren. Weitere Informationen finden Sie unter [Gliedern](../../ide/outlining.md). Wenn diese Option ausgewählt ist, wird die Gliederungsfunktion beim Öffnen einer Datei aktiviert.  
   
@@ -92,6 +99,7 @@ Ermöglicht es Ihnen, das Standardverhalten des Code-Editors zu ändern, wenn Si
   
 -   [while-Anweisung (C++)](/cpp/cpp/while-statement-cpp)  
   
-## <a name="see-also"></a>Siehe auch  
+## Siehe auch
+<a id="see-also" class="xliff"></a>  
  [Allgemein, Umgebung, Dialogfeld „Optionen“](../../ide/reference/general-environment-options-dialog-box.md)   
  [Verwenden von IntelliSense](../../ide/using-intellisense.md)

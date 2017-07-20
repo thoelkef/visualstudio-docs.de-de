@@ -13,10 +13,11 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 2cfcc962e41d67995f1e1e04b787a49edfbbfbf6
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 8d0cc37019b04d6f734d6bd604c0ddd948b6dc9f
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Ausführen von Profilerstellungstools mit oder ohne den Debugger
@@ -33,11 +34,11 @@ Visual Studio bietet Ihnen nun eine Auswahl von Leistungstools, von denen einige
   
 2.  Wird das Problem durch eine CPU-intensive Verarbeitung verursacht?  
   
-     Viele Probleme sind auf externe Leistungsprobleme zurückzuführen, z. B. Datei-E/A oder Netzwerkreaktionsfähigkeit, es sollte daher keinen großen Unterschied machen, ob Sie die Leistungstools mit oder ohne den Debugger ausführen. Wenn Ihr Problem auf CPU-intensive Aufrufe zurückzuführen ist, kann der Unterschied zwischen Release- und Debugkonfigurationen beträchtlich sein, daher sollten Sie überprüfen, ob das Problem im Releasebuild besteht, bevor Sie die Tools mit integriertem Debugger verwenden.  
+     Viele Probleme sind auf externe Leistungsprobleme zurückzuführen, z.B. Datei-E/A oder Netzwerkreaktionsfähigkeit. Es sollte daher keinen großen Unterschied machen, ob Sie die Leistungstools mit oder ohne den Debugger ausführen. Wenn Ihr Problem auf CPU-intensive Aufrufe zurückzuführen ist, kann der Unterschied zwischen Release- und Debugkonfigurationen beträchtlich sein, daher sollten Sie überprüfen, ob das Problem im Releasebuild besteht, bevor Sie die Tools mit integriertem Debugger verwenden.  
   
 3.  Müssen Sie die Leistung genau messen oder ist eine ungefähre Angabe akzeptabel?  
   
-     In Debugbuilds sind bestimmte Optimierungen nicht vorhanden, die Releasebuilds bereitstellen, z. B. Inlinefunktionsaufrufe und Konstanten, das Löschen nicht verwendeter Codepfade und das Speichern von Variablen auf eine Art und Weise, dass diese vom Debugger nicht verwendet werden können. Der Debugger selbst ändert seine Leistung, da er bestimmte Vorgänge ausführt, die zum Debuggen erforderlich sind (z. B. das Abfangen von Ausnahmen und Ladeereignisse für Module). Leistungsangaben in den Tools mit integriertem Debugger sind daher nur innerhalb von zehn Millisekunden genau. Leistungsangaben für Releasekonfigurationen mit den Tools ohne Debugger sind viel präziser.  
+     In Debugbuilds sind bestimmte Optimierungen nicht vorhanden, die Releasebuilds bereitstellen, z.B. Inlinefunktionsaufrufe und Konstanten, das Löschen nicht verwendeter Codepfade und das Speichern von Variablen auf eine Art und Weise, dass diese vom Debugger nicht verwendet werden können. Der Debugger selbst ändert seine Leistung, da er bestimmte Vorgänge ausführt, die zum Debuggen erforderlich sind (z. B. das Abfangen von Ausnahmen und Ladeereignisse für Module). Leistungsangaben in den Tools mit integriertem Debugger sind daher nur innerhalb von zehn Millisekunden genau. Leistungsangaben für Releasekonfigurationen mit den Tools ohne Debugger sind viel präziser.  
   
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Sammeln von Profilerstellungsdaten während des Debuggens  
  Der folgende Abschnitt beschreibt das lokale Debuggen. Informationen zum Debuggen auf einem Gerät oder zum Remotedebuggen erhalten Sie in späteren Abschnitten.  

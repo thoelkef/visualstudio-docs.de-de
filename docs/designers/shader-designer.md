@@ -31,10 +31,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: ff6e473c6e5b2d7a24a4e906d2f592742e3c2d14
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: af7472d5152babe2088ae3cc49caaf718a539878
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="shader-designer"></a>Shader-Designer
@@ -144,7 +145,7 @@ In diesem Dokument wird beschrieben, wie mit dem [!INCLUDE[vsprvs](../code-quali
   
 |Parameter|Eigenschaften|  
 |---------------|----------------|  
-|**Textur 1** – **Textur 8**|**Zugriff**: **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Dateiname**: Der vollständige Pfad der Texturdatei, die diesem Texturregister zugeordnet ist.|  
+|**Textur 1** - **Textur 8**|**Zugriff**: **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Dateiname**: Der vollständige Pfad der Texturdatei, die diesem Texturregister zugeordnet ist.|  
 |**Material (Umgebung)**|**Zugriff**: **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert**: Die diffuse Farbe des aktuellen Pixels aufgrund indirekter oder Umgebungsbeleuchtung.|  
 |**Material (Diffus)**|**Zugriff**: **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert**: Eine Farbe, die beschreibt, wie das aktuelle Pixel die direkte Beleuchtung streut.|  
 |**Material (Selbstleuchtend)**|**Zugriff**: **Öffentlich**, sodass die Eigenschaft im Modell-Editor festgelegt werden kann, andernfalls **Privat**.<br /><br /> **Wert**: Die Farbeinwirkung des aktuellen Pixels aufgrund der selbsterzeugten Beleuchtung.|  

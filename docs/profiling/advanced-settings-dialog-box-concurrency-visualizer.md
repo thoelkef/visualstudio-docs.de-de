@@ -30,10 +30,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 0b25d326d103c5da3b09b79d3a574734debed071
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 89694c49fdd115064d1ebe9f5dfe910b77548a76
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Erweiterte Einstellungen (Dialogfeld) (Parallelitätsschnellansicht)
@@ -75,7 +76,7 @@ Mithilfe des Dialogfelds **Erweiterte Einstellungen** in der Parallelitätsschne
  Auf der Registerkarte „Marker“ können Sie den Satz von ETW-Anbietern konfigurieren, die als Marker in der Parallelitätsschnellansicht angezeigt werden.  Sie können die Markererfassung auch basierend auf Wichtigkeitsstufe und ETW-Kategorie filtern.  Bei Verwendung des [Parallelitätsschnellansichts-SDK](../profiling/concurrency-visualizer-sdk.md) und Ihres eigenen Markeranbieters können Sie ihn hier registrieren, damit er in der Threadansicht angezeigt wird.  
   
 ### <a name="adding-a-new-provider"></a>Hinzufügen eines neuen Anbieters  
- Wenn der Code das [Parallelitätsschnellansichts-SDK](../profiling/concurrency-visualizer-sdk.md) oder generierte ETW-Ereignisse verwendet, die der Konvention <xref:System.Diagnostics.Tracing.EventSource> entsprechen, können Sie diese Ereignisse in der Parallelitätsschnellansicht anzeigen, indem Sie sie in diesem Dialogfeld registrieren.  
+ Wenn der Code das [SDK für die Parallelitätsschnellansicht](../profiling/concurrency-visualizer-sdk.md) oder generierte ETW-Ereignisse verwendet, die der Konvention <xref:System.Diagnostics.Tracing.EventSource> entsprechen, können Sie diese Ereignisse in der Parallelitätsschnellansicht anzeigen, indem Sie sie in diesem Dialogfeld registrieren.  
   
  Geben Sie im Feld „Name“ einen Namen ein, der die Typen von Ereignissen beschreibt, die vom Anbieter generiert werden.  Geben Sie im Feld „GUID“ die GUID ein, die diesem Anbieter zugeordnet ist. (Eine GUID ist jedem ETW-Anbieter zugeordnet.)  
   

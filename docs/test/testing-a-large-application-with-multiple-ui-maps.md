@@ -29,10 +29,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
 ms.openlocfilehash: 846860b7d61d9fbda6ca10793420b66fdab4a01f
-ms.lasthandoff: 04/04/2017
+ms.contentlocale: de-de
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Testing a Large Application with Multiple UI Maps
@@ -42,7 +43,7 @@ In diesem Thema wird besprochen, wie sich Tests der programmierten UI beim Test 
   
 -   Visual Studio Enterprise  
   
- Beim erstellen eines neuen Tests der programmierten UI generiert das [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Testframework Code zum Testen standardmäßig in einer <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>-Klasse. Weitere Informationen zum Aufzeichnen von Tests der programmierten UI finden Sie unter [Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) und [Aufbau von Tests der programmierten UI](../test/anatomy-of-a-coded-ui-test.md).  
+ Beim Erstellen eines neuen Tests der programmierten UI erstellt das [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Testframework den Code für den Test standardmäßig in einer <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>-Klasse. Weitere Informationen zum Aufzeichnen von Tests der programmierten UI finden Sie unter [Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) und [Aufbau von Tests der programmierten UI](../test/anatomy-of-a-coded-ui-test.md).  
   
  Der erzeugte Code für die UI-Zuordnung enthält eine Klasse für jedes Objekt mit der der Test interagiert. Für jede erzeugte Methode wird speziell für diese Methode eine Begleitklasse für Methodenparameter erzeugt. Wenn es eine große Menge an Objekten, Seiten, Formularen und Steuerelementen in der Anwendung gibt, kann die UI-Zuordnung sehr groß werden. Auch wird die Anwendung sehr unhandlich, wenn mehrere Personen an Tests mit einer einzigen, großen UI-Zuordnungsdatei arbeiten.  
   

@@ -28,10 +28,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: b01ab828f06a13f3f8e4c7b9c72e2f05da409840
-ms.openlocfilehash: 49baa370a6d6258f2435b80adb504d78f922b8e8
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: b3c999f9b960e6d220fcf9e4715393dd27e5fe73
 ms.contentlocale: de-de
-ms.lasthandoff: 04/14/2017
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Setup, Installation und Überprüfungen für Mac-Benutzer
@@ -45,13 +45,13 @@ Dieses Thema ist für Entwickler bestimmt, die hauptsächlich auf einem Mac arbe
 
     -   **Zum Ausführen von Xamarin Studio direkt auf dem Mac:** Xamarin Studio ist die Entwicklungsumgebung von Xamarin, die das Erstellen von Android-, iOS- und Windows-Apps mithilfe von C# unterstützt.  Einen schnellen Überblick zu Xamarin Studio finden Sie unter [Xamarin Studio Overview](https://xamarin.com/studio) (xamarin.com).
 
-    -   **Wenn auf Ihrem Mac bereits Parallels oder VMWare installiert ist:** Führen Sie Windows mit Visual Studio 2017 und Xamarin 4 innerhalb von Parallels oder VMWare aus.  Bei dieser Konfiguration stellt Xamarin eine Erweiterung dar, die zusammen mit Visual Studio installiert wird und die Möglichkeit bereitstellt, Visual Studio als Ihre Entwicklungsumgebung für das Erstellen von Android-, iOS- und Windows-Apps mithilfe von C# zu verwenden.  Beachten Sie, dass Sie im Rahmen des Visual Studio Developer Essentials-Programms ein kostenloses Parallels-Abonnement für drei Monate erhalten können. Mehr dazu können Sie unter [Microsoft Visual Studio Dev Essentials Will Include Parallels Desktop Pro and Parallels Access](http://blog.parallels.com/blog/2015/11/18/visual-studio-dev-essentials/) [Microsoft Visual Studio Dev Essentials beinhaltet zukünftig auch Parallels Desktop Pro und Parallels Access] (Parallels-Blog) erfahren.
+    -   **Wenn auf Ihrem Mac bereits Parallels oder VMWare installiert ist:** Führen Sie Windows mit Visual Studio 2017 und Xamarin 4 innerhalb von Parallels oder VMWare aus.  Bei dieser Konfiguration stellt Xamarin eine Erweiterung dar, die zusammen mit Visual Studio installiert wird und die Möglichkeit bereitstellt, Visual Studio als Ihre Entwicklungsumgebung für das Erstellen von Android-, iOS- und Windows-Apps mithilfe von C# zu verwenden.  Beachten Sie, dass Sie im Rahmen des Visual Studio Developer Essentials-Programms ein kostenloses Parallels-Abonnement für drei Monate erhalten können. Mehr dazu können Sie unter [Microsoft Visual Studio Dev Essentials Will Include Parallels Desktop Pro and Parallels Access](http://blog.parallels.com/blog/2015/11/18/visual-studio-dev-essentials/) [Microsoft Visual Studio Dev Essentials beinhaltet zukünftig auch Parallels Desktop Pro und Parallels Access]\(Parallels-Blog) erfahren.
 
  Dieses Thema enthält die Anweisungen zu diesen Anforderungen.  Während der Installationsvorgang ausgeführt wird, können Sie das Thema [Erfahren Sie mehr über die Entwicklung für mobile Plattformen mit Xamarin](../cross-platform/learn-about-mobile-development-with-xamarin.md) durcharbeiten, um das erforderliche Hintergrundmaterial zu lesen und anzusehen.
 
 ##  <a name="mac"></a> Mac-Setup (Apple ID, Xcode und Xamarin)
 
-1.  Erstellen Sie eine kostenlose Apple ID unter [My Apple ID](https://appleid.apple.com/) , wenn Sie noch keine besitzen. Dies ist für die Installation von und die Anmeldung bei Xcode erforderlich.
+1.  Erstellen Sie eine kostenlose Apple ID unter [My Apple ID](https://appleid.apple.com/), wenn Sie noch keine besitzen. Dies ist für die Installation von und die Anmeldung bei Xcode erforderlich.
 
 2.  Laden Sie Xcode von [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/)herunter, und installieren Sie es.
 
@@ -112,7 +112,7 @@ Dieses Thema ist für Entwickler bestimmt, die hauptsächlich auf einem Mac arbe
 
 2.  Überprüfen Sie den Android-Designer: Öffnen Sie im Android-Projekt im Projektmappen-Explorer die Datei **Ressourcen > Layout > Main.axml**.
 
-    -   Wenn eine Fehlermeldung "Das installierte Android-SDK ist veraltet" angezeigt wird, klicken Sie in dieser Nachricht auf **Android SDK öffnen** , und wählen Sie die neueste verfügbare SDK-Version aus. Beachten Sie, dass Sie Visual Studio als Administrator ausführen müssen, um das SDK zu aktualisieren.
+    -   Wenn eine Fehlermeldung „Das installierte Android SDK ist veraltet“ angezeigt wird, klicken Sie in dieser Nachricht auf **Android SDK öffnen**, und wählen Sie die neueste verfügbare SDK-Version aus. Beachten Sie, dass Sie Visual Studio als Administrator ausführen müssen, um das SDK zu aktualisieren.
 
 3.  Überprüfen Sie, ob Sie aus Visual Studio eine Verbindung zu dem Emulator herstellen können, der auf dem Mac installiert ist.  Das Ergebnis dieses Vorgangs ist, dass der Xamarin Player in der Liste der Emulatoren angezeigt wird, die in Visual Studio zum Debuggen ausgewählt werden können.  Folgen Sie hierzu den Anweisungen unter [Connecting Visual Studio to the Xamarin Android Player](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/android-player-with-visual-studio-in-vm/) (xamarin.com).
 

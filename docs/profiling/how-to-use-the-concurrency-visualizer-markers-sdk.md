@@ -28,10 +28,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 1a51a8dbf28be35febf4a0954a997e542ffd0f09
 ms.openlocfilehash: a05e0509ec092f810e0990fbc838707d126595e1
-ms.lasthandoff: 02/22/2017
+ms.contentlocale: de-de
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Gewusst wie: Verwenden der SDK-Parallelitätsschnellansichtsmarker
@@ -97,7 +98,7 @@ Dieses Thema veranschaulicht, wie SDK-Parallelitätsschnellansichtsmarker verwen
   
      ![Parallelitätsschnellansicht mit 3 benutzerdefinierten Markerreihen](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")  
   
-### <a name="to-use-visual-basic-or-c"></a>Visual Basic oder C# verwenden# #
+### <a name="to-use-visual-basic-or-c"></a>So verwenden Sie Visual Basic oder C# #
   
 1.  Fügen Sie die Unterstützung mit SDK-Parallelitätsschnellansichtsmarker zu Ihrer Anwendung hinzu. Weitere Informationen finden Sie unter [Parallelitätsschnellansichts-SDK](../profiling/concurrency-visualizer-sdk.md).  
   
@@ -112,7 +113,7 @@ Dieses Thema veranschaulicht, wie SDK-Parallelitätsschnellansichtsmarker verwen
     using Microsoft.ConcurrencyVisualizer.Instrumentation;  
     ```  
   
-3.  Fügen Sie den Code hinzu, um drei Spannen für die Standardmarkerreihe zu erstellen und eine Flag, eine Nachricht und eine Warnung für jede Spanne zu schreiben. Sie erstellen ein <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span>-Objekt durch Aufrufen der statischen [EnterSpan](assetId:///EnterSpan?qualifyHint=False&autoUpgrade=True)-Methode. Um in die Standardreihe zu schreiben, verwenden Sie die statische Schreibmethode der <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers> -Klasse.  
+3.  Fügen Sie den Code hinzu, um drei Spannen für die Standardmarkerreihe zu erstellen und eine Flag, eine Nachricht und eine Warnung für jede Spanne zu schreiben. Sie erstellen ein <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span>-Objekt, indem Sie die statische [EnterSpan](assetId:///EnterSpan?qualifyHint=False&autoUpgrade=True)-Methode aufrufen. Um in die Standardreihe zu schreiben, verwenden Sie die statischen Methoden zum Schreiben der <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>-Klasse.  
   
     ```VB  
   
@@ -157,7 +158,7 @@ Dieses Thema veranschaulicht, wie SDK-Parallelitätsschnellansichtsmarker verwen
   
      ![Parallelitätsschnellansicht mit Markern und Warnungen](../profiling/media/cvmarkersmanaged.png "CvMarkersManaged")  
   
-5.  Fügen Sie den Code zum Erstellen von benutzerdefinierten Markerreihen hinzu, indem Sie die statische <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.CreateMarkerSeries%2A>-Methode verwenden. Die <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries> -Klasse enthält Methoden zum Erstellen von Spannen und Schreiben von Flags, Nachrichten und Warnungen.  
+5.  Fügen Sie Code hinzu, um benutzerdefinierte Markerreihen mithilfe der statischen <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.CreateMarkerSeries%2A>-Methode zu erstellen. Die <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries>-Klasse enthält Methoden zum Erstellen von Spannen und zum Schreiben von Flags, Meldungen und Warnungen.  
   
     ```VB  
   

@@ -42,17 +42,19 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 50f1d083b54ecc8418cac66086b40de8e3c69b73
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: e2852ef4eb48247a97fe513efc7cdecb89ec619a
+ms.contentlocale: de-de
+ms.lasthandoff: 05/24/2017
 
 ---
-# <a name="web-browser-environment-options-dialog-box"></a>Webbrowser, Umgebung, Dialogfeld "Optionen"
+# Webbrowser, Umgebung, Dialogfeld "Optionen"
+<a id="web-browser-environment-options-dialog-box" class="xliff"></a>
 Legt Optionen sowohl für den internen Webbrowser als auch für Internet Explorer fest. Klicken Sie zum Öffnen dieses Dialogfelds im Menü **Extras** auf **Optionen**, erweitern Sie den Ordner **Umgebung**, und klicken Sie dann auf **Webbrowser**.  
   
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü Extras auf Einstellungen importieren und exportieren, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü Extras auf Einstellungen importieren und exportieren, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).  
   
 > [!IMPORTANT]
 >  Durch Öffnen bestimmter Webdateien oder -komponenten kann auf Ihrem Computer Code ausgeführt werden.  
@@ -78,7 +80,8 @@ Legt Optionen sowohl für den internen Webbrowser als auch für Internet Explore
 > [!NOTE]
 >  Verwenden Sie das Dialogfeld „Browserauswahl“, um den internen Webbrowser von Visual Studio, der eine Version von Internet Explorer ist,durch einen anderen, externen Webbrowser zu ersetzen.  
   
-## <a name="see-also"></a>Siehe auch  
+## Siehe auch
+<a id="see-also" class="xliff"></a>  
  [Dialogfeld „Umgebungsoptionen“](../../ide/reference/environment-options-dialog-box.md)   
  [Allgemein, Umgebung, Dialogfeld „Optionen“](../../ide/reference/general-environment-options-dialog-box.md)   
  [HTML-Designer](http://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)

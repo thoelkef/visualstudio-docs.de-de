@@ -28,10 +28,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 86e3e1625cffabf3b64edd0da7307db7773adf4c
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 90d4fec70dd131289f37d35f896d87c6e0843e83
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Bestimmen des Umfangs des zu testenden Codes mithilfe von Code Coverage
@@ -65,7 +66,7 @@ Wenn Sie den Anteil des Projektcodes ermitteln möchten, der in codierten Tests 
 >      Wenn Sie mit nicht verwaltetem (systemeigenen) Code arbeiten, verwenden Sie einen Debugbuild.  
 > -   Stellen Sie sicher, dass Sie für jede Assembly PDB-Dateien (Symboldateien) generieren.  
 >   
->  Sollten Sie nicht die erwarteten Ergebnisse erhalten, finden Sie weitere Informationen unter [Problembehandlung bei der Codeabdeckung](../test/troubleshooting-code-coverage.md). . Vergessen Sie nicht, die Codeabdeckung nach Aktualisierung des Codes erneut auszuführen. Abdeckungsergebnisse und Codefarbe werden nach Änderung des Codes oder der Ausführung von nicht automatisch aktualisiert.  
+>  Sollten Sie nicht die erwarteten Ergebnisse erhalten, finden Sie weitere Informationen unter [Problembehandlung bei der Code Coverage](../test/troubleshooting-code-coverage.md). . Vergessen Sie nicht, die Code Coverage nach Aktualisierung des Codes erneut auszuführen. Abdeckungsergebnisse und Codefarbe werden nach Änderung des Codes oder der Ausführung von nicht automatisch aktualisiert.  
   
 ## <a name="reporting-in-blocks-or-lines"></a>Berichterstellung in Blöcken oder in Zeilen  
  Die Codeabdeckung wird in *Blöcken* gezählt. Ein Block ist ein Stück Code mit genau einem Einstiegs- und Endpunkt.  Wenn die Ablaufsteuerung des Programms einen Block während eines Testlaufs durchläuft, wird dieser Block als abgedeckt gezählt. Wie oft der Block verwendet wird, hat keinen Einfluss auf das Ergebnis.  
@@ -271,7 +272,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
   
      Wenn Sie über mehrere Testquelldefinitionen verfügen, wiederholen Sie diesen Schritt für jede einzelne Definition.  
   
-    -   *Es ist jedoch kein Feld mit dem Namen**Type of Run Settings File**(Typ der Laufzeiteinstellungsdatei) vorhanden.*  
+    -   *Es ist jedoch kein Feld mit dem Namen **Type of Run Settings File** (Typ der Laufzeiteinstellungsdatei) vorhanden.*  
   
          Wählen Sie **Testassembly** unter **Automatisierte Tests**, und klicken Sie auf die Schaltfläche mit den Auslassungspunkten **[...]** am Ende der Zeile. Wählen Sie unter **Test Runner** im Dialogfeld **Testlauf hinzufügen/bearbeiten** die Option **Visual Studio Test Runner** aus.  
   
@@ -296,7 +297,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ## <a name="external-resources"></a>Externe Ressourcen  
   
 ### <a name="guidance"></a>Empfehlungen  
- [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside (Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests)](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Tests für fortlaufende Übermittlung mit Visual Studio 2012 – Kapitel 2: Komponententests – Interne Tests](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Siehe auch  
  [Anpassen der Code Coverage-Analyse](../test/customizing-code-coverage-analysis.md)   

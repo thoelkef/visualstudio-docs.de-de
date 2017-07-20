@@ -30,29 +30,35 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: f96040d6e0a652998cc5603b67afbb564d81a8fd
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 8bf0b097be929b30627e0f1139c6e0b145933ab4
+ms.openlocfilehash: 96cd56eaeea20b2b0defcb60a188c9e13c19ec6a
+ms.contentlocale: de-de
+ms.lasthandoff: 05/26/2017
 
 ---
-# <a name="hosting-process-vshostexe"></a>Hostprozess (vshost.exe)
+# Hostprozess (vshost.exe)
+<a id="hosting-process-vshostexe" class="xliff"></a>
 Der Visual Studio-Hostprozess verbessert die Debugleistung und ermöglicht das Debuggen von teilweise vertrauenswürdigen Anwendungen und die Ausdrucksauswertung zur Entwurfszeit. Die Hostprozessdateien enthalten vshost im Dateinamen und befinden sich im Ausgabeordner Ihres Projekts. Weitere Informationen finden Sie unter [Debuggen und der Hostprozess](../debugger/debugging-and-the-hosting-process.md).  
   
 > [!NOTE]
 >  Hostprozessdateien (.vshost.exe) sind für die Verwendung von Visual Studio und sollten nicht direkt ausgeführt oder mit Ihrer Anwendung bereitgestellt werden.  
   
-## <a name="improved-debugging-performance"></a>Verbesserte Debugleistung  
- Der Hostprozess erstellt eine Anwendungsdomäne und ordnet die Anwendung dem Debugger zu. Das Ausführen dieser Aufgaben kann zu einer spürbaren Verzögerung zwischen der Zeit, wenn das Debuggen gestartet wird, und der Zeit, wenn die Anwendung beginnt, führen. Der Hostprozess hilft die Leistung durch das Erstellen der Anwendungsdomäne und das Zuordnen des Debuggers im Hintergrund zu steigern sowie durch Speichern der Anwendungsdomäne und des Debuggerzustands zwischen den Ausführungen der Anwendung. Weitere Informationen zu Anwendungsdomänen finden Sie unter [Anwendungsdomänen](http://msdn.microsoft.com/Library/113a8bbf-6875-4a72-a49d-ca2d92e19cc8).  
+## Verbesserte Debugleistung
+<a id="improved-debugging-performance" class="xliff"></a>  
+ Der Hostprozess erstellt eine Anwendungsdomäne und ordnet die Anwendung dem Debugger zu. Das Ausführen dieser Aufgaben kann zu einer spürbaren Verzögerung zwischen der Zeit, wenn das Debuggen gestartet wird, und der Zeit, wenn die Anwendung beginnt, führen. Der Hostprozess hilft die Leistung durch das Erstellen der Anwendungsdomäne und das Zuordnen des Debuggers im Hintergrund zu steigern sowie durch Speichern der Anwendungsdomäne und des Debuggerzustands zwischen den Ausführungen der Anwendung. Weitere Informationen zu Anwendungsdomänen finden Sie unter [Anwendungsdomänen](/dotnet/framework/app-domains/application-domains).  
   
-## <a name="partial-trust-debugging"></a>Das Debuggen teilweise vertrauenswürdiger Anwendungen  
+## Das Debuggen teilweise vertrauenswürdiger Anwendungen
+<a id="partial-trust-debugging" class="xliff"></a>  
  Eine Anwendung kann auf der [Seite „Sicherheit“](../ide/reference/security-page-project-designer.md) vom **Projekt-Designer** als teilweise vertrauenswürdige Anwendung angegeben werden. Das Debuggen einer teilweise vertrauenswürdigen Anwendung erfordert spezielle Initialisierung der Anwendungsdomäne. Diese Initialisierung erfolgt über den Hostprozess.  
   
-## <a name="design-time-expression-evaluation"></a>Ausdrucksauswertung zur Entwurfszeit  
+## Ausdrucksauswertung zur Entwurfszeit
+<a id="design-time-expression-evaluation" class="xliff"></a>  
  Die Ausdrucksauswertung zur Entwurfszeit können Sie zum Testen von Code aus dem **direkten** Fenster verwenden, ohne die Anwendung auszuführen. Der Hostprozess führt diesen Code während der Ausdrucksauswertung zur Entwurfszeit aus. Weitere Informationen finden Sie unter [Direktfenster](../ide/reference/immediate-window.md).  
   
-## <a name="see-also"></a>Siehe auch  
+## Siehe auch
+<a id="see-also" class="xliff"></a>  
  [Debuggen und der Hostprozess](../debugger/debugging-and-the-hosting-process.md)   
  [Vorgehensweise: Deaktivieren des Hostprozesses](../ide/how-to-disable-the-hosting-process.md)   
  [Direktfenster](../ide/reference/immediate-window.md)   
- [Anwendungsdomänen](http://msdn.microsoft.com/Library/113a8bbf-6875-4a72-a49d-ca2d92e19cc8)
+ [Anwendungsdomänen](/dotnet/framework/app-domains/application-domains)

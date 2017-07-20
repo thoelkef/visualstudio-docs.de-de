@@ -30,10 +30,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 0d129b4820944f5717c63243cb8550bc4fed3385
-ms.openlocfilehash: 380b65540d8f5c6ea6d8a8adf1f3c5575f5dd9dc
-ms.lasthandoff: 03/20/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 09c33f3cc331af03659922e178e4089f177132de
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="profiling-tools"></a>Profilerstellungstools
@@ -45,14 +46,14 @@ Profilerstellungs- und Diagnosetools helfen bei der Diagnose von Speicher- und C
   
  ![DebugDiagnosticsToolsMenu](../profiling/media/debugdiagnosticstoolsmenu.png "DebugDiagnosticsToolsMenu")
   
- Unter [What's New in Profiling Tools in Visual Studio&2017;](../profiling/what-s-new-in-profiling-tools.md) (Neuigkeiten in Profilerstellungstools in Visual Studio&2017;) lernen Sie neue Features dieser Version kennen.
+ Unter [What's New in Profiling Tools in Visual Studio 2017](../profiling/what-s-new-in-profiling-tools.md) (Neuigkeiten in Profilerstellungstools in Visual Studio 2017) lernen Sie neue Features dieser Version kennen.
   
  In den folgenden Abschnitte, werden die verschiedenen Leistungstools erklärt, die in Visual Studio verfügbar sind.
   
 ## <a name="memory-usage"></a>Speicherauslastung  
  ![DiagMemorySmall](../profiling/media/diagmemorysmall.png "DiagMemorySmall")  
   
- Suchen Sie Speicherverluste und ineffiziente Arbeitsspeichernutzung während des Debuggens mit dem **Speicherauslastungstool** . Mit dem Tool können Sie Momentaufnahmen des verwalteten und nativen Speicherheaps machen. Sie können dieses Tool mit Desktop-Apps, universellen Windows-Apps und ASP.NET-Apps verwenden. Das Tool **Speicherauslastung** kann entweder während des Debuggens über das Fenster **Diagnosetools** ausgeführt werden (**Debuggen &gt; Fenster &gt; Diagnosetools anzeigen**) oder außerhalb des Debuggers über (**Debuggen &gt; Leistungsanalyse...**). Unter [Analyze Memory Usage](../profiling/memory-usage.md) (Analysieren der Speicherauslastung) und [Memory Usage without the Debugger](../profiling/Memory-Usage-without-Debugging2.md) (Speicherauslastung ohne Debugger) finden Sie weitere Informationen.  
+ Sie haben die Möglichkeit, Speicherverluste und ineffiziente Arbeitsspeichernutzung während des Debuggens mit dem **Speicherauslastungstool** zu suchen. Mit dem Tool können Sie Momentaufnahmen des verwalteten und nativen Speicherheaps machen. Sie können dieses Tool mit Desktop-Apps, universellen Windows-Apps und ASP.NET-Apps verwenden. Das Tool **Speicherauslastung** kann entweder während des Debuggens über das Fenster **Diagnosetools** ausgeführt werden (**Debuggen &gt; Fenster &gt; Diagnosetools anzeigen**) oder außerhalb des Debuggers über (**Debuggen &gt; Leistungsanalyse...**). Unter [Analyze Memory Usage](../profiling/memory-usage.md) (Analysieren der Speicherauslastung) und [Memory Usage without the Debugger](../profiling/Memory-Usage-without-Debugging2.md) (Speicherauslastung ohne Debugger) finden Sie weitere Informationen.  
   
 ## <a name="cpu-usage"></a>CPU-Auslastung  
  ![DiagCPUSmall](../profiling/media/diagcpusmall.png "DiagCPUSmall")  
@@ -95,7 +96,7 @@ Profilerstellungs- und Diagnosetools helfen bei der Diagnose von Speicher- und C
 ## <a name="intellitrace"></a>IntelliTrace  
  ![DiagIntelliTrace](../profiling/media/diagintellitrace.png "DiagIntelliTrace")  
   
- Mit[IntelliTrace](../debugger/intellitrace.md) können Sie bestimmte Ereignisse aufzeichnen, Daten im Fenster **Lokal** während Debuggerereignissen und Funktionsaufrufen untersuchen sowie Fehler debuggen, die schwer zu reproduzieren sind.  IntelliTrace ist in erster Linie ein Tool zum Debuggen, aber es enthält auch Informationen, die für Leistungsuntersuchungen verwendet werden kann. Sie können dieses Tool nur in Visual Studio Enterprise mit Desktop-Apps, universellen Windows-Apps und ASP.NET C#-Apps verwenden. Sie finden IntelliTrace im Fenster **Diagnosetools** während des Debuggens (**Debuggen &gt; Fenster &gt; Diagnosetools anzeigen**).  
+ Mit[IntelliTrace](../debugger/intellitrace.md) können Sie bestimmte Ereignisse aufzeichnen, Daten im Fenster **Lokal** während Debuggerereignissen und Funktionsaufrufen untersuchen sowie Fehler debuggen, die schwer zu reproduzieren sind.  IntelliTrace ist in erster Linie ein Tool zum Debuggen, aber es enthält auch Informationen, die für Leistungsuntersuchungen verwendet werden kann. Sie können dieses Tool nur in Visual Studio Enterprise mit Desktop-Apps, universellen Windows-Apps und ASP.NET C#-Apps verwenden. Sie finden IntelliTrace im Fenster **Diagnosetools** während des Debuggens (**Debuggen > Fenster > Diagnosetools anzeigen**).  
   
 ## <a name="profiling-in-production"></a>Profilerstellung im Produktivbetrieb  
  Im Produktivbetrieb empfiehlt es sich, die Profilerstellung mithilfe von [vsperf.exe über die Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md) durchzuführen, um ein CPU-Profil zu erhalten. Azure App Service bietet Ihnen über [Server Explorer oder das Kudu-Portal](https://azure.microsoft.com/en-us/blog/remote-profiling-support-in-azure-app-service/)die Möglichkeit, von einem entfernten Standort aus ein Profil zu erstellen.  
@@ -113,7 +114,7 @@ Profilerstellungs- und Diagnosetools helfen bei der Diagnose von Speicher- und C
 |[Leistungs-Explorer](../profiling/performance-explorer.md)|ja|nein|Ja (Nein für ASP.NET Core)|  
 |[IntelliTrace](../debugger/intellitrace.md)|nur .NET Enterprise|nur .NET Enterprise|nur .NET Enterprise|
 |[Netzwerkverwendung](../profiling/network-usage.md)|nein|ja|nein| 
-|[HTML-UI-Reaktionsfähigkeit](../profiling/html-ui-responsiveness.md)|nein|ja für HTML, nicht für XAML|nein|  
+|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|nein|ja für HTML, nicht für XAML|nein|  
 |[JavaScript-Speicher](../profiling/javascript-memory.md)|nein|ja für HTML, nicht für XAML|nein|  
   
 ## <a name="see-also"></a>Siehe auch  

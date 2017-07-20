@@ -1,6 +1,6 @@
 ---
 title: Dotfuscator Community Edition (CE) | Microsoft-Dokumentation
-ms.date: 2017-05-10
+ms.date: 2017-06-22
 ms.prod: visual-studio-dev15
 ms.devlang: dotnet
 ms.technology:
@@ -33,21 +33,24 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 507ff049dae50698d86e1536ed21ab982da1af85
-ms.openlocfilehash: a4dd4e0f9a8f6c89452bc20e05139dfa5d062e0f
+ms.sourcegitcommit: 8ce85525f6af336682f6f8547c2f6c13dde73c8c
+ms.openlocfilehash: 15dd6127493b9977732fdb891a086f931e002459
 ms.contentlocale: de-de
-ms.lasthandoff: 02/22/2017
+ms.lasthandoff: 06/23/2017
 
 ---
 
-# <a name="dotfuscator-community-edition-ce"></a>Dotfuscator Community Edition (CE)
+# Dotfuscator Community Edition (CE)
+<a id="dotfuscator-community-edition-ce" class="xliff"></a>
 
-*PreEmptive Protection – Dotfuscator* bietet umfassenden Schutz für .NET-Anwendungen, der problemlos in den sicheren Lebenszyklus der Softwareentwicklung passt. Verwenden Sie die Lösung, um Desktop-, mobile, Server- und eingebettete Anwendungen zu härten, zu schützen und zu bereinigen. Dadurch können Sie Geschäftsgeheimnisse und sonstiges geistiges Eigentum sichern, Piraterie und Fälschungen reduzieren und Schutz vor Manipulationen und nicht autorisiertem Debuggen bieten.
+*PreEmptive Protection – Dotfuscator* bietet umfassenden Schutz für .NET-Anwendungen, der problemlos in den sicheren Lebenszyklus der Softwareentwicklung passt.
+Verwenden Sie die Lösung, um Desktop-, mobile, Server- und eingebettete Anwendungen zu härten, zu schützen und zu bereinigen. Dadurch können Sie Geschäftsgeheimnisse und sonstiges geistiges Eigentum sichern, Piraterie und Fälschungen reduzieren und Schutz vor Manipulationen und nicht autorisiertem Debuggen bieten.
 Dotfuscator arbeitet in kompilierten Assemblys ohne zusätzliche Programmierung und sogar ohne Zugriff auf den Quellcode.
 
 ![](media/header.svg)
 
-## <a name="why-protection-matters"></a>Gründe für die Bedeutung von Schutz
+## Gründe für die Bedeutung von Schutz
+<a id="why-protection-matters" class="xliff"></a>
 
 Es ist wichtig, **Ihr geistiges Eigentum zu schützen**.
 Der Code Ihrer Anwendung enthält Entwurfs- und Implementierungsdetails, die als geistiges Eigentum angesehen werden können.
@@ -61,12 +64,14 @@ Dotfuscator kann in Ihre Anwendung eine Funktion einfügen, um [eine nicht autor
 
 Weitere Informationen zum Integrieren von Dotfuscator in einen sicheren Lebenszyklus der Softwareentwicklung finden Sie auf der PreEmptive Solutions-Seite zum [SDL-App-Schutz][sdl-protection].
 
-## <a name="about-dotfuscator-ce"></a>Informationen zu Dotfuscator CE
+## Informationen zu Dotfuscator CE
+<a id="about-dotfuscator-ce" class="xliff"></a>
 
-Ihre Kopie von Microsoft Visual Studio 2017 beinhaltet eine kostenlose Lizenz für ***PreEmptive Protection – Dotfuscator* Community Edition**, auch bekannt als Dotfuscator CE.
+Ihre Kopie von Microsoft Visual Studio 2017 beinhaltet eine kostenlose Kopie von ***PreEmptive Protection – Dotfuscator* Community Edition**, auch bekannt als Dotfuscator CE.
 Anweisungen zum Installieren der Version von Dotfuscator CE, die in Visual Studio 2017 enthalten ist, finden Sie auf der [Installationsseite][install].
 
-Dotfuscator CE bietet für Entwickler, Architekten und Tester eine Reihe von Diensten für [Softwareschutz und -härtung] [software-protection]. Beispiele von Dotfuscator CE-Funktionen für [.NET-Obfuskation][obfuscation] und sonstigen [Anwendungsschutz][app-protection]:
+Dotfuscator CE bietet für Entwickler, Architekten und Tester eine Reihe von Diensten für [Softwareschutz und -härtung] [software-protection].
+Beispiele von Dotfuscator CE-Funktionen für [.NET-Obfuskation][obfuscation] und sonstigen [Anwendungsschutz][app-protection]:
 
 * *[Umbenennung][renaming]* von Bezeichnern, um das Reverse Engineering der kompilierten Assemblys zu erschweren.
 * *[Manipulationsschutz][tamper]*, um die Ausführung manipulierter Anwendungen zu erkennen, Incidentwarnungen zu übertragen und manipulierte Sitzungen zu beenden.
@@ -81,7 +86,8 @@ Dotfuscator CE bietet ohne zusätzliche Konfiguration grundlegenden Schutz.
 Weitere Maßnahmen zum Schutz von Anwendungen stehen für registrierte Benutzer von Dotfuscator CE und für Benutzer von *PreEmptive Protection – Dotfuscator* Professional Edition, der weltweit führenden Lösung für [.NET-Obfuskation][net-obfuscator], zur Verfügung.
 Informationen über das Erweitern von Dotfuscator finden Sie auf der [Upgradeseite][upgrades].
 
-## <a name="getting-started"></a>Erste Schritte
+## Erste Schritte
+<a id="getting-started" class="xliff"></a>
 
 Um mit der Nutzung von Dotfuscator CE in Visual Studio zu beginnen, geben Sie `dotfuscator` in der Suchleiste **Schnellstart** (STRG+Q) ein.
 
@@ -90,7 +96,8 @@ Um mit der Nutzung von Dotfuscator CE in Visual Studio zu beginnen, geben Sie `d
 
 Sie können auch die **neueste Version** von Dotfuscator CE von [der Seite mit Dotfuscator-Downloads auf „preemptive.com“ herunterladen][download].
 
-## <a name="full-documentation"></a>Vollständige Dokumentation
+## Vollständige Dokumentation
+<a id="full-documentation" class="xliff"></a>
 
 Diese Seite und die dazugehörigen Unterseiten bieten einen allgemeinen Überblick über Dotfuscator CE-Funktionen sowie [Anweisungen zur Installation des Tools][install].
 
@@ -98,7 +105,7 @@ Ausführliche Anweisungen zur Verwendung finden Sie im [vollständigen Dotfuscat
 
 <!-- Copyright © 2017 PreEmptive Solutions, LLC -->
 
-[assemblies]: https://docs.microsoft.com/en-us/dotnet/articles/standard/assembly-format
+[assemblies]: https://docs.microsoft.com/en-us/dotnet/standard/assembly-format
 [software-protection]: https://www.preemptive.com/software-protection
 [obfuscation]: https://www.preemptive.com/obfuscation
 [app-protection]: https://www.preemptive.com/application-protection
@@ -110,18 +117,18 @@ Ausführliche Anweisungen zur Verwendung finden Sie im [vollständigen Dotfuscat
 [capabilities]: capabilities.md
 [upgrades]: upgrades.md
 
-[get-started]: https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/gui_getstarted.html
+[get-started]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html
 
-[renaming]: https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/obfuscation_renaming.html
+[renaming]: https://www.preemptive.com/dotfuscator/ce/docs/help/obfuscation_renaming.html
 
-[checks]: https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/checks_overview.html
-[tamper]: https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/checks_tamper.html
-[debug]: https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/checks_debug.html
-[shelflife]: https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/checks_shelflife.html
+[checks]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_overview.html
+[tamper]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_tamper.html
+[debug]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_debug.html
+[shelflife]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_shelflife.html
 
-[exceptions]: https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/analytics_exceptions.html
-[sessions]: https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/analytics_sessions.html
-[features]: https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/analytics_features.html
+[exceptions]: https://www.preemptive.com/dotfuscator/ce/docs/help/analytics_exceptions.html
+[sessions]: https://www.preemptive.com/dotfuscator/ce/docs/help/analytics_sessions.html
+[features]: https://www.preemptive.com/dotfuscator/ce/docs/help/analytics_features.html
 
-[full]: https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/index.html
+[full]: https://www.preemptive.com/dotfuscator/ce/docs/help/index.html
 

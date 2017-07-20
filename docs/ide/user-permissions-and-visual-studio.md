@@ -32,13 +32,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 0dc9fed1e5fc5a827e836310175d558b14cd41b4
-ms.lasthandoff: 04/05/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: badbf6892698c6e35ce76500001839c7c9e6734a
+ms.contentlocale: de-de
+ms.lasthandoff: 05/30/2017
 
 ---
-# <a name="user-permissions-and-visual-studio"></a>Benutzerberechtigungen und Visual Studio
+# Benutzerberechtigungen und Visual Studio
+<a id="user-permissions-and-visual-studio" class="xliff"></a>
 Aus Sicherheitsgründen sollten Sie Visual Studio möglichst als normaler Benutzer ausführen.  
 
 > [!WARNING]
@@ -58,16 +60,18 @@ Aus Sicherheitsgründen sollten Sie Visual Studio möglichst als normaler Benutz
 ||Einschließen eines Registrierungsschritts beim Erstellen von C++-Projekten.|[Grundlagen benutzerdefinierter Buildschritte und Buildereignisse](/cpp/ide/understanding-custom-build-steps-and-build-events)|  
 |Debuggen|Debuggen von Anwendungen, die mit höheren Berechtigungen ausgeführt werden.|[Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)|  
 ||Debuggen von Anwendungen, die unter einem anderen Benutzerkonto, wie ASP.NET-Websites, ausgeführt werden.|[Debuggen von ASP.NET- und AJAX-Anwendungen](../debugger/debugging-aspnet-and-ajax-applications.md)|  
-||Debuggen in der Zone für XAML-Browseranwendungen (XBAP).|[WPF-Host (PresentationHost.exe)](http://msdn.microsoft.com/Library/3215bfa1-722c-4ac8-a7c5-bdd02d30afbd)|  
+||Debuggen in der Zone für XAML-Browseranwendungen (XBAP).|[WPF-Host (PresentationHost.exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|  
 ||Verwenden des Emulators zum Debuggen von Cloud-Dienstprojekten für Microsoft Azure.|[Debuggen eines Clouddiensts in Visual Studio](http://go.microsoft.com/fwlink/?LinkId=266725)|  
 ||Konfigurieren einer Firewall für das Remotedebuggen.|[Remotedebuggen](../debugger/remote-debugging.md)|  
 |Leistungstools|Profilerstellung für eine Anwendung|[Einführung in die Leistungsprofilerstellung](../profiling/beginners-guide-to-performance-profiling.md)|  
 |Bereitstellung|Bereitstellen einer Webanwendung auf Internetinformationsdienste (IIS) auf einem lokalen Computer.|[Deploying an ASP.NET Web Application to a Hosting Provider using Visual Studio or Visual Web Developer: Deploying to IIS as a Test Environment (Bereitstellen einer ASP.NET-Webanwendung für einen Hostinganbieter, der Visual Studio oder Visual Web Developer verwendet: Bereitstellen in IIS als Testumgebung)](http://go.microsoft.com/fwlink/?LinkId=266478)|
 
-## <a name="running-visual-studio-as-an-administrator"></a>Ausführen von Visual Studio als Administrator  
+## Ausführen von Visual Studio als Administrator
+<a id="running-visual-studio-as-an-administrator" class="xliff"></a>  
  Sie können Visual Studio bei jedem Starten der IDE mit Administratorberechtigungen starten, oder Sie können die Anwendungsverknüpfung so ändern, dass sie immer mit Administratorberechtigungen ausgeführt werden muss. Weitere Informationen finden Sie in der Windows-Hilfe.  
 
-#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin8debuggerincludeswin8mdmd-includewin81debuggerincludeswin81mdmd-includewinserver8debuggerincludeswinserver8mdmd-or-includewinblueserver2ideincludeswinblueserver2mdmd"></a>So führen Sie Visual Studio mit Administratorberechtigungen in [!INCLUDE[win8](../debugger/includes/win8_md.md)], [!INCLUDE[win81](../debugger/includes/win81_md.md)], [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)] oder [!INCLUDE[winblue_server_2](../ide/includes/winblue_server_2_md.md)] aus  
+#### So führen Sie Visual Studio mit Administratorberechtigungen in [!INCLUDE[win8](../debugger/includes/win8_md.md)], [!INCLUDE[win81](../debugger/includes/win81_md.md)], [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)] oder [!INCLUDE[winblue_server_2](../ide/includes/winblue_server_2_md.md)] aus
+<a id="to-run-visual-studio-with-administrative-permissions-on-includewin8debuggerincludeswin8mdmd-includewin81debuggerincludeswin81mdmd-includewinserver8debuggerincludeswinserver8mdmd-or-includewinblueserver2ideincludeswinblueserver2mdmd" class="xliff"></a>  
 
 1.  Geben Sie auf dem **Start**-Bildschirm **Visual Studio** ein. Sie sollten die Version oder die Versionen von Visual Studio sehen, die Sie installiert haben.  
 
@@ -75,7 +79,8 @@ Aus Sicherheitsgründen sollten Sie Visual Studio möglichst als normaler Benutz
 
      Beim Starten von Visual Studio wird **(Administrator)** nach dem Produktnamen in der Titelleiste angezeigt.  
 
-#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin7debuggerincludeswin7mdmd-or-includewinsvr08r2debuggerincludeswinsvr08r2mdmd"></a>So führen Sie Visual Studio mit Administratorberechtigungen in [!INCLUDE[win7](../debugger/includes/win7_md.md)] oder [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)] aus  
+#### So führen Sie Visual Studio mit Administratorberechtigungen in [!INCLUDE[win7](../debugger/includes/win7_md.md)] oder [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)] aus
+<a id="to-run-visual-studio-with-administrative-permissions-on-includewin7debuggerincludeswin7mdmd-or-includewinsvr08r2debuggerincludeswinsvr08r2mdmd" class="xliff"></a>  
 
 1.  Wählen Sie im **Start**-Menü die Option **Alle Programme** aus.  
 
@@ -83,7 +88,8 @@ Aus Sicherheitsgründen sollten Sie Visual Studio möglichst als normaler Benutz
 
      Beim Starten von Visual Studio wird **(Administrator)** nach dem Produktnamen in der Titelleiste angezeigt.  
 
-## <a name="see-also"></a>Siehe auch  
+## Siehe auch
+<a id="see-also" class="xliff"></a>  
  [Portieren, Migrieren und Upgraden von Visual Studio-Projekten](../porting/port-migrate-and-upgrade-visual-studio-projects.md)   
  [Installieren von Visual Studio](../install/install-visual-studio.md)
 

@@ -29,9 +29,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
 ms.openlocfilehash: cf04644c98062ffb2aee5b4b826f8426070c3d60
+ms.contentlocale: de-de
 ms.lasthandoff: 02/22/2017
 
 ---
@@ -94,7 +95,7 @@ Sowohl MSBuild-Eigenschaften als auch MSBuild-Elemente werden verwendet, um Info
   
  Elemente werden als <xref:Microsoft.Build.Framework.ITaskItem>-Objekte an Aufgaben übergeben. Innerhalb der Aufgabe stellt <xref:Microsoft.Build.Framework.ITaskItem.ItemSpec%2A> den Wert des Elements dar, und <xref:Microsoft.Build.Framework.ITaskItem.GetMetadata%2A> ruft seine Metadaten ab.  
   
- Die Elementliste eines Elementtyps kann als Array von `ITaskItem`-Objekten übergeben werden. Ab .NET Framework 3.5 können Elemente mithilfe des `Remove`-Attributs aus einer Elementliste in einem Ziel entfernt werden. Da Elemente aus einer Elementliste entfernt werden können, kann ein Elementtyp über&0; (null) Elemente verfügen. Wenn eine Elementliste an eine Aufgabe übergeben wird, muss der Code in der Aufgabe diese Möglichkeit überprüfen.  
+ Die Elementliste eines Elementtyps kann als Array von `ITaskItem`-Objekten übergeben werden. Ab .NET Framework 3.5 können Elemente mithilfe des `Remove`-Attributs aus einer Elementliste in einem Ziel entfernt werden. Da Elemente aus einer Elementliste entfernt werden können, kann ein Elementtyp über 0 (null) Elemente verfügen. Wenn eine Elementliste an eine Aufgabe übergeben wird, muss der Code in der Aufgabe diese Möglichkeit überprüfen.  
   
 ## <a name="property-and-item-evaluation-order"></a>Auswertungsreihenfolge von Eigenschaften und Elementen  
  Während der Auswertungsphase eines Builds werden importierte Dateien in der Reihenfolge in den Build integriert, in der sie vorkommen. Eigenschaften und Elemente werden in drei Durchläufen in der folgenden Reihenfolge definiert:  

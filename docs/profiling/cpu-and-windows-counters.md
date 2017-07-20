@@ -33,9 +33,10 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: 51d524bafd6e5014c1542b05d9fd3a908eca41df
+ms.contentlocale: de-de
 ms.lasthandoff: 02/22/2017
 
 ---
@@ -93,8 +94,8 @@ Der Visual Studio-Profiler ermöglicht das Sammeln von Leistungsdaten, die vom B
   
 |Ereignisname|Ereignisbeschreibung|  
 |----------------|-----------------------|  
-|E2-Cachelesefehler|Gibt die Anzahl der Lesefehler im Cache der&2;. Ebene an|  
-|E2-Cacheleseverweise|Gibt die Anzahl der Leseverweise im Cache der&2;. Ebene an. Dies schließt Ladefehler sowie RFO-Fehler und -Treffer (Read For Ownership) ein.|  
+|E2-Cachelesefehler|Gibt die Anzahl der Lesefehler im Cache der 2. Ebene an|  
+|E2-Cacheleseverweise|Gibt die Anzahl der Leseverweise im Cache der 2. Ebene an. Dies schließt Ladefehler sowie RFO-Fehler und -Treffer (Read For Ownership) ein.|  
   
 ## <a name="viewing-available-counters"></a>Anzeigen verfügbarer Indikatoren  
  Sie können die verfügbaren CPU-Indikatoren in der Visual Studio-IDE in einem Eingabeaufforderungsfenster aufführen.  
@@ -141,7 +142,7 @@ Der Visual Studio-Profiler ermöglicht das Sammeln von Leistungsdaten, die vom B
   
      **\<Visual Studio Performance Tools Directory>\VSPerfCmd /querycounters**  
   
-     Dabei ist **\<Visual Studio Performance Tools Directory >** der Pfad zum Performance Tools-Verzeichnis der Visual Studio-Installation. Dieser lautet normalerweise  
+     Dabei ist  **\<Visual Studio Performance Tools Directory >** der Pfad zum Performance Tools-Verzeichnis der Visual Studio-Installation. Dieser lautet normalerweise  
   
      C:\Programme\Microsoft Visual Studio 10.0 \Team Tools\Performance Tools  
   

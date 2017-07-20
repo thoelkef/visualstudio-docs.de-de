@@ -39,28 +39,32 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 507ff049dae50698d86e1536ed21ab982da1af85
-ms.openlocfilehash: eeabf6db465f57ab373c592b01a682ed6442800f
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 8ce85525f6af336682f6f8547c2f6c13dde73c8c
+ms.openlocfilehash: 60ca38639f6523cdbace4efa4aa48b48d5e9a886
+ms.contentlocale: de-de
+ms.lasthandoff: 06/23/2017
 
 ---
 
-# <a name="upgrade-dotfuscator-community-edition-ce"></a>Upgraden von Dotfuscator Community Edition (CE)
+# Upgraden von Dotfuscator Community Edition (CE)
+<a id="upgrade-dotfuscator-community-edition-ce" class="xliff"></a>
 
 Die Dotfuscator Community Edition (Dotfuscator CE) bietet viele Funktionen für Anwendungsschutz und Härtung für alle Entwickler, die mit Microsoft Visual Studio arbeiten.
 Für Benutzer, die Ihre Version von Dotfuscator upgraden, sind jedoch mehr Funktionen verfügbar.
 
-## <a name="registering-dotfuscator-ce"></a>Registrieren von Dotfuscator CE
+## Registrieren von Dotfuscator CE
+<a id="registering-dotfuscator-ce" class="xliff"></a>
 
 Als registrierte Benutzer von Dotfuscator CE erhalten Sie Zugriff auf zusätzliche Funktionen wie z.B. [Befehlszeilenunterstützung][cli], sodass Sie Dotfuscator CE mühelos in den automatisierten Buildprozess integrieren können.
 
 Die Registrierung ist schnell, einfach und kostenlos.
 Informationen zum Registrieren von Dotfuscator CE finden Sie im [Abschnitt „Registering Dotfuscator CE“ (Registrieren von Dotfuscator CE) auf der Seite „Getting Started“ (Erste Schritte) des vollständigen Dotfuscator CE User Guide (Dotfuscator CE-Benutzerhandbuch)][register-ce].
 
-## <a name="dotfuscator-professional"></a>Dotfuscator Professional
+## Dotfuscator Professional
+<a id="dotfuscator-professional" class="xliff"></a>
 
-Während die Dotfuscator Community Edition ein grundlegendes Schutzlevel bietet, enthält die ***PreEmptive Protection - Dotfuscator* Professional Edition** erweiterte Obfuskationstransformationen und Schutzfunktionen.
+Während die Dotfuscator Community Edition ein grundlegendes Schutzlevel bietet, enthält die **_PreEmptive Protection - Dotfuscator_ Professional Edition** erweiterte Obfuskationstransformationen und Schutzfunktionen.
 Dazu gehören:
 
 * *Schutz geistigen Eigentums*
@@ -91,9 +95,10 @@ Darüber hinaus bietet Dotfuscator Professional eine engere Integration mit Visu
 Weitere Informationen zu den erweiterten Anwendungsschutzfunktionen von Dotfuscator Professional erhalten Sie auf der Seite [Dotfuscator Overview (Dotfuscator Übersicht)][product-about] von PreEmptive Solutions und im [Vergleich mit der Community Edition][product-compare].
 [Vollständig unterstützte Testversionen sind auf Anfrage unter preemptive.com erhältlich][eval].
 
-## <a name="see-also"></a>Siehe auch
+## Siehe auch
+<a id="see-also" class="xliff"></a>
 
-[Dieses Thema im vollständigen Dotfuscator CE User Guide (Dotfuscator CE-Benutzerhandbuch)][full]
+[Dieses Thema im vollständigen Dotfuscator CE-Benutzerhandbuch][full]
 
 <!-- Copyright © 2017 PreEmptive Solutions, LLC -->
 
@@ -112,7 +117,8 @@ Weitere Informationen zu den erweiterten Anwendungsschutzfunktionen von Dotfusca
 [product-about]: https://www.preemptive.com/products/dotfuscator/overview
 [product-compare]: https://www.preemptive.com/products/dotfuscator/compare-editions
 
-[cli]: https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/intro_cli.html
-[register-ce]: https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/gui_getstarted.html#register
+[cli]: https://www.preemptive.com/dotfuscator/ce/docs/help/intro_cli.html
+[register-ce]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html#register
 
-[full]: https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/intro_upgrades.html
+[full]: https://www.preemptive.com/dotfuscator/ce/docs/help/intro_upgrades.html
+
