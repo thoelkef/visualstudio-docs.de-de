@@ -1,52 +1,69 @@
 ---
-title: "How to: Change Between Member Notation and Association Notation (Class Designer) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "notation, member"
-  - "association notation"
-  - "member notation"
-  - "notation, association"
+title: 'Vorgehensweise: Wechseln zwischen Member- und Zuordnungsnotation (Klassen-Designer) | Microsoft-Dokumentation'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- notation, member
+- association notation
+- member notation
+- notation, association
 ms.assetid: 65881c5a-d251-4a36-ad0d-73d088436092
 caps.latest.revision: 21
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 21
----
-# How to: Change Between Member Notation and Association Notation (Class Designer)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 63aad78bdc7df685ca3a73ec16a9cbc87b78151f
+ms.openlocfilehash: 30bacff7a117cd1e6bdf7a234652177cbc50b0f2
+ms.contentlocale: de-de
+ms.lasthandoff: 07/14/2017
 
-Im Klassen\-Designer können Sie die Anzeige eines Assoziationsverhältnisses zwischen zwei Typen im Klassendiagramm von der Membernotation in die Assoziationsnotation und umgekehrt ändern.  Anhand der als Assoziationslinien angezeigten Member wird deutlich, wie Typen miteinander in Beziehung stehen.  
+---
+# <a name="how-to-change-between-member-notation-and-association-notation-class-designer"></a>Gewusst wie: Wechseln zwischen Member- und Zuordnungsnotation (Klassen-Designer)
+Im Klassendesigner können Sie ändern, wie das Klassendiagramm eine Zuordnungsbeziehung zwischen zwei Typen von der Member- zur Zuordnungsnotation und andersherum darstellt. Member, die als Zuordnungslinien dargestellt werden, bieten oft eine nützliche Visualisierung der Beziehung von Typen.  
   
 > [!NOTE]
->  Assoziationsverhältnisse können als Membereigenschaft oder \-feld dargestellt werden.  Um die Membernotation in die Assoziationsnotation zu ändern, muss ein Typ über einen Member eines anderen Typs verfügen.  Um die Assoziationsnotation in die Membernotation zu ändern, müssen beide Typen über eine Assoziationslinie miteinander verbunden sein.  Weitere Informationen finden Sie unter [How to: Create Associations Between Types \(Class Designer\)](../ide/how-to-create-associations-between-types-class-designer.md).  Wenn das Projekt mehrere Klassendiagramme enthält, wirkt sich die Änderung der Anzeige von Assoziationsverhältnissen im Diagramm nur auf das Diagramm selbst aus.  Um die Anzeige von Assoziationsverhältnissen in einem anderen Diagramm zu ändern, öffnen Sie das entsprechende Diagramm und führen die beschriebenen Schritte aus.  
+>  Zuordnungsbeziehungen können als Membereigenschaft oder -feld dargestellt werden. Um die Membernotation in die Zuordnungsnotation zu ändern, muss ein Typ über den Member eines anderen verfügen. Um die Zuordnungsnotation in die Membernotation zu ändern, müssen die zwei Typen über eine Zuordnungslinie verbunden sein. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen von Zuordnungen zwischen Typen (Klassen-Designer)](../ide/how-to-create-associations-between-types-class-designer.md) Wenn Ihr Projekt über mehrere Klassendiagramme verfügt, betreffen Änderungen, die Sie an der Anzeige der Zuordnungsbeziehung für das Diagramm vornehmen, nur das Diagramm. Um die Darstellung, wie ein anderes Diagramm die Zuordnungsbeziehungen darstellt, zu ändern, öffnen und zeigen Sie das Diagramm an, und befolgen Sie diese Schritte.  
   
-### So ändern Sie die Membernotation in die Assoziationsnotation  
+### <a name="to-change-member-notation-to-association-notation"></a>Ändern der Membernotation in die Zuordnungsnotation  
   
-1.  Öffnen Sie vom Projektknoten im Projektmappen\-Explorer aus die Klassendiagrammdatei \(CD\-Datei\).  
+1.  Öffnen Sie vom Projektknoten im Projektmappen-Explorer aus die Klassendiagrammdatei (CD-Datei).  
   
-2.  Klicken Sie in der Typform im Klassendiagramm mit der rechten Maustaste auf die Membereigenschaft bzw. das Memberfeld, die bzw. das die Assoziation darstellt, und wählen Sie **Als Assoziation anzeigen** aus.  
+2.  Führen Sie einen Rechtsklick in der Typform auf dem Klassendiagramm auf die Membereigenschaft oder das -feld aus, die bzw. das die Zuweisung darstellt. Wählen Sie anschließend **Als Zuordnung anzeigen** aus.  
   
     > [!TIP]
-    >  Falls in der Typform keine Eigenschaften oder Felder angezeigt werden, wurden möglicherweise die Depots in der Form reduziert.  Um die Typform zu erweitern, doppelklicken Sie auf den Depotnamen, oder klicken Sie mit der rechten Maustaste auf die Typform und wählen **Erweitern** aus.  
+    >  Wenn keine Eigenschaften oder Felder in der Typform sichtbar sind, sind die Depots in der Form womöglich reduziert. Um die Typform zu erweitern, führen Sie einen Doppelklick auf den Depotnamen oder einen Rechtsklick in die Typform aus, und wählen Sie **Erweitern** aus.  
   
-     Der Member wird im Depot in der Typform nicht mehr angezeigt, und es wird eine Assoziationslinie zwischen den beiden Typen angezeigt.  Die Assoziationslinie wird mit dem Namen der Eigenschaft oder des Felds gekennzeichnet.  
+     Der Member verschwindet aus dem Depot in der Typform, und eine Zuordnungslinie erscheint, um die beiden Typen zu verbinden. Die Zuordnungslinie wird mit dem Namen der Eigenschaft bzw. des Felds bezeichnet.  
   
-### So ändern Sie die Assoziationsnotation in die Membernotation  
+### <a name="to-change-association-notation-to-member-notation"></a>So ändern Sie die Zuweisungsnotation in die Membernotation  
   
--   Klicken Sie im Klassendiagramm mit der rechten Maustaste auf die Assoziationslinie, und wählen Sie je nach Bedarf **Als Eigenschaft anzeigen** oder **Als Feld anzeigen** aus.  
+-   Klicken Sie im Klassendiagramm mit der rechten Maustaste auf die Zuordnungslinie, und wählen Sie **Als Eigenschaft anzeigen** oder ggf. **Als Feld anzeigen** aus.  
   
-     Die Assoziationslinie wird entfernt, und die Eigenschaft wird im entsprechenden Depot in der Typform im Diagramm angezeigt.  
+     Die Zuordnungslinie verschwindet, und die Eigenschaft wird im geeigneten Depot in ihrer Typform auf dem Diagramm angezeigt.  
   
-## Siehe auch  
- [How to: Create Inheritance Between Types \(Class Designer\)](../ide/how-to-create-inheritance-between-types-class-designer.md)   
- [How to: View Inheritance Between Types \(Class Designer\)](../ide/how-to-view-inheritance-between-types-class-designer.md)   
- [Viewing Types and Relationships \(Class Designer\)](../ide/viewing-types-and-relationships-class-designer.md)   
- [How to: Visualize a Collection Association \(Class Designer\)](../ide/how-to-visualize-a-collection-association-class-designer.md)
+## <a name="see-also"></a>Siehe auch  
+ [Vorgehensweise: Erstellen der Vererbung zwischen Typen (Klassen-Designer)](../ide/how-to-create-inheritance-between-types-class-designer.md)   
+ [Vorgehensweise: Anzeigen der Vererbung zwischen Typen (Klassen-Designer)](../ide/how-to-view-inheritance-between-types-class-designer.md)   
+ [Anzeigen von Typen und Beziehungen (Klassen-Designer)](../ide/viewing-types-and-relationships-class-designer.md)   
+ [Gewusst wie: Darstellen einer Auflistungszuordnung (Klassen-Designer)](../ide/how-to-visualize-a-collection-association-class-designer.md)
