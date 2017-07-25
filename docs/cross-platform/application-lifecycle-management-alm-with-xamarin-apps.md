@@ -29,10 +29,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 1464a7e654c68828e132e2d6973c9e558ebe23a5
+ms.sourcegitcommit: 6fbf89668d47d55d1d77a1d7f11765567fc73405
+ms.openlocfilehash: e5ed1f9b6771b489218d2c6118454f1070535b6d
 ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 05/26/2017
 
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Application Lifecycle Management (ALM) mit Xamarin-Apps
@@ -81,7 +81,7 @@ Mit Xamarin können Sie plattformübergreifende mobile Apps für Android, iOS un
 |-------------|----------------------------|-------------------------|  
 |[Verwenden von Team Foundation-Versionskontrolle](http://msdn.microsoft.com/Library/1d629052-c65d-4c5d-81eb-eaa4413fe285) oder Visual Studio Team Services|Ja||  
 |[Erste Schritte mit Git in Team Services](http://msdn.microsoft.com/Library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Ja||  
-|[Codeanalyse/Verbessern der Codequalität (Verweise, vorgeschlagene Änderungen usw.)](http://msdn.microsoft.com/Library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|Ja||  
+|[Verbessern der Codequalität](/visualstudio/test/improve-code-quality)|Ja||  
 |[Ermitteln von Änderungen am Code und andere Verläufe](../ide/find-code-changes-and-other-history-with-codelens.md)|Ja|Außer über plattformspezifische Grenzen hinweg, in denen die Implementierung bis zur Laufzeit nicht aufgelöst wird.|  
 |[Verwenden von Code Maps zum Debuggen von Anwendungen](../modeling/use-code-maps-to-debug-your-applications.md)|Ja||  
   
@@ -109,7 +109,7 @@ Mit Xamarin können Sie plattformübergreifende mobile Apps für Android, iOS un
 |[Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)|Nur Windows|Testaufzeichnung der Benutzeroberfläche in Visual Studio ist nur unter Windows möglich. Alle Plattformen finden Sie unter [Xamarin Test Recorder](https://www.xamarin.com/test-cloud/recorder).|  
   
 ## <a name="improve-code-quality"></a>Verbessern der Codequalität  
- Verweislink: **[Verbessern der Codequalität](http://msdn.microsoft.com/Library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
+ Verweislink: **[Verbessern der Codequalität](/visualstudio/test/improve-code-quality)**  
   
 |Funktion|Unterstützt von Xamarin|Zusätzliche Kommentare|  
 |-------------|----------------------------|-------------------------|  

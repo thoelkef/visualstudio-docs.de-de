@@ -38,10 +38,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 699ad120c95500e04d238270b8ac282ad0a8d288
+ms.sourcegitcommit: 11a9cee75f912c5fb31cf4a031644abe9c63d744
+ms.openlocfilehash: d376d2f99ccfddb2d96797fa2db0e1ef3872f34b
 ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 06/03/2017
 
 ---
 # <a name="vbc-task"></a>Vbc-Aufgabe
@@ -68,7 +68,7 @@ Umschließt die Datei „vbc.exe“, die ausführbare Dateien (EXE), Dynamic Lin
 |`Imports`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Importiert Namespaces aus den angegebenen Auflistungen. Dieser Parameter entspricht dem Schalter [/imports](/dotnet/visual-basic/reference/command-line-compiler/imports) des Compilers „vbc.exe“.|  
 |`KeyContainer`|Optionaler `String` -Parameter.<br /><br /> Gibt den Namen des kryptografischen Schlüsselcontainers an. Dieser Parameter entspricht dem Schalter [/keycontainer](/dotnet/visual-basic/reference/command-line-compiler/keycontainer) des Compilers „vbc.exe“.|  
 |`KeyFile`|Optionaler `String` -Parameter.<br /><br /> Gibt den Dateinamen mit dem kryptografischen Schlüssel an. Weitere Informationen finden Sie unter [/keyfile](/dotnet/visual-basic/reference/command-line-compiler/keyfile).|  
-|`LangVersion`|Optionaler [String](assetId:///String?qualifyHint=False&autoUpgrade=True)-Parameter.<br /><br /> Gibt die Sprachversion (entweder 9 oder 10) an|  
+|`LangVersion`|Optionaler <xref:System.String?displayProperty=fullName> -Parameter.<br /><br /> Gibt die Sprachversion (entweder 9 oder 10) an|  
 |`LinkResources`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Erstellt einen Link zu einer .NET Framework-Ressource in der Ausgabedatei. Die Ressourcendatei wird nicht in der Ausgabedatei platziert. Dieser Parameter entspricht dem Schalter [/linkresource](/dotnet/visual-basic/reference/command-line-compiler/linkresource) des Compilers „vbc.exe“.|  
 |`MainEntryPoint`|Optionaler `String` -Parameter.<br /><br /> Gibt die Klasse oder das Modul mit dem Speicherort der `Sub Main`-Prozedur an. Dieser Parameter entspricht dem [/main](/dotnet/visual-basic/reference/command-line-compiler/main)-Schalter des Compilers „vbc.exe“.|  
 |`ModuleAssemblyName`|Optionaler `String` -Parameter.<br /><br /> Gibt die Assembly an, zu der dieses Modul gehört.|  

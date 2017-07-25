@@ -29,10 +29,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 7e95cec543216f13de06d2c2b86bc08040d1a7fb
+ms.sourcegitcommit: 6fbf89668d47d55d1d77a1d7f11765567fc73405
+ms.openlocfilehash: de365cf073ed234ece1d9af56232a29b7ef8eec4
 ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 05/26/2017
 
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Application Lifecycle Management (ALM) mit Unity-Apps
@@ -77,7 +77,7 @@ Das Entwickeln von Apps für moderne Plattformen umfasst viele weitere Aktivitä
 |-------------|--------------------------|-------------------------|  
 |[Verwenden von Team Foundation-Versionskontrolle](http://msdn.microsoft.com/Library/1d629052-c65d-4c5d-81eb-eaa4413fe285) oder Visual Studio Team Services|Ja|Unity-Projekte sind einfach eine Sammlung von Dateien, die wie jedes andere Projekt in Versionskontrollsysteme eingefügt werden können, jedoch gibt es einige spezielle Überlegungen, die nach dieser Tabelle aufgeführt sind.|  
 |[Erste Schritte mit Git in Team Services](http://msdn.microsoft.com/Library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Ja|Siehe Hinweise nach der Tabelle.|  
-|[Codeanalyse/Verbessern der Codequalität (Verweise, vorgeschlagene Änderungen usw.)](http://msdn.microsoft.com/Library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|Ja||  
+|[Verbessern der Codequalität](/visualstudio/test/improve-code-quality)|Ja||  
 |[Ermitteln von Änderungen am Code und andere Verläufe](../ide/find-code-changes-and-other-history-with-codelens.md)|Ja||  
 |[Verwenden von Code Maps zum Debuggen von Anwendungen](../modeling/use-code-maps-to-debug-your-applications.md)|Ja||  
   
@@ -113,7 +113,7 @@ Das Entwickeln von Apps für moderne Plattformen umfasst viele weitere Aktivitä
 |[Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)|Nein|Tests der programmieren UI basieren auf lesbaren Steuerelementen in der App-Benutzeroberfläche. Unity-Apps sind grafischer Art, sodass Inhalte nicht von den Tools für Tests der programmierten UI gelesen werden können.|  
   
 ## <a name="improve-code-quality"></a>Verbessern der Codequalität  
- Verweislink: **[Verbessern der Codequalität](http://msdn.microsoft.com/Library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
+ Verweislink: **[Verbessern der Codequalität](/visualstudio/test/improve-code-quality)**  
   
 |Funktion|Unterstützt von Unity|Zusätzliche Kommentare|  
 |-------------|--------------------------|-------------------------|  

@@ -28,10 +28,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 203cc6111870cbf3342fd84c5931a0dadc2bdde0
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: c7d4f4f00d8d89b77f18b2a1b355a445c05dfb6b
 ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Schreiben von Komponententests für C/C++ mit dem Microsoft-Unittest-Framework für C++
@@ -414,6 +414,6 @@ In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht v
  [Verwenden von Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md)   
  [Überblick über die Interoperabilität von verwaltetem/nicht verwaltetem Code](http://msdn.microsoft.com/library/ms973872.aspx)   
  [Debuggen von nativem Code](../debugger/debugging-native-code.md)   
- [Exemplarische Vorgehensweise: Erstellen und Verwenden einer Dynamic Link Library (C++)](http://msdn.microsoft.com/Library/3ae94848-44e7-4955-bbad-7d40f493e941)   
+ [Exemplarische Vorgehensweise: Erstellen und Verwenden einer Dynamic Link Library (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)   
  [Importieren und Exportieren](/cpp/build/importing-and-exporting)
 

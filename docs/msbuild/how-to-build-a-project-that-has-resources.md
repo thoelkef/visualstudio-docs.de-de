@@ -32,10 +32,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 3ba7680d46345f2b49019659c715cfb418933d39
-ms.openlocfilehash: f0c10c20b96ebbbaaad4047349d7586b584b8b57
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: 641697cabee22a86e3b5ee7a360cbea154ead486
+ms.contentlocale: de-de
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Gewusst wie: Erstellen eines Projekts, das über Ressourcen verfügt
@@ -57,7 +58,7 @@ Wenn Sie lokalisierte Versionen eines Projekts erstellen, müssen alle Benutzero
 ## <a name="example"></a>Beispiel  
  Im folgenden Codebeispiel wird gezeigt wie das Element `Output` angibt, dass das Attribut `OutputResources` der Aufgabe `GenerateResource` die kompilierten Ressourcendateien `alpha.resources` und `beta.resources` enthält und dass diese zwei Dateien in die Elementliste `Resources` gelegt werden. Indem Sie diese Ressourcendateien als eine Auflistung von Elementen mit gleichem Namen identifizieren, können Sie sie einfach als Eingabe für eine andere Aufgabe wie der [Csc](../msbuild/csc-task.md)-Aufgabe verwenden.  
   
- Diese Aufgabe entspricht der Verwendung des **/compile**-Schalters für [Resgen.exe](http://msdn.microsoft.com/Library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4):  
+ Diese Aufgabe entspricht der Verwendung des **/compile**-Schalters für [Resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator):  
   
  `Resgen.exe /compile alpha.resx,alpha.resources /compile beta.txt,beta.resources`  
   
@@ -98,4 +99,4 @@ Wenn Sie lokalisierte Versionen eines Projekts erstellen, müssen alle Benutzero
 [MSBuild](../msbuild/msbuild.md)  
  [GenerateResource-Aufgabe](../msbuild/generateresource-task.md)   
  [Csc-Aufgabe](../msbuild/csc-task.md)   
- [Resgen.exe (Resource File Generator)](http://msdn.microsoft.com/Library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)
+ [Resgen.exe (Resource File Generator)](/dotnet/framework/tools/resgen-exe-resource-file-generator)

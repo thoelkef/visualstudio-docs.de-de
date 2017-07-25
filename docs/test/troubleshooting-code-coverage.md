@@ -27,10 +27,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: e2d04ac6463143efacf4fe4967d9e555aed84d05
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: c435bb9e490e9a3c59de78f383632552c0ca4641
 ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="troubleshooting-code-coverage"></a>Problembehandlung bei der Code Coverage
@@ -106,7 +106,7 @@ Mit dem Tool zur Code Coverage-Analyse in Visual Studio werden Daten für native
  Stellen Sie sicher, dass die Assembly nicht aus dem systemeigenen Imagecache geladen wird.  
   
  Erklärung  
- Systemeigene Imageassemblys werden aus Leistungsgründen nicht analysiert. Weitere Informationen finden Sie unter [Ngen.exe (Native Image Generator)](http://msdn.microsoft.com/Library/44bf97aa-a9a4-4eba-9a0d-cfaa6fc53a66).  
+ Systemeigene Imageassemblys werden aus Leistungsgründen nicht analysiert. Weitere Informationen finden Sie unter [Ngen.exe (Native Image Generator)](/dotnet/framework/tools/ngen-exe-native-image-generator).  
   
  Auflösung  
  Verwenden Sie eine MSIL-Version der Assembly. Verarbeiten Sie sie nicht mit NGen.  
