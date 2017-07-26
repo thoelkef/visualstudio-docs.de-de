@@ -34,10 +34,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: ccee6976f7c98e62211eb2bda4dec7da7334e031
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6fbf89668d47d55d1d77a1d7f11765567fc73405
+ms.openlocfilehash: 3f0056a62dc11c5584e38e9912ccd94f5b9e9b0e
+ms.contentlocale: de-de
+ms.lasthandoff: 05/26/2017
 
 ---
 # <a name="application-page-project-designer-c"></a>Seite "Anwendung", Projekt-Designer (C#)
@@ -51,14 +52,14 @@ Legen Sie auf der Seite **Anwendung** des **Projekt-Designers** die Anwendungsei
  Mit den folgenden Optionen können Sie allgemeine Einstellungen für die Anwendung konfigurieren.  
   
  **Assemblyname**  
- Gibt den Namen der Ausgabedatei an, in der das Assemblymanifest enthalten ist. Durch Ändern dieser Eigenschaft wird auch die Eigenschaft **Ausgabename** geändert. Sie können diese Änderung auch mithilfe von [/out (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/out-compiler-option) in der Befehlszeile vornehmen. Informationen über den programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.  
+ Gibt den Namen der Ausgabedatei an, in der das Assemblymanifest enthalten ist. Durch Ändern dieser Eigenschaft wird auch die Eigenschaft **Ausgabename** geändert. Sie können diese Änderung auch mithilfe von [/out (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/out-compiler-option) in der Befehlszeile vornehmen. Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.  
   
  **Standardnamespace**  
  Legt den Basisnamespace für alle Dateien fest, die dem Projekt hinzugefügt werden.  
   
  Weitere Informationen zum Erstellen von Namespaces im Code finden Sie unter [Namespace](/dotnet/csharp/language-reference/keywords/namespace).  
   
- Informationen über den programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.RootNamespace%2A>.  
+ Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.RootNamespace%2A>.  
   
  **Zielframework**  
  Gibt die .NET Framework-Version an, auf die die Anwendung ausgerichtet ist. Diese Option kann unterschiedliche Werte aufweisen, je nachdem, welche Versionen von .NET Framework auf dem Computer installiert sind.  
@@ -75,12 +76,12 @@ Legen Sie auf der Seite **Anwendung** des **Projekt-Designers** die Anwendungsei
   
  Für ein Webanwendungsprojekt müssen Sie **-Klassenbibliothek** angeben.  
   
- Wenn Sie die Option **WinMD-Datei** angeben, können Typen in eine beliebige Windows Runtime-Programmiersprache projiziert werden. Wenn Sie die Ausgabe des Projekts als WinMD-Datei packen, können Sie eine Anwendung in mehreren Sprachen codieren und einer Interaktion der verschiedenen Codes erreichen, als ob sie in derselben Sprache geschrieben wären. Sie können diese Option für Projektmappen festlegen, die auf Windows Runtime-Bibliotheken abzielen, beispielsweise [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]-Apps. Weitere Informationen finden Sie unter [Erstellen von Windows-Runtime-Komponenten in C# und Visual Basic](http://go.microsoft.com/fwlink/?LinkId=231895).  
+ Wenn Sie die Option **WinMD-Datei** angeben, können Typen in eine beliebige Windows Runtime-Programmiersprache projiziert werden. Wenn Sie die Ausgabe des Projekts als WinMD-Datei packen, können Sie eine Anwendung in mehreren Sprachen codieren und einer Interaktion der verschiedenen Codes erreichen, als ob sie in derselben Sprache geschrieben wären. Sie können diese Option für Projektmappen festlegen, die auf Windows Runtime-Bibliotheken abzielen, beispielsweise [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]-Apps. Weitere Informationen finden Sie unter [Erstellen von Windows-Runtime-Komponenten in C# und Visual Basic](/windows/uwp/winrt-components/creating-windows-runtime-components-in-csharp-and-visual-basic).  
   
 > [!NOTE]
 >  Die Windows Runtime kann Typen so projizieren, dass sie unabhängig von der verwendeten Sprache als systemeigene Objekte erscheinen. Beispielsweise verwenden JavaScript-Anwendungen, die mit der Windows Runtime interagieren, diese als JavaScript-Objektsatz, und C#-Anwendungen benutzen die Bibliothek als eine Sammlung von .NET-Objekten. Wenn Sie die Ausgabe des Projekts als WinMD-Datei packen, können Sie die gleiche Technologie nutzen, die Windows Runtime verwendet.  
   
- Weitere Informationen über die Eigenschaft **Anwendungstyp** finden Sie unter [/target (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/target-compiler-option). Weitere Informationen über den programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
+ Weitere Informationen über die Eigenschaft **Anwendungstyp** finden Sie unter [/target (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/target-compiler-option). Informationen zum programmgesteuerten Zugreifen auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
   
  **Assemblyinformationen**  
  Durch Klicken auf diese Schaltfläche wird das Dialogfeld[Assemblyinformationen](../../ide/reference/assembly-information-dialog-box.md) angezeigt.  
@@ -88,9 +89,9 @@ Legen Sie auf der Seite **Anwendung** des **Projekt-Designers** die Anwendungsei
  **Startobjekt**  
  Definiert den Einstiegspunkt, der aufgerufen werden soll, wenn die Anwendung geladen wird. Dieser wird üblicherweise entweder auf das Hauptformular der Anwendung oder auf die `Main`-Prozedur festgelegt, die beim Start der Anwendung ausgeführt werden soll. Da Klassenbibliotheken über keinen Einstiegspunkt verfügen, ist ihre einzige Option für diese Eigenschaft **(Nicht festgelegt)**.  
   
- In einem WPF-Browseranwendungsprojekt ist diese Option standardmäßig **(Nicht festgelegt)**. Die andere Option ist *Projectname*.App. Bei dieser Art von Projekten müssen Sie den Start-URI so einstellen, dass beim Starten der Anwendung eine UI-Ressource geladen wird. Öffnen Sie hierfür im Projekt die Datei „Application.xaml“, und legen Sie die `StartupUri`-Eigenschaft auf eine XAML-Datei in Ihrem Projekt fest, beispielsweise „Window1.xaml“. Eine Liste akzeptabler Stammelemente finden Sie unter <xref:System.Windows.Application.StartupUri%2A>. In einer Klasse im Projekt müssen Sie auch eine `public static void Main()`-Methode definieren. Diese Klasse wird in der **Startobjekt**-Liste als *ProjectName.ClassName* angezeigt. Sie können dann die Klasse als Startobjekt auswählen.  
+ In einem WPF-Browseranwendungsprojekt ist diese Option standardmäßig **(Nicht festgelegt)**. Die andere Option ist *Projectname*.App. Bei dieser Art von Projekten müssen Sie den Start-URI so einstellen, dass beim Starten der Anwendung eine UI-Ressource geladen wird. Öffnen Sie hierfür im Projekt die Datei „Application.xaml“, und legen Sie die `StartupUri`-Eigenschaft auf eine XAML-Datei in Ihrem Projekt fest, beispielsweise „Window1.xaml“. Eine Liste der zulässigen Stammelemente finden Sie unter <xref:System.Windows.Application.StartupUri%2A>. In einer Klasse im Projekt müssen Sie auch eine `public static void Main()`-Methode definieren. Diese Klasse wird in der **Startobjekt**-Liste als *ProjectName.ClassName* angezeigt. Sie können dann die Klasse als Startobjekt auswählen.  
   
- Weitere Informationen hierzu finden Sie unter [/main (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/main-compiler-option). Informationen über den programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.StartupObject%2A>.  
+ Weitere Informationen hierzu finden Sie unter [/main (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/main-compiler-option). Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.StartupObject%2A>.  
   
 ## <a name="resources"></a>Ressourcen  
  Mit den folgenden Optionen können Sie allgemeine Einstellungen für die Anwendung konfigurieren.  
@@ -99,7 +100,7 @@ Legen Sie auf der Seite **Anwendung** des **Projekt-Designers** die Anwendungsei
  Standardmäßig ist dieses Optionsfeld markiert, und die Optionen **Symbol** und **Manifest** sind aktiviert. Dadurch können Sie Ihr eigenes Symbol oder andere Optionen zur Generierung von Manifesten auswählen. Lassen Sie dieses Optionsfeld ausgewählt, es sei denn, Sie stellen eine Ressourcendatei für das Projekt bereit.  
   
  **Symbol**  
- Legt die ICO-Datei fest, die als Programmsymbol verwendet werden soll. Klicken Sie auf die Schaltfläche mit den Auslassungszeichen, um eine vorhandene Grafik zu suchen, oder geben Sie den Namen der gewünschten Datei ein. Weitere Informationen finden Sie unter [/win32icon (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option). Informationen über den programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.  
+ Legt die ICO-Datei fest, die als Programmsymbol verwendet werden soll. Klicken Sie auf die Schaltfläche mit den Auslassungszeichen, um eine vorhandene Grafik zu suchen, oder geben Sie den Namen der gewünschten Datei ein. Weitere Informationen finden Sie unter [/win32icon (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option). Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.  
   
  **Manifest**  
  Aktiviert eine Manifestgenerierungsoption, wenn die Anwendung auf Windows Vista unter Benutzerkontensteuerung (UAC) ausgeführt wird. Diese Option kann die folgenden Werte aufweisen:  

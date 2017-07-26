@@ -29,10 +29,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: a267468b7b23dd0d2ed6c43df6c63c78d862ddbb
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: 3a1ae20e3aca94339621546ac69bbfffd3a75ab3
+ms.contentlocale: de-de
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="toolbox-components-tab"></a>Toolbox, Registerkarte „Komponenten“
@@ -80,7 +81,7 @@ Zeigt die Komponenten, die Sie zu [!INCLUDE[vbprvb](../../code-quality/includes/
  Erstellt eine <xref:System.ServiceProcess.ServiceController>-Komponenteninstanz, mit der Sie vorhandene Dienste bearbeiten und unter anderem Dienste starten und beenden sowie Befehle an sie senden können. Weitere Informationen finden Sie unter [Monitoring Windows Services (Überwachen von Windows-Diensten)](http://msdn.microsoft.com/en-us/4542ee3f-e052-4cb9-8726-58e9420de222).  
   
  **Zeitgeber**  
- Erstellt eine <xref:System.Windows.Forms.Timer>-Komponenteninstanz, mit der Sie zeitbasierte Funktionen zu Ihren Windows-basierten Anwendungen hinzufügen können. Weitere Informationen finden Sie unter [Timer Component (Timer-Komponente)](http://msdn.microsoft.com/Library/6700e534-6382-43d5-98ed-14205435fff7).  
+ Erstellt eine <xref:System.Windows.Forms.Timer>-Komponenteninstanz, mit der Sie zeitbasierte Funktionen zu Ihren Windows-basierten Anwendungen hinzufügen können. Weitere Informationen finden Sie unter [Timer Component (Timer-Komponente)](/dotnet/framework/winforms/controls/timer-component-windows-forms).  
   
 > [!NOTE]
 >  Es gibt auch eine systembasierte <xref:System.Timers.Timer>, die Sie zur **Toolbox** hinzufügen können. Diese <xref:System.Timers.Timer> ist für Serveranwendungen optimiert, und die <xref:System.Windows.Forms.Timer> eignet sich am besten für die Verwendung in Windows Forms.  

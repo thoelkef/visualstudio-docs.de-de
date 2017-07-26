@@ -29,10 +29,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 2f67cbb9e3a2895dc6c35e68dbd6b262862c6514
-ms.openlocfilehash: 5a42f721c30dba9c14f7871a0d771f07054e2550
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 8b1f56944190c60795d5bbd726388309caca7070
 ms.contentlocale: de-de
-ms.lasthandoff: 02/22/2017
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="sign-in-to-visual-studio"></a>Anmelden bei Visual Studio
@@ -43,13 +43,13 @@ Sie können Ihre Bereitstellungsumgebung in Visual Studio personalisieren und op
 
 -   **Vielzahl von Vorteilen** des Visual Studio Dev Essentials-Programms, u. a. kostenlose Software, Trainings und Support. Weitere Informationen finden Sie unter [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp) .  
 
--   **Synchronisiert die Visual Studio-Einstellungen** – Einstellungen, die Sie anpassen, beispielsweise Tastaturzuordnungen, Fensterlayout und Farbschema, werden sofort übernommen, wenn Sie sich bei Visual Studio auf einem Gerät anmelden. Weitere Informationen finden Sie unter [Synchronisierte Einstellungen in Visual Studio](../ide/synchronized-settings-in-visual-studio.md).  
+-   **Synchronisiert die Visual Studio-Einstellungen**: Einstellungen, die Sie anpassen, beispielsweise Tastaturzuordnungen, Fensterlayout und Farbschema, werden sofort übernommen, wenn Sie sich bei Visual Studio auf einem Gerät anmelden. Weitere Informationen finden Sie unter [Synchronisierte Einstellungen in Visual Studio](../ide/synchronized-settings-in-visual-studio.md).  
 
--   **Entsperrt Visual Studio Express Edition dauerhaft** – Sie können jede Edition von Visual Studio Express so lange Sie möchten nutzen. Es findet keine Begrenzung auf den Testzeitraum von 30 Tagen statt.  
+-   **Entsperrt Visual Studio Express Edition dauerhaft**: Sie können jede Edition von Visual Studio Express so lange Sie möchten nutzen. Es gibt keine Begrenzung auf den Testzeitraum von 30 Tagen.  
 
 -   **Entsperrt Visual Studio Community Edition** – Somit sind Sie nicht auf den Testzeitraum von 30 Tagen beschränkt.  
 
--   **Verlängert den Visual Studio-Testzeitraum** – Sie können Visual Studio Professional oder Visual Studio Enterprise für 90 Tage zusätzlich verwenden und sind nicht auf den Testzeitraum von 30 Tagen beschränkt.  
+-   **Verlängert den Visual Studio-Testzeitraum**: Sie können Visual Studio Professional oder Visual Studio Enterprise für 90 Tage zusätzlich verwenden und sind nicht auf den Testzeitraum von 30 Tagen beschränkt.  
 
 -   **Entsperrt Visual Studio, wenn Sie ein Konto verwenden, das mit einem MSDN- oder VSO-Abonnement verknüpft ist**. Siehe [Entsperren von Visual Studio](../ide/how-to-unlock-visual-studio.md).  
 

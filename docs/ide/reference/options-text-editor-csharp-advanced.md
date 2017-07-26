@@ -1,83 +1,100 @@
 ---
-title: "Optionen, Text-Editor, C#, Erweitert | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining"
-  - "VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Advanced"
-  - "VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Outlining"
-  - "VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced"
-helpviewer_keywords: 
-  - "XML-Kommentare"
-  - "XML-Dokumentation, generieren"
-  - "Gliederungsoptionen [C#]"
-  - "Gliederungsoptionen [J#]"
-  - "XML-Dokumentation, erstellen"
+title: Optionen, Text-Editor, C#, Erweitert | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
+- VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Advanced
+- VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Outlining
+- VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
+helpviewer_keywords:
+- XML comments
+- XML documentation, generating
+- outlining options [C#]
+- outlining options [J#]
+- XML documentation, creating
 ms.assetid: 947f9d9a-b0f3-408d-9866-d82895bcee31
 caps.latest.revision: 22
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 22
----
-# Optionen, Text-Editor, C#, Erweitert
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 61a061b6a58b18451fc53c8d53f77889cc1ea253
+ms.contentlocale: de-de
+ms.lasthandoff: 05/24/2017
 
-Verwenden Sie dieses Dialogfeld, um Einstellungen zur Editorformatierung, Umgestaltung von Code sowie zu XML\-Dokumentationskommentaren für Visual C\# zu ändern.  Um dieses Dialogfeld zu öffnen, klicken Sie im Menü **Extras** auf **Optionen**, erweitern den Ordner **Text\-Editor**, erweitern **C\#** und klicken dann auf **Erweitert**.  
+---
+# <a name="options-text-editor-c-advanced"></a>Optionen, Text-Editor, C#, Erweitert
+Mithilfe dieses Dialogfelds können Sie die Einstellungen für Formatierungen mithilfe des Editors, Coderefactoring und XML-Dokumentationskommentaren verändern. Klicken Sie zum Öffnen dieses Dialogfelds im Menü **Extras** auf **Optionen**, erweitern Sie den Ordner **Text-Editor**, erweitern Sie **C#**, und klicken Sie dann auf **Erweitert**.  
   
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen.  Wählen Sie im Menü **Extras** die Option **Einstellungen importieren und exportieren** aus, um die Einstellungen zu ändern.  Weitere Informationen finden Sie unter [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/de-de/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).  
   
-## Gliederung  
- Entwurfsmodus beim Öffnen der Datei starten  
- Bei Auswahl dieser Option wird die Codedatei automatisch gegliedert, wodurch reduzierbare Codeblöcke erstellt werden.  Wenn eine Datei zum ersten Mal geöffnet wird, werden \#region\-Blöcke und inaktive Codeblöcke reduziert.  
+## <a name="outlining"></a>Gliedern  
+ Beim Öffnen von Dateien in Gliederungsmodus wechseln  
+ Wenn diese Option aktiviert ist, wird die Codedatei automatisch gegliedert. Hierdurch werden reduzierbare Codeblöcke erstellt. Beim ersten Öffnen einer Datei werden #Region-Blöcke und inaktive Codeblöcke reduziert.  
   
-## Editor\-Hilfe  
+## <a name="editor-help"></a>Editor-Hilfe  
  Fehler im Editor unterstreichen  
- Kennzeichnet Buildfehler im Code.  Bei Auswahl dieser Option werden farbige wellenförmige Unterstreichungen angezeigt, deren jeweilige Farbe eine bestimmte Bedeutung hat:  
+ Identifiziert Buildfehler im Code. Wenn diese Option aktiviert ist, werden wellenförmige Unterstreichungen in Farben angezeigt, die eine bestimmte Bedeutung haben:  
   
--   Analysefehler sind rot.  
+-   Analysefehler werden rot dargestellt.  
   
--   Buildfehler sind blau.  
+-   Buildfehler werden blau dargestellt.  
   
--   Buildwarnungen sind grün.  
+-   Buildwarnungen werden grün dargestellt.  
   
--   Ungültige ["Bearbeiten und Fortfahren"](../../debugger/edit-and-continue.md)\-Vorgänge sind violett.  
+-   Ungültige Bearbeitungen in [Bearbeiten und Fortfahren](../../debugger/edit-and-continue.md) werden violett dargestellt.  
   
- Bewegen Sie den Mauszeiger über das unterstrichene Codesegment, um eine QuickInfo mit Informationen zum Fehler zu erhalten.  
+ Bewegen Sie den Zeiger über das unterstrichene Codesegment. Hierdurch wird eine QuickInfo mit Informationen über den Fehler angezeigt.  
   
  Livesemantikfehler anzeigen  
- Identifiziert bestimmte Compilerfehler ohne explizite Kompilierung, z. B. Deklarieren und Verwenden eines unbekannten Typs oder Verweisen auf eine unbekannte Eigenschaft.  
+ Erkennt bestimmte Kompilierungsfehler ohne explizite Kompilierung, z.B. das Angeben und Verwenden eines unbekannten Typs oder Verweise auf eine unbekannte Eigenschaft.  
   
- Verweise auf Symbol unter Cursor hervorheben  
- Wenn sich der Cursor innerhalb eines Symbols befindet oder Sie auf ein Symbol klicken, werden alle Instanzen dieses Symbols in der Codedatei hervorgehoben.  
+ Verweise auf Symbole unter dem Cursor markieren  
+ Wenn sich der Cursor innerhalb eines Symbols befindet, oder wenn Sie auf ein Symbol klicken, werden alle Instanzen dieses Symbols in der Codedatei hervorgehoben.  
   
-## Umgestaltung  
- Überprüfen der Ergebnisse der Umgestaltung  
- Zeigt das Dialogfeld **Ergebnisse der Verifizierung** an, wenn Sie versuchen, Code umzugestalten, der Buildfehler enthält, oder wenn eine Umgestaltung dazu führen würde, dass für einen Codeverweis eine abweichende Bindung als die ursprüngliche Bindung hergestellt wird.  
+## <a name="refactoring"></a>Umgestaltung  
+ Ergebnisse der Umgestaltung überprüfen  
+ Zeigt das Dialogfeld **Ergebnisse der Verifizierung** an, wenn Sie versuchen, Code umzugestalten, der Buildfehler enthält, oder wenn die Umgestaltung dazu führen würde, dass ein Codeverweis sich an etwas anderes als die Originalbindung bindet.  
   
- Warnen bei Membern mit vom Compiler generierten Verweisen  
- Blendet ein Warndialogfeld ein, wenn Sie versuchen, einen Member umzugestalten, der über denselben Namen wie ein vom Compiler generierter Verweis verfügt.  
+ Warnung bei Membern mit vom Compiler generierten Verweisen  
+ Zeigt ein Warndialogfeld an, wenn Sie versuchen, einen Member umzugestalten, der mit dem Namen eines vom Compiler generierten Verweises übereinstimmt.  
   
-## XML\-Dokumentationskommentare  
- XML\-Dokumentationskommentare generieren für \/\/\/  
- Bei Auswahl dieser Option werden automatisch \<summary\>\-Starttags und \-Endtags für XML\-Dokumentationskommentare eingefügt, nachdem Sie die Zeichen \/\/\/ für den Kommentarbeginn eingegeben haben.  Weitere Informationen zur XML\-Dokumentation finden Sie unter [XML\-Dokumentationskommentare](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments).  
+## <a name="xml-documentation-comments"></a>XML-Dokumentationskommentare  
+ XML-Dokumentationskommentare generieren für ///  
+ Bei Auswahl dieser Option werden die \<summary>-Start- und Endtags automatisch bei XML-Dokumentationskommentaren eingefügt, wenn Sie die ///-Kommentareinführung eingegeben haben. Weitere Informationen über die XML-Dokumentation finden Sie unter [XML-Dokumentationskommentare](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments).  
   
-## Schnittstelle implementieren  
- Generierten Code mit \#region umschließen  
- Fügt einen \#region \<*Schnittstellenname*\>\-Member vor und nach Methoden ein, wenn Schnittstelle implementieren oder Schnittstelle explizit implementieren verwendet wird.  
+## <a name="implement-interface"></a>Schnittstelle implementieren  
+ Generierten Code mit #region umschließen  
+ Fügt einen #region \<*Schnittstellenname*>-Member um die Methoden ein, wenn „Schnittstelle implementieren“ oder „Schnittstelle explizit implementieren“ ausgewählt ist.  
   
-## Usings organisieren  
- System\-Direktiven beim Sortieren von Usings an erster Stelle platzieren  
- Falls aktiviert, werden `System` Using\-Direktiven vor anderen Using\-Direktiven angezeigt.  Weitere Informationen finden Sie unter [Sortieren von Usings](../../misc/sort-usings.md).  
+## <a name="organize-usings"></a>Using-Direktiven organisieren  
+ System-Direktiven beim Sortieren von Using-Direktiven an erster Stelle platzieren  
+ Wenn diese Option aktiviert ist, werden using-Direktiven des `System` vor anderen using-Direktiven angezeigt. Weitere Informationen finden Sie unter „Using-Direktiven organisieren“ in [Visual C#-IntelliSense](../../ide/visual-csharp-intellisense.md#automatic-code-generation).  
   
-## Siehe auch  
- [XML\-Dokumentationskommentare](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)   
- [Festlegen von sprachspezifischen Editoroptionen](../../ide/reference/setting-language-specific-editor-options.md)   
- [Visual C\#\-IntelliSense](../../ide/visual-csharp-intellisense.md)
+## <a name="see-also"></a>Siehe auch  
+ [XML-Dokumentationskommentare](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)   
+ [Festlegen von sprachspezifischen Editor-Optionen](../../ide/reference/setting-language-specific-editor-options.md)   
+ [Visual C# IntelliSense](../../ide/visual-csharp-intellisense.md)

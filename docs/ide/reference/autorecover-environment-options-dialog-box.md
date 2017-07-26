@@ -1,43 +1,60 @@
 ---
-title: "AutoWiederherstellen, Umgebung, Dialogfeld &quot;Optionen&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.ToolsOptionsPag.Environment.AutoRecover"
-  - "VS.DialogAutoRestore"
-  - "VS.ToolsOptionsPages.Environment.AutoRecover"
-  - "VS.ToolsOptionsPages.Environment.Auto_Save_and_Restore"
-helpviewer_keywords: 
-  - "Dateien, wiederherstellen"
-  - "AutoWiederherstellen (Seite)"
-  - "Speichern von Dateien, automatisch"
-  - "Dateien, automatisch speichern"
+title: "AutoWiederherstellen, Umgebung, Dialogfeld „Optionen“ | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VS.ToolsOptionsPag.Environment.AutoRecover
+- VS.DialogAutoRestore
+- VS.ToolsOptionsPages.Environment.AutoRecover
+- VS.ToolsOptionsPages.Environment.Auto_Save_and_Restore
+helpviewer_keywords:
+- files, recovering
+- AutoRecover page
+- saving files, automatically
+- files, saving automatically
 ms.assetid: 397e5e44-4bbe-4289-94d1-642b466c9111
 caps.latest.revision: 14
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 14
----
-# AutoWiederherstellen, Umgebung, Dialogfeld &quot;Optionen&quot;
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 320b31b01237656be157be9ad9ce5787521215db
+ms.contentlocale: de-de
+ms.lasthandoff: 05/24/2017
 
-Auf dieser Seite des Dialogfelds Optionen können Sie angeben, ob Dateien automatisch gesichert werden sollen.  Außerdem können Sie hier festlegen, ob bearbeitete Dateien nach einer unerwarteten Beendigung der integrierten Entwicklungsumgebung \(IDE\) wiederhergestellt werden sollen oder nicht.  Sie können dieses Dialogfeld öffnen, indem Sie im Menü **Extras** auf **Optionen** klicken, den Ordner **Umgebung** und anschließend die Seite **AutoWiederherstellen** auswählen.  Wenn diese Seite nicht in der Liste angezeigt wird, wählen Sie im Dialogfeld **Optionen** die Option **Alle Einstellungen anzeigen** aus.  
+---
+# <a name="autorecover-environment-options-dialog-box"></a>AutoWiederherstellen, Umgebung, Dialogfeld "Optionen"
+Verwenden Sie diese Seite des Dialogfelds „Optionen“, um anzugeben, ob Dateien automatisch gesichert werden sollen oder nicht. Auf dieser Seite können Sie auch angeben, ob modifizierte Dateien wiederhergestellt werden sollen, wenn die integrierte Entwicklungsumgebung (IDE) unerwartet heruntergefahren wird. Sie können auf dieses Dialogfeld zugreifen, indem Sie das Menü **Extras** und anschließend **Optionen** auswählen und dann im Ordner **Umgebung** die Seite **AutoWiederherstellen** auswählen. Wenn diese Seite nicht in der Liste angezeigt wird, aktivieren Sie im Dialogfeld **Optionen** das Kontrollkästchen **Alle Einstellungen anzeigen**.  
   
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen.  Klicken Sie im Menü Extras auf Einstellungen importieren und exportieren, um die Einstellungen zu ändern.  Weitere Informationen finden Sie unter [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/de-de/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü Extras auf Einstellungen importieren und exportieren, um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).  
   
- **Informationen für AutoWiederherstellen speichern alle \<n\> Minuten**  
- Verwenden Sie diese Option, um festzulegen, wie häufig eine Datei im Editor automatisch gespeichert wird.  Bei bereits gespeicherten Dateien wird eine Kopie der Datei unter \\...  \\Eigene Dokumente\\Visual Studio \<*Version*\>\\Backup Files\\\<*Projektname*\> gespeichert.  Wenn die Datei neu ist und noch nicht manuell gespeichert wurde, wird sie unter einem nach dem Zufallsprinzip generierten Dateinamen automatisch gespeichert.  
+ **AutoWiederherstellen-Informationen speichern alle \< Minuten**  
+ Verwenden Sie diese Option, um anzupassen, wie oft eine Datei automatisch im Editor gespeichert wird. Bei zuvor gespeicherten Dateien wird eine Kopie der Datei in \\...\Eigene Dokumente\Visual Studio\<*version*>\Sicherungsdateien\\<*projektname*> gespeichert. Wenn es sich um eine neue Datei handelt und diese noch nicht manuell gespeichert wurde, wird die Datei automatisch mit einem zufällig generierten Dateinamen gespeichert.  
   
- **Informationen für AutoWiederherstellen beibehalten für \<n\> Tage**  
- Verwenden Sie diese Option, um anzugeben, wie lange für die automatische Wiederherstellung erstellte Dateien in Visual Studio gespeichert bleiben.  
+ **Informationen für AutoWiederherstellen beibehalten für \<n> Tage**  
+ Verwenden Sie diese Option, um anzugeben, wie lange Visual Studio Dateien für die automatische Wiederherstellung beibehält.  
   
-## Siehe auch  
- [Dialogfeld "Optionen"](../../ide/reference/options-dialog-box-visual-studio.md)
+## <a name="see-also"></a>Siehe auch  
+ [Optionen (Dialogfeld)](../../ide/reference/options-dialog-box-visual-studio.md)

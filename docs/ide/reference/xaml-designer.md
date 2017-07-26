@@ -29,17 +29,18 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: d23a47b708754248cd5c3fb8d86510a0c96491fa
-ms.lasthandoff: 03/07/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: bda254d18dc391f3c10e3544ee09fd09171d0938
+ms.contentlocale: de-de
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="xaml-designer-options-page"></a>Seite „Optionen“ im XAML-Designer
 Sie verwenden die Seite „Optionen“ im **XAML-Designer**, um anzugeben, wie Elemente und Attribute in XAML-Dokumenten formatiert werden. Wählen Sie zum Öffnen dieser Seite im Menü **Extras** den Befehl **Optionen** aus. Für den Zugriff auf die Eigenschaftenseite **XAML-Designer** wählen Sie den Knoten **XAML-Designer** aus. Einstellungen für den XAML-Designer werden angewendet, wenn Sie das Dokument öffnen. Wenn Sie die Einstellungen also ändern, müssen Sie Visual Studio schließen und wieder öffnen, damit die Änderungen angezeigt werden.
 
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).  
 
 ## <a name="enable-xaml-designer"></a>XAML-Designer aktivieren
 Ist diese Einstellung ausgewählt, wird der XAML-Designer aktiviert. Der XAML-Designer bietet einen visuellen Arbeitsbereich zum Bearbeiten von XAML-Dokumenten. Für bestimmte Funktionen in Visual Studio wie IntelliSense für Ressourcen und Datenbindung muss der XAML-Designer aktiviert werden.
@@ -116,7 +117,7 @@ Mit diesen Einstellungen wird bestimmt, ob die Effekte gerendert werden, wenn XA
 |**Zoomschwellenwert**|Gibt den Prozentsatz für den Zoomfaktor an, mit dem Effekte gerendert werden, wenn das Kontrollkästchen **Effekte rendern** aktiviert ist. Wenn Sie über diese Einstellung hinaus vergrößern, können Effekte im XAML-Designer nicht mehr gerendert werden.|  
 
 ## <a name="see-also"></a>Siehe auch  
- [XAML in WPF](http://msdn.microsoft.com/Library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)   
+ [XAML in WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)   
  [Gewusst wie: Ändern von XAML-Ansichtseinstellungen](http://msdn.microsoft.com/en-us/aee87c79-ca01-4f84-8fb7-a9e47048ee47)   
  [Exemplarische Vorgehensweisen zu XAML und Code](http://msdn.microsoft.com/en-us/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)
 

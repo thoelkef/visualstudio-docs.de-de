@@ -1,54 +1,70 @@
 ---
-title: "Befehl &quot;&#220;berwachung&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "debug.watch"
-helpviewer_keywords: 
-  - "Debug.Watch-Befehl"
-  - "Überwachung (Befehl)"
+title: "Befehl „Überwachung“ | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- debug.watch
+helpviewer_keywords:
+- Watch command
+- Debug.Watch command
 ms.assetid: aa02e647-d9f5-4905-a651-52a8df595795
 caps.latest.revision: 11
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# Befehl &quot;&#220;berwachung&quot;
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: bf91686a212551ef4b760d5bb2740a14f8495a1b
+ms.contentlocale: de-de
+ms.lasthandoff: 05/24/2017
 
-Erstellt und öffnet eine angegebene Instanz eines **Überwachungsfensters**.  Mithilfe eines **Überwachungsfensters** können Sie die Werte von Variablen, Ausdrücken und Registern berechnen, um diese Werte zu bearbeiten und die Ergebnisse zu speichern.  
+---
+# <a name="watch-command"></a>Befehl "Überwachung"
+Erstellt und öffnet eine angegebene Instanz des Fensters **Überwachen** . Sie können das Fenster **Überwachen** verwenden, um die Werte von Variablen, Ausdrücken und Registern zu berechnen, um diese Werte zu berechnen und die Ergebnisse zu speichern.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 Debug.Watch[index]  
 ```  
   
-## Argumente  
+## <a name="arguments"></a>Argumente  
  `index`  
- Erforderlich.  Die Instanznummer des Überwachungsfensters.  
+ Erforderlich. Die Instanznummer des Fensters „Überwachen“.  
   
-## Hinweise  
- `index` muss eine ganze Zahl sein.  Gültige Werte sind 1, 2, 3 oder 4.  
+## <a name="remarks"></a>Hinweise  
+ Der `index` muss eine ganze Zahl sein. Gültige Werte sind 1, 2, 3 oder 4.  
   
-## Beispiel  
+## <a name="example"></a>Beispiel  
   
 ```  
 >Debug.Watch1  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Fenster „Auto“ und „Lokal“](../../debugger/autos-and-locals-windows.md)   
- [Gewusst wie: Bearbeiten eines Werts in einem Variablenfenster](../Topic/How%20to:%20Edit%20a%20Value%20in%20a%20Variable%20Window.md)   
- [Gewusst wie: Verwenden des Dialogfelds Schnellüberwachung](../Topic/How%20to:%20Use%20the%20QuickWatch%20Dialog%20Box.md)   
- [Visual Studio\-Befehle](../../ide/reference/visual-studio-commands.md)   
+ [Set a Watch on Variables using the Watch and QuickWatch Windows in Visual Studio (Festlegen einer Überwachung von Variablen in den Fenstern „Überwachung“ und „Schnellüberwachung“ in Visual Studio)](../../debugger/watch-and-quickwatch-windows.md)   
+ [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)   
  [Befehlsfenster](../../ide/reference/command-window.md)   
- [Such\/Befehlsfeld](../../ide/find-command-box.md)   
- [Visual Studio\-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)
+ [Such-/Befehlsfeld](../../ide/find-command-box.md)   
+ [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)

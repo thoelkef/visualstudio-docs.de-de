@@ -30,23 +30,23 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 2587e4a10a4caa1192a0efc31448078db553dfb4
+ms.translationtype: HT
+ms.sourcegitcommit: dc7a0c10390de67b56a83d2824224bed24125db0
+ms.openlocfilehash: 702be191610ce05e91d081fed9c70a135c72c971
 ms.contentlocale: de-de
-ms.lasthandoff: 04/05/2017
+ms.lasthandoff: 07/17/2017
 
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Exemplarische Vorgehensweise: Erstellen einer Build-Umgebung für mehrere Computer
+
 Sie können eine Buildumgebung in der Organisation erstellen, indem Sie Visual Studio auf einem Hostcomputer installieren und anschließend verschiedene Dateien und Einstellungen zu einem anderen Computer kopieren, sodass er mit den Builds verwendet werden kann. Visual Studio muss auf dem anderen Computer nicht installiert werden.  
   
- Dieses Dokument berichtigt nicht zur externen Weiterverteilung der Software oder zum Bereitstellung der Buildumgebung an Drittanbieter.  
+Dieses Dokument berichtigt nicht zur externen Weiterverteilung der Software oder zum Bereitstellung der Buildumgebung an Drittanbieter.  
   
-||  
-|-|  
-|Haftungsausschluss<br /><br /> Dieses Dokument wird wie besehen bereitgestellt. Obwohl die aufgeführten Schritte getestet wurden, kann nicht jede Konfiguration vollständig getestet werden. Wir bemühen uns, das Dokument mit jeder neugewonnenen Information aktuell zu halten. Die in diesen Unterlagen zum Ausdruck gebrachten Informationen und Ansichten, einschließlich URLs und anderer Verweise auf Internetwebsites, können ohne vorherige Ankündigung geändert werden. Microsoft gibt keine Garantie, weder ausdrücklich noch impliziert, hinsichtlich der hier bereitgestellten Informationen. Sie tragen das alleinige Verwendungsrisiko.<br /><br /> Dieses Dokument stellt keinerlei Rechtsansprüche auf geistiges Eigentum in Microsoft-Produkten jeglicher Art bereit. Sie dürfen Dokument für interne Informationszwecke kopieren.<br /><br /> Sie unterliegen keinerlei Verpflichtung, Microsoft Vorschläge, Kommentare oder anderes Feedback ("Feedback") in Bezug auf dieses Dokument zu unterbreiten. Jegliches von Ihnen freiwillig bereitstellte Feedback kann in Microsoft-Produkten und zugehöriger Spezifikation oder weiterer Dokumentationen (zusammen, "Microsoft-Angebote") die möglicherweise wiederum von weiteren Drittanbietern für die Entwicklung eigener Produkte genutzt werden. Bei Abgabe von Feedback an Microsoft zu jeglicher Version dieses Dokuments oder den Microsoft-Angeboten, für die diese gelten, stimmen Sie folgenden Punkten zu: (a) Microsoft darf Ihr Feedback frei verwenden, reproduzieren, lizenzieren verteilen und Ihr Feedback in jeglichen Microsoft-Angeboten auf andere Weise kommerziell im Handel nutzen; (b) Sie gewähren auch Drittanbietern gratis nur solche Patentrechte, die erforderlich sind, um anderen Produkte die Verwendung von bzw. das Herstellen einer Verbindung mit jeglichen spezifischen Teilen eines Microsoft-Produkts, für das Ihr Feedback genutzt wird, zu ermöglichen; und (c) Sie geben Microsoft kein Feedback, bei dem Sie (i) Anlass zur Annahme haben, dass es einem Patent, Urheberrecht, geistigem Eigentum oder den Rechten eines Drittanbieters unterliegt; oder dass es (ii) Lizenzbedingungen unterliegt, die erfordern, dass ein dieses Feedback integrierendes oder davon abgeleitetes Microsoft-Angebot, oder anderes geistiges Eigentum von Microsoft, lizenziert oder auf andere Art und Weise für Drittanbieter freigegeben wird.|  
-  
- Diese exemplarische Vorgehensweise ist für die folgenden Betriebssysteme überprüft worden, indem MSBuild auf der Befehlszeile ausgeführt und mit Team Foundation Build verwendet wurde.  
+> Haftungsausschluss<br /><br /> Dieses Dokument wird wie besehen bereitgestellt. Obwohl die aufgeführten Schritte getestet wurden, kann nicht jede Konfiguration vollständig getestet werden. Wir bemühen uns, das Dokument mit jeder neugewonnenen Information aktuell zu halten. Die in diesen Unterlagen zum Ausdruck gebrachten Informationen und Ansichten, einschließlich URLs und anderer Verweise auf Internetwebsites, können ohne vorherige Ankündigung geändert werden. Microsoft gibt keine Garantie, weder ausdrücklich noch impliziert, hinsichtlich der hier bereitgestellten Informationen. Sie tragen das alleinige Verwendungsrisiko.<br /><br /> Dieses Dokument stellt keinerlei Rechtsansprüche auf geistiges Eigentum in Microsoft-Produkten jeglicher Art bereit. Sie dürfen Dokument für interne Informationszwecke kopieren.<br /><br /> Sie unterliegen keinerlei Verpflichtung, Microsoft Vorschläge, Kommentare oder anderes Feedback ("Feedback") in Bezug auf dieses Dokument zu unterbreiten. Jegliches von Ihnen freiwillig bereitstellte Feedback kann in Microsoft-Produkten und zugehöriger Spezifikation oder weiterer Dokumentationen (zusammen, "Microsoft-Angebote") die möglicherweise wiederum von weiteren Drittanbietern für die Entwicklung eigener Produkte genutzt werden. Bei Abgabe von Feedback an Microsoft zu jeglicher Version dieses Dokuments oder den Microsoft-Angeboten, für die diese gelten, stimmen Sie folgenden Punkten zu: (a) Microsoft darf Ihr Feedback frei verwenden, reproduzieren, lizenzieren verteilen und Ihr Feedback in jeglichen Microsoft-Angeboten auf andere Weise kommerziell im Handel nutzen; (b) Sie gewähren auch Drittanbietern gratis nur solche Patentrechte, die erforderlich sind, um anderen Produkte die Verwendung von bzw. das Herstellen einer Verbindung mit jeglichen spezifischen Teilen eines Microsoft-Produkts, für das Ihr Feedback genutzt wird, zu ermöglichen; und (c) Sie geben Microsoft kein Feedback, bei dem Sie (i) Anlass zur Annahme haben, dass es einem Patent, Urheberrecht, geistigem Eigentum oder den Rechten eines Drittanbieters unterliegt; oder dass es (ii) Lizenzbedingungen unterliegt, die erfordern, dass ein dieses Feedback integrierendes oder davon abgeleitetes Microsoft-Angebot, oder anderes geistiges Eigentum von Microsoft, lizenziert oder auf andere Art und Weise für Drittanbieter freigegeben wird.
+
+
+Diese exemplarische Vorgehensweise ist für die folgenden Betriebssysteme überprüft worden, indem MSBuild auf der Befehlszeile ausgeführt und mit Team Foundation Build verwendet wurde.  
   
 -   Windows 8 (x86 und x64)  
   
@@ -335,7 +335,7 @@ Sie können eine Buildumgebung in der Organisation erstellen, indem Sie Visual S
   
 #### <a name="to-copy-assemblies-from-the-host-computer-and-install-them-on-the-build-computer"></a>So kopieren Sie Assemblys vom Hostcomputer und installieren sie auf dem Buildcomputer  
   
-1.  Kopieren Sie die folgenden Assamblys vom Hostcomputer auf den Buildcomputer. Da sie zum GAC installiert werden, ist es nicht unerheblich, wo die Assamblys auf dem Buildcomputer gespeichert werden.  
+1.  Kopieren Sie die folgenden Assamblys vom Hostcomputer auf den Buildcomputer. Da sie zum GAC installiert werden, ist es nicht unerheblich, wo die Assemblys auf dem Buildcomputer gespeichert werden.  
   
     -   %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.Build.CPPTasks.Common.v110.dll  
   
@@ -390,7 +390,7 @@ Sie können eine Buildumgebung in der Organisation erstellen, indem Sie Visual S
   
          auf  
   
-         AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll”.  
+         AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".  
   
          Die frühere Benennung beruht auf der Tatsache, dass die Assembly in den GAC installiert wird.  
   
@@ -400,7 +400,7 @@ Sie können eine Buildumgebung in der Organisation erstellen, indem Sie Visual S
   
          auf  
   
-         AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll”.  
+         AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".  
   
 4.  Erstellen Sie eine PROPS-Datei, z. B. Partner.AutoImports.props, - und legen Sie sie im Stammverzeichnis des Ordners ab, in dem die Projekte enthalten sind. Diese Datei wird zum Festlegen der Variablen verwendet, die von MSBuild zum Suchen verschiedene Ressourcen verwendet werden. Wenn die Variablen von dieser Datei nicht festgelegt werden, werden sie von anderen PROPS- und TARGETS-Dateien festgelegt, die auf Registrierungswerten basieren. Da keine Registrierungswerte festlegt werden, wären diese Variablen leer und der Build würde einen Fehler verursachen. Fügen Sie stattdessen der Datei "Partner.AutoImports.props" Folgendes hinzu:  
   
@@ -425,7 +425,7 @@ Sie können eine Buildumgebung in der Organisation erstellen, indem Sie Visual S
     </Project>  
     ```  
   
-5.  Fügen Sie in jeder Projektdatei oben nach der `<Project Default Targets…>`-Zeile folgende Zeile hinzu.  
+5.  Fügen Sie in jeder Projektdatei oben nach der `<Project Default Targets...>`-Zeile folgende Zeile hinzu.  
   
     ```  
     <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), Partner.AutoImports.props))\Partner.AutoImports.props"/>  

@@ -1,6 +1,6 @@
 ---
 title: Problembehandlung bei der Installation | Microsoft-Dokumentation
-description: '{{PLATZHALTER}}'
+description: "Manchmal kann etwas schiefgehen. Wenn die Installation oder das Upgrade von Visual Studio fehlschlägt, kann diese Seite Ihnen helfen."
 ms.date: 04/14/2017
 ms.reviewer: 
 ms.suite: 
@@ -31,13 +31,13 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
-ms.openlocfilehash: d8125873ab5a92d9af26c556cb2f953a606c28d9
+ms.sourcegitcommit: d9de84bed187c62962a76424aabdc5f355dff4dc
+ms.openlocfilehash: e6c301a7b784c5966d4f7216e67067ef6ce3ed70
 ms.contentlocale: de-de
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 05/15/2017
 
 ---
-# <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-failures"></a>Problembehandlung bei der Visual Studio 2017-Installation und Upgradefehlern
+# <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Problembehandlung bei der Visual Studio 2017-Installation und Upgradefehlern
 
 ## <a name="symptoms"></a>Symptome
 Wenn Sie versuchen, Microsoft Visual Studio 2017 zu installieren oder zu aktualisieren, schlägt der Vorgang fehl.
@@ -58,7 +58,7 @@ Der Visual Studio-Installer-Bootstrapper ist eine kleine schlanke ausführbare D
 2. Löschen Sie das Visual Studio-Installer-Verzeichnis. In der Regel heißt das Verzeichnis „C:\Program Files (x86) \Microsoft Visual Studio\Installer“.
 3. Führen Sie den Visual Studio-Installer-Bootstrapper aus. Den Bootstrapper finden Sie ggf. in Ihrem Ordner „Downloads“ mit einem Dateiname mit dem Muster ```vs_[Visual Studio edition]__*.exe```. Wenn Sie die Anwendung nicht finden, können Sie den Bootstrapper herunterladen, indem Sie die [Visual Studio-Seite „Downloads“](https://www.visualstudio.com/downloads/) aufrufen und dann für Ihre Edition von Visual Studio auf **Herunterladen** klicken. Führen Sie diese ausführbare Datei aus, um die Metadaten für Ihre Installation zurückzusetzen.
 4. Versuchen Sie, Visual Studio erneut zu installieren oder zu aktualisieren. Wenn der Installer weiterhin fehlschlägt, fahren Sie unmittelbar mit Schritt 4 unten fort.
-<br/>**Hinweis:** In diesem Schritt werden die Visual Studio-Installer-Dateien neu installiert und die Metadaten der Installation zurückgesetzt. 
+<br/>**Hinweis:** In diesem Schritt werden die Visual Studio-Installer-Dateien neu installiert und die Metadaten der Installation zurückgesetzt.
 
 ### <a name="step-4---report-a-problem"></a>Schritt 4: Melden eines Problems
 In einigen Situationen, z. B. bei beschädigten Dateien, müssen die Probleme ggf. fallweise untersucht werden:
@@ -92,6 +92,4 @@ Es folgt eine Tabelle mit bekannten Problemen und einigen Problemumgehungen, die
 | ----------- | ---------------------- | -------- |
 | Benutzer haben keinen Zugriff auf Dateien. | Berechtigungen (ACLs) | Stellen Sie sicher, dass Sie die Berechtigungen (ACLs) so anpassen, dass anderen Benutzern Lesezugriff erteilt wird, *bevor* Sie die Offlineinstallation freigeben. |
 | Neue Arbeitslasten, Komponenten oder Sprachen werden nicht installiert.  | `--layout`  | Stellen Sie sicher, dass Sie über Internetzugriff verfügen, wenn Sie eine Installation aus einem partiellen Layout heraus ausführen und Arbeitsauslastungen, Komponenten oder Sprachen auswählen, die im früheren Layout nicht verfügbar sind. |
-
-
 

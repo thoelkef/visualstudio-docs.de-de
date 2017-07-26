@@ -1,117 +1,134 @@
 ---
-title: "Tastenkombinationen (Help Viewer) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Help Viewer 2.0, Tastenkombinationen"
-  - "Tastenkombinationen [Help Viewer 2.0]"
+title: Tastenkombinationen (Help Viewer) | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- shortcut keys [Help Viewer 2.0]
+- Help Viewer 2.0, shortcut keys
 ms.assetid: ec14c85d-7efb-441c-a46b-bee34a227e39
 caps.latest.revision: 22
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 22
----
-# Tastenkombinationen (Help Viewer)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 3d5a655a82180b7ffc82cf279b28750f55f5d4c8
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
-Sie können im Microsoft Help Viewer navigieren, indem Sie die Tastenkombinationen in der folgenden Tabelle verwenden:  
+---
+# <a name="shortcut-keys-help-viewer"></a>Tastenkombinationen (Help Viewer)
+Sie können mit den Tastenkombinationen in der folgenden Tabelle durch den Microsoft Help Viewer navigieren:  
   
 |Bereich|Tastatureingabe|Aktion|  
-|-------------|---------------------|------------|  
-|Allgemeine Anwendung|Leerzeichen|Verwenden Sie die Leertaste überall außer in Bearbeitungsfeldern anstelle der EINGABETASTE.|  
-|Allgemeine Anwendung|F1|Öffnen Sie die Hilfe zum aktuellen Benutzeroberflächenelement.|  
-|Allgemeine Anwendung|F11|Schalten Sie zwischen der Vollbildansicht und der normalen Ansicht um.|  
-|Symbolleiste|Rückschritt<br /><br /> – ODER –<br /><br /> ALT\+NACH\-LINKS|Anzeigen der vorherigen Seite|  
-|Symbolleiste|ALT\+NACH\-RECHTS|Anzeigen der nächsten Seite|  
-|Symbolleiste|Alt \+ POS1|Anzeigen der Help Viewer\-Homepage|  
-|Symbolleiste|Strg \+ S|Markieren Sie das aktuelle Thema im Inhaltsverzeichnis \(auf der Registerkarte **Inhalt**\).|  
-|Symbolleiste|STRG\+D|Fügen Sie das aktuelle Thema zur Registerkarte **Favoriten** hinzu.|  
-|Symbolleiste|Strg \+ F|Anzeigen der Suchleiste im Themabereich, damit Sie nach Text innerhalb des aktuellen Themas suchen können|  
-|Symbolleiste|Strg \+ P|Drucken Sie die aktuelle Seite.|  
-|Symbolleiste|Strg \+ F2|Anzeigen einer Druckvorschau der aktuellen Seite|  
-|Symbolleiste|Strg\+ O|Rufen Sie das Dialogfeld **Viewer\-Optionen** auf.|  
-|Symbolleiste|Strg \+ Umschalt \+ M|Anzeigen der Registerkarte **Inhalt verwalten**.|  
-|Navigatoren|ALT\+C<br /><br /> – ODER –<br /><br /> Strg \+ Umschalt \+ C|Anzeigen der Registerkarte **Inhalt**|  
-|Navigatoren|ALT\+I<br /><br /> – ODER –<br /><br /> Strg \+ Umschalt \+ I|Anzeigen der Registerkarte **Index**|  
-|Navigatoren|ALT\+F<br /><br /> – ODER –<br /><br /> Strg \+ Umschalt \+ F|Rufen Sie die Registerkarte **Favoriten** auf.|  
-|Navigatoren|ALT\+S<br /><br /> – ODER –<br /><br /> Strg \+ E<br /><br /> – ODER –<br /><br /> Strg \+ Umschalt \+ S|Anzeigen der Registerkarte **Suchen**|  
-|Navigatoren|ALT\+M<br /><br /> – ODER –<br /><br /> Strg \+ Umschalt \+ M|Anzeigen der Registerkarte **Inhalt verwalten**|  
-|Thema|Kontextmenütaste<br /><br /> OR<br /><br /> UMSCHALT\+F10|Anzeigen des Kontextmenüs für das aktuelle Benutzeroberflächenelement|  
-|Thema|NACH\-OBEN|Führen Sie zeilenweise einen Bildlauf bis zum Start des Dokuments durch.|  
-|Thema|NACH\-UNTEN|Führen Sie zeilenweise einen Bildlauf bis zum Ende des Dokuments durch.|  
-|Thema|BILD AUF|Führen Sie bildschirmweise einen Bildlauf bis zum Start des Dokuments durch.|  
-|Thema|BILD AB|Führen Sie bildschirmweise einen Bildlauf bis zum Ende des Dokuments durch.|  
-|Thema|POS1|An den Beginn des Dokuments verschieben.|  
-|Thema|Ende|An das Ende des Dokuments verschieben.|  
-|Thema|Strg \+ F|Suchen nach Suchtext auf dieser Seite|  
-|Thema|F5|Aktuelle Seite aktualisieren.|  
-|Thema|Strg \+ P|Drucken Sie die aktuelle Seite.|  
-|Thema|Strg \+ F2|Anzeigen einer Druckvorschau der aktuellen Seite|  
-|Thema|F4|Rufen Sie das Dialogfeld **Eigenschaften** für die aktuelle Seite auf.|  
-|Thema|Strg \+ T|Öffnen Sie eine weitere Inhaltsregisterkarte im Vordergrund.|  
-|Thema|STRG\+KLICKEN|Öffnen Sie einen Link auf einer neuen Registerkarte im Vordergrund.|  
-|Thema|Strg \+ Tab|Wechseln Sie zwischen den Registerkarten von links nach rechts.|  
-|Thema|Strg \+ Umschalt \+ Tab|Wechseln Sie zwischen den Registerkarten von rechts nach links.|  
-|Thema|Strg \+ W|Schließen Sie die aktuelle Registerkarte.|  
-|Thema|STRG\+*ZAHL*|Wechseln Sie zu einer bestimmten Registerkarte, in der *Zahl* zwischen 1 und 9 ist und die Reihenfolge der Registerkarten anzeigt.|  
-|Thema|Strg \+ Alt \+F4|Schließen anderer Inhaltsregisterkarten|  
-|Thema|STRG\+UMSCHALT\+PLUSZEICHEN|Zoom um 10 % vergrößern|  
-|Thema|STRG\+MINUSZEICHEN|Zoom um 10 % verkleinern|  
-|Thema|STRG\+0 \(Null\)|Zoomfaktor in 100% ändern|  
-|Index|Registerkarte|Verschieben Sie den Fokus von Schlüsselworteintrag zur Schlüsselwortliste.|  
-|Index|Strg \+ K|Wechseln Sie zwischen Einträgen, die das angegebene Schlüsselwort enthalten, und Einträgen, die mit dem angegebenen Schlüsselwort beginnen.|  
-|Favoriten|Strg \+ Umschalt \+ Entf|Löschen des Browserverlaufs|  
-|Favoriten|Entf|Löschen Sie das angegebene Element.|  
-|Favoriten|STRG \+ N|Erstellen eines Ordners im Ordner "Favoriten"|  
-|Favoriten|F2|Benennen Sie den angegebenen Favoriten oder Ordner um.|  
-|Inhalt, Index und Suchen|STRG\+D|Fügen Sie das spezifizierte Thema zur Registerkarte **Favoriten** hinzu.|  
-|Inhalt, Index, Suchen und Favoriten|Strg \+ P|Drucken Sie das angegebene Thema.|  
-|Inhalt, Index, Suchen und Favoriten|Strg \+ F2|Anzeigen einer Druckvorschau des angegebenen Themas|  
-|Inhalt, Index, Suchen und Favoriten|STRG\+KLICKEN|Öffnen Sie das Thema in einer neuen Registerkarte.|  
-|Suche|Esc|Löschen des Inhalts des Suchtextfelds|  
-|Viewer\-Optionen|ALT\+T|Verschieben Sie den Fokus auf die Liste **Textgröße**.|  
-|Viewer\-Optionen|ALT\+S|Verschieben Sie den Fokus auf die Liste **Maximale Anzahl von Suchergebnissen**.|  
-|Viewer\-Optionen|Alt \+ H|Verschieben Sie den Fokus auf die Liste **Maximale Anzahl gespeicherter Verlaufseinträge**.|  
-|Viewer\-Optionen|ALT\+E|Aktivieren oder deaktivieren Sie das Kontrollkästchen **Englische Inhalte in alle Navigationsregisterkarten und F1\-Anforderungen einbeziehen**.|  
-|Viewer\-Optionen|ALT\+O|Aktivieren oder deaktivieren Sie das Kontrollkästchen **Online Inhalte abrufen und nach Inhaltupdates suchen**.|  
-|Find|EINGABETASTE|Verschieben Sie den Fokus auf das nächste Element.|  
-|Find|UMSCHALT\+EINGABETASTE|Verschieben Sie den Fokus auf das vorherige Element.|  
-|Find|Esc|Blendet das Textfeld **Suchen** aus.|  
-|Statusleiste|ALT\+E|Öffnen Sie das Dialogfeld **Fehler**, wenn die Statusleiste anzeigt, dass ein Fehler aufgetreten ist.|  
-|Statusleiste|ALT \+ U|Laden Sie den Inhalt herunter, wenn die Statusleiste anzeigt, dass Updates verfügbar sind|  
+|----------|---------------|------------|  
+|Allgemeine Anwendung|Leerzeichen|Statt EINGABE, überall außer in den Bearbeitungsfeldern|  
+|Allgemeine Anwendung|F1|Öffnet die Hilfe zum aktuellen UI-Element|  
+|Allgemeine Anwendung|F11|Wechselt zwischen der Vollbild- und der normalen Ansicht|  
+|Symbolleiste|Rückschritt<br /><br /> -ODER-<br /><br /> ALT + NACH-LINKS-TASTE|Vorherige Seite anzeigen|  
+|Symbolleiste|ALT + NACH-RECHTS-TASTE|Nächste Seite anzeigen|  
+|Symbolleiste|ALT + POS1|Startseite von Help Reviewer anzeigen|  
+|Symbolleiste|STRG+ S|Markiert das aktuelle Thema im Inhaltsverzeichnis (auf der Registerkarte „Inhalt“)|  
+|ToolBar|STRG + D|Fügt das aktuelle Thema den **Favoriten** hinzu.|  
+|ToolBar|STRG + F|Zeigt die Suchleiste im Themenbereich an, sodass Sie das aktuelle Thema durchsuchen können.|  
+|Symbolleiste|STRG+P|Druckt die aktuelle Seite|  
+|Symbolleiste|STRG + F2|Zeigt eine Druckvorschau der aktuellen Seite an|  
+|Symbolleiste|STRG + O|Öffnet das Dialogfeld **Viewer-Optionen**|  
+|ToolBar|STRG + UMSCHALT + M|Öffnet die Registerkarte **Inhalt verwalten**|  
+|Navigation|ALT + C<br /><br /> -ODER-<br /><br /> STRG + UMSCHALT + C|Öffnet die Registerkarte **Inhalt**.|  
+|Navigation|ALT + I<br /><br /> -ODER-<br /><br /> STRG + UMSCHALT + I|Öffnet die Registerkarte **Index**|  
+|Navigation|ALT + F<br /><br /> -ODER-<br /><br /> STRG + UMSCHALT + F|Öffnet die Registerkarte **Favoriten**|  
+|Navigation|ALT + S<br /><br /> -ODER-<br /><br /> STRG + E<br /><br /> -ODER-<br /><br /> STRG + UMSCHALT + S|Öffnet die Registerkarte **Suche**.|  
+|Navigation|ALT + M<br /><br /> -ODER-<br /><br /> STRG + UMSCHALT + M|Öffnet die Registerkarte **Inhalt verwalten**|  
+|Thema|Menütaste<br /><br /> ODER<br /><br /> UMSCHALT + F10|Öffnet das Kontextmenü für das aktuelle UI-Element|  
+|Thema|NACH-OBEN|Scrollt Zeile für Zeile zum Anfang des Dokuments|  
+|Thema|NACH-UNTEN|Scrollt Zeile für Zeile zum Anfang des Dokuments|  
+|Thema|Taste VORHERIGE SEITE|Scrollt Bildschirm für Bildschirm zum Anfang des Dokuments|  
+|Thema|Taste NÄCHSTE SEITE|Scrollt Bildschirm für Bildschirm zum Anfang des Dokuments|  
+|Thema|Startseite|Springt zum Anfang des Dokuments|  
+|Thema|Ende|Springt zum Ende des Dokuments|  
+|Thema|STRG + F|Finden von Suchtext auf dieser Seite|  
+|Thema|F5|Aktualisiert die aktuelle Seite|  
+|Thema|STRG+P|Druckt die aktuelle Seite|  
+|Thema|STRG + F2|Zeigt eine Druckvorschau der aktuellen Seite an|  
+|Thema|F4|Zeigt das Dialogfeld **Eigenschaften** für die aktuelle Seite an|  
+|Thema|STRG + T|Öffnet eine andere Registerkarte „Inhalt“ im Vordergrund|  
+|Thema|STRG + Klick|Öffnet einen Link in einer neuen Registerkarte im Vordergrund|  
+|Thema|STRG + TAB|Wechselt von links nach rechts zwischen Registerkarten|  
+|Thema|STRG + UMSCHALT + TAB|Wechselt von rechts nach links zwischen Registerkarten|  
+|Thema|STRG + W|Schließt die aktuelle Registerkarte|  
+|Thema|STRG + *Zahl*|Wechselt zu einer bestimmten Registerkarte, wobei *Zahl* zwischen 1 und 9 liegt und angibt, zu welcher Registerkarte gewechselt werden soll|  
+|Thema|STRG + ALT + F4|Schließt andere Inhaltsregisterkarten|  
+|Thema|STRG + UMSCHALT + Pluszeichen|Zoomt um 10 % heran|  
+|Thema|STRG + Minuszeichen|Zoomt um 10 % heraus|  
+|Thema|STRG + 0 (null)|Ändert den Zoom auf 100 %|  
+|Index|Registerkarte|Ändert den Fokus vom Schlüsselworteintrag zur Schlüsselwortliste|  
+|Index|STRG + K|Wechselt zwischen Einträgen, die das Schlüsselwort enthalten, das Sie angeben, und Einträgen, die mit dem Schlüsselwort beginnen, das Sie angeben|  
+|Favoriten|STRG + UMSCHALT + ENTF|Löscht Ihren Browserverlauf|  
+|Favoriten|Entf|Löscht das angegebene Elementname|  
+|Favoriten|STRG + N|Erstellt einen Ordner in den Favoriten|  
+|Favoriten|F2|Benennt den angegebenen Favoriten oder Ordner um|  
+|Inhalt & Index & Suche|STRG + D|Fügt das angegebene Thema den **Favoriten** hinzu.|  
+|Inhalt & Index & Suche & Favoriten|STRG+P|Druckt das angegebene Thema|  
+|Inhalt & Index & Suche & Favoriten|STRG + F2|Zeigt eine Druckvorschau des angegebenen Themas an|  
+|Inhalt & Index & Suche & Favoriten|STRG + Klick|Öffnet das Thema in einer neuen Registerkarte|  
+|Suchen|Esc|Löscht den Inhalt des Suchtextfelds|  
+|Viewer-Optionen|ALT + T|Ändert den Fokus auf die Liste **Textgröße**|  
+|Viewer-Optionen|ALT + S|Ändert den Fokus auf die Liste **Maximale Anzahl von Suchergebnissen**.|  
+|Viewer-Optionen|ALT + H|Ändert den Fokus auf die Liste **Maximale Anzahl von Suchergebnissen**.|  
+|Viewer-Optionen|ALT + E|Aktivieren oder deaktivieren Sie das Kontrollkästchen **Englische Inhalte in alle Navigationsregisterkarten und F1-Anforderungen einbeziehen**, wenn es aktiviert ist.|  
+|Viewer-Optionen|ALT + O|Aktivieren oder deaktivieren Sie das Kontrollkästchen **Online Inhalte abrufen und nach Inhaltsupdates suchen**.|  
+|Find|Eingabe|Ändert den Fokus auf das nächste Element|  
+|Find|UMSCHALT + ENTER|Ändert den Fokus auf das vorherige Element|  
+|Find|Esc|Verbirgt das Textfeld **Suchen**.|  
+|Statusleiste|ALT + E|Öffnet das Dialogfeld **Fehler**, wenn die Statusleiste anzeigt, dass ein Fehler aufgetreten ist.|  
+|Statusleiste|ALT + U|Lädt Inhalt herunter, wenn die Statusleiste anzeigt, das Updates verfügbar sind|  
   
  **Fensterverwaltung**  
   
 |||  
 |-|-|  
 |**Tastatureingabe**|**Aktion**|  
-|Strg \+ L|Setzen Sie das Help Viewer\-Layout auf das Standardlayout zurück, und schließen Sie alle Themaregisterkarten.|  
-|Strg \+ Tab|Die erste Tastatureingabe überträgt den Fokus auf das Menü **Registerkartenauswahl**.  Die nächste Tastatureingabe überträgt den Fokus auf das oberste Menüelement, und mit den folgenden Tastatureingaben wird der Fokus auf die Menüelemente der Reihe nach von oben nach unten übertragen.  Wenn ein Menüelement den Fokus hat, wird dieses Element durch die EINGABETASTE zur aktiven Registerkarte.|  
-|Strg \+ Umschalt \+ Tab|Die erste Tastatureingabe überträgt den Fokus auf das Menü **Registerkartenauswahl**.  Die nächste Tastatureingabe überträgt den Fokus auf das untere Menüelement, und mit den folgenden Tastatureingaben wird der Fokus auf die Menüelemente der Reihe nach von unten nach oben übertragen.  Wenn ein Menüelement den Fokus hat, wird dieses Element durch die EINGABETASTE zur aktiven Registerkarte.|  
-|Alt \+ I, Alt \+ S, Alt \+ C, Alt \+ F, Alt \+ M|Diese Tastenkombinationen funktionieren nicht, wenn die Registerkarten für die Navigation und Inhaltsverwaltung abgedockt sind.|  
+|STRG + L|Setzt das Layout des Help Viewers auf das Standardlayout zurück und schließt alle Themenregisterkarten|  
+|STRG + TAB|Die erste Tastatureingabe legt den Fokus auf das Menü **Registerkartenauswahl**. Die nächste Tastatureingabe legt den Fokus auf das obere Menüelement. Alle weiteren Tastatureingaben legen den Fokus auf das darauffolgende Menüelement (von oben nach unten). Wenn der Fokus auf einem Menüelement liegt, wird es durch ENTER zur aktiven Registerkarte.|  
+|STRG + UMSCHALT + TAB|Die erste Tastatureingabe legt den Fokus auf das Menü **Registerkartenauswahl**. Die nächste Tastatureingabe legt den Fokus auf das unterste Menüelement. Alle weiteren Tastatureingaben legen den Fokus auf das darauffolgende Menüelement (von unten nach oben). Wenn der Fokus auf einem Menüelement liegt, wird es durch ENTER zur aktiven Registerkarte.|  
+|ALT + I, ALT + S, ALT + C, ALT + F, ALT + M|Diese Tastaturkombinationen funktionieren nicht, wenn die Registerkarten zur Navigation und zur Inhaltsverwaltung nicht gedockt sind|  
   
  **Verwalten von Inhalt**  
   
 |||  
 |-|-|  
 |**Tastatureingabe**|**Aktion**|  
-|ALT\+D|Installationsquelle in "Datenträger" ändern|  
-|ALT\+O|Installationsquelle in "Online" ändern|  
-|Registerkarte|Verschieben Sie den Fokus auf das Textfeld **Lokaler Speicherpfad**.|  
-|Registerkarte|Verschieben Sie den Fokus auf die Schaltfläche **Verschieben…**.|  
-|ALT \+ V|Öffnen Sie das Dialogfeld **Inhalt verschieben**.|  
-|Strg \+ Alt \+ F|Verschieben Sie den Fokus auf das Textfeld **Dokumentation filtern**.|  
-|Registerkarte|Verschieben Sie den Fokus auf die Dokumentationsliste.|  
-|NACH\-OBEN\-TASTE und NACH\-UNTEN\-TASTE|Führen Sie einen Bildlauf durch die Dokumentationsliste durch.|  
-|Leerzeichen|Hinzufügen eines Elements zur Liste **Ausstehende Änderungen**|  
-|Registerkarte|Verschieben Sie den Fokus auf die Liste **Ausstehende Änderungen**.|  
-|NACH\-OBEN\-TASTE und NACH\-UNTEN\-TASTE|Führen Sie einen Bildlauf durch die Liste **Ausstehende Änderungen** durch.|  
-|Leerzeichen|Entfernen Sie ein Element aus der Liste **Ausstehende Änderungen**.|  
-|ALT\+T|Übernehmen aller ausstehenden Änderungen.|
+|ALT + D|Ändert die Inhaltsinstallationsquelle in einen Datenträger|  
+|ALT + O|Ändert die Inhaltsinstallationsquelle in Online|  
+|Registerkarte|Ändert den Fokus in das Textfeld **Lokaler Speicherpfad**|  
+|Registerkarte|Ändert den Fokus auf die Schaltfläche **Verschieben...**|  
+|ALT + V|Öffnet das Dialogfeld **Inhalt verschieben**|  
+|STRG + ALT + F|Ändert den Fokus auf das Textfeld **Filterdokumentation**|  
+|Registerkarte|Ändert den Fokus auf die Dokumentationsliste|  
+|NACH-OBEN- und NACH-UNTEN-TASTE|Scrollt durch die Dokumentationsliste|  
+|Leerzeichen|Fügt das Element der Liste **Ausstehende Änderungen** hinzu|  
+|Registerkarte|Ändert den Fokus auf die Liste **Ausstehende Änderungen**|  
+|NACH-OBEN- und NACH-UNTEN-TASTE|Scrollt durch die Liste **Ausstehende Änderungen**|  
+|Leerzeichen|Entfernt ein Element aus der Liste **Ausstehende Änderungen**|  
+|ALT + T|Wendet alle ausstehenden Änderungen an|

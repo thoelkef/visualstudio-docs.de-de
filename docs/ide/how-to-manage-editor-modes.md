@@ -1,70 +1,87 @@
 ---
-title: "Gewusst wie: Verwalten von Editormodi | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Code-Editor, Modi"
-  - "Code-Editor, Anzeigeoptionen"
-  - "Schriftarten und -größe"
-  - "Vollbildmodus"
-  - "Zeilennummern"
-  - "Zeilennummern, Anzeigen"
-  - "Ansichten, Ändern des Modus"
-  - "Ansichten, Erstellen neuer Fenster"
-  - "Ansichten, Zeilennummern"
-  - "Ansichten, Gliedern"
-  - "Ansichten, Teilen"
-  - "Ansichten, Virtueller Bereich"
-  - "Ansichten, Zeilenumbruch"
-  - "Virtueller Bereich (Modus)"
-  - "Zeilenumbruch"
+title: 'Vorgehensweise: Verwalten von Editormodi | Microsoft-Dokumentation'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- word wrap
+- views, virtual space
+- line numbers, displaying
+- virtual space mode
+- line numbers
+- Code Editor, view and display options
+- full screen mode
+- Code Editor, modes
+- views, splitting
+- views, word wrapping
+- fonts and size
+- views, creating new windows
+- views, line numbers
+- views, changing mode
+- views, outlining
 ms.assetid: 1fb48027-d870-439f-8b72-4a0321390748
 caps.latest.revision: 20
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 20
----
-# Gewusst wie: Verwalten von Editormodi
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 71566f11a069d266ded2aebe02bbf388cf00730e
+ms.contentlocale: de-de
+ms.lasthandoff: 05/24/2017
 
-Sie können den Code\-Editor von Visual Studio in verschiedenen Anzeigemodi anzeigen.  
+---
+# <a name="how-to-manage-editor-modes"></a>Gewusst wie: Verwalten von Editormodi
+Sie können den Visual Studio Code-Editor in verschiedenen Anzeigemodi verwenden.  
   
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen.  Wählen Sie im Menü **Extras** die Option **Einstellungen importieren und exportieren** aus, um die Einstellungen zu ändern.  Weitere Informationen finden Sie unter [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/de-de/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## Aktivieren des Modus "Ganzer Bildschirm"  
- Sie können alle Toolfenster ausblenden und nur Dokumentfenster anzeigen lassen, indem Sie den Modus **Ganzer Bildschirm** aktivieren.  
+## <a name="enabling-full-screen-mode"></a>Aktivieren des Vollbildmodus  
+ Wenn Sie möchten, könne Sie alle Toolfenster ausblenden und nur Dokumentfenster anzeigen, indem Sie den **Vollbildmodus** aktivieren.  
   
-#### So aktivieren Sie den Modus Ganzer Bildschirm  
+#### <a name="to-enable-full-screen-mode"></a>So können Sie den Vollbildmodus aktivieren  
   
--   Drücken Sie ALT\+UMSCHALT\+EINGABE, um den Modus **Ganzer Bildschirm** zu aktivieren bzw. zu deaktivieren.  
+-   Drücken Sie auf ALT + UMSCHALT + EINGABE, um den **Vollbildmodus** zu starten oder zu beenden.  
   
      – oder –  
   
--   Geben Sie den Befehl `View.Fullscreen` im **Befehlsfenster** aus.  
+-   Geben Sie im Feld **Befehl** den Befehl `View.Fullscreen` ein.  
   
-## Aktivieren des Modus Virtueller Bereich  
- Im Modus **Virtueller Bereich** werden am Ende jeder Codezeile Leerzeichen eingefügt.  Aktivieren Sie diese Option, um Kommentare immer an derselben Stelle neben dem Code einzufügen.  
+## <a name="enabling-virtual-space-mode"></a>Aktivieren des Modus für virtuelle Leerzeichen  
+ Im Modus für **virtuelle Leerzeichen** werden Leerzeichen am Ende jeder Codezeile eingefügt. Aktivieren Sie diese Option, um Kommentare immer an derselben Stelle neben dem Markup einzufügen.  
   
-#### So aktivieren Sie den Modus Virtueller Bereich  
+#### <a name="to-enable-virtual-space-mode"></a>So aktivieren Sie den Modus für virtuelle Leerzeichen  
   
 1.  Wählen Sie im Menü **Extras** den Befehl **Optionen** aus.  
   
-2.  Erweitern Sie den Ordner **Text\-Editor**, und wählen Sie **Alle Sprachen** aus, um diese Option global festzulegen; andernfalls wählen Sie einen bestimmten Sprachordner aus.  \(Um beispielsweise Zeilennummern nur in Visual Basic zu aktivieren, wählen Sie die Text\-Editor\-Optionen für Visual Basic aus.\)  
+2.  Erweitern Sie den Ordner **Text-Editor** und klicken Sie auf **Alle Sprachen**, um diese Option global anzuwenden, oder entscheiden Sie sich für den Ordner einer bestimmten Sprache. (Um z.B. Zeilennummern nur für Visual Basic zu aktivieren, klicken Sie auf die Optionen „Basic“, „Text-Editor“.)  
   
-3.  Wählen Sie die Optionen unter **Allgemein**, und aktivieren Sie unter **Einstellungen** die Option **Virtuellen Bereich aktivieren**.  
+3.  Klicken Sie auf die Option **Allgemein** und dann unter **Einstellungen** auf **Enable Virtual Space** (Virtuelle Leerzeichen aktivieren).  
   
     > [!NOTE]
-    >  **Virtueller Bereich** ist im Modus **Spaltenauswahl** aktiviert.  Wenn der Modus **Virtueller Bereich** nicht aktiviert ist, wird die Einfügemarke vom Ende einer Zeile direkt zum ersten Zeichen der nächsten Zeile verschoben.  
+    >  **Virtuelle Leerzeichen** sind im Modus **Spaltenauswahl** aktiviert. Wenn der Modus für **virtuelle Leerzeichen** nicht aktiviert ist, wird die Einfügemarke vom Ende einer Zeile direkt zum ersten Zeichen der nächsten verschoben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Anpassen des Editors](../ide/customizing-the-editor.md)   
- [Gewusst wie: Anordnen und Andocken von Fenstern](../misc/how-to-arrange-and-dock-windows.md)   
- [Schriftarten und Farben, Umgebung, Dialogfeld "Optionen"](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)
+ [Anpassen von Fensterlayouts in Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md)   
+ [Schriftarten und Farben, Umgebung, Dialogfeld „Optionen“](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)

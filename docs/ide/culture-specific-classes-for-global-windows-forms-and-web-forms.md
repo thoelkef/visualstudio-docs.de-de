@@ -44,9 +44,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
 ms.openlocfilehash: 3fb3b66548077a2f92289f1a2f02cc8ae77544cc
+ms.contentlocale: de-de
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="culture-specific-classes-for-global-windows-forms-and-web-forms"></a>Kulturspezifische Klassen für globale Windows Forms und Web Forms
@@ -92,8 +94,3 @@ Console.WriteLine(myInt.ToString("C", Thread.CurrentThread.CurrentCulture));
  <xref:System.Console.WriteLine%2A?displayProperty=fullName>   
  <xref:System.String.Format%2A?displayProperty=fullName>   
  [Globalisieren und Lokalisieren von Anwendungen](../ide/globalizing-and-localizing-applications.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

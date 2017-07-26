@@ -1,57 +1,74 @@
 ---
-title: "Suchen und Ersetzen, Umgebung, Dialogfeld &quot;Optionen&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.ToolsOptionsPages.Environment.FindReplace"
-  - "VS.ToolsOptionsPages.Environment.FindandReplace"
-helpviewer_keywords: 
-  - "Suchen und Ersetzen, Dialogfeld „Optionen“"
-  - "Suchen und Ersetzen, anpassen"
+title: "Suchen und Ersetzen, Umgebung, Dialogfeld „Optionen“ | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VS.ToolsOptionsPages.Environment.FindReplace
+- VS.ToolsOptionsPages.Environment.FindandReplace
+helpviewer_keywords:
+- Find and Replace, Options dialog box
+- Find and Replace, customizing
 ms.assetid: f804d6d5-6309-46e4-8294-b83e880b5ec9
 caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
----
-# Suchen und Ersetzen, Umgebung, Dialogfeld &quot;Optionen&quot;
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 64cee61bb8818dc8910d6fdb32293d03a9770ad3
+ms.contentlocale: de-de
+ms.lasthandoff: 05/24/2017
 
-Verwenden Sie diese Seite des Dialogfelds **Optionen**, um Meldungsfelder und andere Aspekte eines Suchen und Ersetzen\-Vorgangs zu steuern.  Sie können über das Menü **Extras** auf dieses Dialogfeld zugreifen, indem Sie auf **Optionen** klicken, **Umgebung** erweitern und dann auf **Suchen und Ersetzen** klicken.  Wenn diese Seite nicht in der Liste angezeigt wird, wählen Sie im Dialogfeld **Optionen** die Option **Alle Einstellungen anzeigen** aus.  
+---
+# <a name="find-and-replace-environment-options-dialog-box"></a>Suchen und Ersetzen, Umgebung, Dialogfeld "Optionen"
+Verwenden Sie diese Seite des Dialogfelds **Optionen**, um die Meldungsfelder und andere Aspekte eines Such- und Ersetzungsvorgangs zu steuern. Sie können über das Menü **Extras** auf dieses Dialogfeld zugreifen, indem Sie auf **Optionen** klicken, **Umgebung** erweitern und anschließend auf **Suchen und Ersetzen** klicken. Wenn diese Seite nicht in der Liste angezeigt wird, aktivieren Sie im Dialogfeld **Optionen** das Kontrollkästchen **Alle Einstellungen anzeigen**.  
   
 > [!NOTE]
->  Die in einem Dialogfeld verfügbaren Optionen sowie die Namen und Positionen der angezeigten Menübefehle können sich je nach den persönlichen aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen Optionen unterscheiden.  Wählen Sie im Menü **Extras** die Option **Einstellungen importieren und exportieren** aus, um die Einstellungen zu ändern.  Weitere Informationen finden Sie unter [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/de-de/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Die in einem Dialogfeld verfügbaren Optionen sowie die Namen und Positionen der angezeigten Menübefehle können sich je nach den persönlichen aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen Optionen unterscheiden. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).  
   
-## UIElement-Liste  
+## <a name="uielement-list"></a>UIElement-Liste  
  **Informationsmeldungen anzeigen**  
- Aktivieren Sie diese Option, um alle Informationsmeldungen für Suchen und Ersetzen anzuzeigen, die über die Option **Diese Meldung immer anzeigen** verfügen.  Angenommen, Sie haben sich entschieden, die Meldung "Die Suche hat den Anfangspunkt wieder erreicht" nicht anzuzeigen. Wenn Sie diese Option aktivieren, wird diese Informationsmeldung bei Verwendung von Suchen und Ersetzen wieder angezeigt.  
+ Aktivieren Sie diese Option, um alle Informationsmeldungen zu „Suchen und Ersetzen“ anzuzeigen, bei denen die Option **Diese Meldung immer anzeigen** aktiviert ist. Wenn Sie z.B. ausgewählt haben, die Nachricht „Die Suche hat den Anfangspunkt wieder erreicht.“ nicht anzuzeigen, würde diese Informationsmeldung durch Aktivieren dieser Option trotzdem wieder angezeigt werden, wenn Sie „Suchen und Ersetzen“ verwenden.  
   
- Wenn Sie keine Informationsmeldungen für Suchen und Ersetzen anzeigen möchten, deaktivieren Sie diese Option.  
+ Deaktivieren Sie diese Option, wenn Sie keine Informationsmeldungen für „Suchen und Ersetzen“ anzeigen lassen möchten.  
   
- Wenn Sie die Option **Diese Meldung immer anzeigen** für einige, jedoch nicht für alle Informationsmeldungen unter **Suchen und Ersetzen** deaktiviert haben, wird das Kontrollkästchen **Informationsmeldungen anzeigen** zwar ausgewählt dargestellt, ist jedoch nicht aktiviert.  Um alle optionalen Meldungen für **Suchen und Ersetzen** wiederherzustellen, deaktivieren Sie diese Option und aktivieren sie erneut.  
+ Wenn Sie die Option **Diese Meldung immer anzeigen** nur für einige Informationsmeldungen in **Suchen und Ersetzen** deaktiviert haben, aber nicht für alle, wird das Kontrollkästchen **Informationsmeldungen anzeigen** zum Ausfüllen angezeigt, ist aber nicht aktiviert. Deaktivieren Sie diese Option, und aktivieren Sie sie erneut, wenn Sie alle optionalen Meldungen in **Suchen und Ersetzen** wiederherstellen möchten.  
   
 > [!NOTE]
->  Diese Option hat keine Auswirkungen auf die Informationsmeldungen für **Suchen und Ersetzen**, in denen die Option **Diese Meldung immer anzeigen** nicht angezeigt wird.  
+>  Diese Option hat keine Auswirkungen auf Informationsmeldungen in **Suchen und Ersetzen**, bei denen die Option **Diese Meldung immer anzeigen** nicht angezeigt wird.  
   
  **Warnmeldungen anzeigen**  
- Aktivieren Sie diese Option, um alle Warnmeldungen für Suchen und Ersetzen anzuzeigen, die über die Option **Diese Meldung immer anzeigen** verfügen.  Angenommen, Sie haben sich entschieden, die Warnmeldung **Alle ersetzen**, die bei Ersetzungsversuchen in Dateien angezeigt wird, die derzeit nicht zur Bearbeitung geöffnet sind, nicht anzuzeigen. Wenn Sie diese Option aktivieren, wird diese Warnmeldung bei Ausführen von Alle ersetzen wieder angezeigt.  
+ Aktivieren Sie diese Option, um alle Warnmeldungen zu „Suchen und Ersetzen“ anzuzeigen, bei denen die Option **Diese Meldung immer anzeigen** aktiviert ist. Wenn Sie z.B. entschieden haben, die Warnmeldung zu **Alle ersetzen** nicht anzuzeigen, die erscheint, wenn Sie versuchen, Ersetzungen in Dateien vorzunehmen, die nicht für die Bearbeitung geöffnet sind, würde diese Meldung durch Auswahl dieser Option wieder angezeigt werden, wenn Sie versuchen „Alle ersetzen“ durchzuführen.  
   
- Wenn Sie keine Warnmeldungen für Suchen und Ersetzen anzeigen möchten, deaktivieren Sie diese Option.  
+ Deaktivieren Sie diese Option, wenn Sie keine Warnmeldungen für „Suchen und Ersetzen“ anzeigen lassen möchten.  
   
- Wenn Sie die Option **Diese Meldung immer anzeigen** für einige, jedoch nicht für alle Warnmeldungen unter **Suchen und Ersetzen** deaktiviert haben, wird das Kontrollkästchen **Warnmeldungen anzeigen** zwar ausgewählt dargestellt, ist jedoch nicht aktiviert.  Um alle optionalen Meldungen für **Suchen und Ersetzen** wiederherzustellen, deaktivieren Sie diese Option und aktivieren sie erneut.  
+ Wenn Sie die Option **Diese Meldung immer anzeigen** nur für einige Warnmeldungen in **Suchen und Ersetzen** deaktiviert haben, aber nicht für alle, wird das Kontrollkästchen **Warnmeldungen anzeigen** zum Ausfüllen angezeigt, ist aber nicht aktiviert. Deaktivieren Sie diese Option, und aktivieren Sie sie erneut, wenn Sie alle optionalen Meldungen in **Suchen und Ersetzen** wiederherstellen möchten.  
   
 > [!NOTE]
->  Diese Option hat keine Auswirkungen auf die Warnmeldungen für **Suchen und Ersetzen**, in denen die Option **Diese Meldung immer anzeigen** nicht angezeigt wird.  
+>  Diese Option hat keine Auswirkungen auf Warnmeldungen in **Suchen und Ersetzen**, bei denen die Option **Diese Meldung immer anzeigen** nicht angezeigt wird.  
   
  **Suchtext automatisch aus Editor übernehmen**  
- Wählen Sie diese Option, um den Text auf beiden Seiten der Einfügemarke im aktuellen Editor einfügen, die  **Suchen nach** Feld, wenn Sie eine beliebige Ansicht des auswählen die  **Suchen und Ersetzen** Fenster aus der  **Bearbeiten** Menü.  Deaktivieren Sie diese Option, um das letzte Suchmuster der vorherigen Suche als Zeichenfolge in **Suchen nach** zu verwenden.  
+ Wählen Sie diese Option, um den Text auf beiden Seiten der Einfügemarke des Editors in das Feld **Suchen nach** einzufügen, wenn Sie eine Ansicht des Fensters **Suchen und Ersetzen** im Menü **Bearbeiten** auswählen. Deaktivieren Sie diese Option, um das letzte Suchmuster aus der vorherigen Suche als Zeichenfolge für das Feld **Suchen nach** zu verwenden.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Suchen und Ersetzen von Text](../../ide/finding-and-replacing-text.md)

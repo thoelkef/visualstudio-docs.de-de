@@ -35,10 +35,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: d797017eb46f38a81f4d5ba6f1999457aa816d1c
-ms.openlocfilehash: 69cc33533afd449e50bfc3ecbc8384359253fabb
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 102091f8214b822a5b6be1c93f913d6ddbcd8d9b
+ms.contentlocale: de-de
+ms.lasthandoff: 05/24/2017
 
 ---
 # <a name="customize-the-start-page-for-visual-studio"></a>Anpassen der Startseite für Visual Studio
@@ -50,7 +51,7 @@ Sie können die Visual Studio-Startseite standardmäßig auf unterschiedliche We
 
 2.  Erweitern Sie **Umgebung**, und wählen Sie dann **Start** aus.  
 
-3.  Wählen Sie in der Liste**Beim Start** das gewünschte Element für die Anpassung aus.  
+3.  Wählen Sie in der Liste **Beim Start** das gewünschte Element für die Anpassung aus.  
 
 ## <a name="show-a-custom-start-page"></a>Anzeigen einer benutzerdefinierten Startseite  
 
@@ -74,5 +75,5 @@ Sie können die Visual Studio-Startseite standardmäßig auf unterschiedliche We
 >  Wenn ein Fehler in einer benutzerdefinierten Startseite Visual Studio zum Absturz bringt, können Sie Visual Studio im abgesicherten Modus starten und dann festlegen, dass die Standardstartseite verwendet wird. Weitere Informationen finden Sie unter [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).  
 
 ## <a name="see-also"></a>Siehe auch  
- [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
+ [Personalisieren der Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md)   
 

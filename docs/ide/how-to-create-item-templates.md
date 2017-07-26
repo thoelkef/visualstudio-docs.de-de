@@ -32,18 +32,19 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 9b29250916c91c98176585bbdb8c5a4018dbd6c7
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9713f09b7379b14b9362e3853a910948935c501e
+ms.openlocfilehash: 3524c21503d0432d509c607ea157f3fe675b443d
+ms.contentlocale: de-de
+ms.lasthandoff: 05/31/2017
 
 ---
 # <a name="how-to-create-item-templates"></a>Gewusst wie: Erstellen von Elementvorlagen
 Anhand der Schritte im [ersten Verfahren](../ide/how-to-create-item-templates.md#export_template) dieses Themas wird gezeigt, wie Sie eine Elementvorlage mithilfe des Assistenten zum **Exportieren von Vorlagen** erstellen können. Wenn Ihre Vorlage mehrere Dateien enthalten soll, finden Sie unter [Vorgehensweise: Erstellen von Elementvorlagen mit mehreren Dateien](../ide/how-to-create-multi-file-item-templates.md) entsprechende Informationen dazu.  
 
- Der Assistent nimmt Ihnen einen Großteil der Arbeit beim Erstellen der Standardvorlage ab, in vielen Fällen müssen Sie die VSTEMPLATE-Datei jedoch manuell bearbeiten, nachdem Sie die Vorlage exportiert haben. Wenn z.B. das Element im Dialogfeld **Neues Element hinzufügen** für eine [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]-App angezeigt werden soll, müssen Sie einige zusätzliche Schritte ausführen. Im [zweiten Verfahren](../ide/how-to-create-item-templates.md#modify_template) in diesem Thema wird beschrieben, wie Sie diese Aufgabe ausführen.  
+ Der Assistent nimmt Ihnen einen Großteil der Arbeit beim Erstellen der Standardvorlage ab, in vielen Fällen müssen Sie die VSTEMPLATE-Datei jedoch manuell bearbeiten, nachdem Sie die Vorlage exportiert haben. Wenn z.B. das Element im Dialogfeld **Neues Element hinzufügen** für ein [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]-App-Projekt angezeigt werden soll, müssen Sie einige zusätzliche Schritte ausführen. Im [zweiten Verfahren](../ide/how-to-create-item-templates.md#modify_template) in diesem Thema wird beschrieben, wie Sie diese Aufgabe ausführen.  
 
- Informationen dazu, wie Sie angeben können, dass die Vorlage nur für bestimmte Projektuntertypen wie Office, Datenbank oder Web, angezeigt wird finden Sie in [diesem Abschnitt](../ide/how-to-create-multi-file-item-templates.md#enable_templates).  
+ Informationen dazu, wie Sie angeben können, dass die Vorlage nur für bestimmte Projektuntertypen wie Office, Datenbank oder Web, angezeigt wird finden Sie in [diesem Abschnitt](#enable_templates).  
 
  In einigen Fällen möchten oder müssen Sie eine Elementvorlage ggf. manuell von Grund auf neu erstellen. Im [dritten Verfahren](../ide/how-to-create-item-templates.md#create_template) wird dies erläutert.  
 
@@ -80,11 +81,13 @@ Anhand der Schritte im [ersten Verfahren](../ide/how-to-create-item-templates.md
 
 3.  Öffnen Sie die VSTEMPLATE-Datei in Visual Studio.  
 
-4.  Fügen Sie für ein Windows 8.1 Store-Projekt in C# in der VSTEMPLATE-Datei den folgenden XML-Code innerhalb des öffnenden und des schließenden `<TemplateData>`-Tags ein: `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`.  
+4.  Fügen Sie für ein Windows C#-Projekt in der VSTEMPLATE-Datei den folgenden XML-Code innerhalb des öffnenden `<TemplateData>`-Tags ein: `<TemplateID>Microsoft.CSharp.Class</TemplateID>`. 
 
-     Ein Windows 8.1 Store-Projekt in C++ verwendet den Wert von `WinRT-Native-6.3`. Informationen zu Windows 10- und anderen Projekttypen finden Sie unter [TemplateGroupID-Element (Visual Studio-Vorlagen)](../extensibility/templategroupid-element-visual-studio-templates.md).  
+    Fügen Sie für ein Windows 8.1 Store-Projekt in C# in der VSTEMPLATE-Datei den folgenden XML-Code innerhalb des öffnenden und des schließenden `<TemplateData>`-Tags ein: `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`.  
 
-     Das folgende Beispiel zeigt den gesamten Inhalt einer VSTEMPLATE-Datei an, nachdem die XML-Zeile `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` hinzugefügt wurde. Dieses Beispiel gilt für C#-Projekte. Sie können die <ProjectTpe>- und \<[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)>-Elemente ändern, um andere Sprachen- und Projekttypen anzugeben.  
+    Ein Windows 8.1 Store-Projekt in C++ verwendet den Wert von `WinRT-Native-6.3`. Informationen zu Windows 10- und anderen Projekttypen finden Sie unter [TemplateGroupID-Element (Visual Studio-Vorlagen)](../extensibility/templategroupid-element-visual-studio-templates.md).  
+
+    Das folgende Beispiel zeigt den gesamten Inhalt einer VSTEMPLATE-Datei an, nachdem die XML-Zeile `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` hinzugefügt wurde. Dieses Beispiel gilt für C#-Projekte. Sie können die <ProjectTpe>- und \<[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)>-Elemente ändern, um andere Sprachen- und Projekttypen anzugeben.  
 
     ```xml  
     <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">  
@@ -116,8 +119,9 @@ Anhand der Schritte im [ersten Verfahren](../ide/how-to-create-item-templates.md
  Sie können nun ein Element auf der Grundlage dieser Vorlage einem [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]-Projekt hinzufügen, indem Sie das Dialogfeld **Neues Element hinzufügen** verwenden.  
 
  Weitere Informationen zu Parameternamen finden Sie unter [Vorlagenparameter](../ide/template-parameters.md).  
-
-### <a name="to-enable-templates-for-specific-project-sub-types"></a>So aktivieren Sie die Vorlagen für bestimmte Projektuntertypen  
+  
+ 
+### <a name="enable_templates"></a> So aktivieren Sie die Vorlagen für bestimmte Projektuntertypen  
 
 1.  In der Entwicklungsumgebung können Sie Projektelemente aus dem Dialogfeld „Element hinzufügen“ für bestimmte Projekte verfügbar machen. Verwenden Sie dieses Verfahren, um benutzerdefinierte Elemente für Windows-, Web-, Office- oder Datenbankprojekte verfügbar zu machen.  
 

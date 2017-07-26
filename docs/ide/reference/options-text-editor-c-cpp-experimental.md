@@ -30,10 +30,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 47c39bd711b69efdb863d71f11e3e472054a3ce3
-ms.openlocfilehash: 889d538b732b360b475788ec6d67b47920703c73
-ms.lasthandoff: 04/06/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 77c4408fcd93a776468cf5fb23b3807a2b8d594d
+ms.contentlocale: de-de
+ms.lasthandoff: 05/24/2017
 
 ---
 # <a name="options-text-editor-cc-experimental"></a>Optionen, Text-Editor, C/C++, Experimentell
@@ -44,7 +45,7 @@ Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ da
  Diese Features sind mit einer Visual Studio 2017-Installation verfügbar.  
   
 > [!NOTE]
->  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Informationen hierzu finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio)](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren der Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md)  
   
 ## <a name="enable-predictive-intellisense"></a>Predictive IntelliSense aktivieren
 Predictive IntelliSense beschränkt die Anzahl von angezeigten Ergebnissen in der Dropdownliste in IntelliSense, sodass nur für Ihren Kontext relevante Ergebnisse angezeigt werden. Wenn Sie <code>int x =</code> eingeben und das Dropdownmenü in IntelliSense aufrufen, werden Ihnen nur ganze Zahlen oder Funktionen, die ganze Zahlen zurückgeben, angezeigt. Standardmäßig ist Predictive IntelliSense deaktiviert.
@@ -59,7 +60,7 @@ Weitere Text-Editor-Features für die Visual Studio Gallery finden Sie in [diese
   
 -   **Add using namespace/Fully qualify symbol** - Wie die vorherige Option, aber für Namespaces.  
   
--   **Fehlendes Semikolon hinzufügen**  
+-   **Add missing semicolon**  
   
 -   **MSDN Help** - In MSDN nach Fehlermeldungen suchen.  
   

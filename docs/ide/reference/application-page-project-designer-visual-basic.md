@@ -34,10 +34,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: d95f62f61261c9c5c9af36e3bb2ee6fe66d63d2a
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6fbf89668d47d55d1d77a1d7f11765567fc73405
+ms.openlocfilehash: 4be8a1f36d81e2cb36d9daab9817f04d18ecb94a
+ms.contentlocale: de-de
+ms.lasthandoff: 05/26/2017
 
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
@@ -51,7 +52,7 @@ Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinste
  Mit den folgenden Optionen können Sie allgemeine Einstellungen für eine Anwendung konfigurieren.  
   
  **Assemblyname**  
- Gibt den Namen der Ausgabedatei an, in der das Assemblymanifest enthalten ist. Wenn Sie diese Eigenschaft ändern, wird auch die Eigenschaft **Ausgabename** geändert. Sie können diese Änderung auch an einer Eingabeaufforderung mit [/out (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/out) durchführen. Weitere Informationen über den programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.  
+ Gibt den Namen der Ausgabedatei an, in der das Assemblymanifest enthalten ist. Wenn Sie diese Eigenschaft ändern, wird auch die Eigenschaft **Ausgabename** geändert. Sie können diese Änderung auch an einer Eingabeaufforderung mit [/out (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/out) durchführen. Informationen zum programmgesteuerten Zugreifen auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.  
   
  **Stammnamespace**  
  Legt den Basisnamespace für alle Dateien im Projekt fest. Wenn Sie beispielsweise den **Stammnamespace** auf `Project1` festgelegt haben und eine `Class1` außerhalb aller Namespaces im Code vorhanden ist, würde deren Namespace `Project1.Class1` lauten. Wäre eine `Class2` in einem Namespace `Order` im Code vorhanden ist, würde deren Namespace `Project1.Order.Class2` lauten.  
@@ -65,7 +66,7 @@ Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinste
   
  Weitere Informationen zur Stammnamespace-Eigenschaft finden Sie unter [/rootnamespace](/dotnet/visual-basic/reference/command-line-compiler/rootnamespace).  
   
- Weitere Informationen über den programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.RootNamespace%2A>.  
+ Informationen zum programmgesteuerten Zugreifen auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.RootNamespace%2A>.  
   
  **Zielframework (alle Konfigurationen)**  
  Gibt die .NET Framework-Version an, auf die die Anwendung ausgerichtet ist. Diese Option kann unterschiedliche Werte aufweisen, je nachdem, welche Versionen von .NET Framework auf dem Computer installiert sind.  
@@ -82,15 +83,15 @@ Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinste
   
  Für ein Webanwendungsprojekt müssen Sie **-Klassenbibliothek** angeben.  
   
- Wenn Sie die Option **WinMD-Datei** angeben, können Typen in eine beliebige Windows Runtime-Programmiersprache projiziert werden. Wenn Sie die Ausgabe des Projekts als WinMD-Datei packen, können Sie eine Anwendung in mehreren Sprachen codieren und einer Interaktion der verschiedenen Codes erreichen, als ob sie in derselben Sprache geschrieben wären. Sie können die Option **WinMD-Datei** für Projektmappen verwenden, die auf Windows Runtime-Bibliotheken abzielen, beispielsweise [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]-Apps. Weitere Informationen finden Sie unter [Erstellen von Windows-Runtime-Komponenten in C# und Visual Basic](http://go.microsoft.com/fwlink/?LinkId=231895).  
+ Wenn Sie die Option **WinMD-Datei** angeben, können Typen in eine beliebige Windows Runtime-Programmiersprache projiziert werden. Wenn Sie die Ausgabe des Projekts als WinMD-Datei packen, können Sie eine Anwendung in mehreren Sprachen codieren und einer Interaktion der verschiedenen Codes erreichen, als ob sie in derselben Sprache geschrieben wären. Sie können die Option **WinMD-Datei** für Projektmappen verwenden, die auf Windows Runtime-Bibliotheken abzielen, beispielsweise [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]-Apps. Weitere Informationen finden Sie unter [Erstellen von Windows-Runtime-Komponenten in C# und Visual Basic](/windows/uwp/winrt-components/creating-windows-runtime-components-in-csharp-and-visual-basic).  
   
 > [!NOTE]
 >  Die Windows Runtime kann Typen so projizieren, dass sie unabhängig von der verwendeten Sprache als systemeigene Objekte erscheinen. Beispielsweise verwenden JavaScript-Anwendungen, die mit der Windows Runtime interagieren, diese als JavaScript-Objektsatz, und C#-Anwendungen benutzen die Bibliothek als eine Sammlung von .NET-Objekten. Wenn Sie die Ausgabe des Projekts als WinMD-Datei packen, können Sie die gleiche Technologie nutzen, die Windows Runtime verwendet.  
   
- Weitere Informationen zur Eigenschaft **Anwendungstyp** finden Sie unter [/target (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/target). Weitere Informationen über den programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
+ Weitere Informationen zur Eigenschaft **Anwendungstyp** finden Sie unter [/target (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/target). Informationen zum programmgesteuerten Zugreifen auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
   
  **Symbol**  
- Legt die ICO-Datei fest, die als Programmsymbol verwendet werden soll. Wählen Sie **\<Durchsuchen...>** aus, um nach einer vorhandenen Grafik zu suchen. Weitere Informationen finden Sie unter [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) (oder [/win32icon (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option)). Informationen über den programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.  
+ Legt die ICO-Datei fest, die als Programmsymbol verwendet werden soll. Wählen Sie  **\<Durchsuchen...>** aus, um nach einer vorhandenen Grafik zu suchen. Weitere Informationen finden Sie unter [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) (oder [/win32icon (C#-Compileroptionen)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option)). Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.  
   
  **Startformular/Startobjekt/Start-URI**  
  Gibt das Startformular oder den Einstiegspunkt der Anwendung an.  
@@ -101,7 +102,7 @@ Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinste
   
  Wenn **Anwendungsframework aktivieren** deaktiviert ist, wird diese Liste zu **Startobjekt** und zeigt sowohl Formulare als auch Klassen oder Module mit einer `Sub Main` an.  
   
- **Startobjekt** definiert den Einstiegspunkt, der aufgerufen werden soll, wenn die Anwendung geladen wird. Dieser wird üblicherweise entweder auf das Hauptformular der Anwendung oder auf die `Sub Main`-Prozedur festgelegt, die beim Start der Anwendung ausgeführt werden soll. Da Klassenbibliotheken über keinen Einstiegspunkt verfügen, ist ihre einzige Option für diese Eigenschaft **(Keine)**. Weitere Informationen finden Sie unter [/main](/dotnet/visual-basic/reference/command-line-compiler/main). Informationen über den programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.StartupObject%2A>.  
+ **Startobjekt**  definiert den Einstiegspunkt, der aufgerufen werden soll, wenn die Anwendung geladen wird. Dieser wird üblicherweise entweder auf das Hauptformular der Anwendung oder auf die `Sub Main`-Prozedur festgelegt, die beim Start der Anwendung ausgeführt werden soll. Da Klassenbibliotheken über keinen Einstiegspunkt verfügen, ist ihre einzige Option für diese Eigenschaft **(Keine)**. Weitere Informationen finden Sie unter [/main](/dotnet/visual-basic/reference/command-line-compiler/main). Informationen zum programmgesteuerten Zugriff auf diese Eigenschaft finden Sie unter <xref:VSLangProj.ProjectProperties.StartupObject%2A>.  
   
  **Assemblyinformationen**  
  Klicken Sie auf diese Schaltfläche, um das Dialogfeld[Assemblyinformationen](../../ide/reference/assembly-information-dialog-box.md) anzuzeigen.  
@@ -162,9 +163,9 @@ Legen Sie auf der Seite **Anwendung** des Projekt-Designers die Anwendungseinste
   
  Wählen Sie **Beim Schließen des letzten Fensters** aus, um festzulegen, dass die Anwendung beendet wird, wenn das letzte Fenster geschlossen oder <xref:System.Windows.Application.Shutdown%2A> explizit aufgerufen wird. Dies ist die Standardeinstellung.  
   
- Wählen Sie **Beim Schließen des Hauptfensters** aus, um festzulegen, dass die Anwendung beendet wird, wenn das letzte Hauptfenster geschlossen oder <xref:System.Windows.Application.Shutdown%2A> explizit aufgerufen wird.  
+ Wählen Sie **Beim Schließen des Hauptfensters** aus, um festzulegen, dass die Anwendung beendet wird, wenn das Hauptfenster geschlossen oder <xref:System.Windows.Application.Shutdown%2A> explizit aufgerufen wird.  
   
- Weitere Informationen zur Verwendung dieser Einstellung finden Sie unter <xref:System.Windows.Application.Shutdown%2A>.  
+ Weitere Informationen über die Verwendung diese Einstellung finden Sie unter <xref:System.Windows.Application.Shutdown%2A>.  
   
  **XAML bearbeiten**  
  Klicken Sie auf diese Schaltfläche, um die Anwendungsdefinitionsdatei („Application.xaml“) im XAML-Editor zu öffnen und zu ändern. Wenn Sie auf diese Schaltfläche klicken, wird der Anwendungsdefinitionsknoten von „Application.xaml“ geöffnet. Möglicherweise müssen Sie diese Datei bearbeiten, um bestimmte Aufgaben auszuführen, wie z.B. das Definieren von Ressourcen. Wenn keine Anwendungsdefinitionsdatei vorhanden ist, wird sie vom Projekt-Designer erstellt.  

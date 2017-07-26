@@ -1,50 +1,65 @@
 ---
-title: "Toolbox, Registerkarte &quot;Daten&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Toolbox, Daten (Registerkarte )"
-  - "Daten (Registerkarte), Toolbox"
-  - "Daten [Visual Studio], Toolbox"
+title: Toolbox, Daten (Registerkarte) | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Toolbox, Data tab
+- Data tab, Toolbox
+- data [Visual Studio], Toolbox
 ms.assetid: 2ae38b2a-29d2-461c-a67d-29dad274bf45
 caps.latest.revision: 15
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 15
----
-# Toolbox, Registerkarte &quot;Daten&quot;
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: bfe6b74b10829ac06d07b3e22b969b8ed6357972
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
-Zeigt Datenobjekte an, die Sie zu Formularen und Komponenten hinzufügen können.  Die Registerkarte **Daten** unter **Werkzeugkasten** wird geöffnet, wenn Sie ein Projekt erstellen, mit dem ein Designer verknüpft ist.  Der **Werkzeugkasten** wird standardmäßig in der integrierten Entwicklungsumgebung von Visual Studio angezeigt. Wenn Sie den **Werkzeugkasten** einblenden möchten, klicken Sie im Menü **Ansicht** auf **Werkzeugkasten**.  
+---
+# <a name="toolbox-data-tab"></a>Toolbox, Daten (Registerkarte )
+Zeigt Datenobjekte an, die Sie zu Formularen und Komponenten hinzufügen können. Die Registerkarte **Daten** unter **Toolbox** wird geöffnet, wenn Sie ein Projekt erstellen, mit dem ein Designer verknüpft ist. Die **Toolbox** wird standardmäßig in der integrierten Entwicklungsumgebung von Visual Studio angezeigt. Wenn Sie die **Toolbox** einblenden möchten, klicken Sie im Menü **Ansicht** auf **Toolbox**.  
   
 > [!TIP]
->  Durch Ausführen des Assistenten zum Konfigurieren von Datenquellen werden die meisten Datenelemente automatisch erstellt und konfiguriert.  Weitere Informationen finden Sie unter [Creating Data Applications with Visual Studio](http://msdn.microsoft.com/de-de/28edce21-220a-484c-b461-a75b0232d293).  
+>  Durch Ausführen des Assistenten zum Konfigurieren von Datenquellen werden die meisten Datenelemente automatisch erstellt und konfiguriert. Weitere Informationen finden Sie unter [Neue Datenquelle hinzufügen](../../data-tools/add-new-data-sources.md).  
   
-## Liste der Elemente der Benutzeroberfläche  
- Um direkt zur .NET Framework\-Referenzseite einer Komponente zu wechseln, drücken Sie **F1**, wenn das Element im **Werkzeugkasten** hervorgehoben ist, oder klicken Sie auf das Element in der Komponentenleiste des Designers.  
+## <a name="ui-element-list"></a>Liste der Elemente der Benutzeroberfläche  
+ Um direkt zur .NET Framework-Referenzseite einer Komponente zu wechseln, drücken Sie **F1**, wenn das Element in der **Toolbox** hervorgehoben ist, oder klicken Sie auf das Element in der Komponentenleiste des Designers.  
   
 |Name|Beschreibung|  
-|----------|------------------|  
-|<xref:System.Data.DataSet>|Dem Formular bzw. der Komponente wird eine Instanz eines typisierten oder nicht typisierten DataSets hinzugefügt.  Wenn Sie dieses Objekt auf einen Designer ziehen, wird ein Dialogfeld angezeigt, in dem Sie eine vorhandene Klasse für ein typisiertes DataSet auswählen oder angeben können, in der Sie ein neues, leeres, nicht typisiertes DataSet erstellen möchten. **Note:**  Das <xref:System.Data.DataSet>\-Objekt im **Werkzeugkasten** wird nicht zum Erstellen eines Schemas und einer Klasse für ein neues typisiertes DataSet verwendet.  Weitere Informationen finden Sie unter [Gewusst wie: Erstellen eines typisierten Datasets](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|  
+|----------|-----------------|  
+|<xref:System.Data.DataSet>|Dem Formular bzw. der Komponente wird eine Instanz eines typisierten oder nicht typisierten DataSets hinzugefügt. Wenn Sie dieses Objekt auf einen Designer ziehen, wird ein Dialogfeld angezeigt, in dem Sie eine vorhandene Klasse für ein typisiertes DataSet auswählen oder angeben können, in der Sie ein neues, leeres, nicht typisiertes DataSet erstellen möchten. **Hinweis:** Das <xref:System.Data.DataSet>-Objekt in der **Toolbox** wird nicht zum Erstellen eines Schemas und einer Klasse für ein neues typisiertes DataSet verwendet. Weitere Informationen finden Sie unter [Erstellen und Konfigurieren von Datasets in Visual Studio](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|  
 |<xref:System.Windows.Forms.DataGridView>|Bietet ein leistungsstarkes und flexibles Instrument zum Anzeigen von Daten in Tabellenform.|  
 |<xref:System.Windows.Forms.BindingSource>|Vereinfacht das Binden von Steuerelementen an eine zugrunde liegende Datenquelle.|  
 |<xref:System.Windows.Forms.BindingNavigator>|Stellt die Benutzeroberfläche zum Navigieren und Bearbeiten von Steuerelementen, die an Daten gebunden sind, auf einem Formular dar.|  
   
-## Siehe auch  
- [Exemplarische Vorgehensweisen zur Arbeit mit Daten](../Topic/Data%20Walkthroughs.md)   
- [Binden von Windows Forms\-Steuerelementen an Daten in Visual Studio](../../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Übersicht über Datenanwendungen in Visual Studio](../../data-tools/overview-of-data-applications-in-visual-studio.md)   
- [Herstellen von Datenverbindungen in Visual Studio](../../data-tools/connecting-to-data-in-visual-studio.md)   
- [Vorbereiten der Anwendung auf den Empfang von Daten](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [Abrufen von Daten für die Anwendung](../../data-tools/fetching-data-into-your-application.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Zugreifen auf Daten in Visual Studio](../../data-tools/accessing-data-in-visual-studio.md)   
+ [Visual Studio-Datentools für .NET](../../data-tools/visual-studio-data-tools-for-dotnet.md)   
+ [Datasettools in Visual Studio](../../data-tools/dataset-tools-in-visual-studio.md)   
  [Binden von Steuerelementen an Daten in Visual Studio](../../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Bearbeiten von Daten in der Anwendung](../../data-tools/editing-data-in-your-application.md)   
- [Überprüfen von Daten](../Topic/Validating%20Data.md)   
+ [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
+ [Bearbeiten von Daten in Datasets](../../data-tools/edit-data-in-datasets.md)   
+ [Überprüfen von Daten in Datasets](../../data-tools/validate-data-in-datasets.md)   
  [Speichern von Daten](../../data-tools/saving-data.md)
