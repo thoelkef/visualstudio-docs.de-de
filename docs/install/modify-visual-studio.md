@@ -50,7 +50,7 @@ Gehen Sie folgendermaßen vor:
 
 1.  Suchen Sie den Visual Studio-Installer auf Ihrem Computer.  
 
-     Auf einem Computer mit Windows 10 Anniversary Update klicken Sie beispielsweise auf **Start** und blättern dann zum Buchstaben **V**, wo das Installationsprogramm als **Visual Studio-Installer** angezeigt wird.  
+     Auf einem Computer mit Windows 10 Anniversary Update klicken Sie beispielsweise auf **Start** und scrollen dann zum Buchstaben **V**, wo das Installationsprogramm als **Visual Studio-Installer** angezeigt wird.  
 
      ![Visual Studio-Installer](media/vs2017-locate-the-visual-studio-installer.PNG "Suchen des Microsoft Visual Studio-Installers")
 

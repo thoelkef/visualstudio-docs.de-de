@@ -153,7 +153,7 @@ Vorlagendateien müssen an einem Speicherort abgelegt werden, an dem Visual Stud
 
 3.  Erstellen Sie ein Projekt, oder öffnen Sie ein vorhandenes Projekt.  
 
-4.  Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.  
+4.  Klicken Sie im Menü Projekt auf Neues Element hinzufügen.  
 
 5.  Stellen Sie sicher, dass die Kategorie „HelloWorld“ im Dialogfeld **Neues Element hinzufügen** im Bereich **Projekttypen** angezeigt wird.  
 

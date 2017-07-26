@@ -30,10 +30,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5581224b17a7b42f65b69f741f984a144d78fc26
-ms.openlocfilehash: f4ae98f4e9b7dbf4b1066120316ee5a167ae78f2
-ms.lasthandoff: 04/04/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 7e372d9d6d935ff40054b8ba3f7684bf5ea9c458
+ms.openlocfilehash: aa3d791afc574200157104145617ff6ad6139b68
+ms.contentlocale: de-de
+ms.lasthandoff: 06/22/2017
 
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Kompilieren und Generieren in Visual Studio
@@ -51,7 +52,7 @@ Sie können Visual Studio verwenden, um während eines Entwicklungszyklus in kur
 |Verwenden von Team Foundation Build|– Sie können den Buildprozess automatisieren. Beispielsweise können Sie ein Projekt oder mehrere Projekte jede Nacht oder bei jedem Einchecken dieses Code ausführen. Sie können Projekte auch auf freigegebenen Buildservern anstatt auf dem Entwicklungscomputer erstellen.<br />– Sie können den Code, den Sie erstellen möchten, die auszuführenden Tests und andere allgemeine Optionen schnell festlegen.<br />– Sie können den Buildworkflow ändern und ggf. Buildaktivitäten zum Ausführen benutzerdefinierter Aufgaben erstellen.|[Erstellen der Anwendung](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)|  
   
 ## <a name="building-from-the-ide"></a>Erstellen aus der IDE  
- Wenn Sie ein Projekt erstellen, werden dafür standardmäßige Buildkonfigurationen definiert, und ihm wird eine Projektmappenbuildkonfiguration zugewiesen, um Kontext für Builds bereitzustellen. Projektmappenkonfigurationen definieren, wie die Projekte im Projektmappen-Explorer erstellt und bereitgestellt werden. Bei Projektkonfigurationen handelt es sich um einen Satz von Projekteigenschaften, die für eine Plattform und einen Buildtyp eindeutig sind (beispielsweise die Win32-Version). Sie können diese Standardkonfigurationen bearbeiten, und Sie können eigene Konfigurationen erstellen. Weitere Informationen finden Sie unter [Einführung in den Projekt-Designer](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7) und [NICHT IM BUILD: Gewusst wie: Ändern von Projekteigenschaften und Konfigurationseinstellungen](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67).  
+ Wenn Sie ein Projekt erstellen, werden dafür standardmäßige Buildkonfigurationen definiert, und ihm wird eine Projektmappenbuildkonfiguration zugewiesen, um Kontext für Builds bereitzustellen. Projektmappenkonfigurationen definieren, wie die Projekte im Projektmappen-Explorer erstellt und bereitgestellt werden. Bei Projektkonfigurationen handelt es sich um einen Satz von Projekteigenschaften, die für eine Plattform und einen Buildtyp eindeutig sind (beispielsweise die Win32-Version). Sie können diese Standardkonfigurationen bearbeiten, und Sie können eigene Konfigurationen erstellen. Weitere Informationen finden Sie unter [Verwalten von Projekt- und Projektmappeneigenschaften](managing-project-and-solution-properties.md).  
   
  Aus der IDE können Sie die folgenden zusätzlichen Aufgaben ausführen:  
   
