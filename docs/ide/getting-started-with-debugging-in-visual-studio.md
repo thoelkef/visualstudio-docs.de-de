@@ -27,9 +27,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 9226dacfa63287857c09e5c6945363ccafadc2c7
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
+ms.openlocfilehash: fa857220def2da9b05f1bbed70e906034727b8af
+ms.contentlocale: de-de
+ms.lasthandoff: 06/30/2017
 
 ---
 # <a name="getting-started-with-debugging-in-visual-studio"></a>Erste Schritte beim Debuggen in Visual Studio
@@ -47,11 +49,11 @@ Visual Studio bietet einen leistungsfähigen integrierten Satz von Projektbuild-
 
  ![Visual Studio, Schaltfläche "Debugversion"](../ide/media/vs_ide_gs_debug_build_type1.PNG "Vs_ide_gs_debug_build_type1")  
 
- Sie können auch eine bestimmte Zielplattform für den Build angeben, z. B. **x86** (32-Bit-Intel-CPUs), **x64** (64-Bit-Intel-CPUs) oder **ARM** (ARM-CPUs, nur für bestimmte App-Typen unterstützt). Die Standardeinstellung ist **x86** für verwaltete und native Projekte. Um dies zu ändern, klicken Sie auf die Dropdownliste für die Buildplattform und wählen eine andere Plattform oder den **Konfigurations-Manager** aus.  
+ Sie können auch eine bestimmte Zielplattform für den Build angeben, z. B. **x86** (32-Bit-Intel-CPUs), **x64** (64-Bit-Intel-CPUs) oder **ARM** (ARM-CPUs, nur für bestimmte App-Typen unterstützt). Die Standardeinstellung ist **x86** für verwaltete und native Projekte. Um dies zu ändern, klicken Sie auf die Dropdownliste für die Buildplattform und wählen eine andere Plattform oder den **Konfigurations-Manager...** aus.  
 
  ![Visual Studio, Fenster „Konfigurationsdatei-Manager“](../ide/media/vs_ide_gs_debug_build_cf_mgr.PNG "Vs_ide_gs_debug_build_cf_mgr")  
 
- Sie können im **Konfigurations-Manager** die gewünschte Buildkonfiguration angeben. Starten Sie ihn, und klicken Sie auf eine der Dropdownlisten **Konfiguration** oder **CPU**. Wählen Sie dann **Neu...** aus, um einen neuen Build oder eine neue Plattform zu erstellen.  
+ Sie können im **Konfigurations-Manager** die gewünschte Buildkonfiguration angeben. Starten Sie ihn, und klicken Sie auf eine der Dropdownlisten **Konfiguration** oder **CPU**. Wählen Sie **Neu...** aus, um einen neuen Build oder eine Plattform zu erstellen.  
 
  ![Visual Studio, Fenster „Konfigurations-Manager“](../ide/media/vs_ide_gs_debug_build_cf_mgr_2.PNG "Vs_ide_gs_debug_build_cf_mgr_2")  
 
@@ -85,7 +87,7 @@ Visual Studio bietet einen leistungsfähigen integrierten Satz von Projektbuild-
 
  Verwenden Sie STRG+G, um die Nummer der Zeile abzurufen, in der der Fehler aufgetreten ist.  
 
- Der Fehler wird durch eine rote Wellenlinie gekennzeichnet. Bewegen Sie den Mauszeiger darüber, um weitere Informationen anzuzeigen. Wenn Sie die Korrektur vornehmen, wird die Markierung aufgehoben. Es ist natürlich trotzdem möglich, dass Sie mit Ihrer Änderung einen neuen Fehler einfügen. (Dies wird als "Regression" bezeichnet.)  
+ Der Fehler wird durch eine rote Wellenlinie gekennzeichnet. Bewegen Sie den Mauszeiger darüber, um weitere Informationen anzuzeigen. Wenn Sie die Korrektur vornehmen, wird die Markierung aufgehoben. Es ist natürlich trotzdem möglich, dass Sie mit Ihrer Änderung einen neuen Fehler einfügen. (Dies wird als „Regression“ bezeichnet.)  
 
  ![Visual Studio, Draufzeigen auf Fehler](../ide/media/vs_ide_gs_debug_error_hover1.png "Vs_ide_gs_debug_error_hover1")  
 
@@ -103,7 +105,7 @@ Visual Studio bietet einen leistungsfähigen integrierten Satz von Projektbuild-
  Sie können auch auf den als Link formatierten Fehlercode in der Spalte **Code** in der **Fehlerliste** klicken. Hierdurch wird eine Suche in Bing nur nach dem Fehlercode durchgeführt.  
 
 ### <a name="performing-static-code-analysis"></a>Ausführen statischer Codeanalysen  
- Die "statische Codeanalyse" stellt eine praktische Möglichkeit dar, den eigenen Code automatisch auf allgemeine Probleme überprüfen zu lassen, die zu Laufzeitfehlern führen oder Probleme bei der Codeverwaltung verursachen können. Gewöhnen Sie sich die Ausführung an, sobald Sie offensichtliche Fehler behoben haben, die das Erstellen verhindern würden. Nehmen Sie sich etwas Zeit, auch die Warnungen zu behandeln. Sie ersparen sich damit einige spätere Probleme und lernen etwas über Stiltechniken beim Codieren.  
+ Die „statische Codeanalyse“ stellt eine praktische Möglichkeit dar, den eigenen Code automatisch auf allgemeine Probleme überprüfen zu lassen, die zu Laufzeitfehlern führen oder Probleme bei der Codeverwaltung verursachen können. Gewöhnen Sie sich die Ausführung an, sobald Sie offensichtliche Fehler behoben haben, die das Erstellen verhindern würden. Nehmen Sie sich etwas Zeit, auch die Warnungen zu behandeln. Sie ersparen sich damit einige spätere Probleme und lernen etwas über Stiltechniken beim Codieren.  
 
  Drücken Sie ALT+F11 (oder wählen Sie im oberen Menü **Analysieren > Codeanalyse für Projektmappe ausführen** aus), um die statische Codeanalyse zu starten. Dieser Vorgang kann bei umfangreichem Code einige Zeit dauern.  
 
@@ -158,7 +160,7 @@ Visual Studio bietet einen leistungsfähigen integrierten Satz von Projektbuild-
 
  ![Visual Studio, Haltepunkt](../ide/media/vs_ide_gs_debug_breakpoint1.png "Vs_ide_gs_debug_breakpoint1")  
 
- Wenn der Code unterbrochen wird, wurde die markierte Codezeile noch nicht ausgeführt. An diesem Punkt können Sie die Anweisungen für die Codezeile ausführen, die durch den Haltepunkt markiert wurde, und die geänderten Werte überprüfen. Dies wird als "schrittweises Durchlaufen des Codes" bezeichnet. Ist der gekennzeichnete Code ein Methodenaufruf, durchlaufen Sie diesen schrittweise durch Drücken von F11. Sie können die Codezeile durch Drücken von F10 auch „überspringen“. Weitere Informationen für Schrittaktionen für Haltepunkte finden Sie unter [Navigieren im Code mit dem Debugger](../debugger/navigating-through-code-with-the-debugger.md).  
+ Wenn der Code unterbrochen wird, wurde die markierte Codezeile noch nicht ausgeführt. An diesem Punkt können Sie die Anweisungen für die Codezeile ausführen, die durch den Haltepunkt markiert wurde, und die geänderten Werte überprüfen. Dies wird als „Ausführen von Code in Einzelschritten“ bezeichnet. Ist der gekennzeichnete Code ein Methodenaufruf, durchlaufen Sie diesen schrittweise durch Drücken von F11. Sie können die Codezeile durch Drücken von F10 auch „überspringen“. Weitere Informationen zum Ausführen von Code in Einzelschritten finden Sie unter [Navigieren im Code mit dem Debugger](../debugger/navigating-through-code-with-the-debugger.md).  
 
  Für Folgendes werden Haltepunkte häufig verwendet:  
 
@@ -175,7 +177,7 @@ Visual Studio bietet einen leistungsfähigen integrierten Satz von Projektbuild-
 ### <a name="setting-conditional-breakpoints"></a>Festlegen bedingter Haltepunkte  
  Verwenden Sie bei Haltepunkten in einer Schleife oder Rekursion oder bei sehr vielen Haltepunkten, die Sie häufig schrittweise durchlaufen, einen bedingten Haltepunkt, damit die Codeausführung NUR unterbrochen wird, wenn bestimmte Bedingungen erfüllt sind. Andernfalls müssen Sie sehr häufig F11 drücken.  
 
- Für das Festlegen eines bedingten Haltepunkts, bei dem die Ausführung automatisch fortgesetzt wird, wenn eine Variable auf einen bestimmten Wert festgelegt ist oder einen bestimmten Schwellenwert übersteigt, klicken Sie auf den Rand, um einen Haltepunkt festzulegen, und wählen Sie dann im angezeigten Menü das "Zahnrad" aus.  
+ Für das Festlegen eines bedingten Haltepunkts, bei dem die Ausführung automatisch fortgesetzt wird, wenn eine Variable auf einen bestimmten Wert festgelegt ist oder einen bestimmten Schwellenwert übersteigt, klicken Sie auf den Rand, um einen Haltepunkt festzulegen, und wählen Sie dann im angezeigten Menü das „Zahnrad“ aus.  
 
  ![Visual Studio, Haltepunkteinstellungen](../ide/media/vs_ide_gs_debug_breakpoint_settings.png "Vs_ide_gs_debug_breakpoint_settings")  
 
@@ -204,13 +206,8 @@ Visual Studio bietet einen leistungsfähigen integrierten Satz von Projektbuild-
  Weitere Informationen zu Komponententests in Visual Studio und wie sie Ihnen helfen, besseren Code zu erstellen, finden Sie unter [Unit Test Basics](../test/unit-test-basics.md) (Grundlagen zu Komponententests, in englischer Sprache).  
 
 ## <a name="see-also"></a>Siehe auch  
- [Debuggen in Visual Studio](../debugger/debugging-in-visual-studio.md)   
+ [Debugger – Featuretour](../debugger/debugger-feature-tour.md)   
  [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)   
  [Debuggen von 64-Bit-Anwendungen](../debugger/debug-64-bit-applications.md)   
  [Debugger – Grundlagen](../debugger/debugger-basics.md)
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 

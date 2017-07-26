@@ -1,7 +1,7 @@
 ---
 title: "Führung durch Features von Visual Studio-IDE | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 03/07/2017
+ms.date: 06/28/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -26,10 +26,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 06cdfb076120ffd7459a16b56c659bb86942cd7f
-ms.openlocfilehash: c8276097c53ea49d223c43ada5511ab5d5f38036
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
+ms.openlocfilehash: 8d2c20b32201b3df85e5150828565eee84d66375
+ms.contentlocale: de-de
+ms.lasthandoff: 06/30/2017
 
 ---
 # <a name="visual-studio-ide-feature-tour"></a>Führung durch Features von Visual Studio-IDE
@@ -142,7 +143,7 @@ Nichts läuft immer perfekt. Wenn Sie Code schreiben, müssen Sie ihn auszuführ
 
 ![Debuggen](../ide/media/VSIDE_Tour_Debugging.png)
 
-In Visual Studio sind Komponententests, IntelliTest, Auslastungs- sowie Leistungstests und mehr möglich. Weitere Informationen über den Debugprozess in Visual Studio finden Sie unter [Debugger Feature Tour](https://review.docs.microsoft.com/visualstudio/debugger/debugger-feature-tour?branch=mikejo-tour) (Führung zu Debuggerfunktionen). Weitere Informationen zum Testen finden Sie unter [Testtools](https://www.visualstudio.com/vs/testing-tools/). Weitere Informationen zum Verbessern der Leistung von Apps finden Sie unter [Profilerstellungstools](https://docs.microsoft.com/visualstudio/profiling/profiling-tools).
+In Visual Studio sind Komponententests, IntelliTest, Auslastungs- sowie Leistungstests und mehr möglich. Weitere Informationen über den Debugprozess in Visual Studio finden Sie unter [Debugger Feature Tour](../debugger/debugger-feature-tour.md) (Führung zu Debuggerfunktionen). Weitere Informationen zum Testen finden Sie unter [Testtools](https://www.visualstudio.com/vs/testing-tools/). Weitere Informationen zum Verbessern der Leistung von Apps finden Sie unter [Tour zur Profilerstellungsfunktion](../profiling/profiling-feature-tour.md).
 
 ## <a name="deploy-your-finished-application"></a>Bereitstellen der fertigen Anwendung  
 Wenn Ihre Anwendung für die Bereitstellung bei Benutzern oder Kunden bereit ist, bietet Visual Studio die dazu benötigten Tools, unabhängig davon, ob Sie sie im Windows Store, auf einer SharePoint-Website oder mit InstallShield- oder Windows Installer-Technologien bereitstellen möchten. Sie können über die IDE auf alle Tools zugreifen. Weitere Informationen finden Sie unter [Bereitstellen von Anwendungen, Diensten und Komponenten](../deployment/deploying-applications-services-and-components.md).
@@ -171,7 +172,7 @@ Im Folgenden werden einige weitere allgemeine Produktivitätsfunktionen in Visua
 
   ![Visual Studio, Member-Liste](../ide/media/vs2017_Intellisense.png)  
 
--  **Wellenlinien** sind gewellte rote Unterstriche, die Sie in Echtzeit auf Fehler oder mögliche Probleme in Ihrem Code hinweisen. So können Sie diese sofort beheben, ohne zu warten, bis der Fehler während der Kompilierung oder zur Laufzeit ermittelt wird. Wenn Sie auf die Wellenlinie zeigen, werden zusätzliche Informationen zum Fehler angezeigt. Am linken Rand wird u. U. auch eine Glühbirne mit Vorschlägen zum Beheben des Fehlers angezeigt. Weitere Informationen finden Sie unter [Ausführen von schnellen Aktionen mit Glühbirnen](../ide/perform-quick-actions-with-light-bulbs.md).  
+-  **Wellenlinien** sind gewellte rote Unterstriche, die Sie in Echtzeit auf Fehler oder mögliche Probleme in Ihrem Code hinweisen. So können Sie diese sofort beheben, ohne zu warten, bis der Fehler während der Kompilierung oder zur Laufzeit ermittelt wird. Wenn Sie auf die Wellenlinie zeigen, werden zusätzliche Informationen zum Fehler angezeigt. Am linken Rand wird u. U. auch eine Glühbirne mit Vorschlägen zum Beheben des Fehlers angezeigt. Weitere Informationen finden Sie unter [Perform quick actions with light bulbs](../ide/perform-quick-actions-with-light-bulbs.md).  
 
  ![Wellenlinien](../ide/media/vs2017_squiggle.png)  
 
@@ -185,7 +186,7 @@ Im Folgenden werden einige weitere allgemeine Produktivitätsfunktionen in Visua
 
 -  Das Fenster [Definitionsvorschau](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) zeigt integriert eine Methode oder eine Typdefinition, ohne den aktuellen Kontext verlassen zu müssen.  
 
- ![Peek in Definition](../ide/media/VSIDE_peek_definition.png)
+ ![Definitionsvorschau](../ide/media/VSIDE_peek_definition.png)
 
 -  Über die Kontextmenüoption **Gehe zu Definition** gelangen Sie direkt an die Stelle, an der die Funktion oder das Objekt definiert ist. Durch einen Klick mit der rechten Maustaste im Editor sind auch andere Navigationsbefehle verfügbar.
 

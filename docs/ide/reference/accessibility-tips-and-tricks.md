@@ -1,7 +1,7 @@
 ---
-title: Tipps und Tricks zu Barrierefreiheit | Microsoft Dokumentation
+title: Tipps und Tricks zu Barrierefreiheit | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 06/27/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -30,42 +30,47 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: c1e4fdf79ac11095501ca8823ff247cb48374824
+ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
+ms.openlocfilehash: 837df3bb8da963fa12ee02b39d19509336873d21
 ms.contentlocale: de-de
-ms.lasthandoff: 02/22/2017
+ms.lasthandoff: 06/30/2017
 
 ---
 # <a name="accessibility-tips-and-tricks"></a>Tipps und Tricks zu Barrierefreiheit
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] enthält integrierte Barrierefreiheitsfeatures, sodass Sie problemlos über die Tastatur arbeiten und Bildschirmsprachausgaben sowie andere technische Hilfsmittel verwenden können. Dieses Thema enthält einige Vorschläge zum Optimieren der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] für Barrierefreiheit sowie nützliche Tastenkombinationen.  
-  
-> [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
-  
+Visual Studio enthält integrierte Barrierefreiheitsfeatures, sodass Sie problemlos über die Tastatur arbeiten und Bildschirmsprachausgaben sowie andere technische Hilfsmittel verwenden können. Dieses Thema enthält einige Vorschläge zum Optimieren von Visual Studio für Barrierefreiheit sowie nützliche Tastenkombinationen. Tastenkombinationen erlauben Ihnen, Aufgaben in Visual Studio mithilfe der Tastatur auszuführen.
+
 ## <a name="save-your-ide-settings"></a>Speichern Ihrer IDE-Einstellungen  
- Sie können Ihre IDE-Umgebung anpassen, indem Sie Fensterlayout, Tastaturzuordnungsschema und andere Einstellungen speichern. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
-  
-## <a name="common-windows-shortcut-key-combinations"></a>Häufig verwendete Windows-Tastenkombinationen  
- Sie können viele standardmäßige Windows-Tastenkombinationen für Aufgaben in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] verwenden. Dazu zählen folgende Tastenkombinationen:  
-  
-|Beschreibung|Tastenkombination|  
-|-----------------|---------------------|  
-|Hohen Kontrast ein- und ausschalten|LINKE **ALT-TASTE+LINKE UMSCHALTTASTE+DRUCK**|  
-|Kontrollkästchens in einem Dialogfeld aktivieren oder deaktivieren|**LEERTASTE**|  
-|Eigenschaften des ausgewählten Elements anzeigen. Setzt beispielsweise den Fokus auf das Eigenschaftenfenster, wenn ein Formular ausgewählt ist, oder öffnet das Dialogfeld „Eigenschaftenseite“, wenn ein Projekt ausgewählt ist.|**ALT+EINGABE**|  
-|Elemente der aktiven Liste, z.B. einer Dropdownliste, in einem Dialogfeld anzeigen|**ALT** + NACH-UNTEN-TASTE|  
-|Elemente in einer aktiven Dropdownliste in einem Raster anzeigen|**UMSCHALT** + **ALT** + **NACH-UNTEN-TASTE**|  
-  
-## <a name="hidden-visual-studio-shortcut-key-combinations"></a>Ausgeblendete Visual Studio-Tastenkombinationen  
- Für einige Features stehen Tastenkombinationen zur Verfügung, die nicht im Bereich „Umgebung/Tastatur“ des Dialogfelds „Optionen“ aufgeführt sind. Zu diesen Tastenkombinationen gehören:  
-  
+ Sie können Ihre IDE-Umgebung anpassen, indem Sie Fensterlayout, Tastaturzuordnungsschema und andere Einstellungen speichern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).  
+
+## <a name="accessing-toolbars"></a>Zugreifen auf Symbolleisten
+Die Visual Studio-IDE verfügt genau wie viele andere Toolfenster über Symbolleisten. Die folgenden Tastenkombinationen helfen Ihnen, auf diese zuzugreifen.
+
 |Funktion|Beschreibung|Tastenkombination|  
 |-------------|-----------------|---------------------|  
-|Fenster "Toolbox"|Zwischen Toolboxregisterkarten wechseln|**STRG** + **NACH-OBEN-TASTE**<br /><br /> und<br /><br /> **STRG** + **NACH-UNTEN-TASTE**|  
-|Fenster „Toolbox“|Ein Steuerelement aus der Toolbox zu einem Formular oder einem Designer hinzufügen|**EINGABETASTE**|  
-|Tastatur, Umgebung, Dialogfeld „Optionen“|Tastenkombination löschen, die unter **Tastenkombination drücken** eingegeben wurde|**RÜCKTASTE**|  
-|Alle Toolfenster|Erste Schaltfläche in der Symbolleiste des Fensters auswählen|**UMSCHALT** + **ALT**|  
-|IDE-Symbolleisten|Erste Schaltfläche in der Standardsymbolleiste auswählen|**ALT**, **STRG** + **TAB** **Hinweis:** Drücken Sie **STRG** + **TAB** erneut, um die erste Schaltfläche in der nächsten IDE-Symbolleiste auszuwählen.|  
-  
+|IDE-Symbolleisten|Wählen Sie die erste Schaltfläche in der Standardsymbolleiste.|**ALT**, **STRG** + **TAB**|  
+|Symbolleisten des Toolfensters|Verschieben Sie den Fokus zu den Symbolleisten in einem Toolfenster. <br> <br> **HINWEIS:** Dies funktioniert für die meisten Toolfenster, jedoch nur, wenn sich der Fokus in einem Toolfenster befindet. Sie müssen außerdem die UMSCHALTTASTE vor der ALT-TASTE drücken. In einigen Toolfenstern wie Team Explorer müssen Sie die UMSCHALTTASTE einen Moment gedrückt halten, bevor Sie die ALT-TASTE drücken.|**UMSCHALT** + **ALT**|
+|Symbolleisten|Wechseln Sie zum ersten Element in der nächsten Symbolleiste (wenn eine Symbolleiste über Fokus verfügt).|**STRG** + **TAB**|
+
+## <a name="other-useful-shortcut-key-combinations"></a>Andere häufig verwendete Tastenkombinationen  
+Zu diesen Tastenkombinationen gehören:
+
+|Funktion|Beschreibung|Tastenkombination|  
+|-------------|-----------------|---------------------|  
+|IDE|Hohen Kontrast ein- und ausschalten <br> <br> **HINWEIS:** Windows-Standardtastenkombination|**LINKE ALT-TASTE+LINKE UMSCHALTTASTE+DRUCK**|  
+|Dialogfeld|Aktivieren oder deaktivieren Sie die Kontrollkästchenoption in einem Dialogfeld. <br> <br> **HINWEIS:** Windows-Standardtastenkombination|**LEERTASTE**|  
+|Kontextmenüs|Öffnen Sie ein Kontextmenü (Rechtsklick). <br> <br> **HINWEIS:** Windows-Standardtastenkombination|**UMSCHALT** + **F10**|
+|Menüs|Greifen Sie schnell auf ein Menüelement mithilfe der Zugriffstasten zu. Drücken Sie die **ALT**-TASTE gefolgt von den unterstrichenen Buchstaben in einem Menü, um den Befehl zu aktivieren. Um z.B. das Dialogfeld „Projekt öffnen“ in Visual Studio anzuzeigen, wählen Sie **ALT** + **F** + **O** + **P** aus.  <br><br> **HINWEIS:** Windows-Standardtastenkombination|**ALT** + **[Buchstabe]**|
+|Fenster „Toolbox“|Wechseln Sie zwischen Toolboxregisterkarten.|**STRG** + **NACH-OBEN-TASTE**<br /><br /> und<br /><br /> **STRG** + **NACH-UNTEN-TASTE**|  
+|Fenster „Toolbox“|Fügen Sie ein Steuerelement aus der Toolbox zu einem Formular oder einem Designer hinzu.|**EINGABETASTE**|  
+|Tastatur, Umgebung, Dialogfeld „Optionen“|Löschen Sie die Tastenkombination, die unter **Tastenkombination drücken** eingegeben wurde.|**RÜCKTASTE**|  
+
+> [!NOTE]
+>  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen.  
+
 ## <a name="see-also"></a>Siehe auch  
  [Barrierefreiheitsfeatures in Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
+
+ [Gewusst wie: Anpassen von Menüs und Symbolleisten in Visual Studio](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+
+ [Personalisieren der Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md)
+
