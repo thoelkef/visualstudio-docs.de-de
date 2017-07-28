@@ -1,7 +1,7 @@
 ---
-title: Kompilieren und Generieren in Visual Studio | Microsoft-Dokumentation
+title: Kompilieren und Erstellen in Visual Studio | Microsoft Dokumentation
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 7/14/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -16,61 +16,48 @@ caps.latest.revision: 28
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 7e372d9d6d935ff40054b8ba3f7684bf5ea9c458
-ms.openlocfilehash: aa3d791afc574200157104145617ff6ad6139b68
+ms.translationtype: HT
+ms.sourcegitcommit: e48ebcafaca37505dbcc92bce682d0c6169004e1
+ms.openlocfilehash: 800fcd5ff96e9e6d05b79c4d6fc5ccf17ba3084b
 ms.contentlocale: de-de
-ms.lasthandoff: 06/22/2017
+ms.lasthandoff: 07/26/2017
 
 ---
-# <a name="compiling-and-building-in-visual-studio"></a>Kompilieren und Generieren in Visual Studio
-Sie können Visual Studio verwenden, um während eines Entwicklungszyklus in kurzen Abständen Anwendungen, Assemblys und ausführbare Programme zu erstellen. Indem Sie den Code häufig erstellen, können Sie Kompilierungsfehler, z. B: falsche Syntax, falsch geschriebene Schlüsselwörter und Typenkonflikte, früher identifizieren. Sie können auch Laufzeitfehler, z. B. Logik- und Semantikfehler, erkennen und beheben, indem Sie häufig Debugversionen des Codes erstellen und ausführen.  
-  
- Nachdem die Entwicklung eines Projekts oder einer Projektmappe vollständig abgeschlossen wurde und auch das Debuggen in ausreichendem Maße erfolgt ist, werden die Komponenten in ein Releasebuild kompiliert. Standardmäßig wird ein Releasebuild dahingehend optimiert und entworfen, dass es kleiner ist als eine Debugversion und schneller ausgeführt werden kann. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer Anwendung](../ide/walkthrough-building-an-application.md).  
-  
-## <a name="choosing-a-build-method"></a>Auswählen einer Erstellungsmethode  
- Sie können eine Anwendung mithilfe der Standardbuildoptionen in der IDE, an einer Eingabeaufforderung oder unter Verwendung von Team Foundation Build erstellen. Bei jedem dieser Optionen wird MSBuild als zugrunde liegende Technologie verwendet, und jeder Ansatz bietet bestimmte in der folgenden Tabelle aufgeführte Vorteile.  
-  
-|Erstellungsmethode|Vorteile|Weitere Informationen|  
-|------------------|--------------|--------------------------|  
-|Verwenden von IDE|– Sie können Builds leichter erstellen und sofort ausführen.<br />– Sie können Multiprozessorbuilds für C++- und C#-Projekte ausführen.<br />– Sie können einige Aspekte des Buildsystems anpassen.|[Erstellen und Bereinigen von Projekten und Projektmappen in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)|  
-|Ausführen einer MSBuild-Befehlszeile|– Sie können Projekte erstellen, ohne Visual Studio zu installieren.<br />– Sie können Multiprozessorbuilds für alle Projekttypen ausführen.<br />– Sie können die meisten Bereiche des Buildsystems anpassen.|[MSBuild](../msbuild/msbuild.md)|  
-|Verwenden von Team Foundation Build|– Sie können den Buildprozess automatisieren. Beispielsweise können Sie ein Projekt oder mehrere Projekte jede Nacht oder bei jedem Einchecken dieses Code ausführen. Sie können Projekte auch auf freigegebenen Buildservern anstatt auf dem Entwicklungscomputer erstellen.<br />– Sie können den Code, den Sie erstellen möchten, die auszuführenden Tests und andere allgemeine Optionen schnell festlegen.<br />– Sie können den Buildworkflow ändern und ggf. Buildaktivitäten zum Ausführen benutzerdefinierter Aufgaben erstellen.|[Erstellen der Anwendung](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)|  
-  
-## <a name="building-from-the-ide"></a>Erstellen aus der IDE  
- Wenn Sie ein Projekt erstellen, werden dafür standardmäßige Buildkonfigurationen definiert, und ihm wird eine Projektmappenbuildkonfiguration zugewiesen, um Kontext für Builds bereitzustellen. Projektmappenkonfigurationen definieren, wie die Projekte im Projektmappen-Explorer erstellt und bereitgestellt werden. Bei Projektkonfigurationen handelt es sich um einen Satz von Projekteigenschaften, die für eine Plattform und einen Buildtyp eindeutig sind (beispielsweise die Win32-Version). Sie können diese Standardkonfigurationen bearbeiten, und Sie können eigene Konfigurationen erstellen. Weitere Informationen finden Sie unter [Verwalten von Projekt- und Projektmappeneigenschaften](managing-project-and-solution-properties.md).  
-  
- Aus der IDE können Sie die folgenden zusätzlichen Aufgaben ausführen:  
-  
--   [Ändern des Buildausgabeverzeichnisses](../ide/how-to-change-the-build-output-directory.md).  
-  
--   [Identifizieren von Projekten, die zum ordnungsgemäßen Erstellen von der Ausgabe eines anderen Projekt abhängig sind](../ide/how-to-create-and-remove-project-dependencies.md).  
-  
--   [Ändern der Informationsmenge, die im Buildprotokoll oder im Ausgabefenster für Builds enthalten ist](../ide/how-to-view-save-and-configure-build-log-files.md).  
-  
--   [Ausblenden bestimmter Compilerwarnungen für Visual C#, Visual C++ oder Visual Basic](../ide/how-to-suppress-compiler-warnings.md).  
-  
--   [Angeben benutzerdefinierter Aktionen für das Vor- und Nachkompilieren eines Builds](../ide/specifying-custom-build-events-in-visual-studio.md).  
-  
--   Verbessern der Buildleistung mithilfe von parallelen Builds. Weitere Informationen finden Sie unter [Paralleles Erstellen von mehreren Projekten](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) oder im Blogbeitrag [Tuning C++ build parallelism](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx) (Optimieren des parallelen Erstellens für C++).  
+
+# <a name="compiling-and-building-in-visual-studio"></a>Kompilieren und Erstellen in Visual Studio
+
+Durch das Ausführen eines Builds werden zu jedem beliebigen Zeitpunkt während eines Entwicklungszyklus Assemblys und ausführbare Anwendungen aus dem Quellcode erstellt. Grundsätzlich ist der Buildprozess bei vielen verschiedenen Projekttypen sehr ähnlich, unter anderem bei Windows, ASP.NET und mobilen Apps. Auch bei Programmiersprachen wie C#, Visual Basic, C++ und F# ist der Buildprozess sehr ähnlich. 
+
+Indem Sie Ihren Code häufig erstellen, können Sie Kompilierzeitfehler wie zum Beispiel falsche Syntax, falsch geschriebene Schlüsselwörter und Typenkonflikte früher identifizieren. Sie können auch Laufzeitfehler, z.B. Logik- und Semantikfehler, erkennen und beheben, indem Sie regelmäßig Debugversionen des Codes erstellen und ausführen.  
+
+Ein erfolgreicher Build ist im Wesentlichen eine Überprüfung, dass der Quellcode der Anwendung die richtige Syntax enthält und alle statischen Verweise auf Bibliotheken, Assemblys und andere Komponenten gelöst wurden. Hierdurch wird eine ausführbare Datei erzeugt, die auf ihre ordnungsgemäße Funktion geprüft werden kann. Dies kann sowohl in einer [Debugumgebung](../debugger/index.md) geschehen als auch über eine Vielzahl manueller und automatisierter Tests, die die [Codequalität verbessern](../test/improve-code-quality.md). Sobald die Anwendung vollständig getestet ist, können Sie eine Releaseversion zur Bereitstellung für Ihre Kunden kompilieren. Eine Einführung zu diesem Vorgang finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer Anwendung](../ide/walkthrough-building-an-application.md).  
+
+Innerhalb der Visual Studio-Produktfamilie gibt es drei Methoden, die Sie zum Erstellen einer Anwendung verwenden können: die Visual Studio-IDE, die MSBuild-Befehlszeilentools und Team Foundation Build in Visual Studio Team Services:
+ 
+| Erstellungsmethode | Vorteile | 
+| --- |--- | --- |  
+| IDE |- Direktes Erstellen von Builds und Testen in einem Debugger<br />- Ausführen von Multiprozessorbuilds für C++- und C#-Projekte<br />- Anpassen verschiedener Aspekte des Buildsystems |
+| MSBuild-Befehlszeile| - Erstellen von Projekten, ohne Visual Studio zu installieren<br />- Ausführen von Multiprozessorbuilds für alle Projekttypen<br />- Anpassen der meisten Bereiche des Buildsystems|
+| Team Foundation Build | - Automatisieren des Buildprozesses als Teil einer fortlaufenden Integration oder einer fortlaufenden Zustellpipeline<br />- Anwenden von automatisierten Tests mit jedem Build<br />- Verwenden der praktisch unbegrenzten cloudbasierten Ressourcen für Ihren Buildprozesse<br />- Anpassen des Buildworkflows und Erstellen von Buildaktivitäten zum Ausführen benutzerdefinierter Aufgaben|  
+
+Die Dokumentation in diesem Bereich geht näher auf den IDE-basierten Buildprozess ein. Weitere Informationen zu den anderen Methoden finden Sie unter [MSBuild](../msbuild/msbuild.md) und [Continuous integration and deployment (Fortlaufende Integration und Bereitstellung)](https://www.visualstudio.com/docs/build/overview).
+
+## <a name="overview-of-building-from-the-ide"></a>Überblick: Erstellen aus der IDE  
+
+Wenn Sie ein Projekt erstellen, erstellt Visual Studio Standardbuildkonfigurationen für das Projekt und die Projektmappe, die das Projekt enthält.  Diese Konfigurationen definieren, wie die Projektmappen und Projekte erstellt und bereitgestellt werden. Insbesondere die Projektkonfigurationen sind eindeutig für die jeweilige Zielplattform (z.B. Windows oder Linux) und den Buildtyp (z.B. Debug oder Release). Sie können diese Konfigurationen beliebig bearbeiten und nach Bedarf eigene Konfigurationen erstellen.
+
+Eine erste Einführung zum Erstellen von der IDE aus finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer Anwendung](walkthrough-building-an-application.md).  
+
+Unter [Erstellen und Bereinigen von Projekten und Projektmappen in Visual Studio](building-and-cleaning-projects-and-solutions-in-visual-studio.md) finden Sie Informationen zur Anpassung verschiedener Aspekte, die Sie an diesem Prozess vornehmen können. Diese Anpassungen beinhalten das [Ändern des Ausgabeverzeichnisses](how-to-change-the-build-output-directory.md), das [Angeben benutzerdefinierter Ereignisse](specifying-custom-build-events-in-visual-studio.md), das [Verwalten von Projektabhängigkeiten](how-to-create-and-remove-project-dependencies.md), das [Verwalten von Buildprotokolldateien](how-to-view-save-and-configure-build-log-files.md) und das [Unterdrücken von Compilerwarnungen](how-to-suppress-compiler-warnings.md).
+
+Eine Vielzahl weiterer Aufgaben finden Sie hier:
+- [Grundlagen der Buildkonfiguration](understanding-build-configurations.md)
+- [Grundlagen zu Buildplattformen](understanding-build-platforms.md)
+- [Verwalten von Projekt- und Projektmappeneigenschaften](managing-project-and-solution-properties.md)  
+- Geben Sie Buildereignisse in [C#](how-to-specify-build-events-csharp.md) und [Visual Basic](how-to-specify-build-events-visual-basic.md) an. 
+- [Festlegen von Buildoptionen](reference/options-dialog-box-projects-and-solutions-build-and-run.md)
+- [Build Multiple Projects in Parallel (Paralleles Erstellen mehrerer Projekte)](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)  
   
 ## <a name="see-also"></a>Siehe auch  
- [Exemplarische Vorgehensweise: Erstellen einer Anwendung](../ide/walkthrough-building-an-application.md)   
- [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md)   
- [Grundlagen zu Buildplattformen](../ide/understanding-build-platforms.md)   
- [Erstellen (Kompilieren) von Websiteprojekten](http://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)   
- [Gewusst wie: Erstellen und Entfernen von Projektabhängigkeiten](../ide/how-to-create-and-remove-project-dependencies.md)
+
+- [Erstellen von Websites](http://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)   
