@@ -19,9 +19,11 @@ caps.latest.revision: 13
 author: kempb
 ms.author: kempb
 manager: ghogen
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 1901f0dde22fb44ecf3d1b549505590125999700
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 65cb324c1a7ed91ad5209da7826a1899657a414f
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Hinzufügen von Visual Studio-Editor-Unterstützung für andere Sprachen
@@ -37,7 +39,7 @@ Erfahren Sie mehr dazu, wie der Visual Studio-Editor das Lesen von und Navigiere
 |||||||  
 |-|-|-|-|-|-|  
 |Bat|F#|Java|Markdown|Rust|Visual Basic|  
-|Clojure|Gehe zu|JavaDoc|Objective-C|ShaderLab|Visual C#|  
+|Clojure|Gehe zu|JavaDoc|Objective-C|ShaderLab|Visual C#|  
 |CMake|Groovy|JSON|Perl|ShellScript|Visual C++|  
 |CoffeeScript|HTML|LESS|Python|SQL|VBNet|  
 |CSS|INI|LUA|R|Swift|XML|  
@@ -59,7 +61,7 @@ Erfahren Sie mehr dazu, wie der Visual Studio-Editor das Lesen von und Navigiere
   
 -   Visual C++  
   
--   Visual C#  
+-   Visual C#  
   
  Alle diese Dateitypen verfügen über die zuvor beschriebenen Funktionen, auch wenn der Support für eine bestimmte Sprache noch nicht installiert wurde. Das Installieren der besonderen Unterstützung für einige Sprachen stellt möglicherweise weitergehende Unterstützung für die betreffende Sprache bereit, wie etwa IntelliSense oder andere erweiterte Sprachfunktionen, wie etwa Glühbirnen.  
   
@@ -86,8 +88,3 @@ Erfahren Sie mehr dazu, wie der Visual Studio-Editor das Lesen von und Navigiere
  [Visual Studio 2013 – Verbesserungen an Navigieren zu](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/)   
  [Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts](../ide/walkthrough-creating-a-code-snippet.md)   
  [Exemplarische Vorgehensweise: Anzeigen von Anweisungsvervollständigung](../extensibility/walkthrough-displaying-statement-completion.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

@@ -31,10 +31,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: fb24d1c3e48b1125e025b89fe25cfb362ced11be
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: ab506c0d3bdf9a03ee2212d6e4767d8443c604e5
+ms.contentlocale: de-de
+ms.lasthandoff: 05/24/2017
 
 ---
 # <a name="setting-language-specific-editor-options"></a>Festlegen von sprachspezifischen Editoroptionen
@@ -72,5 +73,5 @@ ms.lasthandoff: 02/22/2017
  [Anpassen des Editors](../../ide/customizing-the-editor.md)  
  Enthält Links zu Themen, in denen die zahlreichen Editorfeatures erläutert werden, für die Einstellungen festgelegt werden können.  
   
- [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+ [Personalisieren der Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md)  
  Enthält Links zu Themen, in denen das Anpassen von Einstellungen, Tastenbindungen und anderen Features der integrierten Entwicklungsumgebung (IDE) erläutert wird.

@@ -31,11 +31,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: b5b496e0de0a12c9f52c944ef9e768c82d9be783
-ms.openlocfilehash: 429d55b3d0050eb0743d4abf39c202ad1b8383b1
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: 90e19f6e693733162065754b441fb213fd0bd9f8
 ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio 2017
@@ -71,8 +71,8 @@ Die Befehlszeilenoptionen werden in Verbindung mit dem Setup-Bootstrapper, die k
 | `--installPath <dir>` | Das Installationsverzeichnis für die Instanz, für die der Befehl ausgeführt wird. Für den Befehl „install“ ist dies **optional** und das Verzeichnis, in dem die Instanz installiert wird. Für andere Befehle ist es **erforderlich** und das Verzeichnis der zuvor installierten Instanz. |
 | `--addProductLang <language-locale>` | **Optional**: Während einer Installation oder eines Änderungsvorgang, bestimmt dies die UI-Sprachpakete, die für das Produkt installiert werden sollen. Die Option kann mehrfach in der Befehlszeile erscheinen, um mehrere Sprachpakete hinzuzufügen. Wird diese Option nicht angegeben, verwendet die Installation das Gebietsschema des Computers. Weitere Informationen finden Sie im Abschnitt [Liste der Gebietsschemas](#list-of-language-locales) dieser Seite.|
 | `--removeProductLang <language-locale>` | **Optional**: Während einer Installation oder eines Änderungsvorgang, bestimmt dies die UI-Sprachpakete, die vom Produkt entfernt werden sollen. Die Option kann mehrfach in der Befehlszeile erscheinen, um mehrere Sprachpakete hinzuzufügen. Weitere Informationen finden Sie im Abschnitt [Liste der Gebietsschemas](#list-of-language-locales) dieser Seite.|
-| `--add <one or more workload or component IDs>` | **Optional**: Eine oder mehrere hinzuzufügende Arbeitsauslastungs- oder Komponenten-IDs. Die erforderlichen Komponenten des Artefakts werden installiert, die empfohlenen oder optionalen Komponenten jedoch nicht. Sie können mit `--includeRecommended` und/oder `--includeOptional` zusätzliche Komponenten global steuern. Für eine umfassendere Steuerung können Sie `;includeRecommended` oder `;includeOptional` an die ID anfügen (z. B. `--add Workload1;includeRecommended` oder `--add Workload2;includeRecommended;includeOptional`). Weitere Informationen finden Sie auf unserer Seite [Visual Studio 2017 workload and component IDs](workload-and-component-ids.md) (Arbeitsauslastungs- und Komponenten-IDs in Visual Studio 2017).|
-| `--remove <one or more workload or component IDs>` | **Optional**: Eine oder mehrere zu entfernende Arbeitsauslastungs- oder Komponenten-IDs. Weitere Informationen finden Sie auf unserer Seite [Visual Studio 2017 workload and component IDs](workload-and-component-ids.md) (Arbeitsauslastungs- und Komponenten-IDs in Visual Studio 2017).|
+| `--add <workload or component ID>` | **Optional**: Eine hinzuzufügende Arbeitsauslastung oder Komponenten-ID. Die erforderlichen Komponenten des Artefakts werden installiert, die empfohlenen oder optionalen Komponenten jedoch nicht. Sie können mit `--includeRecommended` und/oder `--includeOptional` zusätzliche Komponenten global steuern. Für eine umfassendere Steuerung können Sie `;includeRecommended` oder `;includeOptional` an die ID anfügen (z. B. `--add Workload1;includeRecommended` oder `--add Workload2;includeRecommended;includeOptional`). Weitere Informationen finden Sie auf unserer Seite [Visual Studio 2017 workload and component IDs](workload-and-component-ids.md) (Arbeitsauslastungs- und Komponenten-IDs in Visual Studio 2017). Sie können dies Option bei Bedarf wiederholen.|
+| `--remove <workload or component ID>` | **Optional**: Eine zu entfernende Arbeitsauslastung oder Komponenten-ID. Weitere Informationen finden Sie auf unserer Seite [Visual Studio 2017 workload and component IDs](workload-and-component-ids.md) (Arbeitsauslastungs- und Komponenten-IDs in Visual Studio 2017). Sie können dies Option bei Bedarf wiederholen.|
 | `--in <path>` | **Optional**: Der URI oder Pfad zu einer Antwortdatei.  |
 | `--all` | **Optional**: Gibt an, ob alle Arbeitsauslastungen und Komponenten für ein Produkt installiert werden sollen. |
 | `--allWorkloads` | **Optional**: Installiert alle Arbeitsauslastungen und deren erforderlichen Komponenten, aber keine empfohlenen oder optionalen Komponenten. |

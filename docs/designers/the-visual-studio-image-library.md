@@ -36,10 +36,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 9c25532605613b34ded15a4bd6a533e589b7fce2
-ms.openlocfilehash: 3add401b2d9590893ae1a90af7d5f1d9c9360b63
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: 2e7d4630739110dfb2c912b4f8538d6c73762f02
+ms.contentlocale: de-de
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="the-visual-studio-image-library"></a>Visual Studio Bildbibliothek
@@ -51,4 +52,4 @@ Die Visual Studio-Bildbibliothek enthält Anwendungsbilder, die in Microsoft Vis
   
 ## <a name="see-also"></a>Siehe auch  
  [Installieren von Visual Studio](../install/install-visual-studio.md)   
- [Bilder, Bitmaps und Metadateien](http://msdn.microsoft.com/Library/7152b45b-a55c-49bc-8c78-ae002a844f71)
+ [Bilder, Bitmaps und Metadateien](/dotnet/framework/winforms/advanced/images-bitmaps-and-metafiles)

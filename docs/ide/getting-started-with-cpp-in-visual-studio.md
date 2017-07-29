@@ -28,13 +28,15 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: c0966f42efc54452d0f7cd11e19c6f82f7686474
-ms.openlocfilehash: 079c15ffcc9b51fc1f4630051c561f9f8ff7fb87
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 65b94b58da1e06febb1c189ddff85f792fef1737
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Erste Schritte mit C++ in Visual Studio
-Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen Tools und Dialogfeldern vertraut, die Sie für die Entwicklung von Anwendungen in Visual Studio verwenden können. Sie erstellen eine einfache "Hello, World"-Anwendung und lernen dabei die Arbeiten in der integrierten Entwicklungsumgebung (IDE) kennen.  
+Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen Tools und Dialogfeldern vertraut, die Sie für die Entwicklung von Anwendungen in Visual Studio verwenden können. Sie erstellen eine einfache „Hello, World“-Anwendung und lernen dabei das Arbeiten in der integrierten Entwicklungsumgebung (IDE) kennen.  
   
  Dieses Thema enthält folgende Abschnitte:  
   
@@ -48,8 +50,8 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
   
  [Erstellen einer Releaseversion der App](../ide/getting-started-with-cpp-in-visual-studio.md#BKMK_BuildRelease)  
   
-##  <a name="a-namebkmkconfigurea-sign-in-to-visual-studio"></a><a name="BKMK_Configure"></a>Anmelden bei Visual Studio  
- Wenn Sie Visual Studio zum ersten Mal starten, erhalten Sie die Möglichkeit, sich mit einem Microsoft-Konto, z. B. Live oder Outlook, anzumelden. Durch die Anmeldung können Sie Ihre Einstellungen mit allen Geräten synchronisieren. Weitere Informationen finden Sie unter [Anmelden bei Visual Studio](../ide/signing-in-to-visual-studio.md)  
+##  <a name="BKMK_Configure"></a> Anmelden bei Visual Studio  
+ Wenn Sie Visual Studio zum ersten Mal starten, erhalten Sie die Möglichkeit, sich mit einem Microsoft-Konto, z. B. Live oder Outlook, anzumelden. Durch die Anmeldung können Sie Ihre Einstellungen mit allen Geräten synchronisieren. Weitere Informationen finden Sie unter [Signing in to Visual Studio](../ide/signing-in-to-visual-studio.md)  
   
  Abbildung 1: Visual Studio-IDE  
   
@@ -57,7 +59,7 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
   
  Wenn Sie Visual Studio geöffnet haben, können Sie die drei grundlegenden Teile der IDE sehen: Toolsfenster, Menüs und Symbolleisten und den Hauptfensterbereich. Mit **Schnellstart**werden Toolfenster auf der linken und rechten Seite des Anwendungsfensters und die Menüleiste und die Standardsymbolleiste oben angedockt. In der Mitte des Anwendungsfensters befindet sich die **Startseite**. Wenn Sie eine Projektmappe oder ein Projekt öffnen, werden Editoren und Designer in diesem Bereich angezeigt. Wenn Sie eine Anwendung entwickeln, verbringen Sie die meiste Zeit in diesem zentralen Bereich.  
   
-##  <a name="a-namebkmkcreateappa-create-a-simple-application"></a><a name="BKMK_CreateApp"></a>Erstellen einer einfachen Anwendung  
+##  <a name="BKMK_CreateApp"></a> Erstellen einer einfachen Anwendung  
  Wenn Sie eine App in Visual Studio erstellen, erstellen Sie zunächst ein Projekt und eine Projektmappe. Für dieses Beispiel erstellen Sie eine Windows-Konsolenanwendung.  
   
 #### <a name="to-create-a-console-app"></a>Erstellen einer Konsolen-App  
@@ -81,10 +83,10 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
   
  ![Dateien für die Projektmappe im Projektmappen-Explorer](../ide/media/c--ide_solutioncontents.png "C++IDE_SolutionContents")  
   
-##  <a name="a-namebkmkaddcodea-add-code-to-the-application"></a><a name="BKMK_AddCode"></a> Hinzufügen von Code zur Anwendung  
+##  <a name="BKMK_AddCode"></a> Hinzufügen von Code zur Anwendung  
  Als Nächstes fügen Sie Code hinzu, um das Wort "Hello" im Konsolenfenster anzuzeigen.  
   
-#### <a name="to-display-hello-in-the-console-window"></a>Anzeigen von "Hello" im Konsolenfenster  
+#### <a name="to-display-hello-in-the-console-window"></a>So zeigen Sie „Hello“ im Konsolenfenster an  
   
 1.  Geben Sie in der Datei "GreetingsConsoleApp.cpp" vor der Zeile `return 0;` eine Leerzeile und dann den folgenden Code ein:  
   
@@ -107,7 +109,7 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
     using namespace std;  
     ```  
   
-     Wahrscheinlich haben Sie bemerkt, dass während der Codeeingabe ein Feld mit Empfehlungen für die Zeichen angezeigt wird, die Sie eingegeben haben. Dieses Feld ist Teil von C++-IntelliSense, das Code-Eingabeaufforderungen bietet, darunter Auflistungen der Klassen- oder Schnittstellen-Member sowie der Parameterinformationen. Außerdem können Sie Codeausschnitte verwenden, wobei es sich um vordefinierte Codeblöcke handelt. Weitere Informationen finden Sie unter [Verwenden von IntelliSense](../ide/using-intellisense.md) und [Codeausschnitte](../ide/code-snippets.md).  
+     Wahrscheinlich haben Sie bemerkt, dass während der Codeeingabe ein Feld mit Empfehlungen für die Zeichen angezeigt wird, die Sie eingegeben haben. Dieses Feld ist Teil von C++-IntelliSense, das Code-Eingabeaufforderungen bietet, darunter Auflistungen der Klassen- oder Schnittstellen-Member sowie der Parameterinformationen. Außerdem können Sie Codeausschnitte verwenden, wobei es sich um vordefinierte Codeblöcke handelt. Weitere Informationen finden Sie unter [Using IntelliSense](../ide/using-intellisense.md) und [Code Snippets](../ide/code-snippets.md).  
   
      Die rote Wellenlinie unter `cout` wird ausgeblendet, wenn Sie den Fehler korrigieren.  
   
@@ -115,7 +117,7 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
   
      ![Code zum Beheben des cout-Fehlers](../ide/media/c--ide_coutfix.png "C++IDE_CoutFix")  
   
-##  <a name="a-namebkmkdebugtesta-debug-and-test-the-application"></a><a name="BKMK_DebugTest"></a>Debuggen und Testen der Anwendung  
+##  <a name="BKMK_DebugTest"></a>Debuggen und Testen der Anwendung  
  Sie können "GreetingsConsoleApp" debuggen, um festzustellen, ob das Wort "Hello" im Konsolenfenster angezeigt wird.  
   
 #### <a name="to-debug-the-application"></a>So debuggen Sie die Anwendung  
@@ -144,7 +146,7 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
   
  Weitere Informationen finden Sie unter [Konsolenprojekte](../debugger/debugging-preparation-console-projects.md).  
   
-##  <a name="a-namebkmkbuildreleasea-build-a-release-version-of-the-app"></a><a name="BKMK_BuildRelease"></a>Erstellen einer Releaseversion der App  
+##  <a name="BKMK_BuildRelease"></a> Erstellen einer Releaseversion der App  
  Nachdem Sie überprüft haben, dass alles funktioniert, können Sie einen Releasebuild der Anwendung vorbereiten.  
   
 #### <a name="to-clean-the-solution-files-and-build-a-release-version"></a>Bereinigen der Projektmappendateien und Erstellen einer Releaseversion  
@@ -169,8 +171,3 @@ Wenn Sie diese exemplarische Vorgehensweise durcharbeiten, werden Sie mit vielen
  [Produktivitätstipps für Visual Studio](../ide/productivity-tips-for-visual-studio.md)   
  [Visual Studio-Beispiele](../ide/visual-studio-samples.md)   
  [Erste Schritte mit der Entwicklung in Visual Studio](../ide/get-started-developing-with-visual-studio.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

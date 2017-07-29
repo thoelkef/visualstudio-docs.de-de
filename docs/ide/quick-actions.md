@@ -31,15 +31,15 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 2831d252fbc9601e62c372ac3df7704e1dc65f2a
-ms.openlocfilehash: e59204427c8d7d1706ca6c85261733efdcbc440e
+ms.sourcegitcommit: 8bf0b097be929b30627e0f1139c6e0b145933ab4
+ms.openlocfilehash: ec2ae70312c7cb5f26630246046cadc7c210e1c2
 ms.contentlocale: de-de
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 05/26/2017
 
 ---
 # <a name="quick-actions"></a>Schnelle Aktionen
 
-Mit [schnellen Aktionen](refactoring-code-generation-quick-actions.md#quick-actions) können Sie ganz leicht Code mit einer einzelnen Aktion umgestalten, generieren oder anderweitig ändern.  Während es viele schnelle Aktionen gibt, die entweder nur für C# oder Visual Basic gelten, gibt es auch einige, die sowohl für C#- als auch Visual Basic-Projekte gültig sind.  Diese können mithilfe des Glühbirnensymbols ![Kleines Glühbirnensymbol](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") oder durch das Drücken von **STRG + .** angewendet werden , wenn sich Ihr Cursor in der entsprechenden Codezeile befindet.
+Mit [schnellen Aktionen](refactoring-code-generation-quick-actions.md#quick-actions) können Sie ganz leicht Code mit einer einzelnen Aktion umgestalten, generieren oder anderweitig ändern.  Während es viele schnelle Aktionen gibt, die entweder nur für C# oder Visual Basic gelten, gibt es auch einige, die sowohl für C#- als auch Visual Basic-Projekte gültig sind.  Diese können mithilfe des Glühbirnensymbols ![Kleines Glühbirnensymbol](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") oder durch Drücken von **STRG + .** angewendet werden,  wenn der Cursor sich in der entsprechenden Codezeile befindet.
 
 Sie sehen eine Glühbirne, wenn eine rote Wellenlinie vorhanden ist und Visual Studio über eine Empfehlung verfügt, um das Problem zu beheben. Wenn beispielsweise ein Fehler durch eine rote Wellenlinie gekennzeichnet ist, wird eine Glühbirne angezeigt, wenn Behebungsmaßnahmen für diesen Fehler verfügbar sind. Für jede Sprache können Drittanbieter benutzerdefinierte Diagnosen und Empfehlungen bereitstellen, beispielsweise als Bestandteil eines SDKs. Anhand dieser Regeln leuchten Visual Studio-Glühbirnen dann auf.  
 
@@ -47,7 +47,7 @@ Sie sehen eine Glühbirne, wenn eine rote Wellenlinie vorhanden ist und Visual S
 
 1. In vielen Fällen werden Glühbirnen spontan angezeigt, wenn Sie mit dem Mauszeiger auf die Position eines Fehlers zeigen, oder am linken Rand des Editors, wenn Sie die Einfügemarke in eine Zeile verschieben, die einen Fehler enthält. Wenn eine rote Wellenlinie angezeigt wird, können Sie den Mauszeiger darüber bewegen, um die Glühbirne anzuzeigen. Sie können auch veranlassen, dass eine Glühbirne angezeigt wird, wenn Sie die Maus oder Tastatur verwenden, um zu einem beliebigen Punkt in der Zeile zu wechseln, wo das Problem auftritt.  
 
-2. Drücken Sie an einer beliebigen Stelle in einer Zeile **STRG + .** , um die Glühbirne aufzurufen und direkt zur Liste mit den potenziellen Fehlerbehebungen zu wechseln.  
+2. Drücken Sie **STRG + .** an einer beliebigen Stelle in einer Zeile, um die Glühbirne aufzurufen und direkt zur Liste mit den potenziellen Fehlerbehebungen zu wechseln.  
 
    ![Glühbirne mit Mauszeigerbewegung](../ide/media/vs2015_lightbulb_hover.png "VS2017_LightBulb_Hover")  
 
@@ -314,7 +314,7 @@ Debug.WriteLine("Hello")
 ```
 
 ### <a name="convert-to-interpolated-string"></a>Konvertieren in eine interpolierte Zeichenfolge
-[Interpolierte Zeichenfolgen](/dotnet/articles/csharp/language-reference/keywords/interpolated-strings) sind eine einfache Möglichkeit, Zeichenfolgen mit eingebetteten Variablen auszudrücken, ähnlich wie mit der **[String.Format](https://msdn.microsoft.com/library/system.string.format.aspx)**-Methode.  Diese schnelle Aktion erkennt Fälle, in denen Zeichenfolgen verkettet sind oder **String.Format** verwenden, und ändert die Verwendung in eine interpolierte Zeichenfolge.
+[Interpolierte Zeichenfolgen](/dotnet/csharp/language-reference/keywords/interpolated-strings) sind eine einfache Möglichkeit, Zeichenfolgen mit eingebetteten Variablen auszudrücken, ähnlich wie mit der **[String.Format](https://msdn.microsoft.com/library/system.string.format.aspx)**-Methode.  Diese schnelle Aktion erkennt Fälle, in denen Zeichenfolgen verkettet sind oder **String.Format** verwenden, und ändert die Verwendung in eine interpolierte Zeichenfolge.
 
 ```CSharp
 // Before

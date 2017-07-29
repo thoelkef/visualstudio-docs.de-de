@@ -27,16 +27,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 3f4740d442a7ef24803d6360cdcc480d9d6fca84
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5b67a4c254e2410302997dee5ec36a2243c6ed11
+ms.openlocfilehash: 29db26d6c885b297ff3b8c39776c9fe59ca3ea05
+ms.contentlocale: de-de
+ms.lasthandoff: 06/10/2017
 
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Hinzufügen von Referenzen mithilfe von NuGet im Vergleich zu einer SDK-Erweiterung
 Sie können ein Paket zum Verbrauch in Visual Studio-Projekten entweder mit der NuGet-Erweiterung für Visual Studio oder mit einem Software Development Kit (SDK) bereitstellen. In diesem Thema werden die Ähnlichkeiten und Unterschiede zwischen den beiden Vorgehensweisen beschrieben. So können Sie die für Sie geeignete Methode ermitteln.  
   
--   NuGet ist ein Open-Source-Paketverwaltungssystem, das den Prozess der Integration von Bibliotheken in eine Projektmappe vereinfacht. Weitere Informationen finden Sie im Abschnitt zur [NuGet-Übersicht](http://go.microsoft.com/fwlink/?LinkId=254877).  
+-   NuGet ist ein Open-Source-Paketverwaltungssystem, das den Prozess der Integration von Bibliotheken in eine Projektmappe vereinfacht. Weitere Informationen finden Sie in der [NuGet-Dokumentation](http://docs.microsoft.com/nuget).  
   
 -   Ein SDK ist eine Auflistung von Dateien, die von Visual Studio als einzelnes Referenzelement behandelt werden. Das Dialogfeld **Verweis-Manager** führt alle SDKs auf, die für das Projekt relevant sind, das beim Anzeigen des Dialogfelds geöffnet ist. Wenn Sie einem Projekt ein SDK hinzufügen, können Sie auf den Inhalt dieses SDK über IntelliSense, **Toolbox**, Designer, den **Objektkatalog**, MSBuild, Bereitstellung, Debuggen und Verpacken zugreifen. Weitere Informationen zu SDKs finden Sie unter [Erstellen eines Software Development Kits](../extensibility/creating-a-software-development-kit.md).  
   
@@ -55,7 +56,7 @@ Sie können ein Paket zum Verbrauch in Visual Studio-Projekten entweder mit der 
 |Dateien und Links werden dem Dialogfeld **Verweis-Manager** automatisch hinzugefügt (Hilfelinks usw. werden automatisch aufgefüllt).|Y|Das Dialogfeld **Verweis-Manager** listet SDKs zusammen mit Hilfelinks und der Liste von SDK-Abhängigkeiten automatisch auf.|N|NuGet stellt ein eigenes Dialogfeld **NuGet-Pakete verwalten** bereit.|  
 |Der Mechanismus unterstützt mehrere Architekturen.|J|SDKs können mit mehreren Konfigurationen ausgeliefert werden. MSBuild verwendet die entsprechenden Dateien für jede Projektkonfiguration.|N||  
 |Der Mechanismus unterstützt mehrere Konfigurationen.|J|SDKs können mit mehreren Konfigurationen ausgeliefert werden. Abhängig von der Projektarchitektur verwendet MSBuild die entsprechenden Dateien für jede Projektarchitektur.|N||  
-|Mit dem Mechanismus kann angegeben werden, dass Dateien nicht kopiert werden sollen.|J|Je nachdem, ob Dateien im Verzeichnis \redist oder \designtime abgelegt werden, können Sie steuern, welche Dateien in das Paket der Anwendung, die die Dateien nutzt, kopiert werden sollen.|N|Sie deklarieren, welche Dateien im das Paketmanifest kopiert werden sollen.|  
+|Mit dem Mechanismus kann angegeben werden, dass Dateien „nicht kopiert“ werden sollen.|J|Je nachdem, ob Dateien im Verzeichnis \redist oder \designtime abgelegt werden, können Sie steuern, welche Dateien in das Paket der Anwendung, die die Dateien nutzt, kopiert werden sollen.|N|Sie deklarieren, welche Dateien im das Paketmanifest kopiert werden sollen.|  
 |Der Inhalt wird in lokalisierten Dateien angezeigt.|J|Lokalisierte XML-Dokumenten werden automatisch in die SDKs integriert, um die Entwurfszeitumgebung zu verbessern.|N||  
 |MSBuild unterstützt den gleichzeitigen Verbrauch mehrerer Versionen eines SDKs.|J|Das SDK unterstützt den gleichzeitigen Verbrauch mehrerer Versionen.|N|Dies ist keine Verweiserstellung. Ihr Projekt darf jeweils nicht mehr als eine Version von NuGet-Dateien enthalten.|  
 |Der Mechanismus unterstützt die Angabe der anwendbaren Zielframeworks, der Visual Studio-Versionen und der Projekttypen.|Y|Das Dialogfeld **Verweis-Manager** und die **Toolbox** zeigen nur die SDKs an, die für ein Projekt gelten, sodass Benutzer die entsprechenden SDKs leichter auswählen können.|Y (partiell)|Pivot ist das Zielframework. Es erfolgt kein Filtern auf der Benutzeroberfläche. Bei der Installation kann ein Fehler zurückgegeben werden.|  
@@ -74,7 +75,7 @@ Sie können ein Paket zum Verbrauch in Visual Studio-Projekten entweder mit der 
 |Der Mechanismus unterstützt stabile und Vorabveröffentlichungspaketversionen.|J|Das SDK unterstützt das Hinzufügen von Verweisen auf mehrere Versionen.|J||  
 |Die Mechanismus unterstützt das automatische Update von installierten Paketen.|J|Wenn es als VSIX oder Bestandteil der automatischen Visual Studio-Updates ausgeliefert wird, bietet das SDK automatische Benachrichtigungen.|J||  
 |Der Mechanismus enthält eine eigenständige EXE-Datei zum Erstellen und Nutzen von Paketen.|J|Das SDK enthält MSBuild.exe.|J||  
-|Pakete können in die Versionskontrolle eingecheckt werden.|J|Sie können keine Elemente außerhalb des Knotens "Dokumente" einchecken, d. h., dass die Erweiterungs-SDKs möglicherweise nicht eingecheckt werden. Das Erweiterungs-SDK kann sehr groß sein.|J||  
+|Pakete können in die Versionskontrolle eingecheckt werden.|J|Sie können keine Elemente außerhalb des Knotens „Dokumente“ einchecken, d.h., dass die Erweiterungs-SDKs möglicherweise nicht eingecheckt werden. Das Erweiterungs-SDK kann sehr groß sein.|J||  
 |Sie können eine PowerShell-Schnittstelle verwenden, um Pakete zu erstellen und zu nutzen.|J (Verbrauch), N (Erstellung)|Keine Werkzeugausstattung zum Erstellen eines SDK. Durch den Verbrauch wird MSBuild in der Befehlszeile ausgeführt.|J||  
 |Sie können ein Symbolpaket für die Debugunterstützung verwenden.|J|Wenn Sie PDB-Dateien im SDK ablegen, werden die Dateien automatisch ausgewählt.|J||  
 |Der Mechanismus unterstützt automatische Paketmanagerupdates.|Nicht zutreffend|Das SDK wird mit MSBuild überarbeitet.|J||  

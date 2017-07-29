@@ -28,9 +28,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 09ce424d13fd6fa2e6e511370f509dd54a7c1a1e
 ms.openlocfilehash: 9af9f76e799c39533785f9230be867ace4dbee6a
+ms.contentlocale: de-de
+ms.lasthandoff: 05/19/2017
 
 ---
 # <a name="step-6-name-your-button-controls"></a>Schritt 6: Benennen der Schaltflächen-Steuerelemente
@@ -51,7 +53,7 @@ Es gibt nur ein PictureBox-Steuerelement im Formular. Als Sie es hinzugefügt ha
 Eigenschaftenfenster mit closeButton-Name  
   
     > [!NOTE]
-    >  Wenn Sie versuchen, den Namen der Schaltfläche in **closeButton**zu ändern, also mit einem Leerzeichen zwischen den beiden Wörtern, zeigt die IDE eine Fehlermeldung an: „Der Eigenschaftswert ist ungültig“. Leerzeichen (und einige andere Zeichen) sind in Steuerelementnamen nicht zulässig.  
+    >  If you try changing the name of your button to **closeButton**, with a space between the words close and Button, the IDE displays an error message: "Property value is not valid." Leerzeichen (und einige andere Zeichen) sind in Steuerelementnamen nicht zulässig.  
   
 2.  Benennen Sie die anderen drei Schaltflächen in **backgroundButton**, **clearButton**und **showButton**um. Sie können die Namen überprüfen, indem Sie im Fenster **Eigenschaften** die Steuerelementauswahl-Dropdownliste auswählen. Die neuen Schaltflächennamen werden angezeigt.  
   
@@ -62,8 +64,7 @@ Form1.cs-Registerkarte mit Visual C#-Code
   
 4.  Konzentrieren Sie sich auf diesen Teil des Codes. (Wählen Sie bei Verwendung von Visual Basic die Registerkarte **VB** unten aus, um die Visual Basic-Version des Codes anzuzeigen.)  
   
-     [!code-vb[VbExpressTutorial1Step6#1](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_1.vb)]
-     [!code-cs[VbExpressTutorial1Step6#1](../ide/codesnippet/CSharp/step-6-name-your-button-controls_1.cs)]  
+     [!code-vb[VbExpressTutorial1Step6#1](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_1.vb)]  [!code-cs[VbExpressTutorial1Step6#1](../ide/codesnippet/CSharp/step-6-name-your-button-controls_1.cs)]  
   
      Sie betrachten Code mit dem Namen `showButton_Click()`. Die IDE hat ihn dem Code des Formulars hinzugefügt, als Sie die Codedatei für die Schaltfläche **showButton** geöffnet haben. Wenn Sie zur Entwurfszeit die Codedatei für ein Steuerelement in einem Formular öffnen, wird Code für das Steuerelement generiert, wenn er nicht bereits vorhanden ist. Dieser Code, als *Methode*bezeichnet, wird ausgeführt, wenn Sie das Programm ausführen und das Steuerelement auswählen, in diesem Fall die Schaltfläche **Bild anzeigen** .  
   
@@ -79,8 +80,7 @@ Form1.cs-Registerkarte mit Visual C#-Code
   
      Im Folgenden sehen Sie den neuen Code, der im Code-Editor angezeigt wird.  
   
-     [!code-vb[VbExpressTutorial1Step6#2](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_2.vb)]
-     [!code-cs[VbExpressTutorial1Step6#2](../ide/codesnippet/CSharp/step-6-name-your-button-controls_2.cs)]  
+     [!code-vb[VbExpressTutorial1Step6#2](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_2.vb)]  [!code-cs[VbExpressTutorial1Step6#2](../ide/codesnippet/CSharp/step-6-name-your-button-controls_2.cs)]  
   
      Die fünf Methoden, die Sie hinzugefügt haben, werden als *Ereignishandler*bezeichnet, da das Programm sie immer dann aufruft, wenn ein Ereignis eintritt (wenn z. B. ein Benutzer eine Schaltfläche auswählt oder ein Kontrollkästchen aktiviert).  
   
@@ -95,8 +95,3 @@ Form1.cs-Registerkarte mit Visual C#-Code
 -   Um mit dem nächsten Tutorialschritt fortzufahren, klicken Sie auf [Schritt 7: Hinzufügen von Dialogfeldkomponenten zum Formular](../ide/step-7-add-dialog-components-to-your-form.md).  
   
 -   Um zum vorherigen Schritt des Tutorials zurückzukehren, klicken Sie auf [Schritt 5: Hinzufügen von Steuerelementen zum Formular](../ide/step-5-add-controls-to-your-form.md).
-
-
-<!--HONumber=Feb17_HO4-->
-
-

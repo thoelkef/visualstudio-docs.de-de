@@ -3,15 +3,14 @@ layout: LandingPage
 title: "Profilerstellung für Ihre Apps mit Visual Studio"
 description: "Erfahren Sie, wie Sie Visual Studio 2017 für Profilerstellung für die Leistung Ihrer Anwendungen, Dienste und Tools in der Sprache Ihrer Wahl verwenden können."
 ms.technology: vs-ide-debug
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
-ms.openlocfilehash: 6b54253dadb80dd6881ba366b5bb466f4eae7706
+ms.translationtype: HT
+ms.sourcegitcommit: 5c28e68b89f6583dc35a91b275693c11e0259dfd
+ms.openlocfilehash: e90fc5b4997acd7a9228e8132eb00f6f32ed2d3d
 ms.contentlocale: de-de
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/13/2017
 
 ---
-# Profilerstellung in Visual Studio
-<a id="profiling-in-visual-studio" class="xliff"></a>
+# <a name="profiling-in-visual-studio"></a>Profilerstellung in Visual Studio
 
 Profilerstellungs- und Diagnosetools helfen bei der Diagnose von Speicher- und CPU-Auslastung und anderen Problemen auf Anwendungsebene. Mit diesen Tools können Sie Daten (z.B. Variablenwerte, Funktionsaufrufe und Ereignisse) über einen Zeitraum sammeln, in dem Sie Ihre Anwendung im Debugger ausführen. Sie können den Status Ihrer Anwendung an verschiedenen Punkten der Codeausführung anzeigen. 
 
@@ -53,7 +52,7 @@ Profilerstellungs- und Diagnosetools helfen bei der Diagnose von Speicher- und C
         </a>
     </li>
     <li>
-        <a href="https://www.youtube.com/watch?v=e-3txyAFzmw">
+        <a href="https://docs.microsoft.com/en-us/visualstudio/profiling/beginners-guide-to-performance-profiling.md#video">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -63,7 +62,7 @@ Profilerstellungs- und Diagnosetools helfen bei der Diagnose von Speicher- und C
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Sehen Sie sich ein Video zu den Diagnosetools an (VS 2015)</h3>
+                        <h3>Sehen Sie sich ein Video zu den Diagnosetools an</h3>
                     </div>
                 </div>
             </div>

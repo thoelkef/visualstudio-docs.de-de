@@ -1,70 +1,87 @@
 ---
-title: "Optionen, Text-Editor, Alle Sprachen, Registerkarten | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.ToolsOptionsPages.Text_Editor.ResJSON.Tabs"
-  - "VS.ToolsOptionsPages.Text_Editor.JavaScript.Tabs"
-  - "VS.ToolsOptionsPages.Text_Editor.All_Languages.Tabs"
-helpviewer_keywords: 
-  - "Einzüge, Code-Editor"
-  - "Code-Editor, Standardverhalten"
-  - "Registerkarten, Festlegen im Code-Editor"
-  - "Alle Sprachen (Text-Editor im Dialogfeld Optionen)"
-  - "Editoren, Code-Editor"
-  - "Code-Editor, Einzug"
-  - "Code-Editor, Registerkarten"
+title: Optionen, Text-Editor, Alle Sprachen, Tabstopps | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VS.ToolsOptionsPages.Text_Editor.ResJSON.Tabs
+- VS.ToolsOptionsPages.Text_Editor.JavaScript.Tabs
+- VS.ToolsOptionsPages.Text_Editor.All_Languages.Tabs
+helpviewer_keywords:
+- indents, Code Editor
+- Code Editor, default behavior
+- tabs, setting in Code Editor
+- All Languages Text Editor Options dialog box
+- editors, Code Editor
+- Code Editor, indenting
+- Code Editor, tabs
 ms.assetid: 7e208e1d-5e3a-4bf7-a27b-4417e3e049c7
 caps.latest.revision: 17
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 17
----
-# Optionen, Text-Editor, Alle Sprachen, Registerkarten
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 872d13ccc28f71e1bdff76e54e1c8d5baf949f27
+ms.contentlocale: de-de
+ms.lasthandoff: 05/24/2017
 
-In diesem Dialogfeld können Sie das Standardverhalten des Code\-Editors ändern.  Diese Einstellungen betreffen auch andere Editoren, die auf dem Code\-Editor basieren, z. B. die Quellansicht des HTML\-Designers.  Klicken Sie im Menü **Extras** auf **Optionen**, um diese Optionen anzuzeigen.  Erweitern Sie im Ordner **Text\-Editor** den Unterordner **Alle Sprachen**, und wählen Sie dann **Tabstopps** aus.  
+---
+# <a name="options-text-editor-all-languages-tabs"></a>Optionen, Text-Editor, Alle Sprachen, Tabstopps
+Mit diesem Dialogfeld können Sie das Standardverhalten des Code-Editors ändern. Diese Einstellungen gelten auch für andere Editoren, die auf dem Code-Editor basieren, z.B. die Quellansicht des HTML-Designers. Wählen Sie zum Anzeigen dieser Optionen unter **Tools** den Menüpunkt **Optionen** aus. Erweitern Sie innerhalb des Ordners **Text-Editor** den Unterordner **Alle Sprachen**, und wählen Sie dann **Tabstopps** aus.  
   
 > [!CAUTION]
->  Auf dieser Seite werden Standardoptionen für alle Entwicklungssprachen festgelegt.  Beachten Sie, dass durch das Zurücksetzen einer Option in diesem Dialogfeld die Optionen unter Tabstopps unabhängig von den dort aktivierten Optionen für alle Programmiersprachen zurückgesetzt werden.  Um Text\-Editor\-Optionen für nur eine Sprache zu ändern, erweitern Sie den Unterordner für diese Sprache und wählen die zugehörigen Optionsseiten aus.  
+>  Auf dieser Seite werden die Standardoptionen für alle Entwicklungssprachen festgelegt. Denken Sie daran, dass beim Zurücksetzen einer Option in diesem Dialogfeld die Tabstopp-Optionen in allen Sprachen auf die hier ausgewählten Optionen zurückgesetzt werden. Um die Optionen in „Text-Editor“ für nur eine Sprache zu ändern, erweitern Sie den Unterordner für diese Sprache, und wählen Sie seine Optionsseiten aus.  
   
- Wenn auf den Optionsseiten für Tabstopps unterschiedliche Einstellungen für bestimmte Programmiersprachen ausgewählt sind, wird für abweichende Optionen unter **Einzug** die Meldung "Die Einzugseinstellungen für einzelne Textformate stehen miteinander im Konflikt" und für abweichende Optionen unter **Tabstopps** die Meldung "Die Tabstoppeinstellungen für einzelne Textformate stehen miteinander im Konflikt" eingeblendet.  Beispielsweise wird eine solche Erinnerung angezeigt, wenn für Visual Basic die Option **Intelligenter Einzug** und für Visual C\+\+ die Option **Blockeinzug** ausgewählt wurde.  
+ Wenn auf den Optionsseiten von „Tabstopps“ für bestimmte Programmiersprachen andere Einstellungen ausgewählt sind, wird die Meldung „Die Einzugseinstellungen für einzelne Textformate stehen miteinander im Konflikt“ für abweichende Optionen unter **Einzug** angezeigt. Die Meldung „Die Tabstoppeinstellungen für einzelne Textformate stehen miteinander im Konflikt“ wird für unterschiedliche **Tabstopps**-Optionen angezeigt. Diese Erinnerung wird beispielsweise angezeigt, wenn die Option **Intelligenter Einzug** für Visual Basic und **Block indenting** (Blockeinzug) für Visual C++ ausgewählt ist.  
   
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen.  Wählen Sie im Menü **Extras** die Option **Einstellungen importieren und exportieren** aus, um die Einstellungen zu ändern.  Weitere Informationen finden Sie unter [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/de-de/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).  
   
-## Einzug  
- None  
- Wenn diese Option aktiviert ist, werden neue Zeilen nicht eingezogen.  Die Einfügemarke wird in der ersten Spalte einer neuen Zeile platziert.  
+## <a name="indenting"></a>Einzug  
+ Keine  
+ Wenn diese Option aktiviert ist, werden neue Zeilen nicht eingezogen. Die Einfügemarke wird in der ersten Spalte einer neuen Zeile platziert.  
   
  Block  
- Wenn diese Option aktiviert ist, werden neue Zeilen automatisch eingezogen.  Die Einfügemarke wird an demselben Ausgangspunkt wie die vorangehende Zeile platziert.  
+ Wenn diese Option aktiviert ist, werden neue Zeilen automatisch eingezogen. Die Einfügemarke wird am selben Ausgangspunkt wie die vorangehende Zeile platziert.  
   
  Intelligent  
- Wenn diese Option aktiviert ist, werden neue Zeilen in Anpassung an den Codekontext mittels anderer Einstellungen für die Codeformatierung sowie gemäß IntelliSense\-Konventionen für die Entwicklungssprache positioniert.  Diese Option ist nicht für alle Entwicklungssprachen verfügbar.  
+ Wenn diese Option aktiviert ist, werden neue Zeilen mithilfe anderer Codeformateinstellungen und IntelliSense-Konventionen für Ihre Entwicklungssprache entsprechend dem Codekontext positioniert. Diese Option ist nicht für alle Programmiersprachen verfügbar.  
   
- Beispielsweise können Zeilen, die zwischen einer öffnenden geschweiften Klammer \( { \) und einer schließenden geschweiften Klammer \( } \) eingeschlossen sind, automatisch um einen zusätzlichen Tabstopp von der Position der ausgerichteten Klammern aus eingezogen werden.  
+ Beispielsweise können Zeilen, die zwischen einer öffnenden geschweiften Klammer ( { ) und einer schließenden geschweiften Klammer ( } ) eingeschlossen sind, automatisch um einen zusätzlichen Tabstopp von der Position der ausgerichteten Klammern aus eingezogen werden.  
   
-## Tabstopps  
+## <a name="tabs"></a>Registerkarten  
  Tabulatorgröße  
- Legt den Abstand zwischen Tabstopps in Leerzeichen fest.  Vorgegeben sind vier Leerzeichen.  
+ Legt den Abstand zwischen Tabstopps in Leerzeichen fest. Der Standardwert beträgt vier Leerzeichen.  
   
  Einzugsgröße  
- Legt die Größe eines automatischen Einzugs in Leerzeichen fest.  Vorgegeben sind vier Leerzeichen.  Es werden Tabstoppzeichen, Leerzeichen oder beides eingefügt, um die angegebene Größe auszufüllen.  
+ Legt die Größe eines automatischen Einzugs in Leerzeichen fest. Der Standardwert beträgt vier Leerzeichen. Es werden Tabstoppzeichen, Leerzeichen oder beides eingefügt, um die angegebene Größe auszufüllen.  
   
  Leerzeichen einfügen  
- Wenn diese Option aktiviert ist, werden bei Einzugsvorgängen nur Leerzeichen und keine Tabstoppzeichen eingefügt.  Wenn beispielsweise **Einzugsgröße** auf 5 festgelegt wird, werden jedes Mal fünf Leerzeichen eingefügt, sobald Sie die TAB\-TASTE drücken oder auf der Symbolleiste **Format** auf die Schaltfläche **Einzug vergrößern** klicken.  
+ Wenn diese Option aktiviert ist, werden bei Einzugsvorgängen nur Leerzeichen und keine Tabstoppzeichen eingefügt. Wenn beispielsweise die **Indent size** (Größe des Einzugs) auf 5 festgelegt wird, werden jedes Mal fünf Leerzeichen eingefügt, wenn Sie die TAB-TASTE drücken oder auf der Symbolleiste **Format** auf die Schaltfläche **Einzug vergrößern** klicken.  
   
- Tabulatoren beibehalten  
- Wenn diese Option aktiviert ist, werden bei Einzugsvorgängen so viele Tabstoppzeichen wie möglich eingefügt.  Jedes Tabulatorzeichen füllt die in **Tabulatorgröße** angegebene Anzahl von Leerzeichen auf.  Wenn **Einzugsgröße** kein ganzzahliges Vielfaches von **Tabulatorgröße** ist, werden Leerzeichen hinzugefügt, um den Unterschied auszugleichen.  
+ Tabstopps beibehalten  
+ Wenn diese Option aktiviert ist, werden bei Einzugsvorgängen so viele Tabstoppzeichen wie möglich eingefügt. Jedes Tabstoppzeichen füllt die in **Tabstoppgröße** angegebene Anzahl von Leerzeichen auf. Wenn **Indent size** kein ganzzahliges Vielfaches von **Tabstoppgröße** ist, werden Leerzeichen hinzugefügt, um den Unterschied auszugleichen.  
   
-## Siehe auch  
- [Optionen, Text\-Editor, Alle Sprachen](../../ide/reference/options-text-editor-all-languages.md)   
- [Allgemein, Umgebung, Dialogfeld "Optionen"](../../ide/reference/general-environment-options-dialog-box.md)
+## <a name="see-also"></a>Siehe auch  
+ [Optionen, Text-Editor, Alle Sprachen](../../ide/reference/options-text-editor-all-languages.md)   
+ [Allgemein, Umgebung, Optionen (Dialogfeld)](../../ide/reference/general-environment-options-dialog-box.md)

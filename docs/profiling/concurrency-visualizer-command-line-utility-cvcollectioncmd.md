@@ -31,10 +31,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: da79533a7a40b6e1b79c66f023beba2c1162bd08
+ms.sourcegitcommit: c559290c8e88c8b4e37feabc7014188fad15434d
+ms.openlocfilehash: f219ae7937ea3810b58faa34f6320a627ede99ae
 ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Befehlszeilenhilfsprogramm für die Parallelitätsschnellansicht (CVCollectionCmd)
@@ -60,7 +60,7 @@ Sie können das Befehlszeilenprogramm Concurrency Visualizer (CVCollectionCmd.ex
   
 |Option|Beschreibung|Parameter|Rückgabewert|  
 |------------|-----------------|----------------|-------------------|  
-|Abfrage|Gibt zurück, ob sich die Auflistung starten lässt.|Keine|0, wenn die Auflistung startbereit ist.<br /><br /> 1, wenn die Auflistung bereits läuft.<br /><br /> 2, wenn die Auflistung nicht läuft, aber eine oder mehr der erforderlichen [ETW](http://msdn.microsoft.com/Library/ac99a063-e2d2-40cc-b659-d23c2f783f92)-Sitzungen bereit aktiviert ist.|  
+|Abfrage|Gibt zurück, ob sich die Auflistung starten lässt.|Keine|0, wenn die Auflistung startbereit ist.<br /><br /> 1, wenn die Auflistung bereits läuft.<br /><br /> 2, wenn die Auflistung nicht läuft, aber eine oder mehr der erforderlichen [ETW](/dotnet/framework/wcf/samples/etw-tracing)-Sitzungen bereit aktiviert ist.|  
 |Starten|Führt den festgelegten Prozess unter Concurrency Visualizer aus.|Der Pfad der ausführbaren Datei.|0, wenn das Ausführen erfolgreich war.<br /><br /> 1, wenn das Ausführen fehlgeschlagen ist, weil die Zielanwendung nicht gestartet werden konnte.<br /><br /> 13, wenn das Ausführen fehlgeschlagen ist, weil CVCollectionCmd keine ausreichenden Berechtigungen für das Schreiben in die festgelegte Ausgabeverzeichnis besitzt.|  
 |Anfügen|Beginnt mit dem Erfassen einer systemweiten Ablaufverfolgung; wird ansonsten an einen Prozess angefügt, sofern ein solcher festgelegt wurde.|Keine|0, wenn Anfügen erfolgreich war.<br /><br /> 1, wenn das Anfügen fehlgeschlagen ist, weil der festgelegte Prozess ungültig oder mehrdeutig ist.<br /><br /> 13, wenn das Anfügen fehlgeschlagen ist, weil CVCollectionCmd nicht ausreichende Berechtigungen für das Schreiben in das festgelegte Ausgabeverzeichnis besitzt.|  
 |Trennen|Auflistung wird angehalten.|Keine|0, wenn Trennen erfolgreich war.<br /><br /> 1, wenn das Trennen fehlgeschlagen ist, weil die Auflistung aktuell nicht ausgeführt wird.<br /><br /> 2, wenn das Trennen fehlgeschlagen ist, weil die Auflistung nicht angehalten werden konnte.|  
@@ -170,3 +170,4 @@ Sie können das Befehlszeilenprogramm Concurrency Visualizer (CVCollectionCmd.ex
 </LocalConfig>  
   
 ```
+

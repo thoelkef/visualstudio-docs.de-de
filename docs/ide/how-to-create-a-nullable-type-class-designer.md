@@ -30,10 +30,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 5b55bd1c7b6be5c8fabafded8cd3a658ec9602d8
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: 001e8d8c1a6371d76b1a52826da16d471f07c1ba
+ms.contentlocale: de-de
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Gewusst wie: Erstellen eines Typs, der Nullwerte zulässt (Klassen-Designer)
@@ -41,7 +42,7 @@ Bestimmte Werttypen verfügen nicht immer über einen definierten Wert oder ben�
   
  Ein *Nullable-Typ* ist ein Werttyp, den Sie erweitern, sodass der normale Wertebereich für diesen Typ als auch ein NULL-Wert benötigt werden. Ein Nullable von `Int32`, auch bezeichnet als Nullable\<Int32>, kann beispielsweise einem Wert im Bereich von -2147483648 bis 2147483647 oder einem NULL-Wert zugewiesen werden. Einem Nullable\<bool> können die Werte `True`, `False`, oder NULL (überhaupt kein Wert) zugewiesen werden.  
   
- Nullable-Typen sind Instanzen der <xref:System.Nullable%601>-Struktur. Jede Instanz eines Nullable-Typs hat zwei öffentliche schreibgeschützte Eigenschaften `HasValue` und `Value`:  
+ Auf NULL festlegbare Typen sind Instanzen der <xref:System.Nullable%601>-Struktur. Jede Instanz eines Nullable-Typs hat zwei öffentliche schreibgeschützte Eigenschaften `HasValue` und `Value`:  
   
 -   `HasValue` ist vom Typ `bool` und gibt an, ob die Variable einen definierten Wert enthält. `True` bedeutet, dass die Variable einen nicht-NULL-Wert enthält. Sie können mithilfe einer Anweisung wie `if (x.HasValue)` oder `if (y != null)` auf einen definierten Wert testen.  
   
@@ -87,5 +88,5 @@ Bestimmte Werttypen verfügen nicht immer über einen definierten Wert oder ben�
  <xref:System.Nullable%601>   
  [Typen, die NULL-Werte zulassen](/dotnet/csharp/programming-guide/nullable-types/index)   
  [Verwenden von auf NULL festlegbaren Typen](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types)   
- [Vorgehensweise: Identifizieren eines Typs, der NULL-Werte zulässt](http://msdn.microsoft.com/Library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)   
+ [Vorgehensweise: Identifizieren eines Typs, der NULL-Werte zulässt](/dotnet/csharp/programming-guide/nullable-types/how-to-identify-a-nullable-type)   
  [Auf NULL festlegbare Werttypen](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)

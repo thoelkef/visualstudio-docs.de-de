@@ -33,10 +33,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 47c39bd711b69efdb863d71f11e3e472054a3ce3
-ms.openlocfilehash: dc52353b476d38b7c069aa4acd95ceaa260717c4
-ms.lasthandoff: 04/06/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: f8d907587deb8e14e777d9c69f07da6d819143e5
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
 ---
 # <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Ändern von Visual Studio 2017 durch Hinzufügen oder Entfernen von Arbeitsauslastungen und Komponenten
@@ -49,7 +50,7 @@ Gehen Sie folgendermaßen vor:
 
 1.  Suchen Sie den Visual Studio-Installer auf Ihrem Computer.  
 
-     Auf einem Computer mit Windows 10 Anniversary Update klicken Sie beispielsweise auf **Start** und blättern dann zum Buchstaben **V**, wo das Installationsprogramm als **Visual Studio-Installer** angezeigt wird.  
+     Auf einem Computer mit Windows 10 Anniversary Update klicken Sie beispielsweise auf **Start** und scrollen dann zum Buchstaben **V**, wo das Installationsprogramm als **Visual Studio-Installer** angezeigt wird.  
 
      ![Visual Studio-Installer](media/vs2017-locate-the-visual-studio-installer.PNG "Suchen des Microsoft Visual Studio-Installers")
 

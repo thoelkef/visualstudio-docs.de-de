@@ -43,14 +43,15 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 841c635c00aea5e78396f27098a1e64fbe29a421
-ms.openlocfilehash: b2a09ceddbfcbfb8632f777f55229d186f6e5ae9
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 8ab795965dc205cd783f469d134d64fb2b5dacf6
+ms.contentlocale: de-de
+ms.lasthandoff: 05/24/2017
 
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Anpassen von Fensterlayouts in Visual Studio
-In Visual Studio können Sie Position, Größe und Verhalten von Fenstern anpassen, um Fensterlayouts zu erstellen, die für unterschiedliche Entwicklungsworkflows am besten geeignet sind. Wenn Sie das Layout anpassen, wird dies in der IDE gespeichert. Wenn Sie z. B. die Andockposition des **Projektmappen-Explorers** ändern und Visual Studio dann schließen, ist der **Projektmappen-Explorer** nach dem nächsten Start an derselben Position angedockt, selbst wenn Sie an einem anderen Computer arbeiten. Sie können ein benutzerdefiniertes Layout auch benennen und speichern und dann mit einem einzelnen Befehl zwischen den Layouts wechseln. Beispielsweise können Sie ein Layout für die Bearbeitung und ein anderes für das Debuggen erstellen und zwischen diesen mithilfe des Menübefehls **Fenster &#124; Fensterlayout anwenden**wechseln.  
+In Visual Studio können Sie Position, Größe und Verhalten von Fenstern anpassen, um Fensterlayouts zu erstellen, die für unterschiedliche Entwicklungsworkflows am besten geeignet sind. Wenn Sie das Layout anpassen, wird dies in der IDE gespeichert. Wenn Sie z. B. die Andockposition des **Projektmappen-Explorers** ändern und Visual Studio dann schließen, ist der **Projektmappen-Explorer** nach dem nächsten Start an derselben Position angedockt, selbst wenn Sie an einem anderen Computer arbeiten. Sie können ein benutzerdefiniertes Layout auch benennen und speichern und dann mit einem einzelnen Befehl zwischen den Layouts wechseln. Beispielsweise können Sie ein Layout für die Bearbeitung und ein anderes für das Debuggen erstellen und zwischen diesen mithilfe des Menübefehls **Fenster &#124; Fensterlayout anwenden** wechseln.  
 
 ## <a name="kinds-of-windows"></a>Fensterarten  
 
@@ -72,7 +73,7 @@ In Visual Studio können Sie Position, Größe und Verhalten von Fenstern anpass
  Symbolleisten können durch Ziehen oder mithilfe des Dialogfelds **Anpassen** angeordnet werden. Weitere Informationen zum Positionieren und Anpassen von Symbolleisten finden Sie unter [Gewusst wie: Anpassen von Menüs und Symbolleisten](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).  
 
 ## <a name="arrange-and-dock-windows"></a>Anordnen und Andocken von Fenstern  
- Dokumentfenster und Toolfenster können *angedockt*werden, sodass sie eine Position und Größe innerhalb des IDE-Fensterrahmens haben, oder als unverankerte Fenster der IDE angezeigt werden. Toolfenster können an einer beliebigen Stelle innerhalb des IDE-Rahmens angedockt werden; manche Toolfenster können im Registerkartenformat angedockt werden. Dokumentfenster können innerhalb des Editorrahmens angedockt und an ihre aktuelle Position in der Aktivierreihenfolge angeheftet werden. Sie können mehrere Fenster per Rafting zu außerhalb der IDE andocken. Toolfenster können ausgeblendet oder minimiert werden.  
+ Dokumentfenster und Toolfenster können *angedockt*werden, sodass sie eine Position und Größe innerhalb des IDE-Fensterrahmens haben, oder als unverankerte Fenster der IDE angezeigt werden. Toolfenster können an einer beliebigen Stelle innerhalb des IDE-Rahmens angedockt werden; manche Toolfenster können im Registerkartenformat angedockt werden. Dokumentfenster können innerhalb des Editorrahmens angedockt und an ihre aktuelle Position in der Aktivierreihenfolge angeheftet werden. Sie können mehrere Fenster per Rafting außerhalb der IDE andocken. Toolfenster können ausgeblendet oder minimiert werden.  
 
  Fenster können auf die folgenden Weisen angeordnet werden:  
 
@@ -93,7 +94,7 @@ In Visual Studio können Sie Position, Größe und Verhalten von Fenstern anpass
  Tool- und Dokumentfenster können durch Ziehen, mit Befehlen im Menü **Fenster** und durch Klicken mit der rechten Maustaste auf die Titelleiste des anzuordnenden Fensters angeordnet werden.  
 
 > [!NOTE]
->  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
 
 ### <a name="dock-windows"></a>Andocken von Fenstern  
  Beim Klicken und Ziehen der Titelleiste eines Toolfensters oder der Registerkarte im Dokumentfenster wird ein Diamant-Führungssymbol angezeigt. Während des Ziehvorgangs wird, wenn sich der Mauszeiger über einem der Pfeile im Diamanten befindet, ein schattierter Bereich angezeigt, der anzeigt, wo das Fenster angedockt wird, wenn Sie die Maustaste loslassen.  
@@ -122,13 +123,13 @@ In Visual Studio können Sie Position, Größe und Verhalten von Fenstern anpass
  ![Automatisches Ausblenden](../ide/media/vs2015_auto_hide.png "vs2017_auto_hide")  
 
 > [!NOTE]
->  Um festzulegen, ob die Funktion "Automatisch im Hintergrund" in Toolfenstern einzeln oder als angedockte Gruppen ausgeführt wird, wählen Sie im Dialogfeld **Optionen** die Option **Schaltfläche "Automatisch ausblenden" bezieht sich nur auf aktives Toolfenster** aus. Weitere Informationen finden Sie unter [Allgemein, Umgebung, Dialogfeld „Optionen“](../ide/reference/general-environment-options-dialog-box.md).  
+>  Um festzulegen, ob die Funktion "Automatisch im Hintergrund" in Toolfenstern einzeln oder als angedockte Gruppen ausgeführt wird, wählen Sie im Dialogfeld **Optionen** die Option **Schaltfläche "Automatisch ausblenden" bezieht sich nur auf aktives Toolfenster** aus. Weitere Informationen finden Sie unter [General, Environment, Options Dialog Box](../ide/reference/general-environment-options-dialog-box.md).  
 
 > [!NOTE]
 >  Toolfenster, für die die Option "Automatisch im Hintergrund" aktiviert ist, werden möglicherweise kurz eingeblendet, sobald das Fenster den Fokus erhält. Zum Ausblenden des Fensters wählen Sie ein Element außerhalb des aktuellen Fensters aus. Wenn das Fenster den Fokus verliert, wird es ausgeblendet.  
 
 ### <a name="specifying-a-second-monitor"></a>Angeben eines zweiten Monitors  
- Wenn Sie einen zweiten Bildschirm besitzen und dieser vom Betriebssystem unterstützt wird, können Sie angeben, auf welchem Bildschirm ein Fenster angezeigt werden soll. Sie können mehrere Fenster sogar in "Flössen" auf anderen Bildschirmen gruppieren.  
+ Wenn Sie einen zweiten Bildschirm besitzen und dieser vom Betriebssystem unterstützt wird, können Sie angeben, auf welchem Bildschirm ein Fenster angezeigt werden soll. Sie können mehrere Fenster sogar in „Flössen“ auf anderen Bildschirmen gruppieren.  
 
 > [!TIP]
 >  Sie können auch mehrere Instanzen von **Projektmappen-Explorer** erstellen und auf einen anderen Bildschirm verschieben. Klicken Sie mit der rechten Maustaste in das Fenster und wählen Sie **Neue Projektmappen-Explorer-Ansicht**aus. Sie können alle Fenster wieder zum ursprüngliche Bildschirm zurückkehren lassen, indem Sie beim Auswählen der STRG-TASTE doppelklicken.  
@@ -157,7 +158,7 @@ In Visual Studio können Sie Position, Größe und Verhalten von Fenstern anpass
 
 4.  Drücken Sie "F5", um Visual Studio in den Debugmodus zu versetzen. Passen Sie die Position der Debugfenster "Auto", "Aufrufliste" und "Ausgabe" an Ihre Anforderungen an. Das Layout, das Sie erstellen, ist sowohl für den Bearbeitungsmodus als auch den Debugmous geeignet.  
 
-5.  Wenn Sie die Layouts sowohl im Debugmodus als auch im Bearbeitungsmodus Ihren Vorstellungen angepasst haben, wählen Sie im Hauptmenü **Fenster > Fensterlayout speichern** aus. Nennen Sie dieses Layout "Designer".  
+5.  Wenn Sie die Layouts sowohl im Debugmodus als auch im Bearbeitungsmodus Ihren Vorstellungen angepasst haben, wählen Sie im Hauptmenü **Fenster > Fensterlayout speichern** aus. Nennen Sie dieses Layout „Designer“.  
 
      Beachten Sie, dass das neue Layout der nächsten Tastenkombination aus der reservierten Liste mit Strg+Alt+1...0 zugewiesen wird.  
 
@@ -167,7 +168,7 @@ In Visual Studio können Sie Position, Größe und Verhalten von Fenstern anpass
 
 2.  Rechtsklicken Sie in der Projektmappe auf das neue Projekt, und wählen Sie **View in Object Explorer**. Dadurch wird das Fenster **SQL Server-Objekt-Explorer** angezeigt, mit dem Sie auf Tabellen, Ansichten und andere Objekte in der Datenbank zugreifen können. Dieses Fenster kann entweder schwebend sein oder angedockt bleiben. Passen Sie die anderen Toolfenster wie gewünscht an. Um das Beispiel realistischer zu gestalten, können Sie eine tatsächliche Datenbank hinzufügen. Für diese exemplarische Vorgehensweise ist das jedoch nicht notwendig.  
 
-3.  Wenn das Layout Ihren Vorstellungen entspricht, wählen Sie im Hauptmenü **Fenster > Fensterlayout speichern** aus. Nennen Sie dieses Layout "DB Project". (Für dieses Projekt ist kein Layout für den Debugmodus erforderlich.)  
+3.  Wenn das Layout Ihren Vorstellungen entspricht, wählen Sie im Hauptmenü **Fenster > Fensterlayout speichern** aus. Nennen Sie dieses Layout „DB Project“. (Für dieses Projekt ist kein Layout für den Debugmodus erforderlich.)  
 
 ##### <a name="switch-between-the-layouts"></a>Wechseln zwischen Layouts  
 

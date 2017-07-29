@@ -29,16 +29,16 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 8ef43b82ba8a9ca138872a152e8811174e20d1fe
+ms.sourcegitcommit: 795bf9746c4ae48ac04141a05ba56462ecb90482
+ms.openlocfilehash: 74e69f0d5d04192eb801f5e56e1a4ee6ca2cc57a
 ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 06/23/2017
 
 ---
 # <a name="analyze-cpu-usage"></a>Analysieren der CPU-Auslastung
 Wenn Sie Leistungsprobleme in Ihrer App untersuchen müssen, ist ein guter Ausgangspunkt die Untersuchung der CPU-Nutzung. Das Tool **CPU-Auslastung** zeigt Ihnen, wo die CPU Zeit für die Ausführung von Visual C++-, Visual C#/Visual Basic und JavaScript-Code verbringt. Ab Visual Studio 2015 Update 1 können Sie eine Aufteilung nach Funktion der CPU-Auslastung anzeigen, ohne den Debugger zu verlassen. Sie können die CPU-Profilerstellung während des Debuggens ein- und ausschalten und die Ergebnisse anzeigen, wenn die Ausführung angehalten wird, z. B. an einem Haltepunkt.  
   
-Zum Ausführen und Verwalten Ihrer Diagnosesitzung stehen Ihnen mehrere Optionen zur Verfügung. Sie können z. B. das Tool **CPU-Auslastung** auf lokalen oder Remotecomputern oder in einem Simulator oder Emulator ausführen. Sie können die Leistung eines geöffneten Projekts in Visual Studio analysieren, eine Verbindung mit einer ausgeführten App herstellen oder eine App starten, die aus dem Windows Store installiert wurde. Weitere Informationen finden Sie unter [Run Profiling Tools with or without the Debugger (Ausführen von Profilerstellungstools mit und ohne Debugger)](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Eine exemplarische Vorgehensweise, die die Leistung von Windows Store-Apps analysiert, finden Sie unter [Analysieren der CPU-Auslastung in Store-Apps](https://msdn.microsoft.com/en-us/library/windows/apps/dn641982.aspx). 
+Zum Ausführen und Verwalten Ihrer Diagnosesitzung stehen Ihnen mehrere Optionen zur Verfügung. Sie können z. B. das Tool **CPU-Auslastung** auf lokalen oder Remotecomputern oder in einem Simulator oder Emulator ausführen. Sie können die Leistung eines geöffneten Projekts in Visual Studio analysieren, eine Verbindung mit einer ausgeführten App herstellen oder eine App starten, die aus dem Windows Store installiert wurde. Weitere Informationen finden Sie unter [Run Profiling Tools with or without the Debugger (Ausführen von Profilerstellungstools mit und ohne Debugger)](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Eine exemplarische Vorgehensweise, die die Leistung von Windows Store-Apps analysiert, finden Sie unter [Analysieren der CPU-Auslastung in Store-Apps](analyze-cpu-usage-in-a-windows-universal-app.md). 
 
 Hier erfahren Sie, wie Sie die CPU-Auslastung mithilfe von Releasebuilds erfassen und analysieren. Informationen zur Analyse der CPU-Auslastung während des Debuggens finden Sie unter [Beginners Guide to Performance Profiling (Einführung in die Leistungsprofilerstellung)](../profiling/beginners-guide-to-performance-profiling.md). 
   

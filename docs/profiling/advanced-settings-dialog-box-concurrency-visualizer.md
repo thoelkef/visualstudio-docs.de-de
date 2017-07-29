@@ -31,10 +31,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 89694c49fdd115064d1ebe9f5dfe910b77548a76
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: ae3359dc390dc5486d7de93a4b745f44fe7c0ae6
 ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Erweiterte Einstellungen (Dialogfeld) (Parallelitätsschnellansicht)
@@ -61,7 +61,7 @@ Mithilfe des Dialogfelds **Erweiterte Einstellungen** in der Parallelitätsschne
  Standardmäßig werden CLR-Ereignisse nur erfasst, wenn ein verwalteter Prozess geprofilet wird, da sie normalerweise für native Prozesse nicht erforderlich sind.  In einigen Fällen (wenn z.B. ein nativer Prozess die CLR hostet) müssen Sie möglicherweise CLR-Ereignisse für einen nativen Prozess erfassen.  Wenn dies der Fall ist, aktivieren Sie das Kontrollkästchen **Für systemeigene Prozesse auflisten**.  
   
 ### <a name="disable-rundown-events"></a>Deaktivieren von Rundown-Ereignissen  
- Die CLR generiert Ereignisse von zwei Anbietern: Runtime und Rundown.  Wenn Sie CLR-Runtime-Ereignisse erfassen möchten, aber das Erfassen von Rundown-Ereignissen vermeiden möchten, aktivieren Sie das Kontrollkästchen **Rundown-Ereignisse deaktivieren**.  Dies reduziert die Größe der Ablaufverfolgungsdatei, die von der Erfassung generiert wird, aber einige Stapel können möglicherweise nicht aufgelöst werden. Weitere Informationen finden Sie unter [CLR ETW Providers](http://msdn.microsoft.com/Library/0beafad4-b2c8-47f4-b342-83411d57a51f) (CLR-ETW-Anbieter).  
+ Die CLR generiert Ereignisse von zwei Anbietern: Runtime und Rundown.  Wenn Sie CLR-Runtime-Ereignisse erfassen möchten, aber das Erfassen von Rundown-Ereignissen vermeiden möchten, aktivieren Sie das Kontrollkästchen **Rundown-Ereignisse deaktivieren**.  Dies reduziert die Größe der Ablaufverfolgungsdatei, die von der Erfassung generiert wird, aber einige Stapel können möglicherweise nicht aufgelöst werden. Weitere Informationen finden Sie unter [CLR ETW Providers](/dotnet/framework/performance/clr-etw-providers) (CLR-ETW-Anbieter).  
   
 ### <a name="sample-events"></a>Samplingereignisse  
  Sie können Samplingereignisse verwenden, um Aufruflisten zu erfassen, die der Threadausführung zugeordnet sind. Diese Ereignisse werden ungefähr einmal pro Millisekunde für Threads erfasst, die im aktuellen Prozess ausgeführt werden. Wenn Sie die Erfassung von Samplingereignissen deaktivieren, wird die Größe der erfassten Ablaufverfolgung reduziert, aber Sie können keine Aufruflisten anzeigen, die der Threadausführung zugeordnet sind.  

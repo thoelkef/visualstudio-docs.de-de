@@ -27,10 +27,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 4f237be3ffdfe2bca52e885822a9fbfbbf97ba6a
-ms.openlocfilehash: 738e8c25509253872274a49303b2b02a8f7ba1a6
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: dc4bcdcc11e357979641268ae77a8e39f8408f7a
+ms.contentlocale: de-de
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="walkthrough-building-an-application"></a>Exemplarische Vorgehensweise: Erstellen einer Anwendung
@@ -51,7 +52,7 @@ Indem Sie diese exemplarische Vorgehensweise abschließen, werden Sie mit einige
  [Erstellen eines Releasebuilds](../ide/walkthrough-building-an-application.md#BKMK_releasebuild)  
   
 ##  <a name="BKMK_installapp"></a> Installieren der Beispielanwendung  
- Verwenden Sie das Dialogfeld **Erweiterungen und Updates**, um das Beispiel [Introduction to Building WPF Applications (Einführung in das Erstellen von WPF-Anwendungen)](http://code.msdn.microsoft.com/Introduction-to-Building-b8d16419?SRC=VSIDE) im Beispielkatalog auf der Microsoft-Website zu suchen und zu installieren. Der Beispielkatalog bietet eine Vielzahl von Beispielsprojekten und -code, die bzw. den Sie beim Erstellen und Entwickeln von Anwendungen herunterladen und überprüfen können.  
+ Verwenden Sie das Dialogfeld **Erweiterungen und Updates**, um das Beispiel [Introduction to Building WPF Applications](http://code.msdn.microsoft.com/Introduction-to-Building-b8d16419?SRC=VSIDE) (Einführung in das Erstellen von WPF-Anwendungen) im Beispielkatalog auf der Microsoft-Website zu suchen und zu installieren. Der Beispielkatalog bietet eine Vielzahl von Beispielsprojekten und -code, die bzw. den Sie beim Erstellen und Entwickeln von Anwendungen herunterladen und überprüfen können.  
   
 #### <a name="to-install-the-sample-application"></a>So Installieren Sie die Beispielanwendung  
   
@@ -243,7 +244,7 @@ Indem Sie diese exemplarische Vorgehensweise abschließen, werden Sie mit einige
   
      ![Befehl „Projektmappe erstellen“ im Menü „Erstellen“](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")  
   
-#### <a name="to-specify-a-release-build-for-visual-c"></a>So geben Sie einen Releasebuild für Visual C an# #
+#### <a name="to-specify-a-release-build-for-visual-c"></a>So geben Sie einen Releasebuild für Visual C# an #
   
 1.  Öffnen Sie den **Projekt-Designer**.  
   
@@ -271,7 +272,7 @@ Indem Sie diese exemplarische Vorgehensweise abschließen, werden Sie mit einige
  Herzlichen Glückwunsch: Sie haben diese exemplarische Vorgehensweise erfolgreich abgeschlossen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Exemplarische Vorgehensweise: Erstellen eines Projekts (C++)](http://msdn.microsoft.com/Library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)   
+ [Exemplarische Vorgehensweise: Erstellen eines Projekts (C++)](/cpp/ide/walkthrough-building-a-project-cpp)   
  [ASP.NET Web Application Project Precompilation Overview (Übersicht über die Vorkompilierung von ASP.NET-Webanwendungsprojekten)](http://msdn.microsoft.com/en-us/b940abbd-178d-4570-b441-52914fa7b887)   
  [Exemplarische Vorgehensweise: Verwenden von MSBuild](../msbuild/walkthrough-using-msbuild.md)
 

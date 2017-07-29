@@ -1,75 +1,92 @@
 ---
-title: "Optionen, Text-Editor, C#, IntelliSense | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.ToolsOptionsPages.Text_Editor.CSharp.Intellisense"
-  - "VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Intellisense"
-helpviewer_keywords: 
-  - "IntelliSense [J#], Optionen"
-  - "Unterstreichungen, wellenförmige"
-  - "IntelliSense [C#], Optionen"
-  - "IntelliSense [c#], wellenförmige Unterstreichungen"
-  - "Wellenförmige Unterstreichungen"
-  - "Text-Editor-Optionen (Dialogfeld), IntelliSense"
+title: Optionen, Text-Editor, C#, IntelliSense | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VS.ToolsOptionsPages.Text_Editor.CSharp.Intellisense
+- VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Intellisense
+helpviewer_keywords:
+- IntelliSense [J#], options
+- underlines, wavy
+- IntelliSense [C#], options
+- IntelliSense [C#], wavy underlines
+- wavy underlines
+- Text Editor Options dialog box, IntelliSense
 ms.assetid: 3466dedb-e5f4-424c-8dd8-e4941b2f4fc2
 caps.latest.revision: 25
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 25
----
-# Optionen, Text-Editor, C#, IntelliSense
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: b34b280b3558003c5c3ad92515d773bc7d45fdda
+ms.contentlocale: de-de
+ms.lasthandoff: 05/24/2017
 
-Verwenden Sie die Eigenschaftenseite **IntelliSense**, um Einstellungen zu ändern, die das Verhalten von IntelliSense für Visual C\# beeinflussen.  Sie greifen auf die Eigenschaftenseite **IntelliSense** zu, indem Sie im Menü **Extras** auf **Optionen** und dann im Ordner **Text\-Editor** auf **C\#** und schließlich auf **IntelliSense** klicken.  
+---
+# <a name="options-text-editor-c-intellisense"></a>Optionen, Text-Editor, C#, IntelliSense
+Verwenden Sie die Eigenschaftenseite von **IntelliSense**, um Einstellungen zu ändern, die das Verhalten von IntelliSense für Visual C# beeinflussen. Sie rufen die Eigenschaftenseite von **IntelliSense** durch Klicken auf **Optionen** im Menü **Extras** auf. Klicken Sie danach im Ordner **Text-Editor** auf **C#** und anschließend auf **IntelliSense**.  
   
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen.  Wählen Sie im Menü **Extras** die Option **Einstellungen importieren und exportieren** aus, um die Einstellungen zu ändern.  Weitere Informationen finden Sie unter [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/de-de/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).  
   
- Die Eigenschaftenseite **IntelliSense** enthält die folgenden Eigenschaften:  
+ Die Eigenschaftenseite von **IntelliSense** enthält folgende Eigenschaften:  
   
-## Vervollständigungslisten  
+## <a name="completion-lists"></a>Vervollständigungslisten  
  **Vervollständigungsliste nach Eingabe des ersten Zeichens anzeigen**  
- Bei Auswahl dieser Option zeigt IntelliSense die Vervollständigungsliste automatisch an, wenn Sie mit der Eingabe beginnen.  Wenn diese Option nicht aktiviert ist, kann die IntelliSense\-Vervollständigung weiterhin über das Menü **IntelliSense** oder durch Drücken von STRG\+LEERTASTE aktiviert werden.  
+ Wenn diese Option aktiviert ist, zeigt IntelliSense automatisch die Vervollständigungsliste an, wenn Sie mit der Eingabe beginnen. Wenn diese Option nicht aktiviert ist, ist die IntelliSense-Vervollständigung trotzdem über das Menü **IntelliSense** oder durch Drücken von STR+LEERTASTE verfügbar.  
   
  **Schlüsselwörter in Vervollständigungslisten platzieren**  
- Bei Auswahl dieser Option fügt IntelliSense C\#\-Schlüsselwörter \(z. B. [Klasse](/dotnet/csharp/language-reference/keywords/class)\) in die Vervollständigungsliste ein.  
+ Wenn diese Option aktiviert ist, fügt IntelliSense C#-Schlüsselwörter zur Vervollständigungsliste hinzu, z.B. [class](/dotnet/csharp/language-reference/keywords/class).  
   
  **Codeausschnitte in Vervollständigungslisten platzieren**  
- Bei Auswahl dieser Option fügt IntelliSense Aliase für C\#\-Codeausschnitte in die Vervollständigungsliste ein.  Wenn der Alias für den Codeausschnitt mit einem Schlüsselwort übereinstimmt \(z. B. [Klasse](/dotnet/csharp/language-reference/keywords/class)\), wird das Schlüsselwort durch die Verknüpfung ersetzt.  Weitere Informationen finden Sie unter [Visual C\#\-Codeausschnitte](../../ide/visual-csharp-code-snippets.md).  
+ Wenn diese Option aktiviert ist, fügt IntelliSense Aliase für C#-Codeausschnitte zur Vervollständigungsliste hinzu. Im Fall, dass das Codausschnitt-Alias mit dem Schlüsselwort, z.B. [class](/dotnet/csharp/language-reference/keywords/class) übereinstimmt, wird das Schlüsselwort durch die Verknüpfung ersetzt. Weitere Informationen finden Sie unter [Visual C#-Codeausschnitte](../../ide/visual-csharp-code-snippets.md).  
   
-## Auswahl in Vervollständigungslisten  
+## <a name="selection-in-completion-lists"></a>Auswahl in Vervollständigungslisten  
  **Commit bei Eingabe der folgenden Zeichen:**  
- Gibt alle Zeichen an, nach deren Eingabe die automatische IntelliSense\-Vervollständigung für das ausgewählte Element in der Vervollständigungsliste ausgeführt wird.  
+ Gibt alle Zeichen an, die nach der Eingabe die automatische Vervollständigung von IntelliSense für das ausgewählte Element in der Vervollständigungsliste ausführen.  
   
  **Commit beim Drücken der Leertaste**  
- Gibt an, dass das Drücken der Leertaste als Aktion gilt, durch die die automatische IntelliSense\-Vervollständigung für das ausgewählte Element in der Vervollständigungsliste ausgeführt wird.  
+ Gibt an, dass durch Drücken der LEERTASTE die automatische Vervollständigung von IntelliSense für das ausgewählte Element in der Vervollständigungsliste ausgeführt werden soll.  
   
- **Bei Eingabe neue Zeile nach jedem ganzen Wort hinzufügen**  
- Gibt an, dass nach vollständiger Eingabe eines Eintrags in der Vervollständigungsliste und anschließendem Drücken der EINGABETASTE automatisch eine neue Zeile erstellt und der Cursor in die neue Zeile gesetzt wird.  
+ **Mit Eingabe neue Zeile nach jedem ganzen Wort**  
+ Gibt an, dass nach Eingabe aller Zeichen für einen Eintrag in der Vervollständigungsliste und Drücken der EINGABETASTE automatisch eine neue Zeile erstellt wird und der Cursor zur neuen Zeile springt.  
   
- Wenn Sie z. B. `else` eingegeben und anschließend die EINGABETASTE drücken, wird im Editor Folgendes angezeigt:  
+ Wenn Sie beispielsweise `else` eingeben und anschließend die EINGABETASTE drücken, erscheint folgendes im Editor:  
   
  `else`  
   
- `|` \(Cursorposition\)  
+ `|` (Cursorplatzierung)  
   
- Wenn Sie jedoch lediglich `el` eingegeben und anschließend die EINGABETASTE drücken, wird im Editor Folgendes angezeigt:  
+ Wenn Sie allerdings nur `el` eingeben und anschließend die EINGABETASTE drücken, erscheint folgendes im Editor:  
   
- `else|` \(Cursorposition\)  
+ `else|` (Cursorplatzierung)  
   
-## IntelliSense\-Memberauswahl  
- **Wählt den zuletzt verwendeten Member vorab aus.**  
- Wenn diese Option ausgewählt ist, eine IntelliSense Vorauswahl unter die Membern, die Sie vor kurzem in der Pop\-Up Feld Member auflisten für automatische Vervollständigung von Objektnamen während der aktuellen Sitzung in der integrierten Entwicklungsumgebung \(IDE\) ausgewählt haben.  Der Verlauf zuletzt verwendeter Member wird zwischen den einzelnen IDE\-Sitzungen gelöscht.  Weitere Informationen finden Sie unter [IntelliSense für die zuletzt verwendeten Member](../../misc/intellisense-for-most-recently-used-members.md).  
+## <a name="intellisense-member-selection"></a>IntelliSense-Memberauswahl  
+ **Pre-selects most recently used member** (Vorauswahl der zuletzt verwendeten Member)  
+ Wenn diese Option aktiviert ist, trifft IntelliSense in Ihrer aktuellen Sitzung in der integrierten Entwicklungsumgebung (IDE) eine Vorauswahl der Member, die Sie kürzlich im Popupfeld „Member auflisten“ zur automatischen Vervollständigung des Objektnamen ausgewählt haben. Der Verlauf der zuletzt verwendeten Member wird nach jeder Sitzung in der Entwicklungsumgebung (IDE) gelöscht. Weitere Informationen finden Sie unter [IntelliSense für die zuletzt verwendeten Member](../../ide/visual-csharp-intellisense.md#most-recently-used-members).  
   
-## Siehe auch  
- [Allgemein, Umgebung, Dialogfeld "Optionen"](../../ide/reference/general-environment-options-dialog-box.md)   
- [XML\-Dokumentationskommentare](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)   
+## <a name="see-also"></a>Siehe auch  
+ [Allgemein, Umgebung, Dialogfeld „Optionen“](../../ide/reference/general-environment-options-dialog-box.md)   
+ [XML-Dokumentationskommentare](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)   
  [Verwenden von IntelliSense](../../ide/using-intellisense.md)

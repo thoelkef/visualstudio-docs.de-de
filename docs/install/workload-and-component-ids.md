@@ -32,25 +32,28 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 293d694cfff4c375b342d8322483c84fbbeb446c
-ms.openlocfilehash: d6ffa77642cb03bbea777e5caf23913d1ba3386e
-ms.lasthandoff: 04/07/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: c559290c8e88c8b4e37feabc7014188fad15434d
+ms.openlocfilehash: 3fc2e9c086d6cdd71577fccd33652cfc14a3ee6e
+ms.contentlocale: de-de
+ms.lasthandoff: 06/08/2017
 
 ---
 
 # <a name="visual-studio-2017-workload-and-component-ids"></a>Arbeitsauslastungs- und Komponenten-IDs von Visual Studio 2017
 Auf den folgenden Seiten sind die Arbeitsauslastungs- und Komponenten-IDs aufgelistet, die Sie benötigen, um Visual Studio über die Befehlszeile zu installieren oder um sie als Abhängigkeit in einem VSIX-Manifest anzugeben.
 
-* [Visual Studio Enterprise 2017](workload-component-id-vs-enterprise.md)
-* [Visual Studio Professional 2017 ](workload-component-id-vs-professional.md)
-* [Visual Studio Community 2017](workload-component-id-vs-community.md)
-* [Visual Studio Team Explorer 2017](workload-component-id-vs-team-explorer.md)
-* [Visual Studio Build Tools 2017](workload-component-id-vs-build-tools.md)
-* [Visual Studio Test Agent 2017](workload-component-id-vs-test-agent.md)
-* [Visual Studio Test Controller 2017 ](workload-component-id-vs-test-controller.md)
-* [Visual Studio Test Professional 2017](workload-component-id-vs-test-professional.md)
-* [Visual Studio Feedback Client 2017](workload-component-id-vs-feedback-client.md)
+| **Edition** | **ID** | **Beschreibung** |
+| ----------- | ------ | --------------- |
+| [Visual&nbsp;Studio Enterprise&nbsp;2017](workload-component-id-vs-enterprise.md) | Microsoft.VisualStudio.Product.Enterprise | Microsoft DevOps-Lösung für die Produktivität und Koordination über Teams jeglicher Größe hinweg. |
+| [Visual&nbsp;Studio Professional&nbsp;2017](workload-component-id-vs-professional.md) | Microsoft.VisualStudio.Product.Professional | Professionelle Entwicklertools und -dienste für kleine Teams. |
+| [Visual&nbsp;Studio Community&nbsp;2017](workload-component-id-vs-community.md) | Microsoft.VisualStudio.Product.Community | Kostenlose, mit allen Funktionen ausgestattete IDE für Studenten, Open Source und einzelne Entwickler |
+| [Visual&nbsp;Studio Team&nbsp;Explorer&nbsp;2017](workload-component-id-vs-team-explorer.md) | Microsoft.VisualStudio.Product.TeamExplorer | Interaktion mit Team Foundation Server und Visual Studio Team Services ohne ein Visual Studio-Toolset für Entwickler |
+| [Visual&nbsp;Studio Build&nbsp;Tools&nbsp;2017](workload-component-id-vs-build-tools.md) | Microsoft.VisualStudio.Product.BuildTools | Die Visual Studio-Buildtools ermöglichen das Erstellen nativer und verwalteter auf MSBuild basierenden Anwendungen, ohne dass die Visual Studio IDE erforderlich ist. Möglich ist auch die Installation der Visual C++-Compiler und -Bibliotheken, von ATL, MFC und der C++/CLI-Unterstützung. |
+| [Visual&nbsp;Studio Test&nbsp;Agent&nbsp;2017](workload-component-id-vs-test-agent.md)  | Microsoft.VisualStudio.Product.TestAgent | Unterstützt die Remoteausführung von automatisierten Tests und Auslastungstests. |
+| [Visual&nbsp;Studio Test&nbsp;Controller 2017 ](workload-component-id-vs-test-controller.md) | Microsoft.VisualStudio.Product.TestController | Verteilt automatisierte Tests auf mehrere Computer. |
+| [Visual&nbsp;Studio Test&nbsp;Professional&nbsp;2017](workload-component-id-vs-test-professional.md) | Microsoft.VisualStudio.Product.TestProfessional | Visual Studio Test Professional 2017 |
+| [Visual&nbsp;Studio Feedback&nbsp;Client&nbsp;2017](workload-component-id-vs-feedback-client.md) | Microsoft.VisualStudio.Product.FeedbackClient | Visual Studio-Feedbackclient 2017 |
 
 Weitere Informationen zur Verwendung dieser Listen finden Sie auf den Seiten [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio 2017 RC](use-command-line-parameters-to-install-visual-studio.md) und [Vorgehensweise: Migrieren von Erweiterungsprojekten zu Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 

@@ -1,8 +1,8 @@
 ---
 title: Erstellen einer Offlineinstallation von Visual Studio | Microsoft-Dokumentation
-description: "Wählen Sie eine Version aus, und erfahren Sie hier, wie Sie eine Offlineinstallation von Visual Studio erstellen."
+description: Hier erfahren Sie, wie Sie eine Offlineinstallation von Visual Studio erstellen.
 ms.custom: 
-ms.date: 03/27/2017
+ms.date: 07/21/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -18,33 +18,17 @@ ms.assetid: f8625d5e-f6ea-4db0-83c0-619b77fab3cf
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 8163a0e1230712734936b7548bef1753ee0c1d2a
-ms.openlocfilehash: 305402c28998de265549715356c93840f3f2f09e
-ms.lasthandoff: 03/07/2017
+ms.translationtype: HT
+ms.sourcegitcommit: e93ef65e6c1dd498825954bcf81ca63a00146d7f
+ms.openlocfilehash: 03983d29fa8269ca1742f165855a15a80eca01c8
+ms.contentlocale: de-de
+ms.lasthandoff: 07/24/2017
 
 ---
-# <a name="create-an-offline-installation-of-visual-studio"></a>Erstellen einer Offlineinstallation von Visual Studio
+# <a name="create-an-offline-installation-of-visual-studio-2017"></a>Erstellen einer Offlineinstallation von Visual Studio 2017
 
-Wenn Sie ein Layout für eine Offlineinstallation von Visual Studio erstellen möchten, damit Sie das Produkt auf einem Computer ohne Internetverbindung installieren können, können wir Ihnen den Weg weisen.
+Wenn Sie nach einer Offlineoption für die Installation von Visual Studio 2017suchen, können wir Ihnen die richtige Richtung zeigen.
 
-Wählen Sie die Version von Visual Studio aus, an der Sie interessiert sind, und zeigen Sie die Details auf einer der folgenden Seiten an.
-
-* Informationen für **Visual Studio 2015** finden Sie auf unserer Seite [Erstellen einer Offlineinstallation von Visual Studio 2015](https://msdn.microsoft.com/library/mt706497.aspx) auf MSDN.
-* Informationen für **Visual Studio 2017** finden Sie auf unserer Seite [Erstellen einer Offlineinstallation von Visual Studio 2017](../install/create-an-offline-installation-of-visual-studio.md) auf docs.microsoft.com.
+* Wenn Sie eine einzelne Instanz von Visual Studio 2017 erstellen möchten, aber Ihre Internetverbindung nicht verfügbar oder unzuverlässig ist, finden Sie weitere Informationen auf der Website [Installieren von Visual Studio 2017 in Umgebungen mit niedriger Bandbreite oder unzuverlässigem Netzwerk](../install/install-vs-inconsistent-quality-network.md).  
+* Wenn Sie ein Unternehmensadministrator sind, der eine große Bereitstellung von Visual Studio 2017 auf ein Netzwerk mit mehreren Clientarbeitsstationen durchführen möchte, das per Firewall aus dem Internet geschützt wird, finden Sie auf den Seiten [Erstellen einer Netzwerkinstallation von Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md) und [Besonderheiten bei der Installation von Visual Studio in einer Offlineumgebung](../install/install-visual-studio-in-offline-environment.md) weitere Informationen.
 

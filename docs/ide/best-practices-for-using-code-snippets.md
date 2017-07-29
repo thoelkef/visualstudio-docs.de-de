@@ -30,17 +30,18 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 954bd5e0ba38d7a538700cba175933cc8303c863
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: 165fe357bd9849ca2588542614449558eae52740
+ms.contentlocale: de-de
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Empfohlene Vorgehensweisen für die Verwendung von Codeausschnitten
 Der Code in einem Codeausschnitt zeigt nur die grundlegende Methode, etwas zu tun. Für die meisten Anwendungen muss der Code geändert werden, um der Anwendung zu entsprechen.  
   
 ## <a name="handling-exceptions"></a>Behandeln von Ausnahmen  
- Normalerweise fangen Try…Catch-Blöcke des Codeausschnitts alle Ausnahmen ab und lösen sie erneut aus. Möglicherweise ist dies nicht die richtige Wahl für Ihr Projekt. Bei jeder Ausnahme gibt es mehrere Reaktionsmöglichkeiten. Beispiele finden Sie unter [Vorgehensweise: Behandeln einer Ausnahme mit try/catch (C#-Programmierhandbuch)](http://msdn.microsoft.com/Library/ca8e3773-980e-4767-8633-7408540e9818) und [Try...Catch...Finally Statement (Try...Catch...Finally-Anweisung)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).  
+ Normalerweise fangen Try…Catch-Blöcke des Codeausschnitts alle Ausnahmen ab und lösen sie erneut aus. Möglicherweise ist dies nicht die richtige Wahl für Ihr Projekt. Bei jeder Ausnahme gibt es mehrere Reaktionsmöglichkeiten. Beispiele finden Sie unter [Vorgehensweise: Behandeln einer Ausnahme mit try/catch (C#-Programmierhandbuch)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) und [Try...Catch...Finally Statement (Try...Catch...Finally-Anweisung)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).  
   
 ## <a name="file-locations"></a>Dateispeicherorte  
  Wenn Sie die Speicherorte an die Anwendung anpassen, sollten Sie Folgendes beachten:  

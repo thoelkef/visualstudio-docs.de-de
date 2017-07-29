@@ -27,10 +27,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 332ef0d4534d8f607a1b5d92038855ebd247657f
-ms.lasthandoff: 04/05/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 359e1eb5df8f19774d352ace631802367b6dd8c9
+ms.openlocfilehash: 481153e7f3d609c56f313ff5ee9f3f1b511dc5ef
+ms.contentlocale: de-de
+ms.lasthandoff: 07/11/2017
 
 ---
 # <a name="managing-project-and-solution-properties"></a>Verwalten von Projekt- und Projektmappeneigenschaften
@@ -38,7 +39,7 @@ Projekte haben Eigenschaften, die viele Aspekte der Kompilierung, des Debuggens,
   
  ![Projekt-Kontextmenü](../ide/media/vs2015_proj_prop_menu.gif "vs2015_proj_prop_menu")  
   
- .NET-Projekte haben außerdem einen Eigenschaftenknoten in der Projektstruktur selbst.  
+ .NET-Projekte haben womöglich außerdem einen Eigenschaftenknoten in der Projektstruktur selbst.  
   
  ![Knoten „Eigenschaften“ in der Struktur des Projektmappen-Explorers](../ide/media/vs2015_props_se.png "VS2015_Props_SE")  
   
@@ -48,8 +49,8 @@ Projekte haben Eigenschaften, die viele Aspekte der Kompilierung, des Debuggens,
 ## <a name="project-properties"></a>Projekteigenschaften  
  Projekteigenschaften sind in Gruppen organisiert, und jede Gruppe hat ihre eigene Eigenschaftenseite. Dabei können die Seiten für unterschiedliche Sprachen und Projekttypen unterschiedlich sein.  
   
-### <a name="c-and-visual-basic-projects"></a>C#- und Visual Basic-Projekte  
- In C#- und Visual Basic-Projekten sind Eigenschaften im **Projekt-Designer** verfügbar. Die folgende Abbildung zeigt die Eigenschaftsseite „Build“ für ein WPF-Projekt in C#:  
+### <a name="c-visual-basic-and-f-projects"></a>C#-, Visual Basic- und F#-Projekte  
+ In C#-, Visual Basic- und F#-Projekten sind Eigenschaften im **Projekt-Designer** verfügbar. Die folgende Abbildung zeigt die Eigenschaftsseite „Build“ für ein WPF-Projekt in C#:  
   
  ![Visual Studio-Projekt-Designer](../ide/media/vs2015_proppage_build.png "VS2015_PropPage_Build")  
   
@@ -67,3 +68,4 @@ Projekte haben Eigenschaften, die viele Aspekte der Kompilierung, des Debuggens,
   
 ## <a name="see-also"></a>Siehe auch  
  [Projektmappen und Projekte in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
+

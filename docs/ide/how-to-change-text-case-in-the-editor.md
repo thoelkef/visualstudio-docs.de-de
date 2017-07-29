@@ -1,49 +1,66 @@
 ---
-title: "Gewusst wie: &#196;ndern der Gro&#223;-/Kleinschreibung von Text im Editor | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Editoren, Groß- und Kleinschreibung von Text"
-  - "Text, Groß- und Kleinschreibung"
+title: "Vorgehensweise: Ändern der Groß-/Kleinschreibung von Text im Editor | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- editors, text case
+- text, case
 ms.assetid: b04d1327-a45e-4c12-a0d0-67672b3fa855
 caps.latest.revision: 10
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# Gewusst wie: &#196;ndern der Gro&#223;-/Kleinschreibung von Text im Editor
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: dcb39c0fa8f996bcaaa2406ad5ac254b90a534d0
+ms.contentlocale: de-de
+ms.lasthandoff: 05/24/2017
 
-Es stehen Ihnen Menübefehle und Tastenkombinationen zur Verfügung, mit denen Sie die Schreibweise aller Zeichen innerhalb des ausgewählten Textes in Groß\- bzw. Kleinschreibung umwandeln können.  
+---
+# <a name="how-to-change-text-case-in-the-editor"></a>Gewusst wie: Ändern der Groß-/Kleinschreibung von Text im Editor
+Sie können Menübefehle oder Tastenkombinationen verwenden, um die Groß-/Kleinschreibung von ausgewähltem Text in nur Großbuchstaben oder nur Kleinbuchstaben zu ändern.  
   
 > [!NOTE]
->  Abhängig von den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf dem Bildschirm möglicherweise von den in der **Hilfe** beschriebenen Dialogfeldern und Menübefehlen.  Wählen Sie im Menü **Extras** die Option **Einstellungen importieren und exportieren** aus, um die Einstellungen zu ändern.  Weitere Informationen finden Sie unter [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/de-de/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der **Hilfe** beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## Verfahren  
+## <a name="procedure"></a>Prozedur  
   
-#### So wenden Sie Großschreibung auf den Text an  
+#### <a name="to-switch-text-to-upper-case"></a>So ändern Sie Text in Großbuchstaben  
   
-1.  Markieren Sie den zu konvertierenden Text.  
+1.  Markieren Sie den Text, den Sie konvertieren möchten.  
   
-2.  Klicken Sie im Menü **Bearbeiten** auf **Erweitert**.  
+2.  Wählen Sie im Menü **Bearbeiten** die Option **Erweitert** aus.  
   
-3.  Um auf den gesamten Text Großschreibung anzuwenden, wählen Sie die Option **In Großbuchstaben umwandeln** aus, oder drücken Sie **STRG**\+**UMSCHALT**\+**U**.  
+3.  Wählen Sie **In Großbuchstaben umwandeln** aus, um Text in nur Großbuchstaben zu ändern, oder drücken Sie **STRG**+**UMSCHALTTASTE**+**U**.  
   
-     \- oder \-  
+     – oder –  
   
-     Um auf den Text Kleinschreibung anzuwenden, wählen Sie die Option **In Kleinbuchstaben umwandeln** aus, oder drücken Sie **STRG**\+**U**.  
+     Wählen Sie **In Kleinbuchstaben umwandeln** aus, um Text in nur Kleinbuchstaben zu ändern, oder drücken Sie **STRG**+**U**.  
   
     > [!TIP]
-    >  Um den Formatierungszustand vor der Änderung wiederherzustellen, wählen Sie im Menü **Bearbeiten** die Option **Rückgängig** aus.  
+    >  Wenn Sie die Formatierung der Groß-/Kleinschreibung vor diesen Änderungen wiederherstellen möchten, wählen Sie im Menü **Bearbeiten** **Rückgängig** aus.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Anpassen des Editors](../ide/customizing-the-editor.md)   
- [Text\-Editor\-Dialogfeld "Optionen"](../ide/reference/text-editor-options-dialog-box.md)   
+ [Text-Editor-Optionen (Dialogfeld)](../ide/reference/text-editor-options-dialog-box.md)   
  [Schreiben von Code](../ide/writing-code-in-the-code-and-text-editor.md)

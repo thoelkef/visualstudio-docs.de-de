@@ -38,10 +38,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 4669932307d37593154e337265288919a1042f37
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: e4abacb0286de16c148076572e73043daed4d567
+ms.contentlocale: de-de
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="signing-page-project-designer"></a>Seite "Signierung", Projekt-Designer
@@ -83,7 +84,7 @@ Verwenden Sie die Seite **Signierung** des **Projekt-Designers**, um die Anwendu
  Kontrollkästchen **Assembly signieren**  
  Setzen Sie ein Häkchen in diesem Kontrollkästchen, um die Assembly zu signieren und eine Schlüsseldatei mit starkem Namen zu erstellen. Weitere Informationen zum Signieren von Assemblys mithilfe des **Projekt-Designers** finden Sie unter [Vorgehensweise: Signieren einer Assembly (Visual Studio)](http://msdn.microsoft.com/en-us/f468a7d3-234c-4353-924d-8e0ae5896564).  
   
- Diese Option verwendet das Tool AI.exe, das von [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)] bereitgestellt wurde, um die Assembly zu signieren. Weitere Informationen zu AI.exe finden Sie unter [Vorgehensweise: Signieren einer Assembly mit einem starken Namen](http://msdn.microsoft.com/Library/2c30799a-a826-46b4-a25d-c584027a6c67).  
+ Diese Option verwendet das Tool AI.exe, das von [!INCLUDE[winsdklong](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name) bereitgestellt wurde, um die Assembly zu signieren.  
   
  Liste **Schlüsseldatei mit starkem Namen auswählen**  
  Gibt Ihnen die Möglichkeit, eine neue oder bereits vorhandene Schlüsseldatei mit starkem Namen festzulegen, die verwendet wird, um die Assembly zu signieren. Wählen Sie **\<Browse...>** aus, um eine vorhandene Schlüsseldatei auszuwählen.  
@@ -98,7 +99,7 @@ Verwenden Sie die Seite **Signierung** des **Projekt-Designers**, um die Anwendu
  Kontrollkästchen **Nur verzögerte Signierung**  
  Setzen Sie ein Häkchen in diesem Kontrollkästchen, um die verzögerte Signierung zu aktivieren.  
   
- Bitte beachten Sie, dass ein verzögert signiertes Projekt nicht ausgeführt wird und auch nicht debuggt werden kann. Allerdings können Sie das [Sn.exe (Strong Name Tool)](http://msdn.microsoft.com/Library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) mit der Option `-Vr` verwenden, um das Überprüfen während der Entwicklung zu überspringen.  
+ Bitte beachten Sie, dass ein verzögert signiertes Projekt nicht ausgeführt wird und auch nicht debuggt werden kann. Allerdings können Sie das [Sn.exe (Strong Name Tool)](/dotnet/framework/tools/sn-exe-strong-name-tool) mit der Option `-Vr` verwenden, um das Überprüfen während der Entwicklung zu überspringen.  
   
 > [!NOTE]
 >  Beim Signieren einer Assembly haben Sie möglicherweise nicht immer Zugriff auf einen privaten Schlüssel. Eine Organisation kann z.B. ein streng geheim gehaltenes Schlüsselpaar verwenden, auf das Entwickler nicht täglich zugreifen können. Möglicherweise steht der öffentliche Schlüssel zur Verfügung, während der Zugriff auf den privaten Schlüssel nur einigen Wenigen erlaubt ist. In einem solchen Fall können Sie die *verzögerte* oder *Teilsignierung* verwenden, um den öffentlichen Schlüssel bereitzustellen. Dadurch wird das Hinzufügen des privaten Schlüssels solange verzögert, bis die Assembly übergeben wird.  
@@ -109,5 +110,5 @@ Verwenden Sie die Seite **Signierung** des **Projekt-Designers**, um die Anwendu
  [Signieren mit starkem Namen für verwaltete Anwendungen](http://msdn.microsoft.com/en-us/5fef3490-c519-4363-94fd-8b1ad260dab5)   
  [Vorgehensweise: Signieren von Anwendungs- und Bereitstellungsmanifesten](../../ide/how-to-sign-application-and-deployment-manifests.md)   
  [Vorgehensweise: Signieren einer Assembly (Visual Studio)](http://msdn.microsoft.com/en-us/f468a7d3-234c-4353-924d-8e0ae5896564)   
- [Vorgehensweise: Signieren einer Assembly mit einem starken Namen](http://msdn.microsoft.com/Library/2c30799a-a826-46b4-a25d-c584027a6c67)   
+ [Vorgehensweise: Signieren einer Assembly mit einem starken Namen](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)   
  [Assemblys mit starkem Namen](http://msdn.microsoft.com/Library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)

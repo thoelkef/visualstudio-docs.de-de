@@ -1,67 +1,85 @@
 ---
-title: "Gewusst wie: Unterdr&#252;cken von Compiler-Warnungen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Gewusst wie: Unterdrücken von Compilerwarnungen | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 31827b17-f933-413d-b28a-b19f903b64ca
 caps.latest.revision: 5
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 5
----
-# Gewusst wie: Unterdr&#252;cken von Compiler-Warnungen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 0c4c9c5a885b6f71b8531d4b04baecaec7f45949
+ms.contentlocale: de-de
+ms.lasthandoff: 05/13/2017
 
-Sie können declutter ein Buildprotokoll, indem Sie eine oder mehrere Arten Compilerwarnungen angeben, die Sie sie nicht enthalten soll.  Beispielsweise können Sie diese Technik, einige jedoch nicht alle Informationen zu überprüfen, die automatisch wenn Sie das Buildprotokollausführlichkeitsgrad zu normalen, zu zu ausführlichen oder Diagnose generiert wird.  Weitere Informationen zu den Ausführlichkeitsgrad, finden Sie unter [Gewusst wie: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md).  
+---
+# <a name="how-to-suppress-compiler-warnings"></a>Gewusst wie: Unterdrücken von Compiler-Warnungen
+Sie können ein Buildprotokoll von Clutter befreien, indem Sie angeben, dass eine oder mehrere Arten von Compilerwarnungen nicht enthalten sein sollen. Beispielsweise können Sie diese Technik verwenden, um einige, aber nicht alle Informationen zu überprüfen, die automatisch erzeugt werden, wenn Sie die Ausführlichkeit des Buildprotokolls auf „Normal“, „Detailliert“ oder „Diagnose“ festlegen. Weitere Informationen zur Ausführlichkeit finden Sie unter [Gewusst wie: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md).  
   
-### Um bestimmte Warnungen für Visual C\# oder F\# unterdrücken  
+### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>So unterdrücken Sie bestimmte Warnungen für Visual C# oder F# #
   
-1.  In **Projektmappen\-Explorer** wählen Sie das Projekt, in dem Sie Warnungen unterdrücken möchten.  
+1.  Wählen Sie im **Projektmappen-Explorer** das Projekt aus, in dem Sie Warnungen unterdrücken möchten.  
   
-2.  Klicken Sie auf der Menüleiste wählen Sie **Ansicht**, **Eigenschaftenseiten** aus.  
+2.  Wählen Sie in der Menüleiste **Ansicht**, **Eigenschaftenseiten**.  
   
-3.  Wählen Sie die Seite **Build** aus.  
+3.  Wählen Sie die Seite **Erstellen** aus.  
   
-4.  Im Feld geben Sie die **Warnungen unterdrücken** Fehlercodes der Warnungen, die Sie unterdrücken möchten an, durch Semikolons getrennt, und erstellen Sie dann die Projektmappe neu.  
+4.  Geben Sie im Feld **Warnungen unterdrücken** durch Semikola getrennt die Fehlercodes der Warnungen an, die unterdrückt werden sollen, und erstellen Sie die Projektmappe dann erneut.  
   
-### Um bestimmte Warnungen für Visual C\+\+ unterdrücken  
+### <a name="to-suppress-specific-warnings-for-visual-c"></a>So unterdrücken Sie bestimmte Warnungen für Visual C++  
   
-1.  In **Projektmappen\-Explorer** wählen Sie das Projekt oder die Quelldatei aus, in denen Sie Warnungen unterdrücken möchten.  
+1.  Wählen Sie im **Projektmappen-Explorer** das Projekt oder die Quelldatei aus, für das bzw. die Sie Warnungen unterdrücken möchten.  
   
-2.  Klicken Sie auf der Menüleiste wählen Sie **Ansicht**, **Eigenschaftenseiten** aus.  
+2.  Wählen Sie in der Menüleiste **Ansicht**, **Eigenschaftenseiten**.  
   
-3.  Wählen Sie die Kategorie **Konfigurationseigenschaften** aus, wählen Sie die **C\/C\+\+** Kategorie aus, und wählen Sie dann die Seite **Erweitert** aus.  
+3.  Wählen Sie die Kategorie **Konfigurationseigenschaften** aus, wählen Sie die Kategorie **C/C++** und dann die Seite **Erweitert** aus.  
   
 4.  Führen Sie einen der folgenden Schritte aus:  
   
-    -   Im Feld geben Sie die **Bestimmte Warnungen deaktivieren** Fehlercodes der Warnungen, die Sie unterdrücken möchten an, getrennt durch ein Semikolon.  
+    -   Geben Sie im Feld **Bestimmte Warnungen deaktivieren** die Fehlercodes der Warnungen an, die Sie unterdrücken möchten, durch Semikola getrennt.  
   
-    -   Im Feld **Bestimmte Warnungen deaktivieren** wählen Sie **Bearbeiten**, um weitere Optionen anzuzeigen.  
+    -   Wählen Sie im Feld **Bestimmte Warnungen deaktivieren** den Befehl **Bearbeiten** aus, um weitere Optionen anzuzeigen.  
   
-5.  Wählen Sie die Schaltfläche **OK** aus, und erstellen Sie dann die Projektmappe neu.  
+5.  Wählen Sie die Schaltfläche **OK** aus, und erstellen Sie die Projektmappe dann erneut.  
   
-## Unterdrücken von Warnungen für Visual Basic  
- Sie können bestimmte Compilerwarnungen für Visual Basic ausblenden, indem Sie die VBPROJ\-Datei für das Projekt bearbeiten.  Sie können [Seite Kompilieren, Projekt\-Designer](../ide/reference/compile-page-project-designer-visual-basic.md) auch verwenden, um Warnungen nach Kategorie zu unterdrücken.  Weitere Informationen finden Sie unter [Konfigurieren von Warnungen in Visual Basic](../ide/configuring-warnings-in-visual-basic.md).  
+## <a name="suppressing-warnings-for-visual-basic"></a>Unterdrücken von Warnungen für Visual Basic  
+ Sie können bestimmte Compilerwarnungen für Visual Basic unterdrücken, indem Sie die VBPROJ-Datei für das Projekt bearbeiten. Sie können ferner die [Seite „Kompilieren“, Projekt-Designer](../ide/reference/compile-page-project-designer-visual-basic.md) verwenden, um Warnungen nach Kategorie zu unterdrücken. Weitere Informationen finden Sie unter [Konfigurieren von Warnungen in Visual Basic](../ide/configuring-warnings-in-visual-basic.md).  
   
-#### Um bestimmte Warnungen für Visual Basic unterdrücken  
+#### <a name="to-suppress-specific-warnings-for-visual-basic"></a>So unterdrücken Sie bestimmte Warnungen für Visual Basic  
   
-1.  In **Projektmappen\-Explorer** wählen Sie das Projekt, in dem Sie Warnungen unterdrücken möchten.  
+1.  Wählen Sie im **Projektmappen-Explorer** das Projekt aus, in dem Sie Warnungen unterdrücken möchten.  
   
-2.  Klicken Sie auf der Menüleiste wählen Sie **Projekt**, **Projekt entladen** aus.  
+2.  Wählen Sie in der Menüleiste **Projekt**, **Projekt entladen** aus.  
   
-3.  In **Projektmappen\-Explorer** öffnen Sie das Kontextmenü für das Projekt, und wählen Sie dann **Bearbeiten***Projektname***.vbproj** aus.  
+3.  Öffnen Sie im **Projektmappen-Explorer** das Kontextmenü für das Projekt, und wählen Sie dann **Bearbeiten***Projektname***.vbproj** aus.  
   
-     Die Projektdatei wird im Code\-Editor geöffnet.  
+     Die Projektdatei wird im Code-Editor geöffnet.  
   
-4.  Suchen Sie das `<NoWarn></NoWarn>`\-Element in der Buildkonfiguration, mit der Sie erstellen.  
+4.  Suchen Sie das Element `<NoWarn></NoWarn>` in der Buildkonfiguration, die Sie zum Erstellen verwenden.  
   
-     Im folgenden Beispiel wird das `<NoWarn></NoWarn>`\-Element in fett formatiertem Text für die Debugbuildkonfiguration auf einer x86\-Plattform an:  
+     Das folgende Beispiel zeigt das Element `<NoWarn></NoWarn>` in fetter Textschriftart für die Debug-Buildkonfiguration auf einer x86-Plattform:  
   
     ```  
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
@@ -73,12 +91,12 @@ Sie können declutter ein Buildprotokoll, indem Sie eine oder mehrere Arten Comp
         <DefineDebug>true</DefineDebug>  
         <DefineTrace>true</DefineTrace>  
         <ErrorReport>prompt</ErrorReport>  
-        <NoWarn> </NoWarn>  
+        <NoWarn></NoWarn>  
         <WarningLevel>1</WarningLevel>  
       </PropertyGroup>  
     ```  
   
-5.  Fügen Sie eine oder mehrere Warnungsnummern als Wert des \- Elements hinzu. `<NoWarn>` Wenn Sie mehrere Warnungsnummern angeben, trennen Sie diese durch ein Komma, wie im folgenden Beispiel gezeigt.  
+5.  Fügen Sie als Wert des `<NoWarn>`-Elements eine oder mehrere Warnungsnummern hinzu. Wenn Sie mehrere Warnungsnummern angeben, trennen Sie diese durch Kommas, wie im folgenden Beispiel zu sehen.  
   
     ```  
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
@@ -95,17 +113,18 @@ Sie können declutter ein Buildprotokoll, indem Sie eine oder mehrere Arten Comp
       </PropertyGroup>  
     ```  
   
-6.  Speichern Sie die Änderungen an der VBPROJ\-Datei.  
+6.  Speichern Sie die Änderungen an der VBPROJ-Datei.  
   
-7.  Klicken Sie auf der Menüleiste wählen Sie **Projekt**, **Projekt erneut laden** aus.  
+7.  Wählen Sie in der Menüleiste **Projekt**, **Projekt erneut laden** aus.  
   
-8.  Klicken Sie auf der Menüleiste wählen Sie **Build**, **Projektmappe neu erstellen** aus.  
+8.  Wählen Sie in der Menüleiste **Erstellen**, **Projektmappe neu erstellen** aus.  
   
-     Das Fenster zeigt den **Ausgabe** diesen Warnungen Sie nicht mehr angegebenen an.  
+     Das Fenster **Ausgabe** zeigt die von Ihnen angegebenen Warnungen jetzt nicht mehr an.  
   
- Weitere Informationen finden Sie unter [\/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn).  
+ Weitere Informationen finden Sie unter [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn).  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Exemplarische Vorgehensweise: Erstellen einer Anwendung](../ide/walkthrough-building-an-application.md)   
  [Gewusst wie: Anzeigen, Speichern und Konfigurieren von Buildprotokolldateien](../ide/how-to-view-save-and-configure-build-log-files.md)   
- [Anwendungen in Visual Studio erstellen](../ide/compiling-and-building-in-visual-studio.md)
+ [Kompilieren und Erstellen](../ide/compiling-and-building-in-visual-studio.md)
+

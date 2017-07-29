@@ -31,10 +31,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: edc126208bb401c8dba9a6be722cbd0dbda21caf
-ms.openlocfilehash: 720048b861bfb208489a62340efca28ae88d1951
+ms.sourcegitcommit: 8bf0b097be929b30627e0f1139c6e0b145933ab4
+ms.openlocfilehash: 28c6a166a423b3341ae32676830861eaa78cb40d
 ms.contentlocale: de-de
-ms.lasthandoff: 04/22/2017
+ms.lasthandoff: 05/26/2017
 
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Neuerungen in Visual Studio 2017
@@ -203,7 +203,7 @@ Wenn Sie einen Vorschlag zu möglichen Verbesserungen von Visual Studio machen o
 
 ## <a name="see-also"></a>Siehe auch  
 * [Neues in Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
-* [Neues in C#](https://docs.microsoft.com/en-us/dotnet/articles/csharp/csharp-7)  
+* [Neues in C#](https://docs.microsoft.com/en-us/dotnet/csharp/csharp-7)  
 * [Neues für Team Foundation Server](https://www.visualstudio.com/en-us/docs/whats-new)
 * [Visual Studio – Anmerkungen zu dieser Version](https://www.visualstudio.com/news/vs2015-vs)
 

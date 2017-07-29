@@ -1,90 +1,107 @@
 ---
-title: "Dokumente, Umgebung, Dialogfeld &quot;Optionen&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.Environment.Documents"
-  - "VS.ToolsOptionsPages.Environment.Documents"
-  - "VS.ToolsOptionsPag.Environment.Documents"
-helpviewer_keywords: 
-  - "Dokumente, Umgebung, Optionen (Dialogfeld)"
-  - "Standardwerte, Verzeichnisse"
-  - "Fehlermeldungen, anpassen"
-  - "Dateien [Visual Studio], Standardoptionen"
-  - "Dateien [Visual Basic], automatisches Laden von geänderten"
-  - "Fenster, Anpassen der Umgebung"
-  - "Bearbeiten im Speicher"
-  - "Ordner [Visual Studio], Angeben des Speicherorts für „Datei öffnen“"
-  - "Datei öffnen (Dialogfeld)"
-  - "Fenster, Aktivieren der Wiederverwendung aktueller"
-  - "Benachrichtigungen, geänderte Dateien"
-  - "Dateien [Visual Studio], Anzeigen im Projektmappen-Explorer"
-  - "Standardverzeichnisse"
-  - "schreibgeschützte Dateien, bearbeiten"
-  - "Optionen (Dialogfeld), Anzeigen von sonstigen Dateien"
-  - "Verzeichnisse [Visual Studio], IDE-Umgebungsoptionen"
-  - "Optionen (Dialogfeld), Seite „Dokumente“"
-  - "Warnungen, geänderte Dateien"
-  - "Projektmappen-Explorer, Anzeigen von Dateien in"
+title: "Dokumente, Umgebung, Dialogfeld „Optionen“ | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VS.Environment.Documents
+- VS.ToolsOptionsPages.Environment.Documents
+- VS.ToolsOptionsPag.Environment.Documents
+helpviewer_keywords:
+- Documents Environment Options dialog box
+- defaults, directories
+- error messages, customizing
+- files [Visual Studio], default options
+- files [Visual Basic], auto-loading modified
+- windows, customizing environment
+- in-memory editing
+- folders [Visual Studio], specifying where Open File goes
+- Open File dialog box
+- windows, enabling re-use of current
+- notifications, files changed
+- files [Visual Studio], displaying in Solution Explorer
+- default directories
+- read-only files, editing
+- Options dialog box, showing Miscellaneous Files
+- directories [Visual Studio], IDE environment options
+- Options dialog box, Documents page
+- warnings, files changed
+- Solution Explorer, displaying files in
 ms.assetid: 4e3ccf1b-cd68-4db6-9470-710c911b47fc
 caps.latest.revision: 21
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 21
----
-# Dokumente, Umgebung, Dialogfeld &quot;Optionen&quot;
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: e98661157ec1168c2aa19717c626a82f5e0a1975
+ms.contentlocale: de-de
+ms.lasthandoff: 05/24/2017
 
-Auf dieser Seite des Dialogfelds **Optionen** können Sie die Anzeige von Dokumenten in der integrierten Entwicklungsumgebung \(IDE\) steuern und externe Änderungen an Dokumenten und Dateien verwalten.  Zum Öffnen dieses Dialogfelds müssen Sie im Menü **Extras** auf **Optionen** klicken und dann im Knoten **Umgebung** den Eintrag **Dokumente** auswählen.  Wenn **Dokumente** nicht in der Liste angezeigt wird, wählen Sie im Dialogfeld **Optionen** den Befehl **Alle Einstellungen anzeigen** aus.  
+---
+# <a name="documents-environment-options-dialog-box"></a>Dokumente, Umgebung, Dialogfeld "Optionen"
+Verwenden Sie diese Seite des Dialogfelds **Optionen**, um die Anzeige von Dokumenten in der integrierten Entwicklungsumgebung (IDE) zu steuern und externe Änderungen an Dokumenten und Dateien zu verwalten. Sie können auf dieses Dialogfeld zugreifen, indem Sie im Menü **Extras** auf **Optionen** klicken, und anschließend auf dem Knoten **Umgebung** **Dokumente** auswählen. Wenn **Dokumente** nicht in der Liste angezeigt wird, aktivieren Sie im Dialogfeld **Optionen** das Kontrollkästchen **Alle Einstellungen anzeigen**.  
   
 > [!NOTE]
->  Die in einem Dialogfeld verfügbaren Optionen sowie die Namen und Positionen der angezeigten Menübefehle können sich je nach den persönlichen aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen Optionen unterscheiden.  Wählen Sie im Menü **Extras** die Option **Einstellungen importieren und exportieren** aus, um die Einstellungen zu ändern.  Weitere Informationen finden Sie unter [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/de-de/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Die in einem Dialogfeld verfügbaren Optionen sowie die Namen und Positionen der angezeigten Menübefehle können sich je nach den persönlichen aktiven Einstellungen oder der verwendeten Version von den in der Hilfe beschriebenen Optionen unterscheiden. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).  
   
- **Aktives Dokumentfenster wiederverwenden, falls gespeichert**  
- Wenn diese Option aktiviert ist, wird das aktuelle Dokument geschlossen, falls es gespeichert ist, und ein neues Dokument in demselben Fenster geöffnet.  Wenn das aktuelle Dokument nicht gespeichert wurde, bleibt es offen, und das neue Dokument wird in einem anderen Fenster geöffnet.  Wenn diese Option deaktiviert wird, werden neue Dokumente immer in gesonderten Fenstern geöffnet.  
+ **Gespeichertes aktives Dokumentfenster wiederverwenden**  
+ Wenn diese Option aktiviert ist, wird Ihr aktuelles Dokument geschlossen, falls es bereits gespeichert wurde, und ein neues Dokument im selben Fenster wird geöffnet. Wenn das aktuelle Dokument noch nicht gespeichert wurde bleibt es geöffnet. Das neue Dokument wird in einem separaten Fenster geöffnet. Wenn diese Option deaktiviert ist, werden neue Dokumente immer in separaten Fenstern geöffnet.  
   
- Diese Option empfiehlt sich, wenn Sie selten Inhalt aus einem Dokument ausschneiden und in ein anderes einfügen und Sie die Anzahl geöffneter Dokumente und Fenster im Arbeitsbereich minimieren möchten.  
+ Wenn Sie selten Ausschneide- und Einfügevorgänge in mehreren Dokumenten vornehmen und die Anzahl der geöffneten Dokumente und Fenster in Ihrem Arbeitsspeicher minimieren möchten, sollten Sie diese Option ausprobieren.  
   
  **Ermitteln, ob Datei außerhalb der Umgebung geändert wird**  
- Wenn diese Option aktiviert ist, werden Sie sofort benachrichtigt, wenn an einer geöffneten Datei in einem Editor außerhalb der IDE Änderungen vorgenommen wurden.  Die Meldung ermöglicht das erneute Laden der Datei aus dem Speicher.  
+ Wenn diese Option aktiviert ist, benachrichtigt Sie eine Meldung sofort über Änderungen einer geöffneten Datei, die von außerhalb der IDE vorgenommen wurden. Mit dieser Meldung können Sie die Datei aus dem Speicher erneut laden.  
   
  **Gespeicherte Änderungen automatisch laden**  
- Wenn die Option **Ermitteln, ob Datei außerhalb der Umgebung geändert wird** aktiviert ist und eine in der IDE geöffnete Datei außerhalb der IDE geändert wird, wird standardmäßig eine Warnmeldung angezeigt.  Wenn diese Option deaktiviert ist, wird keine Warnmeldung angezeigt, und das Dokument wird neu in die IDE geladen, damit die externen Änderungen übernommen werden.  
+ Wenn die Datei **Gespeicherte Änderungen automatisch laden** aktiviert ist, und eine geöffnete Datei in der IDE außerhalb der IDE geändert wird, wird standardmäßig eine Warnmeldung generiert. Wenn diese Option aktiviert ist, erscheint keine Warnung, und das Dokument wird in der IDE erneut geladen, um die externen Änderungen zu übernehmen.  
   
  **Bearbeiten schreibgeschützter Dateien zulassen und bei Speicherversuch warnen**  
- Wenn diese Option aktiviert ist, können Sie eine schreibgeschützte Datei öffnen und bearbeiten.  Wenn Sie fertig sind, müssen Sie die  **Speichern unter**Befehl aus, um die Datei unter einem neuen Namen speichern, wenn Sie Ihre Änderungen speichern möchten.  
+ Wenn diese Option aktiviert ist, können Sie eine schreibgeschützte Datei öffnen und bearbeiten. Wenn Sie fertig sind, müssen Sie den Befehl **Speichern unter** ausführen, um die Datei unter einem neuen Namen zu speichern, wenn Sie einen Datensatz mit Ihren Änderungen speichern möchten.  
   
  **Datei mit Verzeichnis des aktuellen Dokuments öffnen**  
- Durch Auswahl dieser Option wird festgelegt, dass im Dialogfeld **Datei öffnen** das Verzeichnis des aktiven Dokuments angezeigt wird.  Wenn diese Option deaktiviert wird, wird im Dialogfeld **Datei öffnen** das Verzeichnis angezeigt, in dem zuletzt eine Datei geöffnet wurde.  
+ Wenn diese Option aktiviert ist, gibt sie an, dass das Dialogfeld **Datei öffnen** das Verzeichnis des aktiven Dokuments anzeigt. Wenn diese Option deaktiviert ist, zeigt das Dialogfeld **Datei öffnen** das Verzeichnis an, das zuletzt zum Öffnen einer Datei verwendet wurde.  
   
  **Zeilenenden beim Laden auf Konsistenz überprüfen**  
- Aktivieren Sie diese Option, wenn die Zeilenenden in einer Datei vom Editor überprüft und ein Meldungsfeld angezeigt werden soll, sobald eine inkonsistente Formatierung der Zeilenenden gefunden wird.  
+ Aktivieren Sie diese Option, damit der Editor die Zeilenenden in einer Datei überprüft und ein Meldungsfenster anzeigt, wenn Inkonsistenzen bei der Formatierung der Zeilenenden entdeckt werden.  
   
  **Warnen, wenn bearbeitete Dateien durch globales Rückgängigmachen geändert werden**  
- Aktivieren Sie diese Option, damit eine Meldung angezeigt wird, wenn durch den Befehl **Global rückgängig** Umgestaltungsänderungen an Dateien zurückgesetzt werden, die nach der Umgestaltung geändert wurden.  Wenn eine Datei in den Zustand vor der Umgestaltung zurückgesetzt wird, werden möglicherweise auch Änderungen verworfen, die nachträglich an der Datei vorgenommen wurden.  
+ Aktivieren Sie diese Option zum Anzeigen eines Meldungsfeldes, wenn der Befehl **Globales Rückgängigmachen** Änderungen zurücksetzt, die bei der Umgestaltung von Dateien getroffen wurden, die nach dem Umgestaltungsvorgang ebenfalls geändert wurden. Durch das Zurücksetzen einer Datei auf den Status vor der Umgestaltung können möglicherweise Änderungen verworfen werden, die in der Datei gemacht wurden.  
   
- **Verschiedene Dateien im Projektmappen\-Explorer anzeigen**  
- Aktivieren Sie diese Option, um im **Projektmappen\-Explorer** den Knoten **Sonstige Dateien** anzuzeigen.  Sonstige Dateien sind Dateien, die keinem Projekt bzw. keiner Projektmappe zugeordnet sind. Sie können jedoch auf Wunsch im **Projektmappen\-Explorer** angezeigt werden.  
+ **Sonstige Dateien im Projektmappen-Explorer anzeigen**  
+ Aktivieren Sie diese Option, um den Knoten **Verschiedene Dateien** im **Projektmappen-Explorer** anzuzeigen. Verschiedene Dateien sind Dateien, die keinem Projekt oder keiner Projektmappe zugeordnet werden. Sie können aber auf Wunsch im **Projektmappen-Explorer** angezeigt werden.  
   
 > [!NOTE]
->  Aktivieren Sie mit dieser Option im Menü **Datei** den Befehl **In Browser anzeigen** für Webdokumente, die in der aktiven Webanwendung nicht enthalten sind.  
+>  Aktivieren Sie diese Option, um den Befehl **In Browser anzeigen** im Menü **Datei** für Webdokumente zu aktivieren, die nicht in der aktiven Webanwendung enthalten sind.  
   
- **\<** *n* **\> im Projekt für verschiedene Dateien gespeicherte Elemente**  
- Gibt die Anzahl von Dateien an, die im **Projektmappen\-Explorer** im Ordner **Verschiedene Dateien** beibehalten werden sollen.  Diese Dateien werden auch dann aufgelistet, wenn sie nicht mehr in einem Editor geöffnet sind.  Sie können eine beliebige ganze Zahl von 0 bis 256 angeben.  Die Anzahl beträgt standardmäßig 0.  
+ **\<** *n* **> im Projekt „Sonstige Dateien“ gespeicherte Elemente**  
+ Gibt die Anzahl von Dateien an, die im Ordner **Verschiedene Dateien** des **Projektmappen-Explorers** aufbewahrt werden sollen. Diese Dateien werden auch aufgelistet, wenn sie nicht mehr in einem Editor geöffnet sind. Sie können eine beliebige ganze Anzahl von 0 bis 256 angeben. Die Standardanzahl ist 0.  
   
- Wenn Sie diese Option z. B. auf 5 festlegen und 10 verschiedene Dateien geöffnet sind und Sie nun sämtliche 10 Dateien schließen, wird im Ordner **Verschiedene Dateien**  weiterhin 5 angezeigt.  
+ Wenn Sie z.B. diese Option auf 5 festlegen, und 10 verschiedene Dateien geöffnet sind, werden die ersten 5 Dateien trotzdem noch im Ordner **Verschiedene Dateien** angezeigt, wenn Sie alle 10 Dateien schließen.  
   
  **Dokumente als Unicode speichern, wenn Speichern der Daten in Codepage nicht möglich**  
- Aktivieren Sie diese Option, um Dateien mit Informationen, die mit der ausgewählten Codepage nicht kompatibel sind, standardmäßig im Unicode\-Format zu speichern.  
+ Aktivieren Sie diese Option, damit Dateien, die Informationen enthalten, die nicht mit dem ausgewählten Codepage-Standard kompatibel sind, standardmäßig als Unicode gespeichert werden.  
   
-## Siehe auch  
- [Dialogfeld "Umgebungsoptionen"](../../ide/reference/environment-options-dialog-box.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Dialogfeld „Umgebungsoptionen“](../../ide/reference/environment-options-dialog-box.md)   
  [Verschiedene Dateien](../../ide/reference/miscellaneous-files.md)   
  [Suchen und Ersetzen von Text](../../ide/finding-and-replacing-text.md)

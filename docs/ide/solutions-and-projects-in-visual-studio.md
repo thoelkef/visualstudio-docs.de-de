@@ -1,7 +1,7 @@
 ---
 title: Projektmappen und Projekte in Visual Studio | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 11/16/2016
+ms.date: 06/12/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -69,36 +69,37 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: a88acb10478c5beb68cc6a12334f00145d183b1d
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 8ce85525f6af336682f6f8547c2f6c13dde73c8c
+ms.openlocfilehash: 28dfbb85790cfda2c3d840ce2d57468b5421bee0
+ms.contentlocale: de-de
+ms.lasthandoff: 06/23/2017
 
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Projektmappen und Projekte in Visual Studio
 Beim Erstellen einer App, Anwendung, Website, Web App und eines Skripts, Plug-ins usw. in Visual Studio beginnen Sie mit einem *Projekt*. In funktionaler Hinsicht enthält ein Projekt alle Quellcodedateien, Symbole, Bilder, Datendateien und alles andere, was zu einem ausführbaren Programm, einer Website o. Ä. kompiliert werden soll oder für die Kompilierung benötigt wird.  Ein Projekt enthält außerdem alle Compilereinstellungen und andere Konfigurationsdateien, die möglicherweise von verschiedenen Diensten und Komponenten benötigt werden, mit denen Ihr Programm kommuniziert.
 
 > [!NOTE]
->  Sie müssen keine Projektmappen oder Projekte verwenden, wenn Sie das nicht möchten. Sie können die Dateien einfach in Visual Studio öffnen und mit der Bearbeitung Ihres Codes beginnen. Weitere Informationen finden Sie unter [Öffnen von beliebigen Ordnern in Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2016/04/12/open-any-folder-with-visual-studio-15-preview/).
+>  Sie müssen weder Projektmappen noch Projekte verwenden, wenn Sie nicht möchten. Sie können die Dateien einfach in Visual Studio öffnen und mit der Bearbeitung Ihres Codes beginnen. Weitere Informationen finden Sie unter [Öffnen von beliebigen Ordnern in Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2016/04/12/open-any-folder-with-visual-studio-15-preview/).
 
 
  Auf struktureller Ebene handelt es sich bei einem Projekt um eine XML-Datei (*.vbproj, \*.csproj, \*.vcxproj), die eine virtuelle Ordnerhierarchie mit Pfaden zu allen Elementen, die es enthält, und den Buildeinstellungen definiert. In Visual Studio wird die Projektdatei im Projektmappen-Explorer verwendet, um Projektinhalte und Einstellungen anzuzeigen. Wenn Sie das Projekt kompilieren, verwendet das MSBuild-Modul die Projektdatei, um die ausführbare Datei zu erstellen. Sie können Projekts auch so anpassen, dass andere Arten von Ausgaben produziert werden.  
 
  Eine *Projektmappe*enthält in funktionaler Hinsicht und im Dateisystem ein Projekt, das wiederum mindestens ein Projekt sowie Buildinformationen, Visual Studio-Fenstereinstellungen sowie beliebige weitere Dateien, die nicht mit einem bestimmten Projekt verknüpft sind, enthalten kann. Auf struktureller Ebene handelt es sich bei einer Projektmappe um eine Textdatei in einem nativen Format, die normalerweise nicht manuell bearbeitet werden soll.  
 
- Einer Projektmappe ist eine SUO-Datei zugeordnet, die Einstellungen und Konfigurationsinformationen für jeden Benutzer speichert , der am Projekt gearbeitet hat.  
+ Einer Projektmappe ist eine *SUO*-Datei zugeordnet, in der Einstellungen und Konfigurationsinformationen für jeden Benutzer gespeichert sind, der am Projekt gearbeitet hat.  
 
  Das folgende Diagramm zeigt die Beziehung zwischen Projekten und Projektmappen und die Elemente, die sie logisch enthalten.  
 
- ![Visual Studio-Projekte und -Projektmappen](../ide/media/vs2015_project_diagram.png "vs2015_project_diagram")  
+ ![Visual Studio-Projekte und -Projektmappen](../ide/media/vside-project-diagram.png)  
 
  Sie können auch benutzerdefinierte Projekte und Elementvorlagen erstellen. Weitere Informationen finden Sie unter [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md).  
 
 ## <a name="creating-new-projects"></a>Erstellen neuer Projekte  
- Die einfachste Möglichkeit zum Erstellen eines neuen Projekts ist eine vordefinierte Projektvorlage, die eine Reihe grundlegender vorab generierten Codedateien, Konfigurationsdateien, Assets und Einstellungen für die ersten Schritte mit einer bestimmten Anwendungsart oder Website in einer bestimmten Programmiersprache enthält. Diese Vorlagen finden Sie im Hauptmenü im **Dialogfeld „Neues Projekt“**, wenn Sie **Datei &#124; Neu &#124; Projekt** oder **Datei &#124; Neu &#124; Website** auswählen und dann navigieren. Weitere Informationen finden Sie unter [Erstellen von Projektmappen und Projekten](../ide/creating-solutions-and-projects.md) und [NIB Erstellen von Projekten aus Vorlagen](http://msdn.microsoft.com/en-us/7c36d86a-6b79-4480-8228-0f925f1204b2).  
+ Die einfachste Möglichkeit zum Erstellen eines neuen Projekts ist eine vordefinierte Projektvorlage, die eine Reihe grundlegender vorab generierten Codedateien, Konfigurationsdateien, Assets und Einstellungen für die ersten Schritte mit einer bestimmten Anwendungsart oder Website in einer bestimmten Programmiersprache enthält. Diese Vorlagen finden Sie im Hauptmenü im **Dialogfeld „Neues Projekt“**, wenn Sie **Datei &#124; Neu &#124; Projekt** oder **Datei &#124; Neu &#124; Website** auswählen und dann navigieren. Weitere Informationen finden Sie unter [Erstellen von Projekten und Projektmappen](../ide/creating-solutions-and-projects.md).  
 
 ## <a name="managing-projects-in-solution-explorer"></a>Verwalten von Projekten im Projektmappen-Explorer  
- Nachdem Sie ein neues Projekt erstellt haben, verwenden Sie den **Projektmappen-Explorer** , um Projekte und Projektmappen sowie zugehörige Elemente anzuzeigen und zu verwalten. Die folgende Abbildung zeigt den Server-Explorer mit einer C#-Projektmappe, die zwei Projekte enthält.  
+ Nachdem Sie ein neues Projekt erstellt haben, verwenden Sie den **Projektmappen-Explorer** , um Projekte und Projektmappen sowie zugehörige Elemente anzuzeigen und zu verwalten. Die folgende Abbildung zeigt den Projektmappen-Explorer mit einer C#-Projektmappe, die zwei Projekte enthält.  
 
  ![Projektmappen-Explorer](../ide/media/vs2015_solution_explorer.png "vs2015_solution_explorer")  
 

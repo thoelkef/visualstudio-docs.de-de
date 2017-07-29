@@ -37,14 +37,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: e4ba336071a8b9e311ffe67330677cb25ff92751
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: d027716980368a7c812ebda6fac6884c9481af12
+ms.contentlocale: de-de
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="sgen-task"></a>SGen-Aufgabe
-Erstellt eine XML-Serialisierungsassembly für Typen in der angegebenen Assembly. Diese Aufgabe umschließt das XML Serializer Generator-Tool (Sgen.exe). Weitere Informationen finden Sie unter [XML Serializer Generator-Tool (Sgen.exe)](http://msdn.microsoft.com/Library/cc1d1f1c-fb26-4be9-885a-3fe84c81cec6).  
+Erstellt eine XML-Serialisierungsassembly für Typen in der angegebenen Assembly. Diese Aufgabe umschließt das XML Serializer Generator-Tool (Sgen.exe). Weitere Informationen finden Sie unter [XML Serializer Generator-Tool (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).  
   
 ## <a name="parameters"></a>Parameter  
  In der folgenden Tabelle werden die Parameter der `SGen`-Aufgabe beschrieben.  
@@ -59,7 +60,7 @@ Erstellt eine XML-Serialisierungsassembly für Typen in der angegebenen Assembly
 |`Platform`|Optionaler `String` -Parameter.<br /><br /> Ruft die Compiler-Plattform ab, die zum Generieren der Ausgabeassembly verwendet wird, oder legt sie fest. Dieser Parameter kann den Wert `x86`, `x64` oder `anycpu` haben. Der Standardwert ist `anycpu`.|  
 |`References`|Optionaler `String[]` -Parameter.<br /><br /> Gibt die Assemblys an, auf die von den Typen, die XML-Serialisierung erfordern, verwiesen wird.|  
 |`SdkToolsPath`|Optionaler `String` -Parameter.<br /><br /> Legt den Pfad zu den SDK-Tools wie z.B. „resgen.exe“ fest.|  
-|`SerializationAssembly`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Ausgabeparameter.<br /><br /> Enthält die generierte Serialisierungsassembly.|  
+|`SerializationAssembly`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Enthält die generierte Serialisierungsassembly.|  
 |`SerializationAssemblyName`|Optionaler `String` -Parameter.<br /><br /> Gibt den Namen der generierten Serialisierungsassembly an.|  
 |`ShouldGenerateSerializer`|Erforderlicher `Boolean`-Parameter.<br /><br /> Wenn `true`, sollte die SGen-Aufgabe eine Serialisierungsassembly generieren.|  
 |`Timeout`|Optionaler `Int32`-Parameter.<br /><br /> Gibt die Zeitdauer in Millisekunden an, nach der die ausführbare Datei der Aufgabe beendet wird. Der Standardwert ist `Int.MaxValue`. Dieser gibt an, dass es kein Zeitlimit gibt.|  
@@ -68,7 +69,7 @@ Erstellt eine XML-Serialisierungsassembly für Typen in der angegebenen Assembly
 |`UseProxyTypes`|Erforderlicher `Boolean`-Parameter.<br /><br /> Wenn `true`, generiert die SGen-Aufgabe Serialisierungscode ausschließlich für die Proxytypen des XML-Webdiensts.|  
   
 ## <a name="remarks"></a>Hinweise  
- Neben den oben genannten Parametern übernimmt diese Aufgabe Parameter von der Klasse <xref:Microsoft.Build.Tasks.ToolTaskExtension>, die diese wiederum von der Klasse <xref:Microsoft.Build.Utilities.ToolTask> übernimmt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [ToolTaskExtension-Basisklasse](../msbuild/tooltaskextension-base-class.md).  
+ Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.ToolTaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.ToolTask>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [ToolTaskExtension-Basisklasse](../msbuild/tooltaskextension-base-class.md).  
   
 ## <a name="see-also"></a>Siehe auch  
  [Task Reference](../msbuild/msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  

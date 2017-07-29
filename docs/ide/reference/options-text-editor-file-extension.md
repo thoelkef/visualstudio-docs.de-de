@@ -1,58 +1,75 @@
 ---
-title: "Optionen, Text-Editor, Dateierweiterung | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.toolsoptionspages.text_editor.file_extension"
-helpviewer_keywords: 
-  - "Dateierweiterungen, Zuordnen zum Editor"
-  - "Zuordnung"
-  - "Optionen (Dialogfeld)"
-  - "Bearbeitungsoberfläche, auswählen"
+title: Optionen, Text-Editor, Dateierweiterung | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.toolsoptionspages.text_editor.file_extension
+helpviewer_keywords:
+- file extensions, associating to editor
+- Editing Experience
+- Options dialog box
+- Editing Experience, selecting
 ms.assetid: 05298fc5-fc4e-4bb2-b942-1f7d2dcdff0f
 caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
----
-# Optionen, Text-Editor, Dateierweiterung
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: 37e5b813482eae6c4d46051ed4b261594d9e5164
+ms.contentlocale: de-de
+ms.lasthandoff: 05/24/2017
 
-In diesem Dialogfeld Optionen können Sie angeben, wie sämtliche Dateien mit einer bestimmten Dateierweiterung in der integrierten Entwicklungsumgebung \(IDE\) von Visual Studio behandelt werden.  Für jede eingegebene **Erweiterung** können Sie eine Zuordnung auswählen.  Auf diese Weise können Sie den IDE\-Editor oder \-Designer auswählen, in dem Dokumente eines bestimmten Typs geöffnet werden.  Um diese Optionen anzuzeigen, klicken Sie im Menü **Extras** auf **Optionen**, erweitern den Knoten **Text\-Editor** und wählen **Erweiterung** aus.  
+---
+# <a name="options-text-editor-file-extension"></a>Optionen, Text-Editor, Dateierweiterung
+Das Dialogfeld „Optionen“ ermöglicht Ihnen anzugeben, wie alle Dateien mit bestimmten Dateierweiterungen von der integrierten Entwicklungsumgebung (IDE) in Visual Studio behandelt werden. Für jede **Erweiterung**, die Sie eingeben, können Sie eine Bearbeitungsmöglichkeit auswählen. Dadurch können Sie auf den Editor oder Designer der integrierten Entwicklungsumgebung zugreifen, in dem Dokumente eines bestimmten Typs geöffnet werden. Wählen Sie zum Anzeigen dieser Optionen im Menü **Extras** **Optionen** aus, erweitern Sie den Knoten **Text-Editor**, und wählen Sie **Dateierweiterung** aus.  
   
- Wenn Sie eine Option "mit Codierung" auswählen, wird bei jedem Öffnen eines Dokuments dieses Typs ein Dialogfeld eingeblendet, in dem Sie ein Codierungsschema für dieses Dokument auswählen können.  Dies ist hilfreich, wenn Sie unterschiedliche Versionen von Projektdokumenten zur Verwendung auf verschiedenen Plattformen oder in verschiedenen Zielsprachen vorbereiten.  
+ Wenn Sie eine Option „mit Codierung“ auswählen, wird ein Dialogfeld angezeigt, sobald Sie ein Dokument dieses Typs öffnen, in dem Sie ein Codierungsschema für dieses Dokument auswählen können. Dies ist nützlich, wenn Sie Versionen Ihrer Projektdokumente für die Verwendung auf verschiedenen Plattformen oder in verschiedenen Zielsprachen vorbereiten.  
   
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen.  Wählen Sie im Menü **Extras** die Option **Einstellungen importieren und exportieren** aus, um die Einstellungen zu ändern.  Weitere Informationen finden Sie unter [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/de-de/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).  
   
-## UIElement-Liste  
+## <a name="uielement-list"></a>UIElement-Liste  
  **Erweiterung**  
- Geben Sie die Dateierweiterung ein, deren Zuordnung in der IDE Sie definieren möchten.  
+ Geben Sie die Dateierweiterung ein, deren Bearbeitungsmöglichkeit Sie in der IDE definieren möchten.  
   
  **Editor**  
- Wählen Sie den IDE\-Editor oder \-Designer aus, in dem Dokumente mit dieser Dateierweiterung geöffnet werden.  Wenn Sie eine Option "mit Codierung" auswählen, wird bei jedem Öffnen eines solchen Dokuments ein Dialogfeld eingeblendet, in dem Sie ein Codierungsschema auswählen können.  
+ Wählen Sie den Editor oder Designer der IDE aus, in dem Dokumente mit dieser Dateierweiterung geöffnet werden. Wenn Sie eine Option „mit Codierung“ auswählen, wird ein Dialogfeld angezeigt, sobald Sie ein Dokument dieser Art öffnen, in dem Sie ein Codierungsschema auswählen können.  
   
- **add**  
- Fügt der Liste der Erweiterungen einen Eintrag hinzu, der die angegebene **Erweiterung** und **Zuordnung** enthält.  
+ **Add**  
+ Fügt einen Eintrag hinzu, der die angegebene **Erweiterung** und **Bearbeitungsmöglichkeit** zur Liste der Erweiterungen hinzufügt.  
   
  **Entfernen**  
  Löscht den ausgewählten Eintrag aus der Liste der Erweiterungen.  
   
  Liste der Erweiterungen  
- Listet alle Erweiterungen auf, für die eine Zuordnung angegeben wurde.  
+ Listet alle Erweiterungen auf, für die eine Bearbeitungsart angegeben wurde.  
   
- **Dateien ohne Dateierweiterung zuordnen zu**  
- Aktivieren Sie diese Option, wenn Sie festlegen möchten, wie Dateien ohne eine Erweiterung in der IDE behandelt werden.  
+ **Dateien ohne Erweiterung zuordnen zu**  
+ Aktivieren Sie diese Option, wenn Sie angeben möchten, wie Dateien ohne Erweiterung von der IDE behandelt werden sollen.  
   
- **Optionen für Dateien ohne Dateierweiterung**  
- Stellt die gleiche Liste wie **Editor** bereit.  Wählen Sie den IDE\-Editor oder \-Designer aus, in dem Dokumente ohne Dateierweiterung geöffnet werden.  
+ **Extensionless file options** (Optionen für Dateien ohne Erweiterung)  
+ Stellt dieselbe Liste wie **Editor** bereit. Wählen Sie den Editor oder Designer der IDE aus, in dem Dokumente ohne Dateierweiterung geöffnet werden.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Gewusst wie: Verwalten von Editormodi](../../ide/how-to-manage-editor-modes.md)
