@@ -30,9 +30,10 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
 ms.openlocfilehash: 24bd28ad78f1cd3a21167215ed8348dc79edce6b
+ms.contentlocale: de-de
 ms.lasthandoff: 04/05/2017
 
 ---
@@ -48,7 +49,7 @@ Eine VSPackage definieren möglicherweise eine oder mehrere Einstellungskategori
      Wenn eine einzelne VSPackage mehrere einen benutzerdefinierten Einstellungspunkt unterstützt, jede benutzerdefinierte Einstellungspunkte wird durch eine separate Klasse implementiert, und jede wird registriert, indem eine eindeutige Instanz der <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>Klasse.</xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> Folglich können eine Klasse implementieren Einstellungen mehrere Einstellungskategorie unterstützen.  
   
 ## <a name="custom-settings-point-registry-entry-details"></a>Benutzerdefinierte Einstellungen Punkt Eintrag Registrierungsdetails  
- Einen benutzerdefinierten Einstellungspunkt werden in einem Registrierungseintrag an folgendem Speicherort erstellt: HKLM\Software\Microsoft\VisualStudio\\*\<Version >*\UserSettings\\`<CSPName>`, wobei `<CSPName>` ist der Name des benutzerdefinierten Einstellungen auf der VSPackage-unterstützt und *\<Version >* ist die Version des [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], z. B. 8.0.  
+ Einen benutzerdefinierten Einstellungspunkt werden in einem Registrierungseintrag an folgendem Speicherort erstellt: HKLM\Software\Microsoft\VisualStudio\\*\<Version >*\UserSettings\\`<CSPName>`, wobei `<CSPName>` ist der Name des benutzerdefinierten Einstellungen auf der VSPackage-unterstützt und  *\<Version >* ist die Version des [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], z. B. 8.0.  
   
 > [!NOTE]
 >  Der Stammpfad des HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* kann überschrieben werden, mit einer alternativen root, wenn die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (IDE) initialisiert wird. Weitere Informationen finden Sie unter [Befehlszeilenoptionen](../../extensibility/command-line-switches-visual-studio-sdk.md).  
