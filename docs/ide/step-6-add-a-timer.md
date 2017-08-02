@@ -41,7 +41,7 @@ Als Nächstes fügen Sie dem Spiel ein **Timer**-Steuerelement hinzu. Ein solche
   
 1.  Wählen Sie **Timer** in der Toolbox des Windows Forms-Designers (in der Kategorie **Komponenten**) und drücken Sie anschließend die EINGABETASTE, oder doppelklicken Sie auf den Zeitgeber, um dem Formular ein Zeitgeber-Steuerelement hinzuzufügen. Das Symbol des Timers mit dem Namen **Timer1** wird in einem Bereich unterhalb des Formulars angezeigt, wie in der folgenden Abbildung dargestellt.  
   
-     ![Zeitgeber](../ide/media/express_timer.png "Express_Timer")  
+     ![Zeitgeber](~/docs/ide/media/express_timer.png "Express_Timer")  
 Zeitgeber  
   
     > [!NOTE]

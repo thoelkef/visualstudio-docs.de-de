@@ -24,7 +24,7 @@ Die Dropdownliste Leiste wird oben im Fenster Code bereitgestellt und zwei Dropd
 ## Leiste\-Schnittstellen Dropdownelement  
  In [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]zum Beispiel enthält die Dropdownliste Leiste Listen für [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]\-Element\-und [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]\-Element\-Memberfunktionen, wie im folgenden Bild gezeigt.  
   
- ![Dropdownlisten](../extensibility/media/vsdropdown_bar.png "vsDropdown\_bar")  
+ ![Dropdownlisten](~/docs/extensibility/media/vsdropdown_bar.gif "vsDropdown\_bar")  
 Dropdownfeld Leiste  
   
  Beim Erstellen einer Dropdownliste Leiste implementiert, gibt es vier Schnittstellen der höchsten Wichtigkeit:  

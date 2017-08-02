@@ -49,11 +49,11 @@ Wenn Sie mehrere Microsoft-Konten und/oder Geschäfts- oder Schulkonten haben, k
 ### <a name="access-your-azure-account-in-server-explorer"></a>Zugreifen auf Ihr Azure-Konto in Server-Explorer  
  Drücken Sie **STRG + ALT + S** , um **Server-Explorer**zu öffnen. Wählen Sie das Azure-Symbol aus. Wenn es aufgeklappt wird, sehen Sie die verfügbaren Ressourcen in dem Azure-Konto, das mit der ID verknüpft ist, die Sie zum Anmelden bei Visual Studio verwendet haben. Es sollte etwa Folgendes angezeigt werden (davon abgesehen, dass Sie Ihre eigenen Ressourcen sehen).
 
- ![Server-Explorer zeigt den aufgeklappten „Azure Tools“-Knoten](../ide/media/vs2015_serverexplorer.png "VS2015_ServerExplorer")  
+ ![Server-Explorer zeigt den aufgeklappten „Azure Tools“-Knoten](~/docs/ide/media/vs2015_serverexplorer.png "VS2015_ServerExplorer")  
 
  Wenn Sie Visual Studio auf einem bestimmten Gerät zum ersten Mal verwenden, zeigt das Dialogfeld nur die Abonnements an, die unter der ID registriert sind, mit der Sie sich bei der IDE angemeldet haben. Auf die Ressourcen Ihrer anderen Konten können Sie direkt über den **Server-Explorer** zugreifen, indem Sie mit der rechten Maustaste auf den Azure-Knoten klicken und **Abonnements verwalten und filtern** auswählen und Ihre Konten über das Kontoauswahl-Steuerelement hinzufügen. Um ein anderes Konto auszuwählen, klicken Sie auf den Pfeil nach unten, und wählen Sie das gewünschte Konto aus der Liste aus. Nach dem Auswählen des Kontos können Sie auswählen, welche Abonnements dieses Kontos im Server-Explorer angezeigt werden sollen.  
 
- ![Dialogfeld „Azure-Abonnements verwalten“](../ide/media/vs2015_manage_subs.png "vs2015_manage_subs")  
+ ![Dialogfeld „Azure-Abonnements verwalten“](~/docs/ide/media/vs2015_manage_subs.png "vs2015_manage_subs")  
 
  Wenn Sie den Server-Explorer dann zum nächsten Mal öffnen, werden die Ressourcen für diese(s) Abonnement(s) angezeigt.  
 
@@ -69,7 +69,7 @@ Wenn Sie mehrere Microsoft-Konten und/oder Geschäfts- oder Schulkonten haben, k
 ###  <a name="a-nameaccessazurea-access-azure-active-directory-in-a-web-project"></a><a name="access_azure"></a> Zugreifen auf Azure Active Directory in einem Webprojekt  
  Azure AD unterstützt das einmalige Anmelden für Endbenutzer in ASP.NET MVC-Webanwendungen oder die AD-Authentifizierung in Web-API-Diensten. Die Domänenauthentifizierung unterscheidet sich von der Authentifizierung einzelner Benutzerkonten: Benutzer mit Zugriff auf Ihre Active Directory-Domäne können ihre vorhandenen Azure AD-Konten verwenden, um eine Verbindung zu Ihren Webanwendungen herzustellen. Auch Office 365-Anwendungen können die Domänenauthentifizierung verwenden. Um diesen Vorgang zu sehen, erstellen Sie eine Webanwendung (**Datei, Neues Projekt, C#, Cloud, ASP.NET-Webanwendung**). Wählen Sie im Dialogfeld „Neues ASP.NET-Projekt“ **Authentifizierung ändern**. Der Authentifizierungsassistent wird angezeigt und ermöglicht es Ihnen, die Art der Authentifizierung in Ihrer Anwendung auszuwählen.  
 
- ![Dialogfeld „Authentifizierung ändern“ für ASP.NET](../ide/media/vs2015_change_authentication.png "VS2015_change_authentication")  
+ ![Dialogfeld „Authentifizierung ändern“ für ASP.NET](~/docs/ide/media/vs2015_change_authentication.png "VS2015_change_authentication")  
 
  Weitere Informationen zu den verschiedenen Arten der Authentifizierung in ASP.NET finden Sie unter [Erstellen von ASP.NET-Webprojekten in Visual Studio 2013](http://www.asp.net/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (die Informationen zur Authentifizierung gelten auch noch für die aktuellen Versionen von Visual Studio).  
 
@@ -79,7 +79,7 @@ Wenn Sie mehrere Microsoft-Konten und/oder Geschäfts- oder Schulkonten haben, k
 ## <a name="add-a-second-user-account-to-visual-studio"></a>Hinzufügen eines zweiten Benutzerkontos zu Visual Studio  
  Klicken Sie auf den Abwärtspfeil neben Ihrem Benutzernamen oben in Visual Studio. Wählen Sie dann das Menüelement **Kontoeinstellungen** aus. Im Dialogfeld **Konto-Manager** wird das Konto angezeigt, mit dem Sie sich angemeldet haben. Wählen Sie den Link **Konto hinzufügen** unten im Dialogfeld aus, um ein neues Microsoft-Konto oder ein neues Geschäfts- bzw. Schulkonto hinzuzufügen.  
 
- ![Visual Studio-Kontoauswahl](../ide/media/vs2015_acct_picker.png "VS2015_acct_picker")  
+ ![Visual Studio-Kontoauswahl](~/docs/ide/media/vs2015_acct_picker.png "VS2015_acct_picker")  
 
  Folgen Sie den Anweisungen, um die neuen Anmeldeinformationen für das Konto einzugeben. Die folgende Abbildung zeigt den Konto-Manager, nachdem ein Benutzer sein Contoso.com-Geschäftskonto hinzugefügt hat.  
 

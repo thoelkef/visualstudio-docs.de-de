@@ -32,7 +32,7 @@ Erfahren Sie mehr dazu, wie der Visual Studio-Editor das Lesen von und Navigiere
 ## <a name="syntax-colorization-statement-completion-and-navigate-to-support"></a>Farbige Syntaxhervorhebung, Anweisungsvervollständigung und Unterstützung von Navigieren zu  
  Funktionen wie farbige Syntaxhervorhebung, Anweisungsvervollständigung und Navigieren zu im Visual Studio-Editor können Ihnen helfen, Ihren Code leichter zu lesen, zu erstellen und zu bearbeiten. Der folgende Screenshot zeigt ein Beispiel für die Bearbeitung eines Perl-Skripts in Visual Studio. Die Syntax wird automatisch farbig hervorgehoben. Beispielsweise sind Anmerkungen im Code grün eingefärbt, Code ist schwarz, Pfade sind rot und Anweisungen blau. Der Visual Studio-Editor wendet die farbige Syntaxhervorhebung automatisch auf jede unterstützte Sprache an. Darüber hinaus zeigt die Anweisungsvervollständigung eine Liste der möglichen Anweisungen und Objekte an, sobald Sie mit der Eingabe eines bekannten Sprachschlüsselworts oder -objekts beginnen. Die Anweisungsvervollständigung kann Ihnen helfen, schnell und einfach mehr Code zu erstellen.  
   
- ![Farbige Syntaxhervorhebung in einem Perl-Skript](../ide/media/vside_perledit.png "VSIDE_PerlEdit")  
+ ![Farbige Syntaxhervorhebung in einem Perl-Skript](~/docs/ide/media/vside_perledit.png "VSIDE_PerlEdit")  
   
  Visual Studio bietet aktuell farbige Syntaxhervorhebung und Unterstützung für Anweisungsvervollständigung mithilfe von [TextMate Grammatiken](https://manual.macromates.com/en/language_grammars) für die folgenden Sprachen. Wenn sich Ihre bevorzugte Sprache nicht in der Liste findet, braucht Sie das trotzdem nicht zu beunruhigen – Sie können sie hinzufügen.  
   

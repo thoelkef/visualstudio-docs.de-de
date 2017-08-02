@@ -24,7 +24,7 @@ manager: "ghogen"
 # Ausf&#252;hren von Windows Phone-Apps im Emulator
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Gilt nur für Windows Phone](../debugger/media/phone_only_content.png "phone\_only\_content")  
+![Gilt nur für Windows Phone](~/docs/debugger/media/phone_only_content.png "phone\_only\_content")  
   
  Der Windows Phone\-Emulator ist eine Desktopanwendung, die ein Windows Phone simuliert. Der Emulator stellt eine virtualisierte Umgebung bereit, in der Sie Windows Phone\-Apps auf Ihrem Computer ohne ein physisches Gerät debuggen und testen können. Sie können typische Touch\- und Rotationsereignisse simulieren und die physische Bildschirmgröße und \-auflösung auswählen, die Sie emulieren möchten. Sie können außerdem viele häufig verwendete Features wie Standort, Netzwerk, Benachrichtigungen, Sensoren, den Beschleunigungsmesser und die optionale SD\-Karte testen.  
   
@@ -78,7 +78,7 @@ manager: "ghogen"
   
 2.  Wählen Sie in der Symbolleiste **Standard** eine der Emulatoroptionen aus.  
   
-     ![Liste der Bilder des Windows Phone&#45;Emulators](../cross-platform/media/wp_emulator_list.png "WP\_Emulator\_list")  
+     ![Liste der Bilder des Windows Phone&#45;Emulators](~/docs/debugger/media/wp_emulator_list.png "WP\_Emulator\_list")  
   
 3.  Klicken Sie zum Bereitstellen und Ausführen Ihrer App mit Debugging im Menü **Debuggen** auf **Debuggen starten**, oder drücken Sie F5.  
   
@@ -132,9 +132,9 @@ manager: "ghogen"
   
 |Schaltflächen auf der Symbolleiste|Konfigurationsoptionen|  
 |----------------------------------------|----------------------------|  
-|![Eingabeoptionen auf Emulator&#45;Symbolleiste Windows Phone](../debugger/media/wp_emulator_.png "WP\_Emulator\_")|**Konfigurieren einer Einzel\- oder Multipunkteingabe**<br /><br /> Wenn Sie die Multipunkteingabe aktivieren, können Sie mit der rechten Maustaste klicken, um die Berührungspunkte zu verschieben, ohne den Bildschirm zu berühren. Dann können Sie mit der linken Maustaste klicken, um beide Berührungspunkte gleichzeitig zu verschieben.|  
-|![Orientierung auf der Emulator&#45;Symbolleiste Windows Phone](../debugger/media/wp_emulator_rotation.png "WP\_Emulator\_rotation")|**Konfigurieren der Ausrichtung des Emulators**<br /><br /> Sie können die Ausrichtung im Windows Phone\-Emulator in eine der drei folgenden Ausrichtungen ändern: Hochformat, Querformat links oder Querformat rechts. Die Größe des Emulators wird bei einer Änderung der Ausrichtung nicht geändert.<br /><br /> Klicken Sie zum Ändern der Ausrichtung auf die Schaltfläche **Nach links drehen** oder **Nach rechts drehen**.|  
-|![Größenoptionen auf Emulator&#45;Symbolleiste Windows Phone](../debugger/media/wp_emulator_size.png "WP\_Emulator\_size")|**Konfigurieren der Größe des Emulators**<br /><br /> Sie können die Größe des Emulators auf dem Hostcomputerbildschirm ändern. Die Punkte pro Zoll \(DPI\) für den Emulator basieren auf dem DPI\-Wert des Hostbildschirms, unabhängig vom Zoomwert.<br /><br /> -   Klicken Sie zum Anpassen des Emulators an den Bildschirm auf die Schaltfläche **An Bildschirmgröße anpassen**.<br />-   Zum Ändern der Zoomeinstellungen klicken Sie auf die Schaltfläche **Zoom**. Das Dialogfeld **Zoom** wird geöffnet. Geben Sie im Dialogfeld **Zoom** einen Wert zwischen 33 und 100 ein.|  
+|![Eingabeoptionen auf Emulator&#45;Symbolleiste Windows Phone](~/docs/debugger/media/wp_emulator_.png "WP\_Emulator\_")|**Konfigurieren einer Einzel\- oder Multipunkteingabe**<br /><br /> Wenn Sie die Multipunkteingabe aktivieren, können Sie mit der rechten Maustaste klicken, um die Berührungspunkte zu verschieben, ohne den Bildschirm zu berühren. Dann können Sie mit der linken Maustaste klicken, um beide Berührungspunkte gleichzeitig zu verschieben.|  
+|![Orientierung auf der Emulator&#45;Symbolleiste Windows Phone](~/docs/debugger/media/wp_emulator_rotation.png "WP\_Emulator\_rotation")|**Konfigurieren der Ausrichtung des Emulators**<br /><br /> Sie können die Ausrichtung im Windows Phone\-Emulator in eine der drei folgenden Ausrichtungen ändern: Hochformat, Querformat links oder Querformat rechts. Die Größe des Emulators wird bei einer Änderung der Ausrichtung nicht geändert.<br /><br /> Klicken Sie zum Ändern der Ausrichtung auf die Schaltfläche **Nach links drehen** oder **Nach rechts drehen**.|  
+|![Größenoptionen auf Emulator&#45;Symbolleiste Windows Phone](~/docs/debugger/media/wp_emulator_size.png "WP\_Emulator\_size")|**Konfigurieren der Größe des Emulators**<br /><br /> Sie können die Größe des Emulators auf dem Hostcomputerbildschirm ändern. Die Punkte pro Zoll \(DPI\) für den Emulator basieren auf dem DPI\-Wert des Hostbildschirms, unabhängig vom Zoomwert.<br /><br /> -   Klicken Sie zum Anpassen des Emulators an den Bildschirm auf die Schaltfläche **An Bildschirmgröße anpassen**.<br />-   Zum Ändern der Zoomeinstellungen klicken Sie auf die Schaltfläche **Zoom**. Das Dialogfeld **Zoom** wird geöffnet. Geben Sie im Dialogfeld **Zoom** einen Wert zwischen 33 und 100 ein.|  
   
 ##  <a name="BKMK_buttons"></a> Verwenden der simulierten Hardwaretasten im Emulator  
  Über die simulierten Hardwaretasten auf der rechten Seite des Emulator\-Bildschirms können Sie die Hardwaretasten eines Telefons simulieren.  
@@ -153,7 +153,7 @@ manager: "ghogen"
   
 3.  Das rechte Bild zeigt den Emulator\-Bildschirm nach Tippen auf die Taste **Lauter** zum Erhöhen der Lautstärke.  
   
- ![Schaltfläche auf Windows Phone&#45;Emulator](../debugger/media/wp_emulator_buttons.png "WP\_Emulator\_buttons")  
+ ![Schaltfläche auf Windows Phone&#45;Emulator](~/docs/debugger/media/wp_emulator_buttons.png "WP\_Emulator\_buttons")  
   
 ##  <a name="BKMK_tasks_kbd"></a> Verwenden der Computertastatur mit dem Emulator  
  Der Emulator unterstützt die Zuordnung der Hardwaretastatur an Ihrem Entwicklungscomputer zur Tastatur auf einem Windows Phone. Das Verhalten der Tasten entspricht dem Verhalten auf einem Windows Phone\-Gerät.  
@@ -218,12 +218,12 @@ manager: "ghogen"
   
  Das ursprüngliche Emulatorabbild wird immer als erstes Element in der Liste **Prüfpunkte** angezeigt und kann weder geändert noch gelöscht werden. Sie können jedoch eine andere Momentaufnahme als standardmäßiges Emulatorabbild auswählen.  
   
- ![Registerkarte Prüfpunkt auf Windows Phone&#45;Emulator](../debugger/media/wp_emulator_checkpoints.png "WP\_Emulator\_checkpoints")  
+ ![Registerkarte Prüfpunkt auf Windows Phone&#45;Emulator](~/docs/debugger/media/wp_emulator_checkpoints.png "WP\_Emulator\_checkpoints")  
   
 ##  <a name="BKMK_tasks_shot"></a> Aufnehmen von Screenshots im Emulator  
  Sie können Screenshots Ihrer Windows Phone\-Apps mithilfe des Screenshottools bei den zusätzlichen Tools erstellen. Das Tool erstellt PNG\-Dateien, die der Auflösung des ausgeführten Emulators entsprechen.  
   
- ![Bildschirmfotos des Windows Phone&#45;Emulators](../debugger/media/wp_emulator_screenshots.png "WP\_Emulator\_screenshots")  
+ ![Bildschirmfotos des Windows Phone&#45;Emulators](~/docs/debugger/media/wp_emulator_screenshots.png "WP\_Emulator\_screenshots")  
   
 #### So erstellen Sie einen App\-Screenshot über das in den Emulator integrierte Screenshottool  
   

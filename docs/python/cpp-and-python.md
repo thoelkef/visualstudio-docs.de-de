@@ -52,7 +52,7 @@ Der Ansatz hier gilt für CPython-Standarderweiterungen, so wie in der [Python-D
 
 Diese exemplarische Vorgehensweise wurde für Visual Studio 2017 mit jeweils den Arbeitsauslastungen **Desktopentwicklung mit C++** und **Python-Entwicklung** mit den Standardoptionen (z.B. Python 3.6 als Standardinterpreter) geschrieben. Überprüfen Sie in der Arbeitsauslastung der **Python-Entwicklung** auch das Feld auf der rechten Seite für **Native Python-Entwicklungstools**, was den Großteil der in diesem Thema beschriebenen Optionen festlegt. (Diese Option enthält automatisch auch die C++-Arbeitsauslastung.) 
 
-![Auswählen der Option „Native Python-Entwicklungstools“](media/cpp-install-native.png)
+![Auswählen der Option „Native Python-Entwicklungstools“](~/docs/python/media/cpp-install-native.png)
 
 Weitere Details finden Sie unter [Installieren von Python-Unterstützung für Visual Studio](installation.md), einschließlich der Verwendung anderer Versionen von Visual Studio. Wenn Sie Python separat installieren, stellen Sie sicher, dass Sie **Download debugging symbols** (Debugsymbole herunterladen) und **Download debug binaries** (Debugbinärdateien herunterladen) unter **Erweiterte Optionen** im Installer auswählen. Dadurch wird sichergestellt, dass Sie über die erforderlichen Debugbibliotheken verfügen, wenn Sie einen Debugbuild ausführen.
 
@@ -278,7 +278,7 @@ Sie können nun den `tanh`-Code des Moduls aufrufen und dessen Leistung mit der 
 
 1. Legen Sie einen Haltepunkt auf der ersten Zeile innerhalb der `tanh`-Methode in Ihrem C++-Code fest, und starten Sie anschließend den Debugger. Der Debugger wird angehalten, wenn folgender Code aufgerufen wird:
 
-    ![Anhalten an einem Haltepunkt im C++-Code](media/cpp-debugging.png)
+    ![Anhalten an einem Haltepunkt im C++-Code](~/docs/python/media/cpp-debugging.png)
 
 1. An diesem Punkt können Sie den C++-Code schrittweise durchlaufen, Variablen untersuchen, usw., so wie in [Debugging C++ and Python Together (Gleichzeitiges Debuggen von C++ und Python)](debugging-mixed-mode.md) beschrieben.
 

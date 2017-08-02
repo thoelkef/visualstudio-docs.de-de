@@ -44,7 +44,7 @@ Ermitteln Sie mithilfe des Analyzers für verwalteten Speicher von Visual Studio
   
  Für jede Anwendung verwaltet das GC eine Verweisstruktur, die die Objekte verfolgt, auf die von der Anwendung verwiesen wird.  Die *Verweisstruktur* verfügt über eine Reihe von Stammelementen, die globale und statische Objekte umfassen, sowie zugeordnete Threadstapel und dynamisch instanziierte Objekte.  Ein Objekt verfügt über einen Stamm, wenn das Objekt mindestens ein übergeordnetes Objekt hat, das einen Verweis darauf enthält.  Das GC kann den Arbeitsspeicher eines Objekts nur dann freigeben, wenn kein anderes Objekt oder keine andere Variable in der Anwendung über einen Verweis darauf verfügt.  
   
- ![Zurück nach oben](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents)  
+ ![Zurück nach oben](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents)  
   
 ##  <a name="BKMK_Identify_a_memory_issue_in_an_app"></a> Erkennen eines Arbeitsspeicherproblems in einer App  
  Das sichtbarste Symptom von Arbeitsspeicherproblemen ist die Leistung der App, insbesondere dann, wenn die Leistung im Zeitverlauf abnimmt.  Eine Verringerung der Leistung anderer Apps während der Ausführung Ihrer App kann ebenfalls auf ein Arbeitsspeicherproblem hinweisen.  Wenn Sie ein Arbeitsspeicherproblem vermuten, verwenden Sie ein Tool wie Task\-Manager oder [Windows\-Systemmonitor](http://technet.microsoft.com/library/cc749249.aspx), um dem Problem auf den Grund zu gehen.  Schauen Sie beispielsweise, ob die Gesamtgröße des Speichers angestiegen ist, was sich aber nicht als potenzielle Quelle von Arbeitsspeicherverlusten erklären lässt:  
@@ -73,7 +73,7 @@ Ermitteln Sie mithilfe des Analyzers für verwalteten Speicher von Visual Studio
   
  Um die gestiegene Arbeitsspeichernutzung einer App zu analysieren, erfassen Sie zwei Dumpdateien aus einer einzelnen Instanz der App.  
   
- ![Zurück nach oben](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents)  
+ ![Zurück nach oben](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents)  
   
 ##  <a name="BKMK_Analyze_memory_use"></a> Analysieren der Arbeitsspeichernutzung  
  [Filtern der Objektliste](#BKMK_Filter_the_list_of_objects) **&#124;** [Analysieren der Arbeitsspeicherdaten von einer einzelnen Momentaufnahme](#BKMK_Analyze_memory_data_in_from_a_single_snapshot) **&#124;** [Vergleich von zwei Speichermomentaufnahmen](#BKMK_Compare_two_memory_snapshots)  
@@ -88,7 +88,7 @@ Ermitteln Sie mithilfe des Analyzers für verwalteten Speicher von Visual Studio
   
  Die Speicheranalyse startet eine Debugsitzung, um die Datei zu analysieren, und zeigt die Ergebnisse auf der Seite "Heap\-Ansicht" an:  
   
- ![Zurück nach oben](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents)  
+ ![Zurück nach oben](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents)  
   
 ###  <a name="BKMK_Filter_the_list_of_objects"></a> Filtern der Objektliste  
  Standardmäßig wird die Liste der Objekte in einer Speichermomentaufnahme von der Speicheranalyse gefiltert, um nur die Typen und die Instanzen anzuzeigen, die Benutzercode sind, und nur die Typen darzustellen, deren inklusive Gesamtgröße einen prozentualen Schwellenwert der gesamten Heapgröße überschreitet.  Sie können diese Optionen in der Liste **Anzeigeeinstellungen** ändern:  
@@ -100,14 +100,14 @@ Ermitteln Sie mithilfe des Analyzers für verwalteten Speicher von Visual Studio
   
  Sie können die Typenliste auch filtern, indem Sie eine Zeichenfolge im Feld **Suchen** eingeben.  Die Liste enthält nur die Typen, deren Namen die Zeichenfolge enthalten.  
   
- ![Zurück nach oben](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents)  
+ ![Zurück nach oben](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents)  
   
 ###  <a name="BKMK_Analyze_memory_data_in_from_a_single_snapshot"></a> Analysieren der Arbeitsspeicherdaten von einer einzelnen Momentaufnahme  
  Visual Studio beginnt eine neue Debugsitzung zur Analyse der Datei und zeigt die Speicherdaten in einem Fenster Heap\-Ansicht an.  
   
  ![Die Objekttypliste](../misc/media/dbg_mma_objecttypelist.png "DBG\_MMA\_ObjectTypeList")  
   
- ![Zurück nach oben](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents)  
+ ![Zurück nach oben](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents)  
   
 #### Objekttyptabelle  
  In der Tabelle ganz oben werden die Typen von Objekten aufgeführt, die im Arbeitsspeicher gespeichert werden.  
@@ -118,7 +118,7 @@ Ermitteln Sie mithilfe des Analyzers für verwalteten Speicher von Visual Studio
   
 -   **Inklusive Größe \(Bytes\)** schließt die Größen von referenzierten Objekten ein.  
   
- Sie können das Instanzensymbol \(![Das Instanzsymbol in der Spalte Objekttyp](../misc/media/dbg_mma_instancesicon.png "DBG\_MMA\_InstancesIcon")\) in der Spalte **Objekttyp** auswählen und eine Liste der Instanzen des Typs anzeigen.  
+ Sie können das Instanzensymbol \(![Das Instanzsymbol in der Spalte Objekttyp](~/docs/profiling/media/dbg_mma_instancesicon.png "DBG\_MMA\_InstancesIcon")\) in der Spalte **Objekttyp** auswählen und eine Liste der Instanzen des Typs anzeigen.  
   
 #### Instanztabelle  
  ![Instanztabelle](../misc/media/dbg_mma_instancestable.png "DBG\_MMA\_InstancesTable")  
@@ -181,7 +181,7 @@ Ermitteln Sie mithilfe des Analyzers für verwalteten Speicher von Visual Studio
   
  Außerdem wird die Spalte **Differenz Verweisanzahl** zur Tabelle **Pfade zum Stamm** hinzugefügt.  
   
- ![Zurück nach oben](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents)  
+ ![Zurück nach oben](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents)  
   
 ## Siehe auch  
  [Using Visual Studio 2013 to Diagnose .NET Memory Issues in Production](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx)   

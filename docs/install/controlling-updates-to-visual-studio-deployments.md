@@ -74,7 +74,7 @@ Wenn Sie direkt steuern möchten, wo Visual Studio nach Updates sucht, und auf w
  8. Bei neuen Installationen wird die aktualisierte Version von Visual Studio direkt und automatisch aus dem Layout installiert.
 
 ## <a name="controlling-notifications-in-the-visual-studio-ide"></a>Steuern der Benachrichtigungen in der Visual Studio IDE
-Wie zuvor beschrieben, überprüft Visual Studio den Speicherort, von dem aus es installiert wurde (z. B. Netzwerkfreigabe oder Internet), um zu prüfen, ob Updates verfügbar sind. Sobald ein Update verfügbar ist, benachrichtigt Visual Studio den Benutzer standardmäßig mit einem Benachrichtigungshinweis rechts oben im Fenster: ![Benachrichtigungshinweis für Updates](media/notification-flag.png)
+Wie zuvor beschrieben, überprüft Visual Studio den Speicherort, von dem aus es installiert wurde (z. B. Netzwerkfreigabe oder Internet), um zu prüfen, ob Updates verfügbar sind. Sobald ein Update verfügbar ist, benachrichtigt Visual Studio den Benutzer standardmäßig mit einem Benachrichtigungshinweis rechts oben im Fenster: ![Benachrichtigungshinweis für Updates](~/docs/install/media/notification-flag.png)
 
 Wenn Sie nicht möchten, dass Endbenutzer über Updates benachrichtigt werden (z. B. wenn die Verteilung von Updates über einen zentralen Softwareverteilungsmechanismus erfolgt), können Sie diese Benachrichtigungen deaktivieren.
 

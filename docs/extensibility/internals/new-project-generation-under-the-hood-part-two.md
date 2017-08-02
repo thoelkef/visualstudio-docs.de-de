@@ -134,7 +134,7 @@ namespace Simple
   
  Die resultierende Windows-Anwendung-Ordnerstruktur sieht folgendermaßen aus:  
   
- ![SimpleSolution](../../extensibility/internals/media/simplesolution.png "SimpleSolution")  
+ ![SimpleSolution](~/docs/extensibility/internals/media/simplesolution.png "SimpleSolution")  
   
  Die erste und einzige \<Projekt > Tag in die Vorlage lautet:  
   

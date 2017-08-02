@@ -227,11 +227,11 @@ Dieses Thema enthält Informationen, die Ihnen bei der Lösung von Problemen hel
   
     2.  Wählen Sie für den vEthernet-Adapter (Port Windows Phone Emulator – interner Switch) **Eigenschaften** aus dem Kontextmenü.  
   
-         ![Von Hyper&#45;V verwendeter virtueller Adapter](../cross-platform/media/android_emu_virtual_adapter.png "Android_Emu_Virtual_Adapter")  
+         ![Von Hyper&#45;V verwendeter virtueller Adapter](~/docs/cross-platform/media/android_emu_virtual_adapter.png "Android_Emu_Virtual_Adapter")  
   
          Hier werden die Eigenschaften des Adapters angezeigt.  
   
-         ![Eigenschaften des virtuellen Adapters](../cross-platform/media/android_emu_virtual_adapter_properties.png "Android_Emu_Virtual_Adapter_Properties")  
+         ![Eigenschaften des virtuellen Adapters](~/docs/cross-platform/media/android_emu_virtual_adapter_properties.png "Android_Emu_Virtual_Adapter_Properties")  
   
     3.  Für diesen Adapter sollten nur die folgenden Elemente unter **diese Verbindung verwendet folgende Elemente** ausgewählt werden:  
   
@@ -259,7 +259,7 @@ Dieses Thema enthält Informationen, die Ihnen bei der Lösung von Problemen hel
   
     -   Öffnen Sie Hyper-V und wechseln Sie zum Manager für virtuelle Switches. Erstellen Sie einen virtuellen Switch mit dem Namen „Windows Phone-Emulator, interner Switch“, und setzen Sie den Verbindungstyp auf **internes Netzwerk**.  
   
-         ![Manager für virtuelle Switches](../cross-platform/media/android_emu_virtual_switch_manager.png "Android_Emu_Virtual_Switch_Manager")  
+         ![Manager für virtuelle Switches](~/docs/cross-platform/media/android_emu_virtual_switch_manager.png "Android_Emu_Virtual_Switch_Manager")  
   
      Starten Sie jetzt den Emulator. Es sollte funktionieren.  
   

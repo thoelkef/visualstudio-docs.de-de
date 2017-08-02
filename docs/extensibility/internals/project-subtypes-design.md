@@ -52,7 +52,7 @@ Projekt untertypen VSPackages können Projekte auf Grundlage des Microsoft Build
   
  Die folgende Abbildung zeigt eine vereinfachte Darstellung einer Projekt untertyp aggregation auf mehreren Ebenen angegeben.  
   
- ![Grafik zu Visual Studio&#45;Mehrebenen&#45;Projekttyp](../../extensibility/internals/media/vs_multilevelprojectflavor.png "VS\_MultilevelProjectFlavor")  
+ ![Grafik zu Visual Studio&#45;Mehrebenen&#45;Projekttyp](~/docs/extensibility/internals/media/vs_multilevelprojectflavor.gif "VS\_MultilevelProjectFlavor")  
 Mehrstufiger Projekt\-Untertyp  
   
  Eine Projekt untertyp aggregation auf mehreren Ebenen besteht aus drei Ebenen, ein niedriges Projekt, das von einem Projekt untertyp aggregiert wird, profitieren von aggregiertes dann einen erweiterten Projekt untertyp.  Die Abbildung konzentriert sich auf einige der unterstützenden Schnittstellen, die als Teil der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Architektur der untertyp Projekt zur Verfügung gestellt werden.  
@@ -62,7 +62,7 @@ Mehrstufiger Projekt\-Untertyp
   
  In der folgenden Abbildung extender konzentriert sich auf die Automatisierung, das suchobjekt Projektkonfiguration Implementierung verwendet, insbesondere die vom Projekt untertypen, um das niedrige Projektsystem zu erweitern.  
   
- ![Grafik zu VS&#45;Projekttyp Automatisierungsextender](../../extensibility/internals/media/vs_projectflavorautoextender.png "VS\_ProjectFlavorAutoExtender")  
+ ![Grafik zu VS&#45;Projekttyp Automatisierungsextender](~/docs/extensibility/internals/media/vs_projectflavorautoextender.gif "VS\_ProjectFlavorAutoExtender")  
 Projekt\-Untertyp\-Automatisierungs\-Extender.  
   
  Projektuntertypen können das niedrige Projektsystem weiter erweitern, indem sie das Automatisierungsobjektmodell erweitern.  Diese werden als Teil des DTE\-Automatisierungsobjekts definiert und verwendet werden, um das Projektobjekt, das `ProjectItem`\-Objekt und das `Configuration`\-Objekt zu erweitern.  Weitere Informationen finden Sie unter [Erweitern Sie das Objektmodell des Basis\-Projekts](../../extensibility/internals/extending-the-object-model-of-the-base-project.md).  

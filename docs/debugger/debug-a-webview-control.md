@@ -23,7 +23,7 @@ caps.handback.revision: 10
 # Debuggen eines WebView-Steuerelements
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Gilt für Windows und Windows Phone](../debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![Gilt für Windows und Windows Phone](~/docs/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  Um `WebView`\-Steuerelemente in einer Windows\-Runtime\-App zu überprüfen und zu debuggen, können Sie Visual Studio so konfigurieren, dass es den Skriptdebugger anfügt, wenn Sie Ihre App starten.  Ab Visual Studio 2013 Update 2 haben Sie zwei Möglichkeiten für die Interaktion mit den `WebView`\-Steuerelementen bei Verwendung des Debuggers:  
   

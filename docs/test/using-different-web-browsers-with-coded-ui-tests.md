@@ -117,17 +117,17 @@ Tests der programmierten UI können Tests für Webanwendungen durch Aufzeichnen 
  *Was sollte ich noch wissen?*  
  **Notizen**  
   
--   ![Erforderliche Komponente](../test/media/prereq.png "Prereq") Der Webbrowser Apple Safari wird nicht unterstützt.  
+-   ![Erforderliche Komponente](~/docs/test/media/prereq.png "Prereq") Der Webbrowser Apple Safari wird nicht unterstützt.  
   
--   ![Prerequsite](../test/media/prereq.png "Prereq") Die Aktion zum Starten des Webbrowsers muss Teil des Tests der programmierten UI sein.  
+-   ![Prerequsite](~/docs/test/media/prereq.png "Prereq") Die Aktion zum Starten des Webbrowsers muss Teil des Tests der programmierten UI sein.  
   
      Wenn Sie einen Webbrowser bereits geöffnet haben und Schritte darin ausführen möchten, schlägt die Wiedergabe fehl, sofern Sie nicht Internet Explorer verwenden. Eine bewährte Methode ist daher, den Start des Webbrowsers in die Tests der programmierten UI einzubinden.  
   
--   ![Prerequsite](../test/media/prereq.png "Prereq") Das Automatisieren von browserspezifischen UI-Aktionen, wie Maximieren, Minimieren und Wiederherstellen wird nicht unterstützt.  
+-   ![Prerequsite](~/docs/test/media/prereq.png "Prereq") Das Automatisieren von browserspezifischen UI-Aktionen, wie Maximieren, Minimieren und Wiederherstellen wird nicht unterstützt.  
   
  **Tipps**  
   
--   ![Tipp](../test/media/tip.png "Tip") Sie können die Ausgabe so konfigurieren, dass Screenshots in den Coded UI-Protokollen enthalten sind. Hierzu müssen einige Konfigurationseinstellungen in der Datei "QTAgent32.exe.config" festgelegt werden. Standardmäßig wird diese Datei an folgendem Speicherort installiert:  
+-   ![Tipp](~/docs/test/media/tip.png "Tip") Sie können die Ausgabe so konfigurieren, dass Screenshots in den Coded UI-Protokollen enthalten sind. Hierzu müssen einige Konfigurationseinstellungen in der Datei "QTAgent32.exe.config" festgelegt werden. Standardmäßig wird diese Datei an folgendem Speicherort installiert:  
   
      **C:\Programme (x86)\Microsoft Visual Studio 11.0\Common7\IDE“**  
   

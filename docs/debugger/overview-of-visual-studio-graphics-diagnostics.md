@@ -77,7 +77,7 @@ Die *Grafikdiagnose* von Visual Studio umfasst eine Reihe von Tools zum Aufzeich
 ### Die Grafiksymbolleiste \(Grafikanalyse\)  
  Die Grafiksymbolleiste bietet schnellen Zugriff die Toolfenster der Grafikanalyse.  
   
- ![Die Grafik&#45;Symbolleiste im Grafikdiagnosemodus](../debugger/media/vsg_toolbar.png "vsg\_toolbar")  
+ ![Die Grafik&#45;Symbolleiste im Grafikdiagnosemodus](~/docs/debugger/graphics/media/vsg_toolbar.png "vsg\_toolbar")  
   
 ### Grafikprotokolldokument  
  In der Grafikanalyse ist das Grafikprotokolldokument das auffälligste Toolfenster.  In diesem Fenster werden alle Frames dargestellt, die Sie beim Ausführen der App unter der Grafikdiagnose erfasst haben.  Hier können Sie einen anderen Frame zum Überprüfen oder ein bestimmtes Pixel auswählen, das Sie mit dem Pixelverlauftool genauer untersuchen möchten.  Das in diesem Dokument angezeigte Frame\-Pufferbild ändert sich so, dass es das derzeit ausgewählte Ereignis darstellt. Auf diese Weise können Sie sehen, wie sich der Frame\-Puffer im Zeitverlauf ändert.  

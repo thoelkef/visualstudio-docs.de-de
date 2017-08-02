@@ -23,7 +23,7 @@ caps.handback.revision: 14
 # Bereitstellen von Windows Store-Apps aus Visual Studio
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Gilt nur für Windows](../debugger/media/windows_only_content.png "windows\_only\_content")  
+![Gilt nur für Windows](~/docs/debugger/media/windows_only_content.png "windows\_only\_content")  
   
  Die Bereitstellungsfunktion von Visual Studio erstellt und registriert Windows Store\-Apps, die mit Visual Studio erstellt wurden, auf einem Zielgerät. Wie genau die App registriert wird, hängt davon ob, ob sich das Zielgerät lokal oder remote befindet:  
   

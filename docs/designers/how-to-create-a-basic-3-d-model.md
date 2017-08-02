@@ -37,7 +37,7 @@ Dieses Dokument veranschaulicht, wie Sie den Modell\-Editor verwenden, um ein ei
   
  Wenn Sie fertig sind, sollte das Modell wie folgt aussehen:  
   
- ![Das abgeschlossene Modell des vereinfachten Hauses](../designers/media/gfx_model_demo_house_final.png "gfx\_model\_demo\_house\_final")  
+ ![Das abgeschlossene Modell des vereinfachten Hauses](~/docs/designers/media/gfx_model_demo_house_final.png "gfx\_model\_demo\_house\_final")  
   
  Bevor Sie beginnen, sicher, dass das Fenster **Eigenschaften** und **Werkzeugkasten** angezeigt werden.  
   
@@ -51,27 +51,27 @@ Dieses Dokument veranschaulicht, wie Sie den Modell\-Editor verwenden, um ein ei
   
 4.  Unterteilen Sie den Anfang des Cubes.  im Flächenauswahlmodus wählen Sie den Cube einmal, um ihn für Auswahl zu aktivieren, und dann die Spitze des Cubes, um die oben auswählen.  Auf der Modell\-Editor\-Symbolleiste wählen Sie **Unterteilen Sie eine Fläche** aus.  Dies fügt neuen Schnittpunkte Anfang des Cubes hinzu, der es in vier gleichmäßig skalierte Partitionen Unterteilung.  
   
-     ![Die Oberseite des Würfels wurde unterteilt](../designers/media/gfx_model_demo_house_subdiv.png "gfx\_model\_demo\_house\_subdiv")  
+     ![Die Oberseite des Würfels wurde unterteilt](~/docs/designers/media/gfx_model_demo_house_subdiv.png "gfx\_model\_demo\_house\_subdiv")  
   
 5.  Verdrängen zwei angrenzende Seiten von Cube – z. B. die Vorder\- und rechten Seite des Cubes.  im Flächenauswahlmodus wählen Sie den Cube einmal, um ihn für Auswahl zu aktivieren und eine Seite des Würfels aus.  Halten Sie STRG an, wählen Sie eine andere Seite des Würfels aus, der neben der Seite, die Sie anfänglich ausgewählt und dann auf der Modell\-Editor\-Symbolleiste ist, **Extrudieren Sie eine Fläche** auswählen.  
   
-     ![Die Seiten des Würfels wurden extrudiert](../designers/media/gfx_model_demo_house_extrude.png "gfx\_model\_demo\_house\_extrude")  
+     ![Die Seiten des Würfels wurden extrudiert](~/docs/designers/media/gfx_model_demo_house_extrude.png "gfx\_model\_demo\_house\_extrude")  
   
 6.  Erweitern einer der Extrusionen.  Wählen Sie eine der Seiten, die Sie gerade verdrängten, und dann, auf der Modell\-Editor\-Symbolleiste, das Tool **Verschieben** und verschieben den Übersetzungsmanipulator in derselben Richtung wie die Extrusion aus.  
   
-     ![Eine Seite des Würfels wurde noch weiter extrudiert.](../designers/media/gfx_model_demo_house_extend.png "gfx\_model\_demo\_house\_extend")  
+     ![Eine Seite des Würfels wurde noch weiter extrudiert.](~/docs/designers/media/gfx_model_demo_house_extend.png "gfx\_model\_demo\_house\_extend")  
   
 7.  Triangulate das Modell.  Auf der Modell\-Editor\-Symbolleiste, wählen Sie **Tools**, **TriangulierenErweitert** aus.  
   
 8.  Erstellen Sie das Dach des Hauses erstellt.  In den RandAuswahlmodus, indem er auf der Modell\-Editor\-Symbolleiste **Kante auswählen** auswählt, und anschließend auswählen den Cube, um es zu aktivieren.  Halten Sie STRG an, wie Sie die Ränder auswählen, die hier angezeigt:  
   
-     ![Die Kanten, die die Spitze des Dachs bilden sollen](../designers/media/gfx_model_demo_house_edges.png "gfx\_model\_demo\_house\_edges")  
+     ![Die Kanten, die die Spitze des Dachs bilden sollen](~/docs/designers/media/gfx_model_demo_house_edges.png "gfx\_model\_demo\_house\_edges")  
   
      Wenn die Breite, auf der Modell\-Editor\-Symbolleiste ausgewählt sind, wählen Sie das Tool **Verschieben** aus und verschieben Sie dann den Übersetzungsmanipulator nach oben, um das Dach des Hauses zu erstellen.  
   
  Das vereinfacht Hausmodell ist vollständig.  Es folgt das endgültige Modell erneut, wenn die flache Schattierung angewendet ist:  
   
- ![Das abgeschlossene Modell des vereinfachten Hauses](../designers/media/gfx_model_demo_house_final.png "gfx\_model\_demo\_house\_final")  
+ ![Das abgeschlossene Modell des vereinfachten Hauses](~/docs/designers/media/gfx_model_demo_house_final.png "gfx\_model\_demo\_house\_final")  
   
  Als nächster Schritt können Sie einen Shader auf das 3D\-Modell anwenden.  Weitere Informationen finden Sie unter [Gewusst wie: Anwenden eines Shaders auf ein 3D\-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
   

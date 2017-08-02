@@ -91,7 +91,7 @@ In diesem Dokument wird beschrieben, wie Sie mit dem [!INCLUDE[vsprvs](../code-q
   
  Die Symbolleiste **Model\-Editor**:  
   
- ![Symbolleiste des Modell&#45;Viewers](../designers/media/digit-mre-toolbar.png "Digit\-MRE\-Toolbar")  
+ ![Symbolleiste des Modell&#45;Viewers](~/docs/designers/media/digit-mre-toolbar.png "Digit\-MRE\-Toolbar")  
   
  In der folgenden Tabelle werden die Elemente der Symbolleiste **Model\-Editor\-Modus** beschrieben und in der Reihenfolge aufgelistet, in der sie auf der Symbolleiste von oben nach unten angezeigt werden.  
   

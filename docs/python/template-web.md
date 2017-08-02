@@ -42,13 +42,13 @@ Die Python-Unterstützung in Visual Studio umfasst Unterstützung für die Entwi
 
 Jede Vorlage (zugänglich über **Datei > Neu > Projekt**) startet einen Webserver mit einem zufällig ausgewählten lokalen Port, öffnen Ihren Standardbrowser beim Debuggen und ermöglicht eine direkte Veröffentlichung in [Microsoft Azure](http://www.azure.com). Vorlagen werden für Bottle, Flask und Django bereitgestellt und können Sie die generische Vorlage „Webprojekt“ für andere Frameworks wie Pyramid nutzen.
 
-![Neue Webprojektvorlagen](media/template-web-new-project.png)
+![Neue Webprojektvorlagen](~/docs/python/media/template-web-new-project.png)
 
 Die Vorlagen für Bottle, Flask und Django enthalten jeweils eine Startwebsite mit einigen Seiten und statischen Dateien. Dieser Code ist ausreichend für das lokale Ausführen und Debuggen des Servers (wobei einige Einstellungen aus der Umgebung abgerufen werden müssen) sowie für das Bereitstellen für Microsoft Azure (wobei ein [WSGI-App](http://www.python.org/dev/peps/pep-3333/)-Objekt angegeben werden muss).
 
 Beim Erstellen eines Projekts mit einer frameworkspezifischen Vorlage wird ein Dialogfeld angezeigt, das Sie bei der Installation der erforderlichen Pakete über PIP unterstützt. Zudem empfehlen wir die Verwendung einer [virtuellen Umgebung](python-environments.md#virtual-environments) für Webprojekte, damit beim Veröffentlichen der Website die richtigen Abhängigkeiten enthalten sind:
 
-![Dialogfeld, über das die erforderlichen Pakete für eine Projektvorlage installiert werden](media/template-web-requirements-txt-wizard.png)
+![Dialogfeld, über das die erforderlichen Pakete für eine Projektvorlage installiert werden](~/docs/python/media/template-web-requirements-txt-wizard.png)
 
 Bei der Bereitstellung in Microsoft Azure App Service müssen Sie eine Version von Python als [Websiteerweiterung](https://aka.ms/PythonOnAppService) auswählen und Pakete manuell installieren. Da Pakete in Azure App Service bei Bereitstellung über Visual Studio **nicht** automatisch anhand einer `requirements.txt`-Datei installiert werden, befolgen Sie außerdem die Konfigurationsdetails unter [aka.ms/PythonOnAppService](https://aka.ms/PythonOnAppService).
 
@@ -62,7 +62,7 @@ Eine Einführung in Python-Webprojekte finden Sie in diesem Video: [Getting Star
 
 Wenn ein Webprojekt zum Debuggen gestartet wird, startet Visual Studio den Webserver lokal und öffnet Ihren Standardbrowser mit dieser Adresse und diesem Port. Um zusätzliche Optionen anzugeben, klicken Sie mit der rechten Maustaste auf das Projekt, wählen Sie **Eigenschaften**, und wählen Sie die Registerkarte **Webstartprogramm**:
 
-  ![Eigenschaften des Webstartprogramms für die generische Webvorlage](media/template-web-launcher-properties.png)
+  ![Eigenschaften des Webstartprogramms für die generische Webvorlage](~/docs/python/media/template-web-launcher-properties.png)
 
 Gruppe **Debuggen**:
 
@@ -124,7 +124,7 @@ Wenn Sie Einstellungen für ein anderes Framework verwenden, die Sie teilen möc
 
 Es gibt im Wesentlichen zwei Methoden für die Veröffentlichung in Azure App Service. Als Erstes kann die Bereitstellung über die Quellcodeverwaltung auf die gleiche Weise wie bei anderen Sprachen verwendet werden, wie beschrieben in der [Azure-Dokumentation](http://azure.microsoft.com/en-us/documentation/articles/web-sites-publish-source-control/). Zur direkten Veröffentlichung aus Visual Studio klicken Sie mit der rechten Maustaste auf das Projekt und wählen **Veröffentlichen**:
 
-![Befehl „Veröffentlichen“ im Kontextmenü eines Projekts](media/template-web-publish-command.png)
+![Befehl „Veröffentlichen“ im Kontextmenü eines Projekts](~/docs/python/media/template-web-publish-command.png)
 
 Nach Auswahl des Befehls werden Sie von einem Assistenten durch das Erstellen einer Website oder das Importieren von Veröffentlichungseinstellungen, das Anzeigen einer Vorschau der geänderten Dateien und das Veröffentlichen auf einem Remoteserver geleitet.
 
@@ -134,7 +134,7 @@ Zum Installieren von Python in App Service empfehlen wir die Verwendung der [Web
 
 Eine Websiteerweiterung kann im [Azure-Portal](https://portal.azure.com/) über das Blatt **Entwicklungstools > Erweiterungen** für App Service bereitgestellt werden, indem Sie **Hinzufügen** auswählen und die Liste nach den Erweiterungen für Python durchsuchen:
 
-![Hinzufügen einer Websiteerweiterung im Azure-Portal](media/template-web-site-extensions.png)
+![Hinzufügen einer Websiteerweiterung im Azure-Portal](~/docs/python/media/template-web-site-extensions.png)
 
 Wenn Sie JSON-Bereitstellungsvorlagen verwenden, können Sie die Websiteerweiterung als Ressource Ihrer Website angeben:
 
@@ -173,7 +173,7 @@ c:\Python27\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
 
 Bei Bereitstellung in Azure App Service wird Ihre Website hinter Microsoft IIS ausgeführt. Um die Zusammenarbeit Ihrer Website mit IIS zu ermöglichen, müssen Sie mindestens eine `web.config`-Datei hinzufügen. Für einige gängige Bereitstellungsziele stehen Vorlagen zur Verfügung, die Sie durch Klicken mit der rechten Maustaste auf das Projekt und durch Auswahl von „Hinzufügen“ > „Neues Element“ (wie im folgenden Dialogfeld gezeigt) aufrufen können. Diese können problemlos für andere Zwecke geändert werden. Informationen zu den verfügbaren Konfigurationseinstellungen finden Sie in der [Referenz zur IIS-Konfiguration](https://www.iis.net/configreference).
 
-![Azure-Elementvorlagen](media/template-web-azure-items.png)
+![Azure-Elementvorlagen](~/docs/python/media/template-web-azure-items.png)
 
 Die folgenden Elemente sind verfügbar:
 
@@ -186,9 +186,9 @@ Die folgenden Elemente sind verfügbar:
 
 Wenn Sie Ihrem Projekt die `web.config`-Debuggingvorlage hinzufügen und das Remotedebuggen in Python verwenden möchten, müssen Sie die Website in der Konfiguration „Debug“ veröffentlichen. Diese Einstellung ist von der aktuellen aktiven Konfiguration der Projektmappe getrennt und lautet standardmäßig „Release“. Um sie zu ändern, öffnen Sie die Registerkarte **Einstellungen**, und verwenden Sie das Kombinationsfeld **Konfiguration** im Veröffentlichungs-Assistenten (weitere Informationen zur Erstellung und Bereitstellung in Azure-Web-Apps finden Sie in der [Azure-Dokumentation](https://azure.microsoft.com/develop/python/)):
 
-![Ändern der Veröffentlichungskonfiguration](media/template-web-publish-config.png)
+![Ändern der Veröffentlichungskonfiguration](~/docs/python/media/template-web-publish-config.png)
 
 Mit dem Befehl **In Microsoft Azure Cloud Services-Projekt konvertieren** (Abbildung unten) wird Ihrer Projektmappe ein Cloud Services-Projekt hinzugefügt. Dieses Projekt umfasst die Bereitstellungseinstellungen und die Konfiguration für die zu verwendenden virtuellen Computer und Dienste. Verwenden Sie den Befehl **Veröffentlichen** im Cloudprojekt zur Bereitstellung in Cloud Services; mit dem Befehl **Veröffentlichen** im Python-Projekt erfolgt die Bereitstellung weiterhin auf Websites. Weitere Details finden Sie unter [Azure Cloud Services-Projekte](template-azure-cloud-service.md).
 
-![Befehl „In Microsoft Azure Cloud Services-Projekt konvertieren“](media/template-web-convert-menu.png)
+![Befehl „In Microsoft Azure Cloud Services-Projekt konvertieren“](~/docs/python/media/template-web-convert-menu.png)
 

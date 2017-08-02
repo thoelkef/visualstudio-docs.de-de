@@ -100,7 +100,7 @@ Der Visual Studio-Emulator für Android ist eine Desktopanwendung, die ein Andro
   
  In Visual Studio 2015 können Sie Geräteprofile mithilfe des Emulator-Managers installieren, deinstallieren und starten. Greifen Sie auf den Emulator-Manager zu, indem Sie auf **Extras**, und dann auf **Visual Studio-Emulator für Android** klicken.  
   
- ![Visual Studio-Emulator für Android-Manager](../cross-platform/media/android_emu_manager.png "Android_Emu_Manager")  
+ ![Visual Studio-Emulator für Android-Manager](~/docs/cross-platform/media/android_emu_manager.png "Android_Emu_Manager")  
   
  In der Standardeinstellung sind vier vorinstallierte Geräteprofile verfügbar (KitKat und Lollipop Phone/5 "und Tablet/7"-Konfigurationen), wie durch weißen Text und Symbole gekennzeichnet. Andere Profile in der Liste werden abgeblendet, bis Sie auf die Schaltfläche **Profil installieren** klicken und die Installation abgeschlossen ist. Sie können die Liste nach API-Ebene filtern und auf den Details-Pfeil unten rechts in einem Profil klicken, um die vollständigen Konfigurationsdetails anzuzeigen.  
   

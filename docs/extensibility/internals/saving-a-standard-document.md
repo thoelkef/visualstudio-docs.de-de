@@ -23,7 +23,7 @@ caps.handback.revision: 8
 
 Die Umgebung verarbeitet die Speichern, Speichern unter, und speichert alle Befehle.  Wenn ein Benutzer **Speichern**, **Speichern unter**oder **Alle speichern** aus dem Menü **Datei** auswählt oder schließt, wird die Lösung, mit dem Ergebnis **Alle speichern**, der folgende Prozess auf.  
   
- ![Standard&#45;Editor](../../extensibility/internals/media/public.png "Public")  
+ ![Standard&#45;Editor](~/docs/extensibility/internals/media/public.gif "Public")  
 Speichern, Speichern unter, und speichern Sie alle Befehls Klassenbehandlung für einen standardmäßigen Editor  
   
  Dieser Vorgang wird in den folgenden Schritten einzeln aufgeführt:  

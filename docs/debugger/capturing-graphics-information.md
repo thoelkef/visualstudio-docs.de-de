@@ -38,7 +38,7 @@ Erfassen Sie Grafikinformationen aus Ihrer Direct3D\-App, damit Sie die Visual S
   
 #### So erfassen Sie einen Frame  
   
--   Wählen Sie in Visual Studio auf der Symbolleiste **Grafik** die Schaltfläche **Frame erfassen** ![Symbol "Schaltfläche Grafikerfassung“](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics") aus.  
+-   Wählen Sie in Visual Studio auf der Symbolleiste **Grafik** die Schaltfläche **Frame erfassen** ![Symbol "Schaltfläche Grafikerfassung“](~/docs/debugger/graphics/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics") aus.  
   
 -   Auf der Tastatur drücken Sie die Taste DRUCK.  
   

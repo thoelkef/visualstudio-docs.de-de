@@ -50,7 +50,7 @@ ed## So entsperren Sie Visual Studio mithilfe eines Onlineabonnements
 ### <a name="update-stale-licenses"></a>Aktualisieren veralteter Lizenzen  
  Sie kennen vermutlich die Visual Studio-Meldung zu einer abgelaufenen Lizenz: „Ihre Lizenz ist abgelaufen und muss aktualisiert werden.“
   
- ![Visual Studio-Meldung zu abgelaufener Lizenz](../ide/media/vs2017_stale-license.png)  
+ ![Visual Studio-Meldung zu abgelaufener Lizenz](~/docs/ide/media/vs2017_stale-license.png)  
   
  Diese Meldung gibt an, dass Ihr Abonnement zwar ggf. noch immer gültig ist, das von Visual Studio für Ihr Abonnement verwendete Lizenztoken jedoch nicht aktualisiert wurde und aus einem der folgenden Gründe abgelaufen ist:  
   

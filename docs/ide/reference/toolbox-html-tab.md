@@ -53,12 +53,12 @@ Die Registerkarte **HTML** der Toolbox stellt Komponenten bereit, die für Webse
  Die folgenden Tools sind standardmäßig auf der Registerkarte „HTML“ verfügbar.  
 
  **Pointer**  
- ![ASP.NET Mobile-Designer, HTML-Seite, Zeiger](../../ide/reference/media/vxpointer.gif "vxPointer")  
+ ![ASP.NET Mobile-Designer, HTML-Seite, Zeiger](~/docs/ide/reference/media/vxpointer.gif "vxPointer")  
 
  Dieses Tool ist standardmäßig ausgewählt, wenn eine Toolboxregisterkarte geöffnet wird. Es kann nicht gelöscht werden. Mithilfe des Zeigers können Sie Objekte auf die Entwurfsoberfläche ziehen, die Größe der Objekte ändern und sie auf der Seite oder dem Formular neu anordnen. Weitere Informationen finden Sie unter [Verwenden der Toolbox](../../ide/using-the-toolbox.md).  
 
  **Input (Button)**  
- ![HTML-Webseite, Schaltfläche](../../ide/reference/media/vxbutton.gif "vxButton")  
+ ![HTML-Webseite, Schaltfläche](~/docs/ide/reference/media/vxbutton.gif "vxButton")  
 
  Fügt ein `input`-Element vom Typ `type="button"` ein. Bearbeiten Sie die `name`-Eigenschaft, um den angezeigten Text zu ändern. In der Standardeinstellung wird `id="Button1"` für die erste Schaltfläche eingefügt, `id="Button2"` für die zweite usw.  
 
@@ -69,7 +69,7 @@ Die Registerkarte **HTML** der Toolbox stellt Komponenten bereit, die für Webse
 ```  
 
  **Input (Reset)**  
- ![HTMLpageResetButton-Screenshot](../../ide/reference/media/vxreset.gif "vxReset")  
+ ![HTMLpageResetButton-Screenshot](~/docs/ide/reference/media/vxreset.gif "vxReset")  
 
  Fügt ein `input`-Element vom Typ `type="reset"` ein. Bearbeiten Sie die `name`-Eigenschaft, um den angezeigten Text zu ändern. In der Standardeinstellung wird `id="Reset1"` für die erste Reset-Schaltfläche eingefügt, `id="Reset2"` für die zweite usw.  
 
@@ -80,7 +80,7 @@ Die Registerkarte **HTML** der Toolbox stellt Komponenten bereit, die für Webse
 ```  
 
  **Input (Submit)**  
- ![HTMLpageToolbarSubmitButton-Screenshot](../../ide/reference/media/vxsubmit.gif "vxSubmit")  
+ ![HTMLpageToolbarSubmitButton-Screenshot](~/docs/ide/reference/media/vxsubmit.gif "vxSubmit")  
 
  Fügt ein `input`-Element vom Typ `type="submit"` ein. Bearbeiten Sie die `name`-Eigenschaft, um den angezeigten Text zu ändern. In der Standardeinstellung wird `id="Submit1"` für die erste Submit-Schaltfläche eingefügt, `id="Submit2"` für die zweite usw.  
 
@@ -91,7 +91,7 @@ Die Registerkarte **HTML** der Toolbox stellt Komponenten bereit, die für Webse
 ```  
 
  **Input (Text)**  
- ![HTMLpageToolbarTextField-Screenshot](../../ide/reference/media/vxtextfield.gif "vxTextfield")  
+ ![HTMLpageToolbarTextField-Screenshot](~/docs/ide/reference/media/vxtextfield.gif "vxTextfield")  
 
  Fügt ein `input`-Element vom Typ `type="text"` in das Dokument ein. Bearbeiten Sie das `value`-Attribut, um den angezeigten Standardtext zu ändern. In der Standardeinstellung wird `id="Text1"` für das erste Textfeld eingefügt, `id="Text2"` für das zweite usw.  
 
@@ -105,7 +105,7 @@ Die Registerkarte **HTML** der Toolbox stellt Komponenten bereit, die für Webse
 >  Es wird empfohlen, alle Benutzereingaben zu validieren. Weitere Informationen finden Sie unter [Validating User Input in ASP.NET Web Pages (Razor) Sites (Überprüfen der Benutzereingabe in ASP.NET-Webseiten (Razor-Websites))](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
 
  **Input (File)**  
- ![HTML-Seite, Dateifeld](../../ide/reference/media/vxfilefield.gif "vxFilefield")  
+ ![HTML-Seite, Dateifeld](~/docs/ide/reference/media/vxfilefield.gif "vxFilefield")  
 
  Fügt ein `input`-Element vom Typ `type="file"` in das Dokument ein. In der Standardeinstellung wird `id="File1"` für das erste Dateifeld eingefügt, `id="File2"` für das zweite usw.  
 
@@ -119,7 +119,7 @@ Die Registerkarte **HTML** der Toolbox stellt Komponenten bereit, die für Webse
 >  Es wird empfohlen, alle Benutzereingaben zu validieren. Weitere Informationen finden Sie unter [Validating User Input in ASP.NET Web Pages (Razor) Sites (Überprüfen der Benutzereingabe in ASP.NET-Webseiten (Razor-Websites))](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
 
  **Input (Password)**  
- ![Visual Studio, Kennwortfeld](../../ide/reference/media/vxpassword.gif "vxPassword")  
+ ![Visual Studio, Kennwortfeld](~/docs/ide/reference/media/vxpassword.gif "vxPassword")  
 
  Fügt ein `input`-Element vom Typ `type="password"` ein. In der Standardeinstellung wird `id="Password1"` für das erste Kennwortfeld eingefügt, `id="Password2"` für das zweite usw.  
 
@@ -133,7 +133,7 @@ Die Registerkarte **HTML** der Toolbox stellt Komponenten bereit, die für Webse
 >  Wenn Ihre Anwendung Benutzernamen und Kennwörter überträgt, sollten Sie Ihre Webseite so konfigurieren, dass sie Secure Sockets Layer (SSL) verwendet, um die Übertragung zu verschlüsseln. Weitere Informationen finden Sie unter „Securing Connections with SSL“ („Sichern von Verbindungen mit SSL“) im [IIS Operations Guide (IIS-Benutzerhandbuch)](http://go.microsoft.com/fwlink/?linkid=47856). Es wird außerdem empfohlen, alle Benutzereingaben zu validieren. Weitere Informationen finden Sie unter [Validating User Input in ASP.NET Web Pages (Razor) Sites (Überprüfen der Benutzereingabe in ASP.NET-Webseiten (Razor-Websites))](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
 
  **Input (Check box)**  
- ![HTML-Webseite, Toolbox, Kontrollkästchen-Option](../../ide/reference/media/vxcheckbox.gif "vxCheckbox")  
+ ![HTML-Webseite, Toolbox, Kontrollkästchen-Option](~/docs/ide/reference/media/vxcheckbox.gif "vxCheckbox")  
 
  Fügt ein `input`-Element vom Typ `type="checkbox"` ein. Bearbeiten Sie die `name`-Eigenschaft, um den angezeigten Text zu ändern. In der Standardeinstellung wird `id="Checkbox1"` für das erste Kontrollkästchen eingefügt, `id="Checkbox2"` für das zweite usw.  
 
@@ -144,7 +144,7 @@ Die Registerkarte **HTML** der Toolbox stellt Komponenten bereit, die für Webse
 ```  
 
  **Input (Radio)**  
- ![VisualStudioHTMLpageRadioButton-Screenshot](../../ide/reference/media/vxradio.gif "vxRadio")  
+ ![VisualStudioHTMLpageRadioButton-Screenshot](~/docs/ide/reference/media/vxradio.gif "vxRadio")  
 
  Fügt ein `input`-Element vom Typ `type="radio"` ein. Bearbeiten Sie die `name`-Eigenschaft, um den angezeigten Text zu ändern. In der Standardeinstellung wird `id="Radio1"` für das erste Optionsfeld eingefügt, `id="Radio2"` für das zweite usw.  
 
@@ -155,7 +155,7 @@ Die Registerkarte **HTML** der Toolbox stellt Komponenten bereit, die für Webse
 ```  
 
  **Input (Hidden)**  
- ![HTML-Seite, ausgeblendetes Element](../../ide/reference/media/vxhidden.gif "vxhidden")  
+ ![HTML-Seite, ausgeblendetes Element](~/docs/ide/reference/media/vxhidden.gif "vxhidden")  
 
  Fügt ein `input`-Element vom Typ `type="hidden"` ein. In der Standardeinstellung wird `id="Hidden1"` für das erste ausgeblendete Feld eingefügt, `id="Hidden2"` für das zweite usw.  
 
@@ -166,7 +166,7 @@ Die Registerkarte **HTML** der Toolbox stellt Komponenten bereit, die für Webse
 ```  
 
  **Textarea**  
- ![HTML-Seite, Symbolleiste, Textbereich](../../ide/reference/media/vxtextarea.gif "vxTextarea")  
+ ![HTML-Seite, Symbolleiste, Textbereich](~/docs/ide/reference/media/vxtextarea.gif "vxTextarea")  
 
  Fügt ein `textarea`-Element ein. Sie können die Größe des Textbereichs ändern oder die Bildlaufleisten verwenden, um Text außerhalb des Anzeigebereichs anzuzeigen. Bearbeiten Sie das `value`-Attribut, um den angezeigten Standardtext zu ändern. In der Standardeinstellung wird `id="textarea1"` für den ersten Textbereich eingefügt, `id=" textarea 2"` für den zweiten usw.  
 
@@ -180,7 +180,7 @@ Die Registerkarte **HTML** der Toolbox stellt Komponenten bereit, die für Webse
 >  Es wird empfohlen, alle Benutzereingaben zu validieren. Weitere Informationen finden Sie unter [Validating User Input in ASP.NET Web Pages (Razor) Sites (Überprüfen der Benutzereingabe in ASP.NET-Webseiten (Razor-Websites))](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
 
  **Table**  
- ![HTMLpageToolbarTable-Screenshot](../../ide/reference/media/vxtable.gif "vxTable")  
+ ![HTMLpageToolbarTable-Screenshot](~/docs/ide/reference/media/vxtable.gif "vxTable")  
 
  Fügt ein `table`-Element ein.  
 
@@ -191,7 +191,7 @@ Die Registerkarte **HTML** der Toolbox stellt Komponenten bereit, die für Webse
 ```  
 
 **Image**  
- ![HTML-Seite, Bildelement](../../ide/reference/media/vximage.gif "vxImage")  
+ ![HTML-Seite, Bildelement](~/docs/ide/reference/media/vximage.gif "vxImage")  
 
  Fügt ein `img`-Element ein. Bearbeiten Sie dieses Element, und geben Sie dessen `src` und `alt`-Text an.  
 
@@ -202,7 +202,7 @@ Die Registerkarte **HTML** der Toolbox stellt Komponenten bereit, die für Webse
 ```  
 
  **Auswählen**  
- ![HTML-Seite, Toolbox, Dropdown](../../ide/reference/media/vxdropdown.gif "vxDropdown")  
+ ![HTML-Seite, Toolbox, Dropdown](~/docs/ide/reference/media/vxdropdown.gif "vxDropdown")  
 
  Fügt ein Dropdown-`select`-Element ein (ohne `size`-Attribut). In der Standardeinstellung wird `id="select1"` für das erste Listenfeld eingefügt, `id="select2"` für das zweite usw.  
 
@@ -215,7 +215,7 @@ Die Registerkarte **HTML** der Toolbox stellt Komponenten bereit, die für Webse
  Sie können ein mehrzeiliges `select`-Element erstellen, indem Sie den Wert der size-Eigenschaft erhöhen.  
 
  **Horizontal Rule**  
- ![HTML-Seite, Horizontale Trennlinie-Element](../../ide/reference/media/vxhorizontal.gif "vxHorizontal")  
+ ![HTML-Seite, Horizontale Trennlinie-Element](~/docs/ide/reference/media/vxhorizontal.gif "vxHorizontal")  
 
  Fügt ein `hr`-Element ein. Um die Stärke der Linie zu erhöhen, bearbeiten Sie das `size`-Attribut.  
 
@@ -226,7 +226,7 @@ Die Registerkarte **HTML** der Toolbox stellt Komponenten bereit, die für Webse
 ```  
 
  **Div**  
- ![HTML-Seite, Label](../../ide/reference/media/vxlabel.gif "vxLabel")  
+ ![HTML-Seite, Label](~/docs/ide/reference/media/vxlabel.gif "vxLabel")  
 
  Fügt ein `div`-Element ein, das ein `ms_positioning="FlowLayout"`-Attribut enthält. Mit Ausnahme der Breite und Höhe ist dieses Element mit einem Flow Layout Panel identisch. Fügen Sie dem Starttag ein `class="stylename"`-Attribut hinzu, um den Text zu formatieren, der im `div`-Element enthalten ist.  
 

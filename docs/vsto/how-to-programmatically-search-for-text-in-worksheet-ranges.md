@@ -33,7 +33,7 @@ caps.handback.revision: 47
 > [!NOTE]  
 >  Die <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A>\-Methode wird am Bereichsanfang erneut gestartet, wenn beim Suchvorgang das Bereichsende erreicht wurde.  Der Code muss jedoch verhindern, dass die Suche in einer Endlosschleife ausgeführt wird.  Dies können Sie, wie in der folgenden Beispielprozedur gezeigt, mithilfe der <xref:Microsoft.Office.Interop.Excel.Range.Address%2A>\-Eigenschaft erreichen.  
   
- ![Link zu Video](../vsto/media/playvideo.png "Link zu Video") Eine entsprechende Videodemo finden Sie im Thema zur [Verwendung der Find\-Methode in einem Excel\-Add\-In](http://go.microsoft.com/fwlink/?LinkID=130294) \(möglicherweise in englischer Sprache\).  
+ ![Link zu Video](~/docs/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie im Thema zur [Verwendung der Find\-Methode in einem Excel\-Add\-In](http://go.microsoft.com/fwlink/?LinkID=130294) \(möglicherweise in englischer Sprache\).  
   
 ### So suchen Sie nach Text in einem Arbeitsblattbereich  
   

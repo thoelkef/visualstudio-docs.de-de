@@ -46,9 +46,9 @@ Durch das Einbeziehen von Tests der programmierten UI in einer SharePoint-Anwend
   
  **Notizen**  
   
--   ![Erforderliche Komponente](../test/media/prereq.png "Prereq") Tests der programmierten UI für SharePoint-Anwendungen werden nur mit SharePoint 2010 unterstützt.  
+-   ![Erforderliche Komponente](~/docs/test/media/prereq.png "Prereq") Tests der programmierten UI für SharePoint-Anwendungen werden nur mit SharePoint 2010 unterstützt.  
   
--   ![Erforderliche Komponente](../test/media/prereq.png "Prereq") Die Unterstützung für Visio- und PowerPoint 2010-Steuerelement in Ihrer SharePoint-Anwendung wird nicht unterstützt.  
+-   ![Erforderliche Komponente](~/docs/test/media/prereq.png "Prereq") Die Unterstützung für Visio- und PowerPoint 2010-Steuerelement in Ihrer SharePoint-Anwendung wird nicht unterstützt.  
   
 ## <a name="creating-a-coded-ui-test-for-your-sharepoint-app"></a>Erstellen eines Tests der codierten UI für die SharePoint-App  
  Das[Erstellen von Tests der programmierten UI](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) für Ihre SharePoint 2010-Anwendungen entspricht dem Erstellen von Tests für andere Anwendungstypen. Die Aufzeichnung und Wiedergabe wird für alle Steuerelemente in der Webbearbeitungsschnittstelle unterstützt. Bei der Schnittstelle für das Auswählen von Kategorien und Webparts handelt es sich um standardmäßige Websteuerelemente.  

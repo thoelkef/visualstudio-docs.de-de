@@ -119,7 +119,7 @@ In diesen Schritten legen wir einen einfachen Haltepunkt fest, um den Remoteproz
 
 1. Drücken Sie die EINGABETASTE, um die Liste der auf diesem Computer verfügbaren ptvsd-Prozesse aufzufüllen:
 
-    ![Eingeben des Verbindungsziels und Auflisten von Prozessen](media/remote-debugging-qualifier.png)
+    ![Eingeben des Verbindungsziels und Auflisten von Prozessen](~/docs/python/media/remote-debugging-qualifier.png)
 
     Wenn Sie nach dem Auffüllen dieser Liste ein anderes Programm auf dem Remotecomputer starten, klicken Sie auf die Schaltfläche **Aktualisieren**.
 
@@ -127,7 +127,7 @@ In diesen Schritten legen wir einen einfachen Haltepunkt fest, um den Remoteproz
 
 1. Visual Studio wechselt dann in den Debugmodus, während das Skript weiterhin auf dem Remotecomputer ausgeführt wird, und bietet alle üblichen Funktionen zum [Debuggen](debugging.md). Setzen Sie zum Beispiel einen Haltepunkt in die `if guess < number:`-Zeile, wechseln Sie dann zum Remotecomputer, und geben Sie einen anderen Schätzwert ein. Danach stoppt Visual Studio auf dem lokalen Computer an diesem Haltepunkt, zeigt lokale Variablen an usw.:
 
-    ![Haltepunkt wird erreicht](media/remote-debugging-breakpoint-hit.png)
+    ![Haltepunkt wird erreicht](~/docs/python/media/remote-debugging-breakpoint-hit.png)
 
 1. Wenn Sie das Debuggen beenden, wird Visual Studio vom Programm getrennt, das weiterhin auf dem Remotecomputer ausgeführt wird. ptvsd ist ebenfalls weiterhin für das Anfügen von Debuggern bereit, sodass Sie den Prozess jederzeit wiederaufnehmen können.
 
@@ -183,7 +183,7 @@ In der Standardeinstellung ist die Verbindung mit dem ptvsd-Remotedebugserver nu
 
 1. Wiederholen Sie den Anfügungsprozess wie zuvor beschrieben in Visual Studio, und verwenden Sie nun `tcps://` als Protokoll für das **Verbindungsziel** (oder **Qualifizierer**).
 
-    ![Auswählen des Transports für das Remotedebuggen über SSL](media/remote-debugging-qualifier-ssl.png)
+    ![Auswählen des Transports für das Remotedebuggen über SSL](~/docs/python/media/remote-debugging-qualifier-ssl.png)
 
 ### <a name="warnings"></a>Warnungen
 
@@ -191,11 +191,11 @@ Visual Studio meldet Ihnen beim Herstellen einer Verbindung über SSL mögliche 
 
 1. Wenn die untenstehende Warnung „Das Remotezertifikat ist nicht vertrauenswürdig“ angezeigt wird, bedeutet dies, dass Sie das Zertifikat nicht ordnungsgemäß der vertrauenswürdigen Stammzertifizierungsstelle hinzugefügt haben. Überprüfen Sie diese Schritte, und versuchen Sie es erneut.
 
-    ![SSL-Zertifikatwarnung Vertrauenswürdigkeit](media/remote-debugging-ssl-warning.png)
+    ![SSL-Zertifikatwarnung Vertrauenswürdigkeit](~/docs/python/media/remote-debugging-ssl-warning.png)
 
 1. Wenn die untenstehende Warnung „Der Name des Remotezertifikats stimmt nicht mit dem Hostnamen überein“ angezeigt wird, bedeutet dies, dass Sie bei der Erstellung des Zertifikats als **gemeinsamen Namen** nicht den richtigen Hostnamen oder nicht die richtige IP-Adresse eingegeben haben.
 
-    ![SSL-Zertifikatwarnung Hostname](media/remote-debugging-ssl-warning2.png)
+    ![SSL-Zertifikatwarnung Hostname](~/docs/python/media/remote-debugging-ssl-warning2.png)
 
 > [!Warning]
 > Derzeit hängt sich Visual Studio 2017 auf, wenn Sie diese Warnungen ignorieren. Achten Sie darauf, dass Sie alle Probleme beheben, bevor Sie versuchen, eine Verbindung herzustellen.

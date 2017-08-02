@@ -66,7 +66,7 @@ So aktualisieren Sie die NuGet-Verweise auf Microsoft.VSSDK.BuildTools
 * Wählen Sie Microsoft.VSSDK.BuildTools (neueste Version).
 * Drücken Sie **Update**.
 
-![VSSDK-Buildtools](media/vssdk-build-tools.png)
+![VSSDK-Buildtools](~/docs/extensibility/media/vssdk-build-tools.png)
 
 ## <a name="make-changes-to-the-vsix-extension-manifest"></a>Ändern Sie die VSIX-Erweiterung
 
@@ -103,18 +103,18 @@ Anstatt das manifest-XML direkt bearbeiten, können Sie die neue **Voraussetzung
 * Öffnen Sie die Datei "Source.Extension.vsixmanifest" [Entwurf].
 * Wählen Sie **Voraussetzungen** Registerkarte, und drücken Sie **neu** Schaltfläche.
 
-  ![VSIX-manifest-designer](media/vsix-manifest-designer.png)
+  ![VSIX-manifest-designer](~/docs/extensibility/media/vsix-manifest-designer.png)
 
 * Die **Hinzufügen neuer erforderliche** Fenster wird geöffnet.
 
-  ![Fügen Sie die VSIX-Voraussetzung](media/add-vsix-prerequisite.png)
+  ![Fügen Sie die VSIX-Voraussetzung](~/docs/extensibility/media/add-vsix-prerequisite.png)
 
 * Klicken Sie auf das Dropdownmenü für **Namen** , und wählen Sie die gewünschten Voraussetzung.
 * Aktualisieren Sie die Version aus, falls erforderlich.
 
   >Hinweis: Das Versionsfeld wird mit der Version der installierten Komponente mit einem Bereich umfasst bis zu (aber nicht einschließlich) aufgefüllt werden die nächste Hauptversion der Komponente.
 
-  ![Roslyn erforderliche Komponente hinzufügen](media/add-roslyn-prerequisite.png)
+  ![Roslyn erforderliche Komponente hinzufügen](~/docs/extensibility/media/add-roslyn-prerequisite.png)
 
 * Press **OK**.
 
@@ -133,7 +133,7 @@ Es sieht aus wie:
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe
 ```
 
-![Externes Programm starten](media/start-external-program.png)
+![Externes Programm starten](~/docs/extensibility/media/start-external-program.png)
 
 >**Hinweis:** Debuggen Startaktion befindet sich in der Regel in der. csproj.user-Datei. Diese Datei ist in der Regel in der gitignore-Datei enthalten und daher nicht ordnungsgemäß gespeichert mit anderen Projektdateien, wenn ein Commit in Datenquellen-Steuerelement ausgeführt. Wenn Sie die Projektmappe neue aus Datenquellen-Steuerelement abgerufen haben ist es wahrscheinlich das Projekt keine Werte für Startaktion festgelegt haben. Neue VSIX-Projekte mit Visual Studio 2017 erstellt eine. csproj.user-Datei mit Standardeinstellungen, die auf das aktuelle Verzeichnis des Visual Studio-Installation erstellt. Wenn Sie eine VSIX-v2-Erweiterung migrieren, es jedoch wahrscheinlich ist, die. Datei enthält Verweise auf die vorherigen Visual Studio-Version-Installationsverzeichnis. Festlegen des Werts für **Debuggen** > **Startaktion** ermöglicht die richtige experimentelle Visual Studio-Instanz starten, wenn Sie versuchen, Ihre Erweiterung zu debuggen.
 
@@ -158,7 +158,7 @@ Versuchen Sie, die Erweiterung zu installieren:
 
 * In Visual Studio 2017
 
-![VSIX-Installationsprogramm auf Visual Studio 2017](media/vsixinstaller-vs-2017.png)
+![VSIX-Installationsprogramm auf Visual Studio 2017](~/docs/extensibility/media/vsixinstaller-vs-2017.png)
 
 * Optional: Überprüfen Sie in früheren Versionen von Visual Studio.
   * Stellt Abwärtskompatibilität bereit.
@@ -169,7 +169,7 @@ Versuchen Sie, die Erweiterung zu installieren:
 
 Wenn Visual Studio zuletzt geöffnet wurde, wird möglicherweise ein Dialogfeld wie folgt angezeigt:
 
-![Visual Studio ausgeführte Prozesse](media/vs-running-processes.png)
+![Visual Studio ausgeführte Prozesse](~/docs/extensibility/media/vs-running-processes.png)
 
 Warten Sie, bis die Prozesse beendet, oder beenden Sie Aufgaben manuell. Sie finden die Prozesse mit dem angegebenen Namen oder mit der PID in Klammern aufgeführt.
 
@@ -181,7 +181,7 @@ Warten Sie, bis die Prozesse beendet, oder beenden Sie Aufgaben manuell. Sie fin
 * Überprüfen Sie, dass die Installation die fehlende Komponente/s identifiziert und sie als erforderliche Komponente für die VSIXInstaller zeigt.
 * Hinweis: Erhöhte Rechte ist erforderlich, wenn alle erforderlichen Komponenten mit der Erweiterung installiert werden müssen.
 
-![Vsixinstaller Voraussetzung nicht erfüllt.](media/vsixinstaller-missing-prerequisite.png)
+![Vsixinstaller Voraussetzung nicht erfüllt.](~/docs/extensibility/media/vsixinstaller-missing-prerequisite.png)
 
 ## <a name="deciding-on-components"></a>Entscheidung für Komponenten
 

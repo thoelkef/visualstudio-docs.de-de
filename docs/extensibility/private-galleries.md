@@ -29,7 +29,7 @@ Sie können die Steuerelemente, Vorlagen und Tools, die Sie entwickeln, veröffe
 ## Hinzufügen einer privaten Galerie Erweiterungen und Updates in Visual Studio  
  Wenn eine private Galerie verfügbar ist, fügen Sie ihn können **Erweiterungen und Updates** in Visual Studio.  
   
- ![Erweiterungs&#45;Manager – Dialogfeld „Hinzufügen“](../extensibility/media/em_adddialog.png "EM\_AddDialog")  
+ ![Erweiterungs&#45;Manager – Dialogfeld „Hinzufügen“](~/docs/extensibility/media/em_adddialog.png "EM\_AddDialog")  
   
 #### Um eine private Galerie Erweiterungen und Updates hinzufügen  
   
@@ -67,7 +67,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 ## Installieren von Erweiterungen in einer privaten Galerie  
  Sie können Suchen und Installieren von Visual Studio\-Erweiterungen aus einem privaten Katalog in **Erweiterungen und Updates**. Mithilfe der folgenden Schritte eine private Galerie mit dem Namen `My Gallery`.  
   
- ![Erweiterungs&#45;Manager – Installieren der privaten Galerie](../extensibility/media/em_.png "EM\_")  
+ ![Erweiterungs&#45;Manager – Installieren der privaten Galerie](~/docs/extensibility/media/em_.png "EM\_")  
   
 #### Suchen und installieren Sie Erweiterungen aus einer privaten Galerie  
   
@@ -80,7 +80,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 ## Aktualisieren von Erweiterungen in einer privaten Galerie  
  Wenn neue Versionen von Visual Studio\-Erweiterungen in der privaten Galerie bereitgestellt werden, können Sie die Erweiterungen aktualisieren, die Sie installiert haben. Mithilfe der folgenden Schritte eine private Galerie mit dem Namen `My Repository`.  
   
- ![Erweiterungs&#45;Manager – Aktualisierung der privaten Galerie](../extensibility/media/em_update.png "EM\_Update")  
+ ![Erweiterungs&#45;Manager – Aktualisierung der privaten Galerie](~/docs/extensibility/media/em_update.png "EM\_Update")  
   
 #### Eine installierte Erweiterung aus einem privaten Katalog aktualisieren  
   

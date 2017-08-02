@@ -25,7 +25,7 @@ Ein Codefenster wird ein Dokument Window\-Objekt, das eine oder mehrere Textansi
   
  Ein Codefenster ist ein <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> \-Objekt, das eine Textansicht und alle Details, die in dem Objekt platziert wurde. Wenn Sie das Codefenster während der Instanziierung des Kern\-Editor erstellen, kann Ihre Sprachdienst Anfügen einer <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> in das Codefenster wird wie in der folgenden Abbildung gezeigt.  
   
- ![CodeWindow&#45;Grafik](../extensibility/media/vscodewindow.png "vscodewindow")  
+ ![CodeWindow&#45;Grafik](~/docs/extensibility/media/vscodewindow.gif "vscodewindow")  
 Codefenster  
   
  Der Sprachdienst den Fenster\-Manager implementiert und ist verantwortlich für die Verwaltung von Details, z. B. eine Dropdownliste angezeigt. Ruft der Code\-Fenster die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A> Methode während der Initialisierung der Code\-Fenster. Wenn dieser Aufruf erfolgt, kann der Sprachdienst hinzufügen, eine Dropdownliste oder einer Symbolleiste \(<xref:Microsoft.VisualStudio.TextManager.Interop.IVsButtonBarClient>\) in das Codefenster.  

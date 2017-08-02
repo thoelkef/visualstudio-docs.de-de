@@ -44,7 +44,7 @@ manager: "ghogen"
 # Starten einer Debugsitzung f&#252;r eine Store-App in Visual Studio (VB, C#, C++ und XAML)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Gilt für Windows und Windows Phone](../debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![Gilt für Windows und Windows Phone](~/docs/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  In diesem Thema wird beschrieben, wie eine Debugsitzung für Store\-Apps ausgeführt wird, die in XAML und Visual C\+\+, Visual C\# oder Visual Basic programmiert sind. Das Debuggen einer Anwendung umfasst sowohl das Konfigurieren der Debugsitzung als auch die Auswahl der Methode für den Anwendungsstart.  
   
@@ -104,11 +104,11 @@ manager: "ghogen"
   
     -   Wählen Sie für Visual C\#\- und Visual Basic\-Anwendungen **Debuggen** aus.  
   
-         ![Eigenschaftenseite zum Debuggen des C&#35;&#47;VB&#45;Projekts](../debugger/media/dbg_csvb_debugpropertypage.png "DBG\_CsVb\_DebugPropertyPage")  
+         ![Eigenschaftenseite zum Debuggen des C&#35;&#47;VB&#45;Projekts](~/docs/debugger/media/dbg_csvb_debugpropertypage.png "DBG\_CsVb\_DebugPropertyPage")  
   
     -   Erweitern Sie für Visual C\+\+\-Anwendungen den Knoten **Konfigurationseigenschaften** , und wählen Sie dann **Debugging** aus.  
   
-         ![Debugging&#45;Eigenschaftsseite für C&#43;&#43; Windows Store&#45;App](../debugger/media/dbg_cpp_debugpropertypage.png "DBG\_CPP\_DebugPropertyPage")  
+         ![Debugging&#45;Eigenschaftsseite für C&#43;&#43; Windows Store&#45;App](~/docs/debugger/media/dbg_cpp_debugpropertypage.png "DBG\_CPP\_DebugPropertyPage")  
   
 ###  <a name="BKMK_Choose_the_build_configuration_options"></a> Wählen Sie die Buildkonfigurationsoptionen aus.  
   
@@ -117,7 +117,7 @@ manager: "ghogen"
 2.  Wählen Sie in der Liste **Plattform** die Zielplattform aus, in der der Build erfolgen soll. In den meisten Fällen ist **Any CPU** \(**Alle Plattformen** in Visual C\+\+\) die beste Wahl.  
   
 ###  <a name="BKMK_Choose_the_deployment_target"></a> Auswählen des Bereitstellungsziels  
- ![Gilt nur für Windows](../debugger/media/windows_only_content.png "windows\_only\_content")  
+ ![Gilt nur für Windows](~/docs/debugger/media/windows_only_content.png "windows\_only\_content")  
   
  Sie können eine Windows Store\-App auf dem Visual Studio\-Computer, im Visual Studio\-Simulator auf dem lokalen Computer oder auf einem Remotegerät bereitstellen und debuggen.  
   
@@ -154,7 +154,7 @@ manager: "ghogen"
     > [!NOTE]
     >  Durch das Dialogfeld **Remotedebuggerverbindung auswählen** werden Computer auf dem Subnetz des lokalen Netzwerks sowie solche Computer angezeigt, die direkt mit dem Visual Studio\-Computer durch ein Ethernetkabel verbunden sind. Um einen anderen Computer anzugeben, geben Sie den Namen im Feld **Computername** ein.  
   
- ![Gilt nur für Windows Phone](../debugger/media/phone_only_content.png "phone\_only\_content")  
+ ![Gilt nur für Windows Phone](~/docs/debugger/media/phone_only_content.png "phone\_only\_content")  
   
  Sie können Windows Phone Store\-Apps auf einem Gerät oder einem der Visual Studio Phone Emulatoren bereitstellen und debuggen. Wählen Sie das Gerät oder den Emulator aus der Liste der **Zielgeräte**.  
   
@@ -177,7 +177,7 @@ manager: "ghogen"
 |**Gemischt \(verwaltet und systemeigen\)**|Für das Debuggen des systemeigenen C\/C\+\+\- und des verwalteten Codes der Anwendung. JavaScript\-Code wird ignoriert.|  
 |**Nur GPU**|Debuggen von systemeigenem C\+\+\-Code, der auf einer Grafikverarbeitungseinheit \(GPU\) ausgeführt wird.|  
   
- ![Gilt nur für Windows Phone](../debugger/media/phone_only_content.png "phone\_only\_content")  
+ ![Gilt nur für Windows Phone](~/docs/debugger/media/phone_only_content.png "phone\_only\_content")  
   
  Für Windows Phone Store\-Apps können Sie den Debugger für Hintergrundprozesse auch aus dem **Hintergrundaufgabenprozess** wählen.  
   
@@ -191,7 +191,7 @@ manager: "ghogen"
 -   Wählen Sie für Visual C\+\+\-Apps auf der Eigenschaftenseite **Debuggen** in der Liste **Anwendung starten** die Option **Ja** aus.  
   
 ###  <a name="BKMK__Optional__Disable_network_loopbacks"></a> \(Optional\) Netzwerkloopbacks deaktivieren  
- ![Gilt nur für Windows](../debugger/media/windows_only_content.png "windows\_only\_content")  
+ ![Gilt nur für Windows](~/docs/debugger/media/windows_only_content.png "windows\_only\_content")  
   
  Aus Sicherheitsgründen wird einer im Standardverfahren installierten Windows Store\-App nicht erlaubt, Netzwerkaufrufe an das Gerät auszuführen, auf dem sie installiert wurde. Standardmäßig wird durch die Visual Studio\-Bereitstellung eine Ausnahme von dieser Regel für die bereitgestellte App erstellt. Diese Ausnahme ermöglicht das Testen von Kommunikationsverfahren auf einem einzelnen Computer. Bevor Sie die App an Windows Store senden, sollten Sie die App ohne die Ausnahme testen.  
   
@@ -205,7 +205,7 @@ manager: "ghogen"
  Um Probleme zu bestimmen, die mit der Installation und Erstkonfiguration der Visual C\#\- oder Visual Basic\-App zusammenhängen, wählen Sie auf der Eigenschaftenseite **Debuggen** die Option **Paket deinstallieren und anschließend neu installieren** aus, um eine ursprüngliche Installation beim Debugstart neu zu erstellen. Diese Option ist nicht für Visual C\+\+\-Projekte verfügbar.  
   
 ###  <a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a> \(Optional\) Deaktivieren Sie zum Starten des Remotedebuggers die Authentifizierungsanforderung.  
- ![Gilt nur für Windows](../debugger/media/windows_only_content.png "windows\_only\_content")  
+ ![Gilt nur für Windows](~/docs/debugger/media/windows_only_content.png "windows\_only\_content")  
   
  Standardmäßig müssen Sie zum Auszuführen des Remotedebuggers Anmeldeinformationen angeben.  
   

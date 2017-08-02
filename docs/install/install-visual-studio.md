@@ -75,7 +75,7 @@ Wenn Sie Visual Studio 2017 herunterladen, erhalten Sie eine Bootstrapperdatei, 
 
 2.  Sie werden gebeten, die Microsoft-[Lizenzbedingungen](https://www.visualstudio.com/license-terms/) und die Microsoft-[Datenschutzbestimmungen](https://go.microsoft.com/fwlink/?LinkID=824704) zu akzeptieren. Klicken Sie auf **Weiter**.  
 
-   ![Lizenzbedingungen und Datenschutzbestimmungen](media/vs2017-privacy-and-license-terms.PNG "Microsoft-Lizenzbedingungen und Microsoft-Datenschutzbestimmungen")  
+   ![Lizenzbedingungen und Datenschutzbestimmungen](~/docs/install/media/vs2017-privacy-and-license-terms.PNG "Microsoft-Lizenzbedingungen und Microsoft-Datenschutzbestimmungen")  
 
 Es werden mehrere Statusbildschirme angezeigt, die den Fortschritt der Installation anzeigen. Nach Abschluss der Installation können Sie die gewünschten Featuregruppen (oder Arbeitsauslastungen) auswählen.
 
@@ -86,7 +86,7 @@ Es werden mehrere Statusbildschirme angezeigt, die den Fortschritt der Installat
 
 1.  Suchen Sie die gewünschten Arbeitsauslastungen im Bildschirm **Visual Studio wird installiert**.  
 
-  ![Visual Studio 2017-Setupdialogfeld](media/vs2017-workloads.PNG "Installieren von Visual Studio 2017")
+  ![Visual Studio 2017-Setupdialogfeld](~/docs/install/media/vs2017-workloads.PNG "Installieren von Visual Studio 2017")
 
      Wählen Sie beispielsweise die Arbeitsauslastung für .NET Desktop-Entwicklung aus. Sie wird mit dem standardmäßigen Kern-Editor bereitgestellt, der die grundlegende Codebearbeitung für über 20 Sprachen, die Möglichkeit, Code aus einem beliebigen Ordner heraus zu öffnen und zu bearbeiten, ohne dass ein Projekt erforderlich ist, und die integrierte Quellcodekontrolle unterstützt.  
 
@@ -100,13 +100,13 @@ Es werden mehrere Statusbildschirme angezeigt, die den Fortschritt der Installat
 
 Wenn Sie Ihre Visual Studio-Installation nicht mit den praktischen Arbeitsauslastungen anpassen möchten, klicken Sie im Visual Studio-Installer auf die Option **Einzelne Komponenten**, wählen Sie die gewünschten Komponenten aus, und folgen Sie den Anweisungen.
 
-  ![Visual Studio 2017: Installieren einzelner Komponenten](media/vs2017-components.PNG "Installieren einzelner Visual Studio-Komponenten")
+  ![Visual Studio 2017: Installieren einzelner Komponenten](~/docs/install/media/vs2017-components.PNG "Installieren einzelner Visual Studio-Komponenten")
 
 ## <a name="install-language-packs"></a>Installieren von Language Packs
 
 Zum Installieren von Visual Studio 2017 in einer bestimmten Sprache Ihrer Wahl klicken Sie im Visual Studio-Installationsprogramm auf die Option **Language Packs** und folgen den Eingabeaufforderungen.
 
-  ![Visual Studio 2017 - Installieren von Language Packs](media/vs2017-languages.PNG "Installieren von Visual Studio-Language Packs")
+  ![Visual Studio 2017 - Installieren von Language Packs](~/docs/install/media/vs2017-languages.PNG "Installieren von Visual Studio-Language Packs")
 
 ### <a name="change-the-installer-language"></a>Ändern der Sprache des Installationsprogramms
 

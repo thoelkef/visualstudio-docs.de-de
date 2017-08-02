@@ -58,7 +58,7 @@ caps.handback.revision: 64
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- ![Link zu Video](../vsto/media/playvideo.png "Link zu Video") Eine entsprechende Videodemo finden Sie unter [Binden von Daten an Word 2007\-Inhaltssteuerelemente mit den Visual Studio\-Tools für Office System \(3.0\)](http://go.microsoft.com/fwlink/?LinkId=136785).  
+ ![Link zu Video](~/docs/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie unter [Binden von Daten an Word 2007\-Inhaltssteuerelemente mit den Visual Studio\-Tools für Office System \(3.0\)](http://go.microsoft.com/fwlink/?LinkId=136785).  
   
 ## Übersicht über Inhaltssteuerelemente  
  Inhaltssteuerelemente stellen eine Benutzeroberfläche bereit, die für Benutzereingaben und Druck optimiert ist.  Wenn Sie einem Dokument ein Inhaltssteuerelement hinzufügen, wird das Steuerelement durch einen Rahmen, einen Titel und temporären Text identifiziert, der Anweisungen für den Benutzer bereitstellen kann.  Der Rahmen und der Titel des Steuerelements werden nicht in gedruckten Versionen des Dokuments angezeigt.  

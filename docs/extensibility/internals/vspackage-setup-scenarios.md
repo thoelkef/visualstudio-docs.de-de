@@ -38,7 +38,7 @@ Es ist wichtig, das VSPackage\-Installationsprogramm für Flexibilität zu entwe
 ## Szenario 1: Freigegebene VSPackage  
  In diesem Szenario wird ein freigegebener VSPackage \(eine einzelne Binärdatei, die mehrere Versionen von unterstützt [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]\) ist im Lieferumfang von Windows Installer\-Paket. Registrieren mit jeder Version von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] wird gesteuert, indem auswählbaren Features. Es bedeutet auch, dass wenn zugewiesen, um Funktionen zu trennen, jede Komponente für die Installation oder Deinstallation, dass der Benutzer im Steuerelement VSPackage in verschiedenen Versionen von integrieren kann einzeln ausgewählt werden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. \(Siehe [Features von Windows Installer](http://msdn.microsoft.com/library/aa372840\(VS.85\).aspx) Weitere Informationen zur Verwendung von Funktionen in Windows Installer\-Pakete.\)  
   
- ![Grafik zu freigegebenem VS&#45;Paket](../../extensibility/internals/media/vs_sharedpackage.png "VS\_SharedPackage")  
+ ![Grafik zu freigegebenem VS&#45;Paket](~/docs/extensibility/internals/media/vs_sharedpackage.gif "VS\_SharedPackage")  
 Freigegebene VSPackage\-installer  
   
  Wie in der Abbildung gezeigt, erfolgen gemeinsam genutzte Komponenten Teil der Feat\_Common\-Funktion, die immer installiert wird. Sichtbarmachen der Feat\_VS2002 und Feat\_VS2003 Funktionen, Benutzer können auswählen, zum Zeitpunkt der Installation in die Versionen von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSPackage integrieren wollen. Benutzer können auch Windows Installer\-Wartungsmodus hinzufügen oder Entfernen von Features, die in diesem Fall fügt hinzu oder entfernt die Registrierungsinformationen VSPackage aus verschiedenen Versionen der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -52,7 +52,7 @@ Freigegebene VSPackage\-installer
 > [!CAUTION]
 >  Ein VSPackage ist jedes Mal, wenn mehrere Versionen freigegeben [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], ist es wichtig, dass die nachfolgende Versionen des VSPackage Abwärtskompatibilität mit früheren Versionen von beibehalten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Bei der Abwärtskompatibilität beibehalten werden kann, müssen Sie die Seite\-an\-Seite, private VSPackages verwenden. Weitere Informationen finden Sie unter [Unterstützung von mehreren Versionen von Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).  
   
- ![Bild zur Aktualisierung von freigegebenem VS&#45;Paket](../../extensibility/internals/media/vs_sharedpackageupdate.png "VS\_SharedPackageUpdate")  
+ ![Bild zur Aktualisierung von freigegebenem VS&#45;Paket](~/docs/extensibility/internals/media/vs_sharedpackageupdate.gif "VS\_SharedPackageUpdate")  
 Freigegebene VSPackage\-Updateinstallationsprogramm  
   
  Dieses Szenario stellt einen neuen VSPackage\-Installer, Windows Installer Unterstützung für kleineren Updates zu nutzen. Benutzer einfach installieren Sie Version 1.1 und Version 1.0 Upgrade. Es ist jedoch nicht notwendig, damit auf dem System, Version 1.0. Das gleiche Installationsprogramm installiert Version 1.1 auf einem System ohne Version 1.0. Der Vorteil bei der kleinen Upgrades auf diese Weise ist, dass es nicht notwendig, die Arbeit der Entwicklung einer Aktualisierung Installationsprogramm und eine Vollversion durchlaufen. Ein Installationsprogramm führt beide Aufträge. Ein Sicherheitsupdate oder ein Service pack möglicherweise stattdessen Windows Installer\-Patches zu nutzen. Weitere Informationen finden Sie unter [Patchen und Upgrades](http://msdn.microsoft.com/library/aa370579\(VS.85\).aspx).  
@@ -60,7 +60,7 @@ Freigegebene VSPackage\-Updateinstallationsprogramm
 ## Szenario 3: Side\-by\-Side VSPackage  
  Dieses Szenario zeigt zwei VSPackage\-Installationsprogramme – eine für jede Version von Visual Studio .NET 2003 und [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Jedes Installationsprogramm installiert eine Seite\-an\-Seite oder Private VSPackage \(eines, das speziell für eine bestimmte Version eines installierten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]\). Jede VSPackage ist in der eigenen Komponente. Aus diesem Grund jede kann einzeln verwaltet werden mit Patches oder Wartung frei. Da VSPackage\-DLL nun Version ist, ist es sicher ist, die zugehörigen Registrierungsinformationen in der gleichen Komponente wie die DLL enthalten.  
   
- ![Grafik zu parallelem VS&#45;Paket](../../extensibility/internals/media/vs_sbys_package.png "VS\_SbyS\_Package")  
+ ![Grafik zu parallelem VS&#45;Paket](~/docs/extensibility/internals/media/vs_sbys_package.gif "VS\_SbyS\_Package")  
 Side\-by\-Side VSPackage\-installer  
   
  Jedes Installationsprogramm enthält auch Code, der die zwei Installer gemeinsam verwendet wird. Wenn der freigegebene Code an einem Standort installiert ist, installiert installieren beide MSI\-Dateien den gemeinsam verwendeten Code nur einmal. Der zweite Installer erhöht nur einen Verweiszähler für die Komponente. Der Verweiszähler wird sichergestellt, wenn eines der VSPackages deinstalliert wird, der Code gemeinsame für die anderen VSPackage bleiben. Wenn das zweite VSPackage ebenfalls deinstalliert wird, werden die freigegebene Code entfernt.  
@@ -70,7 +70,7 @@ Side\-by\-Side VSPackage\-installer
   
  In diesem Fall ist das VSPackage verwaltete VSPackages im globalen Assemblycache \(GAC\) installiert. Wenn Sie damit die Sicherheit bieten neu erstellen, müssen Sie die Revision der Dateiteil mit der Versionsnummer der Assembly ändern. Die Registrierungsinformationen für die neue Versionsnummer der Assembly auf die vorherige Version überschreibt, wodurch [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zum Laden der Assembly festen.  
   
- ![Grafik zur Aktualisierung von parallelem VS&#45;Paket](../../extensibility/internals/media/vs_sbys_packageupdate.png "VS\_SbyS\_PackageUpdate")  
+ ![Grafik zur Aktualisierung von parallelem VS&#45;Paket](~/docs/extensibility/internals/media/vs_sbys_packageupdate.gif "VS\_SbyS\_PackageUpdate")  
 Side\-by\-Side VSPackage\-Updateinstallationsprogramm  
   
  **Hinweis** Weitere Informationen zur Bereitstellung von Side\-by\-Side\-Assemblys finden Sie unter [Bereitstellung vereinfachen und Beheben von DLL\-Hölle mit .NET Framework](http://msdn.microsoft.com/library/ms973843.aspx).  

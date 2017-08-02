@@ -317,7 +317,7 @@ if (performance.mark && performance.measure) {
 ###  <a name="GroupFrames"></a> Ereignisse nach Frame gruppieren  
  Sie können Ereignisse, die in der Zeitachsendetailansicht angezeigt werden, in einzelnen Frames gruppieren. Diese Frameereignisse sind toolgenerierte Ereignisse und stellen Ereigniscontainer der obersten Ebene für alle Aufgaben des UI-Threads dar, die zwischen Paint-Ereignissen auftreten. Um diese Ansicht zu aktivieren, wählen Sie **Ereignisse der obersten Ebene nach Frames gruppieren**aus.  
   
- ![Ereignisse der obersten Ebene nach Frames gruppieren](../profiling/media/js_htmlvizprofiler_frame_grouping_button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")  
+ ![Ereignisse der obersten Ebene nach Frames gruppieren](~/docs/profiling/media/js_htmlvizprofiler_frame_grouping_button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")  
   
  Wenn sie die Ereignisse nach Frame gruppieren, stellen die Ereignisse der obersten Ebene in der Zeitachsendetailansicht jeweilig ein Frame dar.  
   

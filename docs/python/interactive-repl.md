@@ -39,7 +39,7 @@ ms.lasthandoff: 04/10/2017
 
 Visual Studio bietet ein interaktives „Lesen-Auswerten-Ausgeben-Schleife“-Fenster (Read Eval Print Loop, REPL) für Ihre Python-Umgebungen, das eine Verbesserung ist gegenüber dem REPL, das Sie mit der Eingabe von `python.exe` in der Befehlszeile erhalten. Im (mit den Menübefehlen **Ansicht > Weitere Fenster > Interaktives &lt;Umgebung&gt;** geöffneten) interaktiven Fenster können Sie beliebigen Python-Code eingeben und sofort Ergebnisse sehen, was Ihnen hilft, APIs kennenzulernen und mit ihnen zu experimentieren sowie interaktiven Code zu entwickeln, den Sie in Ihre Projekte einbeziehen.
 
-![Interaktives Python-Fenster](media/interactive-window.png)
+![Interaktives Python-Fenster](~/docs/python/media/interactive-window.png)
 
 Visual Studio stellt eine Reihe von Python-REPL-Modi zur Auswahl:
 
@@ -62,15 +62,15 @@ Es gibt mehrere Methoden zum Öffnen des interaktiven Fensters für eine Umgebun
 
 Erstens: Wechseln Sie zum Python-Umgebungenfenster (**Ansicht > Weitere Fenster > Python-Umgebungen** oder STRG+K,STRG+'), und wählen Sie den Befehl **Interaktives Fenster öffnen** oder eine Schaltfläche für eine ausgewählte Umgebung.
 
-![Link zu interaktivem Fenster in Python-Umgebungen](media/interactive-window-opening.png)
+![Link zu interaktivem Fenster in Python-Umgebungen](~/docs/python/media/interactive-window-opening.png)
 
 Zweitens: **Ansicht > Weitere Fenster** bietet **Interaktiv**-Befehle für jede Ihrer Umgebungen, in der Regel unten im Menü:
 
-![Menüelemente für interaktives Fenster in „Ansicht > Weitere Fenster“](media/interactive-window-menu.png)
+![Menüelemente für interaktives Fenster in „Ansicht > Weitere Fenster“](~/docs/python/media/interactive-window-menu.png)
 
 Drittens: Sie können in der Startdatei Ihres Projekts – oder für eine eigenständige Datei – durch Auswahl des Menübefehls **Debuggen > [Projekt | Datei] in interaktivem Python ausführen** (UMSCHALT+Alt+5) ein interaktives Fenster öffnen:
 
-![Ausführen des Projekts im interaktiven Python-Menü](media/interactive-execute-project.png)
+![Ausführen des Projekts im interaktiven Python-Menü](~/docs/python/media/interactive-execute-project.png)
 
 Schließlich können Sie Code in der Datei auswählen und den unten beschriebenen Befehl [An Interactive senden](#send-code-to-interactive-command) verwenden.
 
@@ -88,7 +88,7 @@ Beachten Sie, dass es auch einen separaten Satz von Optionen für das **Fenster 
 
 Sobald das interaktive Fenster geöffnet ist, können Sie beginnen, Zeile für Zeile Code an der `>>>`-Eingabeaufforderung einzugeben. Das interaktive Fenster führt jede Zeile nach der Eingabe aus, Importieren von Modulen, Definieren von Variablen usw. eingeschlossen. Sie können dies in den ersten beiden Zeilen in der Abbildung unten sehen:
 
-![Interaktives Python-Fenster](media/interactive-window.png)
+![Interaktives Python-Fenster](~/docs/python/media/interactive-window.png)
 
 Eine Ausnahme ist, wenn eine Anweisung mit einem Doppelpunkt endet, wie die obige `for`-Anweisung, da das interaktive Fenster weiß, dass zusätzliche Codezeilen erforderlich sind, bevor es den Codeblock richtig ausführen kann. In diesem Fall ändert sich die Eingabeaufforderungszeile in `...`, um anzugeben, dass Sie zusätzliche Zeilen für den Block eingeben müssen, wie in der obigen Grafik in der vierten und fünften Zeile dargestellt. Wenn Sie in einer leeren Zeile die EINGABETASTE drücken, schließt das interaktive Fenster den Block und führt ihn im Interpreter aus.
 
@@ -116,20 +116,20 @@ Die Befehle sind auch über MEF (das Managed Extensibility Framework für .NET) 
 
 Standardmäßig wird der Bereich des interaktiven Fensters für ein Projekt auf die Startdatei des Projekts beschränkt, als ob Sie es von der Befehlszeile aus ausführen würden. Für eine eigenständige Datei ist der Bereich auf diese Datei beschränkt. Sie können jedoch während der REPL-Sitzung jederzeit im Dropdownmenü am oberen Rand des interaktiven Fensters den Bereich wechseln:
 
-![Bereiche des interaktiven Fensters](media/interactive-scopes.png)
+![Bereiche des interaktiven Fensters](~/docs/python/media/interactive-scopes.png)
 
 Sobald Sie ein Modul importieren, z.B. durch Eingabe von `import os`, sehen Sie in der Dropdownliste Optionen zum Wechsel in einen beliebigen Bereich dieses Moduls. Sie sehen im interaktiven Fenster auch eine Meldung, die den neuen Bereich angibt, damit Sie verfolgen können, wie ein bestimmter Zustand während einer Sitzung zustande gekommen ist.
 
 Bei Eingabe von `dir()` in einem Bereich werden gültige Bezeichner in diesem Bereich einschließlich Funktionsnamen, Klassen und Variablen angezeigt. Bei Verwendung von `$mod importlib` gefolgt von `dir()` wird z.B. Folgendes angezeigt:
 
-![Interaktives Fenster im Bereich „importlib“](media/interactive-importlib-scope.png)
+![Interaktives Fenster im Bereich „importlib“](~/docs/python/media/interactive-importlib-scope.png)
 
 <a name="sending-code-to-interactive"</a>
 ## <a name="send-code-to-interactive-command"></a>Befehl „An Interactive senden“
 
 Außer direkt im interaktiven Fenster zu arbeiten, können Sie im Editor Code auswählen, mit der rechten Maustaste klicken und **An Interactive senden** wählen:
 
-![Menübefehl „An Interactive senden“](media/interactive-send-to.png)
+![Menübefehl „An Interactive senden“](~/docs/python/media/interactive-send-to.png)
 
 Dies ist auch zur iterativen oder evolutionären Codeentwicklung inklusive des Testens Ihres Codes während der Entwicklung nützlich. Sobald Sie einen Codeausschnitt an das interaktive Fenster gesendet und seine Ausgabe gesehen haben, können Sie z.B. die NACH-OBEN-TASTE drücken, um den Code erneut anzuzeigen, ihn ändern und schnell testen, indem Sie STRG+EINGABETASTE drücken. (Durch Drücken der EINGABETASTE am Ende der Eingabe wird diese ausgeführt. Wenn Sie aber die EINGABETASTE in der Mitte der Eingabe drücken, wird eine neue Zeile eingefügt.) Sobald Sie den gewünschten Code haben, können Sie ihn problemlos wieder in die Projektdatei kopieren.
 

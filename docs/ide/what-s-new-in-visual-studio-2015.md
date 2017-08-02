@@ -64,7 +64,7 @@ Willkommen bei Visual Studio 2015, einer integrierten Suite von Entwicklerproduk
 ### Universelle Windows\-Apps für Windows 10 Geräte  
  Mit der universellen Windows\-Plattform und unserem zentralen Windows\-Kern können Sie die gleiche App auf jedem Windows 10\-Gerät ausführen, von Smartphones bis zu Desktop\-PCs. Erstellen Sie diese universellen Windows\-Apps mit Visual Studio 2015 und den universellen Windows\-App\-Entwicklungstools.  
   
- ![Universelle Windows&#45;Plattform](../cross-platform/media/uwp_coreextensions.png "UWP\_CoreExtensions")  
+ ![Universelle Windows&#45;Plattform](~/docs/cross-platform/media/uwp_coreextensions.png "UWP\_CoreExtensions")  
   
  Führen Sie Ihre App auf einem Windows 10\-Phone, Windows 10\-Desktop oder einer Xbox aus. Es ist das gleiche App\-Paket. Mit der Einführung eines einzelnen, einheitlichen Windows 10\-Kerns kann ein App\-Paket auf allen Plattformen ausgeführt werden. Mehrere Plattformen verfügen über Erweiterungs\-SDKs, die Sie zu Ihrer App hinzufügen können, um die Vorteile bestimmter plattformspezifischer Verhaltensweisen zu nutzen. Mit dem Erweiterungs\-SDK für Mobilgeräte wird z. B. die auf einem Windows Phone gedrückte ZURÜCK\-Taste behandelt. Wenn Sie in Ihrem Projekt auf ein Erweiterungs\-SDK verweisen, fügen Sie einfach Laufzeitüberprüfungen hinzu, um zu prüfen, ob dieses SDK für diese Plattform verfügbar ist. Auf dieses Weise können Sie das gleiche App\-Paket für alle Plattformen verwenden.  
   
@@ -95,7 +95,7 @@ Willkommen bei Visual Studio 2015, einer integrierten Suite von Entwicklerproduk
 ## Menü „Gerätevorschau“  
  In universellen Windows\-Plattformprojekten können Sie mit der Menüleiste „Gerätevorschau“ sehen, wie Ihre XAML\-basierte Benutzeroberfläche auf verschiedenen Bildschirmgrößen gerendert wird.  
   
- ![Menü "Gerätevorschau"](../ide/media/vs2015_device_preview.png "vs2015\_device\_preview")  
+ ![Menü "Gerätevorschau"](~/docs/ide/media/vs2015_device_preview.png "vs2015\_device\_preview")  
   
 ## Visual Studio\-Grafikdiagnose  
  Seit Visual Studio 2013 wurden in der Visual Studio\-Grafikdiagnose viele neue Features hinzugefügt, einschließlich der Frame\-Analyse, Windows Phone\-Unterstützung, der Bearbeiten\- und Anwenden\-Funktion im Shader und der Befehlszeilen\-Erfassungstools. Es wurde auch die Unterstützung für das Debuggen von DirectX12 Apps hinzugefügt. Weitere Informationen finden Sie unter [Visual Studio\-Grafikdiagnose](../debugger/visual-studio-graphics-diagnostics.md).  
@@ -168,7 +168,7 @@ Willkommen bei Visual Studio 2015, einer integrierten Suite von Entwicklerproduk
 ### Hochauflösende Bilder und Touch\-Unterstützung  
  Die Visual Studio IDE verfügt jetzt über echt hochauflösende Bilder in dichteren Anzeigen \(in Bereichen wie Menüs, Kontextmenüs, Toolfenster\-Befehlsleisten und einigen Projekten im Projektmappen\-Explorer\). Und auf einem Touchscreen im Visual Studio\-Code\-Editor\-Fenster können Sie jetzt mit Gesten wie Berühren und Halten, Zusammendrücken, Tippen usw. vergrößern\/verkleinern, scrollen, Text markieren und Kontextmenüs aufrufen.  
   
- ![Touch&#45;Unterstützung in Editor](../ide/media/vs2015_touchsupport.png "VS2015\_TouchSupport")  
+ ![Touch&#45;Unterstützung in Editor](~/docs/ide/media/vs2015_touchsupport.png "VS2015\_TouchSupport")  
   
 ### Benutzerdefinierte Layouts  
  Sie können benutzerdefinierte Fensterlayouts erstellen, speichern und ein Roaming dafür ausführen. Sie können beispielsweise ein bevorzugtes Layout zur Verwendung auf dem Desktopcomputer definieren und ein anderes zur Verwendung auf einem Laptop oder einem Gerät mit kleinem Bildschirm. Oder vielleicht bevorzugen Sie ein Layout für ein UI\-Projekt und ein anderes für ein Datenbankprojekt. Mit Tastaturzuordnungen können Sie schnell zwischen Layouts wechseln. Diese Layouts sind in jeder Instanz von Visual Studio verfügbar, wenn Sie angemeldet sind. Weitere Informationen finden Sie unter [Erstellen von benutzerdefinierten Fensterlayouts](../misc/create-custom-window-layouts.md).  
@@ -204,7 +204,7 @@ Willkommen bei Visual Studio 2015, einer integrierten Suite von Entwicklerproduk
   
  In dieser Version haben wir die Kontextmenüs, Codeelemente und Links benutzerfreundlicher gestalten, indem wir die Befehle hinsichtlich Auswählen, Bearbeiten, Verwalten von Gruppen und Ändern des Layouts des Gruppeninhalts in Abschnitte eingesteilt haben. Beachten Sie außerdem, dass Testprojekte in einem anderen Format als andere Projekte angezeigt werden und die Symbole für Elemente in der Zuordnung passender gestaltet wurden.  
   
- ![Anzeigen der ausgewählten Elemente in einer neuen Code Map](../ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")  
+ ![Anzeigen der ausgewählten Elemente in einer neuen Code Map](~/docs/ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")  
   
  Zu den weiteren Verbesserungen gehören:  
   

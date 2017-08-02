@@ -38,7 +38,7 @@ ms.lasthandoff: 05/13/2017
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Erstellen von Apps mit nativer Benutzeroberfläche über Xamarin in Visual Studio
 Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-and-install.md) und [Überprüfen Ihrer Xamarin-Umgebung](../cross-platform/verify-your-xamarin-environment.md) ausgeführt haben, zeigt Ihnen diese exemplarische Vorgehensweise das Erstellen einer einfachen (unten gezeigten) Xamarin-App mit nativen Benutzeroberflächenebenen. Bei nativen Benutzeroberflächen befindet sich der freigegebene Code in einer portablen Klassenbibliothek (PCL), und die einzelnen Plattformprojekte enthalten die UI-Definitionen.  
   
- ![Xamarin-App unter Android und Windows Phone](../cross-platform/media/cross-plat-xamarin-build-1.png "Plattformübergreifende Xamarin-Entwicklung 1")  
+ ![Xamarin-App unter Android und Windows Phone](~/docs/cross-platform/media/cross-plat-xamarin-build-1.png "Plattformübergreifende Xamarin-Entwicklung 1")  
   
  Zum Erstellen müssen Sie die folgenden Schritte ausführen:  
   
@@ -468,7 +468,7 @@ Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-
   
 13. Speichern Sie die Datei, und wechseln Sie zur Ansicht **Design**. Die Benutzeroberfläche sollte folgendermaßen aussehen:  
   
-     ![Benutzeroberfläche für Android-App](../cross-platform/media/xamarin_androidui.png "Xamarin_AndroidUI")  
+     ![Benutzeroberfläche für Android-App](~/docs/cross-platform/media/xamarin_androidui.png "Xamarin_AndroidUI")  
   
 14. Öffnen Sie **MainActivity.cs**, und löschen Sie die Zeilen in der *OnCreate*-Methode, die auf die zuvor entfernte Standardschaltfläche verweisen. Wenn Sie fertig sind, sollte der Code folgendermaßen aussehen:  
   
@@ -597,13 +597,13 @@ Nachdem Sie die Schritte unter [Setup und Installation](../cross-platform/setup-
   
  Die Benutzeroberfläche sollte in der Entwurfsansicht folgendermaßen aussehen:  
   
- ![Windows Phone-App-Benutzeroberfläche](../cross-platform/media/xamarin_winphone_finalui.png "Xamarin_WinPhone_FinalUI")  
+ ![Windows Phone-App-Benutzeroberfläche](~/docs/cross-platform/media/xamarin_winphone_finalui.png "Xamarin_WinPhone_FinalUI")  
   
 ### <a name="consume-your-shared-code"></a>Verwenden des freigegebenen Codes  
   
 1.  Wählen Sie im Designer die Schaltfläche **Get Weather** .  
   
-2.  Wählen Sie im Fenster **Eigenschaften** die Ereignishandler-Schaltfläche aus (![Symbol für Visual Studio-Ereignishandler](../cross-platform/media/blend_vs_eventhandlers_icon.png "blend_VS_EventHandlers_icon")).  
+2.  Wählen Sie im Fenster **Eigenschaften** die Ereignishandler-Schaltfläche aus (![Symbol für Visual Studio-Ereignishandler](~/docs/cross-platform/media/blend_vs_eventhandlers_icon.png "blend_VS_EventHandlers_icon")).  
   
      Dieses Symbol wird in der oberen Ecke des **Eigenschaftsfensters** angezeigt.  
   

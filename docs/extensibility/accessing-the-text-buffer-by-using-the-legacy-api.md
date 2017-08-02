@@ -24,7 +24,7 @@ Der Text wird zur Verwaltung von Textstreams Aus Datei und Dauerhaftigkeit veran
 ## Ein Zwei\-Dimension und Koordinatensysteme  
  Eine eindimensionale Koordinatenposition basiert auf einer Zeichenstelle vom ersten Zeichen im Puffer, z. B. 147.  Mit der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream>\-Schnittstelle, um einen eindimensionalen Position im Puffer zuzugreifen.  Ein zweidimensionales Koordinatensystem basiert auf Zeilen\- und Index.  Beispielsweise würde ein Zeichen im Puffer für Zeile bei 43, 5, 43 fünf Zeichen rechts vom ersten Zeichens in der Zeile sein.  Sie greifen auf einem zweidimensionalen Position im Puffer mithilfe der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>\-Schnittstelle.  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> werden und die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream>\-Schnittstellen im Textpuffer Objekt \(<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>\) implementiert und können voneinander zugegriffen werden, indem `QueryInterface`verwendet.  Das folgende Diagramm zeigt diese und andere Tasten auf Schnittstellen <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>an.  
   
- ![TextBuffer&#45;Objekt](../extensibility/media/vstextbuffer.png "vsTextBuffer")  
+ ![TextBuffer&#45;Objekt](~/docs/extensibility/media/vstextbuffer.gif "vsTextBuffer")  
 Textpuffer Objekt  
   
  Obwohl ein Koordinatensystem im Textpuffer arbeitet, wird sie optimiert, um zweidimensionale Koordinaten zu verwenden.  Ein eindimensionales Koordinatensystem kann Leistungsaufwand erstellen.  Verwenden Sie daher das Koordinatensystem zweidimensionale, wann immer dies möglich ist.  

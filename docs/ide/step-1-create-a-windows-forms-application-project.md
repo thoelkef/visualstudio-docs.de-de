@@ -20,7 +20,7 @@ caps.handback.revision: 22
 
 Beim Erstellen einer Bildanzeige erstellen Sie im ersten Schritt ein Windows Forms\-Anwendungsprojekt.  
   
- ![Link zu Video](../data-tools/media/playvideo.png "PlayVideo") Eine Videoversion dieses Themas finden Sie im [Video 1 zum Lernprogramm 1: Erstellen eines Bildanzeigeprogramms in Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205209) oder im [Video 1 zum Lernprogramm 1: Erstellen eines Bildanzeigeprogramms in C\#](http://go.microsoft.com/fwlink/?LinkId=205199).  Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können.  Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.  
+ ![Link zu Video](~/docs/data-tools/media/playvideo.gif "PlayVideo") Eine Videoversion dieses Themas finden Sie im [Video 1 zum Lernprogramm 1: Erstellen eines Bildanzeigeprogramms in Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205209) oder im [Video 1 zum Lernprogramm 1: Erstellen eines Bildanzeigeprogramms in C\#](http://go.microsoft.com/fwlink/?LinkId=205199).  Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können.  Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.  
   
 ### So erstellen Sie ein Windows Forms\-Anwendungsprojekt  
   
@@ -62,7 +62,7 @@ IDE\-Fenster
   
      Wählen Sie alternativ die Schaltfläche **Alle speichern** auf der Symbolleiste aus, die in der folgenden Abbildung dargestellt ist.  
   
-     ![Schaltfläche "Alle speichern" in der Symbolleiste](../ide/media/express_iconsaveall.png "Express\_IconSaveAll")  
+     ![Schaltfläche "Alle speichern" in der Symbolleiste](~/docs/ide/media/express_iconsaveall.png "Express\_IconSaveAll")  
 Symbolleistenschaltfläche "Alle speichern"  
   
      Visual Studio fügt automatisch den Ordnernamen und den Projektnamen ein und speichert das Projekt dann im Projektordner.  

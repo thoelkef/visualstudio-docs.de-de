@@ -74,7 +74,7 @@ Sie können Code zum Erstellen und Löschen von Modellelementen, Festlegen ihrer
   
  Dieses Modell ist eine Instanz dieser DSL:  
   
- ![Tudor-Stammbaummodell](../modeling/media/tudor_familytreemodel.png "Tudor_FamilyTreeModel")  
+ ![Tudor-Stammbaummodell](~/docs/modeling/media/tudor_familytreemodel.png "Tudor_FamilyTreeModel")  
   
 ### <a name="references-and-namespaces"></a>Verweise und Namespaces  
  Zum Ausführen des Codes in diesem Thema sollten Sie verweisen:  

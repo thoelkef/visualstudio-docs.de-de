@@ -58,7 +58,7 @@ Das Diagnosetool **Netzwerk** von Visual Studio erfasst mithilfe der [Windows.We
   
  Das Berichtsfenster sollte in etwa wie folgt aussehen:  
   
- ![Das Fenster „Netzwerk“](../profiling/media/network_fullwindow.png "NETWORK_FullWindow")  
+ ![Das Fenster „Netzwerk“](~/docs/profiling/media/network_fullwindow.png "NETWORK_FullWindow")  
   
 ## <a name="analyzing-data"></a>Analysieren von Daten  
  Sie können erfassten HTTP-Datenverkehr analysieren, während die App ausgeführt wird oder nachdem sie geschlossen wurde. Wählen Sie dazu einen der in der Zusammenfassungsansicht angezeigten Netzwerkvorgänge aus.  

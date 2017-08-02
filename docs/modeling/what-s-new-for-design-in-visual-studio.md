@@ -44,17 +44,17 @@ ms.lasthandoff: 02/22/2017
 Entfernen unerwünschte Abhängigkeiten ist ein wichtiger Bestandteil der Verwaltung Ihrer technischen Schulden.
 Live-Überprüfung der Abhängigkeiten ist jetzt enthalten, genaue Informationen zu Problemen mit der Bereitstellung und vollständig gelten die neuen Funktionen in der Fehlerliste und Editor.
 
-![Live abhängigkeitsüberprüfung in Aktion](media/dep-validation-whatsnew-01.png)
+![Live abhängigkeitsüberprüfung in Aktion](~/docs/modeling/media/dep-validation-whatsnew-01.png)
 
 Die Möglichkeiten für die Erstellung wurde geändert, um abhängigkeitsüberprüfung, übersichtlicher und besser zugänglich sind, ändern die Terminologie von "Ebenendiagramm", "Abhängigkeitsdiagramm".
 
 Die **Architektur** Menü enthält jetzt den Befehl direkt einem Abhängigkeitsdiagramm erstellen:
 
-![Live-Abhängigkeit Element Menü Architektur](media/dep-validation-whatsnew-02.png)
+![Live-Abhängigkeit Element Menü Architektur](~/docs/modeling/media/dep-validation-whatsnew-02.png)
 
 ... und den Namen einer Ebene in einem Abhängigkeitsdiagramm und deren Beschreibung wurden geändert, um aussagekräftigere:
 
-![Live-Abhängigkeit Eigenschaftennamen aktualisiert](media/dep-validation-whatsnew-03.png)
+![Live-Abhängigkeit Eigenschaftennamen aktualisiert](~/docs/modeling/media/dep-validation-whatsnew-03.png)
 
 Hier sehen Sie die Auswirkung der Änderungen sofort in die Ergebnisse der Analyse für den aktuellen Code in der Lösung jedes Mal, wenn Sie das Diagramm speichern. Sie müssen nicht mehr warten, bis die Ausführung des Befehls "Abhängigkeiten überprüfen".
 

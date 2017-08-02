@@ -37,7 +37,7 @@ Der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debugger wird a
   
  Das folgende Diagramm zeigt die Beziehung mit diesen Elementen des Visual Studio\-Debuggers an.  
   
- ![Übersicht über das Debuggen von Komponenten](../../extensibility/debugger/media/dbugcompovrview.png "DBugCompOvrview")  
+ ![Übersicht über das Debuggen von Komponenten](~/docs/extensibility/debugger/media/dbugcompovrview.gif "DBugCompOvrview")  
   
 ## In diesem Abschnitt  
  [Debug\-Paket](../../extensibility/debugger/debug-package.md)  

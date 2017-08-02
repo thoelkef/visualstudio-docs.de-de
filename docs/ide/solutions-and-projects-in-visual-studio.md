@@ -91,7 +91,7 @@ Beim Erstellen einer App, Anwendung, Website, Web App und eines Skripts, Plug-in
 
  Das folgende Diagramm zeigt die Beziehung zwischen Projekten und Projektmappen und die Elemente, die sie logisch enthalten.  
 
- ![Visual Studio-Projekte und -Projektmappen](../ide/media/vside-project-diagram.png)  
+ ![Visual Studio-Projekte und -Projektmappen](~/docs/ide/media/vside-project-diagram.png)  
 
  Sie können auch benutzerdefinierte Projekte und Elementvorlagen erstellen. Weitere Informationen finden Sie unter [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md).  
 
@@ -101,7 +101,7 @@ Beim Erstellen einer App, Anwendung, Website, Web App und eines Skripts, Plug-in
 ## <a name="managing-projects-in-solution-explorer"></a>Verwalten von Projekten im Projektmappen-Explorer  
  Nachdem Sie ein neues Projekt erstellt haben, verwenden Sie den **Projektmappen-Explorer** , um Projekte und Projektmappen sowie zugehörige Elemente anzuzeigen und zu verwalten. Die folgende Abbildung zeigt den Projektmappen-Explorer mit einer C#-Projektmappe, die zwei Projekte enthält.  
 
- ![Projektmappen-Explorer](../ide/media/vs2015_solution_explorer.png "vs2015_solution_explorer")  
+ ![Projektmappen-Explorer](~/docs/ide/media/vs2015_solution_explorer.png "vs2015_solution_explorer")  
 
 ## <a name="in-this-section"></a>In diesem Abschnitt  
 

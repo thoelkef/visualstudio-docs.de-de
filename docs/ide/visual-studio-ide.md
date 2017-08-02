@@ -39,7 +39,7 @@ In diesem Thema werden die Features von Visual Studio-IDE vorgestellt. Visual St
 ## <a name="what-can-you-do-with-the-visual-studio-ide"></a>Welche Möglichkeiten bietet mir die Visual Studio-IDE?
 Möchten Sie eine App für ein Android-Telefon erstellen? Das können Sie. Wie sieht es mit dem Erstellen eines topmodernen Spiels mit C++ aus? Auch das können Sie – und vieles mehr. Visual Studio enthält Vorlagen, die Ihnen das Erstellen von Websites, Spielen, Desktop-Apps, mobilen Apps, Apps für Office und mehr erleichtern.
 
-![Visual Studio-Projekte](../ide/media/VSIDE_Tour_Projects_List.png)
+![Visual Studio-Projekte](~/docs/ide/media/VSIDE_Tour_Projects_List.png)
 
 Sie können auch mühelos nahezu jeden Code öffnen, den Sie aus beliebigen Quellen erhalten, und damit arbeiten. Sie haben auf GitHub ein Projekt gefunden, das Ihnen gefällt? Klonen Sie einfach das Repository, öffnen Sie es in Visual Studio, und beginnen Sie mit der Kodierung!
 
@@ -57,7 +57,7 @@ Das Web bestimmt unsere moderne Welt, und Visual Studio kann Ihnen helfen, Apps 
 ### <a name="write-code-in-a-world-class-editing-environment"></a>Schreiben von Code in einer Arbeitsumgebung von Weltklasse
 Dank Visual Studio schreiben Sie Code mit Features wie Syntaxfarbgebung, Anweisungsvervollständigung, IntelliSense (Popupbeschreibungen des ausgewählten Codeelements), Codegliederung, Festlegen von Haltepunkten zum Debuggen und vielem mehr schnell und mühelos.
 
-![JavaScript-Codebeispiel](../ide/media/vside_tour_javascript_example.gif)
+![JavaScript-Codebeispiel](~/docs/ide/media/vside_tour_javascript_example.gif)
 
 Weitere Informationen finden Sie unter [Schreiben von Code im Code- und Text-Editor](https://docs.microsoft.com/visualstudio/ide/writing-code-in-the-code-and-text-editor).
 
@@ -69,7 +69,7 @@ Laden Sie zum Einstieg Visual Studio herunter und installieren Sie es auf Ihrem 
 
 Visual Studio ist jetzt kompakter als je zuvor! Mit dem neuen modularen Installationsprogramm können Sie *Arbeitsauslastungen* auswählen und installieren, welche Gruppen von Funktionen sind, die für Ihre bevorzugte Programmiersprache oder Plattform erforderlich sind. Diese Strategie hält den Platzbedarf der Visual Studio-Installation kleiner als je zuvor, d.h. Updates werden auch schneller installiert und aktualisiert.
 
-![Visual Studio-Installationsprogramm](../ide/media/vside_tour_install_dialog.png)
+![Visual Studio-Installationsprogramm](~/docs/ide/media/vside_tour_install_dialog.png)
 
 Neben der verbesserten Installationsleistung wurden viele weitere Verbesserungen in Visual Studio 2017 vorgenommen, um die gesamte Start- und Projektmappen-Ladedauer von IDE zu optimieren. Die Auswahl der neuen Funktion „Lightweight-Ladevorgang für Projektmappen“ im Hauptmenü unter **Tools**, **Optionen**, **Projekte und Projektmappen** ermöglicht z.B., größere Projektmappen schneller zu laden. Weitere Informationen zum Einrichten von Visual Studio auf Ihrem System finden Sie unter [Installieren von Visual Studio 2017 RC](https://docs.microsoft.com/visualstudio/install/install-visual-studio).
 
@@ -83,25 +83,25 @@ Sie lernen etwas am besten kennen, wenn Sie damit arbeiten! Darum werden wir mit
 
 1. Öffnen Sie Visual Studio. Wählen Sie im Menü **Datei**, **Neu**, **Projekt** aus. (Verwenden Sie die standardmäßigen Projektwerte.)
 
-  ![Screenshot](../ide/media/VSIDE_Tour_NewProject1.png)
+  ![Screenshot](~/docs/ide/media/VSIDE_Tour_NewProject1.png)
 
   Als Alternative können Sie mithilfe der Startseite ein neues Projekt erstellen. Weitere Informationen finden Sie unter [Harness the Power of the Redesigned Start Page (blog) (Nutzen Sie die Macht der neu gestaltenen Startseite (Blog))](https://blogs.msdn.microsoft.com/visualstudio/2016/11/29/harness-the-power-of-the-redesigned-start-page/).
 
 1. Im Dialogfeld **Neues Projekt** werden mehrere Projektvorlagen angezeigt. Wählen Sie die Kategorie **Windows Universal** unter **Visual C#**, die Vorlage **Leere App (Universelle Windows-App)** und dann die Schaltfläche **OK**.
 
-  ![Screenshot](../ide/media/VSIDE_Tour_NewProject2.png)
+  ![Screenshot](~/docs/ide/media/VSIDE_Tour_NewProject2.png)
 
   Damit wird ein neues leeres Universelle Windows-App-Projekt mit Visual C# und XAML als Programmiersprachen erstellt. Warten Sie ein wenig, während Visual Studio das Projekt für Sie einrichtet. Wenn Sie zur Eingabe von Informationen aufgefordert werden, übernehmen Sie vorläufig einfach die Standardwerte.
 
 1. Bald sollten Sie etwas sehen, was dem folgenden Screenshot ähnelt. Auf der rechten Seite im Fenster „Projektmappen-Explorer“ werden die Projektdateien aufgeführt.
 
-  ![Screenshot](../ide/media/VSIDE_Tour_NewProject3.png)
+  ![Screenshot](~/docs/ide/media/VSIDE_Tour_NewProject3.png)
 
 1. Wählen Sie im Projektmappen-Explorer das kleine schwarze Dreieck neben der Datei „MainPage.xaml“ aus, um es zu erweitern, und darunter sollten Sie die Datei „MainPage.xaml.cs“ sehen. Wählen Sie diese (C#-Code enthaltende) Datei aus, um sie zu öffnen.
 
   Der C#-Code in „MainPage.xaml.cs“ wird im Code-Editor auf der linken Seite des Bildschirms angezeigt. Beachten Sie, dass die Codesyntax automatisch farbig hervorgehoben wird, um verschiedene Arten von Code anzuzeigen, z.B. Anweisungen oder Kommentare. Darüber hinaus zeigen kleine, vertikale gestrichelte Linien im Code an, welche geschweiften Klammern zusammengehören, und anhand der Zeilennummern können Sie sich später im Code orientieren. Sie können die kleinen Minuszeichen in Kästchen auswählen, um Code ein- oder auszublenden. Mit dieser Codegliederungsfunktion können Sie Code ausblenden, den Sie nicht benötigen, um die Übersichtlichkeit des Bildschirms zu optimieren.
 
-  ![](../ide/media/VSIDE_Tour_NewProject3a.png)
+  ![](~/docs/ide/media/VSIDE_Tour_NewProject3a.png)
 
   Es sind noch mehr Menüs und Toolfenster verfügbar, aber für den Moment wenden wir uns Anderem zu.
 
@@ -111,29 +111,29 @@ Sie lernen etwas am besten kennen, wenn Sie damit arbeiten! Darum werden wir mit
 
 1. Erweitern Sie den Abschnitt **Häufig verwendete XAML-Steuerelemente**, und ziehen Sie dann das Schaltflächensteuerelement etwa zur Mitte des Formulars. (Die genaue Position spielt keine Rolle.)
 
-  ![Screenshot](../ide/media/VSIDE_Tour_Toolbox.png)
+  ![Screenshot](~/docs/ide/media/VSIDE_Tour_Toolbox.png)
 
   Was dann angezeigt wird, sollte dem Folgenden ähneln.
 
-  ![Screenshot](../ide/media/VSIDE_Tour_XAMLButton.png)
+  ![Screenshot](~/docs/ide/media/VSIDE_Tour_XAMLButton.png)
 
   Die Schaltfläche befindet sich im Designer, und der zugrunde liegende (hervorgehobene) Code wird dem XAML-Code des Designers automatisch hinzugefügt.
 
 1. Wir ändern nun einen Teil des XAML-Codes. Benennen Sie den Text im Schaltflächencode von `Button` in `Hello!` um.
 
-  ![Screenshot](../ide/media/VSIDE_Tour_XAMLButton2.png)
+  ![Screenshot](~/docs/ide/media/VSIDE_Tour_XAMLButton2.png)
 
-1. Starten Sie nun die App. Wählen Sie dazu die Schaltfläche **Start** (![Startschaltfläche](../ide/media/VSIDE_StartButton.png)) auf der Symbolleiste oder die F5-Taste, oder wählen Sie im Menü **Debuggen**, **Debuggen starten**.
+1. Starten Sie nun die App. Wählen Sie dazu die Schaltfläche **Start** (![Startschaltfläche](~/docs/ide/media/VSIDE_StartButton.png)) auf der Symbolleiste oder die F5-Taste, oder wählen Sie im Menü **Debuggen**, **Debuggen starten**.
 
-  ![Screenshot](../ide/media/VSIDE_Tour_RunButton.png)
+  ![Screenshot](~/docs/ide/media/VSIDE_Tour_RunButton.png)
 
   Der Buildprozess der App beginnt, und im Fenster „Ausgabe“ werden Statusmeldungen angezeigt. Bald sehen Sie das Formular mit Ihrer Schaltfläche darin. Sie haben nun eine funktionierende App!
 
-  ![Screenshot](../ide/media/VSIDE_Tour_RunProject.png)
+  ![Screenshot](~/docs/ide/media/VSIDE_Tour_RunProject.png)
 
   Zugegeben, da passiert noch nicht viel, aber wenn Sie möchten, können Sie ihre Funktionalität später erweitern.
 
-1. Wählen Sie nach Ausführung des Programms die Schaltfläche „Stopp“ (![Schaltfläche „Stopp“](../ide/media/VSIDE_StopButton.png)) auf der Symbolleiste, um es zu beenden.
+1. Wählen Sie nach Ausführung des Programms die Schaltfläche „Stopp“ (![Schaltfläche „Stopp“](~/docs/ide/media/VSIDE_StopButton.png)) auf der Symbolleiste, um es zu beenden.
 
 Fassen wir zusammen: Sie haben ein neues C#-Windows Universal-Projekt in Visual Studio erstellt, seinen Code angezeigt, dem Designer ein Steuerelement hinzugefügt, einen Teil des XAML-Codes geändert und dann das Projekt ausgeführt. Obwohl der Prozess für dieses Beispiel vereinfacht wurde, zeigt er Ihnen einige gängige Bestandteile der Visual Studio-IDE, die Sie verwenden, wenn Sie Ihre eigenen Apps entwickeln. Weitere Details zu diesem Beispiel finden Sie unter [Erstellen der App „Hello, world“ (XAML)](https://docs.microsoft.com/windows/uwp/get-started/create-a-hello-world-app-xaml-universal).
 
@@ -141,7 +141,7 @@ Fassen wir zusammen: Sie haben ein neues C#-Windows Universal-Projekt in Visual 
 ## <a name="debug-test-and-improve-your-code"></a>Debuggen, Testen und Verbessern Ihres Codes
 Nichts läuft immer perfekt. Wenn Sie Code schreiben, müssen Sie ihn auszuführen und auf Fehler und Leistung prüfen. Das dem neuesten Entwicklungsstand entsprechende Debugsystem von Visual Studio ermöglicht Ihnen, Code in Ihrem lokalen Projekt, auf einem Remotegerät oder in einem Emulator wie dem für Android- oder Windows Phone-Geräte zu debuggen. Sie können die Anweisungen schrittweise durchlaufen und jeweils die Variablen überprüfen, Sie können Anwendungen mit mehreren Threads durchlaufen und Sie können Haltepunkte festlegen, die nur erreicht werden, wenn eine angegebene Bedingung "true" ist. Sie können u.a. die Werte von Variablen während der Codeausführung überwachen. All dies kann im Code-Editor selbst verwaltet werden, sodass Sie den Code nicht verlassen müssen.
 
-![Debuggen](../ide/media/VSIDE_Tour_Debugging.png)
+![Debuggen](~/docs/ide/media/VSIDE_Tour_Debugging.png)
 
 In Visual Studio sind Komponententests, IntelliTest, Auslastungs- sowie Leistungstests und mehr möglich. Weitere Informationen über den Debugprozess in Visual Studio finden Sie unter [Debugger Feature Tour](../debugger/debugger-feature-tour.md) (Führung zu Debuggerfunktionen). Weitere Informationen zum Testen finden Sie unter [Testtools](https://www.visualstudio.com/vs/testing-tools/). Weitere Informationen zum Verbessern der Leistung von Apps finden Sie unter [Tour zur Profilerstellungsfunktion](../profiling/profiling-feature-tour.md).
 
@@ -162,11 +162,11 @@ Im Folgenden werden einige weitere allgemeine Produktivitätsfunktionen in Visua
 
 - Mit dem Suchfeld [Schnellstart](https://docs.microsoft.com/en-us/visualstudio/ide/reference/quick-launch-environment-options-dialog-box) finden Sie in Visual Studio schnell, was Sie suchen. Geben Sie einfach den Namen dessen ein, was Sie suchen, und Visual Studio bietet Ihnen Optionen, mit denen Sie genau ans gewünschte Ziel gelangen. „Schnellstart“ zeigt auch Links an, die den Visual Studio-Installer für jede beliebige Arbeitsauslastung oder einzelne Komponente starten.
 
-  ![Suchfeld „Schnellstart“](../ide/media/VSIDE_Tour_QuickLaunch.png)
+  ![Suchfeld „Schnellstart“](~/docs/ide/media/VSIDE_Tour_QuickLaunch.png)
 
 -  [Refactoring](../ide/refactoring-in-visual-studio.md) beinhaltet Vorgänge wie etwa das intelligente Umbenennen von Variablen, das Verschieben von ausgewählten Codezeilen in eine separate Funktion, das Verschieben von Code an eine andere Position, das Neuanordnen von Funktionsparametern und mehr.
 
- ![Umgestaltung](../ide/media/VSIDE_refactor.png)  
+ ![Umgestaltung](~/docs/ide/media/VSIDE_refactor.png)  
 
 -  **IntelliSense** ist der Oberbegriff für einen Satz von beliebten Features, mit denen Typinformationen über den Code direkt im Editor angezeigt und in einigen Fällen kleine Codeabschnitte für Sie geschrieben werden. Damit verfügen Sie über eine grundlegende Dokumentation, die in den Editor integriert ist, sodass Sie die Typinformationen nicht mehr in einem separaten Hilfefenster nachschauen müssen. Die Features von IntelliSense variieren je nach Sprache. Weitere Informationen finden Sie unter [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ Intellisense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md), [Visual Basic-Specific IntelliSense](../ide/visual-basic-specific-intellisense.md). Die folgende Abbildung zeigt einige IntelliSense-Features:  
 
@@ -174,11 +174,11 @@ Im Folgenden werden einige weitere allgemeine Produktivitätsfunktionen in Visua
 
 -  **Wellenlinien** sind gewellte rote Unterstriche, die Sie in Echtzeit auf Fehler oder mögliche Probleme in Ihrem Code hinweisen. So können Sie diese sofort beheben, ohne zu warten, bis der Fehler während der Kompilierung oder zur Laufzeit ermittelt wird. Wenn Sie auf die Wellenlinie zeigen, werden zusätzliche Informationen zum Fehler angezeigt. Am linken Rand wird u. U. auch eine Glühbirne mit Vorschlägen zum Beheben des Fehlers angezeigt. Weitere Informationen finden Sie unter [Perform quick actions with light bulbs](../ide/perform-quick-actions-with-light-bulbs.md).  
 
- ![Wellenlinien](../ide/media/vs2017_squiggle.png)  
+ ![Wellenlinien](~/docs/ide/media/vs2017_squiggle.png)  
 
 -  Das Fenster [Aufrufhierarchie](../ide/reference/call-hierarchy.md) kann über das Text-Editor-Kontextmenü geöffnet werden. Es zeigt, welche Methoden die Methode unter dem Caretzeichen (Einfügemarke) aufrufen bzw. von ihr aufgerufen werden.
 
- ![Fenster „Aufrufhierarchie“](../ide/media/VSIDE_call_hierarchy.png)
+ ![Fenster „Aufrufhierarchie“](~/docs/ide/media/VSIDE_call_hierarchy.png)
 
 -  Mit [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) können Sie nach Codeverweisen, Änderungen an Ihrem Code, verknüpften Fehlern, Arbeitsaufgaben, Codeüberprüfungen und Komponententests suchen, ohne den Editor verlassen zu müssen.
 
@@ -186,11 +186,11 @@ Im Folgenden werden einige weitere allgemeine Produktivitätsfunktionen in Visua
 
 -  Das Fenster [Definitionsvorschau](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) zeigt integriert eine Methode oder eine Typdefinition, ohne den aktuellen Kontext verlassen zu müssen.  
 
- ![Definitionsvorschau](../ide/media/VSIDE_peek_definition.png)
+ ![Definitionsvorschau](~/docs/ide/media/VSIDE_peek_definition.png)
 
 -  Über die Kontextmenüoption **Gehe zu Definition** gelangen Sie direkt an die Stelle, an der die Funktion oder das Objekt definiert ist. Durch einen Klick mit der rechten Maustaste im Editor sind auch andere Navigationsbefehle verfügbar.
 
- ![Zur Definition wechseln](../ide/media/VSIDE_go_to_definition.png)
+ ![Zur Definition wechseln](~/docs/ide/media/VSIDE_go_to_definition.png)
 
 - Ein verwandtes Tool, der [Objektkatalog](http://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470), ermöglicht Ihnen, .NET- oder Windows-Runtime-Assemblys auf Ihrem System zu überprüfen, um zu ermitteln, welche Typen sie enthalten, und welche Member (Eigenschaften, Methoden, Ereignisse) diese Typen enthalten.
 
@@ -206,7 +206,7 @@ Team Foundation Server (TFS) ist der Anwendungslebenszyklus-Verwaltungshub für 
 Wenn Sie in Ihrem Netzwerk über ein Visual Studio Team Services-Konto oder einen Team Foundation Server verfügen, können Sie über das Fenster „Team Explorer“ eine Verbindung mit dem Konto bzw. Server in Visual Studio herstellen. Über dieses Fenster können Sie Code in die Quellcodeverwaltung einchecken oder daraus auschecken, Arbeitsaufgaben verwalten, Builds starten und auf Teamräume und Arbeitsbereiche zugreifen. Öffnen Sie Team Explorer über das Feld **Schnellstart** oder über das Hauptmenü unter **Ansicht, Team Explorer** oder **Team, Verbindungen verwalten**.
 Die folgende Abbildung zeigt das Team Explorer-Fenster für eine Projektmappe, die in VSTS gehostet wird:
 
-![Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer.png)  
+![Visual Studio Team Explorer](~/docs/ide/media/vs2017_teamexplorer.png)  
 
 Weitere Informationen zu Visual Studio Team Services finden Sie unter [Visual Studio Team Services](https://www.visualstudio.com/team-services/). Weitere Informationen über Team Foundation Server finden Sie unter [Team Foundation Server](https://www.visualstudio.com/products/tfs-overview-vs).
 
@@ -214,13 +214,13 @@ Weitere Informationen zu Visual Studio Team Services finden Sie unter [Visual St
 ## <a name="connect-to-services-databases-and-cloud-based-resources"></a>Herstellen einer Verbindung mit Diensten, Datenbanken und cloudbasierten Ressourcen
 Die Cloud ist wichtig für die moderne Onlinewelt, und Visual Studio bietet Ihnen die Möglichkeit, sie zu nutzen. Mit dem Feature „Verbundene Dienste“ können Sie z.B. Ihre App mit Diensten verbinden. Ihre Apps können es u.a. zum Speichern von Daten im Azure-Speicher verwenden.
 
-![Verbundene Dienste](../ide/media/VSIDE_Tour_Connected_Services.png)
+![Verbundene Dienste](~/docs/ide/media/VSIDE_Tour_Connected_Services.png)
 
 Die Auswahl eines Diensts auf der Seite **Verbundene Dienste** ruft den Assistenten zum Hinzufügen eines verbundenen Diensts auf, der Ihr Projekt konfiguriert und die erforderlichen NuGet-Pakete herunterlädt, damit Sie mühelos mit der Programmierung für Ihren Dienst beginnen können.
 
 Sie können Ihre Azure-basierten Cloudressourcen innerhalb von Visual Studio mit dem [Cloud-Explorer](https://azure.microsoft.com/documentation/articles/vs-azure-tools-resources-managing-with-cloud-explorer/) anzeigen und verwalten. Cloud-Explorer zeigt die Azure-Ressourcen aller Konten an, die unter dem Azure-Abonnement, bei dem Sie angemeldet sind, verwaltet werden. Um den Cloud-Explorer zu erhalten, wählen Sie die Arbeitsauslastung zur Azure-Entwicklung im Visual Studio Installer aus.
 
-![Cloud-Explorer](../ide/media/VSIDE_CloudExplorer.png)
+![Cloud-Explorer](~/docs/ide/media/VSIDE_CloudExplorer.png)
 
 **Server-Explorer** unterstützt Sie bei der Suche nach und Verwaltung von SQL Server-Instanzen und -Ressourcen auf Azure, Salesforce.com, Office 365 und Websites. Wählen Sie zum Öffnen von Server-Explorer im Hauptmenü **Ansicht**, **Server-Explorer**. Unter [Neue Verbindung hinzufügen](https://docs.microsoft.com/visualstudio/data-tools/add-new-connections) finden Sie weitere Informationen zur Verwendung von Server-Explorer.
 

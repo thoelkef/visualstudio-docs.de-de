@@ -36,7 +36,7 @@ Um verknüpfte Daten anzuzeigen, ziehen Sie Elemente, die sich auf demselben Hau
  ![Relation im Datenquellenfenster](../data-tools/media/datasources2.gif "DataSources2")  
 Erstellen von datengebundenen Steuerelementen, die verknüpfte Datensätze anzeigen  
   
- ![Link zu Video](../data-tools/media/playvideo.png "PlayVideo") Eine Videoversion dieses Themas finden Sie unter [How do I: Update Related Tables](http://go.microsoft.com/fwlink/?LinkId=143527).  
+ ![Link zu Video](~/docs/data-tools/media/playvideo.gif "PlayVideo") Eine Videoversion dieses Themas finden Sie unter [How do I: Update Related Tables](http://go.microsoft.com/fwlink/?LinkId=143527).  
   
 ### So erstellen Sie Steuerelemente, die verknüpfte Datensätze anzeigen  
   

@@ -42,7 +42,7 @@ Python-Anwendungen werden in der Regel nur mit Ordnern und Dateien definiert, ab
 
 Darüber hinaus werden Projekte immer in einer Visual Studio-*Projektmappe* verwaltet, die eine beliebige Anzahl von Projekten enthalten kann, die möglicherweise aufeinander verweisen. Ein Python-Projekt kann z.B. auf ein C++-Projekt für ein Erweiterungsmodul verweisen, sodass Visual Studio (falls erforderlich) automatisch das C++-Projekt erstellt, wenn Sie mit dem Debuggen des Python-Projekts beginnen. (Eine allgemeine Erörterung finden Sie unter [Projektmappen und Projekte in Visual Studio](../ide/solutions-and-projects-in-visual-studio.md).)
 
-![Python-Projekt im Projektmappen-Explorer](media/projects-solution-explorer.png)
+![Python-Projekt im Projektmappen-Explorer](~/docs/python/media/projects-solution-explorer.png)
 
 Visual Studio bietet eine Vielzahl von Python-Projektvorlagen, mit der Sie schnell eine Reihe von Anwendungsstrukturen einrichten können, einschließlich einer Vorlage zum Erstellen eines Projekts aus einer vorhandenen Ordnerstruktur und einer Vorlage zum Erstellen eines leeren Projekts. Einen Index finden Sie unten unter [-Projektvorlagen](#project-templates).
 
@@ -79,14 +79,14 @@ Jedem Python-Projekt ist eine im Projektmappen-Explorer fett angezeigte Startdat
 
 Ein neues Projekt ist immer der standardmäßigen globalen Python-Umgebung zugeordnet. Um das Projekt einer anderen Umgebung zuzuordnen (einschließlich virtueller Umgebungen), klicken Sie mit der rechten Maustaste auf den **Python-Umgebungen**-Knoten im Projekt, wählen Sie **Python-Umgebungen hinzufügen/entfernen**, und wählen Sie die gewünschten Umgebungen. Um die aktive Umgebung zu ändern, klicken Sie mit der rechten Maustaste auf die gewünschte Umgebung, und wählen Sie **Umgebung aktivieren**, wie unten dargestellt. Nähere Informationen finden Sie unter [Python-Umgebungen](python-environments.md#project-specific-environments).
 
-![Aktivieren einer Umgebung für ein Python-Projekt](media/projects-activate-environment.png)
+![Aktivieren einer Umgebung für ein Python-Projekt](~/docs/python/media/projects-activate-environment.png)
 
 <a name="project-types"</a>
 ## <a name="project-templates"></a>Projektvorlagen
 
 Visual Studio bietet Ihnen eine Reihe von Methoden zum Einrichten eines Python-Projekts, entweder von Grund auf oder aus vorhandenem Code. Um eine Vorlage zu verwenden, wählen Sie den Menübefehl **Datei > Neu > Projekt...**, oder klicken Sie mit der rechten Maustaste im Projektmappen-Explorer auf die Projektmappe, und wählen Sie **Hinzufügen > Neues Projekt...**. In beiden Fällen rufen Sie so das folgende Dialogfeld **Neues Projekt** auf. Um Python-spezifische Vorlagen anzuzeigen, suchen Sie entweder nach „Python“, oder wählen Sie den Knoten **Vorlagen > Andere Sprachen > Python**:
 
-![Dialogfeld „Neues Projekt“ mit Python-Vorlagen](media/projects-new-project-dialog.png)
+![Dialogfeld „Neues Projekt“ mit Python-Vorlagen](~/docs/python/media/projects-new-project-dialog.png)
 
 Die folgende Tabelle fasst die in Visual Studio 2017 verfügbaren Vorlagen zusammen (nicht alle Vorlagen stehen in allen früheren Versionen zur Verfügung):
 
@@ -109,21 +109,21 @@ Die folgende Tabelle fasst die in Visual Studio 2017 verfügbaren Vorlagen zusam
 1. Wählen Sie das Menü **Datei > Neu > Projekt...** und dann die **Aus vorhandenem Python-Code**-Vorlage.
 1. Legen Sie im folgenden Dialogfeld den Pfad zu Ihrem vorhandenen Code, einen Filter für Dateitypen und ggf. Suchpfade fest, die das Projekt benötigt, und wählen Sie **Weiter**:
 
-    ![Neues Projekt aus vorhandenem Code – Schritt eins](media/projects-from-existing-1.png)
+    ![Neues Projekt aus vorhandenem Code – Schritt eins](~/docs/python/media/projects-from-existing-1.png)
 
 1. Wählen Sie eine Umgebung für das Projekt und die Startdatei aus, und drücken Sie anschließend **Weiter**. (Beachten Sie, dass das Dialogfeld nur Dateien im Stammverzeichnis der Ordnerstruktur anzeigt; wenn die gewünschte Datei sich in einem Unterordner befindet, geben Sie keine Startdatei an, und legen Sie sie später im Projektmappen-Explorer fest).
 
-    ![Neues Projekt aus vorhandenem Code – Schritt zwei](media/projects-from-existing-2.png)
+    ![Neues Projekt aus vorhandenem Code – Schritt zwei](~/docs/python/media/projects-from-existing-2.png)
 
 1. Wählen Sie den Speicherort zum Speichern der Projektdatei aus (hiermit werden die ursprünglichen Quelldateien nicht verschoben oder kopiert, d.h. wenn Sie eine Kopie wünschen, sollten Sie diese vor dem Verwenden der Vorlage erstellen). In diesem Dialogfeld können Sie auch die automatische Erkennung virtueller Umgebungen einbeziehen und das Projekt für andere Webframeworks anpassen.
 
-    ![Neues Projekt aus vorhandenem Code – Schritt drei](media/projects-from-existing-3.png)
+    ![Neues Projekt aus vorhandenem Code – Schritt drei](~/docs/python/media/projects-from-existing-3.png)
 
 1.  Wählen Sie **Fertig stellen**, und Visual Studio erstellt das Projekt und öffnet es im Projektmappen-Explorer. Wenn Sie die PYPROJ-Datei an eine andere Stelle verschieben möchten, wählen Sie sie im Projektmappen-Explorer aus, und wählen Sie **Datei > Speichern unter**. Dies aktualisiert Dateiverweise im Projekt, verschiebt aber keine Codedatei.
 
 ## <a name="linked-files"></a>Verknüpfte Dateien
 
-Verknüpfte Dateien sind in ein Projekt eingebunden, befinden sich aber in der Regel außerhalb der Projektordner der Anwendung. Sie werden im Projektmappen-Explorer wie normale Dateien überlagert mit einem Verknüpfungssymbol angezeigt: ![Dateiverknüpfungssymbol](media/projects-linked-file-icon.png)
+Verknüpfte Dateien sind in ein Projekt eingebunden, befinden sich aber in der Regel außerhalb der Projektordner der Anwendung. Sie werden im Projektmappen-Explorer wie normale Dateien überlagert mit einem Verknüpfungssymbol angezeigt: ![Dateiverknüpfungssymbol](~/docs/python/media/projects-linked-file-icon.png)
 
 Verknüpfte Dateien werden in der `.pyproj`-Datei mit dem normalen `<Compile Include="...">`-Element angegeben. Sie können implizite verknüpfte Dateien sein, wenn sie einen relativen Pfad außerhalb der Verzeichnisstruktur verwenden, oder explizite verknüpfte Dateien, deren Pfad im Projektmappen-Explorer angeben ist:
 
@@ -154,7 +154,7 @@ Verknüpfte Dateien können nicht umbenannt werden.
 
 Visual Studio-Projekte unterstützen das Hinzufügen von Verweisen auf Projekte und Erweiterungen, die im Projektmappen-Explorer unter dem **Verweise**-Knoten angezeigt werden:
 
-![Erweiterungsverweise in Python-Projekten](media/projects-extension-references.png)
+![Erweiterungsverweise in Python-Projekten](~/docs/python/media/projects-extension-references.png)
 
 Erweiterungsverweise geben in der Regel Abhängigkeiten zwischen Projekten an und dienen zum Bereitstellen von IntelliSense beim Entwurf oder der Verknüpfung bei der Kompilierung. Python-Projekte verwenden Verweise ähnlich, aber aufgrund der Dynamik von Python werden sie in erster Linie zur Entwurfszeit verwendet, um verbessertes IntelliSense bereitzustellen. Sie können auch für die Bereitstellung in Microsoft Azure verwendet werden, um zusätzliche Abhängigkeiten zu installieren.
 
@@ -176,4 +176,4 @@ Da Verweise in IronPython nicht verfügbar sind, bis ein Aufruf von `clr.AddRefe
 
 Sie können WebPI-Produkteinträgen Verweise für die Bereitstellung im Microsoft Azure Cloud-Dienst hinzufügen, wo Sie zusätzliche Komponenten über den WebPI-Feed installieren können. Standardmäßig ist der angezeigte Feed Python-spezifisch und enthält Django, CPython und andere Kernkomponenten. Sie können auch Ihre eigenen Feeds auswählen, wie unten dargestellt. Beim Veröffentlichen in Microsoft Azure installiert eine Setupaufgabe alle Produkte, auf die verwiesen wird.
 
-![WebPI-Verweise](media/projects-webPI-components.png)
+![WebPI-Verweise](~/docs/python/media/projects-webPI-components.png)

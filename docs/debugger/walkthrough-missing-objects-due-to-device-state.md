@@ -107,4 +107,4 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie mit [!INCLUDE[vsprvs](..
   
  Nachdem Sie ermittelt haben, dass der Grund für den Renderfehler eine fehlerhaft konfigurierte Tiefenfunktion sein könnte, können Sie anhand dieser Information und Ihrer Kenntnisse des Codes feststellen, wo die Tiefenfunktion falsch eingestellt wird, und das Problem dann beheben. Wenn Ihnen der Code unbekannt ist, könnten Sie anhand der Anhaltspunkte, die Sie beim Debuggen gesammelt haben, nach dem Problem suchen: Beispielsweise könnten Sie entsprechend der **Beschreibung der Tiefenschablone** in diesem Szenario den Code nach Wörtern wie „depth“ oder „GREATER“ durchsuchen. Nachdem Sie den Code korrigiert haben, erstellen Sie die App neu und führen diese erneut aus, um nun festzustellen, dass das Renderproblem behoben ist:  
   
- ![App nach Behebung des Problems](../debugger/media/vsg_walkthru1_finalview.png "vsg\_walkthru1\_finalview")
+ ![App nach Behebung des Problems](~/docs/debugger/graphics/media/vsg_walkthru1_finalview.png "vsg\_walkthru1\_finalview")

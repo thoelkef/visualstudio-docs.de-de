@@ -31,7 +31,7 @@ Enterprise\-Anwendungsentwickler, die das VS\-Paket zu verwenden, können bequem
  Sie finden ein Beispiel für geschachtelte Projekte im Beispiel Example.Nested C\#\-Projekt.  
   
 ## Beispiel für geschachtelte Projekte  
- ![Geschachtelte Projektmappen](../../extensibility/internals/media/vsnestedprojects.png "vsNestedProjects")  
+ ![Geschachtelte Projektmappen](~/docs/extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects")  
 Beispiel für geschachtelte Projekte  
   
 ## Siehe auch  

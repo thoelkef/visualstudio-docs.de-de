@@ -55,7 +55,7 @@ Dumpdateien mit oder ohne Heaps, Erstellen einer Dumpdatei, Öffnen einer Dumpda
   
  Dumpdateien werden hauptsächlich für das Debuggen von Problemen auf Computern verwendet, auf die der Entwickler nicht zugreifen kann.  Sie können beispielsweise eine Dumpdatei vom Computer eines Kunden verwenden, wenn der Absturz des Kundencomputers nicht reproduzierbar oder Ihr Computer blockiert ist.  Dumpdateien werden auch von Testern erstellt, um Absturz\- oder Blockierungsdaten zu sichern, sodass der Testcomputer für weitere Tests verwendet werden kann.  Der Visual Studio\-Debugger kann Dumpdateien für verwalteten oder systemeigenen Code speichern.  Der Debugger kann Dumpdateien laden, die von Visual Studio oder von anderen Programmen erstellt wurden, die Dateien im *Minidumpformat* speichern.  
   
- ![Zurück nach oben](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents)  
+ ![Zurück nach oben](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents)  
   
 ##  <a name="BKMK_Dump_files__with_or_without_heaps"></a> Dumpdateien, mit oder ohne Heaps  
  Sie können Dumpdateien mit oder ohne Heapinformationen erstellen.  
@@ -64,7 +64,7 @@ Dumpdateien mit oder ohne Heaps, Erstellen einer Dumpdatei, Öffnen einer Dumpda
   
 -   **Dumpdateien ohne Heaps** sind wesentlich kleiner als Dumpdateien mit Heapinformationen.  Allerdings muss der Debugger die Binärdateien der Anwendung laden, um die Symbolinformationen zu finden.  Die Binärdateien müssen exakt mit den Binärdateien übereinstimmen, die für die Erstellung der Dumpdatei verwendet wurden.  In den Dumpdateien ohne Heapdaten werden nur die Werte von Stapelvariablen gespeichert.  
   
- ![Zurück nach oben](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents)  
+ ![Zurück nach oben](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents)  
   
 ##  <a name="BKMK_Requirements_and_limitations"></a> Anforderungen und Einschränkungen  
   
@@ -82,7 +82,7 @@ Dumpdateien mit oder ohne Heaps, Erstellen einer Dumpdatei, Öffnen einer Dumpda
   
 -   Um mit [SOS.dll \(SOS Debugging Extension\)](../Topic/SOS.dll%20\(SOS%20Debugging%20Extension\).md) in Visual Studio zu debuggen, müssen Sie die Debugtools für Windows installieren, die Bestandteil des Windows\-Treiberkits \(WDK\) sind.  Siehe [Vorschau auf Windows 8.1: Download\-Kits, \-Bits und \-Tools](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
   
- ![Zurück nach oben](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents)  
+ ![Zurück nach oben](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents)  
   
 ##  <a name="BKMK_Create_a_dump_file"></a> Erstellen einer Dumpdatei  
  So erstellen Sie eine Dumpdatei mit Visual Studio  
@@ -93,7 +93,7 @@ Dumpdateien mit oder ohne Heaps, Erstellen einer Dumpdatei, Öffnen einer Dumpda
   
  Dumpdateien können auch mit jedem Programm erstellt werden, das das Windows\-Minidumpformat unterstützt.  Das **Procdump**\-Eingabeaufforderungs\-Hilfsprogramm von [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) kann beispielsweise  anhand von Triggern oder bedarfsabhängig Dumpdateien zu Prozessabstürzen generieren.  Weitere Informationen zur Verwendung anderer Tools zum Erstellen von Dumpdateien finden Sie unter [Anforderungen und Einschränkungen](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) in diesem Thema.  
   
- ![Zurück nach oben](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents)  
+ ![Zurück nach oben](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents)  
   
 ##  <a name="BKMK_Open_a_dump_file"></a> Öffnen einer Dumpdatei  
   
@@ -136,7 +136,7 @@ Dumpdateien mit oder ohne Heaps, Erstellen einer Dumpdatei, Öffnen einer Dumpda
   
  Wenn Visual Studio die Dateien nicht finden kann, die zum Debuggen eines Moduls im Dump erforderlich sind, wird eine entsprechende Seite angezeigt \(**Keine Binärdatei gefunden**, **Keine Symbole gefunden** oder **Quelle nicht gefunden**\).  Diese Seiten enthalten ausführliche Informationen zu den Ursachen des Problems und stellen Aktionslinks bereit, mit denen Sie den richtigen Speicherort der Dateien identifizieren können.  Siehe [Angeben von Symbol\(PDB\)\- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
   
- ![Zurück nach oben](../debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents)  
+ ![Zurück nach oben](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents)  
   
 ## Siehe auch  
  [Just\-In\-Time\-Debuggen](../debugger/just-in-time-debugging-in-visual-studio.md)   

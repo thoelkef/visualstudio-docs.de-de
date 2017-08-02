@@ -308,7 +308,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
   
 -   **Alle Objekte in Momentaufnahme #\<Zahl>**. Bei dieser Filtereinstellung werden keine Objekte im Heap herausgefiltert.  
   
- Zum Anzeigen von Objektverweisen, die nicht dem aktuellen **Geltungsbereich**-Filter entsprechen, wählen Sie in der rechten oberen Ecke des Bereichs die Option **Nicht übereinstimmende Verweise anzeigen** in der Einstellungsliste ![Settings drop&#45;down list in memory analyzer](../profiling/media/js_mem_settings.png "JS_Mem_Settings") aus. Wenn Sie diese Einstellung aktivieren, werden nicht übereinstimmende Verweise mit grauem Text dargestellt.  
+ Zum Anzeigen von Objektverweisen, die nicht dem aktuellen **Geltungsbereich**-Filter entsprechen, wählen Sie in der rechten oberen Ecke des Bereichs die Option **Nicht übereinstimmende Verweise anzeigen** in der Einstellungsliste ![Settings drop&#45;down list in memory analyzer](~/docs/profiling/media/js_mem_settings.png "JS_Mem_Settings") aus. Wenn Sie diese Einstellung aktivieren, werden nicht übereinstimmende Verweise mit grauem Text dargestellt.  
   
 > [!TIP]
 >  Es wird empfohlen, dass Sie die Schritte unter [Isolate a memory leak](#Isolate) befolgen und dann anhand der übrigen Objekte, die mit dem **Bereichsfilter** herausgefiltert wurden, die Objekte ermitteln, die für den Speicherverlust verantwortlich sind.  
@@ -316,7 +316,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
 ##  <a name="FoldObjects"></a> Anzeigen von Objekten nach Dominator  
  In den Ansichten "Typen" und "Dominatoren" können Sie auswählen, ob Objekte in ihre Dominatoren gefaltet angezeigt werden (dies ist die Standardansicht auf der Registerkarte "Dominatoren"). Wenn diese Ansicht ausgewählt ist, werden Dominatoren nur in der Ansicht der obersten Ebene von Objekten angezeigt. (Objekte, die untergeordnete Elemente von nicht globalen Objekten sind, werden in der Ansicht der obersten Ebene ausgeblendet.) Bei einigen Apps kann dies klären, welche Objekte einen Speicherverlust verursachen, indem Störungen in den Daten reduziert werden.  
   
- Um die Anzeige von Objekten nach Dominator umzuschalten, wählen Sie die Schaltfläche **Objekte nach Dominator reduzieren** . ![Falten von Objekten in ihren Dominatoren](../profiling/media/js_mem_fold_objects.png "JS_Mem_Fold_Objects")  
+ Um die Anzeige von Objekten nach Dominator umzuschalten, wählen Sie die Schaltfläche **Objekte nach Dominator reduzieren** . ![Falten von Objekten in ihren Dominatoren](~/docs/profiling/media/js_mem_fold_objects.png "JS_Mem_Fold_Objects")  
   
  Weitere Informationen zu Dominatoren finden Sie unter [Anzeigen von Momentaufnahmedetails](#SnapshotDetails).  
   
@@ -334,7 +334,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
 > [!NOTE]
 >  Zirkelverweise werden mit einem Sternchen (*) und einer Informations-QuickInfo angezeigt und können nicht erweitert werden. Andernfalls würden sie Sie am Durchlaufen der Verweisstruktur und an der Bestimmung von Objekten hindern, die Arbeitsspeicher einnehmen.  
   
- Wenn Sie zusätzliche Hilfe bei der Identifizierung der entsprechenden Objekte benötigen, wählen Sie in der Einstellungsliste ![Settings drop&#45;down list in memory analyzer](../profiling/media/js_mem_settings.png "JS_Mem_Settings") in der rechten oberen Ecke des oberen Bereichs die Option **Objekt-IDs anzeigen** aus. Durch diese Option werden Objekt-IDs neben den Objektnamen in der Liste **Bezeichner** angezeigt (die IDs werden in allen Ansichten, nicht nur in der Objektverweisliste, angezeigt). Objekte mit der gleichen ID sind freigegebene Verweise.  
+ Wenn Sie zusätzliche Hilfe bei der Identifizierung der entsprechenden Objekte benötigen, wählen Sie in der Einstellungsliste ![Settings drop&#45;down list in memory analyzer](~/docs/profiling/media/js_mem_settings.png "JS_Mem_Settings") in der rechten oberen Ecke des oberen Bereichs die Option **Objekt-IDs anzeigen** aus. Durch diese Option werden Objekt-IDs neben den Objektnamen in der Liste **Bezeichner** angezeigt (die IDs werden in allen Ansichten, nicht nur in der Objektverweisliste, angezeigt). Objekte mit der gleichen ID sind freigegebene Verweise.  
   
  Die folgende Abbildung zeigt die Objektverweisliste für ein ausgewähltes Element mit den angezeigten IDs an.  
   
@@ -343,7 +343,7 @@ Die JavaScript-Speicheranalyse ist in Visual Studio verfügbar und soll Ihnen da
 ##  <a name="BuiltInValues"></a> Anzeigen integrierter Objekte  
  Standardmäßig werden in den Ansichten "Dominatoren" und "Typen" nur die Objekte angezeigt, die in der App erstellt werden. Damit werden nicht benötigte Informationen herausgefiltert und auf die App bezogene Probleme isoliert. Manchmal ist es aber hilfreich, alle Objekte anzuzeigen, die von der JavaScript-Laufzeit für die App generiert werden.  
   
- Zum Anzeigen dieser Objekte wählen Sie in der Einstellungsliste ![Settings drop&#45;down list in memory analyzer](../profiling/media/js_mem_settings.png "JS_Mem_Settings") in der rechten oberen Ecke des Bereichs die Option **Integrierte anzeigen** aus.  
+ Zum Anzeigen dieser Objekte wählen Sie in der Einstellungsliste ![Settings drop&#45;down list in memory analyzer](~/docs/profiling/media/js_mem_settings.png "JS_Mem_Settings") in der rechten oberen Ecke des Bereichs die Option **Integrierte anzeigen** aus.  
   
 ##  <a name="Save"></a> Speichern von Diagnosesitzungsdateien  
  Momentaufnahmen-Zusammenfassungen zu Diagnosezwecken sowie die zugeordneten Detailansichten werden als .diagsessions-Dateien gespeichert. Der**Projektmappen-Explorer** zeigt vorherige Diagnosesitzungen im Ordner "Diagnosesitzungen" an. Im **Projektmappen-Explorer**können Sie vorherige Sitzungen öffnen oder Dateien entfernen bzw. umbenennen.  

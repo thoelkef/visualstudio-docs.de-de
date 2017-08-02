@@ -67,11 +67,11 @@ Gemäß der Konvention erkennt Visual Studio Tests als Methoden, deren Namen mit
 
 1. Der Test-Explorer durchsucht Ihr Projekt auf Tests und zeigt diese wie unten dargestellt an. Durch Doppelklicken auf einen Test wird dessen Quelldatei geöffnet.
 
-    ![Test-Explorer mit Anzeige des Standardtests „test_A“](media/unit-test-A.png)
+    ![Test-Explorer mit Anzeige des Standardtests „test_A“](~/docs/python/media/unit-test-A.png)
 
 1. Wenn Sie Ihrem Projekt weitere Tests hinzufügen, können Sie die Ansicht im Test-Explorer über das Menü „Gruppieren nach“ auf der Symbolleiste organisieren:
 
-    ![Symbolleistenmenü „Gruppieren nach“ im Test-Explorer](media/unit-test-group-menu.png)
+    ![Symbolleistenmenü „Gruppieren nach“ im Test-Explorer](~/docs/python/media/unit-test-group-menu.png)
 
 1. Sie können auch Text in das Suchfeld eingeben, um Tests nach Namen zu filtern.
 
@@ -89,13 +89,13 @@ Tests werden im Hintergrund ausgeführt, und der Test-Explorer aktualisiert den 
 
 - Erfolgreiche Tests werden mit einem grünen Häkchen markiert, und die zum Ausführen des Tests erforderliche Zeit wird angezeigt:
 
-    ![Status „Erfolgreich“ für test_A](media/unit-test-A-pass.png)
+    ![Status „Erfolgreich“ für test_A](~/docs/python/media/unit-test-A-pass.png)
 
 - Fehlerhafte Tests werden mit einem roten Kreuz markiert und mit einem Link **Ausgabe** versehen, unter dem die Konsolenausgabe und die `unittest`-Ausgabe aus dem Testlauf angezeigt wird:
 
-    ![Status „Fehlerhaft“ für test_A](media/unit-test-A-fail.png)
+    ![Status „Fehlerhaft“ für test_A](~/docs/python/media/unit-test-A-fail.png)
 
-    ![Fehlerhafter test_A mit Grund](media/unit-test-A-fail-reason.png)
+    ![Fehlerhafter test_A mit Grund](~/docs/python/media/unit-test-A-fail-reason.png)
 
 ## <a name="debugging-tests"></a>Debuggen von Tests
 
@@ -103,7 +103,7 @@ Da Komponententests Codeteile sind, können sie genau wie jeder andere Code Fehl
 
 Um mit dem Debuggen zu beginnen, legen Sie einen anfänglichen Haltepunkt im Code fest, klicken Sie im Test-Explorer mit der rechten Maustaste auf den Test (oder eine Auswahl), und wählen Sie **Ausgewählte Tests debuggen**. Visual Studio startet den Python-Debugger auf dieselbe Weise wie für Anwendungscode.
 
-![Debuggen eines Tests](media/unit-test-debugging.png)
+![Debuggen eines Tests](~/docs/python/media/unit-test-debugging.png)
 
 Je nach Visual Studio-Version können Sie auch die Befehle **Code Coverage für ausgewählte Tests analysieren** und **Profiltest** verwenden. (Informationen finden Sie in der [Featurematrix](python-in-visual-studio.md#features-matrix).)
 

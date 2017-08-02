@@ -28,7 +28,7 @@ caps.handback.revision: 39
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- ![Link zu Video](../vsto/media/playvideo.png "Link zu Video") Eine entsprechende Videodemo finden Sie im Thema zur [Verwendung der XML\-Zuordnung in Excel](http://go.microsoft.com/fwlink/?LinkID=130288) \(möglicherweise in englischer Sprache\).  
+ ![Link zu Video](~/docs/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie im Thema zur [Verwendung der XML\-Zuordnung in Excel](http://go.microsoft.com/fwlink/?LinkID=130288) \(möglicherweise in englischer Sprache\).  
   
 ## Binden von Daten an das Steuerelement  
  Ein <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>\-Steuerelement unterstützt das Binden an ein einzelnes Datenfeld \(einfache Datenbindung\).  Das <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelement unterstützt komplexe Datenbindung und wird automatisch erstellt, wenn einer Zelle ein wiederholtes Schemaelement zugewiesen wird.  Weitere Informationen finden Sie unter [ListObject-Steuerelement](../vsto/listobject-control.md).  

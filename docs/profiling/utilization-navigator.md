@@ -22,7 +22,7 @@ caps.handback.revision: 9
 
 Sie können den Auslastungs\-Navigator in der Parallelitätsschnellansicht verwenden, um ein Intervall der Uhrzeit einer Ablaufverfolgung auszuwählen.  Die Parallelitätsschnellansicht wird die Auslastung von CPU\-Kerne durch den Zielprozess im Zeitverlauf an.  Dies erleichtert es, CPU\-Auslastungs\-Muster sicherzustellen und aktiviert außerdem Vergleich zwischen den Auslastungsdaten und die Daten in anderen Ansichten.  Der Auslastungs\-Navigator wird oben auf jeder Ansicht in der Parallelitätsschnellansicht.  Die folgende Abbildung zeigt den Auslastungs\-Navigator an.  
   
- ![Auslastungsnavigator mit ausgewähltem Zeitrahmen](../profiling/media/cvutilizationnavigator.png "CVUtilizationNavigator")  
+ ![Auslastungsnavigator mit ausgewähltem Zeitrahmen](~/docs/profiling/media/cvutilizationnavigator.png "CVUtilizationNavigator")  
 Auslastungs\-Navigator und einen ausgewählten Zeitraum  
   
  In der Abbildung wird die ausgewählte Intervall von ein rotes Rechteck definiert, wird als der *Ziehpunkt*.  

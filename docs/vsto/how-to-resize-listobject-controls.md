@@ -39,7 +39,7 @@ caps.handback.revision: 46
   
  Weitere Informationen zu <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelementen finden Sie unter [ListObject-Steuerelement](../vsto/listobject-control.md).  
   
- ![Link zu Video](../vsto/media/playvideo.png "Link zu Video") Eine entsprechende Videodemo finden Sie unter [How Do I: Add Columns to a Data\-Bound List Object at RunTime?](http://go.microsoft.com/fwlink/?LinkID=130318).  
+ ![Link zu Video](~/docs/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie unter [How Do I: Add Columns to a Data\-Bound List Object at RunTime?](http://go.microsoft.com/fwlink/?LinkID=130318).  
   
 ##  <a name="designtime"></a> Ändern der Größe eines ListObject\-Steuerelements zur Entwurfszeit  
  Sie können die Größe einer Liste ändern, indem Sie auf einen der Ziehpunkte klicken und diesen ziehen oder indem Sie die Größe im Dialogfeld **Größe der Liste ändern** neu definieren.  

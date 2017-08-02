@@ -109,7 +109,7 @@ static void Main(string[] args) { int a, b, c, d; a = 1; b = 2; c = 3; d = 4; in
 ## Symbolleiste „Debugspeicherort“  
  Sie können die Symbolleiste **Debugspeicherort** verwenden, um die gewünschte Funktion, den gewünschten Thread oder den gewünschten Prozess auszuwählen. Legen Sie einen Haltepunkt fest, und starten Sie das Debuggen. \(Wenn diese Symbolleiste nicht angezeigt wird, können Sie sie aktivieren, indem Sie auf einen leeren Bereich der Symbolleiste klicken. Sie sollten die Liste der Symbolleisten sehen. Wählen Sie **Debugspeicherort** aus.\) Wenn der Haltepunkt erreicht ist, wird die Ausführung angehalten, und Sie können die Symbolleiste „Debugspeicherort“ sehen, die die unterste Zeile in der folgenden Grafik ist:  
   
- ![DebugLocationToolbar](../debugger/media/debuglocationtoolbar.png "DebugLocationToolbar")  
+ ![DebugLocationToolbar](~/docs/debugger/media/debuglocationtoolbar.png "DebugLocationToolbar")  
   
  Sie können den Kontext auch zu anderen Funktionsaufrufen, Threads oder Prozessen wechseln, indem Sie im Fenster **Aufrufliste**, **Threads** oder **Prozesse** auf das Element doppelklicken.  
   

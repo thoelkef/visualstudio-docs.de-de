@@ -92,7 +92,7 @@ Sie können eine Visual Studio\-Anwendung debuggen, die auf einem anderen Comput
   
 6.  Wenn die Konfiguration abgeschlossen ist, wird das Remotedebugger\-Fenster angezeigt.  
   
-     ![RemoteDebuggerWindow](../debugger/media/remotedebuggerwindow.png "RemoteDebuggerWindow")  
+     ![RemoteDebuggerWindow](~/docs/debugger/media/remotedebuggerwindow.png "RemoteDebuggerWindow")  
   
  Sie können den Remotedebugger beenden, indem Sie in diesem Fenster auf **Datei \/ Beenden**. Sie können ihn über das Menü **Start** oder über die Befehlszeile neu starten:  
   

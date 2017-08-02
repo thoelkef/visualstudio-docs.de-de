@@ -38,7 +38,7 @@ caps.handback.revision: 46
   
 -   [Verfügbarmachen von Code, der sich nicht in einer Hostelementklasse befindet](#NonHostItem)  
   
- ![Link zu Video](../vsto/media/playvideo.png "Link zu Video") Eine entsprechende Videodemo finden Sie unter [How Do I: Call VSTO Code from VBA?](http://go.microsoft.com/fwlink/?LinkId=136757).  
+ ![Link zu Video](~/docs/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie unter [How Do I: Call VSTO Code from VBA?](http://go.microsoft.com/fwlink/?LinkId=136757).  
   
 ##  <a name="HostItemCode"></a> Verfügbarmachen von Code in einer Hostelementklasse  
  Zum Aktivieren von VBA\-Code für das Aufrufen von Visual Basic\-Code in einer Hostelementklasse legen Sie die **EnableVbaCallers**\-Eigenschaft des Hostelements auf **True** fest.  

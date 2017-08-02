@@ -63,7 +63,7 @@ RTVS wird nicht installiert, wenn Sie nur über Visual Studio Shell verfügen, w
 1. Führen Sie den Visual Studio-Installer aus.
 2. Wählen Sie die Workload **Data Science und analytische Anwendungen** aus.
 
-    ![Workload von Data Science und analytischen Anwendungen in VS2017](media/installation-data-science-workload.png)
+    ![Workload von Data Science und analytischen Anwendungen in VS2017](~/docs/rtvs/media/installation-data-science-workload.png)
 
 3. Legen Sie zusätzliche Optionen auf der rechten Seite unter dem gleichen Workloadnamen fest. Beachten Sie, dass diese Workload standardmäßig F#- und Python-Unterstützung enthält. Für R müssen Sie mindestens **Unterstützung der Sprache R**, **Laufzeitunterstützung für R-Entwicklungstools** und **Microsoft R Client** auswählen.
 

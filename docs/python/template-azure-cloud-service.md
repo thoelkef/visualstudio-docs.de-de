@@ -48,11 +48,11 @@ Dieses Thema enthält Details über die Projektvorlage und sonstige Unterstützu
 1. Installieren Sie das [Azure .NET SDK für Visual Studio](https://www.visualstudio.com/vs/azure-tools/), das für die Verwendung der Clouddienstvorlage erforderlich ist.
 1. Wählen Sie in Visual Studio **Datei > Neu > Projekt** aus, suchen Sie nach „Azure Python“, und wählen Sie **Azure-Clouddienst** aus der Liste aus:
 
-    ![Azure-Cloudprojektvorlage für Python](media/template-azure-cloud-project.png)
+    ![Azure-Cloudprojektvorlage für Python](~/docs/python/media/template-azure-cloud-project.png)
 
 1. Wählen Sie eine oder mehrere aufzunehmende Rollen aus. In Cloudprojekten können Rollen, die in verschiedenen Sprachen geschrieben wurden, kombiniert werden, sodass Sie problemlos jeden Teil der Anwendung in der am besten geeigneten Sprache schreiben können. Um dem Projekt nach Abschluss dieses Dialogfelds neue Rollen hinzuzufügen, klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf **Rollen**, und wählen Sie eines der Elemente unter **Hinzufügen** aus.
 
-    ![Hinzufügen von Rollen in der Azure-Cloudprojektvorlage](media/template-azure-cloud-service-project-wizard.png)
+    ![Hinzufügen von Rollen in der Azure-Cloudprojektvorlage](~/docs/python/media/template-azure-cloud-service-project-wizard.png)
 
 1. Beim Erstellen der einzelnen Rollenprojekte werden Sie möglicherweise aufgefordert, zusätzliche Python-Pakete, z.B. die Django-, Bottle- oder Flask-Frameworks, zu installieren, wenn Sie eine Rolle ausgewählt haben, die eines davon verwendet.
 
@@ -60,7 +60,7 @@ Dieses Thema enthält Details über die Projektvorlage und sonstige Unterstützu
 
 1. Der Ordner `bin` eines Projekts enthält auch ein oder zwei PowerShell-Skripts, die verwendet werden, um die virtuellen Remotecomputer zu konfigurieren. Dies umfasst die Installation von Python, [requirements.txt](#dependencies)-Dateien in Ihrem Projekt und bei Bedarf die Einrichtung von IIS. Sie können diese Dateien nach Bedarf für Ihre Bereitstellung bearbeiten. Allerdings können die am häufigsten verwendeten Optionen auf andere Weise verwaltet werden (siehe [Konfigurieren der Rollenbereitstellung](#configuring-role-deployment) weiter unten). Es empfiehlt sich nicht, diese Dateien zu entfernen, da ein älteres Konfigurationsskript verwendet wird, wenn sie nicht verfügbar sind.
 
-    ![Unterstützungsdateien für Workerrollen](media/template-azure-cloud-service-worker-role-support-files.png)
+    ![Unterstützungsdateien für Workerrollen](~/docs/python/media/template-azure-cloud-service-worker-role-support-files.png)
 
     Um diese Konfigurationsskripts einem neuen Projekt hinzuzufügen, klicken Sie mit der rechten Maustaste auf das Projekt, wählen Sie **Hinzufügen > Neues Element** und dann entweder **Webrollen-Unterstützungsdateien** oder **Workerrollen-Unterstützungsdateien** aus.
    

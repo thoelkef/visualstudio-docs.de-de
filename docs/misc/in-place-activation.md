@@ -32,7 +32,7 @@ Wenn die Editor\-Ansicht ActiveX\- oder andere aktive Steuerelemente hostet, mü
 ## Verwendete Objekte und Schnittstellen  
  Die für zum Erstellen der direkten Aktivierung verwendeten Objekte sind in der folgenden Abbildung dargestellt.  
   
- ![Editor mit direkter Aktivierung](../misc/media/vsinplaceactivationeditor.png "vsInPlaceActivationEditor")  
+ ![Editor mit direkter Aktivierung](~/docs/extensibility/media/vsinplaceactivationeditor.gif "vsInPlaceActivationEditor")  
 Editor für die direkte Aktivierung  
   
 > [!NOTE]

@@ -49,13 +49,13 @@ Hier sind einige einfache Beispiele:
 
 Ausschnitte können viel mehr sein als nur die Zeichenvervollständigung von Zeichen. Sie müssen sich mit deren Hilfe z.B. nicht mehr die Namen von Parametern in komplexen Funktionsaufrufen merken, wie bei diesem Ausschnitt für das Lesen einer CSV-Datei mit der `read.csv`-Funktion:
 
-![Animation der Verwendung eines Codeausschnitts zum Einfügen eines Aufrufs von „read.csv“](media/code-snippet-expansion.gif)
+![Animation der Verwendung eines Codeausschnitts zum Einfügen eines Aufrufs von „read.csv“](~/docs/rtvs/media/code-snippet-expansion.gif)
 
 In diesem Fall zeigt IntelliSense eine Vervollständigungsliste an, wenn Sie `readc` eintippen. Wenn Sie die Vervollständigung in der Dropdownliste auswählen und die TAB-Taste drücken, wird `readc` ausgewählt. Wenn Sie erneut die TAB-Taste drücken, wird der Ausschnitt erweitert. (Aus diesem Grund wird die Ausschnitterweiterung oft mit „den Ausschnitt eintippen und die TAB-Taste zweimal drücken“ gleichgesetzt). In den meisten Fällen beendet das erste Drücken der TAB-Taste die IntelliSense-Auswahl, und ein erneutes Drücken der TAB-Taste löst die Erweiterung aus.
 
 Um alle verfügbaren Ausschnitte anzuzeigen, öffnen Sie das Dialogfeld **Extras > Codeausschnitt-Manager...** (STRG+K,B), und wählen Sie für **Sprache** **R** aus. Erweitern Sie die Gruppen, und wählen Sie einzelne Ausschnitte aus, um eine Beschreibung sowie den Verknüpfungstext anzuzeigen:
 
-![Dialogfeld „Codeausschnitt-Manager“ für R](media/code-snippet-dialog.png)
+![Dialogfeld „Codeausschnitt-Manager“ für R](~/docs/rtvs/media/code-snippet-dialog.png)
 
 Um benutzerdefinierte Codeausschnitte zu erstellen, befolgen Sie die Anweisungen unter [Exemplarische Vorgehensweise: Erstellen eines Codeausschnitts](../ide/walkthrough-creating-a-code-snippet.md). Letztendlich ist ein Codeausschnitt nur eine XML-Datei. Folgend ist z.B. der Ausschnitt für einen Pipevorgang dargestellt (Verknüpfung `>`)
 

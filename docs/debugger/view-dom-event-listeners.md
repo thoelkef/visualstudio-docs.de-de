@@ -27,7 +27,7 @@ manager: "ghogen"
 # Anzeigen von DOM-Ereignislistenern
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Gilt für Windows und Windows Phone](../debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![Gilt für Windows und Windows Phone](~/docs/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  Die Registerkarte **Ereignisse** von DOM Explorer enthält die Ereignisse, die einem DOM\-Element zugeordnet werden. Jeder oberste Knoten auf der Registerkarte **Ereignisse** repräsentiert ein Ereignis, das über aktive Abonnenten verfügt. Der oberste Knoten enthält untergeordnete Knoten, die die registrierten Ereignislistener für das spezifische Ereignis darstellen. Zusätzlich zur Anzeige der Ereignislistener können Sie mithilfe dieser Registerkarte zum Speicherort des Ereignislisteners im JavaScript\-Code navigieren. Die Informationen in diesem Thema gelten für Store\-Apps, die mit HTML und JavaScript erstellt werden.  
   
@@ -71,7 +71,7 @@ manager: "ghogen"
   
 11. Um die Ereignislistener für übergeordnete Elemente in der DOM\-Hierarchie schnell zu identifizieren, wählen Sie ein übergeordnetes Element in der Hierarchieliste unten im DOM Explorer aus.  
   
-     ![Übergeordnete Element in der DOM&#45;Hierarchie auswählen](../debugger/media/js_dom_breadcrumbs.png "JS\_DOM\_Breadcrumbs")  
+     ![Übergeordnete Element in der DOM&#45;Hierarchie auswählen](~/docs/debugger/media/js_dom_breadcrumbs.png "JS\_DOM\_Breadcrumbs")  
   
      Auf der Registerkarte **Ereignisse** werden die Ereignislistener für jedes in der Hierarchieliste ausgewählte Element angezeigt.  
   

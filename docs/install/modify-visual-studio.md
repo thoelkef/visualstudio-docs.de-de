@@ -52,18 +52,18 @@ Gehen Sie folgendermaßen vor:
 
      Auf einem Computer mit Windows 10 Anniversary Update klicken Sie beispielsweise auf **Start** und scrollen dann zum Buchstaben **V**, wo das Installationsprogramm als **Visual Studio-Installer** angezeigt wird.  
 
-     ![Visual Studio-Installer](media/vs2017-locate-the-visual-studio-installer.PNG "Suchen des Microsoft Visual Studio-Installers")
+     ![Visual Studio-Installer](~/docs/install/media/vs2017-locate-the-visual-studio-installer.PNG "Suchen des Microsoft Visual Studio-Installers")
 
      >[!NOTE]
      Auf manchen Computern ist der Visual Studio-Installer unter dem Buchstaben **„M“** als **Microsoft Visual Studio-Installer** aufgelistet.
 
 2.  Starten Sie das Installationsprogramm, indem Sie darauf klicken oder tippen, und wählen Sie dann **Ändern**.  
 
-     ![Starten oder Ändern von Visual Studio](media/vs2017-modify.PNG "Ändern von Visual Studio 2017")  
+     ![Starten oder Ändern von Visual Studio](~/docs/install/media/vs2017-modify.PNG "Ändern von Visual Studio 2017")  
 
 3.  Aktivieren oder deaktivieren Sie auf dem Bildschirm **Arbeitsauslastungen** die Arbeitsauslastungen, die Sie installieren bzw. deinstallieren möchten.  
 
-    ![Visual Studio 2017-Setupdialogfeld](media/vs2017-modify-workloads.PNG "Auswählen einer Arbeitsauslastung in Visual Studio 2017")
+    ![Visual Studio 2017-Setupdialogfeld](~/docs/install/media/vs2017-modify-workloads.PNG "Auswählen einer Arbeitsauslastung in Visual Studio 2017")
 
 4. Klicken oder tippen Sie erneut auf **Ändern**.  
 

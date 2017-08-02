@@ -141,11 +141,11 @@ Der Visual Studio-Editor bietet viele Funktionen, die Ihnen das Schreiben und di
 ## <a name="navigate-and-find-code"></a>Navigieren und Suchen von Code  
 Sie können sich auf verschiedene Arten in einem Dokument bewegen. Zusätzlich zu den Standardvorgängen können Sie die Schaltflächen **Rückwärts navigieren** (STRG+MINUSZEICHEN) und **Vorwärts navigieren** (oder STRG+UMSCHALT+MINUSZEICHEN) auf der Symbolleiste verwenden, um die Einfügemarke im aktiven Dokument auf vorherige Positionen oder auf Positionen zu verschieben, die Sie gerade erst besucht haben. Diese Schaltflächen speichern die letzten 20 Positionen der Einfügemarke.
 
-![Navigationsschaltflächen "Vor" und "Zurück"](../ide/media/vs2017_nav_buttons.png)
+![Navigationsschaltflächen "Vor" und "Zurück"](~/docs/ide/media/vs2017_nav_buttons.png)
 
 Die Funktion „Strukturschnellansicht“ im Code-Editor zeigt *Strukturführungslinien*: vertikal gestrichelte Linien, die passende geschweifte Klammern in Ihrer Codebasis indizieren. Dadurch können Sie leichter erkennen, wo logische Blöcke anfangen und aufhören.
 
-![Strukturschnellansicht](../ide/media/vside_structure_visualizer.png)
+![Strukturschnellansicht](~/docs/ide/media/vside_structure_visualizer.png)
 
 Um die Struktur von Hilfslinien zu deaktivieren, wechseln Sie zu **Extras**, **Optionen**, **Text-Editor**, **Allgemein** , und deaktivieren Sie das Feld **Strukturführungslinien anzeigen**.
 
@@ -167,7 +167,7 @@ Die folgenden Befehle stehen für codespezifische Navigationsmethoden:
 
  Sie können auch die **Navigationsleiste** (Dropdownfeldern am Anfang des Codefensters) verwenden, um Code in einer Codebasis zu suchen. Sie können einen Typ oder Member auswählen und direkt zu diesem wechseln. Die Navigationsleiste wird angezeigt, wenn Sie Code in der Visual Basic-, C#- oder C++-Code-Basis bearbeiten.
 
- ![Codenavigationsleiste](../ide/media/vside_navigation_bar.png)
+ ![Codenavigationsleiste](~/docs/ide/media/vside_navigation_bar.png)
 
  Ändern Sie zum Ausblenden der Navigationsleiste die Option **Navigationsleiste** im Text-Editor in der Einstellung „Alle Sprachen“ (**Extras**, **Optionen**, **Text-Editor**, **Alle Sprachen**, oder ändern Sie die Einstellungen für einzelne Sprachen). Sie können in den Dropdownfeldern wie folgt navigieren:  
 
@@ -194,7 +194,7 @@ Die Visual Studio-Befehle **Gehe zu** führen eine zielgerichtete Suche in Ihrem
 1. Wählen Sie im Hauptmenü **Bearbeiten**, **Gehe zu** aus. Ein kleines Textfeld wird in der oberen Ecke des Code-Editors angezeigt.
 1. Geben Sie im Textfeld den Namen des Codeelements ein, das Sie suchen.
 
-    ![Fenster „Navigieren zu“](../ide/media/vside_navigatetowindow.png "Fenster „Navigieren zu“")
+    ![Fenster „Navigieren zu“](~/docs/ide/media/vside_navigatetowindow.png "Fenster „Navigieren zu“")
 
     Während der Eingabe werden die Ergebnisse in einer Dropdownliste unterhalb des Textfelds angezeigt.
 1. Um zu einem Element zu wechseln, wählen Sie es in der Liste aus.
@@ -217,11 +217,11 @@ Um Ihre Suche beispielsweise nur auf Codezeichen zu beschränken, öffnen Sie da
 
 Sie können auch schnell Suchfilter ändern, indem Sie Schaltflächen auf der Symbolleiste des Dialogfelds „Gehe zu“ auswählen. Schaltflächen, die die Filter ändern, befinden sich auf der linken Seite, Schaltflächen, die den Bereich der Suche ändern, befinden sich auf der rechten Seite.
 
-![](../ide/media/vside_navigation_toolbar.png)
+![](~/docs/ide/media/vside_navigation_toolbar.png)
 
 Wenn Sie die [Pascal-Schreibweise](https://en.wikipedia.org/wiki/Camel_case) (Kamel-Schreibweise) in Ihrem Code verwenden, können Sie Codeelemente schneller finden, indem Sie nur die Großbuchstaben des Codeelementnamens eingeben. Wenn Ihr Code beispielsweise über einen Typ namens `CredentialViewModel` verfügt, können Sie die Suche eingrenzen, indem Sie den Typfilter („t“) auswählen und anschließend nur die Großbuchstaben des Namens (`CVM`) in das „Gehe zu“-Dialogfeld eingeben.
 
-![Fenster „Navigieren zu“ - Suchvorgänge mit Großbuchstaben](../ide/media/vside_capitalsearch.png)
+![Fenster „Navigieren zu“ - Suchvorgänge mit Großbuchstaben](~/docs/ide/media/vside_capitalsearch.png)
 
 Diese Funktion ist nützlich, wenn der Code lange Namen aufweist.
 
@@ -239,7 +239,7 @@ Die Ergebnisse werden in einem Toolfenster mit der Bezeichnung **'*{lement}*'-Ve
 
 Sie können auch mit dem Mauszeiger auf jedes Suchergebnis zeigen, um eine Vorschau des zurückgegebenen Elements anzuzeigen.
 
-![Toolfenster „Alle Verweise suchen“](../ide/media/vside_findallreferences.png)
+![Toolfenster „Alle Verweise suchen“](~/docs/ide/media/vside_findallreferences.png)
 
 Um die Ergebnisse der Suche beizubehalten, wählen Sie die **Ergebnisse beibehalten**-Schaltfläche aus. Wenn Sie diese Schaltfläche auswählen, verbleiben die aktuellen Suchergebnisse in diesem Fenster und neue Suchergebnisse erscheinen in einem neuen Toolfenster.
 

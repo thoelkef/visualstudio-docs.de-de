@@ -28,7 +28,7 @@ Sie können nach Text suchen und Visual Studio\-Befehle vom **Such\-\/Befehlsfel
   
  Das **Such\-\/Befehlsfeld** behält die letzten 20 Einträge bei, und zeigt diese in einer Dropdownliste an.  Mithilfe der Pfeiltasten kann in der Liste navigiert werden.  
   
- ![Such&#47;Befehlsfeld](../ide/media/findcommandbox.png "FindCommandBox")  
+ ![Such&#47;Befehlsfeld](~/docs/ide/media/findcommandbox.png "FindCommandBox")  
 Such\-\/Befehlsfeld  
   
 ## Nach Text suchen  

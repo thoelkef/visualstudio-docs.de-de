@@ -46,18 +46,18 @@ Diese Seite führt Sie durch die Deinstallation von Visual Studio, unserer integ
 
      Auf einem Computer mit Windows 10 Anniversary Update klicken Sie beispielsweise auf **Start** und blättern dann zum Buchstaben **V**, wo das Installationsprogramm als **Visual Studio-Installer** angezeigt wird.  
 
-     ![Visual Studio-Installer](media/vs2017-locate-the-visual-studio-installer.PNG "Suchen des Microsoft Visual Studio-Installers")
+     ![Visual Studio-Installer](~/docs/install/media/vs2017-locate-the-visual-studio-installer.PNG "Suchen des Microsoft Visual Studio-Installers")
 
      >[!NOTE]
      Auf manchen Computern ist der Visual Studio-Installer unter dem Buchstaben **„M“** als **Microsoft Visual Studio-Installer** aufgelistet.
 
-2.  Starten Sie das Installationsprogramm, indem Sie darauf klicken, klicken Sie auf das Symbol ![Details](media/vs2017uninstall-UninstallIcon.png "wählen Sie das Symbol „Optionen“"), und klicken Sie dann auf **Deinstallieren**.  
+2.  Starten Sie das Installationsprogramm, indem Sie darauf klicken, klicken Sie auf das Symbol ![Details](~/docs/install/media/vs2017uninstall-UninstallIcon.png "wählen Sie das Symbol „Optionen“"), und klicken Sie dann auf **Deinstallieren**.  
 
-     ![Ändern von Visual Studio 2017; Ändern, Starten, Reparieren oder Deinstallieren](media/vs2017-uninstall.PNG "Reparieren oder Deinstallieren von Visual Studio 2017")  
+     ![Ändern von Visual Studio 2017; Ändern, Starten, Reparieren oder Deinstallieren](~/docs/install/media/vs2017-uninstall.PNG "Reparieren oder Deinstallieren von Visual Studio 2017")  
 
 3.  Klicken Sie zur Bestätigung Ihrer Auswahl auf **OK**.
 
-     ![Ändern von Visual Studio 2017; Deinstallieren des Produkts](media/vs2017-uninstall-confirm.PNG "Bestätigen der Deinstallation von Visual Studio 2017")  
+     ![Ändern von Visual Studio 2017; Deinstallieren des Produkts](~/docs/install/media/vs2017-uninstall-confirm.PNG "Bestätigen der Deinstallation von Visual Studio 2017")  
 
 Wenn Sie Ihre Meinung später ändern und Visual Studio 2017 erneut installieren möchten, starten Sie den Visual Studio-Installer einfach erneut, und wählen Sie dann auf dem Auswahlbildschirm **Installieren** aus.
 

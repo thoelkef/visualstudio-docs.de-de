@@ -31,7 +31,7 @@ Editoren in Visual Studio werden oft mit einem Sprachdienst zugeordnet.  Unter a
   
  Ein grundlegender Sprachdienst wird in der folgenden Abbildung dargestellt.  
   
- ![Grafik zum Sprachdienstmodell](../extensibility/media/vslanguageservicemodel.png "vsLanguageServiceModel")  
+ ![Grafik zum Sprachdienstmodell](~/docs/extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
 Kern des Editors und Sprachdienst Objekte  
   
  Das Dokument wird das angegebene Channeldatenobjekt für den Kern des Editors einen Textpuffer bezeichnet und wird durch das <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>\-Objekt dargestellt.  Das Objekt der Dokumente ist eine Textansicht bezeichnet und wird durch das <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>\-Objekt dargestellt.  Diese beiden Objekte funktionieren vom Sprachdienst zusammen, um eine einheitliche Ansicht des zentralen editors bereitzustellen.  Informationen im Textpuffer und den Text anzeigen, der in einem Dokumentfenster namens ein Codefenster an.  Das Codefenster Dokument wird von einem Code fenster\-manager verwaltet.  

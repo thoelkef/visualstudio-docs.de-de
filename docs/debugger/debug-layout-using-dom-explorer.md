@@ -27,7 +27,7 @@ caps.handback.revision: 33
 # Debuggen von Layout mithilfe von DOM Explorer
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Gilt für Windows und Windows Phone](../debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![Gilt für Windows und Windows Phone](~/docs/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  Die Registerkarte **Layout** des DOM Explorer teigt das [CSS\-Verschachtelungsmodell](http://go.microsoft.com/fwlink/?LinkID=238778) für das ausgewählte Elemente in einer [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]\-App, Windows Phone Store\-App oder einer mit Visual Studio Tools for Apache Cordova erstellten App. Sie können die visuelle Darstellung des Verschachtelungsmodells verwenden, um die layoutbezogenen Werte, die die Darstellung der Elemente beeinflussen, zu identifizieren und zu ändern.  
   

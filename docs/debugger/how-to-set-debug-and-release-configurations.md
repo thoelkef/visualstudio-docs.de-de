@@ -60,7 +60,7 @@ Visual Studio\-Projekte verfügen über separate Release\- und Debugkonfigurati
   
 2.  Wählen Sie auf der Symbolleiste im Listenfeld **Projektmappenkonfigurationen** die Option **Debuggen** oder **Release** aus.  
   
-     ![Symbolleisten&#45;Buildkonfiguration](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")  
+     ![Symbolleisten&#45;Buildkonfiguration](~/docs/debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")  
   
      Diese Symbolleiste ist in Express\-Editionen nicht verfügbar.  Sie können die Menüelemente **Projektmappe erstellen** \(F6\) und **Debuggen starten** \(F5\) verwenden, um die Konfiguration auszuwählen.  
   

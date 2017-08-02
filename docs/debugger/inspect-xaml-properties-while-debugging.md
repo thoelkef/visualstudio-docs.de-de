@@ -79,11 +79,11 @@ private void button_Click(object sender, RoutedEventArgs e)
   
  Wenn das Fenster angezeigt wird, klicken Sie mehrmals auf die Schaltfläche **Element hinzufügen**.  Folgendes sollte angezeigt werden:  
   
- ![Hauptfenster der App](../debugger/media/livevisualtree-app.png "LiveVIsualTree\-App")  
+ ![Hauptfenster der App](~/docs/debugger/media/livevisualtree-app.png "LiveVIsualTree\-App")  
   
  Öffnen Sie nun das Fenster **Live Visual Tree** \(**Debuggen \/ Windows \/ Live Visual Tree** oder suchen Sie es auf der linken Seite von IDE\).  Ziehen Sie es weg von der verankerten Position, damit dieses Fenster neben dem Fenster für die Live\-Eigenschaften angezeigt wird.  Erweitern Sie im Fenster **Live Visual Tree** den Knoten **ContentPresenter**.  Es sollte Knoten für die Schaltfläche und das Listenfeld enthalten.  Erweitern Sie das Listenfeld \(**ScrollContentPresenter** und **ItemsPresenter**\), um die Listenfeldelemente zu suchen.  Das Fenster sieht wie folgt aus:  
   
- ![ListBoxItems in der visuellen Echtzeitstruktur](../debugger/media/livevisualtree-listboxitems.png "LiveVisualTree\-ListBoxItems")  
+ ![ListBoxItems in der visuellen Echtzeitstruktur](~/docs/debugger/media/livevisualtree-listboxitems.png "LiveVisualTree\-ListBoxItems")  
   
  Kehren Sie zum Anwendungsfenster zurück, und fügen Sie ein paar weitere Elemente hinzu.  In **Live Visual Tree** sollten mehr Listenfeldelemente angezeigt werden.  
   
@@ -95,7 +95,7 @@ private void button_Click(object sender, RoutedEventArgs e)
   
  **Zeigen Sie Layout\-Adorner in der ausgeführten Anwendung an**.  Sie können diesen Modus aktivieren, wenn Sie die Schaltfläche auswählen, die sich direkt rechts neben der Schaltfläche „Auswahl aktivieren“ befindet.  Wenn die Option zum Anzeigen der Layout\-Adorner aktiviert ist, zeigt das Anwendungsfenster horizontale und vertikale Linien entlang der Grenzen des ausgewählten Objekts an, sodass Sie sehen können, womit es ausgerichtet wird, und Sie die die Ränder anzeigenden Rechtecke sehen können.  Aktivieren Sie beispielsweise **Auswahl aktivieren** und **Layout anzeigen**, und wählen Sie den Textblock **Element hinzufügen** in der Anwendung aus.  Der Textblockknoten sollte in **Live Visual Tree** und die Textblockeigenschaften sollten in **Live Property Viewer** sowie die horizontalen und vertikalen Linien auf den Grenzen des Textblocks angezeigt werden.  
   
- ![LivePropertyViewer in DisplayLayout](../debugger/media/livevisualtreelivepropertyviewer-displaylayout.png "LiveVisualTreeLivePropertyViewer\-DisplayLayout")  
+ ![LivePropertyViewer in DisplayLayout](~/docs/debugger/media/livevisualtreelivepropertyviewer-displaylayout.png "LiveVisualTreeLivePropertyViewer\-DisplayLayout")  
   
  **Vorschau für Auswahl**.  Sie können diesen Modus aktivieren, indem Sie die dritte Schaltfläche von links auf der Live Visual Tree\-Symbolleiste auswählen.  Dieser Modus zeigt die XAML an, in der das Element deklariert wurde, wenn Sie über Zugriff auf den Quellcode der Anwendung verfügen.  Wählen Sie **Auswahl aktivieren** und **Vorschau für Auswahl** und dann die Schaltfläche in der Testanwendung aus.  Die Datei „MainWindow.xaml“ wird in Visual Studio geöffnet, und der Cursor wird auf der Zeile platziert, auf der die Schaltfläche definiert ist.  
   

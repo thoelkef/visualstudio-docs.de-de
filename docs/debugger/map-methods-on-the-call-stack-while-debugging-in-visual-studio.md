@@ -136,11 +136,11 @@ Erstellen Sie eine Code Map, um die Aufrufliste während des Debuggens visuell z
   
      Standardmäßig wird nur Ihr eigener Code in der Zuordnung angezeigt. Um externen Code anzuzeigen, aktivieren Sie es in der **Aufrufliste** Fenster:  
   
-     ![Anzeige von externem Code über das Fenster "Aufrufliste"](../debugger/media/debuggermap_callstackmenu.png "DebuggerMap_CallStackMenu")  
+     ![Anzeige von externem Code über das Fenster "Aufrufliste"](~/docs/debugger/media/debuggermap_callstackmenu.png "DebuggerMap_CallStackMenu")  
   
      oder deaktivieren Sie **nur meinen Code aktivieren** in Visual Studio Debuggen von Optionen:  
   
-     ![Anzeigen von externem Code über das Dialogfeld "Optionen"](../debugger/media/debuggermap_debugoptions.png "DebuggerMap_DebugOptions")  
+     ![Anzeigen von externem Code über das Dialogfeld "Optionen"](~/docs/debugger/media/debuggermap_debugoptions.png "DebuggerMap_DebugOptions")  
   
 -   **Wirkt Ändern der Zuordnung den Code sich?**  
   
@@ -168,7 +168,7 @@ Erstellen Sie eine Code Map, um die Aufrufliste während des Debuggens visuell z
   
 -   **Wie verhindere ich die Zuordnung neue Aufruflisten automatisch hinzufügt?**  
   
-     Wählen Sie ![Schaltfläche Anzeigen der Aufrufliste in codezuordnung automatisch](../debugger/media/debuggermap_automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon") auf der Symbolleiste der Map. Um die aktuelle Aufrufliste manuell zur Karte hinzuzufügen, drücken Sie die **STRG** + **UMSCHALT** + **`**.  
+     Wählen Sie ![Schaltfläche Anzeigen der Aufrufliste in codezuordnung automatisch](~/docs/debugger/media/debuggermap_automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon") auf der Symbolleiste der Map. Um die aktuelle Aufrufliste manuell zur Karte hinzuzufügen, drücken Sie die **STRG** + **UMSCHALT** + **`**.  
   
      Während des Debuggens hebt die Zuordnung weiterhin vorhandene Aufruflisten in der Zuordnung hervor.  
   

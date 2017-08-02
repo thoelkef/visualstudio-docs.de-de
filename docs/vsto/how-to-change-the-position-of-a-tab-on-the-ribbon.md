@@ -34,7 +34,7 @@ caps.handback.revision: 25
   
 3.  Klicken Sie mit der rechten Maustaste auf den Menüband\-Designer, und klicken Sie anschließend auf **Eigenschaften**.  
   
-4.  Wählen Sie im Fenster **Eigenschaften** die **Tabs**\-Eigenschaft, und klicken Sie auf die Schaltfläche mit den Auslassungszeichen \(![Auslassungszeichen im ASP.NET Mobile-Designer](../sharepoint/media/mwellipsis.png "Auslassungszeichen im ASP.NET Mobile-Designer")\).  
+4.  Wählen Sie im Fenster **Eigenschaften** die **Tabs**\-Eigenschaft, und klicken Sie auf die Schaltfläche mit den Auslassungszeichen \(![Auslassungszeichen im ASP.NET Mobile-Designer](~/docs/sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer")\).  
   
      Der **Registerkartenauflistungs\-Editor** wird angezeigt.  
   

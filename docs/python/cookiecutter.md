@@ -44,7 +44,7 @@ Cookiecutter erfordert Python 3.3 oder höher (32 oder 64 Bit) oder Anaconda 3 4
 
 Wählen Sie nach der Installation **Ansicht > Cookiecutter-Explorer**, um das Fenster von Cookiecutter zu öffnen:
 
-![Cookiecutter – Hauptfenster](media/cookiecutter-overview.png)
+![Cookiecutter – Hauptfenster](~/docs/python/media/cookiecutter-overview.png)
 
 ## <a name="cookiecutter-workflow"></a>Cookiecutter-Workflow
 
@@ -76,7 +76,7 @@ Wenn Sie eine Vorlage aus der Gruppe **Installiert** auswählen oder wenn Sie ei
 
 Nachdem die Vorlage lokal installiert wurde, zeigt Cookiecutter eine Optionsseite an, auf der Sie angeben können, ob Cookiecutter Dateien generieren soll. Sie können auf der Seite noch weitere Optionen festlegen:
 
-![Cookiecutter – Optionsseite](media/cookiecutter-template-options.png)
+![Cookiecutter – Optionsseite](~/docs/python/media/cookiecutter-template-options.png)
 
 Jede Cookiecutter-Vorlage definiert einen eigenen Satz von Optionen und legt einen Standardwert für jede Option fest (angezeigt als vorgeschlagener Text in den jeweiligen Eingabefeldern). Bei einem Standardwert kann es sich um einen Codeausschnitt handeln. Dies ist häufig bei dynamischen Werten der Fall, die weitere Optionen nutzen. 
 
@@ -90,13 +90,13 @@ Wenn Sie die erforderlichen Optionen festgelegt haben, wählen Sie **Erstellen**
 
 Nach dem erfolgreichen Erstellen der Dateien bietet Cookiecutter eine Option zum Öffnen der Dateien im **Projektmappen-Explorer**:
 
-![Cookiecutter mit Projektmappen-Explorer-Befehl](media/cookiecutter-files-created.png)
+![Cookiecutter mit Projektmappen-Explorer-Befehl](~/docs/python/media/cookiecutter-files-created.png)
 
 ## <a name="cookiecutter-options"></a>Cookiecutter-Optionen
 
 Cookiecutter-Optionen stehen über **Tools > Optionen > Cookiecutter** zur Verfügung:
 
-![Cookiecutter-Optionen](media/cookiecutter-tools-options.png)
+![Cookiecutter-Optionen](~/docs/python/media/cookiecutter-tools-options.png)
 
 | Option | Beschreibung |
 | --- | --- |

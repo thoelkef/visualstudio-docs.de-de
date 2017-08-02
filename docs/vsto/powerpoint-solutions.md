@@ -33,7 +33,7 @@ caps.handback.revision: 41
   
  [!INCLUDE[appliesto_pptallapp](../vsto/includes/appliesto-pptallapp-md.md)]  
   
- ![Link zu Video](../vsto/media/playvideo.png "Link zu Video") Eine entsprechende Videodemo finden Sie unter [Gewusst wie: Erstellen eines Add\-Ins für Microsoft PowerPoint](http://go.microsoft.com/fwlink/?LinkId=132767).  
+ ![Link zu Video](~/docs/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie unter [Gewusst wie: Erstellen eines Add\-Ins für Microsoft PowerPoint](http://go.microsoft.com/fwlink/?LinkId=132767).  
   
 ## Automatisieren von PowerPoint mithilfe des PowerPoint\-Objektmodells  
  Das PowerPoint\-Objektmodell macht viele Typen verfügbar, die Sie zum Automatisieren von PowerPoint verwenden können. Diese Typen ermöglichen Ihnen das Schreiben von Code zum Ausführen häufiger Aufgaben:  

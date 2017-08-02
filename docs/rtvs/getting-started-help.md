@@ -41,7 +41,7 @@ ms.lasthandoff: 05/12/2017
 
 Die Hilfe für R ist direkt in das interaktive Fenster in Visual Studio integriert. Wenn Sie den `?`-Befehl verwenden, z.B. `?mtcars`, erscheint die Hilfe aus der R-Dokumentation in einem Visual Studio-Fenster:
 
-![Hilfefenster in Visual Studio](media/help-window.png)
+![Hilfefenster in Visual Studio](~/docs/rtvs/media/help-window.png)
 
 > [!Tip]
 > So wie alle anderen Fenster in Visual Studio kann das Hilfefenster beliebig angeordnet und angedockt werden. Weitere Informationen finden Sie unter [Anpassen von Fensterlayouts in Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md).
@@ -54,11 +54,11 @@ Verwenden Sie den `??`-Befehl, und geben Sie den gesuchten Begriff in Anführung
 ??"Motor Trend"
 ```
 
-![Die Suchergebnisse der Hilfe](media/help-search1.png)
+![Die Suchergebnisse der Hilfe](~/docs/rtvs/media/help-search1.png)
 
 Das Hilfefenster verfügt auch über ein Sucheingabefeld, über das Sie weitere Suchen direkt in der R-Dokumentation durchführen können:
 
-![Suchergebnisse der Hilfe über das Eingabefeld](media/help-search2.png)
+![Suchergebnisse der Hilfe über das Eingabefeld](~/docs/rtvs/media/help-search2.png)
 
 ## <a name="integrated-help-lookup"></a>Integrierte Hilfeansicht
 
@@ -67,7 +67,7 @@ Da Entwickler oft in der R-Dokumentation nach Hilfe zu Funktionsnamen, Datasets 
 - Durch Drücken der F1-TASTE wird während eines Vorgangs mit automatischer Vervollständigung eine Liste von Hilfeergebnissen erstellt, die mit der Teilzeichenfolge übereinstimmen.
 - Führen Sie einen Rechtsklick auf einen Suchbegriff (z.B. eine Funktion) aus, und wählen Sie den Befehl **Hilfe zu** aus, oder drücken Sie alternativ F1, um die Hilfe für diese Funktion aufzurufen. Sie können **Hilfe zu** auch für jede Auswahl aufrufen.
 
-    ![Aufrufen der Hilfe über ein Kontextmenü, das mit einem Rechtsklick aufgerufen wird](media/help-right-click.png)
+    ![Aufrufen der Hilfe über ein Kontextmenü, das mit einem Rechtsklick aufgerufen wird](~/docs/rtvs/media/help-right-click.png)
 
 > [!Tip]
 > Um die integrierte Hilfe in einem Browser zu öffnen, wählen Sie **R Tools > Optionen** aus, und legen Sie **F1-Webbrowser** auf `External` fest. Weitere Informationen finden Sie unter [Optionen](options.md).
@@ -76,8 +76,8 @@ Da Entwickler oft in der R-Dokumentation nach Hilfe zu Funktionsnamen, Datasets 
 
 Entwickler suchen zusätzlich zur Suche in der R-Dokumentation oft in StackOverflow, während Sie Code schreiben. RTVS optimiert ebenso diesen Prozess. Wenn Sie auf einen Begriff oder eine Auswahl rechtsklicken und den Befehl **Search web for** (Web durchsuchen) auswählen oder alternativ nur STRG+F1 drücken, wird ein Visual Studio-Fenster geöffnet (oder ein Browser, wenn Sie die **F1-Webbrowser**-Option geändert haben), das Suchergebnisse für diesen Begriff enthält, der standardmäßig auf StackOverflow beschränkt wird.
 
-![Websuchergebnisse in Visual Studio](media/help-web-search-results.png)
+![Websuchergebnisse in Visual Studio](~/docs/rtvs/media/help-web-search-results.png)
 
 Sie können die angefügte Zeichenfolge, `R site:stackoverflow`, über die Option **R Tools > Optionen > F1 Web search string** (Zeichenfolge der F1-Websuche) ändern:
 
-![Ändern der Option „Zeichenfolge der F1-Websuche“](media/options-dialog.png)
+![Ändern der Option „Zeichenfolge der F1-Websuche“](~/docs/rtvs/media/options-dialog.png)

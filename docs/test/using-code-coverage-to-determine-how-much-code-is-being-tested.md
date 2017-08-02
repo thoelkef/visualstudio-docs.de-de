@@ -52,7 +52,7 @@ Wenn Sie den Anteil des Projektcodes ermitteln möchten, der in codierten Tests 
   
 1.  Wählen Sie im Menü **Test** die Option **Code Coverage analysieren** aus.  
   
-2.  Um anzuzeigen, welche Zeilen ausgeführt wurden, wählen Sie ![„Code Coverage-Färbung anzeigen“-Symbol](../test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon")**Code Coverage-Färbung anzeigen**.  
+2.  Um anzuzeigen, welche Zeilen ausgeführt wurden, wählen Sie ![„Code Coverage-Färbung anzeigen“-Symbol](~/docs/test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon")**Code Coverage-Färbung anzeigen**.  
   
      Um die Farben zu ändern oder den Text fett formatiert anzuzeigen, wählen Sie **Extras**, **Optionen**, **Umgebung**, **Schriftarten und Farben** und **Einstellungen anzeigen für: Text-Editor** aus. Unter **Elemente anzeigen** können Sie die Abdeckungselemente anpassen.  
   
@@ -97,7 +97,7 @@ Wenn Sie den Anteil des Projektcodes ermitteln möchten, der in codierten Tests 
   
  Bei einem Test mit der Eingabe "2 " stellen Sie beispielsweise fest, dass 50 % einer bestimmten Funktion abgedeckt werden. Wenn Sie den Test ein zweites Mal mit der Eingabe "– 2 " ausführen, sehen Sie in der Ansicht der Abdeckungsfärbung, dass die anderen 50 % der Funktion abgedeckt werden. Führen Sie nun die Ergebnisse aus den zwei Testläufen zusammen. Die Berichtsansicht und die Ansicht der Abdeckungsfärbung zeigen nun an, dass 100 % der Funktion ausgeführt wurden.  
   
- Verwenden Sie hierzu das ![Symbol für die Schaltfläche „Zusammenführen“ im Fenster „Codeabdeckung“](../test/media/codecoverage-mergeicon.png "CodeCoverage-MergeIcon")**Codeabdeckungsergebnisse zusammenführen**. Sie können eine beliebige Kombinationen aus den letzten Testläufen oder aus importierten Ergebnissen auswählen. Wenn Sie exportierte Ergebnisse kombinieren möchten, müssen Sie diese zuerst importieren.  
+ Verwenden Sie hierzu das ![Symbol für die Schaltfläche „Zusammenführen“ im Fenster „Codeabdeckung“](~/docs/test/media/codecoverage-mergeicon.png "CodeCoverage-MergeIcon")**Codeabdeckungsergebnisse zusammenführen**. Sie können eine beliebige Kombinationen aus den letzten Testläufen oder aus importierten Ergebnissen auswählen. Wenn Sie exportierte Ergebnisse kombinieren möchten, müssen Sie diese zuerst importieren.  
   
  Speichern Sie die Ergebnisse eines Zusammenführungsvorgangs mithilfe der Option **Export Code Coverage Results** (Codeabdeckungsergebnisse exportieren).  
   

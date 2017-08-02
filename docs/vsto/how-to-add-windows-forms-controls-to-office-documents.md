@@ -37,7 +37,7 @@ caps.handback.revision: 53
   
 -   [Hinzufügen von Steuerelementen zur Laufzeit in VSTO\-Add\-Ins](#runtimeaddin)  
   
- ![Link zu Video](../vsto/media/playvideo.png "Link zu Video") Eine entsprechende Videodemo finden Sie unter [Gewusst wie: Hinzufügen von Steuerelementen zu einer Dokumentoberfläche zur Laufzeit](http://go.microsoft.com/fwlink/?LinkID=132782).  
+ ![Link zu Video](~/docs/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie unter [Gewusst wie: Hinzufügen von Steuerelementen zu einer Dokumentoberfläche zur Laufzeit](http://go.microsoft.com/fwlink/?LinkID=132782).  
   
 ##  <a name="designtime"></a> Hinzufügen von Steuerelementen zur Entwurfszeit  
  Es gibt mehrere Möglichkeiten, dem Dokument Windows Forms\-Steuerelemente in einem Projekt auf Dokumentebene zur Entwurfszeit hinzuzufügen.  

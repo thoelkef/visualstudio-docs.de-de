@@ -85,15 +85,15 @@ Konzentrieren Sie sich ganz auf Ihre Arbeit, während Sie ermitteln, was mit Ihr
   
  Detaillierte Informationen zu CodeLens für Visual C# .NET- oder Visual Basic .NET-Code, der mit Team Foundation-Versionskontrolle (TFVC) oder Git gespeichert ist, finden Sie auf den Klassen- und Methodenebenen (*Codeindikatoren auf Elementebene* ). Wenn Ihr Git-Repository in TfGit gehostet ist, finden Sie auch Links zu TFS-Arbeitsaufgaben.  
   
- ![Codeelement: Ebenenindikatoren](../ide/media/codelenselementlevelindicators.png "CodeLensElementLevelIndicators")  
+ ![Codeelement: Ebenenindikatoren](~/docs/ide/media/codelenselementlevelindicators.png "CodeLensElementLevelIndicators")  
   
  Bei alle anderen Dateitypen, die Sie im Visual Studio-Editor öffnen können, finden Sie detaillierte Informationen zu CodeLens für die gesamte Datei am unteren Rand des Fensters (*Indikatoren auf Dateiebene* ).  
   
- ![Dateiebene: CodeLens-Indikatoren](../ide/media/almcodelensfilelevelindicators.png "ALMCodeLensFileLevelIndicators")  
+ ![Dateiebene: CodeLens-Indikatoren](~/docs/ide/media/almcodelensfilelevelindicators.png "ALMCodeLensFileLevelIndicators")  
   
  Drücken Sie zum Verwenden der Tastatur zum Auswählen von Indikatoren die **ALTTASTE** , um die zugehörigen Nummerntasten anzuzeigen.  
   
- ![Drücken Sie die ALT-TASTE, um die Tastaturzugriffsnummern einzublenden](../ide/media/codelensaltkeyindicators.png "CodeLensAltKeyIndicators")  
+ ![Drücken Sie die ALT-TASTE, um die Tastaturzugriffsnummern einzublenden](~/docs/ide/media/codelensaltkeyindicators.png "CodeLensAltKeyIndicators")  
   
 ### <a name="find-changes-in-your-code"></a>Suchen nach Änderungen im Code  
  Finden Sie in den Codeindikatoren auf Elementebene heraus, wer welche Änderungen an Ihrem Code vorgenommen hat. Dies sehen Sie, wenn Sie die Team Foundation-Versionskontrolle (TFVC) in Team Foundation Server oder Visual Studio Team Services verwenden.  
@@ -104,11 +104,11 @@ Konzentrieren Sie sich ganz auf Ihre Arbeit, während Sie ermitteln, was mit Ihr
   
  Zum Anzeigen eines ausführlichen Verlaufs aller Änderungen, einschließlich der von vor mehr als einem Jahr, wählen Sie **Alle Dateiänderungen anzeigen**.  
   
- ![Anzeigen aller Codeänderungen](../ide/media/codelensshowsallchanges.png "CodeLensShowsAllChanges")  
+ ![Anzeigen aller Codeänderungen](~/docs/ide/media/codelensshowsallchanges.png "CodeLensShowsAllChanges")  
   
  Daraufhin wird das Verlaufsfenster für die Changesets geöffnet.  
   
- ![Verlaufsfenster für alle Codeänderungen](../ide/media/codelenscodechangeshistory.png "CodeLensCodeChangesHistory")  
+ ![Verlaufsfenster für alle Codeänderungen](~/docs/ide/media/codelenscodechangeshistory.png "CodeLensCodeChangesHistory")  
   
  Wenn sich Ihre Dateien in einem Git-Repository befinden und Sie den Änderungsindikator für die Code-Elementebene auswählen, wird dies angezeigt.  
   
@@ -167,14 +167,14 @@ Konzentrieren Sie sich ganz auf Ihre Arbeit, während Sie ermitteln, was mit Ihr
   
 |**Symbol**|**Woher stammt die Änderung?**|  
 |--------------|-----------------------------------------|  
-|![CodeLens: Symbol für Änderung aus dem aktuellen Branch](../ide/media/codelensbranchcurrenticon.png "CodeLensBranchCurrentIcon")|Die aktuelle Verzweigung|  
-|![CodeLens: Symbol für Änderung aus dem übergeordneten Branch](../ide/media/codelensbranchparenticon.png "CodeLensBranchParentIcon")|Die übergeordnete Verzweigung|  
-|![CodeLens: Symbol für Änderung aus einem untergeordneten Branch](../ide/media/codelensbranchchildicon.png "CodeLensBranchChildIcon")|Eine untergeordnete Verzweigung|  
-|![CodeLens: Symbol für Änderung aus einem Peerbranch](../ide/media/codelensbranchpeericon.png "CodeLensBranchPeerIcon")|Eine Peerverzweigung|  
-|![CodeLens: Symbol für Änderung aus einem weiter entfernten Branch](../ide/media/codelensbranchfurtherawayicon.png "CodeLensBranchFurtherAwayIcon")|Eine Verzweigung, die sich weiter entfernt befindet als über- oder untergeordnet und Peer|  
-|![CodeLens: Symbol für Merge aus dem übergeordneten Branch](../ide/media/codelensbranchmergefromparenticon.png "CodeLensBranchMergeFromParentIcon")|Eine Zusammenführung von der übergeordneten zu einer untergeordneten Verzweigung|  
-|![CodeLens: Symbol für Merge aus einem untergeordneten Branch](../ide/media/codelensbranchmergefromchildicon.png "CodeLensBranchMergeFromChildIcon")|Eine Zusammenführung von der untergeordneten zu einer übergeordneten Verzweigung|  
-|![CodeLens: Symbol für Merge aus einem nicht zugeordneten Branch](../ide/media/codelensbranchmergefromunrelatedicon.png "CodeLensBranchMergeFromUnrelatedIcon")|Eine Zusammenführung von einer nicht verwandten Verzweigung (Zusammenführung ohne Basis)|  
+|![CodeLens: Symbol für Änderung aus dem aktuellen Branch](~/docs/ide/media/codelensbranchcurrenticon.png "CodeLensBranchCurrentIcon")|Die aktuelle Verzweigung|  
+|![CodeLens: Symbol für Änderung aus dem übergeordneten Branch](~/docs/ide/media/codelensbranchparenticon.png "CodeLensBranchParentIcon")|Die übergeordnete Verzweigung|  
+|![CodeLens: Symbol für Änderung aus einem untergeordneten Branch](~/docs/ide/media/codelensbranchchildicon.png "CodeLensBranchChildIcon")|Eine untergeordnete Verzweigung|  
+|![CodeLens: Symbol für Änderung aus einem Peerbranch](~/docs/ide/media/codelensbranchpeericon.png "CodeLensBranchPeerIcon")|Eine Peerverzweigung|  
+|![CodeLens: Symbol für Änderung aus einem weiter entfernten Branch](~/docs/ide/media/codelensbranchfurtherawayicon.png "CodeLensBranchFurtherAwayIcon")|Eine Verzweigung, die sich weiter entfernt befindet als über- oder untergeordnet und Peer|  
+|![CodeLens: Symbol für Merge aus dem übergeordneten Branch](~/docs/ide/media/codelensbranchmergefromparenticon.png "CodeLensBranchMergeFromParentIcon")|Eine Zusammenführung von der übergeordneten zu einer untergeordneten Verzweigung|  
+|![CodeLens: Symbol für Merge aus einem untergeordneten Branch](~/docs/ide/media/codelensbranchmergefromchildicon.png "CodeLensBranchMergeFromChildIcon")|Eine Zusammenführung von der untergeordneten zu einer übergeordneten Verzweigung|  
+|![CodeLens: Symbol für Merge aus einem nicht zugeordneten Branch](~/docs/ide/media/codelensbranchmergefromunrelatedicon.png "CodeLensBranchMergeFromUnrelatedIcon")|Eine Zusammenführung von einer nicht verwandten Verzweigung (Zusammenführung ohne Basis)|  
   
 ### <a name="find-linked-work-items"></a>Suchen von verknüpften Arbeitsaufgaben  
  ![CodeLens: Ermitteln von Arbeitsaufgaben für bestimmten Code](../ide/media/codelensworkitems.png "CodeLensWorkItems")  
@@ -186,11 +186,11 @@ Konzentrieren Sie sich ganz auf Ihre Arbeit, während Sie ermitteln, was mit Ihr
  ![CodeLens: Suchen von mit Changesets verknüpften Fehlern](../ide/media/codelensbugschangesets.png "CodeLensBugsChangesets")  
   
 ### <a name="contact-the-owner-of-an-item"></a>Den Besitzer eines Elements kontaktieren  
- ![Kontaktaufnahme mit dem Besitzer eines Elements](../ide/media/codelenscontactitemowner.png "CodeLensContactItemOwner")  
+ ![Kontaktaufnahme mit dem Besitzer eines Elements](~/docs/ide/media/codelenscontactitemowner.png "CodeLensContactItemOwner")  
   
  Öffnen Sie das Kontextmenü für ein Element, um die Kontaktoptionen anzuzeigen. Wenn Sie Lync oder Skype for Business installiert haben, werden folgende Optionen angezeigt:  
   
- ![Kontaktoptionen für ein Element](../ide/media/codelensitemcontactmenu.png "CodeLensItemContactMenu")  
+ ![Kontaktoptionen für ein Element](~/docs/ide/media/codelensitemcontactmenu.png "CodeLensItemContactMenu")  
   
 ##  <a name="FindRunUnitTests"></a> Komponententests für Ihren Code suchen  
  Weitere Informationen zu Komponententests, die für Ihren Code vorhanden sind, ohne Test-Explorer zu öffnen. Sie benötigen Folgendes:  
@@ -207,7 +207,7 @@ Konzentrieren Sie sich ganz auf Ihre Arbeit, während Sie ermitteln, was mit Ihr
   
      ![CodeLens: Auswählen des Teststatus im Code-Editor](../ide/media/codelenschoosetestindicator.png "CodeLensChooseTestIndicator")  
   
-3.  Wenn Sie ein Warnsymbol ![CodeLens – Warnung für noch nicht ausgeführte Komponententests](../ide/media/codelenstestwarningicon.png "CodeLensTestWarningIcon") sehen, die Tests ausführen.  
+3.  Wenn Sie ein Warnsymbol ![CodeLens – Warnung für noch nicht ausgeführte Komponententests](~/docs/ide/media/codelenstestwarningicon.png "CodeLensTestWarningIcon") sehen, die Tests ausführen.  
   
      ![CodeLens: Ausführen von noch nicht ausgeführten Komponententests](../ide/media/codelenstestsnotyetrun.png "CodeLensTestsNotYetRun")  
   
@@ -215,7 +215,7 @@ Konzentrieren Sie sich ganz auf Ihre Arbeit, während Sie ermitteln, was mit Ihr
   
      ![CodeLens: Wechseln zur Komponententestdefinition](../ide/media/codelensunittestdefinition.png "CodeLensUnitTestDefinition")  
   
-5.  Überprüfen Sie die Testergebnisse. Wählen Sie den Teststatusindikator (![CodeLens: Symbol für Fehler bei Komponententest](../ide/media/codelenstestfailedicon.png "CodeLensTestFailedIcon") oder ![CodeLens: Symbol für bestandenen Komponententest](../ide/media/codelenstestpassedicon.png "CodeLensTestPassedIcon")) aus, oder drücken Sie **ALT+1**.  
+5.  Überprüfen Sie die Testergebnisse. Wählen Sie den Teststatusindikator (![CodeLens: Symbol für Fehler bei Komponententest](~/docs/ide/media/codelenstestfailedicon.png "CodeLensTestFailedIcon") oder ![CodeLens: Symbol für bestandenen Komponententest](~/docs/ide/media/codelenstestpassedicon.png "CodeLensTestPassedIcon")) aus, oder drücken Sie **ALT+1**.  
   
      ![CodeLens: Anzeigen des Komponententestergebnisses](../ide/media/codelensunittestresult.png "CodeLensUnitTestResult")  
   
@@ -232,7 +232,7 @@ Konzentrieren Sie sich ganz auf Ihre Arbeit, während Sie ermitteln, was mit Ihr
   
  Aktivieren bzw. deaktivieren Sie CodeLens-Indikatoren auf Dateiebene mithilfe der Chevron-Symbole unten im Editor-Fenster.  
   
- ![Aktivieren und Deaktivieren von Indikatoren auf Dateiebene](../ide/media/codelensfilelevelonandoff.png "CodeLensFileLevelOnAndOff")  
+ ![Aktivieren und Deaktivieren von Indikatoren auf Dateiebene](~/docs/ide/media/codelensfilelevelonandoff.png "CodeLensFileLevelOnAndOff")  
   
 ###  <a name="NoIndicators"></a>F: Wo befindet sich CodeLens?  
  **A:** CodeLens wird  in Visual C# .NET- und Visual Basic .NET-Code auf der Methoden-, Klassen-, Indexer- und Eigenschaftsebene angezeigt. CodeLens wird auf Dateiebene für alle anderen Dateitypen angezeigt.  
@@ -277,11 +277,11 @@ Konzentrieren Sie sich ganz auf Ihre Arbeit, während Sie ermitteln, was mit Ihr
 4.  Drücken Sie die **TAB-TASTE** , um zur Liste **Einstellungen anzeigen für** zu wechseln, und drücken Sie dann die **NACH-UNTEN-TASTE** , um **CodeLens**auszuwählen.  
   
 ### <a name="q-can-i-move-the-codelens-heads-up-display"></a>F: Kann ich das CodeLens-Heads-up-Display verschieben?  
- **A:** Ja, wählen Sie ![CodeLens als Fenster andocken](../ide/media/codelensdockwindow.png "CodeLensDockWindow") aus, um CodeLens als Fenster anzudocken.  
+ **A:** Ja, wählen Sie ![CodeLens als Fenster andocken](~/docs/ide/media/codelensdockwindow.png "CodeLensDockWindow") aus, um CodeLens als Fenster anzudocken.  
   
- ![Andocken des CodeLens-Indikatorfensters](../ide/media/codelensselectdockwindow.png "CodeLensSelectDockWindow")  
+ ![Andocken des CodeLens-Indikatorfensters](~/docs/ide/media/codelensselectdockwindow.png "CodeLensSelectDockWindow")  
   
- ![Das angedockte CodeLens-Verweisfenster](../ide/media/codelensreferencesdockedwindow.png "CodeLensReferencesDockedWindow")  
+ ![Das angedockte CodeLens-Verweisfenster](~/docs/ide/media/codelensreferencesdockedwindow.png "CodeLensReferencesDockedWindow")  
   
 ### <a name="q-how-do-i-refresh-the-indicators"></a>F: Wie aktualisiere ich die Indikatoren?  
  **A:** Dies hängt vom Indikator ab:  

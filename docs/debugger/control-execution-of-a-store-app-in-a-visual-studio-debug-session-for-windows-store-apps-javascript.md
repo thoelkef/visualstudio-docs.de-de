@@ -85,7 +85,7 @@ In diesem Schnellstart wird veranschaulicht, wie Sie im Visual Studio\-Debugger 
   
 1.  **Festlegen eines Haltepunkts.** Legen Sie einen Haltepunkt bei der Anweisung `callTrack = "module function";` fest, die direkt nach dem Aufruf von `app.start()` erfolgt. Wählen Sie die Zeile im schattierten Bundsteg des Quellcode\-Editors aus \(Tastatur: Positionieren Sie den Cursor in der Zeile, und drücken Sie **F9**\).  
   
-     ![Haltepunkt bei Example1 festlegen](../debugger/media/dbg_jsnav_example1_breakpoint.png "DBG\_JSNAV\_example1\_breakpoint")  
+     ![Haltepunkt bei Example1 festlegen](~/docs/debugger/media/dbg_jsnav_example1_breakpoint.png "DBG\_JSNAV\_example1\_breakpoint")  
   
      Das Haltepunktsymbol wird im Bundsteg angezeigt.  
   
@@ -93,13 +93,13 @@ In diesem Schnellstart wird veranschaulicht, wie Sie im Visual Studio\-Debugger 
   
      Die App wird ausgeführt und hält die Ausführung direkt vor der Anweisung an, in der der Haltepunkt gesetzt wurde.  Das Symbol der aktuellen Zeile im Bundsteg weist auf die aktuelle Position hin, und die aktuelle Anweisung ist hervorgehoben.  
   
-     ![Bis Haltepunkt ausführen](../debugger/media/dbg_jsnav_example1_run_to_breakpoint.png "DBG\_JSNAV\_example1\_run\_to\_breakpoint")  
+     ![Bis Haltepunkt ausführen](~/docs/debugger/media/dbg_jsnav_example1_run_to_breakpoint.png "DBG\_JSNAV\_example1\_run\_to\_breakpoint")  
   
      Sie können die Ausführung der App nun steuern. Zudem können Sie den Programmzustand überprüfen, während Sie die Programmanweisungen durchlaufen.  
   
 3.  **Durchlaufen der Funktion in Einzelschritten.** Wählen Sie im Menü **Debuggen** die Option **Einzelschritt** aus \(Tastatur: **F11**\).  
   
-     ![Zu Codezeile wechseln](../debugger/media/dbg_jsnav_example1_step_into.png "DBG\_JSNAV\_example1\_step\_into")  
+     ![Zu Codezeile wechseln](~/docs/debugger/media/dbg_jsnav_example1_step_into.png "DBG\_JSNAV\_example1\_step\_into")  
   
      Beachten Sie, dass der Debugger zur nächsten Zeile wechselt, einem Aufruf der Funktion `example1`. Wählen Sie erneut **Einzelschritt**. Der Debugger wechselt zur ersten Codezeile der Funktion `example1`. Die hervorgehobene Zeile wurde nicht ausgeführt, aber die Funktion wurde in die Aufrufliste geladen, und der Speicher für lokale Variablen wurde zugewiesen.  
   
@@ -113,7 +113,7 @@ In diesem Schnellstart wird veranschaulicht, wie Sie im Visual Studio\-Debugger 
   
 5.  **Anzeigen der Variablenwerte in den Datentipps.** Fahren Sie mit den Einzelschritten der Anweisungen von `example1` fort, bis Sie den Ausstiegspunkt erreicht haben. Der Debugger hebt die schließende geschweifte Klammer der Funktion hervor. Wenn Sie die Maus auf einen Variablennamen bewegen, werden der Name und der Wert der Variablen in einem Datentipp angezeigt.  
   
-     ![Variablenwerte im Datentipp anzeigen](../debugger/media/dbg_jsnav_data_tip.png "DBG\_JSNAV\_data\_tip")  
+     ![Variablenwerte im Datentipp anzeigen](~/docs/debugger/media/dbg_jsnav_data_tip.png "DBG\_JSNAV\_data\_tip")  
   
 6.  **Hinzufügen einer Überwachung für die "callTrack"\-Variable.** Die `callTrack`\-Variable wird in diesem Schnellstart verwendet, um die in den Beispielen aufgerufenen Funktionen anzuzeigen. Um die Anzeige des Variablenwerts zu vereinfachen, fügen Sie sie einem Überwachungsfenster hinzu. Wählen Sie den Variablennamen im Editor aus, und wählen Sie dann im Kontextmenü **Überwachung hinzufügen**.  
   
@@ -139,7 +139,7 @@ In diesem Schnellstart wird veranschaulicht, wie Sie im Visual Studio\-Debugger 
   
 1.  **Aufrufen der Funktion "example2" in der Modulfunktion.** Bearbeiten Sie die `module`\-Funktion, und ersetzen Sie die Zeile nach `var callTrack = "module function"` durch `example2();`.  
   
-     ![Example2&#45;Funktion aufrufen](../debugger/media/dbg_jsnav_example2.png "DBG\_JSNAV\_example2")  
+     ![Example2&#45;Funktion aufrufen](~/docs/debugger/media/dbg_jsnav_example2.png "DBG\_JSNAV\_example2")  
   
 2.  **Ausführen bis zum Haltepunkt.** Starten Sie die Debugsitzung, indem Sie im Menü **Debuggen** die Option **Debuggen starten** auswählen \(Tastatur: F5\). Der Debugger unterbricht die Ausführung am Haltepunkt.  
   
@@ -147,7 +147,7 @@ In diesem Schnellstart wird veranschaulicht, wie Sie im Visual Studio\-Debugger 
   
 4.  **Einzelschritt in "example2" und "example2\_A".** Drücken Sie **F11**, um einen Einzelschritt für die `example2`\-Funktion durchzuführen Durchlaufen Sie die `example2`\-Anweisungen weiterhin in Einzelschritten, bis Sie die Zeile `var x = example2_a();` erreichen. Führen Sie erneut für diese Zeile einen Einzelschritt durch, um zum Einstiegspunkt von `example2_a` zu gelangen. Durchlaufen Sie die einzelnen Anweisungen von `example2_a` in Einzelschritten, bis Sie zu `example2` zurückkehren.  
   
-     ![Funktion – Prozedurschritt](../debugger/media/dbg_jsnav_example2_a.png "DBG\_JSNAV\_example2\_a")  
+     ![Funktion – Prozedurschritt](~/docs/debugger/media/dbg_jsnav_example2_a.png "DBG\_JSNAV\_example2\_a")  
   
 5.  **Prozedurschritt für eine Funktion.** Beachten Sie, dass die nächste Zeile in `example2` \(`var y = example2_a();`\) im Wesentlichen der vorherigen Zeile entspricht. Sie können problemlos einen Prozedurschritt für diese Zeile durchführen. Drücken Sie die Taste **F10**, um von der Fortsetzung von `example2` zu diesem zweiten Aufruf von `example2_a` zu wechseln. Beachten Sie, dass die Zeichenfolge `callTrack` auf eine zweimalige Ausführung der `example2_a`\-Funktion hinweist.  
   
@@ -167,7 +167,7 @@ In diesem Schnellstart wird veranschaulicht, wie Sie im Visual Studio\-Debugger 
   
 1.  **Aufrufen der Funktion "example3" in der Modulfunktion.** Bearbeiten Sie die `module`\-Funktion, und ersetzen Sie die Zeile nach `var callTrack = "module function";` durch die Zeile `example3();`.  
   
-     ![Example3 aufrufen](../debugger/media/dbg_jsnav_example3.png "DBG\_JSNAV\_example3")  
+     ![Example3 aufrufen](~/docs/debugger/media/dbg_jsnav_example3.png "DBG\_JSNAV\_example3")  
   
 2.  **Ausführen bis zum Haltepunkt.** Starten Sie die Debugsitzung, indem Sie im Menü **Debuggen** die Option **Debuggen starten** auswählen \(Tastatur: **F5**\). Der Debugger hält die Ausführung am Haltepunkt in der `module`\-Funktion an.  
   
@@ -177,7 +177,7 @@ In diesem Schnellstart wird veranschaulicht, wie Sie im Visual Studio\-Debugger 
   
      Aktivieren Sie das Kontrollkästchen **Bedingung**, und geben Sie dann im Textfeld `i == 500;` ein. Wählen Sie die Option **Ist "True"** und anschließend **OK** aus. Mithilfe des Haltepunkts können Sie den Wert an der 500. Iteration der `for`\-Schleife überprüfen. Sie erkennen das Symbol eines bedingten Haltepunkts am weißen Kreuz.  
   
-     ![Symbol "Bedingter Haltepunkt"](../debugger/media/dbg_jsnav_breakpoint_condition_icon.png "DBG\_JSNAV\_Breakpoint\_Condition\_icon")  
+     ![Symbol "Bedingter Haltepunkt"](~/docs/debugger/media/dbg_jsnav_breakpoint_condition_icon.png "DBG\_JSNAV\_Breakpoint\_Condition\_icon")  
   
 5.  **Ausführen bis zum Haltepunkt.** Wählen Sie im Menü **Debuggen** die Option **Weiter** aus \(Tastatur: **F5**\). Halten Sie den Mauszeiger auf `i`, um sicherzustellen, dass der aktuelle Wert von `i` 500 lautet. Beachten Sie, dass die Variable `s` als einzelne Zeile dargestellt wird, die weit über das Datentippfenster hinausgeht.  
   
@@ -211,7 +211,7 @@ In diesem Schnellstart wird veranschaulicht, wie Sie im Visual Studio\-Debugger 
   
 1.  **Hinzufügen eines Arrayobjekts zur Modulfunktion**. Bearbeiten Sie die `module`\-Funktion, und ersetzen Sie die Zeile nach `var callTrack = "module function"` durch `var myArray = new Array(1, 2, 3);`.  
   
-     ![myArray&#45;Definition](../debugger/media/dbg_jsnav_myarray.png "DBG\_JSNAV\_myArray")  
+     ![myArray&#45;Definition](~/docs/debugger/media/dbg_jsnav_myarray.png "DBG\_JSNAV\_myArray")  
   
 2.  **Ausführen bis zum Haltepunkt.** Starten Sie die Debugsitzung, indem Sie im Menü **Debuggen** die Option **Debuggen starten** auswählen \(Tastatur: **F5**\). Der Debugger unterbricht die Ausführung am Haltepunkt. Führen Sie einen Einzelschritt in die Zeile durch.  
   
@@ -248,7 +248,7 @@ In diesem Schnellstart wird veranschaulicht, wie Sie im Visual Studio\-Debugger 
   
 1.  **Aufrufen der Funktion "example4" in der Modulfunktion.** Bearbeiten Sie die `module`\-Funktion, und ersetzen Sie die Zeile nach `var callTrack = "module function"` durch `example4()`:  
   
-     ![Example4 aufrufen](../debugger/media/dbg_jsnav_example4.png "DBG\_JSNAV\_example4")  
+     ![Example4 aufrufen](~/docs/debugger/media/dbg_jsnav_example4.png "DBG\_JSNAV\_example4")  
   
 2.  **Ausführen bis zum Haltepunkt.** Starten Sie die Debugsitzung, indem Sie im Menü **Debuggen** die Option **Debuggen starten** auswählen \(Tastatur: **F5**\). Der Debugger unterbricht die Ausführung am Haltepunkt.  
   
@@ -284,7 +284,7 @@ In diesem Schnellstart wird veranschaulicht, wie Sie im Visual Studio\-Debugger 
   
 1.  **Aufrufen der Funktion "example5" in der Modulfunktion.** Bearbeiten Sie die `module`\-Funktion, und ersetzen Sie die Zeile nach `var callTrack = "module function";` durch die Zeile `example5();`.  
   
-     ![Example5 aufrufen](../debugger/media/dbg_jsnav_example5.png "DBG\_JSNAV\_example5")  
+     ![Example5 aufrufen](~/docs/debugger/media/dbg_jsnav_example5.png "DBG\_JSNAV\_example5")  
   
 2.  **Ausführen bis zum Haltepunkt.** Starten Sie die Debugsitzung, indem Sie im Menü **Debuggen** die Option **Debuggen starten** auswählen \(Tastatur: **F5**\). Der Debugger hält die Ausführung am Haltepunkt in der Modulfunktion an.  
   
