@@ -64,7 +64,7 @@ In Visual Studio können Sie eine *Abhängigkeitsdiagramm* um die hochrangige, l
  Dieses Thema beschreibt die Elemente, die in einem Abhängigkeitsdiagramm verwendet werden können. Ausführlichere Informationen zum Erstellen und zeichnen Abhängigkeitsdiagramme, finden Sie unter [Abhängigkeitsdiagramme: Richtlinien](../modeling/layer-diagrams-guidelines.md). Weitere Informationen zu Ebenenmuster finden Sie auf der [Muster & Practices-Website](http://go.microsoft.com/fwlink/?LinkId=145794).  
   
 ## <a name="reading-dependency-diagrams"></a>Lesen Sie Abhängigkeitsdiagramme  
- ![Elemente in Abhängigkeit von Diagrammen](~/docs/modeling/media/uml_layerrefreading.png "UML_LayerRefReading")  
+ ![Elemente in Abhängigkeit von Diagrammen](~/modeling/media/uml_layerrefreading.png "UML_LayerRefReading")  
   
  Die folgende Tabelle beschreibt die Elemente, die in einem Abhängigkeitsdiagramm verwendet werden können.  
   

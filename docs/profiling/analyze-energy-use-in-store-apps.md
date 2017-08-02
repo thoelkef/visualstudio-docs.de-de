@@ -66,7 +66,7 @@ Der Profiler **Energieverbrauch** von Visual Studio hilft Ihnen, den Strom- und 
 ##  <a name="BKMK_Identify_scenarios_with_user_marks"></a> Identifizieren von Szenarien mit Benutzermarkierungen  
  Sie können den Profilerstellungsdaten *Benutzermarkierungen* hinzufügen, die bei der Identifizierung von Bereichen im Zeitachsenlineal hilfreich sind.  
   
- ![Benutzermarkierungen auf der Zeitachse](~/docs/profiling/media/profilers_usermarktimeline.png "PROFILERS_UserMarkTimeline")  
+ ![Benutzermarkierungen auf der Zeitachse](~/profiling/media/profilers_usermarktimeline.png "PROFILERS_UserMarkTimeline")  
   
  Die Markierung wird bei Ausführung der Methode in der Zeitachse als orangefarbenes Dreieck angezeigt. Die Meldung und Uhrzeit werden als QuickInfo angezeigt, wenn Sie mit der Maus über die Markierung fahren. Wenn mindestens zwei Benutzermarkierungen nahe beieinander liegen, werden die Markierungen zusammengeführt und die QuickInfo-Daten werden kombiniert. Sie können auf der Zeitachse eine Vergrößerung durchführen, um die Markierungen zu trennen.  
   
@@ -117,7 +117,7 @@ if (performance && performance.mark) {
   
 4.  Um die Profilerstellung zu beenden, wechseln Sie zu Visual Studio zurück (ALT+TAB), und wählen Sie **Auflistung beenden** auf der Diagnosehubseite aus.  
   
-     ![Sammeln von Daten beenden](~/docs/profiling/media/xamlprof_stopcollection.png "XAMLProf_StopCollection")  
+     ![Sammeln von Daten beenden](~/profiling/media/xamlprof_stopcollection.png "XAMLProf_StopCollection")  
   
      Visual Studio analysiert die gesammelten Daten und zeigt die Ergebnisse an.  
   
@@ -141,12 +141,12 @@ if (performance && performance.mark) {
   
 |||  
 |-|-|  
-|![Schritt 1](~/docs/profiling/media/procguid_1.png "ProcGuid_1")|Die Berichtsdatei heißt Report*JJJJMMTT-HHMM*.diagsession. Sie können den Namen ändern, wenn Sie den Bericht speichern.|  
-|![Schritt 2](~/docs/profiling/media/procguid_2.png "ProcGuid_2")|Die Zeitachse zeigt die Länge der Profilerstellungssitzung, der App-Lebenszyklusaktivierungsereignisse und der Benutzermarkierungen an.|  
-|![Schritt 3](~/docs/profiling/media/procguid_3.png "ProcGuid_3")|Sie können den Bericht auf einen Teil der Zeitachse einschränken, indem Sie die blauen Striche ziehen, um einen Bereich der Zeitachse auszuwählen.|  
-|![Schritt 4](~/docs/profiling/media/procguid_4.png "ProcGuid_4")|Das Diagramm **Stromverbrauch** ist ein Liniendiagramm (mit mehreren Linien), in dem die Änderung in der Stromabgabe anzeigt wird, die durch eine Geräteressource während einer Profilerstellungssitzung verursacht wird. Der Energieverbrauchsprofiler verfolgt die von der CPU, von der Netzwerkaktivität und von der Bildschirmanzeige verwendete Energie.|  
-|![Schritt 5](~/docs/profiling/media/procguid_6.png "ProcGuid_6")|Das Diagramm **Ressourcen (Ein/Aus)**  stellt Details der Netzwerkenergiekosten dar. Die Leiste **Netzwerk** stellt die Zeit dar, während der die Netzwerkverbindung geöffnet war. Die untergeordnete Leiste **Datenübertragung** stellt die Zeit dar, in der die App Daten über das Netzwerk empfangen oder gesendet hat.|  
-|![Schritt 6](~/docs/profiling/media/procguid_6a.png "ProcGuid_6a")|In der **Zusammenfassung der Energieverwendung** wird der proportionale Betrag der gesamten Energie dargestellt, die in einem ausgewählten Zeitraum von der CPU, von der Netzwerkaktivität und von der Bildschirmanzeige verbraucht wurde.|  
+|![Schritt 1](~/profiling/media/procguid_1.png "ProcGuid_1")|Die Berichtsdatei heißt Report*JJJJMMTT-HHMM*.diagsession. Sie können den Namen ändern, wenn Sie den Bericht speichern.|  
+|![Schritt 2](~/profiling/media/procguid_2.png "ProcGuid_2")|Die Zeitachse zeigt die Länge der Profilerstellungssitzung, der App-Lebenszyklusaktivierungsereignisse und der Benutzermarkierungen an.|  
+|![Schritt 3](~/profiling/media/procguid_3.png "ProcGuid_3")|Sie können den Bericht auf einen Teil der Zeitachse einschränken, indem Sie die blauen Striche ziehen, um einen Bereich der Zeitachse auszuwählen.|  
+|![Schritt 4](~/profiling/media/procguid_4.png "ProcGuid_4")|Das Diagramm **Stromverbrauch** ist ein Liniendiagramm (mit mehreren Linien), in dem die Änderung in der Stromabgabe anzeigt wird, die durch eine Geräteressource während einer Profilerstellungssitzung verursacht wird. Der Energieverbrauchsprofiler verfolgt die von der CPU, von der Netzwerkaktivität und von der Bildschirmanzeige verwendete Energie.|  
+|![Schritt 5](~/profiling/media/procguid_6.png "ProcGuid_6")|Das Diagramm **Ressourcen (Ein/Aus)**  stellt Details der Netzwerkenergiekosten dar. Die Leiste **Netzwerk** stellt die Zeit dar, während der die Netzwerkverbindung geöffnet war. Die untergeordnete Leiste **Datenübertragung** stellt die Zeit dar, in der die App Daten über das Netzwerk empfangen oder gesendet hat.|  
+|![Schritt 6](~/profiling/media/procguid_6a.png "ProcGuid_6a")|In der **Zusammenfassung der Energieverwendung** wird der proportionale Betrag der gesamten Energie dargestellt, die in einem ausgewählten Zeitraum von der CPU, von der Netzwerkaktivität und von der Bildschirmanzeige verbraucht wurde.|  
   
  **Analyse der Energieprofildaten**  
   

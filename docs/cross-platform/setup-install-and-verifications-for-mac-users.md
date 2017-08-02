@@ -65,13 +65,13 @@ Dieses Thema ist für Entwickler bestimmt, die hauptsächlich auf einem Mac arbe
 
 2.  Klicken Sie im Installationsprogramm _neben_ **Starten** auf die Schaltfläche **Zusätzliche Optionen** (Drei-Balken-Symbol), und wählen Sie dann **Ändern**:  
   
-     ![Auswählen der Option „Ändern“ bei Visual Studio-Installation](~/docs/cross-platform/media/cross-plat-xamarin-setup-1a.png "Plattformübergreifendes Xamarin-Setup 1")  
+     ![Auswählen der Option „Ändern“ bei Visual Studio-Installation](~/cross-platform/media/cross-plat-xamarin-setup-1a.png "Plattformübergreifendes Xamarin-Setup 1")  
   
 3.  Aktivieren Sie die folgenden Felder:
 
     1.  **Mobil und Gaming > Mobile Entwicklung mit .NET**. Dadurch werden unter „Häufig verwendete Tools und Software Development Kits“ auch automatisch verschiedene Android-Tools ausgewählt. Diese Option sollte auch alle vorhandenen Xamarin-Installationen aktualisieren.  
   
-         ![Aktivieren der Option „Mobile Entwicklung“ unter „Spiele und mobile Entwicklung“](~/docs/cross-platform/media/cross-plat-xamarin-setup-2a.png "Plattformübergreifendes Xamarin-Setup 2")  
+         ![Aktivieren der Option „Mobile Entwicklung“ unter „Spiele und mobile Entwicklung“](~/cross-platform/media/cross-plat-xamarin-setup-2a.png "Plattformübergreifendes Xamarin-Setup 2")  
   
     2. (Optional) **Windows > Entwicklung für die universelle Windows-Plattform**. Hier finden Sie Optionen zum Installieren von Emulatorimages, deren Download längere Zeit beansprucht. Sie können auch später jederzeit zum Visual Studio-Installer zurückkehren, um sie hinzuzufügen.  
 

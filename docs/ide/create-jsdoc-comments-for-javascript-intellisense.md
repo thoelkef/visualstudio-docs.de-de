@@ -52,7 +52,7 @@ function getArea(radius) {
   
  Im vorhergehenden Beispiel zeigt IntelliSense die Beschreibung, Parameter und Rückgabeinformationen an, wenn Sie die öffnende Klammer für `getArea` eingeben.  
   
- ![IntelliSense&#45;Informationen für eine Funktion](~/docs/ide/media/js_intellisense_jsdoc_comments.png "JS\_IntelliSense\_JSDoc\_Comments")  
+ ![IntelliSense&#45;Informationen für eine Funktion](~/ide/media/js_intellisense_jsdoc_comments.png "JS\_IntelliSense\_JSDoc\_Comments")  
   
  Im folgenden Beispiel wird die Verwendung des @typedef\-Tags mit dem @property\-Tag veranschaulicht.  
   

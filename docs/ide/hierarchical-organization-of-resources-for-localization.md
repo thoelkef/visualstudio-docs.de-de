@@ -57,11 +57,11 @@ In Visual Studio werden lokalisierte Ressourcen (kulturspezifische Daten wie Zei
   
  Die beste Möglichkeit, Ihre Ressourcen zu speichern, ist sie so weit wie möglich zu generalisieren. Das bedeutet, dass lokalisierte Zeichenfolgen, Bilder usw. nach Möglichkeit in Ressourcendateien für neutrale und nicht für spezifische Kulturen gespeichert werden. Beispiel: Wenn Sie über Ressourcen für belgisches Französisch („fr-BE“) verfügen und die unmittelbar darüber liegenden Ressourcen die Fallbackressourcen in Englisch sind, könnte möglicherweise ein Problem entstehen, wenn jemand Ihre Anwendung auf einem für kanadisches Französisch konfigurierten System verwendet. Das System sucht nach einer Satellitenassembly für „fr-CA“, findet sie nicht und lädt dann nicht die französischen Ressourcen, sondern die Hauptassembly mit der englischen Fallbackressource. In der folgenden Abbildung wird dieses unerwünschte Szenario dargestellt.  
   
- ![Nur bestimmte Ressourcen](~/docs/ide/media/vbspecificresourcesonly.gif "vbSpecificResourcesOnly")  
+ ![Nur bestimmte Ressourcen](~/ide/media/vbspecificresourcesonly.gif "vbSpecificResourcesOnly")  
   
  Wenn Sie der empfohlenen Vorgehensweise folgen und möglichst viele Ressourcen in einer neutralen Ressourcendatei für die Kultur „fr“ speichern, werden einem kanadisch-französischen Benutzer keine für die Kultur „fr-BE“ gekennzeichneten Ressourcen, sondern französische Zeichenfolgen angezeigt. In der folgenden Abbildung wird dieses bevorzugte Szenario dargestellt.  
   
- ![Grafik zu NeutralSpecificResources](~/docs/ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")  
+ ![Grafik zu NeutralSpecificResources](~/ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")  
   
 ## <a name="see-also"></a>Siehe auch  
  [Neutrale Ressourcensprachen für die Lokalisierung](../ide/neutral-resources-languages-for-localization.md)   

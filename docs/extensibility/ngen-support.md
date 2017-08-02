@@ -45,7 +45,7 @@ Im folgenden ist ein Auszug aus MSDN, aus der hervorgeht, welche "Ngen" ist:
 
 Zu "Ngen" eine Assembly muss der VSIX-Datei installiert werden "pro Computer Instanzebene". Dies kann durch Aktivieren des Kontrollkästchens "All Users" im Designer extension.vsixmanifest aktiviert werden:
 
-![Überprüfen Sie alle Benutzer](~/docs/extensibility/media/check-all-users.png)
+![Überprüfen Sie alle Benutzer](~/extensibility/media/check-all-users.png)
 
 ## <a name="how-to-enable-ngen"></a>Gewusst wie: Aktivieren von Ngen
 
@@ -60,7 +60,7 @@ Es gibt 4 Eigenschaften, die festgelegt werden können:
 
 Hier wird erläutert, die **Eigenschaften** Fenster in Aktion:
 
-![NGen in Eigenschaften](~/docs/extensibility/media/ngen-in-properties.png)
+![NGen in Eigenschaften](~/extensibility/media/ngen-in-properties.png)
 
 Dies wird in der CSPROJ-Datei für das VSIX-Projekt den Projektverweis Metadaten hinzufügen:
 

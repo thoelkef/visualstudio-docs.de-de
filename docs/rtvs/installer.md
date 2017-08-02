@@ -40,7 +40,7 @@ ms.lasthandoff: 05/12/2017
 
 Danke, dass Sie R Tools für Visual Studio (RTVS) installiert haben! Probieren Sie es einfach aus, und geben Sie uns Feedback unter den Links unter [Ressourcen](#resources) unten.
 
-![RTVS-Screenshot](~/docs/rtvs/media/installer-screenshot.png)
+![RTVS-Screenshot](~/rtvs/media/installer-screenshot.png)
 
 ## <a name="resources"></a>Ressourcen
 

@@ -194,7 +194,7 @@ caps.handback.revision: 34
   
     1.  Wählen Sie im **Projektmappen\-Explorer** den Knoten **SPD\_Workflow\_TestFT** aus.  
   
-    2.  Wählen Sie die Schaltfläche mit den Auslassungszeichen \(![Auslassungszeichen im ASP.NET Mobile-Designer](~/docs/sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer")\) neben einer der Listet Eigenschaften, z der Eigenschaft **Zielliste** aus.  
+    2.  Wählen Sie die Schaltfläche mit den Auslassungszeichen \(![Auslassungszeichen im ASP.NET Mobile-Designer](~/sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer")\) neben einer der Listet Eigenschaften, z der Eigenschaft **Zielliste** aus.  
   
     3.  Füllen Sie die fehlenden Werte im Assistenten zum Anpassen von SharePoint aus, und wählen Sie dann die Schaltfläche **Fertig stellen** aus.  
   

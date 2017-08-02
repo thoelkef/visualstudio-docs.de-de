@@ -34,7 +34,7 @@ Mit den [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]\-Editoren k
   
  Das Öffnen von Dateien unabhängig von einem Container ist aus mehreren Gründen nützlich.  Beispielsweise können Sie während der Entwicklung einer projektbasierten Projektmappe eine Datei anzeigen lassen, die für die Entwicklung der Projektmappe nicht relevant ist.  Übliche Beispiele umfassen Notizen oder Anweisungen für die Entwicklung, Datenbankschema und Codeausschnitte.  Möglicherweise möchten Sie auch eine eigenständige Datei erstellen.  
   
- ![Projektmappenprojekte](~/docs/ide/reference/media/projects_solutions_misc.gif "Projects\_Solutions\_Misc")  
+ ![Projektmappenprojekte](~/ide/reference/media/projects_solutions_misc.gif "Projects\_Solutions\_Misc")  
   
  Im Projektmappen\-Explorer kann für die Dateien ein Ordner **Verschiedene Dateien** angezeigt werden, wenn die Optionen für den Ordner aktiviert sind.  Die Optionen können unter [Dokumente, Umgebung, Dialogfeld "Optionen"](../../ide/reference/documents-environment-options-dialog-box.md) festgelegt werden.  Nach dem Schließen einer der verschiedenen Dateien ist diese keiner bestimmter Projektmappe und keinem bestimmten Projekt zugeordnet, es sei denn, eine entsprechende Option wurde ebenfalls aktiviert.  
   

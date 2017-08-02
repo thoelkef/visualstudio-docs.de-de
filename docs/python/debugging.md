@@ -77,7 +77,7 @@ Eine Debugsitzung wird mit dem Befehl **Debuggen > Debuggen starten**, der Schal
 
 Haltepunkte halten die Ausführung des Codes an einem markierten Punkt an, sodass Sie den Programmzustand überprüfen können. Sie legen Haltepunkte fest, indem Sie auf den linken Rand des Code-Editors klicken oder indem Sie mit der rechten Maustaste auf eine Codezeile klicken und **Haltepunkt > Haltepunkt einfügen** auswählen. In jeder Zeile mit einem Haltepunkt wird ein roter Punkt angezeigt.
 
-![Haltepunkte in Visual Studio](~/docs/python/media/debugging-breakpoints.png)
+![Haltepunkte in Visual Studio](~/python/media/debugging-breakpoints.png)
 
 Durch Klicken auf den roten Punkt oder durch Klicken mit der rechten Maustaste auf die Codezeile und Auswählen von **Haltepunkt > Haltepunkt löschen** wird der Haltepunkt entfernt. Mit dem Befehl **Haltepunkt > Haltepunkt deaktivieren** können Sie den Haltepunkt auch deaktivieren, ohne ihn zu löschen.
 
@@ -88,7 +88,7 @@ Sie können die Bedingungen anpassen, unter denen ein Haltepunkt ausgelöst wird
 
 Beim Festlegen von Bedingungen können Sie auch **Aktion** auswählen und eine Meldung zum Protokollieren im Ausgabefenster erstellen. Die Ausführung kann dabei optional automatisch fortgesetzt werden. Dadurch wird ein so genannter *Ablaufverfolgungspunkt* erstellt, ohne dass Sie direkt in Ihrer Anwendung einen Protokollierungscode implementieren müssen:
 
-![Erstellen eines Ablaufverfolgungspunkts mit einem Haltepunkt](~/docs/python/media/debugging-tracepoint.png)
+![Erstellen eines Ablaufverfolgungspunkts mit einem Haltepunkt](~/python/media/debugging-tracepoint.png)
 
 ### <a name="stepping-through-code"></a>Einzelschrittausführung von Code
 
@@ -110,27 +110,27 @@ Wenn der Debugger angehalten hat, können Sie die Werte von Variablen überprüf
 
 Um einen Wert mithilfe von DataTips anzuzeigen, zeigen Sie einfach mit dem Mauszeiger auf eine beliebige Variable im Editor. Klicken Sie auf den Wert, um ihn zu ändern:
 
-![DataTips im Debugger](~/docs/python/media/debugging-quick-tips.png)
+![DataTips im Debugger](~/python/media/debugging-quick-tips.png)
 
 Das Auto-Fenster (**Debuggen > Fenster > Auto**) enthält Variablen und Ausdrücke für die aktuelle Anweisung. Sie können auf die Wertspalte doppelklicken oder einen Wert auswählen und F2 drücken, um den Wert zu bearbeiten:
 
-![Auto-Fenster im Debugger](~/docs/python/media/debugging-autos-window.png)
+![Auto-Fenster im Debugger](~/python/media/debugging-autos-window.png)
 
 Das Fenster für lokale Variablen (**Debuggen > Fenster > Lokale Variablen**) zeigt alle Variablen, die sich im aktuellen Geltungsbereich befinden und bearbeitet werden können:
 
-![Fenster für lokale Variablen im Debugger](~/docs/python/media/debugging-locals-window.png)
+![Fenster für lokale Variablen im Debugger](~/python/media/debugging-locals-window.png)
 
 Weitere Informationen zum Auto-Fenster und zum Fenster für lokale Variablen finden Sie unter [Überprüfen von Variablen im Auto-Fenster und im Fenster für lokale Variablen](../debugger/autos-and-locals-windows.md).
 
 Das Überwachungsfenster (**Debuggen > Fenster > Überwachen > Überwachen 1-4**) ermöglicht es Ihnen, beliebige Python-Ausdrücke einzugeben und die Ergebnisse anzuzeigen. Ausdrücke werden für jeden Schritt erneut ausgewertet:
 
-![Überwachungsfenster im Debugger](~/docs/python/media/debugging-watch-window.png)
+![Überwachungsfenster im Debugger](~/python/media/debugging-watch-window.png)
 
 Weitere Informationen zum Verwenden der Überwachung finden Sie unter [Festlegen einer Überwachung von Variablen in den Fenstern „Überwachung“ und „Schnellüberwachung“](../debugger/watch-and-quickwatch-windows.md).
 
 Beim Überprüfen eines Zeichenfolgenwerts (`str`, `unicode`, `bytes` und `bytearray` gelten für diesen Zweck als Zeichenfolgen) wird rechts neben dem Wert ein Lupensymbol angezeigt. Wenn Sie darauf klicken, wird der nicht in Anführungszeichen eingeschlossene Zeichenfolgenwert in einem Popup-Dialogfeld angezeigt. Es werden Zeilenumbrüche angezeigt und Sie können im Fenster scrollen – eine hilfreiche Funktion für lange Zeichenfolgen. Wenn Sie auf den nach unten weisenden Pfeil auf dem Symbol klicken, können Sie zudem Nur-Text-, HTML-, XML- und JSON-Schnellansichten auswählen:
 
-![Schnellansichten für Zeichenfolgen](~/docs/python/media/debugging-string-visualizers.png)
+![Schnellansichten für Zeichenfolgen](~/python/media/debugging-string-visualizers.png)
 
 HTML-, XML- und JSON-Schnellansichten werden in separaten Popupfenstern mit Syntaxhervorhebung und Strukturansichten angezeigt.
 
@@ -138,13 +138,13 @@ HTML-, XML- und JSON-Schnellansichten werden in separaten Popupfenstern mit Synt
 
 Wenn während des Debuggens Ihres Programms ein Fehler auftritt und kein Ausnahmehandler dafür vorhanden ist, hält der Debugger am Punkt der Ausnahme an:
 
-![Popupfenster für Ausnahmen](~/docs/python/media/debugging-exception-popup.png)
+![Popupfenster für Ausnahmen](~/python/media/debugging-exception-popup.png)
 
 An diesem Punkt können Sie den Programmzustand überprüfen, einschließlich der Aufrufliste. Wenn Sie jedoch den Code in Einzelschritten ausführen, wird die Ausnahme weiterhin ausgelöst, bis sie behandelt oder das Programm beendet wird.
 
 Der Menübefehl **Debuggen > Fenster > Ausnahmeeinstellungen** öffnet ein Fenster, in dem Sie **Python-Ausnahmen** erweitern können:
 
-![Fenster für Ausnahmen](~/docs/python/media/debugging-exception-settings.png)
+![Fenster für Ausnahmen](~/python/media/debugging-exception-settings.png)
 
 Das Kontrollkästchen für jede Ausnahme steuert, ob der Debugger *immer* unterbricht, wenn die Ausnahme ausgelöst wird. Aktivieren Sie dieses Kontrollkästchen, wenn Sie bei einer bestimmten Ausnahme häufiger unterbrechen möchten.
 
@@ -156,7 +156,7 @@ Wenn Sie eine Ausnahme konfigurieren möchten, die in dieser Liste nicht angezei
 
 Standardmäßig startet der Debugger Ihr Programm mit dem Python-Standardstartprogramm, ohne Befehlszeilenargumente und ohne andere spezielle Pfade oder Bedingungen. Dies kann in den Debugeigenschaften des Projekts geändert werden. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf Ihr Projekt, und wählen Sie **Eigenschaften** und die Registerkarte **Debuggen** aus.
 
-![Debugeigenschaften des Projekts](~/docs/python/media/debugging-project-properties.png)
+![Debugeigenschaften des Projekts](~/python/media/debugging-project-properties.png)
 
 ### <a name="launch-mode-options"></a>Optionen für den Startmodus
 
@@ -188,7 +188,7 @@ Das Direktfenster (**Debuggen > Fenster > Direkt**) wird zum schnellen Auswerten
 
 Das interaktive Python-Debugfenster (**Debuggen > Fenster > Interaktives Debuggen in Python**) bietet einen größeren Funktionsumfang, da es alle [interaktiven REPL](interactive-repl.md)-Funktionen für das Debuggen zur Verfügung stellt, einschließlich des Schreibens und Ausführens von Code. Das Fenster stellt automatisch eine Verbindung zu jedem Prozess her, der mit dem Python-Standardstartprogramm gestartet wird (einschließlich Prozessen, die über **Debuggen > An den Prozess anhängen** angefügt werden). Beim Debuggen im gemischten C/C++-Modus ist es jedoch nicht verfügbar.
 
-![Interaktives Python-Debugfenster](~/docs/python/media/debugging-interactive.png)
+![Interaktives Python-Debugfenster](~/python/media/debugging-interactive.png)
 
 Das Fenster zum interaktiven Debuggen unterstützt zusätzlich zu den [REPL-Standardbefehlen](interactive-repl.md#meta-commands) spezielle Metabefehle:
 
@@ -215,4 +215,4 @@ Beachten Sie, dass die standardmäßigen Debuggerfenster wie „Prozesse“, „
 
 Das Fenster zum interaktiven Debuggen verfügt über einen eigenen Satz Optionen, auf die Sie über **Tools > Optionen > Python-Tools > Fenster zum interaktiven Debuggen** zugreifen können. Im Gegensatz zum regulären interaktiven Python-Fenster, das für jede Python-Umgebung über eine separate Instanz verfügt, gibt es nur ein Fenster zum interaktiven Debuggen, und dieses verwendet immer den Python-Interpreter für den Prozess, für den das Debugging ausgeführt wird.
 
-![Optionen für das Fenster zum interaktiven Debuggen](~/docs/python/media/debugging-interactive-options.png)
+![Optionen für das Fenster zum interaktiven Debuggen](~/python/media/debugging-interactive-options.png)

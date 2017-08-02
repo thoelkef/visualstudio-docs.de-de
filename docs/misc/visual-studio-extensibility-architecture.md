@@ -23,7 +23,7 @@ Die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierte Entwic
 ## Erweiterbarkeits\-Architektur  
  Die folgende Abbildung zeigt die Architektur der Referenz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] an.  Beachten Sie, dass das Konzept der Softwareanwendung nicht vorhanden ist.  Stattdessen die IDE\-Host aufgerufen, software\-komponenten VSPackages die Anwendungsfunktionalität bereitstellen.  Diese Funktionalität wird wiederum über die IDE als Diensten gemeinsam genutzt.  VSPackages\-Angebot die Dienste und andere VSPackages\-Verwendung.  Der Standardwert der IDE stellt auch viele Spektrum von Diensten, z <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>an, die den Zugriff auf die IDE\-Fenster Funktionalität bereitstellen.  
   
- ![Grafik zur Umgebungsarchitektur](~/docs/extensibility/internals/media/environment.gif "environment")  
+ ![Grafik zur Umgebungsarchitektur](~/extensibility/internals/media/environment.gif "environment")  
 Generalisierte Ansicht der Visual Studio\-Architektur  
   
  Beachten Sie, dass die Beziehung zwischen VSPackages und Dienste bidirektional ist.  Obwohl durch andere Dienste VSPackages\-Verwendungs anboten, sie können jedoch auch eigene ihre Dienste anbieten, indem sie die <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService>\-Schnittstelle verwenden.  Diese dienstbasierte Architektur wuchs aus der Implementierung des Microsoft ActiveX\-Designer auschecken, in der ein Dienst eine Gruppe von verwandten Schnittstellen, die eine Aufgabe ausführen.  Von einer strengen COM\-Blickpunkt müssen alle Schnittstellen eines bestimmten Diensts in einer einzigen COM\-Klasse implementiert werden.  

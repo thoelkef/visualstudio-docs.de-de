@@ -96,7 +96,7 @@ caps.handback.revision: 87
   
  Es folgt ein Beispiel dazu, welche Möglichkeiten ein VSTO\-Add\-In bietet. Dieses VSTO\-Add\-In fügt Menübandsteuerelemente, einen benutzerdefinierten Aufgabenbereich und ein Dialogfeld zu PowerPoint hinzu.  
   
- ![PowerPoint-Add-In-Lösung](~/docs/vsto/media/powerpointaddin.png "PowerPoint-Add-In-Lösung")  
+ ![PowerPoint-Add-In-Lösung](~/vsto/media/powerpointaddin.png "PowerPoint-Add-In-Lösung")  
   
  **Weitere Informationen**  
   

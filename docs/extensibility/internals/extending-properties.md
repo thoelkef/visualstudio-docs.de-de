@@ -39,7 +39,7 @@ Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Eigenschaften
   
  Die **Eigenschaften** Fenster, die geöffnet werden kann, durch Drücken von F4 auf der Tastatur oder auswählen **Eigenschaftenfenster** auf der **Ansicht** Menü dient zum Anzeigen und Bearbeiten der Konfiguration unabhängig, Entwurfszeit-Eigenschaften und-Ereignisse ausgewählter Objekte. Die konfigurationsabhängigen Eigenschaften für Projektmappen und Projekte, werden angezeigt, auf [Eigenschaftenseiten](../../extensibility/internals/property-pages.md). Weitere Informationen finden Sie unter [NIB: Projekteigenschaften](http://msdn.microsoft.com/en-us/fb126574-24ad-4c96-9b2b-6e1f3879ba50), [Konfigurationsoptionen verwalten](../../extensibility/internals/managing-configuration-options.md), und [NIB: Item Management in Projects](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0).  
   
- ![Übersicht über Eigenschaftenfenster](~/docs/extensibility/internals/media/vspropertieswindow.png "vsPropertiesWindow")  
+ ![Übersicht über Eigenschaftenfenster](~/extensibility/internals/media/vspropertieswindow.png "vsPropertiesWindow")  
 Eigenschaftenfenster  
   
  Dieser Abschnitt enthält ausführliche Informationen zu den einzelnen Bereichen der der **Eigenschaften** Fenster und Schnittstellen, die Sie implementieren müssen, und rufen zum Auffüllen des Fensters.  

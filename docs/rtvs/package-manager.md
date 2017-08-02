@@ -48,15 +48,15 @@ Der Paket-Manager enthält drei Registerkarten, wie unten beschrieben. Alle Regi
 
 - Auf der Registerkarte **Verfügbar** können Sie die zu installierenden Pakete durchsuchen. Wenn das Paket bereits installiert wurde, ändert sich die Schaltfläche **Installieren** rechts in **Deinstallieren**.
 
-    ![Registerkarte mit den verfügbaren Paketen im Paket-Manager von R Tools für Visual Studio](~/docs/rtvs/media/package-manager-available.png)
+    ![Registerkarte mit den verfügbaren Paketen im Paket-Manager von R Tools für Visual Studio](~/rtvs/media/package-manager-available.png)
 
 - Auf der Registerkarte **Installiert** werden alle installierten und geladenen Pakete angezeigt. Ein grüner Punkt neben einem Paket gibt an, dass es in die R-Sitzung geladen wurde. Das rote X-Symbol in der linken Liste oder die Schaltfläche **Deinstallieren** rechts kann zum Deinstallieren des Pakets verwendet werden. Ein blauer Pfeil nach oben rechts neben einem installierten Paket aktualisiert das Paket, wenn eine neuere Version verfügbar ist.
 
-    ![Registerkarte mit den installierten Paketen im Paket-Manager von R Tools für Visual Studio](~/docs/rtvs/media/package-manager-installed.png)
+    ![Registerkarte mit den installierten Paketen im Paket-Manager von R Tools für Visual Studio](~/rtvs/media/package-manager-installed.png)
 
 - Die Registerkarte **Geladen** zeigt nur die Pakete, die in die R-Sitzung geladen wurden und somit mit einem grünen Punkt angezeigt werden. Sie haben hier auch die Möglichkeit, Pakete zu deinstallieren und zu aktualisieren.
 
-    ![Registerkarte mit den geladenen Paketen im Paket-Manager von R Tools für Visual Studio](~/docs/rtvs/media/package-manager-loaded.png)
+    ![Registerkarte mit den geladenen Paketen im Paket-Manager von R Tools für Visual Studio](~/rtvs/media/package-manager-loaded.png)
 
 ## <a name="package-locations"></a>Paketspeicherorte
 

@@ -146,7 +146,7 @@ Mit dem **eigenständigen IntelliTrace Collector** können Sie IntelliTrace\-Dia
   
 1.  Stellen Sie sicher, dass PowerShell auf dem Server der App aktiviert ist. Bei den meisten Versionen von Windows Server, können Sie diese Funktion im **Server\-Manager**\-Verwaltungsprogramm hinzufügen.  
   
-     ![PowerShell wird mit dem Server&#45;Manager hinzugefügt](~/docs/debugger/media/intellitrace_servermanager_addpowershell.png "INTELLITRACE\_ServerManager\_AddPowerShell")  
+     ![PowerShell wird mit dem Server&#45;Manager hinzugefügt](~/debugger/media/intellitrace_servermanager_addpowershell.png "INTELLITRACE\_ServerManager\_AddPowerShell")  
   
 2.  Installieren Sie die IntelliTrace\-PowerShell\-cmdlets.  
   

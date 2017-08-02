@@ -108,11 +108,11 @@ Visual C# IntelliSense ist beim Codieren im Editor und beim Debuggen im Befehlsf
   
  Um den Vorgang "Hinzufügen mit" zu initiieren, positionieren Sie den Cursor auf einem Typverweis, der nicht aufgelöst werden kann. Wenn Sie beispielsweise eine Konsolenanwendung erstellen und dann `XmlTextReader` zum Text der `Main`-Methode hinzufügen, erscheint ein Smarttag unter dem äußersten rechten Zeichen von `XmlTextReader`, da es als ein Typverweis angezeigt wird, der nicht aufgelöst werden kann.  
   
- ![Bild zum Hinzufügen mit Smarttag](~/docs/ide/media/addusesmart.gif "AddUseSmart")  
+ ![Bild zum Hinzufügen mit Smarttag](~/ide/media/addusesmart.gif "AddUseSmart")  
   
  Sie können dann die Option „Hinzufügen mit“ aufrufen, indem Sie sie im Untermenü **Auflösen** des **IntelliSense**-Menüs oder des Kontextmenüs auswählen. Mithilfe des Smarttags kann die Option „Hinzufügen mit“ auch aufgerufen werden. Das Smarttag ist nur sichtbar, wenn der Cursor sich auf oder neben dem ungebundenen Typ befindet.  
   
- ![Bild zum Hinzufügen mit erweitertem Smarttag](~/docs/ide/media/addusesmartexp.gif "AddUseSmartExp")  
+ ![Bild zum Hinzufügen mit erweitertem Smarttag](~/ide/media/addusesmartexp.gif "AddUseSmartExp")  
   
 ### <a name="organize-usings"></a>Using-Direktiven organisieren  
  Mit den Optionen unter **Using**-Direktiven organisieren können Sie `using`- und `extern`-Deklarationen sortieren und entfernen, ohne das Verhalten des Quellcodes zu ändern. Im Laufe der Zeit können Quelldateien aufgrund von nicht benötigten und unorganisierten `using`-Direktiven sehr groß werden und schwer zu lesen sein. Die Optionen **Using-Anweisungen organisieren** komprimieren Quellcode, in dem sie nicht verwendete `using`-Anweisungen entfernen, und verbessern die Lesbarkeit durch Sortieren.  

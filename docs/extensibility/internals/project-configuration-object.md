@@ -22,7 +22,7 @@ caps.handback.revision: 11
 
 Das Konfigurationsobjekt Projekt verwaltet die Anzeige der Konfigurationsinformationen auf der Benutzeroberfläche.  
   
- ![Visual Studio&#45;Projektkonfiguration](~/docs/extensibility/internals/media/vsprojectcfg.gif "vsProjectCfg")  
+ ![Visual Studio&#45;Projektkonfiguration](~/extensibility/internals/media/vsprojectcfg.gif "vsProjectCfg")  
 Eigenschaftenseiten für Projekt\-Konfiguration  
   
  Der Konfigurationsanbieter Projekt verwaltet die Projektkonfigurationen. Die Umgebung und andere Pakete zugreifen und Abrufen von Informationen zu Konfigurationen eines Projekts, die Projekt Konfigurationsanbieter Objekt zugeordneten Schnittstellen aufzurufen.  

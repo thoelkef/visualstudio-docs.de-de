@@ -120,7 +120,7 @@ Von den Profilerstellungstools für Visual Studio werden fünf Methoden zum Samm
 ##  <a name="tier_interaction"></a> Ebeneninteraktion  
  Bei der Profilerstellung für die Ebeneninteraktion werden einer Profilerstellungsdatendatei Informationen zu synchronen [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]\-Aufrufen zwischen einer [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]\-Seite oder einer anderen Anwendung und einer [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)]\-Datenbank hinzugefügt.  Die Daten umfassen Anzahl und Zeit der Aufrufe sowie die höchsten und niedrigsten Zeiten.  Ebeneninteraktionsdaten können den Profilerstellungsdaten hinzugefügt werden, die mithilfe der Sampling\-, Instrumentations\-, .NET\-Speicher\- oder Parallelitätsmethode gesammelt wurden.  
   
- ![Profilerstellungsdaten der Ebeneninteraktion](~/docs/profiling/media/tierinteraction_profilingtools.png "TierInteraction\_ProfilingTools")  
+ ![Profilerstellungsdaten der Ebeneninteraktion](~/profiling/media/tierinteraction_profilingtools.png "TierInteraction\_ProfilingTools")  
 Von den Profilerstellungstools gesammelte Ebeneninteraktionsdaten  
   
  [Erfassen von Ebeneninteraktionsdaten](../profiling/collecting-tier-interaction-data.md)  

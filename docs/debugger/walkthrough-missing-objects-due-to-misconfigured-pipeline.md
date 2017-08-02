@@ -36,7 +36,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
   
  In diesem Szenario wird beim Ausführen der App zu Testzwecken der Hintergrund erwartungsgemäß gerendert, eins der Objekte wird jedoch nicht dargestellt. Mithilfe der Grafikdiagnose erfassen Sie das Problem in einer Grafikprotokolldatei, um die App zu debuggen. Das Problem sieht in der App wie folgt aus:  
   
- ![Das Objekt ist nicht sichtbar.](~/docs/debugger/graphics/media/gfx_diag_demo_misconfigured_pipeline_problem.png "gfx\_diag\_demo\_misconfigured\_pipeline\_problem")  
+ ![Das Objekt ist nicht sichtbar.](~/debugger/graphics/media/gfx_diag_demo_misconfigured_pipeline_problem.png "gfx\_diag\_demo\_misconfigured\_pipeline\_problem")  
   
 ## Untersuchung  
  Mithilfe der Grafikdiagnosetools können Sie das Grafikprotokolldokument laden, um die Frames zu untersuchen, die während des Tests erfasst wurden.  
@@ -100,7 +100,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
   
  Um das Problem zu beheben, weisen Sie den richtigen Pixelshader zu, indem Sie den ersten Parameter des `ID3D11DeviceContext::PSSetShader`\-API\-Aufrufs verwenden.  
   
- ![Der korrigierte C&#43;&#43;&#45;Quellcode](~/docs/debugger/graphics/media/gfx_diag_demo_misconfigured_pipeline_step_6.png "gfx\_diag\_demo\_misconfigured\_pipeline\_step\_6")  
+ ![Der korrigierte C&#43;&#43;&#45;Quellcode](~/debugger/graphics/media/gfx_diag_demo_misconfigured_pipeline_step_6.png "gfx\_diag\_demo\_misconfigured\_pipeline\_step\_6")  
   
  Nachdem Sie den Code repariert haben, können Sie die App erneut erstellen und ausführen, um zu überprüfen, ob das Renderingproblem behoben wurde:  
   

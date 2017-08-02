@@ -31,7 +31,7 @@ caps.handback.revision: 47
   
  Das folgende Beispiel zeigt, wie Sie datengebundene Steuerelemente in Projekten auf Dokumentebene mithilfe eines Designers hinzufügen.  Ein Beispiel dazu, wie Sie datengebundene Steuerelemente in VSTO\-Add\-In\-Projekten zur Laufzeit hinzufügen, finden Sie unter [Exemplarische Vorgehensweise: Einfache Datenbindung in einem VSTO-Add-In-Projek](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).  
   
- ![Link zu Video](~/docs/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie unter [Binden von Daten an Word 2007\-Inhaltssteuerelemente mit den Visual Studio\-Tools für Office System \(3.0\)](http://go.microsoft.com/fwlink/?LinkId=136785).  
+ ![Link zu Video](~/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie unter [Binden von Daten an Word 2007\-Inhaltssteuerelemente mit den Visual Studio\-Tools für Office System \(3.0\)](http://go.microsoft.com/fwlink/?LinkId=136785).  
   
 ## Hinzufügen eines Steuerelements zu einem Dokument zur Entwurfszeit  
   

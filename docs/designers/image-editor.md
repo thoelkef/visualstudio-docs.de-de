@@ -93,7 +93,7 @@ In diesem Dokument wird beschrieben, wie Sie den [!INCLUDE[vsprvs](../code-quali
   
  Dies ist die Symbolleiste des **Bildbearbeitungsmodus**:  
   
- ![Gebundene Symbolleiste der Bildbearbeitung](~/docs/designers/media/digit-tre-modal-toolbar.png "Digit\-TRE\-Modal\-Toolbar")  
+ ![Gebundene Symbolleiste der Bildbearbeitung](~/designers/media/digit-tre-modal-toolbar.png "Digit\-TRE\-Modal\-Toolbar")  
   
  In dieser Tabelle werden die Elemente der Symbolleiste der **Bildbearbeitungsmodus** beschrieben und in der Reihenfolge aufgelistet, in der sie auf der Symbolleiste von links nach rechts angezeigt werden.  
   
@@ -117,7 +117,7 @@ In diesem Dokument wird beschrieben, wie Sie den [!INCLUDE[vsprvs](../code-quali
   
  Dies ist die Symbolleiste der **Bildbearbeitung**:  
   
- ![Symbolleiste der Bildbearbeitung](~/docs/designers/media/digit-tre-toolbar.png "Digit\-TRE\-Toolbar")  
+ ![Symbolleiste der Bildbearbeitung](~/designers/media/digit-tre-toolbar.png "Digit\-TRE\-Toolbar")  
   
  In der folgenden Tabelle werden die Elemente der Symbolleiste der **Bildbearbeitung** beschrieben und in der Reihenfolge aufgelistet, in der sie auf der Symbolleiste von oben nach unten angezeigt werden.  
   

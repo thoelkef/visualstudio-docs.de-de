@@ -82,7 +82,7 @@ Der XAML-Designer in Visual Studio stellt eine visuelle Schnittstelle bereit, mi
   
  In der Entwurfsansicht sind zusätzliche Zeichenflächenbefehle im unteren linken Bildschirmbereich verfügbar, wie hier gezeigt wird:  
   
- ![Designansicht-Befehle](~/docs/designers/media/xaml_editor_design_controls.png "xaml_editor_design_controls")  
+ ![Designansicht-Befehle](~/designers/media/xaml_editor_design_controls.png "xaml_editor_design_controls")  
   
  Diese Befehle sind auf dieser Symbolleiste verfügbar:  
   

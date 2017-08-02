@@ -139,7 +139,7 @@ caps.handback.revision: 51
   
 -   [Word, InfoPath und PowerPoint](#WordAndInfoPath)  
   
- ![Link zu Video](~/docs/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie unter [Gewusst wie: Verwalten von Aufgabenbereichen in Word\-VSTO\-Add\-Ins](http://go.microsoft.com/fwlink/?LinkId=136781).  
+ ![Link zu Video](~/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie unter [Gewusst wie: Verwalten von Aufgabenbereichen in Word\-VSTO\-Add\-Ins](http://go.microsoft.com/fwlink/?LinkId=136781).  
   
 ##  <a name="Outlook"></a> Outlook  
  Wenn Sie einen benutzerdefinierten Aufgabenbereich für Outlook erstellen, wird dieser einem bestimmten Explorer\- oder Inspektor\-Fenster zugeordnet.  Explorer\-Fenster sind Fenster, die den Inhalt eines Ordners anzeigen. Inspektor\-Fenster sind Fenster, die ein Element, z. B. eine E\-Mail oder Aufgabe, anzeigen.  

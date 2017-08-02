@@ -48,7 +48,7 @@ Sie können alle Toolfenster in Visual Studio zugreifen. In dieser exemplarische
   
 3.  Ziehen Sie eine **Textfeld**,  **Schaltfläche**, und ein **ListBox** der Canvas. Ordnen Sie die Elemente so an, dass das Textfeld und die Schaltfläche auf der gleichen Ebene sind und das Listenfeld den Rest des Fensters unter ihnen, wie in der folgenden Abbildung füllt.  
   
-     ![Fertig gestelltes Toolfenster](~/docs/extensibility/media/t5-toolwindow.png "T5\-ToolWindow")  
+     ![Fertig gestelltes Toolfenster](~/extensibility/media/t5-toolwindow.png "T5\-ToolWindow")  
   
 4.  Klicken Sie im Bereich XAML die Schaltfläche "Suchen", und legen Sie dessen Eigenschaft Inhalt auf **Hinzufügen**. Schließen Sie den Ereignishandler der Schaltfläche auf das Schaltflächen\-Steuerelement durch Hinzufügen einer `Click="button1_Click"` Attribut. Der Canvas\-Block sollte wie folgt aussehen:  
   
@@ -136,7 +136,7 @@ Sie können alle Toolfenster in Visual Studio zugreifen. In dieser exemplarische
   
      Wenn ein Benutzer die Optionsseite geöffnet wird, sollten sie die folgende Abbildung ähneln.  
   
-     ![Seite Optionen](~/docs/extensibility/media/t5optionspage.gif "T5OptionsPage")  
+     ![Seite Optionen](~/extensibility/media/t5optionspage.gif "T5OptionsPage")  
   
      Beachten Sie die Kategorie **ToDo** und die Unterkategorie **Allgemeine**.  
   
@@ -149,7 +149,7 @@ Sie können alle Toolfenster in Visual Studio zugreifen. In dieser exemplarische
   
      Um Daten in zur Verfügung stellen die **Eigenschaften** Fenster verwandeln Sie die Daten in öffentlichen Eigenschaften, die zwei spezifische Attribute `Description` und `Category`.`Description` ist der Text, der am unteren Rand angezeigt wird die **Eigenschaften** Fenster.`Category` Bestimmt, wo die Eigenschaft angezeigt werden soll die **Eigenschaften** Fenster wird angezeigt, der **nach Kategorien** anzeigen. In der folgenden Abbildung werden die **Eigenschaften** Fenster befindet sich im **nach Kategorien** anzeigen, die **Name** Eigenschaft in der **ToDo Fields** Kategorie ausgewählt ist, und die Beschreibung des der **Name** \-Eigenschaft wird am unteren Rand des Fensters angezeigt.  
   
-     ![Eigenschaftenfenster](~/docs/extensibility/media/t5properties.png "T5Properties")  
+     ![Eigenschaftenfenster](~/extensibility/media/t5properties.png "T5Properties")  
   
 2.  Fügen Sie die folgende using\-Anweisungen die TodoItem.cs\-Datei.  
   

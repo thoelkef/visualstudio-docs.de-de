@@ -35,7 +35,7 @@ Die Schnittstellen und den Implementierungen aller Projekte in [!INCLUDE[vsprvs]
   
  Die folgende Abbildung zeigt die wichtigsten Schnittstellen, die Dienste und die Objekte an, die eine typische Projektdurchführung zusammensetzt.  Sie können die Anwendung können, HierUtil7 verwenden, um die zugrunde liegenden Objekte und anderen Programmierung vorformulierten Satz zu erstellen.  Weitere Informationen über die Verwendung der Hilfe HierUtil7 finden Sie unter [Not in Build: Using HierUtil7 Project Classes to Implement a Project Type \(C\+\+\)](http://msdn.microsoft.com/de-de/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
   
- ![Grafik zum Visual Studio&#45;Projektmodell](~/docs/extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
+ ![Grafik zum Visual Studio&#45;Projektmodell](~/extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
 Projektmodell  
   
  Weitere Informationen zu den Schnittstellen und Dienste, die im vorherigen Diagramm aufgeführt sind, und anderen optionalen Schnittstellen, die nicht im Diagramm eingeschlossen werden, finden Sie unter [Projekt\-Modell\-Kernkomponenten](../../extensibility/internals/project-model-core-components.md).  

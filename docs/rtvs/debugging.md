@@ -43,7 +43,7 @@ R Tools für Visual Studio (RTVS) lässt sich mit dem vollständigen Debugvorgan
 
 Das Starten des Debuggers für die R-Startdatei in einem R-Projekt ist dasselbe wie in anderen Projekttypen: verwenden Sie **Debuggen > Debuggen starten**, die F5-Taste oder die **Startdatei der Quelle** auf der unten dargestellten Debugsymbolleiste. Um die Startdatei zu ändern, führen Sie einen Rechtsklick auf eine Datei im Projektmappen-Explorer durch, und wählen Sie **Als R-Startskript festlegen** aus.
 
-![Debugger-Schaltfläche „Start“ für R](~/docs/rtvs/media/debugger-start-button.png)
+![Debugger-Schaltfläche „Start“ für R](~/rtvs/media/debugger-start-button.png)
 
 In jedem Fall führt das Starten des Debuggers dazu, dass die Datei im interaktiven Fenster „eingebunden“ wird, was bedeutet, dass sie dort geladen und ausgeführt wird. Wenn Sie mit dem Debuggen beginnen, werden Sie eine Ausgabe ähnlich der folgenden im interaktiven Fenster sehen:
 
@@ -85,5 +85,5 @@ Der Umgebungsbrowser unterstützt eine Reihe bestimmter Befehle:
 | help | show help: zeigt verfügbare Befehle im interaktiven Fenster an. |
 | &lt;expr&gt; | evaluiert den Ausdruck in *expr*. |
 
-![Umgebungsbrowser im interaktiven Fenster](~/docs/rtvs/media/debugger-environment-browser.png)
+![Umgebungsbrowser im interaktiven Fenster](~/rtvs/media/debugger-environment-browser.png)
 

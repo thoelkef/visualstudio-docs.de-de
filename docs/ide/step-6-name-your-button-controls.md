@@ -43,7 +43,7 @@ Es gibt nur ein PictureBox-Steuerelement im Formular. Als Sie es hinzugefügt ha
   
  Das Formular enthält vier Schaltflächen, und die IDE hat ihnen folgende Namen zugewiesen: **button1**, **button2**, **button3**und **button4**. Anhand der aktuellen Namen können Sie jedoch nicht erkennen, welches Steuerelement die Schaltfläche **Close** ist und welches Steuerelement die Schaltfläche **Show a picture** ist. Daher ist es hilfreich, den Schaltflächen-Steuerelementen aufschlussreichere Namen zu geben.  
   
- ![Link zum Video](~/docs/data-tools/media/playvideo.gif "Video wiedergeben")Eine Videoversion dieses Themas finden Sie im Video 3 zum [Tutorial 1: Erstellen eines Bildanzeigeprogramms in Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205213) oder im Video 3 zum [Tutorial 1: Erstellen eines Bildanzeigeprogramms in C#](http://go.microsoft.com/fwlink/?LinkId=205202). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.  
+ ![Link zum Video](~/data-tools/media/playvideo.gif "Video wiedergeben")Eine Videoversion dieses Themas finden Sie im Video 3 zum [Tutorial 1: Erstellen eines Bildanzeigeprogramms in Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205213) oder im Video 3 zum [Tutorial 1: Erstellen eines Bildanzeigeprogramms in C#](http://go.microsoft.com/fwlink/?LinkId=205202). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.  
   
 ### <a name="to-name-your-button-controls"></a>So benennen Sie die Schaltflächen-Steuerelemente  
   
@@ -59,7 +59,7 @@ Eigenschaftenfenster mit closeButton-Name
   
 3.  Doppelklicken Sie im Formular auf die Schaltfläche **Bild anzeigen** . Wählen Sie alternativ die Schaltfläche **Bild anzeigen** im Formular und anschließend die EINGABETASTE aus. Damit öffnet die IDE eine zusätzliche Registerkarte im Hauptfenster mit der Bezeichnung **Form1.cs** (**Form1.vb** bei Verwendung von Visual Basic). Auf dieser Registerkarte wird die Codedatei hinter dem Formular angezeigt, wie im folgenden Bild dargestellt.  
   
-     ![Form1.cs-Registerkarte mit Visual C&#35;-Code](~/docs/ide/media/express_showbuttoncode.png "Express_ShowButtonCode")  
+     ![Form1.cs-Registerkarte mit Visual C&#35;-Code](~/ide/media/express_showbuttoncode.png "Express_ShowButtonCode")  
 Form1.cs-Registerkarte mit Visual C#-Code  
   
 4.  Konzentrieren Sie sich auf diesen Teil des Codes. (Wählen Sie bei Verwendung von Visual Basic die Registerkarte **VB** unten aus, um die Visual Basic-Version des Codes anzuzeigen.)  

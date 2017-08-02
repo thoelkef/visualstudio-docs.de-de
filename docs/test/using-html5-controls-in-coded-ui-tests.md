@@ -59,7 +59,7 @@ Bei Tests der programmierten UI werden einige HTML5-Steuerelemente unterstützt,
 ###  <a name="UsingHTML5ControlsCodedUITestsAudio"></a> Audio-Steuerelement  
  **Audiosteuerelement:** Aktionen im HTML5-Audiosteuerelement werden ordnungsgemäß aufgezeichnet und wiedergegeben.  
   
- ![HTML5-Audiosteuerelement](~/docs/test/media/codedui_html5_audio.png "CodedUI_HTML5_Audio")  
+ ![HTML5-Audiosteuerelement](~/test/media/codedui_html5_audio.png "CodedUI_HTML5_Audio")  
   
 |Aktion|Aufzeichnung|Generierter Code|  
 |------------|---------------|--------------------|  
@@ -102,7 +102,7 @@ string Volume
 ###  <a name="UsingHTML5ControlsCodedUITestsVideo"></a> Videosteuerelement  
  **Videosteuerelement:** Aktionen im HTML5-Videosteuerelement werden ordnungsgemäß aufgezeichnet und wiedergegeben.  
   
- ![HTML5-Videosteuerelement](~/docs/test/media/codedui_html5_video.png "CodedUI_HTML5_Video")  
+ ![HTML5-Videosteuerelement](~/test/media/codedui_html5_video.png "CodedUI_HTML5_Video")  
   
 |Aktion|Aufzeichnung|Generierter Code|  
 |------------|---------------|--------------------|  
@@ -132,7 +132,7 @@ string VideoWidth
 ###  <a name="UsingHTML5ControlsCodedUITestsSlider"></a> Schieberegler  
  **Schiebereglersteuerung:** Aktionen in der HTML5-Schiebereglersteuerung werden ordnungsgemäß aufgezeichnet und wiedergegeben.  
   
- ![HTML5-Schiebereglersteuerung](~/docs/test/media/codedui_html5_slider.png "CodedUI_HTML5_Slider")  
+ ![HTML5-Schiebereglersteuerung](~/test/media/codedui_html5_slider.png "CodedUI_HTML5_Slider")  
   
 |Aktion|Aufzeichnung|Generierter Code|  
 |------------|---------------|--------------------|  
@@ -152,7 +152,7 @@ string ValueAsNumber
 ###  <a name="UsingHTML5ControlsCodedUITestsProgressbar"></a> ProgressBar  
  **ProgreesBar-Steuerelement:** Bei der „ProgressBar“ handelt es sich um ein Steuerelement ohne Interaktionen. Sie können Assertionen für die `Value`- und `Max`-Eigenschaften dieses Steuerelements hinzufügen.  
   
- ![HTML5-ProgressBar-Steuerelement](~/docs/test/media/codedui_html5_progressbar.png "CodedUI_HTML5_ProgressBar")  
+ ![HTML5-ProgressBar-Steuerelement](~/test/media/codedui_html5_progressbar.png "CodedUI_HTML5_ProgressBar")  
   
 ## <a name="see-also"></a>Siehe auch  
  [HTML-Elemente](http://go.microsoft.com/fwlink/?LinkID=232441)   

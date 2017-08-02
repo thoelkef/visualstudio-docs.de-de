@@ -23,7 +23,7 @@ caps.handback.revision: 5
 # Tastenkombinationen (HTML und JavaScript)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Gilt für Windows und Windows Phone](~/docs/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![Gilt für Windows und Windows Phone](~/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  Tastenkombinationen in Visual Studio für das Debuggen von Store\-Apps mit HTML und JavaScript  
   

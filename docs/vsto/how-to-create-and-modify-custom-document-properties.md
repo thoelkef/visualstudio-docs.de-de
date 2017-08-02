@@ -32,7 +32,7 @@ caps.handback.revision: 46
   
  Das folgende Beispiel veranschaulicht, wie eine benutzerdefinierte Eigenschaft in einer Anpassung auf Dokumentebene für Excel hinzugefügt und ihr ein Wert zugewiesen wird.  
   
- ![Link zu Video](~/docs/data-tools/media/playvideo.gif "Link zu Video") [Gewusst wie: Zugreifen auf und Bearbeiten von benutzerdefinierten Dokumenteigenschaften in Microsoft Word](http://go.microsoft.com/fwlink/?LinkId=136772).  
+ ![Link zu Video](~/data-tools/media/playvideo.gif "Link zu Video") [Gewusst wie: Zugreifen auf und Bearbeiten von benutzerdefinierten Dokumenteigenschaften in Microsoft Word](http://go.microsoft.com/fwlink/?LinkId=136772).  
   
 ## Beispiel  
  [!code-csharp[Trin_VstcoreProgramming#6](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgramming/CS/ThisWorkbook.cs#6)]

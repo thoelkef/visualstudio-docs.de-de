@@ -34,7 +34,7 @@ Wenn ein Problem mit Visual Studio auftritt, möchten wir davon erfahren, damit 
   1. Klicken Sie auf der linken Seite des Tools auf **Anmelden**, wie im folgenden Screenshot gezeigt.
   2. Befolgen Sie die Anweisungen auf dem Bildschirm für die Anmeldung.
 
-  ![Anmelden zum Berichten eines Problems](~/docs/ide/media/vs2017-report-a-problem-sign-in.png "Anmelden zum Berichten eines Problems")
+  ![Anmelden zum Berichten eines Problems](~/ide/media/vs2017-report-a-problem-sign-in.png "Anmelden zum Berichten eines Problems")
 
 
 ## <a name="search-and-vote-for-similar-problems"></a>Ähnliche Probleme suchen und für sie abstimmen  
@@ -43,7 +43,7 @@ Wenn ein Problem mit Visual Studio auftritt, möchten wir davon erfahren, damit 
 1.  Suchen Sie nach Ihrem Problem, und finden Sie heraus, ob andere es bereits gemeldet haben.
 2.  Wenn es bereits gemeldet wurde, stimmen Sie dafür, um uns zu informieren.  
 
-  ![VS15-FeedbackTool-SearchForSimilarReportedProblems](~/docs/ide/media/vs2017-report-a-problem-search-and-vote.png "Ähnliche Probleme suchen und für sie abstimmen")
+  ![VS15-FeedbackTool-SearchForSimilarReportedProblems](~/ide/media/vs2017-report-a-problem-search-and-vote.png "Ähnliche Probleme suchen und für sie abstimmen")
 
 
 ## <a name="report-a-new-problem"></a>Neues Problem melden

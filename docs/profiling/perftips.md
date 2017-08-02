@@ -42,7 +42,7 @@ Visual Studio-Debugger *PerfTips* und die in den Debugger integrierten **Diagnos
 ## <a name="perftips"></a>PerfTips  
  Wenn der Debugger die Ausführung an einem Haltepunkt oder während einer schrittweisen Ausführung stoppt, wird die verstrichene Zeit zwischen der Pause und dem vorherigen Haltepunkt als QuickInfo im Editor-Fenster angezeigt. Weitere Informationen finden Sie unter [PerfTips: Performance Information at-a-glance while Debugging with Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx).  
   
- ![PerfTip](~/docs/profiling/media/dbgdiag_perf_perftip.png "DBGDIAG_PERF_PerfTip")  
+ ![PerfTip](~/profiling/media/dbgdiag_perf_perftip.png "DBGDIAG_PERF_PerfTip")  
   
 ## <a name="diagnostics-tools-window"></a>Fenster "Diagnosetools"  
  Haltepunkte und die zugehörigen Zeitsteuerungsdaten werden im Fenster Diagnosetools aufgezeichnet.  

@@ -69,7 +69,7 @@ Code Maps helfen Ihnen, die Übersicht in umfangreichen Codebasen, nicht vertrau
   
  ![Codezuordnung &#45; Alle Verweise suchen](../modeling/media/codemapstoryboardpaint6.png "CodeMapStoryboardPaint6")  
   
- ![Öffnen einer Codezuordnung aus dem Code&#45;Editor](~/docs/modeling/media/codemapstoryboardpaint6a.PNG "CodeMapStoryboardPaint6A")  
+ ![Öffnen einer Codezuordnung aus dem Code&#45;Editor](~/modeling/media/codemapstoryboardpaint6a.PNG "CodeMapStoryboardPaint6A")  
   
 > [!NOTE]
 >  Wenn Sie Elemente aus einem Projekt hinzufügen, das von mehreren Apps wie Windows Phone oder Windows Store gemeinsam genutzt wird, werden diese Elemente immer mit dem derzeit aktiven App\-Projekt in der Map angezeigt.  Wenn Sie also den Kontext auf ein anderes App\-Projekt ändern, ändert sich auch der Kontext auf der Map für alle neu hinzugefügte Elemente aus dem freigegebenen Projekt.  Vorgänge, die Sie mit einem Element in der Zuordnung ausführen, gelten nur für solche Elemente, die denselben Kontext gemeinsam verwenden.  

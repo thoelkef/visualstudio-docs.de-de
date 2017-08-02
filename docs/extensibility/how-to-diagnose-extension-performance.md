@@ -41,7 +41,7 @@ Basierend auf Feedback von Kunden, wurde die Schwerpunkte für Visual Studio 201
 
 Um diese Auswirkungen Benutzern erleichtern, haben wir ein neues Feature in Visual Studio Validierungsfehlern langsam Erweiterungen hinzugefügt. Wenn Visual Studio eine neue Erweiterung, die Sie Laden der Projektmappe oder Start verlangsamt wird erkennt, wird Benutzern eine Benachrichtigung in der IDE zeigen sie im Dialogfeld neuen "Verwalten von Visual Studio Performance" angezeigt. Dieses Dialogfeld kann auch immer vom Menü Hilfe, um die zuvor erkannte Erweiterungen durchsuchen zugegriffen werden.
 
-![Verwalten von Visual Studio für Datenereignis](~/docs/extensibility/media/manage-performance.png)
+![Verwalten von Visual Studio für Datenereignis](~/extensibility/media/manage-performance.png)
 
 Dieses Dokument soll Entwicklern zu helfen Erweiterung beschreiben, wie die Erweiterung Auswirkung berechnet wird und wie es lokal analysiert werden kann zum Testen, ob eine Erweiterung als Erweiterung Beeinträchtigung der Leistung angezeigt werden kann.
 
@@ -143,7 +143,7 @@ private void DoMoreWork()
 
 Nachdem Sie Ihre Visual Studio-Umgebung, mit der Erweiterung installiert einrichten, können Sie eine Verfolgung des Startvorgangs aufzeichnen, indem PerfView öffnen und sammeln Dialogfeld "Erfassen" im Menü.
 
-![Perfview erfassen Menü](~/docs/extensibility/media/perfview-collect-menu.png)
+![Perfview erfassen Menü](~/extensibility/media/perfview-collect-menu.png)
 
 Standardoptionen bietet Aufruflisten für die CPU-Nutzung, doch da sowie Blockierungszeit interessiert sind, Sie sollten aktivieren "Thread Time" Stapel. Nachdem die Einstellungen bereit sind, können klicken Sie auf "Start-Sammlung" und starten Sie Visual Studio nach der Aufzeichnung gestartet wird.
 
@@ -155,7 +155,7 @@ Nach Abschluss der Aufzeichnung PerfView automatisch Trace öffnen und Optionen.
 
 Für die Zwecke dieses Beispiels ist sind es in erster Linie der "Thread-Zeit" Stapelansicht finden Sie unter "Advanced Group" interessiert. In dieser Ansicht wird die gesamte Zeit in einem Thread, eine Methode, einschließlich CPU-Zeit und blockierte Zeit, z. B. Datenträger-e/a oder warten auf Handles angezeigt.
 
- ![Threadstapel Zeit](~/docs/extensibility/media/perfview-thread-time-stacks.png)
+ ![Threadstapel Zeit](~/extensibility/media/perfview-thread-time-stacks.png)
 
  Wählen Sie beim Öffnen von "Thread Zeit Stapel" angezeigt, den Prozess "Devenv" Analyse zu starten.
 
@@ -170,11 +170,11 @@ Für das Beispiel über einige interessante Aufruf wäre Stapel:
 
 1. E/a über System.IO-Klasse: inklusive Kosten für diese Frames nicht sehr teuer in der Ablaufverfolgung möglicherweise, können sie eine mögliche Ursache für ein Problem sind, da Datei-e/a-Geschwindigkeit von Computer zu Computer unterschiedlich sind.
 
-  ![System-e/a-frames](~/docs/extensibility/media/perfview-system-io-frames.png)
+  ![System-e/a-frames](~/extensibility/media/perfview-system-io-frames.png)
 
 2. Blockierende Aufrufe, die auf andere asynchrone Arbeit warten: In diesem Fall würde der inklusiven Zeit der Hauptthread, auf den Abschluss des asynchronen Vorgänge blockiert ist Zeit darstellen.
 
-  ![blockierenden Aufruf frames](~/docs/extensibility/media/perfview-blocking-call-frames.png)
+  ![blockierenden Aufruf frames](~/extensibility/media/perfview-blocking-call-frames.png)
 
 Einer der anderen Ansichten in der Ablaufverfolgung, die Auswirkung bestimmt werden werden die "Image Load-Stacks". Sie können dieselben Filter anwenden, die auf "Thread-Zeit" Stapelansicht angewendet und erfahren Sie, alle Assemblys, die aufgrund der Code ausgeführt, indem die automatische geladene Paket geladen.
 

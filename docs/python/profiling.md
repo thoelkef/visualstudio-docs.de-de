@@ -42,11 +42,11 @@ Visual Studio unterstützt die Profilerstellung einer Python-Anwendung bei Verwe
 
 Die Profilerstellung wird mit dem Menübefehl **Analysieren > Python-Profilerstellung starten** gestartet, worauf ein Konfigurationsdialogfeld geöffnet wird:
 
-![Konfigurationsdialogfeld für Profilerstellung](~/docs/python/media/profiling-start.png)
+![Konfigurationsdialogfeld für Profilerstellung](~/python/media/profiling-start.png)
 
 Wenn Sie die Option **OK** wählen, wird der Profiler ausgeführt und öffnet einen Leistungsbericht, anhand dessen Sie den Zeitaufwand in der Anwendung untersuchen können:
 
-![Leistungsbericht für Profilerstellung](~/docs/python/media/profiling-results.png)
+![Leistungsbericht für Profilerstellung](~/python/media/profiling-results.png)
 
 Eine Übersicht finden Sie hier:
 

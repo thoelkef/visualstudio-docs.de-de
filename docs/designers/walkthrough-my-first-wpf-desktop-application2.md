@@ -257,7 +257,7 @@ ms.lasthandoff: 05/13/2017
   
      Die folgende Abbildung zeigt die Anwendung mit den Navigationsschaltflächen des Fensters.  
   
-     ![Bildschirmabbildung für ExpenseIt-Beispiel](~/docs/designers/media/gettingstartedfigure1.png "GettingStartedFigure1")  
+     ![Bildschirmabbildung für ExpenseIt-Beispiel](~/designers/media/gettingstartedfigure1.png "GettingStartedFigure1")  
   
 6.  Schließen Sie die Anwendung, um zum Entwurfsmodus zurückzukehren.  
   
@@ -313,7 +313,7 @@ ms.lasthandoff: 05/13/2017
   
 3.  Erstellen Sie die Anwendung, und führen Sie sie aus. Die folgende Abbildung zeigt, wie die durch die XAML in diesem Verfahren erstellten Steuerelemente zur Laufzeit dargestellt werden.  
   
-     ![Bildschirmabbildung für ExpenseIt-Beispiel](~/docs/designers/media/gettingstartedfigure2.png "GettingStartedFigure2")  
+     ![Bildschirmabbildung für ExpenseIt-Beispiel](~/designers/media/gettingstartedfigure2.png "GettingStartedFigure2")  
   
 4.  Schließen Sie die Anwendung, um zum Entwurfsmodus zurückzukehren.  
   

@@ -30,7 +30,7 @@ caps.handback.revision: 22
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
 ## Hinzufügen von benutzerdefinierten Aktionen zu einem Formularbereich  
- Fügen Sie einem Formularbereich eine benutzerdefinierte Aktion mithilfe des Dialogfelds **Benutzerdefinierte Aktionen** hinzu.  Sie können das Dialogfeld in **Benutzerdefinierte AktionenProjektmappen\-Explorer** öffnen, indem Sie den Knoten erweitern **Manifest** auswählen, die Eigenschaft **CustomActions**, und dann auf die Schaltfläche mit den Auslassungspunkten \(![Auslassungszeichen im ASP.NET Mobile-Designer](~/docs/sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer")\) klicken.  
+ Fügen Sie einem Formularbereich eine benutzerdefinierte Aktion mithilfe des Dialogfelds **Benutzerdefinierte Aktionen** hinzu.  Sie können das Dialogfeld in **Benutzerdefinierte AktionenProjektmappen\-Explorer** öffnen, indem Sie den Knoten erweitern **Manifest** auswählen, die Eigenschaft **CustomActions**, und dann auf die Schaltfläche mit den Auslassungspunkten \(![Auslassungszeichen im ASP.NET Mobile-Designer](~/sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer")\) klicken.  
   
  Geben Sie im Dialogfeld **Benutzerdefinierte Aktionen** ein *Zielformular* an.  Bei einem Zielformular handelt es sich um das Formular, das beim Ausführen der benutzerdefinierten Aktion angezeigt wird.  
   

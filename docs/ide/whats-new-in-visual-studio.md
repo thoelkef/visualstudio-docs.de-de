@@ -61,7 +61,7 @@ Hier finden Sie weitere Details zu einigen der wichtigsten Änderungen.
 
  Die wichtigste Änderung, die Ihnen beim Installieren von Visual Studio auffallen wird, ist die neue Setupoberfläche. Auf der Registerkarte **Arbeitsauslastungen** sehen Sie gruppierte Installationsoptionen, die allgemeine Frameworks, Sprachen und Plattformen darstellen. Von der .NET-Desktopentwicklung bis zur C++-Anwendungsentwicklung unter Windows, Linux und iOS ist alles abgedeckt.   
 
- ![Visual Studio 2017 Setupdialogfeld](~/docs/install/media/vs2017-workloads.PNG "Visual Studio 2017 Setupbildschirm")
+ ![Visual Studio 2017 Setupdialogfeld](~/install/media/vs2017-workloads.PNG "Visual Studio 2017 Setupbildschirm")
 
 Wählen Sie die benötigten Arbeitsauslastungen, und ändern Sie sie bei Bedarf.
 
@@ -75,12 +75,12 @@ Das neue Leistungscenter von Visual Studio kann Ihnen helfen, die IDE-Startzeit 
 ### <a name="decrease-solution-load-time"></a>Verringern der Ladedauer von Projektmappen
 Das Arbeiten mit Projektmappen, die eine große Anzahl von Projekten enthalten, bedeutet nicht, dass Sie an allen Dateien oder Projekten zugleich arbeiten müssen. Bearbeiten und Debuggen sind jetzt möglich, ohne auf das Laden jedes einzelnen Projekts durch Visual Studio zu warten. Wenn Sie dies mit verwalteten Projekten ausprobieren möchten, aktivieren Sie unter „Extras“ > „Optionen“ > „Projekte und Projektmappen“ den **Lightweight-Ladevorgang für Projektmappen**.
 
-  ![Dialogfeld „Optionen“ in Visual Studio 2017](~/docs/ide/media/vs2017ide-LightweightSolutionLoad.PNG "Visual Studio 2017-Dialogfeld „Optionen“ – Lightweight-Ladevorgang für Projektmappen")
+  ![Dialogfeld „Optionen“ in Visual Studio 2017](~/ide/media/vs2017ide-LightweightSolutionLoad.PNG "Visual Studio 2017-Dialogfeld „Optionen“ – Lightweight-Ladevorgang für Projektmappen")
 
 ### <a name="faster-on-demand-loading-of-extensions"></a>Schnelleres Laden von Erweiterungen bei Bedarf
 Visual Studio verschiebt seine Erweiterungen (und arbeitet auch mit Erweiterungen von Drittanbietern zusammen), damit sie erst bei Bedarf geladen werden, statt gleich beim IDE-Start. Möchten Sie wissen, welche Erweiterungen sich auf den Start, das Laden von Projektmappen und die Leistung bei der Eingabe auswirken? Sie finden diese Informationen unter „Hilfe“ > „Visual Studio-Leistung verwalten“.
 
-  ![Dialogfeld „Optionen“ in Visual Studio 2017](~/docs/ide/media/vs2017ide-manage-vs-perf.png "Visual Studio-Dialogfeld „Hilfe“ – Leistungsverwaltung")
+  ![Dialogfeld „Optionen“ in Visual Studio 2017](~/ide/media/vs2017ide-manage-vs-perf.png "Visual Studio-Dialogfeld „Hilfe“ – Leistungsverwaltung")
 
 ## <a name="productivity-improvements"></a>Produktivitätsverbesserungen
 
@@ -94,18 +94,18 @@ Es ist einfacher, jede Entwicklungsumgebung mit Ihren bevorzugten Erweiterungen 
 
 Um eine Liste Ihrer Erweiterungen in Visual Studio anzuzeigen, klicken Sie auf „Extras“ > „Erweiterungen und Updates“, und klicken Sie dann auf den Roaming-Erweiterungs-Manager.
 
-![Visual Studio 2017 – Dialogfeld „Erweiterungen und Updates“](~/docs/ide/media/vs2017ide-extensions-and-updates.png "Visual Studio 2017 – „Extras“ > Dialogfeld „Erweiterungen und Updates“")
+![Visual Studio 2017 – Dialogfeld „Erweiterungen und Updates“](~/ide/media/vs2017ide-extensions-and-updates.png "Visual Studio 2017 – „Extras“ > Dialogfeld „Erweiterungen und Updates“")
 
 Der Roaming-Erweiterungs-Manager verfolgt alle von Ihnen installierten Erweiterungen nach, Sie können aber wählen, welche Ihrer Roamingliste hinzugefügt werden sollen.
 
-![Visual Studio 2017 – Dialogfeld „Erweiterungen und Updates“](~/docs/ide/media/vs2017ide-RoamingExtensionManager.png "Visual Studio 2017 – Roaming-Erweiterungs-Manager")
+![Visual Studio 2017 – Dialogfeld „Erweiterungen und Updates“](~/ide/media/vs2017ide-RoamingExtensionManager.png "Visual Studio 2017 – Roaming-Erweiterungs-Manager")
 
 Wenn Sie den Roaming-Erweiterungs-Manager verwenden, werden Sie 3 Symboltypen in Ihrer Liste bemerken:
-* ![Symbol für „Roaming erfolgt“](~/docs/ide/media/vs2017ide-roamedicon.png "Symbol für „Roaming erfolgt“") ***Roaming erfolgt***: Eine Erweiterung, die in Ihrer Roamingliste enthalten, auf Ihrem Computer jedoch nicht installiert ist.
+* ![Symbol für „Roaming erfolgt“](~/ide/media/vs2017ide-roamedicon.png "Symbol für „Roaming erfolgt“") ***Roaming erfolgt***: Eine Erweiterung, die in Ihrer Roamingliste enthalten, auf Ihrem Computer jedoch nicht installiert ist.
   (Erweiterungen dieses Typs können Sie mithilfe der Schaltfläche **Download** herunterladen.)
-* ![Symbol für „Roaming und Installation erfolgt“](~/docs/ide/media/vs2017ide-roamedinstalledicon.png "Symbol für „Roaming und Installation erfolgt“") ***Roaming und Installation erfolgt***: Alle Erweiterungen, die Teil dieser Roamingliste und in Ihrer Entwicklungsumgebung installiert sind.
+* ![Symbol für „Roaming und Installation erfolgt“](~/ide/media/vs2017ide-roamedinstalledicon.png "Symbol für „Roaming und Installation erfolgt“") ***Roaming und Installation erfolgt***: Alle Erweiterungen, die Teil dieser Roamingliste und in Ihrer Entwicklungsumgebung installiert sind.
   (Wenn Sie sich gegen das Roaming entscheiden, können Sie zum Entfernen die Schaltfläche **Roaming beenden** verwenden.)
-* ![Symbol für „Installiert“](~/docs/ide/media/vs2017ide-installedicon.png "Symbol für „Installiert“") ***Installiert***: Alle Erweiterungen, die in dieser Umgebung installiert, aber nicht in der Roamingliste enthalten sind.
+* ![Symbol für „Installiert“](~/ide/media/vs2017ide-installedicon.png "Symbol für „Installiert“") ***Installiert***: Alle Erweiterungen, die in dieser Umgebung installiert, aber nicht in der Roamingliste enthalten sind.
   (Sie können der Roamingliste Erweiterungen mithilfe der Schaltfläche **Roaming starten** hinzufügen.)
 
 Alle Erweiterungen, die Sie bei bestehender Anmeldung herunterladen, werden der Liste mit dem Status **Roaming und Installation erfolgt** hinzugefügt. Sie sind also Teil Ihrer Roamingliste, und daher haben Sie von jedem Computer aus darauf Zugriff.
@@ -116,13 +116,13 @@ Visual Studio kann Sie jetzt während der Eingabe von Code im Code-Editor in Ech
 
 Fehler werden in der Fehlerliste angezeigt, und Wellenlinien im Text-Editor zeigen den genauen Ort der Regelverletzung an. Es ist nun unwahrscheinlicher, dass Sie unerwünschte Abhängigkeiten einführen.
 
-![Echtzeitüberprüfung der Architektur](~/docs/ide/media/vs2017ide-LiveArchitectureDepedendencyValidation.png "Echtzeitüberprüfung der Architekturabhängigkeiten")
+![Echtzeitüberprüfung der Architektur](~/ide/media/vs2017ide-LiveArchitectureDepedendencyValidation.png "Echtzeitüberprüfung der Architekturabhängigkeiten")
 
 #### <a name="live-unit-testing"></a>Livekomponententests:
 
 In Visual Studio Enterprise 2017 liefern Ihnen Livekomponententests Livekomponententest-Ergebnisse und Codeabdeckung im Editor währende der Codierung. Dies funktioniert mit C#- und Visual Basic-Projekten für .NET Framework und unterstützt Testframeworks von MSTest, xUnit und NUnit.
 
-![Livekomponententests](~/docs/ide/media/lut-codewindow.png "Ein Beispiel unseres neuen Livekomponententest-Features in der Enterprise Edition von Visual Studio")
+![Livekomponententests](~/ide/media/lut-codewindow.png "Ein Beispiel unseres neuen Livekomponententest-Features in der Enterprise Edition von Visual Studio")
 
 Weitere Informationen finden Sie im Blogbeitrag [Live Unit Testing in Visual Studio 2017 Enterprise (Verwenden von Livekomponententests in Visual Studio 2017 Enterprise Edition)](https://blogs.msdn.microsoft.com/visualstudio/2017/03/09/live-unit-testing-in-visual-studio-2017-enterprise/).
 
@@ -143,12 +143,12 @@ Weitere Informationen finden Sie in unserem Blogbeitrag [Redgate Data Tools in V
 #### <a name="interact-with-git"></a>Interaktion mit Git:
 Wenn Sie in Visual Studio an einem Projekt arbeiten, können Sie Ihren Code für einen Git-Dienst einrichten, ihn schnell dahin übertragen und dort veröffentlichen. Sie können Ihre Git-Repositorys auch mit Menüklicks auf Schaltflächen in der unteren rechten Ecke der IDE verwalten.
 
-![Visual Studio 2017-Dialogfeld zur Interaktion mit Git](~/docs/ide/media/vsIDE-GitInteraction.png "Git-Tools in der Visual Studio-IDE")
+![Visual Studio 2017-Dialogfeld zur Interaktion mit Git](~/ide/media/vsIDE-GitInteraction.png "Git-Tools in der Visual Studio-IDE")
 
 #### <a name="view-and-navigate-code-with-structure-visualizer"></a>Anzeigen von und Navigation in Code mit der Strukturschnellansicht:
 Die Strukturschnellansicht zeichnet Strukturhilfslinien (auch bekannt als  Einzugsführungslinien) in Ihrem Code. Damit können Sie jederzeit ohne zu scrollen visuell darstellen und ermitteln, in welchem Codeblock Sie sich befinden. Wenn Sie den Mauszeiger über die Zeilen bewegen, werden QuickInfos angezeigt, die Ihnen die Öffnung des Blocks und seine übergeordneten Elemente anzeigen. Dies ist sowohl für alle Sprachen verfügbar, die über TextMate-Grammatiken unterstützt werden, als auch für C#, Visual Basic und XAML.
 
-![Visual Studio 2017 Strukturschnellansicht](~/docs/ide/media/vsIDE-StructureVisualizer.png "Strukturschnellansicht in Visual Studio")
+![Visual Studio 2017 Strukturschnellansicht](~/ide/media/vsIDE-StructureVisualizer.png "Strukturschnellansicht in Visual Studio")
 
 #### <a name="experience-improved-navigation-controls"></a>Benutzerfreundlichere Navigationssteuerelemente:
 Wir haben die Benutzerfreundlichkeit der Navigation verbessert, sodass Sie mit größerer Sicherheit und weniger Ablenkung von A nach B gelangen.
@@ -157,11 +157,11 @@ Wir haben die Benutzerfreundlichkeit der Navigation verbessert, sodass Sie mit g
 
 * **Gehe zu allen** (STRG+T oder STRG+,) &ndash; navigieren Sie direkt zu jeder beliebigen Datei-/Typ-/Member-/Symboldeklaration. Sie können die Ergebnisliste filtern oder die Abfragesyntax verwenden (z.B. „f Suchbegriff“ für Dateien, „t Suchbegriff“ für Typen usw.).
 
- ![Verbessertes „Gehe zu allen“](~/docs/ide/media/vs2017ide-navigation-go-to.png "Beispiel für verbesserte „Gehe zu allen“-Funktion")
+ ![Verbessertes „Gehe zu allen“](~/ide/media/vs2017ide-navigation-go-to.png "Beispiel für verbesserte „Gehe zu allen“-Funktion")
 
 * **Alle Verweise suchen (UMSCHALT+F12)** &ndash; mit Syntaxfarbgebung können Sie „Alle Verweise suchen“-Ergebnisse nach einer Kombination aus Projekt, Definition und Pfad gruppieren. Sie können auch Ergebnisse „sperren“, damit Sie die Suche nach anderen Verweisen fortsetzen können, ohne die ursprünglichen Ergebnisse zu verlieren.
 
- ![Neues „Alle Verweise suchen“-Tool](~/docs/ide/media/vs2017ide-find-all-references.png "Beispiel für neues „Alle Verweise suchen“-Tool")
+ ![Neues „Alle Verweise suchen“-Tool](~/ide/media/vs2017ide-find-all-references.png "Beispiel für neues „Alle Verweise suchen“-Tool")
 
 * **Einzugsführungslinien** &ndash; punktierte, graue, vertikale Linien dienen nun als Orientierungshilfen im Code, um Kontext innerhalb Ihres Bezugssystems bereitzustellen. Vielleicht kennen Sie sie von den beliebten Produktivitäts-Power Tools.
 
@@ -180,13 +180,13 @@ Eine vollständige Auflistung der Details finden Sie auf der Seite [Neues für V
 
 Nun können Sie leichter während des Debuggens vorwärts springen, ohne einen Haltepunkt festlegen zu müssen, um in der gewünschten Zeile zu stoppen. Wenn Sie im Debugger angehalten werden, klicken Sie einfach auf das Symbol, das neben der Codezeile angezeigt wird, über der sich die Maus befindet. Die nächste Codeausführung wird nun an dieser Zeile anhalten, sobald sie im Codepfad erreicht wird.
 
-![Visual Studio 2017-Debuggen – Ausführung bis Klick](~/docs/ide/media/vs2017ide-RunToClick.png "Ausführung bis Klick in Visual Studio-Debuggen und Diagnose")
+![Visual Studio 2017-Debuggen – Ausführung bis Klick](~/ide/media/vs2017ide-RunToClick.png "Ausführung bis Klick in Visual Studio-Debuggen und Diagnose")
 
 #### <a name="the-new-exception-helper"></a>Die neue Ausnahmen-Hilfe:
 
 Die neue Ausnahmen-Hilfe hilft Ihnen, Ihre Ausnahmeinformationen auf einen Blick anzeigen. Die Informationen werden in einem kompakten Format mit unmittelbarem Zugriff auf die inneren Ausnahmen angezeigt. Wenn Sie eine NullReferenceException diagnostizieren, können Sie direkt in der Ausnahme-Hilfe schnell sehen, was NULL war.
 
-![Das neue Dialogfeld „Ausnahmehilfsprogramm“ in Visual Studio](~/docs/ide/media/vs2017ide-ExceptionHelper.png "Das neue Dialogfeld „Ausnahmehilfsprogramm“")
+![Das neue Dialogfeld „Ausnahmehilfsprogramm“ in Visual Studio](~/ide/media/vs2017ide-ExceptionHelper.png "Das neue Dialogfeld „Ausnahmehilfsprogramm“")
 
 Weitere Informationen finden Sie im Blogbeitrag [Using the New Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) (Verwenden der neuen Ausnahmen-Hilfe in Visual Studio).
 

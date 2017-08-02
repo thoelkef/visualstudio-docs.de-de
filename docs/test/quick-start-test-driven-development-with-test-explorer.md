@@ -46,7 +46,7 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
 -   Sie können alle benötigten Informationen in einem Fenster anzeigen.  
   
 ## <a name="using-test-explorer"></a>Verwenden des Test-Explorers  
- ![Komponententest-Explorer zeigt die Schaltfläche „Alles ausführen“ an](~/docs/test/media/unittestexplorer-beta-.png "UnitTestExplorer(beta)")  
+ ![Komponententest-Explorer zeigt die Schaltfläche „Alles ausführen“ an](~/test/media/unittestexplorer-beta-.png "UnitTestExplorer(beta)")  
   
 #### <a name="to-run-unit-tests-by-using-test-explorer"></a>So führen Sie Komponententests mithilfe des Test-Explorers aus  
   

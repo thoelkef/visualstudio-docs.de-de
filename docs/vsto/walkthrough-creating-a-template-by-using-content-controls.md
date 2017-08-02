@@ -87,19 +87,19 @@ caps.handback.revision: 42
     > [!NOTE]  
     >  Wenn die Registerkarte **Entwickler** nicht sichtbar ist, müssen Sie diese zuerst anzeigen.  Weitere Informationen finden Sie unter [Gewusst wie: Anzeigen der Registerkarte "Entwickler" auf der Multifunktionsleiste](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-6.  Klicken Sie in der Gruppe **Steuerelemente** auf die Schaltfläche **Text** ![PlainTextContentControl](~/docs/vsto/media/plaintextcontrol.gif "PlainTextContentControl"), um der ersten Zelle <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> hinzuzufügen.  
+6.  Klicken Sie in der Gruppe **Steuerelemente** auf die Schaltfläche **Text** ![PlainTextContentControl](~/vsto/media/plaintextcontrol.gif "PlainTextContentControl"), um der ersten Zelle <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> hinzuzufügen.  
   
 7.  Klicken Sie in die zweite Zelle in der zweiten Spalte \(neben**Hire Date**\).  
   
-8.  Klicken Sie in der Gruppe **Steuerelemente** auf die Schaltfläche **Datumsauswahl** ![DatePickerContentControl](~/docs/vsto/media/datepicker.gif "DatePickerContentControl"), um der zweiten Zelle <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> hinzuzufügen.  
+8.  Klicken Sie in der Gruppe **Steuerelemente** auf die Schaltfläche **Datumsauswahl** ![DatePickerContentControl](~/vsto/media/datepicker.gif "DatePickerContentControl"), um der zweiten Zelle <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> hinzuzufügen.  
   
 9. Klicken Sie in die dritte Zelle in der zweiten Spalte \(neben**Title**\).  
   
-10. Klicken Sie in der Gruppe **Steuerelemente** auf die Schaltfläche **Kombinationsfeld** ![ComboBoxContentControl](~/docs/vsto/media/combobox.gif "ComboBoxContentControl"), um der dritten Zelle <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> hinzuzufügen.  
+10. Klicken Sie in der Gruppe **Steuerelemente** auf die Schaltfläche **Kombinationsfeld** ![ComboBoxContentControl](~/vsto/media/combobox.gif "ComboBoxContentControl"), um der dritten Zelle <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> hinzuzufügen.  
   
 11. Klicken Sie in die letzte Zelle in der zweiten Spalte \(neben**Picture**\).  
   
-12. Klicken Sie in der Gruppe **Steuerelemente** auf die Schaltfläche **Bild\-Inhaltssteuerelement** ![PictureContentControl](~/docs/vsto/media/pictcontentcontrol.gif "PictureContentControl"), um der letzten Zelle <xref:Microsoft.Office.Tools.Word.PictureContentControl> hinzuzufügen.  
+12. Klicken Sie in der Gruppe **Steuerelemente** auf die Schaltfläche **Bild\-Inhaltssteuerelement** ![PictureContentControl](~/vsto/media/pictcontentcontrol.gif "PictureContentControl"), um der letzten Zelle <xref:Microsoft.Office.Tools.Word.PictureContentControl> hinzuzufügen.  
   
 ## Erstellen der Kundenfeedback\-Tabelle  
  Erstellen Sie eine Tabelle, die drei verschiedene Typen von Inhaltssteuerelementen enthält, in der der Benutzer Informationen zu Kundenfeedback eingeben kann.  
@@ -124,15 +124,15 @@ caps.handback.revision: 42
   
 6.  Klicken Sie im Menüband auf die Registerkarte **Entwickler**.  
   
-7.  Klicken Sie in der Gruppe **Steuerelemente** auf die Schaltfläche **Text** ![PlainTextContentControl](~/docs/vsto/media/plaintextcontrol.gif "PlainTextContentControl"), um der ersten Zelle <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> hinzuzufügen.  
+7.  Klicken Sie in der Gruppe **Steuerelemente** auf die Schaltfläche **Text** ![PlainTextContentControl](~/vsto/media/plaintextcontrol.gif "PlainTextContentControl"), um der ersten Zelle <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> hinzuzufügen.  
   
 8.  Klicken Sie in die zweite Zelle der zweiten Spalte \(neben**Satisfaction Rating**\).  
   
-9. Klicken Sie in der Gruppe **Steuerelemente** auf die Schaltfläche **Dropdownliste** ![DropDownListContentControl](~/docs/vsto/media/dropdownlist.gif "DropDownListContentControl"), um der zweiten Zelle <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> hinzuzufügen.  
+9. Klicken Sie in der Gruppe **Steuerelemente** auf die Schaltfläche **Dropdownliste** ![DropDownListContentControl](~/vsto/media/dropdownlist.gif "DropDownListContentControl"), um der zweiten Zelle <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> hinzuzufügen.  
   
 10. Klicken Sie in die letzte Zelle der zweiten Spalte \(neben **Comments**\).  
   
-11. Klicken Sie in der Gruppe **Steuerelemente** auf die Schaltfläche **Rich\-Text** ![RichTextContentControl](~/docs/vsto/media/richtextcontrol.gif "RichTextContentControl"), um der letzten Zelle <xref:Microsoft.Office.Tools.Word.RichTextContentControl> hinzuzufügen.  
+11. Klicken Sie in der Gruppe **Steuerelemente** auf die Schaltfläche **Rich\-Text** ![RichTextContentControl](~/vsto/media/richtextcontrol.gif "RichTextContentControl"), um der letzten Zelle <xref:Microsoft.Office.Tools.Word.RichTextContentControl> hinzuzufügen.  
   
 ## Programmgesteuertes Auffüllen des Kombinationsfelds und der Dropdownliste  
  Sie können Inhaltssteuerelemente zur Entwurfszeit über das Fenster **Eigenschaften** in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] initialisieren.  Sie können sie auch zur Laufzeit initialisieren, wodurch Sie deren Anfangszustände dynamisch festlegen können.  In dieser exemplarischen Vorgehensweise verwenden Sie Code zum Auffüllen der Einträge in <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> und <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> zur Laufzeit, damit Sie sehen können, wie diese Objekte funktionieren.  

@@ -38,7 +38,7 @@ ms.lasthandoff: 07/19/2017
 # <a name="introduction-to-wpf"></a>Einführung in WPF
 Mit Windows Presentation Foundation (WPF) können Sie Desktop-Clientanwendungen für Windows erstellen, die visuell herausragende Benutzeroberflächen haben.  
   
- ![Beispiel der Contoso Healthcare-UI](~/docs/designers/media/wpfintrofigure24.png "WPFIntroFigure24")  
+ ![Beispiel der Contoso Healthcare-UI](~/designers/media/wpfintrofigure24.png "WPFIntroFigure24")  
   
  Der Kern von WPF ist ein auflösungsunabhängiges und vektorbasiertes Renderingmodul, das die Leistungsfähigkeit moderner Grafikhardware nutzt. Dieser Kern wird durch WPF um einen umfassenden Satz von Anwendungsentwicklungsfeatures erweitert, wozu Extensible Application Markup Language (XAML), Steuerelemente, Datenbindung, Layout, 2D- und 3D-Grafik, Animationen, Stile, Vorlagen, Dokumente, Medien, Text und Typographie zählen. Da WPF in .NET Framework enthalten ist, können Sie Anwendungen erstellen, die andere Elemente der .NET Framework-Klassenbibliothek beinhalten.  
   
@@ -81,7 +81,7 @@ Mit Windows Presentation Foundation (WPF) können Sie Desktop-Clientanwendungen 
   
  In der folgenden Abbildung ist die Benutzeroberfläche dargestellt, die durch den XAML-Code im vorherigen Beispiel definiert ist.  
   
- ![Ein Fenster, das eine Schaltfläche enthält](~/docs/designers/media/wpfintrofigure10.png "WPFIntroFigure10")  
+ ![Ein Fenster, das eine Schaltfläche enthält](~/designers/media/wpfintrofigure10.png "WPFIntroFigure10")  
   
  Da XAML auf XML basiert, wird die damit erstellte Benutzeroberfläche in einer Hierarchie geschachtelter Elemente zusammengestellt, die als [Elementstruktur](https://msdn.microsoft.com/en-us/library/ms753391\(v=vs.100\).aspx)bezeichnet wird. Die Elementstruktur stellt eine logische und intuitive Art und Weise zum Erstellen und Verwalten von Benutzeroberflächen bereit.  
   
@@ -158,7 +158,7 @@ End Namespace
   
  In der folgenden Abbildung ist das Ergebnis dargestellt, das nach einem Klicken auf die Schaltfläche zu sehen ist.  
   
- ![Ein Meldungsfeld](~/docs/designers/media/wpfintrofigure25.png "WPFIntroFigure25")  
+ ![Ein Meldungsfeld](~/designers/media/wpfintrofigure25.png "WPFIntroFigure25")  
   
 ##  <a name="Controls"></a> Steuerelemente  
  Die Elemente einer Benutzeroberfläche, die mit dem Anwendungsmodell bereitgestellt werden, sind konstruierte Steuerelemente. In WPF ist „Steuerelement“ ein Sammelbegriff, der sich auf eine Kategorie von WPF-Klassen bezieht, die entweder in einem Fenster oder auf einer Seite gehostet werden, eine Benutzeroberfläche haben und ein bestimmtes Verhalten implementieren.  
@@ -229,7 +229,7 @@ End Namespace
   
  Die folgende Abbildung zeigt das Ergebnis des XAML-Markupcodes im vorangehenden Beispiel.  
   
- ![DockPanel-Seite](~/docs/designers/media/wpfintrofigure11.png "WPFIntroFigure11")  
+ ![DockPanel-Seite](~/designers/media/wpfintrofigure11.png "WPFIntroFigure11")  
   
 ##  <a name="Data_Binding"></a> Datenbindung  
  Die meisten Anwendungen werden erstellt, um Benutzern die Möglichkeit zum Anzeigen und Bearbeiten von Daten bereitzustellen. Bei WPF-Anwendungen wird die Arbeit zum Speichern und Zugreifen auf Daten von Technologien wie Microsoft SQL Server und ADO.NET übernommen. Nachdem auf die Daten zugegriffen wurde und diese in die verwalteten Objekte einer Anwendung geladen wurden, beginnt die harte Arbeit für WPF-Anwendungen. Dies umfasst im Wesentlichen zwei Dinge:  
@@ -276,7 +276,7 @@ End Namespace
 ### <a name="2-d-shapes"></a>2D-Formen  
  Zu WPF gehört eine Bibliothek allgemeiner vektorbasierter 2D-Formen, etwa Rechtecke und Ellipsen, die in der folgenden Abbildung dargestellt sind.  
   
- ![Ellipsen und Rechtecke](~/docs/designers/media/wpfintrofigure4.PNG "WPFIntroFigure4")  
+ ![Ellipsen und Rechtecke](~/designers/media/wpfintrofigure4.PNG "WPFIntroFigure4")  
   
  Eine interessante Fähigkeit von Formen ist, dass sie nicht nur zur Anzeige vorhanden sind, sondern für sie auch viele der Features implementiert sind, die Sie von Steuerelementen erwarten, einschließlich Tastatur- und Mauseingaben. Im folgenden Beispiel wird das <xref:System.Windows.UIElement.MouseUp>-Ereignis einer <xref:System.Windows.Shapes.Ellipse> gezeigt, die verarbeitet wird.  
   
@@ -287,7 +287,7 @@ End Namespace
   
  In der folgenden Abbildung ist das Ergebnis des vorangehenden Codes dargestellt.  
   
- ![Ein Fenster mit dem Text „you clicked the ellipse&#33;“](~/docs/designers/media/wpfintrofigure12.png "WPFIntroFigure12")  
+ ![Ein Fenster mit dem Text „you clicked the ellipse&#33;“](~/designers/media/wpfintrofigure12.png "WPFIntroFigure12")  
   
  Weitere Informationen finden Sie unter [Übersicht über Formen und die grundlegenden Funktionen zum Zeichnen in WPF](https://msdn.microsoft.com/en-us/library/ms747393\(v=vs.100\).aspx).  
   
@@ -298,28 +298,28 @@ End Namespace
   
  <xref:System.Windows.Media.Geometry>-Objekte können zum Ausschneiden, zum Ausführen von Treffertests und zum Rendern von 2D-Grafikdaten verwendet werden.  
   
- ![Verschiedene Einsatzbereiche eines Pfads](~/docs/designers/media/wpfintrofigure5.PNG "WPFIntroFigure5")  
+ ![Verschiedene Einsatzbereiche eines Pfads](~/designers/media/wpfintrofigure5.PNG "WPFIntroFigure5")  
   
  Weitere Informationen finden Sie unter [Übersicht über die Geometrie](https://msdn.microsoft.com/en-us/library/ms751808\(v=vs.100\).aspx).  
   
 ### <a name="2-d-effects"></a>2D-Effekte  
  Eine Teilmenge der 2D-Funktionen von WPF umfasst visuelle Effekte wie Farbverläufe, Bitmaps, Zeichnungen, Zeichnen mit Videos, Drehung, Skalierung und Neigung. Diese Effekte werden mithilfe von Pinseln erzielt. In der folgenden Abbildung sind einige Beispiele gezeigt.  
   
- ![Darstellung unterschiedlicher Pinsel](~/docs/designers/media/wpfintrofigure6.PNG "WPFIntroFigure6")  
+ ![Darstellung unterschiedlicher Pinsel](~/designers/media/wpfintrofigure6.PNG "WPFIntroFigure6")  
   
  Weitere Informationen finden Sie unter [Übersicht über WPF-Pinsel](https://msdn.microsoft.com/en-us/library/aa970904\(v=vs.100\).aspx).  
   
 ### <a name="3-d-rendering"></a>3D-Rendering  
  WPF beinhaltet auch 3D-Renderingfunktionen, die mit der 2D-Grafik kombiniert sind, um noch ansprechendere und interessantere Benutzeroberflächen erstellen zu können. Als Beispiel sind in der folgenden Abbildung 2D-Bilder dargestellt, die auf 3D-Formen gerendert wurden.  
   
- ![Visual3D-Beispielscreenshot](~/docs/designers/media/wpfintrofigure13.png "WPFIntroFigure13")  
+ ![Visual3D-Beispielscreenshot](~/designers/media/wpfintrofigure13.png "WPFIntroFigure13")  
   
  Weitere Informationen finden Sie unter [Übersicht über 3D-Grafiken](https://msdn.microsoft.com/en-us/library/ms747437\(v=vs.100\).aspx).  
   
 ##  <a name="Animation"></a> Animation  
  Die WPF-Animationsunterstützung ermöglicht es Ihnen, Steuerelemente wachsen, bewegen, schütteln sowie ein- und ausblenden zu lassen, um interessante Seitenübergänge zu erstellen, und vieles mehr. Die meisten WPF-Klassen, selbst benutzerdefinierte Klassen, können animiert werden. In der folgenden Abbildung wird eine einfache Animation in Aktion gezeigt.  
   
- ![Bilder eines animierten Würfels](~/docs/designers/media/wpfintrofigure7.png "WPFIntroFigure7")  
+ ![Bilder eines animierten Würfels](~/designers/media/wpfintrofigure7.png "WPFIntroFigure7")  
   
  Weitere Informationen finden Sie unter [Übersicht über Animation](https://msdn.microsoft.com/en-us/library/ms752312\(v=vs.100\).aspx).  
   
@@ -329,7 +329,7 @@ End Namespace
 ### <a name="images"></a>Bilder  
  In den meisten Anwendungen werden Bilder verwendet, und WPF bietet mehrere Möglichkeiten, Bilder zu verwenden. Die folgende Abbildung zeigt eine Benutzeroberfläche mit einem Listenfeld, das Miniaturbilder enthält. Wird eine Miniaturansicht ausgewählt, wird das Bild in voller Größe angezeigt.  
   
- ![Miniaturbilder und ein Vollbild](~/docs/designers/media/wpfintrofigure8.PNG "WPFIntroFigure8")  
+ ![Miniaturbilder und ein Vollbild](~/designers/media/wpfintrofigure8.PNG "WPFIntroFigure8")  
   
  Weitere Informationen finden Sie unter [Übersicht über die Bildverarbeitung](https://msdn.microsoft.com/en-us/library/ms748873\(v=vs.100\).aspx).  
   
@@ -340,7 +340,7 @@ End Namespace
   
  Das Fenster in der folgenden Abbildung zeigt das <xref:System.Windows.Controls.MediaElement>-Steuerelement in Aktion.  
   
- ![Ein MediaElement-Steuerelement mit Audio und Video](~/docs/designers/media/wpfintrofigure1.png "WPFIntroFigure1")  
+ ![Ein MediaElement-Steuerelement mit Audio und Video](~/designers/media/wpfintrofigure1.png "WPFIntroFigure1")  
   
  Weitere Informationen finden Sie unter [Übersicht zu WPF-Grafiken, -Animationen und -Medien](https://msdn.microsoft.com/en-us/library/ms742562\(v=vs.100\).aspx).  
   
@@ -359,7 +359,7 @@ End Namespace
   
  Zur Veranschaulichung der Texteinbindung in Grafiken ist in der folgenden Abbildung die Anwendung von Textdekorationen gezeigt.  
   
- ![Text mit verschiedenen Textergänzungen](~/docs/designers/media/wpfintrofigure23.png "WPFIntroFigure23")  
+ ![Text mit verschiedenen Textergänzungen](~/designers/media/wpfintrofigure23.png "WPFIntroFigure23")  
   
  Weitere Informationen finden Sie unter [Typografie in WPF](https://msdn.microsoft.com/en-us/library/ms742190\(v=vs.100\).aspx).  
   
@@ -379,7 +379,7 @@ End Namespace
   
  Die folgende Abbildung zeigt das Ergebnis.  
   
- ![Ein TextBox-Steuerelement, das Text enthält](~/docs/designers/media/wpfintrofigure21.png "WPFIntroFigure21")  
+ ![Ein TextBox-Steuerelement, das Text enthält](~/designers/media/wpfintrofigure21.png "WPFIntroFigure21")  
   
  Andere Steuerelemente können dagegen mehrere Elemente verschiedener Inhaltstypen enthalten. Der Inhalt eines <xref:System.Windows.Controls.Button>-Steuerelements, der durch die <xref:System.Windows.Controls.ContentControl.Content%2A>-Eigenschaft angegeben ist, kann eine Vielzahl von Elementen enthalten, etwa Layoutsteuerelemente, Text, Bildern und Formen. Das folgende Beispiel zeigt ein <xref:System.Windows.Controls.Button>-Steuerelement mit Inhalt, zu dem ein <xref:System.Windows.Controls.DockPanel>-, ein <xref:System.Windows.Controls.Label>-, ein <xref:System.Windows.Controls.Border>- und ein <xref:System.Windows.Controls.MediaElement>-Objekt gehören.  
   
@@ -389,7 +389,7 @@ End Namespace
   
  In der folgenden Abbildung ist der Inhalt dieser Schaltfläche dargestellt.  
   
- ![Eine Schaltfläche, die mehrere Inhaltstypen enthält](~/docs/designers/media/wpfintrofigure22.png "WPFIntroFigure22")  
+ ![Eine Schaltfläche, die mehrere Inhaltstypen enthält](~/designers/media/wpfintrofigure22.png "WPFIntroFigure22")  
   
  Weitere Informationen zu den Inhaltstypen, die von den verschiedenen Steuerelementen unterstützt werden, finden Sie unter [WPF-Inhaltsmodell](https://msdn.microsoft.com/en-us/library/bb613548\(v=vs.100\).aspx).  
   
@@ -410,12 +410,12 @@ End Namespace
   
  In diesem Beispiel wurde die Standardbenutzeroberfläche der Schaltfläche durch ein <xref:System.Windows.Shapes.Ellipse>-Steuerelement ersetzt, das einen dunkelblauem Rand hat und über ein <xref:System.Windows.Media.RadialGradientBrush>-Steuerelement gefüllt wird. Das <xref:System.Windows.Controls.ContentPresenter> -Steuerelement zeigt den Inhalt des <xref:System.Windows.Controls.Button>-Steuerelements an („Click Me!“). Wenn auf das <xref:System.Windows.Controls.Button> -Steuerelement geklickt wird, wird das <xref:System.Windows.Controls.Primitives.ButtonBase.Click> -Ereignis weiterhin als Teil des Standardverhaltens des <xref:System.Windows.Controls.Button> n-Steuerelements ausgelöst. Das Ergebnis ist in der folgenden Abbildung dargestellt.  
   
- ![Eine Ellipsenschaltfläche und ein zweites Fenster](~/docs/designers/media/wpfintrofigure2.png "WPFIntroFigure2")  
+ ![Eine Ellipsenschaltfläche und ein zweites Fenster](~/designers/media/wpfintrofigure2.png "WPFIntroFigure2")  
   
 ### <a name="data-templates"></a>Datenvorlagen  
  Während Sie mit einer Steuerelementvorlage die Darstellung eines Steuerelements angeben können, können Sie mit einer Datenvorlage die Darstellung des Inhalts eines Steuerelements angeben. Datenvorlagen werden häufig dazu verwendet, die Anzeige gebundener Daten zu verbessern. Die folgende Abbildung zeigt die Standarddarstellung für ein <xref:System.Windows.Controls.ListBox>-Steuerelement, das an eine Auflistung von `Task`-Objekten gebunden ist, wobei jede Aufgabe einen Namen, eine Beschreibung und eine Priorität hat.  
   
- ![Ein Listenfeld mit der Standarddarstellung](~/docs/designers/media/wpfintrofigure18.png "WPFIntroFigure18")  
+ ![Ein Listenfeld mit der Standarddarstellung](~/designers/media/wpfintrofigure18.png "WPFIntroFigure18")  
   
  Die Standarddarstellung entspricht dem, was Sie von einem <xref:System.Windows.Controls.ListBox>-Steuerelement erwarten. Allerdings enthält die Standarddarstellung jeder Aufgabe nur den Aufgabennamen. Um den Aufgabennamen, die Beschreibung und die Priorität anzuzeigen, muss die Standarddarstellung der gebundenen Listenelemente des <xref:System.Windows.Controls.ListBox> -Steuerelements über ein <xref:System.Windows.DataTemplate>-Objekt geändert werden. Im folgenden XAML-Code wird ein solches <xref:System.Windows.DataTemplate>-Objekt definiert, das über das <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A>-Attribut auf jede Aufgabe angewendet wird.  
   
@@ -426,7 +426,7 @@ End Namespace
   
  Die folgende Abbildung zeigt das Ergebnis dieses Codes.  
   
- ![Listenfeld, das eine Datenvorlage verwendet](~/docs/designers/media/wpfintrofigure19.png "WPFIntroFigure19")  
+ ![Listenfeld, das eine Datenvorlage verwendet](~/designers/media/wpfintrofigure19.png "WPFIntroFigure19")  
   
  Beachten Sie, dass das Verhalten und die Gesamtdarstellung des <xref:System.Windows.Controls.ListBox>-Steuerelements beibehalten wurden. Lediglich die Darstellung der vom Listenfeld angezeigten Inhalte wurde geändert.  
   
@@ -442,7 +442,7 @@ End Namespace
   
  Da sich dieser Stil auf alle <xref:System.Windows.Controls.Button>-Steuerelemente bezieht, wird er automatisch auf alle Schaltflächen im Fenster angewendet, wie dies in der folgenden Abbildung zu sehen ist.  
   
- ![Zwei orangefarbene Schaltflächen](~/docs/designers/media/wpfintrofigure20.png "WPFIntroFigure20")  
+ ![Zwei orangefarbene Schaltflächen](~/designers/media/wpfintrofigure20.png "WPFIntroFigure20")  
   
  Weitere Informationen finden Sie unter [Erstellen von Formaten und Vorlagen](https://msdn.microsoft.com/en-us/library/ms745683\(v=vs.100\).aspx).  
   
@@ -507,7 +507,7 @@ End Namespace
   
  Die folgende Abbildung zeigt das `NumericUpDown`-Steuerelement, das in einem <xref:System.Windows.Window>-Element gehostet wird.  
   
- ![Ein benutzerdefiniertes UserControl-Element](~/docs/designers/media/wpfintrofigure3.png "WPFIntroFigure3")  
+ ![Ein benutzerdefiniertes UserControl-Element](~/designers/media/wpfintrofigure3.png "WPFIntroFigure3")  
   
  Weitere Informationen zu benutzerdefinierten Steuerelementen finden Sie unter Er [Übersicht über das Erstellen von Steuerelementen](https://msdn.microsoft.com/en-us/library/ms745025\(v=vs.100\).aspx).  
   

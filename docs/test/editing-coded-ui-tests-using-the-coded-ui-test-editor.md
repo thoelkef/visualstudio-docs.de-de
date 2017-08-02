@@ -106,15 +106,15 @@ Bearbeiten von Steuerelementeigenschaften
  *Was sollte ich noch wissen?*  
  **Tipps**  
   
--   ![Tipp](~/docs/test/media/tip.png "Tip") Wenn das Fenster „Eigenschaften“ nicht angezeigt wird, halten Sie **ALT** gedrückt, und drücken Sie **EINGABE**, oder drücken Sie alternativ **F4**.  
+-   ![Tipp](~/test/media/tip.png "Tip") Wenn das Fenster „Eigenschaften“ nicht angezeigt wird, halten Sie **ALT** gedrückt, und drücken Sie **EINGABE**, oder drücken Sie alternativ **F4**.  
   
--   ![Tipp](~/docs/test/media/tip.png "Tip") Wählen Sie **Rückgängig** aus dem Menü **Bearbeiten** aus, oder drücken Sie STRG+Z, wenn Sie die an den Eigenschaften vorgenommenen Änderungen rückgängig machen möchten.  
+-   ![Tipp](~/test/media/tip.png "Tip") Wählen Sie **Rückgängig** aus dem Menü **Bearbeiten** aus, oder drücken Sie STRG+Z, wenn Sie die an den Eigenschaften vorgenommenen Änderungen rückgängig machen möchten.  
   
--   ![Tipp](~/docs/test/media/tip.png "Tip") Mit der Schaltfläche **Suchen** in der Symbolleiste des Editors für Tests der programmierten UI können Sie das Tool zum Suchen und Ersetzen in Visual Studio öffnen. Anschließend können Sie mit dem Steuerelement „Suchen“ nach einer UI-Aktion im Editor für Tests der programmierten UI suchen. Sie können z.B. die Option „Auf die Schaltfläche ‚Anmelden‘ klicken“ suchen. Dies kann bei umfangreichen Tests hilfreich sein. Beachten Sie, dass Sie die Ersetzungsfunktion nicht im Tool zum Suchen und Ersetzen im Editor für Tests der programmierten UI verwenden können. Weitere Informationen finden Sie unter „Steuerelement Suchen‘“ in [Suchen und Ersetzen von Text](../ide/finding-and-replacing-text.md).  
+-   ![Tipp](~/test/media/tip.png "Tip") Mit der Schaltfläche **Suchen** in der Symbolleiste des Editors für Tests der programmierten UI können Sie das Tool zum Suchen und Ersetzen in Visual Studio öffnen. Anschließend können Sie mit dem Steuerelement „Suchen“ nach einer UI-Aktion im Editor für Tests der programmierten UI suchen. Sie können z.B. die Option „Auf die Schaltfläche ‚Anmelden‘ klicken“ suchen. Dies kann bei umfangreichen Tests hilfreich sein. Beachten Sie, dass Sie die Ersetzungsfunktion nicht im Tool zum Suchen und Ersetzen im Editor für Tests der programmierten UI verwenden können. Weitere Informationen finden Sie unter „Steuerelement Suchen‘“ in [Suchen und Ersetzen von Text](../ide/finding-and-replacing-text.md).  
   
--   ![Tipp](~/docs/test/media/tip.png "Tip") Manchmal kann die Darstellung der Position der Steuerelemente in der Benutzeroberfläche der getesteten Anwendung schwierig sein. Zu den Funktionen des Editors für Tests der programmierten UI zählen die Möglichkeiten zum Auswählen eines Steuerelements, das in der UI-Steuerelementzuordnung aufgeführt ist, und zum Anzeigen der Position in der getesteten Anwendung. [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][Suchen eines UI-Steuerelements in der getesteten Anwendung](#CodedUITestEditor_LocateUIControl) im weiteren Verlauf dieses Themas.  
+-   ![Tipp](~/test/media/tip.png "Tip") Manchmal kann die Darstellung der Position der Steuerelemente in der Benutzeroberfläche der getesteten Anwendung schwierig sein. Zu den Funktionen des Editors für Tests der programmierten UI zählen die Möglichkeiten zum Auswählen eines Steuerelements, das in der UI-Steuerelementzuordnung aufgeführt ist, und zum Anzeigen der Position in der getesteten Anwendung. [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][Suchen eines UI-Steuerelements in der getesteten Anwendung](#CodedUITestEditor_LocateUIControl) im weiteren Verlauf dieses Themas.  
   
--   ![Tipp](~/docs/test/media/tip.png "Tip") Möglicherweise müssen Sie das Containersteuerelement erweitern, das das zu bearbeitende Steuerelement enthält. [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][Suchen eines Steuerelements und seiner Nachfolgerelemente](#CodedUITestEditor_LocateDecendants) im weiteren Verlauf dieses Themas.  
+-   ![Tipp](~/test/media/tip.png "Tip") Möglicherweise müssen Sie das Containersteuerelement erweitern, das das zu bearbeitende Steuerelement enthält. [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][Suchen eines Steuerelements und seiner Nachfolgerelemente](#CodedUITestEditor_LocateDecendants) im weiteren Verlauf dieses Themas.  
   
 ##  <a name="CodedUITestEditor_DeleteUIActions"></a> Unerwünschte UI-Aktionen löschen  
  Sie können unerwünschte UI-Aktionen in dem Test der programmierten UI leicht entfernen.  
@@ -137,13 +137,13 @@ Bearbeiten von Steuerelementeigenschaften
  *Was sollte ich noch wissen?*  
  **Häufige Probleme**  
   
--   ![Symbol „Warnung“](~/docs/test/media/caution.gif "caution") **Warnung:** Wenn eine Methode aufgeteilt wird, müssen Sie den Code ändern, mit dem die vorhandene Methode aufgerufen wird, damit die neue erstellte Methode auch aufgerufen wird, falls Sie die enthaltenen UI-Aktionen weiterhin benötigen. Beim Aufteilen einer Methode wird ein Microsoft Visual Studio-Dialogfeld angezeigt. In diesem werden Sie darauf hingewiesen, dass Sie jeglichen Code ändern müssen, mit dem die vorhandene Methode aufgerufen wird, damit die neue Methode auch aufgerufen wird. Klicken Sie auf **Ja**.  
+-   ![Symbol „Warnung“](~/test/media/caution.gif "caution") **Warnung:** Wenn eine Methode aufgeteilt wird, müssen Sie den Code ändern, mit dem die vorhandene Methode aufgerufen wird, damit die neue erstellte Methode auch aufgerufen wird, falls Sie die enthaltenen UI-Aktionen weiterhin benötigen. Beim Aufteilen einer Methode wird ein Microsoft Visual Studio-Dialogfeld angezeigt. In diesem werden Sie darauf hingewiesen, dass Sie jeglichen Code ändern müssen, mit dem die vorhandene Methode aufgerufen wird, damit die neue Methode auch aufgerufen wird. Klicken Sie auf **Ja**.  
   
  **Tipps**  
   
--   ![Tipp](~/docs/test/media/tip.png "Tip") Wählen Sie zum Rückgängigmachen der Aufteilung **Rückgängig** im Menü **Bearbeiten** aus, oder drücken Sie STRG+Z.  
+-   ![Tipp](~/test/media/tip.png "Tip") Wählen Sie zum Rückgängigmachen der Aufteilung **Rückgängig** im Menü **Bearbeiten** aus, oder drücken Sie STRG+Z.  
   
--   ![Tipp](~/docs/test/media/tip.png "Tip") Sie können die neue Methode umbenennen. Wählen Sie sie im Bereich „UI-Aktionen“, und wählen Sie die Schaltfläche **Umbenennen** in der Symbolleiste des Editors für Tests der programmierten UI.  
+-   ![Tipp](~/test/media/tip.png "Tip") Sie können die neue Methode umbenennen. Wählen Sie sie im Bereich „UI-Aktionen“, und wählen Sie die Schaltfläche **Umbenennen** in der Symbolleiste des Editors für Tests der programmierten UI.  
   
      - oder -  
   
@@ -161,11 +161,11 @@ Bearbeiten von Steuerelementeigenschaften
  *Was sollte ich noch wissen?*  
  **Häufige Probleme**  
   
--   ![Symbol „Warnung“](~/docs/test/media/caution.gif "caution") **Warnung:** Nach dem Verschieben einer Methode kann sie mit dem Editor für Tests der programmierten UI nicht mehr bearbeitet werden. Sie müssen den benutzerdefinierten Code hinzufügen und ihn mit dem Code-Editor verwalten. Beim Verschieben einer Methode wird ein Microsoft Visual Studio-Dialogfeld angezeigt. Sie werden darauf hingewiesen, dass die Methode aus der Datei „UIMap.uitest“ in die Datei „UIMap.cs“ oder „UIMap.vb“ verschoben wird, und dass die Methode mit dem Editor für Tests der programmierten UI nicht mehr bearbeitet werden kann. Klicken Sie auf **Ja**.  
+-   ![Symbol „Warnung“](~/test/media/caution.gif "caution") **Warnung:** Nach dem Verschieben einer Methode kann sie mit dem Editor für Tests der programmierten UI nicht mehr bearbeitet werden. Sie müssen den benutzerdefinierten Code hinzufügen und ihn mit dem Code-Editor verwalten. Beim Verschieben einer Methode wird ein Microsoft Visual Studio-Dialogfeld angezeigt. Sie werden darauf hingewiesen, dass die Methode aus der Datei „UIMap.uitest“ in die Datei „UIMap.cs“ oder „UIMap.vb“ verschoben wird, und dass die Methode mit dem Editor für Tests der programmierten UI nicht mehr bearbeitet werden kann. Klicken Sie auf **Ja**.  
   
  **Tipps**  
   
--   ![Tipp](~/docs/test/media/tip.png "Tip") Wählen Sie zum Rückgängigmachen der Verschiebung **Rückgängig** im Menü **Bearbeiten** aus, oder drücken Sie STRG+Z. Allerdings müssen Sie den Code dann manuell aus der Datei „UIMap.cs“ oder „UIMap.vb“ entfernen.  
+-   ![Tipp](~/test/media/tip.png "Tip") Wählen Sie zum Rückgängigmachen der Verschiebung **Rückgängig** im Menü **Bearbeiten** aus, oder drücken Sie STRG+Z. Allerdings müssen Sie den Code dann manuell aus der Datei „UIMap.cs“ oder „UIMap.vb“ entfernen.  
   
 ##  <a name="CodedUITestEditor_LocateUIControl"></a> Locating a UI Control in the application under test  
  Manchmal kann die Darstellung der Position der Steuerelemente in der Benutzeroberfläche der getesteten Anwendung schwierig sein. Zu den Funktionen des Editors für Tests der programmierten UI zählen die Möglichkeiten zum Auswählen eines Steuerelements, das in der UI-Steuerelementzuordnung aufgeführt ist, und zum Anzeigen der Position in der getesteten Anwendung. Mit der Funktion **UI-Steuerelemente suchen** in der getesteten Anwendung können auch Änderungen der Sucheigenschaften überprüft werden, die an einem Steuerelement vorgenommen wurden.  
@@ -179,11 +179,11 @@ Bearbeiten von Steuerelementeigenschaften
  *Was sollte ich noch wissen?*  
  **Häufige Probleme**  
   
--   ![Symbol „Warnung](~/docs/test/media/caution.gif "caution") **Warnung:** Stellen Sie vor dem Suchen eines UI-Steuerelements sicher, dass die Anwendung mit dem Test ausgeführt wird.  
+-   ![Symbol „Warnung](~/test/media/caution.gif "caution") **Warnung:** Stellen Sie vor dem Suchen eines UI-Steuerelements sicher, dass die Anwendung mit dem Test ausgeführt wird.  
   
  **Tipps**  
   
--   ![Tipp](~/docs/test/media/tip.png "Tip") Sie können auch die Option **Alle suchen** verwenden, um zu überprüfen, ob die Position aller Steuerelemente in einem Container korrekt ermittelt werden kann. Diese Option wird im nächsten Abschnitt beschrieben.  
+-   ![Tipp](~/test/media/tip.png "Tip") Sie können auch die Option **Alle suchen** verwenden, um zu überprüfen, ob die Position aller Steuerelemente in einem Container korrekt ermittelt werden kann. Diese Option wird im nächsten Abschnitt beschrieben.  
   
 ##  <a name="CodedUITestEditor_LocateDecendants"></a> Suchen eines Steuerelements und seiner Nachfolgerelemente  
  Sie können überprüfen, ob alle Steuerelemente in einem Container in der Benutzeroberfläche der getesteten Anwendung ordnungsgemäß ermittelt werden können. Dies kann bei der Überprüfung von Sucheigenschaftenänderungen hilfreich sein, die möglicherweise am Container vorgenommen wurden. Außerdem können Sie bei umfangreichen Änderungen an der Benutzeroberfläche der getesteten Anwendung überprüfen, ob die vorhandenen Eigenschaften für die Steuerelementsuche weiterhin korrekt sind.  
@@ -197,7 +197,7 @@ Bearbeiten von Steuerelementeigenschaften
  *Was sollte ich noch wissen?*  
  **Häufige Probleme**  
   
--   ![Symbol „Warnung“](~/docs/test/media/caution.gif "caution") **Warnung:** Stellen Sie vor dem Suchen der UI-Steuerelemente sicher, dass die Anwendung mit dem Test ausgeführt wird.  
+-   ![Symbol „Warnung“](~/test/media/caution.gif "caution") **Warnung:** Stellen Sie vor dem Suchen der UI-Steuerelemente sicher, dass die Anwendung mit dem Test ausgeführt wird.  
   
 ##  <a name="CodedUITestEditor_InsertDelay"></a> Einfügen einer Verzögerung vor einer UI-Aktion  
  Gelegentlich soll der Test möglicherweise auf bestimmte Ereignisse warten, z. B. das Anzeigen eines Fensters, das Ausblenden einer Statusleiste usw. Mit dem Editor für Tests der programmierten UI können Sie zu diesem Zweck vor einer UI-Aktion eine Verzögerung einfügen. Sie können angeben, wie viele Sekunden die Verzögerung dauern soll.  
@@ -213,11 +213,11 @@ Bearbeiten von Steuerelementeigenschaften
  *Was sollte ich noch wissen?*  
  **Notizen**  
   
--   ![Erforderliche Komponente](~/docs/test/media/prereq.png "Prereq") Wenn ein bestimmtes Steuerelement vor einer UI-Aktion verfügbar sein muss, sollten Sie mit der entsprechenden UITestControl.WaitForControlXXX-Methode ggf. benutzerdefinierten Code zur Testmethode hinzufügen. [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][Festlegen, dass bei Wiedergabe von Tests der programmierten UI auf bestimmte Ereignisse gewartet wird](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)  
+-   ![Erforderliche Komponente](~/test/media/prereq.png "Prereq") Wenn ein bestimmtes Steuerelement vor einer UI-Aktion verfügbar sein muss, sollten Sie mit der entsprechenden UITestControl.WaitForControlXXX-Methode ggf. benutzerdefinierten Code zur Testmethode hinzufügen. [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][Festlegen, dass bei Wiedergabe von Tests der programmierten UI auf bestimmte Ereignisse gewartet wird](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)  
   
  **Tipps**  
   
--   ![Tipp](~/docs/test/media/tip.png "Tip") Wenn das Fenster „Eigenschaften“ nicht angezeigt wird, halten Sie ALT gedrückt und drücken Sie EINGABE, oder drücken Sie alternativ F4.  
+-   ![Tipp](~/test/media/tip.png "Tip") Wenn das Fenster „Eigenschaften“ nicht angezeigt wird, halten Sie ALT gedrückt und drücken Sie EINGABE, oder drücken Sie alternativ F4.  
   
 ## <a name="external-resources"></a>Externe Ressourcen  
   

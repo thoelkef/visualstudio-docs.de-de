@@ -39,7 +39,7 @@ ms.lasthandoff: 02/22/2017
 # <a name="create-dependency-diagrams-from-your-code"></a>Erstellen Sie Abhängigkeitsdiagramme aus dem code
 Um das Softwaresystem hochrangige, logische Architektur zu visualisieren, erstellen eine *Abhängigkeitsdiagramm* in Visual Studio. Um sicherzustellen, dass Ihr Code und Entwurf konsistent bleibt, können überprüfen Sie Ihren Code mit einem Abhängigkeitsdiagramm. Sie können Abhängigkeitsdiagramme für Visual c# .NET und Visual Basic-Projekte erstellen. Welche Versionen von Visual Studio dieses Feature unterstützen, finden Sie unter [versionsunterstützung für Architektur- und Modellierungstools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
   
- ![Erstellen Sie ein Abhängigkeitsdiagramm](~/docs/modeling/media/layerdiagramvisualizecode.png "LayerDiagramVisualizeCode")  
+ ![Erstellen Sie ein Abhängigkeitsdiagramm](~/modeling/media/layerdiagramvisualizecode.png "LayerDiagramVisualizeCode")  
   
  Ein Abhängigkeitsdiagramm können Sie die Visual Studio-Projektmappenelemente in logischen, abstrakten Gruppen, genannt organisieren *Ebenen*. Sie können die Ebenen zum Beschreiben der Hauptaufgaben, die von diesen Artefakten ausgeführt werden, oder zum Beschreiben der Hauptkomponenten des Systems verwenden. Jede Ebene kann andere Ebenen enthalten, die ausführlichere Aufgaben beschreiben. Sie können auch angeben, die vorgesehenen oder vorhandenen *Abhängigkeiten* zwischen Ebenen. Diese als Pfeile dargestellten Abhängigkeiten geben an, welche Ebenen die Funktionen verwenden können bzw. welche Ebenen die Funktionen derzeit verwenden, die durch andere Ebenen dargestellt werden. Geben Sie die beabsichtigten Abhängigkeiten im Diagramm an, um die Architektursteuerung für den Code beizubehalten, und überprüfen Sie anschließend den Code anhand des Diagramms.  
   
@@ -88,7 +88,7 @@ Um das Softwaresystem hochrangige, logische Architektur zu visualisieren, erstel
 
 7. Dies zeigt die aktuelle app-Architektur. Entscheiden, was die Architektur, und ändern Sie das Abhängigkeitsdiagramm entsprechend.
 
-![Abhängigkeitsdiagramm aus einer Code Map generiert](~/docs/modeling/media/dependency-validation-01.png)
+![Abhängigkeitsdiagramm aus einer Code Map generiert](~/modeling/media/dependency-validation-01.png)
   
 ##  <a name="a-namecreatelayersa-create-layers-from-artifacts"></a><a name="CreateLayers"></a>Ebenen aus Artefakten erstellen  
  Ebenen können aus Visual Studio-Projektmappenelementen erstellt werden, z. B. Projekte, Codedateien, Namespaces, Klassen und Methoden. Dabei werden Verknüpfungen zwischen den Ebenen und den Elementen automatisch erstellt und im Ebenenvalidierungsprozess berücksichtigt.  

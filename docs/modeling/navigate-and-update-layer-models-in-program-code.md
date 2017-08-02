@@ -135,7 +135,7 @@ public void ... (...)
     if (element != null) ... }}  
 ```  
   
- ![Jedes ILayerElement wird durch eine IShape angegeben. ] (~/docs/modeling/media/layerapi_shapes.png "LayerApi_Shapes")  
+ ![Jedes ILayerElement wird durch eine IShape angegeben. ] (~/modeling/media/layerapi_shapes.png "LayerApi_Shapes")  
   
  <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape>und <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram>werden auch zum Anzeigen von UML-Modellen verwendet.</xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram></xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape> Weitere Informationen finden Sie unter [anzeigen ein UML-Modells in Diagrammen](../modeling/display-a-uml-model-on-diagrams.md).  
   

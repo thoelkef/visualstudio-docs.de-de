@@ -128,7 +128,7 @@ caps.handback.revision: 58
   
      Die folgende Abbildung zeigt die Struktur des Veröffentlichungsordners für ein Outlook VSTO\-Add\-In.  
   
-     ![Struktur des Veröffentlichungsordners](~/docs/vsto/media/publishfolderstructure.png "Struktur des Veröffentlichungsordners")  
+     ![Struktur des Veröffentlichungsordners](~/vsto/media/publishfolderstructure.png "Struktur des Veröffentlichungsordners")  
   
     > [!NOTE]  
     >  ClickOnce hängt an Assemblys die Erweiterung ".deploy" an, damit eine gesicherte Installation von Internetinformationsdiensten \(IIS\) die Dateien nicht aufgrund einer unsicheren Dateinamenerweiterung blockiert.  Wenn der Benutzer die Projektmappe installiert, entfernt ClickOnce die Erweiterung ".deploy".  
@@ -451,7 +451,7 @@ caps.handback.revision: 58
   
      Die folgende Abbildung zeigt die Struktur des Veröffentlichungsordners in diesem Beispiel.  
   
-     ![Struktur des Veröffentlichungsordners](~/docs/vsto/media/publishfolderstructure.png "Struktur des Veröffentlichungsordners")  
+     ![Struktur des Veröffentlichungsordners](~/vsto/media/publishfolderstructure.png "Struktur des Veröffentlichungsordners")  
   
      Wenn ein Benutzer das nächste Mal die Anwendung oder das benutzerdefinierte Dokument öffnet, wird die Änderung des Bereitstellungsmanifests erkannt.  Die frühere Version der Office\-Projektmappe wird vom ClickOnce\-Cache ausgeführt.  
   

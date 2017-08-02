@@ -147,7 +147,7 @@ Visual Studio bietet Unterstützung für Komponententests verwalteter [!INCLUDE[
     >   
     >  Außerdem können Sie die Optionen **Ausgewählte Tests debuggen**, **Test öffnen**und **Eigenschaften** auswählen.  
     >   
-    >  ![Komponententest-Explorer &#45; Komponententest-Kontextmenü](~/docs/test/media/unit_test_win8_unittestexplorer_contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")  
+    >  ![Komponententest-Explorer &#45; Komponententest-Kontextmenü](~/test/media/unit_test_win8_unittestexplorer_contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")  
   
      Der Komponententest läuft. Nach Abschluss zeigt der Komponententest-Explorer den Teststatus und die verstrichene Zeit an und stellt einen Link zur Quelle bereit.  
   

@@ -47,7 +47,7 @@ caps.handback.revision: 31
 > [!NOTE]  
 >  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio\-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/de-de/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
- ![Link zu Video](~/docs/data-tools/media/playvideo.gif "Link zu Video") Ein entsprechendes Video zur Veranschaulichung finden Sie unter [Gewusst wie: Erstellen von Outlook\-Formularbereichen mit Visual Studio 2008](http://go.microsoft.com/fwlink/?LinkID=130305).  
+ ![Link zu Video](~/data-tools/media/playvideo.gif "Link zu Video") Ein entsprechendes Video zur Veranschaulichung finden Sie unter [Gewusst wie: Erstellen von Outlook\-Formularbereichen mit Visual Studio 2008](http://go.microsoft.com/fwlink/?LinkID=130305).  
   
 ## Entwerfen eines Formularbereichs mithilfe des Formularbereich\-Designers in Outlook  
  In diesem Schritt entwerfen Sie einen Formularbereich in Outlook. Anschließend speichern Sie den Formularbereich an einem leicht zugänglichen Speicherort, damit dieser in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] importiert werden kann.  

@@ -47,7 +47,7 @@ caps.handback.revision: 65
   
  Dieses Thema enthält eine kurze Übersicht über das Excel\-Objektmodell.  Informationen zu Ressourcen, in denen Sie mehr über das gesamte Excel\-Objektmodell erfahren, finden Sie unter [Verwenden der Dokumentation zum Excel\-Objektmodell](#ExcelOMDocumentation).  
   
- ![Link zu Video](~/docs/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie unter [Gewusst wie: Verwenden von Ereignishandlern in einem Excel 2007 Add\-In](http://go.microsoft.com/fwlink/?LinkID=130291) und [Gewusst wie: Verwenden von Formen zum Erstellen eines Blasendiagramms in Excel](http://go.microsoft.com/fwlink/?LinkID=130313).  
+ ![Link zu Video](~/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie unter [Gewusst wie: Verwenden von Ereignishandlern in einem Excel 2007 Add\-In](http://go.microsoft.com/fwlink/?LinkID=130291) und [Gewusst wie: Verwenden von Formen zum Erstellen eines Blasendiagramms in Excel](http://go.microsoft.com/fwlink/?LinkID=130313).  
   
 ## Zugreifen auf Objekte in einem Excel\-Projekt  
  Beim Erstellen eines neuen VSTO\-Add\-In\-Projekts erstellt Visual Studio automatisch die Codedatei „ThisAddIn.vb“ oder „ThisAddIn.cs“.  Sie können mithilfe von `Me.Application` oder `this.Application` auf das Anwendungsobjekt zugreifen.  

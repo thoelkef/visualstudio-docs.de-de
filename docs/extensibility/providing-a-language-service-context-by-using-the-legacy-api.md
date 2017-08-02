@@ -43,7 +43,7 @@ Es gibt zwei Möglichkeiten, damit ein Sprachdienst Benutzerkontext mit dem [!IN
   
  Das folgende Diagramm zeigt, wie der Kontext für einen Sprachdienst bereitgestellt wird, der `IVsLanguageContextProvider`implementiert.  
   
- ![LangServiceImplementation2&#45;Grafik](~/docs/extensibility/media/vslanguageservice2.gif "vsLanguageService2")  
+ ![LangServiceImplementation2&#45;Grafik](~/extensibility/media/vslanguageservice2.gif "vsLanguageService2")  
 Kontext für einen Sprachdienst  
   
  Wie Sie im Diagramm finden können, hat der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Kern text\-editor einen Kontext, der behälter daran angefügt wird.  Punkte dieses Kontexts behälters zu drei verschiedenen Unterkontext behältern: Sprachdienst, Standard\-Editor und Textmarkierung.  Die Sprachendienst\- und Textmarkierungs unterkontext behälter enthalten Attribute und Schlüsselwörter für den Sprachdienst, wenn die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>\-Schnittstelle implementiert wird, und die Textmarkierungen, wenn die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider>\-Schnittstelle implementiert wird.  Wenn Sie einem dieser Schnittstellen implementieren, stellt der Editor Kontext für das Schlüsselwort an der Cursorposition im Unterkontext behälter des standardmäßigen Editor bereit.  

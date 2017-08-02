@@ -70,7 +70,7 @@ Verglichen mit einem Zertifikat von einer vertrauenswürdigen Zertifizierungsste
 
 Aus diesem Grund gibt RTVS immer die folgende Warnung aus, wenn eine Verbindung mit einem Server mit einem selbstsignierten Zertifikat hergestellt wird:
 
-![Dialogfeld „Warnung zu selbstsigniertem Zertifikat“](~/docs/rtvs/media/workspaces-remote-self-signed-certificate-warning.png)
+![Dialogfeld „Warnung zu selbstsigniertem Zertifikat“](~/rtvs/media/workspaces-remote-self-signed-certificate-warning.png)
 
 So erstellen Sie ein selbstsigniertes Zertifikat
 
@@ -93,7 +93,7 @@ Hintergrundinformationen finden Sie auf Wikipedia unter [Self-signed certificate
 
 Um das Zertifikat auf dem Remotecomputer zu installieren, führen Sie `certlm.msc` (Zertifikat-Manager) über eine Befehlszeile aus. Klicken Sie mit der rechten Maustaste auf den Ordner **Eigene Zertifikate**, und wählen Sie den Befehl **Alle Aufgaben > Import** aus:
 
-![Befehl „Zertifikat importieren“](~/docs/rtvs/media/workspaces-remote-certificate-import.png)
+![Befehl „Zertifikat importieren“](~/rtvs/media/workspaces-remote-certificate-import.png)
 
 
 ### <a name="granting-permissions-to-read-the-ssl-certificates-private-key"></a>Gewähren von Leseberechtigungen für den privaten Schlüssel des SSL-Zertifikats
@@ -105,7 +105,7 @@ Sobald das Zertifikat importiert wurde, gewährt das `NETWORK SERVICE`-Konto Les
 1. Klicken Sie mit der rechten Maustaste auf das Zertifikat, und wählen Sie unter „Alle Aufgaben“ den Befehl „Private Schlüssel verwalten“ aus.
 1. Wählen Sie im sich daraufhin öffnenden Dialogfeld **Hinzufügen** aus, und geben Sie `NETWORK SERVICE` als Kontoname ein:
 
-    ![Dialogfeld „Private Schlüssel verwalten“, NETWORK_SERVICE wird hinzugefügt](~/docs/rtvs/media/workspaces-remote-manage-private-key-dialog.png)
+    ![Dialogfeld „Private Schlüssel verwalten“, NETWORK_SERVICE wird hinzugefügt](~/rtvs/media/workspaces-remote-manage-private-key-dialog.png)
 
 1. Wählen Sie **OK** zweimal aus, um die Dialogfelder zu schließen und die Änderungen zu übernehmen.
 

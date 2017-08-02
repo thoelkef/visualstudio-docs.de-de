@@ -23,7 +23,7 @@ caps.handback.revision: 15
 # Ausf&#252;hren von Windows Store-Apps auf einem lokalen Computer
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Gilt nur für Windows](~/docs/debugger/media/windows_only_content.png "windows\_only\_content")  
+![Gilt nur für Windows](~/debugger/media/windows_only_content.png "windows\_only\_content")  
   
  Zum Debuggen, Testen oder Durchführen einer Leistungsanalyse für eine Windows Store\-App können Sie die App auf demselben Computer ausführen, auf dem Visual Studio gehostet wird.  Falls das Geräte\-Display ein Touchscreen ist, können Sie alle Funktionen der App ausführen; andernfalls sind Sie auf Tastatur\- und Mausgesten beschränkt.  
   

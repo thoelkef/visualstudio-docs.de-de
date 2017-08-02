@@ -43,7 +43,7 @@ In diesem Schritt wird gezeigt, wie Code geschrieben wird, damit die Schaltfläc
   
  Die IDE stellt ein leistungsstarkes Tool namens IntelliSense bereit, das Sie beim Schreiben von Code unterstützt. Wenn Sie Code eingeben, öffnet die IDE ein Feld mit Vervollständigungsvorschlägen für teilweise eingegebene Wörter. Die IDE versucht zu bestimmen, was Sie als Nächstes machen möchten, und springt automatisch zum zuletzt in der Liste auswählten Element. Sie können mithilfe der NACH-OBEN- oder NACH-UNTEN-TASTE in der Liste navigieren oder die Eingabe von Buchstaben fortsetzen, um die Optionen einzugrenzen. Wenn Sie die gewünschte Auswahl sehen, verwenden Sie die TAB-TASTE, um sie auszuwählen. Sie können die Vorschläge aber auch ignorieren, wenn sie nicht benötigt werden.  
   
- ![Link zum Video](~/docs/data-tools/media/playvideo.gif "Video wiedergeben")Eine Videoversion dieses Themas finden Sie im Video 4 zum [Tutorial 1: Erstellen eines Bildanzeigeprogramms in Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205215) oder im Video 4 zum [Tutorial 1: Erstellen eines Bildanzeigeprogramms in C# – Video 4](http://go.microsoft.com/fwlink/?LinkId=205203). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.  
+ ![Link zum Video](~/data-tools/media/playvideo.gif "Video wiedergeben")Eine Videoversion dieses Themas finden Sie im Video 4 zum [Tutorial 1: Erstellen eines Bildanzeigeprogramms in Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205215) oder im Video 4 zum [Tutorial 1: Erstellen eines Bildanzeigeprogramms in C# – Video 4](http://go.microsoft.com/fwlink/?LinkId=205203). Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können. Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.  
   
 ### <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>So schreiben Sie Code für den Ereignishandler der Schaltfläche "Bild anzeigen"  
   
@@ -56,7 +56,7 @@ IntelliSense mit Visual C#-Code
   
 3.  Im **IntelliSense**-Fenster sollte das Wort **if** markiert sein. (Ist dies nicht der Fall, geben Sie den Kleinbuchstaben `f` ein, dann wird das Wort markiert.) Beachten Sie, dass ein kleines *QuickInfo*-Feld neben dem **IntelliSense**-Fenster mit der Beschreibung **Codeausschnitt für if-Anweisung** angezeigt wird. (In Visual Basic zeigt die QuickInfo auch an, dass es sich um einen Codeausschnitt handelt, aber mit einem etwas anderen Wortlaut.) Wenn Sie diesen Ausschnitt verwenden möchten, drücken Sie die TAB-TASTE, um **if** in den Code einzufügen. Drücken Sie dann erneut die TAB-TASTE, um den Codeausschnitt für die **if**-Anweisung zu verwenden. (Wenn Sie eine andere Stelle ausgewählt haben und das **IntelliSense**-Fenster nicht mehr angezeigt wird, verwenden Sie die RÜCKTASTE, um das **i** zu löschen. Geben Sie den Buchstaben „i“ erneut ein, um das **IntelliSense**-Fenster wieder zu öffnen.)  
   
-     ![Visual C&#35;-Code](~/docs/ide/media/express_highlighttrue.png "Express_HighlightTrue")  
+     ![Visual C&#35;-Code](~/ide/media/express_highlighttrue.png "Express_HighlightTrue")  
 Visual C#-Code  
   
 4.  Als Nächstes verwenden Sie IntelliSense, um weiteren Code einzugeben, mit dem das Dialogfeld **Datei öffnen** geöffnet wird. Wenn der Benutzer die Schaltfläche **OK** auswählt, lädt PictureBox die Datei, die der Benutzer ausgewählt hat. Die folgenden Schritte zeigen, wie der Code eingegeben wird. Obwohl dies zahlreiche Schritte umfasst, sind nur einige Tastaturanschläge erforderlich:  
@@ -72,13 +72,13 @@ Visual C#-Code
         > [!NOTE]
         >  Im **IntelliSense**-Fenster werden sowohl Eigenschaften als auch Methoden angezeigt. Um zu bestimmen, was angezeigt wird, betrachten Sie das Symbol auf der linken Seite jedes Elements im Fenster **IntelliSense**. Neben jeder Methode wird ein Bild eines Blocks und neben jeder Eigenschaft ein Schraubenschlüssel (oder Maulschlüssel) angezeigt. Zudem wird neben jedem Ereignis ein Blitzsymbol angezeigt. Diese Symbole sehen wie folgt aus.  
   
-         ![Methodensymbol](~/docs/ide/media/express_iconmethod.png "Express_IconMethod")  
+         ![Methodensymbol](~/ide/media/express_iconmethod.png "Express_IconMethod")  
 Methodensymbol  
   
-         ![Eigenschaftssymbol](~/docs/ide/media/express_iconproperty.png "Express_IconProperty")  
+         ![Eigenschaftssymbol](~/ide/media/express_iconproperty.png "Express_IconProperty")  
 Eigenschaftssymbol  
   
-         ![Ereignissymbol](~/docs/ide/media/express_iconevent.png "Express_IconEvent")  
+         ![Ereignissymbol](~/ide/media/express_iconevent.png "Express_IconEvent")  
 Ereignissymbol  
   
     4.  Beginnen Sie mit der Eingabe von `ShowDialog` (die Großschreibung ist in IntelliSense nicht relevant). Die `ShowDialog()`-Methode zeigt das Dialogfeld **Datei öffnen** an. Drücken Sie die TAB-TASTE, nachdem **ShowDialog** im Fenster hervorgehoben wurde. Sie können „ShowDialog“ auch markieren und F1 auswählen, um dazu Hilfe abzurufen.  

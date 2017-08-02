@@ -38,7 +38,7 @@ ms.lasthandoff: 05/13/2017
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Entwickeln von Apps für die universelle Windows-Plattform (UWP)
 Mit der universellen Windows-Plattform und unserem zentralen Windows-Kern können Sie die gleiche App auf jedem Windows 10-Gerät ausführen, von Smartphones bis zu Desktop-PCs. Erstellen Sie diese universellen Windows-Apps mit Visual Studio 2015 und den universellen Windows-App-Entwicklungstools.  
   
- ![Universelle Windows-Plattform](~/docs/cross-platform/media/uwp_coreextensions.png "UWP_CoreExtensions")  
+ ![Universelle Windows-Plattform](~/cross-platform/media/uwp_coreextensions.png "UWP_CoreExtensions")  
   
  Führen Sie Ihre App auf einem Windows 10-Phone, Windows 10-Desktop oder einer Xbox aus. Es ist das gleiche App-Paket. Mit der Einführung eines einzelnen, einheitlichen Windows 10-Kerns kann ein App-Paket auf allen Plattformen ausgeführt werden. Mehrere Plattformen verfügen über Erweiterungs-SDKs, die Sie zu Ihrer App hinzufügen können, um die Vorteile bestimmter plattformspezifischer Verhaltensweisen zu nutzen. Mit dem Erweiterungs-SDK für Mobilgeräte wird z. B. die auf einem Windows Phone gedrückte ZURÜCK-Taste behandelt. Wenn Sie in Ihrem Projekt auf ein Erweiterungs-SDK verweisen, fügen Sie einfach Laufzeitüberprüfungen hinzu, um zu prüfen, ob dieses SDK für diese Plattform verfügbar ist. Auf dieses Weise können Sie das gleiche App-Paket für alle Plattformen verwenden.  
   

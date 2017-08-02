@@ -84,18 +84,18 @@ Um das Fenster „Python-Umgebungen“ zu öffnen, führen Sie einen der folgend
 1. Wählen Sie den Menübefehl **Ansicht > Weitere Fenster > Python-Umgebungen** aus.
 1. Klicken Sie für ein Projekt im Projektmappen-Explorer mit der rechten Maustaste auf **Python-Umgebungen**, und wählen Sie **Alle Python-Umgebungen anzeigen** aus:
 
-    ![Befehl „Alle Umgebungen anzeigen“ im Projektmappen-Explorer](~/docs/python/media/environments-view-all.png)
+    ![Befehl „Alle Umgebungen anzeigen“ im Projektmappen-Explorer](~/python/media/environments-view-all.png)
     
 In jedem Fall wird das Fenster „Python-Umgebungen“ als gleichgeordnete Registerkarte des Projektmappen-Explorers angezeigt:
 
-![Fenster „Python-Umgebungen“](~/docs/python/media/environments-default-view.png)
+![Fenster „Python-Umgebungen“](~/python/media/environments-default-view.png)
 
 Im Beispiel oben ist Python 3.4 (32-Bit-CPython) zusammen mit den 32- und 64-Bit-Versionen von IronPython 2.7 installiert. In diesem Fall ist die Standardumgebung in Fettdruck Python 3.4, die für alle neuen Projekte verwendet wird. Wenn keine Umgebungen angezeigt werden, bedeutet dies, dass Sie Python-Tools für Visual Studio in Visual Studio 2015 oder früher installiert haben, aber noch keinen Python-Interpreter (siehe [Auswählen und Installieren von Python-Interpretern](#selecting-and-installing-python-interpreters) oben). 
 
 > [!Tip]
 > Wenn das Fenster **Python-Umgebungen* schmal ist, wie oben dargestellt ist, werden die Umgebungen oben und die verschiedenen Registerkarten unten aufgeführt. Wenn Sie das Fenster jedoch ausreichend erweitern, sehen Sie eine breite Ansicht, in der Sie möglicherweise bequemer arbeiten können.
 >
-> ![Erweiterte Ansicht des Fensters „Python-Umgebungen“](~/docs/python/media/environments-expanded-view.png)
+> ![Erweiterte Ansicht des Fensters „Python-Umgebungen“](~/python/media/environments-expanded-view.png)
 
 > [!Note]
 > Obwohl Visual Studio die Option „system-site-packages“ beachtet, gibt es keine Möglichkeit, sie in Visual Studio zu ändern.
@@ -106,7 +106,7 @@ Visual Studio sucht normalerweise in der Registrierung nach einem installierten 
 
 1. Wählen Sie im Fenster „Python-Umgebungen“ **+ Benutzerdefiniert** aus. Damit wird eine neue Umgebung erstellt, und die [Registerkarte **Konfigurieren**](#configure-tab) wird geöffnet, die weiter unten beschrieben wird.
 
-    ![Standardansicht für eine neue benutzerdefinierte Umgebung](~/docs/python/media/environments-custom-1.png)
+    ![Standardansicht für eine neue benutzerdefinierte Umgebung](~/python/media/environments-custom-1.png)
 
 1. Geben Sie einen Namen für die Umgebung in das Feld **Beschreibung** ein.
 1. Geben Sie den Pfad des Interpreters in das Feld **Präfixpfad** ein, oder navigieren Sie dahin.
@@ -118,7 +118,7 @@ Visual Studio sucht normalerweise in der Registrierung nach einem installierten 
 
 Enthält grundlegende Informationen und Befehle für die Umgebung. Sie können sie z.B. als Standard festlegen, ein [interaktives (REPL) Fenster](interactive-repl.md) mit der Umgebung öffnen und zu dem Dialogfeld springen, in dem Sie das interaktive Fenster konfigurieren (identisch mit dem Menübefehl **Extras > Optionen**, Auswählen von **Python-Tools > Interaktive Fenster** und des Namens der Umgebung).
 
-![Registerkarte „Übersicht“ von Python-Umgebungen](~/docs/python/media/environments-overview-tab.png)
+![Registerkarte „Übersicht“ von Python-Umgebungen](~/python/media/environments-overview-tab.png)
 
 > [!Note]
 > Durch Ändern der aktiven Umgebung reagiert Visual Studio möglicherweise kurz nicht mehr, während die IntelliSense-Datenbank geladen wird. Umgebungen mit vielen Paketen reagieren möglicherweise längere Zeit nicht mehr.
@@ -127,7 +127,7 @@ Enthält grundlegende Informationen und Befehle für die Umgebung. Sie können s
 
 Wenn sie angezeigt wird, enthält sie Details, wie die in der folgenden Tabelle beschriebenen. Wenn diese Registerkarte nicht vorhanden ist, bedeutet dies, dass alle Details von Visual Studio automatisch verwaltet werden.
 
-![Registerkarte „Konfigurieren“ von Python-Umgebungen](~/docs/python/media/environments-configure-tab.png)
+![Registerkarte „Konfigurieren“ von Python-Umgebungen](~/python/media/environments-configure-tab.png)
 
 | Feld | Beschreibung |
 | --- | --- |
@@ -144,13 +144,13 @@ Wenn sie angezeigt wird, enthält sie Details, wie die in der folgenden Tabelle 
 
 Verwaltet die in der Umgebung installierten Pakete und ermöglicht Ihnen auch, neue Pakete zu suchen und zu installieren (einschließlich der Abhängigkeiten). Beim Suchen werden die installierten Pakete gefiltert und [PyPI](https://pypi.python.org) wird durchsucht. Sie können auch einen `pip install`-Befehl direkt in das Suchfeld eingeben, einschließlich der Flags wie z.B. `--user` oder `--no-deps`.
 
-![Registerkarte „pip“ von Python-Umgebungen](~/docs/python/media/environments-pip-tab.png)
+![Registerkarte „pip“ von Python-Umgebungen](~/python/media/environments-pip-tab.png)
 
 ### <a name="intellisense-tab"></a>Registerkarte „IntelliSense“
 
 Zeigt den aktuellen Status der IntelliSense-Vervollständigungsdatenbank:
 
-![Registerkarte „IntelliSense“ von Python-Umgebungen](~/docs/python/media/environments-intellisense-tab.png)
+![Registerkarte „IntelliSense“ von Python-Umgebungen](~/python/media/environments-intellisense-tab.png)
 
 Die Datenbank enthält Metadaten für alle Bibliotheken der Umgebung, verbessert die Geschwindigkeit von IntelliSense und verringert die Speicherauslastung. Wenn Visual Studio eine neue Umgebung erkennt (oder wenn Sie eine hinzufügen), wird die Datenbank automatisch kompiliert, indem die Quelldateien der Bibliothek analysiert werden. Dieser Prozess kann eine Minute oder bis zu einer Stunde oder noch länger dauern, je nachdem, was installiert ist. (Zu Anaconda gehören z.B. viele Bibliotheken, und es dauert einige Zeit, die Datenbank zu kompilieren.) Wenn der Vorgang abgeschlossen ist, erhalten Sie detaillierte IntelliSense-Daten und müssen die Datenbank erst erneut aktualisieren (mit der Schaltfläche **DB aktualisieren**), wenn Sie weitere Bibliotheken installieren.
 
@@ -174,11 +174,11 @@ Um eine andere Umgebung für das Projekt zu aktivieren, klicken Sie mit der rech
 
 Jede globale Umgebung kann als Projektumgebung hinzugefügt werden, indem Sie mit der rechten Maustaste auf **Python-Umgebungen** klicken und **Python-Umgebungen hinzufügen/entfernen** auswählen. In der angezeigten Liste können Sie die Umgebungen aktivieren oder deaktivieren, die in Ihrem Projekt verfügbar sind.
 
-![Dialogfeld „Python-Umgebungen hinzufügen/entfernen“](~/docs/python/media/environments-add-remove.png)
+![Dialogfeld „Python-Umgebungen hinzufügen/entfernen“](~/python/media/environments-add-remove.png)
 
 Im Projektmappen-Explorer können Sie die Umgebung auch erweitern, um die installierten Pakete anzuzeigen (die Sie importieren und in Ihrem Code verwenden können, wenn die Umgebung aktiv ist):
 
-![Python-Pakete für eine Umgebung im Projektmappen-Explorer](~/docs/python/media/environments-installed-packages.png)
+![Python-Pakete für eine Umgebung im Projektmappen-Explorer](~/python/media/environments-installed-packages.png)
 
 Klicken Sie zum Installieren neuer Paketen mit der rechten Maustaste auf die Umgebung, wählen Sie **Python-Paket installieren** aus, und geben Sie den Namen des gewünschten Pakets ein. Pakete (und Abhängigkeiten) werden von [Python Package Index (PyPI)](https://pypi.python.org/pypi) heruntergeladen. Dort können Sie auch nach verfügbaren Paketen suchen. Statusleiste und Ausgabefenster von Visual Studio zeigen Informationen über die Installation an. Um ein Paket zu deinstallieren, klicken Sie mit der rechten Maustaste darauf, und wählen Sie **Entfernen** aus.
 
@@ -199,7 +199,7 @@ So erstellen Sie eine neue virtuelle Umgebung
 
 1. Klicken Sie mit der rechten Maustaste im Projektmappen-Explorer auf **Python-Umgebungen**, und wählen Sie **Virtuelle Umgebung hinzufügen** aus. Dann wird Folgendes angezeigt:
 
-    ![Erstellen einer virtuellen Umgebung](~/docs/python/media/environments-add-virtual-1.png)
+    ![Erstellen einer virtuellen Umgebung](~/python/media/environments-add-virtual-1.png)
 
 1. Geben Sie einen Namen an, um die virtuelle Umgebung im Projektpfad zu erstellen, oder einen vollständigen Pfad, um sie an anderer Stelle zu erstellen. (Um maximale Kompatibilität mit anderen Tools zu gewährleisten, verwenden Sie nur Buchstaben und Zahlen im Namen.)
 
@@ -207,7 +207,7 @@ So erstellen Sie eine neue virtuelle Umgebung
 
     Wenn der angegebene Pfad eine vorhandene virtuelle Umgebung ist, wird der Basisinterpreter erkannt, und die Schaltfläche „Erstellen“ ändert sich in **Hinzufügen**:
 
-    ![Hinzufügen einer vorhandenen virtuellen Umgebung](~/docs/python/media/environments-add-virtual-2.png)
+    ![Hinzufügen einer vorhandenen virtuellen Umgebung](~/python/media/environments-add-virtual-2.png)
 
 Eine vorhandene virtuelle Umgebung kann auch hinzugefügt werden, indem Sie im Projektmappen-Explorer mit der rechten Maustaste auf **Python-Umgebungen** klicken und **Vorhandene virtuelle Umgebung hinzufügen** auswählen. Visual Studio erkennt den Basisinterpreter anhand der Datei `orig-prefix.txt` im Verzeichnis `lib` der Umgebung automatisch.
 
@@ -223,11 +223,11 @@ Eigentlich kann jeder Dateiname zum Nachverfolgen von Anforderungen verwendet we
 
 - Wenn Sie ein Projekt geladen haben, das `requirements.txt` enthält, und alle in der Datei aufgeführten Pakete installieren möchten, klicken Sie mit der rechten Maustaste auf das Projekt, und wählen Sie **Aus „requirements.txt“ installieren** aus:
 
-    ![Installieren aus „requirements.txt“](~/docs/python/media/environments-requirements-txt-install.png)
+    ![Installieren aus „requirements.txt“](~/python/media/environments-requirements-txt-install.png)
 
 - Wenn Sie alle erforderlichen Pakete in einem Projekt installiert haben, können Sie im Projektmappen-Explorer mit der rechten Maustaste auf das Projekt klicken und **„requirements.txt“ generieren** auswählen, um die erforderliche Datei zu erstellen. Wenn die Datei bereits vorhanden ist, werden Sie zum Aktualisieren der Datei aufgefordert:
 
-    ![Optionen für die Aktualisierung von „requirements.txt“](~/docs/python/media/environments-requirements-txt-replace.png)
+    ![Optionen für die Aktualisierung von „requirements.txt“](~/python/media/environments-requirements-txt-replace.png)
 
     - **Gesamte Datei ersetzen** entfernt alle vorhandenen Elemente, Kommentare und Optionen.
     - **Vorhandene Einträge aktualisieren** erkennt Paketanforderungen und aktualisiert die Versionsbezeichner entsprechend der derzeit installierten Version.
@@ -237,7 +237,7 @@ Da mit `requirements.txt`-Dateien die Anforderungen des Projekts fixiert werden 
 
 Wenn Sie eine neue virtuelle Umgebung hinzufügen und eine ` requirements.txt`-Datei vorhanden ist, zeigt das Dialogfeld **Virtuelle Umgebung hinzufügen** eine Option an, um die Pakete automatisch zu installieren. Auf diese Weise kann eine Umgebung leicht auf einem anderen Computer neu erstellt werden:
 
-![Erstellen einer virtuellen Umgebung mit „requirements.txt“](~/docs/python/media/environments-requirements-txt.png)
+![Erstellen einer virtuellen Umgebung mit „requirements.txt“](~/python/media/environments-requirements-txt.png)
 
 Wenn ein Paket nicht von pip installiert werden kann und in einer `requirements.txt`-Datei enthalten ist, schlägt die gesamte Installation fehl. Bearbeiten Sie in diesem Fall die Datei manuell, um dieses Paket ausschließen oder [pip-Optionen](http://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) zu verwenden, um auf eine installierbare Version des Pakets zu verweisen. Sie könnten beispielsweise [`pip wheel`](http://pip.readthedocs.org/en/latest/reference/pip_wheel.html) verwenden, um eine Abhängigkeit zu kompilieren und die Option `--find-links <path>` Ihrer Datei `requirements.txt` hinzuzufügen:
 

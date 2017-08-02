@@ -34,7 +34,7 @@ caps.handback.revision: 100
 > [!NOTE]  
 >  Der Aktionsbereich unterscheidet sich von benutzerdefinierten Aufgabenbereichen.  Benutzerdefinierte Aufgabenbereiche sind der Anwendung und keinem bestimmten Dokument zugeordnet.  Sie können benutzerdefinierte Aufgabenbereiche in VSTO\-Add\-Ins für einige Microsoft Office\-Anwendungen erstellen.  Weitere Informationen finden Sie unter [Benutzerdefinierte Aufgabenbereiche](../vsto/custom-task-panes.md).  
   
- ![Link zu Video](~/docs/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie unter [Gewusst wie: Verwenden von WPF\-Steuerelementen in einem Excel\-Aktionsbereich](http://go.microsoft.com/fwlink/?LinkID=132763).  
+ ![Link zu Video](~/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie unter [Gewusst wie: Verwenden von WPF\-Steuerelementen in einem Excel\-Aktionsbereich](http://go.microsoft.com/fwlink/?LinkID=132763).  
   
 ## Anzeigen des Aktionsbereichs  
  Der Aktionsbereich wird durch die <xref:Microsoft.Office.Tools.ActionsPane>\-Klasse dargestellt.  Wenn Sie ein Projekt auf Dokumentebene erstellen, machen Sie eine Instanz dieser Klasse für Ihren Code verfügbar, indem Sie das `ActionsPane`\-Feld der `ThisWorkbook`\-Klasse \(für Excel\) oder der `ThisDocument`\-Klasse \(für Word\) im Projekt verwenden.  Um den Aktionsbereich anzuzeigen, fügen Sie der <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A>\-Eigenschaft des `ActionsPane`\-Felds ein Windows Forms\-Steuerelement hinzu.  Durch das folgende Codebeispiel wird dem Aktionsbereich ein Steuerelement namens `actions` hinzugefügt.  

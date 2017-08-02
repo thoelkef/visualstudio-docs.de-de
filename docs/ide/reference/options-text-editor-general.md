@@ -98,7 +98,7 @@ Mit diesem Dialogfeld können Sie Einstellungen für den [!INCLUDE[vsprvs](../..
   
 |Auswahlrahmen aktiviert|Auswahlrahmen deaktiviert|  
 |-------------------------|--------------------------|  
-|![HTMLpageSelectionMarginOn-Bildschirmabbildung](~/docs/ide/reference/media/vxselmaron.gif "vxSelmaron")|![HTMLpageSelectionMarginOff-Bildschirmabbildung](~/docs/ide/reference/media/vxselmaroff.gif "vxSelmaroff")|  
+|![HTMLpageSelectionMarginOn-Bildschirmabbildung](~/ide/reference/media/vxselmaron.gif "vxSelmaron")|![HTMLpageSelectionMarginOff-Bildschirmabbildung](~/ide/reference/media/vxselmaroff.gif "vxSelmaroff")|  
   
  Indikatorrand  
  Wenn diese Option aktiviert ist, wird ein vertikaler Rand außerhalb des linken Randes des Textbereichs des Editors angezeigt. Wenn Sie in diesen Rand klicken, erscheint ein Symbol und eine QuickInfo, die sich auf den angezeigten Text beziehen. Beispielsweise werden im Indikatorrand Verknüpfungen zu Haltepunkt- oder Aufgabenlisten angezeigt. Informationen im Indikatorrand werden nicht gedruckt.  

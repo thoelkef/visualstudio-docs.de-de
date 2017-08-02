@@ -92,7 +92,7 @@ Die Menübefehle **IntelliTest erstellen** und **IntelliTest ausführen**:
   
      Rufen Sie die Warnungen auf, um zu entscheiden, was zu tun ist.  
   
-     ![Rufen Sie die Warnungen auf](~/docs/test/media/pexviewwarning.png "PEXViewWarning")  
+     ![Rufen Sie die Warnungen auf](~/test/media/pexviewwarning.png "PEXViewWarning")  
   
 2.  Nachdem Sie den Code untersucht haben und wissen, was Sie testen möchten, können Sie die Warnung beheben, indem Sie die Klassen wählen, mit denen die Schnittstelle getestet werden soll.  
   

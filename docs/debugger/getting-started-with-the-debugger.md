@@ -47,7 +47,7 @@ static void Main(string[] args)
   
  Sie können die Ausführung anhalten, um das Konsolenfenster zu sehen, indem Sie einen Haltepunkt festlegen und die Ausführung schrittweise durchlaufen.  Um einen Haltepunkt festzulegen, platzieren Sie den Cursor in die Zeile `Console.WriteLine`, und klicken Sie auf **Debuggen \/ Neuer Haltepunkt \/ Funktionshaltepunkt**, oder klicken Sie einfach neben dieser Zeile in den linken Rand.  Der Haltepunkt sollte wie folgt aussehen:  
   
- ![Haltepunkt festlegen](~/docs/debugger/media/getstartedbreakpoint.png "GetStartedBreakpoint")  
+ ![Haltepunkt festlegen](~/debugger/media/getstartedbreakpoint.png "GetStartedBreakpoint")  
   
  Weitere Informationen zu Haltepunkten finden Sie unter [Verwenden von Haltepunkten](../debugger/using-breakpoints.md).  
   
@@ -55,7 +55,7 @@ static void Main(string[] args)
   
  Betrachten wir nun die Variablenwerte.  Direkt unterhalb des Codefensters befinden sich die Fenster **Auto**, **Lokal** und **Überwachen**.  Diese Fenster zeigen die aktuellen Werte der Variablen zum Zeitpunkt der Ausführung.  In den Fenstern **Auto** und **Lokal** wird „testInt“ mit dem Wert **10** angezeigt.  
   
- ![Auto&#45;Fenster beim Debuggen](~/docs/debugger/media/getstartedwindows.png "GetStartedWindows")  
+ ![Auto&#45;Fenster beim Debuggen](~/debugger/media/getstartedwindows.png "GetStartedWindows")  
   
  Weitere Informationen zu den Fenstern **Auto** und **Lokal** finden Sie unter [Variablenfenster](../Topic/Variable%20Windows.md).  
   
@@ -79,7 +79,7 @@ private static void Method1()
   
  Setzen Sie einen Haltepunkt im `Method1();`\-Aufruf in der Main\-Methode, und starten Sie das Debuggen.  Wenn die Ausführung unterbrochen wird, klicken Sie auf **Debuggen \/ Einzelschritt** \(oder klicken Sie auf der Symbolleiste auf **Einzelschritt**, oder drücken Sie **F11**\).  Die Ausführung wird an der ersten geschweiften Klammer in "Method1\(\)" erneut unterbrochen:  
   
- ![Ausführen von Code in Einzelschritten](~/docs/debugger/media/getstartedstepinto.png "GetStartedStepInto")  
+ ![Ausführen von Code in Einzelschritten](~/debugger/media/getstartedstepinto.png "GetStartedStepInto")  
   
  Beenden Sie das Debuggen, und starten Sie es erneut. Wenn die Ausführung am Haltepunkt unterbrochen wird, klicken Sie auf **Debuggen \/ Prozedurschritt** \(oder klicken Sie auf der Symbolleiste auf **Prozedurschritt**, oder drücken Sie **F10**\).  Die Ausführung wird bei `Console.WriteLine("end");` erneut unterbrochen.  
   

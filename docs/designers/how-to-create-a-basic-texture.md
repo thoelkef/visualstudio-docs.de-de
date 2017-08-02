@@ -37,7 +37,7 @@ In diesem Dokument wird die Verwendung des Bild\-Editors zur Erstellung einer Ba
   
  Die folgenden Schritte zeigen, wie eine Textur erstellt, der ein "Bullaugen" Ziel darstellt. Wenn Sie fertig sind, sollte die Textur wie im folgenden Bild aussehen.  Um die Transparenz in der Textur besser zu veranschaulichen, ist der Grafik\-Editor konfiguriert wurde um ein Grün, kariertes Muster verwenden um es anzuzeigen.  
   
- ![Zielscheibe mit Transparenz in Grün](~/docs/designers/media/digit-bullseye-texture-in-editor.png "Digit\-Bullseye\-Texture\-In\-Editor")  
+ ![Zielscheibe mit Transparenz in Grün](~/designers/media/digit-bullseye-texture-in-editor.png "Digit\-Bullseye\-Texture\-In\-Editor")  
   
  Bevor Sie beginnen, sicher, dass das Fenster **Eigenschaften** angezeigt wird.  Verwenden Sie das Fenster **Eigenschaften**, um die Größe festzulegen, ändern Tooleigenschaften und geben Farben, während Sie arbeiten.  
   
@@ -85,7 +85,7 @@ In diesem Dokument wird die Verwendung des Bild\-Editors zur Erstellung einer Ba
   
  Die "Bullaugen" Zieltextur ist vollständig.  Es folgt das endgültige Bild angezeigt, mit Transparenz.  
   
- ![Die vollständige Textur der Zielscheibe](~/docs/designers/media/gfx_image_demo_bullseye.png "gfx\_image\_demo\_bullseye")  
+ ![Die vollständige Textur der Zielscheibe](~/designers/media/gfx_image_demo_bullseye.png "gfx\_image\_demo\_bullseye")  
   
  Als nächster Schritt können Sie MIP\-Ebenen für diese Textur generieren.  Weitere Informationen finden Sie unter [Gewusst wie: Erstellen und Ändern von MIP\-Ebenen](../designers/how-to-create-and-modify-mip-levels.md).  
   

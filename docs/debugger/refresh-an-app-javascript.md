@@ -28,7 +28,7 @@ caps.handback.revision: 20
 # Aktualisieren einer App (JavaScript)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Gilt für Windows und Windows Phone](~/docs/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![Gilt für Windows und Windows Phone](~/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  Sie können während des Debuggens Änderungen am Code vornehmen und dann eine mit JavaScript erstellte Store\-App aktualisieren, indem Sie auf der Symbolleiste **Debuggen** die Schaltfläche **Windows\-App aktualisieren** auswählen.  Durch Auswählen dieser Schaltfläche wird die App erneut geladen, ohne den Debugger zu beenden und erneut zu starten.  Die Aktualisierungsfunktion ermöglicht es Ihnen, HTML, CSS und JavaScript\-Code zu ändern und das Ergebnis schnell anzuzeigen.  Dieses Feature wird sowohl für Windows Store\- als auch für Windows Phone Store\-Apps unterstützt.  
   
@@ -77,7 +77,7 @@ caps.handback.revision: 20
     Hello!  
     ```  
   
-7.  Klicken Sie auf die Schaltfläche **Windows\-App aktualisieren**, die wie folgt aussieht: ![Schaltfläche "Windows&#45;App aktualisieren"](~/docs/debugger/media/js_refresh.png "JS\_Refresh").  \(Oder drücken Sie F4\)  
+7.  Klicken Sie auf die Schaltfläche **Windows\-App aktualisieren**, die wie folgt aussieht: ![Schaltfläche "Windows&#45;App aktualisieren"](~/debugger/media/js_refresh.png "JS\_Refresh").  \(Oder drücken Sie F4\)  
   
 8.  Wechseln Sie zur App.  Die App wird erneut geladen, ohne dass der Debugger neu gestartet wird, und der neue Seitentitel wird angezeigt.  
   

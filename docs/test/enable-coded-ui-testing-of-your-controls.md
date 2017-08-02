@@ -46,7 +46,7 @@ Steuerelemente können einfacher getestet werden, wenn Sie Unterstützung für d
   
 4.  [Absichtsbewusste Aktionen durch Implementierung eines Aktionsfilters unterstützen](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)  
   
- ![CUIT&#95;Full](~/docs/test/media/cuit_full.png "CUIT_Full")  
+ ![CUIT&#95;Full](~/test/media/cuit_full.png "CUIT_Full")  
   
 ##  <a name="recordandplayback"></a> Datensatz-, Wiedergabe -und Eigenschaftvalidierung durch Implementierung der Barrierefreiheit unterstützen  
  Der Test-Generator der programmierten UI erfasst Informationen zu den Steuerelementen, die während einer Aufzeichnung gefunden werden, und generiert dann Code zur Wiedergabe dieser Sitzung. Wenn Barrierefreiheit vom Steuerelement nicht unterstützt wird, erfasst der Test-Generator für codierte UI Aktionen wie Mausklicks anhand der Bildschirmkoordinaten. Bei der Wiedergabe des Tests werden diese Mausklicks vom generierten Code an den gleichen Bildschirmkoordinaten ausgeführt. Wenn sich das Steuerelement beim Wiedergeben des Tests an einer anderen Stelle auf dem Bildschirm befindet, kann der generierte Code die entsprechende Aktion für das Steuerelement nicht ausführen. Dies kann zu Fehlern führen, wenn die Testwiedergabe auf unterschiedlichen Bildschirmkonfigurationen oder in anderen Umgebungen erfolgt oder Änderungen am Benutzeroberflächenlayout vorgenommen wurden.  
@@ -60,7 +60,7 @@ Steuerelemente können einfacher getestet werden, wenn Sie Unterstützung für d
 ### <a name="to-support-record-and-playback-property-validation-and-navigation-for-a-windows-forms-control"></a>So unterstützen Sie Aufzeichnung und Wiedergabe, Eigenschaftvalidierung und Navigation für ein Windows Forms-Steuerelement  
  Barrierefreiheit kann wie in der folgenden Prozedur dargestellt implementieren werden. Ein ausführliche Anleitung finden Sie unter <xref:System.Windows.Forms.AccessibleObject>.  
   
- ![CUIT&#95;Accessible](~/docs/test/media/cuit_accessible.png "CUIT_Accessible")  
+ ![CUIT&#95;Accessible](~/test/media/cuit_accessible.png "CUIT_Accessible")  
   
 1.  Implementieren Sie eine von <xref:System.Windows.Forms.Control.ControlAccessibleObject> abgeleitete Klasse, und überschreiben Sie die <xref:System.Windows.Forms.Control.AccessibilityObject%2A>-Eigenschaft, um ein Objekt der Klasse zurückzugeben.  
   
@@ -102,7 +102,7 @@ Steuerelemente können einfacher getestet werden, wenn Sie Unterstützung für d
  ![CUIT&#95;CustomProps](../test/media/cuit_customprops.png "CUIT_CustomProps")  
   
 ### <a name="to-support-custom-property-validation"></a>So unterstützen Sie die Validierung benutzerdefinierter Eigenschaften  
- ![CUIT&#95;Props](~/docs/test/media/cuit_props.png "CUIT_Props")  
+ ![CUIT&#95;Props](~/test/media/cuit_props.png "CUIT_Props")  
   
 1.  Überschreiben Sie die zugreifbare <xref:System.Windows.Forms.AccessibleObject.Description%2A>-Eigenschaft des Kurvenlegendenobjekts, um Werte von Rich-Eigenschaften aus der Beschreibungszeichenfolge zu übergeben (durch Semikolons (;) von der Hauptbeschreibung und voneinander getrennt, wenn mehrere Eigenschaften implementiert werden).  
   
@@ -177,7 +177,7 @@ Steuerelemente können einfacher getestet werden, wenn Sie Unterstützung für d
   
 <CodeContentPlaceHolder>11</CodeContentPlaceHolder>  
 ### <a name="to-add-a-specialized-class-to-access-your-control"></a>So fügen Sie eine spezialisierte Klasse zum Zugriff auf das Steuerelement hinzu  
- ![CUIT&#95;CodeGen](~/docs/test/media/cuit_codegen.png "CUIT_CodeGen")  
+ ![CUIT&#95;CodeGen](~/test/media/cuit_codegen.png "CUIT_CodeGen")  
   
 1.  Implementieren Sie eine von <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl> abgeleitete Klasse, und fügen in der Sucheigenschaftenauflistung des Konstruktors den Typ des Steuerelements hinzu.  
   
@@ -195,7 +195,7 @@ Steuerelemente können einfacher getestet werden, wenn Sie Unterstützung für d
  Beim Aufzeichnen eines Tests in Visual Studio werden alle Maus- und Tastaturereignisse erfasst. In einigen Fällen kann jedoch der Zweck der durch die Reihe von Maus- und Tastaturereignissen bewirkten Aktion verloren gehen. Wenn das Steuerelement beispielsweise AutoVervollständigen unterstützt, kann bei der Wiedergabe des Tests in einer anderen Umgebung der gleiche Satz von Maus- und Tastaturereignissen einen abweichenden Wert ergeben. Sie können ein Aktionsfilter-Plug-In hinzufügen, von dem die Reihe der Tastatur- und Mausereignisse durch eine einzelne Aktion ersetzt wird. Dadurch können Sie die zur Auswahl eines Werts führende Reihe von Tastatur- und Mausereignissen durch eine einzelne Aktion zum Festlegen des Wert ersetzen. Auf diese Weise können die aufgrund von AutoVervollständigen in verschiedenen Umgebungen auftretenden Unterschiede bei Tests der codierten UI vermieden werden.  
   
 ### <a name="to-support-intent-aware-actions"></a>So unterstützen Sie absichtbewusste Aktionen  
- ![CUIT&#95;Actions](~/docs/test/media/cuit_actions.png "CUIT_Actions")  
+ ![CUIT&#95;Actions](~/test/media/cuit_actions.png "CUIT_Actions")  
   
 1.  Implementieren Sie eine von <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter> abgeleitete Aktionsfilterklasse, von der die Eigenschaften <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ApplyTimeout%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Category%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Enabled%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.FilterType%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Group%2A> und <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Name%2A> überschrieben werden.  
   

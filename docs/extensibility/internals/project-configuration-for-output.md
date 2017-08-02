@@ -34,7 +34,7 @@ Jede Konfiguration kann es sich um einen Satz von Buildprozesse unterstützen, d
   
  Gruppen können auch eine wichtige Ausgabe aufweisen, mit der Verpackung Tastenkombinationen in einen aussagekräftigeren Namen verweisen können. Jede Gruppe kann in einer bestimmten Konfiguration leer sein, also keine Annahmen über die Größe einer Gruppe vorgenommen werden soll. Die Größe \(Anzahl der Ausgaben\) jeder Gruppe in einer Konfiguration kann von der Größe einer anderen Gruppe in der gleichen Konfiguration sein. Es kann auch von der Größe der gleichen Gruppe in eine andere Konfiguration unterschiedlich sein.  
   
- ![Grafik zu Ausgabegruppen](~/docs/extensibility/internals/media/vsoutputgroups.gif "vsOutputGroups")  
+ ![Grafik zu Ausgabegruppen](~/extensibility/internals/media/vsoutputgroups.gif "vsOutputGroups")  
 Ausgabegruppen  
   
  Der primäre Verwendungszweck der <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg> Schnittstelle wird zum Bereitstellen von Zugriff zum Erstellen, bereitstellen und Debuggen von Verwaltungsobjekten und\-Projekten die Freiheit, Gruppe Ausgaben können. Weitere Informationen zur Verwendung dieser Schnittstelle finden Sie unter [Projekt\-Konfigurationsobjekt](../../extensibility/internals/project-configuration-object.md).  

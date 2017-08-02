@@ -55,7 +55,7 @@ ms.lasthandoff: 02/22/2017
 # <a name="map-dependencies-across-your-solutions"></a>Projektmappenübergreifendes Zuordnen von Abhängigkeiten
 Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie diese visuell dar, indem Sie Code Maps erstellen. Dadurch können Sie sehen, wie der Code ohne Lesen von Codezeilen und Dateien zusammenpasst.  
   
- ![Anzeigen von Abhängigkeiten projektmappenübergreifendes](~/docs/modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
+ ![Anzeigen von Abhängigkeiten projektmappenübergreifendes](~/modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
   
  **Hier finden Sie einige Videos**:  
   
@@ -101,7 +101,7 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
   
 2.  Wählen Sie alle Projekte, Assemblyverweise, Ordner, Dateien, Typen oder Member aus, die Sie darstellen möchten.  
   
-3.  Auf der **Projektmappen-Explorer** Symbolleiste wählen **in Code Map anzeigen**![Schaltfläche neu erstellen Diagramms aus ausgewählten Knoten](~/docs/modeling/media/createnewgraphfromselectedbutton.gif "CreateNewGraphFromSelectedButton"). Alternativ öffnen Sie das Kontextmenü, und wählen Sie **Auf Code Map anzeigen**aus. Sie können auch Elemente aus der Klassenansicht oder dem Objektbrowser in eine neue oder vorhandene Code Map ziehen.  
+3.  Auf der **Projektmappen-Explorer** Symbolleiste wählen **in Code Map anzeigen**![Schaltfläche neu erstellen Diagramms aus ausgewählten Knoten](~/modeling/media/createnewgraphfromselectedbutton.gif "CreateNewGraphFromSelectedButton"). Alternativ öffnen Sie das Kontextmenü, und wählen Sie **Auf Code Map anzeigen**aus. Sie können auch Elemente aus der Klassenansicht oder dem Objektbrowser in eine neue oder vorhandene Code Map ziehen.  
   
 4.  Unter[Erkennen allgemeiner Abhängigkeiten](#SeeSpecificSource) wird erläutert, wie Sie Code Maps verwenden können, um spezifische Abhängigkeiten innerhalb einer Projektmappe anzuzeigen.  
   
@@ -135,7 +135,7 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
   
 1.  Wählen Sie im Menü **Architektur** die Option **Code Map für Projektmappe generieren**aus.  
   
-     ![Generieren eines Code Map-Befehls](~/docs/modeling/media/codemapsarchitecturemenu.png "CodeMapsArchitectureMenu")  
+     ![Generieren eines Code Map-Befehls](~/modeling/media/codemapsarchitecturemenu.png "CodeMapsArchitectureMenu")  
   
      Es wird eine Code Map erstellt, die die Assemblys der obersten Ebene und die Aggregatlinks zwischen diesen zeigt. Desto größer die Aggregatsverbindung, desto mehr Abhängigkeiten stellt sie dar.  
   
@@ -147,7 +147,7 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
   
 3.  Um einen Drilldown in der Code Map durchzuführen, erweitern Sie die Gruppen, die Projekte und Assemblys darstellen. Sie können alle Gruppen erweitern, indem Sie durch Drücken von **STRG + A** alle Knoten auswählen und dann **Gruppe**, **Erweitern** im Kontextmenü auswählen.  
   
-     ![Erweitern aller Gruppen in einer Code Map](~/docs/modeling/media/codemapsexpandallgroups.png "CodeMapsExpandAllGroups")  
+     ![Erweitern aller Gruppen in einer Code Map](~/modeling/media/codemapsexpandallgroups.png "CodeMapsExpandAllGroups")  
   
 4.  Allerdings ist dieses Verfahren für große Projektmappen nicht unbedingt hilfreich. Tatsächlich können Sie bei komplexen Projektmappen aufgrund von Speicherbeschränkungen möglicherweise nicht alle Gruppen erweitern. Erweitern Sie in diesem Fall einen einzelnen Knoten, um seinen Inhalt anzuzeigen. Bewegen Sie den Mauszeiger auf einen Knoten, und klicken Sie dann auf das Chevron (Abwärtspfeil), wenn es angezeigt wird.  
   
@@ -160,13 +160,13 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
   
 5.  Um die Code Map zu vereinfachen und sich auf einzelne Teile zu konzentrieren, wählen Sie **Filter** auf der Symbolleiste der Code Map aus, und wählen Sie dann nur die Knoten- und Linktypen aus, die für Sie von Interesse sind. Beispielsweise können Sie alle Projektmappenordner und Assemblycontainer ausblenden.  
   
-     ![Vereinfachen der Zuordnung durch Filtern der Container](~/docs/modeling/media/codemapsfilterfoldersassemblies.png "CodeMapsFilterFoldersAssemblies")  
+     ![Vereinfachen der Zuordnung durch Filtern der Container](~/modeling/media/codemapsfilterfoldersassemblies.png "CodeMapsFilterFoldersAssemblies")  
   
      Sie können die Code Map auch vereinfachen, indem Sie einzelne Gruppen und Elemente ausblenden oder aus der Code Map entfernen, ohne dass sich dies auf den zugrunde liegenden Projektmappencode auswirkt.  
   
 6.  Um die Beziehungen zwischen Elementen anzuzeigen, wählen Sie die Elemente in der Code Map aus. Die Farben der Links zeigen die Beziehungstypen an, wie im Bereich **Legende** dargestellt.  
   
-     ![Anzeigen von Abhängigkeiten projektmappenübergreifendes](~/docs/modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
+     ![Anzeigen von Abhängigkeiten projektmappenübergreifendes](~/modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
   
      In diesem Beispiel sind die violetten Links Aufrufe, die gepunkteten Links sind Verweise, und die hellblauen Links sind Feldzugriffe. Grüne Links können Vererbung darstellen, oder es kann sich um *Aggregatlinks* handeln, die mehrere Beziehungstypen (oder *Kategorien*) angeben.  
   
@@ -175,7 +175,7 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
   
 7.  Weitere Informationen zu einem Element oder einem Link erhalten Sie, indem Sie den Mauszeiger darauf bewegen und warten, bis eine QuickInfo angezeigt wird. Diese enthält Details zu einem Codeelement oder den Kategorien, die ein Link darstellt.  
   
-     ![Anzeigen der Kategorien einer Beziehung](~/docs/modeling/media/codemapsshowlinkcatgories.png "CodeMapsShowLinkCatgories")  
+     ![Anzeigen der Kategorien einer Beziehung](~/modeling/media/codemapsshowlinkcatgories.png "CodeMapsShowLinkCatgories")  
   
 8.  Wählen Sie zum Untersuchen von Elementen und Abhängigkeiten, die durch einen Aggregatlink dargestellt werden, zunächst den Link aus, und öffnen Sie dann das zugehörige Kontextmenü. Wählen Sie **Zugehörige Links anzeigen** (oder **Zugehörige Links auf neuer Code Map anzeigen**) aus. Hierdurch werden die Gruppen an beiden Enden des Links erweitert und nur die Elemente und Abhängigkeiten angezeigt, die zu dem Link gehören.  
   
@@ -185,15 +185,15 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
   
 10. Eine andere Methode zum Fokussieren einer Code Map einer komplexen Projektmappe besteht darin, eine neue Code Map zu generieren, die ausgewählte Elemente aus einer vorhandenen Code Map enthält. Halten Sie **STRG** gedrückt, während Sie die Elemente auswählen, die Sie in den Fokus holen möchten, öffnen Sie das Kontextmenü, und wählen Sie **Neues Diagramm aus der Auswahl**aus.  
   
-     ![Anzeigen der ausgewählten Elemente in einer neuen Code Map](~/docs/ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")  
+     ![Anzeigen der ausgewählten Elemente in einer neuen Code Map](~/ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")  
   
 11. Der enthaltende Kontext wird in die neue Code Map übernommen. Blenden Sie Projektmappenordner und andere Container, die nicht angezeigt werden sollen, mithilfe des Bereichs **Filter** aus.  
   
-     ![Filtern der Container zum Vereinfachen der Ansicht](~/docs/modeling/media/codemapsexpandnewgroups.png "CodeMapsExpandNewGroups")  
+     ![Filtern der Container zum Vereinfachen der Ansicht](~/modeling/media/codemapsexpandnewgroups.png "CodeMapsExpandNewGroups")  
   
 12. Erweitern Sie die Gruppen, und wählen Sie Elemente in der Code Map aus, um die Beziehungen anzuzeigen.  
   
-     ![Elemente auswählen, um die Anzeige der Beziehungen](~/docs/modeling/media/codemapsviewnewrelationships.png "CodeMapsViewNewRelationships")  
+     ![Elemente auswählen, um die Anzeige der Beziehungen](~/modeling/media/codemapsviewnewrelationships.png "CodeMapsViewNewRelationships")  
   
  Siehe auch:  
   
@@ -215,19 +215,19 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
 ##  <a name="a-nameseespecificsourcea-see-specific-dependencies"></a><a name="SeeSpecificSource"></a>Anzeigen bestimmter Abhängigkeiten  
  Angenommen, Sie müssen eine Codeüberprüfung in einigen Dateien mit ausstehenden Änderungen durchführen. Um die Abhängigkeiten in diesen Änderungen anzuzeigen, können Sie eine Code Map aus diesen Dateien erstellen.  
   
- ![Anzeigen bestimmter Abhängigkeiten in codeübersichten](~/docs/modeling/media/codemapsspecificdependenciesintro.png "CodeMapsSpecificDependenciesIntro")  
+ ![Anzeigen bestimmter Abhängigkeiten in codeübersichten](~/modeling/media/codemapsspecificdependenciesintro.png "CodeMapsSpecificDependenciesIntro")  
   
 ### <a name="see-specific-dependencies-in-your-solution"></a>Anzeigen bestimmter Abhängigkeiten in Ihrer Projektmappe  
   
 1.  Öffnen Sie den **Projektmappen-Explorer**. Wählen Sie die Projekte, Assemblyverweise, Ordner, Dateien, Typen und Mitglieder, die Sie interessieren. Zum Suchen von Elementen mit Abhängigkeiten von Typen oder Mitglied öffnen Sie das Kontextmenü für den Typ oder Mitglieder im **Projektmappen-Explorer**. Wählen Sie den Abhängigkeitstyp aus, und wählen Sie dann die Ergebnisse aus.  
   
-2.  Stellen Sie die Elemente und ihre Member in einer Code Map dar. Auf der **Projektmappen-Explorer** Symbolleiste auf **in Code Map anzeigen**![Schaltfläche neu erstellen Diagramms aus ausgewählten Knoten](~/docs/modeling/media/createnewgraphfromselectedbutton.gif "CreateNewGraphFromSelectedButton").  
+2.  Stellen Sie die Elemente und ihre Member in einer Code Map dar. Auf der **Projektmappen-Explorer** Symbolleiste auf **in Code Map anzeigen**![Schaltfläche neu erstellen Diagramms aus ausgewählten Knoten](~/modeling/media/createnewgraphfromselectedbutton.gif "CreateNewGraphFromSelectedButton").  
   
-     ![Wählen Sie die Elemente, die Sie zuordnen möchten](~/docs/modeling/media/codemapsselectinsolutionexplorer.png "CodeMapsSelectInSolutionExplorer")  
+     ![Wählen Sie die Elemente, die Sie zuordnen möchten](~/modeling/media/codemapsselectinsolutionexplorer.png "CodeMapsSelectInSolutionExplorer")  
   
 3.  Die Code Map zeigt die ausgewählten Elemente in ihren enthaltenden Assemblys.  
   
-     ![Ausgewählte Elemente als Gruppen auf der Karte](~/docs/modeling/media/codemapsshowitemsfromsolnexplorer.png "CodeMapsShowItemsFromSolnExplorer")  
+     ![Ausgewählte Elemente als Gruppen auf der Karte](~/modeling/media/codemapsshowitemsfromsolnexplorer.png "CodeMapsShowItemsFromSolnExplorer")  
   
      Sie können auch Elemente aus dem Projektmappen-Explorer, der Klassenansicht oder dem Objektbrowser in eine neue oder vorhandene Code Map ziehen. Anweisungen zum Erstellen einer leeren Code Map finden Sie unter [Erstellen einer leeren Code Map](#GetStarted). Um die übergeordnete Hierarchie für die Elemente einzuschließen, halten Sie die **STRG** -TASTE gedrückt, während Sie Elemente ziehen, oder verwenden Sie die Schaltfläche **Übergeordnete Elemente einschließen** auf der Symbolleiste der Code Map, um die Standardaktion anzugeben.  
   
@@ -242,9 +242,9 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
   
 5.  Erweitern Sie weitere Elemente, die für Sie von Interesse sind, ggf. bis hinunter zur Klassen- und Memberebene.  
   
-     ![Erweitern von Gruppen auf Klassen-und Memberebene](~/docs/modeling/media/codemapsexpandtoclassandmember.png "CodeMapsExpandToClassAndMember")  
+     ![Erweitern von Gruppen auf Klassen-und Memberebene](~/modeling/media/codemapsexpandtoclassandmember.png "CodeMapsExpandToClassAndMember")  
   
-     Elemente, die im Code ist jedoch nicht auf der Karte, klicken Sie auf die **untergeordnete Elemente** Symbol ![Symbol für untergeordnete Kinder](~/docs/modeling/media/dependencygraph_deletednodesicon.png "DependencyGraph_DeletedNodesIcon") in der oberen linken Ecke einer Gruppe.  
+     Elemente, die im Code ist jedoch nicht auf der Karte, klicken Sie auf die **untergeordnete Elemente** Symbol ![Symbol für untergeordnete Kinder](~/modeling/media/dependencygraph_deletednodesicon.png "DependencyGraph_DeletedNodesIcon") in der oberen linken Ecke einer Gruppe.  
   
 6.  Um weitere Elemente im Zusammenhang mit den auf der Code Map dargestellten anzuzeigen, wählen Sie ein Element aus, wählen Sie **Verwandte anzeigen** auf der Symbolleiste der Code Map aus, und wählen Sie dann den Typ verwandter Elemente aus, die der Code Map hinzugefügt werden sollen. Alternativ wählen Sie ein oder mehrere Elemente aus, öffnen Sie das Kontextmenü, und wählen Sie dann die Option **Anzeigen** für den Typ verwandter Elemente aus, die der Code Map hinzugefügt werden sollen. Zum Beispiel:  
   
@@ -287,15 +287,15 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
     |**Zeigen Sie enthaltenden Typ an**|Fügt den übergeordneten Typ hinzu.|  
     |**Mit Typ, Namespace und Assembly anzeigen**|Fügt die übergeordnete Containerhierarchie hinzu.|  
   
-     ![Anzeigen der durch dieses Member aufgerufenen Methoden](~/docs/modeling/media/codemapsshowrelatedmethods.png "CodeMapsShowRelatedMethods")  
+     ![Anzeigen der durch dieses Member aufgerufenen Methoden](~/modeling/media/codemapsshowrelatedmethods.png "CodeMapsShowRelatedMethods")  
   
 7.  Die Beziehungen werden auf der Code Map angezeigt. In diesem Beispiel sind dies die von der `Find` -Methode aufgerufenen Methoden und ihre Position innerhalb oder außerhalb der Projektmappe.  
   
-     ![Anzeigen bestimmter Abhängigkeiten in codeübersichten](~/docs/modeling/media/codemapsspecificdependenciesintro.png "CodeMapsSpecificDependenciesIntro")  
+     ![Anzeigen bestimmter Abhängigkeiten in codeübersichten](~/modeling/media/codemapsspecificdependenciesintro.png "CodeMapsSpecificDependenciesIntro")  
   
 8.  Um die Code Map zu vereinfachen und sich auf einzelne Teile zu konzentrieren, wählen Sie **Filter** auf der Symbolleiste der Code Map aus, und wählen Sie dann nur die Knoten- und Linktypen aus, die für Sie von Interesse sind. Deaktivieren Sie z. B. die Anzeige von Projektmappenordnern, Assemblys und Namespaces.  
   
-     ![Verwenden des Filterbereichs zum Vereinfachen der Anzeige](~/docs/modeling/media/almcodemapfilterpane.png "ALMCodeMapFilterPane")  
+     ![Verwenden des Filterbereichs zum Vereinfachen der Anzeige](~/modeling/media/almcodemapfilterpane.png "ALMCodeMapFilterPane")  
   
 ##  <a name="a-nameseesourceheadera-see-dependencies-between-c-and-c-source-files-and-header-files"></a><a name="SeeSourceHeader"></a>Anzeigen von Abhängigkeiten zwischen C- und C++-Quelldateien und Headerdateien  
  Wenn Sie ausführlichere Code Maps für C++-Projekte erstellen möchten, aktivieren Sie für diese Projekte die Compileroption zum Durchsuchen von Informationen (**/FR**). Andernfalls werden Sie anhand einer Meldung aufgefordert, diese Option festzulegen. Bei Auswahl von **OK**wird die Option nur für die aktuelle Code Map festgelegt. Sie können angeben, dass die Meldung für alle späteren Code Maps ausgeblendet werden soll. Wenn Sie diese Meldung ausblenden, können Sie diese auch wieder einblenden. Legen Sie den folgenden Registrierungsschlüssel auf `0` fest oder löschen Sie den Schlüssel:  
@@ -345,7 +345,7 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
   
 -   Bearbeiten Sie die Code Map direkt, um Knoten und Links zu entfernen, die Sie nicht benötigen. Das Ändern der Code Map wirkt sich nicht auf den zugrunde liegenden Code aus. Finden Sie unter [Anpassen von Code maps durch Bearbeiten der DGML-Dateien](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
- ![Skip-Build und übergeordnete Elemente einschließen Schaltflächen](~/docs/modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")  
+ ![Skip-Build und übergeordnete Elemente einschließen Schaltflächen](~/modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")  
   
  Obwohl Visual Studio mit 1 GB Arbeitsspeicher ausgeführt werden kann, wird empfohlen, den Computer mit mindestens 2 GB Arbeitsspeicher auszustatten, um lange Verzögerungen während der Erstellung des Codeindex und der Generierung der Code Map durch Visual Studio zu vermeiden.  
   
@@ -362,7 +362,7 @@ Wenn Sie Abhängigkeiten innerhalb Ihres Codes verstehen möchten, stellen Sie d
   
  Wählen Sie zum Speichern der Karte als Teil eines bestimmten Projekts auf der Übersichtssymbolleiste **Freigabe**, **verschieben** \< *CodeMapName*>**DGML in**, und wählen Sie dann das Projekt, in dem das Schema gespeichert werden soll.  
   
- ![Verschieben einer Zuordnung in einem anderen Projekt](~/docs/modeling/media/codemapsmovemapmenu.png "CodeMapsMoveMapMenu")  
+ ![Verschieben einer Zuordnung in einem anderen Projekt](~/modeling/media/codemapsmovemapmenu.png "CodeMapsMoveMapMenu")  
   
  Die Code Map wird von Visual Studio als DGML-Datei gespeichert, die Sie für andere Benutzer von Visual Studio Enterprise und Visual Studio Professional freigeben können.  
   

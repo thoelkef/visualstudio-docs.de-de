@@ -78,7 +78,7 @@ caps.handback.revision: 52
   
 3.  Erweitern Sie im Fenster **Eigenschaften** die **\(DataBindings\)**\-Eigenschaft.  
   
-4.  Klicken Sie neben der **\(Advanced\)**\-Eigenschaft auf die Schaltfläche mit den Auslassungszeichen \(![VisualStudioEllipsesButton-Bildschirmabbildung](~/docs/vsto/media/vbellipsesbutton.png "VisualStudioEllipsesButton-Bildschirmabbildung")\).  
+4.  Klicken Sie neben der **\(Advanced\)**\-Eigenschaft auf die Schaltfläche mit den Auslassungszeichen \(![VisualStudioEllipsesButton-Bildschirmabbildung](~/vsto/media/vbellipsesbutton.png "VisualStudioEllipsesButton-Bildschirmabbildung")\).  
   
 5.  Klicken Sie im Dialogfeld **Formatierung und erweiterte Bindung** auf die Dropdownliste **Datenquellen\-Aktualisierungsmodus**, und wählen Sie einen der folgenden Werte aus:  
   

@@ -27,7 +27,7 @@ caps.handback.revision: 14
 # URL-Auswahldialogfeld (SharePoint-Entwicklung in Visual Studio)
   Im URL\-Auswahldialogfeld können Sie Dateien wie Masterseitendateien oder Bilddateien auswählen, die im Projekt oder auf dem lokalen Server, auf dem SharePoint ausgeführt wird.  
   
- Dieses Dialogfeld wird angezeigt, wenn Sie die Option verfügen, eine Datei auszuwählen, um eine Eigenschaft festzulegen.  Sie können dieses Dialogfeld, indem Sie die Schaltfläche mit den Auslassungszeichen \(![Auslassungszeichen im ASP.NET Mobile-Designer](~/docs/sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer")\) neben den jeweiligen Eigenschaften im Fenster **Eigenschaften** öffnen auswählen.  Die Schaltfläche mit den Auslassungspunkten wird auch als IntelliSense\-Auswahl angezeigt, wenn Sie bestimmten Attributen in der **Quellansicht** des Designers Werte zuweisen.  
+ Dieses Dialogfeld wird angezeigt, wenn Sie die Option verfügen, eine Datei auszuwählen, um eine Eigenschaft festzulegen.  Sie können dieses Dialogfeld, indem Sie die Schaltfläche mit den Auslassungszeichen \(![Auslassungszeichen im ASP.NET Mobile-Designer](~/sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer")\) neben den jeweiligen Eigenschaften im Fenster **Eigenschaften** öffnen auswählen.  Die Schaltfläche mit den Auslassungspunkten wird auch als IntelliSense\-Auswahl angezeigt, wenn Sie bestimmten Attributen in der **Quellansicht** des Designers Werte zuweisen.  
   
 ## UIElement-Liste  
  **Projektordner**  

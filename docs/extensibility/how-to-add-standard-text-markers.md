@@ -39,7 +39,7 @@ Führen Sie die folgenden Schritte aus, um einen der Standardtext marker Typen z
   
      Zum Beispiel sind die spezifischen Befehle im Kontextmenü auf Haltepunkt **Haltepunkt entfernen** von **Neuer Haltepunkt**, wie in der folgenden Bildschirmabbildung angezeigt.  
   
-     ![Marker&#45;Kontextmenü](~/docs/extensibility/media/vsmarkercontextmenu.gif "vsMarkercontextmenu")  
+     ![Marker&#45;Kontextmenü](~/extensibility/media/vsmarkercontextmenu.gif "vsMarkercontextmenu")  
   
 2.  Führen Sie einen kurzen Text, der den Namen des benutzerdefinierten Befehl identifiziert.  Zum Beispiel könnte **Haltepunkt entfernen** ein benutzerdefinierter Befehl auf, wenn die Umgebung nicht bereits ihn geliefert hat.  Führen Sie auch den Hintergrund unterstützt wird, ob der Befehl zur Verfügung und ermöglicht und\/oder eine Umschaltfläche Ein\-Aus.  Die Umgebung verwendet diese Informationen, um den benutzerdefinierten Befehl im Kontextmenü auf die richtige Weise anzuzeigen.  
   

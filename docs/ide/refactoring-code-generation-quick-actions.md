@@ -51,7 +51,7 @@ Visual Studio kann Sie beim Generieren von Teilen des Quellcodes unterstützen, 
 
 <a name="#quick-actions"></a>
 ## <a name="quick-actions"></a>Schnelle Aktionen
-Mit schnellen Aktionen können Sie ganz leicht Code mit einer einzelnen Aktion umgestalten, generieren oder anderweitig ändern.  Diese können mithilfe des Glühbirnensymbols ![Small Light Bulb Icon](~/docs/ide/media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") oder durch das Drücken von **STRG + .** angewendet werden , wenn sich Ihr Cursor auf der entsprechenden Codezeile befindet.
+Mit schnellen Aktionen können Sie ganz leicht Code mit einer einzelnen Aktion umgestalten, generieren oder anderweitig ändern.  Diese können mithilfe des Glühbirnensymbols ![Small Light Bulb Icon](~/ide/media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") oder durch das Drücken von **STRG + .** angewendet werden , wenn sich Ihr Cursor auf der entsprechenden Codezeile befindet.
 
 * [Schnelle Aktionen](quick-actions.md)
 * [Codeformate und schnelle Aktionen](code-styles-and-quick-actions.md)

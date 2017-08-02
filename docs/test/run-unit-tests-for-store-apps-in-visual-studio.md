@@ -119,7 +119,7 @@ In diesem Thema wird beschrieben, wie Sie Komponententests mithilfe des Test-Exp
   
 |||  
 |-|-|  
-|![Gruppenschaltfläche „Test-Explorer“](~/docs/test/media/ute_groupby_btn.png "UTE_GroupBy_btn")|Um die Tests nach der Dauer ihrer Ausführung zu gruppieren, öffnen Sie die Liste **Gruppieren nach** und wählen **Dauer** aus. Wählen Sie **Testergebnis** aus, um zur ursprünglichen Gruppierung zu wechseln.|  
+|![Gruppenschaltfläche „Test-Explorer“](~/test/media/ute_groupby_btn.png "UTE_GroupBy_btn")|Um die Tests nach der Dauer ihrer Ausführung zu gruppieren, öffnen Sie die Liste **Gruppieren nach** und wählen **Dauer** aus. Wählen Sie **Testergebnis** aus, um zur ursprünglichen Gruppierung zu wechseln.|  
   
 ###  <a name="BKMK_Searching_and_filtering_the_test_list"></a> Suchen und Filtern der Testliste  
  Wenn Sie über viele Tests verfügen, können Sie im Test-Explorer-Suchfeld eine Eingabe vornehmen, um die Liste entsprechend der angegebenen Zeichenfolge zu filtern. Sie können den Filter auf bestimmte Typen von Zeichenfolgen einschränken, indem Sie vor der Eingabe der Suchzeichenfolge in der Filterliste eine Auswahl vornehmen.  

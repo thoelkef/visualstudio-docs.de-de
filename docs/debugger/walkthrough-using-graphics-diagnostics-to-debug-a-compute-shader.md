@@ -32,7 +32,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie die Visual Stu
 ## Szenario  
  In diesem Szenario haben Sie eine Fluiddynamiksimulation geschrieben, die DirectCompute zur Ausführung der berechnungsintensivsten Teile des Simulationsupdates verwendet.  Beim Ausführen der App werden Dataset und Benutzeroberfläche korrekt wiedergegeben, die Simulation verhält sich jedoch nicht wie erwartet.  Mithilfe der Grafikdiagnose können Sie den Fehler in einer Grafikprotokolldatei erfassen, um die App zu debuggen.  Das Problem sieht in der App wie folgt aus:  
   
- ![Das simulierte Fluid verhält sich falsch.](~/docs/debugger/graphics/media/gfx_diag_demo_compute_shader_fluid_problem.png "gfx\_diag\_demo\_compute\_shader\_fluid\_problem")  
+ ![Das simulierte Fluid verhält sich falsch.](~/debugger/graphics/media/gfx_diag_demo_compute_shader_fluid_problem.png "gfx\_diag\_demo\_compute\_shader\_fluid\_problem")  
   
  Informationen zum Erfassen von Grafikproblemen in einem Grafikprotokoll finden Sie unter [Erfassen von Grafikinformationen](../debugger/capturing-graphics-information.md).  
   
@@ -89,7 +89,7 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie die Visual Stu
   
 3.  Überprüfen Sie den Quellcode des Compute\-Shaders auf den Integrationsschritt, um die Fehlerursache zu finden.  Wenn Sie die Grafikdiagnose verwenden, um den HLSL\-Compute\-Shader\-Code zu debuggen, können Sie den Code schrittweise ausführen und andere Ihnen vertraute Debugtools wie Überwachungsfenster verwenden.  In diesem Szenario ermitteln Sie, dass scheinbar kein Fehler im Compute\-Shader vorhanden ist, der den Integrationsschritt ausführt.  
   
-     ![Debuggen des IntegrateCS&#45;Compute&#45;Shaders](~/docs/debugger/graphics/media/gfx_diag_demo_compute_shader_fluid_step_7.png "gfx\_diag\_demo\_compute\_shader\_fluid\_step\_7")  
+     ![Debuggen des IntegrateCS&#45;Compute&#45;Shaders](~/debugger/graphics/media/gfx_diag_demo_compute_shader_fluid_step_7.png "gfx\_diag\_demo\_compute\_shader\_fluid\_step\_7")  
   
 4.  Um das Debugging im Compute\-Shader zu beenden, wählen Sie auf der Symbolleiste **Debuggen** die Option **Debuggen beenden** aus \(Tastatur: UMSCHALT\+F5\).  
   
@@ -101,12 +101,12 @@ In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie die Visual Stu
   
 6.  Überprüfen Sie den Schritt der Kräfteberechnung im Quellcode des Compute\-Shaders.  In diesem Szenario ermitteln Sie, dass die Fehlerquelle sich hier befindet.  
   
-     ![Debuggen des ForceCS&#95;Simple&#45;Compute&#45;Shaders](~/docs/debugger/graphics/media/gfx_diag_demo_compute_shader_fluid_step_9.png "gfx\_diag\_demo\_compute\_shader\_fluid\_step\_9")  
+     ![Debuggen des ForceCS&#95;Simple&#45;Compute&#45;Shaders](~/debugger/graphics/media/gfx_diag_demo_compute_shader_fluid_step_9.png "gfx\_diag\_demo\_compute\_shader\_fluid\_step\_9")  
   
  Nachdem Sie den Ursprung des Fehlers bestimmt haben, können Sie das Debuggen beenden und den Quellcode des Compute\-Shaders dahingehend ändern, dass der Abstand zwischen den interagierenden Partikeln ordnungsgemäß berechnet wird.  In diesem Szenario ändern Sie nur die Zeile `float2 diff = N_position + P_position;` in `float2 diff = N_position - P_position;`:  
   
- ![Der korrigierte Compute&#45;Shader&#45;Code](~/docs/debugger/graphics/media/gfx_diag_demo_compute_shader_fluid_step_10.png "gfx\_diag\_demo\_compute\_shader\_fluid\_step\_10")  
+ ![Der korrigierte Compute&#45;Shader&#45;Code](~/debugger/graphics/media/gfx_diag_demo_compute_shader_fluid_step_10.png "gfx\_diag\_demo\_compute\_shader\_fluid\_step\_10")  
   
  Da die Compute\-Shader zur Laufzeit kompiliert werden, können Sie in diesem Szenario die App nach Durchführung der Änderungen einfach neu starten und beobachten, welche Auswirkung die Änderungen auf die Simulation haben.  Sie müssen die App nicht neu erstellen.  Wenn Sie die App ausführen, können Sie feststellen, dass sich die Simulation nun ordnungsgemäß verhält.  
   
- ![Das simulierte Fluid verhält sich korrekt.](~/docs/debugger/graphics/media/gfx_diag_demo_compute_shader_fluid_resolution.png "gfx\_diag\_demo\_compute\_shader\_fluid\_resolution")
+ ![Das simulierte Fluid verhält sich korrekt.](~/debugger/graphics/media/gfx_diag_demo_compute_shader_fluid_resolution.png "gfx\_diag\_demo\_compute\_shader\_fluid\_resolution")

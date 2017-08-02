@@ -77,7 +77,7 @@ Es gibt viele Möglichkeiten, Code im Debugger zu durchlaufen: Sie können Metho
   
      Um einen einfachen Haltepunkt im Code festzulegen, öffnen Sie die Quellcodedatei im Visual Studio\-Editor. Setzen Sie den Cursor in die Codezeile, in der Sie die Ausführung unterbrechen möchten. Wählen Sie dann im Kontextmenü **Haltepunkt**, **Haltepunkt einfügen** \(Tastatur: **F9**\). Der Debugger unterbricht die Ausführung, kurz bevor die Zeile ausgeführt wird.  
   
-     ![Haltepunkt festlegen](~/docs/debugger/media/dbg_basics_setbreakpoint.png "DBG\_Basics\_SetBreakpoint")  
+     ![Haltepunkt festlegen](~/debugger/media/dbg_basics_setbreakpoint.png "DBG\_Basics\_SetBreakpoint")  
   
      Haltepunkte in Visual Studio bieten einen umfangreichen Satz von zusätzlichen Funktionen, wie z. B. bedingte Haltepunkte und Ablaufverfolgungspunkte. Siehe [Verwenden von Haltepunkten](../debugger/using-breakpoints.md).  
   
@@ -121,7 +121,7 @@ Es gibt viele Möglichkeiten, Code im Debugger zu durchlaufen: Sie können Metho
 ##  <a name="BKMK_Set_the_next_statement_to_execute"></a> Nächste auszuführende Anweisung festlegen  
  Nachdem Sie die Ausführung im Debugger unterbrochen haben, können Sie den Ausführungspunkt verschieben, um die nächste auszuführende Codeanweisung festzulegen. Die Position der nächsten auszuführenden Anweisung wird durch eine gelbe Pfeilspitze am Rand eines Quellcodefensters oder Disassemblierungsfensters markiert. Durch das Verschieben dieser Pfeilspitze können Sie einen Teil des Codes überspringen oder zu einer bereits ausgeführten Zeile zurückkehren. Dies ist zum Beispiel sinnvoll, um einen Codeabschnitt zu überspringen, von dem bereits bekannt ist, dass er einen Fehler enthält.  
   
- ![Example2](~/docs/debugger/media/dbg_basics_example2.png "DBG\_Basics\_Example2")  
+ ![Example2](~/debugger/media/dbg_basics_example2.png "DBG\_Basics\_Example2")  
   
  Zum Festlegen der nächsten auszuführenden Anweisung verwenden Sie eines der folgenden Verfahren:  
   

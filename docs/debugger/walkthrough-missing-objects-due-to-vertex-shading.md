@@ -36,7 +36,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
   
  In diesem Szenario wird beim Ausführen der App zu Testzwecken der Hintergrund erwartungsgemäß gerendert, eins der Objekte wird jedoch nicht dargestellt. Mithilfe der Grafikdiagnose erfassen Sie das Problem in einer Grafikprotokolldatei, um die App zu debuggen. Das Problem sieht in der App wie folgt aus:  
   
- ![Das Objekt ist nicht sichtbar.](~/docs/debugger/graphics/media/gfx_diag_demo_missing_object_shader_problem.png "gfx\_diag\_demo\_missing\_object\_shader\_problem")  
+ ![Das Objekt ist nicht sichtbar.](~/debugger/graphics/media/gfx_diag_demo_missing_object_shader_problem.png "gfx\_diag\_demo\_missing\_object\_shader\_problem")  
   
 ## Untersuchung  
  Mithilfe der Grafikdiagnosetools können Sie die Grafikprotokolldatei laden, um die Frames zu untersuchen, die während des Tests erfasst wurden.  
@@ -80,19 +80,19 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
   
 3.  Bei der ersten Änderung von `output` werden Werte in den Member `worldPos` geschrieben.  
   
-     ![Der Wert von „output.worldPos“ erscheint angemessen.](~/docs/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_4.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_4")  
+     ![Der Wert von „output.worldPos“ erscheint angemessen.](~/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_4.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_4")  
   
      Da diese Werte sinnvoll aussehen, durchlaufen Sie den Code weiter bis zur nächsten Zeile, in der `output` geändert wird.  
   
 4.  Bei der nächsten Änderung von `output` werden Werte in den Member `pos` geschrieben.  
   
-     ![Der Wert von „output.pos“ wurde eliminiert.](~/docs/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_5.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_5")  
+     ![Der Wert von „output.pos“ wurde eliminiert.](~/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_5.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_5")  
   
      Die Werte des `pos`\-Members, nur Nullen, sind allerdings verdächtig. Sie möchten nun herausfinden, warum `output.pos` nur Nullen als Werte hat.  
   
 5.  Sie stellen fest, dass `output.pos` seine Werte aus einer Variablen namens `temp` erhält. Der vorhergehenden Zeile entnehmen Sie, dass der Wert von `temp` das Ergebnis der Multiplikation seines vorherigen Werts mit der Konstante `projection` ist. Sie vermuten, dass der verdächtige Wert von `temp` das Ergebnis dieser Multiplikation ist. Wenn Sie den Mauszeiger auf `projection` setzen, sehen Sie, dass auch der Wert dieser Konstanten nur aus Nullen besteht.  
   
-     ![Die Projektionsmatrix enthält eine ungültige Transformation.](~/docs/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_6.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_6")  
+     ![Die Projektionsmatrix enthält eine ungültige Transformation.](~/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_6.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_6")  
   
      In diesem Fall ergibt die Prüfung, dass der verdächtige Wert von `temp` höchstwahrscheinlich aus der Multiplikation mit `projection` resultiert, denn `projection` ist eine Konstante, die eine Projektionsmatrix darstellen soll, weshalb Sie wissen, dass die Konstante nicht nur Nullen enthalten darf.  
   
@@ -104,7 +104,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
   
 2.  Navigieren Sie in der Aufrufliste im Quellcode Ihrer App nach oben. Wählen Sie im Fenster **Aufrufliste des Grafikereignisses** den obersten Aufruf aus, um festzustellen, ob der Konstantenpuffer dort gefüllt wird. Ist dies nicht der Fall, durchlaufen Sie die Aufrufliste weiter nach oben, bis Sie die Stelle finden, an der der Konstantenpuffer gefüllt wird. In diesem Fall stellen Sie fest, dass der Konstantenpuffer weiter oben in der Aufrufliste in einer Funktion namens `MarbleMaze::Render` über einen Aufruf der Direct3D\-API `UpdateSubresource` gefüllt wird, und dass der Wert des Puffers aus einem Konstantenpufferobjekt namens `m_marbleConstantBufferData` stammt:  
   
-     ![Der Code, der den Konstantenpuffer festlegt](~/docs/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_7.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_7")  
+     ![Der Code, der den Konstantenpuffer festlegt](~/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_7.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_7")  
   
     > [!TIP]
     >  Wenn Sie die App gleichzeitig debuggen, können Sie einen Haltepunkt an dieser Position festlegen, der dann erreicht wird, wenn der nächste Frame gerendert wird. Sie können dann die Member von `m_marbleConstantBufferData` überprüfen, um zu bestätigen, dass der Wert des `projection`\-Members auf lauter Nullen festgelegt wird, wenn der konstante Puffer gefüllt wird.  
@@ -119,12 +119,12 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
   
  Nachdem Sie die Zeile gefunden haben, in der `m_marbleConstantBufferData.projection` festgelegt wird, können Sie den umgebenden Quellcode überprüfen, um den Ursprung des falschen Werts zu bestimmen. In diesem Fall ermitteln Sie, dass der Wert von `m_marbleConstantBufferData.projection` auf eine lokale Variable namens `projection` festgelegt wird, bevor diese mit einem Wert initialisiert wurde, der durch den Code `m_camera->GetProjection(&projection);` in der nächsten Zeile angegeben ist.  
   
- ![Die Marmorprojektion wird vor der Initialisierung festgelegt.](~/docs/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_9.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_9")  
+ ![Die Marmorprojektion wird vor der Initialisierung festgelegt.](~/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_9.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_9")  
   
  Um das Problem zu beheben, verschieben Sie die Codezeile, in der der Wert von `m_marbleConstantBufferData.projection` festgelegt wird, hinter die Zeile, in der der Wert der lokalen Variablen `projection` initialisiert wird.  
   
- ![Der korrigierte C&#43;&#43;&#45;Quellcode](~/docs/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_10.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_10")  
+ ![Der korrigierte C&#43;&#43;&#45;Quellcode](~/debugger/graphics/media/gfx_diag_demo_missing_object_shader_step_10.png "gfx\_diag\_demo\_missing\_object\_shader\_step\_10")  
   
  Nachdem Sie den Code korrigiert haben, können Sie die App erneut erstellen und ausführen, um nun festzustellen, dass das Renderproblem behoben wurde:  
   
- ![Das Objekt wird jetzt angezeigt.](~/docs/debugger/graphics/media/gfx_diag_demo_missing_object_shader_resolution.png "gfx\_diag\_demo\_missing\_object\_shader\_resolution")
+ ![Das Objekt wird jetzt angezeigt.](~/debugger/graphics/media/gfx_diag_demo_missing_object_shader_resolution.png "gfx\_diag\_demo\_missing\_object\_shader\_resolution")

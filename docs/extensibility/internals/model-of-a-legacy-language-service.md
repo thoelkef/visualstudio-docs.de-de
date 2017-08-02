@@ -32,7 +32,7 @@ Ein Sprachdienst definiert die Elemente und Funktionen für eine bestimmte Sprac
   
  Die folgende konzeptionelle Zeichnung zeigt ein Modell eines grundlegenden Sprachdiensts an.  
   
- ![Grafik zum Sprachdienstmodell](~/docs/extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
+ ![Grafik zum Sprachdienstmodell](~/extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
 Grundlegendes Sprachdienst Modells  
   
  Die Dokumentfenster hostet die *Ansicht* des Editors *Dokumente* in diesem Fall der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Kern des Editors.  Die Dokumente und der Textpuffer werden durch den Besitz Editor.  Diese Objekte funktionieren mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] durch ein spezialisiertes Dokumentfenster, das ein *Codefenster*aufgerufen wird.  Das Codefenster wird in einem <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>\-Objekt, das von der IDE erstellt und verwaltet wird.  

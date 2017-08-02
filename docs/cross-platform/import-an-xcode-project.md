@@ -32,11 +32,11 @@ Microsoft Visual C++ für die plattformübergreifende, mobile Entwicklung umfass
   
 1.  Wählen Sie im Menü **Datei** die Optionen **Neu**, **Importieren** **Aus XCode importieren** aus. Dadurch wird das **Aus XCode importieren**-Dialogfeld für den Assistenten gestartet.  
   
-     ![Auswählen des zu importierenden XCode-Zielprojekts](~/docs/cross-platform/media/cppmdd_u2_importxcode_choose.PNG "CPPMDD_U2_ImportXCode_Choose")  
+     ![Auswählen des zu importierenden XCode-Zielprojekts](~/cross-platform/media/cppmdd_u2_importxcode_choose.PNG "CPPMDD_U2_ImportXCode_Choose")  
   
 2.  Wählen Sie im Bereich **Ein Projekt auswählen** die Schaltfläche „Browser“ aus, um eine XCode PBXPROJ-Datei auszuwählen. Navigieren Sie zu der Projektdatei im Dialogfeld **XCode-Projektdatei auswählen**, und wählen Sie anschließend **Öffnen** aus.  
   
-     ![Auswählen einer Projektdatei im Dialogfeld „XCode-Projektdatei auswählen“](~/docs/cross-platform/media/cppmdd_u2_importxcode_browse.PNG "CPPMDD_U2_ImportXCode_Browse")  
+     ![Auswählen einer Projektdatei im Dialogfeld „XCode-Projektdatei auswählen“](~/cross-platform/media/cppmdd_u2_importxcode_browse.PNG "CPPMDD_U2_ImportXCode_Browse")  
   
      Wählen Sie im „Aus XCode importieren“-Assistenten **Weiter** aus.  
   

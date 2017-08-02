@@ -55,7 +55,7 @@ Marker zeigen Kategorien an
 ## <a name="alerts"></a>Benachrichtigungen  
  Eine Warnung ist ein rotfarbiges Flag, das ein wichtiges Anwendungsereignis wie etwa eine Ausnahme angibt.  So sieht eine Warnung aus:  
   
- ![Warnungsmarker für Parallelitätsschnellansicht](~/docs/profiling/media/cvmarkeralert.png "CVMarkerAlert")  
+ ![Warnungsmarker für Parallelitätsschnellansicht](~/profiling/media/cvmarkeralert.png "CVMarkerAlert")  
 Eine Warnung  
   
 ## <a name="aggregation-flags"></a>Aggregationsflags  
@@ -63,7 +63,7 @@ Eine Warnung
   
  Aggregationsflags werden in unterschiedlichen Größen gezeichnet. Die Größe hängt von der Wichtigkeit des wichtigsten Flags in der Aggregation ab. Die folgende Abbildung zeigt die Aggregationsflags in aufsteigender Reihenfolge nach ihrer Wichtigkeit.  
   
- ![Aggregationsflags zeigen vier Wichtigkeitsstufen an](~/docs/profiling/media/cvmarkeraggregate.png "CVMarkerAggregate")  
+ ![Aggregationsflags zeigen vier Wichtigkeitsstufen an](~/profiling/media/cvmarkeraggregate.png "CVMarkerAggregate")  
 Aggregationsflags nach Wichtigkeit  
   
 ## <a name="see-also"></a>Siehe auch  

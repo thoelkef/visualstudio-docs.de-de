@@ -200,7 +200,7 @@ caps.handback.revision: 53
   
     -   Kommentare  
   
-14. In der Liste **Eigenschaften** wählen Sie die Eigenschaft **Sortieren und gruppieren** aus, und wählen Sie die Schaltfläche mit den ![Symbol "Ellipse"](~/docs/sharepoint/media/ellipsisicon.gif "Symbol "Ellipse"") Auslassungszeichen, um das Dialogfeld **Sortieren und gruppieren** anzuzeigen.  
+14. In der Liste **Eigenschaften** wählen Sie die Eigenschaft **Sortieren und gruppieren** aus, und wählen Sie die Schaltfläche mit den ![Symbol "Ellipse"](~/sharepoint/media/ellipsisicon.gif "Symbol "Ellipse"") Auslassungszeichen, um das Dialogfeld **Sortieren und gruppieren** anzuzeigen.  
   
 15. In der Liste **Spaltenname** wählen Sie **Patientenname** aus, überprüfen Sie, ob die Spalte, **Sortieren** auf **Aufsteigend** festgelegt ist, und wählen Sie dann die Schaltfläche **OK** aus.  
   

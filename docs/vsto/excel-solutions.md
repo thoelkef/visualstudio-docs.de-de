@@ -74,7 +74,7 @@ caps.handback.revision: 30
   
  Allgemeine Informationen über die Funktionsweise von VSTO\-Add\-Ins finden Sie unter [Architektur von VSTO-Add-Ins](../vsto/architecture-of-vsto-add-ins.md).  
   
- ![Link zu Video](~/docs/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie unter [How Do I: Automate PowerPoint from an Excel Add\-in?](http://go.microsoft.com/fwlink/?LinkID=130300).  
+ ![Link zu Video](~/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie unter [How Do I: Automate PowerPoint from an Excel Add\-in?](http://go.microsoft.com/fwlink/?LinkID=130300).  
   
 ### Add\-In\-Programmiermodell von Excel  
  Wenn Sie ein Excel\-VSTO\-Add\-In\-Projekt erstellen, generiert Visual Studio eine Klasse namens `ThisAddIn`, die die Grundlage der Projektmappe darstellt. Diese Klasse bietet einen Ausgangspunkt für das Schreiben von Code, und sie macht auch das Excel\-Objektmodell für das VSTO\-Add\-In verfügbar.  

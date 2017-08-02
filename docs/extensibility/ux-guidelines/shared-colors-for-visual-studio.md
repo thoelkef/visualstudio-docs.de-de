@@ -63,7 +63,7 @@ Wenn Sie die Funktion in eine Visual Studio-standardbefehlsleiste verwenden, mü
 
 **Schaltfläche: Standardstatus**
 
-![Standard-Schaltfläche](~/docs/extensibility/ux-guidelines/media/03.03.Button.Standard.png "03.03.Button.Standard")<br />Standard-Schaltfläche
+![Standard-Schaltfläche](~/extensibility/ux-guidelines/media/03.03.Button.Standard.png "03.03.Button.Standard")<br />Standard-Schaltfläche
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -72,7 +72,7 @@ Wenn Sie die Funktion in eine Visual Studio-standardbefehlsleiste verwenden, mü
 
 **Schaltfläche: Standardstatus**
 
-![Standardschaltfläche](~/docs/extensibility/ux-guidelines/media/03.03.Button.Default.png "03.03.Button.Default")<br />Standardschaltfläche
+![Standardschaltfläche](~/extensibility/ux-guidelines/media/03.03.Button.Default.png "03.03.Button.Default")<br />Standardschaltfläche
 
 | Element | Tokenname: Category.color | 
 | --- | --- | 
@@ -81,7 +81,7 @@ Wenn Sie die Funktion in eine Visual Studio-standardbefehlsleiste verwenden, mü
 
 **Die Taste: deaktiviert**  
 
-![Deaktivierte Schaltfläche](~/docs/extensibility/ux-guidelines/media/03.03.Button.Disabled.png "03.03.Button.Disabled")<br />Deaktivierte Schaltfläche  
+![Deaktivierte Schaltfläche](~/extensibility/ux-guidelines/media/03.03.Button.Disabled.png "03.03.Button.Disabled")<br />Deaktivierte Schaltfläche  
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -90,7 +90,7 @@ Wenn Sie die Funktion in eine Visual Studio-standardbefehlsleiste verwenden, mü
 
 **Schaltfläche: Hoverzustand**  
 
-![Schaltfläche, wenn darauf gezeigt wird](~/docs/extensibility/ux-guidelines/media/03.03.Button.hover.png "03.03.Button.hover")<br />Schaltfläche, wenn darauf gezeigt wird  
+![Schaltfläche, wenn darauf gezeigt wird](~/extensibility/ux-guidelines/media/03.03.Button.hover.png "03.03.Button.hover")<br />Schaltfläche, wenn darauf gezeigt wird  
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -99,7 +99,7 @@ Wenn Sie die Funktion in eine Visual Studio-standardbefehlsleiste verwenden, mü
 
 **Schaltfläche: Zustand "gedrückt"**  
 
-![Schaltfläche im gedrückten Zustand](~/docs/extensibility/ux-guidelines/media/03.03.Button.Pressed.png "03.03.Button.Pressed")<br />Schaltfläche im gedrückten Zustand  
+![Schaltfläche im gedrückten Zustand](~/extensibility/ux-guidelines/media/03.03.Button.Pressed.png "03.03.Button.Pressed")<br />Schaltfläche im gedrückten Zustand  
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -108,7 +108,7 @@ Wenn Sie die Funktion in eine Visual Studio-standardbefehlsleiste verwenden, mü
 
 **Schaltfläche: mit Fokus Zustand**  
 
-![Schaltfläche mit Fokus](~/docs/extensibility/ux-guidelines/media/03.03.Button.Focused.png "03.03.Button.Focused")<br />Schaltfläche mit Fokus  
+![Schaltfläche mit Fokus](~/extensibility/ux-guidelines/media/03.03.Button.Focused.png "03.03.Button.Focused")<br />Schaltfläche mit Fokus  
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -340,7 +340,7 @@ Spaltenheader setzen sich aus Hintergrund, Rahmen, Titeltext und einer optionale
 #### <a name="instructional-text"></a>Hinweistext
 Hinweistext bietet eine deutliche main Erklärung der Vorgehensweise in einem Dialogfeld oder Dokument.
 
-![Standard-Anweisungstext](~/docs/extensibility/ux-guidelines/media/0303_InstructionalText.png "0303_InstructionalText.png")<br />Standard-Anweisungstext
+![Standard-Anweisungstext](~/extensibility/ux-guidelines/media/0303_InstructionalText.png "0303_InstructionalText.png")<br />Standard-Anweisungstext
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -349,7 +349,7 @@ Hinweistext bietet eine deutliche main Erklärung der Vorgehensweise in einem Di
 #### <a name="secondary-instructional-text"></a>Sekundäre Anweisungstext
 In der Dokumentseite mit vielen von Text und Steuerelementen verwendet einige Anweisungstext einen andere Farbe-Wert. Dies hilft, vermitteln, welche Informationen am wichtigsten ist, und verringern die gesamte Dichte Elemente der Benutzeroberfläche. (Siehe auch die im folgenden Abschnitt auf den Hinweistext.)
 
-![Sekundäre Anweisungstext](~/docs/extensibility/ux-guidelines/media/0303_SecondaryInstructionalText.png "0303_SecondaryInstructionalText.png")<br />Sekundäre Anweisungstext
+![Sekundäre Anweisungstext](~/extensibility/ux-guidelines/media/0303_SecondaryInstructionalText.png "0303_SecondaryInstructionalText.png")<br />Sekundäre Anweisungstext
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -360,7 +360,7 @@ Hinweistext wird angezeigt, in ein leeres Steuerelement, das unter einem Steuere
 
 **Standard-Hinweistext**
 
-![Standard-Hinweistext](~/docs/extensibility/ux-guidelines/media/0303_HintText.png "0303_HintText.png")<br />Standard-Hinweistext
+![Standard-Hinweistext](~/extensibility/ux-guidelines/media/0303_HintText.png "0303_HintText.png")<br />Standard-Hinweistext
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -368,7 +368,7 @@ Hinweistext wird angezeigt, in ein leeres Steuerelement, das unter einem Steuere
 
 **Erforderliche Hinweistext**
 
-![Erforderliche Hinweistext](~/docs/extensibility/ux-guidelines/media/0303_RequiredHintText.png "0303_RequiredHintText.png")<br />Erforderliche Hinweistext
+![Erforderliche Hinweistext](~/extensibility/ux-guidelines/media/0303_RequiredHintText.png "0303_RequiredHintText.png")<br />Erforderliche Hinweistext
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -379,7 +379,7 @@ Hinweistext wird angezeigt, in ein leeres Steuerelement, das unter einem Steuere
 
 > Finden Sie unter [suchen Felder](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_SearchBoxes) für andere im Zusammenhang mit dem Suchsteuerelement farbtoken.
 
-![Text in Meldungsfeldern Steuerelement suchen](~/docs/extensibility/ux-guidelines/media/0303_SearchBoxControl.png "0303_SearchBoxControl.png")<br />Text in Meldungsfeldern Steuerelement suchen
+![Text in Meldungsfeldern Steuerelement suchen](~/extensibility/ux-guidelines/media/0303_SearchBoxControl.png "0303_SearchBoxControl.png")<br />Text in Meldungsfeldern Steuerelement suchen
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -447,7 +447,7 @@ Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Konte
 
 **Infoleiste schließen (&times;) Schaltfläche: Standardstatus**
 
-![Standardmäßig schließen Infoleiste (&times;) Schaltfläche](~/docs/extensibility/ux-guidelines/media/0303_InfobarCloseDefault.png "0303_InfobarCloseDefault.png")<br />Standardmäßig schließen Infoleiste (&times;) Schaltfläche
+![Standardmäßig schließen Infoleiste (&times;) Schaltfläche](~/extensibility/ux-guidelines/media/0303_InfobarCloseDefault.png "0303_InfobarCloseDefault.png")<br />Standardmäßig schließen Infoleiste (&times;) Schaltfläche
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -457,7 +457,7 @@ Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Konte
 
 **Infoleiste schließen (&times;) Schaltfläche: Zeigen Sie mit Status**
 
-![Infoleiste schließen (&times;) Schaltfläche, wenn darauf gezeigt wird](~/docs/extensibility/ux-guidelines/media/0303_InfobarCloseHover.png "0303_InfobarCloseHover.png")<br />Infoleiste schließen (&times;) Schaltfläche, wenn darauf gezeigt wird
+![Infoleiste schließen (&times;) Schaltfläche, wenn darauf gezeigt wird](~/extensibility/ux-guidelines/media/0303_InfobarCloseHover.png "0303_InfobarCloseHover.png")<br />Infoleiste schließen (&times;) Schaltfläche, wenn darauf gezeigt wird
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -467,7 +467,7 @@ Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Konte
 
 **Infoleiste schließen (&times;) Schaltfläche: gedrückten Zustand**
 
-![Infoleiste schließen gedrückt (&times;) Schaltfläche](~/docs/extensibility/ux-guidelines/media/0303_InfobarClosePressed.png "0303_InfobarClosePressed.png")<br />Infoleiste schließen gedrückt (&times;) Schaltfläche
+![Infoleiste schließen gedrückt (&times;) Schaltfläche](~/extensibility/ux-guidelines/media/0303_InfobarClosePressed.png "0303_InfobarClosePressed.png")<br />Infoleiste schließen gedrückt (&times;) Schaltfläche
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -477,7 +477,7 @@ Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Konte
 
 **Infoleiste Hyperlink-Schaltfläche: Standardstatus**
 
-![Infoleiste Hyperlink-Standardschaltfläche](~/docs/extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonDefault.png "0303_InfobarHyperlinkButtonDefault.png")<br />Infoleiste Hyperlink-Standardschaltfläche
+![Infoleiste Hyperlink-Standardschaltfläche](~/extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonDefault.png "0303_InfobarHyperlinkButtonDefault.png")<br />Infoleiste Hyperlink-Standardschaltfläche
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -485,7 +485,7 @@ Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Konte
 
 **Infoleiste Hyperlink-Schaltfläche: Zeigen Sie mit Status**
 
-![Infoleiste Hyperlink-Schaltfläche, wenn darauf gezeigt wird](~/docs/extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonHover.png "0303_InfobarHyperlinkButtonHover.png")<br />Infoleiste Hyperlink-Schaltfläche, wenn darauf gezeigt wird
+![Infoleiste Hyperlink-Schaltfläche, wenn darauf gezeigt wird](~/extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonHover.png "0303_InfobarHyperlinkButtonHover.png")<br />Infoleiste Hyperlink-Schaltfläche, wenn darauf gezeigt wird
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -493,7 +493,7 @@ Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Konte
 
 **Infoleiste Hyperlink-Schaltfläche: gedrückten Zustand**
 
-![Hyperlink-Schaltfläche gedrückt Infoleiste](~/docs/extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonPressed.png "0303_InfobarHyperlinkButtonPressed.png")<br />Hyperlink-Schaltfläche gedrückt Infoleiste
+![Hyperlink-Schaltfläche gedrückt Infoleiste](~/extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonPressed.png "0303_InfobarHyperlinkButtonPressed.png")<br />Hyperlink-Schaltfläche gedrückt Infoleiste
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -501,7 +501,7 @@ Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Konte
 
 **Infoleiste Inline Hyperlink (innerhalb eines Satzes): Standardstatus**
 
-![Eingebettete Infoleiste Hyperlink Standardschaltfläche](~/docs/extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonDefault.png "0303_InfobarHyperlinkButtonDefault.png")<br />Eingebettete Infoleiste Hyperlink Standardschaltfläche
+![Eingebettete Infoleiste Hyperlink Standardschaltfläche](~/extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonDefault.png "0303_InfobarHyperlinkButtonDefault.png")<br />Eingebettete Infoleiste Hyperlink Standardschaltfläche
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -509,7 +509,7 @@ Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Konte
 
 **Infoleiste Inline Hyperlink (innerhalb eines Satzes): Zeigen Sie mit Status**
 
-![Infoleiste Inline Hyperlink-Schaltfläche, wenn darauf gezeigt wird](~/docs/extensibility/ux-guidelines/media/0303_InfobarHyperlinkInlineHover.png "0303_InfobarHyperlinkInlineHover.png")<br />Infoleiste Inline Hyperlink-Schaltfläche, wenn darauf gezeigt wird
+![Infoleiste Inline Hyperlink-Schaltfläche, wenn darauf gezeigt wird](~/extensibility/ux-guidelines/media/0303_InfobarHyperlinkInlineHover.png "0303_InfobarHyperlinkInlineHover.png")<br />Infoleiste Inline Hyperlink-Schaltfläche, wenn darauf gezeigt wird
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -517,7 +517,7 @@ Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Konte
 
 **Infoleiste Inline Hyperlink (innerhalb eines Satzes): gedrückten Zustand**
 
-![Infoleiste Inline Hyperlink-Schaltfläche gedrückt](~/docs/extensibility/ux-guidelines/media/0303_InfobarHyperlinkInlinePressed.png "0303_InfobarHyperlinkInlinePressed.png")<br />Infoleiste Inline Hyperlink-Schaltfläche gedrückt
+![Infoleiste Inline Hyperlink-Schaltfläche gedrückt](~/extensibility/ux-guidelines/media/0303_InfobarHyperlinkInlinePressed.png "0303_InfobarHyperlinkInlinePressed.png")<br />Infoleiste Inline Hyperlink-Schaltfläche gedrückt
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -525,7 +525,7 @@ Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Konte
 
 **Infoleiste Schaltfläche: Standardstatus**
 
-![Infoleiste Standardschaltfläche](~/docs/extensibility/ux-guidelines/media/0303_InfobarButtonDefault.png "0303_InfobarButtonDefault.png")<br />Infoleiste Standardschaltfläche
+![Infoleiste Standardschaltfläche](~/extensibility/ux-guidelines/media/0303_InfobarButtonDefault.png "0303_InfobarButtonDefault.png")<br />Infoleiste Standardschaltfläche
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -535,7 +535,7 @@ Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Konte
 
 **Infoleiste Schaltfläche: Zeigen Sie mit Status**
 
-![Infoleiste-Schaltfläche, wenn darauf gezeigt wird](~/docs/extensibility/ux-guidelines/media/0303_InfobarButtonHover.png "0303_InfobarButtonHover.png")<br />Infoleiste-Schaltfläche, wenn darauf gezeigt wird
+![Infoleiste-Schaltfläche, wenn darauf gezeigt wird](~/extensibility/ux-guidelines/media/0303_InfobarButtonHover.png "0303_InfobarButtonHover.png")<br />Infoleiste-Schaltfläche, wenn darauf gezeigt wird
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -545,7 +545,7 @@ Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Konte
 
 **Infoleiste Schaltfläche: gedrückten Zustand**
 
-![Infoleiste gedrückten Schaltfläche](~/docs/extensibility/ux-guidelines/media/0303_InfobarButtonPressed.png "0303_InfobarButtonPressed.png")<br />Infoleiste gedrückten Schaltfläche
+![Infoleiste gedrückten Schaltfläche](~/extensibility/ux-guidelines/media/0303_InfobarButtonPressed.png "0303_InfobarButtonPressed.png")<br />Infoleiste gedrückten Schaltfläche
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -555,7 +555,7 @@ Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Konte
 
 **Infoleiste Schaltfläche: den deaktivierten Zustand**
 
-![Deaktivierte Infoleiste-Schaltfläche](~/docs/extensibility/ux-guidelines/media/0303_InfobarButtonDisabled.png "0303_InfobarButtonDisabled.png")<br />Deaktivierte Infoleiste-Schaltfläche
+![Deaktivierte Infoleiste-Schaltfläche](~/extensibility/ux-guidelines/media/0303_InfobarButtonDisabled.png "0303_InfobarButtonDisabled.png")<br />Deaktivierte Infoleiste-Schaltfläche
 
 | Element | Tokenname: Category.color |
 | --- | --- |
@@ -565,7 +565,7 @@ Infoleisten werden verwendet, um weitere Informationen zu einem bestimmten Konte
 
 **Infoleiste Schaltfläche: mit Fokus Zustand**
 
-![Schaltfläche mit Fokus Infoleiste](~/docs/extensibility/ux-guidelines/media/0303_InfobarButtonFocus.png "0303_InfobarButtonFocus.png")<br />Schaltfläche mit Fokus Infoleiste
+![Schaltfläche mit Fokus Infoleiste](~/extensibility/ux-guidelines/media/0303_InfobarButtonFocus.png "0303_InfobarButtonFocus.png")<br />Schaltfläche mit Fokus Infoleiste
 
 | Element | Tokenname: Category.color |
 | --- | --- |

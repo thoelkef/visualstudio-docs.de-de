@@ -51,7 +51,7 @@ caps.handback.revision: 78
 > [!NOTE]  
 >  Einige Aufgaben können mit dem Menüband\-Designer nicht ausgeführt werden.  Weitere Informationen zu diesen Aufgaben und zu deren Ausführung finden Sie unter [Übersicht über die Multifunktionsleiste](../vsto/ribbon-overview.md).  
   
- ![Link zu Video](~/docs/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie im Thema zur [Verwendung des Menüband\-Designers zum Anpassen des Menübands in Outlook](http://go.microsoft.com/fwlink/?LinkID=130312).  
+ ![Link zu Video](~/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie im Thema zur [Verwendung des Menüband\-Designers zum Anpassen des Menübands in Outlook](http://go.microsoft.com/fwlink/?LinkID=130312).  
   
 ## Hinzufügen eines Elements von Menüband \(Visual Designer\) zu einem Projekt  
  Fügen Sie zum Verwenden des Menüband\-Designers dem Projekt ein neues Element von **Menüband \(Visual Designer\)** hinzu.  Weitere Informationen finden Sie unter [Gewusst wie: Erste Schritte beim Anpassen der Multifunktionsleiste](../vsto/how-to-get-started-customizing-the-ribbon.md).  
@@ -109,7 +109,7 @@ caps.handback.revision: 78
   
 -   Öffnen Sie den **Registerkartenauflistungs\-Editor**, und klicken Sie anschließend auf **Hinzufügen**.  
   
-     Wählen Sie zum Öffnen von **Registerkartenauflistungs\-Editor** im Fenster **Eigenschaften** die **Tabs**\-Eigenschaft, und klicken Sie anschließend auf die Schaltfläche mit den Auslassungszeichen ![Auslassungszeichen im ASP.NET Mobile-Designer](~/docs/sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer").  
+     Wählen Sie zum Öffnen von **Registerkartenauflistungs\-Editor** im Fenster **Eigenschaften** die **Tabs**\-Eigenschaft, und klicken Sie anschließend auf die Schaltfläche mit den Auslassungszeichen ![Auslassungszeichen im ASP.NET Mobile-Designer](~/sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer").  
   
  Nach dem Hinzufügen einer Registerkarte können Gruppen mit Steuerelementen hinzugefügt werden.  
   

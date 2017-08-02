@@ -25,7 +25,7 @@ Das verlaufsbezogene Debuggen ist ein Debug\-Modus, der von den durch IntelliTra
 ## Warum verlaufsbezogenes Debugging?  
  Das Festlegen von Haltepunkten zum Auffinden von Fehlern ist eher eine unsichere Angelegenheit.  Sie legen einen Haltepunkt in der Nähe der Stelle im Code fest, an der Sie einen Fehler vermuten, führen dann die Anwendung im Debugger aus, hoffen, dass der Haltepunkt erreicht wird, und dass die Stelle, an der die Ausführung unterbrochen wurde, die Ursache des Fehlers aufdeckt.  Wenn dies nicht der Fall ist, müssen Sie versuchen, einen Haltepunkt an anderer Stelle im Code festzulegen und den Debugger erneut auszuführen. Diese Testschritte müssen Sie so oft wiederholen, bis Sie das Problem gefunden haben.  
   
- ![Festlegen eines Haltepunkts](~/docs/debugger/media/breakpointprocesa.png "BreakpointProcesa")  
+ ![Festlegen eines Haltepunkts](~/debugger/media/breakpointprocesa.png "BreakpointProcesa")  
   
  Mit IntelliTrace und dem verlaufsbezogenen Debugging können Sie Ihre Anwendung durchgehen und den Status überprüfen \(Aufrufliste und lokale Variablen\), ohne Haltepunkte festzulegen, den Debugvorgang neu zu starten und  die Testschritte zu wiederholen.  Dadurch sparen Sie viel Zeit, besonders wenn der Fehler sich tief in einem Testszenario verbirgt, das azum Ausführen viel Zeit erfordert.  
   
@@ -71,7 +71,7 @@ private static int AddInt(int add)
   
 4.  Öffnen Sie das Fenster **Diagnosetools** \(**Debuggen \/ Diagnosetools anzeigen**\).  Das Code\-Fenster sieht wie folgt aus:  
   
-     ![Codefenster am Haltepunkt](~/docs/debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
+     ![Codefenster am Haltepunkt](~/debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
   
 5.  Neben dem linken Rand sollte ein doppelter Pfeil angezeigt werden, genau über dem Haltepunkt.  Dieser Bereich wird als Navigationsbundsteg bezeichnet und dient zum verlaufsbezogenen Debuggen.  Klicken Sie auf den Pfeil.  
   
@@ -79,7 +79,7 @@ private static int AddInt(int add)
   
      Das Codefenster sieht nun folgendermaßen aus:  
   
-     ![Codefenster im verlaufsbezogenen Debuggingmodus](~/docs/debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
+     ![Codefenster im verlaufsbezogenen Debuggingmodus](~/debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
   
 6.  Jetzt können Sie auf die `AddAll()`\-Methode \(**F11** , oder die **Einzelschritt**\-Schaltfläche auf dem Navigationsbundsteg zugreifen.  Fahren Sie mit \(**F10**, oder **Zum nächsten Aufruf wechseln** im Navigationsbundsteg fort.  Die rosa Linie befindet sich jetzt in der `j = AddInt(j);`\-Zeile.  Durch Drücken von **F10** gelangen Sie in diesem Fall nicht in die nächste Codezeile.  Stattdessen fährt es mit dem nächsten Funktionsaufruf fort.  Das verlaufsbezogene Debugging navigiert von Aufruf zu Aufruf, und überspringt Codezeilen, die nicht in einem Funktionsaufruf enthalten sind.  
   

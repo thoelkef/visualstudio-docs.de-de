@@ -48,7 +48,7 @@ Visual Studio weist eine Reihe von Toolfenstern, Menüs und Symbolleisten auf, d
 ### <a name="code-editor"></a>Code-Editor
 Eins der besonders intensiv verwendeten Toolfenster in Visual Studio – dies ist der Ort, an dem Sie Ihren Code erstellen, anzeigen und in ihm navigieren.
 
-![Code-Editor](~/docs/ide/media/VSIDE_CodeWindow.png)
+![Code-Editor](~/ide/media/VSIDE_CodeWindow.png)
 
 Wenn Sie Code eingeben, hilft Ihnen der Code-Editor mithilfe von Features wie Anweisungsvervollständigung, farbiger Syntaxhervorhebung, Zuordnungsmodus und mehr, Ihren Code schneller und einfacher zu erstellen und zu finden. Weitere Informationen finden Sie im Video [Getting Started with Visual Studio - Editing and navigating your code](https://www.youtube.com/watch?v=4glwwioCVjA&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=5) (Erste Schritte mit Visual Studio: Bearbeiten von und Navigieren in Code)
 
@@ -58,22 +58,22 @@ Einige Projektmappentypen enthalten möglicherweise als *Formulare* bezeichnete 
 
 Ein Toolfenster mit dem Namen **Projektmappen-Explorer** listet Ihre sämtlichen Codedateien auf. Der Projektmappen-Explorer kann Sie beim Ordnen Ihres Codes unterstützen, indem er dessen Dateien in Projektmappen und Projekte gruppiert. Das fett formatierte Projekt wird als *Startprojekt* bezeichnet. Das ist der erste Code, der beim Starten Ihrer Projektmappe ausgeführt wird. Sie können das Startprojekt ändern. Weitere Informationen finden Sie im Video [Getting Started with Visual Studio – Building blocks of the IDE](https://www.youtube.com/watch?v=JHc3_gsCmZg&index=2&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK) (Erste Schritte mit Visual Studio: Bausteine der IDE)
 
-![Zugeklappte Knoten im Projektmappen-Explorer](~/docs/ide/media/VSIDE_SolutionExplorer2_callouts.png)
+![Zugeklappte Knoten im Projektmappen-Explorer](~/ide/media/VSIDE_SolutionExplorer2_callouts.png)
 
  Über Projektmappen und Projekte hinaus sind im Projektmappen-Explorer alle Dateien in den einzelnen Projekten aufgelistet, wenn Sie den Knoten des jeweiligen Projekts aufklappen. Jedes Projekt enthält mindestens eine Datei, meistens aber mehrere, wie etwa Quellcodedateien und Ressourcendateien, so etwa Bilder und Bibliotheken.
 
-![Projektmappen-Explorer](~/docs/ide/media/VSIDE_SolutionExplorer3.png)
+![Projektmappen-Explorer](~/ide/media/VSIDE_SolutionExplorer3.png)
 
 Um Eigenschaften für Projektmappen, Projekte und Dateien anzuzeigen, wählen Sie im Kontextmenü (das Sie über die rechte Maustaste erreichen) den Befehl **Eigenschaften** aus, oder wählen Sie im Menü **Ansicht > Eigenschaftenfenster** aus.
 
-![Eigenschaftenfenster](~/docs/ide/media/VSIDE_SolutionExplorer4.png)
+![Eigenschaftenfenster](~/ide/media/VSIDE_SolutionExplorer4.png)
 
 Sie brauchen aber keine Projektmappe und kein Projekt zu erstellen, um mit der Codeerstellung zu beginnen. Sie können einfach direkt einsteigen und Codedateien in Visual Studio öffnen, z. B. aus einem Git-Repository geklonte Dateien, und direkt mit der Bearbeitung beginnen. Die Dateien werden im Projektmappen-Explorer angezeigt und erhalten farbige Syntaxhervorhebung, einfache Anweisungsvervollständigung und mehr, ganz wie herkömmliche Projektmappen. Weitere Informationen finden Sie unter [Entwickeln von Code in Visual Studio ohne Projekte oder Projektmappen](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
 
 ### <a name="toolbar-and-menus"></a>Symbolleisten und Menüs
 Um Ihr Projekt auszuführen, neue Projektmappen zu erstellen, Dateien zu speichern und mehr, verwenden Sie die Symbolleiste und die Menübefehle von Visual Studio. Sobald Ihr Code beispielsweise zur Ausführung zum Debuggen bereit ist, können Sie die Schaltfläche **Start** auf der Symbolleiste oder im Menü **Debuggen > Debuggen starten** auswählen. Um eine neue Projektmappe zu erstellen, wählen Sie die Schaltfläche **Neues Projekt** oder im Menü **Datei > Neues Projekt** usw. aus.
 
-![Visual Studio-Symbolleiste](~/docs/ide/media/VSIDE_SolutionExplorer5_callouts.png)
+![Visual Studio-Symbolleiste](~/ide/media/VSIDE_SolutionExplorer5_callouts.png)
 
 Beachten Sie, dass sich die Symbole der Symbolleiste und die in Menüs verfügbaren Befehle abhängig vom Kontext – das ist das aktuell ausgewählte Element – ändern können. Fast alle Befehle können sowohl über Tastenkombinationen als auch per Maus aufgerufen werden.
 
@@ -87,7 +87,7 @@ Weitere Informationen finden Sie in den Videos [Getting Started with Visual Stud
 ### <a name="output-window"></a>Ausgabefenster
 Das Fenster **Ausgabe** ist der Ort, an den Visual Studio Benachrichtigungen sendet, z. B. Debug- und Fehlermeldungen, Compilerwarnungen, Nachrichten zum Veröffentlichungsstatus und mehr. Jeder Nachrichtentyp verfügt über eine eigene Registerkarte.
 
-![Ausgabefenster](~/docs/ide/media/VSIDE_OutputWindow.png)
+![Ausgabefenster](~/ide/media/VSIDE_OutputWindow.png)
 
 Weitere Informationen zum Verwenden des Ausgabefensters beim Debuggen finden Sie unter [The Output window while debugging with Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2015/02/09/the-output-window-while-debugging-with-visual-studio/) (Das Ausgabefenster beim Debuggen mit Visual Studio).
 
@@ -105,7 +105,7 @@ Wenn Sie cloudbasierte Ressourcen in Ihrer App oder Ihrem Spiel verwenden möcht
 
 Nach dem Installieren der Arbeitsauslastung für Azure-Entwicklung ist in Visual Studio ein neues Toolfenster mit dem Namen **Cloud-Explorer** verfügbar. Mit Cloud-Explorer können Sie Ihre Azure-Objekte und Ressourcen aus Visual Studio heraus durchsuchen und verwalten. Wenn für einen bestimmten Vorgang das Azure-Portal erforderlich ist, stellt Cloud-Explorer Verknüpfungen bereit, mit denen Sie an den richtigen Ort im Azure-Portal gelangen.
 
-![Cloud-Explorer](~/docs/ide/media/VSIDE_CloudExplorer.png)
+![Cloud-Explorer](~/ide/media/VSIDE_CloudExplorer.png)
 
 Weitere Informationen zur Verwendung von Cloud-Explorer finden Sie unter [Verwalten von Azure-Ressourcen mit dem Cloud-Explorer](https://azure.microsoft.com/en-us/documentation/articles/vs-azure-tools-resources-managing-with-cloud-explorer/).
 Durch das Installieren der Arbeitsauslastung für Azure-Entwicklung erhalten Sie außerdem Zugriff auf die [Visual Studio Tools für Azure](https://www.visualstudio.com/vs/azure-tools/) sowie auf weitere zugehörige Tools.

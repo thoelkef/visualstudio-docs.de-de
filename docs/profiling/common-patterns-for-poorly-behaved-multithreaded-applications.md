@@ -25,7 +25,7 @@ caps.handback.revision: 12
 Die Parallelitätsschnellansicht ermöglicht Entwicklern die visuelle Darstellung des Verhaltens einer Multithreadanwendung.  Dieses Tool enthält einen Katalog mit häufigen Mustern von Multithreadanwendungen mit unerwünschtem Verhalten.  Der Katalog umfasst typische und erkennbare visuelle Muster, die durch das Tool verfügbar gemacht werden. Außerdem wird das Verhalten erläutert, das durch das jeweilige Muster dargestellt wird, und das wahrscheinliche Ergebnis des Verhaltens und der gängigste Ansatz zu seiner Lösung werden aufgezeigt.  
   
 ## Sperrenkonflikte und serialisierte Ausführung  
- ![Konflikt bei Sperre, der zu serialisierter Ausführung führt](~/docs/profiling/media/lockcontention_serialized.png "LockContention\_Serialized")  
+ ![Konflikt bei Sperre, der zu serialisierter Ausführung führt](~/profiling/media/lockcontention_serialized.png "LockContention\_Serialized")  
   
  Eine parallelisierte Anwendung wird manchmal weiter seriell ausgeführt, obwohl mehrere Threads vorhanden sind und der Computer über eine ausreichende Anzahl von logischen Kernen verfügt.  Das erste Symptom ist eine schlechte Multithreadleistung – unter Umständen sogar noch etwas schlechter als bei der seriellen Implementierung.  In der Threadansicht werden keine parallel ausgeführten Threads angezeigt. Stattdessen sehen Sie, dass immer nur ein einzelner Thread ausgeführt wird.  Wenn Sie an diesem Punkt in einem Thread auf ein Synchronisierungssegment klicken, werden eine Aufrufliste für den blockierten Thread \(Aufrufliste für Blockierungen\) sowie der Thread angezeigt, von dem die Blockierbedingung entfernt wurde \(Aufrufliste für Blockierungsaufhebungen\).  Wenn die Aufrufliste für die Blockierungsaufhebung Teil des zu analysierenden Prozesses ist, wird auch ein threadkompatibler Konnektor angezeigt.  Von dieser Position können Sie zum Code der Aufruflisten für die Blockierung und für die Blockierungsaufhebung navigieren, um die Ursache der Serialisierung genauer zu untersuchen.  
   
@@ -36,7 +36,7 @@ Die Parallelitätsschnellansicht ermöglicht Entwicklern die visuelle Darstellun
  ![Konflikt bei Sperre](../profiling/media/lockcontention_2.png "LockContention\_2")  
   
 ## Ungleiche Arbeitslastverteilung  
- ![Ungleiche Arbeitsauslastung](~/docs/profiling/media/unevenworkload_1.png "UnevenWorkLoad\_1")  
+ ![Ungleiche Arbeitsauslastung](~/profiling/media/unevenworkload_1.png "UnevenWorkLoad\_1")  
   
  Bei einer unregelmäßigen Verteilung der Arbeitslast auf mehrere parallele Threads in einer Anwendung ritt nach Abschluss der Ausführung der Threads ein typisches Treppenmuster auf, wie in der obigen Abbildung dargestellt. Die Parallelitätsschnellansicht zeigt i. d. R. sehr nahe beieinander liegende Startzeiten für die einzelnen parallelen Threads an.  Normalerweise werden diese Threads jedoch nicht gleichzeitig, sondern unregelmäßig beendet.  Dieses Muster deutet auf eine unregelmäßige Verteilung der Arbeitslast in einer Gruppe paralleler Threads hin, was sich negativ auf die Leistung auswirken kann.  Die beste Methode dieses Problem zu beheben, besteht darin, den Algorithmus erneut auszuwerten, mit dem die Arbeitslast auf mehrere parallele Threads aufgeteilt wurde.  
   

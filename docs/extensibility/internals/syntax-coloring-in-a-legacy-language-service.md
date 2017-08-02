@@ -25,7 +25,7 @@ caps.handback.revision: 22
 ## Modell der farbigen Darstellung  
  Der Sprachdienst implementiert die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>\-Schnittstelle, die dann von Editoren verwendet wird.  Diese Implementierung ist ein separates Objekt aus dem Sprachdienst, wie in der folgenden Abbildung gezeigt.  
   
- ![Grafik zur SVC&#45;Farbdarstellung](~/docs/extensibility/internals/media/figlgsvccolorizer.gif "FigLgSvcColorizer")  
+ ![Grafik zur SVC&#45;Farbdarstellung](~/extensibility/internals/media/figlgsvccolorizer.gif "FigLgSvcColorizer")  
 Einfaches Modell der farbigen Darstellung  
   
 > [!NOTE]

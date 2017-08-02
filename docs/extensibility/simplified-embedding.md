@@ -21,7 +21,7 @@ caps.handback.revision: 16
 
 Vereinfachte Einbettung ist in einem Editor aktiviert sein, wenn die Dokumente Objekt ist \(d. h. ein untergeordnetes Element\), [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]gemachte untergeordnet, und die <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>\-Schnittstelle wird implementiert, um die zugehörigen Befehle Fenster zu behandeln.  Vereinfacht kann das Einbetten von Editoren keine aktive Steuerelemente des Hosts.  Die Objekte, die verwendet werden, um einen Editor mit vereinfachter Einbettung zu erstellen, werden in der folgenden Abbildung gezeigt.  
   
- ![Grafik zum vereinfachten Einbettungs&#45;Editor](~/docs/extensibility/media/vssimplifiedembeddingeditor.gif "vsSimplifiedEmbeddingEditor")  
+ ![Grafik zum vereinfachten Einbettungs&#45;Editor](~/extensibility/media/vssimplifiedembeddingeditor.gif "vsSimplifiedEmbeddingEditor")  
 Editor mit dem Einbetten vereinfachter  
   
 > [!NOTE]

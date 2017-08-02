@@ -49,7 +49,7 @@ Entwickler, die .NET Framework\-Sprachen verwenden, sind mit der Debuggerfunktio
 > [!NOTE]
 >  Die Einstellung **Externen Code anzeigen** wird im Profiler des aktuellen Benutzers gespeichert.  Sie wird auf alle Projekte in allen Sprachen angewendet, die von dem Benutzer geöffnet werden.  
   
- ![Zurück nach oben](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents)  
+ ![Zurück nach oben](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents)  
   
 ##  <a name="BKMK__NET_Framework_Just_My_Code"></a> "Nur eigenen Code" in .NET Framework  
  [Benutzer- und Nichtbenutzercode](#BKMK_NET_User_and_non_user_code) **&#124;** [Schrittverhalten](#BKMK_NET_Stepping_behavior) **&#124;** [Haltepunktverhalten](#BKMK_NET_Breakpoint_behavior) **&#124;** [Ausnahmeverhalten](#BKMK_NET_Exception_behavior)  
@@ -71,24 +71,24 @@ Entwickler, die .NET Framework\-Sprachen verwenden, sind mit der Debuggerfunktio
   
  Der übrige Code wird als Benutzercode angesehen.  
   
- ![Zurück nach oben](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents) **&#124;** ["Nur eigenen Code" in .NET Framework](#BKMK__NET_Framework_Just_My_Code)  
+ ![Zurück nach oben](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents) **&#124;** ["Nur eigenen Code" in .NET Framework](#BKMK__NET_Framework_Just_My_Code)  
   
 ###  <a name="BKMK_NET_Stepping_behavior"></a> Schrittverhalten  
  Wenn Sie **Einzelschritt** \(Tastenkombination: F11\) auf Nichtbenutzercode anwenden, überspringt der Debugger den Code bis zur nächsten Benutzeranweisung.  Wenn Sie **Ausführen bis Rücksprung** \(Tastenkombination: UMSCHALT\+F11\) verwenden, wird der Debugger bis zur nächsten Zeile des Benutzercodes ausgeführt.  Wenn kein Benutzercode gefunden wird, läuft die Ausführung weiter, bis die App beendet wird, ein Haltepunkt erreicht wird oder eine Ausnahme auftritt.  
   
- ![Zurück nach oben](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents) **&#124;** ["Nur eigenen Code" in .NET Framework](#BKMK__NET_Framework_Just_My_Code)  
+ ![Zurück nach oben](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents) **&#124;** ["Nur eigenen Code" in .NET Framework](#BKMK__NET_Framework_Just_My_Code)  
   
 ###  <a name="BKMK_NET_Breakpoint_behavior"></a> Haltepunktverhalten  
  Wenn "Nur eigenen Code" aktiviert ist, können Sie **Alle unterbrechen** \(Tastenkombination: STRG\+Alt\+UNTBR\) auswählen und die Ausführung an einer Stelle anhalten, an der kein Benutzercode vorhanden ist.  Wenn dies geschieht, wird das Fenster "Kein Quellcode" angezeigt.  Wenn Sie anschließend einen Schrittbefehl auswählen, wechselt der Debugger zur nächsten Zeile von Benutzercode.  
   
- ![Zurück nach oben](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents) **&#124;** ["Nur eigenen Code" in .NET Framework](#BKMK__NET_Framework_Just_My_Code)  
+ ![Zurück nach oben](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents) **&#124;** ["Nur eigenen Code" in .NET Framework](#BKMK__NET_Framework_Just_My_Code)  
   
 ###  <a name="BKMK_NET_Exception_behavior"></a> Ausnahmeverhalten  
  Wenn ein Ausnahmefehler im Nichtbenutzercode auftritt, unterbricht der Debugger an der Zeile im Benutzercode, in der die Ausnahme generiert wurde.  
   
  Wenn Ausnahmen \(erste Chance\) für die Ausnahme aktiviert sind, wird die Benutzercodezeile grün hervorgehoben.  Die Aufrufliste zeigt einen mit Anmerkungen versehenen Frame mit der Bezeichnung **\[Externer Code\]** an.  
   
- ![Zurück nach oben](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents) **&#124;** ["Nur eigenen Code" in .NET Framework](#BKMK__NET_Framework_Just_My_Code)  
+ ![Zurück nach oben](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents) **&#124;** ["Nur eigenen Code" in .NET Framework](#BKMK__NET_Framework_Just_My_Code)  
   
 ##  <a name="BKMK_C___Just_My_Code"></a> "Nur eigenen Code" in C\+\+  
  [Benutzer- und Nichtbenutzercode](#BKMK_CPP_User_and_non_user_code) **&#124;** [Schrittverhalten](#BKMK_CPP_Stepping_behavior) **&#124;** [Ausnahmeverhalten](#BKMK_CPP_Exception_behavior) **&#124;** [Anpassen des Schrittverhaltens](#BKMK_CPP_Customize_stepping_behavior) **&#124;** [Anpassen des Aufruflistenverhaltens](#BKMK_CPP_Customize_call_stack_behavior)  
@@ -112,19 +112,19 @@ Entwickler, die .NET Framework\-Sprachen verwenden, sind mit der Debuggerfunktio
   
  Sie können Ihre eigenen `.natstepfilter` und `.natjmc` erstellen, um das Schrittverhalten und das Verhalten der Aufruflistenfenster in `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` anzupassen.  
   
- ![Zurück nach oben](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents) **&#124;** ["Nur eigenen Code" in C++](#BKMK_C___Just_My_Code)  
+ ![Zurück nach oben](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents) **&#124;** ["Nur eigenen Code" in C++](#BKMK_C___Just_My_Code)  
   
 ###  <a name="BKMK_CPP_Stepping_behavior"></a> Schrittverhalten  
  Wenn Sie **Einzelschritt** \(Tastenkombination: F11\-\) für Nichtbenutzercode aus Benutzercode verwenden, überspringt der Debugger den Code bis zur nächsten Benutzercodezeile.  Wenn Sie **Ausführen bis Rücksprung** \(Tastenkombination: UMSCHALT\+F11\) verwenden, wird der Debugger bis zur nächsten Zeile des Benutzercodes ausgeführt.  Wenn kein Benutzercode gefunden wird, läuft die Ausführung weiter, bis die App beendet wird, ein Haltepunkt erreicht wird oder eine Ausnahme auftritt.  
   
  Wenn der Debugger beim Nichtbenutzercode unterbricht \(zum Beispiel, wenn ein Befehl "Alle unterbrechen" in Nichtbenutzercode anhält\), wird die schrittweise Ausführung im Nichtbenutzercode weitergeführt.  
   
- ![Zurück nach oben](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents) **&#124;** ["Nur eigenen Code" in C++](#BKMK_C___Just_My_Code)  
+ ![Zurück nach oben](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents) **&#124;** ["Nur eigenen Code" in C++](#BKMK_C___Just_My_Code)  
   
 ###  <a name="BKMK_CPP_Exception_behavior"></a> Ausnahmeverhalten  
  Wenn der Debugger auf eine Ausnahme trifft, hält er bei der Ausnahme an, unabhängig davon, ob sie im Benutzer\- oder Nichtbenutzercode auftritt.  Die Optionen **Vom Benutzercode unbehandelt** im Dialogfeld **Ausnahmen** werden ignoriert.  
   
- ![Zurück nach oben](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents) **&#124;** ["Nur eigenen Code" in C++](#BKMK_C___Just_My_Code)  
+ ![Zurück nach oben](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents) **&#124;** ["Nur eigenen Code" in C++](#BKMK_C___Just_My_Code)  
   
 ###  <a name="BKMK_CPP_Customize_stepping_behavior"></a> Anpassen des Schrittverhaltens  
  Sie können Funktionen angeben, die zu überspringen sind, indem Sie sie als Nichtbenutzercode in `*.natstepfilter`\-Dateien auflisten.  
@@ -158,7 +158,7 @@ Entwickler, die .NET Framework\-Sprachen verwenden, sind mit der Debuggerfunktio
 |`Module`|Dies ist optional.  Ein ECMA\-262\-formatierter regulärer Ausdruck, der den vollständigen Pfad zu dem Modul angibt, das die Funktion enthält.  Die Groß\- und Kleinschreibung wird bei der Übereinstimmung nicht berücksichtigt.|  
 |`Action`|Erforderlich.  Einer dieser Werte, bei denen die Groß\-\/Kleinschreibung beachtet werden muss.<br /><br /> -   `NoStepInto` : Weist den Debugger an, die übereinstimmende Funktion zu überspringen.<br />-   `StepInto` : Weist den Debugger an, die übereinstimmenden Funktionen schrittweise auszuführen, wobei alle anderen `NoStepInto` für die übereinstimmenden Funktionen überschrieben werden.|  
   
- ![Zurück nach oben](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents) **&#124;** ["Nur eigenen Code" in C++](#BKMK_C___Just_My_Code)  
+ ![Zurück nach oben](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents) **&#124;** ["Nur eigenen Code" in C++](#BKMK_C___Just_My_Code)  
   
 ###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Anpassen des Aufruflistenverhaltens  
  Sie können Module, Quelldateien und Funktionen angeben, die als Nichtbenutzercode in Aufruflisten behandelt werden, indem sie in `*.natjmc`\-Dateien angegeben werden.  
@@ -210,7 +210,7 @@ Entwickler, die .NET Framework\-Sprachen verwenden, sind mit der Debuggerfunktio
 |`Module`|Dies ist optional.  Der Name oder der vollständige Pfad zu dem Modul, das die Funktion enthält.  Sie können dieses Attribut verwenden, um Funktionen mit demselben Namen zu unterscheiden.|  
 |`ExceptionImplementation`|Bei Festlegung auf `true` zeigt die Aufrufliste die Funktion an, die die Ausnahme und nicht diese Funktion ausgelöst hat.|  
   
- ![Zurück nach oben](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents) **&#124;** ["Nur eigenen Code" in C++](#BKMK_C___Just_My_Code)  
+ ![Zurück nach oben](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents) **&#124;** ["Nur eigenen Code" in C++](#BKMK_C___Just_My_Code)  
   
 ##  <a name="BKMK_JavaScript_Just_My_Code"></a> "Nur eigenen Code" in JavaScript  
  [Benutzer- und Nichtbenutzercode](#BKMK_JS_User_and_non_user_code) **&#124;** [Schrittverhalten](#BKMK_JS_Stepping_behavior) **&#124;** [Haltepunktverhalten](#BKMK_JS_Breakpoint_behavior) **&#124;** [Ausnahmeverhalten](#BKMK_JS_Exception_behavior) **&#124;** [Anpassen von "Nur eigenen Code"](#BKMK_JS_Customize_Just_My_Code)  
@@ -242,7 +242,7 @@ Entwickler, die .NET Framework\-Sprachen verwenden, sind mit der Debuggerfunktio
   
  Der restliche Code wird als **MyCode** klassifiziert.  
   
- ![Zurück nach oben](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents) **&#124;** ["Nur eigenen Code" in JavaScript](#BKMK_JavaScript_Just_My_Code)  
+ ![Zurück nach oben](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents) **&#124;** ["Nur eigenen Code" in JavaScript](#BKMK_JavaScript_Just_My_Code)  
   
 ###  <a name="BKMK_JS_Stepping_behavior"></a> Schrittverhalten  
   
@@ -254,7 +254,7 @@ Entwickler, die .NET Framework\-Sprachen verwenden, sind mit der Debuggerfunktio
   
 -   **Ausführen bis Rücksprung** \(Tastenkombination: UMSCHALT\+F11\) hält in der nächsten Zeile des Benutzercodes an.  Wenn kein Benutzercode gefunden wird, läuft die Ausführung weiter, bis die App beendet wird, ein Haltepunkt erreicht wird oder eine Ausnahme auftritt.  
   
- ![Zurück nach oben](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents) **&#124;** ["Nur eigenen Code" in JavaScript](#BKMK_JavaScript_Just_My_Code)  
+ ![Zurück nach oben](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents) **&#124;** ["Nur eigenen Code" in JavaScript](#BKMK_JavaScript_Just_My_Code)  
   
 ###  <a name="BKMK_JS_Breakpoint_behavior"></a> Haltepunktverhalten  
   
@@ -266,7 +266,7 @@ Entwickler, die .NET Framework\-Sprachen verwenden, sind mit der Debuggerfunktio
   
     -   **UnrelatedCode**\-Code, beendet der Debugger die Aktion nicht.  
   
- ![Zurück nach oben](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents) **&#124;** ["Nur eigenen Code" in JavaScript](#BKMK_JavaScript_Just_My_Code)  
+ ![Zurück nach oben](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents) **&#124;** ["Nur eigenen Code" in JavaScript](#BKMK_JavaScript_Just_My_Code)  
   
 ###  <a name="BKMK_JS_Exception_behavior"></a> Ausnahmeverhalten  
  Wenn ein Ausnahmefehler auftritt in:  
@@ -281,7 +281,7 @@ Entwickler, die .NET Framework\-Sprachen verwenden, sind mit der Debuggerfunktio
   
 -   Wenn die Ausnahme nicht behandelt wird, unterbricht der Debugger.  
   
- ![Zurück nach oben](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents) **&#124;** ["Nur eigenen Code" in JavaScript](#BKMK_JavaScript_Just_My_Code)  
+ ![Zurück nach oben](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents) **&#124;** ["Nur eigenen Code" in JavaScript](#BKMK_JavaScript_Just_My_Code)  
   
 ###  <a name="BKMK_JS_Customize_Just_My_Code"></a> Anpassen von "Nur eigenen Code"  
  Um Benutzer\- und Nichtbenutzercode für ein einzelnes Visual Studio\-Projekt zu kategorisieren, fügen Sie dem Stammordner des Projekts eine JSON\-Datei mit dem Namen `mycode.json` hinzu.  
@@ -352,4 +352,4 @@ Entwickler, die .NET Framework\-Sprachen verwenden, sind mit der Debuggerfunktio
   
  Die URL\-Zeichenfolge oder Dateizeichenfolge kann eine oder mehrere `*`\-Zeichen enthalten, die mit null oder mehr Zeichen übereinstimmen.  `*` entspricht dem regulären Ausdruck `.*`.  
   
- ![Zurück nach oben](~/docs/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents) **&#124;** ["Nur eigenen Code" in JavaScript](#BKMK_JavaScript_Just_My_Code)
+ ![Zurück nach oben](~/debugger/media/pcs_backtotop.png "PCS\_BackToTop") [Inhalt](#BKMK_Contents) **&#124;** ["Nur eigenen Code" in JavaScript](#BKMK_JavaScript_Just_My_Code)

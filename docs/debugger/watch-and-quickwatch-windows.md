@@ -84,11 +84,11 @@ static void Main(string[] args) { int a, b, c; a = 1; b = 2; c = 0; for (int i =
   
  Wenn Sie z. B. über den im vorherigen Beispiel aufgeführten Code verfügen, können Sie den Mittelwert der drei Werte wie folgt ermitteln:  
   
- ![WatchExpression](~/docs/debugger/media/watchexpression.png "WatchExpression")  
+ ![WatchExpression](~/debugger/media/watchexpression.png "WatchExpression")  
   
  Im Allgemeinen entsprechen die Regeln zum Auswerten von Ausdrücken im Fenster **Überwachen** den Regeln zum Auswerten von Ausdrücken in Ihrer Codesprache. Wenn der Ausdruck einen Syntaxfehler aufweist, können Sie den gleichen Compilerfehler wie im Code\-Editor erwarten. Im Folgenden ein Beispiel:  
   
- ![WatchExpressionError](~/docs/debugger/media/watchexpressionerror.png "WatchExpressionError")  
+ ![WatchExpressionError](~/debugger/media/watchexpressionerror.png "WatchExpressionError")  
   
 ##  <a name="bkmk_refreshWatch"></a> Aktualisieren von veralteten Werten im Fenster "Überwachen"  
  Unter bestimmten Umständen wird ein Aktualisierungssymbol \(ein Kreis mit zwei Pfeilen oder ein Kreis mit zwei Wellenlinien\) angezeigt, wenn ein Ausdruck im Fenster **Überwachen** ausgewertet wird.  Beispiel: Wenn Sie die Eigenschaftenauswertung deaktiviert haben \(**Tools \> Optionen \> Debugging \> Eigenschaftenauswertung und andere implizite Funktionsaufrufe zulassen**\) und der folgende Code angezeigt wird:  

@@ -67,7 +67,7 @@ Mit diesem Schnellstart wird veranschaulicht, wie in Debugsitzungen in Visual St
   
  **Festlegen eines Haltepunkts.** Legen Sie im MainPage\-Konstruktor einen Haltepunkt in der `methodTrack = "Main Page";`\-Anweisung fest. Wählen Sie die Zeile im schattierten Bundsteg des Quellcode\-Editors aus \(Tastatur: Positionieren Sie den Cursor in der Zeile, und drücken Sie F9\).  
   
- ![Einzelschritt](~/docs/debugger/media/dbg_basics_stepinto.png "DBG\_Basics\_StepInto")  
+ ![Einzelschritt](~/debugger/media/dbg_basics_stepinto.png "DBG\_Basics\_StepInto")  
   
  Das Haltepunktsymbol wird im Bundsteg angezeigt.  
   
@@ -75,13 +75,13 @@ Mit diesem Schnellstart wird veranschaulicht, wie in Debugsitzungen in Visual St
   
  Die App wird ausgeführt und hält die Ausführung direkt vor der Anweisung an, in der der Haltepunkt gesetzt wurde.  Das Symbol der aktuellen Zeile im Bundsteg weist auf die aktuelle Position hin, und die aktuelle Anweisung ist hervorgehoben.  
   
- ![Haltepunkt festlegen](~/docs/debugger/media/dbg_basics_setbreakpoint.png "DBG\_Basics\_SetBreakpoint")  
+ ![Haltepunkt festlegen](~/debugger/media/dbg_basics_setbreakpoint.png "DBG\_Basics\_SetBreakpoint")  
   
  Sie können die Ausführung der App nun steuern. Zudem können Sie den Programmzustand überprüfen, während Sie die Programmanweisungen durchlaufen.  
   
  **Einzelschritt in die Methode.** Wählen Sie im Menü **Debuggen** die Option **Einzelschritt** aus \(Tastatur: F11\).  
   
- ![Aktuelle Zeile](~/docs/debugger/media/dbg_basics_currentline.png "DBG\_Basics\_CurrentLine")  
+ ![Aktuelle Zeile](~/debugger/media/dbg_basics_currentline.png "DBG\_Basics\_CurrentLine")  
   
  Beachten Sie, dass der Debugger zur nächsten Zeile bewegt wird. Hierbei handelt es sich um einen Aufruf der Methode "Example1". Wählen Sie erneut "Einzelschritt" aus. Der Debugger wechselt zum Einstiegspunkt der Methode "Example1". Dies weist darauf hin, dass die Methode in der Aufrufliste geladen wurde und dass der Arbeitsspeicher für lokale Variablen zugeordnet wurde.  
   
@@ -95,7 +95,7 @@ Mit diesem Schnellstart wird veranschaulicht, wie in Debugsitzungen in Visual St
   
  **Überprüfen der Variablenwerte in den Datentipps.** Wenn Sie die Maus auf einen Variablennamen bewegen, werden der Name, der Wert und der Typ der Variablen in einem Datentipp angezeigt.  
   
- ![Debuggerdatentipp](~/docs/debugger/media/dbg_basics_datatip.png "DBG\_Basics\_DataTip")  
+ ![Debuggerdatentipp](~/debugger/media/dbg_basics_datatip.png "DBG\_Basics\_DataTip")  
   
  Bewegen Sie die Maus auf die Variable `a`. Beachten Sie den Namen, den Wert und den Datentyp. Bewegen Sie die Maus auf die Variable `methodTrack`. Beachten Sie erneut den Namen, den Wert und den Datentyp.  
   
@@ -127,7 +127,7 @@ Mit diesem Schnellstart wird veranschaulicht, wie in Debugsitzungen in Visual St
   
  **Aufrufen der Methode "Example2" im MainPage\-Konstruktor.** Bearbeiten Sie den MainPage\-Konstruktor, und ersetzen Sie die Zeile nach `methodTrack = String.Empty;` durch `Example2();`.  
   
- ![Example2&#45;Methode aus der Demomethode aufrufen](~/docs/debugger/media/dbg_basics_callexample2.png "DBG\_Basics\_CallExample2")  
+ ![Example2&#45;Methode aus der Demomethode aufrufen](~/debugger/media/dbg_basics_callexample2.png "DBG\_Basics\_CallExample2")  
   
  **Ausführen bis zum Haltepunkt.** Starten Sie die Debugsitzung, indem Sie im Menü **Debuggen** die Option **Debuggen starten** auswählen \(Tastatur: F5\). Der Debugger unterbricht die Ausführung am Haltepunkt.  
   
@@ -135,7 +135,7 @@ Mit diesem Schnellstart wird veranschaulicht, wie in Debugsitzungen in Visual St
   
  **Einzelschritt in "Example2" und "Example2\_A".** Wählen Sie die F11\-Taste, um einen Einzelschritt in die Methode von "Example 2" durchzuführen. Fahren Sie mit den Einzelschritten in die "Example2"\-Anweisungen fort, bis Sie die Zeile `int x = Example2_A();` erreichen. Führen Sie erneut für diese Zeile einen Einzelschritt durch, um zum Einstiegspunkt von "Example2\_A" zu gelangen. Fahren Sie mit den Einzelschritten in den einzelnen Anweisungen von "Example2\_A" fort, bis Sie zu "Example2" zurückkehren.  
   
- ![Example2](~/docs/debugger/media/dbg_basics_example2.png "DBG\_Basics\_Example2")  
+ ![Example2](~/debugger/media/dbg_basics_example2.png "DBG\_Basics\_Example2")  
   
  **Prozedurschritt für eine Funktion.** Beachten Sie, dass die nächste Zeile in "Example2" \(`int y = Example2_A();`\) im Wesentlichen der vorherigen Zeile entspricht. Sie können problemlos einen Prozedurschritt für diese Zeile durchführen. Drücken Sie die Taste F10, um von der Fortsetzung von "Example2" zu diesem zweiten Aufruf von "Example2\_A" zu wechseln. Drücken Sie F10, um einen Prozedurschritt für diese Methode durchzuführen. Beachten Sie, dass die Zeichenfolge `methodTrack` darauf hinweist, dass die Methode "Example2\_A" zweimal ausgeführt wurde. Beachten Sie auch, dass der Debugger sofort zur nächsten Zeile wechselt. Die Ausführung wird nicht an dem Punkt unterbrochen, an dem "Example2" fortgesetzt wird.  
   
@@ -155,7 +155,7 @@ Mit diesem Schnellstart wird veranschaulicht, wie in Debugsitzungen in Visual St
   
  **Aufrufen der Methode "Example3" im MainPage\-Konstruktor.** Bearbeiten Sie den MainPage\-Konstruktor, und ersetzen Sie die Zeile nach `methodTrack = String.Empty;` durch die Zeile `Example3();`.  
   
- ![Example3&#45;Methode aus der Demomethode aufrufen](~/docs/debugger/media/dbg_basics_callexample3.png "DBG\_Basics\_CallExample3")  
+ ![Example3&#45;Methode aus der Demomethode aufrufen](~/debugger/media/dbg_basics_callexample3.png "DBG\_Basics\_CallExample3")  
   
  **Ausführen bis zum Haltepunkt.** Starten Sie die Debugsitzung, indem Sie im Menü **Debuggen** die Option **Debuggen starten** auswählen \(Tastatur: F5\). Der Debugger unterbricht die Ausführung am Haltepunkt in der MainPage\-Methode.  
   
@@ -167,7 +167,7 @@ Mit diesem Schnellstart wird veranschaulicht, wie in Debugsitzungen in Visual St
   
  Sie erkennen das Symbol eines bedingten Haltepunkts am weißen Kreuz.  
   
- ![Bedingter Haltepunkt](~/docs/debugger/media/dbg_basics_conditionalbreakpoint.png "DBG\_Basics\_ConditionalBreakpoint")  
+ ![Bedingter Haltepunkt](~/debugger/media/dbg_basics_conditionalbreakpoint.png "DBG\_Basics\_ConditionalBreakpoint")  
   
  **Ausführen bis zum Haltepunkt.** Wählen Sie im Menü "Debuggen" die Option "Weiter" aus \(Tastatur: F5\). Stellen Sie im Lokalfenster sicher, dass der aktuelle Wert von `i` 500 ist. Beachten Sie, dass die Variable `s` als einzelne Zeile dargestellt wird und wesentlich länger als das Fenster ist.  
   
@@ -191,7 +191,7 @@ Mit diesem Schnellstart wird veranschaulicht, wie in Debugsitzungen in Visual St
   
  **Aufrufen der Methode "Example4" im MainPage\-Konstruktor.** Bearbeiten Sie den MainPage\(\)\-Konstruktor, und ersetzen Sie die Zeile nach `methodTrack = String.Empty;` durch die Zeile `Example4();`.  
   
- ![Example4&#45;Methode aus der Demomethode aufrufen](~/docs/debugger/media/dbg_basics_callexample4.png "DBG\_Basics\_CallExample4")  
+ ![Example4&#45;Methode aus der Demomethode aufrufen](~/debugger/media/dbg_basics_callexample4.png "DBG\_Basics\_CallExample4")  
   
  **Ausführen bis zur Ausnahme.** Starten Sie die Debugsitzung, indem Sie im Menü **Debuggen** die Option **Debuggen starten** auswählen \(Tastatur: F5\). Drücken Sie erneut F5, um die Ausführung fortzusetzen. Der Debugger unterbricht die Ausführung an der Ausnahme in der "Example4"\-Methode und zeigt ein Ausnahmedialogfeld an.  
   

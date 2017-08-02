@@ -39,7 +39,7 @@ ms.lasthandoff: 05/26/2017
 ---
 # <a name="quick-actions"></a>Schnelle Aktionen
 
-Mit [schnellen Aktionen](refactoring-code-generation-quick-actions.md#quick-actions) können Sie ganz leicht Code mit einer einzelnen Aktion umgestalten, generieren oder anderweitig ändern.  Während es viele schnelle Aktionen gibt, die entweder nur für C# oder Visual Basic gelten, gibt es auch einige, die sowohl für C#- als auch Visual Basic-Projekte gültig sind.  Diese können mithilfe des Glühbirnensymbols ![Kleines Glühbirnensymbol](~/docs/ide/media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") oder durch Drücken von **STRG + .** angewendet werden,  wenn der Cursor sich in der entsprechenden Codezeile befindet.
+Mit [schnellen Aktionen](refactoring-code-generation-quick-actions.md#quick-actions) können Sie ganz leicht Code mit einer einzelnen Aktion umgestalten, generieren oder anderweitig ändern.  Während es viele schnelle Aktionen gibt, die entweder nur für C# oder Visual Basic gelten, gibt es auch einige, die sowohl für C#- als auch Visual Basic-Projekte gültig sind.  Diese können mithilfe des Glühbirnensymbols ![Kleines Glühbirnensymbol](~/ide/media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") oder durch Drücken von **STRG + .** angewendet werden,  wenn der Cursor sich in der entsprechenden Codezeile befindet.
 
 Sie sehen eine Glühbirne, wenn eine rote Wellenlinie vorhanden ist und Visual Studio über eine Empfehlung verfügt, um das Problem zu beheben. Wenn beispielsweise ein Fehler durch eine rote Wellenlinie gekennzeichnet ist, wird eine Glühbirne angezeigt, wenn Behebungsmaßnahmen für diesen Fehler verfügbar sind. Für jede Sprache können Drittanbieter benutzerdefinierte Diagnosen und Empfehlungen bereitstellen, beispielsweise als Bestandteil eines SDKs. Anhand dieser Regeln leuchten Visual Studio-Glühbirnen dann auf.  
 
@@ -343,41 +343,41 @@ Dim s As String = $"My string with {num} in the middle"
 ### <a name="remove-merge-conflict-markers"></a>Entfernen von Markierungen für Zusammenführungskonflikte
 Diese schnellen Aktionen ermöglichen das Auflösen von Zusammenführungskonflikten durch das „Vornehmen einer Änderung“, wodurch der in Konflikt stehende Code und die Markierungen entfernt werden. (Nur in Visual Studio 2017 [Version 15.3 - Preview] verfügbar.)
 
-![Refactoring: Auflösen von Zusammenführungskonflikten](~/docs/ide/media/vside-refactoring-merge-conflicts.png)
+![Refactoring: Auflösen von Zusammenführungskonflikten](~/ide/media/vside-refactoring-merge-conflicts.png)
 
 ### <a name="add-null-checks-for-parameters"></a>Hinzufügen von Überprüfungen auf NULL für Parameter
 Diese schnelle Aktion ermöglicht Ihnen das Hinzufügen einer Prüfung zu Ihrem Code, um zu ermitteln, ob ein Parameter NULL ist. (Nur in Visual Studio 2017 [Version 15.3 - Preview] verfügbar.)
 
-![Refactoring: Hinzufügen von Prüfung auf NULL](~/docs/ide/media/vside-refactoring-nullcheck.png)
+![Refactoring: Hinzufügen von Prüfung auf NULL](~/ide/media/vside-refactoring-nullcheck.png)
 
 ### <a name="constructor-generator-improvements"></a>Verbesserungen beim Generator von Konstruktoren
 Wenn Sie einen Konstruktor erstellen, ermöglicht Ihnen diese schnelle Aktion das Auswählen der zu erstellenden Eigenschaften oder Felder oder das Generieren des Konstruktors aus einem leeren Textkörper. Sie können sie auch verwenden, um von der Aufrufsite aus einem vorhandenen Konstruktor Parameter hinzuzufügen. (Nur in Visual Studio 2017 [Version 15.3 - Preview] verfügbar.)
 
-![Refactoring: Generieren von Konstruktoren](~/docs/ide/media/vside-refactoring-constructors.png)
+![Refactoring: Generieren von Konstruktoren](~/ide/media/vside-refactoring-constructors.png)
 
 ### <a name="remove-unused-variables"></a>Entfernen nicht verwendeter Variablen
 Diese schnelle Aktion ermöglicht Ihnen das Entfernen von Variablen, die zwar deklariert, aber nie in Ihrem Code verwendet wurden. (Nur in Visual Studio 2017 [Version 15.3 - Preview] verfügbar.)
 
-![Refactoring: Nicht verwendete Variablen](~/docs/ide/media/vside-refactoring-unusedvars.png)
+![Refactoring: Nicht verwendete Variablen](~/ide/media/vside-refactoring-unusedvars.png)
 
 ### <a name="generate-overrides"></a>Generieren von Überschreibungen
 Mit dieser schnellen Aktion können Sie eine Überschreibung anhand einer leeren Zeile in einer Klasse oder Struktur erstellen. Im Dialogfeld **Member auswählen** können Sie die zu überschreibenden Member auswählen. (Nur in Visual Studio 2017 [Version 15.3 - Preview] verfügbar.)
 
-![Refactoring: Überschreibungen](~/docs/ide/media/vside-refactoring-overrides.png)
+![Refactoring: Überschreibungen](~/ide/media/vside-refactoring-overrides.png)
 
-![Refactoring: Dialogfeld „Überschreibungen“](~/docs/ide/media/vside-refactoring-overrides-dialog.png)
+![Refactoring: Dialogfeld „Überschreibungen“](~/ide/media/vside-refactoring-overrides-dialog.png)
 
 ### <a name="change-base-for-numeric-literals"></a>Ändern der Basis für numerische Literale
 Mithilfe dieser schnellen Aktion können Sie ein numerisches Literal von einem numerischen Basissystem in ein anderes konvertieren. Beispielsweise können Sie eine Zahl in das hexadezimale oder binäre Format ändern. (Nur in Visual Studio 2017 [Version 15.3 - Preview] verfügbar.)
 
-![Refactoring: Ändern der Basis](~/docs/ide/media/vside-refactoring-changebase1.png)
+![Refactoring: Ändern der Basis](~/ide/media/vside-refactoring-changebase1.png)
 
-![Refactoring: Ändern der Basis](~/docs/ide/media/vside-refactoring-changebase2.png)
+![Refactoring: Ändern der Basis](~/ide/media/vside-refactoring-changebase2.png)
 
 ### <a name="insert-digit-separators-into-literals"></a>Einfügen von Zifferntrennzeichen in Literale
 Mithilfe dieser schnellen Aktion können Sie Zifferntrennzeichen in Literale einfügen. (Nur in Visual Studio 2017 [Version 15.3 - Preview] verfügbar.)
 
-![Refactoring: Ändern von Zifferntrennzeichen](~/docs/ide/media/vside-refactoring-separators.png)
+![Refactoring: Ändern von Zifferntrennzeichen](~/ide/media/vside-refactoring-separators.png)
 
 ### <a name="convert-if-construct-to-switch"></a>Konvertieren von **if**-Konstrukt in **switch**
 Mit dieser schnellen Aktionen können Sie ein **if-then-else**-Konstrukt in ein **switch**-Konstrukt konvertieren. (Nur in Visual Studio 2017 [Version 15.3 - Preview] verfügbar.)

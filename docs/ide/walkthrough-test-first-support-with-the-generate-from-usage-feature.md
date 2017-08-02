@@ -73,10 +73,10 @@ Dialogfeld "Neues Projekt"
   
 3.  Suchen Sie die `TestMethod1()` -Methode, und benennen Sie sie um in `DefaultAutomobileIsInitializedCorrectly()`. Erstellen Sie innerhalb dieser Methode eine neue Instanz einer Klasse namens `Automobile`, wie in den folgenden Abbildungen dargestellt. Eine wellenförmige Unterstreichung wird angezeigt, die auf einen Fehler während der Kompilierung hinweist, und unter dem Typnamen wird ein Smarttag angezeigt. Die genaue Position des Smarttags variiert abhängig davon, ob Sie [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] oder [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] verwenden.  
   
-     ![Smarttag „Unterstreichen“ in Visual Basic](~/docs/ide/media/genclass_underlinevb.png "GenClass_UnderlineVB")  
+     ![Smarttag „Unterstreichen“ in Visual Basic](~/ide/media/genclass_underlinevb.png "GenClass_UnderlineVB")  
 Visual Basic  
   
-     ![Smarttag „Unterstreichen“ in C&#35;](~/docs/ide/media/genclass_underline.png "GenClass_Underline")  
+     ![Smarttag „Unterstreichen“ in C&#35;](~/ide/media/genclass_underline.png "GenClass_Underline")  
 Visual C#  
   
 4.  Halten Sie den Mauszeiger auf dem Smarttag, um eine Fehlermeldung anzuzeigen, die besagt, dass noch kein Typ mit dem Namen `Automobile` definiert wurde. Klicken Sie auf das Smarttag, oder drücken Sie STRG+. (STRG+Punkt), um das Kontextmenü "Aus Verwendung generieren" zu öffnen, wie in den folgenden Abbildungen dargestellt.  

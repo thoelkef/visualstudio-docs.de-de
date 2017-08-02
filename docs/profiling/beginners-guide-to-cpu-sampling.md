@@ -90,7 +90,7 @@ Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsprobleme
   
  Jeder nummerierte Bereich in der Abbildung bezieht sich auf einen Schritt in der Prozedur.  
   
- ![Ansicht des Zusammenfassungsberichts für Sampling](~/docs/profiling/media/summary_sampling.png "Summary_Sampling")  
+ ![Ansicht des Zusammenfassungsberichts für Sampling](~/profiling/media/summary_sampling.png "Summary_Sampling")  
   
 #### <a name="to-analyze-sampling-data"></a>So analysieren Sie Samplingdaten  
   

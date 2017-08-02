@@ -36,7 +36,7 @@ caps.handback.revision: 69
   
  Sowohl in Windows Forms\- als auch in Hoststeuerelementen wird das Windows Forms\-Datenbindungsmodell verwendet, das sowohl *einfache Datenbindung* als auch *komplexe Datenbindung* an Datenquellen wie Datasets und Datentabellen unterstützt. Umfassende Informationen über das Datenbindungsmodell in Windows Forms finden Sie unter [Datenbindung und Windows Forms](http://msdn.microsoft.com/library/419aac5e-819b-4aad-88b0-73a2f8c0bd27).  
   
- ![Link zu Video](~/docs/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie unter [How Do I: Consume Database Data in Excel?](http://go.microsoft.com/fwlink/?LinkID=130287).  
+ ![Link zu Video](~/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie unter [How Do I: Consume Database Data in Excel?](http://go.microsoft.com/fwlink/?LinkID=130287).  
   
 ## Einfache Datenbindung  
  Eine einfache Datenbindung besteht dann, wenn eine Steuerelementeigenschaft an ein einzelnes Datenelement \(z. B. einen Wert in einer Datentabelle\) gebunden ist. Zum Beispiel hat das <xref:Microsoft.Office.Tools.Excel.NamedRange>\-Steuerelement die <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A>\-Eigenschaft, die an ein Feld in einem Dataset gebunden werden kann. Wenn sich das Feld im Dataset ändert, ändert sich auch der Wert im benannten Bereich. Alle Hoststeuerelemente, mit Ausnahme des <xref:Microsoft.Office.Tools.Word.XMLNodes>\-Steuerelements, unterstützen einfache Datenbindung. Das <xref:Microsoft.Office.Tools.Word.XMLNodes>\-Steuerelement ist eine Auflistung und unterstützt daher keine Datenbindung.  

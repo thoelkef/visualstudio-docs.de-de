@@ -49,13 +49,13 @@ Beginnend mit Visual Studio 2017 und VSIX v3 (Version 3) wird jetzt unterstützt
 
 Um unterstützen, in diese Verzeichnisse zu installieren, muss der VSIX-Datei installiert werden "pro Computer Instanzebene". Dies kann durch Aktivieren des Kontrollkästchens "All Users" im Designer extension.vsixmanifest aktiviert werden:
 
-![Überprüfen Sie alle Benutzer](~/docs/extensibility/media/check-all-users.png)
+![Überprüfen Sie alle Benutzer](~/extensibility/media/check-all-users.png)
 
 ## <a name="how-to-set-the-installroot"></a>Gewusst wie: Festlegen der InstallRoot
 
 Um die Installationsverzeichnisse festzulegen, können Sie die **Eigenschaften** in Visual Studio im Fenster. Sie können z. B. Festlegen der `InstallRoot` Eigenschaft einen Projektverweis auf einer der Speicherorte:
 
-![Installieren Sie die Root-Eigenschaften](~/docs/extensibility/media/install-root-properties.png)
+![Installieren Sie die Root-Eigenschaften](~/extensibility/media/install-root-properties.png)
 
 Dadurch wird einige Metadaten hinzugefügt, um das entsprechende `ProjectReference` Eigenschaft innerhalb des VSIX-Projekts CSPROJ-Datei:
 
@@ -73,7 +73,7 @@ Dadurch wird einige Metadaten hinzugefügt, um das entsprechende `ProjectReferen
 
 Wenn Sie, um ein Unterpfad unter installieren möchten der `InstallRoot`, dazu können Sie festlegen der `VsixSubPath` Eigenschaft wie die `InstallRoot` Eigenschaft. Angenommen, wir möchten unsere Projektverweis Ausgabe für die Installation "[installdir]\MSBuild\MyCompany\MySDK\1.0'. Dies problemlos mit dem Designer für die Eigenschaft ist möglich:
 
-![Set-Unterpfad](~/docs/extensibility/media/set-subpath.png)
+![Set-Unterpfad](~/extensibility/media/set-subpath.png)
 
 Die entsprechenden .csproj Änderungen sieht folgendermaßen aus:
 

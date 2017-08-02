@@ -34,7 +34,7 @@ caps.handback.revision: 58
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
- ![Link zu Video](~/docs/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie unter [Gewusst wie: Erstellen eines benutzerdefinierten Vorgangsberichts mithilfe von Outlook](http://go.microsoft.com/fwlink/?LinkID=130315).  
+ ![Link zu Video](~/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie unter [Gewusst wie: Erstellen eines benutzerdefinierten Vorgangsberichts mithilfe von Outlook](http://go.microsoft.com/fwlink/?LinkID=130315).  
   
 ## Zugreifen auf Objekte in einem Outlook\-Projekt  
  Outlook stellt zahlreiche Objekte bereit, mit denen Sie interagieren können. Damit Sie das Objektmodell effizient verwenden können, sollten Ihnen die folgenden Objekte der obersten Ebene vertraut sein:  
