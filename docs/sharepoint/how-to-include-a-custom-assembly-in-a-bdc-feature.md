@@ -37,7 +37,7 @@ caps.handback.revision: 16
   
 2.  Klicken Sie im Menü **Ansicht** auf **Eigenschaftenfenster**.  
   
-3.  Im Fenster **Eigenschaften** wählen Sie die Eigenschaft **Assemblys** und dann die Schaltfläche mit den drei Auslassungszeichen \(![Auslassungszeichen im ASP.NET Mobile-Designer](../sharepoint/media/mwellipsis.png "Auslassungszeichen im ASP.NET Mobile-Designer")\).  
+3.  Im Fenster **Eigenschaften** wählen Sie die Eigenschaft **Assemblys** und dann die Schaltfläche mit den drei Auslassungszeichen \(![Auslassungszeichen im ASP.NET Mobile-Designer](~/sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer")\).  
   
      Das Dialogfeld **Assemblys, auf die verwiesen wird, LobSystems zuweisen** wird angezeigt.  
   

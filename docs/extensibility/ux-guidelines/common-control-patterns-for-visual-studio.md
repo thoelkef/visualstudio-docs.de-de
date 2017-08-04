@@ -160,11 +160,11 @@ Es gibt zwei Möglichkeiten zum Anzeigen von statischem Textinformationen.
 
 Statischer Text kann auf eine eigene in einem Dialog ohne Containment When keine Gruppierung Konflikt vorliegt. Entscheiden Sie, ob die zusätzlichen Zeilen eines Felds wirklich erforderlich sind. Ein Beispiel ist die Anzeige von einen Verzeichnispfad ein Abschnitt durch eine Gruppenlinie erstellt, wie unten dargestellt:  
 
-![Statischer Text Informationen im Text-Steuerelemente](../../extensibility/ux-guidelines/media/DisplayingStaticText.png "DisplayingStaticText.png")<br />Statischer Text Informationen im Text-Steuerelemente
+![Statischer Text Informationen im Text-Steuerelemente](~/extensibility/ux-guidelines/media/DisplayingStaticText.png "DisplayingStaticText.png")<br />Statischer Text Informationen im Text-Steuerelemente
 
 In einem Dialogfeld, in dem anderen gruppierten Bereichen vorhanden und Kapselung der Informationen würden Lesbarkeit und wenn ein Abschnitt ausgeblendet oder angezeigt werden kann (wie in der **Fenster "Eigenschaften"** Beschreibungsbereich) oder mit ähnlichen Benutzeroberfläche konsistent sein, platzieren Sie den statischen Text in einem Feld werden sollen. Diese Gruppenfeld muss eine einzelne Regel und gefärbt, mit der `ButtonShadow`:
 
-![Statischer Text im Fenster Eigenschaften](../../extensibility/ux-guidelines/media/PropertiesWindow.png "PropertiesWindow.png")<br />Statischer Text im Fenster Eigenschaften
+![Statischer Text im Fenster Eigenschaften](~/extensibility/ux-guidelines/media/PropertiesWindow.png "PropertiesWindow.png")<br />Statischer Text im Fenster Eigenschaften
 
 ### <a name="read-only-text-box"></a>Nur-Lese Textfeld
 
@@ -172,7 +172,7 @@ Dies ermöglicht es dem Benutzer, wählen Sie den Text in das Feld jedoch nicht 
 
 Ein Textfeld kann aktiv (bearbeitet werden), wenn ein Benutzer eine zugeordnete Steuerelement, z. B. ein Kontrollkästchen aktivieren bzw. deaktivieren oder ein Optionsfeld auswählen/aufheben ändert. Z. B. in der **Tools &gt; Optionen** Seite unten die **Startseite** Textfeld wird aktiviert, wenn die **Standard verwenden** das Kontrollkästchen deaktiviert ist.
 
-![Nur-Lese Textfeld, inaktiven und den aktiven Status anzeigen](../../extensibility/ux-guidelines/media/ReadOnlyTextBox.png "ReadOnlyTextBox.png")<br />Nur-Lese Textfeld, inaktiven und den aktiven Status anzeigen
+![Nur-Lese Textfeld, inaktiven und den aktiven Status anzeigen](~/extensibility/ux-guidelines/media/ReadOnlyTextBox.png "ReadOnlyTextBox.png")<br />Nur-Lese Textfeld, inaktiven und den aktiven Status anzeigen
 
 ### <a name="using-text-in-dialogs"></a>Verwenden von Text in Dialogfeldern
 
@@ -219,7 +219,7 @@ Dialoge profitieren von etwas anderes Wasserzeichen Richtlinien. Da ein Dialogfe
 
 -   Wasserzeichen können linksbündig oder zentriert. Wenden Sie standard-Design-Regeln an, wenn Ausrichtung Entscheidungen zu treffen. Das Wasserzeichen kann nicht auf den Hintergrund ausgewählt werden.
 
-![Wasserzeichen Text (Beispiel)](../../extensibility/ux-guidelines/media/WatermarkTextExample.gif)<br />Wasserzeichen Text (Beispiel)
+![Wasserzeichen Text (Beispiel)](~/extensibility/ux-guidelines/media/WatermarkTextExample.gif)<br />Wasserzeichen Text (Beispiel)
 
 ### <a name="context-specific-dynamic-text"></a>Kontextspezifisch (dynamisch) text
 

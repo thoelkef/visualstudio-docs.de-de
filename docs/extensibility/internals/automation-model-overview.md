@@ -41,7 +41,7 @@ Das Automatisierungsmodell besteht aus einem Satz von Objekten, für die Sie ein
 ## <a name="objects-in-the-automation-model"></a>Objekte im Automatisierungsmodell  
  Das Automatisierungsmodell besteht aus verwandten Gruppen von Objekten, die wichtigsten Aspekte der allgemeinen Umgebung steuern. Im folgenden finden ein Diagramm mit den umfassenden Satz von Objekten, die die Benutzeroberflächenautomatisierungs-Modell zu erstellen.  
   
- ![Diagramm des Visual Studio-Automatisierungsobjekts](../../extensibility/internals/media/vsvisualstudioautomationobjectchart.gif "vsVisualStudioAutomationObjectChart")  
+ ![Diagramm des Visual Studio-Automatisierungsobjekts](~/extensibility/internals/media/vsvisualstudioautomationobjectchart.gif "vsVisualStudioAutomationObjectChart")  
 Visual Studio-Automatisierungsobjekte  
   
  Weitere Informationen finden Sie unter [Erweitern der Visual Studio-Umgebung](http://msdn.microsoft.com/Library/4173a963-7ac7-4966-9bb7-e28a9d9f6792).  

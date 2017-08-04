@@ -29,9 +29,10 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
+ms.translationtype: Machine Translation
 ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
 ms.openlocfilehash: 774266bbcd64e87229f8f97626cdff1462b27fcb
+ms.contentlocale: de-de
 ms.lasthandoff: 04/05/2017
 
 ---
@@ -45,7 +46,7 @@ Eine VSPackage muss mit registrieren [!INCLUDE[vsprvs](../../code-quality/includ
  [Befehl Format Tabellenverweis](http://msdn.microsoft.com/en-us/09e9c6ef-9863-48de-9483-d45b7b7c798f) Ressourcen befinden sich in nicht verwalteten Satelliten-Dlls UI.  
   
 ## <a name="command-handler-registration-of-a-vspackage"></a>Befehl-Registrierung von VSPackages  
- Ein VSPackage als einen Handler für die Benutzeroberfläche (UI)-Basis Befehle ist erforderlich, einen Registrierungeintrag Namens nach dem VSPackage `GUID`. Dieser Registrierungseintrag gibt den Speicherort der Ressourcendatei für die VSPackage Benutzeroberfläche und die Menüressource innerhalb dieser Datei. Der Registrierungseintrag selbst befindet sich unter HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<Version >*\Menus, wobei *\<Version >* ist die Version des [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], z. B. 9.0.  
+ Ein VSPackage als einen Handler für die Benutzeroberfläche (UI)-Basis Befehle ist erforderlich, einen Registrierungeintrag Namens nach dem VSPackage `GUID`. Dieser Registrierungseintrag gibt den Speicherort der Ressourcendatei für die VSPackage Benutzeroberfläche und die Menüressource innerhalb dieser Datei. Der Registrierungseintrag selbst befindet sich unter HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<Version >*\Menus, wobei  *\<Version >* ist die Version des [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], z. B. 9.0.  
   
 > [!NOTE]
 >  Der Stammpfad des HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* kann überschrieben werden, mit einer alternativen root, wenn die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Shell initialisiert wird. Weitere Informationen zu den Stammpfad, finden Sie unter [Installieren von VSPackages mit Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md).  

@@ -166,7 +166,7 @@ caps.handback.revision: 33
   
 2.  Im Dialogfeld **Veröffentlichen** wählen Sie das Optionsfeld **Im Dateisystem veröffentlichen** aus.  
   
-     Sie können den Zielspeicherort im Dialogfeld **Veröffentlichen** ändern, indem Sie die Schaltfläche mit den Auslassungszeichen klicken ![Symbol "Ellipse"](../sharepoint/media/ellipsisicon.png "Symbol "Ellipse"") und dann zu einem anderen Speicherort navigieren.  
+     Sie können den Zielspeicherort im Dialogfeld **Veröffentlichen** ändern, indem Sie die Schaltfläche mit den Auslassungszeichen klicken ![Symbol "Ellipse"](~/sharepoint/media/ellipsisicon.gif "Symbol "Ellipse"") und dann zu einem anderen Speicherort navigieren.  
   
 3.  Wählen Sie die Schaltfläche **Veröffentlichen** aus.  
   

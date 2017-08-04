@@ -32,7 +32,7 @@ Benutzer können anzeigen und ändern anlagenabhängige Projekt und unabhängige
   
  Es gibt zwei allgemeine Arten von Dialogfeldern **ProjektEigenschaftenseiten** , die in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]verfügbar sind.  Im ersten Beispiel für Visual Basic\-Projekte werden die Eigenschaftenseiten unter Verwendung eines Felds formats, wie im folgenden Bildschirmaufnahme dargestellt angezeigt.  In der zweiten weiter unten in diesem Abschnitt dargestellt, die Eigenschaftenseiten Language Runtime\-Hosts ein Eigenschaftenraster ähnlich dem im Eigenschaftenfenster angezeigt.  
   
- ![Visual Basic&#45;Eigenschaftenseiten](../../extensibility/internals/media/vsvbproppages.png "vsVBPropPages")  
+ ![Visual Basic&#45;Eigenschaftenseiten](~/extensibility/internals/media/vsvbproppages.gif "vsVBPropPages")  
 Dialogfeld Projekt\-Eigenschaftenseiten Format und die Struktur mit Feld  
   
  Die Baumstruktur im Dialogfeld Eigenschaftenseiten wird nicht mit <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>erstellt.  Die Umgebung, in dem die Ebene Namen, der von ihr <xref:Microsoft.VisualStudio.OLE.Interop.ISpecifyPropertyPages> und die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage>\-Schnittstellen übergeben wird, erstellt es.  
@@ -57,7 +57,7 @@ Dialogfeld Projekt\-Eigenschaftenseiten Format und die Struktur mit Feld
   
  Der zweite Typ der Eigenschaftenseiten der in den Host. B. ein Formular des Eigenschaftenrasters an, wie im folgenden Bildschirmaufnahme dargestellt.  
   
- ![VC&#45;Eigenschaftenseiten](../../extensibility/internals/media/vsvcproppages.png "vsVCPropPages")  
+ ![VC&#45;Eigenschaftenseiten](~/extensibility/internals/media/vsvcproppages.gif "vsVCPropPages")  
 Dialogfeld Eigenschaftenseiten mit Eigenschaftenraster  
   
  Die Schnittstellen `IVSMDPropertyBrowser` und `IVSMDPropertyGrid` \(in vsmanaged.h\) deklariert werden verwendet, um das Eigenschaftenraster innerhalb eines Dialogfelds oder eines Fensters zu erstellen und aufzufüllen.  

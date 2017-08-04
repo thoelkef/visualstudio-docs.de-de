@@ -44,22 +44,22 @@ Visual Studio bietet vollständiges IntelliSense für Django-Projekte:
 
 - An die Vorlage übergebene Kontextvariablen:
 
-    ![IntelliSense für Kontextvariablen](media/template-django-intellisense.png)
+    ![IntelliSense für Kontextvariablen](~/python/media/template-django-intellisense.png)
 
 - Markierungen und Filter sowohl für integrierte als auch für benutzerdefinierte Variablen:
 
-    ![IntelliSense für Tags und Filter](media/template-django-intellisense-filter.png)
+    ![IntelliSense für Tags und Filter](~/python/media/template-django-intellisense-filter.png)
 
 - Syntaxfarben für eingebettetes CSS und JavaScript:
 
-    ![CSS-IntelliSense](media/template-django-intellisense-css.png)
+    ![CSS-IntelliSense](~/python/media/template-django-intellisense-css.png)
 
-    ![JavaScript IntelliSense](media/template-django-intellisense-js.png)
+    ![JavaScript IntelliSense](~/python/media/template-django-intellisense-js.png)
 
 
 Visual Studio bietet außerdem vollständige [Debugunterstützung](debugging.md) für Django-Projekte: 
 
-![Haltepunkte](media/template-django-debugging.png)
+![Haltepunkte](~/python/media/template-django-debugging.png)
 
 ## <a name="django-management-console"></a>Django-Verwaltungskonsole
 
@@ -67,16 +67,16 @@ Die Django-Verwaltungskonsole bietet Zugriff über verschiedene Befehle im Menü
 
 - **Django-Shell öffnen**: Öffnet eine Shell im Kontext Ihrer Anwendung, damit Sie Ihre Modelle bearbeiten können.
 
-    ![Konsole](media/template-django-console-shell.png)
+    ![Konsole](~/python/media/template-django-console-shell.png)
 
 - **Django-DB synchronisieren**: Führt `manage.py syncdb` in einem interaktiven Fenster aus:
 
-    ![Konsole](media/template-django-console-sync-db.png)
+    ![Konsole](~/python/media/template-django-console-sync-db.png)
 
 - **Statische erfassen**: Führt `manage.py collectstatic --noinput` aus, um alle statischen Dateien in den durch `STATIC_ROOT` angegebenen Pfad in Ihrer `settings.py` zu kopieren. Hinweis: Bei der [Veröffentlichung in Microsoft Azure](template-web.md#publishing-to-azure-app-service) werden statische Dateien automatisch als Teil des Veröffentlichungsvorgangs gesammelt.
 
-    ![Konsole](media/template-django-console-collect-static.png)
+    ![Konsole](~/python/media/template-django-console-collect-static.png)
 
 - **Überprüfen**: Führt `manage.py validate` aus, wodurch Überprüfungsfehler in den installierten Modellen gemeldet werden, die durch `INSTALLED_APPS` in Ihrer `settings.py` angegeben wurden:
 
-    ![Konsole](media/template-django-console-validate.png)
+    ![Konsole](~/python/media/template-django-console-validate.png)

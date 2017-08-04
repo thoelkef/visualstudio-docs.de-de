@@ -44,11 +44,11 @@ Weitere Informationen finden Sie in den [Anmerkungen zu [!include[vs_dev15](../m
 
 Zu den Tools wurde eine Registerkarte **Zusammenfassung** hinzugefügt, die Ihnen dabei hilft, den Fokus für Ihre Leistungsanalyse auf die Hauptbereiche zu legen. Diese Registerkarte zeigt, wie viele Ereignisse aufgetreten sind, lässt Sie Momentaufnahmen des Heaps machen und schnell die Datensammlung für die CPU-Auslastung aktivieren. In dieser Ansicht werden alle Ereignisse von [Application Insights](https://azure.microsoft.com/en-us/documentation/articles/app-insights-visual-studio/) oder der [Analyse der Benutzeroberfläche](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes#UIAnalysis) gezeigt. Darüber hinaus werden in dieser Ansicht auch IntelliTrace-Ereignisse für Visual Studio Enterprise gezeigt.
 
-![Diagnosetools-Registerkarte Zusammenfassung](../profiling/media/DiagToolsSummaryTab-2.png "DiagToolsZusammenfassungRegisterkarte")
+![Diagnosetools-Registerkarte Zusammenfassung](~/profiling/media/DiagToolsSummaryTab-2.png "DiagToolsZusammenfassungRegisterkarte")
 
 Das Tool für die CPU-Auslastung verfügt über [neue Visualisierungen](../profiling/Beginners-Guide-to-Performance-Profiling.md), um Ihnen beim Identifizieren der Funktionen zu helfen, die am wahrscheinlichsten Leistungsprobleme verursachen. Die neue Ansicht **Aufrufer/Aufgerufener** können Sie zum Untersuchen der Kosten von Funktionsaufrufen verwenden, die an eine und von einer ausgewählten Funktion erfolgen.
 
-![Diagnosetools Ansicht Aufrufer/Aufgerufener](../profiling/media/DiagToolsCallerCallee.png "DiagToolsAufrufer/Aufgerufener")
+![Diagnosetools Ansicht Aufrufer/Aufgerufener](~/profiling/media/DiagToolsCallerCallee.png "DiagToolsAufrufer/Aufgerufener")
   
 ## <a name="see-also"></a>Siehe auch  
  [Profilerstellungstools](../profiling/profiling-tools.md)

@@ -243,7 +243,7 @@ In Visual Studio können Sie Komponententests für in C++ geschriebenen, nicht v
   
 5.  Wählen Sie im Test-Explorer **Alle ausführen**aus.  
   
-     ![Komponententest-Explorer &#45; einfacher Test bestanden](../test/media/utecpp10.png "UteCpp10")  
+     ![Komponententest-Explorer &#45; einfacher Test bestanden](~/test/media/utecpp10.png "UteCpp10")  
   
  Sie haben den Test und die Codeprojekte eingerichtet und überprüft, dass Sie Tests ausführen können, die Funktionen im Codeprojekt ausführen. Jetzt können Sie beginnen, echte Tests und Code zu schreiben.  
   

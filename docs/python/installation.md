@@ -57,14 +57,14 @@ Um die Python-Unterstützung nach den Installationsschritten schnell zu testen, 
 
 1. Wählen Sie im Visual Studio-Installer die Workload **Web und Cloud > Python-Entwicklung** aus.
 
-    ![Arbeitsauslastung zur Python-Entwicklung im Visual Studio-Installationsprogramm](media/installation-python-workload.png)
+    ![Arbeitsauslastung zur Python-Entwicklung im Visual Studio-Installationsprogramm](~/python/media/installation-python-workload.png)
 
     > [!Note]
     > Python ist auch in der Workload **Data Science und analytische Anwendungen** enthalten.
 
 1. Wählen Sie auf der rechten Seite des Installationsprogramms die Python-Interpreter und andere verwandte Tools, die Sie einbeziehen möchten. Wenn Sie z.B. planen, C++-Erweiterungen für Python zu entwickeln, schließen Sie die Option **Native Python-Entwicklungstools** ein.
 
-    ![Optionen zur Python-Entwicklung im Visual Studio-Installationsprogramm](media/installation-python-options.png)
+    ![Optionen zur Python-Entwicklung im Visual Studio-Installationsprogramm](~/python/media/installation-python-options.png)
 
 ## <a name="visual-studio-2015"></a>Visual Studio 2015
 
@@ -74,7 +74,7 @@ Um die Python-Unterstützung nach den Installationsschritten schnell zu testen, 
 
 1. Wählen Sie **Programmiersprachen > Python-Tools für Visual Studio** und dann **Weiter**:
 
-    ![PTVS-Option im Visual Studio 2015-Installationsprogramm](media/installation-vs2015.png)    
+    ![PTVS-Option im Visual Studio 2015-Installationsprogramm](~/python/media/installation-vs2015.png)    
 
 1. Nach Abschluss der Installation von Visual Studio [installieren Sie einen Python-Interpreter Ihrer Wahl](python-environments.md#selecting-and-installing-python-interpreters).
 

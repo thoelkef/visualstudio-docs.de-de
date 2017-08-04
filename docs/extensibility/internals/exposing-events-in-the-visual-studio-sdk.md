@@ -61,7 +61,7 @@ caps.handback.revision: 16
   
  Wenn keines der Objekte von einem Consumer Automatisierung angefordert werden, erstellen Sie ein Stammobjekt, die Methoden für jedes Ereignis enthält, die das VSPackage unterstützt. Die Umgebung Ruft die entsprechende `get_` Methode für dieses Objekt. Z. B. wenn `DTE.Events.AutomationProjectsEvents` aufgerufen wird, die `get_AutomationProjectsEvents` Methode für das Stammobjekt aufgerufen wird.  
   
- ![Ereignisse in Visual Studio-Projekt](../../extensibility/internals/media/projectevents.png "ProjectEvents")  
+ ![Ereignisse in Visual Studio-Projekt](~/extensibility/internals/media/projectevents.gif "ProjectEvents")  
 Automatisierungsmodell für Ereignisse  
   
  Die Klasse `CProjectEventsContainer` stellt das Quellobjekt für BscProjectsEvents, während `CProjectItemsEventsContainer` das Quellobjekt für BscProjectItemsEvents darstellt.  

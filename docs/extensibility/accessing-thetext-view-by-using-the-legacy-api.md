@@ -24,7 +24,7 @@ Eine Textansicht ist eine Darstellung von Text, der in einem Textpuffer gespeich
 ## Text\-Ansichts\-Objekt  
  Jede Ansicht wird mit seinem eigenen Textpuffer zugeordnet, und die Ansicht handelt es sich um ein Fenster auf die Daten im Puffer.  Das folgende Diagramm zeigt die wichtigsten Schnittstellen der Text des Objekts an, das von <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>dargestellt wird.  
   
- ![Visual Studio&#45;TextView&#45;Objekt](../extensibility/media/vstextview.png "vstextview")  
+ ![Visual Studio&#45;TextView&#45;Objekt](~/extensibility/media/vstextview.gif "vstextview")  
 Text für die  
   
  Die Ansicht ist eine Methode des Vorlegens des Texts im Puffer.  Sie schließt Funktionen wie Zeilenumbruch und Gliederungen, damit ein, was Sie in der Ansicht finden, keine genaue Darstellung des Texts im Puffer ist.  

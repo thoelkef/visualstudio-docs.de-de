@@ -54,9 +54,9 @@ Das Fenster **Parallele Stapel** ist hilfreich beim Debuggen von Multithreadanwe
 |||  
 |-|-|  
 |Symbol|Beschreibung|  
-|![Parallele Stapel &#45; Gelber Pfeil](../debugger/media/icon_parallelyellowarrow.png "Icon\_ParallelYellowArrow")|Gibt an, dass der Methodenkontext den aktiven Stapelrahmen des aktuellen Threads enthält.|  
-|![Parallele Stapel &#45; Threads&#45;Symbol](../debugger/media/icon_parallelthreads.png "Icon\_ParallelThreads")|Gibt an, dass der Methodenkontext den aktiven Stapelrahmen eines nicht\-aktuellen Threads enthält.|  
-|![Parallele Stapel &#45; Grüner Pfeil](../debugger/media/icon_parallelgreenarrow.png "Icon\_ParallelGreenArrow")|Gibt an, dass der Methodenkontext den aktuellen Stapelrahmen enthält.  Dieser Methodenname ist in allen Knoten fett formatiert, in denen er angezeigt wird.|  
+|![Parallele Stapel &#45; Gelber Pfeil](~/debugger/media/icon_parallelyellowarrow.gif "Icon\_ParallelYellowArrow")|Gibt an, dass der Methodenkontext den aktiven Stapelrahmen des aktuellen Threads enthält.|  
+|![Parallele Stapel &#45; Threads&#45;Symbol](~/debugger/media/icon_parallelthreads.gif "Icon\_ParallelThreads")|Gibt an, dass der Methodenkontext den aktiven Stapelrahmen eines nicht\-aktuellen Threads enthält.|  
+|![Parallele Stapel &#45; Grüner Pfeil](~/debugger/media/icon_parallelgreenarrow.gif "Icon\_ParallelGreenArrow")|Gibt an, dass der Methodenkontext den aktuellen Stapelrahmen enthält.  Dieser Methodenname ist in allen Knoten fett formatiert, in denen er angezeigt wird.|  
   
 ## Symbolleisten\-Steuerelemente  
  In der folgenden Abbildung und der Tabelle werden die verfügbaren Steuerelemente auf der Symbolleiste Parallele Stapel beschrieben.  

@@ -36,7 +36,7 @@ caps.handback.revision: 14
   
 2.  Wählen Sie im **Projektmappen\-Explorer** ein Element im SharePoint\-Projektknoten aus.  
   
-3.  Im Fenster **Eigenschaften** wählen Sie die Eigenschaft **Projektausgabeverweis**, und wählen Sie dann die Schaltfläche mit den Auslassungszeichen \(![Auslassungszeichen im ASP.NET Mobile-Designer](../sharepoint/media/mwellipsis.png "Auslassungszeichen im ASP.NET Mobile-Designer")\) neben sie aus.  
+3.  Im Fenster **Eigenschaften** wählen Sie die Eigenschaft **Projektausgabeverweis**, und wählen Sie dann die Schaltfläche mit den Auslassungszeichen \(![Auslassungszeichen im ASP.NET Mobile-Designer](~/sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer")\) neben sie aus.  
   
 4.  Im Dialogfeld **Projektausgabeverweis** wählen Sie die Schaltfläche **Hinzufügen** aus.  
   

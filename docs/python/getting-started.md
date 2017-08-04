@@ -52,7 +52,7 @@ Die Python-Unterstützung in Visual Studio umfasst eine Reihe von [Projektvorlag
 
 1. Python-Vorlagen finden Sie auf der linken Seite unter **Vorlagen > Andere Sprachen > Python**, oder indem Sie einfach nach „Python“ suchen:
 
-    ![Dialogfeld „Neues Projekt“ mit Python-Projekten](media/getting-started-new-project.png)
+    ![Dialogfeld „Neues Projekt“ mit Python-Projekten](~/python/media/getting-started-new-project.png)
 
 1. Wählen Sie die Vorlage „Python-Anwendung“, geben Sie einen Ordner für das Projekt an, und wählen Sie **OK**. (Wenn Sie sofort ein lokales Repository für das Projekt erstellen möchten, wählen Sie auch die Option **Zur Quellcodeverwaltung hinzufügen**).
 
@@ -61,11 +61,11 @@ Die Python-Unterstützung in Visual Studio umfasst eine Reihe von [Projektvorlag
 
 1. Nach einigen Augenblicken sehen Sie das geöffnete Projekt im Projektmappen-Explorer-Fenster von Visual Studio. Hier können Sie die Dateien und Ordner in Ihrem Projekt durchsuchen sowie Umgebungen verwalten.
 
-    ![Projektmappen-Explorer mit einem Python-Projekt](media/getting-started-solution-explorer-1.png)
+    ![Projektmappen-Explorer mit einem Python-Projekt](~/python/media/getting-started-solution-explorer-1.png)
 
 1. Erweitern Sie den Knoten **Python-Umgebungen**, und Sie werden sehen, welcher Python-Interpreter der aktuelle Standard für dieses Projekt ist. Wenn Sie auch den Interpreterknoten erweitern, sehen Sie eine Liste der Bibliotheken, die in der Umgebung zur Verfügung stehen:
 
-    ![Projektmappen-Explorer mit der Python-Umgebung](media/getting-started-solution-explorer-2.png)
+    ![Projektmappen-Explorer mit der Python-Umgebung](~/python/media/getting-started-solution-explorer-2.png)
 
 1. Wenn Sie Visual Studio 2015 oder früher verwenden, haben Sie standardmäßig keinen Python-Interpreter installiert. Informationen zu diesem Prozess finden Sie unter [Selecting and installing Python interpreters](python-environments.md#selecting-and-installing-python-interpreters) (Auswählen und Installieren von Python-Interpretern).
 
@@ -82,11 +82,11 @@ Die Python-Unterstützung in Visual Studio umfasst eine Reihe von [Projektvorlag
 
 1. Beginnen Sie, `print("Hello world")` einzugeben, und beachten Sie, wie Visual Studio IntelliSense nebenbei Optionen zur automatischen Vervollständigung anzeigt. Die in der Dropdownliste dargestellte Option ist die Standardvervollständigung, die verwendet wird, wenn Sie die TAB-Taste drücken. Dies kann bei längeren Anweisungen oder Bezeichnern sehr hilfreich sein.
 
-    ![IntelliSense-Popupfenster für automatische Vervollständigung](media/getting-started-coding-1.png)
+    ![IntelliSense-Popupfenster für automatische Vervollständigung](~/python/media/getting-started-coding-1.png)
 
 1. IntelliSense zeigt je nach der Anweisung, die Sie verwenden, verschiedene Informationen an, die Funktion, die Sie aufrufen usw. Bei der `print`-Funktion werden bei Eingabe von `(` für den Aufruf vollständige Nutzungsinformationen für diese Funktion angezeigt, und das aktuelle Argument, das Sie bereitstellen müssen (hier **value**), wird sogar fett formatiert:
 
-    ![IntelliSense-Popupfenster für automatische Vervollständigung für eine Funktion](media/getting-started-coding-2.png)
+    ![IntelliSense-Popupfenster für automatische Vervollständigung für eine Funktion](~/python/media/getting-started-coding-2.png)
 
 1. Vervollständigen Sie die Anweisung, damit sie der folgenden entspricht:
 
@@ -96,28 +96,28 @@ Die Python-Unterstützung in Visual Studio umfasst eine Reihe von [Projektvorlag
 
 1. Wählen Sie zum Ausführen des Codes auf der Symbolleiste unten die Schaltfläche **Start**, drücken Sie F5, oder wählen Sie das Menüelement **Debuggen > Debuggen starten**.
 
-    ![Schaltfläche „Start“ auf der Debugsymbolleiste](media/getting-started-coding-3.png)
+    ![Schaltfläche „Start“ auf der Debugsymbolleiste](~/python/media/getting-started-coding-3.png)
 
     > [!Note]
     > Wenn in Visual Studio 2015 oder früher die Meldung angezeigt wird, dass keine Interpreter vorhanden sind, informieren Sie sich unter [Selecting and installing Python interpreters](python-environments.md#selecting-and-installing-python-interpreters) (Auswählen und Installieren von Python-Interpretern), da standardmäßig kein Interpreter installiert ist.
 
 1. Visual Studio führt den Code mithilfe der Standardumgebung im Projekt aus und zeigt die Ergebnisse in einem Befehlsfenster an. Drücken Sie eine Taste, um das Fenster zu schließen und die Debugsitzung beenden.
 
-    ![Schaltfläche „Start“ auf der Debugsymbolleiste](media/getting-started-coding-4.png)
+    ![Schaltfläche „Start“ auf der Debugsymbolleiste](~/python/media/getting-started-coding-4.png)
 
 1. Zusätzlich zu Anweisungen und Funktionen bietet IntelliSense Vervollständigungen für `import`-Anweisungen. Dadurch können Sie leicht erkennen, welche Module in Ihrer Umgebung und welche Elemente in diesen Modulen verfügbar sind. Löschen Sie im Editor die `print`-Zeile, und geben Sie `import` ein. Sie sehen eine Liste von Modulen:
 
-    ![IntellSense zeigt verfügbare Module für eine Import-Anweisung an](media/getting-started-coding-5.png)
+    ![IntellSense zeigt verfügbare Module für eine Import-Anweisung an](~/python/media/getting-started-coding-5.png)
 
 1. Vervollständigen Sie die Zeile durch Eingabe oder Auswahl von `sys`.
 
 1. Geben Sie in der nächsten Zeile `from` ein, um erneut eine Liste der Module zu sehen:
 
-    ![IntellSense zeigt verfügbare Module für eine Anweisung an](media/getting-started-coding-6.png)
+    ![IntellSense zeigt verfügbare Module für eine Anweisung an](~/python/media/getting-started-coding-6.png)
 
 1. Geben Sie `math` ein bzw. wählen Sie es aus, fahren Sie dann mit einem Leerzeichen und `import` fort, sodass die Modulmember angezeigt werden:
 
-    ![IntellSense zeigt Modulmember an](media/getting-started-coding-7.png)
+    ![IntellSense zeigt Modulmember an](~/python/media/getting-started-coding-7.png)
 
 1. Importieren Sie abschließend die Member `sin`, `cos` und `radians`, und beachten Sie die jeweilige automatische Vervollständigung. Wenn Sie fertig sind, sollte der Code wie folgt aussehen:
 
@@ -145,15 +145,15 @@ Das interaktive Visual Studio-Fenster für Python bietet eine komfortable „Les
 
 1. Öffnen Sie das interaktive Fenster durch Auswahl von **Ansicht > Weitere Fenster > Interaktive Python-Fenster** im Hauptmenü von Visual Studio. Das Fenster wird mit der üblichen Python-REPL-Eingabeaufforderung >>> geöffnet. Beachten Sie, dass Sie die Umgebung im Dropdownmenü auf der Symbolleiste jederzeit ändern können:
 
-    ![Interaktives Python-Fenster](media/getting-started-interactive-1.png)
+    ![Interaktives Python-Fenster](~/python/media/getting-started-interactive-1.png)
 
 1. Geben Sie einige Anweisungen (z.B. `print("hello")`) und Ausdrücke (z.B. `123/567`) ein, um sofortige Ergebnisse anzuzeigen:
 
-    ![Sofortige Ergebnisse im interaktiven Python-Fenster](media/getting-started-interactive-2.png)
+    ![Sofortige Ergebnisse im interaktiven Python-Fenster](~/python/media/getting-started-interactive-2.png)
 
 1. Beim Schreiben einer mehrzeiligen Anweisung, wie einer Funktionsdefinition, wird im interaktiven Fenster die Eingabeaufforderung ... zum Fortsetzen der Zeilen angezeigt, die im Gegensatz zum Befehlszeilen-REPL automatischen Einzug bietet:
 
-    ![Interaktives Python-Fenster mit Anweisungsfortsetzung](media/getting-started-interactive-3.png)
+    ![Interaktives Python-Fenster mit Anweisungsfortsetzung](~/python/media/getting-started-interactive-3.png)
 
 1. Das interaktive Fenster enthält einen vollständigen Verlauf aller Elemente, die Sie eingegeben haben, und verbessert das Befehlszeilen-REPL mit mehrzeiligen Verlaufselementen. Beispielsweise können Sie einfach die vollständige Definition der `f`-Funktion oben als einzelne Einheit zurückrufen und den Namen mühelos in `make_double` ändern, anstatt die Funktion Zeile für Zeile neu erstellen zu müssen.
 
@@ -166,7 +166,7 @@ Das interaktive Visual Studio-Fenster für Python bietet eine komfortable „Les
 
 1. Wählen Sie den gesamten Code in „hello.py“ (einschließlich der `import`-Anweisungen) aus, klicken Sie mit der rechten Maustaste, und wählen Sie **An Interactive senden** (STRG+EINGABETASTE). Der Code wird direkt in das interaktive Fenster eingefügt und ausgeführt. Da der Code eine Funktion definiert, können Sie diese Funktion schnell testen, indem Sie sie mehrmals aufrufen:
 
-    ![Senden von Code an das interaktive Fenster](media/getting-started-interactive-4.png)
+    ![Senden von Code an das interaktive Fenster](~/python/media/getting-started-interactive-4.png)
 
 1. **An Interactive senden** ermöglicht Ihnen, mehrere Zeilen Code (z.B. etwas, das Sie online finden) in das interaktive Fenster einzufügen, was nicht direkt möglich ist. Kopieren Sie z.B. den folgenden Code, und versuchen Sie, ihn in das interaktive Fenster einzufügen (STRG+V), und Sie sehen, dass nichts passiert. Aber Sie können ihn in den Editor einfügen, auswählen und den Befehl **An Interactive senden** verwenden, um seine Ausführung zu sehen.
 
@@ -176,13 +176,13 @@ Das interaktive Visual Studio-Fenster für Python bietet eine komfortable „Les
       print(s) 
   ```
 
-    ![Einfügen von mehrere Codezeilen mit „An Interactive senden“](media/getting-started-interactive-5.png)
+    ![Einfügen von mehrere Codezeilen mit „An Interactive senden“](~/python/media/getting-started-interactive-5.png)
 
 1. Da die Definition der Funktion sich erneut als einzelne Einheit im REPL-Verlauf befindet, können Sie einfach zurückzugehen, beliebige Änderungen vornehmen und die Funktion erneut testen.
 
 1. Wenn Sie mit dem Code den Sie geschrieben haben, zufrieden sind, können Sie ihn im interaktiven Fenster auswählen, mit der rechten Maustaste darauf klicken, **Code kopieren** wählen und ihn in den Editor einfügen. Die besondere Funktion des Befehls **Code kopieren** ist, dass er automatisch sowohl beliebige Ausgabe als auch den Aufforderungstext >>> und ... auslässt. Wenn Sie den Befehl z.B. mit der Auswahl unten verwenden:
 
-  ![Interaktives Fenster mit dem Befehl „Code kopieren“](media/getting-started-interactive-6.png)
+  ![Interaktives Fenster mit dem Befehl „Code kopieren“](~/python/media/getting-started-interactive-6.png)
 
   wird nur Folgendes eingefügt:
 
@@ -236,17 +236,17 @@ Zusätzlich zum Verwalten von Projekten, das mit seinen umfassenden Bearbeitungs
 
 1. Legen Sie in der ersten Zeile der `main`-Funktion durch Klicken auf den linken grauen Rand dieser Zeile oder Platzieren des Caretzeichens in dieser Zeile einen Haltepunkt fest, und verwenden Sie den Befehl *Debuggen > Haltepunkt ein/aus** (F9). Ein roter Punkt wird im grauen Rand angezeigt und kennzeichnet den Haltepunkt (siehe blauer Pfeil unten):
 
-    ![Festlegen eines Haltepunkts](media/getting-started-debugging-1.png)
+    ![Festlegen eines Haltepunkts](~/python/media/getting-started-debugging-1.png)
 
 1. Starten Sie den Debugger erneut, und Sie sehen, dass die Codeausführung in der Zeile mit diesem Haltepunkt stoppt. Hier können Sie die Aufrufliste sehen und lokale Variablen im Fenster „Lokale“ überprüfen:
 
-    ![Haltepunkt-Benutzeroberfläche für Python](media/getting-started-debugging-2.png)
+    ![Haltepunkt-Benutzeroberfläche für Python](~/python/media/getting-started-debugging-2.png)
 
 1. Gehen Sie mit F10, dem Befehl **Debuggen > Prozedurschritt** oder der Symbolleistenschaltfläche „Prozedurschritt“ zeilenweise durch ein paar Iterationen der `for`-Schleife. Dies bedeutet, dass der Debugger jeden Aufruf von `make_dot_string` ausführt, jedoch nicht innerhalb dieser Funktion stoppt (es sei denn, Sie legen einen Haltepunkt fest).
 
 1. Die unten gezeigten drei Schrittschaltflächen in der Symbolleiste sind von links nach rechts: „Einzelschritt“, „Prozedurschritt“ und „Ausführen bis Rücksprung“:
 
-    ![Schrittschaltflächen in der Symbolleiste](media/getting-started-debugging-3.png)
+    ![Schrittschaltflächen in der Symbolleiste](~/python/media/getting-started-debugging-3.png)
 
 1. Gehen Sie jetzt mithilfe des Befehls „Einzelschritt“ (F11) in `make_dot_string`. Sie sehen, dass Sie aus der `for`-Schleife in diese Funktion gehen. Beim nächsten Schritt kehren Sie zur `for`-Schleife zurück, aber wenn die Funktion zusätzliche Zeilen enthielte, würden Sie diese zeilenweise durchgehen. Wenn Sie sich in einer Funktion befinden, ihre restlichen Zeilen ausführen und zum aufrufenden Code zurückkehren möchten, verwenden Sie „Ausführen bis Rücksprung“ (UMSCHALT+F11).
 
@@ -254,7 +254,7 @@ Zusätzlich zum Verwalten von Projekten, das mit seinen umfassenden Bearbeitungs
 
 1. Hunderte von Iterationen einer Schleife zu durchlaufen, kann mühsam sein, also können Sie dem früher festgelegten Haltepunkt die Bedingung hinzufügen, nur dann zu stoppen, wenn der Wert von `i` eine bestimmte Grenze überschreitet, z.B. 1.600. Klicken Sie zu diesem Zweck mit der rechten Maustaste auf den roten Punkt, der den Haltepunkt markiert, und wählen Sie **Bedingung...**. Geben Sie im dann angezeigten Fenster „Haltepunkteinstellungen“ `i > 1600` als Ausdruck ein, und wählen Sie **Schließen**. Drücken Sie nun F5, um den Vorgang fortzusetzen, und Sie sehen, dass das Programm für eine Weile ausgeführt wird, bevor es erneut stoppt. 
 
-    ![Festlegen einer Haltepunktbedingung](media/getting-started-debugging-4.png)
+    ![Festlegen einer Haltepunktbedingung](~/python/media/getting-started-debugging-4.png)
 
 1. Um das Programm abzuschließen, können Sie den Haltepunkt ausschalten und F5 drücken. Visual Studio kehrt in den Bearbeitungsmodus zurück, wenn das Debuggen abgeschlossen ist.
 

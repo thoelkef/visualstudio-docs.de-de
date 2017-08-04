@@ -39,7 +39,7 @@ Verwenden Sie das GPU-Nutzungstool im Visual Studio-Leistungs- und Diagnosehub, 
   
  Im Folgenden ist das Fenster **GPU-Nutzungsbericht** dargestellt:  
   
- ![Der GPU-Nutzungsbericht mit CPU- und GPU-Zeitplänen](media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")  
+ ![Der GPU-Nutzungsbericht mit CPU- und GPU-Zeitplänen](~/profiling/media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")  
   
 ## <a name="requirements"></a>Anforderungen  
  Im Folgenden werden Anforderungen für die Verwendung des GPU-Nutzungstools aufgeführt, die zusätzlich zu den Anforderungen der Grafikdiagnose gelten.  
@@ -60,7 +60,7 @@ Verwenden Sie das GPU-Nutzungstool im Visual Studio-Leistungs- und Diagnosehub, 
   
 2.  Aktivieren Sie im Leistungs- und Diagnosehub das Kontrollkästchen neben **GPU-Nutzung**. Aktivieren Sie optional die Kontrollkästchen neben anderen gewünschten Tools. Sie können mehrere Leistungs- und Diagnosetools gleichzeitig ausführen, um ein umfassenderes Bild der Leistung Ihrer App zu erhalten.  
   
-     ![Wählen Sie die Diagnosetools, die Sie verwenden möchten.](media/gfx_diag_diagsession_tools.png "gfx_diag_diagsession_tools")  
+     ![Wählen Sie die Diagnosetools, die Sie verwenden möchten.](~/profiling/media/gfx_diag_diagsession_tools.png "gfx_diag_diagsession_tools")  
   
     > [!NOTE]
     >  Nicht alle Leistungs- und Diagnosetools können gleichzeitig verwendet werden.  
@@ -79,15 +79,15 @@ Verwenden Sie das GPU-Nutzungstool im Visual Studio-Leistungs- und Diagnosehub, 
   
 1.  Wählen Sie im unteren Bereich des Fensters „Diagnosesitzung“ den Link **Auflistung beenden**, oder drücken Sie oben links **Beenden**.  
   
-     ![Erfassen Sie GPU- und CPU-Zeitsteuerungsinformationen.](media/gfx_diag_gpu_usage_collect.png "gfx_diag_gpu_usage_collect")  
+     ![Erfassen Sie GPU- und CPU-Zeitsteuerungsinformationen.](~/profiling/media/gfx_diag_gpu_usage_collect.png "gfx_diag_gpu_usage_collect")  
   
 2.  Wählen Sie im oberen Bereich des Berichts einen Abschnitt aus einem der Diagramme, die das Problem anzeigt, das Sie untersuchen möchten. Die Auswahl kann bis zu drei Sekunden umfassen. Längere Abschnitte werden in Richtung Anfang gekürzt.  
   
-     ![Nach dem Erfassen, wählen Sie einen Bereich zum Anzeigen von Details](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")  
+     ![Nach dem Erfassen, wählen Sie einen Bereich zum Anzeigen von Details](~/profiling/media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")  
   
 3.  Wählen Sie im unteren Bereich des Berichts den Link **Details anzeigen** in der Meldung **...Klicken Sie hier, um detaillierte Informationen zur GPU-Nutzung für diesen Bereich anzuzeigen**, um eine detaillierte Zeitachse der Auswahl anzuzeigen.  
   
-     ![Nach dem Erfassen, mit ausgewähltem Bereich](media/gfx_diag_gpu_usage_select2.png "gfx_diag_gpu_usage_select2")  
+     ![Nach dem Erfassen, mit ausgewähltem Bereich](~/profiling/media/gfx_diag_gpu_usage_select2.png "gfx_diag_gpu_usage_select2")  
   
  Es wird ein neues Dokument im Registerkartenformat mit dem Bericht geöffnet. Mithilfe des GPU-Nutzungsberichts können Sie sehen, wann ein Grafikereignis auf CPU gestartet wurde, wann es GPU erreicht und wie lange die Ausführung auf GPU gedauert hat. Anhand dieser Informationen können Sie Engpässe und Möglichkeiten für eine verbesserte Parallelität in Ihrem Code erkennen.  
 
@@ -95,7 +95,7 @@ Verwenden Sie das GPU-Nutzungstool im Visual Studio-Leistungs- und Diagnosehub, 
 ## <a name="export-to-gpuview-or-windows-performance-analyzer"></a>Exportieren zu GPUView oder Windows Performance Analyzer
 Ab Visual Studio 2017 können diese Daten mit [GPUView](/windows-hardware/drivers/display/using-gpuview) und [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer) geöffnet werden, indem Sie in der Diagnosesitzung unten rechts auf den Link **In GpuView öffnen** oder **In WPA öffnen** klicken.
 
-![Öffnen in...](media/gfx_diag_open_in.png)
+![Öffnen in...](~/profiling/media/gfx_diag_open_in.png)
 <!-- /VERSIONLESS -->
 
 ## <a name="using-the-gpu-usage-report"></a>Verwenden des GPU-Nutzungsberichts  
@@ -105,7 +105,7 @@ Ab Visual Studio 2017 können diese Daten mit [GPUView](/windows-hardware/driver
   
  Im Folgenden ist das Fenster **GPU-Nutzungsbericht** dargestellt:  
   
- ![Der GPU-Nutzungsbericht mit CPU- und GPU-Zeitplänen](media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")  
+ ![Der GPU-Nutzungsbericht mit CPU- und GPU-Zeitplänen](~/profiling/media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")  
   
  Beim Auswählen eines Ereignisses im unteren Bereich des Berichts wird ein Marker auf den entsprechenden Ereignissen auf den relevanten Zeitachsen platziert, in der Regel ein Ereignis in einem CPU-Thread, der den API-Aufruf darstellt, und ein anderes Ereignis auf einer GPU-Zeitachse, die angibt, wann eine Aufgabe von GPU abgeschlossen wurde. Ebenso wird beim Auswählen eines Ereignisses in einer Zeitachse das entsprechende Ereignis im unteren Bereich des Berichts hervorgehoben. Wenn eine Zeitachse im oberen Bereich des Berichts verkleinert wurde, werden nur die zeitaufwändigsten Ereignisse angezeigt. Zum Anzeigen von Ereignissen mit einer kürzeren Dauer können Sie die Zeitachsen mithilfe von STRG+Mausrad oder des Skalierungssteuerelements in der unteren linken Ecke des oberen Bereichs vergrößern. Sie können auch die Inhalte des Zeitachsenbereichs ziehen, um durch die erfassten Ereignisse zu navigieren.  
   
@@ -146,7 +146,7 @@ Ab Visual Studio 2017 können diese Daten mit [GPUView](/windows-hardware/driver
   
 3.  Deaktivieren Sie unter **GPU-Profilerstellungskonfiguration** auf der Eigenschaftenseite **Allgemein** das Kontrollkästchen **Profilerstellung beim Appstart beginnen**, um die Profilerstellung zurückzustellen.  
   
-     ![Konfigurieren, wenn die GPU-Nutzungserfassung startet](media/gfx_diag_gpu_usage_config.png "gfx_diag_gpu_usage_config")  
+     ![Konfigurieren, wenn die GPU-Nutzungserfassung startet](~/profiling/media/gfx_diag_gpu_usage_config.png "gfx_diag_gpu_usage_config")  
   
 > [!IMPORTANT]
 >  Das Zurückstellen der Profilerstellung wird derzeit nicht für Direct3D 12-Apps unterstützt.  

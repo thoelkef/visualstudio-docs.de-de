@@ -56,15 +56,15 @@ RTVS unterstützt das Hinzufügen von SQL-Abfragen in R-Projekten, wobei Sie die
 
 Um eine SQL-Abfragedatei hinzuzufügen, klicken Sie mit der rechten Maustaste auf das Projekt im Projektmappen-Explorer, wählen Sie **Hinzufügen > Neues Element...** und dann den Dateityp der **SQL-Abfrage** aus:
 
-![Hinzufügen eines SQL-Abfrageelements zu einem Projekt](media/sql-add-item.png)
+![Hinzufügen eines SQL-Abfrageelements zu einem Projekt](~/rtvs/media/sql-add-item.png)
 
 Die Datei wird im Transact-SQL-Editor von Visual Studio geöffnet, wobei vollständiges IntelliSense für SQL und die Möglichkeit zum Ausführen von Abfragen bereitgestellt wird. Damit diese Funktionen funktionieren, müssen Sie eine Verbindung zu einer Datenbank mithilfe der Schaltfläche „Verbinden“ auf der Symbolleiste des Editors herstellen oder einfach versuchen, eine Abfrage auszuführen (STRG+UMSCHALT+E; funktioniert auch auf einer Auswahl). Egal für welche Möglichkeit Sie sich entscheiden, es wird das Dialogfeld „Verbindung“ angezeigt:
 
-![Dialogfeld „SQL-Verbindung“](media/sql-connection-dialog.png)
+![Dialogfeld „SQL-Verbindung“](~/rtvs/media/sql-connection-dialog.png)
 
 Sobald eine Verbindung hergestellt wurde, können Sie Abfragen ausführen und Ergebnisse anzeigen:
 
-![SQL-Fenster mit Abfrageergebnissen](media/sql-query-results.png)
+![SQL-Fenster mit Abfrageergebnissen](~/rtvs/media/sql-query-results.png)
 
 Der Transact-SQL-Editor unterstützt eine Vielzahl anderer Funktionen, z.B. die Darstellung des Ausführungsplans für die Abfrage, einen Abfragedebugger und auch viele andere Funktionen, die im Transact-SQL-Editor verfügbar sind. Weitere Informationen finden Sie unter [Verwenden des Transact-SQL-Editors zum Bearbeiten und Ausführen von Skripts](https://msdn.microsoft.com/library/hh272706.aspx).
 
@@ -86,11 +86,11 @@ Das folgende Video (6:09 Min.) bietet auch eine Übersicht dieser Funktionen:
 
 1. Wählen Sie **R Tools > Daten > Datenbankverbindung hinzufügen** aus, um das Dialogfeld **Verbindungseigenschaften** anzuzeigen, indem Sie den Namen der Datenquelle (in diesem Fall SQL Server), den Namen des Servers, den Authentifizierungsmodus und den Namen der Datenbank angeben. Sie können **Testverbindung** auswählen, um Ihre Eingabe zu überprüfen, bevor Sie das Dialogfeld schließen.
  
-    ![SQL-Verbindung (Dialogfeld)](media/sql-connection-string-dialog.png)
+    ![SQL-Verbindung (Dialogfeld)](~/rtvs/media/sql-connection-string-dialog.png)
 
 1. Sobald Sie auf **OK** geklickt haben, generiert Visual Studio mit einer gültigen Verbindung eine Verbindungszeichenfolge mit dem Namen `dbConnection` in einer neuen `settings.R`-Datei. RTVS fügt diese Datei automatisch hinzu (führt dies aus), damit Sie die Verbindung von R-Skripts sofort nutzen können:
 
-![SQL-Datei „Settings.R“](media/sql-settings-dot-r.png)
+![SQL-Datei „Settings.R“](~/rtvs/media/sql-settings-dot-r.png)
 
 ### <a name="write-and-test-a-sql-stored-procedure"></a>Schreiben und Testen einer in SQL gespeicherten Prozedur
 
@@ -98,7 +98,7 @@ Um eine neue in SQL gespeicherte Prozedur hinzuzufügen, klicken Sie auf Ihr Pro
  
 RTVS erstellt drei Dateien für die gespeicherte Prozedur, eine `.R`-Datei für Ihren R-Code, eine `.Query.sql`-Datei für den SQL-Code und eine `.Template.sql`-Datei, die beide vereint. Die letzten beiden erscheinen im Projektmappen-Explorer als untergeordnete Dateien der `.R`-Datei:
 
-![Erweiterte Projektmappen-Explorer-Ansicht der gespeicherten SQL-Prozedur mit R](media/sql-solution-explorer-expanded.png)
+![Erweiterte Projektmappen-Explorer-Ansicht der gespeicherten SQL-Prozedur mit R](~/rtvs/media/sql-solution-explorer-expanded.png)
 
 `StoredProcedure.R` (in diesem Beispiel) ist der Ort, an dem Sie Ihren R-Code schreiben. Der Standardinhalt ist der folgende:
 
@@ -126,7 +126,7 @@ Der andere generierte Code in den Kommentaren ist ein kleines Testskript, das da
 
 Sobald Sie mit Ihrem SQL-Code zufrieden sind, können Sie ihn leicht mit Ihrem R-Code in `StoredProcedure.R` integrieren, indem Sie einfach die `.sql`-Datei in den offenen Editor für die `.R`-Datei ziehen. Wie unten dargestellt, wurde `StoredProcedure.Query.sql` zur Stelle nach dem Komma in `sqlQuery(channel, )` gezogen:
 
-![Lesen einer SQL-Datei in eine R-Zeichenfolgenvariable](media/sql-reference-sql-file-from-r.png)
+![Lesen einer SQL-Datei in eine R-Zeichenfolgenvariable](~/rtvs/media/sql-reference-sql-file-from-r.png)
 
 Wie Sie sehen können, generiert dieser einfache Schritt automatisch R-Code, um die `.sql`-Datei zu öffnen, deren Inhalt in eine Zeichenfolge zu lesen und sie an das RODBC-Paket zu übergeben, um sie an SQL Server zu senden.
 
@@ -167,7 +167,7 @@ WITH RESULT SETS ((medallion NVARCHAR(max), hack_license NVARCHAR(max)));
 1. Wählen Sie den Menübefehl **R Tools > Daten > Mit Optionen veröffentlichen...**.
 1. Ändern Sie im Dialogfeld, das erscheint, **Veröffentlichen an:** in **Datenbank**, geben Sie das Ziel an, wählen Sie **Veröffentlichen** aus, und RTVS erstellt die gespeicherte Prozedur und veröffentlicht sie:
 
-    ![Dialogfeld „Gespeicherte Prozeduren veröffentlichen“](media/sql-publish-with-options.png)
+    ![Dialogfeld „Gespeicherte Prozeduren veröffentlichen“](~/rtvs/media/sql-publish-with-options.png)
 
 1. Um alle gespeicherten Prozeduren in einem Projekt zu veröffentlichen, können Sie auch den Befehl **R Tools > Daten > Gespeicherte Prozeduren veröffentlichen** verwenden, der auch verfügbar ist, wenn Sie mit der rechten Maustaste auf das Projekt im Projektmappen-Explorer klicken.
 

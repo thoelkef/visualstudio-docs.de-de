@@ -79,7 +79,7 @@ In diesem Dokument wird beschrieben, wie mit dem [!INCLUDE[vsprvs](../code-quali
   
  So sieht die **Shader-Designer-Modus**-Symbolleiste aus:  
   
- ![Die Shader-Designer-Modus-Symbolleiste](../designers/media/digit-dsd-modal-toolbar.png "Ziffer-DSD-Modale-Symbolleiste")  
+ ![Die Shader-Designer-Modus-Symbolleiste](~/designers/media/digit-dsd-modal-toolbar.png "Ziffer-DSD-Modale-Symbolleiste")  
   
  In dieser Tabelle werden die Elemente der **Shader-Designer-Modus**-Symbolleiste beschrieben und in der Reihenfolge aufgelistet, in der sie auf der Symbolleiste von links nach rechts angezeigt werden:  
   

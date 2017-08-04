@@ -51,7 +51,7 @@ Da sich die Einstellungen in einer Datei innerhalb der Codebasis befinden, bilde
 ## <a name="override-editorconfig-settings"></a>Außer Kraft setzen von EditorConfig-Einstellungen
 Wenn Sie einem Ordner in Ihrer Dateihierarchie eine EDITORCONFIG-Datei hinzufügen, gelten ihre Einstellungen für alle geeigneten Dateien auf der betreffenden Ebene und den Ebenen darunter. Um EditorConfig-Einstellungen für ein bestimmtes Projekt oder eine bestimmte Codebasis außer Kraft zu setzen und andere oder vorrangige Werte zu verwenden, als sie in der EDITORCONFIG-Datei der obersten Ebene festgelegt sind, fügen Sie einfach auf der Ebene, die Sie ändern möchten, eine EDITORCONFIG-Datei hinzu.
 
-![EditorConfig-Hierarchie](../ide/media/vside_editorconfig_hierarchy.png)
+![EditorConfig-Hierarchie](~/ide/media/vside_editorconfig_hierarchy.png)
 
 Die Einstellungen der neuen EDITORCONFIG-Datei gelten für die Ebene, auf der sie sich befindet und alle Ebenen darunter.
 
@@ -70,19 +70,19 @@ EditorConfig-Einstellungen werden in allen von Visual Studio unterstützten Spra
 ## <a name="example"></a>Beispiel
 Hier finden Sie ein Beispiel, das den Einzugstatus eines C#-Codeausschnitts vor und nach dem Hinzufügen einer EDITORCONFIG-Datei zum Projekt zeigt. Die Einstellung **Tabstopps** im Dialogfeld **Optionen** für den Visual Studio-Text-Editor ist auf das Einfügen von Leerzeichen festgelegt, wenn Sie in Ihrem Code die TAB-TASTE drücken.
 
-![Text-Editor-Tabstoppeinstellung](../ide/media/vside_editorconfig_tabsetting.png)
+![Text-Editor-Tabstoppeinstellung](~/ide/media/vside_editorconfig_tabsetting.png)
 
 Wie erwartet erfolgt der Einzug beim Drücken der TAB-TASTE in der nächsten Zeile durch Hinzufügen von vier zusätzlichen Leerzeichen.
 
-![Code vor der Verwendung von EditorConfig](../ide/media/vside_editorconfig_before.png)
+![Code vor der Verwendung von EditorConfig](~/ide/media/vside_editorconfig_before.png)
 
 Wir fügen einer neuen Datei mit dem Namen EDITORCONFIG Folgendes und die Datei dann zum Projekt hinzu. (Die Einstellung `[*.cs]` bewirkt, dass sich diese Änderung nur auf CS-Dateien im Projekt auswirkt.)
 
-![Projekt mit hinzugefügter EDITORCONFIG-Datei](../ide/media/vside_editorconfig_addconfig.png)
+![Projekt mit hinzugefügter EDITORCONFIG-Datei](~/ide/media/vside_editorconfig_addconfig.png)
 
 Wenn Sie jetzt die TAB-TASTE drücken, erhalten Sie Tabstoppzeichen anstelle von Leerzeichen.
 
-![Die TAB-TASTE fügt Tabstoppzeichen hinzu](../ide/media/vside_editorconfig_tab.png)
+![Die TAB-TASTE fügt Tabstoppzeichen hinzu](~/ide/media/vside_editorconfig_tab.png)
 
 > [!NOTE]
 >  Das Hinzufügen einer EDITORCONFIG-Datei zu Ihrem Projekt oder Ihrer Codebasis bewirkt keine Umwandlung der vorhandenen Formate in die neuen, sondern wirkt sich nur auf neu hinzugefügte Zeilen aus. Wenn Sie eine EDITORCONFIG-Datei aus Ihrem Projekt oder Ihrer Codebasis entfernen, müssen Sie die Codedateien neu laden, damit die Editor-Einstellungen wieder auf die globalen Einstellungen zurückgesetzt werden. Alle Fehler in EDITORCONFIG-Dateien werden im Fehlerfenster in Visual Studio gemeldet.

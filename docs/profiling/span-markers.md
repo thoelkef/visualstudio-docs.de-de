@@ -52,7 +52,7 @@ Die Farben der ersten fünf Bereichskategorien
 ## <a name="span-aggregation-markers"></a>Span-Aggregationsmarker  
  Manchmal treten Span-Marker so nahe nebeneinander in der Parallelitätschnellansicht auf, dass sie nicht einzeln gezeichnet werden können. Ist dies der Fall, wird ein *Span-Aggregationsmarker* angezeigt, der die zugrunde liegenden Bereiche darstellt. Wenn Sie mit dem Mauszeiger über eines dieser Symbole fahren, zeigt eine QuickInfo die Anzahl der zugrunde liegenden Bereiche an, die dargestellt werden. Vergrößern Sie, um die Bereichs anzuzeigen. Wenn Sie bis zur maximalen Stufe vergrößern und weiterhin ein Span-Aggregationsmarker angezeigt wird, können Sie die zugrunde liegenden Bereichsmarker im [Markerbericht](../profiling/markers-report.md) anzeigen. Die folgende Abbildung zeigt einen Span-Aggregationsmarker:  
   
- ![Span-Aggregationsmarker in der Parallelitätsschnellansicht](../profiling/media/cvmarkerspanaggregate.png "CVMarkerSpanAggregate")  
+ ![Span-Aggregationsmarker in der Parallelitätsschnellansicht](~/profiling/media/cvmarkerspanaggregate.png "CVMarkerSpanAggregate")  
 Span-Aggregationsmarker  
   
 ## <a name="see-also"></a>Siehe auch  

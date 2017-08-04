@@ -49,7 +49,7 @@ Projects
   
  Die sich auf die Projektautomatisierung von folgt dem Pfad im folgenden Diagramm.  
   
- ![Objekte in Visual Studio&#45;Projekt](../../extensibility/internals/media/projectobjects.png "ProjectObjects")  
+ ![Objekte in Visual Studio&#45;Projekt](~/extensibility/internals/media/projectobjects.gif "ProjectObjects")  
 sich auf die Projektautomatisierung von  
   
  Wenn Sie kein `Project`\-Objekt implementieren, gibt die Umgebung noch ein generisches `Project`\-Objekt zurück, das nur den Namen des Projekts enthält.  

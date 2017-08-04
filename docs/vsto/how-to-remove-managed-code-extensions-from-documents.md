@@ -29,7 +29,7 @@ caps.handback.revision: 29
   
  Sie können die Anpassungsassembly entfernen, indem Sie eine der RemoveCustomization\-Methoden verwenden, die von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] bereitgestellt werden.  Welche Methode Sie verwenden, hängt davon ab, ob Sie die Anpassung zur Laufzeit entfernen möchten \(d. h. durch Ausführen von Code in der Anpassung bei geöffnetem Word\-Dokument bzw. geöffneter Excel\-Arbeitsmappe\) oder Sie die Anpassung aus einem geschlossenen Dokument bzw. einem Dokument entfernen möchten, das sich auf einem Server befindet, auf dem Microsoft Office nicht installiert ist.  
   
- ![Link zu Video](../vsto/media/playvideo.png "Link zu Video") Eine entsprechende Videodemo finden Sie im Thema zum [Anfügen oder Trennen einer VSTO\-Assembly an ein bzw. von einem Word\-Dokument](http://go.microsoft.com/fwlink/?LinkId=136782) \(möglicherweise in englischer Sprache\).  
+ ![Link zu Video](~/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie im Thema zum [Anfügen oder Trennen einer VSTO\-Assembly an ein bzw. von einem Word\-Dokument](http://go.microsoft.com/fwlink/?LinkId=136782) \(möglicherweise in englischer Sprache\).  
   
 ### So entfernen Sie die Anpassungsassembly zur Laufzeit  
   

@@ -51,12 +51,12 @@ Im sechsten Teil dieses Lernprogramms fügen Sie eine Subtraktionsaufgabe hinzu 
   
      Sie können die `Next()`\-Methode der `Random`\-Klasse, die zuvor in diesem Lernprogramm "randomizer" genannt wurde, auf unterschiedliche Weise aufrufen.  Methoden, für die es mehrere Arten des Aufrufs gibt, werden als "überladene" Methoden bezeichnet. Sie können mithilfe von IntelliSense untersucht werden.  Werfen Sie einen weiteren Blick auf die QuickInfo für die `Next()`\-Methode im IntelliSense\-Fenster.  
   
-     ![QuickInfo im IntelliSense&#45;Fenster](../ide/media/express_overloads.png "Express\_Overloads")  
+     ![QuickInfo im IntelliSense&#45;Fenster](~/ide/media/express_overloads.png "Express\_Overloads")  
 QuickInfo im IntelliSense\-Fenster  
   
      Die QuickInfo zeigt **\(\+ 2 Überladung\(en\)\)** an, was bedeutet, dass Sie die `Next()`\-Methode auf zwei andere Arten aufrufen können.  Überladungen enthalten unterschiedliche Anzahl und Typen von Argumenten, sodass sie alle mit leichten Unterschieden funktionieren.  Beispielsweise könnte eine Methode ein einzelnes ganzzahliges Argument haben, während eine der entsprechenden Überladungen eine Ganzzahl und eine Zeichenfolge enthalten kann.  Wählen Sie die richtige Überladung je nach gewünschter Funktionen aus.  Wenn Sie der `StartTheQuiz()`\-Methode den Code hinzufügen, werden weitere Informationen im IntelliSense\-Fenster angezeigt, sobald Sie `randomizer.Next(` eingeben.  Wählen Sie die NACH\-OBEN\-TASTE und die NACH\-UNTEN\-TASTE aus, um die Überladungen zu durchlaufen, wie in der folgenden Abbildung gezeigt.  
   
-     ![Überladung für Next&#40;&#41;&#45;Methode in IntelliSense](../ide/media/express_nextoverload.png "Express\_NextOverload")  
+     ![Überladung für Next&#40;&#41;&#45;Methode in IntelliSense](~/ide/media/express_nextoverload.png "Express\_NextOverload")  
 Überladung für Next\(\)\-Methode in IntelliSense  
   
      In diesem Fall wählen Sie die letzte Überladung aus, da Sie Mindest\- und Höchstwerte angeben können.  

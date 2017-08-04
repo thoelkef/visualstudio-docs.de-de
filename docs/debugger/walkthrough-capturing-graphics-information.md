@@ -48,7 +48,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie die [!INCLUDE[vsprvs](..
   
 #### So erfassen Grafikinformationen  
   
--   Wählen Sie in der Grafikdiagnose\-Symbolleiste die Schaltfläche **Erfassen** aus.![Symbol "Schaltfläche Grafikerfassung“](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")  
+-   Wählen Sie in der Grafikdiagnose\-Symbolleiste die Schaltfläche **Erfassen** aus.![Symbol "Schaltfläche Grafikerfassung“](~/debugger/graphics/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")  
   
      \- oder \-  
   

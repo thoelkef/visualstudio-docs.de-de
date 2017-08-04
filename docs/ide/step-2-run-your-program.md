@@ -20,7 +20,7 @@ caps.handback.revision: 14
 
 Als Sie eine neue Projektmappe erstellt haben, haben Sie tatsächlich ein ausführbares Programm erstellt.  Bisher hat das Programm noch nicht viele Funktionen – es zeigt nur ein leeres Fenster mit dem Text **Form1** in der Titelleiste an.  Aber es kann ausgeführt werden, wie Sie gleich feststellen werden.  
   
- ![Link zu Video](../data-tools/media/playvideo.png "PlayVideo") Eine Videoversion dieses Themas finden Sie im [Video 1 zum Lernprogramm 1: Erstellen eines Bildanzeigeprogramms in Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205209) oder im [Video 1 zum Lernprogramm 1: Erstellen eines Bildanzeigeprogramms in C\#](http://go.microsoft.com/fwlink/?LinkId=205199).  Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können.  Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.  
+ ![Link zu Video](~/data-tools/media/playvideo.gif "PlayVideo") Eine Videoversion dieses Themas finden Sie im [Video 1 zum Lernprogramm 1: Erstellen eines Bildanzeigeprogramms in Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205209) oder im [Video 1 zum Lernprogramm 1: Erstellen eines Bildanzeigeprogramms in C\#](http://go.microsoft.com/fwlink/?LinkId=205199).  Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können.  Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.  
   
 ### So führen Sie das Programm aus  
   
@@ -37,7 +37,7 @@ Symbolleistenschaltfläche "Debugging starten"
   
 2.  Visual Studio führt das Programm aus, und ein Fenster mit der Bezeichnung **Form1** wird angezeigt.  Im folgenden Diagramm wird das Programm gezeigt, das Sie soeben erstellt haben.  Das Programm wird ausgeführt, und Sie werden es bald ergänzen.  
   
-     ![Windows Form&#45;Anwendungsprogramm wird ausgeführt](../ide/media/express_firstrun.png "Express\_FirstRun")  
+     ![Windows Form&#45;Anwendungsprogramm wird ausgeführt](~/ide/media/express_firstrun.png "Express\_FirstRun")  
 Ausgeführtes Windows Form\-Anwendungsprogramm  
   
 3.  Wechseln Sie zurück zur integrierten Entwicklungsumgebung \(IDE\) von Visual Studio, und schauen Sie sich die neue Symbolleiste an.  Zusätzliche Schaltflächen werden auf der Symbolleiste angezeigt, wenn ein Programm ausgeführt wird.  Mit diesen Schaltflächen können Sie Aufgaben ausführen, wie z. B. ein Programm beenden und starten. Außerdem helfen sie Ihnen, alle evtl. vorhandenen Fehler zu ermitteln.  Für dieses Beispiel verwenden wir sie nur, um das Programm zu starten und zu beenden.  

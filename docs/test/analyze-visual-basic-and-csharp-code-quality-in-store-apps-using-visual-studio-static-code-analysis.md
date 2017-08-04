@@ -21,7 +21,7 @@ manager: "douge"
 # Analysieren der Qualit&#228;t von Visual Basic- und C#-Code in Store-Apps mit der statischen Codeanalyse von Visual Studio
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Gilt für Windows und Windows Phone](../debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![Gilt für Windows und Windows Phone](~/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  Das Codeanalysetool in Visual Studio Express überprüft den Code auf eine Reihe von allgemeinen Fehlern und auf Verstöße gegen gebräuchliche Programmiergrundlagen.  Codeanalysewarnungen unterscheiden sich von C\#\-Compilerfehlern und \-Warnungen, da das Codeanalysetool nach bestimmten Codeschemata sucht, die gültig sind, jedoch Probleme für Sie oder andere Personen bereiten können, die den Code verwenden.  Codeanalyse kann auch Fehler im Code suchen, die schwierig durch Tests zu erkennen sind.  Das regelmäßige Ausführen des Codeanalysetools während des Entwicklungsprozesses kann die Qualität der App erhöhen.  
   
@@ -63,7 +63,7 @@ manager: "douge"
   
  Wenn Sie eine Warnung erweitern, wird die Codezeile, die die Warnung verursacht hat, im Visual Studio\-Code\-Editor hervorgehoben.  
   
- ![Textmarkierung für Codeanalyse](../test/media/ca_managed_sourceline.png "CA\_Managed\_SourceLine")  
+ ![Textmarkierung für Codeanalyse](~/test/media/ca_managed_sourceline.png "CA\_Managed\_SourceLine")  
   
  Nachdem Sie die Ursache des Problems verstanden haben, können Sie es im Code beheben.  Wiederholen Sie dann die Codeanalyse, um sicherzustellen, dass die Warnung nicht mehr im Codeanalysefenster angezeigt wird, und dass durch die Korrektur keine neuen Warnungen ausgelöst wurden.  
   

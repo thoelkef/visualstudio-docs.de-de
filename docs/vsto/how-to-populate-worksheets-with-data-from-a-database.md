@@ -30,7 +30,7 @@ caps.handback.revision: 38
   
  Im folgenden Beispiel wird veranschaulicht, wie mithilfe eines Designers in Projekten auf Dokumentebene datengebundene Steuerelemente hinzugefügt werden.  Ein Beispiel zum Hinzufügen von datengebundenen Steuerelementen in Projekten auf Anwendungsebene zur Laufzeit finden Sie unter [Exemplarische Vorgehensweise: Komplexe Datenbindung in einem VSTO-Add-In-Projekt](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md).  
   
- ![Link zu Video](../vsto/media/playvideo.png "Link zu Video") Eine entsprechende Videodemo finden Sie in den Themen zur [Übertragung von Daten in ein Excel\-Arbeitsblatt](http://go.microsoft.com/fwlink/?LinkID=130277) und zur [Nutzung von Datenbankdaten in Excel](http://go.microsoft.com/fwlink/?LinkID=130287) \(möglicherweise in englischer Sprache\).  
+ ![Link zu Video](~/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie in den Themen zur [Übertragung von Daten in ein Excel\-Arbeitsblatt](http://go.microsoft.com/fwlink/?LinkID=130277) und zur [Nutzung von Datenbankdaten in Excel](http://go.microsoft.com/fwlink/?LinkID=130287) \(möglicherweise in englischer Sprache\).  
   
 ## Hinzufügen eines datengebundenen Steuerelements zu einem Arbeitsblatt zur Entwurfszeit  
   

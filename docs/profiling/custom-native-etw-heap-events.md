@@ -67,7 +67,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
 
 Eine Momentaufnahme aus dem [Speicherauslastungs](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)tool ohne benutzerdefinierte Heap-Nachverfolgung würde nur einfach die einzelne 8192 Byte-Zuordnung und keine der benutzerdefinierten Zuordnungen, die vom Pool vorgenommen wurden, anzeigen:
 
-![Windows-Heap-Zuordnung](media/heap-example-windows-heap.png)
+![Windows-Heap-Zuordnung](~/profiling/media/heap-example-windows-heap.png)
 
 Durch die folgenden Schritte können wir dieses Tool zum Nachverfolgen von Speicherauslastung in unserem benutzerdefinierten Heap verwenden.
 
@@ -158,17 +158,17 @@ Diese Bibliothek kann problemlos in C und C++ verwendet werden.
 ## <a name="tracking-memory-usage"></a>Nachverfolgung der Speicherauslastung
 Mit diesen Aufrufen kann Ihr benutzerdefinierter Heapverbrauch jetzt mithilfe des Standard-**Speicherauslastungs**-Tools in Visual Studio nachverfolgt werden.  Weitere Informationen zur Verwendung dieses Tools finden Sie unter der [Speicherauslastungs](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)-Dokumentation. Stellen Sie sicher, dass Sie die Heap-Profilerstellung mit Momentaufnahmen aktiviert haben, andernfalls wird Ihr benutzerdefinierter Heapverbrauch nicht angezeigt. 
 
-![Aktivieren der Heap-Profilerstellung](media/heap-enable-heap.png)
+![Aktivieren der Heap-Profilerstellung](~/profiling/media/heap-enable-heap.png)
 
 Verwenden Sie zum Anzeigen Ihrer benutzerdefinierten Heap-Nachverfolgung den **Heap**-Dropdown, der sich in der oberen rechten Ecke des **Snapshot**-Fensters befindet, um die Anzeige von *NT-Heap* in Ihren eigenen zuvor genannten Heap zu ändern.
 
-![Heap-Auswahl](media/heap-example-custom-heap.png)
+![Heap-Auswahl](~/profiling/media/heap-example-custom-heap.png)
 
 Mithilfe des obigen Codebeispiels, mit `MemoryPool` zum Erstellen eines `VSHeapTracker::CHeapTracker`-Objekts, und unserer eigenen `allocate`-Methode, die nun die `AllocateEvent`-Methode aufruft, können Sie das Ergebnis der benutzerdefinierten Zuordnung sehen, die 3 Instanzen mit insgesamt 24 Bytes zeigt, alle vom Typ `Foo`.
 
 Das Standardheap *NT-Heap* sieht genauso aus wie vorher, außer dass das `CHeapTracker`-Objekt hinzugefügt wurde.
 
-![NT-Heap mit Tracker](media/heap-example-windows-heap.png)
+![NT-Heap mit Tracker](~/profiling/media/heap-example-windows-heap.png)
 
 Wie bei dem standardmäßigen Windows-Heap, können Sie dieses Tool auch verwenden, um Momentaufnahmen zu vergleichen und um nach Verlusten und Beschädigung in Ihrem benutzerdefinierten Heap zu suchen, das in der Hauptdokumentation [Speicherauslastung](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage) beschrieben wird.
 

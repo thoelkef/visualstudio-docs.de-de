@@ -105,22 +105,22 @@ In Visual Studio können Sie Position, Größe und Verhalten von Fenstern anpass
 
  Die folgende Abbildung veranschaulicht das Diamant-Führungssymbol für Dokumentfenster, das nur im Bearbeitungsrahmen angedockt werden kann:  
 
- ![Dokumentfenster-Rautenführungssymbol](../ide/media/documentwindowguidediamonds.png "Documentwindowguidediamonds")  
+ ![Dokumentfenster-Rautenführungssymbol](~/ide/media/documentwindowguidediamonds.png "Documentwindowguidediamonds")  
 
  Toolfenster können an einer Seite eines Frames in der IDE oder innerhalb des Bearbeitungsrahmens angebunden werden. Ein Diamant-Führungssymbol wird angezeigt, wenn Sie ein Toolfenster an eine andere Position ziehen, damit Sie das Fenster problemlos neu andocken können.  
 
  Diamant-Führungssymbol für Toolfenster  
 
- ![Toolfenster-Rautenführungssymbol](../ide/media/vs10guidediamond.png "VS10GuideDiamond")  
+ ![Toolfenster-Rautenführungssymbol](~/ide/media/vs10guidediamond.png "VS10GuideDiamond")  
 
  In der folgenden Abbildung ist der Projektmappen-Explorer an einer neuen Position angedockt, die durch den blauen schattierten Bereich dargestellt wird:  
 
- ![Andocken des Projektmappen-Explorers an einer neuen Position](../ide/media/vs2015_dock_diamond.png "VS2017_Dock_diamond")  
+ ![Andocken des Projektmappen-Explorers an einer neuen Position](~/ide/media/vs2015_dock_diamond.png "VS2017_Dock_diamond")  
 
 ### <a name="close-and-auto-hide-tool-windows"></a>Schließen und automatisches Ausblenden von Toolfenstern  
  Sie können ein Toolfenster schließen, indem Sie auf das X in der Titelleiste oben rechts klicken; Verwenden Sie zum erneuten Öffnen des Fensters die entsprechende Tastenkombination oder den Menübefehl. Toolfenster unterstützen eine Funktion mit dem Namen „Automatisch im Hintergrund“, mit der ein Fenster bei Verwendung eines anderen Fensters in den Hintergrund versetzt wird und ist somit nicht mehr sichtbar ist. Wenn ein Fenster automatisch in den Hintergrund versetzt wird, wird sein Name auf einer Registerkarte am Rand der IDE angezeigt. Um das Fenster wieder zu verwenden, zeigen Sie auf die Registerkarte, damit das Fenster wieder angezeigt wird.  
 
- ![Automatisches Ausblenden](../ide/media/vs2015_auto_hide.png "vs2017_auto_hide")  
+ ![Automatisches Ausblenden](~/ide/media/vs2015_auto_hide.png "vs2017_auto_hide")  
 
 > [!NOTE]
 >  Um festzulegen, ob die Funktion "Automatisch im Hintergrund" in Toolfenstern einzeln oder als angedockte Gruppen ausgeführt wird, wählen Sie im Dialogfeld **Optionen** die Option **Schaltfläche "Automatisch ausblenden" bezieht sich nur auf aktives Toolfenster** aus. Weitere Informationen finden Sie unter [General, Environment, Options Dialog Box](../ide/reference/general-environment-options-dialog-box.md).  

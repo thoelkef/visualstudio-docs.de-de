@@ -43,7 +43,7 @@ caps.handback.revision: 21
   
      Das Dialogfeld **Vorhandene Assembly hinzufügen** wird angezeigt.  
   
-4.  Wählen Sie das Auslassungszeichen \(![Auslassungszeichen im ASP.NET Mobile-Designer](../sharepoint/media/mwellipsis.png "Auslassungszeichen im ASP.NET Mobile-Designer")\) aus, und wählen Sie dann die Assembly aus, die Sie hinzufügen möchten.  Aus Gründen der Portabilität wird empfohlen, einen relativen Pfad zur ausgewählten Assembly zu verwenden.  
+4.  Wählen Sie das Auslassungszeichen \(![Auslassungszeichen im ASP.NET Mobile-Designer](~/sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer")\) aus, und wählen Sie dann die Assembly aus, die Sie hinzufügen möchten.  Aus Gründen der Portabilität wird empfohlen, einen relativen Pfad zur ausgewählten Assembly zu verwenden.  
   
 5.  Wählen Sie für das **Bereitstellungsziel** die Optionsschaltfläche **GlobalAssemblyCache** aus, um die Assembly im globalen Assemblycache bereitzustellen, oder wählen Sie die Optionsschaltfläche **WebApplication** aus, um die Assembly im Ordner "WebApplication" auf dem Server, der SharePoint ausführt, bereitzustellen.  
   
@@ -81,7 +81,7 @@ caps.handback.revision: 21
   
 2.  Wählen Sie im Bereich **Klassenressourcen** die Schaltfläche **Klicken Sie hier, um ein neues Element hinzuzufügen** aus.  
   
-3.  Wählen Sie in der Spalte **Dateiname** das Auslassungszeichen \(![Auslassungszeichen im ASP.NET Mobile-Designer](../sharepoint/media/mwellipsis.png "Auslassungszeichen im ASP.NET Mobile-Designer")\) aus, und wählen Sie die Klassenressource aus, die Sie hinzufügen möchten.  
+3.  Wählen Sie in der Spalte **Dateiname** das Auslassungszeichen \(![Auslassungszeichen im ASP.NET Mobile-Designer](~/sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer")\) aus, und wählen Sie die Klassenressource aus, die Sie hinzufügen möchten.  
   
 ## Löschen von benutzerdefinierten Assemblys  
  Sie können Assemblys aus einem SharePoint\-Paket oder sichere Steuerelemente und Klassenressourcen aus vorhandenen Assemblys löschen.  

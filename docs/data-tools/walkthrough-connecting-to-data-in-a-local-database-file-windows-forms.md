@@ -92,9 +92,9 @@ Sie können Daten aus einer lokalen Datenbankdatei in der Anwendung schnell und 
   
 2.  Um die Anwendung auszuführen und die Daten anzuzeigen, die Sie in der vorherigen exemplarischen Vorgehensweise hinzugefügt haben, drücken Sie die Taste F5.  
   
-3.  Wählen Sie das gelbe Symbol zum Hinzufügen aus \(![Schaltfläche "Hinzufügen" in Windows Form](../data-tools/media/addrecord.png "AddRecord")\), fügen Sie einen Kundendatensatz hinzu, und speichern Sie anschließend die Änderungen, indem Sie auf das Datenträgersymbol \(![Schaltfläche "Speichern" in Windows Form](../data-tools/media/saveinwf.png "SaveInWF")\) klicken.  
+3.  Wählen Sie das gelbe Symbol zum Hinzufügen aus \(![Schaltfläche "Hinzufügen" in Windows Form](~/data-tools/media/addrecord.png "AddRecord")\), fügen Sie einen Kundendatensatz hinzu, und speichern Sie anschließend die Änderungen, indem Sie auf das Datenträgersymbol \(![Schaltfläche "Speichern" in Windows Form](~/data-tools/media/saveinwf.png "SaveInWF")\) klicken.  
   
-4.  Löschen Sie den Datensatz, den Sie gerade erstellt haben, indem Sie ihn auswählen und dann auf das rote Symbol zum Löschen klicken \(![Schaltfläche "Löschen" in Windows Form](../data-tools/media/deleterecord.png "DeleteRecord")\).  
+4.  Löschen Sie den Datensatz, den Sie gerade erstellt haben, indem Sie ihn auswählen und dann auf das rote Symbol zum Löschen klicken \(![Schaltfläche "Löschen" in Windows Form](~/data-tools/media/deleterecord.png "DeleteRecord")\).  
   
 ## Nächste Schritte  
  Sie können Objekte im Dataset erstellen oder ändern, wenn Sie die Datenquelle im  [Erstellen und Bearbeiten von typisierten Datasets](../data-tools/creating-and-editing-typed-datasets.md) öffnen.  Sie können dem Ereignis <xref:System.Data.DataTable.ColumnChanging> oder <xref:System.Data.DataTable.RowChanging> der Datentabellen im DataSet auch eine Validierungslogik hinzufügen.  [Überprüfen von Daten in Datasets](../data-tools/validate-data-in-datasets.md).  

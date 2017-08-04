@@ -42,7 +42,7 @@ Dieser Abschnitt enthält ausführliche Informationen zu Visual Studio-Erweiteru
 ## <a name="extensibility-architecture"></a>Erweiterbarkeitsarchitektur  
  Die folgende Abbildung zeigt die Architektur der Visual Studio-Erweiterbarkeit. VSPackages bieten die Funktionalität der Anwendung, die in der IDE als Dienste gemeinsam verwendet wird. Die standard-IDE verfügt zudem über eine Breite Palette von Diensten, z. B. <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, die Zugriff auf den Funktionsumfang der IDE Windowing bereitstellen.</xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>  
   
- ![Grafik zur Umgebungsarchitektur](../../extensibility/internals/media/environment.gif "environment")  
+ ![Grafik zur Umgebungsarchitektur](~/extensibility/internals/media/environment.gif "environment")  
 Generalisierte Überblick über die Visual Studio-Architektur  
   
 ## <a name="vspackages"></a>VSPackages  
@@ -75,7 +75,7 @@ Generalisierte Überblick über die Visual Studio-Architektur
   
  Betrachten Sie das folgende Bild von Visual Studio, die mehrere Toolfenster enthält.  
   
- ![Screenshot](../../extensibility/internals/media/t1gui.png "T1gui")  
+ ![Screenshot](~/extensibility/internals/media/t1gui.png "T1gui")  
   
  Einige Toolfenster sind zusammen auf einem einzelnen Bereich angedockt, die zeigt der Projektmappen-Explorer-Toolfenster an und blendet die anderen Toolfenster, jedoch werden sie durch Klicken auf die Registerkarten verfügbar gemacht. Die Abbildung zeigt zwei andere Toolfenster, die **Fehlerliste** und **Ausgabe** Fenster zusammen auf einem einzelnen Bereich angedockt.  
   

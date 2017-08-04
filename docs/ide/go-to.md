@@ -48,35 +48,35 @@ Dieses Funktion ist in Visual Studio 2017 und höher vorhanden.  Dies ermöglich
 
 Standardmäßig wird dadurch oben rechts in Ihrer IDE ein kleines Fenster angezeigt.
 
-![Gehe zu allen](media/gotoall.png)
+![Gehe zu allen](~/ide/media/gotoall.png)
 
 An diesem Punkt bieten sich verschiedene Wege an:
 * Geben Sie Text für die Suche ohne Präfix mithilfe der [Filtersymbole](#filtered-searches) ein, die unter dem Textfeld ausgewählt sind.
 * Geben Sie ein [Präfix](#filtered-searches) ein, gefolgt von dem zu suchenden Text.
 * Geben Sie ein Fragezeichen (?) ein, um weitere Hilfe anzufordern.
-  ![Gehe zu allen – Hilfe](media/gotoall_help.png)
+  ![Gehe zu allen – Hilfe](~/ide/media/gotoall_help.png)
 
 ### <a name="filtered-searches"></a>Gefilterte Suchvorgänge
 Um Ihre Suche auf einen bestimmten Typ einzugrenzen, können Sie entweder während der Eingabe ein Präfix oder die Schaltfläche unterhalb des Suchfensters verwenden, wie unten dargestellt.
 
 Präfix | Symbol | Verknüpfung | Beschreibung
 :----: | ---- | -------- | ---
-#      | ![Zeichensymbol](media/gotoall_symbolicon.png) | STRG+1, STRG+S | Suchen von übereinstimmenden Symbolen
-f      | ![Dateisymbol](media/gotoall_fileicon.png)     | STRG+1, STRG+F | Übereinstimmende Dateinamen suchen
-m      | ![Membersymbol](media/gotoall_membericon.png) | STRG+1, STRG+M | Übereinstimmende Elemente suchen
-t      | ![Typsymbol](media/gotoall_typeicon.png)     | STRG+1, STRG+T | Übereinstimmende Typen suchen
-:      | ![Zeilensymbol](media/gotoall_lineicon.png)     | Strg+G         | Zu der eingegebenen Zeilennummer gehen
+#      | ![Zeichensymbol](~/ide/media/gotoall_symbolicon.png) | STRG+1, STRG+S | Suchen von übereinstimmenden Symbolen
+f      | ![Dateisymbol](~/ide/media/gotoall_fileicon.png)     | STRG+1, STRG+F | Übereinstimmende Dateinamen suchen
+m      | ![Membersymbol](~/ide/media/gotoall_membericon.png) | STRG+1, STRG+M | Übereinstimmende Elemente suchen
+t      | ![Typsymbol](~/ide/media/gotoall_typeicon.png)     | STRG+1, STRG+T | Übereinstimmende Typen suchen
+:      | ![Zeilensymbol](~/ide/media/gotoall_lineicon.png)     | Strg+G         | Zu der eingegebenen Zeilennummer gehen
 
 ### <a name="search-locations"></a>Speicherorte für die Suche
 Um die Suche auf bestimmte Speicherorte einzugrenzen, verwenden Sie die zwei Dokumentsymbole.
 
 Symbol | Beschreibung
 ---- | ---
-![Aktuelles Dokument](media/gotoall_currentdocument.png) | Nur im aktuellen Dokument suchen
-![Externe Dokumente](media/gotoall_external.png) | In externen Dokumenten suchen, zusätzlich zu den unter Projekt/Projektmappe gespeicherten
+![Aktuelles Dokument](~/ide/media/gotoall_currentdocument.png) | Nur im aktuellen Dokument suchen
+![Externe Dokumente](~/ide/media/gotoall_external.png) | In externen Dokumenten suchen, zusätzlich zu den unter Projekt/Projektmappe gespeicherten
 
 ### <a name="settings"></a>Einstellungen
-Klicken auf das Zahnradsymbol ![Zahnradsymbol](media/gotoall_gear.png) unten rechts ermöglicht Ihnen, die Funktionsweise diese Features zu ändern.
+Klicken auf das Zahnradsymbol ![Zahnradsymbol](~/ide/media/gotoall_gear.png) unten rechts ermöglicht Ihnen, die Funktionsweise diese Features zu ändern.
 
 Einstellung | Beschreibung
 ------- | ---

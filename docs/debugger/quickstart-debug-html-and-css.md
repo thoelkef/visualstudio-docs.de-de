@@ -30,7 +30,7 @@ caps.handback.revision: 101
 # Schnellstart: Debuggen von HTML und CSS
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Gilt für Windows und Windows Phone](../debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![Gilt für Windows und Windows Phone](~/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  Visual Studio bietet für JavaScript\-Apps umfassende Debugfunktionen, die Internet Explorer\- und Visual Studio\-Entwicklern zum großen Teil vertraut sind. Diese Features werden für [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]\-Apps, Windows Phone Store\-Apps und Apps unterstützt, die mithilfe von Visual Studio\-Tools für Apache Cordova erstellt wurden.  
   
@@ -108,7 +108,7 @@ caps.handback.revision: 101
   
      Die folgende Abbildung zeigt das Ziel beim Ausführen dieser App im Windows Phone\-Emulator \(im Simulator ist die Anzeige ähnlich\). Um diesen Status für die App zu erreichen, müssen Sie allerdings zunächst eine Anzahl von Fehlern beheben.  
   
-     ![FlipView&#45;App mit erwarteten Ergebnissen](../debugger/media/js_dom_appfixed.png "JS\_DOM\_AppFixed")  
+     ![FlipView&#45;App mit erwarteten Ergebnissen](~/debugger/media/js_dom_appfixed.png "JS\_DOM\_AppFixed")  
   
 7.  Wählen Sie in der Dropdownliste neben der Schaltfläche **Debuggen starten** auf der Symbolleiste **Debuggen** entweder die Option **Simulator** oder **Emulator 8.1 WVGA 512MB** aus.  
   
@@ -193,7 +193,7 @@ caps.handback.revision: 101
   
 2.  Öffnen Sie "default.html", und bearbeiten Sie den Quellcode, indem Sie die Höhe und die Breite des `"fView"`\-DIV\-Elements auf 100 % ändern.  
   
-3.  Klicken Sie auf der Debug\-Symbolleiste auf die Schaltfläche **Windows\-App aktualisieren** \(oder drücken Sie F4\). Die Schaltfläche sieht wie folgt aus: ![Schaltfläche "Windows&#45;App aktualisieren"](../debugger/media/js_refresh.png "JS\_Refresh").  
+3.  Klicken Sie auf der Debug\-Symbolleiste auf die Schaltfläche **Windows\-App aktualisieren** \(oder drücken Sie F4\). Die Schaltfläche sieht wie folgt aus: ![Schaltfläche "Windows&#45;App aktualisieren"](~/debugger/media/js_refresh.png "JS\_Refresh").  
   
      Die Seiten der App werden erneut geladen, und der Simulator oder Windows Phone\-Emulator wechselt in den Vordergrund zurück.  
   
@@ -216,7 +216,7 @@ caps.handback.revision: 101
   
  Bevor Sie **Element auswählen** auswählen, können Sie festlegen, ob die Elemente in der ausgeführten App mithilfe der Umschaltfläche **Webseiten\-Markierungsfelder anzeigen** hervorgehoben werden sollen. Die folgende Abbildung zeigt diese Schaltfläche. Standardmäßig werden die Hervorhebungen angezeigt.  
   
- ![Webseitenanzeige mit hervorgehobener Schaltfläche](../debugger/media/js_dom_display_highlights_button.png "JS\_DOM\_Display\_Highlights\_Button")  
+ ![Webseitenanzeige mit hervorgehobener Schaltfläche](~/debugger/media/js_dom_display_highlights_button.png "JS\_DOM\_Display\_Highlights\_Button")  
   
  Wenn Sie die Hervorhebung von Elementen ausgewählt haben, werden Elemente, auf die Sie im Simulator zeigen, hervorgehoben. Die Farben für hervorgehobene Elemente entsprechen dem Feldmodell, das auf der Registerkarte **Layout** im DOM Explorer angezeigt wird.  
   

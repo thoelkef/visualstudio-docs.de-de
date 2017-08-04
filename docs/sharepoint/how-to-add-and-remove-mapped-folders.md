@@ -65,7 +65,7 @@ caps.handback.revision: 22
   
 1.  im Projekt, das Sie zuvor erstellt haben, wählen Sie einen zugeordneten Ordner aus.  
   
-2.  Im Fenster **Eigenschaften** wählen Sie die Schaltfläche mit den Auslassungszeichen \(![Auslassungszeichen im ASP.NET Mobile-Designer](../sharepoint/media/mwellipsis.png "Auslassungszeichen im ASP.NET Mobile-Designer")\) in der **Deployment location**\-Eigenschaft aus.  
+2.  Im Fenster **Eigenschaften** wählen Sie die Schaltfläche mit den Auslassungszeichen \(![Auslassungszeichen im ASP.NET Mobile-Designer](~/sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer")\) in der **Deployment location**\-Eigenschaft aus.  
   
 3.  Im Dialogfeld **Zugeordneten SharePoint\-Ordner hinzufügen** zu dem Ordner, dem Sie den zugeordneten Ordner zum Punkt möchten.  
   

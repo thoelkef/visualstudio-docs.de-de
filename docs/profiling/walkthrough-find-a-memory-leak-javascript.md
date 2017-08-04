@@ -43,7 +43,7 @@ ms.lasthandoff: 02/22/2017
 
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>Exemplarische Vorgehensweise: Suchen eines Speicherverlusts (JavaScript)
-![Gilt für Windows und Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+![Gilt für Windows und Windows Phone](~/debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
  Diese exemplarische Vorgehensweise führt Sie durch den Prozess zum Identifizieren und Beheben eines einfachen Arbeitsspeicherproblems mithilfe der JavaScript-Speicheranalyse. Die JavaScript-Speicheranalyse ist in Visual Studio für Windows Store-Apps verfügbar, die für Windows mit JavaScript erstellt wurden. In diesem Szenario erstellen Sie eine App, die fehlerhafterweise DOM-Elemente im Speicher behält, anstatt Elemente mit derselben Geschwindigkeit zu löschen, mit der sie erstellt werden.  
   
@@ -228,7 +228,7 @@ ms.lasthandoff: 02/22/2017
   
 15. Öffnen Sie das HTMLDivElement-Objekt oben in der Objektstruktur wie hier gezeigt.  
   
-     ![Andere Ansicht der Objektanzahl auf dem Heap](../profiling/media/js_mem_app_typesdiff.png "JS_Mem_App_TypesDiff")  
+     ![Andere Ansicht der Objektanzahl auf dem Heap](~/profiling/media/js_mem_app_typesdiff.png "JS_Mem_App_TypesDiff")  
   
      Diese Ansicht zeigt nützliche Informationen zum Speicherverlust, wie beispielsweise Folgende:  
   

@@ -31,7 +31,7 @@ caps.handback.revision: 26
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- ![Link zu Video](../vsto/media/playvideo.png "Link zu Video") Eine entsprechende Videodemo finden Sie unter [Wie erstelle ich eine Liste in Excel, die mit einer SharePoint\-Liste verbunden ist?](http://go.microsoft.com/fwlink/?LinkID=130263).  
+ ![Link zu Video](~/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie unter [Wie erstelle ich eine Liste in Excel, die mit einer SharePoint\-Liste verbunden ist?](http://go.microsoft.com/fwlink/?LinkID=130263).  
   
 ### So binden Sie Daten an ein ListObject\-Steuerelement  
   

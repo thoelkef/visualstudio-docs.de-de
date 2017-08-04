@@ -35,7 +35,7 @@ Sie können mehr als eine Ansicht eines Dokuments durch das Erstellen von separa
 ## Bestimmen, ob Dokumenten\-Bezugspunkte bereits geöffnet ist  
  Die aktive Dokument \(Drehtransformator\) in Hilfe Bildlaufziehleiste der integrierten Entwicklungsumgebung \(IDE\), ob die Daten für ein Dokument bereits geöffnet ist, wie im folgenden Diagramm dargestellt.  
   
- ![Grafik zu DocDataView](../extensibility/media/docdataview.png "Docdataview")  
+ ![Grafik zu DocDataView](~/extensibility/media/docdataview.gif "Docdataview")  
 Mehrere Ansichten  
   
  Standardmäßig wird jede Ansicht \(Objekt\) der Dokumente in einem eigenen Fensterrahmen \(<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>\) enthalten.  Wie bereits erwähnt, kann jedoch Dokumentdaten in mehreren Ansichten angezeigt werden.  Um dies zu aktivieren, überprüft Visual Studio den Drehtransformator um zu bestimmen, ob das Dokument, das fragliche wurde bereits in einem Editor geöffnet ist.  Wenn die IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> aufruft, um den Editor zu erstellen, gibt ein Werter ungleicher NULL, der im `punkDocDataExisting`\-Parameter zurückgegeben wurde, wird das Dokument bereits in einem anderen Editor geöffnet ist.  Weitere Informationen darüber, wie der Drehtransformator finden Sie unter [Dokumenttabelle der ausgeführten](../extensibility/internals/running-document-table.md).  

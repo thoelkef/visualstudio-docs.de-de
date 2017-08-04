@@ -111,7 +111,7 @@ Mit dem Natvis\-Framework in Visual Studio können Sie die Darstellung anpassen,
   
  Die Elemente `DisplayString` und `ArrayItems` werden in der standardmäßigen und in der einfachen Ansicht verwendet, während die Elemente `[size]` und `[capacity]` aus dieser einfachen Ansicht ausgeschlossen sind. Sie können den Formatbezeichner **view** verwenden, um eine alternative Ansicht anzugeben. Im Fenster **Überwachen** können Sie die einfache Ansicht als **vec,view\(simple\)** angeben:  
   
- ![Überwachungsfenster mit einfacher Ansicht](../debugger/media/watch-simpleview.png "Watch\-SimpleView")  
+ ![Überwachungsfenster mit einfacher Ansicht](~/debugger/media/watch-simpleview.png "Watch\-SimpleView")  
   
 ##  <a name="BKMK_Diagnosing_Natvis_errors"></a> Diagnose von Natvis\-Fehlern  
  Sie können die Natvis\-Diagnose verwenden, um Syntax\- und Analysefehler zu beheben. Wenn der Debugger Fehler in einem Visualisierungseintrag ermittelt, ignoriert er die Fehler und zeigt den Typ in seiner Rohform an oder wählt eine andere geeignete Visualisierung aus. Um nachzuvollziehen, weshalb ein bestimmter Visualisierungseintrag ignoriert wird und um die zugrunde liegenden Fehler anzuzeigen, können Sie die Natvis\-Diagnoseoption **Extras \/ Optionen \/ Debugging \/ Ausgabefenster \/ Natvis\-Diagnosemeldungen \(nur C\+\+\)** aktivieren. Die Fehler werden im Fenster **Ausgabe** angezeigt.  

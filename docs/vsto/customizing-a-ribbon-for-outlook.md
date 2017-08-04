@@ -28,7 +28,7 @@ caps.handback.revision: 41
 # Anpassen einer Multifunktionsleiste in Outlook
   Beim Anpassen des Menübands in Microsoft Office Outlook müssen Sie berücksichtigen, wo das benutzerdefinierte Menüband in der Anwendung angezeigt wird.  Outlook zeigt das Menüband in der Benutzeroberfläche der Hauptanwendung und in Fenstern an, die geöffnet werden, wenn Benutzer bestimmte Aufgaben ausführen, z. B. eine E\-Mail erstellen.  Diese Anwendungsfenster werden als Inspektoren bezeichnet.  
   
- ![Link zu Video](../vsto/media/playvideo.png "Link zu Video") Eine entsprechende Videodemo finden Sie unter [Gewusst wie: Verwenden des Menüband\-Designers zum Anpassen des Menübands in Outlook](http://go.microsoft.com/fwlink/?LinkID=130312).  
+ ![Link zu Video](~/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie unter [Gewusst wie: Verwenden des Menüband\-Designers zum Anpassen des Menübands in Outlook](http://go.microsoft.com/fwlink/?LinkID=130312).  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   

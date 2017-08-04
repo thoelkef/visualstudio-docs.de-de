@@ -57,15 +57,15 @@ Schauen Sie sich auch die Themen zu [IntelliSense](code-intellisense.md), [Codea
 
 Sie können mit RTVS Teile Ihres Codes (z.B. Zeichenfolgen, Kommentare und Schlüsselwörter) nicht nur farblich hervorheben, sondern auch Links in Kommentaren:
 
-![Farben für Syntax für R-Code](media/editing-syntax-colors.png)
+![Farben für Syntax für R-Code](~/rtvs/media/editing-syntax-colors.png)
 
 Um Schriftarten und bestimmte Hervorhebungsfarben anzupassen, klicken Sie auf den Befehl **Extras > Optionen**, navigieren Sie zu **Umgebung > Schriftarten und Farben**, und ändern Sie dort im Feld **Elemente anzeigen:** die Einstellungen für Elemente, die mit R-Code in Verbindung stehen:
 
-![Optionen für Schriftarten und Farben für R-Code](media/editing-syntax-colors-options.png)
+![Optionen für Schriftarten und Farben für R-Code](~/rtvs/media/editing-syntax-colors-options.png)
 
 Außerdem unterstreicht Visual Studio Syntaxfehler im Editor:
 
-![Hervorheben von Syntaxfehlern in R-Code](media/editing-syntax-error.png)
+![Hervorheben von Syntaxfehlern in R-Code](~/rtvs/media/editing-syntax-error.png)
 
 Um dieses Verhalten zu ändern, gehen Sie zur Einstellung **Erweitert > Syntaxüberprüfung** unter [Editor-Optionen](#editor-options).
 
@@ -73,11 +73,11 @@ Um dieses Verhalten zu ändern, gehen Sie zur Einstellung **Erweitert > Syntaxü
 
 Bei der Codeeingabe stellt RTVS die automatische Vervollständigung bereit, wie Sie auf der [IntelliSense](code-intellisense.md) nachlesen können. Außerdem nimmt es automatische Formatierungen vor, wie etwa das Schließen von Klammern: 
 
-![Animation der Inlineformatierung](media/editing-inline-formatting.gif)
+![Animation der Inlineformatierung](~/rtvs/media/editing-inline-formatting.gif)
 
 Wenn Sie Aufrufe von Funktionen eingeben, die über viele Parameter verfügen, sollten Sie die Parameter aufreihen, damit der Code leichter lesbar ist. RTVS erinnert sich an den Einzug Ihres Satzes von Parametern und wendet diesen Einzug auf alle folgenden Zeilen an:
 
-![Animation des automatischer Einzugs](media/editing-auto-indentation.gif)
+![Animation des automatischer Einzugs](~/rtvs/media/editing-auto-indentation.gif)
 
 Um dieses Verhalten zu ändern, schauen Sie sich unten die [Editor-Optionen](#editor-options) für die Gruppe **Tabs** an.
 
@@ -85,7 +85,7 @@ Mit reduzierbaren Codebereichen können Sie Teile des Codes im Editor für eine 
 
 Um selbst einen Bereich zu erstellen, umschließen Sie den gewünschte Code mit Kommentaren, die auf `---` enden. Mit den kleinen Steuerelementen „+/-“ links vom Code können Sie dann den Bereich erweitern bzw. reduzieren:
 
-![Erstellen eines reduzierbaren Bereichs mithilfe von Kommentaren](media/editing-collapsible-regions.gif)
+![Erstellen eines reduzierbaren Bereichs mithilfe von Kommentaren](~/rtvs/media/editing-collapsible-regions.gif)
  
 Visual Studio fügt standardmäßig Leerzeichen ein, wenn Sie die TAB-TASTE drücken. Wie Sie dieses Verhalten ändern, wird in [Options, Text Editor, Tabs (Optionen, Text-Editor, Registerkarten)](../ide/reference/options-text-editor-all-languages.md) beschrieben.
 
@@ -99,7 +99,7 @@ Dadurch wird ein neues Editor-Fenster geöffnet, das den Quellcode für die Funk
 
 Die **Peek-Definition**, die über das Kontextmenü oder ALT+F12 aufgerufen werden kann, fügt einen schreibgeschützten, durchscrollbaren Bereich ein, der den Quellcode der Funktion unter dem Funktionsaufruf enthält:
 
-![Animation für die Peek-Definition](media/editing-peek-definition.gif)
+![Animation für die Peek-Definition](~/rtvs/media/editing-peek-definition.gif)
 
 ## <a name="sending-code-to-the-interactive-window"></a>Senden von Code an das interaktive Fenster
 
@@ -131,7 +131,7 @@ Formatierungsoptionen (einschließlich des Deaktivierens des Formatierens) werde
 
 RTVS bietet eine Verknüpfung zum Generieren von [Roxygen](http://roxygen.org/)-Kommentaren mit den Parameternamen einer Funktion. Geben Sie einfach `###` in einer leeren Zeile oberhalb der Funktionsdefinition ein:
 
-![Animation des Einfügens eines Roxygen-Kommentars](media/editing-roxygen-comments.gif)
+![Animation des Einfügens eines Roxygen-Kommentars](~/rtvs/media/editing-roxygen-comments.gif)
 
 ## <a name="editor-options"></a>Editor-Optionen
 

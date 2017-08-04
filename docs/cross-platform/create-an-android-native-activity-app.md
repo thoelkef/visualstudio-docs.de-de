@@ -93,7 +93,7 @@ Bei der Installation der Option "Visual C++ für plattformübergreifende Mobile-
   
      So in etwa sieht die Standard-App im Visual Studio-Emulator für Android aus.  
   
-     ![Der Emulator, der Ihre App ausführt](../cross-platform/media/cppmdd_emulator_running_app.PNG "CppMDD_Emulator_Running_App")  
+     ![Der Emulator, der Ihre App ausführt](~/cross-platform/media/cppmdd_emulator_running_app.PNG "CppMDD_Emulator_Running_App")  
   
      Visual Studio startet den Emulator, wobei das Laden und Bereitstellen Ihres Codes einige Sekunden in Anspruch nimmt. Nachdem Ihre App gestartet wurde, können Sie Haltepunkte festlegen und den Debugger verwenden, um den Code schrittweise zu durchlaufen, lokale Variablen zu prüfen und Werte anzuzeigen.  
   

@@ -23,7 +23,7 @@ caps.handback.revision: 13
 # Debuggen von Beispielcode f&#252;r HTML, CSS und JavaScript
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Gilt für Windows und Windows Phone](../debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![Gilt für Windows und Windows Phone](~/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  Der Code in diesem Thema ist die Beispieldatei für [Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md).  Die Fehler, die im QuickStart vorhanden sind, werden in dieser Version des Codes behoben.  
   

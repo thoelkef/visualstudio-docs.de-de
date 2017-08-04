@@ -41,7 +41,7 @@ caps.handback.revision: 15
   
 2.  Fügen Sie dem Webpart zwei Steuerelemente hinzu: ein Textfeld und eine Schaltfläche.  Behalten Sie die Standardnamen \("TextBox1" bzw. "Button1"\) bei.  
   
-3.  Fügen Sie der Eigenschaft **Einträge für sicheres Steuerelement** des Webparts zwei Einträge hinzu.  Hierzu, wählen Sie die Schaltfläche mit den Auslassungszeichen \(![Auslassungszeichen im ASP.NET Mobile-Designer](../sharepoint/media/mwellipsis.png "Auslassungszeichen im ASP.NET Mobile-Designer")\) neben der Eigenschaft **Einträge für sicheres Steuerelement** im Fenster **Eigenschaften**.  
+3.  Fügen Sie der Eigenschaft **Einträge für sicheres Steuerelement** des Webparts zwei Einträge hinzu.  Hierzu, wählen Sie die Schaltfläche mit den Auslassungszeichen \(![Auslassungszeichen im ASP.NET Mobile-Designer](~/sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer")\) neben der Eigenschaft **Einträge für sicheres Steuerelement** im Fenster **Eigenschaften**.  
   
      Das Dialogfeld **Einträge für sicheres Steuerelement** wird angezeigt.  
   
@@ -77,7 +77,7 @@ caps.handback.revision: 15
   
 7.  Wählen Sie unter **Zusätzliche Assemblys** die Schaltfläche **Hinzufügen**, und wählen Sie aus der Liste **Vorhandene Assembly hinzufügen** aus.  
   
-8.  Im Dialogfeld **Vorhandene Assembly hinzufügen** wählen Sie die Schaltfläche mit den Auslassungszeichen \(![Auslassungszeichen im ASP.NET Mobile-Designer](../sharepoint/media/mwellipsis.png "Auslassungszeichen im ASP.NET Mobile-Designer")\) neben **Quellpfad**.  
+8.  Im Dialogfeld **Vorhandene Assembly hinzufügen** wählen Sie die Schaltfläche mit den Auslassungszeichen \(![Auslassungszeichen im ASP.NET Mobile-Designer](~/sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer")\) neben **Quellpfad**.  
   
 9. Wählen Sie die Assembly aus der SharePoint\-Lösung, die Sie in Schritt 1 erstellt haben, und wählen Sie dann die Schaltfläche **Öffnen** aus.  
   

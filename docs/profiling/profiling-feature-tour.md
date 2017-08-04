@@ -43,11 +43,11 @@ Visual Studio bietet eine Vielzahl von Profilerstellungstools, um Ihnen bei der 
 
 Die Profilerstellungstools, auf die Sie während einer Debugsitzung zugreifen können, stehen im Fenster „Diagnosetools“ zur Verfügung. Das Fenster „Diagnosetools“ wird automatisch angezeigt, wenn Sie es nicht deaktiviert haben. Klicken Sie auf **Debuggen/Windows/Diagnosetools anzeigen**, um das Fenster aufzurufen. Wenn das Fenster geöffnet ist, können Sie Tools auswählen, für die Sie Daten sammeln möchten.
 
-![Fenster „Diagnosetools“](../profiling/media/prof-tour-diagnostic-tools.png "Diagnosetools")
+![Fenster „Diagnosetools“](~/profiling/media/prof-tour-diagnostic-tools.png "Diagnosetools")
 
 Während Sie Debuggen, können Sie das **Diagnosetools**-Fenster zum Analysieren der CPU und Speicherauslastung verwenden, und Sie können Ereignisse anzeigen, die Leistungsbezogene Informationen zeigen.
 
-![Zusammenfassungsansicht der Diagnosetools](../profiling/media/prof-tour-cpu-and-memory-graph.gif "Zusammenfassung der Diagnosetools")
+![Zusammenfassungsansicht der Diagnosetools](~/profiling/media/prof-tour-cpu-and-memory-graph.gif "Zusammenfassung der Diagnosetools")
 
 Das **Diagnosetools**-Fenster ist häufig die bevorzugte Methode für die App-Profilerstellung, aber Sie können stattdessen auch eine nachträgliche Analyse Ihrer App durchführen. Weitere Informationen zu den verschiedenen Herangehensweisen finden Sie unter [Ausführen von Profilerstellungstools mit oder ohne Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
@@ -57,17 +57,17 @@ Mit dem CPU-Auslastungstool können Sie die Analyse der Leistung Ihrer App start
 
 Wählen Sie aus der Ansicht **Zusammenfassung** der Diagnosetools **CPU-Profilerstellung aktivieren** aus. (Sie müssen in einer Debugsitzung sein.)
 
-![Aktivieren der CPU-Auslastung in den Diagnosetools](../profiling/media/prof-tour-enable-cpu-profiling.png "Diagnosetools: Aktivieren der CPU-Auslastung")
+![Aktivieren der CPU-Auslastung in den Diagnosetools](~/profiling/media/prof-tour-enable-cpu-profiling.png "Diagnosetools: Aktivieren der CPU-Auslastung")
 
 Um das Tool am effektivsten verwenden zu können, legen Sie zwei Haltepunkte im Code fest, einen am Anfang und einen am Ende der Funktion, oder in dem Codebereich, den Sie analysieren möchten. Überprüfen Sie die Profilerstellungsdaten, wenn Sie beim zweiten Haltepunkt angehalten werden.
 
 Die Ansicht **CPU-Auslastung** zeigt eine Liste der Funktionen, geordnet nach den am längsten ausgeführten, mit der längsten Funktion oben. Dies kann helfen, Sie zu Funktionen zu führen, in denen Leistungsengpässe auftauchen.
 
-![Ansicht CPU-Auslastung in den Diagnosetools](../profiling/media/prof-tour-cpu-usage.png "CPU-Auslastung in den Diagnosetools")
+![Ansicht CPU-Auslastung in den Diagnosetools](~/profiling/media/prof-tour-cpu-usage.png "CPU-Auslastung in den Diagnosetools")
 
 Doppelklicken Sie auf eine Funktion, an der Sie interessiert sind. Ihnen wird eine detailliertere „Schmetterlingsansicht“ aus drei Bereichen angezeigt. Die ausgewählte Funktion befindet sich in der Mitte des Fensters, die aufrufende Funktion auf der linken Seite und die aufgerufenen Funktionen auf der rechten Seite. Unter **Funktionsrumpf** wird die Gesamtzeit (und der Prozentsatz der Zeit) angezeigt, die im Funktionsrumpf aufgewendet wurde. Die Zeit, die in aufrufenden und aufgerufenen Funktionen aufgewendet wurde, ist nicht enthalten. Diese Daten können bei der Bewertung helfen, ob die Funktion selbst ein Leistungsengpass ist.
 
-![Diagnosetools-Schmetterlingsansicht mit Aufrufer/Aufgerufenem](../profiling/media/prof-tour-cpu-usage-caller-callee.png "Diagnosetools-Ansicht mit Aufrufer/Aufgerufenem")
+![Diagnosetools-Schmetterlingsansicht mit Aufrufer/Aufgerufenem](~/profiling/media/prof-tour-cpu-usage-caller-callee.png "Diagnosetools-Ansicht mit Aufrufer/Aufgerufenem")
 
 ## <a name="analyze-memory-usage"></a>Analysieren der Speicherauslastung
 
@@ -75,11 +75,11 @@ Mit dem Fenster „Diagnosetools“ können Sie auch die Speicherauslastung in I
 
 Um die Speicherauslastung zu analysieren, müssen Sie mindestens eine Momentaufnahme des Speichers während des Debuggens machen. Häufig ist es zum Analysieren von Arbeitsspeicher am Besten, wenn man zwei Momentaufnahmen macht, die erste direkt vor einem vermuteten Arbeitsspeicherproblem und die zweite Momentaufnahme direkt nach dem Auftreten eines vermuteten Arbeitsspeicherproblems. Anschließend können Sie einen Vergleich der zwei Momentaufnahmen anzeigen und sehen, was genau sich geändert hat.
 
-![Erstellen einer Momentaufnahme in den Diagnosetools](../profiling/media/prof-tour-take-snapshots.gif "Erstellen von Momentaufnahmen in den Diagnosetools")
+![Erstellen einer Momentaufnahme in den Diagnosetools](~/profiling/media/prof-tour-take-snapshots.gif "Erstellen von Momentaufnahmen in den Diagnosetools")
 
-Bei Auswahl einer der Pfeil-Links erhalten Sie eine differenzielle Ansicht des Heap (ein roter Pfeil ![Zunahme der Speicherauslastung](../profiling/media/prof-tour-mem-usage-up-arrow.png "Zunahme der Speicherauslastung") zeigt eine zunehmende Objektanzahl (links) oder eine höhere Heapgröße (rechts)). Wenn Sie den richtigen Link klicken, erhalten Sie eine differenzielle Heapansicht, sortiert nach Objekten, die in der Heapgröße am meisten erhöht wurden. Dadurch können Sie Speicherprobleme ermitteln. Zum Beispiel wurden in der folgenden Abbildung die Bytes mithilfe des `ClassHandlersStore`-Objekts in der zweiten Momentaufnahme um 3492 Bytes erhöht.
+Bei Auswahl einer der Pfeil-Links erhalten Sie eine differenzielle Ansicht des Heap (ein roter Pfeil ![Zunahme der Speicherauslastung](~/profiling/media/prof-tour-mem-usage-up-arrow.png "Zunahme der Speicherauslastung") zeigt eine zunehmende Objektanzahl (links) oder eine höhere Heapgröße (rechts)). Wenn Sie den richtigen Link klicken, erhalten Sie eine differenzielle Heapansicht, sortiert nach Objekten, die in der Heapgröße am meisten erhöht wurden. Dadurch können Sie Speicherprobleme ermitteln. Zum Beispiel wurden in der folgenden Abbildung die Bytes mithilfe des `ClassHandlersStore`-Objekts in der zweiten Momentaufnahme um 3492 Bytes erhöht.
 
-![Differenzielle Heapansicht der Diagnosetools](../profiling/media/prof-tour-mem-usage-diff-heap.png "Differenzielle Heapansicht der Diagnosetools")
+![Differenzielle Heapansicht der Diagnosetools](~/profiling/media/prof-tour-mem-usage-diff-heap.png "Differenzielle Heapansicht der Diagnosetools")
 
 Wenn Sie statt in der Ansicht **Speicherauslastung** auf den Link auf der linken Seite klicken, ist die Heapansicht nach der Objektanzahl organisiert. Die Objekte eines bestimmten Typs, der die Zahl am meisten erhöht hat, werden oben angezeigt (sortiert nach der Spalte **Anzahlunterschied**).
 
@@ -87,26 +87,26 @@ Wenn Sie statt in der Ansicht **Speicherauslastung** auf den Link auf der linken
 
 Die Ansicht **Ereignisse** in den Diagnosetools zeigt verschiedene Ereignisse an, die während des Debuggens auftreten, z.B. die Einstellung eines Haltepunkts oder einer schrittweisen Ausführung von Code. Sie können Informationen wie z.B. die Dauer des Ereignisses überprüfen (gemessen daran, wann der Debugger zuletzt angehalten wurde oder wann die App gestartet ist). Wenn Sie den Code schrittweise ausführen (F10, F11), zeigt die **Ereignisse**-Ansicht die Dauer der App-Laufzeit aus dem vorherigen Schritt zum aktuellen Schritt.
 
-![Ereignisansicht in den Diagnosetools](../profiling/media/prof-tour-events.png "Anzeigen von Ereignissen in den Diagnosetools")
+![Ereignisansicht in den Diagnosetools](~/profiling/media/prof-tour-events.png "Anzeigen von Ereignissen in den Diagnosetools")
 
  > [!NOTE]
  > Wenn Sie über Visual Studio Enterprise verfügen, sehen Sie auch [IntelliTrace-Ereignisse](../debugger/intellitrace.md) auf dieser Registerkarte.
 
 Die gleichen Ereignisse werden auch im Code-Editor angezeigt, den Sie als PerfTips anzeigen können.
 
-![Profilerstellungstour PerfTips](../profiling/media/prof-tour-perf-tips.png "Profilerstellungstour PerfTips")
+![Profilerstellungstour PerfTips](~/profiling/media/prof-tour-perf-tips.png "Profilerstellungstour PerfTips")
 
 ## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>Überprüfen der UI-Leistung und Barrierefreiheits-Ereignisse (UWP)
 
 In Ihren UWP-Apps können Sie die **Benutzeroberfläche Analye** im Fenster „Diagnosetools“ aktivieren. Das Tool sucht nach gemeinsamen Leistungs- oder Barrierefreiheitsproblemen, und zeigt sie in der Ansicht **Ereignisse** an, während Sie debuggen. Die Ereignisbeschreibungen bieten Informationen zur Problembehebung.
 
-![Anzeigen von Ereignissen der Benutzeroberflächenanalyse in den Diagnosetools](../profiling/media/prof-tour-ui-analysis.png "Anzeigen von Ereignissen der Benutzeroberflächenanalyse in den Diagnosetools")
+![Anzeigen von Ereignissen der Benutzeroberflächenanalyse in den Diagnosetools](~/profiling/media/prof-tour-ui-analysis.png "Anzeigen von Ereignissen der Benutzeroberflächenanalyse in den Diagnosetools")
 
 ## <a name="profile-release-builds-without-the-debugger"></a>Profilerstellung für Releasebuilds ohne den Debugger
 
 Profilerstellungstools wie die CPU-Auslastung und Speicherauslastung können mit dem Debugger verwendet werden (siehe frühere Abschnitte), oder Sie führen die Profilerstellungstools mithilfe des Leistungsprofilers aus, der Analysen für **Release**builds erstellen soll. Im Leistungsprofiler können Sie Diagnoseinformationen sammeln, während die App ausgeführt wird, und anschließend die gesammelten Informationen überprüfen, nachdem die App angehalten wird. Weitere Informationen zu den verschiedenen Herangehensweisen finden Sie unter [Ausführen von Profilerstellungstools mit oder ohne den Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md) .
 
-![Leistungsprofiler](../profiling/media/prof-tour-performance-profiler.png "Leistungsprofiler")
+![Leistungsprofiler](~/profiling/media/prof-tour-performance-profiler.png "Leistungsprofiler")
 
 Öffnen Sie durch Auswählen von **Debuggen/Performance Profiler** den Leistungsprofiler.
 
@@ -118,7 +118,7 @@ In XAML-Apps, z.B. Windows Desktop WPF-Apps und Windows Store-Apps, können Sie 
 
 Geringe Framerates im Diagramm **Visueller Durchsatz** entsprechen möglicherweise visuellen Problemen, die Sie beim Ausführen der App sehen. Auf ähnliche Weise können hohe Zahlen des Diagramms **Auslastung des UI-Thread** Problemen mit der Reaktionsfähigkeit der Benutzeroberfläche entsprechen. Im Bericht können Sie den Zeitraum mit einem vermuteten Leistungsproblem auswählen, und anschließend die detaillierten UI-Threadaktivitäten in der Zeitachsendetailansicht (unten) überprüfen.
 
-![Profilerstellungstool „Anwendungszeitachse“](../profiling/media/prof-tour-application-timeline.gif "Profilerstellungstool „Anwendungszeitachse“")
+![Profilerstellungstool „Anwendungszeitachse“](~/profiling/media/prof-tour-application-timeline.gif "Profilerstellungstool „Anwendungszeitachse“")
 
 In der Zeitachsendetailansicht finden Sie Informationen, wie z.B. den Typ der Aktivität (oder das beteiligte Benutzeroberflächenelement) sowie die Dauer der Aktivität. In der Abbildung benötigt beispielsweise ein **Layout**-Ereignis für ein Grid-Steuerelement 57,53 ms.
 
@@ -130,7 +130,7 @@ In Direct3D-Apps (Direct3D-Komponenten müssen in C++ vorhanden sein) können Si
 
 Wenn Sie einen Zeitraum im Diagramm und **Details anzeigen** auswählen, wird eine detaillierte Ansicht wird im unteren Bereich angezeigt. In der Detailansicht können Sie überprüfen, wie viel Aktivität auf jeder CPU und GPU vorhanden ist. Wählen Sie Ereignisse im untersten Bereich aus, um Popups in der Zeitachse aufzurufen. Wählen Sie z.B. das **Vorhanden**-Ereignis aus, um die **Vorhanden**-Aufruf-Popups anzuzeigen. (Die hellgrauen vertikalen Vsync-Zeilen können als Verweis verwendet werden, um zu verstehen, ob bestimmte **Vorhanden**-Aufrufe Vsync verpasst haben. Es muss ein **Vorhanden**-Aufruf zwischen jeden zwei Vsyncs in der Reihenfolge geben, damit die App kontinuierlich 60 FPS erreicht.)
 
-![Profilerstellungstool „GPU-Nutzung“](../profiling/media/prof-tour-gpu-usage.png "Dialogfeld „GPU-Nutzung“")
+![Profilerstellungstool „GPU-Nutzung“](~/profiling/media/prof-tour-gpu-usage.png "Dialogfeld „GPU-Nutzung“")
 
 Die Diagramme können auch bestimmen, ob es CPU-gebundene oder GPU-gebundene Leistungsengpässe gibt.
 
@@ -150,11 +150,11 @@ Verwenden Sie die Reaktionsfähigkeit der HTML-Benutzeroberfläche, um die UI-Re
 
 In UWP-Apps können Sie Netzwerkoperationen mithilfe der `Windows.Web.Http`-API analysieren. Mit diesem Tool können Sie Probleme wie Zugriffs-und Authentifizierungsprobleme, falsche Cacheverwendung und schlechte Anzeige- und Downloadleistung lösen. Wählen Sie **Netzwerk** im Leistungsprofiler und anschließend **Starten** aus, um das Tool zu verwenden. Durchlaufen Sie in Ihrer Anwendung das Szenario, das `Windows.Web.Http` verwendet, und wählen Sie anschließend **Auflistung beenden** aus, um einen Bericht zu generieren.
 
-![Profilerstellungstool „Netzwerkverwendung“](../profiling/media/prof-tour-network-usage.png "Dialogfeld „Netzwerkverwendung“")
+![Profilerstellungstool „Netzwerkverwendung“](~/profiling/media/prof-tour-network-usage.png "Dialogfeld „Netzwerkverwendung“")
 
 Wählen Sie einen Vorgang in der Ansicht „Zusammenfassung“ aus, um mehr Details anzuzeigen.
 
-![Ausführliche Informationen im Tool „Netzwerkverwendung“](../profiling/media/prof-tour-network-usage-details.png "Dialogfeld mit Details zur Netzwerkverwendung")
+![Ausführliche Informationen im Tool „Netzwerkverwendung“](~/profiling/media/prof-tour-network-usage-details.png "Dialogfeld mit Details zur Netzwerkverwendung")
 
 Weitere Informationen finden Sie unter [Netzwerkverwendung](../profiling/network-usage.md).
 
@@ -162,7 +162,7 @@ Weitere Informationen finden Sie unter [Netzwerkverwendung](../profiling/network
 
 Wenn Sie Funktionen wie z.B. Instrumentation benötigen, die derzeit nicht in der CPU-Nutzung oder in den Speicherauslastungstools vorhanden sind, und Desktop- oder ASP.NET-Apps ausgeführt werden, können Sie für die Profilerstellung den Leistungs-Explorer verwenden. (Wird in UWP-Apps nicht unterstützt.) Weitere Informationen finden Sie unter [Leistungs-Explorer](../profiling/performance-explorer.md).
 
-![Tool „Leistungs-Explorer“](../profiling/media/prof-tour-performance-explorer.png "Leistungs-Explorer")
+![Tool „Leistungs-Explorer“](~/profiling/media/prof-tour-performance-explorer.png "Leistungs-Explorer")
 
 ## <a name="which-tool-should-i-use"></a>Welches Tool soll ich verwenden?  
 Hier sehen Sie eine Tabelle, in der die verschiedenen Tools aufgelistet sind, die Visual Studio anbietet sowie die verschiedenen Projekttypen, die Sie mit diesen verwenden können:

@@ -49,7 +49,7 @@ Projekten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterstü
   
  Das folgende Diagramm zeigt, wie die Schnittstellen, die Unterstützung von Projektmappen- und Projektkonfigurationen implementiert werden:  
   
- ![Grafik zu Konfigurationsschnittstellen](../../extensibility/internals/media/vsconfiginterfaces.png "vsConfigInterfaces")  
+ ![Grafik zu Konfigurationsschnittstellen](~/extensibility/internals/media/vsconfiginterfaces.gif "vsConfigInterfaces")  
 Konfigurationsschnittstellen  
   
  Einige Hinweise, die im Zusammenhang mit der vorherigen Abbildung:  

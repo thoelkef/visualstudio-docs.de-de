@@ -49,11 +49,11 @@ Darüber hinaus werden Projekte immer in einer Visual Studio-*Projektmappe* verw
 1. Wählen Sie **Datei > Neu > Projekt...** aus. (Strg+Umschalt+N)
 1. Wählen Sie unter **Vorlagen > R** „R-Projekt“ aus, weisen Sie dem Projekt einen Namen und Speicherort zu, und wählen Sie **OK** aus:
 
-    ![Dialogfeld „Neues Projekt“ für R in Visual Studio (RTVS in VS2017)](media/getting-started-01-new-project.png)
+    ![Dialogfeld „Neues Projekt“ für R in Visual Studio (RTVS in VS2017)](~/rtvs/media/getting-started-01-new-project.png)
 
 Dadurch wird ein Projekt mit einer leeren, im Editor geöffneten `script.R`-Datei erstellt. Im **Projektmappen-Explorer** sind im Projekt noch zwei weitere Dateien vorhanden:
 
-![Inhalt eines R-Projekts, das aus der Vorlage erstellt wurde](media/projects-template-results.png)
+![Inhalt eines R-Projekts, das aus der Vorlage erstellt wurde](~/rtvs/media/projects-template-results.png)
 
 Die Datei `.Rhistory` zeichnet alle Befehle auf, die Sie im Fenster [R Interaktive](interactive-repl.md) eingeben. Sie können mit dem Befehl **R Tools > Windows > Versionsgeschichte** ein dediziertes Fenster zur Versionsgeschichte öffnen, das eine Symbolleistenschaltfläche und Kontextmenüelemente zum Löschen von Verlaufsinhalten enthält.
 
@@ -133,7 +133,7 @@ Visual Studio-Projektmappen stellen eine bequeme Möglichkeit zum Sammeln und Ve
 
 Im folgenden Beispiel enthält die Projektmappe ein R-Projekt mit einem Modell, das mithilfe von R und Azure Machine Learning erstellt wurde, ein Python/SciKit-learn-Projekt, ein C++-Projekt, das Module für rechenintensive Rechenaufwand enthält, ein SQL-Projekt für die Datenverwaltung und ein Python/Bottle-Projekt für die Website, die das Ergebnis veröffentlicht:
 
-![Visual Studio-Projektmappen-Explorer mit mehreren verwandten Projekte in einer Projektmappe](media/projects-polyglot.png)
+![Visual Studio-Projektmappen-Explorer mit mehreren verwandten Projekte in einer Projektmappe](~/rtvs/media/projects-polyglot.png)
 
 Das fett markierte Projekt ist das „Startprojekt“ der Projektmappe. Um es zu ändern, klicken Sie mit der rechten Maustaste auf ein anderes Projekt, und wählen Sie **Als Startprojekt festlegen** aus.
 

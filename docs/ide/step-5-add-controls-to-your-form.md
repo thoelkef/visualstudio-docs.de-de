@@ -20,7 +20,7 @@ caps.handback.revision: 20
 
 In diesem Schritt fügen Sie dem Formular Steuerelemente hinzu, z. B. ein `PictureBox`\-Steuerelement und ein `CheckBox`\-Steuerelement.  Danach fügen Sie dem Formular Schaltflächen hinzu.  
   
- ![Link zu Video](../data-tools/media/playvideo.png "PlayVideo") Eine Videoversion dieses Themas finden Sie im [Video 1 zum Lernprogramm 2: Erstellen eines Bildanzeigeprogramms in Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205211) oder im [Video 1 zum Lernprogramm 2: Erstellen eines Bildanzeigeprogramms in C\#](http://go.microsoft.com/fwlink/?LinkId=205200).  Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können.  Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.  
+ ![Link zu Video](~/data-tools/media/playvideo.gif "PlayVideo") Eine Videoversion dieses Themas finden Sie im [Video 1 zum Lernprogramm 2: Erstellen eines Bildanzeigeprogramms in Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205211) oder im [Video 1 zum Lernprogramm 2: Erstellen eines Bildanzeigeprogramms in C\#](http://go.microsoft.com/fwlink/?LinkId=205200).  Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können.  Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.  
   
 ### So fügen Sie dem Formular ein Steuerelement hinzu  
   
@@ -47,7 +47,7 @@ PictureBox\-Aufgaben
   
 7.  Wählen Sie das TableLayoutPanel auf dem Formular aus, und fügen Sie dann dem Formular ein **CheckBox**\-Steuerelement hinzu.  Doppelklicken Sie im Werkzeugkasten auf das **CheckBox**\-Element, um der nächsten freien Zelle in der Tabelle ein neues CheckBox\-Steuerelement hinzuzufügen.  Da ein PictureBox\-Steuerelement die ersten beiden Zellen im TableLayoutPanel einnimmt, wird das CheckBox\-Steuerelement der linken unteren Zelle hinzugefügt.  Wählen Sie die Eigenschaft **Text** aus, und geben Sie das Wort "Stretch" ein, wie im folgenden Bild dargestellt.  
   
-     ![TextBox&#45;Steuerelement mit Stretch&#45;Eigenschaft](../ide/media/express_pictureviewercheckbox.png "Express\_PictureViewerCheckbox")  
+     ![TextBox&#45;Steuerelement mit Stretch&#45;Eigenschaft](~/ide/media/express_pictureviewercheckbox.png "Express\_PictureViewerCheckbox")  
 TextBox\-Steuerelement mit Stretch\-Eigenschaft  
   
 8.  Wählen Sie das TableLayoutPanel im Formular aus, und wechseln Sie dann zur Gruppe **Container** im Werkzeugkasten \(dort, wo Sie das TableLayoutPanel\-Steuerelement abgerufen haben\). Doppelklicken Sie auf das **FlowLayoutPanel**\-Element, um ein neues Steuerelement zur letzten Zelle im PictureBox\-Steuerelement \(unten rechts\) hinzuzufügen.  Docken Sie anschließend das FlowLayoutPanel im TableLayoutPanel an \(entweder durch Auswählen von **In übergeordnetem Container andocken** in der Aufgabenliste des schwarzen Dreiecks von FlowLayoutPanel oder durch Festlegen der FlowLayoutPanel\-Eigenschaft **Dock** auf **Fill**\).  

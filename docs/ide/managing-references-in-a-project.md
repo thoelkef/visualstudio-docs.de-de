@@ -53,7 +53,7 @@ Bevor Sie Code schreiben können, der sich auf eine externe Komponente oder eine
 
  Um einen Verweis hinzuzufügen, klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf den Knoten „Verweise“, und klicken Sie dann auf **Verweis hinzufügen**. Weitere Informationen finden Sie unter [Vorgehensweise: Hinzufügen und Entfernen von Verweisen mit dem Verweis-Manager](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).  
 
- ![Hinzufügen eines Verweises in Visual C&#43;&#43;](../ide/media/vs2015_cpp_add_reference.png "vs2015_cpp_add_reference")  
+ ![Hinzufügen eines Verweises in Visual C&#43;&#43;](~/ide/media/vs2015_cpp_add_reference.png "vs2015_cpp_add_reference")  
 
  Sie können einen Verweis auf die folgenden Komponenten-/Diensttypen erstellen:  
 

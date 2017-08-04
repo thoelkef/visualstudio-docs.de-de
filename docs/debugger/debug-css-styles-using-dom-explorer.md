@@ -29,7 +29,7 @@ caps.handback.revision: 44
 # Debuggen von CSS-Stilen mithilfe von DOM Explorer
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Gilt für Windows und Windows Phone](../debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![Gilt für Windows und Windows Phone](~/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  Wenn Sie Windows Store\- und Windows Phone Store\-Apps sowie mit Visual Studio\-Tools für Apache Cordova erstellte Apps debuggen, können Sie CSS\-Regeln für ausgewählte DOM\-Elemente und ihre untergeordneten Elemente anzeigen und ändern.  
   
@@ -47,7 +47,7 @@ caps.handback.revision: 44
 -   Verwenden Sie die Registerkarte **Änderungen** \(nur Windows Store\- und Windows Phone Store\-Apps\), um CSS\-Formatvorlagen zu identifizieren und nachzuverfolgen, die Sie während einer Debugsitzung geändert haben.  
   
 > [!TIP]
->  Änderungen, die Sie an Formatvorlagen auf den Registerkarten **Formatvorlagen** und **Berechnet** vornehmen, sind nicht dauerhaft. Sie gehen nach dem Beenden des Debuggens verloren. Um Quellcode zu ändern und Seiten neu zu laden, ohne den Debugger zu beenden und neu zu starten, aktualisieren Sie die App mithilfe der \-Schaltfläche ![Schaltfläche "Windows&#45;App aktualisieren"](../debugger/media/js_refresh.png "JS\_Refresh") \(**Windows\-App aktualisieren**\) auf der Symbolleiste **Debuggen** \(nur Windows Store\- und Windows Phone Store\-Apps\). Weitere Informationen finden Sie unter [Aktualisieren einer App \(JavaScript\)](../debugger/refresh-an-app-javascript.md).  
+>  Änderungen, die Sie an Formatvorlagen auf den Registerkarten **Formatvorlagen** und **Berechnet** vornehmen, sind nicht dauerhaft. Sie gehen nach dem Beenden des Debuggens verloren. Um Quellcode zu ändern und Seiten neu zu laden, ohne den Debugger zu beenden und neu zu starten, aktualisieren Sie die App mithilfe der \-Schaltfläche ![Schaltfläche "Windows&#45;App aktualisieren"](~/debugger/media/js_refresh.png "JS\_Refresh") \(**Windows\-App aktualisieren**\) auf der Symbolleiste **Debuggen** \(nur Windows Store\- und Windows Phone Store\-Apps\). Weitere Informationen finden Sie unter [Aktualisieren einer App \(JavaScript\)](../debugger/refresh-an-app-javascript.md).  
   
 ## Beispiel für das Beheben einer CSS\-Regel  
  Dieses Beispiel zeigt, wie Sie CSS\-Regeln überprüfen und ein Problem mit einer Formatvorlage debuggen. Nehmen wir in diesem Beispiel an, dass Sie die Farbe einer Schriftart ändern möchten, die für die Anzeige von Gruppentiteln in der Vorlage [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]"Split App" verwendet wird.  
@@ -140,7 +140,7 @@ caps.handback.revision: 44
   
 15. Ändern Sie diesen Wert über die Tastatur. Ändern Sie ihn in `rgb(255, 255, 0, 0.87)`, und drücken Sie die EINGABETASTE. Im Simulator ändert sich die Farbe der Elementnamen in gelb.  
   
-16. Um Änderungen an der CSS\-Quelldatei vorzunehmen, klicken Sie auf der Registerkarte **Formatvorlagen** auf den Link **items.css**. Dadurch wird "items.css" geöffnet. Hier können Sie den Wert der Formatvorlage `color` in Ihrem App\-Code ändern. Um die App zu aktualisieren, ohne den Debugger zu beenden und neu zu starten, klicken Sie auf der Symbolleiste **Debuggen** auf die Schaltfläche ![Schaltfläche "Windows&#45;App aktualisieren"](../debugger/media/js_refresh.png "JS\_Refresh") \(**Windows\-App aktualisieren**\).  
+16. Um Änderungen an der CSS\-Quelldatei vorzunehmen, klicken Sie auf der Registerkarte **Formatvorlagen** auf den Link **items.css**. Dadurch wird "items.css" geöffnet. Hier können Sie den Wert der Formatvorlage `color` in Ihrem App\-Code ändern. Um die App zu aktualisieren, ohne den Debugger zu beenden und neu zu starten, klicken Sie auf der Symbolleiste **Debuggen** auf die Schaltfläche ![Schaltfläche "Windows&#45;App aktualisieren"](~/debugger/media/js_refresh.png "JS\_Refresh") \(**Windows\-App aktualisieren**\).  
   
 ## Siehe auch  
  [Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md)   

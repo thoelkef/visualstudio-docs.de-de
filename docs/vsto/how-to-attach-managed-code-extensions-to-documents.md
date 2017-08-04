@@ -32,7 +32,7 @@ caps.handback.revision: 32
 > [!NOTE]  
 >  Falls vom Code erwartete Steuerelemente nicht im angegebenen Dokument enthalten ist, wird die Anpassung nicht geladen.  
   
- ![Link zu Video](../vsto/media/playvideo.png "Link zu Video") Eine entsprechende Videodemo finden Sie im Thema zum [Anfügen oder Trennen einer VSTO\-Assembly an ein bzw. von einem Word\-Dokument](http://go.microsoft.com/fwlink/?LinkId=136782) \(möglicherweise in englischer Sprache\).  
+ ![Link zu Video](~/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie im Thema zum [Anfügen oder Trennen einer VSTO\-Assembly an ein bzw. von einem Word\-Dokument](http://go.microsoft.com/fwlink/?LinkId=136782) \(möglicherweise in englischer Sprache\).  
   
 ### So hängen Sie Erweiterungen durch verwalteten Code an ein Dokument an  
   

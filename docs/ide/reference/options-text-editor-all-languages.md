@@ -79,7 +79,7 @@ Mit diesem Dialogfeld können Sie das Standardverhalten des Code-Editors ändern
  Visuelle Symbole für Zeilenumbruch anzeigen  
  Wenn aktiviert, wird beim Umbruch einer langen Zeile auf eine zweite Zeile ein Indikator in Form eines Rückwärtspfeils angezeigt.  
   
- ![Screenshot LineBreakSymbol-Bildschirmabbildung](../../ide/reference/media/linebreak.gif "LineBreak")  
+ ![Screenshot LineBreakSymbol-Bildschirmabbildung](~/ide/reference/media/linebreak.gif "LineBreak")  
   
  Deaktivieren Sie diese Option, wenn Sie diese Indikatoren nicht anzeigen möchten.  
   

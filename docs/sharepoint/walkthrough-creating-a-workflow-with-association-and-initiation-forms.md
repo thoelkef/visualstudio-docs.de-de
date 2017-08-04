@@ -275,15 +275,15 @@ caps.handback.revision: 37
   
 6.  Geben Sie im Fenster **Eigenschaften** den Eigenschaftswert *taskToken* für die **CorrelationToken**\-Eigenschaft ein.  
   
-7.  Erweitern Sie die Eigenschaft **CorrelationToken**, indem Sie das Pluszeichen \(![TreeView-Plus](../sharepoint/media/plus.png "TreeView-Plus")\) daneben aus.  
+7.  Erweitern Sie die Eigenschaft **CorrelationToken**, indem Sie das Pluszeichen \(![TreeView-Plus](~/sharepoint/media/plus.gif "TreeView-Plus")\) daneben aus.  
   
 8.  Wählen Sie den Dropdownpfeil der **OwnerActivityName** Subventionseigenschaft, und legen Sie den *Workflow1*\-Wert fest.  
   
-9. Wählen Sie die **TaskId**\-Eigenschaft aus, und wählen Sie die Schaltfläche mit den Auslassungszeichen \(![Auslassungszeichen im ASP.NET Mobile-Designer](../sharepoint/media/mwellipsis.png "Auslassungszeichen im ASP.NET Mobile-Designer")\), um das Dialogfeld **Eigenschaft binden** anzuzeigen.  
+9. Wählen Sie die **TaskId**\-Eigenschaft aus, und wählen Sie die Schaltfläche mit den Auslassungszeichen \(![Auslassungszeichen im ASP.NET Mobile-Designer](~/sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer")\), um das Dialogfeld **Eigenschaft binden** anzuzeigen.  
   
 10. Wählen Sie die Registerkarte **An neues Mitglied binden** aus, wählen Sie das Optionsfeld **Feld erstellen**, und wählen Sie dann die Schaltfläche **OK** aus.  
   
-11. Wählen Sie die **TaskProperties**\-Eigenschaft aus, und wählen Sie die Schaltfläche mit den Auslassungszeichen \(![Auslassungszeichen im ASP.NET Mobile-Designer](../sharepoint/media/mwellipsis.png "Auslassungszeichen im ASP.NET Mobile-Designer")\), um das Dialogfeld **Eigenschaft binden** anzuzeigen.  
+11. Wählen Sie die **TaskProperties**\-Eigenschaft aus, und wählen Sie die Schaltfläche mit den Auslassungszeichen \(![Auslassungszeichen im ASP.NET Mobile-Designer](~/sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer")\), um das Dialogfeld **Eigenschaft binden** anzuzeigen.  
   
 12. Wählen Sie die Registerkarte **An neues Mitglied binden** aus, wählen Sie das Optionsfeld **Feld erstellen**, und wählen Sie dann die Schaltfläche **OK** aus.  
   
@@ -363,7 +363,7 @@ caps.handback.revision: 37
   
 5.  Im Fenster **Eigenschaften** wählen Sie den Dropdownpfeil der Eigenschaft **Bedingung** aus, und legen Sie den *Code Condition*\-Wert fest.  
   
-6.  Erweitern Sie die Eigenschaft **Bedingung**, indem Sie das Pluszeichen \(![TreeView-Plus](../sharepoint/media/plus.png "TreeView-Plus")\) daneben aus, und legen Sie den Wert dann auf *checkApprovalNeeded* fest.  
+6.  Erweitern Sie die Eigenschaft **Bedingung**, indem Sie das Pluszeichen \(![TreeView-Plus](~/sharepoint/media/plus.gif "TreeView-Plus")\) daneben aus, und legen Sie den Wert dann auf *checkApprovalNeeded* fest.  
   
 7.  im Workflow\-Designer öffnen Sie das Kontextmenü für **logToHistoryListActivity1** die Aktivität, und wählen Sie dann **Handler generieren**, um eine leere Methode für das `MethodInvoking`\-Ereignis zu generieren.  
   

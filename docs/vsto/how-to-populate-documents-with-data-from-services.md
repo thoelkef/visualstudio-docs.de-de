@@ -30,7 +30,7 @@ caps.handback.revision: 39
   
  Das folgende Beispiel zeigt, wie Sie Dokumenten zur Entwurfszeit datengebundene Steuerelemente hinzufügen. Ein Beispiel für das Hinzufügen von datengebundenen Steuerelementen in VSTO\-Add\-Ins zur Laufzeit finden Sie unter [Exemplarische Vorgehensweise: Binden an Daten aus einem Dienst in einem VSTO-Add-In-Projekt](../vsto/walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project.md).  
   
- ![Link zu Video](../vsto/media/playvideo.png "Link zu Video") Eine entsprechende Videodemo finden Sie unter [Anleitung: Interagieren mit Webdiensten aus Microsoft Excel](http://go.microsoft.com/fwlink/?LinkID=130284).  
+ ![Link zu Video](~/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie unter [Anleitung: Interagieren mit Webdiensten aus Microsoft Excel](http://go.microsoft.com/fwlink/?LinkID=130284).  
   
 ### So füllen Sie ein Projekt auf Dokumentebene mit Daten aus einem Webdienst auf  
   

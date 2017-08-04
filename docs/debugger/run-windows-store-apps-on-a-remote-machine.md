@@ -23,7 +23,7 @@ caps.handback.revision: 43
 # Ausf&#252;hren von Windows Store-Apps auf einem Remotecomputer
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Gilt nur für Windows](../debugger/media/windows_only_content.png "windows\_only\_content")  
+![Gilt nur für Windows](~/debugger/media/windows_only_content.png "windows\_only\_content")  
   
  Mit der App "Visual Studio\-Remotetools" können Sie eine auf einem Gerät ausgeführte Windows Store\-App von einem zweiten Computer, auf dem Visual Studio ausgeführt wird, ausführen, debuggen, für die Profilerstellung verwenden und testen. Die Ausführung auf einem Remotegerät kann besonders dann effektiv sein, wenn der Visual Studio\-Computer keine für Windows Store\-Apps spezifischen Funktionalitäten wie Fingereingabe, Geolocation und physische Ausrichtung unterstützt. In diesem Thema wird beschrieben, wie Sie eine Remotesitzung konfigurieren und starten.  
   

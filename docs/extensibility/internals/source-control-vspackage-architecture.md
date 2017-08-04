@@ -40,7 +40,7 @@ Ein Paket ist ein VSPackage Quellcodeverwaltung, das Dienste verwendet, die das 
   
  Wenn ein Paket Quellcodeverwaltung das aktuelle Paket ist hingegen ist der Quellcodeverwaltungs\-Stub das Paket direkt verbundenen, indem er die [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Quellcodeverwaltungs\-Paket Schnittstellen verwendet.  Quellcodeverwaltung Das Paket ist für das Hosten einer eigenen Quellcodeverwaltung Benutzeroberfläche zuständig.  
   
- ![Grafik zur Quellcodeverwaltungs&#45;Architektur](../../extensibility/internals/media/vsipsccarch.png "VSIPSCCArch")  
+ ![Grafik zur Quellcodeverwaltungs&#45;Architektur](~/extensibility/internals/media/vsipsccarch.gif "VSIPSCCArch")  
   
  Für ein Paket Quellcodeverwaltung [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Code für die Quellcodeverwaltung nicht vorhanden oder eine API für die Integration an.  Vergleichen Sie dies mit dem Ansatz, der in [Erstellen ein Quellcodeverwaltungs\-Plug\-in](../../extensibility/internals/creating-a-source-control-plug-in.md) gezeichnet wird, in dem das Quellcodeverwaltungs\-Plug\-In steifen einen Satz von Funktionen und Rückrufe implementieren muss.  
   

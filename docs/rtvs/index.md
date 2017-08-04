@@ -102,7 +102,7 @@ A. Ja, Sie können jedes Quellcodeverwaltungssystem verwenden, das in Visual Stu
 
 A. Release 1.0 von RTVS ist nur auf Englisch verfügbar. Release 1.1 wird in die gleichen Sprachen lokalisiert wie Visual Studio selbst. Verwenden Sie in der Zwischenzeit das [Visual Studio 2015-Sprachpaket für Englisch](https://www.microsoft.com/download/details.aspx?id=48157), oder führen Sie in Visual Studio 2017 das Installationsprogramm aus und wählen auf der Registerkarte **Sprachpakete** Englisch aus.
 
-![Internationale Einstellungen für Visual Studio 2017](media/FAQ-international-settings.png)
+![Internationale Einstellungen für Visual Studio 2017](~/rtvs/media/FAQ-international-settings.png)
 
 **F. Funktioniert RTVS mit 32-Bit-Editionen von R?**
 

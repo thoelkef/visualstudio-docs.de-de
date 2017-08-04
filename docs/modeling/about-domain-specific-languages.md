@@ -38,7 +38,7 @@ Anders als eine gemeinsame Sprache wie C\# oder UML, ist eine domänenspezifisch
   
  Die folgende Abbildung zeigt ein kleines in einem grafischen Modell angezeigt: DSL  
   
- ![Tudor&#45;Stammbaummodell](../modeling/media/tudor_familytreemodel.png "Tudor\_FamilyTreeModel")  
+ ![Tudor&#45;Stammbaummodell](~/modeling/media/tudor_familytreemodel.png "Tudor\_FamilyTreeModel")  
   
 ## Mögliche Aktionen mit DSL möglich ist  
  Eine typische Verwendung eines DSL ist, Programmcode oder andere Artefakte generieren.  Wenn Sie das DSL definieren, können Sie *Textvorlagen* definieren, die ein Modell des DSL lesen und Textdateien generieren.  

@@ -58,7 +58,7 @@ IntelliSense ist der allgemeine Begriff für eine Reihe von Funktionen: Member a
   
  Der Parameter, den Sie beim Eingeben der Funktion als Nächstes angeben müssen, ist fett dargestellt.  Bei überladenen Funktionen können Sie die Pfeiltasten verwenden, um alternative Parameterinformationen für die Funktionsüberladungen anzuzeigen.  
   
- ![Parameterinfo](../ide/media/vs2015_param_info.png "VS2015\_param\_Info")  
+ ![Parameterinfo](~/ide/media/vs2015_param_info.png "VS2015\_param\_Info")  
   
  Wenn Sie Funktionen und Parameter mit XML\-Dokumentationskommentaren versehen, werden die Kommentare als Parameterinfo angezeigt.  Weitere Informationen finden Sie unter [Anzeigen von XML\-Codekommentaren](../ide/supplying-xml-code-comments.md).  
   
@@ -67,11 +67,11 @@ IntelliSense ist der allgemeine Begriff für eine Reihe von Funktionen: Member a
 ## QuickInfo  
  QuickInfo zeigt die vollständige Deklaration eines beliebigen Bezeichners im Code an.  
   
- ![Visual Studio&#45;QuickInfo](../ide/media/vs2015_quick_info.png "VS2015\_Quick\_info")  
+ ![Visual Studio&#45;QuickInfo](~/ide/media/vs2015_quick_info.png "VS2015\_Quick\_info")  
   
  Wenn Sie einen Member im Feld **Member auflisten** auswählen, wird ebenfalls eine QuickInfo angezeigt.  
   
- ![Parameterinfo in einer C&#35;&#45;Codedatei](../ide/media/vs2015_paraminfo.png "VS2015\_ParamInfo")  
+ ![Parameterinfo in einer C&#35;&#45;Codedatei](~/ide/media/vs2015_paraminfo.png "VS2015\_ParamInfo")  
   
  Sie können die QuickInfo manuell aufrufen, indem Sie auf **Bearbeiten \> IntelliSense \> QuickInfo** klicken und dann STRG\+I eingeben, oder indem Sie auf die Schaltfläche **QuickInfo** auf der Symbolleiste des Editors klicken.  
   

@@ -49,7 +49,7 @@ manager: "ghogen"
   
 -   Schreiben von Code zum Füllen der Datentabellen.  
   
- ![Link zu Video](../data-tools/media/playvideo.png "PlayVideo") Eine Videoversion dieses Themas finden Sie unter [Video How to: Creating an N\-Tier Data Application](http://go.microsoft.com/fwlink/?LinkId=115188).  
+ ![Link zu Video](~/data-tools/media/playvideo.gif "PlayVideo") Eine Videoversion dieses Themas finden Sie unter [Video How to: Creating an N\-Tier Data Application](http://go.microsoft.com/fwlink/?LinkId=115188).  
   
 ## Vorbereitungsmaßnahmen  
  Um diese exemplarische Vorgehensweise nachzuvollziehen, benötigen Sie Folgendes:  

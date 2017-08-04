@@ -59,7 +59,7 @@ caps.handback.revision: 58
   
 -   Microsoft [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] oder Microsoft Outlook 2010.  
   
- ![Link zu Video](../vsto/media/playvideo.png "Link zu Video") Eine entsprechende Videodemo finden Sie unter [Gewusst wie: Verwenden von Aufgabenbereichen in Outlook](http://go.microsoft.com/fwlink/?LinkID=130309).  
+ ![Link zu Video](~/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie unter [Gewusst wie: Verwenden von Aufgabenbereichen in Outlook](http://go.microsoft.com/fwlink/?LinkID=130309).  
   
 ## Erstellen des Projekts  
  Benutzerdefinierte Aufgabenbereiche werden in VSTO\-Add\-Ins implementiert. Beginnen Sie mit der Erstellung eines VSTO\-Add\-In\-Projekts für Outlook.  

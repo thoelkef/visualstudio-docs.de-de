@@ -56,7 +56,7 @@ JavaScript lässt keine explizite Variablendeklarationen eingeben.  Infolgedesse
   
  **Ausführungsoptionen für ein Objekt, das nicht identifiziert werden können**  
   
- ![JavaScript IntelliSense für Bezeichner](../ide/media/js_intellisense_identifiers.png "js\_intellisense\_identifiers")  
+ ![JavaScript IntelliSense für Bezeichner](~/ide/media/js_intellisense_identifiers.png "js\_intellisense\_identifiers")  
   
  Sie können die Vervollständigungsliste für ein Objekt mithilfe von XML\-Dokumentationskommentare oder JavaScript\-IntelliSense\-Erweiterungsfeatures überschreiben.  Mithilfe dieser Features können bietet Sie Typinformationen und weitere beschreibende Informationen für IntelliSense, wenn es sonst möglicherweise nicht verfügbar.  Weitere Informationen finden Sie unter [Erweitern von JavaScript IntelliSense](../ide/extending-javascript-intellisense.md) und [Gewusst wie: Erstellen von JavaScript\-XML\-Dokumentationskommentaren](../ide/create-xml-documentation-comments-for-javascript-intellisense.md).  
   

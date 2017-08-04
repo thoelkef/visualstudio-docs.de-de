@@ -37,7 +37,7 @@ Nur dazu, wie Sie Ihren eigenen Projekttyp erstellen? Fragen Sie sich, was tats�
 ## Das Dialogfeld Neues Projekt  
  Alles beginnt, wenn Sie ein Projekt für ein neues Projekt auswählen. Beginnen wir, indem Sie auf **Neues Projekt** auf der **Datei** Menü. Die **Neues Projekt** Dialogfeld angezeigt wird, suchen, etwa so:  
   
- ![Dialogfeld "Neues Projekt"](../../extensibility/internals/media/newproject.png "NewProject")  
+ ![Dialogfeld "Neues Projekt"](~/extensibility/internals/media/newproject.gif "NewProject")  
   
  Werfen Sie einen Blick an. Die **Projekttypen** Struktur Listet die verschiedenen Projekttypen, die Sie erstellen können. Bei der Auswahl eines Projekttyps wie **Visual C\#\-Windows\-**, sehen Sie eine Liste der Vorlagen in der Anwendung, die Ihnen den Einstieg erleichtern.**Visual Studio installierte Vorlagen** werden von Visual Studio installiert und für jeden Benutzer des Computers verfügbar sind. Neue Vorlagen, die Sie erstellen oder Sammeln hinzugefügt werden können **Meine Vorlagen** und nur für Sie verfügbar sind.  
   
@@ -107,11 +107,11 @@ devenv /installvstemplates
   
  Für Visual Studio mit c\# Developer\-Einstellungen die **Projekttypen** Struktur sieht etwa wie folgt:  
   
- ![Projekttypen](../../extensibility/internals/media/projecttypes.png "ProjectTypes")  
+ ![Projekttypen](~/extensibility/internals/media/projecttypes.png "ProjectTypes")  
   
  Der entsprechende ProjectTemplates Ordner sieht folgendermaßen aus:  
   
- ![Projektvorlagen](../../extensibility/internals/media/projecttemplates.png "ProjectTemplates")  
+ ![Projektvorlagen](~/extensibility/internals/media/projecttemplates.png "ProjectTemplates")  
   
  Wenn die **Neues Projekt** das Dialogfeld wird geöffnet, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ProjectTemplates Ordner durchsucht werden und erstellt die Struktur in der **Projekttypen** Struktur mit einigen Änderungen:  
   
@@ -209,7 +209,7 @@ devenv /installvstemplates
   
 1.  Öffnen Sie die **Neues Projekt** Dialogfeld Feld, und erweitern Sie die **Visual C\#\-** \-Projektknoten.  
   
- ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")  
+ ![MyProjectNode](~/extensibility/internals/media/myprojectnode.png "MyProjectNode")  
   
  **MyProjectNode** wird als untergeordneter Knoten Visual c\# nur unter dem Windows\-Knoten angezeigt.  
   

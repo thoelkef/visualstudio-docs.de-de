@@ -21,7 +21,7 @@ caps.handback.revision: 13
 
 Im folgenden Modell stellt ein Beispiel für eine Implementierung der Quellcodeverwaltung dar.  Im Modell finden Sie unter Schnittstellen, die Sie implementieren müssen, und die Umgebung Dienste, die Sie aufrufen müssen.  Wie alle Dienste rufen Sie die Methoden eine bestimmte Schnittstelle an, dass Sie über den Dienst abgerufen.  Die Namen von Klassen gekennzeichnet werden, um sie leichter, festzustellen, wie die Quellcodeverwaltung ausgeführt wird.  
   
- ![SCC&#95;TUP&#45;Beispiele](../../extensibility/internals/media/scc_tup.png "SCC\_TUP")  
+ ![SCC&#95;TUP&#45;Beispiele](~/extensibility/internals/media/scc_tup.gif "SCC\_TUP")  
 Beispiels\-Quellcodeverwaltungs\-Projekt  
   
 ## Schnittstellen  

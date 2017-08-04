@@ -32,11 +32,11 @@ Wenn Ihre Dateien lange Codefolgen enthalten, kann dies Ihre Arbeit erschweren. 
   
      So sieht die Bildlaufleiste aus, nachdem eine Zeichenfolge gesucht wurde.  Sie Sie sehen, werden alle Instanzen der Zeichenfolge angezeigt.  
   
-     ![Bildlaufleiste nach der Suche nach einer Zeichenfolge](../ide/media/enhancedscrollbarsearch.png "EnhancedScrollbarSearch")  
+     ![Bildlaufleiste nach der Suche nach einer Zeichenfolge](~/ide/media/enhancedscrollbarsearch.png "EnhancedScrollbarSearch")  
   
      So sieht die Bildlaufleiste aus, nachdem alle Instanzen der Zeichenfolge ersetzt wurden.  Sie können sofort sehen, dass der Vorgang Probleme verursacht hat.  
   
-     ![Bildlaufleiste nach dem Ersetzen einer Zeichenfolge mit Fehlern](../ide/media/enhancedscrollbarreplace.png "EnhancedScrollbarReplace")  
+     ![Bildlaufleiste nach dem Ersetzen einer Zeichenfolge mit Fehlern](~/ide/media/enhancedscrollbarreplace.png "EnhancedScrollbarReplace")  
   
 ### So legen Sie den Anzeigemodus für die Bildlaufleiste fest  
   
@@ -46,10 +46,10 @@ Wenn Ihre Dateien lange Codefolgen enthalten, kann dies Ihre Arbeit erschweren. 
   
      Im Folgenden wird gezeigt, wie das Suchbeispiel aussieht, wenn der Zuordnungsmodus aktiviert ist und die Breite auf "Mittel" festgelegt ist:  
   
-     ![Bildlaufleiste im Zuordnungsmodus](../ide/media/enhancedscrollbar.png "EnhancedScrollbar")  
+     ![Bildlaufleiste im Zuordnungsmodus](~/ide/media/enhancedscrollbar.png "EnhancedScrollbar")  
   
 2.  Wählen Sie im Zuordnungsmodus die Option **Vorschau\-QuickInfo anzeigen** aus, um eine Vorschau des Codes zu aktivieren, wenn Sie den Cursor auf der Bildlaufleiste nach oben und unten bewegen.  Hier das Ergebnis:  
   
-     ![Bildlaufleiste mit einer QuickInfo](../ide/media/enhancedscrollbarsearchtooltip.png "EnhancedScrollbarSearchTooltip")  
+     ![Bildlaufleiste mit einer QuickInfo](~/ide/media/enhancedscrollbarsearchtooltip.png "EnhancedScrollbarSearchTooltip")  
   
      Wenn Sie das Verhalten der Bildlaufleiste im Zuordnungsmodus beibehalten und die Vorschau\-QuickInfo anzeigen möchten, nicht aber die Quellcodeübersicht, dann legen Sie die Option für **Quellenübersicht** auf **Aus** fest.

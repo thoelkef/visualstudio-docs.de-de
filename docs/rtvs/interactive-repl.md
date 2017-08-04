@@ -67,7 +67,7 @@ Die vorherige Eingabe und Ausgabe im REPL ist schreibgeschützt und kann nicht g
 
 Das heißt, wenn Sie beginnen, eine Anweisung zu tippen und die EINGABETASTE zu drücken, weiß RTVS, wann die Anweisung fortgesetzt werden muss und gibt links mit dem passenden Einzug den Mehrzeilenmodus mit der a+-Aufforderung ein. RTVS schließt auch runde Klammern, eckige Klammern und geschweifte Klammern:
 
-![Mehrzeiliger Anweisungseintrag im interaktiven Fenster](media/repl-multiline-entry.png)
+![Mehrzeiliger Anweisungseintrag im interaktiven Fenster](~/rtvs/media/repl-multiline-entry.png)
 
 In diesem Mehrzeilenmodus führt die EINGABETASTE den Codeblock nur aus, wenn dieser am Ende des Blocks positioniert wird und fügt andernfalls eine neue Zeile ein. Sie können jedoch STRG+EINGABE an jeder beliebigen Position drücken, um den Codeblock sofort auszuführen.
 
@@ -75,23 +75,23 @@ In diesem Mehrzeilenmodus führt die EINGABETASTE den Codeblock nur aus, wenn di
 
 Das interaktive Fenster mit seiner Symbolleiste ist unten dargestellt:
 
-![Interaktives Fenster mit Symbolleiste](media/repl-window.png)
+![Interaktives Fenster mit Symbolleiste](~/rtvs/media/repl-window.png)
 
 Die meisten Symbolleistenbefehle, die unten aufgeführt sind, haben Tastaturentsprechungen und sind auch in den Menüs **R Tools > Sitzungen** und **R Tools > Arbeitsverzeichnis** (oder wie aufgeführt) verfügbar:
 
 | Schaltfläche | Befehl | Tastenkombination | Beschreibung | 
 | --- | --- | --- | --- |
-| ![Schaltfläche „Zurücksetzen“](media/repl-toolbar-01-reset.png) | Zurücksetzen | Ctrl+Shift+F10 | Setzt die Sitzung des interaktiven Fensters zurück und löscht alle Variablen sowie die Versionsgeschichte. |
-| ![Schaltfläche „Löschen“](media/repl-toolbar-02-clear.png) | Clear | STRG+L | Löscht die Ausgabe, die im interaktiven Fenster angezeigt wird. Beeinträchtigt keine Sitzungsvariablen oder die Versionsgeschichte. |
-| ![Schaltflächen zur Versionsgeschichte](media/repl-toolbar-03-history.png) | Vorheriger History-Befehl<br/>Nächster History-Befehl | Nach oben, nach unten<br/>ALT+BILD-AUF, ALT+BILD-AB | Führt einen Bildlauf durch die Versionsgeschichte mit bestimmten Verhalten für mehrzeilige Codeblöcke aus. Weitere Informationen finden Sie unter [Versionsgeschichte](#history). |
-| ![Schaltfläche „Arbeitsbereich laden“](media/repl-toolbar-04-load-workspace.png) | Arbeitsbereich laden | n/v | Lädt einen zuvor gespeicherten Arbeitsbereich (siehe [Arbeitsbereiche und Sitzungen](#workspaces-and-sessions)). |
-| ![Schaltfläche „Arbeitsbereich speichern unter“](media/repl-toolbar-05-save-workspace-as.png)| Arbeitsbereich speichern unter | n/v | Speichert den aktuellen Zustand der Sitzung als Arbeitsbereich (siehe [Arbeitsbereiche und Sitzungen](#workspaces-and-sessions)). |
-| ![Schaltfläche „R-Skript einbinden“](media/repl-toolbar-06-source-r-script.png) | R-Skript einbinden | STRG+UMSCHALT+S | Ruft `source` mit dem derzeit aktiven R-Skript im Visual Studio-Editor, das den Code ausführt.  Diese Schaltfläche wird nur angezeigt, wenn eine R-Datei im Visual Studio-Editor geöffnet ist. | 
-| ![Schaltfläche „R-Skript mit Echo einbinden“](media/repl-toolbar-07-source-r-script-with-echo.png) | R-Skript mit Echo einbinden | STRG+UMSCHALT+EINGABETASTE | Das gleiche wie „R-Skript einbinden“, es wird jedoch der Inhalt des Skripts im interaktiven Fenster angezeigt. | 
-| ![Schaltfläche „Interrupt-R“](media/repl-toolbar-08-interrupt-r.png)| Interrupt-R | Esc | Hält den ausgeführten Code im interaktiven Fenster an, so wie die `while`-Schleife im Screenshot oben. |
-| ![Schaltfläche „Debugger anfügen“](media/repl-toolbar-09b-attach-debugger.png)| Debugger anfügen | n/v | Auch mithilfe des Befehls **Debuggen > An R Interactive anfügen** verfügbar. | 
-| ![Schaltfläche „Arbeitsverzeichnis auf Quelldateispeicherort festlegen“](media/repl-toolbar-10-set-working-directory-source.png)| Arbeitsverzeichnis auf Quelldateispeicherort festlegen | Strg+Umschalt+E | Legt das Arbeitsverzeichnis auf die zuletzt eingebundene Datei fest, die in das interaktive Fenster geladen wurde (mithilfe von `source`). Weitere Informationen finden Sie unter [Arbeitsverzeichnis](#working-directory). |
-| ![Schaltfläche „Arbeitsverzeichnis auf Projektspeicherort festlegen“](media/repl-toolbar-11-set-working-directory-to-project.png) | Arbeitsverzeichnis auf Projektspeicherort festlegen | STRG+UMSCHALTTASTE+P | Legt das Arbeitsverzeichnis auf den Stamm des zuletzt geladenen Projekts in Visual Studio fest. Weitere Informationen finden Sie unter [Arbeitsverzeichnis](#working-directory). |
+| ![Schaltfläche „Zurücksetzen“](~/rtvs/media/repl-toolbar-01-reset.png) | Zurücksetzen | Ctrl+Shift+F10 | Setzt die Sitzung des interaktiven Fensters zurück und löscht alle Variablen sowie die Versionsgeschichte. |
+| ![Schaltfläche „Löschen“](~/rtvs/media/repl-toolbar-02-clear.png) | Clear | STRG+L | Löscht die Ausgabe, die im interaktiven Fenster angezeigt wird. Beeinträchtigt keine Sitzungsvariablen oder die Versionsgeschichte. |
+| ![Schaltflächen zur Versionsgeschichte](~/rtvs/media/repl-toolbar-03-history.png) | Vorheriger History-Befehl<br/>Nächster History-Befehl | Nach oben, nach unten<br/>ALT+BILD-AUF, ALT+BILD-AB | Führt einen Bildlauf durch die Versionsgeschichte mit bestimmten Verhalten für mehrzeilige Codeblöcke aus. Weitere Informationen finden Sie unter [Versionsgeschichte](#history). |
+| ![Schaltfläche „Arbeitsbereich laden“](~/rtvs/media/repl-toolbar-04-load-workspace.png) | Arbeitsbereich laden | n/v | Lädt einen zuvor gespeicherten Arbeitsbereich (siehe [Arbeitsbereiche und Sitzungen](#workspaces-and-sessions)). |
+| ![Schaltfläche „Arbeitsbereich speichern unter“](~/rtvs/media/repl-toolbar-05-save-workspace-as.png)| Arbeitsbereich speichern unter | n/v | Speichert den aktuellen Zustand der Sitzung als Arbeitsbereich (siehe [Arbeitsbereiche und Sitzungen](#workspaces-and-sessions)). |
+| ![Schaltfläche „R-Skript einbinden“](~/rtvs/media/repl-toolbar-06-source-r-script.png) | R-Skript einbinden | STRG+UMSCHALT+S | Ruft `source` mit dem derzeit aktiven R-Skript im Visual Studio-Editor, das den Code ausführt.  Diese Schaltfläche wird nur angezeigt, wenn eine R-Datei im Visual Studio-Editor geöffnet ist. | 
+| ![Schaltfläche „R-Skript mit Echo einbinden“](~/rtvs/media/repl-toolbar-07-source-r-script-with-echo.png) | R-Skript mit Echo einbinden | STRG+UMSCHALT+EINGABETASTE | Das gleiche wie „R-Skript einbinden“, es wird jedoch der Inhalt des Skripts im interaktiven Fenster angezeigt. | 
+| ![Schaltfläche „Interrupt-R“](~/rtvs/media/repl-toolbar-08-interrupt-r.png)| Interrupt-R | Esc | Hält den ausgeführten Code im interaktiven Fenster an, so wie die `while`-Schleife im Screenshot oben. |
+| ![Schaltfläche „Debugger anfügen“](~/rtvs/media/repl-toolbar-09b-attach-debugger.png)| Debugger anfügen | n/v | Auch mithilfe des Befehls **Debuggen > An R Interactive anfügen** verfügbar. | 
+| ![Schaltfläche „Arbeitsverzeichnis auf Quelldateispeicherort festlegen“](~/rtvs/media/repl-toolbar-10-set-working-directory-source.png)| Arbeitsverzeichnis auf Quelldateispeicherort festlegen | Strg+Umschalt+E | Legt das Arbeitsverzeichnis auf die zuletzt eingebundene Datei fest, die in das interaktive Fenster geladen wurde (mithilfe von `source`). Weitere Informationen finden Sie unter [Arbeitsverzeichnis](#working-directory). |
+| ![Schaltfläche „Arbeitsverzeichnis auf Projektspeicherort festlegen“](~/rtvs/media/repl-toolbar-11-set-working-directory-to-project.png) | Arbeitsverzeichnis auf Projektspeicherort festlegen | STRG+UMSCHALTTASTE+P | Legt das Arbeitsverzeichnis auf den Stamm des zuletzt geladenen Projekts in Visual Studio fest. Weitere Informationen finden Sie unter [Arbeitsverzeichnis](#working-directory). |
 | (Textfeld) | Arbeitsverzeichnis auswählen | n/v | Direktes Eingabefeld für das Arbeitsverzeichnis. Weitere Informationen finden Sie unter [Arbeitsverzeichnis](#working-directory). |
 
 

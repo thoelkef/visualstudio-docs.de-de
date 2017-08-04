@@ -76,7 +76,7 @@ In einigen Fällen müssen Sie explizit die NuGet-Pakete wiederherstellen, auf d
 
 Sie können Live Unit Testing konfigurieren, indem Sie im obersten Visual Studio-Menü **Extras**, **Optionen** und dann im Dialogfeld **Optionen** im linken Bereich **Live Unit Testing** auswählen. Die folgende Abbildung zeigt die verfügbaren Konfigurationsoptionen für Live Unit Testing in dem Dialogfeld.
 
-  ![Bild](./media/lut-options.png)
+  ![Bild](~/test/media/lut-options.png)
 
 Die konfigurierbaren Optionen umfassen Folgendes:
 
@@ -105,21 +105,21 @@ Sie können Live Unit Testing jederzeit vorübergehend anhalten oder vollständi
 
 Nach der Aktivierung aktualisiert Live Unit Testing alle Codezeilen im Visual Studio-Editor, um Ihnen zu zeigen, ob der Code, den Sie schreiben, von Komponententests abgedeckt ist, und ob die Tests, die ihn abdecken, erfolgreich sind.  Die folgende Abbildung zeigt Codezeilen mit erfolgreichen und fehlgeschlagenen Tests sowie Codezeilen, die nicht durch Tests abgedeckt sind. Zeilen mit einem grünen „✓“ werden nur durch erfolgreiche Tests abgedeckt, Zeilen mit einem roten „🞩“ werden von einem oder mehreren fehlgeschlagenen Tests abgedeckt, und Zeilen mit einem blauen „–“ werden nicht von Tests abgedeckt.
 
-  ![Bild](./media/lut-codewindow.png)
+  ![Bild](~/ide/media/lut-codewindow.png)
 
 Die Abdeckungsvisualisierung von Live Unit Testing wird sofort aktualisiert, wenn Sie Code im Code-Editor ändern. Während der Verarbeitung der Änderungen wird die Visualisierung geändert, um anzugeben, dass die Daten nicht auf dem neuesten Stand sind. Dazu wird ein rundes Uhrensymbol unterhalb der Symbole für erfolgreiche, fehlgeschlagene und nicht abgedeckte Test angezeigt, wie in der folgenden Abbildung dargestellt.
 
-  ![Bild](./media/lut-codeupdating.png)
+  ![Bild](~/test/media/lut-codeupdating.png)
  
 ## <a name="getting-information-on-successful-or-failed-tests"></a>Abrufen von Informationen zu erfolgreichen oder fehlgeschlagenen Tests
 
 Wenn Sie den Mauszeiger im Codefenster über das Symbol für erfolgreiche oder fehlgeschlagene Tests bewegen, können Sie sehen, wie viele Tests diese Zeile betreffen. Wenn Sie auf das Symbol klicken, sehen Sie den Status der einzelnen Tests, wie in der folgenden Abbildung dargestellt.
  
-  ![Bild](./media/lut-failedinfo.png) 
+  ![Bild](~/test/media/lut-failedinfo.png) 
 
 Wenn Sie den Mauszeiger über den fehlgeschlagenen Test in der QuickInfo bewegen, wird sie erweitert, und es werden zusätzliche Informationen zu diesem Fehler bereitgestellt, wie in der folgenden Abbildung dargestellt. Wenn Sie in der QuickInfo auf den fehlgeschlagenen Test klicken, können Sie direkt zum Test navigieren.
 
-  ![Bild](./media/lut-failedmsg.png) 
+  ![Bild](~/test/media/lut-failedmsg.png) 
 
 ## <a name="diagnosing-and-correcting-test-failures"></a>Diagnose und Korrektur von fehlgeschlagenen Tests
 

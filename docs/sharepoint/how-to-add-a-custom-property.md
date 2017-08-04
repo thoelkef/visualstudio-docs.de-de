@@ -37,7 +37,7 @@ caps.handback.revision: 9
   
 2.  Wählen Sie auf der Menüleiste die Optionen **Ansicht** und **Eigenschaftenfenster** aus.  
   
-3.  Im Fenster **Eigenschaften** wählen Sie die Eigenschaft **Benutzerdefinierte Eigenschaften**, und wählen Sie dann die Schaltfläche mit den drei Auslassungszeichen \(![Auslassungszeichen im ASP.NET Mobile-Designer](../sharepoint/media/mwellipsis.png "Auslassungszeichen im ASP.NET Mobile-Designer")\).  
+3.  Im Fenster **Eigenschaften** wählen Sie die Eigenschaft **Benutzerdefinierte Eigenschaften**, und wählen Sie dann die Schaltfläche mit den drei Auslassungszeichen \(![Auslassungszeichen im ASP.NET Mobile-Designer](~/sharepoint/media/mwellipsis.gif "Auslassungszeichen im ASP.NET Mobile-Designer")\).  
   
      Das Dialogfeld **Eigenschaften\-Editor** wird angezeigt.  
   

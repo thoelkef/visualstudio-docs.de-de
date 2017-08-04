@@ -67,11 +67,11 @@ So erstellen Sie eine temporäre Website in Azure App Service, ohne dass ein Azu
 
 1. Wenn Sie aufgefordert werden, externe Pakete zu installieren, wählen Sie **In einer virtuellen Umgebung installieren**. Beachten Sie das Steuerelement **Erforderliche Pakete anzeigen** am unteren Rand des Dialogfelds, das anzeigt, welche Pakete installiert werden:
 
-  ![Installieren erforderlicher Pakete](media/tutorials-common-external-packages.png)
+  ![Installieren erforderlicher Pakete](~/python/media/tutorials-common-external-packages.png)
 
 1. Wählen Sie Ihren bevorzugten Basisinterpreter für die virtuelle Umgebung aus (z.B. **Python 2.7** oder **Python 3.4**), und klicken Sie auf **Erstellen**:
 
-  ![Hinzufügen einer virtuellen Umgebung beim Erstellen eines Projekts](media/tutorials-common-add-virtual-environment.png)
+  ![Hinzufügen einer virtuellen Umgebung beim Erstellen eines Projekts](~/python/media/tutorials-common-add-virtual-environment.png)
 
 1. Sobald das Projekt erstellt ist, testen Sie es lokal durch Auswahl von **Debuggen > Debuggen starten** oder Drücken von F5. Standardmäßig verwendet die Anwendung ein Repository im Arbeitsspeicher, das nicht konfiguriert werden muss. Alle Daten gehen verloren, wenn der Webserver angehalten wird.
 
@@ -85,7 +85,7 @@ So erstellen Sie eine temporäre Website in Azure App Service, ohne dass ein Azu
 
 1. Wählen Sie im Dialogfeld **Veröffentlichen** **Microsoft Azure App Service**:
 
-  ![Veröffentlichen in Azure – Schritt 1](media/tutorials-common-publish-1.png)
+  ![Veröffentlichen in Azure – Schritt 1](~/python/media/tutorials-common-publish-1.png)
 
 1. Wählen Sie ein Ziel aus:
 
@@ -94,7 +94,7 @@ So erstellen Sie eine temporäre Website in Azure App Service, ohne dass ein Azu
 
 1. Die App Service-Details werden im Dialogfeld **Veröffentlichen** auf der Registerkarte **Verbindung** unten angezeigt.
 
-  ![Veröffentlichen in Azure – Schritt 2](media/tutorials-common-publish-2.png)
+  ![Veröffentlichen in Azure – Schritt 2](~/python/media/tutorials-common-publish-2.png)
 
 1. Wählen Sie **Weiter >** nach Bedarf, um zusätzliche Einstellungen zu überprüfen. Wenn Sie planen, [Ihren Python-Code in Azure remote zu debuggen](debugging-azure-remote.md), müssen Sie für **Konfiguration** **Debuggen** festlegen.
 1. Wählen Sie **Veröffentlichen**. Sobald Ihre Anwendung in Azure bereitgestellt ist, öffnet Ihr Standardbrowser diese Website. 

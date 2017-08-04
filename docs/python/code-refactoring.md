@@ -50,11 +50,11 @@ Visual Studio bietet verschiedene Befehle zum automatischen Transformieren und B
 1. Klicken Sie mit der rechten Maustaste auf den Bezeichner, den Sie umbenennen möchten, und wählen Sie **Umbenennen** aus. Alternativ dazu platzieren Sie den Textcursor in diesem Bezeichner und wählen den Menübefehl **Bearbeiten > Umgestalten > Umbenennen...** aus oder drücken die Taste F2.
 1. Geben Sie in dem **Umbenennen**-Dialogfeld, das geöffnet wird, den neuen Namen für den Bezeichner ein, und wählen Sie **OK**:
 
-  ![Eingabe des neuen Bezeichnernamens](media/code-refactor-rename-1.png)
+  ![Eingabe des neuen Bezeichnernamens](~/python/media/code-refactor-rename-1.png)
 
 1. Wählen Sie im nächsten Dialogfeld die Dateien und Instanzen in Ihrem Code aus, auf die die Umbenennung angewendet werden soll. Wählen Sie eine beliebige einzelne Instanz aus, um eine Vorschau der Änderung anzuzeigen:
 
-  ![Dialogfeld zum Auswählen der zu ändernden Elemente](media/code-refactor-rename-2.png)
+  ![Dialogfeld zum Auswählen der zu ändernden Elemente](~/python/media/code-refactor-rename-2.png)
 
 1. Wählen Sie **Anwenden** aus, um die Änderungen für Ihre Quellcodedateien zu übernehmen. Diese Aktion kann nicht rückgängig gemacht werden.
 
@@ -64,21 +64,21 @@ Visual Studio bietet verschiedene Befehle zum automatischen Transformieren und B
 1. Wählen Sie den Menübefehl **Bearbeiten > Umgestalten > Methode extrahieren...** aus, oder drücken Sie die Tasten STRG-R, M.
 1. Geben Sie im angezeigten Dialogfeld einen neuen Methodennamen ein, geben Sie an, wo die Methode extrahiert werden soll, und wählen Sie Abschlussvariablen. Nicht zum Abschließen ausgewählte Variablen werden in Methodenargumente umgewandelt:
 
-  ![Dialogfeld „Methode extrahieren“](media/code-refactor-extract-method-1.png)
+  ![Dialogfeld „Methode extrahieren“](~/python/media/code-refactor-extract-method-1.png)
 
 1. Wählen Sie **OK** aus, und der Code wird entsprechend geändert:
 
-  ![Auswirkungen des Befehls „Methode extrahieren“](media/code-refactor-extract-method-2.png)
+  ![Auswirkungen des Befehls „Methode extrahieren“](~/python/media/code-refactor-extract-method-2.png)
 
 ## <a name="add-import"></a>Import hinzufügen
 
 Wenn Sie den Textcursor in einem Bezeichner platzieren, der keine Typinformationen enthält, stellt Visual Studio ein Smarttag bereit (das Glühbirnensymbol links neben dem Code), dessen Befehle die erforderliche `import`- oder `from ... import`-Anweisung hinzufügen:
 
-![Smarttag „Import hinzufügen“](media/code-refactor-add-import-1.png)
+![Smarttag „Import hinzufügen“](~/python/media/code-refactor-add-import-1.png)
 
 `import`-Abschlüsse werden für Pakete und Module auf oberster Ebene im aktuellen Projekt und in der Standardbibliothek angeboten. `from ... import`-Abschlüsse werden für untergeordnete Module und Pakete sowie für Modulmember angeboten. Hierzu gehören Funktionen, Klassen oder exportierte Daten. Durch Auswahl einer Option wird die Anweisung am Anfang der Datei hinter anderen Importvorgängen hinzugefügt. Wenn das gleiche Modul bereits importiert wurde, wird die Anweisung in eine vorhandene `from ... import`-Anweisung eingefügt.
 
-![Hinzufügen eines Imports – Ergebnis](media/code-refactor-add-import-2.png)
+![Hinzufügen eines Imports – Ergebnis](~/python/media/code-refactor-add-import-2.png)
 
 Visual Studio versucht, Member herauszufiltern, die nicht tatsächlich in einem Modul definiert sind, wie z.B. Module, die in ein anderes Modul importiert werden, aber keine untergeordneten Elemente des Moduls sind, das den Importvorgang ausführt. Viele Module verwenden z.B. `import sys` statt `from xyz import sys`, daher sehen Sie keinen Abschluss beim Importieren von `sys` aus anderen Modulen, auch wenn in den Modulen ein `__all__`-Member fehlt, der `sys` ausschließt.
 
@@ -93,10 +93,10 @@ Beim Schreiben von Code entstehen leicht `import`-Anweisungen für Module, die g
 
 Klicken Sie mit der rechten Maustaste auf eine beliebige Stelle im Editor, und wählen Sie **Importe entfernen** aus. Sie können aus den Optionen **Alle Geltungsbereiche** oder **Aktueller Geltungsbereich** auswählen:
 
-![Menü zum Entfernen von Importen](media/code-refactor-remove-imports-1.png)
+![Menü zum Entfernen von Importen](~/python/media/code-refactor-remove-imports-1.png)
 
 Visual Studio nimmt dann die entsprechenden Änderungen am Code vor:
 
-![Entfernen von Importen – Auswirkungen](media/code-refactor-remove-imports-2.png)
+![Entfernen von Importen – Auswirkungen](~/python/media/code-refactor-remove-imports-2.png)
 
 Beachten Sie, dass Visual Studio keine Ablaufsteuerung berücksichtigt – die Verwendung eines Namens vor einer `import`-Anweisung wird genauso verarbeitet, als würde der Name tatsächlich verwendet. Visual Studio ignoriert auch alle `from __future__`-Importe, Importe, die innerhalb einer Klassendefinition ausgeführt werden, sowie Importe aus `from ... import *`-Anweisungen.

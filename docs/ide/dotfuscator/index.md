@@ -46,7 +46,7 @@ ms.lasthandoff: 06/23/2017
 Verwenden Sie die Lösung, um Desktop-, mobile, Server- und eingebettete Anwendungen zu härten, zu schützen und zu bereinigen. Dadurch können Sie Geschäftsgeheimnisse und sonstiges geistiges Eigentum sichern, Piraterie und Fälschungen reduzieren und Schutz vor Manipulationen und nicht autorisiertem Debuggen bieten.
 Dotfuscator arbeitet in kompilierten Assemblys ohne zusätzliche Programmierung und sogar ohne Zugriff auf den Quellcode.
 
-![](media/header.svg)
+![](~/ide/dotfuscator/media/header.svg)
 
 ## <a name="why-protection-matters"></a>Gründe für die Bedeutung von Schutz
 

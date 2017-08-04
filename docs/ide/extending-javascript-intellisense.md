@@ -29,7 +29,7 @@ Die Erweiterbarkeitsfunktion JavaScript IntelliSense ermöglicht es Ihnen, Intel
   
  Der JavaScript\-Sprachendienst stellt IntelliSense\-Features für Drittanbieter JavaScript\-Bibliotheken bereit, die dem Projekt hinzugefügt werden.  Für die meisten Bibliotheken Anweisungsvervollständigung wird automatisch vom Sprachdienst bereitgestellt.  Die folgende Abbildung zeigt ein Beispiel der Anweisungsvervollständigung an:  
   
- ![Beispiel für Anweisungsvervollständigung](../ide/media/js_intellisense_completion.png "js\_intellisense\_completion")  
+ ![Beispiel für Anweisungsvervollständigung](~/ide/media/js_intellisense_completion.png "js\_intellisense\_completion")  
   
  Wenn die Bibliothek Beschreibungen von Variablen, Funktionen und Objekte in den Standard\-JavaScript\-Kommentartags \(\/\), profitieren Sie standardmäßig automatisch von IntelliSense\-Erweiterbarkeitsfunktionen, die beschreibende Informationen in einem Popupfeld bereitstellen, der auf der rechten Seite der Elemente in einer Vervollständigungsliste angezeigt wird, oder wenn Sie die öffnende Klammer in einem Funktionsaufruf eingeben.  Die Kommentare im Popupfeld enthalten die Beschreibung des Members.  Im folgenden Beispiel wird das Popupfeld für eine Vervollständigungsliste an.  
   
@@ -488,7 +488,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
 4.  In appCode.js geben Sie den folgenden Code ein.  Während Sie Typ, Sie sehen, dass das Symbol für den Namespace "{}" geändert hat, wie in C\# verwendet wird.  
   
-     ![Beispiel für die Verwendung der Symboleigenschaft](../ide/media/js_intellisense_glyph_namespace.png "js\_intellisense\_glyph\_namespace")  
+     ![Beispiel für die Verwendung der Symboleigenschaft](~/ide/media/js_intellisense_glyph_namespace.png "js\_intellisense\_glyph\_namespace")  
   
 5.  In appCode.js geben Sie den folgenden Code ein.  Während Sie Typ, Sie ein neues Enumerationssymbol für den Member Enum1 und ein neues Klassensymbol für den Member SomeClass1 finden.  
   
@@ -543,7 +543,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
 5.  In appCode.js testen Sie die Ergebnisse, indem Sie den gleichen Sie diesen Code eingeben, zuvor eingegeben hat.  Dieses Mal, IntelliSense stellt die gewünschten Informationen.  
   
-     ![Beispiel zum Überschreiben der IntelliSense&#45;Ergebnisse](../ide/media/js_intellisense_override_fixed.png "js\_intellisense\_override\_fixed")  
+     ![Beispiel zum Überschreiben der IntelliSense&#45;Ergebnisse](~/ide/media/js_intellisense_override_fixed.png "js\_intellisense\_override\_fixed")  
   
 ## Siehe auch  
  [JavaScript IntelliSense](../ide/javascript-intellisense.md)   

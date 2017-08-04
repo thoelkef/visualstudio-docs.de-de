@@ -44,7 +44,7 @@ caps.handback.revision: 101
   
 -   [Hinzufügen von Windows Forms\-Steuerelementen zu Dokumenten](#WindowsForms).  
   
- ![Link zu Video](../vsto/media/playvideo.png "Link zu Video") Eine entsprechende Videodemo finden Sie unter [Gewusst wie: Hinzufügen von Steuerelementen zu einer Dokumentoberfläche zur Laufzeit](http://go.microsoft.com/fwlink/?LinkId=132782).  
+ ![Link zu Video](~/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie unter [Gewusst wie: Hinzufügen von Steuerelementen zu einer Dokumentoberfläche zur Laufzeit](http://go.microsoft.com/fwlink/?LinkId=132782).  
   
 ##  <a name="ControlsCollection"></a> Verwalten von Steuerelementen zur Laufzeit mithilfe der Steuerelementauflistungen  
  Verwenden Sie zum Hinzufügen, Abrufen oder Entfernen von Steuerelementen zur Laufzeit Hilfsmethoden der Objekte <xref:Microsoft.Office.Tools.Excel.ControlCollection> und <xref:Microsoft.Office.Tools.Word.ControlCollection>.  

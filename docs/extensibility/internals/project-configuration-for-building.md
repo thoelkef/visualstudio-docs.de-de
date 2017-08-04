@@ -31,7 +31,7 @@ Die Liste der Projektmappenkonfigurationen für eine bestimmte Lösung wird durc
   
  Wenn der Benutzer wählt die **Mehrfachauswahl** Element in der Dropdown\-Liste, die Umgebung zeigt ein Dialogfeld mit der Liste der verfügbaren Konfigurationen.  
   
- ![Mehrere Konfigurationen](../../extensibility/internals/media/vsmultiplecfgs.png "vsMultipleCfgs")  
+ ![Mehrere Konfigurationen](~/extensibility/internals/media/vsmultiplecfgs.gif "vsMultipleCfgs")  
 Mehrere Konfigurationen  
   
  In diesem Dialogfeld kann der Benutzer eine oder mehrere Konfigurationen auswählen. Nach der Auswahl entsprechend die Eigenschaftswerte, die auf das Dialogfeld Eigenschaftenseiten angezeigt die Schnittmenge der Werte für die ausgewählten Konfigurationen.  
@@ -40,7 +40,7 @@ Mehrere Konfigurationen
   
  Projektabhängigkeiten und Buildreihenfolge sind unabhängige Projektmappenkonfiguration: d. h. Sie können nur Einrichten einer Abhängigkeitsstruktur für alle Projekte in der Projektmappe. Der rechten Maustaste auf die Projektmappe oder das Projekt, und wählen entweder die **Projektabhängigkeiten** oder **Projektbuildreihenfolge** option geöffnet der **Projektabhängigkeiten** \(Dialogfeld\). Es kann auch geöffnet werden die **Projekt** Menü.  
   
- ![Projektabhängigkeiten](../../extensibility/internals/media/vsprojdependencies.png "vsProjDependencies")  
+ ![Projektabhängigkeiten](~/extensibility/internals/media/vsprojdependencies.gif "vsProjDependencies")  
 Projektabhängigkeiten  
   
  Abhängigkeiten bestimmt die Reihenfolge, in der Projekte zu erstellen. Verwenden Sie die Registerkarte Buildreihenfolge im Dialogfeld genau der Reihenfolge an, in der Projekte innerhalb einer Projektmappe erstellen, und verwenden die Registerkarte Abhängigkeiten die Buildreihenfolge zu ändern.  

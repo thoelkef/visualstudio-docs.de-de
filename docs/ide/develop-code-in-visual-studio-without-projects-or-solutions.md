@@ -73,7 +73,7 @@ Das folgende Beispiel zeigt, wie ein GitHub-Repository geklont und dann sein Cod
 1. Wechseln Sie zu dem Repository, das Sie klonen möchten.
 1. Wählen Sie auf der Seite des GitHub-Repositorys die Schaltfläche **Clone or Download** (Klonen oder herunterladen), und wählen Sie dann die Schaltfläche **Copy to Clipboard** (In Zwischenablage kopieren) im Dropdownmenü, um die sichere URL für die GitHub-Website zu kopieren.
 
-  ![Klonenschaltfläche in GitHub](./media/VSIDE_Code_Clone.png)
+  ![Klonenschaltfläche in GitHub](~/ide/media/VSIDE_Code_Clone.png)
 
     > [!NOTE]
     >  Sie haben zwar auch die Möglichkeit, das Projekt auf Ihrem Desktop zu öffnen oder eine ZIP-Datei des Projekts herunterzuladen, doch dieses Beispiel veranschaulicht das Klonen des Repositorys mithilfe einer sicheren URL.
@@ -81,12 +81,12 @@ Das folgende Beispiel zeigt, wie ein GitHub-Repository geklont und dann sein Cod
 1. Wählen Sie in Visual Studio die Registerkarte **Team Explorer**, um Team Explorer zu öffnen.
 1. Wählen Sie in Team Explorer im Abschnitt **Lokale Git-Repositorys** den Befehl **Klonen** aus, und fügen Sie die URL der GitHub-Seite in das Textfeld ein.
 
-  ![Klonen des Projekts](./media/VSIDE_Code_Clone2.png)
+  ![Klonen des Projekts](~/ide/media/VSIDE_Code_Clone2.png)
 
 1. Wählen Sie die Schaltfläche **Klonen**, um die Dateien des Projekts in einem lokalen Git-Repository zu klonen. Dies kann je nach Größe des Repositorys einige Minuten dauern.
 1. Wählen Sie nach dem Klonen des Repositorys auf Ihrem System in Team Explorer den Befehl **Öffnen** im Kontextmenü (Rechtsklick) des neu geklonten Projekts.
 
-  ![Geklontes Projekt](./media/VSIDE_Code_Clone3.png)
+  ![Geklontes Projekt](~/ide/media/VSIDE_Code_Clone3.png)
 
 1. Wählen Sie den Befehl **Ordneransicht anzeigen** aus, um die Dateien im Projektmappen-Explorer anzuzeigen.
 
@@ -94,7 +94,7 @@ Das folgende Beispiel zeigt, wie ein GitHub-Repository geklont und dann sein Cod
 
   Jetzt können Sie Ordner und Dateien im geklonten Projekt durchsuchen und den Code im Code-Editor von Visual Studio anzeigen und durchsuchen, komplett mit Syntaxfarbgebung und anderen Funktionen.
 
-    ![Durchsuchen des geklonten Projektcodes](./media/VSIDE_Code_Clone4.png)
+    ![Durchsuchen des geklonten Projektcodes](~/ide/media/VSIDE_Code_Clone4.png)
 
 
 ## <a name="debug-your-code"></a>Debuggen Ihres Codes
@@ -102,7 +102,7 @@ Sie können den Code in Visual Studio debuggen. Zum Debuggen bestimmter Sprachen
 
 Auf der Symbolleiste werden in der Dropdownliste neben der Schaltfläche „Start“ sowohl alle Startelemente aufgelistet, die Visual Studio erkennt, als auch die Elemente, die Sie speziell in einem Ordner auswählen.
 
-![Schaltfläche „Ausführen“](./media/VSIDE_Code_Run_Button.png)
+![Schaltfläche „Ausführen“](~/ide/media/VSIDE_Code_Run_Button.png)
 
 Visual Studio erkennt Projekte automatisch, aber Skripts (z.B. Python und JavaScript) müssen Sie explizit als Startelement auswählen, bevor sie in der Liste angezeigt werden.
 Darüber hinaus können einige Startelemente, z.B. MSBuild und CMake, mehrere Buildkonfigurationen verwenden, die in der Dropdownliste der Schaltfläche „Ausführen“ angezeigt werden.
@@ -138,11 +138,11 @@ Sie können auch beliebige Buildaufgaben erstellen, die nahezu alles tun können
 
 1. Wählen Sie die Datei oder den Ordner des Projekts im Projektmappen-Explorer aus, wo die Aufgabe gespeichert werden soll, und klicken Sie auf das Kontextmenü (Rechtsklick) der Datei oder des Ordners, und wählen Sie **Tasks konfigurieren**.
 
-  ![Tasks konfigurieren](./media/VSIDE_Code_Config_Task.png)
+  ![Tasks konfigurieren](~/ide/media/VSIDE_Code_Config_Task.png)
 
   Bei Auswahl von **Tasks konfigurieren** wird die Datei „tasks.vs.json“ geöffnet. Wenn diese Datei nicht vorhanden ist, wird sie erstellt. Diese Datei enthält die Buildaufgaben für die ausgewählte Datei oder den Ordner.
 
-  ![Datei „tasks.vs.json“](./media/VSIDE_Code_Tasks_JSON.png)
+  ![Datei „tasks.vs.json“](~/ide/media/VSIDE_Code_Tasks_JSON.png)
 
 1. Fügen Sie „tasks.vs.json“ die folgende Buildaufgabe hinzu. In diesem Beispiel fügen wir eine einfache Aufgabe „List outputs“ hinzu, die Dateien und Unterordner des ausgewählten Ordners im Fenster „Ausgabe“ auflistet. (Die neue Aufgabe sollte innerhalb des vorhandenen Arrays „tasks“ hinzugefügt werden.)
 
@@ -159,12 +159,12 @@ Sie können auch beliebige Buildaufgaben erstellen, die nahezu alles tun können
   ```
   Die vollständige Buildaufgabe sollte wie folgt aussehen.
 
-  ![Beliebige Buildaufgabe](./media/VSIDE_Code_Tasks_ArbTask.png)
+  ![Beliebige Buildaufgabe](~/ide/media/VSIDE_Code_Tasks_ArbTask.png)
 
 1. Speichern Sie das Projekt.
 1. Öffnen Sie das Kontextmenü für den ausgewählten Ordner. Sie sollten nun die neue beliebige Buildaufgabe sehen, die am unteren Rand im Kontextmenü angezeigt werden sollte.
 
-  ![Beliebige Buildaufgabe, Befehl](./media/VSIDE_Code_Tasks_ArbTask2.png)
+  ![Beliebige Buildaufgabe, Befehl](~/ide/media/VSIDE_Code_Tasks_ArbTask2.png)
 
 1. Wählen Sie den neuen Befehl **List outputs** aus, um die Aufgabe auszuführen.
 
@@ -174,7 +174,7 @@ In diesem Verfahren fügen wir zwei benutzerdefinierte Buildaufgaben hinzu, die 
 
 1. Wählen Sie eine Datei des Projekts im Projektmappen-Explorer aus, die Sie später als Startelement festlegen möchten. Wählen Sie im Kontextmenü (Rechtsklick) der Datei **Tasks konfigurieren**.
 
-  ![Benutzerdefinierte Buildaufgabe, Befehl](./media/VSIDE_Code_Tasks_CustTask1.png)
+  ![Benutzerdefinierte Buildaufgabe, Befehl](~/ide/media/VSIDE_Code_Tasks_CustTask1.png)
 
 1. Fügen Sie „tasks.vs.json“ die folgenden Buildaufgaben hinzu. In diesem Beispiel werden zwei Aufgaben hinzugefügt: eine namens „makefile-build“, die den nMake-Befehl verwendet, um das Projekt zu erstellen, die andere mit der Bezeichnung „makefile-clean“ ruft den nMake-Befehl mit dem Argument „clean“ auf. Diese Aufgaben sollten innerhalb des vorhandenen Arrays „tasks“ hinzugefügt werden. (Beachten Sie, dass dies nur Beispielbuildaufgaben sind. Damit sie tatsächlich funktionieren, muss die Arbeitsauslastung, die [nNake](https://docs.microsoft.com/en-us/cpp/build/nmake-reference) enthält, auf Ihrem System installiert sein.)
 
@@ -199,12 +199,12 @@ In diesem Verfahren fügen wir zwei benutzerdefinierte Buildaufgaben hinzu, die 
   ```
   Die vollständige benutzerdefinierte Buildaufgabe sollte wie folgt aussehen.
 
-  ![Benutzerdefinierte Buildaufgabe](./media/VSIDE_Code_Tasks_CustTask2.png)
+  ![Benutzerdefinierte Buildaufgabe](~/ide/media/VSIDE_Code_Tasks_CustTask2.png)
 
 1. Speichern Sie das Projekt.
 1. Öffnen Sie das Kontextmenü für die ausgewählte Datei. Die neuen benutzerdefinierten Buildaufgaben sollten in der Mitte des Kontextmenüs angezeigt werden.
 
-  ![Benutzerdefinierte Buildaufgabe, Befehl](./media/VSIDE_Code_Tasks_CustTask3.png)
+  ![Benutzerdefinierte Buildaufgabe, Befehl](~/ide/media/VSIDE_Code_Tasks_CustTask3.png)
 
   > [!NOTE]
   > Die Befehle werden aufgrund ihrer `contextType`-Einstellungen unter dem Befehl **Tasks konfigurieren** angezeigt; „build“und „clean“ sind Buildbefehle, sodass sie im Buildabschnitt in der Mitte des Kontextmenüs angezeigt werden.
@@ -213,11 +213,11 @@ In diesem Verfahren fügen wir zwei benutzerdefinierte Buildaufgaben hinzu, die 
 
 1. Wählen Sie im Kontextmenü der Datei **Als Startelement festlegen**.
 
-  ![Benutzerdefinierte Buildaufgabe, Befehl](./media/VSIDE_Code_Tasks_CustTask4.png)
+  ![Benutzerdefinierte Buildaufgabe, Befehl](~/ide/media/VSIDE_Code_Tasks_CustTask4.png)
 
 1. Wählen Sie auf der Symbolleiste den Dropdownpfeil neben der Schaltfläche „Start“. Das Startelement wird jetzt als Option angezeigt.
 
-  ![Benutzerdefinierte Buildaufgabe, Befehl](./media/VSIDE_Code_Tasks_CustTask5.png)
+  ![Benutzerdefinierte Buildaufgabe, Befehl](~/ide/media/VSIDE_Code_Tasks_CustTask5.png)
 
 Sie können jetzt die Schaltfläche „Start“ oder die F5-Taste zum Ausführen Ihrer Codebasis auswählen. Sie können Ihre Codebasis in Visual Studio bearbeiten und debuggen, auch wenn Visual Studio die Buildtools der Codebasis nicht erkennt. Die Ausgabe der Buildaufgabe wird im Fenster **Ausgabe** angezeigt, und die Buildfehler werden in der **Fehlerliste** angezeigt. Die Buildaufgabendatei „tasks.vs.json“ koppelt die innere Entwicklungschleife von Visual Studio mit den benutzerdefinierten Buildtools, die Ihre Codebasis verwendet.
 
@@ -237,7 +237,7 @@ Wenn Sie den Ausgabespeicherort angeben, weiß Visual Studio, wo die Buildausgab
 
 Standardmäßig befindet sich die Datei „tasks.vs.json“ in einem ausgeblendeten Ordner namens `.vs`. Wählen Sie zum Anzeigen ausgeblendeter Dateien in Visual Studio die Schaltfläche **Alle Dateien anzeigen** auf der Symbolleiste des Projektmappen-Explorers.
 
-![Beliebige Buildaufgabe, Befehl](./media/VSIDE_Code_Tasks_FileLocation.png)
+![Beliebige Buildaufgabe, Befehl](~/ide/media/VSIDE_Code_Tasks_FileLocation.png)
 
 Die Datei „tasks.vs.json“ wird ausgeblendet, da die meisten Benutzer sie in der Regel nicht in die Quellcodeverwaltung einchecken möchten. Wenn Sie jedoch die Möglichkeit haben möchten, sie in die Quellcodeverwaltung einzuchecken, ziehen Sie die Datei in das Stammverzeichnis Ihres Projekts, wo sie sichtbar ist.
 

@@ -75,7 +75,7 @@ In Visual Studio sind Projekte die Container, mit denen Entwickler Quellcodedate
   
 3.  Stellen Sie das Symbol charakteristische. Dieses Symbol wird angezeigt, der **Neues Projekt** später in dieser exemplarischen Vorgehensweise im Dialogfeld.  
   
-     ![Symbol Einfaches Projekt](../extensibility/media/simpleprojicon.png "SimpleProjIcon")  
+     ![Symbol Einfaches Projekt](~/extensibility/media/simpleprojicon.png "SimpleProjIcon")  
   
 4.  Speichern Sie das Symbol, und schließen Sie den Symbol\-Editor.  
   
@@ -471,7 +471,7 @@ In Visual Studio sind Projekte die Container, mit denen Entwickler Quellcodedate
   
 2.  In der **Eigenschaften** Windows, reduzieren Sie die Bitmap auf 16 x 16 Pixel. Stellen Sie die Bitmap charakteristische.  
   
-     ![Einfaches Projekt &#45; Comm](../extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
+     ![Einfaches Projekt &#45; Comm](~/extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
   
 3.  In der **Eigenschaften** ändern die **Buildvorgang** der Bitmap auf **eingebettete Ressource**.  
   
@@ -546,7 +546,7 @@ In Visual Studio sind Projekte die Container, mit denen Entwickler Quellcodedate
   
 2.  Beachten Sie, dass SimpleProjectNode.bmp als Symbol für den Projekt\-Knoten, in das Projekt neu erstellt.  
   
-     ![Einfaches Projekt &#45; Knoten Neues Projekt](../extensibility/media/simpleprojnewprojectnode.png "SimpleProjNewProjectNode")  
+     ![Einfaches Projekt &#45; Knoten Neues Projekt](~/extensibility/media/simpleprojnewprojectnode.png "SimpleProjNewProjectNode")  
   
 3.  Öffnen Sie die Datei "Program.cs" im Code\-Editor. Quellcode, die dem folgenden Code ähnelt, sollte angezeigt werden.  
   
@@ -649,6 +649,6 @@ In Visual Studio sind Projekte die Container, mit denen Entwickler Quellcodedate
   
 6.  Starten Sie das Projekt debuggen. Das neue Projekt sollten kompilieren, ausführen und Anzeigen von "Hello VSX\!\!\!" im Konsolenfenster angezeigt.  
   
-     ![Befehl Einfaches Projekt](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")  
+     ![Befehl Einfaches Projekt](~/extensibility/media/simpleprojcommand.png "SimpleProjCommand")  
   
  Herzlichen Glückwunsch\! Sie haben eine grundlegende verwalteten Projektsystem implementiert.

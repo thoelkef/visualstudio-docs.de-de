@@ -44,7 +44,7 @@ Als Nächstes fügen Sie dem Code einen Kommentar hinzu.  Ein Kommentar ist ein 
   
      Anweisungen sorgen dafür, dass Programme bestimmte Schritte ausführen.  In Visual C\# endet eine Anweisung immer mit einem Semikolon.  In Visual Basic ist das Ende einer Zeile das Ende einer Anweisung. \(In Visual Basic wird kein Semikolon benötigt.\) Die vorangehende Anweisung teilt dem `PictureBox`\-Steuerelement mit, die Datei zu laden, die der Benutzer mit der **OpenFileDialog**\-Komponente ausgewählt hat.  
   
- ![Link zu Video](../data-tools/media/playvideo.png "PlayVideo") Eine Videoversion dieses Themas finden Sie im [Video 1 zum Lernprogramm 5: Erstellen eines Bildanzeigeprogramms in Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205216) oder im [Video 1 zum Lernprogramm 5: Erstellen eines Bildanzeigeprogramms in C\#](http://go.microsoft.com/fwlink/?LinkId=205206).  Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können.  Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.  
+ ![Link zu Video](~/data-tools/media/playvideo.gif "PlayVideo") Eine Videoversion dieses Themas finden Sie im [Video 1 zum Lernprogramm 5: Erstellen eines Bildanzeigeprogramms in Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205216) oder im [Video 1 zum Lernprogramm 5: Erstellen eines Bildanzeigeprogramms in C\#](http://go.microsoft.com/fwlink/?LinkId=205206).  Diese Videos verwenden eine frühere Version von Visual Studio, sodass Menübefehle und andere Benutzeroberflächenelemente geringfügig abweichen können.  Allerdings funktionieren die Konzepte und Prozeduren in der aktuellen Version von Visual Studio auf ähnliche Weise.  
   
 ### So fügen Sie Kommentare hinzu  
   
@@ -65,7 +65,7 @@ Als Nächstes fügen Sie dem Code einen Kommentar hinzu.  Ein Kommentar ist ein 
   
 2.  Speichern Sie das Programm, bevor Sie es ausführen, indem Sie die Symbolleistenschaltfläche **Alle speichern** auswählen, die wie folgt aussieht.  
   
-     ![Schaltfläche "Alle speichern" in der Symbolleiste](../ide/media/express_iconsaveall.png "Express\_IconSaveAll")  
+     ![Schaltfläche "Alle speichern" in der Symbolleiste](~/ide/media/express_iconsaveall.png "Express\_IconSaveAll")  
 Schaltfläche "Alle speichern"  
   
      Oder wählen Sie in der Menüleiste **Datei**, **Alle speichern** aus, um das Programm zu speichern.  Es ist empfehlenswert, früh und häufig zu speichern.  

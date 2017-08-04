@@ -23,7 +23,7 @@ caps.handback.revision: 12
 
 Die Umgebung behandelt **Save**, **Save As**und **Save All** Befehle.  Wenn ein Benutzer auf **Speichern**klickt, wird **Speichern unter**, **oder Alles speichern** auf dem **Datei** Menü oder die Projektmappe mit dem Ergebnis einer Alle speichern, der folgende Prozess verwendet wird.  
   
- ![Speichern im Kunden&#45;Editor](../../extensibility/internals/media/private.png "Private")  
+ ![Speichern im Kunden&#45;Editor](~/extensibility/internals/media/private.gif "Private")  
 Speichern, Speichern unter, und speichern Sie alle Befehls Klassenbehandlung für einen benutzerdefinierten Editor  
   
  Dieser Vorgang wird in den folgenden Schritten einzeln aufgeführt:  

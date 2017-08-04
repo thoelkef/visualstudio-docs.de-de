@@ -89,15 +89,15 @@ caps.handback.revision: 50
     > [!NOTE]  
     >  Wenn die Registerkarte **Entwickler** nicht sichtbar ist, müssen Sie diese zuerst anzeigen.  Weitere Informationen finden Sie unter [Gewusst wie: Anzeigen der Registerkarte "Entwickler" auf der Multifunktionsleiste](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-6.  Wählen Sie in der Gruppe **Steuerelemente** die Schaltfläche **Text** mit der Bezeichnung ![PlainTextContentControl](../vsto/media/plaintextcontrol.png "PlainTextContentControl") aus, um der ersten Zelle ein <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> hinzuzufügen.  
+6.  Wählen Sie in der Gruppe **Steuerelemente** die Schaltfläche **Text** mit der Bezeichnung ![PlainTextContentControl](~/vsto/media/plaintextcontrol.gif "PlainTextContentControl") aus, um der ersten Zelle ein <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> hinzuzufügen.  
   
 7.  Wählen Sie in der zweiten Spalte der Tabelle die zweite Zeile \(neben **Hire Date**\).  
   
-8.  Wählen Sie in der Gruppe **Steuerelemente** die Schaltfläche **Datumsauswahl** mit der Bezeichnung ![DatePickerContentControl](../vsto/media/datepicker.png "DatePickerContentControl") aus, um der zweiten Zelle ein <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> hinzuzufügen.  
+8.  Wählen Sie in der Gruppe **Steuerelemente** die Schaltfläche **Datumsauswahl** mit der Bezeichnung ![DatePickerContentControl](~/vsto/media/datepicker.gif "DatePickerContentControl") aus, um der zweiten Zelle ein <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> hinzuzufügen.  
   
 9. Wählen Sie in der zweiten Spalte der Tabelle die dritte Zeile \(neben **Title**\).  
   
-10. Wählen Sie in der Gruppe **Steuerelemente** die Schaltfläche **Dropdownliste** mit der Bezeichnung ![DropDownListContentControl](../vsto/media/dropdownlist.png "DropDownListContentControl") aus, um der letzten Zelle ein <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> hinzuzufügen.  
+10. Wählen Sie in der Gruppe **Steuerelemente** die Schaltfläche **Dropdownliste** mit der Bezeichnung ![DropDownListContentControl](~/vsto/media/dropdownlist.gif "DropDownListContentControl") aus, um der letzten Zelle ein <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> hinzuzufügen.  
   
  Das ist die vollständige Benutzeroberfläche für dieses Projekt.  Wenn Sie das Projekt jetzt ausführen, können Sie in der ersten Zeile Text eingeben und in der zweiten Zeile ein Datum auswählen.  Im nächsten Schritt fügen Sie die anzuzeigenden Daten in einer XML\-Datei an das Dokument an.  
   

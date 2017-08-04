@@ -56,11 +56,11 @@ Sie können Haltepunkte festlegen, wenn Sie die Ausführung des Debuggers stoppe
 ##  <a name="BKMK_Overview"></a> Festlegen eines Funktionshaltepunkts im Quellcode  
  Sie legen im Quellcode einen Funktionshaltepunkt fest, indem Sie in den linken Bereich einer Quellcodedatei klicken oder den Cursor in einer Codezeile platzieren und dann F9 drücken. Der Haltepunkt wird als roter Punkt im linken Bereich angezeigt, und die Codezeile wird ebenfalls eingefärbt:  
   
- ![Haltepunkt festlegen](../debugger/media/basicbreakpoint.png "BasicBreakpoint")  
+ ![Haltepunkt festlegen](~/debugger/media/basicbreakpoint.png "BasicBreakpoint")  
   
  Beim Erreichen des Haltepunkts wird die Ausführung dieses Codes im Debugger gestoppt, bevor der Code in der Zeile ausgeführt wird. Die Zeile des Quellcodes ist gelb gefärbt:  
   
- ![Haltepunktausführung beendet](../debugger/media/breakpointexecution.png "BreakpointExecution")  
+ ![Haltepunktausführung beendet](~/debugger/media/breakpointexecution.png "BreakpointExecution")  
   
  An dieser Stelle lautet der Wert von `testInt` immer noch 1.  
   

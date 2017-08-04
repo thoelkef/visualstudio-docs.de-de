@@ -26,7 +26,7 @@ caps.handback.revision: 24
 # Starten einer Debugsitzung f&#252;r Store-Apps in Visual Studio (JavaScript)
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Gilt für Windows und Windows Phone](../debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![Gilt für Windows und Windows Phone](~/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  In diesem Thema wird beschrieben, wie Sie eine Debugsitzung für in JavaScript und HTML5 geschriebene Windows Store\-Apps starten können. Sie können das Debuggen mit einer einzigen Tastatureingabe starten, oder Sie können die Debugsitzung für bestimmte Szenarien konfigurieren und dann die Methode auswählen, mit der die App gestartet wird.  
   
@@ -67,7 +67,7 @@ caps.handback.revision: 24
 -   [Fügen Sie den Debugger an.](#BKMK_Attach_the_debugger)  
   
 ##  <a name="BKMK_The_easy_way_to_start_debugging"></a> Die einfache Methode zum Starten des Debuggings  
- ![Gilt nur für Windows](../debugger/media/windows_only_content.png "windows\_only\_content")  
+ ![Gilt nur für Windows](~/debugger/media/windows_only_content.png "windows\_only\_content")  
   
 1.  Öffnen Sie in Visual Studio die Anwendungsprojektmappe.  
   
@@ -75,7 +75,7 @@ caps.handback.revision: 24
   
 3.  Drücken Sie F5.  
   
- ![Gilt nur für Windows Phone](../debugger/media/phone_only_content.png "phone\_only\_content")  
+ ![Gilt nur für Windows Phone](~/debugger/media/phone_only_content.png "phone\_only\_content")  
   
  In Visual Studio wird die Anwendung mit dem angefügten Debugger erstellt und gestartet. Die Ausführung wird fortgeführt, bis ein Haltepunkt erreicht wird, bis Sie diese manuell anhalten, bis eine unbehandelte Ausnahme auftritt, oder bis die Anwendung beendet ist. Weitere Informationen finden Sie unter [Schnellstart: Debuggen von HTML und CSS](../debugger/quickstart-debug-html-and-css.md).  
   
@@ -97,7 +97,7 @@ caps.handback.revision: 24
 ###  <a name="BKMK_Choose_the_deployment_target"></a> Auswählen des Bereitstellungsziels  
  Sie können eine App auf dem Visual Studio\-Computer, im Visual Studio\-Simulator auf dem lokalen Computer oder auf einem Remotecomputer bereitstellen und debuggen. Sie wählen das Ziel in der Liste **Zu startender Debugger** auf der Eigenschaftenseite **Debuggen** für das Projekt aus.  
   
- ![Gilt nur für Windows](../debugger/media/windows_only_content.png "windows\_only\_content")  
+ ![Gilt nur für Windows](~/debugger/media/windows_only_content.png "windows\_only\_content")  
   
  Für eine Windows Store\-App wählen Sie eine der folgenden Optionen in der Liste **Zielgerät** aus:  
   
@@ -118,7 +118,7 @@ caps.handback.revision: 24
     > [!NOTE]
     >  Im Dialogfeld "Remotedebuggerverbindung auswählen" werden Computer im lokalen Subnetz sowie solche Computer angezeigt, die mit dem Visual Studio\-Computer durch ein Ethernetkabel direkt verbunden sind. Um einen anderen Computer anzugeben, geben Sie den Namen im Feld **Computername** ein.  
   
- ![Gilt nur für Windows Phone](../debugger/media/phone_only_content.png "phone\_only\_content")  
+ ![Gilt nur für Windows Phone](~/debugger/media/phone_only_content.png "phone\_only\_content")  
   
  Für eine Windows Phone Store\-App wählen Sie **Gerät** oder einen der Emulatoren aus der Liste **Zielgerät** aus.  
   
@@ -145,7 +145,7 @@ caps.handback.revision: 24
 -   Wählen Sie **Ja** aus, um die App sofort zu starten.  
   
 ###  <a name="BKMK__Optional__Disable_network_loopbacks"></a> \(Optional\) Netzwerkloopbacks deaktivieren  
- ![Gilt nur für Windows](../debugger/media/windows_only_content.png "windows\_only\_content")  
+ ![Gilt nur für Windows](~/debugger/media/windows_only_content.png "windows\_only\_content")  
   
  Aus Sicherheitsgründen wird einer im Standardverfahren installierten Windows Store\-App nicht erlaubt, Netzwerkaufrufe an das Gerät auszuführen, auf dem sie installiert wurde. Standardmäßig wird durch die Visual Studio\-Bereitstellung eine Ausnahme von dieser Regel für die bereitgestellte App erstellt. Diese Ausnahme ermöglicht das Testen von Kommunikationsverfahren auf einem einzelnen Computer. Bevor Sie die App an Windows Store senden, sollten Sie die App ohne die Ausnahme testen.  
   

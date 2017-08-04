@@ -48,7 +48,7 @@ caps.handback.revision: 40
   
 -   [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] oder [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].  
   
- ![Link zu Video](../vsto/media/playvideo.png "Link zu Video") Eine Videoversion dieses Themas finden Sie unter [Gewusst\-wie\-Video: Entwerfen eines Outlook\-Formularbereichs](http://go.microsoft.com/fwlink/?LinkID=140824).  
+ ![Link zu Video](~/data-tools/media/playvideo.gif "Link zu Video") Eine Videoversion dieses Themas finden Sie unter [Gewusst\-wie\-Video: Entwerfen eines Outlook\-Formularbereichs](http://go.microsoft.com/fwlink/?LinkID=140824).  
   
 ## Erstellen eines neuen Outlook VSTO\-Add\-In\-Projekts  
  Erstellen Sie zunächst ein Outlook VSTO\-Add\-In\-Basisprojekt.  

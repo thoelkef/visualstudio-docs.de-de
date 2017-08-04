@@ -29,7 +29,7 @@ caps.handback.revision: 7
 # Schnellstart: Debuggen von JavaScript mit der Konsole
 [!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-![Gilt für Windows und Windows Phone](../debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+![Gilt für Windows und Windows Phone](~/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
   
  Sie können das JavaScript\-Konsolenfenster zur Interaktion und zum Debuggen von Store\-Apps verwenden, die mit JavaScript erstellt wurden. Diese Features werden für [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]\-Apps, Windows Phone Store\-Apps und Apps unterstützt, die mithilfe von Visual Studio\-Tools für Apache Cordova erstellt wurden. Die Konsolenbefehlsreferenz finden Sie unter [JavaScript\-Konsolenbefehle](../debugger/javascript-console-commands.md).  
   

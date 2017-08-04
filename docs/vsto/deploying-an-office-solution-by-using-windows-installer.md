@@ -132,7 +132,7 @@ Sie konfigurieren das **OfficeAddInSetup**-Projekt, um die Ausgabe des Office Pr
 2. Wählen Sie in der Menüleiste **Ansicht**, **Öffnen**.  
   
 3. Wählen Sie am unteren Rand der Seite **Projekt-Assistent** die Schaltfläche **Anwendungsdateien** aus, die in der folgenden Abbildung dargestellt wird.  
-    ![Die Schaltfläche "Anwendungsdateien".](../vsto/media/installshield-applicationfiles.png "Die Schaltfläche "Anwendungsdateien".")  
+    ![Die Schaltfläche "Anwendungsdateien".](~/vsto/media/installshield-applicationfiles.png "Die Schaltfläche "Anwendungsdateien".")  
   
 4. Wählen Sie auf der Seite **Anwendungsdateien** die Schaltfläche **Projektausgaben hinzufügen** aus.  
   
@@ -267,7 +267,7 @@ Installationen pro Benutzer erfordern nur ein Installationsprogramm, unabhängig
     Wählen Sie in der Menüleiste **Ansicht**, **Öffnen**.  
   
 2. Wählen Sie am unteren Rand der Seite **Projekt-Assistent** die Schaltfläche **Anwendungsregistrierung** aus, wie in der folgenden Abbildung veranschaulicht.  
-    ![Die Schaltfläche "Anwendungsregistrierung".](../vsto/media/installshield-applicationregistry.png "Die Schaltfläche "Anwendungsregistrierung".")  
+    ![Die Schaltfläche "Anwendungsregistrierung".](~/vsto/media/installshield-applicationregistry.gif "Die Schaltfläche "Anwendungsregistrierung".")  
   
     Die Seite **Anwendungsregistrierung** wird angezeigt.  
   
@@ -385,7 +385,7 @@ Um benutzerdefinierte Eigenschaften zu ändern, erstellen Sie ein Programm, das 
 2. Wählen Sie in der Menüleiste **Ansicht**, **Öffnen**.  
   
 3. Wählen Sie am unteren Rand der Seite **Projekt-Assistent** die Schaltfläche **Anwendungsdateien** aus, die in der folgenden Abbildung dargestellt wird.  
-    ![Die Schaltfläche "Anwendungsdateien".](../vsto/media/installshield-applicationfiles.png "Die Schaltfläche "Anwendungsdateien".")  
+    ![Die Schaltfläche "Anwendungsdateien".](~/vsto/media/installshield-applicationfiles.png "Die Schaltfläche "Anwendungsdateien".")  
   
 4. Wählen Sie auf der Seite **Anwendungsdateien** die Schaltfläche **Projektausgaben hinzufügen** aus.  
     Das Dialogfeld **Visual Studio Output Selector** wird angezeigt.  

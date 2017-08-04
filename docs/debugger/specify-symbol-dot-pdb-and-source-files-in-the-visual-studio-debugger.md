@@ -65,7 +65,7 @@ Eine Programmdatenbankdatei \(PDB\-Datei\), auch als Symboldatei bezeichnet, ord
   
      ![Tools &#45; Optionen &#45; Debuggen &#45; Seite "Symbole"](../debugger/media/dbg_tools_options_symbols.png "DBG\_Tools\_Options\_Symbols")  
   
-2.  Klicken Sie auf das Ordnersymbol ![Tools&#47; Optionen&#47; Debuggen&#47;Symbolordnersymbol](../debugger/media/dbg_tools_options_foldersicon.png "DBG\_Tools\_Options\_FoldersIcon"). Im Feld **Orte für Symboldateien \(.pdb\)** wird Text angezeigt, der bearbeitet werden kann.  
+2.  Klicken Sie auf das Ordnersymbol ![Tools&#47; Optionen&#47; Debuggen&#47;Symbolordnersymbol](~/debugger/media/dbg_tools_options_foldersicon.png "DBG\_Tools\_Options\_FoldersIcon"). Im Feld **Orte für Symboldateien \(.pdb\)** wird Text angezeigt, der bearbeitet werden kann.  
   
 3.  Geben Sie die URL oder den Verzeichnispfad des Symbolservers oder des Symbolspeicherorts ein. Durch Anweisungsvervollständigung wird Ihnen die Bestimmung des richtigen Formats erleichtert.  
   
@@ -214,7 +214,7 @@ Eine Programmdatenbankdatei \(PDB\-Datei\), auch als Symboldatei bezeichnet, ord
   
 2.  Wählen Sie unter dem Knoten **Allgemeine Eigenschaften** die Option **Quelldateien debuggen** aus.  
   
-3.  Klicken Sie auf das Ordnersymbol ![Tools&#47; Optionen&#47; Debuggen&#47;Symbolordnersymbol](../debugger/media/dbg_tools_options_foldersicon.png "DBG\_Tools\_Options\_FoldersIcon"). Bearbeitbarer Text wird in der Liste **Verzeichnisse mit Quellcode** angezeigt.  
+3.  Klicken Sie auf das Ordnersymbol ![Tools&#47; Optionen&#47; Debuggen&#47;Symbolordnersymbol](~/debugger/media/dbg_tools_options_foldersicon.png "DBG\_Tools\_Options\_FoldersIcon"). Bearbeitbarer Text wird in der Liste **Verzeichnisse mit Quellcode** angezeigt.  
   
 4.  Fügen Sie den Pfad ein, den Sie durchsuchen möchten.  
   

@@ -268,7 +268,7 @@ public void My_Test ()
   
 |||  
 |-|-|  
-|![Gruppenschaltfläche „Test-Explorer“](../test/media/ute_groupby_btn.png "UTE_GroupBy_btn")|Wählen Sie die Schaltfläche **Gruppieren nach** aus, um die Tests nach Kategorie zu gruppieren.|  
+|![Gruppenschaltfläche „Test-Explorer“](~/test/media/ute_groupby_btn.png "UTE_GroupBy_btn")|Wählen Sie die Schaltfläche **Gruppieren nach** aus, um die Tests nach Kategorie zu gruppieren.|  
   
  Weitere Informationen finden Sie unter [Run unit tests with Test Explorer (Ausführen von Komponententests mit dem Test-Explorer)](../test/run-unit-tests-with-test-explorer.md).  
   

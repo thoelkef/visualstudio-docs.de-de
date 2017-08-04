@@ -65,9 +65,9 @@ In einigen Situationen, z. B. bei beschädigten Dateien, müssen die Probleme gg
 
 1. Laden Sie das [Protokollerfassungstool für Microsoft Visual Studio und .NET Framework](https://www.microsoft.com/en-us/download/details.aspx?id=12493) herunter, und führen Sie es aus. Dieses Tool sammelt und kompiliert für Visual Studio-, .NET Framework- und SQL Server-Installationen verfügbare Setupprotokolle.
 2. Öffnen Sie den Visual Studio-Installer, und klicken Sie dann auf **Problem melden**, um das Visual Studio-Feedbacktool zu öffnen.
-![Sie können zur Schaltfläche „Feedback geben“ navigieren, um das Feedbacktool zu öffnen](media/report-a-problem.png)
+![Sie können zur Schaltfläche „Feedback geben“ navigieren, um das Feedbacktool zu öffnen](~/install/media/report-a-problem.png)
 3. Versehen Sie Ihren Problembericht mit einem Titel, und geben Sie relevante Details an. Klicken Sie auf **Weiter**, um zum Abschnitt **Anlagen** zu wechseln. Fügen Sie die generierte Protokolldatei an (in der Regel befindet sich die Datei unter „%TEMP%\vslogs.zip“).
-![Navigieren Sie zur Schaltfläche „Neues Problem melden“, und befolgen Sie dann die Anweisungen](media/problem-report-details.png)
+![Navigieren Sie zur Schaltfläche „Neues Problem melden“, und befolgen Sie dann die Anweisungen](~/install/media/problem-report-details.png)
 4. Klicken Sie auf **Weiter**, um Ihren Problembericht zu überprüfen, und dann auf **Senden**.
 
 ### <a name="step-5---run-installcleanupexe-to-clean-up-installation-files"></a>Schritt 5: Ausführen von „InstallCleanup.exe“, um die Installationsdateien zu bereinigen
