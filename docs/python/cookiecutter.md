@@ -1,12 +1,13 @@
 ---
 title: "CookieCutter-Erweiterung für Python in Visual Studio | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 5/8/2017
+ms.date: 7/12/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
+ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 783da5fd-726c-4716-994e-aa04d6b75896
@@ -14,25 +15,11 @@ caps.latest.revision: 1
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
-ms.openlocfilehash: 44aa74104cbb27de62fe739dbdd8f269fbf42c53
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: 6db7e2efc54414dcb72899ab3238a9b7a0390921
 ms.contentlocale: de-de
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
@@ -40,11 +27,11 @@ ms.lasthandoff: 05/09/2017
 
 [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) stellt eine grafische Benutzeroberfläche bereit, auf der Sie Vorlagen ermitteln, Vorlageoptionen eingeben und Projekte und Dateien erstellen können. Die Erweiterung ist im Lieferumfang von Visual Studio 2017 enthalten und kann separat in früheren Versionen von Visual Studio installiert werden.
 
-Cookiecutter erfordert Python 3.3 oder höher (32 oder 64 Bit) oder Anaconda 3 4.2 oder höher (32 oder 64 Bit). Wenn kein geeigneter Python-Interpreter verfügbar ist, zeigt Visual Studio eine Warnung an. Wenn Sie einen Python-Interpreter installieren, während Visual Studio ausgeführt wird, klicken Sie auf der Symbolleiste von Cookiecutter auf die Startschaltfläche, um den neu installierten Interpreter zu erkennen.
+Cookiecutter erfordert Python 3.3 oder höher (32-Bit oder 64-Bit) oder Anaconda 3 4.2 oder höher (32-Bit oder 64 Bit). Wenn kein geeigneter Python-Interpreter verfügbar ist, zeigt Visual Studio eine Warnung an. Wenn Sie einen Python-Interpreter installieren, während Visual Studio ausgeführt wird, klicken Sie auf der Symbolleiste von Cookiecutter auf die Startschaltfläche, um den neu installierten Interpreter zu erkennen.
 
 Wählen Sie nach der Installation **Ansicht > Cookiecutter-Explorer**, um das Fenster von Cookiecutter zu öffnen:
 
-![Cookiecutter – Hauptfenster](~/python/media/cookiecutter-overview.png)
+![Cookiecutter – Hauptfenster](media/cookiecutter-overview.png)
 
 ## <a name="cookiecutter-workflow"></a>Cookiecutter-Workflow
 
@@ -76,27 +63,27 @@ Wenn Sie eine Vorlage aus der Gruppe **Installiert** auswählen oder wenn Sie ei
 
 Nachdem die Vorlage lokal installiert wurde, zeigt Cookiecutter eine Optionsseite an, auf der Sie angeben können, ob Cookiecutter Dateien generieren soll. Sie können auf der Seite noch weitere Optionen festlegen:
 
-![Cookiecutter – Optionsseite](~/python/media/cookiecutter-template-options.png)
+![Cookiecutter – Optionsseite](media/cookiecutter-template-options.png)
 
 Jede Cookiecutter-Vorlage definiert einen eigenen Satz von Optionen und legt einen Standardwert für jede Option fest (angezeigt als vorgeschlagener Text in den jeweiligen Eingabefeldern). Bei einem Standardwert kann es sich um einen Codeausschnitt handeln. Dies ist häufig bei dynamischen Werten der Fall, die weitere Optionen nutzen. 
 
-Es ist möglich, Standardwerte für bestimmte Optionen mithilfe einer Benutzerkonfigurationsdatei anzupassen. Wenn die Cookiecutter-Erweiterung eine Benutzerkonfigurationsdatei erkennt, werden die Standardwerte der Vorlage mit den Standardwerten der Benutzerkonfiguration überschrieben. Dieser Vorgang wird im Abschnitt [Benutzerkonfiguration](https://cookiecutter.readthedocs.io/en/latest/advanced/user_config.html) der Cookiecutter-Dokumentation erläutert.
+Es ist möglich, Standardwerte für bestimmte Optionen mithilfe einer Benutzerkonfigurationsdatei anzupassen. Wenn die Cookiecutter-Erweiterung eine Benutzerkonfigurationsdatei erkennt, werden die Standardwerte der Vorlage mit den Standardwerten der Benutzerkonfiguration überschrieben. Dieses Verhalten wird im Abschnitt [Benutzerkonfiguration](https://cookiecutter.readthedocs.io/en/latest/advanced/user_config.html) der Cookiecutter-Dokumentation erläutert.
 
 Wenn in der Vorlage bestimmte Visual Studio-Tasks festgelegt sind, die nach dem Generieren des Codes ausgeführt werden sollen, wird die Option **Bei Abschluss zusätzliche Tasks ausführen** angezeigt, mit der Sie diese Tasks deaktivieren können. Die häufigste Verwendung von Tasks ist das Öffnen eines Webbrowsers, das Öffnen von Dateien im Editor, das Installieren von Abhängigkeiten usw.
 
 ### <a name="create"></a>Erstellen
 
-Wenn Sie die erforderlichen Optionen festgelegt haben, wählen Sie **Erstellen** aus, um den Code zu generieren. Beachten Sie, dass eine Warnung angezeigt wird, wenn der Ausgabeordner nicht leer ist. Wenn Sie die Ausgabe der Vorlage kennen und nichts dagegen haben, dass Dateien überschrieben werden, können Sie die Warnung ignorieren. Andernfalls klicken Sie auf **Abbrechen**, geben einen leeren Ordner an und kopieren die erstellten Dateien dann manuell in Ihren nicht leeren Ausgabeordner.
+Wenn Sie Ihre Optionen festgelegt haben, wählen Sie **Create** (Erstellen), um Code zu generieren (eine Warnung wird angezeigt, wenn der Ausgabeordner nicht leer ist). Wenn Sie die Ausgabe der Vorlage kennen und nichts dagegen haben, dass Dateien überschrieben werden, können Sie die Warnung ignorieren. Andernfalls klicken Sie auf **Abbrechen**, geben einen leeren Ordner an und kopieren die erstellten Dateien dann manuell in Ihren nicht leeren Ausgabeordner.
 
 Nach dem erfolgreichen Erstellen der Dateien bietet Cookiecutter eine Option zum Öffnen der Dateien im **Projektmappen-Explorer**:
 
-![Cookiecutter mit Projektmappen-Explorer-Befehl](~/python/media/cookiecutter-files-created.png)
+![Cookiecutter mit Projektmappen-Explorer-Befehl](media/cookiecutter-files-created.png)
 
 ## <a name="cookiecutter-options"></a>Cookiecutter-Optionen
 
 Cookiecutter-Optionen stehen über **Tools > Optionen > Cookiecutter** zur Verfügung:
 
-![Cookiecutter-Optionen](~/python/media/cookiecutter-tools-options.png)
+![Cookiecutter-Optionen](media/cookiecutter-tools-options.png)
 
 | Option | Beschreibung |
 | --- | --- |
@@ -105,19 +92,19 @@ Cookiecutter-Optionen stehen über **Tools > Optionen > Cookiecutter** zur Verf�
 
 ## <a name="optimizing-cookiecutter-templates-for-visual-studio"></a>Optimieren von Cookiecutter-Vorlagen für Visual Studio
 
-Grundlegende Informationen zum Erstellen einer Cookiecutter-Vorlage finden Sie in der [Cookiecutter-Dokumentation](https://cookiecutter.readthedocs.io/en/latest/first_steps.html). Beachten Sie, dass die Cookiecutter-Erweiterung für Visual Studio Vorlagen unterstützt, die für Cookiecutter v1.4 erstellt wurden.
+Grundlegende Informationen zum Erstellen einer Cookiecutter-Vorlage finden Sie in der [Cookiecutter-Dokumentation](https://cookiecutter.readthedocs.io/en/latest/first_steps.html). Die Cookiecutter-Erweiterung für Visual Studio unterstützt Vorlagen, die für Cookiecutter v1.4 erstellt wurden.
 
 Die standardmäßige Umsetzung von Vorlagenvariablen hängt vom Datentyp ab (Zeichenfolge oder Liste):
 
 - Zeichenfolge: Bezeichnung für den Variablennamen, Textfeld zum Eingeben eines Werts und ein Wasserzeichen mit dem Standardwert. Eine QuickInfo im Textfeld zeigt den Standardwert.
 - Liste: Bezeichnung für den Variablennamen, Kombinationsfeld zum Auswählen eines Werts. Eine QuickInfo im Kombinationsfeld zeigt den Standardwert.
 
-Diese Optionen können verbessert werden, indem Sie zusätzliche Metadaten in Ihrer `cookiecutter.json`-Datei angeben, die speziell für Visual Studio eingerichtet wurde (und von der Cookiecutter-Befehlszeilenschnittstelle ignoriert wird). Alle Eigenschaften sind optional:
+Dieses Rendering kann verbessert werden, indem Sie zusätzliche Metadaten in Ihrer `cookiecutter.json`-Datei angeben, die speziell für Visual Studio eingerichtet wurde (und von der Cookiecutter-Befehlszeilenschnittstelle ignoriert wird). Alle Eigenschaften sind optional:
 
 | Eigenschaft | Beschreibung |
 | --- | --- |
 | Bezeichnung | Gibt an, was statt des Variablennamens über dem Editor für die Variable angezeigt werden soll. |
-| Beschreibung | Gibt an, dass in der QuickInfo im Bearbeitungssteuerelement statt des Standardwerts für die Variable diese Beschreibung angezeigt werden soll. |
+| Beschreibung | Gibt die QuickInfo an, die im Bearbeitungssteuerelement statt des Standardwerts für diese Variable angezeigt werden soll. |
 | URL | Ändert die Bezeichnung in einen Hyperlink mit einer QuickInfo, in der die URL angezeigt wird. Durch Klicken auf den Hyperlink wird diese URL im Standardbrowser des Benutzers geöffnet. |
 | Auswahl | Ermöglicht die Anpassung des Editors für eine Variable. Folgende Auswahlmöglichkeiten werden zurzeit unterstützt:<ul><li>`string`: Standardtextfeld, standardmäßig für Zeichenfolgen.</li><li>`list`: Standardkombinationsfeld, standardmäßig für Listen.</li><li>`yesno`: Kombinationsfeld zur Auswahl zwischen `y` und `n`, für Zeichenfolgen.</li><li>`odbcConnection`: Textfeld mit einer „...“-Schaltfläche, die ein Dialogfeld für eine Datenbankverbindung öffnet.</li></ul> |
 
@@ -154,7 +141,7 @@ Cookiecutter verfügt über eine Funktion namens *Post-Generate Hooks*, mit der 
 
 Ein Beispiel: Sie möchten eine Datei im Visual Studio-Editor oder im Webbrowser öffnen oder die Visual Studio-Benutzeroberfläche aufrufen, die den Benutzer dazu auffordert, eine virtuelle Umgebung zu erstellen und erforderliche Paketelemente zu installieren.
 
-Für diese Szenarien sucht Visual Studio in `cookiecutter.json` nach erweiterten Metadaten, mit denen die Befehle beschrieben werden, die ausgeführt werden müssen, nachdem ein Benutzer die generierten Dateien im Projektmappen-Explorer geöffnet hat oder nachdem die Dateien zu einem vorhandenen Projekt hinzugefügt wurden. (Auch hier kann der Benutzer die Ausführung der Tasks mithilfe der Vorlagenoption **Bei Abschluss zusätzliche Tasks ausführen** deaktivieren.)
+Für diese Szenarien sucht Visual Studio in `cookiecutter.json` nach erweiterten Metadaten, mit denen die Befehle beschrieben werden, die ausgeführt werden müssen, nachdem ein Benutzer die generierten Dateien im Projektmappen-Explorer geöffnet hat oder nachdem die Dateien zu einem vorhandenen Projekt hinzugefügt wurden. (Auch hier kann der Benutzer die Ausführung der Tasks mithilfe der Vorlagenoption **Run additional tasks on completion** (Bei Abschluss zusätzliche Tasks ausführen) deaktivieren.)
 
 Beispiel:
 
@@ -189,7 +176,7 @@ Wenn Sie kein Argument übergeben müssen, geben Sie in der JSON eine leere Zeic
 ]
 ```
 
-Wenn Sie mehrere Argumente übergeben möchten, verwenden Sie ein Array. Wenn Sie Schalter verwenden, teilen Sie den Schalter und den zugehörigen Wert in separate Argumente auf, um eine ordnungsgemäße Angabe sicherzustellen. Beispiel:
+Wenn Sie mehrere Argumente übergeben möchten, verwenden Sie ein Array. Wenn Sie Schalter verwenden, teilen Sie den Schalter und den zugehörigen Wert in separate Argumente auf und verwenden Sie die korrekten Anführungszeichen. Zum Beispiel:
 
 ```json
 "_visual_studio_post_cmds": [
@@ -206,17 +193,17 @@ Wenn Sie mehrere Argumente übergeben möchten, verwenden Sie ein Array. Wenn Si
 
 Argumente können auf andere Cookiecutter-Variablen verweisen. In den oben stehenden Beispielen wird die interne `_output_folder_path`-Variable verwendet, um einen absoluten Pfad zu den generierten Dateien zu bilden.
 
-Beachten Sie, dass der `Python.InstallProjectRequirements`-Befehl nur beim Hinzufügen von Dateien zu einem vorhandenen Projekt funktioniert. Dies liegt daran, dass der Befehl vom Python-Projekt im Projektmappen-Explorer verarbeitet wird und kein Projekt zum Empfangen der Meldung vorhanden ist, wenn Sie sich in der Ordneransicht des Projektmappen-Explorers befinden. Diese Einschränkung soll in einer zukünftigen Version aufgehoben werden (geplant ist auch eine bessere Unterstützung der Ordneransicht im Allgemeinen).
+Beachten Sie, dass der `Python.InstallProjectRequirements`-Befehl nur beim Hinzufügen von Dateien zu einem vorhandenen Projekt funktioniert. Diese Einschränkung besteht, weil der Befehl vom Python-Projekt im Projektmappen-Explorer verarbeitet wird und kein Projekt zum Empfangen der Meldung vorhanden ist, wenn Sie sich in der Ordneransicht des Projektmappen-Explorers befinden. Wir hoffen, diese Einschränkung in einer zukünftigen Version aufzuheben (und eine bessere Unterstützung der Ordneransicht im Allgemeinen zu ermöglichen).
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
 ### <a name="error-loading-template"></a>Fehler beim Laden der Vorlage
 
-Einige Vorlagen verwenden in der `cookiecutter.json` möglicherweise ungültige Datentypen – z.B. einen booleschen Typ. Dies sollte dem Autor der Vorlage gemeldet werden. Klicken Sie im Informationsbereich der Vorlage auf den Link **Probleme**.
+Einige Vorlagen verwenden in der `cookiecutter.json` möglicherweise ungültige Datentypen – z.B. einen booleschen Typ. Melden Sie solche Instanzen dem Autor der Vorlage, indem Sie im Informationsbereich der Vorlage auf den Link **Issues** (Probleme) klicken.
 
 ### <a name="hook-script-failed"></a>Fehler beim Hookskript
 
-Einige Vorlagen verwenden möglicherweise Skripts zum Ausführen nach der Generierung, die nicht mit der Cookiecutter-Benutzeroberfläche kompatibel sind. Beispielsweise treten Fehler auf bei Skripts, die eine Eingabe vom Benutzer anfordern, da keine Terminalkonsole vorhanden ist.
+Einige Vorlagen verwenden möglicherweise Skripts zum Ausführen nach der Generierung, die nicht mit der Cookiecutter-Benutzeroberfläche kompatibel sind. Beispielsweise treten Fehler bei Skripts auf, die eine Eingabe vom Benutzer anfordern, da keine Terminalkonsole vorhanden ist.
 
 ### <a name="hook-script-not-supported-on-windows"></a>Keine Unterstützung für Hookskript unter Windows
 

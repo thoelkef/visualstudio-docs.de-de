@@ -31,24 +31,25 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 77e7ce26df70e41e2328442454fe78c7a663f1f3
-ms.openlocfilehash: f93c61e084378cd702ea8f190e1661c03bbc9c51
-ms.lasthandoff: 03/08/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
+ms.openlocfilehash: 0b1d5d3c39e2f52952397413d47229034bbb4adb
+ms.contentlocale: de-de
+ms.lasthandoff: 06/30/2017
 
 ---
 # <a name="whats-new-in-profiling-tools-in-includevsdev15miscincludesvsdev15mdmd"></a>Neuerungen bei den Profilerstellungstools in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 Die Diagnosetools enthalten neue Visualisierungen, um Ihnen bei der Identifizierung von Problemen in Ihrer App zu helfen, die behoben werden müssen. Die Diagnosetools umfassen jetzt Unterstützung für ASP.NET-Apps.
 
-Weitere Informationen finden Sie in den [Anmerkungen zu [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]] (https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes#debuggingdiag).
+Weitere Informationen finden Sie in den [Anmerkungen zu [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes#debuggingdiag).
 
 Zu den Tools wurde eine Registerkarte **Zusammenfassung** hinzugefügt, die Ihnen dabei hilft, den Fokus für Ihre Leistungsanalyse auf die Hauptbereiche zu legen. Diese Registerkarte zeigt, wie viele Ereignisse aufgetreten sind, lässt Sie Momentaufnahmen des Heaps machen und schnell die Datensammlung für die CPU-Auslastung aktivieren. In dieser Ansicht werden alle Ereignisse von [Application Insights](https://azure.microsoft.com/en-us/documentation/articles/app-insights-visual-studio/) oder der [Analyse der Benutzeroberfläche](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes#UIAnalysis) gezeigt. Darüber hinaus werden in dieser Ansicht auch IntelliTrace-Ereignisse für Visual Studio Enterprise gezeigt.
 
-![Diagnosetools-Registerkarte Zusammenfassung](~/profiling/media/DiagToolsSummaryTab-2.png "DiagToolsZusammenfassungRegisterkarte")
+![Diagnosetools-Registerkarte Zusammenfassung](../profiling/media/DiagToolsSummaryTab-2.png "DiagToolsZusammenfassungRegisterkarte")
 
 Das Tool für die CPU-Auslastung verfügt über [neue Visualisierungen](../profiling/Beginners-Guide-to-Performance-Profiling.md), um Ihnen beim Identifizieren der Funktionen zu helfen, die am wahrscheinlichsten Leistungsprobleme verursachen. Die neue Ansicht **Aufrufer/Aufgerufener** können Sie zum Untersuchen der Kosten von Funktionsaufrufen verwenden, die an eine und von einer ausgewählten Funktion erfolgen.
 
-![Diagnosetools Ansicht Aufrufer/Aufgerufener](~/profiling/media/DiagToolsCallerCallee.png "DiagToolsAufrufer/Aufgerufener")
+![Diagnosetools Ansicht Aufrufer/Aufgerufener](../profiling/media/DiagToolsCallerCallee.png "DiagToolsAufrufer/Aufgerufener")
   
 ## <a name="see-also"></a>Siehe auch  
- [Profilerstellungstools](../profiling/profiling-tools.md)
+ [Profilerstellung in Visual Studio](../profiling/index.md) [Tour zur Profilerstellungsfunktion](../profiling/profiling-feature-tour.md)

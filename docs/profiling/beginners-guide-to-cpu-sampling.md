@@ -33,11 +33,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: ddd52c1af0a164235de2e5055896e020dc8715c3
+ms.translationtype: HT
+ms.sourcegitcommit: 5c28e68b89f6583dc35a91b275693c11e0259dfd
+ms.openlocfilehash: 251b00c479c3853ba4fc00521f3e4cac74a93d27
 ms.contentlocale: de-de
-ms.lasthandoff: 03/07/2017
+ms.lasthandoff: 07/13/2017
 
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Einführung in CPU-Sampling
@@ -90,7 +90,7 @@ Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsprobleme
   
  Jeder nummerierte Bereich in der Abbildung bezieht sich auf einen Schritt in der Prozedur.  
   
- ![Ansicht des Zusammenfassungsberichts für Sampling](~/profiling/media/summary_sampling.png "Summary_Sampling")  
+ ![Ansicht des Zusammenfassungsberichts für Sampling](../profiling/media/summary_sampling.png "Summary_Sampling")  
   
 #### <a name="to-analyze-sampling-data"></a>So analysieren Sie Samplingdaten  
   
@@ -139,9 +139,9 @@ Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsprobleme
   
 4.  Nach dem erneuten Ausführen der Sitzung wird dem Ordner **Berichte** für die Sitzung im **Leistungs-Explorer** eine weitere Datendatei hinzugefügt. Wählen Sie sowohl die ursprünglichen als auch die neuen Profilerstellungsdaten aus, klicken Sie mit der rechten Maustaste auf die Auswahl, und klicken Sie anschließend auf **Leistungsberichte vergleichen**.  
   
-     Ein neues Berichtsfenster mit den Ergebnissen des Vergleichs wird geöffnet. Weitere Informationen zum Verwenden der Vergleichsansicht finden Sie unter [Vorgehensweise: Vergleichen der Leistungsdatendateien](../profiling/how-to-compare-performance-data-files.md).  
+     Ein neues Berichtsfenster mit den Ergebnissen des Vergleichs wird geöffnet. Weitere Informationen zum Verwenden der Vergleichsansicht finden Sie unter [Vorgehensweise: Vergleichen der Leistungsdatendateien](../profiling/how-to-compare-performance-data-files.md).
   
 ## <a name="see-also"></a>Siehe auch  
  [Performance Explorer (Leistungs-Explorer)](../profiling/performance-explorer.md)   
  [Getting Started (Erste Schritte)](../profiling/getting-started-with-performance-tools.md)   
- [Overviews (Übersichten)](../profiling/overviews-performance-tools.md)
+ [Überblick](../profiling/overviews-performance-tools.md) [Profilerstellung in Visual Studio](../profiling/index.md) [Tour zur Profilerstellungsfunktion](../profiling/profiling-feature-tour.md)

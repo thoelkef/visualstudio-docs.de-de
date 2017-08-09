@@ -1,12 +1,13 @@
 ---
 title: Verwenden von PyLint in Visual Studio | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 4/10/2017
+ms.date: 7/12/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
+ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: bc668a4b-10ae-4199-90b8-c984456b6003
@@ -14,24 +15,11 @@ caps.latest.revision: 1
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
-ms.openlocfilehash: c8bfaf9f20e7fecb3633ca101170b0f3e686aa53
-ms.lasthandoff: 04/10/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: cd841938f160420934941a5166184f79aca82be7
+ms.contentlocale: de-de
+ms.lasthandoff: 07/18/2017
 
 ---
 
@@ -41,13 +29,13 @@ ms.lasthandoff: 04/10/2017
 
 Klicken Sie einfach im Projektmappen-Explorer mit der rechten Maustaste auf ein Python-Projekt, und wählen Sie **Python > PyLint ausführen...** aus:
 
-![PyLint-Befehl im Kontextmenü für Python-Projekte](~/python/media/code-pylint-command.png)
+![PyLint-Befehl im Kontextmenü für Python-Projekte](media/code-pylint-command.png)
 
-Wenn Sie die Befehle verwenden, werden Sie ggf. aufgefordert, PyLint in Ihrer aktiven Umgebung zu installieren.
+Wenn Sie diesen Befehl verwenden, werden Sie dazu aufgefordert, PyLint in Ihrer aktiven Umgebung zu installieren, wenn es noch nicht vorhanden ist.
 
 PyLint-Warnungen und -Fehler werden im Fehlerlistenfenster angezeigt:
 
-![PyLint-Fehlerliste](~/python/media/code-pylint-error-list.png)
+![PyLint-Fehlerliste](media/code-pylint-error-list.png)
 
 Durch Doppelklicken auf einen Fehler gelangen Sie direkt zu dem Quellcode, der das Problem verursacht.
 
@@ -68,6 +56,6 @@ Um z.B. die in der obigen Abbildung gezeigten „missing-docstring“-Warnungen 
 
 1. Klicken Sie im Visual Studio-Projektmappen-Explorer mit der rechten Maustaste auf Ihr Projekt, wählen Sie **Hinzufügen > Vorhandenes Element...**, navigieren Sie zur neuen `.pylintrc`-Datei, wählen Sie sie aus, und klicken Sie auf **Hinzufügen**.
 
-1. Wenn Sie die Datei zur Bearbeitung öffnen, sehen Sie eine Vielzahl von Einstellungen. Um eine Warnung zu deaktivieren, suchen Sie den Abschnitt `[MESSAGES CONTROL]` und darin die Einstellung `disable`. Sie sehen eine lange Zeichenfolge mit spezifischen Meldungen, an die Sie beliebige Warnungen anfügen können. Im vorliegenden Beispiel wird `,missing-docstring` angefügt (einschließlich des trennenden Kommas).
+1. Öffnen Sie die Datei zum Bearbeiten, die unterschiedliche Einstellungen enthält, mit denen Sie arbeiten können. Um eine Warnung zu deaktivieren, suchen Sie den Abschnitt `[MESSAGES CONTROL]` und darin die Einstellung `disable`. Es gibt eine lange Zeichenfolge mit spezifischen Meldungen, an die Sie beliebige Warnungen anfügen können. Im vorliegenden Beispiel wird `,missing-docstring` angefügt (einschließlich des trennenden Kommas).
 
 1. Speichern Sie die `.pylintrc`-Datei, und führen Sie PyLint erneut aus. Sie werden feststellen, dass die Warnungen jetzt unterdrückt werden.

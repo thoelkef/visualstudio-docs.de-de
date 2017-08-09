@@ -1,12 +1,13 @@
 ---
 title: "Django-Webprojektvorlage für Python in Visual Studio | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 5/8/2017
+ms.date: 7/13/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
+ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c479be58-13eb-4d77-9a27-c97ddc290963
@@ -14,25 +15,11 @@ caps.latest.revision: 1
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
-ms.openlocfilehash: 4a5db2deb3633e8305dbf83cbe6ba8c0e3344c72
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: 242203505dc80c9cdfe6041fbf97308a16ccd2c8
 ms.contentlocale: de-de
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
@@ -44,22 +31,25 @@ Visual Studio bietet vollständiges IntelliSense für Django-Projekte:
 
 - An die Vorlage übergebene Kontextvariablen:
 
-    ![IntelliSense für Kontextvariablen](~/python/media/template-django-intellisense.png)
+    ![IntelliSense für Kontextvariablen](media/template-django-intellisense.png)
 
 - Markierungen und Filter sowohl für integrierte als auch für benutzerdefinierte Variablen:
 
-    ![IntelliSense für Tags und Filter](~/python/media/template-django-intellisense-filter.png)
+    ![IntelliSense für Tags und Filter](media/template-django-intellisense-filter.png)
 
 - Syntaxfarben für eingebettetes CSS und JavaScript:
 
-    ![CSS-IntelliSense](~/python/media/template-django-intellisense-css.png)
+    ![CSS-IntelliSense](media/template-django-intellisense-css.png)
 
-    ![JavaScript IntelliSense](~/python/media/template-django-intellisense-js.png)
+    ![JavaScript IntelliSense](media/template-django-intellisense-js.png)
 
 
 Visual Studio bietet außerdem vollständige [Debugunterstützung](debugging.md) für Django-Projekte: 
 
-![Haltepunkte](~/python/media/template-django-debugging.png)
+![Haltepunkte](media/template-django-debugging.png)
+
+Es ist typisch für Django-Projekte, über ihre `manage.py`-Datei verwaltet zu werden. Visual Studio folgt dieser Annahme. Wenn Sie diese Datei nicht mehr als Einstiegspunkt verwenden, zerstören Sie die Projektdatei. In diesem Fall müssen Sie [das Projekt aus vorhandenen Dateien neu erstellen](python-projects.md#creating-a-project-from-existing-files), ohne es als ein Django-Projekt zu kennzeichnen.
+
 
 ## <a name="django-management-console"></a>Django-Verwaltungskonsole
 
@@ -67,16 +57,16 @@ Die Django-Verwaltungskonsole bietet Zugriff über verschiedene Befehle im Menü
 
 - **Django-Shell öffnen**: Öffnet eine Shell im Kontext Ihrer Anwendung, damit Sie Ihre Modelle bearbeiten können.
 
-    ![Konsole](~/python/media/template-django-console-shell.png)
+    ![Konsole](media/template-django-console-shell.png)
 
 - **Django-DB synchronisieren**: Führt `manage.py syncdb` in einem interaktiven Fenster aus:
 
-    ![Konsole](~/python/media/template-django-console-sync-db.png)
+    ![Konsole](media/template-django-console-sync-db.png)
 
 - **Statische erfassen**: Führt `manage.py collectstatic --noinput` aus, um alle statischen Dateien in den durch `STATIC_ROOT` angegebenen Pfad in Ihrer `settings.py` zu kopieren. Hinweis: Bei der [Veröffentlichung in Microsoft Azure](template-web.md#publishing-to-azure-app-service) werden statische Dateien automatisch als Teil des Veröffentlichungsvorgangs gesammelt.
 
-    ![Konsole](~/python/media/template-django-console-collect-static.png)
+    ![Konsole](media/template-django-console-collect-static.png)
 
 - **Überprüfen**: Führt `manage.py validate` aus, wodurch Überprüfungsfehler in den installierten Modellen gemeldet werden, die durch `INSTALLED_APPS` in Ihrer `settings.py` angegeben wurden:
 
-    ![Konsole](~/python/media/template-django-console-validate.png)
+    ![Konsole](media/template-django-console-validate.png)

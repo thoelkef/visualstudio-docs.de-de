@@ -1,12 +1,13 @@
 ---
 title: Python Interactive REPL in Visual Studio | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 4/10/2017
+ms.date: 7/13/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
+ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 642dc47e-c265-44ea-a77d-3db14170a36f
@@ -14,45 +15,32 @@ caps.latest.revision: 1
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
-ms.openlocfilehash: ca444dbe9fea25b205ae2060d462f23957368496
-ms.lasthandoff: 04/10/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: 69943d19c0eec4702285d255ce0c26defde79b1c
+ms.contentlocale: de-de
+ms.lasthandoff: 07/18/2017
 
 ---
 
 # <a name="working-with-the-python-interactive-window"></a>Arbeiten mit dem interaktiven Python-Fenster
 
-Visual Studio bietet ein interaktives „Lesen-Auswerten-Ausgeben-Schleife“-Fenster (Read Eval Print Loop, REPL) für Ihre Python-Umgebungen, das eine Verbesserung ist gegenüber dem REPL, das Sie mit der Eingabe von `python.exe` in der Befehlszeile erhalten. Im (mit den Menübefehlen **Ansicht > Weitere Fenster > Interaktives &lt;Umgebung&gt;** geöffneten) interaktiven Fenster können Sie beliebigen Python-Code eingeben und sofort Ergebnisse sehen, was Ihnen hilft, APIs kennenzulernen und mit ihnen zu experimentieren sowie interaktiven Code zu entwickeln, den Sie in Ihre Projekte einbeziehen.
+Visual Studio bietet ein interaktives „Lesen-Auswerten-Ausgeben-Schleife“-Fenster (Read Eval Print Loop, REPL) für Ihre Python-Umgebungen, das eine Verbesserung ist gegenüber dem REPL, das Sie mit der Eingabe von `python.exe` in der Befehlszeile erhalten. Im interaktiven Fenster (geöffnet mit den Befehlen **Ansicht > Weitere Fenster > &lt;Umgebung&gt; interaktive** Menübefehle) können Sie beliebigen Python-Code eingeben und sofortige Ergebnisse anzeigen lassen. Diese Art der Codierung unterstützt Sie beim Lernen und Experimentieren mit APIs und Bibliotheken und beim interaktiven Entwickeln von funktionierendem Code, den Sie in Ihre Projekte einfügen können.
 
-![Interaktives Python-Fenster](~/python/media/interactive-window.png)
+![Interaktives Python-Fenster](media/interactive-window.png)
 
 Visual Studio stellt eine Reihe von Python-REPL-Modi zur Auswahl:
 
 | REPL | Beschreibung | Bearbeiten | Debuggen | Bilder |
 | --- | --- | --- | --- | --- |
-| Standard | Standard-REPL, kommuniziert direkt mit Python | Standardbearbeitung (mehrzeilig usw.). | Ja, über `$attach` | Nein |
+| Standard | Standard-REPL, kommuniziert direkt mit Python | Standardbearbeitung (mehrzeilig usw.) | Ja, über `$attach` | Nein |
 | Debuggen | Standard-REPL, kommuniziert mit gedebuggtem Python-Prozess | Standardbearbeitung | Nur Debuggen | Nein |
 | IPython | REPL kommuniziert mit IPython-Back-End | IPython-Befehle, Pylab-Vorteile | Nein | Ja, inline in REPL |
 | IPython ohne Pylab | REPL kommuniziert mit IPython-Back-End | Standardmäßiges IPython | Nein | Ja, separates Fenster | 
 
 Dieses Thema beschreibt den **Standard**- und **Debug**-REPL-Modus. Ausführliche Informationen zu den IPython-Modi finden Sie unter [Using Python in the Interactive Window](interactive-repl-ipython.md) (Verwenden von Python im interaktiven Fenster).
 
-Eine Einführung in das interaktive Python-Fenster finden Sie unter [Getting Started with Python in Visual Studio, Part 5: Interactive REPL](https://youtu.be/yc2CROtTsC0?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (Erste Schritte mit Python in Visual Studio, Teil 5: interaktives REPL) (youtube.com, 2 Min. 51 Sek.).
+Eine detaillierte exemplarische Vorgehensweise mit Beispielen, einschließlich der Interaktionen mit dem Editor wie z.B. STRG+EINGABETASTE, finden Sie unter [Getting started - Using the interactive REPL window (Erste Schritte: Verwenden des interaktiven REPL-Fensters)](getting-started.md#using-the-interactive-repl-window). Eine Video-Einführung finden Sie unter [Getting Started with Python in Visual Studio, Part 5: Interactive REPL](https://youtu.be/yc2CROtTsC0?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (Erste Schritte mit Python in Visual Studio, Teil 5: interaktives REPL) (youtube.com, 2 Min. 51 Sek.).
 
 > [!VIDEO https://www.youtube.com/embed/yc2CROtTsC0]
 
@@ -60,42 +48,36 @@ Eine Einführung in das interaktive Python-Fenster finden Sie unter [Getting Sta
 
 Es gibt mehrere Methoden zum Öffnen des interaktiven Fensters für eine Umgebung.
 
-Erstens: Wechseln Sie zum Python-Umgebungenfenster (**Ansicht > Weitere Fenster > Python-Umgebungen** oder STRG+K,STRG+'), und wählen Sie den Befehl **Interaktives Fenster öffnen** oder eine Schaltfläche für eine ausgewählte Umgebung.
+Erstens: Wechseln Sie zum Python-Umgebungenfenster (**Ansicht > Weitere Fenster > Python-Umgebungen** oder STRG+K,STRG+'), und wählen Sie den Befehl oder die Schaltfläche **Interaktives Fenster öffnen** für eine ausgewählte Umgebung.
 
-![Link zu interaktivem Fenster in Python-Umgebungen](~/python/media/interactive-window-opening.png)
+![Link zu interaktivem Fenster in Python-Umgebungen](media/interactive-window-opening.png)
 
-Zweitens: **Ansicht > Weitere Fenster** bietet **Interaktiv**-Befehle für jede Ihrer Umgebungen, in der Regel unten im Menü:
+Zweitens: Am unteren Rand des Menüs **Anzeige > Weitere Fenster** finden Sie den Befehl „Interaktives Phyton-Fenster“ für Ihre Standardumgebung und einen Befehl, um zum Fenster „Umgebungen“ zu wechseln:
 
-![Menüelemente für interaktives Fenster in „Ansicht > Weitere Fenster“](~/python/media/interactive-window-menu.png)
+![Menüelemente für interaktives Fenster in „Ansicht > Weitere Fenster“](media/interactive-window-menu.png)
 
 Drittens: Sie können in der Startdatei Ihres Projekts – oder für eine eigenständige Datei – durch Auswahl des Menübefehls **Debuggen > [Projekt | Datei] in interaktivem Python ausführen** (UMSCHALT+Alt+5) ein interaktives Fenster öffnen:
 
-![Ausführen des Projekts im interaktiven Python-Menü](~/python/media/interactive-execute-project.png)
+![Ausführen des Projekts im interaktiven Python-Menü](media/interactive-execute-project.png)
 
 Schließlich können Sie Code in der Datei auswählen und den unten beschriebenen Befehl [An Interactive senden](#send-code-to-interactive-command) verwenden.
 
 ## <a name="interactive-window-options"></a>Optionen für das interaktive Fenster
 
-Sie können verschiedene Aspekte des interaktiven Fensters über **Interaktives Fenster konfigurieren** im Python-Umgebungenfenster oder über **Tools > Optionen > Python-Tools > Interaktive Fenster** steuern:
+Sie können verschiedene Aspekte des interaktiven Fensters über **Tools > Optionen > Python-Tools > Interaktive Fenster** (siehe [Optionen](options.md)) steuern:
 
-![Optionen für interaktives Python-Fenster](media/interactive-window-options.png)
-
-Beachten Sie, dass es auch einen separaten Satz von Optionen für das **Fenster zum interaktiven Debuggen** gibt, die das Verhalten bei Verwendung während einer Debugsitzung steuern:
-
-![Debugoptionen für interaktives Python-Fenster](media/interactive-window-debug-options.png)
+![Optionen für interaktives Python-Fenster](media/options-interactive-windows.png)
 
 ## <a name="using-the-interactive-window"></a>Verwenden des interaktiven Fensters
 
-Sobald das interaktive Fenster geöffnet ist, können Sie beginnen, Zeile für Zeile Code an der `>>>`-Eingabeaufforderung einzugeben. Das interaktive Fenster führt jede Zeile nach der Eingabe aus, Importieren von Modulen, Definieren von Variablen usw. eingeschlossen. Sie können dies in den ersten beiden Zeilen in der Abbildung unten sehen:
+Sobald das interaktive Fenster geöffnet ist, können Sie beginnen, Zeile für Zeile Code an der `>>>`-Eingabeaufforderung einzugeben. Das interaktive Fenster führt jede Zeile nach der Eingabe aus, Importieren von Modulen, Definieren von Variablen usw. eingeschlossen:
 
-![Interaktives Python-Fenster](~/python/media/interactive-window.png)
+![Interaktives Python-Fenster](media/interactive-window.png)
 
-Eine Ausnahme ist, wenn eine Anweisung mit einem Doppelpunkt endet, wie die obige `for`-Anweisung, da das interaktive Fenster weiß, dass zusätzliche Codezeilen erforderlich sind, bevor es den Codeblock richtig ausführen kann. In diesem Fall ändert sich die Eingabeaufforderungszeile in `...`, um anzugeben, dass Sie zusätzliche Zeilen für den Block eingeben müssen, wie in der obigen Grafik in der vierten und fünften Zeile dargestellt. Wenn Sie in einer leeren Zeile die EINGABETASTE drücken, schließt das interaktive Fenster den Block und führt ihn im Interpreter aus.
+Eine Ausnahme besteht, wenn zusätzliche Codezeilen benötigt werden, um eine vollständige Anweisung zu erstellen, beispielsweise wenn eine `for`-Anweisung wie oben gezeigt mit einem Doppelpunkt endet. In diesen Fällen ändert sich die Eingabeaufforderungszeile in `...`, um anzugeben, dass Sie zusätzliche Zeilen für den Block eingeben müssen, wie in der obigen Grafik in der vierten und fünften Zeile dargestellt. Wenn Sie in einer leeren Zeile die EINGABETASTE drücken, schließt das interaktive Fenster den Block und führt ihn im Interpreter aus.
 
 > [!Tip]
 > Eine Verbesserung im Vergleich zum üblichen Befehlszeilen-REPL von Python ist im interaktiven Fenster das automatische Einrücken von Anweisungen, die zum gleichen Bereich gehören. Sein Verlauf (abgerufen mit der NACH-OBEN-TASTE) bietet auch mehrzeilige Elemente, während im Befehlszeilen-REPL nur einzelne Zeilen möglich sind.
-
-Das interaktive Fenster ist eine hervorragende Möglichkeit, eine neue Bibliothek zu testen. Sie können die Bibliothek importieren und dann die untergeordneten Pakete, Klassen und Funktionen untersuchen.  Python informiert Sie über alle diese Informationen mithilfe der `help()`-Funktion.  Darüber hinaus stellt Python in Visual Studio Vorschläge und Dokumentation auf Grundlage der im Editor verwendeten Codemodellierung bereit, ohne dass dafür die Bibliothek ausgeführt werden muss.  Wenn Sie Code ausführen, verwendet Visual Studio Informationen aus der Python-Laufzeit zur Verbesserung dieser Vorschläge.  
 
 <a name="meta-commands"></a> Das interaktive Fenster unterstützt auch mehrere Metabefehle. Alle Metabefehle beginnen mit `$`, und Sie können `$help` eingeben, um eine Liste der Metabefehle abzurufen, und `$help <command>`, um nähere Informationen zur Verwendung eines bestimmten Befehls zu erhalten.
 
@@ -110,37 +92,44 @@ Das interaktive Fenster ist eine hervorragende Möglichkeit, eine neue Bibliothe
 | `$reset` | Setzt die Ausführungsumgebung auf den ursprünglichen Zustand zurück, behält jedoch den Verlauf bei. |
 | `$wait` | Wartet mindestens die angegebene Zahl von Millisekunden. |
 
-Die Befehle sind auch über MEF (das Managed Extensibility Framework für .NET) erweiterbar.
+Befehle sind auch über Visual Studio-Erweiterungen durch Implementieren und Exportieren von `IInteractiveWindowCommand` ([Beispiel](https://github.com/Microsoft/PTVS/blob/master/Python/Product/PythonTools/PythonTools/Repl/InteractiveWindowCommands.cs#L85)) erweiterbar.
 
 ## <a name="switching-scopes"></a>Wechseln von Bereichen
 
 Standardmäßig wird der Bereich des interaktiven Fensters für ein Projekt auf die Startdatei des Projekts beschränkt, als ob Sie es von der Befehlszeile aus ausführen würden. Für eine eigenständige Datei ist der Bereich auf diese Datei beschränkt. Sie können jedoch während der REPL-Sitzung jederzeit im Dropdownmenü am oberen Rand des interaktiven Fensters den Bereich wechseln:
 
-![Bereiche des interaktiven Fensters](~/python/media/interactive-scopes.png)
+![Bereiche des interaktiven Fensters](media/interactive-scopes.png)
 
-Sobald Sie ein Modul importieren, z.B. durch Eingabe von `import os`, sehen Sie in der Dropdownliste Optionen zum Wechsel in einen beliebigen Bereich dieses Moduls. Sie sehen im interaktiven Fenster auch eine Meldung, die den neuen Bereich angibt, damit Sie verfolgen können, wie ein bestimmter Zustand während einer Sitzung zustande gekommen ist.
+Sobald Sie ein Modul importieren, z.B. durch Eingabe von `import importlib`, werden in der Dropdownliste Optionen zum Wechsel in einen beliebigen Bereich dieses Moduls angezeigt. Eine Meldung im interaktiven Fenster gibt den neuen Bereich an, damit Sie verfolgen können, wie ein bestimmter Zustand während einer Sitzung zustande gekommen ist.
 
-Bei Eingabe von `dir()` in einem Bereich werden gültige Bezeichner in diesem Bereich einschließlich Funktionsnamen, Klassen und Variablen angezeigt. Bei Verwendung von `$mod importlib` gefolgt von `dir()` wird z.B. Folgendes angezeigt:
+Bei Eingabe von `dir()` in einem Bereich werden gültige Bezeichner in diesem Bereich einschließlich Funktionsnamen, Klassen und Variablen angezeigt. Bei Verwendung von `import importlib` gefolgt von `dir()` wird z.B. Folgendes angezeigt:
 
-![Interaktives Fenster im Bereich „importlib“](~/python/media/interactive-importlib-scope.png)
+![Interaktives Fenster im Bereich „importlib“](media/interactive-importlib-scope.png)
 
 <a name="sending-code-to-interactive"</a>
+
 ## <a name="send-code-to-interactive-command"></a>Befehl „An Interactive senden“
 
-Außer direkt im interaktiven Fenster zu arbeiten, können Sie im Editor Code auswählen, mit der rechten Maustaste klicken und **An Interactive senden** wählen:
+Außer direkt im interaktiven Fenster zu arbeiten, können Sie im Editor Code auswählen, mit der rechten Maustaste klicken und **An Interactive senden** wählen oder STRG+EINGABETASTE drücken.
 
-![Menübefehl „An Interactive senden“](~/python/media/interactive-send-to.png)
+![Menübefehl „An Interactive senden“](media/interactive-send-to.png)
 
-Dies ist auch zur iterativen oder evolutionären Codeentwicklung inklusive des Testens Ihres Codes während der Entwicklung nützlich. Sobald Sie einen Codeausschnitt an das interaktive Fenster gesendet und seine Ausgabe gesehen haben, können Sie z.B. die NACH-OBEN-TASTE drücken, um den Code erneut anzuzeigen, ihn ändern und schnell testen, indem Sie STRG+EINGABETASTE drücken. (Durch Drücken der EINGABETASTE am Ende der Eingabe wird diese ausgeführt. Wenn Sie aber die EINGABETASTE in der Mitte der Eingabe drücken, wird eine neue Zeile eingefügt.) Sobald Sie den gewünschten Code haben, können Sie ihn problemlos wieder in die Projektdatei kopieren.
+Dieser Befehl ist auch zur iterativen oder evolutionären Codeentwicklung inklusive des Testens Ihres Codes während der Entwicklung nützlich. Sobald Sie einen Codeausschnitt an das interaktive Fenster gesendet und seine Ausgabe gesehen haben, können Sie z.B. die NACH-OBEN-TASTE drücken, um den Code erneut anzuzeigen, ihn ändern und schnell testen, indem Sie STRG+EINGABETASTE drücken. (Durch Drücken der EINGABETASTE am Ende der Eingabe wird diese ausgeführt. Wenn Sie aber die EINGABETASTE in der Mitte der Eingabe drücken, wird eine neue Zeile eingefügt.) Sobald Sie den gewünschten Code haben, können Sie ihn problemlos wieder in die Projektdatei kopieren.
 
-Sie können auch Code auswählen, mit der rechten Maustaste klicken und **An definierendes Modul senden** wählen, worauf der interaktive Prozess durchsucht wird, um das Modul zu finden, das der aktuell bearbeiteten Datei entspricht. Wenn der Befehl das richtige Modul findet, wird der `$mod`-Metabefehl verwendet, um zu diesem Modul zu wechseln (das Teil des Sitzungsverlaufs des interaktiven Fensters wird), und fügt die Auswahl zur Evaluierung in das interaktive Fenster ein. Dies kürzt den Prozess von Kopieren von Code in den Editor, Wechseln von Bereichen im interaktiven Fenster und manuellem Einfügen ab.
+> [!Tip]
+> Visual Studio entfernt standardmäßig >>> und ... Die REPL erzeugt eine Eingabeaufforderung, wenn Code von einem interaktiven Fenster in den Editor eingefügt wird. Sie können dieses Verhalten in der Registerkarte **Tools > Optionen > Text-Editor > Python > Erweitert** mithilfe der Option **Paste removes REPL prompts** (Einfügen entfernt REPL-Eingabeaufforderungen) ändern. Siehe [Options - Miscellaneous options (Optionen: Sonstige Optionen)](options.md#miscellaneous-options).
+
+<!-- After 15.3 is released, you can also press "Undo" after pasting to restore prompts. Press "Undo" a second time to remove the pasted code entirely. -->
+
+Wenn Sie eine Codedatei als Zwischenablage verwenden, haben Sie häufiger kleine Codeblöcke, die Sie auf einmal senden möchten. Um Code zu gruppieren, markieren Sie den Code als *code cell* (Codezelle), indem Sie einen Kommentar mit `#%%` zum Anfang der Zelle hinzufügen, der die vorherige beendet. Codezellen können reduziert und erweitert werden. Das Drücken von STRG+EINGABETASTE innerhalb einer Codezelle sendet die gesamte Zelle an das interaktive Fenster und wechselt zur nächsten.
+
+Visual Studio erkennt auch Codezellen, die mit Kommentaren wie `# In[1]:` beginnen, was dem Format entspricht, das Sie beim Exportieren eines Jupyter-Notebooks als Python-Datei erhalten. Durch diese Erkennung kann ein Notebook von [Azure Notebooks (Azure-Notebooks)](https://notebooks.azure.com/) einfach ausgeführt werden, indem es als Python-Datei heruntergeladen,in Visual Studio geöffnet und anschließend STRG+EINGABETASTE gedrückt wird, um jede Zelle auszuführen.
+
+![Interaktive Codezellen](media/interactive-code-cells.png)
 
 ## <a name="intellisense-behavior"></a>IntelliSense-Verhalten
 
-Das interaktive Fenster enthält IntelliSense auf der Basis von Liveobjekten, im Gegensatz zum Code-Editor, in dem IntelliSense nur auf der Quellcodeanalyse basiert. Dadurch sind Vorschläge im interaktiven Fenster korrekter, insbesondere bei dynamisch generiertem Code. Der Nachteil besteht darin, dass Funktionen mit Nebenwirkungen (z.B. Protokollierungsmeldungen) Ihre Entwicklungserfahrung beeinträchtigen können.
+Das interaktive Fenster enthält IntelliSense auf der Basis von Liveobjekten, im Gegensatz zum Code-Editor, in dem IntelliSense nur auf der Quellcodeanalyse basiert. Diese Vorschläge im interaktiven Fenster sind korrekter, insbesondere bei dynamisch generiertem Code. Der Nachteil besteht darin, dass Funktionen mit Nebenwirkungen (z.B. Protokollierungsmeldungen) Ihre Entwicklungserfahrung beeinträchtigen können.
 
-Wenn dieses Problem auftritt, ändern Sie die Einstellungen unter **Tools > Optionen > Python-Tools > Interaktive Fenster** in der Gruppe **Vervollständigungsmodus**:
+Wenn dieses Verhalten ein Problem darstellt, ändern Sie die Einstellungen unter **Tools > Optionen > Python-Tools > Interaktive Fenster** in der Gruppe **Vervollständigungsmodus**, wie unter [Options - Interactive Windows options (Optionen: Optionen zu interaktiven Fenstern)](options.md#interactive-windows-options) beschrieben.
 
-- **Ausdrücke nie auswerten**: Normales IntelliSense-Modul wird für Vorschläge verwendet.
-- **Ausdrücke mit Aufrufen nie auswerten** (Standard): Einfache Ausdrücke wie `a.b` werden ausgewertet, aber Ausdrücke mit Aufrufen wie z.B. `a().b` verwenden das normale Modul.
-- **Ausdrücke immer auswerten**: Führt den vollständigen Ausdruck aus, um Vorschläge zu erhalten, unabhängig davon, ob Nebenwirkungen auftreten.

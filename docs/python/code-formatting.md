@@ -1,12 +1,13 @@
 ---
 title: Formatieren von Python-Code in Visual Studio | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 4/10/2017
+ms.date: 7/12/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
+ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 3d0f1631-360b-45d4-a0cb-01c3c10d25f2
@@ -14,25 +15,11 @@ caps.latest.revision: 1
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
-ms.openlocfilehash: a14bc7e8c9194fff3a1bec2739c9e9c2480e905b
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: 9d04c52a595014d06b38205913e3eb1cdd264019
 ms.contentlocale: de-de
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
@@ -43,7 +30,7 @@ Mit Visual Studio können Sie Code schnell neu formatieren, um die vorkonfigurie
 - Zum Formatieren von ausgewähltem Code wählen Sie **Bearbeiten > Erweitert > Auswahl formatieren** aus oder drücken STRG+E, F.
 - Um die gesamte Datei zu formatieren, wählen Sie **Bearbeiten > Erweitert > Dokument formatieren** oder drücken STRG+E, D.
 
-Optionen werden über **Tools > Optionen > Text-Editor > Python > Formatierung** und die zugehörigen untergeordneten Registerkarten festgelegt. Standardmäßig sind sie so festgelegt, dass sie einer Obermenge des [PEP 8-Styleguides](http://www.python.org/dev/peps/pep-0008/) entsprechen. Auf der Registerkarte **Allgemein** wird festgelegt, wann die Formatierung angewendet wird. Die drei weiteren untergeordneten Registerkarten werden in den folgenden Abschnitten erläutert.
+Optionen werden über **Tools > Optionen > Text-Editor > Python > Formatierung** und die zugehörigen geschachtelter Registerkarten festgelegt. Standardmäßig sind sie so festgelegt, dass sie einer Obermenge des [PEP 8-Styleguides](http://www.python.org/dev/peps/pep-0008/) entsprechen. Auf der Registerkarte **Allgemein** wird festgelegt, wann die Formatierung angewendet wird. Die Einstellungen der drei weiteren Registerkarten werden in diesem Thema beschrieben.
 
 Die [Python-Unterstützung in Visual Studio](installation.md) fügt dem Menü **Bearbeiten > Erweitert** auch den nützlichen Befehl [Kommentarabsatz ausfüllen](#fill-comment-paragraph-command) hinzu, wie unten beschrieben.
 
@@ -55,7 +42,7 @@ Die [Python-Unterstützung in Visual Studio](installation.md) fügt dem Menü **
 - Deaktiviert: Entfernt alle Leerzeichen.
 - Unbestimmt: Behält die ursprüngliche Formatierung bei.
 
-In den folgenden Tabellen finden Sie Beispiele für die verschiedenen Optionen.
+In den folgenden Tabellen finden Sie Beispiele für die verschiedenen Optionen:
 
 | Option für Klassendefinitionen | Aktiviert | Deaktiviert |
 | --- | --- | --- | 
@@ -99,7 +86,7 @@ In den folgenden Tabellen finden Sie Beispiele für die verschiedenen Optionen.
 
 ## <a name="statements"></a>Anweisungen
 
-**Anweisungen** steuern das automatische Neuschreiben verschiedener Anweisungen in Python-ähnlichere Formen.
+Die **Anweisungsoptionen** steuern das automatische Neuschreiben verschiedener Anweisungen in Python-ähnlichere Formen.
 
 | Option | Vor der Formatierung | Nach der Formatierung |
 | --- | --- | --- |
@@ -110,7 +97,7 @@ In den folgenden Tabellen finden Sie Beispiele für die verschiedenen Optionen.
 
 ## <a name="wrapping"></a>Umbruch
 
-Mit der Option **Umbruch** können Sie die **Maximale Breite für Kommentare** festlegen (Standardwert: 80), sodass Visual Studio beim Festlegen der Option **Umbruch für Kommentare, die die maximale Breite überschreiten** Kommentare neu formatiert, damit diese die Breite nicht überschreiten.
+Durch einen **Umbruch** können Sie die **maximale Kommentarbreite** festlegen (der Standard ist 80). Wenn die Option **Umbruch für Kommentare, die die maximale Breite überschreiten** festgelegt ist, formatiert Visual Studio Kommentare erneut, sodass sie nie maximale Breite nicht mehr überschreiten.
 
 ```python
 # Wrapped to 40 columns
@@ -127,7 +114,7 @@ Mit der Option **Umbruch** können Sie die **Maximale Breite für Kommentare** f
 
 ## <a name="fill-comment-paragraph-command"></a>Befehl „Kommentarabsatz ausfüllen“
 
-Der Befehl **Bearbeiten > Erweitert > Kommentarabsatz ausfüllen** (STRG+E, STRG+P) formatiert Kommentartext und umbricht ihn neu, indem kurze Zeilen zusammengefasst und lange Zeilen geteilt werden.
+Der Befehl **Bearbeiten > Erweitert > Kommentarabsatz ausfüllen** (STRG+E, P) formatiert Kommentartext und umbricht ihn neu, indem kurze Zeilen zusammengefasst und lange Zeilen geteilt werden.
 
 Zum Beispiel:
 
