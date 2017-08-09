@@ -18,10 +18,10 @@ manager: ghogen
 f1_keywords:
 - vs.performancecenter
 ms.translationtype: HT
-ms.sourcegitcommit: c3521e1de25854db012cb91bbe09d9463ecb42c7
-ms.openlocfilehash: af1ff0dbeeb30e6b3169c6a94dab8da50085bf20
+ms.sourcegitcommit: 3037d92e9de377ab4b306a5a0e164e29fa6659e7
+ms.openlocfilehash: 5448253ae93b82a2631e6c48495a31d2724ed0b7
 ms.contentlocale: de-de
-ms.lasthandoff: 07/21/2017
+ms.lasthandoff: 08/07/2017
 
 ---
 
@@ -30,11 +30,11 @@ Im Idealfall sollte Visual Studio immer so schnell wie möglich starten. Allerdi
 
 ## <a name="control-startup-behavior"></a>Steuern des Startverhaltens
 
-Um eine längere Startzeit zu vermeiden, werden Erweiterungen von Visual Studio 2017 nicht beim Start, sondern bei Bedarf geladen. Dieses Verhalten bedeutet, dass Erweiterungen nicht sofort nach dem Start von Visual Studio, sondern erst später und nach Bedarf geöffnet werden. Da Toolfenster, die in einer früheren Visual Studio-Sitzung offen gelassen wurden, die Startzeit verlängern können, öffnet Visual Studio Toolfenster auf intelligentere Weise, um Auswirkungen auf die Startzeit zu vermeiden.
+Um das Verlängern der Startzeit zu verhindern, vermeidet Visual Studio 2017 das Laden von Erweiterungen beim Start mithilfe von Ladevorgängen bei Bedarf. Dieses Verhalten bedeutet, dass Erweiterungen nicht sofort nach dem Start von Visual Studio, sondern erst später und nach Bedarf geöffnet werden. Da Toolfenster, die in einer früheren Visual Studio-Sitzung offen gelassen wurden, die Startzeit verlängern können, öffnet Visual Studio Toolfenster auf intelligentere Weise, um Auswirkungen auf die Startzeit zu vermeiden.
 
 Wenn Visual Studio einen langsamen Start erkennt, wird eine Popupmeldung angezeigt, die Sie auf die Erweiterung oder das Toolfenster hinweist, die bzw. das für die Verzögerung verantwortlich ist. Die Meldung enthält einen Link zum Dialogfeld **Visual Studio-Leistung verwalten**, das auch über den Menübefehl **Hilfe > Visual Studio-Leistung verwalten** geöffnet werden kann.
 
-![„Visual Studio-Leistung verwalten“ – ein Popup, das meldet, dass eine Erweiterung Visual Studio verlangsamt](~/ide/media/vside_perfdialog_popup.PNG)
+![„Visual Studio-Leistung verwalten“ – ein Popup, das meldet, dass eine Erweiterung Visual Studio verlangsamt](../ide/media/vside_perfdialog_popup.png)
 
 Im Dialogfeld werden die Erweiterungen und Toolfenster aufgelistet, die sich auf die Startleistung auswirken. In diesem Dialogfeld können Sie die Einstellungen für Erweiterungen und Toolfenster ändern, um die Leistung beim Start zu verbessern.
 
@@ -42,7 +42,7 @@ Im Dialogfeld werden die Erweiterungen und Toolfenster aufgelistet, die sich auf
 
 Sollte eine Erweiterung den Start von Visual Studio verlangsamen, wird die Erweiterung im Dialogfeld **Visual Studio-Leistung verwalten** angezeigt, wenn Sie einen der Erweiterungstypen auswählen. Das Dialogfeld zeigt, welche Erweiterungen sich auf die Leistung beim Start, beim Laden einer Lösung oder bei der Eingabe in den Editor auswirken.
 
-![„Visual Studio-Leistung verwalten“ – Ansicht der Erweiterungen](~/ide/media/vside_perfdialog_extensions.PNG)
+![„Visual Studio-Leistung verwalten“ – Ansicht der Erweiterungen](../ide/media/vside_perfdialog_extensions.png)
 
 Wenn die Auswirkungen beim Start, beim Laden einer Lösung oder bei der Eingabe nicht akzeptabel sind, deaktivieren Sie die Erweiterung für dieses Szenario, indem Sie auf die Schaltfläche **Deaktivieren** klicken. Sie können die Erweiterung jederzeit über den Erweiterungs-Manager oder das Dialogfeld „Visual Studio-Leistung verwalten“ für zukünftige Sitzungen wieder aktivieren.
 
@@ -53,7 +53,7 @@ Wenn ein Toolfenster den Start von Visual Studio verlangsamt und Sie diese Auswi
 - **Fenster beim Start nicht anzeigen:** Das angegebene Toolfenster ist beim Öffnen von Visual Studio immer geschlossen, auch dann, wenn Sie es in einer früheren Sitzung offen gelassen hatten. Sie können das Toolfenster über das entsprechende Menü öffnen.
 - **Fenster beim Start automatisch ausblenden:** Wenn ein Toolfenster in einer früheren Sitzung offen gelassen wurde, bewirkt diese Option, dass die Gruppe des Toolfensters beim Start zugeklappt ist, um die Initialisierung des Toolfensters zu verhindern. Diese Option eignet sich gut, wenn Sie ein Toolfenster häufig verwenden, da das Toolfenster trotzdem verfügbar ist, sich aber nicht mehr negativ auf die Startzeit von Visual Studio auswirkt.
 
-![„Visual Studio-Leistung verwalten“ – Ansicht des Toolfensters](~/ide/media/vside_perfdialog_toolwindows.PNG)
+![„Visual Studio-Leistung verwalten“ – Ansicht des Toolfensters](../ide/media/vside_perfdialog_toolwindows.png)
 
 Sie können die Einstellung für jedes Toolfenster jederzeit diesem Dialogfeld ändern.
 
@@ -69,7 +69,7 @@ Sie können den Lightweight-Ladevorgang für Projektmappen für die gesamte IDE 
 
 Um den Lightweight-Ladevorgang für alle Projekte und Projektmappen zu ändern, wechseln Sie zu **Extras > Optionen > Projekte und Projektmappen > Allgemein**, und wählen Sie eine der folgenden drei Ladeoptionen aus:
 
-![Dialogfeld „Extras“ | „Optionen“](~/ide/media/VSIDE_LightweightSolutionLoad.png)
+![Dialogfeld „Extras“ | „Optionen“](../ide/media/VSIDE_LightweightSolutionLoad.png)
 
 - **Visual Studio wählen lassen, was für meine Projektmappe am besten geeignet ist**: Visual Studio analysiert jede Projektmappe beim Öffnen und bestimmt so, ob der Lightweight-Ladevorgang für Projektmappen angewendet wird. 
 - **Aktivieren:** Der Lightweight-Ladevorgang für Projektmappen ist für diese Projektmappe unabhängig von der IDE-weiten Einstellung aktiviert.
@@ -77,7 +77,7 @@ Um den Lightweight-Ladevorgang für alle Projekte und Projektmappen zu ändern, 
 
 Um den Lightweight-Ladevorgang für Projektmappen für eine einzelne Projektmappe zu aktivieren, wählen Sie im Projektmappen-Explorer den Projektmappenknoten der obersten Ebene aus. Wählen Sie im Fenster **Eigenschaften** eine der Optionen **Standard**, **Aktiviert** oder **Deaktiviert** für die Eigenschaft **Lightweight-Ladevorgang**.
 
-![Projektmappen-Explorer](~/ide/media/VSIDE_LSL Solution Setting.png)
+![Projektmappen-Explorer](../ide/media/VSIDE_LSL Solution Setting.png)
 
 Sie können auch im Projektmappen-Explorer mit der rechten Maustaste auf den Projektmappenknoten der obersten Ebene klicken und eine dieser Optionen wählen: **Lightweight-Ladevorgang für Projektmappen aktivieren** (wenn das Feature derzeit deaktiviert ist) oder **Lightweight-Ladevorgang für Projektmappen deaktivieren** (wenn das Feature derzeit aktiviert ist):
 
@@ -87,7 +87,7 @@ Wenn Sie die Einstellung für den Lightweight-Ladevorgang für Projektmappen än
 
 Wenn Sie eine umfangreiche Projektmappe in Visual Studio 2017 öffnen, sehen Sie möglicherweise eine Popupmeldung, die das Aktivieren des Lightweight-Ladevorgangs für Projektmappen anbietet. Die Meldung wird nur für Projektmappen angezeigt, die viele C#-, VB- oder C++-Projekte enthalten. Wenn Sie **Aktivieren** auswählen, wird der Lightweight-Ladevorgang nur für die betreffende Projektmappe aktiviert. Die IDE-weite Einstellung ändert sich nicht.
 
-![Popupfenster](~/ide/media/VSIDE_LSL Popup.png)
+![Popupfenster](../ide/media/VSIDE_LSL Popup.png)
 
 Sie können den Lightweight-Ladevorgang für Projektmappen später im Fenster **Eigenschaften** der Projektmappe deaktivieren.
 
