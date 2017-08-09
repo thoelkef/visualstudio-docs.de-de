@@ -30,10 +30,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: fbc3a182d2c3dbceaa17685f649ea73a3e73ed85
+ms.sourcegitcommit: 11a9cee75f912c5fb31cf4a031644abe9c63d744
+ms.openlocfilehash: db500747061b436db2a0897e5b43a1cae4a3acae
 ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 06/03/2017
 
 ---
 # <a name="improve-code-quality"></a>Verbessern der Codequalität
@@ -54,8 +54,8 @@ Was ist Codequalität? Korrektheit, Wartbarkeit und sogar Eleganz spielen beim E
 |[Messen von Komplexität und Verwaltbarkeit verwalteten Codes](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Bei der Codemetrik handelt es sich um eine Reihe von Softwaremaßstäben, die Entwicklern einen besseren Einblick in den von ihnen entwickelten Code bieten. Die Metrik umfasst einen Wartbarkeitsindex für Funktionen und Klassen, die zyklomatische Komplexität von Funktionen, die Vererbungstiefe von Klassen und die Anzahl der Kopplungen von Klassen.|  
   
 ## <a name="related-scenarios"></a>Ähnliche Szenarien  
- [Nutzen von Visual Studio und Team Foundation Server für Application Lifecycle Management](assetId:///7ae9182f-4762-4bd3-b238-39ce987932e5)  
- Wenn Sie mit Visual Studio Team Foundation nicht vertraut sind, erfahren Sie mehr zu dessen Verwendung in einer Teamentwicklungsumgebung, um die Produktivität zu steigern und um die Risiken zu minimieren, die mit der Anwendungsentwicklung einhergehen.  
+ [DevOps-Übersicht für Team Services und TFS](https://www.visualstudio.com/docs/devops-alm-overview)  
+ Wenn Sie mit Visual Studio Team Foundation und Visual Studio Team Services nicht vertraut sind, erfahren Sie mehr zu deren Verwendung in einer Teamentwicklungsumgebung, um die Produktivität zu steigern und Risiken zu minimieren, die mit der Anwendungsentwicklung einhergehen.  
   
  [Analysieren und Modellieren der Architektur](../modeling/analyze-and-model-your-architecture.md)  
  Sie können [!INCLUDE[vsPreExt](../test/includes/vspreext_md.md)] verwenden, um die Herausforderungen und die Komplexität der Softwareentwicklung zu verwalten. Mit [!INCLUDE[vsPreShort](../test/includes/vspreshort_md.md)] können Sie die Anwendung visuell modellieren, sowohl im aktuellen Zustand als auch im gewünschten, künftigen Zustand. Sie können Diagramme erstellen und verwalten, die Ihnen bei der Visualisierung der logischen Modelle der Anwendung helfen und gleichzeitig eine Zuordnung zu den physischen Modellen herstellen. Dadurch sind Sie in der Lage, die im Entwurf befindliche Software zu ändern, zu überprüfen und zu analysieren.  

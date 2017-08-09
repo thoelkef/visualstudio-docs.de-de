@@ -1,43 +1,60 @@
 ---
-title: "EndTrackingContext | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "EndTrackingContext"
-apilocation: 
-  - "filetracker.dll"
-apitype: "COM"
-helpviewer_keywords: 
-  - "EndTrackingContext"
+title: EndTrackingContext | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+apiname:
+- EndTrackingContext
+apilocation:
+- filetracker.dll
+apitype: COM
+helpviewer_keywords:
+- EndTrackingContext
 ms.assetid: c2c5d794-8dc8-4594-8717-70dc79a0e75d
 caps.latest.revision: 3
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 3
----
-# EndTrackingContext
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 11a9cee75f912c5fb31cf4a031644abe9c63d744
+ms.openlocfilehash: ed89d29f5c8d2d8f3d87b1007c64344f40f7a1a9
+ms.contentlocale: de-de
+ms.lasthandoff: 06/03/2017
 
-Beenden Sie den aktuellen Nachverfolgungskontext.  
+---
+# <a name="endtrackingcontext"></a>EndTrackingContext
+Beenden des aktuellen Nachverfolgungskontexts.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT WINAPI EndTrackingContext();  
 ```  
   
-## Rückgabewert  
- Ein [HRESULT](assetId:///HRESULT?qualifyHint=False&autoUpgrade=True) mit dem [SUCCEEDED](assetId:///SUCCEEDED?qualifyHint=False&autoUpgrade=True)\-Bitsatz, wenn der Nachverfolgungskontext beendet wurde.  
+## <a name="return-value"></a>Rückgabewert  
+ Ein **HRESULT**, bei dem **SUCCEEDED** festgelegt ist, wenn der Nachverfolgungskontext beendet wurde.  
   
-## Anforderungen  
- **Kopfzeile:** FileTracker.h  
+## <a name="requirements"></a>Anforderungen  
+ **Header:** FileTracker.h  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [StartTrackingContext](../msbuild/starttrackingcontext.md)

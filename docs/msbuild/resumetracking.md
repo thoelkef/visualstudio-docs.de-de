@@ -1,43 +1,60 @@
 ---
-title: "ResumeTracking | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-apiname: 
-  - "ResumeTracking"
-apilocation: 
-  - "filetracker.dll"
-apitype: "COM"
-helpviewer_keywords: 
-  - "ResumeTracking"
+title: ResumeTracking | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+apiname:
+- ResumeTracking
+apilocation:
+- filetracker.dll
+apitype: COM
+helpviewer_keywords:
+- ResumeTracking
 ms.assetid: d637e019-7c50-4b0a-812e-bc822001e697
 caps.latest.revision: 4
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 4
----
-# ResumeTracking
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 11a9cee75f912c5fb31cf4a031644abe9c63d744
+ms.openlocfilehash: b904d3cb9039088dbaaa3dce8701a32839eb78b9
+ms.contentlocale: de-de
+ms.lasthandoff: 06/03/2017
 
+---
+# <a name="resumetracking"></a>ResumeTracking
 Setzt die Nachverfolgung im aktuellen Kontext fort.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT WINAPI ResumeTracking();  
 ```  
   
-## Rückgabewert  
- Ein [HRESULT](assetId:///HRESULT?qualifyHint=False&autoUpgrade=True) mit dem [SUCCEEDED](assetId:///SUCCEEDED?qualifyHint=False&autoUpgrade=True)\-Bitsatz, wenn die Nachverfolgung fortgesetzt wurde.  [E\_FAIL](assetId:///E_FAIL?qualifyHint=False&autoUpgrade=True) wird zurückgegeben, wenn die Nachverfolgung nicht fortgesetzt werden kann, da der Kontext nicht verfügbar war.  
+## <a name="return-value"></a>Rückgabewert  
+ Ein **HRESULT**, bei dem **SUCCEEDED** festgelegt ist, wenn die Nachverfolgung fortgesetzt wurde. **E_FAIL** wird zurückgegeben, wenn die Nachverfolgung nicht fortgesetzt werden kann, da der Kontext nicht verfügbar war.  
   
-## Anforderungen  
- **Kopfzeile:** FileTracker.h  
+## <a name="requirements"></a>Anforderungen  
+ **Header:** FileTracker.h  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [SuspendTracking](../msbuild/suspendtracking.md)

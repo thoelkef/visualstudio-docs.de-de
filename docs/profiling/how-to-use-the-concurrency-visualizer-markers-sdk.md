@@ -29,10 +29,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 1a51a8dbf28be35febf4a0954a997e542ffd0f09
-ms.openlocfilehash: a05e0509ec092f810e0990fbc838707d126595e1
+ms.sourcegitcommit: 11a9cee75f912c5fb31cf4a031644abe9c63d744
+ms.openlocfilehash: d705cd8146a0ccb43be54e2d825387699e157379
 ms.contentlocale: de-de
-ms.lasthandoff: 05/19/2017
+ms.lasthandoff: 06/03/2017
 
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Gewusst wie: Verwenden der SDK-Parallelitätsschnellansichtsmarker
@@ -113,7 +113,7 @@ Dieses Thema veranschaulicht, wie SDK-Parallelitätsschnellansichtsmarker verwen
     using Microsoft.ConcurrencyVisualizer.Instrumentation;  
     ```  
   
-3.  Fügen Sie den Code hinzu, um drei Spannen für die Standardmarkerreihe zu erstellen und eine Flag, eine Nachricht und eine Warnung für jede Spanne zu schreiben. Sie erstellen ein <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span>-Objekt, indem Sie die statische [EnterSpan](assetId:///EnterSpan?qualifyHint=False&autoUpgrade=True)-Methode aufrufen. Um in die Standardreihe zu schreiben, verwenden Sie die statischen Methoden zum Schreiben der <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>-Klasse.  
+3.  Fügen Sie den Code hinzu, um drei Spannen für die Standardmarkerreihe zu erstellen und eine Flag, eine Nachricht und eine Warnung für jede Spanne zu schreiben. Sie erstellen ein <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span>-Objekt, indem Sie die statische `EnterSpan`-Methode aufrufen. Um in die Standardreihe zu schreiben, verwenden Sie die statischen Methoden zum Schreiben der <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>-Klasse.  
   
     ```VB  
   

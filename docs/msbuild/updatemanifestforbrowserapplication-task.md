@@ -37,14 +37,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: 2a80b4c0ec826a43e768fc4f017c30536bb7c36a
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: 2f36e0635b2cc3bcb3b17f8e3ce26ebc28b9c243
+ms.contentlocale: de-de
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>UpdateManifestForBrowserApplication-Aufgabe
-Die <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication>-Aufgabe wird ausgeführt, um das **\<hostInBrowser />**-Element dem Anwendungsmanifest (*Projektname*. exe.manifest) hinzuzufügen, wenn ein [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)]-Projekt erstellt wird.  
+Der <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication>-Task wird ausgeführt, um das **\<hostInBrowser />**-Element dem Anwendungsmanifest (*projectname*.exe.manifest) hinzuzufügen, wenn ein [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)]-Projekt erstellt wird.  
   
 ## <a name="task-parameters"></a>Aufgabenparameter  
   
@@ -72,7 +73,7 @@ Die <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication>-Auf
 />  
 ```  
   
- Die <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication>-Aufgabe wird ausgeführt, wenn ein [!INCLUDE[TLA2#tla_xbap](../msbuild/includes/tla2sharptla_xbap_md.md)]-Projekt erstellt wird, um das `<hostInBrowser />`-Element hinzuzufügen.  
+ Die <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> Aufgabe wird ausgeführt, wenn ein [!INCLUDE[TLA2#tla_xbap](../msbuild/includes/tla2sharptla_xbap_md.md)] Projekt erstellt wird, um das `<hostInBrowser />` Element hinzuzufügen.  
   
 ## <a name="example"></a>Beispiel  
  Das folgende Beispiel zeigt, wie Sie sicherstellen, dass das `<hostInBrowser />` Element in einer Anwendungsmanifestdatei eingefügt wird.  
@@ -95,5 +96,5 @@ Die <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication>-Auf
  [Task Reference](../msbuild/wpf-msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
  [MSBuild Reference](../msbuild/msbuild-reference.md)  (MSBuild-Referenz)  
  [Task Reference](../msbuild/msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
- [Erstellen einer WPF-Anwendung (WPF)](http://msdn.microsoft.com/Library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
- [Übersicht über WPF-XAML-Browseranwendungen](http://msdn.microsoft.com/Library/3a7a86a8-75d5-4898-96b9-73da151e5e16)
+ [Erstellen einer WPF-Anwendung (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)   
+ [Übersicht über WPF-XAML-Browseranwendungen](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)
