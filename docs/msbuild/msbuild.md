@@ -30,10 +30,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 79d77230e46bade8e89d4503dbf95b1f1831e464
-ms.lasthandoff: 04/05/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 44e9d5e7af0994c494522a043c74046c6667abeb
+ms.openlocfilehash: 3b7d14a96683da16d1c7e6bae6a5226bfbaaa616
+ms.contentlocale: de-de
+ms.lasthandoff: 06/08/2017
 
 ---
 # <a name="msbuild"></a>MSBuild
@@ -152,7 +153,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 ###  <a name="BKMK_Tasks"></a> Aufgaben  
  Aufgaben sind Einheiten ausführbaren Codes, die in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]-Projekten zum Ausführen von Buildvorgängen verwendet werden. Eine Aufgabe kann beispielsweise Eingabedateien kompilieren oder ein externes Tool ausführen. Aufgaben können wiederverwendet werden, auch von verschiedenen Entwicklern in unterschiedlichen Projekten.  
   
- Die Ausführungslogik einer Aufgabe wird in verwaltetem Code geschrieben und [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] mithilfe des [UsingTask](../msbuild/usingtask-element-msbuild.md)-Elements zugeordnet. Sie können eine eigene Aufgabe schreiben, indem Sie einen verwalteten Typ erstellen, der die Schnittstelle <xref:Microsoft.Build.Framework.ITask> interface implementiert. Weitere Informationen zum Erstellen von Aufgaben finden Sie unter [Task Writing](../msbuild/task-writing.md) (Schreiben von Aufgaben).  
+ Die Ausführungslogik einer Aufgabe wird in verwaltetem Code geschrieben und [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] mithilfe des [UsingTask](../msbuild/usingtask-element-msbuild.md)-Elements zugeordnet. Sie können eine eigene Aufgabe schreiben, indem Sie einen verwalteten Typ erstellen, der die <xref:Microsoft.Build.Framework.ITask>-Schnittstelle implementiert. Weitere Informationen zum Erstellen von Aufgaben finden Sie unter [Task Writing](../msbuild/task-writing.md) (Schreiben von Aufgaben).  
   
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] enthält allgemeine Aufgaben, die Sie an Ihre jeweiligen Anforderungen anpassen können.  Beispiele hierfür sind [Copy](../msbuild/copy-task.md) zum Kopieren von Dateien, [MakeDir](../msbuild/makedir-task.md) zum Erstellen von Verzeichnissen und [Csc](../msbuild/csc-task.md) zum Kompilieren von Visual C#-Quellcodedateien. Eine Liste der verfügbaren Aufgaben sowie Informationen zu ihrer jeweiligen Verwendung finden Sie unter [Task Reference](../msbuild/msbuild-task-reference.md) (MSBuild-Aufgabenreferenz).  
   
@@ -224,5 +225,6 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
  [MSBuild-Referenz](../msbuild/msbuild-reference.md)  
  Links zu Themen mit Referenzinformationen.  
   
- Glossar  
+ [Glossar](msbuild-glossary.md)
  Hier werden allgemeine Begriffe zu MSBuild definiert.
+

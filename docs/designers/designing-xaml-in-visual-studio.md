@@ -1,7 +1,7 @@
 ---
 title: Entwerfen von XAML-Code in Visual Studio | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 7/17/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -13,31 +13,23 @@ caps.latest.revision: 4
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: e832941dd00fa81bea1566f17504fe7e27c41a48
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: 535cd67469897e84a749e3e1c58c2695ddddd006
 ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 # <a name="designing-xaml-in-visual-studio"></a>Entwerfen von XAML-Code in Visual Studio
-Visual Studio und Blend für Visual Studio sind visuelle Tools zum Erstellen ansprechender Benutzeroberflächen und Rich-Media-Umgebungen für XAML-basierte Windows-Desktop-, Web-, [Windows Phone](http://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx)- und [Windows Store](http://msdn.microsoft.com/library/windows/apps/jj129478.aspx) -Apps. Beide Dienste verwenden einen gemeinsamen Satz Entwurf und Toolfenster sowie nd einen XAML-Editor, Blend für Visual Studio bietet jedoch zusätzliche Entwurfstools für fortgeschrittene Aufgaben, wie z. B. Animation und Verhaltensweisen.  
+
+Visual Studio und Blend für Visual Studio sind visuelle Tools zum Erstellen ansprechender Benutzeroberflächen und Rich-Media-Umgebungen mit XAML für eine Vielzahl von App-Typen. Beide Tools verwenden einen gemeinsamen Satz an Features, einschließlich eines visuellen XAML-Editors. Blend für Visual Studio bietet jedoch zusätzliche Entwurfstools für fortgeschrittene Aufgaben, wie z. B. Animation und Verhaltensweisen.  
   
+Der Entwurfsprozess einer App hängt von dem Tool, das Sie auswählen und Ihrer Zielplattform ab. Dieses Thema vergleicht die Verwendung von XAML-Entwurfstools in Visual Studio und Blend für Visual Studio. Eine detailliertere exemplarische Vorgehensweise zur Verwendung der Tools finden Sie in den folgenden Themen:
+
+- [Erstellen einer Benutzeroberfläche mit dem XAML-Designer in Visual Studio](creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
+- [Erstellen einer Benutzeroberfläche mit Blend für Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md)
+- [Create Modern Desktop Applications with Windows Presentation Foundation (Erstellen von modernen Desktopanwendungen mit Windows Presentation Foundation)](create-modern-desktop-applications-with-windows-presentation-foundation.md)
+
 ## <a name="choosing-the-right-tool"></a>Auswählen des richtigen Tools  
  Die Auswahl des Entwurfstools ist im Wesentlichen abhängig von Ihren Fähigkeiten. Wenn Sie eher codeorientiert sind, können Sie XAML-Code in Visual Studio schreiben, um selbst fortschrittliche Entwurfsaufgaben zu erledigen. Sind Sie eher designorientiert, können Sie mit Blend für Visual Studio erweiterte Aufgaben ausführen, ohne Code schreiben zu müssen.  
   
@@ -48,7 +40,7 @@ Visual Studio und Blend für Visual Studio sind visuelle Tools zum Erstellen ans
   
 -   **Eine einheitliche Benutzeroberfläche:** Sie können Ihre Anwendungen innerhalb der vertrauten Umgebung der Visual Studio-Benutzeroberfläche entwickeln, was den Wechsel zwischen den IDEs zu einem angenehmeren und produktiveren Erlebnis macht. Blend für Visual Studio nutzt das „dunkle Design“ von Visual Studio, mit dem Sie sich durch eine Optimierung des Kontrasts zwischen Ihren Inhalten und der Benutzeroberfläche besser auf die entwickelten Inhalte konzentrieren können. Informationen hierzu finden Sie unter [Creating a UI by using XAML Designer (Erstellen einer Benutzeroberfläche mit XAML-Designer)](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).  
   
-     ![Die Blend-IDE für Visual Studio](~/designers/media/blendide.png "BlendIDE")  
+     ![Die Blend-IDE für Visual Studio](../designers/media/blendide.png "BlendIDE")  
   
 -   **XAML IntelliSense:** Beide IDEs unterstützen alle gemeinsamen Funktionen, die Sie von IntelliSense erwarten würden, einschließlich einer Anweisungsvervollständigung, der Unterstützung für gemeinsame Editoraktionen, wie z. B. Kommentieren und Formatieren von Code sowie die Navigation zu Ressourcen, zur Bindung und zum Code.  
   
@@ -58,7 +50,7 @@ Visual Studio und Blend für Visual Studio sind visuelle Tools zum Erstellen ans
   
      ![Oberfläche für erneutes Laden einer Datei](../designers/media/blendfilereload.png "BlendFileReload")  
   
--   **Synchronisiert Layouts und Einstellungen:** Mit benutzerdefinierten Layouts können Sie Anpassungen des Tool-Fensterlayouts speichern und anwenden. Visual Studio synchronisiert diese Anpassungen und Einstellungen sowohl für Visual Studio als auch für Blend für Visual Studio computerübergreifend, wenn Sie sich bei demselben Microsoft-Konto anmelden. Siehe [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+-   **Synchronisiert Layouts und Einstellungen:** Mit benutzerdefinierten Layouts können Sie Anpassungen des Tool-Fensterlayouts speichern und anwenden. Visual Studio synchronisiert diese Anpassungen und Einstellungen sowohl für Visual Studio als auch für Blend für Visual Studio computerübergreifend, wenn Sie sich bei demselben Microsoft-Konto anmelden. Weitere Informationen finden Sie unter [Personalisieren der Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
 -   **ein gemeinsamer Projektmappen-Explorer:** Der Projektmappen-Explorer bietet eine strukturierte Ansicht für Ihre Projekte und Ihre Dateien sowie einen schnellen Zugriff auf die zugehörigen Befehle. Mit dem Projektmappen-Explorer ist es einfacher, mit großen Firmenprojekten zu arbeiten. Informationen hierzu finden Sie unter [Solutions and Projects (Projektmappen und Projekte)](../ide/solutions-and-projects-in-visual-studio.md).  
   

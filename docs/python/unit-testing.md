@@ -1,12 +1,13 @@
 ---
 title: "Komponententests für Python in Visual Studio | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 5/8/2017
+ms.date: 7/13/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
+ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f3ad6523-5a4e-4209-8977-adc2da305df2
@@ -14,43 +15,29 @@ caps.latest.revision: 1
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
-ms.openlocfilehash: 2597583912c7694495617c53839f41aa13cda871
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: 04937d3cd1a16e0be90305221850e691c8d18c50
 ms.contentlocale: de-de
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
 # <a name="setting-up-unit-testing-for-python-code"></a>Einrichten von Komponententests für Python-Code
 
-Komponententests sind Codeelemente, die andere Codeeinheiten in einer Anwendung testen, in der Regel isolierte Funktionen, Klassen usw. Wenn eine Anwendung alle Komponententests besteht, können Sie sich zumindest darauf verlassen, dass die Funktionalität im Detail korrekt ist.
+Komponententests sind Codeelemente, die andere Codeeinheiten in einer Anwendung testen, in der Regel isolierte Funktionen, Klassen usw. Wenn eine Anwendung alle Unittests besteht, können Sie sich zumindest darauf verlassen, dass die Funktionalität im Detail korrekt ist.
 
-In Python werden Komponententests ausgiebig zum Überprüfen von Szenarien beim Entwurf eines Programms verwendet. Die Python-Unterstützung in Visual Studio umfasst das Ermitteln, Ausführen und Debuggen von Komponententests im Kontext Ihres Entwicklungsprozesses, sodass sie nicht separat ausgeführt werden müssen.
+In Python werden Komponententests ausgiebig zum Überprüfen von Szenarien beim Entwurf eines Programms verwendet. Die Python-Unterstützung in Visual Studio umfasst das Ermitteln, Ausführen und Debuggen von Unittests im Kontext Ihres Entwicklungsprozesses, sodass sie nicht separat ausgeführt werden müssen.
 
 Dieses Thema enthält eine kurze Übersicht über die Komponententestfunktionen in Visual Studio mit Python. Weitere Informationen zu Komponententests im Allgemeinen finden Sie unter [Komponententest für Code](../test/unit-test-your-code.md).
 
 ## <a name="discovering-and-viewing-tests"></a>Ermitteln und Anzeigen von Tests
 
-Gemäß der Konvention erkennt Visual Studio Tests als Methoden, deren Namen mit „Test“ beginnen. Um dies zu untersuchen, führen Sie die folgenden Schritte aus:
+Konventionell erkennt Visual Studio Tests als Methoden, deren Namen mit `test` beginnen. Um dieses Verhalten zu sehen, führen Sie die folgenden Schritte aus:
 
 1. Öffnen Sie ein in Visual Studio geladenes [Python-Projekt](python-projects.md), klicken Sie mit der rechten Maustaste auf Ihr Projekt, wählen Sie **Hinzufügen > Neues Element**, und wählen Sie dann **Python-Komponententest**, gefolgt von **Hinzufügen**.
 
-1. Hierdurch wird eine Datei „test1.py“ mit Code erstellt, der das `unittest`-Standardmodul importiert, eine Testklasse aus `unittest.TestCase` ableitet und `unittest.main()` aufruft, wenn Sie das Skript direkt ausführen:
+1. Durch diese Aktion wird `test1.py file with code that imports the standard `unittest` module, derives a test class from `unittest.TestCase`, and invokes `unittest.main()` erstellt, wenn Sie das Skript direkt ausführen:
 
   ```python
   import unittest
@@ -65,13 +52,13 @@ Gemäß der Konvention erkennt Visual Studio Tests als Methoden, deren Namen mit
 
 1. Speichern Sie die Datei bei Bedarf, und öffnen Sie dann den Test-Explorer mit dem Menübefehl **Test > Windows > Test-Explorer**.
 
-1. Der Test-Explorer durchsucht Ihr Projekt auf Tests und zeigt diese wie unten dargestellt an. Durch Doppelklicken auf einen Test wird dessen Quelldatei geöffnet.
+1. Der Text-Explorer durchsucht Ihr Projekt nach Tests und zeigt diese wie unten veranschaulicht an. Durch Doppelklicken auf einen Test wird dessen Quelldatei geöffnet.
 
-    ![Test-Explorer mit Anzeige des Standardtests „test_A“](~/python/media/unit-test-A.png)
+    ![Test-Explorer mit Anzeige des Standardtests „test_A“](media/unit-test-A.png)
 
 1. Wenn Sie Ihrem Projekt weitere Tests hinzufügen, können Sie die Ansicht im Test-Explorer über das Menü „Gruppieren nach“ auf der Symbolleiste organisieren:
 
-    ![Symbolleistenmenü „Gruppieren nach“ im Test-Explorer](~/python/media/unit-test-group-menu.png)
+    ![Symbolleistenmenü „Gruppieren nach“ im Test-Explorer](media/unit-test-group-menu.png)
 
 1. Sie können auch Text in das Suchfeld eingeben, um Tests nach Namen zu filtern.
 
@@ -89,27 +76,27 @@ Tests werden im Hintergrund ausgeführt, und der Test-Explorer aktualisiert den 
 
 - Erfolgreiche Tests werden mit einem grünen Häkchen markiert, und die zum Ausführen des Tests erforderliche Zeit wird angezeigt:
 
-    ![Status „Erfolgreich“ für test_A](~/python/media/unit-test-A-pass.png)
+    ![Status „Erfolgreich“ für test_A](media/unit-test-A-pass.png)
 
 - Fehlerhafte Tests werden mit einem roten Kreuz markiert und mit einem Link **Ausgabe** versehen, unter dem die Konsolenausgabe und die `unittest`-Ausgabe aus dem Testlauf angezeigt wird:
 
-    ![Status „Fehlerhaft“ für test_A](~/python/media/unit-test-A-fail.png)
+    ![Status „Fehlerhaft“ für test_A](media/unit-test-A-fail.png)
 
-    ![Fehlerhafter test_A mit Grund](~/python/media/unit-test-A-fail-reason.png)
+    ![Fehlerhafter test_A mit Grund](media/unit-test-A-fail-reason.png)
 
 ## <a name="debugging-tests"></a>Debuggen von Tests
 
-Da Komponententests Codeteile sind, können sie genau wie jeder andere Code Fehler aufweisen und müssen gelegentlich in einem Debugger ausgeführt werden, in dem Sie Breakpoints festlegen, Variablen untersuchen und den Code schrittweise durchlaufen können. Visual Studio bietet auch Diagnosetools.
+Da Unittests Codeteile sind, können sie genau wie jeder andere Code Fehler aufweisen und müssen gelegentlich in einem Debugger ausgeführt werden. Im Debugger können Sie Haltepunkte setzen, Variablen untersuchen und Code durchlaufen. Visual Studio bietet auch Diagnosetools für Unittests.
 
 Um mit dem Debuggen zu beginnen, legen Sie einen anfänglichen Haltepunkt im Code fest, klicken Sie im Test-Explorer mit der rechten Maustaste auf den Test (oder eine Auswahl), und wählen Sie **Ausgewählte Tests debuggen**. Visual Studio startet den Python-Debugger auf dieselbe Weise wie für Anwendungscode.
 
-![Debuggen eines Tests](~/python/media/unit-test-debugging.png)
+![Debuggen eines Tests](media/unit-test-debugging.png)
 
 Je nach Visual Studio-Version können Sie auch die Befehle **Code Coverage für ausgewählte Tests analysieren** und **Profiltest** verwenden. (Informationen finden Sie in der [Featurematrix](python-in-visual-studio.md#features-matrix).)
 
 ### <a name="known-issues"></a>Bekannte Probleme
 
-- Beim Starten des Debugvorgangs scheint Visual Studio das Debuggen zu starten und zu beenden und dann erneut zu starten. Dabei handelt es sich um das erwartete Verhalten.
+- Beim Starten des Debugvorgangs scheint Visual Studio das Debuggen zu starten und zu beenden und dann erneut zu starten. Dies ist ein erwartetes Verhalten.
 - Beim Debuggen mehrerer Tests wird jeder Test jeweils unabhängig durchgeführt, wodurch die Debugsitzung unterbrochen wird.
-- Gelegentlich kann Visual Studio einen Test beim Debuggen nicht starten. In der Regel führt der erneute Versuch zum Debuggen des Tests zum Erfolg.
+- Gelegentlich kann Visual Studio einen Test beim Debuggen nicht starten. In der Regel ist das erneute Debuggen des Tests erfolgreich.
 - Beim Debuggen ist beim Test ein Rücksprung in die `unittest`-Implementierung möglich. Normalerweise wird der nächste Schritt bis zum Ende des Programms ausgeführt und das Debuggen beendet.

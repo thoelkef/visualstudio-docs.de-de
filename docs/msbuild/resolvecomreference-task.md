@@ -1,84 +1,101 @@
 ---
-title: "ResolveComReference Task | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/msbuild/2003#ResolveComReference"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "MSBuild, ResolveCOMReference task"
-  - "ResolveCOMReference task [MSBuild]"
+title: ResolveCOMReference-Task | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#ResolveComReference
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- MSBuild, ResolveCOMReference task
+- ResolveCOMReference task [MSBuild]
 ms.assetid: c9bf5fcf-6453-40ea-b50f-a212adc3e9b5
 caps.latest.revision: 26
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 26
----
-# ResolveComReference Task
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 11a9cee75f912c5fb31cf4a031644abe9c63d744
+ms.openlocfilehash: 2448ac7c838c9ee1a22e7923e130688d24c398f0
+ms.contentlocale: de-de
+ms.lasthandoff: 06/03/2017
 
-Erstellt eine Liste mit mindestens einem Typbibliotheknamen oder mindestens einer TLB\-Datei und löst die Typbibliotheken in Speicherorten auf dem Datenträger auf.  
+---
+# <a name="resolvecomreference-task"></a>ResolveComReference-Aufgabe
+Akzeptiert eine Liste aus mindestens einem Typbibliotheksnamen oder mindestens einer TLB-Datei und löst diese Bibliotheken an Speicherorten auf Datenträgern auf  
   
-## Parameter  
- In der folgenden Tabelle werden die Parameter der `ResolveCOMReference`\-Aufgabe beschrieben.  
+## <a name="parameters"></a>Parameter  
+ In der folgenden Tabelle werden die Parameter der `ResolveCOMReference`-Aufgabe beschrieben.  
   
-|Parameter|Description|  
+|Parameter|Beschreibung|  
 |---------------|-----------------|  
-|`DelaySign`|Optionaler `Boolean`\-Parameter.<br /><br /> Wenn der Wert `true` lautet, fügt die Aufgabe den öffentlichen Schlüssel in die Assembly ein.  Lautet der Wert `false`, signiert die Aufgabe die Assembly vollständig.|  
-|`EnvironmentVariables`|Optionaler `String[]`\-Parameter.<br /><br /> Array von Paaren von Umgebungsvariablen, durch Gleichheitszeichen getrennt.  Diese Variablen werden an die erzeugte tlbimp.exe und aximp.exe übergeben, neben dem regulären Umgebungsblock oder diesen selektiv überschreibend.|  
-|`ExecuteAsTool`|Optionaler `Boolean`\-Parameter.<br /><br /> Wenn `true`, werden tlbimp.exe und aximp.exe vom entsprechenden Ziel\-Framework\-Out\-of\-Proc ausgeführt, um die erforderlichen Wrapperassemblys zu generieren.  Dieser Parameter ermöglicht Festlegung von Zielversionen.|  
-|`IncludeVersionInInteropName`|Optionaler `Boolean`\-Parameter.<br /><br /> Bei `true` wird die Typelib\-Version in den Wrappernamen aufgenommen.  Der Standardwert ist `false`.|  
-|`KeyContainer`|Optionaler `String`\-Parameter.<br /><br /> Gibt einen Behälter mit einem Paar aus öffentlichem und privatem<br /><br /> Schlüsselpaar.|  
-|`KeyFile`|Optionaler `String`\-Parameter.<br /><br /> Gibt ein Element mit einem Paar aus öffentlichem und privatem<br /><br /> Schlüsselpaar.|  
-|`NoClassMembers`|Optionaler `Boolean`\-Parameter.|  
-|`ResolvedAssemblyReferences`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`\-Ausgabeparameter.<br /><br /> Gibt die aufgelösten Assemblyverweise an.|  
-|`ResolvedFiles`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`\-Ausgabeparameter.<br /><br /> Gibt die vollqualifizierten Dateien auf dem Datenträger an, die mit den physikalischen Speicherorten der Typbibliotheken übereinstimmen, die bei dieser Aufgabe eingegeben wurden.|  
-|`ResolvedModules`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`\-Parameter.|  
-|`SdkToolsPath`|Optionaler [String](assetId:///String?qualifyHint=False&autoUpgrade=True)\-Parameter.<br /><br /> Wenn `ExecuteAsTool` gleich `true` ist, muss dieser Paramete auf den Pfad der SDK\-Tools für die Zielframeworkversion festgelegt werden.|  
-|`StateFile`|Optionaler assetId:///String?qualifyHint=False&autoUpgrade=True\-Parameter.<br /><br /> Gibt die Cachedatei für Timestamps von COM\-Komponenten an.  Falls nicht vorhanden, werden bei jedem Lauf alle Wrapper neu generiert.|  
-|`TargetFrameworkVersion`|Optionaler assetId:///String?qualifyHint=False&autoUpgrade=True\-Parameter.<br /><br /> Gibt die Zielframeworkversion für das Projekt an.<br /><br /> Der Standardwert ist `String.Empty`.  d. h., die Verweise werden nicht anhand des Zielframeworks gefiltert.|  
-|`TargetProcessorArchitecture`|Optionaler assetId:///String?qualifyHint=False&autoUpgrade=True\-Parameter.<br /><br /> Gibt die bevorzugte Architektur des Zielprozessors an.  Wird nach der Übersetzung an das \/machine\-Flag von tlbimp.exe übergeben.<br /><br /> Der Wert des Parameters sollte ein Member von <xref:Microsoft.Build.Utilities.ProcessorArchitecture> sein.|  
-|`TypeLibFiles`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`\-Parameter.<br /><br /> Gibt den Dateipfad der Typbibliothek für COM\-Verweise an.  Die Elemente in diesem Parameter enthalten möglicherweise Elementmetadaten.  Weitere Informationen finden Sie im Abschnitt "TypeLibFiles\-Elementmetadaten" weiter unten.|  
-|`TypeLibNames`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`\-Parameter.<br /><br /> Gibt die aufzulösenden Typbibliotheknamen an.  Die Elemente in diesem Parameter müssen einige Elementmetadaten enthalten.  Weitere Informationen finden Sie im Abschnitt "TypeLibNames\-Elementmetadaten" weiter unten.|  
-|`WrapperOutputDirectory`|Optionaler `String`\-Parameter.<br /><br /> Die Position auf dem Datenträger, an der die generierte Interop\-Assembly gespeichert ist.  Wenn diese Elementmetadaten nicht angegeben sind, verwendet die Aufgabe den absoluten Pfad des Verzeichnisses, in dem sich die Projektdatei befindet.|  
+|`DelaySign`|Optionaler `Boolean` -Parameter.<br /><br /> Legt den öffentlichen Schlüssel in der Assembly ab, wenn der Wert `true` ist Signiert die Assembly vollständig, wenn der Wert `false` ist|  
+|`EnvironmentVariables`|Optionaler `String[]` -Parameter.<br /><br /> Ein Array von Paaren von Umgebungsvariablen; durch Gleichheitszeichen getrennt. Diese Variablen werden an die erstellten „tlbimp.exe“ und „aximp.exe“ zusätzlich zum regulären Umgebungsblock oder zum ausgewählten Überschreiben übergeben.|  
+|`ExecuteAsTool`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, werden „tlbimp.exe“ und „aximp.exe“ von dem entsprechenden Zielframework aus prozessextern ausgeführt, um die erforderlichen Wrapperassemblys zu generieren. Dieser Parameter ermöglicht Multi-Targeting.|  
+|`IncludeVersionInInteropName`|Optionaler `Boolean` -Parameter.<br /><br /> Die typelib-Version enthält den Wrappernamen, wenn der Wert `true` ist. Die Standardeinstellung ist `false`.|  
+|`KeyContainer`|Optionaler `String` -Parameter.<br /><br /> Gibt einen Container an, der ein Paar aus<br /><br /> privatem und öffentlichem Schlüssel enthält.|  
+|`KeyFile`|Optionaler `String` -Parameter.<br /><br /> Gibt ein Element an, das ein Paar aus<br /><br /> privatem und öffentlichem Schlüssel enthält.|  
+|`NoClassMembers`|Optionaler `Boolean`-Parameter.|  
+|`ResolvedAssemblyReferences`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Gibt die aufgelösten Assemblyverweise an|  
+|`ResolvedFiles`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Gibt die vollqualifizierten Dateien auf Datenträger an, die den physischen Speicherorten der Typbibliotheken entsprechen, die für diesen Task als Eingabe bereitgestellt wurden.|  
+|`ResolvedModules`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`Parameter.|  
+|`SdkToolsPath`|Optionaler <xref:System.String?displayProperty=fullName> -Parameter.<br /><br /> Wenn `ExecuteAsTool` `true` ist, muss dieser Parameter auf den Pfad der SDK-Tools für die Zielframeworkversion festgelegt werden.|  
+|`StateFile`|Optionaler `String` -Parameter.<br /><br /> Gibt die Cachedatei für die Zeitstempel von COM-Komponenten an. Falls nicht vorhanden, erstellt jede Ausführung alle Wrapper neu.|  
+|`TargetFrameworkVersion`|Optionaler `String` -Parameter.<br /><br /> Gibt die Zielframeworkversion des Projekts an.<br /><br /> Die Standardeinstellung ist `String.Empty`. Was bedeutet, dass nicht nach einem Verweis auf Grundlage des Zielframeworks gefiltert werden kann.|  
+|`TargetProcessorArchitecture`|Optionaler `String` -Parameter.<br /><br /> Gibt die bevorzugte Zielprozessorarchitektur an. Wird nach der Übersetzung an das Flag „tlbimp.exe“/„Computer“ übergeben.<br /><br /> Der Parameterwert sollte ein Member des Typs <xref:Microsoft.Build.Utilities.ProcessorArchitecture> sein.|  
+|`TypeLibFiles`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Parameter.<br /><br /> Gibt den Typbibliothek-Dateipfad zu COM-Verweisen an. In diesem Parameter enthaltene Elemente können Elementmetadaten enthalten. Weitere Informationen finden Sie im Abschnitt „Elementmetadaten“ weiter unten.|  
+|`TypeLibNames`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Parameter.<br /><br /> Gibt die aufzulösenden Typbibliotheksnamen an. In diesem Parameter enthaltene Elemente müssen einige Elementmetadaten enthalten. Weitere Informationen finden Sie im Abschnitt „TypeLibNames-Elementmetadaten“ weiter unten.|  
+|`WrapperOutputDirectory`|Optionaler `String` -Parameter.<br /><br /> Der Speicherort auf dem Datenträger für die generierte Interop-Assembly. Wenn diese Elementmetadaten nicht angegeben werden, verwendet der Task den absoluten Pfad des Verzeichnisses, in dem sich die Projektdatei befindet.|  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
   
-## TypeLibNames\-Elementmetadaten  
- In der folgenden Tabelle werden die verfügbaren Elementmetadaten für die an den `TypeLibNames`\-Parameter übergebenen Elemente beschrieben.  
+## <a name="typelibnames-item-metadata"></a>TypeLibNames-Elementmetadaten  
+ In der folgenden Tabelle werden die Elementmetadaten beschrieben, die für an den `TypeLibNames`-Parameter übergebene Elemente zur Verfügung stehen.  
   
-|Metadaten|Description|  
-|---------------|-----------------|  
-|`GUID`|Erforderliche Elementmetadaten.<br /><br /> Die GUID für die Typbibliothek.  Wenn diese Elementmetadaten nicht angegeben werden, kann die Aufgabe nicht ausgeführt werden.|  
-|`VersionMajor`|Erforderliche Elementmetadaten.<br /><br /> Die Hauptversion der Typbibliothek.  Wenn diese Elementmetadaten nicht angegeben werden, kann die Aufgabe nicht ausgeführt werden.|  
-|`VersionMinor`|Erforderliche Elementmetadaten.<br /><br /> Die Nebenversion der Typbibliothek.  Wenn diese Elementmetadaten nicht angegeben werden, kann die Aufgabe nicht ausgeführt werden.|  
-|`LocaleIdentifier`|Optionale Elementmetadaten.<br /><br /> Der Gebietsschemabezeichner \(oder LCID\) für die Typbibliothek.  Dieser wird als 32\-Bit\-Wert festgelegt, mit dem die von einem Benutzer, in einer Region oder einer Anwendung bevorzugte Sprache angegeben wird.  Wenn diese Elementmetadaten nicht angegeben werden, verwendet die Aufgabe den Standard\-Gebietsschemabezeichner "0".|  
-|`WrapperTool`|Optionale Elementmetadaten.<br /><br /> Gibt das Wrappertool an, das zum Generieren des Assemblywrappers für diese Typbibliothek verwendet wird.  Wenn diese Elementmetadaten nicht angegeben werden, verwendet die Aufgabe das Standardwrappertool "tlbimp".  Folgende Optionen von typelibs können ausgewählt werden. Dabei muss die Groß\- und Kleinschreibung beachtet werden.<br /><br /> -   `Primary`: Über dieses Wrappertool können Sie eine bereits generierte primäre Interop\-Assembly für die COM\-Komponente verwenden.  Geben Sie bei Verwendung des Wrappertools kein Wrapperausgabeverzeichnis an, da dadurch Fehler beim Ausführen der Aufgabe auftreten.<br />-   `TLBImp`: Über dieses Wrappertool können Sie eine Interop\-Assembly für die COM\-Komponente generieren.<br />-   `AXImp`: Verwenden Sie dieses Wrappertool, wenn Sie eine Interop\-Assembly für ein ActiveX\-Steuerelement generieren möchten.|  
+|Metadaten|Beschreibung|  
+|--------------|-----------------|  
+|`GUID`|Erforderliche Elementmetadaten<br /><br /> Die GUID für die Typbibliothek. Wenn diese Elementmetadaten nicht festgelegt sind, schlägt der Task fehl.|  
+|`VersionMajor`|Erforderliche Elementmetadaten<br /><br /> Die Hauptversion der Typbibliothek Wenn diese Elementmetadaten nicht festgelegt sind, schlägt der Task fehl.|  
+|`VersionMinor`|Erforderliche Elementmetadaten<br /><br /> Die Nebenversion der Typbibliothek Wenn diese Elementmetadaten nicht festgelegt sind, schlägt der Task fehl.|  
+|`LocaleIdentifier`|Optionale Elementmetadaten<br /><br /> Der Gebietsschemabezeichner (oder LCID) für die Typbibliothek Dieser wird als 32-Bit-Wert angegeben, der die Sprache identifiziert, die von einem Benutzer, einer Region oder eine Anwendung bevorzugt wird. Wenn diese Elementmetadaten nicht festgelegt sind, verwendet der Task den Standard-Gebietsschemabezeichner „0“ (null).|  
+|`WrapperTool`|Optionale Elementmetadaten<br /><br /> Gibt das Wrappertool an, das verwendet wird, um den Assemblywrapper für diese Typbibliothek zu generieren. Wenn diese Elementmetadaten nicht festgelegt sind, verwendet der Task das Standardwrappertool „tlbimp“. Die verfügbaren Optionen von Typbibliotheken, die die Groß-/Kleinschreibung nicht beachten, sind:<br /><br /> -   `Primary`: Verwenden Sie dieses Wrappertool, wenn Sie eine bereits generierte primäre Interopassembly für die COM-Komponente verwenden möchten. Wenn Sie dieses Wrappertool verwenden, geben Sie kein Wrapperausgabeverzeichnis an, weil der Task ansonsten fehlschlägt.<br />-   `TLBImp`: Verwenden Sie dieses Wrappertoll, wenn Sie eine Interopassembly für die COM-Komponente generieren möchten.<br />-   `AXImp`: Verwenden Sie dieses Wrappertoll, wenn Sie eine Interopassembly für ein ActiveX-Steuerelement generieren möchten.|  
   
-## TypeLibFiles\-Elementmetadaten  
- In der folgenden Tabelle werden die verfügbaren Elementmetadaten für die an den `TypeLibFiles`\-Parameter übergebenen Elemente beschrieben.  
+## <a name="typelibfiles-item-metadata"></a>TypeLibFiles-Elementmetadaten  
+ In der folgenden Tabelle werden die Elementmetadaten beschrieben, die für an den `TypeLibFiles`-Parameter übergebene Elemente zur Verfügung stehen.  
   
-|Metadaten|Description|  
-|---------------|-----------------|  
-|`WrapperTool`|Optionale Elementmetadaten.<br /><br /> Gibt das Wrappertool an, das zum Generieren des Assemblywrappers für diese Typbibliothek verwendet wird.  Wenn diese Elementmetadaten nicht angegeben werden, verwendet die Aufgabe das Standardwrappertool "tlbimp".  Folgende Optionen von typelibs können ausgewählt werden. Dabei muss die Groß\- und Kleinschreibung beachtet werden.<br /><br /> -   `Primary`: Über dieses Wrappertool können Sie eine bereits generierte primäre Interop\-Assembly für die COM\-Komponente verwenden.  Geben Sie bei Verwendung des Wrappertools kein Wrapperausgabeverzeichnis an, da dadurch Fehler beim Ausführen der Aufgabe auftreten.<br />-   `TLBImp`: Über dieses Wrappertool können Sie eine Interop\-Assembly für die COM\-Komponente generieren.<br />-   `AXImp`: Verwenden Sie dieses Wrappertool, wenn Sie eine Interop\-Assembly für ein ActiveX\-Steuerelement generieren möchten.|  
+|Metadaten|Beschreibung|  
+|--------------|-----------------|  
+|`WrapperTool`|Optionale Elementmetadaten<br /><br /> Gibt das Wrappertool an, das verwendet wird, um den Assemblywrapper für diese Typbibliothek zu generieren. Wenn diese Elementmetadaten nicht festgelegt sind, verwendet der Task das Standardwrappertool „tlbimp“. Die verfügbaren Optionen von Typbibliotheken, die die Groß-/Kleinschreibung nicht beachten, sind:<br /><br /> -   `Primary`: Verwenden Sie dieses Wrappertool, wenn Sie eine bereits generierte primäre Interopassembly für die COM-Komponente verwenden möchten. Wenn Sie dieses Wrappertool verwenden, geben Sie kein Wrapperausgabeverzeichnis an, weil der Task ansonsten fehlschlägt.<br />-   `TLBImp`: Verwenden Sie dieses Wrappertoll, wenn Sie eine Interopassembly für die COM-Komponente generieren möchten.<br />-   `AXImp`: Verwenden Sie dieses Wrappertoll, wenn Sie eine Interopassembly für ein ActiveX-Steuerelement generieren möchten.|  
   
 > [!NOTE]
->  Je mehr Informationen Sie zur eindeutigen Erkennung einer Typbibliothek eingeben, desto größer ist die Wahrscheinlichkeit, dass die Aufgabe die korrekte Datei auf dem Datenträger auflöst.  
+>  Je mehr Informationen Sie zur Verfügung stellen, um eine Typbibliothek eindeutig identifizieren zu können, desto wahrscheinlicher ist es, dass der Task in die korrekten Dateien auf dem Datenträger auflöst.  
   
-## Hinweise  
- Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Utilities.Task>\-Klasse.  Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [Task Base Class](../msbuild/task-base-class.md).  
+## <a name="remarks"></a>Hinweise  
+ Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Utilities.Task>-Klasse. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [Taskbasisklasse](../msbuild/task-base-class.md).  
   
-## Siehe auch  
- [Tasks](../msbuild/msbuild-tasks.md)   
- [Task Reference](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>Siehe auch  
+ [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
+ [Task Reference](../msbuild/msbuild-task-reference.md) (MSBuild-Aufgabenreferenz)

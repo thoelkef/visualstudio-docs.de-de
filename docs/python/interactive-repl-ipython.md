@@ -1,12 +1,13 @@
 ---
 title: IPython-REPL in Visual Studio | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 7/13/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
+ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c9bd06b0-2021-4e55-b933-8346476224a8
@@ -14,61 +15,32 @@ caps.latest.revision: 1
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 7d726441c2d6953bd7b50451bec7fff05d5d71b0
-ms.openlocfilehash: 9c0c0124ed508eff8621f946a40c0dda520bc05b
-ms.lasthandoff: 03/10/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: 9553aa4944f652c7b8505b0d99d5c2b88167f872
+ms.contentlocale: de-de
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="using-python-in-the-interactive-window"></a>Verwenden von Python im interaktiven Fenster
+# <a name="using-ipython-in-the-interactive-window"></a>Verwenden von IPython im interaktiven Fenster
 
-Das interaktive Visual Studio-Fenster im IPython-Modus ist eine erweiterte, dennoch benutzerfreundliche interaktive Entwicklungsumgebung, die über Interactive Parallel Computing-Features verfügt. In diesem Thema behandeln wir die Verwendung von IPython im interaktiven Visual Studio-Fenster. Hierfür muss die [Anaconda](https://www.continuum.io)-Umgebung installiert sein, die IPython und die benötigten Bibliotheken enthält.
+Das interaktive Visual Studio-Fenster im IPython-Modus ist eine erweiterte, dennoch benutzerfreundliche interaktive Entwicklungsumgebung, die über Interactive Parallel Computing-Features verfügt. Dieses Thema führt Sie durch die Verwendung von IPython im interaktiven Visual Studio-Fenster. In diesem sind alle regulären Funktionen von [interactive windows (interaktiven Fenster)](interactive-repl.md) ebenfalls verfügbar.
+
+Für diese exemplarische Vorgehensweise muss die [Anaconda](https://www.continuum.io)-Umgebung installiert sein, die IPython und die benötigten Bibliotheken enthält.
 
 > [!Note]
-> IronPython unterstützt IPython nicht, obwohl Sie es auf dem Formular „Interactive-Optionen“ auswählen können. Sie können für die [Funktionsanforderung](https://github.com/Microsoft/PTVS/issues/84) stimmen oder es bei Bedarf implementieren.
+> IronPython unterstützt IPython nicht, obwohl Sie es auf dem Formular „Interactive-Optionen“ auswählen können. Weitere Informationen finden Sie unter [feature request](https://github.com/Microsoft/PTVS/issues/84) (Funktionsanforderungen).
 
-1. Stellen Sie sicher, dass das IPython-Paket ordnungsgemäß installiert ist, indem Sie in Ihrem Python-Installationsverzeichnis IPython im Pylab-Modus starten:
+1. Öffnen Sie Visual Studio, wechseln Sie zum Fenster der Python-Umgebungen (**Ansicht > Weitere Fenster > Python-Umgebungen**), und wählen Sie die Python-Umgebung, die beim Starten von IPython angezeigt wurde.
 
-  ```bash
-  ipython --pylab
-  ```
+1. Sehen sie sich die Registerkarte **Packages** (Pakete) (oder **pip**) an und stellen Sie sicher, dass `IPython` und `matplotlib` aufgeführt sind. Wenn dies nicht der Fall ist, installieren Sie sie hier.
 
-1. Geben Sie Folgendes ein:
+1. Wählen Sie die Registerkarte **Overview** (Übersicht) und klicken Sie auf **Use IPython interactive mode** (Interaktiven IPython-Modus verwenden). (In Visual Studio 2015 klicken Sie auf **Configure interactive options** (Interaktive Optionen konfigurieren), um den Dialog **Optionen** zu öffnen, setzen den **Interactive Mode** (Interaktiven Modus) auf IPython, und klicken dann auf **OK**).    
 
-  ```python
-  x = linspace(0, 5, 10)
-  y = x ** 2
-  plot(x, y, 'r')
-  ```
+1. Wählen Sie **Open interactive window** (Interaktives Fenster öffnen), um das interaktive Fenster im IPython-Modus aufzurufen. Sie müssen das Fenster eventuell zurücksetzen, wenn Sie gerade den interaktiven Modus geändert haben. Gegebenenfalls müssen Sie die EINGABETASTE drücken, wenn lediglich eine >>>-Eingabeaufforderung angezeigt wird.
 
-1. Wenn alles richtig konfiguriert ist, sollte etwa Folgendes angezeigt werden:
-
-    ![Ausgabe der IPython-Konfiguration ](~/python/media/ipython-repl-01.png)
-
-1. Öffnen Sie Visual Studio, wechseln Sie zum Fenster der Python-Umgebungen (**Ansicht > Weitere Fenster > Python-Umgebungen**), und wählen Sie die Python-Umgebung.
-1. Prüfen Sie, ob auf der **Pip**-Registerkarte `IPython` und `matplotlib` aufgelistet sind. Wenn dies nicht der Fall ist, installieren Sie sie hier.
-1. Wählen Sie die Registerkarte **Übersicht**, wählen Sie **Interaktive Optionen konfigurieren**, legen Sie für **Interaktiver Modus** „IPython“ fest, und wählen Sie **OK**:
-
-    ![Festlegen des interaktiven Modus auf IPython](~/python/media/ipython-repl-02.png)
-
-1. Wählen Sie **Interaktives Fenster öffnen**, um das interaktive Fenster im IPython-Modus mit PyLab aufzurufen. Möglicherweise müssen Sie das Fenster zurücksetzen, wenn Sie gerade den interaktiven Modus geändert haben:
-
-    ![Das interaktive Fenster im IPython-Modus](~/python/media/ipython-repl-03.png)
+    ![Das interaktive Fenster im IPython-Modus](media/ipython-repl-03.png)
 
 1. Geben Sie den folgenden Code ein:
 
@@ -80,9 +52,9 @@ Das interaktive Visual Studio-Fenster im IPython-Modus ist eine erweiterte, denn
 
 1. Nach Eingabe der letzten Zeile sollte ein Inlinediagramm angezeigt werden (dessen Größe Sie bei Bedarf ändern können, indem Sie an der unteren rechten Ecke ziehen).
 
-    ![Inlinediagramm im interaktiven Fenster](~/python/media/ipython-repl-04.png)
+    ![Inlinediagramm im interaktiven Fenster](media/ipython-repl-04.png)
 
-1. Statt in REPL einzugeben, können Sie Code im Editor schreiben, ihn auswählen, mit der rechten Maustaste klicken und den Befehl **An Interactive senden** (STRG+E,E) wählen. Versuchen Sie, den folgenden Code in den Editor einzufügen, indem sie ihn mit STRG+A auswählen und dann an das interaktive Fenster senden. (Beachten Sie: Wenn Visual Studio Code an das interaktive Fenster sendet, wird er als Einheit gesendet, um zu vermeiden, dass Sie temporäre oder teilweise Diagramme erhalten.)
+1. Statt in REPL einzugeben, können Sie Code im Editor schreiben, ihn auswählen, mit der rechten Maustaste klicken und den Befehl **Send to interactive** (An Interactive senden) wählen ( oder STRG+EINGABETASTE drücken). Versuchen Sie, den folgenden Code in eine neue Datei im Editor einzufügen, indem sie ihn mit STRG+A auswählen und dann an das interaktive Fenster senden. (Beachten Sie: Visual Studio sendet den Code als Einheit, um zu vermeiden, dass Sie temporäre oder teilweise Diagramme erhalten. Beachten Sie auch, dass Visual Studio ein interaktives Fenster für die Umgebung öffnet, die im **Python Environments** (Python-Umgebungen)-Fenster als Standardeinstellung festgelegt ist, wenn Sie gerade kein Python-Projekt mit einer anderen Umgebung geöffnet haben.
 
     ```python
     from mpl_toolkits.mplot3d import Axes3D
@@ -105,15 +77,15 @@ Das interaktive Visual Studio-Fenster im IPython-Modus ist eine erweiterte, denn
     plt.show()
     ```
 
-    ![Senden von Code aus dem Editor an das interaktive Fenster](~/python/media/ipython-repl-05.png)
+    ![Senden von Code aus dem Editor an das interaktive Fenster](media/ipython-repl-05.png)
 
 1. Um die Diagramme außerhalb des interaktiven Fensters anzuzeigen, führen Sie den Code stattdessen mit dem Befehl **Debuggen > Starten ohne Debugging** aus.
     
-1. IPython verfügt über eine Reihe nützlicher Features, wie z.B. Escapevorgang zur Shell des Betriebssystems, Variablenersetzung, Ausgabenerfassung. Weitere Informationen finden Sie im IPython-Referenzhandbuch:
+IPython verfügt über viele weitere nützliche Features, wie z.B. Escapevorgang zur Shell des Betriebssystems, Variablenersetzung, Ausgabenerfassung usw. Weitere Informationen finden Sie in der [IPython documentation (IPython Dokumentation)](http://ipython.org/documentation.html).
 
-    ![Escapevorgang zur Shell des Betriebssystems](~/python/media/ipython-repl-06.png)
+## <a name="related-topics"></a>Verwandte Themen
 
-1. Sie können IPython auch im „Notebook“-Modus verwenden, wo Sie jeden beliebigen Browser unter einem beliebigen Betriebssystem als Canvas verwenden können. Das Back-End-IPython-Modul kann sich lokal auf Ihrem Computer oder einem Remotecomputer befinden. Azure bietet Unterstützung zur Ausführung von [IPython auf einer Windows- oder Linux-VM](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-jupyter-notebook). In der [Azure-Notebooks-Vorschau](https://notebooks.azure.com) finden Sie auch kostenlose Jupyter Notebooks als Dienst in Azure:
+- Wenn Sie Jupyter einfach und ohne Installation verwenden möchten, testen Sie den [Azure Notebooks hosted service (gehosteten Azure-Dienst für Notebooks)](https://notebooks.azure.com/), um Ihre Notebooks zu verwalten und mit anderen zu teilen.
 
-    ![IPython-Notebook-Modus](~/python/media/ipython-repl-07.png)
+- Sie können Jupyter (ehemals IPython) auch auf Ihrem eigenen virtuellen Computer (Windows oder Linux) auf Azure ausführen. Weitere Informationen finden Sie unter [Creating an Azure VM. installing Jupyter, and running Jupyter Notebook on Azure (Erstellen einer Azure-VM, Installieren von Jupyter und Ausführen von Jupyter-Notebook in Azure)](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-jupyter-notebook).
 

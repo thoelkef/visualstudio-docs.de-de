@@ -34,10 +34,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: baf1e18c56587b071aaa25fd522e3aa1b27a0b30
+ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
+ms.openlocfilehash: caa4a551c437a6d0479ff1a6fdd5526c6837721a
 ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 06/30/2017
 
 ---
 # <a name="memory-usage-without-the-debugger"></a>Speicherauslastung ohne Debuggen
@@ -98,10 +98,10 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
   
 |||  
 |-|-|  
-|![Schritt 1](~/profiling/media/procguid_1.png "ProcGuid_1")|Der Text des Links zeigt die Gesamtzahl der Bytes im Speicher zum Zeitpunkt der Momentaufnahme.<br /><br /> Wählen Sie diesen Link, um einen Bericht über Momentaufnahmendetails anzuzeigen, der nach der Gesamtgröße der Typinstanzen geordnet ist.|  
-|![Schritt 2](~/profiling/media/procguid_2.png "ProcGuid_2")|Der Text des Links zeigt die Gesamtzahl der Objekte im Speicher zum Zeitpunkt der Momentaufnahme.<br /><br /> Wählen Sie diesen Link, um einen Bericht über Momentaufnahmendetails anzuzeigen, der nach der Anzahl der Typinstanzen geordnet ist.|  
-|![Schritt 3](~/profiling/media/procguid_3.png "ProcGuid_3")|Der Text des Links zeigt den Unterschied zwischen der Gesamtgröße der Objekte im Speicher zum Zeitpunkt dieser Momentaufnahme und der Gesamtgröße der vorhergehenden Momentaufnahme.<br /><br /> Er zeigt eine positive Zahl, wenn die Speichergröße dieser Momentaufnahme größer ist als die der vorhergehenden, und eine negative Zahl, wenn die Speichergröße kleiner ist. Der Linktext **Baseline** weist darauf hin, dass diese Momentaufnahme die erste in dieser Diagnosesitzung ist, **No Difference** bedeutet, dass die Differenz null ist.<br /><br /> Wählen Sie diesen Link, um einen Bericht über Momentaufnahmenunterschiede anzuzeigen, der nach den Unterschieden in der Gesamtgröße der Typinstanzen geordnet ist.|  
-|![Schritt 4](~/profiling/media/procguid_4.png "ProcGuid_4")|Der Text des Links zeigt den Unterschied zwischen der Gesamtzahl an Speicherobjekten in dieser Momentaufnahme und der Zahl der Objekte in der vorhergehenden Momentaufnahme.<br /><br /> Wählen Sie diesen Link, um einen Bericht über Momentaufnahmenunterschiede anzuzeigen, der nach den Unterschieden in der Gesamtzahl der Typinstanzen geordnet ist.|  
+|![Schritt 1](../profiling/media/procguid_1.png "ProcGuid_1")|Der Text des Links zeigt die Gesamtzahl der Bytes im Speicher zum Zeitpunkt der Momentaufnahme.<br /><br /> Wählen Sie diesen Link, um einen Bericht über Momentaufnahmendetails anzuzeigen, der nach der Gesamtgröße der Typinstanzen geordnet ist.|  
+|![Schritt 2](../profiling/media/procguid_2.png "ProcGuid_2")|Der Text des Links zeigt die Gesamtzahl der Objekte im Speicher zum Zeitpunkt der Momentaufnahme.<br /><br /> Wählen Sie diesen Link, um einen Bericht über Momentaufnahmendetails anzuzeigen, der nach der Anzahl der Typinstanzen geordnet ist.|  
+|![Schritt 3](../profiling/media/procguid_3.png "ProcGuid_3")|Der Text des Links zeigt den Unterschied zwischen der Gesamtgröße der Objekte im Speicher zum Zeitpunkt dieser Momentaufnahme und der Gesamtgröße der vorhergehenden Momentaufnahme.<br /><br /> Er zeigt eine positive Zahl, wenn die Speichergröße dieser Momentaufnahme größer ist als die der vorhergehenden, und eine negative Zahl, wenn die Speichergröße kleiner ist. Der Linktext **Baseline** weist darauf hin, dass diese Momentaufnahme die erste in dieser Diagnosesitzung ist, **No Difference** bedeutet, dass die Differenz null ist.<br /><br /> Wählen Sie diesen Link, um einen Bericht über Momentaufnahmenunterschiede anzuzeigen, der nach den Unterschieden in der Gesamtgröße der Typinstanzen geordnet ist.|  
+|![Schritt 4](../profiling/media/procguid_4.png "ProcGuid_4")|Der Text des Links zeigt den Unterschied zwischen der Gesamtzahl an Speicherobjekten in dieser Momentaufnahme und der Zahl der Objekte in der vorhergehenden Momentaufnahme.<br /><br /> Wählen Sie diesen Link, um einen Bericht über Momentaufnahmenunterschiede anzuzeigen, der nach den Unterschieden in der Gesamtzahl der Typinstanzen geordnet ist.|  
   
 ##  <a name="BKMK_Snapshot_reports"></a> Momentaufnahmenberichte  
  ![Speicherauslastung Snapshot-Bericht](../profiling/media/memuse_snapshotreport_all.png "MEMUSE_SnapshotReport_All")  
@@ -220,7 +220,5 @@ Sie können das Tool **Speicherverwendung** ohne Debuggen verwenden, um die folg
 |**Inklusive Größe (Bytes)**|Die Größe der Objekte in der primären Momentaufnahme einschließlich der Größe der in den Objekten enthaltenen Objekte.|  
   
 ## <a name="see-also"></a>Siehe auch  
- [JavaScript-Speicher](../profiling/javascript-memory.md)
- [Profilerstellungstools](../profiling/profiling-tools.md)
- [Bewährte Methoden zur Leistungssteigerung für Windows Store-Apps mit C++, C# und Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
+ [JavaScript-Memory](../profiling/javascript-memory.md) [Profilerstellung in Visual Studio](../profiling/index.md) [Tour zur Profilerstellungsfunktion in Visual Studio](../profiling/profiling-feature-tour.md) [Bewährte Methoden zur Leistungssteigerung für Windows Store-Apps mit C++, C# und Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
  [Diagnosing memory issues with the new Memory Usage Tool in Visual Studio (Diagnostizieren von Speicherproblemen mithilfe des neuen Speicherauslastungstools in Visual Studio)](http://go.microsoft.com/fwlink/p/?LinkId=394706)

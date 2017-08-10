@@ -33,10 +33,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 17fd26b26e25c31772adf4b8629852256317968c
+ms.sourcegitcommit: 9713f09b7379b14b9362e3853a910948935c501e
+ms.openlocfilehash: 6a45db14ee055c4fbdf738cf36df503a4a1fffd0
 ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 05/31/2017
 
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild-Toolset (ToolsVersion)
@@ -68,9 +68,9 @@ MSBuild verwendet ein Toolset von Aufgaben, Zielen und Tools für die Erstellung
   
  Das Attribut `ToolsVersion` wird auch für die Projektmigration verwendet. Wenn Sie beispielsweise ein Visual Studio 2008-Projekt in Visual Studio 2010 öffnen, wird die Projektdatei so aktualisiert, dass die ToolsVersion="4.0" enthalten ist. Wenn Sie anschließend versuchen, das Projekt in Visual Studio 2008 zu öffnen, erkennt es nicht die aktualisierte `ToolsVersion` und erstellt das Projekt daher so, als wäre das Attribut noch auf 3.5 festgelegt.  
   
- Visual Studio 2010 und Visual Studio 2012 verwenden beide die ToolsVersion 4.0. Visual Studio 2013 verwendet die ToolsVersion 12.0. In vielen Fällen können Sie das Projekt in allen drei Versionen von Visual Studio ohne Änderung öffnen. Visual Studio verwendet immer das korrekte Toolset, Sie erhalten jedoch eine Benachrichtigung, wenn die verwendete Version nicht mit der Version in der Projektdatei übereinstimmt. In fast allen Fällen hat diese Warnung keine Auswirkungen, da die Toolsets meistens kompatibel sind.  
+ Visual Studio 2010 und Visual Studio 2012 verwenden beide die ToolsVersion 4.0. Visual Studio 2013 verwendet die ToolsVersion 12.0. Visual Studio 2015 verwendet ToolsVersion 14.0 und Visual Studio 2017 ToolsVersion 15.0. In vielen Fällen können Sie das Projekt in mehreren Versionen von Visual Studio ohne Änderung öffnen. Visual Studio verwendet immer das korrekte Toolset, Sie erhalten jedoch eine Benachrichtigung, wenn die verwendete Version nicht mit der Version in der Projektdatei übereinstimmt. In fast allen Fällen hat diese Warnung keine Auswirkungen, da die Toolsets meistens kompatibel sind.  
   
- Mithilfe von Unter-Toolsets, die weiter unten in diesem Thema beschrieben werden, kann MSBuild je nach Kontext, in dem der Build ausgeführt wird, automatisch zwischen den Toolsets wechseln. Beispielsweise verwendet MSBuild in Visual Studio 2012 automatisch ein neueres Toolset als in Visual Studio 2010, ohne dass die Projektdatei explizit geändert werden muss. Weitere Informationen finden Sie unter [Bewirken, dass benutzerdefinierte Projekte versionsfähig werden](../misc/making-custom-projects-version-aware.md).  
+ Mithilfe von Unter-Toolsets, die weiter unten in diesem Thema beschrieben werden, kann MSBuild je nach Kontext, in dem der Build ausgeführt wird, automatisch zwischen den Toolsets wechseln. Beispielsweise verwendet MSBuild in Visual Studio 2012 automatisch ein neueres Toolset als in Visual Studio 2010, ohne dass die Projektdatei explizit geändert werden muss.  
   
 ## <a name="toolset-implementation"></a>Toolsetimplementierung  
  Sie implementieren ein Toolset, indem Sie die Pfade der verschiedenen Tools, Ziele und Aufgaben auswählen, die das Toolset ausmachen. Die Tools im Toolset, das von MSBuild definiert wird, stammen aus den folgenden Quellen:  
@@ -134,3 +134,4 @@ MSBuild verwendet ein Toolset von Aufgaben, Zielen und Tools für die Erstellung
 ## <a name="see-also"></a>Siehe auch  
  [Standardmäßige und benutzerdefinierte Toolsetkonfigurationen](../msbuild/standard-and-custom-toolset-configurations.md)   
  [Festlegen von Zielversionen](../msbuild/msbuild-multitargeting-overview.md)
+

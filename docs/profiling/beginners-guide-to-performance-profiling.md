@@ -34,11 +34,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 90b2481b0ec4f9387fe3a2c0b733a103e8c03845
-ms.openlocfilehash: 36770fe6fad52e33144f382446d7e851734f87c5
+ms.translationtype: HT
+ms.sourcegitcommit: 5c28e68b89f6583dc35a91b275693c11e0259dfd
+ms.openlocfilehash: 6e4094925eec3e4a8768219180e75fa9d1f1fa03
 ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 07/13/2017
 
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>Einführung in die Leistungsprofilerstellung
@@ -47,6 +47,8 @@ Sie können Visual Studio-Profilerstellungstools verwenden, um Leistungsprobleme
 Wenn der Debugger angehalten wird, sammelt das Tool **CPU-Auslastung** Informationen zu den in der Anwendung ausgeführten Funktionen. Das Tool listet auch die Funktionen auf, die Aufgaben ausgeführt haben. Außerdem wird ein Zeitachsendiagramm zur Verfügung gestellt, das Sie verwenden können, um sich auf bestimmte Segmente der Samplingsitzung zu konzentrieren.
 
 Der Diagnosehub bietet Ihnen viele weitere Optionen zum Ausführen und Verwalten Ihrer Diagnosesitzung. Wenn Sie von **CPU-Auslastung** nicht die benötigten Daten erhalten, stehen andere [Profiling Tools (Profilerstellungstools)](../profiling/Profiling-Tools.md) zur Verfügung, um andere Arten von hilfreichen Informationen zu erhalten. In vielen Fällen kann der Leistungsengpass Ihrer Anwendung durch etwas anderes als die CPU ausgelöst werden, z.B. durch den Speicher, das Rendern der Benutzeroberfläche oder die Anforderungszeit des Netzwerks. Der Diagnosehub bietet Ihnen viele andere Optionen zum Aufzeichnen und Analysieren dieser Art von Daten.
+
+Sie können sich auch ein [Video zum Verwenden von Diagnosetools (in englischer Sprache)](#video) anschauen, in dem Sie erfahren, wie Sie die CPU-Auslastung und die Speicherauslastung analysieren.
 
 Dieses Thema behandelt die Analyse der CPU-Auslastung in einem normalen Debuggingworkflow. Sie können die CPU-Auslastung auch ohne Debugger analysieren, oder indem Sie eine ausgeführte App als Ziel setzen. Weitere Informationen finden Sie unter [Run profiling tools without debugging (Profilerstellungstools ohne Debuggen ausführen)](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
   
@@ -63,7 +65,7 @@ Dieses Thema behandelt die Analyse der CPU-Auslastung in einem normalen Debuggin
 
 4.  Mithilfe der Einstellung **Auswahltools** auf der Symbolleiste können Sie auswählen, ob Sie die **CPU-Auslastung**, [Speicherauslastung](../profiling/Memory-Usage.md) oder beides anzeigen möchten. Wenn Sie Visual Studio Enterprise ausführen, können Sie auch IntelliTrace unter **Extras / Optionen / IntelliTrace** aktivieren oder deaktivieren.
 
-     ![Anzeigen von Diagnosetools](~/profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
+     ![Anzeigen von Diagnosetools](../profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
 
      Wir werden hauptsächlich die CPU-Auslastung betrachten, stellen Sie also sicher, dass **CPU-Auslastung** aktiviert ist (ist standardmäßig aktiviert).
 
@@ -71,7 +73,7 @@ Dieses Thema behandelt die Analyse der CPU-Auslastung in einem normalen Debuggin
 
      Wenn das Laden der Anwendung abgeschlossen ist, wird die Zusammenfassungsansicht der Diagnosetools angezeigt.
 
-     ![Zusammenfassung Diagnosetools](~/profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
+     ![Zusammenfassung Diagnosetools](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
 
      Weitere Informationen zu den Ereignissen finden Sie unter [Start Debugging (Suchen und Filtern auf der Registerkarte „Ereignisse“ im Fenster „Diagnosetools“)](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).
 
@@ -79,7 +81,7 @@ Dieses Thema behandelt die Analyse der CPU-Auslastung in einem normalen Debuggin
 
 7.  Aktivieren Sie während der Debugger angehalten wird die Sammlung von CPU-Auslastungsdaten, und öffnen Sie anschließend die Registerkarte **CPU-Auslastung**.
 
-     ![Diagnosetool CPU-Profilerstellung aktivieren](~/profiling/media/DiagToolsEnableCPUProfiling.png "DiagToolsEnableCPUProfiling")
+     ![Diagnosetool CPU-Profilerstellung aktivieren](../profiling/media/DiagToolsEnableCPUProfiling.png "DiagToolsEnableCPUProfiling")
 
      Wenn Sie **CPU-Profilerstellung aktivieren** auswählen, beginnt Visual Studio, Ihre Funktionen und die für die Ausführung benötigte Zeit aufzuzeichnen. Sie können diese gesammelten Daten nur anzeigen lassen, wenn Ihre Anwendung an einem Haltepunkt angehalten wird.
 
@@ -89,15 +91,15 @@ Dieses Thema behandelt die Analyse der CPU-Auslastung in einem normalen Debuggin
 
 9.  Wählen Sie die Region aus, die Sie in der CPU-Zeitachse analysieren möchten (es muss sich um eine Region handeln, die Profilerstellungsdaten anzeigt).
 
-     ![Diagnosetools Auswahl eines Zeitsegments](~/profiling/media/DiagToolsSelectTimeSegment.png "DiagToolsSelectTimeSegment")
+     ![Diagnosetools Auswahl eines Zeitsegments](../profiling/media/DiagToolsSelectTimeSegment.png "DiagToolsSelectTimeSegment")
 
      Der Profiler beginnt, Threaddaten vorzubereiten. Warten Sie, bis dieser Vorgang abgeschlossen ist.
 
-     ![Diagnosetools Threads Vorbereiten](~/profiling/media/DiagToolsPreparingThreads.png "DiagToolsPreparingThreads")
+     ![Diagnosetools Threads Vorbereiten](../profiling/media/DiagToolsPreparingThreads.png "DiagToolsPreparingThreads")
   
      Das CPU-Auslastungstool zeigt den Bericht unter der Registerkarte **CPU-Auslastung** an.
   
-     ![Diagnosetools Registerkarte CPU-Auslastung](~/profiling/media/DiagToolsCPUUsageTab.png "DiagToolsCPUUsageTab")
+     ![Diagnosetools Registerkarte CPU-Auslastung](../profiling/media/DiagToolsCPUUsageTab.png "DiagToolsCPUUsageTab")
 
      An diesem Punkt können Sie beginnen, die Daten zu analysieren.
 
@@ -107,7 +109,7 @@ Beginnen Sie bei der Datenanalyse am besten mit der Liste der Funktionen unter �
 
 1. Untersuchen Sie in der Liste der Funktionen die Funktionen, die am meisten Aufgaben ausführen.
 
-    ![Diagnosetools CPU-Auslastung Liste der Funktionen](~/profiling/media/DiagToolsCPUUsageFunctionList.png "DiagToolsCPUUsageFunctionList")
+    ![Diagnosetools CPU-Auslastung Liste der Funktionen](../profiling/media/DiagToolsCPUUsageFunctionList.png "DiagToolsCPUUsageFunctionList")
 
     > [!TIP]
     > Die Auflistung der Funktionen beginnt mit der Funktion, die die meisten Aufgaben ausführt (sie sind nicht in der Reihenfolge der Aufrufe gelistet). Dadurch können Sie schnell feststellen, welche Funktionen am längsten ausgeführt werden.
@@ -116,7 +118,7 @@ Beginnen Sie bei der Datenanalyse am besten mit der Liste der Funktionen unter �
 
     Wenn Sie auf eine Funktion doppelklicken, öffnet sich die Ansicht **Aufrufer/Aufgerufener** im linken Bereich. 
 
-    ![Diagnosetools Ansicht Aufrufer-Aufgerufener](~/profiling/media/DiagToolsCallerCallee.png "DiagToolsCallerCallee")
+    ![Diagnosetools Ansicht Aufrufer-Aufgerufener](../profiling/media/DiagToolsCallerCallee.png "DiagToolsCallerCallee")
 
     In dieser Ansicht erscheint die ausgewählte Funktion in der Überschrift und im Feld **Aktuelle Funktion** ( in diesem Beispiel „GetNumber“). Die Funktion, die die aktuelle Funktion aufgerufen hat, wird links unter **Calling Function** (Aufrufende Funktion) angezeigt, und alle Funktionen, die von der aktuellen Funktion aufgerufen wurden werden im Feld **Called Functions** (Aufgerufene Funktionen) auf der rechten Seite angezeigt. (Sie können beide Felder auswählen, um die aktuelle Funktion zu ändern.)
 
@@ -131,7 +133,7 @@ Beginnen Sie bei der Datenanalyse am besten mit der Liste der Funktionen unter �
  
     Jeder nummerierte Bereich in der Abbildung bezieht sich auf einen Schritt in der Prozedur.
   
-    ![Diagnosetools Aufrufstruktur](~/profiling/media/DiagToolsCallTree.png "DiagToolsCallTree")
+    ![Diagnosetools Aufrufstruktur](../profiling/media/DiagToolsCallTree.png "DiagToolsCallTree")
   
 |||
 |-|-|
@@ -154,7 +156,7 @@ Externer Code umfasst Funktionen in System- und Frameworkkomponenten, die vom Co
   
 Wenn Sie die Aufrufpfade von externem Code anzeigen möchten, wählen Sie aus der Liste **Filteransicht** die Option **Externen Code anzeigen** und dann **Übernehmen**aus.  
   
-![Filteransicht auswählen, dann Externen Code anzeigen](~/profiling/media/DiagToolsShowExternalCode.png "DiagToolsShowExternalCode")  
+![Filteransicht auswählen, dann Externen Code anzeigen](../profiling/media/DiagToolsShowExternalCode.png "DiagToolsShowExternalCode")  
   
 Achten Sie darauf, dass viele externe Codeaufrufketten tief verschachtelt sind, sodass die Breite der Spalte mit dem Funktionsnamen die Anzeigebreite aller außer sehr großer Computerbildschirme überschreiten kann. In diesem Fall werden Funktionsnamen als **[…]** angezeigt.
   
@@ -162,8 +164,12 @@ Verwenden Sie das Suchfeld, um nach einem gewünschten Knoten zu suchen, und ver
 
 > [!TIP]
 > Vergewissern Sie sich bei der Profilerstellung für externen Code, von dem Windows-Funktionen aufgerufen werden, dass Sie über die neuesten .pdb-Dateien verfügen. Ohne diese Dateien werden in den Berichtsansichten kryptische und schwer verständliche Namen von Windows-Funktionen aufgeführt. Weitere Informationen zum Sicherstellen, dass Sie über die erforderlichen Dateien verfügen, finden Sie unter [Specify Symbol (.pdb) and Source Files in the Debugger (Symbol- (.pdb) und Quelldateien im Debugger angeben)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+
+## <a name="video"></a> Sehen Sie sich ein Video zu den Diagnosetools an
+
+<div style="padding-top: 56.25%; position: relative; width: 100%;">
+<iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171" frameborder="0" allowfullscreen></iframe>
+</div>
   
 ## <a name="see-also"></a>Siehe auch  
- [[Speicherauslastung](../profiling/memory-usage.md)
-</ph> [CPU-Auslastung](../profiling/cpu-usage.md)
-<ph id=" [Profilerstellungstools](../profiling/profiling-tools.md)
+ [[Speicherauslastung](../profiling/memory-usage.md) [CPU-Auslastung](../profiling/cpu-usage.md) [Profilerstellung in Visual Studio](../profiling/index.md) [Tour zur Profilerstellungsfunktion](../profiling/profiling-feature-tour.md)

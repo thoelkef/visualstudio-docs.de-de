@@ -1,52 +1,69 @@
 ---
-title: "ResolveNativeReference Task | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/msbuild/2003#ResolveNativeReference"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "MSBuild, ResolveNativeReference task"
-  - "ResolveNativeReference task [MSBuild]"
+title: ResolveNativeReference-Task | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#ResolveNativeReference
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- MSBuild, ResolveNativeReference task
+- ResolveNativeReference task [MSBuild]
 ms.assetid: 56acd101-de77-4eec-92c6-f5c6d2187579
 caps.latest.revision: 9
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# ResolveNativeReference Task
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 11a9cee75f912c5fb31cf4a031644abe9c63d744
+ms.openlocfilehash: c3c8a58f0eeeb43ac43e2064c2e4c7de2e5bf469
+ms.contentlocale: de-de
+ms.lasthandoff: 06/03/2017
 
-Löst systemeigene Verweise auf.  Implementiert die <xref:Microsoft.Build.Tasks.ResolveNativeReference>\-Klasse.  Diese Klasse unterstützt die .NET Framework\-Infrastruktur, die nicht für die direkte Verwendung in Code bestimmt ist.  
+---
+# <a name="resolvenativereference-task"></a>ResolveNativeReference-Aufgabe
+Löst native Verweise auf. Implementiert die <xref:Microsoft.Build.Tasks.ResolveNativeReference>-Klasse. Diese Klasse unterstützt die .NET Framework-Infrastruktur, die nicht für eine direkte Verwendung im Code vorgesehen ist.  
   
-## Aufgabenparameter  
- In der folgenden Tabelle werden die Parameter der `ResolveNativeReference`\-Aufgabe beschrieben.  
+## <a name="task-parameters"></a>Aufgabenparameter  
+ In der folgenden Tabelle werden die Parameter der `ResolveNativeReference`-Aufgabe beschrieben.  
   
 |Parameter|Beschreibung|  
-|---------------|------------------|  
-|`AdditionalSearchPaths`|Erforderlicher [String](assetId:///String?qualifyHint=False&autoUpgrade=True)`[]`\-Parameter.<br /><br /> Ruft die Suchpfade zum Auflösen von Assemblyidentitäten von systemeigenen Verweisen ab oder legt diese fest.|  
-|`ContainedComComponents`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`\-Ausgabeparameter.<br /><br /> Ruft die COM\-Komponenten der systemeigenen Assembly ab oder legt diese fest.|  
-|`ContainedLooseEtcFiles`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`\-Ausgabeparameter.<br /><br /> Ruft die im systemeigenen Manifest aufgelisteten freien ETC\-Dateien ab oder legt diese fest.|  
-|`ContainedLooseTlbFiles`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`\-Ausgabeparameter.<br /><br /> Ruft die freien TLB\-Dateien der systemeigenen Assembly ab oder legt diese fest.|  
-|`ContainedPrerequisiteAssemblies`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`\-Ausgabeparameter.<br /><br /> Ruft Assemblys ab, die vorhanden sein müssen, damit das Manifest verwendet werden kann, oder legt diese fest.|  
-|`ContainedTypeLibraries`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`\-Ausgabeparameter.<br /><br /> Ruft die Typbibliotheken der systemeigenen Assembly ab oder legt diese fest.|  
-|`ContainingReferenceFiles`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]`\-Ausgabeparameter.<br /><br /> Ruft die Verweisdateien ab oder legt diese fest.|  
-|`NativeReferences`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]`\-Parameter.<br /><br /> Ruft die Verweise auf systemeigene Win32\-Assemblys ab oder legt diese fest.|  
+|---------------|-----------------|  
+|`AdditionalSearchPaths`|Erforderlicher <xref:System.String?displayProperty=fullName>`[]`-Parameter.<br /><br /> Ruft die Suchpfade zum Auflösen von Assemblyidentitäten systemeigener Verweise ab oder legt sie fest.|  
+|`ContainedComComponents`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Ruft die COM-Komponenten der systemeigenen Assembly ab oder legt sie fest.|  
+|`ContainedLooseEtcFiles`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Ruft die im systemeigenen Manifest aufgelisteten losen ETC-Dateien ab oder legt sie fest.|  
+|`ContainedLooseTlbFiles`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Ruft die ungebundenen TLB-Dateien der systemeigenen Assembly ab oder legt sie fest.|  
+|`ContainedPrerequisiteAssemblies`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Ruft die Assemblys ab oder legt diese fest, die vorliegen müssen, bevor das Manifest verwendet werden kann.|  
+|`ContainedTypeLibraries`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Ruft die Typbibliotheken der systemeigenen Assembly ab oder legt sie fest.|  
+|`ContainingReferenceFiles`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Ruft die Verweisdateien ab oder legt sie fest.|  
+|`NativeReferences`|Erforderlicher <xref:Microsoft.Build.Framework.ITaskItem>`[]`-Parameter.<br /><br /> Ruft die systemeigenen Win32-Assemblyverweise ab oder legt diese fest.|  
   
-## Hinweise  
- Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>\-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>\-Klasse erbt.  Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+## <a name="remarks"></a>Hinweise  
+ Zusätzlich zu den oben aufgeführten Parametern erbt diese Aufgabe Parameter von der <xref:Microsoft.Build.Tasks.TaskExtension>-Klasse, die selbst von der <xref:Microsoft.Build.Utilities.Task>-Klasse erbt. Eine Liste mit diesen zusätzlichen Parametern und ihren Beschreibungen finden Sie unter [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
-## Siehe auch  
- [Tasks](../msbuild/msbuild-tasks.md)   
- [Task Reference](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>Siehe auch  
+ [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
+ [Task Reference](../msbuild/msbuild-task-reference.md) (MSBuild-Aufgabenreferenz)

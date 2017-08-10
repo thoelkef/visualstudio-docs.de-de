@@ -1,12 +1,13 @@
 ---
 title: "Vorlage für Azure Cloud Services-Projekte für Python | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 4/10/2017
+ms.date: 7/13/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
+ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: a2ce82ee-8c73-419a-bbd2-4c3513fd394d
@@ -14,24 +15,11 @@ caps.latest.revision: 11
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
-ms.openlocfilehash: 5dd1c40c925327c9494e3a334cdf348692a4981d
-ms.lasthandoff: 04/10/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: b90240dbb25e45827cbe8cd728dfcff23b1a8884
+ms.contentlocale: de-de
+ms.lasthandoff: 07/18/2017
 
 ---
 
@@ -48,19 +36,19 @@ Dieses Thema enthält Details über die Projektvorlage und sonstige Unterstützu
 1. Installieren Sie das [Azure .NET SDK für Visual Studio](https://www.visualstudio.com/vs/azure-tools/), das für die Verwendung der Clouddienstvorlage erforderlich ist.
 1. Wählen Sie in Visual Studio **Datei > Neu > Projekt** aus, suchen Sie nach „Azure Python“, und wählen Sie **Azure-Clouddienst** aus der Liste aus:
 
-    ![Azure-Cloudprojektvorlage für Python](~/python/media/template-azure-cloud-project.png)
+    ![Azure-Cloudprojektvorlage für Python](media/template-azure-cloud-project.png)
 
 1. Wählen Sie eine oder mehrere aufzunehmende Rollen aus. In Cloudprojekten können Rollen, die in verschiedenen Sprachen geschrieben wurden, kombiniert werden, sodass Sie problemlos jeden Teil der Anwendung in der am besten geeigneten Sprache schreiben können. Um dem Projekt nach Abschluss dieses Dialogfelds neue Rollen hinzuzufügen, klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf **Rollen**, und wählen Sie eines der Elemente unter **Hinzufügen** aus.
 
-    ![Hinzufügen von Rollen in der Azure-Cloudprojektvorlage](~/python/media/template-azure-cloud-service-project-wizard.png)
+    ![Hinzufügen von Rollen in der Azure-Cloudprojektvorlage](media/template-azure-cloud-service-project-wizard.png)
 
 1. Beim Erstellen der einzelnen Rollenprojekte werden Sie möglicherweise aufgefordert, zusätzliche Python-Pakete, z.B. die Django-, Bottle- oder Flask-Frameworks, zu installieren, wenn Sie eine Rolle ausgewählt haben, die eines davon verwendet.
 
-1. Nachdem Sie dem Projekt eine neue Rolle hinzugefügt haben, sehen Sie einige Konfigurationsanweisungen. Diese sind in der Regel nicht erforderlich, können aber für die zukünftige Anpassung Ihrer Projekte hilfreich sein. Beachten Sie, dass nur die Anweisungen für die letzte Rolle geöffnet bleiben, wenn Sie mehrere Rollen gleichzeitig hinzufügen. Sie finden jedoch Anweisungen und Tipps zur Problembehandlung für die anderen Rollen in den jeweiligen `readme.mht`-Dateien, die sich im Stammverzeichnis der Rolle oder im Ordner `bin` befinden.
+1. Nachdem Sie dem Projekt eine neue Rolle hinzugefügt haben, werden Konfigurationsanweisungen angezeigt. Konfigurationsanweisungen sind in der Regel nicht erforderlich, können aber für die zukünftige Anpassung Ihrer Projekte hilfreich sein. Beachten Sie, dass nur die Anweisungen für die letzte Rolle geöffnet bleiben, wenn Sie mehrere Rollen gleichzeitig hinzufügen. Sie finden jedoch Anweisungen und Tipps zur Problembehandlung für die anderen Rollen in den jeweiligen `readme.mht`-Dateien, die sich im Stammverzeichnis der Rolle oder im Ordner `bin` befinden.
 
-1. Der Ordner `bin` eines Projekts enthält auch ein oder zwei PowerShell-Skripts, die verwendet werden, um die virtuellen Remotecomputer zu konfigurieren. Dies umfasst die Installation von Python, [requirements.txt](#dependencies)-Dateien in Ihrem Projekt und bei Bedarf die Einrichtung von IIS. Sie können diese Dateien nach Bedarf für Ihre Bereitstellung bearbeiten. Allerdings können die am häufigsten verwendeten Optionen auf andere Weise verwaltet werden (siehe [Konfigurieren der Rollenbereitstellung](#configuring-role-deployment) weiter unten). Es empfiehlt sich nicht, diese Dateien zu entfernen, da ein älteres Konfigurationsskript verwendet wird, wenn sie nicht verfügbar sind.
+1. Der Ordner `bin` eines Projekts enthält auch ein oder zwei PowerShell-Skripts, die verwendet werden, um die virtuellen Remotecomputer zu konfigurieren. Dies umfasst die Installation von Python, [requirements.txt](#dependencies)-Dateien in Ihrem Projekt und bei Bedarf die Einrichtung von IIS. Sie können diese Dateien nach Bedarf für Ihre Bereitstellung bearbeiten. Allerdings können die am häufigsten verwendeten Optionen auf andere Weise verwaltet werden (siehe [Konfigurieren der Rollenbereitstellung](#configuring-role-deployment) weiter unten). Es empfiehlt sich nicht, diese Dateien zu entfernen, da ein älteres Konfigurationsskript verwendet wird, wenn die Dateien nicht verfügbar sind.
 
-    ![Unterstützungsdateien für Workerrollen](~/python/media/template-azure-cloud-service-worker-role-support-files.png)
+    ![Unterstützungsdateien für Workerrollen](media/template-azure-cloud-service-worker-role-support-files.png)
 
     Um diese Konfigurationsskripts einem neuen Projekt hinzuzufügen, klicken Sie mit der rechten Maustaste auf das Projekt, wählen Sie **Hinzufügen > Neues Element** und dann entweder **Webrollen-Unterstützungsdateien** oder **Workerrollen-Unterstützungsdateien** aus.
    
@@ -103,7 +91,7 @@ Schließlich führen Workerrollen `LaunchWorker.ps1` aus. Damit wird die Ausfüh
 
 ## <a name="dependencies"></a>Abhängigkeiten
 
-Das Skript `ConfigureCloudService.ps1` verwendet für den Clouddienst `pip`, um einen Satz von Python-Abhängigkeiten zu installieren. Diese sollten in einer Datei namens `requirements.txt` angegeben werden (anpassbar durch Ändern von `ConfigureCloudService.ps1`). Die Datei wird mit `pip install -r requirements.txt` als Teil der Initialisierung ausgeführt.
+Das Skript `ConfigureCloudService.ps1` verwendet für den Clouddienst `pip`, um einen Satz von Python-Abhängigkeiten zu installieren. Abhängigkeiten sollten in einer Datei mit dem Namen `requirements.txt` angegeben werden (anpassbar durch Ändern von `ConfigureCloudService.ps1`). Die Datei wird mit `pip install -r requirements.txt` als Teil der Initialisierung ausgeführt.
 
 Beachten Sie, dass Clouddienstinstanzen keine C-Compiler beinhalten. Daher müssen alle Bibliotheken mit C-Erweiterungen vorkompilierte Binärdateien bereitstellen.
 
@@ -121,5 +109,5 @@ Wenn sich Ihre Web- oder Workerrolle nach der Bereitstellung nicht ordnungsgemä
 - Ihr Python-Projekt enthält eine Datei `requirements.txt` mit allen Abhängigkeiten (oder alternativ eine Sammlung von wheel-Dateien).
 - Aktivieren Sie Remotedesktop für den Clouddienst, und untersuchen Sie die Protokolldateien.
 - Protokolle für `ConfigureCloudService.ps1` und `LaunchWorker.ps1` befinden sich im Ordner `C:\Resources\Directory\%RoleId%.DiagnosticStore\LogFiles` auf dem Remotecomputer.
-- Webrollen können weitere Protokolle in einen Pfad schreiben, der in `web.config` konfiguriert ist, und zwar in den Pfad in der appSetting `WSGI_LOG`. Normale IIS- oder FastCGI-Protokolle können auch verwendet werden.
+- Webrollen können weitere Protokolle in einen Pfad schreiben, der in `web.config` konfiguriert ist, und zwar in den Pfad in der appSetting `WSGI_LOG`. Die meisten normalen IIS- oder FastCGI-Protokolle können auch verwendet werden.
 - Derzeit ist die Datei `LaunchWorker.ps1.log` die einzige Möglichkeit zum Anzeigen von Ausgaben oder Fehlern, die von der Python-Workerrolle angezeigt werden.

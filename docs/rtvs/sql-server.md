@@ -1,12 +1,13 @@
 ---
 title: "Integrieren von SQL Server mit R Tools für Visual Studio | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 4/28/2017
+ms.date: 6/30/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-r
+ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 919dfc34-234a-489e-91bf-74a4cefae26c
@@ -14,32 +15,17 @@ caps.latest.revision: 1
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 7a873df77756e5a957d327049566c8e0db1f3a8a
-ms.openlocfilehash: 44ae1fd825997ff5eab1448ebd86f88a130172a1
+ms.translationtype: HT
+ms.sourcegitcommit: fa4f6a27eeacd2f016a248daa74074392b1137f2
+ms.openlocfilehash: b7afc0b2e62245e30814a0bc00d455400ae1b2d8
 ms.contentlocale: de-de
-ms.lasthandoff: 05/12/2017
+ms.lasthandoff: 07/20/2017
 
 ---
 
-
 # <a name="working-with-sql-server-and-r"></a>Arbeiten mit SQL Server und R
 
-R Tools für Visual Studio (RTVS) nutzt die hervorragende Unterstützung von Visual Studio für SQL Server, damit Datenspezialisten einfach mit SQL-Datenbanken arbeiten können, z.B. um SQL-Abfragen zu erstellen und auszuführen und mit gespeicherten Prozeduren zu arbeiten.
+Durch die hervorragende Unterstützung von Visual Studio für SQL Server können Datenanalysten mit R- und SQL-Datenbanken arbeiten, da sie SQL-Abfragen erstellen und ausführen können. So können sie auch mit gespeicherten Prozeduren arbeiten.
 
 > [!Note]
 > Um mit SQL und R zu arbeiten, müssen Sie die SQL Server-Datentools installiert haben:
@@ -56,21 +42,22 @@ RTVS unterstützt das Hinzufügen von SQL-Abfragen in R-Projekten, wobei Sie die
 
 Um eine SQL-Abfragedatei hinzuzufügen, klicken Sie mit der rechten Maustaste auf das Projekt im Projektmappen-Explorer, wählen Sie **Hinzufügen > Neues Element...** und dann den Dateityp der **SQL-Abfrage** aus:
 
-![Hinzufügen eines SQL-Abfrageelements zu einem Projekt](~/rtvs/media/sql-add-item.png)
+![Hinzufügen eines SQL-Abfrageelements zu einem Projekt](media/sql-add-item.png)
 
-Die Datei wird im Transact-SQL-Editor von Visual Studio geöffnet, wobei vollständiges IntelliSense für SQL und die Möglichkeit zum Ausführen von Abfragen bereitgestellt wird. Damit diese Funktionen funktionieren, müssen Sie eine Verbindung zu einer Datenbank mithilfe der Schaltfläche „Verbinden“ auf der Symbolleiste des Editors herstellen oder einfach versuchen, eine Abfrage auszuführen (STRG+UMSCHALT+E; funktioniert auch auf einer Auswahl). Egal für welche Möglichkeit Sie sich entscheiden, es wird das Dialogfeld „Verbindung“ angezeigt:
+Dieser Befehl wird im Transact-SQL-Editor von Visual Studio geöffnet, wobei vollständiges IntelliSense für SQL und die Möglichkeit zum Ausführen von Abfragen bereitgestellt wird. Damit diese Funktionen funktionieren, müssen Sie eine Verbindung zu einer Datenbank mithilfe der Schaltfläche „Verbinden“ auf der Symbolleiste des Editors herstellen oder versuchen, eine Abfrage auszuführen (STRG + UMSCHALT + E. Dies funktioniert auch für einer Auswahl). Egal für welche Möglichkeit Sie sich entscheiden, es wird das Dialogfeld „Verbindung“ angezeigt:
 
-![Dialogfeld „SQL-Verbindung“](~/rtvs/media/sql-connection-dialog.png)
+![Dialogfeld „SQL-Verbindung“](media/sql-connection-dialog.png)
 
 Sobald eine Verbindung hergestellt wurde, können Sie Abfragen ausführen und Ergebnisse anzeigen:
 
-![SQL-Fenster mit Abfrageergebnissen](~/rtvs/media/sql-query-results.png)
+![SQL-Fenster mit Abfrageergebnissen](media/sql-query-results.png)
 
-Der Transact-SQL-Editor unterstützt eine Vielzahl anderer Funktionen, z.B. die Darstellung des Ausführungsplans für die Abfrage, einen Abfragedebugger und auch viele andere Funktionen, die im Transact-SQL-Editor verfügbar sind. Weitere Informationen finden Sie unter [Verwenden des Transact-SQL-Editors zum Bearbeiten und Ausführen von Skripts](https://msdn.microsoft.com/library/hh272706.aspx).
+Der Transact-SQL-Editor unterstützt eine Vielzahl anderer Funktionen, z.B. die Darstellung des Ausführungsplans für die Abfrage und einen Abfragedebugger.
+Weitere Informationen finden Sie unter [Verwenden des Transact-SQL-Editors zum Bearbeiten und Ausführen von Skripts](https://msdn.microsoft.com/library/hh272706.aspx).
 
 ## <a name="working-with-sql-server-stored-procedures"></a>Arbeiten mit gespeicherten SQL Server-Prozeduren
 
-Durch [SQL Server-R Services](https://docs.microsoft.com/sql/advanced-analytics/r/sql-server-r-services) (SQL Server 2016 und höher) können Sie R-Code aus einer gespeicherten T-SQL-Prozedur einbetten und ausführen. Das bedeutet, dass Sie R Code auf einem SQL Server-Computer ausführen, für von einer SQL-Abfrage zurückgegebene Daten nutzen und ein SQL-Resultset generieren können, dass von SQL weiterverarbeitet oder an den Client zurückgegeben werden kann.
+Durch [SQL Server-R Services](https://docs.microsoft.com/sql/advanced-analytics/r/sql-server-r-services) (SQL Server 2016 und höher) können Sie R-Code aus einer gespeicherten T-SQL-Prozedur einbetten und ausführen. Sie können R Code auf einem SQL Server-Computer ausführen, für von einer SQL-Abfrage zurückgegebene Daten nutzen und ein SQL-Resultset generieren, das von SQL weiterverarbeitet oder an den Client zurückgegeben werden kann.
 
 RTVS vereinfacht den ansonsten komplizierten und fehleranfälligen Prozess zum Kombinieren von SQL und R-Code in einer SQL-Anweisung, so wie in den folgenden Abschnitten beschrieben:
 
@@ -84,13 +71,13 @@ Das folgende Video (6:09 Min.) bietet auch eine Übersicht dieser Funktionen:
 
 ### <a name="add-a-database-connection"></a>Hinzufügen einer Datenbankverbindung
 
-1. Wählen Sie **R Tools > Daten > Datenbankverbindung hinzufügen** aus, um das Dialogfeld **Verbindungseigenschaften** anzuzeigen, indem Sie den Namen der Datenquelle (in diesem Fall SQL Server), den Namen des Servers, den Authentifizierungsmodus und den Namen der Datenbank angeben. Sie können **Testverbindung** auswählen, um Ihre Eingabe zu überprüfen, bevor Sie das Dialogfeld schließen.
+1. Klicken Sie auf **R Tools > Daten > Datenbankverbindung hinzufügen**, um das Dialogfeld **Verbindungseigenschaften** zu öffnen. Hier geben Sie den Namen der Datenquelle (in diesem Fall SQL Server), den Namen des Servers, den Authentifizierungsmodus und den Namen der Datenbank an. Klicken Sie auf **Testverbindung**, um Ihre Eingabe zu überprüfen, bevor Sie das Dialogfeld schließen.
  
-    ![SQL-Verbindung (Dialogfeld)](~/rtvs/media/sql-connection-string-dialog.png)
+    ![SQL-Verbindung (Dialogfeld)](media/sql-connection-string-dialog.png)
 
 1. Sobald Sie auf **OK** geklickt haben, generiert Visual Studio mit einer gültigen Verbindung eine Verbindungszeichenfolge mit dem Namen `dbConnection` in einer neuen `settings.R`-Datei. RTVS fügt diese Datei automatisch hinzu (führt dies aus), damit Sie die Verbindung von R-Skripts sofort nutzen können:
 
-![SQL-Datei „Settings.R“](~/rtvs/media/sql-settings-dot-r.png)
+![SQL-Datei „Settings.R“](media/sql-settings-dot-r.png)
 
 ### <a name="write-and-test-a-sql-stored-procedure"></a>Schreiben und Testen einer in SQL gespeicherten Prozedur
 
@@ -98,7 +85,7 @@ Um eine neue in SQL gespeicherte Prozedur hinzuzufügen, klicken Sie auf Ihr Pro
  
 RTVS erstellt drei Dateien für die gespeicherte Prozedur, eine `.R`-Datei für Ihren R-Code, eine `.Query.sql`-Datei für den SQL-Code und eine `.Template.sql`-Datei, die beide vereint. Die letzten beiden erscheinen im Projektmappen-Explorer als untergeordnete Dateien der `.R`-Datei:
 
-![Erweiterte Projektmappen-Explorer-Ansicht der gespeicherten SQL-Prozedur mit R](~/rtvs/media/sql-solution-explorer-expanded.png)
+![Erweiterte Projektmappen-Explorer-Ansicht der gespeicherten SQL-Prozedur mit R](media/sql-solution-explorer-expanded.png)
 
 `StoredProcedure.R` (in diesem Beispiel) ist der Ort, an dem Sie Ihren R-Code schreiben. Der Standardinhalt ist der folgende:
 
@@ -120,17 +107,17 @@ Um es einfacher auszudrücken: Der Code erhält einen R-Datenrahmen mit dem Name
 > [!Note]
 > Die Namen dieser Datenrahmen werden durch die Parameter `@input_data_1_name` und `@output_data_1_name` im Aufruf der im `sp_execute_external_script`-System gespeicherten Prozedur gesteuert. Weitere Informationen zum Entwurf dieser Aufrufkonvention und einige Beispiele zum Gebrauch finden Sie unter [sp_execute_external_script (Transact-SQL)](https://docs.microsoft.com/sql/relational-databases/system-stored-procedures/sp-execute-external-script-transact-sql).
 
-Der andere generierte Code in den Kommentaren ist ein kleines Testskript, das das [RODBC-Paket](https://cran.r-project.org/web/packages/RODBC/index.html) zur Übermittlung einer SQL-Anweisung an SQL Server verwendet, sie ausführt und das Resultset als R-Datenrahmen abruft. Sie können die Auskommentierung dieses Testcodes aufheben, um Ihren R-Code interaktiv für das festgelegte Resultset zu schreiben, das Sie von SQL Server erhalten.
+Der andere generierte Code in den Kommentaren bietet ein kleines Testskript, das das [RODBC-Paket](https://cran.r-project.org/web/packages/RODBC/index.html) zur Übermittlung einer SQL-Anweisung an SQL Server verwendet, sie ausführt und das Resultset als R-Datenrahmen abruft. Sie können die Auskommentierung dieses Testcodes aufheben, um Ihren R-Code interaktiv für das festgelegte Resultset zu schreiben, das Sie von SQL Server erhalten.
 
-`StoredProcedure.Query.sql` ist der Ort, an dem Sie die SQL-Abfrage schreiben und testen, die die Daten für `InputDataSet` generiert. Da es sich um eine `.sql`-Datei handelt, stehen Ihnen alle Funktionen des Transact-SQL-Editors zur Verfügung.
+`StoredProcedure.Query.sql` ist der Ort, an dem Sie die SQL-Abfrage schreiben und testen, die die Daten für `InputDataSet` generiert. Mit dieser `.sql`-Datei bietet der Editor Ihnen alle gängigen Transact-SQL-Funktionen.
 
-Sobald Sie mit Ihrem SQL-Code zufrieden sind, können Sie ihn leicht mit Ihrem R-Code in `StoredProcedure.R` integrieren, indem Sie einfach die `.sql`-Datei in den offenen Editor für die `.R`-Datei ziehen. Wie unten dargestellt, wurde `StoredProcedure.Query.sql` zur Stelle nach dem Komma in `sqlQuery(channel, )` gezogen:
+Sobald Sie mit Ihrem SQL-Code zufrieden sind, integrieren Sie ihn mit Ihrem R-Code in `StoredProcedure.R`, indem Sie die `.sql`-Datei in den offenen Editor für die `.R`-Datei ziehen. Wie unten dargestellt, wurde `StoredProcedure.Query.sql` zur Stelle nach dem Komma in `sqlQuery(channel, )` gezogen:
 
-![Lesen einer SQL-Datei in eine R-Zeichenfolgenvariable](~/rtvs/media/sql-reference-sql-file-from-r.png)
+![Lesen einer SQL-Datei in eine R-Zeichenfolgenvariable](media/sql-reference-sql-file-from-r.png)
 
 Wie Sie sehen können, generiert dieser einfache Schritt automatisch R-Code, um die `.sql`-Datei zu öffnen, deren Inhalt in eine Zeichenfolge zu lesen und sie an das RODBC-Paket zu übergeben, um sie an SQL Server zu senden.
 
-Wenn dies geschehen ist, können Sie nun interaktiv R-Code schreiben, der den `InputDataSet`-Datenrahmen wie gewünscht verändert. Beachten Sie, dass Sie nur R-Code im Editor auswählen und ihn an das [interaktive Fenster](interactive-repl.md) senden können, indem Sie STRG+EINGABE drücken.
+Sie können nun interaktiv R-Code schreiben, der den `InputDataSet`-Datenrahmen wie gewünscht verändert. Beachten Sie, dass Sie nur R-Code im Editor auswählen und ihn an das [interaktive Fenster](interactive-repl.md) senden können, indem Sie STRG+EINGABE drücken.
 
 `StoredProcedure.Template.sql` enthält schlussendlich die Vorlage zum Generieren Ihrer gespeicherten SQL-Prozedur:
 
@@ -148,7 +135,7 @@ END;
 
 - Der Platzhalter `_RCODE_` wird durch die Inhalte von `StoredProcedure.R` ersetzt.
 - Der Platzhalter `_INPUT_QUERY_` wird durch die Inhalte von `StoredProcedure.Query.sql` ersetzt.
-- Sie müssen das Schema des von der gespeicherten Prozedur zurückgegebenen Resultsets beschreiben, indem Sie die `WITH RESULT SETS`-Klausel bearbeiten. Identifizieren Sie insbesondere die Spalten aus dem `OutputDataSet`-Datenrahmen, die Sie an den Aufrufer der gespeicherten Prozedur zurückgeben möchten. 
+- Bearbeiten Sie die `WITH RESULT SETS`-Klausel, um das Schema des von der gespeicherten Prozedur zurückgegebenen Resultsets zu beschreiben. Identifizieren Sie insbesondere die Spalten aus dem `OutputDataSet`-Datenrahmen, die Sie an den Aufrufer der gespeicherten Prozedur zurückgeben möchten. 
 
 Beispielsweise für die folgende Abfrage:
 
@@ -165,12 +152,12 @@ WITH RESULT SETS ((medallion NVARCHAR(max), hack_license NVARCHAR(max)));
 ### <a name="publish-a-sql-stored-procedure"></a>Veröffentlichen einer in SQL gespeicherten Prozedur
 
 1. Wählen Sie den Menübefehl **R Tools > Daten > Mit Optionen veröffentlichen...**.
-1. Ändern Sie im Dialogfeld, das erscheint, **Veröffentlichen an:** in **Datenbank**, geben Sie das Ziel an, wählen Sie **Veröffentlichen** aus, und RTVS erstellt die gespeicherte Prozedur und veröffentlicht sie:
+1. Ändern Sie im sich öffnenden Dialogfeld **Veröffentlichen an:** in **Datenbank**, geben Sie das Ziel an, wählen Sie **Veröffentlichen** aus, und RTVS erstellt die gespeicherte Prozedur und veröffentlicht sie:
 
-    ![Dialogfeld „Gespeicherte Prozeduren veröffentlichen“](~/rtvs/media/sql-publish-with-options.png)
+    ![Dialogfeld „Gespeicherte Prozeduren veröffentlichen“](media/sql-publish-with-options.png)
 
-1. Um alle gespeicherten Prozeduren in einem Projekt zu veröffentlichen, können Sie auch den Befehl **R Tools > Daten > Gespeicherte Prozeduren veröffentlichen** verwenden, der auch verfügbar ist, wenn Sie mit der rechten Maustaste auf das Projekt im Projektmappen-Explorer klicken.
+1. Um alle gespeicherten Prozeduren in einem Projekt zu veröffentlichen, können Sie den Befehl **R Tools > Daten > Gespeicherte Prozeduren veröffentlichen** verwenden, der auch verfügbar ist, wenn Sie mit der rechten Maustaste auf das Projekt im Projektmappen-Explorer klicken.
 
 > [!Tip]
-> Wenn Sie den SQL Server-Objekt-Explorer in Visual Studio geöffnet haben, sehen Sie auch Ihre veröffentlichte gespeicherte Prozedur im Ordner **Programmierbarkeit > Gespeicherte Prozeduren** Ihrer Datenbank. Sie können sie auch vom Objekt-Explorer aus ausführen, indem Sie rechtsklicken, und **Execute Procedure** (Prozedur ausführen) auswählen oder sie interaktiv aus einem `.sql`-Abfragefenster aufrufen.
+> Wenn Sie den Objekt-Explorer von SQL Server in Visual Studio geöffnet haben, wird Ihre veröffentlichte gespeicherte Prozedur im Ordner **Programmierbarkeit > Gespeicherte Prozeduren** Ihrer Datenbank angezeigt. Sie können sie auch vom Objekt-Explorer aus ausführen, indem Sie rechtsklicken und **Prozedur ausführen** auswählen oder sie interaktiv aus einem `.sql`-Abfragefenster aufrufen.
 

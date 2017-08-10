@@ -1,7 +1,7 @@
 ---
 title: "Leistungstools für Windows 8- und Windows Server 2012-Anwendungen | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 06/19/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -28,17 +28,18 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 65bceca75b87aaf187926ebbed1a54ce4f0e8eec
-ms.openlocfilehash: c1b3058b6a1af9161f71cbea995c562670013e86
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: baf12bba10dfba15f10d75fd1f7a4cdc4000e441
+ms.openlocfilehash: a5d885f8604bdb52907adae4f231b41e0881017f
+ms.contentlocale: de-de
+ms.lasthandoff: 06/21/2017
 
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Leistungstools für Windows 8- und Windows Server 2012-Anwendungen
-Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung der Visual Studio-Leistungstools auf diesen Plattformen. Außerdem benötigen Windows Store-Apps neue Erfassungsmethoden. In diesem Thema werden die Änderungen für die Leistungstools auf Windows 8- und Windows Server 2012-Plattformen beschrieben.  
+Verbesserte Sicherheitsfunktionen ab Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung der Visual Studio-Leistungstools auf diesen Plattformen. Außerdem benötigen Windows Store-Apps neue Erfassungsmethoden. In diesem Thema werden die Änderungen für die Leistungstools auf Windows 8- und Windows Server 2012-Plattformen beschrieben.
   
 > [!NOTE]
->  Leistungstools für andere unterstützte Versionen von Windows (Windows 7, Windows Server 2008 R2) haben sich nicht geändert.  
+>  Leistungstools für andere unterstützte Versionen von Windows (Windows 7, Windows Server 2008 R2) haben sich nicht geändert.
   
 ##  <a name="BKMK_In_this_topic"></a> In diesem Thema  
  [Sammeln von Daten für Windows Store-Apps in Visual Studio-IDE](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
@@ -94,9 +95,9 @@ Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erfordert
  Die Profilerstellung für die Ebeneninteraktion wird nicht mit der Samplingmethode unterstützt.  
   
 ###  <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE"></a> Sammeln von Daten für Apps, die auf dem Windows 8-Desktop oder unter Windows Server 2012 ausgeführt werden, unter Verwendung von Sampling aus der Visual Studio IDE  
- Diese Funktionen und Optionen für die Profilerstellung werden nicht unterstützt, wenn Profile für Windows 8-Desktopanwendungen oder Windows Server 2012-Anwendungen mithilfe der Samplingmethode erstellt werden:  
+ Diese Funktionen und Optionen für die Profilerstellung werden nicht unterstützt, wenn Profile für Windows 8-Desktopanwendungen oder Windows Server 2012-Anwendungen mithilfe der Samplingmethode erstellt werden:
   
--   Profilerstellung für Ebeneninteraktion. Das Sammeln von Daten für die Profilerstellung für die Ebeneninteraktion mithilfe der Instrumentation wird unterstützt.  
+-   Profilerstellung für Ebeneninteraktion. Das Sammeln von Daten für die Profilerstellung für die Ebeneninteraktion mithilfe der Instrumentation wird unterstützt.
   
 -   Samplingoptionen, z. B. das Festlegen des Samplingereignis- und -steuerungsintervalls oder das Sammeln zusätzlicher Leistungsindikatordaten.  
   
@@ -130,9 +131,9 @@ Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erfordert
 ##  <a name="BKMK_Collecting_tier_interaction__TIP__data"></a> Sammeln von Ebeneninteraktionsdaten (TIP-Daten)  
  Die Profilerstellung für Ebeneninteraktion stellt weitere Informationen zu den Ausführungszeiten der Funktionen von Anwendungen mit mehreren Ebenen, die über ADO.NET-Dienste mit Datenbanken kommunizieren, bereit. Es werden nur Daten für synchrone Funktionsaufrufe gesammelt.  
   
- **Visual Studio-Ausgaben**  
+ **Visual Studio-Editionen**  
   
- Profilerstellungsdaten für die Ebeneninteraktion können mit [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] oder [!INCLUDE[vs_pro_current_short](../profiling/includes/vs_pro_current_short_md.md)] erfasst werden. Allerdings können Profilerstellungsdaten für die Ebeneninteraktion nur in [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)] und [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] angezeigt werden.  
+ Profilerstellungsdaten für die Ebeneninteraktion können mit [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)]oder [!INCLUDE[vs_pro_current_short](../profiling/includes/vs_pro_current_short_md.md)]erfasst werden. Allerdings können Profilerstellungsdaten für die Ebeneninteraktion nur in [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)] und [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)]angezeigt werden.  
   
  **Windows 8 und Windows Server 2012**  
   
@@ -154,7 +155,7 @@ Verbesserte Sicherheitsfunktionen in Windows 8 und Windows Server 2012 erfordert
   
  **TIP-Berichte**  
   
- Ebeneninteraktionsdaten können nur in der [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)]- oder [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)]-IDE angezeigt werden. Dateibasierte Ebeneninteraktionsberichte über [VSPerfReport](../profiling/vsperfreport.md) sind nicht verfügbar.  
+ Ebeneninteraktionsdaten können nur in der [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)] - oder [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] -IDE angezeigt werden. Dateibasierte Ebeneninteraktionsberichte über [VSPerfReport](../profiling/vsperfreport.md) sind nicht verfügbar.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Leistungs-Explorer](../profiling/performance-explorer.md)   

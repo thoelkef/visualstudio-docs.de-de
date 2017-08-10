@@ -36,10 +36,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: b59b417eb16674ff8c6c5223d790ae174ba20e09
-ms.lasthandoff: 02/22/2017
+ms.translationtype: HT
+ms.sourcegitcommit: a3c0f4d3bde8bb03d3766383eba01665e58458be
+ms.openlocfilehash: 18f1ea2f5ee76f4f8457b7254ff3dd3b7b3e4901
+ms.contentlocale: de-de
+ms.lasthandoff: 08/01/2017
 
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Gewusst wie: Signieren von Anwendungs- und Bereitstellungsmanifesten
@@ -49,7 +50,7 @@ Wenn Sie eine Anwendung mit der ClickOnce-Bereitstellung veröffentlichen möcht
   
  Das Signieren der ClickOnce-Manifeste ist für EXE-basierte Anwendungen optional. Weitere Informationen finden Sie im Abschnitt "Generieren von unsignierten Manifesten" in diesem Dokument.  
   
- Weitere Informationen zum Erstellen von Schlüsseldateien finden Sie unter [Vorgehensweise: Erstellen eines öffentlichen/privaten Schlüsselpaars](http://msdn.microsoft.com/Library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
+ Weitere Informationen zum Erstellen von Schlüsseldateien finden Sie unter [Vorgehensweise: Erstellen eines öffentlichen/privaten Schlüsselpaars](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).  
   
 > [!NOTE]
 >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] unterstützt nur PFX-Schlüsseldateien (Personal Information Exchange). Sie können jedoch andere Typen von Zertifikaten aus dem Windows-Zertifikatspeicher des aktuellen Benutzers auswählen, indem Sie auf der Seite **Signierung** der Projekteigenschaften auf **Aus Speicher auswählen** klicken.  
@@ -124,7 +125,7 @@ Wenn Sie eine Anwendung mit der ClickOnce-Bereitstellung veröffentlichen möcht
 3.  Veröffentlichen Sie die Anwendung.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Assemblys mit starkem Namen](http://msdn.microsoft.com/Library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
- [Vorgehensweise: Erstellen eines öffentlichen/privaten Schlüsselpaars](http://msdn.microsoft.com/Library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
+ [Assemblys mit starkem Namen](/dotnet/framework/app-domains/strong-named-assemblies)   
+ [Vorgehensweise: Erstellen eines öffentlichen/privaten Schlüsselpaars](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)   
  [Seite „Signierung“, Projekt-Designer](../ide/reference/signing-page-project-designer.md)   
  [ClickOnce-Sicherheit und Bereitstellung](../deployment/clickonce-security-and-deployment.md)

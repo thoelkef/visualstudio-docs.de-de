@@ -29,10 +29,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 203e1e27cc892e96b103fc6cb22a73672a8e16af
-ms.openlocfilehash: f351952a256679ec2d6c9dc2daa5288ca7214ad0
-ms.lasthandoff: 03/01/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9713f09b7379b14b9362e3853a910948935c501e
+ms.openlocfilehash: c52ed7c7e6de33d10d2a653a1072766aa9fb8023
+ms.contentlocale: de-de
+ms.lasthandoff: 05/31/2017
 
 ---
 # <a name="property-functions"></a>Eigenschaftenfunktionen
@@ -98,6 +99,10 @@ In .NET Framework, Versionen 4 und 4.5, können Eigenschaftenfunktionen zur Ausw
 -   System.IO.Path  
 
 -   System.Math  
+
+-   System.Runtime.InteropServices.OSPlatform
+
+-   System.Runtime.InteropServices.RuntimeInformation
 
 -   System.UInt16  
 
@@ -195,13 +200,22 @@ In .NET Framework, Versionen 4 und 4.5, können Eigenschaftenfunktionen zur Ausw
 |int BitwiseAnd(int first, int second)|Führt einen bitweisen `AND`-Vorgang für das erste und zweite Element aus (first & second).|  
 |int BitwiseXor(int first, int second)|Führt einen bitweisen `XOR`-Vorgang für das erste und zweite Element aus (first ^ second).|  
 |int BitwiseNot(int first)|Führt einen bitweisen `NOT`-Vorgang aus (~first).|  
+|bool IsOsPlatform(string platformString)|Gibt an, ob die aktuelle Betriebssystemplattform `platformString` ist. `platformString` muss ein Mitglied von `OSPlatform` sein.|
+|bool IsOSUnixLike|„TRUE“, wenn das aktuelle Betriebssystem ein Unix-System ist.|
+|string NormalizePath(params string[] path)|Ruft den vereinheitlichten vollständigen Pfad des bereitgestellten Pfads ab und stellt sicher, dass dieser die richtigen Verzeichnistrennzeichen für das aktuelle Betriebssystem enthält.|
+|string NormalizeDirectory(params string[] path)|Ruft den vereinheitlichten vollständigen Pfad des bereitgestellten Verzeichnisses ab und stellt sicher, dass dieser die richtigen Verzeichnistrennzeichen für das aktuelle Betriebssystem und einen nachstehenden Schrägstrich enthält.|
+|string EnsureTrailingSlash(string path)|Wenn der angegebene Pfad keinen nachgestellten Schrägstrich besitzt, fügen Sie einen hinzu. Wenn der Pfad eine leere Zeichenfolge ist, ändern Sie diesen nicht.|
+|string GetPathOfFileAbove(string file, string startingDirectory)|Sucht basierend auf dem Speicherort der aktuellen Builddatei, oder, sofern angegeben, auf `startingDirectory`, nach einer Datei.|
+|GetDirectoryNameOfFileAbove(string startingDirectory, string fileName)|Suchen Sie eine Datei entweder im angegebenen Verzeichnis oder an einem Speicherort in der Verzeichnisstruktur oberhalb dieses Verzeichnisses.|
+|string MakeRelative(string basePath, string path)|Macht `path` relativ zu `basePath`. Bei `basePath` muss es sich um ein absolutes Verzeichnis handeln. Wenn `path` nicht relativ gemacht werden kann, wird dieses wörtlich zurückgegeben. Vergleichbar zu `Uri.MakeRelativeUri`.|
+|string ValueOrDefault(string conditionValue, string defaultValue)|Geben Sie die Zeichenfolge im Parameter „DefaultValue“ nur zurück, wenn der Parameter „ConditionValue“ leer ist. Geben Sie ansonsten ist den Wert ConditionValue zurück.|
 
 ##  <a name="nested-property-functions"></a>Geschachtelte Eigenschaftenfunktionen  
  Sie können Eigenschaftenfunktionen kombinieren, um komplexere Funktionen zu erstellen, wie das folgende Beispiel zeigt.  
 
  `$([MSBuild]::BitwiseAnd(32, $([System.IO.File]::GetAttributes(tempFile))))`  
 
- In diesem Beispiel wird der Wert der <xref:System.IO.FileAttributes>`Archive`-Bit (32 oder 0) der Datei zurückgegeben, die durch den Pfad `tempFile` angegeben wird. Beachten Sie, dass Enumerationsdatenwerte innerhalb von Eigenschaftenfunktionen nicht nach Name angezeigt werden können. Stattdessen muss der numerische Wert (32) verwendet werden.  
+ In diesem Beispiel wird der Wert <xref:System.IO.FileAttributes>`Archive`-Bit (32 oder 0) der Datei, die durch den Pfad `tempFile` angegeben wird, zurückgegeben. Beachten Sie, dass Enumerationsdatenwerte innerhalb von Eigenschaftenfunktionen nicht nach Name angezeigt werden können. Stattdessen muss der numerische Wert (32) verwendet werden.  
 
  Metadaten können auch in geschachtelten Eigenschaftenfunktionen angezeigt werden. Weitere Informationen finden Sie unter [MSBuild Batching (Batchverarbeitung)](../msbuild/msbuild-batching.md).  
 

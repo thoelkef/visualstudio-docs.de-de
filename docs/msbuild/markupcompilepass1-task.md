@@ -37,21 +37,22 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: d4cb33cd46ab45c580e70ce7e590960ed4fd75a9
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: 88b72484342e3658babf519ab746be3dc71aadb6
+ms.contentlocale: de-de
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="markupcompilepass1-task"></a>MarkupCompilePass1-Aufgabe
-Die <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>-Aufgabe konvertiert nicht lokalisierbare [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)]-Projektdateien in ein kompiliertes Binärformat.  
+Der <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>-Task konvertiert nicht lokalisierte [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)]-Projektdateien in kompiliertes Binärformat.  
   
 ## <a name="task-parameters"></a>Aufgabenparameter  
   
 |Parameter|Beschreibung|  
 |---------------|-----------------|  
-|`AllGeneratedFiles`|Optionaler **ITaskItem[]**-Ausgabeparameter.<br /><br /> Enthält eine vollständige Liste der Dateien, die von der <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>-Aufgabe generiert werden.|  
-|`AlwaysCompileMarkupFilesInSeparateDomain`|Optionaler **Boolean**-Parameter.<br /><br /> Gibt an, ob die Aufgabe in einer separaten <xref:System.AppDomain> ausgeführt werden soll. Wenn dieser Parameter **false** zurückgibt, wird die Aufgabe in der gleichen <xref:System.AppDomain> wie [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] und schneller ausgeführt. Wenn der Parameter **true** zurückgibt, wird die Aufgabe in einer zweiten <xref:System.AppDomain>, die von [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] isoliert ist, und langsamer ausgeführt.|  
+|`AllGeneratedFiles`|Optionaler **ITaskItem[]**-Ausgabeparameter.<br /><br /> Enthält eine vollständige Liste von Dateien, die vom <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>-Task generiert werden.|  
+|`AlwaysCompileMarkupFilesInSeparateDomain`|Optionaler **Boolean**-Parameter.<br /><br /> Gibt an, ob der Task in einer separaten <xref:System.AppDomain> ausgeführt werden soll. Wenn dieser Parameter **FALSE** zurückgibt, wird der Task in der gleichen <xref:System.AppDomain> wie [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] und schneller ausgeführt. Wenn der Parameter **TRUE** zurückgibt, wird der Task in einer zweiten <xref:System.AppDomain>, die von [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] isoliert ist, und langsamer ausgeführt.|  
 |`ApplicationMarkup`|Optionaler **ITaskItem[]**-Parameter.<br /><br /> Gibt den Namen der Anwendungsdefinitions-[!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Datei an.|  
 |`AssembliesGeneratedDuringBuild`|Optionaler **String[]**-Parameter.<br /><br /> Gibt Verweise auf Assemblys an, die sich während des Buildprozesses ändern. Eine [!INCLUDE[TLA#tla_visualstu2005](../msbuild/includes/tlasharptla_visualstu2005_md.md)]-Lösung kann möglicherweise ein Projekt enthalten, das auf die kompilierte Ausgabe eines anderen Projekts verweist. In diesem Fall kann die kompilierte Ausgabe des zweiten Projekts dem **AssembliesGeneratedDuringBuild**-Parameter hinzugefügt werden.<br /><br /> Hinweis: Der **AssembliesGeneratedDuringBuild**-Parameter muss Verweise auf den vollständigen Satz von Assemblys enthalten, die von einer Projektmappe generiert werden.|  
 |`AssemblyName`|Erforderlicher **String**-Parameter.<br /><br /> Gibt den Kurznamen der Assembly an, die für ein Projekt generiert wird. Wenn ein Projekt z.B. eine ausführbare [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)]-Datei mit dem Namen **WinExeAssembly.exe** generiert, hat der **AssemblyName**-Parameter den Wert **WinExeAssembly**.|  
@@ -59,7 +60,7 @@ Die <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>-Aufgabe konvertiert 
 |`AssemblyVersion`|Optionaler **String**-Parameter.<br /><br /> Gibt die Versionsnummer der Assembly an.|  
 |`ContentFiles`|Optionaler **ITaskItem[]**-Parameter.<br /><br /> Gibt die Liste loser Inhaltsdateien an.|  
 |`DefineConstants`|Optionaler **String**-Parameter.<br /><br /> Gibt an, dass der aktuelle Wert von **DefineConstants** beibehalten wird. Dies betrifft die Generierung der Zielassembly. Wenn dieser Parameter geändert wird, könnte die öffentliche API in der Zielassembly geändert und die Kompilierung der [!INCLUDE[TLA2#tla_titlexaml](../msbuild/includes/tla2sharptla_titlexaml_md.md)]-Dateien, die auf lokale Typen verweisen, beeinträchtigt werden.|  
-|`ExtraBuildControlFiles`|Optionaler **ITaskItem[]**-Parameter.<br /><br /> Gibt eine Liste der Dateien an, die steuern, ob ein erneutes Erstellen ausgelöst wird, wenn die <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>-Aufgabe erneut ausgeführt wird. Ein erneutes Erstellen wird ausgelöst, wenn eine dieser Dateien geändert wird.|  
+|`ExtraBuildControlFiles`|Optionaler **ITaskItem[]**-Parameter.<br /><br /> Gibt eine Liste der Dateien an, die steuern, ob ein erneutes Erstellen ausgelöst wird, wenn der <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>-Task erneut ausgeführt wird. Ein erneutes Erstellen wird ausgelöst, wenn eine dieser Dateien geändert wird.|  
 |`GeneratedBamlFiles`|Optionaler **ITaskItem[]**-Ausgabeparameter.<br /><br /> Enthält die Liste der generierten Dateien im [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Binärformat.|  
 |`GeneratedCodeFiles`|Optionaler **ITaskItem[]**-Ausgabeparameter.<br /><br /> Enthält die Liste der generierten Dateien mit verwaltetem Code.|  
 |`GeneratedLocalizationFiles`|Optionaler **ITaskItem[]**-Ausgabeparameter.<br /><br /> Enthält die Liste der Lokalisierungsdateien, die für jede lokalisierbare [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Datei generiert wurden.|  
@@ -80,7 +81,7 @@ Die <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>-Aufgabe konvertiert 
 |`XAMLDebuggingInformation`|Optionaler **Boolean**-Parameter.<br /><br /> Wenn **true**, werden Diagnoseinformationen generiert und in die kompilierte [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Datei einbezogen, um das Debuggen zu unterstützen.|  
   
 ## <a name="remarks"></a>Hinweise  
- Die <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>-Aufgabe kompiliert in der Regel [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] in das Binärformat und generiert Codedateien. Wenn eine [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Datei Verweise auf Typen enthält, die im gleichen Projekt definiert sind, wird ihre Kompilierung in das Binärformat durch **MarkupCompilePass1** auf einen zweiten Markupkompilierungsschritt (**MarkupCompilePass2**) aufgeschoben. Die Kompilierung solcher Dateien muss aufgeschoben werden, weil sie warten müssen, bis die referenzierten lokal definierten Typen kompiliert sind. Wenn eine [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Datei jedoch ein `x:Class`-Attribut hat, generiert <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> die sprachspezifische Codedatei für sie.  
+ Der <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>-Task kompiliert [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] normalerweise in Binärformat und generiert Codedateien. Wenn eine [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Datei Verweise auf Typen enthält, die im gleichen Projekt definiert sind, wird ihre Kompilierung in das Binärformat durch **MarkupCompilePass1** auf einen zweiten Markupkompilierungsschritt (**MarkupCompilePass2**) aufgeschoben. Die Kompilierung solcher Dateien muss aufgeschoben werden, weil sie warten müssen, bis die referenzierten lokal definierten Typen kompiliert sind. Wenn eine [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Datei allerdings ein `x:Class`-Attribut aufweist, generiert <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> die sprachspezfiische Codedatei für diese.  
   
  Eine [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]-Datei ist lokalisierbar, wenn sie Elemente enthält, die das `x:Uid`-Attribut verwenden:  
   
@@ -140,5 +141,5 @@ Die <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1>-Aufgabe konvertiert 
  [Task Reference](../msbuild/wpf-msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
  [MSBuild Reference](../msbuild/msbuild-reference.md)  (MSBuild-Referenz)  
  [Task Reference](../msbuild/msbuild-task-reference.md)  (MSBuild-Aufgabenreferenz)  
- [Erstellen einer WPF-Anwendung (WPF)](http://msdn.microsoft.com/Library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
- [Übersicht über WPF-XAML-Browseranwendungen](http://msdn.microsoft.com/Library/3a7a86a8-75d5-4898-96b9-73da151e5e16)
+ [Erstellen einer WPF-Anwendung (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)   
+ [Übersicht über WPF-XAML-Browseranwendungen](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

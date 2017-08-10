@@ -1,7 +1,7 @@
 ---
 title: Erste Schritte mit WPF | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 7/17/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -13,26 +13,11 @@ caps.latest.revision: 5
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: a737c447bc97738c6e8f5285f672e9964578061b
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: 1f384f593129c4a0e879762d6e2e7f5944171af6
 ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 # <a name="getting-started-with-wpf"></a>Erste Schritte mit WPF
@@ -43,13 +28,13 @@ Windows Presentation Foundation (WPF) ist ein Benutzeroberflächen-Framework, mi
 |||  
 |-|-|  
 |Ich möchte direkt beginnen…|[Exemplarische Vorgehensweise: Meine erste WPF-Desktopanwendung](../designers/walkthrough-my-first-wpf-desktop-application2.md)<br /><br /> [Exemplarische Vorgehensweise: Erstellen einer WPF-Desktopanwendung, die mit einem Azure Mobile Service verbunden ist](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)|  
-|Wie wird die Anwendungsbenutzeroberfläche entworfen?|[Designing XAML in Visual Studio and Blend for Visual Studio (Entwerfen von XAML-Code in Visual Studio und Blend für Visual Studio)](../designers/designing-xaml-in-visual-studio.md)|  
-|Neu bei .NET?|[Übersicht über .NET Framework](https://msdn.microsoft.com/en-us/library/zw4w595w\(v=vs.140\).aspx)<br /><br /> [Grundlagen der Anwendung](http://msdn.microsoft.com/Library/653da4ba-3752-4d1f-a08a-de017dc86ecc)<br /><br /> [Erste Schritte mit Visual C# und Visual Basic](https://msdn.microsoft.com/en-us/library/dd492171\(v=vs.140\).aspx)|  
-|Weitere Informationen über WPF...|[Einführung in WPF](../designers/introduction-to-wpf.md)<br /><br /> [Übersicht über XAML (WPF)](https://msdn.microsoft.com/en-us/library/ms752059\(v=vs.100\).aspx)<br /><br /> [Steuerelemente](https://msdn.microsoft.com/en-us/library/bb613551\(v=vs.100\).aspx)<br /><br /> [Übersicht zur Datenbindung](https://msdn.microsoft.com/en-us/library/ms752347\(v=vs.100\).aspx)<br /><br /> [WPF-Datenbindung mit LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml.md)|  
-|Sind Sie ein Windows Forms-Entwickler?|[Windows Forms-Steuerelemente und entsprechende WPF-Steuerelemente](https://msdn.microsoft.com/en-us/library/ms750559\(v=vs.100\).aspx)<br /><br /> [Unterstützte Szenarien beim dialogfähigen Betrieb von WPF und Windows Forms](https://msdn.microsoft.com/en-us/library/ms751797\(v=vs.100\).aspx)|  
+| Ich möchte XAML-Designtools vergleichen... |[Designing XAML in Visual Studio and Blend for Visual Studio (Entwerfen von XAML-Code in Visual Studio und Blend für Visual Studio)](../designers/designing-xaml-in-visual-studio.md)|  
+|Neu bei .NET?|[Übersicht über .NET Framework](https://msdn.microsoft.com/en-us/library/zw4w595w\(v=vs.140\).aspx)<br /><br /> [Grundlagen der Anwendung](/dotnet/standard/application-essentials)<br /><br /> [Erste Schritte mit Visual C# und Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)|  
+|Weitere Informationen über WPF...|[Einführung in WPF](../designers/introduction-to-wpf.md)<br /><br /> [Übersicht über XAML (WPF)](https://docs.microsoft.com/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br /> [Steuerelemente](https://docs.microsoft.com/dotnet/framework/wpf/controls/)<br /><br /> [Übersicht zur Datenbindung](https://docs.microsoft.com/dotnet/framework/wpf/data/data-binding-overview)<br /><br /> [WPF-Datenbindung mit LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml.md)|  
+|Sind Sie ein Windows Forms-Entwickler?|[Windows Forms Controls and Equivalent WPF Controls (Windows Forms-Steuerelemente und entsprechende WPF-Steuerelemente)](https://docs.microsoft.com/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls).aspx)<br /><br /> [Unterstützte Szenarien beim dialogfähigen Betrieb von WPF und Windows Forms](https://docs.microsoft.com/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)|  
   
 ## <a name="see-also"></a>Siehe auch  
- [Klassenbibliothek (WPF)](https://msdn.microsoft.com/en-us/library/ms753307\(v=vs.100\).aspx)   
- [Übersicht über die Anwendungsentwicklung](https://msdn.microsoft.com/en-us/library/bb613549\(v=vs.100\).aspx)   
- [.NET Framework Developer Center](http://go.microsoft.com/fwlink/?LinkId=187437)   
- [Erstellen von modernen Desktopanwendungen mit Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
+ [Klassenbibliothek (WPF)](https://docs.microsoft.com/dotnet/framework/wpf/class-library-wpf)   
+ [Übersicht über die Anwendungsentwicklung](https://docs.microsoft.com/dotnet/framework/wpf/app-development/index)   
+ [.NET Documentation home (.NET-Dokumentation: Startseite)](https://docs.microsoft.com/dotnet/index)   
+ [Create Modern Desktop Applications with Windows Presentation Foundation (Erstellen von modernen Desktopanwendungen mit Windows Presentation Foundation)](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

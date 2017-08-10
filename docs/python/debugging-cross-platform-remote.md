@@ -1,12 +1,13 @@
 ---
 title: "Plattformübergreifendes Remotedebuggen mit Python in Visual Studio | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 4/4/2017
+ms.date: 7/12/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
+ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: aa667357-763f-4ce6-8e47-48f9337658a8
@@ -14,41 +15,27 @@ caps.latest.revision: 1
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
-ms.openlocfilehash: fa3d69cbb34a61a327d0b4c27430ff04b670a568
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: b18efd1fb488c0d07b9a0ffa41f9b4e3613ef17c
 ms.contentlocale: de-de
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="remotely-debugging-python-code"></a>Remotedebuggen von Python-Code
+# <a name="remotely-debugging-python-code-on-linux"></a>Remotedebuggen von Python-Code in Linux
 
 Visual Studio kann Python-Anwendungen sowohl lokal als auch remote (siehe [Remotedebuggen](../debugger/remote-debugging.md)) auf einem Windows-Computer starten und debuggen. Mithilfe der [ptvsd-Bibliothek](https://pypi.python.org/pypi/ptvsd) kann PTVS das Remotedebuggen auch auf einem anderen Betriebssystem, einem anderen Gerät oder in einer anderen Python-Implementierung als CPython ausführen.
 
-Beim Verwenden von ptvsd hostet der Python-Code, für den das Debuggen ausgeführt werden soll, den Debugserver, an den Visual Studio angefügt werden kann. Dafür ist eine kleine Änderung an Ihrem Code erforderlich, um den Server zu importieren und zu aktivieren. Auf dem Remotecomputer müssen möglicherweise Netzwerk- oder Firewallkonfigurationen geändert werden, sodass TCP-Verbindungen zulässig sind.
+Beim Verwenden von ptvsd hostet der Python-Code, für den das Debuggen ausgeführt werden soll, den Debugserver, an den Visual Studio angefügt werden kann. Für dieses Hosting ist eine kleine Änderung an Ihrem Code erforderlich, um den Server zu importieren und zu aktivieren. Auf dem Remotecomputer müssen möglicherweise Netzwerk- oder Firewallkonfigurationen geändert werden, sodass TCP-Verbindungen zulässig sind.
 
 Eine Einführung zum Remotedebuggen sehen Sie in diesem Video: [Deep Dive: Cross-Platform Remote Debugging](https://youtu.be/y1Qq7BrV6Cc) (youtube.com, 6 Minuten, 22 Sekunden).
 
 > [!VIDEO https://www.youtube.com/embed/y1Qq7BrV6Cc]
 
-## <a name="setting-up-a-linux-machine"></a>Einrichten eines Linux-Computers
+## <a name="setting-up-a-linux-computer"></a>Einrichten eines Linux-Computers
 
-Für diese exemplarische Vorgehensweise benötigen Sie Folgendes:
+Die folgenden Elemente sind für diese exemplarische Vorgehensweise nötig:
 
 - Einen Remotecomputer, auf dem Python unter einem Betriebssystem wie Mac OSX oder Linux ausgeführt wird.
 - Einen geöffneten Port 5678 (eingehend) auf der Firewall dieses Computers. Dies ist die Standardeinstellung für das Remotedebuggen.
@@ -104,13 +91,13 @@ Weitere Informationen zum Erstellen einer Firewallregel für einen virtuellen Az
 
 In diesen Schritten legen wir einen einfachen Haltepunkt fest, um den Remoteprozess anzuhalten.
 
-1. Erstellen Sie eine Kopie der Remotedatei auf dem lokalen Computer, und öffnen Sie diese in Visual Studio. Es spielt keine Rolle, wo die Datei gespeichert wird, der Name muss aber dem Namen des Skripts auf dem Remotecomputer entsprechen, für den das Anfügen erfolgen soll.
+1. Erstellen Sie eine Kopie der Remotedatei auf dem lokalen Computer, und öffnen Sie diese in Visual Studio. Es spielt keine Rolle, wo die Datei gespeichert wird, der Name muss aber dem Namen des Skripts auf dem Remotecomputer entsprechen.
 
 1. (Optional) Um auf dem lokalen Computer über IntelliSense für ptvsd zu verfügen, können Sie das ptvsd-Paket in Ihrer Python-Umgebung installieren.
 
 1. Klicken Sie auf **Debuggen > An den Prozess anhängen**.
 
-1. Legen Sie im nun angezeigten Dialogfeld **An den Prozess anhängen** den **Verbindungstyp** auf **Python remote (ptvsd)** fest. (In älteren Versionen von Visual Studio wird dies als **Transport** und **Python-Remotedebuggen** bezeichnet.)
+1. Legen Sie im nun angezeigten Dialogfeld **An den Prozess anhängen** den **Verbindungstyp** auf **Python remote (ptvsd)** fest. (In älteren Versionen von Visual Studio werden diese Befehle als **Transport** und **Python-Remotedebuggen** bezeichnet.)
 
 1. Geben Sie in das Feld **Verbindungsziel** (in älteren Versionen als **Qualifizierer** bezeichnet) `tcp://<secret>@<ip_address>:5678` ein, wobei `<secret>` für die übergebene Zeichenfolge `enable_attach` im Python-Code, `<ip_address>` für den Remotecomputer (entweder eine explizite Adresse oder ein Name wie myvm.cloudapp.net) und `:5678` für die Portnummer beim Remotedebuggen steht.
 
@@ -119,7 +106,7 @@ In diesen Schritten legen wir einen einfachen Haltepunkt fest, um den Remoteproz
 
 1. Drücken Sie die EINGABETASTE, um die Liste der auf diesem Computer verfügbaren ptvsd-Prozesse aufzufüllen:
 
-    ![Eingeben des Verbindungsziels und Auflisten von Prozessen](~/python/media/remote-debugging-qualifier.png)
+    ![Eingeben des Verbindungsziels und Auflisten von Prozessen](media/remote-debugging-qualifier.png)
 
     Wenn Sie nach dem Auffüllen dieser Liste ein anderes Programm auf dem Remotecomputer starten, klicken Sie auf die Schaltfläche **Aktualisieren**.
 
@@ -127,11 +114,9 @@ In diesen Schritten legen wir einen einfachen Haltepunkt fest, um den Remoteproz
 
 1. Visual Studio wechselt dann in den Debugmodus, während das Skript weiterhin auf dem Remotecomputer ausgeführt wird, und bietet alle üblichen Funktionen zum [Debuggen](debugging.md). Setzen Sie zum Beispiel einen Haltepunkt in die `if guess < number:`-Zeile, wechseln Sie dann zum Remotecomputer, und geben Sie einen anderen Schätzwert ein. Danach stoppt Visual Studio auf dem lokalen Computer an diesem Haltepunkt, zeigt lokale Variablen an usw.:
 
-    ![Haltepunkt wird erreicht](~/python/media/remote-debugging-breakpoint-hit.png)
+    ![Haltepunkt wird erreicht](media/remote-debugging-breakpoint-hit.png)
 
 1. Wenn Sie das Debuggen beenden, wird Visual Studio vom Programm getrennt, das weiterhin auf dem Remotecomputer ausgeführt wird. ptvsd ist ebenfalls weiterhin für das Anfügen von Debuggern bereit, sodass Sie den Prozess jederzeit wiederaufnehmen können.
-
-1. Wenn Sie das Remoteprogramm beenden, trennt Visual Studio den Debugger nicht automatisch, aber 
 
 ### <a name="connection-troubleshooting"></a>Problembehandlung bei der Verbindung
 
@@ -183,7 +168,7 @@ In der Standardeinstellung ist die Verbindung mit dem ptvsd-Remotedebugserver nu
 
 1. Wiederholen Sie den Anfügungsprozess wie zuvor beschrieben in Visual Studio, und verwenden Sie nun `tcps://` als Protokoll für das **Verbindungsziel** (oder **Qualifizierer**).
 
-    ![Auswählen des Transports für das Remotedebuggen über SSL](~/python/media/remote-debugging-qualifier-ssl.png)
+    ![Auswählen des Transports für das Remotedebuggen über SSL](media/remote-debugging-qualifier-ssl.png)
 
 ### <a name="warnings"></a>Warnungen
 
@@ -191,11 +176,11 @@ Visual Studio meldet Ihnen beim Herstellen einer Verbindung über SSL mögliche 
 
 1. Wenn die untenstehende Warnung „Das Remotezertifikat ist nicht vertrauenswürdig“ angezeigt wird, bedeutet dies, dass Sie das Zertifikat nicht ordnungsgemäß der vertrauenswürdigen Stammzertifizierungsstelle hinzugefügt haben. Überprüfen Sie diese Schritte, und versuchen Sie es erneut.
 
-    ![SSL-Zertifikatwarnung Vertrauenswürdigkeit](~/python/media/remote-debugging-ssl-warning.png)
+    ![SSL-Zertifikatwarnung Vertrauenswürdigkeit](media/remote-debugging-ssl-warning.png)
 
 1. Wenn die untenstehende Warnung „Der Name des Remotezertifikats stimmt nicht mit dem Hostnamen überein“ angezeigt wird, bedeutet dies, dass Sie bei der Erstellung des Zertifikats als **gemeinsamen Namen** nicht den richtigen Hostnamen oder nicht die richtige IP-Adresse eingegeben haben.
 
-    ![SSL-Zertifikatwarnung Hostname](~/python/media/remote-debugging-ssl-warning2.png)
+    ![SSL-Zertifikatwarnung Hostname](media/remote-debugging-ssl-warning2.png)
 
 > [!Warning]
 > Derzeit hängt sich Visual Studio 2017 auf, wenn Sie diese Warnungen ignorieren. Achten Sie darauf, dass Sie alle Probleme beheben, bevor Sie versuchen, eine Verbindung herzustellen.

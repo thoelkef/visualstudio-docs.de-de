@@ -13,26 +13,11 @@ caps.latest.revision: 7
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 7716a0e9249c67760ae7b31160dcae89b77b9ca7
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: b42e50dcfc4820b750c04085f1e881ee25f786f9
 ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Exemplarische Vorgehensweise: Erstellen einer WPF-Desktopanwendung, die mit einem Azure Mobile Service verbunden ist
@@ -41,7 +26,7 @@ Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Deskt
 ##  <a name="Requirements"></a> Erforderliche Komponenten  
  Für diese exemplarische Vorgehensweise wird Folgendes benötigt:  
   
--   Visual Studio 2015 – beliebige Version, die die WPF-Entwicklung unterstützt.  
+-   Visual Studio 2017 oder eine beliebige Version, die die WPF-Entwicklung unterstützt.  
   
 -   Ein aktives Microsoft Azure-Konto.  
   
@@ -581,8 +566,8 @@ Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Deskt
 ## <a name="next-steps"></a>Nächste Schritte  
  Sie haben ein recht einfaches Beispiel einer WPF-Desktopanwendung mit einem Azure-Backend ausgeführt. Echte Anwendungen sind natürlich viel komplexer, aber für diese gelten einige grundlegende Konzepte. Weitere Informationen finden Sie unter [WPF in .NET Framework](https://msdn.microsoft.com/en-us/library/ms754130\(v=vs.100\).aspx).  
   
- Sie können eine Benutzeroberfläche viel ansprechender gestalten, indem Sie dieser Farben, Formen, Grafiken und Animationen hinzufügen. Informationen hierzu finden Sie unter [Designing XAML in Visual Studio and Blend for Visual Studio (Entwerfen von XAML-Code in Visual Studio und Blend für Visual Studio)](../designers/designing-xaml-in-visual-studio.md).  
-  
+ Sie können eine Benutzeroberfläche viel ansprechender gestalten, indem Sie dieser Farben, Formen, Grafiken und Animationen hinzufügen. Weitere Informationen finden Sie unter [Erstellen einer Benutzeroberfläche mit dem XAML-Designer in Visual Studio](creating-a-ui-by-using-xaml-designer-in-visual-studio.md) und [Erstellen einer Benutzeroberfläche mit Blend für Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md). Einen Vergleich der Tools finden Sie unter [Designing XAML in Visual Studio and Blend for Visual Studio (Entwerfen von XAML-Code in Visual Studio und Blend für Visual Studio)](../designers/designing-xaml-in-visual-studio.md).  
+
  Sie können eine Verbindung mit vorhandenen SQL-Datenbanken oder anderen Datenquellen mit Azure Mobile Services herstellen. Weitere Informationen finden Sie unter [Mobile Services – Dokumentation](http://azure.microsoft.com/en-us/services/app-service/mobile/).  
   
 ## <a name="see-also"></a>Siehe auch  

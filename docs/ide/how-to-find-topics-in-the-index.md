@@ -1,46 +1,64 @@
 ---
-title: "Gewusst wie: Suchen vom Themen im Index | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Indexregisterkarte [Help Viewer 2.0]"
-  - "Help Viewer 2.0, Verwenden des Indexes"
-  - "Help Viewer 2.0, Registerkarte "Index""
-  - "Index nutzen [Help Viewer 2.0]"
-  - "Index filtern [Help Viewer 2.0]"
-  - "Help Viewer 2.0, Index filtern"
+title: 'Gewusst wie: Suchen vom Themen im Index | Microsoft-Dokumentation'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Index tab [Help Viewer 2.0]
+- Help Viewer 2.0, using the index
+- Help Viewer 2.0, Index tab
+- using the index [Help Viewer 2.0]
+- index filtering [Help Viewer 2.0]
+- Help Viewer 2.0, index filtering
 ms.assetid: cb071e93-f297-459c-a6fa-8ae0dabc42a4
 caps.latest.revision: 15
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 15
----
-# Gewusst wie: Suchen vom Themen im Index
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 63aad78bdc7df685ca3a73ec16a9cbc87b78151f
+ms.openlocfilehash: 884530b6c2ebc44f935dd814a39bbf0495764303
+ms.contentlocale: de-de
+ms.lasthandoff: 08/08/2017
 
-Der Index enthält eine Liste der Schlüsselwörter, die den Themen im installierten Inhalt zugeordnet sind.  Jedem Thema können mehrere Schlüsselwörter und jedem Schlüsselwort mehrere Themen zugeordnet sein.  Verwenden Sie diesen Index genauso wie Sie einen Index in einem Buch verwenden würden.  
+---
+# <a name="how-to-find-topics-in-the-index"></a>Gewusst wie: Suchen vom Themen im Index
+Der Index enthält eine Liste mit Stichwörtern, die Themen in den installierten Inhalten zugeordnet sind. Jedem Thema ist möglicherweise mehr als ein Stichwort zugeordnet, und jedem Stichwort können mehrere Themen zugeordnet sein. Nutzen Sie diesen Index genau so, wie Sie den Index eines Buchs verwenden würden.  
   
-### So suchen Sie ein Thema mithilfe des Index  
+### <a name="to-find-a-topic-by-using-the-index"></a>So suchen Sie ein Thema mithilfe des Indexes  
   
 1.  Führen Sie auf der Registerkarte **Index** eine der folgenden Aufgaben aus:  
   
-    -   Geben Sie das Schlüsselwort im Textfeld an, nach dem gesucht werden soll.  Geben Sie beispielsweise "Update" an, um nach Themen mit Schlüsselwörtern wie "Update", "Updates" und "Updaten" zu suchen.  
+    -   Geben Sie das zu suchende Stichwort im Textfeld ein. Geben Sie beispielsweise „Aktualisieren“ ein, um Themen mit Stichwörtern wie „aktualisieren“, „aktualisiert“ und „wird aktualisiert“ zu finden.  
   
-         Indem Sie die Filterschaltfläche oben auf der Registerkarte wählen, können Sie entweder alle Einträge anzeigen, die den von Ihnen angegebenen Text enthalten, oder nur jene Einträge anzeigen, die mit dem von Ihnen angegebenen Text beginnen.  
+         Mithilfe der Filterschaltfläche nahe dem oberen Rand der Registerkarte können Sie entweder alle Einträge anzeigen, die den angegebenen Text enthalten oder nur die Einträge, die mit dem angegebenen Text beginnen.  
   
         > [!NOTE]
-        >  Wenn die Filterschaltfläche auf einem dunkleren Hintergrund mit einem Rahmen angezeigt wird, müssen Einträge den Text enthalten, den Sie angeben.  Wenn der Hintergrund und der Rahmen nicht angezeigt werden, müssen die Einträge mit dem von Ihnen angegebenen Text beginnen.  
+        >  Wenn die Filterschaltfläche auf einem dunkleren Hintergrund mit einem Rahmen angezeigt wird, müssen die Einträge den von Ihnen angegebenen Text enthalten. Wenn Hintergrund und Rahmen nicht angezeigt werden, müssen die Einträge mit dem angegebenen Text beginnen.  
   
-    -   Führen Sie einen Bildlauf durch den Index durch, und wählen Sie ein Schlüsselwort aus.  
+    -   Scrollen Sie durch den Index, und wählen Sie ein Stichwort aus.  
   
-     Wenn das von Ihnen angegebene Schlüsselwort nur mit einem Thema verknüpft ist, wird es angezeigt.  Andernfalls wird eine Liste aller Themen, die diesem Schlüsselwort zugeordnet sind, angezeigt.  
+     Wenn das angegebene Stichwort nur einem Thema zugeordnet ist, wird dies angezeigt. Andernfalls wird eine Liste aller Themen angezeigt, die dem betreffenden Stichwort zugeordnet sind.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Indexsuchtipps](../ide/index-search-tips.md)

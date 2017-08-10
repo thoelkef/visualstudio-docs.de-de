@@ -28,10 +28,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 65bceca75b87aaf187926ebbed1a54ce4f0e8eec
-ms.openlocfilehash: db7c9121beea3b6a27a435680dfe01cbc8cba8b6
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
+ms.openlocfilehash: 845811bb9ee9552f8fc66b2d2b4b24ecdb04baf0
+ms.contentlocale: de-de
+ms.lasthandoff: 06/30/2017
 
 ---
 # <a name="perftips"></a>PerfTips
@@ -42,7 +43,7 @@ Visual Studio-Debugger *PerfTips* und die in den Debugger integrierten **Diagnos
 ## <a name="perftips"></a>PerfTips  
  Wenn der Debugger die Ausführung an einem Haltepunkt oder während einer schrittweisen Ausführung stoppt, wird die verstrichene Zeit zwischen der Pause und dem vorherigen Haltepunkt als QuickInfo im Editor-Fenster angezeigt. Weitere Informationen finden Sie unter [PerfTips: Performance Information at-a-glance while Debugging with Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx).  
   
- ![PerfTip](~/profiling/media/dbgdiag_perf_perftip.png "DBGDIAG_PERF_PerfTip")  
+ ![PerfTip](../profiling/media/dbgdiag_perf_perftip.png "DBGDIAG_PERF_PerfTip")  
   
 ## <a name="diagnostics-tools-window"></a>Fenster "Diagnosetools"  
  Haltepunkte und die zugehörigen Zeitsteuerungsdaten werden im Fenster Diagnosetools aufgezeichnet.  
@@ -72,3 +73,6 @@ Visual Studio-Debugger *PerfTips* und die in den Debugger integrierten **Diagnos
 1.  Wählen Sie im Menü **Debuggen** den Befehl **Optionen**aus.  
   
 2.  Aktivieren oder deaktivieren Sie **Aktivieren der Diagnosetools während des Debuggens**.
+
+## <a name="see-also"></a>Siehe auch
+ [Profilerstellung in Visual Studio](../profiling/index.md) [Tour zur Profilerstellungsfunktion](../profiling/profiling-feature-tour.md)

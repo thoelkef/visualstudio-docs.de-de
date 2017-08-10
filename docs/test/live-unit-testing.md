@@ -27,10 +27,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: b699132bf1a31d3ef9dc3ba5af3f99c22890c632
+ms.sourcegitcommit: c559290c8e88c8b4e37feabc7014188fad15434d
+ms.openlocfilehash: 0a939044b9806236cf55333c30bce24ae0fdb28a
 ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 
@@ -39,10 +39,9 @@ ms.lasthandoff: 05/13/2017
 Wenn Sie eine Anwendung entwickeln, führt Live Unit Testing automatisch alle betroffenen Komponententests im Hintergrund aus und zeigt die Ergebnisse und die Codeabdeckung in der Visual Studio-IDE in Echtzeit live an. Wenn Sie Ihren Code ändern, bietet Live Unit Testing Feedback dazu, welche Auswirkungen Ihre Änderungen auf vorhandene Tests haben und ob der neue von Ihnen hinzugefügte Code von einem oder mehreren vorhandenen Tests abgedeckt wird. So werden Sie daran erinnert, Komponententests zu schreiben, während Sie Fehler beheben oder neue Funktionen hinzufügen.
 
 > [!NOTE]
-> Live Unit Testing steht für C#- und Visual Basic-Projekte zur Verfügung, die auf .NET Framework in der Enterprise-Edition von Visual Studio 2017 ausgerichtet sind. Derzeit ist diese Funktion nicht für .NET Core verfügbar.
+> Live Unit Testing steht für C#- und Visual Basic-Projekte zur Verfügung, die auf .NET Core und .NET Framework in der Enterprise-Edition von Visual Studio 2017 ausgerichtet sind.
 
 ## <a name="supported-test-frameworks"></a>Unterstützte Testframeworks
-
 Live Unit Testing kann mit den drei gängigen Frameworks für Komponententests verwendet werden, die in der folgenden Tabelle aufgeführt sind. Die unterstützte Mindestversion der Adapter und Frameworks ist ebenfalls in der Tabelle aufgeführt. Die Frameworks für Komponententests sind auf „NuGet.org“ verfügbar.
  
 <table> 
@@ -63,8 +62,8 @@ Live Unit Testing kann mit den drei gängigen Frameworks für Komponententests v
 </tr>
 <tr>
    <td>MSTest</td>
-   <td>MSTest.TestAdapter 1.1.4-preview</td>
-   <td>MSTest.TestFramework 1.0.5-preview</td>
+   <td>MSTest.TestAdapter 1.1.11</td>
+   <td>MSTest.TestFramework 1.1.11</td>
 </tr>
 </table>
 
@@ -72,11 +71,11 @@ Wenn in vorhandenen Projekten Verweise auf ältere Adapter und Testframeworks vo
 
 In einigen Fällen müssen Sie explizit die NuGet-Pakete wiederherstellen, auf die die Projekte in der Projektmappe verweisen, damit Live Unit Testing funktioniert. Hierzu können Sie entweder die Projektmappe explizit erstellen (wählen Sie im obersten Visual Studio-Menü **Erstellen** und dann **Projektmappe neu erstellen** aus) oder Pakete in der Projektmappe wiederherstellen (klicken Sie mit der rechten Maustaste auf die Projektmappe, und wählen Sie **NuGet-Pakete wiederherstellen** aus), bevor Sie Living Unit Testing aktivieren. 
 
-#    <a name="configuring-live-unit-testing"></a>Konfigurieren von Live Unit Testing
+#   <a name="configuring-live-unit-testing"></a>Konfigurieren von Live Unit Testing
 
 Sie können Live Unit Testing konfigurieren, indem Sie im obersten Visual Studio-Menü **Extras**, **Optionen** und dann im Dialogfeld **Optionen** im linken Bereich **Live Unit Testing** auswählen. Die folgende Abbildung zeigt die verfügbaren Konfigurationsoptionen für Live Unit Testing in dem Dialogfeld.
 
-  ![Bild](~/test/media/lut-options.png)
+  ![Bild](./media/lut-options.png)
 
 Die konfigurierbaren Optionen umfassen Folgendes:
 
@@ -101,25 +100,25 @@ Sie können Live Unit Testing jederzeit vorübergehend anhalten oder vollständi
 - **Beenden**: Beendet Live Unit Testing vollständig. Live Unit Testing verwirft alle Daten, die gesammelt wurden.
 - **Neu starten**: Dies entspricht dem Auswählen von **Beenden** gefolgt von **Starten** aus dem **Live Unit Testing**-Menü.
 
-##    <a name="viewing-coverage-visualization-in-the-editor-as-you-type"></a>Anzeigen der Abdeckungsvisualisierung im Editor während der Eingabe
+##  <a name="viewing-coverage-visualization-in-the-editor-as-you-type"></a>Anzeigen der Abdeckungsvisualisierung im Editor während der Eingabe
 
 Nach der Aktivierung aktualisiert Live Unit Testing alle Codezeilen im Visual Studio-Editor, um Ihnen zu zeigen, ob der Code, den Sie schreiben, von Komponententests abgedeckt ist, und ob die Tests, die ihn abdecken, erfolgreich sind.  Die folgende Abbildung zeigt Codezeilen mit erfolgreichen und fehlgeschlagenen Tests sowie Codezeilen, die nicht durch Tests abgedeckt sind. Zeilen mit einem grünen „✓“ werden nur durch erfolgreiche Tests abgedeckt, Zeilen mit einem roten „🞩“ werden von einem oder mehreren fehlgeschlagenen Tests abgedeckt, und Zeilen mit einem blauen „–“ werden nicht von Tests abgedeckt.
 
-  ![Bild](~/ide/media/lut-codewindow.png)
+  ![Bild](./media/lut-codewindow.png)
 
 Die Abdeckungsvisualisierung von Live Unit Testing wird sofort aktualisiert, wenn Sie Code im Code-Editor ändern. Während der Verarbeitung der Änderungen wird die Visualisierung geändert, um anzugeben, dass die Daten nicht auf dem neuesten Stand sind. Dazu wird ein rundes Uhrensymbol unterhalb der Symbole für erfolgreiche, fehlgeschlagene und nicht abgedeckte Test angezeigt, wie in der folgenden Abbildung dargestellt.
 
-  ![Bild](~/test/media/lut-codeupdating.png)
+  ![Bild](./media/lut-codeupdating.png)
  
 ## <a name="getting-information-on-successful-or-failed-tests"></a>Abrufen von Informationen zu erfolgreichen oder fehlgeschlagenen Tests
 
 Wenn Sie den Mauszeiger im Codefenster über das Symbol für erfolgreiche oder fehlgeschlagene Tests bewegen, können Sie sehen, wie viele Tests diese Zeile betreffen. Wenn Sie auf das Symbol klicken, sehen Sie den Status der einzelnen Tests, wie in der folgenden Abbildung dargestellt.
  
-  ![Bild](~/test/media/lut-failedinfo.png) 
+  ![Bild](./media/lut-failedinfo.png) 
 
 Wenn Sie den Mauszeiger über den fehlgeschlagenen Test in der QuickInfo bewegen, wird sie erweitert, und es werden zusätzliche Informationen zu diesem Fehler bereitgestellt, wie in der folgenden Abbildung dargestellt. Wenn Sie in der QuickInfo auf den fehlgeschlagenen Test klicken, können Sie direkt zum Test navigieren.
 
-  ![Bild](~/test/media/lut-failedmsg.png) 
+  ![Bild](./media/lut-failedmsg.png) 
 
 ## <a name="diagnosing-and-correcting-test-failures"></a>Diagnose und Korrektur von fehlgeschlagenen Tests
 
@@ -143,8 +142,8 @@ Bei Projektmappen mit vielen Testprojekten können Sie steuern, welche Projekte 
 
 Wenn Sie z.B. eine Projektmappe mit Hunderten von Testprojekten haben, können Sie eine bestimmte Reihe von Testprojekten für Live Unit Testing auswählen. Um die einzelnen Projekte in Komponententests auszuwählen, gehen Sie nach dem Start von Live Unit Testing wie folgt vor:
 
-1.    Klicken Sie mit der rechten Maustaste im Projektmappen-Explorer auf die Projektmappe, und wählen Sie **Livetests** und dann **Ausschließen** aus, um die gesamte Projektmappe auszuschließen.
-2.    Klicken Sie mit der rechten Maustaste auf jedes Testprojekt, das Sie in die Tests einschließen möchten, und wählen Sie **Livetests** und dann **Einschließen** aus.
+1.  Klicken Sie mit der rechten Maustaste im Projektmappen-Explorer auf die Projektmappe, und wählen Sie **Livetests** und dann **Ausschließen** aus, um die gesamte Projektmappe auszuschließen.
+2.  Klicken Sie mit der rechten Maustaste auf jedes Testprojekt, das Sie in die Tests einschließen möchten, und wählen Sie **Livetests** und dann **Einschließen** aus.
  
 Verwenden Sie das Code-Editor-Fenster zum Einschließen oder Ausschließen einzelner Testmethoden. Klicken Sie mit der rechten Maustaste auf die Signatur der Testmethode im Code-Editor-Fenster, und wählen Sie **Livetests** und **Einschließen** oder **Livetests** und **Ausschließen** aus. 
 
