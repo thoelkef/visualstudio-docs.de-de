@@ -16,10 +16,10 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 5b509a46dd3dbee3a45ab2eac57242636beee17b
+ms.sourcegitcommit: c00adbbabf0d3b82acb17f4a269dfc693246bc69
+ms.openlocfilehash: 56fccdd5e103cf29c8ea4a93ab80de7187275642
 ms.contentlocale: de-de
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -176,7 +176,7 @@ Anstatt die Kudu-Konsole über das Azure-Portal zu verwenden, können Sie Befehl
 }
 ```
 
-Informationen zu Befehlen und Authentifizierung finden Sie in der [Kudu-Dokumentation](https://github.com/projectkudu/kudu/wiki/REST-API). Sie können auch die Anmeldeinformationen mithilfe der [`az webapp deployment list-publishing-profiles command`](https://docs.microsoft.com/cli/azure/webapp/deployment#list-publishing-profiles) aus der Azure-CLI anzeigen. Es ist auch eine Hilfsbibliothek für das Posten von Kudu-Befehlen auf GitHub verfügbar] (https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42).
+Informationen zu Befehlen und Authentifizierung finden Sie in der [Kudu-Dokumentation](https://github.com/projectkudu/kudu/wiki/REST-API). Sie können auch die Anmeldeinformationen mithilfe der [`az webapp deployment list-publishing-profiles command`](https://docs.microsoft.com/cli/azure/webapp/deployment#list-publishing-profiles) aus der Azure-CLI anzeigen. Eine Hilfsbibliothek zum Bereitstellen von Kudu-Befehlen ist auch [auf GitHub verfügbar](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42).
 
 
 ### <a name="copying-libraries-into-app-source-code"></a>Kopieren von Bibliotheken in den Anwendungsquellcode
@@ -188,3 +188,4 @@ Der Nachteil ist, dass diese Bibliotheken genau mit der Version von Python auf d
 ### <a name="avoiding-virtual-environments"></a>Vermeiden virtueller Umgebungen
 
 Obwohl das lokale Arbeiten in einer virtuellen Umgebung Ihnen dabei helfen kann, die von Ihrer Website benötigten Abhängigkeiten vollständig zu verstehen, wird das Verwenden von virtuellen Umgebungen in App Service nicht empfohlen. Installieren Sie stattdessen Bibliotheken in Ihrem Python-Hauptordner und stellen Sie diese mit Ihrer Anwendung bereit, um zu vermeiden, dass in Konflikt stehenden Abhängigkeiten entstehen.
+

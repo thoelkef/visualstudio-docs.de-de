@@ -35,10 +35,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: 5c28e68b89f6583dc35a91b275693c11e0259dfd
-ms.openlocfilehash: 6e4094925eec3e4a8768219180e75fa9d1f1fa03
+ms.sourcegitcommit: 14c21f67beb92d3b13a5c54c755ccb846d116a9c
+ms.openlocfilehash: aaa19a3a818c3fa3196d79959ee30c5eae4c1b5f
 ms.contentlocale: de-de
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 08/04/2017
 
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>Einführung in die Leistungsprofilerstellung
@@ -48,7 +48,9 @@ Wenn der Debugger angehalten wird, sammelt das Tool **CPU-Auslastung** Informati
 
 Der Diagnosehub bietet Ihnen viele weitere Optionen zum Ausführen und Verwalten Ihrer Diagnosesitzung. Wenn Sie von **CPU-Auslastung** nicht die benötigten Daten erhalten, stehen andere [Profiling Tools (Profilerstellungstools)](../profiling/Profiling-Tools.md) zur Verfügung, um andere Arten von hilfreichen Informationen zu erhalten. In vielen Fällen kann der Leistungsengpass Ihrer Anwendung durch etwas anderes als die CPU ausgelöst werden, z.B. durch den Speicher, das Rendern der Benutzeroberfläche oder die Anforderungszeit des Netzwerks. Der Diagnosehub bietet Ihnen viele andere Optionen zum Aufzeichnen und Analysieren dieser Art von Daten.
 
-Sie können sich auch ein [Video zum Verwenden von Diagnosetools (in englischer Sprache)](#video) anschauen, in dem Sie erfahren, wie Sie die CPU-Auslastung und die Speicherauslastung analysieren.
+|         |         |
+|---------|---------|
+| ![Video ansehen](../install/media/video-icon.png "WatchVideo") | [Sehen Sie sich ein Video an](#video), in dem die Diagnosetools erläutert werden, mit denen Sie die CPU-Auslastung und die Speicherauslastung analysieren können. |
 
 Dieses Thema behandelt die Analyse der CPU-Auslastung in einem normalen Debuggingworkflow. Sie können die CPU-Auslastung auch ohne Debugger analysieren, oder indem Sie eine ausgeführte App als Ziel setzen. Weitere Informationen finden Sie unter [Run profiling tools without debugging (Profilerstellungstools ohne Debuggen ausführen)](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
   

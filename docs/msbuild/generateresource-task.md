@@ -37,11 +37,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 11a9cee75f912c5fb31cf4a031644abe9c63d744
-ms.openlocfilehash: 029b5627cf8f7213dfe3bab233db01fe27aa6c49
+ms.translationtype: HT
+ms.sourcegitcommit: c00adbbabf0d3b82acb17f4a269dfc693246bc69
+ms.openlocfilehash: d1e2efc557f90d01a955710d53a1f2724b5f5f7d
 ms.contentlocale: de-de
-ms.lasthandoff: 06/03/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 # <a name="generateresource-task"></a>GenerateResource-Aufgabe
@@ -58,7 +58,7 @@ Konvertiert zwischen TXT- und RESX-Dateien (im XML-basierten Ressourcenformat) u
 |`ExecuteAsTool`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, werden „tlbimp.exe“ und „aximp.exe“ von dem entsprechenden Zielframework aus prozessextern ausgeführt, um die erforderlichen Wrapperassemblys zu generieren. Dieser Parameter ermöglicht die Festlegung von Zielversionen von `ResolveComReferences`.|  
 |`FilesWritten`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Enthält die Namen aller auf den Datenträger geschriebenen Dateien. Dies schließt ggf. auch die Cachedatei ein. Dieser Parameter ist hilfreich für Implementierungen des Bereinigens.|  
 |`MinimalRebuildFromTracking`|Optionaler `Boolean` -Parameter.<br /><br /> Ruft einen Schalter ab, der angibt, ob ein nachverfolgter inkrementeller Build verwendet wird, oder legt ihn fest. Wenn `true`, wird der inkrementelle Build aktiviert; andernfalls wird eine erneute Erstellung erzwungen.|  
-|`NeverLockTypeAssemblies`|Optionaler `Boolean` -Parameter.<br /><br /> Gibt den Namen der generierten Dateien an, z.B. der RESOURCES-Dateien. Wenn Sie keinen Namen angeben, wird der Name der entsprechenden Eingabedatei verwendet, und die erstellte RESOURCES-Datei wird in dem Verzeichnis gespeichert, das die Eingabedatei enthält.|  
+|`NeverLockTypeAssemblies`|Optionaler `Boolean` -Parameter.<br /><br /> Dient zum Abrufen oder Festlegen eines booleschen Werts, der angibt, ob eine neue [AppDomain](https://docs.microsoft.com/dotnet/api/system.appdomain) zum Auswerten der Ressourcendateien (RESX) erstellt werden soll (true) oder ob eine neue [AppDomain](https://docs.microsoft.com/dotnet/api/system.appdomain) nur erstellt werden soll, wenn die Ressourcendateien auf die Assembly eines Benutzers verweisen (false).|  
 |`OutputResources`|Optionaler <xref:Microsoft.Build.Framework.ITaskItem>`[]` -Ausgabeparameter.<br /><br /> Gibt den Namen der generierten Dateien an, z.B. der RESOURCES-Dateien. Wenn Sie keinen Namen angeben, wird der Name der entsprechenden Eingabedatei verwendet, und die erstellte RESOURCES-Datei wird in dem Verzeichnis gespeichert, das die Eingabedatei enthält.|  
 |`PublicClass`|Optionaler `Boolean` -Parameter.<br /><br /> Wenn `true`, wird eine stark typisierte Ressourcenklasse als öffentliche Klasse erstellt.|  
 |`References`|Optionaler `String[]` -Parameter.<br /><br /> Verweise, aus denen Typen in RESX-Dateien geladen werden. Datenelemente der RESX-Datei können möglicherweise vom Typ .NET sein. Wenn die RESX-Datei gelesen wird, muss dies aufgelöst werden. In der Regel wird dies mit Typladungsregeln erfolgreich aufgelöst. Wenn Sie in `References` Assemblys angeben, haben diese Vorrang.<br /><br /> Dieser Parameter ist für stark typisierte Ressourcen nicht erforderlich.|  
@@ -112,3 +112,4 @@ Konvertiert zwischen TXT- und RESX-Dateien (im XML-basierten Ressourcenformat) u
 ## <a name="see-also"></a>Siehe auch  
  [Tasks (Aufgaben)](../msbuild/msbuild-tasks.md)   
  [Task Reference](../msbuild/msbuild-task-reference.md) (MSBuild-Aufgabenreferenz)
+
