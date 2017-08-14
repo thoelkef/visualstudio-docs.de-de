@@ -5,7 +5,7 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 05/10/2017
+ms.date: 08/09/2017
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -62,6 +62,7 @@ Weitere Informationen zur Verwendung dieser IDs finden Sie auf der Seite [Verwen
 Komponenten-ID | Name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.0.26208.0 | Erforderlich
+
 ## <a name="unaffiliated-components"></a>Nicht zugeordnete Komponenten
 
 Dies sind Komponenten, die in keiner Arbeitsauslastung enthalten sind, jedoch als einzelne Komponenten ausgewählt werden können.
@@ -69,6 +70,7 @@ Dies sind Komponenten, die in keiner Arbeitsauslastung enthalten sind, jedoch al
 Komponenten-ID | Name | Version
 --- | --- | ---
 n/v | nicht verfügbar | n/v
+
 
 ## <a name="see-also"></a>Siehe auch
 
