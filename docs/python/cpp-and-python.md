@@ -148,7 +148,7 @@ Weitere Informationen finden Sie unter [Installing Python Support for Visual Stu
         return (1 + pow(e, (-2 * x))) / (2 * pow(e, -x));
     }
 
-    double tanh(x) {
+    double tanh(double x) {
         return sinh(x) / cosh(x);
     }
     ```
@@ -163,7 +163,7 @@ Sie müssen die exportierte Methode so verändern, dass Sie mit den Python-Typen
 1. Fügen Sie `Python.h` oben zur C++-Datei hinzu:
 
     ```cpp
-    include <Python.h>
+    #include <Python.h>
     ```
 
 1. Ändern Sie die `tanh`-Methode, um die Python-Typen zu akzeptieren und zurückzugeben:
