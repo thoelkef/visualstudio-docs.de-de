@@ -2,7 +2,7 @@
 title: "Installieren von Visual Studio 2017 | Microsoft-Dokumentation"
 description: "Erfahren Sie Schritt für Schritt, wie Sie Visual Studio installieren."
 ms.custom: 
-ms.date: 05/16/2017
+ms.date: 07/28/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -21,32 +21,17 @@ ms.assetid: 8d4297e4-9f43-4f12-95ec-22e61154480e
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9713f09b7379b14b9362e3853a910948935c501e
-ms.openlocfilehash: 9f7c1d33191adf3fb54cf59cd98ae5fffe14eee4
+ms.translationtype: HT
+ms.sourcegitcommit: 24fa929fd241a8f9baec5eaa514db459ed014a60
+ms.openlocfilehash: 03c763cb4558c5948424b1f0cdc9f077594c12e7
 ms.contentlocale: de-de
-ms.lasthandoff: 05/31/2017
+ms.lasthandoff: 07/31/2017
 
 ---
 # <a name="install-visual-studio-2017"></a>Installieren von Visual Studio 2017
-Willkommen Sie bei einer neuen Möglichkeit zur Installation von Visual Studio. Mit unserer neuesten Version können Sie nun ganz einfach nur die Funktionen auswählen und installieren, die Sie benötigen. Gleichzeitig wurde der Mindestbedarf an Speicherplatz für Visual Studio reduziert, sodass die Installation schneller erfolgt und mit geringeren Systembeeinträchtigungen verbunden ist, als je zuvor.
+Willkommen Sie bei einer neuen Möglichkeit zur Installation von Visual Studio. In unserer neuesten Version ist es noch einfacher, genau die Features auszuwählen und zu installieren, die Sie benötigen. Wir haben außerdem den mindestens benötigten Speicherplatz weiter verringert, sodass Visual Studio sich schneller und mit geringeren Systemauswirkungen als je zuvor installieren lässt.
 
-Sie möchten mehr zu weiteren Neuerungen wissen? Sehen Sie sich die [Anmerkungen zur Version](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes) an. Ausführlichere Informationen zum neuen Design der Installationsumgebung finden Sie in den Blogbeiträgen [Faster and leaner Visual Studio installer (Visual Studio-Installer schneller und schlanker)](https://blogs.msdn.microsoft.com/visualstudio/2016/04/01/faster-leaner-visual-studio-installer/) sowie [Anatomy of a low-impact Visual Studio installation (Anatomie einer Visual Studio-Installation mit geringen Auswirkungen)](https://blogs.msdn.microsoft.com/visualstudio/2016/04/25/anatomy-of-a-low-impact-visual-studio-install/).  
+Sie möchten mehr zu weiteren Neuerungen in dieser Version wissen? Sehen Sie sich die [Anmerkungen zur Version](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes) an.   
 
 Bereit für die Installation? Schauen Sie sich diese schrittweise Vorführung an.
 
@@ -54,18 +39,21 @@ Bereit für die Installation? Schauen Sie sich diese schrittweise Vorführung an
 Prüfen Sie vor der Installation die [Systemanforderungen](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs), um sicherzugehen, dass Ihr Computer für die Installation von Visual Studio 2017 geeignet ist.
 
 ## <a name="download-visual-studio"></a>Herunterladen von Visual Studio
-Zuerst müssen Sie Visual Studio herunterladen. Klicken Sie dazu auf diese Schaltfläche, dann auf **Speichern** und anschließend auf **Ordner öffnen**.
+Laden Sie danach die Visual Studio-Bootstrapperdatei herunter. Klicken Sie zu diesem Zweck auf die folgende Schaltfläche, wählen Sie die gewünschte Edition von Visual Studio 2017 aus, und klicken Sie auf **Speichern** und dann auf **Ordner öffnen**.
 
  > [!div class="button"]
- > [Visual Studio 2017 herunterladen](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)
+ > [Herunterladen von Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)
+<br/>
+
+
+|         |         |
+|---------|---------|
+|  ![Filmsymbol für Video](media/video-icon.png "Video ansehen")  |    [Sehen Sie sich ein Video an](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Download-the-Visual-Studio-Installer-GgrESHD6D_3311787171), das erläutert, wie Sie die Visual Studio-Bootstrapperdatei herunterladen und die Edition von Visual Studio auswählen, die sich für Ihre Zwecke eignet. |
 
 ## <a name="install-the-installer"></a>Installieren des Installationsprogramms  
-Wenn Sie Visual Studio 2017 herunterladen, erhalten Sie eine Bootstrapperdatei, die wiederum das neue Lightweight-Installationsprogramm installiert. Dieses neue Installationsprogramm enthält alles, was Sie benötigen, um Ihre Installation anzupassen.  
+Führen Sie dann die Bootstrapperdatei aus, um den Visual Studio-Installer zu installieren. Dieses neue, schlanke Installationsprogramm enthält alle Elemente, die Sie zum Installieren und Anpassen von Visual Studio 2017 benötigen.
 
-> [!IMPORTANT]
-> Wenn Sie über ein Preview Release von Visual Studio 2017 auf Ihrem Computer verfügen, werden Sie aufgefordert, dieses vor der Installation von Visual Studio 2017 zu entfernen.
-
-1.  Klicken Sie in Ihrem Ordner **Downloads** doppelt auf die Bootstrapperdatei. Ihr Name kann folgendermaßen lauten:
+1.  Doppelklicken Sie in Ihrem Ordner **Downloads** auf die Bootstrapperdatei, die einer der folgenden Dateien entspricht oder ähnelt:
 
   * **vs_enterprise.exe** für Visual Studio Enterprise
   * **vs_professional.exe** für Visual Studio Professional
@@ -75,18 +63,14 @@ Wenn Sie Visual Studio 2017 herunterladen, erhalten Sie eine Bootstrapperdatei, 
 
 2.  Sie werden gebeten, die Microsoft-[Lizenzbedingungen](https://www.visualstudio.com/license-terms/) und die Microsoft-[Datenschutzbestimmungen](https://go.microsoft.com/fwlink/?LinkID=824704) zu akzeptieren. Klicken Sie auf **Weiter**.  
 
-   ![Lizenzbedingungen und Datenschutzbestimmungen](~/install/media/vs2017-privacy-and-license-terms.PNG "Microsoft-Lizenzbedingungen und Microsoft-Datenschutzbestimmungen")  
-
-Es werden mehrere Statusbildschirme angezeigt, die den Fortschritt der Installation anzeigen. Nach Abschluss der Installation können Sie die gewünschten Featuregruppen (oder Arbeitsauslastungen) auswählen.
+   ![Lizenzbedingungen und Datenschutzbestimmungen](media/vs2017-privacy-and-license-terms.PNG "Microsoft-Lizenzbedingungen und Microsoft-Datenschutzbestimmungen")  
 
 ## <a name="install-workloads"></a>Installieren von Arbeitsauslastungen  
- Sie können Ihre Installation mithilfe von Arbeitsauslastungen anpassen. Wählen Sie eine oder mehrere der gewünschten Arbeitsauslastungen aus. Jede Arbeitsauslastung enthält die Features, die Sie für die bevorzugte Programmiersprache oder Plattform benötigen.  
+ Nach der Installation des Installers können Sie diesen zum Anpassen Ihrer Installation verwenden, indem Sie die Features – oder Arbeitsauslastungen – auswählen, die Sie wünschen. Gehen Sie folgendermaßen vor:
 
- Gehen Sie für zur Installation folgendermaßen vor:  
+1.  Suchen Sie die gewünschten Arbeitsauslastungen im Bildschirm **Visual Studio wird installiert**.
 
-1.  Suchen Sie die gewünschten Arbeitsauslastungen im Bildschirm **Visual Studio wird installiert**.  
-
-  ![Visual Studio 2017-Setupdialogfeld](~/install/media/vs2017-workloads.PNG "Installieren von Visual Studio 2017")
+  ![Visual Studio 2017-Setupdialogfeld](media/vs2017-workloads.PNG "Installieren von Visual Studio 2017")
 
      Wählen Sie beispielsweise die Arbeitsauslastung für .NET Desktop-Entwicklung aus. Sie wird mit dem standardmäßigen Kern-Editor bereitgestellt, der die grundlegende Codebearbeitung für über 20 Sprachen, die Möglichkeit, Code aus einem beliebigen Ordner heraus zu öffnen und zu bearbeiten, ohne dass ein Projekt erforderlich ist, und die integrierte Quellcodekontrolle unterstützt.  
 
@@ -96,21 +80,33 @@ Es werden mehrere Statusbildschirme angezeigt, die den Fortschritt der Installat
 
 3.  Nachdem die neuen Arbeitsauslastungen und Komponenten installiert wurden, klicken Sie auf **Starten**.
 
+|         |         |
+|---------|---------|
+|  ![Filmsymbol für Video](media/video-icon.png "Video ansehen")  |    [Sehen Sie sich ein Video an](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Workloads-in-Visual-Studio-2017-jHE19HD6D_1611787171), in dem erläutert wird, wie Sie den Visual Studio-Installer und danach eine Arbeitsauslastung installieren. |
+
 ## <a name="install-individual-components"></a>Installieren einzelner Komponenten
 
-Wenn Sie Ihre Visual Studio-Installation nicht mit den praktischen Arbeitsauslastungen anpassen möchten, klicken Sie im Visual Studio-Installer auf die Option **Einzelne Komponenten**, wählen Sie die gewünschten Komponenten aus, und folgen Sie den Anweisungen.
+Wenn Sie das praktische Feature für Arbeitsauslastungen nicht zur Anpassung Ihrer Visual Studio-Installation verwenden möchten, können Sie stattdessen auch einzelne Komponenten installieren. Klicken Sie zu diesem Zweck im Visual Studio-Installer auf die Option **Einzelne Komponenten**, wählen Sie die gewünschten Komponenten aus, und folgen Sie den Anweisungen.
 
-  ![Visual Studio 2017: Installieren einzelner Komponenten](~/install/media/vs2017-components.PNG "Installieren einzelner Visual Studio-Komponenten")
+  ![Visual Studio 2017: Installieren einzelner Komponenten](media/vs2017-components.PNG "Installieren einzelner Visual Studio-Komponenten")
+
+  |         |         |
+  |---------|---------|
+  |  ![Filmsymbol für Video](media/video-icon.png "Video ansehen")  |   [Sehen Sie sich ein Video an](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Components-in-Visual-Studio-2017-ZMfaVID6D_7411787171), in dem gezeigt wird, wie Sie mithilfe des Visual Studio-Installers eine einzelne Komponente installieren. |
 
 ## <a name="install-language-packs"></a>Installieren von Language Packs
 
-Zum Installieren von Visual Studio 2017 in einer bestimmten Sprache Ihrer Wahl klicken Sie im Visual Studio-Installationsprogramm auf die Option **Language Packs** und folgen den Eingabeaufforderungen.
+Standardmäßig versucht das Installationsprogramm bei der ersten Ausführung die Sprache des Betriebssystems zu verwenden. Zum Installieren von Visual Studio 2017 in einer bestimmten Sprache Ihrer Wahl klicken Sie im Visual Studio-Installationsprogramm auf die Option **Language Packs** und folgen den Eingabeaufforderungen.
 
-  ![Visual Studio 2017 - Installieren von Language Packs](~/install/media/vs2017-languages.PNG "Installieren von Visual Studio-Language Packs")
+  ![Visual Studio 2017 - Installieren von Language Packs](media/vs2017-languages.PNG "Installieren von Visual Studio-Language Packs")
 
-### <a name="change-the-installer-language"></a>Ändern der Sprache des Installationsprogramms
+  |         |         |
+  |---------|---------|
+  |  ![Filmsymbol für Video](media/video-icon.png "Video ansehen")  |   [Sehen Sie sich ein Video an](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Install-Language-Packs-in-Visual-Studio-2017-ByT7yID6D_9011787171), in dem gezeigt wird, wie Sie mithilfe des Visual Studio-Installers ein Sprachpaket installieren. |
 
-Standardmäßig versucht das Installationsprogramm bei der ersten Ausführung die Sprache des Betriebssystems zu verwenden. Das Installationsprogramm speichert diese Einstellung. Sie können die Einstellung ändern, indem Sie das Installationsprogramm über die Befehlszeile ausführen. Mit dem Befehl `vs_installer.exe --locale en-US` können Sie z.B. erzwingen, dass das Installationsprogramm auf Englisch ausgeführt wird. Das Installationsprogramm speichert diese Einstellung für zukünftige Ausführungen. Das Installationsprogramm unterstützt die folgenden Sprachtoken: zh-CN, zh-TW, cs-CZ, en-US, fr-FR, de-DE, it-IT, ja-JP, ko-KR, pl-PL, pt-BR, ru-RU, es-ES und tr-TR.
+### <a name="change-the-installer-language-from-the-command-line"></a>Ändern der Installersprache über die Befehlszeile
+
+Eine andere Möglichkeit zum Ändern der Standardsprache ist die Ausführung des Installers über die Befehlszeile. Mit dem Befehl `vs_installer.exe --locale en-US` können Sie z.B. erzwingen, dass das Installationsprogramm auf Englisch ausgeführt wird. Das Installationsprogramm speichert diese Einstellung für zukünftige Ausführungen. Der Installer unterstützt die folgenden Sprachtoken: zh-CN, zh-TW, cs-CZ, en-US, es-ES, fr-FR, de-DE, it-IT, ja-JP, ko-KR, pl-PL, pt-BR, ru-RU und tr-TR.
 
 ## <a name="get-support"></a>Support aufrufen
 Manchmal kann etwas schiefgehen. Wenn die Installation von Visual Studio fehlschlägt, lesen Sie den Artikel [Problembehandlung bei der Visual Studio 2017-Installation und Upgradefehlern](troubleshooting-installation-issues.md), um Hilfe bei der Problemlösung zu erhalten.
@@ -120,5 +116,6 @@ Manchmal kann etwas schiefgehen. Wenn die Installation von Visual Studio fehlsch
 * [Aktualisieren von Visual Studio 2017](update-visual-studio.md)
 * [Deinstallieren von Visual Studio 2017](uninstall-visual-studio.md)
 * [Administratorhandbuch für Visual Studio 2017](visual-studio-administrator-guide.md)
+  * [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
 * [Melden eines Problems mit Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
 
