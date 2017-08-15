@@ -31,10 +31,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: 3037d92e9de377ab4b306a5a0e164e29fa6659e7
-ms.openlocfilehash: 600cd62e7843274b52da5ac7200b5168311cab07
+ms.sourcegitcommit: 223750aef8d997c6ae017f49ea0a9522bdba72bc
+ms.openlocfilehash: c5687a3971d4b670e73e55294e6dfd0c7c3f91d0
 ms.contentlocale: de-de
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/10/2017
 
 ---
 
@@ -99,12 +99,15 @@ error | Wenn dieses Format nicht eingehalten wird, einen Compilerfehler anzeigen
     - [Einstellungen für die NULL-Überprüfung](#null_checking)
         - [Throw-Ausdrücke](#null_checking_throw_expressions)
         - [Bedingte Delegataufrufe](#null_checking_conditional_delegate_calls)
+    - [Codeblockeinstellungen](#code_block)
+        - [Geschweiften Klammern bevorzugen](#prefer_braces)
 
 ## <a name="this_and_me">"This.-" und "Me.-" Qualifikation</a>
 ### <a name="this_and_me_fields">Felder (IDE0003/IDE0009)</a>
-|  Name der Option | `dotnet_style_qualification_for_field` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C# und Visual Basic
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|  `dotnet_style_qualification_for_field` | C# und Visual Basic | false:none | Visual Studio 2017 RTW |
+
 
 | Wert | Beschreibung | Angewendet 
 | ------------- |:-------------|:-------------|
@@ -119,10 +122,10 @@ dotnet_style_qualification_for_field = false:suggestion
 ```
 
 ### <a name="this_and_me_properties">Eigenschaften (IDE0003/IDE0009) </a>
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`dotnet_style_qualification_for_property`| C# und Visual Basic | false:none | Visual Studio 2017 RTW |
 
-|  Name der Option | `dotnet_style_qualification_for_property` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C# und Visual Basic
 
 | Wert | Beschreibung | Angewendet 
 | ------------- |:-------------|:-------------|
@@ -137,9 +140,10 @@ dotnet_style_qualification_for_property = false:suggestion
 ```
 
 ### <a name="this_and_me_methods">Methoden (IDE0003/IDE0009) </a>
-|  Name der Option | `dotnet_style_qualification_for_method` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C# und Visual Basic
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`dotnet_style_qualification_for_method`| C# und Visual Basic | false:none | Visual Studio 2017 RTW |
+
 
 | Wert | Beschreibung | Angewendet 
 | ------------- |:-------------|:-------------|
@@ -155,9 +159,10 @@ dotnet_style_qualification_for_method = false:suggestion
 ```
 
 ### <a name="this_and_me_events">Ereignisse (IDE0003/IDE0009) </a>
-|  Name der Option | `dotnet_style_qualification_for_event` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C# und Visual Basic
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`dotnet_style_qualification_for_event`| C# und Visual Basic | false:none | Visual Studio 2017 RTW |
+
 
 | Wert | Beschreibung | Angewendet 
 | ------------- |:-------------|:-------------|
@@ -173,9 +178,10 @@ dotnet_style_qualification_for_event = false:suggestion
 
 ## <a name="language_keywords">Sprachschlüsselwörter (int, string usw.) im Vergleich zu Framework-Typnamen für Typverweise</a>
 ### <a name="language_keywords_variables"> Lokale Variablen, Parameter und Member (IDE0012/IDE0014)</a>
-|  Name der Option | `dotnet_style_predefined_type_for_locals_parameters_members` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C# und Visual Basic
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`dotnet_style_predefined_type_for_locals_parameters_members`| C# und Visual Basic | true:none | Visual Studio 2017 RTW |
+
 
 | Wert | Beschreibung | Angewendet 
 | ------------- |:-------------|:-------------|
@@ -190,9 +196,10 @@ dotnet_style_predefined_type_for_locals_parameters_members = true:suggestion
 ``` 
 
 ### <a name="language_keywords_member_access">Memberzugriffsausdrücke (IDE0013/IDE0015)</a>
-|  Name der Option | `dotnet_style_predefined_type_for_member_access` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C# und Visual Basic
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`dotnet_style_predefined_type_for_member_access`| C# und Visual Basic | true:none | Visual Studio 2017 RTW |
+
 
 | Wert | Beschreibung | Angewendet 
 | ------------- |:-------------|:-------------|
@@ -208,9 +215,10 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 
 ## <a name="expression_level">Einstellungen auf Ausdrucksebene</a>
 ### <a name="expression_level_object_initializers">Objektinitialisierer (IDE0017)</a>
-|  Name der Option | `dotnet_style_object_initializer` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C# und Visual Basic
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`dotnet_style_object_initializer`| C# und Visual Basic | true:suggestion | Visual Studio 2017 RTW |
+
 
 | Wert | Beschreibung | Angewendet 
 | ------------- |:-------------|:-------------|
@@ -225,9 +233,10 @@ dotnet_style_object_initializer = true:suggestion
 ``` 
 
 ### <a name="expression_level_collection_initializers">Auflistungsinitialisierer (IDE0028)</a>
-|  Name der Option | `dotnet_style_collection_initializer` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C# und Visual Basic
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`dotnet_style_collection_initializer`| C# und Visual Basic | true:suggestion | Visual Studio 2017 RTW |
+
 
 | Wert | Beschreibung | Angewendet 
 | ------------- |:-------------|:-------------|
@@ -242,9 +251,10 @@ dotnet_style_collection_initializer = true:suggestion
 ```
 
 ### <a name="expression_level_tuple_names">Explizite Tupelnamen (IDE0033)</a>
-|  Name der Option | `dotnet_style_explicit_tuple_names` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C# 7.0 und höher und Visual Basic 15 und höher
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`dotnet_style_explicit_tuple_names`| C# 7.0 und höher und Visual Basic 15 und höher | true:suggestion | Visual Studio 2017 RTW |
+
 
 | Wert | Beschreibung | Angewendet 
 | ------------- |:-------------|:-------------|
@@ -259,9 +269,10 @@ dotnet_style_explicit_tuple_names = true:suggestion
 ``` 
 
 ### <a name="expression_level_null_checking">Sammelausdrücke in der NULL-Überprüfung (IDE0029)</a>
-|  Name der Option | `dotnet_style_coalesce_expression` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C# und Visual Basic
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`dotnet_style_coalesce_expression`| C# und Visual Basic | true:suggestion | Visual Studio 2017 RTW |
+
 
 | Wert | Beschreibung | Angewendet 
 | ------------- |:-------------|:-------------|
@@ -276,9 +287,10 @@ dotnet_style_coalesce_expression = true:suggestion
 ``` 
 
 ### <a name="expression_level_null_propogation">NULL-Weitergabe in der NULL-Überprüfung (IDE0031)</a>
-|  Name der Option | `dotnet_style_null_propagation` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C# und Visual Basic
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`dotnet_style_null_propagation`| C# 6.0+ und Visual Basic 14+ | true:suggestion | Visual Studio 2017 RTW |
+
 
 | Wert | Beschreibung | Angewendet 
 | ------------- |:-------------|:-------------|
@@ -295,9 +307,10 @@ dotnet_style_null_propagation = true:suggestion
 # <a name="csharp_codestyle">C#-Codeformateinstellungen</a>
 ## <a name="var">„var“ und explizite Typen</a>
 ### <a name="var_built_in">„var“ für integrierte Typen (IDE0007, IDE0008)</a>
-|  Name der Option | `csharp_style_var_for_built_in_types` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C#
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_style_var_for_built_in_types`| C# | true:none | Visual Studio 2017 RTW |
+
 
 | Wert | Beschreibung | Angewendet 
 | ------------- |:-------------|:-------------|
@@ -312,9 +325,10 @@ csharp_style_var_for_built_in_types = true:suggestion
 ``` 
 
 ### <a name="var_apparent">„var“ wenn der Typ offensichtlich ist (IDE0007, IDE0008)</a>
-|  Name der Option | `csharp_style_var_when_type_is_apparent` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C#
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_style_var_when_type_is_apparent`| C# | true:none | Visual Studio 2017 RTW |
+
 
 | Wert | Beschreibung | Angewendet 
 | ------------- |:-------------|:-------------|
@@ -329,9 +343,10 @@ csharp_style_var_when_type_is_apparent = true:suggestion
 ``` 
 
 ### <a name="var_elsewhere">„var“ an anderer Stelle (IDE0007, IDE0008) </a>
-|  Name der Option | `csharp_style_var_elsewhere` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C#
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_style_var_elsewhere`| C# | true:none | Visual Studio 2017 RTW |
+
 
 | Wert | Beschreibung | Angewendet 
 | ------------- |:-------------|:-------------|
@@ -347,9 +362,10 @@ csharp_style_var_elsewhere = true:suggestion
 
 ##<a name="expression_bodied_members">Ausdruckskörpermember</a>
 ### <a name="expression_bodied_members_methods">Methoden (IDE0022)</a>
-|  Name der Option | `csharp_style_expression_bodied_methods` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C# 6.0 und höher
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_style_expression_bodied_methods`| C# 6.0 und höher | false:none | Visual Studio 2017 RTW |
+
 
 | Wert | Beschreibung | Angewendet 
 | ------------- |:-------------|:-------------|
@@ -364,9 +380,10 @@ csharp_style_expression_bodied_methods = false:none
 ``` 
 
 ### <a name="expression_bodied_members_constructors">Konstruktoren (IDE0021)</a>
-|  Name der Option | `csharp_style_expression_bodied_constructors` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C# 6.0 und höher
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_style_expression_bodied_constructors`| C# 7.0 und höher | false:none | Visual Studio 2017 RTW |
+
 
 | Wert | Beschreibung | Angewendet 
 | ------------- |:-------------|:-------------|
@@ -381,9 +398,10 @@ csharp_style_expression_bodied_constructors = false:none
 ``` 
 
 ### <a name="expression_bodied_members_operators">Operatoren (IDE0023, IDE0024)</a>
-|  Name der Option | `csharp_style_expression_bodied_operators` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C# 6.0 und höher
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_style_expression_bodied_operators` | C# 7.0 und höher | false:none | Visual Studio 2017 RTW |
+
 
 | Wert | Beschreibung | Angewendet 
 | ------------- |:-------------|:-------------|
@@ -398,9 +416,10 @@ csharp_style_expression_bodied_operators = false:none
 ``` 
 
 ### <a name="expression_bodied_members_properties">Eigenschaften (IDE0025)</a>
-|  Name der Option | `csharp_style_expression_bodied_properties` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C# 7.0 und höher
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_style_expression_bodied_properties` | C# 7.0 und höher | true:none | Visual Studio 2017 RTW |
+
 
 | Wert | Beschreibung | Angewendet 
 | ------------- |:-------------|:-------------|
@@ -411,13 +430,14 @@ csharp_style_expression_bodied_operators = false:none
 ```
 # CSharp code style settings:
 [*.cs]
-csharp_style_expression_bodied_properties = false:none
+csharp_style_expression_bodied_properties = true:none
 ``` 
 
 ### <a name="expression_bodied_members_indexers">Indexer (IDE0026)</a>
-|  Name der Option | `csharp_style_expression_bodied_indexers` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C# 7.0 und höher
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_style_expression_bodied_indexers` | C# 7.0 und höher | true:none | Visual Studio 2017 RTW |
+
 
 | Wert | Beschreibung | Angewendet 
 | ------------- |:-------------|:-------------|
@@ -432,9 +452,10 @@ csharp_style_expression_bodied_indexers = false:none
 ``` 
 
 ### <a name="expression_bodied_members_accessors">Accessoren (IDE0027)</a>
-|  Name der Option | `csharp_style_expression_bodied_accessors` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C# 7.0 und höher
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_style_expression_bodied_accessors` | C# 7.0 und höher | true:none | Visual Studio 2017 RTW |
+
 
 | Wert | Beschreibung | Angewendet 
 | ------------- |:-------------|:-------------|
@@ -450,9 +471,10 @@ csharp_style_expression_bodied_accessors = false:none
 
 ## <a name="pattern_matching">Mustervergleich</a>
 ### <a name="pattern_matching_is_cast">„is“ mit Umwandlungsüberprüfung (IDE0020)</a>
-|  Name der Option | `csharp_style_pattern_matching_over_is_with_cast_check` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C# 7.0 und höher
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_style_pattern_matching_over_is_with_cast_check` | C# 7.0 und höher | true:suggestion | Visual Studio 2017 RTW |
+
 
 | Wert | Beschreibung | Angewendet 
 | ------------- |:-------------|:-------------|
@@ -467,9 +489,10 @@ csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
 ```
 
 ### <a name="pattern_matching_as_null">„as“ mit NULL-Überprüfung (IDE0019)</a>
-|  Name der Option | `csharp_style_pattern_matching_over_as_with_null_check` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C# 7.0 und höher
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_style_pattern_matching_over_as_with_null_check` | C# 7.0 und höher | true:suggestion | Visual Studio 2017 RTW |
+
 
 | Wert | Beschreibung | Angewendet 
 | ------------- |:-------------|:-------------|
@@ -484,9 +507,10 @@ csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 ```
 
 ### <a name="inlined_variable_declarations">Inline-Variablendeklarationen (IDE0018)</a>
-|  Name der Option | `csharp_style_inlined_variable_declaration` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C#
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_style_inlined_variable_declaration` | C# 7.0 und höher | true:suggestion | Visual Studio 2017 RTW |
+
 
 | Wert | Beschreibung | Angewendet 
 | ------------- |:-------------|:-------------|
@@ -501,9 +525,10 @@ csharp_style_inlined_variable_declaration = true:suggestion
 ```
 ## <a name="expression_level_csharp">Einstellungen auf Ausdrucksebene</a>
 ### <a name="expression_level_default">Vereinfachen von `default`-Ausdrücken (IDE0034) </a>
-|  Name der Option | `csharp_prefer_simple_default_expression` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C# 7.1 und höher und Visual Basic
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_prefer_simple_default_expression` | C# 7.1+ | true:suggestion | Visual Studio 2017 V. 15.3 |
+
 
 | Wert | Beschreibung | Angewendet 
 | ------------- |:-------------|:-------------|
@@ -512,16 +537,17 @@ csharp_style_inlined_variable_declaration = true:suggestion
 
 #### <a name="example-editorconfig-file"></a>Editorconfig-Beispieldatei:
 ```
-# CSharp and VisualBasic code style settings:
+# CSharp code style settings:
 [*.cs]
 csharp_prefer_simple_default_expression = true:suggestion
 ``` 
 
 ## <a name="null_checking">Einstellungen für die NULL-Überprüfung</a>
 ### <a name="null_checking_throw_expressions">Throw-Ausdrücke (IDE0016)</a>
-|  Name der Option | `csharp_style_throw_expression` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C# 7.0 und höher
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_style_throw_expression`  | C# 7.0 und höher | true:suggestion | Visual Studio 2017 RTW |
+
 
 | Wert | Beschreibung | Angewendet 
 | ------------- |:-------------|:-------------|
@@ -536,9 +562,10 @@ csharp_style_throw_expression = true:suggestion
 ```
 
 ### <a name="null_checking_conditional_delegate_calls">Bedingte Delegataufrufe bevorzugen (IDE0041)</a>
-|  Name der Option | `csharp_style_conditional_delegate_call` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C#
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_style_conditional_delegate_call`  | C# 6.0 und höher | true:suggestion | Visual Studio 2017 RTW |
+
 
 | Wert | Beschreibung | Angewendet 
 | ------------- |:-------------|:-------------|
@@ -550,6 +577,25 @@ csharp_style_throw_expression = true:suggestion
 # CSharp code style settings:
 [*.cs]
 csharp_style_conditional_delegate_call = false:suggestion
+```
+
+## <a name="code_block">Codeblockeinstellungen</a>
+### <a name="prefer_braces">Geschweifte Klammern bevorzugen (IDE0011)</a>
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_prefer_braces`  | C#  | true:none | Visual Studio 2017 V. 15.3 |
+
+
+| Wert | Beschreibung | Angewendet 
+| ------------- |:-------------|:-------------|
+| True | Geschweifte Klammern bevorzugen | **C#:** <br>`if (test) { this.Display(); }`
+| False | Wenn möglich, keine Klammern bevorzugen | **C#:** <br>`if (test) this.Display();`
+
+#### <a name="example-editorconfig-file"></a>Editorconfig-Beispieldatei:
+```
+# CSharp code style settings:
+[*.cs]
+csharp_prefer_braces = true:none
 ```
 
 # <a name="formatting"> Formatierungsregeln </a>
@@ -575,6 +621,7 @@ Bei Formatierungsoptionen müssen Sie **wahr** (diese Option bevorzugen) oder **
         - [Zeilenvorschub vor Membern in Abfrageausdrucksklauseln](#newline_before_query)
     - [Einzugsoptionen](#indent)
         - [`switch` Case-Inhalte einrücken](#indent_switch)
+        - [`switch`-Bezeichner einrücken](#indent_switch_labels)
         - [Positionierung von Bezeichnungen](#label)
     - [Leerzeichenoptionen](#spacing)
         - [Leerzeichen nach Typumwandlung](#space_after_cast)
@@ -588,9 +635,10 @@ Bei Formatierungsoptionen müssen Sie **wahr** (diese Option bevorzugen) oder **
 
 ## <a name="usings">Using-Direktiven organisieren</a>
 ### <a name="usings_sort_system_first">Systemdirektiven zuerst sortieren</a>
-|  Name der Option | `dotnet_sort_system_directives_first` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C# und Visual Basic
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`dotnet_sort_system_directives_first`  |  C# und Visual Basic | true | Visual Studio 2017 V. 15.3  |
+
 
 | Wert | Beschreibung | Angewendet 
 | ------------- |:-------------|:-------------|
@@ -607,9 +655,10 @@ dotnet_sort_system_directives_first = true
 # <a name="csharp_formatting">C#-Formatierungseinstellungen</a>
 ## <a name="newline">Zeilenvorschuboptionen</a>
 ### <a name="newline_before_brace"> Zeilenvorschub vor öffnender Klammer (`{`)</a>
-|  Name der Option | `csharp_new_line_before_open_brace` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C#
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_new_line_before_open_brace`  |  C#  | true | Visual Studio 2017 V. 15.3  |
+
 
 | Wert | Beschreibung 
 | ------------- |:-------------|
@@ -646,9 +695,10 @@ csharp_new_line_before_open_brace = methods, properties, control_blocks, types
 ``` 
 
 ### <a name="newline_before_else"> Zeilenvorschub vor `else`</a>
-|  Name der Option | `csharp_new_line_before_else` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C#
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_new_line_before_else` |  C#  | true | Visual Studio 2017 V. 15.3  |
+
 
 | Wert | Beschreibung 
 | ------------- |:-------------|
@@ -683,9 +733,10 @@ csharp_new_line_before_else = true
 ``` 
 
 ### <a name="newline_before_catch"> Zeilenvorschub vor `catch`</a>
-|  Name der Option | `csharp_new_line_before_catch` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C#
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+| `csharp_new_line_before_catch`|  C#  | true | Visual Studio 2017 V. 15.3  |
+
 
 | Wert | Beschreibung 
 | ------------- |:-------------|
@@ -720,9 +771,10 @@ csharp_new_line_before_catch = true
 ``` 
 
 ### <a name="newline_before_finally"> Zeilenvorschub vor `finally`</a>
-|  Name der Option | `csharp_new_line_before_catch` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C#
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+| `csharp_new_line_before_finally`|  C#  | true | Visual Studio 2017 V. 15.3  |
+
 
 | Wert | Beschreibung 
 | ------------- |:-------------|
@@ -762,9 +814,10 @@ csharp_new_line_before_finally = true
 ``` 
 
 ### <a name="newline_before_object"> Zeilenvorschub vor Membern in Objektinitialisierern</a>
-|  Name der Option | `csharp_new_line_before_members_in_object_initializers` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C#
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+| `csharp_new_line_before_members_in_object_initializers`|  C#  | true | Visual Studio 2017 V. 15.3  |
+
 
 | Wert | Beschreibung 
 | ------------- |:-------------|
@@ -797,9 +850,10 @@ csharp_new_line_before_members_in_object_initializers = true
 ``` 
 
 ### <a name="newline_before_anonymous"> Zeilenvorschub vor Membern in anonymen Typen</a>
-|  Name der Option | `csharp_new_line_before_members_in_anonymous_types` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C#
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+| `csharp_new_line_before_members_in_anonymous_types` |  C#  | true | Visual Studio 2017 V. 15.3  |
+
 
 | Wert | Beschreibung 
 | ------------- |:-------------|
@@ -832,9 +886,10 @@ csharp_new_line_before_members_in_anonymous_types = true
 ``` 
 
 ### <a name="newline_before_query"> Zeilenvorschub vor Membern in Abfrageausdrucksklauseln</a>
-|  Name der Option | `csharp_new_line_within_query_expression_clauses` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C#
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_new_line_within_query_expression_clauses`  |  C#  | true | Visual Studio 2017 V. 15.3  |
+
 
 | Wert | Beschreibung 
 | ------------- |:-------------|
@@ -864,9 +919,9 @@ csharp_new_line_within_query_expression_clauses = true
 
 ## <a name="indent">Einzugsoptionen</a>
 ### <a name="indent_switch">`switch` Case-Inhalte einrücken </a>
-|  Name der Option | `csharp_indent_case_contents` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C#
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+| `csharp_indent_case_contents`  |  C#  | true | Visual Studio 2017 V. 15.3  |
 
 | Wert | Beschreibung 
 | ------------- |:-------------|
@@ -911,10 +966,59 @@ switch(c) {
 csharp_indent_case_contents = true
 ``` 
 
+### <a name="indent_switch_labels">`switch`-Bezeichner einrücken</a>
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+| `csharp_indent_switch_labels`  |  C#  | true | Visual Studio 2017 V. 15.3  |
+
+| Wert | Beschreibung 
+| ------------- |:-------------|
+| True | `switch`-Bezeichner einrücken  |
+| False | `switch`-Bezeichner nicht einrücken |
+
+#### <a name="applied"></a>Angewendet:
+```csharp
+// csharp_indent_switch_labels = true
+switch(c) {
+    case Color.Red:
+        Console.WriteLine("The color is red");
+        break;
+    case Color.Blue:
+        Console.WriteLine("The color is blue");
+        break;
+    default:
+        Console.WriteLine("The color is unknown.");
+        break;
+}
+```
+
+```csharp
+// csharp_indent_switch_labels = false
+switch(c) {
+case Color.Red:
+    Console.WriteLine("The color is red");
+    break;
+case Color.Blue:
+    Console.WriteLine("The color is blue");
+    break;
+default:
+    Console.WriteLine("The color is unknown.");
+    break;
+}
+```
+
+#### <a name="example-editorconfig-file"></a>Editorconfig-Beispieldatei:
+```
+# CSharp formatting settings:
+[*.cs]
+csharp_indent_switch_labels = true
+``` 
+
 ### <a name="label">Positionierung von Bezeichnungen</a>
-|  Name der Option | `csharp_indent_labels` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C#
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|`csharp_indent_labels`  |  C#  | one_less | Visual Studio 2017 V. 15.3  |
+
 
 | Wert | Beschreibung 
 | ------------- |:-------------|
@@ -956,9 +1060,10 @@ csharp_indent_labels = one_less
 
 ## <a name="spacing">Leerzeichenoptionen</a>
 ### <a name="space_after_cast"> Leerzeichen nach Typumwandlung </a>
-|  Name der Option | `csharp_space_after_cast` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C#
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+| `csharp_space_after_cast` |  C#  | false | Visual Studio 2017 V. 15.3  |
+
 
 | Wert | Beschreibung | Angewendet |
 | ------------- |:-------------|:-------------|
@@ -973,9 +1078,10 @@ csharp_space_after_cast = true
 ``` 
 
 ### <a name="space_control_flow"> Leerzeichen nach Schlüsselwörtern in Anweisungen für die Ablaufsteuerung </a>
-|  Name der Option | `csharp_space_after_keywords_in_control_flow_statements` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C#
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+| `csharp_space_after_keywords_in_control_flow_statements` |  C#  | true | Visual Studio 2017 V. 15.3  |
+
 
 | Wert | Beschreibung | Angewendet |
 | ------------- |:-------------|:-------------|
@@ -990,9 +1096,10 @@ csharp_space_after_keywords_in_control_flow_statements = true
 ``` 
 
 ### <a name="space_parameter_list"> Leerzeichen zwischen Klammern in Methodendeklarationsargument-Listen</a>
-|  Name der Option | `csharp_space_between_method_declaration_parameter_list_parentheses` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C#
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+| `csharp_space_between_method_declaration_parameter_list_parentheses` |  C#  | false | Visual Studio 2017 V. 15.3  |
+
 
 | Wert | Beschreibung | Angewendet |
 | ------------- |:-------------|:-------------|
@@ -1007,9 +1114,10 @@ csharp_space_between_method_declaration_parameter_list_parentheses = true
 ```
 
 ### <a name="space_method_call"> Leerzeichen innerhalb von Klammern in Methodenaufrufargument-Listen</a>
-|  Name der Option | `csharp_space_between_method_call_parameter_list_parentheses` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C#
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|  `csharp_space_between_method_call_parameter_list_parentheses` |  C#  | false | Visual Studio 2017 V. 15.3  |
+
 
 | Wert | Beschreibung | Angewendet |
 | ------------- |:-------------|:-------------|
@@ -1024,9 +1132,10 @@ csharp_space_between_method_call_parameter_list_parentheses = control_flow_state
 ```  
 
 ### <a name="space_other"> Leerzeichen innerhalb von Klammern für andere Optionen </a>
-|  Name der Option | `csharp_space_between_parentheses` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C#
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|  `csharp_space_between_parentheses`  |  C#  | false | Visual Studio 2017 V. 15.3  |
+
 
 | Wert | Beschreibung | Angewendet |
 | ------------- |:-------------|:-------------|
@@ -1043,9 +1152,10 @@ csharp_space_between_parentheses = control_flow_statements, type_casts
 
 ## <a name="wrapping">Umbruchoptionen</a>
 ### <a name="wrapping_statement">Anweisungen und Memberdeklarationen in der gleichen Zeile belassen</a>
-|  Name der Option | `csharp_preserve_single_line_statements` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C#
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|  `csharp_preserve_single_line_statements`   |  C#  | true | Visual Studio 2017 V. 15.3  |
+
 
 | Wert | Beschreibung |
 | ------------- |:-------------|
@@ -1072,9 +1182,10 @@ csharp_preserve_single_line_statements = true
 ``` 
 
 ### <a name="wrapping_block">Block in einzelner Zeile belassen</a>
-|  Name der Option | `csharp_preserve_single_line_blocks` |
-| ------------- |:-------------:|
-| **Betroffene Sprachen** | C#
+| **Name der Option** | **Betroffene Sprachen** | **Visual Studio-Standard** | **Unterstützte Version** |
+| ----------- | -------------------- | ----------------------| ----------------  |
+|   `csharp_preserve_single_line_blocks`    |  C#  | true | Visual Studio 2017 V. 15.3  |
+
 
 | Wert | Beschreibung |
 | ------------- |:-------------|
@@ -1129,7 +1240,7 @@ Dies sind gültige Optionen für den Schweregrad einer Regel für das Benennungs
 
  `none` und `silent` sind synonym und bedeuten, dass dem Benutzer keinerlei Hinweis angezeigt werden soll. Damit wird diese Regel im Endeffekt deaktiviert.
 
- `suggestion` bedeutet, dass dem Benutzer in der Fehlerliste und der IDE ein Vorschlag angezeigt wird. Der Schweregrad `suggetion` lässt die Ausführung der Benennungsregel zu, führt jedoch nicht zu einer Unterbrechung des Buildvorgangs.
+ `suggestion` bedeutet, dass dem Benutzer in der Fehlerliste und der IDE ein Vorschlag angezeigt wird. Der Schweregrad `suggestion` lässt die Ausführung der Benennungsregel zu, führt jedoch nicht zu einer Unterbrechung des Buildvorgangs.
 
 Schweregrad | Wirkung
 ------------ | -------------
@@ -1160,16 +1271,6 @@ Bestimmen Sie, auf _welche_ Symbole _mit welchen_ Modifizierern _und auf welcher
 | `event` | | |
 | `delegate` | | |
 
-#### <a name="example-editorconfig-file"></a>Editorconfig-Beispieldatei:
-```
-# CSharp formatting settings:
-[*.cs]
-dotnet_naming_rule.async_methods_end_in_async.symbols = any_async_methods
-
-dotnet_naming_symbols.any_async_methods.applicable_kinds = method
-dotnet_naming_symbols.any_async_methods.applicable_accessibilities = *
-dotnet_naming_symbols.any_async_methods.required_modifiers = async
-``` 
 
 ### <a name="style-specification"></a>Formatangabe
 Bestimmen Sie das Benennungsformat, das auf die Symbole angewendet werden soll.
@@ -1189,15 +1290,6 @@ Bestimmen Sie das Benennungsformat, das auf die Symbole angewendet werden soll.
 | Worttrennzeichen | Erforderliches Trennzeichen zwischen Wörtern im Bezeichner. |
 | Großbuchstaben |`pascal_case`, `camel_case`, `first_word_upper`, `all_upper`, `all_lower` | 
 
-#### <a name="example-editorconfig-file"></a>Editorconfig-Beispieldatei:
-```
-# CSharp formatting settings:
-[*.cs]
-dotnet_naming_rule.async_methods_end_in_async.style = end_in_async
-
-dotnet_naming_style.end_in_async.required_suffix = Async
-dotnet_naming_style.end_in_async.capitalization = pascal_case
-``` 
 
 ### <a name="example-naming-convention"></a>Beispiel für Benennungskonvention
 ```
