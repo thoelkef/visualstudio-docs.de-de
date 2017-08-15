@@ -13,6 +13,7 @@
 ## [Verwalten von externen Tools](managing-external-tools.md)
 ## [Synchronisierte Einstellungen in Visual Studio](synchronized-settings-in-visual-studio.md)
 # [Optimieren der Startzeit von Visual Studio](optimize-visual-studio-startup-time.md)
+# [Visual Studio Performance Tips and Tricks (Tipps und Tricks zur Leistungssteigerung für Visual Studio)](visual-studio-performance-tips-and-tricks.md)
 # [Vorgehensweise: Navigieren in der Visual Studio-IDE](how-to-move-around-in-the-visual-studio-ide.md)
 # [Erste Schritte mit der Entwicklung in Visual Studio](get-started-developing-with-visual-studio.md)
 ## [Erste Schritte mit Visual C# und Visual Basic](getting-started-with-visual-csharp-and-visual-basic.md)

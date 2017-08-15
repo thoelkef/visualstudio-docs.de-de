@@ -27,24 +27,24 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 1600207e0c504f4b4dcbf620e92bcc06e14ec035
+ms.translationtype: HT
+ms.sourcegitcommit: c00adbbabf0d3b82acb17f4a269dfc693246bc69
+ms.openlocfilehash: 4401606f97452de235b8a2d406451e5481518006
 ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurieren von Komponententests mithilfe einer .runsettings-Datei
-Komponententests in Visual Studio können mithilfe einer .runsettings-Datei konfiguriert werden. (Der Dateiname ist unerheblich, sofern Sie die Erweiterung „.runsettings“ verwenden) Beispielsweise können Sie die .NET Framework-Version, auf der die Tests durchgeführt werden, das Verzeichnis, in dem Testergebnisse gespeichert werden, sowie die während eines Testlaufs gesammelten Daten ändern.  
+Komponententests in Visual Studio können mithilfe einer \*.runsettings-Datei konfiguriert werden. (Der Dateiname ist unerheblich, sofern Sie die Erweiterung „.runsettings“ verwenden) Beispielsweise können Sie die .NET Framework-Version, auf der die Tests durchgeführt werden, das Verzeichnis, in dem Testergebnisse gespeichert werden, sowie die während eines Testlaufs gesammelten Daten ändern.  
   
- Wenn Sie keine spezielle Konfiguration möchten, benötigen Sie keine Datei „*.runsettings“. Sie wird meistens dazu verwendet, die [Code Coverage](../test/customizing-code-coverage-analysis.md) anzupassen.  
+ Wenn Sie keine spezielle Konfiguration einrichten möchten, benötigen Sie keine \*.runsettings-Datei. Sie wird meistens dazu verwendet, die [Code Coverage](../test/customizing-code-coverage-analysis.md) anzupassen.  
   
 > [!NOTE]
 >  **RUNSETTINGS- und TESTSETTINGS-Dateien**  
 >   
->  Es gibt zwei Typen oder Dateien für das Konfigurieren von Tests. *.runsettings werden für Komponententests gebraucht. \*.testsettings-Dateien werden für [Tests in Laborumgebungen](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests), Webleistungs- und Auslastungstests sowie für das Anpassen einiger diagnostischer Datenadapter wie beispielsweise Intellitrace und Ereignisprotokolladapter genutzt.  
+>  Es gibt zwei Typen oder Dateien für das Konfigurieren von Tests. \**.runsettings-Dateien werden für Komponententests verwendet. \*.testsettings-Dateien werden für [Tests in Laborumgebungen](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests), Webleistungs- und Auslastungstests sowie für das Anpassen einiger diagnostischer Datenadapter wie beispielsweise Intellitrace und Ereignisprotokolladapter genutzt.  
 >   
->  In früheren Editionen von Visual Studio bis 2010 wurden Komponententests auch mithilfe von *.testsettings-Dateien angepasst. Das ist weiterhin möglich. Die Tests laufen jedoch langsamer, als wenn Sie die vergleichbare Konfiguration in einer \*.runsettings-Datei verwenden.  
+>  In früheren Editionen von Visual Studio – bis 2010 – wurden Komponententests auch mithilfe von \*.testsettings-Dateien angepasst. Das ist weiterhin möglich. Die Tests laufen jedoch langsamer, als wenn Sie die vergleichbare Konfiguration in einer \*.runsettings-Datei verwenden.  
   
 ## <a name="customizing-tests-with-a-runsettings-file"></a>Anpassen von Tests mit einer .runsetting-Datei  
   
@@ -61,7 +61,7 @@ Komponententests in Visual Studio können mithilfe einer .runsettings-Datei konf
  ![Aktivieren einer Datei für Laufzeiteinstellungen](../test/media/runsettings-1.png "RunSettings-1")  
   
 ##  <a name="example"></a>Kopieren dieser RUNSETTINGS-Beispieldatei  
- Im Folgenden finden Sie eine typische *.runsettings-Datei. Jedes Element der Datei ist optional, weil jeder Wert über einen Standardwert verfügt.  
+ Im Folgenden finden Sie eine typische \*.runsettings-Datei. Jedes Element der Datei ist optional, weil jeder Wert über einen Standardwert verfügt.  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  

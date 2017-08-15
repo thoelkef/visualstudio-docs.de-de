@@ -13,11 +13,11 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 8d0cc37019b04d6f734d6bd604c0ddd948b6dc9f
+ms.translationtype: HT
+ms.sourcegitcommit: 3037d92e9de377ab4b306a5a0e164e29fa6659e7
+ms.openlocfilehash: 30ac6d277edf54ac56294ea0639a471a22dc00da
 ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 08/07/2017
 
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Ausführen von Profilerstellungstools mit oder ohne den Debugger
@@ -38,7 +38,7 @@ Visual Studio bietet Ihnen nun eine Auswahl von Leistungstools, von denen einige
   
 3.  Müssen Sie die Leistung genau messen oder ist eine ungefähre Angabe akzeptabel?  
   
-     In Debugbuilds sind bestimmte Optimierungen nicht vorhanden, die Releasebuilds bereitstellen, z.B. Inlinefunktionsaufrufe und Konstanten, das Löschen nicht verwendeter Codepfade und das Speichern von Variablen auf eine Art und Weise, dass diese vom Debugger nicht verwendet werden können. Der Debugger selbst ändert seine Leistung, da er bestimmte Vorgänge ausführt, die zum Debuggen erforderlich sind (z. B. das Abfangen von Ausnahmen und Ladeereignisse für Module). Leistungsangaben in den Tools mit integriertem Debugger sind daher nur innerhalb von zehn Millisekunden genau. Leistungsangaben für Releasekonfigurationen mit den Tools ohne Debugger sind viel präziser.  
+     In Debugbuilds sind bestimmte Optimierungen nicht vorhanden, die Releasebuilds bereitstellen, z.B. Inlinefunktionsaufrufe und Konstanten, das Löschen nicht verwendeter Codepfade und das Speichern von Variablen auf eine Art und Weise, dass diese vom Debugger nicht verwendet werden können. Der Debugger selbst ändert seine Leistung, da er bestimmte Vorgänge ausführt, die zum Debuggen erforderlich sind (z. B. das Abfangen von Ausnahmen und Ladeereignisse für Module). Leistungsangaben in den im Debugger integrierten Tools sind weniger genau, da sie keine Debuggeroptimierungen berücksichtigen. Im Vergleich mit anderen relativen Messwerten, die beim Debuggen erfasst werden, können sie jedoch nützlich sein. Leistungsangaben für Releasekonfigurationen mit den Tools ohne Debugger sind viel präziser.
   
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Sammeln von Profilerstellungsdaten während des Debuggens  
  Der folgende Abschnitt beschreibt das lokale Debuggen. Informationen zum Debuggen auf einem Gerät oder zum Remotedebuggen erhalten Sie in späteren Abschnitten.  
@@ -63,11 +63,11 @@ Visual Studio bietet Ihnen nun eine Auswahl von Leistungstools, von denen einige
   
  Das Fenster hat jetzt ein Suchfeld, damit Sie nach einer bestimmten Zeichenfolge in der Ereignisliste suchen können. Folgende Abbildung zeigt beispielsweise die Ergebnisse der Suche nach der Zeichenfolge "install", der vier Ereignisse entsprechen:  
   
- ![DiagnosticsEventSearch](~/profiling/media/diagnosticseventsearch.png "DiagnosticsEventSearch")  
+ ![DiagnosticsEventSearch](../profiling/media/diagnosticseventsearch.png "DiagnosticsEventSearch")  
   
  Sie können in dem Fenster Ereignisse auch in die Ansicht hineinfiltern bzw. aus dieser herausfiltern. In der Dropdownliste **Filtern** können Sie bestimmte Kategorien von Ereignissen aktivieren bzw. deaktivieren: Die Kategorienamen entsprechen den Präfixnamen.  
   
- ![DiagnosticEventFilter](~/profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
+ ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
   
  Weitere Informationen finden Sie unter [Suchen und Filtern auf der Registerkarte "Ereignisse" im Fenster "Diagnosetools"](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).  
   
@@ -80,7 +80,7 @@ Visual Studio bietet Ihnen nun eine Auswahl von Leistungstools, von denen einige
   
 3.  Wählen Sie auf der Diagnosestartseite ein oder mehrere Tools aus, die in der Sitzung ausgeführt werden sollen. Es werden nur die Tools angezeigt, die für den Projekttyp, das Betriebssystem und die Programmiersprache infrage kommen. Wenn Sie ein Diagnosetool auswählen, werden die Optionen für Tools deaktiviert, die nicht in derselben Diagnosesitzung ausgeführt werden können. Hier ist eine mögliche Auswahl für eine Windows Universal-App in C#:  
   
-     ![Diagnosetools auswählen](~/profiling/media/diag_selecttool.png "DIAG_SelectTool")  
+     ![Diagnosetools auswählen](../profiling/media/diag_selecttool.png "DIAG_SelectTool")  
   
 4.  Klicken Sie zum Starten der Diagnosesitzung auf **Start**.  
   
@@ -88,7 +88,7 @@ Visual Studio bietet Ihnen nun eine Auswahl von Leistungstools, von denen einige
   
      Während Sie die Sitzung ausführen, zeigen einige Tools Grafiken der Echtzeitdaten auf der Startseite der Diagnosetools an.  
   
-     ![Daten auf der Seite „Leistung und Diagnose“ erfassen](~/profiling/media/pdhub_collectdata.png "PDHUB_CollectData")  
+     ![Daten auf der Seite „Leistung und Diagnose“ erfassen](../profiling/media/pdhub_collectdata.png "PDHUB_CollectData")  
   
 6.  Klicken Sie zum Beenden der Diagnosesitzung auf **Auflistung anhalten**.  
   
@@ -96,32 +96,32 @@ Visual Studio bietet Ihnen nun eine Auswahl von Leistungstools, von denen einige
   
  Sie können auch gespeicherte DIAGNOSTIC-Sitzungsdateien über die Liste der zuvor geöffneten Elemente auf der Startseite für die Diagnosetools öffnen.  
   
- ![Öffnen einer gespeicherten Diagnosesitzungsdatei](~/profiling/media/pdhub_openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
+ ![Öffnen einer gespeicherten Diagnosesitzungsdatei](../profiling/media/pdhub_openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
   
 ## <a name="the-profiling-report"></a>Der Profilerstellungsbericht  
- ![Diagnosetools-Bericht](~/profiling/media/diag_report.png "DIAG_Report")  
+ ![Diagnosetools-Bericht](../profiling/media/diag_report.png "DIAG_Report")  
   
 |||  
 |-|-|  
-|![Schritt 1](~/profiling/media/procguid_1.png "ProcGuid_1")|Die Zeitachse zeigt die Länge der Profilerstellungssitzung, der App-Lebenszyklusaktivierungsereignisse und der Benutzermarkierungen an.|  
-|![Schritt 2](~/profiling/media/procguid_2.png "ProcGuid_2")|Sie können den Bericht auf einen Teil der Zeitachse einschränken, indem Sie die blauen Striche ziehen, um einen Bereich der Zeitachse auszuwählen.|  
-|![Schritt 3](~/profiling/media/procguid_3.png "ProcGuid_3")|Ein Tool zeigt mindestens ein Hauptdiagramm an. Wenn Ihre Diagnosesitzung mit mehreren Tools erstellt wird, werden alle Hauptdiagramme angezeigt.|  
-|![Schritt 4](~/profiling/media/procguid_4.png "ProcGuid_4")|Sie können die einzelnen Diagramme reduzieren und erweitern.|  
-|![Schritt 5](~/profiling/media/procguid_6.png "ProcGuid_6")|Wenn Ihre Daten Informationen mehrerer Tools enthalten, werden die Details für das Tool unter Registerkarten aufgelistet.|  
-|![Schritt 6](~/profiling/media/procguid_6a.png "ProcGuid_6a")|Ein Tool kann eine oder mehrere Detailansichten haben. Die Ansicht wird durch den ausgewählten Bereich der Zeitachse gefiltert.|  
+|![Schritt 1](../profiling/media/procguid_1.png "ProcGuid_1")|Die Zeitachse zeigt die Länge der Profilerstellungssitzung, der App-Lebenszyklusaktivierungsereignisse und der Benutzermarkierungen an.|  
+|![Schritt 2](../profiling/media/procguid_2.png "ProcGuid_2")|Sie können den Bericht auf einen Teil der Zeitachse einschränken, indem Sie die blauen Striche ziehen, um einen Bereich der Zeitachse auszuwählen.|  
+|![Schritt 3](../profiling/media/procguid_3.png "ProcGuid_3")|Ein Tool zeigt mindestens ein Hauptdiagramm an. Wenn Ihre Diagnosesitzung mit mehreren Tools erstellt wird, werden alle Hauptdiagramme angezeigt.|  
+|![Schritt 4](../profiling/media/procguid_4.png "ProcGuid_4")|Sie können die einzelnen Diagramme reduzieren und erweitern.|  
+|![Schritt 5](../profiling/media/procguid_6.png "ProcGuid_6")|Wenn Ihre Daten Informationen mehrerer Tools enthalten, werden die Details für das Tool unter Registerkarten aufgelistet.|  
+|![Schritt 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|Ein Tool kann eine oder mehrere Detailansichten haben. Die Ansicht wird durch den ausgewählten Bereich der Zeitachse gefiltert.|  
   
 ## <a name="setting-the-analysis-target-to-another-device"></a>Festlegen des Analyseziels auf ein anderes Gerät  
  Sie können nicht nur Ihre App im Visual Studio-Projekt starten, sondern auch Diagnosesitzungen auf alternativen Zielen ausführen. Beispielsweise empfiehlt es sich, die Diagnose von Leistungsproblemen mit einer Version Ihrer App auszuführen, die aus dem Windows App Store installiert wurde.  
   
- ![Analyseziel für Diagnosetools auswählen](~/profiling/media/pdhub_chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  
+ ![Analyseziel für Diagnosetools auswählen](../profiling/media/pdhub_chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  
   
  Sie können Apps starten, die bereits auf einem Gerät installiert sind, oder Sie können die Diagnosetools an Apps anfügen, die bereits ausgeführt werden. Bei der Auswahl von **Ausgeführte App** oder **Installierte App** wählen Sie die App in einer Liste aus, die die Apps auf dem angegebenen Bereitstellungsziel erkennt.  
   
- ![Auswählen einer ausgeführten oder installierten App für die Diagnose](~/profiling/media/pdhub_selectrunningapp.png "PDHUB_SelectRunningApp")  
+ ![Auswählen einer ausgeführten oder installierten App für die Diagnose](../profiling/media/pdhub_selectrunningapp.png "PDHUB_SelectRunningApp")  
   
  Wenn Sie **Internet Explorer** auswählen, geben Sie die URL an, und Sie können das Windows Phone-Bereitstellungsziel ändern.  
   
- ![URL angeben, die in Internet Explorer angezeigt wird](~/profiling/media/pdhub_choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
+ ![URL angeben, die in Internet Explorer angezeigt wird](../profiling/media/pdhub_choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
   
 ## <a name="remote-debugging"></a>Remote Debugging  
  Für das Ausführen einer Diagnosesitzung auf einem Remote-PC oder -Tablet müssen die Visual Studio-Remotetools installiert sein und auf dem Remotezielgerät ausgeführt werden. Informationen zu Desktop-Apps finden Sie unter [Remotedebugging](../debugger/remote-debugging.md).  Informationen zu Windows Universal-Apps finden Sie unter [Run Windows Store apps on a remote machine (Ausführen von Windows Store-Apps auf einem Remotecomputer)](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
@@ -142,3 +142,4 @@ Visual Studio bietet Ihnen nun eine Auswahl von Leistungstools, von denen einige
  [Diagnostic Tools debugger window in Visual Studio 2015 (Fenster des Diagnosetoolsdebugger in Visual Studio 2015)](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
   
  [IntelliTrace in Visual Studio Enterprise 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/intellitrace-in-visual-studio-ultimate-2015.aspx)
+

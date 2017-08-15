@@ -32,11 +32,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9713f09b7379b14b9362e3853a910948935c501e
-ms.openlocfilehash: 3524c21503d0432d509c607ea157f3fe675b443d
+ms.translationtype: HT
+ms.sourcegitcommit: c00adbbabf0d3b82acb17f4a269dfc693246bc69
+ms.openlocfilehash: 60732a1fbe7379b43d2856a62d5cd459165dd9a3
 ms.contentlocale: de-de
-ms.lasthandoff: 05/31/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 # <a name="how-to-create-item-templates"></a>Gewusst wie: Erstellen von Elementvorlagen
@@ -58,7 +58,7 @@ Anhand der Schritte im [ersten Verfahren](../ide/how-to-create-item-templates.md
 
 3.  Ändern Sie die Codedatei, um anzugeben, an welcher Stelle Parameterersetzungen stattfinden sollen. Weitere Informationen finden Sie unter [Vorgehensweise: Ersetzen von Parametern in einer Vorlage](../ide/how-to-substitute-parameters-in-a-template.md).  
 
-4.  Klicken Sie im Menü **Datei** auf **Vorlage exportieren**.  
+4.  Klicken Sie im Menü **Projekt** auf **Vorlage exportieren**.  
 
 5.  Klicken Sie auf **Elementvorlage**, wählen Sie das Projekt aus, das das Element enthält, und klicken Sie auf **Weiter**.  
 
@@ -166,7 +166,7 @@ Anhand der Schritte im [ersten Verfahren](../ide/how-to-create-item-templates.md
 
 2.  Bearbeiten Sie das Projektelement solange, bis es als Vorlage gespeichert werden kann.  
 
-3.  Ändern Sie nach Bedarf die Codedatei, um anzugeben, an welcher Stelle Parameterersetzungen stattfinden sollen. Weitere Informationen zu Parameterersetzungen finden Sie unter „Gewusst wie: Ersetzen von Parametern in einer Vorlage“.  
+3.  Ändern Sie nach Bedarf die Codedatei, um anzugeben, an welcher Stelle Parameterersetzungen stattfinden sollen. Weitere Informationen zu Parameterersetzungen finden Sie unter [Gewusst wie: Ersetzen von Parametern in einer Vorlage](../ide/how-to-substitute-parameters-in-a-template.md).
 
 4.  Erstellen Sie eine XML-Datei, und speichern Sie sie mit der Dateinamenerweiterung „.vstemplate“ in demselben Verzeichnis wie die neue Elementvorlage.  
 

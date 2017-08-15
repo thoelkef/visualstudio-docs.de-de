@@ -1,7 +1,7 @@
 ---
 title: Python-Umgebungen in Visual Studio | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 7/13/2017
+ms.date: 7/25/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -16,10 +16,10 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: f73c0c7c40d1edd18cccb1ba69424c4e34472c33
+ms.sourcegitcommit: e48ebcafaca37505dbcc92bce682d0c6169004e1
+ms.openlocfilehash: fa8a7616fe88f024ab299e5d115b66f8656e7cb3
 ms.contentlocale: de-de
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 07/26/2017
 
 ---
 
@@ -52,7 +52,7 @@ Ein Einführungsvideo finden Sie unter [Deep Dive: Python Interpreters](https://
 
 ## <a name="selecting-and-installing-python-interpreters"></a>Auswählen und Installieren von Python-Interpretern
 
-Außer bei Visual Studio 2017 umfasst die Python-Unterstützung keinen Python-Interpreter. Sie müssen also einen der folgenden Interpreter zum Ausführen des Codes installieren. Im Allgemeinen erkennt Visual Studio neu installierte Interpreter automatisch und richtet eine Umgebung für sie ein. Wenn dies nicht der Fall ist, finden Sie unter [Erstellen einer Umgebung für einen vorhandenen Interpreter](#creating-an-environment-for-an-existing-interpreter) weiter unten weitere Informationen.
+Außer bei Visual Studio 2017 umfasst die Python-Unterstützung keinen Python-Interpreter. Sie müssen also einen der folgenden Interpreter zum Ausführen des Codes installieren. Im Allgemeinen erkennt Visual Studio neu installierte Interpreter automatisch und richtet für jeden eine Umgebung ein. Wenn dies nicht der Fall ist, finden Sie unter [Erstellen einer Umgebung für einen vorhandenen Interpreter](#creating-an-environment-for-an-existing-interpreter) weitere Informationen.
 
 | Interpreter | Beschreibung | 
 | --- | --- | 
@@ -89,7 +89,7 @@ Im Beispiel oben wird Python 3.4 (32-Bit-CPython) zusammen mit den 32-Bit- und 6
 
 ### <a name="creating-an-environment-for-an-existing-interpreter"></a>Erstellen eine Umgebung für einen vorhandenen Interpreter
 
-Visual Studio sucht normalerweise in der Registrierung nach einem installierten Python-Interpreter. Diese Suche ist jedoch möglicherweise nicht erfolgreich, wenn der Interpreter nicht auf standardisierte Weise installiert wurde. In solchen Fällen können Sie Visual Studio wie folgt direkt auf den Interpreter verweisen:
+Visual Studio ermittelt einen installierten Python-Interpreter in der Regel durch Überprüfen der Registrierung (gemäß den Angaben unter [PEP 514 - Python registration in the Windows registry](https://www.python.org/dev/peps/pep-0514/) [PEP 514 – Registrieren von Python in der Windows-Registrierung]). Visual Studio findet den Interpreter jedoch möglicherweise nicht, wenn dieser nicht auf standardmäßige Art und Weise installiert ist. In solchen Fällen können Sie Visual Studio wie folgt direkt auf den Interpreter verweisen:
 
 1. Wählen Sie im Fenster „Python-Umgebungen“ **+ Benutzerdefiniert** aus. Damit wird eine neue Umgebung erstellt, und die [Registerkarte **Konfigurieren**](#configure-tab) wird geöffnet, die weiter unten beschrieben wird.
 
@@ -99,7 +99,15 @@ Visual Studio sucht normalerweise in der Registrierung nach einem installierten 
 1. Geben Sie den Pfad des Interpreters in das Feld **Präfixpfad** ein, oder navigieren Sie dahin.
 1. Wählen Sie **Automatisch erkennen** aus, damit Visual Studio die verbleibenden Felder ausfüllt, oder füllen Sie sie manuell aus.
 1. Wählen Sie **Übernehmen** aus, um die Umgebung zu speichern.
-1. Wenn Sie die Umgebung entfernen möchten, wählen Sie auf der Registerkarte **Konfigurieren** den Befehl **Entfernen** aus.
+1. Wenn Sie die Umgebung entfernen möchten, wählen Sie auf der Registerkarte **Konfigurieren** den Befehl **Entfernen** aus. Umgebungen mit automatischer Erkennung bieten diese Option nicht. Weitere Informationen finden Sie im nächsten Abschnitt.
+
+### <a name="moving-an-existing-interpreter"></a>Verschieben eines vorhandenen Interpreters
+
+Wenn Sie einen vorhandenen Interpreter in einen neuen Speicherort im Dateisystem verschieben, erkennt Visual Studio diese Änderung nicht automatisch. Zum Aktualisieren der Liste im Fenster „Umgebung“ sind manuelle Schritte erforderlich:
+
+- Wenn Sie ursprünglich eine Umgebung für diesen Interpreter erstellt haben, bearbeiten Sie diese Umgebung, sodass diese auf den neuen Speicherort zeigt.
+
+- Wenn die Umgebung ursprünglich automatisch erkannt wurde, wurde sie mit einem bestimmten Installationsprogramm auf dem Computer installiert, das die von Visual Studio überprüften Registrierungseinträge erstellt hat. In diesem Fall stellen Sie den Python-Interpreter zunächst an seinem ursprünglichen Speicherort wieder her. Danach deinstallieren Sie den Interpreter mithilfe des Installationsprogramms; dabei werden die Registrierungseinträge gelöscht. Installieren Sie den Interpreter dann am gewünschten Speicherort. Starten Sie Visual Studio neu – jetzt sollte der neue Speicherort automatisch erkannt werden. Dieses Verfahren stellt sicher, dass alle Nebeneffekte des Installationsprogramms ordnungsgemäß verarbeitet werden.
 
 ### <a name="overview-tab"></a>Registerkarte „Übersicht“
 

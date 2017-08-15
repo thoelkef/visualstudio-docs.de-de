@@ -31,11 +31,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: b5c18e7d208879498c1923403ec1bd213adffb5a
+ms.translationtype: HT
+ms.sourcegitcommit: f0576ce6dd78fe1328bcea3ab9a27507ddc0f2c0
+ms.openlocfilehash: 4811dda912f20272733a4d878fc8c607eb2573fc
 ms.contentlocale: de-de
-ms.lasthandoff: 05/24/2017
+ms.lasthandoff: 08/07/2017
 
 ---
 # <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>Exemplarische Vorgehensweise: Test-First-Unterstützung mit der Funktion „Generate From Usage“
@@ -60,7 +60,21 @@ In diesem Thema wird die Verwendung der [Generate From Usage](../ide/visual-csha
      ![Dialogfeld „Neues Testprojekt“](../ide/media/newproject_test.png "NewProject_Test")  
 Dialogfeld "Neues Projekt"  
   
-4.  Klicken Sie auf **OK** , um das Dialogfeld **Neues Projekt** zu schließen. Sie können nun mit dem Schreiben von Tests beginnen.  
+4.  Klicken Sie auf **OK** , um das Dialogfeld **Neues Projekt** zu schließen.
+
+5.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Eintrag **Verweise**, und klicken Sie dann auf **Verweis hinzufügen**.
+
+6.  Wählen Sie im Dialogfeld **Verweis-Manager** die Option **Projekte** und dann das Komponententestprojekt aus.
+
+7.  Klicken Sie auf **OK**, um das Dialogfeld **Verweis-Manager** zu schließen.
+
+8.  Fügen Sie in der Datei **Class1** direkt nach der letzten vorhandenen **using**-Anweisung eine **using**-Anweisung für das Testprojekt ein:
+
+    * In Visual Basic fügen Sie `Using UnitTestProject1` hinzu.
+    
+    * In C# fügen Sie `using UnitTestProject1;` hinzu.
+    
+9.  Speichern Sie die Projektmappe. Sie können nun mit dem Schreiben von Tests beginnen.  
   
 ### <a name="to-generate-a-new-class-from-a-unit-test"></a>So generieren Sie aus einem Unittest eine neue Klasse  
   
@@ -73,10 +87,10 @@ Dialogfeld "Neues Projekt"
   
 3.  Suchen Sie die `TestMethod1()` -Methode, und benennen Sie sie um in `DefaultAutomobileIsInitializedCorrectly()`. Erstellen Sie innerhalb dieser Methode eine neue Instanz einer Klasse namens `Automobile`, wie in den folgenden Abbildungen dargestellt. Eine wellenförmige Unterstreichung wird angezeigt, die auf einen Fehler während der Kompilierung hinweist, und unter dem Typnamen wird ein Smarttag angezeigt. Die genaue Position des Smarttags variiert abhängig davon, ob Sie [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] oder [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] verwenden.  
   
-     ![Smarttag „Unterstreichen“ in Visual Basic](~/ide/media/genclass_underlinevb.png "GenClass_UnderlineVB")  
+     ![Smarttag „Unterstreichen“ in Visual Basic](../ide/media/genclass_underlinevb.png "GenClass_UnderlineVB")  
 Visual Basic  
   
-     ![Smarttag „Unterstreichen“ in C&#35;](~/ide/media/genclass_underline.png "GenClass_Underline")  
+     ![Smarttag „Unterstreichen“ in C&#35;](../ide/media/genclass_underline.png "GenClass_Underline")  
 Visual C#  
   
 4.  Halten Sie den Mauszeiger auf dem Smarttag, um eine Fehlermeldung anzuzeigen, die besagt, dass noch kein Typ mit dem Namen `Automobile` definiert wurde. Klicken Sie auf das Smarttag, oder drücken Sie STRG+. (STRG+Punkt), um das Kontextmenü "Aus Verwendung generieren" zu öffnen, wie in den folgenden Abbildungen dargestellt.  
@@ -91,7 +105,7 @@ Visual C#
   
      Klicken Sie auf **Neuen Typ generieren** , um das Dialogfeld **Neuen Typ generieren** zu öffnen, das in der folgenden Abbildung dargestellt ist. Klicken Sie in der Liste **Projekt** auf **GFUDemo_VB** oder **GFUDemo_CS** , um [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] anzuweisen, die Datei statt dem Testprojekt dem Quellcodeprojekt hinzuzufügen.  
   
-     ![Dialogfeld "Neuen Typ generieren"](../ide/media/genotherdialog.png "GenOtherDialog")  
+     ![Dialogfeld „Neuen Typ generieren“](../ide/media/genotherdialog.png "GenOtherDialog")  
 Dialogfeld "Neuen Typ generieren"  
   
 6.  Klicken Sie auf **OK** , um das Dialogfeld zu schließen und die neue Datei zu erstellen.  
