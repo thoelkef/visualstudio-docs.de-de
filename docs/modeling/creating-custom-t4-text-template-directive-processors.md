@@ -1,70 +1,87 @@
 ---
-title: "Creating Custom T4 Text Template Directive Processors | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "text templates, custom directive processors"
+title: Erstellen von benutzerdefinierten T4-Text-Direktivenprozessoren | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- text templates, custom directive processors
 ms.assetid: 422b47af-5441-4b02-b5ad-1b8b328457e3
 caps.latest.revision: 29
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 29
----
-# Creating Custom T4 Text Template Directive Processors
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: alancameronwills
+ms.author: awills
+manager: douge
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: a8f56201528b15da04c5861be5c9afdd9a9b379e
+ms.contentlocale: de-de
+ms.lasthandoff: 08/17/2017
 
-Beim *Textvorlagen\-Transformationsprozess* wird aus einer *Textvorlagendatei* \(Eingabe\) eine Textdatei \(Ausgabe\) erzeugt.  Das *Textvorlagen\-Transformationsmodul* steuert den Prozess und interagiert mit einem Textvorlagen\-Transformationshost und einem oder mehreren Textvorlagen\-*Direktivenprozessoren*, um den Prozess auszuführen.  Weitere Informationen finden Sie unter [The Text Template Transformation Process](../modeling/the-text-template-transformation-process.md).  
+---
+# <a name="creating-custom-t4-text-template-directive-processors"></a>Erstellen von benutzerdefinierten T4-Anweisungsprozessoren für Textvorlagen
+Die *Textvorlagen-Transformationsprozess* nimmt eine *Textvorlage* Datei als Eingabe und eine Textdatei als Ausgabe erzeugt. Die *Textvorlagen-Transformationsmodul* Steuerelemente, die der Prozess, und das Modul interagiert mit einem Textvorlagen-Transformationshost und eine oder mehrere Textvorlage *Direktivenprozessoren* um den Vorgang abzuschließen. Weitere Informationen finden Sie unter [der Textvorlagen-Transformationsprozess](../modeling/the-text-template-transformation-process.md).  
   
  Zum Erstellen eines benutzerdefinierten Direktivenprozessors erstellen Sie eine Klasse, die von <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> oder <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> erbt.  
   
- Der Unterschied zwischen diesen beiden Klassen besteht darin, dass <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> die minimale Schnittstelle implementiert, die notwendig ist, um Parameter vom Benutzer abzurufen und den Code zum Erzeugen der Vorlagenausgabedatei zu generieren.  <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> implementiert das requires\/provides\-Entwurfsmuster.  <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> verarbeitet zwei spezielle Parameter, `requires` und `provides`.  Ein benutzerdefinierter Direktivenprozessor könnte z. B. einen Dateinamen vom Benutzer akzeptieren, die Datei öffnen und lesen und den Text der Datei dann in einer Variable namens `fileText` speichern.  Eine Unterklasse der <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>\-Klasse könnte einen Dateinamen vom Benutzer als Wert des `requires`\-Parameters und den Name der Variable, in der der Text gespeichert werden soll, als Wert des `provides`\-Parameters akzeptieren.  Dieser Prozessor würde die Datei öffnen und lesen und den Text der Datei dann in der angegebenen Variable speichern.  
+ Der Unterschied zwischen diesen beiden besteht darin, die <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> implementiert die minimale Schnittstelle ist erforderlich, um Parameter vom Benutzer erhalten und zum Generieren des Codes, der die Vorlagendatei für die Ausgabe erzeugt. <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>implementiert das Entwurfsmuster erfordert/bereitstellt. <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>verarbeitet zwei spezielle Parameter `requires` und `provides`.  Z. B. ein benutzerdefinierter Direktivenprozessor möglicherweise akzeptieren einen Dateinamen vom Benutzer, öffnen die Datei nicht lesen und speichern Sie den Text der Datei in einer Variablen mit dem Namen `fileText`. Eine Unterklasse von der <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> Klasse dauern einen Dateinamen vom Benutzer als Wert des der `requires` -Parameter und den Namen der Variablen zum Speichern von Text als Wert für die `provides` Parameter. Dieser Prozessor würde öffnen und Lesen Sie die Datei und klicken Sie dann den Text der Datei in einer angegebenen Variable speichern.  
   
- Bevor Sie einen benutzerdefinierten Direktivenprozessor in einer Textvorlage in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] aufrufen, müssen Sie ihn registrieren.  
+ Bevor Sie einen benutzerdefinierten Direktivenprozessor in einer Textvorlage in Aufrufen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], müssen Sie ihn registrieren.  
   
- Weitere Informationen zum Hinzufügen des Registrierungsschlüssels finden Sie unter [Deploying a Custom Directive Processor](../modeling/deploying-a-custom-directive-processor.md).  
+ Weitere Informationen zur Vorgehensweise beim Hinzufügen des Registrierungsschlüssels finden Sie unter [Bereitstellen einer benutzerdefinierten Direktivenprozessor](../modeling/deploying-a-custom-directive-processor.md).  
   
-## Benutzerdefinierte Direktiven  
- Eine benutzerdefinierte Direktive sieht wie folgt aus:  
+## <a name="custom-directives"></a>Benutzerdefinierte Richtlinien  
+ Eine benutzerdefinierte Direktive sieht folgendermaßen aus:  
   
- `<#@ MyDirective Processor="MyDirectiveProcessor" parameter1="value1" … #>`  
+ `<#@ MyDirective Processor="MyDirectiveProcessor" parameter1="value1" ... #>`  
   
- Sie können einen benutzerdefinierten Direktivenprozessor verwenden, wenn Sie in einer Textvorlage auf externe Daten oder Ressourcen zugreifen möchten.  
+ Sie können einen benutzerdefinierten Direktivenprozessor verwenden, wenn Sie externe Daten oder Ressourcen in einer Textvorlage zugreifen möchten.  
   
- Die von einem Direktivenprozessor bereitgestellte Funktion kann freigegeben und für unterschiedliche Textvorlagen verwendet werden. Direktivenprozessoren bieten daher die Möglichkeit, Code zur Wiederverwendung zu zerlegen.  Die integrierte `include`\-Direktive funktioniert ähnlich, da damit Code zerlegt und für unterschiedliche Textvorlagen verwendet werden kann.  Der Unterschied besteht darin, dass von der `include`\-Direktive bereitgestellte Funktionen korrigiert werden und keine Parameter akzeptieren.  Wenn Sie eine allgemeine Funktion für eine Textvorlage bereitstellen möchten und durch die Vorlage Parameter übergeben werden sollen, müssen Sie einen benutzerdefinierten Direktivenprozessor erstellen.  
+ Andere Textvorlagen können die Funktionalität, die ein einzelner Direktivenprozessor bereitstellt, freigeben, sodass Direktivenprozessoren Faktor Code zur Wiederverwendung zu ermöglichen. Die integrierte `include` Richtlinie ist ähnlich, da Sie es, Code verlagern, und teilen Sie diese für andere Textvorlagen verwenden können. Der Unterschied ist, die solche Funktionen verwendet werden, die die `include` Richtlinie bietet, ist unveränderlich und akzeptiert keine Parameter. Wenn die allgemeine Funktionalität zu einer Textvorlage und durch die Vorlage Parameter übergeben werden sollen, müssen Sie einen benutzerdefinierten Direktivenprozessor erstellen.  
   
- Beispiele für die Verwendung von benutzerdefinierten Direktivenprozessoren:  
+ Einige Beispiele für benutzerdefinierte Direktivenprozessoren sind möglich:  
   
--   Ein Direktivenprozessor zum Zurückgeben von Daten aus einer Datenbank, der einen Benutzernamen und ein Kennwort als Parameter akzeptiert  
+-   Ein Direktivenprozessor zum Zurückgeben von Daten aus einer Datenbank, das einen Benutzernamen und ein Kennwort als Parameter akzeptiert.  
   
--   Ein Direktivenprozessor zum Öffnen und Lesen einer Datei, der den Namen der Datei als Parameter akzeptiert  
+-   Einen Direktivenprozessor öffnen und Lesen einer Datei, die den Namen der Datei als Parameter akzeptiert.  
   
-### Hauptbestandteile eines benutzerdefinierten Direktivenprozessors  
- Zum Entwickeln eines benutzerdefinierten Direktivenprozessors müssen Sie eine Klasse erstellen, die von <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> oder <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> erbt.  
+### <a name="principal-parts-of-a-custom-directive-processor"></a>Prinzipal Teile eines benutzerdefinierten Direktivenprozessors  
+ Um einen Direktivenprozessor zu entwickeln, erstellen Sie eine Klasse, die entweder erbt <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> oder <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>.  
   
- Die beiden folgenden `DirectiveProcessor`\-Methoden sind bei dieser Implementierung am wichtigsten.  
+ Die wichtigste `DirectiveProcessor` Methoden, die Sie implementieren müssen, sind wie folgt.  
   
--   `bool IsDirectiveSupported(string directiveName)` – Gibt `true` zurück, wenn der Direktivenprozessor die angegebene Direktive verarbeiten kann.  
+-   `bool IsDirectiveSupported(string directiveName)`-Rückgabetyp `true` , wenn der Direktivenprozessor die angegebene Direktive verarbeiten kann.  
   
--   `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` – Das Vorlagenmodul ruft diese Methode für jedes Vorkommen einer Direktive in der Vorlage auf.  Der Prozessor sollte die Ergebnisse speichern.  
+-   `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)`-Das Vorlagenmodul ruft diese Methode für jedes Vorkommen einer Direktive in der Vorlage. Der Prozessor sollte die Ergebnisse zu speichern.  
   
- Nach allen Aufrufen von ProcessDirective\(\) ruft das Vorlagenmodul die folgenden Methoden auf:  
+ Nachdem alle Aufrufe an ProcessDirective() wird das Vorlagenmodul diese Methoden aufrufen:  
   
--   `string[] GetReferencesForProcessingRun()` – Gibt die Namen von Assemblys zurück, die für den Vorlagencode erforderlich sind.  
+-   `string[] GetReferencesForProcessingRun()`– Gibt die Namen der Assemblys, die der Vorlagencode erfordert zurück.  
   
--   `string[] GetImportsForProcessingRun()` – Gibt die Namespaces zurück, die im Vorlagencode verwendet werden können.  
+-   `string[] GetImportsForProcessingRun()`-Geben Sie die Namespaces, die verwendet werden können im Vorlagencode zurück.  
   
--   `string GetClassCodeForProcessingRun()` – Gibt den Code von Methoden, Eigenschaften und anderen Deklarationen zurück, die im Vorlagencode verwendet werden können.  Am einfachsten ist es, eine Zeichenfolge zu erstellen, die den C\#\- oder Visual Basic\-Code enthält.  Damit der Direktivenprozessor in Vorlagen mit beliebigen CLR\-Sprachen aufgerufen werden kann, können Sie die Anweisungen als CodeDOM\-Struktur erstellen und dann das Ergebnis der Serialisierung der Struktur in der von der Vorlage verwendeten Sprache zurückgeben.  
+-   `string GetClassCodeForProcessingRun()`-Gibt den Code von Methoden, Eigenschaften und anderen Deklarationen, die der Code verwenden können. Die einfachste Möglichkeit hierzu ist eine Zeichenfolge mit c# oder Visual Basic-Code zu erstellen. Stellen Sie den Direktivenprozessor kann aufgerufen werden, aus einer Vorlage, die einer beliebigen CLR-Sprache verwendet, können Sie die Anweisungen als ein CodeDom-Struktur erstellen und dann das Ergebnis der Serialisierung der Struktur in der von der Vorlage verwendeten Sprache zurück.  
   
--   Weitere Informationen finden Sie unter [Walkthrough: Creating a Custom Directive Processor](../modeling/walkthrough-creating-a-custom-directive-processor.md).  
+-   Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: erstellen einen benutzerdefinierten Direktivenprozessor](../modeling/walkthrough-creating-a-custom-directive-processor.md).  
   
-## In diesem Abschnitt  
- [Deploying a Custom Directive Processor](../modeling/deploying-a-custom-directive-processor.md)  
- Erläutert die Registrierung eines benutzerdefinierten Direktivenprozessors.  
+## <a name="in-this-section"></a>In diesem Abschnitt  
+ [Bereitstellen eines benutzerdefinierten Anweisungsprozessors](../modeling/deploying-a-custom-directive-processor.md)  
+ Erläutert das Registrieren eines benutzerdefinierten Direktivenprozessors.  
   
- [Walkthrough: Creating a Custom Directive Processor](../modeling/walkthrough-creating-a-custom-directive-processor.md)  
- Beschreibt das Erstellen eines benutzerdefinierten Direktivenprozessors, Registrieren und Testen des Direktivenprozessors und Formatieren der Ausgabedatei als HTML.
+ [Exemplarische Vorgehensweise: Erstellen eines benutzerdefinierten Anweisungsprozessors](../modeling/walkthrough-creating-a-custom-directive-processor.md)  
+ Beschreibt Gewusst wie: Erstellen eines benutzerdefiniertes Direktivenprozessors erstellen, registrieren und Testen des Direktivenprozessors komplizierter und wie die Ausgabedatei als HTML formatiert.

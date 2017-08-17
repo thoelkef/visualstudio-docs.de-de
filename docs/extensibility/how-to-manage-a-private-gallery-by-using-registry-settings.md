@@ -1,35 +1,52 @@
 ---
-title: "Gewusst wie: Verwalten einer privaten Galerie mithilfe von Registrierungseinstellungen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "VSIX-private Galerien verwalten"
-  - "Verwalten von privaten Galerien VSIX"
+title: 'Vorgehensweise: Verwalten von privaten Katalog mithilfe von Registrierungseinstellungen | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- VSIX private galleries, managing
+- managing VSIX private galleries
 ms.assetid: 86b86442-4293-4cad-9fe2-876eef65f426
 caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
----
-# Gewusst wie: Verwalten einer privaten Galerie mithilfe von Registrierungseinstellungen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 8ce054bf6149f0224785f4c3cd9274e86dc09d04
+ms.openlocfilehash: 00c42a4dbd6a9a526d661b7fa04793d531acd8bc
+ms.contentlocale: de-de
+ms.lasthandoff: 08/17/2017
 
-Wenn Sie ein Administrator oder Entwickler einer isolierte Shell\-Erweiterung sind, können Sie den Zugriff auf die Steuerelemente, Vorlagen und Tools in Visual Studio Gallery, die Samples Gallery oder private Galerien steuern. Damit einen Katalog verfügbar oder nicht verfügbar ist, erstellen Sie eine PKGDEF\-Datei, die die geänderte Registrierungsschlüssel und ihre Werte beschreibt.  
+---
+# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Vorgehensweise: Verwalten von privaten Katalog mithilfe von Registrierungseinstellungen
+Wenn Sie ein Administrator oder Entwickler einer isolierten Shell-Erweiterung sind, können Sie den Zugriff auf den Steuerelementen, Vorlagen und Tools in Visual Studio Gallery, Samples Gallery oder private Kataloge steuern. Damit einen Katalog verfügbar oder nicht verfügbar ist, erstellen Sie eine PKGDEF-Datei, die die geänderte Registrierungsschlüssel und ihre Werte beschreibt.  
   
-## Verwalten von privaten Galerien  
- Sie können eine PKGDEF\-Datei zum Steuern des Zugriffs auf die Galerien auf mehreren Computern erstellen. Diese Datei muss folgende Format haben.  
+## <a name="managing-private-galleries"></a>Verwalten von Private Kataloge  
+ Sie können eine PKGDEF-Datei zum Steuern des Zugriffs auf Galerien auf mehreren Computern erstellen. Diese Datei muss folgende Format aufweisen.  
   
 ```  
-[$RootPath$\ExtensionManager\Repositories\{UniqueGUID}]  
-@={URI}  (REG_SZ)  
+[$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]  
+@={URI}  (REG_SZ)  
 Disabled=0 | 1 (DWORD)  
-Priority=0 (highest priority) … MaxInt (lowest priority) (DWORD) (uint)  
+Priority=0 (highest priority) ... MaxInt (lowest priority) (DWORD) (uint)  
 Protocol=Atom Feed|Sharepoint (REG_SZ)  
 DisplayName={DisplayName} (REG_SZ)  
 DisplayNameResourceID={ID} (REG_SZ)  
@@ -37,25 +54,25 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 ```  
   
- Die `Repositories` Schlüssel verweist auf den Katalog aktiviert bzw. deaktiviert werden soll. Verwenden das folgende Repository GUIDs, der Visual Studio Gallery und die Samples Gallery:  
+ Die `Repositories` Schlüssel verweist, an den Katalog aktiviert bzw. deaktiviert werden soll. Der Visual Studio Gallery und der Beispielgalerie verwenden das folgende Repository GUIDs:  
   
--   Visual Studio Gallery: 0F45E408\-7995\-4375\-9485\-86B8DB553DC9  
+-   Visual Studio Gallery: 0F45E408-7995-4375-9485-86B8DB553DC9  
   
--   Samples Gallery: AEB9CB40\-D8E6\-4615\-B52C\-27E307F8506C  
+-   Samples Gallery: AEB9CB40-D8E6-4615-B52C-27E307F8506C  
   
  Die `Disabled` Wert ist optional. Standardmäßig wird ein Katalog aktiviert.  
   
- Die `Priority` Wert bestimmt die Reihenfolge, in der die Kataloge im Dialogfeld "Optionen" aufgelistet sind. Visual Studio Gallery hat Priorität 10, und die Samples Gallery hat Priorität 20. Starten Sie private Kataloge Priorität 100. Wenn mehrere Kataloge denselben Prioritätswert aufweisen, wird die Reihenfolge der bestimmt, die Werte ihrer lokalisierten `DisplayName` Attribute.  
+ Die `Priority` Wert bestimmt die Reihenfolge, in der die Kataloge, im Dialogfeld "Optionen aufgeführt sind". Visual Studio Gallery hat Priorität 10, und die Samples Gallery hat Priorität 20. Private Kataloge, ausgehend von Priorität 100 ab. Wenn mehrere Sammlungen denselben Prioritätswert aufweisen, wird die Reihenfolge der bestimmt, nach den Werten ihrer lokalisierten `DisplayName` Attribute.  
   
- Die `Protocol` für Atom\- oder SharePoint\-basierten Galerien ist erforderlich.  
+ Die `Protocol` Wert ist erforderlich für Atom oder SharePoint-basierte Kataloge.  
   
- Entweder `DisplayName`, oder beide `DisplayNameResourceID` und `DisplayNamePackageGuid`, muss angegeben werden. Wenn all angegeben werden, und klicken Sie dann die `DisplayNameResourceID` und `DisplayNamePackageGuid` \-Paar wird verwendet.  
+ Entweder `DisplayName`, oder beides `DisplayNameResourceID` und `DisplayNamePackageGuid`, muss angegeben werden. Wenn all angegeben werden, und klicken Sie dann die `DisplayNameResourceID` und `DisplayNamePackageGuid` -Paar wird verwendet.  
   
-## Deaktivieren eine PKGDEF\-Datei mit Visual Studio Gallery  
- Sie können einen Katalog in eine PKGDEF\-Datei deaktivieren. Der folgende Eintrag wird der Visual Studio Gallery deaktiviert:  
+## <a name="disabling-the-visual-studio-gallery-using-a-pkgdef-file"></a>Deaktivieren eine PKGDEF-Datei mit Visual Studio Gallery  
+ Sie können eine Sammlung in eine PKGDEF-Datei deaktivieren. Der folgende Eintrag wird der Visual Studio Gallery deaktiviert:  
   
 ```  
-[$RootPath$\ExtensionManager\Repositories\{0F45E408-7995-4375-9485-86B8DB553DC9}]  
+[$RootKey$\ExtensionManager\Repositories\{0F45E408-7995-4375-9485-86B8DB553DC9}]  
 "Disabled"=dword:00000001  
   
 ```  
@@ -63,10 +80,10 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
  Der folgende Eintrag deaktiviert die Samples Gallery:  
   
 ```  
-[$RootPath$\ExtensionManager\Repositories\{AEB9CB40-D8E6-4615-B52C-27E307F8506C}]  
+[$RootKey$\ExtensionManager\Repositories\{AEB9CB40-D8E6-4615-B52C-27E307F8506C}]  
 "Disabled"=dword:00000001  
   
 ```  
   
-## Siehe auch  
- [Private Galerien](../extensibility/private-galleries.md)
+## <a name="see-also"></a>Siehe auch  
+ [Private Kataloge](../extensibility/private-galleries.md)
