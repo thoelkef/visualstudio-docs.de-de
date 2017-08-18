@@ -1,78 +1,83 @@
 ---
-title: "Dateneigenschaften und Accessor-Eigenschaften | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: Dateneigenschaften und Zugriffsmethodeneigenschaften | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 7e132831-375d-4728-9a57-5c6f91075b1c
 caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 5b800131ba76aa432492c0caefdbb9e8d5291924
+ms.contentlocale: de-de
+ms.lasthandoff: 08/11/2017
+
 ---
-# Dateneigenschaften und Accessor-Eigenschaften
-Dieser Abschnitt enthält alle Informationen, die Sie wahrscheinlich zu Dateneigenschaften und Accessoreigenschaften benötigen.  
+# <a name="data-properties-and-accessor-properties"></a>Dateneigenschaften und Zugriffsmethodeneigenschaften
+In diesem Abschnitt finden Sie alle relevanten Informationen zu Dateneigenschaften und Zugriffsmethodeneigenschaften.  
   
-### Dateneigenschaften  
- Eine *Dateneigenschaft* ist eine Eigenschaft, die einen Wert abrufen und festlegen kann.  Dateneigenschaften enthalten in ihren Deskriptoren die `value`\-Eigenschaft und die `writable`\-Eigenschaft.  
+### <a name="data-properties"></a>Dateneigenschaften  
+ Eine *Dateneigenschaft* ist eine Eigenschaft, die einen Wert abrufen und festlegen kann. Dateneigenschaften enthalten die `value`- und `writable`-Eigenschaften in ihren Deskriptoren.  
   
- In der folgenden Tabelle werden die Attribute eines Dateneigenschaftendeskriptors aufgeführt.  
+ Die folgende Tabelle enthält die Attribute eines Dateneigenschaftendeskriptors.  
   
-|Datendeskriptorattribut|Beschreibung|Standardwert|  
-|-----------------------------|------------------|------------------|  
+|Datendeskriptorattribut|Beschreibung|Standard|  
+|-------------------------------|-----------------|-------------|  
 |`value`|Der aktuelle Wert der Eigenschaft.|`undefined`|  
-|`writable`|`true` oder `false`.  Wenn `writable` auf `true` festgelegt ist, kann der Eigenschaftswert geändert werden.|`false`|  
-|`enumerable`|`true` oder `false`.  Wenn `enumerable` auf `true` festgelegt ist, kann die Eigenschaft durch eine `for…in`\-Anweisung aufgelistet werden.|`false`|  
-|`configurable`|`true` oder `false`.  Wenn `configurable` auf `true` festgelegt ist, können Eigenschaftenattribute geändert werden, und die Eigenschaft kann gelöscht werden.|`false`|  
+|`writable`|`true` oder `false`. Wenn für `writable` der Wert `true` festgelegt wird, kann der Eigenschaftswert verändert werden.|`false`|  
+|`enumerable`|`true` oder `false`. Wenn für `enumerable` der Wert `true` festgelegt wird, kann die Eigenschaft durch eine `for...in`-Anweisung aufgelistet werden.|`false`|  
+|`configurable`|`true` oder `false`. Wenn für `configurable` der Wert `true` festgelegt wird, können Eigenschaftenattribute verändert und die Eigenschaft gelöscht werden.|`false`|  
   
- Wenn der Deskriptor nicht über das Attribut `value`, `writable`, `get` oder `set` verfügt und der angegebene Eigenschaftenname nicht vorhanden ist, wird eine Dateneigenschaft hinzugefügt.  
+ Wenn der Deskriptor nicht über das `value`-, `writable`-, `get`- oder `set`-Attribut verfügt und der angegebene Eigenschaftenname nicht vorhanden ist, wird eine Dateneigenschaft hinzugefügt.  
   
- Wenn das `configurable`\-Attribut `false` und das `writable`\-Attribut `true` ist, können die Attribute `value` und `writable` geändert werden.  
+ Wenn für das `configurable`-Attribut der Wert `false` und für `writable` der Wert `true` festgelegt ist, können die `value`- und `writable`-Attribute geändert werden.  
   
-#### Hinzufügen von Dateneigenschaften, ohne defineProperty zu verwenden  
- Wenn Sie eine Dateneigenschaft hinzufügen, ohne die Funktionen `Object.defineProperty`, `Object.defineProperties` oder `Object.create` zu verwenden, dann müssen die Attribute `writable`, `enumerable` und `configurable` alle auf `true` festgelegt werden.  Nachdem die Eigenschaft hinzugefügt worden ist, können Sie dies mithilfe der `Object.defineProperty`\-Funktion ändern.  
+#### <a name="data-properties-added-without-using-defineproperty"></a>Hinzufügen von Dateneigenschaften ohne defineProperty  
+ Wenn Sie eine Dateneigenschaft hinzufügen und dabei nicht die `Object.defineProperty`-, `Object.defineProperties`- oder `Object.create`-Funktionen verwenden, wird für die `writable`-, `enumerable`- und `configurable`-Attribute der Wert `true` festgelegt. Nachdem Sie die Eigenschaft hinzugefügt haben, können Sie sie mit der `Object.defineProperty`-Funktion ändern.  
   
- Sie können die folgenden Methoden zum Hinzufügen einer Dateneigenschaft verwenden:  
+ Folgende Möglichkeiten stehen Ihnen zum Hinzufügen einer Dateneigenschaft zur Verfügung:  
   
--   Zuweisungsoperator \(\=\), wie in `obj.color = "white";`  
+-   Verwendung eines Zuweisungsoperators (=). Beispiel: `obj.color = "white";`  
   
--   Objektliteral, wie in `obj = { color: "white", height: 5 };`  
+-   Verwendung eines Objektliterals. Beispiel: `obj = { color: "white", height: 5 };`  
   
--   Konstruktionsfunktion, wie in [Verwenden von Konstruktoren zum Definieren von Typen](../../javascript/advanced/using-constructors-to-define-types.md) beschrieben  
+-   Verwendung einer Konstruktorfunktion, wie unter [Verwenden von Konstruktoren zum Definieren von Typen](../../javascript/advanced/using-constructors-to-define-types.md) beschrieben  
   
-### Accessoreigenschaften  
- Eine *Accessoreigenschaft* ruft eine vom Benutzer bereitgestellte Funktion immer dann auf, wenn der Eigenschaftswert festgelegt oder abgerufen wird.  Der Deskriptor einer Accessoreigenschaft enthält ein `get`\-Attribut, ein `set`\-Attribut oder beides.  
+### <a name="accessor-properties"></a>Zugriffsmethodeneigenschaften  
+ Eine *Zugriffsmethodeneigenschaft* ruft immer dann eine vom Benutzer bereitgestellte Funktion auf, wenn der Eigenschaftenwert festgelegt oder abgerufen wird. Der Deskriptor für eine Zugriffsmethodeneigenschaft enthält ein `get`-Attribut, ein `set`-Attribut oder beide Attribute.  
   
- In der folgenden Tabelle werden die Attribute eines Accessoreigenschaftendeskriptors aufgeführt.  
+ Die folgende Tabelle enthält die Attribute eines Deskriptors für Zugriffsmethodeneigenschaften.  
   
-|Accessordeskriptorattribut|Beschreibung|Standardwert|  
-|--------------------------------|------------------|------------------|  
-|`get`|Eine Funktion, die den Eigenschaftswert zurückgibt.  Die Funktion hat keine Parameter.|`undefined`|  
-|`set`|Eine Funktion, die den Eigenschaftswert festlegt.  Sie enthält einen Parameter, der den zuzuweisenden Wert enthält.|`undefined`|  
-|`enumerable`|`true` oder `false`.  Wenn `enumerable` auf `true` festgelegt ist, kann die Eigenschaft durch eine `for…in`\-Anweisung aufgelistet werden.|`false`|  
-|`configurable`|`true` oder `false`.  Wenn `configurable` auf `true` festgelegt ist, können Eigenschaftenattribute geändert werden, und die Eigenschaft kann gelöscht werden.|`false`|  
+|Attribut für Zugriffsmethodendeskriptor|Beschreibung|Standard|  
+|-----------------------------------|-----------------|-------------|  
+|`get`|Eine Funktion, die den Eigenschaftenwert zurückgibt. Die Funktion hat keine Parameter.|`undefined`|  
+|`set`|Eine Funktion, die den Eigenschaftenwert festlegt. Sie verfügt über einen Parameter, der den Wert enthält, der zugewiesen werden soll.|`undefined`|  
+|`enumerable`|`true` oder `false`. Wenn für `enumerable` der Wert `true` festgelegt wird, kann die Eigenschaft durch eine `for...in`-Anweisung aufgelistet werden.|`false`|  
+|`configurable`|`true` oder `false`. Wenn für `configurable` der Wert `true` festgelegt wird, können Eigenschaftenattribute verändert und die Eigenschaft gelöscht werden.|`false`|  
   
- Wenn ein `get`\-Accessor nicht definiert ist und versucht wird, auf den Eigenschaftswert zuzugreifen, wird der Wert `undefined` zurückgegeben.  Wenn ein `set`\-Accessor nicht definiert ist und versucht wird, der Accessoreigenschaft einen Wert zuzuweisen, dann geschieht nichts.  
+ Wenn eine `get`-Zugriffsmethode nicht definiert ist und der Versuch unternommen wird, auf den Eigenschaftswert zuzugreifen, wird der Wert `undefined` zurückgegeben. Wenn eine `set`-Zugriffsmethode nicht definiert ist und der Versuch unternommen wird, der Zugriffsmethodeneigenschaft einen Wert zuzuweisen, geschieht nichts.  
   
-### Eigenschaftsänderungen  
- Wenn das Objekt bereits eine Eigenschaft mit dem angegebenen Namen besitzt, werden die Eigenschaftenattribute geändert.  Wenn Sie die Eigenschaft ändern, bleiben Attribute, die nicht im Deskriptor angegeben werden, unverändert.  
+### <a name="property-modifications"></a>Eigenschaftenänderungen  
+ Wenn das Objekt bereits über eine Eigenschaft mit dem angegebenen Namen verfügt, werden die Eigenschaftenattribute geändert. Wenn Sie die Eigenschaft ändern, bleiben Attribute, die nicht im Deskriptor angegeben sind, unverändert.  
   
- Wenn das `configurable`\-Attribut einer vorhandenen Eigenschaft `false` ist, besteht die einzige zulässige Änderung darin, das `writable`\-Attribut von `true` in `false` zu ändern.  
+ Wenn dem `configurable`-Attribut einer vorhandenen Eigenschaft der Wert `false` zugewiesen wurde, darf nur das `writable`-Attribut von `true` zu `false` geändert werden.  
   
- Sie können eine Dateneigenschaft in eine Accessoreigenschaft ändern und umgekehrt.  Wenn Sie dies tun, werden die Attribute `configurable` und `enumerable`, die nicht im Deskriptor angegeben sind, in der Eigenschaft beibehalten.  Andere Attribute, die nicht im Deskriptor angegeben sind, werden auf ihre Standardwerte festgelegt.  
+ Sie können eine Dateneigenschaft in eine Zugriffsmethodeneigenschaft umwandeln und umgekehrt. In diesem Fall werden nicht im Deskriptor angegebene `configurable`- und `enumerable`-Attribute in der Eigenschaft beibehalten. Anderen Attributen, die nicht im Deskriptor angegeben sind, werden die jeweiligen Standardwerte zugewiesen.  
   
- Sie können konfigurierbare Accessoreigenschaften inkrementell definieren, indem Sie die `Object.defineProperty`\-Funktion mehrmals aufrufen.  Beispielsweise könnte ein `Object.defineProperty` Aufruf nur einen `get` Accessor definieren.  Ein weiterer Aufruf für denselben Eigenschaftennamen definiert möglicherweise einen `set`\-Accessor.  Die Eigenschaft würde dann sowohl einen `get`\-Accessor als auch einen `set`\-Accessor besitzen.  
+ Sie können konfigurierbare Zugriffsmethodeneigenschaften inkrementell erstellen, indem Sie die `Object.defineProperty`-Funktion mehrfach aufrufen. So kann z.B. durch den ersten Aufruf von `Object.defineProperty` nur eine `get`-Zugriffsmethode definiert werden. Durch einen weiteren Aufruf des gleichen Eigenschaftsnamens kann anschließend eine `set`-Zugriffsmethode definiert werden. Die Eigenschaft besitzt dann sowohl eine `get`- als auch eine `set`-Zugriffsmethode.  
   
- Um ein Deskriptorobjekt zu erhalten, das für eine vorhandene Eigenschaft gilt, können Sie [Object.getOwnPropertyDescriptor\-Funktion](../../javascript/reference/object-getownpropertydescriptor-function-javascript.md) verwenden.  
+ Um ein Deskriptorobjekt zu erhalten, das auf eine vorhandene Eigenschaft angewendet wird, können Sie die [Object.getOwnPropertyDescriptor-Funktion](../../javascript/reference/object-getownpropertydescriptor-function-javascript.md) verwenden.  
   
- Sie können [Object.seal\-Funktion](../../javascript/reference/object-seal-function-javascript.md) und [Object.freeze\-Funktion](../../javascript/reference/object-freeze-function-javascript.md) verwenden, um die Änderung von Eigenschaftattributen zu verhindern.
+ Sie können die [Object.seal-Funktion](../../javascript/reference/object-seal-function-javascript.md) und die [Object.freeze-Funktion](../../javascript/reference/object-freeze-function-javascript.md) verwenden, um Änderungen an Eigenschaftenattributen zu verhindern.

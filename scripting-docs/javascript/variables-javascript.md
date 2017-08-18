@@ -1,37 +1,42 @@
 ---
-title: "Variablen (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Berücksichtigung der Groß-/Kleinschreibung, JavaScript-Variablenname"
-  - "Erzwungene Konvertierung"
+title: Variablen (JavaScript) | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- coercion
+- case sensitivity, JavaScript variable name
 ms.assetid: 12a450e5-4818-4a09-9878-cd7c6cd2a248
 caps.latest.revision: 20
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 20
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: f30946899ad35286dfb1e786cf903d58f5c98cb6
+ms.contentlocale: de-de
+ms.lasthandoff: 08/11/2017
+
 ---
-# Variablen (JavaScript)
-In [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] enthält eine Variable einen Wert, wie z. B. "Hello" oder 5.  Wenn Sie die Variable verwenden, verweisen Sie auf die entsprechenden Daten, beispielsweise `NumberOfDaysLeft = EndDate – TodaysDate`.  
+# <a name="variables-javascript"></a>Variablen (JavaScript)
+In [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] enthält eine Variable einen Wert, z.B. „hello“ oder 5. Wenn Sie die Variable verwenden, verweisen Sie auf die Daten, die sie darstellt, z.B. `NumberOfDaysLeft = EndDate - TodaysDate`.  
   
- Sie verwenden Variablen, um im Code vorhandene Werte zu speichern, abzurufen und zu bearbeiten.  Versuchen Sie, den Variablen aussagekräftige Namen zu geben, um anderen Personen das Verständnis für Ihren Code zu erleichtern.  
+ Sie verwenden Variablen, um Werte, die in Ihrem Code vorkommen, zu speichern, abzurufen und zu manipulieren. Versuchen Sie, Ihren Variablen aussagekräftige Namen zu geben, um anderen Leuten das Verstehen Ihres Codes zu erleichtern.  
   
-## Deklarieren von Variablen  
- Das erste Vorkommen einer Variable im Skript ist die Deklaration.  Bei der ersten Erwähnung der Variable wird diese im Arbeitsspeicher eingerichtet, sodass Sie später im Skript auf diese verweisen können.  Vor der Verwendung sollten die Variablen deklariert werden.  Verwenden Sie hierzu das Schlüsselwort `var`.  
+## <a name="declaring-variables"></a>Deklarieren von Variablen  
+ Wenn eine Variable zum ersten Mal in Ihrem Code auftaucht, ist das ihre Deklaration. Die erste Erwähnung der Variablen legt diese in Ihrem Arbeitsspeicher an, sodass Sie später in Ihrem Skript auf sie verweisen können. Sie sollten Variablen deklarieren, bevor Sie sie verwenden. Dies können Sie mit dem Schlüsselwort `var` machen.  
   
-```javascript  
+```JavaScript  
 // A single declaration.  
 var count;    
 // Multiple declarations with a single var keyword.  
@@ -40,18 +45,18 @@ var count, amount, level;
 var count = 0, amount = 100;   
 ```  
   
- Wenn Sie die Variable nicht in der Anweisung `var` initialisieren, übernimmt diese automatisch den Wert `undefined`.  
+ Wenn Sie die Variable in der `var`-Anweisung nicht initialisieren, wird ihr automatisch der Wert `undefined` zugewiesen.  
   
-## Benennen von Variablen  
- [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] ist eine Sprache, in der zwischen Groß\- und Kleinschreibung unterschieden wird.  Daher unterscheidet sich der Variablenname "myCounter" vom Variablennamen "MYCounter".  Variablennamen können beliebig lang sein.  Beim Erstellen von zulässigen Variablennamen müssen folgenden Regeln beachtet werden:  
+## <a name="naming-variables"></a>Benennen von Variablen  
+ [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] ist eine Sprache, bei der die Groß- und Kleinschreibung beachtet wird. Dies bedeutet, dass ein Variablenname wie z.B. **myCounter** sich vom Variablennamen **MYCounter** unterscheidet. Variablennamen können beliebig lang sein. Die Regeln für das Erstellen zulässiger Variablen sind die folgenden:  
   
--   Das erste Zeichen muss ein ACSII\-Buchstabe \(Großbuchstabe oder Kleinbuchstabe\) oder ein Unterstrich \(\_\) sein.  Beachten Sie, dass als erstes Zeichen keine Zahl verwendet werden darf.  
+-   Das erste Zeichen muss ein ASCII-Buchstabe (Großbuchstabe oder Kleinbuchstabe) oder ein Unterstrich (_) sein. Beachten Sie, dass eine Zahl nicht als erstes Zeichen verwendet werden kann.  
   
--   Alle weiteren Zeichen können Buchstaben, Zahlen oder Unterstriche \(\_\) sein.  
+-   Die folgenden Zeichen müssen Buchstaben, Zahlen oder Unterstriche (_) sein.  
   
--   [Reservierte Wörter](../javascript/reference/javascript-reserved-words.md) dürfen nicht als Variablennamen verwendet werden.  
+-   Der Variablenname darf kein [reserviertes Wort](../javascript/reference/javascript-reserved-words.md) sein.  
   
- Im Folgenden finden Sie einige Beispiele für gültige Variablennamen:  
+ Hier sind einige Beispiele zulässiger Variablennamen:  
   
 ```  
 _pagecount   
@@ -59,60 +64,60 @@ Part9
 Number_Items   
 ```  
   
- Im Folgenden finden Sie einige Beispiele für ungültige Variablennamen:  
+ Hier sind einige Beispiele unzulässiger Variablennamen:  
   
-```javascript  
+```JavaScript  
 // Cannot begin with a number.   
 99Balloons     
 // The ampersand (&) character is not a valid character for variable names.   
 Alpha&Beta   
 ```  
   
- Wenn Sie eine Variable deklarieren und initialisieren, ihr jedoch keinen bestimmten Wert geben möchten, weisen Sie ihr den Wert `null` zu.  Im Folgenden ein Beispiel.  
+ Wenn Sie eine Variable deklarieren und initialisieren, ihr aber keinen bestimmten Wert zuweisen möchten, geben Sie ihr den Wert `null`. Im Folgenden ein Beispiel.  
   
-```javascript  
+```JavaScript  
 var bestAge = null;  
 var muchTooOld = 3 * bestAge; // muchTooOld has the value 0.  
 ```  
   
- Wenn Sie eine Variable deklarieren, ohne einen Wert zuzuweisen, weist diese den Wert `undefined` auf.  Im Folgenden ein Beispiel.  
+ Wenn Sie eine Variable ohne einen zugewiesenen Wert deklarieren, hat sie den Wert `undefined`. Im Folgenden ein Beispiel.  
   
-```javascript  
+```JavaScript  
 var currentCount;  
 // finalCount has the value NaN because currentCount is undefined.  
 var finalCount = 1 * currentCount;   
 ```  
   
- Der Wert `null` verhält sich wie die Zahl 0, während sich `undefined` wie der spezielle Wert `NaN` verhält \(keine Zahl\).  Wenn Sie einen `null`\-Wert und einen `undefined`\-Wert vergleichen, sind diese identisch.  
+ Der Wert `null` verhält sich wie die Zahl 0, während sich `undefined` wie der besondere Wert `NaN` verhält (keine Zahl). Wenn Sie einen `null`-Wert und einen `undefined`-Wert vergleichen, sind diese gleich.  
   
- Sie können eine Variable deklarieren, ohne das Schlüsselwort `var` in der Deklaration zu verwenden, und ihr einen Wert zuweisen.  Dies ist eine implizite Deklarierung.  
+ Sie können eine Variable deklarieren, ohne das Schlüsselwort `var` in der Deklaration zu verwenden, und ihr einen Wert zuweisen. Dies ist eine implizite Deklaration.  
   
-```javascript  
+```JavaScript  
 // The variable noStringAtAll is declared implicitly.  
 noStringAtAll = "";   
 ```  
   
- Sie können keine Variable verwenden, die nicht deklariert wurde.  
+ Sie können keine Variable verwenden, die noch nicht deklariert wurde.  
   
-```javascript  
+```JavaScript  
 // Error. Length and width do not yet exist.  
 var area = length * width;   
 ```  
   
-## Konvertierung  
- [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] ist im Gegensatz zu stark typisierten Sprachen wie C\+\+ eine lose typisierte Sprache.  Dies bedeutet, dass JavaScript\-Variablen keinen vordefinierten Typ aufweisen.  Stattdessen ist der Typ einer Variablen der Typ des Werts.  Daher können Sie einen Wert so behandeln, als ob es sich um einem anderen Typ handelte.  
+## <a name="coercion"></a>Koersion  
+ [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] ist eine Sprache mit flexibler Typbindung, im Gegensatz zu Sprachen mit starken Typbindung wie z.B. C++. Dies bedeutet, dass JavaScript-Variablen keinen vorbestimmten Typ haben. Stattdessen ist der Typ einer Variablen der Typ ihres Werts. Durch dieses Verhalten können Sie einen Wert behandeln, als habe er einen anderen Typ.  
   
- In [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] können Sie Vorgänge mit Werten unterschiedlichen Datentyps ausführen, ohne dass der Compiler eine Ausnahme auslöst.  Der [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]\-Interpreter konvertiert oder *wandelt* einen der Datentypen implizit in den vom des anderen um, und führt anschließend den Vorgang aus.  Bei der Umwandlung der Zeichenfolge, der Anzahl und der booleschen Werte gelten die folgenden Regeln:  
+ In [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] können Sie Vorgange mit Werten verschiedener Typen durchführen, ohne eine Ausnahme auszulösen. Der [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]-Konverter konvertiert oder *erzwingt* einen der Datentypen implizit in den des anderen, und führt den Vorgang dann durch. Die Regeln für die Koersion von Zeichenfolgen, Zahlen und booleschen Werten sind wie folgt:  
   
--   Wenn Sie eine Zahl und eine Zeichenfolge hinzufügen, wird die Zahl in eine Zeichenfolge konvertiert.  
+-   Wenn Sie eine Zahl oder Zeichenfolge hinzufügen, wird die Zahl zu einer Zeichenfolge erzwungen.  
   
--   Wenn Sie einen booleschen Wert und eine Zeichenfolge hinzufügen, wird der boolesche Wert in eine Zeichenfolge umgewandelt.  
+-   Wenn Sie einen booleschen Wert oder eine Zeichenfolge hinzufügen, wird der boolesche Wert zu einer Zeichenfolge erzwungen.  
   
--   Wenn Sie eine Zahl und einen booleschen Wert hinzufügen, wird der boolesche Wert in eine Zahl umgewandelt.  
+-   Wenn Sie einen Zahl oder einen booleschen Wert hinzufügen, wird der boolesche Wert zu einer Zahl erzwungen.  
   
- Im folgenden Beispiel wird eine Zahl, die einer Zeichenfolge hinzugefügt wurde, zu einer Zeichenfolge.  
+ In folgendem Beispiel wird eine Zahl, die einer Zeichenfolge hinzugefügt wurde, zu einer Zeichenfolge.  
   
-```javascript  
+```JavaScript  
 var x = 2000;  
 var y = "Hello";  
 // The number is coerced to a string.  
@@ -123,4 +128,4 @@ document.write(x);
 // 2000Hello  
 ```  
   
- Zeichenfolgen werden zu Vergleichszwecken automatisch in entsprechende Zahlen konvertiert.  Mit der [parseInt\-Funktion](../javascript/reference/parseint-function-javascript.md) können Sie eine Zeichenfolge explizit in eine ganze Zahl konvertieren.  Mit der [parseFloat\-Funktion](../javascript/reference/parsefloat-function-javascript.md) können Sie eine Zeichenfolge explizit in eine Zahl konvertieren.
+ Zeichenfolgen werden zu Vergleichszwecken automatisch in äquivalente Zahlen konvertiert. Um eine Zeichenfolge implizit in eine ganze Zahl zu konvertieren, verwenden Sie die [parseInt-Funktion](../javascript/reference/parseint-function-javascript.md). Um eine Zeichenfolge implizit in eine Zahl zu konvertieren, verwenden Sie die [parseFloat-Funktion](../javascript/reference/parsefloat-function-javascript.md).

@@ -1,40 +1,45 @@
 ---
-title: "Windows Script Hosts | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Windows Script Host, Implementieren von Hosts"
+title: Windows Script Hosts | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Windows Script Host, implementing hosts
 ms.assetid: 9d5f6471-b318-40f3-be01-d9cd0b1cdd47
 caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: 6fbf89668d47d55d1d77a1d7f11765567fc73405
+ms.openlocfilehash: 41fa898c7f0d62cd35cc1cb1c7b35eb2651c8bb6
+ms.contentlocale: de-de
+ms.lasthandoff: 08/11/2017
+
 ---
-# Windows Script Hosts
-Wenn Sie Microsoft Windows\-Skripthost implementieren, können Sie sich davon ausgehen, dass ein Skriptmodul nur die [IActiveScriptSite](../winscript/reference/iactivescriptsite.md)\-Schnittstelle im Kontext des Basisthreads aufruft, solange der Host das folgende Aktionen ausführt:  
+# <a name="windows-script-hosts"></a>Windows Script Hosts
+Wenn Sie einen Microsoft Windows-Skripthost implementieren, können Sie problemlos davon ausgehen, dass ein Skriptmodul nur die [IActiveScriptSite](../winscript/reference/iactivescriptsite.md)-Schnittstelle im Kontext des Basisthreads aufruft, solange der Host Folgendes macht:  
   
--   Wählt einen niedrigen Thread aus \(im Allgemeinen den Thread, der die Meldungsschleife enthält\).  
+-   einen Basisthread auswählt (für gewöhnlich den Thread, der die Nachrichtenschleife enthält)  
   
--   Instanziiert das Skriptmodul im Basisthread.  
+-   das Skriptmodul im Basisthread instanziiert  
   
--   Aufrufsskriptmodulmethoden nur vom Basisanbieter Thread, wenn speziell zugelassen, wie in den Fällen von [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) und von [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md).  
+-   Skriptmodulmethoden nur aus dem Basisthread aufruft, es sei denn, es wurde etwas anderes erlaubt, wie z.B. bei [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) und [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md).  
   
--   Ruft das Dispatchobjekt des Skriptmoduls nur vom Basisanbieter Thread auf.  
+-   das Verteilungsobjekt des Skriptmoduls nur vom Basisthread aus aufruft  
   
--   Stellt sicher, dass die Meldungsschleife in den Basisthread ausgeführt wird, wenn ein Fensterhandle bereitgestellt wird.  
+-   sicherstellt, dass die Nachrichtenschleife im Basisthread ausgeführt wird, wenn ein Fensterhandle bereitgestellt wird  
   
--   Stellt sicher dass Objekte in den Ereignissen des Objektmodells des Hosts nur Quelle niedrigen Thread.  
+-   sicherstellt, dass Objekte im Objektmodell des Hosts nur Ereignisse des Basisthreads als Datenquelle verwenden  
   
- Diese Regeln werden automatisch von allen Singlethreadanwendung Hosts erfolgreich.  Das eingeschränkte Modell, das oben beschrieben wird, ist beabsichtigt genug lose beibehalten, einem Host ermöglichen, ein festes Skript, indem [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) von einem anderen Thread abbrechen \(initiiert durch einen STRG\+UNTBR\-Handler oder Ähnlichem\), oder aufruft, ein Skript in einem neuen Thread mithilfe [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md) zu duplizieren.  
+ Diese Regeln werden automatisch von allen Host mit einem Thread befolgt. Das oben beschriebene eingeschränkte Modell ist absichtlich weit gefasst, damit der Host ein hängendes Skript abbrechen kann, indem er [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) aus einem anderen Thread aufruft (durch einen STRG + UNTRBR-Handler o.ä. initiiert), oder damit er ein Skript in einem neuen Thread mit [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md) duplizieren kann.  
   
-## Hinweise  
- Keine dieser Einschränkungen gelten für einen Host zu, der beschreibt, wie eine Freethreadmodell [IActiveScriptSite](../winscript/reference/iactivescriptsite.md)\-Schnittstelle und ein Freethreadobjektmodell zu implementieren.  Ein solcher Host kann die [IActiveScript](../winscript/reference/iactivescript.md)\-Schnittstelle von jedem Thread, ohne Einschränkung verwenden.  
+## <a name="remarks"></a>Hinweise  
+ Keine dieser Einschränkungen gilt für einen Host, der eine [IActiveScriptSite](../winscript/reference/iactivescriptsite.md)-Freethreadschnittstelle und ein Freethread-Objektmodell implementiert. Ein derartiger Host kann die [IActiveScript](../winscript/reference/iactivescript.md)-Schnittstelle aus jedem Thread verwenden und das ohne Einschränkungen.  
   
-## Siehe auch  
- [\<PAVE OVER\> Microsoft Windows\-Skriptschnittstellen – Einführung](http://msdn.microsoft.com/library/3d10169f-2984-49ef-90c6-dd89c97f1dd6)
+## <a name="see-also"></a>Siehe auch  
+ [Windows-Skriptschnittstellen](../winscript/windows-script-interfaces.md)
