@@ -1,53 +1,56 @@
 ---
-title: "Debuggen mithilfe der Speicheranzeige | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Domänenspezifische Sprache, Speicher"
-  - "Domänenspezifische Sprache, Speicheranzeige"
+title: Mit dem Speicher-Viewer Debuggen | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Domain-Specific Language, store viewer
+- Domain-Specific Language, store
 ms.assetid: 0178db2e-ae99-4ed3-9b87-8620fa9fa8e4
 caps.latest.revision: 17
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 17
----
-# Debuggen mithilfe der Speicheranzeige
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.translationtype: MT
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 6fde5dfc012b43d71f6d8db2519607724eeeadc9
+ms.contentlocale: de-de
+ms.lasthandoff: 08/17/2017
 
-Mit dem Speicher\-Viewer können Sie den Zustand eines *Speichers* durch Überprüfen [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]verwendet wird.  Der Speicher\-Viewer werden alle Domänen modellelemente an, die in einem bestimmten Speicher, sowie Links zwischen Elementen und Elementeigenschaften sind.  
+---
+# <a name="debugging-by-using-the-store-viewer"></a>Debuggen mithilfe der Speicheranzeige
+Mit dem Viewer speichern können Sie den Status der Prüfen einer *speichern* verwendeten [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. Die speichern-Viewers zeigt alle die Domäne Modellelemente, die in einem bestimmten Speicher, zusammen mit Elementeigenschaften und Links zwischen Elementen sind.  
   
-## Öffnen Speicher\-Viewer  
- Wenn Sie in der experimentellen Build [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sind, beenden Sie den Code an einem Haltepunkt, auf dem sich eine Instanz des Arbeitsspeichers von Informationen enthält. Öffnen Sie anschließend den Speicher\-Viewer, indem Sie den folgenden Befehl im direkten Fenster eingeben:  
+## <a name="opening-store-viewer"></a>Öffnenden Speicher-Viewer  
+ Wenn Sie sind der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] experimentellen "erstellen", beenden Sie den Code an einem Haltepunkt, in dem eine Instanz des Speichers Modellinformationen enthält. Öffnen Sie dann den Speicher-Viewer durch Eingabe des folgenden Befehls in die **Direktfenster** Fenster:  
   
 ```  
 Microsoft.VisualStudio.Modeling.Diagnostics.StoreViewer.Show(mystore);  
 ```  
   
 > [!NOTE]
->  Sie müssen `mystore` durch den Namen der Instanz des Speichers ersetzen.  Auch wenn Sie den Namespace dem Code hinzufügen, können Sie den Befehl zum Anzeigen des Speicher\-Viewers ohne den vollqualifizierten Namespace eingeben:  
+>  Ersetzen Sie `mystore` durch den Namen Ihrer Store-Instanz. Wenn Sie den Namespace in den Code hinzufügen, können Sie den Befehl für die Speicher-Viewer anzeigen, ohne den vollqualifizierten Namespace eingeben:  
 >   
 >  `using Microsoft.VisualStudio.Modeling.Diagnostics;`  
 >   
->  `…`  
+>  `...`  
 >   
 >  `StoreViewer.Show(mystore);`  
   
- Die `Show`\-Methode verfügt über mehrere Überladungen.  Sie können eine Instanz eines Speichers oder der Partition als Parameter angeben.  
+ Die `Show` -Methode weist mehrere Überladungen. Sie können eine Instanz von einem Speicher oder eine Partition als Parameter angeben.  
   
- Alternativ können Sie die Codezeile, die den Speicher\-Viewer eine beliebige Stelle im Code angezeigt wird, in dem der Parameter, den Sie an die Methode übergeben, `Show` im Gültigkeitsbereich befindet.  Durch diese Aktion wird die Speicher\-Viewer an, wenn die Codezeile als Momentaufnahme der Inhalt des Arbeitsspeichers ausgeführt wird.  
+ Als Alternative können Sie die Codezeile, die die Speicher-Viewer an einer beliebigen Stelle im Code zeigt einfügen können, in dem der Parameter, die Sie zum Übergeben der `Show` Methode befindet sich im Bereich. Dadurch zeigt der Viewer speichern aus, wenn die Codezeile, die als eine Momentaufnahme des Inhalts des Speichers ausgeführt wird.  
   
-### Verwenden des Speicher\-Viewers  
- Wenn der Speicher\-Viewer geöffnet wird, wird ein nicht modales Windows Form\-Fenster, wie in der folgenden Abbildung dargestellt.  
+### <a name="using-store-viewer"></a>Verwenden von Speicher-Viewer  
+ Wenn der Speicher-Viewer geöffnet wird, wird ein nicht modales Windows Forms-Fenster wie die folgende Abbildung zeigt angezeigt.  
   
  ![](../modeling/media/storeviewer2.png "storeviewer2")  
-Speicher\-Viewer  
+Speicher-Viewer  
   
- Der Speicher\-Viewer verfügt über drei Bereiche: Der linke Bereich, der oberste rechte Bereich und der untere rechte Bereich.  Der linke Bereich ist eine Strukturansicht der Typen in der `DomainDataDirectory`\-Member eines Speichers.  Wenn Sie den Knoten erweitern und Partitions auf ein Element klicken, werden die Eigenschaften des Elements im oberen rechten Bereich angezeigt.  Wenn das Element zu anderen Elementen verknüpft ist, werden die zusätzlichen Elemente im unteren rechten Bereich angezeigt.  Wenn Sie auf ein Element im unteren rechten Bereich doppelklicken, wird das Element im linken Bereich hervorgehoben.  
+ Der Speicher-Viewer verfügt über drei Bereiche: links, oben rechts im Bereich und Bereich unten rechts. Der linke Bereich ist eine Strukturansicht der Typen in der `DomainDataDirectory` Member eines Speichers. Wenn Sie erweitern Sie den Knoten für die Partition, und klicken Sie auf ein Element, werden die Eigenschaften des Elements in der oberen rechten Bereich angezeigt. Wenn das Element auf andere Elemente verknüpft ist, werden die zusätzlichen Elemente in der unteren rechten Ecke angezeigt. Wenn Sie ein Element in der unteren rechten Bereich doppelklicken, wird das Element im linken Bereich hervorgehoben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Navigieren in und Aktualisieren von Modellen im Programmcode](../modeling/navigating-and-updating-a-model-in-program-code.md)

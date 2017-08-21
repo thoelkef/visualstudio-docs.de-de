@@ -1,5 +1,5 @@
 ---
-title: Aufrufen von Texttransformation in einer Visual Studio-Erweiterung | Microsoft-Dokumentation
+title: Aufrufen von Texttransformation in einer VS-Erweiterung | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -25,15 +25,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: eb2ab9d49cdeb1ed71da8ef67841f7796862dc30
-ms.openlocfilehash: 0120e0adfed2c27ebd17d446f2f0e5c808acff92
+ms.translationtype: MT
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 24e19e5752534fb8391fa3e11f250c4a7ed8a737
 ms.contentlocale: de-de
-ms.lasthandoff: 02/22/2017
+ms.lasthandoff: 08/17/2017
 
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>Aufrufen von Texttransformation in einer VS-Erweiterung
-Wenn Sie eine Visual Studio-Erweiterung, z. B. einen Menübefehl schreiben oder [einer domänenspezifischen Sprache](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), können Sie des Textvorlagendiensts transformieren. Abrufen des <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating>service, und wandeln Sie sie in <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.</xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating> </xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating>  
+Wenn Sie eine Visual Studio-Erweiterung, z. B. einen Menübefehl schreiben oder [einer domänenspezifischen Sprache](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), Sie können mithilfe des Textvorlagendiensts transformieren von Textvorlagen. Sie benötigen den <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating>-Dienst, der in <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating> umgewandelt werden muss.  
   
 ## <a name="getting-the-text-templating-service"></a>Erhalt des Textvorlagendiensts  
   
@@ -55,9 +55,9 @@ string result = t4.ProcessTemplate(filePath, System.IO.File.ReadAllText(filePath
 ## <a name="passing-parameters-to-the-template"></a>Übergeben von Parametern an die Vorlage  
  Sie können Parameter an die Vorlage übergeben. In der Vorlage können Sie die Parameterwerte mit der `<#@parameter#>`-Direktive abrufen.  
   
- Für einen Parameter muss ein Typ verwendet werden, der serialisierbar ist oder gemarshallt werden kann. D. h. muss der Typ deklariert werden, mit <xref:System.SerializableAttribute>, oder es muss von <xref:System.MarshalByRefObject>.</xref:System.MarshalByRefObject> </xref:System.SerializableAttribute> Diese Einschränkung ist notwendig, da die Textvorlage in einer separaten AppDomain ausgeführt wird. Alle integrierten Datentypen, z. B. **System.String** und **System. Int32** sind serialisierbar.  
+ Für einen Parameter muss ein Typ verwendet werden, der serialisierbar ist oder gemarshallt werden kann. Das heißt, der Typ muss mit <xref:System.SerializableAttribute> deklariert werden, oder er muss sich von <xref:System.MarshalByRefObject> ableiten. Diese Einschränkung ist notwendig, da die Textvorlage in einer separaten AppDomain ausgeführt wird. Alle integrierten Typen wie z. B. **System.String** und **System. Int32** sind serialisierbar.  
   
- Um Parameterwerte zu übergeben, der aufrufende Code kann platzieren Werte entweder in der `Session` Wörterbuch vorhanden ist, oder in der <xref:System.Runtime.Remoting.Messaging.CallContext>.</xref:System.Runtime.Remoting.Messaging.CallContext>  
+ Um Parameterwerte zu übergeben, können vom aufrufenden Code Werte entweder im `Session`-Wörterbuch oder im <xref:System.Runtime.Remoting.Messaging.CallContext> platziert werden.  
   
  Das folgende Beispiel transformiert mithilfe der beiden Methoden eine kurze Testvorlage:  
   
@@ -94,7 +94,7 @@ string result = t4.ProcessTemplate("",
 ```  
   
 ## <a name="error-reporting-and-the-output-directive"></a>Fehlerbericht und Ausgabedirektive  
- Alle Fehler, die während der Verarbeitung auftreten, werden im Fehlerfenster von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] angezeigt. Darüber hinaus können Sie darüber informiert werden Fehler durch einen Rückruf, der implementiert <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplatingCallback>.</xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplatingCallback> angeben  
+ Alle Fehler, die während der Verarbeitung auftreten, werden im Fehlerfenster von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] angezeigt. Außerdem können Sie über Fehler informiert werden, indem Sie einen Rückruf angeben, der <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplatingCallback> implementiert.  
   
  Wenn Sie die Ergebniszeichenfolge in eine Datei schreiben möchten, sind Sie möglicherweise daran interessiert, welche Dateierweiterung und welche Codierung in der `<#@output#>`-Direktive in der Vorlage angegeben wurden. Diese Informationen werden auch an den Rückruf übergeben. Weitere Informationen finden Sie unter [T4 Output-Direktive](../modeling/t4-output-directive.md).  
   
@@ -151,15 +151,15 @@ Sample text.
  Die Compilerwarnung wird im [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Fehlerfenster angezeigt, und es wird auch ein Aufruf von `ErrorCallback` generiert.  
   
 ## <a name="reference-parameters"></a>Verweisparameter  
- Sie können Werte aus einer Textvorlage mit einer Parameter-Klasse, die von <xref:System.MarshalByRefObject>.</xref:System.MarshalByRefObject> abgeleitet wird übergeben  
+ Sie können Werte aus einer Textvorlage mit einer Parameterklasse übergeben, die von <xref:System.MarshalByRefObject> abgeleitet wird.  
   
 ## <a name="related-topics"></a>Verwandte Themen  
  So generieren Sie Text von einer vorverarbeiteten Textvorlage  
- Rufen Sie die `TransformText()`-Methode der generierten Klasse auf. Weitere Informationen finden Sie unter [Textgenerierung mit T4-Textvorlagen zur Laufzeit](../modeling/run-time-text-generation-with-t4-text-templates.md).  
+ Rufen Sie die `TransformText()`-Methode der generierten Klasse auf. Weitere Informationen finden Sie unter [Run-Time-Textgenerierung mithilfe von T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).  
   
  So generieren Sie außerhalb einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Erweiterung Text  
  Definieren Sie einen benutzerdefinierten Host. Weitere Informationen finden Sie unter [Verarbeiten von Textvorlagen mithilfe eines benutzerdefinierten Hosts](../modeling/processing-text-templates-by-using-a-custom-host.md).  
   
  So generieren Sie Quellcode, der später kompiliert und ausgeführt werden kann  
- Rufen Sie die `t4.PreprocessTemplate()` <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.</xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating> -Methode
+ Rufen Sie die `t4.PreprocessTemplate()`-Methode von <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating> auf.
 
