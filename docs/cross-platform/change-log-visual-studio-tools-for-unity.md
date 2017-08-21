@@ -29,45 +29,23 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: cd8418f782f800390d166403374ecb879970dbc3
-ms.openlocfilehash: 92304c73b1a098c32a74011956dadd8097b8329d
+ms.sourcegitcommit: a2cfae1be1415a2d770d1467a09f207f73eafd05
+ms.openlocfilehash: 5b872f1d28c132fe2910bed16882ba6fb01e6782
 ms.contentlocale: de-de
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 08/16/2017
 
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Änderungsprotokoll (Visual Studio-Tools für Unity)
 Visual Studio-Tools für Unity (Änderungsprotokoll)  
 
-## <a name="3400"></a>3.4.0.0
- Veröffentlichung: 22.08.2017
+## <a name="3302"></a>3.3.0.2
+ Veröffentlichung: 15.8.2017
 
-### <a name="new-features"></a>Neue Funktionen  
-
--   **Project Generation:**  
-
-    -   assembly.json-Kompilierungseinheiten werden nun unterstützt.
-
-    -   Unity-Assemblys werden nicht mehr in den Projektordner kopiert.
-    
--   **Debugger:**  
-
-    -   Festlegen der nächsten Anweisung wird nun von der neuen Unity-Laufzeit unterstützt.
-    
-    -   Der Decimal-Typ wird nun von der neuen Unity-Laufzeit unterstützt.
-    
-    -   Implizite/explizite Konvertierungen werden nun unterstützt.
-    
 ### <a name="bug-fixes"></a>Fehlerkorrekturen  
   
--   **Auswertung:**  
-
-    -   Fehlerhafte Arrayerstellung mit impliziter Größe wurde behoben.
-    
-    -   Vom Compiler generierte fehlerhafte Elemente mit lokalen Variablen wurden behoben.
+-   **Projektgenerierung:**  
    
--   **Project Generation:**  
-   
-    -   Fehlerhafter Verweis auf Microsoft.CSharp für API-Ebene wurde in Unity 4.6 behoben.
+    -   Die Projektmappengenerierung in Unity 5.5 und vorherigen Versionen wurde korrigiert.
    
 ## <a name="3300"></a>3.3.0.0
  Veröffentlichung: 14.08.2017
