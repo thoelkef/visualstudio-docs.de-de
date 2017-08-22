@@ -1,125 +1,138 @@
 ---
-title: "Fenster &quot;Arbeitsspeicher&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.memory"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Speicherfenster"
-  - "Zeichenfolgen [Visual Studio], anzeigen"
-  - "Debugger [Visual Studio], Fenster „Arbeitsspeicher“"
-  - "Arbeitsspeicher [Visual Studio], Debuggen"
-  - "Debuggen [Visual Studio], Fenster „Arbeitsspeicher“"
-  - "Puffer, anzeigen"
+title: View Memory for Variables in the Debugger | Microsoft Docs
+ms.custom: H1Hack27Feb2017
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.memory
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+- JScript
+helpviewer_keywords:
+- Memory window
+- strings [Visual Studio], viewing
+- debugger [Visual Studio], Memory window
+- memory [Visual Studio], debugging
+- debugging [Visual Studio], Memory window
+- buffers, viewing
 ms.assetid: 7f7a0439-10e4-4966-bb2d-51f04cda4fe2
 caps.latest.revision: 32
-caps.handback.revision: 32
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# Fenster &quot;Arbeitsspeicher&quot;
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 2b271eaf132aea65c1217d8b4f3bfef7e1e1ac0e
+ms.contentlocale: de-de
+ms.lasthandoff: 08/22/2017
 
-Das Fenster **Arbeitsspeicher** stellt eine Ansicht des von der Anwendung belegten Arbeitsspeichers zur Verfügung.  Im Fenster **Überwachung**, Dialogfeld**QuickWatch**, Fenster **Auto** und Fenster **Lokal** wird der Inhalt der Variablen angezeigt, die an bestimmten Orten im Arbeitsspeicher gespeichert werden.  Im Fenster **Arbeitsspeicher** wird jedoch das umfangreiche Bild angezeigt.  Diese Ansicht ist besonders angenehm beim Untersuchen von großen Datenmengen \(beispielsweise Puffer oder umfangreiche Zeichenfolgen\), die in den anderen Fenstern nicht gut dargestellt werden.  Das Fenster **Arbeitsspeicher** ist jedoch nicht auf die Anzeige von Daten beschränkt.  Darin wird der gesamte Inhalt des Arbeitsspeichers angezeigt, unabhängig davon, ob es sich dabei um Daten, Code oder um zufällig verteilte Objekte in nicht zugewiesenem Arbeitsspeicher handelt.  
+---
+# <a name="use-the-memory-windows-in-the-visual-studio-debugger"></a>Use the Memory Windows in the Visual Studio Debugger
+The **Memory** window provides a view into the memory space that is used by your application. The **Watch** window, **QuickWatch** dialog box, **Autos** window, and **Locals** window show you the content of variables, which are stored at specific locations in memory. But the **Memory** window shows you the large-scale picture. This view can be convenient for examining large pieces of data (buffers or large strings, for example) that do not display well in the other windows. However, the **Memory** window is not limited to displaying data. It displays everything in the memory space, whether the content is data, code, or random bits of garbage in unassigned memory.  
   
- Das Fenster **Arbeitsspeicher** ist nur verfügbar, wenn Debuggen auf Adressebene im Dialogfeld **Optionen** im Knoten **Debuggen** aktiviert ist.  Das Fenster **Arbeitsspeicher** ist jedoch nicht für Skriptsprachen oder SQL verfügbar, da diese Sprachen das Speicherkonzept nicht unterstützen.  
+ The **Memory** window is available only if address-level debugging is enabled in the **Options** dialog box, **Debugging** node. The **Memory** window is not available for Script or SQL, which are languages that do not recognize the concept of memory.  
   
-## Öffnen eines Arbeitsspeicherfensters  
+## <a name="opening-a-memory-window"></a>Opening a Memory Window  
   
-#### So öffnen Sie ein Arbeitsspeicherfenster  
+#### <a name="to-open-a-memory-window"></a>To open a Memory window  
   
-1.  Beginnen Sie mit dem Debuggen, sofern Sie den Debugmodus noch nicht ausgewählt haben.  
+1.  Start debugging, if you are not already in debug mode.  
   
-2.  Zeigen Sie im Menü **Debuggen** auf **Fenster**.  Zeigen Sie anschließend auf **Arbeitsspeicher**, und klicken Sie dann auf **Arbeitsspeicher 1**, **Arbeitsspeicher 2**, **Arbeitsspeicher 3** oder auf **Arbeitsspeicher 4**. \(Editionen von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] auf niedrigerer Ebene nur ein einzelnes Fenster mit der Bezeichnung **Arbeitsspeicher**.  Wenn Sie eine dieser Editionen verwenden, klicken Sie einfach auf **Arbeitsspeicher**\).  
+2.  In the **Debug** menu, point to **Windows**. Then, point to **Memory** and then click **Memory 1**, **Memory 2**, **Memory 3**, or **Memory 4**. (Lower-level editions of [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] have only a single **Memory** window. If you are using one of those editions, just click **Memory**.)  
   
-## Paging im Fenster "Arbeitsspeicher"  
- Das Fenster **Arbeitsspeicher** beinhaltet eine vertikale Schiebeleiste, die eine nicht standardmäßige Funktionsweise besitzt.  Der Adressbereich eines modernen Computers ist sehr groß, und eine Suche kann leicht fehlschlagen, wenn Sie das Bildlauffeld der Bildlaufleiste an eine zufällige Position ziehen.  Aus diesem Grunde verhält sich das Bildlauffeld, als wäre es beidseitig mit einer Zugfeder verbunden, und verbleibt stets in der Mitte der Bildlaufleiste.  In Anwendungen, die in systemeigenem Code geschrieben sind, können Sie einen Bildlauf nach oben oder unten durchführen; die Durchführung eines freien Bildlaufs ist jedoch nicht möglich.  
+## <a name="paging-in-the-memory-window"></a>Paging in the Memory Window  
+ The **Memory** window has a vertical scrollbar that operates in a nonstandard manner. The address space of a modern computer is very large, and you could easily get lost by grabbing the scrollbar thumb and dragging it to a random location. For that reason, the thumb is "spring-loaded" and always remains in the center of the scrollbar. In native code applications, you can page up or down, but cannot scroll about freely.  
   
- Höhere Speicheradressen werden unten im Fenster angezeigt.  Um eine höhere Adresse anzuzeigen, führen Sie einen Bildlauf nach unten anstatt nach oben aus.  
+ Higher memory addresses appear at the bottom of the window. To view a higher address, scroll down, not up.  
   
-#### So führen Sie im Speicher einen Bildlauf nach oben oder nach unten durch  
+#### <a name="to-page-up-or-down-in-memory"></a>To page up or down in memory  
   
-1.  Klicken Sie unter dem Ziehpunkt in der vertikalen Bildlaufleiste, um einen Bildlauf nach unten auszuführen \(Navigieren zu einer höheren Speicheradresse\).  
+1.  To page down (move to a higher memory address), click under the thumb in the vertical scrollbar.  
   
-2.  Für einen Bildlauf nach oben \(Navigieren zu einer niedrigeren Speicheradresse\) klicken Sie über dem Bildlauffeld auf der vertikalen Bildlaufleiste.  
+2.  To page up (move to a lower memory address), click above the thumb the vertical scrollbar.  
   
-## Auswählen eines Arbeitsspeicherorts  
- Wenn Sie sofort zu einer ausgewählten Speicherbereich wechseln möchten, können Sie den entsprechenden Wert im Feld **Adresse** bearbeiten oder dazu Drag & Drop verwenden.  Das Feld **Adresse** nimmt nicht nur numerische Werte an, sondern auch Ausdrücke, die als Adressen ausgewertet werden.  Standardmäßig wird im Fenster **Arbeitsspeicher** ein Ausdruck im Feld **Adresse** als Live\-Ausdruck behandelt, der bei der Ausführung des Programms erneut ausgewertet wird.  Live\-Ausdrücke können sehr hilfreich sein.  Sie können beispielsweise dazu verwendet werden, den Speicher anzuzeigen, auf den ein Zeiger verweist.  
+## <a name="selecting-a-memory-location"></a>Selecting a Memory Location  
+ If you want to move instantly to a selected location in memory, you can do so by using a drag-and-drop operation or by editing the value in the **Address** box. The **Address** box accepts not only numeric values but also expressions that evaluate to addresses. By default, the **Memory** window treats an **Address** expression as a live expression, which is reevaluated as your program executes. Live expressions can be very useful. For example, you can use them to view the memory that is touched by a pointer.  
   
-#### So wählen Sie einen Arbeitsspeicherort per Drag & Drop aus  
+#### <a name="to-select-a-memory-location-by-dragging-and-dropping"></a>To select a memory location by dragging and dropping  
   
-1.  Wählen Sie in einem beliebigen Fenster eine Speicheradresse oder eine Zeigervariable aus, die eine Speicheradresse enthält.  
+1.  In any window, select a memory address or pointer variable that contains a memory address.  
   
-2.  Ziehen Sie die Adresse oder den Zeiger auf das Fenster **Arbeitsspeicher**.  
+2.  Drag the address or pointer to the **Memory** window.  
   
-#### So wählen Sie eine Speicheradresse durch Eingeben aus  
+#### <a name="to-select-a-memory-location-by-editing"></a>To select a memory location by editing  
   
-1.  Klicken Sie im Fenster **Arbeitsspeicher** in das Feld **Adresse**.  
+1.  In the **Memory** window, select the **Address** box.  
   
-2.  Geben Sie die gewünschte Adresse manuell oder über den Befehl Einfügen ein, und drücken Sie anschließend die **EINGABETASTE**.  
+2.  Type or paste the address you want to see, and then press **ENTER**.  
   
-## Ändern der Anzeigemethode für Informationen im Fenster "Arbeitsspeicher"  
- Die Art und Weise der Anzeige des Speicherinhalts im Fenster **Arbeitsspeicher** kann angepasst werden.  Standardmäßig wird der Speicherinhalt in Form einer ganzen Zahl mit 1 Byte im Hexadezimalformat angezeigt. Die Anzahl der Spalten wird automatisch durch die aktuelle Breite des Fensters bestimmt.  
+## <a name="changing-the-way-the-memory-window-displays-information"></a>Changing the Way the Memory Window Displays Information  
+ You can customize the way the **Memory** window shows memory contents. By default, memory contents appear as one-byte integers in hexadecimal format, and the number of columns is determined automatically by the current width of the window.  
   
-#### So ändern Sie das Format des Speicherinhalts  
+#### <a name="to-change-the-format-of-the-memory-contents"></a>To change the format of the memory contents  
   
-1.  Klicken Sie mit der rechten Maustaste in das Fenster **Arbeitsspeicher**.  
+1.  Right-click the **Memory** window.  
   
-2.  Wählen Sie das gewünschte Format aus.  
+2.  Choose the format that you want.  
   
-#### So ändern Sie die Anzahl der Spalten im Fenster "Arbeitsspeicher"  
+#### <a name="to-change-the-number-of-columns-in-the-memory-window"></a>To change the number of columns in the Memory window  
   
-1.  Suchen Sie auf der Symbolleiste des Fensters **Arbeitsspeicher** die Liste **Spalten**.  
+1.  In the toolbar at the top of the **Memory** window, locate the **Columns** list.  
   
-2.  Wählen Sie in der Liste **Spalten** die Anzahl anzuzeigender Spalten aus. Sie können auch **Automatisch** auswählen, um eine automatische Anpassung an die Breite des Fensters vorzunehmen.  
+2.  In the **Columns** list, select the number of columns that you want to display or select **Auto** for automatic adjustment to fit the width of the window.  
   
- Wenn sich der Inhalt des Fensters **Arbeitsspeicher** während der Ausführung des Programms nicht ändern soll, können Sie die Live\-Auswertung von Ausdrücken deaktivieren.  
+ If you do not want the contents of the **Memory** window to change as your program executes, you can turn off live expression evaluation.  
   
-#### So schalten Sie die Liveauswertung um  
+#### <a name="to-toggle-live-evaluation"></a>To toggle live evaluation  
   
-1.  Klicken Sie mit der rechten Maustaste in das Fenster **Arbeitsspeicher**.  
+1.  Right-click the **Memory** window.  
   
-2.  Klicken Sie im Kontextmenü auf **Automatisch neu auswerten**.  
+2.  On the shortcut menu, click **Reevaluate Automatically**.  
   
-     Wenn die Live\-Auswertung aktiv ist, ist die Option ausgewählt. Indem Sie auf die Option klicken, wird die Live\-Auswertung ausgeschaltet.  Wenn die Live\-Auswertung deaktiviert ist, ist die Option nicht ausgewählt, und indem Sie auf die Option klicken, wird die Live\-Auswertung eingeschaltet.  
+     If live evaluation is on, the option will be selected, and clicking it turns off live evaluation. If live evaluation is off, the option is not selected, and clicking it turns on live evaluation.  
   
- Die Symbolleiste am oberen Rand des Fensters **Arbeitsspeicher** kann angezeigt oder ausgeblendet werden.  Sie können nicht auf das Adressfeld oder andere Tools zugreifen, wenn die Symbolleiste ausgeblendet ist.  
+ You can hide or display the toolbar at the top of the **Memory** window. You will not have access to Address box or other tools as long as the toolbar is hidden.  
   
-#### So blenden Sie die Symbolleiste ein oder aus  
+#### <a name="to-toggle-the-toolbar"></a>To toggle the toolbar  
   
-1.  Klicken Sie mit der rechten Maustaste in das Fenster **Arbeitsspeicher**.  
+1.  Right-click a **Memory** window.  
   
-2.  Klicken Sie im Kontextmenü auf **Symbolleiste anzeigen**.  
+2.  On the shortcut menu, click **Show Toolbar**.  
   
-     Je nach ihrem vorherigen Zustand wird die Symbolleiste ein\- bzw. ausgeblendet.  
+     The toolbar appears or disappears, depending on its previous state.  
   
-## Verfolgen eines Zeigers im Arbeitsspeicher  
- In Anwendungen, die im systemeigenen Code geschrieben wurden, können Sie als Live\-Ausdrücke Registernamen verwenden.  Zur Verfolgung des Stapels können Sie z. B. den Stapelzeiger verwenden.  
+## <a name="following-a-pointer-through-memory"></a>Following a Pointer Through Memory  
+ In native code applications, you can use register names as live expressions. For example, you can use the stack pointer to follow the stack.  
   
-#### So verfolgen Sie einen Zeiger im Arbeitsspeicher  
+#### <a name="to-follow-a-pointer-through-memory"></a>To follow a pointer through memory  
   
-1.  Geben Sie im Fenster **Arbeitsspeicher** im Feld **Adresse** einen Zeigerausdruck ein.  Die Zeigervariable muss sich im aktuellen Gültigkeitsbereich befinden.  Je nach verwendeter Sprache müssen Sie u. U. den entsprechenden Verweis aufheben.  
+1.  In the **Memory** window **Address** box, type a pointer expression. The pointer variable must be in the current scope. Depending on the language, you might have to dereference it.  
   
-2.  Drücken Sie die **EINGABETASTE**.  
+2.  Press **ENTER**.  
   
-     Wenn Sie anschließend einen Ausführungsbefehl wie **Schritt** verwenden, ändert sich die angezeigte Speicheradresse automatisch entsprechend der Zeigerbewegung.  
+     Now, when you use an execution command such as **Step**, the memory address that is displayed will automatically change as the pointer changes.  
   
-## Siehe auch  
- [Anzeigen von Daten im Debugger](../debugger/viewing-data-in-the-debugger.md)
+## <a name="see-also"></a>See Also  
+ [Viewing Data in the Debugger](../debugger/viewing-data-in-the-debugger.md)

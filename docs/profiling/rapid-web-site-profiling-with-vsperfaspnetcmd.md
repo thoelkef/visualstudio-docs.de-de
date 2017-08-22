@@ -1,101 +1,120 @@
 ---
-title: "Schnelle Website-Profilerstellung mit VSPerfASPNETCmd | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Profilerstellungstools, VSPerfASPNETCmd"
-  - "VSPerfASPNETCmd"
+title: Rapid Web Site Profiling with VSPerfASPNETCmd | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- proflilng tools,VSPerfASPNETCmd
+- VSPerfASPNETCmd
 ms.assetid: 9a9d62a6-549a-45ac-a948-76eb98586ac5
 caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 16
----
-# Schnelle Website-Profilerstellung mit VSPerfASPNETCmd
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 21833414eefc19cfcd90e186f0aa5009b6f8a748
+ms.contentlocale: de-de
+ms.lasthandoff: 08/22/2017
 
-Mithilfe des Befehlszeilentools **VSPerfASPNETCmd** lassen sich auf einfache Weise Profile für [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]\-Webanwendungen erstellen.  Verglichen mit dem Befehlszeilentool [VSPerfCmd](../profiling/vsperfcmd.md) stehen weniger Optionen zur Verfügung, es müssen keine Umgebungsvariablen festgelegt werden, und der Computer muss nicht neu gestartet werden.  Die Verwendung von **VSPerfASPNETCmd** ist die bevorzugte Methode für die Profilerstellung mit dem eigenständigen Profiler.  Weitere Informationen finden Sie unter [Gewusst wie: Installieren des eigenständigen Profilers](../profiling/how-to-install-the-stand-alone-profiler.md).  
+---
+# <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Rapid Web Site Profiling with VSPerfASPNETCmd
+The **VSPerfASPNETCmd** command line tool enables you to easily profile [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web applications. In comparison to the [VSPerfCmd](../profiling/vsperfcmd.md) command line tool, options are reduced, no environment variables have to be set, and rebooting the computer is not required. Using **VSPerfASPNETCmd** is the preferred method for profiling with the standalone profiler. For more information, see [How to: Install the Stand-Alone Profiler](../profiling/how-to-install-the-stand-alone-profiler.md).  
   
 > [!NOTE]
->  Verbesserte Sicherheitsfeatures in Windows 8 und Windows Server 2012 erforderten tiefgreifende Änderungen bei der Datenerfassung des Visual Studio\-Profilers auf diesen Plattformen.  Außerdem benötigen Windows Store\-Apps neue Erfassungsmethoden.  Siehe [Profilerstellung für Windows 8\- und Windows Server 2012\-Anwendungen](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+>  Enhanced security features in Windows 8 and Windows Server 2012 required significant changes in the way the Visual Studio profiler collects data on these platforms. Windows Store apps also require new collection techniques. See [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
- In einigen Szenarien, beispielsweise beim Sammeln von Parallelitätsdaten oder beim Anhalten und anschließenden Fortsetzen der Profilerstellung ist die Verwendung von **VSPerfCmd** bevorzugte Profilerstellungsmethode.  
-  
-> [!NOTE]
->  Die Befehlszeilentools der Profilerstellungstools befinden sich im Unterverzeichnis "\\Team Tools\\Performance Tools" des [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]\-Installationsverzeichnisses.  Verwenden Sie auf 64\-Bit\-Computern das Tool "VSPerfASPNETCmd", das sich im 32\-Bit\-Verzeichnis "\\Team Tools\\Performance Tools" befindet.  Damit Sie die Profilerbefehlszeilentools verwenden können, müssen Sie den Pfad des Tools der PATH\-Umgebungsvariable des Eingabeaufforderungsfensters oder dem Befehl selbst hinzufügen.  Weitere Informationen finden Sie unter [Angeben des Pfads zu Tools für die Befehlszeile](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
-  
-## Profilerstellung für eine ASP.NET\-Anwendung  
- Geben Sie zur Profilerstellung für eine [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]\-Webanwendung einen der Befehle ein, die in den folgenden Abschnitten beschrieben werden.  Die Website wird gestartet, und der Profiler beginnt mit dem Sammeln von Daten.  Verwenden Sie die Anwendung, und schließen Sie anschließend den Browser.  Drücken Sie zum Beenden der Profilerstellung im Eingabeaufforderungsfenster die EINGABETASTE.  
+ In some scenarios, such as collecting concurrency data or pausing and resuming profiling, using **VSPerfCmd** is the preferred profiling method.  
   
 > [!NOTE]
->  Standardmäßig wird die Eingabeaufforderung nach einem **vsperfaspnetcmd**\-Befehl nicht erneut angezeigt.  Mit der Option **\/nowait** können Sie das erneute Anzeigen der Eingabeaufforderung erzwingen.  Siehe [Verwenden der Option "/NoWait"](#UsingNoWait).  
+>  Command-line tools of the Profiling Tools are located in the \Team Tools\Performance Tools subdirectory of the [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] installation directory. On 64 bit computers, use the VSPerfASPNETCmd tool located in the 32 bit \Team Tools\Performance Tools directory. To use the profiler command-line tools, you must add the tools path to the PATH environment variable of the command prompt window or add it to the command itself. For more information, see [Specifying the Path to Command Line Tools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
-## So sammeln Sie Anwendungsstatistikdaten mithilfe der Samplingmethode  
- Sampling ist die Standardprofilerstellungsmethode des Tools **VSPerfASPNETCmd** und muss nicht in der Befehlszeile angegeben werden.  Mit der folgenden Befehlszeile werden Anwendungsstatistikdaten aus der angegebenen Webanwendung gesammelt:  
+## <a name="profiling-an-aspnet-application"></a>Profiling an ASP.NET Application  
+ To profile an [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web application, type one of the commands described in the following sections. The Web site is started and the profiler starts to collect data. Exercise your application and then close the browser. To stop profiling, press the Enter key in the command prompt window.  
+  
+> [!NOTE]
+>  By default, the command prompt does not return after a **vsperfaspnetcmd** command. You can use the **/nowait** option to force the command prompt to return. See [Using the /NoWait option](#UsingNoWait).  
+  
+## <a name="to-collect-application-statistics-by-using-the-sampling-method"></a>To collect application statistics by using the sampling method  
+ Sampling is the default profiling method of **VSPerfASPNETCmd** tool and does not have to be specified on the command line. The following command line collects application statistics from the specified Web application:  
   
  **vsperfaspnetcmd**  *websiteUrl*  
   
-## So sammeln Sie ausführliche Zeitsteuerungsdaten mithilfe der Instrumentationsmethode  
- Verwenden Sie die folgende Befehlszeile, um ausführliche Zeitsteuerungsdaten aus einer dynamisch kompilierten [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]\-Webanwendung zu sammeln:  
+## <a name="to-collect-detailed-timing-data-by-using-the-instrumentation-method"></a>To collect detailed timing data by using the instrumentation method  
+ Use the following command line to collect detailed timing data from a dynamically compiled [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web application:  
   
- **vsperfaspnetcmd \/trace**  *websiteUrl*  
+ **vsperfaspnetcmd /trace**  *websiteUrl*  
   
- Wenn Sie ein Profil für statisch kompilierte DLL\-Dateien in der Webanwendung erstellen möchten, müssen die Dateien mit dem Befehlszeilentool [VSInstr](../profiling/vsinstr.md) instrumentiert werden.  Durch den Befehl "vsperfaspnetcmd \/trace" werden Daten aus den instrumentierten Dateien einbezogen.  
+ If you want to profile statically compiled .dll files in your Web application, you must instrument the files by using the [VSInstr](../profiling/vsinstr.md) command-line tool. The vsperfaspnetcmd /trace command will include data from the instrumented files.  
   
-## So sammeln Sie .NET\-Speicherdaten  
- Mit der Option **\/Memory** werden Daten zur Speicherbelegung von Objekten im .NET\-Speicher gesammelt. Darüber hinaus können Daten zur Lebensdauer dieser Objekte gesammelt werden.  Das Sammeln von Speicherbelegungsdaten ist der Standardmodus der Datenoption **\/Memory** und muss nicht in der Befehlszeile angegeben werden.  
+## <a name="to-collect-net-memory-data"></a>To collect .NET memory data  
+ The **/Memory** option collects data about the allocation of objects in .NET memory and can collect data about the lifetime of those objects. Allocation data collection is the default mode of the **/Memory** data option and does not have to be specified on the command line.  
   
- **vsperfaspnetcmd \/memory** *websiteUrl*  
+ **vsperfaspnetcmd /memory** *websiteUrl*  
   
- Verwenden Sie den Parameter **Lifetime**, um neben den Speicherbelegungsdaten auch Daten zur Objektlebensdauer zu sammeln:  
+ Use the **Lifetime** parameter to collect object lifetime data in addition to the allocation data:  
   
- **vsperfaspnetcmd \/memory:lifetime** *websiteUrl*  
+ **vsperfaspnetcmd /memory:lifetime** *websiteUrl*  
   
- Sie können auch die Option **\/Trace** verwenden, um ausführliche Zeitsteuerungsinformationen in die .NET\-Speicherdaten einzuschließen:  
+ You can also use the **/Trace** option to include detailed timing information with the .NET memory data:  
   
- **vsperfaspnetcmd \/memory**\[**:lifetime**\] **\/trace** `websiteUrl`  
+ **vsperfaspnetcmd /memory**[**:lifetime**] **/trace**`websiteUrl`  
   
-## So sammeln Sie Ebeneninteraktionsdaten  
+## <a name="to-collect-tier-interaction-data"></a>To collect tier interaction data  
   
 > [!WARNING]
->  Die Ebeneninteraktionsdaten \(TIP\)\-, die Daten ein Profil erstellt, können mit [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] oder [!INCLUDE[vs_pro_current_short](../profiling/includes/vs_pro_current_short_md.md)] erfasst werden.  Allerdings können Profilerstellungsdaten für die Ebeneninteraktion nur in [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)] und [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] angezeigt werden.  
+>  Tier interaction profiling (TIP) data can be collected using [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], or [!INCLUDE[vs_pro_current_short](../profiling/includes/vs_pro_current_short_md.md)]. However, tier interaction profiling data can be viewed only in [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)] and [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)].  
 >   
->  Um TIPPdaten auf Windows 8 oder Windows Server 2012 zu erfassen, müssen Sie die Option der Instrumentation \(**\/trace**\) verwenden.  
+>  To collect TIP data on Windows 8 or Windows Server 2012, you must use the the instrumentation (**/trace**) option.  
   
- So sammeln Sie Ebeneninteraktionsdaten mit Samplingdaten:  
+ To collect tier interaction data with sampling data:  
   
- **vsperfaspnetcmd \/tip** `websiteUrl`  
+ **vsperfaspnetcmd /tip** `websiteUrl`  
   
- So sammeln Sie Ebeneninteraktionsdaten mit Instrumentationsdaten:  
+ To collect tier interaction data with instrumentation data:  
   
- **vsperfaspnetcmd \/trace \/tip** *websiteUrl*  
+ **vsperfaspnetcmd /trace /tip** *websiteUrl*  
   
- So sammeln Sie Ebeneninteraktionsdaten mit .NET\-Speicherdaten:  
+ To collect tier interaction data with .NET memory data:  
   
- **vsperfaspnetcmd \/memory**\[**:lifetime**\] **\/tip** *websiteUrl*  
+ **vsperfaspnetcmd /memory**[**:lifetime**] **/tip***websiteUrl*  
   
-##  <a name="UsingNoWait"></a> Verwenden der Option "\/NoWait"  
- Standardmäßig wird die Eingabeaufforderung nach einem **vsperfaspnetcmd**\-Befehl nicht erneut angezeigt.  Mit der folgenden Syntaxoption können Sie jedoch das erneute Anzeigen der Eingabeaufforderung erzwingen.  Anschließend können Sie weitere Vorgänge im Eingabeaufforderungsfenster ausführen.  Verwenden Sie zum Beenden der Profilerstellung in einem separaten Befehl vom Typ **vsperfaspnetcmd** die Option **\/shutdown**.  
+##  <a name="UsingNoWait"></a> Using the /NoWait option  
+ By default, the command prompt does not return after a **vsperfaspnetcmd** command. You can use the following syntax option to force the command prompt to return. You can then perform other operations in the command prompt window. To end profiling, use the **/shutdown** option in a separate **vsperfaspnetcmd** command.  
   
- So starten Sie die Profilerstellung:  
+ To begin profiling:  
   
- **vsperfaspnetcmd** \[*\/Options*\] **\/nowait** *websiteUrl*  
+ **vsperfaspnetcmd** [*/Options*] **/nowait***websiteUrl*  
   
- So beenden Sie die Profilerstellung:  
+ To end profiling:  
   
- **vsperfaspnetcmd \/shutdown** *websiteUrl*  
+ **vsperfaspnetcmd /shutdown** *websiteUrl*  
   
-## Zusätzliche Optionen  
- Mit Ausnahme des Befehls **vsperfaspnetcmd \/shutdown** können alle weiter oben in diesem Abschnitt aufgeführten Befehle mit jeder der folgenden Optionen ergänzt werden:  
+## <a name="additional-options"></a>Additional Options  
+ You can add any of the following options to the commands listed earlier in this section, except the **vsperfaspnetcmd /shutdown** command.  
   
-|Option|**Beschreibung**|  
-|------------|----------------------|  
-|**\/Output:** `VspFile`|Standardmäßig wird die Profilerstellungs\-Datendatei \(VSP\-Datei\) im aktuellen Verzeichnis mit dem Dateinamen **PerformanceReport.vsp** erstellt.  Mithilfe der Option "\/output" können Sie einen anderen Speicherort und\/oder einen anderen Dateinamen angeben.|  
-|**\/PackSymbols:Off**|Standardmäßig werden von "VsPerfASPNETCmd" Symbole \(Funktions\- und Parameternamen usw.\) in der VSP\-Datei eingebettet.  Durch die Einbettung der Symbole kann die Profilerstellungs\-Datendatei sehr groß ausfallen.  Wenn Sie beim Analysieren der Daten auf die PDB\-Dateien mit den Symbolen zugreifen können, verwenden Sie die Option "\/packsymbols:off", um die Einbettung der Symbole zu deaktivieren.|
+|Option|Description|  
+|------------|-----------------|  
+|**/Output:** `VspFile`|By default, the profiling data (.vsp) file is created in the current directory with the file name **PerformanceReport.vsp**. Use the /output option to specify a different location, file name, or both.|  
+|**/PackSymbols:Off**|By default, VsPerfASPNETCmd embeds symbols (function and parameter names, etc) in the .vsp file. Embedding the symbols can make the profiling data file very large. If you will have access to the .pdb files that contain the symbols when you analyze the data, use the /packsymbols:off option to disable the embedding of the symbols.|
+

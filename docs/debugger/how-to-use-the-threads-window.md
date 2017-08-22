@@ -1,165 +1,282 @@
 ---
-title: "Gewusst wie: Verwenden des Fensters Threads | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.threads"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Threading [Visual Studio], Debuggen"
-  - "Thread.Name-Eigenschaft"
-  - "Debugger, Threadfenster"
-  - "SetThreadName-Funktion"
-  - "Threadfenster"
-  - "@TIB"
-  - "Debuggen [Visual Studio], Threads"
+title: Debug a multithreaded application using the Threads window | Microsoft Docs
+ms.custom: H1HackMay2017
+ms.date: 05/18/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- multithreaded debugging, tutorial
+- tutorials, multithreaded debugging
 ms.assetid: adfbe002-3d7b-42a9-b42a-5ac0903dfc25
-caps.latest.revision: 44
-caps.handback.revision: 44
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# Gewusst wie: Verwenden des Fensters Threads
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+caps.latest.revision: 38
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: e22ae316526950e5b2e8db931f76538158c90af9
+ms.contentlocale: de-de
+ms.lasthandoff: 08/22/2017
 
-Im Fenster **Threads** können Sie Threads in der gedebuggten Anwendung überprüfen und diese bearbeiten.  
+---
+# <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>Walkthrough: Debug a multithreaded application in Visual Studio using the Threads window
+Visual Studio provides a **Threads** window and other user interface elements to help you debug multithreaded applications. This tutorial shows how to use the **Threads** window and the **Debug Location** toolbar. For information on the other tools, see  [Get started debugging multithreaded applications](../debugger/get-started-debugging-multithreaded-apps.md). This tutorial takes only a few minutes, but completing it will familiarize you with the features for debugging multithreaded applications.   
   
- Das Fenster **Threads** enthält eine Tabelle, in der jede Zeile einen Thread in der Anwendung darstellt.  Standardmäßig sind in der Tabelle alle Threads in der Anwendung aufgeführt. Sie können die Liste jedoch filtern, sodass nur die gewünschten Threads angezeigt werden.  Jede Spalte enthält einen anderen Typ von Informationen.  Sie können auch einige Spalten ausblenden.  Wenn alle Spalten eingeblendet sind, werden die folgenden Informationen angezeigt \(von links nach rechts\):  
+To begin this tutorial, you need a multithreaded application project. Follow the steps listed here to create that project.  
   
--   Die Flagspalte, in Sie einen Thread markieren können, der besondere Aufmerksamkeit erhalten soll.  Weitere Informationen zum Kennzeichnen von Threads erhalten Sie unter [Gewusst wie: Kennzeichnen von Threads und Aufheben der Kennzeichnung](../debugger/how-to-flag-and-unflag-threads.md).  
+#### <a name="to-create-the-multithreaded-app-project"></a>To create the multithreaded app project  
   
--   Die Spalte mit aktiven Threads, in der ein gelber Pfeil einen aktiven Thread anzeigt.  Konturen eines Pfeils geben den Thread an, in dem die Ausführung durch den Debugger unterbrochen wurde.  
+1.  On the **File** menu, choose **New** and then click **Project**.  
   
--   Die Spalte **ID**, die die ID für jeden Thread enthält.  
+     The **New Project** dialog box appears.  
   
--   Die Spalte **Verwaltete ID**, die die verwalteten IDs für verwaltete Threads enthält.  
+2.  In the **Project Type**s box, click the language of your choice: **Visual Basic**, **Visual C#**, or **Visual C++**.  
   
--   Die Spalte **Kategorie**, in der Threads als Benutzeroberflächenthreads, Remoteprozeduraufruf\-Handler oder Arbeitsthreads kategorisiert werden.  In einer speziellen Kategorie wird der Hauptthread der Anwendung angegeben.  
+3.  In the **Templates** box, choose **Console App**.  
   
--   Die Spalte **Name**, in der jeder Thread anhand seines Namens identifiziert wird, sofern ein solcher vorhanden ist \(andernfalls mit \<Kein Name\>\).  
+4.  In the **Name** box, type the name MyThreadWalkthroughApp.  
   
--   Die Spalte **Speicherort**, in der angezeigt wird, wo der Thread ausgeführt wird.  Sie können diesen Speicherort erweitern, um die vollständige Aufrufliste für den Thread anzuzeigen.  
+5.  Click **OK**.  
   
--   Die Spalte **Priorität**, in der die Priorität bzw. Rangfolge angezeigt wird, die den einzelnen Threads vom System zugewiesen wurde.  
+     A new console project appears. When the project has been created, a source file appears. Depending on the language you have chosen, the source file might be called Module1.vb, Program.cs, or MyThreadWalkthroughApp.cpp  
   
--   Die Spalte **Affinitätsmaske**, die eine erweiterte Spalte darstellt, die normalerweise ausgeblendet ist.  In dieser Spalte wird die Prozessor\-Affinitätsmaske für jeden Thread angezeigt.  In einem Multiprozessorsystem bestimmt die Affinitätsmaske die Prozessoren, auf denen ein Thread ausgeführt werden kann.  
+6.  Delete the code that appears in the source file and replace it with the example code that appears in the section "Creating a Thread" of the topic [Creating Threads and Passing Data at Start Time](/dotnet/standard/threading/creating-threads-and-passing-data-at-start-time).  
   
--   Die Spalte **Angehaltene Anzahl**, in der der Unterbrechungszähler angegeben ist.  Dieser Zähler bestimmt, ob ein Thread ausgeführt werden kann.  Eine Erläuterung des Unterbrechungszählers finden Sie in diesem Thema im Abschnitt "Sperren und Entsperren von Threads".  
+7.  On the **File** menu, click **Save All**.  
   
--   Die Spalte **Prozessname**, die den Prozess aufführt, zu dem die einzelnen Threads gehören.  Diese Spalte kann hilfreich sein, wenn Sie mehrere Prozesse debuggen. Normalerweise ist sie jedoch ausgeblendet.  
+#### <a name="to-begin-the-tutorial"></a>To begin the tutorial  
   
-### So zeigen Sie das Fenster Threads im Unterbrechungs\- oder Ausführmodus an  
+-   In the source code editor, look for the following code:  
   
--   Zeigen Sie im Menü **Debuggen** auf **Fenster**, und klicken Sie auf **Threads**.  
+    ```VB  
+    Thread.Sleep(3000)   
+    Console.WriteLine(  
+    ```  
   
-### So blenden Sie Spalten ein oder aus  
+    ```CSharp  
+    Thread.Sleep(3000);  
+    Console.WriteLine();  
+    ```  
   
--   Klicken Sie am oberen Rand des Fensters **Threads** auf der Symbolleiste auf **Spalten**, und aktivieren bzw. deaktivieren Sie dann die Namen der anzuzeigenden bzw. auszublendenden Spalten.  
+    ```C++  
+    Thread::Sleep(3000);  
+    Console.WriteLine();  
+    ```  
   
-### So wechseln Sie den aktiven Thread  
+#### <a name="to-start-debugging"></a>To start debugging  
   
--   Führen Sie einen der folgenden Schritte aus:  
+1.  Click in the left gutter of the `Console.WriteLine` statement to insert a new breakpoint.  
   
-    -   Doppelklicken Sie auf einen beliebigen Thread.  
+     In the gutter on the left side of the source code editor, a red circle appears. This indicates that a breakpoint is now set at this location.  
   
-    -   Klicken Sie mit der rechten Maustaste auf einen Thread, und klicken Sie auf **Zu Thread wechseln**.  
+2.  On the **Debug** menu, click **Start Debugging** (**F5**).  
   
-         Der gelbe Pfeil wird neben dem neuen aktiven Thread angezeigt.  Die grauen Konturen eines Pfeils geben den Thread, in dem der Debugger die Ausführung unterbrochen hat.  
+     Debugging starts, your console application starts to run, and then stops at the breakpoint.  
   
-## Gruppieren und Sortieren von Threads  
- Beim Gruppieren von Threads wird in der Tabelle eine Überschrift für jede Gruppe angezeigt.  Die Überschrift enthält eine Gruppenbeschreibung \(z. B. "Arbeitsthread" oder "Nicht gekennzeichnete Threads"\) und ein Strukturansicht\-Steuerelement.  Die einzelnen Threads jeder Gruppe werden unter der Gruppenüberschrift angezeigt.  Wenn Sie die einzelnen Threads einer Gruppe ausblenden möchten, können Sie die Gruppe mithilfe des Strukturansicht\-Steuerelements reduzieren.  
+3.  If the console application window has focus at this point, click in the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] window to return focus to [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
- Da die Gruppierung Vorrang gegenüber der Sortierung hat, können Sie Threads z. B. nach Kategorien gruppieren und anschließend in den einzelnen Kategorien nach ID sortieren.  
+4.  In the source code editor, locate the line that contains the following code:  
   
-#### So sortieren Sie Threads  
+    ```VB  
+    Thread.Sleep(5000)   
+    ```  
   
-1.  Klicken Sie auf der Symbolleiste oben im Fenster **Threads** auf die Schaltfläche am oberen Rand einer beliebigen Spalte.  
+    ```CSharp  
+    Thread.Sleep(3000);  
+    ```  
   
-     Die Threads werden jetzt nach den Werten in dieser Spalte sortiert.  
+    ```C++  
+    Thread::Sleep(3000);  
+    ```
   
-2.  Wenn Sie die Sortierreihenfolge umkehren möchten, klicken Sie erneut auf dieselbe Schaltfläche.  
+#### <a name="to-discover-the-thread-marker"></a>To discover the thread marker  
+
+1.  In the Debug Toolbar, click the **Show Threads in Source** button ![Show Threads in Source](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker"). 
   
-     Threads, die am Anfang der Liste angezeigt wurden, werden nun am Ende der Liste aufgeführt.  
+2.  Look at the gutter on the left side of the window. On this line, you will see a *thread marker* icon  ![Thread Marker](../debugger/media/dbg-thread-marker.png "ThreadMarker") that resembles two cloth threads. The thread marker indicates that a thread is stopped at this location.  
   
-#### So gruppieren Sie Threads  
+3.  Hover the pointer over the thread marker. A DataTip appears. The DataTip tells you the name and thread ID number for each stopped thread. In this case, there is only one thread, whose name is probably `<noname>`.  
+
+    > [!TIP]
+    > You may find it helpful to identify nameless threads by renaming them. In the Threads window, choose **Rename** after right-clicking on the **Name** column in the thread row.
   
--   Klicken Sie auf der Symbolleiste des Fensters **Threads** auf die Liste **Gruppieren nach**, und klicken Sie anschließend auf die Kriterien, anhand derer Sie Threads gruppieren möchten.  
+4.  Right-click the thread marker to see the available options on the shortcut menu. 
+    
   
-#### So sortieren Sie Threads innerhalb von Gruppen  
+## <a name="flagging-and-unflagging-threads"></a>Flagging and Unflagging Threads  
+You can flag threads that you want to give special attention. Flagging threads is a good way to keep track of important threads and to ignore threads that you do not care about.  
   
-1.  Klicken Sie auf der Symbolleiste am oberen Rand des Fensters **Threads** auf die Liste **Gruppieren nach**, und klicken Sie anschließend auf die Kriterien, anhand derer Sie Threads gruppieren möchten.  
+#### <a name="to-flag-threads"></a>To flag threads   
+
+1.  On **View** menu, point to **Toolbars**.  
   
-2.  Klicken Sie im Fenster **Threads** auf die Schaltfläche am oberen Rand einer beliebigen Spalte.  
+    Make sure that the **Debug Location** toolbar is selected.
+
+2.  Go to the **Debug Location** toolbar and click the **Thread** list.  
   
-     Die Threads werden jetzt nach den Werten in dieser Spalte sortiert.  
+    > [!NOTE]
+    >  You can recognize this toolbar by three prominent lists: **Process**, **Thread**, and **Stack Frame**.  
   
-#### So erweitern oder reduzieren Sie alle Gruppen  
+3.  Notice how many threads appear in the list.  
   
--   Klicken Sie auf der Symbolleiste am oberen Rand des Fensters **Threads** auf **Gruppen erweitern** oder **Gruppen reduzieren**.  
+4.  Go back to the source code editor and right-click the thread marker ![Thread Marker](../debugger/media/dbg-thread-marker.png "ThreadMarker") again.  
   
-## Suchen nach bestimmten Threads  
- In [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] können Sie nach Threads suchen, die einer bestimmten Zeichenfolge entsprechen.  Wenn Sie im Fenster **Threads** nach Threads suchen, werden alle Threads angezeigt, die der Suchzeichenfolge in den einzelnen Spalten entsprechen.  Zu diesen Informationen zählt der Threadspeicherort, der am oberen Rand der Aufrufliste in der Spalte **Speicherort** angezeigt wird.  Standardmäßig wird jedoch nicht die vollständige Aufrufliste durchsucht.  
+5.  On the shortcut menu, point to **Flag**, and then click the thread name and ID number.  
   
-#### So suchen Sie nach bestimmten Threads  
+6.  Go back to **Debugging Location** toolbar and find the **Show Only Flagged Threads** icon ![Show Flagged Threads](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker") to the right of the **Thread** list.  
   
--   Wechseln Sie auf der Symbolleiste am oberen Rand des Fensters **Threads** in das Feld **Suchen**, und führen Sie Folgendes aus:  
+    The flags icon on the button was dimmed before. Now, it is an active button.  
   
-    -   Geben Sie eine Suchzeichenfolge ein, und drücken Sie dann die EINGABETASTE.  
+7.  Click the **Show Only Flagged Threads** icon.  
   
-         \- oder \-  
+    Only the flagged thread appears in the list now. (You can click the single flag button to toggle back to **Show All Threads** mode.)
+
+8. Open the Threads window by choosing **Debug > Windows > Threads**.
+
+    ![Threads Window](../debugger/media/dbg-threads-window.png "ThreadsWindow")  
   
-    -   Klicken Sie auf die Dropdownliste neben dem Feld **Suchen**, und wählen Sie eine Suchzeichenfolge aus einem früheren Suchvorgang aus.  
+    In the **Threads** window, the flagged thread has a prominent red flag icon attached to it.
+
+    > [!TIP]
+    > When you have flagged some threads, you can right-click a line of code in the code editor and choose **Run Flagged Threads to Cursor** (make sure that you choose code that all flagged threads will reach). This will pause threads on the selected line of code, making it easier control the order of execution by [freezing and thawing threads](#bkmk_freeze).
   
--   \(Optional\) Wenn bei der Suche die vollständige Aufrufliste berücksichtigt werden soll, wählen Sie **Aufrufliste suchen** aus.  
+11. In the source code editor, right-click the thread marker again.  
   
-## Sperren und Entsperren von Threads  
- Wenn ein Thread eingefroren ist, wird die Threadausführung vom System auch dann nicht gestartet, wenn Ressourcen verfügbar sind.  
+     Notice what choices are now available on the shortcut menu. Instead of **Flag**, you now see **Unflag**. Do not click **Unflag**.  
+
+     To find out how to unflag threads, go to the next procedure.  
   
- Im systemeigenen Code kann die Ausführung von Threads unterbrochen und fortgesetzt werden, indem die Windows\-Funktionen `SuspendThread` und `ResumeThread` oder die MFC\-Funktionen [CWinThread::SuspendThread](../Topic/CWinThread::SuspendThread.md) und [CWinThread::ResumeThread](../Topic/CWinThread::ResumeThread.md) aufgerufen werden.  Wenn Sie `SuspendThread` oder `ResumeThread` aufrufen, ändern Sie den *Unterbrechungszähler*, der im Fenster **Threads** angezeigt wird.  Wenn Sie jedoch einen systemeigenen Thread einfrieren oder reaktivieren, wird dadurch der Unterbrechungszähler nicht geändert.  Im systemeigenen Code kann ein Thread nur ausgeführt werden, wenn er reaktiviert ist und sein Unterbrechungszähler den Wert 0 aufweist.  
+#### <a name="to-unflag-threads"></a>To unflag threads  
   
- In verwaltetem Code hat das Einfrieren oder Reaktivieren keinen Einfluss auf den Wert des Unterbrechungszählers.  In verwaltetem Code hat ein eingefrorener Thread den Unterbrechungszähler 1 auf.  In systemeigenem Code hat der Unterbrechungszähler eines eingefrorenen Threads den Wert 0, es sei denn, seine Ausführung wurde durch einen `SuspendThread`\-Aufruf unterbrochen.  
+1.  On the **Threads** window, right-click the line corresponding to the flagged thread.  
   
-> [!NOTE]
->  Beim Debuggen eines Aufrufs vom systemeigenen Code in den verwalteten Code wird der verwaltete Code im selben physischen Thread ausgeführt wie der systemeigene Code, durch den er aufgerufen wurde.  Durch Unterbrechen oder Sperren des systemeigenen Threads wird auch der verwaltete Code gesperrt.  
+     A shortcut menu is displayed. It has options to **Unflag** and **Unflag All Threads**.  
   
-#### So können Sie die Ausführung eines Threads einfrieren oder reaktivieren  
+2.  To unflag the thread, click **Unflag**.  
+
+    Look at the **Debugging Location** toolbar again. The **Show Only Flagged Threads** button is dimmed again. You unflagged the only flagged thread. Because there are no flagged threads, the toolbar has gone back to **Show All Threads** mode. Click the **Thread** list and verify that you can see all threads.  
   
--   Klicken Sie auf der Symbolleiste am oberen Rand des Fensters **Threads** auf **Threads einfrieren** oder **Threads reaktivieren**.  
+5.  Go back to the **Threads** window and examine the information columns.  
   
-     Dieser Vorgang wirkt sich nur auf Threads aus, die im Fenster **Threads** ausgewählt sind.  
+    In the first column, you will notice a flag outline icon in each row of the thread list. (The outline means that the thread is unflagged.)  
   
-## Anzeigen von gekennzeichneten Threads  
- Einen Thread, der besondere Aufmerksamkeit erhalten soll, können Sie kennzeichnen, indem sie ihn im Fenster **Threads** mit einem Symbol markieren.  Weitere Informationen finden Sie unter [Gewusst wie: Kennzeichnen von Threads und Aufheben der Kennzeichnung](../debugger/how-to-flag-and-unflag-threads.md).  Im Fenster "Threads" können Sie festlegen, dass alle Threads oder nur die gekennzeichneten Threads angezeigt werden.  
+6.  Click the flag outline icons for two threads, the second and third from the bottom of the list. 
+
+    The flag icons become solid red, instead of hollow outlines.  
   
-#### So zeigen Sie nur gekennzeichnete Threads an  
+7.  Click the button at the top of the flag column.  
   
--   Klicken Sie in der oberen linken Ecke des **Threadfensters** auf die Kennzeichnungsschaltfläche.  
+    The order of the thread list changed when you clicked the button. The thread list is now sorted with the flagged threads on top.  
   
-## Anzeigen von Threadaufruflisten und Wechseln zwischen Rahmen  
- In einem Multithreadprogramm verfügt jeder Thread über eine eigene Aufrufliste.  Das Fenster **Threads** bietet eine benutzerfreundliche Möglichkeit, diese Aufruflisten anzuzeigen.  
+8.  Again, click the button at the top of the flag column.  
   
-#### So zeigen Sie die Aufrufliste eines Threads an  
+    The sort order changed again.  
   
--   Klicken Sie in der Spalte **Speicherort** auf das umgekehrte Dreieck neben dem Threadspeicherort.  
+## <a name="more-about-the-threads-window"></a>More about the Threads window  
   
-     Der Speicherort wird erweitert, und die Aufrufliste für den Thread wird angezeigt.  
+#### <a name="to-learn-more-about-the-threads-window"></a>To learn more about the Threads window  
   
-#### So können Sie die Aufruflisten aller Threads anzeigen oder reduzieren  
+1.  In the **Threads** window, examine the third column from the left. The button at the top of this column says **ID**.  
   
--   Klicken Sie auf der Symbolleiste am oberen Rand des Fensters **Threads** auf **Aufruflisten erweitern** oder auf **Aufruflisten reduzieren**.  
+2.  Click **ID**.  
   
-## Siehe auch  
- [Debuggen von Multithreadanwendungen](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Exemplarische Vorgehensweise: Debuggen einer Multithreadanwendung](../debugger/walkthrough-debugging-a-multithreaded-application.md)
+     The thread list is now sorted by thread ID number.  
+  
+3.  Right-click any thread in the list. On the shortcut menu, click **Hexadecimal display**.  
+  
+     The format of the thread ID numbers is changed.  
+  
+4.  Hover the mouse pointer over the **Location** column for any thread in the list.  
+  
+     After a momentary delay, a DataTip appears. It shows a partial call stack for the thread.
+
+     > [!TIP]
+     > For a graphical view of the call stacks for threads, open the [Parallel Stacks](../debugger/using-the-parallel-stacks-window.md) window (while debugging, choose **Debug / Windows / Parallel Stacks**). You will see call stacks like this illustration.
+
+    ![Parallel Stacks Window](../debugger/media/dbg-threads-parallel-stacks.png "ParallelStacksWindow")    
+  
+5.  Look at the fourth column from the left, which is labeled **Category**. The threads are classified into categories.  
+  
+     The first thread created in a process is referred to as the main thread. Locate it in the thread list.  
+  
+6.  Right-click the main thread and then click **Switch to Thread**.  
+  
+     A **Break Mode** window appears. It tells you that the debugger is not currently executing any code that it can display (because it is the main thread).   
+  
+7.  Look at the **Call Stack** window and the **Debug Location** toolbar.  
+  
+     The contents of the **Call Stack** window have changed. 
+
+## <a name="bkmk_freeze"></a> Freezing and thawing thread execution 
+
+You can freeze and thaw (suspend and resume) threads to control the order in which threads perform work. This can help you resolve concurrency issues such as deadlocks and race conditions.
+
+> [!TIP]
+> If you want to follow a single thread without freezing other threads (also a common debugging scenario), see [Get started debugging multithreaded applications](../debugger/get-started-debugging-multithreaded-apps.md#bkmk_follow_a_thread).
+  
+#### <a name="to-freeze-and-unfreeze-threads"></a>To freeze and unfreeze threads  
+  
+1.  In the **Threads** window, right-click any thread and then click **Freeze**.  
+  
+2.  Look at the second column (the current thread column). The pause icon now appears there. Those pause icon indicates that the thread is frozen.  
+  
+3.  Show the **Suspended Count** column by selecting it in the **Columns** list.
+
+    The suspend count for the thread is now 1.  
+  
+4.  Right-click the frozen thread and then click **Thaw**.  
+  
+     The current thread column and the **Suspended Count** column change. 
+  
+## <a name="switching-the-to-another-thread"></a>Switching the to another thread 
+  
+#### <a name="to-switch-threads"></a>To switch threads  
+  
+1.  In the **Threads** window, examine the second column from the left (the current thread column). The button at the top of this column has no text or icon.
+  
+2.  Look at the current thread column and notice that one thread has a yellow arrow. The yellow arrow indicates that this thread is the current thread (this is the current location of the execution pointer).
+  
+    Make a note of the thread ID number where you see the current thread icon. You will move the current thread icon to another thread, but you will have to put it back when you have finished. 
+  
+3.  Right-click another thread and then click **Switch to Thread**.  
+  
+4.  Look at the **Call Stack** window in the source code editor. The contents have changed.  
+  
+5.  Look at the **Debug Location** toolbar. The current thread icon has changed there, too.  
+  
+6.  Go to the **Debug Location** toolbar. Select a different thread from the **Thread** list.  
+  
+7.  Look at the **Threads** window. The current thread icon has changed.  
+  
+8. In the source code editor, right-click a thread marker. On the shortcut menu, point to **Switch to Thread** and click a thread name/ID number.  
+  
+     You have now seen three ways of changing the current thread icon to another thread: using the **Threads** window, the **Thread** list in the **Debug Location** toolbar, and the thread marker in the source code editor.  
+  
+     With the thread marker, you can switch only to threads that are stopped at that particular location. By using the **Threads** window and **Debug Location** toolbar, you can switch to any thread.   
+  
+## <a name="see-also"></a>See Also  
+ [Debug Multithreaded Applications](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [How to: Switch to Another Thread While Debugging](../debugger/how-to-switch-to-another-thread-while-debugging.md)

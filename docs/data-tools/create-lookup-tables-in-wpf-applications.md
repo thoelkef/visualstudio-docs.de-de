@@ -1,66 +1,85 @@
 ---
-title: "Gewusst wie: Erstellen von Nachschlagetabellen in WPF-Anwendungen | Microsoft Docs"
-ms.custom: ""
-ms.date: "09/22/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "Daten [WPF], Anzeigen"
-  - "Datenbindung, WPF"
-  - "Anzeigen von Daten, WPF"
-  - "WPF [WPF], Daten"
-  - "WPF-Datenbindung [Visual Studio]"
-  - "WPF-Designer, Datenbindung"
-  - "WPF, Datenbindung in Visual Studio"
+title: Create lookup tables in WPF applications | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- aspx
+helpviewer_keywords:
+- data [WPF], displaying
+- WPF, data binding in Visual Studio
+- WPF data binding [Visual Studio]
+- displaying data, WPF
+- WPF [WPF], data
+- WPF Designer, data binding
+- data binding, WPF
 ms.assetid: 56a1fbff-c7e8-4187-a1c1-ffd17024bc1b
 caps.latest.revision: 16
-caps.handback.revision: 13
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 35c99d7b903674af2e4d8b6f6e8c770d440d95c8
+ms.contentlocale: de-de
+ms.lasthandoff: 08/22/2017
+
 ---
-# Gewusst wie: Erstellen von Nachschlagetabellen in WPF-Anwendungen
-Sie können eine Nachschlagetabelle erstellen, indem Sie den Hauptknoten einer übergeordneten Tabelle oder eines übergeordneten Objekts im **Datenquellenfenster** auf ein Steuerelement ziehen, das bereits an eine Spalte oder Eigenschaft in einer verknüpften untergeordneten Tabelle gebunden ist.  Als *Nachschlagetabelle* \(manchmal als *Nachschlagebindung* bezeichnet\) wird ein Steuerelement bezeichnet, das Informationen aus einer Datentabelle auf Grundlage des Werts eines Fremdschlüsselfelds in einer anderen Tabelle anzeigt.  
+# <a name="create-lookup-tables-in-wpf-applications"></a>Create lookup tables in WPF applications
+The term *lookup table* (sometimes called a *lookup binding*) describes a control that displays information from one data table based on the value of a foreign-key field in another table. You can create a lookup table by dragging the main node of a parent table or object in the **Data Sources** window onto a control that is already bound to a column or property in a related child table.  
   
- Als Beispiel kann eine Tabelle mit dem Namen `Orders` dienen, die Teil einer Verkaufsdatenbank ist und Aufträge enthält.  Jeder Datensatz in der Tabelle `Orders` enthält eine `CustomerID`, die angibt, welcher Kunde den Auftrag erteilt hat.  Die `CustomerID` ist ein Fremdschlüssel, der auf einen Kundendatensatz in der Tabelle `Customers` zeigt.  Wenn Sie eine Liste mit Aufträgen aus der Tabelle `Orders` anzeigen, möchten Sie eventuell statt der `CustomerID` den tatsächlichen Namen des Kunden anzeigen.  Da der Kundenname in der Tabelle `Customers` enthalten ist, müssen Sie zum Anzeigen des Kundennamens eine Nachschlagetabelle erstellen.  In der Nachschlagetabelle wird der `CustomerID`\-Wert im `Orders`\-Datensatz verwendet, um in der Beziehung zu navigieren und den benutzerfreundlichen Kundennamen zurückzugeben.  
+ For example, consider a table of `Orders` in a sales database. Each record in the `Orders` table includes a `CustomerID` that indicates which customer placed the order. The `CustomerID` is a foreign key that points to a customer record in the `Customers` table. When you display a list of orders from the `Orders` table, you may want to display the actual customer name instead of the `CustomerID`. Because the customer name is in the `Customers` table, you need to create a lookup table to display the customer name. The lookup table uses the `CustomerID` value in the `Orders` record to navigate the relationship, and return the customer name.  
   
-### So erstellen Sie eine Suchtabelle  
+## <a name="to-create-a-lookup-table"></a>To create a lookup table  
   
-1.  Fügen Sie dem Projekt einen der folgenden Typen von Datenquellen mit zugehörigen Daten hinzu:  
+1.  Add one of the following types of data sources with related data to your project:  
   
-    -   Dataset oder Entity Data Model.  Weitere Informationen finden Sie unter [Gewusst wie: Herstellen einer Verbindung zu Daten in einer Datenbank](../data-tools/how-to-connect-to-data-in-a-database.md).  
+    -   Dataset or Entity Data Model. 
   
-    -   WCF\-Datendienst, WCF\-Dienst oder Webdienst.  Weitere Informationen finden Sie unter [Gewusst wie: Herstellen einer Verbindung mit Daten in einem Dienst](../data-tools/how-to-connect-to-data-in-a-service.md).  
+    -   WCF Data Service, WCF service or Web service. For more information, see [How to: Connect to Data in a Service](../data-tools/how-to-connect-to-data-in-a-service.md).  
   
-    -   Objekte.  Weitere Informationen finden Sie unter [Gewusst wie: Herstellen einer Verbindung mit Daten in Objekten](../Topic/How%20to:%20Connect%20to%20Data%20in%20Objects.md).  
-  
-    > [!NOTE]
-    >  Bevor Sie eine Nachschlagetabelle erstellen können, müssen zwei verknüpfte Tabellen oder Objekte als Datenquelle für das Projekt vorhanden sein.  
-  
-2.  Öffnen Sie den **WPF\-Designer**, und stellen Sie sicher, dass der Designer einen Container enthält, der ein gültiges Ablageziel für die Elemente im **Datenquellenfenster** ist.  
-  
-     Weitere Informationen über gültige Ablageziele finden Sie unter [Binden von WPF\-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
-  
-3.  Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**, um das **Datenquellenfenster** zu öffnen.  
-  
-4.  Erweitern Sie die Knoten im **Datenquellenfenster**, bis die übergeordnete Tabelle oder das übergeordnete Objekt und die verknüpfte untergeordnete Tabelle bzw. das verknüpfte untergeordnete Objekt sichtbar sind.  
+    -   Objects. For more information, see [Bind to objects in Visual Studio](bind-objects-in-visual-studio.md).  
   
     > [!NOTE]
-    >  Die verknüpfte untergeordnete Tabelle oder das verknüpfte untergeordnete Objekt ist der Knoten, der unter der übergeordneten Tabelle bzw. dem übergeordneten Objekt als erweiterbarer untergeordneter Knoten angezeigt wird.  
+    >  Before you can create a lookup table, two related tables or objects must exist as a data source for the project.  
   
-5.  Klicken Sie auf das Dropdownmenü für den untergeordneten Knoten, und wählen Sie **Details** aus.  
+2.  Open the **WPF Designer**, and make sure that the designer contains a container that is a valid drop target for items in the **Data Sources** window.  
   
-6.  Erweitern Sie den untergeordneten Knoten.  
+     For more information about valid drop targets, see [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).  
   
-7.  Klicken Sie unter dem untergeordneten Knoten auf das Dropdownmenü für das Element, das die untergeordneten und übergeordneten Daten verknüpft \(im obigen Beispiel ist dies der Knoten **CustomerID**\).  Wählen Sie einen der folgenden Typen von Steuerelementen aus, die Nachschlagebindung unterstützen:  
+3.  On the **Data** menu, click **Show Data Sources** to open the **Data Sources** window.  
+  
+4.  Expand the nodes in the **Data Sources** window, until you can see the parent table or object and the related child table or object.  
+  
+    > [!NOTE]
+    >  The related child table or object is the node that appears as an expandable child node under the parent table or object.  
+  
+5.  Click the drop-down menu for the child node, and select **Details**.  
+  
+6.  Expand the child node.  
+  
+7.  Under the child node, click the drop-down menu for the item that relates the child and parent data. (In the preceding example, this is the **CustomerID** node.) Select one of the following types of controls that support lookup binding:  
   
     -   **ComboBox**  
   
@@ -69,30 +88,30 @@ Sie können eine Nachschlagetabelle erstellen, indem Sie den Hauptknoten einer �
     -   **ListView**  
   
         > [!NOTE]
-        >  Wenn das **ListBox**\-Steuerelement oder das **ListView**\-Steuerelement nicht in der Liste angezeigt wird, können Sie der Liste diese Steuerelemente hinzufügen.  Weitere Informationen finden Sie unter [Festlegen des Steuerelements, das beim Ziehen aus dem Datenquellenfenster erstellt werden soll](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+        >  If the **ListBox** or **ListView** control does not appear in the list, you can add these controls to the list. For information, see [Set the control to be created when dragging from the Data Sources window](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
-    -   Ein beliebiges benutzerdefiniertes Steuerelement, das von <xref:System.Windows.Controls.Primitives.Selector> abgeleitet wird.  
+    -   Any custom control that derives from <xref:System.Windows.Controls.Primitives.Selector>.  
   
         > [!NOTE]
-        >  Informationen zum Hinzufügen von benutzerdefinierten Steuerelementen zu der Liste von Steuerelementen, die Sie im **Datenquellenfenster** als Elemente auswählen können, finden Sie unter [Hinzufügen benutzerdefinierter Steuerelemente zum Datenquellenfenster](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
+        >  For information about how to add custom controls to the list of controls you can select for items in the **Data Sources** window, see [Add custom controls to the Data Sources window](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   
-8.  Ziehen Sie den untergeordneten Knoten aus dem **Datenquellenfenster** auf einen Container im WPF\-Designer \(im obigen Beispiel ist der untergeordnete Knoten der Knoten **Orders**\).  
+8.  Drag the child node from the **Data Sources** window onto a container in the WPF designer. (In the preceding example, the child node is the **Orders** node.)  
   
-     Visual Studio generiert XAML, mit dem für jedes Element, das Sie ziehen, neue datengebundene Steuerelemente erstellt werden.  Mit dem XAML wird außerdem den Ressourcen des Ablageziels eine neue <xref:System.Windows.Data.CollectionViewSource> für die untergeordnete Tabelle oder das untergeordnete Objekt hinzugefügt.  Für einige Datenquellen generiert Visual Studio zudem Code, um Daten in die Tabelle oder das Objekt zu laden.  Weitere Informationen finden Sie unter [Binden von WPF\-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
+     Visual Studio generates XAML that creates new data-bound controls for each of the items that you drag. The XAML also adds a new <xref:System.Windows.Data.CollectionViewSource> for the child table or object to the resources of the drop target. For some data sources, Visual Studio also generates code to load data into the table or object. For more information, see [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).  
   
-9. Ziehen Sie den übergeordneten Knoten aus dem **Datenquellenfenster** auf das Nachschlagebindungs\-Steuerelement, das Sie zuvor erstellt haben \(im obigen Beispiel ist der übergeordnete Knoten der Knoten **Customers**\).  
+9. Drag the parent node from the **Data Sources** window onto the lookup binding control that you created earlier. (In the preceding example, the parent node is the **Customers** node).  
   
-     Visual Studio legt einige Eigenschaften für das Steuerelement fest, um die Nachschlagebindung zu konfigurieren.  In der folgenden Tabelle sind die Eigenschaften aufgeführt, die von Visual Studio geändert werden.  Sie können diese Eigenschaften ggf. im XAML oder im **Eigenschaftenfenster** ändern.  
+     Visual Studio sets some properties on the control to configure the lookup binding. The following table lists the properties that Visual Studio modifies. If necessary, you can change these properties in the XAML or in the **Properties** window.  
   
-    |Property|Erklärung der Einstellung|  
-    |--------------|-------------------------------|  
-    |<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>|Diese Eigenschaft gibt die Auflistung oder die Bindung an, die verwendet wird, um die im Steuerelement angezeigten Daten abzurufen.  Visual Studio legt diese Eigenschaft auf die <xref:System.Windows.Data.CollectionViewSource> für die übergeordneten Daten fest, die Sie auf das Steuerelement gezogen haben.|  
-    |<xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>|Diese Eigenschaft gibt den Pfad des Datenelements an, das im Steuerelement angezeigt wird.  Visual Studio legt diese Eigenschaft auf die erste Spalte oder Eigenschaft in den übergeordneten Daten nach dem Primärschlüssel fest, die vom Datentyp String ist.<br /><br /> Wenn Sie eine andere Spalte oder Eigenschaft in den übergeordneten Daten anzeigen möchten, ändern Sie den Pfad der Eigenschaft in den Pfad einer anderen Eigenschaft.|  
-    |<xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A>|Visual Studio bindet diese Eigenschaft an die Spalte oder Eigenschaft der untergeordneten Daten, die Sie in den Designer gezogen haben.  Dies ist der Fremdschlüssel für die übergeordneten Daten.|  
-    |<xref:System.Windows.Controls.Primitives.Selector.SelectedValuePath%2A>|Visual Studio legt diese Eigenschaft auf den Pfad der Spalte oder Eigenschaft der untergeordneten Daten fest, die der Fremdschlüssel für die übergeordneten Daten ist.|  
+    |Property|Explanation of setting|  
+    |--------------|----------------------------|  
+    |<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>|This property specifies the collection or binding that is used to get the data that is displayed in the control. Visual Studio sets this property to the <xref:System.Windows.Data.CollectionViewSource> for the parent data you dragged to the control.|  
+    |<xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>|This property specifies the path of the data item that is displayed in the control. Visual Studio sets this property to the first column or property in the parent data, after the primary key, that has a string data type.<br /><br /> If you want to display a different column or property in the parent data, change this property to the path of a different property.|  
+    |<xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A>|Visual Studio binds this property to the column or property of the child data that you dragged to the designer. This is the foreign key to the parent data.|  
+    |<xref:System.Windows.Controls.Primitives.Selector.SelectedValuePath%2A>|Visual Studio sets this property to the path of the column or property of the child data that is the foreign key to the parent data.|  
   
-## Siehe auch  
- [Binden von WPF\-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
- [Gewusst wie: Binden von WPF\-Steuerelementen an Daten in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
- [Gewusst wie: Anzeigen verknüpfter Daten in WPF\-Anwendungen](../data-tools/display-related-data-in-wpf-applications.md)   
- [Exemplarische Vorgehensweise: Anzeigen verknüpfter Daten in einer WPF\-Anwendung](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)
+## <a name="see-also"></a>See Also  
+ [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)   
+ [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)   
+ [Display related data in WPF applications](../data-tools/display-related-data-in-wpf-applications.md)   
+ [Walkthrough: Displaying Related Data in a WPF Application](../data-tools/display-related-data-in-wpf-applications.md)
