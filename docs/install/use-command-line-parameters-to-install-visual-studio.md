@@ -32,10 +32,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 90e19f6e693733162065754b441fb213fd0bd9f8
+ms.sourcegitcommit: 223750aef8d997c6ae017f49ea0a9522bdba72bc
+ms.openlocfilehash: 2b702407996fd104b62d9b8c6874d7914d7bd2e8
 ms.contentlocale: de-de
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/10/2017
 
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio 2017
@@ -95,7 +95,6 @@ Die Befehlszeilenoptionen werden in Verbindung mit dem Setup-Bootstrapper, die k
 | `--includeRecommended` | **Optional**: Enthält die empfohlenen Komponenten für alle zu installierenden Arbeitsauslastungen, aber keine optionalen Komponenten. Die Workloads werden entweder mit `--allWorkloads` oder `--add` angegeben. |
 | `--includeOptional` | **Optional**: Schließt die empfohlenen *und* optionalen Komponenten für alle Workloads in das Layout ein. Die Workloads werden mit `--add` angegeben.  |
 
-
 | **Erweiterte Installationsoptionen** | **Beschreibung** |
 | ----------------------- | --------------- |
 | `--channelId <id>` | **Optional**: Die ID des Kanals für die Instanz, die installiert wird. Diese Option ist für den Befehl „install“ erforderlich und kann für andere Befehle ignoriert werden, wenn `--installPath` angegeben ist. |
@@ -107,6 +106,7 @@ Die Befehlszeilenoptionen werden in Verbindung mit dem Setup-Bootstrapper, die k
 | `--locale <language-locale>` | **Optional**: Ändert die Anzeigesprache der Benutzeroberfläche für den Installer selbst. Die Einstellung wird beibehalten. Weitere Informationen finden Sie im Abschnitt [Liste der Gebietsschemas](#list-of-language-locales) dieser Seite.|
 | `--cache` | **Neu in 15.2 (optional)**: Falls vorhanden, werden Pakete nach ihrer Installation für nachfolgende Reparaturen gespeichert. Dies überschreibt die globale Richtlinieneinstellung für nachfolgende Installationen, Reparaturen und Änderungen. Die Standardrichtlinie sieht das Zwischenspeichern von Paketen im Cache vor. Dies wird für den Deinstallationsbefehl ignoriert. Unter [Deaktivieren oder Verschieben des Paketcaches](disable-or-move-the-package-cache.md) finden Sie weitere Informationen. |
 | `--nocache` | **Neu in 15.2 (optional)**: Falls vorhanden, werden Pakete nach ihrer Installation oder Reparatur gelöscht. Sie werden nur bei Bedarf erneut heruntergeladen und nach ihrer Verwendung wieder gelöscht. Dies überschreibt die globale Richtlinieneinstellung für nachfolgende Installationen, Reparaturen und Änderungen. Die Standardrichtlinie sieht das Zwischenspeichern von Paketen im Cache vor. Dies wird für den Deinstallationsbefehl ignoriert. Unter [Deaktivieren oder Verschieben des Paketcaches](disable-or-move-the-package-cache.md) finden Sie weitere Informationen. |
+| `--noUpdateInstaller` | **Neu in 15.2, optional**: Falls vorhanden, hindert den Installer daran, sich selbst zu aktualisieren, wenn „quiet“ angegeben ist. Der Befehl wird für den Installer einen Fehler auslösen, und der Installer gibt einen Exitcode ungleich 0 (null) zurück, falls „noUpdateInstaller“ mit „quiet“ angegeben wird, wenn ein Installerupdate erforderlich ist. |
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>Liste der Arbeitsauslastungs-IDs und Komponenten-IDs
 Eine Liste der Arbeitsauslastungs- und Komponenten-IDs, sortiert nach Visual Studio-Produkt, finden Sie auf der Seite [Arbeitsauslastungs- und Komponenten-IDs in Visual Studio 2017](workload-and-component-ids.md).

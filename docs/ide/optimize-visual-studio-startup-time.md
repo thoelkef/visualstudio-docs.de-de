@@ -18,15 +18,17 @@ manager: ghogen
 f1_keywords:
 - vs.performancecenter
 ms.translationtype: HT
-ms.sourcegitcommit: 3037d92e9de377ab4b306a5a0e164e29fa6659e7
-ms.openlocfilehash: 5448253ae93b82a2631e6c48495a31d2724ed0b7
+ms.sourcegitcommit: fe6d864baf518cba882cea8e985fdacbfdf5b8b2
+ms.openlocfilehash: f4e915655ffe11f28c071864cb2cbd68dc799881
 ms.contentlocale: de-de
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/09/2017
 
 ---
 
 # <a name="optimize-visual-studio-startup-time"></a>Optimieren der Startzeit von Visual Studio
 Im Idealfall sollte Visual Studio immer so schnell wie möglich starten. Allerdings können sich Visual Studio-Erweiterungen und geöffnete Toolfenster negativ auf die Startzeit auswirken, da sie beim Start automatisch geladen werden. Im Fenster **Visual Studio-Leistung verwalten** können Sie sehen, welche Erweiterungen und Features sich auf die Startzeit von Visual Studio auswirken, und das Ladeverhalten dieser Erweiterungen und Features steuern.
+
+Allgemeiner Tipps zum Verbessern der Leistung finden Sie unter [Visual Studio Performance Tips and Tricks (Tipps und Tricks zur Leistungssteigerung für Visual Studio)](../ide/visual-studio-performance-tips-and-tricks.md).
 
 ## <a name="control-startup-behavior"></a>Steuern des Startverhaltens
 
@@ -98,4 +100,7 @@ Die meisten Funktionen der IDE stehen bei aktiviertem Lightweight-Ladevorgang f�
 - Einige Erweiterungen von Drittanbietern verhalten sich womöglich nicht wie erwartet, wenn der Ladevorgang für Projektmappen aktiviert ist.
 - Bearbeiten und Fortfahren funktioniert nicht in Projekten, die beim Beginnen des Debuggens nicht geladen sind. Die in einem solchen Projekt enthaltenen Dateien sind schreibgeschützt, und beim Versuch einer Bearbeitung wird ein Fehler angezeigt, dass das Projekt nicht geladen wurde.
 - Wenn das Laden einer Lightweight-Lösung aktiviert ist, werden F#-Projekte möglicherweise nicht ordnungsgemäß erstellt und Symbole sind in „GoTo“ möglicherweise nicht uneingeschränkt verfügbar.
+
+## <a name="see-also"></a>Siehe auch
+[Visual Studio Performance Tips and Tricks (Tipps und Tricks zur Leistungssteigerung für Visual Studio)](../ide/visual-studio-performance-tips-and-tricks.md)
 
