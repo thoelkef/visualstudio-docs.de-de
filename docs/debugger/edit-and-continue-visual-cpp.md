@@ -1,81 +1,103 @@
 ---
-title: "Bearbeiten und Fortfahren (Visual&#160;C++) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "C/C++, Bearbeiten und Fortfahren"
-  - "Debuggen [C++], Bearbeiten und Fortfahren"
-  - "Bearbeiten und Fortfahren [C++]"
+title: Edit and Continue (Visual C++) | Microsoft Docs
+ms.custom: 
+ms.date: 05/31/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- Edit and Continue [C++]
+- debugging [C++], Edit and Continue
+- C/C++, Edit and Continue
 ms.assetid: 1815251e-a877-433e-9e5e-69bd9ba254c7
 caps.latest.revision: 25
-caps.handback.revision: 25
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# Bearbeiten und Fortfahren (Visual&#160;C++)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: d5d795da17e8446bc86417dc302e1df4935a92f4
+ms.contentlocale: de-de
+ms.lasthandoff: 08/22/2017
 
-Sie können „Bearbeiten und Fortfahren“ in Visual C\+\+\-Projekten verwenden. Informationen zu den Einschränkungen von „Bearbeiten und Fortfahren“ finden Sie unter [Unterstützte Codeänderungen und \-einschränkungen \(C\+\+\)](../debugger/supported-code-changes-cpp.md)  
+---
+# <a name="edit-and-continue-visual-c"></a>Edit and Continue (Visual C++)
+You can use Edit and Continue in Visual C++ projects. See [Supported Code Changes (C++)](../debugger/supported-code-changes-cpp.md) for information about the limitations of Edit and Continue.
   
- Ab Visual Studio 2015 Update 1 können Sie „Bearbeiten und Fortfahren“ in Windows Store C\+\+\- und DirectX\-Apps verwenden, da jetzt der **\/ZI**\-Compilerschalter mit dem **\/bigobj**\-Schalter unterstützt wird. Sie können „Bearbeiten und Fortfahren“ auch mit Binärdateien verwenden, die mit dem **\/FASTLINK**\-Schalter kompiliert wurden.  
+For more information about Visual Studio 2015 Update 3 improvements, see [C++ Edit and Continue in Visual Studio 2015 Update 3](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/).  
   
- Weitere Update 1\-Verbesserungen sind ein neues Wartedialogfeld, das abgebrochen werden kann, sowie eine Benachrichtigung für den Fall, dass „Bearbeiten und Fortfahren“ für eine Datei nicht unterstützt wird. Weitere Informationen zu Update 1\-Verbesserungen, finden Sie unter [Improvements for C\+\+ Edit and Continue in Visual Studio 2015 Update 1](http://blogs.msdn.com/b/vcblog/archive/2015/11/30/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1.aspx).  
+ The [/Zo (Enhance Optimized Debugging)](/cpp/build/reference/zo-enhance-optimized-debugging) compiler option that was introduced in Visual Studio 2013 Update 3 adds additional information to .pdb (symbol) files for binaries compiled without the [/Od (Disable (Debug))](http://msdn.microsoft.com/library/aafb762y.aspx) option.  
   
-Die Compileroption [\/Zo \(optimiertes Debuggen verbessern\)](/visual-cpp/build/reference/zo-enhance-optimized-debugging), die in Visual Studio 2013 Update 3 eingeführt wurde, fügt weitere Informationen zu PDB\-Dateien \(Symboldateien\) für Binärdateien hinzu, die ohne die Option [\/Od \(Deaktivieren \(Debuggen\)\)](http://msdn.microsoft.com/library/aafb762y.aspx) kompiliert wurden.  
+ **/Zo** disables Edit and Continue. See [How to: Debug Optimized Code](../debugger/how-to-debug-optimized-code.md).  
   
-**\/Zo** deaktiviert „Bearbeiten und Fortfahren“. Weitere Informationen finden Sie unter [Gewusst wie: Debuggen von optimiertem Code](../debugger/how-to-debug-optimized-code.md).  
+##  <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> Enable or disable Edit and Continue  
+ You may want to  disable the automatic invocation of Edit and Continue if you are making edits to the code that you do not want applied during the current debugging session. You can also re-enable automatic Edit and Continue.
+
+> [!IMPORTANT]
+> For required build settings and other information about feature compatibility, see [C++ Edit and Continue in Visual Studio 2015 Update 3](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/.
   
-## <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a>Aktivieren oder Deaktivieren von „Bearbeiten und Fortfahren“  
-Möglicherweise möchten Sie das automatische Aufrufen von „Bearbeiten und Fortfahren“ deaktivieren, wenn Sie Änderungen am Code vornehmen, die nicht während der aktuellen Debugsitzung angewendet werden sollen. Sie können das automatische Aufrufen von „Bearbeiten und Fortfahren“ später wieder aktivieren.  
+1.  If you are in a debugging session, stop debugging (**Shift + F5**).
+
+2. On the **Tools** menu, choose **Options**.
   
-1.  Wählen Sie im Menü **Extras** den Befehl **Optionen**.  
+3.  In the **Options** dialog box, select **Debugging > General**.
+
+4.  To enable, select **Enable Edit and Continue**. To disable, clear the checkbox.
   
-2.  Wählen Sie im Dialogfeld **Optionen** den Eintrag **Debugging \/ Allgemein** aus.  
+5.  In the **Edit and Continue** group, select or clear the **Enable Native Edit and Continue** check box.  
   
-3.  Aktivieren bzw. deaktivieren Sie in der Gruppe **Bearbeiten und Fortfahren** das Kontrollkästchen **Bearbeiten und Fortfahren aktivieren**.  
+ Altering this setting affects all projects you work on. You do not need to rebuild your application after changing this setting. If you build your application from the command line or from a makefile, but you debug in the Visual Studio environment, you can still use Edit and Continue if you set the **/ZI** option.  
   
-Eine Änderung dieser Einstellung betrifft alle Projekte, an denen Sie arbeiten. Sie müssen die Anwendung nicht neu erstellen, nachdem Sie die Einstellung geändert haben. Sie können die Einstellung sogar ändern, während Sie debuggen. Wenn Sie die Anwendung über die Befehlszeile oder mit einem Makefile erstellen, jedoch in der Visual Studio\-Umgebung debuggen, können Sie die Option „Bearbeiten und Fortfahren“ trotzdem verwenden, sofern Sie die **\/ZI**\-Option festlegen.  
+##  <a name="BKMK_How_to_apply_code_changes_explicitly"></a> How to apply code changes explicitly  
+ In Visual C++, Edit and Continue can apply code changes in two ways. Code changes can be applied implicitly, when you choose an execution command, or explicitly, using the **Apply Code Changes** command.  
   
-## <a name="BKMK_How_to_apply_code_changes_explicitly"></a>Gewusst wie: Explizites Übernehmen von Codeänderungen  
-In Visual C\+\+ kann „Bearbeiten und Fortfahren“ Codeänderungen auf zweierlei Weise übernehmen. Codeänderungen können implizit übernommen werden, wenn Sie einen Ausführungsbefehl wählen, oder explizit, wenn Sie den Befehl **Codeänderungen übernehmen** verwenden.  
+ When you apply code changes explicitly, your program remains in break mode - no execution occurs.  
   
-Wenn Sie Codeänderungen explizit übernehmen, bleibt das Programm im Unterbrechungsmodus und wird nicht ausgeführt.  
+-   To apply code changes explicitly, on the **Debug** menu, choose **Apply Code Changes**.  
   
--   Um Codeänderungen explizit zu übernehmen, wählen Sie im Menü **Debuggen** die Option **Codeänderungen übernehmen**.  
+##  <a name="BKMK_How_to_stop_code_changes"></a> How to stop code changes  
+ While Edit and Continue is in the process of applying code changes, you can stop the operation.  
   
-## <a name="BKMK_How_to_stop_code_changes"></a>Gewusst wie: Anhalten von Codeänderungen  
-Während Bearbeiten und Fortfahren Codeänderungen übernimmt, können Sie den Vorgang anhalten.  
+ To stop applying code changes:  
   
-So halten Sie das Übernehmen von Codeänderungen an:  
+-   On the **Debug** menu, choose **Stop Applying Code Changes**.  
   
--   Wählen Sie im Menü **Debuggen** die Option **Übernehmen von Codeänderungen beenden**.  
+ This menu item is visible only when code changes are being applied.  
   
-Dieses Menüelement ist nur sichtbar, wenn Codeänderungen übernommen werden.  
+ If you choose this option, none of the code changes are committed.  
   
-Bei Verwendung dieser Option wird keine der Codeänderungen übernommen.  
+##  <a name="BKMK_How_to_reset_the_point_of_execution"></a> How to reset the point of execution  
+ Some code changes can cause the point of execution to move to a new location when Edit and Continue applies the changes. Edit and Continue places the point of execution as accurately as possible, but the results may not be correct in all cases.  
   
-## <a name="BKMK_How_to_reset_the_point_of_execution"></a>Gewusst wie: Zurücksetzen des Ausführungspunkts  
-Einige Codeänderungen können dazu führen, dass der Ausführungspunkt an eine neue Position verschoben wird, wenn die Änderung von "Bearbeiten und Fortfahren" übernommen wird. Mit "Bearbeiten und Fortfahren" wird der Ausführungspunkt so genau wie möglich platziert. Das Ergebnis ist jedoch möglicherweise nicht korrekt.  
+ In Visual C++, a dialog box informs you when the point of execution changes. You should verify that the location is correct before you continue debugging. If it is not correct, use the **Set Next Statement** command. For more information, see [Set the next statement to execute](http://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute).  
   
-In Visual C\+\+ werden Sie durch ein Dialogfeld über eine Änderung des Ausführungspunkts informiert. Überprüfen Sie, ob die Position richtig ist, bevor Sie das Debuggen fortsetzen. Ist die Position nicht korrekt, verwenden Sie den Befehl **Nächste Anweisung festlegen**. Weitere Informationen finden Sie unter [Nächste auszuführende Anweisung festlegen](http://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute).  
+##  <a name="BKMK_How_to_work_with_stale_code"></a> How to work with stale code  
+ In some cases, Edit and Continue cannot apply code changes to the executable immediately, but might be able to apply the code changes later if you continue debugging. This happens if you edit a function that calls the current function or if you add more than 64 bytes of new variables to a function on the call stack  
   
-## <a name="BKMK_How_to_work_with_stale_code"></a>Gewusst wie: Arbeiten mit veraltetem Code  
-In einigen Fällen kann Bearbeiten und Fortfahren die Codeänderungen nicht sofort in die ausführbare Datei übernehmen, dies aber möglicherweise zu einem späteren Zeitpunkt nachholen, wenn Sie mit dem Debuggen fortfahren. Dies geschieht, wenn Sie eine Funktion bearbeiten, die die aktuelle Funktion aufruft, bzw. wenn Sie einer Funktion in der Aufrufliste neue Variablen von mehr als 64 Bytes hinzufügen.  
+ In such cases, the debugger continues executing the original code until the changes can be applied. The stale code appears as a temporary source file window in a separate source window, with a title such as `enc25.tmp`. The edited source continues to appear in the original source window. If you try to edit the stale code, a warning message appears.  
   
-In diesen Fällen fährt der Debugger so lange mit der Ausführung des ursprünglichen Codes fort, bis die Änderungen übernommen werden können. Der veraltete Code wird als temporäre Quelldatei in einem separaten Quellcodefenster angezeigt, mit einem Titel wie `enc25.tmp`. Der bearbeitete Quellcode wird weiterhin im ursprünglichen Quellcodefenster angezeigt. Wenn Sie versuchen, den veralteten Code zu bearbeiten, wird eine Warnmeldung angezeigt.  
-  
-## Siehe auch  
-[Unterstützte Codeänderungen und \-einschränkungen \(C\+\+\)](../debugger/supported-code-changes-cpp.md)
+## <a name="see-also"></a>See Also  
+ [Supported Code Changes (C++)](../debugger/supported-code-changes-cpp.md)

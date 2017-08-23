@@ -1,123 +1,140 @@
 ---
-title: "Exemplarische Vorgehensweise: Erstellen eines Windows Forms zum Suchen von Daten | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "Daten [Visual Studio], Parametrisieren von Abfragen"
-  - "Daten [Visual Studio], Suchen"
-  - "Parameter, Anzeigen von gefilterten Daten"
-  - "Windows Forms, Anzeigen von Daten"
-  - "Windows Forms, Suchen nach Daten"
+title: Create a Windows Form to search data | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- aspx
+helpviewer_keywords:
+- Windows Forms, searching data
+- Windows Forms, displaying data
+- parameters, displaying filtered data
+- data [Visual Studio], paramaterizing queries
+- data [Visual Studio], searching
 ms.assetid: 65ca79a9-7458-466c-af55-978cd24c549e
 caps.latest.revision: 28
-caps.handback.revision: 25
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: f89cd3db830dfc3e2a2825044bac1eb4fece75da
+ms.contentlocale: de-de
+ms.lasthandoff: 08/22/2017
+
 ---
-# Exemplarische Vorgehensweise: Erstellen eines Windows Forms zum Suchen von Daten
-Es kommt häufig vor, dass ausgewählte Daten auf einem Formular angezeigt werden,  Angenommen, Sie möchten die Bestellungen für einen bestimmten Kunden oder die Details für eine bestimmte Bestellung anzeigen.  In diesem Szenario gibt der Benutzer zunächst Informationen in ein Formular ein. Anschließend wird eine Abfrage mit der Eingabe des Benutzers als Parameter ausgeführt, d. h. die Daten werden auf der Grundlage einer parametrisierten Abfrage ausgewählt.  Die Abfrage gibt nur die Daten zurück, die den vom Benutzer eingegebenen Kriterien entsprechen.  Diese exemplarische Vorgehensweise veranschaulicht das Erstellen einer Abfrage, die Kunden in einer bestimmten Stadt zurückgibt, sowie das Anpassen der Benutzeroberfläche, damit Benutzer eine Stadt eingeben und zum Ausführen der Abfrage auf eine Schaltfläche klicken können.  
+# <a name="create-a-windows-form-to-search-data"></a>Create a Windows Form to search data
+A common application scenario is to display selected data on a form. For example, you might want to display the orders for a specific customer or the details of a specific order. In this scenario, a user enters information into a form, and then a query is executed with the user's input as a parameter; that is, the data is selected based on a parameterized query. The query returns only the data that satisfies the criteria entered by the user. This walkthrough shows how to create a query that returns customers in a specific city, and modify the user interface so that users can enter a city's name and press a button to execute the query.  
   
- Durch die Verwendung parametrisierter Abfragen wird die Effizienz der Anwendung erhöht, weil die Datenbank die Arbeit ausführt, für die sie optimiert ist, nämlich die schnelle Filterung von Datensätzen.  Wenn Sie dagegen eine ganze Datenbanktabelle anfordern, sie über das Netzwerk übertragen und dann mit der Anwendungslogik die gewünschten Datensätze suchen, wird die Anwendung langsam und ineffizient.  
+ Using parameterized queries helps make your application efficient by letting the database do the work it is best at — quickly filtering records. In contrast, if you request an entire database table, transfer it over the network, and then use application logic to find the records you want, your application can become slow and inefficient.  
   
- Mit [Dialogfeld "Suchkriterien\-Generator"](../Topic/Search%20Criteria%20Builder%20Dialog%20Box.md) können Sie jedem TableAdapter parametrisierte Abfragen hinzufügen \(sowie Steuerelemente, die Parameterwerte annehmen und die Abfrage ausführen\).  Öffnen Sie das Dialogfeld, indem Sie im Menü **Daten** \(bzw. in einem TableAdapter\-Smarttag\) den Befehl **Abfrage hinzufügen** auswählen.  
+ You can add parameterized queries to any TableAdapter (and controls to accept parameter values and execute the query), using the **Search Criteria Builder** dialog box. Open the dialog box by selecting the **Add Query** command on the **Data** menu (or on any TableAdapter smart tag).  
   
- In dieser exemplarischen Vorgehensweise werden u. a. folgende Aufgaben veranschaulicht:  
+ Tasks illustrated in this walkthrough include:  
   
--   Erstellen eines neuen Projekts vom Typ **Windows\-Anwendung**.  
+-   Creating a new Windows Forms Application project.  
   
--   Erstellen und Konfigurieren der Datenquelle in Ihrer Anwendung mit dem [Assistent zum Konfigurieren von Datenquellen](../data-tools/media/data-source-configuration-wizard.png).  
+-   Creating and configuring the data source in your application with the **Data Source Configuration** wizard.  
   
--   Festlegen des Ablagetyps von Elementen im [Datenquellenfenster](../Topic/Data%20Sources%20Window.md).  Weitere Informationen finden Sie unter [Festlegen des Steuerelements, das beim Ziehen aus dem Datenquellenfenster erstellt werden soll](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+-   Setting the drop type of the items in the **Data Sources**window.  
   
--   Erstellen von Steuerelementen, mit denen Daten angezeigt werden, indem Elemente aus dem **Datenquellenfenster** auf ein Formular gezogen werden.  
+-   Creating controls that display data by dragging items from the **Data Sources** window onto a form.  
   
--   Hinzufügen von Steuerelementen zum Anzeigen der Daten auf dem Formular.  
+-   Adding controls to display the data on the form.  
   
--   Abschließen von [Dialogfeld "Suchkriterien\-Generator"](../Topic/Search%20Criteria%20Builder%20Dialog%20Box.md).  
+-   Completing the **Search Criteria Builder** dialog box.  
   
--   Eingeben von Parametern in das Formular und Ausführen der parametrisierten Abfrage.  
+-   Entering parameters into the form and executing the parameterized query.  
   
-## Vorbereitungsmaßnahmen  
- Für die Durchführung dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:  
+## <a name="prerequisites"></a>Prerequisites  
+ In order to complete this walkthrough, you need:  
   
--   Zugriff auf die Beispieldatenbank Northwind.  Weitere Informationen finden Sie unter [Gewusst wie: Installieren von Beispieldatenbanken](../data-tools/how-to-install-sample-databases.md).  
+-   Access to the Northwind sample database.  
   
-## Erstellen der Windows\-Anwendung  
- Im ersten Schritt wird eine **Windows\-Anwendung** erstellt.  Zu diesem Zeitpunkt ist es nicht erforderlich, dem Projekt einen Namen zuzuweisen. Wir führen diesen Schritt dennoch aus, weil wir das Projekt später speichern möchten.  
+## <a name="create-the-windows-application"></a>Create the Windows Application  
+ The first step is to create a **Windows Application**. Assigning a name to the project is optional at this step, but you'll give it a name here because you'll save it later.  
   
-#### So erstellen Sie das neue Windows\-Anwendungsprojekt  
+#### <a name="to-create-the-new-windows-application-project"></a>To create the new Windows Application project  
   
-1.  Erstellen Sie über das Menü **Datei** ein neues Projekt.  
+1.  From the **File** menu, create a new project.  
   
-2.  Weisen Sie dem Projekt den Namen `WindowsSearchForm` zu.  
+2.  Name the project `WindowsSearchForm`.  
   
-3.  Wählen Sie **Windows\-Anwendung** aus, und klicken Sie auf **OK**.  Weitere Informationen finden Sie unter [Clientanwendungen](../Topic/Developing%20Client%20Applications%20with%20the%20.NET%20Framework.md).  
+3.  Select **Windows Application** and click **OK**.  
   
-     Das Projekt **WindowsSearchForm** wird erstellt und dem **Projektmappen\-Explorer** hinzugefügt.  
+     The **WindowsSearchForm** project is created and added to **Solution Explorer**.  
   
-## Erstellen der Datenquelle  
- Bei diesem Schritt wird eine Datenquelle aus einer Datenbank erstellt. Hierbei wird der **Assistent zum Konfigurieren von Datenquellen** verwendet.  Sie benötigen Zugriff auf die Beispieldatenbank Northwind, um die Verbindung herstellen zu können.  Informationen zum Einrichten der Beispieldatenbank Northwind finden Sie unter [Gewusst wie: Installieren von Beispieldatenbanken](../data-tools/how-to-install-sample-databases.md).  
+## <a name="create-the-data-source"></a>Create the data source  
+ This step creates a data source from a database using the **Data Source Configuration** wizard. You must have access to the Northwind sample database to create the connection. For information on setting up the Northwind sample database, see [Install SQL Server sample databases](../data-tools/install-sql-server-sample-databases.md).  
   
-#### So erstellen Sie die Datenquelle  
+#### <a name="to-create-the-data-source"></a>To create the data source  
   
-1.  Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**.  
+1.  On the **Data** menu, click **Show Data Sources**.  
   
-2.  Wählen Sie im **Datenquellenfenster** die Option **Neue Datenquelle hinzufügen** aus, um den **Assistenten zum Konfigurieren von Datenquellen** zu starten.  
+2.  In the **Data Sources** window, select **Add New Data Source** to start the **Data Source Configuration** wizard.  
   
-3.  Wählen Sie auf der Seite **Datenquellentyp auswählen** die Option **Datenbank** aus, und klicken Sie auf **Weiter**.  
+3.  Select **Database** on the **Choose a Data Source Type** page, and then click **Next**.  
   
-4.  Führen Sie auf der Seite **Wählen Sie Ihre Datenverbindung** einen der folgenden Schritte aus:  
+4.  On the **Choose your Data Connection** page do one of the following:  
   
-    -   Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank "Northwind" verfügbar ist, wählen Sie diese aus.  
+    -   If a data connection to the Northwind sample database is available in the drop-down list, select it.  
   
-         \- oder \-  
+    -   Select **New Connection** to launch the **Add/Modify Connection** dialog box.  
   
-    -   Wählen Sie **Neue Verbindung**, um das Dialogfeld **Verbindung hinzufügen\/ändern** zu öffnen.  
+5.  If your database requires a password, select the option to include sensitive data, and then click **Next**.  
   
-5.  Falls die Datenbank ein Kennwort erfordern sollte, aktivieren Sie die Option für die Einbeziehung vertraulicher Daten, und klicken Sie dann auf **Weiter**.  
+6.  On the **Save connection string to the Application Configuration file** page, click **Next**.  
   
-6.  Klicken Sie auf der Seite **Verbindungszeichenfolge in der Programmkonfigurationsdatei speichern** auf **Weiter**.  
+7.  On the **Choose your Database Objects** page, expand the **Tables** node.  
   
-7.  Erweitern Sie auf der Seite **Datenbankobjekte auswählen** den Knoten **Tabellen**.  
+8.  Select the **Customers** table, and then click **Finish**.  
   
-8.  Wählen Sie die Tabelle **Customers** aus, und klicken Sie anschließend auf **Fertig stellen**.  
+     The **NorthwindDataSet** is added to your project, and the **Customers** table appears in the **Data Sources** window.  
   
-     **NorthwindDataSet** wird dem Projekt hinzugefügt, und die **Customers**\-Tabelle wird im **Datenquellenfenster** angezeigt.  
+## <a name="create-the-form"></a>Create the form  
+ You can create the data-bound controls by dragging items from the **Data Sources** window onto your form.  
   
-## Erstellen des Formulars  
- Sie können die datengebundenen Steuerelemente erstellen, indem Sie Elemente aus dem **Datenquellenfenster** auf das Formular ziehen.  
+#### <a name="to-create-data-bound-controls-on-the-form"></a>To create data-bound controls on the form  
   
-#### So erstellen Sie datengebundene Steuerelemente auf dem Formular  
+1.  Expand the **Customers** node in the **Data Sources** window.  
   
-1.  Erweitern Sie im **Datenquellenfenster** den Knoten **Customers**.  
+2.  Drag the **Customers** node from the **Data Sources** window to your form.  
   
-2.  Ziehen Sie den Knoten **Customers** aus dem **Datenquellenfenster** auf das Formular.  
+     A <xref:System.Windows.Forms.DataGridView> and a tool strip (<xref:System.Windows.Forms.BindingNavigator>) for navigating records appear on the form. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource>, and <xref:System.Windows.Forms.BindingNavigator> appear in the component tray.  
   
-     Auf dem Formular werden <xref:System.Windows.Forms.DataGridView> und ein ToolStrip\-Element \(<xref:System.Windows.Forms.BindingNavigator>\) angezeigt, mit denen Sie durch die Datensätze auf dem Formular navigieren können.  [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), [CustomersTableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource> und <xref:System.Windows.Forms.BindingNavigator> werden auf der Komponentenleiste angezeigt.  
+## <a name="add-parameterization-search-functionality-to-the-query"></a>Add parameterization (search functionality) to the query  
+ You can add a WHERE clause to the original query using the **Search Criteria Builder** dialog box.  
   
-## Hinzufügen von Parametrisierung \(Suchfunktionen\) zur Abfrage  
- Sie können der ursprünglichen Abfrage mithilfe von [Dialogfeld "Suchkriterien\-Generator"](../Topic/Search%20Criteria%20Builder%20Dialog%20Box.md) eine WHERE\-Klausel hinzufügen.  
+#### <a name="to-create-a-parameterized-query-and-controls-to-enter-the-parameters"></a>To create a parameterized query and controls to enter the parameters  
   
-#### So erstellen Sie eine parametrisierte Abfrage sowie Steuerelemente zur Eingabe der Parameter  
+1.  Select the <xref:System.Windows.Forms.DataGridView> control, and then choose **Add Query** on the **Data** menu.  
   
-1.  Wählen Sie das <xref:System.Windows.Forms.DataGridView>\-Steuerelement aus. Wählen Sie anschließend im Menü **Daten** die Option **Abfrage hinzufügen** aus.  
+2.  Type `FillByCity` in the **New query name** area on the **Search Criteria Builder** dialog box.  
   
-2.  Geben Sie im [Dialogfeld "Suchkriterien\-Generator"](../Topic/Search%20Criteria%20Builder%20Dialog%20Box.md) im Bereich **Neuer Abfragename** die Zeichenfolge `FillByCity` ein.  
+3.  Add `WHERE City = @City` to the query in the **Query Text** area.  
   
-3.  Fügen Sie der Abfrage im Bereich **Abfragetext** die Zeichenfolge `WHERE City = @City` hinzu.  
-  
-     Die Abfrage müsste ungefähr wie folgt aussehen:  
+     The query should be similar to the following:  
   
      `SELECT CustomerID, CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax`  
   
@@ -126,34 +143,29 @@ Es kommt häufig vor, dass ausgewählte Daten auf einem Formular angezeigt werde
      `WHERE City = @City`  
   
     > [!NOTE]
-    >  Access\- und OleDb\-Datenquellen verwenden das Fragezeichen \(?\) zur Angabe von Parametern, sodass die WHERE\-Klausel wie folgt aussieht: `WHERE City = ?`.  
+    >  Access and OLE DB data sources use the question mark ('?') to denote parameters, so the WHERE clause would look like this: `WHERE City = ?`.  
   
-4.  Klicken Sie auf **OK**, um das Dialogfeld **Suchkriterien\-Generator** zu schließen.  
+4.  Click **OK** to close the **Search Criteria Builder** dialog box.  
   
-     Dem Formular wird ein **FillByCityToolStrip** hinzugefügt.  
+     A **FillByCityToolStrip** is added to the form.  
   
-## Testen der Anwendung  
- Beim Ausführen der Anwendung wird das Formular geöffnet, das zur Übernahme der Parametereingabe bereit ist.  
+## <a name="testing-the-application"></a>Testing the application  
+ Running the application opens your form ready to take the parameter as input.  
   
-#### So testen Sie die Anwendung  
+#### <a name="to-test-the-application"></a>To test the application  
   
-1.  Drücken Sie F5, um die Anwendung auszuführen.  
+1.  Press F5 to run the application.  
   
-2.  Geben Sie London in das Textfeld **City** ein, und klicken Sie dann auf **FillByCity**.  
+2.  Type **London** into the **City** text box, and then click **FillByCity**.  
   
-     Das Datenblatt wird mit den Kunden gefüllt, die die Parametrisierungskriterien erfüllen.  In diesem Beispiel zeigt das Datenblatt nur Kunden an, die den Wert **London** in der Spalte **City** aufweisen.  
+     The data grid is populated with customers that meet the criteria. In this example, the data grid only displays customers that have a value of **London** in their **City** column.  
   
-## Nächste Schritte  
- Je nach den Anforderungen der Anwendung können nach dem Erstellen eines parametrisierten Formulars weitere Schritte sinnvoll sein.  Sie können an dieser exemplarischen Vorgehensweise beispielsweise folgende Verbesserungen vornehmen:  
+## <a name="next-steps"></a>Next Steps  
+ Depending on your application requirements, there are several steps you may want to perform after creating a parameterized form. Some enhancements you could make to this walkthrough include:  
   
--   Hinzufügen von Steuerelementen, die verknüpfte Daten anzeigen.  Weitere Informationen finden Sie unter [Gewusst wie: Anzeigen von verknüpften Daten in einer Windows Forms\-Anwendung](../data-tools/how-to-display-related-data-in-a-windows-forms-application.md).  
+-   Adding controls that display related data. For more information, see [Relationships in Datasets](relationships-in-datasets.md).  
   
--   Hinzufügen oder Entfernen von Datenbankobjekten aus dem Dataset durch Bearbeiten.  Weitere Informationen finden Sie unter [Gewusst wie: Bearbeiten eines Datasets](../Topic/How%20to:%20Edit%20a%20Dataset.md).  
+-   Editing the dataset to add or remove database objects. For more information, see [Create and configure datasets](../data-tools/create-and-configure-datasets-in-visual-studio.md).  
   
-## Siehe auch  
- [Exemplarische Vorgehensweisen zur Arbeit mit Daten](../Topic/Data%20Walkthroughs.md)   
- [Binden von Windows Forms\-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Übersicht über Datenquellen](../data-tools/add-new-data-sources.md)   
- [Übersicht über TableAdapters](../data-tools/tableadapter-overview.md)   
- [Übersicht über die BindingSource\-Komponente](../Topic/BindingSource%20Component%20Overview.md)   
- [Übersicht über das BindingNavigator\-Steuerelement](../Topic/BindingNavigator%20Control%20Overview%20\(Windows%20Forms\).md)
+## <a name="see-also"></a>See Also  
+ [Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
