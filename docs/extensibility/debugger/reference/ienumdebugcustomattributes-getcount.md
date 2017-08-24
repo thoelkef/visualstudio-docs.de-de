@@ -1,51 +1,68 @@
 ---
-title: "IEnumDebugCustomAttributes::GetCount | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumCustomAttributes::GetCount"
-helpviewer_keywords: 
-  - "IEnumDebugCustomAttributes::GetCount"
+title: IEnumDebugCustomAttributes::GetCount | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IEnumCustomAttributes::GetCount
+helpviewer_keywords:
+- IEnumDebugCustomAttributes::GetCount
 ms.assetid: fafe826f-4ebf-4572-b2a3-d5dd2916c12f
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IEnumDebugCustomAttributes::GetCount
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 852cc1b95e9633106ce3afe963e85892ecf89dfb
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Ruft die Anzahl von benutzerdefinierten Attributen in einem Enumerator ab.  
+---
+# <a name="ienumdebugcustomattributesgetcount"></a>IEnumDebugCustomAttributes::GetCount
+Gets the number of custom attributes in an enumerator.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetCount(   
-   ULONG* pcelt  
+HRESULT GetCount(   
+   ULONG* pcelt  
 );  
 ```  
   
-```c#  
+```cs  
 int GetCount(  
-   out uint pcelt  
+   out uint pcelt  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `pcelt`  
- \[out\]  Gibt die Anzahl der Elemente in der Enumeration zurück.  
+ [out] Returns the number of elements in the enumeration.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Hinweise  
- Diese Methode ist nicht Teil der üblichen COM\-Enumerations Oberfläche, die dies nur `Next`, `Clone`, und `Skip`Anforderung angibt `Reset` implementiert werden.  
+## <a name="remarks"></a>Remarks  
+ This method is not part of the customary COM enumeration interface which specifies that only `Next`, `Clone`, `Skip`, and `Reset` need to be implemented.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

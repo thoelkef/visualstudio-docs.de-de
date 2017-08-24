@@ -1,5 +1,5 @@
 ---
-title: 'Exemplarische Vorgehensweise: Verwenden eines Shell-Befehls mit der Erweiterung Editor | Microsoft-Dokumentation'
+title: 'Walkthrough: Using a Shell Command with an Editor Extension | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -28,75 +28,76 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 14ac62df46d3edaa93a18d5d2a2e717c7f0ba2de
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 395c5fb4666e13213990241604b7a7934b5ca240
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
 ---
-# <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>Exemplarische Vorgehensweise: Verwenden eines Shell-Befehls mit der Erweiterung-Editor
-In einem VSPackage können Sie Funktionen wie z. B. Menübefehle zum Editor hinzufügen. In dieser exemplarischen Vorgehensweise veranschaulicht, wie auf eine Textansicht im Editor ein Zusatzelement hinzufügen, indem Sie einen Menübefehl aufrufen.  
+# <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>Walkthrough: Using a Shell Command with an Editor Extension
+From a VSPackage, you can add features such as menu commands to the editor. This walkthrough shows how to add an adornment to a text view in the editor by invoking a menu command.  
   
- Diese exemplarische Vorgehensweise veranschaulicht die Verwendung von VSPackages zusammen mit einer Komponente Managed Extensibility Framework (MEF). Müssen Sie ein VSPackage verwenden, registrieren Sie den Menübefehl mit der Visual Studio-Shell, und verwenden Sie den Befehl auf den MEF-Komponente zuzugreifen.  
+ This walkthrough demonstrates the use of a VSPackage together with a Managed Extensibility Framework (MEF) component part. You must use a VSPackage to register the menu command with the Visual Studio shell, and you can use the command to access the MEF component part.  
   
-## <a name="prerequisites"></a>Erforderliche Komponenten  
- Starten in Visual Studio 2015, führen Sie Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio-Setup enthalten. Sie können auch später im Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Installation von Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Prerequisites  
+ Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-an-extension-with-a-menu-command"></a>Erstellen eine Erweiterung mit einem Menübefehl  
- Erstellen Sie ein VSPackage, das einen Menübefehl, der mit dem Namen setzt **Adornment hinzufügen** auf der **Tools** Menü.  
+## <a name="creating-an-extension-with-a-menu-command"></a>Creating an Extension with a Menu Command  
+ Create a VSPackage that puts a menu command named **Add Adornment** on the **Tools** menu.  
   
-1.  Erstellen Sie ein C#-VSIX-Projekt namens `MenuCommandTest`, und fügen Sie einen benutzerdefinierten Befehl Element Vorlagennamen **AddAdornment**. Weitere Informationen finden Sie unter [erstellen eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1.  Create a C# VSIX project named `MenuCommandTest`, and add a Custom Command item template name **AddAdornment**. For more information, see [Creating an Extension with a Menu Command](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  Eine Lösung mit dem Namen MenuCommandTest wird geöffnet. Die MenuCommandTestPackage-Datei enthält den Code, der den Menübefehl erstellt und in der **Tools** Menü. An diesem Punkt wird der Befehl nur ein Meldungsfeld angezeigt werden. Später zeigen, wie so ändern Sie diese Option, um das Zusatzelement Kommentar angezeigt wird.  
+2.  A solution named MenuCommandTest is opened. The MenuCommandTestPackage file has the code that creates the menu command and puts it on the **Tools** menu. At this point, the command just causes a message box to be displayed. Later steps show how to change this to display the comment adornment.  
   
-3.  Öffnen Sie im VSIX-Manifest-Editor die Datei "source.extension.vsixmanifest". Die `Assets` Registerkarte müssen eine Zeile für einen Microsoft.VisualStudio.VsPackage MenuCommandTest benannt.  
+3.  Open the source.extension.vsixmanifest file in the VSIX Manifest Editor. The `Assets` tab should have a row for a Microsoft.VisualStudio.VsPackage named MenuCommandTest.  
   
-4.  Speichern Sie und schließen Sie die Datei "Source.Extension.vsixmanifest".  
+4.  Save and close the Source.extension.vsixmanifest file.  
   
-## <a name="adding-a-mef-extension-to-the-command-extension"></a>Hinzufügen einer MEF-Erweiterung der Befehl-Erweiterung  
+## <a name="adding-a-mef-extension-to-the-command-extension"></a>Adding a MEF Extension to the Command Extension  
   
-1.  In **Projektmappen-Explorer**mit der rechten Maustaste auf den Projektmappenknoten, klicken Sie auf **hinzufügen**, und klicken Sie dann auf **neues Projekt**. In der **neues Projekt hinzufügen** im Dialogfeld klicken Sie auf **Erweiterbarkeit** unter **Visual C#-**, dann **VSIX-Projekt**. Benennen Sie das Projekt mit `CommentAdornmentTest`.  
+1.  In **Solution Explorer**, right-click the solution node, click **Add**, and then click **New Project**. In the **Add New Project** dialog box, click **Extensibility** under **Visual C#**, then **VSIX Project**. Name the project `CommentAdornmentTest`.  
   
-2.  Da dieses Projekt mit der Assembly mit starkem Namen VSPackage interagiert, müssen Sie die Assembly signieren. Sie können die Schlüsseldatei für die VSPackage-Assembly bereits erstellte wiederverwenden.  
+2.  Because this project will interact with the strongly-named VSPackage assembly, you must sign the assembly. You can reuse the key file already created for the VSPackage assembly.  
   
-    1.  Öffnen Sie die Projekteigenschaften, und wählen Sie die **Signierung** Registerkarte.  
+    1.  Open the project properties and select the **Signing** tab.  
   
-    2.  Wählen Sie **zum Signieren der Assembly**.  
+    2.  Select **Sign the assembly**.  
   
-    3.  Klicken Sie unter **Schlüsseldatei mit starkem Namen auswählen**, wählen Sie die Key.snk-Datei, die für die MenuCommandTest-Assembly generiert wurde.  
+    3.  Under **Choose a strong name key file**, select the Key.snk file that was generated for the MenuCommandTest assembly.  
   
-## <a name="referring-to-the-mef-extension-in-the-vspackage-project"></a>Verweisen auf die MEF-Erweiterung in das VSPackage-Projekt  
- Da Sie das VSPackage MEF-Komponente hinzufügen möchten, müssen Sie beide Arten von Ressourcen in der Manifestdatei angeben.  
+## <a name="referring-to-the-mef-extension-in-the-vspackage-project"></a>Referring to the MEF Extension in the VSPackage Project  
+ Because you are adding a MEF component to the VSPackage, you must specify both kinds of assets in the manifest.  
   
 > [!NOTE]
->  Weitere Informationen über MEF finden Sie unter [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/Library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
+>  For more information about MEF, see [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).  
   
-#### <a name="to-refer-to-the-mef-component-in-the-vspackage-project"></a>Zum Verweisen auf den MEF-Komponente in das VSPackage-Projekt  
+#### <a name="to-refer-to-the-mef-component-in-the-vspackage-project"></a>To refer to the MEF component in the VSPackage project  
   
-1.  Öffnen Sie im Projekt MenuCommandTest der Datei source.extension.vsixmanifest im VSIX-Manifest-Editor.  
+1.  In the MenuCommandTest project, open the source.extension.vsixmanifest file in the VSIX Manifest Editor.  
   
-2.  Auf der **Elemente** auf **neu**.  
+2.  On the **Assets** tab, click **New**.  
   
-3.  In der **Typ** wählen **Microsoft.VisualStudio.MefComponent**.  
+3.  In the **Type** list, choose **Microsoft.VisualStudio.MefComponent**.  
   
-4.  In der **Quelle** wählen **ein Projekt in der aktuellen Projektmappe**.  
+4.  In the **Source** list, choose **A project in current solution**.  
   
-5.  In der **Projekt** wählen **CommentAdornmentTest**.  
+5.  In the **Project** list, choose **CommentAdornmentTest**.  
   
-6.  Speichern Sie und schließen Sie die Datei "Source.Extension.vsixmanifest".  
+6.  Save and close the source.extension.vsixmanifest file.  
   
-7.  Stellen Sie sicher, dass das MenuCommandTest Projekt einen Verweis auf das Projekt CommentAdornmentTest.  
+7.  Make sure that the MenuCommandTest project has a reference to the CommentAdornmentTest project.  
   
-8.  Legen Sie im CommentAdornmentTest-Projekt eine Assembly erstellt wird. In der **Projektmappen-Explorer**, wählen Sie das Projekt, und suchen Sie in der **Eigenschaften** Fenster für die **erstellen Ausgabe um OutputDirectory** -Eigenschaft, und geben sie **true**.  
+8.  In the CommentAdornmentTest project, set the project to produce an assembly. In the **Solution Explorer**, select the project and look in the **Properties** window for the **Copy Build Output to OutputDirectory** property, and set it to **true**.  
   
-## <a name="defining-a-comment-adornment"></a>Definieren einen Kommentar Adornment  
- Der Kommentar Adornment selbst besteht aus einer <xref:Microsoft.VisualStudio.Text.ITrackingSpan>, verfolgt der markierte Text und einige Zeichenfolgen, die der Autor und die Beschreibung des Texts darstellen.</xref:Microsoft.VisualStudio.Text.ITrackingSpan>  
+## <a name="defining-a-comment-adornment"></a>Defining a Comment Adornment  
+ The comment adornment itself consists of an <xref:Microsoft.VisualStudio.Text.ITrackingSpan> that tracks the selected text, and some strings that represent the author and the description of the text.  
   
-#### <a name="to-define-a-comment-adornment"></a>Ein Kommentar Adornment definieren  
+#### <a name="to-define-a-comment-adornment"></a>To define a comment adornment  
   
-1.  Im CommentAdornmentTest-Projekt fügen Sie eine neue Klassendatei hinzu, und nennen Sie es `CommentAdornment`.  
+1.  In the CommentAdornmentTest project, add a new class file and name it `CommentAdornment`.  
   
-2.  Fügen Sie die folgenden Verweise hinzu:  
+2.  Add the following references:  
   
     1.  Microsoft.VisualStudio.CoreUtility  
   
@@ -116,29 +117,29 @@ In einem VSPackage können Sie Funktionen wie z. B. Menübefehle zum Editor hinz
   
     9. WindowsBase  
   
-3.  Fügen Sie die folgenden `using` Anweisung.  
+3.  Add the following `using` statement.  
   
     ```vb  
     using Microsoft.VisualStudio.Text;  
     ```  
   
-4.  Die Datei sollte eine Klasse namens enthalten `CommentAdornment`.  
+4.  The file should contain a class named `CommentAdornment`.  
   
     ```  
     internal class CommentAdornment  
     ```  
   
-5.  Drei Felder zum Hinzufügen der `CommentAdornment` -Klasse für die <xref:Microsoft.VisualStudio.Text.ITrackingSpan>, der Autor und die Beschreibung.</xref:Microsoft.VisualStudio.Text.ITrackingSpan>  
+5.  Add three fields to the `CommentAdornment` class for the <xref:Microsoft.VisualStudio.Text.ITrackingSpan>, the author, and the description.  
   
-    ```c#  
+    ```cs  
     public readonly ITrackingSpan Span;  
     public readonly string Author;  
     public readonly string Text;  
     ```  
   
-6.  Fügen Sie einen Konstruktor, der die Felder initialisiert, hinzu.  
+6.  Add a constructor that initializes the fields.  
   
-    ```c#  
+    ```cs  
     public CommentAdornment(SnapshotSpan span, string author, string text)  
     {  
         this.Span = span.Snapshot.CreateTrackingSpan(span, SpanTrackingMode.EdgeExclusive);  
@@ -147,14 +148,14 @@ In einem VSPackage können Sie Funktionen wie z. B. Menübefehle zum Editor hinz
     }  
     ```  
   
-## <a name="creating-a-visual-element-for-the-adornment"></a>Erstellen ein visuelles Element für das Zusatzelement  
- Sie müssen auch ein visuelles Element für Ihre Adornment definieren. In dieser exemplarischen Vorgehensweise definieren Sie ein Steuerelement, das von der Windows Presentation Foundation (WPF)-Klasse <xref:System.Windows.Controls.Canvas>.</xref:System.Windows.Controls.Canvas> erbt  
+## <a name="creating-a-visual-element-for-the-adornment"></a>Creating a Visual Element for the Adornment  
+ You must also define a visual element for your adornment. For this walkthrough, define a control that inherits from the Windows Presentation Foundation (WPF) class <xref:System.Windows.Controls.Canvas>.  
   
-1.  Erstellen Sie eine Klasse im Projekt CommentAdornmentTest, und nennen Sie es `CommentBlock`.  
+1.  Create a class in the CommentAdornmentTest project, and name it `CommentBlock`.  
   
-2.  Fügen Sie die folgenden `using`-Anweisungen hinzu.  
+2.  Add the following `using` statements.  
   
-    ```c#  
+    ```cs  
     using Microsoft.VisualStudio.Text;  
     using System;  
     using System.Windows;  
@@ -166,16 +167,16 @@ In einem VSPackage können Sie Funktionen wie z. B. Menübefehle zum Editor hinz
     using Microsoft.VisualStudio.Utilities;  
     ```  
   
-3.  Stellen Sie die `CommentBlock` Klasse erben, <xref:System.Windows.Controls.Canvas>.</xref:System.Windows.Controls.Canvas>  
+3.  Make the `CommentBlock` class inherit from <xref:System.Windows.Controls.Canvas>.  
   
-    ```c#  
+    ```cs  
     internal class CommentBlock : Canvas  
     { }  
     ```  
   
-4.  Fügen Sie einige private Felder zu definieren, die optischen Aspekte der Adornment hinzu.  
+4.  Add some private fields to define the visual aspects of the adornment.  
   
-    ```c#  
+    ```cs  
     private Geometry textGeometry;  
     private Grid commentGrid;  
     private static Brush brush;  
@@ -183,9 +184,9 @@ In einem VSPackage können Sie Funktionen wie z. B. Menübefehle zum Editor hinz
     private static Pen dashPen;  
     ```  
   
-5.  Fügen Sie einen Konstruktor, der den Kommentar Adornment definiert und fügt den entsprechenden Text.  
+5.  Add a constructor that defines the comment adornment and adds the relevant text.  
   
-    ```c#  
+    ```cs  
     public CommentBlock(double textRightEdge, double viewRightEdge,   
             Geometry newTextGeometry, string author, string body)  
     {  
@@ -252,9 +253,9 @@ In einem VSPackage können Sie Funktionen wie z. B. Menübefehle zum Editor hinz
     }  
     ```  
   
-6.  Implementieren Sie außerdem ein <xref:System.Windows.Controls.Panel.OnRender%2A>-Ereignishandler, der das Zusatzelement zeichnet.</xref:System.Windows.Controls.Panel.OnRender%2A>  
+6.  Also implement an <xref:System.Windows.Controls.Panel.OnRender%2A> event handler that draws the adornment.  
   
-    ```c#  
+    ```cs  
     protected override void OnRender(DrawingContext dc)  
     {  
         base.OnRender(dc);  
@@ -271,36 +272,35 @@ In einem VSPackage können Sie Funktionen wie z. B. Menübefehle zum Editor hinz
     }  
     ```  
   
-## <a name="adding-an-iwpftextviewcreationlistener"></a>Hinzufügen einer IWpfTextViewCreationListener  
- Die <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>ist eine MEF-Komponente, mit denen Sie zum Anzeigen der Ereignisse beim Erstellen von lauschen.</xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>  
+## <a name="adding-an-iwpftextviewcreationlistener"></a>Adding an IWpfTextViewCreationListener  
+ The <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> is a MEF component part that you can use to listen to view creation events.  
   
-1.  Das CommentAdornmentTest-Projekt eine Klassendatei hinzu, und nennen Sie es `Connector`.  
+1.  Add a class file to the CommentAdornmentTest project and name it `Connector`.  
   
-2.  Fügen Sie die folgenden `using`-Anweisungen hinzu.  
+2.  Add the following `using` statements.  
   
-    ```c#  
+    ```cs  
     using System.ComponentModel.Composition;  
     using Microsoft.VisualStudio.Text.Editor;  
     using Microsoft.VisualStudio.Utilities;  
     ```  
   
-3.  Deklarieren Sie eine Klasse, die implementiert <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>, und exportieren Sie es mit einem <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>der "Text" und eine <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document>.</xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> </xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> </xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> </xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> Das Content-Type-Attribut gibt die Art des Inhalts auf die Komponente angewendet wird. Der Texttyp ist der Basistyp für alle Typen von nicht binären Dateien. Daher wird beinahe jede Text anzeigen, die erstellt wird dieses Typs sein. Das Text anzeigen Role-Attribut gibt die Art der Textansicht, die auf die Komponente angewendet wird. Dokument Text anzeigen Rollen zeigen im Allgemeinen Text, besteht aus Zeilen und in einer Datei gespeichert wird.  
+3.  Declare a class that implements <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>, and export it with a <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> of "text" and a <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> of <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document>. The content type attribute specifies the kind of content to which the component applies. The text type is the base type for all non-binary file types. Therefore, almost every text view that is created will be of this type. The text view role attribute specifies the kind of text view to which the component applies. Document text view roles generally show text that is composed of lines and is stored in a file.  
   
-     [!code-vb[VSSDKMenuCommandTest&#11;](../extensibility/codesnippet/VisualBasic/walkthrough-using-a-shell-command-with-an-editor-extension_1.vb) ] 
-     [!code-cs [VSSDKMenuCommandTest&#11;](../extensibility/codesnippet/CSharp/walkthrough-using-a-shell-command-with-an-editor-extension_1.cs)]  
+     [!code-vb[VSSDKMenuCommandTest#11](../extensibility/codesnippet/VisualBasic/walkthrough-using-a-shell-command-with-an-editor-extension_1.vb)]  [!code-cs[VSSDKMenuCommandTest#11](../extensibility/codesnippet/CSharp/walkthrough-using-a-shell-command-with-an-editor-extension_1.cs)]  
   
-4.  Implementieren der <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A>Methode, sodass die statische aufgerufen `Create()` -Ereignis der `CommentAdornmentManager`.</xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A>  
+4.  Implement the <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> method so that it calls the static `Create()` event of the `CommentAdornmentManager`.  
   
-    ```c#  
+    ```cs  
     public void TextViewCreated(IWpfTextView textView)  
     {  
         CommentAdornmentManager.Create(textView);  
     }  
     ```  
   
-5.  Fügen Sie eine Methode, die Sie verwenden können, um den Befehl auszuführen.  
+5.  Add a method that you can use to execute the command.  
   
-    ```c#  
+    ```cs  
     static public void Execute(IWpfTextViewHost host)  
     {  
         IWpfTextView view = host.TextView;  
@@ -320,14 +320,14 @@ In einem VSPackage können Sie Funktionen wie z. B. Menübefehle zum Editor hinz
     }  
     ```  
   
-## <a name="defining-an-adornment-layer"></a>Ein Randsteuerelement Schicht  
- Um eine neue Adornment hinzuzufügen, müssen Sie eine Adornmentebene definieren.  
+## <a name="defining-an-adornment-layer"></a>Defining an Adornment Layer  
+ To add a new adornment, you must define an adornment layer.  
   
-#### <a name="to-define-an-adornment-layer"></a>Um eine Adornmentebene definieren  
+#### <a name="to-define-an-adornment-layer"></a>To define an adornment layer  
   
-1.  In der `Connector` Klasse deklarieren Sie ein öffentliches Feld vom Typ <xref:Microsoft.VisualStudio.Text.Editor.AdornmentLayerDefinition>, und exportieren Sie es mit einer <xref:Microsoft.VisualStudio.Utilities.NameAttribute>, die einen eindeutigen Namen für die Adornmentebene angibt und ein <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>, andere Ansicht Textebenen (Text, Caretzeichen und Auswahl) definiert die Beziehung der Z-Reihenfolge dieser Ebene Adornment.</xref:Microsoft.VisualStudio.Utilities.OrderAttribute> </xref:Microsoft.VisualStudio.Utilities.NameAttribute> </xref:Microsoft.VisualStudio.Text.Editor.AdornmentLayerDefinition>  
+1.  In the `Connector` class, declare a public field of type <xref:Microsoft.VisualStudio.Text.Editor.AdornmentLayerDefinition>, and export it with a <xref:Microsoft.VisualStudio.Utilities.NameAttribute> that specifies a unique name for the adornment layer and an <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> that defines the Z-order relationship of this adornment layer to the other text view layers (text, caret, and selection).  
   
-    ```c#  
+    ```cs  
     [Export(typeof(AdornmentLayerDefinition))]  
     [Name("CommentAdornmentLayer")]  
     [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]  
@@ -335,14 +335,14 @@ In einem VSPackage können Sie Funktionen wie z. B. Menübefehle zum Editor hinz
   
     ```  
   
-## <a name="providing-comment-adornments"></a>Kommentar Zusatzelemente bereitstellen  
- Wenn Sie ein Zusatzelement definieren, müssen Sie auch implementieren Sie einen Kommentar Randsteuerelement-Anbieter und einen Kommentar Randsteuerelement-Manager. Der Kommentar Adornment Anbieter führt eine Liste der Kommentar Zusatzelemente, überwacht <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed>Ereignisse in der zugrunde liegenden Textpuffer und löscht Kommentar Zusatzelemente, wenn der zugrunde liegende Text gelöscht wird.</xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed>  
+## <a name="providing-comment-adornments"></a>Providing Comment Adornments  
+ When you define an adornment, also implement a comment adornment provider and a comment adornment manager. The comment adornment provider keeps a list of comment adornments, listens to <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> events on the underlying text buffer, and deletes comment adornments when the underlying text is deleted.  
   
-1.  Das CommentAdornmentTest-Projekt eine neue Klassendatei hinzu, und nennen Sie es `CommentAdornmentProvider`.  
+1.  Add a new class file to the CommentAdornmentTest project and name it `CommentAdornmentProvider`.  
   
-2.  Fügen Sie die folgenden `using`-Anweisungen hinzu.  
+2.  Add the following `using` statements.  
   
-    ```c#  
+    ```cs  
     using System;  
     using System.Collections.Generic;  
     using System.Collections.ObjectModel;  
@@ -350,25 +350,25 @@ In einem VSPackage können Sie Funktionen wie z. B. Menübefehle zum Editor hinz
     using Microsoft.VisualStudio.Text.Editor;  
     ```  
   
-3.  Fügen Sie eine Klasse mit dem Namen `CommentAdornmentProvider`.  
+3.  Add a class named `CommentAdornmentProvider`.  
   
-    ```c#  
+    ```cs  
     internal class CommentAdornmentProvider  
     {  
     }  
     ```  
   
-4.  Fügen Sie private Felder für den Textpuffer und die Liste der Kommentar-Details im Zusammenhang mit dem Puffer.  
+4.  Add private fields for the text buffer and the list of comment adornments related to the buffer.  
   
-    ```c#  
+    ```cs  
     private ITextBuffer buffer;  
     private IList<CommentAdornment> comments = new List<CommentAdornment>();  
   
     ```  
   
-5.  Fügen Sie einen Konstruktor für `CommentAdornmentProvider`. Dieser Konstruktor privaten Zugriff haben sollen, da der Anbieter von instanziiert wird die `Create()` Methode. Der Konstruktor fügt die `OnBufferChanged` -Ereignishandler, um die <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed>Ereignis.</xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed>  
+5.  Add a constructor for `CommentAdornmentProvider`. This constructor should have private access because the provider is instantiated by the `Create()` method. The constructor adds the `OnBufferChanged` event handler to the <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> event.  
   
-    ```c#  
+    ```cs  
     private CommentAdornmentProvider(ITextBuffer buffer)  
     {  
         this.buffer = buffer;  
@@ -378,9 +378,9 @@ In einem VSPackage können Sie Funktionen wie z. B. Menübefehle zum Editor hinz
   
     ```  
   
-6.  Fügen Sie die `Create()`-Methode hinzu.  
+6.  Add the `Create()` method.  
   
-    ```c#  
+    ```cs  
     public static CommentAdornmentProvider Create(IWpfTextView view)  
     {  
         return view.Properties.GetOrCreateSingletonProperty<CommentAdornmentProvider>(delegate { return new CommentAdornmentProvider(view.TextBuffer); });  
@@ -388,9 +388,9 @@ In einem VSPackage können Sie Funktionen wie z. B. Menübefehle zum Editor hinz
   
     ```  
   
-7.  Fügen Sie die `Detach()`-Methode hinzu.  
+7.  Add the `Detach()` method.  
   
-    ```c#  
+    ```cs  
     public void Detach()  
     {  
         if (this.buffer != null)  
@@ -402,9 +402,9 @@ In einem VSPackage können Sie Funktionen wie z. B. Menübefehle zum Editor hinz
     }  
     ```  
   
-8.  Hinzufügen der `OnBufferChanged` -Ereignishandler.  
+8.  Add the `OnBufferChanged` event handler.  
   
-    ```c#  
+    ```cs  
     private void OnBufferChanged(object sender, TextContentChangedEventArgs e)  
     {  
         //Make a list of all comments that have a span of at least one character after applying the change. There is no need to raise a changed event for the deleted adornments. The adornments are deleted only if a text change would cause the view to reformat the line and discard the adornments.  
@@ -425,18 +425,17 @@ In einem VSPackage können Sie Funktionen wie z. B. Menübefehle zum Editor hinz
   
     ```  
   
-     [!code-cs[VSSDKMenuCommandTest&21;](../extensibility/codesnippet/CSharp/walkthrough-using-a-shell-command-with-an-editor-extension_2.cs) ] 
-     [!code-vb [VSSDKMenuCommandTest&21;](../extensibility/codesnippet/VisualBasic/walkthrough-using-a-shell-command-with-an-editor-extension_2.vb)]  
+     [!code-cs[VSSDKMenuCommandTest#21](../extensibility/codesnippet/CSharp/walkthrough-using-a-shell-command-with-an-editor-extension_2.cs)]  [!code-vb[VSSDKMenuCommandTest#21](../extensibility/codesnippet/VisualBasic/walkthrough-using-a-shell-command-with-an-editor-extension_2.vb)]  
   
-9. Fügen Sie eine Deklaration für eine `CommentsChanged` Ereignis.  
+9. Add a declaration for a `CommentsChanged` event.  
   
-    ```c#  
+    ```cs  
     public event EventHandler<CommentsChangedEventArgs> CommentsChanged;  
     ```  
   
-10. Erstellen Sie eine `Add()` Methode, um das Zusatzelement hinzuzufügen.  
+10. Create an `Add()` method to add the adornment.  
   
-    ```c#  
+    ```cs  
     public void Add(SnapshotSpan span, string author, string text)  
     {  
         if (span.Length == 0)  
@@ -460,9 +459,9 @@ In einem VSPackage können Sie Funktionen wie z. B. Menübefehle zum Editor hinz
   
     ```  
   
-11. Hinzufügen einer `RemoveComments()` Methode.  
+11. Add a `RemoveComments()` method.  
   
-    ```c#  
+    ```cs  
     public void RemoveComments(SnapshotSpan span)  
     {  
         EventHandler<CommentsChangedEventArgs> commentsChanged = this.CommentsChanged;  
@@ -487,9 +486,9 @@ In einem VSPackage können Sie Funktionen wie z. B. Menübefehle zum Editor hinz
     }  
     ```  
   
-12. Hinzufügen einer `GetComments()` Methode, die alle Kommentare in einem bestimmten Bereich zurückgibt.  
+12. Add a `GetComments()` method that returns all the comments in a given snapshot span.  
   
-    ```c#  
+    ```cs  
     public Collection<CommentAdornment> GetComments(SnapshotSpan span)  
     {  
         IList<CommentAdornment> overlappingComments = new List<CommentAdornment>();  
@@ -503,9 +502,9 @@ In einem VSPackage können Sie Funktionen wie z. B. Menübefehle zum Editor hinz
     }  
     ```  
   
-13. Fügen Sie eine Klasse mit dem Namen `CommentsChangedEventArgs`wie folgt.  
+13. Add a class named `CommentsChangedEventArgs`, as follows.  
   
-    ```c#  
+    ```cs  
     internal class CommentsChangedEventArgs : EventArgs  
     {  
         public readonly CommentAdornment CommentAdded;  
@@ -520,14 +519,14 @@ In einem VSPackage können Sie Funktionen wie z. B. Menübefehle zum Editor hinz
     }  
     ```  
   
-## <a name="managing-comment-adornments"></a>Verwalten von Kommentar-Details  
- Der Kommentar Randsteuerelement-Manager das Zusatzelement erstellt und der Adornment Ebene hinzugefügt. Es überwacht die <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>und <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed>Ereignisse so, dass die It kann verschieben oder löschen das Zusatzelement.</xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> </xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> Es überwacht auch die `CommentsChanged` Ereignis, das vom Anbieter Adornment Kommentar ausgelöst wird, wenn Kommentare hinzugefügt oder entfernt werden.  
+## <a name="managing-comment-adornments"></a>Managing Comment Adornments  
+ The comment adornment manager creates the adornment and adds it to the adornment layer. It listens to the <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> and <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> events so that it can move or delete the adornment. It also listens to the `CommentsChanged` event that is fired by the comment adornment provider when comments are added or removed.  
   
-1.  Das CommentAdornmentTest-Projekt eine Klassendatei hinzu, und nennen Sie es `CommentAdornmentManager`.  
+1.  Add a class file to the CommentAdornmentTest project and name it `CommentAdornmentManager`.  
   
-2.  Fügen Sie die folgenden `using`-Anweisungen hinzu.  
+2.  Add the following `using` statements.  
   
-    ```c#  
+    ```cs  
     using System;  
     using System.Collections.Generic;  
     using System.Windows.Media;  
@@ -536,25 +535,25 @@ In einem VSPackage können Sie Funktionen wie z. B. Menübefehle zum Editor hinz
     using Microsoft.VisualStudio.Text.Formatting;  
     ```  
   
-3.  Fügen Sie eine Klasse mit dem Namen `CommentAdornmentManager`.  
+3.  Add a class named `CommentAdornmentManager`.  
   
-    ```c#  
+    ```cs  
     internal class CommentAdornmentManager  
         {  
         }  
     ```  
   
-4.  Fügen Sie private Felder hinzu.  
+4.  Add some private fields.  
   
-    ```c#  
+    ```cs  
     private readonly IWpfTextView view;  
     private readonly IAdornmentLayer layer;  
     private readonly CommentAdornmentProvider provider;  
     ```  
   
-5.  Fügen Sie einen Konstruktor, der den Manager abonniert die <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>und <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed>Ereignisse, und auch mit dem `CommentsChanged` Ereignis.</xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> </xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> Der Konstruktor ist privat, da der Manager, von der statischen instanziiert wird `Create()` Methode.  
+5.  Add a constructor that subscribes the manager to the <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> and <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> events, and also to the `CommentsChanged` event. The constructor is private because the manager is instantiated by the static `Create()` method.  
   
-    ```c#  
+    ```cs  
     private CommentAdornmentManager(IWpfTextView view)  
     {  
         this.view = view;  
@@ -568,18 +567,18 @@ In einem VSPackage können Sie Funktionen wie z. B. Menübefehle zum Editor hinz
     }  
     ```  
   
-6.  Hinzufügen der `Create()` -Methode, die einen Anbieter ruft oder bei Bedarf erstellt.  
+6.  Add the `Create()` method that gets a provider or creates one if required.  
   
-    ```c#  
+    ```cs  
     public static CommentAdornmentManager Create(IWpfTextView view)  
     {  
         return view.Properties.GetOrCreateSingletonProperty<CommentAdornmentManager>(delegate { return new CommentAdornmentManager(view); });  
     }  
     ```  
   
-7.  Hinzufügen der `CommentsChanged` Handler.  
+7.  Add the `CommentsChanged` handler.  
   
-    ```c#  
+    ```cs  
     private void OnCommentsChanged(object sender, CommentsChangedEventArgs e)  
     {  
         //Remove the comment (when the adornment was added, the comment adornment was used as the tag).   
@@ -592,9 +591,9 @@ In einem VSPackage können Sie Funktionen wie z. B. Menübefehle zum Editor hinz
     }  
     ```  
   
-8.  Hinzufügen der <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed>Handler.</xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed>  
+8.  Add the <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> handler.  
   
-    ```c#  
+    ```cs  
     private void OnClosed(object sender, EventArgs e)  
     {  
         this.provider.Detach();  
@@ -603,9 +602,9 @@ In einem VSPackage können Sie Funktionen wie z. B. Menübefehle zum Editor hinz
     }  
     ```  
   
-9. Hinzufügen der <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>Handler.</xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>  
+9. Add the <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> handler.  
   
-    ```c#  
+    ```cs  
     private void OnLayoutChanged(object sender, TextViewLayoutChangedEventArgs e)  
     {  
         //Get all of the comments that intersect any of the new or reformatted lines of text.  
@@ -634,15 +633,14 @@ In einem VSPackage können Sie Funktionen wie z. B. Menübefehle zum Editor hinz
     }  
     ```  
   
-10. Fügen Sie die private Methode, die den Kommentar zeichnet.  
+10. Add the private method that draws the comment.  
   
-     [!code-cs[VSSDKMenuCommandTest&#35;](../extensibility/codesnippet/CSharp/walkthrough-using-a-shell-command-with-an-editor-extension_3.cs) ] 
-     [!code-vb [VSSDKMenuCommandTest&#35;](../extensibility/codesnippet/VisualBasic/walkthrough-using-a-shell-command-with-an-editor-extension_3.vb)]  
+     [!code-cs[VSSDKMenuCommandTest#35](../extensibility/codesnippet/CSharp/walkthrough-using-a-shell-command-with-an-editor-extension_3.cs)]  [!code-vb[VSSDKMenuCommandTest#35](../extensibility/codesnippet/VisualBasic/walkthrough-using-a-shell-command-with-an-editor-extension_3.vb)]  
   
-## <a name="using-the-menu-command-to-add-the-comment-adornment"></a>Verwenden den Menübefehl zum Hinzufügen von des Zusatzelements Kommentar  
- Sie können den Menübefehl ein Kommentar Adornment durch die Implementierung erstellt die `MenuItemCallback` -Methode des VSPackages.  
+## <a name="using-the-menu-command-to-add-the-comment-adornment"></a>Using the Menu Command to Add the Comment Adornment  
+ You can use the menu command to create a comment adornment by implementing the `MenuItemCallback` method of the VSPackage.  
   
-1.  Fügen Sie der MenuCommandTest-Projekt die folgenden Verweise hinzu:  
+1.  Add the following references to the MenuCommandTest project:  
   
     -   Microsoft.VisualStudio.TextManager.Interop  
   
@@ -650,26 +648,26 @@ In einem VSPackage können Sie Funktionen wie z. B. Menübefehle zum Editor hinz
   
     -   Microsoft.VisualStudio.Text.UI.Wpf  
   
-2.  Öffnen Sie die Datei AddAdornment.cs, und fügen Sie die folgenden `using` Anweisungen.  
+2.  Open the AddAdornment.cs file and add the following `using` statements.  
   
-    ```c#  
+    ```cs  
     using Microsoft.VisualStudio.TextManager.Interop;  
     using Microsoft.VisualStudio.Text.Editor;  
     using Microsoft.VisualStudio.Editor;  
     using CommentAdornmentTest;  
     ```  
   
-3.  Löschen Sie die ShowMessageBox()-Methode, und fügen Sie den folgenden Befehl-Ereignishandler.  
+3.  Delete the ShowMessageBox() method and add the following command handler.  
   
-    ```c#  
+    ```cs  
     private void AddAdornmentHandler(object sender, EventArgs e)  
     {  
     }  
     ```  
   
-4.  Fügen Sie Code für die aktive Ansicht zu erhalten. Sie benötigen die `SVsTextManager` der Visual Studio-Shell zum Abrufen des aktives `IVsTextView`.  
+4.  Add code to get the active view. You must get the `SVsTextManager` of the Visual Studio shell to get the active `IVsTextView`.  
   
-    ```c#  
+    ```cs  
     private void AddAdornmentHandler(object sender, EventArgs e)  
     {  
         IVsTextManager txtMgr = (IVsTextManager)ServiceProvider.GetService(typeof(SVsTextManager));  
@@ -679,9 +677,9 @@ In einem VSPackage können Sie Funktionen wie z. B. Menübefehle zum Editor hinz
     }  
     ```  
   
-5.  Wenn diese Textansicht eine Instanz einer Textansicht Editor ist, können Sie es auf die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData>Schnittstelle, und rufen Sie die <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost>und die zugehörigen <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>.</xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> </xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> </xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> umwandeln. Verwenden der <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost>zum Aufrufen der `Connector.Execute()` -Methode, die Ruft den Kommentar Adornment Anbieter ab und fügt das Zusatzelement.</xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> Der Befehlshandler sollte jetzt wie folgt aussehen:  
+5.  If this text view is an instance of an editor text view, you can cast it to the <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> interface and then get the <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> and its associated <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>. Use the <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> to call the `Connector.Execute()` method, which gets the comment adornment provider and adds the adornment. The command handler should now look like this:  
   
-    ```c#  
+    ```cs  
     private void AddAdornmentHandler(object sender, EventArgs e)  
     {  
         IVsTextManager txtMgr = (IVsTextManager)ServiceProvider.GetService(typeof(SVsTextManager));  
@@ -703,9 +701,9 @@ In einem VSPackage können Sie Funktionen wie z. B. Menübefehle zum Editor hinz
     }  
     ```  
   
-6.  Legen Sie die AddAdornmentHandler-Methode als Ereignishandler für den AddAdornment-Befehl in der AddAdornment-Konstruktor.  
+6.  Set the AddAdornmentHandler method as the handler for the AddAdornment command in the AddAdornment constructor.  
   
-    ```c#  
+    ```cs  
     private AddAdornment(Package package)  
     {  
         if (package == null)  
@@ -726,17 +724,17 @@ In einem VSPackage können Sie Funktionen wie z. B. Menübefehle zum Editor hinz
     }  
     ```  
   
-## <a name="building-and-testing-the-code"></a>Erstellen und Testen des Codes  
+## <a name="building-and-testing-the-code"></a>Building and Testing the Code  
   
-1.  Erstellen Sie die Lösung und beginnen Sie mit dem Debuggen. Die experimentelle Instanz sollte angezeigt werden.  
+1.  Build the solution and start debugging. The experimental instance should appear.  
   
-2.  Erstellen einer Textdatei Geben Sie Text ein, und wählen Sie sie.  
+2.  Create a text file. Type some text and then select it.  
   
-3.  Auf der **Tools** Menü klicken Sie auf **hinzufügen Adornment Aufrufen**. Eine Sprechblase auf der rechten Seite des Fensters angezeigt werden soll, und Sie sollten enthalten Text, der etwa dem folgenden Text entspricht.  
+3.  On the **Tools** menu, click **Invoke Add Adornment**. A balloon should be displayed on the right side of the text window, and should contain text that resembles the following text.  
   
-     Ihr Benutzername  
+     YourUserName  
   
      Fourscore...  
   
-## <a name="see-also"></a>Siehe auch  
- [Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit Erweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+## <a name="see-also"></a>See Also  
+ [Walkthrough: Linking a Content Type to a File Name Extension](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

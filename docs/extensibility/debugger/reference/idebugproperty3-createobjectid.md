@@ -1,51 +1,68 @@
 ---
-title: "IDebugProperty3::CreateObjectID | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProperty3::CreateObjectID"
-helpviewer_keywords: 
-  - "IDebugProperty3::CreateObjectID"
+title: IDebugProperty3::CreateObjectID | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProperty3::CreateObjectID
+helpviewer_keywords:
+- IDebugProperty3::CreateObjectID
 ms.assetid: f2fa81e7-822f-456e-8729-a96a18eea771
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugProperty3::CreateObjectID
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 25bbfa902c42570181039c9d545d9fb0779f7e40
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Erstellt eine eindeutige ID für diese Eigenschaft wird sichergestellt, dass sie von allen anderen Eigenschaften eindeutig ist.  
+---
+# <a name="idebugproperty3createobjectid"></a>IDebugProperty3::CreateObjectID
+Creates a unique ID for this property to ensure that it is unique among all other properties.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT CreateObjectID(  
-   void  
+HRESULT CreateObjectID(  
+   void  
 );  
 ```  
   
-```c#  
-int CreateObjectID();  
+```cs  
+int CreateObjectID();  
 ```  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Hinweise  
- Diese Methode wird aufgerufen, wenn der Debug\- Manager der Sitzung überprüfen möchte, ob diese Eigenschaft für alle anderen Eigenschaften eindeutig identifiziert wird.  Das Debugmodul \(DE\) unterstützt diese Methode, es sei denn, mit Eigenschaften, die sie behandelt, sind bereits eindeutig identifiziert.  Wenn DE diese Methode nicht unterstützt wird, gibt sie `E_NOTIMPL`zurück.  
+## <a name="remarks"></a>Remarks  
+ This method is called when the session debug manager wants to make sure that this property is uniquely identified among all other properties. The debug engine (DE) supports this method unless the properties it deals with are already uniquely identified. If the DE does not support this method, it returns `E_NOTIMPL`.  
   
- Jede eindeutige ID, die `CreateObjectID` erstellt wird, zerstört wird, wenn die [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md)\-Methode aufgerufen wird. dies auch Signalisiert das Ende der Anforderung für diese Eigenschaft eindeutig identifizieren.  
+ Any unique ID created with `CreateObjectID` is destroyed when the [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md) method is called; this also signals the end of the need for uniquely identifying this property.  
   
 > [!NOTE]
->  Es gibt keine Möglichkeit, um diese abzurufen, sodass der eindeutigen ID DE tun, was dies für eindeutige ID, wenn die `CreateObjectID`\-Methode aufgerufen wird.  
+>  There is no method to retrieve this unique ID, so the DE can do whatever it wants for unique IDs when the `CreateObjectID` method is called.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
  [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md)

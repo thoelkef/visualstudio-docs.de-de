@@ -1,81 +1,98 @@
 ---
-title: "IDebugExpressionContext2::ParseText | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugExpressionContext2::ParseText"
-helpviewer_keywords: 
-  - "IDebugExpressionContext2::ParseText"
+title: IDebugExpressionContext2::ParseText | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugExpressionContext2::ParseText
+helpviewer_keywords:
+- IDebugExpressionContext2::ParseText
 ms.assetid: f58575db-f926-4ac8-83ff-7b3b86ab61e2
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugExpressionContext2::ParseText
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 18715b31bef140b713406bc0636e73c4d779dd52
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Analysiert einen Ausdruck in Form der Text für spätere Auswertung.  
+---
+# <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
+Parses an expression in text form for later evaluation.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT ParseText(   
-   LPCOLESTR           pszCode,  
-   PARSEFLAGS          dwFlags,  
-   UINT                nRadix,  
-   IDebugExpression2** ppExpr,  
-   BSTR*               pbstrError,  
-   UINT*               pichError  
+HRESULT ParseText(   
+   LPCOLESTR           pszCode,  
+   PARSEFLAGS          dwFlags,  
+   UINT                nRadix,  
+   IDebugExpression2** ppExpr,  
+   BSTR*               pbstrError,  
+   UINT*               pichError  
 );  
 ```  
   
-```c#  
-int ParseText(   
-   string                pszCode,  
-   enum_PARSEFLAGS       dwFlags,  
-   uint                  nRadix,  
-   out IDebugExpression2 ppExpr,  
-   out string            pbstrError,  
-   out uint              pichError  
+```cs  
+int ParseText(   
+   string                pszCode,  
+   enum_PARSEFLAGS       dwFlags,  
+   uint                  nRadix,  
+   out IDebugExpression2 ppExpr,  
+   out string            pbstrError,  
+   out uint              pichError  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `pszCode`  
- \[in\]  Der zu analysierende Ausdruck.  
+ [in] The expression to be parsed.  
   
  `dwFlags`  
- \[in\]  Eine Kombination von Flags aus der [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)\-Enumeration, die die Analyse steuert.  
+ [in] A combination of flags from the [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) enumeration that controls parsing.  
   
  `nRadix`  
- \[in\]  Die Basis verwendet werden soll, wenn alle numerischen Daten in `pszCode`analysiert werden.  
+ [in] The radix to be used in parsing any numerical information in `pszCode`.  
   
  `ppExpr`  
- \[out\]  Gibt das [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)\-Objekt zurück, das den analysierten Ausdruck darstellt, der zum Binden und zur Auswertung bereit ist.  
+ [out] Returns the [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) object that represents the parsed expression, which is ready for binding and evaluation.  
   
  `pbstrError`  
- \[out\]  Gibt die Fehlermeldung zurück, wenn der Ausdruck einen Fehler enthält.  
+ [out] Returns the error message if the expression contains an error.  
   
  `pichError`  
- \[out\]  Gibt den Zeichenindex des Fehlers in `pszCode` zurück, wenn der Ausdruck einen Fehler enthält.  
+ [out] Returns the character index of the error in `pszCode` if the expression contains an error.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Hinweise  
- Wenn diese Methode aufgerufen wird, sollte eine Debug\- Modul \(DE\) den Ausdruck analysieren und ihn für die ordnungsgemäße Ausführung überprüfen.  Die `pbstrError` und `pichError`\-Parameter ausgefüllt werden kann, wenn der Ausdruck ungültig ist.  
+## <a name="remarks"></a>Remarks  
+ When this method is called, a debug engine (DE) should parse the expression and validate it for correctness. The `pbstrError` and `pichError` parameters may be filled in if the expression is invalid.  
   
- Beachten Sie, dass der Ausdruck nicht ausgewertet wird, werden nur analysiert.  Neuere Aufruf der [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) oder [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)\-Methode wertet den analysierten Ausdruck aus.  
+ Note that the expression is not evaluated, only parsed. A later call to the [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) or [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) methods evaluates the parsed expression.  
   
-## Beispiel  
- Im folgenden Beispiel wird veranschaulicht, wie diese Methode für ein einfaches `CEnvBlock`\-Objekt implementiert, das die [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)\-Schnittstelle verfügbar macht.  Dieses Beispiel liest den Ausdruck als analysiert als Name einer Umgebungsvariablen und ruft den Wert dieser Variablen ab.  
+## <a name="example"></a>Example  
+ The following example shows how to implement this method for a simple `CEnvBlock` object that exposes the [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) interface. This example considers the expression to be parsed as the name of an environment variable and retrieves the value from that variable.  
   
 ```cpp#  
 HRESULT CEnvBlock::ParseText(  
@@ -123,7 +140,7 @@ HRESULT CEnvBlock::ParseText(
 }    
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)   
  [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)   
  [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)   

@@ -1,68 +1,73 @@
 ---
-title: "Programmieren von Anpassungen auf Dokumentebene"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "Sheet3"
-  - "thisWorkbook"
-  - "thisDocument"
-  - "Sheet1"
-  - "Sheet2"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "ThisDocument-Klasse"
-  - "Sheet3-Klasse"
-  - "ThisWorkbook-Klasse"
-  - "Schreiben von Code in Office-Projektmappen"
-  - "Programmieren [Office-Entwicklung in Visual Studio], Anpassungen auf Dokumentebene"
-  - "Sheet1-Klasse"
-  - "Office-Anwendungen [Office-Entwicklung in Visual Studio], Anpassungen auf Dokumentebene"
-  - "Sheet2-Klasse"
-  - "Anpassungen auf Dokumentebene [Office-Entwicklung in Visual Studio], Programmieren"
-  - "Anwendungsentwicklung [Office-Entwicklung in Visual Studio], Anpassungen auf Dokumentebene"
+title: Programming Document-Level Customizations | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- Sheet3
+- thisWorkbook
+- thisDocument
+- Sheet1
+- Sheet2
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- ThisDocument class
+- Sheet3 class
+- ThisWorkbook class
+- writing code for Office solutions
+- programming [Office development in Visual Studio], document-level customizations
+- Sheet1 class
+- Office applications [Office development in Visual Studio], document-level customizations
+- Sheet2 class
+- document-level customizations [Office development in Visual Studio], programming
+- application development [Office development in Visual Studio], document-level customizations
 ms.assetid: 6c421055-7bea-4db4-a4c9-539b8c78d4ee
 caps.latest.revision: 34
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 33
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 45b54e86e3b28c8cdd72f0f5821b4cab69f84c0e
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
+
 ---
-# Programmieren von Anpassungen auf Dokumentebene
-  Wenn Sie Microsoft Office Word oder Microsoft Office Excel mit einer Anpassung auf Dokumentebene erweitern, können Sie die folgenden Aufgaben ausführen:  
+# <a name="programming-document-level-customizations"></a>Programming Document-Level Customizations
+  When you extend Microsoft Office Word or Microsoft Office Excel by using a document-level customization, you can perform the following tasks:  
   
--   Automatisieren der Anwendung über deren Objektmodell  
+-   Automate the application by using its object model.  
   
--   Hinzufügen von Steuerelementen zur Oberfläche eines Dokuments  
+-   Add controls to the surface of the document.  
   
--   Aufrufen von VBA\-Code \(Visual Basic for Applications\) im Dokument aus der Anpassungsassembly  
+-   Call Visual Basic for Applications (VBA) code in the document from the customization assembly.  
   
--   Aufrufen von Code in der Anpassungsassembly aus VBA  
+-   Call code in the customization assembly from VBA.  
   
--   Verwalten bestimmter Aspekte des Dokuments, obwohl es sich auf einem Server befindet, auf dem Microsoft Office nicht installiert ist  
+-   Manage certain aspects of the document while it is on a server that does not have Microsoft Office installed.  
   
--   Anpassen der Benutzeroberfläche der Anwendung  
+-   Customize the user interface (UI) of the application.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Einige Aspekte beim Schreiben von Code in Projekten auf Dokumentebene unterscheiden sich von anderen Projekttypen in Visual Studio. Viele dieser Unterschiede haben mit der Art zu tun, wie die Office\-Objektmodelle im verwalteten Code verfügbar gemacht werden. Weitere Informationen finden Sie unter [Schreiben von Code in Office-Projektmappen](../vsto/writing-code-in-office-solutions.md).  
+ Some aspects of writing code in document-level projects are different from other types of projects in Visual Studio. Many of these differences are caused by the way the Office object models are exposed to managed code. For more information, see [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md).  
   
- Allgemeine Informationen zu Anpassungen auf Dokumentebene und anderen Typen von Projektmappen, die mit den Office\-Entwicklungstools in Visual Studio erstellt werden können, finden Sie unter [Übersicht über die Entwicklung von Office-Projektmappen &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
+ For general information about document-level customizations and other types of solutions you can create by using the Office development tools in Visual Studio, see [Office Solutions Development Overview &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
-## Verwenden der generierten Klassen in Projekten auf Dokumentebene  
- Wenn Sie ein Projekt auf Dokumentebene erstellen, generiert Visual Studio automatisch eine Klasse im Projekt, die Sie zum Schreiben von Code verwenden können. Visual Studio generiert unterschiedliche Klassen für Word und Excel:  
+## <a name="using-the-generated-classes-in-document-level-projects"></a>Using the Generated Classes in Document-Level Projects  
+ When you create a document-level project, Visual Studio automatically generates a class in the project that you can use to start writing your code. Visual Studio generates different classes for Word and Excel:  
   
--   In Projekten auf Dokumentebene für Word erhält die Klasse standardmäßig den Namen `ThisDocument`.  
+-   In document-level projects for Word, the class is called `ThisDocument` by default.  
   
--   Projekte auf Dokumentebene für Excel haben mehrere generierte Klassen: eine für die Arbeitsmappe und eine für jedes Arbeitsblatt. Standardmäßig lauten die Namen dieser Klassen folgendermaßen:  
+-   Document-level projects for Excel have multiple generated classes: one for the workbook itself, and one for each worksheet. By default, these classes have the following names:  
   
     -   `ThisWorkbook`  
   
@@ -72,107 +77,107 @@ caps.handback.revision: 33
   
     -   `Sheet3`  
   
- Die generierte Klasse beinhaltet Ereignishandler, die aufgerufen werden, wenn das Dokument geöffnet oder geschlossen wird. Um Code auszuführen, wenn das Dokument geöffnet wird, fügen Sie dem `Startup`\-Ereignishandler Code hinzu. Um Code auszuführen, unmittelbar bevor das Dokument geschlossen wird, fügen Sie dem `Shutdown`\-Ereignishandler Code hinzu. Weitere Informationen finden Sie unter [Ereignisse in Office-Projekten](../vsto/events-in-office-projects.md).  
+ The generated class includes event handlers that are called when the document is opened or closed. To run code when the document is opened, add code to the `Startup` event handler. To run code just before the document is closed, add code to the `Shutdown` event handler. For more information, see [Events in Office Projects](../vsto/events-in-office-projects.md).  
   
-### Grundlegendes zum Entwurf der generierten Klassen  
- In Projekten, die auf [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] abzielen, sind die Hostelementtypen in [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Schnittstellen, weshalb die generierten Klassen ihre Implementierung nicht aus ihnen ableiten können. Stattdessen werden für die generierten Klassen die meisten ihrer Member aus den folgenden Basisklassen abgeleitet:  
+### <a name="understanding-the-design-of-the-generated-classes"></a>Understanding the Design of the Generated Classes  
+ In projects that target the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] or the [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], the host item types in the [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] are interfaces, so the generated classes cannot derive their implementation from them. Instead, the generated classes derive most of their members from the following base classes:  
   
--   `ThisDocument` wird aus <xref:Microsoft.Office.Tools.Word.DocumentBase> abgeleitet.  
+-   `ThisDocument`: derives from <xref:Microsoft.Office.Tools.Word.DocumentBase>.  
   
--   `ThisWorkbook` wird aus <xref:Microsoft.Office.Tools.Excel.WorkbookBase> abgeleitet.  
+-   `ThisWorkbook`: derives from <xref:Microsoft.Office.Tools.Excel.WorkbookBase>.  
   
--   `Sheet` *n*: wird aus <xref:Microsoft.Office.Tools.Excel.WorksheetBase> abgeleitet.  
+-   `Sheet` *n*: derives from <xref:Microsoft.Office.Tools.Excel.WorksheetBase>.  
   
- Diese Basisklassen leiten alle Aufrufe an ihre Member zu internen Implementierungen der entsprechenden Hostelementschnittstellen in [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] um. Wenn Sie beispielsweise die <xref:Microsoft.Office.Tools.Word.DocumentBase.Protect%2A>\-Methode der `ThisDocument`\-Klasse aufrufen, leitet die <xref:Microsoft.Office.Tools.Word.DocumentBase>\-Klasse diesen Aufruf an die interne Implementierung der <xref:Microsoft.Office.Tools.Word.Document>\-Schnittstelle in [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] um.  
+ These base classes redirect all calls to their members to internal implementations of the corresponding host item interfaces in the [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. For example, if you call the <xref:Microsoft.Office.Tools.Word.DocumentBase.Protect%2A> method of the `ThisDocument` class, the <xref:Microsoft.Office.Tools.Word.DocumentBase> class redirects this call to the internal implementation of the <xref:Microsoft.Office.Tools.Word.Document> interface in the [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].  
   
-## Zugreifen auf das Objektmodell der Hostanwendung  
- Wenn Sie auf das Objektmodell der Hostanwendung zugreifen möchten, verwenden Sie Member der generierten Klasse in Ihrem Projekt. Jede dieser Klassen entspricht einem Objekt im Objektmodell von Excel oder Word, und sie enthalten einen Großteil derselben Eigenschaften, Methoden und Ereignisse. Beispielsweise stellt die `ThisDocument`\-Klasse in einem Projekt auf Dokumentebene für Word stellt einen Großteil derselben Member wie das <xref:Microsoft.Office.Interop.Word.Document>\-Objekt im Word\-Objektmodell bereit.  
+## <a name="accessing-the-object-model-of-the-host-application"></a>Accessing the Object Model of the Host Application  
+ To access the object model of the host application, use members of the generated class in your project. Each of these classes corresponds to an object in the object model of Excel or Word, and they contain most of the same properties, methods, and events. For example, the `ThisDocument` class in a document-level project for Word provides most of the same members as the <xref:Microsoft.Office.Interop.Word.Document> object in the Word object model.  
   
- Im folgenden Codebeispiel wird gezeigt, wie Sie mithilfe des Word\-Objektmodells das Dokument speichern, das Teil der Anpassung auf Dokumentebene für Word ist. Dieses Beispiel ist für die Ausführung über die `ThisDocument`\-Klasse bestimmt.  
+ The following code example shows how to use the Word object model to save the document that is part of a document-level customization for Word. This example is intended to be run from the `ThisDocument` class.  
   
 ```vb  
 Me.Save()  
 ```  
   
-```csharp  
+```cs  
 this.Save();  
 ```  
   
- Verwenden Sie für die Ausführung außerhalb der `ThisDocument`\-Klasse das `Globals`\-Objekt, um auf die `ThisDocument`\-Klasse zuzugreifen. Beispielsweise können Sie diesen Code zu einer Codedatei eines Aktionsbereichs hinzufügen, wenn Sie eine **Speichern**\-Schaltfläche in die Benutzeroberfläche des Aktionsbereichs einschließen möchten.  
+ To do the same thing from outside the `ThisDocument` class, use the `Globals` object to access the `ThisDocument` class. For example, you can add this code to an actions pane code file if you want to include a **Save** button in the actions pane UI.  
   
 ```vb  
 Globals.ThisDocument.Save()  
 ```  
   
-```csharp  
+```cs  
 Globals.ThisDocument.Save();  
 ```  
   
- Da die `ThisDocument`\-Klasse die meisten ihrer Member aus dem <xref:Microsoft.Office.Tools.Word.Document>\-Hostelement übernimmt, handelt es sich bei der in diesem Code aufgerufenen `Save`\-Methode tatsächlich um die <xref:Microsoft.Office.Tools.Word.Document.Save%2A>\-Methode des <xref:Microsoft.Office.Tools.Word.Document>\-Hostelements. Diese Methode entspricht der <xref:Microsoft.Office.Interop.Word._Document.Save%2A>\-Methode des <xref:Microsoft.Office.Interop.Word.Document>\-Objekts im Word\-Objektmodell.  
+ Because the `ThisDocument` class obtains most of its members from the <xref:Microsoft.Office.Tools.Word.Document> host item, the `Save` method that is called in this code is really the <xref:Microsoft.Office.Tools.Word.Document.Save%2A> method of the <xref:Microsoft.Office.Tools.Word.Document> host item. This method corresponds to the <xref:Microsoft.Office.Interop.Word._Document.Save%2A> method of the <xref:Microsoft.Office.Interop.Word.Document> object in the Word object model.  
   
- Weitere Informationen über das Verwenden der Objektmodelle von Word und Excel finden Sie unter [Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md) und [Übersicht über das Excel-Objektmodell](../vsto/excel-object-model-overview.md).  
+ For more information about using the object models of Word and Excel, see [Word Object Model Overview](../vsto/word-object-model-overview.md) and [Excel Object Model Overview](../vsto/excel-object-model-overview.md).  
   
- Weitere Informationen zum `Globals`\-Objekt finden Sie unter [Globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md).  
+ For more information about the `Globals` object, see [Global Access to Objects in Office Projects](../vsto/global-access-to-objects-in-office-projects.md).  
   
-## Hinzufügen von Steuerelementen zu Dokumenten  
- Wenn Sie die Benutzeroberfläche des Dokuments anpassen möchten, können Sie der Dokumentoberfläche Windows Forms\-Steuerelemente oder *Hoststeuerelemente* hinzufügen. Sie können Steuerelemente an Daten binden, Benutzerinformationen abfragen und auf Benutzeraktionen reagieren, indem Sie verschiedene Gruppen von Steuerelementen kombinieren und Code schreiben.  
+## <a name="adding-controls-to-documents"></a>Adding Controls to Documents  
+ To customize the UI of the document, you can add Windows Forms controls or *host controls* to the document surface. By combining different sets of controls and writing code, you can bind the controls to data, collect information from the user, and respond to user actions.  
   
- Hoststeuerelemente sind Klassen, die einige der Objekte im Word\-Objektmodell und im Excel\-Objektmodell erweitern. Zum Beispiel stellt das <xref:Microsoft.Office.Tools.Excel.ListObject>\-Hoststeuerelement alle Funktionen des <xref:Microsoft.Office.Interop.Excel.ListObject>\-Elements in Excel zur Verfügung. Allerdings hat das <xref:Microsoft.Office.Tools.Excel.ListObject>\-Hoststeuerelement weitere Ereignisse und Datenbindungsfunktionen.  
+ Host controls are classes that extend some of the objects in the Word and Excel object model. For example, the <xref:Microsoft.Office.Tools.Excel.ListObject> host control provides all of the functionality of the <xref:Microsoft.Office.Interop.Excel.ListObject> in Excel. However, the <xref:Microsoft.Office.Tools.Excel.ListObject> host control also has additional events and data binding capabilities.  
   
- Weitere Informationen finden Sie unter [Übersicht über Hostelemente und Hoststeuerelemente](../vsto/host-items-and-host-controls-overview.md) und [Übersicht über Windows Forms-Steuerelemente in Office-Dokumenten](../vsto/windows-forms-controls-on-office-documents-overview.md).  
+ For more information, see [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md) and [Windows Forms Controls on Office Documents Overview](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
-## Kombinieren von VBA und Anpassungen auf Dokumentebene  
- Sie können VBA\-Code in einem Dokument verwenden, das Teil einer Anpassung auf Dokumentebene ist. Sie können VBA\-Code im Dokument aus der Anpassungsassembly aufrufen, und Sie können für Ihr Projekt die Aktivierung des VBA\-Codes im Dokument konfigurieren, um Code in der Anpassungsassembly aufzurufen.  
+## <a name="combining-vba-and-document-level-customizations"></a>Combining VBA and Document-Level Customizations  
+ You can use VBA code in a document that is part of a document-level customization. You can call VBA code in the document from the customization assembly, and you can also configure your project to enable VBA code in the document to call code in the customization assembly.  
   
- Weitere Informationen finden Sie unter [Kombinieren von VBA und Anpassungen auf Dokumentebene](../vsto/combining-vba-and-document-level-customizations.md).  
+ For more information, see [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md).  
   
-## Verwalten von Dokumenten auf einem Server  
- Sie können verschiedene Aspekte von Anpassungen auf Dokumentebene auf einem Server verwalten, auf dem Microsoft Office Word oder Microsoft Office Excel nicht installiert ist. Beispielsweise können Sie auf Daten im Datencache des Dokuments zugreifen und diese Daten ändern. Sie können auch die Anpassungsassembly verwalten, die dem Dokument zugeordnet ist. Sie können beispielsweise die Assembly programmgesteuert aus dem Dokument entfernen, sodass das Dokument den Code nicht mehr ausführt, oder Sie können eine Assembly programmgesteuert an ein Dokument anfügen.  
+## <a name="managing-documents-on-a-server"></a>Managing Documents on a Server  
+ You can manage several different aspects of document-level customizations on a server that does not have Microsoft Office Word or Microsoft Office Excel installed. For example, you can access and modify data in the data cache of the document. You can also manage the customization assembly that is associated with the document. For example, you can programmatically remove the assembly from the document so that the document no longer runs your code, or you can programmatically attach an assembly to a document.  
   
- Weitere Informationen finden Sie unter [Verwalten von Dokumenten auf einem Server mit der ServerDocument-Klasse](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md).  
+ For more information, see [Managing Documents on a Server by Using the ServerDocument Class](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md).  
   
-## Anpassen der Benutzeroberfläche von Microsoft Office\-Anwendungen  
- Sie können die Benutzeroberfläche von Word und Excel mithilfe einer Anpassung auf Dokumentebene folgendermaßen anpassen:  
+## <a name="customizing-the-user-interface-of-microsoft-office-applications"></a>Customizing the User Interface of Microsoft Office Applications  
+ You can customize the UI of Word and Excel in the following ways by using a document-level customization:  
   
--   Hinzufügen von Hoststeuerelementen oder Windows Forms\-Steuerelementen zur Dokumentoberfläche  
+-   Add host controls or Windows Forms controls to the document surface.  
   
-     Weitere Informationen finden Sie unter [Automatisieren von Word mithilfe von erweiterten Objekten](../vsto/automating-word-by-using-extended-objects.md), [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md) und [Übersicht über Windows Forms-Steuerelemente in Office-Dokumenten](../vsto/windows-forms-controls-on-office-documents-overview.md).  
+     For more information, see [Automating Word by Using Extended Objects](../vsto/automating-word-by-using-extended-objects.md), [Automating Excel by Using Extended Objects](../vsto/automating-excel-by-using-extended-objects.md), and [Windows Forms Controls on Office Documents Overview](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
--   Hinzufügen eines Aktionsbereichs zum Dokument  
+-   Add an actions pane to the document.  
   
-     Weitere Informationen finden Sie unter [Aktionsbereichsübersicht](../vsto/actions-pane-overview.md).  
+     For more information, see [Actions Pane Overview](../vsto/actions-pane-overview.md).  
   
--   Hinzufügen von benutzerdefinierten Registerkarten zum Menüband  
+-   Add custom tabs to the ribbon.  
   
-     Weitere Informationen finden Sie unter [Übersicht über die Multifunktionsleiste](../vsto/ribbon-overview.md).  
+     For more information, see [Ribbon Overview](../vsto/ribbon-overview.md).  
   
--   Hinzufügen benutzerdefinierter Gruppen zu einer integrierten Registerkarte auf dem Menüband  
+-   Add custom groups to a built-in tab on the ribbon.  
   
-     Weitere Informationen finden Sie unter [Gewusst wie: Anpassen einer integrierten Registerkarte](../vsto/how-to-customize-a-built-in-tab.md).  
+     For more information, see [How to: Customize a Built-in Tab](../vsto/how-to-customize-a-built-in-tab.md).  
   
- Weitere Informationen über das Anpassen der Benutzeroberfläche von Microsoft Office\-Anwendungen finden Sie unter [Anpassung der Office-Benutzeroberfläche](../vsto/office-ui-customization.md).  
+ For more information about customizing the UI of Microsoft Office applications, see [Office UI Customization](../vsto/office-ui-customization.md).  
   
-## Abrufen von erweiterten Objekten aus systemeigenen Office\-Objekten in Anpassungen auf Dokumentebene  
- Viele Ereignishandler für Office\-Ereignisse empfangen ein systemeigenes Office\-Objekt, das die Arbeitsmappe, das Arbeitsblatt oder das Dokument darstellt, durch das das Ereignis ausgelöst wurde. In einigen Fällen möchten Sie eventuell Code nur dann ausführen, wenn das Ereignis durch die Arbeitsmappe oder das Dokument in Ihrer Anpassung auf Dokumentebene ausgelöst wurde. So könnte es sein, dass Sie in einer Anpassung auf Dokumentebene für Excel bestimmten Code nur ausführen möchten, wenn der Benutzer eines der Arbeitsblätter in der angepassten Arbeitsmappe aktiviert, diesen Code aber nicht ausführen möchten, wenn der Benutzer ein Arbeitsblatt in einer anderen Arbeitsmappe aktiviert, die zufällig zur gleichen Zeit geöffnet ist.  
+## <a name="getting-extended-objects-from-native-office-objects-in-document-level-customizations"></a>Getting Extended Objects from Native Office Objects in Document-Level Customizations  
+ Many event handlers for Office events receive a native Office object that represents the workbook, worksheet, or document that raised the event. In some cases, you might want to run some code only if the workbook or document in your document-level customization raised the event. For example, in a document-level customization for Excel, you might want to run some code when the user activates one of the worksheets in the customized workbook, but not when the user activates a worksheet in some other workbook that happens to be open at the same time.  
   
- Wenn Sie ein systemeigenes Office\-Objekt haben, können Sie testen, ob das betreffende Objekt in einer Anpassung auf Dokumentebene zu einem *Hostelement* oder *Hoststeuerelement* erweitert wurde. Hostelemente und Hoststeuerelemente sind Typen, die von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] bereitgestellt werden und Funktionalität zu Objekten hinzufügen, die als systemeigene Elemente im Word\- oder Excel\-Objektmodell vorhanden sind \(sogenannte *systemeigene Office\-Objekte*\). Hostelemente und Hoststeuerelemente werden zusammen auch als *erweiterte Objekte* bezeichnet. Weitere Informationen zu Hostelementen und Hoststeuerelementen, finden Sie unter [Übersicht über Hostelemente und Hoststeuerelemente](../vsto/host-items-and-host-controls-overview.md).  
+ When you have a native Office object, you can test whether that object has been extended into a *host item* or *host control* in a document-level customization. Host items and host controls are types provided by the [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] that add functionality to objects that exist natively in the Word or Excel object models (called *native Office objects*). Collectively, host items and host controls are also called *extended objects*. For more information about host items and host controls, see [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
   
-## Grundlegendes zu den Methoden GetVstoObject und HasVstoObject  
- Um ein systemeigenes Office\-Objekt zu testen, verwenden Sie in Ihrem Projekt die HasVstoObject\- und die GetVstoObject\-Methode:  
+## <a name="understanding-the-getvstoobject-and-hasvstoobject-methods"></a>Understanding the GetVstoObject and HasVstoObject Methods  
+ To test a native Office object, use the HasVstoObject and GetVstoObject methods in your project:  
   
--   Wenn Sie ermitteln möchten, ob das systemeigene Office\-Objekt in Ihrer Anpassung ein erweitertes Objekt hat, verwenden Sie die HasVstoObject\-Methode. Diese Methode gibt **true** zurück, wenn das systemeigene Office\-Objekt ein erweitertes Objekt hat, andernfalls gibt sie **false** zurück.  
+-   Use the HasVstoObject method if you want to determine whether the native Office object has an extended object in your customization. This method returns **true** if the native Office object has an extended object, and **false** otherwise.  
   
--   Wenn Sie das erweiterte Objekt für ein systemeigenes Office\-Objekt abrufen möchten, verwenden Sie die GetVstoObject\-Methode. Diese Methode gibt ein <xref:Microsoft.Office.Tools.Excel.ListObject>\-, <xref:Microsoft.Office.Tools.Excel.Workbook>\-, <xref:Microsoft.Office.Tools.Excel.Worksheet>\- oder <xref:Microsoft.Office.Tools.Word.Document>\-Objekt zurück, wenn das angegebene systemeigene Office\-Objekt ein solches Objekt hat. Andernfalls gibt GetVstoObject den Wert **null** zurück. Die GetVstoObject\-Methode gibt z. B. ein <xref:Microsoft.Office.Tools.Word.Document> zurück, wenn das angegebene <xref:Microsoft.Office.Interop.Word.Document>\-Objekt das zugrunde liegende Objekt für das Dokument in Ihrem Word\-Dokumentprojekt ist.  
+-   Use the GetVstoObject method if you want to get the extended object for a native Office object. This method returns a <xref:Microsoft.Office.Tools.Excel.ListObject>, <xref:Microsoft.Office.Tools.Excel.Workbook>, <xref:Microsoft.Office.Tools.Excel.Worksheet>, or <xref:Microsoft.Office.Tools.Word.Document> object if the specified native Office object has one. Otherwise, GetVstoObject returns **null**. For example, the GetVstoObject method returns a <xref:Microsoft.Office.Tools.Word.Document> if the specified <xref:Microsoft.Office.Interop.Word.Document> is the underlying object for the document in your Word document project.  
   
- In Projekten auf Dokumentebene kann die GetVstoObject\-Methode nicht dazu verwendet werden, zur Laufzeit ein neues <xref:Microsoft.Office.Tools.Excel.Workbook>\-, <xref:Microsoft.Office.Tools.Excel.Worksheet>\- oder <xref:Microsoft.Office.Tools.Word.Document>\-Hostelement zu erstellen. Sie können diese Methode nur für den Zugriff auf vorhandene Hostelemente verwenden, die zur Entwurfszeit in Ihrem Projekt generiert werden. Wenn Sie neue Hostelemente zur Laufzeit erstellen möchten, müssen Sie ein VSTO\-Add\-In\-Projekt entwickeln. Weitere Informationen finden Sie unter [Programmgesteuerte Einschränkungen von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md) und [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ In document-level projects, you cannot use the GetVstoObject method to create a new <xref:Microsoft.Office.Tools.Excel.Workbook>, <xref:Microsoft.Office.Tools.Excel.Worksheet>, or <xref:Microsoft.Office.Tools.Word.Document> host item at run time. You can use this method only to access existing host items that are generated in your project at design time. If you want to create new host items at run time, you must develop an VSTO Add-in project. For more information, see [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md) and [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
-## Verwenden der Methoden GetVstoObject und HasVstoObject  
- Wenn Sie die HasVstoObject\- oder die GetVstoObject\-Methode aufrufen möchten, verwenden Sie die Globals.Factory.GetVstoObject\- oder die Globals.Factory.HasVstoObject\-Methode, und übergeben Sie an diese das systemeigene Word\- oder Excel\-Objekt \(etwa ein <xref:Microsoft.Office.Interop.Word.Document> oder ein <xref:Microsoft.Office.Interop.Excel.Worksheet>\-Objekt\), das Sie testen möchten.  
+## <a name="using-the-getvstoobject-and-hasvstoobject-methods"></a>Using the GetVstoObject and HasVstoObject Methods  
+ To call the HasVstoObject and GetVstoObject method, use the Globals.Factory.GetVstoObject or Globals.Factory.HasVstoObject method, and pass in the native Word or Excel object (such as a <xref:Microsoft.Office.Interop.Word.Document> or <xref:Microsoft.Office.Interop.Excel.Worksheet>) that you want to test.  
   
-## Siehe auch  
- [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)   
- [Kombinieren von VBA und Anpassungen auf Dokumentebene](../vsto/combining-vba-and-document-level-customizations.md)   
- [Verwalten von Dokumenten auf einem Server mit der ServerDocument-Klasse](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
- [Schreiben von Code in Office-Projektmappen](../vsto/writing-code-in-office-solutions.md)  
+## <a name="see-also"></a>See Also  
+ [Controls on Office Documents](../vsto/controls-on-office-documents.md)   
+ [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md)   
+ [Managing Documents on a Server by Using the ServerDocument Class](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
+ [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)  
   
   

@@ -1,51 +1,68 @@
 ---
-title: "IDebugArrayField::GetNumberOfElements | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugArrayField::GetNumberOfElements"
-helpviewer_keywords: 
-  - "IDebugArrayField::GetNumberOfElements-Methode"
+title: IDebugArrayField::GetNumberOfElements | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugArrayField::GetNumberOfElements
+helpviewer_keywords:
+- IDebugArrayField::GetNumberOfElements method
 ms.assetid: a1961ef3-d69d-4022-b8c9-b9cfb9811345
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugArrayField::GetNumberOfElements
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: a24b86049701a9aead02c068d61f6ef823e17c57
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Ruft die Anzahl der Elemente im Array ab.  
+---
+# <a name="idebugarrayfieldgetnumberofelements"></a>IDebugArrayField::GetNumberOfElements
+Gets the number of elements in the array.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetNumberOfElements(   
-   DWORD* pdwNumElements  
+HRESULT GetNumberOfElements(   
+   DWORD* pdwNumElements  
 );  
 ```  
   
-```c#  
+```cs  
 int GetNumberOfElements(  
-   out uint pdwNumElements  
+   out uint pdwNumElements  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `pdwNumElements`  
- \[out\]  Gibt die Anzahl der Elemente im Array zurück.  
+ [out] Returns the number of elements in the array.  
   
-## Rückgabewert  
- Bei Erfolg gibt S\_OK zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
-## Hinweise  
- Der zurückgegebene Wert ist die Gesamtzahl der Elemente im Array, unabhängig von der Anzahl der Dimensionen.  
+## <a name="remarks"></a>Remarks  
+ The value returned is the total number of elements in the array, regardless of the number of dimensions.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

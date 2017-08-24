@@ -1,52 +1,69 @@
 ---
-title: "IPropertyProxyEESide::InitSourceDataProvider | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IPropertyProxyEESide::InitSourceDataProvider"
-helpviewer_keywords: 
-  - "IPropertyProxyEESide::InitSourceDataProvider"
+title: IPropertyProxyEESide::InitSourceDataProvider | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IPropertyProxyEESide::InitSourceDataProvider
+helpviewer_keywords:
+- IPropertyProxyEESide::InitSourceDataProvider
 ms.assetid: 5156f593-5052-4e3a-9d02-081916fb342d
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IPropertyProxyEESide::InitSourceDataProvider
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 023f5a8b68bc1d570d3d8eea81328f745bb7df9e
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Initialisiert die Quelldaten für dieses Objekt und gibt ein Objekt zurück, das die ursprünglichen Daten enthält.  
+---
+# <a name="ipropertyproxyeesideinitsourcedataprovider"></a>IPropertyProxyEESide::InitSourceDataProvider
+Initializes the source data for this object and returns an object containing the initial data.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT InitSourceDataProvider(  
-   IEEDataStorage** dataOut  
+   IEEDataStorage** dataOut  
 );  
 ```  
   
-```c#  
+```cs  
 int InitSourceDataProvider(  
-   out IEEDataStorage dataOut  
+   out IEEDataStorage dataOut  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `dataOut`  
- \[out\]  Gibt ein Objekt zurück [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)  
+ [out] Returns an [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) object  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Hinweise  
- Diese Methode hat, was erforderlich ist, um ein Objekt zu initialisieren, sodass es eine [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)\-Schnittstelle für Daten des Objekts zurückgeben kann.  Dies ermöglicht die von einer Typ schnellansicht angezeigt werden und darf, wenn es Daten des Objekts geändert.  
+## <a name="remarks"></a>Remarks  
+ This method does whatever is necessary to initialize an object so it can return an [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) interface on the object's data. This allows the object's data to be viewed and, if allowed, changed by a type visualizer.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

@@ -1,69 +1,86 @@
 ---
-title: "IDebugEngineProgram2::WatchForThreadStep | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngineProgram2::WatchForThreadStep"
-helpviewer_keywords: 
-  - "IDebugEngineProgram2::WatchForThreadStep"
+title: IDebugEngineProgram2::WatchForThreadStep | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugEngineProgram2::WatchForThreadStep
+helpviewer_keywords:
+- IDebugEngineProgram2::WatchForThreadStep
 ms.assetid: b70922a3-1313-409a-b3b7-50c7cd13e394
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugEngineProgram2::WatchForThreadStep
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 965b7866e0afcf0de99a71643d995591bd6ff524
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Beobachtet \(oder bei der Ausführung abgebrochen, zur Ausführung\) zu überwachen, die auf dem angegebenen Thread zu fungieren.  
+---
+# <a name="idebugengineprogram2watchforthreadstep"></a>IDebugEngineProgram2::WatchForThreadStep
+Watches for execution (or stops watching for execution) to occur on the given thread.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT WatchForThreadStep(   
-   IDebugProgram2* pOriginatingProgram,  
-   DWORD           dwTid,  
-   BOOL            fWatch,  
-   DWORD           dwFrame  
+HRESULT WatchForThreadStep(   
+   IDebugProgram2* pOriginatingProgram,  
+   DWORD           dwTid,  
+   BOOL            fWatch,  
+   DWORD           dwFrame  
 );  
 ```  
   
-```c#  
-int WatchForThreadStep(   
-   IDebugProgram2 pOriginatingProgram,  
-   uint           dwTid,  
-   int            fWatch,  
-   uint           dwFrame  
+```cs  
+int WatchForThreadStep(   
+   IDebugProgram2 pOriginatingProgram,  
+   uint           dwTid,  
+   int            fWatch,  
+   uint           dwFrame  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `pOriginatingProgram`  
- \[in\]  Ein [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)\-Objekt, das das Programm hergestellt wird, darstellt.  
+ [in] An [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) object representing the program being stepped.  
   
  `dwTid`  
- \[in\]  Gibt den Bezeichner des Threads auf, um zu überwachen.  
+ [in] Specifies the identifier of the thread to watch.  
   
  `fWatch`  
- \[in\]  Ungleich 0 \(`TRUE`\) bedeutet, der den Einstieg zur Ausführung auf dem Thread überwacht, der von `dwTid`identifiziert wird. Andernfalls`FALSE`\(null\) bedeutet, der zum Beenden der Ausführung auf `dwTid`überwacht.  
+ [in] Non-zero (`TRUE`) means start watching for execution on the thread identified by `dwTid`; otherwise, zero (`FALSE`) means stop watching for execution on `dwTid`.  
   
  `dwFrame`  
- \[in\]  Gibt einen Frame Index an, der den Typ des Schritts steuert.  Wenn dieser Wert ist null \(0\), wird der Schritt im Schritt ist „Typ“ ist und das Programm beendet werden soll, sobald der Thread, der durch `dwTid` identifiziert wird, ausgeführt wird.  Gleich wenn `dwFrame` ungleich 0 \(null\) ist, wird der Schritt überspringen „Typ“ und das Programm beendet werden soll, wenn der Thread, der identifiziert wird, in `dwTid` Ausführung Rahmen, deren Index ist oder auf dem Stapel als `dwFrame`höher.  
+ [in] Specifies a frame index that controls the step type. When this is value is zero (0), the step type is "step into" and the program should stop whenever the thread identified by `dwTid` executes. When `dwFrame` is non-zero, the step type is "step over" and the program should stop only if the thread identified by `dwTid` is running in a frame whose index is equal to or higher on the stack than `dwFrame`.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Hinweise  
- Wenn die Programmdebuginformationen Schritte des Managers der Sitzung \(SDM\) eines Programms, identifiziert durch den `pOriginatingProgram`\-Parameter, es alle anderen angefügten Programme benachrichtigt, indem Sie diese Methode aufrufen.  
+## <a name="remarks"></a>Remarks  
+ When the session debug manager (SDM) steps a program, identified by the `pOriginatingProgram` parameter, it notifies all other attached programs by calling this method.  
   
- Diese Methode ist nur anwendbar schrittweisen Thread Gleich soll.  
+ This method is applicable only to same-thread stepping.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

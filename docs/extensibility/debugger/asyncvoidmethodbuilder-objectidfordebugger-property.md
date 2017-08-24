@@ -1,39 +1,55 @@
 ---
-title: "AsyncVoidMethodBuilder.ObjectIdForDebugger-Eigenschaft | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "ObjectIdForDbugger-Eigenschaft, AsyncVoidMethodBuilder-Struktur [Debugmodule [.NET Framework]"
+title: AsyncVoidMethodBuilder.ObjectIdForDebugger Property | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- ObjectIdForDbugger property, AsyncVoidMethodBuilder structure [.NET Framework debug engines]
 ms.assetid: 97c48c49-3fb2-4778-accd-8585fa4feabf
 caps.latest.revision: 3
-caps.handback.revision: 3
-ms.author: "gregvanl"
-manager: "ghogen"
----
-# AsyncVoidMethodBuilder.ObjectIdForDebugger-Eigenschaft
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: d9df425f8b0c26dfff73a71cf114d6ee95809d41
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Ruft ein Objekt, das zur eindeutigen Identifizierung von diesem Generator für den Debugger verwendet werden kann.  
+---
+# <a name="asyncvoidmethodbuilderobjectidfordebugger-property"></a>AsyncVoidMethodBuilder.ObjectIdForDebugger Property
+Gets an object that may be used to uniquely identify this builder to the debugger.  
   
  **Namespace:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
- **Assembly:** Mscorlib \(in "mscorlib.dll"\)  
+ **Assembly:** mscorlib (in mscorlib.dll)  
   
- Da Sie diesen internen Member von .NET Framework zugreifen können, wird die folgende Syntax gemeinsam Intermediate Language \(CIL\) bereitgestellt.  
+ Because you cannot access this internal member from the .NET Framework, the following syntax is provided in Common Intermediate Language (CIL).  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```c#  
+```cs  
 private object ObjectIdForDebugger  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>   
- [Parallelen Erweiterung Internals für .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+ [Parallel Extension Internals for the .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

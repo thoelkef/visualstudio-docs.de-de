@@ -1,66 +1,83 @@
 ---
-title: "IDebugField::GetExtendedInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugField::GetExtendedInfo"
-helpviewer_keywords: 
-  - "IDebugField::GetExtendedInfo-Methode"
+title: IDebugField::GetExtendedInfo | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugField::GetExtendedInfo
+helpviewer_keywords:
+- IDebugField::GetExtendedInfo method
 ms.assetid: 46c0dd4d-4fd5-4efd-a908-71e4248e8e8d
 caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
----
-# IDebugField::GetExtendedInfo
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: f37bc822231380dd5dc5c07cdf0d93b13b919c88
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Diese Methode ruft erweiterte Informationen über ein Feld ab.  
+---
+# <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
+This method gets extended information about a field.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetExtendedInfo(   
-   REFGUID guidExtendedInfo,  
-   BYTE**  prgBuffer,  
-   DWORD*  pdwLen  
+HRESULT GetExtendedInfo(   
+   REFGUID guidExtendedInfo,  
+   BYTE**  prgBuffer,  
+   DWORD*  pdwLen  
 );  
 ```  
   
-```c#  
+```cs  
 int GetExtendedInfo(  
-   ref Guid guidExtendedInfo,   
-   IntPtr[] prgBuffer,   
-   ref uint pdwLen  
+   ref Guid guidExtendedInfo,   
+   IntPtr[] prgBuffer,   
+   ref uint pdwLen  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `guidExtendedInfo`  
- \[in\]  Wählt die Informationen aus der zurückgegeben werden soll.  Gültige Werte sind:  
+ [in] Selects the information to be returned. Valid values are:  
   
-|Wert|Beschreibung|  
-|----------|------------------|  
-|`guidConstantValue`|Der Wert als Bytesequenz.|  
-|`guidConstantType`|Der Typ als Typsignatur.|  
+|Value|Description|  
+|-----------|-----------------|  
+|`guidConstantValue`|The value as a sequence of bytes.|  
+|`guidConstantType`|The type as a type signature.|  
   
  `prgBuffer`  
- \[out\]  Gibt die erweiterten Informationen zurück.  
+ [out] Returns the extended information.  
   
  `pdwLen`  
- \[in, out\]  Gibt die Größe der erweiterten Informationen in Bytes zurück.  
+ [in, out] Returns the size of the extended information, in bytes.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Hinweise  
- Derzeit gibt diese Methode nur den Typ oder den Wert einer Konstante zurück.  Der Aufrufer muss den Puffer austauschen, der in `prgBuffer` zurückgegeben wird, indem `CoTaskMemFree`\-Funktion COM \(C\+\+\) oder <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> \(C\#\) aufruft.  
+## <a name="remarks"></a>Remarks  
+ Currently, this method returns only the type or value of a constant. The caller must free the buffer returned in `prgBuffer` by calling COM's `CoTaskMemFree` function (C++) or <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> (C#).  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

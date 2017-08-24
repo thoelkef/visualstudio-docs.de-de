@@ -1,52 +1,69 @@
 ---
-title: "IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie"
-helpviewer_keywords: 
-  - "IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie"
+title: IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
+helpviewer_keywords:
+- IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
 ms.assetid: 07b20866-e598-4783-9ecc-6aa8625c8804
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 04c6586dd35cb8a740b906679901c281e03fb21f
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Wird aufgerufen, wenn die Verarbeitung einer abgefangenen Ausnahme abgeschlossen wurde.  
+---
+# <a name="idebuginterceptexceptioncompleteevent2getinterceptcookie"></a>IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
+Called when the processing of an intercepted exception has completed.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT GetInterceptCookie(  
-   UINT64* pqwCookie  
+   UINT64* pqwCookie  
 );  
 ```  
   
-```c#  
+```cs  
 int GetInterceptCookie(  
-   out ulong pqwCookie  
+   out ulong pqwCookie  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `pqwCookie`  
- \[out\]  Eindeutiger Wert, der der Ausnahme, dass zugeordnet ist, abgefangen wurde.  
+ [out] Unique value that is associated with the exception that was intercepted.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. gibt andernfalls Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise returns error code.  
   
-## Hinweise  
- Nachdem die Behandlung einer abgefangene Ausnahme [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)\-Methode abgeschlossen hat, sendet er das [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)\-Ereignis.  Der Handler kann die `GetInterceptCookie`\-Methode verwenden, um den eindeutigen Wert abzurufen, der der Ausnahme zugeordnet wird \(der gleiche Wert der `InterceptCurrentException`Methode übergeben\).  
+## <a name="remarks"></a>Remarks  
+ After the [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) method has completed handling of an intercepted exception, it sends the [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md) event. The handler can use the `GetInterceptCookie` method to retrieve the unique value associated with the exception (the same value passed to the `InterceptCurrentException` method).  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)   
  [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)

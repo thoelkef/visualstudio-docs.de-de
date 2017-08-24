@@ -1,68 +1,85 @@
 ---
-title: "SYMBOL_SEARCH_INFO_FIELDS | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SYMBOL_SEARCH_INFO_FIELDS"
-helpviewer_keywords: 
-  - "SYMBOL_SEARCH_INFO_FIELDS-enumeration"
+title: SYMBOL_SEARCH_INFO_FIELDS | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- SYMBOL_SEARCH_INFO_FIELDS
+helpviewer_keywords:
+- SYMBOL_SEARCH_INFO_FIELDS enumeration
 ms.assetid: bce35af0-722d-46d4-afa6-eaae598c51ff
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# SYMBOL_SEARCH_INFO_FIELDS
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: c663d0d7cd71c343af61c06b21c18854dd1c4033
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Gibt die Art von Symbolinformationen an, der abgerufen werden soll.  
+---
+# <a name="symbolsearchinfofields"></a>SYMBOL_SEARCH_INFO_FIELDS
+Specifies the kind of symbol information to retrieve.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 enum enum_SYMBOL_SEARCH_INFO_FIELDS  
 {  
-   SSIF_NONE                = 0x00000000,  
-   SSIF_VERBOSE_SEARCH_INFO = 0x00000001  
+   SSIF_NONE                = 0x00000000,  
+   SSIF_VERBOSE_SEARCH_INFO = 0x00000001  
 };  
 typedef DWORD SYMBOL_SEARCH_INFO_FIELDS;  
 ```  
   
-```c#  
+```cs  
 public enum enum_SYMBOL_SEARCH_INFO_FIELDS  
 {  
-   SSIF_NONE                = 0x00000000,  
-   SSIF_VERBOSE_SEARCH_INFO = 0x00000001  
+   SSIF_NONE                = 0x00000000,  
+   SSIF_VERBOSE_SEARCH_INFO = 0x00000001  
 };  
   
 ```  
   
-## Mitglieder  
- SSIF\_NONE  
- Gibt keine Flags an  
+## <a name="members"></a>Members  
+ SSIF_NONE  
+ Indicates no flags  
   
- SSIF\_VERBOSE\_SEARCH\_INFORMATION  
- Gibt alle Suchpfade zurück, die zum Suchen von Symbolen verwendet werden  
+ SSIF_VERBOSE_SEARCH_INFO  
+ Returns all search paths used for finding symbols  
   
-## Hinweise  
- Diese Flags werden als Parameter übergeben, der ["Getsymbolinfo"](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)\-Methode, um die zurückgegebene Menge zu bestimmen.  
+## <a name="remarks"></a>Remarks  
+ These flags are passed as a parameter to the [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) method to determine the amount of information returned.  
   
 > [!NOTE]
->  Derzeit wird nur `SSIF_VERBOSE_SEARCH_INFO` unterstützt werden, und es muss als `dwFlags``IDebugModule3::GetSymbolInfo`Parameter angegeben werden.  Alle anderen Werte geben einen Fehler zurück.  
+>  Currently, only `SSIF_VERBOSE_SEARCH_INFO` is supported, and it must be specified as the `dwFlags` parameter to `IDebugModule3::GetSymbolInfo`. All other values return an error.  
   
-## Anforderungen  
+## <a name="requirements"></a>Requirements  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
- [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- ["Getsymbolinfo"](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)

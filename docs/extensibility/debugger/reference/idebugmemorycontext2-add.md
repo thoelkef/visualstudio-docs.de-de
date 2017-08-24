@@ -1,59 +1,76 @@
 ---
-title: "IDebugMemoryContext2::Add | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugMemoryContext2::Add"
-helpviewer_keywords: 
-  - "IDebugMemoryContext2::Add-Methode"
-  - "Add-Methode"
+title: IDebugMemoryContext2::Add | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugMemoryContext2::Add
+helpviewer_keywords:
+- IDebugMemoryContext2::Add method
+- Add method
 ms.assetid: 3c47e646-ce9e-4dd3-8f1a-6dbd3827d407
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
----
-# IDebugMemoryContext2::Add
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 563a95bac55e2f29daee33cb6bbefe8019a6c8b9
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Fügt den angegebenen Wert dem aktuellen Kontext hinzu und gibt einen neuen Kontext zurück.  
+---
+# <a name="idebugmemorycontext2add"></a>IDebugMemoryContext2::Add
+Adds the specified value to the current context and returns a new context.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT Add(   
-   UINT64                 dwCount,  
-   IDebugMemoryContext2** ppMemCxt  
+HRESULT Add(   
+   UINT64                 dwCount,  
+   IDebugMemoryContext2** ppMemCxt  
 );  
 ```  
   
-```c#  
+```cs  
 int Add(  
-   ulong                    dwCount,   
-   out IDebugMemoryContext2 ppMemCxt  
+   ulong                    dwCount,   
+   out IDebugMemoryContext2 ppMemCxt  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `dwCount`  
- \[in\]  Der dem aktuellen Kontext zu addierende Wert.  
+ [in] The value to add to the current context.  
   
  `ppMemCxt`  
- \[out\]  Gibt ein neues [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)\-Objekt zurück.  
+ [out] Returns a new [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) object.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Hinweise  
- Ein Kontext ist eine Adresse des Arbeitsspeichers, daher einen Wert in eine Adresse hinzugefügt werden, erzeugt eine neue Adresse, die eine neue Oberfläche Kontext erfordert.  
+## <a name="remarks"></a>Remarks  
+ A memory context is an address, so adding a value to an address produces a new address that requires a new context interface.  
   
- Diese Methode muss einen neuen Kontext immer erzeugen, auch wenn die resultierende Adresse außerhalb des Speichers entspricht, der mit diesem Kontext verknüpft ist.  Die einzige Ausnahme liegt vor, wenn kein Arbeitsspeicher für den neuen Kontext zugeordnet werden kann, oder wenn `ppMemCxt` ist ein NULL\-Wert \(der ein Fehler aufgetreten ist\).  
+ This method must always produce a new context, even if the resulting address is outside the memory space associated with this context. The only exception to this is if no memory can be allocated for the new context or if `ppMemCxt` is a null value (which is an error).  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

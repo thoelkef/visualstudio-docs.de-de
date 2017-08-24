@@ -1,51 +1,68 @@
 ---
-title: "IDebugObject2::GetBackingFieldForProperty | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugObject2::GetBackingFieldForProperty"
-helpviewer_keywords: 
-  - "IDebugObject2::GetBackingFieldForProperty-Methode"
+title: IDebugObject2::GetBackingFieldForProperty | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugObject2::GetBackingFieldForProperty
+helpviewer_keywords:
+- IDebugObject2::GetBackingFieldForProperty method
 ms.assetid: e72c6338-5573-4fad-8075-f3ade3435424
 caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
----
-# IDebugObject2::GetBackingFieldForProperty
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: b26fa0f7029a8ac004fa20c0cc994afe20938235
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Ruft das Feld oder die Variable \(sofern vorhanden\) ab, die diese Eigenschaft unterstützen, die durch dieses Objekt dargestellt wird.  
+---
+# <a name="idebugobject2getbackingfieldforproperty"></a>IDebugObject2::GetBackingFieldForProperty
+Gets the field or variable (if any) that may be backing the property represented by this object.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT GetBackingFieldForProperty(  
-   IDebugObject2** ppObject  
+HRESULT GetBackingFieldForProperty(  
+   IDebugObject2** ppObject  
 );  
 ```  
   
-```c#  
-int GetBackingFieldForProperty(  
-   out IDebugObject2 ppObject  
+```cs  
+int GetBackingFieldForProperty(  
+   out IDebugObject2 ppObject  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `ppObject`  
- \[out\]  Ein [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)\-Objekt, das das dahinter liegende Feld beschreibt.  
+ [out] An [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) object describing the backing field.  
   
-## Rückgabewert  
- Bei Erfolg gibt S\_OK zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
-## Hinweise  
- Das [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)\-Objekt stellt eine Eigenschaft Klassen von verwaltetem Code. h. eine Methode mit einem get\- und\/oder einem set\-Accessor dar.  Solche Eigenschaften müssen im Allgemeinen eine Variable, um den Wert, der von der Eigenschaft bearbeitet wird.  Diese Variable wird als das dahinter liegende Feld.  Wenn kein dahinter liegende Feld für das Objekt vorhanden ist, stellen Sie sicher, einen NULL\-Wert zurückzugeben: einige Aufrufer den Rückgabewert nicht unbedingt beachten, sondern stattdessen überprüfen, um zu ermitteln, ob ein NULL\-Wert in `ppObject`zurückgegeben wurde.  
+## <a name="remarks"></a>Remarks  
+ The [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) object represents a managed code class property, that is, a method with a get and/or set accessor. Such properties generally require a variable to contain the value manipulated by the property. This variable is known as the backing field. If there is no backing field for the object, then make sure to return a null value: some callers may not pay attention to the return value but will instead look to see if a null value was returned in `ppObject`.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

@@ -1,49 +1,66 @@
 ---
-title: "IDebugPortSupplier2::EnumPorts | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPortSupplier2::EnumPorts"
-helpviewer_keywords: 
-  - "IDebugPortSupplier2::EnumPorts"
+title: IDebugPortSupplier2::EnumPorts | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugPortSupplier2::EnumPorts
+helpviewer_keywords:
+- IDebugPortSupplier2::EnumPorts
 ms.assetid: 88b57fd2-eba1-44fa-bd34-cf2ad2b1ff87
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugPortSupplier2::EnumPorts
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 00bbf3e76c6075dca5e53fa6f8ad0135aeb24ff9
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Ruft eine Liste mit allen Anschlüssen ab, die von einem Anschlusslieferanten angegeben werden.  
+---
+# <a name="idebugportsupplier2enumports"></a>IDebugPortSupplier2::EnumPorts
+Retrieves a list of all the ports supplied by a port supplier.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT EnumPorts(   
-   IEnumDebugPorts2** ppEnum  
+HRESULT EnumPorts(   
+   IEnumDebugPorts2** ppEnum  
 );  
 ```  
   
-```c#  
-int EnumPorts(   
-   out IEnumDebugPorts2 ppEnum  
+```cs  
+int EnumPorts(   
+   out IEnumDebugPorts2 ppEnum  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `ppEnum`  
- \[out\]  Gibt ein [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)\-Objekt zurück, das eine Liste mit den angegebenen Ports enthält.  
+ [out] Returns an [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) object containing a list of ports supplied.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)   
  [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)

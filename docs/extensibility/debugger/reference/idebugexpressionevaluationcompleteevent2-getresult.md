@@ -1,52 +1,69 @@
 ---
-title: "IDebugExpressionEvaluationCompleteEvent2::GetResult | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugExpressionEvaluationCompleteEvent2::GetResult"
-helpviewer_keywords: 
-  - "IDebugExpressionEvaluationCompleteEvent2::GetResult"
+title: IDebugExpressionEvaluationCompleteEvent2::GetResult | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugExpressionEvaluationCompleteEvent2::GetResult
+helpviewer_keywords:
+- IDebugExpressionEvaluationCompleteEvent2::GetResult
 ms.assetid: d9ad3e22-b6b2-421e-9a43-6bb8c70d12a9
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugExpressionEvaluationCompleteEvent2::GetResult
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: a05b11bee789a847604648913568c21b1cd10aab
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Ruft das Ergebnis der Ausdrucksauswertung ab.  
+---
+# <a name="idebugexpressionevaluationcompleteevent2getresult"></a>IDebugExpressionEvaluationCompleteEvent2::GetResult
+Gets the result of expression evaluation.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetResult(   
-   IDebugProperty2** ppResult  
+HRESULT GetResult(   
+   IDebugProperty2** ppResult  
 );  
 ```  
   
-```c#  
-int GetResult(   
-   out IDebugProperty2 ppResult  
+```cs  
+int GetResult(   
+   out IDebugProperty2 ppResult  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `ppResult`  
- \[out\]  Gibt ein [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)\-Objekt zurück, das das Ergebnis der Ausdrucksauswertung darstellt.  
+ [out] Returns an [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) object that represents the result of the expression evaluation.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Hinweise  
- Das zurückgegebene Objekt enthält [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) den Wert des ausgewerteten Ausdrucks.  Beachten Sie, dass dieser Wert ein komplexer Wert wie ein Array sein kann, doch das Endergebnis ein numerisches oder ein Zeichenfolgenwert sein muss, die dem Benutzer angezeigt wird.  
+## <a name="remarks"></a>Remarks  
+ The returned [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) object contains the value of the evaluated expression. Note that this value could be a complex value such as an array but the final result must be a numerical or string value that is displayed to the user.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

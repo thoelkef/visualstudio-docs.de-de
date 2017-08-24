@@ -1,50 +1,67 @@
 ---
-title: "Gewusst wie: Verwenden Sie regelbasierte Benutzeroberfl&#228;chenkontext f&#252;r Visual Studio-Erweiterungen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'How to: Use Rule-based UI Context for Visual Studio Extensions | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 7
-ms.author: "gregvanl"
-caps.handback.revision: 7
----
-# Gewusst wie: Verwenden Sie regelbasierte Benutzeroberfl&#228;chenkontext f&#252;r Visual Studio-Erweiterungen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: a42c87eeb38de9750113cc9d940d8809e0bb5998
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Visual Studio ermöglicht das Laden von VSPackages, wenn bestimmte bekannte <xref:Microsoft.VisualStudio.Shell.UIContext>s aktiviert werden. Diese Benutzeroberflächen\-Kontexte sind nicht sehr präzise umfassendere, Autoren keine Wahl lassen jedoch um eine verfügbare Benutzeroberflächenkontext auswählen, die vor dem aktiviert sie wollten das VSPackage geladen. Eine Liste der bekannten Benutzeroberflächen\-Kontexte, finden Sie unter <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.  
+---
+# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>How to: Use Rule-based UI Context for Visual Studio Extensions
+Visual Studio allows loading of VSPackages when certain well-known <xref:Microsoft.VisualStudio.Shell.UIContext>s are activated. However, these UI Contexts are not very fine grained, leaving extension authors no choice but to pick an available UI Context that activates before the point they really wanted the VSPackage to load. For a list of well-known UI contexts, see <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.  
   
- Laden von Paketen kann Auswirkungen auf die Leistung und früher, als sie bei Bedarf laden wird nicht empfohlen. Visual Studio 2015 vorgestellt regelbasierte Benutzeroberflächen\-Kontexte, ein Mechanismus, können Autoren zum Definieren der präzisen Bedingungen, unter dem einem Benutzeroberflächenkontext wird aktiviert und zugehörigen VSPackages geladen.  
+ Loading packages can have a performance impact and loading them sooner than they are needed is not the best practice. Visual Studio 2015 introduced the concept of Rules-based UI Contexts, a mechanism that allows extension authors to define the precise conditions under which a UI Context is activated and associated VSPackages loaded.  
   
-## Regelbasierte Benutzeroberflächenkontext  
- Eine "Regel" besteht aus einem neuen Benutzeroberflächenkontext \(eine GUID\) und ein boolescher Ausdruck, der ein oder mehrere "Ausdrücke" verweist auf zusammen mit logischen "und", "oder", "not" Vorgänge. "Begriffe" werden dynamisch zur Laufzeit ausgewertet und des Ausdrucks erneut ausgewertet, wenn dessen Begriffe ändert. Wenn der Ausdruck True ergibt, wird die zugeordneten UI\-Kontext aktiviert. Andernfalls ist der UI\-Kontext deaktiviert.  
+## <a name="rule-based-ui-context"></a>Rule-based UI Context  
+ A "Rule" consists of a new UI Context (a GUID) and a Boolean expression that references one or more "Terms" combined with logical "and", "or", "not" operations. "Terms" are evaluated dynamically at runtime and the expression is re-evaluated whenever any of its terms changes. When the expression evaluates to true, the associated UI Context is activated. Otherwise, the UI Context is de-activated.  
   
- Regelbasierte Benutzeroberflächenkontext kann auf verschiedene Arten verwendet werden:  
+ Rule-based UI Context can be used in a variety of ways:  
   
-1.  Geben Sie die Sichtbarkeit Einschränkungen für Befehle und Toolfenster. Sie können Windows Befehle\-Tools ausblenden, bis die Benutzeroberflächenkontext Regel erfüllt ist.  
+1.  Specify visibility constraints for commands and tool windows. You can hide the commands/tools windows until the UI Context rule is met.  
   
-2.  Laden Sie als Auto Einschränkungen: Automatisches Laden Pakete nur, wenn die Regel erfüllt ist  
+2.  As auto load constraints: auto load packages only when the rule is met  
   
-3.  Verzögerter Vorgang: verzögern, laden erst ein angegebenes Zeitintervall und weiterhin die Regel erfüllt ist.  
+3.  Delayed task: delay loading until a specified interval has passed and the rule is still met.  
   
- Der Mechanismus kann von Visual Studio\-Erweiterung verwendet werden.  
+ The mechanism may be used by any Visual Studio extension.  
   
-## Erstellen Sie eine regelbasierte Benutzeroberflächenkontext  
- Angenommen Sie, Sie haben die Erweiterung TestPackage, das einen Menübefehl bietet das gilt nur für Dateien mit der Erweiterung ".config" aufgerufen. Vor dem VS2015, war die beste Option TestPackage Laden beim <xref:Microsoft.VisualStudio.Shell.KnownUIContexts.SolutionExistsAndFullyLoadedContext%2A> Benutzeroberflächenkontext aktiviert wurde. Dies ist nicht effizient, da die geladene Projektmappe nicht selbst eine .config\-Datei enthalten. Lassen Sie uns finden Sie unter wie Benutzeroberflächenkontext regelbasierte verwendet werden kann, um einem Benutzeroberflächenkontext nur, wenn eine Datei mit der Config\-Erweiterung zu aktivieren ausgewählt ist, und Laden TestPackage, wenn diese Benutzeroberflächenkontext aktiviert ist.  
+## <a name="create-a-rule-based-ui-context"></a>Create a Rule-based UI Context  
+ Suppose you have an extension called TestPackage, which offers a menu command which applies only to files with ".config" extension. Before VS2015, the best option was to load TestPackage when <xref:Microsoft.VisualStudio.Shell.KnownUIContexts.SolutionExistsAndFullyLoadedContext%2A> UI Context was activated. This is not efficient, since the loaded solution may not even contain a .config file. Let us see how rules-based UI Context can be used to activate a UI Context only when a file with .config extension is selected, and load TestPackage when that UI Context is activated.  
   
-1.  Definieren Sie eine neue UIContext\-GUID und der VSPackage\-Klasse hinzufügen <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> und <xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute>.  
+1.  Define a new UIContext GUID and add to the VSPackage class <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> and <xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute>.  
   
-     Zum Beispiel nehmen wir an, eine neue UIContext "UIContextGuid" ist, hinzugefügt werden. Die GUID erstellt \(Sie können eine GUID erstellen, indem Sie auf Extras \-\> Guid erstellen\) "8B40D5E2\-5626\-42AE\-99EF\-3DD1EFF46E7B" ist. Anschließend fügen Sie Folgendes in der Paketklasse:  
+     For example, let's assume a new UIContext "UIContextGuid" is to be added. The GUID created (you can create a GUID by clicking on Tools -> create guid) is "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B". You then add the following inside your package class:  
   
-    ```c#  
+    ```cs  
     public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";  
     ```  
   
-     Fügen Sie die folgenden, für die Attribute: \(Details zu diesen Attributen werden weiter unten erläutert\)  
+     For the attributes, add the following: (Details of these attributes will be explained later)  
   
-    ```c#  
+    ```cs  
     [ProvideAutoLoad(TestPackage.UIContextGuid)]      
     [ProvideUIContextRule(TestPackage.UIContextGuid,  
         name: "Test auto load",   
@@ -53,17 +70,17 @@ Visual Studio ermöglicht das Laden von VSPackages, wenn bestimmte bekannte <xre
         termValues: new[] { "HierSingleSelectionName:.config$" })]  
     ```  
   
-     Diese Metadaten definieren, die neue UIContext GUID \(8B40D5E2\-5626\-42AE\-99EF\-3DD1EFF46E7B\) und einen Ausdruck, der auf einen einzelnen Begriff "DotConfig" verweisen. Der Begriff "DotConfig" wird zu True ausgewertet, wenn die aktuelle Auswahl in der aktiven Hierarchie einen Namen enthält, der das Muster eines regulären Ausdrucks "\\.config$" \(endet mit ".config"\) übereinstimmt. Der \(standardmäßige\) Wert definiert einen optionalen Namen für die Regel, die beim Debuggen hilfreich.  
+     These metadata define the new UIContext GUID (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) and an expression referring to a single term, "DotConfig". The "DotConfig" term evaluates to true whenever the current selection in the active hierarchy has a name that matches the regular expression pattern "\\.config$" (ends with ".config"). The (Default) value defines an optional name for the rule useful for debugging.  
   
-     Die Werte des Attributs werden während der Buildzeit danach generiert Pkgdef hinzugefügt.  
+     The values of the attribute are added to pkgdef generated during build time afterwards.  
   
-2.  Fügen Sie das Flag "DynamicVisibility" in der VSCT\-Datei für die TestPackage\-Befehle mit den entsprechenden Befehlen:  
+2.  In the VSCT file for the TestPackage's commands, add the "DynamicVisibility" flag to the appropriate commands:  
   
     ```xml  
     <CommandFlag>DynamicVisibility</CommandFlag>  
     ```  
   
-3.  Verknüpfen Sie in den Abschnitt Sichtbarkeiten der VSCT die entsprechenden Befehle, um die neue UIContext GUID in \#1 definiert:  
+3.  In the Visibilities section of the VSCT, tie the appropriate commands to the new UIContext GUID defined in #1:  
   
     ```xml  
     <VisibilityConstraints>   
@@ -71,32 +88,32 @@ Visual Studio ermöglicht das Laden von VSPackages, wenn bestimmte bekannte <xre
     </VisibilityConstraints>  
     ```  
   
-4.  Fügen Sie die Definition der UIContext im Abschnitt Symbole:  
+4.  In the Symbols section, add the definition of the UIContext:  
   
     ```xml  
     <GuidSymbol name="guidTestUIContext" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />  
     ```  
   
-     Kontextmenübefehle für \*.config\-Dateien werden nun angezeigt werden, nur, wenn das ausgewählte Element im Projektmappen\-Explorer eine ".config"\-Datei wird, und das Paket wird nicht geladen werden, bis eine dieser Befehle ausgewählt ist.  
+     Now, the context menu commands for *.config files will be visible only when the selected item in the solution explorer is a ".config" file and the package will not be loaded until one of those commands is selected.  
   
- Als Nächstes verwenden wir einen Debugger um zu bestätigen, dass das Paket lädt nur wenn wir erwartet. So debuggen Sie TestPackage  
+ Next, let's use a debugger to confirm that the package loads only when we expect it to. To debug TestPackage:  
   
-1.  Legen Sie einen Haltepunkt die <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> Methode.  
+1.  Set a breakpoint in the <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> method.  
   
-2.  Erstellen Sie die TestPackage und das Debuggen starten.  
+2.  Build the TestPackage and start debugging.  
   
-3.  Ein Projekt erstellen oder öffnen.  
+3.  Create a project or open one.  
   
-4.  Wählen Sie alle Dateien mit einer anderen Erweiterung als config. Der Haltepunkt muss nicht erreicht werden.  
+4.  Select any file with an extension other than .config. The breakpoint should not be hit.  
   
-5.  Wählen Sie die Datei "App.config".  
+5.  Select the App.Config file.  
   
- Der TestPackage lädt und hält am Haltepunkt.  
+ The TestPackage loads and stops at the breakpoint.  
   
-## Weitere Regeln hinzufügen für Benutzeroberflächenkontext  
- Da der UI\-Kontextregeln boolesche Ausdrücke sind, können Sie für einen Kontext für die Benutzeroberfläche eingeschränktere Regeln hinzufügen. In den obigen Benutzeroberflächenkontext können Sie beispielsweise angeben, dass die Regel gilt nur, wenn eine Projektmappe ein Projekt geladen wird. Auf diese Weise wird nicht die Befehle angezeigt, wenn Sie eine ".config"\-Datei als eigenständige Datei, nicht als Teil eines Projekts öffnen.  
+## <a name="adding-more-rules-for-ui-context"></a>Adding More Rules for UI Context  
+ Since the UI Context rules are Boolean expressions, you can add more restricted rules for a UI Context. For example, in the above UI Context, you can specify that the rule applies only when a solution with a project is loaded. In this way, the commands won't show up if you open up a ".config" file as a standalone file, not as part of a project.  
   
-```c#  
+```cs  
 [ProvideAutoLoad(TestPackage.UIContextGuid)]      
 [ProvideUIContextRule(TestPackage.UIContextGuid,    
     name: "Test auto load",  
@@ -105,14 +122,14 @@ Visual Studio ermöglicht das Laden von VSPackages, wenn bestimmte bekannte <xre
     termValues: new[] { VSConstants.UICONTEXT_SolutionHasSingleProject_string , VSConstants.UICONTEXT_SolutionHasMultipleProjects_string , "HierSingleSelectionName:.config$" })]  
 ```  
   
- Der Ausdruck verweist jetzt drei Begriffe. Die ersten beiden Begriffe, "SingleProject" und "MultipleProjects", finden Sie in anderen bekannten Benutzeroberflächen\-Kontexte \(anhand ihrer GUIDs\). Der dritte Ausdruck ist "DotConfig" der zuvor definierten Benutzeroberflächenkontext regelbasierte.  
+ Now the expression references three terms. The first two terms, "SingleProject" and "MultipleProjects", refer to other well-known UI Contexts (by their GUIDs). The third term, "DotConfig" is the rule-based UI Context we defined earlier.  
   
-## Verzögerte Aktivierung  
- Regeln können eine optionale "Verzögerung" enthalten. Die Verzögerung wird in Millisekunden angegeben. Falls vorhanden, wird die Verzögerung der Aktivierung oder Deaktivierung des Benutzeroberflächenkontext für einer Regel, die durch dieses Zeitintervalls verzögert werden. Wenn die regeländerungen vor dem Ablauf der Verzögerung zu sichern, geschieht dann nichts. Dieser Mechanismus kann verwendet werden, um "Initialisierungsschritte \- insbesondere einmalige Initialisierung ohne Timer oder Registrierung für Benachrichtigungen im Leerlauf staffeln".  
+## <a name="delayed-activation"></a>Delayed Activation  
+ Rules can have an optional "Delay". The delay is specified in milliseconds. If present, the delay causes the activation or deactivation of a Rule's UI Context to be delayed by that time interval. If the rule changes back before the delay interval, then nothing happens. This mechanism can be used to "stagger" initialization steps - especially one-time initialization without relying on timers or registering for idle notifications.  
   
- Beispielsweise können Sie die Regel Test laden, um eine Verzögerung von 100 Millisekunden angeben:  
+ For example, you can specify your test load rule to have a delay of 100 milliseconds:  
   
-```c#  
+```cs  
 [ProvideAutoLoad(TestPackage.UIContextGuid)]  
 [ProvideUIContextRule(TestPackage.UIContextGuid,   
     name: "Test auto load",  
@@ -122,28 +139,31 @@ Visual Studio ermöglicht das Laden von VSPackages, wenn bestimmte bekannte <xre
     delay: 100)]  
 ```  
   
-## Begriff\-Typen  
- Hier werden die verschiedenen Typen von Begriff, die unterstützt werden:  
+## <a name="term-types"></a>Term Types  
+ Here are the various types of term that are supported:  
   
 |||  
 |-|-|  
-|{Nnnnnnnn\-Nnnn\-Nnnn\-Nnnn\-Nnnnnnnnnnnn}|Die GUID bezieht sich auf ein UI\-Kontext. Der Begriff ist true, wenn die Benutzeroberflächenkontext aktiv, andernfalls false ist.|  
-|HierSingleSelectionName: \< Pattern \>|Der Begriff werden true, wenn die Auswahl in der aktiven Hierarchie ein einzelnes Element ist und der Namen des ausgewählten Elements dem regulären Ausdrücken durch "Pattern" angegeben entspricht.|  
-|UserSettingsStoreQuery: \< Abfrage \>|"Abfrage" stellt einen vollständigen Pfad in den Speicher des Benutzers Einstellungen der auf einen Wert ungleich NULL ausgewertet werden muss. Die Abfrage wird in eine "Auflistung" und "PropertyName" auf den letzten Schrägstrich aufgeteilt.|  
-|ConfigSettingsStoreQuery: \< Abfrage \>|"Abfrage" stellt einen vollständigen Pfad in der Konfigurationsspeicher für die Einstellungen der auf einen Wert ungleich NULL ausgewertet werden muss. Die Abfrage wird in eine "Auflistung" und "PropertyName" auf den letzten Schrägstrich aufgeteilt.|  
-|ActiveProjectFlavor: \< ProjectTypeGuid \>|Der Begriff "true" werden, sobald das aktuell ausgewählte Projekt flavored ist \(aggregiert\) und verfügt über einen Typ entsprechen den jeweiligen Projekttyp GUID.|  
-|ActiveEditorContentType: \< ContentType \>|Der Begriff ist true, wenn das ausgewählte Dokument mit einem Text\-Editor mit dem angegebenen Inhaltstyp ist.|  
-|ActiveProjectCapability: \< Ausdruck \>|Der Begriff ist true, wenn aktive Projektfunktionen den bereitgestellten Ausdruck übereinstimmt. Ein Ausdruck kann etwa VB &#124; CSharp|  
-|SolutionHasProjectCapability: \< Ausdruck \>|Ähnlich wie oben, aber Begriff ist true, wenn Lösung alle geladenen Projekt, das mit dem Ausdruck übereinstimmt.|  
+|{nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}|The GUID refers to a UI Context. The term will be true whenever the UI Context is active and false otherwise.|  
+|HierSingleSelectionName:\<pattern>|The term will be true whenever the selection in the active hierarchy is a single item and the name of the selected item matches the .Net regular expression given by "pattern".|  
+|UserSettingsStoreQuery:\<query>|"query" represents a full path into the user settings store which must evaluate to a non-zero value. The query is split into a "collection" and "propertyName" at the last slash.|  
+|ConfigSettingsStoreQuery:\<query>|"query" represents a full path into the config settings store which must evaluate to a non-zero value. The query is split into a "collection" and "propertyName" at the last slash.|  
+|ActiveProjectFlavor:\<projectTypeGuid>|The term will be true whenever the currently selected project is flavored (aggregated) and has a flavor matching the given project type GUID.|  
+|ActiveEditorContentType:\<contentType>|The term will be true when the selected document is a text editor with the given content type.|  
+|ActiveProjectCapability:\<Expression>|The term is true when active project capabilities matches the provided expression. An expression can be something like VB &#124; CSharp|  
+|SolutionHasProjectCapability:\<Expression>|Similar to above but term is true when solution has any loaded project that matches to the expression.|  
+|SolutionHasProjectFlavor:\<projectTypeGuid>|The term will be true whenever a solution has project that is flavored (aggregated) and has a flavor matching the given project type GUID.|
+
+
   
-## Mit der Erweiterung Versionsübergreifende Kompatibilität  
- Regel basierend Benutzeroberflächen\-Kontexte ist ein neues Feature in Visual Studio 2015 und würde nicht mit früheren Versionen portiert werden. Dies führt zu einem Problem mit Erweiterungen\/Pakete, die als Ziel mehrere Versionen von Visual Studio automatisch geladen werden, in Visual Studio 2013 und frühere Versionen werden musste, aber von regelbasiert Benutzeroberflächen\-Kontexte, um zu verhindern, wird automatisch geladen in Visual Studio 2015 profitieren können.  
+## <a name="compatibility-with-cross-version-extension"></a>Compatibility with cross-version extension  
+ Rule based UI Contexts is a new feature in Visual Studio 2015 and would not be ported to earlier versions. This creates a problem with extensions/packages that target multiple versions of Visual Studio which would have to be auto-loaded in Visual Studio 2013 and earlier, but can benefit from rule based UI Contexts to prevent being auto-loaded in Visual Studio 2015.  
   
- Um diese Pakete unterstützen, bieten AutoLoadPackages Einträge in der Registrierung jetzt ein Flag im Feld "Wert" an, dass der Eintrag in Visual Studio 2015 und höher übersprungen werden soll. Dies kann durch Hinzufügen einer Flags\-Option auf <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags>. VSPackages können jetzt hinzufügen **SkipWhenUIContextRulesActive** option, um ihre <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> Attribut an, dass der Eintrag in Visual Studio 2015 und höher ignoriert werden sollen.  
+ In order to support such packages, AutoLoadPackages entries in the registry can now provide a flag in its value field to indicate that the entry should be skipped in Visual Studio 2015 and above. This can be done by adding a flags option to <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags>. VSPackages can now add **SkipWhenUIContextRulesActive** option to their <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> attribute to indicate the entry should be ignored in Visual Studio 2015 and above.  
   
-## Erweiterbare Benutzeroberfläche Kontextregeln  
- In einigen Fällen können keine Pakete statische Benutzeroberflächenkontext Regeln. Nehmen wir beispielsweise an, dass ein Paket Erweiterbarkeit unterstützen, so, dass der Befehlsstatus basierend auf Editor\-Typen, die von importierten MEF\-Anbieter unterstützt werden. Der Befehl ist aktiviert, es ist eine Erweiterung, die den aktuellen bearbeiten\-Typ unterstützen. In solchen Fällen kann nicht das Paket selbst eine statische Benutzeroberflächenkontext Regel verwenden, da die Begriffe ändern würde, je nachdem welche, die MEF Erweiterungen verfügbar sind.  
+## <a name="extensible-ui-context-rules"></a>Extensible UI Context Rules  
+ Sometimes, packages cannot use static UI Context rules. For example, suppose you have a package supporting extensibility such that the command state is based on editor types that are supported by imported MEF providers. The command is enabled if there is an extension supporting the current edit type. In such cases the package itself cannot use a static UI Context rule, since the terms would change depending on which MEF extensions are available.  
   
- Um diese Pakete unterstützen, unterstützen regelbasiert Benutzeroberflächen\-Kontexte einen hartcodierter Ausdruck "\*", der angibt, alle Begriffe unten wird mit angehören oder. Dies ermöglicht das Masterpaket definieren eine bekannte Regel Benutzeroberflächenkontext Grundlage und binden den Befehl Zustand an diesen Kontext. Jeder MEF\-Erweiterung für das Masterpaket vorgesehenen kann anschließend seine Ausdrücke für Editoren hinzufügen ohne Beeinträchtigung der anderen Begriffe oder der master\-Ausdruck unterstützt.  
+ In order to support such packages, rule based UI Contexts support a hardcoded expression "*" that indicates all the terms below it will be joined with OR. This allows for the master package to define a known rule based UI Context and tie its command state to this context. Afterwards any MEF extension targeted for the master package can add its terms for editors it supports without impacting other terms or the master expression.  
   
- Der Konstruktor <xref:Microsoft.VisualStudio.Shell.ProvideExtensibleUIContextRuleAttribute.%23ctor%2A> Dokumentation zeigt die Syntax für erweiterbare Benutzeroberflächenkontext Regeln.
+ The constructor <xref:Microsoft.VisualStudio.Shell.ProvideExtensibleUIContextRuleAttribute.%23ctor%2A> documentation shows the syntax for extensible UI Context rules.

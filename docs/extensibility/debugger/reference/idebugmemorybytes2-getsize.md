@@ -1,49 +1,66 @@
 ---
-title: "IDebugMemoryBytes2::GetSize | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugMemoryBytes2::GetSize"
-helpviewer_keywords: 
-  - "IDebugMemoryBytes2::GetSize-Methode"
-  - "GetSize-Methode"
+title: IDebugMemoryBytes2::GetSize | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugMemoryBytes2::GetSize
+helpviewer_keywords:
+- IDebugMemoryBytes2::GetSize method
+- GetSize method
 ms.assetid: dae64c5f-5b54-40c3-b32f-ec3b16c093f7
 caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
----
-# IDebugMemoryBytes2::GetSize
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: e3f1dba56678c2a41f5dfac2e904cced5931fbf6
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Ruft die Größe \(in Bytes\) des Arbeitsspeichers ab, der durch dieses Objekt dargestellt wird. [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)  
+---
+# <a name="idebugmemorybytes2getsize"></a>IDebugMemoryBytes2::GetSize
+Retrieves the size, in bytes, of the memory represented by this [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) object.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetSize(   
-   UINT64* pqwSize  
+HRESULT GetSize(   
+   UINT64* pqwSize  
 );  
 ```  
   
-```c#  
+```cs  
 int GetSize(  
-   out ulong pqwSize  
+   out ulong pqwSize  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `pqwSize`  
- \[out\]  Gibt die Größe in Byte mit dem Speicherbereich zurück.  
+ [out] Returns the size, in bytes of the memory space.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

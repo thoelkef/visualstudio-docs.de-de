@@ -1,40 +1,57 @@
 ---
-title: "Exemplarische Vorgehensweise: Verkn&#252;pfen eines Inhaltstyps mit Erweiterung | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Editoren [Visual Studio SDK], verknüpfen Sie neu - Inhaltstyp mit Erweiterung"
+title: 'Walkthrough: Linking a Content Type to a File Name Extension | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- editors [Visual Studio SDK], new - link content type to file name extension
 ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
 caps.latest.revision: 24
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 24
----
-# Exemplarische Vorgehensweise: Verkn&#252;pfen eines Inhaltstyps mit Erweiterung
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 3f5a533ddab8e09040bb132cd2ad0c511308ce5c
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Sie können einen eigenen Inhaltstyp definieren und Erweiterung mithilfe von Managed Extensibility Framework \(MEF\) editorerweiterungen zu verknüpfen. In einigen Fällen wurde die Erweiterung bereits von einem Sprachdienst definiert. Dennoch muss für die Verwendung mit MEF noch es mit einen Inhaltstyp verknüpfen.  
+---
+# <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>Walkthrough: Linking a Content Type to a File Name Extension
+You can define your own content type and link a file name extension to it by using editor Managed Extensibility Framework (MEF) extensions. In some cases, the file name extension has already been defined by a language service; nevertheless, to use it with MEF you still must link it to a content type.  
   
-## Vorbereitungsmaßnahmen  
- Starten in Visual Studio 2015, führen Sie Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio\-Setup enthalten. Sie können auch später im Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Das Visual Studio SDK installieren](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>Prerequisites  
+ Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## Erstellen eines MEF\-Projekts  
+## <a name="creating-a-mef-project"></a>Creating a MEF Project  
   
-1.  Erstellen Sie ein C\#\-VSIX\-Projekt. \(In der **Neues Projekt** Dialogfeld **Visual c\# \/ Erweiterbarkeit**, dann **VSIX\-Projekt**.\) Nennen Sie die Projektmappe `ContentTypeTest`.  
+1.  Create a C# VSIX project. (In the **New Project** dialog, select **Visual C# / Extensibility**, then **VSIX Project**.) Name the solution `ContentTypeTest`.  
   
-2.  In der **source.extension.vsixmanifest** Datei, klicken Sie auf die **Bestand** Registerkarte, und legen Sie die **Typ** Feld **Microsoft.VisualStudio.MefComponent**,  **Quelle** Feld **ein Projekt in der aktuellen Projektmappe**, und die **Projekt** Feld auf den Namen des Projekts.  
+2.  In the **source.extension.vsixmanifest** file, go to the **Assets** tab, and set the **Type** field to **Microsoft.VisualStudio.MefComponent**, the **Source** field to **A project in current solution**, and the **Project** field to the name of the project.  
   
-## Den Inhaltstyp definieren  
+## <a name="defining-the-content-type"></a>Defining the Content Type  
   
-1.  Fügen Sie eine Klassendatei hinzu, und nennen Sie es `FileAndContentTypes`.  
+1.  Add a class file and name it `FileAndContentTypes`.  
   
-2.  Fügen Sie Verweise auf die folgenden Assemblys hinzu:  
+2.  Add references to the following assemblies:  
   
     1.  System.ComponentModel.Composition  
   
@@ -42,25 +59,25 @@ Sie können einen eigenen Inhaltstyp definieren und Erweiterung mithilfe von Man
   
     3.  Microsoft.VisualStudio.CoreUtility  
   
-3.  Fügen Sie die folgenden `using` Richtlinien.  
+3.  Add the following `using` directives.  
   
-    ```c#  
+    ```cs  
     using System.ComponentModel.Composition;  
     using Microsoft.VisualStudio.Text.Classification;  
     using Microsoft.VisualStudio.Utilities;  
   
     ```  
   
-4.  Deklarieren Sie eine statische Klasse, die die Definitionen enthält.  
+4.  Declare a static class that contains the definitions.  
   
-    ```c#  
+    ```cs  
     internal static class FileAndContentTypeDefinitions  
     {. . .}  
     ```  
   
-5.  Exportieren Sie in dieser Klasse eine <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> mit dem Namen "ausgeblendet", und deklarieren Sie die Basisdefinition "Text" sein.  
+5.  In this class, export a <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> named "hid" and declare its base definition to be "text".  
   
-    ```c#  
+    ```cs  
     internal static class FileAndContentTypeDefinitions  
     {  
         [Export]  
@@ -70,11 +87,11 @@ Sie können einen eigenen Inhaltstyp definieren und Erweiterung mithilfe von Man
     }  
     ```  
   
-## Verknüpfen eine Erweiterung zu einem Inhaltstyp  
+## <a name="linking-a-file-name-extension-to-a-content-type"></a>Linking a File Name Extension to a Content Type  
   
--   Um eine Erweiterung dieser Inhaltstyp zuordnen möchten, Exportieren einer <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> die über die Erweiterung "HID\-Dateien" und der Inhaltstyp "ausgeblendet".  
+-   To map this content type to a file name extension, export a <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> that has the extension ".hid" and the content type "hid".  
   
-    ```c#  
+    ```cs  
     internal static class FileAndContentTypeDefinitions  
     {  
          [Export]  
@@ -89,18 +106,18 @@ Sie können einen eigenen Inhaltstyp definieren und Erweiterung mithilfe von Man
     }  
     ```  
   
-## Der Inhaltstyp hinzugefügt ein Export\-Editor  
+## <a name="adding-the-content-type-to-an-editor-export"></a>Adding the Content Type to an Editor Export  
   
-1.  Erstellen Sie eine Editor\-Erweiterung. Sie können z. B. die Rand Symbol\-Erweiterung in beschriebenen [Exemplarische Vorgehensweise: Erstellen einer Randglyphe](../extensibility/walkthrough-creating-a-margin-glyph.md).  
+1.  Create an editor extension. For example, you can use the margin glyph extension described in [Walkthrough: Creating a Margin Glyph](../extensibility/walkthrough-creating-a-margin-glyph.md).  
   
-2.  Fügen Sie der Klasse, die Sie in diesem Verfahren definiert.  
+2.  Add the class you defined in this procedure.  
   
-3.  Beim Exportieren der Erweiterungsklasse hinzufügen ein <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> vom Typ "ausgeblendet" zu.  
+3.  When you export the extension class, add a <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> of type "hid" to it.  
   
-    ```c#  
+    ```cs  
     [Export]  
     [ContentType("hid")]  
     ```  
   
-## Siehe auch  
- [Language Service und Erweiterungspunkte\-Editor](../extensibility/language-service-and-editor-extension-points.md)
+## <a name="see-also"></a>See Also  
+ [Language Service and Editor Extension Points](../extensibility/language-service-and-editor-extension-points.md)

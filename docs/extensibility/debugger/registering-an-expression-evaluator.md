@@ -1,216 +1,233 @@
 ---
-title: "Registrieren eine Auswertung eines Ausdrucks | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Debuggen die Auswertung von Ausdrücken [Debuggen SDK]"
-  - "Ausdrucks-Auswerter registrieren"
+title: Registering an Expression Evaluator | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- debugging [Debugging SDK], expression evaluation
+- expression evaluators, registering
 ms.assetid: 236be234-e05f-4ad8-9200-24ce51768ecf
 caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
----
-# Registrieren eine Auswertung eines Ausdrucks
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 070fbbd163cf6e3b7d743558feb00ad27401cfdb
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
+---
+# <a name="registering-an-expression-evaluator"></a>Registering an Expression Evaluator
 > [!IMPORTANT]
->  In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen über das Implementieren von CLR\-ausdrucksauswertungen finden Sie unter [CLR\-Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  In Visual Studio 2015, this way of implementing expression evaluators is deprecated. For information about implementing CLR expression evaluators, please see [CLR Expression Evaluators](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) and [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Die Auswertung eines Ausdrucks \(EE\) muss sich selbst als eine Klassenfactory mit dem Windows\-COM\-Umgebung und die Visual Studio registrieren. Eine EE wird als DLL implementiert, damit es in den Adressraum des Debug\-Modul \(DE\) oder den Visual Studio\-Adressraum, je nachdem, den welche Entität die EE instanziiert eingefügt werden kann.  
+ The expression evaluator (EE) must register itself as a class factory with both the Windows COM environment and Visual Studio. An EE is implemented as a DLL so that it may be injected into either the debug engine (DE) address space or the Visual Studio address space, depending on which entity instantiates the EE.  
   
-## Ausdrucksauswerter für verwalteten Code  
- Eine verwaltete Code EE wird als Klassenbibliothek, um eine DLL, der sich mit der COM\-Umgebung handelt, in der Regel durch einen Aufruf von VSIP\-Programm gestartet registriert implementiert **regpkg.exe**. Der eigentliche Vorgang beim Schreiben der Registrierungsschlüssel für die COM\-Umgebung wird automatisch durchgeführt.  
+## <a name="managed-code-expression-evaluator"></a>Managed Code Expression Evaluator  
+ A managed code EE is implemented as a Class Library, which is a DLL that registers itself with the COM environment, typically started by a call to the VSIP program, **regpkg.exe**. The actual process of writing the registry keys for the COM environment is handled automatically.  
   
- Eine Methode der Hauptklasse wird markiert, mit der <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>, anzugeben, dass diese Methode, die aufgerufen werden, wenn die DLL mit COM registriert wird Diese Registrierungsmethode, die häufig als `RegisterClass`, führt die Registrierung der DLL mit Visual Studio. Eine entsprechende `UnregisterClass` \(gekennzeichnet mit der <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>\), kehrt die Effekte der `RegisterClass` Wenn die DLL deinstalliert wird.  
+ A method of the main class is marked with the <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>, indicating that that method is to be called when the DLL is being registered with COM. This registration method, often called `RegisterClass`, performs the task of registering the DLL with Visual Studio. A corresponding `UnregisterClass` (marked with the <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>), undoes the effects of `RegisterClass` when the DLL is uninstalled.  
   
- Die gleichen Registrierungseinträge erfolgen wie für eine EE in nicht verwaltetem Code geschrieben; der einzige Unterschied ist, dass es keine Hilfsfunktion wie z. B. `SetEEMetric` auf die Arbeit für Sie erledigen. Ein Beispiel für diese Registrierung\/Aufhebung sieht folgendermaßen aus:  
+ The same registry entries are made as for an EE written in unmanaged code; the only difference is that there is no helper function such as `SetEEMetric` to do the work for you. An example of this registration/unregistration process looks like this:  
   
-### Beispiel  
- Diese Funktion zeigt, wie eine verwaltete Code EE registriert, und hebt sich mit Visual Studio.  
+### <a name="example"></a>Example  
+ This function shows how a managed code EE registers and unregisters itself with Visual Studio.  
   
-```c#  
+```cs  
 namespace EEMC  
 {  
-    [GuidAttribute("462D4A3D-B257-4AEE-97CD-5918C7531757")]  
-    public class EEMCClass : IDebugExpressionEvaluator  
-    {  
-        #region Register and unregister.  
-        private static Guid guidMycLang = new Guid("462D4A3E-B257-4AEE-97CD-5918C7531757");  
-        private static string languageName = "MyC";  
-        private static string eeName = "MyC Expression Evaluator";  
+    [GuidAttribute("462D4A3D-B257-4AEE-97CD-5918C7531757")]  
+    public class EEMCClass : IDebugExpressionEvaluator  
+    {  
+        #region Register and unregister.  
+        private static Guid guidMycLang = new Guid("462D4A3E-B257-4AEE-97CD-5918C7531757");  
+        private static string languageName = "MyC";  
+        private static string eeName = "MyC Expression Evaluator";  
   
-        private static Guid guidMicrosoftVendor = new Guid("994B45C4-E6E9-11D2-903F-00C04FA302A1");  
-        private static Guid guidCOMPlusOnlyEng = new Guid("449EC4CC-30D2-4032-9256-EE18EB41B62B");  
-        private static Guid guidCOMPlusNativeEng = new Guid("92EF0900-2251-11D2-B72E-0000F87572EF");  
+        private static Guid guidMicrosoftVendor = new Guid("994B45C4-E6E9-11D2-903F-00C04FA302A1");  
+        private static Guid guidCOMPlusOnlyEng = new Guid("449EC4CC-30D2-4032-9256-EE18EB41B62B");  
+        private static Guid guidCOMPlusNativeEng = new Guid("92EF0900-2251-11D2-B72E-0000F87572EF");  
   
-        /// <summary>  
-        /// Register the expression evaluator.  
-        /// Set "project properties/configuration properties/build/register for COM interop" to true.  
-        /// </summary>  
-         [ComRegisterFunctionAttribute]  
-        public static void RegisterClass(Type t)  
-        {  
-            // Get Visual Studio version (set by regpkg.exe)  
-            string hive = Environment.GetEnvironmentVariable("EnvSdk_RegKey");  
-            string s = @"SOFTWARE\Microsoft\VisualStudio\"  
-                        + hive  
-                        + @"\AD7Metrics\ExpressionEvaluator";  
+        /// <summary>  
+        /// Register the expression evaluator.  
+        /// Set "project properties/configuration properties/build/register for COM interop" to true.  
+        /// </summary>  
+         [ComRegisterFunctionAttribute]  
+        public static void RegisterClass(Type t)  
+        {  
+            // Get Visual Studio version (set by regpkg.exe)  
+            string hive = Environment.GetEnvironmentVariable("EnvSdk_RegKey");  
+            string s = @"SOFTWARE\Microsoft\VisualStudio\"  
+                        + hive  
+                        + @"\AD7Metrics\ExpressionEvaluator";  
   
-            RegistryKey rk = Registry.LocalMachine.CreateSubKey(s);  
-            if (rk == null)  return;  
+            RegistryKey rk = Registry.LocalMachine.CreateSubKey(s);  
+            if (rk == null)  return;  
   
-            rk = rk.CreateSubKey(guidMycLang.ToString("B"));  
-            rk = rk.CreateSubKey(guidMicrosoftVendor.ToString("B"));  
-            rk.SetValue("CLSID", t.GUID.ToString("B"));  
-            rk.SetValue("Language", languageName);  
-            rk.SetValue("Name", eeName);  
+            rk = rk.CreateSubKey(guidMycLang.ToString("B"));  
+            rk = rk.CreateSubKey(guidMicrosoftVendor.ToString("B"));  
+            rk.SetValue("CLSID", t.GUID.ToString("B"));  
+            rk.SetValue("Language", languageName);  
+            rk.SetValue("Name", eeName);  
   
-            rk = rk.CreateSubKey("Engine");  
-            rk.SetValue("0", guidCOMPlusOnlyEng.ToString("B"));  
-            rk.SetValue("1", guidCOMPlusNativeEng.ToString("B"));  
-        }  
-        /// <summary>  
-        /// Unregister the expression evaluator.  
-        /// </summary>  
-         [ComUnregisterFunctionAttribute]  
-        public static void UnregisterClass(Type t)  
-        {  
-            // Get Visual Studio version (set by regpkg.exe)  
-            string hive = Environment.GetEnvironmentVariable("EnvSdk_RegKey");  
-            string s = @"SOFTWARE\Microsoft\VisualStudio\"  
-                        + hive  
-                        + @"\AD7Metrics\ExpressionEvaluator\"  
-                        + guidMycLang.ToString("B");  
-            RegistryKey key = Registry.LocalMachine.OpenSubKey(s);  
-            if (key != null)  
-            {  
-                key.Close();  
-                Registry.LocalMachine.DeleteSubKeyTree(s);  
-            }  
-        }  
-    }  
+            rk = rk.CreateSubKey("Engine");  
+            rk.SetValue("0", guidCOMPlusOnlyEng.ToString("B"));  
+            rk.SetValue("1", guidCOMPlusNativeEng.ToString("B"));  
+        }  
+        /// <summary>  
+        /// Unregister the expression evaluator.  
+        /// </summary>  
+         [ComUnregisterFunctionAttribute]  
+        public static void UnregisterClass(Type t)  
+        {  
+            // Get Visual Studio version (set by regpkg.exe)  
+            string hive = Environment.GetEnvironmentVariable("EnvSdk_RegKey");  
+            string s = @"SOFTWARE\Microsoft\VisualStudio\"  
+                        + hive  
+                        + @"\AD7Metrics\ExpressionEvaluator\"  
+                        + guidMycLang.ToString("B");  
+            RegistryKey key = Registry.LocalMachine.OpenSubKey(s);  
+            if (key != null)  
+            {  
+                key.Close();  
+                Registry.LocalMachine.DeleteSubKeyTree(s);  
+            }  
+        }  
+    }  
 }  
 ```  
   
-## Ausdrucksauswerter von nicht verwaltetem Code  
- Die EE\-DLL implementiert die `DllRegisterServer` Funktion selbst die COM\-Umgebung sowie Visual Studio registrieren.  
+## <a name="unmanaged-code-expression-evaluator"></a>Unmanaged Code Expression Evaluator  
+ The EE DLL implements the `DllRegisterServer` function to register itself with the  COM environment as well as Visual Studio.  
   
 > [!NOTE]
->  Die MyCEE Registrierung Codebeispiel wird in der Datei dllentry.cpp finden Sie in der VSIP\-Installation unter EnVSDK\\MyCPkgs\\MyCEE befindet sich.  
+>  The MyCEE code sample registry code can be found in the file dllentry.cpp, which is located in the VSIP installation under EnVSDK\MyCPkgs\MyCEE.  
   
-### DLL\-Server\-Prozess  
- Wenn Sie die EE DLL\-Server registrieren:  
+### <a name="dll-server-process"></a>DLL Server Process  
+ When registering the EE, the DLL server:  
   
-1.  Registriert die Klassenfactory `CLSID` gemäß der normalen COM\-Konventionen.  
+1.  Registers its class factory `CLSID` as per normal COM conventions.  
   
-2.  Ruft die Hilfsfunktion `SetEEMetric` mit Visual Studio die EE\-Metriken in der folgenden Tabelle gezeigt registrieren. Die Funktion `SetEEMetric` und die unten angegebenen Metriken sind Teil der dbgmetric.lib\-Bibliothek. Ausführliche Informationen finden Sie unter [SDK\-Hilfsprogramme für das Debuggen](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).  
+2.  Calls the helper function `SetEEMetric` to register with Visual Studio the EE metrics shown in the following table. The function `SetEEMetric` and the metrics specified below are part of the dbgmetric.lib library. See [SDK Helpers for Debugging](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) for details.  
   
-    |Metrik|Beschreibung|  
-    |------------|------------------|  
-    |`metricCLSID`|`CLSID` der Factory EE\-Klasse|  
-    |`metricName`|Name des der EE als einer darstellbaren Zeichenfolge|  
-    |`metricLanguage`|Der Name der Sprache, die die EE auswerten soll|  
-    |`metricEngine`|`GUID`s für die Arbeit mit diesem EE Debugmodule \(DE\)|  
+    |Metric|Description|  
+    |------------|-----------------|  
+    |`metricCLSID`|`CLSID` of the EE class factory|  
+    |`metricName`|Name of the EE as a displayable string|  
+    |`metricLanguage`|The name of the language that the EE is designed to evaluate|  
+    |`metricEngine`|`GUID`s of the debug engines (DE) that work with this EE|  
   
     > [!NOTE]
-    >  Die `metricLanguage``GUID` identifiziert die Sprache von Namen, aber es ist die `guidLang` Argument `SetEEMetric` der die Sprache auswählt. Wenn der Compiler die Debug\-Informationsdatei generiert, sollte die entsprechende schreiben `guidLang` damit die DE weiß, welche EE verwenden. Die DE fordert die Symbol\-Anbieter in der Regel für diese Sprache `GUID`, das in der Debug\-Informationsdatei gespeichert ist.  
+    >  The `metricLanguage``GUID` identifies the language by name, but it is the `guidLang` argument to `SetEEMetric` that selects the language. When the compiler generates the debug information file, it should write the appropriate `guidLang` so that the DE knows which EE to use. The DE typically asks the symbol provider for this language `GUID`, which is stored in the debug information file.  
   
-3.  Registriert bei Visual Studio durch Erstellen von Schlüsseln unter HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\VisualStudio\\*X.Y*, wobei *X.Y* ist die Version von Visual Studio zu registrieren.  
+3.  Registers with Visual Studio by creating keys under HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y*, where *X.Y* is the version of Visual Studio to register with.  
   
-### Beispiel  
- Diese Funktion zeigt, wie eine nicht verwaltete Code \(C\+\+\) EE registriert, und hebt sich mit Visual Studio.  
+### <a name="example"></a>Example  
+ This function shows how an unmanaged code (C++) EE registers and unregisters itself with Visual Studio.  
   
 ```cpp#  
 /*---------------------------------------------------------  
   Registration  
 -----------------------------------------------------------*/  
 #ifndef LREGKEY_VISUALSTUDIOROOT  
-    #define LREGKEY_VISUALSTUDIOROOT L"Software\\Microsoft\\VisualStudio\\8.0"  
+    #define LREGKEY_VISUALSTUDIOROOT L"Software\\Microsoft\\VisualStudio\\8.0"  
 #endif  
   
 static HRESULT RegisterMetric( bool registerIt )  
 {  
-    // check where we should register  
-    const ULONG cchBuffer = _MAX_PATH;  
-    WCHAR wszRegistrationRoot[cchBuffer];  
-    DWORD cchFreeBuffer = cchBuffer - 1;  
-    wcscpy(wszRegistrationRoot, LREGKEY_VISUALSTUDIOROOT_NOVERSION);  
-    wcscat(wszRegistrationRoot, L"\\");  
+    // check where we should register  
+    const ULONG cchBuffer = _MAX_PATH;  
+    WCHAR wszRegistrationRoot[cchBuffer];  
+    DWORD cchFreeBuffer = cchBuffer - 1;  
+    wcscpy(wszRegistrationRoot, LREGKEY_VISUALSTUDIOROOT_NOVERSION);  
+    wcscat(wszRegistrationRoot, L"\\");  
   
-    // this is Environment SDK specific  
-    // we check for  EnvSdk_RegKey environment variable to  
-    // determine where to register  
-    DWORD cchDefRegRoot = lstrlenW(LREGKEY_VISUALSTUDIOROOT_NOVERSION) + 1;  
-    cchFreeBuffer = cchFreeBuffer - cchDefRegRoot;  
-    DWORD cchEnvVarRead = GetEnvironmentVariableW(  
-        /* LPCTSTR */ L"EnvSdk_RegKey", // environment variable name  
-        /* LPTSTR  */ &wszRegistrationRoot[cchDefRegRoot],// buffer for variable value  
-        /* DWORD   */ cchFreeBuffer);// size of buffer  
-    if (cchEnvVarRead >= cchFreeBuffer)  
-        return E_UNEXPECTED;  
-    // If the environment variable does not exist then we must use   
-    // LREGKEY_VISUALSTUDIOROOT which has the version number.  
-    if (0 == cchEnvVarRead)  
-        wcscpy(wszRegistrationRoot, LREGKEY_VISUALSTUDIOROOT);  
+    // this is Environment SDK specific  
+    // we check for  EnvSdk_RegKey environment variable to  
+    // determine where to register  
+    DWORD cchDefRegRoot = lstrlenW(LREGKEY_VISUALSTUDIOROOT_NOVERSION) + 1;  
+    cchFreeBuffer = cchFreeBuffer - cchDefRegRoot;  
+    DWORD cchEnvVarRead = GetEnvironmentVariableW(  
+        /* LPCTSTR */ L"EnvSdk_RegKey", // environment variable name  
+        /* LPTSTR  */ &wszRegistrationRoot[cchDefRegRoot],// buffer for variable value  
+        /* DWORD   */ cchFreeBuffer);// size of buffer  
+    if (cchEnvVarRead >= cchFreeBuffer)  
+        return E_UNEXPECTED;  
+    // If the environment variable does not exist then we must use   
+    // LREGKEY_VISUALSTUDIOROOT which has the version number.  
+    if (0 == cchEnvVarRead)  
+        wcscpy(wszRegistrationRoot, LREGKEY_VISUALSTUDIOROOT);  
   
-    if (registerIt)  
-    {  
-        SetEEMetric(guidMycLang,  
-                    guidMicrosoftVendor,  
-                    metricCLSID,  
-                    CLSID_MycEE,  
-                    wszRegistrationRoot );  
-        SetEEMetric(guidMycLang,  
-                    guidMicrosoftVendor,  
-                    metricName,  
-                    GetString(IDS_INFO_MYCDESCRIPTION),  
-                    wszRegistrationRoot );  
-        SetEEMetric(guidMycLang,  
-                    guidMicrosoftVendor,  
-                    metricLanguage, L"MyC",  
-                    wszRegistrationRoot);  
+    if (registerIt)  
+    {  
+        SetEEMetric(guidMycLang,  
+                    guidMicrosoftVendor,  
+                    metricCLSID,  
+                    CLSID_MycEE,  
+                    wszRegistrationRoot );  
+        SetEEMetric(guidMycLang,  
+                    guidMicrosoftVendor,  
+                    metricName,  
+                    GetString(IDS_INFO_MYCDESCRIPTION),  
+                    wszRegistrationRoot );  
+        SetEEMetric(guidMycLang,  
+                    guidMicrosoftVendor,  
+                    metricLanguage, L"MyC",  
+                    wszRegistrationRoot);  
   
-        GUID engineGuids[2];  
-        engineGuids[0] = guidCOMPlusOnlyEng;  
-        engineGuids[1] = guidCOMPlusNativeEng;  
-        SetEEMetric(guidMycLang,  
-                    guidMicrosoftVendor,  
-                    metricEngine,  
-                    engineGuids,  
-                    2,  
-                    wszRegistrationRoot);  
-    }  
-    else  
-    {  
-        RemoveEEMetric( guidMycLang,  
-                        guidMicrosoftVendor,  
-                        metricCLSID,  
-                        wszRegistrationRoot);  
-        RemoveEEMetric( guidMycLang,  
-                        guidMicrosoftVendor,  
-                        metricName,  
-                        wszRegistrationRoot );  
-        RemoveEEMetric( guidMycLang,  
-                        guidMicrosoftVendor,  
-                        metricLanguage,  
-                        wszRegistrationRoot );  
-        RemoveEEMetric( guidMycLang,  
-                        guidMicrosoftVendor,  
-                        metricEngine,  
-                        wszRegistrationRoot );  
-    }  
+        GUID engineGuids[2];  
+        engineGuids[0] = guidCOMPlusOnlyEng;  
+        engineGuids[1] = guidCOMPlusNativeEng;  
+        SetEEMetric(guidMycLang,  
+                    guidMicrosoftVendor,  
+                    metricEngine,  
+                    engineGuids,  
+                    2,  
+                    wszRegistrationRoot);  
+    }  
+    else  
+    {  
+        RemoveEEMetric( guidMycLang,  
+                        guidMicrosoftVendor,  
+                        metricCLSID,  
+                        wszRegistrationRoot);  
+        RemoveEEMetric( guidMycLang,  
+                        guidMicrosoftVendor,  
+                        metricName,  
+                        wszRegistrationRoot );  
+        RemoveEEMetric( guidMycLang,  
+                        guidMicrosoftVendor,  
+                        metricLanguage,  
+                        wszRegistrationRoot );  
+        RemoveEEMetric( guidMycLang,  
+                        guidMicrosoftVendor,  
+                        metricEngine,  
+                        wszRegistrationRoot );  
+    }  
   
-    return S_OK;  
+    return S_OK;  
 }  
 ```  
   
-## Siehe auch  
- [Schreiben Sie eine CLR\-Ausdrucksauswerter](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
- [SDK\-Hilfsprogramme für das Debuggen](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
+## <a name="see-also"></a>See Also  
+ [Writing a CLR Expression Evaluator](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
+ [SDK Helpers for Debugging](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

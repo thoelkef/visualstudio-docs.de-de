@@ -1,51 +1,68 @@
 ---
-title: "IDebugPortEx2::GetPortProcessId | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPortEx2::GetPortProcessId"
-helpviewer_keywords: 
-  - "IDebugPortEx2::GetPortProcessId"
+title: IDebugPortEx2::GetPortProcessId | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugPortEx2::GetPortProcessId
+helpviewer_keywords:
+- IDebugPortEx2::GetPortProcessId
 ms.assetid: be85be66-47e6-415f-b0ca-24599aa5f13c
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugPortEx2::GetPortProcessId
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 3d3a3e1b8eb97d627fa94ff6d5bb153355df7b41
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Ruft die Prozess\-ID des Anschlusses selbst ab.  
+---
+# <a name="idebugportex2getportprocessid"></a>IDebugPortEx2::GetPortProcessId
+Gets the process ID of the port itself.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetPortProcessId (   
-   DWORD* pdwProcessId  
+HRESULT GetPortProcessId (   
+   DWORD* pdwProcessId  
 );  
 ```  
   
-```c#  
-int GetPortProcessId (   
-   out uint pdwProcessId  
+```cs  
+int GetPortProcessId (   
+   out uint pdwProcessId  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `pdwProcessId`  
- \[out\]  Gibt die physische Prozess\-ID des Anschlusses selbst zurück.  
+ [out] Returns the physical process ID of the port itself.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Hinweise  
- In der Win32\-Laufzeit z. B., ruft diese Methode in der Regel die Win32\-Funktion `GetCurrentProcessId` auf, um die physische Prozessnummer abzurufen  
+## <a name="remarks"></a>Remarks  
+ In the Win32 runtime for example, this method typically calls the Win32 function `GetCurrentProcessId` to get the physical process ID.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)

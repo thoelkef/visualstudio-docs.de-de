@@ -1,63 +1,79 @@
 ---
-title: "Umgestaltung durch Umbenennen (C#) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.csharp.refactoring.rename"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "Umgestaltung [C#], durch Umbenennen"
-  - "Umgestaltung durch Umbenennen [C#]"
+redirect_url: /visualstudio/csharp-ide/refactoring/rename
+title: Rename Refactoring (C#) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-csharp
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- refactoring [C#], Rename
+- Rename refactoring [C#]
 ms.assetid: 268942fc-b142-4dfa-8d90-bedd548c2e4f
 caps.latest.revision: 45
-caps.handback.revision: 45
-author: "BillWagner"
-ms.author: "wiwagn"
-manager: "wpickett"
----
-# Umgestaltung durch Umbenennen (C#)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: BillWagner
+ms.author: wiwagn
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 0ac165a7ee5ba262b9452a75172f053edac6f749
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-**Umbenennen** ist ein Umgestaltungsfeature in der IDE \(integrierte Entwicklungsumgebung\) von Visual Studio, mit dem Sie auf einfache Weise Bezeichner für Codesymbole wie Felder, lokale Variablen, Methoden, Namespaces, Eigenschaften und Typen umbenennen können.  **Umbenennen** kann verwendet werden, um die Namen in Kommentaren und Zeichenfolgen sowie Deklarationen und Aufrufe eines Bezeichners zu ändern.  
+---
+# <a name="rename-refactoring-c"></a>Rename Refactoring (C#)
+**Rename** is a refactoring feature in the Visual Studio integrated development environment (IDE) that provides an easy way to rename identifiers for code symbols such as fields, local variables, methods, namespaces, properties, and types. **Rename** can be used to change the names in comments and in strings and to change the declarations and calls of an identifier.  
   
 > [!NOTE]
->  Wenn Sie die die Quellcodeverwaltung von Visual Studio verwenden, rufen Sie die neueste Version der Quellen ab, bevor Sie die Umgestaltung mit Umbenennen ausführen.  
+>  When using Source Control for Visual Studio, get the latest version of sources before you try to perform rename refactoring.  
   
- Die Umgestaltung mit Umbenennen ist in den folgenden Visual Studio\-Features verfügbar:  
+ Rename refactoring is available from the following Visual Studio features:  
   
-|Funktion|Verhalten der Umgestaltung in der IDE|  
-|--------------|-------------------------------------------|  
-|Code\-Editor|Im Code\-Editor ist die Umgestaltung mit Umbenennen verfügbar, wenn Sie den Cursor auf bestimmten Codesymboltypen positionieren.  Wenn der Cursor an dieser Position befindet, können Sie den Befehl **Umbenennen** aufrufen, indem Sie die Tastenkombination eingeben \(STRG\+R, STRG\+ R\) oder durch Auswählen des Befehls **Umbenennen** von einem Smarttag, im Kontextmenü oder aus dem Menü **Umgestalten**.|  
-|Klassenansicht|Wenn Sie einen Bezeichner in der Klassenansicht auswählen, ist die Umgestaltung mit Umbenennen im Kontextmenü und im Menü **Umgestalten** verfügbar.|  
-|Objektkatalog|Wenn Sie einen Bezeichner im Objektkatalog auswählen, ist die Umgestaltung mit Umbenennen nur im Menü **Umgestalten** verfügbar.|  
-|Eigenschaftenraster des Windows Forms\-Designers|Wenn Sie den Namen eines Steuerelements im **Eigenschaftenraster** des Windows Forms\-Designers ändern, wird ein Umbenennungsvorgang für dieses Steuerelement gestartet.  Das Dialogfeld **Umbenennen** wird nicht angezeigt.|  
-|Projektmappen\-Explorer|Im **Projektmappen\-Explorer** ist der Befehl **Umbenennen** im Kontextmenü verfügbar.  Wenn die ausgewählte Quelldatei eine Klasse enthält, deren Klassenname dem Dateinamen entspricht, können Sie mit diesem Befehl die Quelldatei umbenennen und gleichzeitig die Umgestaltung mit Umbenennen ausführen.<br /><br /> Wenn Sie beispielsweise eine Windows\-Standardanwendung erstellen und dann Form1.cs in TestForm.cs umbenennen, wird der Quelldateiname Form1.cs in TestForm.cs geändert, und die Klasse Form1 sowie alle Verweise auf diese Klasse werden in TestForm umbenannt. **Note:**  Durch den Befehl **Rückgängig** \(STRG\+Z\) wird die Umgestaltung mit Umbenennen nur im Code rückgängig gemacht. Der Dateiname wird nicht in den ursprünglichen Namen zurückgeändert. <br /><br /> Wenn die ausgewählte Quelldatei keine Klasse enthält, deren Name mit dem Dateinamen übereinstimmt, wird durch den Befehl **Umbenennen** im **Projektmappen\-Explorer** nur die Quelldatei umbenannt und keine Umgestaltung mit Umbenennen ausgeführt.|  
+|Feature|Behavior of Refactoring in the IDE|  
+|-------------|----------------------------------------|  
+|Code Editor|In the Code Editor, rename refactoring is available when you position the cursor on certain types of code symbols. When the cursor is in this position, you can invoke the **Rename** command by typing the keyboard shortcut (CTRL + R, CTRL + R), or by selecting the **Rename** command from a smart tag, shortcut menu, or the **Refactor** menu.|  
+|Class View|When you select an identifier in Class View, rename refactoring is available from the shortcut menu and **Refactor** menu.|  
+|Object Browser|When you select an identifier in Object Browser, rename refactoring is only available from the **Refactor** menu.|  
+|Property Grid of the Windows Forms Designer|In the **Property Grid** of the Windows Forms Designer, changing the name of a control will initiate a rename operation for that control. The **Rename** dialog box will not appear.|  
+|Solution Explorer|In **Solution Explorer**, a **Rename** command is available on the shortcut menu. If the selected source file contains a class whose class name is the same as the file name, you can use this command to simultaneously rename the source file and execute rename refactoring.<br /><br /> For example, if you create a default Windows-based application and then rename Form1.cs to TestForm.cs, the source file name Form1.cs will change to TestForm.cs and the class Form1 and all references to that class will be renamed to TestForm. **Note:**  The **Undo** command (CTRL+Z) will only undo rename refactoring in the code and will not change the file name back to the original name. <br /><br /> If the selected source file does not contain a class whose name is the same as the file name, the **Rename** command in **Solution Explorer** will only rename the source file and will not execute rename refactoring.|  
   
-## Umbenennungsvorgänge  
- Wenn Sie **Umbenennen** ausführen, führt das Umgestaltungsmodul für die einzelnen Codesymbole spezifische Umbenennungsvorgänge aus, wie in der folgenden Tabelle beschrieben.  
+## <a name="rename-operations"></a>Rename Operations  
+ When you execute **Rename**, the refactoring engine performs a rename operation specific for each code symbol, as described in the following table.  
   
-|Codesymbol|Umbenennungsvorgang|  
-|----------------|-------------------------|  
-|Feld|Ändert die Deklaration und alle Verwendungen des Felds in den neuen Namen.|  
-|Lokale Variable|Ändert die Deklaration und Vorkommen der Variablen in den neuen Namen.|  
-|Methode|Ändert den Namen der Methode und alle Verweise auf diese Methode in den neuen Namen. **Note:**  Wenn Sie eine vorhandene Methode umbenenne, wird die Umbenennung auf alle Instanzen der Methode angewendet, die sich im Gültigkeitsbereich befinden, und zwar unabhängig davon, ob eine Erweiterungsmethode als statische Methode oder Instanzmethode verwendet wird.  Weitere Informationen finden Sie unter [Erweiterungsmethoden](/dotnet/csharp/programming-guide/classes-and-structs/extension-methods).|  
-|Namespace|Ändert den Namen des Namespaces in der Deklaration, allen `using`\-Anweisungen und vollqualifizierten Namen in den neuen Namen. **Note:**  Beim Umbenennen eines Namespaces aktualisiert [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] auch die **Standardnamespace**\-Eigenschaft auf der Seite **Anwendung** des **Projekt\-Designers**.  Diese Eigenschaft kann durch Auswahl von **Rückgängig** im Menü **Bearbeiten** nicht zurückgesetzt werden.  Um den Wert der **Standardnamespace**\-Eigenschaft zurückzusetzen, müssen Sie die Eigenschaft im **Projekt\-Designer** ändern.  Weitere Informationen finden Sie unter [Seite 'Anwendung'](../ide/reference/application-page-project-designer-csharp.md).|  
-|Eigenschaft|Ändert die Deklaration und alle Verwendungen der Eigenschaft in den neuen Namen.|  
-|Text \[Type\]|Ändert alle Deklarationen und Vorkommen des Typs, einschließlich Konstruktoren und Destruktoren, in den neuen Namen.  Bei partiellen Typen wirkt sich der Umbenennungsvorgang auf alle Teile aus.|  
+|Code Symbol|Rename Operation|  
+|-----------------|----------------------|  
+|Field|Changes the declaration and usages of the field to the new name.|  
+|Local variable|Changes the declaration and usages of the variable to the new name.|  
+|Method|Changes the name of the method and all references to that method to the new name. **Note:**  When you rename an extension method, the rename operation propagates to all instances of the method that are in scope, regardless of whether the extension method is being used as a static method or an instance method. For more information, see [Extension Methods](/dotnet/csharp/programming-guide/classes-and-structs/extension-methods).|  
+|Namespace|Changes the name of the namespace to the new name in the declaration, all `using` statements, and fully qualified names. **Note:**  When renaming a namespace, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] also updates the **Default Namespace** property on the **Application** page of the **Project Designer**. This property cannot be reset by selecting **Undo** from the **Edit** menu. To reset the **Default Namespace** property value, you must modify the property in the **Project Designer**. For more information, see [Application Page](../ide/reference/application-page-project-designer-csharp.md).|  
+|Property|Changes the declaration and usages of the property to the new name.|  
+|Type|Changes all declarations and all usages of the type to the new name, including constructors and destructors. For partial types, the rename operation will propagate to all parts.|  
   
-#### So benennen Sie einen Bezeichner um  
+#### <a name="to-rename-an-identifier"></a>To rename an identifier  
   
-1.  Erstellen Sie eine Konsolenanwendung mit dem Namen `RenameIdentifier`, und ersetzen Sie `Program` durch den folgenden Beispielcode.  
+1.  Create a console application named `RenameIdentifier`, and then replace `Program` with the following example code.  
   
-    ```c#  
+    ```cs  
     class ProtoClassA  
     {  
         // Invoke on 'MethodB'.  
@@ -76,25 +92,25 @@ manager: "wpickett"
     }  
     ```  
   
-2.  Positionieren Sie den Cursor entweder in der Methodendeklaration oder im Methodenaufruf auf `MethodB`.  
+2.  Place the cursor on `MethodB`, either in the method declaration or the method call.  
   
-3.  Klicken Sie im Menü **Umgestalten** auf **Umbenennen**.  Das Dialogfeld **Umbenennen** wird angezeigt.  
+3.  From the **Refactor** menu, select **Rename**. The **Rename** dialog box appears.  
   
-     Sie können auch mit der rechten Maustaste auf den Cursor klicken, im Kontextmenü auf **Umgestalten** zeigen und dann auf **Umbenennen** klicken, um das Dialogfeld **Umbenennen** anzuzeigen.  
+     You can also right-click the cursor, point to **Refactor** on the context menu, and then click **Rename** to display the **Rename** dialog box.  
   
-4.  Geben Sie im Feld **Neuer Name** den Eintrag `MethodC` ein.  
+4.  In the **New Name** field, type `MethodC`.  
   
-5.  Aktivieren Sie das Kontrollkästchen **In Kommentaren suchen**.  
+5.  Select the **Search in Comments** check box.  
   
-6.  Klicken Sie auf **OK**.  
+6.  Click **OK**.  
   
-7.  Klicken Sie im Dialogfeld **Vorschau der Änderungen** auf **Übernehmen**.  
+7.  In the **Preview Changes** dialog box, click **Apply**.  
   
-#### So benennen Sie einen Bezeichner mithilfe von Smarttags um  
+#### <a name="to-rename-an-identifier-using-smart-tags"></a>To rename an identifier using smart tags  
   
-1.  Erstellen Sie eine Konsolenanwendung mit dem Namen `RenameIdentifier`, und ersetzen Sie `Program` durch den folgenden Beispielcode.  
+1.  Create a console application named `RenameIdentifier`, and then replace `Program` with the following example code.  
   
-    ```c#  
+    ```cs  
     class ProtoClassA  
     {  
         // Invoke on 'MethodB'.  
@@ -113,50 +129,50 @@ manager: "wpickett"
     }  
     ```  
   
-2.  Überschreiben Sie den Methodenbezeichner in der Deklaration für `MethodB`, oder löschen Sie ihn mit der RÜCKTASTE.  Eine Smarttag\-Eingabeaufforderung wird unterhalb dieses Bezeichners angezeigt.  
+2.  In the declaration for `MethodB`, type or backspace over the method identifier. A smart tag prompt will appear below this identifier.  
   
     > [!NOTE]
-    >  Die Umgestaltung mit Umbenennen kann an der Deklaration eines Bezeichners nur mithilfe von Smarttags aufgerufen werden.  
+    >  You can only invoke rename refactoring using smart tags at the declaration of an identifier.  
   
-3.  Drücken Sie die Tastenkombination UMSCHALT\+ALT\+F10 und anschließend die NACH\-UNTEN\-TASTE, um das Smarttag\-Menü anzuzeigen.  
+3.  Type the keyboard shortcut SHIFT+ALT+F10, and then press the DOWN ARROW to display the smart tag menu.  
   
-     \- oder \-  
+     -or-  
   
-     Verschieben Sie den Mauszeiger über die Smarttag\-Eingabeaufforderung, um das Smarttag anzuzeigen.  Verschieben Sie den Mauszeiger dann über das Smarttag, und klicken Sie auf den nach unten weisenden Pfeil, um das Smarttag\-Menü anzuzeigen.  
+     Move the mouse pointer over the smart tag prompt to display the smart tag. Then move the mouse pointer over the smart tag and click the DOWN ARROW to display the smart tag menu.  
   
-4.  Wählen Sie das Menüelement **'**\<Bezeichner1\>**' in '**\<Bezeichner2\>**' umbenennen** aus, um die Umgestaltung mit Umbenennen ohne Vorschau der Änderungen für den Code aufzurufen.  Alle Verweise auf \<Bezeichner1\> werden automatisch auf \<Bezeichner2\> aktualisiert.  
+4.  Select the **Rename '\<identifer1>' to '\<identifier2>'** menu item to invoke rename refactoring without a preview of the changes to your code. All references to **\<identifer1>** will automatically be updated to **\<identifier2>**.  
   
-     \- oder \-  
+     -or-  
   
-     Wählen Sie das Menüelement **Umbenennen mit Vorschau** aus, um die Umgestaltung mit Umbenennen aufzurufen und gleichzeitig eine Vorschau der Änderungen am Code anzuzeigen.  Das Dialogfeld **Vorschau der Änderungen** wird angezeigt.  
+     Select the **Rename with preview** menu item to invoke rename refactoring with a preview of the changes to your code. The **Preview Changes** dialog box will appear.  
   
-## Hinweise  
+## <a name="remarks"></a>Remarks  
   
-## Umbenennen implementiert oder überschriebene Member  
- Wenn Sie einen Member **umbenennen**, der Member in anderen Typen implementiert\/überschreibt bzw. von Membern in anderen Typen implementiert\/überschrieben wird, zeigt [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ein Dialogfeld an, in dem Sie darauf hingewiesen werden, dass der Umbenennungsvorgang zu kaskadierenden Aktualisierungen führt.  Wenn Sie auf **Weiter** klicken, führt das Umgestaltungsmodul eine rekursive Suche und Umbenennung aller Member in Basistypen und abgeleiteten Typen aus, die in einer Implementierungs\-\/Überschreibungsbeziehung zu dem umbenannten Member stehen.  
+## <a name="renaming-implemented-or-overridden-members"></a>Renaming Implemented or Overridden Members  
+ When you **Rename** a member that either implements/overrides or is implemented/overridden by members in other types, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] displays a dialog box that says the rename operation will cause cascading updates. If you click **Continue**, the refactoring engine recursively finds and renames all members in base and derived types that have implements/overrides relationships with the member being renamed.  
   
- Das folgende Codebeispiel enthält Member mit Implementierungs\-\/Überschreibungsbeziehungen.  
+ The following code example contains members with implements/overrides relationships.  
   
  [!code-cs[CsUsingCsIDERefactor#1](../csharp-ide/codesnippet/CSharp/rename-refactoring-csharp_1.cs)]  
   
- Im vorherigen Beispiel wird durch das Umbenennen von `C.Method()` auch `Ibase.Method()` umbenannt, da `Ibase.Method()` von `C.Method()` implementiert wird.  In einer rekursiven Suche erkennt das Umgestaltungsmodul daraufhin, dass `Ibase.Method()` von `Derived.Method()` implementiert wird und benennt `Derived.Method()` um.  `Base.Method()` benennt das Umgestaltungsmodul hingegen nicht um, da `Base.Method()` von `Derived.Method()` nicht überschrieben wird.  Sofern im Dialogfeld **Umbenennen** nicht die Option **Überladungen umbenennen** aktiviert ist, stoppt das Umgestaltungsmodul an dieser Stelle.  
+ In the previous example, renaming `C.Method()` also renames `Ibase.Method()` because `C.Method()` implements `Ibase.Method()`. Next, the refactor engine recursively sees that `Ibase.Method()` is implemented by `Derived.Method()` and renames `Derived.Method()`. The refactor engine does not rename `Base.Method()`, because `Derived.Method()` does not override `Base.Method()`. The refactoring engine stops here unless you have **Rename overloads** checked in the **Rename** dialog box.  
   
- Wenn **Überladungen umbenennen** aktiviert ist, benennt das Umgestaltungsmodul `Derived.Method(int i)` um, weil es `Derived.Method()` überlädt, `Base.Method(int i)`, weil es von `Derived.Method(int i)` überschrieben wird und `Base.Method()`, weil es eine Überladung von `Base.Method(int i)` ist.  
+ If **Rename overloads** is checked, the refactor engine renames `Derived.Method(int i)` because it overloads `Derived.Method()`, `Base.Method(int i)` because it is overridden by `Derived.Method(int i)`, and `Base.Method()` because it is an overload of `Base.Method(int i)`.  
   
 > [!NOTE]
->  Wenn Sie einen Member umbenennen, der in einer referenzierten Assembly definiert wurde, werden Sie in einem Dialogfeld darauf hingewiesen, das die Umbenennung zu Buildfehlern führt.  
+>  When you rename a member that was defined in a referenced assembly, a dialog box explains that renaming will cause build errors.  
   
-## Umbenennen von Eigenschaften anonymer Typen  
- Wenn Sie eine Eigenschaft anonymer Typen umbenennen, wird der Umbenennungsvorgang auch für Eigenschaften in anderen anonymen Typen, die über die gleichen Eigenschaften verfügen, durchgeführt.  Dieses Verhalten wird im folgenden Beispiel veranschaulicht:  
+## <a name="renaming-properties-of-anonymous-types"></a>Renaming Properties of Anonymous Types  
+ When you rename a property in anonymous types, the rename operation will propagate to properties in other anonymous types that have the same properties. The following examples illustrate this behavior.  
   
-```c#  
+```cs  
 var a = new { ID = 1};  
 var b = new { ID = 2};  
 ```  
   
- Im vorhergehenden Code führt das Umbenennen der `ID` zur Änderung der `ID` in beiden Anweisungen, da sie über den gleichen zugrunde liegenden anonymen Typ verfügen.  
+ In the preceding code, renaming `ID` will change `ID` in both statements because they have the same underlying anonymous type.  
   
-```c#  
+```cs  
 var companyIDs =  
     from c in companylist  
     select new { ID = c.ID, Name = c.Name};  
@@ -166,8 +182,8 @@ var orderIDs =
     select new { ID = o.ID, Item = o.Name};  
 ```  
   
- Im vorhergehenden Code führt das Umbenennen von `ID` nur zum Umbenennen einer Instanz von `ID`, da `companyIDs` und `orderIDs` nicht über die gleichen Eigenschaften verfügen.  
+ In the preceding code, renaming `ID` will only rename one instance of `ID` because `companyIDs` and `orderIDs` do not have the same properties.  
   
-## Siehe auch  
- [Refactoring \(C\#\)](../csharp-ide/refactoring-csharp.md)   
- [Anonyme Typen](/dotnet/csharp/programming-guide/classes-and-structs/anonymous-types)
+## <a name="see-also"></a>See Also  
+ [Refactoring (C#)](refactoring-csharp.md)   
+ [Anonymous Types](/dotnet/csharp/programming-guide/classes-and-structs/anonymous-types)

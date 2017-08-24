@@ -1,48 +1,65 @@
 ---
-title: "IDebugModule3::IsUserCode | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugModule3::IsUserCode"
-helpviewer_keywords: 
-  - "IDebugModule3::IsUserCode"
+title: IDebugModule3::IsUserCode | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugModule3::IsUserCode
+helpviewer_keywords:
+- IDebugModule3::IsUserCode
 ms.assetid: 77022946-bb8b-4114-aa81-614df6e54b13
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugModule3::IsUserCode
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: ffa5be1e9fb92bdc5b2e8193922228a5129a2188
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Ruft Informationen ab, ob das Modul Benutzercode oder nicht darstellt.  
+---
+# <a name="idebugmodule3isusercode"></a>IDebugModule3::IsUserCode
+Retrieves information on whether the module represents user code or not.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT IsUserCode(  
-   BOOL* pfUser  
+HRESULT IsUserCode(  
+   BOOL* pfUser  
 );  
 ```  
   
-```c#  
+```cs  
 int IsUserCode(  
-   out int pfUser  
+   out int pfUser  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `pfUser`  
- \[out\]  Ein Wert ungleich 0 \(`TRUE`\), wenn Benutzercode Modul darstellt \(null\)`FALSE`.  
+ [out] Nonzero (`TRUE`) if module represents user code, zero (`FALSE`) if it does not.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. Gibt andernfalls Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns error code.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

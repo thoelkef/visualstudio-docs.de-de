@@ -1,52 +1,69 @@
 ---
-title: "IDebugDefaultPort2::GetPortNotify | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDefaultPort2::GetPortNotify"
-helpviewer_keywords: 
-  - "IDebugDefaultPort2::GetPortNotify"
+title: IDebugDefaultPort2::GetPortNotify | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugDefaultPort2::GetPortNotify
+helpviewer_keywords:
+- IDebugDefaultPort2::GetPortNotify
 ms.assetid: 3ae715ee-9886-4694-a52b-59bb3b27467a
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugDefaultPort2::GetPortNotify
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: e3331ff25ff54d7be58e85979f366fff72b643a0
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Diese Methode ruft eine [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)\-Schnittstelle für diesen Port ab.  
+---
+# <a name="idebugdefaultport2getportnotify"></a>IDebugDefaultPort2::GetPortNotify
+This method gets an [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) interface for this port.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT GetPortNotify(  
-   IDebugPortNotify2** ppPortNotify  
+HRESULT GetPortNotify(  
+   IDebugPortNotify2** ppPortNotify  
 );  
 ```  
   
-```c#  
-int GetPortNotify(  
-   out IDebugPortNotify2 ppPortNotify  
+```cs  
+int GetPortNotify(  
+   out IDebugPortNotify2 ppPortNotify  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `ppPortNotify`  
- \[out\]  Ein [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)\-Objekt.  
+ [out] An [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) object.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Hinweise  
- Normalerweise wird die `QueryInterface`\-Methode, um dem Objekt aufgerufen, das die Schnittstelle implementiert [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) zum Abrufen einer [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)\-Schnittstelle.  Es gibt jedoch Umstände, unter denen die gewünschte Schnittstelle für ein anderes Objekt implementiert wird.  Diese Methode blendet diese Bedingungen aus und gibt die `IDebugPortNotify2`\-Schnittstelle aus dem entsprechendsten Objekt zurück.  
+## <a name="remarks"></a>Remarks  
+ Normally, the `QueryInterface` method is called on the object implementing the [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) interface to obtain an [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) interface. However, there are circumstances in which the desired interface is implemented on a different object. This method hides those circumstances and returns the `IDebugPortNotify2` interface from the most appropriate object.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)   
  [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)

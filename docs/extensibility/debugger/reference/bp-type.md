@@ -1,73 +1,90 @@
 ---
-title: "BP_TYPE | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "BP_TYPE"
-helpviewer_keywords: 
-  - "BP_TYPE-enumeration"
+title: BP_TYPE | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- BP_TYPE
+helpviewer_keywords:
+- BP_TYPE enumeration
 ms.assetid: ef07191e-7966-43ab-96fb-1a0b1db3115d
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# BP_TYPE
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 708a933944a081a8a49b329eed7a8d2984ad85c3
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Gibt an, ob der Haltepunkt an einem Speicherort des Codes besteht darin, ein Speicherort ist oder ein anderer Daten Haltepunkttyp darstellt.  
+---
+# <a name="bptype"></a>BP_TYPE
+Specifies whether the breakpoint is at a code location, is a data location, or is another type of breakpoint.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-enum enum_BP_TYPE {   
-   BPT_NONE    = 0x0000,  
-   BPT_CODE    = 0x0001,  
-   BPT_DATA    = 0x0002,  
-   BPT_SPECIAL = 0x0003  
+enum enum_BP_TYPE {   
+   BPT_NONE    = 0x0000,  
+   BPT_CODE    = 0x0001,  
+   BPT_DATA    = 0x0002,  
+   BPT_SPECIAL = 0x0003  
 };  
 typedef DWORD BP_TYPE;  
 ```  
   
-```c#  
-public enum enum_BP_TYPE {   
-   BPT_NONE    = 0x0000,  
-   BPT_CODE    = 0x0001,  
-   BPT_DATA    = 0x0002,  
-   BPT_SPECIAL = 0x0003  
+```cs  
+public enum enum_BP_TYPE {   
+   BPT_NONE    = 0x0000,  
+   BPT_CODE    = 0x0001,  
+   BPT_DATA    = 0x0002,  
+   BPT_SPECIAL = 0x0003  
 };  
 ```  
   
-## Mitglieder  
- BPT\_NONE  
- Gibt keinen Haltepunkt den Typ an.  
+## <a name="members"></a>Members  
+ BPT_NONE  
+ Specifies no breakpoint type.  
   
- BPT\_CODE  
- Gibt einen Codebreakpoint an.  
+ BPT_CODE  
+ Specifies a code breakpoint.  
   
- BPT\_DATA  
- Gibt einen Datenhaltepunkt an.  
+ BPT_DATA  
+ Specifies a data breakpoint.  
   
- BPT\_SPECIAL  
- Gibt einen Haltepunkt an, der weder ein Code noch ein Datentyp ist.  Dieser Typ ist veraltet und sollte nicht verwendet werden.  
+ BPT_SPECIAL  
+ Specifies a breakpoint that is neither a code nor a data type. This type is deprecated and should not be used.  
   
-## Hinweise  
- Übergabe als Parameter an die [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) und [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)\-Methoden.  
+## <a name="remarks"></a>Remarks  
+ Passed as a parameter to the [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) and [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md) methods.  
   
-## Anforderungen  
+## <a name="requirements"></a>Requirements  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
- [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)   
  [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)

@@ -1,49 +1,66 @@
 ---
-title: "IDebugReference2::GetMemoryBytes | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugReference2::GetMemoryBytes"
-helpviewer_keywords: 
-  - "IDebugReference2::GetMemoryBytes"
+title: IDebugReference2::GetMemoryBytes | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugReference2::GetMemoryBytes
+helpviewer_keywords:
+- IDebugReference2::GetMemoryBytes
 ms.assetid: 2006cb2b-1dfa-4a2d-8e3e-db2ce0302e0d
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugReference2::GetMemoryBytes
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: f29e388deb1a33ec2886ffe72e629718ec75ff8d
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Ruft den Arbeitsspeicher physisch Bytes ab, die den Wert eines Verweises enthalten.  Für zukünftige Verwendung reserviert.  
+---
+# <a name="idebugreference2getmemorybytes"></a>IDebugReference2::GetMemoryBytes
+Gets the memory bytes that physically contain the value of a reference. Reserved for future use.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetMemoryBytes (   
-   IDebugMemoryBytes2** ppMemoryBytes  
+HRESULT GetMemoryBytes (   
+   IDebugMemoryBytes2** ppMemoryBytes  
 );  
 ```  
   
-```c#  
-int GetMemoryBytes (   
-   out IDebugMemoryBytes2 ppMemoryBytes  
+```cs  
+int GetMemoryBytes (   
+   out IDebugMemoryBytes2 ppMemoryBytes  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `ppMemoryBytes`  
- \[out\]  Gibt ein [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)\-Objekt zurück, das verwendet werden kann, um auf den Speicher abgerufen, der den Wert des Verweises enthält.  
+ [out] Returns an [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) object that can be used to retrieve the memory that contains the value of the reference.  
   
-## Rückgabewert  
- Gibt immer `E_NOTIMPL` zurück.  
+## <a name="return-value"></a>Return Value  
+ Always returns `E_NOTIMPL`.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)   
  [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

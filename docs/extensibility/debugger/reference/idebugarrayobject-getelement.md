@@ -1,56 +1,73 @@
 ---
-title: "IDebugArrayObject::GetElement | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugArrayObject::GetElement"
-helpviewer_keywords: 
-  - "IDebugArrayObject::GetElement-Methode"
+title: IDebugArrayObject::GetElement | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugArrayObject::GetElement
+helpviewer_keywords:
+- IDebugArrayObject::GetElement method
 ms.assetid: 08b44341-7bf1-4a8c-8b79-98ae5785b195
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugArrayObject::GetElement
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 69574670a49b45b60143bfb90f01bfc246507be0
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Ruft ein Element des Arrays ab.  
+---
+# <a name="idebugarrayobjectgetelement"></a>IDebugArrayObject::GetElement
+Gets an element of the array.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetElement(   
-   DWORD          dwIndex,  
-   IDebugObject** ppElement  
+HRESULT GetElement(   
+   DWORD          dwIndex,  
+   IDebugObject** ppElement  
 );  
 ```  
   
-```c#  
+```cs  
 int GetElement(  
-   [In] uint dwIndex,   
-   out IDebugObject ppElement  
+   [In] uint dwIndex,   
+   out IDebugObject ppElement  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `dwIndex`  
- \[in\]  Der Elementindex.  
+ [in] The element index.  
   
  `ppElement`  
- \[out\]  Gibt eine [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)\-Schnittstelle zurück, mit der das Element darstellt.  
+ [out] Returns an [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) interface that represents the element.  
   
-## Rückgabewert  
- Bei Erfolg gibt S\_OK zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
-## Hinweise  
- Diese Methode erkennt alle Elemente eines Arrayobjekts als eindimensionales Array, selbst wenn das Arrayobjekt mehrdimensional ist.  Beispielsweise würde das Array `myarray[3][2][6]` und ein `dwIndex`\-Parameter von 20, diese Methode das Element aus `myarray[1][1][2]`zurückgegeben, und ein `dwIndex`\-Parameter von 21 wird das Element aus `myarray[1][1][3]`zurückgeben.  Verwenden Sie die [GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md)\-Methode die Gesamtzahl der Elemente im Array zu bestimmen.  
+## <a name="remarks"></a>Remarks  
+ This method sees all of the elements of an array object as a one-dimensional array, even if the array object is multi-dimensional. For example, given the array `myarray[3][2][6]` and a `dwIndex` parameter of 20, this method would return the element from `myarray[1][1][2]`, and a `dwIndex` parameter of 21 would return the element from `myarray[1][1][3]`. Use the [GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) method to determine the total number of elements in the array.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

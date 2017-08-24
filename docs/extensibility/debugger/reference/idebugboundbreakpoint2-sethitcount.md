@@ -1,55 +1,72 @@
 ---
-title: "IDebugBoundBreakpoint2::SetHitCount | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBoundBreakpoint2::SetHitCount"
-helpviewer_keywords: 
-  - "SetHitCount-Methode"
-  - "IDebugBoundBreakpoint2::SetHitCount-Methode"
+title: IDebugBoundBreakpoint2::SetHitCount | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugBoundBreakpoint2::SetHitCount
+helpviewer_keywords:
+- SetHitCount method
+- IDebugBoundBreakpoint2::SetHitCount method
 ms.assetid: 8145d875-26b1-4049-a2a2-e7d3d7f4735f
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugBoundBreakpoint2::SetHitCount
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 8dc4e687079e368d0771f6b159caa660cd348b2c
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Legt die Trefferanzahl für den gebundenen Haltepunkt fest.  
+---
+# <a name="idebugboundbreakpoint2sethitcount"></a>IDebugBoundBreakpoint2::SetHitCount
+Sets the hit count for the bound breakpoint.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT SetHitCount(   
-   DWORD dwHitCount  
+HRESULT SetHitCount(   
+   DWORD dwHitCount  
 );  
 ```  
   
-```c#  
-int SetHitCount(   
-   uint dwHitCount  
+```cs  
+int SetHitCount(   
+   uint dwHitCount  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `dwHitCount`  
- \[in\]  Die Trefferanzahl, der festgelegt werden soll.  
+ [in] The hit count to set.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  Gibt `E_BP_DELETED` zurück, wenn sich der Zustand des Objekts `BPS_DELETED` gebundenen Haltepunkt festgelegt ist \(Teil der [BP\_STATE](../../../extensibility/debugger/reference/bp-state.md)\-Enumeration\).  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code. Returns `E_BP_DELETED` if the state of the bound breakpoint object is set to `BPS_DELETED` (part of the [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumeration).  
   
-## Hinweise  
- Die Trefferanzahl ist, wieoft dieser Haltepunkt während der aktuelle Reihe der Sitzung ausgelöst hat.  
+## <a name="remarks"></a>Remarks  
+ The hit count is the number of times this breakpoint has fired during the current run of the session.  
   
- Diese Methode wird in der Regel durch das Debugmodul aufgerufen, um die aktuelle Trefferanzahl auf diesem Haltepunkt zu aktualisieren.  
+ This method is typically called by the debug engine to update the current hit count on this breakpoint.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
- [BP\_STATE](../../../extensibility/debugger/reference/bp-state.md)
+ [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

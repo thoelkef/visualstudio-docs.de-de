@@ -1,5 +1,5 @@
 ---
-title: Mithilfe des Automatisierungsmodells | Microsoft-Dokumentation
+title: Using the Automation Model | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -28,19 +28,20 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 5655168e868e34befe83521a17b124c58be816b7
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: beae7d64aaf9b4ce454ebf9de8baa114e60d1ac0
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
 ---
-# <a name="using-the-automation-model"></a>Mithilfe des Automatisierungsmodells
-Nachdem Sie Ihr VSPackage Automation verbunden haben, Sie erhalten die Eigenschaften und Methoden durch Aufrufen der <xref:EnvDTE.DTEClass.GetObject%2A>-Methode für die <xref:EnvDTE._DTE>Objekt auf und übergibt eine Zeichenfolge, die das Objekt, das Sie abrufen möchten.</xref:EnvDTE._DTE> </xref:EnvDTE.DTEClass.GetObject%2A>  
+# <a name="using-the-automation-model"></a>Using the Automation Model
+After you have connected your VSPackage to automation, you can obtain the properties and methods by calling the <xref:EnvDTE.DTEClass.GetObject%2A> method on the <xref:EnvDTE._DTE> object, passing a string representing the object you wish to retrieve.  
   
-## <a name="obtaining-project-objects"></a>Abrufen von Project-Objekte  
- Es folgen zwei Codebeispiele, die zeigen, wie ein Consumer Automatisierung des Projekts Automatisierungsobjekte erhält. Informationen zum Abrufen des DTE-Objekts finden Sie unter [Gewusst wie: Abrufen Verweise auf DTE und DTE2-Objekt](http://msdn.microsoft.com/Library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4).  
+## <a name="obtaining-project-objects"></a>Obtaining Project Objects  
+ The following are two code examples that show how an automation consumer obtains the project automation objects. For information about how to get the DTE object, see [How to: Get References to the DTE and DTE2 Objects](http://msdn.microsoft.com/Library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4).  
   
-```vb#  
+```vb  
 Sub DoAutomation()  
     Dim MyProjects As Projects  
     MyProjects = DTE.GetObject("AcmeProject")  
@@ -60,11 +61,11 @@ void DoAutomation(void)
   
 ```  
   
- An diesem Punkt können Sie die standard-Projekt-Objekte, die Teil eines bestimmten VSPackage, das Hierarchiemodell nach oben zu verschieben.  
+ At this point, you can use the standard project objects that are part of a specific VSPackage to move down the hierarchy model.  
   
- Im folgenden Codebeispiel wird veranschaulicht, wie ein benutzerdefiniertes Objekt, das eine Eigenschaft eines benutzerdefinierten Typs ist.:  
+ The following code example shows how to get a custom object that is a property of a custom project type.:  
   
-```vb#  
+```vb  
 Dim MyPrj As Project  
 Dim MyPrjItem As ProjectItem  
 Dim objMyObject as MyExtendedObject  
@@ -75,9 +76,9 @@ objMyObject = MyPrj.Object 'You call .Object to get to special Project
 objMyObject.MySpecialMethodOrProperty  
 ```  
   
- Der folgende Code Listet die Namen aller Eigenschaften in der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Umgebung **allgemeine** auf die option der **Tools** Menü:  
+ The following code lists the names of all of the properties in the [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environment **General** option on the **Tools** menu:  
   
-```vb#  
+```vb  
 dim objDTE  
 dim objEnv  
 set objDTE = CreateObject("VisualStudio.DTE")  
@@ -88,5 +89,5 @@ Next
   
 ```  
   
-## <a name="see-also"></a>Siehe auch  
- <xref:EnvDTE.DTEClass.GetObject%2A></xref:EnvDTE.DTEClass.GetObject%2A>
+## <a name="see-also"></a>See Also  
+ <xref:EnvDTE.DTEClass.GetObject%2A>

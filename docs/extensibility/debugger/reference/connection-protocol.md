@@ -1,86 +1,103 @@
 ---
-title: "CONNECTION_PROTOCOL | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CONNECTION_PROTOCOL"
-helpviewer_keywords: 
-  - "CONNECTION_PROTOCOL-enumeration"
+title: CONNECTION_PROTOCOL | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CONNECTION_PROTOCOL
+helpviewer_keywords:
+- CONNECTION_PROTOCOL enumeration
 ms.assetid: 99df5865-8b36-486d-9f4c-d10ae2bc688a
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 56b90ac83640e839b2cdccd74c63090b5c17c913
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
+
 ---
 # CONNECTION_PROTOCOL
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Gibt das Protokoll an, das verwendet wird, um zwischen einem Server und dem Debuggen die Option Debuggen Paket \(DE\) zu kommunizieren.  
+Indicates the protocol being used to communicate between a debug server and the debug package (DE).  
   
 ## Syntax  
   
 ```cpp  
-typedef enum tagCONNECTION_PROTOCOL {  
-   CONNECTION_NONE    = 0,  
-   CONNECTION_UNKNOWN = 1,  
-   CONNECTION_LOCAL   = 2,  
-   CONNECTION_PIPE    = 3,  
-   CONNECTION_TCPIP   = 4,  
-   CONNECTION_HTTP    = 5,  
-   CONNECTION_OTHER   = 6  
-} CONNECTION_PROTOCOL;  
+typedef enum tagCONNECTION_PROTOCOL {  
+   CONNECTION_NONE    = 0,  
+   CONNECTION_UNKNOWN = 1,  
+   CONNECTION_LOCAL   = 2,  
+   CONNECTION_PIPE    = 3,  
+   CONNECTION_TCPIP   = 4,  
+   CONNECTION_HTTP    = 5,  
+   CONNECTION_OTHER   = 6  
+} CONNECTION_PROTOCOL;  
 ```  
   
-```c#  
-public enum CONNECTION_PROTOCOL {  
-   CONNECTION_NONE    = 0,  
-   CONNECTION_UNKNOWN = 1,  
-   CONNECTION_LOCAL   = 2,  
-   CONNECTION_PIPE    = 3,  
-   CONNECTION_TCPIP   = 4,  
-   CONNECTION_HTTP    = 5,  
-   CONNECTION_OTHER   = 6  
+```cs  
+public enum CONNECTION_PROTOCOL {  
+   CONNECTION_NONE    = 0,  
+   CONNECTION_UNKNOWN = 1,  
+   CONNECTION_LOCAL   = 2,  
+   CONNECTION_PIPE    = 3,  
+   CONNECTION_TCPIP   = 4,  
+   CONNECTION_HTTP    = 5,  
+   CONNECTION_OTHER   = 6  
 };  
 ```  
   
-#### Parameter  
- CONNECTION\_NONE  
- Keine Beziehung entspricht einem Server hergestellt wurde.  
+#### Parameters  
+ CONNECTION_NONE  
+ No connection has been made to a server.  
   
- CONNECTION\_UNKNOWN  
- Eine Verbindung wird hergestellt, doch sie wird von einem unbekannten Typ.  
+ CONNECTION_UNKNOWN  
+ A connection has been made, but it is of an unknown type.  
   
- CONNECTION\_LOCAL  
- Verbindung mit einem lokalen Server.  
+ CONNECTION_LOCAL  
+ Connection is to a local server.  
   
- CONNECTION\_PIPE  
- Verbindung wurde durch eine benannte Pipe.  
+ CONNECTION_PIPE  
+ Connection is through a named pipe.  
   
- CONNECTION\_TCPIP  
- Anschlussnutzungen TCP\/IP.  
+ CONNECTION_TCPIP  
+ Connection uses TCP/IP.  
   
- CONNECTION\_HTTP  
- Anschlussnutzungen \(HTTP über einen Webserver\).  
+ CONNECTION_HTTP  
+ Connection uses HTTP (through a Web server).  
   
- CONNECTION\_OTHER  
- Ein anderer Typ Verbindung hergestellt ist \(Dieser Wert wird derzeit nicht verwendet\).  
+ CONNECTION_OTHER  
+ Some other type of connection has been established (this value is not currently used).  
   
-## Hinweise  
- Diese Werte werden von der [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)\-Methode zurückgegeben.  
+## Remarks  
+ These values are returned from the [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) method.  
   
-## Anforderungen  
+## Requirements  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
- [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)

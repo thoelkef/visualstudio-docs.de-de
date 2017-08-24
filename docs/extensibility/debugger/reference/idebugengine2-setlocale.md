@@ -1,51 +1,68 @@
 ---
-title: "IDebugEngine2::SetLocale | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngine2::SetLocale"
-helpviewer_keywords: 
-  - "IDebugEngine2::SetLocale"
+title: IDebugEngine2::SetLocale | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugEngine2::SetLocale
+helpviewer_keywords:
+- IDebugEngine2::SetLocale
 ms.assetid: cd0d2cf1-2aac-43da-a830-4bb3d696c219
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugEngine2::SetLocale
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 4d4a3e9cd372119f1477c47a76ab824258605b99
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Legt das Gebietsschema des Debugmoduls fest \(DE\).  
+---
+# <a name="idebugengine2setlocale"></a>IDebugEngine2::SetLocale
+Sets the locale of the debug engine (DE).  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT SetLocale(   
-   WORD wLangID  
+HRESULT SetLocale(   
+   WORD wLangID  
 );  
 ```  
   
-```c#  
-int SetLocale(   
-   ushort wLangID  
+```cs  
+int SetLocale(   
+   ushort wLangID  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `wLangID`  
- \[in\]  Gibt das Gebietsschema Sprachen angezeigt.  Beispielsweise 1033 für Englisch.  
+ [in] Specifies the language locale. For example, 1033 for English.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Hinweise  
- Diese Methode wird vom Debugbuild Manager der Sitzung \(SDM\) aufgerufen, um die regionalen Einstellungen der IDE weiterzugeben, dass Zeichenfolgen, die durch DE zurückgegeben werden, ordnungsgemäß lokalisiert werden.  
+## <a name="remarks"></a>Remarks  
+ This method is called by the session debug manager (SDM) to propagate the locale settings of the IDE so that strings returned by the DE are properly localized.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

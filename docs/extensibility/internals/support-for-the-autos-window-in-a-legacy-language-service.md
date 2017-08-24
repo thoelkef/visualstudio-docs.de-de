@@ -1,40 +1,57 @@
 ---
-title: "Unterst&#252;tzung f&#252;r das Fenster &quot;Auto&quot; in eine Legacy-Sprachdienst | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Sprachdienste [Verwaltetes Paketframework], Fenster "Auto""
-  - "Fenster "Auto", Unterstützung in Sprachdienste [Verwaltetes Paketframework]"
+title: Support for the Autos Window in a Legacy Language Service | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- language services [managed package framework], Autos window
+- Autos window, supporting in language services [managed package framework]
 ms.assetid: 47d40aae-7a3c-41e1-a949-34989924aefb
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
----
-# Unterst&#252;tzung f&#252;r das Fenster &quot;Auto&quot; in eine Legacy-Sprachdienst
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: f9c457a74995854b853e9664a093da2a6e3217b8
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Das Fenster wird **Auto** Ausdrücke wie Variablen und Parameter an, die im Bereich enthalten sind, wenn das Programm, das gedebuggt wird, unterbrochen wird \(entweder aufgrund eines Haltepunkts oder einer Ausnahme\).  Die Ausdrücke können Variablen, lokal oder global und Parameter enthalten, die im lokalen Gültigkeitsbereich geändert wurden.  Das **Auto** Fenster kann Instanziierungen einer Klasse, Struktur oder einer anderen ebenfalls einbeziehen Typ.  Alles, was ein Ausdrucksauswertung ausgewertet werden kann, kann im Fenster **Auto** möglicherweise angezeigt werden.  
+---
+# <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Support for the Autos Window in a Legacy Language Service
+The **Autos** window displays expressions such as variables and parameters that are in scope when the program being debugged is paused (either due to a breakpoint or an exception). The expressions can include variables, local or global, and parameters that have been changed in the local scope. The **Autos** window can also include instantiations of a class, structure, or some other type. Anything that an expression evaluator can evaluate can potentially be shown in the **Autos** window.  
   
- Das verwaltete Paketframework \(MPF\) bietet keine direkte Unterstützung für das **Auto** Fenster.  Wenn Sie jedoch die <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A>\-Methode überschreiben, können Sie eine Liste der im Fenster **Auto** darzustellenden Ausdruck zurückgegeben wird.  
+ The managed package framework (MPF) does not provide direct support for the **Autos** window. However, if you override the <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> method, you can return a list of expressions to be presented in the **Autos** window.  
   
-## Unterstützung für das Implementieren Automobil\-Fenster  
- Alles, was Sie tun müssen, um das Fenster zu unterstützen **Auto** darin, die <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A>\-Methode in der <xref:Microsoft.VisualStudio.Package.LanguageService>\-Klasse zu implementieren.  Die Implementierung muss entscheiden, wenn eine Position in der Quelldatei, die Ausdrücke im **Auto** Fenster aussehen sollten.  Die Methode gibt eine Liste von Zeichenfolgen zurück, wobei jede Zeichenfolge einen einzelnen Ausdruck darstellt.  Der Rückgabewert <xref:Microsoft.VisualStudio.VSConstants.S_OK> gibt an, dass die Liste Ausdrücke enthält, während <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> angibt, dass keine Ausdrücke dargestellt wird.  
+## <a name="implementing-support-for-the-autos-window"></a>Implementing Support for the Autos Window  
+ All you need to do to support the **Autos** window is to implement the <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> method in the <xref:Microsoft.VisualStudio.Package.LanguageService> class. Your implementation must decide, given a location in the source file, which expressions should appear in the **Autos** window. The method returns a list of strings in which each string represents a single expression. A return value of <xref:Microsoft.VisualStudio.VSConstants.S_OK> indicates that the list contains expressions, while <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> indicates that there are no expressions to show.  
   
- Die tatsächlich zurückgegebenen Ausdrücke sind die Namen der Variablen oder Parameter, die an dieser Stelle im Code angezeigt werden.  Diese Namen werden zum Übergeben der Ausdrucksauswertung zum Abrufen von Werten und Typen, die dann im **Auto** Fenster angezeigt werden.  
+ The actual expressions returned are the names of the variables or parameters that appear at that location in the code. These names are passed to the expression evaluator to obtain values and types that are then displayed in the **Autos** window.  
   
-### Beispiel  
- Im folgenden Beispiel wird eine Implementierung der <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A>\-Methode auf, die eine Liste von Ausdrücken aus der <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>\-Methode mit dem grunds Analyse <xref:Microsoft.VisualStudio.Package.ParseReason>abruft.  Alle Ausdrücke werden als `TestVsEnumBSTR` umschlossen, der die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsEnumBSTR>\-Schnittstelle implementiert.  
+### <a name="example"></a>Example  
+ The following example shows an implementation of the <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> method that gets a list of expressions from the <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> method using the parse reason <xref:Microsoft.VisualStudio.Package.ParseReason>. Each of the expressions is wrapped as a `TestVsEnumBSTR` that implements the <xref:Microsoft.VisualStudio.TextManager.Interop.IVsEnumBSTR> interface.  
   
- Beachten Sie, dass die `GetAutoExpressionsCount` und Methoden `GetAutoExpression` benutzerdefinierte Methoden im `TestAuthoringSink`\-Objekt entsprechen und hinzugefügt wurden, um dieses Beispiel zu unterstützen.  Sie stellen eine Möglichkeit dar, in der die Ausdrücke, die dem `TestAuthoringSink`\-Objekt vom Parser \(durch Aufrufen der <xref:Microsoft.VisualStudio.Package.AuthoringSink.AutoExpression%2A>\-Methode\) hinzugefügt werden außerhalb des Parsers zugegriffen werden kann.  
+ Note that the `GetAutoExpressionsCount` and `GetAutoExpression` methods are custom methods on the `TestAuthoringSink` object and were added to support this example. They represent one way in which expressions added to the `TestAuthoringSink` object by the parser (by calling the <xref:Microsoft.VisualStudio.Package.AuthoringSink.AutoExpression%2A> method) can be accessed outside the parser.  
   
-```c#  
+```cs  
 using Microsoft.VisualStudio;  
 using Microsoft.VisualStudio.Package;  
 using Microsoft.VisualStudio.TextManager.Interop;  

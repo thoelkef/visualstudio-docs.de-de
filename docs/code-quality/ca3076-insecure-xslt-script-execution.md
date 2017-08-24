@@ -1,52 +1,70 @@
 ---
-title: "CA3076: Unsichere XSLT-Skriptausf&#252;hrung | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'CA3076: Insecure XSLT Script Execution | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 53cb7a46-c564-488f-bc51-0e210a7853c9
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 5
----
-# CA3076: Unsichere XSLT-Skriptausf&#252;hrung
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 54405544c27c156b1e0530ea29404db18f1baa92
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
+---
+# <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Insecure XSLT Script Execution
 |||  
 |-|-|  
 |TypeName|InsecureXSLTScriptExecution|  
 |CheckId|CA3076|  
-|Kategorie|Microsoft.Security|  
-|Unterbrechende Änderung|Nicht unterbrechende Änderung|  
+|Category|Microsoft.Security|  
+|Breaking Change|Non Breaking|  
   
-## Ursache  
- Wenn Sie [Extensible Stylesheets Language Transformations \(XSLT\)](https://support.microsoft.com/en-us/kb/313997) ungesichert in .NET\-Anwendungen ausführen, könnte der Prozessor möglicherweise [nicht vertrauenswürdige URI\-Verweise auflösen](http://msdn.microsoft.com/de-de/ba3e4d4f-1ee7-4226-a51a-78a1f1b5bd8a), wodurch Angreifern sensible Informationen offengelegt werden könnten, was wiederum zu Denial\-of\-Service\- und Cross\-Site\-Angriffen führen kann.  
+## <a name="cause"></a>Cause  
+ If you execute [Extensible Stylesheets Language Transformations (XSLT)](https://support.microsoft.com/en-us/kb/313997) in .NET applications insecurely, the processor may [resolve untrusted URI references](http://msdn.microsoft.com/en-us/ba3e4d4f-1ee7-4226-a51a-78a1f1b5bd8a) that could disclose sensitive information to attackers, leading to Denial of Service and Cross-Site attacks.  
   
-## Regelbeschreibung  
- [XSLT](http://msdn.microsoft.com/de-de/6377ce5f-3c45-42a6-b7a9-ec8da588b60c) ist ein W3C\-Standard \(World Wide Web Consortium\) zum Transformieren von XML\-Daten. XSLT wird in der Regel verwendet, um Stylesheets zum Transformieren von XML\-Daten in andere Formate \(z. B.in HTML, Text fester Länge, durch Trennzeichen getrennter Text oder ein anderes XML\-Format\) zu schreiben. Dies ist zwar standardmäßig nicht zulässig, sie können die Option aber für Ihr Projekt aktivieren.  
+## <a name="rule-description"></a>Rule Description  
+ [XSLT](http://msdn.microsoft.com/en-us/6377ce5f-3c45-42a6-b7a9-ec8da588b60c) is a World Wide Web Consortium (W3C) standard for transforming XML data. XSLT is typically used to write style sheets to transform XML data to other formats such as HTML, fixed length text, comma-separated text, or a different XML format. Although prohibited by default, you may choose to enable it for your project.  
   
- Um sicherzustellen, dass Sie keine Angriffsfläche bieten, wird diese Regel jedes Mal dann ausgelöst, wenn XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> unsichere Kombinationen aus <xref:System.Xml.Xsl.XsltSettings> und <xref:System.Xml.XmlResolver> empfängt, die die Verarbeitung von bösartigen Skripts zulassen.  
+ To ensure you're not exposing an attack surface, this rule triggers whenever the XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> receives insecure combination instances of <xref:System.Xml.Xsl.XsltSettings> and <xref:System.Xml.XmlResolver>, which allows malicious script processing.  
   
-## Behandeln von Verstößen  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
   
--   Ersetzen Sie das unsichere XsltSettings\-Argument durch XsltSettings.<xref:System.Xml.Xsl.XsltSettings.Default%2A> oder durch eine Instanz, bei der Dokumentfunktion und Skriptausführung deaktiviert wurden.  
+-   Replace the insecure XsltSettings argument with XsltSettings.<xref:System.Xml.Xsl.XsltSettings.Default%2A> or with an instance that has disabled document function and script execution.  
   
--   Ersetzen Sie das <xref:System.Xml.XmlResolver>\-Argument durch „Null“ oder eine <xref:System.Xml.XmlSecureResolver>\-Instanz.  
+-   Replace the <xref:System.Xml.XmlResolver> argument with null or an <xref:System.Xml.XmlSecureResolver> instance.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Unterdrücken Sie eine Regel aus dieser Warnung niemals, es sei denn, Sie sind ganz sicher, dass die Eingabe von einer vertrauenswürdigen Quelle stammt.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Unless you're sure that the input is known to be from a trusted source, do not suppress a rule from this warning.  
   
-## Pseudocodebeispiele  
+## <a name="pseudo-code-examples"></a>Pseudo-code Examples  
   
-### Verletzung  
+### <a name="violation"></a>Violation  
   
-```c#  
+```cs  
 using System.Xml;  
 using System.Xml.Xsl;  
   
@@ -62,12 +80,12 @@ namespace TestNamespace
              xslCompiledTransform.Load("testStylesheet", settings, resolver); // warn   
         }  
     }   
-}   
+}   
 ```  
   
-### Lösung  
+### <a name="solution"></a>Solution  
   
-```c#  
+```cs  
 using System.Xml;   
 using System.Xml.Xsl;   
   
@@ -86,9 +104,9 @@ namespace TestNamespace
 }  
 ```  
   
-### Verletzung  
+### <a name="violation"></a>Violation  
   
-```c#  
+```cs  
 using System.Xml;   
 using System.Xml.Xsl;   
   
@@ -111,9 +129,9 @@ namespace TestNamespace
 }  
 ```  
   
-### Lösung  
+### <a name="solution"></a>Solution  
   
-```c#  
+```cs  
 using System.Xml;   
 using System.Xml.Xsl;   
   

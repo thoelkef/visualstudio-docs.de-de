@@ -1,78 +1,100 @@
 ---
-title: "Hinzuf&#252;gen von Befehlszeilenoptionen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Befehlszeilenoptionen hinzufügen"
-  - "Abrufen von-Befehlszeilenoptionen"
-  - "IVsAppCommandLine::GetOption-Methode"
-  - "Switches-Befehlszeile"
+title: Adding Command-Line Switches | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- command-line switches, adding
+- command-line switches, retrieving
+- IVsAppCommandLine::GetOption method
+- command line, switches
 ms.assetid: 8bbbd87e-76fe-4fb5-8ef9-65f5e31967cf
 caps.latest.revision: 21
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 21
----
-# Hinzuf&#252;gen von Befehlszeilenoptionen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 274eaa5e3ea740cc8850854527cc71c90fed42df
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Sie können Befehlszeilenoptionen hinzufügen, die für das VSPackage gelten, wenn devenv.exe ausgeführt wird. Verwendung <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> der Name des Switches und deren Eigenschaften deklariert. In diesem Beispiel wird der Switch MySwitch für eine Unterklasse von VSPackage mit dem Namen hinzugefügt **AddCommandSwitchPackage** ohne Argumente und mit der VSPackage automatisch geladen.  
+---
+# <a name="adding-command-line-switches"></a>Adding Command-Line Switches
+You can add command-line switches that apply to your VSPackage when devenv.exe is executed. Use <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> to declare the name of the switch and its properties. In this example, the MySwitch switch is added for a subclass of VSPackage named **AddCommandSwitchPackage** with no arguments and with the VSPackage loaded automatically.  
   
-```c#  
+```cs  
 [ProvideAppCommandLine("MySwitch", typeof(AddCommandSwitchPackage), Arguments = "0", DemandLoad = 1)]  
 ```  
   
- Die benannte Parameter werden in der folgenden Tabelle veranschaulicht.  
+ The named parameters are shown in the following table  
   
- Argumente  
- Die Anzahl der Argumente für den Switch. Kann "\*", oder eine Liste von Argumenten.  
+ Arguments  
+ The number of arguments for the switch. Can be "*", or a list of arguments.  
   
  DemandLoad  
- Laden Sie das VSPackage automatisch, wenn 1, setzen Sie andernfalls auf 0 eingestellt ist.  
+ Load the VSPackage automatically if this is set to 1, otherwise set to 0.  
   
  HelpString  
- Die Zeichenfolge oder Ressourcen\-ID der Zeichenfolge mit anzuzeigende **Devenv \/?**.  
+ The help string or resource ID of the string to display with **devenv /?**.  
   
  Name  
- Der Schalter.  
+ The switch.  
   
  PackageGuid  
- Die GUID des Pakets.  
+ The GUID of the package.  
   
- Der erste Wert der Argumente ist in der Regel 0 oder 1. Ein spezieller Wert von ' \*' kann verwendet werden, um anzugeben, dass der ganze Rest der Befehlszeile das Argument ist. Dies kann nützlich für das Debuggen von Szenarios, in denen ein Benutzer eine Befehlszeichenfolge Debugger übergeben muss, sein.  
+ The first value of Arguments is usually 0 or 1. A special value of '*' can be used to indicate that the entire remainder of the command line is the argument. This can be useful for debugging scenarios where a user must pass in a debugger command string.  
   
- Ist der Wert DemandLoad `true` \(1\) oder `false` \(0\) gibt an, dass das VSPackage automatisch geladen werden sollen.  
+ The DemandLoad value is either `true` (1) or `false` (0) indicates that the VSPackage should be loaded automatically.  
   
- Der HelpString\-Wert ist die Ressourcen\-ID der Zeichenfolge in den Devenv \/? Hilfe anzeigen. Dieser Wert sollte in der Form "\#nnn" wobei Nnn eine ganze Zahl ist. Der Zeichenfolgenwert in der Ressourcendatei sollte eine neue\-Zeile\-Zeichen beendet.  
+ The HelpString value is the resource ID of the string that appears in the devenv /?Help display. This value should be in the form "#nnn" where nnn is an integer. The string value in the resource file should end in a new line character.  
   
- Die Name\-Wert ist der Name des Schalters.  
+ The Name value is the name of the switch.  
   
- Der Wert von PackageGuid ist die GUID des Pakets, das diesen Schalter implementiert. Die IDE verwendet diese GUID des VSPackage in der Registrierung gefunden, für die die Befehlszeilenoption gilt.  
+ The PackageGuid value is the GUID of the package that implements this switch. The IDE uses this GUID to find the VSPackage in the registry to which the command-line switch applies.  
   
-## Abrufen von Befehlszeilenoptionen  
- Wenn das Paket geladen wird, können Sie die Befehlszeilenoptionen abrufen, mithilfe des folgenden Verfahrens.  
+## <a name="retrieving-command-line-switches"></a>Retrieving Command-Line Switches  
+ When your package is loaded, you can retrieve the command-line switches by completing the following steps.  
   
-1.  In Ihrem VSPackages <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> Implementierung, rufen Sie `QueryService` auf <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> zum Abrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> Schnittstelle.  
+1.  In your VSPackage's <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> implementation, call `QueryService` on <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> to get the <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> interface.  
   
-2.  Rufen Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> Befehlszeilenoptionen abrufen, die der Benutzer eingegeben hat.  
+2.  Call <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> to retrieve the command-line switches that the user entered.  
   
- Der folgende Code zeigt, wie Sie herausfinden, ob die Befehlszeilenoption MySwitch vom Benutzer eingegeben wurde:  
+ The following code shows how to find out whether the MySwitch command-line switch was entered by the user:  
   
-```c#  
-IVsAppCommandLine cmdline = (IVsAppCommandLine)GetService(typeof(SVsAppCommandLine)); int isPresent = 0; string optionValue = ""; cmdline.GetOption("MySwitch", out isPresent, out optionValue);  
+```cs  
+IVsAppCommandLine cmdline = (IVsAppCommandLine)GetService(typeof(SVsAppCommandLine));  
+  
+int isPresent = 0;  
+string optionValue = "";  
+  
+cmdline.GetOption("MySwitch", out isPresent, out optionValue);  
 ```  
   
- Es ist Ihre Aufgabe jedes Mal, wenn das Paket geladen wird, für die Befehlszeilenoptionen zu überprüfen.  
+ It is your responsibility to check for your command-line switches each time your package is loaded.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>   
- [Devenv\-Befehlszeilenschalter](../ide/reference/devenv-command-line-switches.md)   
- [CreatePkgDef\-Dienstprogramm](../extensibility/internals/createpkgdef-utility.md)   
- [. PKGDEF\-Dateien](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)
+ [Devenv Command Line Switches](../ide/reference/devenv-command-line-switches.md)   
+ [CreatePkgDef Utility](../extensibility/internals/createpkgdef-utility.md)   
+ [.Pkgdef Files](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)

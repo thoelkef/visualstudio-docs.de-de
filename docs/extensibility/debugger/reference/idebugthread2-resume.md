@@ -1,54 +1,71 @@
 ---
-title: "IDebugThread2::Resume | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugThread2::Resume"
-helpviewer_keywords: 
-  - "IDebugThread2::Resume"
+title: IDebugThread2::Resume | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugThread2::Resume
+helpviewer_keywords:
+- IDebugThread2::Resume
 ms.assetid: 36aad682-b0b9-40a2-b3fc-f0e61d41cdbc
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugThread2::Resume
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 81347e0bd52ad36d4426c92e5ee446aed685fb53
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Setzt die Ausführung eines Threads fort.  
+---
+# <a name="idebugthread2resume"></a>IDebugThread2::Resume
+Resumes execution of a thread.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT Resume (   
-   DWORD *pdwSuspendCount  
+HRESULT Resume (   
+   DWORD *pdwSuspendCount  
 );  
 ```  
   
-```c#  
-int Resume (   
-   out uint pdwSuspendCount  
+```cs  
+int Resume (   
+   out uint pdwSuspendCount  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `pdwSuspendCount`  
- \[out\]  Gibt den Unterbrechungszähler nach dem Wiederaufnahmevorgang zurück.  
+ [out] Returns the suspend count after the resume operation.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Hinweise  
- Jeder Aufruf dieser Methode dekrementiert den Unterbrechungszähler, bis er 0 \(null\) erreicht, wenn tatsächlich, wird die Ausführung fortgesetzt.  Der Unterbrechungszähler wird im **Threads** Debuggen die Option Fenster angezeigt.  
+## <a name="remarks"></a>Remarks  
+ Each call to this method decrements the suspend count until it reaches 0 at which time, execution is actually resumed. This suspend count is displayed in the **Threads** debug window.  
   
- Für jeden Aufruf dieser Methode muss es einen früheren Aufruf der Methode [Suspend \(Anhalten\)](../../../extensibility/debugger/reference/idebugthread2-suspend.md) erteilen.  Der Unterbrechungszähler bestimmt, wieoft die bisher `IDebugThread2::Suspend`\-Methode aufgerufen wurde.  
+ For each call to this method, there must be a previous call to the [Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md) method. The suspend count determines how many times the `IDebugThread2::Suspend` method has been called so far.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [Suspend \(Anhalten\)](../../../extensibility/debugger/reference/idebugthread2-suspend.md)
+ [Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md)

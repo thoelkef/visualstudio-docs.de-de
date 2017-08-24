@@ -1,54 +1,71 @@
 ---
-title: "IDebugEngine2::RemoveSetException | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngine2::RemoveSetException"
-helpviewer_keywords: 
-  - "IDebugEngine2::RemoveSetException"
+title: IDebugEngine2::RemoveSetException | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugEngine2::RemoveSetException
+helpviewer_keywords:
+- IDebugEngine2::RemoveSetException
 ms.assetid: bdd25097-0e9d-4218-b417-0497ea48d2e8
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugEngine2::RemoveSetException
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 1bcdd1c268a8c696db3565f3ac824982ed64c6ce
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Entfernt die angegebene Ausnahme, sodass sie nicht mehr durch das Debugmodul behandelt.  
+---
+# <a name="idebugengine2removesetexception"></a>IDebugEngine2::RemoveSetException
+Removes the specified exception so it is no longer handled by the debug engine.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT RemoveSetException(   
-   EXCEPTION_INFO* pException  
+HRESULT RemoveSetException(   
+   EXCEPTION_INFO* pException  
 );  
 ```  
   
-```c#  
-int RemoveSetException(   
-   EXCEPTION_INFO[] pException  
+```cs  
+int RemoveSetException(   
+   EXCEPTION_INFO[] pException  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `pException`  
- \[in\]  Eine [EXCEPTION\_INFO](../../../extensibility/debugger/reference/exception-info.md) Struktur, die die Ausnahme beschreibt, das entfernt werden soll.  
+ [in] An [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) structure that describes the exception to be removed.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Hinweise  
- Die Ausnahme, die entfernt wird, muss durch einen vorherigen Aufruf der [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)\-Methode bereits festgelegt worden sein.  
+## <a name="remarks"></a>Remarks  
+ The exception being removed must have been previously set by an earlier call to the [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) method.  
   
- Um alle festgelegten Ausnahmen sofort zu entfernen, rufen Sie die [RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md)\-Methode auf.  
+ To remove all set exceptions at once, call the [RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md) method.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
- [EXCEPTION\_INFO](../../../extensibility/debugger/reference/exception-info.md)
+ [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)

@@ -1,5 +1,5 @@
 ---
-title: Aktualisieren von Formen und Konnektoren zur Darstellung des Modells | Microsoft-Dokumentation
+title: Updating Shapes and Connectors to Reflect the Model | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -11,16 +11,17 @@ caps.latest.revision: 6
 author: alancameronwills
 ms.author: awills
 manager: douge
-translationtype: Machine Translation
-ms.sourcegitcommit: eb2ab9d49cdeb1ed71da8ef67841f7796862dc30
-ms.openlocfilehash: 97ec749c0a89dae6c5a98702926d8ad82b6af3ac
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 6f6e72eefb8a61a12940a95eba59411469625c98
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
 ---
-# <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Aktualisieren von Formen und Konnektoren zur Darstellung des Modells
-In einer domänenspezifischen Sprache in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], Sie können die Darstellung einer Form Zustand das zugrunde liegende Modell vornehmen.  
+# <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Updating Shapes and Connectors to Reflect the Model
+In a domain-specific language in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], you can make the appearance of a shape reflect the state of the underlying model.  
   
- Die Codebeispiele in diesem Thema hinzugefügt werden soll eine `.cs` Datei Ihre `Dsl` Projekt. Sie benötigen diese Anweisungen in jeder Datei:  
+ The code examples in this topic should be added to a `.cs` file in your `Dsl` project. You will need these statements in each file:  
   
 ```  
 using Microsoft.VisualStudio.Modeling;  
@@ -28,26 +29,26 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
 ```  
   
-## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>Formzuordnung-Eigenschaften fest, um die Sichtbarkeit eines Decorator-Elements steuern  
- Sie können die Sichtbarkeit eines Decorator-Elements steuern, ohne das Schreiben von Programmcode, durch die Zuordnung zwischen der Form und die Domänenklasse im DSL-Definition konfigurieren. Weitere Informationen finden Sie unter  [wie eine domänenspezifische Sprache definiert](../modeling/how-to-define-a-domain-specific-language.md).
+## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>Set Shape Map properties to control the visibility of a decorator  
+ You can control the visibility of a decorator without writing program code, by configuring the mapping between the shape and the domain class in the DSL Definition. For more information, see [How to Define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md).
   
-## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>Machen Sie die Farbe und den Stil einer Form als Eigenschaften verfügbar.  
- In der DSL-Definition mit der Maustaste der Shape-Klasse, zeigen Sie auf **verfügbare hinzufügen**, und klicken Sie dann auf eines der Elemente, wie z. B. **Füllfarbe**.  
+## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>Expose the color and style of a shape as properties  
+ In the DSL Definition, right-click the shape class, point to **Add Exposed**, and then click one of the items such as **Fill Color**.  
   
- Die Form ist jetzt eine Domäneneigenschaft, die Sie im Programmcode oder als ein Benutzer festlegen können. Z. B. Wenn sie in den Programmcode, der einen Befehl oder eine Regel festgelegt, könnten Sie:  
+ The shape now has a domain property that you can set in program code or as a user. For example, to set it in the program code of a command or rule, you could write:  
   
  `shape.FillColor = System.Drawing.Color.Red;`  
   
- Wenn Sie die eigenschaftenvariable nur in der Programmsteuerung und nicht vom Benutzer machen möchten, wählen Sie die neue Domäneneigenschaft wie **Füllfarbe** im Diagramm DSL-Definition. Legen Sie dann im Fenster Eigenschaften **kann durchsucht werden** auf `false` oder **Benutzeroberfläche Readonly ist** auf `true`.  
+ If you want to make the property variable only under program control, and not by the user, select the new domain property such as **Fill Color** in the DSL Definition diagram. Then, in the Properties window, set **Is Browsable** to `false` or set **Is UI Readonly** to `true`.  
   
-## <a name="define-change-rules-to-make-color-style-or-location-depend-on-model-element-properties"></a>Definieren von Regeln ändern, Farbe, Format oder Speicherort Modelleigenschaften Element abhängig zu machen  
- Sie können Regeln definieren, die die Darstellung der Form abhängig von anderen Teilen des Modells zu aktualisieren. Sie können z. B. eine Regel ändern auf ein Modellelement definieren, die die Farbe der Form abhängig von den Eigenschaften des Modellelements aktualisiert. Weitere Informationen zum Ändern der Regeln finden Sie unter [Regeln weitergeben Änderungen in das Modell](../modeling/rules-propagate-changes-within-the-model.md).  
+## <a name="define-change-rules-to-make-color-style-or-location-depend-on-model-element-properties"></a>Define Change Rules to make color, style or location depend on model element properties  
+ You can define rules that update the appearance the shape dependent on other parts of the model. For example, you could define a Change Rule on a model element that updates the color of its shape dependent on the properties of the model element. For more information about Change Rules, see [Rules Propagate Changes Within the Model](../modeling/rules-propagate-changes-within-the-model.md).  
   
- Sie sollten die Regeln verwenden, um nur Eigenschaften zu aktualisieren, die in den Speicher verwaltet werden, da Regeln nicht aufgerufen werden, wenn der Rückgängig-Befehl ausgeführt wird. Dies schließt nicht Einige Grafikfeatures wie z. B. die Größe und die Sichtbarkeit einer Form. Um diese Funktionen einer Form zu aktualisieren, finden Sie unter [aktualisieren nicht Store Grafikfeatures](#OnAssociatedProperty).  
+ You should use rules only to update properties that are maintained within the Store, because rules are not invoked when the Undo command is performed. This does not include some graphical features such as the size and visibility of a shape. To update those features of a shape, see [Updating Non-Store Graphical features](#OnAssociatedProperty).  
   
- Im folgende Beispiel wird davon ausgegangen, dass Sie bereitgestellt haben `FillColor` als eine Domäneneigenschaft wie im vorherigen Abschnitt beschrieben.  
+ The following example assumes that you have exposed `FillColor` as a domain property as described in the previous section.  
   
-```c#  
+```cs  
 [RuleOn(typeof(ExampleElement))]  
   class ExampleElementPropertyRule : ChangeRule  
   {  
@@ -84,10 +85,10 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
 ```  
   
-## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>Verwenden Sie OnChildConfigured, um die Eigenschaften eines Shapes initialisieren  
- Festlegen der Eigenschaften eines Shapes beim ersten erstellt, die Außerkraftsetzung `OnChildConfigured()` in eine partielle Definition der Diagrammklasse. Die Diagrammklasse in der DSL-Definition angegeben ist, und der generierte Code ist **Dsl\Generated Code\Diagram.cs**. Zum Beispiel:  
+## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>Use OnChildConfigured to initialize a shape's properties  
+ To set the properties of a shape when it is first created, the override `OnChildConfigured()` in a partial definition of your diagram class. The diagram class is specified in your DSL Definition, and the generated code is in **Dsl\Generated Code\Diagram.cs**. For example:  
   
-```c#  
+```cs  
 partial class MyLanguageDiagram  
 {  
   protected override void OnChildConfigured(ShapeElement child, bool childWasPlaced, bool createdDuringViewFixup)  
@@ -108,12 +109,12 @@ partial class MyLanguageDiagram
   
 ```  
   
- Diese Methode kann sowohl für Domäneneigenschaften und nicht-Store-Features, z. B. die Größe der Form verwendet werden.  
+ This method can be used both for domain properties and non-store features, such as the size of the shape.  
   
-##  <a name="a-nameonassociatedpropertya-use-associatevaluewith-to-update-other-features-of-a-shape"></a><a name="OnAssociatedProperty"></a>Verwenden Sie AssociateValueWith() zum Aktualisieren von anderen Funktionen von einer Form  
- Für einige Features von einer Form, z. B., ob sie über einen Schatten oder die Art des Pfeils eines Connectors verfügt besteht keine integrierte Methode, die Funktion in einer Domäneneigenschaft verfügbar zu machen.  Änderungen an Funktionen unterliegen nicht der Kontrolle über das Transaktionssystem. Es ist daher nicht geeignet für das Aktualisieren mithilfe von Regeln, da die Regeln nicht aufgerufen werden, wenn der Benutzer den Befehl "Rückgängig" ausführt.  
+##  <a name="OnAssociatedProperty"></a> Use AssociateValueWith() to update other features of a shape  
+ For some features of a shape, such as whether it has a shadow, or the arrow style of a connector, there is no built-in method of exposing the feature as a domain property.  Changes to such features are not under the control of the transaction system. Therefore, it is not appropriate to update them using rules, because rules are not invoked when the user performs the Undo command.  
   
- Stattdessen können Sie diese Funktionen mithilfe von <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>.</xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A> aktualisieren Im folgenden Beispiel wird die Art des Pfeils einer Verbindung durch den Wert einer Domäneneigenschaft in der Beziehung gesteuert, in der der Connector angezeigt:  
+ Instead, you can update such features by using <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>. In the following example, the arrow style of a connector is controlled by a value of a domain property in the relationship that the connector displays:  
   
 ```  
 public partial class ArrowConnector // My connector class.   
@@ -130,7 +131,7 @@ public partial class ArrowConnector // My connector class.
       if ("IsDirected".Equals(e.PropertyName))  
       {  
         if (e.NewValue.Equals(true))  
-        { // Update the shape’s built-in Decorator feature:  
+        { // Update the shape's built-in Decorator feature:  
           this.DecoratorTo = LinkDecorator.DecoratorEmptyArrow;  
         }  
         else  
@@ -154,7 +155,7 @@ public partial class ArrowConnector // My connector class.
   
 ```  
   
- `AssociateValueWith()`sollte für jede Domäneneigenschaft einmal aufgerufen werden, die Sie registrieren möchten. Nachdem es aufgerufen wurde, Änderungen an der angegebenen Eigenschaft ruft `OnAssociatedPropertyChanged()` in alle Formen, die die Eigenschaft Modellelement darstellen.  
+ `AssociateValueWith()` should be called one time for each domain property that you want to register. After it has been called, any changes to the specified property will call `OnAssociatedPropertyChanged()` in any shapes that present the property's model element.  
   
- Es ist nicht notwendig, rufen Sie `AssociateValueWith()` für jede Instanz. Obwohl InitializeResources eine Instanzmethode ist, wird sie nur einmal für jede formenklasse aufgerufen.
+ It is not necessary to call `AssociateValueWith()` for each instance. Although InitializeResources is an instance method, it is invoked only one time for each shape class.
 

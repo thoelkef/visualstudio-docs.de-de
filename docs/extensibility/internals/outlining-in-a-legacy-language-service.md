@@ -1,55 +1,72 @@
 ---
-title: "Gliederung im ein Legacy-Sprachdienst | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Gliedern"
-  - "Gliederung Sprachdienste [Verwaltetes Paketframework]"
-  - "Gliedern, Unterstützung in Sprachdienste [Verwaltetes Paketframework]"
+title: Outlining in a Legacy Language Service | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- outlining
+- language services [managed package framework], outlining
+- outlining, supporting in language services [managed package framework]
 ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
 caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 15
----
-# Gliederung im ein Legacy-Sprachdienst
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: e5cf0a9d11720022861231ba434e56050c664c64
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Gliederung ist es möglich, ein komplexes Programm in einer Übersicht bzw. Gliederung zu reduzieren. In c\# können z. B. alle Methoden in eine einzelne Zeile, und zeigt nur die Signatur der Methode reduziert werden. Darüber hinaus können Strukturen und Klassen reduziert werden, um nur die Namen der Strukturen und Klassen angezeigt. Innerhalb einer einzelnen Methode, komplexe Logik reduziert werden kann, um den Gesamtablauf anzuzeigen, zeigen Sie nur die erste Zeile der Anweisungen wie z. B. `foreach`, `if`, und `while`.  
+---
+# <a name="outlining-in-a-legacy-language-service"></a>Outlining in a Legacy Language Service
+Outlining makes it possible to collapse a complex program into an overview or outline. For example, in C# all methods can be collapsed to a single line, showing only the method signature. In addition, structures and classes can be collapsed to show only the names of the structures and classes. Inside a single method, complex logic can be collapsed to show the overall flow by showing only the first line of statements such as `foreach`, `if`, and `while`.  
   
- Ältere Sprache Services werden als Teil eines VSPackage implementiert, aber der neuere Weg zum Implementieren von Language Service ist die Verwendung von MEF\-Erweiterungen. Um weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Gliedern](../../extensibility/walkthrough-outlining.md).  
+ Legacy language services are implemented as part of a VSPackage, but the newer way to implement language service features is to use MEF extensions. To find out more, see [Walkthrough: Outlining](../../extensibility/walkthrough-outlining.md).  
   
 > [!NOTE]
->  Es wird empfohlen, dass Sie beginnen, den neuen Editor\-API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie die neue Editorfunktionen nutzen.  
+>  We recommend that you begin to use the new editor API as soon as possible. This will improve the performance of your language service and let you take advantage of new editor features.  
   
-## Aktivieren der Unterstützung für eine Gliederung  
- Die `AutoOutlining` Registrierungseintrag auf 1 festgelegt ist, um die automatische Gliederung zu aktivieren. Automatische Gliederung richtet eine Analyse der gesamten Datenquelle, wenn eine Datei geladen oder geändert, um ausgeblendete Bereiche zu identifizieren und die Gliederung Symbole anzeigen. Gliederung kann auch manuell vom Benutzer gesteuert werden.  
+## <a name="enabling-support-for-outlining"></a>Enabling Support for Outlining  
+ The `AutoOutlining` registry entry is set to 1 to enable automatic outlining. Automatic outlining sets up a parse of the whole source when a file is loaded or changed in order to identify hidden regions and show the outlining glyphs. Outlining can also be controlled manually by the user.  
   
- Der Wert des der `AutoOutlining` Eintrag in der Registrierung erhalten Sie über die <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> Eigenschaft auf die <xref:Microsoft.VisualStudio.Package.LanguagePreferences> Klasse. Die `AutoOutlining` Registrierungseintrag kann initialisiert werden, mit einer benannten Parameter, um die <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> Attribut \(finden Sie unter [Registriert eine Sprachdienst](../../extensibility/internals/registering-a-legacy-language-service1.md) Details\).  
+ The value of the `AutoOutlining` registry entry can be obtained through the <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> property on the <xref:Microsoft.VisualStudio.Package.LanguagePreferences> class. The `AutoOutlining` registry entry can be initialized with a named parameter to the <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> attribute (see [Registering a Legacy Language Service](../../extensibility/internals/registering-a-legacy-language-service1.md) for details).  
   
-## Die ausgeblendeten Bereich  
- Um Gliederung zu gewährleisten, muss der Sprachdienst ausgeblendete Bereiche unterstützen. Hierbei handelt es sich um eine Passage mit Text, der erweitert oder reduziert werden können. Ausgeblendete Bereiche können durch Standardsprache Symbole, z. B. geschweifte Klammern ein, oder benutzerdefinierte Symbole getrennt werden. C\# hat beispielsweise eine `#region`\/`#endregion` \-Paar, das einen ausgeblendeten Bereich begrenzt.  
+## <a name="the-hidden-region"></a>The Hidden Region  
+ To provide outlining, your language service must support hidden regions. These are spans of text that can be expanded or collapsed. Hidden regions can be delimited by standard language symbols, such as curly braces, or by custom symbols. For example, C# has a `#region`/`#endregion` pair that delimits a hidden region.  
   
- Ausgeblendete Bereiche werden von einem ausgeblendeten Bereich\-Manager verfügbar, als gemacht wird verwaltet die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> Schnittstelle.  
+ Hidden regions are managed by a hidden region manager, which is exposed as the <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> interface.  
   
- Gliederung ausgeblendete Bereiche verwendet die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegion> \-Schnittstelle und enthalten die Spanne der ausgeblendeten Bereich, den aktuellen Sichtbarkeitsstatus und Banner angezeigt werden, wenn die Spanne reduziert wird.  
+ Outlining uses hidden regions the <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegion> interface and contain the span of the hidden region, the current visible state, and the banner to be shown when the span is collapsed.  
   
- Der Sprachenparser für den Dienst verwendet die <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> \-Methode zum Hinzufügen einer neuen ausgeblendeten Region mit dem Standardverhalten für ausgeblendete Bereiche während der <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> Methode können Sie das Aussehen und Verhalten der Gliederung anpassen. Sobald die Sitzung ausgeblendeten Bereich ausgeblendete Bereiche zugewiesen werden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ausgeblendete Bereiche für den Sprachdienst verwaltet.  
+ The language service parser uses the <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> method to add a new hidden region with the default behavior for hidden regions, while the <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> method allows you to customize the appearance and behavior of the outline. Once hidden regions are given to the hidden region session, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] manages the hidden regions for the language service.  
   
- Wenn Sie müssen bestimmen, wann die ausgeblendeten Bereich Sitzung zerstört wird, ein ausgeblendeten Bereich geändert wird, oder müssen Sie sicherstellen, dass ein bestimmter ausgeblendeter Bereich sichtbar ist; Leiten Sie eine Klasse von der <xref:Microsoft.VisualStudio.Package.Source> Klasse, und überschreiben Sie die entsprechenden Methoden <xref:Microsoft.VisualStudio.Package.Source.OnBeforeSessionEnd%2A>, <xref:Microsoft.VisualStudio.Package.Source.OnHiddenRegionChange%2A>, und <xref:Microsoft.VisualStudio.Package.Source.MakeBaseSpanVisible%2A>, bzw..  
+ If you need to determine when the hidden region session is destroyed, a hidden region is changed, or you need to make sure a particular hidden region is visible; you must derive a class from the <xref:Microsoft.VisualStudio.Package.Source> class and override the appropriate methods, <xref:Microsoft.VisualStudio.Package.Source.OnBeforeSessionEnd%2A>, <xref:Microsoft.VisualStudio.Package.Source.OnHiddenRegionChange%2A>, and <xref:Microsoft.VisualStudio.Package.Source.MakeBaseSpanVisible%2A>, respectively.  
   
-### Beispiel  
- Hier ist ein vereinfachtes Beispiel ausgeblendete Bereiche für alle Paare von geschweiften Klammern erstellen. Es wird davon ausgegangen, dass die Sprache Klammer bereitstellt, und die geschweiften Klammern abgeglichen wird zumindest die geschweiften Klammern enthalten \({und}\). Dieser Ansatz ist nur zur Veranschaulichung. Eine vollständige Implementierung hätte eine vollständige Behandlung der Fälle im <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>. Dieses Beispiel zeigt auch auf die <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> Vorzug `true` vorübergehend. Geben Sie eine Alternative ist die `AutoOutlining` benannten Parameter in der `ProvideLanguageServiceAttribute` Attribut im Language\-Paket.  
+### <a name="example"></a>Example  
+ Here is a simplified example of creating hidden regions for all pairs of curly braces. It is assumed that the language provides brace matching, and that the braces to be matched include at least the curly braces ({ and }). This approach is for illustrative purposes only. A full implementation would have a complete handling of cases in <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>. This example also shows how to set the <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> preference to `true` temporarily. An alternative is to specify the `AutoOutlining` named parameter in the `ProvideLanguageServiceAttribute` attribute in your language package.  
   
- C\#\-Regeln für Kommentare, Zeichenfolgen und Literale angenommen.  
+ This example assumes C# rules for comments, strings, and literals.  
   
-```c#  
+```cs  
 using Microsoft.VisualStudio.Package;  
 using Microsoft.VisualStudio.TextManager.Interop;  
   
@@ -118,6 +135,6 @@ namespace MyLanguagePackage
 }  
 ```  
   
-## Siehe auch  
- [Legacy\-Dienst\-Sprachfunktionen](../../extensibility/internals/legacy-language-service-features1.md)   
- [Registriert eine Sprachdienst](../../extensibility/internals/registering-a-legacy-language-service1.md)
+## <a name="see-also"></a>See Also  
+ [Legacy Language Service Features](../../extensibility/internals/legacy-language-service-features1.md)   
+ [Registering a Legacy Language Service](../../extensibility/internals/registering-a-legacy-language-service1.md)

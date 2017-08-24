@@ -1,76 +1,93 @@
 ---
-title: "IDebugFunctionObject::CreateArrayObject | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugFunctionObject::CreateArrayObject"
-helpviewer_keywords: 
-  - "IDebugFunctionObject::CreateArrayObject-Methode"
+title: IDebugFunctionObject::CreateArrayObject | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugFunctionObject::CreateArrayObject
+helpviewer_keywords:
+- IDebugFunctionObject::CreateArrayObject method
 ms.assetid: a380e53c-15f1-401f-927f-f366eea789e6
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugFunctionObject::CreateArrayObject
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 8cca8cc0dd6cdd0ce6e8127f833eb04553f8949f
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Erstellt ein Arrayobjekt.  Dieses Array kann entweder Grundtyp\- oder Objektinstanz Werte enthalten.  
+---
+# <a name="idebugfunctionobjectcreatearrayobject"></a>IDebugFunctionObject::CreateArrayObject
+Creates an array object. This array can contain either primitive or object instance values.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT CreateArrayObject(   
-   OBJECT_TYPE    ot,  
-   IDebugField*   pClassField,  
-   DWORD          dwRank,  
-   DWORD          dwDims[],  
-   DWORD          dwLowBounds[],  
-   IDebugObject** ppObject  
+HRESULT CreateArrayObject(   
+   OBJECT_TYPE    ot,  
+   IDebugField*   pClassField,  
+   DWORD          dwRank,  
+   DWORD          dwDims[],  
+   DWORD          dwLowBounds[],  
+   IDebugObject** ppObject  
 );  
 ```  
   
-```c#  
+```cs  
 int CreateArrayObject(  
-   enum_OBJECT_TYPE ot,   
-   IDebugField      pClassField,   
-   uint             dwRank,   
-   uint[]           dwDims,   
-   uint[]           dwLowBounds,   
-   out IDebugObject ppObject  
+   enum_OBJECT_TYPE ot,   
+   IDebugField      pClassField,   
+   uint             dwRank,   
+   uint[]           dwDims,   
+   uint[]           dwLowBounds,   
+   out IDebugObject ppObject  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `ot`  
- \[in\]  Gibt einen Wert aus der [OBJECT\_TYPE](../../../extensibility/debugger/reference/object-type.md)\-Enumeration, die den Typ des neuen Arrayobjekts angibt.  
+ [in] Specifies a value from the [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) enumeration indicating the type of the new array object.  
   
  `pClassField`  
- \[in\]  Ein [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)\-Objekt, das die Klasse des Objekts darstellt, wenn ein Array von Werten Objektinstanz erstellt wird.  Wenn ein Array primitive Objekte erstellt, ist dieser Parameter ein NULL\-Wert.  
+ [in] An [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) object representing the class of an object, if creating an array of object instance values. If creating an array of primitive objects, this parameter is a null value.  
   
  `dwRank`  
- \[in\]  Der Rang oder die Anzahl der Dimensionen des Arrays.  
+ [in] The rank or number of dimensions of the array.  
   
  `dwDims`  
- \[in\]  Die Größe jeder Dimension des Arrays.  
+ [in] The sizes of each dimension of the array.  
   
  `dwLowBounds`  
- \[in\]  Der Ursprung jeder Dimension \(in der Regel 0 oder 1\).  
+ [in] The origin of each dimension (typically 0 or 1).  
   
  `ppObject`  
- \[out\]  Gibt ein [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)\-Objekt zurück, das das neu erstellte Array darstellt.  Hierbei handelt es sich eigentlich ein [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)\-Objekt.  
+ [out] Returns an [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) object representing the newly created array. This is actually an [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md) object.  
   
-## Rückgabewert  
- Bei Erfolg gibt S\_OK zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
-## Hinweise  
- Rufen Sie diese Methode auf, um ein Objekt zu erstellen, das einen Arrayparameter der Funktion darstellt, die sowohl durch die [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)\-Schnittstelle dargestellt wird.  
+## <a name="remarks"></a>Remarks  
+ Call this method to create an object that represents an array parameter to the function which is represented by the [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interface.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

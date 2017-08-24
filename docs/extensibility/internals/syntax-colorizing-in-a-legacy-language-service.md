@@ -1,59 +1,76 @@
 ---
-title: "Farbliche Kennzeichnung von Syntax in einem Legacy-Sprachdienst | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Sprachdienste [Verwaltetes Paketframework], syntaxhervorhebung"
-  - "farbliche Kennzeichnung, Unterstützung in Sprachdienste [Verwaltetes Paketframework]"
-  - "Syntax hervorheben, Unterstützung in Sprachdienste [Verwaltetes Paketframework]"
-  - "Sprachdienste [Verwaltetes Paketframework], die farbliche Kennzeichnung"
+title: Syntax Colorizing in a Legacy Language Service | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- language services [managed package framework], syntax highlighting
+- colorization, supporting in language services [managed package framework]
+- syntax highlighting, supporting in language services [managed package framework]
+- language services [managed package framework], colorization
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
 caps.latest.revision: 28
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 28
----
-# Farbliche Kennzeichnung von Syntax in einem Legacy-Sprachdienst
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: a91cf5495d027387caddc8bcebf561457d240d70
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Syntax farblich markiert ist eine Funktion, durch die verschiedenen Elemente einer Programmiersprache, die in einer Quelldatei in verschiedenen Farben und Stile angezeigt werden. Um dieses Feature zu unterstützen, müssen Sie angeben, einen Parser oder Scanner, die die lexikalische Elemente oder Token in der Datei identifizieren kann. Viele Sprachen unterscheiden, Schlüsselwörter, Trennzeichen \(z. B. runden oder geschweiften Klammern\) und Kommentare werden auf unterschiedliche Weise färben.  
+---
+# <a name="syntax-colorizing-in-a-legacy-language-service"></a>Syntax Colorizing in a Legacy Language Service
+Syntax colorization is a feature that causes different elements of a programming language to be displayed in a source file in different colors and styles. To support this feature, you need to supply a parser or scanner that can identify the types of lexical elements or tokens in the file. Many languages distinguish keywords, delimiters (such as parentheses or braces), and comments by colorizing them in different ways.  
   
- Ältere Sprache Services werden als Teil eines VSPackage implementiert, aber der neuere Weg zum Implementieren von Language Service ist die Verwendung von MEF\-Erweiterungen. Um weitere Informationen finden Sie unter [Erweitern der\-Editor und Sprachdienste](../../extensibility/extending-the-editor-and-language-services.md).  
+ Legacy language services are implemented as part of a VSPackage, but the newer way to implement language service features is to use MEF extensions. To find out more, see [Extending the Editor and Language Services](../../extensibility/extending-the-editor-and-language-services.md).  
   
 > [!NOTE]
->  Es wird empfohlen, dass Sie beginnen, den neuen Editor\-API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie die neue Editorfunktionen nutzen.  
+>  We recommend that you begin to use the new editor API as soon as possible. This will improve the performance of your language service and let you take advantage of new editor features.  
   
-## Implementierung  
- Unterstützung für die farbliche Kennzeichnung der verwalteten Paketframework \(MPF\) enthält die <xref:Microsoft.VisualStudio.Package.Colorizer> Klasse implementiert die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> Schnittstelle. Diese Klasse interagiert mit einer <xref:Microsoft.VisualStudio.Package.IScanner> zur Ermittlung des Tokens und Farben. Weitere Informationen zu Scanner, finden Sie unter [Ältere Sprachdienstparser und Scanner](../../extensibility/internals/legacy-language-service-parser-and-scanner.md). Die <xref:Microsoft.VisualStudio.Package.Colorizer> Klasse kennzeichnet jedes Zeichens des Tokens mit den Informationen für die Farbe, und gibt diese Informationen zum Anzeigen der Quelldatei\-Editor.  
+## <a name="implementation"></a>Implementation  
+ To support colorization, the managed package framework (MPF) includes the <xref:Microsoft.VisualStudio.Package.Colorizer> class, which implements the <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> interface. This class interacts with an <xref:Microsoft.VisualStudio.Package.IScanner> to determine the token and colors. For more information on scanners, see [Legacy Language Service Parser and Scanner](../../extensibility/internals/legacy-language-service-parser-and-scanner.md). The <xref:Microsoft.VisualStudio.Package.Colorizer> class then marks each character of the token with the color information and returns that information to the editor displaying the source file.  
   
- Die Farbinformationen zurückgegeben, die in den Editor ist ein Index in eine Liste von färbbare Elemente. Jede färbbare Element gibt einen Farbwert und einen Satz von Schriftartattributen, z. B. fett oder durchgestrichen. Der Editor stellt einen Satz von standardmäßigen färbbare\-Elemente, die der Sprachdienst verwenden kann. Müssen Sie lediglich die entsprechende Farbe für jeden Tokentyp angeben. Sie können jedoch stellen benutzerdefinierte färbbare Elemente und die Indizes, die Sie angeben, für die Token und eine eigene Liste von färbbare Elemente anstelle der standardmäßigen Liste verweisen. Müssen Sie auch Festlegen der `RequestStockColors` Registrierungseintrag auf 0 \(oder geben Sie die `RequestStockColors` Eintrag überhaupt\) zur Unterstützung von benutzerdefinierter Farben. Lassen sich dieses Registrierungseintrags mit benannten Parameter für die <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> benutzerdefiniertes Attribut. Weitere Informationen zum registriert eine Sprachdienst und zum Festlegen von Optionen finden Sie unter [Registriert eine Sprachdienst](../../extensibility/internals/registering-a-legacy-language-service1.md).  
+ The color information returned to the editor is an index into a list of colorable items. Each colorable item specifies a color value and a set of font attributes, such as bold or strikethrough. The editor supplies a set of default colorable items that your language service can use. All you need to do is specify the appropriate color index for each token type. However, you can provide a set of custom colorable items and the indices you supply for tokens, and reference your own list of colorable items instead of the default list. You must also set the `RequestStockColors` registry entry to 0 (or do not specify the `RequestStockColors` entry at all) to support custom colors. You can set this registry entry with a named parameter to the <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> user-defined attribute. For more information on registering a language service and setting its options, see [Registering a Legacy Language Service](../../extensibility/internals/registering-a-legacy-language-service1.md).  
   
-## Benutzerdefinierte Färbbare Elemente  
- Um eine eigene benutzerdefinierte färbbare Elemente angeben möchten, müssen Sie überschreiben die <xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A> und <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A> Methode für die <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse. Die erste Methode gibt die Anzahl der benutzerdefinierten färbbare Elemente, die der Sprachdienst unterstützt, und das zweite das benutzerdefinierte färbbare Element anhand des Indexes ab. Sie erstellen die Standardliste der benutzerdefinierte färbbare Elemente. Im Konstruktor des Dienstes Sprache alles, was Sie tun müssen ist Geben Sie jede färbbare Element mit einem Namen. Visual Studio verarbeitet automatisch den Fall, in dem der Benutzer einen anderen Satz von färbbare Elemente auswählt. Dieser Name wird in der **Schriftarten und Farben** Eigenschaftenseite auf die **Optionen** \(Dialogfeld\) \(in Visual Studio verfügbar **Tools** im Menü\) und dieser Name bestimmt, welche Farbe ein Benutzer überschrieben hat. Auswahl des Benutzers in einem Cache in der Registrierung gespeichert und durch den Namen zugegriffen. Die **Schriftarten und Farben** Eigenschaftenseite enthält eine Liste aller Farbnamen in alphabetischer Reihenfolge, damit Sie benutzerdefinierten Farben gruppieren können, indem Sie vor jedem Namen Farbe durch den Namen Ihres Language; z. B. "**TestLanguage \- Kommentar**"und"**TestLanguage \- Schlüsselwort**". Oder Sie können Ihre färbbare Elemente gruppieren nach Typ "**Kommentar \(TestLanguage\)**"und"**Schlüsselwort \(TestLanguage\)**". Gruppieren nach Sprache wird bevorzugt.  
+## <a name="custom-colorable-items"></a>Custom Colorable Items  
+ To supply your own custom colorable items, you must override the <xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A> and <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A> method on the <xref:Microsoft.VisualStudio.Package.LanguageService> class. The first method returns the number of custom colorable items that your language service supports and the second gets the custom colorable item by index. You create the default list of custom colorable items. In the constructor of your language service, all you need to do is supply each colorable item with a name. Visual Studio automatically handles the case where the user selects a different set of colorable items. This name is what appears in the **Fonts and Colors** property page on the **Options** dialog box (available from Visual Studio **Tools** menu) and this name determines which color a user has overridden. The user's choices are stored in a cache in the registry and accessed by the color name. The **Fonts and Colors** property page lists all of the color names in alphabetical order, so you can group your custom colors by preceding each color name with your language name; for example, "**TestLanguage- Comment**" and "**TestLanguage- Keyword**". Or you can group your colorable items by type, "**Comment (TestLanguage)**" and "**Keyword (TestLanguage)**". Grouping by language name is preferred.  
   
 > [!CAUTION]
->  Es wird dringend empfohlen, enthalten den Namen der färbbare Elementname, Konflikte mit vorhandenen Namen von färbbare Element zu vermeiden.  
+>  It is strongly recommended that you include the language name in the colorable item name to avoid collisions with existing colorable item names.  
   
 > [!NOTE]
->  Wenn Sie während der Entwicklung der Name eines Farben ändern, müssen Sie den Cache zurücksetzen, den Visual Studio beim ersten Farben zugegriffen wurde erstellt. Dazu können Sie mit der **Zurücksetzen der experimentellen Struktur** Befehl aus der Visual Studio SDK.  
+>  If you change the name of one of your colors during development, you must reset the cache that Visual Studio created the first time your colors were accessed. You can do so by running the **Reset the Experimental Hive** command from the Visual Studio SDK program menu.  
   
- Beachten Sie, dass das erste Element in der Liste der färbbare Elemente nie verwiesen wird. Visual Studio stellt immer die Standardfarben für Text und die Attribute für dieses Element. Die einfachste Möglichkeit für den Umgang mit diesem ist ein Platzhalter färbbare Element als erstes Element angeben.  
+ Note that the first item in your list of colorable items is never referenced. Visual Studio always supplies the default text colors and attributes for that item. The easiest way of dealing with this is to supply a placeholder colorable item as the first item.  
   
-### High Color Färbbare Elemente  
- Färbbare Elemente können auch über 24\-Bit\- oder hohe Farbwerte unterstützen die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> Schnittstelle. Die MPF <xref:Microsoft.VisualStudio.Package.ColorableItem> \-Klasse unterstützt die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> \-Schnittstelle und die 24\-Bit\-Farben werden im Konstruktor zusammen mit der normalen Farben angegeben. Finden Sie unter der <xref:Microsoft.VisualStudio.Package.ColorableItem> \-Klasse für weitere Details. Das folgende Beispiel zeigt, wie die 24\-Bit\-Farben für Schlüsselwörter und Kommentare festgelegt wird. Die 24\-Bit\-Farben werden verwendet, wenn auf dem Desktop des Benutzers 24\-Bit\-Farbe unterstützt wird. Andernfalls werden die normalen Textfarben verwendet.  
+### <a name="high-color-colorable-items"></a>High Color Colorable Items  
+ Colorable items can also support 24-bit or high color values through the <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> interface. The MPF <xref:Microsoft.VisualStudio.Package.ColorableItem> class supports the <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> interface and the 24-bit colors are specified in the constructor along with the normal colors. See the <xref:Microsoft.VisualStudio.Package.ColorableItem> class for more details. The example below shows how to set the 24-bit colors for keywords and comments. The 24-bit colors are used when 24-bit color is supported on the user's desktop; otherwise, the normal text colors are used.  
   
- Beachten Sie, dass dies die Standardfarben für Ihre Sprache sind; der Benutzer kann diese Farben nach Belieben ändern.  
+ Remember, these are the default colors for your language; the user can change these colors to whatever they want.  
   
-### Beispiel  
- Dieses Beispiel zeigt eine Möglichkeit zum Deklarieren und füllen ein Array von benutzerdefinierten färbbare Elemente mithilfe der <xref:Microsoft.VisualStudio.Package.ColorableItem> Klasse. Diesem Beispiel wird die Schlüsselwort und Kommentar Farben mit 24\-Bit\-Farben.  
+### <a name="example"></a>Example  
+ This example shows one way to declare and populate an array of custom colorable items using the <xref:Microsoft.VisualStudio.Package.ColorableItem> class. This example sets the keyword and comment colors using 24-bit colors.  
   
-```c#  
+```cs  
 using Microsoft.VisualStudio.Package;  
 using Microsoft.VisualStudio.TextManager.Interop;  
   
@@ -66,21 +83,21 @@ namespace TestLanguagePackage
         TestLanguageService() : base()  
         {  
             m_colorableItems = new ColorableItem[] {  
-                new ColorableItem("TestLanguage – Text",  
+                new ColorableItem("TestLanguage - Text",  
                                   "Text",  
                                   COLORINDEX.CI_SYSPLAINTEXT_FG,  
                                   COLORINDEX.CI_SYSPLAINTEXT_BK,  
                                   System.Drawing.Color.Empty,  
                                   System.Drawing.Color.Empty,  
                                   FONTFLAGS.FF_DEFAULT),  
-                new ColorableItem("TestLanguage – Keyword",  
+                new ColorableItem("TestLanguage - Keyword",  
                                   "Keyword",  
                                   COLORINDEX.CI_MAROON,  
                                   COLORINDEX.CI_SYSPLAINTEXT_BK,  
                                   System.Drawing.Color.FromArgb(192,32,32),  
                                   System.Drawing.Color.Empty,  
                                   FONTFLAGS.FF_BOLD),  
-                new ColorableItem("TestLanguage – Comment",  
+                new ColorableItem("TestLanguage - Comment",  
                                   "Comment",  
                                   COLORINDEX.CI_DARKGREEN,  
                                   COLORINDEX.CI_LIGHTGRAY,  
@@ -95,19 +112,19 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## Die Klasse zur Farbdarstellung und der Scanner  
- Die Basis <xref:Microsoft.VisualStudio.Package.LanguageService> \-Klasse verfügt über eine <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorizer%2A> Methode, Instantiantes der <xref:Microsoft.VisualStudio.Package.Colorizer> Klasse. Der Scanner, die von zurückgegeben wird die <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> \-Methode übergeben, um die <xref:Microsoft.VisualStudio.Package.Colorizer> \-Klassenkonstruktor.  
+## <a name="the-colorizer-class-and-the-scanner"></a>The Colorizer class and the Scanner  
+ The base <xref:Microsoft.VisualStudio.Package.LanguageService> class has a <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorizer%2A> method that instantiantes the <xref:Microsoft.VisualStudio.Package.Colorizer> class. The scanner that is returned from the <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> method is passed to the <xref:Microsoft.VisualStudio.Package.Colorizer> class constructor.  
   
- Sie implementieren, müssen die <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> \-Methode in eine eigene Version von der <xref:Microsoft.VisualStudio.Package.LanguageService> Klasse. Die <xref:Microsoft.VisualStudio.Package.Colorizer> \-Klasse verwendet den Scanner, um alle token Farbinformationen abzurufen.  
+ You must implement the <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> method in your own version of the <xref:Microsoft.VisualStudio.Package.LanguageService> class. The <xref:Microsoft.VisualStudio.Package.Colorizer> class uses the scanner to obtain all token color information.  
   
- Der Scanner muss zum Auffüllen einer <xref:Microsoft.VisualStudio.Package.TokenInfo> Struktur es findet für jedes Token. Diese Struktur enthält Informationen, wie z. B. die Spanne der Token, belegt den Farbe Index zu verwenden, welcher Typ von Tokens, und Trigger wird \(finden Sie unter <xref:Microsoft.VisualStudio.Package.TokenTriggers>\). Nur der Index Zeitspanne und Farbe für die farbliche Kennzeichnung von erforderlich sind die <xref:Microsoft.VisualStudio.Package.Colorizer> Klasse.  
+ The scanner needs to populate a <xref:Microsoft.VisualStudio.Package.TokenInfo> structure for every token it finds. This structure contains information such as the span the token occupies, the color index to use, what type is the token, and token triggers (see <xref:Microsoft.VisualStudio.Package.TokenTriggers>). Only the span and color index are needed for colorization by the <xref:Microsoft.VisualStudio.Package.Colorizer> class.  
   
- Der Color\-Index gespeichert wird, der <xref:Microsoft.VisualStudio.Package.TokenInfo> Struktur ist in der Regel einen Wert aus der <xref:Microsoft.VisualStudio.Package.TokenColor> Enumeration bietet eine Reihe von benannten Indizes, die für verschiedene Sprachelemente wie Schlüsselwörter und Operatoren. Wenn Ihre benutzerdefinierte färbbare Elemente entspricht die Liste der Elemente angezeigt, der <xref:Microsoft.VisualStudio.Package.TokenColor> \-Enumeration, und Sie können einfach verwenden die Enumeration als Farbe für jedes Token. Allerdings können Wenn zusätzliche färbbare Elemente enthalten sind, oder Sie nicht die vorhandenen Werte in dieser Reihenfolge verwenden möchten, Sie Anordnen der Liste benutzerdefinierte färbbare Elemente entsprechend dem Bedarf Ihrer und den entsprechenden Index in der Liste zurückzugeben. Denken Sie wandeln Sie den Index auf eine <xref:Microsoft.VisualStudio.Package.TokenColor> in zum Speichern der <xref:Microsoft.VisualStudio.Package.TokenInfo> Struktur; [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] sieht nur den Index.  
+ The color index stored in the <xref:Microsoft.VisualStudio.Package.TokenInfo> structure is typically a value from the <xref:Microsoft.VisualStudio.Package.TokenColor> enumeration, which provides a number of named indices corresponding to various language elements such as keywords and operators. If your custom colorable items list matches the items presented in the <xref:Microsoft.VisualStudio.Package.TokenColor> enumeration, then you can just use the enumeration as the color for each token. However, if you have additional colorable items or you do not want to use the existing values in that order, you can arrange your custom colorable items list to suit your needs and return the appropriate index into that list. Just be sure to cast the index to a <xref:Microsoft.VisualStudio.Package.TokenColor> when storing it in the <xref:Microsoft.VisualStudio.Package.TokenInfo> structure; [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] sees only the index.  
   
-### Beispiel  
- Das folgende Beispiel zeigt, wie der Scanner drei Tokentypen identifizieren kann: Zahlen, Satzzeichen und Bezeichner \(alles, was keine Zahl oder ein Satzzeichen ist\). In diesem Beispiel wird nur zu Illustrationszwecken und stellt eine umfassende Implementierung Parser und Scanner nicht dar. Es wird vorausgesetzt, dass ein `Lexer` \-Klasse mit einer `GetNextToken()` Methode, die eine Zeichenfolge zurückgibt.  
+### <a name="example"></a>Example  
+ The following example shows how the scanner might identify three token types: numbers, punctuation, and identifiers (anything that is not a number or punctuation). This example is for illustrative purposes only and does not represent a comprehensive parser and scanner implementation. It assumes that there is a `Lexer` class with a `GetNextToken()` method that returns a string.  
   
-```c#  
+```cs  
 using Microsoft.VisualStudio.Package;  
 using Microsoft.VisualStudio.TextManager.Interop;  
   
@@ -145,7 +162,7 @@ namespace TestLanguagePackage
         }  
 ```  
   
-## Siehe auch  
- [Legacy\-Dienst\-Sprachfunktionen](../../extensibility/internals/legacy-language-service-features1.md)   
- [Ältere Sprachdienstparser und Scanner](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)   
- [Registriert eine Sprachdienst](../../extensibility/internals/registering-a-legacy-language-service1.md)
+## <a name="see-also"></a>See Also  
+ [Legacy Language Service Features](../../extensibility/internals/legacy-language-service-features1.md)   
+ [Legacy Language Service Parser and Scanner](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)   
+ [Registering a Legacy Language Service](../../extensibility/internals/registering-a-legacy-language-service1.md)

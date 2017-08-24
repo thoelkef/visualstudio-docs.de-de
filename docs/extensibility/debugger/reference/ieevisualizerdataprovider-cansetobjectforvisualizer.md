@@ -1,51 +1,68 @@
 ---
-title: "IEEVisualizerDataProvider::CanSetObjectForVisualizer | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEEVisualizerDataProvider::CanSetObjectForVisualizer"
-helpviewer_keywords: 
-  - "IEEVisualizerDataProvider::CanSetObjectForVisualizer-Methode"
+title: IEEVisualizerDataProvider::CanSetObjectForVisualizer | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IEEVisualizerDataProvider::CanSetObjectForVisualizer
+helpviewer_keywords:
+- IEEVisualizerDataProvider::CanSetObjectForVisualizer method
 ms.assetid: 70fd3c6f-2f82-43a3-993b-c1dc8aa080bf
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IEEVisualizerDataProvider::CanSetObjectForVisualizer
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 7ab8898fd8e16baf7b9c4f565aad3f7f9cb36fc7
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Mit dieser Methode wird bestimmt, ob die Schnellansicht das Datenobjekt aktualisiert haben kann, das sie darstellt.  
+---
+# <a name="ieevisualizerdataprovidercansetobjectforvisualizer"></a>IEEVisualizerDataProvider::CanSetObjectForVisualizer
+This method determines whether the visualizer can have the data object it represents updated.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT CanSetObjectForVisualizer(  
-   BOOL* b  
+HRESULT CanSetObjectForVisualizer(  
+   BOOL* b  
 );  
 ```  
   
-```c#  
-int CanSetObjectForVisualizer(  
-   out int b  
+```cs  
+int CanSetObjectForVisualizer(  
+   out int b  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `b`  
- \[out\]  Ein Wert ungleich 0 \(`TRUE`\), wenn das Objekt in der Schnellansicht aktualisiert werden kann,`FALSE`\(null\), wenn keine kann.  
+ [out] Nonzero (`TRUE`) if the object on the visualizer can be updated, zero (`FALSE`) if it cannot.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Hinweise  
- Ein Objekt ist möglicherweise nicht, wenn es an den schreibgeschützten Speicher gebunden wird, z. B. nicht geändert werden.  
+## <a name="remarks"></a>Remarks  
+ An object might not be changeable if it is bound to read-only memory, for example.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)

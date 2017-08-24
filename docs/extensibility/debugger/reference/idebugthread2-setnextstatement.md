@@ -1,64 +1,81 @@
 ---
-title: "IDebugThread2::SetNextStatement | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugThread2::SetNextStatement"
-helpviewer_keywords: 
-  - "IDebugThread2::SetNextStatement"
+title: IDebugThread2::SetNextStatement | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugThread2::SetNextStatement
+helpviewer_keywords:
+- IDebugThread2::SetNextStatement
 ms.assetid: 9e2834dd-4ecf-45af-8e6c-f9318ebdac06
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugThread2::SetNextStatement
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: d398083133c00ffee3e8298e0985785b4233ccd5
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Legt den aktuellen Kontext des Codes Anweisungszeiger auf den angegebenen Wert fest.  
+---
+# <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
+Sets the current instruction pointer to the given code context.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT SetNextStatement (   
-   IDebugStackFrame2*  pStackFrame,  
-   IDebugCodeContext2* pCodeContext  
+HRESULT SetNextStatement (   
+   IDebugStackFrame2*  pStackFrame,  
+   IDebugCodeContext2* pCodeContext  
 );  
 ```  
   
-```c#  
-int SetNextStatement (   
-   IDebugStackFrame2  pStackFrame,  
-   IDebugCodeContext2 pCodeContext  
+```cs  
+int SetNextStatement (   
+   IDebugStackFrame2  pStackFrame,  
+   IDebugCodeContext2 pCodeContext  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `pStackFrame`  
- Für zukünftige Verwendung reserviert. Auf einem NULL\-Wert.  
+ Reserved for future use; set to a null value.  
   
  `pCodeContext`  
- \[in\]  Ein [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)\-Objekt, das den auszuführenden Code ungefähr beschreibt Speicherort und der Kontext.  
+ [in] An [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) object that describes the code location about to be executed and its context.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  In der folgenden Tabelle werden weitere mögliche Werte an.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code. The following table shows other possible values.  
   
-|Wert|Beschreibung|  
-|----------|------------------|  
-|\_SET\_NEXT\_STATEMENT\_ON\_NONLEAF\_FRAME E\_CAN NOT|Die folgende Anweisung kann nicht in einem Stapelrahmen sein, der auf den Frame stapel tiefer liegt.|  
-|\_SETIP\_TO\_DIFFERENT\_FUNCTION E\_CAN NOT|In der folgenden Anweisung wird nicht mit einem Rahmen im Stapel zugeordnet.|  
-|\_SET\_NEXT\_STATEMENT\_ON\_EXCEPTION E\_CAN NOT|Einige Module können Debuggen der folgenden Anweisung nicht nach einer Ausnahme fest.|  
+|Value|Description|  
+|-----------|-----------------|  
+|E_CANNOT_SET_NEXT_STATEMENT_ON_NONLEAF_FRAME|The next statement cannot be in a stack frame deeper on the frame stack.|  
+|E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|The next statement is not associated with any frame in the stack.|  
+|E_CANNOT_SET_NEXT_STATEMENT_ON_EXCEPTION|Some debug engines cannot set the next statement after an exception.|  
   
-## Hinweise  
- Der Anweisungszeiger gibt die folgende Anweisung oder die Anweisung auszuführen.  Diese Methode wird verwendet, um eine Zeile des Quellcodes zu wiederholen oder Ausführung zu erzwingen, dass in einer anderen Funktion fortzufahren, z. B.  
+## <a name="remarks"></a>Remarks  
+ The instruction pointer indicates the next instruction or statement to execute. This method is used to retry a line of source code or to force execution to continue in another function, for example.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

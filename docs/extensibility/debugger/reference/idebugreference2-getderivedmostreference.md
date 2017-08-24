@@ -1,51 +1,68 @@
 ---
-title: "IDebugReference2::GetDerivedMostReference | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugReference2::GetDerivedMostReference"
-helpviewer_keywords: 
-  - "IDebugReference2::GetDerivedMostReference"
+title: IDebugReference2::GetDerivedMostReference | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugReference2::GetDerivedMostReference
+helpviewer_keywords:
+- IDebugReference2::GetDerivedMostReference
 ms.assetid: 07253b74-7d39-48e0-8e85-ac8dfd919f6e
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugReference2::GetDerivedMostReference
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 2a005497beb987aa6818ebe4d67fbb3b94348401
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Ruft den ganz unten stehende Verweis eines Verweises ab.  Für zukünftige Verwendung reserviert.  
+---
+# <a name="idebugreference2getderivedmostreference"></a>IDebugReference2::GetDerivedMostReference
+Gets the derived-most reference of a reference. Reserved for future use.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetDerivedMostReference(   
-   IDebugReference2** ppDerivedMost  
+HRESULT GetDerivedMostReference(   
+   IDebugReference2** ppDerivedMost  
 );  
 ```  
   
-```c#  
-int GetDerivedMostReference(   
-   out IDebugReference2 ppDerivedMost  
+```cs  
+int GetDerivedMostReference(   
+   out IDebugReference2 ppDerivedMost  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `ppDerivedMost`  
- \[out\]  Gibt ein Objekt zurück, das die [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) ganz unten stehende Eigenschaft darstellt.  
+ [out] Returns an [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) object that represents the derived-most property.  
   
-## Rückgabewert  
- Gibt immer `E_NOTIMPL` zurück.  
+## <a name="return-value"></a>Return Value  
+ Always returns `E_NOTIMPL`.  
   
-## Hinweise  
- Wenn beispielsweise die folgende Eigenschaft ein Objekt beschreibt, das `ClassRoot` implementiert, aber das tatsächlich eine Instanziierung von `ClassDerived` ist, die von `ClassRoot`abgeleitet ist, gibt diese Methode ein [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)\-Objekt zurück, das einen Verweis auf das `ClassDerived`\-Objekt darstellt.  
+## <a name="remarks"></a>Remarks  
+ For example, if this property describes an object that implements `ClassRoot` but which is actually an instantiation of `ClassDerived` that is derived from `ClassRoot`, then this method returns an [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) object representing a reference to the `ClassDerived` object.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

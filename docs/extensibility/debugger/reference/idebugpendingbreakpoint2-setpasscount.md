@@ -1,53 +1,70 @@
 ---
-title: "IDebugPendingBreakpoint2::SetPassCount | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPendingBreakpoint2::SetPassCount"
-helpviewer_keywords: 
-  - "SetPassCount-Methode"
-  - "IDebugPendingBreakpoint2::SetPassCount-Methode"
+title: IDebugPendingBreakpoint2::SetPassCount | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugPendingBreakpoint2::SetPassCount
+helpviewer_keywords:
+- SetPassCount method
+- IDebugPendingBreakpoint2::SetPassCount method
 ms.assetid: 08ddd328-57eb-42e0-baa9-8424dcd1bf04
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugPendingBreakpoint2::SetPassCount
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 83f59df4ffc84474c757474298657985133395e6
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Anzahl der Änderungen übergeben oder legt diese fest, die dem anstehenden Haltepunkt.  
+---
+# <a name="idebugpendingbreakpoint2setpasscount"></a>IDebugPendingBreakpoint2::SetPassCount
+Sets or changes the pass count associated with the pending breakpoint.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT SetPassCount(   
-   BP_PASSCOUNT bpPassCount  
+HRESULT SetPassCount(   
+   BP_PASSCOUNT bpPassCount  
 );  
 ```  
   
-```c#  
-int SetPassCount(   
-   BP_PASSCOUNT bpPassCount  
+```cs  
+int SetPassCount(   
+   BP_PASSCOUNT bpPassCount  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `bpPassCount`  
- \[in\]  Eine Struktur, die die [BP\_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) Anzahl übergeben.  
+ [in] A [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) structure that contains the pass count.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  Gibt `E_BP_DELETED` zurück, wenn der Haltepunkt gelöscht wurde.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code. Returns `E_BP_DELETED` if the breakpoint has been deleted.  
   
-## Hinweise  
- Jede gültige Anzahl, die zuvor mit dem anstehenden Haltepunkt zugeordnet wurde, geht verloren.  Alle Haltepunkte, die von diesem anstehenden Haltepunkt gebunden sind, werden aufgerufen, um die Anzahl der zum `bpPassCount` übergeben Parameter festzulegen.  
+## <a name="remarks"></a>Remarks  
+ Any pass count that was previously associated with the pending breakpoint is lost. All breakpoints bound from this pending breakpoint are called to set their pass count to the `bpPassCount` parameter.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   
- [BP\_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)
+ [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)

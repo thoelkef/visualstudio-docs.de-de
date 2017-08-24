@@ -1,49 +1,66 @@
 ---
-title: "Kommentieren von Code in einer Legacy-Sprachdienst | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Kommentare, die Unterstützung in Sprachdienste [Verwaltetes Paketframework]"
-  - "Sprachdienste [Verwaltetes Paketframework], Kommentare im code"
+title: Commenting Code in a Legacy Language Service | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- comments, supporting in language services [managed package framework]
+- language services [managed package framework], commenting code
 ms.assetid: 9600d6f0-e2b6-4fe0-b935-fb32affb97a4
 caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
----
-# Kommentieren von Code in einer Legacy-Sprachdienst
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: f1814fc40bac1e977a02fa53a34c8e59e299b2bd
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Programmiersprachen bieten in der Regel besagt, Anmerkungen hinzuzufügen oder Auskommentieren der Code.  Ein Kommentar ist ein Textabschnitt, der zusätzliche Informationen über den Code, sondern wird während der Kompilierung oder der Interpretation ignoriert.  
+---
+# <a name="commenting-code-in-a-legacy-language-service"></a>Commenting Code in a Legacy Language Service
+Programming languages typically provide a means to annotate or comment the code. A comment is a section of text that provides additional information about the code but is ignored during compilation or interpretation.  
   
- Die Klassen des verwalteten Paketframeworks \(MPF\) bieten Unterstützung für das Kommentieren und heben Sie die Auskommentierung des ausgewählten Texts.  
+ The managed package framework (MPF) classes provide support for commenting and uncommenting selected text.  
   
-## Kommentar\-Formate  
- Es gibt zwei allgemeine Format des Kommentars:  
+## <a name="comment-styles"></a>Comment Styles  
+ There are two general styles of comment:  
   
-1.  Kommentar Kommentare ein, wo der Zeilen in einer einzigen Zeile befindet.  
+1.  Line comments, where the comment is on a single line.  
   
-2.  Blockieren von Kommentaren, in denen der Kommentar möglicherweise mehrere Zeilen enthält.  
+2.  Block comments, where the comment may include multiple lines.  
   
- Zeilen können Kommentare in der Regel ein Anfangszeichen \(oder Zeichen\), während Blocks Kommentare ein Start\- und Endzeichen haben.  Zum Beispiel in C\#, in den Zeilen eines kommentars mit \/\/beginnt und einem Block beginnt mit\/\* kommentars und endet mit \*\/.  
+ Line comments typically have a starting character (or characters), while block comments have both start and end characters. For example, in C#, a line comment starts with //, and a block comment starts with /* and ends with \*/.  
   
- Wenn der Benutzer den Befehl **Auswahl kommentieren** von **Bearbeiten** auswählt \- Menü \> **Erweitert** , der Befehl wird auf die <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A>\-Methode für die <xref:Microsoft.VisualStudio.Package.Source>\-Klasse weitergeleitet.  Wenn der Benutzer den Befehl **Auskommentierung der Auswahl aufheben**auswählt, wird der Befehl zur <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A>\-Methode weitergeleitet.  
+ When the user selects the command **Comment Selection** from the **Edit** -> **Advanced** menu, the command is routed to the <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> method on the <xref:Microsoft.VisualStudio.Package.Source> class. When the user selects the command **Uncomment Selection**, the command is routed to the <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> method.  
   
-## Code\-Kommentare unterstützen  
- Sie können die Sprachendienst\-Stütz Code Kommentare mithilfe des `EnableCommenting` benannten Parameters <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> haben.  Hierdurch wird die <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A>\-Eigenschaft der <xref:Microsoft.VisualStudio.Package.LanguagePreferences>\-Klasse fest.  Weitere Informationen zum Festlegen servicce Entwicklungssprache Funktionen finden Sie unter [Registriert eine Sprachdienst](../../extensibility/internals/registering-a-legacy-language-service1.md)\).  
+## <a name="supporting-code-comments"></a>Supporting Code Comments  
+ You can have your language service support code comments by means of the `EnableCommenting` named parameter of the <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . This sets the <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> property of the <xref:Microsoft.VisualStudio.Package.LanguagePreferences> class. For more information about setting language servicce features, see [Registering a Legacy Language Service](../../extensibility/internals/registering-a-legacy-language-service1.md)).  
   
- Sie müssen die <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A>\-Methode überschreiben, um eine <xref:Microsoft.VisualStudio.Package.CommentInfo> Struktur mit den Kommentarzeichen für die Programmiersprache zurückzugeben.  C\#\-Format Zeilen\-Kommentar Zeichen sind die Standardeinstellung.  
+ You must also override the <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> method to return a <xref:Microsoft.VisualStudio.Package.CommentInfo> structure with the comment characters for your language. C#-style line comment characters are the default.  
   
-### Beispiel  
- Im Folgenden finden Sie eine Beispielimplementierung der <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A>\-Methode.  
+### <a name="example"></a>Example  
+ Here is an example implementation of the <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> method.  
   
-```c#  
+```cs  
 using Microsoft.VisualStudio.Package;  
   
 namespace MyLanguagePackage  
@@ -62,6 +79,6 @@ namespace MyLanguagePackage
 }  
 ```  
   
-## Siehe auch  
- [Legacy\-Dienst\-Sprachfunktionen](../../extensibility/internals/legacy-language-service-features1.md)   
- [Registriert eine Sprachdienst](../../extensibility/internals/registering-a-legacy-language-service1.md)
+## <a name="see-also"></a>See Also  
+ [Legacy Language Service Features](../../extensibility/internals/legacy-language-service-features1.md)   
+ [Registering a Legacy Language Service](../../extensibility/internals/registering-a-legacy-language-service1.md)

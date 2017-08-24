@@ -1,5 +1,5 @@
 ---
-title: IDebugMessageEvent2::GetMessage | Microsoft-Dokumentation
+title: IDebugMessageEvent2::GetMessage | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -31,14 +31,15 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: a54fe55d214e23394783f92c6ce6311257d5ef5d
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 5facc859d937acda934c37bf909a0d9d5424ae57
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
 ---
 # <a name="idebugmessageevent2getmessage"></a>IDebugMessageEvent2::GetMessage
-Ruft die Meldung angezeigt werden.  
+Gets the message to be displayed.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -52,7 +53,7 @@ HRESULT GetMessage(
 );  
 ```  
   
-```c#  
+```cs  
 int GetMessage(   
    out enum_MESSAGETYPE pMessageType,  
    out string           pbstrMessage,  
@@ -62,26 +63,26 @@ int GetMessage(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameter  
+#### <a name="parameters"></a>Parameters  
  `pMessageType`  
- [out] Gibt einen Wert aus der [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) -Enumeration, der den Typ der Nachricht beschreibt.  
+ [out] Returns a value from the [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) enumeration that describes the type of the message.  
   
  `pbstrMessage`  
- [out] Gibt die Meldung zurück.  
+ [out] Returns the message.  
   
  `pdwType`  
- [out] Gibt den Typ der Nachricht mit den Konventionen der Win32- `MessageBox` Funktion. Finden Sie unter der [AfxMessageBox](http://msdn.microsoft.com/Library/d66d0328-cdcc-48f6-96a4-badf089099c8) -Funktion für Details.  
+ [out] Returns the type of the message, using the conventions of the Win32 `MessageBox` function. See the [AfxMessageBox](http://msdn.microsoft.com/Library/d66d0328-cdcc-48f6-96a4-badf089099c8) function for details.  
   
  `pbstrHelpFileName`  
- [in, out] Gibt den Namen der Hilfedatei zurück. Möglicherweise Null (C++) oder einem leeren Wert (c#), wenn keine Hilfedatei vorhanden ist.  
+ [in, out] Returns the help file name. May be a null (C++) or empty (C#) value if there is no help file.  
   
  `pdwHelpId`  
- [in, out] Gibt die Hilfe-ID zurück. 0, wenn keine Hilfe kann dieser Nachricht zugeordnet werden.  
+ [in, out] Returns the help identifier. May be 0 if there is no help associated with this message.  
   
-## <a name="return-value"></a>Rückgabewert  
- Bei erfolgreicher Ausführung gibt `S_OK`, andernfalls wird ein Fehlercode zurückgegeben.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="see-also"></a>Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)   
  [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)   
  [AfxMessageBox](http://msdn.microsoft.com/Library/d66d0328-cdcc-48f6-96a4-badf089099c8)
