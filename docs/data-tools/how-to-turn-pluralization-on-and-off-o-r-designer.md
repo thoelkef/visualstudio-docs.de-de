@@ -1,43 +1,62 @@
 ---
-title: "Vorgehensweise: An- und Ausschalten der Pluralisierung (O/R-Designer) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'How to: Turn pluralization on and off (O-R Designer) | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 9b693bc3-303a-40a9-97ee-9cef5ca3ae81
 caps.latest.revision: 2
-caps.handback.revision: 2
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 6f0fe07b55ae0eeb57c0cc11fed047f31966cb6e
+ms.openlocfilehash: 6d920152eedc41e307fcba6dcf0d56cf9cf367d9
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
+
 ---
-# Vorgehensweise: An- und Ausschalten der Pluralisierung (O/R-Designer)
-Werden Datenbankobjekte, deren Namen auf s oder ies enden, aus dem **Server\-Explorer**\/**Datenbank\-Explorer** in den [Object Relational Designer \(O\/R\-Designer\)](../data-tools/linq-to-sql-tools-in-visual-studio2.md) gezogen, so werden die Namen der erzeugten Entitätsklassen standardmäßig von der Plural\- in die Singularform geändert.Damit soll verdeutlicht werden, dass die instanziierte Entitätsklasse einem einzigen Datensatz zugeordnet ist.Wird dem [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] beispielsweise die Tabelle Customers hinzugefügt, erhält die Entitätsklasse den Namen Customer, da die Klasse die Daten eines einzigen Kunden enthält.  
+# <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>How to: Turn pluralization on and off (O/R Designer)
+By default, when you drag database objects that have names ending in s or ies from **Server Explorer**/**Database Explorer** onto the [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), the names of the generated entity classes are changed from plural to singular. This is done to more accurately represent the fact that the instantiated entity class maps to a single record of data. For example, adding a Customers table to the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] results in an entity class named Customer because the class will hold data for only a single customer.  
   
 > [!NOTE]
->  Pluralisierung ist standardmäßig nur in der englischsprachigen Version von Visual Studio aktiviert.  
+>  Pluralization is on by default only in the English-language version of Visual Studio.  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-### So schalten Sie Pluralisierung ein und aus  
+### <a name="to-turn-pluralization-on-and-off"></a>To turn pluralization on and off  
   
-1.  Klicken Sie im Menü **Extras**  auf **Optionen**.  
+1.  On the **Tools** menu, click **Options**.  
   
-2.  Erweitern Sie im Dialogfeld **Optionen** den Knoten **Datenbanktools**.  
+2.  In the **Options** dialog box, expand **Database Tools**.  
   
 > [!NOTE]
->  Wählen Sie **Alle Einstellungen anzeigen** aus, wenn der Knoten **Datenbanktools** nicht angezeigt wird.  
+>  Select **Show all settings** if the **Database Tools** node is not visible.  
   
-1.  Klicken Sie auf **O\/R\-Designer**.  
+1.  Click **O/R Designer**.  
   
-2.  Legen Sie **Pluralisierung von Namen** auf **Aktiviert** \= **False** fest, um den [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] so einzustellen, dass Klassennamen nicht geändert werden.  
+2.  Set **Pluralization of names** to **Enabled** = **False** to set the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] so that it does not change class names.  
   
-3.  Legen Sie **Pluralisierung von Namen** auf **Aktiviert** \= **True** fest, damit Pluralisierungsregeln auf die Klassennamen von Objekten angewendet werden, die dem [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] hinzugefügt werden.  
+3.  Set **Pluralization of names** to **Enabled** = **True** to apply pluralization rules to the class names of objects added to the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
   
-## Siehe auch  
- [Object Relational Designer \(O\/R\-Designer\)](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [LINQ to SQL](../Topic/LINQ%20to%20SQL.md)   
- [Zugreifen auf Daten in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
+## <a name="see-also"></a>See Also  
+ [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
+ [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)   
+ [Accessing data in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

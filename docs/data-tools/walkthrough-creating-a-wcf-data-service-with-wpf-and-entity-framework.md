@@ -32,16 +32,16 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: d2ae80673afdceb5cc5f816d92ab9b9cbf084801
+ms.sourcegitcommit: 6f0fe07b55ae0eeb57c0cc11fed047f31966cb6e
+ms.openlocfilehash: 1b828b3fab88548123e9bf6b62ae1b789eae6091
 ms.contentlocale: de-de
-ms.lasthandoff: 08/23/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Walkthrough: Creating a WCF Data Service with WPF and Entity Framework
 This walkthrough demonstrates how to create a simple [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] that is hosted in an [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web application and then access it from a Windows Forms application.  
   
- In this walkthrough you will:  
+In this walkthrough you will:  
   
 -   Create a Web application to host a [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].  
   
@@ -56,18 +56,18 @@ This walkthrough demonstrates how to create a simple [!INCLUDE[ss_data_service](
 -   Optionally add filtering capabilities to the application.  
   
 ## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+You need the following components to complete this walkthrough:  
   
 -   The Northwind sample database.  
   
      If you do not have this database on your development computer, you can download it from the [Microsoft Download Center](/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases).  
   
 ## <a name="creating-the-service"></a>Creating the Service  
- To create a [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)], you will add a Web project, create an [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)], and then create the service from the model.  
+To create a [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)], you will add a Web project, create an [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)], and then create the service from the model.  
   
- In the first step, you will add a Web project to host the service.  
+In the first step, you will add a Web project to host the service.  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 #### <a name="to-create-the-web-project"></a>To create the Web project  
   
@@ -209,7 +209,7 @@ This walkthrough demonstrates how to create a simple [!INCLUDE[ss_data_service](
     Imports NorthwindClient.ServiceReference1  
     ```  
   
-    ```cs  
+    ```csharp  
     using NorthwindClient.ServiceReference1;  
     ```  
   
@@ -223,7 +223,7 @@ This walkthrough demonstrates how to create a simple [!INCLUDE[ss_data_service](
         End Sub  
     ```  
   
-    ```cs  
+    ```csharp  
     private void Form1_Load(object sender, EventArgs e)  
     {  
     NorthwindEntities proxy = new NorthwindEntities(new Uri("http://localhost:53161/NorthwindCustomers.svc/"));  
@@ -269,7 +269,7 @@ This walkthrough demonstrates how to create a simple [!INCLUDE[ss_data_service](
         End Sub  
     ```  
   
-    ```cs  
+    ```csharp  
     private void Button1_Click(object sender, EventArgs e)  
     {  
     ServiceReference1.northwindModel.northwindEntities proxy = new northwindEntities(new Uri("http://localhost:53161/NorthwindCustomers.svc"));  

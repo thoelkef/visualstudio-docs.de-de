@@ -1,45 +1,64 @@
 ---
-title: "Vorgehensweise: &#196;ndern des R&#252;ckgabetyps einer DataContext-Methode (O/R-Designer) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'How to: Change the return type of a DataContext method (O-R Designer) | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: c5b66bff-6dbb-43c0-bffa-317133ca5b9e
 caps.latest.revision: 2
-caps.handback.revision: 2
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 6f0fe07b55ae0eeb57c0cc11fed047f31966cb6e
+ms.openlocfilehash: 97cbfbb92987f9d69f7e7a9ad3cbe18b3288858a
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
+
 ---
-# Vorgehensweise: &#196;ndern des R&#252;ckgabetyps einer DataContext-Methode (O/R-Designer)
-Der Rückgabetyp einer <xref:System.Data.Linq.DataContext>\-Methode, die basierend auf einer gespeicherten Prozedur oder Funktion erstellt wurde, unterscheidet sich abhängig von dem Ort, an dem die gespeicherte Prozedur oder Funktion im [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] abgelegt wurde.Wenn Sie ein Element direkt auf einer vorhandene Entitätsklasse ablegen, wird eine <xref:System.Data.Linq.DataContext>\-Methode erstellt, die über den Rückgabetyp dieser Entitätsklasse verfügt \(wenn das Schema der Daten, die von der gespeicherten Prozedur oder Funktion zurückgegeben wurden, mit der Form der Entitätsklasse übereinstimmt\).Wenn Sie ein Element in einem leeren Bereich von [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] ablegen, wird eine <xref:System.Data.Linq.DataContext>\-Methode erstellt, die einen automatisch erstellten Typ zurückgibt.Sie können den Rückgabetyp einer <xref:System.Data.Linq.DataContext>\-Methode ändern, wenn Sie sie dem Methodenbereich hinzugefügt haben.Um den Rückgabetyp einer <xref:System.Data.Linq.DataContext>\-Methode zu überprüfen oder zu ändern, markieren Sie sie und klicken im Fenster **Eigenschaften** auf die Eigenschaft **Rückgabetyp**.  
+# <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>How to: Change the return type of a DataContext method (O/R Designer)
+The return type of a <xref:System.Data.Linq.DataContext> method (created based on a stored procedure or function) differs depending on where you drop the stored procedure or function in the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. If you drop an item directly onto an existing entity class, a <xref:System.Data.Linq.DataContext> method that has the return type of the entity class is created (if the schema of the data returned by the stored procedure or function matches the shape of the entity class). If you drop an item onto an empty area of the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], a <xref:System.Data.Linq.DataContext> method that returns an automatically generated type is created. You can change the return type of a <xref:System.Data.Linq.DataContext> method after you add it to the methods pane. To inspect or change the return type of a <xref:System.Data.Linq.DataContext> method, select it and click the **Return Type** property in the **Properties** window.  
   
 > [!NOTE]
->  <xref:System.Data.Linq.DataContext>\-Methoden können nicht wiederhergestellt werden, wenn ein Rückgabetyp auf eine Entitätsklasse festgelegt ist, um so den automatisch generierten Typ mithilfe des Fensters **Eigenschaften** zurückzugeben.Zum Wiederherstellen einer <xref:System.Data.Linq.DataContext>\-Methode zur Rückgabe eines automatisch generierten Typs müssen Sie das ursprüngliche Datenbankobjekt erneut auf den O\/R\-Designer ziehen.  
+>  You cannot revert <xref:System.Data.Linq.DataContext> methods that have a return type set to an entity class to return the auto-generated type by using the **Properties** window. To revert a <xref:System.Data.Linq.DataContext> method to return an auto-generated type, you must drag the original database object onto the O/R Designer again.  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-### So ändern Sie den Rückgabetyp einer DataContext\-Methode vom automatisch generierten Typ in eine Entitätsklasse  
+### <a name="to-change-the-return-type-of-a-datacontext-method-from-the-auto-generated-type-to-an-entity-class"></a>To change the return type of a DataContext method from the auto-generated type to an entity class  
   
-1.  Wählen Sie im Methodenbereich die <xref:System.Data.Linq.DataContext>\-Methode aus.  
+1.  Select the <xref:System.Data.Linq.DataContext> method in the methods pane.  
   
-2.  Wählen Sie im Fenster **Eigenschaften** die Option **Rückgabetyp** und anschließend in der Liste **Rückgabetyp** eine verfügbare Entitätsklasse aus.Wenn sich die gewünschte Entitätsklasse nicht in der Liste befindet, fügen Sie sie hinzu oder erstellen sie im [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], um sie anschließend der Liste hinzuzufügen.  
+2.  Select **Return Type** in the **Properties** window and then select an available entity class in the **Return Type** list. If the desired entity class is not in the list, add it to or create it in the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] to add it to the list.  
   
-3.  Speichern Sie die DBML\-Datei.  
+3.  Save the .dbml file.  
   
-### So ändern Sie den Rückgabetyp einer DataContext\-Methode von einer Entitätsklasse zurück in einen automatisch generierten Typ  
+### <a name="to-change-the-return-type-of-a-datacontext-method-from-an-entity-class-back-to-the-auto-generated-type"></a>To change the return type of a DataContext method from an entity class back to the auto-generated type  
   
-1.  Wählen Sie im Methodenbereich die <xref:System.Data.Linq.DataContext>\-Methode aus, und löschen Sie sie.  
+1.  Select the <xref:System.Data.Linq.DataContext> method in the methods pane and delete it.  
   
-2.  Ziehen Sie das Datenbankobjekt von **Server\-Explorer**\/**Datenbank\-Explorer** auf einen leeren Bereich des O\/R\-Designers.  
+2.  Drag the database object from **Server Explorer**/**Database Explorer** onto an empty area of the O/R Designer.  
   
-3.  Speichern Sie die DBML\-Datei.  
+3.  Save the .dbml file.  
   
-## Siehe auch  
- [Object Relational Designer \(O\/R\-Designer\)](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [LINQ to SQL](../Topic/LINQ%20to%20SQL.md)   
- [DataContext\-Methoden \(O\/R\-Designer\)](../data-tools/datacontext-methods-o-r-designer.md)   
- [Vorgehensweise: Erstellen von DataContext\-Methoden, die gespeicherten Prozeduren und Funktionen \(O\/R\-Designer\) zugeordnet sind](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)
+## <a name="see-also"></a>See Also  
+ [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
+ [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)   
+ [DataContext Methods (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md)   
+ [How to: Create DataContext methods mapped to stored procedures and functions (O/R Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)
