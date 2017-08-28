@@ -1,59 +1,80 @@
 ---
-title: "POPDIRLISTFUNC | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "POPLISTFUNC"
-helpviewer_keywords: 
-  - "POPDIRLISTFUNC Callback-Funktion"
+title: POPDIRLISTFUNC | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- POPLISTFUNC
+helpviewer_keywords:
+- POPDIRLISTFUNC callback function
 ms.assetid: 0ee90fd2-5467-4154-ab4c-7eb02ac3a14c
 caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
----
-# POPDIRLISTFUNC
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: cb56a3e8f90ed31d051f28fe7cfe99be154d2696
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
-Dies ist eine Rückruffunktion erhält die [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) Funktion eine Auflistung von Verzeichnissen und \(optional\) um herauszufinden, welche Quellcodeverwaltungsprojekt sind die Namen aktualisieren.  
+---
+# <a name="popdirlistfunc"></a>POPDIRLISTFUNC
+This is a callback function given to the [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) function to update a collection of directories and (optionally) file names to find out which are under source control.  
   
- Die `POPDIRLISTFUNC` Rückruf aufgerufen werden, nur für die Verzeichnisse und Dateinamen \(in der Liste auf die `SccPopulateDirList` Funktion\), sind tatsächlich Quellcodeverwaltungsprojekt.  
+ The `POPDIRLISTFUNC` callback should be called only for those directories and file names (in the list given to the `SccPopulateDirList` function) that are actually under source control.  
   
-## Signatur  
+## <a name="signature"></a>Signature  
   
-```cpp#  
-typedef BOOL (*POPDIRLISTFUNC)( LPVOID pvCallerData, BOOL bFolder, LPCSTR lpDirectoryOrFileName );  
+```cpp  
+typedef BOOL (*POPDIRLISTFUNC)(  
+   LPVOID pvCallerData,  
+   BOOL bFolder,  
+   LPCSTR lpDirectoryOrFileName  
+);  
 ```  
   
-## Parameter  
+## <a name="parameters"></a>Parameters  
  pvCallerData  
- \[in\] Benutzer angegebene Wert auf [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md).  
+ [in] User value given to [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md).  
   
- auf bOrdneroptionen  
- \[in\] `TRUE` Wenn der Name in `lpDirectoryOrFileName` ist ein Verzeichnis; andernfalls der Name ist ein Dateiname.  
+ bFolder  
+ [in] `TRUE` if the name in `lpDirectoryOrFileName` is a directory; otherwise the name is a file name.  
   
  lpDirectoryOrFileName  
- \[in\] Vollständige lokale Pfad zu einem Verzeichnis oder eine Datei an, der unter Quellcode ist.  
+ [in] Full local path to a directory or file name that is under source code control.  
   
-## Rückgabewert  
- Die IDE gibt einen geeigneten Fehlercode zurück:  
+## <a name="return-value"></a>Return Value  
+ The IDE returns an appropriate error code:  
   
-|Wert|Beschreibung|  
-|----------|------------------|  
-|SCC\_OK|Die Verarbeitung fortgesetzt.|  
-|SCC\_I\_OPERATIONCANCELED|Beendet die Verarbeitung.|  
-|SCC\_E\_xxx|Alle Fehler der entsprechenden Quelle Control soll Verarbeitung beendet werden.|  
+|Value|Description|  
+|-----------|-----------------|  
+|SCC_OK|Continue processing.|  
+|SCC_I_OPERATIONCANCELED|Stop processing.|  
+|SCC_E_xxx|Any appropriate source control error should stop processing.|  
   
-## Hinweise  
- Wenn der `fOptions` Parameter von der `SccPopulateDirList` Funktion enthält die `SCC_PDL_INCLUDEFILES` kennzeichnen, und klicken Sie dann die Liste möglicherweise Dateinamen und Verzeichnisnamen enthalten wird.  
+## <a name="remarks"></a>Remarks  
+ If the `fOptions` parameter of the `SccPopulateDirList` function contains the `SCC_PDL_INCLUDEFILES` flag, then the list will possibly contain file names as well as directory names.  
   
-## Siehe auch  
- [Callback\-Funktionen, die von der IDE implementiert](../extensibility/callback-functions-implemented-by-the-ide.md)   
+## <a name="see-also"></a>See Also  
+ [Callback Functions Implemented by the IDE](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)   
- [Fehlercodes](../extensibility/error-codes.md)
+ [Error Codes](../extensibility/error-codes.md)

@@ -1,80 +1,97 @@
 ---
-title: "SccRemove-Funktion | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccRemove"
-helpviewer_keywords: 
-  - "SccRemove-Funktion"
+title: SccRemove Function | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- SccRemove
+helpviewer_keywords:
+- SccRemove function
 ms.assetid: 20830fdc-c0e9-4a5f-bf60-33f28874442f
 caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
----
-# SccRemove-Funktion
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 02a6aedc192bed7dbe0947ceae1ea55d9f50e3ed
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
-Diese Funktion löscht Dateien aus dem Quellcode\-Verwaltungssystem.  
+---
+# <a name="sccremove-function"></a>SccRemove Function
+This function deletes files from the source control system.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 SCCRTN SccRemove(  
-   LPVOID    pvContext,  
-   HWND      hWnd,  
-   LONG      nFiles,  
-   LPCSTR*   lpFileNames,  
-   LPCSTR    lpComment,  
-   LONG      fOptions,  
-   LPCMDOPTS pvOptions  
+   LPVOID    pvContext,  
+   HWND      hWnd,  
+   LONG      nFiles,  
+   LPCSTR*   lpFileNames,  
+   LPCSTR    lpComment,  
+   LONG      fOptions,  
+   LPCMDOPTS pvOptions  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  pvContext  
- \[in\] Source Control\-Plug\-in Context\-Struktur.  
+ [in] The source control plug-in context structure.  
   
  hWnd  
- \[in\] Ein Handle für die IDE\-Fenster, das Quellcodeverwaltungs\-Plug\-in als übergeordnetes Element für alle Dialogfelder verwenden kann, die es bereitstellt.  
+ [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
   
  nFiles  
- \[in\] Anzahl der angegebenen Dateien in den `lpFileNames` Array.  
+ [in] Number of files specified in the `lpFileNames` array.  
   
  lpFileNames  
- \[in\] Array von Namen voll gekennzeichneter lokaler Pfad Dateien entfernt werden soll.  
+ [in] Array of fully qualified local path names of files to be removed.  
   
  lpComment  
- \[in\] Der Kommentar auf jede entfernte Datei angewendet werden.  
+ [in] The comment to be applied to each file being removed.  
   
- Bestanden  
- \[in\] Befehl Flags \(nicht verwendeten\).  
+ fOptions  
+ [in] Command flags (unused).  
   
  pvOptions  
- \[in\] Quellcodeverwaltungs\-plug\-in spezifischen Optionen.  
+ [in] Source control plug-in-specific options.  
   
-## Rückgabewert  
- Datenquellen\-Steuerelement Plug\-in\-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
+## <a name="return-value"></a>Return Value  
+ The source control plug-in implementation of this function is expected to return one of the following values:  
   
-|Wert|Beschreibung|  
-|----------|------------------|  
-|SCC\_OK|Deinstallation war erfolgreich.|  
-|SCC\_E\_FILENOTCONTROLLED|Die ausgewählte Datei ist nicht in einem Quellcodeverwaltungsprojekt.|  
-|SCC\_E\_OPNOTSUPPORTED|Dieser Vorgang wird von Quellcode\-Verwaltungssystem nicht unterstützt.|  
-|SCC\_E\_ISCHECKEDOUT|Eine Datei kann nicht entfernt werden, da ein Benutzer derzeit ausgecheckt hat.|  
-|SCC\_E\_ACCESSFAILURE|Es wurde ein Problem, das Zugriff auf Quellcode\-Verwaltungssystem, möglicherweise aufgrund eines Netzwerk\-oder Konflikte.|  
-|SCC\_E\_NOTAUTHORIZED|Der Benutzer ist nicht zulässig, um diesen Vorgang auszuführen.|  
-|SCC\_E\_NONSPECIFICERROR|Unspezifischen Ausfall. Datei wurde nicht entfernt.|  
-|SCC\_I\_OPERATIONCANCELED|Der Vorgang wurde vor dem Abschluss abgebrochen.|  
+|Value|Description|  
+|-----------|-----------------|  
+|SCC_OK|Removal was successful.|  
+|SCC_E_FILENOTCONTROLLED|The selected file is not under source control.|  
+|SCC_E_OPNOTSUPPORTED|The source control system does not support this operation.|  
+|SCC_E_ISCHECKEDOUT|Cannot remove a file because a user currently has it checked out.|  
+|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues.|  
+|SCC_E_NOTAUTHORIZED|The user is not allowed to perform this operation.|  
+|SCC_E_NONSPECIFICERROR|Nonspecific failure; file was not removed.|  
+|SCC_I_OPERATIONCANCELED|The operation was cancelled before completion.|  
   
-## Hinweise  
- Diese Funktion entfernt die Dateien aus dem Quellcode\-Verwaltungssystem, jedoch nicht von der Festplatte des Benutzers gelöscht.  
+## <a name="remarks"></a>Remarks  
+ This function removes the files from the source control system but does not delete them from the user's local hard drive.  
   
-## Siehe auch  
- [Source Control\-Plug\-in\-API\-Funktionen](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>See Also  
+ [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)

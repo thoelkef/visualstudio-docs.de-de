@@ -1,77 +1,94 @@
 ---
-title: "SccQueryInfo-Funktion | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccQueryInfo"
-helpviewer_keywords: 
-  - "SccQueryInfo-Funktion"
+title: SccQueryInfo Function | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- SccQueryInfo
+helpviewer_keywords:
+- SccQueryInfo function
 ms.assetid: 3973d336-a9b7-41a2-a4e6-bb8184a96aaf
 caps.latest.revision: 18
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 18
----
-# SccQueryInfo-Funktion
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 4efd9b29a89bc490255c35558e5862ebc14b7fec
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
-Diese Funktion ruft die Statusinformationen für eine Gruppe von ausgewählten Dateien unter Versionskontrolle ab.  
+---
+# <a name="sccqueryinfo-function"></a>SccQueryInfo Function
+This function obtains status information for a set of selected files under source control.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 SCCRTN SccQueryInfo(  
-   LPVOID  pvContext,  
-   LONG    nFiles,  
-   LPCSTR* lpFileNames,  
-   LPLONG  lpStatus  
+   LPVOID  pvContext,  
+   LONG    nFiles,  
+   LPCSTR* lpFileNames,  
+   LPLONG  lpStatus  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  pvContext  
- \[in\] Source Control\-Plug\-in Context\-Struktur.  
+ [in] The source control plug-in context structure.  
   
  nFiles  
- \[in\] Anzahl der angegebenen Dateien in der `lpFileNames` Arrays und die Länge der `lpStatus` Array.  
+ [in] Number of files specified in the `lpFileNames` array and the length of the `lpStatus` array.  
   
  lpFileNames  
- \[in\] Ein Array von Namen von Dateien, die abgefragt werden.  
+ [in] An array of names of files to be queried.  
   
  lpStatus  
- \[in, out\] Ein Array, in dem das Quellcodeverwaltungs\-Plug\-in die Statusflags für jede Datei zurückgibt. Weitere Informationen finden Sie unter [Datei\-Statuscode](../extensibility/file-status-code-enumerator.md).  
+ [in, out] An array in which the source control plug-in returns the status flags for each file. For more information, see [File Status Code](../extensibility/file-status-code-enumerator.md).  
   
-## Rückgabewert  
- Datenquellen\-Steuerelement Plug\-in\-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
+## <a name="return-value"></a>Return Value  
+ The source control plug-in implementation of this function is expected to return one of the following values:  
   
-|Wert|Beschreibung|  
-|----------|------------------|  
-|SCC\_OK|Abfrage war erfolgreich.|  
-|SCC\_E\_ACCESSFAILURE|Es wurde ein Problem mit dem Zugriff auf das Quellcodeverwaltungssystem wahrscheinlich durch Probleme mit dem Netzwerk oder Konflikte verursacht. Eine Wiederholung wird empfohlen.|  
-|SCC\_E\_PROJNOTOPEN|Das Projekt ist nicht in der quellcodeverwaltung geöffnet.|  
-|SCC\_E\_NONSPECIFICERROR|Nicht spezifischen Fehler.|  
+|Value|Description|  
+|-----------|-----------------|  
+|SCC_OK|Query was successful.|  
+|SCC_E_ACCESSFAILURE|There was a problem with accessing the source control system, probably caused by network or contention issues. A retry is recommended.|  
+|SCC_E_PROJNOTOPEN|The project is not open under source control.|  
+|SCC_E_NONSPECIFICERROR|Nonspecific failure.|  
   
-## Hinweise  
- Wenn `lpFileName` ist eine leere Zeichenfolge, es gibt derzeit keine Statusinformationen aktualisieren. Andernfalls ist es der vollständige Pfadname der Datei für die die Statusinformationen geändert haben kann.  
+## <a name="remarks"></a>Remarks  
+ If `lpFileName` is an empty string, there is currently no status information to update. Otherwise, it is the full path name of the file for which the status information may have changed.  
   
- Die zurückgegebenen Array kann eine Bitmaske der `SCC_STATUS_xxxx` Bits. Weitere Informationen finden Sie unter [Datei\-Statuscode](../extensibility/file-status-code-enumerator.md). Ein Quellcodeverwaltungssystem möglicherweise nicht alle Bitdatentypen unterstützt. Zum Beispiel wenn `SCC_STATUS_OUTOFDATE` nicht angeboten wird, wird das Bit nicht festgelegt ist.  
+ The return array can be a bitmask of `SCC_STATUS_xxxx` bits. For more information, see [File Status Code](../extensibility/file-status-code-enumerator.md). A source control system may not support all bit types. For example, if `SCC_STATUS_OUTOFDATE` is not offered, the bit is just not set.  
   
- Beachten Sie Folgendes, wenn diese Funktion zum Auschecken der Dateien, `MSSCCI` Status Anforderungen:  
+ When using this function to check out files, note the following `MSSCCI` status requirements:  
   
--   `SCC_STATUS_OUTBYUSER` wird festgelegt, wenn der aktuelle Benutzer die Datei ausgecheckt hat.  
+-   `SCC_STATUS_OUTBYUSER` is set when the current user has checked out the file.  
   
--   `SCC_STATUS_CHECKEDOUT` kann nicht festgelegt werden, es sei denn, `SCC_STATUS_OUTBYUSER` festgelegt ist.  
+-   `SCC_STATUS_CHECKEDOUT` cannot be set unless `SCC_STATUS_OUTBYUSER` is set.  
   
--   `SCC_STATUS_CHECKEDOUT` wird nur festgelegt, wenn die Datei in das Arbeitsverzeichnis festgelegten ausgecheckt ist.  
+-   `SCC_STATUS_CHECKEDOUT` is only set when the file is checked-out into the designated working directory.  
   
--   Wenn die Datei vom aktuellen Benutzer in einem anderen Verzeichnis als das Arbeitsverzeichnis ausgecheckt ist `SCC_STATUS_OUTBYUSER` festgelegt ist, aber `SCC_STATUS_CHECKEDOUT` nicht.  
+-   If the file is checked-out by the current user into a directory other than the working directory, `SCC_STATUS_OUTBYUSER` is set but `SCC_STATUS_CHECKEDOUT` is not.  
   
-## Siehe auch  
- [Source Control\-Plug\-in\-API\-Funktionen](../extensibility/source-control-plug-in-api-functions.md)   
- [Datei\-Statuscode](../extensibility/file-status-code-enumerator.md)
+## <a name="see-also"></a>See Also  
+ [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
+ [File Status Code](../extensibility/file-status-code-enumerator.md)

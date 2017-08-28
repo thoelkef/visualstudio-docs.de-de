@@ -1,54 +1,71 @@
 ---
-title: "SccIsMultiCheckoutEnabled-Funktion | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccIsMultiCheckoutEnabled"
-helpviewer_keywords: 
-  - "SccIsMultiCheckoutEnabled-Funktion"
+title: SccIsMultiCheckoutEnabled Function | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- SccIsMultiCheckoutEnabled
+helpviewer_keywords:
+- SccIsMultiCheckoutEnabled function
 ms.assetid: 6721639d-e475-4766-81b5-ee40a280fc70
 caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
----
-# SccIsMultiCheckoutEnabled-Funktion
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a8c1a00aa923374b7833e83edde4a0d7b5b4b9b6
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
-Diese Funktion prüft, ob das Quellcodeverwaltungs\-Plug\-in Mehrfaches Auschecken einer Datei ermöglicht.  
+---
+# <a name="sccismulticheckoutenabled-function"></a>SccIsMultiCheckoutEnabled Function
+This function checks whether the source control plug-in allows multiple checkouts on a file.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 SCCRTN SccIsMultiCheckoutEnabled(  
-   LPVOID pContext,  
-   LPBOOL pbMultiCheckout  
+   LPVOID pContext,  
+   LPBOOL pbMultiCheckout  
 );  
 ```  
   
-#### Parameter  
- "pContext"  
- \[in\] Source Control\-Plug\-in Context\-Struktur.  
+#### <a name="parameters"></a>Parameters  
+ pContext  
+ [in] The source control plug-in context structure.  
   
  pbMultiCheckout  
- \[out\] Gibt an, ob Mehrfaches für dieses Projekt \(ungleich NULL bedeutet, dass Mehrfaches Auschecken unterstützt werden\) aktiviert sind.  
+ [out] Specifies whether multiple checkouts are enabled for this project (nonzero means that multiple checkouts are supported).  
   
-## Rückgabewert  
- Datenquellen\-Steuerelement Plug\-in\-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
+## <a name="return-value"></a>Return Value  
+ The source control plug-in implementation of this function is expected to return one of the following values:  
   
-|Wert|Beschreibung|  
-|----------|------------------|  
-|SCC\_OK|Die Überprüfung war erfolgreich.|  
-|SCC\_E\_NONSPECIFICERROR<br /><br /> SCC\_E\_UNKNOWNERROR|Nicht spezifischen Fehler.|  
+|Value|Description|  
+|-----------|-----------------|  
+|SCC_OK|The check was successful.|  
+|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Nonspecific failure.|  
   
-## Hinweise  
- Die IDE stellt zwei prüft, ob mehrere Benutzer gleichzeitig Dateien ausgecheckt werden können. Zuerst muss das Quellcodeverwaltungssystem Mehrfaches unterstützen. Das Quellcodeverwaltungs\-Plug\-in kann diese Funktion während der Initialisierung angeben, durch Angabe der `SCC_CAP_MULTICHECKOUT`. Die IDE ruft anschließend eine zweite Überprüfung, dieser Funktion können Sie bestimmen, ob das aktuelle Projekt Mehrfaches unterstützt. Wenn Mehrfaches Auschecken für das ausgewählte Projekt unterstützt werden, gibt Erfolg\-Plug\-in code und legt `pbMultiCheckout` auf einen Wert ungleich Null \(`TRUE`\) oder `FALSE`.  
+## <a name="remarks"></a>Remarks  
+ The IDE makes two checks to determine if files can be checked out simultaneously by more than one user. First, the source control system must support multiple checkouts. The source control plug-in can specify this capability during initialization by specifying the `SCC_CAP_MULTICHECKOUT`. Thereafter, as a second check, the IDE calls this function to determine whether or not the current project supports multiple checkouts. If multiple checkouts are supported for the selected project, the plug-in returns a success code and sets `pbMultiCheckout` to nonzero (`TRUE`) or `FALSE`.  
   
-## Siehe auch  
- [Source Control\-Plug\-in\-API\-Funktionen](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>See Also  
+ [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)

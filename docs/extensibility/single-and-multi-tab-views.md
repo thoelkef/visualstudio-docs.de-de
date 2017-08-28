@@ -1,64 +1,81 @@
 ---
-title: "Einzelne und mehrere Registerkarte Ansichten | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Editoren [Visual Studio SDK] benutzerdefinierte - Ansichten für einzelne und mehrere Registerkarte"
+title: Single and Multi-tab Views | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- editors [Visual Studio SDK], custom - single and multi-tab views
 ms.assetid: e3611704-349f-4323-b03c-f2b0a445d781
 caps.latest.revision: 22
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 22
----
-# Einzelne und mehrere Registerkarte Ansichten
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 94b10507be59b2ead785e8b03f12c71e33874407
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
-Ein Editor können verschiedene Typen von Ansichten erstellen.  Ein Beispiel hierfür ist ein Code\-Editor\-Fenster, ist ein anderes Formular\-Designer.  
+---
+# <a name="single-and-multi-tab-views"></a>Single and Multi-tab Views
+An editor can create different types of views. One example is a code editor window, another is a forms designer.  
   
- Eine Ansicht MULTI\-im Registerkartenformat ist eine Ansicht, die mehrere Registerkarten verfügt.  Beispielsweise verfügt der HTML\-Editor folgenden zwei Registerkarten: **Entwurf** und **Quelle**, die jeweils eine logische Ansicht.  Die Entwurfsansicht zeigt eine gerenderte Webseite an, während die andere den HTML\-Code anzuzeigen, das die Webseite enthält.  
+ A multi-tabbed view is a view that has multiple tabs. For example, the HTML editor has two tabs at the bottom: **Design** and **Source**, each a logical view. The design view displays a rendered web page, while the other displays the HTML that comprises the web page.  
   
-## Zugreifen auf Systemtest\-Ansichten  
- physikalischen Host wird dokumenten\-Ansichts Objekte, die jeweils mit einer Ansicht von Daten im Puffer, wie Code oder in einem Formular darstellt.  Dementsprechend verfügt jedes Objekt eine physikalische Ansicht der Dokumente, identifiziert durch \(bezeichnet als eine Zeichenfolge der Ansicht eine physikalische\) und im Allgemeinen eine einzelne logische Ansicht.  
+## <a name="accessing-physical-views"></a>Accessing Physical Views  
+ Physical views host document view objects, each representing a view of data in the buffer, such as code or a form. Accordingly, each document view object has a physical view (identified by something known as a physical view string), and generally a single logical view.  
   
- In einigen Fällen jedoch eine physikalische Sicht verfügen oder zwei Ansichten logischere kann.  Einige Beispiele sind ein Editor, in dem ein geteiltes Fenster Parallele Ansichten verfügt, oder mit einem Formular\-Designer, der eine GUI\-\/design und eine Code\-hinter\-d Formular Sicht hat.  
+ In some cases, though, a physical view can have two or more logical views. Some examples are an editor that has a split window with side-by-side views, or a forms designer that has a GUI/design view and a code-behind-the-form view.  
   
- Um den Editor zu aktivieren, um alle verfügbaren physischen Ansichten zuzugreifen, müssen Sie eine eindeutige Zeichenfolge der Ansicht physische für jeden Typ von Dokumenten für den Erstellen der Editor die factory erstellen kann.  Beispielsweise kann die [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Editor Dokumente factory die Objekte für ein Codefenster, und ein Fenster Formular\-Designer erstellen.  
+ To enable your editor to access all of the available physical views, you must create a unique physical view string for each type of document view object that your editor factory can create. For example, the [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] editor factory can create document view objects for a code window and a forms designer window.  
   
-## Erstellen von Ansichten MULTI\-Im Registerkartenformat  
- Obwohl die Dokumente ein Objekt in einer physischen Ansicht anzeigen physische durch eine eindeutige Zeichenfolge zugeordnet werden muss, können Sie mehrere Registerkarten in der physischen Ansicht ablegen, um das Anzeigen von Daten auf unterschiedliche Weise zu aktivieren.  In dieser Konfiguration MULTI\-im Registerkartenformat werden alle Registerkarten mit derselben physikalischen Zeichenfolge Ansicht zugeordnet, aber jede Registerkarte ist eine weitere logische Ansicht GUID angegeben.  
+## <a name="creating-multi-tabbed-views"></a>Creating Multi-Tabbed Views  
+ Though a document view object must be associated with a physical view through a unique physical view string, you can place multiple tabs within the physical view to enable the viewing of data in different ways. In this multi-tabbed configuration, all tabs are associated with the same physical view string, but each tab is given a different logical view GUID.  
   
- Um eine Ansicht MULTI\-im Registerkartenformat für einen Editor zu erstellen, implementieren Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsMultiViewDocumentView>\-Schnittstelle, und ordnen Sie dann eine weitere logische Ansicht \(GUID\)<xref:Microsoft.VisualStudio.Shell.Interop.LogicalViewID>mit jeder Registerkarte, die Sie erstellen.  
+ To create a multi-tabbed view for an editor, implement the <xref:Microsoft.VisualStudio.Shell.Interop.IVsMultiViewDocumentView> interface and then associate a different logical view GUID (<xref:Microsoft.VisualStudio.Shell.Interop.LogicalViewID>) with each tab you create.  
   
- Der Visual Studio\-HTML\-Editor ist ein Beispiel für einen Editor mit einer Umgebung mit mehreren Registerkarte Ansicht.  Sie verfügt über **Entwurf** und **Quelle** Tabstopps.  Dazu wird eine weitere logische Ansicht mit jeder Registerkarte, `LOGICALVIEWID_TextView` für die **Entwurf** Registerkarte, und `LOGICALVIEWID_Code` für die **Quelle** Registerkarte zugeordnet.  
+ The Visual Studio HTML editor is an example of an editor with a multi-tab view. It has **Design** and **Source** tabs. To enable this, a different logical view is associated with each tab, `LOGICALVIEWID_TextView` for the **Design** tab and `LOGICALVIEWID_Code` for the **Source** tab.  
   
- Mit den entsprechenden logische Ansicht angibt, kann ein VSPackage die Ansicht zugreifen, die zu einem bestimmten Zweck, wie Entwerfen eines Formulars entspricht und Code oder Debugcode bearbeitet.  Allerdings muss eines der Fenster durch die NULL\-Zeichenfolge identifiziert und es muss`LOGVIEWID_Primary`logischen Primärschlüssel \(Sicht\) entsprechen.  
+ By specifying the appropriate logical view, a VSPackage can access the view that corresponds to a particular purpose, such as designing a form, editing code, or debugging code. However, one of the windows must be identified by the NULL string and this must correspond to the primary logical view (`LOGVIEWID_Primary`).  
   
- In der folgenden Tabelle sind die verfügbaren logischen Werte anzeigen und ihre Verwendung.  
+ The following table lists the available logical view values and their use.  
   
-|LOGVIEWID GUID|Empfohlene Verwendung|  
-|--------------------|---------------------------|  
-|`LOGVIEWID_Primary`|Standardwert\/primäre Ansicht der Editor factorys.<br /><br /> Alle Editorfactorys müssen diesen Wert unterstützen.  Diese Sicht muss die NULL\-Zeichenfolge verwenden z. B. seine physische Zeichenfolge der Ansicht.  muss mindestens eine logische Ansicht auf diesen Wert festgelegt werden.|  
-|`LOGVIEWID_Debugging`|Ansicht debuggen.  In der Regel wird `LOGVIEWID_Debugging` wie bei den zugeordnet `LOGVIEWID_Code`an.|  
-|`LOGVIEWID_Code`|Ansicht, die vom **Code anzeigen** Befehl.|  
-|`LOGVIEWID_Designer`|Ansicht, die vom **Formular anzeigen** Befehl.|  
-|`LOGVIEWID_TextView`|Text\-Editor\-Ansicht.  Dies ist die Ansicht, die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>zurückgibt, von denen Sie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>zugreifen können.|  
-|`LOGVIEWID_UserChooseView`|Fordert den Benutzer auf, denen auszuwählen.|  
-|`LOGVIEWID_ProjectSpecificEditor`|Werden vom **Öffnen mit** Dialogfeld zu<br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.OpenItem%2A><br /><br /> \(„wenn der Benutzer mit dem Standard\-Editor Eintrag“ des Projekts\) auswählt.|  
+|LOGVIEWID GUID|Recommended Use|  
+|--------------------|---------------------|  
+|`LOGVIEWID_Primary`|Default/primary view of the editor factory.<br /><br /> All editor factories must support this value. This view must use the NULL string as its physical view string. At least one logical view must be set to this value.|  
+|`LOGVIEWID_Debugging`|Debugging view. Typically, `LOGVIEWID_Debugging` maps to the same view as `LOGVIEWID_Code`.|  
+|`LOGVIEWID_Code`|View launched by the **View Code** command.|  
+|`LOGVIEWID_Designer`|View launched by the **View Form** command.|  
+|`LOGVIEWID_TextView`|Text editor view. This is the view that returns <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>, from which you can access <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>.|  
+|`LOGVIEWID_UserChooseView`|Prompts the user to choose which view to use.|  
+|`LOGVIEWID_ProjectSpecificEditor`|Passed by the **Open With** dialog box to<br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.OpenItem%2A><br /><br /> when the user chooses the "(Project default editor)" entry.|  
   
- Obwohl logische Ansicht GUID erweiterbar sind, können Sie nur die logische Sicht GUIDs verwenden, die in einem VSPackage definiert ist.  
+ Although logical view GUIDs are extensible, you can use only the logical view GUIDs defined in your VSPackage.  
   
- Klicken Sie auf Herunterfahren Visual Studio behält die GUID der Editor anzeigen und der physischen factorys Formatzeichenfolgen bei, die mit dem Dokumentfenster zugeordnet werden, damit er verwendet werden kann, um Dokumentfenster erneut zu öffnen, wenn die Projektmappe erneut geöffnet wird.  Nur Windows, die geöffnet werden, wenn eine Projektmappe geschlossen ist, werden in der Projektmappendatei \(.suo\) beibehalten.  Diese Werte entsprechen den `VSFPROPID_guidEditorType` und `VSFPROPID_pszPhysicalView`\-Werten, die in den `propid`\-Parameter in der <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A>\-Methode übergeben werden.  
+ On shutdown, Visual Studio retains the GUID of the editor factory and the physical view strings associated with the document window so that it can be used to re-open document windows when the solution is re-opened. Only windows that are open when a solution is closed are persisted in the solution (.suo) file. These values correspond to the `VSFPROPID_guidEditorType` and `VSFPROPID_pszPhysicalView` values passed in the `propid` parameter in the <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> method.  
   
-## Beispiel  
- Dieser Codeausschnitt wird veranschaulicht, wie das <xref:Microsoft.VisualStudio.Shell.Interop.LogicalViewID.TextView>\-Objekt verwendet wird, um eine Ansicht zugreifen, die `IVsCodeWindow`implementiert.  In diesem Fall wird der <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShellOpenDocument> Dienst verwendet, um <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A> aufzurufen und `LOGVIEWID_TextView`anzufordern, der ein Zeiger auf einen Fensterrahmen abgerufen wird.  Ein Zeiger auf den Dokumenten für die wird abgerufen, indem <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> aufrufen und einen Wert von `VSFPROPID_DocView`angibt.  Wählen Sie die Dokumente Objekt wird `QueryInterface` für `IVsCodeWindow`aufgerufen.  Die Annahme ist in diesem Fall, dass ein Text\-Editor zurückgegeben wird, und deshalb ist das Objekt, das die Dokumente in der <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A>\-Methode zurückgegebene ein Codefenster.  
+## <a name="example"></a>Example  
+ This snippet illustrates how the <xref:Microsoft.VisualStudio.Shell.Interop.LogicalViewID.TextView> object is used to access a view that implements `IVsCodeWindow`. In this case, the <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShellOpenDocument> service is used to call <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A> and request `LOGVIEWID_TextView`, which obtains a pointer to a window frame. A pointer to the document view object is obtained by calling <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> and specifying a value of `VSFPROPID_DocView`. From the document view object, `QueryInterface` is called for `IVsCodeWindow`. The expectation in this case is that a text editor is returned, and so the document view object returned in the <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> method is a code window.  
   
-```cpp#  
+```cpp  
 HRESULT CFindTool::GotoFileLocation(const WCHAR * szFile, long iLine, long iStart, long iLen)  
 {  
   HRESULT hr;  
@@ -113,7 +130,7 @@ Error:
 }  
 ```  
   
-## Siehe auch  
- [Unterstützung mehrerer Dokumentansichten](../extensibility/supporting-multiple-document-views.md)   
- [Gewusst wie: Anfügen von Ansichten, um Daten](../extensibility/how-to-attach-views-to-document-data.md)   
- [Erstellen von benutzerdefinierten Editoren und Designern](../extensibility/creating-custom-editors-and-designers.md)
+## <a name="see-also"></a>See Also  
+ [Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md)   
+ [How to: Attach Views to Document Data](../extensibility/how-to-attach-views-to-document-data.md)   
+ [Creating Custom Editors and Designers](../extensibility/creating-custom-editors-and-designers.md)

@@ -1,86 +1,103 @@
 ---
-title: "SccCheckin-Funktion | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccCheckin"
-helpviewer_keywords: 
-  - "SccCheckin-Funktion"
+title: SccCheckin Function | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- SccCheckin
+helpviewer_keywords:
+- SccCheckin function
 ms.assetid: e3f26ac2-6163-42e1-a764-22cfea5a3bc6
 caps.latest.revision: 16
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 16
----
-# SccCheckin-Funktion
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: b082ca831c17dcab3fbc95f8dd547da23a1f8982
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
-Diese Funktion prüft in zuvor ausgecheckten Dateien in das Quellcodeverwaltungssystem Änderungen gespeichert, und erstellen eine neue Version. Diese Funktion ist mit einem Zähler und ein Array der Namen der Dateien, die eingecheckt werden aufgerufen.  
+---
+# <a name="scccheckin-function"></a>SccCheckin Function
+This function checks in previously checked-out files to the source control system, storing the changes and creating a new version. This function is called with a count and an array of names of the files to be checked in.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 SCCRTN SccCheckin (  
-   LPVOID    pvContext,  
-   HWND      hWnd,  
-   LONG      nFiles,  
-   LPSTR*    lpFileNames,  
-   LPCSTR    lpComment,  
-   LONG      fOptions,  
-   LPCMDOPTS pvOptions  
+   LPVOID    pvContext,  
+   HWND      hWnd,  
+   LONG      nFiles,  
+   LPSTR*    lpFileNames,  
+   LPCSTR    lpComment,  
+   LONG      fOptions,  
+   LPCMDOPTS pvOptions  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  pvContext  
- \[in\] Source Control\-Plug\-in Context\-Struktur.  
+ [in] The source control plug-in context structure.  
   
  hWnd  
- \[in\] Ein Handle für die IDE\-Fenster, das die SCC\-Plug\-in als übergeordnetes Element für alle Dialogfelder verwenden kann, die es bereitstellt.  
+ [in] A handle to the IDE window that the SCC plug-in can use as a parent for any dialog boxes that it provides.  
   
  nFiles  
- \[in\] Anzahl der Dateien, die eingecheckt werden ausgewählt.  
+ [in] Number of files selected to be checked in.  
   
  lpFileNames  
- \[in\] Array von Namen voll gekennzeichneter lokaler Pfad Dateien eingecheckt werden.  
+ [in] Array of fully qualified local path names of files to be checked in.  
   
  lpComment  
- \[in\] Kommentar auf der ausgewählten eingecheckten Dateien angewendet werden. Dies ist `NULL` wenn das Quellcodeverwaltungs\-Plug\-In für einen Kommentar auffordern soll.  
+ [in] Comment to be applied to each of the selected files being checked in. This is `NULL` if the source control plug-in should prompt for a comment.  
   
- Bestanden  
- \[in\] Befehl Flags, die entweder 0 oder `SCC_KEEP_CHECKEDOUT`.  
+ fOptions  
+ [in] Command flags, either 0 or `SCC_KEEP_CHECKEDOUT`.  
   
  pvOptions  
- \[in\] SCC\-plug\-in spezifischen Optionen.  
+ [in] SCC plug-in-specific options.  
   
-## Rückgabewert  
- Datenquellen\-Steuerelement Plug\-in\-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
+## <a name="return-value"></a>Return Value  
+ The source control plug-in implementation of this function is expected to return one of the following values:  
   
-|Wert|Beschreibung|  
-|----------|------------------|  
-|SCC\_OK|Dateien erfolgreich eingecheckt wurde.|  
-|SCC\_E\_FILENOTCONTROLLED|Die ausgewählte Datei ist nicht vom Quellcode gesteuert.|  
-|SCC\_E\_ACCESSFAILURE|Es wurde ein Problem, das Zugriff auf Quellcode\-Verwaltungssystem, möglicherweise aufgrund eines Netzwerk\-oder Konflikte. Eine Wiederholung wird empfohlen.|  
-|SCC\_E\_NONSPECIFICERROR|Nicht spezifischen Fehler. Datei wurde nicht eingecheckt.|  
-|SCC\_E\_NOTCHECKEDOUT|Der Benutzer hat die Datei, sodass sie nicht Einchecken nicht ausgecheckt.|  
-|SCC\_E\_CHECKINCONFLICT|Einchecken konnte nicht durchgeführt werden:<br /><br /> -   Ein anderer Benutzer hat nun eingecheckt und `bAutoReconcile` war falsch.<br /><br /> \- oder \-<br /><br /> -   \(Beispielsweise, wenn Dateien binär sind\), kann die automatische Zusammenführung ausgeführt werden.|  
-|SCC\_E\_VERIFYMERGE|Datei automatisch zusammengeführt wurde, aber nicht eingecheckt wurde ausstehende Überprüfung des Benutzers.|  
-|SCC\_E\_FIXMERGE|Datei automatisch zusammengeführt wurde, aber nicht in eingecheckt wurde aufgrund eines Konflikts von zusammenführen, das manuell behoben werden müssen.|  
-|SCC\_E\_NOTAUTHORIZED|Der Benutzer ist nicht zulässig, um diesen Vorgang auszuführen.|  
-|SCC\_I\_OPERATIONCANCELED|Vorgang wurde vor dem Abschluss abgebrochen.|  
-|SCC\_I\_RELOADFILE|Eine Datei oder ein Projekt muss neu geladen werden.|  
-|SCC\_E\_FILENOTEXIST|Lokaler Datei wurde nicht gefunden.|  
+|Value|Description|  
+|-----------|-----------------|  
+|SCC_OK|Files was successfully checked in.|  
+|SCC_E_FILENOTCONTROLLED|The selected file is not under source code control.|  
+|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues. A retry is recommended.|  
+|SCC_E_NONSPECIFICERROR|Nonspecific failure. File was not checked in.|  
+|SCC_E_NOTCHECKEDOUT|The user has not checked out the file, so cannot check it in.|  
+|SCC_E_CHECKINCONFLICT|Checkin could not be performed because:<br /><br /> -   Another user has checked in ahead and `bAutoReconcile` was false.<br /><br /> -or-<br /><br /> -   The auto-merge cannot be done (for example, when files are binary).|  
+|SCC_E_VERIFYMERGE|File has been auto-merged but has not been checked in pending user verification.|  
+|SCC_E_FIXMERGE|File has been auto-merged but has not been checked in due to a merge conflict that must be manually resolved.|  
+|SCC_E_NOTAUTHORIZED|The user is not allowed to perform this operation.|  
+|SCC_I_OPERATIONCANCELED|Operation was cancelled before completion.|  
+|SCC_I_RELOADFILE|A file or project needs to be reloaded.|  
+|SCC_E_FILENOTEXIST|Local file was not found.|  
   
-## Hinweise  
- Der Kommentar gilt für alle eingecheckten Dateien. Das Kommentar\-Argument kann eine `null` Zeichenfolge, die in diesem Fall kann das Quellcodeverwaltungs\-Plug\-in einen Kommentar für die einzelnen Dateien abgefragt.  
+## <a name="remarks"></a>Remarks  
+ The comment applies to all files being checked in. The comment argument can be a `null` string, in which case the source control plug-in can prompt the user for a comment string for each file.  
   
- Die `fOptions` Argument kann einen Wert erhält das `SCC_KEEP_CHECKEDOUT` Flag an, dass die Absicht des Benutzers, die Datei einzuchecken, und probieren Sie es erneut.  
+ The `fOptions` argument can be given a value of the `SCC_KEEP_CHECKEDOUT` flag to indicate the user's intent to check the file in and check it out again.  
   
-## Siehe auch  
- [Source Control\-Plug\-in\-API\-Funktionen](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>See Also  
+ [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)

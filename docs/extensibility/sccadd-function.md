@@ -1,98 +1,115 @@
 ---
-title: "SccAdd-Funktion | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccAdd"
-helpviewer_keywords: 
-  - "SccAdd-Funktion"
+title: SccAdd Function | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- SccAdd
+helpviewer_keywords:
+- SccAdd function
 ms.assetid: 545268f3-8e83-446a-a398-1a9db9e866e8
 caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 17
----
-# SccAdd-Funktion
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 25b3dbc61b4fb57471737e41d3904effa9ed87be
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
-Diese Funktion wird vom Quellcodeverwaltungssystem neue Dateien hinzugefügt.  
+---
+# <a name="sccadd-function"></a>SccAdd Function
+This function adds new files to the source control system.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 SCCRTN SccAdd(  
-   LPVOID    pvContext,  
-   HWND      hWnd,  
-   LONG      nFiles,  
-   LPCSTR*   lpFileNames,  
-   LPCSTR    lpComment,  
-   LONG*     pfOptions,  
-   LPCMDOPTS pvOptions  
+   LPVOID    pvContext,  
+   HWND      hWnd,  
+   LONG      nFiles,  
+   LPCSTR*   lpFileNames,  
+   LPCSTR    lpComment,  
+   LONG*     pfOptions,  
+   LPCMDOPTS pvOptions  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  pvContext  
- \[in\] Source Control\-Plug\-in Context\-Struktur.  
+ [in] The source control plug-in context structure.  
   
  hWnd  
- \[in\] Ein Handle für die IDE\-Fenster, das Quellcodeverwaltungs\-Plug\-in als übergeordnetes Element für alle Dialogfelder verwenden kann, die es bereitstellt.  
+ [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
   
  nFiles  
- \[in\] Anzahl der Dateien, die gemäß dem aktuellen Projekt hinzugefügt werden die `lpFileNames` Array.  
+ [in] Number of files selected to be added to the current project as given in the `lpFileNames` array.  
   
  lpFileNames  
- \[in\] Array von vollständig qualifizierten lokalen Namen der Dateien hinzugefügt werden.  
+ [in] Array of fully qualified local names of files to be added.  
   
  lpComment  
- \[in\] Der Kommentar, der auf alle hinzugefügten Dateien angewendet werden.  
+ [in] The comment to be applied to all of the files being added.  
   
  pfOptions  
- \[in\] Array von Befehlsflags, pro Datei angegeben.  
+ [in] Array of command flags, provided on a per-file basis.  
   
  pvOptions  
- \[in\] Quellcodeverwaltungs\-plug\-in spezifischen Optionen.  
+ [in] Source control plug-in-specific options.  
   
-## Rückgabewert  
- Datenquellen\-Steuerelement Plug\-in\-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
+## <a name="return-value"></a>Return Value  
+ The source control plug-in implementation of this function is expected to return one of the following values:  
   
-|Wert|Beschreibung|  
-|----------|------------------|  
-|SCC\_OK|Die Add\-Vorgang war erfolgreich.|  
-|SCC\_E\_FILEALREADYEXISTS|Die ausgewählte Datei ist bereits in einem Quellcodeverwaltungsprojekt.|  
-|SCC\_E\_TYPENOTSUPPORTED|Der Typ der Datei \(z. B. binäre\) wird vom Quellcode\-Verwaltungssystem nicht unterstützt.|  
-|SCC\_E\_OPNOTSUPPORTED|Dieser Vorgang wird von Quellcode\-Verwaltungssystem nicht unterstützt.|  
-|SCC\_E\_ACCESSFAILURE|Es wurde ein Problem, das Zugriff auf Quellcode\-Verwaltungssystem, möglicherweise aufgrund eines Netzwerk\-oder Konflikte. Eine Wiederholung wird empfohlen.|  
-|SCC\_E\_NOTAUTHORIZED|Der Benutzer ist nicht zulässig, um diesen Vorgang auszuführen.|  
-|SCC\_E\_NONSPECIFICERROR|Unspezifischen Ausfall. Fügen Sie nicht ausgeführt.|  
-|SCC\_I\_OPERATIONCANCELED|Der Vorgang wurde vor dem Abschluss abgebrochen.|  
-|SCC\_I\_RELOADFILE|Eine Datei oder ein Projekt muss neu geladen werden.|  
-|SCC\_E\_FILENOTEXIST|Lokaler Datei wurde nicht gefunden.|  
+|Value|Description|  
+|-----------|-----------------|  
+|SCC_OK|The add operation was successful.|  
+|SCC_E_FILEALREADYEXISTS|The selected file is already under source control.|  
+|SCC_E_TYPENOTSUPPORTED|The type of the file (for example, binary) is not supported by the source control system.|  
+|SCC_E_OPNOTSUPPORTED|The source control system does not support this operation.|  
+|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues. A retry is recommended.|  
+|SCC_E_NOTAUTHORIZED|The user is not allowed to perform this operation.|  
+|SCC_E_NONSPECIFICERROR|Nonspecific failure; add not performed.|  
+|SCC_I_OPERATIONCANCELED|The operation was cancelled before completion.|  
+|SCC_I_RELOADFILE|A file or project needs to be reloaded.|  
+|SCC_E_FILENOTEXIST|Local file was not found.|  
   
-## Hinweise  
- Die üblichen `fOptions` werden hier ersetzt durch ein Array `pfOptions`, mit einem `LONG` option Spezifikation pro Datei. Dies ist, da der Dateityp in der die Dateien variieren kann.  
+## <a name="remarks"></a>Remarks  
+ The usual `fOptions` are replaced here by an array, `pfOptions`, with one `LONG` option specification per file. This is because the file type may vary from file to file.  
   
 > [!NOTE]
->  Es ist unzulässig, beide geben `SCC_FILETYPE_TEXT` und `SCC_FILETYPE_BINARY` Optionen für die gleiche Datei, aber es ist keines von beiden angeben. Keine Einstellung entspricht der Einstellung `SCC_FILETYPE_AUTO`, in diesem Fall die Quellcode\-Plug\-in erkennt automatisch den Dateityp.  
+>  It is invalid to specify both `SCC_FILETYPE_TEXT` and `SCC_FILETYPE_BINARY` options for the same file, but it is valid to specify neither. Setting neither is the same as setting `SCC_FILETYPE_AUTO`, in which case the source control plug-in autodetects the file type.  
   
- Im folgenden finden Sie die Liste der Flags, die der `pfOptions` Array:  
+ Below is the list of flags used in the `pfOptions` array:  
   
-|Option|Wert|Bedeutung|  
-|------------|----------|---------------|  
-|SCC\_FILETYPE\_AUTO|0 x 00|Den Dateityp sollte das Quellcodeverwaltungs\-Plug\-in erkannt werden.|  
-|SCC\_FILETYPE\_TEXT|0 x 01|Gibt eine ASCII\-Textdatei an.|  
-|SCC\_FILETYPE\_BINARY|0 x 02|Gibt einen Dateityp als ASCII\-Text an.|  
-|SCC\_ADD\_STORELATEST|0 x 04|Speichert nur die letzte Kopie der Datei keine Deltas.|  
-|SCC\_FILETYPE\_TEXT\_ANSI|0 x 08|Wird die Datei als ANSI\-Text behandelt.|  
-|SCC\_FILETYPE\_UTF8|0 x 10|Behandelt die Datei als Unicode\-Text im UTF8\-Format.|  
-|SCC\_FILETYPE\_UTF16LE|0 x 20|Behandelt die Datei als Unicode\-Text im UTF16\-Little\-Endian\-Format.|  
-|SCC\_FILETYPE\_UTF16BE|0 x 40|Behandelt die Datei als Unicode\-Text in UTF16 Big Endian formatieren.|  
+|Option|Value|Meaning|  
+|------------|-----------|-------------|  
+|SCC_FILETYPE_AUTO|0x00|The source control plug-in should detect the file type.|  
+|SCC_FILETYPE_TEXT|0x01|Indicates an ASCII text file.|  
+|SCC_FILETYPE_BINARY|0x02|Indicates a file type other than ASCII text.|  
+|SCC_ADD_STORELATEST|0x04|Stores only the latest copy of the file, no deltas.|  
+|SCC_FILETYPE_TEXT_ANSI|0x08|Treats the file as ANSI text.|  
+|SCC_FILETYPE_UTF8|0x10|Treats the file as Unicode text in UTF8 format.|  
+|SCC_FILETYPE_UTF16LE|0x20|Treats the file as Unicode text in UTF16 Little Endian format.|  
+|SCC_FILETYPE_UTF16BE|0x40|Treats the file as Unicode text in UTF16 Big Endian format.|  
   
-## Siehe auch  
- [Source Control\-Plug\-in\-API\-Funktionen](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>See Also  
+ [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)

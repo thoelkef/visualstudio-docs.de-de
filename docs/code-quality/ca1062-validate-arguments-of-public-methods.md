@@ -1,123 +1,226 @@
 ---
-title: "CA1062: Argumente von &#246;ffentlichen Methoden validieren | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1062"
-  - "ValidateArgumentsOfPublicMethods"
-  - "Validate arguments of public methods"
-helpviewer_keywords: 
-  - "CA1062"
-  - "ValidateArgumentsOfPublicMethods"
+title: 'CA1062: Validate arguments of public methods | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1062
+- ValidateArgumentsOfPublicMethods
+- Validate arguments of public methods
+helpviewer_keywords:
+- CA1062
+- ValidateArgumentsOfPublicMethods
 ms.assetid: db1f69ca-68f7-477e-94f3-d135cc5dfcbc
 caps.latest.revision: 27
-caps.handback.revision: 27
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA1062: Argumente von &#246;ffentlichen Methoden validieren
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c474f50a5b972fe5831c82f158f92523f84acb83
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
+---
+# <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062: Validate arguments of public methods
 |||  
 |-|-|  
 |TypeName|ValidateArgumentsOfPublicMethods|  
 |CheckId|CA1062|  
-|Kategorie \(Category\)|Microsoft.Design|  
-|Unterbrechende Änderung|Nicht unterbrechend|  
+|Category|Microsoft.Design|  
+|Breaking Change|Non Breaking|  
   
-## Ursache  
- Eine extern sichtbare Methode dereferenziert eines der Verweisargumente, ohne zu überprüfen, ob das Argument `null` ist \(`Nothing` in Visual Basic\).  
+## <a name="cause"></a>Cause  
+ An externally visible method dereferences one of its reference arguments without verifying whether that argument is `null` (`Nothing` in Visual Basic).  
   
-## Regelbeschreibung  
- Alle an extern sichtbare Methoden übergebenen Verweisargumente sollten auf `null` überprüft werden.  Es sollte ggf. eine <xref:System.ArgumentNullException> ausgelöst werden, wenn das Argument `null` ist.  
+## <a name="rule-description"></a>Rule Description  
+ All reference arguments that are passed to externally visible methods should be checked against `null`. If appropriate, throw a <xref:System.ArgumentNullException> when the argument is `null`.  
   
- Wenn eine Methode von einer unbekannten Assembly aufgerufen werden kann, da sie als öffentlich oder geschützt deklariert wird, sollten Sie alle Parameter der Methode überprüfen.  Wenn die Methode entworfen wird, um nur von bekannten Assemblys aufgerufen zu werden, sollten Sie die Methode intern machen und das <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>\-Attribut für die Assembly übernehmen, die die Methode enthält.  
+ If a method can be called from an unknown assembly because it is declared public or protected, you should validate all parameters of the method. If the method is designed to be called only by known assemblies, you should make the method internal and apply the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute to the assembly that contains the method.  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu korrigieren, überprüfen Sie jedes Verweisargument auf `null`.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, validate each reference argument against `null`.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Sie können eine Warnung von dieser Regel unterdrücken, wenn Sie sicher sind, dass der dereferenzierte Parameter von einem anderen Methodenaufruf in der Funktion überprüft wurde.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ You can suppress a warning from this rule if you are sure that the dereferenced parameter has been validated by another method call in the function.  
   
-## Beispiel  
- Das folgende Beispiel zeigt eine Methode, die gegen die Regel verstößt, und eine Methode, die der Regel entspricht.  
+## <a name="example"></a>Example  
+ The following example shows a method that violates the rule and a method that satisfies the rule.  
   
- [!code-cs[FxCop.Design.ValidateArguments#1](../code-quality/codesnippet/CSharp/ca1062-validate-arguments-of-public-methods_1.cs)]
- [!code-cs[FxCop.Design.ValidateArguments#1](../code-quality/codesnippet/CSharp/ca1062-validate-arguments-of-public-methods_1.cs)]
- [!code-vb[FxCop.Design.ValidateArguments#1](../code-quality/codesnippet/VisualBasic/ca1062-validate-arguments-of-public-methods_1.vb)]  
+ ```csharp
+ using System;
+
+namespace DesignLibrary
+{
+    public class Test
+    {
+        // This method violates the rule.
+        public void DoNotValidate(string input)
+        {
+            if (input.Length != 0)
+            {
+                Console.WriteLine(input);
+            }
+        }
+
+        // This method satisfies the rule.
+        public void Validate(string input)
+        {
+            if (input == null)
+            {
+                throw new ArgumentNullException("input");
+            }
+            if (input.Length != 0)
+            {
+                Console.WriteLine(input);
+            }
+        }
+    }
+}
+```
+
+```vb
+Imports System
+
+Namespace DesignLibrary
+
+    Public Class Test
+
+        ' This method violates the rule.
+        Sub DoNotValidate(ByVal input As String)
+
+            If input.Length <> 0 Then
+                Console.WriteLine(input)
+            End If
+
+        End Sub
+
+        ' This method satisfies the rule.
+        Sub Validate(ByVal input As String)
+
+            If input Is Nothing Then
+                Throw New ArgumentNullException("input")
+            End If
+
+            If input.Length <> 0 Then
+                Console.WriteLine(input)
+            End If
+
+        End Sub
+
+    End Class
+
+End Namespace
+```
   
-## Beispiel  
- In [!INCLUDE[vsprvslong](../code-quality/includes/vsprvslong_md.md)] erkennt diese Regel nicht, dass Parameter an eine andere Methode übergeben werden, die die Validierung ausführt.  
+## <a name="example"></a>Example  
+ In [!INCLUDE[vsprvslong](../code-quality/includes/vsprvslong_md.md)], this rule does not detect that parameters are being passed to another method that does the validation.  
+
+```csharp
+public string Method(string value)
+{
+    EnsureNotNull(value);
+
+    // Fires incorrectly    
+    return value.ToString();
+}
+
+private void EnsureNotNull(string value)
+{
+    if (value == null)
+        throw new ArgumentNullException("value");
+}
+```
+
+```vb
+Public Function Method(ByVal value As String) As String
+    EnsureNotNull(value)
+
+    ' Fires incorrectly    
+    Return value.ToString()
+End Function
+
+Private Sub EnsureNotNull(ByVal value As String)
+    If value Is Nothing Then
+        Throw (New ArgumentNullException("value"))
+    End If
+End Sub
+```
+
+## <a name="example"></a>Example  
+ Copy constructors that populate field or properties that are reference objects can also violate the CA1062 rule. The violation occurs because the copied object that is passed to the copy constructor might be `null` (`Nothing` in Visual Basic). To resolve the violation, use a static (Shared in Visual Basic) method to check that the copied object is not null.  
   
- [!code-cs[FxCop.Design.ValidateArguments#2](../code-quality/codesnippet/CSharp/ca1062-validate-arguments-of-public-methods_2.cs)]
- [!code-cs[FxCop.Design.ValidateArguments#2](../code-quality/codesnippet/CSharp/ca1062-validate-arguments-of-public-methods_2.cs)]
- [!code-vb[FxCop.Design.ValidateArguments#2](../code-quality/codesnippet/VisualBasic/ca1062-validate-arguments-of-public-methods_2.vb)]  
+ In the following `Person` class example, the `other` object that is passed to the `Person` copy constructor might be `null`.  
   
-## Beispiel  
- Kopierkonstruktoren, die Felder oder Eigenschaften auffüllen, die Verweisobjekte sind, können auch gegen die CA1062\-Regel verstoßen.  Die Verletzung tritt auf, da das kopierte Objekt, das an den Kopierkonstruktor übergeben wird, `null` sein kann \(`Nothing` in Visual Basic\).  Um die Verletzung zu beheben, verwenden Sie eine statische Methode \(freigegeben in Visual Basic\), um zu überprüfen, ob das kopierte Objekt nicht NULL ist.  
-  
- Im folgenden `Person`\-Klassenbeispiel könnte das `other`\-Objekt, das an den `Person`\-Kopierkonstruktor übergeben wird `null` sein.  
-  
-```  
-  
+```csharp  
 public class Person  
 {  
-    public string Name { get; private set; }  
-    public int Age { get; private set; }  
+    public string Name { get; private set; }  
+    public int Age { get; private set; }  
   
-    public Person(string name, int age)  
-    {  
-        Name = name;  
-        Age = age;  
-    }  
+    public Person(string name, int age)  
+    {  
+        Name = name;  
+        Age = age;  
+    }  
   
-    // Copy constructor CA1062 fires because other is dereferenced  
-    // without being checked for null  
-    public Person(Person other)  
-        : this(other.Name, other.Age)  
-    {  
-    }  
+    // Copy constructor CA1062 fires because other is dereferenced  
+    // without being checked for null  
+    public Person(Person other)  
+        : this(other.Name, other.Age)  
+    {  
+    }  
 }  
+```
   
-```  
+## <a name="example"></a>Example  
+ In the following revised `Person` example, the `other` object that is passed to the copy constructor is first checked for null in the `PassThroughNonNull` method.  
   
-## Beispiel  
- Im folgenden überprüften `Person`\-Klassenbeispiel wird das `other`\-Objekt, das an den Kopierkonstruktor übergeben wird, zuerst auf Null in der `PassThroughNonNull`\-Methode überprüft.  
-  
-```  
+```csharp  
 public class Person  
 {  
-    public string Name { get; private set; }  
-    public int Age { get; private set; }  
+    public string Name { get; private set; }  
+    public int Age { get; private set; }  
   
-    public Person(string name, int age)  
-    {  
-        Name = name;  
-        Age = age;  
-    }  
+    public Person(string name, int age)  
+    {  
+        Name = name;  
+        Age = age;  
+    }  
   
-    // Copy constructor  
-    public Person(Person other)  
-        : this(PassThroughNonNull(other).Name,   
-          PassThroughNonNull(other).Age)  
-    {   
-    }  
+    // Copy constructor  
+    public Person(Person other)  
+        : this(PassThroughNonNull(other).Name,   
+          PassThroughNonNull(other).Age)  
+    {   
+    }  
   
-    // Null check method  
-    private static Person PassThroughNonNull(Person person)  
-    {  
-        if (person == null)  
-            throw new ArgumentNullException("person");  
-        return person;  
-    }  
+    // Null check method  
+    private static Person PassThroughNonNull(Person person)  
+    {  
+        if (person == null)  
+            throw new ArgumentNullException("person");  
+        return person;  
+    }  
 }  
   
 ```
