@@ -1,48 +1,65 @@
 ---
-title: "Speichern von Daten | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DataRow.RowState"
-  - "DataSet.GetChanges"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "Daten [Visual Studio], Speichern"
-  - "Daten [Visual Studio], Aktualisieren"
-  - "Datenbanken, Aktualisieren"
-  - "DBDirect-Methoden"
-  - "Speichern von Daten"
-  - "TableAdapter-DBDirect-Methoden"
-  - "TableAdapter.Update-Methode"
-  - "Aktualisieren von Daten"
-  - "Aktualisieren von Datenbanken"
+title: Saving Data | Microsoft Docs
+ms.custom: 
+ms.date: 10/19/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- DataRow.RowState
+- DataSet.GetChanges
+helpviewer_keywords:
+- DBDirect methods
+- updating data
+- data [Visual Studio], saving
+- TableAdapter DBDirect methods
+- databases, updating
+- TableAdapter.Update method
+- data [Visual Studio], updating
+- saving data
+- updating databases
 ms.assetid: 21d2b115-62e4-4ac9-a873-dcbb535b8af8
 caps.latest.revision: 13
-caps.handback.revision: 13
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
 robots: noindex,nofollow
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 07e2cb8fd1c808461cd6725a5c06e9ea67cd934f
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Speichern von Daten
-Unter dem Speichern von Daten versteht man die permanente Sicherung geänderter Daten im Datenmodell einer Anwendung im ursprünglichen Datenspeicher, bei dem es sich in der Regel um eine relationale Datenbank wie SQL Sever handelt.  
+# <a name="saving-data"></a>Saving Data
+Saving data is the process of persisting changed data in an application's data model back to the original data store, typically a relational database such as SQL Server.  
   
- Die Aktualisierung einer Datenquelle anhand eines Datenmodells umfasst normalerweise zwei Schritte.  Im ersten Schritt wird das Datenmodell mit neuen Informationen aktualisiert, z. B. mit neuen, geänderten oder gelöschten Datensätzen.  Im zweiten Schritt werden die Änderungen im Datenmodell wieder in der Datenbank gespeichert.  
+ Updating a data source by means of a data model is typically a two-step process. The first step is to update the data model with new information — new records, changed records, or deleted records. The second step is to save the changes in your data model back to the database.  
   
- In den folgenden Themen werden die Konzepte und Aufgaben im Zusammenhang mit dem Speichern von Daten beschrieben.  
+ The following topics describe the concepts and tasks associated with saving data.  
   
-## Verwandte Themen  
- [Speichern von Daten in Datasets](../data-tools/save-data-back-to-the-database.md)  
- Bietet eine Übersicht darüber, wie Änderungen in einem Dataset vorgenommen und Änderungsinformationen vom Dataset nachverfolgt werden, um diese Änderungen in einer Datenbank zu speichern.  
+## <a name="related-topics"></a>Related Topics  
+[Save data back to the database](../data-tools/save-data-back-to-the-database.md)  
+ Provides an overview of how changes are made in a dataset and how the dataset tracks information about changes in order to save those changes to a database.  
   
- [Speichern von Entitätsdaten](../data-tools/saving-entity-data.md)  
- Beschreibt, wie Änderungen in [ADO.NET Entity Framework](../Topic/ADO.NET%20Entity%20Framework.md)\-Anwendungen und [WCF Data Services 4.5](../Topic/WCF%20Data%20Services%204.5.md)\-Anwendungen gespeichert werden.
+[How to: Add, Modify, and Delete Entities (WCF Data Services)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)  
+Shows how to create, update, and delete entity data in a data service.  
+  
+[How to: Execute Data Service Queries (WCF Data Services)](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services)  
+Shows how to query a data service from a data service application.  
+

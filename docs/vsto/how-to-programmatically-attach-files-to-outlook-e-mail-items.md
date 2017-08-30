@@ -1,42 +1,46 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Anf&#252;gen von Dateien an Outlook-E-Mail-Elemente"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Anlagen [Office-Entwicklung in Visual Studio]"
-  - "E-Mail [Office-Entwicklung in Visual Studio], Anlagen"
-  - "E-Mail-Elemente [Office-Entwicklung in Visual Studio], Anlagen"
-  - "Outlook [Office-Entwicklung in Visual Studio], Anlagen"
+title: 'How to: Programmatically Attach Files to Outlook E-Mail Items | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Outlook [Office development in Visual Studio], attachments
+- e-mail [Office development in Visual Studio], attachments
+- mail items [Office development in Visual Studio], attachments
+- attachments [Office development in Visual Studio]
 ms.assetid: 9bccf6f9-3c63-4d23-8f44-f7a608a43613
 caps.latest.revision: 14
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 14
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 8d04f2e092e60c9c9f8d4380ceaa18c1f07ad777
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Gewusst wie: Programmgesteuertes Anf&#252;gen von Dateien an Outlook-E-Mail-Elemente
-  In diesem Beispiel wird eine Datei an ein neues E\-Mail\-Element angefügt und an Armando Pinto geschickt.  Dabei wird angenommen, dass als Empfänger eine Person mit dem Namen Armando Pinto existiert.  
+# <a name="how-to-programmatically-attach-files-to-outlook-e-mail-items"></a>How to: Programmatically Attach Files to Outlook E-Mail Items
+  This example attaches a file to a new mail item and sends it to Armando Pinto. The example assumes a person named Armando Pinto exists as the recipient.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-## Beispiel  
- [!code-csharp[Trin_Outlook_RL_AttachFiles#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Outlook_RL_AttachFiles/CS/thisaddin.cs#1)]
- [!code-vb[Trin_Outlook_RL_AttachFiles#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Outlook_RL_AttachFiles/VB/thisaddin.vb#1)]  
+## <a name="example"></a>Example  
+ [!code-cs[Trin_Outlook_RL_AttachFiles#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_AttachFiles/thisaddin.cs#1)] [!code-vb[Trin_Outlook_RL_AttachFiles#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_AttachFiles/thisaddin.vb#1)]  
   
-## Siehe auch  
- [Arbeiten mit E-Mail-Elementen](../vsto/working-with-mail-items.md)   
- [Gewusst wie: Programmgesteuertes Senden von E-Mails](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
- [Gewusst wie: Programmgesteuertes Speichern von Anlagen von Outlook-E-Mail-Elementen](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)   
- [Gewusst wie: Programmgesteuertes Erstellen von E-Mail-Elementen](../vsto/how-to-programmatically-create-an-e-mail-item.md)  
+## <a name="see-also"></a>See Also  
+ [Working with Mail Items](../vsto/working-with-mail-items.md)   
+ [How to: Programmatically Send E-Mail](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
+ [How to: Programmatically Save Attachments from Outlook E-Mail Items](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)   
+ [How to: Programmatically Create an E-Mail Item](../vsto/how-to-programmatically-create-an-e-mail-item.md)  
   
   
