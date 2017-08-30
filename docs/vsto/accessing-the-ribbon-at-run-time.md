@@ -1,69 +1,71 @@
 ---
-title: "Zugreifen auf die Multifunktionsleiste zur Laufzeit"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Globals-Klasse, Menüband"
-  - "Menüband [Office-Entwicklung in Visual Studio], Aufrufen"
-  - "RibbonManager-Klasse"
+title: Accessing the Ribbon at Run Time | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Globals class, Ribbon
+- Ribbon [Office development in Visual Studio], accessing
+- RibbonManager class
 ms.assetid: 8a7c7c6d-1a18-4d6b-98ee-e483d41f0cd8
 caps.latest.revision: 23
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 22
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 7b913c5d123598c05ba068193eb799aea5435570
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Zugreifen auf die Multifunktionsleiste zur Laufzeit
-  Sie können Code zum Einblenden, Ausblenden und Ändern des Menübands schreiben und Benutzern das Ausführen des Codes von Steuerelementen in einem benutzerdefinierten Aufgabenbereich, Aktionsbereich oder Outlook\-Formularbereich ermöglichen.  
+# <a name="accessing-the-ribbon-at-run-time"></a>Accessing the Ribbon at Run Time
+  You can write code to show, hide, and modify the Ribbon, and enable users to run the code from controls in a custom task pane, actions pane, or Outlook form region.  
   
- Sie können mit der `Globals`\-Klasse auf das Menüband zugreifen.  Bei Outlook\-Projekten können Sie auf die Menübänder zugreifen, die in einem bestimmten Outlook\-Inspektor\- oder Outlook\-Explorer\-Fenster angezeigt werden.  
+ You can access the Ribbon by using the `Globals` class. For Outlook projects, you can access the Ribbons that appear in a specific Outlook Inspector or Outlook Explorer window.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
-## Zugreifen auf das Menüband mithilfe der Globals\-Klasse  
- Sie können die `Globals`\-Klasse verwenden, um von einer beliebigen Stelle im Projekt auf das Menüband in einem Projekt auf Dokumentebene oder in einem VSTO\-Add\-In\-Projekt zuzugreifen.  
+## <a name="accessing-the-ribbon-by-using-the-globals-class"></a>Accessing the Ribbon by Using the Globals Class  
+ You can use the `Globals` class to access the Ribbon in a document-level project or VSTO Add-in project from anywhere in the project.  
   
- Weitere Informationen zur `Globals`\-Klasse finden Sie unter [Globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md).  
+ For more information about the `Globals` class, see [Global Access to Objects in Office Projects](../vsto/global-access-to-objects-in-office-projects.md).  
   
- Im folgenden Beispiel wird die`Globals`\-Klasse für den Zugriff auf ein benutzerdefiniertes Menüband mit der Bezeichnung `Ribbon1` und zum Festlegen des Texts verwendet, der in einem Kombinationsfeld im Menüband für `Hello World` angezeigt wird.  
+ The following example uses the `Globals` class to access a custom Ribbon named `Ribbon1` and set the text that appears on a combo box on the Ribbon to `Hello World`.  
   
- [!code-csharp[Trin_Outlook_FR_Access#4](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Outlook_FR_Access/CS/ThisAddIn.cs#4)]
- [!code-vb[Trin_Outlook_FR_Access#4](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Outlook_FR_Access/VB/ThisAddIn.vb#4)]  
+ [!code-vb[Trin_Outlook_FR_Access#4](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#4)] [!code-csharp[Trin_Outlook_FR_Access#4](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#4)]  
   
-## Zugreifen auf eine Auflistung von Menübändern, die in einem bestimmten Outlook\-Inspektor\-Fenster angezeigt werden  
- Sie können auf eine Auflistung von Menübändern zugreifen, die in *Inspektoren* von Outlook angezeigt werden.  Ein Inspektor ist ein Fenster, das in Outlook geöffnet wird, wenn Benutzer bestimmte Aufgaben ausführen, z. B. E\-Mails verfassen.  Um auf das Menüband eines Inspektor\-Fensters zuzugreifen, rufen Sie die `Ribbons`\-Eigenschaft der `Globals`\-Klasse auf und übergeben ein <xref:Microsoft.Office.Interop.Outlook.Inspector>\-Objekt, das den Inspektor darstellt.  
+## <a name="accessing-a-collection-of-ribbons-that-appear-in-a-specific-outlook-inspector-window"></a>Accessing a Collection of Ribbons That Appear in a Specific Outlook Inspector Window  
+ You can access a collection of Ribbons that appear in Outlook *Inspectors*. An Inspector is a window that opens in Outlook when users perform certain tasks, such as creating e-mail messages. To access the Ribbon of an Inspector window, call the `Ribbons` property of the `Globals` class and pass in an <xref:Microsoft.Office.Interop.Outlook.Inspector> object that represents the Inspector.  
   
- Im folgenden Beispiel wird die Menübandauflistung des Inspektors abgerufen, der gerade den Fokus besitzt.  In diesem Beispiel wird dann auf ein Menüband mit der Bezeichnung `Ribbon1` zugegriffen und der Text festgelegt, der in einem Kombinationsfeld im Menüband für `Hello World` angezeigt wird.  
+ The following example gets the Ribbon collection of the Inspector that currently has focus. This example then accesses a Ribbon named `Ribbon1` and sets the text that appears on a combo box on the Ribbon to `Hello World`.  
   
- [!code-csharp[Trin_Outlook_FR_Access#5](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Outlook_FR_Access/CS/ThisAddIn.cs#5)]
- [!code-vb[Trin_Outlook_FR_Access#5](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Outlook_FR_Access/VB/ThisAddIn.vb#5)]  
+ [!code-vb[Trin_Outlook_FR_Access#5](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#5)] [!code-csharp[Trin_Outlook_FR_Access#5](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#5)]  
   
-## Zugreifen auf eine Auflistung von Menübändern, die in einem bestimmten Outlook\-Explorer angezeigt werden  
- Sie können auf eine Auflistung von Menübändern zugreifen, die in einem Outlook\-*Explorer* angezeigt werden.  Ein Explorer ist die Haupt\-Benutzeroberfläche \(UI\) der Anwendung für eine Instanz von Outlook.  Um auf das Menüband eines Explorer\-Fensters zuzugreifen, rufen Sie die `Ribbons`\-Eigenschaft der `Globals`\-Klasse auf und übergeben ein <xref:Microsoft.Office.Interop.Outlook.Explorer>\-Objekt, das den Explorer darstellt.  
+## <a name="accessing-a-collection-of-ribbons-that-appear-for-a-specific-outlook-explorer"></a>Accessing a Collection of Ribbons That Appear for a Specific Outlook Explorer  
+ You can access a collection of Ribbons that appear in an Outlook *Explorer*. An Explorer is the main application user interface (UI) for an instance of Outlook. To access the Ribbon of an Explorer window, call the `Ribbons` property of the `Globals` class and pass in an <xref:Microsoft.Office.Interop.Outlook.Explorer> object that represents the Explorer.  
   
- Im folgenden Beispiel wird die Menübandauflistung des Explorers abgerufen, der gerade den Fokus besitzt.  In diesem Beispiel wird dann auf ein Menüband mit der Bezeichnung `Ribbon1` zugegriffen und der Text festgelegt, der in einem Kombinationsfeld im Menüband für `Hello World` angezeigt wird.  
+ The following example gets the Ribbon collection of the Explorer that currently has focus. This example then accesses a Ribbon named `Ribbon1` and sets the text that appears on a combo box on the Ribbon to `Hello World`.  
   
- [!code-csharp[Trin_Outlook_FR_Access#6](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Outlook_FR_Access/CS/ThisAddIn.cs#6)]
- [!code-vb[Trin_Outlook_FR_Access#6](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Outlook_FR_Access/VB/ThisAddIn.vb#6)]  
+ [!code-vb[Trin_Outlook_FR_Access#6](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#6)] [!code-csharp[Trin_Outlook_FR_Access#6](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#6)]  
   
-## Siehe auch  
- [Übersicht über die Multifunktionsleiste](../vsto/ribbon-overview.md)   
- [Multifunktionsleisten-Designer](../vsto/ribbon-designer.md)   
- [Multifunktionsleisten-XML](../vsto/ribbon-xml.md)   
- [Multifunktionsleisten-Objektmodellübersicht](../vsto/ribbon-object-model-overview.md)   
- [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit dem Multifunktionsleisten-Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [Exemplarische Vorgehensweise: Aktualisieren der Steuerelemente in einer Multifunktionsleiste zur Laufzeit](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
- [Anpassen einer Multifunktionsleiste in Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
- [Zugreifen auf einen Formularbereich zur Laufzeit](../vsto/accessing-a-form-region-at-run-time.md)  
+## <a name="see-also"></a>See Also  
+ [Ribbon Overview](../vsto/ribbon-overview.md)   
+ [Ribbon Designer](../vsto/ribbon-designer.md)   
+ [Ribbon XML](../vsto/ribbon-xml.md)   
+ [Ribbon Object Model Overview](../vsto/ribbon-object-model-overview.md)   
+ [Walkthrough: Creating a Custom Tab by Using the Ribbon Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
+ [Walkthrough: Updating the Controls on a Ribbon at Run Time](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
+ [Customizing a Ribbon for Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
+ [Accessing a Form Region at Run Time](../vsto/accessing-a-form-region-at-run-time.md)  
   
   

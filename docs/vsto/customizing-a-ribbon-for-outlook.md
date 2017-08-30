@@ -1,61 +1,65 @@
 ---
-title: "Anpassen einer Multifunktionsleiste in Outlook"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Benutzerdefiniertes Menüband, Informationen zum Anpassen der Multifunktionsleiste"
-  - "Anpassen des Menübands, Informationen zum Anpassen der Multifunktionsleiste"
-  - "Inspektoren [Office-Entwicklung in Visual Studio]"
-  - "Outlook [Office-Entwicklung in Visual Studio], Menüband"
-  - "Menüband [Office-Entwicklung in Visual Studio], Outlook"
+title: Customizing a Ribbon for Outlook | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Inspectors [Office development in Visual Studio]
+- Outlook [Office development in Visual Studio], Ribbon
+- customizing the Ribbon, about customizing the Ribbon
+- custom Ribbon, about customizing the Ribbon
+- Ribbon [Office development in Visual Studio], Outlook
 ms.assetid: 11d10e72-806d-4d5e-b080-139bd8633eaa
 caps.latest.revision: 42
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 41
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: d1c65aa089a66e24b57bab3bcec5e0cf835d0fd4
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Anpassen einer Multifunktionsleiste in Outlook
-  Beim Anpassen des Menübands in Microsoft Office Outlook müssen Sie berücksichtigen, wo das benutzerdefinierte Menüband in der Anwendung angezeigt wird.  Outlook zeigt das Menüband in der Benutzeroberfläche der Hauptanwendung und in Fenstern an, die geöffnet werden, wenn Benutzer bestimmte Aufgaben ausführen, z. B. eine E\-Mail erstellen.  Diese Anwendungsfenster werden als Inspektoren bezeichnet.  
+# <a name="customizing-a-ribbon-for-outlook"></a>Customizing a Ribbon for Outlook
+  When you customize the ribbon in Microsoft Office Outlook, you must consider where your custom ribbon will appear in the application. Outlook displays the ribbon in the main application user interface (UI) and in windows that open when users perform certain tasks, such as creating e-mail messages. These application windows are named inspectors.  
   
- ![Link zu Video](~/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie unter [Gewusst wie: Verwenden des Menüband\-Designers zum Anpassen des Menübands in Outlook](http://go.microsoft.com/fwlink/?LinkID=130312).  
+ ![link to video](../vsto/media/playvideo.gif "link to video") For a related video demonstration, see [How Do I: Use the Ribbon Designer to Customize the Ribbon in Outlook?](http://go.microsoft.com/fwlink/?LinkID=130312).  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-## Hinzufügen eines benutzerdefinierten Menübands zur Benutzeroberfläche der Hauptanwendung  
- Die Benutzeroberfläche der Hauptanwendung in Outlook ist der Explorer.  Bei Verwendung des Elements **Menüband \(Visueller Designer\)** können Sie dem Explorer ein Menüband hinzufügen, indem Sie im Fenster **Eigenschaften** auf die **RibbonType**\-Eigenschaft des Menübands klicken und dann **Microsoft.Outlook.Explorer** auswählen.  
+## <a name="adding-a-custom-ribbon-to-the-main-application-ui"></a>Adding a Custom Ribbon to the Main Application UI  
+ The main application UI in Outlook is called the Explorer. If you are using the **Ribbon (Visual Designer)** item, you can add a ribbon to the Explorer by clicking the **RibbonType** property of the ribbon in the **Properties** window, and then selecting **Microsoft.Outlook.Explorer**.  
   
-## Zuordnen eines Menübands zu einem Inspektor  
- Sie identifizieren den anzupassenden Inspektor durch Angabe des Menübandtyps, der der Nachrichtenklasse des Inspektors entspricht.  
+## <a name="assigning-a-ribbon-to-an-inspector"></a>Assigning a Ribbon to an Inspector  
+ You identify the inspector you want to customize by specifying the ribbon type that corresponds to the message class for the Inspector.  
   
- Bei Verwendung des Elements **Menüband \(Visueller Designer\)** klicken Sie auf die **RibbonType**\-Eigenschaft des Menübands im Fenster **Eigenschaften**, und wählen Sie dann mindestens eine Menüband\-ID aus der Werteliste aus.  
+ If you are using the **Ribbon (Visual Designer)** item, click the **RibbonType** property of the ribbon in the **Properties** window, and then select one or more ribbon IDs from the list of values.  
   
- Sie können einem Projekt mehrere Menübänder hinzufügen.  Wenn sich mehrere Menübänder eine Menüband\-ID teilen, überschreiben Sie die CreateRibbonExtensibilityObject\-Methode in der `ThisAddin`\-Klasse des Projekts, um anzugeben, welches Menüband zur Laufzeit angezeigt werden soll.  Weitere Informationen finden Sie unter [Übersicht über die Multifunktionsleiste](../vsto/ribbon-overview.md).  Weitere Informationen zu den einzelnen Menübandtypen finden Sie im technischen Artikel [Anpassen des Menübands in Outlook 2007](http://msdn.microsoft.com/de-de/946e97ea-f556-4e84-8fac-01cd9214e170).  
+ You can add more than one ribbon to a project. If more than one ribbon shares a ribbon ID, override the CreateRibbonExtensibilityObject method in the `ThisAddin` class of your project to specify which ribbon to display at run time. For more information, see [Ribbon Overview](../vsto/ribbon-overview.md). For more information about each ribbon type, see the technical article [Customizing the Ribbon in Outlook 2007](http://msdn.microsoft.com/en-us/946e97ea-f556-4e84-8fac-01cd9214e170).  
   
-## Angeben des Menübandtyps mithilfe der Menüband\-XML  
- Bei Verwendung des Elements **Menüband \(XML\)** überprüfen Sie den Wert des *ribbonID*\-Parameters in der <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A>\-Methode, und geben Sie das entsprechende Menüband zurück.  
+## <a name="specifying-the-ribbon-type-by-using-ribbon-xml"></a>Specifying the Ribbon Type by Using Ribbon XML  
+ If you are using the **Ribbon (XML)** item, check the value of the *ribbonID* parameter in the <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> method and return the appropriate ribbon.  
   
- Die <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A>\-Methode wird automatisch von Visual Studio in der Menüband\-Codedatei generiert.  Der *ribbonID*\-Parameter ist eine Zeichenfolge, die den Explorer oder einen bestimmten Inspektortyp identifiziert.  Eine vollständige Liste der möglichen Werte des *ribbonID*\-Parameters finden Sie im technischen Artikel [Anpassen des Menübands in Outlook 2007](http://msdn.microsoft.com/de-de/946e97ea-f556-4e84-8fac-01cd9214e170).  
+ The <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> method is automatically generated by Visual Studio in the ribbon code file. The *ribbonID* parameter is a string that identifies the Explorer or a specific type of inspector. For a complete list of the possible values of the *ribbonID* parameter, see the technical article [Customizing the Ribbon in Outlook 2007](http://msdn.microsoft.com/en-us/946e97ea-f556-4e84-8fac-01cd9214e170).  
   
- Im folgenden Codebeispiel wird veranschaulicht, wie ein benutzerdefiniertes Menüband nur im `Microsoft.Outlook.Mail.Compose`\-Inspektor angezeigt wird.  Dies ist der Inspektor, der geöffnet wird, wenn ein Benutzer eine neue E\-Mail erstellt.  Das anzuzeigende Menüband wird in der `GetResourceText()`\-Methode angegeben, die in der **Ribbon**\-Klasse generiert wird.  Weitere Informationen zur **Ribbon**\-Klasse finden Sie unter [Multifunktionsleisten-XML](../vsto/ribbon-xml.md).  
+ The following code example demonstrates how to display a custom ribbon only in the `Microsoft.Outlook.Mail.Compose` inspector. This is the inspector that opens when a user creates a new e-mail message. The ribbon to display is specified in the `GetResourceText()` method, which is generated in the **Ribbon** class. For more information about the **Ribbon** class, see [Ribbon XML](../vsto/ribbon-xml.md).  
   
- [!code-csharp[Trin_RibbonOutlookBasic#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_RibbonOutlookBasic/CS/Ribbon1.cs#1)]
- [!code-vb[Trin_RibbonOutlookBasic#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_RibbonOutlookBasic/VB/Ribbon1.vb#1)]  
+ [!code-csharp[Trin_RibbonOutlookBasic#1](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#1)] [!code-vb[Trin_RibbonOutlookBasic#1](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#1)]  
   
-## Siehe auch  
- [Zugreifen auf die Multifunktionsleiste zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md)   
- [Übersicht über die Multifunktionsleiste](../vsto/ribbon-overview.md)   
- [Multifunktionsleisten-Designer](../vsto/ribbon-designer.md)   
- [Multifunktionsleisten-XML](../vsto/ribbon-xml.md)  
+## <a name="see-also"></a>See Also  
+ [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
+ [Ribbon Overview](../vsto/ribbon-overview.md)   
+ [Ribbon Designer](../vsto/ribbon-designer.md)   
+ [Ribbon XML](../vsto/ribbon-xml.md)  
   
   

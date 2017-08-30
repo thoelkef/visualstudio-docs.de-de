@@ -1,139 +1,141 @@
 ---
-title: "Gewusst wie: Hinzuf&#252;gen von Bookmark-Steuerelementen zu Word-Dokumenten"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VST.Bookmark.Dialog"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Lesezeichen-Steuerelement, Hinzufügen zu Dokumenten"
-  - "Lesezeichen-Steuerelement erstellen (Dialogfeld)"
-  - "Steuerelemente [Office-Entwicklung in Visual Studio], Hinzufügen zu Dokumenten"
+title: 'How to: Add Bookmark Controls to Word Documents | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VST.Bookmark.Dialog
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Bookmark control, adding to documents
+- Create Bookmark Control dialog box
+- controls [Office development in Visual Studio], adding to documents
 ms.assetid: 2940704e-31f5-4486-854e-76298a9e2ee4
 caps.latest.revision: 52
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 51
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 01a10cbc43c02d8bd0fc18fed221b33a9efd34e7
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Gewusst wie: Hinzuf&#252;gen von Bookmark-Steuerelementen zu Word-Dokumenten
-  In Projekten auf Dokumentebene können Sie dem Dokument in Ihrem Projekt zur Entwurfs\- oder Laufzeit <xref:Microsoft.Office.Tools.Word.Bookmark>\-Steuerelemente hinzufügen. In VSTO\-Add\-In\-Projekten können Sie einem beliebigen geöffneten Dokument zur Laufzeit <xref:Microsoft.Office.Tools.Word.Bookmark>\-Steuerelemente hinzufügen.  
+# <a name="how-to-add-bookmark-controls-to-word-documents"></a>How to: Add Bookmark Controls to Word Documents
+  In document-level projects, you can add <xref:Microsoft.Office.Tools.Word.Bookmark> controls to the document in your project at design time or at run time. In VSTO Add-in projects, you can add <xref:Microsoft.Office.Tools.Word.Bookmark> controls to any open document at run time.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- In diesem Thema werden die folgenden Aufgaben beschrieben:  
+ This topic describes the following tasks:  
   
--   [Hinzufügen von Lesezeichen\-Steuerelementen zur Entwurfszeit](#designtime)  
+-   [Adding Bookmark controls at design time](#designtime)  
   
--   [Hinzufügen von Lesezeichen\-Steuerelementen zur Laufzeit in einem Projekt auf Dokumentebene](#runtimedoclevel)  
+-   [Adding Bookmark controls at run time in a document-level project](#runtimedoclevel)  
   
--   [Hinzufügen von Lesezeichen\-Steuerelementen zur Laufzeit in einem VSTO\-Add\-In\-Projekt](#runtimeaddin)  
+-   [Adding Bookmark controls at run time in an VSTO Add-in project](#runtimeaddin)  
   
- Weitere Informationen zu <xref:Microsoft.Office.Tools.Word.Bookmark>\-Steuerelementen finden Sie unter [Bookmark-Steuerelement](../vsto/bookmark-control.md).  
+ For more information about <xref:Microsoft.Office.Tools.Word.Bookmark> controls, see [Bookmark Control](../vsto/bookmark-control.md).  
   
-##  <a name="designtime"></a> Hinzufügen von Lesezeichen\-Steuerelementen zur Entwurfszeit  
- Es gibt mehrere Möglichkeiten, wie Sie einem Dokument in einem Projekt auf Dokumentebene zur Entwurfszeit <xref:Microsoft.Office.Tools.Word.Bookmark>\-Steuerelemente hinzufügen können:  
+##  <a name="designtime"></a> Adding Bookmark Controls at Design Time  
+ There are several ways to add <xref:Microsoft.Office.Tools.Word.Bookmark> controls to the document in a document-level project at design time:  
   
--   Die **Toolbox** von Visual Studio.  
+-   From the Visual Studio **Toolbox**.  
   
-     Sie können das <xref:Microsoft.Office.Tools.Word.Bookmark>\-Steuerelement aus der **Toolbox** in Ihr Dokument ziehen. Möglicherweise entscheiden Sie sich für diese Möglichkeit, falls Sie die **Toolbox** bereits zum Hinzufügen von Windows Forms\-Steuerelementen zu Ihrem Dokument verwenden.  
+     You can drag the <xref:Microsoft.Office.Tools.Word.Bookmark> control from the **Toolbox** to your document. You might want to choose this way if you are already using the **Toolbox** to add Windows Forms controls to your document.  
   
--   In Word.  
+-   From within Word.  
   
-     Sie können Ihrem Dokument das <xref:Microsoft.Office.Tools.Word.Bookmark>\-Steuerelement auf die gleiche Weise wie das systemeigene Lesezeichen hinzufügen. Der Vorteil dieser Vorgehensweise besteht darin, dass Sie das Steuerelement bei der Erstellung benennen können.  
+     You can add the <xref:Microsoft.Office.Tools.Word.Bookmark> control to your document in the same manner you would add the native bookmark. The advantage of adding it this way is that you can name your control at the time you create it.  
   
--   Im Fenster **Datenquellen**.  
+-   From the **Data Sources** window.  
   
-     Sie können das <xref:Microsoft.Office.Tools.Word.Bookmark>\-Steuerelement vom Fenster **Datenquellen** auf Ihr Dokument ziehen. Dies ist hilfreich, wenn Sie das Steuerelement gleichzeitig an Daten binden möchten. Sie können das Hoststeuerelement auf die gleiche Weise hinzufügen wie das Windows Forms\-Steuerelement aus dem Fenster **Datenquellen**. Weitere Informationen finden Sie unter [Datenbindung und Windows Forms](http://msdn.microsoft.com/library/419aac5e-819b-4aad-88b0-73a2f8c0bd27).  
+     You can drag the <xref:Microsoft.Office.Tools.Word.Bookmark> control to your document from the **Data Sources** window. This is useful when you want to bind the control to data at the same time. You can add the host control in the same way you would add a Windows Form control from the **Data Sources** window. For more information, see [Data Binding and Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-#### So fügen Sie einem Dokument ein Lesezeichen\-Steuerelement aus der Toolbox hinzu  
+#### <a name="to-add-a-bookmark-control-to-a-document-from-the-toolbox"></a>To add a Bookmark control to a document from the Toolbox  
   
-1.  Öffnen Sie die **Toolbox**, und klicken Sie auf die Registerkarte **Word\-Steuerelemente**.  
+1.  Open the **Toolbox** and click the **Word Controls** tab.  
   
-2.  Ziehen Sie ein <xref:Microsoft.Office.Tools.Word.Bookmark>\-Steuerelement auf das Dokument.  
+2.  Drag a <xref:Microsoft.Office.Tools.Word.Bookmark> control to the document.  
   
-     Das Dialogfeld **Lesezeichen hinzufügen** wird angezeigt.  
+     The **Add Bookmark** dialog box appears.  
   
-3.  Wählen Sie den Text oder andere Elemente aus, die Sie in das Lesezeichen einschließen möchten.  
+3.  Select the text or other items you want to include in the bookmark.  
   
-4.  Klicken Sie auf **OK**.  
+4.  Click **OK**.  
   
-     Wenn Sie nicht den Standardnamen für das Lesezeichen beibehalten möchten, können Sie den Namen im Fenster **Eigenschaften** ändern.  
+     If you do not want to keep the default bookmark name, you can change the name in the **Properties** window.  
   
-#### So fügen Sie einem Dokument in Word ein Lesezeichen\-Steuerelement hinzu  
+#### <a name="to-add-a-bookmark-control-to-a-document-in-word"></a>To add a Bookmark control to a document in Word  
   
-1.  Platzieren Sie den Cursor in dem Dokument, das im [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]\-Designer gehostet wird, an der Stelle, an der Sie das Lesezeichen hinzufügen möchten, oder wählen Sie den Text aus, der vom Lesezeichen eingeschlossen werden soll.  
+1.  In the document that is hosted in the [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer, put the cursor where you want to add the bookmark, or select the text that you want the bookmark to enclose.  
   
-2.  Klicken Sie auf der Registerkarte **Einfügen** des Menübands in der Gruppe **Links** auf die Schaltfläche **Lesezeichen**.  
+2.  On the **Insert** tab of the Ribbon, in the **Links** group, click the **Bookmark** button.  
   
-3.  Geben Sie im Dialogfeld **Lesezeichen** den Namen des neuen Lesezeichens ein, und klicken Sie auf **Hinzufügen**.  
+3.  In the **Bookmark** dialog box, type the name of the new bookmark, and click **Add**.  
   
-##  <a name="runtimedoclevel"></a> Hinzufügen von Lesezeichen\-Steuerelementen zur Laufzeit in einem Projekt auf Dokumentebene  
- Sie können einem Dokument zur Laufzeit <xref:Microsoft.Office.Tools.Word.Bookmark>\-Steuerelemente programmgesteuert hinzufügen, indem Sie die Methoden der <xref:Microsoft.Office.Tools.Word.Document.Controls%2A>\-Eigenschaft der `ThisDocument`\-Klasse im Projekt verwenden. Es gibt zwei Methodenüberladungen, mit denen Sie ein <xref:Microsoft.Office.Tools.Word.Bookmark>\-Steuerelement auf die folgenden Weisen hinzufügen können:  
+##  <a name="runtimedoclevel"></a> Adding Bookmark Controls at Run Time in a Document-Level Project  
+ You can add <xref:Microsoft.Office.Tools.Word.Bookmark> controls programmatically to your document at run time by using methods of the <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> property of the `ThisDocument` class in your project. There are two method overloads that you can use to add a <xref:Microsoft.Office.Tools.Word.Bookmark> control in the following ways:  
   
--   Fügen Sie ein <xref:Microsoft.Office.Tools.Word.Bookmark> in einem angegebenen Bereich hinzu.  
+-   Add a <xref:Microsoft.Office.Tools.Word.Bookmark> at a specified range.  
   
--   Fügen Sie ein <xref:Microsoft.Office.Tools.Word.Bookmark> hinzu, das auf einem systemeigenen Lesezeichen im Dokument basiert \(d. h. ein <xref:Microsoft.Office.Interop.Word.Bookmark>\).  
+-   Add a <xref:Microsoft.Office.Tools.Word.Bookmark> that is based on a native bookmark in the document (that is, a <xref:Microsoft.Office.Interop.Word.Bookmark>).  
   
- Dynamisch erstellte <xref:Microsoft.Office.Tools.Word.Bookmark>\-Steuerelemente werden nicht dauerhaft im Dokument gespeichert, wenn das Dokument geschlossen ist. Ein systemeigenes <xref:Microsoft.Office.Interop.Word.Bookmark> verbleibt jedoch im Dokument. Beim nächsten Öffnen des Dokuments können Sie ein auf einem systemeigenen Lesezeichen basierendes <xref:Microsoft.Office.Tools.Word.Bookmark> neu erstellen. Weitere Informationen finden Sie unter [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Dynamically created <xref:Microsoft.Office.Tools.Word.Bookmark> controls are not persisted in the document when the document is closed. However, a native <xref:Microsoft.Office.Interop.Word.Bookmark> remains in the document. You can recreate a <xref:Microsoft.Office.Tools.Word.Bookmark> that is based on a native bookmark the next time the document is opened. For more information, see [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
-#### So fügen Sie einem Dokument ein Lesezeichen\-Steuerelement programmgesteuert hinzu  
+#### <a name="to-add-a-bookmark-control-to-a-document-programmatically"></a>To add a Bookmark control to a document programmatically  
   
-1.  Fügen Sie im `ThisDocument_Startup`\-Ereignishandler Ihres Projekts den folgenden Code ein, um das <xref:Microsoft.Office.Tools.Word.Bookmark>\-Steuerelement dem ersten Absatz des Dokuments hinzuzufügen.  
+1.  In the `ThisDocument_Startup` event handler in your project, insert the following code to add the <xref:Microsoft.Office.Tools.Word.Bookmark> control to the first paragraph in the document.  
   
-     [!code-csharp[Trin_VstcoreHostControlsWord#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreHostControlsWord/CS/ThisDocument.cs#1)]
-     [!code-vb[Trin_VstcoreHostControlsWord#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreHostControlsWord/VB/ThisDocument.vb#1)]  
+     [!code-csharp[Trin_VstcoreHostControlsWord#1](../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs#1)]  [!code-vb[Trin_VstcoreHostControlsWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#1)]  
   
     > [!NOTE]  
-    >  Wenn Sie ein <xref:Microsoft.Office.Tools.Word.Bookmark>\-Steuerelement von einem vorhandenen <xref:Microsoft.Office.Interop.Word.Bookmark> erstellen möchten, verwenden Sie die <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A>\-Methode und übergeben das vorhandene <xref:Microsoft.Office.Interop.Word.Bookmark>.  
+    >  If you want create a <xref:Microsoft.Office.Tools.Word.Bookmark> control from an existing <xref:Microsoft.Office.Interop.Word.Bookmark>, use the <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> method and pass in the existing <xref:Microsoft.Office.Interop.Word.Bookmark>.  
   
-##  <a name="runtimeaddin"></a> Hinzufügen von Lesezeichen\-Steuerelementen zur Laufzeit in einem VSTO\-Add\-In\-Projekt  
- Sie können einem beliebigen geöffneten Dokument mithilfe eines VSTO\-Add\-Ins zur Laufzeit programmgesteuert <xref:Microsoft.Office.Tools.Word.Bookmark>\-Steuerelemente hinzufügen. Zu diesem Zweck generieren Sie ein <xref:Microsoft.Office.Tools.Word.Document>\-Hostelement, das auf einem geöffneten Dokument basiert, und verwenden dann die Methoden der <xref:Microsoft.Office.Tools.Word.Document.Controls%2A>\-Eigenschaft dieses Hostelements. Es gibt zwei Methodenüberladungen, mit denen Sie ein <xref:Microsoft.Office.Tools.Word.Bookmark>\-Steuerelement auf die folgenden Weisen hinzufügen können:  
+##  <a name="runtimeaddin"></a> Adding Bookmark Controls at Run Time in an VSTO Add-in project  
+ You can add <xref:Microsoft.Office.Tools.Word.Bookmark> controls programmatically to any open document at run time by using a VSTO Add-in. To do this, generate a <xref:Microsoft.Office.Tools.Word.Document> host item that is based on an open document, and then use methods of the <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> property of this host item. There are two method overloads that you can use to add a <xref:Microsoft.Office.Tools.Word.Bookmark> control in the following ways:  
   
--   Fügen Sie ein <xref:Microsoft.Office.Tools.Word.Bookmark> in einem angegebenen Bereich hinzu.  
+-   Add a <xref:Microsoft.Office.Tools.Word.Bookmark> at a specified range.  
   
--   Fügen Sie ein <xref:Microsoft.Office.Tools.Word.Bookmark> hinzu, das auf einem systemeigenen Lesezeichen im Dokument basiert \(d. h. ein <xref:Microsoft.Office.Interop.Word.Bookmark>\).  
+-   Add a <xref:Microsoft.Office.Tools.Word.Bookmark> that is based on a native bookmark in the document (that is, a <xref:Microsoft.Office.Interop.Word.Bookmark>).  
   
- Dynamisch erstellte <xref:Microsoft.Office.Tools.Word.Bookmark>\-Steuerelemente werden nicht dauerhaft im Dokument gespeichert, wenn das Dokument geschlossen ist. Ein systemeigenes <xref:Microsoft.Office.Interop.Word.Bookmark> verbleibt jedoch im Dokument. Beim nächsten Öffnen des Dokuments können Sie ein auf einem systemeigenen Lesezeichen basierendes <xref:Microsoft.Office.Tools.Word.Bookmark> neu erstellen. Weitere Informationen finden Sie unter [Beibehalten von dynamischen Steuerelementen in Office-Dokumenten](../vsto/persisting-dynamic-controls-in-office-documents.md).  
+ Dynamically created <xref:Microsoft.Office.Tools.Word.Bookmark> controls are not persisted in the document when the document is closed. However, a native <xref:Microsoft.Office.Interop.Word.Bookmark> remains in the document. You can recreate a <xref:Microsoft.Office.Tools.Word.Bookmark> that is based on a native bookmark the next time the document is opened. For more information, see [Persisting Dynamic Controls in Office Documents](../vsto/persisting-dynamic-controls-in-office-documents.md).  
   
- Weitere Informationen zum Generieren von Hostelementen in VSTO\-Add\-In\-Projekten finden Sie unter [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ For more information about generating host items in VSTO Add-in projects, see [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
-#### So fügen Sie ein Lesezeichen\-Steuerelement in einem angegebenen Bereich hinzu  
+#### <a name="to-add-a-bookmark-control-at-a-specified-range"></a>To add a Bookmark control at a specified range  
   
-1.  Verwenden Sie die <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A>\-Methode, und übergeben Sie den <xref:Microsoft.Office.Interop.Word.Range> an der Stelle, an der Sie das <xref:Microsoft.Office.Tools.Word.Bookmark> hinzufügen möchten.  
+1.  Use the <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> method, and pass in the <xref:Microsoft.Office.Interop.Word.Range> where you want to add the <xref:Microsoft.Office.Tools.Word.Bookmark>.  
   
-     Im folgenden Codebeispiel wird ein neues <xref:Microsoft.Office.Tools.Word.Bookmark> am Anfang des aktiven Dokuments hinzugefügt. Um dieses Beispiel zu verwenden, führen Sie den Code vom `ThisAddIn_Startup`\-Ereignishandler in einem Word\-VSTO\-Add\-In\-Projekt aus.  
+     The following code example adds a new <xref:Microsoft.Office.Tools.Word.Bookmark> to the beginning of the active document. To use this example, run the code from the `ThisAddIn_Startup` event handler in a Word VSTO Add-in project.  
   
-     [!code-csharp[Trin_WordAddInDynamicControls#4](../snippets/csharp/VS_Snippets_OfficeSP/Trin_WordAddInDynamicControls/CS/ThisAddIn.cs#4)]
-     [!code-vb[Trin_WordAddInDynamicControls#4](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_WordAddInDynamicControls/VB/ThisAddIn.vb#4)]  
+     [!code-vb[Trin_WordAddInDynamicControls#4](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#4)]  [!code-csharp[Trin_WordAddInDynamicControls#4](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#4)]  
   
-#### So fügen Sie ein Lesezeichen\-Steuerelement hinzu, das auf einem systemeigenen Lesezeichen\-Steuerelement basiert  
+#### <a name="to-add-a-bookmark-control-that-is-based-on-a-native-bookmark-control"></a>To add a Bookmark control that is based on a native Bookmark control  
   
-1.  Verwenden Sie die <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A>\-Methode, und übergeben Sie das vorhandene <xref:Microsoft.Office.Interop.Word.Bookmark>, das Sie als Grundlage für das neue <xref:Microsoft.Office.Tools.Word.Bookmark> verwenden möchten.  
+1.  Use the <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> method, and pass in the existing <xref:Microsoft.Office.Interop.Word.Bookmark> that you want to use as the basis for the new <xref:Microsoft.Office.Tools.Word.Bookmark>.  
   
-     Im folgenden Codebeispiel wird ein neues <xref:Microsoft.Office.Tools.Word.Bookmark> basierend auf dem ersten <xref:Microsoft.Office.Interop.Word.Bookmark> im aktiven Dokument erstellt. Um dieses Beispiel zu verwenden, führen Sie den Code vom `ThisAddIn_Startup`\-Ereignishandler in einem Word\-VSTO\-Add\-In\-Projekt aus.  
+     The following code example creates a new <xref:Microsoft.Office.Tools.Word.Bookmark> that is based on the first <xref:Microsoft.Office.Interop.Word.Bookmark> in the active document. To use this example, run the code from the `ThisAddIn_Startup` event handler in a Word VSTO Add-in project.  
   
-     [!code-csharp[Trin_WordAddInDynamicControls#5](../snippets/csharp/VS_Snippets_OfficeSP/Trin_WordAddInDynamicControls/CS/ThisAddIn.cs#5)]
-     [!code-vb[Trin_WordAddInDynamicControls#5](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_WordAddInDynamicControls/VB/ThisAddIn.vb#5)]  
+     [!code-vb[Trin_WordAddInDynamicControls#5](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#5)]  [!code-csharp[Trin_WordAddInDynamicControls#5](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#5)]  
   
-## Siehe auch  
- [Automatisieren von Word mithilfe von erweiterten Objekten](../vsto/automating-word-by-using-extended-objects.md)   
- [Übersicht über Hostelemente und Hoststeuerelemente](../vsto/host-items-and-host-controls-overview.md)   
- [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Programmgesteuerte Einschränkungen von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Programmieren von VSTO-Add-Ins](../vsto/programming-vsto-add-ins.md)   
- [Programmieren von Anpassungen auf Dokumentebene](../vsto/programming-document-level-customizations.md)   
- [Gewusst wie: Ändern der Größe von Bookmark-Steuerelementen](../vsto/how-to-resize-bookmark-controls.md)  
+## <a name="see-also"></a>See Also  
+ [Automating Word by Using Extended Objects](../vsto/automating-word-by-using-extended-objects.md)   
+ [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)   
+ [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
+ [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md)   
+ [How to: Resize Bookmark Controls](../vsto/how-to-resize-bookmark-controls.md)  
   
   

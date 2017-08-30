@@ -1,135 +1,140 @@
 ---
-title: "Exemplarische Vorgehensweise: Erstellen eines Projektelements &quot;Websitespalte&quot; mit einer Projektvorlage, Teil&#160;2"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Projektelemente [SharePoint-Entwicklung in Visual Studio], Erstellen von Vorlagen-Assistenten"
-  - "SharePoint-Projektelemente, Erstellen von Vorlagen-Assistenten"
-  - "SharePoint-Entwicklung in Visual Studio, Definieren neuer Projektelementtypen"
+title: 'Walkthrough: Creating a Site Column Project Item with a Project Template, Part 2 | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- project items [SharePoint development in Visual Studio], creating template wizards
+- SharePoint project items, creating template wizards
+- SharePoint development in Visual Studio, defining new project item types
 ms.assetid: da14207d-ac09-41ba-b387-c7f881b2a366
 caps.latest.revision: 54
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 53
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: cc33e878acb87deac73190e6b590b58f59ce8ffd
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Exemplarische Vorgehensweise: Erstellen eines Projektelements &quot;Websitespalte&quot; mit einer Projektvorlage, Teil&#160;2
-  Nachdem Sie einen benutzerdefinierten Typ des SharePoint\-Projektelements definiert und diesen einer Projektvorlage in Visual Studio zugeordnet haben, empfiehlt es sich, außerdem einen Assistenten für die Vorlage bereitzustellen.  Mithilfe des Assistenten können Sie Informationen von Benutzern sammeln, während diese Ihre Vorlage verwenden, um ein neues Projekt zu erstellen, das das Projektelement enthält.  Mit den gesammelten Informationen kann das Projektelement initialisiert werden.  
+# <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2"></a>Walkthrough: Creating a Site Column Project Item with a Project Template, Part 2
+  After you define a custom type of SharePoint project item and associate it with a project template in Visual Studio, you might also want to provide a wizard for the template. You can use the wizard to collect information from users when they use your template to create a new project that contains the project item. The information that you collect can be used to initialize the project item.  
   
- In dieser exemplarischen Vorgehensweise fügen Sie der Projektvorlage für Websitespalten einen Assistenten hinzu. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Projektelements "Websitespalte" mit einer Projektvorlage, Teil 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).  Beim Erstellen eines Projekts für Websitespalten werden vom Assistenten Informationen zur Websitespalte \(z. B. Basistyp und Gruppe, in der die Spalte in der Websitespaltengalerie aufgeführt werden soll\) gesammelt und der Datei Elements.xml im neuen Projekt hinzugefügt.  
+ In this walkthrough, you will add a wizard to the Site Column project template that is demonstrated in [Walkthrough: Creating a Site Column Project Item with a Project Template, Part 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md). When a user creates a Site Column project, the wizard collects information about the site column (such as its base type and group) and adds this information to the Elements.xml file in the new project.  
   
- Diese exemplarische Vorgehensweise enthält die folgenden Aufgaben:  
+ This walkthrough demonstrates the following tasks:  
   
--   Erstellen eines Assistenten für einen benutzerdefinierten SharePoint\-Projektelementtyp, dem eine Projektvorlage zugeordnet ist.  
+-   Creating a wizard for a custom SharePoint project item type that is associated with a project template.  
   
--   Definieren Sie eine benutzerdefinierte Assistenten\-Benutzeroberfläche, die den integrierten Visual Studio\-Assistenten für SharePoint\-Projekte ähnelt.  
+-   Defining a custom wizard UI that resembles the built-in wizards for SharePoint projects in Visual Studio.  
   
--   Erstellen zweier *SharePoint\-Befehle* für Aufrufe in die lokale SharePoint\-Website während der Assistent ausgeführt wird.  SharePoint\-Befehle sind Methoden, mit denen Visual Studio\-Erweiterungsassemblys APIs im SharePoint\-Serverobjektmodell aufrufen können.  Weitere Informationen finden Sie unter [Calling into the SharePoint Object Models](../sharepoint/calling-into-the-sharepoint-object-models.md).  
+-   Creating two *SharePoint commands* that are used to call into the local SharePoint site while the wizard is running. SharePoint commands are methods that can be used by Visual Studio extensions to call APIs in the SharePoint server object model. For more information, see [Calling into the SharePoint Object Models](../sharepoint/calling-into-the-sharepoint-object-models.md).  
   
--   Initialisieren von SharePoint\-Projektdateien mit im Assistenten gesammelten Daten mithilfe von ersetzbaren Parametern  
+-   Using replaceable parameters to initialize SharePoint project files with data that you collect in the wizard.  
   
--   Erstellen einer neuen SNK\-Datei in jeder neuen Projektinstanz für Websitespalten.  Mit dieser Datei wird die Projektausgabe signiert, sodass die SharePoint\-Projektmappenassembly im globalen Assemblycache bereitgestellt werden kann.  
+-   Creating a new .snk file in each new Site Column project instance. This file is used to sign the project output so that the SharePoint solution assembly can be deployed to the global assembly cache.  
   
--   Debuggen und Testen des Assistenten  
+-   Debugging and testing the wizard.  
   
 > [!NOTE]  
->  Ein Beispiel mit den abgeschlossenen Projekten, Code und weiteren Dateien für diese exemplarische Vorgehensweise können Sie unter folgender Adresse herunterladen:  [http:\/\/go.microsoft.com\/fwlink\/?LinkId\=191369](http://go.microsoft.com/fwlink/?LinkId=191369).  
+>  You can download a sample that contains the completed projects, code, and other files for this walkthrough from the following location:  [http://go.microsoft.com/fwlink/?LinkId=191369](http://go.microsoft.com/fwlink/?LinkId=191369).  
   
-## Vorbereitungsmaßnahmen  
- Um diese exemplarische Vorgehensweise ausführen zu können, müssen Sie zuerst die Projektmappe SiteColumnProjectItem erstellen, indem Sie die [Exemplarische Vorgehensweise: Erstellen eines Projektelements "Websitespalte" mit einer Projektvorlage, Teil 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md) durcharbeiten.  
+## <a name="prerequisites"></a>Prerequisites  
+ To perform this walkthrough, you must first create the SiteColumnProjectItem solution by completing [Walkthrough: Creating a Site Column Project Item with a Project Template, Part 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).  
   
- Zum Durchführen dieser exemplarischen Vorgehensweise werden auf dem Entwicklungscomputer außerdem die folgenden Komponenten benötigt:  
+ You also need the following components on the development computer to complete this walkthrough:  
   
--   Unterstützte Editionen von Windows, SharePoint und Visual Studio.  Weitere Informationen finden Sie unter [Anforderungen für die Entwicklung von SharePoint-Lösungen](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Supported editions of Windows, SharePoint, and Visual Studio. For more information, see [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
--   Das Visual Studio SDK.  Bei dieser exemplarischen Vorgehensweise wird mithilfe der **VSIX Project**\-Vorlage aus dem SDK ein VSIX\-Paket zum Bereitstellen des Projektelements erstellt.  Weitere Informationen finden Sie unter [Extending the SharePoint Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+-   The Visual Studio SDK. This walkthrough uses the **VSIX Project** template in the SDK to create a VSIX package to deploy the project item. For more information, see [Extending the SharePoint Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Kenntnisse der folgenden Konzepte sind hilfreich, wenn auch für die Durchführung der exemplarischen Vorgehensweise nicht erforderlich:  
+ Knowledge of the following concepts is helpful, but not required, to complete the walkthrough:  
   
--   Assistenten für Projekt\- und Elementvorlagen in Visual Studio.  Weitere Informationen finden Sie unter [Gewusst wie: Verwenden von Assistenten mit Projektvorlagen](~/extensibility/how-to-use-wizards-with-project-templates.md) und der <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>\-Schnittstelle.  
+-   Wizards for project and item templates in Visual Studio. For more information, see [How to: Use Wizards with Project Templates](../extensibility/how-to-use-wizards-with-project-templates.md) and the <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interface.  
   
--   Websitespalten in SharePoint  Weitere Informationen finden Sie unter [Spalten](http://go.microsoft.com/fwlink/?LinkId=183547).  
+-   Site columns in SharePoint. For more information, see [Columns](http://go.microsoft.com/fwlink/?LinkId=183547).  
   
-##  <a name="wizardcomponents"></a> Grundlegendes zu den Assistenten\-Komponenten  
- Der Assistent, der in dieser exemplarischen Vorgehensweise veranschaulicht wird, enthält mehrere Komponenten.  In der folgenden Tabelle werden diese Komponenten beschrieben.  
+##  <a name="wizardcomponents"></a> Understanding the Wizard Components  
+ The wizard that is demonstrated in this walkthrough contains several components. The following table describes these components.  
   
-|Komponente|Beschreibung|  
-|----------------|------------------|  
-|Implementieren des Assistenten|Mit der `SiteColumnProjectWizard`\-Klasse wird die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>\-Schnittstelle implementiert.  Diese Schnittstelle definiert die Methoden, die von Visual Studio aufgerufen werden, wenn der Assistent gestartet wird, wenn der Assistent beendet wird und gelegentlich, während der Assistent ausgeführt wird.|  
-|Benutzeroberfläche des Assistenten|Dies ist ein WPF\-basiertes Fenster mit dem Namen `WizardWindow`.  Dieses Fenster enthält zwei Benutzersteuerelemente: `Page2` und `Page1`.  Diese Benutzersteuerelemente stellen die beiden Seiten des Assistenten dar.<br /><br /> In dieser exemplarischen Vorgehensweise wird die Benutzeroberfläche des Assistenten von der <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A>\-Methode der diesbezüglichen Implementierung dargestellt.|  
-|Datenmodell des Assistenten|Hierbei handelt es sich um die Vermittlerklasse `SiteColumnWizardModel`, die eine Ebene zwischen der Benutzeroberfläche und der Implementierung des Assistenten bereitstellt.  In diesem Beispiel wird mithilfe der Klasse eine Abstrahierung zwischen der Implementierung und der Benutzeroberfläche des Assistenten vorgenommen. Diese Klasse ist keine erforderliche Komponenten von Assistenten.<br /><br /> In dieser exemplarischen Vorgehensweise wird von der Implementierung des Assistenten beim Anzeigen der entsprechenden Benutzeroberfläche `SiteColumnWizardModel`\-Objekt an das Fenster des Assistenten übergeben.  Die Methoden dieses Objekts dienen der Benutzeroberfläche des Assistenten zum Speichern der Werte von Steuerelementen in der Benutzeroberfläche sowie zum Durchführen von Aufgaben wie die Validierung der eingegebenen Website\-URL.  Nachdem der Assistent vom Benutzer beendet wurde, wird der abschließende Zustand der Benutzeroberfläche von der Implementierung des Assistenten mit dem `SiteColumnWizardModel`\-Objekt bestimmt.|  
-|Projektsignierungs\-Manager|Mit der Hilfsklasse `ProjectSigningManager` wird von der Implementierung des Assistenten eine neue key.snk\-Datei in jeder neuen Projektinstanz erstellt.|  
-|SharePoint\-Befehle|Mit diesen Methoden werden vom Datenmodell des Assistenten während der Ausführung des Assistenten Aufrufe in die lokale SharePoint\-Website durchgeführt.  Da SharePoint\-Befehle .NET Framework 3.5 zum Ziel haben müssen, werden diese Befehle in einer anderen Assembly als der übrige Code des Assistenten implementiert.|  
+|Component|Description|  
+|---------------|-----------------|  
+|Wizard implementation|This is a class, named `SiteColumnProjectWizard`, which implements the <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interface. This interface defines the methods that Visual Studio calls when the wizard starts and finishes, and at certain times while the wizard runs.|  
+|Wizard UI|This is a WPF-based window, named `WizardWindow`. This window includes two user controls, named `Page1` and `Page2`. These user controls represent the two pages of the wizard.<br /><br /> In this walkthrough, the <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> method of the wizard implementation displays the wizard UI.|  
+|Wizard data model|This is an intermediary class, named `SiteColumnWizardModel`, which provides a layer between the wizard UI and the wizard implementation. This sample uses this class to help abstract the wizard implementation and the wizard UI from each other; this class is not a required component of all wizards.<br /><br /> In this walkthrough, the wizard implementation passes a `SiteColumnWizardModel` object to the wizard window when it displays the wizard UI. The wizard UI uses methods of this object to save the values of controls in the UI, and to perform tasks like verifying that the input site URL is valid. After the user finishes the wizard, the wizard implementation uses the `SiteColumnWizardModel` object to determine the final state of the UI.|  
+|Project signing manager|This is a helper class, named `ProjectSigningManager`, which is used by the wizard implementation to create a new key.snk file in each new project instance.|  
+|SharePoint commands|These are methods that are used by the wizard data model to call into the local SharePoint site while the wizard is running. Because SharePoint commands must target the .NET Framework 3.5, these commands are implemented in a different assembly than the rest of the wizard code.|  
   
-## Erstellen der Projekte  
- Um diese exemplarische Vorgehensweise ausführen zu können, müssen Sie der Projektmappe SiteColumnProjectItem, die Sie in [Exemplarische Vorgehensweise: Erstellen eines Projektelements "Websitespalte" mit einer Projektvorlage, Teil 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md) erstellt haben, mehrere Projekte hinzufügen:  
+## <a name="creating-the-projects"></a>Creating the Projects  
+ To complete this walkthrough, you need to add several projects to the SiteColumnProjectItem solution that you created in [Walkthrough: Creating a Site Column Project Item with a Project Template, Part 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md):  
   
--   Ein WPF\-Projekt.  In diesem Projekt implementieren Sie die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>\-Schnittstelle, und Sie definieren die Assistenten\-Benutzeroberfläche.  
+-   A WPF project. You will implement the <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interface and define the wizard UI in this project.  
   
--   Ein Klassenbibliotheksprojekt, mit dem die benutzerdefinierten SharePoint\-Befehle definiert werden.  Für dieses Projekt muss .NET Framework 3.5 als Zielversion verwendet werden.  
+-   A class library project that defines the SharePoint commands. This project must target the.NET Framework 3.5.  
   
- Beginnen Sie mit der exemplarischen Vorgehensweise, indem Sie beide Projekte erstellen.  
+ Start the walkthrough by creating the projects.  
   
-#### So erstellen Sie das WPF\-Projekt  
+#### <a name="to-create-the-wpf-project"></a>To create the WPF project  
   
-1.  Öffnen Sie in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] die Projektmappe "SiteColumnProjectItem".  
+1.  In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], open the SiteColumnProjectItem solution.  
   
-2.  Öffnen Sie im **Projektmappen\-Explorer** das Kontextmenü des **SiteColumnProjectItem**\-Knotens, und wählen Sie **Hinzufügen** und dann **Neues Projekt** aus.  
+2.  In **Solution Explorer**, open the shortcut menu for the **SiteColumnProjectItem** solution node, choose **Add**, and then choose **New Project**.  
   
     > [!NOTE]  
-    >  In Visual Basic\-Projekten wird der Projektmappenknoten nur angezeigt, wenn das Kontrollkästchen **Projektmappe immer anzeigen** im [NIB: General, Projects and Solutions, Options Dialog Box](http://msdn.microsoft.com/de-de/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca) aktiviert ist.  
+    >  In Visual Basic projects, the solution node appears only when the **Always show solution** check box is selected in the [NIB: General, Projects and Solutions, Options Dialog Box](http://msdn.microsoft.com/en-us/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
   
-3.  Stellen Sie im oberen Bereich des Dialogfelds **Neues Projekt hinzufügen** sicher, dass in der Liste der .NET Framework\-Versionen **.NET Framework 4.5** ausgewählt ist.  
+3.  At the top of the **Add New Project** dialog box, make sure that **.NET Framework 4.5** is chosen in the list of versions of the .NET Framework.  
   
-4.  Erweitern Sie den **Visual C\#**\-Knoten oder den **Visual Basic**\-Knoten, und wählen Sie den **Windows**\-Knoten aus.  
+4.  Expand the **Visual C#** node or the **Visual Basic** node, and choose the **Windows** node.  
   
-5.  Wählen Sie aus der Liste der Projektvorlagen **WPF\-Benutzersteuerelementbibliothek** aus, nennen Sie das Projekt **ProjectTemplateWizard**, und wählen Sie dann die Schaltfläche **OK** aus.  
+5.  In the list of project templates, choose **WPF User Control Library**, name the project **ProjectTemplateWizard**, and then choose the **OK** button.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fügt das Projekt **ProjectTemplateWizard** der Projektmappe hinzu und öffnet die Standarddatei "UserControl1.xaml".  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adds the **ProjectTemplateWizard** project to the solution and opens the default UserControl1.xaml file.  
   
-6.  Löschen Sie die Datei UserControl1.xaml aus dem Projekt.  
+6.  Delete the UserControl1.xaml file from the project.  
   
-#### So erstellen Sie das SharePoint\-Befehlsprojekt  
+#### <a name="to-create-the-sharepoint-commands-project"></a>To create the SharePoint commands project  
   
-1.  Öffnen Sie im **Projektmappen\-Explorer** das Kontextmenü für den SiteColumnProjectItem\-Knoten, und wählen Sie **Hinzufügen** und dann **Neues Projekt**  aus.  
+1.  In **Solution Explorer**, open the shortcut menu for the SiteColumnProjectItem solution node, choose **Add**, and then choose **New Project**.  
   
-2.  Wählen Sie im oberen Bereich des Dialogfelds **Neues Projekt hinzufügen** in der Liste der .NET Framework\-Versionen **.NET Framework 3.5** aus.  
+2.  At the top of the **Add New Project** dialog box, choose **.NET Framework 3.5** in the list of versions of the .NET Framework.  
   
-3.  Erweitern Sie den **Visual C\#**\-Knoten oder den **Visual Basic**\-Knoten, und wählen Sie dann den **Windows**\-Knoten aus.  
+3.  Expand the **Visual C#** node or the  **Visual Basic** node, and then choose the **Windows** node.  
   
-4.  Wählen Sie die Projektvorlage **Klassenbibliothek** aus, nennen Sie das Projekt **SharePointCommands**, und wählen Sie dann die Schaltfläche **OK** aus.  
+4.  Choose the **Class Library** project template, name the project **SharePointCommands**, and then choose the **OK** button.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fügt das Projekt **SharePointCommands** zur Projektmappe hinzu und öffnet die Standardcodedatei "Class1".  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adds the **SharePointCommands** project to the solution and opens the default Class1 code file.  
   
-5.  Löschen Sie die Class1\-Codedatei aus dem Projekt.  
+5.  Delete the Class1 code file from the project.  
   
-## Konfigurieren der Projekte  
- Bevor Sie den Assistenten erstellen, müssen Sie den Projekten einige Codedateien und Assemblyverweise hinzufügen.  
+## <a name="configuring-the-projects"></a>Configuring the Projects  
+ Before you create the wizard, you must add some code files and assembly references to the projects.  
   
-#### So konfigurieren Sie ein Assistentenprojekt  
+#### <a name="to-configure-the-wizard-project"></a>To configure the wizard project  
   
-1.  Öffnen Sie im **Projektmappen\-Explorer** das Kontextmenü für den **ProjectTemplateWizard**\-Projektknoten, und wählen Sie dann **Eigenschaften** aus.  
+1.  In **Solution Explorer**, open the shortcut menu for the **ProjectTemplateWizard** project node, and then choose **Properties**.  
   
-2.  Wählen Sie im **Projekt\-Designer** für ein Visual C\#\-Projekt die Registerkarte **Anwendung** bzw. für ein Visual Basic\-Projekt die Registerkarte **Kompilieren** aus.  
+2.  In the **Project Designer**, choose the **Application** tab for a Visual C# project or the **Compile** tab for a Visual Basic project.  
   
-3.  Stellen Sie sicher, dass für das Zielframework .NET Framework 4.5 und nicht .NET Framework 4.5 Client Profile festgelegt ist.  
+3.  Make sure that the target framework is set to the .NET Framework 4.5, not the .NET Framework 4.5 Client Profile.  
   
-     Weitere Informationen finden Sie unter [Gewusst wie: .NET Framework-Version als Ziel](~/ide/how-to-target-a-version-of-the-dotnet-framework.md).  
+     For more information, see [How to: Target a Version of the .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
-4.  Öffnen Sie das Kontextmenü des Projekts **ProjectTemplateWizard**, und wählen Sie **Hinzufügen** und dann **Neues Element** aus.  
+4.  Open the shortcut menu for the **ProjectTemplateWizard** project, choose **Add**, and then choose **New Item**.  
   
-5.  Wählen Sie das **Fenster \(WPF\)**\-Element aus, nennen Sie das Element **WizardWindow**, und wählen Sie dann die Schaltfläche **Hinzufügen** aus.  
+5.  Choose the **Window (WPF)** item, name the item **WizardWindow**, and then choose the **Add** button.  
   
-6.  Fügen Sie dem Projekt zwei **Benutzersteuerelement \(WPF\)**\-Elemente hinzu, und nennen Sie diese **Page1** und **Page2**.  
+6.  Add two **User Control (WPF)** items to the project, and name them **Page1** and **Page2**.  
   
-7.  Fügen Sie dem Projekt vier Codedateien mit den folgenden Namen hinzu:  
+7.  Add four code files to the project, and give them the following names:  
   
     -   SiteColumnProjectWizard  
   
@@ -139,9 +144,9 @@ caps.handback.revision: 53
   
     -   CommandIds  
   
-8.  Öffnen Sie das Kontextmenü des **ProjectTemplateWizard**\-Projektknotens, und wählen Sie dann **Verweis hinzufügen** aus.  
+8.  Open the shortcut menu for the **ProjectTemplateWizard** project node, and then choose **Add Reference**.  
   
-9. Erweitern Sie den **Assemblys**\-Knoten, wählen Sie den **Erweiterungen**\-Knoten aus, und aktivieren Sie dann die Kontrollkästchen neben den folgenden Assemblys:  
+9. Expand the **Assemblies** node, choose the **Extensions** node, and then select the check boxes next to the following assemblies:  
   
     -   EnvDTE  
   
@@ -157,194 +162,186 @@ caps.handback.revision: 53
   
     -   Microsoft.VisualStudio.TemplateWizardInterface  
   
-10. Wählen Sie die Schaltfläche **OK** aus, um die Assemblys dem Projekt hinzuzufügen.  
+10. Choose the **OK** button to add the assemblies to the project.  
   
-11. Wählen Sie im **Projektmappen\-Explorer** im Ordner **Verweise** für das Projekt **ProjectTemplateWizard** die **EnvDTE**\-Assembly aus.  
+11. In **Solution Explorer**, under the **References** folder for the **ProjectTemplateWizard** project, choose **EnvDTE**.  
   
     > [!NOTE]  
-    >  In Visual Basic\-Projekten wird der Ordner **Verweise** nur angezeigt, wenn das Kontrollkästchen **Projektmappe immer anzeigen** in [NIB: General, Projects and Solutions, Options Dialog Box](http://msdn.microsoft.com/de-de/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca) aktiviert ist.  
+    >  In Visual Basic projects, the **References** folder appears only when the **Always show solution** check box is selected in the [NIB: General, Projects and Solutions, Options Dialog Box](http://msdn.microsoft.com/en-us/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
   
-12. Ändern Sie im Fenster **Eigenschaften** den Wert der Eigenschaft **Interoptypen einbetten** in **False**.  
+12. In the **Properties** window, change the value of the **Embed Interop Types** property to **False**.  
   
-13. Wenn Sie ein Visual Basic\-Projekt entwickeln, importieren Sie mit dem **Projekt\-Designer** den ProjectTemplateWizard\-Namespace in das Projekt.  
+13. If you're developing a Visual Basic project, import the ProjectTemplateWizard namespace into your project by using the **Project Designer**.  
   
-     Weitere Informationen finden Sie unter [Gewusst wie: Hinzufügen oder Entfernen von importierten Namespaces &#40;Visual Basic&#41;](~/ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
+     For more information, see [How to: Add or Remove Imported Namespaces &#40;Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
   
-#### So konfigurieren Sie das SharePointCommands\-Projekt  
+#### <a name="to-configure-the-sharepointcommands-project"></a>To configure the SharePointCommands project  
   
-1.  Wählen Sie im **Projektmappen\-Explorer** den **SharePointCommands**\-Projektknoten aus.  
+1.  In **Solution Explorer**, choose the **SharePointCommands** project node.  
   
-2.  Wählen Sie in der Menüleiste **Projekt** und dann **Vorhandenes Element hinzufügen** aus.  
+2.  On the menu bar, choose **Project**,  **Add Existing Item**.  
   
-3.  Wechseln Sie im Dialogfeld **Vorhandenes Element hinzufügen** zu dem Ordner, der die Codedateien für das Projekt "ProjectTemplateWizard" enthält, und wählen Sie dann die Codedatei **CommandIds** aus.  
+3.  In the **Add Existing Item** dialog box, browse to the folder that contains the code files for the ProjectTemplateWizard project, and then choose the **CommandIds** code file.  
   
-4.  Wählen Sie den Pfeil neben der Schaltfläche **Hinzufügen** aus. Wählen Sie anschließend im daraufhin angezeigten Menü die Option **Als Link hinzufügen** aus.  
+4.  Choose the arrow next to the **Add** button, and then choose the **Add As Link** option on the menu that appears.  
   
-     Die Codedatei wird dem Projekt **SharePointCommands** von [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] als Link hinzugefügt.  Die Codedatei befindet sich im Projekt **ProjectTemplateWizard**, der darin enthaltene Code wird jedoch auch im Projekt **SharePointCommands** kompiliert.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adds the code file to the **SharePointCommands** project as a link. The code file is located in the **ProjectTemplateWizard** project, but the code in the file is also compiled in the **SharePointCommands** project.  
   
-5.  Fügen Sie im Projekt **SharePointCommands** eine weitere Codedatei mit dem Namen "Commands" hinzu.  
+5.  In the **SharePointCommands** project, add another code file that's named Commands.  
   
-6.  Wählen Sie das Projekt "SharePointCommands" und anschließend in der Menüleiste **Projekt** sowie **Verweis hinzufügen** aus.  
+6.  Choose the SharePointCommands project, and then, on the menu bar, choose **Project**, **Add Reference**.  
   
-7.  Erweitern Sie den **Assemblys**\-Knoten, wählen Sie den **Erweiterungen**\-Knoten aus, und aktivieren Sie dann die Kontrollkästchen neben den folgenden Assemblys:  
+7.  Expand the **Assemblies** node, choose the **Extensions** node, and then select the check boxes next to the following assemblies:  
   
     -   Microsoft.SharePoint  
   
     -   Microsoft.VisualStudio.SharePoint.Commands  
   
-8.  Wählen Sie die Schaltfläche **OK** aus, um die Assemblys dem Projekt hinzuzufügen.  
+8.  Choose the **OK** button to add the assemblies to the project.  
   
-## Erstellen von Assistentenmodellen, Signatur\-Managern und SharePoint\-Befehls\-IDs  
- Fügen Sie dem Projekt ProjectTemplateWizard Code hinzu, um die folgenden Komponenten im Beispiel zu implementieren:  
+## <a name="creating-the-wizard-model-signing-manager-and-sharepoint-command-ids"></a>Creating the Wizard Model, Signing Manager, and SharePoint Command IDs  
+ Add code to the ProjectTemplateWizard project to implement the following components in the sample:  
   
--   Die SharePoint\-Befehls\-IDs.  Durch diese Zeichenfolgen werden die vom Assistenten verwendeten SharePoint\-Befehle identifiziert.  Im weiteren Verlauf dieser exemplarischen Vorgehensweise fügen Sie Code zum Projekt "SharePointCommands" hinzu, um die Befehle zu implementieren.  
+-   The SharePoint command IDs. These strings identify the SharePoint commands that the wizard uses. Later in this walkthrough, you'll add code to the SharePointCommands project to implement the commands.  
   
--   Das Datenmodell des Assistenten.  
+-   The wizard data model.  
   
--   Der Signatur\-Manager für Projekte.  
+-   The project signing manager.  
   
- Weitere Informationen zu diesen Komponenten finden Sie unter [Grundlegendes zu den Assistenten\-Komponenten](#wizardcomponents).  
+ For more information about these components, see [Understanding the Wizard Components](#wizardcomponents).  
   
-#### So definieren Sie die SharePoint\-Befehls\-IDs  
+#### <a name="to-define-the-sharepoint-command-ids"></a>To define the SharePoint command IDs  
   
-1.  Öffnen Sie im Projekt "ProjectTemplateWizard" die Codedatei "CommandIds", und ersetzen Sie den gesamten Inhalt dieser Datei durch den folgenden Code.  
+1.  In the ProjectTemplateWizard project, open the CommandIds code file, and then replace the entire contents of this file with the following code.  
   
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#5](../snippets/csharp/VS_Snippets_OfficeSP/spextensibility.projectitem.sitecolumn/cs/projecttemplatewizard/commandids.cs#5)]
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#5](../snippets/visualbasic/VS_Snippets_OfficeSP/spextensibility.projectitem.sitecolumn/vb/projecttemplatewizard/commandids.vb#5)]  
+     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#5](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/commandids.cs#5)]  [!code-vb[SPExtensibility.ProjectItem.SiteColumn#5](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/commandids.vb#5)]  
   
-#### So erstellen Sie das Assistentenmodell  
+#### <a name="to-create-the-wizard-model"></a>To create the wizard model  
   
-1.  Öffnen Sie die Codedatei "SiteColumnWizardModel", und ersetzen Sie den gesamten Inhalt dieser Datei durch den folgenden Code.  
+1.  Open the SiteColumnWizardModel code file, and replace the entire contents of this file with the following code.  
   
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#6](../snippets/csharp/VS_Snippets_OfficeSP/spextensibility.projectitem.sitecolumn/cs/projecttemplatewizard/sitecolumnwizardmodel.cs#6)]
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#6](../snippets/visualbasic/VS_Snippets_OfficeSP/spextensibility.projectitem.sitecolumn/vb/projecttemplatewizard/sitecolumnwizardmodel.vb#6)]  
+     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#6](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/sitecolumnwizardmodel.vb#6)]  [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#6](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/sitecolumnwizardmodel.cs#6)]  
   
-#### So erstellen Sie den Signatur\-Manager für Projekte  
+#### <a name="to-create-the-project-signing-manager"></a>To create the project signing manager  
   
-1.  Öffnen Sie die Codedatei "ProjectSigningManager", und ersetzen Sie dann den gesamten Inhalt dieser Datei durch den folgenden Code.  
+1.  Open the ProjectSigningManager code file, and then replace the entire contents of this file with the following code.  
   
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#8](../snippets/csharp/VS_Snippets_OfficeSP/spextensibility.projectitem.sitecolumn/cs/projecttemplatewizard/projectsigningmanager.cs#8)]
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#8](../snippets/visualbasic/VS_Snippets_OfficeSP/spextensibility.projectitem.sitecolumn/vb/projecttemplatewizard/projectsigningmanager.vb#8)]  
+     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#8](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/projectsigningmanager.vb#8)]  [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#8](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/projectsigningmanager.cs#8)]  
   
-## Erstellen der Assistenten\-Benutzeroberfläche  
- Fügen Sie XAML hinzu, um die Benutzeroberfläche des Fensters für den Assistenten zu definieren, sowie die beiden Benutzersteuerelemente, die die Benutzeroberfläche für die Seiten des Assistenten bereitstellen, und fügen Sie Code hinzu, um das Verhalten des Fensters und der Benutzersteuerelemente zu definieren.  Der erstellte Assistent ähnelt dem integrierten Assistenten für SharePoint\-Projekte in Visual Studio.  
+## <a name="creating-the-wizard-ui"></a>Creating the Wizard UI  
+ Add XAML to define the UI of the wizard window and the two user controls that provide the UI for the wizard pages, and add code to define the behavior of the window and user controls. The wizard that you create resembles the built-in wizard for SharePoint projects in Visual Studio.  
   
 > [!NOTE]  
->  In den folgenden Schritten treten mehrere Compilerfehler im Projekt auf, nachdem Sie diesem XAML oder Code hinzugefügt haben.  Diese Fehler werden durch Code behoben, den Sie in späteren Schritten hinzufügen.  
+>  In the following steps, your project will have some compile errors after you add XAML or code to your project. These errors will go away when you add code in later steps.  
   
-#### So erstellen Sie die Benutzeroberfläche für das Fenster des Assistenten  
+#### <a name="to-create-the-wizard-window-ui"></a>To create the wizard window UI  
   
-1.  Öffnen Sie im Projekt "ProjectTemplateWizard" das Kontextmenü der Datei "WizardWindow.xaml", und wählen Sie dann **Öffnen** aus, um das Fenster im Designer anzuzeigen.  
+1.  In the ProjectTemplateWizard project, open the shortcut menu for the WizardWindow.xaml file, and then choose **Open** to open the window in the designer.  
   
-2.  Ersetzen Sie in der XAML\-Ansicht des Designers das aktuelle XAML durch das folgende XAML.  Mit dem XAML wird eine Benutzeroberfläche einschließlich einer Überschrift, einem <xref:System.Windows.Controls.Grid> mit den Seiten des Assistenten sowie Navigationsschaltflächen unten im Fenster definiert.  
+2.  In the XAML view of the designer, replace the current XAML with the following XAML. The XAML defines a UI that includes a heading, a <xref:System.Windows.Controls.Grid> that contains the wizard pages, and navigation buttons at the bottom of the window.  
   
-     [!code-xml[SPExtensibility.ProjectItem.SiteColumn#10](../snippets/csharp/VS_Snippets_OfficeSP/spextensibility.projectitem.sitecolumn/cs/projecttemplatewizard/wizardwindow.xaml#10)]  
+     [!code-xml[SPExtensibility.ProjectItem.SiteColumn#10](../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml#10)]  
   
     > [!NOTE]  
-    >  Das mit dieser XAML erstellte Fenster wird von der <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>\-Basisklasse abgeleitet.  Wenn Sie Visual Studio ein benutzerdefiniertes WPF\-Dialogfeld hinzufügen, wird empfohlen, das Dialogfeld von dieser Klasse abzuleiten, um ein einheitliches Aussehen mit anderen Dialogfeldern von Visual Studio sicherzustellen und Probleme mit modalen Dialogfeldern zu vermeiden, die andernfalls auftreten können.  Weitere Informationen finden Sie unter [Erstellen und Verwalten von modalen Dialogfeldern](../extensibility/creating-and-managing-modal-dialog-boxes.md).  
+    >  The window that's created in this XAML is derived from the <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> base class. When you add a custom WPF dialog box to Visual Studio, we recommend that you derive your dialog box from this class to have consistent styling with other Visual Studio dialog boxes and to avoid modal dialog issues that might otherwise occur. For more information, see [Creating and Managing Modal Dialog Boxes](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).  
   
-3.  Wenn Sie ein Visual Basic\-Projekt entwickeln, entfernen Sie den `ProjectTemplateWizard`\-Namespace aus dem `WizardWindow`\-Klassennamen im `x:Class`\-Attribut des `Window`\-Elements.  Dieses Element befindet sich in der ersten XAML\-Zeile.  Anschließend sollte die erste Zeile wie im folgenden Beispiel dargestellt lauten.  
+3.  If you're developing a Visual Basic project, remove the `ProjectTemplateWizard` namespace from the `WizardWindow` class name in the `x:Class` attribute of the `Window` element. This element is in the first line of the XAML. When you're done, the first line should look like the following example.  
   
     ```  
     <Window x:Class="WizardWindow"  
     ```  
   
-4.  Öffnen Sie die CodeBehind\-Datei für die Datei WizardWindow.xaml.  
+4.  Open the code-behind file for the WizardWindow.xaml file.  
   
-5.  Ersetzen Sie den Inhalt dieser Datei mit Ausnahme der `using`\-Deklarationen am Dateianfang durch den folgenden Code.  
+5.  Replace the contents of this file, except for the `using` declarations at the top of the file, with the following code.  
   
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#4](../snippets/csharp/VS_Snippets_OfficeSP/spextensibility.projectitem.sitecolumn/cs/projecttemplatewizard/wizardwindow.xaml.cs#4)]
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#4](../snippets/visualbasic/VS_Snippets_OfficeSP/spextensibility.projectitem.sitecolumn/vb/projecttemplatewizard/wizardwindow.xaml.vb#4)]  
+     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#4](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml.vb#4)]  [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#4](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml.cs#4)]  
   
-#### So erstellen Sie die Benutzeroberfläche für die erste Seite des Assistenten  
+#### <a name="to-create-the-first-wizard-page-ui"></a>To create the first wizard page UI  
   
-1.  Öffnen Sie im Projekt "ProjectTemplateWizard" das Kontextmenü der Datei "Page1.xaml", und wählen Sie dann **Öffnen** aus, um das Benutzersteuerelement im Designer anzuzeigen.  
+1.  In the ProjectTemplateWizard project, open the shortcut menu for the Page1.xaml file, and then choose **Open** to open the user control in the designer.  
   
-2.  Ersetzen Sie in der XAML\-Ansicht des Designers das aktuelle XAML durch das folgende XAML.  Vom XAML wird eine Benutzeroberfläche mit einem Textfeld definiert, in dem Benutzer die URL der lokalen Websites eingeben können, die sie zum Debuggen verwenden möchten.  Die Benutzeroberfläche weist zudem Optionsfelder auf, mit denen Benutzer angeben können, ob es sich um ein Sandkastenprojekt handelt.  
+2.  In the XAML view of the designer, replace the current XAML with the following XAML. The XAML defines a UI that includes a text box where users can enter the URL of the local sites that they want to use for debugging. The UI also includes option buttons with which users can specify whether the project is sandboxed.  
   
-     [!code-xml[SPExtensibility.ProjectItem.SiteColumn#11](../snippets/csharp/VS_Snippets_OfficeSP/spextensibility.projectitem.sitecolumn/cs/projecttemplatewizard/page1.xaml#11)]  
+     [!code-xml[SPExtensibility.ProjectItem.SiteColumn#11](../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/page1.xaml#11)]  
   
-3.  Wenn Sie ein Visual Basic\-Projekt entwickeln, entfernen Sie den `ProjectTemplateWizard`\-Namespace aus dem `Page1`\-Klassennamen im `x:Class`\-Attribut des `UserControl`\-Elements.  Dies erfolgt in der ersten Zeile des XAML.  Anschließend sollte die erste Zeile wie folgt aussehen.  
+3.  If you are developing a Visual Basic project, remove the `ProjectTemplateWizard` namespace from the `Page1` class name in the `x:Class` attribute of the `UserControl` element. This is in the first line of the XAML. When you are done, the first line should look like the following.  
   
     ```  
     <UserControl x:Class="Page1"  
     ```  
   
-4.  Ersetzen Sie den Inhalt der Datei "Page1.xaml" mit Ausnahme der `using`\-Deklarationen am Dateianfang durch den folgenden Code.  
+4.  Replace the contents of the Page1.xaml file, except for the `using` declarations at the top of the file, with the following code.  
   
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#2](../snippets/csharp/VS_Snippets_OfficeSP/spextensibility.projectitem.sitecolumn/cs/projecttemplatewizard/page1.xaml.cs#2)]
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#2](../snippets/visualbasic/VS_Snippets_OfficeSP/spextensibility.projectitem.sitecolumn/vb/projecttemplatewizard/page1.xaml.vb#2)]  
+     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#2](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/page1.xaml.vb#2)]  [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#2](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/page1.xaml.cs#2)]  
   
-#### So erstellen Sie die Benutzeroberfläche für die zweite Seite des Assistenten  
+#### <a name="to-create-the-second-wizard-page-ui"></a>To create the second wizard page UI  
   
-1.  Öffnen Sie im Projekt "ProjectTemplateWizard" das Kontextmenü der Datei "Page2.xaml", und wählen Sie dann **Öffnen** aus.  
+1.  In the ProjectTemplateWizard project, open the shortcut menu for the Page2.xaml file, and then choose **Open**.  
   
-     Das Benutzersteuerelement wird im Designer geöffnet.  
+     The user control opens in the designer.  
   
-2.  Ersetzen Sie in der XAML\-Ansicht das aktuelle durch folgendes XAML.  Mit dem XAML wird eine Benutzeroberfläche einschließlich einer Dropdownliste zum Auswählen des Basistyps der Websitespalte, eines Kombinationsfelds zum Angeben der integrierten oder benutzerdefinierten Gruppe, unter der die Websitespalte im Katalog angezeigt werden soll, sowie eines Textfelds zum Angeben des Namens der Websitespalte definiert.  
+2.  In the XAML view, replace the current XAML with the following XAML. The XAML defines a UI that includes a drop-down list for choosing the base type of the site column, a combo box for specifying a built-in or custom group under which to display the site column in the gallery, and a text box for specifying the name of the site column.  
   
-     [!code-xml[SPExtensibility.ProjectItem.SiteColumn#12](../snippets/csharp/VS_Snippets_OfficeSP/spextensibility.projectitem.sitecolumn/cs/projecttemplatewizard/page2.xaml#12)]  
+     [!code-xml[SPExtensibility.ProjectItem.SiteColumn#12](../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/page2.xaml#12)]  
   
-3.  Wenn Sie ein Visual Basic\-Projekt entwickeln, entfernen Sie den `ProjectTemplateWizard`\-Namespace aus dem `Page2`\-Klassennamen im `x:Class`\-Attribut des `UserControl`\-Elements.  Dies erfolgt in der ersten Zeile des XAML.  Anschließend sollte die erste Zeile wie folgt aussehen.  
+3.  If you are developing a Visual Basic project, remove the `ProjectTemplateWizard` namespace from the `Page2` class name in the `x:Class` attribute of the `UserControl` element. This is in the first line of the XAML. When you are done, the first line should look like the following.  
   
     ```  
     <UserControl x:Class="Page2"  
     ```  
   
-4.  Ersetzen Sie den Inhalt der CodeBehind\-Datei für die Datei "Page2.xaml" mit Ausnahme der `using`\-Deklarationen am Dateianfang durch den folgenden Code.  
+4.  Replace the contents of the code-behind file for the Page2.xaml file, except for the `using` declarations at the top of the file, with the following code.  
   
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#3](../snippets/csharp/VS_Snippets_OfficeSP/spextensibility.projectitem.sitecolumn/cs/projecttemplatewizard/page2.xaml.cs#3)]
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#3](../snippets/visualbasic/VS_Snippets_OfficeSP/spextensibility.projectitem.sitecolumn/vb/projecttemplatewizard/page2.xaml.vb#3)]  
+     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#3](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/page2.xaml.vb#3)]  [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#3](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/page2.xaml.cs#3)]  
   
-## Implementieren des Assistenten  
- Definieren Sie die wichtigsten Funktionen des Assistenten, indem Sie die <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>\-Schnittstelle implementieren.  Diese Schnittstelle definiert die Methoden, die von Visual Studio aufgerufen werden, wenn der Assistent gestartet wird, wenn der Assistent beendet wird und gelegentlich, während der Assistent ausgeführt wird.  
+## <a name="implementing-the-wizard"></a>Implementing the Wizard  
+ Define the main functionality of the wizard by implementing the <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interface. This interface defines the methods that Visual Studio calls when the wizard starts and finishes, and at certain times while the wizard runs.  
   
-#### So implementieren Sie den Assistenten  
+#### <a name="to-implement-the-wizard"></a>To implement the wizard  
   
-1.  Öffnen Sie die Codedatei SiteColumnProjectWizard im Projekt ProjectTemplateWizard.  
+1.  In the ProjectTemplateWizard project, open the SiteColumnProjectWizard code file.  
   
-2.  Ersetzen Sie den gesamten Inhalt der Datei durch folgenden Code:  
+2.  Replace the entire contents of this file with the following code.  
   
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#7](../snippets/csharp/VS_Snippets_OfficeSP/spextensibility.projectitem.sitecolumn/cs/projecttemplatewizard/sitecolumnprojectwizard.cs#7)]
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#7](../snippets/visualbasic/VS_Snippets_OfficeSP/spextensibility.projectitem.sitecolumn/vb/projecttemplatewizard/sitecolumnprojectwizard.vb#7)]  
+     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#7](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/sitecolumnprojectwizard.vb#7)]  [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#7](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/sitecolumnprojectwizard.cs#7)]  
   
-## Erstellen der SharePoint\-Befehle  
- Erstellen Sie zwei benutzerdefinierte Befehle, die einen Aufruf in das SharePoint\-Serverobjektmodell durchführen.  Mit einem Befehl wird angegeben, ob die Website\-URL, die vom Benutzer im Assistenten eingegeben wird, gültig ist.  Mit dem anderen Befehl werden alle Feldtypen von der angegebenen SharePoint\-Website abgerufen, sodass Benutzer auswählen können, welcher Typ als Basis für die neue Websitespalte verwendet werden soll.  
+## <a name="creating-the-sharepoint-commands"></a>Creating the SharePoint Commands  
+ Create two custom commands that call into the SharePoint server object model. One command determines whether the site URL that the user types in the wizard is valid. The other command gets all of the field types from the specified SharePoint site so that users can select which one to use as the basis for their new site column.  
   
-#### So definieren Sie die SharePoint\-Befehle  
+#### <a name="to-define-the-sharepoint-commands"></a>To define the SharePoint commands  
   
-1.  Öffnen Sie die Codedatei Commands im Projekt **SharePointCommands**.  
+1.  In the **SharePointCommands** project, open the Commands code file.  
   
-2.  Ersetzen Sie den gesamten Inhalt der Datei durch folgenden Code:  
+2.  Replace the entire contents of this file with the following code.  
   
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#9](../snippets/csharp/VS_Snippets_OfficeSP/spextensibility.projectitem.sitecolumn/cs/sharepointcommands/commands.cs#9)]
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#9](../snippets/visualbasic/VS_Snippets_OfficeSP/spextensibility.projectitem.sitecolumn/vb/sharepointcommands/commands.vb#9)]  
+     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#9](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/sharepointcommands/commands.vb#9)]  [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#9](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/sharepointcommands/commands.cs#9)]  
   
-## Checkpoint  
- Ab diesem Punkt in der exemplarischen Vorgehensweise wurde der gesamte für den Assistenten benötigte Code in das Projekt eingefügt.  Erstellen Sie das Projekt, um sicherzustellen, dass es ohne Fehler kompiliert wird.  
+## <a name="checkpoint"></a>Checkpoint  
+ At this point in the walkthrough, all the code for the wizard is now in the project. Build the project to make sure that it compiles without errors.  
   
-#### So erstellen Sie das Projekt  
+#### <a name="to-build-your-project"></a>To build your project  
   
-1.  Wählen Sie in der Menüleiste **Erstellen**, **Projektmappe erstellen**.  
+1.  On the menu bar, choose **Build**, **Build Solution**.  
   
-## Entfernen der Datei key.snk aus der Projektvorlage  
- In der [Exemplarische Vorgehensweise: Erstellen eines Projektelements "Websitespalte" mit einer Projektvorlage, Teil 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md) enthält die Projektvorlage, die Sie erstellt haben, eine key.snk\-Datei, mit der die einzelnen Projektinstanzen für Websitespalten signiert werden.  Diese key.snk\-Datei wird nicht mehr benötigt, da vom Assistenten nun eine neue key.snk\-Datei für jedes Projekt generiert wird.  Entfernen Sie die key.snk\-Datei aus der Projektvorlage, und entfernen Sie die Verweise auf die Datei.  
+## <a name="removing-the-keysnk-file-from-the-project-template"></a>Removing the key.snk File from the Project Template  
+ In [Walkthrough: Creating a Site Column Project Item with a Project Template, Part 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md), the project template that you created contains a key.snk file that is used to sign each Site Column project instance. This key.snk file is no longer necessary because the wizard now generates a new key.snk file for each project. Remove the key.snk file from the project template and remove references to this file.  
   
-#### So entfernen Sie die key.snk\-Datei aus der Projektvorlage  
+#### <a name="to-remove-the-keysnk-file-from-the-project-template"></a>To remove the key.snk file from the project template  
   
-1.  Öffnen Sie im **Projektmappen\-Explorer** unter dem **SiteColumnProjectTemplate**\-Knoten das Kontextmenü der Datei **key.snk**, und wählen Sie dann **Löschen** aus.  
+1.  In **Solution Explorer**, under the **SiteColumnProjectTemplate** node, open the shortcut menu for the **key.snk** file, and then choose **Delete**.  
   
-2.  Wählen Sie im daraufhin angezeigten Bestätigungsdialogfeld die Schaltfläche **OK** aus.  
+2.  In the confirmation dialog box that appears, choose the **OK** button.  
   
-3.  Öffnen Sie unter dem **SiteColumnProjectTemplate**\-Knoten die Datei "SiteColumnProjectTemplate.vstemplate", und entfernen Sie dann das folgende Element daraus.  
+3.  Under the **SiteColumnProjectTemplate** node, open the SiteColumnProjectTemplate.vstemplate file, and then remove the following element from it.  
   
     ```  
     <ProjectItem ReplaceParameters="false" TargetFileName="key.snk">key.snk</ProjectItem>  
     ```  
   
-4.  Speichern und schließen Sie die Datei.  
+4.  Save and close the file.  
   
-5.  Öffnen Sie unter dem **SiteColumnProjectTemplate**\-Knoten die Datei "ProjectTemplate.csproj" oder "ProjectTemplate.vbproj", und entfernen Sie dann das folgende `PropertyGroup`\-Element daraus.  
+5.  Under the **SiteColumnProjectTemplate** node, open the ProjectTemplate.csproj or ProjectTemplate.vbproj file, and then remove the following `PropertyGroup` element from it.  
   
     ```  
     <PropertyGroup>  
@@ -353,56 +350,56 @@ caps.handback.revision: 53
     </PropertyGroup>  
     ```  
   
-6.  Entfernen Sie das folgende `None`\-Element:  
+6.  Remove the following `None` element.  
   
     ```  
     <None Include="key.snk" />  
     ```  
   
-7.  Speichern und schließen Sie die Datei.  
+7.  Save and close the file.  
   
-## Zuordnen des Assistenten zur Projektvorlage  
- Nach der Implementierung des Assistenten muss dieser der Projektvorlage **Websitespalte** zugeordnet werden.  Hierzu müssen drei Verfahren ausgeführt werden:  
+## <a name="associating-the-wizard-with-the-project-template"></a>Associating the Wizard with the Project Template  
+ Now that you have implemented the wizard, you must associate the wizard with the **Site Column** project template. There are three procedures you must complete to do this:  
   
-1.  Signieren der Assistenten\-Assembly mit einem starkem Namen  
+1.  Sign the wizard assembly with a strong name.  
   
-2.  Abrufen des öffentlichen Schlüsseltokens der Assistenten\-Assembly  
+2.  Get the public key token for the wizard assembly.  
   
-3.  Fügen Sie der VSTEMPLATE\-Datei für die Projektvorlage **Websitespalte** einen Verweis auf die Assistenten\-Assembly hinzu.  
+3.  Add a reference to the wizard assembly in the .vstemplate file for the **Site Column** project template.  
   
-#### So signieren Sie die Assistenten\-Assembly mit einem starkem Namen  
+#### <a name="to-sign-the-wizard-assembly-with-a-strong-name"></a>To sign the wizard assembly with a strong name  
   
-1.  Öffnen Sie im **Projektmappen\-Explorer** das Kontextmenü des Projekts **ProjectTemplateWizard**, und wählen Sie dann **Eigenschaften** aus.  
+1.  In **Solution Explorer**, open the shortcut menu for the **ProjectTemplateWizard** project, and then choose **Properties**.  
   
-2.  Aktivieren Sie auf der Registerkarte **Signierung** das Kontrollkästchen **Assembly signieren**.  
+2.  On the **Signing** tab, select the **Sign the assembly** check box.  
   
-3.  Wählen Sie in der Liste **Schlüsseldatei mit starkem Namen auswählen** die Option **\<Neu...\>** aus.  
+3.  In the **Choose a strong name key file** list, choose **\<New...>**.  
   
-4.  Geben Sie im Dialogfeld **Schlüssel für einen starken Namen erstellen** einen Namen für die neue Schlüsseldatei ein, deaktivieren Sie das Kontrollkästchen **Schlüsseldatei mit Kennwort schützen**, und wählen Sie dann die Schaltfläche **OK** aus.  
+4.  In the **Create Strong Name Key** dialog box, enter a name for the new key file, clear the **Protect my key file with a password** check box, and then choose the **OK** button.  
   
-5.  Öffnen Sie das Kontextmenü des Projekts **ProjectTemplateWizard**, und wählen Sie dann **Erstellen** aus, um die Datei "ProjectTemplateWizard.dll" zu erstellen.  
+5.  Open the shortcut menu for the **ProjectTemplateWizard** project, and then choose **Build** to create the ProjectTemplateWizard.dll file.  
   
-#### So rufen Sie das öffentliche Schlüsseltoken der Assistenten\-Assembly ab  
+#### <a name="to-get-the-public-key-token-for-the-wizard-assembly"></a>To get the public key token for the wizard assembly  
   
-1.  Wählen Sie im **Startmenü** nacheinander **Alle Programme**, **Microsoft Visual Studio**, **Visual Studio\-Tools** und dann **Developer\-Eingabeaufforderung für VS2012** aus.  
+1.  On the **Start Menu**, choose **All Programs**, choose **Microsoft Visual Studio**, choose **Visual Studio Tools**, and then choose **Developer Command Prompt**.  
   
-     Ein Visual Studio\-Eingabeaufforderungsfenster wird geöffnet.  
+     A Visual Studio Command Prompt window opens.  
   
-2.  Ersetzen Sie durch Ausführen des folgenden Befehls den *PathToWizardAssembly* durch den vollständigen Pfad zur erstellten "ProjectTemplateWizard.dll"\-Assembly für das Projekt "ProjectTemplateWizard" auf dem Entwicklungscomputer:  
+2.  Run the following command, replacing *PathToWizardAssembly* with the full path to the built ProjectTemplateWizard.dll assembly for the ProjectTemplateWizard project on your development computer:  
   
     ```  
     sn.exe -T PathToWizardAssembly  
     ```  
   
-     Das öffentliche Schlüsseltoken für die Assembly ProjectTemplateWizard.dll wird in das Fenster der Visual Studio\-Eingabeaufforderung geschrieben.  
+     The public key token for the ProjectTemplateWizard.dll assembly is written to the Visual Studio Command Prompt window.  
   
-3.  Lassen Sie das Fenster der Visual Studio\-Eingabeaufforderung geöffnet.  Sie benötigen das öffentliche Schlüsseltoken während der nächsten Prozedur.  
+3.  Keep the Visual Studio Command Prompt window open. You will need the public key token during the next procedure.  
   
-#### So fügen Sie einen Verweis auf die Assistenten\-Assembly in der VSTEMPLATE\-Datei hinzu  
+#### <a name="to-add-a-reference-to-the-wizard-assembly-in-the-vstemplate-file"></a>To add a reference to the wizard assembly in the .vstemplate file  
   
-1.  Erweitern Sie im **Projektmappen\-Explorer** den Projektknoten **SiteColumnProjectTemplate**, und öffnen Sie die Datei SiteColumnProjectTemplate.vstemplate.  
+1.  In **Solution Explorer**, expand the **SiteColumnProjectTemplate** project node and open the SiteColumnProjectTemplate.vstemplate file.  
   
-2.  Fügen Sie das folgende `WizardExtension`\-Element zwischen dem `</TemplateContent>`\-Tag und dem `</VSTemplate>`\-Tag am Ende der Datei hinzu.  Ersetzen Sie den *your token*\-Wert im `PublicKeyToken`\-Attribut durch das öffentliche Schlüsseltoken, das Sie in der vorherigen Prozedur abgerufen haben.  
+2.  Near the end of the file, add the following `WizardExtension` element between the `</TemplateContent>` and `</VSTemplate>` tags. Replace the *your token* value of the `PublicKeyToken` attribute with the public key token that you obtained in the previous procedure.  
   
     ```  
     <WizardExtension>  
@@ -411,21 +408,21 @@ caps.handback.revision: 53
     </WizardExtension>  
     ```  
   
-     Weitere Informationen über das `WizardExtension`\-Element finden Sie unter [WizardExtension-Element &#40;Visual Studio-Vorlagen&#41;](../extensibility/wizardextension-element-visual-studio-templates.md).  
+     For more information about the `WizardExtension` element, see [WizardExtension Element &#40;Visual Studio Templates&#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
   
-3.  Speichern und schließen Sie die Datei.  
+3.  Save and close the file.  
   
-## Hinzufügen von ersetzbaren Parametern zur Datei Elements.xml in der Projektvorlage  
- Fügen Sie der Datei Elements.xml im Projekt SiteColumnProjectTemplate mehrere ersetzbare Parameter hinzu.  Diese Parameter werden in der `RunStarted`\-Methode in der zuvor definierten `SiteColumnProjectWizard`\-Klasse initialisiert.  Wenn ein Websitespaltenprojekt von einem Benutzer erstellt wird, werden diese Parameter von Visual Studio in der Datei Elements.xml im neuen Projektelement automatisch durch die Werte ersetzt, die im Assistenten angegeben wurden.  
+## <a name="adding-replaceable-parameters-to-the-elementsxml-file-in-the-project-template"></a>Adding Replaceable Parameters to the Elements.xml File in the Project Template  
+ Add several replaceable parameters to the Elements.xml file in the SiteColumnProjectTemplate project. These parameters are initialized in the `RunStarted` method in the `SiteColumnProjectWizard` class that you defined earlier. When a user creates a Site Column project, Visual Studio automatically replaces these parameters in the Elements.xml file in the new project with the values that they specified in the wizard.  
   
- Ein ersetzbarer Parameter ist ein Token, das mit einem Dollarzeichen \($\) beginnt und endet.  Zusätzlich zu den selbst definierten ersetzbaren Parametern können Sie auch integrierte Parameter verwenden, die vom SharePoint\-Projektsystem definiert und initialisiert werden.  Weitere Informationen finden Sie unter [Ersetzbare Parameter](../sharepoint/replaceable-parameters.md).  
+ A replaceable parameter is a token that begins and ends with the dollar sign ($) character. In addition to defining your own replaceable parameters, you can use built-in parameters that are defined and initialized by the SharePoint project system. For more information, see [Replaceable Parameters](../sharepoint/replaceable-parameters.md).  
   
-#### So fügen Sie der Datei Elements.xml ersetzbare Parameter hinzu  
+#### <a name="to-add-replaceable-parameters-to-the-elementsxml-file"></a>To add replaceable parameters to the Elements.xml file  
   
-1.  Ersetzen Sie im Projekt "SiteColumnProjectTemplate" den Inhalt der Datei "Elements.xml" durch das folgende XML.  
+1.  In the SiteColumnProjectTemplate project, replace the contents of the Elements.xml file with the following XML.  
   
     ```  
-  
+    <?xml version="1.0" encoding="utf-8"?>  
     <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
       <Field ID="{$guid5$}"   
              Name="$fieldname$"   
@@ -436,121 +433,121 @@ caps.handback.revision: 53
     </Elements>  
     ```  
   
-     Durch das neue XML werden die Werte der Attribute `Name`, `DisplayName`, `Type` und `Group` in benutzerdefinierte ersetzbare Parameter geändert.  
+     The new XML changes the values of the `Name`, `DisplayName`, `Type`, and `Group` attributes to custom replaceable parameters.  
   
-2.  Speichern und schließen Sie die Datei.  
+2.  Save and close the file.  
   
-## Hinzufügen des Assistenten zum VSIX\-Paket  
- Um den Assistenten mit dem VSIX\-Paket und der Projektvorlage für Websitespalten bereitzustellen, fügen Sie der Datei source.extension.vsixmanifest im VSIX\-Projekt Verweise auf das Assistentenprojekt und das SharePoint\-Befehlsprojekt hinzu.  
+## <a name="adding-the-wizard-to-the-vsix-package"></a>Adding the Wizard to the VSIX Package  
+ To deploy the wizard with the VSIX package that contains the Site Column project template, add references to the wizard project and the SharePoint commands project to the source.extension.vsixmanifest file in the VSIX project.  
   
-#### So fügen Sie den Assistenten dem VSIX\-Paket hinzu  
+#### <a name="to-add-the-wizard-to-the-vsix-package"></a>To add the wizard to the VSIX package  
   
-1.  Öffnen Sie im **Projektmappen\-Explorer** im Projekt **SiteColumnProjectItem** das Kontextmenü der Datei **source.extension.vsixmanifest**, und wählen Sie dann **Öffnen** aus.  
+1.  In **Solution Explorer**, in the **SiteColumnProjectItem** project, open the shortcut menu for the **source.extension.vsixmanifest** file, and then choose **Open**.  
   
-     Die Datei wird von Visual Studio im Manifest\-Editor geöffnet.  
+     Visual Studio opens the file in the manifest editor.  
   
-2.  Wählen Sie im Editor auf der Registerkarte **Objekte** die Schaltfläche **Neu** aus.  
+2.  On the **Assets** tab of the editor, choose the **New** button.  
   
-     Das Dialogfeld **Neue Anlage hinzufügen** wird geöffnet.  
+     The **Add New Asset** dialog box opens.  
   
-3.  Wählen Sie in der Liste **Typ** die Option **Microsoft.VisualStudio.Assembly** aus.  
+3.  In the **Type** list, choose **Microsoft.VisualStudio.Assembly**.  
   
-4.  Wählen Sie in der Liste **Quelle** die Option **Ein Projekt in der aktuellen Projektmappe** aus.  
+4.  In the **Source** list, choose **A project in current solution**.  
   
-5.  Wählen Sie in der Liste **Projekt** die Option **ProjectTemplateWizard** und dann die Schaltfläche **OK** aus.  
+5.  In the **Project** list, choose **ProjectTemplateWizard**, and then choose the **OK** button.  
   
-6.  Wählen Sie im Editor auf der Registerkarte **Objekte** erneut die Schaltfläche **Neu** aus.  
+6.  On the **Assets** tab of the editor, choose the **New** button again.  
   
-     Das Dialogfeld **Neue Anlage hinzufügen** wird geöffnet.  
+     The **Add New Asset** dialog box opens.  
   
-7.  Geben Sie in der Liste **Typ** die Zeichenfolge **SharePoint.Commands.v4** ein.  
+7.  In the **Type** list, enter **SharePoint.Commands.v4**.  
   
-8.  Wählen Sie in der Liste **Quelle** die Option **Ein Projekt in der aktuellen Projektmappe** aus.  
+8.  In the **Source** list, choose **A project in current solution**.  
   
-9. Wählen Sie in der Liste **Projekt** das Projekt **SharePointCommands** und dann die Schaltfläche **OK** aus.  
+9. In the **Project** list, choose the **SharePointCommands** project, and then choose the **OK** button.  
   
-10. Wählen Sie in der Menüleiste **Erstellen** und **Projektmappe erstellen** aus, und überprüfen Sie dann, ob die Projektmappe fehlerfrei erstellt wird.  
+10. On the menu bar, choose **Build**, **Build Solution**, and then make sure that the solution builds without errors.  
   
-## Testen des Assistenten  
- Sie können den Assistenten jetzt testen.  Debuggen Sie die Projektmappe SiteColumnProjectItem zunächst in der experimentellen Instanz von Visual Studio.  Anschließend testen Sie den Assistenten für das Websitespaltenprojekt in der experimentellen Instanz von Visual Studio.  Erstellen und führen Sie zum Schluss das Projekt aus, um sicherzustellen, dass die Websitespalte ordnungsgemäß funktioniert.  
+## <a name="testing-the-wizard"></a>Testing the Wizard  
+ You are now ready to test the wizard. First, start debugging the SiteColumnProjectItem solution in the experimental instance of Visual Studio. Then, test the wizard for the Site Column project in the experimental instance of Visual Studio. Finally, build and run the project to verify that the site column works as expected.  
   
-#### So debuggen Sie die Projektmappe  
+#### <a name="to-start-debugging-the-solution"></a>To start debugging the solution  
   
-1.  Starten Sie Visual Studio erneut mit Administratoranmeldeinformationen, und öffnen Sie dann die Projektmappe "SiteColumnProjectItem".  
+1.  Restart Visual Studio with administrative credentials, and then open the SiteColumnProjectItem solution.  
   
-2.  Öffnen Sie im Projekt "ProjectTemplateWizard" die Codedatei "SiteColumnProjectWizard", und fügen Sie dann der ersten Codezeile in der `RunStarted`\-Methode einen Haltepunkt hinzu.  
+2.  In the ProjectTemplateWizard project, open the SiteColumnProjectWizard code file, and then add a breakpoint to the first line of code in the `RunStarted` method.  
   
-3.  Wählen Sie in der Menüleiste **Debuggen** und **Ausnahmen** aus.  
+3.  On the menu bar, choose **Debug**, **Exceptions**.  
   
-4.  Stellen Sie im Dialogfeld **Ausnahmen** sicher, dass die Kontrollkästchen **Ausgelöst** und **Vom Benutzercode unbehandelt** für **Common Language Runtime\-Ausnahmen** deaktiviert sind, und wählen Sie dann die Schaltfläche **OK** aus.  
+4.  In the **Exceptions** dialog box, make sure that the **Thrown** and **User-unhandled** check boxes for **Common Language Runtime Exceptions** are cleared, and then choose the **OK** button.  
   
-5.  Drücken Sie die **F5**\-Taste oder wählen Sie in der Menüleiste **Debuggen** und **Debugging starten** aus, um das Debuggen zu starten.  
+5.  Start debugging by choosing the **F5** key or, on the menu bar, choosing **Debug**, **Start Debugging**.  
   
-     Die Erweiterung wird unter "%UserProfile%\\AppData\\Local\\Microsoft\\VisualStudio\\11.0Exp\\Extensions\\Contoso\\Websitespalte\\1.0 installiert", und eine experimentelle Instanz von Visual Studio wird gestartet.  Sie testen das Projektelement in dieser Instanz von Visual Studio.  
+     Visual Studio installs the extension to %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Site Column\1.0 and starts an experimental instance of Visual Studio. You'll test the project item in this instance of Visual Studio.  
   
-#### So testen Sie den Assistenten in Visual Studio  
+#### <a name="to-test-the-wizard-in-visual-studio"></a>To test the wizard in Visual Studio  
   
-1.  Wählen Sie in der experimentellen Visual Studio\-Instanz in der Menüleiste **Datei**, **Neu** und **Projekt** aus.  
+1.  In the experimental instance of Visual Studio, on the menu bar, choose **File**, **New**, **Project**.  
   
-2.  Erweitern Sie den **Visual C\#**\-Knoten oder den **Visual Basic**\-Knoten \(je nach der von der Projektvorlage unterstützten Sprache\), erweitern Sie den **SharePoint**\-Knoten, und wählen Sie dann den **2010**\-Knoten aus.  
+2.  Expand the **Visual C#** node or the **Visual Basic** node (depending on the language that your project template supports), expand the **SharePoint** node, and then choose the **2010** node.  
   
-3.  Wählen Sie in der Liste der Projektvorlagen **Websitespalte** aus, nennen Sie das Projekt **SiteColumnWizardTest**, und wählen Sie dann die Schaltfläche **OK** aus.  
+3.  In the list of project templates, choose **Site Column**, name the project **SiteColumnWizardTest**, and then choose the **OK** button.  
   
-4.  Überprüfen Sie, ob die Codeausführung in der anderen Instanz von Visual Studio an dem Haltepunkt unterbrochen wird, den Sie zuvor in der `RunStarted`\-Methode festgelegt haben.  
+4.  Verify that the code in the other instance of Visual Studio stops on the breakpoint that you set earlier in the `RunStarted` method.  
   
-5.  Setzen Sie das Debuggen fort, indem Sie die **F5**\-Taste drücken oder in der Menüleiste **Debuggen** und **Fortsetzen** auswählen.  
+5.  Continue to debug the project by choosing the **F5** key or, on the menu bar, choosing **Debug**, **Continue**.  
   
-6.  Geben Sie im **Assistenten zum Anpassen von SharePoint** die URL der Website ein, die Sie zum Debuggen verwenden möchten, und wählen Sie dann die Schaltfläche **Weiter** aus.  
+6.  In the **SharePoint Customization Wizard**, enter the URL of the site that you want to use for debugging, and then choose the **Next** button.  
   
-7.  Wählen Sie auf der zweiten Seite des **Assistenten zum Anpassen von SharePoint** folgende Elemente aus:  
+7.  In the second page of the **SharePoint Customization Wizard**, make the following selections:  
   
-    -   Wählen Sie in der Liste **Typ** die Option **Boolesch** aus.  
+    -   In the **Type** list, choose **Boolean**.  
   
-    -   Wählen Sie in der Liste **Gruppe** die Option **Benutzerdefinierte Ja\/Nein\-Spalten** aus.  
+    -   In the **Group** list, choose **Custom Yes/No Columns**.  
   
-    -   Geben Sie im Feld **Name** die Bezeichnung "Meine Ja\/Nein\-Spalte" ein, und wählen Sie dann die Schaltfläche **Fertig stellen** aus.  
+    -   In the **Name** box, enter **My Yes/No Column**, and then choose the **Finish** button.  
   
-     Im **Projektmappen\-Explorer** wird ein neues Projekt angezeigt, das ein Projektelement mit dem Namen **Field1** aufweist, und im Editor von Visual Studio wird die Datei "Elements.xml" des Projekts geöffnet.  
+     In **Solution Explorer**, a new project appears and contains a project item that's named **Field1**, and Visual Studio opens the project's Elements.xml file in the editor.  
   
-8.  Vergewissern Sie sich, dass Elements.xml die Werte enthält, die Sie im Assistenten angegeben haben.  
+8.  Verify that Elements.xml contains the values that you specified in the wizard.  
   
-#### So testen Sie die Websitespalte in SharePoint  
+#### <a name="to-test-the-site-column-in-sharepoint"></a>To test the site column in SharePoint  
   
-1.  Drücken Sie in der experimentellen Instanz von Visual Studio die F5\-Taste.  
+1.  In the experimental instance of Visual Studio, choose the F5 key.  
   
-     Die Websitespalte wird verpackt und auf der SharePoint\-Website bereitgestellt, die in der **Website\-URL**\-Eigenschaft des Projekts angegeben ist.  Im Webbrowser wird die Standardseite dieser Website geöffnet.  
+     The site column is packaged and deployed to the SharePoint site that the **Site URL** property of the project specifies. The web browser opens to the default page of this site.  
   
     > [!NOTE]  
-    >  Wenn das Dialogfeld **Skriptdebugging deaktiviert** angezeigt wird, wählen Sie die Schaltfläche **Ja** aus, um mit dem Debuggen des Projekts fortzufahren.  
+    >  If the **Script Debugging Disabled** dialog box appears, choose the **Yes** button to continue to debug the project.  
   
-2.  Wählen Sie im Menü **Websiteaktionen** die Option **Websiteeinstellungen** aus.  
+2.  On the **Site Actions** menu, choose **Site Settings**.  
   
-3.  Wählen Sie auf der Seite "Websiteeinstellungen" unter **Galerien** den Link **Websitespalten** aus.  
+3.  On the Site Settings page, under **Galleries**, choose the **Site columns** link.  
   
-4.  Überprüfen Sie in der Liste der Websitespalten, ob eine **Benutzerdefinierte Ja\/Nein\-Spalten**\-Gruppe mit der Spalte **Eigene Ja\/Nein\-Spalte** vorhanden ist, und schließen Sie dann den Webbrowser.  
+4.  In the list of site columns, verify that a **Custom Yes/No Columns** group contains a column that's named **My Yes/No Column**, and then close the web browser.  
   
-## Bereinigen des Entwicklungscomputers  
- Nachdem Sie die Tests des Projektelements abgeschlossen haben, entfernen Sie die Projektvorlage aus der experimentellen Instanz von Visual Studio.  
+## <a name="cleaning-up-the-development-computer"></a>Cleaning up the Development Computer  
+ After you finish testing the project item, remove the project template from the experimental instance of Visual Studio.  
   
-#### So bereinigen Sie den Entwicklungscomputer  
+#### <a name="to-clean-up-the-development-computer"></a>To clean up the development computer  
   
-1.  Wählen Sie in der experimentellen Visual Studio\-Instanz in der Menüleiste **Erstellen** und **Erweiterungen und Update** aus.  
+1.  In the experimental instance of Visual Studio, on the menu bar, choose **Tools**, **Extensions and Updates**.  
   
-     Das Dialogfeld **Erweiterungen und Updates** wird geöffnet.  
+     The **Extensions and Updates** dialog box opens.  
   
-2.  Wählen Sie in der Liste der Erweiterungen **Websitespalte** und dann die Schaltfläche **Deinstallieren** aus.  
+2.  In the list of extensions, choose **Site Column**, and then choose the **Uninstall** button.  
   
-3.  Wählen Sie im angezeigten Dialogfeld die Schaltfläche **Ja** aus, um das Deinstallieren der Erweiterung zu bestätigen, und wählen Sie dann die Schaltfläche **Jetzt neu starten** aus, um die Deinstallation abzuschließen.  
+3.  In the dialog box that appears, choose the **Yes** button to confirm that you want to uninstall the extension, and then choose the **Restart Now** button to complete the uninstallation.  
   
-4.  Schließen Sie die experimentelle Instanz von Visual Studio und die Instanz, in der die Projektmappe "CustomActionProjectItem" geöffnet ist.  
+4.  Close both the experimental instance of Visual Studio and the instance in which the CustomActionProjectItem solution is open.  
   
-     Weitere Informationen zum Bereitstellen von [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]\-Erweiterungen finden Sie unter [Lieferung von Visual Studio-Erweiterungen](../extensibility/shipping-visual-studio-extensions.md).  
+     For information about how to deploy [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] extensions, see [Shipping Visual Studio Extensions](/visualstudio/extensibility/shipping-visual-studio-extensions).  
   
-## Siehe auch  
- [Exemplarische Vorgehensweise: Erstellen eines Projektelements "Websitespalte" mit einer Projektvorlage, Teil 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)   
+## <a name="see-also"></a>See Also  
+ [Walkthrough: Creating a Site Column Project Item with a Project Template, Part 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)   
  [Defining Custom SharePoint Project Item Types](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [Creating Item Templates and Project Templates for SharePoint Project Items](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
- [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Gewusst wie: Verwenden von Assistenten mit Projektvorlagen](~/extensibility/how-to-use-wizards-with-project-templates.md)  
+ [Visual Studio Template Schema Reference](/visualstudio/extensibility/visual-studio-template-schema-reference)   
+ [How to: Use Wizards with Project Templates](../extensibility/how-to-use-wizards-with-project-templates.md)  
   
   

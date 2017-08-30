@@ -1,63 +1,66 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Verweisen auf Arbeitsblattbereiche im Code"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Excel [Office-Entwicklung in Visual Studio], Verweisen auf Arbeitsblattbereiche"
-  - "Bereiche, Verweisen auf"
-  - "Verweisen auf Arbeitsblattbereiche"
-  - "Arbeitsblätter, Verweisen auf Bereiche"
+title: 'How to: Programmatically Refer to Worksheet Ranges in Code | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- ranges, referring to
+- worksheets, referring to ranges
+- referring to worksheet ranges
+- Excel [Office development in Visual Studio], referring to worksheet ranges
 ms.assetid: 113633b8-426a-4d02-b6b8-d459d1f110ea
 caps.latest.revision: 46
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 46
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 1ae11cd66e5e916ca4e95c740d811b4b42d684f1
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Gewusst wie: Programmgesteuertes Verweisen auf Arbeitsblattbereiche im Code
-  Mit einem ähnlichen Prozess können Sie auf den Inhalt eines <xref:Microsoft.Office.Tools.Excel.NamedRange>\-Steuerelements oder eines systemeigenen Excel\-Bereichsobjekts verweisen.  
+# <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>How to: Programmatically Refer to Worksheet Ranges in Code
+  You use a similar process to refer to the contents of a <xref:Microsoft.Office.Tools.Excel.NamedRange> control or a native Excel range object.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## Verwenden eines NamedRange\-Steuerelements  
- Im folgenden Beispiel wird einem Arbeitsblatt ein <xref:Microsoft.Office.Tools.Excel.NamedRange> hinzugefügt, anschließend wird der Zelle im Bereich Text hinzugefügt.  
+## <a name="using-a-namedrange-control"></a>Using a NamedRange Control  
+ The following example adds a <xref:Microsoft.Office.Tools.Excel.NamedRange> to a worksheet and then adds text to the cell in the range.  
   
-#### So verweisen Sie auf ein NamedRange\-Steuerelement  
+#### <a name="to-refer-to-a-namedrange-control"></a>To refer to a NamedRange control  
   
-1.  Weisen Sie der <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A>\-Eigenschaft des <xref:Microsoft.Office.Tools.Excel.NamedRange>\-Steuerelements eine Zeichenfolge zu.  Dieser Code muss in eine Sheet\-Klasse, nicht in die `ThisWorkbook`\-Klasse eingefügt werden.  
+1.  Assign a string to the <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> property of the <xref:Microsoft.Office.Tools.Excel.NamedRange> control. This code must be placed in a sheet class, not in the `ThisWorkbook` class.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#46](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/CS/Sheet1.cs#46)]
-     [!code-vb[Trin_VstcoreExcelAutomation#46](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/VB/Sheet1.vb#46)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#46](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#46)]  [!code-vb[Trin_VstcoreExcelAutomation#46](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#46)]  
   
-## Verwenden von systemeigenen Excel\-Bereichen  
- Im folgenden Beispiel wird einem Arbeitsblatt ein systemeigener Excel\-Bereich hinzugefügt, anschließend wird der Zelle im Bereich Text hinzugefügt.  
+## <a name="using-native-excel-ranges"></a>Using Native Excel Ranges  
+ The following example adds a native Excel range to a worksheet and then adds text to the cell in the range.  
   
-#### So verweisen Sie auf ein systemeigenes Bereichsobjekt  
+#### <a name="to-refer-to-a-native-range-object"></a>To refer to a native range object  
   
-1.  Weisen Sie der <xref:Microsoft.Office.Interop.Excel.Range.Value2%2A>\-Eigenschaft des Bereichs eine Zeichenfolge zu.  
+1.  Assign a string to the <xref:Microsoft.Office.Interop.Excel.Range.Value2%2A> property of the range.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#47](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/CS/Sheet1.cs#47)]
-     [!code-vb[Trin_VstcoreExcelAutomation#47](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/VB/Sheet1.vb#47)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#47](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#47)]  [!code-vb[Trin_VstcoreExcelAutomation#47](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#47)]  
   
-## Siehe auch  
- [Arbeiten mit Bereichen](../vsto/working-with-ranges.md)   
- [Gewusst wie: Programmgesteuertes Überprüfen der Rechtschreibung in Arbeitsblättern](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)   
- [Gewusst wie: Programmgesteuertes Anwenden von Formaten auf Bereiche in Arbeitsmappen](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [Gewusst wie: Programmgesteuertes automatisches Füllen von Bereichen mit inkrementellen Daten](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)   
- [Gewusst wie: Programmgesteuertes Suchen nach Text in Arbeitsblattbereichen](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md)   
- [NamedRange-Steuerelement](../vsto/namedrange-control.md)   
- [Übersicht über Hostelemente und Hoststeuerelemente](../vsto/host-items-and-host-controls-overview.md)   
- [Programmgesteuerte Einschränkungen von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Optionale Parameter in Office-Lösungen](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="see-also"></a>See Also  
+ [Working with Ranges](../vsto/working-with-ranges.md)   
+ [How to: Programmatically Check Spelling in Worksheets](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)   
+ [How to: Programmatically Apply Styles to Ranges in Workbooks](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [How to: Programmatically Automatically Fill Ranges with Incrementally Changing Data](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)   
+ [How to: Programmatically Search for Text in Worksheet Ranges](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md)   
+ [NamedRange Control](../vsto/namedrange-control.md)   
+ [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
   
   

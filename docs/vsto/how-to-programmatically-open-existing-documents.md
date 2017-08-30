@@ -1,54 +1,57 @@
 ---
-title: "Gewusst wie: Programmgesteuertes &#214;ffnen vorhandener Dokumente"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Dokumente [Office-Entwicklung in Visual Studio], Öffnen"
-  - "Word [Office-Entwicklung in Visual Studio], Öffnen von Dokumenten"
+title: 'How to: Programmatically Open Existing Documents | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- documents [Office development in Visual Studio], opening
+- Word [Office development in Visual Studio], opening documents
 ms.assetid: 08f7fe4b-d96d-4a0c-b32a-aa7fd7992316
 caps.latest.revision: 44
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 43
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: a0078a0bde72abc94d586d22bdf4ef36c8b69801
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Gewusst wie: Programmgesteuertes &#214;ffnen vorhandener Dokumente
-  Die <xref:Microsoft.Office.Interop.Word.Documents.Open%2A>\-Methode öffnet ein vorhandenes Microsoft Office Word\-Dokument, das durch einen vollqualifizierten Pfad und Dateinamen angegeben ist.  Diese Methode gibt ein <xref:Microsoft.Office.Interop.Word.Document> zurück, das das geöffnete Dokument darstellt.  
+# <a name="how-to-programmatically-open-existing-documents"></a>How to: Programmatically Open Existing Documents
+  The <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> method opens the existing Microsoft Office Word document specified by a fully qualified path and file name. This method returns a <xref:Microsoft.Office.Interop.Word.Document> that represents the opened document.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-### So öffnen Sie ein Dokument  
+### <a name="to-open-a-document"></a>To open a document  
   
--   Rufen Sie die <xref:Microsoft.Office.Interop.Word.Documents.Open%2A>\-Methode der <xref:Microsoft.Office.Interop.Word.Documents>\-Auflistung auf, und geben Sie einen Pfad zum Dokument an.  
+-   Call the <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> method of the <xref:Microsoft.Office.Interop.Word.Documents> collection and supply a path to the document.  
   
-     [!code-csharp[Trin_VstcoreWordAutomation#5](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/CS/ThisDocument.cs#5)]
-     [!code-vb[Trin_VstcoreWordAutomation#5](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/VB/ThisDocument.vb#5)]  
+     [!code-vb[Trin_VstcoreWordAutomation#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#5)]  [!code-csharp[Trin_VstcoreWordAutomation#5](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#5)]  
   
-### So öffnen Sie ein Dokument mit Schreibschutz  
+### <a name="to-open-a-document-as-read-only"></a>To open a document as read-only  
   
--   Rufen Sie die <xref:Microsoft.Office.Interop.Word.Documents.Open%2A>\-Methode auf, geben Sie einen Pfad zum Dokument an, und legen Sie das *ReadOnly*\-Argument im Methodenaufruf auf **True** fest.  
+-   Call the <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> method, supply a path to the document, and set the *ReadOnly* argument to **True** in the method call.  
   
-     [!code-csharp[Trin_VstcoreWordAutomation#6](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/CS/ThisDocument.cs#6)]
-     [!code-vb[Trin_VstcoreWordAutomation#6](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/VB/ThisDocument.vb#6)]  
+     [!code-vb[Trin_VstcoreWordAutomation#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#6)]  [!code-csharp[Trin_VstcoreWordAutomation#6](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#6)]  
   
-## Kompilieren des Codes  
- Für dieses Codebeispiel benötigen Sie Folgendes:  
+## <a name="compiling-the-code"></a>Compiling the Code  
+ This code example requires the following:  
   
--   Ein Dokument mit dem Namen "NewDocument.doc" muss in einem Verzeichnis mit dem Namen "Test" auf Laufwerk C vorhanden sein.  
+-   A document named NewDocument.doc must exist in a directory named Test on drive C.  
   
-## Siehe auch  
- [Gewusst wie: Programmgesteuertes Erstellen neuer Dokumente](../vsto/how-to-programmatically-create-new-documents.md)   
- [Gewusst wie: Programmgesteuertes Schließen von Dokumenten](../vsto/how-to-programmatically-close-documents.md)   
- [Optionale Parameter in Office-Lösungen](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="see-also"></a>See Also  
+ [How to: Programmatically Create New Documents](../vsto/how-to-programmatically-create-new-documents.md)   
+ [How to: Programmatically Close Documents](../vsto/how-to-programmatically-close-documents.md)   
+ [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
   
   

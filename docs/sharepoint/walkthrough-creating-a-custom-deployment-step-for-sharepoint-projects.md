@@ -1,317 +1,321 @@
 ---
-title: "Walkthrough: Creating a Custom Deployment Step for SharePoint Projects"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "SharePoint commands"
-  - "SharePoint development in Visual Studio, extending deployment"
+title: 'Walkthrough: Creating a Custom Deployment Step for SharePoint Projects | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint commands
+- SharePoint development in Visual Studio, extending deployment
 ms.assetid: 4ba2d120-06b8-4ef3-84eb-c6c50ced9d82
 caps.latest.revision: 63
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 62
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 884ff540c52d6ea684e5fbd84af6289cd461e4f7
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Walkthrough: Creating a Custom Deployment Step for SharePoint Projects
-  Wenn Sie ein SharePoint\-Projekt bereitstellen, führt Visual Studio eine Reihe von Bereitstellungsschritten in einer bestimmten Reihenfolge aus.  Visual Studio enthält viele integrierte Bereitstellungsschritte, Sie können aber auch eigene Schritte erstellen.  
+# <a name="walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects"></a>Walkthrough: Creating a Custom Deployment Step for SharePoint Projects
+  When you deploy a SharePoint project, Visual Studio executes a series of deployment steps in a specific order. Visual Studio includes many built-in deployment steps, but you can also create your own.  
   
- In dieser exemplarischen Vorgehensweise erstellen Sie einen benutzerdefinierten Bereitstellungsschritt, um Projektmappen auf einem Server zu aktualisieren, der SharePoint ausgeführt wird.  Visual Studio beinhaltet integrierte Bereitstellungsschritte für viele Aufgaben, solche Zurücknehmen oder Hinzufügen Lösungen, jedoch kein Bereitstellungsschritt zum Aktualisieren von Projektmappen.  Beim Bereitstellen einer SharePoint\-Lösung, normalerweise zuerst die Projektmappe \(sofern bereits bereitgestellt\) zurück und stellt dann die gesamte Projektmappe erneut bereit.  Weitere Informationen zu den integrierten Bereitstellungsschritten finden Sie unter [Bereitstellen, Veröffentlichen und Aktualisieren von SharePoint-Lösungspaketen](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).  
+ In this walkthrough, you will create a custom deployment step to upgrade solutions on a server that's running SharePoint. Visual Studio includes built-in deployment steps for many tasks, such retracting or adding solutions, but it doesn't include a deployment step for upgrading solutions. By default, when you deploy a SharePoint solution, Visual Studio first retracts the solution (if it's already deployed) and then redeploys the entire solution. For more information about the built-in deployment steps, see [Deploying, Publishing, and Upgrading SharePoint Solution Packages](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).  
   
- Diese exemplarische Vorgehensweise enthält die folgenden Aufgaben:  
+ This walkthrough demonstrates the following tasks:  
   
--   Erstellen einer Visual Studio\-Erweiterung, die zwei Hauptaufgaben ausführt:  
+-   Creating a Visual Studio extension that performs two main tasks:  
   
-    -   Die Erweiterung wird ein benutzerdefinierter Bereitstellungsschritt definiert, um SharePoint\-Lösungen zu aktualisieren.  
+    -   The extension defines a custom deployment step to upgrade SharePoint solutions.  
   
-    -   Die Erweiterung wird eine Projekterweiterung erstellt, die eine neue Bereitstellungskonfiguration definiert, die ein Satz von Bereitstellungsschritten ist, der für ein bestimmtes Projekt ausgeführt werden.  Die neue Bereitstellungskonfiguration beinhaltet den benutzerdefinierten Bereitstellungsschritt und mehrere integrierte Bereitstellungsschritte.  
+    -   The extension creates a project extension that defines a new deployment configuration, which is a set of deployment steps that are executed for a given project. The new deployment configuration includes the custom deployment step and several built-in deployment steps.  
   
--   Zwei benutzerdefinierte SharePoint\-Befehle erstellen, die die Erweiterungsassembly aufruft.  SharePoint\-Befehle sind Methoden, die von Erweiterungsassemblys aufgerufen werden können, um APIs im Serverobjektmodell für SharePoint zu verwenden.  Weitere Informationen finden Sie unter [Calling into the SharePoint Object Models](../sharepoint/calling-into-the-sharepoint-object-models.md).  
+-   Creating two custom SharePoint commands that the extension assembly calls. SharePoint commands are methods that can be called by extension assemblies to use APIs in the server object model for SharePoint. For more information, see [Calling into the SharePoint Object Models](../sharepoint/calling-into-the-sharepoint-object-models.md).  
   
--   Erstellen eines Visual Studio\-Erweiterungspakets \(VSIX\) zum Bereitstellen beider Assemblys.  
+-   Building a Visual Studio Extension (VSIX) package to deploy both of the assemblies.  
   
--   Testen des neuen Bereitstellungsschritts.  
+-   Testing the new deployment step.  
   
-## Vorbereitungsmaßnahmen  
- Zum Durchführen dieser exemplarischen Vorgehensweise werden auf dem Entwicklungscomputer die folgenden Komponenten benötigt:  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components on the development computer to complete this walkthrough:  
   
--   Unterstützte Editionen von Windows, SharePoint und Visual Studio.  Weitere Informationen finden Sie unter [Anforderungen für die Entwicklung von SharePoint-Lösungen](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Supported editions of Windows, SharePoint, and Visual Studio. For more information, see [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
--   Das Visual Studio SDK.  Diese exemplarische Vorgehensweise verwendet die Vorlage **VSIX Project** im SDK, um ein VSIX\-Paket zum Bereitstellen der Erweiterung zu erstellen.  Weitere Informationen finden Sie unter [Extending the SharePoint Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+-   The Visual Studio SDK. This walkthrough uses the **VSIX Project** template in the SDK to create a VSIX package to deploy the extension. For more information, see [Extending the SharePoint Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Kenntnisse der folgenden Konzepte sind hilfreich, wenn auch für die Durchführung der exemplarischen Vorgehensweise nicht erforderlich:  
+ Knowledge of the following concepts is helpful, but not required, to complete the walkthrough:  
   
--   Verwenden des Serverobjektmodells für SharePoint.  Weitere Informationen finden Sie im Thema zur [Verwendung des serverseitigen SharePoint Foundation\-Objektmodells](http://go.microsoft.com/fwlink/?LinkId=177796) \(möglicherweise in englischer Sprache\).  
+-   Using the server object model for SharePoint. For more information, see [Using the SharePoint Foundation Server-Side Object Model](http://go.microsoft.com/fwlink/?LinkId=177796).  
   
--   SharePoint\-Lösungen.  Weitere Informationen finden Sie in der [Lösungsübersicht](http://go.microsoft.com/fwlink/?LinkId=169422) \(möglicherweise in englischer Sprache\).  
+-   SharePoint solutions. For more information, see [Solutions Overview](http://go.microsoft.com/fwlink/?LinkId=169422).  
   
--   Aktualisieren von SharePoint\-Lösungen.  Weitere Informationen finden Sie im Thema zum [Aktualisieren einer Lösung](http://go.microsoft.com/fwlink/?LinkId=177802) \(möglicherweise in englischer Sprache\).  
+-   Upgrading SharePoint solutions. For more information, see [Upgrading a Solution](http://go.microsoft.com/fwlink/?LinkId=177802).  
   
-## Erstellen der Projekte  
- Um diese exemplarische Vorgehensweise abzuschließen, müssen Sie drei Projekte erstellen:  
+## <a name="creating-the-projects"></a>Creating the Projects  
+ To complete this walkthrough, you must create three projects:  
   
--   Ein VSIX\-Projekt für die Erstellung des VSIX\-Pakets zum Bereitstellen der Erweiterung.  
+-   A VSIX project to create the VSIX package to deploy the extension.  
   
--   Ein Klassenbibliotheksprojekt, von dem die Erweiterung implementiert wird.  Dieses Projekt muss .NET Framework 4.5 abzielen.  
+-   A class library project that implements the extension. This project must target the .NET Framework 4.5.  
   
--   Ein Klassenbibliotheksprojekt, das die benutzerdefinierten SharePoint\-Befehle definiert.  Dieses Projekt muss .NET Framework 3.5 abzielen.  
+-   A class library project that defines the custom SharePoint commands. This project must target the .NET Framework 3.5.  
   
- Beginnen Sie mit der exemplarischen Vorgehensweise, indem Sie beide Projekte erstellen.  
+ Start the walkthrough by creating the projects.  
   
-#### So erstellen Sie das VSIX\-Projekt  
+#### <a name="to-create-the-vsix-project"></a>To create the VSIX project  
   
-1.  Starten Sie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1.  Start [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt** aus.  
+2.  On the menu bar, choose **File**, **New**, **Project**.  
   
-3.  Im Dialogfeld **Neues Projekt** erweitern Sie die **Visual C\#** oder Knoten **Visual Basic**, und wählen Sie dann den Knoten **Erweiterungen** aus.  
-  
-    > [!NOTE]  
-    >  Der Knoten **Erweiterungen** ist nur verfügbar, wenn Sie das Visual Studio SDK installieren.  Weitere Informationen finden Sie weiter oben in diesem Thema im Abschnitt zu den erforderlichen Komponenten.  
-  
-4.  am oberen Rand des Dialogfelds wählen Sie **.NET Framework 4.5** in der Liste der Versionen von .NET Framework aus.  
-  
-5.  Wählen Sie die **VSIX\-Projekt** Vorlage aus, geben Sie das Projekt **UpgradeDeploymentStep**, und wählen Sie dann die Schaltfläche **OK** aus.  
-  
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fügt das **UpgradeDeploymentStep**\-Projekt zum **Projektmappen\-Explorer** hinzu.  
-  
-#### So erstellen Sie das Erweiterungsprojekt  
-  
-1.  In **Projektmappen\-Explorer** öffnen Sie das Kontextmenü für den UpgradeDeploymentStep\-Projektmappenknoten, wählen Sie **Hinzufügen** aus und wählen dann **Neues Projekt** aus.  
+3.  In the **New Project** dialog box, expand the **Visual C#** or **Visual Basic** nodes, and then choose the **Extensibility** node.  
   
     > [!NOTE]  
-    >  In Visual Basic\-Projekten wird der Projektmappenknoten nur im **Projektmappen\-Explorer** angezeigt, wenn das Kontrollkästchen **Projektmappe immer anzeigen** in [NIB: General, Projects and Solutions, Options Dialog Box](http://msdn.microsoft.com/de-de/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca) aktiviert ist.  
+    >  The **Extensibility** node is available only if you install the Visual Studio SDK. For more information, see the prerequisites section earlier in this topic.  
   
-2.  Im Dialogfeld **Neues Projekt** erweitern Sie die **Visual C\#** oder Knoten **Visual Basic**, und wählen Sie dann den Knoten **Fenster** aus.  
+4.  At the top of the dialog box, choose **.NET Framework 4.5** in the list of versions of the .NET Framework.  
   
-3.  am oberen Rand des Dialogfelds wählen Sie **.NET Framework 4.5** in der Liste der Versionen von .NET Framework aus.  
+5.  Choose the **VSIX Project** template, name the project **UpgradeDeploymentStep**, and then choose the **OK** button.  
   
-4.  Wählen Sie die **Klassenbibliothek** Projektvorlage aus, nennen Sie das Projekt **DeploymentStepExtension**, und wählen Sie dann die Schaltfläche **OK** aus.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adds the **UpgradeDeploymentStep** project to **Solution Explorer**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fügt das Projekt **DeploymentStepExtension** der Projektmappe hinzu und öffnet die standardmäßige Class1\-Codedatei.  
+#### <a name="to-create-the-extension-project"></a>To create the extension project  
   
-5.  Löschen Sie die Class1\-Codedatei aus dem Projekt.  
-  
-#### So erstellen Sie das SharePoint\-Befehlsprojekt  
-  
-1.  In **Projektmappen\-Explorer** öffnen Sie das Kontextmenü für den UpgradeDeploymentStep\-Projektmappenknoten, wählen Sie **Hinzufügen** aus und wählen dann **Neues Projekt** aus.  
+1.  In **Solution Explorer**, open the shortcut menu for the UpgradeDeploymentStep solution node, choose **Add**, and then choose **New Project**.  
   
     > [!NOTE]  
-    >  In Visual Basic\-Projekten wird der Projektmappenknoten nur im **Projektmappen\-Explorer** angezeigt, wenn das Kontrollkästchen **Projektmappe immer anzeigen** in [NIB: General, Projects and Solutions, Options Dialog Box](http://msdn.microsoft.com/de-de/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca) aktiviert ist.  
+    >  In Visual Basic projects, the solution node appears in **Solution Explorer** only when the **Always show solution** check box is selected in the [NIB: General, Projects and Solutions, Options Dialog Box](http://msdn.microsoft.com/en-us/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
   
-2.  Im Dialogfeld **Neues Projekt** erweitern Sie **Visual C\#** oder **Visual Basic**, und wählen Sie dann den Knoten **Fenster** aus.  
+2.  In the **New Project** dialog box, expand the **Visual C#** or **Visual Basic** nodes, and then choose the **Windows** node.  
   
-3.  am oberen Rand des Dialogfelds wählen Sie **.NET Framework 3.5** in der Liste der Versionen von .NET Framework aus.  
+3.  At the top of the dialog box, choose **.NET Framework 4.5** in the list of versions of the .NET Framework.  
   
-4.  Wählen Sie die **Klassenbibliothek** Projektvorlage aus, nennen Sie das Projekt **SharePointCommands**, und wählen Sie dann die Schaltfläche **OK** aus.  
+4.  Choose the **Class Library** project template, name the project **DeploymentStepExtension**, and then choose the **OK** button.  
   
-     Visual Studio fügt der Projektmappe das Projekt **SharePointCommands** hinzu und öffnet die Class1\-Standardcodedatei.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adds the **DeploymentStepExtension** project to the solution and opens the default Class1 code file.  
   
-5.  Löschen Sie die Class1\-Codedatei aus dem Projekt.  
+5.  Delete the Class1 code file from the project.  
   
-## Konfigurieren der Projekte  
- Bevor Sie Code schreiben, um den benutzerdefinierten Bereitstellungsschritt zu erstellen, müssen Sie Codedateien und Assemblyverweise hinzufügen, und Sie müssen die Projekte konfigurieren.  
+#### <a name="to-create-the-sharepoint-command-project"></a>To create the SharePoint command project  
   
-#### So konfigurieren Sie das Projekt "DeploymentStepExtension"  
+1.  In **Solution Explorer**, open the shortcut menu for the UpgradeDeploymentStep solution node, choose **Add**, and then choose **New Project**.  
   
-1.  Im **DeploymentStepExtension** Projekt fügen Sie zwei Codedateien hinzu, die die folgenden Namen aufweisen:  
+    > [!NOTE]  
+    >  In Visual Basic projects, the solution node only appears in **Solution Explorer** when the **Always show solution** check box is selected in the [NIB: General, Projects and Solutions, Options Dialog Box](http://msdn.microsoft.com/en-us/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
+  
+2.  In the **New Project** dialog box, expand **Visual C#** or **Visual Basic**, and then choose the **Windows** node.  
+  
+3.  At the top of the dialog box, choose **.NET Framework 3.5** in the list of versions of the .NET Framework.  
+  
+4.  Choose the **Class Library** project template, name the project **SharePointCommands**, and then choose the **OK** button.  
+  
+     Visual Studio adds the **SharePointCommands** project to the solution and opens the default Class1 code file.  
+  
+5.  Delete the Class1 code file from the project.  
+  
+## <a name="configuring-the-projects"></a>Configuring the Projects  
+ Before you write code to create the custom deployment step, you must add code files and assembly references, and you must configure the projects.  
+  
+#### <a name="to-configure-the-deploymentstepextension-project"></a>To configure the DeploymentStepExtension project  
+  
+1.  In the **DeploymentStepExtension** project, add two code files that have the following names:  
   
     -   UpgradeStep  
   
     -   DeploymentConfigurationExtension  
   
-2.  Öffnen Sie das Kontextmenü im Projekt "DeploymentStepExtension", und wählen Sie dann **Verweis hinzufügen** aus.  
+2.  Open the shortcut menu on the DeploymentStepExtension project, and then choose **Add Reference**.  
   
-3.  **Framework** auf der Registerkarte das Kontrollkästchen für die System.ComponentModel.Compositions\-Assembly aus.  
+3.  On the **Framework** tab, select the check box for the System.ComponentModel.Composition assembly.  
   
-4.  **Erweiterungen** auf der Registerkarte das Kontrollkästchen für die Microsoft.VisualStudio.SharePoint\-Assembly aus, und wählen Sie dann die Schaltfläche **OK** aus.  
+4.  On the **Extensions** tab, select the check box for the Microsoft.VisualStudio.SharePoint assembly, and then choose the **OK** button.  
   
-#### So konfigurieren Sie das SharePointCommands\-Projekt  
+#### <a name="to-configure-the-sharepointcommands-project"></a>To configure the SharePointCommands project  
   
-1.  Im **SharePointCommands** Projekt fügen Sie eine Codedatei hinzu, die Commands genannt wird.  
+1.  In the **SharePointCommands** project, add a code file that's named Commands.  
   
-2.  In **Projektmappen\-Explorer** öffnen Sie das Kontextmenü im **SharePointCommands** Projektknoten, und wählen Sie dann **Verweis hinzufügen** aus.  
+2.  In **Solution Explorer**, open the shortcut menu on the **SharePointCommands** project node, and then choose **Add Reference**.  
   
-3.  **Erweiterungen** auf der Registerkarte die Kontrollkästchen für die folgenden Assemblys aus, und klicken Sie dann auf die Schaltfläche **OK** auswählen  
+3.  On the **Extensions** tab, select the check boxes for the following assemblies, and then click choose the **OK** button  
   
     -   Microsoft.SharePoint  
   
     -   Microsoft.VisualStudio.SharePoint.Commands  
   
-## Definieren des benutzerdefinierten Bereitstellungsschritts  
- Erstellen Sie eine Klasse, die den Upgradebereitstellungsschritt definiert.  Um den Bereitstellungsschritt zu definieren, implementiert die Klasse die <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep>\-Schnittstelle.  Implementieren Sie diese Schnittstelle immer dann, wenn Sie einen benutzerdefinierten Bereitstellungsschritt definieren möchten.  
+## <a name="defining-the-custom-deployment-step"></a>Defining the Custom Deployment Step  
+ Create a class that defines the upgrade deployment step. To define the deployment step, the class implements the <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep> interface. Implement this interface whenever you want to define a custom deployment step.  
   
-#### So definieren Sie den benutzerdefinierten Bereitstellungsschritt  
+#### <a name="to-define-the-custom-deployment-step"></a>To define the custom deployment step  
   
-1.  Im **DeploymentStepExtension** Projekt öffnen Sie die UpgradeStep\-Codedatei, und fügen Sie dann den folgenden Code in die ein.  
-  
-    > [!NOTE]  
-    >  Nachdem Sie diesen Code hinzufügen, weist das Projekt mehrere Compilerfehler, aber sie wechseln weg, wenn Sie Code in späteren Schritten hinzufügen.  
-  
-     [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../snippets/csharp/VS_Snippets_OfficeSP/spextensibility.projectextension.upgradedeploymentstep/CS/deploymentstepextension/upgradestep.cs#1)]
-     [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../snippets/visualbasic/VS_Snippets_OfficeSP/spextensibility.projectextension.upgradedeploymentstep/vb/deploymentstepextension/upgradestep.vb#1)]  
-  
-## Erstellen einer Bereitstellungskonfiguration, die den benutzerdefinierten Bereitstellungsschritt beinhaltet  
- Erstellen Sie eine Projekterweiterung für die neue Bereitstellungskonfiguration, die mehrere integrierte Bereitstellungsschritte und den neuen Upgradebereitstellungsschritt umfasst.  Mit dieser Erweiterung erstellen, unterstützen Sie SharePoint\-Entwicklern, den Upgradebereitstellungsschritt in SharePoint\-Projekten zu verwenden.  
-  
- Um die Bereitstellungskonfiguration zu erstellen, implementiert die Klasse die <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>\-Schnittstelle.  Implementieren Sie diese Schnittstelle immer dann, wenn Sie eine SharePoint\-Projekterweiterung erstellen möchten.  
-  
-#### So erstellen Sie die Bereitstellungskonfiguration  
-  
-1.  Im **DeploymentStepExtension** Projekt öffnen Sie die DeploymentConfigurationExtension\-Codedatei, und fügen Sie dann den folgenden Code in die ein.  
-  
-     [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../snippets/csharp/VS_Snippets_OfficeSP/spextensibility.projectextension.upgradedeploymentstep/CS/deploymentstepextension/deploymentconfigurationextension.cs#2)]
-     [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../snippets/visualbasic/VS_Snippets_OfficeSP/spextensibility.projectextension.upgradedeploymentstep/vb/deploymentstepextension/deploymentconfigurationextension.vb#2)]  
-  
-## Erstellen der benutzerdefinierten SharePoint\-Befehle  
- Erstellen Sie zwei benutzerdefinierte Befehle, die in das Serverobjektmodell für SharePoint aufrufen.  Ein Befehl ermittelt, ob bereits eine Projektmappe bereitgestellt wurde. Der zweite Befehl aktualisiert eine Projektmappe.  
-  
-#### So definieren Sie die SharePoint\-Befehle  
-  
-1.  Im **SharePointCommands** Projekt öffnen Sie die Codedatei Commands, und fügen Sie dann den folgenden Code in die ein.  
-  
-     [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#4](../snippets/csharp/VS_Snippets_OfficeSP/spextensibility.projectextension.upgradedeploymentstep/CS/SharePointCommands/Commands.cs#4)]
-     [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#4](../snippets/visualbasic/VS_Snippets_OfficeSP/spextensibility.projectextension.upgradedeploymentstep/vb/sharepointcommands/commands.vb#4)]  
-  
-## Checkpoint  
- An diesem Punkt in der exemplarischen Vorgehensweise ist der gesamte für den benutzerdefinierten Bereitstellungsschritt und die SharePoint\-Befehle benötigte Code in die Projekte eingebunden.  Erstellen Sie sie, um sicherzustellen, dass sie ohne Fehler kompiliert werden.  
-  
-#### Um die Projekte erstellen  
-  
-1.  In **Projektmappen\-Explorer** öffnen Sie das Kontextmenü für das **DeploymentStepExtension** Projekt, und wählen Sie dann **Erstellen** aus.  
-  
-2.  Öffnen Sie das Kontextmenü für das **SharePointCommands** Projekt, und wählen Sie dann **Erstellen** aus.  
-  
-## Erstellen eines VSIX\-Pakets zum Bereitstellen der Erweiterung  
- Zum Bereitstellen der Erweiterung erstellen Sie anhand des VSIX\-Projekts in der Lösung ein VSIX\-Paket.  Konfigurieren Sie zuerst das VSIX\-Paket, indem Sie die source.extension.vsixmanifest\-Datei im VSIX\-Projekt ändern.  Erstellen Sie anschließend das VSIX\-Paket, indem Sie die Projektmappe erstellen.  
-  
-#### So erstellen und konfigurieren Sie das VSIX\-Paket  
-  
-1.  In **Projektmappen\-Explorer** unter dem **UpgradeDeploymentStep** Projekt, öffnen Sie das Kontextmenü für die Datei **source.extension.vsixmanifest**, und wählen Sie dann **Öffnen** aus.  
-  
-     Die Datei wird von Visual Studio im Manifest\-Editor geöffnet.  Die Datei "source.extension.vsixmanifest" bildet die Grundlage für die Datei, die alle VSIX\-Pakete benötigen.  Weitere Informationen zu dieser Datei finden Sie unter [VSIX\-Erweiterungs\-Schemareferenz](http://msdn.microsoft.com/de-de/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
-  
-2.  Im Feld geben Sie **ProduktnameUpgrade Deployment Step for SharePoint Projects** ein.  
-  
-3.  Im Feld geben Sie **AutorContoso** ein.  
-  
-4.  Im Feld geben Sie **BeschreibungStellt einen benutzerdefinierten Upgradebereitstellungsschritt bereit, der in SharePoint\-Projekten verwendet werden kann** ein.  
-  
-5.  Auf der Registerkarte **Objekte** des Editors, wählen Sie die Schaltfläche **Neu** aus.  
-  
-     Das Dialogfeld wird angezeigt. **Neue Anlage hinzufügen**  
-  
-6.  In der Liste wählen Sie **TypMicrosoft.VisualStudio.MefComponent** aus.  
+1.  In the **DeploymentStepExtension** project, open the UpgradeStep code file, and then paste the following code into it.  
   
     > [!NOTE]  
-    >  Dieser Wert entspricht dem `MefComponent`\-Element in der Datei "extension.vsixmanifest".  Von diesem Element wird der Name einer Erweiterungsassembly im VSIX\-Paket angegeben.  Weitere Informationen finden Sie unter [NIB: MEFComponent Element \(VSX Schema\)](http://msdn.microsoft.com/de-de/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  After you add this code, the project will have some compile errors, but they'll go away when you add code in later steps.  
   
-7.  In der Liste wählen Sie **QuelleEin Projekt in der aktuellen Projektmappe** aus.  
+     [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs#1)]  [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb#1)]  
   
-8.  In der Liste wählen Sie **ProjektDeploymentStepExtension** aus und wählen dann die Schaltfläche **OK** aus.  
+## <a name="creating-a-deployment-configuration-that-includes-the-custom-deployment-step"></a>Creating a Deployment Configuration that Includes the Custom Deployment Step  
+ Create a project extension for the new deployment configuration, which includes several built-in deployment steps and the new upgrade deployment step. By creating this extension, you help SharePoint developers to use the upgrade deployment step in SharePoint projects.  
   
-9. im Manifest\-Editor wählen Sie die Schaltfläche **Neu** erneut aus.  
+ To create the deployment configuration, the class implements the <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> interface. Implement this interface whenever you want to create a SharePoint project extension.  
   
-     Das Dialogfeld wird angezeigt. **Neue Anlage hinzufügen**  
+#### <a name="to-create-the-deployment-configuration"></a>To create the deployment configuration  
   
-10. In der Liste **Typ** geben Sie **SharePoint.Commands.v4** ein.  
+1.  
+  
+2.  In the **DeploymentStepExtension** project, open the DeploymentConfigurationExtension code file, and then paste the following code into it.  
+  
+     [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/deploymentconfigurationextension.cs#2)]  [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/deploymentconfigurationextension.vb#2)]  
+  
+## <a name="creating-the-custom-sharepoint-commands"></a>Creating the Custom SharePoint Commands  
+ Create two custom commands that call into the server object model for SharePoint. One command determines whether a solution is already deployed; the other command upgrades a solution.  
+  
+#### <a name="to-define-the-sharepoint-commands"></a>To define the SharePoint commands  
+  
+1.  In the **SharePointCommands** project, open the Commands code file, and then paste the following code into it.  
+  
+     [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#4](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs#4)]  [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#4](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb#4)]  
+  
+## <a name="checkpoint"></a>Checkpoint  
+ At this point in the walkthrough, all the code for the custom deployment step and the SharePoint commands are now in the projects. Build them to make sure that they compile without errors.  
+  
+#### <a name="to-build-the-projects"></a>To build the projects  
+  
+1.  In **Solution Explorer**, open the shortcut menu for the **DeploymentStepExtension** project, and then choose **Build**.  
+  
+2.  Open the shortcut menu for the **SharePointCommands** project, and then choose **Build**.  
+  
+## <a name="creating-a-vsix-package-to-deploy-the-extension"></a>Creating a VSIX Package to Deploy the Extension  
+ To deploy the extension, use the VSIX project in your solution to create a VSIX package. First, configure the VSIX package by modifying the source.extension.vsixmanifest file in the VSIX project. Then create the VSIX package by building the solution.  
+  
+#### <a name="to-configure-and-create-the-vsix-package"></a>To configure and create the VSIX package  
+  
+1.  In **Solution Explorer**, under the **UpgradeDeploymentStep** project, open the shortcut menu for the **source.extension.vsixmanifest** file, and then choose **Open**.  
+  
+     Visual Studio opens the file in the manifest editor. The source.extension.vsixmanifest file is the basis for the extension.vsixmanifest file that all VSIX packages require. For more information about this file, see [VSIX Extension Schema 1.0 Reference](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+  
+2.  In the **Product Name** box, enter **Upgrade Deployment Step for SharePoint Projects**.  
+  
+3.  In the **Author** box, enter **Contoso**.  
+  
+4.  In the **Description** box, enter **Provides a custom upgrade deployment step that can be used in SharePoint projects**.  
+  
+5.  In the **Assets** tab of the editor, choose the **New** button.  
+  
+     The **Add New Asset** dialog box appears.  
+  
+6.  In the **Type** list, choose **Microsoft.VisualStudio.MefComponent**.  
   
     > [!NOTE]  
-    >  Dieses Element gibt eine benutzerdefinierte Erweiterung an, die Sie in die Visual Studio\-Erweiterung einschließen möchten.  Weitere Informationen finden Sie unter [Vermögensteil \(VSX Schema\)](http://msdn.microsoft.com/de-de/9fcfc098-edc7-484b-9d4c-acd17829d737).  
+    >  This value corresponds to the `MefComponent` element in the extension.vsixmanifest file. This element specifies the name of an extension assembly in the VSIX package. For more information, see [NIB: MEFComponent Element (VSX Schema)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
   
-11. In der Liste wählen Sie **QuelleEin Projekt in der aktuellen Projektmappe** aus.  
+7.  In the **Source** list, choose **A project in current solution**.  
   
-12. In der Liste wählen Sie **ProjektSharePointCommands** aus und wählen dann die Schaltfläche **OK** aus.  
+8.  In the **Project** list, choose **DeploymentStepExtension**, and then choose the **OK** button.  
   
-13. Klicken Sie auf der Menüleiste wählen Sie **Erstellen**, **Projektmappe erstellen** aus, und überprüfen Sie, ob die Projektmappe fehlerfrei kompiliert.  
+9. In the manifest editor, choose the **New** button again.  
   
-14. Stellen Sie sicher, dass der Buildausgabeordner für das Projekt UpgradeDeploymentStep jetzt die Datei UpgradeDeploymentStep.vsix enthält.  
+     The **Add New Asset** dialog box appears.  
   
-     Standardmäßig ist der Buildausgabeordner der  Ordner "\\bin\\Debug" im Ordner mit der Projektdatei.  
-  
-## Vorbereiten des Tests für den Upgradebereitstellungsschritt  
- Um den Upgradebereitstellungsschritt zu testen, müssen Sie zuerst eine Beispielprojektmappe auf der SharePoint\-Website bereitstellen.  Debuggen Sie die Erweiterung zunächst in der experimentellen Instanz von Visual Studio.  Anschließend erstellen Sie eine Listendefinition und eine Listeninstanz, um zu verwenden, um den Bereitstellungsschritt zu testen, und stellen Sie diese auf der SharePoint\-Website bereit.  Als Nächstes ändern Sie die Listendefinition und die Listeninstanz und stellen Sie sie erneut, um zu veranschaulichen, wie der Standardbereitstellungsprozess Projektmappen auf der SharePoint\-Website überschreibt.  
-  
- Später in dieser exemplarischen Vorgehensweise, ändern Sie die Listendefinition und die Listeninstanz, und aktualisieren Sie sie dann auf der SharePoint\-Website.  
-  
-#### So debuggen Sie die Erweiterung  
-  
-1.  Starten Sie Visual Studio erneut mit Administratorrechten, und öffnen Sie dann die UpgradeDeploymentStep.  
-  
-2.  Öffnen Sie im Projekt "DeploymentStepExtension" die UpgradeStep\-Codedatei, und fügen Sie anschließend einen Haltepunkt der ersten Codezeile in den `CanExecute` und `Execute`\-Methoden hinzu.  
-  
-3.  Starten Sie das Debuggen, indem Sie die F5\-TASTE, oder auf der Menüleiste auswählen und **Debuggen**, **Debuggen starten** auswählen.  
-  
-4.  Visual Studio installiert die Erweiterung in %UserProfile%\\AppData\\Local\\Microsoft\\VisualStudio\\11.0Exp\\Extensions\\Contoso\\Upgrade Deployment Step for SharePoint Projects\\1.0 und startet eine experimentelle Instanz von Visual Studio.  Sie testen den Upgradebereitstellungsschritt in dieser Instanz von Visual Studio.  
-  
-#### Um ein SharePoint\-Projekt mit einer Listendefinition und einer Liste zu erstellen führen Sie als Beispiel an  
-  
-1.  Klicken Sie in der experimentellen Instanz von Visual Studio, in der Menüleiste, wählen Sie **Datei**, **Neu**, **Projekt** aus.  
-  
-2.  Im Dialogfeld **Neues Projekt** erweitern Sie den Knoten **Visual C\#Visual Basic** oder den Knoten, erweitern Sie den Knoten **SharePoint**, und wählen Sie dann den Knoten **2010** aus.  
-  
-3.  am oberen Rand des Dialogfelds sicher, dass **.NET Framework 3.5** in der Liste der Versionen von .NET Framework wird angezeigt.  
-  
-     Projekte für [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] und [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] erfordern diese Version von .NET Framework.  
-  
-4.  In der Liste der Projektvorlagen, wählen Sie **SharePoint 2010\-Projekt** aus, nennen Sie das Projekt **EmployeesListDefinition**, und wählen Sie dann die Schaltfläche **OK** aus.  
-  
-5.  In **Assistent zum Anpassen von SharePoint** geben Sie die URL der Website ein, die Sie zum Debuggen verwenden möchten.  
-  
-6.  Die **Was die Vertrauensebene für diese SharePoint\-Lösung ist** wählen Sie das Optionsfeld **Als Farmlösung bereitstellen**.  
+10. In the **Type** list, enter **SharePoint.Commands.v4**.  
   
     > [!NOTE]  
-    >  Der Upgradebereitstellungsschritt unterstützt keine Sandkastenlösungen.  
+    >  This element specifies a custom extension that you want to include in the Visual Studio extension. For more information, see [Asset Element (VSX Schema)](http://msdn.microsoft.com/en-us/9fcfc098-edc7-484b-9d4c-acd17829d737).  
   
-7.  Wählen Sie die Schaltfläche **Fertig stellen** aus.  
+11. In the **Source** list, choose **A project in current solution**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erstellt das Projekt EmployeesListDefinition\-Projekt.  
+12. In the **Project** list, choose **SharePointCommands**, and then choose the **OK** button.  
   
-8.  Öffnen Sie das Kontextmenü für das Projekt EmployeesListDefinition\-Projekt, wählen Sie **Hinzufügen** aus und wählen dann **Neues Element** aus.  
+13. On the menu bar, choose **Build**, **Build Solution**, and then make sure that the solution compiles without errors.  
   
-9. Im **Neues Element hinzufügen – EmployeesListDefinition** Dialogfeld **SharePoint** erweitern Sie den Knoten, und wählen Sie dann den Knoten **2010** aus.  
+14. Make sure that the build output folder for the UpgradeDeploymentStep project now contains the UpgradeDeploymentStep.vsix file.  
   
-10. Wählen Sie die **Liste**\-Elementvorlage aus, geben Sie das Element **Mitarbeiterliste**, und wählen Sie dann die Schaltfläche **Hinzufügen** aus.  
+     By default, the build output folder is the ..\bin\Debug folder under the folder that contains your project file.  
   
-     Der Assistent zum Anpassen von SharePoint wird  
+## <a name="preparing-to-test-the-upgrade-deployment-step"></a>Preparing to Test the Upgrade Deployment Step  
+ To test the upgrade deployment step, you must first deploy a sample solution to the SharePoint site. Start by debugging the extension in the experimental instance of Visual Studio. Then create a list definition and list instance to use to test the deployment step, and then deploy them to the SharePoint site. Next, modify the list definition and list instance and redeploy them to demonstrate how the default deployment process overwrites solutions on the SharePoint site.  
   
-11. **Listeneinstellungen auswählen** auf der Seite die folgenden Einstellungen, und wählen Sie dann die Schaltfläche **Fertig stellen** aus:  
+ Later in this walkthrough, you'll modify the list definition and list instance, and then you'll upgrade them on the SharePoint site.  
   
-    1.  **Mitarbeiterliste** wird im **Welcher Name soll für Ihre Liste angezeigt werden?** Feld.  
+#### <a name="to-start-debugging-the-extension"></a>To start debugging the extension  
   
-    2.  Das **Erstellen Sie eine anpassbare Liste basierend auf:** Optionsfeld ausgewählt wird.  
+1.  Restart Visual Studio with administrative credentials, and then open the UpgradeDeploymentStep solution.  
   
-    3.  **Standard \(leer\)** wird in der Liste **Erstellen Sie eine anpassbare Liste basierend auf:** ausgewählt.  
+2.  In the DeploymentStepExtension project, open the UpgradeStep code file, and then add a breakpoint to the first line of code in the `CanExecute` and `Execute` methods.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erstellt das Mitarbeiter\-Listenelement mit einer Titelspalte und ein einzelnes leeren Instanz und den Listen\-Designer.  
+3.  Start debugging by choosing the F5 key or, on the menu bar, choosing **Debug**, **Start Debugging**.  
   
-12. Im Listen\-Designer auf der Registerkarte **Spalten**, wählen Sie die Zeile **Neuen oder vorhandenen Spaltennamen eingeben** aus, und fügen Sie dann die folgenden Spalten in der Liste **Anzeigename der Spalte** hinzu:  
+4.  Visual Studio installs the extension to %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Upgrade Deployment Step for SharePoint Projects\1.0 and starts an experimental instance of Visual Studio. You'll test the upgrade deployment step in this instance of Visual Studio.  
   
-    1.  Vorname  
+#### <a name="to-create-a-sharepoint-project-with-a-list-definition-and-a-list-instance"></a>To create a SharePoint project with a list definition and a list instance  
   
-    2.  Firma  
+1.  In the experimental instance of Visual Studio, on the menu bar, choose **File**, **New**, **Project**.  
   
-    3.  Geschäfts\-Telefon  
+2.  In the **New Project** dialog box, expand the **Visual C#** node or the **Visual Basic** node, expand the **SharePoint** node, and then choose the **2010** node.  
   
-    4.  E\-Mail  
+3.  At the top of the dialog box, make sure that **.NET Framework 3.5** appears in the list of versions of the .NET Framework.  
   
-13. Speichern Sie alle Dateien, und schließen Sie dann den Listen\-Designer.  
+     Projects for [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] and [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] require this version of the .NET Framework.  
   
-14. In **Projektmappen\-ExplorerMitarbeiterliste** erweitern Sie den Knoten, und erweitern Sie dann den untergeordneten Knoten **Mitarbeiter\-Listen\-Instanz**.  
+4.  In the list of project templates, choose **SharePoint 2010 Project**, name the project **EmployeesListDefinition**, and then choose the **OK** button.  
   
-15. In der Datei Elements.xml ersetzen Sie das Standard\-XML in dieser Datei durch folgendes XML.  Dieses XML ändert den Namen der Liste in **Mitarbeiter** und werden Informationen für einen Mitarbeiter hinzu, mit dem Namen Jim Hance verfügt.  
+5.  In the **SharePoint Customization Wizard**, enter the URL of the site that you want to use for debugging.  
+  
+6.  Under **What is the trust level for this SharePoint solution**, choose the **Deploy as a farm solution** option button.  
+  
+    > [!NOTE]  
+    >  The upgrade deployment step doesn't support sandboxed solutions.  
+  
+7.  Choose the **Finish** button.  
+  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] creates the EmployeesListDefinition project.  
+  
+8.  Open the shortcut menu for the EmployeesListDefinition project, choose **Add**, and then choose **New Item**.  
+  
+9. In the **Add New Item - EmployeesListDefinition** dialog box, expand the **SharePoint** node, and then choose the **2010** node.  
+  
+10. Choose the **List** item template, name the item **Employees List**, and then choose the **Add** button.  
+  
+     The SharePoint Customization Wizard appears  
+  
+11. On the **Choose List Settings** page, verify the following settings, and then choose the **Finish** button:  
+  
+    1.  **Employees List** appears in the **What name do you want to display for your list?** box.  
+  
+    2.  The **Create a customizable list based on:** option button is chosen.  
+  
+    3.  **Default (Blank)** is chosen in the **Create a customizable list based on:** list.  
+  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] creates the Employees List item with a Title column and a single empty instance and opens the List Designer.  
+  
+12. In the List Designer, on the **Columns** tab, choose the **Type a new or existing column name** row, and then add the following columns in the **Column Display Name** list:  
+  
+    1.  First Name  
+  
+    2.  Company  
+  
+    3.  Business Phone  
+  
+    4.  E-Mail  
+  
+13. Save all files, and then close the List Designer.  
+  
+14. In **Solution Explorer**, expand the **Employees List** node, and then expand the **Employees List Instance** child node.  
+  
+15. In the Elements.xml file, replace the default XML in this file with the following XML. This XML changes the name of the list to **Employees** and adds information for an employee who's named Jim Hance.  
   
     ```  
-  
+    <?xml version="1.0" encoding="utf-8"?>  
     <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
       <ListInstance Title="Employees"  
                     OnQuickLaunch="TRUE"  
@@ -333,36 +337,36 @@ caps.handback.revision: 62
     </Elements>  
     ```  
   
-16. Speichern und schließen Sie die Datei Elements.xml.  
+16. Save and close the Elements.xml file.  
   
-17. Öffnen Sie das Kontextmenü für das Projekt EmployeesListDefinition\-Projekt, und wählen Sie dann **Öffnen** oder **Eigenschaften** aus.  
+17. Open the shortcut menu for the EmployeesListDefinition project, and then choose **Open** or **Properties**.  
   
-     Der Eigenschaft\-Designer wird geöffnet.  
+     The Properties Designer opens.  
   
-18. Klicken Sie auf der Registerkarte **SharePoint** deaktivieren Sie das Kontrollkästchen **Nach Debuggen automatisch zurückziehen**, und speichern Sie dann die Eigenschaften.  
+18. On the **SharePoint** tab, clear the **Auto-retract after debugging** check box, and then save the properties.  
   
-#### So stellen Sie die Listendefinition und die Listeninstanz bereit  
+#### <a name="to-deploy-the-list-definition-and-list-instance"></a>To deploy the list definition and list instance  
   
-1.  In **Projektmappen\-Explorer** wählen Sie den **EmployeesListDefinition** Projektknoten aus.  
+1.  In **Solution Explorer**, choose the **EmployeesListDefinition** project node.  
   
-2.  Stellen Sie im **Eigenschaftenfenster** sicher, dass die Eigenschaft **Aktive Bereitstellungskonfiguration** auf **Standard** festgelegt ist \(dies ist die Standardeinstellung\).  
+2.  In the **Properties** window, make sure that the **Active Deployment Configuration** property is set to **Default**.  
   
-3.  Wählen Sie die F5\-TASTE, oder auf der Menüleiste aus, wählen Sie **Debuggen**, **Debuggen starten** aus.  
+3.  Choose the F5 key or, on the menu bar, choose **Debug**, **Start Debugging**.  
   
-4.  Überprüfen Sie, ob das Projekt erfolgreich erstellt der Webbrowser zur SharePoint\-Website geöffnet wird, dass das **Listen**\-Element in der Schnellstartleiste die neue Liste **Mitarbeiter** umfasst und dass die Liste **Mitarbeiter** den Eintrag für Jim Hance umfasst.  
+4.  Verify that the project builds successfully, that the web browser opens to the SharePoint site, that the **Lists** item in the Quick Launch bar includes the new **Employees** list, and that the **Employees** list includes the entry for Jim Hance.  
   
-5.  Schließen Sie den Webbrowser.  
+5.  Close the web browser.  
   
-#### So ändern Sie die Listendefinition und stellen die Listeninstanz erneut bereit  
+#### <a name="to-modify-the-list-definition-and-list-instance-and-redeploy-them"></a>To modify the list definition and list instance and redeploy them  
   
-1.  im Projekt EmployeesListDefinition\-Projekt öffnen Sie die Datei Elements.xml, die ein untergeordnetes Element des Projektelements ist. **Mitarbeiter\-Listen\-Instanz**  
+1.  In the EmployeesListDefinition project, open the Elements.xml file that's a child of the **Employee List Instance** project item.  
   
-2.  Entfernen Sie das `Data`\-Element und die untergeordneten Elemente, um den Eintrag für Jim Hance aus der Liste zu entfernen.  
+2.  Remove the `Data` element and its children to remove the entry for Jim Hance from the list.  
   
-     Wenn Sie Ende, die Datei das folgende XML enthalten sollen.  
+     When you finish, the file should contain the following XML.  
   
     ```  
-  
+    <?xml version="1.0" encoding="utf-8"?>  
     <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
       <ListInstance Title="Employees"  
                     OnQuickLaunch="TRUE"  
@@ -373,125 +377,125 @@ caps.handback.revision: 62
     </Elements>  
     ```  
   
-3.  Speichern und schließen Sie die Datei Elements.xml.  
+3.  Save and close the Elements.xml file.  
   
-4.  Öffnen Sie das Kontextmenü für das **Mitarbeiterliste** Projektelement, und wählen Sie dann **Öffnen** oder **Eigenschaften** aus.  
+4.  Open the shortcut menu for the **Employees List** project item, and then choose **Open** or **Properties**.  
   
-5.  Im Listen\-Designer **Ansichten** wählen Sie die Registerkarte aus.  
+5.  In the List Designer, choose the **Views** tab.  
   
-6.  In der Liste wählen Sie **Ausgewählte SpaltenAnlagen** aus und wählen dann \< die Schlüssel aus, sicher, dass die Spalte zur Liste **Verfügbare Spalten** zu bewegen.  
+6.  In the **Selected columns** list, choose **Attachments**, and then choose the < key to move that column to the **Available columns** list.  
   
-7.  Wiederholen Sie den vorherigen Schritt, um die Spalte **Rufnummer \(geschäftlich\)** aus der Liste **Ausgewählte Spalten** auf die Liste **Verfügbare Spalten** zu verschieben.  
+7.  Repeat the previous step to move the **Business Phone** column from the **Selected columns** list to the **Available columns** list.  
   
-     Durch diese Aktion werden diese Felder nicht mehr in der Standardansicht der Liste **Employees** auf der SharePoint\-Website angezeigt.  
+     This action removes these fields from the default view of the **Employees** list on the SharePoint site.  
   
-8.  Starten Sie das Debuggen, indem Sie die F5\-TASTE, oder auf der Menüleiste auswählen und **Debuggen**, **Debuggen starten** auswählen.  
+8.  Start debugging by choosing the F5 key or, on the menu bar, choosing **Debug**, **Start Debugging**.  
   
-9. Überprüfen Sie, ob das Dialogfeld **Bereitstellungskonflikte** angezeigt wird.  
+9. Verify that the **Deployment Conflicts** dialog box appears.  
   
-     Dieses Dialogfeld wird angezeigt, wenn Visual Studio versucht, eine Projektmappe \(die Listeninstanz\) auf einer SharePoint\-Website bereitzustellen, auf die diese Projektmappe bereitgestellt wurde.  Dieses Dialogfeld wird nicht angezeigt, wenn Sie den Upgradebereitstellungsschritt später in dieser exemplarischen Vorgehensweise ausführen.  
+     This dialog box appears when Visual Studio tries to deploy a solution (the list instance) to a SharePoint site to which that solution has already been deployed. This dialog box won't appear when you execute the upgrade deployment step later in this walkthrough.  
   
-10. Im Dialogfeld **Bereitstellungskonflikte** wählen Sie das Optionsfeld **Automatisch beheben**.  
+10. In the **Deployment Conflicts** dialog box, choose the **Resolve Automatically** option button.  
   
-     Visual Listeninstanz auf der SharePoint\-Website wird gelöscht, das Listenelement im Projekt bereit und öffnet dann die SharePoint\-Website.  
+     Visual Studio deletes the list instance on the SharePoint site, deploys the list item in the project, and then opens the SharePoint site.  
   
-11. Im **Listen**\-Abschnitt der Schnellstartleiste, wählen Sie die Liste **Mitarbeiter** aus, und überprüfen Sie dann die folgenden Informationen:  
+11. In the **Lists** section of the Quick Launch bar, choose the **Employees** list, and then verify the following details:  
   
-    -   Die **Anlagen** und **Rufnummer \(privat\)** Spalten werden nicht in dieser Ansicht der Liste.  
+    -   The **Attachments** and **Home Phone** columns don't appear in this view of the list.  
   
-    -   Die Liste ist leer.  Als Sie die Projektmappe mit der Bereitstellungskonfiguration **Standard** erneut bereitgestellt haben, wurde die Liste **Employees** durch die neue leere Liste im Projekt ersetzt.  
+    -   The list is empty. When you used the **Default** deployment configuration to redeploy the solution, the **Employees** list was replaced with the new empty list in your project.  
   
-## Testen des Bereitstellungsschritts  
- Jetzt können Sie den Upgradebereitstellungsschritt testen.  Fügen Sie zuerst der Listeninstanz in SharePoint ein Element hinzu.  Anschließend ändern Sie die Listendefinition und eine Listeninstanz, aktualisieren Sie sie auf der SharePoint\-Website, und bestätigen Sie, dass nicht durch den Upgradebereitstellungsschritt überschrieben wird.  
+## <a name="testing-the-deployment-step"></a>Testing the Deployment Step  
+ You are now ready to test the upgrade deployment step. First, add an item to the list instance in SharePoint. Then change the list definition and list instance, upgrade them on the SharePoint site, and confirm that the upgrade deployment step doesn't overwrite the new item.  
   
-#### So fügen Sie manuell ein neues Listenelement hinzu  
+#### <a name="to-manually-add-an-item-to-the-list"></a>To manually add an item to the list  
   
-1.  Klicken Sie im Menüband auf der SharePoint\-Website, unter der Registerkarte **Listentools**, wählen Sie die Registerkarte **Elemente** aus.  
+1.  In the ribbon on the SharePoint site, under the **List Tools** tab, choose the **Items** tab.  
   
-2.  In der Gruppe **Neu** wählen Sie **Neues Element** aus.  
+2.  In the **New** group, choose **New Item**.  
   
-     Alternativ können Sie den **Neues Element hinzufügen** Link in der Elementliste selbst auswählen.  
+     As an alternative, you can choose the **Add new item** link in the item list itself.  
   
-3.  **Mitarbeiter – Neues Element** im Fenster im Feld **Titel**, geben Sie **Feature\-Manager** ein.  
+3.  In the **Employees - New Item** window, in the **Title** box, enter **Facilities Manager**.  
   
-4.  Im Feld geben Sie **VornameAndy** ein.  
+4.  In the **First Name** box, enter **Andy**.  
   
-5.  Im Feld geben Sie **FirmaContoso** ein.  
+5.  In the **Company** box, type **Contoso**.  
   
-6.  Wählen Sie die Schaltfläche **Speichern** aus, überprüfen Sie, dass der neue Element in der Liste angezeigt wird, und schließen Sie dann den Webbrowser.  
+6.  Choose the **Save** button, verify that the new item appears in the list, and then close the web browser.  
   
-     Später in dieser exemplarischen Vorgehensweise, verwenden Sie dieses Element, um sicherzustellen, dass der Upgradebereitstellungsschritt den Inhalt dieser Liste nicht überschreibt.  
+     Later in this walkthrough, you will use this item to verify that the upgrade deployment step doesn't overwrite the contents of this list.  
   
-#### So testen Sie den Upgradebereitstellungsschritt  
+#### <a name="to-test-the-upgrade-deployment-step"></a>To test the upgrade deployment step  
   
-1.  Klicken Sie in der experimentellen Instanz von Visual Studio, in **Projektmappen\-Explorer**, öffnen Sie das Kontextmenü für den **EmployeesListDefinition** Projektknoten, und wählen Sie dann **Eigenschaften** aus.  
+1.  In the experimental instance of Visual Studio, in **Solution Explorer**, open the shortcut menu for the **EmployeesListDefinition** project node, and then choose **Properties**.  
   
-     Der Eigenschaft\-Editor\/der Designer wird geöffnet.  
+     The Properties Editor/Designer opens.  
   
-2.  Klicken Sie auf der Registerkarte **SharePoint** legen Sie die \- Eigenschaft auf **Aktive BereitstellungskonfigurationUpgrade** fest.  
+2.  On the **SharePoint** tab, set the **Active Deployment Configuration** property to **Upgrade**.  
   
-     Diese benutzerdefinierte Bereitstellungskonfiguration umfasst den neuen Upgradebereitstellungsschritt.  
+     This custom deployment configuration includes the new upgrade deployment step.  
   
-3.  Öffnen Sie das Kontextmenü für das **Mitarbeiterliste** Projektelement, und wählen Sie dann **Eigenschaften** oder **Öffnen** aus.  
+3.  Open the shortcut menu for the **Employees List** project item, and then choose **Properties** or **Open**.  
   
-     Der Eigenschaft\-Editor\/der Designer wird geöffnet.  
+     The Properties Editor/Designer opens.  
   
-4.  **Ansichten** auf der Registerkarte die Spalte **E\-Mail** aus, und wählen Sie dann die **\<** Schlüssel, um sich die Spalte aus der Liste in die Liste **Ausgewählte SpaltenVerfügbare Spalten** zu bewegen.  
+4.  On the **Views** tab, choose the **E-Mail** column, and then choose the **<** key to move that column from the **Selected columns** list to the **Available columns** list.  
   
-     Durch diese Aktion werden diese Felder nicht mehr in der Standardansicht der Liste **Employees** auf der SharePoint\-Website angezeigt.  
+     This action removes these fields from the default view of the **Employees** list on the SharePoint site.  
   
-5.  Starten Sie das Debuggen, indem Sie die F5\-TASTE, oder auf der Menüleiste auswählen und **Debuggen**, **Debuggen starten** auswählen.  
+5.  Start debugging by choosing the F5 key or, on the menu bar, choosing **Debug**, **Start Debugging**.  
   
-6.  Überprüfen Sie, ob die Codeausführung in der anderen Instanz von Visual Studio an dem Haltepunkt unterbrochen wird, den Sie zuvor in der `CanExecute`\-Methode festgelegt haben.  
+6.  Verify that the code in the other instance of Visual Studio stops on the breakpoint that you set earlier in the `CanExecute` method.  
   
-7.  Wählen Sie die F5\-TASTE erneut, oder auf der Menüleiste aus, wählen Sie **Debuggen**, **Weiter** aus.  
+7.  Choose the F5 key again or, on the menu bar, choose **Debug**, **Continue**.  
   
-8.  Überprüfen Sie, ob der Code an dem Haltepunkt unterbrochen wird, den Sie zuvor in der `Execute`\-Methode festgelegt haben.  
+8.  Verify that the code stops on the breakpoint that you set earlier in the `Execute` method.  
   
-9. Wählen Sie die F5\-TASTE, oder auf der Menüleiste aus, wählen Sie **Debuggen**, **Weiter** ein letztes Mal aus.  
+9. Choose the F5 key or, on the menu bar, choose **Debug**, **Continue** a final time.  
   
-     Im Webbrowser wird die SharePoint\-Website.  
+     The web browser opens the SharePoint site.  
   
-10. Im **Listen**\-Abschnitt des Schnellstartbereichs, wählen Sie die Liste **Mitarbeiter** aus, und überprüfen Sie dann die folgenden Informationen:  
+10. In the **Lists** section of the Quick Launch area, choose the **Employees** list, and then verify the following details:  
   
-    -   Das Element, das Sie zuvor hinzugefügt haben \(manuell für Andy, der Funktionsmanager\) ist immer noch in der Liste.  
+    -   The item that you manually added earlier (for Andy, the facilities manager) is still in the list.  
   
-    -   Die **Rufnummer \(geschäftlich\)** und **E\-Mail\-Adresse** Spalten werden nicht in dieser Ansicht der Liste.  
+    -   The **Business Phone** and **E-mail Address** columns don't appear in this view of the list.  
   
-     Die Bereitstellungskonfiguration **Upgrade** ändert die vorhandene **Employees**\-Listeninstanz auf der SharePoint\-Website.  Wenn Sie die Bereitstellungskonfiguration **Standard** anstelle der Konfiguration **Upgrade** verwendet hätten, wäre ein Bereitstellungskonflikt aufgetreten.  Visual Studio würde den Konflikt lösen, indem es die Liste **Mitarbeiter** ersetzt, und das \- Element für Andy, der Funktionsmanager, würde gelöscht.  
+     The **Upgrade** deployment configuration modifies the existing **Employees** list instance on the SharePoint site. If you used the **Default** deployment configuration instead of the **Upgrade** configuration, you would encounter a deployment conflict. Visual Studio would resolve the conflict by replacing the **Employees** list, and the item for Andy, the facilities manager, would be deleted.  
   
-## Bereinigen des Entwicklungscomputers  
- Nach dem Abschluss der Tests für den Upgradebereitstellungsschritt entfernen Sie die Listeninstanz und die Listendefinition von der SharePoint\-Website. Entfernen Sie dann die Bereitstellungsschritterweiterung aus Visual Studio.  
+## <a name="cleaning-up-the-development-computer"></a>Cleaning up the Development Computer  
+ After you finish testing the upgrade deployment step, remove the list instance and list definition from the SharePoint site, and remove the deployment step extension from Visual Studio.  
   
-#### So entfernen Sie die Listeninstanz von der SharePoint\-Website  
+#### <a name="to-remove-the-list-instance-from-the-sharepoint-site"></a>To remove the list instance from the SharePoint site  
   
-1.  Öffnen Sie die Liste **Mitarbeiter** auf der SharePoint\-Website, wenn die Liste nicht bereits geöffnet ist.  
+1.  Open the **Employees** list on the SharePoint site, if the list isn't already open.  
   
-2.  Klicken Sie im Menüband auf der SharePoint\-Website, wählen Sie die Registerkarte **Listentools** aus, und wählen Sie dann die Registerkarte aus. **Liste**  
+2.  In the ribbon on the SharePoint site, choose the **List Tools** tab, and then choose the **List** tab.  
   
-3.  In der Gruppe **EinstellungenListeneinstellungen** wählen Sie das Element aus.  
+3.  In the **Settings** group, choose the **List Settings** item.  
   
-4.  Die **Berechtigungen und Verwaltung** wählen Sie den Befehl **Diese Liste löschen**, wählen **OK**, um zu bestätigen, dass Sie die Liste an den Papierkorb senden möchten, und schließen dann den Webbrowser aus.  
+4.  Under **Permissions and Management**, choose the **Delete this list** command, choose **OK** to confirm that you want to send the list to the Recycle Bin, and then close the web browser.  
   
-#### So entfernen Sie die Listendefinition von der SharePoint\-Website  
+#### <a name="to-remove-the-list-definition-from-the-sharepoint-site"></a>To remove the list definition from the SharePoint site  
   
-1.  Klicken Sie in der experimentellen Instanz von Visual Studio, in der Menüleiste, wählen Sie **Erstellen**, **Zurückziehen** aus.  
+1.  In the experimental instance of Visual Studio, on the menu bar, choose **Build**, **Retract**.  
   
-     Visual Studio nimmt die Listendefinition von der SharePoint\-Website zurück.  
+     Visual Studio retracts the list definition from the SharePoint site.  
   
-#### So deinstallieren Sie die Erweiterung  
+#### <a name="to-uninstall-the-extension"></a>To uninstall the extension  
   
-1.  Klicken Sie in der experimentellen Instanz von Visual Studio, in der Menüleiste, wählen Sie **Tools**, **Erweiterungen und Updates** aus.  
+1.  In the experimental instance of Visual Studio, on the menu bar, choose **Tools**, **Extensions and Updates**.  
   
-     Das Dialogfeld wird geöffnet. **Erweiterungen und Updates**  
+     The **Extensions and Updates** dialog box opens.  
   
-2.  In der Liste der Erweiterungen, wählen Sie **Aktualisieren Sie Bereitstellungsschritt für SharePoint\-Projekte** aus und wählen dann den Befehl **Deinstallieren** aus.  
+2.  In the list of extensions, choose **Upgrade Deployment Step for SharePoint Projects**, and then choose the **Uninstall** command.  
   
-3.  Im Dialogfeld, das angezeigt wird, wählen Sie **Ja**, um zu bestätigen, dass Sie die Erweiterung deinstallieren möchten, und wählen Sie dann **Jetzt neu starten**, um die Deinstallation abzuschließen.  
+3.  In the dialog box that appears, choose **Yes** to confirm that you want to uninstall the extension, and then choose **Restart Now** to complete the uninstallation.  
   
-4.  Schließen Sie beide Instanzen von Visual Studio \(die experimentelle Instanz und die Instanz von Visual Studio, in der die Projektmappe "UpgradeDeploymentStep" geöffnet ist\).  
+4.  Close both instances of Visual Studio (the experimental instance and the instance of Visual Studio in which the UpgradeDeploymentStep solution is open).  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [Extending SharePoint Packaging and Deployment](../sharepoint/extending-sharepoint-packaging-and-deployment.md)  
   
   

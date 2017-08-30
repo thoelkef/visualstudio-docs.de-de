@@ -1,42 +1,46 @@
 ---
-title: "Gewusst wie: Programmgesteuertes L&#246;schen von Terminen"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Kalender [Office-Entwicklung in Visual Studio], Löschen von Terminen"
-  - "Löschen von Terminen"
-  - "Termine [Office-Entwicklung in Visual Studio]"
+title: 'How to: Programmatically Delete Appointments | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- calendars [Office development in Visual Studio], deleting appointments
+- deleting appointments
+- appointments [Office development in Visual Studio]
 ms.assetid: 34bd2d5e-a075-4fbe-809f-479c72fc735a
 caps.latest.revision: 16
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 16
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: bc714bab21bb2495cdb74730dc4bbb948752be23
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Gewusst wie: Programmgesteuertes L&#246;schen von Terminen
-  In diesem Beispiel wird eine Instanz eines sich wiederholenden Termins gelöscht. Für das Beispiel wird davon ausgegangen, dass am 28. Juni 2006 um 08:00 Uhr eine Instanz eines sich wiederholenden Termins stattfindet.  
+# <a name="how-to-programmatically-delete-appointments"></a>How to: Programmatically Delete Appointments
+  This example deletes one instance of a recurring appointment. The example assumes that an instance of a recurring appointment occurs on June 28, 2006, at 08:00.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-## Beispiel  
- [!code-csharp[Trin_Outlook_RL_DeleteAppointment#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Outlook_RL_DeleteAppointment/CS/thisaddin.cs#1)]
- [!code-vb[Trin_Outlook_RL_DeleteAppointment#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Outlook_RL_DeleteAppointment/VB/thisaddin.vb#1)]  
+## <a name="example"></a>Example  
+ [!code-vb[Trin_Outlook_RL_DeleteAppointment#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_DeleteAppointment/thisaddin.vb#1)] [!code-csharp[Trin_Outlook_RL_DeleteAppointment#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_DeleteAppointment/thisaddin.cs#1)]  
   
-## Siehe auch  
- [Arbeiten mit Kalenderelementen](../vsto/working-with-calendar-items.md)   
- [Erste Schritte beim Programmieren von VSTO-Add-Ins](../vsto/getting-started-programming-vsto-add-ins.md)   
- [Gewusst wie: Programmgesteuertes Erstellen von Terminen](../vsto/how-to-programmatically-create-appointments.md)   
- [Gewusst wie: Programmgesteuertes Erstellen eines benutzerdefinierten Kalenders](../vsto/how-to-programmatically-create-a-custom-calendar.md)   
- [Gewusst wie: Programmgesteuertes Erstellen einer Besprechungsanfrage](../vsto/how-to-programmatically-create-a-meeting-request.md)  
+## <a name="see-also"></a>See Also  
+ [Working with Calendar Items](../vsto/working-with-calendar-items.md)   
+ [Getting Started Programming VSTO Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)   
+ [How to: Programmatically Create Appointments](../vsto/how-to-programmatically-create-appointments.md)   
+ [How to: Programmatically Create a Custom Calendar](../vsto/how-to-programmatically-create-a-custom-calendar.md)   
+ [How to: Programmatically Create a Meeting Request](../vsto/how-to-programmatically-create-a-meeting-request.md)  
   
   

@@ -1,248 +1,247 @@
 ---
-title: "Exemplarische Vorgehensweise: Erstellen einer Vorlage mithilfe von Inhaltssteuerelementen"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Bausteine [Office-Entwicklung in Visual Studio]"
-  - "Inhaltssteuerelemente [Office-Entwicklung in Visual Studio], Hinzufügen zu Dokumenten"
-  - "Word [Office-Entwicklung in Visual Studio], Erstellen von Dokumenten"
+title: 'Walkthrough: Creating a Template By Using Content Controls | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- building blocks [Office development in Visual Studio]
+- Word [Office development in Visual Studio], creating documents
+- content controls [Office development in Visual Studio], adding to documents
 ms.assetid: 88fb9a60-dcc3-4a5f-a8c9-7aff01ca4b4b
 caps.latest.revision: 46
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 42
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 3876ec91cb4872e2a08ee83b60aeca7ce974ad0d
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Exemplarische Vorgehensweise: Erstellen einer Vorlage mithilfe von Inhaltssteuerelementen
-  Diese exemplarische Vorgehensweise veranschaulicht, wie eine Anpassung auf Dokumentebene erstellt wird, die Inhaltssteuerelemente zum Erstellen strukturierter und wiederverwendbarer Inhalte in einer Microsoft Office Word\-Vorlage verwendet.  
+# <a name="walkthrough-creating-a-template-by-using-content-controls"></a>Walkthrough: Creating a Template By Using Content Controls
+  This walkthrough demonstrates how to create a document-level customization that uses content controls to create structured and reusable content in a Microsoft Office Word template.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
   
- Mithilfe von Word können Sie eine Auflistung wiederverwendbarer Dokumentbausteine erstellen, die als *Bausteine* bezeichnet werden.  Diese exemplarische Vorgehensweise veranschaulicht, wie zwei Tabellen als Bausteine erstellt werden.  Jede Tabelle enthält mehrere Inhaltssteuerelemente, die unterschiedliche Inhaltstypen aufweisen können, z. B. reinen Text oder Datumsangaben.  Eine der Tabellen enthält Informationen über einen Mitarbeiter und die andere Kundenfeedback.  
+ Word enables you to create a collection of reusable document parts, named *building blocks*. This walkthrough shows how to create two tables as building blocks. Each table contains several content controls that can hold different types of content, such as plain text or dates. One of the tables contains information about an employee, and the other table contains customer feedback.  
   
- Nachdem Sie ein Dokument von der Vorlage erstellt haben, können Sie ihm mithilfe mehrerer <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>\-Objekte, die die verfügbaren Bausteine in der Vorlage anzeigen, eine der beiden Tabellen hinzufügen.  
+ After you create a document from the template, you can add either of the tables to the document by using several <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> objects, which display the available building blocks in the template.  
   
- In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:  
+ This walkthrough illustrates the following tasks:  
   
--   Erstellen von Tabellen, die Inhaltssteuerelemente in einer Word\-Vorlage enthalten, zur Entwurfszeit  
+-   Creating tables that contain content controls in a Word template at design time.  
   
--   Programmgesteuertes Auffüllen eines Kombinationsfeld\-Inhaltssteuerelements und eines Dropdownlisten\-Inhaltssteuerelements  
+-   Populating a combo box content control and a drop-down list content control programmatically.  
   
--   Verhindern, dass Benutzer eine bestimmte Tabelle bearbeiten  
+-   Preventing users from editing a specified table.  
   
--   Hinzufügen von Tabellen zur Bausteinauflistung einer Vorlage  
+-   Adding tables to the building block collection of a template.  
   
--   Erstellen eines Inhaltssteuerelements, das die verfügbaren Bausteine in der Vorlage anzeigt  
+-   Creating a content control that displays the available building blocks in the template.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## Vorbereitungsmaßnahmen  
- Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
 -   Microsoft Word.  
   
-## Erstellen eines neuen Word\-Vorlagenprojekts  
- Erstellen Sie eine Word\-Vorlage, damit Benutzer leicht eigene Kopien erstellen können.  
+## <a name="creating-a-new-word-template-project"></a>Creating a New Word Template Project  
+ Create a Word template so that users can create their own copies easily.  
   
-#### So erstellen Sie ein neues Word\-Vorlagenprojekt  
+#### <a name="to-create-a-new-word-template-project"></a>To create a new Word template project  
   
-1.  Erstellen Sie ein Word\-Vorlagenprojekt mit dem Namen "MyBuildingBlockTemplate".  Erstellen Sie im Assistenten ein neues Dokument in der Projektmappe.  Weitere Informationen finden Sie unter [Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Create a Word template project with the name **MyBuildingBlockTemplate**. In the wizard, create a new document in the solution. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] öffnet die neue Word\-Vorlage im Designer und fügt dem **Projektmappen\-Explorer** das Projekt **MyBuildingBlockTemplate** hinzu.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] opens the new Word template in the designer and adds the **MyBuildingBlockTemplate** project to **Solution Explorer**.  
   
-## Erstellen der Mitarbeitertabelle  
- Erstellen Sie eine Tabelle, die vier verschiedene Typen von Inhaltssteuerelementen enthält, in denen der Benutzer Informationen zu einem Mitarbeiter eingeben kann.  
+## <a name="creating-the-employee-table"></a>Creating the Employee Table  
+ Create a table that contains four different types of content controls where the user can enter information about an employee.  
   
-#### So erstellen Sie die Mitarbeitertabelle  
+#### <a name="to-create-the-employee-table"></a>To create the employee table  
   
-1.  Klicken Sie in der Word\-Vorlage, die im [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]\-Designer gehostet wird, im Menüband auf die Registerkarte **Einfügen**.  
+1.  In the Word template that is hosted in the [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer, on the Ribbon, click the **Insert** tab.  
   
-2.  Klicken Sie in der Gruppe **Tabellen** auf **Tabelle**, und fügen Sie eine Tabelle mit 2 Spalten und 4 Zeilen ein.  
+2.  In the **Tables** group, click **Table**, and insert a table with 2 columns and 4 rows.  
   
-3.  Geben Sie in der ersten Spalte Text ein, sodass sie der folgenden Spalte ähnelt:  
+3.  Type text in the first column so that it resembles the following column:  
   
     ||  
     |-|  
-    |Employee Name|  
-    |Hire Date|  
-    |Title|  
-    |Picture|  
+    |**Employee Name**|  
+    |**Hire Date**|  
+    |**Title**|  
+    |**Picture**|  
   
-4.  Klicken Sie in die erste Zelle in der zweiten Spalte \(neben**Employee Name**\).  
+4.  Click in the first cell in the second column (next to **Employee Name**).  
   
-5.  Klicken Sie im Menüband auf die Registerkarte **Entwickler**.  
+5.  On the Ribbon, click the **Developer** tab.  
   
     > [!NOTE]  
-    >  Wenn die Registerkarte **Entwickler** nicht sichtbar ist, müssen Sie diese zuerst anzeigen.  Weitere Informationen finden Sie unter [Gewusst wie: Anzeigen der Registerkarte "Entwickler" auf der Multifunktionsleiste](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  If the **Developer** tab is not visible, you must first show it. For more information, see [How to: Show the Developer Tab on the Ribbon](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-6.  Klicken Sie in der Gruppe **Steuerelemente** auf die Schaltfläche **Text** ![PlainTextContentControl](~/vsto/media/plaintextcontrol.gif "PlainTextContentControl"), um der ersten Zelle <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> hinzuzufügen.  
+6.  In the **Controls** group, click the **Text** button ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") to add a <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> to the first cell.  
   
-7.  Klicken Sie in die zweite Zelle in der zweiten Spalte \(neben**Hire Date**\).  
+7.  Click the second cell in the second column (next to **Hire Date**).  
   
-8.  Klicken Sie in der Gruppe **Steuerelemente** auf die Schaltfläche **Datumsauswahl** ![DatePickerContentControl](~/vsto/media/datepicker.gif "DatePickerContentControl"), um der zweiten Zelle <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> hinzuzufügen.  
+8.  In the **Controls** group, click the **Date Picker** button ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") to add a <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> to the second cell.  
   
-9. Klicken Sie in die dritte Zelle in der zweiten Spalte \(neben**Title**\).  
+9. Click the third cell in the second column (next to **Title**).  
   
-10. Klicken Sie in der Gruppe **Steuerelemente** auf die Schaltfläche **Kombinationsfeld** ![ComboBoxContentControl](~/vsto/media/combobox.gif "ComboBoxContentControl"), um der dritten Zelle <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> hinzuzufügen.  
+10. In the **Controls** group, click the **Combo Box** button ![ComboBoxContentControl](../vsto/media/combobox.gif "ComboBoxContentControl") to add a <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> to the third cell.  
   
-11. Klicken Sie in die letzte Zelle in der zweiten Spalte \(neben**Picture**\).  
+11. Click the last cell in the second column (next to **Picture**).  
   
-12. Klicken Sie in der Gruppe **Steuerelemente** auf die Schaltfläche **Bild\-Inhaltssteuerelement** ![PictureContentControl](~/vsto/media/pictcontentcontrol.gif "PictureContentControl"), um der letzten Zelle <xref:Microsoft.Office.Tools.Word.PictureContentControl> hinzuzufügen.  
+12. In the **Controls** group, click the **Picture Content Control** button ![PictureContentControl](../vsto/media/pictcontentcontrol.gif "PictureContentControl") to add a <xref:Microsoft.Office.Tools.Word.PictureContentControl> to the last cell.  
   
-## Erstellen der Kundenfeedback\-Tabelle  
- Erstellen Sie eine Tabelle, die drei verschiedene Typen von Inhaltssteuerelementen enthält, in der der Benutzer Informationen zu Kundenfeedback eingeben kann.  
+## <a name="creating-the-customer-feedback-table"></a>Creating the Customer Feedback Table  
+ Create a table that contains three different types of content controls where the user can enter customer feedback information.  
   
-#### So erstellen Sie die Kundenfeedback\-Tabelle  
+#### <a name="to-create-the-customer-feedback-table"></a>To create the customer feedback table  
   
-1.  Klicken Sie in der Word\-Vorlage in die Zeile nach der Mitarbeitertabelle, die Sie zuvor hinzugefügt haben, und drücken Sie EINGABE, um einen neuen Absatz hinzuzufügen.  
+1.  In the Word template, click in the line after the employee table that you added earlier, and press ENTER to add a new paragraph.  
   
-2.  Klicken Sie im Menüband auf die Registerkarte **Einfügen**.  
+2.  On the Ribbon, click the **Insert** tab.  
   
-3.  Klicken Sie in der Gruppe **Tabellen** auf **Tabelle**, und fügen Sie eine Tabelle mit 2 Spalten und 3 Zeilen ein.  
+3.  In the **Tables** group, click **Table**, and insert a table with 2 columns and 3 rows.  
   
-4.  Geben Sie in der ersten Spalte Text ein, sodass sie der folgenden Spalte ähnelt:  
+4.  Type text in the first column so that it resembles the following column:  
   
     ||  
     |-|  
-    |Customer Name|  
-    |Satisfaction Rating|  
-    |Comments|  
+    |**Customer Name**|  
+    |**Satisfaction Rating**|  
+    |**Comments**|  
   
-5.  Klicken Sie in die erste Zelle der zweiten Spalte \(neben**Customer Name**\).  
+5.  Click in the first cell of the second column (next to **Customer Name**).  
   
-6.  Klicken Sie im Menüband auf die Registerkarte **Entwickler**.  
+6.  On the Ribbon, click the **Developer** tab.  
   
-7.  Klicken Sie in der Gruppe **Steuerelemente** auf die Schaltfläche **Text** ![PlainTextContentControl](~/vsto/media/plaintextcontrol.gif "PlainTextContentControl"), um der ersten Zelle <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> hinzuzufügen.  
+7.  In the **Controls** group, click the **Text** button ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") to add a <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> to the first cell.  
   
-8.  Klicken Sie in die zweite Zelle der zweiten Spalte \(neben**Satisfaction Rating**\).  
+8.  Click in the second cell of the second column (next to **Satisfaction Rating**).  
   
-9. Klicken Sie in der Gruppe **Steuerelemente** auf die Schaltfläche **Dropdownliste** ![DropDownListContentControl](~/vsto/media/dropdownlist.gif "DropDownListContentControl"), um der zweiten Zelle <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> hinzuzufügen.  
+9. In the **Controls** group, click the **Drop-Down List** button ![DropDownListContentControl](../vsto/media/dropdownlist.gif "DropDownListContentControl") to add a <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> to the second cell.  
   
-10. Klicken Sie in die letzte Zelle der zweiten Spalte \(neben **Comments**\).  
+10. Click in the last cell of the second column (next to **Comments**).  
   
-11. Klicken Sie in der Gruppe **Steuerelemente** auf die Schaltfläche **Rich\-Text** ![RichTextContentControl](~/vsto/media/richtextcontrol.gif "RichTextContentControl"), um der letzten Zelle <xref:Microsoft.Office.Tools.Word.RichTextContentControl> hinzuzufügen.  
+11. In the **Controls** group, click the **Rich Text** button ![RichTextContentControl](../vsto/media/richtextcontrol.gif "RichTextContentControl") to add a <xref:Microsoft.Office.Tools.Word.RichTextContentControl> to the last cell.  
   
-## Programmgesteuertes Auffüllen des Kombinationsfelds und der Dropdownliste  
- Sie können Inhaltssteuerelemente zur Entwurfszeit über das Fenster **Eigenschaften** in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] initialisieren.  Sie können sie auch zur Laufzeit initialisieren, wodurch Sie deren Anfangszustände dynamisch festlegen können.  In dieser exemplarischen Vorgehensweise verwenden Sie Code zum Auffüllen der Einträge in <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> und <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> zur Laufzeit, damit Sie sehen können, wie diese Objekte funktionieren.  
+## <a name="populating-the-combo-box-and-drop-down-list-programmatically"></a>Populating the Combo Box and Drop Down List Programmatically  
+ You can initialize content controls at design time by using the **Properties** window in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. You can also initialize them at run time, which enables you to set their initial states dynamically. For this walkthrough, use code to populate the entries in the <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> and <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> at run time so that you can see how these objects work.  
   
-#### So ändern Sie die Benutzeroberfläche der Inhaltssteuerelemente programmgesteuert  
+#### <a name="to-modify-the-ui-of-the-content-controls-programmatically"></a>To modify the UI of the content controls programmatically  
   
-1.  Klicken Sie im **Projektmappen\-Explorer** mit der rechten Maustaste auf **ThisDocument.cs** oder **ThisDocument.vb**, und klicken Sie dann auf **Code anzeigen**.  
+1.  In **Solution Explorer**, right-click **ThisDocument.cs** or **ThisDocument.vb**, and then click **View Code**.  
   
-2.  Fügen Sie der `ThisDocument`\-Klasse folgenden Code hinzu.  Dieser Code deklariert mehrere Objekte, die Sie später in dieser exemplarischen Vorgehensweise verwenden.  
+2.  Add the following code to the `ThisDocument` class. This code declares several objects that you will use later in this walkthrough.  
   
-     [!code-csharp[Trin_ContentControlTemplateWalkthrough#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_ContentControlTemplateWalkthrough/CS/ThisDocument.cs#1)]
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_ContentControlTemplateWalkthrough/VB/ThisDocument.vb#1)]  
+     [!code-vb[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#1)]  [!code-csharp[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#1)]  
   
-3.  Fügen Sie der `ThisDocument_Startup`\-Methode der `ThisDocument`\-Klasse den folgenden Code hinzu.  Durch diesen Code werden <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> und <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> in den Tabellen Einträge hinzugefügt und der Platzhaltertext festgelegt, der in den einzelnen Steuerelementen angezeigt wird, bevor sie vom Benutzer bearbeitet werden.  
+3.  Add the following code to the `ThisDocument_Startup` method of the `ThisDocument` class. This code adds entries to the <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> and <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> in the tables, and sets the placeholder text that is displayed in each of these controls before the user edits them.  
   
-     [!code-csharp[Trin_ContentControlTemplateWalkthrough#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_ContentControlTemplateWalkthrough/CS/ThisDocument.cs#2)]
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#2](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_ContentControlTemplateWalkthrough/VB/ThisDocument.vb#2)]  
+     [!code-vb[Trin_ContentControlTemplateWalkthrough#2](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#2)]  [!code-csharp[Trin_ContentControlTemplateWalkthrough#2](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#2)]  
   
-## Verhindern, dass Benutzer die Mitarbeitertabelle bearbeiten  
- Verwenden Sie das zuvor deklarierte <xref:Microsoft.Office.Tools.Word.GroupContentControl>\-Objekt, um die Mitarbeitertabelle zu schützen.  Nachdem Sie die Tabelle geschützt haben, können Benutzer die Inhaltssteuerelemente in der Tabelle immer noch bearbeiten.  Allerdings können sie in der ersten Spalte keinen Text bearbeiten oder die Tabelle auf andere Weise ändern, z. B. Zeilen und Spalten hinzufügen oder löschen.  Weitere Informationen dazu, wie Sie Teile eines Dokuments mithilfe von <xref:Microsoft.Office.Tools.Word.GroupContentControl> schützen, finden Sie unter [Inhaltssteuerelemente](../vsto/content-controls.md).  
+## <a name="preventing-users-from-editing-the-employee-table"></a>Preventing Users from Editing the Employee Table  
+ Use the <xref:Microsoft.Office.Tools.Word.GroupContentControl> object that you declared earlier to protect the employee table. After protecting the table, users can still edit the content controls in the table. However, they cannot edit text in the first column or modify the table in other ways, such as adding or deleting rows and columns. For more information about how to use a <xref:Microsoft.Office.Tools.Word.GroupContentControl> to protect a part of a document, see [Content Controls](../vsto/content-controls.md).  
   
-#### So verhindern Sie, dass Benutzer die Mitarbeitertabelle bearbeiten  
+#### <a name="to-prevent-users-from-editing-the-employee-table"></a>To prevent users from editing the employee table  
   
-1.  Fügen Sie der `ThisDocument_Startup`\-Methode der `ThisDocument`\-Klasse nach dem im vorherigen Schritt hinzugefügten Code den folgenden Code hinzu.  Dieser Code verhindert, dass Benutzer die Mitarbeitertabelle bearbeiten, indem die Tabelle in das zuvor deklarierte <xref:Microsoft.Office.Tools.Word.GroupContentControl>\-Objekt eingefügt wird.  
+1.  Add the following code to the `ThisDocument_Startup` method of the `ThisDocument` class, after the code that you added in the previous step. This code prevents users from editing the employee table by putting the table inside the <xref:Microsoft.Office.Tools.Word.GroupContentControl> object that you declared earlier.  
   
-     [!code-csharp[Trin_ContentControlTemplateWalkthrough#3](../snippets/csharp/VS_Snippets_OfficeSP/Trin_ContentControlTemplateWalkthrough/CS/ThisDocument.cs#3)]
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#3](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_ContentControlTemplateWalkthrough/VB/ThisDocument.vb#3)]  
+     [!code-vb[Trin_ContentControlTemplateWalkthrough#3](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#3)]  [!code-csharp[Trin_ContentControlTemplateWalkthrough#3](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#3)]  
   
-## Hinzufügen der Tabellen zur Bausteinauflistung  
- Fügen Sie die Tabellen einer Auflistung von Dokumentbausteinen in der Vorlage hinzu, sodass Benutzer die Tabellen, die Sie erstellt haben, in das Dokument einfügen können.  Weitere Informationen zu Dokumentbausteinen finden Sie unter [Inhaltssteuerelemente](../vsto/content-controls.md).  
+## <a name="adding-the-tables-to-the-building-block-collection"></a>Adding the Tables to the Building Block Collection  
+ Add the tables to a collection of document building blocks in the template so that users can insert the tables that you have created into the document. For more information about document building blocks, see [Content Controls](../vsto/content-controls.md).  
   
-#### So fügen Sie die Tabellen den Bausteinen in der Vorlage hinzu  
+#### <a name="to-add-the-tables-to-the-building-blocks-in-the-template"></a>To add the tables to the building blocks in the template  
   
-1.  Fügen Sie der `ThisDocument_Startup`\-Methode der `ThisDocument`\-Klasse nach dem im vorherigen Schritt hinzugefügten Code den folgenden Code hinzu.  Durch diesen Code werden neue Bausteine, die die Tabellen enthalten, der Microsoft.Office.Interop.Word.BuildingBlockEntries\-Auflistung hinzugefügt, die alle wiederverwendbaren Bausteine in der Vorlage enthält.  Die neuen Bausteine werden in einer neuen Kategorie mit dem Namen **Employee and Customer Information** definiert, und ihnen wird der Bausteintyp Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1 zugewiesen.  
+1.  Add the following code to the `ThisDocument_Startup` method of the `ThisDocument` class, after the code that you added in the previous step. This code adds new building blocks that contain the tables to the Microsoft.Office.Interop.Word.BuildingBlockEntries collection, which contains all the reusable building blocks in the template. The new building blocks are defined in a new category named **Employee and Customer Information** and are assigned the building block type Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1.  
   
-     [!code-csharp[Trin_ContentControlTemplateWalkthrough#4](../snippets/csharp/VS_Snippets_OfficeSP/Trin_ContentControlTemplateWalkthrough/CS/ThisDocument.cs#4)]
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#4](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_ContentControlTemplateWalkthrough/VB/ThisDocument.vb#4)]  
+     [!code-vb[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#4)]  [!code-csharp[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#4)]  
   
-2.  Fügen Sie der `ThisDocument_Startup`\-Methode der `ThisDocument`\-Klasse nach dem im vorherigen Schritt hinzugefügten Code den folgenden Code hinzu.  Dieser Code löscht die Tabellen aus der Vorlage.  Die Tabellen sind nicht mehr erforderlich, da Sie sie dem Katalog wiederverwendbarer Bausteine in der Vorlage hinzugefügt haben.  Durch den Code wird das Dokument zuerst in den Entwurfsmodus versetzt, sodass die geschützte Mitarbeitertabelle gelöscht werden kann.  
+2.  Add the following code to the `ThisDocument_Startup` method of the `ThisDocument` class, after the code that you added in the previous step. This code deletes the tables from the template. The tables are no longer necessary, because you have added them to the gallery of reusable building blocks in the template. The code first puts the document into design mode so that the protected employee table can be deleted.  
   
-     [!code-csharp[Trin_ContentControlTemplateWalkthrough#5](../snippets/csharp/VS_Snippets_OfficeSP/Trin_ContentControlTemplateWalkthrough/CS/ThisDocument.cs#5)]
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#5](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_ContentControlTemplateWalkthrough/VB/ThisDocument.vb#5)]  
+     [!code-vb[Trin_ContentControlTemplateWalkthrough#5](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#5)]  [!code-csharp[Trin_ContentControlTemplateWalkthrough#5](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#5)]  
   
-## Erstellen eines Inhaltssteuerelements, das die Bausteine anzeigt  
- Erstellen Sie ein Inhaltssteuerelement, das den Zugriff auf die Bausteine \(d. h. die Tabellen\) ermöglicht, die Sie zuvor erstellt haben.  Benutzer können auf dieses Steuerelement klicken, um die Tabellen dem Dokument hinzuzufügen.  
+## <a name="creating-a-content-control-that-displays-the-building-blocks"></a>Creating a Content Control That Displays the Building Blocks  
+ Create a content control that provides access to the building blocks (that is, the tables) that you created earlier. Users can click this control to add the tables to the document.  
   
-#### So erstellen Sie ein Inhaltssteuerelement, das die Bausteine anzeigt  
+#### <a name="to-create-a-content-control-that-displays-the-building-blocks"></a>To create a content control that displays the building blocks  
   
-1.  Fügen Sie der `ThisDocument_Startup`\-Methode der `ThisDocument`\-Klasse nach dem im vorherigen Schritt hinzugefügten Code den folgenden Code hinzu.  Dieser Code initialisiert das zuvor deklarierte <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>\-Objekt.  In <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> werden alle Bausteine angezeigt, die in der Kategorie **Employee and Customer Information** definiert sind und über den Bausteintyp Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1 verfügen.  
+1.  Add the following code to the `ThisDocument_Startup` method of the `ThisDocument` class, after the code that you added in the previous step. This code initializes the <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> object that you declared earlier. The <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> displays all building blocks that are defined in the category **Employee and Customer Information** and that have the building block type Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1.  
   
-     [!code-csharp[Trin_ContentControlTemplateWalkthrough#6](../snippets/csharp/VS_Snippets_OfficeSP/Trin_ContentControlTemplateWalkthrough/CS/ThisDocument.cs#6)]
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#6](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_ContentControlTemplateWalkthrough/VB/ThisDocument.vb#6)]  
+     [!code-vb[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#6)]  [!code-csharp[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#6)]  
   
-## Testen des Projekts  
- Benutzer können auf die Steuerelemente im Bausteinkatalog im Dokument klicken, um die Mitarbeiter\- oder Kundenfeedback\-Tabelle einzufügen.  Benutzer können in den Inhaltssteuerelementen in beiden Tabellen Antworten eingeben oder auswählen.  Benutzer können andere Teile der Kundenfeedback\-Tabelle ändern, sollten aber nicht in der Lage sein, andere Teile der Mitarbeitertabelle zu ändern.  
+## <a name="testing-the-project"></a>Testing the Project  
+ Users can click the building block gallery controls in the document to insert the employee table or the customer feedback table. Users can type or select responses in the content controls in both of the tables. Users can modify other parts of the customer feedback table, but they should not be able to modify other parts of the employee table.  
   
-#### So testen Sie die Mitarbeitertabelle  
+#### <a name="to-test-the-employee-table"></a>To test the employee table  
   
-1.  Drücken Sie F5, um das Projekt auszuführen.  
+1.  Press F5 to run the project.  
   
-2.  Klicken Sie auf **Ersten Baustein auswählen**, um das erste Inhaltssteuerelement aus dem Bausteinkatalog anzuzeigen.  
+2.  Click **Choose your first building block** to display the first building block gallery content control.  
   
-3.  Klicken Sie auf den Dropdownpfeil neben der Überschrift **Benutzerdefinierter Katalog 1** im Steuerelement, und wählen Sie **Employee Table** aus.  
+3.  Click the drop-down arrow next to the **Custom Gallery 1** heading in the control, and select **Employee Table**.  
   
-4.  Klicken Sie in die Zelle rechts neben der Zelle "Employee Name", und geben Sie einen Namen ein.  
+4.  Click in the cell to the right of the **Employee Name** cell and type a name.  
   
-     Stellen Sie sicher, dass Sie dieser Zelle nur Text hinzufügen können.  <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> ermöglicht es Benutzern, nur Text und keine anderen Inhaltstypen wie Grafiken oder Tabellen hinzuzufügen.  
+     Verify that you can add only text to this cell. The <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> allows users to add only text, not other types of content such as art or a table.  
   
-5.  Klicken Sie in die Zelle rechts neben der Zelle "Hire Date", und wählen Sie in der Datumsauswahl ein Datum aus.  
+5.  Click in the cell to the right of the **Hire Date** cell and select a date in the date picker.  
   
-6.  Klicken Sie in die Zelle rechts neben der Zelle "Title", und wählen Sie im Kombinationsfeld eine der Berufsbezeichnungen aus.  
+6.  Click in the cell to the right of the **Title** cell and select one of the job titles in the combo box.  
   
-     Geben Sie optional eine Berufsbezeichnung ein, die nicht in der Liste enthalten ist.  Dies ist möglich, weil <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> Benutzern die Auswahl aus einer Liste von Einträgen oder die Eingabe eigener Einträge ermöglicht.  
+     Optionally, type the name of a job title that is not in the list. This is possible because the <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> enables users to select from a list of entries or to type their own entries.  
   
-7.  Klicken Sie auf das Symbol in der Zelle rechts neben der Zelle "Picture", und navigieren Sie zu einem Bild, um es anzuzeigen.  
+7.  Click the icon in the cell to the right of the **Picture** cell and browse to an image to display it.  
   
-8.  Versuchen Sie, der Tabelle Zeilen oder Spalten hinzuzufügen und Zeilen und Spalten aus der Tabelle zu löschen.  Vergewissern Sie sich, dass Sie die Tabelle nicht ändern können.  <xref:Microsoft.Office.Tools.Word.GroupContentControl> verhindert, dass Sie Änderungen vornehmen.  
+8.  Try to add rows or columns to the table, and try to delete rows and columns from the table. Verify that you cannot modify the table. The <xref:Microsoft.Office.Tools.Word.GroupContentControl> prevents you from making any modifications.  
   
-#### So testen Sie die Kundenfeedback\-Tabelle  
+#### <a name="to-test-the-customer-feedback-table"></a>To test the customer feedback table  
   
-1.  Klicken Sie auf **Zweiten Baustein auswählen**, um das zweite Inhaltssteuerelement aus dem Bausteinkatalog anzuzeigen.  
+1.  Click **Choose your second building block** to display the second building block gallery content control.  
   
-2.  Klicken Sie auf den Dropdownpfeil neben der Überschrift **Benutzerdefinierter Katalog 1** im Steuerelement, und wählen Sie **Customer Table** aus.  
+2.  Click the drop-down arrow next to the **Custom Gallery 1** heading in the control, and select **Customer Table**.  
   
-3.  Klicken Sie in die Zelle rechts neben der Zelle "Customer Name", und geben Sie einen Namen ein.  
+3.  Click in the cell to the right of the **Customer Name** cell and type a name.  
   
-4.  Klicken Sie in die Zelle rechts neben der Zelle "Satisfaction Rating", und wählen Sie eine der verfügbaren Optionen aus.  
+4.  Click in the cell to the right of the **Satisfaction Rating** cell and select one of the available options.  
   
-     Stellen Sie sicher, dass Sie ihren eigenen Eintrag nicht eingeben können.  <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> ermöglicht Benutzern nur die Auswahl aus einer Liste von Einträgen.  
+     Verify that you cannot type your own entry. The <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> allows users only to select from a list of entries.  
   
-5.  Klicken Sie in die Zelle rechts neben der Zelle "Comments", und geben Sie Kommentare ein.  
+5.  Click in the cell to the right of the **Comments** cell and type some comments.  
   
-     Fügen Sie optional andere Inhalte als Text hinzu, z. B. Grafiken oder eine eingebettete Tabelle.  Dies ist möglich, weil <xref:Microsoft.Office.Tools.Word.RichTextContentControl> Benutzern das Hinzufügen anderer Inhalt als Text ermöglicht.  
+     Optionally, add some content other than text, such as art or an embedded table. This is possible because the <xref:Microsoft.Office.Tools.Word.RichTextContentControl> enables users to add content other than text.  
   
-6.  Vergewissern Sie sich, dass Sie der Tabelle Zeilen oder Spalten hinzufügen und Zeilen und Spalten aus der Tabelle löschen können.  Dies ist möglich, da Sie die Tabelle nicht geschützt haben, indem Sie sie in <xref:Microsoft.Office.Tools.Word.GroupContentControl> eingefügt haben.  
+6.  Verify that you can add rows or columns to the table, and that you can delete rows and columns from the table. This is possible because you have not protected the table by putting it in a <xref:Microsoft.Office.Tools.Word.GroupContentControl>.  
   
-7.  Schließen Sie die Vorlage.  
+7.  Close the template.  
   
-## Nächste Schritte  
- Weitere Informationen zur Verwendung von Inhaltssteuerelementen finden Sie in diesem Thema:  
+## <a name="next-steps"></a>Next Steps  
+ You can learn more about how to use content controls from this topic:  
   
--   Binden von Inhaltssteuerelementen an XML\-Elemente \(werden auch als benutzerdefinierte XML\-Teile bezeichnet\), die in ein Dokument eingebettet sind  Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Binden von Inhaltssteuerelementen an benutzerdefinierte XML-Abschnitte](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
+-   Bind content controls to pieces of XML, also named custom XML parts, that are embedded in a document. For more information, see [Walkthrough: Binding Content Controls to Custom XML Parts](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
   
-## Siehe auch  
- [Automatisieren von Word mithilfe von erweiterten Objekten](../vsto/automating-word-by-using-extended-objects.md)   
- [Inhaltssteuerelemente](../vsto/content-controls.md)   
- [Gewusst wie: Hinzufügen von Inhaltssteuerelementen zu Word-Dokumenten](../vsto/how-to-add-content-controls-to-word-documents.md)   
- [Gewusst wie: Schützen von Teilen von Dokumenten mithilfe von Inhaltssteuerelementen](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
- [Übersicht über Hostelemente und Hoststeuerelemente](../vsto/host-items-and-host-controls-overview.md)   
- [Programmgesteuerte Einschränkungen von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md)  
+## <a name="see-also"></a>See Also  
+ [Automating Word by Using Extended Objects](../vsto/automating-word-by-using-extended-objects.md)   
+ [Content Controls](../vsto/content-controls.md)   
+ [How to: Add Content Controls to Word Documents](../vsto/how-to-add-content-controls-to-word-documents.md)   
+ [How to: Protect Parts of Documents by Using Content Controls](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
+ [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)  
   
   

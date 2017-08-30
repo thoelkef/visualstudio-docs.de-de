@@ -1,52 +1,70 @@
 ---
-title: "CA1400: F&#252;r P/Invoke m&#252;ssen Einstiegspunkte vorhanden sein | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1400"
-  - "PInvokeEntryPointsShouldExist"
-helpviewer_keywords: 
-  - "PInvokeEntryPointsShouldExist"
-  - "CA1400"
+title: 'CA1400: P-Invoke entry points should exist | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1400
+- PInvokeEntryPointsShouldExist
+helpviewer_keywords:
+- PInvokeEntryPointsShouldExist
+- CA1400
 ms.assetid: 1d64e470-7b2f-4cca-8fb0-ac92829e6332
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 19
----
-# CA1400: F&#252;r P/Invoke m&#252;ssen Einstiegspunkte vorhanden sein
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 3f9d7230a64f1d67822e0464b7d84a9992da9251
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1400-pinvoke-entry-points-should-exist"></a>CA1400: P/Invoke entry points should exist
 |||  
 |-|-|  
 |TypeName|PInvokeEntryPointsShouldExist|  
 |CheckId|CA1400|  
-|Kategorie \(Category\)|Microsoft.Interoperability|  
-|Unterbrechende Änderung|Nicht unterbrechend|  
+|Category|Microsoft.Interoperability|  
+|Breaking Change|Non-breaking|  
   
-## Ursache  
- Eine öffentliche oder geschützte Methode ist mit dem <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> gekennzeichnet.  Entweder konnte die nicht verwaltete Bibliothek nicht gefunden werden, oder die Methode konnte keiner Funktion in der Bibliothek zugeordnet werden.  Wenn die Regel den Methodennamen nicht in genau der angegebenen Form finden kann, wird nach Schreibweisen im ANSI\- oder Breitzeichenformat gesucht, wobei an den Methodennamen die Zeichen "A" bzw. "W" gehängt werden.  Wird keine Entsprechung gefunden, versucht die Regel, eine Funktion mithilfe des Namensformats \_\_stdcall \(\_MyMethod@12, wobei 12 die Länge der Argumente darstellt\) zu finden.  Wenn keine Entsprechung gefunden wird und der Methodenname mit "\#" beginnt, sucht die Regel nach der Funktion als Ordnungszahlverweis und nicht als Namensverweis.  
+## <a name="cause"></a>Cause  
+ A public or protected method is marked with the <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. Either the unmanaged library could not be located or the method could not be matched to a function in the library. If the rule cannot find the method name exactly as it is specified, it looks for ANSI or wide-character versions of the method by suffixing the method name with 'A' or 'W'. If no match is found, the rule attempts to locate a function by using the __stdcall name format (_MyMethod@12, where 12 represents the length of the arguments). If no match is found, and the method name starts with '#', the rule searches for the function as an ordinal reference instead of a name reference.  
   
-## Regelbeschreibung  
- Es ist keine Kompilierzeitüberprüfung verfügbar, mit der sichergestellt werden kann, dass sich Methoden, die mit <xref:System.Runtime.InteropServices.DllImportAttribute> markiert sind, in der nicht verwalteten DLL befinden, auf die verwiesen wird.  Wenn es in der Bibliothek keine Funktion mit dem angegebenen Namen gibt oder wenn die Argumente der Methode nicht mit den Funktionsargumenten übereinstimmen, löst die Common Language Runtime eine Ausnahme aus.  
+## <a name="rule-description"></a>Rule Description  
+ No compile-time check is available to make sure that methods that are marked with <xref:System.Runtime.InteropServices.DllImportAttribute> are located in the referenced unmanaged DLL. If no function that has the specified name is  in the library, or the arguments to the method do not match the function arguments, the common language runtime throws an exception.  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, korrigieren Sie die Methode, die über das <xref:System.Runtime.InteropServices.DllImportAttribute>\-Attribut verfügt.  Stellen Sie sicher, dass die nicht verwaltete Bibliothek existiert und sich im gleichen Verzeichnis befindet wie die Assembly, welche die Methode enthält.  Wenn die Bibliothek vorhanden ist und der Verweis darauf einwandfrei ist, überprüfen Sie, ob der Methodenname, der Rückgabetyp und die Argumentsignatur der Bibliothekfunktion entsprechen.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, correct the method that has the <xref:System.Runtime.InteropServices.DllImportAttribute> attribute. Make sure that the unmanaged library exists and is in the same directory as the assembly that contains the method. If the library is present and correctly referenced, verify that the method name, return type, and argument signature match the library function.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Unterdrücken Sie keine Warnung dieser Regel, wenn die nicht verwaltete Bibliothek sich im selben Verzeichnis befindet wie die verwaltete Assembly, die auf diese Bibliothek verweist.  Eine Warnung dieser Regel kann u. U. gefahrlos unterdrückt werden, wenn die nicht verwaltete Bibliothek nicht gefunden wurde.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule when the unmanaged library is in the same directory as the managed assembly that references it. It might be safe to suppress a warning from this rule in the case where the unmanaged library could not be located.  
   
-## Beispiel  
- Im folgenden Beispiel wird ein Typ veranschaulicht, der gegen die Regel verstößt.  In kernel32.dll ist keine Funktion mit dem Namen `DoSomethingUnmanaged` vorhanden.  
+## <a name="example"></a>Example  
+ The following example shows a type that violates the rule. No function that is named `DoSomethingUnmanaged` occurs in kernel32.dll.  
   
- [!code-cs[FxCop.Interoperability.DLLExists#1](../code-quality/codesnippet/CSharp/ca1400-p-invoke-entry-points-should-exist_1.cs)]  
+ [!code-csharp[FxCop.Interoperability.DLLExists#1](../code-quality/codesnippet/CSharp/ca1400-p-invoke-entry-points-should-exist_1.cs)]  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>

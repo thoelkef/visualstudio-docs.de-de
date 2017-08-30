@@ -1,51 +1,69 @@
 ---
-title: "CA1820: Mithilfe der Zeichenfolgenl&#228;nge auf leere Zeichenfolgen pr&#252;fen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "TestForEmptyStringsUsingStringLength"
-  - "CA1820"
-helpviewer_keywords: 
-  - "TestForEmptyStringsUsingStringLength"
-  - "CA1820"
+title: 'CA1820: Test for empty strings using string length | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- TestForEmptyStringsUsingStringLength
+- CA1820
+helpviewer_keywords:
+- TestForEmptyStringsUsingStringLength
+- CA1820
 ms.assetid: da1e70c8-b1dc-46b9-8b8f-4e6e48339681
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 21
----
-# CA1820: Mithilfe der Zeichenfolgenl&#228;nge auf leere Zeichenfolgen pr&#252;fen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: bf4c484e1161b7c6dd3dfbe3917be327003d7414
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1820-test-for-empty-strings-using-string-length"></a>CA1820: Test for empty strings using string length
 |||  
 |-|-|  
 |TypeName|TestForEmptyStringsUsingStringLength|  
 |CheckId|CA1820|  
-|Kategorie \(Category\)|Microsoft.Performance|  
-|Unterbrechende Änderung|Nicht unterbrechend|  
+|Category|Microsoft.Performance|  
+|Breaking Change|Non-breaking|  
   
-## Ursache  
- Eine Zeichenfolge wird unter Verwendung von <xref:System.Object.Equals%2A?displayProperty=fullName> mit der leeren Zeichenfolge verglichen.  
+## <a name="cause"></a>Cause  
+ A string is compared to the empty string by using <xref:System.Object.Equals%2A?displayProperty=fullName>.  
   
-## Regelbeschreibung  
- Der Vergleich von Zeichenfolgen mit der <xref:System.String.Length%2A?displayProperty=fullName>\-Eigenschaft oder der <xref:System.String.IsNullOrEmpty%2A?displayProperty=fullName>\-Methode ist bedeutend schneller als ein Vergleich mit <xref:System.Object.Equals%2A>.  Der Grund dafür liegt darin, dass <xref:System.String.IsNullOrEmpty%2A> bedeutend mehr MSIL\-Anweisungen ausführt als <xref:System.String.Length%2A> oder die Anweisungen, die ausgeführt werden, um den Wert der <xref:System.Object.Equals%2A>\-Eigenschaft abzurufen und mit 0 \(null\) zu vergleichen.  
+## <a name="rule-description"></a>Rule Description  
+ Comparing strings using the <xref:System.String.Length%2A?displayProperty=fullName> property or the <xref:System.String.IsNullOrEmpty%2A?displayProperty=fullName> method is significantly faster than using <xref:System.Object.Equals%2A>. This is because <xref:System.Object.Equals%2A> executes significantly more MSIL instructions than either <xref:System.String.IsNullOrEmpty%2A> or the number of instructions executed to retrieve the <xref:System.String.Length%2A> property value and compare it to zero.  
   
- Sie sollten beachten, dass sich <xref:System.Object.Equals%2A> und <xref:System.String.Length%2A> \=\= 0 bei NULL\-Zeichenfolgen anders verhalten.  Wenn versucht wird, den Wert der <xref:System.String.Length%2A>\-Eigenschaft für eine NULL\-Zeichenfolge abzurufen, löst die Common Language Runtime einen <xref:System.NullReferenceException?displayProperty=fullName>\-Fehler aus.  Wenn eine NULL\-Zeichenfolge mit einer leeren Zeichenfolge verglichen wird, löst die Common Language Runtime keine Ausnahme aus. Der Vergleich ergibt `false`.  Die Überprüfung auf NULL wirkt sich kaum auf die relative Leistung dieser zwei Ansätze aus.  Wenn auf [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] abgezielt wird, verwenden Sie die <xref:System.String.IsNullOrEmpty%2A>\-Methode.  Andernfalls verwenden Sie den <xref:System.String.Length%2A> \=\= Vergleich, wenn irgend möglich.  
+ You should be aware that <xref:System.Object.Equals%2A> and <xref:System.String.Length%2A> == 0 behave differently for null strings. If you try to get the value of the <xref:System.String.Length%2A> property on a null string, the common language runtime throws a <xref:System.NullReferenceException?displayProperty=fullName>. If you perform a comparison between a null string and the empty string, the common language runtime does not throw an exception; the comparison returns `false`. Testing for null does not significantly affect the relative performance of these two approaches. When targeting [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], use the <xref:System.String.IsNullOrEmpty%2A> method. Otherwise, use the <xref:System.String.Length%2A> == comparison whenever possible.  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Vergleich ab, sodass die <xref:System.String.Length%2A>\-Eigenschaft verwendet wird und überprüft wird, ob eine NULL\-Zeichenfolge vorliegt.  Wenn auf [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] abgezielt wird, verwenden Sie die <xref:System.String.IsNullOrEmpty%2A>\-Methode.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, change the comparison to use the <xref:System.String.Length%2A> property and test for the null string. If targeting [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], use the <xref:System.String.IsNullOrEmpty%2A> method.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Eine Warnung dieser Regel kann gefahrlos unterdrückt werden, wenn die Leistung nicht von Belang ist.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule if performance is not an issue.  
   
-## Beispiel  
- Im folgenden Beispiel werden die verschiedenen Techniken veranschaulicht, die zur Suche nach einer leeren Zeichenfolge eingesetzt werden können.  
+## <a name="example"></a>Example  
+ The following example illustrates the different techniques that are used to look for an empty string.  
   
- [!code-cs[FxCop.Performance.StringTest#1](../code-quality/codesnippet/CSharp/ca1820-test-for-empty-strings-using-string-length_1.cs)]
+ [!code-csharp[FxCop.Performance.StringTest#1](../code-quality/codesnippet/CSharp/ca1820-test-for-empty-strings-using-string-length_1.cs)]

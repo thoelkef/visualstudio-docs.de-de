@@ -1,65 +1,81 @@
 ---
-title: "CA2239: Deserialisierungsmethoden f&#252;r optionale Felder angeben | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2239"
-  - "ProvideDeserializationMethodsForOptionalFields"
-helpviewer_keywords: 
-  - "CA2239"
-  - "ProvideDeserializationMethodsForOptionalFields"
+title: 'CA2239: Provide deserialization methods for optional fields | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2239
+- ProvideDeserializationMethodsForOptionalFields
+helpviewer_keywords:
+- ProvideDeserializationMethodsForOptionalFields
+- CA2239
 ms.assetid: 6480ff5e-0caa-4707-814e-2f927cdafef5
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 13
----
-# CA2239: Deserialisierungsmethoden f&#252;r optionale Felder angeben
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: f7dc9755c80095b5b79695aea583fd5ab710c774
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2239-provide-deserialization-methods-for-optional-fields"></a>CA2239: Provide deserialization methods for optional fields
 |||  
 |-|-|  
 |TypeName|ProvideDeserializationMethodsForOptionalFields|  
 |CheckId|CA2239|  
-|Kategorie \(Category\)|Microsoft.Usage|  
-|Unterbrechende Änderung|Nicht unterbrechend|  
+|Category|Microsoft.Usage|  
+|Breaking Change|Non Breaking|  
   
-## Ursache  
- Ein Typ verfügt über ein Feld, das mit dem <xref:System.Runtime.Serialization.OptionalFieldAttribute?displayProperty=fullName>\-Attribut gekennzeichnet ist, und der Typ gibt keine Methoden für die Deserialisierungsereignisbehandlung an.  
+## <a name="cause"></a>Cause  
+ A type has a field that is marked with the <xref:System.Runtime.Serialization.OptionalFieldAttribute?displayProperty=fullName> attribute and the type does not provide de-serialization event handling methods.  
   
-## Regelbeschreibung  
- Das <xref:System.Runtime.Serialization.OptionalFieldAttribute>\-Attribut hat keine Auswirkungen auf die Serialisierung. Ein mit dem Attribut gekennzeichnetes Feld wird serialisiert.  Das Feld wird bei der Deserialisierung jedoch ignoriert und behält den seinem Typ zugeordneten Standardwert bei.  Deserialisierungsereignishandler sollten so deklariert werden, dass das Feld während der Deserialisierung festgelegt wird.  
+## <a name="rule-description"></a>Rule Description  
+ The <xref:System.Runtime.Serialization.OptionalFieldAttribute> attribute has no effect on serialization; a field marked with the attribute is serialized. However, the field is ignored on de-serialization and retains the default value associated with its type. De-serialization event handlers should be declared to set the field during the de-serialization process.  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, fügen Sie dem Typ Methoden für die Deserialisierungsereignisbehandlung hinzu.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, add de-serialization event handling methods to the type.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Eine Warnung dieser Regel kann gefahrlos unterdrückt werden, wenn das Feld während der Deserialisierung ignoriert werden soll.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule if the field should be ignored during the de-serialization process.  
   
-## Beispiel  
- Im folgenden Beispiel wird ein Typ mit einem optionalen Feld und Methoden für die Deserialisierungsereignisbehandlung veranschaulicht.  
+## <a name="example"></a>Example  
+ The following example shows a type with an optional field and de-serialization event handling methods.  
   
- [!code-cs[FxCop.Usage.OptionalFields#1](../code-quality/codesnippet/CSharp/ca2239-provide-deserialization-methods-for-optional-fields_1.cs)]
- [!code-vb[FxCop.Usage.OptionalFields#1](../code-quality/codesnippet/VisualBasic/ca2239-provide-deserialization-methods-for-optional-fields_1.vb)]  
+ [!code-csharp[FxCop.Usage.OptionalFields#1](../code-quality/codesnippet/CSharp/ca2239-provide-deserialization-methods-for-optional-fields_1.cs)] [!code-vb[FxCop.Usage.OptionalFields#1](../code-quality/codesnippet/VisualBasic/ca2239-provide-deserialization-methods-for-optional-fields_1.vb)]  
   
-## Verwandte Regeln  
- [CA2236: Basisklassenmethoden auf ISerializable\-Typen aufrufen](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)  
+## <a name="related-rules"></a>Related Rules  
+ [CA2236: Call base class methods on ISerializable types](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)  
   
- [CA2240: ISerializable ordnungsgemäß implementieren](../code-quality/ca2240-implement-iserializable-correctly.md)  
+ [CA2240: Implement ISerializable correctly](../code-quality/ca2240-implement-iserializable-correctly.md)  
   
- [CA2229: Serialisierungskonstruktoren implementieren](../code-quality/ca2229-implement-serialization-constructors.md)  
+ [CA2229: Implement serialization constructors](../code-quality/ca2229-implement-serialization-constructors.md)  
   
- [CA2238: Serialisierungsmethoden korrekt implementieren](../code-quality/ca2238-implement-serialization-methods-correctly.md)  
+ [CA2238: Implement serialization methods correctly](../code-quality/ca2238-implement-serialization-methods-correctly.md)  
   
- [CA2235: Alle nicht serialisierbaren Felder markieren](../code-quality/ca2235-mark-all-non-serializable-fields.md)  
+ [CA2235: Mark all non-serializable fields](../code-quality/ca2235-mark-all-non-serializable-fields.md)  
   
- [CA2237: Markieren von ISerializable\-Typen mit SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)  
+ [CA2237: Mark ISerializable types with SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)  
   
- [CA2120: Sichere Serialisierungskonstruktoren](../code-quality/ca2120-secure-serialization-constructors.md)
+ [CA2120: Secure serialization constructors](../code-quality/ca2120-secure-serialization-constructors.md)

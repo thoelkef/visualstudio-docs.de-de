@@ -1,56 +1,71 @@
 ---
-title: "Schritt&#160;4: Hinzuf&#252;gen der CheckTheAnswer()-Methode | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'Step 4: Add the CheckTheAnswer() Method | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: c66f3831-b4a0-40bc-a109-8f46f4db35ed
 caps.latest.revision: 19
-caps.handback.revision: 19
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
----
-# Schritt&#160;4: Hinzuf&#252;gen der CheckTheAnswer()-Methode
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 9424a42099659a91252b8a0b8ae9649cf79176a9
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
 
-Im vierten Teil dieses Lernprogramms schreiben Sie eine Methode, `CheckTheAnswer()`, die bestimmt, ob die Antworten auf die Mathematikaufgaben korrekt sind.  Dieses Thema ist Teil einer Reihe von Lernprogrammen zu grundlegenden Konzepte der Codierung.  Eine Übersicht des Lernprogramms finden Sie unter [Lernprogramm 2: Erstellen eines Mathequiz mit Zeitmessung](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+---
+# <a name="step-4-add-the-checktheanswer-method"></a>Step 4: Add the CheckTheAnswer() Method
+In the fourth part of this tutorial, you'll write a method, `CheckTheAnswer()`, that determines whether the answers to the math problems are correct. This topic is part of a tutorial series about basic coding concepts. For an overview of the tutorial, see [Tutorial 2: Create a Timed Math Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
 > [!NOTE]
->  Wenn Sie weiterhin in Visual Basic arbeiten, verwenden Sie das Schlüsselwort `Function` anstelle des üblichen Schlüsselworts `Sub`, da diese Methode einen Wert zurückgibt.  Es ist wirklich ganz einfach: Ein Sub\-Schlüsselwort gibt keinen Wert zurück, aber ein Function\-Schlüsselwort gibt einen Wert zurück.  
+>  If you're following along in Visual Basic, you'll use the `Function` keyword instead of the usual `Sub` keyword because this method returns a value. It's really that simple: a sub doesn't return a value, but a function does.  
   
-### So überprüfen Sie, ob die Antworten richtig sind  
+### <a name="to-verify-whether-the-answers-are-correct"></a>To verify whether the answers are correct  
   
-1.  Fügen Sie die `CheckTheAnswer()`\-Methode hinzu.  
+1.  Add the `CheckTheAnswer()` method.  
   
-     Wenn diese Methode aufgerufen wird, werden die Werte von addend1 und addend2 hinzugefügt und das Ergebnis mit dem Wert im `NumericUpDown`\-Steuerelement "sum" verglichen.  Wenn die Werte gleich sind, gibt die Methode den Wert `true` zurück.  Anderenfalls gibt die Methode den Wert `false` zurück.  Der Code sollte wie folgt aussehen.  
+     When this method is called, it adds the values of addend1 and addend2 and compares the result to the value in the sum `NumericUpDown` control. If the values are equal, the method returns a value of `true`. Otherwise, the method returns a value of `false`. Your code should look like the following.  
   
-     [!code-vb[VbExpressTutorial3Step4#8](../ide/codesnippet/VisualBasic/step-4-add-the-checktheanswer-parens-method_1.vb)]
-     [!code-cs[VbExpressTutorial3Step4#8](../ide/codesnippet/CSharp/step-4-add-the-checktheanswer-parens-method_1.cs)]  
+     [!code-vb[VbExpressTutorial3Step4#8](../ide/codesnippet/VisualBasic/step-4-add-the-checktheanswer-parens-method_1.vb)]  [!code-csharp[VbExpressTutorial3Step4#8](../ide/codesnippet/CSharp/step-4-add-the-checktheanswer-parens-method_1.cs)]  
   
-     Nun überprüfen Sie die Antwort, indem Sie die Code in der Methode aktualisieren, damit der Tick\-Ereignishandler des Zeitgebers die neue `CheckTheAnswer()`\-Methode aufruft.  
+     Next, you'll check the answer by updating the code in the method for the timer's Tick event handler to call the new `CheckTheAnswer()` method.  
   
-2.  Fügen Sie der `if else`\-Anweisung folgenden Code hinzu.  
+2.  Add the following code to the `if else` statement.  
   
-     [!code-vb[VbExpressTutorial3Step4#10](../ide/codesnippet/VisualBasic/step-4-add-the-checktheanswer-parens-method_2.vb)]
-     [!code-cs[VbExpressTutorial3Step4#10](../ide/codesnippet/CSharp/step-4-add-the-checktheanswer-parens-method_2.cs)]  
+     [!code-vb[VbExpressTutorial3Step4#10](../ide/codesnippet/VisualBasic/step-4-add-the-checktheanswer-parens-method_2.vb)]  [!code-csharp[VbExpressTutorial3Step4#10](../ide/codesnippet/CSharp/step-4-add-the-checktheanswer-parens-method_2.cs)]  
   
-     Wenn die Antwort richtig ist, gibt `CheckTheAnswer()` `true` zurück.  Der Ereignishandler beendet den Zeitgeber, zeigt eine Glückwunschmeldung an, und dann ist die Schaltfläche **Start** erneut verfügbar.  Anderenfalls wird das Quiz fortgesetzt.  
+     If the answer is correct, `CheckTheAnswer()` returns `true`. The event handler stops the timer, shows a congratulatory message, and then makes the **Start** button available again. Otherwise, the quiz continues.  
   
-3.  Speichern Sie das Programm, führen Sie es aus, starten Sie ein Quiz, und geben Sie eine richtige Antwort für die Additionsaufgabe an.  
+3.  Save your program, run it, start a quiz, and provide a correct answer to the addition problem.  
   
     > [!NOTE]
-    >  Bevor Sie die Antwort eingeben, müssen Sie entweder den Standardwert auswählen, oder Sie müssen die Null manuell löschen.  Später in diesem Lernprogramm wird dieses Verhalten korrigiert.  
+    >  When you enter your answer, you must either select the default value before you start to enter your answer, or you must delete the zero manually. You'll correct this behavior later in this tutorial.  
   
-     Wenn Sie eine richtige Antwort angegeben, wird ein Meldungsfeld geöffnet, die Schaltfläche **Start** wird verfügbar, und der Zeitgeber wird angehalten.  
+     When you provide a correct answer, a message box opens, the **Start** button becomes available, and the timer stops.  
   
-### So fahren Sie fort oder überprüfen die Angaben  
+### <a name="to-continue-or-review"></a>To continue or review  
   
--   Um zum nächsten Schritt des Lernprogramms zu wechseln, klicken Sie auf [Schritt 5: Hinzufügen von Enter\-Ereignishandlern für die NumericUpDown\-Steuerelemente](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).  
+-   To go to the next tutorial step, see [Step 5: Add Enter Event Handlers for the NumericUpDown Controls](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).  
   
--   Um zum vorherigen Schritt des Lernprogramms zurückzukehren, klicken Sie auf [Schritt 3: Hinzufügen eines Countdownzeitgebers](../ide/step-3-add-a-countdown-timer.md).
+-   To return to the previous tutorial step, see [Step 3: Add a Countdown Timer](../ide/step-3-add-a-countdown-timer.md).

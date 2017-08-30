@@ -1,66 +1,68 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Zwischenspeichern von Datenquellen in einem Office-Dokument"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Daten [Office-Entwicklung in Visual Studio], Zwischenspeichern"
-  - "Zwischenspeichern von Daten [Office-Entwicklung in Visual Studio], Programmgesteuert"
-  - "Datasets [Office-Entwicklung in Visual Studio], Zwischenspeichern"
-  - "Office-Anwendungen [Office-Entwicklung in Visual Studio], Daten"
-  - "StartCaching-Methode"
+title: 'How to: Programmatically Cache a Data Source in an Office Document | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Office applications [Office development in Visual Studio], data
+- datasets [Office development in Visual Studio], caching
+- StartCaching method
+- data caching [Office development in Visual Studio], programmatically
+- data [Office development in Visual Studio], caching
 ms.assetid: 70b3fc06-7534-407e-898b-36f84e9a7516
 caps.latest.revision: 43
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 43
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 9c027f61e5fb0d34aa26321ee92f9b9934049611
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Gewusst wie: Programmgesteuertes Zwischenspeichern von Datenquellen in einem Office-Dokument
-  Sie können dem Datencache in einem Dokument programmgesteuert ein Datenobjekt hinzufügen, indem Sie die `StartCaching`\-Methode eines Hostelements aufrufen \(also z. B. in einem <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook> oder <xref:Microsoft.Office.Tools.Excel.Worksheet>\).  Entfernen Sie ein Datenobjekt aus dem Datencache, indem Sie die `StopCaching`\-Methode eines Hostelements aufrufen.  
+# <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>How to: Programmatically Cache a Data Source in an Office Document
+  You can programmatically add a data object to the data cache in a document by calling the `StartCaching` method of a host item, such as a <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, or <xref:Microsoft.Office.Tools.Excel.Worksheet>. Remove a data object from the data cache by calling the `StopCaching` method of a host item.  
   
- Die `StartCaching`\-Methode und die `StopCaching`\-Methode sind private\-Methoden, sie werden jedoch in IntelliSense angezeigt.  
+ The `StartCaching` method and the `StopCaching` method are both private, but they appear in IntelliSense.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Wenn Sie die `StartCaching`\-Methode für das Hinzufügen eines Datenobjekts zum Datencache verwenden, muss das Datenobjekt nicht mit dem <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>\-Attribut deklariert werden.  Das Datenobjekt muss jedoch bestimmte Anforderungen erfüllen, damit es dem Datencache hinzugefügt werden kann.  Weitere Informationen finden Sie unter [Zwischenspeichern von Daten](../vsto/caching-data.md).  
+ When you use the `StartCaching` method to add a data object to the data cache, the data object does not need to be declared with the <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> attribute. However, the data object must meet certain requirements to be added to the data cache. For more information, see [Caching Data](../vsto/caching-data.md).  
   
-### So können Sie ein Datenobjekt programmgesteuert im Cache zwischenspeichern  
+### <a name="to-programmatically-cache-a-data-object"></a>To programmatically cache a data object  
   
-1.  Deklarieren Sie das Datenobjekt auf Klassenebene und nicht innerhalb einer Methode.  In diesem Beispiel wird davon ausgegangen, dass Sie ein <xref:System.Data.DataSet> mit dem Namen `dataSet1` deklarieren, das Sie programmgesteuert zwischenspeichern möchten.  
+1.  Declare the data object at the class level, not inside a method. This example assumes that you are declaring a <xref:System.Data.DataSet> named `dataSet1` that you want to cache programmatically.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#12](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/CS/Sheet1.cs#12)]
-     [!code-vb[Trin_VstcoreDataExcel#12](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/VB/Sheet1.vb#12)]  
+     [!code-csharp[Trin_VstcoreDataExcel#12](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#12)]  [!code-vb[Trin_VstcoreDataExcel#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#12)]  
   
-2.  Instanziieren Sie das Datenobjekt. Rufen Sie anschließend die `StartCaching`\-Methode der Dokument\- bzw. Arbeitsblattinstanz auf, und übergeben Sie den Namen des Datenobjekts.  
+2.  Instantiate the data object, and then call the `StartCaching` method of the document or worksheet instance and pass in the name of the data object.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#13](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/CS/Sheet1.cs#13)]
-     [!code-vb[Trin_VstcoreDataExcel#13](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/VB/Sheet1.vb#13)]  
+     [!code-csharp[Trin_VstcoreDataExcel#13](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#13)]  [!code-vb[Trin_VstcoreDataExcel#13](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#13)]  
   
-### So beenden Sie das Zwischenspeichern eines Datenobjekts  
+### <a name="to-stop-caching-a-data-object"></a>To stop caching a data object  
   
-1.  Rufen Sie die `StopCaching`\-Methode der Dokument\- oder der Arbeitsblattinstanz auf, und übergeben Sie den Namen des Datenobjekts.  In diesem Beispiel wird davon ausgegangen, dass ein <xref:System.Data.DataSet> mit der Bezeichnung `dataSet1` vorliegt, dessen Zwischenspeicherung Sie beenden möchten.  
+1.  Call the `StopCaching` method of the document or worksheet instance and pass in the name of the data object. This example assumes that you have a <xref:System.Data.DataSet> named `dataSet1` that you want to stop caching.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#14](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/CS/Sheet1.cs#14)]
-     [!code-vb[Trin_VstcoreDataExcel#14](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/VB/Sheet1.vb#14)]  
+     [!code-csharp[Trin_VstcoreDataExcel#14](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#14)]  [!code-vb[Trin_VstcoreDataExcel#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#14)]  
   
     > [!NOTE]  
-    >  Rufen Sie `StopCaching` nicht im Ereignishandler für das `Shutdown`\-Ereignis eines Dokuments oder eines Arbeitsblattes auf.  Sobald das `Shutdown`\-Ereignis ausgelöst wurde, kann der Datencache nicht mehr geändert werden.  Weitere Informationen zum `Shutdown`\-Ereignis finden Sie unter [Ereignisse in Office-Projekten](../vsto/events-in-office-projects.md).  
+    >  Do not call `StopCaching` from the event handler for the `Shutdown` event of a document or worksheet. By the time the `Shutdown` event is raised, it is too late to modify the data cache. For more information about the `Shutdown` event, see [Events in Office Projects](../vsto/events-in-office-projects.md).  
   
-## Siehe auch  
- [Zwischenspeichern von Daten](../vsto/caching-data.md)   
- [Gewusst wie: Zwischenspeichern von Daten zur Offlineverwendung oder zur Verwendung auf einem Server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
- [Gewusst wie: Zwischenspeichern von Daten in einem kennwortgeschützten Dokument](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
- [Zugreifen auf Daten in Dokumenten auf dem Server](../vsto/accessing-data-in-documents-on-the-server.md)   
- [Speichern von Daten](../data-tools/saving-data.md)  
+## <a name="see-also"></a>See Also  
+ [Caching Data](../vsto/caching-data.md)   
+ [How to: Cache Data for Use Offline or on a Server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
+ [How to: Cache Data in a Password-Protected Document](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
+ [Accessing Data in Documents on the Server](../vsto/accessing-data-in-documents-on-the-server.md)   
+ [Saving Data](/visualstudio/data-tools/saving-data)  
   
   

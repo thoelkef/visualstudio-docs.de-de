@@ -1,42 +1,59 @@
 ---
-title: "CA1402: &#220;berladungen in f&#252;r COM sichtbaren Schnittstellen vermeiden | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "AvoidOverloadsInComVisibleInterfaces"
-  - "CA1402"
-helpviewer_keywords: 
-  - "AvoidOverloadsInComVisibleInterfaces"
-  - "CA1402"
+title: 'CA1402: Avoid overloads in COM visible interfaces | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- AvoidOverloadsInComVisibleInterfaces
+- CA1402
+helpviewer_keywords:
+- AvoidOverloadsInComVisibleInterfaces
+- CA1402
 ms.assetid: 2724c1f9-d5d3-4704-b124-21c4d398e5df
 caps.latest.revision: 17
-caps.handback.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA1402: &#220;berladungen in f&#252;r COM sichtbaren Schnittstellen vermeiden
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 59c167ccc0b33dade808b3537443de0c2ac18b82
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1402-avoid-overloads-in-com-visible-interfaces"></a>CA1402: Avoid overloads in COM visible interfaces
 |||  
 |-|-|  
 |TypeName|AvoidOverloadsInComVisibleInterfaces|  
 |CheckId|CA1402|  
-|Kategorie \(Category\)|Microsoft.Interoperability|  
-|Unterbrechende Änderung|Breaking|  
+|Category|Microsoft.Interoperability|  
+|Breaking Change|Breaking|  
   
-## Ursache  
- Eine sichtbare Component Object Model \(COM\)\-Schnittstelle deklariert überladene Methoden.  
+## <a name="cause"></a>Cause  
+ A Component Object Model (COM) visible interface declares overloaded methods.  
   
-## Regelbeschreibung  
- Wenn für COM\-Clients überladene Methoden verfügbar gemacht werden, behält nur die erste Methodenüberladung ihren Namen.  Nachfolgende Überladungen werden eindeutig umbenannt, indem dem Namen ein Unterstrich \('\_'\) und eine ganze Zahl angefügt werden, die der Reihenfolge der Deklaration der Überladung entspricht.  Betrachten Sie z. B. die folgenden Methoden:  
+## <a name="rule-description"></a>Rule Description  
+ When overloaded methods are exposed to COM clients, only the first method overload retains its name. Subsequent overloads are uniquely renamed by appending to the name an underscore character '_' and an integer that corresponds to the order of declaration of the overload. For example, consider the following methods.  
   
 ```  
 void SomeMethod(int valueOne);  
@@ -44,7 +61,7 @@ void SomeMethod(int valueOne, int valueTwo, int valueThree);
 void SomeMethod(int valueOne, int valueTwo);  
 ```  
   
- Diese Methoden werden COM\-Clients wie folgt verfügbar gemacht.  
+ These methods are exposed to COM clients as the following.  
   
 ```  
 void SomeMethod(int valueOne);  
@@ -52,27 +69,26 @@ void SomeMethod_2(int valueOne, int valueTwo, int valueThree);
 void SomeMethod_3(int valueOne, int valueTwo);  
 ```  
   
- Visual Basic 6\-COM\-Clients können keine Schnittstellenmethoden mit einem Unterstrich im Namen implementieren.  
+ Visual Basic 6 COM clients cannot implement interface methods by using an underscore in the name.  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, benennen Sie die überladenen Methoden um, sodass die Namen eindeutig sind.  Sie können die Schnittstelle auch für COM sichtbar machen, indem Sie die Zugriffsart in `internal` ändern \(`Friend` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]\) oder das auf `false` festgelegte <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>\-Attribut übernehmen.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, rename the overloaded methods so that the names are unique. Alternatively, make the interface invisible to COM by changing the accessibility to `internal` (`Friend` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) or by applying the <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> attribute set to `false`.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Unterdrücken Sie keine Warnung dieser Regel.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule.  
   
-## Beispiel  
- Das folgende Beispiel zeigt eine Schnittstelle, die gegen die Regel verstößt, und eine Schnittstelle, die der Regel entspricht.  
+## <a name="example"></a>Example  
+ The following example shows an interface that violates the rule and an interface that satisfies the rule.  
   
- [!code-vb[FxCop.Interoperability.OverloadsInterface#1](../code-quality/codesnippet/VisualBasic/ca1402-avoid-overloads-in-com-visible-interfaces_1.vb)]
- [!code-cs[FxCop.Interoperability.OverloadsInterface#1](../code-quality/codesnippet/CSharp/ca1402-avoid-overloads-in-com-visible-interfaces_1.cs)]  
+ [!code-vb[FxCop.Interoperability.OverloadsInterface#1](../code-quality/codesnippet/VisualBasic/ca1402-avoid-overloads-in-com-visible-interfaces_1.vb)] [!code-csharp[FxCop.Interoperability.OverloadsInterface#1](../code-quality/codesnippet/CSharp/ca1402-avoid-overloads-in-com-visible-interfaces_1.cs)]  
   
-## Verwandte Regeln  
- [CA1413: Nicht öffentliche Felder in für COM sichtbaren Werttypen vermeiden](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)  
+## <a name="related-rules"></a>Related Rules  
+ [CA1413: Avoid non-public fields in COM visible value types](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)  
   
- [CA1407: Statische Member in für COM sichtbaren Typen vermeiden](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)  
+ [CA1407: Avoid static members in COM visible types](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)  
   
- [CA1017: Assemblys mit ComVisibleAttribute markieren](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)  
+ [CA1017: Mark assemblies with ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)  
   
-## Siehe auch  
- [Interoperating with Unmanaged Code](../Topic/Interoperating%20with%20Unmanaged%20Code.md)   
+## <a name="see-also"></a>See Also  
+ [Interoperating with Unmanaged Code](/dotnet/framework/interop/index)   
  [Long Data Type](/dotnet/visual-basic/language-reference/data-types/long-data-type)

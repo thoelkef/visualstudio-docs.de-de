@@ -1,80 +1,84 @@
 ---
-title: "Gewusst wie: Hinzuf&#252;gen einer Creator-Methode"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "BDC [SharePoint-Entwicklung in Visual Studio], Hinzufügen von Entitäten"
-  - "BDC [SharePoint-Entwicklung in Visual Studio], Hinzufügen von Entitätsinstanzen"
-  - "BDC [SharePoint-Entwicklung in Visual Studio], Creator"
-  - "Business Data Connectivity-Dienst [SharePoint-Entwicklung in Visual Studio], Hinzufügen von Entitäten"
-  - "Business Data Connectivity-Dienst [SharePoint-Entwicklung in Visual Studio], Hinzufügen von Entitätsinstanzen"
-  - "Business Data Connectivity-Dienst [SharePoint-Entwicklung in Visual Studio], Creator"
+title: 'How to: Add a Creator Method | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- BDC [SharePoint development in Visual Studio], Creator
+- BDC [SharePoint development in Visual Studio], adding entity instances
+- Business Data Connectivity service [SharePoint development in Visual Studio], adding entities
+- Business Data Connectivity service [SharePoint development in Visual Studio], adding entity instances
+- BDC [SharePoint development in Visual Studio], adding entities
+- Business Data Connectivity service [SharePoint development in Visual Studio], Creator
 ms.assetid: 52f0382f-10a0-4a51-83fe-6f22f4647df8
 caps.latest.revision: 30
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 29
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: c73fc212baa6284b8915a5866cb4d13232231149
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Gewusst wie: Hinzuf&#252;gen einer Creator-Methode
-  Mit einer Creator\-Methode werden der Datenquelle einer Entität neue Daten hinzugefügt.  Der Business Data Connectivity \(BDC\)\- \- Dienst ruft diese Methode auf, wenn Benutzer die Schaltfläche **Neues Element** auf dem Menüband einer Liste auswählen, die auf dem Modell basiert.  Weitere Informationen finden Sie unter [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).  
+# <a name="how-to-add-a-creator-method"></a>How to: Add a Creator Method
+  A Creator method adds new data to the data source of an entity. The Business Data Connectivity (BDC) service calls this method when users choose the **New Item** button on the Ribbon of a list that is based on the model. For more information, see [Designing a Business Data Connectivity Model](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
-### So fügen Sie eine Creator\-Methode hinzu  
+### <a name="to-add-a-creator-method"></a>To add a Creator method  
   
-1.  Wählen Sie im BDC\-Designer eine Entität aus.  
+1.  On the BDC designer, choose an entity.  
   
-2.  Klicken Sie auf der Menüleiste **Weitere Fenster**, **BDC\-Methodendetails**, **Ansicht** aus.  
+2.  On the menu bar, choose **View**, **Other Windows**, **BDC Method Details**.  
   
-     Das Fenster **BDC\-Methodendetails** wird geöffnet.  Weitere Informationen über dieses Fenster, finden Sie unter [Übersicht über Entwurfstools für BDC-Modelle](../sharepoint/bdc-model-design-tools-overview.md).  
+     The **BDC Method Details** window opens. For more information about that window, see [BDC Model Design Tools Overview](../sharepoint/bdc-model-design-tools-overview.md).  
   
-3.  In der Liste **Methode hinzufügen** wählen Sie **Creator\-Methode erstellen** aus.  
+3.  In the **Add a Method** list, choose **Create Creator Method**.  
   
-     Visual Studio werden dem Modell die folgenden Elemente hinzu, und diese Elemente werden im Fenster **BDC\-Methodendetails**.  
+     Visual Studio adds the following elements to the model, and these elements appear in the **BDC Method Details** window.  
   
-    -   Eine Methode mit dem Namen **Create**.  
+    -   A method named **Create**.  
   
-    -   Ein Eingabeparameter für die Methode.  
+    -   An input parameter for the method.  
   
-    -   Ein Rückgabeparameter für die Methode.  
+    -   A return parameter for the method.  
   
-    -   Typdeskriptoren für die Parameter.  
+    -   Type descriptors for the parameters.  
   
-    -   Eine Methodeninstanz für die Methode.  
+    -   A method instance for the method.  
   
-     Weitere Informationen finden Sie unter [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).  
+     For more information, see [Designing a Business Data Connectivity Model](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
-4.  In **Projektmappen\-Explorer** öffnen Sie das Kontextmenü der Dienstcodedatei, die für die Entität generiert wurde, und dann **Code anzeigen** aus.  
+4.  In **Solution Explorer**, open the shortcut menu of the service code file that was generated for the entity, and then choose **View Code**.  
   
-     Die Codedatei für den Entitätsdienst wird im Code\-Editor geöffnet.  Weitere Informationen zur Codedatei für den Entitätsdienst finden Sie unter [Erstellen eines Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md).  
+     The entity service code file opens in the Code Editor. For more information about the entity service code file, see [Creating a Business Data Connectivity Model](../sharepoint/creating-a-business-data-connectivity-model.md).  
   
-5.  Fügen Sie der Creator\-Methode Code hinzu, mit dem der Datenquelle Daten hinzugefügt werden.  Im folgenden Beispiel wird ein Kontakt der AdventureWorks\-Beispieldatenbank für SQL Server hinzu.  
+5.  Add code to the Creator method that adds data to the data source. The following example adds a contact to the AdventureWorks sample database for SQL Server.  
   
     > [!NOTE]  
-    >  Ersetzen Sie den Wert des Felds `ServerName` durch den Namen Ihres Servers.  
+    >  Replace the value of the `ServerName` field with the name of your server.  
   
-     [!code-csharp[SP_BDC#4](../snippets/csharp/VS_Snippets_OfficeSP/sp_bdc/CS/bdcmodel1/contactservice.cs#4)]
-     [!code-vb[SP_BDC#4](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_bdc/VB/bdcmodel1/contactservice.vb#4)]  
+     [!code-csharp[SP_BDC#4](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#4)]  [!code-vb[SP_BDC#4](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#4)]  
   
-## Siehe auch  
- [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Gewusst wie: Hinzufügen einer Finder-Methode](../sharepoint/how-to-add-a-finder-method.md)   
- [Gewusst wie: Hinzufügen einer bestimmten Finder-Methode](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [Gewusst wie: Hinzufügen einer Deleter-Methode](../sharepoint/how-to-add-a-deleter-method.md)   
- [Gewusst wie: Hinzufügen einer Updater-Methode](../sharepoint/how-to-add-an-updater-method.md)   
- [Übersicht über Entwurfstools für BDC-Modelle](../sharepoint/bdc-model-design-tools-overview.md)   
- [Gewusst wie: Hinzufügen eines Parameters zu einer Methode](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Gewusst wie: Definieren einer Methodeninstanz](../sharepoint/how-to-define-a-method-instance.md)  
+## <a name="see-also"></a>See Also  
+ [Designing a Business Data Connectivity Model](../sharepoint/designing-a-business-data-connectivity-model.md)   
+ [How to: Add a Finder Method](../sharepoint/how-to-add-a-finder-method.md)   
+ [How to: Add a Specific Finder Method](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [How to: Add a Deleter Method](../sharepoint/how-to-add-a-deleter-method.md)   
+ [How to: Add an Updater Method](../sharepoint/how-to-add-an-updater-method.md)   
+ [BDC Model Design Tools Overview](../sharepoint/bdc-model-design-tools-overview.md)   
+ [How to: Add a Parameter to a Method](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [How to: Define a Method Instance](../sharepoint/how-to-define-a-method-instance.md)  
   
   

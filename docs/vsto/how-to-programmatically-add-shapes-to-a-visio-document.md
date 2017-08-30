@@ -1,47 +1,51 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Hinzuf&#252;gen von Shapes zu Visio-Dokumenten"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Visio [Office-Entwicklung in Visual Studio], Hinzufügen von Visio-Shapes"
-  - "Shapes [Office-Entwicklung in Visual Studio], Hinzufügen von Visio-Shapes"
+title: 'How to: Programmatically Add Shapes to a Visio Document | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Visio [Office development in Visual Studio], adding Visio shapes
+- shapes [Office development in Visual Studio], adding Visio shapes
 ms.assetid: 29613237-88f5-41a7-9e13-cfa177f41221
 caps.latest.revision: 17
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 17
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 2adff4c408493c1a69a44207d9aad801ce8266fd
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Gewusst wie: Programmgesteuertes Hinzuf&#252;gen von Shapes zu Visio-Dokumenten
-  Sie können einem Microsoft Office Visio\-Dokument Shapes hinzufügen, indem Sie die Master\-Shapes aus einer Schablone abrufen und auf der aktiven Seite ablegen.  
+# <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>How to: Programmatically Add Shapes to a Visio Document
+  You can add shapes to a Microsoft Office Visio document by retrieving the masters from a stencil and dropping the shapes on the active page.  
   
- Weitere Informationen finden Sie in der VBA\-Referenzdokumentation für die [Microsoft.Office.Interop.Visio.Documents.Add](HV10069241)\-Methode, [Microsoft.Office.Interop.Visio.Application.ActivePage](HV10069528)\-Eigenschaft und [Microsoft.Office.Interop.Visio.Page.Drop](HV10070273)\-Methode.  
+ For more information, see the VBA reference documentation for the [Microsoft.Office.Interop.Visio.Documents.Add](http://msdn.microsoft.com/library/office/ff766868.aspx) method, [Microsoft.Office.Interop.Visio.Application.ActivePage](http://msdn.microsoft.com/library/office/ff765484.aspx) property, and [Microsoft.Office.Interop.Visio.Page.Drop](http://msdn.microsoft.com/library/office/ff765054.aspx) method.  
   
-## Hinzufügen von Shapes zu einem Visio\-Dokument  
+## <a name="adding-shapes-to-a-visio-document"></a>Adding Shapes to a Visio Document  
   
-#### So fügen Sie einem Visio\-Dokument Shapes hinzu  
+#### <a name="to-add-shapes-to-a-visio-document"></a>To add shapes to a Visio document  
   
--   Rufen Sie bei einem aktiven Dokument die Master\-Shapes aus der Documents.Masters\-Auflistung ab, und legen Sie sie im aktiven Dokument ab. Sie können einen Master mit dem Index oder Masternamen abrufen.  
+-   With a document active, retrieve the masters from the Documents.Masters collection and drop the shapes on the active document. You can retrieve a master by using the index or master name.  
   
-     Im folgenden Codebeispiel wird ein leeres Visio\-Dokument erstellt und anschließend geöffnet, während die Schablone **Standard\-Shapes** angedockt ist. Anschließend werden vom Code verschiedene Shapes abgerufen und auf der aktiven Seite abgelegt.  
+     The following code example creates a blank Visio document, and then opens it with the **Basic Shapes** stencil docked. The code then retrieves several shapes and drops them on the active page.  
   
-     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#13](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreVisioAutomationAddIn/CS/ThisAddIn.cs#13)]
-     [!code-vb[Trin_VstcoreVisioAutomationAddIn#13](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreVisioAutomationAddIn/VB/ThisAddIn.vb#13)]  
+     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#13](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#13)]  [!code-vb[Trin_VstcoreVisioAutomationAddIn#13](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#13)]  
   
-## Siehe auch  
- [Visio-Projektmappen](../vsto/visio-solutions.md)   
- [Übersicht über das Visio-Objektmodell](../vsto/visio-object-model-overview.md)   
- [Arbeiten mit Visio-Shapes](../vsto/working-with-visio-shapes.md)   
- [Gewusst wie: Programmgesteuertes Kopieren und Einfügen von Shapes in ein Visio-Dokument](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)  
+## <a name="see-also"></a>See Also  
+ [Visio Solutions](../vsto/visio-solutions.md)   
+ [Visio Object Model Overview](../vsto/visio-object-model-overview.md)   
+ [Working with Visio Shapes](../vsto/working-with-visio-shapes.md)   
+ [How to: Programmatically Copy and Paste Shapes in a Visio Document](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)  
   
   

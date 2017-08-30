@@ -1,100 +1,102 @@
 ---
-title: "Gewusst wie: &#196;ndern der Gr&#246;&#223;e von Bookmark-Steuerelementen"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Steuerelemente [Office-Entwicklung in Visual Studio], Größenänderung"
-  - "Bookmark-Steuerelement, Größenänderung"
+title: 'How to: Resize Bookmark Controls | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- controls [Office development in Visual Studio], resizing
+- Bookmark control, resizing
 ms.assetid: 3de1c774-921a-4113-a54a-e3b8d4a65d53
 caps.latest.revision: 45
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 44
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: da99b72728523e83e6b894e8c451953426240b16
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Gewusst wie: &#196;ndern der Gr&#246;&#223;e von Bookmark-Steuerelementen
-  Die Größe eines <xref:Microsoft.Office.Tools.Word.Bookmark>\-Steuerelements legen Sie fest, wenn Sie es einem Microsoft Office Word\-Dokument hinzufügen. Sie können dessen Größe aber auch zu einem späteren Zeitpunkt ändern.  
+# <a name="how-to-resize-bookmark-controls"></a>How to: Resize Bookmark Controls
+  You set the size of a <xref:Microsoft.Office.Tools.Word.Bookmark> control when you add it to a Microsoft Office Word document. You can also resize it at a later time.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- Es gibt drei Möglichkeiten, die Größe eines Lesezeichens zu ändern:  
+ There are three ways to resize a bookmark:  
   
--   Hinzufügen von Text zu oder Entfernen von Text aus dem <xref:Microsoft.Office.Tools.Word.Bookmark>\-Steuerelement.  
+-   Add or remove text in the <xref:Microsoft.Office.Tools.Word.Bookmark> control.  
   
-     Immer dann, wenn Sie einem Lesezeichen Text hinzufügen, wird es automatisch vergrößert, damit es den neuen Text enthält. Wenn Sie Text löschen, wird das Lesezeichen automatisch verkleinert.  
+     Whenever you add text in a bookmark, the size of the bookmark automatically increases to contain the new text. When you delete text, the size of the bookmark automatically decreases.  
   
--   Ändern der <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A>\- und der <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A>\-Eigenschaft des <xref:Microsoft.Office.Tools.Word.Bookmark>\-Steuerelements.  
+-   Change the <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> and <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> properties of the <xref:Microsoft.Office.Tools.Word.Bookmark> control.  
   
-     Dies bietet sich an, wenn Sie die Größe nur um wenige Zeichen ändern.  
+     This is useful if you are changing the size by only a few characters.  
   
--   Neuerstellen des <xref:Microsoft.Office.Tools.Word.Bookmark>\-Steuerelements.  
+-   Recreate the <xref:Microsoft.Office.Tools.Word.Bookmark> control.  
   
-     Dies bietet sich an, wenn sich die Größe oder die Position des Lesezeichens wesentlich geändert hat.  
+     This is useful if there is a substantial change in the size or location of a bookmark.  
   
- In Projekten auf Dokumentebene können Sie dem Dokument in Ihrem Projekt zur Entwurfs\- oder Laufzeit <xref:Microsoft.Office.Tools.Word.Bookmark>\-Steuerelemente hinzufügen. In VSTO\-Add\-In\-Projekten können Sie einem beliebigen geöffneten Dokument zur Laufzeit <xref:Microsoft.Office.Tools.Word.Bookmark>\-Steuerelemente hinzufügen. Weitere Informationen finden Sie unter [Gewusst wie: Hinzufügen von Bookmark-Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
+ In document-level projects, you can add <xref:Microsoft.Office.Tools.Word.Bookmark> controls to the document in your project at design time or at run time. In VSTO Add-in projects, you can add <xref:Microsoft.Office.Tools.Word.Bookmark> controls to any open document at run time. For more information, see [How to: Add Bookmark Controls to Word Documents](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## Ändern der Start\- und der End\-Eigenschaft  
+## <a name="changing-the-start-and-end-properties"></a>Changing the Start and End Properties  
   
-#### So ändern Sie zur Entwurfszeit die Größe eines Lesezeichens in einem Projekt auf Dokumentebene  
+#### <a name="to-resize-a-bookmark-in-a-document-level-project-at-design-time"></a>To resize a bookmark in a document-level project at design time  
   
-1.  Wählen Sie das Lesezeichen im Fenster **Eigenschaften** aus.  
+1.  Select the bookmark in the **Properties** window.  
   
-2.  Vergrößern oder verkleinern Sie den Wert der <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A>\-Eigenschaft.  
+2.  Increase or decrease the value of the <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> property.  
   
-3.  Vergrößern oder verkleinern Sie den Wert der <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A>\-Eigenschaft.  
+3.  Increase or decrease the value of the <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> property.  
   
-#### So ändern Sie zur Laufzeit die Größe eines Lesezeichens in einem Projekt auf Dokumentebene  
+#### <a name="to-resize-a-bookmark-in-a-document-level-project-at-run-time"></a>To resize a bookmark in a document-level project at run time  
   
-1.  Ändern Sie die <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A>\- und die <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A>\-Eigenschaft eines <xref:Microsoft.Office.Tools.Word.Bookmark>\-Objekts, das Sie zur Laufzeit oder zur Entwurfszeit erstellt haben.  
+1.  Modify the <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> and <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> properties of a <xref:Microsoft.Office.Tools.Word.Bookmark> you created at run time or at design time.  
   
-     Im folgenden Codebeispiel werden dem Anfang eines Lesezeichens namens `SampleBookmark` fünf Zeichen hinzugefügt. Für diesen Code wird davon ausgegangen, dass sich vor dem Lesezeichen mindestens fünf Textzeichen befinden.  
+     The following code example adds five characters to the start of a bookmark named `SampleBookmark`. This code assumes that there are at least five characters of text before the bookmark.  
   
-     [!code-csharp[Trin_VstcoreHostControlsWord#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreHostControlsWord/CS/ThisDocument.cs#2)]
-     [!code-vb[Trin_VstcoreHostControlsWord#2](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreHostControlsWord/VB/ThisDocument.vb#2)]  
+     [!code-csharp[Trin_VstcoreHostControlsWord#2](../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs#2)]  [!code-vb[Trin_VstcoreHostControlsWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#2)]  
   
-     Im folgenden Codebeispiel werden am Ende desselben Lesezeichens fünf Zeichen hinzugefügt. Für diesen Code wird davon ausgegangen, dass sich hinter dem Lesezeichen mindestens fünf Textzeichen befinden.  
+     The following code example adds five characters to the end of the same bookmark. This code assumes that there are at least five characters of text after the bookmark.  
   
-     [!code-csharp[Trin_VstcoreHostControlsWord#3](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreHostControlsWord/CS/ThisDocument.cs#3)]
-     [!code-vb[Trin_VstcoreHostControlsWord#3](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreHostControlsWord/VB/ThisDocument.vb#3)]  
+     [!code-csharp[Trin_VstcoreHostControlsWord#3](../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs#3)]  [!code-vb[Trin_VstcoreHostControlsWord#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#3)]  
   
-#### So ändern Sie zur Laufzeit die Größe eines Lesezeichens in einem VSTO\-Add\-In\-Projekt  
+#### <a name="to-resize-a-bookmark-in-an-vsto-add-in-project-at-run-time"></a>To resize a bookmark in an VSTO Add-in project at run time  
   
-1.  Ändern Sie die <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A>\- und die <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A>\-Eigenschaft eines <xref:Microsoft.Office.Tools.Word.Bookmark>\-Objekts, das Sie zur Laufzeit erstellt haben.  
+1.  Modify the <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> and <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> properties of a <xref:Microsoft.Office.Tools.Word.Bookmark> you created at run time.  
   
-     Im folgenden Codebeispiel wird ein <xref:Microsoft.Office.Tools.Word.Bookmark>\-Objekt erstellt, das den Text aus dem ersten Absatz des aktiven Dokuments enthält. Anschließend werden am Anfang und am Ende des <xref:Microsoft.Office.Tools.Word.Bookmark>\-Objekts fünf Zeichen entfernt.  
+     The following code example creates a <xref:Microsoft.Office.Tools.Word.Bookmark> that contains the text in the first paragraph of the active document, and then removes five characters from the start and end of the <xref:Microsoft.Office.Tools.Word.Bookmark>.  
   
-     [!code-csharp[Trin_WordAddInDynamicControls#16](../snippets/csharp/VS_Snippets_OfficeSP/Trin_WordAddInDynamicControls/CS/ThisAddIn.cs#16)]
-     [!code-vb[Trin_WordAddInDynamicControls#16](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_WordAddInDynamicControls/VB/ThisAddIn.vb#16)]  
+     [!code-vb[Trin_WordAddInDynamicControls#16](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#16)]  [!code-csharp[Trin_WordAddInDynamicControls#16](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#16)]  
   
-## Neuerstellen des Lesezeichens  
- Sie können die Größe eines Lesezeichens in einem Projekt auf Dokumentebene ändern, indem Sie ein neues Lesezeichen hinzufügen, das denselben Namen wie das vorhandene Lesezeichen, aber eine andere Größe hat.  
+## <a name="recreating-the-bookmark"></a>Recreating the Bookmark  
+ You can resize a bookmark in a document-level project by adding a new bookmark that has the same name as the existing bookmark, but that has a different size.  
   
-#### So erstellen Sie zur Entwurfszeit ein Lesezeichen in einem Projekt auf Dokumentebene  
+#### <a name="to-recreate-a-bookmark-in-a-document-level-project-at-design-time"></a>To recreate a bookmark in a document-level project at design time  
   
-1.  Markieren Sie den Text, der in das neue <xref:Microsoft.Office.Tools.Word.Bookmark>\-Steuerelement eingefügt werden soll.  
+1.  Select the text to be included in the new <xref:Microsoft.Office.Tools.Word.Bookmark> control.  
   
-2.  Klicken Sie im Menü **Einfügen** auf **Lesezeichen**.  
+2.  On the **Insert** menu, click **Bookmark**.  
   
-3.  Geben Sie im Dialogfeld **Lesezeichen** den Namen des Lesezeichens ein, dessen Größe Sie ändern möchten, und klicken Sie auf **Hinzufügen**.  
+3.  In the **Bookmark** dialog box, select the name of the bookmark that you want to resize and click **Add**.  
   
-## Siehe auch  
- [Gewusst wie: Hinzufügen von Bookmark-Steuerelementen zu Word-Dokumenten](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
- [Automatisieren von Word mithilfe von erweiterten Objekten](../vsto/automating-word-by-using-extended-objects.md)   
- [Übersicht über Hostelemente und Hoststeuerelemente](../vsto/host-items-and-host-controls-overview.md)   
- [Gewusst wie: Ändern der Größe von NamedRange-Steuerelementen](../vsto/how-to-resize-namedrange-controls.md)   
- [Gewusst wie: Ändern der Größe von ListObject-Steuerelementen](../vsto/how-to-resize-listobject-controls.md)   
- [Programmgesteuerte Einschränkungen von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
+## <a name="see-also"></a>See Also  
+ [How to: Add Bookmark Controls to Word Documents](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
+ [Automating Word by Using Extended Objects](../vsto/automating-word-by-using-extended-objects.md)   
+ [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [How to: Resize NamedRange Controls](../vsto/how-to-resize-namedrange-controls.md)   
+ [How to: Resize ListObject Controls](../vsto/how-to-resize-listobject-controls.md)   
+ [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   
   

@@ -1,77 +1,81 @@
 ---
-title: "Gewusst wie: Erstellen eines Ereignisempf&#228;ngers"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.SharePointTools.SPE.EventReceiver"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Ereignisempfänger [SharePoint-Entwicklung in Visual Studio]"
-  - "SharePoint-Entwicklung in Visual Studio, Ereignisempfänger"
+title: 'How to: Create an Event Receiver | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VS.SharePointTools.SPE.EventReceiver
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint development in Visual Studio, event receivers
+- event receivers [SharePoint development in Visual Studio]
 ms.assetid: 6f90cb48-eb8f-43c2-a3f7-ed4ce81aedf2
 caps.latest.revision: 20
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 19
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 69a1c53bd067b77838e133808f0c72ca153e4bc7
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Gewusst wie: Erstellen eines Ereignisempf&#228;ngers
-  Mithilfe *Ereignisempfänger* erstellen, können Sie reagieren, wenn ein Benutzer auf SharePoint\-Elemente wie Listen oder Listenelemente interagiert.  Code kann beispielsweise in einen Ereignisempfänger ausgelöst werden, wenn ein Benutzer der Kalender geändert oder ein Name aus der Kontaktliste gelöscht wird.  Mit diesem Thema folgen, können Sie erfahren, wie ein Ereignisempfänger einer Listeninstanz.  
+# <a name="how-to-create-an-event-receiver"></a>How to: Create an Event Receiver
+  By creating *event receivers*, you can respond when a user interacts with SharePoint items such as lists or list items. For example, the code in an event receiver can be triggered when a user changes the calendar or deletes a name from a contacts list. By following this topic, you can learn how to add an event receiver to a list instance.  
   
- Um diese Schritte durchzuführen, müssen Sie [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] und die unterstützten Editionen von Windows und SharePoint installiert haben.  Weitere Informationen finden Sie unter [Anforderungen für die Entwicklung von SharePoint-Lösungen](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  Da dieses Beispiel ein SharePoint\-Projekt erfordert, müssen Sie das Verfahren im Thema auch [Exemplarische Vorgehensweise: Erstellen einer Websitespalte, eines Inhaltstyps und einer Liste für SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) abgeschlossen haben.  
+ To complete these steps, you must have installed [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] and supported editions of Windows and SharePoint. For more information, see [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md). Because this example requires a SharePoint project, you also must have completed the procedure in the topic [Walkthrough: Create a Site Column, Content Type, and List for SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).  
   
-## Hinzufügen eines Ereignisempfängers  
- Das Projekt, das Sie in [Exemplarische Vorgehensweise: Erstellen einer Websitespalte, eines Inhaltstyps und einer Liste für SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) erstellt haben, schließt benutzerdefinierte Websitespalten, eine benutzerdefinierte Liste und einen Inhaltstyp.  In der folgenden Prozedur Erweitern Sie das Projekt, indem Sie ein einfacher Ereignishandler \(ein Ereignisempfänger\) einer Listeninstanz hinzu, um anzuzeigen, wie Ereignisse behandelt, die in SharePoint\-Elemente wie Listen auftreten.  
+## <a name="adding-an-event-receiver"></a>Adding an Event Receiver  
+ The project that you created in [Walkthrough: Create a Site Column, Content Type, and List for SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) includes custom site columns, a custom list, and a content type. In the following procedure, you'll expand this project by adding a simple event handler (an event receiver) to a list instance to show how to handle events that occur in SharePoint items such as lists.  
   
-#### So fügen Sie der Listeninstanz einen Ereignisempfänger hinzu  
+#### <a name="to-add-an-event-receiver-to-the-list-instance"></a>To add an event receiver to the list instance  
   
-1.  Öffnen Sie das Projekt, das Sie in [Exemplarische Vorgehensweise: Erstellen einer Websitespalte, eines Inhaltstyps und einer Liste für SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) erstellt haben.  
+1.  Open the project that you created in [Walkthrough: Create a Site Column, Content Type, and List for SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).  
   
-2.  Wählen Sie im **Projektmappen\-Explorer** den SharePoint\-Projektknoten aus, der dem Namen **Klinik**.  
+2.  In **Solution Explorer**, choose the SharePoint project node, which is named **Clinic**.  
   
-3.  Wählen Sie in der Menüleiste **Projekt**,  **Neues Element hinzufügen** aus.  
+3.  On the menu bar, choose **Project**, **Add New Item**.  
   
-4.  Entweder unter **Visual C\#** oder den Knoten **Visual BasicSharePoint**, und wählen Sie das Element **2010** aus.  
+4.  Under either **Visual C#** or **Visual Basic**, expand the **SharePoint** node, and then choose the **2010** item.  
   
-5.  Im Bereich **Vorlagen** wählen Sie **Ereignisempfänger** aus, nennen Sie ihn TestEventReceiver1, und wählen Sie dann die Schaltfläche **OK** aus.  
+5.  In the **Templates** pane, choose **Event Receiver**, name it **TestEventReceiver1**, and then choose the **OK** button.  
   
-     Der **Assistent zum Anpassen von SharePoint** wird angezeigt.  
+     The **SharePoint Customization Wizard** appears.  
   
-6.  In der Liste **Welchen Typ soll der Ereignisempfänger aufweisen?** wählen Sie **Listenelementereignisse** aus.  
+6.  In the **What type of event receiver do you want?** list, choose **List Item Events**.  
   
-7.  In der Liste **Welche Element soll als Ereignisquelle dienen?** wählen Sie **Patienten \(Klinik\\Patienten\)** aus.  
+7.  In the **What item should be the event source?** list, choose **Patients (Clinic\Patients)**.  
   
-8.  In der Liste **Die folgenden Ereignisse behandeln** wählen Sie das Kontrollkästchen neben **Ein Element wurde hinzugefügt.**, und wählen Sie dann die Schaltfläche **Fertig stellen** aus.  
+8.  In the **Handle the following events** list, select the check box next to **An item was added**, and then choose the **Finish** button.  
   
-     Die Codedatei des neuen Ereignisempfängers enthält eine einzelne Methode, die `ItemAdded` genannt wird.  Im nächsten Schritt fügen Sie dieser Methode Code hinzu, sodass jeder Kontakt Scott braun standardmäßig ".  
+     The code file for the new event receiver contains a single method that's named `ItemAdded`. In the next step, you'll add code to this method so that every contact will be named Scott Brown by default.  
   
-9. Ersetzen Sie die vorhandene `ItemAdded`\-Methode durch folgenden Code, und wählen Sie dann die Taste F5 aus:  
+9. Replace the existing `ItemAdded` method with the following code, and then choose the F5 key:  
   
-     [!code-csharp[SP_EventReceiver#1](../snippets/csharp/VS_Snippets_OfficeSP/sp_eventreceiver/CS/CustomField1/TestEventReceiver1/TestEventReceiver1.cs#1)]
-     [!code-vb[SP_EventReceiver#1](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_eventreceiver/VB/CustomField1_VB/EventReceiver1/EventReceiver1.vb#1)]  
+     [!code-csharp[SP_EventReceiver#1](../sharepoint/codesnippet/CSharp/CustomField1/TestEventReceiver1/TestEventReceiver1.cs#1)]   [!code-vb[SP_EventReceiver#1](../sharepoint/codesnippet/VisualBasic/CustomField1_VB/EventReceiver1/EventReceiver1.vb#1)]  
   
-     Der Code wird ausgeführt und die SharePoint\-Website im Webbrowser angezeigt.  
+     The code runs, and the SharePoint site appears in the web browser.  
   
-10. Klicken Sie auf der Schnellstartleiste auf den Link **Patienten**, und dann den Link **Neues Element hinzufügen** aus.  
+10. On the QuickLaunch bar, choose the **Patients** link, and then choose the **Add New Item** link.  
   
-     Das Eingabeformular für neue Elemente wird geöffnet.  
+     The entry form for new items opens.  
   
-11. Geben Sie Daten in den Feldern ein, und wählen Sie dann die Schaltfläche **Speichern** aus.  
+11. Enter data in the fields, and then choose the **Save** button.  
   
-     Nachdem Sie die Schaltfläche **Speichern** auswählen, die der Spalte **Patientenname** Updates automatisch in den Namen Scott braun.  
+     After you choose the **Save** button, the **Patient Name** column automatically updates to the name Scott Brown.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md)  
   
   

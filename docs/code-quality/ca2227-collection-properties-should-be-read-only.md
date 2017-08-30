@@ -1,56 +1,71 @@
 ---
-title: "CA2227: Auflistungseigenschaften sollten schreibgesch&#252;tzt sein | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2227"
-  - "CollectionPropertiesShouldBeReadOnly"
-helpviewer_keywords: 
-  - "CA2227"
-  - "CollectionPropertiesShouldBeReadOnly"
+title: 'CA2227: Collection properties should be read only | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2227
+- CollectionPropertiesShouldBeReadOnly
+helpviewer_keywords:
+- CA2227
+- CollectionPropertiesShouldBeReadOnly
 ms.assetid: 26967aaf-6fbe-438a-b4d3-ac579b5dc0f9
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 17
----
-# CA2227: Auflistungseigenschaften sollten schreibgesch&#252;tzt sein
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 0134a75b966d0d65b30691c22cfd03e223c8bdbd
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2227-collection-properties-should-be-read-only"></a>CA2227: Collection properties should be read only
 |||  
 |-|-|  
 |TypeName|CollectionPropertiesShouldBeReadOnly|  
 |CheckId|CA2227|  
-|Kategorie \(Category\)|Microsoft.Usage|  
-|Unterbrechende Änderung|Breaking|  
+|Category|Microsoft.Usage|  
+|Breaking Change|Breaking|  
   
-## Ursache  
- Eine extern sichtbare schreibbare Eigenschaft ist ein Typ, der <xref:System.Collections.ICollection?displayProperty=fullName> implementiert.  Arrays, Indexer \(Eigenschaften mit dem Namen 'Item'\) und Berechtigungssätze werden von der Regel ignoriert.  
+## <a name="cause"></a>Cause  
+ An externally visible writable property is a type that implements <xref:System.Collections.ICollection?displayProperty=fullName>. Arrays, indexers (properties with the name 'Item'), and permission sets are ignored by the rule.  
   
-## Regelbeschreibung  
- Eine schreibbare Auflistungseigenschaft ermöglicht einem Benutzer, die Auflistung durch eine vollkommen andere Auflistung zu ersetzen.  Eine schreibgeschützte Eigenschaft sorgt dafür, dass die Auflistung nicht mehr ersetzt wird, lässt aber dennoch das Festlegen einzelner Member zu.  Wenn das Ziel darin besteht, die Auflistung zu ersetzen, sollte in das Entwurfsmuster eine Methode eingefügt werden, die alle Elemente aus der Auflistung entfernt, sowie eine Methode, mit der die Auflistung neu aufgefüllt wird.  Ein Beispiel für dieses Muster finden Sie in der <xref:System.Collections.ArrayList.Clear%2A>\-Methode und der <xref:System.Collections.ArrayList.AddRange%2A>\-Methode der <xref:System.Collections.ArrayList?displayProperty=fullName>\-Klasse.  
+## <a name="rule-description"></a>Rule Description  
+ A writable collection property allows a user to replace the collection with a completely different collection. A read-only property stops the collection from being replaced but still allows the individual members to be set. If replacing the collection is a goal, the preferred design pattern is to include a method to remove all the elements from the collection and a method to re-populate the collection. See the <xref:System.Collections.ArrayList.Clear%2A> and <xref:System.Collections.ArrayList.AddRange%2A> methods of the <xref:System.Collections.ArrayList?displayProperty=fullName> class for an example of this pattern.  
   
- Sowohl die binäre als auch die XML\-Serialisierung unterstützen schreibgeschützte Eigenschaften, bei denen es sich um Auflistungen handelt.  Für die <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName>\-Klasse bestehen bestimmte Anforderungen für Typen, die <xref:System.Collections.ICollection> und <xref:System.Collections.IEnumerable?displayProperty=fullName> implementieren, um serialisierbar zu sein.  
+ Both binary and XML serialization support read-only properties that are collections. The <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName> class has specific requirements for types that implement <xref:System.Collections.ICollection> and <xref:System.Collections.IEnumerable?displayProperty=fullName> in order to be serializable.  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, definieren Sie die Eigenschaft als schreibgeschützt, und – falls erforderlich für das Design – fügen Sie Methoden zum Leeren und erneuten Auffüllen der Auflistung hinzu.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, make the property read-only and, if the design requires it, add methods to clear and re-populate the collection.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Unterdrücken Sie keine Warnung dieser Regel.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule.  
   
-## Beispiel  
- Das folgende Beispiel zeigt einen Typ mit einer schreibbaren Auflistungseigenschaft und verdeutlicht, wie die Auflistung direkt ersetzt werden kann.  Zudem wird die bevorzugte Methode des Ersetzens einer schreibgeschützten Auflistungseigenschaft mit der `Clear`\-Methode und der `AddRange`\-Methode veranschaulicht.  
+## <a name="example"></a>Example  
+ The following example shows a type with a writable collection property and shows how the collection can be replaced directly. Additionally, the preferred manner of replacing a read-only collection property using `Clear` and `AddRange` methods is shown.  
   
- [!code-cs[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/CSharp/ca2227-collection-properties-should-be-read-only_1.cs)]
- [!code-vb[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/VisualBasic/ca2227-collection-properties-should-be-read-only_1.vb)]
- [!code-cpp[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/CPP/ca2227-collection-properties-should-be-read-only_1.cpp)]  
+ [!code-csharp[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/CSharp/ca2227-collection-properties-should-be-read-only_1.cs)] [!code-vb[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/VisualBasic/ca2227-collection-properties-should-be-read-only_1.vb)] [!code-cpp[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/CPP/ca2227-collection-properties-should-be-read-only_1.cpp)]  
   
-## Verwandte Regeln  
- [CA1819: Eigenschaften sollten keine Arrays zurückgeben](../code-quality/ca1819-properties-should-not-return-arrays.md)
+## <a name="related-rules"></a>Related Rules  
+ [CA1819: Properties should not return arrays](../code-quality/ca1819-properties-should-not-return-arrays.md)

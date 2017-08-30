@@ -1,68 +1,85 @@
 ---
-title: "CA2109: Sichtbare Ereignishandler &#252;berpr&#252;fen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2109"
-  - "ReviewVisibleEventHandlers"
-helpviewer_keywords: 
-  - "CA2109"
-  - "ReviewVisibleEventHandlers"
+title: 'CA2109: Review visible event handlers | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2109
+- ReviewVisibleEventHandlers
+helpviewer_keywords:
+- ReviewVisibleEventHandlers
+- CA2109
 ms.assetid: 8f8fa0ee-e94e-400e-b516-24d8727725d7
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 18
----
-# CA2109: Sichtbare Ereignishandler &#252;berpr&#252;fen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 930c98a6b91eee69c3e145479694a58050dd3d22
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2109-review-visible-event-handlers"></a>CA2109: Review visible event handlers
 |||  
 |-|-|  
 |TypeName|ReviewVisibleEventHandlers|  
 |CheckId|CA2109|  
-|Kategorie \(Category\)|Microsoft.Security|  
-|Unterbrechende Änderung|Breaking|  
+|Category|Microsoft.Security|  
+|Breaking Change|Breaking|  
   
-## Ursache  
- Eine öffentliche oder geschützte Ereignisbehandlungsmethode wurde erkannt.  
+## <a name="cause"></a>Cause  
+ A public or protected event-handling method was detected.  
   
-## Regelbeschreibung  
- Eine extern sichtbare Ereignisbehandlungsmethode stellt ein Sicherheitsproblem dar, das eine Überprüfung erfordert.  
+## <a name="rule-description"></a>Rule Description  
+ An externally visible event-handling method presents a security issue that requires review.  
   
- Ereignisbehandlungsmethoden sollten nur dann verfügbar gemacht werden, wenn dies absolut notwendig ist.  Ein Ereignishandler, ein Delegattyp, der die zur Verfügung gestellte Methode aufruft, kann einem beliebigen Ereignis hinzugefügt werden, solange die Signaturen des Handlers und des Ereignisses übereinstimmen.  Ereignisse können durch jeden beliebigen Code ausgelöst werden und werden häufig als Reaktion auf Benutzeraktionen wie das Klicken auf eine Schaltfläche durch hoch vertrauenswürdigen Systemcode ausgelöst.  Wenn Sie einer Ereignisbehandlungsmethode eine Sicherheitsüberprüfung hinzufügen, können Sie nicht verhindern, dass der Code einen Ereignishandler registriert, der die Methode aufruft.  
+ Event-handling methods should not be exposed unless absolutely necessary. An event handler, a delegate type, that invokes the exposed method can be added to any event as long as the handler and event signatures match. Events can potentially be raised by any code, and are frequently raised by highly trusted system code in response to user actions such as clicking a button. Adding a security check to an event-handling method does not prevent code from registering an event handler that invokes the method.  
   
- Eine durch einen Ereignishandler aufgerufene Methode kann durch eine Anforderung nicht zuverlässig geschützt werden.  Sicherheitsanforderungen tragen dazu bei, Code vor nicht vertrauenswürdigen Aufrufern zu schützen, indem die in der Aufrufliste enthaltenen Aufrufer geprüft werden.  Code, mit dem einem Ereignis ein Ereignishandler hinzugefügt wird, ist nicht unbedingt zu dem Zeitpunkt in der Aufrufliste vorhanden, wenn die Methoden des Ereignishandlers ausgeführt werden.  Daher verfügt die Aufrufliste eventuell nur über hoch vertrauenswürdige Aufrufer, wenn die Ereignishandlermethode aufgerufen wird.  Dadurch verlaufen Anforderungen der Ereignishandlermethoden erfolgreich.  Zudem wird beim Aufruf der Methode möglicherweise die angeforderte Berechtigung gewährt.  Aus diesen Gründen kann das Risiko, das mit einem nicht behobenen Verstoß gegen diese Regel einhergeht, erst nach der Überprüfung der Ereignisbehandlungsmethode beurteilt werden.  Berücksichtigen Sie bei der Überprüfung des Codes folgende Punkte:  
+ A demand cannot reliably protect a method invoked by an event handler. Security demands help protect code from untrusted callers by examining the callers on the call stack. Code that adds an event handler to an event is not necessarily present on the call stack when the event handler's methods run. Therefore, the call stack might have only highly trusted callers when the event handler method is invoked. This causes demands made by the event handler method to succeed. Also, the demanded permission might be asserted when the method is invoked. For these reasons, the risk of not fixing a violation of this rule can only be assessed after reviewing the event-handling method. When you review your code, consider the following issues:  
   
--   Führt der Ereignishandler Vorgänge aus, die Risiken bergen oder ausgenutzt werden können, z. B. das Gewähren von Berechtigungen oder das Unterdrücken von Berechtigungen für nicht verwalteten Code?  
+-   Does your event handler perform any operations that are dangerous or exploitable, such as asserting permissions or suppressing unmanaged code permission?  
   
--   Welchen Sicherheitsrisiken ist der Code ausgesetzt und welche Sicherheitsrisiken gehen vom Code aus, wenn feststeht, dass er jederzeit nur mit hoch vertrauenswürdigen Aufrufern in der Aufrufliste ausgeführt werden kann?  
+-   What are the security threats to and from your code because it can run at any time with only highly trusted callers on the stack?  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, überprüfen Sie die Methode, und stellen Sie folgende Überlegungen an:  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, review the method and evaluate the following:  
   
--   Können Sie die Ereignisbehandlungsmethode nichtöffentlich machen?  
+-   Can you make the event-handling method non-public?  
   
--   Können Sie alle Funktionen aus dem Ereignishandler entfernen, die ein Risiko bergen?  
+-   Can you move all dangerous functionality out of the event handler?  
   
--   Wenn eine Sicherheitsanforderung auferlegt wird: Ist dies auch auf andere Weise möglich?  
+-   If a security demand is imposed, can this be accomplished in some other manner?  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Unterdrücken Sie eine Warnung dieser Regel nur nach einer sorgfältigen Überprüfung, um sicherzustellen, dass der Code kein Sicherheitsrisiko darstellt.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Suppress a warning from this rule only after a careful security review to make sure that your code does not pose a security threat.  
   
-## Beispiel  
- Der folgende Code zeigt eine Ereignisbehandlungsmethode, die von bösartigem Code missbraucht werden kann.  
+## <a name="example"></a>Example  
+ The following code shows an event-handling method that can be misused by malicious code.  
   
- [!code-cs[FxCop.Security.EventSecLib#1](../code-quality/codesnippet/CSharp/ca2109-review-visible-event-handlers_1.cs)]  
+ [!code-csharp[FxCop.Security.EventSecLib#1](../code-quality/codesnippet/CSharp/ca2109-review-visible-event-handlers_1.cs)]  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName>   
  <xref:System.EventArgs?displayProperty=fullName>   
- [Security Demands](http://msdn.microsoft.com/de-de/324c14f8-54ff-494d-9fd1-bfd20962c8ba)
+ [Security Demands](http://msdn.microsoft.com/en-us/324c14f8-54ff-494d-9fd1-bfd20962c8ba)

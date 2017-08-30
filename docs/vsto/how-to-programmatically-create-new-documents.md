@@ -1,56 +1,59 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Erstellen neuer Dokumente"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Dokumente [Office-Entwicklung in Visual Studio], Erstellen"
-  - "Vorlagen [Office-Entwicklung in Visual Studio], Benutzerdefiniertes Dokument"
-  - "Word [Office-Entwicklung in Visual Studio], Erstellen von Dokumenten"
+title: 'How to: Programmatically Create New Documents | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- templates [Office development in Visual Studio], custom document
+- Word [Office development in Visual Studio], creating documents
+- documents [Office development in Visual Studio], creating
 ms.assetid: c24bb8a3-1303-438e-9b33-ba8b00b29c3b
 caps.latest.revision: 49
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 48
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: f829d68b1d278d22f839b3be458e8c952de81009
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Gewusst wie: Programmgesteuertes Erstellen neuer Dokumente
-  Wenn Sie ein Dokument programmgesteuert erstellen, ist das neue Dokument ein systemeigenes <xref:Microsoft.Office.Interop.Word.Document>\-Objekt.  Dieses Objekt verfügt nicht über die zusätzlichen Ereignisse und Datenbindungsfunktionen eines <xref:Microsoft.Office.Tools.Word.Document>\-Hostelements.  Weitere Informationen finden Sie unter [Programmgesteuerte Einschränkungen von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
+# <a name="how-to-programmatically-create-new-documents"></a>How to: Programmatically Create New Documents
+  When you create a document programmatically, the new document is a native <xref:Microsoft.Office.Interop.Word.Document> object. This object does not have the additional events and data binding capabilities of a <xref:Microsoft.Office.Tools.Word.Document> host item. For more information, see [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- Wenn Sie ein Projekt auf Dokumentebene entwickeln, können Sie Ihrem Projekt nicht programmgesteuert <xref:Microsoft.Office.Tools.Word.Document>\-Hostelemente hinzufügen.  In einem VSTO\-Add\-In\-Projekt Sie beliebige <xref:Microsoft.Office.Interop.Word.Document>\-Objekte zur Laufzeit in <xref:Microsoft.Office.Tools.Word.Document>\-Hostelements konvertieren.  Weitere Informationen finden Sie unter [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ When you develop a document-level project, you cannot programmatically add <xref:Microsoft.Office.Tools.Word.Document> host items to your project. In a VSTO Add-in project, you can convert any <xref:Microsoft.Office.Interop.Word.Document> object to a <xref:Microsoft.Office.Tools.Word.Document> host item at run time. For more information, see [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
-### So erstellen Sie ein neues Dokument basierend auf der Vorlage "NORMAL.DOT"  
+### <a name="to-create-a-new-document-based-on-the-normal-template"></a>To create a new document based on the Normal template  
   
--   Verwenden Sie die Methode <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> der Auflistung <xref:Microsoft.Office.Interop.Word.Documents> zum Erstellen eines neuen Dokuments auf der Grundlage der Vorlage "NORMAL.DOT".  Wenn Sie dieses Codebeispiel verwenden möchten, führen Sie es aus der Klasse `ThisDocument` oder `ThisAddIn` in Ihrem Projekt aus.  
+-   Use the <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> method of the <xref:Microsoft.Office.Interop.Word.Documents> collection to create a new document based on the Normal template. To use this code example, run it from the `ThisDocument` or `ThisAddIn` class in your project.  
   
-     [!code-csharp[Trin_VstcoreWordAutomation#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/CS/ThisDocument.cs#1)]
-     [!code-vb[Trin_VstcoreWordAutomation#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/VB/ThisDocument.vb#1)]  
+     [!code-vb[Trin_VstcoreWordAutomation#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#1)]  [!code-csharp[Trin_VstcoreWordAutomation#1](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#1)]  
   
-## Verwenden von benutzerdefinierten Vorlagen  
- Die Methode <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> besitzt ein optionales Argument *Template* zum Erstellen eines neuen Dokuments auf der Grundlage einer anderen Vorlage als der Vorlage "NORMAL.DOT".  Sie müssen den Dateinamen und den vollqualifizierten Pfad der Vorlage angeben.  
+## <a name="using-custom-templates"></a>Using Custom Templates  
+ The <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> method has an optional *Template* argument to create a new document based on a template other than the Normal template. You must supply the file name and fully qualified path of the template.  
   
-#### So erstellen Sie ein neues Dokument basierend auf einer benutzerdefinierten Vorlage  
+#### <a name="to-create-a-new-document-based-on-a-custom-template"></a>To create a new document based on a custom template  
   
--   Rufen Sie die Methode <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> der Auflistung <xref:Microsoft.Office.Interop.Word.Documents> auf, und geben Sie den Pfad zur Vorlage an.  Wenn Sie dieses Codebeispiel verwenden möchten, führen Sie es aus der Klasse `ThisDocument` oder `ThisAddIn` in Ihrem Projekt aus.  
+-   Call the <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> method of the <xref:Microsoft.Office.Interop.Word.Documents> collection and specify the path to the template. To use this code example, run it from the `ThisDocument` or `ThisAddIn` class in your project.  
   
-     [!code-csharp[Trin_VstcoreWordAutomation#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/CS/ThisDocument.cs#2)]
-     [!code-vb[Trin_VstcoreWordAutomation#2](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/VB/ThisDocument.vb#2)]  
+     [!code-vb[Trin_VstcoreWordAutomation#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#2)]  [!code-csharp[Trin_VstcoreWordAutomation#2](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#2)]  
   
-## Siehe auch  
- [Gewusst wie: Programmgesteuertes Öffnen vorhandener Dokumente](../vsto/how-to-programmatically-open-existing-documents.md)   
- [Übersicht über Hostelemente und Hoststeuerelemente](../vsto/host-items-and-host-controls-overview.md)   
- [Programmgesteuerte Einschränkungen von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Optionale Parameter in Office-Lösungen](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="see-also"></a>See Also  
+ [How to: Programmatically Open Existing Documents](../vsto/how-to-programmatically-open-existing-documents.md)   
+ [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
   
   

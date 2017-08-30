@@ -1,174 +1,176 @@
 ---
-title: "Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit dem Multifunktionsleisten-Designer"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Aktionsbereiche [Office-Entwicklung in Visual Studio], Steuern mit der Multifunktionsleiste"
-  - "Benutzerdefiniertes Menüband, Registerkarten"
-  - "Benutzerdefinierte Registerkarte [Office-Entwicklung in Visual Studio]"
-  - "Anpassen des Menübands, Registerkarten"
-  - "Menüband [Office-Entwicklung in Visual Studio], Anpassen"
-  - "Menüband-Designer [Office-Entwicklung in Visual Studio]"
+title: 'Walkthrough: Creating a Custom Tab by Using the Ribbon Designer | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- actions panes [Office development in Visual Studio], controlling from Ribbon
+- Ribbon [Office development in Visual Studio], customizing
+- Ribbon Designer [Office development in Visual Studio]
+- customizing the Ribbon, tabs
+- custom Ribbon, tabs
+- Custom tab [Office development in Visual Studio]
 ms.assetid: 312865e6-950f-46ab-88de-fe7eb8036bfe
 caps.latest.revision: 68
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 67
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: f3de58256e8c533b7cd092d056c785c7ad6b60b6
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit dem Multifunktionsleisten-Designer
-  Mit dem Menüband\-Designer können Steuerelemente auf der benutzerdefinierten Registerkarte hinzugefügt und positioniert werden.  
+# <a name="walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer"></a>Walkthrough: Creating a Custom Tab by Using the Ribbon Designer
+  By using the Ribbon Designer, you can create a custom tab and then add and position controls on it.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:  
+ This walkthrough illustrates the following tasks:  
   
--   [Erstellen von Aktionsbereichen](#BKMK_CreateActionsPanes).  
+-   [Creating Actions Panes](#BKMK_CreateActionsPanes).  
   
--   [Erstellen einer benutzerdefinierten Registerkarte](#BKMK_CreateCustomTab).  
+-   [Creating a Custom Tab](#BKMK_CreateCustomTab).  
   
--   [Ausblenden und Anzeigen von Aktionsbereichen mithilfe von Schaltflächen auf der benutzerdefinierten Registerkarte](#BKMK_HideShowActionsPane).  
+-   [Hiding and Showing Actions Panes by Using Buttons on the Custom Tab](#BKMK_HideShowActionsPane).  
   
 > [!NOTE]  
->  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten.  Diese Elemente sind von der jeweiligen Visual Studio\-Version und den verwendeten Einstellungen abhängig.  Weitere Informationen finden Sie unter [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/de-de/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## Vorbereitungsmaßnahmen  
- Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
 -   Microsoft Excel  
   
-## Erstellen eines Excel\-Arbeitsmappenprojekts  
- Die Schritte für die Verwendung des Menüband\-Designers sind für alle Office\-Anwendungen nahezu identisch.  In diesem Beispiel wird eine Excel\-Arbeitsmappe verwendet.  
+## <a name="creating-an-excel-workbook-project"></a>Creating an Excel Workbook Project  
+ The steps for using the Ribbon Designer are almost identical for all Office applications. This example uses an Excel workbook.  
   
-#### So erstellen Sie ein Excel\-Arbeitsmappenprojekt  
+#### <a name="to-create-an-excel-workbook-project"></a>To create an Excel workbook project  
   
--   Erstellen Sie ein Excel\-Arbeitsmappenprojekt mit dem Namen "MyExcelRibbon".  Weitere Informationen finden Sie unter [Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+-   Create an Excel workbook project with the name **MyExcelRibbon**. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Visual Studio öffnet die neue Excel\-Arbeitsmappe im Designer und fügt dem **Projektmappen\-Explorer** das **MyExcelRibbon**\-Projekt hinzu.  
+     Visual Studio opens the new workbook in the designer and adds the **MyExcelRibbon** project to **Solution Explorer**.  
   
-##  <a name="BKMK_CreateActionsPanes"></a> Erstellen von Aktionsbereichen  
- Fügen Sie dem Projekt zwei benutzerdefinierte Aktionsbereiche hinzu.  Später werden der benutzerdefinierten Registerkarte Schaltflächen hinzugefügt, mit denen diese Aktionsbereiche angezeigt und ausgeblendet werden.  
+##  <a name="BKMK_CreateActionsPanes"></a> Creating Actions Panes  
+ Add two custom actions panes to the project. You will later add buttons that show and hide these actions panes to the custom tab.  
   
-#### So erstellen Sie Aktionsbereiche  
+#### <a name="to-create-actions-panes"></a>To create actions panes  
   
-1.  Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.  
+1.  On the **Project** menu, choose **Add New Item**.  
   
-2.  Wählen Sie im Dialogfeld **Neues Element hinzufügen** die Option **ActionsPaneControl** und dann **Hinzufügen** aus.  
+2.  In the **Add New Item** dialog box, select **ActionsPaneControl**, and then choose **Add**.  
   
-     Im Designer wird die Datei **ActionsPaneControl1.cs** oder die Datei **ActionsPaneControl1.vb** geöffnet.  
+     The **ActionsPaneControl1.cs** or **ActionsPaneControl1.vb** file opens in the designer.  
   
-3.  Fügen Sie der Oberfläche des Designers auf der Registerkarte **Allgemeine Steuerelemente** der **Toolbox** eine Bezeichnung hinzu.  
+3.  From the **Common Controls** tab of the **Toolbox**, add a label to the designer surface.  
   
-4.  Legen Sie im Fenster **Eigenschaften** die **Text**\-Eigenschaft von label1 auf "Actions Pane 1" fest.  
+4.  In the **Properties** window, set the **Text** property of label1 to **Actions Pane 1**.  
   
-5.  Wiederholen Sie die Schritte 1 bis 5, um einen zweiten Aktionsbereich und eine Bezeichnung zu erstellen.  Legen Sie die **Text**\-Eigenschaft der zweiten Bezeichnung auf "Actions Pane 2" fest.  
+5.  Repeat steps 1 through 5 to create a second actions pane and label. Set the **Text** property of the second label to **Actions Pane 2**.  
   
-##  <a name="BKMK_CreateCustomTab"></a> Erstellen einer benutzerdefinierten Registerkarte  
- Eine der Entwurfsrichtlinien für Office\-Anwendungen besagt, dass Benutzer immer die Möglichkeit haben sollen, die Benutzeroberfläche von Office\-Anwendungen zu steuern.  Um diese Funktion für die Aktionsbereiche hinzuzufügen, können Schaltflächen hinzugefügt werden, mit denen jeder Aktionsbereich von einer benutzerdefinierten Registerkarte auf dem Menüband angezeigt und ausgeblendet werden kann.  Fügen Sie zum Erstellen einer benutzerdefinierten Registerkarte dem Projekt ein Element von **Menüband \(Visueller Designer\)** hinzu.  Der Designer unterstützt Sie beim Hinzufügen und Anordnen von Steuerelementen, Festlegen von Steuerelementeigenschaften und Behandeln von Ereignissen von Steuerelementen.  
+##  <a name="BKMK_CreateCustomTab"></a> Creating a Custom Tab  
+ One of the Office application design guidelines is that users should always have control of the Office application UI. To add this capability for the actions panes, you can add buttons that show and hide each actions pane from a custom tab on the ribbon. To create a custom tab, add a **Ribbon (Visual Designer)** item to the project. The designer helps you add and position controls, set control properties, and handle control events.  
   
-#### So erstellen Sie eine benutzerdefinierte Registerkarte  
+#### <a name="to-create-a-custom-tab"></a>To create a custom tab  
   
-1.  Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.  
+1.  On the **Project** menu, choose **Add New Item**.  
   
-2.  Wählen Sie im Dialogfeld **Neues Element hinzufügen** die Option **Menüband \(Visueller Designer\)** aus.  
+2.  In the **Add New Item** dialog box, select **Ribbon (Visual Designer)**.  
   
-3.  Ändern Sie den Namen des neuen Menübands in **MyRibbon**, und wählen Sie **Hinzufügen** aus.  
+3.  Change the name of the new ribbon to **MyRibbon**, and choose **Add**.  
   
-     Die Datei **MyRibbon.cs** oder **MyRibbon.vb** wird im Menüband\-Designer geöffnet. Sie beinhaltet eine standardmäßige Registerkarte und eine Gruppe.  
+     The **MyRibbon.cs** or **MyRibbon.vb** file opens in the Ribbon Designer and displays a default tab and group.  
   
-4.  Wählen Sie im Menüband\-Designer die Standardregisterkarte aus.  
+4.  In the Ribbon Designer, choose the default tab.  
   
-5.  Erweitern Sie im Fenster **Eigenschaften** die **ControlId**\-Eigenschaft, und legen Sie anschließend die **ControlIdType**\-Eigenschaft auf **Benutzerdefiniert** fest.  
+5.  In the **Properties** window, expand the **ControlId** property, and then set the **ControlIdType** property to **Custom**.  
   
-6.  Legen Sie die Eigenschaft **Bezeichnung** auf "Meine benutzerdefinierte Registerkarte" fest.  
+6.  Set the **Label** property to **My Custom Tab**.  
   
-7.  Wählen Sie im Menüband\-Designer **group1** aus.  
+7.  In the Ribbon Designer, choose **group1**.  
   
-8.  Legen Sie im Fenster **Eigenschaften** die **Label**\-Eigenschaft auf "Actions Pane Manager" fest.  
+8.  In the **Properties** window, set **Label** to **Actions Pane Manager**.  
   
-9. Ziehen Sie von der Registerkarte **Steuerelemente für Office\-Menübänder** der **Toolbox** eine Schaltfläche auf **group1**.  
+9. From the **Office Ribbon Controls** tab of the **Toolbox**, drag a button onto **group1**.  
   
-10. Wählen Sie **button1** aus.  
+10. Select **button1**.  
   
-11. Legen Sie im Fenster **Eigenschaften** die **Label**\-Eigenschaft auf "Show Actions Pane 1" fest.  
+11. In the **Properties** window, set **Label** to **Show Actions Pane 1**.  
   
-12. Fügen Sie **group1** eine zweite Schaltfläche hinzu, und legen Sie die **Label**\-Eigenschaft auf "Show Actions Pane 2" fest.  
+12. Add a second button to **group1**, and set the **Label** property to **Show Actions Pane 2**.  
   
-13. Ziehen Sie von der Registerkarte **Steuerelemente für Office\-Menübänder** der **Toolbox** ein **ToggleButton**\-Steuerelement zu **group1**.  
+13. From the **Office Ribbon Controls** tab of the **Toolbox**, drag a **ToggleButton** control onto **group1**.  
   
-14. Legen Sie die **Label**\-Eigenschaft auf "Hide Actions Pane" fest.  
+14. Set the **Label** property to **Hide Actions Pane**.  
   
-##  <a name="BKMK_HideShowActionsPane"></a> Ausblenden und Anzeigen von Aktionsbereichen mithilfe von Schaltflächen auf der benutzerdefinierten Registerkarte  
- Im letzten Schritt wird Code hinzugefügt, der auf den Benutzer reagiert.  Fügen Sie Ereignishandler für die <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click>\-Ereignisse der zwei Schaltflächen und das <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click>\-Ereignis der Umschaltfläche hinzu.  Fügen Sie diesen Ereignishandlern Code hinzu, um das Aus\- und Einblenden der Aktionsbereiche zu aktivieren.  
+##  <a name="BKMK_HideShowActionsPane"></a> Hiding and Showing Actions Panes by Using Buttons on the Custom Tab  
+ The last step is to add code that responds to the user. Add event handlers for the <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> events of the two buttons and the <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> event of the toggle button. Add code to these event handlers to enable hiding and showing the actions panes.  
   
-#### So werden Aktionsbereiche mithilfe von Schaltflächen auf der benutzerdefinierten Registerkarte ausgeblendet und angezeigt  
+#### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>To hide and show actions panes by using buttons in the custom tab  
   
-1.  Öffnen Sie im **Projektmappen\-Explorer** das Kontextmenü für "MyRibbon.cs" oder "MyRibbon.vb", und wählen Sie dann **Code anzeigen** aus.  
+1.  In **Solution Explorer**, open the shortcut menu for MyRibbon.cs or MyRibbon.vb, and then choose **View Code**.  
   
-2.  Fügen Sie oben in der `MyRibbon`\-Klasse den folgenden Code hinzu:  Mit diesem Code werden zwei Aktionsbereichobjekte erstellt.  
+2.  Add the following code to the top of the `MyRibbon` class. This code creates two actions pane objects.  
   
-     [!code-csharp[Trin_Ribbon_Custom_Tab#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab/CS/MyRibbon.cs#1)]
-     [!code-vb[Trin_Ribbon_Custom_Tab#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab/VB/MyRibbon.vb#1)]  
+     [!code-csharp[Trin_Ribbon_Custom_Tab#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#1)]  [!code-vb[Trin_Ribbon_Custom_Tab#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#1)]  
   
-3.  Ersetzen Sie die `MyRibbon_Load`\-Methode durch folgenden Code:  Mit diesem Code werden die Aktionsbereichsobjekte der <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A>\-Auflistung hinzugefügt und die Objekte ausgeblendet.  Durch den Visual C\#\-Code werden außerdem Delegate an mehrere Menüband\-Steuerelementereignisse angefügt.  
+3.  Replace the `MyRibbon_Load` method with the following code. This code adds the actions pane objects to the <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> collection and hides the objects from view. The Visual C# code also attaches delegates to several ribbon control events.  
   
-     [!code-csharp[Trin_Ribbon_Custom_Tab#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab/CS/MyRibbon.cs#2)]
-     [!code-vb[Trin_Ribbon_Custom_Tab#2](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab/VB/MyRibbon.vb#2)]  
+     [!code-csharp[Trin_Ribbon_Custom_Tab#2](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#2)]  [!code-vb[Trin_Ribbon_Custom_Tab#2](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#2)]  
   
-4.  Fügen Sie der `MyRibbon`\-Klasse die folgenden drei Ereignishandlermethoden hinzu.  Diese Methoden dienen zur Behandlung der <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click>\-Ereignisse der zwei Schaltflächen und des <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click>\-Ereignisses der Umschaltfläche.  Die Ereignishandler für button1 und button2 zeigen andere Aktionsbereiche an.  Der Ereignishandler für toggleButton1 zeigt den aktiven Aktionsbereich an und blendet diesen aus.  
+4.  Add the following three event handler methods to the `MyRibbon` class. These methods handle the <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> events of the two buttons and the <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> event of the toggle button. The event handlers for button1 and button2 show alternate actions panes. The event handler for toggleButton1 shows and hides the active actions pane.  
   
-     [!code-csharp[Trin_Ribbon_Custom_Tab#3](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab/CS/MyRibbon.cs#3)]
-     [!code-vb[Trin_Ribbon_Custom_Tab#3](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab/VB/MyRibbon.vb#3)]  
+     [!code-csharp[Trin_Ribbon_Custom_Tab#3](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#3)]  [!code-vb[Trin_Ribbon_Custom_Tab#3](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#3)]  
   
-## Testen der benutzerdefinierten Registerkarte  
- Beim Ausführen des Projekts wird Excel gestartet, und die Registerkarte **Meine benutzerdefinierte Registerkarte** wird auf dem Menüband angezeigt.  Wählen Sie die Schaltflächen der Registerkarte **Meine benutzerdefinierte Registerkarte** aus, um die Aktionsbereiche ein\- und auszublenden.  
+## <a name="testing-the-custom-tab"></a>Testing the Custom Tab  
+ When you run the project, Excel starts, and the **My Custom Tab** tab appears on the ribbon. Choose the buttons on **My Custom Tab** to show and hide the actions panes.  
   
-#### So testen Sie die benutzerdefinierte Registerkarte  
+#### <a name="to-test-the-custom-tab"></a>To test the custom tab  
   
-1.  Drücken Sie F5, um das Projekt auszuführen.  
+1.  Press F5 to run your project.  
   
-2.  Wählen Sie die Registerkarte **Meine benutzerdefinierte Registerkarte** aus.  
+2.  Choose the **My Custom Tab** tab.  
   
-3.  Wählen Sie in der Gruppe **Custom Actions Pane Manager** die Option **Show Actions Pane 1** aus.  
+3.  In the **Custom Actions Pane Manager** group, choose **Show Actions Pane 1**.  
   
-     Im daraufhin erscheinenden Aktionsbereich wird die Actions Pane 1\-Bezeichnung angezeigt.  
+     The actions pane appears and displays the label **Actions Pane 1**.  
   
-4.  Wählen Sie **Show Actions Pane 2** aus.  
+4.  Choose **Show Actions Pane 2**.  
   
-     Im daraufhin erscheinenden Aktionsbereich wird die Actions Pane 2\-Bezeichnung angezeigt.  
+     The actions pane appears and displays the label **Actions Pane 2**.  
   
-5.  Wählen Sie **Hide Actions Pane** aus.  
+5.  Choose **Hide Actions Pane**.  
   
-     Die Aktionsbereiche werden nicht mehr angezeigt.  
+     The actions panes are no longer visible.  
   
-## Nächste Schritte  
- Weitere Informationen zum Anpassen der Office\-Benutzeroberfläche finden Sie in diesen Themen:  
+## <a name="next-steps"></a>Next Steps  
+ You can learn more about how to customize the Office UI from these topics:  
   
--   Fügen Sie jeder Anpassung auf Dokumentebene kontextbasierte Benutzeroberfläche hinzu.  Weitere Informationen finden Sie unter [Aktionsbereichsübersicht](../vsto/actions-pane-overview.md).  
+-   Add context-based UI to any document-level customization. For more information, see [Actions Pane Overview](../vsto/actions-pane-overview.md).  
   
--   Erweitern Sie ein standardmäßiges oder benutzerdefiniertes Microsoft Office Outlook\-Formular.  Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Entwerfen eines Outlook-Formularbereichs](../vsto/walkthrough-designing-an-outlook-form-region.md).  
+-   Extend a standard or custom Microsoft Office Outlook form. For more information, see [Walkthrough: Designing an Outlook Form Region](../vsto/walkthrough-designing-an-outlook-form-region.md).  
   
-## Siehe auch  
- [Zugreifen auf die Multifunktionsleiste zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md)   
- [Übersicht über die Multifunktionsleiste](../vsto/ribbon-overview.md)   
- [Multifunktionsleisten-Designer](../vsto/ribbon-designer.md)   
- [Anpassen einer Multifunktionsleiste in Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
- [Gewusst wie: Erste Schritte beim Anpassen der Multifunktionsleiste](../vsto/how-to-get-started-customizing-the-ribbon.md)   
- [Gewusst wie: Ändern der Position einer Registerkarte im Menüband](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
- [Gewusst wie: Anpassen einer integrierten Registerkarte](../vsto/how-to-customize-a-built-in-tab.md)   
- [Gewusst wie: Hinzufügen von Steuerelementen zur Backstage-Ansicht](../vsto/how-to-add-controls-to-the-backstage-view.md)   
- [Multifunktionsleisten-Objektmodellübersicht](../vsto/ribbon-object-model-overview.md)  
+## <a name="see-also"></a>See Also  
+ [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
+ [Ribbon Overview](../vsto/ribbon-overview.md)   
+ [Ribbon Designer](../vsto/ribbon-designer.md)   
+ [Customizing a Ribbon for Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
+ [How to: Get Started Customizing the Ribbon](../vsto/how-to-get-started-customizing-the-ribbon.md)   
+ [How to: Change the Position of a Tab on the Ribbon](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
+ [How to: Customize a Built-in Tab](../vsto/how-to-customize-a-built-in-tab.md)   
+ [How to: Add Controls to the Backstage View](../vsto/how-to-add-controls-to-the-backstage-view.md)   
+ [Ribbon Object Model Overview](../vsto/ribbon-object-model-overview.md)  
   
   

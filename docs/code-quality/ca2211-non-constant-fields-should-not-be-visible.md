@@ -1,50 +1,66 @@
 ---
-title: "CA2211: Nicht konstante Felder sollten nicht sichtbar sein | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2211"
-  - "NonConstantFieldsShouldNotBeVisible"
-helpviewer_keywords: 
-  - "CA2211"
-  - "NonConstantFieldsShouldNotBeVisible"
+title: 'CA2211: Non-constant fields should not be visible | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2211
+- NonConstantFieldsShouldNotBeVisible
+helpviewer_keywords:
+- NonConstantFieldsShouldNotBeVisible
+- CA2211
 ms.assetid: e1e42c40-0acd-4312-af29-70133739a304
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 13
----
-# CA2211: Nicht konstante Felder sollten nicht sichtbar sein
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 57ba4fb986fe2cf5c81ce83e6e6b02b57aa64dd6
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2211-non-constant-fields-should-not-be-visible"></a>CA2211: Non-constant fields should not be visible
 |||  
 |-|-|  
 |TypeName|NonConstantFieldsShouldNotBeVisible|  
 |CheckId|CA2211|  
-|Kategorie \(Category\)|Microsoft.Usage|  
-|Unterbrechende Änderung|Breaking|  
+|Category|Microsoft.Usage|  
+|Breaking Change|Breaking|  
   
-## Ursache  
- Ein öffentliches oder geschütztes statisches Feld ist weder konstant noch ist es schreibgeschützt.  
+## <a name="cause"></a>Cause  
+ A public or protected static field is not constant nor is it read-only.  
   
-## Regelbeschreibung  
- Statische Felder, die weder konstant noch schreibgeschützt sind, sind nicht threadsicher.  Der Zugriff auf ein solches Feld muss sorgfältig kontrolliert werden und erfordert fortgeschrittene Programmiertechniken zur Synchronisierung des Zugriffs auf das Klassenobjekt.  Weil diese Fertigkeiten schwer zu erlernen sind und das Testen eines solchen Objekts eigene Probleme birgt, werden statische Felder am besten zum Speichern von Daten verwendet, die sich nicht ändern.  Diese Regel gilt für Bibliotheken. Anwendungen sollten keine Felder verfügbar machen.  
+## <a name="rule-description"></a>Rule Description  
+ Static fields that are neither constants nor read-only are not thread-safe. Access to such a field must be carefully controlled and requires advanced programming techniques for synchronizing access to the class object. Because these are difficult skills to learn and master, and testing such an object poses its own challenges, static fields are best used to store data that does not change. This rule applies to libraries; applications should not expose any fields.  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, sorgen Sie dafür, dass das statische Feld konstant oder schreibgeschützt ist.  Wenn dies nicht möglich ist, gestalten Sie den Typ so um, dass ein alternativer Mechanismus, z. B. eine threadsichere Eigenschaft, verwendet wird, um threadsichere Zugriffe auf das zugrunde liegende Feld zu verwalten.  Beachten Sie, dass sich Probleme wie Sperrungskonflikte und Deadlocks auf die Leistung und das Verhalten der Bibliothek auswirken können.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, make the static field constant or read-only. If this is not possible, redesign the type to use an alternative mechanism such as a thread-safe property that manages thread-safe access to the underlying field. Realize that issues such as lock contention and deadlocks might affect the performance and behavior of the library.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Eine Warnung dieser Regel kann gefahrlos unterdrückt werden, wenn Sie eine Anwendung entwickeln und daher vollständige Kontrolle über den Typ haben, der das statische Feld enthält.  Programmierer von Bibliotheken sollten keine Warnung dieser Regel unterdrücken. Die Verwendung nicht konstanter statischer Felder kann Entwicklern die ordnungsgemäße Verwendung der Bibliothek erschweren.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule if you are developing an application and therefore have full control over access to the type that contains the static field. Library designers should not suppress a warning from this rule; using non-constant static fields can make using the library difficult for developers to use correctly.  
   
-## Beispiel  
- Im folgenden Beispiel wird ein Typ veranschaulicht, der gegen diese Regel verstößt.  
+## <a name="example"></a>Example  
+ The following example shows a type that violates this rule.  
   
- [!code-vb[FxCop.Usage.AvoidStaticNonConstants#1](../code-quality/codesnippet/VisualBasic/ca2211-non-constant-fields-should-not-be-visible_1.vb)]
- [!code-cs[FxCop.Usage.AvoidStaticNonConstants#1](../code-quality/codesnippet/CSharp/ca2211-non-constant-fields-should-not-be-visible_1.cs)]
+ [!code-vb[FxCop.Usage.AvoidStaticNonConstants#1](../code-quality/codesnippet/VisualBasic/ca2211-non-constant-fields-should-not-be-visible_1.vb)] [!code-csharp[FxCop.Usage.AvoidStaticNonConstants#1](../code-quality/codesnippet/CSharp/ca2211-non-constant-fields-should-not-be-visible_1.cs)]

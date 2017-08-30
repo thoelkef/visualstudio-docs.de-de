@@ -1,59 +1,77 @@
 ---
-title: "CA1032: Standardausnahmekonstruktoren implementieren | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1032"
-  - "ImplementStandardExceptionConstructors"
-helpviewer_keywords: 
-  - "CA1032"
-  - "ImplementStandardExceptionConstructors"
+title: 'CA1032: Implement standard exception constructors | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1032
+- ImplementStandardExceptionConstructors
+helpviewer_keywords:
+- CA1032
+- ImplementStandardExceptionConstructors
 ms.assetid: a8623c56-273a-4c95-8d83-95911a042be7
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 16
----
-# CA1032: Standardausnahmekonstruktoren implementieren
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 42fd1ecaab987ba35fe180c99a6f54f48a30067c
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: Implement standard exception constructors
 |||  
 |-|-|  
 |TypeName|ImplementStandardExceptionConstructors|  
 |CheckId|CA1032|  
-|Kategorie \(Category\)|Microsoft.Design|  
-|Unterbrechende Änderung|Nicht unterbrechend|  
+|Category|Microsoft.Design|  
+|Breaking Change|Non-breaking|  
   
-## Ursache  
- Ein Typ erweitert <xref:System.Exception?displayProperty=fullName> und deklariert nicht alle erforderlichen Konstruktoren.  
+## <a name="cause"></a>Cause  
+ A type extends <xref:System.Exception?displayProperty=fullName> and does not declare all the required constructors.  
   
-## Regelbeschreibung  
- Ausnahmetypen müssen die folgenden Konstruktoren implementieren:  
+## <a name="rule-description"></a>Rule Description  
+ Exception types must implement the following constructors:  
   
--   NewException\(\) \(öffentlich\)  
+-   public NewException()  
   
--   NewException\(string\) \(öffentlich\)  
+-   public NewException(string)  
   
--   NewException\(string, Exception\) \(öffentlich\)  
+-   public NewException(string, Exception)  
   
--   NewException\(SerializationInfo, StreamingContext\) \(geschützt oder privat\)  
+-   protected or private NewException(SerializationInfo, StreamingContext)  
   
- Falls nicht der vollständige Satz von Konstruktoren angegeben wird, wird eine ordnungsgemäße Behandlung von Ausnahmen unter Umständen erschwert.  Der Konstruktor mit der Signatur `NewException(string, Exception)` wird z. B. zum Erstellen von Ausnahmen verwendet, die von anderen Ausnahmen verursacht werden.  Ohne diesen Konstruktor können Sie keine Instanz der benutzerdefinierten Ausnahme erstellen und auslösen, die eine innere \(geschachtelte\) Ausnahme enthält. Dies sollte in einer solchen Situation jedoch vom verwalteten Code geleistet werden.  Die ersten drei Ausnahmekonstruktoren sind stets öffentlich.  Der vierte Konstruktor ist in unversiegelten Klassen geschützt und privat in versiegelten Klassen.  Weitere Informationen finden Sie unter [CA2229: Serialisierungskonstruktoren implementieren](../code-quality/ca2229-implement-serialization-constructors.md)  
+ Failure to provide the full set of constructors can make it difficult to correctly handle exceptions. For example, the constructor that has the signature `NewException(string, Exception)` is used to create exceptions that are caused by other exceptions. Without this constructor you cannot create and throw an instance of your custom exception that contains an inner (nested) exception, which is what managed code should do in such a situation. The first three exception constructors are public by convention. The fourth constructor is protected in unsealed classes, and private in sealed classes. For more information, see [CA2229: Implement serialization constructors](../code-quality/ca2229-implement-serialization-constructors.md)  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, fügen Sie der Ausnahme die fehlenden Konstruktoren hinzu, und stellen Sie sicher, dass sie die richtige Zugriffsebene aufweisen.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, add the missing constructors to the exception, and make sure that they have the correct accessibility.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Eine Warnung dieser Regel kann gefahrlos unterdrückt werden, wenn der Verstoß durch die Verwendung einer anderen Zugriffsebene für die öffentlichen Konstruktoren verursacht wird.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule when the violation is caused by using a different access level for the public constructors.  
   
-## Beispiel  
- Das folgende Beispiel enthält einen Ausnahmetyp, der gegen diese Regel verstößt, und einen Ausnahmetyp, der ordnungsgemäß implementiert ist.  
+## <a name="example"></a>Example  
+ The following example contains an exception type that violates this rule and an exception type that is correctly implemented.  
   
- [!code-cs[FxCop.Design.ExceptionMultipleCtors#1](../code-quality/codesnippet/CSharp/ca1032-implement-standard-exception-constructors_1.cs)]
+ [!code-csharp[FxCop.Design.ExceptionMultipleCtors#1](../code-quality/codesnippet/CSharp/ca1032-implement-standard-exception-constructors_1.cs)]

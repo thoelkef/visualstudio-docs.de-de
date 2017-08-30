@@ -1,191 +1,193 @@
 ---
-title: "Exemplarische Vorgehensweise: Einf&#252;gen von Text in ein Dokument aus einem Aktionsbereich"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Aktionsbereiche [Office-Entwicklung in Visual Studio], Hinzufügen von Steuerelementen"
-  - "Aktionsbereiche [Office-Entwicklung in Visual Studio], Erstellen in Word"
-  - "SmartDocuments [Office-Entwicklung in Visual Studio], Hinzufügen von Steuerelementen"
-  - "SmartDocuments [Office-Entwicklung in Visual Studio], Erstellen in Word"
+title: 'Walkthrough: Inserting Text into a Document from an Actions Pane | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- smart documents [Office development in Visual Studio], creating in Word
+- smart documents [Office development in Visual Studio], adding controls
+- actions panes [Office development in Visual Studio], creating in Word
+- actions panes [Office development in Visual Studio], adding controls
 ms.assetid: fd14c896-5737-4a20-94f7-6064b67112c5
 caps.latest.revision: 70
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 69
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: f4952081dea98ae372ff1df9d87cd4146b6e6da6
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Exemplarische Vorgehensweise: Einf&#252;gen von Text in ein Dokument aus einem Aktionsbereich
-  In dieser exemplarischen Vorgehensweise wird die Erstellung eines Aktionsbereichs in einem Microsoft Office Word 2003\-Dokument veranschaulicht.  Der Aktionsbereich enthält zwei Steuerelemente, die Benutzereingaben erfassen und den Text dann an das Dokument senden.  
+# <a name="walkthrough-inserting-text-into-a-document-from-an-actions-pane"></a>Walkthrough: Inserting Text into a Document from an Actions Pane
+  This walkthrough demonstrates how to create an actions pane in a Microsoft Office Word document. The actions pane contains two controls that collect input and then send the text to the document.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
   
- In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:  
+ This walkthrough illustrates the following tasks:  
   
--   Entwerfen einer Schnittstelle mithilfe von Windows Forms\-Steuerelementen auf einem Aktionsbereich\-Steuerelement  
+-   Designing an interface by using Windows Forms controls on an actions pane control.  
   
--   Anzeigen des Aktionsbereichs, wenn die Anwendung geöffnet wird  
+-   Displaying the actions pane when the application opens.  
   
 > [!NOTE]  
->  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten.  Die von Ihnen verwendete Visual Studio\-Edition und die Einstellungen legen diese Elemente fest.  Weitere Informationen finden Sie unter [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/de-de/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## Vorbereitungsmaßnahmen  
- Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] oder [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
+-   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] or [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
   
-## Erstellen des Projekts  
- Der erste Schritt besteht darin, ein Word\-Dokumentprojekt zu erstellen.  
+## <a name="creating-the-project"></a>Creating the Project  
+ The first step is to create a Word Document project.  
   
-#### So erstellen Sie ein neues Projekt  
+#### <a name="to-create-a-new-project"></a>To create a new project  
   
-1.  Erstellen Sie ein Word\-Dokumentprojekt mit dem Namen My Basic Actions Pane.  Wählen Sie im Assistenten **Neues Dokument erstellen** aus.  Weitere Informationen finden Sie unter [Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Create a Word Document project with the name **My Basic Actions Pane**. In the wizard, select **Create a new document**. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Visual Studio wird das neue Word\-Dokument im Designer öffnet, und im **Projektmappen\-Explorer** wird das Projekt **My Basic Actions Pane** hinzugefügt.  
+     Visual Studio opens the new Word document in the designer and adds the **My Basic Actions Pane** project to **Solution Explorer**.  
   
-## Hinzufügen von Text und Lesezeichen im Dokument  
- Der Aktionsbereich sendet Text an Lesezeichen im Dokument.  Wenn Sie ein Dokument entwerfen möchten, geben Sie einen kurzen Text ein, um ein einfaches Formular zu erstellen.  
+## <a name="adding-text-and-bookmarks-to-the-document"></a>Adding Text and Bookmarks to the Document  
+ The actions pane will send text to bookmarks in the document. To design the document, type some text to create a basic form.  
   
-#### So fügen Sie dem Dokument Text hinzu  
+#### <a name="to-add-text-to-your-document"></a>To add text to your document  
   
-1.  Geben Sie im Word\-Dokument folgenden Text ein:  
+1.  Type the following text into your Word document:  
   
-     March 21, 2008  
+     **March 21, 2008**  
   
-     Name  
+     **Name**  
   
-     Adresse  
+     **Address**  
   
-     **Dies ist ein Beispiel für einen einfachen Aktionsbereich in Word.**  
+     **This is an example of a basic actions pane in Word.**  
   
- Sie können dem Dokument ein <xref:Microsoft.Office.Tools.Word.Bookmark>\-Steuerelement hinzufügen, indem Sie es in Visual Studio aus der **Toolbox** ziehen oder indem Sie in Word das Dialogfeld **Lesezeichen** verwenden.  
+ You can add a <xref:Microsoft.Office.Tools.Word.Bookmark> control to your document by dragging it from the **Toolbox** in Visual Studio or by using the **Bookmark** dialog box in Word.  
   
-#### So fügen Sie dem Dokument ein Lesezeichen\-Steuerelement hinzu  
+#### <a name="to-add-a-bookmark-control-to-your-document"></a>To add a Bookmark control to your document  
   
-1.  Ziehen Sie von der Registerkarte **Word\-Steuerelemente** der **Toolbox** ein <xref:Microsoft.Office.Tools.Word.Bookmark>\-Steuerelement zum Dokument.  
+1.  From the **Word Controls** tab of the **Toolbox**, drag a <xref:Microsoft.Office.Tools.Word.Bookmark> control to your document.  
   
-     Das Dialogfeld **Lesezeichen\-Steuerelement hinzufügen** wird angezeigt.  
+     The **Add Bookmark Control** dialog box appears.  
   
-2.  Markieren Sie das Wort **Name** ohne die Absatzmarke, und klicken Sie auf **OK**.  
+2.  Select the word **Name**, without selecting the paragraph mark, and click **OK**.  
   
     > [!NOTE]  
-    >  Die Absatzmarke sollte nicht im Lesezeichen enthalten sein.  Wenn die Absatzmarken nicht im Dokument angezeigt werden, klicken Sie auf das Menü **Extras**, zeigen auf **Microsoft Office Word\-Tools** und klicken dann auf **Optionen**.  Klicken Sie auf die Registerkarte **Ansicht**, und markieren Sie im Dialogfeld **Optionen** im Bereich **Formatierungszeichen** das Kontrollkästchen **Absatzmarken**.  
+    >  The paragraph mark should be outside of the bookmark. If paragraph marks are not visible in the document, click the **Tools** menu, point to **Microsoft Office Word Tools** and then click **Options**. Click the **View** tab, and select the **Paragraph marks** check box in the **Formatting marks** section of the **Options** dialog box.  
   
-3.  Ändern Sie im **Eigenschaftenfenster** die **Name**\-Eigenschaft von **Bookmark1** in **showName**.  
+3.  In the **Properties** window, change the **Name** property of **Bookmark1** to **showName**.  
   
-4.  Markieren Sie das Wort **Address** ohne die Absatzmarke.  
+4.  Select the word **Address**, without selecting the paragraph mark.  
   
-5.  Klicken Sie auf der Registerkarte **Einfügen** des Menübands in der Gruppe **Links** auf **Lesezeichen**.  
+5.  On the **Insert** tab of the Ribbon, in the **Links** group, click **Bookmark**.  
   
-6.  Im Dialogfeld **Lesezeichen** geben Sie im Feld **LesezeichennameshowAddress** ein und klicken auf **Hinzufügen**.  
+6.  In the **Bookmark** dialog box, type **showAddress** in the **Bookmark Name** box and click **Add**.  
   
-## Hinzufügen von Steuerelementen zum Aktionsbereich  
- Um die Benutzeroberfläche von Aktionsbereichen zu entwerfen, fügen Sie ein Aktionsbereich\-Steuerelement zum Projekt und anschließend Windows Forms\-Steuerelemente zum Aktionsbereich\-Steuerelement hinzu.  
+## <a name="adding-controls-to-the-actions-pane"></a>Adding Controls to the Actions Pane  
+ To design the actions pane interface, add an actions pane control to the project and then add Windows Forms controls to the actions pane control.  
   
-#### So fügen Sie ein Aktionsbereich\-Steuerelement hinzu  
+#### <a name="to-add-an-actions-pane-control"></a>To add an actions pane control  
   
-1.  Wählen Sie im **Projektmappen\-Explorer** das Projekt **Mein Bereich Grundlegende Aktionen** aus.  
+1.  Select the **My Basic Actions Pane** project in **Solution Explorer**.  
   
-2.  Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.  
+2.  On the **Project** menu, click **Add New Item**.  
   
-3.  Im Dialogfeld **Neues Element hinzufügen** klicken Sie auf **Aktionsbereich\-Steuerelement**, bezeichnen das Steuerelement **InsertTextControl** und klicken auf **Hinzufügen**.  
+3.  In the **Add New Item** dialog box, click **Actions Pane Control**, name the control **InsertTextControl,** and click **Add**.  
   
-#### So fügen Sie dem Aktionsbereich\-Steuerelement Windows Form\-Steuerelemente hinzu  
+#### <a name="to-add-windows-form-controls-to-the-actions-pane-control"></a>To add Windows Form controls to the actions pane control  
   
-1.  Wenn das Aktionsbereich\-Steuerelement im Designer nicht sichtbar ist, doppelklicken Sie auf **InsertTextControl** im Designer.  
+1.  If the actions pane control is not visible in the designer, double-click **InsertTextControl**.  
   
-2.  Ziehen Sie von der Registerkarte **Allgemeine Steuerelemente** der **Toolbox** ein **Label**\-Steuerelement zum Aktionsbereich\-Steuerelement.  
+2.  From the **Common Controls** tab of the **Toolbox**, drag a **Label** control to the actions pane control.  
   
-3.  Ändern Sie die **Text**\-Eigenschaft des Label\-Steuerelements auf **Name**.  
+3.  Change the **Text** property of the Label control to **Name**.  
   
-4.  Fügen Sie dem Aktionsbereich\-Steuerelement ein **Textbox**\-Steuerelement hinzu, und ändern Sie die folgenden Eigenschaften.  
+4.  Add a **Textbox** control to the actions pane control, and change the following properties.  
   
-    |Eigenschaft|Wert|  
-    |-----------------|----------|  
+    |Property|Value|  
+    |--------------|-----------|  
     |**Name**|**getName**|  
-    |**Größe**|**130, 20**|  
+    |**Size**|**130, 20**|  
   
-5.  Fügen Sie dem Aktionsbereich\-Steuerelement ein zweites **Label**\-Steuerelement hinzu, und ändern Sie die **Text**\-Eigenschaft auf **Address**.  
+5.  Add a second **Label** control to the actions pane control, and change the **Text** property to **Address**.  
   
-6.  Fügen Sie dem Aktionsbereich\-Steuerelement ein zweites **Textbox**\-Steuerelement hinzu, und ändern Sie die folgenden Eigenschaften.  
+6.  Add a second **Textbox** control to the actions pane control, and change the following properties.  
   
-    |Eigenschaft|Wert|  
-    |-----------------|----------|  
+    |Property|Value|  
+    |--------------|-----------|  
     |**Name**|**getAddress**|  
-    |**AcceptsReturn**|**True**|  
+    |**Accepts Return**|**True**|  
     |**Multiline**|**True**|  
-    |**Größe**|**130, 40**|  
+    |**Size**|**130, 40**|  
   
-7.  Fügen Sie dem Aktionsbereich\-Steuerelement ein **Button**\-Steuerelement hinzu, und ändern Sie die folgenden Eigenschaften.  
+7.  Add a **Button** control to the actions pane control, and change the following properties.  
   
-    |Eigenschaft|Wert|  
-    |-----------------|----------|  
+    |Property|Value|  
+    |--------------|-----------|  
     |**Name**|**addText**|  
     |**Text**|**Insert**|  
   
-## Hinzufügen von Code, um Text in das Dokument einzufügen  
- Schreiben Sie im Aktionsbereich Code, der Text aus den Textfeldern in die entsprechenden <xref:Microsoft.Office.Tools.Word.Bookmark>\-Steuerelemente des Dokuments einfügt.  Sie können die `Globals`\-Klasse verwenden, um über die Steuerelemente des Aktionsbereichs auf die Steuerelemente im Dokument zuzugreifen.  Weitere Informationen finden Sie unter [Globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md).  
+## <a name="adding-code-to-insert-text-into-the-document"></a>Adding Code to Insert Text into the Document  
+ In the actions pane, write code that inserts the text from the text boxes into the appropriate <xref:Microsoft.Office.Tools.Word.Bookmark> controls in the document. You can use the `Globals` class to access controls on the document from the controls on the actions pane. For more information, see [Global Access to Objects in Office Projects](../vsto/global-access-to-objects-in-office-projects.md).  
   
-#### So fügen Sie Text aus dem Aktionsbereich in ein Lesezeichen im Dokument ein  
+#### <a name="to-insert-text-from-the-actions-pane-in-a-bookmark-in-the-document"></a>To insert text from the actions pane in a bookmark in the document  
   
-1.  Fügen Sie den folgenden Code zum <xref:System.Windows.Forms.Control.Click>\-Ereignishandler für die **addText**\-Schaltfläche hinzu.  
+1.  Add the following code to the <xref:System.Windows.Forms.Control.Click> event handler of the **addText** button.  
   
-     [!code-csharp[Trin_VstcoreActionsPaneWord#8](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreActionsPaneWord/CS/InsertTextControl.cs#8)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#8](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreActionsPaneWord/VB/InsertTextControl.vb#8)]  
+     [!code-csharp[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#8)]  [!code-vb[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/InsertTextControl.vb#8)]  
   
-2.  In C\# müssen Sie einen Ereignishandler für Klickereignisse auf Schaltflächen hinzufügen.  Sie können diesen Code nach dem Aufruf von `IntializeComponent` in den `InsertTextControl`\-Konstruktor einfügen.  Weitere Informationen zum Erstellen von Ereignishandlern finden Sie unter [Gewusst wie: Erstellen von Ereignishandlern in Office-Projekten](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+2.  In C#, you must add an event handler for the button click. You can place this code in the `InsertTextControl` constructor after the call to `IntializeComponent`. For information about creating event handlers, see [How to: Create Event Handlers in Office Projects](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
-     [!code-csharp[Trin_VstcoreActionsPaneWord#9](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreActionsPaneWord/CS/InsertTextControl.cs#9)]  
+     [!code-csharp[Trin_VstcoreActionsPaneWord#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#9)]  
   
-## Hinzufügen von Code, um den Aktionsbereich anzuzeigen  
- Um den Aktionsbereich anzuzeigen, müssen Sie das von Ihnen erstellte Steuerelement zur Steuerelementauflistung hinzufügen.  
+## <a name="adding-code-to-show-the-actions-pane"></a>Adding Code to Show the Actions Pane  
+ To show the actions pane, add the control you created to the control collection.  
   
-#### So zeigen Sie den Aktionsbereich an  
+#### <a name="to-show-the-actions-pane"></a>To show the actions pane  
   
-1.  Erstellen Sie in der `ThisDocument`\-Klasse eine neue Instanz des Aktionsbereich\-Steuerelements.  
+1.  Create a new instance of the actions pane control in the `ThisDocument` class.  
   
-     [!code-csharp[Trin_VstcoreActionsPaneWord#10](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreActionsPaneWord/CS/ThisDocument.cs#10)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#10](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreActionsPaneWord/VB/ThisDocument.vb#10)]  
+     [!code-csharp[Trin_VstcoreActionsPaneWord#10](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#10)]  [!code-vb[Trin_VstcoreActionsPaneWord#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#10)]  
   
-2.  Fügen Sie dem <xref:Microsoft.Office.Tools.Word.Document.Startup>\-Ereignishandler von `ThisDocument` den folgenden Code hinzu.  
+2.  Add the following code to the <xref:Microsoft.Office.Tools.Word.Document.Startup> event handler of `ThisDocument`.  
   
-     [!code-csharp[Trin_VstcoreActionsPaneWord#11](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreActionsPaneWord/CS/ThisDocument.cs#11)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#11](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreActionsPaneWord/VB/ThisDocument.vb#11)]  
+     [!code-csharp[Trin_VstcoreActionsPaneWord#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#11)]  [!code-vb[Trin_VstcoreActionsPaneWord#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#11)]  
   
-## Testen der Anwendung  
- Testen Sie das Dokument, um zu überprüfen, ob der Aktionsbereich nach dem Öffnen des Dokuments geöffnet wird und ob in den Textfeldern eingegebener Text nach dem Klicken auf die entsprechende Schaltfläche in die Lesezeichen eingefügt wird.  
+## <a name="testing-the-application"></a>Testing the Application  
+ Test your document to verify that the actions pane opens when the document is opened and that text typed into the text boxes is inserted into the bookmarks when the button is clicked.  
   
-#### So testen Sie das Dokument  
+#### <a name="to-test-your-document"></a>To test your document  
   
-1.  Drücken Sie F5, um das Projekt auszuführen.  
+1.  Press F5 to run your project.  
   
-2.  Bestätigen Sie, dass der Aktionsbereich angezeigt wird.  
+2.  Confirm that the actions pane is visible.  
   
-3.  Geben Sie Ihren Namen und Ihre Adresse in die Textfelder im Aktionsbereich ein, und klicken Sie auf **Einfügen**.  
+3.  Type your name and address into the text boxes on the actions pane and click **Insert**.  
   
-## Nächste Schritte  
- Die folgenden Aufgaben könnten sich daran anschließen:  
+## <a name="next-steps"></a>Next Steps  
+ Here are some tasks that might come next:  
   
--   Erstellen eines Aktionsbereichs in Excel.  Weitere Informationen finden Sie unter [How to: Add an Actions Pane to Excel Workbooks](http://msdn.microsoft.com/de-de/62abfce6-e44f-419d-85d8-26bf59f33872).  
+-   Creating an actions pane in Excel. For more information, see [How to: Add an Actions Pane to Excel Workbooks](http://msdn.microsoft.com/en-us/62abfce6-e44f-419d-85d8-26bf59f33872).  
   
--   Binden von Daten an Steuerelemente im Aktionsbereich.  Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Binden von Daten an Steuerelemente in einem Word-Aktionsbereich](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).  
+-   Binding data to controls on an actions pane. For more information, see [Walkthrough: Binding Data to Controls on a Word Actions Pane](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).  
   
-## Siehe auch  
- [Aktionsbereichsübersicht](../vsto/actions-pane-overview.md)   
- [Gewusst wie: Hinzufügen eines Aktionsbereichs zu Word-Dokumenten oder Excel-Arbeitsmappen](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
- [How to: Add an Actions Pane to Excel Workbooks](http://msdn.microsoft.com/de-de/62abfce6-e44f-419d-85d8-26bf59f33872)   
- [Gewusst wie: Verwalten des Steuerelementlayouts in Aktionsbereichen](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
- [Bookmark-Steuerelement](../vsto/bookmark-control.md)  
+## <a name="see-also"></a>See Also  
+ [Actions Pane Overview](../vsto/actions-pane-overview.md)   
+ [How to: Add an Actions Pane to Word Documents or Excel Workbooks](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [How to: Add an Actions Pane to Excel Workbooks](http://msdn.microsoft.com/en-us/62abfce6-e44f-419d-85d8-26bf59f33872)   
+ [How to: Manage Control Layout on Actions Panes](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
+ [Bookmark Control](../vsto/bookmark-control.md)  
   
   

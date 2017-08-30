@@ -1,79 +1,82 @@
 ---
-title: "Gewusst wie: Programmgesteuertes L&#246;schen von Arbeitsbl&#228;ttern aus Arbeitsmappen"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Arbeitsmappen, Löschen von Arbeitsblättern"
-  - "Arbeitsblätter, Löschen"
+title: 'How to: Programmatically Delete Worksheets from Workbooks | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- workbooks, deleting worksheets
+- worksheets, deleting
 ms.assetid: c5ae99f0-806d-4320-a29c-75ad444fb996
 caps.latest.revision: 48
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 47
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: e28e765abd1c7b18bdc0121e12be99db6e87afc1
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Gewusst wie: Programmgesteuertes L&#246;schen von Arbeitsbl&#228;ttern aus Arbeitsmappen
-  Sie können jedes beliebige Arbeitsblatt in einer Arbeitsmappe löschen.  Verwenden Sie zum Löschen eines Arbeitsblatts das Arbeitsblatt\-Hostelement, oder greifen Sie auf das Arbeitsblatt mithilfe der Sheets\-Auflistung der Arbeitsmappe zu.  
+# <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>How to: Programmatically Delete Worksheets from Workbooks
+  You can delete any worksheet in a workbook. To delete a worksheet, use the worksheet host item or access the worksheet by using the sheets collection of the workbook.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## Verwenden das Arbeitsblatt\-Hostelements  
- Wenn das Arbeitsblatt zur Entwurfszeit in einer Anpassung auf Dokumentebene hinzugefügt wurde, verwenden Sie die Methode <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A>, um ein angegebenes Arbeitsblatt zu löschen.  Der folgende Code löscht ein Arbeitsblatt aus einer Arbeitsmappe durch direktes Verweisen auf das Arbeitsblatt\-Hostelement.  
+## <a name="using-the-worksheet-host-item"></a>Using the Worksheet Host Item  
+ If the worksheet was added at design-time in a document-level customization, use the <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A> method to delete a specified worksheet. The following code deletes a worksheet from a workbook by referencing the worksheet host item directly.  
   
 > [!IMPORTANT]  
->  Dieser Code wird nur in Projekten ausgeführt, die Sie mithilfe einer der folgenden Projektvorlagen erstellen:  
+>  This code runs only in projects that you create by using any of the following project templates:  
 >   
->  -   Excel 2013\-Arbeitsmappe  
-> -   Excel 2013\-Vorlage  
-> -   Excel 2010\-Arbeitsmappe  
-> -   Excel 2010\-Vorlage  
+>  -   Excel 2013 Workbook  
+> -   Excel 2013 Template  
+> -   Excel 2010 Workbook  
+> -   Excel 2010 Template  
 >   
->  Wenn Sie diese Aufgabe mit einem anderen Projekttyp ausführen möchten, müssen Sie einen Verweis auf die **Microsoft.Office.Interop.Excel**\-Assembly hinzufügen und dann die Klassen aus dieser Assembly verwenden, um eine Arbeitsmappe zu öffnen und das Arbeitsblatt zu löschen.  Weitere Informationen finden Sie unter [Verweisen auf Office-Anwendungen durch primäre Interopassemblys](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) und [Referenz für primäre Interopassemblys für Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  
+>  If you want to perform this task in any other type of project, you must add a reference to the **Microsoft.Office.Interop.Excel** assembly, and then you must use classes from that assembly to open a workbook and delete a worksheet. For more information, see [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) and [Excel 2010 Primary Interop Assembly Reference](http://go.microsoft.com/fwlink/?LinkId=189585).  
   
-#### So löschen Sie ein Arbeitsblatt mithilfe eines Arbeitsblatt\-Hostelements  
+#### <a name="to-delete-a-worksheet-by-using-a-worksheet-host-item"></a>To delete a worksheet by using a worksheet host item  
   
-1.  Rufen Sie die <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A>\-Methode von `Sheet1` auf.  
+1.  Call the <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A> method of `Sheet1`.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#17](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/CS/Sheet1.cs#17)]
-     [!code-vb[Trin_VstcoreExcelAutomation#17](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/VB/Sheet1.vb#17)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#17](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#17)]  [!code-vb[Trin_VstcoreExcelAutomation#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#17)]  
   
-## Verwenden der Sheets\-Auflistung der Excel\-Arbeitsmappe  
- Greifen Sie auf Arbeitsblätter über die Microsoft Office Excel\-Auflistung <xref:Microsoft.Office.Interop.Excel.Sheets> in den folgenden Fällen zu:  
+## <a name="using-the-sheets-collection-of-the-excel-workbook"></a>Using the Sheets Collection of the Excel Workbook  
+ Access worksheets through the Microsoft Office Excel <xref:Microsoft.Office.Interop.Excel.Sheets> collection in the following cases:  
   
--   Sie möchten ein Arbeitsblatt in einem VSTO\-Add\-In löschen.  
+-   You want to delete a worksheet in a VSTO Add-in.  
   
--   Das Arbeitsblatt, das Sie löschen möchten, wurde zur Laufzeit in einer Anpassung auf Dokumentebene erstellt.  
+-   The worksheet that you want to delete was created at run time in a document-level customization.  
   
- Der folgende Code löscht ein Arbeitsblatt aus einer Arbeitsmappe durch Verweisen auf das Blatt über die Indexnummer der **Sheets**\-Auflistung.  Dieser Code geht davon aus, dass ein neues Arbeitsblatt programmgesteuert erstellt wurde.  
+ The following code deletes a worksheet from a workbook by referencing the sheet through the index number of the **Sheets** collection. This code assumes that a new worksheet was created programmatically.  
   
 > [!IMPORTANT]  
->  Wenn Sie diese Aufgabe mit einem anderen Projekttyp ausführen möchten, müssen Sie einen Verweis auf die **Microsoft.Office.Interop.Excel**\-Assembly hinzufügen und dann die Klassen aus dieser Assembly verwenden, um eine Arbeitsmappe zu öffnen und das Arbeitsblatt zu löschen.  Weitere Informationen finden Sie unter [Verweisen auf Office-Anwendungen durch primäre Interopassemblys](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) und [Referenz für primäre Interopassemblys für Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).  
+>  If you want to perform this task in any other type of project, you must add a reference to the **Microsoft.Office.Interop.Excel** assembly, and then you must use classes from that assembly to open a workbook and delete a worksheet. For more information, see [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) and [Excel 2010 Primary Interop Assembly Reference](http://go.microsoft.com/fwlink/?LinkId=189585).  
   
-#### So löschen Sie ein Arbeitsblatt mithilfe der Sheets\-Auflistung der Excel\-Arbeitsmappe  
+#### <a name="to-delete-a-worksheet-by-using-the-sheets-collection-of-the-excel-workbook"></a>To delete a worksheet by using the Sheets collection of the Excel workbook  
   
-1.  Rufen Sie die Methode <xref:Microsoft.Office.Interop.Excel._Worksheet.Delete%2A> der Auflistung <xref:Microsoft.Office.Interop.Excel.Sheets> auf.  
+1.  Call the <xref:Microsoft.Office.Interop.Excel._Worksheet.Delete%2A> method of the <xref:Microsoft.Office.Interop.Excel.Sheets> collection.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#18](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/CS/Sheet1.cs#18)]
-     [!code-vb[Trin_VstcoreExcelAutomation#18](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/VB/Sheet1.vb#18)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#18](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#18)]  [!code-vb[Trin_VstcoreExcelAutomation#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#18)]  
   
-## Siehe auch  
- [Arbeiten mit Arbeitsblättern](../vsto/working-with-worksheets.md)   
- [Gewusst wie: Programmgesteuertes Ausblenden von Arbeitsblättern](../vsto/how-to-programmatically-hide-worksheets.md)   
- [Gewusst wie: Programmgesteuertes Verschieben von Arbeitsblättern in Arbeitsmappen](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)   
- [Gewusst wie: Programmgesteuertes Auswählen von Arbeitsblättern](../vsto/how-to-programmatically-select-worksheets.md)   
- [Gewusst wie: Programmgesteuertes Hinzufügen neuer Arbeitsblätter zu Arbeitsmappen](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
- [Arbeitsblatthostelement](../vsto/worksheet-host-item.md)   
- [Globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md)   
- [Programmgesteuerte Einschränkungen von Hostelementen und Hoststeuerelementen](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
+## <a name="see-also"></a>See Also  
+ [Working with Worksheets](../vsto/working-with-worksheets.md)   
+ [How to: Programmatically Hide Worksheets](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [How to: Programmatically Move Worksheets Within Workbooks](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)   
+ [How to: Programmatically Select Worksheets](../vsto/how-to-programmatically-select-worksheets.md)   
+ [How to: Programmatically Add New Worksheets to Workbooks](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
+ [Worksheet Host Item](../vsto/worksheet-host-item.md)   
+ [Global Access to Objects in Office Projects](../vsto/global-access-to-objects-in-office-projects.md)   
+ [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   
   

@@ -1,102 +1,106 @@
 ---
-title: "Gewusst wie: Hinzuf&#252;gen einer bestimmten Finder-Methode"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "BDC [SharePoint-Entwicklung in Visual Studio], Abrufen einer Entität"
-  - "BDC [SharePoint-Entwicklung in Visual Studio], Zurückgeben einer Entität"
-  - "BDC [SharePoint-Entwicklung in Visual Studio], Spezifischer Finder"
-  - "Business Data Connectivity-Dienst [SharePoint-Entwicklung in Visual Studio], Abrufen einer Entität"
-  - "Business Data Connectivity-Dienst [SharePoint-Entwicklung in Visual Studio], Zurückgeben einer Entität"
-  - "Business Data Connectivity-Dienst [SharePoint-Entwicklung in Visual Studio], Spezifischer Finder"
+title: 'How to: Add a Specific Finder Method | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- Business Data Connectivity service [SharePoint development in Visual Studio], Specific Finder
+- BDC [SharePoint development in Visual Studio], return an entity
+- BDC [SharePoint development in Visual Studio], get an entity
+- Business Data Connectivity service [SharePoint development in Visual Studio], return an entity
+- BDC [SharePoint development in Visual Studio], Specific Finder
+- Business Data Connectivity service [SharePoint development in Visual Studio], get an entity
 ms.assetid: 7bbc5986-2828-4755-96fa-9f1dc0f8dc75
 caps.latest.revision: 30
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 29
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: f079dd28ede8bcb5720bd1af0f2194528ce0d986
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Gewusst wie: Hinzuf&#252;gen einer bestimmten Finder-Methode
-  Sie können eine einzelne Entitätsinstanz zurückgeben, indem Sie eine *spezifische Finder*\-Methode erstellen.  Der Business Data Connectivity \(BDC\)\- \- Dienst führt die spezifische Finder\-Methode aus, wenn ein Benutzer eine Entität in einem Geschäftsdatenwebpart oder einer externen Liste auswählt.  Weitere Informationen finden Sie unter [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).  
+# <a name="how-to-add-a-specific-finder-method"></a>How to: Add a Specific Finder Method
+  You can return a single entity instance by creating a *Specific Finder* method. The Business Data Connectivity (BDC) service executes the Specific Finder method when a user chooses an entity in a business data web part or external list. For more information, see [Designing a Business Data Connectivity Model](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
-### So erstellen Sie eine spezifische Finder\-Methode  
+### <a name="to-create-a-specific-finder-method"></a>To create a Specific Finder method  
   
-1.  Wählen Sie im BDC\-Designer eine Entität aus.  
+1.  On the BDC designer, choose an entity.  
   
-     Informationen dazu, wie einer Entität zum BDC\-Designer in Visual Studio, finden Sie unter [Gewusst wie: Hinzufügen einer Entität zu einem Modell](../sharepoint/how-to-add-an-entity-to-a-model.md).  
+     For information about how to add an entity to the BDC designer in Visual Studio, see [How to: Add an Entity to a Model](../sharepoint/how-to-add-an-entity-to-a-model.md).  
   
-2.  Klicken Sie auf der Menüleiste **Weitere Fenster**, **BDC\-Methodendetails**, **Ansicht** aus.  
+2.  On the menu bar, choose **View**, **Other Windows**, **BDC Method Details**.  
   
-     Das Fenster **BDC\-Methodendetails** wird geöffnet.  Weitere Informationen über dieses Fenster, finden Sie unter [Übersicht über Entwurfstools für BDC-Modelle](../sharepoint/bdc-model-design-tools-overview.md).  
+     The **BDC Method Details** window opens. For more information about that window, see [BDC Model Design Tools Overview](../sharepoint/bdc-model-design-tools-overview.md).  
   
-3.  In der Liste **Methode hinzufügen** wählen Sie **Spezifische Finder\-Methode erstellen** aus.  
+3.  In the **Add a Method** list, choose **Create Specific Finder Method**.  
   
-     Mit Visual Studio werden dem Modell die folgenden Elemente hinzugefügt.  Diese Elemente werden im Fenster **BDC\-Methodendetails** angezeigt.  
+     Visual Studio adds the following elements to the model. These elements appear in the **BDC Method Details** window.  
   
-    -   Eine Methode.  
+    -   A method.  
   
-    -   Ein Eingabeparameter für die Methode.  
+    -   An input parameter for the method.  
   
-    -   Ein Rückgabeparameter für die Methode.  
+    -   A return parameter for the method.  
   
-    -   Ein Typdeskriptor für jeden Parameter.  
+    -   A type descriptor for each parameter.  
   
-    -   Eine Methodeninstanz für die Methode.  
+    -   A method instance for the method.  
   
-     Weitere Informationen finden Sie unter [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).  
+     For more information, see [Designing a Business Data Connectivity Model](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
-4.  Öffnen Sie das Fenster **Eigenschaften** von Visual Studio.  
+4.  Open the Visual Studio **Properties** window.  
   
-5.  Konfigurieren Sie den Typdeskriptor des Rückgabeparameters als Entitätstypdeskriptor.  Informationen darüber, wie Sie eines Entitätstypdeskriptors, finden Sie unter [How to: Define the Type Descriptor of a Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
-  
-    > [!NOTE]  
-    >  Sie müssen diesen Schritt nicht ausführen, wenn Sie der Entität eine Finder\-Methode hinzugefügt haben.  Visual Studio verwendet den Typdeskriptor, den Sie in der Finder\-Methode definiert haben.  
+5.  Configure the type descriptor of the return parameter as an entity type descriptor. For information about how to create an entity type descriptor, see [How to: Define the Type Descriptor of a Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
     > [!NOTE]  
-    >  Wenn das Bezeichnerfeld des Entitätstyps ein Feld in einer Datenbanktabelle darstellt, die automatisch generiert wird, legen Sie die Eigenschaft **Schreibgeschützt** des Bezeichnerfelds auf **True** fest.  
-  
-6.  Im Fenster **Methodendetails** wählen Sie die Methodeninstanz der Methode aus.  
-  
-7.  Legen Sie im **Eigenschaftenfenster** die Eigenschaft **Rückgabeparametername** auf den Namen des Rückgabeparameters der Methode fest.  Weitere Informationen zu Methodeninstanzeigenschaften, Sie finden [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282).  
-  
-8.  In **Projektmappen\-Explorer** öffnen Sie das Kontextmenü der Dienstcodedatei, die für die Entität generiert wurde, und dann **Code anzeigen** aus.  
-  
-     Die Codedatei für den Entitätsdienst wird im Code\-Editor geöffnet.  Weitere Informationen zur Codedatei für den Entitätsdienst finden Sie unter [Erstellen eines Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md).  
-  
-9. Fügen Sie der spezifischen Finder\-Methode Code hinzu.  Mit diesem Code werden die folgenden Aufgaben ausgeführt:  
-  
-    -   Ruft einen Datensatz aus einer Datenquelle.  
-  
-    -   Gibt einer Entität an den BDC\-Dienst.  
-  
-     Im folgenden Beispiel wird ein Kontakt aus der AdventureWorks\-Beispieldatenbank für SQL Server zurückgegeben.  
+    >  You don't have to perform this step if you have added a Finder method to the entity. Visual Studio uses the type descriptor that you defined in the Finder method.  
   
     > [!NOTE]  
-    >  Ersetzen Sie den Wert des Felds `ServerName` durch den Namen Ihres Servers.  
+    >  If the identifier field of the entity type represents a field in a database table that's automatically generated, set the **Read-only** property of the identifier field to **True**.  
   
-     [!code-csharp[SP_BDC#3](../snippets/csharp/VS_Snippets_OfficeSP/sp_bdc/CS/bdcmodel1/contactservice.cs#3)]
-     [!code-vb[SP_BDC#3](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_bdc/VB/bdcmodel1/contactservice.vb#3)]  
+6.  In the **Method Details** window, choose the method instance of the method.  
   
-## Siehe auch  
- [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Gewusst wie: Hinzufügen einer Finder-Methode](../sharepoint/how-to-add-a-finder-method.md)   
- [Gewusst wie: Hinzufügen einer Creator-Methode](../sharepoint/how-to-add-a-creator-method.md)   
- [Gewusst wie: Hinzufügen einer Deleter-Methode](../sharepoint/how-to-add-a-deleter-method.md)   
- [Gewusst wie: Hinzufügen einer Updater-Methode](../sharepoint/how-to-add-an-updater-method.md)   
- [Übersicht über Entwurfstools für BDC-Modelle](../sharepoint/bdc-model-design-tools-overview.md)   
- [Gewusst wie: Hinzufügen eines Parameters zu einer Methode](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Gewusst wie: Definieren einer Methodeninstanz](../sharepoint/how-to-define-a-method-instance.md)  
+7.  In the **Properties Window**, set the **Return Parameter Name** property to the name of the return parameter of the method. For more information about method instance properties, see [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282).  
+  
+8.  In **Solution Explorer**, open the shortcut menu of the service code file that was generated for the entity, and then choose **View Code**.  
+  
+     The entity service code file opens in the Code Editor. For more information about the entity service code file, see [Creating a Business Data Connectivity Model](../sharepoint/creating-a-business-data-connectivity-model.md).  
+  
+9. Add code to the Specific Finder method. This code performs the following tasks:  
+  
+    -   Retrieves a record from a data source.  
+  
+    -   Returns an entity to the BDC service.  
+  
+     The following example returns a contact from the AdventureWorks sample database for SQL Server.  
+  
+    > [!NOTE]  
+    >  Replace the value of the `ServerName` field with the name of your server.  
+  
+     [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]   [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]  
+  
+## <a name="see-also"></a>See Also  
+ [Designing a Business Data Connectivity Model](../sharepoint/designing-a-business-data-connectivity-model.md)   
+ [How to: Add a Finder Method](../sharepoint/how-to-add-a-finder-method.md)   
+ [How to: Add a Creator Method](../sharepoint/how-to-add-a-creator-method.md)   
+ [How to: Add a Deleter Method](../sharepoint/how-to-add-a-deleter-method.md)   
+ [How to: Add an Updater Method](../sharepoint/how-to-add-an-updater-method.md)   
+ [BDC Model Design Tools Overview](../sharepoint/bdc-model-design-tools-overview.md)   
+ [How to: Add a Parameter to a Method](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [How to: Define a Method Instance](../sharepoint/how-to-define-a-method-instance.md)  
   
   

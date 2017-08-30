@@ -1,128 +1,121 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Suchen und Ersetzen von Text in Dokumenten"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Dokumente [Office-Entwicklung in Visual Studio], Suchen"
-  - "Text [Office-Entwicklung in Visual Studio], Suchen in Dokumenten"
-  - "Text [Office-Entwicklung in Visual Studio], Textsuche"
-  - "Textsuche, Dokumente"
-  - "Textsuche, Ersetzen von Text"
+title: 'How to: Programmatically Search for and Replace Text  in Documents | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- documents [Office development in Visual Studio], searching
+- text searches, replacing text
+- text searches, documents
+- text [Office development in Visual Studio], searching in documents
+- text [Office development in Visual Studio], text searches
 ms.assetid: a66962f5-eeb9-4dc6-a70f-9039ab437a63
 caps.latest.revision: 51
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 50
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 91acaa367f2c125e26e8d43444d455d591c318e3
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Gewusst wie: Programmgesteuertes Suchen und Ersetzen von Text in Dokumenten
-  Das <xref:Microsoft.Office.Interop.Word.Find>\-Objekt ist ein Element des <xref:Microsoft.Office.Interop.Word.Selection>\- und des <xref:Microsoft.Office.Interop.Word.Range>\-Objekts, und Sie können eines dieser Objekte verwenden, um in Microsoft Office Word\-Dokumenten nach Text zu suchen.  Der Befehl "Ersetzen" ist eine Erweiterung des Befehls "Suchen".  
+# <a name="how-to-programmatically-search-for-and-replace-text--in-documents"></a>How to: Programmatically Search for and Replace Text  in Documents
+  The <xref:Microsoft.Office.Interop.Word.Find> object is a member of both the <xref:Microsoft.Office.Interop.Word.Selection> and the <xref:Microsoft.Office.Interop.Word.Range> objects, and you can use either one to search for text in Microsoft Office Word documents. The replace command is an extension of the find command.  
   
- Verwenden Sie ein <xref:Microsoft.Office.Interop.Word.Find>\-Objekt, um ein Microsoft Office Word\-Dokument in einer Schleife zu durchlaufen und nach bestimmtem Text, einer Formatierung oder einem Stil zu suchen. Verwenden Sie die Eigenschaft <xref:Microsoft.Office.Interop.Word.Find.Replacement%2A>, um gefundene Elemente zu ersetzen.  
+ Use a <xref:Microsoft.Office.Interop.Word.Find> object to loop through a Microsoft Office Word document and search for specific text, formatting, or style, and use the <xref:Microsoft.Office.Interop.Word.Find.Replacement%2A> property to replace any of the items found.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-## Verwenden eines Selection\-Objekts  
- Wenn Sie ein <xref:Microsoft.Office.Interop.Word.Selection>\-Objekt zum Suchen nach Text verwenden, gelten die von Ihnen angegebenen Suchkriterien nur für den zurzeit markierten Text.  Wenn die <xref:Microsoft.Office.Interop.Word.Selection> eine Einfügemarke ist, wird das Dokument durchsucht.  Wenn ein Element gefunden wird, das mit die Suchkriterien übereinstimmt, wird es automatisch ausgewählt.  
+## <a name="using-a-selection-object"></a>Using a Selection Object  
+ When you use a <xref:Microsoft.Office.Interop.Word.Selection> object to find text, any search criteria you specify are applied only against currently selected text. If the <xref:Microsoft.Office.Interop.Word.Selection> is an insertion point, then the document is searched. When the item is found that matches the search criteria, it is automatically selected.  
   
- Sie müssen unbedingt beachten, dass die <xref:Microsoft.Office.Interop.Word.Find>\-Kriterien kumulativ sind. Dies bedeutet, dass Kriterien früheren Suchkriterien hinzugefügt werden.  Deaktivieren Sie alle Formatierungen aus vorherigen Suchvorgängen mithilfe der Methode <xref:Microsoft.Office.Interop.Word.Find.ClearFormatting%2A>, bevor Sie den Suchvorgang ausführen.  
+ It is important to note that the <xref:Microsoft.Office.Interop.Word.Find> criteria are cumulative, which means that criteria are added to previous search criteria. Clear formatting from previous searches by using the <xref:Microsoft.Office.Interop.Word.Find.ClearFormatting%2A> method prior to the search.  
   
-#### So suchen mit einem Selection\-Objekt nach Text  
+#### <a name="to-find-text-using-a-selection-object"></a>To find text using a Selection object  
   
-1.  Weisen Sie einer Variablen eine Suchzeichenfolge zu.  
+1.  Assign a search string to a variable.  
   
-     [!code-csharp[Trin_VstcoreWordAutomation#68](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/CS/ThisDocument.cs#68)]
-     [!code-vb[Trin_VstcoreWordAutomation#68](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/VB/ThisDocument.vb#68)]  
+     [!code-vb[Trin_VstcoreWordAutomation#68](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#68)]  [!code-csharp[Trin_VstcoreWordAutomation#68](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#68)]  
   
-2.  Löschen Sie die Formatierung aus vorherigen Suchvorgängen.  
+2.  Clear formatting from previous searches.  
   
-     [!code-csharp[Trin_VstcoreWordAutomation#69](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/CS/ThisDocument.cs#69)]
-     [!code-vb[Trin_VstcoreWordAutomation#69](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/VB/ThisDocument.vb#69)]  
+     [!code-vb[Trin_VstcoreWordAutomation#69](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#69)]  [!code-csharp[Trin_VstcoreWordAutomation#69](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#69)]  
   
-3.  Führen Sie die Suche aus, und zeigen Sie ein Meldungsfeld mit den Ergebnissen an.  
+3.  Execute the search and display a message box with the results.  
   
-     [!code-csharp[Trin_VstcoreWordAutomation#70](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/CS/ThisDocument.cs#70)]
-     [!code-vb[Trin_VstcoreWordAutomation#70](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/VB/ThisDocument.vb#70)]  
+     [!code-vb[Trin_VstcoreWordAutomation#70](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#70)]  [!code-csharp[Trin_VstcoreWordAutomation#70](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#70)]  
   
- Das folgende Beispiel zeigt die vollständige Methode.  
+ The following example shows the complete method.  
   
- [!code-csharp[Trin_VstcoreWordAutomation#67](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/CS/ThisDocument.cs#67)]
- [!code-vb[Trin_VstcoreWordAutomation#67](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/VB/ThisDocument.vb#67)]  
+ [!code-vb[Trin_VstcoreWordAutomation#67](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#67)] [!code-csharp[Trin_VstcoreWordAutomation#67](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#67)]  
   
-## Verwenden eines Range\-Objekts  
- Mit einem <xref:Microsoft.Office.Interop.Word.Range>\-Objekt können Sie nach Text suchen, ohne dass eine Anzeige in der Benutzeroberfläche erfolgt.  Das<xref:Microsoft.Office.Interop.Word.Find>\-Objekt gibt **True** zurück, wenn Text gefunden wird, die mit den Suchkriterien übereinstimmt. Andernfalls wird **False** zurückgegeben.  Es definiert außerdem das <xref:Microsoft.Office.Interop.Word.Range>\-Objekt so neu, dass es den Suchkriterien entspricht, wenn der Text gefunden wird.  
+## <a name="using-a-range-object"></a>Using a Range Object  
+ Using a <xref:Microsoft.Office.Interop.Word.Range> object enables you to search for text without displaying anything in the user interface. The <xref:Microsoft.Office.Interop.Word.Find> object returns **True** if text is found that matches the search criteria, and **False** if it does not. It also redefines the <xref:Microsoft.Office.Interop.Word.Range> object to match the search criteria if the text is found.  
   
-#### So suchen Sie mithilfe eines Range\-Objekts nach Text  
+#### <a name="to-find-text-using-a-range-object"></a>To find text using a Range object  
   
-1.  Definieren Sie ein <xref:Microsoft.Office.Interop.Word.Range>\-Objekt, das aus dem zweiten Absatz im Dokuments besteht.  
+1.  Define a <xref:Microsoft.Office.Interop.Word.Range> object that consists of the second paragraph in the document.  
   
-     Das folgende Codebeispiel kann in einer Anpassung auf Dokumentebene verwendet werden.  
+     The following code example can be used in a document-level customization.  
   
-     [!code-csharp[Trin_VstcoreWordAutomation#72](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/CS/ThisDocument.cs#72)]
-     [!code-vb[Trin_VstcoreWordAutomation#72](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/VB/ThisDocument.vb#72)]  
+     [!code-vb[Trin_VstcoreWordAutomation#72](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#72)]  [!code-csharp[Trin_VstcoreWordAutomation#72](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#72)]  
   
-     Das folgende Codebeispiel kann in einem VSTO\-Add\-In verwendet werden.  In diesem Beispiel wird das aktive Dokument verwendet.  
+     The following code example can be used in a VSTO Add-in. This example uses the active document.  
   
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#72](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomationAddIn/CS/ThisAddIn.cs#72)]
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#72](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomationAddIn/VB/ThisAddIn.vb#72)]  
+     [!code-vb[Trin_VstcoreWordAutomationAddIn#72](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#72)]  [!code-csharp[Trin_VstcoreWordAutomationAddIn#72](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#72)]  
   
-2.  Deaktivieren Sie zunächst mithilfe der Eigenschaft <xref:Microsoft.Office.Interop.Word.Range.Find%2A> des <xref:Microsoft.Office.Interop.Word.Range>\-Objekts alle vorhandenen Formatierungsoptionen, und suchen Sie dann nach der Zeichenfolge **find me**.  
+2.  Using the <xref:Microsoft.Office.Interop.Word.Range.Find%2A> property of the <xref:Microsoft.Office.Interop.Word.Range> object, first clear any existing formatting options, and then search for the string **find me**.  
   
-     [!code-csharp[Trin_VstcoreWordAutomation#73](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/CS/ThisDocument.cs#73)]
-     [!code-vb[Trin_VstcoreWordAutomation#73](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/VB/ThisDocument.vb#73)]  
+     [!code-vb[Trin_VstcoreWordAutomation#73](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#73)]  [!code-csharp[Trin_VstcoreWordAutomation#73](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#73)]  
   
-3.  Zeigen Sie die Ergebnisse der Suche in einem Meldungsfeld an, und wählen Sie den <xref:Microsoft.Office.Interop.Word.Range> aus, um sie sichtbar zu machen.  
+3.  Display the results of the search in a message box, and select the <xref:Microsoft.Office.Interop.Word.Range> to make it visible.  
   
-     [!code-csharp[Trin_VstcoreWordAutomation#74](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/CS/ThisDocument.cs#74)]
-     [!code-vb[Trin_VstcoreWordAutomation#74](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/VB/ThisDocument.vb#74)]  
+     [!code-vb[Trin_VstcoreWordAutomation#74](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#74)]  [!code-csharp[Trin_VstcoreWordAutomation#74](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#74)]  
   
-     Wenn bei der Suche ein Fehler auftritt, wird der zweite Absatz ausgewählt. Wenn die Suche erfolgreich ist, werden die Suchkriterien angezeigt.  
+     If the search fails, the second paragraph is selected; if it succeeds, the search criteria are displayed.  
   
- Das folgende Beispiel zeigt den vollständigen Code für eine Anpassung auf Dokumentebene.  Wenn Sie dieses Beispiel verwenden möchten, führen Sie den Code von der `ThisDocument`\-Klasse im Projekt aus.  
+ The following example shows the complete code for a document-level customization. To use this example, run the code from the `ThisDocument` class in your project.  
   
- [!code-csharp[Trin_VstcoreWordAutomation#71](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/CS/ThisDocument.cs#71)]
- [!code-vb[Trin_VstcoreWordAutomation#71](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/VB/ThisDocument.vb#71)]  
+ [!code-vb[Trin_VstcoreWordAutomation#71](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#71)] [!code-csharp[Trin_VstcoreWordAutomation#71](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#71)]  
   
- Das folgende Beispiel zeigt den vollständigen Code für ein VSTO\-Add\-In.  Wenn Sie dieses Beispiel verwenden möchten, führen Sie den Code von der `ThisAddIn`\-Klasse im Projekt aus.  
+ The following example shows the complete code for a VSTO Add-in. To use this example, run the code from the `ThisAddIn` class in your project.  
   
- [!code-csharp[Trin_VstcoreWordAutomationAddIn#71](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomationAddIn/CS/ThisAddIn.cs#71)]
- [!code-vb[Trin_VstcoreWordAutomationAddIn#71](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomationAddIn/VB/ThisAddIn.vb#71)]  
+ [!code-vb[Trin_VstcoreWordAutomationAddIn#71](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#71)] [!code-csharp[Trin_VstcoreWordAutomationAddIn#71](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#71)]  
   
-## Suchen nach und Ersetzen von Text in Dokumenten  
- Der folgende Code durchsucht die aktuelle Auswahl und ersetzt alle Vorkommen der Zeichenfolge **find me** durch die Zeichenfolge **Found**.  
+## <a name="searching-for-and-replacing-text-in-documents"></a>Searching For and Replacing Text in Documents  
+ The following code searches the current selection and replaces all of the occurrences of the string **find me** with the string **Found**.  
   
-#### So suchen Sie nach Text und ersetzen Text in Dokumenten  
+#### <a name="to-search-for-and-replace-text-in-documents"></a>To search for and replace text in documents  
   
-1.  Fügen Sie den folgenden Beispielcode der Klasse `ThisDocument` oder `ThisAddIn` im Projekt hinzu.  
+1.  Add the following example code to the `ThisDocument` or `ThisAddIn` class in your project.  
   
-     [!code-csharp[Trin_VstcoreWordAutomation#75](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/CS/ThisDocument.cs#75)]
-     [!code-vb[Trin_VstcoreWordAutomation#75](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/VB/ThisDocument.vb#75)]  
+     [!code-vb[Trin_VstcoreWordAutomation#75](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#75)]  [!code-csharp[Trin_VstcoreWordAutomation#75](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#75)]  
   
-     Die Klasse <xref:Microsoft.Office.Interop.Word.Find> verfügt über eine Methode <xref:Microsoft.Office.Interop.Word.Find.ClearFormatting%2A>, und die Klasse <xref:Microsoft.Office.Interop.Word.Replacement> verfügt ebenfalls über eine eigene Methode <xref:Microsoft.Office.Interop.Word.Replacement.ClearFormatting%2A>.  Wenn Sie Suchen\-und\-Ersetzen\-Vorgänge ausführen, müssen Sie die Methode ClearFormatting beider Objekte verwenden.  Wenn Sie nur das <xref:Microsoft.Office.Interop.Word.Find>\-Objekt verwenden, erhalten Sie ggf. unerwartete Ergebnisse im Ersetzungstext.  
+     The <xref:Microsoft.Office.Interop.Word.Find> class has a <xref:Microsoft.Office.Interop.Word.Find.ClearFormatting%2A> method, and the <xref:Microsoft.Office.Interop.Word.Replacement> class also has its own <xref:Microsoft.Office.Interop.Word.Replacement.ClearFormatting%2A> method. When you are performing find-and-replace operations, you must use the ClearFormatting method of both objects. If you use it only on the <xref:Microsoft.Office.Interop.Word.Find> object, you might get unanticipated results in the replacement text.  
   
-2.  Verwenden Sie die Methode <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> des <xref:Microsoft.Office.Interop.Word.Find>\-Objekts, um jedes gefundene Element zu ersetzen.  Verwenden Sie zum Angeben der zu ersetzenden Elemente den Parameter *Replace*.  Dieser Parameter kann einen der folgenden <xref:Microsoft.Office.Interop.Word.WdReplace>\-Werte aufweisen:  
+2.  Use the <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> method of the <xref:Microsoft.Office.Interop.Word.Find> object to replace each found item. To specify which items to replace, use the *Replace* parameter. This parameter can be one of the following <xref:Microsoft.Office.Interop.Word.WdReplace> values:  
   
-    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceAll> ersetzt alle gefundenen Elemente.  
+    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceAll> replaces all found items.  
   
-    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceNone> ersetzt keines der gefundenen Elemente.  
+    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceNone> replaces none of the found items.  
   
-    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceOne> ersetzt das erste gefundene Element.  
+    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceOne> replaces the first found item.  
   
-## Siehe auch  
- [Gewusst wie: Programmgesteuertes Festlegen von Suchoptionen in Word](../vsto/how-to-programmatically-set-search-options-in-word.md)   
- [Gewusst wie: Programmgesteuertes Durchlaufen gefundener Elemente in Dokumenten](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
- [Gewusst wie: Programmgesteuertes Definieren und Markieren von Bereichen in Dokumenten](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Gewusst wie: Programmgesteuertes Wiederherstellen der Auswahl nach Suchvorgängen](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
- [Optionale Parameter in Office-Lösungen](../vsto/optional-parameters-in-office-solutions.md)  
-  
+## <a name="see-also"></a>See Also  
+ [How to: Programmatically Set Search Options in Word](../vsto/how-to-programmatically-set-search-options-in-word.md)   
+ [How to: Programmatically Loop Through Found Items in Documents](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
+ [How to: Programmatically Define and Select Ranges in Documents](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [How to: Programmatically Restore Selections After Searches](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
+ [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
   

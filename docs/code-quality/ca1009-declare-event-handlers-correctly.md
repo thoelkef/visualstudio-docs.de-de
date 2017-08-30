@@ -1,61 +1,76 @@
 ---
-title: "CA1009: Ereignishandler korrekt deklarieren | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1009"
-  - "DeclareEventHandlersCorrectly"
-helpviewer_keywords: 
-  - "CA1009"
-  - "DeclareEventHandlersCorrectly"
+title: 'CA1009: Declare event handlers correctly | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1009
+- DeclareEventHandlersCorrectly
+helpviewer_keywords:
+- CA1009
+- DeclareEventHandlersCorrectly
 ms.assetid: ab65c471-1449-49d2-9896-7b9af74284b4
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 19
----
-# CA1009: Ereignishandler korrekt deklarieren
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: b0f63af127c6e9b11c1d9e468705bbcca14f39bd
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: Declare event handlers correctly
 |||  
 |-|-|  
 |TypeName|DeclareEventHandlersCorrectly|  
 |CheckId|CA1009|  
-|Kategorie \(Category\)|Microsoft.Design|  
-|Unterbrechende Änderung|Breaking|  
+|Category|Microsoft.Design|  
+|Breaking Change|Breaking|  
   
-## Ursache  
- Ein Delegat, der ein öffentliches oder geschütztes Ereignis behandelt, verfügt nicht über die richtige Signatur, den richtigen Rückgabetyp oder die richtigen Parameternamen.  
+## <a name="cause"></a>Cause  
+ A delegate that handles a public or protected event does not have the correct signature, return type, or parameter names.  
   
-## Regelbeschreibung  
- Ereignishandlermethoden nehmen zwei Parameter an.  Der erste Parameter ist vom Typ <xref:System.Object?displayProperty=fullName> und wird "sender" genannt.  Dies ist das Objekt, durch das das Ereignis ausgelöst wurde.  Der zweite Parameter ist vom Typ <xref:System.EventArgs?displayProperty=fullName> und wird "e" genannt.  Dies sind die Daten, die dem Ereignis zugeordnet sind.  Wenn das Ereignis z. B. beim Öffnen einer Datei ausgelöst wird, enthalten die Ereignisdaten in der Regel den Namen der Datei.  
+## <a name="rule-description"></a>Rule Description  
+ Event handler methods take two parameters. The first is of type <xref:System.Object?displayProperty=fullName> and is named 'sender'. This is the object that raised the event. The second parameter is of type <xref:System.EventArgs?displayProperty=fullName> and is named 'e'. This is the data that is associated with the event. For example, if the event is raised whenever a file is opened, the event data typically contains the name of the file.  
   
- Ereignishandlermethoden sollten keinen Wert zurückgeben.  In der Programmiersprache C\# wird dies durch den Rückgabetyp `void` angegeben.  Ein Ereignishandler kann mehrere Methoden in mehreren Objekten aufrufen.  Wenn die Methoden einen Wert zurückgeben könnten, gäbe es für jedes Ereignis mehrere Rückgabewerte, allerdings stünde nur der Wert der zuletzt aufgerufenen Methode zur Verfügung.  
+ Event handler methods should not return a value. In the C# programming language, this is indicated by the return type `void`. An event handler can invoke multiple methods in multiple objects. If the methods were allowed to return a value, multiple return values would occur for each event, and only the value of the last method that was invoked would be available.  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, korrigieren Sie die Signatur, den Rückgabetyp oder die Parameternamen des Delegaten.  Einzelheiten hierzu finden Sie im folgenden Beispiel.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, correct the signature, return type, or parameter names of the delegate. For details, see the following example.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Unterdrücken Sie keine Warnung dieser Regel.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule.  
   
-## Beispiel  
- Im folgenden Beispiel zeigt einen Delegaten, der für die Behandlung von Ereignissen geeignet ist.  Die Methoden, die von diesem Ereignishandler aufgerufen werden können, entsprechen der in den Entwurfsrichtlinien angegebenen Signatur.  `AlarmEventHandler` ist der Typname des Delegaten.  `AlarmEventArgs` leitet sich von der Basisklasse für Ereignisdaten ab, <xref:System.EventArgs>, und hält Alarmereignisdaten zurück.  
+## <a name="example"></a>Example  
+ The following example shows a delegate that is suited to handling events. The methods that can be invoked by this event handler comply with the signature that is specified in the Design Guidelines. `AlarmEventHandler` is the type name of the delegate. `AlarmEventArgs` derives from the base class for event data, <xref:System.EventArgs>, and holds alarm event data.  
   
- [!code-cpp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CPP/ca1009-declare-event-handlers-correctly_1.cpp)]
- [!code-cs[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CSharp/ca1009-declare-event-handlers-correctly_1.cs)]
- [!code-vb[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/VisualBasic/ca1009-declare-event-handlers-correctly_1.vb)]  
+ [!code-cpp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CPP/ca1009-declare-event-handlers-correctly_1.cpp)] [!code-csharp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CSharp/ca1009-declare-event-handlers-correctly_1.cs)] [!code-vb[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/VisualBasic/ca1009-declare-event-handlers-correctly_1.vb)]  
   
-## Verwandte Regeln  
- [CA2109: Sichtbare Ereignishandler überprüfen](../code-quality/ca2109-review-visible-event-handlers.md)  
+## <a name="related-rules"></a>Related Rules  
+ [CA2109: Review visible event handlers](../code-quality/ca2109-review-visible-event-handlers.md)  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  <xref:System.EventArgs?displayProperty=fullName>   
  <xref:System.Object?displayProperty=fullName>   
- [Ereignisse und Delegaten](http://msdn.microsoft.com/de-de/d98fd58b-fa4f-4598-8378-addf4355a115)
+ [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115)

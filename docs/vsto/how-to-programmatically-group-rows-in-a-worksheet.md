@@ -1,69 +1,72 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Gruppieren von Zeilen in einem Arbeitsblatt"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Spalten [Office-Entwicklung in Visual Studio], Aufheben von Gruppierungen"
-  - "Gruppen"
-  - "Gruppen [Office-Entwicklung in Visual Studio], Löschen in Arbeitsblättern"
-  - "Gruppen, Erstellen in Arbeitsblättern"
-  - "Bereiche, Erstellen von Gruppen"
-  - "Zeilen [Office-Entwicklung in Visual Studio], Aufheben von Gruppierungen"
-  - "Arbeitsblätter, Löschen von Gruppen"
-  - "Arbeitsblätter, Erstellen von Gruppen"
-  - "Arbeitsblätter, Aufheben der Gruppierung von Zeilen und Spalten"
+title: 'How to: Programmatically Group Rows in a Worksheet | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- worksheets, creating groups
+- groups, creating in worksheets
+- ranges, creating groups
+- worksheets, clearing groups
+- groups
+- groups [Office development in Visual Studio], clearing in worksheets
+- worksheets, ungrouping rows and columns
+- rows [Office development in Visual Studio], ungrouping
+- columns [Office development in Visual Studio], ungrouping
 ms.assetid: 48037dca-35a2-4df2-918b-6a9f568fae91
 caps.latest.revision: 46
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 45
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 996904cfea85793c2359e6fc5264b8e8dd973024
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Gewusst wie: Programmgesteuertes Gruppieren von Zeilen in einem Arbeitsblatt
-  Sie können eine oder mehrere ganze Zeilen gruppieren.  Wenn Sie eine Gruppe in einem Arbeitsblatt erstellen möchten, verwenden Sie ein <xref:Microsoft.Office.Tools.Excel.NamedRange>\-Steuerelement oder ein systemeigenes Excel\-Bereichsobjekt.  
+# <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>How to: Programmatically Group Rows in a Worksheet
+  You can group one or more whole rows. To create a group in a worksheet, use a <xref:Microsoft.Office.Tools.Excel.NamedRange> control or a native Excel range object.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## Verwenden eines NamedRange\-Steuerelements  
- Wenn Sie einem Projekt auf Dokumentebene zur Entwurfszeit ein <xref:Microsoft.Office.Tools.Excel.NamedRange>\-Steuerelement hinzufügen, können Sie mithilfe des Steuerelements programmgesteuert eine Gruppe erstellen.  Das folgende Beispiel geht von drei <xref:Microsoft.Office.Tools.Excel.NamedRange>\-Steuerelementen im selben Arbeitsblatt aus: `data2001`, `data2002` und `dataAll`.  Jeder benannte Bereich verweist auf eine ganze Zeile im Arbeitsblatt.  
+## <a name="using-a-namedrange-control"></a>Using a NamedRange Control  
+ If you add a <xref:Microsoft.Office.Tools.Excel.NamedRange> control to a document-level project at design time, you can use the control to programmatically create a group. The following example assumes that there are three <xref:Microsoft.Office.Tools.Excel.NamedRange> controls on the same worksheet: `data2001`, `data2002`, and `dataAll`. Each named range refers to a whole row in the worksheet.  
   
-#### So erstellen Sie eine Gruppe von NamedRange\-Steuerelementen in einem Arbeitsblatt  
+#### <a name="to-create-a-group-of-namedrange-controls-on-a-worksheet"></a>To create a group of NamedRange controls on a worksheet  
   
-1.  Gruppieren Sie drei benannte Bereiche, indem Sie die <xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A>\-Methode der einzelnen Bereiche aufrufen.  Dieser Code muss in eine Sheet\-Klasse, nicht in die `ThisWorkbook`\-Klasse eingefügt werden.  
+1.  Group three named ranges by calling the <xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A> method of each range. This code must be placed in a sheet class, not in the `ThisWorkbook` class.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#32](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/CS/Sheet1.cs#32)]
-     [!code-vb[Trin_VstcoreExcelAutomation#32](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/VB/Sheet1.vb#32)]  
-  
-    > [!NOTE]  
-    >  Rufen Sie die <xref:Microsoft.Office.Tools.Excel.NamedRange.Ungroup%2A>\-Methode auf, um die Gruppierung von Zeilen aufzuheben.  
-  
-## Verwenden von systemeigenen Excel\-Bereichen  
- Der folgende Code geht von drei Excel\-Bereichen mit dem Namen `data2001`, `data2002` und `dataAll` in einem Arbeitsblatt aus.  
-  
-#### So erstellen Sie eine Gruppe von Excel\-Bereichen in einem Arbeitsblatt  
-  
-1.  Gruppieren Sie drei benannte Bereiche, indem Sie die <xref:Microsoft.Office.Interop.Excel.Range.Group%2A>\-Methode der einzelnen Bereiche aufrufen.  Das folgende Beispiel geht von drei <xref:Microsoft.Office.Interop.Excel.Range>\-Steuerelementen mit dem Namen `data2001`, `data2002` und `dataAll` im selben Arbeitsblatt aus.  Jeder benannte Bereich verweist auf eine ganze Zeile im Arbeitsblatt.  
-  
-     [!code-csharp[Trin_VstcoreExcelAutomation#33](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/CS/Sheet1.cs#33)]
-     [!code-vb[Trin_VstcoreExcelAutomation#33](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/VB/Sheet1.vb#33)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#32)]  [!code-vb[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#32)]  
   
     > [!NOTE]  
-    >  Rufen Sie die <xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A>\-Methode auf, um die Gruppierung von Zeilen aufzuheben.  
+    >  To ungroup rows, call the <xref:Microsoft.Office.Tools.Excel.NamedRange.Ungroup%2A> method.  
   
-## Siehe auch  
- [Arbeiten mit Arbeitsblättern](../vsto/working-with-worksheets.md)   
- [NamedRange-Steuerelement](../vsto/namedrange-control.md)   
- [Gewusst wie: Hinzufügen von NamedRange-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
- [Optionale Parameter in Office-Lösungen](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="using-native-excel-ranges"></a>Using Native Excel Ranges  
+ The code assumes that you have three Excel ranges named `data2001`, `data2002`, and `dataAll` on a worksheet.  
+  
+#### <a name="to-create-a-group-of-excel-ranges-in-a-worksheet"></a>To create a group of Excel ranges in a worksheet  
+  
+1.  Group three named ranges by calling the <xref:Microsoft.Office.Interop.Excel.Range.Group%2A> method of each range. The following example assumes that there are three <xref:Microsoft.Office.Interop.Excel.Range> controls named `data2001`, `data2002`, and `dataAll` on the same worksheet. Each named range refers to a whole row in the worksheet.  
+  
+     [!code-csharp[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#33)]  [!code-vb[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#33)]  
+  
+    > [!NOTE]  
+    >  To ungroup rows, call the <xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A> method.  
+  
+## <a name="see-also"></a>See Also  
+ [Working with Worksheets](../vsto/working-with-worksheets.md)   
+ [NamedRange Control](../vsto/namedrange-control.md)   
+ [How to: Add NamedRange Controls to Worksheets](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
+ [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
   
   

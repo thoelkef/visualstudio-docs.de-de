@@ -1,53 +1,69 @@
 ---
-title: "CA2134: Methoden m&#252;ssen beim &#220;berschreiben von Basismethoden eine konsistente Transparenz wahren | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2134"
+title: 'CA2134: Methods must keep consistent transparency when overriding base methods | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2134
 ms.assetid: 3b17e487-0326-442e-90e1-dc0ba9cdd3f2
 caps.latest.revision: 9
-caps.handback.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA2134: Methoden m&#252;ssen beim &#220;berschreiben von Basismethoden eine konsistente Transparenz wahren
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: d4ef9c4baadcdc6c26906664b24827948de1c5c9
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134: Methods must keep consistent transparency when overriding base methods
 |||  
 |-|-|  
 |TypeName|MethodsMustOverrideWithConsistentTransparency|  
 |CheckId|CA2134|  
-|Kategorie \(Category\)|Microsoft.Security|  
-|Unterbrechende Änderung|Breaking|  
+|Category|Microsoft.Security|  
+|Breaking Change|Breaking|  
   
-## Ursache  
- Diese Regel wird ausgelöst, wenn eine Methode, die mit dem <xref:System.Security.SecurityCriticalAttribute>\-Objekt markiert ist, eine Methode überschreibt, die transparent oder mit dem <xref:System.Security.SecuritySafeCriticalAttribute>\-Objekt markiert ist.  Die Regel wird auch ausgelöst, wenn eine Methode, die transparent ist oder mit dem <xref:System.Security.SecuritySafeCriticalAttribute>\-Objekt markiert ist, eine Methode überschreibt, die transparent oder mit dem <xref:System.Security.SecurityCriticalAttribute>\-Objekt markiert ist.  
+## <a name="cause"></a>Cause  
+ This rule fires when a method marked with the <xref:System.Security.SecurityCriticalAttribute> overrides a method that is transparent or marked with the <xref:System.Security.SecuritySafeCriticalAttribute>. The rule also fires when a method that is transparent or marked with the <xref:System.Security.SecuritySafeCriticalAttribute> overrides a method that is marked with a <xref:System.Security.SecurityCriticalAttribute>.  
   
- Die Regel wird angewendet, wenn eine virtuelle Methode überschrieben oder eine Schnittstelle implementiert wird.  
+ The rule is applied when overriding a virtual method or implementing an interface.  
   
-## Regelbeschreibung  
- Diese Regel wird für Versuche ausgelöst, die Sicherheitsbarrierefreiheit einer Methode weiter oben in der Vererbungskette zu ändern.  Wenn eine virtuelle Methode in einer Basisklasse z. B. transparent oder sicherheitsgeschützt ist, dann muss die abgeleitete Klasse sie mit einer transparenten oder sicherheitsgeschützten Methode überschreiben.  Umgekehrt, wenn das virtuelle Element sicherheitskritisch ist, muss die abgeleitete Klasse es mit einer sicherheitskritischen Methode überschreiben.  Die gleiche Regel gilt für das Implementieren von Schnittstellenmethoden.  
+## <a name="rule-description"></a>Rule Description  
+ This rule fires on attempts to change the security accessibility of a method further up the inheritance chain. For example, if a virtual method in a base class is transparent or safe-critical, then the derived class must override it with a transparent or safe-critical method. Conversely, if the virtual is security critical, the derived class must override it with a security critical method. The same rule applies for implementing interface methods.  
   
- Transparenzregeln werden erzwungen, wenn der Code JIT und nicht zur Laufzeit kompiliert wird, sodass die Transparenzberechnung keine dynamischen Typinformationen aufweist.  Daher muss das Ergebnis der Transparenzberechnung ausschließlich anhand der statischen Typen bestimmt werden können, die JIT\-kompiliert werden, und zwar unabhängig vom dynamischen Typ.  
+ Transparency rules are enforced when the code is JIT compiled instead of at runtime, so that the transparency calculation does not have dynamic type information. Therefore, the result of the transparency calculation must be able to be determined solely from the static types being JIT-compiled, regardless of the dynamic type.  
   
-## Behandeln von Verstößen  
- Um eine Verletzung dieser Regel zu korrigieren, ändern Sie die Transparenz der Methode, die eine virtuelle Methode überschreibt oder eine Schnittstelle implementiert, damit sie mit der Transparenz der virtuellen Methode oder der Schnittstellenmethode übereinstimmt.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, change the transparency of the method that is overriding a virtual method or implementing an interface to match the transparency of the virtual or interface method.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Unterdrücken Sie keine Warnung dieser Regel.  Verstöße gegen diese Regel führen zu einer Laufzeit <xref:System.TypeLoadException> für Assemblys, die Transparenz der Ebene 2 verwenden.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress warnings from this rule. Violations of this rule will result in a runtime <xref:System.TypeLoadException> for assemblies that use level 2 transparency.  
   
-## Beispiele  
+## <a name="examples"></a>Examples  
   
-### Code  
- [!code-cs[FxCop.Security.CA2134.MethodsMustOverrideWithConsistentTransparency#1](../code-quality/codesnippet/CSharp/ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods_1.cs)]  
+### <a name="code"></a>Code  
+ [!code-csharp[FxCop.Security.CA2134.MethodsMustOverrideWithConsistentTransparency#1](../code-quality/codesnippet/CSharp/ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods_1.cs)]  
   
-## Siehe auch  
- [Security\-Transparent Code, Level 2](../Topic/Security-Transparent%20Code,%20Level%202.md)
+## <a name="see-also"></a>See Also  
+ [Security-Transparent Code, Level 2](http://msdn.microsoft.com/Library/4d05610a-0da6-4f08-acea-d54c9d6143c0)

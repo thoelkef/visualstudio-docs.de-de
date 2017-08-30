@@ -1,98 +1,102 @@
 ---
-title: "Gewusst wie: &#196;ndern der Gr&#246;&#223;e von ListObject-Steuerelementen"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Steuerelemente [Office-Entwicklung in Visual Studio], Größenänderung"
-  - "ListObject-Steuerelement, Größenänderung"
+title: 'How to: Resize ListObject Controls | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- controls [Office development in Visual Studio], resizing
+- ListObject control, resizing
 ms.assetid: a4c7dceb-7b55-447e-9b88-c3596a2fc361
 caps.latest.revision: 50
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 46
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: df869317edc3a4bfecd9cc208c7434f82375088e
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Gewusst wie: &#196;ndern der Gr&#246;&#223;e von ListObject-Steuerelementen
-  Sie legen die Größe eines <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelements fest, wenn Sie es einer Microsoft Office Excel\-Arbeitsmappe hinzufügen. Möglicherweise möchten Sie dessen Größe jedoch zu einem späteren Zeitpunkt ändern. Beispielsweise könnte es sein, dass Sie eine zweispaltige Liste in eine dreispaltige Liste ändern möchten.  
+# <a name="how-to-resize-listobject-controls"></a>How to: Resize ListObject Controls
+  You set the size of a <xref:Microsoft.Office.Tools.Excel.ListObject> control when you add it to a Microsoft Office Excel workbook; however, you might want to resize it at a later time. For example, you might want to change a two-column list to three columns.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- Sie können die Größe eines <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelements in einem Projekt auf Dokumentebene zur Entwurfszeit oder zur Laufzeit ändern. Sie können die Größe eines <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelements in einem VSTO\-Add\-In\-Projekt zur Laufzeit ändern.  
+ You can resize <xref:Microsoft.Office.Tools.Excel.ListObject> controls at design time or at run time in document-level projects. You can resize <xref:Microsoft.Office.Tools.Excel.ListObject> controls at run time in an VSTO Add-in project.  
   
- In diesem Thema werden die folgenden Aufgaben beschrieben:  
+ This topic describes the following tasks:  
   
--   [Ändern der Größe eines ListObject\-Steuerelements zur Entwurfszeit](#designtime)  
+-   [Resizing ListObject controls at design time](#designtime)  
   
--   [Ändern der Größe eines ListObject\-Steuerelements zur Laufzeit in einem Projekt auf Dokumentebene](#runtimedoclevel)  
+-   [Resizing ListObject controls at run time in a document-level project](#runtimedoclevel)  
   
--   [Ändern der Größe eines ListObject\-Steuerelements zur Laufzeit in einem VSTO\-Add\-In\-Projekt](#runtimeaddin)  
+-   [Resizing ListObject controls at run time in an VSTO Add-in project](#runtimeaddin)  
   
- Weitere Informationen zu <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelementen finden Sie unter [ListObject-Steuerelement](../vsto/listobject-control.md).  
+ For more information about <xref:Microsoft.Office.Tools.Excel.ListObject> controls, see [ListObject Control](../vsto/listobject-control.md).  
   
- ![Link zu Video](~/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie unter [How Do I: Add Columns to a Data\-Bound List Object at RunTime?](http://go.microsoft.com/fwlink/?LinkID=130318).  
+ ![link to video](../vsto/media/playvideo.gif "link to video") For a related video demonstration, see [How Do I: Add Columns to a Data-Bound List Object at RunTime?](http://go.microsoft.com/fwlink/?LinkID=130318).  
   
-##  <a name="designtime"></a> Ändern der Größe eines ListObject\-Steuerelements zur Entwurfszeit  
- Sie können die Größe einer Liste ändern, indem Sie auf einen der Ziehpunkte klicken und diesen ziehen oder indem Sie die Größe im Dialogfeld **Größe der Liste ändern** neu definieren.  
+##  <a name="designtime"></a> Resizing a ListObject Control at Design Time  
+ To resize a list, you can click and drag one of the sizing handles, or you can redefine its size in the **Resize List** dialog box.  
   
-#### So ändern Sie die Größe einer Liste im Dialogfeld „Größe der Liste ändern“  
+#### <a name="to-resize-a-list-by-using-the-resize-list-dialog-box"></a>To resize a list by using the Resize List dialog box  
   
-1.  Klicken Sie mit der rechten Maustaste auf ein <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelement.  
   
-2.  Zeigen Sie im Kontextmenü auf **Liste**, und wählen Sie dann **Größe der Liste ändern** aus.  
+1.  Click anywhere in the  <xref:Microsoft.Office.Tools.Excel.ListObject> table. The **Table Tools, Design** tab in the ribbon appears.  
   
-3.  Wählen Sie die Zellen aus, anhand derer Sie die Größe der Liste definieren möchten.  
+2.  In the Properties section, click on **Resize Table**.  
+
+    ![VSTO_ResizeTable](../vsto/media/vsto-resizetable.png)
   
-4.  Klicken Sie auf **OK**.  
+3.  Select the new data range for your table.  
   
-##  <a name="runtimedoclevel"></a> Ändern der Größe eines ListObject\-Steuerelements zur Laufzeit in einem Projekt auf Dokumentebene  
- Sie können die Größe eines <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelements zur Laufzeit ändern, indem Sie die <xref:Microsoft.Office.Tools.Excel.ListObject.Resize%2A>\-Methode verwenden. Mit dieser Methode ist es jedoch nicht möglich, das <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelement auf eine neue Position auf dem Arbeitsblatt zu verschieben. Die Überschriften müssen in derselben Zeile bleiben, und das in der Größe geänderte <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelement muss das ursprüngliche Listenobjekt überlappen. Das in der Größe geänderte <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelement muss eine Überschriftenzeile und mindestens eine Zeile mit Daten enthalten.  
+4.  Click **OK**.  
   
-#### So ändern Sie die Größe eines Listenobjekts programmgesteuert  
+##  <a name="runtimedoclevel"></a> Resizing a ListObject Control at Run Time in a Document-Level Project  
+ You can resize a <xref:Microsoft.Office.Tools.Excel.ListObject> control at run time by using the <xref:Microsoft.Office.Tools.Excel.ListObject.Resize%2A> method. You cannot use this method to move the <xref:Microsoft.Office.Tools.Excel.ListObject> control to a new location on the worksheet. The headers must remain in the same row, and the resized <xref:Microsoft.Office.Tools.Excel.ListObject> control must overlap the original list object. The resized <xref:Microsoft.Office.Tools.Excel.ListObject> control must contain a header row, and at least one row of data.  
   
-1.  Erstellen Sie ein <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelement, das sich auf `Sheet1` über die Zellen **A1** bis **B3** erstreckt.  
+#### <a name="to-resize-a-list-object-programmatically"></a>To resize a list object programmatically  
   
-     [!code-csharp[Trin_VstcoreHostControlsExcel#6](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreHostControlsExcel/CS/Sheet1.cs#6)]
-     [!code-vb[Trin_VstcoreHostControlsExcel#6](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreHostControlsExcel/VB/Sheet1.vb#6)]  
+1.  Create a <xref:Microsoft.Office.Tools.Excel.ListObject> control that spans cell **A1** through **B3** on `Sheet1`.  
   
-2.  Ändern Sie die Größe der Liste, sodass sie die Zellen **A1** bis **C5** umfasst.  
+     [!code-csharp[Trin_VstcoreHostControlsExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#6)]  [!code-vb[Trin_VstcoreHostControlsExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#6)]  
   
-     [!code-csharp[Trin_VstcoreHostControlsExcel#7](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreHostControlsExcel/CS/Sheet1.cs#7)]
-     [!code-vb[Trin_VstcoreHostControlsExcel#7](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreHostControlsExcel/VB/Sheet1.vb#7)]  
+2.  Resize the list to include cells **A1** through **C5**.  
   
-##  <a name="runtimeaddin"></a> Ändern der Größe eines ListObject zur Laufzeit in einem VSTO\-Add\-In\-Projekt  
- Sie können die Größe eines <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelements in jedem beliebigen geöffneten Arbeitsblatt zur Laufzeit ändern. Weitere Informationen zum Hinzufügen eines <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelements zu einem Arbeitsblatt mit einem VSTO\-Add\-In finden Sie unter [Gewusst wie: Hinzufügen von ListObject-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-listobject-controls-to-worksheets.md).  
+     [!code-csharp[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#7)]  [!code-vb[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#7)]  
   
-#### So ändern Sie die Größe eines Listenobjekts programmgesteuert  
+##  <a name="runtimeaddin"></a> Resizing a ListObject at Run Time in an VSTO Add-in project  
+ You can resize a <xref:Microsoft.Office.Tools.Excel.ListObject> control on any open worksheet at run time. For more information about how to add a <xref:Microsoft.Office.Tools.Excel.ListObject> control to a worksheet by using an VSTO Add-in, see [How to: Add ListObject Controls to Worksheets](../vsto/how-to-add-listobject-controls-to-worksheets.md).  
   
-1.  Erstellen Sie ein <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelement, das sich auf `Sheet1` über die Zellen **A1** bis **B3** erstreckt.  
+#### <a name="to-resize-a-list-object-programmatically"></a>To resize a list object programmatically  
   
-     [!code-csharp[Trin_Excel_Dynamic_Controls#12](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Excel_Dynamic_Controls/CS/ThisAddIn.cs#12)]
-     [!code-vb[Trin_Excel_Dynamic_Controls#12](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Excel_Dynamic_Controls/VB/ThisAddIn.vb#12)]  
+1.  Create a <xref:Microsoft.Office.Tools.Excel.ListObject> control that spans cell **A1** through **B3** on `Sheet1`.  
   
-2.  Ändern Sie die Größe der Liste, sodass sie die Zellen **A1** bis **C5** umfasst.  
+     [!code-csharp[Trin_Excel_Dynamic_Controls#12](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#12)]  [!code-vb[Trin_Excel_Dynamic_Controls#12](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#12)]  
   
-     [!code-csharp[Trin_Excel_Dynamic_Controls#13](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Excel_Dynamic_Controls/CS/ThisAddIn.cs#13)]
-     [!code-vb[Trin_Excel_Dynamic_Controls#13](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Excel_Dynamic_Controls/VB/ThisAddIn.vb#13)]  
+2.  Resize the list to include cells **A1** through **C5**.  
   
-## Siehe auch  
- [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
- [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)   
- [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Übersicht über Hostelemente und Hoststeuerelemente](../vsto/host-items-and-host-controls-overview.md)   
- [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md)   
- [ListObject-Steuerelement](../vsto/listobject-control.md)   
- [Gewusst wie: Hinzufügen von ListObject-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
- [Gewusst wie: Ändern der Größe von Bookmark-Steuerelementen](../vsto/how-to-resize-bookmark-controls.md)   
- [Gewusst wie: Ändern der Größe von NamedRange-Steuerelementen](../vsto/how-to-resize-namedrange-controls.md)  
+     [!code-csharp[Trin_Excel_Dynamic_Controls#13](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#13)]  [!code-vb[Trin_Excel_Dynamic_Controls#13](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#13)]  
+  
+## <a name="see-also"></a>See Also  
+ [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
+ [Controls on Office Documents](../vsto/controls-on-office-documents.md)   
+ [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)   
+ [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [Automating Excel by Using Extended Objects](../vsto/automating-excel-by-using-extended-objects.md)   
+ [ListObject Control](../vsto/listobject-control.md)   
+ [How to: Add ListObject Controls to Worksheets](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
+ [How to: Resize Bookmark Controls](../vsto/how-to-resize-bookmark-controls.md)   
+ [How to: Resize NamedRange Controls](../vsto/how-to-resize-namedrange-controls.md)  
   
   

@@ -1,78 +1,92 @@
 ---
-title: "CA1816: GC.SuppressFinalize korrekt aufrufen | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1816"
-  - "DisposeMethodsShouldCallSuppressFinalize"
-helpviewer_keywords: 
-  - "CA1816"
-  - "DisposeMethodsShouldCallSuppressFinalize"
+title: 'CA1816: Call GC.SuppressFinalize correctly | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1816
+- DisposeMethodsShouldCallSuppressFinalize
+helpviewer_keywords:
+- DisposeMethodsShouldCallSuppressFinalize
+- CA1816
 ms.assetid: 47915fbb-103f-4333-b157-1da16bf49660
 caps.latest.revision: 19
-caps.handback.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA1816: GC.SuppressFinalize korrekt aufrufen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 43f0cf6749b6ad7a329f814aa9fbb19658912af9
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816: Call GC.SuppressFinalize correctly
 |||  
 |-|-|  
 |TypeName|CallGCSuppressFinalizeCorrectly|  
 |CheckId|CA1816|  
-|Kategorie \(Category\)|Microsoft  Verwendung|  
-|Unterbrechende Änderung|Nicht unterbrechend|  
+|Category|Microsoft. Usage|  
+|Breaking Change|Non Breaking|  
   
-## Ursache  
+## <a name="cause"></a>Cause  
   
--   Eine Methode, die eine Implementierung von <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> ist, ruft <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> nicht auf.  
+-   A method that is an implementation of <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> does not call <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.  
   
--   Eine Methode, die keine Implementierung von <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> ist, ruft <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> auf.  
+-   A method that is not an implementation of <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> calls <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.  
   
--   Eine Methode ruft <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> und gibt etwas anderes als dies aus \(Me in Visual Basic\).  
+-   A method calls <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> and passes something other than this (Me in Visual Basic).  
   
-## Regelbeschreibung  
- Mit der <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>\-Methode können die Benutzer Ressourcen jederzeit freigeben, bevor das Objekt für die Garbage Collection verfügbar wird.  Wenn die <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>\-Methode aufgerufen wird, werden Ressourcen des Objekts freigegeben.  Dies macht einen Abschluss unnötig.  <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> sollte <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> aufrufen, damit der Garbage Collector nicht den Finalizer des Objekts aufruft.  
+## <a name="rule-description"></a>Rule Description  
+ The <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> method lets users release resources at any time before the object becoming available for garbage collection. If the <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> method is called, it frees resources of the object. This makes finalization unnecessary. <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> should call <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> so the garbage collector does not call the finalizer of the object.  
   
- Um zu verhindern, dass abgeleitete Typen mit Finalizern [System.IDisposable](assetId:///System.IDisposable?qualifyHint=True&autoUpgrade=False) erneut implementieren und aufrufen müssen, sollten unversiegelte Typen ohne Finalizer dennoch <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> aufrufen.  
+ To prevent derived types with finalizers from having to re-implement <xref:System.IDisposable> and to call it, unsealed types without finalizers should still call <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.  
   
-## Behandeln von Verstößen  
- So korrigieren Sie einen Verstoß dieser Regel:  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule:  
   
- Wenn die Methode eine Implementierung von <xref:System.IDisposable.Dispose%2A> ist, fügen Sie einen Aufruf von <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> hinzu.  
+ If the method is an implementation of <xref:System.IDisposable.Dispose%2A>, add a call to <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.  
   
- Wenn die Methode keine Implementierung von <xref:System.IDisposable.Dispose%2A> ist, entfernen Sie den Aufruf von <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>, oder verschieben Sie ihn in die Implementierung von <xref:System.IDisposable.Dispose%2A> des Typs.  
+ If the method is not an implementation of <xref:System.IDisposable.Dispose%2A>, either remove the call to <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> or move it to the type's <xref:System.IDisposable.Dispose%2A> implementation.  
   
- Ändern Sie alle Aufrufe in <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>, sodass sie dies \(Me in Visual Basic\) übergeben.  
+ Change all calls to <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> to pass this (Me in Visual Basic).  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Unterdrücken Sie eine Warnung dieser Regel nur, wenn Sie <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> zur Steuerung der Lebensdauer anderer Objekte verwenden möchten.  Unterdrücken Sie keine Warnung dieser Regel, wenn eine Implementierung von <xref:System.IDisposable.Dispose%2A> nicht <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> aufruft.  Wird der Abschluss nicht unterdrückt, beeinträchtigt dies die Leistung, sodass sich keine Vorteile ergeben.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Only suppress a warning from this rule if you are deliberating using <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> to control the lifetime of other objects. Do not suppress a warning from this rule if an implementation of <xref:System.IDisposable.Dispose%2A> does not call <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>. In this situation, failing to suppress finalization degrades performance and provide no benefits.  
   
-## Beispiel  
- Im folgenden Beispiel wird eine Methode veranschaulicht, die nicht korrekt <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> aufruft.  
+## <a name="example"></a>Example  
+ The following example shows a method that incorrectly calls <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.  
   
- [!code-vb[FxCop.Usage.CallGCSuppressFinalizeCorrectly#1](../code-quality/codesnippet/VisualBasic/ca1816-call-gc-suppressfinalize-correctly_1.vb)]
- [!code-cs[FxCop.Usage.CallGCSuppressFinalizeCorrectly#1](../code-quality/codesnippet/CSharp/ca1816-call-gc-suppressfinalize-correctly_1.cs)]  
+ [!code-vb[FxCop.Usage.CallGCSuppressFinalizeCorrectly#1](../code-quality/codesnippet/VisualBasic/ca1816-call-gc-suppressfinalize-correctly_1.vb)] [!code-csharp[FxCop.Usage.CallGCSuppressFinalizeCorrectly#1](../code-quality/codesnippet/CSharp/ca1816-call-gc-suppressfinalize-correctly_1.cs)]  
   
-## Beispiel  
- Im folgenden Beispiel wird eine Methode veranschaulicht, die ordnungsgemäß <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> aufruft.  
+## <a name="example"></a>Example  
+ The following example shows a method that correctly calls <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.  
   
- [!code-vb[FxCop.Usage.CallGCSuppressFinalizeCorrectly2#1](../code-quality/codesnippet/VisualBasic/ca1816-call-gc-suppressfinalize-correctly_2.vb)]
- [!code-cs[FxCop.Usage.CallGCSuppressFinalizeCorrectly2#1](../code-quality/codesnippet/CSharp/ca1816-call-gc-suppressfinalize-correctly_2.cs)]  
+ [!code-vb[FxCop.Usage.CallGCSuppressFinalizeCorrectly2#1](../code-quality/codesnippet/VisualBasic/ca1816-call-gc-suppressfinalize-correctly_2.vb)] [!code-csharp[FxCop.Usage.CallGCSuppressFinalizeCorrectly2#1](../code-quality/codesnippet/CSharp/ca1816-call-gc-suppressfinalize-correctly_2.cs)]  
   
-## Verwandte Regeln  
- [CA2215: Dispose\-Methoden müssen die Dispose\-Funktion der Basisklasse aufrufen](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)  
+## <a name="related-rules"></a>Related Rules  
+ [CA2215: Dispose methods should call base class dispose](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)  
   
- [CA2216: Verwerfbare Typen sollten einen Finalizer deklarieren](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)  
+ [CA2216: Disposable types should declare finalizer](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)  
   
-## Siehe auch  
- [Dispose\-Muster](../Topic/Dispose%20Pattern.md)
+## <a name="see-also"></a>See Also  
+ [Dispose Pattern](/dotnet/standard/design-guidelines/dispose-pattern)

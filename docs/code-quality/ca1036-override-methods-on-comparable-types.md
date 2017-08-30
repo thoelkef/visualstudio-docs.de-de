@@ -1,70 +1,87 @@
 ---
-title: "CA1036: Methoden bei vergleichbaren Typen &#252;berschreiben | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1036"
-  - "OverrideMethodsOnComparableTypes"
-helpviewer_keywords: 
-  - "OverrideMethodsOnComparableTypes"
-  - "CA1036"
+title: 'CA1036: Override methods on comparable types | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1036
+- OverrideMethodsOnComparableTypes
+helpviewer_keywords:
+- OverrideMethodsOnComparableTypes
+- CA1036
 ms.assetid: 2329f844-4cb8-426d-bee2-cd065d1346d0
 caps.latest.revision: 21
-caps.handback.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA1036: Methoden bei vergleichbaren Typen &#252;berschreiben
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: ed53ab63b1f56e9e3389bc6e8369adcba10445df
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: Override methods on comparable types
 |||  
 |-|-|  
 |TypeName|OverrideMethodsOnComparableTypes|  
 |CheckId|CA1036|  
-|Kategorie \(Category\)|Microsoft.Design|  
-|Unterbrechende Änderung|Nicht unterbrechend|  
+|Category|Microsoft.Design|  
+|Breaking Change|Non-breaking|  
   
-## Ursache  
- Von einem öffentlichen oder geschützten Typ wird die <xref:System.IComparable?displayProperty=fullName>\-Schnittstelle implementiert. <xref:System.Object.Equals%2A?displayProperty=fullName> wird jedoch nicht überschrieben, bzw. die sprachspezifischen Operatoren für Gleichheit, Ungleichheit, Kleiner als oder Größer als werden nicht überladen.  Die Regel meldet keinen Verstoß, wenn der Typ nur eine Implementierung der Schnittstelle erbt.  
+## <a name="cause"></a>Cause  
+ A public or protected type implements the <xref:System.IComparable?displayProperty=fullName> interface and does not override <xref:System.Object.Equals%2A?displayProperty=fullName> or does not overload the language-specific operator for equality, inequality, less than, or greater than. The rule does not report a violation if the type inherits only an implementation of the interface.  
   
-## Regelbeschreibung  
- Typen, die eine benutzerdefinierte Sortierreihenfolge definieren, implementieren die <xref:System.IComparable>\-Schnittstelle.  Die <xref:System.IComparable.CompareTo%2A>\-Methode gibt einen Ganzzahlwert zurück, der die richtige Sortierreihenfolge für zwei Instanzen des Typs angibt.  Diese Regel identifiziert Typen, die eine Sortierreihenfolge festlegen. Dies impliziert, dass die gewöhnliche Bedeutung von Gleichheit, Ungleichheit, kleiner als und größer als nicht gilt.  Wenn Sie eine Implementierung von <xref:System.IComparable> angeben, muss in der Regel auch <xref:System.Object.Equals%2A> überschrieben werden, damit Werte zurückgegeben werden, die mit <xref:System.IComparable.CompareTo%2A> konsistent sind.  Wenn Sie <xref:System.Object.Equals%2A> überschreiben und den Programmcode in einer Sprache schreiben, die Operatorüberladungen unterstützt, müssen Sie auch Operatoren angeben, die mit <xref:System.Object.Equals%2A> konsistent sind.  
+## <a name="rule-description"></a>Rule Description  
+ Types that define a custom sort order implement the <xref:System.IComparable> interface. The <xref:System.IComparable.CompareTo%2A> method returns an integer value that indicates the correct sort order for two instances of the type. This rule identifies types that set a sort order; this implies that the ordinary meaning of equality, inequality, less than, and greater than do not apply. When you provide an implementation of <xref:System.IComparable>, you must usually also override <xref:System.Object.Equals%2A> so that it returns values that are consistent with <xref:System.IComparable.CompareTo%2A>. If you override <xref:System.Object.Equals%2A> and are coding in a language that supports operator overloads, you should also provide operators that are consistent with <xref:System.Object.Equals%2A>.  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu korrigieren, überschreiben Sie <xref:System.Object.Equals%2A>.  Wenn die Programmiersprache das Überladen von Operatoren unterstützt, geben Sie die folgenden Operatoren an:  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, override <xref:System.Object.Equals%2A>. If your programming language supports operator overloading, supply the following operators:  
   
--   op\_Equality  
+-   op_Equality  
   
--   op\_Inequality  
+-   op_Inequality  
   
--   op\_LessThan  
+-   op_LessThan  
   
--   op\_GreaterThan  
+-   op_GreaterThan  
   
- In C\# sind die Token, die verwendet werden, um anzuzeigen, diese Operatoren, wie folgt: \=\=\! \=, \<und \>.  
+ In C#, the tokens that are used to represent these operators are as follows: ==, !=, \<, and >.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Eine Warnung dieser Regel kann gefahrlos unterdrückt werden, wenn der Verstoß durch fehlende Operatoren verursacht wird und die Programmiersprache das Überladen von Operatoren nicht unterstützt, wie dies bei Visual Basic .NET der Fall ist.  Es ist auch sicher, eine Warnung für diese Regel zu unterdrücken, wenn sie bei anderen Gleichheitsoperatoren als op\_Equality ausgelöst wird, falls Sie entscheiden, dass eine Implementierung der Operatoren im Anwendungskontext keinen Sinn ergibt.  Sie sollten jedoch immer op\_Equality und den \=\=\-Operator überschreiben, wenn Sie Object.Equals überschreiben.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule when the violation is caused by missing operators and your programming language does not support operator overloading, as is the case with Visual Basic .NET. It is also safe to suppress a warning for from this rule when it fires on equality operators other than op_Equality if you determine that implementing the operators does not make sense in your application context. However, you should always over op_Equality and the == operator if you override Object.Equals.  
   
-## Beispiel  
- Das folgende Beispiel enthält einen Typ, von dem <xref:System.IComparable> ordnungsgemäß implementiert wird.  Codekommentare identifizieren die Methoden, die verschiedenen Regeln entsprechen, die sich auf <xref:System.Object.Equals%2A> und auf die <xref:System.IComparable>\-Schnittstelle beziehen.  
+## <a name="example"></a>Example  
+ The following example contains a type that correctly implements <xref:System.IComparable>. Code comments identify the methods that satisfy various rules that are related to <xref:System.Object.Equals%2A> and the <xref:System.IComparable> interface.  
   
- [!code-cs[FxCop.Design.IComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_1.cs)]  
+ [!code-csharp[FxCop.Design.IComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_1.cs)]  
   
-## Beispiel  
- Die folgende Anwendung testet das Verhalten der weiter oben dargestellten <xref:System.IComparable>\-Implementierung.  
+## <a name="example"></a>Example  
+ The following application tests the behavior of the <xref:System.IComparable> implementation that was shown earlier.  
   
- [!code-cs[FxCop.Design.TestIComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_2.cs)]  
+ [!code-csharp[FxCop.Design.TestIComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_2.cs)]  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  <xref:System.IComparable?displayProperty=fullName>   
  <xref:System.Object.Equals%2A?displayProperty=fullName>   
- [Gleichheitsoperatoren](../Topic/Equality%20Operators.md)
+ [Equality Operators](/dotnet/standard/design-guidelines/equality-operators)

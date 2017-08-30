@@ -1,50 +1,67 @@
 ---
-title: "CA1500: Variablennamen sollten nicht mit Feldnamen &#252;bereinstimmen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VariableNamesShouldNotMatchFieldNames"
-  - "CA1500"
-helpviewer_keywords: 
-  - "VariableNamesShouldNotMatchFieldNames"
-  - "CA1500"
+title: 'CA1500: Variable names should not match field names | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VariableNamesShouldNotMatchFieldNames
+- CA1500
+helpviewer_keywords:
+- VariableNamesShouldNotMatchFieldNames
+- CA1500
 ms.assetid: fa0e5029-79e9-4a33-8576-787ac3c26c39
 caps.latest.revision: 24
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 24
----
-# CA1500: Variablennamen sollten nicht mit Feldnamen &#252;bereinstimmen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 1ca10e7738f912d677488264cbea2a5f4f58390c
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500: Variable names should not match field names
 |||  
 |-|-|  
 |TypeName|VariableNamesShouldNotMatchFieldNames|  
 |CheckId|CA1500|  
-|Kategorie \(Category\)|Microsoft.Maintainability|  
-|Unterbrechende Änderung|Wenn für einen Parameter ausgelöst, der über den gleichen Namen wie ein Feld verfügt:<br /><br /> -   Nicht unterbrechend – Wenn weder das Feld noch die Methode, durch die der Parameter deklariert wird, außerhalb der Assembly sichtbar sind, und zwar unabhängig von der vorgenommenen Änderung.<br />-   Unterbrechend – Wenn Sie den Feldnamen ändern und das Feld außerhalb der Assembly sichtbar ist.<br />-   Unterbrechend – Wenn Sie den Parameternamen ändern und die Methode, durch die er deklariert wird, außerhalb der Assembly sichtbar ist.<br /><br /> Wenn für eine lokale Variable ausgelöst, die den gleichen Namen wie ein Feld hat:<br /><br /> -   Nicht unterbrechend – Wenn das Feld außerhalb der Assembly nicht sichtbar ist, und zwar unabhängig von der vorgenommenen Änderung.<br />-   Nicht unterbrechend – Wenn Sie zwar den Namen der lokalen Variablen, nicht aber den Feldnamen ändern.<br />-   Unterbrechend – Wenn Sie den Feldnamen ändern und das Feld außerhalb der Assembly sichtbar ist.|  
+|Category|Microsoft.Maintainability|  
+|Breaking Change|When fired on a parameter that has the same name as a field:<br /><br /> -   Non-breaking - If both the field and method that declares the parameter cannot be seen outside the assembly, regardless of the change you make.<br />-   Breaking - If you change the name of the field and can be seen outside the assembly.<br />-   Breaking - If you change the name of the parameter and the method that declares it can be seen outside the assembly.<br /><br /> When fired on a local variable that has the same name as a field:<br /><br /> -   Non-breaking - If the field cannot be seen outside the assembly, regardless of the change you make.<br />-   Non-breaking - If you change the name of the local variable and do not change the name of the field.<br />-   Breaking - If you change the name of the field and it can be seen outside the assembly.|  
   
-## Ursache  
- Mit einer Instanzenmethode wird ein Parameter oder eine lokale Variable deklariert, dessen bzw. deren Name mit dem Namen eines Instanzenfelds des deklarierenden Typs übereinstimmt.  Um lokale Variablen, die gegen die Regel verstoßen, abzufangen, muss die getestete Assembly mit Debuginformationen erstellt werden, und die zugehörige Programmdatenbankdatei \(PDB\) muss verfügbar sein.  
+## <a name="cause"></a>Cause  
+ An instance method declares a parameter or a local variable whose name matches an instance field of the declaring type. To catch local variables that violate the rule, the tested assembly must be built by using debugging information and the associated program database (.pdb) file must be available.  
   
-## Regelbeschreibung  
- Wenn der Name eines Instanzenfelds mit dem Namen eines Parameters oder einer lokalen Variablen übereinstimmt, wird im Methodentext mit dem `this`\-Schlüsselwort \(`Me` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]\) auf das Instanzenfeld zugegriffen.  Bei der Codeverwaltung gerät dieser Unterschied leicht in Vergessenheit, und dann wird häufig angenommen, dass sich der Parameter bzw. die lokale Variable auf das Instanzenfeld bezieht, wodurch Fehler entstehen.  Dies gilt besonders für lange Methodentexte.  
+## <a name="rule-description"></a>Rule Description  
+ When the name of an instance field matches a parameter or a local variable name, the instance field is accessed by using the `this` (`Me` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) keyword when inside the method body. When maintaining code, it is easy to forget this difference and assume that the parameter/local variable refers to the instance field, which leads to errors. This is true especially for lengthy method bodies.  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, benennen Sie entweder den Parameter\/die Variable oder das Feld um.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, rename either the parameter/variable or the field.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Unterdrücken Sie keine Warnung dieser Regel.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule.  
   
-## Beispiel  
- Im folgenden Beispiel werden zwei Verstöße gegen diese Regel veranschaulicht.  
+## <a name="example"></a>Example  
+ The following example shows two violations of the rule.  
   
- [!code-vb[FxCop.Maintainability.VarMatchesField#1](../code-quality/codesnippet/VisualBasic/ca1500-variable-names-should-not-match-field-names_1.vb)]
- [!code-cs[FxCop.Maintainability.VarMatchesField#1](../code-quality/codesnippet/CSharp/ca1500-variable-names-should-not-match-field-names_1.cs)]
+ [!code-vb[FxCop.Maintainability.VarMatchesField#1](../code-quality/codesnippet/VisualBasic/ca1500-variable-names-should-not-match-field-names_1.vb)] [!code-csharp[FxCop.Maintainability.VarMatchesField#1](../code-quality/codesnippet/CSharp/ca1500-variable-names-should-not-match-field-names_1.cs)]

@@ -1,138 +1,142 @@
 ---
-title: "&#220;bersicht &#252;ber die Multifunktionsleiste"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Benutzerdefiniertes Menüband, Mehrere Multifunktionsleisten"
-  - "Anpassen des Menübands, Mehrere Multifunktionsleisten"
-  - "Menüband [Office-Entwicklung in Visual Studio]"
-  - "Menüband [Office-Entwicklung in Visual Studio], Informationen zur Multifunktionsleiste"
-  - "Menüband [Office-Entwicklung in Visual Studio], Mehrere Multifunktionsleisten"
-  - "Symbolleisten [Office-Entwicklung in Visual Studio]"
-  - "Symbolleisten [Office-Entwicklung in Visual Studio], Menüband"
+title: Ribbon Overview | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- customizing the Ribbon, multiple Ribbons
+- Ribbon [Office development in Visual Studio], about Ribbon
+- toolbars [Office development in Visual Studio], Ribbon
+- Ribbon [Office development in Visual Studio]
+- Ribbon [Office development in Visual Studio], multiple Ribbons
+- toolbars [Office development in Visual Studio]
+- custom Ribbon, multiple Ribbons
 ms.assetid: 2bdef092-190d-47e3-9440-e862b95dacaa
 caps.latest.revision: 64
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 62
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 4335f1f397d8497ca0aaa359e443b823d7441dbe
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# &#220;bersicht &#252;ber die Multifunktionsleiste
-  Das Menüband dient zum Organisieren verwandter Befehle, damit sie leichter zu finden sind.  Befehle werden als Steuerelemente auf dem Menüband angezeigt.  Steuerelemente sind in *Gruppen* entlang einer horizontalen Leiste am oberen Rand des Anwendungsfensters organisiert.  Verwandte Gruppen sind auf Registerkarten organisiert.  
+# <a name="ribbon-overview"></a>Ribbon Overview
+  The Ribbon is a way to organize related commands so that they are easier to find. Commands appear as controls on the Ribbon. Controls are organized into *groups* along a horizontal strip at the top edge of an application window. Related groups are organized on tabs.  
   
- Auf die meisten Features, auf die in früheren Versionen von Microsoft Office System über die Menüs und Symbolleisten zugegriffen wurde, kann jetzt über das Menüband zugegriffen werden.  Weitere Informationen finden Sie im technischen Artikel [Entwicklerübersicht der Benutzeroberfläche für 2007 Microsoft Office System](http://go.microsoft.com/fwlink/?LinkID=70860).  
+ Most of the features that were accessed by using menus and toolbars in earlier versions of the Microsoft Office system can now be accessed by using the Ribbon. For more information, see the technical article [Developer Overview of the User Interface for the 2007 Microsoft Office System](http://go.microsoft.com/fwlink/?LinkID=70860).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
-## Anpassen des Microsoft Office\-Menübands  
- Fügen Sie Ihrem Office\-Projekt zum Anpassen des Menübands eines der folgenden Menübandelemente hinzu:  
+## <a name="customizing-the-microsoft-office-ribbon"></a>Customizing the Microsoft Office Ribbon  
+ To customize the Ribbon, add one of the following Ribbon items to your Office project:  
   
--   **Menüband \(Visueller Designer\)**  
+-   **Ribbon (Visual Designer)**  
   
--   **Menüband \(XML\)**  
+-   **Ribbon (XML)**  
   
- Zum Anpassen des Excel\-Menübands fügen Sie dem Excel\-VSTO\-Add\-In\-Projekt beispielsweise ein Menübandelement hinzu.  
+ For example, to customize the Excel Ribbon, add a Ribbon item to an Excel VSTO Add-in project.  
   
-### Element "Menüband \(Visueller Designer\)"  
- Das Element **Menüband \(Visueller Designer\)** verfügt über erweiterte Tools, die Ihnen den Entwurf und die Entwicklung benutzerdefinierter Menübänder erleichtern.  Verwenden Sie das Element **Menüband \(Visueller Designer\)**, um das Menüband auf folgende Weisen anzupassen:  
+### <a name="ribbon-visual-designer-item"></a>Ribbon (Visual Designer) Item  
+ The **Ribbon (Visual Designer)** item provides advanced tools that make it easier for you to design and develop a custom Ribbon. Use the **Ribbon (Visual Designer)** item to customize the Ribbon in the following ways:  
   
--   Fügen Sie einem Menüband benutzerdefinierte oder integrierte Registerkarten hinzu.  
+-   Add custom or built-in tabs to a Ribbon.  
   
--   Fügen Sie einer benutzerdefinierten oder integrierten Registerkarte benutzerdefinierte Gruppen hinzu.  
-  
-    > [!NOTE]  
-    >  Eine integrierte Registerkarte oder Gruppe ist ein Element, das sich bereits auf dem Menüband einer Microsoft Office\-Anwendung befindet.  Die Registerkarte **Daten** ist z. B. eine integrierte Registerkarte in Excel.  Die Gruppe **Verbindungen** ist eine integrierte Gruppe auf der Registerkarte **Daten**.  
-  
--   Fügen Sie einer benutzerdefinierten Gruppe benutzerdefinierte Steuerelemente hinzu.  
-  
--   Fügen Sie der Backstage\-Ansicht benutzerdefinierte Steuerelemente hinzu.  
-  
- Weitere Informationen zum Anpassen eines Menübands mithilfe des Elements **Menüband \(Visueller Designer\)** finden Sie unter [Multifunktionsleisten-Designer](../vsto/ribbon-designer.md).  
-  
-### Element "Menüband \(XML\)"  
- Verwenden Sie das Element **Menüband \(XML\)**, wenn Sie das Menüband auf eine Weise anpassen möchten, die vom Element **Menüband \(Visueller Designer\)** nicht unterstützt wird.  Verwenden Sie das Element **Menüband \(XML\)**, um das Menüband auf folgende Weisen anzupassen:  
-  
--   Fügen Sie einer benutzerdefinierten oder integrierten Registerkarte eigene *Gruppen* hinzu.  
-  
--   Fügen Sie einer benutzerdefinierten Gruppe integrierte Steuerelemente hinzu.  
-  
--   Fügen Sie benutzerdefinierten Code hinzu, um die Ereignishandler integrierter Steuerelemente zu überschreiben.  
-  
--   Passen Sie die Symbolleiste für den Schnellzugriff an.  
-  
--   Geben Sie eine Menübandanpassung zwischen VSTO\-Add\-Ins mithilfe einer qualifizierten ID frei.  
-  
- Weitere Informationen zum Anpassen eines Menübands mithilfe des Elements **Menüband \(XML\)** finden Sie unter [Multifunktionsleisten-XML](../vsto/ribbon-xml.md).  
-  
-## Exportieren eines Menübands vom Menüband\-Designer in "Menüband \(XML\)"  
- Wenn Sie ein Menüband mithilfe des Menüband\-Designers erstellen und dann entscheiden, dass Sie das Menüband auf eine Weise anpassen möchten, die vom Element **Menüband \(Visueller Designer\)** nicht unterstützt wird, können Sie das Menüband nach XML exportieren.  
-  
- Visual Studio erstellt automatisch ein Element **Menüband \(XML\)** und füllt die Datei "Menüband \(XML\)" mit Elementen und Attributen für jedes Steuerelement auf dem Menüband auf.  
-  
- Nicht alle Eigenschaften im Fenster **Eigenschaften** des Menüband\-Designers werden in die Datei "Menüband \(XML\)" übertragen.  Von Visual Studio wird der Wert der **Image**\- oder **Text**\-Eigenschaft beispielsweise nicht übertragen.  Hierfür müssen Sie eine Rückrufmethode in der Menüband\-Codedatei des exportierten Projekts erstellen, um ein Bild zuzuweisen oder den Text eines Steuerelements festzulegen.  Visual Studio generiert im Rahmen des Exportvorgangs keine automatischen Rückrufmethoden.  
-  
- Darüber hinaus werden alle nicht geänderten Standardeigenschaftswerte nicht in der resultierenden Menüband\-XML\-Datei angezeigt.  
-  
- Weitere Informationen zum Exportieren des Menübands nach XML finden Sie unter [Gewusst wie: Exportieren einer Multifunktionsleiste aus dem Multifunktionsleisten-Designer in Multifunktionsleisten-XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).  
-  
-### Aktualisieren des Codes  
- Eine neue Menüband\-Codedatei wird dem **Projektmappen\-Explorer** hinzugefügt.  Diese Datei enthält die Menüband\-XML\-Klasse.  Sie müssen Rückrufmethoden im `Ribbon Callbacks`\-Bereich dieser Klasse erstellen, um Benutzeraktionen wie das Klicken auf eine Schaltfläche zu behandeln.  Verschieben Sie den Code aus den Ereignishandlern in die Rückrufmethoden, und ändern Sie den Code, damit er mit dem Programmmodell für die Menübanderweiterung \(RibbonX\) verwendet werden kann.  Weitere Informationen finden Sie unter [Multifunktionsleisten-XML](../vsto/ribbon-xml.md).  
-  
- Sie müssen den Code auch den Klassen `ThisAddIn`, `ThisWorkbook` oder `ThisDocument` hinzufügen, durch die die CreateRibbonExtensibilityObject\-Methode überschrieben und die Menüband\-XML\-Klasse an die Office\-Anwendung zurückgegeben wird.  
-  
- Weitere Informationen finden Sie unter [Multifunktionsleisten-XML](../vsto/ribbon-xml.md).  
-  
-## Hinzufügen mehrerer Menübandelemente zu einem Projekt  
- Sie können einem einzelnen Projekt mehrere Menübandelemente hinzufügen.  Dies ist hilfreich, wenn Sie eine der folgenden Aufgaben ausführen möchten:  
-  
--   Erstellen von Menübändern für Outlook\-*Inspektoren*.  Weitere Informationen finden Sie unter [Anpassen einer Multifunktionsleiste in Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
+-   Add custom groups to a custom or built-in tab.  
   
     > [!NOTE]  
-    >  Ein Inspektor ist ein Fenster, das geöffnet wird, wenn der Benutzer bestimmte Aufgaben ausführt, z. B. eine E\-Mail verfasst.  
+    >  A built-in tab or group is one that already exists on the Ribbon of a Microsoft Office application. For example, the **Data** tab is a built-in tab in Excel. The **Connections** group is a built-in group on the **Data** tab.  
   
--   Wählen Sie aus, welches Menüband zur Laufzeit angezeigt wird.  
+-   Add custom controls to a custom group.  
   
-### Auswählen der Menübänder, die zur Laufzeit angezeigt werden  
- Da ein Projekt mehr als ein Menüband enthalten kann, können Sie auswählen, welches Menüband zur Laufzeit angezeigt wird.  
+-   Add custom controls to the Backstage View.  
   
- Zur Auswahl eines Menübands, das zur Laufzeit angezeigt wird, überschreiben Sie die CreateRibbonExtensibilityObject\-Methode in der Klasse `ThisAddin`, `ThisWorkbook` oder `ThisDocument` des Projekts und geben das Menüband zurück, das Sie anzeigen möchten.  Im folgenden Beispiel wird der Wert eines Felds namens `myCondition` überprüft und das entsprechende Menüband zurückgegeben.  
+ For more information about how to customize a Ribbon by using the **Ribbon (Visual Designer)** item, see [Ribbon Designer](../vsto/ribbon-designer.md).  
+  
+### <a name="ribbon-xml-item"></a>Ribbon (XML) Item  
+ Use the **Ribbon (XML)** item if you want to customize the Ribbon in a way that is not supported by the **Ribbon (Visual Designer)** item. Use the **Ribbon (XML)** item to customize the Ribbon in the following ways:  
+  
+-   Add *built-in* groups to a custom tab or built-in tab.  
+  
+-   Add built-in controls to a custom group.  
+  
+-   Add custom code to override the event handlers of built-in controls.  
+  
+-   Customize the Quick Access Toolbar.  
+  
+-   Share a Ribbon customization between VSTO Add-in by using a qualified ID.  
+  
+ For more information about how to customize the Ribbon by using the **Ribbon (XML)** item, see [Ribbon XML](../vsto/ribbon-xml.md).  
+  
+## <a name="exporting-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Exporting a Ribbon from the Ribbon Designer to Ribbon XML  
+ If you create a Ribbon by using the Ribbon Designer, and then decide that you want to customize the Ribbon in ways that the **Ribbon (Visual Designer)** item does not support, you can export the Ribbon to XML.  
+  
+ Visual Studio automatically creates a **Ribbon (XML)** item and populates the Ribbon XML file with elements and attributes for each control on the Ribbon.  
+  
+ Not all of the properties that are in the **Properties** window of the Ribbon designer are transferred to the Ribbon XML file.  For example, Visual Studio does not export the value of the **Image** or **Text** property. That is because you must create a callback method in the Ribbon code file of the exported project to assign an image or set the text of a control. Visual Studio does not automatically generate callback methods as part of the export process.  
+  
+ In addition, any unchanged default property values do not appear in the resulting Ribbon XML file.  
+  
+ For more information about how to export the Ribbon to XML, see [How to: Export a Ribbon from the Ribbon Designer to Ribbon XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).  
+  
+### <a name="updating-the-code"></a>Updating the Code  
+ A new Ribbon code file is added to **Solution Explorer**. This file contains the Ribbon XML class. You must create callback methods in the `Ribbon Callbacks` region of this class to handle user actions, such as clicking a button. Move your code from the event handlers to these callback methods and modify the code to work with the Ribbon extensibility (RibbonX) programming model. For more information, see [Ribbon XML](../vsto/ribbon-xml.md).  
+  
+ You must also add code to the `ThisAddIn`, `ThisWorkbook`, or `ThisDocument` class that overrides the CreateRibbonExtensibilityObject method and returns the Ribbon XML class to the Office application.  
+  
+ For more information, see [Ribbon XML](../vsto/ribbon-xml.md).  
+  
+## <a name="adding-multiple-ribbon-items-to-a-project"></a>Adding Multiple Ribbon Items to a Project  
+ You can add more than one Ribbon item to a single project. This is useful if you want to perform either of the following two tasks:  
+  
+-   Create Ribbons for Outlook *Inspectors*. For more information, see [Customizing a Ribbon for Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
+  
+    > [!NOTE]  
+    >  An Inspector is a window that opens when users perform certain tasks, such as creating an e-mail message.  
+  
+-   Select which Ribbon to display at run time.  
+  
+### <a name="selecting-which-ribbons-to-display-at-run-time"></a>Selecting Which Ribbons to Display at Run Time  
+ Because a project can contain more than one Ribbon, you can select which Ribbon to display at run time.  
+  
+ To select a Ribbon to display at run time, override the CreateRibbonExtensibilityObject method in the `ThisAddin`, `ThisWorkbook`, or `ThisDocument` class of your project and return the Ribbon that you want to display. The following example checks the value of a field named `myCondition` and returns the appropriate Ribbon.  
   
 > [!NOTE]  
->  Die in diesem Beispiel verwendete Syntax gibt ein Menüband zurück, das mit dem Element **Menüband \(Visueller Designer\)** erstellt wurde.  Die Syntax für die Rückgabe eines Menübands, das mithilfe des Elements **Menüband \(XML\)** erstellt wurde, weicht geringfügig ab.  Weitere Informationen zum Zurückgeben eines Elements **Menüband \(XML\)** finden Sie unter [Multifunktionsleisten-XML](../vsto/ribbon-xml.md).  
+>  The syntax used in this example returns a Ribbon that was created by using the **Ribbon (Visual Designer)** item. The syntax for returning a Ribbon that is created by using a **Ribbon (XML)** item is slightly different. For more information about returning a **Ribbon (XML)** item, see [Ribbon XML](../vsto/ribbon-xml.md).  
   
- Fügen Sie den folgenden Code hinzu:  
+ Add the following code:  
   
- [!code-csharp[Trin_Ribbon_Choose_Ribbon#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Choose_Ribbon/CS/ThisWorkbook.cs#1)]
- [!code-vb[Trin_Ribbon_Choose_Ribbon#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Choose_Ribbon/VB/ThisWorkbook.vb#1)]  
+ [!code-vb[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/VisualBasic/trin_ribbon_choose_ribbon_4/ThisWorkbook.vb#1)] [!code-csharp[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/CSharp/trin_ribbon_choose_ribbon_4/ThisWorkbook.cs#1)]  
   
-### Verwandte Themen  
+### <a name="related-topics"></a>Related Topics  
   
-|Titel|Beschreibung|  
-|-----------|------------------|  
-|[Gewusst wie: Erste Schritte beim Anpassen der Multifunktionsleiste](../vsto/how-to-get-started-customizing-the-ribbon.md)|Veranschaulicht die Anpassung des Menübands einer Microsoft Office\-Anwendung und das Hinzufügen eines **Menüband \(Visueller Designer\)**\- oder **Menüband \(XML\)**\-Elements zu einem Office\-Projekt.|  
-|[Multifunktionsleisten-Designer](../vsto/ribbon-designer.md)|Beschreibt die Verwendung des Menüband\-Designers, um dem Menüband einer Microsoft Office\-Anwendung benutzerdefinierte Registerkarten, Gruppen und Steuerelemente hinzufügen.|  
-|[Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit dem Multifunktionsleisten-Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Veranschaulicht die Erstellung einer benutzerdefinierten Menüband\-Registerkarte mithilfe des Menüband\-Designers.  Sie können den Menüband\-Designer verwenden, um der benutzerdefinierten Registerkarte Steuerelemente hinzuzufügen und diese zu positionieren.|  
-|[Multifunktionsleisten-Objektmodellübersicht](../vsto/ribbon-object-model-overview.md)|Bietet eine Übersicht des Objektmodells mit starker Typisierung, das Sie zum Abrufen und Festlegen der Eigenschaften von Menübandsteuerelementen zur Laufzeit verwenden können.|  
-|[Exemplarische Vorgehensweise: Aktualisieren der Steuerelemente in einer Multifunktionsleiste zur Laufzeit](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)|Veranschaulicht die Verwendung des Menüband\-Objektmodells zum Aktualisieren der Steuerelemente auf einem Menüband, nachdem das Menüband in die Office\-Anwendung geladen wurde.|  
-|[Anpassen einer Multifunktionsleiste in Outlook](../vsto/customizing-a-ribbon-for-outlook.md)|Enthält Anleitungen zur Anpassung des Menübands in Microsoft Office Outlook.|  
-|[Anpassen eines Menübands für InfoPath](../vsto/customizing-a-ribbon-for-infopath.md)|Enthält Anleitungen zur Anpassung des Menübands in Microsoft Office InfoPath.|  
-|[Zugreifen auf die Multifunktionsleiste zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md)|Veranschaulicht das Einblenden, Ausblenden und Ändern des Menübands und wie Sie Benutzern das Ausführen des Codes von Steuerelementen in einem benutzerdefinierten Aufgabenbereich, Aktionsbereich oder Outlook\-Formularbereich ermöglichen.|  
-|[Gewusst wie: Ändern der Position einer Registerkarte im Menüband](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|Veranschaulicht das Ändern der Reihenfolge von Registerkarten auf einem Menüband.|  
-|[Gewusst wie: Anpassen einer integrierten Registerkarte](../vsto/how-to-customize-a-built-in-tab.md)|Veranschaulicht das Hinzufügen von Gruppen und Steuerelementen zu einer integrierten Registerkarte.|  
-|[Gewusst wie: Hinzufügen von Steuerelementen zur Backstage-Ansicht](../vsto/how-to-add-controls-to-the-backstage-view.md)|Veranschaulicht das Hinzufügen von Steuerelementen zum Menü, das durch Klicken auf **Datei** geöffnet wird.|  
-|[Gewusst wie: Hinzufügen eines Dialogfeld-Startprogramms zu einer Multifunktionsleistengruppe](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|Veranschaulicht das Hinzufügen eines Dialogfeld\-Startprogramm zu einer beliebigen Gruppe auf einem Menüband.|  
-|[Gewusst wie: Exportieren einer Multifunktionsleiste aus dem Multifunktionsleisten-Designer in Multifunktionsleisten-XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|Veranschaulicht das Anpassen des Menübands auf eine innovative Weise, bei der das Menüband vom Designer in Menüband\-XML exportiert wird.|  
-|[Multifunktionsleisten-XML](../vsto/ribbon-xml.md)|Erläutert die Anpassung eines Menübands durch Verwendung von Menüband\-XML.|  
-|[Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit dem Multifunktionsleisten-Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Veranschaulicht die Erstellung einer benutzerdefinierten Menüband\-Registerkarte mithilfe des Elements **Menüband \(XML\)**.|  
+|Title|Description|  
+|-----------|-----------------|  
+|[How to: Get Started Customizing the Ribbon](../vsto/how-to-get-started-customizing-the-ribbon.md)|Shows you how to customize the Ribbon of a Microsoft Office application, add a **Ribbon (Visual Designer)** or **Ribbon (XML)** item to an Office project.|  
+|[Ribbon Designer](../vsto/ribbon-designer.md)|Describes how you can use the Ribbon Designer to add custom tabs, groups, and controls to the Ribbon of a Microsoft Office application.|  
+|[Walkthrough: Creating a Custom Tab by Using the Ribbon Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Shows you how to create a custom Ribbon tab by using the Ribbon Designer. You can use the Ribbon Designer to add and position controls on the custom tab.|  
+|[Ribbon Object Model Overview](../vsto/ribbon-object-model-overview.md)|Provides an overview of the strongly typed object model that you can use to get and set the properties of Ribbon controls at run time.|  
+|[Walkthrough: Updating the Controls on a Ribbon at Run Time](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)|Demonstrates how to use the Ribbon object model to update the controls on a Ribbon after the Ribbon is loaded into the Office application.|  
+|[Customizing a Ribbon for Outlook](../vsto/customizing-a-ribbon-for-outlook.md)|Provides guidance for customizing the Ribbon in Microsoft Office Outlook.|  
+|[Customizing a Ribbon for InfoPath](../vsto/customizing-a-ribbon-for-infopath.md)|Provides guidance for customizing the Ribbon in Microsoft Office InfoPath.|  
+|[Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)|Shows how to show, hide, and modify the Ribbon, and enable users to run the code from controls in a custom task pane, actions pane, or Outlook form region.|  
+|[How to: Change the Position of a Tab on the Ribbon](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|Shows how to change the order of tabs on a Ribbon.|  
+|[How to: Customize a Built-in Tab](../vsto/how-to-customize-a-built-in-tab.md)|Shows how to add groups and controls to a built-in tab.|  
+|[How to: Add Controls to the Backstage View](../vsto/how-to-add-controls-to-the-backstage-view.md)|Shows how to add controls to the menu that opens when you click the **File**.|  
+|[How to: Add a Dialog Box Launcher to a Ribbon Group](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|Shows to add a dialog box launcher to any group on a Ribbon.|  
+|[How to: Export a Ribbon from the Ribbon Designer to Ribbon XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|Shows how to customize the Ribbon in advanced ways by exporting the Ribbon from the designer to Ribbon XML.|  
+|[Ribbon XML](../vsto/ribbon-xml.md)|Explains how you can customize a Ribbon by using Ribbon XML.|  
+|[Walkthrough: Creating a Custom Tab by Using the Ribbon Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Demonstrates how to create a custom Ribbon tab by using the **Ribbon (XML)** item.|  
   
   

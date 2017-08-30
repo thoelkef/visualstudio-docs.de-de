@@ -1,35 +1,40 @@
 ---
-title: "How to: Extend a SharePoint Node in Server Explorer"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "SharePoint Connections [SharePoint development in Visual Studio], extending a node"
-  - "SharePoint development in Visual Studio, extending SharePoint Connections node in Server Explorer"
+title: 'How to: Extend a SharePoint Node in Server Explorer | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint Connections [SharePoint development in Visual Studio], extending a node
+- SharePoint development in Visual Studio, extending SharePoint Connections node in Server Explorer
 ms.assetid: 5e443950-12e6-40d1-864b-c384b6be4ce4
 caps.latest.revision: 16
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 15
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 75e49e7e1b9de5629097cae21a303ce8a97187d7
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# How to: Extend a SharePoint Node in Server Explorer
-  Sie können benutzerdefinierte Knoten im **Server\-Explorer** unter dem Knoten **SharePoint\-Verbindungen** erweitern.  Dies ist beim Hinzufügen von neuen untergeordneten Knoten, Kontextmenüelementen oder Eigenschaften zu einem vorhandenen Knoten hilfreich.  Weitere Informationen finden Sie unter [Extending the SharePoint Connections Node in Server Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
+# <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>How to: Extend a SharePoint Node in Server Explorer
+  You can extend nodes under the **SharePoint Connections** node in **Server Explorer**. This is useful when you want to add new child nodes, shortcut menu items, or properties to an existing node. For more information, see [Extending the SharePoint Connections Node in Server Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
   
-### So erweitern Sie einen SharePoint\-Knoten im Server\-Explorer  
+### <a name="to-extend-a-sharepoint-node-in-server-explorer"></a>To extend a SharePoint node in Server Explorer  
   
-1.  Erstellen Sie ein Klassenbibliotheksprojekt.  
+1.  Create a class library project.  
   
-2.  Fügen Sie Verweise auf die folgenden Assemblys hinzu:  
+2.  Add references to the following assemblies:  
   
     -   Microsoft.VisualStudio.SharePoint  
   
@@ -37,40 +42,39 @@ caps.handback.revision: 15
   
     -   System.ComponentModel.Composition  
   
-3.  Erstellen Sie eine Klasse, die die <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>\-Schnittstelle implementiert.  
+3.  Create a class that implements the <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> interface.  
   
-4.  Fügen Sie der Klasse das <xref:System.ComponentModel.Composition.ExportAttribute>\-Attribut hinzu.  Anhand dieses Attributs kann Visual Studio Ihre <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>\-Implementierung erkennen und laden.  Übergeben Sie den <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>\-Typ an den Attributkonstruktor.  
+4.  Add the <xref:System.ComponentModel.Composition.ExportAttribute> attribute to the class. This attribute enables Visual Studio to discover and load your <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> implementation. Pass the <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> type to the attribute constructor.  
   
-5.  Fügen Sie der Klasse das <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute>\-Attribut hinzu.  Dieses Attribut gibt den Zeichenfolgenbezeichner für den Knotentyp an, den Sie erweitern möchten.  
+5.  Add the <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute> attribute to the class. This attribute specifies the string identifier for the type of node that you want to extend.  
   
-     Übergeben Sie einen der folgenden Enumerationswerte an den Attributkonstruktor, um einen integrierten, von Visual Studio bereitgestellten Knotentyp anzugeben:  
+     To specify built-in node types provided by Visual Studio, pass one of the following enumeration values to the attribute constructor:  
   
-    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>: Geben Sie mithilfe dieser Werte Website\-Verbindungsknoten \(die Knoten, von denen Website\-URLs angezeigt werden\), Websiteknoten oder alle anderen übergeordneten Knoten im **Server\-Explorer** an.  
+    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>: Use these values to specify site connection nodes (the nodes that display site URLs), site nodes, or all other parent nodes in **Server Explorer**.  
   
-    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.ExtensionNodeTypes>: Verwenden Sie diese Werte, um einen der integrierten Knoten anzugeben, die auf einer SharePoint\-Website eine einzelne Komponente darstellen, z. B. ein Knoten, der eine Liste, ein Feld oder einen Inhaltstyp darstellt.  
+    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.ExtensionNodeTypes>: Use these values to specify one of the built-in nodes that represent an individual component on a SharePoint site, such as a node that represents a list, field, or content type.  
   
-6.  Verwenden Sie in der Implementierung der <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension.Initialize%2A>\-Methode Member des *nodeType*\-Parameters, um dem Knoten Funktionen hinzuzufügen.  Dieser Parameter ist ein <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeType>\-Objekt, das Zugriff auf die in der <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents>\-Schnittstelle definierten Ereignisse bietet.  Sie können z. B. folgende Ereignisse bearbeiten:  
+6.  In your implementation of the <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension.Initialize%2A> method, use members of the *nodeType* parameter to add features to the node. This parameter is an <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeType> object that provides access to the events defined in the <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents> interface. For example, you can handle the following events:  
   
-    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested>: Bearbeiten Sie dieses Ereignis, um dem Knoten neue untergeordnete Knoten hinzuzufügen.  Weitere Informationen erhalten Sie unter [How to: Add a Custom SharePoint Node to Server Explorer](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md).  
+    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested>: Handle this event to add new child nodes to the node. For more information, see [How to: Add a Custom SharePoint Node to Server Explorer](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md).  
   
-    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeMenuItemsRequested>: Bearbeiten Sie dieses Ereignis, um dem Knoten ein benutzerdefiniertes Kontextmenüelement hinzuzufügen.  
+    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeMenuItemsRequested>: Handle this event to add a custom shortcut menu item to the node.  
   
-    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodePropertiesRequested>: Bearbeiten Sie dieses Ereignis, um dem Knoten benutzerdefinierte Eigenschaften hinzuzufügen.  Die Eigenschaften erscheinen bei Auswahl des Knotens im Fenster **Eigenschaften**.  
+    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodePropertiesRequested>: Handle this event to add custom properties to the node. The properties appear in the **Properties** window when the node is selected.  
   
-## Beispiel  
- Im folgenden Codebeispiel wird die Erstellung zweier unterschiedlicher Typen von Knotenerweiterungen veranschaulicht:  
+## <a name="example"></a>Example  
+ The following code example demonstrates how to create two different types of node extensions:  
   
--   Eine Erweiterung, die SharePoint\-Websiteknoten ein Kontextmenüelement hinzufügt.  Beim Klicken auf das Menüelement wird der Name des angeklickten Knotens angezeigt.  
+-   An extension that adds a context menu item to SharePoint site nodes. When you click the menu item, it displays the name of the node that was clicked.  
   
--   Eine Erweiterung, die jedem Knoten, der ein Feld mit dem Namen **Text** darstellt, eine benutzerdefinierte Eigenschaft mit dem Namen **ContosoExampleProperty** hinzufügt.  
+-   An extension that adds a custom property named **ContosoExampleProperty** to each node that represents a field named **Body**.  
   
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#9](../snippets/csharp/VS_Snippets_OfficeSP/spextensibility.projectsystemextension.general/cs/extension/serverexplorerextension.cs#9)]
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#9](../snippets/visualbasic/VS_Snippets_OfficeSP/spextensibility.projectsystemextension.general/vb/extension/serverexplorerextension.vb#9)]  
+ [!code-csharp[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextension.cs#9)] [!code-vb[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextension.vb#9)]  
   
- Diese Erweiterung fügt Knoten eine bearbeitbare Zeichenfolgeneigenschaft hinzu.  Sie können auch benutzerdefinierte Eigenschaften erstellen, die schreibgeschützte Daten auf dem SharePoint\-Server anzeigen.  Ein Beispiel, das die Vorgehensweise veranschaulicht, finden Sie unter [Walkthrough: Extending Server Explorer to Display Web Parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
+ This extension adds an editable string property to nodes. You can also create custom properties that display read-only data from the SharePoint server. For an example that demonstrates how to do this, see [Walkthrough: Extending Server Explorer to Display Web Parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
   
-## Kompilieren des Codes  
- Für dieses Beispiel sind Verweise auf die folgenden Assemblys erforderlich:  
+## <a name="compiling-the-code"></a>Compiling the Code  
+ This example requires references to the following assemblies:  
   
 -   Microsoft.VisualStudio.SharePoint  
   
@@ -80,10 +84,10 @@ caps.handback.revision: 15
   
 -   System.Windows.Forms  
   
-## Bereitstellen der Erweiterung  
- Um die **Server\-Explorer**\-Erweiterung bereitzustellen, erstellen Sie ein [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]\-Erweiterungspaket \(VSIX\) für die Assembly und alle weiteren Dateien, die Sie mit der Erweiterung verteilen möchten.  Weitere Informationen erhalten Sie unter [Deploying Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+## <a name="deploying-the-extension"></a>Deploying the Extension  
+ To deploy the **Server Explorer** extension, create a [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] extension (VSIX) package for the assembly and any other files that you want to distribute with the extension. For more information, see [Deploying Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [How to: Add a Custom SharePoint Node to Server Explorer](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)   
  [Extending the SharePoint Connections Node in Server Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Walkthrough: Extending Server Explorer to Display Web Parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   

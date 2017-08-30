@@ -1,72 +1,73 @@
 ---
-title: "Gewusst wie: Zuordnung von ListObject-Spalten zu Daten"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Daten [Office-Entwicklung in Visual Studio], Zuordnen zu ListObject-Spalte"
-  - "ListObject-Steuerelement, Zuordnen von Daten"
+title: 'How to: Map ListObject Columns to Data | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- data [Office development in Visual Studio], mapping to ListObject column
+- ListObject control, mapping data
 ms.assetid: 2108d0c3-d595-410e-a0ae-3dd53bf6bcc7
 caps.latest.revision: 36
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 35
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 1e9e9fd50f37332b91721856e698a690e4ea45a4
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Gewusst wie: Zuordnung von ListObject-Spalten zu Daten
-  Beim Binden eines <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelements an <xref:System.Data.DataTable> sollen möglicherweise nicht alle Spalten in einer Liste angezeigt werden, oder Sie verfügen u. U. über bestimmte Spalten, die nicht an Daten gebunden sind. Durch den Aufruf der <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A>\-Methode können Sie die Spalten zuordnen, die in <xref:Microsoft.Office.Tools.Excel.ListObject> angezeigt werden sollen.  
+# <a name="how-to-map-listobject-columns-to-data"></a>How to: Map ListObject Columns to Data
+  When you bind a <xref:Microsoft.Office.Tools.Excel.ListObject> control to a <xref:System.Data.DataTable>, you might not want to display all the columns in a list, or you might have certain columns that are not bound to data. You can map which columns you want to appear in the <xref:Microsoft.Office.Tools.Excel.ListObject> when you call the <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> method.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- ![Link zu Video](~/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie unter [Wie erstelle ich eine Liste in Excel, die mit einer SharePoint\-Liste verbunden ist?](http://go.microsoft.com/fwlink/?LinkID=130263).  
+ ![link to video](../vsto/media/playvideo.gif "link to video") For a related video demonstration, see [How Do I: Create a List in Excel that is Connected to a SharePoint List?](http://go.microsoft.com/fwlink/?LinkID=130263).  
   
-## Zuordnen von Spalten  
+## <a name="mapping-columns"></a>Mapping Columns  
   
-#### So ordnen Sie eine Datentabelle Spalten in einer Liste zu  
+#### <a name="to-map-a-data-table-to-columns-in-a-list"></a>To map a data table to columns in a list  
   
-1.  Erstellen Sie <xref:System.Data.DataTable> auf Klassenebene.  
+1.  Create the <xref:System.Data.DataTable> at the class level.  
   
-     [!code-csharp[Trin_VstcoreHostControlsExcel#16](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreHostControlsExcel/CS/Sheet3.cs#16)]
-     [!code-vb[Trin_VstcoreHostControlsExcel#16](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreHostControlsExcel/VB/Sheet3.vb#16)]  
+     [!code-csharp[Trin_VstcoreHostControlsExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#16)]  [!code-vb[Trin_VstcoreHostControlsExcel#16](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#16)]  
   
-2.  Fügen Sie Beispielspalten und Daten im `Startup`\-Ereignishandler der `Sheet1`\-Klasse \(in einem Projekt auf Dokumentebene\) oder der `ThisAddIn`\-Klasse \(in einem VSTO\-Add\-in\-Projekt\) hinzu.  
+2.  Add sample columns and data in the `Startup` event handler of the `Sheet1` class (in a document-level project) or `ThisAddIn` class (in an VSTO Add-in project).  
   
-     [!code-csharp[Trin_VstcoreHostControlsExcel#17](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreHostControlsExcel/CS/Sheet3.cs#17)]
-     [!code-vb[Trin_VstcoreHostControlsExcel#17](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreHostControlsExcel/VB/Sheet3.vb#17)]  
+     [!code-csharp[Trin_VstcoreHostControlsExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#17)]  [!code-vb[Trin_VstcoreHostControlsExcel#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#17)]  
   
-3.  Rufen Sie die <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A>\-Methode auf, und übergeben Sie die Spaltennamen in der Reihenfolge, in der sie angezeigt werden sollen. Das Listenobjekt wird an die neu erstellte <xref:System.Data.DataTable> gebunden, die Reihenfolge der Spalten im Listenobjekt unterscheidet sich aber von der Reihenfolge, in der Sie in <xref:System.Data.DataTable> angezeigt werden.  
+3.  Call the <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> method and pass in the column names in the order they should appear. The list object will be bound to the newly-created <xref:System.Data.DataTable>, but the order of the columns in the list object will differ from the order they appear in the <xref:System.Data.DataTable>.  
   
-     [!code-csharp[Trin_VstcoreHostControlsExcel#18](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreHostControlsExcel/CS/Sheet3.cs#18)]
-     [!code-vb[Trin_VstcoreHostControlsExcel#18](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreHostControlsExcel/VB/Sheet3.vb#18)]  
+     [!code-csharp[Trin_VstcoreHostControlsExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#18)]  [!code-vb[Trin_VstcoreHostControlsExcel#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#18)]  
   
-## Angeben von nicht zugeordneten Spalten  
- Beim Zuordnen von Spalten zu <xref:System.Data.DataTable> können Sie auch angeben, dass bestimmte Spalten nicht an Daten gebunden werden sollen, indem Sie eine leere Zeichenfolge übergeben. In diesem Fall wird dem <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelement eine neue Spalte hinzugefügt, die nicht an Daten gebunden ist.  
+## <a name="specifying-unmapped-columns"></a>Specifying Unmapped Columns  
+ When you map columns to a <xref:System.Data.DataTable>, you can also specify that certain columns should not be bound to data by passing in an empty string. A new column that is not bound to data is then added to the <xref:Microsoft.Office.Tools.Excel.ListObject> control.  
   
-#### So geben Sie beim Zuordnen von ListObject\-Spalten eine nicht zugeordnete Spalte an  
+#### <a name="to-specify-an-unmapped-column-when-mapping-listobject-columns"></a>To specify an unmapped column when mapping ListObject columns  
   
-1.  Rufen Sie die <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A>\-Methode auf, und übergeben Sie die Spaltennamen in der Reihenfolge, in der sie angezeigt werden sollen. Verwenden Sie eine leere Zeichenfolge, um anzugeben, wo eine nicht zugeordnete Spalte hinzugefügt wird: in diesem Fall zwischen der Spalte für den Titel und der Spalte für den Nachnamen.  
+1.  Call the <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> method and pass in the column names in the order they should appear. Use an empty string to indicate where an unmapped column is added; in this case, between the title column and the last name column.  
   
-     [!code-csharp[Trin_VstcoreHostControlsExcel#19](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreHostControlsExcel/CS/Sheet3.cs#19)]
-     [!code-vb[Trin_VstcoreHostControlsExcel#19](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreHostControlsExcel/VB/Sheet3.vb#19)]  
+     [!code-csharp[Trin_VstcoreHostControlsExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#19)]  [!code-vb[Trin_VstcoreHostControlsExcel#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#19)]  
   
-## Kompilieren des Codes  
- In diesem Codebeispiel wird davon ausgegangen, dass Sie in dem Arbeitsblatt, in dem dieser Code angezeigt wird, über ein <xref:Microsoft.Office.Tools.Excel.ListObject> namens `list1` verfügen.  
+## <a name="compiling-the-code"></a>Compiling the Code  
+ This code example assumes you have an existing <xref:Microsoft.Office.Tools.Excel.ListObject> named `list1` on the worksheet in which this code appears.  
   
-## Siehe auch  
- [Erweitern von Word-Dokumenten und Excel-Arbeitsmappen in VSTO-Add-Ins zur Laufzeit](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
- [Steuerelemente für Office-Dokumente](../vsto/controls-on-office-documents.md)   
- [Hinzufügen von Steuerelementen zu Office-Dokumenten zur Laufzeit](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Gewusst wie: Füllen eines ListObject-Steuerelements mit Daten](../vsto/how-to-fill-listobject-controls-with-data.md)   
- [Automatisieren von Excel mithilfe von erweiterten Objekten](../vsto/automating-excel-by-using-extended-objects.md)   
- [ListObject-Steuerelement](../vsto/listobject-control.md)  
+## <a name="see-also"></a>See Also  
+ [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
+ [Controls on Office Documents](../vsto/controls-on-office-documents.md)   
+ [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)   
+ [How to: Fill ListObject Controls with Data](../vsto/how-to-fill-listobject-controls-with-data.md)   
+ [Automating Excel by Using Extended Objects](../vsto/automating-excel-by-using-extended-objects.md)   
+ [ListObject Control](../vsto/listobject-control.md)  
   
   

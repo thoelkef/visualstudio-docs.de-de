@@ -1,72 +1,90 @@
 ---
-title: "CA2105: Arrayfelder d&#252;rfen nicht schreibgesch&#252;tzt sein | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2105"
-  - "ArrayFieldsShouldNotBeReadOnly"
-helpviewer_keywords: 
-  - "ArrayFieldsShouldNotBeReadOnly"
-  - "CA2105"
+title: 'CA2105: Array fields should not be read only | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2105
+- ArrayFieldsShouldNotBeReadOnly
+helpviewer_keywords:
+- ArrayFieldsShouldNotBeReadOnly
+- CA2105
 ms.assetid: 0bdc3421-3ceb-4182-b30c-a992fbfcc35d
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 16
----
-# CA2105: Arrayfelder d&#252;rfen nicht schreibgesch&#252;tzt sein
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 3980baa67ba22ff52329aaa8bf94c9699af63ed9
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105: Array fields should not be read only
 |||  
 |-|-|  
 |TypeName|ArrayFieldsShouldNotBeReadOnly|  
 |CheckId|CA2105|  
-|Kategorie \(Category\)|Microsoft.Security|  
-|Unterbrechende Änderung|Breaking|  
+|Category|Microsoft.Security|  
+|Breaking Change|Breaking|  
   
-## Ursache  
- Ein öffentliches oder geschütztes Feld, das ein Array enthält, ist als schreibgeschützt deklariert.  
+## <a name="cause"></a>Cause  
+ A public or protected field that holds an array is declared read-only.  
   
-## Regelbeschreibung  
- Wenn Sie den `readonly`\-Modifizierer \(`ReadOnly` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]\) auf ein Feld anwenden, das ein Array enthält, kann das Feld nicht dahingehend geändert werden, dass es auf ein anderes Array verweist.  Allerdings können die in einem schreibgeschützten Feld des Arrays gespeicherten Elemente geändert werden.  Code, von dem auf der Grundlage der Elemente eines öffentlichen schreibgeschützten Arrays Entscheidungen getroffen oder Vorgänge ausgeführt werden, enthält unter Umständen eine Sicherheitslücke.  
+## <a name="rule-description"></a>Rule Description  
+ When you apply the `readonly` (`ReadOnly` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) modifier to a field that contains an array, the field cannot be changed to refer to a different array. However, the elements of the array that are stored in a read-only field can be changed. Code that makes decisions or performs operations that are based on the elements of a read-only array that can be publicly accessed might contain an exploitable security vulnerability.  
   
- Das Vorhandensein eines öffentlichen Felds verstößt außerdem gegen die Entwurfsregel [CA1051: Sichtbare Instanzfelder nicht deklarieren](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).  
+ Note that having a public field also violates the design rule [CA1051: Do not declare visible instance fields](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).  
   
-## Behandeln von Verstößen  
- Verlassen Sie sich zum Beheben der durch diese Regel ermittelten Sicherheitslücke nicht auf den Inhalt eines öffentlich zugänglichen schreibgeschützten Arrays.  Es wird dringend empfohlen, eines der folgenden Verfahren zu verwenden:  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix the security vulnerability that is identified by this rule, do not rely on the contents of a read-only array that can be publicly accessed. It is strongly recommended that you use one of the following procedures:  
   
--   Ersetzen Sie das Array durch eine stark typisierte Auflistung, die nicht geändert werden kann.  Weitere Informationen finden Sie unter <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>.  
+-   Replace the array with a strongly typed collection that cannot be changed. For more information, see <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>.  
   
--   Ersetzen Sie das öffentliche Feld durch eine Methode, die einen Klon eines privaten Arrays zurückgibt.  Da der Code nicht auf den Klon angewiesen ist, besteht keine Gefahr, wenn die Elemente geändert werden.  
+-   Replace the public field with a method that returns a clone of a private array. Because your code does not rely on the clone, there is no danger if the elements are modified.  
   
- Wenn Sie den zweiten Ansatz wählen, ersetzen Sie das Feld nicht durch eine Eigenschaft, da die Leistung durch Eigenschaften, die Arrays zurückgeben, beeinträchtigt wird.  Weitere Informationen finden Sie unter [CA1819: Eigenschaften sollten keine Arrays zurückgeben](../code-quality/ca1819-properties-should-not-return-arrays.md).  
+ If you chose the second approach, do not replace the field with a property; properties that return arrays adversely affect performance. For more information, see [CA1819: Properties should not return arrays](../code-quality/ca1819-properties-should-not-return-arrays.md).  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Es wird dringend davon abgeraten, eine Warnung dieser Regel auszuschließen.  Es gibt praktisch keine Szenarien, bei denen der Inhalt eines schreibgeschützten Felds unwichtig ist.  Wenn dies auf Ihr Szenario zutrifft, entfernen Sie den `readonly`\-Modifizierer, anstatt die Meldung auszuschließen.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Exclusion of a warning from this rule is strongly discouraged. Almost no scenarios occur where the contents of a read-only field are unimportant. If this is the case with your scenario, remove the `readonly` modifier instead of excluding the message.  
   
-## Beispiel  
- In diesem Beispiel werden die Gefahren bei einem Verstoß gegen diese Regel veranschaulicht.  Im ersten Teil wird eine Beispielbibliothek mit einem Typ `MyClassWithReadOnlyArrayField` dargestellt, die zwei Felder \(`grades` und `privateGrades`\) enthält, die nicht sicher sind.  Das `grades`\-Feld ist öffentlich und kann daher von jedem Aufrufer angegriffen werden.  Das `privateGrades`\-Feld ist privat, aber dennoch gefährdet, da es durch die `GetPrivateGrades`\-Methode an Aufrufer zurückgegeben wird.  Das `securePrivateGrades`\-Feld wird auf sichere Weise durch die `GetSecurePrivateGrades`\-Methode verfügbar gemacht.  Es ist im Einklang mit empfohlenen Entwurfsvorgehensweisen als privat deklariert.  Der zweite Teil enthält Code, der im `grades`\-Member und im `privateGrades`\-Member gespeicherte Werte ändert.  
+## <a name="example"></a>Example  
+ This example demonstrates the dangers of violating this rule. The first part shows an example library that has a type, `MyClassWithReadOnlyArrayField`, that contains two fields (`grades` and `privateGrades`) that are not secure. The field `grades` is public, and therefore vulnerable to any caller. The field `privateGrades` is private but is still vulnerable because it is returned to callers by the `GetPrivateGrades` method. The `securePrivateGrades` field is exposed in a safe manner by the `GetSecurePrivateGrades` method. It is declared as private to follow good design practices. The second part shows code that changes values stored in the `grades` and `privateGrades` members.  
   
- Die Beispielklassenbibliothek wird im folgenden Beispiel angezeigt.  
+ The example class library appears in the following example.  
   
- [!code-cs[FxCop.Security.ArrayFieldsNotReadOnly#1](../code-quality/codesnippet/CSharp/ca2105-array-fields-should-not-be-read-only_1.cs)]  
+ [!code-csharp[FxCop.Security.ArrayFieldsNotReadOnly#1](../code-quality/codesnippet/CSharp/ca2105-array-fields-should-not-be-read-only_1.cs)]  
   
-## Beispiel  
- Im folgenden Code werden anhand der Beispielklassenbibliothek Sicherheitsprobleme schreibgeschützter Arrays veranschaulicht.  
+## <a name="example"></a>Example  
+ The following code uses the example class library to illustrate read-only array security issues.  
   
- [!code-cs[FxCop.Security.TestArrayFieldsRead#1](../code-quality/codesnippet/CSharp/ca2105-array-fields-should-not-be-read-only_2.cs)]  
+ [!code-csharp[FxCop.Security.TestArrayFieldsRead#1](../code-quality/codesnippet/CSharp/ca2105-array-fields-should-not-be-read-only_2.cs)]  
   
- Ausgabe dieses Beispiels:  
+ The output from this example is:  
   
-  **Vor Manipulation: Grade: 90, 90, 90 Private Grade: 90, 90, 90 Sichere Grade, 90, 90, 90**  
-**Nach Manipulation: Grade: 90, 555, 90 Private Grade: 90, 555, 90 Sichere Grade, 90, 90, 90**   
-## Siehe auch  
+ **Before tampering: Grades: 90, 90, 90 Private Grades: 90, 90, 90  Secure Grades, 90, 90, 90**  
+**After tampering: Grades: 90, 555, 90 Private Grades: 90, 555, 90  Secure Grades, 90, 90, 90**   
+## <a name="see-also"></a>See Also  
  <xref:System.Array?displayProperty=fullName>   
  <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>

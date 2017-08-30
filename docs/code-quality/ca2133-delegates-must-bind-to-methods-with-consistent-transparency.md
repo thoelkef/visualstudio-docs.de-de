@@ -1,46 +1,63 @@
 ---
-title: "CA2133: Delegaten m&#252;ssen an Methoden mit konsistenter Transparenz gebunden werden | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2133"
+title: 'CA2133: Delegates must bind to methods with consistent transparency | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2133
 ms.assetid: a09672e2-63cb-4abd-9e8f-dff515e101ce
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 11
----
-# CA2133: Delegaten m&#252;ssen an Methoden mit konsistenter Transparenz gebunden werden
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 473dbf2d6373c59c693a91db804897bfe73b5300
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2133-delegates-must-bind-to-methods-with-consistent-transparency"></a>CA2133: Delegates must bind to methods with consistent transparency
 |||  
 |-|-|  
 |TypeName|DelegatesMustBindWithConsistentTransparency|  
 |CheckId|CA2133|  
-|Kategorie \(Category\)|Microsoft.Security|  
-|Unterbrechende Änderung|Breaking|  
+|Category|Microsoft.Security|  
+|Breaking Change|Breaking|  
   
 > [!NOTE]
->  Diese Warnung wird nur für Code übernommen, in dem die CoreCLR ausgeführt wird \(die Version der CLR, die speziell für Silverlight\-Webanwendungen verwendet wird\).  
+>  This warning is only applied to code that is running the CoreCLR (the version of the CLR that is specific to Silverlight Web applications).  
   
-## Ursache  
- Diese Warnung wird für eine Methode ausgelöst, die einen Delegat, der mit dem <xref:System.Security.SecurityCriticalAttribute>\-Objekt markiert ist, an eine Methode bindet, die transparent oder mit dem <xref:System.Security.SecuritySafeCriticalAttribute>\-Objekt markiert ist.  Die Warnung wird auch für eine Methode ausgelöst, die einen transparenten oder sicherheitsrelevanten Delegaten an eine wichtige Methode bindet.  
+## <a name="cause"></a>Cause  
+ This warning fires on a method that binds a delegate that is marked with the <xref:System.Security.SecurityCriticalAttribute> to a method that is transparent or that is marked with the <xref:System.Security.SecuritySafeCriticalAttribute>. The warning also fires a method that binds a delegate that is transparent or safe-critical to a critical method.  
   
-## Regelbeschreibung  
- Delegattypen und die Methoden, an die sie gebunden werden, müssen konsistente Transparenz aufweisen.  Transparente und sicherungskritische Delegaten können nur an andere transparente oder sicherungskritische Methoden gebunden werden.  Ebenso können kritische Delegaten nur an kritische Methoden gebunden werden.  Diese Bindungsregeln stellen sicher, dass im einzigen Code, in dem eine Methode über einen Delegaten aufgerufen werden kann, die gleiche Methode auch direkt hätte aufgerufen werden können.  Bindungsregeln verhindern z. B., dass in transparentem Code wichtiger Code für einen transparenten Delegaten direkt aufgerufen wird.  
+## <a name="rule-description"></a>Rule Description  
+ Delegate types and the methods that they bind to must have consistent transparency. Transparent and safe-critical delegates may only bind to other transparent or safe-critical methods. Similarly, critical delegates may only bind to critical methods. These binding rules ensure that the only code that can invoke a method via a delegate could have also invoked the same method directly. For example, binding rules prevent transparent code from calling critical code directly via a transparent delegate.  
   
-## Behandeln von Verstößen  
- Um eine Verletzung dieser Warnung zu korrigieren, ändern Sie die Transparenz des Delegaten oder der Methode, die gebunden wird, damit die Transparenz der zwei Objekte übereinstimmt.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this warning, change the transparency of the delegate or of the method that it binds so that the transparency of the two are equivalent.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Unterdrücken Sie keine Warnung dieser Regel.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule.  
   
-### Code  
- [!code-cs[FxCop.Security.CA2133.DelegatesMustBindWithConsistentTransparency#1](../code-quality/codesnippet/CSharp/ca2133-delegates-must-bind-to-methods-with-consistent-transparency_1.cs)]
+### <a name="code"></a>Code  
+ [!code-csharp[FxCop.Security.CA2133.DelegatesMustBindWithConsistentTransparency#1](../code-quality/codesnippet/CSharp/ca2133-delegates-must-bind-to-methods-with-consistent-transparency_1.cs)]

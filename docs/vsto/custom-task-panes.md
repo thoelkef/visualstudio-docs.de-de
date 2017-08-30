@@ -1,157 +1,161 @@
 ---
-title: "Benutzerdefinierte Aufgabenbereiche"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Add-Ins [Office-Entwicklung in Visual Studio], Benutzerdefinierte Aufgabenbereiche"
-  - "Add-Ins auf Anwendungsebene [Office-Entwicklung in Visual Studio], Benutzerdefinierte Aufgabenbereiche"
-  - "Benutzerdefinierte Aufgabenbereiche [Office-Entwicklung in Visual Studio]"
-  - "Benutzerdefinierte Aufgabenbereiche [Office-Entwicklung in Visual Studio], Informationen zu benutzerdefinierten Aufgabenbereichen"
-  - "Benutzerdefinierte Aufgabenbereiche [Office-Entwicklung in Visual Studio], Erstellen"
-  - "Benutzerdefinierte Aufgabenbereiche [Office-Entwicklung in Visual Studio], Mehrere Anwendungsfenster"
-  - "Mehrere Anwendungsfenster mit benutzerdefinierten Aufgabenbereichen [Office-Entwicklung in Visual Studio]"
-  - "Office-Entwicklung in Visual Studio, Aufgabenbereiche"
-  - "Aufgabenbereiche [Office-Entwicklung in Visual Studio]"
-  - "Aufgabenbereiche [Office-Entwicklung in Visual Studio], Informationen zu benutzerdefinierten Aufgabenbereichen"
-  - "Aufgabenbereiche [Office-Entwicklung in Visual Studio], Erstellen"
-  - "Aufgabenbereiche [Office-Entwicklung in Visual Studio], mehrere Anwendungsfenster"
-  - "Benutzeroberflächenbereiche [Office-Entwicklung in Visual Studio]"
-  - "Benutzeroberflächen [Office-Entwicklung in Visual Studio], Benutzerdefinierte Aufgabenbereiche"
+title: Custom Task Panes | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Office development in Visual Studio, task panes
+- user interface panels [Office development in Visual Studio]
+- task panes [Office development in Visual Studio]
+- user interfaces [Office development in Visual Studio], custom task panes
+- custom task panes [Office development in Visual Studio], creating
+- task panes [Office development in Visual Studio]. multiple application windows
+- custom task panes [Office development in Visual Studio], multiple application windows
+- task panes [Office development in Visual Studio], creating
+- application-level add-ins [Office development in Visual Studio], custom task panes
+- multiple applications windows with custom task panes [Office development in Visual Studio]
+- add-ins [Office development in Visual Studio], custom task panes
+- custom task panes [Office development in Visual Studio]
+- task panes [Office development in Visual Studio], about custom task panes
+- custom task panes [Office development in Visual Studio], about custom task panes
 ms.assetid: 9a415109-5333-433e-95c6-3d59ce9c4d02
 caps.latest.revision: 52
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 51
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: b99d43d4e775e118d60ba692f4dde615cbb6f5f6
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Benutzerdefinierte Aufgabenbereiche
-  Aufgabenbereiche sind Bereiche der Benutzeroberfläche, die in einer Microsoft Office\-Anwendung normalerweise auf einer Seite eines Fensters angedockt sind.  Mit benutzerdefinierten Aufgabenbereichen können Sie einen eigenen Aufgabenbereich erstellen und Benutzern eine vertraute Oberfläche für den Zugriff auf die Features Ihrer Projektmappe zur Verfügung stellen.  Die Oberfläche kann beispielsweise Steuerelemente enthalten, die Code zum Ändern von Dokumenten oder zum Anzeigen von Daten aus einer Datenquelle ausführen.  
+# <a name="custom-task-panes"></a>Custom Task Panes
+  Task panes are user interface panels that are typically docked to one side of a window in a Microsoft Office application. Custom task panes give you a way to create your own task pane and provide users with a familiar interface to access your solution's features. For example, the interface can contain controls that run code to modify documents or display data from a data source.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
 > [!NOTE]  
->  Ein benutzerdefinierter Aufgabenbereich ist nicht das gleiche wie der Aktionsbereich.  Der Aktionsbereich ist Bestandteil von Anpassungen auf Dokumentebene für Microsoft Office Word und Microsoft Office Excel.  Weitere Informationen finden Sie unter [Aktionsbereichsübersicht](../vsto/actions-pane-overview.md).  
+>  A custom task pane differs from the actions pane. The actions pane is part of document-level customizations for Microsoft Office Word and Microsoft Office Excel. For more information, see [Actions Pane Overview](../vsto/actions-pane-overview.md).  
   
-## Vorteile von benutzerdefinierten Aufgabenbereichen  
- Mit benutzerdefinierten Aufgabenbereichen können Sie Features in eine vertraute Benutzeroberfläche integrieren.  Sie können mit Visual Studio\-Tools schnell einen benutzerdefinierten Aufgabenbereich erstellen.  
+## <a name="benefits-of-custom-task-panes"></a>Benefits of Custom Task Panes  
+ Custom task panes let you integrate your features into a familiar user interface. You can create a custom task pane quickly by using Visual Studio tools.  
   
-### Vertraute Benutzeroberfläche  
- Benutzer von Anwendungen in Microsoft Office System sind bereits mit der Verwendung von Aufgabenbereichen \(z. B. dem Aufgabenbereich **Formatvorlagen und Formatierung** in Word\) vertraut.  Das Verhalten von benutzerdefinierten Aufgabenbereichen entspricht dem Verhalten anderer Aufgabenbereiche in Microsoft Office System.  Benutzer können benutzerdefinierte Aufgabenbereiche an verschiedene Seiten des Anwendungsfensters andocken, oder sie können benutzerdefinierte Aufgabenbereiche an eine beliebige Position im Fenster ziehen.  Sie können ein VSTO\-Add\-In erstellen, das mehrere benutzerdefinierte Aufgabenbereiche gleichzeitig anzeigt, wobei die Benutzer jeden Aufgabenbereich einzeln steuern können.  
+### <a name="familiar-user-interface"></a>Familiar User Interface  
+ Users of applications in the Microsoft Office system are already familiar with using task panes such as the **Styles and Formatting** task pane in Word. Custom task panes behave like other task panes in the Microsoft Office system. Users can dock custom task panes to different sides of the application window, or they can drag custom task panes to any location in the window. You can create a VSTO Add-in that displays multiple custom task panes at the same time, and users can control each task pane individually.  
   
-### Windows Forms\-Unterstützung  
- Die Benutzeroberfläche eines benutzerdefinierten Aufgabenbereichs, den Sie mit den Office\-Entwicklungstools in Visual Studio erstellen, basiert auf Windows Forms\-Steuerelementen.  Sie können zum Entwerfen der Benutzeroberfläche für einen benutzerdefinierten Aufgabenbereich den vertrauten Windows Forms\-Designer verwenden.  Sie können auch die Datenbindungsunterstützung in Windows Forms nutzen, um eine Datenquelle an Steuerelemente im Aufgabenbereich zu binden.  
+### <a name="windows-forms-support"></a>Windows Forms Support  
+ The user interface of a custom task pane that you create by using the Office development tools in Visual Studio is based on Windows Forms controls. You can use the familiar Windows Forms Designer to design the user interface for a custom task pane. You can also use the data binding support in Windows Forms to bind a data source to controls on the task pane.  
   
-## Erstellen eines benutzerdefinierten Aufgabenbereichs  
- Ein einfacher benutzerdefinierter Aufgabenbereich kann in zwei Schritten erstellt werden:  
+## <a name="creating-a-custom-task-pane"></a>Creating a Custom Task Pane  
+ You can create a basic custom task pane in two steps:  
   
-1.  Erstellen Sie eine Benutzeroberfläche für den benutzerdefinierten Aufgabenbereich, indem Sie einem <xref:System.Windows.Forms.UserControl>\-Objekt Windows Forms\-Steuerelemente hinzufügen.  
+1.  Create a user interface for your custom task pane by adding Windows Forms controls to a <xref:System.Windows.Forms.UserControl> object.  
   
-2.  Instanziieren Sie den benutzerdefinierten Aufgabenbereich, indem Sie das Benutzersteuerelement an das <xref:Microsoft.Office.Tools.CustomTaskPaneCollection>\-Objekt im VSTO\-Add\-In übergeben.  Diese Auflistung gibt ein neues <xref:Microsoft.Office.Tools.CustomTaskPane>\-Objekt zurück, mit dem Sie die Darstellung des Aufgabenbereichs ändern und auf Benutzerereignisse reagieren können.  
+2.  Instantiate the custom task pane by passing the user control to the <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> object in your VSTO Add-in. This collection returns a new <xref:Microsoft.Office.Tools.CustomTaskPane> object that you can use to modify the appearance of the task pane and respond to user events.  
   
- Weitere Informationen finden Sie unter [Gewusst wie: Hinzufügen eines benutzerdefinierten Aufgabenbereichs zu einer Anwendung](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
+ For more information, see [How to: Add a Custom Task Pane to an Application](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
   
-### Erstellen der Benutzeroberfläche  
- Alle benutzerdefinierten Aufgabenbereiche, die mit den Office\-Entwicklungstools in Visual Studio erstellt werden, enthalten ein <xref:System.Windows.Forms.UserControl>\-Objekt.  Dieses Benutzersteuerelement stellt die Benutzeroberfläche des benutzerdefinierten Aufgabenbereichs bereit.  Sie können das Benutzersteuerelement zur Entwurfszeit oder zur Laufzeit erstellen.  Wenn Sie das Benutzersteuerelement zur Entwurfszeit erstellen, können Sie die Benutzeroberfläche des Aufgabenbereichs mit dem Windows Forms\-Designer entwerfen.  
+### <a name="creating-the-user-interface"></a>Creating the User Interface  
+ All custom task panes that are created by using the Office development tools in Visual Studio contain a <xref:System.Windows.Forms.UserControl> object. This user control provides the user interface of your custom task pane. You can create the user control at design time or at run time. If you create the user control at design time, you can use the Windows Forms Designer to construct the user interface of your task pane.  
   
-### Instanziieren des benutzerdefinierten Aufgabenbereichs  
- Nachdem Sie ein Benutzersteuerelement erstellt haben, das die Benutzeroberfläche des benutzerdefinierten Aufgabenbereichs enthält, müssen Sie <xref:Microsoft.Office.Tools.CustomTaskPane> instanziieren.  Übergeben Sie hierfür das Benutzersteuerelement an <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> im VSTO\-Add\-In, indem Sie eine der <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A>\-Methoden aufrufen.  Diese Auflistung wird als `CustomTaskPanes`\-Feld der `ThisAddIn`\-Klasse verfügbar gemacht.  Das folgende Codebeispiel sollte von der `ThisAddIn`\-Klasse ausgeführt werden.  
+### <a name="instantiating-the-custom-task-pane"></a>Instantiating the Custom Task Pane  
+ After you create a user control that contains the user interface of the custom task pane, you have to instantiate a <xref:Microsoft.Office.Tools.CustomTaskPane>. To do this, pass the user control to the <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> in your VSTO Add-in by calling one of the <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> methods. This collection is exposed as the `CustomTaskPanes` field of the `ThisAddIn` class. The following code example is intended to be run from the `ThisAddIn` class.  
   
- [!code-csharp[Trin_TaskPaneBasic#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_TaskPaneBasic/CS/ThisAddIn.cs#2)]
- [!code-vb[Trin_TaskPaneBasic#2](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_TaskPaneBasic/VB/ThisAddIn.vb#2)]  
+ [!code-vb[Trin_TaskPaneBasic#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb#2)] [!code-csharp[Trin_TaskPaneBasic#2](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#2)]  
   
- Die <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A>\-Methoden geben ein neues <xref:Microsoft.Office.Tools.CustomTaskPane>\-Objekt zurück.  Sie können dieses Objekt verwenden, um die Darstellung des Aufgabenbereichs zu ändern und auf Benutzerereignisse zu reagieren.  
+ The <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> methods return a new <xref:Microsoft.Office.Tools.CustomTaskPane> object. You can use this object to modify the appearance of the task pane and to respond to user events.  
   
-### Steuern des Aufgabenbereichs in mehreren Fenstern  
- Benutzerdefinierte Aufgabenbereiche sind einem Dokumentrahmenfenster zugeordnet, das eine Ansicht eines Dokuments oder Elements für den Benutzer darstellt.  Der Aufgabenbereich ist nur sichtbar, wenn das zugeordnete Fenster sichtbar ist.  
+### <a name="controlling-the-task-pane-in-multiple-windows"></a>Controlling the Task Pane in Multiple Windows  
+ Custom task panes are associated with a document frame window, which presents a view of a document or item to the user. The task pane is visible only when the associated window is visible.  
   
- Um zu bestimmen, in welchem Fenster der benutzerdefinierte Aufgabenbereich angezeigt wird, verwenden Sie die entsprechende <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A>\-Methodenüberladung beim Erstellen des Aufgabenbereichs:  
+ To determine which window displays the custom task pane, use the appropriate <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> method overload when you create the task pane:  
   
--   Um dem aktiven Fenster den Aufgabenbereich zuzuordnen, verwenden Sie die <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A>\-Methode.  
+-   To associate the task pane with the active window, use the <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> method.  
   
--   Um den Aufgabenbereich einem Dokument zuzuordnen, das von einem angegebenen Fenster gehostet wird, verwenden Sie die <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A>\-Methode.  
+-   To associate the task pane with a document that is hosted by a specified window, use the <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> method.  
   
- Wenn mehrere Fenster geöffnet sind, erfordern einige Office\-Anwendungen explizite Anweisungen dazu, wann der Aufgabenbereich erstellt oder angezeigt werden soll.  Daher ist es wichtig, zu entscheiden, wo der benutzerdefinierte Aufgabenbereich im Code instanziiert werden soll, um sicherzustellen, dass der Aufgabenbereich mit den entsprechenden Dokumenten oder Elementen in der Anwendung angezeigt wird.  Weitere Informationen finden Sie unter [Verwalten benutzerdefinierter Aufgabenbereiche in Anwendungsfenstern](#Managing).  
+ Some Office applications require explicit instructions for when to create or display your task pane when more than one window is open. This makes it important to consider where to instantiate the custom task pane in your code to ensure that the task pane appears with the appropriate documents or items in the application. For more information, see [Managing Custom Task Panes in Application Windows](#Managing).  
   
-## Zugreifen auf die Anwendung vom Aufgabenbereich aus  
- Wenn Sie die Anwendung über das Benutzersteuerelement automatisieren möchten, können Sie mithilfe von `Globals.ThisAddIn.Application` im Code direkt auf das Objektmodell zugreifen.  Die statische `Globals`\-Klasse ermöglicht den Zugriff auf das `ThisAddIn`\-Objekt.  Das `Application`\-Feld dieses Objekts ist der Einstiegspunkt in das Objektmodell der Anwendung.  
+## <a name="accessing-the-application-from-the-task-pane"></a>Accessing the Application from the Task Pane  
+ If you want to automate the application from the user control, you can directly access the object model by using `Globals.ThisAddIn.Application` in your code. The static `Globals` class provides access to the `ThisAddIn` object. The `Application` field of this object is the entry point into the object model of the application.  
   
- Weitere Informationen zum `Application`\-Feld des `ThisAddIn`\-Objekts finden Sie unter [Programmieren von VSTO-Add-Ins](../vsto/programming-vsto-add-ins.md).  Eine exemplarische Vorgehensweise, in der das Automatisieren einer Anwendung über einen benutzerdefinierten Aufgabenbereich veranschaulicht wird, finden Sie unter [Exemplarische Vorgehensweise: Automatisieren einer Anwendung über einen benutzerdefinierten Aufgabenbereich](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).  Weitere Informationen zur `Globals`\-Klasse finden Sie unter [Globaler Zugriff auf Objekte in Office-Projekten](../vsto/global-access-to-objects-in-office-projects.md).  
+ For more information about the `Application` field of the `ThisAddIn` object, see [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md). For a walkthrough that demonstrates how to automate an application from a custom task pane, see [Walkthrough: Automating an Application from a Custom Task Pane](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md). For more information about the `Globals` class, see [Global Access to Objects in Office Projects](../vsto/global-access-to-objects-in-office-projects.md).  
   
-## Verwalten der Benutzeroberfläche des Aufgabenbereichs  
- Nachdem Sie den Aufgabenbereich erstellt haben, können Sie Eigenschaften und Ereignisse des <xref:Microsoft.Office.Tools.CustomTaskPane>\-Objekts verwenden, um die Benutzeroberfläche des Aufgabenbereichs zu steuern und auf Änderungen des Aufgabenbereichs durch Benutzer zu reagieren.  
+## <a name="managing-the-user-interface-of-the-task-pane"></a>Managing the User Interface of the Task Pane  
+ After you create the task pane, you can use properties and events of the <xref:Microsoft.Office.Tools.CustomTaskPane> object to control the user interface of the task pane and to respond when the user changes the task pane.  
   
-### Sichtbarmachen des benutzerdefinierten Aufgabenbereichs  
- Der Aufgabenbereich ist standardmäßig nicht sichtbar.  Um den Aufgabenbereich sichtbar zu machen, müssen Sie die <xref:Microsoft.Office.Tools.CustomTaskPane.Visible%2A>\-Eigenschaft auf **true** festlegen.  
+### <a name="making-the-custom-task-pane-visible"></a>Making the Custom Task Pane Visible  
+ By default, the task pane is not visible. To make the task pane visible, you must set the <xref:Microsoft.Office.Tools.CustomTaskPane.Visible%2A> property to **true**.  
   
- Benutzer können einen Aufgabenbereich jederzeit durch Klicken auf die Schaltfläche **Schließen** \(X\) in der Ecke des Aufgabenbereichs schließen.  Es gibt jedoch kein Standardverfahren für das erneute Öffnen des benutzerdefinierten Aufgabenbereichs durch die Benutzer.  Wenn ein Benutzer einen benutzerdefinierten Aufgabenbereich schließt, kann dieser Benutzer den benutzerdefinierten Aufgabenbereich nur erneut anzeigen, wenn Sie ein Verfahren zum Anzeigen des Aufgabenbereichs bereitstellen.  
+ Users can close a task pane at any time by clicking the **Close** button (X) in the corner of the task pane. However, there is no default way for users to open the custom task pane again. If a user closes a custom task pane, that user cannot view the custom task pane again unless you provide a way to display it.  
   
- Wenn Sie im VSTO\-Add\-In einen benutzerdefinierten Aufgabenbereich erstellen, sollten Sie auch ein Benutzeroberflächenelement, z. B. eine Schaltfläche, erstellen, auf das Benutzer klicken können, um den benutzerdefinierten Aufgabenbereich anzuzeigen oder auszublenden.  Wenn Sie einen benutzerdefinierten Aufgabenbereich in einer Microsoft Office\-Anwendung erstellen, die das Anpassen des Menübands unterstützt, können Sie dem Menüband eine Steuerelementgruppe mit einer Schaltfläche hinzufügen, über die der benutzerdefinierte Aufgabenbereich angezeigt und ausgeblendet wird.  Eine exemplarische Vorgehensweise zur Veranschaulichung finden Sie unter [Exemplarische Vorgehensweise: Synchronisieren eines benutzerdefinierten Aufgabenbereichs mit einer Multifunktionsleistenschaltfläche](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
+ If you create a custom task pane in your VSTO Add-in, you should also create a UI element, such as a button, that users can click to display or hide your custom task pane. If you create a custom task pane in a Microsoft Office application that supports customizing the Ribbon, you can add a control group to the Ribbon with a button that displays or hides your custom task pane. For a walkthrough that demonstrates how to do this, see [Walkthrough: Synchronizing a Custom Task Pane with a Ribbon Button](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
   
- Wenn Sie einen benutzerdefinierten Aufgabenbereich in einer Microsoft Office\-Anwendung erstellen, die das Anpassen des Menübands nicht unterstützt, können Sie eine <xref:Microsoft.Office.Core.CommandBarButton> hinzufügen, mit der der benutzerdefinierte Aufgabenbereich angezeigt oder ausgeblendet wird.  
+ If you create a custom task pane in a Microsoft Office application that does not support customizing the Ribbon, you can add a <xref:Microsoft.Office.Core.CommandBarButton> that displays or hides your custom task pane.  
   
-### Ändern der Darstellung des Aufgabenbereichs  
- Die Größe und Position eines benutzerdefinierten Aufgabenbereichs können mithilfe der Eigenschaften des <xref:Microsoft.Office.Tools.CustomTaskPane>\-Objekts gesteuert werden.  Mit den Eigenschaften des <xref:System.Windows.Forms.UserControl>\-Objekts, das im benutzerdefinierten Aufgabenbereich enthalten ist, können Sie viele weitere Änderungen an der Darstellung eines benutzerdefinierten Aufgabenbereichs vornehmen.  Beispielsweise können Sie mit der <xref:System.Windows.Forms.Control.BackgroundImage%2A>\-Eigenschaft des Benutzersteuerelements ein Hintergrundbild für einen benutzerdefinierten Aufgabenbereich angeben.  
+### <a name="modifying-the-appearance-of-the-task-pane"></a>Modifying the Appearance of the Task Pane  
+ You can control the size and location of a custom task pane by using properties of the <xref:Microsoft.Office.Tools.CustomTaskPane> object. You can make many other changes to the appearance of a custom task pane by using properties of the <xref:System.Windows.Forms.UserControl> object that is contained in the custom task pane. For example, you can specify a background image for a custom task pane by using the <xref:System.Windows.Forms.Control.BackgroundImage%2A> property of the user control.  
   
- In der folgenden Tabelle werden die Änderungen aufgelistet, die Sie mithilfe von <xref:Microsoft.Office.Tools.CustomTaskPane>\-Eigenschaften an einem benutzerdefinierten Aufgabenbereich vornehmen können.  
+ The following table lists the changes you can make to a custom task pane by using <xref:Microsoft.Office.Tools.CustomTaskPane> properties.  
   
-|Aufgabe|Eigenschaft|  
-|-------------|-----------------|  
-|So ändern Sie die Größe des Aufgabenbereichs|<xref:Microsoft.Office.Tools.CustomTaskPane.Height%2A><br /><br /> <xref:Microsoft.Office.Tools.CustomTaskPane.Width%2A>|  
-|So ändern Sie die Position des Aufgabenbereichs|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPosition%2A>|  
-|So blenden Sie den Aufgabenbereich aus oder machen ihn sichtbar|<xref:Microsoft.Office.Tools.CustomTaskPane.Visible%2A>|  
-|So verhindern Sie das Ändern der Position des Aufgabenbereichs durch Benutzer|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPositionRestrict%2A>|  
+|Task|Property|  
+|----------|--------------|  
+|To change the size of the task pane|<xref:Microsoft.Office.Tools.CustomTaskPane.Height%2A><br /><br /> <xref:Microsoft.Office.Tools.CustomTaskPane.Width%2A>|  
+|To change the location of the task pane|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPosition%2A>|  
+|To hide the task pane or make it visible|<xref:Microsoft.Office.Tools.CustomTaskPane.Visible%2A>|  
+|To prevent the user from changing the location of the task pane|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPositionRestrict%2A>|  
   
-### Programmieren von Ereignissen des benutzerdefinierten Aufgabenbereichs  
- Sie können festlegen, dass das VSTO\-Add\-In auf Änderungen des benutzerdefinierten Aufgabenbereichs durch den Benutzer reagiert.  Wenn der Benutzer beispielsweise die Ausrichtung des Bereichs von vertikal in horizontal ändert, sollen möglicherweise die Steuerelemente neu positioniert werden.  
+### <a name="programming-custom-task-pane-events"></a>Programming Custom Task Pane Events  
+ You might want your VSTO Add-in to respond when the user modifies the custom task pane. For example, if the user changes the orientation of the pane from vertical to horizontal, you might want to reposition the controls.  
   
- In der folgenden Tabelle sind die Ereignisse aufgeführt, die Sie behandeln können, um auf Änderungen von Benutzern am benutzerdefinierten Aufgabenbereich zu reagieren.  
+ The following table lists the events that you can handle to respond to changes that the user makes to the custom task pane.  
   
-|Aufgabe|Ereignis|  
-|-------------|--------------|  
-|So reagieren Sie, wenn der Benutzer die Position des Aufgabenbereichs ändert|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPositionChanged>|  
-|So reagieren Sie, wenn der Benutzer den Aufgabenbereich ausblendet oder sichtbar macht|<xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged>|  
+|Task|Event|  
+|----------|-----------|  
+|To respond when the user changes the location of the task pane.|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPositionChanged>|  
+|To respond when the user hides the task pane or makes it visible.|<xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged>|  
   
-## Bereinigen der vom Aufgabenbereich verwendeten Ressourcen  
- Nachdem Sie einen benutzerdefinierten Aufgabenbereich erstellt haben, bleibt das <xref:Microsoft.Office.Tools.CustomTaskPane>\-Objekt so lange im Arbeitsspeicher, wie das VSTO\-Add\-In ausgeführt wird.  Das Objekt bleibt selbst dann im Arbeitsspeicher, wenn der Benutzer auf die Schaltfläche **Schließen** \(X\) in der Ecke des Aufgabenbereichs klickt.  
+## <a name="cleaning-up-resources-used-by-the-task-pane"></a>Cleaning Up Resources Used by the Task Pane  
+ After you create a custom task pane, the <xref:Microsoft.Office.Tools.CustomTaskPane> object remains in memory as long as your VSTO Add-in is running. The object remains in memory even after the user clicks the **Close** button (X) in the corner of the task pane.  
   
- Um vom Aufgabenbereich verwendete Ressourcen zu bereinigen, während das VSTO\-Add\-In noch ausgeführt wird, verwenden Sie die <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A>\-Methode oder <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A>\-Methode.  Durch diese Methoden werden das angegebene <xref:Microsoft.Office.Tools.CustomTaskPane>\-Objekt aus der `CustomTaskPanes`\-Auflistung entfernt und die <xref:Microsoft.Office.Tools.CustomTaskPane.Dispose%2A>\-Methode des Objekts aufgerufen.  
+ To clean up resources used by the task pane while the VSTO Add-in is still running, use the <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> or <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> methods. These methods remove the specified <xref:Microsoft.Office.Tools.CustomTaskPane> object from the `CustomTaskPanes` collection, and they call the <xref:Microsoft.Office.Tools.CustomTaskPane.Dispose%2A> method of the object.  
   
- Vom benutzerdefinierten Aufgabenbereich verwendete Ressourcen werden von der [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] automatisch bereinigt, wenn das VSTO\-Add\-In entladen wird.  Sie sollten nicht die <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A>\-Methode oder <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A>\-Methode im `ThisAddIn_Shutdown`\-Ereignishandler Ihres Projekts aufrufen.  Durch diese Methoden wird <xref:System.ObjectDisposedException> ausgelöst, da die vom <xref:Microsoft.Office.Tools.CustomTaskPane>\-Objekt verwendeten Ressourcen von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] bereinigt werden, bevor `ThisAddIn_Shutdown` aufgerufen wird.  Weitere Informationen zu `ThisAddIn_Shutdown` finden Sie unter [Ereignisse in Office-Projekten](../vsto/events-in-office-projects.md).  
+ The [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] automatically cleans up resources used by the custom task pane when the VSTO Add-in is unloaded. Do not call the <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> or <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> methods in the `ThisAddIn_Shutdown` event handler in your project. These methods will throw an <xref:System.ObjectDisposedException>, because the [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] cleans up resources used by the <xref:Microsoft.Office.Tools.CustomTaskPane> object before `ThisAddIn_Shutdown` is called. For more information about `ThisAddIn_Shutdown`, see [Events in Office Projects](../vsto/events-in-office-projects.md)  
   
-##  <a name="Managing"></a> Verwalten von benutzerdefinierten Aufgabenbereichen in mehreren Anwendungsfenstern  
- Wenn Sie einen benutzerdefinierten Aufgabenbereich in einer Anwendung erstellen, die mehrere Fenster zum Anzeigen von Dokumenten und anderen Elementen verwendet, müssen Sie in zusätzlichen Schritten sicherstellen, dass der Aufgabenbereich sichtbar ist, wenn der Benutzer es erwartet.  
+##  <a name="Managing"></a> Managing Custom Task Panes in Multiple Application Windows  
+ When you create a custom task pane in an application that uses multiple windows to display documents and other items, you need to take extra steps to ensure that the task pane is visible when the user expects it to be.  
   
- Benutzerdefinierte Aufgabenbereiche sind in allen Anwendungen einem Dokumentrahmenfenster zugeordnet, das eine Ansicht eines Dokuments oder Elements für den Benutzer enthält.  Der Aufgabenbereich ist nur sichtbar, wenn das zugeordnete Fenster sichtbar ist.  Allerdings verwenden nicht alle Anwendungen Dokumentrahmenfenster auf dieselbe Weise.  
+ Custom task panes in all applications are associated with a document frame window, which presents a view of a document or item to the user. The task pane is visible only when the associated window is visible. However, not all applications use document frame windows the same way.  
   
- Für die folgenden Anwendungsgruppen gelten unterschiedliche Entwicklungsanforderungen:  
+ The following application groups have different development requirements:  
   
 -   [Outlook](#Outlook)  
   
--   [Word, InfoPath und PowerPoint](#WordAndInfoPath)  
+-   [Word, InfoPath, and PowerPoint](#WordAndInfoPath)  
   
- ![Link zu Video](~/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie unter [Gewusst wie: Verwalten von Aufgabenbereichen in Word\-VSTO\-Add\-Ins](http://go.microsoft.com/fwlink/?LinkId=136781).  
+ ![link to video](../vsto/media/playvideo.gif "link to video") For a related video demonstration, see [How Do I: Manage Task Panes in Word VSTO Add-ins?](http://go.microsoft.com/fwlink/?LinkId=136781).  
   
 ##  <a name="Outlook"></a> Outlook  
- Wenn Sie einen benutzerdefinierten Aufgabenbereich für Outlook erstellen, wird dieser einem bestimmten Explorer\- oder Inspektor\-Fenster zugeordnet.  Explorer\-Fenster sind Fenster, die den Inhalt eines Ordners anzeigen. Inspektor\-Fenster sind Fenster, die ein Element, z. B. eine E\-Mail oder Aufgabe, anzeigen.  
+ When you create a custom task pane for Outlook, the custom task pane is associated with a specific Explorer or Inspector window. Explorers are windows that display the contents of a folder, and Inspectors are windows that display an item such as an e-mail message or a task.  
   
- Wenn Sie einen benutzerdefinierten Aufgabenbereich mit mehreren Explorer\- oder Inspektor\-Fenstern anzeigen möchten, müssen Sie eine neue Instanz des benutzerdefinierten Aufgabenbereichs erstellen, wenn ein Explorer\- oder Inspektor\-Fenster geöffnet wird.  Behandeln Sie dazu ein Ereignis, das ausgelöst wird, wenn ein Explorer\- oder Inspektor\-Fenster erstellt wird, und erstellen Sie dann den Aufgabenbereich im Ereignishandler.  Sie können auch Explorer\- und Inspektor\-Ereignisse behandeln, um Aufgabenbereiche abhängig davon auszublenden oder anzuzeigen, welches Fenster sichtbar ist.  
+ If you want to display a custom task pane with multiple Explorer or Inspector windows, you need to create a new instance of the custom task pane when an Explorer or Inspector window opens. To do this, handle an event that is raised when an Explorer or Inspector window is created, and then create the task pane in the event handler. You can also handle Explorer and Inspector events to hide or display task panes depending on which window is visible.  
   
- Um den Aufgabenbereich einem bestimmten Explorer oder Inspektor zuzuordnen, verwenden Sie die <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A>\-Methode zum Erstellen des Aufgabenbereichs, und übergeben Sie das <xref:Microsoft.Office.Interop.Outlook.Explorer>\-Objekt oder <xref:Microsoft.Office.Interop.Outlook.Inspector>\-Objekt an den *window*\-Parameter.  Weitere Informationen zum Erstellen von benutzerdefinierten Aufgabenbereichen finden Sie unter [Übersicht über benutzerdefinierte Aufgabenbereiche](../vsto/custom-task-panes.md).  
+ To associate the task pane with a specific Explorer or Inspector, use the <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> method to create the task pane, and pass the <xref:Microsoft.Office.Interop.Outlook.Explorer> or <xref:Microsoft.Office.Interop.Outlook.Inspector> object to the *window* parameter. For more information about creating custom task panes, see [Custom Task Panes Overview](../vsto/custom-task-panes.md).  
   
- Eine exemplarische Vorgehensweise, die das Erstellen eines Aufgabenbereichs für jede geöffnete E\-Mail veranschaulicht, finden Sie unter [Exemplarische Vorgehensweise: Anzeigen von benutzerdefinierten Aufgabenbereichen in E-Mails in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
+ For a walkthrough that demonstrates how to create a task pane for every e-mail message that is opened, see [Walkthrough: Displaying Custom Task Panes with E-Mail Messages in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
   
-### Outlook\-Ereignisse  
- Um den Zustand von Explorer\-Fenstern zu überwachen, können Sie die folgenden Explorer\-bezogenen Ereignisse behandeln:  
+### <a name="outlook-events"></a>Outlook Events  
+ To monitor the state of Explorer windows, you can handle the following Explorer-related events:  
   
 -   <xref:Microsoft.Office.Interop.Outlook.ExplorersEvents_Event.NewExplorer>  
   
@@ -161,7 +165,7 @@ caps.handback.revision: 51
   
 -   <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Deactivate>  
   
- Um den Zustand von Inspektor\-Fenstern zu überwachen, können Sie die folgenden Inspektor\-bezogenen Ereignisse behandeln:  
+ To monitor the state of Inspector windows, you can handle the following Inspector-related events:  
   
 -   <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector>  
   
@@ -171,20 +175,20 @@ caps.handback.revision: 51
   
 -   <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Deactivate>  
   
-### Verhindern von mehreren Instanzen eines benutzerdefinierten Aufgabenbereichs in Outlook  
- Um zu verhindern, dass in Outlook\-Fenstern mehrere Instanzen eines benutzerdefinierten Aufgabenbereichs angezeigt werden, müssen Sie den benutzerdefinierten Aufgabenbereich explizit aus der `CustomTaskPanes`\-Auflistung der `ThisAddIn`\-Klasse entfernen, wenn die einzelnen Fenster geschlossen werden.  Rufen Sie die <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A>\-Methode in einem Ereignis auf, das beim Schließen eines Fensters ausgelöst wird, z. B. <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> oder <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Close>.  
+### <a name="preventing-multiple-instances-of-a-custom-task-pane-in-outlook"></a>Preventing Multiple Instances of a Custom Task Pane in Outlook  
+ To prevent Outlook windows from displaying multiple instances of a custom task pane, explicitly remove the custom task pane from the `CustomTaskPanes` collection of the `ThisAddIn` class when each window is closed. Call the <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> method in an event that is raised when a window is closed, such as <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> or <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Close>.  
   
- Wenn Sie den benutzerdefinierten Aufgabenbereich nicht explizit entfernen, werden in Outlook\-Fenstern möglicherweise mehrere Instanzen des benutzerdefinierten Aufgabenbereichs angezeigt.  Fenster werden in Outlook gelegentlich wiederverwendet, und in wiederverwendeten Fenstern werden Verweise auf benutzerdefinierte Aufgabenbereiche beibehalten, die an die Fenster angefügt waren.  
+ If you do not explicitly remove the custom task pane, Outlook windows might display multiple instances of the custom task pane. Outlook sometimes recycles windows, and recycled windows retain references to any custom task panes that were attached to them.  
   
-##  <a name="WordAndInfoPath"></a> Word, InfoPath und PowerPoint  
- In Word, InfoPath und PowerPoint wird jedes Dokument in einem anderen Dokumentrahmenfenster angezeigt.  Wenn Sie einen benutzerdefinierten Aufgabenbereich für diese Anwendungen erstellen, ist dieser nur einem bestimmten Dokument zugeordnet.  Wenn der Benutzer ein anderes Dokument öffnet, wird der benutzerdefinierte Aufgabenbereich ausgeblendet, bis das vorherige Dokument wieder sichtbar ist.  
+##  <a name="WordAndInfoPath"></a> Word, InfoPath, and PowerPoint  
+ Word, InfoPath, and PowerPoint display each document in a different document frame window. When you create a custom task pane for these applications, the custom task pane is associated only with a specific document. If the user opens a different document, the custom task pane is hidden until the earlier document is visible again.  
   
- Wenn Sie einen benutzerdefinierten Aufgabenbereich mit mehreren Dokumenten anzeigen möchten, erstellen Sie eine neue Instanz des benutzerdefinierten Aufgabenbereichs, wenn der Benutzer ein neues Dokument erstellt oder ein vorhandenes Dokument öffnet.  Behandeln Sie dazu Ereignisse, die ausgelöst werden, wenn ein Dokument erstellt oder geöffnet wird, und erstellen Sie dann den Aufgabenbereich in den Ereignishandlern.  Sie können auch Dokumentereignisse behandeln, um Aufgabenbereiche abhängig davon auszublenden oder anzuzeigen, welches Dokument sichtbar ist.  
+ If you want to display a custom task pane with multiple documents, create a new instance of the custom task pane when the user creates a new document or opens an existing document. To do this, handle events that are raised when a document is created or opened, and then create the task pane in the event handlers. You can also handle document events to hide or display task panes depending on which document is visible.  
   
- Um den Aufgabenbereich einem bestimmten Dokumentfenster zuzuordnen, verwenden Sie die <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A>\-Methode zum Erstellen des Aufgabenbereichs, und übergeben <xref:Microsoft.Office.Interop.Word.Window> \(für Word\), <xref:Microsoft.Office.Interop.InfoPath.WindowObject> \(für InfoPath\) oder <xref:Microsoft.Office.Interop.PowerPoint.DocumentWindow> \(für PowerPoint\) an den *window*\-Parameter.  
+ To associate the task pane with a specific document window, use the <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> method to create the task pane, and pass a <xref:Microsoft.Office.Interop.Word.Window> (for Word),  <xref:Microsoft.Office.Interop.InfoPath.WindowObject> (for InfoPath), or <xref:Microsoft.Office.Interop.PowerPoint.DocumentWindow> (for PowerPoint) to the *window* parameter.  
   
-### Word\-Ereignisse  
- Um den Zustand von Dokumentfenstern in Word zu überwachen, können Sie die folgenden Ereignisse behandeln:  
+### <a name="word-events"></a>Word Events  
+ To monitor the state of document windows in Word, you can handle the following events:  
   
 -   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeClose>  
   
@@ -196,8 +200,8 @@ caps.handback.revision: 51
   
 -   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowDeactivate>  
   
-### InfoPath\-Ereignisse  
- Um den Zustand von Dokumentfenstern in InfoPath zu überwachen, können Sie die folgenden Ereignisse behandeln:  
+### <a name="infopath-events"></a>InfoPath Events  
+ To monitor the state of document windows in InfoPath, you can handle the following events:  
   
 -   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.NewXDocument>  
   
@@ -209,8 +213,8 @@ caps.handback.revision: 51
   
 -   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentOpen>  
   
-### PowerPoint\-Ereignisse  
- Um den Zustand von Dokumentfenstern in PowerPoint zu überwachen, können Sie die folgenden Ereignisse behandeln:  
+### <a name="powerpoint-events"></a>PowerPoint Events  
+ To monitor the state of document windows in PowerPoint, you can handle the following events:  
   
 -   <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterNewPresentation>  
   
@@ -224,10 +228,9 @@ caps.handback.revision: 51
   
 -   <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowDeactivate>  
   
-## Siehe auch  
- [Gewusst wie: Hinzufügen eines benutzerdefinierten Aufgabenbereichs zu einer Anwendung](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
- [Exemplarische Vorgehensweise: Automatisieren einer Anwendung über einen benutzerdefinierten Aufgabenbereich](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
- [Exemplarische Vorgehensweise: Synchronisieren eines benutzerdefinierten Aufgabenbereichs mit einer Multifunktionsleistenschaltfläche](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
- [Exemplarische Vorgehensweise: Anzeigen von benutzerdefinierten Aufgabenbereichen in E-Mails in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
-  
-  
+## <a name="see-also"></a>See Also  
+ [How to: Add a Custom Task Pane to an Application](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
+ [Walkthrough: Automating an Application from a Custom Task Pane](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
+ [Walkthrough: Synchronizing a Custom Task Pane with a Ribbon Button](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
+ [Walkthrough: Displaying Custom Task Panes with E-Mail Messages in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
+

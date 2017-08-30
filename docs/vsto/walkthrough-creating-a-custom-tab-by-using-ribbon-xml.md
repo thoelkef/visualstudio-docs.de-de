@@ -1,93 +1,97 @@
 ---
-title: "Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit Multifunktionsleisten-XML"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Benutzerdefinierte Registerkarte [Office-Entwicklung in Visual Studio]"
-  - "Anpassen des Menübands, Benutzerdefiniertes Menüband, Registerkarten"
-  - "Menüband [Office-Entwicklung in Visual Studio], Anpassen"
-  - "Menüband [Office-Entwicklung in Visual Studio], Registerkarten"
-  - "Menüband [Office-Entwicklung in Visual Studio], XML"
-  - "XML [Office-Entwicklung in Visual Studio], Menüband"
+title: 'Walkthrough: Creating a Custom Tab by Using Ribbon XML | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Ribbon [Office development in Visual Studio], tabs
+- customizing the Ribbon, tabscustom Ribbon, tabs
+- Ribbon [Office development in Visual Studio], XML
+- XML [Office development in Visual Studio], Ribbon
+- Ribbon [Office development in Visual Studio], customizing
+- Custom tab [Office development in Visual Studio]
 ms.assetid: f6391a01-df1a-4a0f-bfbb-a9526c73b2b3
 caps.latest.revision: 35
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 34
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: c244548c3c890e449d785473fed9b55935163a9e
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit Multifunktionsleisten-XML
-  Diese exemplarische Vorgehensweise veranschaulicht das Erstellen einer benutzerdefinierten Menüband\-Registerkarte mithilfe des **Menüband \(XML\)**\-Elements.  
+# <a name="walkthrough-creating-a-custom-tab-by-using-ribbon-xml"></a>Walkthrough: Creating a Custom Tab by Using Ribbon XML
+  This walkthrough demonstrates how to create a custom Ribbon tab by using the **Ribbon (XML)** item.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
- In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:  
+ This walkthrough illustrates the following tasks:  
   
--   Hinzufügen von Schaltflächen zur Registerkarte **\-Add\-Ins**.  Die Registerkarte **\-Add\-Ins** ist die Standardregisterkarte, die in der Menüband\-XML\-Datei definiert wird.  
+-   Adding buttons to the **Add-Ins** tab. The **Add-Ins** tab is the default tab that is defined in the Ribbon XML file.  
   
--   Automatisieren von Microsoft Office Word mithilfe der Schaltflächen auf der Registerkarte **\-Add\-Ins**.  
+-   Automating Microsoft Office Word by using the buttons on the **Add-Ins** tab.  
   
 > [!NOTE]  
->  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten.  Diese Elemente sind von der jeweiligen Visual Studio\-Version und den verwendeten Einstellungen abhängig.  Weitere Informationen finden Sie unter [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/de-de/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## Vorbereitungsmaßnahmen  
- Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
 -   Microsoft Word.  
   
-## Erstellen des Projekts  
- Der erste Schritt besteht im Erstellen eines VSTO\-Add\-In\-Projekts für Word.  Später passen Sie die Registerkarte **Add\-Ins** dieses Dokuments an.  
+## <a name="creating-the-project"></a>Creating the Project  
+ The first step is to create a Word VSTO Add-in project. You will later customize the **Add-Ins** tab of this document.  
   
-#### So erstellen Sie ein neues Projekt  
+#### <a name="to-create-a-new-project"></a>To create a new project  
   
-1.  Erstellen Sie ein **Word\-Add\-in**\-Projekt mit dem Namen "MyRibbonAddIn".  
+1.  Create a **Word Add-in** project with the name **MyRibbonAddIn**.  
   
-     Weitere Informationen finden Sie unter [Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] öffnet die Codedatei **ThisAddIn.cs** oder **ThisAddIn.vb** und fügt das Projekt **MyRibbonAddIn** dem **Projektmappen\-Explorer** hinzu.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] opens the **ThisAddIn.cs** or **ThisAddIn.vb** code file and adds the **MyRibbonAddIn** project to **Solution Explorer**.  
   
-## Erstellen der VSTO\-Registerkarte "Add\-Ins"  
- Fügen Sie zum Erstellen der Registerkarte **Add\-Ins** Ihrem Projekt ein **Menüband \(XML\)**\-Element  hinzu.  Später in dieser exemplarischen Vorgehensweise werden Sie dieser Registerkarte einige Schaltflächen hinzufügen.  
+## <a name="creating-the-vsto-add-ins-tab"></a>Creating the VSTO Add-ins Tab  
+ To create the **Add-Ins** tab, add a **Ribbon (XML)** item to your project. Later in this walkthrough, you will add some buttons to this tab.  
   
-#### So erstellen Sie die Registerkarte "Add\-Ins"  
+#### <a name="to-create-the-add-ins-tab"></a>To create the Add-Ins tab  
   
-1.  Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.  
+1.  On the **Project** menu, click **Add New Item**.  
   
-2.  Klicken Sie im Dialogfeld **Neues Element hinzufügen** auf **Menüband \(XML\)**.  
+2.  In the **Add New Item** dialog box, select **Ribbon (XML)**.  
   
-3.  Ändern Sie den Namen des neuen Menübands in **MyRibbon**, und klicken Sie dann auf **Hinzufügen**.  
+3.  Change the name of the new Ribbon to **MyRibbon**, and click **Add**.  
   
-     Die Datei **MyRibbon.cs** oder **MyRibbon.vb** wird im Designer geöffnet.  Eine XML\-Datei mit dem Namen **MyRibbon.xml** wird dem Projekt ebenfalls hinzugefügt.  
+     The **MyRibbon.cs** or **MyRibbon.vb** file opens in the designer. An XML file that is named **MyRibbon.xml** is also added to your project.  
   
-4.  Klicken Sie im **Projektmappen\-Explorer** mit der rechten Maustaste auf die Datei **ThisAddIn.cs** oder **ThisAddIn.vb**, und klicken Sie dann auf **Code anzeigen**.  
+4.  In **Solution Explorer**, right-click **ThisAddin.cs** or **ThisAddin.vb**, and then click **View Code**.  
   
-5.  Fügen Sie der Klasse **ThisAddin** den folgenden Code hinzu.  Mit diesem Code wird die CreateRibbonExtensibilityObject\-Methode überschrieben und der Office\-Anwendung die Menüband\-XML\-Klasse zurückgegeben.  
+5.  Add the following code to the **ThisAddin** class. This code overrides the CreateRibbonExtensibilityObject method and returns the Ribbon XML class to the Office application.  
   
-     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab_XML/CS/ThisAddIn.cs#1)]
-     [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab_XML/VB/ThisAddIn.vb#1)]  
+     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]  [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]  
   
-6.  Klicken Sie im **Projektmappen\-Explorer** mit der rechten Maustaste auf das Projekt **MyRibbonAddIn**, und klicken Sie dann auf **Erstellen**.  Vergewissern Sie sich, dass das Projekt ohne Fehler erstellt wurde.  
+6.  In **Solution Explorer**, right-click the **MyRibbonAddIn** project and then click **Build**. Verify that the project builds without errors.  
   
-## Hinzufügen von Schaltflächen zur Registerkarte "Add\-Ins"  
- Das Ziel dieses VSTO\-Add\-Ins besteht darin, Benutzern eine Möglichkeit bereitzustellen, dem aktiven Dokument Textbausteine und eine bestimmte Tabelle hinzuzufügen.  Fügen Sie zum Bereitstellen der Benutzeroberfläche der Registerkarte **Add\-Ins** zwei Schaltflächen hinzu, indem Sie die Menüband\-XML\-Datei ändern.  Später in dieser exemplarischen Vorgehensweise definieren Sie Rückrufmethoden für die Schaltflächen.  Weitere Informationen zur Menüband\-XML\-Klasse finden Sie unter [Multifunktionsleisten-XML](../vsto/ribbon-xml.md).  
+## <a name="adding-buttons-to-the-add-ins-tab"></a>Adding Buttons to the Add-Ins Tab  
+ The goal for this VSTO Add-in is to give users a way to add boilerplate text and a specific table to the active document. To provide the user interface, add two buttons to the **Add-Ins** tab by modifying the Ribbon XML file. Later in this walkthrough, you will define callback methods for the buttons. For more information about the Ribbon XML file, see [Ribbon XML](../vsto/ribbon-xml.md).  
   
-#### So fügen Sie der Registerkarte "Add\-Ins" Schaltflächen hinzu  
+#### <a name="to-add-buttons-to-the-add-ins-tab"></a>To add buttons to the Add-Ins tab  
   
-1.  Klicken Sie im **Projektmappen\-Explorer** mit der rechten Maustaste auf die Datei **MyRibbon.xml**, und klicken Sie dann auf **Öffnen**.  
+1.  In **Solution Explorer**, right-click **MyRibbon.xml** and then click **Open**.  
   
-2.  Ersetzen Sie den Inhalt des **tab**\-Elements durch folgenden XML\-Code.  Dieser XML\-Code ändert die Bezeichnung der Standardsteuerelementgruppe in **Inhalt** und fügt zwei neue Schaltflächen mit den Bezeichnungen **Text einfügen** und **Tabelle einfügen** hinzu.  
+2.  Replace the contents of the **tab** element with the following XML. This XML changes the label of the default control group to **Content**, and it adds two new buttons with the labels **Insert Text** and **Insert Table**.  
   
     ```  
     <tab idMso="TabAddIns">  
@@ -102,63 +106,60 @@ caps.handback.revision: 34
     </tab>  
     ```  
   
-## Automatisieren des Dokuments mithilfe der Schaltflächen  
- Sie müssen `onAction`\-Rückrufmethoden für die Schaltflächen **Text einfügen** und **Tabelle einfügen** zum Ausführen von Aktionen hinzufügen, wenn der Benutzer auf diese klickt.  Weitere Informationen zu Rückrufmethoden für Menübandsteuerelemente finden Sie unter [Multifunktionsleisten-XML](../vsto/ribbon-xml.md).  
+## <a name="automating-the-document-by-using-the-buttons"></a>Automating the Document by Using the Buttons  
+ You must add `onAction` callback methods for the **Insert Text** and **Insert Table** buttons to perform actions when the user clicks them. For more information about callback methods for Ribbon controls, see [Ribbon XML](../vsto/ribbon-xml.md).  
   
-#### So fügen Sie Rückrufmethoden für die Schaltflächen hinzu  
+#### <a name="to-add-callback-methods-for-the-buttons"></a>To add callback methods for the buttons  
   
-1.  Klicken Sie im **Projektmappen\-Explorer** mit der rechten Maustaste auf die Datei **MyRibbon.cs**, oder **MyRibbon.vb**, und klicken Sie dann auf **Öffnen**.  
+1.  In **Solution Explorer**, right-click **MyRibbon.cs** or **MyRibbon.vb**, and then click **Open**.  
   
-2.  Fügen Sie den folgenden Code am Anfang der Datei **MyRibbon.cs** oder **MyRibbon.vb** hinzu.  Dieser Code erstellt einen Alias für den Namespace <xref:Microsoft.Office.Interop.Word>.  
+2.  Add the following code to the top of the **MyRibbon.cs** or **MyRibbon.vb** file. This code creates an alias for the <xref:Microsoft.Office.Interop.Word> namespace.  
   
-     [!code-csharp[Trin_RibbonButtons#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_RibbonButtons/CS/MyRibbon.cs#1)]
-     [!code-vb[Trin_RibbonButtons#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_RibbonButtons/VB/MyRibbon.vb#1)]  
+     [!code-csharp[Trin_RibbonButtons#1](../vsto/codesnippet/CSharp/Trin_RibbonButtons/MyRibbon.cs#1)]  [!code-vb[Trin_RibbonButtons#1](../vsto/codesnippet/VisualBasic/Trin_RibbonButtons/MyRibbon.vb#1)]  
   
-3.  Fügen Sie der `MyRibbon`\-Klasse die folgende Methode hinzu.  Dies ist eine Rückrufmethode für die Schaltfläche **Text einfügen**, die dem aktiven Dokument an der aktuellen Position des Cursors eine Zeichenfolge hinzufügt.  
+3.  Add the following method to the `MyRibbon` class. This is a callback method for the **Insert Text** button that adds a string to the active document at the current location of the cursor.  
   
-     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab_XML/CS/MyRibbon.cs#2)]
-     [!code-vb[Trin_Ribbon_Custom_Tab_XML#2](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab_XML/VB/MyRibbon.vb#2)]  
+     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#2](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.cs#2)]  [!code-vb[Trin_Ribbon_Custom_Tab_XML#2](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.vb#2)]  
   
-4.  Fügen Sie der `MyRibbon`\-Klasse die folgende Methode hinzu.  Dies ist eine Rückrufmethode für die Schaltfläche **Tabelle einfügen**, die dem aktiven Dokument an der aktuellen Position des Cursors eine Tabelle hinzufügt.  
+4.  Add the following method to the `MyRibbon` class. This is a callback method for the **Insert Table** button that adds a table to the active document at the current location of the cursor.  
   
-     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#3](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab_XML/CS/MyRibbon.cs#3)]
-     [!code-vb[Trin_Ribbon_Custom_Tab_XML#3](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab_XML/VB/MyRibbon.vb#3)]  
+     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#3](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.cs#3)]  [!code-vb[Trin_Ribbon_Custom_Tab_XML#3](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.vb#3)]  
   
-## Testen des VSTO\-Add\-Ins  
- Beim Ausführen des Projekts wird Word geöffnet, und die Registerkarte mit dem Namen**Add\-Ins** wird auf dem Menüband angezeigt.  Klicken Sie auf die Schaltflächen **Text einfügen** und **Tabelle einfügen** auf der Registerkarte **Add\-Ins**, um den Code zu testen.  
+## <a name="testing-the-vsto-add-in"></a>Testing the VSTO Add-In  
+ When you run the project, Word opens and the tab named **Add-Ins** appears on the Ribbon. Click the **Insert Text** and **Insert Table** buttons on the **Add-Ins** tab to test the code.  
   
-#### So testen Sie Ihr VSTO\-Add\-In  
+#### <a name="to-test-your-vsto-add-in"></a>To test your VSTO Add-in  
   
-1.  Drücken Sie F5, um das Projekt auszuführen.  
+1.  Press F5 to run your project.  
   
-2.  Bestätigen Sie, dass die Registerkarte **Add\-Ins** auf dem Menüband angezeigt wird.  
+2.  Confirm that the **Add-Ins** tab is visible on the Ribbon.  
   
-3.  Klicken Sie auf die Registerkarte **Add\-Ins**.  
+3.  Click the **Add-Ins** tab.  
   
-4.  Bestätigen Sie, dass die Gruppe **Inhalt** auf dem Menüband angezeigt wird.  
+4.  Confirm that the **Content** group is visible on the Ribbon.  
   
-5.  Klicken Sie auf die Schaltfläche **Text einfügen** in der Gruppe **Inhalt**.  
+5.  Click the **Insert Text** button in the **Content** group.  
   
-     Eine Zeichenfolge wird dem Dokument an der aktuellen Position des Cursors hinzugefügt.  
+     A string is added to the document at the current location of the cursor.  
   
-6.  Klicken Sie auf die Schaltfläche **Tabelle einfügen** in der Gruppe **Inhalt**.  
+6.  Click the **Insert Table** button in the **Content** group.  
   
-     Eine Tabelle wird dem Dokument an der aktuellen Position des Cursors hinzugefügt.  
+     A table is added to the document at the current location of the cursor.  
   
-## Nächste Schritte  
- Weitere Informationen zum Anpassen der Office\-Benutzeroberfläche finden Sie in diesen Themen:  
+## <a name="next-steps"></a>Next Steps  
+ You can learn more about how to customize the Office UI from these topics:  
   
--   Anpassen des Menübands einer anderen Office\-Anwendung.  Weitere Informationen zu den Anwendungen, die eine Anpassung des Menübands unterstützen, finden Sie unter[Übersicht über die Multifunktionsleiste](../vsto/ribbon-overview.md).  
+-   Customize the Ribbon of a different Office application. For more information about the applications that support customizing the Ribbon, see [Ribbon Overview](../vsto/ribbon-overview.md).  
   
--   Anpassen des Menüband einer Office\-Anwendung mithilfe des Menüband\-Designers.  Weitere Informationen finden Sie unter [Multifunktionsleisten-Designer](../vsto/ribbon-designer.md).  
+-   Customize the Ribbon of an Office application by using the Ribbon Designer. For more information, see [Ribbon Designer](../vsto/ribbon-designer.md).  
   
--   Erstellen eines benutzerdefinierten Aktionsbereichs.  Weitere Informationen finden Sie unter [Aktionsbereichsübersicht](../vsto/actions-pane-overview.md).  
+-   Create a custom actions pane. For more information, see [Actions Pane Overview](../vsto/actions-pane-overview.md).  
   
--   Anpassen der Benutzeroberfläche von Microsoft Office Outlook mithilfe von Outlook\-Formularbereichen.  Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Entwerfen eines Outlook-Formularbereichs](../vsto/walkthrough-designing-an-outlook-form-region.md).  
+-   Customize the UI of Microsoft Office Outlook by using Outlook Form Regions. For more information, see [Walkthrough: Designing an Outlook Form Region](../vsto/walkthrough-designing-an-outlook-form-region.md).  
   
-## Siehe auch  
- [Übersicht über die Multifunktionsleiste](../vsto/ribbon-overview.md)   
- [Multifunktionsleisten-XML](../vsto/ribbon-xml.md)   
- [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit dem Multifunktionsleisten-Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
+## <a name="see-also"></a>See Also  
+ [Ribbon Overview](../vsto/ribbon-overview.md)   
+ [Ribbon XML](../vsto/ribbon-xml.md)   
+ [Walkthrough: Creating a Custom Tab by Using the Ribbon Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
   
   

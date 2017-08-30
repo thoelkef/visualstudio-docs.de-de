@@ -1,76 +1,80 @@
 ---
-title: "Gewusst wie: Exportieren einer Multifunktionsleiste aus dem Multifunktionsleisten-Designer in Multifunktionsleisten-XML"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Benutzerdefiniertes Menüband, XML"
-  - "Anpassen des Menübands, XML"
-  - "Exportieren der Multifunktionsleiste"
-  - "Menüband [Office-Entwicklung in Visual Studio], Exportieren"
-  - "Menüband [Office-Entwicklung in Visual Studio], XML"
-  - "Menüband-Designer [Office-Entwicklung in Visual Studio]"
-  - "XML [Office-Entwicklung in Visual Studio], Menüband"
+title: 'How to: Export a Ribbon from the Ribbon Designer to Ribbon XML | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- custom Ribbon, XML
+- customizing the Ribbon, XML
+- Ribbon [Office development in Visual Studio], XML
+- Ribbon [Office development in Visual Studio], exporting
+- XML [Office development in Visual Studio], Ribbon
+- Ribbon Designer [Office development in Visual Studio]
+- exporting Ribbon
 ms.assetid: 96e0e9ed-4392-4f45-ac33-b6f7c22ea321
 caps.latest.revision: 37
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 33
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: cf3b9b66e0626328bccac92ab473dee33326b0f2
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Gewusst wie: Exportieren einer Multifunktionsleiste aus dem Multifunktionsleisten-Designer in Multifunktionsleisten-XML
-  Das Element **Menüband \(Visual Designer\)** unterstützt nicht alle möglichen Typen der Menübandanpassung.  Wenn Sie erweiterte Anpassungsoptionen für das Menüband nutzen möchten, können Sie das Menüband vom Designer nach Menüband\-XML exportieren und das XML direkt bearbeiten.  
+# <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>How to: Export a Ribbon from the Ribbon Designer to Ribbon XML
+  The **Ribbon (Visual Designer)** item does not support all possible types of Ribbon customization. To customize the Ribbon in advanced ways, you can export the Ribbon from the designer to Ribbon XML and edit the XML directly.  
   
 > [!NOTE]  
->  In der Menüband\-XML\-Datei werden nicht alle Eigenschaftswerte angezeigt.  Weitere Informationen finden Sie unter [Übersicht über die Multifunktionsleiste](../vsto/ribbon-overview.md).  
+>  Not all property values appear in the Ribbon XML file. For more information, see [Ribbon Overview](../vsto/ribbon-overview.md).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
-### So exportieren Sie ein Menüband vom Menüband\-Designer nach Menüband\-XML:  
+### <a name="to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>To export a Ribbon from the Ribbon Designer to Ribbon XML  
   
-1.  Klicken Sie im **Projektmappen\-Explorer** mit der rechten Maustaste auf die Menüband\-Codedatei, und klicken Sie danach auf **Ansicht\-Designer**.  
+1.  Right-click the Ribbon code file in **Solution Explorer**, and then click **View Designer**.  
   
-2.  Klicken Sie mit der rechten Maustaste auf den Menüband\-Designer, und klicken Sie anschließend auf **Menüband nach XML exportieren**.  
+2.  Right-click the Ribbon Designer, and then click **Export Ribbon to XML**.  
   
-     Visual Studio fügt dem Projekt eine Menüband\-XML\-Datei und eine Menüband\-XML\-Codedatei hinzu.  
+     Visual Studio adds a Ribbon XML file and a Ribbon XML code file to your project.  
   
-3.  Suchen Sie in der Menüband\-Codeklasse die Kommentare, die mit `TODO:.` beginnen.  
+3.  In the Ribbon code class, locate the comments that start with `TODO:`.  
   
-4.  Kopieren Sie den Codeblock in diesen Kommentaren in die Klasse **ThisAddin**, **ThisWorkbook** oder **ThisDocument**, und zwar abhängig davon, welchen Projektmappentyp Sie entwickeln.  
+4.  Copy the code block in these comments to the **ThisAddin**, **ThisWorkbook**, or **ThisDocument** class, depending on which type of solution you are developing.  
   
-     Mit diesem Code kann die Microsoft Office\-Anwendung das benutzerdefinierte Menüband erkennen und laden.  Weitere Informationen finden Sie unter [Multifunktionsleisten-XML](../vsto/ribbon-xml.md).  
+     This code enables the Microsoft Office application to discover and load your custom Ribbon. For more information, see [Ribbon XML](../vsto/ribbon-xml.md).  
   
-5.  Nehmen Sie in der Klasse **ThisAddin**, **ThisWorkbook** oder **ThisDocument** eine Auskommentierung des Codeblocks vor.  
+5.  In the **ThisAddin**, **ThisWorkbook**, or **ThisDocument** class, uncomment the code block.  
   
-     Nachdem Sie die Auskommentierung des Codes aufgehoben haben, sollte der Code etwa wie folgt aussehen.  In diesem Beispiel wird die Menübandklasse als `MyRibbon` bezeichnet.  
+     After you uncomment the code, it should resemble the following example. In this example, the Ribbon class is called `MyRibbon`.  
   
-     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab_XML/CS/ThisAddIn.cs#1)]
-     [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab_XML/VB/ThisAddIn.vb#1)]  
+     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]  [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]  
   
-6.  Wechseln Sie zur Menüband\-XML\-Codedatei, und suchen Sie den Bereich `Ribbon Callbacks`.  
+6.  Switch to the Ribbon XML code file and find the `Ribbon Callbacks` region.  
   
-     Dort werden Rückrufmethoden zum Behandeln von Benutzeraktionen geschrieben \(beispielsweise Klicken auf eine Schaltfläche\).  
+     This is where you write callback methods to handle user actions, such as clicking a button.  
   
-7.  Erstellen Sie eine Rückrufmethode für jeden Ereignishandler, den Sie im Menüband\-Designercode geschrieben haben.  
+7.  Create a callback method for each event handler that you wrote in the Ribbon Designer code.  
   
-8.  Verschieben Sie den gesamten Ereignishandlercode von den Ereignishandlern zu den Rückrufmethoden, und ändern Sie den Code so, dass er mit dem Programmiermodell für die Erweiterbarkeit von Menübändern \(RibbonX\) kompatibel ist.  
+8.  Move all your event handler code from the event handlers to the callback methods, and modify the code to work with the Ribbon extensibility (RibbonX) programming model.  
   
-     Weitere Informationen zum Schreiben von Rückrufmethoden und zum Verwenden des RibbonX\-Programmiermodells finden Sie unter [Multifunktionsleisten-XML](../vsto/ribbon-xml.md).  
+     For information about writing callback methods and using the RibbonX programming model, see [Ribbon XML](../vsto/ribbon-xml.md).  
   
-## Siehe auch  
- [Übersicht über die Multifunktionsleiste](../vsto/ribbon-overview.md)   
- [Multifunktionsleisten-Designer](../vsto/ribbon-designer.md)   
- [Multifunktionsleisten-XML](../vsto/ribbon-xml.md)   
- [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit dem Multifunktionsleisten-Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [Exemplarische Vorgehensweise: Erstellen einer benutzerdefinierten Registerkarte mit Multifunktionsleisten-XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
+## <a name="see-also"></a>See Also  
+ [Ribbon Overview](../vsto/ribbon-overview.md)   
+ [Ribbon Designer](../vsto/ribbon-designer.md)   
+ [Ribbon XML](../vsto/ribbon-xml.md)   
+ [Walkthrough: Creating a Custom Tab by Using the Ribbon Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
+ [Walkthrough: Creating a Custom Tab by Using Ribbon XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
   
   
