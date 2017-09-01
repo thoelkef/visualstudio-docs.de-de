@@ -1,39 +1,56 @@
 ---
-title: "Debuggen von F# | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Debuggen [F#]"
-  - "F#, Debuggen"
+title: Debugging F# | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- Debugging [F#]
+- F#, debugging
 ms.assetid: 20bcd51c-2d06-4281-9a1e-ef2b91d1a779
 caps.latest.revision: 4
-caps.handback.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# Debuggen von F# #
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: a13622921ee85b95ee591abc89aafcc7feb77b25
+ms.contentlocale: de-de
+ms.lasthandoff: 08/22/2017
 
-Das Debuggen von F\# entspricht mit wenigen Ausnahmen dem Debuggen einer verwalteten Sprache:  
+---
+# <a name="debugging-f"></a>Debugging F#
+Debugging F# is similar to debugging any managed language, with a few exceptions:  
   
--   Das Fenster **Auto** zeigt keine F\#\-Variablen an.  
+-   The **Autos** window does not display F# variables.  
   
--   Bearbeiten und Fortfahren wird für F\# nicht unterstützt.  Das Bearbeiten von F\#\-Code während einer Debugsitzung ist möglich, sollte aber vermieden werden.  Da Codeänderungen während der Debugsitzung nicht übernommen werden, verursacht das Bearbeiten von F\#\-Code während des Debuggens einen Konflikt zwischen dem Quellcode und dem gedebuggten Code.  
+-   Edit and Continue is not supported for F#. Editing F# code during a debugging session is possible but should be avoided. Because code changes are not applied during the debugging session, editing F# code during debugging will cause a mismatch between the source code and the code being debugged.  
   
--   Der Debugger erkennt keine F\#\-Ausdrücke.  Übersetzen Sie den Ausdruck in C\#\-Syntax, um während des F\#\-Debuggings einen Ausdruck in ein Debuggerfenster oder Dialogfeld einzugeben.  Beachten Sie beim Übersetzen eines F\#\-Ausdrucks in C\#, dass C\# \=\= als Vergleichsoperator für Gleichheit und F\# ein einzelnes \= verwendet.  
+-   The debugger does not recognize F# expressions. To enter an expression in a debugger window or a dialog box during F# debugging, you must translate the expression into C# syntax. When you translate an F# expression into C#, make sure to remember that C# uses == as the comparison operator for equality and that F# uses a single =.  
   
-## Siehe auch  
- [Debuggen von verwaltetem Code](../debugger/debugging-managed-code.md)
+## <a name="see-also"></a>See Also  
+ [Debugging Managed Code](../debugger/debugging-managed-code.md)
+

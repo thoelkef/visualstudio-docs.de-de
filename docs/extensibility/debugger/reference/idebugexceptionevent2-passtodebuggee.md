@@ -1,55 +1,72 @@
 ---
-title: "IDebugExceptionEvent2::PassToDebuggee | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugExceptionEvent2::PassToDebuggee"
-helpviewer_keywords: 
-  - "IDebugExceptionEvent2::PassToDebuggee"
+title: IDebugExceptionEvent2::PassToDebuggee | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugExceptionEvent2::PassToDebuggee
+helpviewer_keywords:
+- IDebugExceptionEvent2::PassToDebuggee
 ms.assetid: a20d0f0b-2ca0-4437-bd22-9213c81d2738
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
----
-# IDebugExceptionEvent2::PassToDebuggee
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 9b7ab19e370570dc736ab7685f1bda75aef13981
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
-Gibt an, ob die Ausnahme an das Programm übergeben werden soll, das gedebuggt wird, wenn die Ausführung fortsetzt bzw. wenn die Ausnahme verworfen wird.  
+---
+# <a name="idebugexceptionevent2passtodebuggee"></a>IDebugExceptionEvent2::PassToDebuggee
+Specifies whether the exception should be passed on to the program being debugged when execution resumes, or if the exception should be discarded.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT PassToDebuggee(  
-   BOOL fPass  
+```cpp  
+HRESULT PassToDebuggee(  
+   BOOL fPass  
 );  
 ```  
   
-```c#  
-int PassToDebuggee(  
-   int fPass  
+```csharp  
+int PassToDebuggee(  
+   int fPass  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `fPass`  
- \[in\]  Ein Wert ungleich 0 \(`TRUE`\), wenn die Ausnahme an das Programm übergeben wird, das gedebuggt wird, wenn die Ausführung fortsetzt, oder`FALSE`\(null\), wenn die Ausnahme verworfen wird.  
+ [in] Nonzero (`TRUE`) if the exception should be passed on to the program being debugged when execution resumes, or zero (`FALSE`) if the exception should be discarded.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Hinweise  
- Das Aufrufen dieser Methode bewirkt keinen Code tatsächlich im Programm ausgeführt wird, der gedebuggt wird.  Der Aufruf ist lediglich den Zustand für die nächste Codeausführung festzulegen.  Beispielsweise geben möglicherweise Aufrufe der [CanPassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)\-Methode `S_OK` mit [EXCEPTION\_INFO](../../../extensibility/debugger/reference/exception-info.md)zurück.`dwState` Feld festgelegt `EXCEPTION_STOP_SECOND_CHANCE`.  
+## <a name="remarks"></a>Remarks  
+ Calling this method does not actually cause any code to be executed in the program being debugged. The call is merely to set the state for the next code execution. For example, calls to the [CanPassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) method may return `S_OK` with the [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md).`dwState` field set to `EXCEPTION_STOP_SECOND_CHANCE`.  
   
- Die IDE das [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)\-Ereignis empfangen und ruft die [Weiter](../../../extensibility/debugger/reference/idebugprogram2-continue.md)\-Methode auf.  Das Debugmodul \(DE\) sollte ein Standardverhalten verfügen, wenn die Groß\- und Kleinschreibung zu behandeln, wenn die `PassToDebuggee`\-Methode nicht aufgerufen wird.  
+ The IDE may receive the [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md) event and call the [Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md) method. The debug engine (DE) should have a default behavior to handle the case if the `PassToDebuggee` method is not called.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)   
  [CanPassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)   
- [Weiter](../../../extensibility/debugger/reference/idebugprogram2-continue.md)
+ [Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md)

@@ -1,50 +1,66 @@
 ---
-title: "CA2200: Erneut ausf&#252;hren, um Stapeldetails beizubehalten | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "RethrowToPreserveStackDetails"
-  - "CA2200"
-helpviewer_keywords: 
-  - "CA2200"
-  - "RethrowToPreserveStackDetails"
+title: 'CA2200: Rethrow to preserve stack details | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- RethrowToPreserveStackDetails
+- CA2200
+helpviewer_keywords:
+- CA2200
+- RethrowToPreserveStackDetails
 ms.assetid: 046e1b98-c4dc-4515-874f-9c0de2285621
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 13
----
-# CA2200: Erneut ausf&#252;hren, um Stapeldetails beizubehalten
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: dfc4529b607196c5c75537f1c337007b41313608
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2200-rethrow-to-preserve-stack-details"></a>CA2200: Rethrow to preserve stack details
 |||  
 |-|-|  
 |TypeName|RethrowToPreserveStackDetails|  
 |CheckId|CA2200|  
-|Kategorie \(Category\)|Microsoft.Usage|  
-|Unterbrechende Änderung|Nicht unterbrechend|  
+|Category|Microsoft.Usage|  
+|Breaking Change|Non Breaking|  
   
-## Ursache  
- Eine Ausnahme wird erneut ausgelöst, und die Ausnahme wird in der `throw`\-Anweisung explizit angegeben.  
+## <a name="cause"></a>Cause  
+ An exception is re-thrown and the exception is explicitly specified in the `throw` statement.  
   
-## Regelbeschreibung  
- Sobald eine Ausnahme ausgelöst wird, ist die Stapelüberwachung ein Teil der übertragenen Informationen.  Die Stapelüberwachung ist eine Liste der Methodenaufrufhierarchie. Sie beginnt mit der Methode, durch die die Ausnahme ausgelöst wird, und endet mit der Methode, durch die die Ausnahme abgefangen wird.  Wenn eine Ausnahme erneut ausgelöst wird, indem die Ausnahme in der `throw`\-Anweisung angegeben wird, wird die Stapelüberwachung bei der aktuellen Methode neu gestartet. Die Liste der aufgerufenen Methoden zwischen der ursprünglichen Methode, durch die die Ausnahme ausgelöst wird, und der aktuellen Methode geht dabei verloren.  Wenn die ursprünglichen Stapelinformationen mit der Ausnahme gespeichert werden sollen, verwenden Sie die `throw`\-Anweisung ohne Angabe der Ausnahme.  
+## <a name="rule-description"></a>Rule Description  
+ Once an exception is thrown, part of the information it carries is the stack trace. The stack trace is a list of the method call hierarchy that starts with the method that throws the exception and ends with the method that catches the exception. If an exception is re-thrown by specifying the exception in the `throw` statement, the stack trace is restarted at the current method and the list of method calls between the original method that threw the exception and the current method is lost. To keep the original stack trace information with the exception, use the `throw` statement without specifying the exception.  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, lösen Sie die Ausnahme erneut aus, ohne die Ausnahme explizit anzugeben.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, re-throw the exception without specifying the exception explicitly.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Unterdrücken Sie keine Warnung dieser Regel.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule.  
   
-## Beispiel  
- Im folgenden Beispiel wird die `CatchAndRethrowExplicitly`\-Methode gezeigt, die gegen die Regel und eine Methode verstößt. Außerdem wird die `CatchAndRethrowImplicitly`\-Methode gezeigt, die der Regel entspricht.  
+## <a name="example"></a>Example  
+ The following example shows a method, `CatchAndRethrowExplicitly`, which violates the rule and a method, `CatchAndRethrowImplicitly`, which satisfies the rule.  
   
- [!code-cs[FxCop.Usage.Rethrow#1](../code-quality/codesnippet/CSharp/ca2200-rethrow-to-preserve-stack-details_1.cs)]
- [!code-vb[FxCop.Usage.Rethrow#1](../code-quality/codesnippet/VisualBasic/ca2200-rethrow-to-preserve-stack-details_1.vb)]
+ [!code-csharp[FxCop.Usage.Rethrow#1](../code-quality/codesnippet/CSharp/ca2200-rethrow-to-preserve-stack-details_1.cs)] [!code-vb[FxCop.Usage.Rethrow#1](../code-quality/codesnippet/VisualBasic/ca2200-rethrow-to-preserve-stack-details_1.vb)]

@@ -1,76 +1,93 @@
 ---
-title: "Schritt&#160;5: Hinzuf&#252;gen von Enter-Ereignishandlern f&#252;r die NumericUpDown-Steuerelemente | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'Step 5: Add Enter Event Handlers for the NumericUpDown Controls | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 45a99a5d-c881-4298-b74d-adb481dec5ee
 caps.latest.revision: 18
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 18
----
-# Schritt&#160;5: Hinzuf&#252;gen von Enter-Ereignishandlern f&#252;r die NumericUpDown-Steuerelemente
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: b5f12c71a894937ad452a31bf53e19e4fbb2d7a2
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
 
-Im fünften Teil dieses Lernprogramms fügen Sie Enter\-Ereignishandler hinzu, um die Eingabe von Antworten auf Quizfragen zu vereinfachen.  Mit diesem Code wird der aktuelle Wert in den einzelnen NumericUpDown\-Steuerelementen markiert und gelöscht, sobald ein Quizteilnehmer das Steuerelement ausgewählt und einen anderen Wert eingibt.  
+---
+# <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Step 5: Add Enter Event Handlers for the NumericUpDown Controls
+In the fifth part of this tutorial, you'll add Enter event handlers to make entering answers for quiz problems a little easier. This code will select and clear the current value in each NumericUpDown control as soon as the quiz taker chooses it and starts to enter a different value.  
   
 > [!NOTE]
->  Dieses Thema ist Teil einer Reihe von Lernprogrammen zu grundlegenden Konzepte der Codierung.  Eine Übersicht des Lernprogramms finden Sie unter [Lernprogramm 2: Erstellen eines Mathequiz mit Zeitmessung](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+>  This topic is part of a tutorial series about basic coding concepts. For an overview of the tutorial, see [Tutorial 2: Create a Timed Math Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
-### So überprüfen Sie das Standardverhalten  
+### <a name="to-verify-the-default-behavior"></a>To verify the default behavior  
   
-1.  Führen Sie das Programm aus, und starten Sie das Quiz.  
+1.  Run your program, and start the quiz.  
   
-     Im NumericUpDown\-Steuerelement für die Additionsaufgabe blinkt der Cursor neben der **0** \(Null\).  
+     In the NumericUpDown control for the addition problem, the cursor flashes next to **0** (zero).  
   
-2.  Geben Sie `3` ein, und beachten Sie, dass das Steuerelement **30** anzeigt.  
+2.  Enter `3`, and note that the control shows **30**.  
   
-3.  Geben Sie `5` ein, und beachten Sie, dass der Wert **350** angezeigt wird, sich aber nach einer Sekunde in **100** ändert.  
+3.  Enter `5`, and note that **350** appears but changes to **100** after a second.  
   
-     Bevor Sie dieses Problem beheben, denken Sie über das nach, was geschieht.  Überlegen Sie, warum die **0** nicht verschwunden ist, als Sie `3` eingegeben haben, und warum **350** in **100** geändert wurde, die Änderung jedoch nicht unmittelbar stattgefunden hat.  
+     Before you fix this problem, think about what's happening. Consider why the **0** didn't disappear when you entered `3` and why **350** changed to **100** but not immediately.  
   
-     Dieses Verhalten scheint ungewöhnlich, ist jedoch vor dem Hintergrund der Logik des Codes sinnvoll.  Wenn Sie die Schaltfläche **Start** auswählen, wird die **Enabled**\-Eigenschaft der Schaltfläche auf **False** gesetzt, und die Schaltfläche ist abgeblendet und nicht verfügbar.  Das Programm wechselt die aktuelle Auswahl \(Fokus\) auf das Steuerelement mit dem nächstniedrigen TabIndex\-Wert. Dies ist das NumericUpDown\-Steuerelement für die Additionsaufgabe.  Wenn Sie mit der TAB\-TASTE zu einem NumericUpDown\-Steuerelement wechseln, wird der Cursor automatisch an den Anfang des Steuerelements positioniert. Dies bewirkt, dass die von Ihnen eingegebenen Zahlen von links und nicht von rechts angezeigt werden.  Wenn Sie eine Zahl angeben, die höher als der Wert der Eigenschaft **MaximumValue** ist, der auf 100 festgelegt ist, wird die von Ihnen eingegebene Zahl durch den Wert dieser Eigenschaft ersetzt.  
+     This behavior may seem odd, but it makes sense given the logic of the code. When you choose the **Start** button, its **Enabled** property is set to **False**, and the button appears dimmed and is unavailable. Your program changes the current selection (focus) to the control that has the next lowest TabIndex value, which is the NumericUpDown control for the addition problem. When you use the Tab key to go to a NumericUpDown control, the cursor is automatically positioned at the start of the control, which is why the numbers that you enter appear from the left side and not the right side. When you specify a number that's higher than the value of the **MaximumValue** property, which is set to 100, the number that you enter is replaced with the value of that property.  
   
-### So fügen Sie einen Enter\-Ereignishandler für ein NumericUpDown\-Steuerelement hinzu  
+### <a name="to-add-an-enter-event-handler-for-a-numericupdown-control"></a>To add an Enter event handler for a NumericUpDown control  
   
-1.  Wählen Sie das erste NumericUpDown\-Steuerelement \(namens "sum"\) im Formular aus, und wählen Sie im Dialogfeld **Eigenschaften** das Symbol **Ereignisse** auf der Symbolleiste aus.  
+1.  Choose the first NumericUpDown control (named "sum") on the form, and then, in the **Properties** dialog box, choose the **Events** icon on the toolbar.  
   
-     Auf der Registerkarte **Ereignisse** im Dialogfeld **Eigenschaften** werden alle Ereignisse angezeigt, auf die Sie für das Element reagieren können \(Handler\), das Sie im Formular ausgewählt haben.  Da Sie das NumericUpDown\-Steuerelement ausgewählt haben, sind alle aufgeführten Ereignisse betroffen.  
+     The **Events** tab in the **Properties** dialog box displays all of the events that you can respond to (handle) for the item that you choose on the form. Because you chose the NumericUpDown control, all of the events listed pertain to it.  
   
-2.  Wählen Sie das **Enter** Ereignis aus, geben Sie `answer_Enter` ein, und wählen Sie dann die EINGABETASTE aus.  
+2.  Choose the **Enter** event, enter `answer_Enter`, and then choose the Enter key.  
   
-     ![Dialogfeld "Eigenschaften"](../ide/media/express_answerenter.png "Express\_AnswerEnter")  
-Dialogfeld "Eigenschaften"  
+     ![Properties dialog box](../ide/media/express_answerenter.png "Express_AnswerEnter")  
+Properties dialog box  
   
-     Sie haben soeben einen Enter\-Ereignishandler für das NumericUpDown\-Steuerelement "sum" hinzugefügt, und Sie haben den Handler **answer\_Enter** genannt.  
+     You've just added an Enter event handler for the sum NumericUpDown control, and you've named the handler **answer_Enter**.  
   
-3.  Fügen Sie in der Methode für den **answer\_Enter**\-Ereignishandler den folgenden Code hinzu.  
+3.  In the method for the **answer_Enter** event handler, add the following code.  
   
-     [!code-vb[VbExpressTutorial3Step5_6#11](../ide/codesnippet/VisualBasic/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.vb)]
-     [!code-cs[VbExpressTutorial3Step5_6#11](../ide/codesnippet/CSharp/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.cs)]  
+     [!code-vb[VbExpressTutorial3Step5_6#11](../ide/codesnippet/VisualBasic/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.vb)]  [!code-csharp[VbExpressTutorial3Step5_6#11](../ide/codesnippet/CSharp/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.cs)]  
   
-     Dieser Code sieht komplex aus, aber Sie können ihn verstehen, wenn Sie ihn schrittweise überprüfen.  Schauen Sie sich zuerst den Beginn der Methode an: `object sender` in C\# oder `sender As System.Object` in Visual Basic.  Dieser Parameter verweist auf das Objekt, dessen Ereignis ausgelöst wird, das als Absender bezeichnet wird.  In diesem Fall ist das Absenderobjekt das NumericUpDown\-Steuerelement.  Geben Sie in der ersten Zeile der Methode an, dass der Absender nicht nur ein beliebiges generisches Objekt ist, sondern speziell ein NumericUpDown\-Steuerelement. \(Jedes NumericUpDown\-Steuerelement ist ein Objekt, aber nicht jedes Objekt ist ein NumericUpDown\-Steuerelement.\) Das NumericUpDown\-Steuerelement heißt in dieser Methode **answerBox**, da es für alle NumericUpDown\-Steuerelemente im Formular verwendet wird und nicht nur für das NumericUpDown\-Steuerelement "sum".  Da Sie die Variable "answerBox" in dieser Methode deklarieren, gilt der Bereich nur für diese Methode.  Das bedeutet, dass die Variable nur innerhalb dieser Methode verwendet werden kann.  
+     This code may look complex, but you can understand it if you look at it step by step. First, look at the top of the method: `object sender` in C# or `sender As System.Object` in Visual Basic. This parameter refers to the object whose event is firing, which is known as the sender. In this case, the sender object is the NumericUpDown control. So, in the first line of the method, you specify that the sender isn't just any generic object but specifically a NumericUpDown control. (Every NumericUpDown control is an object, but not every object is a NumericUpDown control.) The NumericUpDown control is named **answerBox** in this method, because it will be used for all of the NumericUpDown controls on the form, not just the sum NumericUpDown control. Because you declare the answerBox variable in this method, its scope applies only to this method. In other words, the variable can be used only within this method.  
   
-     Die nächste Zeile überprüft, ob answerBox erfolgreich von einem Objekt in ein NumericUpDown\-Steuerelement konvertiert \(umgewandelt\) wurde.  Wenn die Konvertierung nicht erfolgreich war, hat die Variable einen Wert von `null` \(C\#\) oder `Nothing` \(Visual Basic\).  In der dritten Zeile wird die Länge der Antwort angegeben, die im NumericUpDown\-Steuerelement angezeigt wird. In der vierten Zeile wird der aktuelle Wert im Steuerelement auf der Grundlage dieser Länge ausgewählt.  Wenn der Quizteilnehmer nun das Steuerelement aktiviert, löst Visual Studio das Ereignis aus. Daraufhin wird die aktuelle Antwort ausgewählt.  Sobald der Quizteilnehmer eine andere Antwort eingibt, wird die vorherige Antwort gelöscht und durch die neue Antwort ersetzt.  
+     The next line verifies whether answerBox was successfully converted (cast) from an object to a NumericUpDown control. If the conversion was unsuccessful, the variable would have a value of `null` (C#) or `Nothing` (Visual Basic). The third line gets the length of the answer that appears in the NumericUpDown control, and the fourth line selects the current value in the control based on this length. Now, when the quiz taker chooses the control, Visual Studio fires this event, which causes the current answer to be selected. As soon as the quiz taker starts to enter a different answer, the previous answer is cleared and replaced with the new answer.  
   
-4.  Wählen Sie im Windows Forms\-Designer das NumericUpDown\-Steuerelement "difference" aus.  
+4.  In Windows Forms Designer, choose the difference NumericUpDown control.  
   
-5.  Führen Sie auf der Seite **Ereignisse** des Dialogfelds **Eigenschaften** einen Bildlauf bis zum **Enter**\-Ereignis durch, wählen Sie den Dropdownpfeil am Ende der Zeile aus, und wählen Sie dann den `answer_Enter`\-Ereignishandler aus, den Sie gerade hinzugefügt haben.  
+5.  In the **Events** page of the **Properties** dialog box, scroll down to the **Enter** event, choose the drop-down arrow at the end of the row, and then choose the `answer_Enter` event handler that you just added.  
   
-6.  Wiederholen Sie den vorherigen Schritt für die NumericUpDown\-Steuerelemente "product" und "quotient".  
+6.  Repeat the previous step for the product and quotient NumericUpDown controls.  
   
-7.  Speichern Sie das Programm, und führen Sie es aus.  
+7.  Save your program, and then run it.  
   
-     Wenn Sie ein NumericUpDown\-Steuerelement auswählen, wird der vorhandene Wert automatisch aktiviert und dann gelöscht, wenn Sie einen anderen Wert eingeben.  
+     When you choose a NumericUpDown control, the existing value is automatically selected and then cleared when you start to enter a different value.  
   
-### So fahren Sie fort oder überprüfen die Angaben  
+### <a name="to-continue-or-review"></a>To continue or review  
   
--   Um zum nächsten Schritt des Lernprogramms zu wechseln, klicken Sie auf [Schritt 6: Hinzufügen einer Subtraktionsaufgabe](../ide/step-6-add-a-subtraction-problem.md).  
+-   To go to the next tutorial step, see [Step 6: Add a Subtraction Problem](../ide/step-6-add-a-subtraction-problem.md).  
   
--   Um zum vorherigen Schritt des Lernprogramms zurückzukehren, klicken Sie auf [Schritt 4: Hinzufügen der CheckTheAnswer\(\)\-Methode](../ide/step-4-add-the-checktheanswer-parens-method.md).
+-   To return to the previous tutorial step, see [Step 4: Add the CheckTheAnswer() Method](../ide/step-4-add-the-checktheanswer-parens-method.md).

@@ -1,5 +1,5 @@
 ---
-title: 'Schnellstart: Testgesteuerte Entwicklung mit dem Test-Explorer | Microsoft-Dokumentation'
+title: 'Quick Start: Test Driven Development with Test Explorer | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -27,79 +27,79 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 2efe98a5b421fbffbe2a39cc69a5e0acf06af7db
+ms.translationtype: HT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: af65c4f502cd36d00b031784dcda275abec3630a
 ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 08/28/2017
 
 ---
-# <a name="quick-start-test-driven-development-with-test-explorer"></a>Schnellstart: Testgesteuerte Entwicklung mit dem Test-Explorer
-Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen Schritten der inkrementellen Entwicklung ordnungsgemäß funktioniert. Es gibt mehrere Frameworks, die Sie nutzen können, um Komponententests zu schreiben, darunter auch einige von Drittanbietern. Einige Testframeworks wurden speziell zum Testen in verschiedenen Sprachen oder Plattformen entwickelt. Der Test-Explorer stellt eine zentrale Oberfläche für Komponententests in einem dieser Frameworks bereit. Für die am häufigsten verwendeten Frameworks sind Adapter verfügbar. Sie können auch eigene Adapter für andere Frameworks schreiben.  
+# <a name="quick-start-test-driven-development-with-test-explorer"></a>Quick Start: Test Driven Development with Test Explorer
+We recommend that you create unit tests to help keep your code working correctly through many incremental steps of development. There are several frameworks that you can use to write unit tests, including some developed by third parties. Some test frameworks are   specialized to testing in different languages or platforms. Test Explorer provides a single interface for unit tests in any of these frameworks. Adapters are available for the most commonly-used frameworks, and you can write your own adapters for other frameworks.  
   
- Der Test-Explorer löst die Komponententestfenster früherer Versionen von Visual Studio ab. Seine Vorteile:  
+ Test Explorer supersedes the unit test windows found in earlier editions of Visual Studio. Its benefits include:  
   
--   Sie können .NET-, nicht verwaltete und Datenbanktests sowie alle weiteren Arten von Tests über eine einzige Oberfläche ausführen.  
+-   Run .NET, unmanaged, database and other kinds of tests using a single interface.  
   
--   Sie können das Komponententestframework Ihrer Wahl verwenden, z.B. NUnit- oder MSTest-Frameworks.  
+-   Use the unit test framework of your choice, such as NUnit or MSTest frameworks.  
   
--   Sie können alle benötigten Informationen in einem Fenster anzeigen.  
+-   See in one window all the information that you need.  
   
-## <a name="using-test-explorer"></a>Verwenden des Test-Explorers  
- ![Komponententest-Explorer zeigt die Schaltfläche „Alles ausführen“ an](~/test/media/unittestexplorer-beta-.png "UnitTestExplorer(beta)")  
+## <a name="using-test-explorer"></a>Using Test Explorer  
+ ![Unit Test Explorer showing Run All button](../test/media/unittestexplorer-beta-.png "UnitTestExplorer(beta)")  
   
-#### <a name="to-run-unit-tests-by-using-test-explorer"></a>So führen Sie Komponententests mithilfe des Test-Explorers aus  
+#### <a name="to-run-unit-tests-by-using-test-explorer"></a>To Run Unit Tests by using Test Explorer  
   
-1.  Erstellen Sie Komponententests, die die Testframeworks Ihrer Wahl verwenden.  
+1.  Create unit tests that use the test frameworks of your choice.  
   
-     Erstellen Sie beispielsweise einen Test, der das MSTest-Framework verwendet:  
+     For example, to create a test that uses the MSTest Framework:  
   
-    1.  Erstellen Sie ein Testprojekt.  
+    1.  Create a test project.  
   
-         Erweitern Sie im Dialogfeld **Neues Projekt** den Eintrag **Visual Basic**, **Visual C#**oder **Visual C++**, und wählen Sie dann **Test**aus.  
+         In the **New Project** dialog box, expand **Visual Basic**, **Visual C#**, or **Visual C++**, and then choose **Test**.  
   
-         Wählen Sie **Komponententestprojekt**aus.  
+         Select **Unit Test Project**.  
   
-    2.  Schreiben Sie jeden Komponententest als Methode. Stellen Sie jeder Testmethode das `[TestMethod]` -Attribut als Präfix voran.  
+    2.  Write each unit test as a method. Prefix each test method with the `[TestMethod]` attribute.  
   
-2.  Wenn einzelne Tests keine Abhängigkeiten haben, die verhindern, dass sie in beliebiger Reihenfolge ausgeführt werden können, sollten Sie die parallele Testausführung über die Umschaltfläche ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") auf der Symbolleiste aktivieren. Dadurch lässt sich die Zeit deutlich verkürzen, die zum Ausführen aller Tests erforderlich ist.  
+2.  If individual tests have no dependencies that prevent them from being run in any order, turn on parallel test execution with the ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") toggle button on the toolbar. This can noticeably reduce the time taken to run all the tests.  
   
-3.  Wählen Sie in der Menüleiste **Test**, **Komponententests ausführen**, **Alle Tests**aus.  
+3.  On the menu bar, choose **Test**, **Run Unit Tests**, **All Tests**.  
   
-     Die Projektmappe wird erstellt, und die Tests werden ausgeführt.  
+     The solution builds and the tests run.  
   
-     Der Test-Explorer wird geöffnet und zeigt eine Zusammenfassung der Ergebnisse an.  
+     Test Explorer opens and displays a summary of the results.  
   
- **So zeigen Sie eine vollständige Liste der Tests an:** Wählen Sie **Alle anzeigen** in einer beliebigen Kategorie aus.  
+ **To see a full list of tests:** Choose **Show All** in any category.  
   
- **So zeigen Sie die Details eines Testergebnisses an:** Wählen Sie den Test im Test-Explorer aus, um Details wie Ausnahmemeldungen im Detailbereich anzuzeigen.  
+ **To see the details of a test result:** Select the test in Test Explorer to view details such as exception messages in the details pane.  
   
- **So navigieren Sie zum Testcode:** Doppelklicken Sie im Test-Explorer auf den Test, oder wählen Sie im Kontextmenü die Option **Test öffnen** aus.  
+ **To navigate to the code of a test:** Double-click the test in Test Explorer, or choose **Open Test** on the shortcut menu.  
   
- **So debuggen Sie einen Test:** Öffnen Sie das Kontextmenü für einen oder mehrere Tests, und wählen Sie dann die Option **Ausgewählte Tests debuggen**aus.  
+ **To debug a test:** Open the shortcut menu for one or more tests, and then choose **Debug Selected Tests**.  
   
 > [!IMPORTANT]
->  Die Ergebnisse, die angezeigt werden, gelten für den jeweils zuletzt ausgeführten Testlauf. Die farbige Ergebnisleiste zeigt nur die Ergebnisse von Tests an, die ausgeführt wurden. Wenn Sie z. B. mehrere Tests ausführen, davon einige fehlschlagen, und Sie dann nur die erfolgreichen Tests ausführen, ist die Ergebnisleiste ganz grün.  
+>  The results that are displayed are for the most recent run. The colored results bar shows only the results for the tests that ran. For example, if you run several tests and some of them fail, and then run only the successful tests, then the results bar will show all green.  
   
 > [!NOTE]
->  Wenn kein Test angezeigt wird, überprüfen Sie, ob Sie einen Adapter installiert haben, um Test-Explorer mit dem Testframework, das Sie verwenden, zu verbinden. Weitere Informationen finden Sie unter [Verwenden unterschiedlicher Testframeworks mit Test-Explorer](#frameworks).  
+>  If no test appears, make sure that you have installed an adapter to connect Test Explorer to the test framework that you are using. For more information, see [Using Different Test Frameworks with Test Explorer](#frameworks).  
   
-##  <a name="walkthrough"></a> Exemplarische Vorgehensweise: Verwenden von Komponententests zur Entwicklung einer Methode  
- Diese exemplarische Vorgehensweise veranschaulicht, wie eine getestete Methode in C# mithilfe des Microsoft-Komponententest-Frameworks entwickelt wird. Sie können es problemlos für andere Sprachen und zur Verwendung anderer Testframeworks wie NUnit anpassen. Weitere Informationen finden Sie unter [Verwenden unterschiedlicher Testframeworks](#frameworks).  
+##  <a name="walkthrough"></a> Walkthrough: Using Unit Tests to Develop a Method  
+ This walkthrough demonstrates how to develop a tested method in C# using the Microsoft Unit Test framework. You can easily adapt it for other languages, and to use other test frameworks such as NUnit. For more information, see [Using Different Test Frameworks](#frameworks).  
   
-#### <a name="creating-the-test-and-method"></a>Erstellen von Test und Methode  
+#### <a name="creating-the-test-and-method"></a>Creating the Test and Method  
   
-1.  Erstellen Sie ein Visual C#-Klassenbibliotheksprojekt. Dieses Projekt enthält den Code, den Sie bereitstellen möchten. In diesem Beispiel hat sie den Namen `MyMath`.  
+1.  Create a Visual C# Class Library project. This project will contain the code that we want to deliver. In this example, it is named `MyMath`.  
   
-2.  Erstellen Sie ein Testprojekt.  
+2.  Create a Test project.  
   
-    -   Wählen Sie im Dialogfeld **Neues Projekt** die Optionen **Visual C#**, **Test** und anschließend **Komponententestprojekt**aus.  
+    -   In the **New Project** dialog, choose **Visual C#**, **Test** and then choose **Unit Test Project**.  
   
-         ![Neue Code- und Testprojekte](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")  
+         ![New code and test projects](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")  
   
-3.  Schreiben Sie eine einfache Testmethode. Überprüfen Sie das Ergebnis, das für eine bestimmte Eingabe erreicht wurde:  
+3.  Write a basic test method. Verify the result obtained for a specific input:  
   
-    ```c#  
+    ```csharp  
   
     [TestMethod]  
     public void BasicRooterTest()  
@@ -117,63 +117,63 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
     }  
     ```  
   
-4.  Generieren Sie die Methode von dem Test.  
+4.  Generate the method from the test.  
   
-    1.  Platzieren Sie den Cursor auf `Rooter`, und wählen Sie im Kontextmenü die Optionen **Generieren**, **Neuer Typ**aus.  
+    1.  Place the cursor on `Rooter`, and then on the shortcut menu choose **Generate**, **New Type**.  
   
-    2.  Legen Sie im Dialogfeld **Neuen Typ generieren** unter **Projekt** das Klassenbibliotheksprojekt fest. In diesem Beispiel ist dies `MyMath`.  
+    2.  In the **Generate New Type** dialog box, set **Project** to the class library project. In this example, it is `MyMath`.  
   
-    3.  Platzieren Sie den Cursor auf `SquareRoot`, und wählen Sie im Kontextmenü die Optionen **Generieren**, **Methodenstub**aus.  
+    3.  Place the cursor on `SquareRoot`, and then on the shortcut menu choose **Generate**, **Method Stub**.  
   
-5.  Führen Sie den Komponententest aus.  
+5.  Run the unit test.  
   
-    1.  Wählen Sie im Menü **Test** die Optionen **Komponententests ausführen**, **Alle Tests**aus.  
+    1.  On the **Test** menu, choose **Run Unit Tests**, **All Tests**.  
   
-         Die Projektmappe wird erstellt und ausgeführt.  
+         The solution builds and runs.  
   
-         Test-Explorer wird geöffnet und zeigt die Ergebnisse an.  
+         Test Explorer opens and displays the results.  
   
-         Der Test wird unter **Fehlgeschlagene Tests**angezeigt:  
+         The test appears under **Failed Tests**.  
   
-6.  Wählen Sie den Namen des Tests aus.  
+6.  Select the name of the test.  
   
-     Die Details des Tests werden im unteren Teil des Test-Explorers angezeigt.  
+     The details of the test appear in the lower part of Test Explorer.  
   
-7.  Wählen Sie die Elemente unter **Stapelüberwachung** aus, um festzustellen, wo der Test fehlgeschlagen ist.  
+7.  Select the items under **Stack Trace** to see where the test failed.  
   
- ![Komponententest-Explorer zeigt fehlerhaften Test an] (../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")  
+ ![Unit Test Explorer showing failed test.](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")  
   
- Sie haben jetzt einen Test und einen Stub erstellt, die Sie ändern werden, damit der Test erfolgreich verläuft.  
+ At this point, you have created a test and a stub that you will modify so that the test passes.  
   
-#### <a name="after-every-change-make-all-the-tests-pass"></a>Sorgen Sie dafür, dass der Test nach jeder Änderung erfolgreich verläuft.  
+#### <a name="after-every-change-make-all-the-tests-pass"></a>After every change, make all the tests pass  
   
-1.  Verbessern Sie in `MyMath\Rooter.cs`den Code von `SquareRoot`:  
+1.  In `MyMath\Rooter.cs`, improve the code of `SquareRoot`:  
   
-    ```c#  
+    ```csharp  
     public double SquareRoot(double input)  
      {  
        return input / 2;  
      }  
     ```  
   
-2.  Wählen Sie im Test-Explorer **Alle ausführen**aus.  
+2.  In Test Explorer, choose **Run All**.  
   
-     Der Code wird erstellt, und der Test wird ausgeführt.  
+     The code builds and the test runs.  
   
-     Der Test wurde erfolgreich ausgeführt.  
+     The test passes.  
   
-     ![Komponententest-Explorer zeigt einen bestandenen Test an] (../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")  
+     ![Unit Test Explorer showing a passing test.](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")  
   
-#### <a name="add-tests-to-extend-the-range-of-inputs"></a>Fügen Sie Tests hinzu, um den Eingabebereich zu erweitern  
+#### <a name="add-tests-to-extend-the-range-of-inputs"></a>Add tests to extend the range of inputs  
   
-1.  Um sich sicherer sein zu können, dass Ihr Code in allen Fällen funktioniert, fügen Sie Tests hinzu, die einen größeren Bereich an Eingabewerten testen.  
+1.  To improve your confidence that your code works in all cases, add tests that try a broader range of input values.  
   
     > [!TIP]
-    >  Vermeiden Sie, vorhandene erfolgreiche Tests zu ändern. Fügen Sie stattdessen lieber neue Tests hinzu. Ändern Sie vorhandene Tests nur, wenn sich die Benutzeranforderungen ändern. Dieses Vorgehen hilft sicherzustellen, dass durch die Erweiterung des Codes keine vorhandene Funktionalität verloren geht.  
+    >  Avoid altering existing tests that pass. Instead, add new tests. Change existing tests only when the user requirements change. This policy helps ensure that you don't lose existing functionality as you work to extend the code.  
   
-     Fügen Sie in der Testklasse den folgenden Test hinzu, der einen Bereich von Eingabewerten testet:  
+     In your test class, add the following test, which tries a range of input values:  
   
-    ```c#  
+    ```csharp  
     [TestMethod]  
     public void RooterValueRange()  
     {  
@@ -197,13 +197,13 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
     }  
     ```  
   
-2.  Wählen Sie im Test-Explorer **Alle ausführen**aus.  
+2.  In Test Explorer, choose **Run All**.  
   
-     Der neue Test schlägt fehl, obwohl der erste Test weiterhin erfolgreich verläuft.  
+     The new test fails, although the first test still passes.  
   
-     Um die Fehlerursache herauszufinden, wählen Sie den fehlgeschlagenen Test aus. Wählen Sie dann im unteren Teil des Test-Explorers das oberste Element der **Stapelüberwachung**aus.  
+     To find the point of failure, select the failing test and then in the lower part of Test Explorer, select the top item of the **Stack Trace**.  
   
-3.  Überprüfen Sie die zu testende Methode, um zu sehen, was falsch sein könnte. Schreiben Sie den Code der `MyMath.Rooter` -Klasse neu:  
+3.  Inspect the method under test to see what might be wrong. In the `MyMath.Rooter` class, rewrite the code:  
   
     ```  
     public double SquareRoot(double input)  
@@ -219,15 +219,15 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
     }  
     ```  
   
-4.  Wählen Sie im Test-Explorer **Alle ausführen**aus.  
+4.  In Test Explorer, choose **Run All**.  
   
-     Beide Tests sind nun erfolgreich.  
+     Both tests now pass.  
   
-#### <a name="add-tests-for-exceptional-cases"></a>Hinzufügen von Tests für Sonderfälle  
+#### <a name="add-tests-for-exceptional-cases"></a>Add tests for exceptional cases  
   
-1.  Fügen Sie einen Test für negative Eingaben hinzu:  
+1.  Add a test for negative inputs:  
   
-    ```c#  
+    ```csharp  
     [TestMethod]  
      public void RooterTestNegativeInputx()  
      {  
@@ -244,17 +244,17 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
      }  
     ```  
   
-2.  Wählen Sie im Test-Explorer **Alle ausführen**aus.  
+2.  In Test Explorer, choose **Run All**.  
   
-     Die zu testende Methode bildet eine Schleife und muss manuell abgebrochen werden.  
+     The method under test loops, and must be canceled manually.  
   
-3.  Wählen Sie **Abbrechen**aus.  
+3.  Choose **Cancel**.  
   
-     Der Test wird nach 10 Sekunden beendet.  
+     The test stops after 10 seconds.  
   
-4.  Beheben Sie den Code der Methode:  
+4.  Fix the method code:  
   
-    ```c#  
+    ```csharp  
   
     public double SquareRoot(double input)  
     {  
@@ -265,20 +265,20 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
     ...  
     ```  
   
-5.  Wählen Sie im Test-Explorer **Alle ausführen**aus.  
+5.  In Test Explorer, choose **Run All**.  
   
-     Alle Tests sind erfolgreich.  
+     All the tests pass.  
   
-#### <a name="refactor-without-changing-tests"></a>Den Code umgestalten, ohne Tests zu ändern  
+#### <a name="refactor-without-changing-tests"></a>Refactor without changing tests  
   
-1.  Vereinfachen Sie den Code, ohne jedoch die Tests zu ändern.  
+1.  Simplify the code, but do not change the tests.  
   
     > [!TIP]
-    >  Eine *Umgestaltung* ist eine Änderung, die vorgenommen wird, damit der Code besser funktioniert oder verständlicher wird. Eine Umgestaltung sieht nicht vor, das Verhalten des Codes zu ändern. Deshalb werden die Tests nicht geändert.  
+    >  A *refactoring* is a change that is intended to make the code perform better or to make the code easier to understand. It is not intended to alter the behavior of the code, and therefore the tests are not changed.  
     >   
-    >  Es wird empfohlen, die Schritte der Umgestaltung separat von den Schritten auszuführen, die die Funktionalität erweitern. Wenn Sie die Tests nicht ändern, können Sie sichergehen, dass während der Umgestaltung nicht versehentlich Fehler eingebaut wurden.  
+    >  We recommend that you perform refactoring steps separately from steps that extend functionality. Keeping the tests unchanged gives you confidence that you have not accidentally introduced bugs while refactoring.  
   
-    ```c#  
+    ```csharp  
     public class Rooter  
     {  
       public double SquareRoot(double input)  
@@ -300,9 +300,9 @@ Es wird empfohlen, Komponententests zu erstellen, damit der Code in den vielen S
     }  
     ```  
   
-2.  Wählen Sie **Alle ausführen**aus.  
+2.  Choose **Run All**.  
   
-     Alle Tests sind weiterhin erfolgreich.  
+     All the tests still pass.  
   
-     ![Komponententest-Explorer zeigt 3 bestandene Tests an] (../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
+     ![Unit Test Explorer showing 3 passed tests.](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
 

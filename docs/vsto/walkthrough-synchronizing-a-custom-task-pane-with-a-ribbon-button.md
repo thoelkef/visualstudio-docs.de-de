@@ -1,183 +1,183 @@
 ---
-title: "Exemplarische Vorgehensweise: Synchronisieren eines benutzerdefinierten Aufgabenbereichs mit einer Multifunktionsleistenschaltfl&#228;che"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Benutzerdefinierte Aufgabenbereiche [Office-Entwicklung in Visual Studio], Anzeigen und Ausblenden"
-  - "Anzeigen von benutzerdefinierten Aufgabenbereichen"
-  - "Menüband [Office-Entwicklung in Visual Studio], Benutzerdefinierte Aufgabenbereiche"
-  - "Umschaltflächen [Office-Entwicklung in Visual Studio]"
-  - "Benutzerdefinierte Aufgabenbereiche [Office-Entwicklung in Visual Studio], Synchronisieren mit Menübandschaltfläche"
-  - "Benutzeroberflächen [Office-Entwicklung in Visual Studio], Benutzerdefinierte Aufgabenbereiche"
-  - "Synchronisierung [Office-Entwicklung in Visual Studio], Benutzerdefinierte Aufgabenbereiche"
-  - "Aufgabenbereiche [Office-Entwicklung in Visual Studio], Anzeigen und Ausblenden"
-  - "Benutzerdefinierte Aufgabenbereiche [Office-Entwicklung in Visual Studio], Erstellen"
-  - "Ausblenden von benutzerdefinierten Aufgabenbereichen"
-  - "Aufgabenbereiche [Office-Entwicklung in Visual Studio], Erstellen"
-  - "Aufgabenbereiche [Office-Entwicklung in Visual Studio], Synchronisieren mit Menübandschaltfläche"
+title: 'Walkthrough: Synchronizing a Custom Task Pane with a Ribbon Button | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- custom task panes [Office development in Visual Studio], showing and hiding
+- showing custom task panes
+- Ribbon [Office development in Visual Studio], custom task panes
+- toggle buttons [Office development in Visual Studio]
+- custom task panes [Office development in Visual Studio], synchronizing with Ribbon button
+- user interfaces [Office development in Visual Studio], custom task panes
+- synchronization [Office development in Visual Studio], custom task panes
+- task panes [Office development in Visual Studio], showing and hiding
+- custom task panes [Office development in Visual Studio], creating
+- hiding custom task panes
+- task panes [Office development in Visual Studio], creating
+- task panes [Office development in Visual Studio], synchronizing with Ribbon button
 ms.assetid: 00ce8b1e-1370-42f2-9dc9-609cada392f1
 caps.latest.revision: 38
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 37
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 091d7614ecf9fa764b9099e3ce6350d48a68eeb8
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Exemplarische Vorgehensweise: Synchronisieren eines benutzerdefinierten Aufgabenbereichs mit einer Multifunktionsleistenschaltfl&#228;che
-  Diese exemplarische Vorgehensweise veranschaulicht, wie ein benutzerdefinierter Aufgabenbereich erstellt wird, den Benutzer durch Klicken auf eine Umschaltfläche auf dem Menüband anzeigen oder ausblenden können. Sie sollten immer ein UI\-Element erstellen, z. B. eine Schaltfläche, auf die Benutzer klicken können, um Ihren benutzerdefinierten Aufgabenbereich anzeigen oder ausblenden zu können, da Microsoft Office\-Anwendung keine Standardmethode für Benutzer bereitstellen, um benutzerdefinierte Aufgabenbereiche anzuzeigen oder auszublenden.  
+# <a name="walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button"></a>Walkthrough: Synchronizing a Custom Task Pane with a Ribbon Button
+  This walkthrough demonstrates how to create a custom task pane that users can hide or display by clicking a toggle button on the Ribbon. You should always create a user interface (UI) element, such as a button, that users can click to display or hide your custom task pane, because Microsoft Office applications do not provide a default way for users to show or hide custom task panes.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
- Obwohl in dieser exemplarischen Vorgehensweise speziell Excel verwendet wird, gelten die Konzepte in dieser exemplarischen Vorgehensweise für alle oben aufgelisteten Anwendungen.  
+ Although this walkthrough uses Excel specifically, the concepts demonstrated by the walkthrough are applicable to any applications that are listed above.  
   
- In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:  
+ This walkthrough illustrates the following tasks:  
   
--   Entwerfen der Benutzeroberfläche \(UI\) des benutzerdefinierten Aufgabenbereichs  
+-   Designing the UI of the custom task pane.  
   
--   Hinzufügen einer Umschaltfläche zum Menüband  
+-   Adding a toggle button to the Ribbon.  
   
--   Synchronisieren der Umschaltfläche mit dem benutzerdefinierten Aufgabenbereich  
+-   Synchronizing the toggle button with the custom task pane.  
   
 > [!NOTE]  
->  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio\-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/de-de/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## Vorbereitungsmaßnahmen  
- Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   Microsoft Excel oder Microsoft [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)].  
+-   Microsoft Excel or Microsoft [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)].  
   
-## Erstellen des Add\-In\-Projekts  
- In diesem Abschnitt erstellen Sie ein VSTO\-Add\-In\-Projekt für Excel.  
+## <a name="creating-the-add-in-project"></a>Creating the Add-in Project  
+ In this step, you will create an VSTO Add-in project for Excel.  
   
-#### So erstellen Sie ein neues Projekt  
+#### <a name="to-create-a-new-project"></a>To create a new project  
   
-1.  Erstellen Sie ein Add\-In\-Projekt für Excel namens **SynchronizeTaskPaneAndRibbon**, indem Sie die Add\-In\-Projektvorlage für Excel verwenden. Weitere Informationen finden Sie unter [Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Create an Excel Add-in project with the name **SynchronizeTaskPaneAndRibbon**, using the Excel Add-in project template. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] öffnet die Codedatei **ThisAddIn.cs** oder **ThisAddIn.vb** und fügt das Projekt **SynchronizeTaskPaneAndRibbon** dem **Projektmappen\-Explorer** hinzu.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] opens the **ThisAddIn.cs** or **ThisAddIn.vb** code file and adds the **SynchronizeTaskPaneAndRibbon** project to **Solution Explorer**.  
   
-## Hinzufügen einer Umschaltfläche zum Menüband  
- Eine der Entwurfsrichtlinien für Office\-Anwendungen besagt, dass Benutzer immer die Möglichkeit haben sollen, die Benutzeroberfläche von Office\-Anwendungen zu steuern. Damit Benutzer den benutzerdefinierten Aufgabenbereich steuern können, können Sie eine Menübandumschaltfläche hinzufügen, die den Aufgabenbereich anzeigt oder ausblendet. Fügen Sie zum Erstellen einer Umschaltfläche dem Projekt ein Element von **Menüband \(Visueller Designer\)** hinzu. Der Designer unterstützt Sie beim Hinzufügen und Anordnen von Steuerelementen, Festlegen von Steuerelementeigenschaften und Behandeln von Ereignissen von Steuerelementen. Weitere Informationen finden Sie unter [Multifunktionsleisten-Designer](../vsto/ribbon-designer.md).  
+## <a name="adding-a-toggle-button-to-the-ribbon"></a>Adding a Toggle Button to the Ribbon  
+ One of the Office application design guidelines is that users should always have control of the Office application UI. To enable users to control the custom task pane, you can add a Ribbon toggle button that shows and hides the task pane. To create a toggle button, add a **Ribbon (Visual Designer)** item to the project. The designer helps you add and position controls, set control properties, and handle control events. For more information, see [Ribbon Designer](../vsto/ribbon-designer.md).  
   
-#### So fügen Sie eine Umschaltfläche zum Menüband hinzu  
+#### <a name="to-add-a-toggle-button-to-the-ribbon"></a>To add a toggle button to the Ribbon  
   
-1.  Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.  
+1.  On the **Project** menu, click **Add New Item**.  
   
-2.  Wählen Sie im Dialogfeld **Neues Element hinzufügen** die Option **Menüband \(Visueller Designer\)** aus.  
+2.  In the **Add New Item** dialog box, select **Ribbon (Visual Designer)**.  
   
-3.  Ändern Sie den Namen des neuen Menübands in **ManageTaskPaneRibbon**, und klicken Sie auf **Hinzufügen**.  
+3.  Change the name of the new Ribbon to **ManageTaskPaneRibbon**, and click **Add**.  
   
-     Die Datei **ManageTaskPaneRibbon.cs** oder **ManageTaskPaneRibbon.vb** wird im Menüband\-Designer geöffnet. Sie enthält eine Standardregisterkarte und eine Gruppe.  
+     The **ManageTaskPaneRibbon.cs** or **ManageTaskPaneRibbon.vb** file opens in the Ribbon Designer and displays a default tab and group.  
   
-4.  Klicken Sie im Menüband\-Designer auf **group1**.  
+4.  In the Ribbon Designer, click **group1**.  
   
-5.  Legen Sie im Fenster **Eigenschaften** die **Label**\-Eigenschaft auf **Aufgabenbereich\-Manager** fest.  
+5.  In the **Properties** window, set the **Label** property to **Task Pane Manager**.  
   
-6.  Ziehen Sie ein **ToggleButton**\-Steuerelement von der Registerkarte **Steuerelemente für Office\-Menübänder** der **Toolbox** auf die Gruppe **Aufgabenbereich\-Manager**.  
+6.  From the **Office Ribbon Controls** tab of the **Toolbox**, drag a **ToggleButton** onto the **Task Pane Manager** group.  
   
-7.  Klicken Sie auf **toggleButton1**.  
+7.  Click **toggleButton1**.  
   
-8.  Legen Sie im Fenster **Eigenschaften** die **Label**\-Eigenschaft auf **Aufgabenbereich anzeigen** fest.  
+8.  In the **Properties** window, set the **Label** property to **Show Task Pane**.  
   
-## Entwerfen der Benutzeroberfläche des benutzerdefinierten Aufgabenbereichs  
- Es gibt keinen visuellen Designer für benutzerdefinierte Aufgabenbereiche, Sie können aber dennoch ein Benutzersteuerelement mit dem gewünschten Layout entwerfen. Im weiteren Verlauf dieser exemplarischen Vorgehensweise fügen Sie dem benutzerdefinierten Aufgabenbereich das Benutzersteuerelement hinzu.  
+## <a name="designing-the-user-interface-of-the-custom-task-pane"></a>Designing the User Interface of the Custom Task Pane  
+ There is no visual designer for custom task panes, but you can design a user control with the layout you want. Later in this walkthrough, you will add the user control to the custom task pane.  
   
-#### So entwerfen Sie die Benutzeroberfläche des benutzerdefinierten Aufgabenbereichs  
+#### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>To design the user interface of the custom task pane  
   
-1.  Klicken Sie im Menü **Projekt** auf **Benutzersteuerelement hinzufügen**.  
+1.  On the **Project** menu, click **Add User Control**.  
   
-2.  Ändern Sie im Dialogfeld **Neues Element hinzufügen** den Namen des neuen Benutzersteuerelements in **TaskPaneControl**, und klicken Sie dann auf **Hinzufügen**.  
+2.  In the **Add New Item** dialog box, change the name of the user control to **TaskPaneControl**, and click **Add**.  
   
-     Das Benutzersteuerelement wird im Designer geöffnet.  
+     The user control opens in the designer.  
   
-3.  Ziehen Sie von der Registerkarte **Allgemeine Steuerelemente** der **Toolbox** ein **TextBox**\-Steuerelement auf das Benutzersteuerelement.  
+3.  From the **Common Controls** tab of the **Toolbox**, drag a **TextBox** control to the user control.  
   
-## Erstellen des benutzerdefinierten Aufgabenbereichs  
- Um den benutzerdefinierten Aufgabenbereich beim Starten des VSTO\-Add\-Ins zu erstellen, fügen Sie dem Aufgabenbereich das Benutzersteuerelement im <xref:Microsoft.Office.Tools.AddIn.Startup>\-Ereignishandler des VSTO\-Add\-Ins hinzu. Standardmäßig wird der benutzerdefinierte Aufgabenbereich nicht angezeigt. Weiter unten in dieser exemplarischen Vorgehensweise werden Sie Code hinzufügen, der den Aufgabenbereich anzeigt oder ausblendet, wenn der Benutzer auf die Umschaltfläche klickt, die Sie dem Menüband hinzugefügt haben.  
+## <a name="creating-the-custom-task-pane"></a>Creating the Custom Task Pane  
+ To create the custom task pane when the VSTO Add-in starts, add the user control to the task pane in the <xref:Microsoft.Office.Tools.AddIn.Startup> event handler of the VSTO Add-in. By default, the custom task pane will not be visible. Later in this walkthrough, you will add code that will display or hide the task pane when the user clicks the toggle button you added to the Ribbon.  
   
-#### So erstellen Sie den benutzerdefinierten Aufgabenbereich  
+#### <a name="to-create-the-custom-task-pane"></a>To create the custom task pane  
   
-1.  Erweitern Sie im **Projektmappen\-Explorer** die Option **Excel**.  
+1.  In **Solution Explorer**, expand **Excel**.  
   
-2.  Klicken Sie mit der rechten Maustaste auf **ThisAddIn.cs** oder **ThisAddIn.vb**, und klicken Sie auf **Code anzeigen**.  
+2.  Right-click **ThisAddIn.cs** or **ThisAddIn.vb** and click **View Code**.  
   
-3.  Fügen Sie der `ThisAddIn`\-Klasse folgenden Code hinzu. Durch diesen Code wird eine Instanz von `TaskPaneControl` als Member von `ThisAddIn` deklariert.  
+3.  Add the following code to the `ThisAddIn` class. This code declares an instance of `TaskPaneControl` as a member of `ThisAddIn`.  
   
-     [!code-csharp[Trin_TaskPaneRibbonSynchronize#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_TaskPaneRibbonSynchronize/CS/ThisAddIn.cs#1)]
-     [!code-vb[Trin_TaskPaneRibbonSynchronize#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_TaskPaneRibbonSynchronize/VB/ThisAddIn.vb#1)]  
+     [!code-csharp[Trin_TaskPaneRibbonSynchronize#1](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#1)]  [!code-vb[Trin_TaskPaneRibbonSynchronize#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#1)]  
   
-4.  Ersetzen Sie den `ThisAddIn_Startup`\-Ereignishandler durch den folgenden Code. Dieser Code fügt das `TaskPaneControl`\-Objekt zum `CustomTaskPanes`\-Feld hinzu, zeigt aber nicht den benutzerdefinierten Aufgabenbereich an \(standardmäßig ist die <xref:Microsoft.Office.Tools.CustomTaskPane.Visible%2A>\-Eigenschaft der <xref:Microsoft.Office.Tools.CustomTaskPane>\-Klasse **false**\). Der Visual C\#\-Code fügt dem <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged>\-Ereignis auch einen Ereignishandler an.  
+4.  Replace the `ThisAddIn_Startup` event handler with the following code. This code adds the `TaskPaneControl` object to the `CustomTaskPanes` field, but it does not display the custom task pane (by default, the <xref:Microsoft.Office.Tools.CustomTaskPane.Visible%2A> property of the <xref:Microsoft.Office.Tools.CustomTaskPane> class is **false**). The Visual C# code also attaches an event handler to the <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> event.  
   
-     [!code-csharp[Trin_TaskPaneRibbonSynchronize#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_TaskPaneRibbonSynchronize/CS/ThisAddIn.cs#2)]
-     [!code-vb[Trin_TaskPaneRibbonSynchronize#2](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_TaskPaneRibbonSynchronize/VB/ThisAddIn.vb#2)]  
+     [!code-csharp[Trin_TaskPaneRibbonSynchronize#2](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#2)]  [!code-vb[Trin_TaskPaneRibbonSynchronize#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#2)]  
   
-5.  Fügen Sie der `ThisAddIn`\-Klasse die folgende Methode hinzu. Diese Methode behandelt das <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged>\-Ereignis. Wenn der Benutzer den Aufgabenbereich durch Klicken auf die Schaltfläche **Schließen** \(X\) schließt, aktualisiert diese Methode den Zustand der Umschaltfläche im Menüband.  
+5.  Add the following method to the `ThisAddIn` class. This method handles the <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> event. When the user closes the task pane by clicking the **Close** button (X), this method updates the state of the toggle button on the Ribbon.  
   
-     [!code-csharp[Trin_TaskPaneRibbonSynchronize#3](../snippets/csharp/VS_Snippets_OfficeSP/Trin_TaskPaneRibbonSynchronize/CS/ThisAddIn.cs#3)]
-     [!code-vb[Trin_TaskPaneRibbonSynchronize#3](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_TaskPaneRibbonSynchronize/VB/ThisAddIn.vb#3)]  
+     [!code-csharp[Trin_TaskPaneRibbonSynchronize#3](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#3)]  [!code-vb[Trin_TaskPaneRibbonSynchronize#3](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#3)]  
   
-6.  Fügen Sie der `ThisAddIn`\-Klasse folgende Eigenschaft hinzu. Diese Eigenschaft stellt das private `myCustomTaskPane1`\-Objekt für andere Klassen bereit. Weiter unten in dieser exemplarischen Vorgehensweise werden Sie Code zur `MyRibbon`\-Klasse hinzufügen, der diese Eigenschaft verwendet.  
+6.  Add the following property to the `ThisAddIn` class. This property exposes the private `myCustomTaskPane1` object to other classes. Later in this walkthrough, you will add code to the `MyRibbon` class that uses this property.  
   
-     [!code-csharp[Trin_TaskPaneRibbonSynchronize#4](../snippets/csharp/VS_Snippets_OfficeSP/Trin_TaskPaneRibbonSynchronize/CS/ThisAddIn.cs#4)]
-     [!code-vb[Trin_TaskPaneRibbonSynchronize#4](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_TaskPaneRibbonSynchronize/VB/ThisAddIn.vb#4)]  
+     [!code-csharp[Trin_TaskPaneRibbonSynchronize#4](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#4)]  [!code-vb[Trin_TaskPaneRibbonSynchronize#4](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#4)]  
   
-## Ausblenden und Anzeigen des benutzerdefinierte Aufgabenbereichs mit der Umschaltfläche  
- Im letzte Schritt wird Code hinzugefügt, der den benutzerdefinierten Aufgabenbereich anzeigt oder ausblendet, wenn der Benutzer im Menüband auf die Umschaltfläche klickt.  
+## <a name="hiding-and-showing-the-custom-task-pane-by-using-the-toggle-button"></a>Hiding and Showing the Custom Task Pane by Using the Toggle Button  
+ The last step is to add code that displays or hides the custom task pane when the user clicks the toggle button on the Ribbon.  
   
-#### So zeigen Sie den benutzerdefinierten Aufgabenbereich mithilfe der Umschaltfläche an oder blenden ihn aus  
+#### <a name="to-display-and-hide-the-custom-task-pane-by-using-the-toggle-button"></a>To display and hide the custom task pane by using the toggle button  
   
-1.  Doppelklicken Sie im Menüband\-Designer auf die Umschaltfläche **Aufgabenbereich anzeigen**.  
+1.  In the Ribbon Designer, double-click the **Show Task Pane** toggle button.  
   
-     Visual Studio generiert automatisch einen Ereignishandler namens `toggleButton1_Click`, der das <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click>\-Ereignis der Umschaltfläche verarbeitet. Visual Studio öffnet außerdem die Datei **MyRibbon.cs** oder **MyRibbon.vb** im Code\-Editor.  
+     Visual Studio automatically generates an event handler named `toggleButton1_Click`, which handles the <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> event of the toggle button. Visual Studio also opens the **MyRibbon.cs** or **MyRibbon.vb** file in the Code Editor.  
   
-2.  Ersetzen Sie den `toggleButton1_Click`\-Ereignishandler durch den folgenden Code. Wenn der Benutzer auf die Umschaltfläche klickt, zeigt dieser Code den benutzerdefinierten Aufgabenbereich an oder blendet ihn aus, je nachdem, ob die Umschaltfläche gedrückt wird oder nicht.  
+2.  Replace the `toggleButton1_Click` event handler with the following code. When the user clicks the toggle button, this code displays or hides the custom task pane, depending on whether the toggle button is pressed or not pressed.  
   
-     [!code-csharp[Trin_TaskPaneRibbonSynchronize#5](../snippets/csharp/VS_Snippets_OfficeSP/Trin_TaskPaneRibbonSynchronize/CS/ManageTaskPaneRibbon.cs#5)]
-     [!code-vb[Trin_TaskPaneRibbonSynchronize#5](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_TaskPaneRibbonSynchronize/VB/ManageTaskPaneRibbon.vb#5)]  
+     [!code-vb[Trin_TaskPaneRibbonSynchronize#5](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ManageTaskPaneRibbon.vb#5)]  [!code-csharp[Trin_TaskPaneRibbonSynchronize#5](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ManageTaskPaneRibbon.cs#5)]  
   
-## Testen des Add\-Ins  
- Wenn Sie das Projekt ausführen, wird Excel geöffnet, ohne den benutzerdefinierten Aufgabenbereich anzuzeigen. Klicken Sie im Menüband auf die Umschaltfläche, um den Code zu testen.  
+## <a name="testing-the-add-in"></a>Testing the Add-In  
+ When you run the project, Excel opens without displaying the custom task pane. Click the toggle button on the Ribbon to test the code.  
   
-#### So testen Sie Ihr VSTO\-Add\-In  
+#### <a name="to-test-your-vsto-add-in"></a>To test your VSTO Add-in  
   
-1.  Drücken Sie F5, um das Projekt auszuführen.  
+1.  Press F5 to run your project.  
   
-     Vergewissern Sie sich, dass Excel geöffnet wird und die Registerkarte **Add\-Ins** im Menüband angezeigt wird.  
+     Confirm that Excel opens, and the **Add-Ins** tab appears on the Ribbon.  
   
-2.  Klicken Sie im Menüband auf die Registerkarte **Add\-Ins**.  
+2.  Click the **Add-Ins** tab on the Ribbon.  
   
-3.  Klicken Sie auf die Gruppe **Aufgabenbereich\-Manager** und dann auf die Umschaltfläche **Aufgabenbereich anzeigen**.  
+3.  In the **Task Pane Manager** group, click the **Show Task Pane** toggle button.  
   
-     Überprüfen Sie, ob der Aufgabenbereich abwechselnd angezeigt und ausgeblendet wird, wenn Sie auf die Umschaltfläche klicken.  
+     Verify that the task pane is alternately displayed and hidden when you click the toggle button.  
   
-4.  Wenn der Aufgabenbereich angezeigt wird, klicken Sie in der Ecke des Aufgabenbereichs auf die Schaltfläche **Schließen** \(X\).  
+4.  When the task pane is visible, click the **Close** button (X) in the corner of the task pane.  
   
-     Stellen Sie sicher, dass die Umschaltfläche als nicht gedrückt angezeigt wird.  
+     Verify that the toggle button appears to be not pressed.  
   
-## Nächste Schritte  
- Weitere Informationen über das Erstellen von benutzerdefinierten Aufgabenbereichen finden Sie in diesen Themen:  
+## <a name="next-steps"></a>Next Steps  
+ You can learn more about how to create custom task panes from these topics:  
   
--   Erstellen eines benutzerdefinierten Aufgabenbereichs in einem VSTO\-Add\-In für eine andere Anwendung. Weitere Informationen über die Anwendungen, die benutzerdefinierte Aufgabenbereiche unterstützen, finden Sie unter [Benutzerdefinierte Aufgabenbereiche](../vsto/custom-task-panes.md).  
+-   Create a custom task pane in an VSTO Add-in for a different application. For more information about the applications that support custom task panes, see [Custom Task Panes](../vsto/custom-task-panes.md).  
   
--   Automatisieren einer Anwendung über einen benutzerdefinierten Aufgabenbereich Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Automatisieren einer Anwendung über einen benutzerdefinierten Aufgabenbereich](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).  
+-   Automate an application from a custom task pane. For more information, see [Walkthrough: Automating an Application from a Custom Task Pane](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).  
   
--   Erstellen eines benutzerdefinierten Aufgabenbereichs für jede E\-Mail\-Nachricht, die in Outlook geöffnet wird. Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Anzeigen von benutzerdefinierten Aufgabenbereichen in E-Mails in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
+-   Create a custom task pane for every e-mail message that is opened in Outlook. For more information, see [Walkthrough: Displaying Custom Task Panes with E-Mail Messages in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
   
-## Siehe auch  
- [Benutzerdefinierte Aufgabenbereiche](../vsto/custom-task-panes.md)   
- [Gewusst wie: Hinzufügen eines benutzerdefinierten Aufgabenbereichs zu einer Anwendung](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
- [Exemplarische Vorgehensweise: Automatisieren einer Anwendung über einen benutzerdefinierten Aufgabenbereich](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
- [Exemplarische Vorgehensweise: Anzeigen von benutzerdefinierten Aufgabenbereichen in E-Mails in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)   
- [Übersicht über die Multifunktionsleiste](../vsto/ribbon-overview.md)  
+## <a name="see-also"></a>See Also  
+ [Custom Task Panes](../vsto/custom-task-panes.md)   
+ [How to: Add a Custom Task Pane to an Application](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
+ [Walkthrough: Automating an Application from a Custom Task Pane](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
+ [Walkthrough: Displaying Custom Task Panes with E-Mail Messages in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)   
+ [Ribbon Overview](../vsto/ribbon-overview.md)  
   
   

@@ -1,59 +1,76 @@
 ---
-title: "CA2120: Sichere Serialisierungskonstruktoren | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2120"
-  - "SecureSerializationConstructors"
-helpviewer_keywords: 
-  - "CA2120"
-  - "SecureSerializationConstructors"
+title: 'CA2120: Secure serialization constructors | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2120
+- SecureSerializationConstructors
+helpviewer_keywords:
+- SecureSerializationConstructors
+- CA2120
 ms.assetid: e9989da1-55a0-43f8-9aa9-da86afae3b41
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 16
----
-# CA2120: Sichere Serialisierungskonstruktoren
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 8183854c3fce2d3f838435696786355b0e94f5c8
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2120-secure-serialization-constructors"></a>CA2120: Secure serialization constructors
 |||  
 |-|-|  
 |TypeName|SecureSerializationConstructors|  
 |CheckId|CA2120|  
-|Kategorie \(Category\)|Microsoft.Security|  
-|Unterbrechende Änderung|Breaking|  
+|Category|Microsoft.Security|  
+|Breaking Change|Breaking|  
   
-## Ursache  
- Der Typ implementiert die <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>\-Schnittstelle, ist kein Delegat und keine Schnittstelle, und ist in einer Assembly deklariert, in der nicht voll vertrauenswürdige Aufrufer zulässig sind.  Der Typ weist einen Konstruktor auf, der neben dem <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>\-Objekt auch das <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>\-Objekt \(die Signatur des Serialisierungskonstruktors\) annimmt.  Dieser Konstruktor ist nicht durch eine Sicherheitsüberprüfung gesichert. Dagegen ist mindestens einer der normalen Konstruktoren des Typs gesichert.  
+## <a name="cause"></a>Cause  
+ The type implements the <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interface, is not a delegate or interface, and is declared in an assembly that allows partially trusted callers. The type has a constructor that takes a <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> object and a <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> object (the signature of the serialization constructor). This constructor is not secured by a security check, but one or more of the regular constructors in the type is secured.  
   
-## Regelbeschreibung  
- Diese Regel ist relevant für Typen, die die benutzerdefinierte Serialisierung unterstützen.  Ein Typ unterstützt benutzerdefinierte Serialisierung, wenn durch ihn die <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>\-Schnittstelle implementiert wird.  Der Serialisierungskonstruktor ist erforderlich und wird eingesetzt für die Deserialisierung oder Neuerstellung von Objekten, die mit der <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName>\-Methode serialisiert wurden.  Der Serialisierungskonstruktor ordnet Objekte zu und initialisiert sie. Sicherheitsüberprüfungen, die bei normalen Konstruktoren durchgeführt werden, müssen deshalb auch bei Serialisierungskonstruktoren durchgeführt werden.  Bei einem Verstoß gegen diese Regel könnten Aufrufer, die auf andere Weise keine Instanz erstellen konnten, den Serialisierungskonstruktor dazu verwenden.  
+## <a name="rule-description"></a>Rule Description  
+ This rule is relevant for types that support custom serialization. A type supports custom serialization if it implements the <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interface. The serialization constructor is required and is used to de-serialize, or re-create objects that have been serialized using the <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> method. Because the serialization constructor allocates and initializes objects, security checks that are present on regular constructors must also be present on the serialization constructor. If you violate this rule, callers that could not otherwise create an instance could use the serialization constructor to do this.  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, schützen Sie den Serialisierungskonstruktor mit den gleichen Sicherheitsanforderungen wie die anderen Konstruktoren.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, protect the serialization constructor with security demands that are identical to those protecting other constructors.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Unterdrücken Sie keinen Verstoß gegen diese Regel.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a violation of the rule.  
   
-## Beispiel  
- Im folgenden Beispiel wird ein Typ veranschaulicht, der gegen die Regel verstößt.  
+## <a name="example"></a>Example  
+ The following example shows a type that violates the rule.  
   
- [!code-cs[FxCop.Security.SerialCtors#1](../code-quality/codesnippet/CSharp/ca2120-secure-serialization-constructors_1.cs)]  
+ [!code-csharp[FxCop.Security.SerialCtors#1](../code-quality/codesnippet/CSharp/ca2120-secure-serialization-constructors_1.cs)]  
   
-## Verwandte Regeln  
- [CA2229: Serialisierungskonstruktoren implementieren](../code-quality/ca2229-implement-serialization-constructors.md)  
+## <a name="related-rules"></a>Related Rules  
+ [CA2229: Implement serialization constructors](../code-quality/ca2229-implement-serialization-constructors.md)  
   
- [CA2237: Markieren von ISerializable\-Typen mit SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)  
+ [CA2237: Mark ISerializable types with SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>   
  <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>   
  <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>

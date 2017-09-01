@@ -1,45 +1,50 @@
 ---
-title: "Gewusst wie: Programmgesteuerte Suche einer E-Mail-Adresse in den Kontakten"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "E-Mail [Office-Entwicklung in Visual Studio], Durchsuchen"
-  - "Kontakte [Office-Entwicklung in Visual Studio], Durchsuchen"
-  - "Suchen nach Kontakten"
+title: 'How to: Programmatically Search for an E-Mail Address in Contacts | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- e-mail [Office development in Visual Studio], searching
+- contacts [Office development in Visual Studio], searching
+- searching contacts
 ms.assetid: e973a407-8b94-45c7-acdf-fe330115fb33
 caps.latest.revision: 25
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 24
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: d4dfba7f395b3ad113ccc2ea205f49d9bbdaed61
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Gewusst wie: Programmgesteuerte Suche einer E-Mail-Adresse in den Kontakten
-  In diesem Beispiel wird ein Kontaktordner nach Kontakten durchsucht, die den Domänennamen **example.com** in ihren E\-Mail\-Adressen aufweisen.  
+# <a name="how-to-programmatically-search-for-an-e-mail-address-in-contacts"></a>How to: Programmatically Search for an E-Mail Address in Contacts
+  This example searches a contact folder for contacts that have the domain name **example.com** in their e-mail addresses.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-## Beispiel  
- [!code-csharp[Trin_OL_SearchEmail#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_OL_SearchEmail/CS/thisaddin.cs#1)]  
+## <a name="example"></a>Example  
+ [!code-csharp[Trin_OL_SearchEmail#1](../vsto/codesnippet/CSharp/Trin_OL_SearchEmail/thisaddin.cs#1)]  
   
-## Kompilieren des Codes  
- Für dieses Beispiel benötigen Sie Folgendes:  
+## <a name="compiling-the-code"></a>Compiling the Code  
+ This example requires:  
   
--   Kontakte mit dem Domänennamen **example.com** in ihren E\-Mail\-Adressen \(z. B. `somebody@example.com`\), die einen Vor\- und Nachnamen aufweisen.  
+-   Contacts that have the domain name **example.com** in their e-mail addresses (for example, `somebody@example.com`), and that have first names and last names.  
   
-## Siehe auch  
- [Arbeiten mit Kontaktelementen](../vsto/working-with-contact-items.md)   
- [Gewusst wie: Programmgesteuertes Senden von E-Mails](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
- [Gewusst wie: Programmgesteuertes Zugreifen auf Outlook-Kontakte](../vsto/how-to-programmatically-access-outlook-contacts.md)   
- [Gewusst wie: Programmgesteuertes Hinzufügen eines Eintrags zu Outlook-Kontakten](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)  
+## <a name="see-also"></a>See Also  
+ [Working with Contact Items](../vsto/working-with-contact-items.md)   
+ [How to: Programmatically Send E-Mail](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
+ [How to: Programmatically Access Outlook Contacts](../vsto/how-to-programmatically-access-outlook-contacts.md)   
+ [How to: Programmatically Add an Entry to Outlook Contacts](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)  
   
   

@@ -1,70 +1,87 @@
 ---
-title: "IDebugSymbolProvider::GetAddressesFromPosition | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugSymbolProvider::GetAddressesFromPosition"
-helpviewer_keywords: 
-  - "IDebugSymbolProvider::GetAddressesFromPosition-Methode"
+title: IDebugSymbolProvider::GetAddressesFromPosition | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugSymbolProvider::GetAddressesFromPosition
+helpviewer_keywords:
+- IDebugSymbolProvider::GetAddressesFromPosition method
 ms.assetid: 1b0f02cb-8ace-4614-88f3-0e10239012b3
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugSymbolProvider::GetAddressesFromPosition
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 957e917870e4482721b0c32e4551072fb9092044
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
-Diese Methode ordnet eine Position des Dokuments in ein Array von Adressen zu debuggen.  
+---
+# <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
+This method maps a document position into an array of debug addresses.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetAddressesFromPosition(   
-   IDebugDocumentPosition2* pDocPos,  
-   BOOL                     fStatmentOnly,  
-   IEnumDebugAddresses**    ppEnumBegAddresses,  
-   IEnumDebugAddresses**    ppEnumEndAddresses  
+```cpp  
+HRESULT GetAddressesFromPosition(   
+   IDebugDocumentPosition2* pDocPos,  
+   BOOL                     fStatmentOnly,  
+   IEnumDebugAddresses**    ppEnumBegAddresses,  
+   IEnumDebugAddresses**    ppEnumEndAddresses  
 );  
 ```  
   
-```c#  
-int GetAddressesFromPosition(   
-   IDebugDocumentPosition2  pDocPos,  
-   bool                     fStatmentOnly,  
-   out IEnumDebugAddresses  ppEnumBegAddresses,  
-   out IEnumDebugAddresses  ppEnumEndAddresses  
+```csharp  
+int GetAddressesFromPosition(   
+   IDebugDocumentPosition2  pDocPos,  
+   bool                     fStatmentOnly,  
+   out IEnumDebugAddresses  ppEnumBegAddresses,  
+   out IEnumDebugAddresses  ppEnumEndAddresses  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `pDocPos`  
- \[in\]  Die Position des Dokuments.  
+ [in] The document position.  
   
  `fStatmentOnly`  
- \[in\]  Wenn TRUE, Begrenzungen die Programmdebuginformationen Adressen zu einer einzelnen Anweisung.  
+ [in] If TRUE, limits the debug addresses to a single statement.  
   
  `ppEnumBegAddresses`  
- \[out\]  Gibt einen Enumerator zum Debuggen starten die Adressen zurück, die mit dieser Anweisung oder Zeile zugeordnet werden.  
+ [out] Returns an enumerator for the starting debug addresses associated with this statement or line.  
   
  `ppEnumEndAddresses`  
- \[out\]  Gibt einen [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) Enumerator für die Debug\- Adressen des Endes zurück, die mit dieser Anweisung oder Zeile zugeordnet werden.  
+ [out] Returns an [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) enumerator for the ending debug addresses associated with this statement or line.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Hinweise  
- Eine Position des Dokuments gibt in der Regel einen Bereich von Quellzeilen an.  Diese Methode stellt die Anfangs\- und EndAdressen Debuggen, die mit diesen Zeilen zugeordnet sind.  Einige Sprachen ermöglichen Anweisungen, die mehrere Zeilen umfassen, oder Zeilen, die mehr als eine Anweisung enthält.  Diese Methode stellt ein Flag, um die Programmdebuginformationen Adressen zu einer einzigen Anweisung zu beschränken.  
+## <a name="remarks"></a>Remarks  
+ A document position typically indicates a range of source lines. This method provides the starting and ending debug addresses associated with these lines. Some languages allow statements that span multiple lines, or lines that contains more than one statement. This method provides a flag to limit the debug addresses to a single statement.  
   
- Es ist möglich, Debugsymbolinformationen für eine einzelne Anweisung mehrere Adressen, wie im Fall von Vorlagen zu haben.  
+ It is possible for a single statement to have multiple debug addresses, as in the case of templates.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)   
  [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

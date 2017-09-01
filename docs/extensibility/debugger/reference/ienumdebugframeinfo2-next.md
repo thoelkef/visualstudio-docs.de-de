@@ -1,59 +1,76 @@
 ---
-title: "IEnumDebugFrameInfo2::Next | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugFrameInfo2::Next"
-helpviewer_keywords: 
-  - "IEnumDebugFrameInfo2::Next"
+title: IEnumDebugFrameInfo2::Next | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IEnumDebugFrameInfo2::Next
+helpviewer_keywords:
+- IEnumDebugFrameInfo2::Next
 ms.assetid: 64a64eeb-5dea-4119-8a22-03771015d1e5
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
----
-# IEnumDebugFrameInfo2::Next
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 3e64a3142d95c04e1b6055643859fcb0e7bafd4c
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
-Gibt die nächste Gruppe von Elementen aus der Enumeration zurück.  
+---
+# <a name="ienumdebugframeinfo2next"></a>IEnumDebugFrameInfo2::Next
+Returns the next set of elements from the enumeration.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Next(  
-   ULONG       celt,  
-   FRAMEINFO** rgelt,  
-   ULONG*      pceltFetched  
+   ULONG       celt,  
+   FRAMEINFO** rgelt,  
+   ULONG*      pceltFetched  
 );  
 ```  
   
-```c#  
+```csharp  
 int Next(  
-   uint        celt,  
-   FRAMEINFO[] rgelt,  
-   ref uint    pceltFetched  
+   uint        celt,  
+   FRAMEINFO[] rgelt,  
+   ref uint    pceltFetched  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `celt`  
- \[in\]  Die Anzahl der abzurufenden Elemente.  Gibt die maximale Größe des `rgelt` Arrays an.  
+ [in] The number of elements to retrieve. Also specifies the maximum size of the `rgelt` array.  
   
  `rgelt`  
- \[in, out\]  Array von Elementen, [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) ausgefüllt werden soll.  
+ [in, out] Array of [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) elements to be filled in.  
   
  `pceltFetched`  
- \[out\]  Gibt die Anzahl der Elemente zurück, die sich tatsächlich in `rgelt`zurückgegeben werden.  
+ [out] Returns the number of elements actually returned in `rgelt`.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück.  Gibt `S_FALSE` zurück, wenn kleiner als die angeforderte Anzahl von Elementen zurückgegeben werden konnte. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`. Returns `S_FALSE` if fewer than the requested number of elements could be returned; otherwise, returns an error code.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)   
  [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)

@@ -1,94 +1,123 @@
 ---
-title: "Exemplarische Vorgehensweise: Verwenden von IntelliTrace | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'Walkthrough: Using IntelliTrace | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: e1c9c91a-0009-4c4e-9b4f-c9ab3a6022a7
 caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
----
-# Exemplarische Vorgehensweise: Verwenden von IntelliTrace
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 40aac0c902e9b6fea230ba58e90bda5840da52a9
+ms.contentlocale: de-de
+ms.lasthandoff: 08/22/2017
 
-Sie können IntelliTrace zum Sammeln von Informationen über bestimmte Ereignisse oder Ereigniskategorien oder zum Erfassen von einzelnen Funktionsaufrufen zusätzlich zu den Ereignissen verwenden. In der folgenden Vorgehensweisen wird gezeigt, wie dies umzusetzen ist.  
+---
+# <a name="walkthrough-using-intellitrace"></a>Walkthrough: Using IntelliTrace
+You can use IntelliTrace to collect information about specific events or categories of events, or about individual function calls in addition to events. The following procedures show how to do this.  
   
- Sie können IntelliTrace in der Visual Studio Enterprise Edition verwenden\(jedoch nicht in der Professional oder Community Edition\).  
+ You can use IntelliTrace in Visual Studio Enterprise edition (but not the Professional or Community editions).  
   
-##  <a name="GettingStarted"></a> Verwenden von IntelliTrace nur mit  Ereignissen  
- Sie können ein Debugging nur mit IntelliTrace\-Ereignissen durchführen. IntelliTrace\-Ereignisse sind Debuggerereignisse, Ausnahmen, .NET Framework\-Ereignisse und andere Systemereignisse. Bevor Sie mit dem Debuggen beginnen, sollten Sie bestimmte Ereignisse aktivieren oder deaktivieren, um die von IntelliTrace aufgezeichneten Ereignisse zu steuern. Weitere Informationen finden Sie unter [IntelliTrace\-Features](../debugger/intellitrace-features.md).  
+##  <a name="GettingStarted"></a> Using IntelliTrace with events only  
+ You can try debugging with just IntelliTrace events. IntelliTrace events are debugger events, exceptions, .NET Framework events, and other system events. You should turn on or turn off specific events to control the events that IntelliTrace records before you start debugging. For more information, see [IntelliTrace Features](../debugger/intellitrace-features.md).  
   
- Die folgenden Schritte zeigen das Debuggen nur mit IntelliTrace\-Ereignissen:  
+ The following steps show how to debug with IntelliTrace events only:  
   
-1.  Aktivieren Sie das IntelliTrace\-Ereignis für den Dateizugriff. Wechseln Sie zur Seite **Extras \/ Optionen \/ IntelliTrace \/ IntelliTrace\-Ereignisse**, und erweitern Sie die Kategorie **Datei**. Aktivieren Sie die Ereigniskategorie **Datei**. Dadurch werden alle Dateiereignisse \(Zugriff, Schließen, Löschen\) überprüft.  
+1.  Turn on the IntelliTrace event for File Access. Go to the **Tools > Options > IntelliTrace > IntelliTrace Events** page, and expand the **File** category. Check the **File** event category. This causes all the file events (access, close, delete) to be checked.  
   
-2.  Erstellen Sie eine C\#\- Konsolenanwendung. Fügen Sie in der Datei "Program.cs" die folgende `using`\-Anweisung hinzu:  
+2.  Create a C# console application. In the Program.cs file, add the following `using` statement:  
   
-    ```c#  
+    ```CSharp  
     using System.IO;  
     ```  
   
-3.  Erstellen Sie ein <xref:System.IO.FileStream>\-Element in der Main\-Methode, lesen Sie es aus, schließen Sie es, und löschen Sie die Datei. Fügen Sie eine weitere Zeile hinzu, um einen Haltepunkt festlegen zu können:  
+3.  Create a <xref:System.IO.FileStream> in the Main method, read from it, close it, and delete the file. Add another line just to have a place to set a breakpoint:  
   
-    ```c#  
-    static void Main(string[] args) { FileStream fs = File.Create("WordSearchInputs.txt"); fs.ReadByte(); fs.Close(); File.Delete("WordSearchInputs.txt"); Console.WriteLine("done"); }  
+    ```CSharp  
+    static void Main(string[] args)  
+    {  
+        FileStream fs = File.Create("WordSearchInputs.txt");  
+        fs.ReadByte();  
+        fs.Close();  
+        File.Delete("WordSearchInputs.txt");  
+  
+        Console.WriteLine("done");  
+    }  
     ```  
   
-4.  Legen Sie einen Haltepunkt auf `Console.WriteLine("done");` fest.  
+4.  Set a breakpoint on `Console.WriteLine("done");`  
   
-5.  Starten Sie das Debuggen wie gewohnt. \(Drücken Sie **F5**, oder klicken Sie auf **Debuggen \/ Debugging starten**.  
-  
-    > [!TIP]
-    >  Halten Sie während des Debuggens die Fenster **Lokal** und **Auto** geöffnet, um die Werte darin anzuzeigen und aufzuzeichnen.  
-  
-6.  Die Ausführung hält am Haltepunkt an. Wenn das Fenster **Diagnosetools** nicht angezeigt wird, klicken Sie auf **Debuggen \/ Fenster \/ IntelliTrace\-Ereignisse**.  
-  
-     Wechseln Sie im Fenster **Diagnosetools** zur Registerkarte **Ereignisse** \(es sollten drei Registerkarten vorhanden sein: **Ereignisse**, **Speicherauslastung** und **CPU\-Auslastung**\). Die Registerkarte **Ereignisse** zeigt eine chronologische Liste aller Ereignisse, die mit dem letzten Ereignis endet, bevor die Ausführung vom Debugger unterbrochen wurde. Es sollte ein Ereignis namens **Access WordSearchInputs.txt** angezeigt werden.  
-  
-     Der folgende Screenshot stammt aus Visual Studio 2015 Update 1.  
-  
-     ![IntelliTrace&#45;Update1](../debugger/media/intellitrace-update1.png "IntelliTrace\-Update1")  
-  
-7.  Wählen Sie das Ereignis aus, um die Details zu erweitern.  
-  
-     Der folgende Screenshot stammt aus Visual Studio 2015 Update 1.  
-  
-     ![IntelliTraceUpdate1&#45;SingleEvent](../debugger/media/intellitraceupdate1-singleevent.png "IntelliTraceUpdate1\-SingleEvent")  
-  
-     Sie können den Link des Pfadnamens auswählen, um die Datei zu öffnen. Wenn der vollständige Pfadname nicht verfügbar ist, wird das Dialogfeld **Datei öffnen** angezeigt.  
-  
-     Klicken Sie auf **Verlaufsbezogenes Debugging aktivieren**, um den Kontext des Debuggers auf den Zeitpunkt festzulegen, zu dem das ausgewählte Ereignis gesammelt wurde. So werden Verlaufsdaten in den Fenstern **Aufrufliste**, **Lokal** sowie in den anderen zugehörigen Debuggerfenstern angezeigt. Wenn Quellcode verfügbar ist, bewegt Visual Studio den Zeiger auf den entsprechenden Code im Quellcodefenster, damit Sie ihn überprüfen können.  
-  
-     Der folgende Screenshot stammt aus Visual Studio 2015 Update 1.  
-  
-     ![HistoricalDebugging&#45;Update1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging\-Update1")  
-  
-8.  Wenn Sie den Fehler nicht finden, überprüfen Sie andere Ereignisse, die zu dem Fehler geführt haben. Sie können auch veranlassen, dass IntelliTrace Aufrufinformationen aufzeichnet, damit Sie die Funktionsaufrufe schrittweise durchlaufen können.  
-  
-## Verwenden von IntelliTrace mit  Ereignissen und Funktionsaufrufen  
- IntelliTrace kann neben Ereignissen auch Funktionsaufrufe aufzeichnen. Auf diese Weise können Sie den Verlauf der Aufrufliste anzeigen und Aufrufe in Ihrem Code schrittweise durchlaufen. IntelliTrace zeichnet Daten wie z. B. Funktionsnamen, Einstiegs\- und Endpunkte von Funktionen sowie bestimmte Parameter\- und Rückgabewerte auf. Siehe [IntelliTrace\-Features](../debugger/intellitrace-features.md).  
-  
-1.  Aktivieren Sie Aufrufauflistung ein. Wählen Sie unter **Extras \/ Optionen \/ IntelliTrace \/ Allgemein** die Option **IntelliTrace\-Ereignis\- und \-Aufrufinformationen** aus. IntelliTrace beginnt beim Start der nächsten Debugsitzung mit dem Sammeln dieser Informationen.  
+5.  Start debugging as usual. (Press **F5** or click **Debug > Start Debugging**.  
   
     > [!TIP]
-    >  Dies kann zu einer Verlangsamung der Anwendung und zu einer Vergrößerung aller auf dem Datenträger gespeicherten IntelliTrace\-Protokolldateien \(ITRACE\-Dateien\) führen. Um möglichst viele Aufrufdaten abzurufen, die Auswirkungen jedoch möglichst gering zu halten, zeichnen Sie nur die Daten aus den Modulen auf, die für Sie von Interesse sind. Um die maximale Größe der ITRACE\-Dateien zu ändern, wechseln Sie zu **Extras \/ Optionen \/ IntelliTrace \/ Erweitert**, und geben Sie die maximale Menge an Datenträgerspeicherplatz an. Der Standardwert ist 250 MB.  
+    >  Keep the **Locals** and **Autos** windows open while you're debugging to see and record the values in those windows.  
   
-2.  Beginnen Sie mit dem Debuggen der im vorherigen Abschnitt erstellten C\#\-Konsolenanwendung. Die Ausführung hält am Haltepunkt an. Wenn das Fenster **Diagnosetools** nicht angezeigt wird, klicken Sie auf **Debuggen \/ Fenster \/ IntelliTrace\-Ereignisse**.  
+6.  Execution stops at the breakpoint. If you do not see the **Diagnostic Tools** window, click **Debug > Windows > IntelliTrace Events**.  
   
-3.  Wechseln Sie zur Registerkarte **Aufrufe** .  
+     In the **Diagnostic Tools** window, find the **Events** tab (You should see 3 tabs, **Events**, **Memory Usage**, and **CPU Usage**). The **Events** tab shows a chronological list of events, ending with the last event before the debugger broke execution. You should see an event named **Access WordSearchInputs.txt**.  
   
-     Nun sehen Sie die Funktionsaufrufe Ihrer Anwendung, die mit dem Stammaufruf \(in der aktuellen Lösung der Main\-Einstiegspunkt\) beginnen und an der Stelle enden, an der die Ausführung unterbrochen wurde.  
+     The following screenshot is from Visual Studio 2015 Update 1.  
   
-     Wählen Sie einen der Funktionsaufrufe aus, und doppelklicken Sie darauf. Nun sollten die Einstiegs\- und Endpunkte der Funktion sowie die Aufrufe des aktuellen Aufrufs in anderen Funktionen und die vom Aufruf ausgelösten IntelliTrace\-Ereignisse angezeigt werden. Wenn Sie das verlaufsbezogene Debugging nicht aktiviert haben, wird es mit dieser Aktion aktiviert. Weitere Informationen zum verlaufsbezogenen Debuggen finden Sie unter [Verlaufsbezogenes Debugging](../debugger/historical-debugging.md).  
+     ![IntelliTrace&#45;Update1](../debugger/media/intellitrace-update1.png "IntelliTrace-Update1")  
+  
+7.  Select the event to expand its details.  
+  
+     The following screenshot is from Visual Studio 2015 Update 1.  
+  
+     ![IntelliTraceUpdate1&#45;SingleEvent](../debugger/media/intellitraceupdate1-singleevent.png "IntelliTraceUpdate1-SingleEvent")  
+  
+     You can choose the pathname link to open the file. If the full pathname is not available, the **Open File** dialog box appears.  
+  
+     Click **Activate Historical Debugging**, which sets the debugger's context to the time when the selected event was collected, showing historical data in the **Call Stack**, **Locals** and the other participating debugger windows. If source code is available, Visual Studio moves the pointer to the corresponding code in the source window so you can examine it.  
+  
+     The following screenshot is from Visual Studio 2015 Update 1.  
+  
+     ![HistoricalDebugging&#45;Update1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging-Update1")  
+  
+8.  If you didn't find the bug, try examining other events leading up to the bug. You can also have IntelliTrace record call information so you can step through function calls.  
+  
+## <a name="using-intellitrace-with-events-and-function-calls"></a>Using IntelliTrace with events and function calls  
+ IntelliTrace can record function calls along with events. This lets you see the call stack history and step backward and forward through calls in your code. IntelliTrace records data such as function names, function entry and exit points, and certain parameter values and return values. See [IntelliTrace Features](../debugger/intellitrace-features.md).
+
+> [!NOTE]
+> Call information is not currently available for ASP.NET Core apps. 
+  
+1.  Turn on call collection. (On **Tools > Options > IntelliTrace > General**, select **IntelliTrace events and call information**. IntelliTrace will start collecting this information when the next debugging session starts.  
+  
+    > [!TIP]
+    >  This might slow down your application and increase the size of any IntelliTrace log files (.iTrace files) that you're saving to disk. To get the most call data but minimize the effects, record data from only those modules that interest you. To change the maximum size of your .iTrace files, go to **Tools > Options > IntelliTrace > Advanced**, and specify the maximum amount of disk space. The default is 250 MB.  
+  
+2.  Start debugging the C# console application created in the previous section. Execution stops at the breakpoint. If you do not see the **Diagnostic Tools** window, click **Debug > Windows > IntelliTrace Events**.  
+  
+3.  Switch to the **Calls** tab.  
+  
+     Now you see your application's function calls, starting with the root call (in the current solution, the Main entry point) and ending with the location at which execution broke.  
+  
+     Select one of the function calls and double-click it. You should see the function entry and exit points, as well as the calls that the current call made to other functions and the IntelliTrace events raised by the call. If you do not have historical debugging turned on, this action turns it on. To find out more about historical debugging, see [Historical Debugging](../debugger/historical-debugging.md).  
   
     > [!NOTE]
-    >  Wie Sie sehen, sind einige Aufrufe abgeblendet. Dies liegt daran, dass IntelliTrace keine Daten aus den entsprechenden Modulen aufgezeichnet hat. Um diese Daten anzuzeigen, lassen Sie IntelliTrace Daten aus diesen Modulen sammeln. Informationen zum Angeben von Modulen finden Sie unter [IntelliTrace\-Features](../debugger/intellitrace-features.md).  
+    >  You may see that some calls are dimmed. This is because IntelliTrace didn't record data from the corresponding modules. To see this data, have IntelliTrace collect data from those modules. For information about specifying modules, see [IntelliTrace Features](../debugger/intellitrace-features.md).  
   
-## Nächste Schritte
+## <a name="next-steps"></a>Next Steps

@@ -1,61 +1,65 @@
 ---
-title: "Gewusst wie: Hinzuf&#252;gen einer Entit&#228;t zu einem Modell"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "EntityTool"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "BDC [SharePoint-Entwicklung in Visual Studio], Hinzufügen einer Entität"
-  - "BDC [SharePoint-Entwicklung in Visual Studio], Entität"
-  - "Business Data Connectivity-Dienst [SharePoint-Entwicklung in Visual Studio], Hinzufügen einer Entität"
-  - "Business Data Connectivity-Dienst [SharePoint-Entwicklung in Visual Studio], Entität"
+title: 'How to: Add an Entity to a Model | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- EntityTool
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- BDC [SharePoint development in Visual Studio], entity
+- Business Data Connectivity service [SharePoint development in Visual Studio], adding an entity
+- Business Data Connectivity service [SharePoint development in Visual Studio], entity
+- BDC [SharePoint development in Visual Studio], adding an entity
 ms.assetid: 139a6639-dabe-4e14-bb64-e5f4efb6f2fb
 caps.latest.revision: 23
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 22
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 16dc2a7c05f1b7290596be337cdec0fe2637bf32
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Gewusst wie: Hinzuf&#252;gen einer Entit&#228;t zu einem Modell
-  Um eine Entität zu erstellen, fügen Sie einem Entitätssteuerelement von **Werkzeugkasten** in Visual Studio auf den Business Data Connectivity \(BDC\)\- \- Designer hinzu.  
+# <a name="how-to-add-an-entity-to-a-model"></a>How to: Add an Entity to a Model
+  To create an entity, add an entity control from the Visual Studio **Toolbox** onto the Business Data Connectivity (BDC) designer.  
   
-### So fügen Sie dem Modell eine Entität hinzu  
+### <a name="to-add-an-entity-to-the-model"></a>To add an entity to the model  
   
-1.  Erstellen Sie ein BDC\-Projekt, oder öffnen Sie ein vorhandenes BDC\-Projekt.  Weitere Informationen finden Sie unter [Erstellen eines Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md).  
+1.  Create a BDC project, or open an existing BDC project. For more information, see [Creating a Business Data Connectivity Model](../sharepoint/creating-a-business-data-connectivity-model.md).  
   
-2.  In **Werkzeugkasten** aus der Gruppe **BusinessDataCatalog**, fügen Sie einem Steuerelement **Entität** auf den Designer hinzu.  
+2.  In the **Toolbox**, from the **BusinessDataCatalog** group, add an **Entity** control onto the designer.  
   
-     Die neue Entität wird im Designer angezeigt.  Visual Studio fügt dem XML der BDC\-Modelldatei im Projekt ein `<Entity>`\-Element hinzu.  Weitere Informationen zu den Attributen eines Entity\-Elements, Sie finden [Entität](http://go.microsoft.com/fwlink/?LinkId=169296).  
+     The new entity appears on the designer. Visual Studio adds an `<Entity>` element to the XML of the BDC model file in your project. For more information about the attributes of an Entity element, see [Entity](http://go.microsoft.com/fwlink/?LinkId=169296).  
   
-3.  Klicken Sie im Designer öffnen Sie das Kontextmenü für die Entität, wählen Sie **Hinzufügen** und wählen Sie dann **Bezeichner** aus.  
+3.  On the designer, open the shortcut menu for the entity, choose **Add**, and then choose **Identifier**.  
   
-     Ein neuer Bezeichner wird für die Entität angezeigt.  
+     A new identifier appears on the entity.  
   
     > [!NOTE]  
-    >  Sie können den Namen der Entität und den Bezeichner im Fenster **Eigenschaften** ändern.  
+    >  You can change the name of the entity and the identifier in the **Properties** window.  
   
-4.  Definieren Sie die Felder der Entität in einer Klasse.  Sie können dem Projekt entweder eine neue Klasse hinzufügen oder eine vorhandene Klasse verwenden, die mit anderen Tools wie dem Object Relational Designer \(O\/R\-Designer\) erstellt wurde.  Im folgenden Beispiel wird eine Entitätsklasse mit dem Namen Contact veranschaulicht.  
+4.  Define the fields of the entity in a class. You can either add a new class to the project or use an existing class created by using other tools such as the Object Relational Designer (O/R Designer). The following example shows an entity class named Contact.  
   
-     [!code-csharp[SP_BDC_Entity_Data_Class#1](../snippets/csharp/VS_Snippets_OfficeSP/sp_bdc_entity_data_class/cs/bdcmodel1/contact.cs#1)]
-     [!code-vb[SP_BDC_Entity_Data_Class#1](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_bdc_entity_data_class/vb/bdcmodel1/contact.vb#1)]  
+     [!code-csharp[SP_BDC_Entity_Data_Class#1](../sharepoint/codesnippet/CSharp/sp_bdc_entity_data_class/bdcmodel1/contact.cs#1)]  [!code-vb[SP_BDC_Entity_Data_Class#1](../sharepoint/codesnippet/VisualBasic/sp_bdc_entity_data_class/bdcmodel1/contact.vb#1)]  
   
-## Siehe auch  
- [Gewusst wie: Hinzufügen einer Creator-Methode](../sharepoint/how-to-add-a-creator-method.md)   
- [Gewusst wie: Hinzufügen einer Deleter-Methode](../sharepoint/how-to-add-a-deleter-method.md)   
- [Gewusst wie: Hinzufügen einer Updater-Methode](../sharepoint/how-to-add-an-updater-method.md)   
- [Gewusst wie: Hinzufügen einer Finder-Methode](../sharepoint/how-to-add-a-finder-method.md)   
- [Gewusst wie: Hinzufügen einer bestimmten Finder-Methode](../sharepoint/how-to-add-a-specific-finder-method.md)  
+## <a name="see-also"></a>See Also  
+ [How to: Add a Creator Method](../sharepoint/how-to-add-a-creator-method.md)   
+ [How to: Add a Deleter Method](../sharepoint/how-to-add-a-deleter-method.md)   
+ [How to: Add an Updater Method](../sharepoint/how-to-add-an-updater-method.md)   
+ [How to: Add a Finder Method](../sharepoint/how-to-add-a-finder-method.md)   
+ [How to: Add a Specific Finder Method](../sharepoint/how-to-add-a-specific-finder-method.md)  
   
   

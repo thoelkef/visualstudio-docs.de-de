@@ -1,74 +1,91 @@
 ---
-title: "LAUNCH_FLAGS | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "LAUNCH_FLAGS"
-helpviewer_keywords: 
-  - "LAUNCH_FLAGS-enumeration"
+title: LAUNCH_FLAGS | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- LAUNCH_FLAGS
+helpviewer_keywords:
+- LAUNCH_FLAGS enumeration
 ms.assetid: f51aab02-d257-4302-bb79-b7d8ba9ac4e5
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# LAUNCH_FLAGS
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2f838e559d4c33a7bb807d5b0360a51ea7ff0d74
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
-Gibt die Programmdebuginformationen Startflags an.  
+---
+# <a name="launchflags"></a>LAUNCH_FLAGS
+Specifies the debug launch flags.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-enum enum_LAUNCH_FLAGS {   
-   LAUNCH_DEBUG      = 0x0000,  
-   LAUNCH_NODEBUG    = 0x0001,  
-   LAUNCH_ENABLE_ENC = 0x0002,  
-   LAUNCH_MERGE_ENV  = 0x0004  
+```cpp  
+enum enum_LAUNCH_FLAGS {   
+   LAUNCH_DEBUG      = 0x0000,  
+   LAUNCH_NODEBUG    = 0x0001,  
+   LAUNCH_ENABLE_ENC = 0x0002,  
+   LAUNCH_MERGE_ENV  = 0x0004  
 };  
 typedef DWORD LAUNCH_FLAGS;  
 ```  
   
-```c#  
-public enum enum_LAUNCH_FLAGS {   
-   LAUNCH_DEBUG      = 0x0000,  
-   LAUNCH_NODEBUG    = 0x0001,  
-   LAUNCH_ENABLE_ENC = 0x0002,  
-   LAUNCH_MERGE_ENV  = 0x0004  
+```csharp  
+public enum enum_LAUNCH_FLAGS {   
+   LAUNCH_DEBUG      = 0x0000,  
+   LAUNCH_NODEBUG    = 0x0001,  
+   LAUNCH_ENABLE_ENC = 0x0002,  
+   LAUNCH_MERGE_ENV  = 0x0004  
 };  
 ```  
   
-## Mitglieder  
- LAUNCH\_DEBUG  
- Startet den Prozess zu Debugzwecken.  
+## <a name="members"></a>Members  
+ LAUNCH_DEBUG  
+ Launches the process for debugging.  
   
- LAUNCH\_NODEBUG  
- Startet den Prozess, ohne sie zu debuggen.  
+ LAUNCH_NODEBUG  
+ Launches the process without debugging it.  
   
- LAUNCH\_ENABLE\_ENC  
- VERALTET. USE, TUN NOT  
+ LAUNCH_ENABLE_ENC  
+ DEPRECATED, DO NOT USE.  
   
- LAUNCH\_MERGE\_ENV  
- Startet den Prozess und übergibt dem Start der Umgebung zusammen hostet.  
+ LAUNCH_MERGE_ENV  
+ Launches the process and merges the environment with the launching host.  
   
-## Hinweise  
- Diese Werte werden als Argument an die [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)\-Methode übergeben.  
+## <a name="remarks"></a>Remarks  
+ These values are passed as an argument to the [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) method.  
   
- Diese Flags werden mit bitweisen `OR`kombiniert werden.  
+ These flags may be combined with a bitwise `OR`.  
   
-## Anforderungen  
+## <a name="requirements"></a>Requirements  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
- [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

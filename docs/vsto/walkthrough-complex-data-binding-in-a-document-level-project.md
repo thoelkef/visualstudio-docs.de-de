@@ -1,233 +1,236 @@
 ---
-title: "Exemplarische Vorgehensweise: Komplexe Datenbindung in Projekten auf Dokumentebene"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Komplexe Daten [Office-Entwicklung in Visual Studio]"
-  - "Daten [Office-Entwicklung in Visual Studio], Binden von Daten"
-  - "Datenbindung [Office-Entwicklung in Visual Studio], Mehrere Spalten"
-  - "Datenbindung in mehreren Spalten [Office-Entwicklung in Visual Studio]"
+title: 'Walkthrough: Complex Data Binding in a Document-Level Project | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- data [Office development in Visual Studio], binding data
+- complex data [Office development in Visual Studio]
+- multiple column data binding [Office development in Visual Studio]
+- data binding [Office development in Visual Studio], multiple columns
 ms.assetid: 32ffad3d-fba4-476a-99b8-ef440434f4e1
 caps.latest.revision: 50
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 49
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: eabb6c71606a980cb0056bd844e93cde6c3a746e
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Exemplarische Vorgehensweise: Komplexe Datenbindung in Projekten auf Dokumentebene
-  Diese exemplarische Vorgehensweise veranschaulicht die Grundlagen der komplexen Datenbindung in einem Projekt auf Dokumentebene.  In einem Microsoft Office Excel\-Arbeitsblatt können mehrere Zellen an Felder der SQL Server\-Datenbank **Northwind** gebunden werden.  
+# <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Walkthrough: Complex Data Binding in a Document-Level Project
+  This walkthrough demonstrates the basics of complex data binding in a document-level project. You can bind multiple cells in a Microsoft Office Excel worksheet to fields in the Northwind SQL Server database.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:  
+ This walkthrough illustrates the following tasks:  
   
--   Hinzufügen einer Datenquelle zum Arbeitsmappenprojekt  
+-   Adding a data source to your workbook project.  
   
--   Hinzufügen datengebundener Steuerelemente zu einem Arbeitsblatt  
+-   Adding data-bound controls to a worksheet.  
   
--   Speichern von Datenänderungen in der Datenbank  
+-   Saving data changes back to the database.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## Vorbereitungsmaßnahmen  
- Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] oder [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] or [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
--   Zugriff auf einen Server mit der SQL Server\-Beispieldatenbank **Northwind**.  
+-   Access to a server with the Northwind SQL Server sample database.  
   
--   Lese\- und Schreibberechtigungen für die SQL Server\-Datenbank.  
+-   Permissions to read from and write to the SQL Server database.  
   
-## Erstellen eines neuen Projekts  
- Zunächst müssen Sie ein Excel\-Arbeitsmappenprojekt erstellen.  
+## <a name="creating-a-new-project"></a>Creating a New Project  
+ The first step is to create an Excel workbook project.  
   
-#### So erstellen Sie ein neues Projekt  
+#### <a name="to-create-a-new-project"></a>To create a new project  
   
-1.  Erstellen Sie ein Excel\-Arbeitsmappenprojekt mit dem Namen **My Complex Data Binding**.  Wählen Sie im Assistenten **Neues Dokument erstellen** aus.  
+1.  Create an Excel workbook project with the name **My Complex Data Binding**. In the wizard, select **Create a new document**.  
   
-     Weitere Informationen finden Sie unter [Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Visual Studio öffnet die neue Excel\-Arbeitsmappe im Designer und fügt dem **Projektmappen\-Explorer** das Projekt "My Complex Data Binding" hinzu.  
+     Visual Studio opens the new Excel workbook in the designer and adds the **My Complex Data Binding** project to **Solution Explorer**.  
   
-## Erstellen der Datenquelle  
- Verwenden Sie das **Datenquellenfenster**, um dem Projekt ein typisiertes Dataset hinzuzufügen.  
+## <a name="creating-the-data-source"></a>Creating the Data Source  
+ Use the **Data Sources** window to add a typed dataset to your project.  
   
-#### So erstellen Sie die Datenquelle  
+#### <a name="to-create-the-data-source"></a>To create the data source  
   
-1.  Wenn das **Datenquellen** nicht sichtbar ist, zeigen Sie sie durch, auf der Menüleiste auf und **Ansicht** auswählen, **Weitere Fenster**, **Datenquellen**.  
+1.  If the **Data Sources** window is not visible, display it by, on the menu bar, choosing **View**, **Other Windows**, **Data Sources**.  
   
-2.  Wählen Sie **Neue Datenquelle hinzufügen**, um **Assistent zum Konfigurieren von Datenquellen** zu starten.  
+2.  Choose **Add New Data Source** to start the **Data Source Configuration Wizard**.  
   
-3.  Wählen Sie **Datenbank** aus, und klicken Sie auf **Weiter**.  
+3.  Select **Database** and then click **Next**.  
   
-4.  Wählen Sie eine Datenverbindung zur Northwind SQL Server\-Beispieldatenbank aus, oder fügen Sie mithilfe der Schaltfläche **Neue Verbindung** eine neue Verbindung hinzu.  
+4.  Select a data connection to the Northwind sample SQL Server database, or add a new connection by using the **New Connection** button.  
   
-5.  Klicken Sie nach dem Auswählen oder Erstellen einer Verbindung auf **Weiter**.  
+5.  After a connection has been selected or created, click **Next**.  
   
-6.  Deaktivieren Sie ggf. die Option zum Speichern der Verbindung, und klicken Sie dann auf **Weiter**.  
+6.  Clear the option to save the connection if it is selected, and then click **Next**.  
   
-7.  Erweitern Sie im Fenster **Datenbankobjekte** den Knoten **Tabellen**.  
+7.  Expand the **Tables** node in the **Database objects** window.  
   
-8.  Aktivieren Sie das Kontrollkästchen neben der Tabelle **Employees**.  
+8.  Select the check box next to the **Employees** table.  
   
-9. Klicken Sie auf **Fertig stellen**.  
+9. Click **Finish**.  
   
- Der Assistent fügt dem **Datenquellen** die Tabelle **Employees** hinzu.  Außerdem wird dem Projekt ein typisiertes Dataset hinzugefügt, das im **Projektmappen\-Explorer** sichtbar ist.  
+ The wizard adds the **Employees** table to the **Data Sources** window. It also adds a typed dataset to your project that is visible in **Solution Explorer**.  
   
-## Hinzufügen von Steuerelementen zum Arbeitsblatt  
- Beim Öffnen einer Arbeitsmappe wird darin die Tabelle **Employees** angezeigt.  Benutzer können auch die Daten ändern und anschließend die Änderungen durch Klicken auf eine Schaltfläche in der Datenbank speichern.  
+## <a name="adding-controls-to-the-worksheet"></a>Adding Controls to the Worksheet  
+ A worksheet will display the **Employees** table when the workbook is opened. Users will be able to make changes to the data and then save those changes back to the database by clicking a button.  
   
- Soll die Arbeitsmappe automatisch an die Tabelle gebunden werden, kann der Arbeitsmappe im Fenster **Datenquellen** ein <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelement hinzugefügt werden.  Fügen Sie aus der **Toolbox** ein <xref:System.Windows.Forms.Button>\-Steuerelement hinzu, um dem Benutzer das Speichern von Änderungen zu ermöglichen.  
+ To bind the worksheet to the table automatically, you can add a <xref:Microsoft.Office.Tools.Excel.ListObject> control to the worksheet from the **Data Sources** window. To give the user the option to save changes, add a <xref:System.Windows.Forms.Button> control from the **Toolbox**.  
   
-#### So fügen Sie ein Listenobjekt hinzu  
+#### <a name="to-add-a-list-object"></a>To add a list object  
   
-1.  Überprüfen Sie, ob die **My Complex Data Binding.xlsx** Arbeitsmappe im Visual Studio\-Designer geöffnet ist, mit **Blatt1** angezeigt.  
+1.  Verify that the **My Complex Data Binding.xlsx** workbook is open in the Visual Studio designer, with **Sheet1** displayed.  
   
-2.  Öffnen Sie das Fenster **Datenquellen**, und wählen Sie den Knoten **Employees** aus.  
+2.  Open the **Data Sources** window and select the **Employees** node.  
   
-3.  Klicken Sie auf den Dropdownpfeil, der angezeigt wird.  
+3.  Click the drop-down arrow that appears.  
   
-4.  Wählen Sie in der Dropdownliste **ListObject** aus.  
+4.  Select **ListObject** in the drop-down list.  
   
-5.  Ziehen Sie die Tabelle **Employees** zur Zelle **A6**.  
+5.  Drag the **Employees** table to cell **A6**.  
   
-     Ein <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelement mit Namen `EmployeesListObject` wird in der Zelle **A6** erstellt.  Gleichzeitig werden dem Projekt eine <xref:System.Windows.Forms.BindingSource> mit Namen `EmployeesBindingSource`, ein Tabellenadapter und eine <xref:System.Data.DataSet>\-Instanz hinzugefügt.  Das Steuerelement ist an die <xref:System.Windows.Forms.BindingSource> gebunden, die wiederum an die <xref:System.Data.DataSet>\-Instanz gebunden ist.  
+     A <xref:Microsoft.Office.Tools.Excel.ListObject> control named `EmployeesListObject` is created in cell **A6**. At the same time, a <xref:System.Windows.Forms.BindingSource> named `EmployeesBindingSource`, a table adapter, and a <xref:System.Data.DataSet> instance are added to the project. The control is bound to the <xref:System.Windows.Forms.BindingSource>, which in turn is bound to the <xref:System.Data.DataSet> instance.  
   
-#### So fügen Sie eine Schaltfläche hinzu  
+#### <a name="to-add-a-button"></a>To add a button  
   
-1.  Klicken Sie in der **Toolbox** auf die Registerkarte **Allgemeine Steuerelemente**, und fügen Sie von dort aus der Zelle **A4** des Arbeitsblatts ein <xref:System.Windows.Forms.Button>\-Steuerelement hinzu.  
+1.  From the **Common Controls** tab of the **Toolbox**, add a <xref:System.Windows.Forms.Button> control to cell **A4** of the worksheet.  
   
- Der nächste Schritt besteht darin, der Schaltfläche Text hinzuzufügen, wenn das Arbeitsblatt geöffnet wird.  
+ The next step is to add text to the button when the worksheet opens.  
   
-## Initialisieren des Steuerelements  
- Fügen Sie der Schaltfläche den Text im <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup>\-Ereignishandler hinzu.  
+## <a name="initializing-the-control"></a>Initializing the Control  
+ Add text to the button in the <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> event handler.  
   
-#### So initialisieren Sie das Steuerelement  
+#### <a name="to-initialize-the-control"></a>To initialize the control  
   
-1.  Klicken Sie im **Projektmappen\-Explorer** mit der rechten Maustaste auf **Sheet1.vb** oder **Sheet1.cs**, und klicken Sie dann im Kontextmenü auf **Code anzeigen**.  
+1.  In **Solution Explorer**, right-click **Sheet1.vb** or **Sheet1.cs**, and then click **View Code** on the shortcut menu.  
   
-2.  Fügen Sie der `Sheet1_Startup`\-Methode den folgenden Code hinzu, um den Text für b`utton` festzulegen.  
+2.  Add the following code to the `Sheet1_Startup` method to set the text for the b`utton`.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#8](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/CS/Sheet3.cs#8)]
-     [!code-vb[Trin_VstcoreDataExcel#8](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/VB/Sheet3.vb#8)]  
+     [!code-csharp[Trin_VstcoreDataExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#8)]  [!code-vb[Trin_VstcoreDataExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#8)]  
   
-3.  Nur in C\#: Fügen Sie einen Ereignishandler für das <xref:System.Windows.Forms.Control.Click>\-Ereignis zur `Sheet1_Startup`\-Methode hinzu.  
+3.  For C# only, add an event handler for the <xref:System.Windows.Forms.Control.Click> event to the `Sheet1_Startup` method.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#9](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/CS/Sheet3.cs#9)]  
+     [!code-csharp[Trin_VstcoreDataExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#9)]  
   
- Fügen Sie nun Code hinzu, um das <xref:System.Windows.Forms.Control.Click>\-Ereignis der Schaltfläche zu behandeln.  
+ Now add code to handle the <xref:System.Windows.Forms.Control.Click> event of the button.  
   
-## Speichern von Änderungen in der Datenbank  
- Alle vorgenommenen Datenänderungen sind nur im lokalen Dataset vorhanden, solange sie nicht explizit in der Datenbank gespeichert werden.  
+## <a name="saving-changes-to-the-database"></a>Saving Changes to the Database  
+ Any changes have been made to the data exist only in the local dataset until they are explicitly saved back to the database.  
   
-#### So speichern Sie Änderungen in der Datenbank  
+#### <a name="to-save-changes-to-the-database"></a>To save changes to the database  
   
-1.  Fügen Sie für das <xref:System.Windows.Forms.Control.Click>\-Ereignis von b`utton` einen Ereignishandler hinzu. Um alle am Dataset vorgenommenen Änderungen in die Datenbank zu übernehmen, fügen Sie folgenden Code hinzu.  
+1.  Add an event handler for the <xref:System.Windows.Forms.Control.Click> event of the b`utton`, and add the following code to commit all changes that have been made in the dataset back to the database.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#10](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/CS/Sheet3.cs#10)]
-     [!code-vb[Trin_VstcoreDataExcel#10](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/VB/Sheet3.vb#10)]  
+     [!code-csharp[Trin_VstcoreDataExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#10)]  [!code-vb[Trin_VstcoreDataExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#10)]  
   
-## Testen der Anwendung  
- Sie können die Arbeitsmappe jetzt testen, um zu überprüfen, ob die Daten wie erwartet angezeigt werden und Sie die Daten im Listenobjekt bearbeiten können.  
+## <a name="testing-the-application"></a>Testing the Application  
+ Now you can test your workbook to verify that the data appears as expected, and that you can manipulate the data in the list object.  
   
-#### So testen Sie die Datenbindung  
+#### <a name="to-test-the-data-binding"></a>To test the data binding  
   
--   Drücken Sie F5.  
+-   Press F5.  
   
-     Stellen Sie sicher, dass das Listenobjekt beim Öffnen der Arbeitsmappe mit Daten aus der Tabelle **Employees** gefüllt wird.  
+     Verify that when the workbook opens, the list object is filled with data from the **Employees** table.  
   
-#### So ändern Sie Daten  
+#### <a name="to-modify-data"></a>To modify data  
   
-1.  Klicken Sie auf die Zelle **B7**, die den Namen **Davolio** enthalten sollte.  
+1.  Click cell **B7**, which should contain the name **Davolio**.  
   
-2.  Geben Sie den Namen Anderson ein, und drücken Sie die EINGABETASTE.  
+2.  Type the name **Anderson**, and then press ENTER.  
   
-#### So ändern Sie einen Spaltenheader  
+#### <a name="to-modify-a-column-header"></a>To modify a column header  
   
-1.  Klicken Sie auf die Zelle, die den Spaltenheader **LastName** enthält.  
+1.  Click the cell that contains the column header **LastName**.  
   
-2.  Geben Sie "Last Name" mit einem Leerzeichen zwischen den beiden Wörtern ein, und drücken Sie die EINGABETASTE.  
+2.  Type **Last Name**, including a space between the two words, and then press ENTER.  
   
-#### So speichern Sie Daten  
+#### <a name="to-save-data"></a>To save data  
   
-1.  Klicken Sie im Arbeitsblatt auf **Speichern**.  
+1.  Click **Save** on the worksheet.  
   
-2.  Beenden Sie Excel.  Klicken Sie auf **Nein**, wenn Sie zum Speichern der vorgenommenen Änderungen aufgefordert werden.  
+2.  Exit Excel. Click **No** when prompted to save the changes you made.  
   
-3.  Drücken Sie F5, um das Projekt erneut auszuführen.  
+3.  Press F5 to run the project again.  
   
-     Das Listenobjekt wird mit Daten aus der Tabelle **Employees** aufgefüllt.  
+     The list object is filled with data from the **Employees** table.  
   
-4.  Beachten Sie, dass in Zelle **B7** immer noch der Name "Anderson" steht. Dabei handelt es sich um die Datenänderung, die Sie vorgenommen haben und die jetzt in der Datenbank gespeichert ist.  Der Spaltenheader **LastName** hat wieder seine ursprüngliche Schreibweise ohne Leerzeichen angenommen, weil der Spaltenheader nicht an die Datenbank gebunden ist, und Sie die im Arbeitsblatt vorgenommenen Änderungen nicht abgespeichert haben.  
+4.  Notice that the name in cell **B7** is still **Anderson**, which is the data change that you made and saved back to the database. The column header **LastName** has changed back to its original form with no space, because the column header is not bound to the database and you did not save the changes you made to the worksheet.  
   
-#### So fügen Sie neue Zeilen hinzu  
+#### <a name="to-add-new-rows"></a>To add new rows  
   
-1.  Wählen Sie im Listenobjekt eine Zelle aus.  
+1.  Select a cell inside the list object.  
   
-     Am unteren Rand der Liste wird eine neue Reihe mit einem Sternchen \(**\***\) in der ersten Zelle angezeigt.  
+     A new row appears at the bottom of the list, with an asterisk (**\***) in the first cell of the new row.  
   
-2.  Fügen Sie der leeren Zeile folgende Informationen hinzu:  
+2.  Add the following information in the empty row.  
   
-    |EmployeeID|LastName|FirstName|Titel|  
+    |EmployeeID|LastName|FirstName|Title|  
     |----------------|--------------|---------------|-----------|  
     |10|Ito|Shu|Sales Manager|  
   
-#### So löschen Sie Zeilen  
+#### <a name="to-delete-rows"></a>To delete rows  
   
--   Klicken Sie mit der rechten Maustaste ganz links auf der Arbeitsmappe auf die Nummer 16 \(Zeile 16\), und klicken Sie anschließend auf **Löschen**.  
+-   Right-click the number 16 (row 16) on the far left side of the worksheet, and then click **Delete**.  
   
-#### So sortieren Sie die Zeilen in der Liste  
+#### <a name="to-sort-the-rows-in-the-list"></a>To sort the rows in the List  
   
-1.  Wählen Sie in der Liste eine Zelle aus.  
+1.  Select a cell inside the list.  
   
-     Pfeilschaltflächen werden in den einzelnen Spaltenheadern angezeigt.  
+     Arrow buttons appear in each column header.  
   
-2.  Klicken Sie im Spaltenheader **Last Name** auf die Pfeilschaltfläche.  
+2.  Click the arrow button in the **Last Name** column header.  
   
-3.  Klicken Sie auf **Aufsteigend sortieren**.  
+3.  Click **Sort Ascending**.  
   
-     Die Zeilen werden alphabetisch nach Nachnamen sortiert.  
+     The rows are sorted alphabetically by last names.  
   
-#### So filtern Sie Informationen  
+#### <a name="to-filter-information"></a>To filter information  
   
-1.  Wählen Sie in der Liste eine Zelle aus.  
+1.  Select a cell inside the list.  
   
-2.  Klicken Sie im Spaltenheader **Title** auf die Pfeilschaltfläche.  
+2.  Click the arrow button in the **Title** column header.  
   
-3.  Klicken Sie auf **Sales Representative**.  
+3.  Click **Sales Representative**.  
   
-     Die Liste zeigt nur die Zeilen an, bei denen in der Spalte **Title** der Eintrag **Sales Representative** steht.  
+     The list shows only those rows that have **Sales Representative** in the **Title** column.  
   
-4.  Klicken Sie im Spaltenheader **Title** erneut auf die Pfeilschaltfläche.  
+4.  Click the arrow button in the **Title** column header again.  
   
-5.  Klicken Sie auf **\(All\)**.  
+5.  Click **(All)**.  
   
-     Der Filter wird entfernt, und es werden alle Zeilen angezeigt.  
+     Filtering is removed and all the rows appear.  
   
-## Nächste Schritte  
- In dieser exemplarischen Vorgehensweise werden die Grundlagen für das Binden einer Tabelle in einer Datenbank an ein Listenobjekt veranschaulicht.  Die folgenden Aufgaben könnten sich daran anschließen:  
+## <a name="next-steps"></a>Next Steps  
+ This walkthrough shows the basics of binding a table in a database to a list object. Here are some tasks that might come next:  
   
--   Zwischenspeichern der Daten, damit diese offline verwendet werden können.  Weitere Informationen hierzu finden Sie unter [Gewusst wie: Zwischenspeichern von Daten zur Offlineverwendung oder zur Verwendung auf einem Server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
+-   Cache the data so that it can be used offline. For more information, see [How to: Cache Data for Use Offline or on a Server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
   
--   Bereitstellen der Projektmappe.  Weitere Informationen finden Sie unter [Bereitstellen einer Office-Projektmappe](../vsto/deploying-an-office-solution.md).  
+-   Deploy the solution. For more information, see [Deploying an Office Solution](../vsto/deploying-an-office-solution.md).  
   
--   Erstellen einer Master\/Detail\-Beziehung zwischen einem Feld und einer Tabelle.  Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen einer Master&#47;Detail-Beziehung mithilfe eines zwischengespeicherten Datasets](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).  
+-   Create a master/detail relation between a field and a table. For more information, see [Walkthrough: Creating a Master Detail Relation Using a Cached Dataset](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).  
   
-## Siehe auch  
- [Binden von Daten an Steuerelemente in Office-Projektmappen](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [Daten in Office-Lösungen](../vsto/data-in-office-solutions.md)   
- [Exemplarische Vorgehensweise: Einfache Datenbindung in Projekten auf Dokumentebene](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)  
+## <a name="see-also"></a>See Also  
+ [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md)   
+ [Data in Office Solutions](../vsto/data-in-office-solutions.md)   
+ [Walkthrough: Simple Data Binding in a Document-Level Project](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)  
   
   

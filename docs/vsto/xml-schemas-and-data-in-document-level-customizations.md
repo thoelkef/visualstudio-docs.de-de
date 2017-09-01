@@ -1,88 +1,92 @@
 ---
-title: "XML-Schemas und -Daten in Anpassungen auf Dokumentebene"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Office-Entwicklung in Visual Studio, XML"
-  - "Schemas [Office-Entwicklung in Visual Studio]"
-  - "XML [Office-Entwicklung in Visual Studio], XML-Schemas"
-  - "XML-Schemas [Office-Entwicklung in Visual Studio]"
-  - "XML-Schemas [Office-Entwicklung in Visual Studio], Informationen über XML-Schemas and Daten"
+title: XML Schemas and Data in Document-Level Customizations | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- XML schemas [Office development in Visual Studio]
+- schemas [Office development in Visual Studio]
+- XML [Office development in Visual Studio], XML schemas
+- XML schemas [Office development in Visual Studio], about XML schemas and data
+- Office development in Visual Studio, XML
 ms.assetid: 74bd5773-6cb0-44fb-9738-75e2f2c6e48d
 caps.latest.revision: 28
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 27
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 3ad424ab226121850e473b8e13ffee305fad88eb
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# XML-Schemas und -Daten in Anpassungen auf Dokumentebene
-  **Wichtig** die Informationen, die in diesem Thema bezüglich Microsoft Word erläutert werden, wird ausschließlich für den Nutzen und die Verwendung von Personen und Organisationen, die außerhalb der USA und ihrer Außengebiete befinden, oder die verwenden, oder entwickeln Programme, die auf ausgeführt werden, Microsoft Word\-Produkte dargestellt, die von Microsoft vor Januar 2010 lizenziert wurden, als Microsoft eine Implementierung der bestimmte Funktionen Beziehung zur benutzerdefinierten XML aus Microsoft Word entfernt wurde.  Diese Informationen bezüglich Microsoft Word dürfen nicht von Personen oder Organisationen in den Vereinigten Staaten oder ihren Außengebieten verwendet werden, die Programme verwenden oder entwickeln, die unter Microsoft Word\-Produkten ausgeführt werden, die von Microsoft nach dem 10. Januar 2010 lizenziert wurden. Diese Produkte verhalten sich nicht wie Produkte, die vor diesem Datum lizenziert oder für die Verwendung außerhalb der Vereinigten Staaten erworben und lizenziert wurden.  
+# <a name="xml-schemas-and-data-in-document-level-customizations"></a>XML Schemas and Data in Document-Level Customizations
+  **Important** The information set out in this topic regarding Microsoft Word is presented exclusively for the benefit and use of individuals and organizations who are located outside the United States and its territories or who are using, or developing programs that run on, Microsoft Word products that were licensed by Microsoft before January 2010, when Microsoft removed an implementation of particular functionality related to custom XML from Microsoft Word. This information regarding Microsoft Word may not be read or used by individuals or organizations in the United States or its territories who are using, or developing programs that run on, Microsoft Word products that were licensed by Microsoft after January 10, 2010; those products will not behave the same as products licensed before that date or purchased and licensed for use outside the United States.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Microsoft Office Excel und Microsoft Office Word ermöglichen es Ihnen, Dokumenten Schemas zuzuordnen.  Dieses Feature kann das Importieren und Exportieren von XML\-Daten in das Dokument bzw. aus dem Dokument erleichtern.  
+ Microsoft Office Excel and Microsoft Office Word provide the capability to map schemas to your documents. This feature can simplify importing and exporting XML data in and out of the document.  
   
- Visual Studio macht zugeordnete Schemaelemente als Steuerelemente im Programmiermodell in Anpassungen auf Dokumentebene verfügbar.  Excel wird durch Visual Studio um Unterstützung für das Binden von Steuerelementen an Daten in Datenbanken, Webdiensten und Objekten erweitert.  Word und Excel erhalten durch Visual Studio Unterstützung für Aktionsbereiche. Die Verwendung von Aktionsbereichen kann Ihren Projektmappen in Verbindung mit einem Dokument, das einem Schema zugeordnet wurde, mehr Benutzerfreundlichkeit verleihen.  Weitere Informationen finden Sie unter [Aktionsbereichsübersicht](../vsto/actions-pane-overview.md).  
+ Visual Studio exposes mapped schema elements in document-level customizations as controls in the programming model. For Excel, Visual Studio adds support for binding the controls to data in databases, Web services, and objects. For Word and Excel, Visual Studio adds support for actions panes, which can be used with a schema-mapped document to create an enhanced end user experience for your solutions. For more information, see [Actions Pane Overview](../vsto/actions-pane-overview.md).  
   
 > [!NOTE]  
->  In Excel\-Projektmappen können keine mehrteiligen XML\-Schemas verwendet werden.  
+>  You cannot use multipart XML schemas in Excel solutions.  
   
-## Objekte, die beim Anfügen von Schemas an Excel\-Arbeitsmappen erstellt werden  
- Wenn Sie einer Arbeitsmappe ein Schema zuordnen, werden von Visual Studio automatisch einige Objekte erstellt und dem Projekt hinzugefügt.  Diese Objekte dürfen nicht mit Visual Studio\-Tools gelöscht werden, da sie von Excel verwaltet werden.  Entfernen Sie die zugeordneten Elemente aus dem Arbeitsblatt, oder trennen Sie das Schema mit Excel\-Tools ab, um die Objekte zu löschen.  
+## <a name="objects-created-when-schemas-are-attached-to-excel-workbooks"></a>Objects Created when Schemas are Attached to Excel Workbooks  
+ When you attach a schema to a workbook, Visual Studio automatically creates several objects and adds them to your project. These objects should not be deleted using Visual Studio tools, because they are managed by Excel. To delete them, remove the mapped elements from the worksheet or detach the schema by using Excel tools.  
   
- Es gibt zwei Hauptobjekte:  
+ There are two main objects:  
   
--   XML\-Schema \(XSD\-Datei\).  Für jedes Schema in der Arbeitsmappe fügt Visual Studio dem Projekt ein Schema hinzu.  Dieses wird im **Projektmappen\-Explorer** als Projektelement mit einer XSD\-Erweiterung angezeigt.  
+-   XML schema (XSD file). For every schema in the workbook, Visual Studio adds a schema to the project. This appears as a project item with an XSD extension in **Solution Explorer**.  
   
--   Eine typisierte <xref:System.Data.DataSet>\-Klasse.  Diese Klasse wird auf Grundlage des Schemas erstellt.  Diese Dataset\-Klasse ist in der **Klassenansicht** sichtbar.  
+-   A typed <xref:System.Data.DataSet> class. This class is created based on the schema. This dataset class is visible in **Class View**.  
   
-## Objekte, die bei der Zuordnung von Schemaelementen zu Excel\-Arbeitsblättern erstellt werden  
- Wenn Sie einem Arbeitsblatt ein Schemaelement aus dem Aufgabenbereich **XML\-Quelle** zuordnen, werden von Visual Studio automatisch mehrere Objekte erstellt und dem Projekt hinzugefügt:  
+## <a name="objects-created-when-schema-elements-are-mapped-to-excel-worksheets"></a>Objects Created when Schema Elements are Mapped to Excel Worksheets  
+ When you map a schema element from the **XML Source** task pane to a worksheet, Visual Studio automatically creates several objects and adds them to your project:  
   
--   Steuerelemente.  Für jedes zugeordnete Objekt in der Arbeitsmappe wird im Programmiermodell ein <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>\-Steuerelement \(für sich nicht wiederholende Schemaelemente\) oder ein <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelement \(für sich wiederholende Schemaelemente\) erstellt.  Das <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelement kann nur gelöscht werden, indem die Zuordnungen und die zugeordneten Objekte aus der Arbeitsmappe gelöscht werden.  Weitere Informationen über Steuerelemente finden Sie unter [Übersicht über Hostelemente und Hoststeuerelemente](../vsto/host-items-and-host-controls-overview.md).  
+-   Controls. For every mapped object in the workbook, an <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> control (for non-repeating schema elements) or a <xref:Microsoft.Office.Tools.Excel.ListObject> control (for repeating schema elements) is created in the programming model. The <xref:Microsoft.Office.Tools.Excel.ListObject> control can be deleted only by deleting the mappings and the mapped objects from the workbook. For more information about controls, see [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
   
--   BindingSource.  Wenn Sie einen <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> durch Zuordnen eines sich nicht wiederholenden Schemaelements zum Arbeitsblatt erstellen, wird eine <xref:System.Windows.Forms.BindingSource> erzeugt und das <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>\-Steuerelement an die <xref:System.Windows.Forms.BindingSource> gebunden.  Sie müssen die <xref:System.Windows.Forms.BindingSource> an eine Instanz der Datenquelle binden, die mit dem Schema übereinstimmt, das dem Dokument zugeordnet wurde – also z. B. mit einer Instanz der typisierten <xref:System.Data.DataSet>\-Klasse, die erstellt wurde.  Erstellen Sie die Bindung, indem Sie im **Eigenschaftenfenster** die Eigenschaften <xref:System.Windows.Forms.BindingSource.DataSource%2A> und <xref:System.Windows.Forms.BindingSource.DataMember%2A> festlegen.  
+-   BindingSource. When you create an <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> by mapping a non-repeating schema element to the worksheet, a <xref:System.Windows.Forms.BindingSource> is created and the <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> control is bound to the <xref:System.Windows.Forms.BindingSource>. You must bind the <xref:System.Windows.Forms.BindingSource> to an instance of the data source that matches the schema mapped to the document, such as an instance of the typed <xref:System.Data.DataSet> class that was created. Create the binding by setting the <xref:System.Windows.Forms.BindingSource.DataSource%2A> and <xref:System.Windows.Forms.BindingSource.DataMember%2A> properties, which are exposed in the **Properties** window.  
   
     > [!NOTE]  
-    >  <xref:System.Windows.Forms.BindingSource> wird nicht für <xref:Microsoft.Office.Tools.Excel.ListObject>\-Objekte erstellt.  Sie müssen das <xref:Microsoft.Office.Tools.Excel.ListObject> durch Festlegen der Eigenschaften <xref:System.Windows.Forms.BindingSource.DataSource%2A> und <xref:System.Windows.Forms.BindingSource.DataMember%2A> im **Eigenschaftenfenster** manuell an die Datenquelle binden.  
+    >  The <xref:System.Windows.Forms.BindingSource> is not created for <xref:Microsoft.Office.Tools.Excel.ListObject> objects. You must manually bind the <xref:Microsoft.Office.Tools.Excel.ListObject> to the data source by setting the <xref:System.Windows.Forms.BindingSource.DataSource%2A> and <xref:System.Windows.Forms.BindingSource.DataMember%2A> properties in the **Properties** window.  
   
-### Zugeordnete Schemas von Office und das Datenquellenfenster von Visual Studio  
- Sowohl mithilfe der zugeordneten Schemas von Office als auch über das **Datenquellenfenster** von Visual Studio können Sie Daten in einem Excel\-Arbeitsblatt zur Berichterstellung oder zur Bearbeitung präsentieren.  In beiden Fällen können Sie Datenelemente in das Excel\-Arbeitsblatt ziehen  Bei beiden Methoden werden Steuerelemente erstellt, die über eine <xref:System.Windows.Forms.BindingSource> an eine Datenquelle \(z. B. <xref:System.Data.DataSet>\) oder einen Webdienst an Daten gebunden sind.  
+### <a name="office-mapped-schemas-and-the-visual-studio-data-sources-window"></a>Office Mapped Schemas and the Visual Studio Data Sources Window  
+ Both the mapped schema functionality of Office and the Visual Studio **Data Sources** window can help you present data on an Excel worksheet for reporting or editing. In both cases you can drag data elements onto the Excel worksheet. Both methods create controls that are data bound through a <xref:System.Windows.Forms.BindingSource> to a data source such as a <xref:System.Data.DataSet> or a Web service.  
   
 > [!NOTE]  
->  Wenn Sie einem Arbeitsblatt ein sich wiederholendes Schemaelement zuordnen, wird von Visual Studio <xref:Microsoft.Office.Tools.Excel.ListObject> erstellt.  Das <xref:Microsoft.Office.Tools.Excel.ListObject> wird durch die <xref:System.Windows.Forms.BindingSource> nicht automatisch an Daten gebunden.  Sie müssen das <xref:Microsoft.Office.Tools.Excel.ListObject> durch Festlegen der Eigenschaften <xref:System.Windows.Forms.BindingSource.DataSource%2A> und <xref:System.Windows.Forms.BindingSource.DataMember%2A> im **Eigenschaftenfenster** manuell an die Datenquelle binden.  
+>  When you map a repeating schema element to a worksheet, Visual Studio creates a <xref:Microsoft.Office.Tools.Excel.ListObject>. The <xref:Microsoft.Office.Tools.Excel.ListObject> is not automatically bound to data through the <xref:System.Windows.Forms.BindingSource>. You must manually bind the <xref:Microsoft.Office.Tools.Excel.ListObject> to the data source by setting the <xref:System.Windows.Forms.BindingSource.DataSource%2A> and <xref:System.Windows.Forms.BindingSource.DataMember%2A> properties in the **Properties** window.  
   
- In der folgenden Tabelle werden einige der Unterschiede zwischen den beiden Methoden gezeigt.  
+ The following table shows some of the differences between the two methods.  
   
-|XML\-Schema|Datenquellenfenster|  
-|-----------------|-------------------------|  
-|Verwendet die Office\-Schnittstelle.|Verwendet das **Datenquellenfenster** in Visual Studio.|  
-|Aktiviert die integrierten Office\-Features für das Importieren und Exportieren von Daten in XML\-Dateien.|Sie müssen die Import\- und Exportfunktionalität programmgesteuert bereitstellen.|  
-|Sie müssen Code schreiben, um die generierten Steuerelemente mit Daten zu füllen.|Für Steuerelemente, die Sie über das **Datenquellenfenster** hinzufügen, wird automatisch Code zum Füllen mit Daten generiert – einschließlich der benötigten Verbindungszeichenfolgen, wenn Sie Datenbankserver verwenden.|  
+|XML schema|Data Sources window|  
+|----------------|-------------------------|  
+|Uses Office interface.|Uses **Data Sources** window in Visual Studio.|  
+|Enables the built-in Office features for importing and exporting data from XML files.|You must provide import and export functionality programmatically.|  
+|You must write code to fill the generated controls with data.|Controls added from the **Data Sources** window have code generated automatically to fill them, along with the necessary connection strings when you use database servers.|  
   
-## Verhalten, wenn Schemas an Word\-Dokumente angefügt werden  
- Beim Anfügen eines Schemas an ein Word\-Dokument, das in einem Office\-Projekt auf Dokumentebene verwendet wird, werden keine Datenobjekte erstellt.  Es werden jedoch Steuerelemente erstellt, wenn Sie dem Dokument ein Schemaelement zuordnen.  Welche Art von Steuerelement erstellt wird, hängt von der Art des zugeordneten Elements ab. Bei wiederholenden Elementen werden <xref:Microsoft.Office.Tools.Word.XMLNodes>\-Steuerelemente generiert, während bei nicht wiederholenden Elementen <xref:Microsoft.Office.Tools.Word.XMLNode>\-Steuerelemente generiert werden.  Weitere Informationen finden Sie unter [XMLNodes-Steuerelement](../vsto/xmlnodes-control.md) und [XMLNode-Steuerelement](../vsto/xmlnode-control.md).  
+## <a name="behavior-when-schemas-are-attached-to-word-documents"></a>Behavior when Schemas are Attached to Word Documents  
+ Data objects are not created when you attach a schema to a Word document that is used in a document-level Office project. However, when you map a schema element to your document, controls are created. The type of control depends on what type of element you map; repeating elements generate <xref:Microsoft.Office.Tools.Word.XMLNodes> controls, and non-repeating elements generate <xref:Microsoft.Office.Tools.Word.XMLNode> controls. For more information, see [XMLNodes Control](../vsto/xmlnodes-control.md) and [XMLNode Control](../vsto/xmlnode-control.md).  
   
-## Bereitstellung von Projektmappen mit XML\-Schemas  
- Sie sollten einen Installer erstellen, um eine Projektmappe bereitzustellen, die ein XML\-Schema verwendet, das einem Dokument zugeordnet ist.  Der Installer sollte das Schema in der Schemabibliothek auf dem Computer des Benutzers registrieren.  Die Projektmappe funktioniert auch, wenn das Schema nicht registriert wird. In diesem Fall generiert Word nämlich beim Öffnen des Dokuments durch den Benutzer ein temporäres Schema, das auf den im Dokument enthaltenen Elementen basiert.  Das Schema, mit dem das Projekt erstellt wurde, kann jedoch vom Benutzer nicht gespeichert oder zum Validieren verwendet werden.  Weitere Informationen über Installer finden Sie unter [Bereitstellen von Anwendungen, Diensten und Komponenten](../deployment/deploying-applications-services-and-components.md).  
+## <a name="deployment-of-solutions-that-include-xml-schemas"></a>Deployment of Solutions That Include XML Schemas  
+ You should create an installer to deploy a solution that uses an XML schema that is mapped to a document. The installer should register the schema in the schema library on the user's computer. If you do not register the schema, the solution will still work because Word generates a temporary schema based on the elements that are in the document when the user opens it. However, the user will not be able to perform validation against or save the schema that was used to create the project. For more information about installers, see [Deploying Applications, Services, and Components](/visualstudio/deployment/deploying-applications-services-and-components).  
   
- Sie können einem Projekt auch Code hinzufügen, durch den überprüft wird, ob sich das Schema in der Bibliothek befindet und registriert ist.  Wenn dies nicht der Fall ist, können Sie den Benutzer warnen.  
+ You can also add code to your project to check whether the schema is in the library and registered. If it is not, you can warn the user.  
   
- [!code-csharp[Trin_VstcoreDataWord#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDataWord/CS/ThisDocument.cs#1)]
- [!code-vb[Trin_VstcoreDataWord#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreDataWord/VB/ThisDocument.vb#1)]  
+ [!code-vb[Trin_VstcoreDataWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataWordVB/ThisDocument.vb#1)] [!code-csharp[Trin_VstcoreDataWord#1](../vsto/codesnippet/CSharp/Trin_VstcoreDataWordCS/ThisDocument.cs#1)]  
   
-## Siehe auch  
- [Gewusst wie: Zuordnen von Schemas zu Word-Dokumenten in Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
- [Gewusst wie: Zuordnen von Schemas zu Arbeitsblättern in Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)  
+## <a name="see-also"></a>See Also  
+ [How to: Map Schemas to Word Documents Inside Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
+ [How to: Map Schemas to Worksheets Inside Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)  
   
   

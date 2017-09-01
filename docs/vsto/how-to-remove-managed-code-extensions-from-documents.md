@@ -1,62 +1,65 @@
 ---
-title: "Gewusst wie: Entfernen von Erweiterungen durch verwalteten Code aus Dokumenten"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Dokumente [Office-Entwicklung in Visual Studio], Verwaltete Codeerweiterungen"
-  - "Erweiterungen durch verwalteten Code [Office-Entwicklung in Visual Studio], Entfernen"
+title: 'How to: Remove Managed Code Extensions from Documents | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- managed code extensions [Office development in Visual Studio], removing
+- documents [Office development in Visual Studio], managed code extensions
 ms.assetid: e893d9a5-72a5-4087-b81b-04d4d3d9ebf8
 caps.latest.revision: 30
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 29
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 2a70cf3bffc46632eaa85e8b999cd3c366d1cde2
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Gewusst wie: Entfernen von Erweiterungen durch verwalteten Code aus Dokumenten
-  Sie können die Anpassungsassembly programmgesteuert aus einem Dokument oder einer Arbeitsmappe entfernen, das bzw. die Teil einer Anpassung auf Dokumentebene für Microsoft Office Word oder Microsoft Office Excel ist.  Benutzer können die Dokumente dann öffnen und den Inhalt anzeigen, jedoch werden benutzerdefinierte Benutzeroberflächen, die Sie den Dokumenten hinzufügen, nicht angezeigt, und der von Ihnen erstellte Code wird nicht ausgeführt.  
+# <a name="how-to-remove-managed-code-extensions-from-documents"></a>How to: Remove Managed Code Extensions from Documents
+  You can programmatically remove the customization assembly from a document or workbook that is part of a document-level customization for Microsoft Office Word or Microsoft Office Excel. Users can then open the documents and view the contents, but any custom user interface (UI) you add to the documents will not appear, and your code will not run.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Sie können die Anpassungsassembly entfernen, indem Sie eine der RemoveCustomization\-Methoden verwenden, die von [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] bereitgestellt werden.  Welche Methode Sie verwenden, hängt davon ab, ob Sie die Anpassung zur Laufzeit entfernen möchten \(d. h. durch Ausführen von Code in der Anpassung bei geöffnetem Word\-Dokument bzw. geöffneter Excel\-Arbeitsmappe\) oder Sie die Anpassung aus einem geschlossenen Dokument bzw. einem Dokument entfernen möchten, das sich auf einem Server befindet, auf dem Microsoft Office nicht installiert ist.  
+ You can remove the customization assembly by using one of the RemoveCustomization methods provided by the [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Which method you use depends on whether you want to remove the customization at run time (that is, by running code in the customization while the Word document or Excel workbook is open), or if you want to remove the customization from a closed document or a document that is on a server that does not have Microsoft Office installed.  
   
- ![Link zu Video](~/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie im Thema zum [Anfügen oder Trennen einer VSTO\-Assembly an ein bzw. von einem Word\-Dokument](http://go.microsoft.com/fwlink/?LinkId=136782) \(möglicherweise in englischer Sprache\).  
+ ![link to video](../vsto/media/playvideo.gif "link to video") For a related video demonstration, see [How Do I: Attach or Detach a VSTO Assembly from a Word Document?](http://go.microsoft.com/fwlink/?LinkId=136782).  
   
-### So entfernen Sie die Anpassungsassembly zur Laufzeit  
+### <a name="to-remove-the-customization-assembly-at-run-time"></a>To remove the customization assembly at run time  
   
-1.  Rufen Sie im Anpassungscode die <xref:Microsoft.Office.Tools.Word.Document.RemoveCustomization%2A>\-Methode \(für Word\) oder die <xref:Microsoft.Office.Tools.Excel.Workbook.RemoveCustomization%2A>\-Methode \(für Excel\) auf.  Diese Methode sollte nur aufgerufen werden, wenn die Anpassung nicht mehr benötigt wird.  
+1.  In your customization code, call the <xref:Microsoft.Office.Tools.Word.Document.RemoveCustomization%2A> method (for Word) or the <xref:Microsoft.Office.Tools.Excel.Workbook.RemoveCustomization%2A> method (for Excel). This method should be called only after the customization is no longer needed.  
   
-     Der Ort, an dem Sie diese Methode im Code aufrufen, hängt von der Verwendung der Anpassung ab.  Verwenden Kunden beispielsweise die Funktionen der Anpassung, bis sie bereit sind, das Dokument an andere Clients zu senden, die nur das Dokument selbst \(nicht die Anpassung\) benötigen, können Sie Benutzeroberflächenelemente bereitstellen, die RemoveCustomization aufrufen, wenn der Kunde darauf klickt.  Alternativ können Sie, wenn die Anpassung das Dokument beim ersten Öffnen mit Daten auffüllt, die Anpassung jedoch keine anderen Funktionen bereitstellt, auf die Kunden direkt zugreifen, RemoveCustomization aufrufen, sobald die Anpassung die Initialisierung des Dokuments abgeschlossen hat.  
+     Where you call this method in your code depends on how your customization is used. For example, if customers use your customization's features until they are ready to send the document to other clients that only need to the document itself (not the customization), you can provide some UI that calls RemoveCustomization when the customer clicks it. Alternatively, if your customization populates the document with data when it is first opened, but the customization doesn't provide any other features that are accessed directly by customers, then you can call RemoveCustomization as soon as your customization finishes initializing the document.  
   
-### So entfernen Sie die Anpassungsassembly aus einem geschlossenen Dokument oder einem Dokument auf einem Server  
+### <a name="to-remove-the-customization-assembly-from-a-closed-document-or-a-document-on-a-server"></a>To remove the customization assembly from a closed document or a document on a server  
   
-1.  In einem Projekt, das nicht Microsoft Office, wie eine Konsolenanwendung oder ein Windows Forms\-Projekt erfordert, fügen Sie einen Verweis auf die Assembly Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll hinzu.  
+1.  In a project that does not require Microsoft Office, such as a console application or Windows Forms project, add a reference to the Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll assembly.  
   
-2.  Fügen Sie am Anfang der Codedatei die folgende **Imports**\-Anweisung bzw. **using**\-Anweisung ein.  
+2.  Add the following **Imports** or **using** statement to the top of your code file.  
   
-     [!code-csharp[Trin_VstcoreDeployment#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDeployment/CS/Program.cs#1)]
-     [!code-vb[Trin_VstcoreDeployment#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreDeployment/VB/Program.vb#1)]  
+     [!code-csharp[Trin_VstcoreDeployment#1](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#1)]  [!code-vb[Trin_VstcoreDeployment#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#1)]  
   
-3.  Rufen Sie die statische <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A>\-Methode der <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>\-Klasse auf, und geben Sie den Pfad zum Projektmappendokument als Parameter an.  
+3.  Call the static <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A> method of the <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> class, and specify the solution document path for the parameter.  
   
-     Im folgenden Codebeispiel wird angenommen, dass Sie die Anpassung aus einem Dokument mit dem Namen **WordDocument1.docx** entfernen, das sich auf dem Desktop befindet.  
+     The following code example assumes that you are removing the customization from a document named **WordDocument1.docx** that is on the desktop.  
   
-     [!code-csharp[Trin_VstcoreDeployment#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDeployment/CS/Program.cs#2)]
-     [!code-vb[Trin_VstcoreDeployment#2](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreDeployment/VB/Program.vb#2)]  
+     [!code-csharp[Trin_VstcoreDeployment#2](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#2)]  [!code-vb[Trin_VstcoreDeployment#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#2)]  
   
-4.  Erstellen Sie das Projekt, und führen Sie die Anwendung auf dem Computer aus, auf dem Sie die Anpassung entfernen möchten.  Der Computer muss die Visual Studio 2010 Tools for Office\-Laufzeit installiert haben.  
+4.  Build the project and run the application on the computer where you want to remove the customization. The computer must have the Visual Studio 2010 Tools for Office Runtime installed.  
   
-## Siehe auch  
- [Verwalten von Dokumenten auf einem Server mit der ServerDocument-Klasse](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
- [Gewusst wie: Anfügen von Erweiterungen durch verwalteten Code an Dokumente](../vsto/how-to-attach-managed-code-extensions-to-documents.md)  
+## <a name="see-also"></a>See Also  
+ [Managing Documents on a Server by Using the ServerDocument Class](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
+ [How to: Attach Managed Code Extensions to Documents](../vsto/how-to-attach-managed-code-extensions-to-documents.md)  
   
   

@@ -1,75 +1,91 @@
 ---
-title: "CA2112: Gesicherte Typen sollten keine Felder verf&#252;gbar machen. | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2112"
-  - "SecuredTypesShouldNotExposeFields"
-helpviewer_keywords: 
-  - "CA2112"
-  - "SecuredTypesShouldNotExposeFields"
+title: 'CA2112: Secured types should not expose fields | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2112
+- SecuredTypesShouldNotExposeFields
+helpviewer_keywords:
+- SecuredTypesShouldNotExposeFields
+- CA2112
 ms.assetid: 9eb13a78-3487-49f2-81d1-3c3866db132f
 caps.latest.revision: 15
-caps.handback.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA2112: Gesicherte Typen sollten keine Felder verf&#252;gbar machen.
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: b57c27397fc28536aade5bb5907a0b8d6ad28aab
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2112-secured-types-should-not-expose-fields"></a>CA2112: Secured types should not expose fields
 |||  
 |-|-|  
 |TypeName|SecuredTypesShouldNotExposeFields|  
 |CheckId|CA2112|  
-|Kategorie \(Category\)|Microsoft.Security|  
-|Unterbrechende Änderung|Breaking|  
+|Category|Microsoft.Security|  
+|Breaking Change|Breaking|  
   
-## Ursache  
- Ein öffentlicher oder geschützter Typ enthält öffentliche Felder und wird durch [Link Demands](../Topic/Link%20Demands.md) gesichert.  
+## <a name="cause"></a>Cause  
+ A public or protected type contains public fields and is secured by a [Link Demands](/dotnet/framework/misc/link-demands).  
   
-## Regelbeschreibung  
- Wenn Code auf eine Instanz eines Typs zugreifen muss, der durch einen Linkaufruf gesichert ist, muss der Code für den Zugriff auf die Felder des Typs nicht die Anforderungen des Linkaufrufs erfüllen.  
+## <a name="rule-description"></a>Rule Description  
+ If code has access to an instance of a type that is secured by a link demand, the code does not have to satisfy the link demand to access the type's fields.  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, wandeln Sie die Felder in nicht\-öffentliche Felder um, und fügen Sie öffentliche Eigenschaften oder Methoden hinzu, die die Felddaten zurückgeben.  LinkDemand\-Sicherheitsüberprüfungen für Typen schützen den Zugriff auf die Eigenschaften und Methoden des Typs.  Die Codezugriffssicherheit gilt jedoch nicht für Felder.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, make the fields nonpublic and add public properties or methods that return the field data. LinkDemand security checks on types protect access to the type's properties and methods. However, code access security does not apply to fields.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Sowohl aufgrund der Sicherheitsaspekte und der Prinzipien für gute Entwürfe sollten Sie Verstöße beheben, indem Sie die öffentlichen Felder in nicht\-öffentliche Felder umwandeln.  Sie können eine Warnung dieser Regel unterdrücken, wenn das Feld keine Informationen enthält, die gesichert bleiben sollten und wenn Sie nicht auf den Inhalt des Felds angewiesen sind.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Both for security issues and for good design, you should fix violations by making the public fields nonpublic. You can suppress a warning from this rule if the field does not hold information that should remain secured, and you do not rely on the contents of the field.  
   
-## Beispiel  
- Das folgende Beispiel umfasst einen Bibliothekstyp \(`SecuredTypeWithFields`\) mit ungesicherten Feldern, einen Typ \(`Distributor`\), der Instanzen des Bibliothekstyps erstellen kann, und fälschlicherweise an Typen übergibt, die nicht berechtigt sind, die Instanzen zu erstellen, und Anwendungscode, der die Felder einer Instanz lesen kann, auch wenn er nicht über die Berechtigung verfügt, durch die der Typ gesichert wird.  
+## <a name="example"></a>Example  
+ The following example is composed of a library type (`SecuredTypeWithFields`) with unsecured fields, a type (`Distributor`) that can create instances of the library type and mistaken passes instances to types do not have permission to create them, and application code that can read an instance's fields even though it does not have the permission that secures the type.  
   
- Der folgende Bibliothekscode verstößt gegen die Regel.  
+ The following library code violates the rule.  
   
- [!code-cs[FxCop.Security.LinkDemandOnField#1](../code-quality/codesnippet/CSharp/ca2112-secured-types-should-not-expose-fields_1.cs)]  
+ [!code-csharp[FxCop.Security.LinkDemandOnField#1](../code-quality/codesnippet/CSharp/ca2112-secured-types-should-not-expose-fields_1.cs)]  
   
-## Beispiel  
- Die Anwendung kann wegen des Linkaufrufs, der den gesicherten Typ schützt, keine Instanz erstellen.  Die folgende Klasse gibt der Anwendung die Möglichkeit, eine Instanz des gesicherten Typs zu erhalten.  
+## <a name="example"></a>Example  
+ The application cannot create an instance because of the link demand that protects the secured type. The following class enables the application to obtain an instance of the secured type.  
   
- [!code-cs[FxCop.Security.LDOnFieldsDistributor#1](../code-quality/codesnippet/CSharp/ca2112-secured-types-should-not-expose-fields_2.cs)]  
+ [!code-csharp[FxCop.Security.LDOnFieldsDistributor#1](../code-quality/codesnippet/CSharp/ca2112-secured-types-should-not-expose-fields_2.cs)]  
   
-## Beispiel  
- Die folgende Anwendung zeigt, wie Code ohne Zugriffsberechtigung für die Methoden eines gesicherten Typs auf dessen Felder zugreifen kann.  
+## <a name="example"></a>Example  
+ The following application illustrates how, without permission to access a secured type's methods, code can access its fields.  
   
- [!code-cs[FxCop.Security.TestLinkDemandOnFields#1](../code-quality/codesnippet/CSharp/ca2112-secured-types-should-not-expose-fields_3.cs)]  
+ [!code-csharp[FxCop.Security.TestLinkDemandOnFields#1](../code-quality/codesnippet/CSharp/ca2112-secured-types-should-not-expose-fields_3.cs)]  
   
- Folgende Ergebnisse werden zurückgegeben:  
+ This example produces the following output.  
   
-  **Erstellen einer Instanz von SecuredTypeWithFields.**  
-**Gesicherte Typfelder: 22, 33**  
-**Ändern des Felds von gesichertem Typ...**  
-**Zwischengespeicherte Objektfelder: 99, 33**   
-## Verwandte Regeln  
- [CA1051: Sichtbare Instanzfelder nicht deklarieren](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)  
+ **Creating an instance of SecuredTypeWithFields.**  
+**Secured type fields: 22, 33**  
+**Changing secured type's field...**  
+**Cached Object fields: 99, 33**   
+## <a name="related-rules"></a>Related Rules  
+ [CA1051: Do not declare visible instance fields](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)  
   
-## Siehe auch  
- [Link Demands](../Topic/Link%20Demands.md)   
- [Daten und Modellierung](../Topic/Data%20and%20Modeling%20in%20the%20.NET%20Framework.md)
+## <a name="see-also"></a>See Also  
+ [Link Demands](/dotnet/framework/misc/link-demands)   
+ [Data and Modeling](/dotnet/framework/data/index)

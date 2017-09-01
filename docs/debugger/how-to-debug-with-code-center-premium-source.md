@@ -1,144 +1,161 @@
 ---
-title: "Gewusst wie: Debuggen mit Code Center Premium-Quellcode | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Code Center Premium"
-  - "Debuggen [Visual Studio], Code Center Premium"
+title: 'How to: Debug with Code Center Premium Source | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- Code Center Premium
+- debugging [Visual Studio], Code Center Premium
 ms.assetid: 18b4769d-b007-4428-9dae-9e72c283ff0d
 caps.latest.revision: 23
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 23
----
-# Gewusst wie: Debuggen mit Code Center Premium-Quellcode
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 9d9c246234bc86cefb9e0a24f97f4c3d692d3942
+ms.contentlocale: de-de
+ms.lasthandoff: 08/22/2017
 
-Mit dem [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]\-Debugger können Sie sicheren, freigegebenen Microsoft MSDN Code Center Premium\-Quellcode debuggen.  
+---
+# <a name="how-to-debug-with-code-center-premium-source"></a>How to: Debug with Code Center Premium Source
+With the [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] debugger, you can debug secure shared source from Microsoft MSDN Code Center Premium.  
   
- In diesem Thema wird erläutert, wie Sie Code Center Premium in Visual Studio einrichten und den Quellcode debuggen.  
+ This topic explains how to set up and debug Code Center Premium source code in Visual Studio.  
   
-### So bereiten Sie Debuggen mit Code Center Premium vor  
+### <a name="to-prepare-for-debugging-with-code-center-premium"></a>To prepare for debugging with Code Center Premium  
   
-1.  Schließen Sie das SmartCard\-Lesegerät an, und setzen Sie die Karte ein, die Sie von der Initiative für freigegebene Quellen erhalten haben.  
+1.  Connect your SmartCard reader and insert the card you obtained from the Shared Source Initiative.  
   
-2.  Starten Sie Visual Studio.  
+2.  Launch Visual Studio.  
   
-3.  Klicken Sie im Menü **Extras** auf **Optionen**.  
+3.  On the **Tools** menu, click **Options**.  
   
-4.  Erweitern Sie im Dialogfeld **Optionen** den Knoten **Debuggen**, und klicken Sie auf **Allgemein**.  
+4.  In the **Options** dialog box, open the **Debugging** node and click **General**.  
   
-5.  Deaktivieren Sie das Kontrollkästchen **Nur eigenen Code aktivieren \(nur verwaltet\)**.  
+5.  Clear the **Enable Just My Code (Managed Only)** check box.  
   
-6.  Wählen Sie **Quellserverunterstützung aktivieren** aus.  
+6.  Select **Enable Enable Source Server Support**.  
   
-7.  Deaktivieren Sie das Kontrollkästchen **Quelldateien müssen exakt mit der Originalversion übereinstimmen**.  
+7.  Clear **Require source files to exactly match the original version**.  
   
-8.  Klicken Sie unter dem Knoten **Debugging** auf **Symbole**.  
+8.  Under the **Debugging** node, click **Symbols**.  
   
-9. Deaktivieren Sie im Feld **Orte für Symboldateien \(PDB\):** das Kontrollkästchen **Microsoft Server\-Symbole**, und fügen Sie die folgenden Orte hinzu:  
+9. In the **Symbol File (.pdb) Locations** box, clear the **Microsoft Server Symbols** check box and add the following locations:  
   
      `https://codepremium.msdn.microsoft.com/symbols`  
   
      `src=https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
     > [!NOTE]
-    >  Achten Sie darauf, den nachgestellten Schrägstrich **\/** am Ende des Pfads anzugeben.  
+    >  Be sure to include the trailing slash**/** at the end of the path.  
   
-     Verschieben Sie diese Orte an den Anfang der Liste, um sicherzustellen, dass diese Symbole zuerst geladen werden.  
+     Move these locations to the top of the list to ensure that these symbols are loaded first.  
   
     > [!NOTE]
-    >  Diese Code Center Premium\-Orte müssen zuerst aufgeführt werden, damit sie als erste Orte geladen werden.  In Visual Studio 2010 können Sie keine Server über den Eintrag **Microsoft\-Symbolserver** hinaus verschieben. Deshalb müssen Sie das Kontrollkästchen deaktivieren.  
+    >  These Code Center Premium locations must be listed first so that they are the first locations that are loaded. In Visual Studio 2010, you cannot move any servers above the **Microsoft Symbol Servers** entry, which is why you must clear the check box.  
     >   
-    >  Um während einer Debugsitzung Symbole aus den Microsoft\-Symbolen zu laden, folgen Sie diesen Schritten:  
+    >  To load symbols from the Microsoft symbols during a debug session, do this:  
     >   
-    >  1.  Wählen Sie im Menü **Debuggen** die Option **Fenster** aus, und wählen Sie dann **Module**.  
-    > 2.  Wählen Sie das Modul aus, für dass Sie Symbole möchten, und öffnen Sie dann das Kontextmenü.  Wählen Sie **Symbole laden aus**, und wählen Sie dann **Microsoft\-Symbolserver**.  
+    >  1.  On the **Debug** menu, choose **Windows** and then choose **Modules**.  
+    > 2.  Select the module that you want symbols for, and then open the shortcut menu. Choose **Load Symbols From** and then choose **Microsoft Symbol Servers**.  
   
-10. Geben Sie im Feld **Symbole vom Symbolserver in diesem Verzeichnis zwischenspeichern** einen Ort an \(z. B. `C:\symbols`\), in dem Symbole von Code Center Premium zwischengespeichert werden können.  Das Zwischenspeichern von Symbolen kann die Leistung während des Debuggens erheblich verbessern.  
+10. In the **Cache symbols from symbol servers in this directory** box, enter a location such as `C:\symbols` where Code Center Premium can cache the symbols. Caching symbols can significantly improve performance during debugging.  
   
-     Wenn beim Debuggen von Quellcode Schwierigkeiten mit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] auftreten, nachdem Sie diese Schritte abgeschlossen haben, überprüfen Sie den Cacheort für zuvor zwischengespeicherte und veraltete Symboldateien.  Entfernen Sie die veralteten Symboldateien.  
+     If you experience difficulty debugging source code with [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] after you complete this procedure, check your cache location for previously cached and outdated symbol files. Remove the outdated symbol files.  
   
-11. Klicken Sie auf **OK**.  
+11. Click **OK**.  
   
-12. Starten Sie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] neu, um sicherzustellen, dass Einstellungen beibehalten werden.  
+12. Restart [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] to ensure that settings are persisted.  
   
-### So debuggen Sie den Quellcode mithilfe der Funktion "An den Prozess anhängen"  
+### <a name="to-debug-your-source-code-using-attach-to-process"></a>To debug your source code using Attach to Process  
   
-1.  Schließen Sie das SmartCard\-Lesegerät an, und setzen Sie die Karte ein, die Sie von der Initiative für freigegebene Quellen erhalten haben.  
+1.  Connect your SmartCard reader and insert the card you obtained from the Shared Source Initiative.  
   
-2.  Starten Sie Visual Studio.  
+2.  Launch Visual Studio.  
   
-3.  Öffnen Sie Ihr Visual Studio\-Projekt.  
+3.  Open your Visual Studio project.  
   
-4.  Klicken Sie im Menü **Extras** auf **An den Prozess anhängen**.  
+4.  On the **Tools** menu, click **Attach to Process**.  
   
-5.  Klicken Sie im Dialogfeld **An den Prozess anhängen** auf **Auswählen**.  
+5.  In the **Attach to Process** dialog box, click **Select**.  
   
-6.  Wählen Sie im Dialogfeld **Codetyp auswählen** unter **Codetypen finden** die Option **Systemeigen**, **Verwaltet** und **Managed\(v4.0\)** aus.  
+6.  In the **Select Code Type** dialog box, under **Detect these code types**, select **Native**, **Managed**, and **Managed(v4.0)**.  
   
-7.  Klicken Sie auf **OK**, um das Dialogfeld **Codetyp auswählen** zu schließen.  
+7.  Click **OK** to dismiss the **Select Code Type** dialog box.  
   
-8.  Wählen Sie im Feld **Verfügbare Prozesse** den Prozess aus, den Sie debuggen möchten.  
+8.  In the **Available Processes** box, select the process you want to debug.  
   
-9. Klicken Sie auf **Anfügen**.  
+9. Click **Attach**.  
   
-10. Wenn Sie aufgefordert werden, das Zertifikat zu bestätigen, klicken Sie auf **OK**.  Geben Sie anschließend die PIN ein.  Übernehmen Sie die Nutzungsbedingungen für Code Center Premium, wenn Sie dazu aufgefordert werden.  
+10. When you are prompted to confirm your certificate, click **OK**. Then enter your PIN. Accept the terms of use for Code Center Premium, if you are prompted,.  
   
-     Das Herunterladen von Symbolen kann je nach Netzwerkgeschwindigkeit viel Zeit in Anspruch nehmen.  Auf der Statusleiste wird angezeigt, wenn alle Symbole erfolgreich heruntergeladen wurden.  
+     Downloading symbols can take lots of time, depending on the network speed. The status bar will indicate when all symbols have been downloaded successfully.  
   
-11. Wiederholen Sie die Anfügeschritte für alle verwalteten Projekte in der Lösung.  
+11. Repeat the attach steps for all managed projects in your Solution.  
   
-### So debuggen Sie Quellcode von einer vorhandenen Lösung aus  
+### <a name="to-debug-source-code-from-an-existing-solution"></a>To debug source code from an existing solution  
   
-1.  Öffnen Sie im **Projektmappen\-Explorer** das Kontextmenü für die Projektmappe, und wählen Sie dann **Eigenschaften** aus.  
+1.  In **Solution Explorer**, open the shortcut menu for the solution and then choose **Properties**.  
   
-2.  Wählen Sie im Dialogfeld "Eigenschaftenseiten" für Projektmappen im Knoten **Allgemeine Eigenschaften** die Option **Quelldateien debuggen**, aus.  
+2.  In the Solution Property Pages dialog box, choose **Debug Source Files** in the **Common Properties** node.  
   
-3.  Fügen Sie der Liste **Verzeichnisse mit Quelldateien** den folgenden Ort hinzu:  
+3.  Add the following location to the **Directories containing source files** list:  
   
      `https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
     > [!NOTE]
-    >  Achten Sie darauf, den nachgestellten Schrägstrich **\/** am Ende des Pfads anzugeben.  
+    >  Be sure to include the trailing slash**/** at the end of the path.  
   
-4.  Führen Sie für jedes verwaltete Projekte in der Projektmappe Folgendes aus:  
+4.  For each managed project in your solution, do the following  
   
-    1.  Öffnen Sie im Projektmappen\-Explorer das Kontextmenü für das Projekt, und wählen Sie **Eigenschaften** aus.  
+    1.  In Solution Explorer, open the shortcut menu for the project and then choose **Properties**.  
   
-    2.  Wählen Sie **Debuggen** und dann **Debuggen von nicht verwaltetem Code aktivieren** aus.  
+    2.  Select **Debug** and then choose **Enable unmanaged code debugging**.  
   
-### So erstellen Sie die Lösung mit der Code Center Premium\-Quelle  
+### <a name="to-debug-your-solution-with-code-center-premium-source"></a>To debug your solution with Code Center Premium source  
   
-1.  Legen Sie in der `Package`\-Klasse einen Haltepunkt für den Paketkonstruktor fest.  
+1.  In your `Package` class, set a breakpoint on the package constructor.  
   
-2.  Klicken Sie im Menü `Debug` auf **Debugging starten**.  
+2.  In the `Debug` menu, click **Start Debugging**.  
   
-3.  Wenn Sie den Haltepunkt im Paketkonstruktor erreichen, navigieren Sie zum Fenster **Aufrufliste**, und klicken Sie mit der rechten Maustaste auf den Stapelrahmen der Assembly, aus der Sie Symbole laden möchten, und klicken Sie anschließend auf **Symbole laden**.  
+3.  When you hit the breakpoint in the package constructor, go to the **Call Stack** window and right-click the stack frame of the assembly you want to load symbols from, then click **Load Symbols**.  
   
-     Doppelklicken Sie auf den Aufrufframe, um die Quelle zu laden.  
+     Double-click the call frame to load the source.  
   
-### So durchsuchen Sie Quellcode in Code Center Premium  
+### <a name="to-browse-source-code-on-code-center-premium"></a>To browse source code on Code Center Premium  
   
-1.  Schließen Sie das SmartCard\-Lesegerät an, und setzen Sie die Karte ein, die Sie von der Initiative für freigegebene Quellen erhalten haben.  
+1.  Connect your SmartCard reader and insert the card you obtained from the Shared Source Initiative.  
   
-2.  Starten Sie Internet Explorer, und geben Sie die folgende URL ein: `https://codepremium.msdn.microsoft.com`  
+2.  Launch Internet Explorer enter the following URL: `https://codepremium.msdn.microsoft.com`  
   
-3.  Navigieren Sie zur gewünschten Quelle.  
+3.  Browse to find the source you want.  
   
-## Siehe auch  
- [Einstellungen und Vorbereitung für das Debuggen](../debugger/debugger-settings-and-preparation.md)   
- [Debuggersicherheit](../debugger/debugger-security.md)   
+## <a name="see-also"></a>See Also  
+ [Debugger Settings and Preparation](../debugger/debugger-settings-and-preparation.md)   
+ [Debugger Security](../debugger/debugger-security.md)   
  [Code Center Premium](http://www.microsoft.com/resources/sharedsource/ccp.mspx)

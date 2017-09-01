@@ -1,74 +1,79 @@
 ---
-title: "Gewusst wie: Konfigurieren der Aufnahmelistensicherheit"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Aufnahmelisten [Office-Entwicklung in Visual Studio]"
-  - "Berechtigungen [Office-Entwicklung in Visual Studio]"
+title: 'How to: Configure Inclusion List Security | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- permissions [Office development in Visual Studio
+- inclusion lists [Office development in Visual Studio]
 ms.assetid: 0609d8f0-4630-4e17-aeb3-14f3134165cf
 caps.latest.revision: 26
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 25
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: ddda79fad6b114c7b91a4b05df82433fe59a0f3d
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
+
 ---
-# Gewusst wie: Konfigurieren der Aufnahmelistensicherheit
-  Mit Administratorrechten können Sie die [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]\-Eingabeaufforderung zur Vertrauensstellung konfigurieren, um zu steuern, ob Endbenutzer Office\-Projektmappen installieren dürfen, indem in der Aufnahmeliste eine Entscheidung bezüglich der Vertrauenswürdigkeit gespeichert wird.  Weitere Informationen zu Aufnahmelisten finden Sie unter [Gewähren von Vertrauenswürdigkeit für Office-Projektmappen mithilfe von Aufnahmelisten](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
+# <a name="how-to-configure-inclusion-list-security"></a>How to: Configure Inclusion List Security
+  If you have Administrator permissions, you can configure the [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] trust prompt to control whether end users are given the option of installing Office solutions by saving a trust decision to the inclusion list. For information about inclusion lists, see [Trusting Office Solutions by Using Inclusion Lists](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- Für Projektmappen in jeder der fünf Zonen können Sie die folgenden Optionen festlegen:  
+ For solutions that are in each of five zones, you can set the following options:  
   
--   Aktivieren Sie den Schlüssel für die vertrauenswürdige [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]\-Eingabeaufforderung und die Aufnahmeliste.  Sie können zulassen, dass Endbenutzer Office\-Projektmappen, die mit einem Zertifikat signiert sind, Vertrauenswürdigkeit gewähren.  
+-   Enable the [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] Trust Prompt Key and the inclusion list. You can allow end users to grant trust to Office solutions that are signed with any certificate.  
   
--   Schränken Sie den Schlüssel für die vertrauenswürdige [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]\-Eingabeaufforderung und die Aufnahmeliste ein.  Sie können zulassen, dass Endbenutzer Office\-Projektmappen installieren, die mit einem Zertifikat signiert sind, das den Herausgeber identifiziert, aber noch nicht als vertrauenswürdig betrachtet werden.  
+-   Restrict the [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] Trust Prompt Key and the inclusion list. You can allow end users to install Office solutions that are signed with a certificate that identifies the publisher, but that is not already trusted.  
   
--   Deaktivieren Sie den Schlüssel für die vertrauenswürdige [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]\-Eingabeaufforderung und die Aufnahmeliste.  Sie können verhindern, dass Endbenutzer Office\-Projektmappen installieren, die nicht mit einem explizit vertrauenswürdigen Zertifikat signiert sind.  
+-   Disable the [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] Trust Prompt Key and the inclusion list. You can prevent end users from installing any Office solution that is not signed with an explicitly trusted certificate.  
   
-## Aktivieren der Aufnahmeliste  
- Aktivieren Sie die Aufnahmeliste für eine Zone, wenn Endbenutzer die Möglichkeit haben sollen, Office\-Projektmappen aus dieser Zone zu installieren und auszuführen.  
+## <a name="enabling-the-inclusion-list"></a>Enabling the Inclusion List  
+ Enable the inclusion list for a zone when you want end users to be presented with the option of installing and running any Office solution that comes from that zone.  
   
-#### So aktivieren Sie die Aufnahmeliste mithilfe des Registrierungs\-Editors  
+#### <a name="to-enable-the-inclusion-list-by-using-the-registry-editor"></a>To enable the inclusion list by using the registry editor  
   
-1.  Öffnen Sie den Registrierungs\-Editor:  
+1.  Open the registry editor:  
   
-    1.  Klicken Sie auf **Start** und dann auf **Ausführen**.  
+    1.  Click **Start**, and then click **Run**.  
   
-    2.  Geben Sie **regedt32.exe** im Feld **Öffnen** ein, und klicken Sie dann auf **OK**.  
+    2.  In the **Open** box, type **regedt32.exe**, and then click **OK**.  
   
-2.  Suchen Sie den folgenden Registrierungsschlüssel:  
+2.  Find the following registry key:  
   
-     \\HKEY\_LOCAL\_MACHINE\\SOFTWARE\\MICROSOFT\\.NETFramework\\Security\\TrustManager\\PromptingLevel  
+     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
   
-     Wenn der Schlüssel nicht vorhanden ist, erstellen Sie ihn.  
+     If the key does not exist, create it.  
   
-3.  Fügen Sie die folgenden Unterschlüssel als **Zeichenfolgenwert** mit den zugeordneten Werten hinzu, wenn sie nicht bereits vorhanden sind.  
+3.  Add the following subkeys as **String Value**, if they do not already exist, with the associated values.  
   
-    |Zeichenfolgenwert\-Unterschlüssel|Wert|  
-    |---------------------------------------|----------|  
+    |String Value subkey|Value|  
+    |-------------------------|-----------|  
     |**Internet**|**AuthenticodeRequired**|  
     |**UntrustedSites**|**Disabled**|  
-    |**MyComputer**|**Aktiviert**|  
-    |**LocalIntranet**|**Aktiviert**|  
-    |**TrustedSites**|**Aktiviert**|  
+    |**MyComputer**|**Enabled**|  
+    |**LocalIntranet**|**Enabled**|  
+    |**TrustedSites**|**Enabled**|  
   
-     Standardmäßig besitzt **Internet** den Wert **AuthenticodeRequired**, und **UntrustedSites** besitzt den Wert **Disabled**.  
+     By default, **Internet** has the value **AuthenticodeRequired** and **UntrustedSites** has the value **Disabled**.  
   
-#### So aktivieren Sie die Aufnahmeliste programmgesteuert  
+#### <a name="to-enable-the-inclusion-list-programmatically"></a>To enable the inclusion list programmatically  
   
-1.  Erstellen Sie eine Visual Basic\- oder Visual C\#\-Konsolenanwendung.  
+1.  Create a Visual Basic or Visual C# console application.  
   
-2.  Öffnen Sie die Datei Program.vb bzw. Program.cs, und fügen Sie den folgenden Code hinzu.  
+2.  Open the Program.vb or Program.cs file for editing and add the following code.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -92,42 +97,42 @@ caps.handback.revision: 25
     key.Close();  
     ```  
   
-3.  Erstellen Sie die Anwendung, und führen Sie sie aus.  
+3.  Build and run the application.  
   
-## Einschränken der Aufnahmeliste  
- Schränken Sie die Aufnahmeliste ein, sodass Projektmappen mit Authenticode\-Zertifikaten, deren Identität bekannt ist, signiert sein müssen, bevor Benutzer Entscheidung über die Vertrauenswürdigkeit treffen müssen.  
+## <a name="restricting-the-inclusion-list"></a>Restricting the Inclusion List  
+ Restrict the inclusion list so that solutions must be signed with Authenticode certificates that have known identity before users are prompted for a trust decision.  
   
-#### So schränken Sie die Aufnahmeliste ein  
+#### <a name="to-restrict-the-inclusion-list"></a>To restrict the inclusion list  
   
-1.  Öffnen Sie den Registrierungs\-Editor:  
+1.  Open the registry editor:  
   
-    1.  Klicken Sie auf **Start** und dann auf **Ausführen**.  
+    1.  Click **Start**, and then click **Run**.  
   
-    2.  Geben Sie **regedt32.exe** im Feld **Öffnen** ein, und klicken Sie dann auf **OK**.  
+    2.  In the **Open** box, type **regedt32.exe**, and then click **OK**.  
   
-2.  Suchen Sie den folgenden Registrierungsschlüssel:  
+2.  Find the following registry key:  
   
-     \\HKEY\_LOCAL\_MACHINE\\SOFTWARE\\MICROSOFT\\.NETFramework\\Security\\TrustManager\\PromptingLevel  
+     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
   
-     Wenn der Schlüssel nicht vorhanden ist, erstellen Sie ihn.  
+     If the key does not exist, create it.  
   
-3.  Fügen Sie die folgenden Unterschlüssel als **Zeichenfolgenwert** mit den zugeordneten Werten hinzu, wenn sie nicht bereits vorhanden sind.  
+3.  Add the following subkeys as **String Value**, if they do not already exist, with the associated values.  
   
-    |Zeichenfolgenwert\-Unterschlüssel|Wert|  
-    |---------------------------------------|----------|  
+    |String Value subkey|Value|  
+    |-------------------------|-----------|  
     |**UntrustedSites**|**Disabled**|  
     |**Internet**|**AuthenticodeRequired**|  
     |**MyComputer**|**AuthenticodeRequired**|  
     |**LocalIntranet**|**AuthenticodeRequired**|  
     |**TrustedSites**|**AuthenticodeRequired**|  
   
-     Standardmäßig besitzt **Internet** den Wert **AuthenticodeRequired**, und **UntrustedSites** besitzt den Wert **Disabled**.  
+     By default, **Internet** has the value **AuthenticodeRequired** and **UntrustedSites** has the value **Disabled**.  
   
-#### So schränken Sie die Aufnahmeliste programmgesteuert ein  
+#### <a name="to-restrict-the-inclusion-list-programmatically"></a>To restrict the inclusion list programmatically  
   
-1.  Erstellen Sie eine Visual Basic\- oder Visual C\#\-Konsolenanwendung.  
+1.  Create a Visual Basic or Visual C# console application.  
   
-2.  Öffnen Sie die Datei Program.vb bzw. Program.cs, und fügen Sie den folgenden Code hinzu.  
+2.  Open the Program.vb or Program.cs file for editing and add the following code.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -151,38 +156,38 @@ caps.handback.revision: 25
     key.Close();  
     ```  
   
-3.  Erstellen Sie die Anwendung, und führen Sie sie aus.  
+3.  Build and run the application.  
   
-## Deaktivieren der Aufnahmeliste  
- Sie können die Aufnahmeliste deaktivieren, sodass Endbenutzer nur Projektmappen installieren können, die mit einem vertrauenswürdigen und bekannten Zertifikat signiert sind.  
+## <a name="disabling-the-inclusion-list"></a>Disabling the Inclusion List  
+ You can disable the inclusion list so that end users can only install solutions that are signed with a trusted and known certificate.  
   
-#### So deaktivieren Sie die Aufnahmeliste  
+#### <a name="to-disable-the-inclusion-list"></a>To disable the inclusion list  
   
-1.  Öffnen Sie den Registrierungs\-Editor:  
+1.  Open the registry editor:  
   
-    1.  Klicken Sie auf **Start** und dann auf **Ausführen**.  
+    1.  Click **Start**, and then click **Run**.  
   
-    2.  Geben Sie **regedt32.exe** im Feld **Öffnen** ein, und klicken Sie dann auf **OK**.  
+    2.  In the **Open** box, type **regedt32.exe**, and then click **OK**.  
   
-2.  Erstellen Sie den folgenden Registrierungsschlüssel, wenn dieser nicht bereits vorhanden ist:  
+2.  Create the following registry key if this does not already exist:  
   
-     **\\HKEY\_LOCAL\_MACHINE\\SOFTWARE\\MICROSOFT\\.NETFramework\\Security\\TrustManager\\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**  
   
-3.  Fügen Sie die folgenden Unterschlüssel als **Zeichenfolgenwert** mit den zugeordneten Werten hinzu, wenn sie nicht bereits vorhanden sind.  
+3.  Add the following subkeys as **String Value**, if they do not already exist, with the associated values.  
   
-    |Zeichenfolgenwert\-Unterschlüssel|Wert|  
-    |---------------------------------------|----------|  
+    |String Value subkey|Value|  
+    |-------------------------|-----------|  
     |**UntrustedSites**|**Disabled**|  
     |**Internet**|**Disabled**|  
     |**MyComputer**|**Disabled**|  
     |**LocalIntranet**|**Disabled**|  
     |**TrustedSites**|**Disabled**|  
   
-#### So deaktivieren Sie die Aufnahmeliste programmgesteuert  
+#### <a name="to-disable-the-inclusion-list-programmatically"></a>To disable the inclusion list programmatically  
   
-1.  Erstellen Sie eine Visual Basic\- oder Visual C\#\-Konsolenanwendung.  
+1.  Create a Visual Basic or Visual C# console application.  
   
-2.  Öffnen Sie die Datei Program.vb bzw. Program.cs, und fügen Sie den folgenden Code hinzu.  
+2.  Open the Program.vb or Program.cs file for editing and add the following code.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -207,10 +212,10 @@ caps.handback.revision: 25
   
     ```  
   
-3.  Erstellen Sie die Anwendung, und führen Sie sie aus.  
+3.  Build and run the application.  
   
-## Siehe auch  
- [Gewähren von Vertrauenswürdigkeit für Office-Projektmappen mithilfe von Aufnahmelisten](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)   
- [Sichern von Office-Projektmappen](../vsto/securing-office-solutions.md)  
+## <a name="see-also"></a>See Also  
+ [Trusting Office Solutions by Using Inclusion Lists](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)   
+ [Securing Office Solutions](../vsto/securing-office-solutions.md)  
   
   

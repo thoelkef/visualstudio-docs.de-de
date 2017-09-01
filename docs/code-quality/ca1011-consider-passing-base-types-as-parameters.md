@@ -1,62 +1,77 @@
 ---
-title: "CA1011: Basistypen als Parameter &#252;bergeben | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ConsiderPassingBaseTypesAsParameters"
-  - "CA1011"
-helpviewer_keywords: 
-  - "CA1011"
-  - "ConsiderPassingBaseTypesAsParameters"
+title: 'CA1011: Consider passing base types as parameters | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- ConsiderPassingBaseTypesAsParameters
+- CA1011
+helpviewer_keywords:
+- CA1011
+- ConsiderPassingBaseTypesAsParameters
 ms.assetid: ce1e1241-dcf4-419b-9363-1d5bc4989279
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 18
----
-# CA1011: Basistypen als Parameter &#252;bergeben
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 2d950f5e6d9d5bdecfec1353f8c00171884f2e21
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011: Consider passing base types as parameters
 |||  
 |-|-|  
 |TypeName|ConsiderPassingBaseTypesAsParameters|  
 |CheckId|CA1011|  
-|Kategorie \(Category\)|Microsoft.Design|  
-|Unterbrechende Änderung|Breaking|  
+|Category|Microsoft.Design|  
+|Breaking Change|Breaking|  
   
-## Ursache  
- Eine Methodendeklaration enthält einen formalen Parameter, der ein abgeleiteter Typ ist, und die Methode ruft nur Member des Basistyps des Parameters auf.  
+## <a name="cause"></a>Cause  
+ A method declaration includes a formal parameter that is a derived type, and the method calls only members of the base type of the parameter.  
   
-## Regelbeschreibung  
- Wenn in einer Methodendeklaration ein Basistyp als Parameter angegeben wird, kann jeder Typ, der von diesem Basistyp abgeleitet ist, als entsprechendes Argument an die Methode übergeben werden.  Wenn das Argument innerhalb der Methode verwendet wird, dann hängt es vom Typ des Arguments ab, welche Methode ausgeführt wird.  Wenn die vom abgeleiteten Typ bereitgestellte zusätzliche Funktionalität nicht erforderlich ist, lässt die Verwendung des Basistyps eine allgemeinere Nutzung der Methode zu.  
+## <a name="rule-description"></a>Rule Description  
+ When a base type is specified as a parameter in a method declaration, any type that is derived from the base type can be passed as the corresponding argument to the method. When the argument is used inside the method body, the specific method that is executed depends on the type of the argument. If the additional functionality that is provided by the derived type is not required, use of the base type allows wider use of the method.  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Typ des Parameters in seinen Basistyp.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, change the type of the parameter to its base type.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Warnungen dieser Regel können gefahrlos unterdrückt werden.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule  
   
--   wenn die Methode die bestimmte Funktionalität erfordert, die vom abgeleiteten Typ bereitgestellt wird  
+-   if the method requires the specific functionality that is provided by the derived type  
   
-     – oder –  
+     \- or -  
   
--   um zu erzwingen, dass nur der abgeleitete Typ oder ein weiter abgeleiteter Typ an die Methode übergeben wird.  
+-   to enforce that only the derived type, or a more derived type, is passed to the method.  
   
- In diesen Fällen ist der Code wegen der starken Typüberprüfung, die Compiler und Laufzeitbibliothek bereitstellen, robuster.  
+ In these cases, the code will be more robust because of the strong type checking that is provided by the compiler and runtime.  
   
-## Beispiel  
- Im folgenden Beispiel wird eine Methode mit dem Namen `ManipulateFileStream` veranschaulicht, die nur mit einem <xref:System.IO.FileStream>\-Objekt verwendet werden kann, was gegen diese Regel verstößt.  Bei einer zweiten Methode mit dem Namen `ManipulateAnyStream` wird der <xref:System.IO.FileStream>\-Parameter durch einen <xref:System.IO.Stream>\-Parameter ersetzt und die Regel somit eingehalten.  
+## <a name="example"></a>Example  
+ The following example shows a method, `ManipulateFileStream`, that can be used only with a <xref:System.IO.FileStream> object, which violates this rule. A second method, `ManipulateAnyStream`, satisfies the rule by replacing the <xref:System.IO.FileStream> parameter by using a <xref:System.IO.Stream>.  
   
- [!code-cs[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CSharp/ca1011-consider-passing-base-types-as-parameters_1.cs)]
- [!code-cpp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CPP/ca1011-consider-passing-base-types-as-parameters_1.cpp)]
- [!code-vb[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/VisualBasic/ca1011-consider-passing-base-types-as-parameters_1.vb)]  
+ [!code-csharp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CSharp/ca1011-consider-passing-base-types-as-parameters_1.cs)] [!code-cpp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CPP/ca1011-consider-passing-base-types-as-parameters_1.cpp)] [!code-vb[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/VisualBasic/ca1011-consider-passing-base-types-as-parameters_1.vb)]  
   
-## Verwandte Regeln  
- [CA1059: Member sollten bestimmte konkrete Typen nicht verfügbar machen](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)
+## <a name="related-rules"></a>Related Rules  
+ [CA1059: Members should not expose certain concrete types](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)

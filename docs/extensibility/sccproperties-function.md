@@ -1,64 +1,81 @@
 ---
-title: "SccProperties-Funktion | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccProperties"
-helpviewer_keywords: 
-  - "SccProperties-Funktion"
+title: SccProperties Function | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- SccProperties
+helpviewer_keywords:
+- SccProperties function
 ms.assetid: 1bed38c9-73d2-4474-9717-f9dc26a89cbe
 caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
----
-# SccProperties-Funktion
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: ce333ce31ffb7f265677837dc7fc27b0ac502c0b
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
-Diese Funktion zeigt die Eigenschaften der quellcodeverwaltung für eine Datei oder ein Projekt.  
+---
+# <a name="sccproperties-function"></a>SccProperties Function
+This function displays source control properties for a file or project.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 SCCRTN SccProperties (  
-   LPVOID pvContext,  
-   HWND   hWnd,  
-   LPCSTR lpFileName  
+   LPVOID pvContext,  
+   HWND   hWnd,  
+   LPCSTR lpFileName  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  pvContext  
- \[in\] Source Control\-Plug\-in Context\-Struktur.  
+ [in] The source control plug-in context structure.  
   
  hWnd  
- \[in\] Ein Handle für die IDE\-Fenster, das Quellcodeverwaltungs\-Plug\-in als übergeordnetes Element für alle Dialogfelder verwenden kann, die es bereitstellt.  
+ [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
   
  lpFileName  
- \[in\] Der Name der vollqualifizierte Pfad der Datei oder des Projekts.  
+ [in] The fully qualified path name of the file or project.  
   
-## Rückgabewert  
- Datenquellen\-Steuerelement Plug\-in\-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
+## <a name="return-value"></a>Return Value  
+ The source control plug-in implementation of this function is expected to return one of the following values:  
   
-|Wert|Beschreibung|  
-|----------|------------------|  
-|SCC\_OK|Eigenschaften wurden erfolgreich angezeigt.|  
-|SCC\_I\_RELOADFILE|Das Versionskontrollsystem wurde die Dateieigenschaften geändert, damit die IDE diese Datei neu geladen werden soll.|  
-|SCC\_E\_PROJNOTOPEN|Das angegebene Projekt wurde nicht im Datenquellen\-Steuerelement geöffnet.|  
-|SCC\_E\_NOTAUTHORIZED|Der Benutzer ist nicht autorisiert, können Sie die Eigenschaften dieser Datei oder eines Projekts anzeigen.|  
-|SCC\_E\_FILENOTCONTROLLED|Die angegebene Datei oder das Projekt ist nicht in einem Quellcodeverwaltungsprojekt.|  
-|SCC\_E\_NONSPECIFICERROR<br /><br /> SCC\_E\_UNKNOWNERROR|Unbekannte oder allgemeiner Fehler.|  
+|Value|Description|  
+|-----------|-----------------|  
+|SCC_OK|Properties were successfully displayed.|  
+|SCC_I_RELOADFILE|The version control system has modified the file properties, so the IDE should reload this file.|  
+|SCC_E_PROJNOTOPEN|The specified project has not been opened in source control.|  
+|SCC_E_NOTAUTHORIZED|The user is not authorized to view properties of this file or project.|  
+|SCC_E_FILENOTCONTROLLED|The specified file or project is not under source control.|  
+|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|An unknown or general error occurred.|  
   
-## Hinweise  
- Das Quellcodeverwaltungs\-Plug\-in zeigt die Eigenschaften in ein eigenes Dialogfeld.  
+## <a name="remarks"></a>Remarks  
+ The source control plug-in displays the properties in its own dialog box.  
   
- Die Eigenschaften werden durch das Quellcodeverwaltungs\-Plug\-in definiert und unterscheidet sich möglicherweise von Plug\-in\-Plug\-in. Wenn das plug\-in den Benutzer ermöglicht das Ändern der Eigenschaften der quellcodeverwaltung einer Datei, sollte es zurückgeben `SCC_I_RELOAD` IDE signalisiert, die diese Datei oder das Projekt neu geladen werden muss.  
+ The properties are defined by the source control plug-in and may differ from plug-in to plug-in. If the plug-in allows the user to change the source control properties of a file, it should return `SCC_I_RELOAD` to signal the IDE that this file or project needs to be reloaded.  
   
-## Siehe auch  
- [Source Control\-Plug\-in\-API\-Funktionen](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>See Also  
+ [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)

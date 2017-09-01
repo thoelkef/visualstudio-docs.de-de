@@ -1,50 +1,54 @@
 ---
-title: "Gewusst wie: Programmgesteuertes &#214;ffnen von Textdateien als Arbeitsmappen"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Text [Office-Entwicklung in Visual Studio], Textdateien"
-  - "Textdateien, Öffnen als Arbeitsmappen"
-  - "Arbeitsmappen, Öffnen von Textdateien als"
+title: 'How to: Programmatically Open Text Files as Workbooks | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- workbooks, opening text files as
+- text [Office development in Visual Studio], text files
+- text files, opening as workbooks
 ms.assetid: 056ae3d0-7fe7-4c28-a2a5-5a948baee0e6
 caps.latest.revision: 47
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 46
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 9966164165f768f438516ba9df993c09a6197b5b
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Gewusst wie: Programmgesteuertes &#214;ffnen von Textdateien als Arbeitsmappen
-  Sie können eine Textdatei als Arbeitsmappe öffnen.  Sie müssen den Namen der zu öffnenden Textdatei übergeben.  Sie können dabei mehrere optionale Parameter angeben, z. B. die Zeilennummer, an der die Bearbeitung begonnen werden soll, oder das Spaltenformat der Daten in der Datei.  
+# <a name="how-to-programmatically-open-text-files-as-workbooks"></a>How to: Programmatically Open Text Files as Workbooks
+  You can open a text file as a workbook. You must pass in the name of the text file you want to open. You can specify several optional parameters, such as which row number to start parsing on and the column format of the data in the file.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## Beispiel  
- [!code-csharp[Trin_VstcoreExcelAutomation#80](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/CS/Sheet1.cs#80)]
- [!code-vb[Trin_VstcoreExcelAutomation#80](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/VB/Sheet1.vb#80)]  
+## <a name="example"></a>Example  
+ [!code-csharp[Trin_VstcoreExcelAutomation#80](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#80)] [!code-vb[Trin_VstcoreExcelAutomation#80](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#80)]  
   
-## Kompilieren des Codes  
- In diesem Beispiel sind die folgenden Komponenten erforderlich:  
+## <a name="compiling-the-code"></a>Compiling the Code  
+ This example requires the following components:  
   
--   Eine durch Komma getrennte Textdatei mit dem Namen `Test.txt`, die mindestens drei Textzeilen enthält.  
+-   A comma-delimited text file named `Test.txt` that contains at least three lines of text.  
   
--   Die Textdatei `Test.txt`, die auf dem Laufwerk C: gespeichert werden soll.  
+-   The text file `Test.txt` to be stored on drive C.  
   
-## Siehe auch  
- [Arbeiten mit Arbeitsmappen](../vsto/working-with-workbooks.md)   
- [Gewusst wie: Programmgesteuertes Öffnen von Arbeitsmappen](../vsto/how-to-programmatically-open-workbooks.md)   
- [Gewusst wie: Programmgesteuertes Erstellen neuer Arbeitsmappen](../vsto/how-to-programmatically-create-new-workbooks.md)   
- [Gewusst wie: Programmgesteuertes Speichern von Arbeitsmappen](../vsto/how-to-programmatically-save-workbooks.md)   
- [Gewusst wie: Programmgesteuertes Schließen von Arbeitsmappen](../vsto/how-to-programmatically-close-workbooks.md)   
- [Optionale Parameter in Office-Lösungen](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="see-also"></a>See Also  
+ [Working with Workbooks](../vsto/working-with-workbooks.md)   
+ [How to: Programmatically Open Workbooks](../vsto/how-to-programmatically-open-workbooks.md)   
+ [How to: Programmatically Create New Workbooks](../vsto/how-to-programmatically-create-new-workbooks.md)   
+ [How to: Programmatically Save Workbooks](../vsto/how-to-programmatically-save-workbooks.md)   
+ [How to: Programmatically Close Workbooks](../vsto/how-to-programmatically-close-workbooks.md)   
+ [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
   
   

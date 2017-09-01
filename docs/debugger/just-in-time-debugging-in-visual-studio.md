@@ -1,138 +1,72 @@
 ---
-title: "Just-In-Time-Debuggen in Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-  - "CSharp"
-  - "VB"
-helpviewer_keywords: 
-  - "Debuggen [Visual Studio], Just-In-Time"
-  - "Just-In-Time-Debuggen"
+title: 'How to: Respond to the Just-In-Time Debugger | Microsoft Docs'
+ms.custom: 
+ms.date: 05/23/17
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- debugging [Visual Studio], Just-In-Time
+- Just-In-Time debugging
 ms.assetid: 14972d5f-69bc-479b-9529-03b8787b118f
 caps.latest.revision: 48
-caps.handback.revision: 40
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# Just-In-Time-Debuggen in Visual Studio
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 5b32beabb79d6f6f2bc12eb0e47fc0bd37e17da1
+ms.contentlocale: de-de
+ms.lasthandoff: 08/22/2017
 
-Beim Just\-In\-Time\-Debuggen wird Visual Studio automatisch gestartet, wenn eine Ausnahme oder ein Absturz in einer Anwendung auftreten, die außerhalb von Visual Studio ausgeführt wird.  Auf diese Weise können Sie die Anwendung testen, wenn Visual Studio nicht ausgeführt wird und Debuggen mit Visual Studio beginnen, wenn ein Problem auftritt.  
+---
+# <a name="how-to-respond-to-the-just-in-time-debugger"></a>How to: Respond to the Just-In-Time Debugger
+
+The actions you should take when you see the Just-in-Time debugger dialog box depend on what you are trying to do:
+
+#### <a name="if-you-want-to-fix-or-debug-the-error-visual-studio-users"></a>If you want to fix or debug the error (Visual Studio users)
+
+- You must have [Visual Studio installed](https://www.microsoft.com/en-us/download/details.aspx?id=48146) to view the detailed information about the error and to try to debug it. For more information, see [Debug using the Just-In-Time Debugger](../debugger/debug-using-the-just-in-time-debugger.md). If you cannot resolve the error and fix the app, contact the owner of the app to resolve the error.
+
+#### <a name="if-you-want-to-prevent-the-just-in-time-debugger-dialog-box-from-appearing"></a>If you want to prevent the Just-In-Time Debugger dialog box from appearing
+
+You can take steps to prevent the Just-in-Time Debugger dialog box from appearing. If the app handles the error, you can run the app normally.
+
+1. (Web apps) If you are trying to run a web app, you can disable script debugging.
+
+    For Internet Explorer or Edge, disable script debugging in the Internet Options dialog box. You can access these settings from the **Control Panel** > **Network and Internet** > **Internet Options** (the exact steps depend on your version of Windows and your browser).
+
+    ![JITInternetOptions](../debugger/media/jitinternetoptions.png "JITInternetOptions")
+
+    Then reopen the web page where you found the error. If changing this setting does not resolve the issue, contact the owner of the web app to fix the issue.
+
+3. (Visual Studio users) If you have Visual Studio installed (or if you had it installed previously and removed it), [disable Just-in-Time debugging](../debugger/debug-using-the-just-in-time-debugger.md) and try to run the app again.
+
+    > [!IMPORTANT]
+    > If you disable Just-in-Time debugging and the app encounters an unhandled exception (an error), you will either see a standard error dialog box instead, or the app will crash or hang. The app will not run normally until the error is fixed (by you or the owner of the app).
+
+2. (ASP.NET and IIS) If you are hosting an ASP.NET Web app in IIS, disable server-side debugging.
+
+    In IIS Manager, right-click the server node and choose **Switch to Features View**. Under the ASP.NET section, choose **.NET Compilation** and then make sure you choose **False** as the Debug behavior (the steps are different in older versions of IIS).
   
- Just\-In\-Time\-Debugging funktioniert nicht für Windows Store\-Apps.  Just\-In\-Time\-Debuggen funktioniert nicht für verwalteten Code, der in einer systemeigenen Anwendung gehostet wird, z. B. in Schnellansichten.  
-  
-## Verwenden von Just\-In\-Time\-Debuggen  
- Wenn Sie Visual Studio installieren, wird das Just\-In\-Time\-Debuggen standardmäßig aktiviert.  Wenn Sie Just\-In\-Time\-Debugging deaktivieren oder erneut aktivieren müssen, finden Sie weitere Informationen hierzu unter [Schrittweises Durchlaufen für "Nur mein Code" beschränken](../debugger/navigating-through-code-with-the-debugger.md#BKMK_Restrict_stepping_to_Just_My_Code).  
-  
- Wenn Just\-In\-Time\-Debuggen aktiviert ist, können Sie die Anwendung außerhalb von Visual Studio testen.  Wenn ein Absturz oder eine Ausnahme auftritt, wird ein Dialogfeld mit einer Meldung angezeigt, die ungefähr folgendermaßen aussieht:  
-  
- Unbehandelte Ausnahme \("System.TypeInitializationException"\) in terrarium.exe\[3384\]  
-  
- Wenn das Dialogfeld angezeigt wird, können Sie das Debuggen mit der folgenden Prozedur beginnen.  
-  
-#### So starten Sie Just\-In\-Time\-Debuggen beim Auftreten eines Fehlers  
-  
-1.  Klicken Sie im Dialogfeld „Just\-In\-Time\-Debugging“ in der Liste **Mögliche Debugger** auf **Neue Instanz von Visual Studio 2015** oder auf eine Instanz von Visual Studio, die bereits ausgeführt wird.  
-  
-2.  Wenn Visual Studio automatisch für alle zukünftigen Abstürze verwendet werden soll, klicken Sie auf **Der aktuell ausgewählte Debugger wird als Standard festgelegt**.  
-  
-3.  Wenn Sie selbst die Codetypen bestimmen wollen, die gedebuggt werden sollen, klicken Sie auf **Debugmodule manuell auswählen**.  Wenn Sie diese Option nicht wählen, wählt Visual Studio automatisch die entsprechenden Debugmodule für den Codetyp im Programm.  
-  
-4.  Klicken Sie auf **OK**.  
-  
-5.  Wenn die Anwendung eine Assembly mit nicht vertrauenswürdigem Code enthält, wird ein Dialogfeld mit einer Sicherheitswarnung angezeigt.  In diesem Dialogfeld können Sie festlegen, ob das Debuggen fortgesetzt werden soll.  Bevor Sie mit dem Debuggen fortfahren, entscheiden Sie, ob Sie den Code als vertrauenswürdig einstufen.  Haben Sie den Code selbst geschrieben?  Vertrauen Sie dem Programmierer?  Wenn die Anwendung auf einem Remotecomputer ausgeführt wird, erkennen Sie den Namen des Prozesses?  Selbst wenn die Anwendung lokal ausgeführt wird, bedeutet dies nicht unbedingt, dass sie als vertrauenswürdig eingestuft werden kann.  In Internet Explorer könnte zum Beispiel ein schädliches ActiveX\-Steuerelement ausgeführt werden.  Wägen Sie die Wahrscheinlichkeit ab, mit der solcher bösartiger Code auf Ihrem Computer ausgeführt wird.  Wenn Sie zu dem Urteil kommen, dass der Code, den Sie debuggen möchten, vertrauenswürdig ist, klicken Sie auf **Debuggen**.  Klicken Sie andernfalls auf **Nicht debuggen**.  
-  
-##  <a name="BKMK_Enabling"></a> Deaktivieren oder Aktivieren von Just\-In\-Time\-Debuggen  
- Sie können Just\-In\-Time\-Debuggen im Dialogfeld **Optionen** aktivieren oder deaktivieren.  
-  
-#### So aktivieren oder deaktivieren Sie Just\-In\-Time\-Debuggen  
-  
-1.  Klicken Sie im Menü **Extras** auf **Optionen**.  
-  
-2.  Wählen Sie im Dialogfeld **Optionen** den Ordner **Debuggen** aus.  
-  
-3.  Wählen Sie im Ordner **Debuggen** die Kategorie **Just\-In\-Time** aus.  
-  
-4.  Wählen Sie im Feld **Just\-In\-Time\-Debuggen für diese Codetypen aktivieren** die gewünschten Programmtypen aus, bzw. heben Sie die Auswahl auf. Die Optionen sind **Verwaltet**, **Systemeigen** und **Skript**.  
-  
-     Nach dem Aktivieren von Just\-In\-Time\-Debuggen müssen Sie über Administratorrechte verfügen, um es wieder zu deaktivieren.  Beim Aktivieren von Just\-In\-Time\-Debuggen wird ein Registrierungsschlüssel festgelegt, und zum Ändern dieses Schlüssels sind Administratorrechte erforderlich.  
-  
-5.  Klicken Sie auf **OK**.  
-  
- Windows Forms\-Anwendungen verfügen über einen Ausnahmehandler der obersten Ebene, der dem Programm die weitere Ausführung ermöglicht, wenn eine Wiederherstellung möglich ist.  Daher müssen Sie die folgenden zusätzlichen Schritte ausführen, um das Just\-In\-Time\-Debuggen einer Windows Forms\-Anwendung zu ermöglichen.  
-  
-#### So aktivieren Sie das Just\-In\-Time\-Debuggen für ein Windows Form  
-  
-1.  Legen Sie den `jitDebugging`\-Wert im `true`\-Abschnitt der Datei "machine.config" oder in der Datei "`system.windows.form`Anwendung.exe.config" auf  *fest:*  
-  
-    ```  
-    <configuration>  
-        <system.windows.forms jitDebugging="true" />  
-    </configuration>  
-    ```  
-  
-2.  In einer C\+\+ Windows Form\-Anwendung muss auch `DebuggableAttribute` in einer Konfigurationsdatei in Ihrem Code festgelegt werden.  Bei der Kompilierung mit [\/Zi](/visual-cpp/build/reference/z7-zi-zi-debug-information-format) und ohne [\/Og](/visual-cpp/build/reference/og-global-optimizations) wird dieses Attribut vom Compiler für Sie festgelegt.  Wenn Sie einen nicht optimierten Releasebuild debuggen möchten, müssen Sie den Wert selbst festlegen.  Fügen Sie dazu der Datei "AssemblyInfo.cpp" der Anwendung die folgende Zeile hinzu:  
-  
-    ```  
-    [assembly:System::Diagnostics::DebuggableAttribute(true, true)];   
-    ```  
-  
-     Weitere Informationen finden Sie unter <xref:System.Diagnostics.DebuggableAttribute>.  
-  
- Just\-In\-Time\-Debuggen ist möglicherweise immer noch aktiviert, auch wenn Visual Studio nicht mehr auf dem Computer installiert ist.  Wenn Visual Studio nicht installiert ist, können Sie das Just\-In\-Time\-Debuggen im Dialogfeld **Optionen** in Visual Studio nicht deaktivieren.  In diesem Fall können Sie Just\-In\-Time\-Debuggen durch Bearbeiten der Windows\-Registrierung deaktivieren.  
-  
-#### So deaktivieren Sie Just\-In\-Time\-Debuggen durch Bearbeiten der Registrierung  
-  
-1.  Suchen Sie im Menü **Start** nach der Datei `regedit.exe`, und führen Sie sie aus.  
-  
-2.  Suchen Sie im Fenster **Registrierungs\-Editor** die folgenden Registrierungsschlüssel, und löschen Sie sie:  
-  
-    -   HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AeDebug\\Debugger  
-  
-    -   HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\.NETFramework\\DbgManagedDebugger  
-  
-3.  Wenn auf Ihrem Computer ein 64\-Bit\-Betriebssystem ausgeführt wird, löschen Sie auch die folgenden Registrierungsschlüssel:  
-  
-    -   HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows NT\\CurrentVersion\\AeDebug\\Debugger  
-  
-    -   HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\.NETFramework\\DbgManagedDebugger  
-  
-4.  Löschen oder ändern Sie nicht versehentlich andere Registrierungsschlüssel.  
-  
-5.  Schließen Sie das Fenster **Registrierungs\-Editor**.  
-  
-## Fehler beim Just\-In\-Time\-Debuggen  
- Möglicherweise werden die folgenden Fehlermeldungen angezeigt, die mit Just\-In\-Time\-Debuggen zusammenhängen.  
-  
--   **An den abstürzenden Prozess kann nicht angehängt werden.  Das angegebene Programm ist keine MS\-DOS\- oder Windows\-Anwendung.**  
-  
-     Dieser Fehler tritt auf, wenn Sie versuchen, einen Prozess unter einem anderen Benutzerkonto unter Windows 2000 auszuführen.  
-  
-     Um dieses Problem zu umgehen, starten Sie Visual Studio, öffnen Sie das Dialogfeld **An den Prozess anhängen** vom Menü **Debuggen** aus, und suchen Sie den Prozess, den Sie in der Liste **Verfügbare Prozesse** debuggen möchten.  Falls Sie den Namen des Prozesses nicht kennen, sehen Sie im Dialogfeld **Just\-In\-Time\-Debugger von Visual Studio** nach, und notieren Sie die Prozess\-ID.  Wählen Sie den Prozess in der Liste **Verfügbare Prozesse** aus, und klicken Sie auf **Anfügen**.  Klicken Sie im Dialogfeld **Just\-In\-Time\-Debugger von Visual Studio** auf **Nein**, um das Dialogfeld zu schließen.  
-  
--   **Der Debugger konnte nicht gestartet werden, da kein Benutzer angemeldet ist.**  
-  
-     Dieser Fehler tritt auf, wenn vom Just\-In\-Time\-Debuggen versucht wird, Visual Studio auf einem Computer zu starten, auf dem kein Benutzer bei der Konsole angemeldet ist.  Da kein Benutzer angemeldet ist, existiert keine Benutzersitzung, um das Dialogfeld für Just\-In\-Time\-Debuggen anzuzeigen.  
-  
-     Um dieses Problem zu beheben, melden Sie sich beim Computer an.  
-  
--   **Die Klasse ist nicht registriert.**  
-  
-     Dieser Fehler zeigt, dass der Debugger versucht hat, eine nicht registrierte COM\-Klasse zu erstellen. Die Ursache ist wahrscheinlich ein Installationsproblem.  
-  
-     Beheben Sie dieses Problem, indem Sie Visual Studio mithilfe des Installationsdatenträgers neu installieren oder reparieren.  
-  
-## Siehe auch  
- [Debuggersicherheit](../debugger/debugger-security.md)   
- [Debugger – Grundlagen](../debugger/debugger-basics.md)   
- [Just\-In\-Time, Debuggen, Dialogfeld "Optionen"](../debugger/just-in-time-debugging-options-dialog-box.md)   
- [Sicherheitswarnung: Das Anfügen an einen Prozess, der einem nicht vertrauenswürdigen Benutzer gehört, kann gefährlich sein. Wenn die folgenden Informationen verdächtig wirken oder Sie sich hinsichtlich der Vorgehensweise nicht sicher sind, fügen Sie an den Prozess nichts an.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)
+## <a name="see-also"></a>See Also    
+ [Debugger Basics](../debugger/debugger-basics.md)   
+

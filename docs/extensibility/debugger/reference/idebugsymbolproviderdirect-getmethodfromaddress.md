@@ -1,77 +1,94 @@
 ---
-title: "IDebugSymbolProviderDirect::GetMethodFromAddress | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugSymbolProviderDirect::GetMethodFromAddress"
-  - "GetMethodFromAddress"
+title: IDebugSymbolProviderDirect::GetMethodFromAddress | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugSymbolProviderDirect::GetMethodFromAddress
+- GetMethodFromAddress
 ms.assetid: 33ffd197-1221-41bc-a9f6-f133ebdcb783
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# IDebugSymbolProviderDirect::GetMethodFromAddress
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 44cb5adc9d8305aa0444376d3192a3262d86ff4e
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Ruft Informationen über die Methode auf dem angegebenen debuggen Adresse ab.  
+---
+# <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
+Retrieves information about the method at the specified debug address.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT GetMethodFromAddress(  
-   IDebugAddress* pAddress,  
-   GUID*          pGuid,  
-   DWORD*         pAppID,  
-   _mdToken*      pTokenClass,  
-   _mdToken*      pTokenMethod,  
-   DWORD*         pdwOffset,  
-   DWORD*         pdwVersion  
+   IDebugAddress* pAddress,  
+   GUID*          pGuid,  
+   DWORD*         pAppID,  
+   _mdToken*      pTokenClass,  
+   _mdToken*      pTokenMethod,  
+   DWORD*         pdwOffset,  
+   DWORD*         pdwVersion  
 );  
 ```  
   
-```c#  
+```cs  
 int GetMethodFromAddress(  
-   IDebugAddress pAddress,  
-   out Guid      pGuid,  
-   out uint      pAppID,  
-   out uint      pTokenClass,  
-   out uint      pTokenMethod,  
-   out uint      pdwOffset,  
-   out uint      pdwVersion  
+   IDebugAddress pAddress,  
+   out Guid      pGuid,  
+   out uint      pAppID,  
+   out uint      pTokenClass,  
+   out uint      pTokenMethod,  
+   out uint      pdwOffset,  
+   out uint      pdwVersion  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `pAddress`  
- \[in\]  Debuggen Adresse, die von der [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)\-Schnittstelle dargestellt wird.  
+ [in] Debug address that is represented by the [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.  
   
  `pGuid`  
- \[out\]  Eindeutiger Bezeichner des Moduls.  
+ [out] Unique identifier of the module.  
   
  `pAppID`  
- \[out\]  Bezeichner der Anwendungsdomäne.  
+ [out] Identifier of the application domain.  
   
  `pTokenClass`  
- \[out\]  Token, das die enthaltende Klasse darstellt.  
+ [out] Token that represents the containing class.  
   
  `pTokenMethod`  
- \[out\]  Token, das das Modul darstellt.  
+ [out] Token that represents the module.  
   
  `pdwOffset`  
- \[out\]  Ein Offset in Bytes vom Anfang des `pAddress`\-Parameters.  
+ [out] An offset in bytes from the start of the `pAddress` parameter.  
   
  `pdwVersion`  
- \[out\]  Versionsnummer der Methode.  
+ [out] Version number of the method.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

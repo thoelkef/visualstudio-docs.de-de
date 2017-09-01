@@ -1,60 +1,77 @@
 ---
-title: "IDebugMethodField::EnumAllLocals | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugMethodField::EnumAllLocals"
-helpviewer_keywords: 
-  - "IDebugMethodField::EnumAllLocals-Methode"
+title: IDebugMethodField::EnumAllLocals | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugMethodField::EnumAllLocals
+helpviewer_keywords:
+- IDebugMethodField::EnumAllLocals method
 ms.assetid: 0bc7cc13-2628-4bd8-8c06-4d2aa6755ea8
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugMethodField::EnumAllLocals
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 509586c2fc70e39195275becd417cffd1605df3e
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
-Erstellt einen Enumerator für alle lokalen Variablen, einschließlich der Methode, die intern von einem Compiler generiert wurden.  
+---
+# <a name="idebugmethodfieldenumalllocals"></a>IDebugMethodField::EnumAllLocals
+Creates an enumerator for all local variables of the method, including those generated internally by a compiler.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT EnumAllLocals(   
-   IDebugAddress*     pAddress,  
-   IEnumDebugFields** ppLocals  
+```cpp  
+HRESULT EnumAllLocals(   
+   IDebugAddress*     pAddress,  
+   IEnumDebugFields** ppLocals  
 );  
 ```  
   
-```c#  
+```csharp  
 int EnumAllLocals(  
-   IDebugAddress        pAddress,   
-   out IEnumDebugFields ppLocals  
+   IDebugAddress        pAddress,   
+   out IEnumDebugFields ppLocals  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `pAddress`  
- \[in\]  Ein [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)\-Objekt, das eine Adresse innerhalb der Methode, zeigenden auf einen bestimmten Bereich oder Kontext darstellt.  
+ [in] An [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) object representing a debug address within the method, pointing to a particular scope or context.  
   
  `ppLocals`  
- \[out\]  Gibt ein [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)\-Objekt zurück, das die Liste aller lokalen Variablen im angegebenen Bereich darstellt. Andernfalls gibt einen NULL\-Wert zurück. Dies gibt an, dass keine lokalen Variablen angibt.  
+ [out] Returns an [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) object representing the list of all locals in the specified scope; otherwise, returns a null value indicating no locals.  
   
-## Rückgabewert  
- Bei Erfolg gibt S\_OK zurück oder gibt S\_FALSE zurück, wenn keine lokalen Variablen vorhanden sind.  Andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK or returns S_FALSE if there are no locals. Otherwise, returns an error code.  
   
-## Hinweise  
- Nur die Variablen, die innerhalb des Blocks definiert werden, die mit der angegebenen Adresse, werden aufgezählt.  Diese Methode schließt alle vom Compiler generierten lokalen Variablen.  Wenn alle erforderlichen die lokalen Variablen sind, die explizit in der Quelle definiert wurden, rufen Sie die [EnumLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)\-Methode auf.  
+## <a name="remarks"></a>Remarks  
+ Only the variables defined within the block that contains the given debug address are enumerated. This method includes any compiler-generated locals. If all that is needed are the locals explicitly defined in the source, call the [EnumLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) method.  
   
- Eine Methode kann die mehrere Kontexte oder Blöcke enthalten.  
+ A method can contain multiple scoping contexts or blocks.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   

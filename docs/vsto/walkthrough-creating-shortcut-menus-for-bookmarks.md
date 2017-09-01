@@ -1,118 +1,122 @@
 ---
-title: "Exemplarische Vorgehensweise: Erstellen von Kontextmen&#252;s f&#252;r Lesezeichen"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Bookmark-Steuerelement, Ereignisse"
-  - "Kontextmenüs, Word"
-  - "Menüs, Erstellen in Office-Anwendungen"
-  - "Kontextmenüs, Word"
+title: 'Walkthrough: Creating Shortcut Menus for Bookmarks | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- context menus, Word
+- Bookmark control, events
+- shortcut menus, Word
+- menus, creating in Office applications
 ms.assetid: 86dbf3ff-ba75-42f9-8df6-abfc19b3cf6b
 caps.latest.revision: 57
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 53
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 2479bc8afdf4f02b586e4631d75fcf884bb2271e
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Exemplarische Vorgehensweise: Erstellen von Kontextmen&#252;s f&#252;r Lesezeichen
-  In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Kontextmenüs für <xref:Microsoft.Office.Tools.Word.Bookmark>\-Steuerelemente in einer Anpassung auf Dokumentebene für Word erstellt werden.  Wenn ein Benutzer mit der rechten Maustaste auf den Text in einem Lesezeichen klickt, wird ein Kontextmenü mit Optionen zum Formatieren des Texts angezeigt.  
+# <a name="walkthrough-creating-shortcut-menus-for-bookmarks"></a>Walkthrough: Creating Shortcut Menus for Bookmarks
+  This walkthrough demonstrates how to create shortcut menus for <xref:Microsoft.Office.Tools.Word.Bookmark> controls in a document-level customization for Word. When a user right-clicks the text in a bookmark, a shortcut menu appears and gives the user options for formatting the text.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
   
- In dieser exemplarischen Vorgehensweise werden die folgenden Aufgaben veranschaulicht:  
+ This walkthrough illustrates the following tasks:  
   
--   [Erstellen des Projekts](#BKMK_CreateProject).  
+-   [Creating the Project](#BKMK_CreateProject).  
   
--   [Hinzufügen von Text und Lesezeichen zum Dokument](#BKMK_addtextandbookmarks).  
+-   [Adding Text and Bookmarks to the Document](#BKMK_addtextandbookmarks).  
   
--   [Hinzufügen von Befehlen zu einem Kontextmenü](#BKMK_AddCmndsShortMenu).  
+-   [Adding Commands to a Shortcut Menu](#BKMK_AddCmndsShortMenu).  
   
--   [Formatieren des Texts im Lesezeichen](#BKMK_formattextbkmk).  
+-   [Format the Text in the Bookmark](#BKMK_formattextbkmk).  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## Vorbereitungsmaßnahmen  
- Zum Durchführen dieser exemplarischen Vorgehensweise benötigen Sie die folgenden Komponenten:  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] oder [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]  
+-   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] or [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]  
   
-##  <a name="BKMK_CreateProject"></a> Erstellen des Projekts  
- Der erste Schritt besteht darin, ein Word\-Dokumentprojekt in Visual Studio zu erstellen.  
+##  <a name="BKMK_CreateProject"></a> Creating the Project  
+ The first step is to create a Word document project in Visual Studio.  
   
-#### So erstellen Sie ein neues Projekt  
+#### <a name="to-create-a-new-project"></a>To create a new project  
   
--   Erstellen Sie ein Word\-Dokumentprojekt mit dem Namen My Bookmark Shortcut Menu.  Wählen Sie im Assistenten **Neues Dokument erstellen** aus.  Weitere Informationen finden Sie unter [Gewusst wie: Erstellen von Office-Projekten in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+-   Create a Word document project that has the name **My Bookmark Shortcut Menu**. In the wizard, select **Create a new document**. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Visual Studio öffnet das neue Word\-Dokument im Designer und fügt dem **Projektmappen\-Explorer** das **Mein Lesezeichenkontextmenü**\-Projekt hinzu.  
+     Visual Studio opens the new Word document in the designer and adds the **My Bookmark Shortcut Menu** project to **Solution Explorer**.  
   
-##  <a name="BKMK_addtextandbookmarks"></a> Hinzufügen von Text und Lesezeichen zum Dokument  
- Fügen Sie dem Dokument etwas Text und dann zwei überlappende Lesezeichen hinzu.  
+##  <a name="BKMK_addtextandbookmarks"></a> Adding Text and Bookmarks to the Document  
+ Add some text to your document and then add two overlapping bookmarks.  
   
-#### So fügen Sie dem Dokument Text hinzu  
+#### <a name="to-add-text-to-your-document"></a>To add text to your document  
   
--   Geben Sie in das im Designer angezeigte Dokument den folgenden Text ein.  
+-   In the document that appears in the designer of your project, type the following text.  
   
-     Dies ist ein Beispiel für das Erstellen eines Kontextmenüs, das angezeigt wird, wenn Sie mit der rechten Maustaste auf den Text in einem Lesezeichen klicken.  
+     **This is an example of creating a shortcut menu when you right-click the text in a bookmark.**  
   
-#### So fügen Sie dem Dokument ein Lesezeichen\-Steuerelement hinzu  
+#### <a name="to-add-a-bookmark-control-to-your-document"></a>To add a Bookmark control to your document  
   
-1.  Ziehen Sie im **Werkzeugkasten** von der Registerkarte **Word\-Steuerelemente** ein <xref:Microsoft.Office.Tools.Word.Bookmark>\-Steuerelement zum Dokument.  
+1.  In the **Toolbox**, from the **Word Controls** tab, drag a <xref:Microsoft.Office.Tools.Word.Bookmark> control to your document.  
   
-     Das Dialogfeld **Lesezeichen\-Steuerelement hinzufügen** wird angezeigt.  
+     The **Add Bookmark Control** dialog box appears.  
   
-2.  Markieren Sie die Wörter "Erstellen eines Kontextmenüs, wenn Sie mit der rechten Maustaste auf den Text klicken", und klicken Sie dann auf **OK**.  
+2.  Select the words "creating a shortcut menu when you right-click the text", and then click **OK**.  
   
-     Dem Dokument wird `bookmark1` hinzugefügt.  
+     `bookmark1` is added to the document.  
   
-3.  Fügen Sie den Wörtern "mit der rechten Maustaste auf den Text in einem Lesezeichen klicken" ein weiteres <xref:Microsoft.Office.Tools.Word.Bookmark>\-Steuerelement hinzu.  
+3.  Add another <xref:Microsoft.Office.Tools.Word.Bookmark> control to the words "right-click the text in a bookmark".  
   
-     Dem Dokument wird `bookmark2` hinzugefügt.  
+     `bookmark2` is added to the document.  
   
     > [!NOTE]  
-    >  Die Wörter "mit der rechten Maustaste auf den Text klicken" werden sowohl in `bookmark1` als auch in `bookmark2` angezeigt.  
+    >  The words "right-click the text" are in both `bookmark1` and `bookmark2`.  
   
- Wenn Sie einem Dokument zur Entwurfszeit ein Lesezeichen hinzufügen, wird ein <xref:Microsoft.Office.Tools.Word.Bookmark>\-Steuerelement erstellt.  Sie können mehrere Ereignisse des Lesezeichens programmieren.  Sie können Code in das <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick>\-Ereignis des Lesezeichens schreiben, sodass ein Kontextmenü angezeigt wird, wenn der Benutzer mit der rechten Maustaste auf den Text in einem Lesezeichen klickt.  
+ When you add a bookmark to a document at design time, a <xref:Microsoft.Office.Tools.Word.Bookmark> control is created. You can program against several events of the bookmark. You can write code in the <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> event of the bookmark so that when the user right-clicks the text in the bookmark, a shortcut menu appears.  
   
-##  <a name="BKMK_AddCmndsShortMenu"></a> Hinzufügen von Befehlen zu einem Kontextmenü  
- Hinzufügen von Schaltflächen zum Kontextmenü, das angezeigt wird, wenn Sie mit der rechten Maustaste auf das Dokument klicken.  
+##  <a name="BKMK_AddCmndsShortMenu"></a> Adding Commands to a Shortcut Menu  
+ Add buttons to the shortcut menu that appears when you right-click the document.  
   
-#### So fügen Sie einem Kontextmenü Befehle hinzu  
+#### <a name="to-add-commands-to-a-shortcut-menu"></a>To add commands to a shortcut menu  
   
-1.  Fügen Sie dem Projekt ein neues **Menüband\-XML**\-Element hinzu.  Weitere Informationen finden Sie unter [Gewusst wie: Erste Schritte beim Anpassen der Multifunktionsleiste](../vsto/how-to-get-started-customizing-the-ribbon.md).  
+1.  Add a **Ribbon XML** item to the project. For more information, see [How to: Get Started Customizing the Ribbon](../vsto/how-to-get-started-customizing-the-ribbon.md).  
   
-2.  Wählen Sie im **Projektmappen\-Explorer** die Datei **ThisDocument.cs** oder **ThisDocument.vb** aus.  
+2.  In **Solution Explorer**, select **ThisDocument.cs** or **ThisDocument.vb**.  
   
-3.  Wählen Sie in der Menüleiste **Ansicht** und **Code**.  
+3.  On the menu bar, choose **View**, **Code**.  
   
-     Die **ThisDocument**\-Klassendatei wird im Code\-Editor geöffnet.  
+     The **ThisDocument** class file opens in the Code Editor.  
   
-4.  Fügen Sie der **ThisDocument**\-Klasse den folgenden Code hinzu.  Mit diesem Code wird die CreateRibbonExtensibilityObject\-Methode überschrieben und der Office\-Anwendung die Menüband\-XML\-Klasse zurückgegeben.  
+4.  Add the following code to the **ThisDocument** class. This code overrides the CreateRibbonExtensibilityObject method and returns the Ribbon XML class to the Office application.  
   
-     [!code-csharp[Trin_Word_Document_Menus#1](../snippets/csharp/VS_Snippets_OfficeSP/trin_word_document_menus/cs/thisdocument.cs#1)]
-     [!code-vb[Trin_Word_Document_Menus#1](../snippets/visualbasic/VS_Snippets_OfficeSP/trin_word_document_menus/vb/thisdocument.vb#1)]  
+     [!code-csharp[Trin_Word_Document_Menus#1](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#1)]  [!code-vb[Trin_Word_Document_Menus#1](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#1)]  
   
-5.  Wählen Sie die Menüband\-XML\-Datei im **Projektmappen\-Explorer** aus.  Standardmäßig erhält die Menüband\-XML\-Datei den Namen "Ribbon1.xml".  
+5.  In **Solution Explorer**, select the Ribbon XML file. By default, the Ribbon XML file is named Ribbon1.xml.  
   
-6.  Wählen Sie in der Menüleiste **Ansicht** und **Code**.  
+6.  On the menu bar, choose **View**, **Code**.  
   
-     Die Menüband\-XML\-Datei wird im Code\-Editor geöffnet.  
+     The Ribbon xml file opens in the Code Editor.  
   
-7.  Ersetzen Sie im Code\-Editor den Inhalt der Menüband\-XML\-Datei durch den folgenden Code:  
+7.  In the Code Editor, replace the contents of the Ribbon XML file with the following code.  
   
     ```  
-  
+    <?xml version="1.0" encoding="UTF-8"?>  
     <customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="Ribbon_Load">  
       <contextMenus>  
         <contextMenu idMso="ContextMenuText">  
@@ -125,80 +129,76 @@ caps.handback.revision: 53
     </customUI>  
     ```  
   
-     Dieser Code fügt dem Kontextmenü, das beim Rechtsklick auf das Dokument angezeigt wird, zwei Schaltflächen hinzu.  
+     This code adds two buttons to the shortcut menu that appears when you right-click the document.  
   
-8.  Klicken Sie im **Projektmappen\-Explorer** mit der rechten Maustaste auf `ThisDocument`, und klicken Sie dann auf **Code anzeigen**.  
+8.  In **Solution Explorer**, right-click `ThisDocument`, and then click **View Code**.  
   
-9. Deklarieren Sie auf Klassenebene die folgenden Variablen sowie eine Lesezeichenvariable.  
+9. Declare the following variables and a bookmark variable at the class level.  
   
-     [!code-csharp[Trin_Word_Document_Menus#2](../snippets/csharp/VS_Snippets_OfficeSP/trin_word_document_menus/cs/thisdocument.cs#2)]
-     [!code-vb[Trin_Word_Document_Menus#2](../snippets/visualbasic/VS_Snippets_OfficeSP/trin_word_document_menus/vb/thisdocument.vb#2)]  
+     [!code-csharp[Trin_Word_Document_Menus#2](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#2)]   [!code-vb[Trin_Word_Document_Menus#2](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#2)]  
   
-10. Wählen Sie die Menüband\-Codedatei im **Projektmappen\-Explorer** aus.  Standardmäßig wird die Menüband\-Codedatei **Ribbon1.cs** oder **Ribbon1.vb** genannt.  
+10. In **Solution Explorer**, select the Ribbon code file. By default, the Ribbon code file is named **Ribbon1.cs** or **Ribbon1.vb**.  
   
-11. Wählen Sie in der Menüleiste **Ansicht** und **Code**.  
+11. On the menu bar, choose **View**, **Code**.  
   
-     Die Menüband\-Codedatei wird im Code\-Editor geöffnet.  
+     The Ribbon code file opens in the Code Editor.  
   
-12. Fügen Sie der Menüband\-Codedatei die folgende Methode hinzu.  Dies ist eine Rückrufmethode für die zwei Schaltflächen, die Sie dem Kontextmenü des Dokuments hinzugefügt haben.  Diese Methode bestimmt, ob diese Schaltflächen im Kontextmenü angezeigt werden.  Die Schaltflächen für Fett\- und Kursivformatierung werden nur angezeigt, wenn Sie mit der rechten Maustaste auf Text innerhalb eines Lesezeichens klicken.  
+12. In the Ribbon code file, add the following method. This is a callback method for the two buttons that you have added to the shortcut menu of the document. This method determines whether these buttons appear in the shortcut menu. The bold and italic buttons appear only if you right-click text within the bookmark.  
   
-     [!code-csharp[Trin_Word_Document_Menus#5](../snippets/csharp/VS_Snippets_OfficeSP/trin_word_document_menus/cs/ribbon1.cs#5)]
-     [!code-vb[Trin_Word_Document_Menus#5](../snippets/visualbasic/VS_Snippets_OfficeSP/trin_word_document_menus/vb/ribbon1.vb#5)]  
+     [!code-csharp[Trin_Word_Document_Menus#5](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#5)]  [!code-vb[Trin_Word_Document_Menus#5](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#5)]  
   
-##  <a name="BKMK_formattextbkmk"></a> Formatieren des Texts im Lesezeichen  
+##  <a name="BKMK_formattextbkmk"></a> Format the Text in the Bookmark  
   
-#### So formatieren Sie den Text im Lesezeichen  
+#### <a name="to-format-the-text-in-the-bookmark"></a>To format the text in the bookmark  
   
-1.  Fügen Sie der Menüband\-Codedatei einen `ButtonClick`\-Ereignishandler hinzu, um die Formatierung auf das Lesezeichen anzuwenden.  
+1.  In the Ribbon code file, add a `ButtonClick` event handler to apply formatting to the bookmark.  
   
-     [!code-csharp[Trin_Word_Document_Menus#6](../snippets/csharp/VS_Snippets_OfficeSP/trin_word_document_menus/cs/ribbon1.cs#6)]
-     [!code-vb[Trin_Word_Document_Menus#6](../snippets/visualbasic/VS_Snippets_OfficeSP/trin_word_document_menus/vb/ribbon1.vb#6)]  
+     [!code-csharp[Trin_Word_Document_Menus#6](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#6)]  [!code-vb[Trin_Word_Document_Menus#6](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#6)]  
   
-2.  Wählen Sie im **Projektmappen\-Explorer** die Datei **ThisDocument.cs** oder **ThisDocument.vb** aus.  
+2.  **Solution Explorer**, select **ThisDocument.cs** or **ThisDocument.vb**.  
   
-3.  Wählen Sie in der Menüleiste **Ansicht** und **Code**.  
+3.  On the menu bar, choose **View**, **Code**.  
   
-     Die **ThisDocument**\-Klassendatei wird im Code\-Editor geöffnet.  
+     The **ThisDocument** class file opens in the Code Editor.  
   
-4.  Fügen Sie der **ThisDocument**\-Klasse den folgenden Code hinzu.  
+4.  Add the following code to the **ThisDocument** class.  
   
-     [!code-csharp[Trin_Word_Document_Menus#3](../snippets/csharp/VS_Snippets_OfficeSP/trin_word_document_menus/cs/thisdocument.cs#3)]
-     [!code-vb[Trin_Word_Document_Menus#3](../snippets/visualbasic/VS_Snippets_OfficeSP/trin_word_document_menus/vb/thisdocument.vb#3)]  
+     [!code-csharp[Trin_Word_Document_Menus#3](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#3)]  [!code-vb[Trin_Word_Document_Menus#3](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#3)]  
   
     > [!NOTE]  
-    >  Sie müssen Code schreiben, um Fälle zu behandeln, in denen sich Lesezeichen überlappen.  Ohne solchen Code wird standardmäßig der Code für alle Lesezeichen aufgerufen, auf die geklickt wurde.  
+    >  You must write code to handle the case where bookmarks overlap. If you do not, by default, the code will be called for all bookmarks in the selection.  
   
-5.  In C\# müssen Sie Ereignishandler für die Bookmark\-Steuerelemente zum <xref:Microsoft.Office.Tools.Word.Document.Startup>\-Ereignis hinzufügen.  Weitere Informationen zum Erstellen von Ereignishandlern finden Sie unter [Gewusst wie: Erstellen von Ereignishandlern in Office-Projekten](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+5.  In C#, you must add event handlers for the bookmark controls to the <xref:Microsoft.Office.Tools.Word.Document.Startup> event. For information about creating event handlers, see [How to: Create Event Handlers in Office Projects](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
-     [!code-csharp[Trin_Word_Document_Menus#4](../snippets/csharp/VS_Snippets_OfficeSP/trin_word_document_menus/cs/thisdocument.cs#4)]  
+     [!code-csharp[Trin_Word_Document_Menus#4](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#4)]  
   
-## Testen der Anwendung  
- Testen Sie das Dokument, um sicherzustellen, dass die fett und kursiv formatierten Menüelemente im Kontextmenü angezeigt werden, wenn Sie mit der rechten Maustaste auf den Text in einem Lesezeichen klicken. Außerdem müssen Sie prüfen, ob der Text korrekt formatiert ist.  
+## <a name="testing-the-application"></a>Testing the Application  
+ Test your document to verify that the bold and italic menu items appear in the shortcut menu when you right-click text in a bookmark and that the text is properly formatted.  
   
-#### So testen Sie das Dokument  
+#### <a name="to-test-your-document"></a>To test your document  
   
-1.  Drücken Sie F5, um das Projekt auszuführen.  
+1.  Press F5 to run your project.  
   
-2.  Klicken Sie mit der rechten Maustaste in das erste Lesezeichen, und klicken Sie dann auf **Fett**.  
+2.  Right-click in the first bookmark, and then click **Bold**.  
   
-3.  Stellen Sie sicher, dass der gesamte Text in `bookmark1` fett formatiert ist.  
+3.  Verify that all of the text in `bookmark1` is formatted as bold.  
   
-4.  Klicken Sie mit der rechten Maustaste auf den Text, in dem sich die Lesezeichen überlappen, und klicken Sie dann auf **Kursiv**.  
+4.  Right-click the text where the bookmarks overlap, and then click **Italic**.  
   
-5.  Stellen Sie sicher, dass der gesamte Text in `bookmark2` kursiv formatiert ist, in `bookmark1` jedoch nur der Teil des Texts, der `bookmark2` überlappt, kursiv formatiert ist.  
+5.  Verify that all of the text in `bookmark2` is italic, and only the part of the text in `bookmark1` that overlaps `bookmark2` is italic.  
   
-## Nächste Schritte  
- Die folgenden Aufgaben könnten sich daran anschließen:  
+## <a name="next-steps"></a>Next Steps  
+ Here are some tasks that might come next:  
   
--   Schreiben von Code, um in Excel auf Ereignisse von Hoststeuerelementen zu reagieren.  Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Programmieren in Abhängigkeit von Ereignissen eines NamedRange-Steuerelements](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).  
+-   Write code to respond to events of host controls in Excel. For more information, see [Walkthrough: Programming Against Events of a NamedRange Control](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).  
   
--   Verwenden eines Kontrollkästchens, um die Formatierung in einem Lesezeichen zu ändern.  Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Ändern der Dokumentformatierung mit CheckBox-Steuerelementen](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
+-   Use a check box to change formatting in a bookmark. For more information, see [Walkthrough: Changing Document Formatting Using CheckBox Controls](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
   
-## Siehe auch  
- [Exemplarische Vorgehensweisen in Word](../vsto/walkthroughs-using-word.md)   
- [Anpassung der Office-Benutzeroberfläche](../vsto/office-ui-customization.md)   
- [Automatisieren von Word mithilfe von erweiterten Objekten](../vsto/automating-word-by-using-extended-objects.md)   
- [Bookmark-Steuerelement](../vsto/bookmark-control.md)   
- [Optionale Parameter in Office-Lösungen](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="see-also"></a>See Also  
+ [Walkthroughs Using Word](../vsto/walkthroughs-using-word.md)   
+ [Office UI Customization](../vsto/office-ui-customization.md)   
+ [Automating Word by Using Extended Objects](../vsto/automating-word-by-using-extended-objects.md)   
+ [Bookmark Control](../vsto/bookmark-control.md)   
+ [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
   
   

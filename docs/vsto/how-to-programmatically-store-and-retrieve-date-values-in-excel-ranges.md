@@ -1,93 +1,92 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Speichern und Abrufen von Datumswerten in Excel-Bereichen"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Datumswerte"
-  - "Datumswerte, Speichern in Excel-Bereichen"
-  - "Datumsangaben, Abrufen aus Excel-Bereichen"
-  - "Datumsangaben, Speichern in Excel-Bereichen"
-  - "Excel [Office-Entwicklung in Visual Studio], Abrufen von Datumswerten aus Bereichen"
-  - "Excel [Office-Entwicklung in Visual Studio], Speichern von Datumswerten in Bereichen"
-  - "Bereiche, Abrufen von Datenwerten"
-  - "Bereiche, Speichern von Datumswerten"
+title: 'How to: Programmatically Store and Retrieve Date Values in Excel Ranges | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Excel [Office development in Visual Studio], retrieving date values from ranges
+- ranges, retrieving data values
+- dates, retrieving from Excel ranges
+- Excel [Office development in Visual Studio], storing date values in ranges
+- date values, storing in Excel ranges
+- dates, storing in Excel ranges
+- ranges, storing date values
+- date values
 ms.assetid: e1cdd262-0356-4499-8bc5-e730f74235a2
 caps.latest.revision: 40
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 39
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 10f7e32f56c3e32f92e6601210bedc65bac78625
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Gewusst wie: Programmgesteuertes Speichern und Abrufen von Datumswerten in Excel-Bereichen
-  Werte können in einem <xref:Microsoft.Office.Tools.Excel.NamedRange>\-Steuerelement oder einem systemeigenen Excel\-Bereichsobjekt gespeichert oder abgerufen werden.  
+# <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>How to: Programmatically Store and Retrieve Date Values in Excel Ranges
+  You can store and retrieve values in a <xref:Microsoft.Office.Tools.Excel.NamedRange> control or a native Excel range object.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- Wenn Sie einen Datumswert, der auf den 1.1.1900 oder ein späteres Datum fällt, mit Office\-Entwicklungstools in Visual Studio in einem Bereich speichern, wird er im OLE\-Automatisierungsformat \(OA\) gespeichert.  Sie müssen die <xref:System.DateTime.FromOADate%2A>\-Methode verwenden, um den Wert von OLE\-Automatisierungsdatumsangaben \(OA\) abzurufen.  Wenn das Datum vor dem 1.1.1900 liegt, wird es als Zeichenfolge gespeichert.  
+ If you store a date value that falls on or after 1/1/1900 in a range using Office development tools in Visual Studio, it is stored in OLE Automation (OA) format. You must use the <xref:System.DateTime.FromOADate%2A> method to retrieve the value of OLE Automation (OA) dates. If the date is earlier than 1/1/1900, it is stored as a string.  
   
 > [!NOTE]  
->  Datumsangaben in Excel unterscheiden sich von Datumsangaben für die OLE\-Automatisierung bezüglich der ersten beiden Monate des Jahres 1900.  Es treten auch Unterschiede auf, wenn die Option **1904\-Datumswerte** aktiviert ist.  In den folgenden Codebeispielen werden diese Unterschiede nicht behandelt.  
+>  Excel dates differ from OLE Automation dates for the first two months of 1900. There are also differences if the **1904 date system** option is checked. The code examples below do not address these differences.  
   
-## Verwenden eines NamedRange\-Steuerelements  
+## <a name="using-a-namedrange-control"></a>Using a NamedRange Control  
   
--   Dieses Beispiel bezieht sich auf Anpassungen auf Dokumentebene.  Der folgende Code muss in eine Arbeitsblattklasse und nicht in die `ThisWorkbook`\-Klasse eingefügt werden.  
+-   This example is for document-level customizations. The following code must be placed in a sheet class, not in the `ThisWorkbook` class.  
   
-#### So speichern Sie einen Datumswert in einem benannten Bereich  
+#### <a name="to-store-a-date-value-in-a-named-range"></a>To store a date value in a named range  
   
-1.  Erstellen Sie ein <xref:Microsoft.Office.Tools.Excel.NamedRange>\-Steuerelement in der Zelle **A1**.  
+1.  Create a <xref:Microsoft.Office.Tools.Excel.NamedRange> control at cell **A1**.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#50](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/CS/Sheet1.cs#50)]
-     [!code-vb[Trin_VstcoreExcelAutomation#50](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/VB/Sheet1.vb#50)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#50](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#50)]  [!code-vb[Trin_VstcoreExcelAutomation#50](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#50)]  
   
-2.  Legen Sie das heutige Datum als Wert für `NamedRange1` fest.  
+2.  Set today's date as the value for `NamedRange1`.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#51](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/CS/Sheet1.cs#51)]
-     [!code-vb[Trin_VstcoreExcelAutomation#51](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/VB/Sheet1.vb#51)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#51](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#51)]  [!code-vb[Trin_VstcoreExcelAutomation#51](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#51)]  
   
-#### So rufen Sie einen Datumswert aus einem benannten Bereich ab  
+#### <a name="to-retrieve-a-date-value-from-a-named-range"></a>To retrieve a date value from a named range  
   
-1.  Rufen Sie den Datumswert von `NamedRange1` ab.  
+1.  Retrieve the date value from `NamedRange1`.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#52](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/CS/Sheet1.cs#52)]
-     [!code-vb[Trin_VstcoreExcelAutomation#52](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/VB/Sheet1.vb#52)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#52](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#52)]  [!code-vb[Trin_VstcoreExcelAutomation#52](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#52)]  
   
-## Verwenden von systemeigenen Excel\-Bereichen  
+## <a name="using-native-excel-ranges"></a>Using Native Excel Ranges  
   
-#### So speichern Sie einen Datumswert in einem systemeigenen Excel\-Bereichsobjekt  
+#### <a name="to-store-a-date-value-in-a-native-excel-range-object"></a>To store a date value in a native Excel range object  
   
-1.  Erstellen Sie einen <xref:Microsoft.Office.Interop.Excel.Range>, der die Zelle **A1** darstellt.  
+1.  Create a <xref:Microsoft.Office.Interop.Excel.Range> that represents cell **A1**.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#25](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomationAddIn/CS/ThisAddIn.cs#25)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#25](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomationAddIn/VB/ThisAddIn.vb#25)]  
+     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#25](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#25)]  [!code-vb[Trin_VstcoreExcelAutomationAddIn#25](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#25)]  
   
-2.  Legen Sie das heutige Datum als Wert für `rng` fest.  
+2.  Set today's date as the value for `rng`.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#26](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomationAddIn/CS/ThisAddIn.cs#26)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#26](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomationAddIn/VB/ThisAddIn.vb#26)]  
+     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#26](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#26)]  [!code-vb[Trin_VstcoreExcelAutomationAddIn#26](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#26)]  
   
-#### So rufen Sie einen Datumswert aus einem systemeigenen Excel\-Bereichsobjekt ab  
+#### <a name="to-retrieve-a-date-value-from-a-native-excel-range-object"></a>To retrieve a date value from a native Excel range object  
   
-1.  Rufen Sie den Datumswert von `rng` ab.  
+1.  Retrieve the date value from `rng`.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#27](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomationAddIn/CS/ThisAddIn.cs#27)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#27](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomationAddIn/VB/ThisAddIn.vb#27)]  
+     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#27](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#27)]  [!code-vb[Trin_VstcoreExcelAutomationAddIn#27](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#27)]  
   
-## Siehe auch  
- [Arbeiten mit Bereichen](../vsto/working-with-ranges.md)   
- [Übersicht über das Excel-Objektmodell](../vsto/excel-object-model-overview.md)   
- [NamedRange-Steuerelement](../vsto/namedrange-control.md)   
- [Gewusst wie: Programmgesteuertes Verweisen auf Arbeitsblattbereiche im Code](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
- [Gewusst wie: Hinzufügen von NamedRange-Steuerelementen zu Arbeitsblättern](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
- [Optionale Parameter in Office-Lösungen](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="see-also"></a>See Also  
+ [Working with Ranges](../vsto/working-with-ranges.md)   
+ [Excel Object Model Overview](../vsto/excel-object-model-overview.md)   
+ [NamedRange Control](../vsto/namedrange-control.md)   
+ [How to: Programmatically Refer to Worksheet Ranges in Code](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
+ [How to: Add NamedRange Controls to Worksheets](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
+ [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
   
   

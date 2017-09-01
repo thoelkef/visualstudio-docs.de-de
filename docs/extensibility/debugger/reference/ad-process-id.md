@@ -1,65 +1,82 @@
 ---
-title: "AD_PROCESS_ID | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "AD_PROCESS_ID"
-helpviewer_keywords: 
-  - "AD_PROCESS_ID union"
+title: AD_PROCESS_ID | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- AD_PROCESS_ID
+helpviewer_keywords:
+- AD_PROCESS_ID union
 ms.assetid: 4cb40d12-2e92-4f09-83f4-689928bd65b3
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# AD_PROCESS_ID
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: fa7b4f24cf215b3cab1bee47ed665d62336fb519
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
-Gibt die Prozess\-ID an, die möglicherweise entweder eine System ID oder ein GUID ist.  
+---
+# <a name="adprocessid"></a>AD_PROCESS_ID
+Specifies the process ID, which may be either a system ID or a GUID.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 typedef struct _AD_PROCESS_ID {  
-   AD_PROCESS_ID_TYPE ProcessIdType;  
-   union {  
-      DWORD dwProcessId;   
-      GUID  guidProcessId;   
-      DWORD dwUnused;   
-   } ProcessId;  
+   AD_PROCESS_ID_TYPE ProcessIdType;  
+   union {  
+      DWORD dwProcessId;   
+      GUID  guidProcessId;   
+      DWORD dwUnused;   
+   } ProcessId;  
 } AD_PROCESS_ID;  
 ```  
   
-```c#  
+```csharp  
 public struct AD_PROCESS_ID {  
-   AD_PROCESS_ID_TYPE ProcessIdType;  
-   DWORD              dwProcessId;   
-   GUID               guidProcessId;   
-   DWORD              dwUnused;   
+   AD_PROCESS_ID_TYPE ProcessIdType;  
+   DWORD              dwProcessId;   
+   GUID               guidProcessId;   
+   DWORD              dwUnused;   
 };  
 ```  
   
-## Mitglieder  
+## <a name="members"></a>Members  
  `ProcessIdType`  
- Ein Wert aus der Enumeration, die [AD\_PROCESS\_ID\_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) Verwendung der `ProcessId` Gesamtmenge angibt, interpretiert \(oder für verwalteten Code, der Member der Struktur zugreifen.\)  
+ A value from the [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) enumeration specifying how to interpret the `ProcessId` union (or, for managed code, which member of the structure to access).  
   
  dwProcessId  
- Die Prozess\-ID als Wert des Systems.  
+ The process ID as a value from the system.  
   
  guidProcessId  
- Die Prozess\-ID als GUID.  
+ The process ID as a GUID.  
   
  dwUnused  
- Auffüllen.  
+ Padding.  
   
-## Hinweise  
- Diese Struktur wird in den folgenden Methoden übergeben:  
+## <a name="remarks"></a>Remarks  
+ This structure is passed to the following methods:  
   
 -   [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)  
   
@@ -69,24 +86,24 @@ public struct AD_PROCESS_ID {
   
 -   [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)  
   
- Außerdem wird von den folgenden Methoden zurückgegeben:  
+ And is returned from the following methods:  
   
 -   [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)  
   
 -   [GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)  
   
-## Anforderungen  
+## <a name="requirements"></a>Requirements  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
- [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+## <a name="see-also"></a>See Also  
+ [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)   
- [PROCESS\_INFO](../../../extensibility/debugger/reference/process-info.md)   
- [AD\_PROCESS\_ID\_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md)   
+ [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)   
+ [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md)   
  [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)   
  [GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)   
  [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)   

@@ -1,56 +1,71 @@
 ---
-title: "CA1023: Indexer sollten nicht mehrdimensional sein | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IndexersShouldNotBeMultidimensional"
-  - "CA1023"
-helpviewer_keywords: 
-  - "CA1023"
-  - "IndexersShouldNotBeMultidimensional"
+title: 'CA1023: Indexers should not be multidimensional | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IndexersShouldNotBeMultidimensional
+- CA1023
+helpviewer_keywords:
+- CA1023
+- IndexersShouldNotBeMultidimensional
 ms.assetid: ae499879-97f6-434e-a61d-1fedd231d2fb
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 14
----
-# CA1023: Indexer sollten nicht mehrdimensional sein
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: e676d335932cf96e61771646a9510ad93561381f
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023: Indexers should not be multidimensional
 |||  
 |-|-|  
 |TypeName|IndexersShouldNotBeMultidimensional|  
 |CheckId|CA1023|  
-|Kategorie \(Category\)|Microsoft.Design|  
-|Unterbrechende Änderung|Breaking|  
+|Category|Microsoft.Design|  
+|Breaking Change|Breaking|  
   
-## Ursache  
- Ein öffentlicher oder geschützter Typ enthält einen öffentlichen oder geschützten Indexer, der mehrere Indizes verwendet.  
+## <a name="cause"></a>Cause  
+ A public or protected type contains a public or protected indexer that uses more than one index.  
   
-## Regelbeschreibung  
- Indexer, d. h. indizierte Eigenschaften, sollten einen einzelnen Index verwenden.  Wegen mehrdimensionaler Indexer kann die Verwendbarkeit der Bibliothek deutlich abnehmen.  Wenn der Entwurf mehrere Indizes erfordert, sollten Sie erneut prüfen, ob es sich bei dem Typ um einen logischen Datenspeicher handelt.  Wenn dies nicht der Fall ist, verwenden Sie eine Methode.  
+## <a name="rule-description"></a>Rule Description  
+ Indexers, that is, indexed properties, should use a single index. Multi-dimensional indexers can significantly reduce the usability of the library. If the design requires multiple indexes, reconsider whether the type represents a logical data store. If not, use a method.  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Entwurf, sodass nur ein Ganzzahl\- oder Zeichenfolgenindex verwendet wird, oder verwenden Sie anstelle des Indexers eine Methode.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, change the design to use a lone integer or string index, or use a method instead of the indexer.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Unterdrücken Sie eine Warnung dieser Regel erst, nachdem Sie den Bedarf für einen nicht dem Standard entsprechenden Indexer sorgfältig geprüft haben.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Suppress a warning from this rule only after carefully considering the need for the nonstandard indexer.  
   
-## Beispiel  
- Das folgende Beispiel zeigt einen Typ \(`DayOfWeek03`\) mit einem mehrdimensionalen Indexer, der gegen die Regel verstößt.  Der Indexer fungiert als eine Art Konvertierung und sollte daher eher als Methode zur Verfügung gestellt werden.  Der Typ wird in `RedesignedDayOfWeek03` so umgestaltet, dass er der Regel entspricht.  
+## <a name="example"></a>Example  
+ The following example shows a type, `DayOfWeek03`, with a multi-dimensional indexer that violates the rule. The indexer can be seen as a type of conversion and therefore is more appropriately exposed as a method. The type is redesigned in `RedesignedDayOfWeek03` to satisfy the rule.  
   
- [!code-vb[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/VisualBasic/ca1023-indexers-should-not-be-multidimensional_1.vb)]
- [!code-cpp[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CPP/ca1023-indexers-should-not-be-multidimensional_1.cpp)]
- [!code-cs[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CSharp/ca1023-indexers-should-not-be-multidimensional_1.cs)]  
+ [!code-vb[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/VisualBasic/ca1023-indexers-should-not-be-multidimensional_1.vb)] [!code-cpp[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CPP/ca1023-indexers-should-not-be-multidimensional_1.cpp)] [!code-csharp[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CSharp/ca1023-indexers-should-not-be-multidimensional_1.cs)]  
   
-## Verwandte Regeln  
- [CA1043: Ganzzahliges Argument oder Zeichenfolgenargument für Indexer verwenden](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)  
+## <a name="related-rules"></a>Related Rules  
+ [CA1043: Use integral or string argument for indexers](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)  
   
- [CA1024: Nach Möglichkeit Eigenschaften verwenden](../code-quality/ca1024-use-properties-where-appropriate.md)
+ [CA1024: Use properties where appropriate](../code-quality/ca1024-use-properties-where-appropriate.md)

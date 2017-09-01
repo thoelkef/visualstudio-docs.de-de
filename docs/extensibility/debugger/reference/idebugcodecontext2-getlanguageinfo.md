@@ -1,56 +1,73 @@
 ---
-title: "IDebugCodeContext2::GetLanguageInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCodeContext2::GetLanguageInfo"
-helpviewer_keywords: 
-  - "IDebugCodeContext2::GetLanguageInfo"
+title: IDebugCodeContext2::GetLanguageInfo | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugCodeContext2::GetLanguageInfo
+helpviewer_keywords:
+- IDebugCodeContext2::GetLanguageInfo
 ms.assetid: 03002ef1-9fe6-44b6-b23b-ef7b86b2b21b
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugCodeContext2::GetLanguageInfo
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: cf86b37c40e103a61a08f7f34bd11dead7e2598e
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
-Ruft die Sprachinformationen für diesen Code Elementkontext ab.  
+---
+# <a name="idebugcodecontext2getlanguageinfo"></a>IDebugCodeContext2::GetLanguageInfo
+Gets the language information for this code context.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetLanguageInfo(   
-   BSTR* pbstrLanguage,  
-   GUID* pguidLanguage  
+```cpp  
+HRESULT GetLanguageInfo(   
+   BSTR* pbstrLanguage,  
+   GUID* pguidLanguage  
 );  
 ```  
   
-```c#  
-int GetLanguageInfo(   
-   ref string pbstrLanguage,  
-   ref Guid pguidLanguage  
+```csharp  
+int GetLanguageInfo(   
+   ref string pbstrLanguage,  
+   ref Guid pguidLanguage  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `pbstrLanguage`  
- \[in, out\]  Gibt eine Zeichenfolge mit dem Namen der Programmiersprache enthält, z. B. „C\+\+“ zurück.  
+ [in, out] Returns a string that contains the name of the language, such as "C++."  
   
  `pguidLanguage`  
- \[in, out\]  Gibt die GUID für die Sprache des Codes kontexts z. B. `guidCPPLang`zurück.  
+ [in, out] Returns the GUID for the language of the code context, for example, `guidCPPLang`.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Hinweise  
- Mindestens einer der Parameter muss einen Wert ungleich null zurückgegeben.  
+## <a name="remarks"></a>Remarks  
+ At least one of the parameters must return a non-null value.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

@@ -1,87 +1,100 @@
 ---
-title: "Schritt&#160;6: Hinzuf&#252;gen einer Subtraktionsaufgabe | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'Step 6: Add a Subtraction Problem | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 59204ef9-24bd-4f81-b85f-e3168e518a3e
 caps.latest.revision: 25
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 25
----
-# Schritt&#160;6: Hinzuf&#252;gen einer Subtraktionsaufgabe
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: d5323f8d6518992ebdb06c86c5931a556b7622a7
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
 
-Im sechsten Teil dieses Lernprogramms fügen Sie eine Subtraktionsaufgabe hinzu und erfahren, wie die folgenden Aufgaben ausgeführt werden:  
+---
+# <a name="step-6-add-a-subtraction-problem"></a>Step 6: Add a Subtraction Problem
+In the sixth part of this tutorial, you'll add a subtraction problem and learn how to perform the following tasks:  
   
--   Speichern Sie die Subtraktionswerte.  
+-   Store the subtraction values.  
   
--   Generieren Sie Zufallszahlen für die Aufgabe \(und stellen Sie sicher, dass die Antwort ein Wert zwischen 0 und 100 ist\).  
+-   Generate random numbers for the problem (and be sure that the answer is between 0 and 100).  
   
--   Aktualisieren Sie die Methode, mit der die Antworten überprüft werden, damit auch die neue Subtraktionsaufgabe überprüft wird.  
+-   Update the method that checks the answers so that it checks the new subtraction problem too.  
   
--   Aktualisieren Sie den Tick\-Ereignishandler des Zeitgebers, damit der Ereignishandler die richtige Antwort ausgibt, wenn die Zeit abgelaufen ist.  
+-   Update your timer's Tick event handler so that the event handler fills in the correct answer when time runs out.  
   
-### So fügen Sie eine Subtraktionsaufgabe hinzu  
+### <a name="to-add-a-subtraction-problem"></a>To add a subtraction problem  
   
-1.  Fügen Sie dem Formular zwischen den Ganzzahlvariablen für die Additionsaufgabe und dem Zeitgeber zwei Ganzzahlvariablen für die Subtraktionsaufgabe hinzu.  Der Code sollte wie folgt aussehen:  
+1.  Add two integer variables for the subtraction problem to your form, between the integer variables for the addition problem and the timer. The code should look like the following.  
   
-     [!code-vb[VbExpressTutorial3Step5_6#12](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_1.vb)]
-     [!code-cs[VbExpressTutorial3Step5_6#12](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_1.cs)]  
+     [!code-vb[VbExpressTutorial3Step5_6#12](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_1.vb)]  [!code-csharp[VbExpressTutorial3Step5_6#12](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_1.cs)]  
   
-     Die Namen der neuen Ganzzahlvariablen – **minuend** und **subtrahend** – sind keine Programmierbegriffe.  Es handelt sich um traditionell in der Arithmetik verwendete Namen für die Zahl, die subtrahiert wird \(der Subtrahend\), und die Zahl, von der subtrahiert wird \(der Minuend\).  Die Differenz ist der Minuend minus Subtrahend.  Sie können auch andere Namen verwenden, da das Programm keine bestimmten Namen für Variablen, Steuerelemente, Komponenten oder Methoden erfordert.  Sie müssen Regeln wie "Starten von Namen nicht mit Ziffern ausführen" beachten, jedoch können Sie Namen wie x1, x2, x3 und x4 im Allgemeinen verwenden.  Gattungsnamen führen jedoch dazu, dass Code schwer lesbar wird und Probleme nahezu unmöglich erkannt werden können.  Damit die Variablennamen eindeutig und nützlich bleiben, sollten Sie später in diesem Lernprogramm die traditionellen Namen für Multiplikation \(Multiplikand × Multiplikator \= Produkt\) und Division \(Dividend ÷ Divisor \= Quotient\) verwenden.  
+     The names of the new integer variables—**minuend** and **subtrahend**—aren't programming terms. They're the traditional names in arithmetic for the number that's being subtracted (the subtrahend) and the number from which the subtrahend is being subtracted (the minuend). The difference is the minuend minus the subtrahend. You could use other names, because your program doesn't require specific names for variables, controls, components, or methods. You must follow rules such as not starting names with digits, but you can generally use names such as x1, x2, x3, and x4. However, generic names make code difficult to read and problems nearly impossible to track down. To keep variable names unique and helpful, you'll use the traditional names for multiplication (multiplicand × multiplier = product) and division (dividend ÷ divisor = quotient) later in this tutorial.  
   
-     Anschließend ändern Sie die `StartTheQuiz()`\-Methode, um Zufallswerte für die Subtraktionsaufgabe bereitzustellen.  
+     Next, you'll modify the `StartTheQuiz()` method to provide random values for the subtraction problem.  
   
-2.  Fügen Sie nach dem Kommentar "Fill in the subtraction problem" folgenden Code hinzu.  
+2.  Add the following code after the "Fill in the subtraction problem" comment.  
   
-     [!code-vb[VbExpressTutorial3Step5_6#13](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_2.vb)]
-     [!code-cs[VbExpressTutorial3Step5_6#13](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_2.cs)]  
+     [!code-vb[VbExpressTutorial3Step5_6#13](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_2.vb)]  [!code-csharp[VbExpressTutorial3Step5_6#13](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_2.cs)]  
   
-     Um Negativantworten für die Subtraktionsaufgabe zu verhindern, wird in diesem Code die `Next()`\-Methode der `Random`\-Klasse geringfügig anders verwendet als in der Additionsaufgabe.  Wenn Sie der `Next()`\-Methode zwei Werte zuweisen, wird eine Zufallszahl ausgewählt, die größer oder gleich dem ersten Wert und kleiner als der zweite Wert ist.  Mit dem folgenden Code wird eine Zufallszahl von 1 bis 100 ausgewählt, die in der Minuend\-Variablen gespeichert wird.  
+     To prevent negative answers for the subtraction problem, this code uses the `Next()` method of the `Random` class a little differently from how the addition problem does. When you give the `Next()` method two values, it picks a random number that's greater than or equal to the first value and less than the second one. The following code chooses a random number from 1 through 100 and stores it in the minuend variable.  
   
-     [!code-vb[VbExpressTutorial3Step5_6#21](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_3.vb)]
-     [!code-cs[VbExpressTutorial3Step5_6#21](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_3.cs)]  
+     [!code-vb[VbExpressTutorial3Step5_6#21](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_3.vb)]  [!code-csharp[VbExpressTutorial3Step5_6#21](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_3.cs)]  
   
-     Sie können die `Next()`\-Methode der `Random`\-Klasse, die zuvor in diesem Lernprogramm "randomizer" genannt wurde, auf unterschiedliche Weise aufrufen.  Methoden, für die es mehrere Arten des Aufrufs gibt, werden als "überladene" Methoden bezeichnet. Sie können mithilfe von IntelliSense untersucht werden.  Werfen Sie einen weiteren Blick auf die QuickInfo für die `Next()`\-Methode im IntelliSense\-Fenster.  
+     You can call the `Next()` method of the `Random` class, which you named "randomizer" earlier  in this tutorial, in multiple ways. Methods that you can call in more than one way are referred to as overloaded, and you can use IntelliSense to explore them. Look again at the tooltip of the IntelliSense window for the `Next()` method.  
   
-     ![QuickInfo im IntelliSense&#45;Fenster](~/ide/media/express_overloads.png "Express\_Overloads")  
-QuickInfo im IntelliSense\-Fenster  
+     ![Intellisense window tooltip](../ide/media/express_overloads.png "Express_Overloads")  
+Intellisense window tooltip  
   
-     Die QuickInfo zeigt **\(\+ 2 Überladung\(en\)\)** an, was bedeutet, dass Sie die `Next()`\-Methode auf zwei andere Arten aufrufen können.  Überladungen enthalten unterschiedliche Anzahl und Typen von Argumenten, sodass sie alle mit leichten Unterschieden funktionieren.  Beispielsweise könnte eine Methode ein einzelnes ganzzahliges Argument haben, während eine der entsprechenden Überladungen eine Ganzzahl und eine Zeichenfolge enthalten kann.  Wählen Sie die richtige Überladung je nach gewünschter Funktionen aus.  Wenn Sie der `StartTheQuiz()`\-Methode den Code hinzufügen, werden weitere Informationen im IntelliSense\-Fenster angezeigt, sobald Sie `randomizer.Next(` eingeben.  Wählen Sie die NACH\-OBEN\-TASTE und die NACH\-UNTEN\-TASTE aus, um die Überladungen zu durchlaufen, wie in der folgenden Abbildung gezeigt.  
+     The tooltip shows **(+ 2 overload(s))**, which means that you can call the `Next()` method in two other ways. Overloads contain different numbers or types of arguments, so that they work slightly differently from one another. For example, a method might take a single integer argument, whereas one of its overloads might take an integer and a string. You choose the correct overload based on what you want it to do. When you add the code to the `StartTheQuiz()` method, more information appears in the Intellisense window as soon as you enter `randomizer.Next(`. Choose the Up Arrow and Down Arrow keys to cycle through the overloads, as the following illustration shows.  
   
-     ![Überladung für Next&#40;&#41;&#45;Methode in IntelliSense](~/ide/media/express_nextoverload.png "Express\_NextOverload")  
-Überladung für Next\(\)\-Methode in IntelliSense  
+     ![Overload for Next&#40;&#41; method in IntelliSense](../ide/media/express_nextoverload.png "Express_NextOverload")  
+Overload for Next() method in IntelliSense  
   
-     In diesem Fall wählen Sie die letzte Überladung aus, da Sie Mindest\- und Höchstwerte angeben können.  
+     In this case, you want to choose the last overload, because you can specify minimum and maximum values.  
   
-3.  Ändern Sie die `CheckTheAnswer()`\-Methode, um zu prüfen, ob die Antwort für die Subtraktionsaufgabe korrekt ist.  
+3.  Modify the `CheckTheAnswer()` method to check for the correct subtraction answer.  
   
-     [!code-vb[VbExpressTutorial3Step5_6#14](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_4.vb)]
-     [!code-cs[VbExpressTutorial3Step5_6#14](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_4.cs)]  
+     [!code-vb[VbExpressTutorial3Step5_6#14](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_4.vb)]  [!code-csharp[VbExpressTutorial3Step5_6#14](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_4.cs)]  
   
-     In Visual C\# ist `&&` der `logical and`\-Operator.  In Visual Basic ist `AndAlso` die Entsprechung dieses Operators.  Diese Operatoren entsprechen dem Wortlaut "Wenn die Summe aus addend1 und addend2 gleich dem Wert von sum NumericUpDown ist und wenn Minuend minus Subtrahend gleich dem Wert von difference NumericUpDown ist". Die `CheckTheAnswer()`\-Methode gibt nur `true` zurück, wenn die Antworten der Additions\- und die Subtraktionsaufgaben richtig sind.  
+     In Visual C#, `&&` is the `logical and` operator. In Visual Basic, the equivalent operator is `AndAlso`. These operators indicate "If the sum of addend1 and addend2 equals the value of the sum NumericUpDown and if minuend minus subtrahend equals the value of the difference NumericUpDown." The `CheckTheAnswer()` method returns `true` only if the answers to the addition and the subtraction problems are both correct.  
   
-4.  Ersetzen Sie den letzten Teil des Tick\-Ereignishandlers durch folgenden Code, damit die richtige Antwort ausgegeben wird, wenn die Zeit abgelaufen ist.  
+4.  Replace the last part of the timer's Tick event handler with the following code so that it fills in the correct answer when time runs out.  
   
-     [!code-vb[VbExpressTutorial3Step5_6#22](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_5.vb)]
-     [!code-cs[VbExpressTutorial3Step5_6#22](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_5.cs)]  
+     [!code-vb[VbExpressTutorial3Step5_6#22](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_5.vb)]  [!code-csharp[VbExpressTutorial3Step5_6#22](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_5.cs)]  
   
-5.  Speichern Sie den Code, und führen Sie ihn aus.  
+5.  Save and run your code.  
   
-     Das Programm enthält eine Subtraktionsaufgabe, wie in der folgenden Abbildung veranschaulicht.  
+     Your program includes a subtraction problem, as the following illustration shows.  
   
-     ![Mathetest mit Subtraktion](../ide/media/express_addsubtract.png "Express\_AddSubtract")  
-Mathequiz mit Subtraktionsaufgabe  
+     ![Math quiz with subtraction problem](../ide/media/express_addsubtract.png "Express_AddSubtract")  
+Math quiz with subtraction problem  
   
-### So fahren Sie fort oder überprüfen die Angaben  
+### <a name="to-continue-or-review"></a>To continue or review  
   
--   Um zum nächsten Schritt des Lernprogramms zu wechseln, klicken Sie auf [Schritt 7: Hinzufügen von Multiplikations\- und Divisionsaufgaben](../ide/step-7-add-multiplication-and-division-problems.md).  
+-   To go to the next tutorial step, see [Step 7: Add Multiplication and Division Problems](../ide/step-7-add-multiplication-and-division-problems.md).  
   
--   Um zum vorherigen Schritt des Lernprogramms zurückzukehren, klicken Sie auf [Schritt 5: Hinzufügen von Enter\-Ereignishandlern für die NumericUpDown\-Steuerelemente](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).
+-   To return to the previous tutorial step, see [Step 5: Add Enter Event Handlers for the NumericUpDown Controls](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).

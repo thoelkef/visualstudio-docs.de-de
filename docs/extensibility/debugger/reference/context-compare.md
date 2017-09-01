@@ -1,99 +1,116 @@
 ---
-title: "CONTEXT_COMPARE | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CONTEXT_COMPARE"
-helpviewer_keywords: 
-  - "CONTEXT_COMPARE-enumeration"
+title: CONTEXT_COMPARE | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CONTEXT_COMPARE
+helpviewer_keywords:
+- CONTEXT_COMPARE enumeration
 ms.assetid: 701ed61c-a320-4c20-a335-0b840024abc0
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# CONTEXT_COMPARE
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: eaab64144ad0978a589f69005aea561c7bd74519
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
-Gibt die Kriterien zum Vergleichen von zwei Speicher kontexten an.  
+---
+# <a name="contextcompare"></a>CONTEXT_COMPARE
+Specifies the criteria for comparing two memory contexts.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-enum enum_CONTEXT_COMPARE {   
-   CONTEXT_EQUAL                 = 0x0001,  
-   CONTEXT_LESS_THAN             = 0x0002,  
-   CONTEXT_GREATER_THAN          = 0x0003,  
-   CONTEXT_LESS_THAN_OR_EQUAL    = 0x0004,  
-   CONTEXT_GREATER_THAN_OR_EQUAL = 0x0005,  
-   CONTEXT_SAME_SCOPE            = 0x0006,  
-   CONTEXT_SAME_FUNCTION         = 0x0007,  
-   CONTEXT_SAME_MODULE           = 0x0008,  
-   CONTEXT_SAME_PROCESS          = 0x0009  
+```cpp  
+enum enum_CONTEXT_COMPARE {   
+   CONTEXT_EQUAL                 = 0x0001,  
+   CONTEXT_LESS_THAN             = 0x0002,  
+   CONTEXT_GREATER_THAN          = 0x0003,  
+   CONTEXT_LESS_THAN_OR_EQUAL    = 0x0004,  
+   CONTEXT_GREATER_THAN_OR_EQUAL = 0x0005,  
+   CONTEXT_SAME_SCOPE            = 0x0006,  
+   CONTEXT_SAME_FUNCTION         = 0x0007,  
+   CONTEXT_SAME_MODULE           = 0x0008,  
+   CONTEXT_SAME_PROCESS          = 0x0009  
 };  
 typedef DWORD CONTEXT_COMPARE;  
 ```  
   
-```c#  
-public enum enum_CONTEXT_COMPARE {   
-   CONTEXT_EQUAL                 = 0x0001,  
-   CONTEXT_LESS_THAN             = 0x0002,  
-   CONTEXT_GREATER_THAN          = 0x0003,  
-   CONTEXT_LESS_THAN_OR_EQUAL    = 0x0004,  
-   CONTEXT_GREATER_THAN_OR_EQUAL = 0x0005,  
-   CONTEXT_SAME_SCOPE            = 0x0006,  
-   CONTEXT_SAME_FUNCTION         = 0x0007,  
-   CONTEXT_SAME_MODULE           = 0x0008,  
-   CONTEXT_SAME_PROCESS          = 0x0009  
+```csharp  
+public enum enum_CONTEXT_COMPARE {   
+   CONTEXT_EQUAL                 = 0x0001,  
+   CONTEXT_LESS_THAN             = 0x0002,  
+   CONTEXT_GREATER_THAN          = 0x0003,  
+   CONTEXT_LESS_THAN_OR_EQUAL    = 0x0004,  
+   CONTEXT_GREATER_THAN_OR_EQUAL = 0x0005,  
+   CONTEXT_SAME_SCOPE            = 0x0006,  
+   CONTEXT_SAME_FUNCTION         = 0x0007,  
+   CONTEXT_SAME_MODULE           = 0x0008,  
+   CONTEXT_SAME_PROCESS          = 0x0009  
 };  
 ```  
   
-## Mitglieder  
- CONTEXT\_EQUAL  
- Suchen Sie den ersten in der Liste Arbeitsspeicher, die gleich dem Ziel Arbeitsspeicher Elementkontext vorhanden ist.  
+## <a name="members"></a>Members  
+ CONTEXT_EQUAL  
+ Find the first memory context in the list that is equal to the target memory context.  
   
- CONTEXT\_LESS\_THAN  
- Suchen Sie den ersten in der Liste Arbeitsspeicher, die kleiner ist als der Ziel Arbeitsspeicher Elementkontext.  
+ CONTEXT_LESS_THAN  
+ Find the first memory context in the list that is less than the target memory context.  
   
- CONTEXT\_GREATER\_THAN  
- Suchen Sie den ersten in der Liste Arbeitsspeicher größer ist als der Ziel Arbeitsspeicher Elementkontext.  
+ CONTEXT_GREATER_THAN  
+ Find the first memory context in the list that is greater than the target memory context.  
   
- CONTEXT\_LESS\_THAN\_OR\_EQUAL  
- Suchen Sie den ersten in der Liste Arbeitsspeicher, die kleiner oder gleich dem Ziel Arbeitsspeicher Elementkontext vorhanden ist.  
+ CONTEXT_LESS_THAN_OR_EQUAL  
+ Find the first memory context in the list that is less than or equal to the target memory context.  
   
- CONTEXT\_GREATER\_THAN\_OR\_EQUAL  
- Suchen Sie den ersten in der Liste Arbeitsspeicher größer oder gleich dem Ziel Arbeitsspeicher Elementkontext vorhanden ist.  
+ CONTEXT_GREATER_THAN_OR_EQUAL  
+ Find the first memory context in the list that is greater than or equal to the target memory context.  
   
- CONTEXT\_SAME\_SCOPE  
- Suchen Sie den ersten in der Liste Arbeitsspeicher, die sich im selben Bereich wie der Speicher Ziel Kontext ist.  
+ CONTEXT_SAME_SCOPE  
+ Find the first memory context in the list that is in the same scope as the target memory context.  
   
- CONTEXT\_SAME\_FUNCTION  
- Suchen Sie den ersten in der Liste Speicher in derselben Funktion wie der Speicher Ziel Bereich befindet.  
+ CONTEXT_SAME_FUNCTION  
+ Find the first memory context in the list that is in the same function as the target memory scope.  
   
- CONTEXT\_SAME\_MODULE  
- Suchen Sie den ersten in der Liste Arbeitsspeicher, die in demselben Modul als Ziel Arbeitsspeicher Elementkontext vorhanden ist.  
+ CONTEXT_SAME_MODULE  
+ Find the first memory context in the list that is in the same module as the target memory context.  
   
- CONTEXT\_SAME\_PROCESS  
- Suchen Sie den ersten in der Liste Arbeitsspeicher im gleichen Prozess wie der Speicher Ziel Kontext ist.  
+ CONTEXT_SAME_PROCESS  
+ Find the first memory context in the list that is in the same process as the target memory context.  
   
-## Hinweise  
- Übergabe als Argument an die [Vergleichen](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)\-Methode.  
+## <a name="remarks"></a>Remarks  
+ Passed as an argument to the [Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md) method.  
   
- Diese Werte werden verwendet, um den ersten Speicher in einer Liste zu suchen, die die angegebenen Vergleichs kriterien erfüllt.  Ein Kontext ist eine Liste von Speicher im Arbeitsspeicher kontexten angegeben, um sich durch die gegen `IDebugMemoryContext2::Compare`\-Methode verglichen werden soll.  Der erste in der Liste Arbeitsspeicher, für die der Vergleichsoperator `true` ist, wird anschließend zurückgegeben.  
+ These values are used to find the first memory context in a list that satisfies the specified comparison criteria. A memory context is given a list of memory contexts to compare itself against through the `IDebugMemoryContext2::Compare` method. The first memory context in the list for which the comparison operator is `true` is then returned.  
   
-## Anforderungen  
+## <a name="requirements"></a>Requirements  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
- [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Vergleichen](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)

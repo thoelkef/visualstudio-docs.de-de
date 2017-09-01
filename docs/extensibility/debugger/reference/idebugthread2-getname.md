@@ -1,52 +1,69 @@
 ---
-title: "IDebugThread2::GetName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugThread2::GetName"
-helpviewer_keywords: 
-  - "IDebugThread2::GetName"
+title: IDebugThread2::GetName | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugThread2::GetName
+helpviewer_keywords:
+- IDebugThread2::GetName
 ms.assetid: eec54b8f-4a0e-4919-b0f9-81d4bd1e0b6f
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugThread2::GetName
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 675f2bd0e42ac8584914c570e5efbeee415036db
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
-Ruft den Namen eines Threads ab.  
+---
+# <a name="idebugthread2getname"></a>IDebugThread2::GetName
+Gets the name of a thread.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetName (   
-   BSTR* pbstrName  
+```cpp  
+HRESULT GetName (   
+   BSTR* pbstrName  
 );  
 ```  
   
-```c#  
-int GetName (   
-   out string pbstrName  
+```csharp  
+int GetName (   
+   out string pbstrName  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `pbstrName`  
- \[out\]  Gibt den Namen des Threads zurück.  
+ [out] Returns the name of the thread.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Hinweise  
- Der abgerufene Name lautet immer ein Name, der angezeigt werden kann und der Titel beschreibt den Thread.  Der Name der Thread möglicherweise von einer Architektur der Laufzeit abgeleitet, die benannte Threads unterstützt, oder es könnte ein Name, der im Debug\- Modul abgeleitet ist.  Alternativ kann der Name des Threads durch einen Aufruf der [SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md)\-Methode festgelegt werden.  
+## <a name="remarks"></a>Remarks  
+ The retrieved name is always a name that can be displayed and this name describes the thread. The thread name might be derived from a run-time architecture that supports named threads, or it might be a name derived from the debug engine. Alternatively, the name of the thread can be set by a call to the [SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md) method.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md)

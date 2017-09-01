@@ -1,61 +1,81 @@
 ---
-title: "Remotedebugger - Portzuweisungen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Remote Debugger Port Assignments | Microsoft Docs
+ms.custom: H1Hack27Feb2017
+ms.date: 05/18/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 238bb4ec-bb00-4c2b-986e-18ac278f3959
 caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
----
-# Remotedebugger - Portzuweisungen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 1208ccaea240a05795659348e55c5497c75b195d
+ms.contentlocale: de-de
+ms.lasthandoff: 08/22/2017
 
-Der Visual Studio\-Remotedebugger kann als Anwendung oder als Hintergrunddienst ausgeführt werden. Bei der Ausführung als Anwendung wird standardmäßig der folgende Port zugewiesen:  
-  
+---
+# <a name="remote-debugger-port-assignments"></a>Remote Debugger Port Assignments
+The Visual Studio Remote Debugger can run as an application or as a background service. When it runs as an application, it uses a port that is assigned by default as follows:  
+
+-   Visual Studio 2017: 4022
+
 -   Visual Studio 2015: 4020  
   
 -   Visual Studio 2013: 4018  
   
 -   Visual Studio 2012: 4016  
   
- Die Nummer des Ports, der dem Remotedebugger zugewiesen ist, wird also für jede Version um 2 erhöht. Sie können bei Bedarf eine andere Portnummer festlegen. Das Festlegen von Portnummern wird in einem späteren Abschnitt erläutert.  
+ In other words, the number of the port assigned to the remote debugger is incremented by 2 for each release. You can set a different port number of you like. We will explain how to set port numbers in a later section.  
   
-## Remotedebugger\-Port bei 32\-Bit\-Betriebssystemen  
- TCP 4020 \(Visual Studio 2015\) ist der Hauptport und für alle Szenarien erforderlich. Sie können ihn über die Befehlszeile oder das Fenster "Remotedebugger" konfigurieren.  
+## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>The Remote Debugger Port on 32-bit Operating Systems  
+ TCP 4022 (in Visual Studio 2017) is the main port, and is required for all scenarios. You can configure this from either the command line or the remote debugger window.  
   
- Klicken Sie im Fenster "Remotedebugger" auf **Extras \/ Optionen**, und legen Sie die Nummer für den TCP\/IP\-Port fest.  
+ In the remote debugger window, click **Tools > Options**, and set the TCP/IP port number.  
   
- Starten Sie von der Befehlszeile aus den Remotedebugger über die Option **\/port**: **msvsmon \/port \<Portnummer\>**.  
+ On the command line, start the remote debugger with the **/port** switch: **msvsmon /port \<port number>**.  
   
- Alle Remotedebugger\-Befehlszeilenoptionen finden Sie in der Hilfe zum Remotedebugging \(drücken Sie **F1**, oder klicken Sie im Fenster "Remotedebugger" auf **Hilfe \/ Verwendung**\).  
+ You can find all the remote debugger command line switches in the remote debugging help (press **F1** or click **Help > Usage** in the remote debugger window).  
   
-## Remotedebugger\-Port bei 64\-Bit\-Betriebssystemen  
- Beim Starten der 64\-Bit\-Version des Remotedebuggers wird standardmäßig Port 4020 verwendet.  Wenn Sie einen 32\-Bit\-Prozess debuggen, startet die 64\-Bit\-Version des Remotedebuggers eine 32\-Bit\-Remotedebuggerversion auf Port 4021. Wenn Sie den 32\-Bit\-Remotedebugger ausführen, wird Port 4020 und nicht Port 4021 verwendet.  
+## <a name="the-remote-debugger-port-on-64-bit-operating-systems"></a>The Remote Debugger Port on 64-bit Operating Systems  
+ When the 64-bit version of the remote debugger is started, it uses the 4022 port by default.  If you debug a 32-bit process, the 64-bit version of the remote debugger starts a 32-bit version of the remote debugger on port 4023. If you run the 32-bit remote debugger, it uses 4022, and 4023 is not used.  
   
- Dieser Port ist über die Befehlszeile konfigurierbar: **msvsmon \/wow64port \<Portnummer\>**.  
+ This port is configurable from the command line: **Msvsmon /wow64port \<port number>**.  
   
-## Port für die Ermittlung  
- UDP 3702 wird für die Suche nach ausgeführten Instanzen des Remotedebuggers im Netzwerk verwendet \(z. B. bei **Suchen** im Dialogfeld **An den Prozess anhängen**\). Er wird nur für die Ermittlung von Computern verwendet, auf denen der Remotedebugger ausgeführt wird, und ist daher optional, wenn Sie den Computernamen oder die IP\-Adresse des Zielcomputers auf andere Weise ermitteln können. Da dies der Standardport für die Ermittlung ist, kann die Portnummer nicht konfiguriert werden.  
+## <a name="the-discovery-port"></a>The Discovery Port  
+ UDP 3702 is used for finding running instances of the remote debugger on the network (for example, the **Find** dialog in the **Attach to Process** dialog). It is used only for discovering a machine running the remote debugger, so it is  optional if you have some other way of knowing the machine name or IP address of the target computer. This is a standard port for discovery, so the port number cannot be configured.  
   
- Wenn Sie die Ermittlung nicht aktivieren möchten, können Sie msvsmon von der Befehlszeile aus mit deaktivierter Ermittlung starten: **msvsmon \/nodiscovery**.  
+ If you do not want to enable discovery, you can start msvsmon from the command line with discovery disabled:  **Msvsmon /nodiscovery**.  
   
-## Remotedebugger\-Ports in Azure  
- Die folgenden Ports werden vom Remotedebugger in Azure verwendet. Die Ports im Clouddienst werden den Ports auf den einzelnen virtuellen Computern zugeordnet. Bei allen Ports handelt es sich um TCP\-Ports.  
+## <a name="remote-debugger-ports-on-azure"></a>Remote Debugger Ports on Azure  
+ The following ports are used by the remote debugger on Azure. The ports on the cloud service are mapped to the ports on the individual VM. All ports are TCP.  
   
 ||||  
 |-|-|-|  
-|**Verbindung**|**Port im Clouddienst**|**Port auf virtuellem Computer**|  
+|**Connection**|**Port on Cloud Service**|**Port on VM**|  
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.Connector|30400|30398|  
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.Forwarder|31400|31398|  
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.FileUpload|32400|32398|  
   
-## Siehe auch  
- [Remotedebugging](../debugger/remote-debugging.md)
+## <a name="see-also"></a>See Also  
+ [Remote Debugging](../debugger/remote-debugging.md)

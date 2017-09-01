@@ -1,114 +1,117 @@
 ---
-title: "Binden von Daten an Steuerelemente in Office-Projektmappen"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Office-Dokumente [Office-Entwicklung in Visual Studio], Verbindung mit Daten herstellen"
-  - "Daten, Datenbindung"
-  - "Datenbindung"
-  - "Datenbindung, Office-Projektmappen"
-  - "Datenbindung, Steuerelemente"
-  - "Office-Anwendungen [Office-Entwicklung in Visual Studio], Datenbindung"
-  - "Steuerelemente, Datenbindung"
+title: Binding Data to Controls in Office Solutions | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Office documents [Office development in Visual Studio], connecting to data
+- data, data binding
+- data binding
+- data binding, Office solutions
+- data binding, controls
+- Office applications [Office development in Visual Studio], data binding
+- controls, data binding
 ms.assetid: b6faaed7-df9b-4d78-9863-e515cd5c7ed9
 caps.latest.revision: 70
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 69
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 665747b872ecaa847ee60f693c2e5f3750d4072a
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Binden von Daten an Steuerelemente in Office-Projektmappen
-  Sie können Windows Forms\-Steuerelemente und *Hoststeuerelemente* auf einem Microsoft Office Word\-Dokument oder einem Microsoft Office Excel\-Arbeitsblatt an eine Datenquelle binden, sodass die Steuerelemente die Daten automatisch anzeigen. Sie können Daten sowohl in Projekten auf Anwendungsebene als auch in Projekten auf Dokumentebene an Steuerelemente binden.  
+# <a name="binding-data-to-controls-in-office-solutions"></a>Binding Data to Controls in Office Solutions
+  You can bind Windows Forms controls and *host controls* on a Microsoft Office Word document or Microsoft Office Excel worksheet to a data source so the controls automatically display the data. You can bind data to controls in both application-level and document-level projects.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- Hoststeuerelemente erweitern Objekte in den Word\- und Excel\-Objektmodellen, beispielsweise Inhaltssteuerelemente in Word und benannte Bereiche in Excel. Weitere Informationen finden Sie unter [Übersicht über Hostelemente und Hoststeuerelemente](../vsto/host-items-and-host-controls-overview.md).  
+ Host controls extend objects that are in the Word and Excel object models, such as content controls in Word and named ranges in Excel. For more information, see [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
   
- Sowohl in Windows Forms\- als auch in Hoststeuerelementen wird das Windows Forms\-Datenbindungsmodell verwendet, das sowohl *einfache Datenbindung* als auch *komplexe Datenbindung* an Datenquellen wie Datasets und Datentabellen unterstützt. Umfassende Informationen über das Datenbindungsmodell in Windows Forms finden Sie unter [Datenbindung und Windows Forms](http://msdn.microsoft.com/library/419aac5e-819b-4aad-88b0-73a2f8c0bd27).  
+ Both Windows Forms and host controls use the Windows Forms data binding model, which supports both *simple data binding* and *complex data binding* to data sources such as datasets and data tables. For complete information about the data binding model in Windows Forms, see [Data Binding and Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  
   
- ![Link zu Video](~/data-tools/media/playvideo.gif "Link zu Video") Eine entsprechende Videodemo finden Sie unter [How Do I: Consume Database Data in Excel?](http://go.microsoft.com/fwlink/?LinkID=130287).  
+ ![link to video](../vsto/media/playvideo.gif "link to video") For a related video demonstration, see [How Do I: Consume Database Data in Excel?](http://go.microsoft.com/fwlink/?LinkID=130287).  
   
-## Einfache Datenbindung  
- Eine einfache Datenbindung besteht dann, wenn eine Steuerelementeigenschaft an ein einzelnes Datenelement \(z. B. einen Wert in einer Datentabelle\) gebunden ist. Zum Beispiel hat das <xref:Microsoft.Office.Tools.Excel.NamedRange>\-Steuerelement die <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A>\-Eigenschaft, die an ein Feld in einem Dataset gebunden werden kann. Wenn sich das Feld im Dataset ändert, ändert sich auch der Wert im benannten Bereich. Alle Hoststeuerelemente, mit Ausnahme des <xref:Microsoft.Office.Tools.Word.XMLNodes>\-Steuerelements, unterstützen einfache Datenbindung. Das <xref:Microsoft.Office.Tools.Word.XMLNodes>\-Steuerelement ist eine Auflistung und unterstützt daher keine Datenbindung.  
+## <a name="simple-data-binding"></a>Simple Data Binding  
+ Simple data binding exists when a control property is bound to a single data element, such as a value in a data table. For example, the <xref:Microsoft.Office.Tools.Excel.NamedRange> control has a <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> property that can be bound to a field in a dataset. When the field in the dataset changes, the value in the named range also changes. All host controls, except for the <xref:Microsoft.Office.Tools.Word.XMLNodes> control, support simple data binding. The <xref:Microsoft.Office.Tools.Word.XMLNodes> control is a collection, and therefore it does not support data binding.  
   
- Um eine einfache Datenbindung an ein Hoststeuerelement auszuführen, fügen Sie der DataBindings\-Eigenschaft des Steuerelements ein <xref:System.Windows.Forms.Binding>\-Objekt hinzu. Ein <xref:System.Windows.Forms.Binding>\-Objekt stellt die einfache Bindung zwischen einem Eigenschaftswert des Steuerelements und dem Wert eines Datenelements dar.  
+ To perform simple data binding to a host control, add a <xref:System.Windows.Forms.Binding> to the DataBindings property of the control. A <xref:System.Windows.Forms.Binding> object represents the simple binding between a property value of the control and the value of a data element.  
   
- Im folgenden Beispiel wird veranschaulicht, wie die <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A>\-Eigenschaft in einem Projekt auf Dokumentebene an ein Datenelement gebunden wird.  
+ The following example demonstrates how to bind the <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> property to a data element in a document-level project.  
   
- [!code-csharp[Trin_BindableComponent#4](../snippets/csharp/VS_Snippets_OfficeSP/Trin_BindableComponent/CS/Sheet1.cs#4)]
- [!code-vb[Trin_BindableComponent#4](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_BindableComponent/VB/Sheet1.vb#4)]  
+ [!code-vb[Trin_BindableComponent#4](../vsto/codesnippet/VisualBasic/Trin_BindableComponent/Sheet1.vb#4)] [!code-csharp[Trin_BindableComponent#4](../vsto/codesnippet/CSharp/Trin_BindableComponent/Sheet1.cs#4)]  
   
- Exemplarische Vorgehensweisen, in denen einfache Datenbindung veranschaulicht wird, finden Sie unter [Exemplarische Vorgehensweise: Einfache Datenbindung in Projekten auf Dokumentebene](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md) für ein Projekt auf Dokumentebene sowie unter [Exemplarische Vorgehensweise: Einfache Datenbindung in einem VSTO-Add-In-Projek](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md) für ein VSTO\-Add\-In\-Projekt.  
+ For walkthroughs that demonstrates simple data binding, see [Walkthrough: Simple Data Binding in a Document-Level Project](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md) for a document-level project and [Walkthrough: Simple Data Binding in VSTO add-in Project](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md) for an VSTO Add-in project.  
   
-## Komplexe Datenbindung  
- Eine komplexe Datenbindung besteht dann, wenn eine Steuerelementeigenschaft an mindestens zwei Datenelemente \(z. B. mehrere Spalten einer Datentabelle\) gebunden ist. Das <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelement für Excel ist das einzige Hoststeuerelement, das komplexe Datenbindung unterstützt. Zudem unterstützen viele Windows Forms\-Steuerelemente komplexe Datenbindung, etwa das <xref:System.Windows.Forms.DataGridView>\-Steuerelement.  
+## <a name="complex-data-binding"></a>Complex Data Binding  
+ Complex data binding exists when a control property is bound to more than one data element, such as multiple columns in a data table. The <xref:Microsoft.Office.Tools.Excel.ListObject> control for Excel is the only host control that supports complex data binding. There are also many Windows Forms controls that support complex data binding, such as the <xref:System.Windows.Forms.DataGridView> control.  
   
- Um eine komplexe Datenbindung auszuführen, legen Sie die DataSource\-Eigenschaft des Steuerelements auf ein Datenquellenobjekt fest, das von komplexer Datenbindung unterstützt wird. Beispielsweise kann die <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A>\-Eigenschaft des <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelements an mehrere Spalten einer Datentabelle gebunden werden. Alle Daten in der Datentabelle werden im <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelement angezeigt, und wenn sich die Daten in der Datentabelle ändern, ändert sich auch aus <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelement.  Eine Liste der Datenquellen, die Sie für komplexe Datenbindung verwenden können, finden Sie unter [Von Windows Forms unterstützte Datenquellen](http://msdn.microsoft.com/library/3d2c43f6-462b-4d35-9c86-13e9afe012e1).  
+ To perform complex data binding, set the DataSource property of the control to a data source object that is supported by complex data binding. For example, the <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> property of the <xref:Microsoft.Office.Tools.Excel.ListObject> control can be bound to multiple columns in a data table. All of the data in the data table appears in the <xref:Microsoft.Office.Tools.Excel.ListObject> control, and as the data in the data table changes, the <xref:Microsoft.Office.Tools.Excel.ListObject> also changes. For a list of the data sources that you can use for complex data binding, see [Data Sources Supported by Windows Forms](/dotnet/framework/winforms/data-sources-supported-by-windows-forms).  
   
- Im folgenden Codebeispiel wird ein <xref:System.Data.DataSet> mit zwei <xref:System.Data.DataTable>\-Objekten erstellt, und eine der Tabellen wird mit Daten aufgefüllt. Im Code wird dann das <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelement an die Tabelle gebunden, die Daten enthält. Dieses Beispiel gilt für ein Excel\-Projekt auf Dokumentebene.  
+ The following code example creates a <xref:System.Data.DataSet> with two <xref:System.Data.DataTable> objects and populates one of the tables with data. The code then binds the <xref:Microsoft.Office.Tools.Excel.ListObject> to the table that contains data. This example is for an Excel document-level project.  
   
- [!code-csharp[Trin_ExcelListObject#18](../snippets/csharp/VS_Snippets_OfficeSP/Trin_ExcelListObject/CS/Trin_ExcelListObject.cs#18)]
- [!code-vb[Trin_ExcelListObject#18](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_ExcelListObject/VB/Sheet1.vb#18)]  
+ [!code-csharp[Trin_ExcelListObject#18](../vsto/codesnippet/CSharp/Trin_ExcelListObject/Trin_ExcelListObject.cs#18)] [!code-vb[Trin_ExcelListObject#18](../vsto/codesnippet/VisualBasic/Trin_ExcelListObject/Sheet1.vb#18)]  
   
- Exemplarische Vorgehensweisen, in denen komplexe Datenbindung veranschaulicht wird, finden Sie unter [Exemplarische Vorgehensweise: Komplexe Datenbindung in Projekten auf Dokumentebene](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md) für ein Projekt auf Dokumentebene sowie unter [Exemplarische Vorgehensweise: Komplexe Datenbindung in einem VSTO-Add-In-Projekt](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md) für ein VSTO\-Add\-In\-Projekt.  
+ For walkthroughs that demonstrate complex data binding, see [Walkthrough: Complex Data Binding in a Document-Level Project](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md) for a document-level project and [Walkthrough: Complex Data Binding in VSTO add-in Project](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md) for an VSTO Add-in project.  
   
-## Anzeigen von Daten in Dokumenten und Arbeitsmappen  
- In Projekten auf Dokumentebene können Sie mithilfe des Fensters **Datenquellen** Dokumenten oder Arbeitsmappen datengebundene Steuerelemente auf die gleiche einfache Weise wie für Windows Forms hinzufügen. Weitere Informationen über die Verwendung des Fensters **Datenquellen** finden Sie unter [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../Topic/Binding%20Windows%20Forms%20controls%20to%20data%20in%20Visual%20Studio.md) und [Datenquellenfenster](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).  
+## <a name="displaying-data-in-documents-and-workbooks"></a>Displaying Data in Documents and Workbooks  
+ In document-level projects, you can use the **Data Sources** window to add data-bound controls to your documents or workbooks easily, the same way you use it for Windows Forms. For more information about using the **Data Sources** window, see [Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) and [Add new data sources](../data-tools/add-new-data-sources.md).  
   
-### Ziehen von Steuerelementen aus dem Fenster „Datenquellen“  
- Auf einem Dokument wird ein Steuerelement erstellt, wenn Sie aus dem Fenster **Datenquellen** ein Objekt auf das Dokument ziehen. Der Typ des erstellten Steuerelements ist davon abhängig, ob Sie an eine einzelne Datenspalte oder an mehrere Datenspalten binden.  
+### <a name="dragging-controls-from-the-data-sources-window"></a>Dragging Controls from the Data Sources Window  
+ A control is created on the document when you drag an object onto it from the **Data Sources** window. The type of control that is created depends on whether you are binding a single column of data or multiple columns of data.  
   
- In Excel werden auf dem Arbeitsblatt ein <xref:Microsoft.Office.Tools.Excel.NamedRange>\-Steuerelement für jedes einzelne Feld und für jeden Datenbereich, der mehrere Zeilen und Spalten enthält, ein <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelement erstellt. Sie können diese Standardeinstellung ändern, indem Sie im Fenster **Datenquellen** das Feld oder die Tabelle auswählen und dann in der Dropdownliste ein anderes Steuerelement auswählen.  
+ For Excel, a <xref:Microsoft.Office.Tools.Excel.NamedRange> control is created on the worksheet for each individual field, and a <xref:Microsoft.Office.Tools.Excel.ListObject> control is created for each data range that includes multiple rows and columns. You can change this default by selecting the table or field in the **Data Sources** window and then choosing a different control from the drop-down list.  
   
- Ein <xref:Microsoft.Office.Tools.Word.ContentControl>\-Steuerelement wird den Dokumenten hinzugefügt. Der Typ des Inhaltssteuerelements hängt vom Datentyp des von Ihnen ausgewählten Felds ab.  
+ A <xref:Microsoft.Office.Tools.Word.ContentControl> control is added to documents. The type of content control depends on the data type of the field that you selected.  
   
-### Binden von Daten in Projekten auf Dokumentebene zur Entwurfszeit  
- In den folgenden Themen werden Beispiele für das Binden von Daten zur Entwurfszeit erläutert:  
+### <a name="binding-data-in-document-level-projects-at-design-time"></a>Binding Data in Document-Level Projects at Design Time  
+ The following topics show examples of binding data at design time:  
   
--   [Gewusst wie: Auffüllen von Arbeitsblättern mit Daten aus einer Datenbank](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)  
+-   [How to: Populate Worksheets with Data from a Database](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)  
   
--   [Gewusst wie: Auffüllen von Dokumenten mit Daten aus einer Datenbank](../vsto/how-to-populate-documents-with-data-from-a-database.md)  
+-   [How to: Populate Documents with Data from a Database](../vsto/how-to-populate-documents-with-data-from-a-database.md)  
   
--   [Gewusst wie: Auffüllen von Dokumenten mit Daten von Objekten](../vsto/how-to-populate-documents-with-data-from-objects.md)  
+-   [How to: Populate Documents with Data from Objects](../vsto/how-to-populate-documents-with-data-from-objects.md)  
   
--   [Gewusst wie: Auffüllen von Dokumente mit Daten aus Diensten](../vsto/how-to-populate-documents-with-data-from-services.md)  
+-   [How to: Populate Documents with Data from Services](../vsto/how-to-populate-documents-with-data-from-services.md)  
   
--   [Gewusst wie: Ausführen eines Bildlaufs durch Datenbankdatensätze in einem Arbeitsblatt](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)  
+-   [How to: Scroll Through Database Records in a Worksheet](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)  
   
-### Binden von Daten in VSTO\-Add\-In\-Projekten  
- In VSTO\-Add\-in\-Projekten können Sie Steuerelemente nur zur Laufzeit hinzufügen. In den folgenden Themen werden Beispiele für das Binden von Daten zur Laufzeit erläutert:  
+### <a name="binding-data-in-vsto-add-in-projects"></a>Binding Data in VSTO Add-in projects  
+ In VSTO Add-in projects, you can add controls only at run time. The following topics show examples of binding data at run time:  
   
--   [Exemplarische Vorgehensweise: Einfache Datenbindung in einem VSTO-Add-In-Projek](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)  
+-   [Walkthrough: Simple Data Binding in VSTO add-in Project](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)  
   
--   [Exemplarische Vorgehensweise: Komplexe Datenbindung in einem VSTO-Add-In-Projekt](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)  
+-   [Walkthrough: Complex Data Binding in VSTO add-in Project](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)  
   
-## Aktualisieren von Daten, die an Hoststeuerelemente gebunden ist  
- Eine Datenbindung zwischen einer Datenquelle und einem Hoststeuerelement bedingt eine bidirektionale Datenaktualisierung. Bei einer einfachen Datenbindung werden Änderungen in der Datenquelle automatisch für das Hoststeuerelement übernommen, aber Änderungen im Hoststeuerelement erfordern einen expliziten Aufruf, damit die Datenquelle aktualisiert wird. Dies ist darauf zurückzuführen, dass in einigen Fällen Änderungen in einem datengebundenen Feld nur dann akzeptiert werden, wenn gleichzeitig auch Änderungen in einem anderen datengebundenen Feld vorgenommen werden. Es könnten z. B. zwei Felder vorhanden sein: eines für das Alter und eines für die Jahre an Berufserfahrung. Die Berufserfahrung kann das Alter nicht übersteigen Ein Benutzer kann nur dann das Alter von 50 in 25 und die Berufserfahrung von 30 in 10 ändern, wenn er die Änderungen gleichzeitig vornimmt. Um dieses Problem zu beheben, werden Felder mit einfacher Datenbindung erst aktualisiert, wenn die Aktualisierungen explizit durch Code gesendet wurden.  
+## <a name="updating-data-that-is-bound-to-host-controls"></a>Updating Data That Is Bound to Host Controls  
+ Data binding between a data source and a host control involves a two-way data update. In simple data binding, changes in the data source are reflected automatically in the host control, but changes in the host control require an explicit call to update the data source. The reason is that in some cases, changes in one data-bound field are not accepted unless they are accompanied by changes in another data-bound field. For example, you might have two fields, one for age and one for years of experience. Experience cannot exceed age. A user cannot update the age from 50 to 25 and then the experience from 30 to 10 unless he or she makes the changes at the same time. To solve this problem, fields with simple data binding are not updated until the updates are explicitly sent by code.  
   
- Um eine Datenquelle aus Hoststeuerelementen zu aktualisieren, die einfache Datenbindung ermöglichen, müssen Sie Aktualisierungen an die In\-Memory\-Datenquelle \(etwa ein <xref:System.Data.DataSet> oder eine <xref:System.Data.DataTable>\) und an die Back\-End\-Datenbank senden, wenn in Ihrer Projektmappe eine solche verwendet wird.  
+ To update a data source from host controls that enable simple data binding, you must send updates to the in-memory data source (such as a <xref:System.Data.DataSet> or <xref:System.Data.DataTable>) and to the back-end database, if your solution uses one.  
   
- Sie müssen die In\-Memory\-Datenquelle nicht explizit aktualisieren, wenn Sie eine komplexe Datenbindung mit dem <xref:Microsoft.Office.Tools.Excel.ListObject>\-Steuerelement ausführen. In diesem Fall werden Änderungen automatisch ohne zusätzlichen Code an die In\-Memory\-Datenquelle gesendet.  
+ You do not need to explicitly update the in-memory data source when you perform complex data binding using the <xref:Microsoft.Office.Tools.Excel.ListObject> control. In that case, changes are automatically sent to the in-memory data source without additional code.  
   
- Weitere Informationen finden Sie unter [Gewusst wie: Aktualisieren einer Datenquelle mit Daten eines Hoststeuerelements](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).  
+ For more information, see [How to: Update a Data Source with Data from a Host Control](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [How Do I: Consume Database Data in Excel?](http://go.microsoft.com/fwlink/?LinkID=130287)   
- [Datenbindung und Windows Forms](http://msdn.microsoft.com/library/419aac5e-819b-4aad-88b0-73a2f8c0bd27)   
- [Gewusst wie: Erstellen eines einfach gebundenen Steuerelements in einem Windows Form](http://msdn.microsoft.com/library/3bcaded8-0f1a-4cc0-8830-f59be253bf4e)   
- [Binden von Windows Forms-Steuerelementen an Daten in Visual Studio](../Topic/Binding%20Windows%20Forms%20controls%20to%20data%20in%20Visual%20Studio.md)   
- [Speichern von Daten in Datasets](../Topic/Saving%20data%20back%20to%20the%20database.md)   
- [Gewusst wie: Aktualisieren von Daten mit einem TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)   
- [Zwischenspeichern von Daten](../vsto/caching-data.md)   
- [Daten in Office-Lösungen](../vsto/data-in-office-solutions.md)  
+ [Data Binding and Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)   
+ [How to: Create a Simple-Bound Control on a Windows Form](/dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form)   
+ [Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
+ [Save data back to the database](../data-tools/save-data-back-to-the-database.md)    
+ [Update data by using a TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)    
+ [Caching Data](../vsto/caching-data.md)   
+ [Data in Office Solutions](../vsto/data-in-office-solutions.md)  
   
   

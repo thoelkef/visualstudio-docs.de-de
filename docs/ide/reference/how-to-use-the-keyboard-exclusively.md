@@ -1,7 +1,7 @@
 ---
-title: "Vorgehensweisen: Ausschließliches Verwenden der Tastatur | Microsoft-Dokumentation"
+title: 'How to: Use the Keyboard Exclusively | Microsoft Docs'
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 08/22/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -16,103 +16,92 @@ helpviewer_keywords:
 - keyboard shortcuts [Visual Studio]
 - accessibility [Visual Studio]
 ms.assetid: d71a4cc1-d352-4164-8538-3f9fa070a331
-caps.latest.revision: 25
 author: kempb
-ms.author: kempb
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 6b1e1a8a1e453015a673580d8a0dda7f5e817168
+ms.translationtype: HT
+ms.sourcegitcommit: 17defdd0b96ec1c3273fc6b845af844b031a4a17
+ms.openlocfilehash: af3c76fb90fe79f87091fdde355a54b3e4835f1c
 ms.contentlocale: de-de
-ms.lasthandoff: 05/24/2017
+ms.lasthandoff: 08/23/2017
 
 ---
-# <a name="how-to-use-the-keyboard-exclusively"></a>Gewusst wie: Ausschließliches Verwenden der Tastatur
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] bietet viele Standardtastaturkombinationen, um Ihnen das Navigieren und Codieren innerhalb der IDE zu erleichtern. Eine vollständige Liste der Tastaturkombinationen für Visual Studio finden Sie unter [Standardtastenkombinationen](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Informationen zu Tastenkombinationen andere Microsoft-Produkte finden Sie unter [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400).  
-  
+# <a name="how-to-use-the-keyboard-exclusively"></a>How to: Use the Keyboard Exclusively
+> [!TIP]
+> To learn more about recent accessibility updates, see the [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) blog post.
+
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] provides many default shortcut key combinations to make it easy to navigate and code within the integrated development environment (IDE). For a full listing of shortcut keys used in Visual Studio, see [Default Keyboard Shortcuts](../../ide/default-keyboard-shortcuts-in-visual-studio.md). For information on keyboard shortcuts available for other Microsoft products, see [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400).  
+
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen. Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren** , um die Einstellungen zu ändern. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md).  
-  
-## <a name="toolbox-controls"></a>Toolbox-Steuerelementen  
- Sie können mit der Tastatur ein Steuerelement in ein Formular oder einen Designer in der Toolbox einfügen.  
-  
-#### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>So können Sie über die Tastatur Steuerelemente aus der Toolbox einem Designer hinzufügen  
-  
-1.  Klicken Sie in der Menüleiste auf **Ansicht**, **Toolbox**.  
-  
-2.  Wechseln Sie mit STRG + NACH-OBEN oder STRG + NACH-UNTEN zwischen den Abschnitten in der Registerkarte der aktuellen Toolbox.  
-  
-3.  Verwenden Sie die Tasten NACH-OBEN oder **NACH-UNTEN**, um zwischen den Steuerelementen zu wechseln.  
-  
-4.  Drücken Sie EINGABE, nachdem das Steuerelement ausgewählt wurde.  
-  
- Das Steuerelement wird dem Formular oder dem Designer hinzugefügt.  
-  
-## <a name="dialog-box-options"></a>Dialogfeld „Optionen“  
- Sie können zwischen den Optionen in einem Dialogfeld wechseln und die Optionseinstellungen mit der Tastatur ändern.  
-  
-#### <a name="to-set-dialog-box-options-from-the-keyboard"></a>So legen Sie das Dialogfeld „Optionen“ mit der Tastatur fest  
-  
-1.  Verwenden Sie **TAB** oder **UMSCHALT + TAB**, um nach oben und unten zwischen den Steuerelementen im Dialogfeld zu wechseln.  
-  
-2.  So ändern Sie die Einstellungen der Optionen  
-  
-    -   Verwenden Sie für Optionsfelder **NACH-OBEN** und **NACH-UNTEN**, um die Auswahl zu ändern.  
-  
-    -   Verwenden Sie für Kontrollkästchen die **LEERTASTE**, um diese zu aktivieren oder zu deaktivieren.  
-  
-    -   Verwenden Sie für Dropdownlisten **ALT** + **NACH-UNTEN**, um Elemente anzuzeigen, und verwenden Sie dann **NACH-OBEN** und **NACH-UNTEN**, um das ausgewählte Element zu ändern.  
-  
-    -   Drücken Sie für Schaltflächen **EINGABE**, um diese aufzurufen.  
-  
-    -   Verwenden Sie für Raster die PFEILTASTEN zum Navigieren. Verwenden Sie für Dropdownliste in Rastern **UMSCHALT** + **ALT** + **NACH-UNTEN**, um Elemente anzuzeigen, und verwenden Sie dann **NACH-OBEN** und **NACH-UNTEN**, um das ausgewählte Element zu ändern.  
-  
-## <a name="window-and-file-navigation"></a>Navigation von Fenstern und Dateien  
- Die IDE bietet mehrere Möglichkeiten, mit denen Sie mit der Tastatur zwischen Fenstern von Tools und Dokumenten wechseln können. Darüber hinaus können Sie Fenster mit der Tastatur zu verschiedenen Stellen verschieben und dort andocken.  
-  
-#### <a name="to-navigate-among-windows-and-files-in-the-ide-from-the-keyboard"></a>So navigieren Sie mit der Tastatur zwischen Fenstern und Dateien in der IDE  
-  
--   Um zwischen Dateien in einem Editor oder Designer zu wechseln, drücken Sie STRG + TAB, um den IDE-Navigator mit **Aktive Dateien** anzuzeigen. Drücken Sie EINGABE, um zur markierten Datei zu navigieren.  
-  
--   Um zwischen angedockten Toolfenstern zu wechseln, drücken Sie ALT + F7, um den IDE-Navigator mit **Aktive Toolfenster** anzuzeigen. Drücken Sie EINGABE, um zum markierten Fenster zu navigieren.  
-  
-#### <a name="to-move-and-dock-tool-windows-from-the-keyboard"></a>So verschieben und docken Sie Toolfenster mit der Tastatur an  
-  
-1.  Navigieren Sie zum Toolfenster, dass Sie verschieben möchten, und setzen Sie dort den Fokus.  
-  
-2.  Klicken Sie im Menü **Fenster** auf **Andockbar**.  
-  
-3.  Drücken Sie **ALT** + **LEERTASTE**, und klicken Sie dann auf **Verschieben**.  
-  
-     Die Führungsraute fürs Andocken wird angezeigt.  
-  
-4.  Verwenden Sie die **PFEILTASTEN**, um das Fenster an eine neue Stelle zu verschieben.  
-  
-     Der Mauszeiger bewegt sich mit dem Fenster, während Sie die **PFEILTASTEN** verwenden.  
-  
-5.  Wenn Sie die neue Stelle erreicht haben, verwenden Sie die **PFEILTASTEN**, um den Mauszeiger zur korrekten Stelle der Führungsraute zu bewegen.  
-  
-     Der Umriss des Toolfensters wird an der neuen Dockstelle angezeigt.  
-  
-6.  Drücken Sie die **EINGABETASTE**.  
-  
-     Das Toolfenster springt zur neuen angedockten Stelle.  
-  
-## <a name="see-also"></a>Siehe auch  
- [Identifizieren und Anpassen von Tastenkombinationen](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)   
- [Tipps und Tricks zu Barrierefreiheit](../../ide/reference/accessibility-tips-and-tricks.md)   
- [Standardtastenkombinationen](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md).  
+
+## <a name="toolbox-controls"></a>Toolbox Controls  
+ You can add a control on the Toolbox to a form or designer using the keyboard.  
+
+#### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>To add controls from the Toolbox to a designer from the keyboard  
+
+1.  On the menu bar, choose **View**, **Toolbox**.  
+
+2.  Choose the Ctrl + Up Arrow or Ctrl + Down Arrow keys to move among the sections in the current Toolbox tab.  
+
+3.  Choose the Up Arrow or **Down Arrow** keys to move among the controls.  
+
+4.  After the control is selected, choose the Enter key.  
+
+ The control is added to the form or designer.  
+
+## <a name="dialog-box-options"></a>Dialog Box Options  
+ You can move among the options in a dialog and change option settings using the keyboard.  
+
+#### <a name="to-set-dialog-box-options-from-the-keyboard"></a>To set dialog box options from the keyboard  
+
+1.  Use **TAB** or **SHIFT + TAB** to move up and down through the controls in the dialog box.  
+
+2.  To change option settings:  
+
+    -   For radio buttons, use **UP ARROW** and **DOWN ARROW** to change the selection.  
+
+    -   For check boxes, use **SPACEBAR** to select or unselect.  
+
+    -   For drop-down lists, use **ALT** + **DOWNARROW** to display items and then use **UPARROW** and **DOWNARROW** to change the selected item.  
+
+    -   For buttons, press **ENTER** to invoke.  
+
+    -   For grids, use the Arrow keys to navigate. For drop-down lists in grids, use **SHIFT** + **ALT** + **DOWNARROW** to display items and then use **UPARROW** and **DOWNARROW** to change the selected item.  
+
+## <a name="window-and-file-navigation"></a>Window and File Navigation  
+ The IDE provides several ways for you to move among open tool and document windows using the keyboard. You can also move and dock tool windows in different locations using the keyboard.  
+
+#### <a name="to-navigate-among-windows-and-files-in-the-ide-from-the-keyboard"></a>To navigate among windows and files in the IDE from the keyboard  
+
+-   To move among files in an editor or designer, choose CTRL + TAB keys to display the IDE Navigator with **Active Files** selected. Choose the Enter key to navigate to the highlighted file.  
+
+-   To move among docked tool windows, choose Alt + F7 to display the IDE Navigator with **Active Tool Windows** selected. Choose the Enter keyto navigate to the highlighted window.  
+
+#### <a name="to-move-and-dock-tool-windows-from-the-keyboard"></a>To move and dock tool windows from the keyboard  
+
+1.  Navigate to the tool window you intend to move and give it focus.  
+
+2.  On the **Window** menu, click **Dockable**.  
+
+3.  Press **ALT** + **Space** and then choose **Move**.  
+
+     The docking guide diamond appears.  
+
+4.  Use the **ARROW** keys to move the window to a new location.  
+
+     The mouse pointer moves with the window as you use the **ARROW** keys.  
+
+5.  When you have reached the new location, use the **ARROW** keys to move the mouse pointer over the correct portion of the guide diamond.  
+
+     An outline of the tool window appears in the new docking location.  
+
+6.  Press **ENTER**.  
+
+     The tool window snaps into place at the new docking location.  
+
+## <a name="see-also"></a>See Also  
+ [Identifying and Customizing Keyboard Shortcuts](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)   
+ [Accessibility Tips and Tricks](../../ide/reference/accessibility-tips-and-tricks.md)   
+ [Default Keyboard Shortcuts](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
+

@@ -1,65 +1,81 @@
 ---
-title: "Schritt 7: Beibehalten der Sichtbarkeit von Paaren | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'Step 7: Keep Pairs Visible | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 42e1d08c-7b2e-4efd-9f47-85d6206afe35
 caps.latest.revision: 21
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 21
----
-# Schritt 7: Beibehalten der Sichtbarkeit von Paaren
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 15990f447ba3e368b19d93317eadbde7b126326a
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
 
-Das Spiel funktioniert gut, solange der Spieler jeweils zwei Symbole auswählt, die nicht übereinstimmen.  Was soll aber passieren, wenn der Spieler ein übereinstimmendes Symbolpaar wählt?  Anstatt durch das Aktivieren des Zeitgebers \(mit der `Start()`\-Methode\) das Ausblenden der Symbole zu veranlassen, sollte sich das Spiel selbst zurücksetzen, damit die Verweisvariablen `firstClicked` und `secondClicked` nicht mehr auf Bezeichnungsfelder verweisen. Die Farben für die beiden gewählten Bezeichnungsfelder sollen jedoch nicht zurückgesetzt werden.  
+---
+# <a name="step-7-keep-pairs-visible"></a>Step 7: Keep Pairs Visible
+The game works well, as long as the player only chooses pairs of icons that don't match. But consider what should happen when the player chooses a matching pair. Instead of making the icons disappear by turning on the timer (using the `Start()` method), the game should reset itself so that it's no longer keeping track of any labels using the `firstClicked` and `secondClicked` reference variables, without resetting the colors for the two labels that were chosen.  
   
-### So behalten Sie die Sichtbarkeit von Paaren bei  
+### <a name="to-keep-pairs-visible"></a>To keep pairs visible  
   
-1.  Fügen Sie der `label_Click()`\-Ereignishandlermethode die folgende `if`\-Anweisung hinzu, und zwar im unteren Teil des Codes oberhalb der Anweisung, mit der Sie den Zeitgeber starten.  Sehen Sie sich den Code genau an, während Sie diesen dem Programm hinzufügen.  Machen Sie sich klar, wie der Code funktioniert.  
+1.  Add the following `if` statement to the `label_Click()` event handler method, near the end of the code just above the statement where you start the timer. Take a close look at the code while adding it to the program. Consider how the code works.  
   
-     [!code-cs[VbExpressTutorial4Step7#9](../ide/codesnippet/CSharp/step-7-keep-pairs-visible_1.cs)]
-     [!code-vb[VbExpressTutorial4Step7#9](../ide/codesnippet/VisualBasic/step-7-keep-pairs-visible_1.vb)]  
+     [!code-csharp[VbExpressTutorial4Step7#9](../ide/codesnippet/CSharp/step-7-keep-pairs-visible_1.cs)]  [!code-vb[VbExpressTutorial4Step7#9](../ide/codesnippet/VisualBasic/step-7-keep-pairs-visible_1.vb)]  
   
-     Die erste Zeile der gerade hinzugefügten `if`\-Anweisung überprüft, ob das Symbol im ersten Bezeichnungsfeld, das der Spieler auswählt, dem Symbol im zweiten Bezeichnungsfeld entspricht.  Wenn die Symbole übereinstimmen, führt das Programm in die drei Anweisungen zwischen den geschweiften Klammern \(in C\#\) bzw. die drei Anweisungen innerhalb der `if`\-Anweisung \(in Visual Basic \) aus.  Die ersten beiden Anweisungen setzen die Verweisvariablen `firstClicked` und `secondClicked` zurück, damit diese nicht mehr auf Bezeichnungsfelder verweisen. \(Es kann sein, dass Sie diese beiden Anweisungen aus dem Tick\-Ereignishandler des Zeitgebers wiedererkennen.\) Die dritte Anweisung ist eine `return`\-Anweisung, die das Programm anweist, die restlichen Anweisungen in der Methode zu überspringen, statt sie auszuführen.  
+     The first line of the `if` statement you just added checks whether the icon in the first label that the player chooses is the same as the icon in the second label. If the icons are identical, the program executes the three statements between the curly braces in C# or the three statements within the `if` statement in Visual Basic. The first two statements reset the `firstClicked` and `secondClicked` reference variables so that they no longer keep track of any of the labels. (You may recognize those two statements from the timer's Tick event handler.) The third statement is a `return` statement, which tells the program to skip the rest of the statements in the method without executing them.  
   
-     Beim Programmieren in Visual C\# ist Ihnen möglicherweise aufgefallen, dass in einigen Teilen des Codes ein einzelnes Gleichheitszeichen \(`=`\) verwendet wird, während in anderen Anweisungen zwei Gleichheitszeichen \(`==`\) verwendet werden.  Überlegen Sie, warum an einigen Stellen `=` und an anderen Stellen `==` verwendet wird.  
+     If programming in Visual C#, you may have noticed that some of the code uses a single equal sign (`=`), while other statements use two equal signs (`==`). Consider why `=` is used in some places but `==` is used in other places.  
   
-     Dies ist ein gutes Beispiel, das den Unterschied verdeutlicht.  Sehen Sie sich den Code zwischen den Klammern in der `if`\-Anweisung genau an.  
+     This is a good example that shows the difference. Take a careful look at the code between the parentheses in the `if` statement.  
   
-    ```vb#  
+    ```vb  
     firstClicked.Text = secondClicked.Text  
     ```  
   
-    ```c#  
+    ```csharp  
     firstClicked.Text == secondClicked.Text  
     ```  
   
-     Achten Sie dann besonders auf die erste Anweisung im Codeblock nach der `if`\-Anweisung.  
+     Then look closely at the first statement in the block of code after the `if` statement.  
   
-    ```vb#  
+    ```vb  
     firstClicked = Nothing  
     ```  
   
-    ```c#  
+    ```csharp  
     firstClicked = null;  
     ```  
   
-     Die erste dieser beiden Anweisungen überprüft, ob zwei Symbole miteinander übereinstimmen.  Da zwei Werte verglichen werden, verwendet das Visual C\#\-Programm den Gleichheitsoperator `==`.  Die zweite Anweisung nimmt dann die eigentliche Änderung des Werts \(als *Zuweisung* bezeichnet\) vor, indem sie die `firstClicked`\-Verweisvariable auf `null` festlegt, um diese zurückzusetzen.  Aus diesem Grund verwendet sie stattdessen den Zuweisungsoperator `=`.  Visual C\# verwendet `=` zum Festlegen von Werten und `==` zum Vergleichen dieser Werte.  Visual Basic verwendet `=` sowohl für die Zuweisung von Variablen als auch für den Vergleich.  
+     The first of those two statements checks whether two icons are the same. Because two values are being compared, the Visual C# program uses the `==` equality operator. The second statement actually changes the value (called *assignment*), setting the `firstClicked` reference variable equal to `null` to reset it. That's why it uses the `=` assignment operator instead. Visual C# uses `=` to set values, and `==` to compare them. Visual Basic uses `=` for both variable assignment and comparison.  
   
-2.  Speichern und starten Sie das Programm, und beginnen Sie dann mit dem Auswählen von Symbolen im Formular.  Wenn Sie ein Paar auswählen, das nicht übereinstimmt, wird das Tick\-Ereignis des Zeitgebers ausgelöst, und beide Symbole werden ausgeblendet.  Wenn Sie ein übereinstimmendes Paar wählen, wird die neue `if`\-Anweisung ausgeführt, und die return\-Anweisung bewirkt, dass die Methode den Code überspringt, der den Zeitgeber startet, sodass die Symbole sichtbar bleiben. Dies ist in der folgenden Abbildung dargestellt.  
+2.  Save and run the program, and then start choosing icons on the form. If you choose a pair that doesn't match, the timer's Tick event triggers, and both icons disappear. If you choose a matching pair, the new `if` statement executes, and the return statement causes the method to skip the code that starts the timer, so the icons stay visible, as shown in the following picture.  
   
-     ![Spiel, das Sie in diesem Lernprogramm erstellen](../ide/media/express_finishedgame.png "Express\_FinishedGame")  
-Vergleichsspiel mit sichtbaren Symbolpaaren  
+     ![Game that you create in this tutorial](../ide/media/express_finishedgame.png "Express_FinishedGame")  
+Matching game with visible icon pairs  
   
-### So fahren Sie fort oder überprüfen die Angaben  
+### <a name="to-continue-or-review"></a>To continue or review  
   
--   Um zum nächsten Schritt des Lernprogramms zu wechseln, klicken Sie auf [Schritt 8: Hinzufügen einer Methode zum Überprüfen, ob der Spieler gewonnen hat](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).  
+-   To go to the next tutorial step, see [Step 8: Add a Method to Verify Whether the Player Won](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).  
   
--   Um zum vorherigen Schritt des Lernprogramms zurückzukehren, klicken Sie auf [Schritt 6: Hinzufügen eines Zeitgebers](../ide/step-6-add-a-timer.md).
+-   To return to the previous tutorial step, see [Step 6: Add a Timer](../ide/step-6-add-a-timer.md).

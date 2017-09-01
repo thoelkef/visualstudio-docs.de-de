@@ -1,61 +1,78 @@
 ---
-title: "IDebugProgramEngines2::EnumPossibleEngines | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgramEngines2::EnumPossibleEngines"
-helpviewer_keywords: 
-  - "IDebugProgramEngines2::EnumPossibleEngines"
+title: IDebugProgramEngines2::EnumPossibleEngines | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProgramEngines2::EnumPossibleEngines
+helpviewer_keywords:
+- IDebugProgramEngines2::EnumPossibleEngines
 ms.assetid: 993d70a4-f6a5-4e47-a603-0b162b9fde00
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugProgramEngines2::EnumPossibleEngines
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 64431c8adeeb56c17546f4aa6c16f517734f8941
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
-Gibt die GUID für alle möglichen Debugmodule zurück \(DE\), die dieses Programm debuggen können.  
+---
+# <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
+Returns the GUIDs for all the possible debug engines (DE) that can debug this program.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT EnumPossibleEngines(   
-   DWORD  celtBuffer,  
-   GUID*  rgguidEngines,  
-   DWORD* pceltEngines  
+```cpp  
+HRESULT EnumPossibleEngines(   
+   DWORD  celtBuffer,  
+   GUID*  rgguidEngines,  
+   DWORD* pceltEngines  
 );  
 ```  
   
-```c#  
-int EnumPossibleEngines(   
-   uint      celtBuffer,  
-   GUID[]    rgguidEngines,  
-   ref DWORD pceltEngines  
+```csharp  
+int EnumPossibleEngines(   
+   uint      celtBuffer,  
+   GUID[]    rgguidEngines,  
+   ref DWORD pceltEngines  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `celtBuffer`  
- \[in\]  Die Anzahl der DE GUIDs, die zurückgegeben werden soll.  Des Weiteren wird die maximale Größe des `rgguidEngines` Arrays an.  
+ [in] The number of DE GUIDs to return. This also specifies the maximum size of the `rgguidEngines` array.  
   
  `rgguidEngines`  
- \[in, out\]  Ein Array von GUIDs DE gefüllt werden soll.  
+ [in, out] An array of DE GUIDs to be filled in.  
   
  `pceltEngines`  
- \[out\]  Gibt die tatsächliche Anzahl von GUIDs DE zurück, dessen Größe zurückgegeben werden.  
+ [out] Returns the actual number of DE GUIDs that are returned.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  Gibt `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` \[C\+\+\] oder \[C\#\] 0x8007007A zurück, wenn der Puffer nicht groß genug ist.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code. Returns [C++] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` or [C#] 0x8007007A if the buffer is not large enough.  
   
-## Hinweise  
- Für die bestimmen, wie viele Module dort diese Methode einmal mit dem `celtBuffer`\-Parameter sind, aufrufen, der auf 0 festgelegt werden, und dem `rgguidEngines`\-Parameter, der auf einen NULL\-Wert festgelegt ist.  Dies gibt `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` 0x8007007A \(für C\#\) zurück, und der `pceltEngines`\-Parameter gibt die erforderliche Größe des Puffers zurück.  
+## <a name="remarks"></a>Remarks  
+ In order to determine how many engines there are, call this method once with the `celtBuffer` parameter set to 0 and the `rgguidEngines` parameter set to a null value. This returns `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` (0x8007007A for C#), and the `pceltEngines` parameter returns the necessary size of the buffer.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)

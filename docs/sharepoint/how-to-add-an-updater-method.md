@@ -1,82 +1,86 @@
 ---
-title: "Gewusst wie: Hinzuf&#252;gen einer Updater-Methode"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "BDC [SharePoint-Entwicklung in Visual Studio], Updater"
-  - "BDC [SharePoint-Entwicklung in Visual Studio], Aktualisieren von Daten"
-  - "BDC [SharePoint-Entwicklung in Visual Studio], Aktualisieren von Entitätsinstanzen"
-  - "Business Data Connectivity-Dienst [SharePoint-Entwicklung in Visual Studio], Updater"
-  - "Business Data Connectivity-Dienst [SharePoint-Entwicklung in Visual Studio], Aktualisieren von Daten"
-  - "Business Data Connectivity-Dienst [SharePoint-Entwicklung in Visual Studio], Aktualisieren von Entitätsinstanzen"
+title: 'How to: Add an Updater Method | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- BDC [SharePoint development in Visual Studio], updating data
+- BDC [SharePoint development in Visual Studio], Updater
+- Business Data Connectivity service [SharePoint development in Visual Studio], updating data
+- Business Data Connectivity service [SharePoint development in Visual Studio], Updater
+- Business Data Connectivity service [SharePoint development in Visual Studio], updating entity instances
+- BDC [SharePoint development in Visual Studio], updating entity instances
 ms.assetid: c97e443c-58dc-4f8f-8cbd-0d52d8a6a06b
 caps.latest.revision: 33
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 32
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: b9acbcbf58ebd258e935bc1e7f026af011bf4006
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Gewusst wie: Hinzuf&#252;gen einer Updater-Methode
-  Sie können es Benutzern ermöglichen, Geschäftsdaten in einer externen SharePoint\-Liste zu aktualisieren, indem Sie eine *Updater*\-Methode erstellen.  Weitere Informationen finden Sie unter [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).  
+# <a name="how-to-add-an-updater-method"></a>How to: Add an Updater Method
+  You can enable users to update business data in a SharePoint external list by creating an *Updater* method. For more information, see [Designing a Business Data Connectivity Model](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
-### So erstellen Sie eine Updater\-Methode  
+### <a name="to-create-an-updater-method"></a>To create an Updater method  
   
-1.  Wählen Sie im BDC\-Designer eine Entität aus.  
+1.  On the BDC designer, choose an entity.  
   
-2.  Klicken Sie auf der Menüleiste **Weitere Fenster**, **BDC\-Methodendetails**, **Ansicht** aus.  
+2.  On the menu bar, choose **View**, **Other Windows**, **BDC Method Details**.  
   
-     Das Fenster BDC\-Methodendetails wird geöffnet.  Weitere Informationen über dieses Fenster finden Sie unter [Übersicht über Entwurfstools für BDC-Modelle](../sharepoint/bdc-model-design-tools-overview.md).  
+     The BDC Method Details window opens. For more information about this window, see [BDC Model Design Tools Overview](../sharepoint/bdc-model-design-tools-overview.md).  
   
-3.  In der Liste **Methode hinzufügen** wählen Sie **Updater\-Methode erstellen** aus.  
+3.  In the **Add a Method** list, choose **Create Updater Method**.  
   
-     Mit Visual Studio werden dem Modell die folgenden Elemente hinzugefügt.  Diese Elemente werden im Fenster BDC\-Methodendetails angezeigt.  
+     Visual Studio adds the following elements to the model. These elements appear in the BDC Method Details window.  
   
-    -   Eine Methode, die dem Namen **Aktualisieren**.  
+    -   A method that's named **Update**.  
   
-    -   Ein Eingabeparameter für die Methode.  
+    -   An input parameter for the method.  
   
-    -   Ein Typdeskriptor für den Parameter.  Standardmäßig verwendet Visual Studio den Entitätstypdeskriptor, den Sie für die Finder\-Methode definiert haben \(zum Beispiel: Kontakt\).  
+    -   A type descriptor for the parameter. By default, Visual Studio uses the entity type descriptor that you defined for the Finder method (for example: Contact).  
   
-    -   Eine Methodeninstanz für die Methode.  
+    -   A method instance for the method.  
   
-     Weitere Informationen finden Sie unter [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md).  
-  
-    > [!NOTE]  
-    >  Wenn der Bezeichner des Entitätstyps ein Feld in einer Datenbanktabelle darstellt, die nicht automatisch generiert wird, legen Sie die Eigenschaft **Pre\-Updater\-Feld** auf **True** fest.  
-  
-4.  In **Projektmappen\-Explorer** öffnen Sie das Kontextmenü der Dienstcodedatei, die für die Entität generiert wurde, und dann **Code anzeigen** aus.  
-  
-     Die Codedatei für den Entitätsdienst wird im Code\-Editor geöffnet.  Weitere Informationen zu dieser Datei, finden Sie unter [Erstellen eines Business Data Connectivity-Modells](../sharepoint/creating-a-business-data-connectivity-model.md).  
-  
-5.  Fügen Sie der Daten aktualisieren Update\-Methode hinzu.  Im folgenden Beispiel werden Informationen für einen Kontakt in der AdventureWorks\-Beispieldatenbank für SQL Server aktualisiert.  
+     For more information, see [Designing a Business Data Connectivity Model](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
     > [!NOTE]  
-    >  Ersetzen Sie den Wert des Felds `ServerName` durch den Namen Ihres Servers.  
+    >  If the identifier of the entity type represents a field in a database table that's not automatically generated, set the **Pre-Updater Field** property to **True**.  
   
-     [!code-csharp[SP_BDC#5](../snippets/csharp/VS_Snippets_OfficeSP/sp_bdc/CS/bdcmodel1/contactservice.cs#5)]
-     [!code-vb[SP_BDC#5](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_bdc/VB/bdcmodel1/contactservice.vb#5)]  
+4.  In **Solution Explorer**, open the shortcut menu of the service code file that was generated for the entity, and then choose **View Code**.  
   
-## Siehe auch  
- [Entwerfen eines Business Data Connectivity-Modells](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Gewusst wie: Hinzufügen einer Finder-Methode](../sharepoint/how-to-add-a-finder-method.md)   
- [Gewusst wie: Hinzufügen einer bestimmten Finder-Methode](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [Gewusst wie: Hinzufügen einer Creator-Methode](../sharepoint/how-to-add-a-creator-method.md)   
+     The entity service code file opens in the Code Editor. For more information about that file, see [Creating a Business Data Connectivity Model](../sharepoint/creating-a-business-data-connectivity-model.md).  
+  
+5.  Add code to the Update method to update data. The following example updates information for a contact in the AdventureWorks sample database for SQL Server.  
+  
+    > [!NOTE]  
+    >  Replace the value of the `ServerName` field with the name of your server.  
+  
+     [!code-csharp[SP_BDC#5](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#5)]  [!code-vb[SP_BDC#5](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#5)]  
+  
+## <a name="see-also"></a>See Also  
+ [Designing a Business Data Connectivity Model](../sharepoint/designing-a-business-data-connectivity-model.md)   
+ [How to: Add a Finder Method](../sharepoint/how-to-add-a-finder-method.md)   
+ [How to: Add a Specific Finder Method](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [How to: Add a Creator Method](../sharepoint/how-to-add-a-creator-method.md)   
  [How to: Add an Updater Method](../sharepoint/how-to-add-an-updater-method.md)   
- [Gewusst wie: Hinzufügen einer Deleter-Methode](../sharepoint/how-to-add-a-deleter-method.md)   
- [Übersicht über Entwurfstools für BDC-Modelle](../sharepoint/bdc-model-design-tools-overview.md)   
- [Gewusst wie: Hinzufügen eines Parameters zu einer Methode](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Gewusst wie: Definieren einer Methodeninstanz](../sharepoint/how-to-define-a-method-instance.md)  
+ [How to: Add a Deleter Method](../sharepoint/how-to-add-a-deleter-method.md)   
+ [BDC Model Design Tools Overview](../sharepoint/bdc-model-design-tools-overview.md)   
+ [How to: Add a Parameter to a Method](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [How to: Define a Method Instance](../sharepoint/how-to-define-a-method-instance.md)  
   
   

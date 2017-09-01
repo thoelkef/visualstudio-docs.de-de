@@ -1,89 +1,106 @@
 ---
-title: "Unterst&#252;tzte Code&#228;nderungen (C#) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Bearbeiten und Fortfahren [C#], Unterstützte Codeänderungen"
+title: Supported Code Changes (C#) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- Edit and Continue [C#], supported code changes
 ms.assetid: c7a48ea9-5a7f-4328-a9d7-f0e76fac399d
 caps.latest.revision: 27
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 27
----
-# Unterst&#252;tzte Code&#228;nderungen (C#)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 6c870acd2a1a2339e66ef8e960657a44036057aa
+ms.contentlocale: de-de
+ms.lasthandoff: 08/22/2017
 
-Die Funktion "Bearbeiten und Fortfahren" behandelt die meisten Arten von Codeänderungen in Methodentexten.  Die meisten Änderungen außerhalb von Methodentexten sowie einige Änderungen in Methodentexten können jedoch während des Debuggens nicht übernommen werden.  Wenn Sie diese nicht unterstützten Änderungen übernehmen möchten, müssen Sie das Debuggen beenden und mit einer neuen Version des Codes erneut starten.  
+---
+# <a name="supported-code-changes-c"></a>Supported Code Changes (C#)
+Edit and Continue handles most types of code changes within method bodies. Most changes outside method bodies, and a few changes within method bodies, cannot be applied during debugging, however. To apply those unsupported changes, you must stop debugging and restart with a fresh version of the code.  
   
- Folgende Änderungen am C\#\-Code können während einer Debugsitzung nicht übernommen werden:  
+ The following changes cannot be applied to C# code during a debugging session:  
   
--   Änderungen an der aktuellen Anweisung oder einer beliebigen anderen aktiven Anweisung.  
+-   Changes to the current statement or any other active statement.  
   
-     Aktive Anweisungen umfassen alle Anweisungen in Funktionen der Aufrufliste, die aufgerufen wurden, um zur aktuellen Anweisung zu gelangen.  
+     Active statements include any statements, in functions on the call stack, that were called to get to the current statement.  
   
-     Die aktuelle Anweisung wird im Quellcodefenster durch einen gelben Hintergrund gekennzeichnet.  Andere aktive Anweisungen werden durch einen schattierten Hintergrund gekennzeichnet und sind schreibgeschützt.  Diese Standardfarben können im Dialogfeld **Optionen** geändert werden.  
+     The current statement is marked by a yellow background in the source window. Other active statements are marked by a shaded background and are read-only. These default colors can be changed in the **Options** dialog box.  
   
--   Ändern der Signatur eines Typs.  
+-   Changing the signature of a type.  
   
--   Hinzufügen einer anonymen Methode, die eine bisher noch nicht erfasste Variable erfasst.  
+-   Adding an anonymous method that captures a variable that hasn't been captured before.  
   
--   Hinzufügen, Entfernen oder Ändern von Attributen.  
+-   Adding, removing, or changing attributes.  
   
--   Hinzufügen, Entfernen oder Ändern von `using`\-Direktiven.  
+-   Adding, removing, or changing `using` directives.  
   
--   Hinzufügen von `foreach`, `using` oder `lock` zu der aktiven Anweisung.  
+-   Adding a `foreach`, `using`, or `lock` around the active statement.  
   
-## Unsicherer Code  
- Bei Änderungen an unsicherem Code gibt es dieselben Einschränkungen wie bei Änderungen an sicherem Code, es gibt jedoch eine zusätzliche Einschränkung: „Bearbeiten und Fortfahren“ unterstützt keine Änderungen an unsicherem Code, der in einer Methode vorhanden ist, die den Operator `stackalloc` enthält.  
+## <a name="unsafe-code"></a>Unsafe Code  
+ Changes to unsafe code have the same limitations as changes to safe code, with one additional restriction: Edit and Continue does not support changes to unsafe code that exits within a method that contains the `stackalloc` operator.  
   
-## Ausnahmen  
- „Bearbeiten und Fortfahren“ unterstützt Änderungen an `catch`\- und `finally`\-Blöcken, und zwar mit der Ausnahme, dass das Hinzufügen eines `catch`\- oder `finally`\-Blocks um die aktive Anweisung herum nicht zulässig ist.  
+## <a name="exceptions"></a>Exceptions  
+ Edit and Continue supports changes to `catch` and `finally` blocks, except that adding a `catch` or `finally` block around the active statement is not allowed.  
   
-## Nicht unterstützte Szenarien  
- Bearbeiten und Fortfahren steht in den folgenden Debugszenarios nicht zur Verfügung:  
+## <a name="unsupported-scenarios"></a>Unsupported Scenarios  
+ Edit and Continue is not available in the following debugging scenarios:  
   
--   Debuggen von LINQ\-Code unter bestimmten Umständen.  Weitere Informationen finden Sie unter [Debuggen von LINQ](../debugger/debugging-linq.md).  
+-   Debugging LINQ code in certain circumstances. For more information, see [Debugging LINQ](../debugger/debugging-linq.md).  
   
-    -   Erfassen einer zuvor noch nicht erfassten Variablen.  
+    -   Capturing a variable that hasn't been captured before.  
   
-    -   Ändern des Typs des Abfrageausdrucks \(beispielsweise Auswahl eines \=\>\-Ausdrucks, Auswahl eines neuen Ausdrucks { A \= a };\)  
+    -   Changing the type of query expression. (e.g., select a => select new { A = a };)  
   
-    -   Entfernen einer `where`\-Klausel, die eine aktive Anweisung enthält.  
+    -   Removing a `where` that contains an active statement.  
   
-    -   Entfernen einer `let`\-Klausel, die eine aktive Anweisung enthält.  
+    -   Removing a `let` that contains an active statement.  
   
-    -   Entfernen einer `join`\-Klausel, die eine aktive Anweisung enthält.  
+    -   Removing a `join` that contains an active statement.  
   
-    -   Entfernen einer `orderby`\-Klausel, die eine aktive Anweisung enthält.  
+    -   Removing an `orderby` that contains an active statement.  
   
--   Debuggen im gemischten Modus \(systemeigen\/verwaltet\).  
+-   Mixed-mode (native/managed) debugging.  
   
--   SQL\-Debuggen.  
+-   SQL debugging.  
   
--   Debuggen eines  Dr.Watson\-Dumps.  
+-   Debugging a Dr. Watson dump.  
   
--   Bearbeiten von Code nach einem Ausnahmefehler, wenn die Option **Aufrufliste für Ausnahmefehler entladen** nicht aktiviert ist.  
+-   Editing code after an unhandled exception, when the "**Unwind the call stack on unhandled exceptions**" option is not selected.  
   
--   Debuggen einer eingebetteten Laufzeitanwendung.  
+-   Debugging an embedded runtime application.  
   
--   Debuggen einer Anwendung mit **Anfügen an**, anstatt die Anwendung im Menü **Debuggen** durch Auswählen von **Start** auszuführen.  
+-   Debugging an application that has **Attach to** instead of running the application by choosing **Start** from the **Debug** menu.  
   
--   Debuggen von optimiertem Code.  
+-   Debugging optimized code.  
   
--   Debuggen einer alten Version des Codes, wenn eine neue Version aufgrund von Buildfehlern nicht erstellt werden konnte.  
+-   Debugging an old version of your code after a new version failed to build because of build errors.  
   
-## Siehe auch  
- [Bearbeiten und Fortfahren \(Visual C\#\)](../debugger/edit-and-continue-visual-csharp.md)   
- [Gewusst wie: Verwenden von "Bearbeiten und Fortfahren" \(C\#\)](../debugger/how-to-use-edit-and-continue-csharp.md)
+## <a name="see-also"></a>See Also  
+ [Edit and Continue (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
+ [How to: Use Edit and Continue (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

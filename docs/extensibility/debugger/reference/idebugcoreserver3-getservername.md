@@ -1,55 +1,72 @@
 ---
-title: "IDebugCoreServer3::GetServerName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCoreServer3::GetServerName"
-helpviewer_keywords: 
-  - "IDebugCoreServer3::GetServerName"
+title: IDebugCoreServer3::GetServerName | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugCoreServer3::GetServerName
+helpviewer_keywords:
+- IDebugCoreServer3::GetServerName
 ms.assetid: 0fc3fcf5-d6a3-4a00-bf14-458b8645714e
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# IDebugCoreServer3::GetServerName
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a2148c21a81a3d59d193bee47bedc97505969228
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
-Ruft den Namen des Servers ab.  
+---
+# <a name="idebugcoreserver3getservername"></a>IDebugCoreServer3::GetServerName
+Retrieves the name of the server.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetServerName(  
-   BSTR* pbstrName  
+```cpp  
+HRESULT GetServerName(  
+   BSTR* pbstrName  
 );  
 ```  
   
-```c#  
-int GetServerName(  
-   out string pbstrName  
+```csharp  
+int GetServerName(  
+   out string pbstrName  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `pbstrName`  
- \[out\]  Gibt den Namen des Servers zurück.  
+ [out] Returns the name of the server.  
   
 > [!NOTE]
->  Der Aufrufer ist für das Freigeben der Zeichenfolge verantwortlich.  
+>  The caller is responsible for freeing the string.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. Gibt andernfalls Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns error code.  
   
-## Hinweise  
- Für einen benutzerfreundlichen Servernamen rufen Sie die [GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md)\-Methode auf.  
+## <a name="remarks"></a>Remarks  
+ For a friendly server name, call the [GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md) method.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)   
  [GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md)

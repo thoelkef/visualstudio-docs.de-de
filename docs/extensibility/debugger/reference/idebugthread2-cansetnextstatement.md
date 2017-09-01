@@ -1,59 +1,76 @@
 ---
-title: "IDebugThread2::CanSetNextStatement | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugThread2::CanSetNextStatement"
-helpviewer_keywords: 
-  - "IDebugThread2::CanSetNextStatement"
+title: IDebugThread2::CanSetNextStatement | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugThread2::CanSetNextStatement
+helpviewer_keywords:
+- IDebugThread2::CanSetNextStatement
 ms.assetid: 7014af80-ff4f-4790-a34b-0528918d1fa3
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugThread2::CanSetNextStatement
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 93641816a2186d2ac3560a1475082a65a788a812
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Bestimmt, ob der aktuelle Anweisungszeiger auf die angegebene Stapelrahmen festgelegt werden kann.  
+---
+# <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
+Determines whether the current instruction pointer can be set to the given stack frame.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT CanSetNextStatement (   
-   IDebugStackFrame2*  pStackFrame,  
-   IDebugCodeContext2* pCodeContext  
+HRESULT CanSetNextStatement (   
+   IDebugStackFrame2*  pStackFrame,  
+   IDebugCodeContext2* pCodeContext  
 );  
 ```  
   
-```c#  
-int CanSetNextStatement (   
-   IDebugStackFrame2  pStackFrame,  
-   IDebugCodeContext2 pCodeContext  
+```cs  
+int CanSetNextStatement (   
+   IDebugStackFrame2  pStackFrame,  
+   IDebugCodeContext2 pCodeContext  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `pStackFrame`  
- Für zukünftige Verwendung reserviert. Auf einem NULL\-Wert.  Wenn dies ein NULL\-Wert ist, verwenden Sie den aktuellen Stapelrahmen.  
+ Reserved for future use; set to a null value. If this is a null value, use the current stack frame.  
   
  `pCodeContext`  
- \[in\]  Ein [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)\-Objekt, das den auszuführenden Code ungefähr beschreibt Speicherort und der Kontext.  
+ [in] An [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) object that describes the code location about to be executed and its context.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Hinweise  
- Wenn diese Methode `S_OK`zurückgibt, rufen Sie die [Nächste Anweisung festlegen](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)\-Methode auf, um die nächste Anweisung tatsächlich festzulegen.  
+## <a name="remarks"></a>Remarks  
+ If this method returns `S_OK`, then call the [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md) method to actually set the next statement.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
- [Nächste Anweisung festlegen](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)
+ [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)

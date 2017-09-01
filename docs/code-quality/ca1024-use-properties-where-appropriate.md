@@ -1,72 +1,89 @@
 ---
-title: "CA1024: Nach M&#246;glichkeit Eigenschaften verwenden | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "UsePropertiesWhereAppropriate"
-  - "CA1024"
-helpviewer_keywords: 
-  - "CA1024"
-  - "UsePropertiesWhereAppropriate"
+title: 'CA1024: Use properties where appropriate | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- UsePropertiesWhereAppropriate
+- CA1024
+helpviewer_keywords:
+- CA1024
+- UsePropertiesWhereAppropriate
 ms.assetid: 3a04f765-af7c-4872-87ad-9cc29e8e657f
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 21
----
-# CA1024: Nach M&#246;glichkeit Eigenschaften verwenden
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 1a7ce15f3b5fbdb759733250467a928715f6fedf
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Use properties where appropriate
 |||  
 |-|-|  
 |TypeName|UsePropertiesWhereAppropriate|  
 |CheckId|CA1024|  
-|Kategorie \(Category\)|Microsoft.Design|  
-|Unterbrechende Änderung|Breaking|  
+|Category|Microsoft.Design|  
+|Breaking Change|Breaking|  
   
-## Ursache  
- Eine öffentliche oder geschützte Methode hat einen Namen, der mit `Get` beginnt, sie nimmt keine Parameter an und gibt einen Wert zurück, bei dem es sich nicht um ein Array handelt.  
+## <a name="cause"></a>Cause  
+ A public or protected method has a name that starts with `Get`, takes no parameters, and returns a value that is not an array.  
   
-## Regelbeschreibung  
- In den meisten Fällen stellen Eigenschaften Daten dar, während Methoden überwiegend Aktionen ausführen.  Da der Zugriff auf Eigenschaften wie der Zugriff auf Felder erfolgt, vereinfacht sich ihre Verwendung.  Eine Methode eignet sich gut als Eigenschaft, wenn eine dieser Bedingungen zutrifft:  
+## <a name="rule-description"></a>Rule Description  
+ In most cases, properties represent data and methods perform actions. Properties are accessed like fields, which makes them easier to use. A method is a good candidate to become a property if one of these conditions is present:  
   
--   Akzeptiert keine Argumente und gibt die Zustandsinformationen eines Objekts zurück.  
+-   Takes no arguments and returns the state information of an object.  
   
--   Akzeptiert ein einzelnes Argument, um den Zustand eines Objekts teilweise festzulegen.  
+-   Accepts a single argument to set some part of the state of an object.  
   
- Eigenschaften sollten sich wie Felder verhalten. Wenn die Methode sich nicht so verhalten kann, sollte sie nicht in eine Eigenschaft geändert werden.  Methoden sind in den folgenden Situationen besser geeignet als Eigenschaften:  
+ Properties should behave as if they are fields; if the method cannot, it should not be changed to a property. Methods are better than properties in the following situations:  
   
--   Die Methode führt einen zeitaufwändigen Vorgang aus.  Die Methode ist deutlich langsamer als die Zeit, die benötigt wird, um ein Feld festzulegen oder abzurufen.  
+-   The method performs a time-consuming operation. The method is perceivably slower than the time that is required to set or get the value of a field.  
   
--   Die Methode führt eine Konvertierung aus.  Beim Zugriff auf ein Feld wird keine konvertierte Version der Daten zurückgegeben, die im Feld gespeichert sind.  
+-   The method performs a conversion. Accessing a field does not return a converted version of the data that it stores.  
   
--   Die Get\-Methode zeigt eine wahrnehmbare Nebenwirkung.  Das Abrufen des Werts eines Felds erzeugt keine Nebenwirkungen.  
+-   The Get method has an observable side effect. Retrieving the value of a field does not produce any side effects.  
   
--   Die Reihenfolge der Ausführung ist wichtig.  Das Festlegen des Werts eines Felds setzt nicht das Stattfinden anderer Vorgänge voraus.  
+-   The order of execution is important. Setting the value of a field does not rely on the occurrence of other operations.  
   
--   Das Aufrufen der Methode zweimal hintereinander führt zu unterschiedlichen Ergebnissen.  
+-   Calling the method two times in succession creates different results.  
   
--   Die Methode ist statisch, gibt jedoch ein Objekt zurück, das vom Aufrufer geändert werden kann.  Beim Abrufen eines Feldwerts kann der Aufrufer die vom Feld gespeicherten Daten nicht ändern.  
+-   The method is static but returns an object that can be changed by the caller. Retrieving the value of a field does not allow the caller to change the data that is stored by the field.  
   
--   Die Methode gibt ein Array zurück.  
+-   The method returns an array.  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie die Methode in eine Eigenschaft.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, change the method to a property.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Unterdrücken Sie eine Warnung dieser Regel, wenn die Methode mindestens eines der zuvor aufgeführten Kriterien erfüllt.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Suppress a warning from this rule if the method meets at least one of the previously listed criteria.  
   
-## Steuern der Erweiterung von Eigenschaften im Debugger  
- Ein Grund, warum Programmierer die Verwendung einer Eigenschaft vermeiden, liegt darin, dass diese vom Debugger nicht automatisch erweitert werden soll.  Die Eigenschaft kann z. B. die Reservierung eines umfangreichen Objekts oder den Aufruf von P\/Invoke beinhalten, ohne dass sie erkennbare Nebeneffekte hat.  
+## <a name="controlling-property-expansion-in-the-debugger"></a>Controlling Property Expansion in the Debugger  
+ One reason programmers avoid using a property is because they do not want the debugger to auto-expand it. For example, the property might involve allocating a large object or calling a P/Invoke, but it might not actually have any observable side effects.  
   
- Sie können verhindern, dass der Debugger Eigenschaften automatisch erweitert, indem Sie <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName> anwenden.  Das folgende Beispiel zeigt, wie dieses Attribut auf eine Instanzeneigenschaft angewendet wird.  
+ You can prevent the debugger from auto-expanding properties by applying <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. The following example shows this attribute being applied to an instance property.  
   
 ```vb  
 Imports System   
@@ -74,48 +91,48 @@ Imports System.Diagnostics
   
 Namespace Microsoft.Samples   
   
-    Public Class TestClass   
+    Public Class TestClass   
   
-        ' [...]   
+        ' [...]   
   
-        <DebuggerBrowsable(DebuggerBrowsableState.Never)> _   
-        Public ReadOnly Property LargeObject() As LargeObject   
-            Get   
-                ' Allocate large object   
-                ' [...]   
-            End Get   
-        End Property   
+        <DebuggerBrowsable(DebuggerBrowsableState.Never)> _   
+        Public ReadOnly Property LargeObject() As LargeObject   
+            Get   
+                ' Allocate large object   
+                ' [...]   
+            End Get   
+        End Property   
   
-    End Class   
+    End Class   
   
 End Namespace  
 ```  
   
-```c#  
+```csharp  
   
-        using System;   
+      using System;   
 using System.Diagnostics;   
   
 namespace Microsoft.Samples   
 {   
-    public class TestClass   
-    {   
-        // [...]   
+    publicclass TestClass   
+    {   
+        // [...]   
   
-        [DebuggerBrowsable(DebuggerBrowsableState.Never)]   
-        public LargeObject LargeObject   
-        {   
-            get   
-            {   
-                // Allocate large object   
-                // [...]   
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]   
+        public LargeObject LargeObject   
+        {   
+            get   
+            {   
+                // Allocate large object   
+                // [...]   
   
-        }  
-    }  
+        }  
+    }  
 }  
 ```  
   
-## Beispiel  
- Das folgende Beispiel enthält mehrere Methoden, die in Eigenschaften konvertiert werden sollten, und mehrere Methoden, die nicht in Eigenschaften geändert werden sollten, da sie sich nicht wie Felder verhalten.  
+## <a name="example"></a>Example  
+ The following example contains several methods that should be converted to properties, and several that should not because they do not behave like fields.  
   
- [!code-cs[FxCop.Design.MethodsProperties#1](../code-quality/codesnippet/CSharp/ca1024-use-properties-where-appropriate_1.cs)]
+ [!code-csharp[FxCop.Design.MethodsProperties#1](../code-quality/codesnippet/CSharp/ca1024-use-properties-where-appropriate_1.cs)]

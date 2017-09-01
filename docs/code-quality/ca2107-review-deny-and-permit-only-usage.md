@@ -1,86 +1,103 @@
 ---
-title: "CA2107: Verwendung von Deny und PermitOnly &#252;berpr&#252;fen | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2107"
-  - "ReviewDenyAndPermitOnlyUsage"
-helpviewer_keywords: 
-  - "ReviewDenyAndPermitOnlyUsage"
-  - "CA2107"
+title: 'CA2107: Review deny and permit only usage | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2107
+- ReviewDenyAndPermitOnlyUsage
+helpviewer_keywords:
+- ReviewDenyAndPermitOnlyUsage
+- CA2107
 ms.assetid: 366f4a56-ae93-4882-81d0-bd0a55ebbc26
 caps.latest.revision: 19
-caps.handback.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA2107: Verwendung von Deny und PermitOnly &#252;berpr&#252;fen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 2f0b71223049a22e040beffc7cfb012faf858c22
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Review deny and permit only usage
 |||  
 |-|-|  
 |TypeName|ReviewDenyAndPermitOnlyUsage|  
 |CheckId|CA2107|  
-|Kategorie \(Category\)|Microsoft.Security|  
-|Unterbrechende Änderung|Breaking|  
+|Category|Microsoft.Security|  
+|Breaking Change|Breaking|  
   
-## Ursache  
- Eine Methode enthält eine Sicherheitsüberprüfung, welche die PermitOnly\-Sicherheitsaktion oder die Deny\-Sicherheitsaktion angibt.  
+## <a name="cause"></a>Cause  
+ A method contains a security check that specifies the PermitOnly or Deny security action.  
   
-## Regelbeschreibung  
- Die [Using the PermitOnly Method](http://msdn.microsoft.com/de-de/8c7bdb7f-882f-45b7-908c-6cbaa1767649)\-Sicherheitsaktion und die <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>\-Sicherheitsaktion sollten nur von Entwicklern mit sehr guten Kenntnissen der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]\-Sicherheit verwendet werden.  Code, in dem diese Sicherheitsaktionen verwendet werden, sollte einer Sicherheitsüberprüfung unterzogen werden.  
+## <a name="rule-description"></a>Rule Description  
+ The [Using the PermitOnly Method](http://msdn.microsoft.com/en-us/8c7bdb7f-882f-45b7-908c-6cbaa1767649) and <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> security actions should be used only by those who have an advanced knowledge of [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] security. Code that uses these security actions should undergo a security review.  
   
- Deny ändert das Standardverhalten des Stackwalks, der als Reaktion auf eine Sicherheitsanforderung auftritt.  Es ermöglicht Ihnen die Angabe von Berechtigungen, die unabhängig von den tatsächlichen Berechtigungen der Aufrufer in der Aufrufliste während der Dauer der Deny\-Methode nicht gewährt werden dürfen.  Wenn der Stackwalk eine durch Deny gesicherte Methode erkennt und die angeforderte Berechtigung in den verweigerten Berechtigungen enthalten ist, erzeugt der Stackwalk einen Fehler.  PermitOnly ändert ebenfalls das Standardverhalten des  Stackwalks.  Durch diese Methode ist es möglich, im Code nur die Berechtigungen anzugeben, die gewährt werden können, wobei die Berechtigungen der Aufrufer nicht berücksichtigt werden.  Wenn der Stackwalk eine durch PermitOnly gesicherte Methode erkennt und die angeforderte Berechtigung nicht in den Berechtigungen enthalten ist, die mit PermitOnly angegeben werden, erzeugt der Stackwalk einen Fehler.  
+ Deny alters the default behavior of the stack walk that occurs in response to a security demand. It lets you specify permissions that must not be granted for the duration of the denying method, regardless of the actual permissions of the callers in the call stack. If the stack walk detects a method that is secured by Deny, and if the demanded permission is included in the denied permissions, the stack walk fails. PermitOnly also alters the default behavior of the stack walk. It allows code to specify only those permissions that can be granted, regardless of the permissions of the callers. If the stack walk detects a method that is secured by PermitOnly, and if the demanded permission is not included in the permissions that are specified by the PermitOnly, the stack walk fails.  
   
- Code, der auf diesen Aktionen beruht, sollte wegen der begrenzten Einsatzmöglichkeiten und des komplizierten Verhaltens dieser Aktionen sorgfältig auf Sicherheitslücken überprüft werden.  Nehmen wir einmal die folgende Situation:  
+ Code that relies on these actions should be carefully evaluated for security vulnerabilities because of their limited usefulness and subtle behavior. Consider the following:  
   
--   [Link Demands](../Topic/Link%20Demands.md) werden durch Deny oder PermitOnly nicht beeinflusst.  
+-   [Link Demands](/dotnet/framework/misc/link-demands) are not affected by Deny or PermitOnly.  
   
--   Wenn Deny oder PermitOnly in dem gleichen Stapelrahmen auftreten wie die Anforderung, die den Stackwalk auslöst, sind die Sicherheitsaktionen wirkungslos.  
+-   If the Deny or PermitOnly occurs in the same stack frame as the demand that causes the stack walk, the security actions have no effect.  
   
--   Bei Werten, die zur Erstellung pfadbasierter Berechtigungen verwendet werden, gibt es in der Regel verschiedene Angabemöglichkeiten.  Durch die Verweigerung des Zugriffs auf eine Form des Pfads wird nicht der Zugriff auf alle Formen verweigert.  Wenn die Dateifreigabe \\\\Server\\Freigabe z. B. dem Netzlaufwerk X: zugeordnet ist, müssen Sie den Zugriff auf \\\\Server\\Freigabe\\Datei, X:\\Datei und alle übrigen Pfade verweigern, über die auf die Datei zugegriffen wird, um den Zugriff auf eine Datei der Freigabe zu verweigern.  
+-   Values that are used to construct path-based permissions can usually be specified in multiple ways. Denying access to one form of the path does not deny access to all forms. For example, if a file share \\\Server\Share is mapped to a network drive X:, to deny access to a file on the share, you must deny \\\Server\Share\File, X:\File and every other path that accesses the file.  
   
--   Ein <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> kann einen Stackwalk beenden, bevor Deny oder PermitOnly erreicht wird.  
+-   An <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> can terminate a stack walk before the Deny or PermitOnly is reached.  
   
--   Wenn Deny eine Wirkung hat, beispielsweise wenn ein Aufrufer eine durch Deny blockierte Berechtigung besitzt, kann der Aufrufer unter Umgehung von Deny direkt auf die geschützte Ressource zugreifen.  Wenn der Aufrufer die verweigerte Berechtigung nicht besitzt, würde der Stackwalk ohne Deny dementsprechend fehlschlagen.  
+-   If a Deny has any effect, namely, when a caller has a permission that is blocked by the Deny, the caller can access the protected resource directly, bypassing the Deny. Similarly, if the caller does not have the denied permission, the stack walk would fail without the Deny.  
   
-## Behandeln von Verstößen  
- Jede Verwendung dieser Sicherheitsaktionen verursacht einen Verstoß.  Um einen Verstoß zu beheben, verwenden Sie diese Sicherheitsaktionen nicht.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ Any use of these security actions will cause a violation. To fix a violation, do not use these security actions.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Unterdrücken Sie eine Warnung dieser Regel erst nach einer Sicherheitsüberprüfung.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Suppress a warning from this rule only after you complete a security review.  
   
-## Beispiel  
- Im folgenden Beispiel werden einige Einschränkungen von Deny veranschaulicht.  
+## <a name="example"></a>Example  
+ The following example demonstrates some limitations of Deny.  
   
- Die folgende Bibliothek enthält eine Klasse mit zwei Methoden, die bis auf die Sicherheitsanforderungen, die sie schützen, identisch sind.  
+ The following library contains a class that has two methods that are identical except for the security demands that protect them.  
   
- [!code-cs[FxCop.Security.PermitAndDeny#1](../code-quality/codesnippet/CSharp/ca2107-review-deny-and-permit-only-usage_1.cs)]  
+ [!code-csharp[FxCop.Security.PermitAndDeny#1](../code-quality/codesnippet/CSharp/ca2107-review-deny-and-permit-only-usage_1.cs)]  
   
-## Beispiel  
- Die folgende Anwendung veranschaulicht die Wirkungen von Deny auf die gesicherten Methoden der Bibliothek.  
+## <a name="example"></a>Example  
+ The following application demonstrates the effects of Deny on the secured methods from the library.  
   
- [!code-cs[FxCop.Security.TestPermitAndDeny#1](../code-quality/codesnippet/CSharp/ca2107-review-deny-and-permit-only-usage_2.cs)]  
+ [!code-csharp[FxCop.Security.TestPermitAndDeny#1](../code-quality/codesnippet/CSharp/ca2107-review-deny-and-permit-only-usage_2.cs)]  
   
- Folgende Ergebnisse werden zurückgegeben:  
+ This example produces the following output.  
   
-  **Demand: Deny von Aufrufern hat keine Auswirkungen auf Demand mit der Assertionsberechtigung.**  
-**LinkDemand: Deny von Aufrufern hat keine Auswirkungen auf LinkDemand mit der Assertionsberechtigung.**  
-**LinkDemand: Deny von Aufrufern hat keine Auswirkungen auf mit LinkDemand geschütztem Code.**  
-**LinkDemand: Dieser Deny hat keine Auswirkungen auf mit LinkDemand geschütztem Code.**   
-## Siehe auch  
+ **Demand: Caller's Deny has no effect on Demand with the asserted permission.**  
+**LinkDemand: Caller's Deny has no effect on LinkDemand with the asserted permission.**  
+**LinkDemand: Caller's Deny has no effect with LinkDemand-protected code.**  
+**LinkDemand: This Deny has no effect with LinkDemand-protected code.**   
+## <a name="see-also"></a>See Also  
  <xref:System.Security.CodeAccessPermission.PermitOnly%2A?displayProperty=fullName>   
  <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>   
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>   
  <xref:System.Security.IStackWalk.PermitOnly%2A?displayProperty=fullName>   
- [Secure Coding Guidelines](../Topic/Secure%20Coding%20Guidelines.md)   
- [Overriding Security Checks](http://msdn.microsoft.com/de-de/4acdeff5-fc05-41bf-8505-7387cdbfca28)   
- [Using the PermitOnly Method](http://msdn.microsoft.com/de-de/8c7bdb7f-882f-45b7-908c-6cbaa1767649)
+ [Secure Coding Guidelines](/dotnet/standard/security/secure-coding-guidelines)   
+ [Overriding Security Checks](http://msdn.microsoft.com/en-us/4acdeff5-fc05-41bf-8505-7387cdbfca28)   
+ [Using the PermitOnly Method](http://msdn.microsoft.com/en-us/8c7bdb7f-882f-45b7-908c-6cbaa1767649)

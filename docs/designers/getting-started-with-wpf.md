@@ -14,10 +14,10 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 1f384f593129c4a0e879762d6e2e7f5944171af6
+ms.sourcegitcommit: 0387b9a656f97d9354f95f121cad8422e93a69bc
+ms.openlocfilehash: b1d99a132c6e29239862e9bd7629eb47a679138f
 ms.contentlocale: de-de
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/18/2017
 
 ---
 # <a name="getting-started-with-wpf"></a>Erste Schritte mit WPF
@@ -31,10 +31,11 @@ Windows Presentation Foundation (WPF) ist ein Benutzeroberflächen-Framework, mi
 | Ich möchte XAML-Designtools vergleichen... |[Designing XAML in Visual Studio and Blend for Visual Studio (Entwerfen von XAML-Code in Visual Studio und Blend für Visual Studio)](../designers/designing-xaml-in-visual-studio.md)|  
 |Neu bei .NET?|[Übersicht über .NET Framework](https://msdn.microsoft.com/en-us/library/zw4w595w\(v=vs.140\).aspx)<br /><br /> [Grundlagen der Anwendung](/dotnet/standard/application-essentials)<br /><br /> [Erste Schritte mit Visual C# und Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)|  
 |Weitere Informationen über WPF...|[Einführung in WPF](../designers/introduction-to-wpf.md)<br /><br /> [Übersicht über XAML (WPF)](https://docs.microsoft.com/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br /> [Steuerelemente](https://docs.microsoft.com/dotnet/framework/wpf/controls/)<br /><br /> [Übersicht zur Datenbindung](https://docs.microsoft.com/dotnet/framework/wpf/data/data-binding-overview)<br /><br /> [WPF-Datenbindung mit LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml.md)|  
-|Sind Sie ein Windows Forms-Entwickler?|[Windows Forms Controls and Equivalent WPF Controls (Windows Forms-Steuerelemente und entsprechende WPF-Steuerelemente)](https://docs.microsoft.com/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls).aspx)<br /><br /> [Unterstützte Szenarien beim dialogfähigen Betrieb von WPF und Windows Forms](https://docs.microsoft.com/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)|  
+|Sind Sie ein Windows Forms-Entwickler?|[Windows Forms-Steuerelemente und entsprechende WPF-Steuerelemente](https://docs.microsoft.com/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)<br /><br /> [Unterstützte Szenarien beim dialogfähigen Betrieb von WPF und Windows Forms](https://docs.microsoft.com/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)|  
   
 ## <a name="see-also"></a>Siehe auch  
  [Klassenbibliothek (WPF)](https://docs.microsoft.com/dotnet/framework/wpf/class-library-wpf)   
  [Übersicht über die Anwendungsentwicklung](https://docs.microsoft.com/dotnet/framework/wpf/app-development/index)   
  [.NET Documentation home (.NET-Dokumentation: Startseite)](https://docs.microsoft.com/dotnet/index)   
  [Create Modern Desktop Applications with Windows Presentation Foundation (Erstellen von modernen Desktopanwendungen mit Windows Presentation Foundation)](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
+

@@ -1,51 +1,68 @@
 ---
-title: "IDebugClassField::EnumBaseClasses | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugClassField::EnumBaseClasses"
-helpviewer_keywords: 
-  - "IDebugClassField::EnumBaseClasses-Methode"
+title: IDebugClassField::EnumBaseClasses | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugClassField::EnumBaseClasses
+helpviewer_keywords:
+- IDebugClassField::EnumBaseClasses method
 ms.assetid: 78749674-ef75-46d3-a1f4-ff33afd90e32
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugClassField::EnumBaseClasses
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 21e2de0ff49be7b1ef25d2b9d5be81ef0aafc6dd
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
-Erstellt einen Enumerator für die Basisklasse dieser Klasse.  
+---
+# <a name="idebugclassfieldenumbaseclasses"></a>IDebugClassField::EnumBaseClasses
+Creates an enumerator for the base classes of this class.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT EnumBaseClasses(   
-   IEnumDebugFields** ppEnum  
+```cpp  
+HRESULT EnumBaseClasses(   
+   IEnumDebugFields** ppEnum  
 );  
 ```  
   
-```c#  
+```csharp  
 int EnumBaseClasses(  
-   out IEnumDebugFields ppEnum  
+   out IEnumDebugFields ppEnum  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `ppEnum`  
- \[out\]  Gibt ein [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)\-Objekt zurück, das die Liste der Basisklassen darstellt.  Gibt einen NULL\-Wert zurück, wenn keine Basisklassen vorhanden ist.  
+ [out] Returns an [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) object representing the list of base classes. Returns a null value if there are no base classes.  
   
-## Rückgabewert  
- Bei Erfolg gibt S\_OK zurückgibt, S\_SH\_NO\_BASE\_CLASSES zurück, wenn keine Basisklassen vorhanden ist \(und den `ppEnum`\-Parameter wird auf einen NULL\-Wert festgelegt\). andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK, returns S_SH_NO_BASE_CLASSES if there are no base classes (and the `ppEnum` parameter is set to a null value); otherwise, returns an error code.  
   
-## Hinweise  
- Die Basisklassen im Enumeratorobjekt werden in der Reihenfolge der unmittelbarsten \(oder die meisten abgeleitete\) Basisklasse in die Remotsten Basisklasse angegeben.  Beispielsweise die C\+\+\-Klassen:  
+## <a name="remarks"></a>Remarks  
+ The base classes in the enumerator object are specified in order of the most immediate (or most derived) base class to the most remote base class. For example, given the C++ classes:  
   
 ```  
 class Root { }  
@@ -54,8 +71,8 @@ class Level2 : Level1 { }
 class MyClass : Level2 { }  
 ```  
   
- Die Enumeration ist die Basisklasse in der Reihenfolge `Level2`, `Level1`, `Root`zurückgeben.  
+ The enumeration would return the base classes in the order `Level2`, `Level1`, `Root`.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

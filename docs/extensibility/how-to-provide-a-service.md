@@ -1,50 +1,67 @@
 ---
-title: "Gewusst wie: Bereitstellen ein Diensts | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Bereitstellen von Diensten"
+title: 'How to: Provide a Service | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- services, providing
 ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
 caps.latest.revision: 22
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 22
----
-# Gewusst wie: Bereitstellen ein Diensts
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: f624a2f2b030d775af0fc8f14c7541d28e84ca8e
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
-Ein VSPackage kann Dienste bereitstellen, die andere VSPackages verwenden können. Um einen Dienst bereitzustellen, muss ein VSPackage registrieren den Dienst mit Visual Studio und den Dienst hinzufügen.  
+---
+# <a name="how-to-provide-a-service"></a>How to: Provide a Service
+A VSPackage can provide services that other VSPackages can use. To provide a service, a VSPackage must register the service with Visual Studio and add the service.  
   
- Die <xref:Microsoft.VisualStudio.Shell.Package> \-Klasse implementiert sowohl <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> und <xref:System.ComponentModel.Design.IServiceContainer>.<xref:System.ComponentModel.Design.IServiceContainer> enthält die Rückrufmethoden bereit, die Dienste nach Bedarf bereitzustellen.  
+ The <xref:Microsoft.VisualStudio.Shell.Package> class implements both <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> and <xref:System.ComponentModel.Design.IServiceContainer>. <xref:System.ComponentModel.Design.IServiceContainer> contains callback methods that provide  services on demand.  
   
- Weitere Informationen zu Diensten finden Sie unter [Service – Grundlagen](../extensibility/internals/service-essentials.md) .  
+ For more information about services, see [Service Essentials](../extensibility/internals/service-essentials.md) .  
   
 > [!NOTE]
->  Wenn Sie ein VSPackage ist entladen wird, wartet auf Visual Studio alle Anfragen für Services, die ein VSPackage übermittelt wurden. Es lässt sich nicht auf neue Anforderungen für diese Dienste aus. Rufen Sie nicht explizit die <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> Methode, um einen Dienst zu widerrufen, beim Entladen.  
+>  When a VSPackage is about to be unloaded, Visual Studio waits until all requests for services that a VSPackage provides have been delivered. It does not allow new requests for these services. You should not explicitly call the <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> method to revoke a service when unloading.  
   
-#### Implementieren eines Diensts  
+#### <a name="implementing-a-service"></a>Implementing a service  
   
-1.  Erstellen Sie ein VSIX\-Projekt \(**Datei auf neu \/ Projekt \/ Visual C\#\-\/ Extensiblity \/ VSIX\-Projekt**\).  
+1.  Create a VSIX project (**File / New / Project / Visual C# / Extensiblity / VSIX Project**).  
   
-2.  Fügen Sie ein VSPackage zum Projekt hinzu. Wählen Sie den Projektknoten in der **Projektmappen\-Explorer** und klicken Sie auf **Hinzufügen \/ neues Element \/ Visual C\#\-Elemente \/ Erweiterbarkeit \/ Visual Studio\-Paket**.  
+2.  Add a VSPackage to the project. Select the project node in the **Solution Explorer** and click **Add / New item / Visual C# Items / Extensibility / Visual Studio Package**.  
   
-3.  Um einen Dienst zu implementieren, müssen Sie drei Arten erstellen:  
+3.  To implement a service, you need to create three types:  
   
-    -   Eine Schnittstelle, die den Dienst beschreibt. Viele dieser Schnittstellen sind leer, d. h. sie haben keine Methoden.  
+    -   An interface that describes the service. Many of these interfaces are empty, that is, they have no methods.  
   
-    -   Eine Schnittstelle, die die Dienstschnittstelle beschreibt. Diese Schnittstelle enthält die Methoden implementiert werden.  
+    -   An interface that describes the service interface. This interface includes the methods to be implemented.  
   
-    -   Eine Klasse, die den Dienst und die Dienstschnittstelle implementiert.  
+    -   A class that implements both the service and the service interface.  
   
-     Das folgende Beispiel zeigt eine einfache Implementierung der drei Typen. Der Konstruktor der Dienstklasse muss den Dienstanbieter festgelegt.  
+     The following example shows a very basic implementation of the three types. The constructor of the service class must set the service provider.  
   
-    ```c#  
+    ```csharp  
     public class MyService : SMyService, IMyService  
     {  
         private Microsoft.VisualStudio.OLE.Interop.IServiceProvider serviceProvider;  
@@ -75,11 +92,11 @@ Ein VSPackage kann Dienste bereitstellen, die andere VSPackages verwenden könne
   
     ```  
   
-### Registrieren einen Dienst  
+### <a name="registering-a-service"></a>Registering a service  
   
-1.  Um einen Dienst zu registrieren, fügen die <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> die VSPackage, das den Dienst bereitstellt. Es folgt ein Beispiel:  
+1.  To register a service, add the <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> to the VSPackage that provides the service. Here is an example:  
   
-    ```c#  
+    ```csharp  
     [ProvideService(typeof(SMyService))]  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
     [Guid(VSPackage1.PackageGuidString)]  
@@ -87,16 +104,16 @@ Ein VSPackage kann Dienste bereitstellen, die andere VSPackages verwenden könne
     {. . . }  
     ```  
   
-     Dieses Attribut registriert `SMyService` mit Visual Studio.  
+     This attribute registers `SMyService` with Visual Studio.  
   
     > [!NOTE]
-    >  Verwenden, um einen Dienst zu registrieren, die ein anderer Dienst mit dem gleichen Namen ersetzt die <xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute>. Beachten Sie die nur eine Überschreibung der Dienst ist zulässig.  
+    >  To register a service that replaces another service with the same name, use the <xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute>. Note that only one override of a service is allowed.  
   
-### Hinzufügen eines Diensts  
+### <a name="adding-a-service"></a>Adding a Service  
   
-1.  1.	Klicken Sie in der Initialisierer VSPackage fügen Sie den Dienst hinzu, und fügen Sie eine Rückrufmethode, um die Dienste zu erstellen. Hier wird die Änderung an der <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> Methode:  
+1.  In the VSPackage initializer, add the service and add a callback method to create the services. Here is the change to make to the <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> method:  
   
-    ```c#  
+    ```csharp  
     protected override void Initialize()  
     {  
         ServiceCreatorCallback callback =new ServiceCreatorCallback(CreateService);  
@@ -106,7 +123,7 @@ Ein VSPackage kann Dienste bereitstellen, die andere VSPackages verwenden könne
     }  
     ```  
   
-2.  Implementieren Sie die Rückrufmethode sollte erstellen und den Dienst, oder null, wenn sie erstellt werden kann.  
+2.  Implement the callback method, which should create and return the service, or null if it cannot be created.  
   
     ```  
     private object CreateService(IServiceContainer container, Type serviceType)  
@@ -118,11 +135,11 @@ Ein VSPackage kann Dienste bereitstellen, die andere VSPackages verwenden könne
     ```  
   
     > [!NOTE]
-    >  Visual Studio kann eine Anforderung zur Bereitstellung eines Dienstes zurückgewiesen werden. Dies geschieht, wenn eine andere VSPackage bereits den Dienst bereitstellt.  
+    >  Visual Studio can reject a request to provide a service. It does so if another VSPackage already provides the service.  
   
-3.  Nun können Sie den Dienst und seine Methoden verwenden. Wir zeigen diese im Initialisierer allerdings erhalten Sie den Dienst an einer beliebigen Stelle des Diensts verwenden möchten.  
+3.  Now you can get the service and use its methods. We'll show this in the initializer, but you can get the service anywhere you want to use the service.  
   
-    ```c#  
+    ```csharp  
     protected override void Initialize()  
     {  
         ServiceCreatorCallback callback =new ServiceCreatorCallback(CreateService);  
@@ -137,9 +154,9 @@ Ein VSPackage kann Dienste bereitstellen, die andere VSPackages verwenden könne
     }  
     ```  
   
-     Der Wert der `helloString` sollte "Hello".  
+     The value of `helloString` should be "Hello".  
   
-## Siehe auch  
- [Gewusst wie: Abrufen eines Diensts](../extensibility/how-to-get-a-service.md)   
- [Verwendung und Bereitstellung von Diensten](../extensibility/using-and-providing-services.md)   
- [Service – Grundlagen](../extensibility/internals/service-essentials.md)
+## <a name="see-also"></a>See Also  
+ [How to: Get a Service](../extensibility/how-to-get-a-service.md)   
+ [Using and Providing Services](../extensibility/using-and-providing-services.md)   
+ [Service Essentials](../extensibility/internals/service-essentials.md)

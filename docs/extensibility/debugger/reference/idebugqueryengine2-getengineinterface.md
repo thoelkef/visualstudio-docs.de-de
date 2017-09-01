@@ -1,53 +1,70 @@
 ---
-title: "IDebugQueryEngine2::GetEngineInterface | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugQueryEngine2::GetEngineInterface"
-helpviewer_keywords: 
-  - "IDebugQueryEngine2::GetEngineInterface"
+title: IDebugQueryEngine2::GetEngineInterface | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugQueryEngine2::GetEngineInterface
+helpviewer_keywords:
+- IDebugQueryEngine2::GetEngineInterface
 ms.assetid: ed84aa98-7ec7-48f3-97ae-821090bc3664
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugQueryEngine2::GetEngineInterface
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 4aa59a9c33d4b29277da374fe6b35fc496385cf6
+ms.contentlocale: de-de
+ms.lasthandoff: 08/23/2017
 
-Ruft eine benutzerdefinierte Debuginformationen Schnittstelle des Moduls \(DE\) ab.  
+---
+# <a name="idebugqueryengine2getengineinterface"></a>IDebugQueryEngine2::GetEngineInterface
+Gets a custom debug engine (DE) interface.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetEngineInterface(   
-   IUnknown** ppUnk  
+HRESULT GetEngineInterface(   
+   IUnknown** ppUnk  
 );  
 ```  
   
-```c#  
-int GetEngineInterface(   
-   out object ppUnk  
+```cs  
+int GetEngineInterface(   
+   out object ppUnk  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `ppUnk`  
- \[out\]  Gibt ein `IUnknown`\-Objekt darstellt, das Debugmodul \(DE\) zurück, und für jede andere gültige Schnittstelle abgefragt werden kann, die mit DE zugeordnet ist \(z [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) oder [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)\).  
+ [out] Returns an `IUnknown` object represents the debug engine (DE), and which can be queried for any other valid interface associated with a DE (for example [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) or [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)).  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Hinweise  
- Die resultierende Schnittstelle sollte sorgfältig verwendet werden, da durch Aufrufen der umgeht die Schnittstellen, die von dieser Methode abgerufenen Debuggen des Managers, der der Sitzung verarbeitet und führt möglicherweise das SDM, das in einem ungültigen Zustand oder während des Debuggens Fehler generiert.  
+## <a name="remarks"></a>Remarks  
+ The resulting interface should be used with care because calling through interfaces retrieved from this method circumvents the session debug manager's processing and may result in the SDM getting into a bad state or generating errors while debugging.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugQueryEngine2](../../../extensibility/debugger/reference/idebugqueryengine2.md)   
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)

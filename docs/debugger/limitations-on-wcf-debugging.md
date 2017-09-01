@@ -1,51 +1,68 @@
 ---
-title: "Einschr&#228;nkungen beim WCF-Debugging | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Debuggen, WCF"
-  - "WCF, Einschränkungen des Debuggers"
+title: Limitations on WCF Debugging | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- debugging, WCF
+- WCF, debugging limitations
 ms.assetid: 8e0333c4-1ddc-4abe-8f1c-d19bf6a2a07a
 caps.latest.revision: 30
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 30
----
-# Einschr&#228;nkungen beim WCF-Debugging
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 02e261c06d065eec1c93159f39103d9281cef3b9
+ms.contentlocale: de-de
+ms.lasthandoff: 08/22/2017
 
-Die folgenden drei Möglichkeiten stehen Ihnen zur Verfügung, um das Debuggen eines WCF\-Diensts zu starten:  
+---
+# <a name="limitations-on-wcf-debugging"></a>Limitations on WCF Debugging
+There are three ways that you can begin debugging a WCF service:  
   
--   Sie debuggen einen Clientprozess, durch den ein Dienst aufgerufen wird.  Der Debugger führt einen Einzelschritt in den Dienst aus.  Der Dienst muss sich nicht in derselben Projektmappe wie die Clientanwendung befinden.  
+-   You are debugging a client process that calls a service. The debugger steps into the service. The service does not have to be in the same solution as your client application.  
   
--   Sie debuggen einen Clientprozess, der eine Anforderung an einen Dienst sendet.  Der Dienst muss Teil der Projektmappe sein.  
+-   You are debugging a client process that makes a request to a service. The service must be part of your solution.  
   
--   Sie verwenden die Option **An den Prozess anhängen**, um den Debugger an einen gerade ausgeführten Dienst anzuhängen.  Das Debuggen wird im Dienst gestartet.  
+-   You use **Attach to Process** to attach to a service that is currently running. Debugging begins inside the service.  
   
- In diesem Thema werden Einschränkungen dieser Szenarien beschrieben.  
+ This topic describes limitations on these scenarios.  
   
-## Einschränkungen bei der schrittweisen Verwendung eines Diensts  
- Folgende Bedingungen müssen erfüllt sein, damit Sie von den debuggten Clientanwendungen einen Einzelschritt in einen Dienst ausführen können:  
+## <a name="limitations-on-stepping-into-a-service"></a>Limitations on Stepping Into a Service  
+ To step into a service from a client applications that you are debugging, the following conditions must be met:  
   
--   Der Client muss den Dienst aufrufen, indem er ein synchrones Clientobjekt verwendet.  
+-   The client must call the service by using a synchronous client object.  
   
--   Die Vertragsoperation darf nicht unidirektional sein.  
+-   The contract operation cannot be one-way.  
   
--   Wenn es sich um einen asynchronen Server handelt, können Sie nicht die vollständige Aufrufliste anzeigen, während der Code innerhalb des Diensts ausgeführt wird.  
+-   If the server is asynchronous, you cannot view the full call stack while you are executing code inside the service.  
   
--   Das Debuggen muss mithilfe des folgenden Codes in der Datei "app.config" oder "Web.config" aktiviert werden:  
+-   Debugging must be enabled with the following code in the app.config or Web.config file:  
   
     ```  
     <system.web>  
@@ -53,21 +70,21 @@ Die folgenden drei Möglichkeiten stehen Ihnen zur Verfügung, um das Debuggen e
     </system.web>  
     ```  
   
-     Dieser Code muss nur einmal hinzugefügt werden.  Sie können diesen Code hinzufügen, indem Sie die CONFIG\-Datei bearbeiten oder den Debugger mithilfe der Option **An den Prozess anhängen** an den Dienst anhängen.  Wenn Sie **An den Prozess anhängen** für einen Dienst verwenden, wird der Debugcode automatisch der CONFIG\-Datei hinzugefügt.  Anschließend können Sie das Debuggen starten und einen Einzelschritt in den Dienst ausführen, ohne die CONFIG\-Datei bearbeiten zu müssen.  
+     This code only has to be added one time. You can add this code by editing the .config file or by attaching to the service by using **Attach to Process**. When you use **Attach to Process** on a service, the debug code is automatically added to the .config file. After that, you can debug and step into the service without having to edit the .config file.  
   
-## Einschränkungen beim Ausführen bis Rücksprung in einem Dienst  
- Das Ausführen bis Rücksprung in einem Dienst und zurück zum Client unterliegt denselben Einschränkungen wie das Ausführen von Einzelschritten in einen Dienst.  Außerdem muss der Debugger an den Client angehängt werden.  Wenn Sie einen Client debuggen und einen Einzelschritt in einen Dienst ausführen, bleibt der Debugger am Dienst angehängt.  Dies gilt unabhängig davon, ob Sie den Client über **Debuggen starten** gestartet oder den Debugger über **An den Prozess anhängen** an den Client angehängt haben.  Falls Sie das Debuggen durch Anhängen an den Dienst gestartet haben, wurde der Debugger bis jetzt noch nicht an den Client angehängt.  Wenn Sie die Ausführung bis Rücksprung im Dienst und zurück zum Client vornehmen, müssen Sie in diesem Fall zuerst **An den Prozess anhängen** verwenden, um den Debugger manuell an den Client anzuhängen.  
+## <a name="limitations-on-stepping-out-of-a-service"></a>Limitations on Stepping Out of a Service  
+ Stepping out of a service and back to the client has the same limitations described for stepping into a service. In addition, the debugger must be attached to the client. If you are debugging a client and step into a service, the debugger remains attached to the service. This is true whether you started the client by using **Start Debugging** or attached to the client by using **Attach to Process**. If you began debugging by attaching to the service, the debugger is not yet attached to the client. In that case, if you have to step out of the service and back to the client, you must first use **Attach to Process** to attach to the client manually.  
   
-## Einschränkungen beim automatischen Anfügen an einen Dienst  
- Das automatische Anfügen an einen Dienst unterliegt folgenden Einschränkungen:  
+## <a name="limitations-on-automatic-attach-to-a-service"></a>Limitations on Automatic Attach to a Service  
+ Automatically attaching to a service has the following limitations:  
   
--   Der Dienst muss Teil der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-Projektmappe sein, die Sie debuggen.  
+-   The service must be part of the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solution you are debugging.  
   
--   Der Dienst muss gehostet werden.  Er kann Teil eines Websiteprojekts \(Dateisystem und HTTP\), eines Webanwendungsprojekts \(Dateisystem und HTTP\) oder eines WCF\-Dienstbibliotheksprojekts sein.  WCF\-Dienstbibliotheksprojekte können entweder Dienstbibliotheken oder Workflowdienstbibliotheken sein.  
+-   The service must be hosted. It may be part of a Web Site Project (File System and HTTP), Web Application Project (File System and HTTP), or WCF Service Library project. WCF Service Library projects can be either Service Libraries or Workflow Service Libraries.  
   
--   Der Dienst muss über einen WCF\-Client aufgerufen werden.  
+-   The service must be invoked from a WCF client.  
   
--   Das Debuggen muss mithilfe des folgenden Codes in der Datei "app.config" oder "Web.config" aktiviert werden:  
+-   Debugging must be enabled with the following code in the app.config or Web.config file:  
   
     ```  
     <system.web>  
@@ -75,12 +92,12 @@ Die folgenden drei Möglichkeiten stehen Ihnen zur Verfügung, um das Debuggen e
     <system.web>  
     ```  
   
-## Lokales Hosten  
- Ein *lokal gehosteter Dienst* ist ein WCF\-Dienst, der nicht innerhalb von IIS, WCF\-Diensthost oder [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Development Server ausgeführt wird.  Weitere Informationen zum Debuggen eines lokal gehosteten Diensts finden Sie unter [Gewusst wie: Debuggen eines lokal gehosteten WCF\-Diensts](../debugger/how-to-debug-a-self-hosted-wcf-service.md).  
+## <a name="self-hosting"></a>Self-Hosting  
+ A *self-hosted service* is a WCF service that does not run inside IIS, the WCF Service Host, or the [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Development Server. For information about how to debug a self-hosted service, see [How to: Debug a Self-Hosted WCF Service](../debugger/how-to-debug-a-self-hosted-wcf-service.md).  
   
-## Lokales Hosten  
- Um das Debuggen von [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0\- oder 3.5\-Anwendungen zu aktivieren, muss [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 oder 3.5 vor der Installation von [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] installiert werden.  Wenn [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] vor [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 oder 3.5 installiert wird, tritt ein Fehler auf, wenn Sie versuchen, eine [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0\- oder 3.5\-Anwendung zu debuggen.  Die Fehlermeldung lautet: "Automatischer Einzelschritt auf dem Server nicht möglich." Verwenden Sie zum Beheben dieses Problems **Systemsteuerung**, **Programme und Funktionen**, um die [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]\-Installation zu reparieren.  
+## <a name="self-hosting"></a>Self-Hosting  
+ To enable debugging of [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 or 3.5 applications, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 or 3.5 must be installed before [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] is installed. If [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] is installed before [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 or 3.5, an error occurs when you try to debug a [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 or 3.5 application. The error message is, "Unable to Automatically Step Into the Server." To fix this problem, use the Windows **Control Panel** > **Programs and Features** to repair your [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] installation.  
   
-## Siehe auch  
- [Debuggen von WCF\-Diensten](../debugger/debugging-wcf-services.md)   
- [Gewusst wie: Debuggen eines lokal gehosteten WCF\-Diensts](../debugger/how-to-debug-a-self-hosted-wcf-service.md)
+## <a name="see-also"></a>See Also  
+ [Debugging WCF Services](../debugger/debugging-wcf-services.md)   
+ [How to: Debug a Self-Hosted WCF Service](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

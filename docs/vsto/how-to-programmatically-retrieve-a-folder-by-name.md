@@ -1,43 +1,48 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Abrufen eines Ordners anhand des Namens"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Outlook-Ordner [Office-Entwicklung in Visual Studio], Abrufen nach Name"
+title: 'How to: Programmatically Retrieve a Folder by Name | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Outlook folders [Office development in Visual Studio], retrieving by name
 ms.assetid: 7f819525-b431-4b57-9a7f-3a6454c74298
 caps.latest.revision: 16
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 16
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 137e83801cb74468dd095ba81831305e0534e456
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Gewusst wie: Programmgesteuertes Abrufen eines Ordners anhand des Namens
-  In diesem Beispiel wird ein Verweis auf einen benannten benutzerdefinierten Ordner abgerufen, anschließend wird der Inhalt des Ordners angezeigt.  
+# <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>How to: Programmatically Retrieve a Folder by Name
+  This example gets a reference to a named custom folder and then displays the contents of the folder.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-## Beispiel  
- [!code-csharp[Trin_OL_GetFolderName#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_OL_GetFolderName/CS/thisaddin.cs#1)]  
+## <a name="example"></a>Example  
+ [!code-csharp[Trin_OL_GetFolderName#1](../vsto/codesnippet/CSharp/Trin_OL_GetFolderName/thisaddin.cs#1)]  
   
-## Kompilieren des Codes  
- Dieses Beispiel setzt Folgendes voraus:  
+## <a name="compiling-the-code"></a>Compiling the Code  
+ This example requires:  
   
--   Ein Ordner mit dem Namen TestFolder.  
+-   A folder named TestFolder.  
   
-## Siehe auch  
- [Arbeiten mit Ordnern](../vsto/working-with-folders.md)   
- [Gewusst wie: Programmgesteuerte Suche in einem bestimmten Ordner](../vsto/how-to-programmatically-search-within-a-specific-folder.md)   
- [Gewusst wie: Programmgesteuertes Suchen eines bestimmten Kontakts](../vsto/how-to-programmatically-search-for-a-specific-contact.md)   
- [Gewusst wie: Programmgesteuertes Erstellen von benutzerdefinierten Ordnerelementen](../vsto/how-to-programmatically-create-custom-folder-items.md)  
+## <a name="see-also"></a>See Also  
+ [Working with Folders](../vsto/working-with-folders.md)   
+ [How to: Programmatically Search Within a Specific Folder](../vsto/how-to-programmatically-search-within-a-specific-folder.md)   
+ [How to: Programmatically Search for a Specific Contact](../vsto/how-to-programmatically-search-for-a-specific-contact.md)   
+ [How to: Programmatically Create Custom Folder Items](../vsto/how-to-programmatically-create-custom-folder-items.md)  
   
   

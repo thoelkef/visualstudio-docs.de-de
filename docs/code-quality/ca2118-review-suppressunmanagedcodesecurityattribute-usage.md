@@ -1,79 +1,96 @@
 ---
-title: "CA2118: &#220;berpr&#252;fen der Verwendung von SuppressUnmanagedCodeSecurityAttribute | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2118"
-  - "ReviewSuppressUnmanagedCodeSecurityUsage"
-helpviewer_keywords: 
-  - "CA2118"
-  - "ReviewSuppressUnmanagedCodeSecurityUsage"
+title: 'CA2118: Review SuppressUnmanagedCodeSecurityAttribute usage | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2118
+- ReviewSuppressUnmanagedCodeSecurityUsage
+helpviewer_keywords:
+- ReviewSuppressUnmanagedCodeSecurityUsage
+- CA2118
 ms.assetid: 4cb8d2fc-4e44-4dc3-9b74-7f5838827d41
 caps.latest.revision: 20
-caps.handback.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA2118: &#220;berpr&#252;fen der Verwendung von SuppressUnmanagedCodeSecurityAttribute
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: cdec0f1446b87f23be8f9da9014cd4fd3d3d05e2
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: Review SuppressUnmanagedCodeSecurityAttribute usage
 |||  
 |-|-|  
 |TypeName|ReviewSuppressUnmanagedCodeSecurityUsage|  
 |CheckId|CA2118|  
-|Kategorie \(Category\)|Microsoft.Security|  
-|Unterbrechende Änderung|Breaking|  
+|Category|Microsoft.Security|  
+|Breaking Change|Breaking|  
   
-## Ursache  
- Ein öffentlicher oder geschützter Typ bzw. Member verfügt über das <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>\-Attribut.  
+## <a name="cause"></a>Cause  
+ A public or protected type or member has the <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> attribute.  
   
-## Regelbeschreibung  
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> ändert das Standardverhalten des Sicherheitssystems für Member, die nicht verwalteten Code mithilfe eines COM\-Interop\- oder Plattformaufrufs ausführen.  Im Allgemeinen führt das System bei einer Berechtigung für nicht verwalteten Code einen [Daten und Modellierung](../Topic/Data%20and%20Modeling%20in%20the%20.NET%20Framework.md) aus.  Diese Anforderung erfolgt zur Laufzeit bei jedem Aufruf des Members, und jeder Aufrufer in der Aufrufliste wird auf die Berechtigung überprüft.  Wenn das Attribut vorhanden ist, führt das System [Link Demands](../Topic/Link%20Demands.md) für die Berechtigung aus: Die Berechtigungen des unmittelbaren Aufrufers werden überprüft, wenn der Aufrufer JIT\-kompiliert ist.  
+## <a name="rule-description"></a>Rule Description  
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> changes the default security system behavior for members that execute unmanaged code using COM interop or platform invocation. Generally, the system makes a [Data and Modeling](/dotnet/framework/data/index) for unmanaged code permission. This demand occurs at run time for every invocation of the member, and checks every caller in the call stack for permission. When the attribute is present, the system makes a [Link Demands](/dotnet/framework/misc/link-demands) for the permission: the permissions of the immediate caller are checked when the caller is JIT-compiled.  
   
- Dieses Attribut wird hauptsächlich verwendet, um die Leistung zu erhöhen. Der Leistungszuwachs geht jedoch mit beträchtlichen Sicherheitsrisiken einher.  Wenn Sie das Attribut öffentlichen Membern hinzufügen, die systemeigene Methoden aufrufen, benötigen die Aufrufer in der Aufrufliste \(also nicht die unmittelbaren Aufrufer\) keine Berechtigung für nicht verwalteten Code, um unverwalteten Code auszuführen.  Je nach den Aktionen und der Eingabebehandlung des öffentlichen Members wird nicht vertrauenswürdigen Aufrufern unter Umständen der Zugriff auf Funktionen gestattet, die normalerweise nur für vertrauenswürdigen Code verfügbar sind.  
+ This attribute is primarily used to increase performance; however, the performance gains come with significant security risks. If you place the attribute on public members that call native methods, the callers in the call stack (other than the immediate caller) do not need unmanaged code permission to execute unmanaged code. Depending on the public member's actions and input handling, it might allow untrustworthy callers to access functionality normally restricted to trustworthy code.  
   
- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] verwendet Sicherheitsüberprüfungen, um Aufrufern direkten Zugriff auf den Adressbereich des aktuellen Prozesses zu verwehren.  Da dieses Attribut die normalen Sicherheitsvorkehrungen umgeht, stellt Ihr Code eine schwerwiegende Bedrohung dar, wenn er zum Lesen oder Beschreiben des Speichers des Prozesses verwendet werden kann.  Das Risiko ist nicht auf Methoden beschränkt, bei denen der Zugriff auf den Prozessspeicher gewollt ist, sondern in allen Szenarien vorhanden, in denen bösartiger Code Zugriff durch ein beliebiges Mittel erreichen kann, beispielsweise durch unerwartete, fehlerhafte oder ungültige Eingaben.  
+ The [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] relies on security checks to prevent callers from gaining direct access to the current process's address space. Because this attribute bypasses normal security, your code poses a serious threat if it can be used to read or write to the process's memory. Note that the risk is not limited to methods that intentionally provide access to process memory; it is also present in any scenario where malicious code can achieve access by any means, for example, by providing surprising, malformed, or invalid input.  
   
- Die Standardsicherheitsrichtlinie gewährt einer Assembly nur dann eine Berechtigung für nicht verwalteten Code, wenn sie auf dem lokalen Computer ausgeführt wird oder einer der folgenden Gruppen angehört:  
+ The default security policy does not grant unmanaged code permission to an assembly unless it is executing from the local computer or is a member of one of the following groups:  
   
--   Codegruppe Arbeitsplatzzone  
+-   My Computer Zone Code Group  
   
--   Codegruppe Starker Microsoft\-Name  
+-   Microsoft Strong Name Code Group  
   
--   Codegruppe Starker ECMA\-Name  
+-   ECMA Strong Name Code Group  
   
-## Behandeln von Verstößen  
- Überprüfen Sie Ihren Code sorgfältig, um sicherzustellen, dass dieses Attribut absolut notwendig ist.  Wenn Sie mit den Sicherheitsvorkehrungen für verwalteten Code nicht vertraut sind oder Ihnen die Auswirkungen der Verwendung dieses Attributs auf die Sicherheit nicht klar sind, entfernen Sie es aus dem Code.  Wenn das Attribut erforderlich ist, müssen Sie sicherstellen, dass Aufrufer den Code nicht in böswilliger Absicht verwenden können.  Wenn der Code über keine Berechtigung zur Ausführung von nicht verwaltetem Code verfügt, ist dieses Attribut wirkungslos und sollte entfernt werden.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ Carefully review your code to ensure that this attribute is absolutely necessary. If you are unfamiliar with managed code security, or do not understand the security implications of using this attribute, remove it from your code. If the attribute is required, you must ensure that callers cannot use your code maliciously. If your code does not have permission to execute unmanaged code, this attribute has no effect and should be removed.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Um eine Warnung dieser Regel gefahrlos unterdrücken zu können, müssen Sie sicherstellen, dass der Code Aufrufern keinen Zugriff auf systemeigene Vorgänge oder Ressourcen gewährt, die auf destruktive Weise verwendet werden können.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ To safely suppress a warning from this rule, you must ensure that your code does not provide callers access to native operations or resources that can be used in a destructive manner.  
   
-## Beispiel  
- Das folgende Beispiel verstößt gegen die Regel.  
+## <a name="example"></a>Example  
+ The following example violates the rule.  
   
- [!code-cs[FxCop.Security.TypesDoNotSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_1.cs)]  
+ [!code-csharp[FxCop.Security.TypesDoNotSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_1.cs)]  
   
-## Beispiel  
- Im folgenden Beispiel gibt die `DoWork`\-Methode einen öffentlich zugänglichen Codepfad zur `FormatHardDisk`\-Plattformaufrufmethode an.  
+## <a name="example"></a>Example  
+ In the following example, the `DoWork` method provides a publicly accessible code path to the platform invocation method `FormatHardDisk`.  
   
- [!code-cs[FxCop.Security.PInvokeAndSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_2.cs)]  
+ [!code-csharp[FxCop.Security.PInvokeAndSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_2.cs)]  
   
-## Beispiel  
- Im folgenden Beispiel wird ein Verstoß durch die öffentliche `DoDangerousThing`\-Methode verursacht.  Um den Verstoß aufzulösen, sollte `DoDangerousThing` privat sein, und der Zugriff darauf sollte über eine öffentliche Methode erfolgen, die durch eine Sicherheitsanforderung gesichert ist, wie durch die `DoWork`\-Methode veranschaulicht wird.  
+## <a name="example"></a>Example  
+ In the following example, the public method `DoDangerousThing` causes a violation. To resolve the violation, `DoDangerousThing` should be made private, and access to it should be through a public method secured by a security demand, as illustrated by the `DoWork` method.  
   
- [!code-cs[FxCop.Security.TypeInvokeAndSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_3.cs)]  
+ [!code-csharp[FxCop.Security.TypeInvokeAndSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_3.cs)]  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>   
- [Secure Coding Guidelines](../Topic/Secure%20Coding%20Guidelines.md)   
- [Security Optimizations](http://msdn.microsoft.com/de-de/cf255069-d85d-4de3-914a-e4625215a7c0)   
- [Daten und Modellierung](../Topic/Data%20and%20Modeling%20in%20the%20.NET%20Framework.md)   
- [Link Demands](../Topic/Link%20Demands.md)
+ [Secure Coding Guidelines](/dotnet/standard/security/secure-coding-guidelines)   
+ [Security Optimizations](http://msdn.microsoft.com/en-us/cf255069-d85d-4de3-914a-e4625215a7c0)   
+ [Data and Modeling](/dotnet/framework/data/index)  
+ [Link Demands](/dotnet/framework/misc/link-demands)  
+  

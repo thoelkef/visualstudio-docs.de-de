@@ -1,46 +1,63 @@
 ---
-title: "IDebugEngine2::CauseBreak | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngine2::CauseBreak"
-helpviewer_keywords: 
-  - "IDebugEngine2::CauseBreak"
+title: IDebugEngine2::CauseBreak | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugEngine2::CauseBreak
+helpviewer_keywords:
+- IDebugEngine2::CauseBreak
 ms.assetid: 17fe4698-b04e-4798-8412-80e0da60c387
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# IDebugEngine2::CauseBreak
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 9f9026984b37d273b455229c09f52b4fd5fb8416
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
-Anforderungen, die alle Programme, die von diesem Debugmodul \(Debuggen\) DE das nächste Mal eine ihrer Ausführung von Threads zu beenden versucht, auszuführen.  
+---
+# <a name="idebugengine2causebreak"></a>IDebugEngine2::CauseBreak
+Requests that all programs being debugged by this debug engine (DE) to stop execution the next time one of their threads attempts to run.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT CauseBreak(   
-   void   
+```cpp  
+HRESULT CauseBreak(   
+   void   
 );  
 ```  
   
-```c#  
+```csharp  
 int CauseBreak();  
 ```  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Hinweise  
- Diese Methode ist asynchron: Ein [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)\-Ereignis wird gesendet, wenn das Programm auszuführen versucht auf Weiter, nachdem diese Methode aufgerufen wurde.  
+## <a name="remarks"></a>Remarks  
+ This method is asynchronous: an [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) event is sent when the program next attempts to execute after this method is called.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)   
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

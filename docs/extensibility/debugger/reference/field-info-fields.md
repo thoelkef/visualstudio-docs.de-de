@@ -1,82 +1,99 @@
 ---
-title: "FIELD_INFO_FIELDS | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "FIELD_INFO_FIELDS"
-helpviewer_keywords: 
-  - "FIELD_INFO_FIELDS-enumeration"
+title: FIELD_INFO_FIELDS | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- FIELD_INFO_FIELDS
+helpviewer_keywords:
+- FIELD_INFO_FIELDS enumeration
 ms.assetid: a69487d2-e701-4165-804a-8a011df9a3bd
 caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
----
-# FIELD_INFO_FIELDS
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: efb41f7bffeaa652c51af5623d4b38a8d826d2bf
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
-Gibt an, welche Informationen über ein [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)\-Objekt abzurufen.  
+---
+# <a name="fieldinfofields"></a>FIELD_INFO_FIELDS
+Specifies what information to retrieve about an [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) object.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-enum enum_FIELD_INFO_FIELDS {   
-   FIF_FULLNAME  = 0x0001,  
-   FIF_NAME      = 0x0002,  
-   FIF_TYPE      = 0x0004,  
-   FIF_MODIFIERS = 0x0008,  
-   FIF_ALL       = 0xffffffff,  
-   FIF_NONE      = 0x0000  
+```cpp  
+enum enum_FIELD_INFO_FIELDS {   
+   FIF_FULLNAME  = 0x0001,  
+   FIF_NAME      = 0x0002,  
+   FIF_TYPE      = 0x0004,  
+   FIF_MODIFIERS = 0x0008,  
+   FIF_ALL       = 0xffffffff,  
+   FIF_NONE      = 0x0000  
 };  
 typedef DWORD FIELD_INFO_FIELDS;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_FIELD_INFO_FIELDS {  
-   FIF_FULLNAME  = 0x0001,  
-   FIF_NAME      = 0x0002,  
-   FIF_TYPE      = 0x0004,  
-   FIF_MODIFIERS = 0x0008,  
-   FIF_ALL       = 0xffffffff,  
-   FIF_NONE      = 0x0000  
+   FIF_FULLNAME  = 0x0001,  
+   FIF_NAME      = 0x0002,  
+   FIF_TYPE      = 0x0004,  
+   FIF_MODIFIERS = 0x0008,  
+   FIF_ALL       = 0xffffffff,  
+   FIF_NONE      = 0x0000  
 };  
 ```  
   
-## Mitglieder  
- FIF\_FULLNAME  
- Initialisieren Sie verwenden das\/ `bstrFullName` Feld in der [FIELD\_INFO](../../../extensibility/debugger/reference/field-info.md) Struktur.  
+## <a name="members"></a>Members  
+ FIF_FULLNAME  
+ Initialize/use the `bstrFullName` field in the [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) structure.  
   
- FIF\_NAME  
- Initialisieren Sie verwenden das\/ `bstrName` Feld in der `FIELD_INFO` Struktur.  
+ FIF_NAME  
+ Initialize/use the `bstrName` field in the `FIELD_INFO` structure.  
   
- FIF\_TYPE  
- Initialisieren Sie verwenden das\/ `bstrType` Feld in der `FIELD_INFO` Struktur.  
+ FIF_TYPE  
+ Initialize/use the `bstrType` field in the `FIELD_INFO` structure.  
   
- FIF\_MODIFIERS  
- Initialisieren Sie verwenden das\/ `bstrModifiers` Feld in der `FIELD_INFO` Struktur.  
+ FIF_MODIFIERS  
+ Initialize/use the `bstrModifiers` field in the `FIELD_INFO` structure.  
   
-## Hinweise  
- Diese Werte werden auch als Argument an die [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)\-Methode übergeben, um anzugeben, welche Felder der [FIELD\_INFO](../../../extensibility/debugger/reference/field-info.md) Struktur initialisiert werden sollen.  
+## <a name="remarks"></a>Remarks  
+ These values are also passed as an argument to the [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) method to specify which fields of the [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) structure are to be initialized.  
   
- Diese Werte werden auch im `dwFields`\-Member der `FIELD_INFO` Struktur verwendet, um anzugeben, welche Felder verwendet und gültig sind.  
+ These values are also used in the `dwFields` member of the `FIELD_INFO` structure to indicate which fields are used and valid.  
   
- Diese Flags werden mit bitweisen `OR`kombiniert werden.  
+ These flags may be combined with a bitwise `OR`.  
   
-## Anforderungen  
+## <a name="requirements"></a>Requirements  
  Header: sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
- [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [FIELD\_INFO](../../../extensibility/debugger/reference/field-info.md)   
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)

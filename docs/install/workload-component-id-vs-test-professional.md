@@ -1,11 +1,11 @@
 ---
-title: Arbeitsauslastungs- und Komponenten-IDs in Visual Studio Test Professional 2017 | Microsoft-Dokumentation
-description: Verwenden Sie Arbeitsauslastungs- und Komponenten-IDs in Visual Studio, um Generalisten beim Testen integrierte Testtools bereitzustellen
+title: Visual Studio Test Professional 2017 workload and component IDs | Microsoft Docs
+description: Use Visual Studio workload and component IDs to provide integrated testing tools for generalist testers
 keywords: 
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 08/09/2017
+ms.date: 08/30/2017
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -31,53 +31,53 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 173139a2bdf2d387a16a91ae04262ed06a8d4141
+ms.translationtype: HT
+ms.sourcegitcommit: 96018963278cd1d53b226473baade41da1e98111
+ms.openlocfilehash: 1c9caeb8caf334a29ae3bdb2375301da2e93b4a1
 ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 08/30/2017
 
 ---
 
-# <a name="visual-studio-test-professional-2017-component-directory"></a>Visual Studio Test Professional 2017-Komponentenverzeichnis
+# <a name="visual-studio-test-professional-2017-component-directory"></a>Visual Studio Test Professional 2017 component directory
 
-In den Tabellen auf dieser Seite sind die IDs aufgeführt, die Sie verwenden können, um Visual Studio über die Befehlszeile zu installieren. Beachten Sie, dass weitere Komponenten hinzugefügt werden, wenn wir Updates für Visual Studio veröffentlichen.
+The tables on this page list the IDs that you can use to install Visual Studio by using the command line. Note that we will add additional components as we release updates to Visual Studio.
 
-Beachten Sie zudem Folgendes im Hinblick auf diese Seite:
+Also note the following about this page:
 
-* Für jede Arbeitsauslastung gibt es einen eigenen Abschnitt, gefolgt von der Arbeitsauslastungs-ID und einer Tabelle der Komponenten, die für die Arbeitsauslastung zur Verfügung stehen.
-* Die **erforderlichen** Komponenten werden standardmäßig bei der Installation der Arbeitsauslastung installiert. Bei Bedarf können Sie auch die **empfohlenen** und **optionalen** Komponenten installieren.
-* Wir haben auch einen Abschnitt hinzugefügt, in dem die zusätzlichen Komponenten aufgeführt sind, die keiner Arbeitsauslastung zugeordnet sind.
+* Each workload has its own section, followed by the workload ID and a table of the components that are available for the workload.
+* By default, the **Required** components will be installed when you install the workload. If you choose to, you can also install the **Recommended** and **Optional** components.
+* We've also added a section that lists the additional components that are not affiliated with any workload.
 
-Weitere Informationen zur Verwendung dieser IDs finden Sie auf der Seite [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md). Eine Liste der Arbeitsauslastungs- und Komponenten-IDs für andere Produkte finden Sie auf der Seite [Arbeitsauslastungs- und Komponenten-IDs in Visual Studio 2017](workload-and-component-ids.md).
+For more information about how to use these IDs, see [Use Command-Line Parameters to Install Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) page. And, for a list of workload and component IDs for other products, see [Visual Studio 2017 Workload and Component IDs](workload-and-component-ids.md) page.
 
 ## <a name="test-professional"></a>Test Professional
 
 **ID:** Microsoft.VisualStudio.Workload.TestProfessional
 
-**Beschreibung:** Test Professional bietet integrierte Testtools für Generalisten beim Testen, mit denen die Testanforderungen über den gesamten Testlebenszyklus hinweg abgedeckt werden können.
+**Description:** Test Professional provides integrated testing tools targeted at generalist testers, which help them drive their testing needs across the entire testing lifecycle.
 
-### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
+### <a name="components-included-by-this-workload"></a>Components included by this workload
 
-Komponenten-ID | Name | Version | Abhängigkeitstyp
+Component ID | Name | Version | Dependency type
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.0.26208.0 | Erforderlich
-Microsoft.VisualStudio.Component.TestTools.MicrosoftTestManager | Microsoft Test Manager | 15.0.26228.0 | Erforderlich
+Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.0.26711.1 | Required
+Microsoft.VisualStudio.Component.TestTools.MicrosoftTestManager | Microsoft Test Manager | 15.0.26606.0 | Required
 
-## <a name="unaffiliated-components"></a>Nicht zugeordnete Komponenten
+## <a name="unaffiliated-components"></a>Unaffiliated components
 
-Dies sind Komponenten, die in keiner Arbeitsauslastung enthalten sind, jedoch als einzelne Komponenten ausgewählt werden können.
+These are components that are not included with any workload, but may be selected as an individual component.
 
-Komponenten-ID | Name | Version
+Component ID | Name | Version
 --- | --- | ---
-n/v | nicht verfügbar | n/v
+n/a | n/a | n/a
 
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>See also
 
-* [Arbeitsauslastung und Komponenten-IDs von Visual Studio](workload-and-component-ids.md)
-* [Administratorhandbuch für Visual Studio 2017 RC](visual-studio-administrator-guide.md)
-* [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-  * [Beispiele für Befehlszeilenparameter](command-line-parameter-examples.md)
-* [Erstellen einer Offlineinstallation von Visual Studio](create-an-offline-installation-of-visual-studio.md)
+* [Visual Studio workload and component IDs](workload-and-component-ids.md)
+* [Visual Studio administrator guide](visual-studio-administrator-guide.md)
+* [Use command-line parameters to install Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+  * [Command-line parameter examples](command-line-parameter-examples.md)
+* [Create an offline installation of Visual Studio](create-an-offline-installation-of-visual-studio.md)
 

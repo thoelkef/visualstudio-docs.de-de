@@ -1,61 +1,64 @@
 ---
-title: "Gewusst wie: Programmgesteuertes &#214;ffnen von Visio-Dokumenten"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Dokumente [Office-Entwicklung in Visual Studio], Öffnen von Visio-Dokumenten"
-  - "Visio [Office-Entwicklung in Visual Studio], Öffnen von Visio-Dokumenten"
+title: 'How to: Programmatically Open Visio Documents | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- documents [Office development in Visual Studio], opening Visio documents
+- Visio [Office development in Visual Studio], opening Visio documents
 ms.assetid: bddb820c-bde7-4d21-a0b3-6d1968baccab
 caps.latest.revision: 20
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 19
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 2cb8d4ef532d296b1bb750663d5650964d6d766b
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Gewusst wie: Programmgesteuertes &#214;ffnen von Visio-Dokumenten
-  Es gibt zwei Methoden zum Öffnen vorhandener Microsoft Office Visio\-Dokumente: Open und OpenEx. Die OpenEx\-Methode ist identisch mit der Open\-Methode, mit der Ausnahme, dass sie Argumente bereitstellt, in denen der Aufrufer angeben kann, wie das Dokument geöffnet wird.  
+# <a name="how-to-programmatically-open-visio-documents"></a>How to: Programmatically Open Visio Documents
+  There are two methods for opening existing Microsoft Office Visio documents: Open and OpenEx. The OpenEx method is identical to the Open method, except that it provides arguments in which the caller can specify how the document opens.  
   
- Ausführliche Informationen zum Objektmodell finden Sie in der VBA\-Referenzdokumentation für die [Microsoft.Office.Interop.Visio.Documents.Open](HV10070351)\- und [Microsoft.Office.Interop.Visio.Documents.OpenEx](HV10071456)\-Methode.  
+ For details about the object model, see the VBA reference documentation for the [Microsoft.Office.Interop.Visio.Documents.Open](https://msdn.microsoft.com/library/office/ff765240.aspx) method and [Microsoft.Office.Interop.Visio.Documents.OpenEx](https://msdn.microsoft.com/library/office/ff767229.aspx) method.  
   
-## Öffnen von Visio\-Dokumenten  
+## <a name="opening-a-visio-document"></a>Opening a Visio Document  
   
-#### So öffnen Sie ein Visio\-Dokument  
+#### <a name="to-open-a-visio-document"></a>To open a Visio document  
   
--   Rufen Sie die Microsoft.Office.Interop.Visio.Documents.Open\-Methode auf, und übergeben Sie den vollqualifizierten Pfad des Visio\-Dokuments.  
+-   Call the Microsoft.Office.Interop.Visio.Documents.Open method and supply the fully qualified path of the Visio document.  
   
-     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#5](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreVisioAutomationAddIn/CS/ThisAddIn.cs#5)]
-     [!code-vb[Trin_VstcoreVisioAutomationAddIn#5](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreVisioAutomationAddIn/VB/ThisAddIn.vb#5)]  
+     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#5](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#5)]  [!code-vb[Trin_VstcoreVisioAutomationAddIn#5](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#5)]  
   
-## Öffnen eines Visio\-Dokuments mit angegebenen Argumenten  
+## <a name="opening-a-visio-document-with-specified-arguments"></a>Opening a Visio Document with Specified Arguments  
   
-#### So öffnen Sie ein Visio\-Dokument schreibgeschützt und angedockt  
+#### <a name="to-open-a-visio-document-as-read-only-and-docked"></a>To open a Visio document as read-only and docked  
   
--   Rufen Sie die Microsoft.Office.Interop.Visio.Documents.OpenEx\-Methode auf, geben Sie den vollqualifizierten Pfad des Visio\-Dokuments an, und schließen Sie die zu verwendenden Argumente ein, in diesem Fall „Gedockt“ und „Schreibgeschützt“.  
+-   Call the Microsoft.Office.Interop.Visio.Documents.OpenEx method, supply the fully qualified path of the Visio document, and include the arguments you want to use—in this case, Docked and Read-only.  
   
-     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#6](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreVisioAutomationAddIn/CS/ThisAddIn.cs#6)]
-     [!code-vb[Trin_VstcoreVisioAutomationAddIn#6](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreVisioAutomationAddIn/VB/ThisAddIn.vb#6)]  
+     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#6](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#6)]  [!code-vb[Trin_VstcoreVisioAutomationAddIn#6](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#6)]  
   
-## Kompilieren des Codes  
- Für dieses Codebeispiel benötigen Sie Folgendes:  
+## <a name="compiling-the-code"></a>Compiling the Code  
+ This code example requires the following:  
   
--   Ein Visio\-Dokument namens `myDrawing.vsd` muss sich in einem Verzeichnis namens `Test` im Ordner „Eigene Dateien“ \(Windows XP und ältere Versionen\) bzw. im Ordner „Dokumente“ \(Windows Vista\) befinden.  
+-   A Visio document named `myDrawing.vsd` must be located in a directory named `Test` in the My Documents folder (for Windows XP and earlier) or the Documents folder (for Windows Vista).  
   
-## Siehe auch  
- [Visio-Projektmappen](../vsto/visio-solutions.md)   
- [Übersicht über das Visio-Objektmodell](../vsto/visio-object-model-overview.md)   
- [Gewusst wie: Programmgesteuertes Erstellen neuer Visio-Dokumente](../vsto/how-to-programmatically-create-new-visio-documents.md)   
- [Gewusst wie: Programmgesteuertes Schließen von Visio-Dokumenten](../vsto/how-to-programmatically-close-visio-documents.md)   
- [Gewusst wie: Programmgesteuertes Speichern von Visio-Dokumenten](../vsto/how-to-programmatically-save-visio-documents.md)   
- [Gewusst wie: Programmgesteuertes Drucken von Visio-Dokumenten](../vsto/how-to-programmatically-print-visio-documents.md)  
+## <a name="see-also"></a>See Also  
+ [Visio Solutions](../vsto/visio-solutions.md)   
+ [Visio Object Model Overview](../vsto/visio-object-model-overview.md)   
+ [How to: Programmatically Create New Visio Documents](../vsto/how-to-programmatically-create-new-visio-documents.md)   
+ [How to: Programmatically Close Visio Documents](../vsto/how-to-programmatically-close-visio-documents.md)   
+ [How to: Programmatically Save Visio Documents](../vsto/how-to-programmatically-save-visio-documents.md)   
+ [How to: Programmatically Print Visio Documents](../vsto/how-to-programmatically-print-visio-documents.md)  
   
   

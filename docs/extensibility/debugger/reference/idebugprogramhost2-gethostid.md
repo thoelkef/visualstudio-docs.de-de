@@ -1,49 +1,66 @@
 ---
-title: "IDebugProgramHost2::GetHostId | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgramHost2::GetHostId"
-helpviewer_keywords: 
-  - "IDebugProgramHost2::GetHostId"
+title: IDebugProgramHost2::GetHostId | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProgramHost2::GetHostId
+helpviewer_keywords:
+- IDebugProgramHost2::GetHostId
 ms.assetid: 7702e221-feb1-446b-a224-cb46c420987e
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugProgramHost2::GetHostId
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 8ee475f02211c4b0100f65c22a3243728bf0b152
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
-Ruft die Prozess\-ID des Prozesses hostings dieses Programm ab.  
+---
+# <a name="idebugprogramhost2gethostid"></a>IDebugProgramHost2::GetHostId
+Gets the process identifier of the process hosting this program.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetHostId(   
-   AD_PROCESS_ID* pdwId  
+```cpp  
+HRESULT GetHostId(   
+   AD_PROCESS_ID* pdwId  
 );  
 ```  
   
-```c#  
-int GetHostId(   
-   AD_PROCESS_ID[] pdwId  
+```csharp  
+int GetHostId(   
+   AD_PROCESS_ID[] pdwId  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `pdwId`  
- \[in, out\]  Eine [AD\_PROCESS\_ID](../../../extensibility/debugger/reference/ad-process-id.md) Struktur, die den Prozess\-ID\-Informationen gefüllt wird.  
+ [in, out] An [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) structure that is filled in with the process identifier information.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)   
- [AD\_PROCESS\_ID](../../../extensibility/debugger/reference/ad-process-id.md)
+ [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)

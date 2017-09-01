@@ -1,77 +1,94 @@
 ---
-title: "NAME_MATCH | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "NAME_MATCH"
-helpviewer_keywords: 
-  - "NAME_MATCH-enumeration"
+title: NAME_MATCH | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- NAME_MATCH
+helpviewer_keywords:
+- NAME_MATCH enumeration
 ms.assetid: 3842c417-a3c9-4259-a05f-52b64b829ef6
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# NAME_MATCH
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 0b978feb1b38c87c2ca7e0616953856556144f21
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
-Wählt die Option Groß\-\/Kleinschreibung für Vergleiche von Namen aus.  
+---
+# <a name="namematch"></a>NAME_MATCH
+Selects the case option for matching names.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-typedef enum {   
-   nmNone            = 0,  
-   nmCaseSensitive   = 1,  
-   nmCaseInsensitive = 2  
+```cpp  
+typedef enum {   
+   nmNone            = 0,  
+   nmCaseSensitive   = 1,  
+   nmCaseInsensitive = 2  
 } NAME_MATCH;  
 ```  
   
-```c#  
-public enum NameMatchOptions {   
-   nmNone            = 0,  
-   nmCaseSensitive   = 1,  
-   nmCaseInsensitive = 2  
+```csharp  
+public enum NameMatchOptions {   
+   nmNone            = 0,  
+   nmCaseSensitive   = 1,  
+   nmCaseInsensitive = 2  
 }  
 ```  
   
-## Mitglieder  
+## <a name="members"></a>Members  
  nmNone  
- Es wurden keine Optionen angegeben.  
+ No options are specified.  
   
  nmCaseSensitive  
- Gibt an, dass die Namen, um übereinstimmende ist die Groß\- und Kleinschreibung berücksichtigt wird.  
+ Indicates that names to be matched are case-sensitive.  
   
  nmCaseInsensitive  
- Gibt an, dass die Namen, um übereinstimmende Groß\-\/Kleinschreibung nicht beachtet werden soll.  
+ Indicates that names to be matched are not case-sensitive.  
   
-## Hinweise  
- Übergabe als Argument an den folgenden Methoden:  
+## <a name="remarks"></a>Remarks  
+ Passed as an argument to the following methods:  
   
 -   [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)  
   
 -   [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)  
   
--   [\[EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)  
+-   [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)  
   
 -   [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)  
   
-## Anforderungen  
+## <a name="requirements"></a>Requirements  
  Header: sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
- [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)   
  [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)   
- [\[EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)   
+ [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)   
  [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)

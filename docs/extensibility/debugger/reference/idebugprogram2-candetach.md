@@ -1,42 +1,59 @@
 ---
-title: "IDebugProgram2::CanDetach | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgram2::CanDetach"
-helpviewer_keywords: 
-  - "IDebugProgram2::CanDetach"
+title: IDebugProgram2::CanDetach | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProgram2::CanDetach
+helpviewer_keywords:
+- IDebugProgram2::CanDetach
 ms.assetid: dcd9ab6c-49e5-447e-aa7c-89f571f4a052
 caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
----
-# IDebugProgram2::CanDetach
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 6508286e277eb72dd9f0cb0810146dccd8ec59ee
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
-Bestimmt, ob eine Debug\- Modul \(DE\) vom Programm getrennt werden kann.  
+---
+# <a name="idebugprogram2candetach"></a>IDebugProgram2::CanDetach
+Determines if a debug engine (DE) can detach from the program.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT CanDetach(  
-   void  
+   void  
 );  
 ```  
   
-```c#  
+```csharp  
 int CanDetach();  
 ```  
   
-## Rückgabewert  
- Wenn sich `S_OK`werden kann, gibt diese zurück. andernfalls gibt einen Fehlercode zurück.  Gibt `S_FALSE` zurück, wenn sich nicht vom Programm DE getrennt werden kann.  
+## <a name="return-value"></a>Return Value  
+ If can detach, returns `S_OK`; otherwise, returns an error code. Returns `S_FALSE` if the DE cannot detach from the program.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

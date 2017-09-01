@@ -1,5 +1,5 @@
 ---
-title: "Schritt 6: Hinzufügen eines Timers | Microsoft-Dokumentation"
+title: 'Step 6: Add a Timer | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -27,51 +27,51 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 996ec0a9fa601517993cb6049a114796c36489fe
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 0ab82e9962871d6dd5da724a7a72677c387e9a53
 ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 08/30/2017
 
 ---
-# <a name="step-6-add-a-timer"></a>Schritt 6: Hinzufügen eines Timers
-Als Nächstes fügen Sie dem Spiel ein **Timer**-Steuerelement hinzu. Ein solcher Timer wartet eine angegebene Anzahl von Millisekunden und löst anschließend ein Ereignis aus, das als *Tick* bezeichnet wird. Dies ist nützlich für den Start einer Aktion oder die regelmäßige Wiederholung eine Aktion. In diesem Fall verwenden Sie einen Zeitgeber, um dem Spieler zu ermöglichen, zwei Symbole auszuwählen, und um die beiden Symbole nach einer kurzen Zeit wieder auszublenden, sofern sie nicht übereinstimmen.  
+# <a name="step-6-add-a-timer"></a>Step 6: Add a Timer
+Next, you add a **Timer** control to the matching game. A timer waits a specified number of milliseconds, and then fires an event, referred to as a *tick*. This is useful for starting an action, or repeating an action on a regular basis. In this case, you'll use a timer to enable players to choose two icons, and if the icons don't match, hide the two icons again after a short period of time.  
   
-### <a name="to-add-a-timer"></a>So fügen Sie einen Timer hinzu  
+### <a name="to-add-a-timer"></a>To add a timer  
   
-1.  Wählen Sie **Timer** in der Toolbox des Windows Forms-Designers (in der Kategorie **Komponenten**) und drücken Sie anschließend die EINGABETASTE, oder doppelklicken Sie auf den Zeitgeber, um dem Formular ein Zeitgeber-Steuerelement hinzuzufügen. Das Symbol des Timers mit dem Namen **Timer1** wird in einem Bereich unterhalb des Formulars angezeigt, wie in der folgenden Abbildung dargestellt.  
+1.  From the toolbox in Windows Forms Designer, choose **Timer** (in the **Components** category) and then choose the ENTER key, or double-click the timer to add a timer control to the form. The timer's icon, called **Timer1**, should appear in a space below the form, as shown in the following picture.  
   
-     ![Zeitgeber](~/ide/media/express_timer.png "Express_Timer")  
-Zeitgeber  
-  
-    > [!NOTE]
-    >  Wenn die Toolbox leer ist, haben Sie zuvor möglicherweise nicht den Formular-Designer aktiviert, sondern den Code für das Formular.  
-  
-2.  Wählen Sie das Symbol **Timer1**, um den Timer auszuwählen. Im Fenster **Eigenschaften** wechseln Sie von der Anzeige der Ereignisse zur Anzeige der Eigenschaften. Legen Sie die **Interval**-Eigenschaft des Timers auf **750** fest, ohne den Wert **FALSE** der **Enabled**-Eigenschaft zu ändern. Die Eigenschaft **Interval** gibt an, wie lange der Timer zwischen *Ticks* wartet bzw. wann das Tick-Ereignis auslöst werden soll. Mit dem Wert „750“ wartet der Timer eine Dreiviertelsekunde (750 Millisekunden), bevor er das Tick-Ereignis auslöst. Sie rufen die `Start()`-Methode für den Start des Zeitgeber nur auf, nachdem der Spieler das zweite Bezeichnungsfeld auswählt hat.  
-  
-3.  Wählen Sie das Symbol des Timer-Steuerelements im Windows Forms-Designer und dann die EINGABETASTE, oder doppelklicken Sie auf den Timer, um einen leeren **Tick**-Ereignishandler hinzuzufügen. Ersetzen Sie entweder den Code durch den folgenden Code, oder geben Sie den folgenden Code manuell in den Ereignishandler ein.  
-  
-     [!code-cs[VbExpressTutorial4Step6#7](../ide/codesnippet/CSharp/step-6-add-a-timer_1.cs)]  [!code-vb[VbExpressTutorial4Step6#7](../ide/codesnippet/VisualBasic/step-6-add-a-timer_1.vb)]  
-  
-     Der Tick-Ereignishandler bewirkt drei Dinge. Zuerst beendet er den Zeitgeber, indem er die `Stop()`-Methode aufruft. Anschließend verwendet er die beiden Verweisvariablen `firstClicked` und `secondClicked`, um die Symbole für die zwei Bezeichnungsfelder, die der Spieler gewählt hat, wieder unsichtbar zu machen. Zuletzt setzt er die Verweisvariablen `firstClicked` und `secondClicked` in Visual C# auf `null` und in Visual Basic auf `Nothing` zurück. Dieser Schritt ist wichtig, weil sich das Programm auf diese Weise selbst zurücksetzt. In diesem Zustand werden keine `Label`-Steuerelemente überwacht, und das Programm ist wieder für eine Auswahl des Spielers bereit.  
+     ![Timer](../ide/media/express_timer.png "Express_Timer")  
+Timer  
   
     > [!NOTE]
-    >  Ein `Timer`-Objekt verfügt über eine `Start()`-Methode, die den Zeitgeber startet, und eine `Stop()`-Methode, die den Zeitgeber stoppt. Wenn Sie die **Enabled**-Eigenschaft des Timers im **Eigenschaftenfenster** auf **TRUE** festlegen,fängt dieser an zu laufen, sobald das Programm beginnt. Wenn Sie die Eigenschaft jedoch auf **FALSE** festgelegt lassen, fängt dieser erst an zu laufen, wenn seine `Start()`-Methode aufgerufen wird. Normalerweise löst ein Timer sein Tick-Ereignis immer wieder aus, wobei in der **Interval**-Eigenschaft festgelegt ist, wie viele Millisekunden zwischen Ticks gewartet wird. Sie haben möglicherweise bemerkt, dass im Tick-Ereignis die `Stop()`-Methode des Zeitgebers aufgerufen wird. Damit wird der Timer in den *Einmalmodus* versetzt, was bedeutet, dass er nach dem Aufruf der `Start()`-Methode das festgelegte Zeitintervall wartet, dann ein Tick-Ereignis auslöst und anschließend stoppt.  
+    >  If the toolbox is empty, be sure to select the form designer, and not the code behind the form, before opening the toolbox.  
   
-4.  Um den neuen Zeitgeber in Aktion zu sehen, wechseln Sie zum Code-Editor und fügen am Anfang und Ende der `label_Click()`-Ereignishandlermethode den folgenden Code hinzu. (Sie fügen am Anfang eine `if`-Anweisung und am Ende drei Anweisungen hinzu. Der Rest der Methode bleibt unverändert.)  
+2.  Choose the **Timer1** icon to select the timer. In the **Properties** window, switch from viewing events to viewing properties. Then, set the timer's **Interval** property to **750**, but leave its **Enabled** property set to **False**. The **Interval** property tells the timer how long to wait between *ticks*, or when it triggers its Tick event. A value of 750 tells the timer to wait three quarters of a second (750 milliseconds) before it fires its Tick event. You'll call the `Start()` method to start the timer only after the player chooses the second label.  
   
-     [!code-cs[VbExpressTutorial4Step6#8](../ide/codesnippet/CSharp/step-6-add-a-timer_2.cs)]  [!code-vb[VbExpressTutorial4Step6#8](../ide/codesnippet/VisualBasic/step-6-add-a-timer_2.vb)]  
+3.  Choose the timer control icon in Windows Forms Designer and then choose the ENTER key, or double-click the timer, to add an empty **Tick** event handler. Either replace the code with the following code, or manually enter the following code into the event handler.  
   
-     Der Code am Anfang der Methode ermittelt durch Überprüfung des Werts der **Enabled**-Eigenschaft, ob der Timer gestartet wurde. Wenn der Spieler also das erste und zweite `Label`-Steuerelement wählt und der Timer gestartet wird, hat die Auswahl eines dritten Steuerelements keinerlei Auswirkungen.  
+     [!code-csharp[VbExpressTutorial4Step6#7](../ide/codesnippet/CSharp/step-6-add-a-timer_1.cs)]  [!code-vb[VbExpressTutorial4Step6#7](../ide/codesnippet/VisualBasic/step-6-add-a-timer_1.vb)]  
   
-     Mit dem Code am Ende der Methode wird die `secondClicked`-Verweisvariable festgelegt, um das zweite `Label`-Steuerelement zu ermitteln, das der Spieler gewählt hat. Anschließend wird die Farbe des Symbols im Bezeichnungsfeld auf Schwarz festgelegt, um es sichtbar zu machen. Dann startet der Code den Timer im Einmalmodus, sodass dieser 750 Millisekunden lang wartet und dann ein einzelnes Tick-Ereignis auslöst. Der Tick-Ereignishandler des Timers blendet dann die beiden Symbole aus und setzt die Verweisvariablen `firstClicked` und `secondClicked` zurück, damit das Formular dafür bereit ist, dass der Spieler ein anderes Symbol wählt.  
+     The Tick event handler does three things: First, it makes sure the timer isn't running by calling the `Stop()` method. Then it uses two reference variables, `firstClicked` and `secondClicked`, to make the icons of the two labels that the player chose invisible again. Finally, it resets the `firstClicked` and `secondClicked` reference variables to `null` in Visual C# and `Nothing` in Visual Basic. This step is important because it's how the program resets itself. Now it's not keeping track of any `Label` controls, and it's ready for the player to choose a label again.  
   
-5.  Speichern Sie das Programm, und führen Sie es aus. Wenn Sie ein Symbol wählen, wird es sichtbar.  
+    > [!NOTE]
+    >  A `Timer` object has a `Start()` method that starts the timer, and a `Stop()` method that stops it. When you set the timer's **Enabled** property to **True** in the **Properties** window, it starts ticking as soon as the program begins. But when you leave it set to **False**, it doesn't start ticking until its `Start()` method is called. Normally, a timer fires its Tick event over and over again, using the **Interval** property to determine how many milliseconds to wait between ticks. You may have noticed how the timer's `Stop()` method is called inside the Tick event. That puts the timer into *one shot mode*, meaning that when the `Start()` method is called, it waits for the specified interval, triggers a single Tick event, and then stops.  
   
-6.  Wählen Sie ein anderes Symbol. Es wird kurz angezeigt, und dann werden beide Symbole wieder ausgeblendet. Wiederholen Sie dies mehrere Male. Das Formular überwacht jetzt das erste und zweite gewählte Symbol und verwendet den Zeitgeber, um bis zum Ausblenden der Symbole zu warten.  
+4.  To see the new timer in action, go to the code editor and add the following code to the top and bottom of the `label_Click()` event handler method. (You're adding an `if` statement to the top, and three statements to the bottom; the rest of the method stays the same.)  
   
-### <a name="to-continue-or-review"></a>So fahren Sie fort oder überprüfen die Angaben  
+     [!code-csharp[VbExpressTutorial4Step6#8](../ide/codesnippet/CSharp/step-6-add-a-timer_2.cs)]  [!code-vb[VbExpressTutorial4Step6#8](../ide/codesnippet/VisualBasic/step-6-add-a-timer_2.vb)]  
   
--   Um zum nächsten Schritt des Tutorials zu wechseln, klicken Sie auf [Schritt 7: Beibehalten der Sichtbarkeit von Paaren](../ide/step-7-keep-pairs-visible.md).  
+     The code at the top of the method checks whether the timer was started by checking the value of the **Enabled** property. That way, if the player chooses the first and second `Label` controls and the timer starts, choosing a third label won't do anything.  
   
--   Um zum vorherigen Tutorialschritt zurückzukehren, klicken Sie auf [Schritt 5: Hinzufügen von Bezeichnungsverweisen](../ide/step-5-add-label-references.md).
+     The code at the bottom of the method sets the `secondClicked` reference variable to track the second `Label` control that the player chose, and then it sets that label's icon color to black to make it visible. Then, it starts the timer in one shot mode, so that it waits 750 milliseconds and then fires a single Tick event. The timer's Tick event handler hides the two icons and resets the `firstClicked` and `secondClicked` reference variables so the form is ready for the player to choose another pair of icons.  
+  
+5.  Save and run your program. Choose an icon, and it becomes visible.  
+  
+6.  Choose another icon. It appears briefly, and then both icons disappear. Repeat this numerous times. The form now keeps track of the first and second icons that you choose, and uses the timer to pause before making the icons disappear.  
+  
+### <a name="to-continue-or-review"></a>To continue or review  
+  
+-   To go to the next tutorial step, see [Step 7: Keep Pairs Visible](../ide/step-7-keep-pairs-visible.md).  
+  
+-   To return to the previous tutorial step, see [Step 5: Add Label References](../ide/step-5-add-label-references.md).

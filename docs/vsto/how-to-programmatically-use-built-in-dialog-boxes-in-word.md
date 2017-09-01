@@ -1,57 +1,61 @@
 ---
-title: "Gewusst wie: Programmgesteuertes Verwenden integrierter Dialogfelder in Word"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Word [Office-Entwicklung in Visual Studio], Dialogfelder"
-  - "Dialogfelder, Word"
+title: 'How to: Programmatically Use Built-In Dialog Boxes in Word | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Word [Office development in Visual Studio], dialog boxes
+- dialog boxes, Word
 ms.assetid: 0c7e4338-dead-4444-868b-3b0212368455
 caps.latest.revision: 54
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 53
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 2ef0508f7a625e91dc4d82965a6f39cb1b71c5e7
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Gewusst wie: Programmgesteuertes Verwenden integrierter Dialogfelder in Word
-  Bei der Arbeit mit Microsoft Office Word ist es gelegentlich nötig, Dialogfelder für Benutzereingaben anzuzeigen.  Sie können eigene Dialogfelder erstellen oder aber die in Word integrierten Dialogfelder verwenden, die in der <xref:Microsoft.Office.Interop.Word.Dialogs>\-Auflistung des <xref:Microsoft.Office.Interop.Word.Application>\-Objekts verfügbar sind.  Auf diese Weise können Sie auf mehr als 200 integrierte Dialogfelder zugreifen, die als Enumerationen dargestellt sind.  
+# <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>How to: Programmatically Use Built-In Dialog Boxes in Word
+  When working with Microsoft Office Word, there are times when you need to display dialog boxes for user input. Although you can create your own, you might also want to take the approach of using the built-in dialog boxes in Word, which are exposed in the <xref:Microsoft.Office.Interop.Word.Dialogs> collection of the <xref:Microsoft.Office.Interop.Word.Application> object. This enables you to access over 200 of the built-in dialog boxes, which are represented as enumerations.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-## Anzeigen von Dialogfeldern  
- Verwenden Sie zum Anzeigen eines Dialogfelds einen der Werte der <xref:Microsoft.Office.Interop.Word.WdWordDialog>\-Enumeration, um ein <xref:Microsoft.Office.Interop.Word.Dialog>\-Objekt zu erstellen, das das anzuzeigende Dialogfeld darstellt.  Rufen Sie anschließend die <xref:Microsoft.Office.Interop.Word.Dialog.Show%2A>\-Methode eines <xref:Microsoft.Office.Interop.Word.Dialog>\-Objekts auf.  
+## <a name="displaying-dialog-boxes"></a>Displaying Dialog Boxes  
+ To display a dialog box, use one of the values of the <xref:Microsoft.Office.Interop.Word.WdWordDialog> enumeration to create a <xref:Microsoft.Office.Interop.Word.Dialog> object that represents the dialog box you want to display. Then, call the <xref:Microsoft.Office.Interop.Word.Dialog.Show%2A> method of the <xref:Microsoft.Office.Interop.Word.Dialog> object.  
   
- Im folgenden Codebeispiel wird veranschaulicht, wie das Dialogfeld **Datei öffnen** angezeigt wird.  Wenn Sie dieses Beispiel verwenden möchten, führen Sie es von der `ThisDocument`\-Klasse oder der `ThisAddIn`\-Klasse im Projekt aus.  
+ The following code example demonstrates how to display the **File Open** dialog box. To use this example, run it from the `ThisDocument` or `ThisAddIn` class in your project.  
   
- [!code-csharp[Trin_VstcoreWordAutomation#100](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/CS/ThisDocument.cs#100)]
- [!code-vb[Trin_VstcoreWordAutomation#100](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/VB/ThisDocument.vb#100)]  
+ [!code-vb[Trin_VstcoreWordAutomation#100](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#100)] [!code-csharp[Trin_VstcoreWordAutomation#100](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#100)]  
   
-### Zugreifen auf Dialogfeldmember, die durch späte Bindung verfügbar sind  
- Einige Eigenschaften und Methoden von Dialogfeldern in Word sind nur durch späte Bindung verfügbar.  In Visual Basic\-Projekten, in denen **Option Strict** aktiviert ist, müssen Sie Reflektion verwenden, um diese Member zugreifen.  Weitere Informationen finden Sie unter [Späte Bindung in Office-Lösungen](../vsto/late-binding-in-office-solutions.md).  
+### <a name="accessing-dialog-box-members-that-are-available-through-late-binding"></a>Accessing Dialog Box Members That Are Available Through Late Binding  
+ Some properties and methods of dialog boxes in Word are available only through late binding. In Visual Basic projects where **Option Strict** is on, you must use reflection to access these members. For more information, see [Late Binding in Office Solutions](../vsto/late-binding-in-office-solutions.md).  
   
- Weg von das folgende Codebeispiel zeigt, wie die \- Eigenschaft des Dialogfelds **NameDatei öffnen** verwendet in Visual Basic\-Projekten, dem **Option Strict** ist oder Visual C\#, damit das [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] oder [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] abzielen.  Wenn Sie dieses Beispiel verwenden möchten, führen Sie es von der `ThisDocument`\-Klasse oder der `ThisAddIn`\-Klasse im Projekt aus.  
+ The following code example demonstrates how to use the **Name** property of the **File Open** dialog box in Visual Basic projects where **Option Strict** is off or in Visual C# projects that target the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] or the [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. To use this example, run it from the `ThisDocument` or `ThisAddIn` class in your project.  
   
- [!code-csharp[Trin_VstcoreWordAutomation#122](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/CS/ThisDocument.cs#122)]
- [!code-vb[Trin_VstcoreWordAutomation#122](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/VB/ThisDocument.vb#122)]  
+ [!code-vb[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#122)] [!code-csharp[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#122)]  
   
- Im folgenden Codebeispiel wird veranschaulicht, wie Reflektion verwendet, um auf die **Name**\-Eigenschaft **Datei öffnen** des Dialogfelds in Visual Basic\-Projekten zuzugreifen, in dem **Option Strict** aktiviert ist.  Wenn Sie dieses Beispiel verwenden möchten, führen Sie es von der `ThisDocument`\-Klasse oder der `ThisAddIn`\-Klasse im Projekt aus.  
+ The following code example demonstrates how to use reflection to access the **Name** property of the **File Open** dialog box in Visual Basic projects where **Option Strict** is on. To use this example, run it from the `ThisDocument` or `ThisAddIn` class in your project.  
   
- [!code-vb[Trin_VstcoreWordAutomation#102](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/VB/ThisDocument.vb#102)]  
+ [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]  
   
-## Siehe auch  
- [Gewusst wie: Programmgesteuertes Verwenden von Word-Dialogfeldern im ausgeblendeten Modus](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)   
- [Übersicht über das Word-Objektmodell](../vsto/word-object-model-overview.md)   
- [Optionale Parameter in Office-Lösungen](../vsto/optional-parameters-in-office-solutions.md)   
+## <a name="see-also"></a>See Also  
+ [How to: Programmatically Use Word Dialog Boxes in Hidden Mode](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)   
+ [Word Object Model Overview](../vsto/word-object-model-overview.md)   
+ [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)   
  [Option Strict Statement](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
- [Reflektion &#40;C&#35; und Visual Basic&#41;](http://msdn.microsoft.com/library/5d1d1bcf-08de-4d0b-97a8-912d17c00f26)  
+ [Reflection (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
+ [Reflection (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  
   
   

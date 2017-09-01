@@ -1,59 +1,76 @@
 ---
-title: "IEnumDebugFields::Next | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugFields::Next"
-helpviewer_keywords: 
-  - "IEnumDebugFields::Next-Methode"
+title: IEnumDebugFields::Next | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IEnumDebugFields::Next
+helpviewer_keywords:
+- IEnumDebugFields::Next method
 ms.assetid: 22c177a2-af81-4234-812b-f9b47be245a2
 caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
----
-# IEnumDebugFields::Next
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 99c3d5318e773c7e09a2f99beeec23f09aae12b3
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
-Diese Methode gibt die nächste Gruppe von Elementen aus der Enumeration zurück.  
+---
+# <a name="ienumdebugfieldsnext"></a>IEnumDebugFields::Next
+This method returns the next set of elements from the enumeration.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Next(  
-   ULONG         celt,  
-   IDebugField** rgelt,  
-   ULONG*        pceltFetched  
+   ULONG         celt,  
+   IDebugField** rgelt,  
+   ULONG*        pceltFetched  
 );  
 ```  
   
-```c#  
+```csharp  
 int Next(  
-   uint          celt,  
-   IDebugField[] rgelt,  
-   ref uint      pceltFetched  
+   uint          celt,  
+   IDebugField[] rgelt,  
+   ref uint      pceltFetched  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `celt`  
- \[in\]  Die Anzahl der abzurufenden Elemente.  Gibt die maximale Größe des `rgelt` Arrays an.  
+ [in] The number of elements to retrieve. Also specifies the maximum size of the `rgelt` array.  
   
  `rgelt`  
- \[in, out\]  Array von Elementen, [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) ausgefüllt werden soll.  
+ [in, out] Array of [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) elements to be filled in.  
   
  `pceltFetched`  
- \[out\]  Gibt die Anzahl der Elemente zurück, die sich tatsächlich in `rgelt`zurückgegeben werden.  
+ [out] Returns the number of elements actually returned in `rgelt`.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück.  Gibt `S_FALSE` zurück, wenn kleiner als die angeforderte Anzahl von Elementen zurückgegeben werden konnte. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`. Returns `S_FALSE` if fewer than the requested number of elements could be returned; otherwise, returns an error code.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

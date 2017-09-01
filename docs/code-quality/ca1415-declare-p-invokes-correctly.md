@@ -1,53 +1,70 @@
 ---
-title: "CA1415: P/Invokes korrekt deklarieren | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1415"
-  - "DeclarePInvokesCorrectly"
-helpviewer_keywords: 
-  - "CA1415"
-  - "DeclarePInvokesCorrectly"
+title: 'CA1415: Declare P-Invokes correctly | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1415
+- DeclarePInvokesCorrectly
+helpviewer_keywords:
+- CA1415
+- DeclarePInvokesCorrectly
 ms.assetid: 42a90796-0264-4460-bf97-2fb4a093dfdc
 caps.latest.revision: 15
-caps.handback.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA1415: P/Invokes korrekt deklarieren
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 2e19d4a786bb58ac6fac55ebcb977be8c330a081
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1415-declare-pinvokes-correctly"></a>CA1415: Declare P/Invokes correctly
 |||  
 |-|-|  
 |TypeName|DeclarePInvokesCorrectly|  
 |CheckId|CA1415|  
-|Kategorie \(Category\)|Microsoft.Interoperability|  
-|Unterbrechende Änderung|Nicht unterbrechend – Wenn das P\/Invoke, das den Parameter deklariert, außerhalb der Assembly nicht sichtbar ist.  Nicht unterbrechend – Wenn das P\/Invoke, das den Parameter deklariert, außerhalb der Assembly sichtbar ist.|  
+|Category|Microsoft.Interoperability|  
+|Breaking Change|Non-breaking - If the P/Invoke that declares the parameter cannot be seen outside the assembly. Breaking - If the P/Invoke that declares the parameter can be seen outside the assembly.|  
   
-## Ursache  
- Eine Plattformaufrufmethode wurde falsch deklariert.  
+## <a name="cause"></a>Cause  
+ A platform invoke method is incorrectly declared.  
   
-## Regelbeschreibung  
- Eine Plattformaufrufmethode greift auf nicht verwalteten Code zu und wird mit dem `Declare`\-Schlüsselwort in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] oder dem <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> definiert.  Derzeit sucht diese Regel nach Deklarationen für eine Plattformaufrufmethode, die Win32\-Funktionen mit einem Zeiger auf einen OVERLAPPED\-Strukturparameter zum Ziel haben, der zugehörige verwaltete Parameter ist jedoch kein Zeiger auf eine <xref:System.Threading.NativeOverlapped?displayProperty=fullName>\-Struktur.  
+## <a name="rule-description"></a>Rule Description  
+ A platform invoke method accesses unmanaged code and is defined by using the `Declare` keyword in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] or the <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. Currently, this rule looks for platform invoke method declarations that target Win32 functions that have a pointer to an OVERLAPPED structure parameter and the corresponding managed parameter is not a pointer to a <xref:System.Threading.NativeOverlapped?displayProperty=fullName> structure.  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, deklarieren Sie die Plattformaufrufmethode korrekt.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, correctly declare the platform invoke method.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Unterdrücken Sie keine Warnung dieser Regel.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule.  
   
-## Beispiel  
- Im folgenden Beispiel werden Plattformaufrufmethoden veranschaulicht, die gegen die Regel verstoßen und die Regel einhalten.  
+## <a name="example"></a>Example  
+ The following example shows platform invoke methods that violate the rule and satisfy the rule.  
   
- [!code-cs[FxCop.Interoperability.DeclarePInvokes#1](../code-quality/codesnippet/CSharp/ca1415-declare-p-invokes-correctly_1.cs)]  
+ [!code-csharp[FxCop.Interoperability.DeclarePInvokes#1](../code-quality/codesnippet/CSharp/ca1415-declare-p-invokes-correctly_1.cs)]  
   
-## Siehe auch  
- [Interoperating with Unmanaged Code](../Topic/Interoperating%20with%20Unmanaged%20Code.md)
+## <a name="see-also"></a>See Also  
+ [Interoperating with Unmanaged Code](/dotnet/framework/interop/index)

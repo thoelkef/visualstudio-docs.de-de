@@ -25,7 +25,7 @@
       "build_output_subfolder": "scripting-docs",
       "locale": "de-de",
       "monikers": [],
-      "open_to_public_contributors": true,
+      "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -40,7 +40,7 @@
       "build_output_subfolder": "mac",
       "locale": "de-de",
       "monikers": [],
-      "open_to_public_contributors": true,
+      "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -72,7 +72,17 @@
         "live": "live",
         "master": "master"
       }
+    },
+    {
+      "path_to_root": "dotnet-xref",
+      "url": "https://github.com/MicrosoftDocs/dotnet-xref",
+      "branch": "live",
+      "branch_mapping": {
+        "live": "live",
+        "master": "master"
+       }
     }
   ],
+  "branch_target_mapping": {},
   "need_generate_pdf_url_template": false
 }

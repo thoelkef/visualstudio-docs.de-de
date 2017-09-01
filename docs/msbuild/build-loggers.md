@@ -1,87 +1,104 @@
 ---
-title: "Build Loggers | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "MSBuild, writing loggers"
-  - "MSBuild, logging"
-  - "logging [MSBuild]"
+title: Build Loggers | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- MSBuild, writing loggers
+- MSBuild, logging
+- logging [MSBuild]
 ms.assetid: fa34810d-185a-4d22-92bd-9852915e5f1d
 caps.latest.revision: 11
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# Build Loggers
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: ee5db285c55dc3969bd21fe722d7e4bacdcb6f3c
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
 
-Mithilfe von Protokollierungen können Sie die Buildausgabe anpassen und Meldungen, Fehler oder Warnungen als Antwort auf bestimmte Buildereignisse anzeigen lassen.  Jede Protokollierung wird als .NET\-Klasse implementiert, durch die die in der Assembly Microsoft.Build.Framework.dll definierte <xref:Microsoft.Build.Framework.ILogger>\-Schnittstelle eingerichtet wird.  
+---
+# <a name="build-loggers"></a>Build Loggers
+Loggers provide a way for you to customize the output of your build and display messages, errors, or warnings in response to specific build events. Each logger is implemented as a .NET class that implements the <xref:Microsoft.Build.Framework.ILogger> interface, which is defined in the Microsoft.Build.Framework.dll assembly.  
   
- Eine Protokollierung kann auf zwei Weisen implementiert werden:  
+ There are two approaches you can use when implementing a logger:  
   
--   Direktes Implementieren der <xref:Microsoft.Build.Framework.ILogger>\-Schnittstelle  
+-   Implement the <xref:Microsoft.Build.Framework.ILogger> interface directly.  
   
--   Ableiten der Klasse von der <xref:Microsoft.Build.Utilities.Logger>\-Hilfsklasse, die in der Assembly Microsoft.Build.Utilities.dll definiert ist.  <xref:Microsoft.Build.Utilities.Logger> implementiert <xref:Microsoft.Build.Framework.ILogger> und stellt Standardimplementierungen einiger <xref:Microsoft.Build.Framework.ILogger>\-Member bereit.  
+-   Derive your class from the helper class, <xref:Microsoft.Build.Utilities.Logger>, which is defined in the Microsoft.Build.Utilities.dll assembly. <xref:Microsoft.Build.Utilities.Logger> implements <xref:Microsoft.Build.Framework.ILogger> and provides default implementations of some <xref:Microsoft.Build.Framework.ILogger> members.  
   
- In diesem Thema wird erläutert, wie Sie eine einfache Protokollierung schreiben, die von <xref:Microsoft.Build.Utilities.Logger> abgeleitet wird und Konsolenmeldungen als Antwort auf bestimmte Buildereignisse anzeigt.  
+ This topic will explain how to write a simple logger that derives from <xref:Microsoft.Build.Utilities.Logger>, and displays messages on the console in response to certain build events.  
   
-## Registrieren für Ereignisse  
- Der Zweck einer Protokollierung besteht darin, Informationen zum Fortschritt des Buildvorgangs – so wie sie vom Buildmodul übermittelt werden – zu sammeln und diese Informationen in verständlicher Form mitzuteilen.  Alle Protokollierungen müssen die <xref:Microsoft.Build.Utilities.Logger.Initialize%2A>\-Methode überschreiben, in der die Protokollierung für Ereignisse registriert wird.  In diesem Beispiel wird die Protokollierung für die Ereignisse <xref:Microsoft.Build.Framework.IEventSource.TargetStarted>, <xref:Microsoft.Build.Framework.IEventSource.ProjectStarted> und <xref:Microsoft.Build.Framework.IEventSource.ProjectFinished> registriert.  
+## <a name="registering-for-events"></a>Registering for Events  
+ The purpose of a logger is to gather information on build progress as it is reported by the build engine, and then report that information in a useful way. All loggers must override the <xref:Microsoft.Build.Utilities.Logger.Initialize%2A> method, which is where the logger registers for events. In this example, the logger registers for the <xref:Microsoft.Build.Framework.IEventSource.TargetStarted>, <xref:Microsoft.Build.Framework.IEventSource.ProjectStarted>, and <xref:Microsoft.Build.Framework.IEventSource.ProjectFinished> events.  
   
- [!code-cs[msbuild_SimpleConsoleLogger#2](../msbuild/codesnippet/CSharp/build-loggers_1.cs)]  
+ [!code-csharp[msbuild_SimpleConsoleLogger#2](../msbuild/codesnippet/CSharp/build-loggers_1.cs)]  
   
-## Reagieren auf Ereignisse  
- Nachdem die Protokollierung für bestimmte Ereignisse registriert wurde, muss sie diese Ereignisse bei deren Auftreten verarbeiten.  Bei dem <xref:Microsoft.Build.Framework.IEventSource.ProjectStarted>\-Ereignis und dem <xref:Microsoft.Build.Framework.IEventSource.ProjectFinished>\-Ereignis wird von der Protokollierung einfach ein kurzer Satz und der Name der mit dem Ereignis verknüpften Projektdatei geschrieben.  Alle von der Protokollierung ausgegebenen Meldungen werden in das Konsolenfenster geschrieben.  
+## <a name="responding-to-events"></a>Responding to Events  
+ Now that the logger is registered for specific events, it needs to handle those events when they occur. For the <xref:Microsoft.Build.Framework.IEventSource.ProjectStarted>, and <xref:Microsoft.Build.Framework.IEventSource.ProjectFinished> events, the logger simply writes a short phrase and the name of the project file involved in the event. All messages from the logger are written to the console window.  
   
- [!code-cs[msbuild_SimpleConsoleLogger#3](../msbuild/codesnippet/CSharp/build-loggers_2.cs)]  
+ [!code-csharp[msbuild_SimpleConsoleLogger#3](../msbuild/codesnippet/CSharp/build-loggers_2.cs)]  
   
-## Werte für den Ausführlichkeitsgrad der Protokollierung, ab denen reagiert wird  
- In einigen Fällen möchten Sie vielleicht nur Informationen aus einem Ereignis protokollieren, wenn der Schalter **\/verbosity** von MSBuild.exe einen bestimmten Wert enthält.  In diesem Beispiel wird eine Meldung vom <xref:Microsoft.Build.Framework.IEventSource.TargetStarted>\-Ereignishandler nur protokolliert, wenn die <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A>\-Eigenschaft, die mit dem **\/verbosity**\-Schalter festgelegt wird, gleich <xref:Microsoft.Build.Framework.LoggerVerbosity> `Detailed` ist.  
+## <a name="responding-to-logger-verbosity-values"></a>Responding to Logger Verbosity Values  
+ In some cases, you may want to only log information from an event if the MSBuild.exe **/verbosity** switch contains a certain value. In this example, the <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> event handler only logs a message if the <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A> property, which is set by the **/verbosity** switch, is equal to <xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed`.  
   
- [!code-cs[msbuild_SimpleConsoleLogger#4](../msbuild/codesnippet/CSharp/build-loggers_3.cs)]  
+ [!code-csharp[msbuild_SimpleConsoleLogger#4](../msbuild/codesnippet/CSharp/build-loggers_3.cs)]  
   
-## Festlegen einer Protokollierung  
- Nachdem die Protokollierung in eine Assembly kompiliert wurde, müssen Sie [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] anweisen, diese Protokollierung während der Buildvorgänge zu verwenden.  Dies geschieht mit dem **\/logger**\-Schalter von MSBuild.exe.  Weitere Informationen zu den verfügbaren Schaltern für MSBuild.exe finden Sie unter [Command\-Line Reference](../msbuild/msbuild-command-line-reference.md).  
+## <a name="specifying-a-logger"></a>Specifying a Logger  
+ Once the logger is compiled into an assembly, you need to tell [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] to use that logger during builds. This is done using the **/logger** switch with MSBuild.exe. For more information on the switches available for MSBuild.exe, see [Command-Line Reference](../msbuild/msbuild-command-line-reference.md).  
   
- Durch die folgende Befehlszeile wird das Projekt `MyProject.csproj` erstellt und die in `SimpleLogger.dll` implementierte Protokollierungsklasse verwendet.  Durch den **\/nologo**\-Schalter werden Banner und Copyrightmeldungen ausgeblendet, und durch den **\/noconsolelogger**\-Schalter wird die Protokollierung der [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]\-Standardkonsole deaktiviert.  
+ The following command line builds the project `MyProject.csproj` and uses the logger class implemented in `SimpleLogger.dll`. The **/nologo** switch hides the banner and copyright message and the **/noconsolelogger** switch disables the default [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] console logger.  
   
 ```  
 MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll  
 ```  
   
- Durch die folgende Befehlszeile wird das Projekt mit derselben Protokollierung, jedoch mit dem `Verbosity`\-Grad `Detailed` erstellt.  
+ The following command line builds the project with the same logger, but with a `Verbosity` level of `Detailed`.  
   
 ```  
 MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed  
 ```  
   
-## Beispiel  
+## <a name="example"></a>Example  
   
-### Beschreibung  
- Das folgende Beispiel enthält den vollständigen Code für die Protokollierung.  
+### <a name="description"></a>Description  
+ The following example contains the complete code for the logger.  
   
-### Code  
- [!code-cs[msbuild_SimpleConsoleLogger#1](../msbuild/codesnippet/CSharp/build-loggers_4.cs)]  
+### <a name="code"></a>Code  
+ [!code-csharp[msbuild_SimpleConsoleLogger#1](../msbuild/codesnippet/CSharp/build-loggers_4.cs)]  
   
-### Kommentare  
+### <a name="comments"></a>Comments  
   
-## Beispiel  
+## <a name="example"></a>Example  
   
-### Beschreibung  
- Im folgenden Beispiel wird die Implementierung einer Protokollierung veranschaulicht, durch die das Protokoll in eine Datei geschrieben und nicht im Konsolenfenster angezeigt wird.  
+### <a name="description"></a>Description  
+ The following example shows how to implement a logger that writes the log to a file rather than displaying it in the console window.  
   
-### Code  
- [!code-cs[msbuild_BasicLogger#1](../msbuild/codesnippet/CSharp/build-loggers_5.cs)]  
+### <a name="code"></a>Code  
+ [!code-csharp[msbuild_BasicLogger#1](../msbuild/codesnippet/CSharp/build-loggers_5.cs)]  
   
-### Kommentare  
+### <a name="comments"></a>Comments  
   
-## Siehe auch  
- [Erhalten von Buildprotokollen](../msbuild/obtaining-build-logs-with-msbuild.md)   
+## <a name="see-also"></a>See Also  
+ [Obtaining Build Logs](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [MSBuild Concepts](../msbuild/msbuild-concepts.md)

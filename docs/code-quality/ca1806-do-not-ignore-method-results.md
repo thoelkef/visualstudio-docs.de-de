@@ -1,99 +1,108 @@
 ---
-title: "CA1806: Methodenergebnisse nicht ignorieren | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1806"
-  - "DoNotIgnoreMethodResults"
-helpviewer_keywords: 
-  - "CA1806"
-  - "DoNotIgnoreMethodResults"
+title: 'CA1806: Do not ignore method results | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1806
+- DoNotIgnoreMethodResults
+helpviewer_keywords:
+- CA1806
+- DoNotIgnoreMethodResults
 ms.assetid: fd805687-0817-481e-804e-b62cfb3b1076
 caps.latest.revision: 27
-caps.handback.revision: 27
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA1806: Methodenergebnisse nicht ignorieren
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 758939a6e49402d6e4da8d9e0d549e8da94f1bb8
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1806-do-not-ignore-method-results"></a>CA1806: Do not ignore method results
 |||  
 |-|-|  
 |TypeName|DoNotIgnoreMethodResults|  
 |CheckId|CA1806|  
-|Kategorie \(Category\)|Microsoft.Usage|  
-|Unterbrechende Änderung|Nicht unterbrechend|  
+|Category|Microsoft.Usage|  
+|Breaking Change|Non Breaking|  
   
-## Ursache  
- Diese Warnung kann unterschiedliche Gründe haben:  
+## <a name="cause"></a>Cause  
+ There are several possible reasons for this warning:  
   
--   Es wurde ein neues Objekt erstellt, jedoch nie verwendet.  
+-   A new object is created but never used.  
   
--   Es wird eine Methode aufgerufen, die eine neue Zeichenfolge erstellt und zurückgibt, allerdings wird die neue Zeichenfolge nie verwendet.  
+-   A method that creates and returns a new string is called and the new string is never used.  
   
--   Eine COM\- oder P\/Invoke\-Methode, die ein HRESULT oder einen Fehlercode zurückgibt, das oder der nie verwendet wird.  Regelbeschreibung  
+-   A COM or P/Invoke method that returns a HRESULT or error code that is never used. Rule Description  
   
- Die unnötige Objekterstellung und die zugeordnete Garbage Collection des nicht verwendeten Objekts beeinträchtigen die Leistung.  
+ Unnecessary object creation and the associated garbage collection of the unused object degrade performance.  
   
- Zeichenfolgen sind nicht veränderlich, und bestimmte Methoden, z. B. String.ToUpper, geben eine neue Instanz einer Zeichenfolge zurück, statt die Instanz der Zeichenfolge in der aufrufenden Methode zu ändern.  
+ Strings are immutable and methods such as String.ToUpper returns a new instance of a string instead of modifying the instance of the string in the calling method.  
   
- Wenn HRESULT oder der Fehlercode ignoriert werden, kann dies zu unerwartetem Verhalten in Fehlerbedingungen oder Situationen führen, in denen nur geringe Ressourcen verfügbar sind.  
+ Ignoring HRESULT or error code can lead to unexpected behavior in error conditions or to low-resource conditions.  
   
-## Behandeln von Verstößen  
- Wenn Methode A eine neue Instanz von Objekt B erstellt, das nie verwendet wird, übergeben Sie die Instanz als Argument an eine andere Methode, oder weisen Sie die Instanz einer Variablen zu.  Wenn die Objekterstellung nicht erforderlich ist, entfernen Sie das it. – oder –  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ If method A creates a new instance of B object that is never used, pass the instance as an argument to another method or assign the instance to a variable. If the object creation is unnecessary, remove the it.-or-  
   
- Wenn die Methode A Methode B aufruft, jedoch nicht die neue, von Methode B zurückgegebene Zeichenfolgeninstanz verwendet.  Übergeben Sie die Instanz als Argument an eine andere Methode, weisen Sie die Instanz einer Variablen zu.  Wenn der Aufruf nicht erforderlich ist, können Sie diesen auch entfernen.  
+ If method A calls method B, but does not use the new string instance that the method B returns. Pass the instance as an argument to another method, assign the instance to a variable. Or remove the call if it is unnecessary.  
   
- \- oder \-  
+ -or-  
   
- Wenn Methode A Methode B aufruft, jedoch nicht das HRESULT oder den Fehlercode verwendet, das oder der von der Methode zurückgegeben wird.  Verwenden Sie das Ergebnis in einer Bedingungsanweisung, weisen Sie das Ergebnis einer Variablen zu, oder übergeben Sie es als Argument an eine andere Methode.  
+ If method A calls method B, but does not use the HRESULT or error code that the method returns. Use the result in a conditional statement, assign the result to a variable, or pass it as an argument to another method.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Unterdrücken Sie keine Warnung dieser Regel, es sei denn, mit der Objekterstellung wird ein bestimmter Zweck verfolgt.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule unless the act of creating the object serves some purpose.  
   
-## Beispiel  
- Das folgende Beispiel zeigt eine Klasse, die das Ergebnis des Aufrufs von String.Trim ignoriert.  
+## <a name="example"></a>Example  
+ The following example shows a class that ignores the result of calling String.Trim.  
   
- [!CODE [FxCop.Usage.DoNotIgnoreMethodResults#1](FxCop.Usage.DoNotIgnoreMethodResults#1)]  
+ [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_1.cs)] [!code-vb[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/VisualBasic/ca1806-do-not-ignore-method-results_1.vb)] [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_1.cpp)]  
   
-## Beispiel  
- Im folgenden Beispiel wird der vorherige Verstoß korrigiert, indem das Ergebnis von String.Trim der Variablen, für die die Methode aufgerufen wurde, erneut zugeordnet wird.  
+## <a name="example"></a>Example  
+ The following example fixes the previous violation by assigning the result of String.Trim back to the variable it was called on.  
   
- [!CODE [FxCop.Usage.DoNotIgnoreMethodResults2#1](FxCop.Usage.DoNotIgnoreMethodResults2#1)]  
+ [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_2.cs)] [!code-vb[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/VisualBasic/ca1806-do-not-ignore-method-results_2.vb)] [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_2.cpp)]  
   
-## Beispiel  
- Im folgenden Beispiel wird eine Methode veranschaulicht, die kein von ihr erstelltes Objekt verwendet.  
+## <a name="example"></a>Example  
+ The following example shows a method that does not use an object that it creates.  
   
 > [!NOTE]
->  Dieser Verstoß kann nicht in Visual Basic reproduziert werden.  
+>  This violation cannot be reproduced in Visual Basic.  
+
+ [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_3.cpp)] [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_3.cs)]   
   
- [!code-cs[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_1.cs)]
- [!code-vb[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/VisualBasic/ca1806-do-not-ignore-method-results_1.vb)]
- [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_1.cpp)]  
+## <a name="example"></a>Example  
+ The following example fixes the previous violation by removing the unnecessary creation of an object.  
+
+ [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults6#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_4.cs)] [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults6#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_4.cpp)] 
+
+<!-- Examples don't exist for the below... -->
+<!--
+## Example  
+ The following example shows a method that ignores the error code that the native method GetShortPathName returns.  
   
-## Beispiel  
- Im folgenden Beispiel wird der vorherige Verstoß korrigiert, indem die unnötige Erstellung eines Objekts entfernt wird.  
-  
- [!code-cs[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_2.cs)]
- [!code-vb[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/VisualBasic/ca1806-do-not-ignore-method-results_2.vb)]
- [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_2.cpp)]  
-  
-## Beispiel  
- Das folgende Beispiel zeigt eine Methode, die den von der systemeigenen GetShortPathName\-Methode zurückgegebenen Fehlercode ignoriert.  
-  
- [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_3.cpp)]
- [!code-cs[FxCop.Usage.DoNotIgnoreMethodResults5#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_3.cs)]  
-  
-## Beispiel  
- Im folgenden Beispiel wird der vorherige Verstoß korrigiert, indem der Fehlercode überprüft wird und eine Ausnahme ausgelöst wird, wenn der Aufruf fehlschlägt.  
-  
- [!code-cs[FxCop.Usage.DoNotIgnoreMethodResults6#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_4.cs)]
- [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults6#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_4.cpp)]
+## Example  
+ The following example fixes the previous violation by checking the error code and throwing an exception when the call fails.  
+-->

@@ -1,72 +1,76 @@
 ---
-title: "Anpassen eines Men&#252;bands f&#252;r InfoPath"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "InfoPath [Office-Entwicklung in Visual Studio], Menüband"
-  - "Menüband [Office-Entwicklung in Visual Studio], InfoPath"
+title: Customizing a Ribbon for InfoPath | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- InfoPath [Office development in Visual Studio], Ribbon
+- Ribbon [Office development in Visual Studio], InfoPath
 ms.assetid: 498c6457-679a-46f2-939f-c0597a17b7ec
 caps.latest.revision: 19
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 18
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: befccdbf740c8ff166cb9d57e1998b07a1c24619
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Anpassen eines Men&#252;bands f&#252;r InfoPath
-  Beim Anpassen des Menübands in Microsoft Office InfoPath müssen Sie berücksichtigen, wo das benutzerdefinierte Menüband in der Anwendung angezeigt wird.[!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] kann das Menüband in den folgenden drei Typen von InfoPath\-Anwendungsfenstern anzeigen:  
+# <a name="customizing-a-ribbon-for-infopath"></a>Customizing a Ribbon for InfoPath
+  When you customize the Ribbon in Microsoft Office InfoPath, you must consider where your custom Ribbon will appear in the application. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] can display the Ribbon in the following three types of InfoPath application windows:  
   
--   Fenster, in denen eine Formularvorlage angezeigt wird, die im Entwurfsmodus geöffnet ist.  
+-   Windows that display a form template that is opened in design mode.  
   
--   Fenster, in denen ein Formular angezeigt wird, das auf einer Formatvorlage basiert.  
+-   Windows that display a form that is based on a form template.  
   
--   Im Seitenansichtsfenster.  
+-   The Print Preview window.  
   
- **Betrifft:** Die Informationen in diesem Thema betreffen VSTO\-Add\-In\-Projekte für InfoPath 2010. Weitere Informationen finden Sie unter [Verfügbare Funktionen nach Office-Anwendung und Projekttyp](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Applies to:** The information in this topic applies to VSTO Add-in projects for InfoPath 2010. For more information, see [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).  
   
- Benutzer und Designer öffnen eine Formularvorlage im Entwurfsmodus, um die Darstellung und das Layout der Vorlage zu ändern. Benutzer öffnen Formulare, die auf einer Formularvorlage basieren, um Inhalte hinzuzufügen.  
+ Users and designers open a form template in design mode to modify the appearance and layout of the template. Users open forms that are based in a form template to add content.  
   
- Im Seitenansichtsfenster können Designer und Benutzer, die Seiten eines Formulars oder einer Formularvorlage vor dem Drucken in der Vorschau anzeigen.  
+ The Print Preview window enables designers and users to preview the pages of a form or form template before they print them.  
   
 > [!NOTE]  
->  Die Registerkarte **Add\-Ins** wird im Seitenansichtsfenster nicht angezeigt. Wenn eine benutzerdefinierte Registerkarte im Seitenansichtsfenster angezeigt werden soll, stellen Sie sicher, dass die **OfficeId** \-Eigenschaft der Registerkarte nicht auf **TabAddIns** festgelegt ist.  
+>  The **AddIns** tab does not appear in the Print Preview window. If you want a custom tab to appear in the Print Preview window, make sure that the **OfficeId** property of the tab is not set to **TabAddIns**.  
   
- Sie müssen den Menübandtyp jedes Fensters angeben, in denen das Menüband angezeigt werden soll.  
+ You must specify the Ribbon type of each window in which you want your Ribbon to appear.  
   
-## Angeben des Menübandtyps im Menüband\-Designer  
- Bei Verwendung des Elements **Menüband \(Visual Designer\)** klicken Sie auf die **RibbonType** \-Eigenschaft des Menübands im Fenster **Eigenschaften**, und wählen Sie dann eine der in der folgenden Tabelle beschriebenen Menüband\-IDs aus.  
+## <a name="specifying-the-ribbon-type-in-the-ribbon-designer"></a>Specifying the Ribbon Type in the Ribbon Designer  
+ If you are using the **Ribbon (Visual Designer)** item, click the **RibbonType** property of the Ribbon in the **Properties** window, and then select any of the Ribbon ID's described in the following table.  
   
-|Menüband\-ID|Fenster, in dem das Menüband angezeigt wird, wenn Sie das Projekt ausführen|  
-|------------------|---------------------------------------------------------------------------------|  
-|**Microsoft.InfoPath.Designer**|Fenster, in denen eine Formularvorlage angezeigt wird, die im Entwurfsmodus geöffnet ist.|  
-|**Microsoft.InfoPath.Editor**|Fenster, in denen ein Formular angezeigt wird, das auf einer Formatvorlage basiert.|  
-|**Microsoft.InfoPath.PrintPreview**|Im Seitenansichtsfenster.|  
+|Ribbon ID|Window in which the Ribbon will appear when you run the project|  
+|---------------|---------------------------------------------------------------------|  
+|**Microsoft.InfoPath.Designer**|Windows that display a form template that is opened in design mode.|  
+|**Microsoft.InfoPath.Editor**|Windows that display a form that is based on a form template.|  
+|**Microsoft.InfoPath.PrintPreview**|The Print Preview window.|  
   
- Sie können einem Projekt mehrere Menübänder hinzufügen. Wenn sich mehrere Menübänder eine Menüband\-ID teilen, überschreiben Sie die CreateRibbonExtensibilityObject \-Methode in der `ThisAddin` \-Klasse des Projekts, um anzugeben, welches Menüband zur Laufzeit ausgeführt werden soll. Weitere Informationen finden Sie unter [Übersicht über die Multifunktionsleiste](../vsto/ribbon-overview.md).  
+ You can add more than one Ribbon to a project. If more than one Ribbon share a Ribbon ID, override the CreateRibbonExtensibilityObject method in the `ThisAddin` class of your project to specify which Ribbon to display at run time. For more information, see [Ribbon Overview](../vsto/ribbon-overview.md).  
   
-## Angeben des Menübandtyps mithilfe der Menüband\-XML  
- Bei Verwendung des Elements **Menüband \(XML\)** überprüfen Sie den Wert des *ribbonID* \-Parameters in der <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> \-Methode, und geben Sie das entsprechende Menüband zurück.  
+## <a name="specifying-the-ribbon-type-by-using-ribbon-xml"></a>Specifying the Ribbon Type by Using Ribbon XML  
+ If you are using the **Ribbon (XML)** item, check the value of the *ribbonID* parameter in the <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> method and return the appropriate Ribbon.  
   
- Die <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A>\-Methode wird automatisch von Visual Studio in der Menüband\-Codedatei generiert. Der *ribbonID* \-Parameter ist eine Zeichenfolge, die den Typ des InfoPath\-Fensters identifiziert, das geöffnet wird, angibt.  
+ The <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> method is automatically generated by Visual Studio in the Ribbon code file. The *ribbonID* parameter is a string that identifies the type of InfoPath window that is opening.  
   
- Im folgenden Codebeispiel wird veranschaulicht, wie ein benutzerdefiniertes Menüband nur in einem Fenster angezeigt wird, in dem eine Formularvorlage im Entwurfsmodus angezeigt wird. Das anzuzeigende Menüband wird in der `GetResourceText()`\-Methode angegeben, die in der Menübandklasse generiert wird. Weitere Informationen zur Menübandklasse finden Sie unter [Multifunktionsleisten-XML](../vsto/ribbon-xml.md).  
+ The following code example demonstrates how to display a custom Ribbon only in a window that displays a form template in design mode. The Ribbon to display is specified in the `GetResourceText()` method, which is generated in the Ribbon class. For more information about the Ribbon class, see [Ribbon XML](../vsto/ribbon-xml.md).  
   
- [!code-csharp[Trin_RibbonInfoPathBasic#1](../snippets/csharp/VS_Snippets_OfficeSP/trin_ribboninfopathbasic/cs/ribbon.cs#1)]
- [!code-vb[Trin_RibbonInfoPathBasic#1](../snippets/visualbasic/VS_Snippets_OfficeSP/trin_ribboninfopathbasic/vb/ribbon.vb#1)]  
+ [!code-csharp[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/CSharp/myinfopathproject/ribbon.cs#1)] [!code-vb[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/VisualBasic/myinfopathproject/ribbon.vb#1)]  
   
-## Siehe auch  
- [Zugreifen auf die Multifunktionsleiste zur Laufzeit](../vsto/accessing-the-ribbon-at-run-time.md)   
- [Übersicht über die Multifunktionsleiste](../vsto/ribbon-overview.md)   
- [Multifunktionsleisten-Designer](../vsto/ribbon-designer.md)   
- [Multifunktionsleisten-XML](../vsto/ribbon-xml.md)  
+## <a name="see-also"></a>See Also  
+ [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
+ [Ribbon Overview](../vsto/ribbon-overview.md)   
+ [Ribbon Designer](../vsto/ribbon-designer.md)   
+ [Ribbon XML](../vsto/ribbon-xml.md)  
   
   

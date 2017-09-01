@@ -1,35 +1,52 @@
 ---
-title: "Erstellen und Verwalten von modalen Dialogfeldern | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Dialogfelder in Visual Studio verwalten"
+title: Creating and Managing Modal Dialog Boxes | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- dialog boxes, managing in Visual Studio
 ms.assetid: 491bc0de-7dba-478c-a76b-923440e090f3
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# Erstellen und Verwalten von modalen Dialogfeldern
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 4da27f2be100df8e9f196f68b4371cbb8f474d27
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
-Wenn Sie ein modales Dialogfeld in Visual Studio erstellen, müssen Sie sicherstellen, dass das übergeordnete Fenster des Dialogfelds deaktiviert ist, während das Dialogfeld angezeigt wird und dann das übergeordnete Fenster wieder zu aktivieren, nachdem das Dialogfeld geschlossen wurde. Wenn Sie dies nicht tun, kann die Fehlermeldung: "Microsoft Visual Studio kann nicht heruntergefahren, da ein modales Dialogfeld noch aktiv ist. Schließen Sie das aktive Dialogfeld, und versuchen Sie es erneut."  
+---
+# <a name="creating-and-managing-modal-dialog-boxes"></a>Creating and Managing Modal Dialog Boxes
+When you create a modal dialog box inside Visual Studio, you must make sure that the parent window of the dialog box is disabled while the dialog box is displayed, then re-enable the parent window after the dialog box is closed. If you do not do so, you may receive the error: "Microsoft Visual Studio cannot shut down because a modal dialog is active. Close the active dialog and try again."  
   
- Es gibt zwei Möglichkeiten, auf diese Weise. Haben eine WPF\-Dialogfeld wird empfohlen, leiten Sie ihn von <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>, und rufen Sie dann <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow.ShowModal%2A> um das Dialogfeld anzuzeigen. Wenn Sie dies tun, müssen Sie nicht den modalen Zustand des übergeordneten Fensters zu verwalten.  
+ There are two ways of doing this. The recommended way, if you have a WPF dialog box, is to derive it from <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>, and then call <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow.ShowModal%2A> to display the dialog box. If you do this, you do not need to manage the modal state of the parent window.  
   
- Ist das Dialogfeld nicht WPF oder einem anderen Grund, Sie können nicht abgeleitet werden, die im Dialogfeld\-Klasse <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>, das übergeordnete Element des Dialogfelds durch Aufrufen von erhalten Sie müssen <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.GetDialogOwnerHwnd%2A> und Verwalten der modalen Zustand selbst, der durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.EnableModeless%2A> \-Methode mit einem Parameter von 0 \(falsch\), bevor Sie das Dialogfeld anzuzeigen, und rufen die Methode erneut mit dem Parameter 1 \(True\) nach dem Schließen des Dialogfelds.  
+ If your dialog box is not WPF, or for some other reason you cannot derive your dialog box class from <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>, then you must get the parent of the dialog box by calling <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.GetDialogOwnerHwnd%2A> and manage the modal state yourself, by calling the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.EnableModeless%2A> method with a parameter of 0 (false) before displaying the dialog box and calling the method again with a parameter of 1 (true) after closing the dialog box.  
   
-## Erstellen eines Dialogfelds DialogWindow abgeleitet  
+## <a name="creating-a-dialog-box-derived-from-dialogwindow"></a>Creating a dialog box derived from DialogWindow  
   
-1.  Erstellen Sie ein VSIX\-Projekt namens **OpenDialogTest** und fügen Sie einen Befehl mit dem Namen **Öffnen**. Weitere Informationen hierzu finden Sie unter [Erstellen eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1.  Create a VSIX project named **OpenDialogTest** and add a menu command named **OpenDialog**. For more information about how to do this, see [Creating an Extension with a Menu Command](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  Verwenden der <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> \-Klasse, müssen Sie Verweise auf die folgenden Assemblys hinzufügen \(auf der Registerkarte Framework die **Verweis hinzufügen** Dialogfeld\):  
+2.  To use the <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> class, you must add references to the following assemblies (in the Framework tab of the **Add Reference** dialog box):  
   
     -   PresentationCore  
   
@@ -39,22 +56,22 @@ Wenn Sie ein modales Dialogfeld in Visual Studio erstellen, müssen Sie sicherst
   
     -   System.Xaml  
   
-3.  Fügen Sie folgende OpenDialog.cs, `using` Anweisung:  
+3.  In OpenDialog.cs, add the following `using` statement:  
   
-    ```c#  
+    ```csharp  
     using Microsoft.VisualStudio.PlatformUI;  
     ```  
   
-4.  Deklarieren Sie eine Klasse mit dem Namen **TestDialogWindow** abgeleitet <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>:  
+4.  Declare a class named **TestDialogWindow** that derives from <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>:  
   
-    ```c#  
+    ```csharp  
     class TestDialogWindow : DialogWindow  
     {. . .}  
     ```  
   
-5.  Legen Sie zum Minimieren und Maximieren das Dialogfeld Lage sein, <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMaximizeButton%2A> und <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMinimizeButton%2A> auf "true":  
+5.  To be able to minimize and maximize the dialog box, set <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMaximizeButton%2A> and <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMinimizeButton%2A> to true:  
   
-    ```c#  
+    ```csharp  
     internal TestDialogWindow()  
     {  
         this.HasMaximizeButton = true;  
@@ -62,51 +79,51 @@ Wenn Sie ein modales Dialogfeld in Visual Studio erstellen, müssen Sie sicherst
     }  
     ```  
   
-6.  In der **OpenDialog.ShowMessageBox** \-Methode, ersetzen Sie den vorhandenen Code durch Folgendes:  
+6.  In the **OpenDialog.ShowMessageBox** method, replace the existing code with the following:  
   
-    ```c#  
+    ```csharp  
     TestDialogWindow testDialog = new TestDialogWindow();  
     testDialog.ShowModal();  
     ```  
   
-7.  Erstellen Sie die Anwendung, und führen Sie sie aus. Die experimentelle Instanz von Visual Studio sollte angezeigt werden. Auf der **Tools** im Menü der experimentellen Instanz sollte einen Befehl mit dem Namen **aufrufen öffnen**. Wenn Sie diesen Befehl klicken, sollte das Dialogfeld angezeigt werden. Sie sollten in der Lage zu minimieren und Maximieren Sie das Fenster.  
+7.  Build and run the application. The experimental instance of Visual Studio should appear. On the **Tools** menu of the experimental instance you should see a command named **Invoke OpenDialog**. When you click this command, you should see the dialog window. You should be able to minimize and maximize the window.  
   
-## Erstellen und Verwalten von ein Dialogfeld, das nicht von DialogWindow abgeleitet.  
+## <a name="creating-and-managing-a-dialog-box-not-derived-from-dialogwindow"></a>Creating and managing a dialog box not derived from DialogWindow  
   
-1.  Bei diesem Verfahren können Sie die **OpenDialogTest** Lösung, die Sie erstellt, die zuvor mit der gleichen Assemblyverweisen haben.  
+1.  For this procedure, you can use the **OpenDialogTest** solution you created in the previous procedure, with the same assembly references.  
   
-2.  Fügen Sie die folgenden `using` Deklarationen:  
+2.  Add the following `using` declarations:  
   
-    ```c#  
+    ```csharp  
     using System.Windows;  
     using Microsoft.Internal.VisualStudio.PlatformUI;  
     ```  
   
-3.  Erstellen Sie eine Klasse mit dem Namen **TestDialogWindow2** abgeleitet <xref:System.Windows.Window>:  
+3.  Create a class named **TestDialogWindow2** that derives from <xref:System.Windows.Window>:  
   
-    ```c#  
+    ```csharp  
     class TestDialogWindow2 : Window  
     {. . .}  
     ```  
   
-4.  Fügen Sie einen privaten Verweis auf <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>:  
+4.  Add a private reference to <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>:  
   
     ```  
     private IVsUIShell shell;  
     ```  
   
-5.  Fügen Sie einen Konstruktor, der den Verweis wird auf <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>:  
+5.  Add a constructor that sets the reference to <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>:  
   
-    ```c#  
+    ```csharp  
     public TestDialogWindow2(IVsUIShell uiShell)  
     {  
         shell = uiShell;  
     }  
     ```  
   
-6.  In der **OpenDialog.ShowMessageBox** \-Methode, ersetzen Sie den vorhandenen Code durch Folgendes:  
+6.  In the **OpenDialog.ShowMessageBox** method, replace the existing code with the following:  
   
-    ```c#  
+    ```csharp  
     IVsUIShell uiShell = (IVsUIShell)ServiceProvider.GetService(typeof(SVsUIShell));  
   
     TestDialogWindow2 testDialog2 = new TestDialogWindow2(uiShell);  
@@ -126,4 +143,4 @@ Wenn Sie ein modales Dialogfeld in Visual Studio erstellen, müssen Sie sicherst
     }  
     ```  
   
-7.  Erstellen Sie die Anwendung, und führen Sie sie aus. Auf der **Tools** Menü sollte einen Befehl mit dem Namen **aufrufen öffnen**. Wenn Sie diesen Befehl klicken, sollte das Dialogfeld angezeigt werden.
+7.  Build and run the application. On the **Tools** menu you should see a command named **Invoke OpenDialog**. When you click this command, you should see the dialog window.

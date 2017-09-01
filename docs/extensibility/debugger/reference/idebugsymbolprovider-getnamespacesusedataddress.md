@@ -1,57 +1,74 @@
 ---
-title: "IDebugSymbolProvider::GetNamespacesUsedAtAddress | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugSymbolProvider::GetNamespacesUsedAtAddress"
-helpviewer_keywords: 
-  - "IDebugSymbolProvider::GetNamespacesUsedAtAddress-Methode"
+title: IDebugSymbolProvider::GetNamespacesUsedAtAddress | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugSymbolProvider::GetNamespacesUsedAtAddress
+helpviewer_keywords:
+- IDebugSymbolProvider::GetNamespacesUsedAtAddress method
 ms.assetid: 392de54b-9af0-4567-953b-1b41acd1e05c
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugSymbolProvider::GetNamespacesUsedAtAddress
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2e40f549fe18dbdd8a91be2cb27fff121e6eace3
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
-Diese Methode erstellt einen Enumerator für die Namespaces Debuggen, die mit der Adresse zugeordnet sind.  
+---
+# <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
+This method creates an enumerator for namespaces associated with the debug address.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetNamespacesUsedAtAddress(   
-   IDebugAddress*     pAddress,  
-   IEnumDebugFields** ppEnum  
+```cpp  
+HRESULT GetNamespacesUsedAtAddress(   
+   IDebugAddress*     pAddress,  
+   IEnumDebugFields** ppEnum  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetNamespacesUsedAtAddress(  
-   IDebugAddress        pAddress,  
-   out IEnumDebugFields ppEnum  
+   IDebugAddress        pAddress,  
+   out IEnumDebugFields ppEnum  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `pAddress`  
- \[in\]  Die Debuginformationen Adresse.  
+ [in] The debug address.  
   
  `ppEnum`  
- \[out\]  Gibt einen Enumerator [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) für die Namespaces zurück.  
+ [out] Returns an [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) enumerator for the namespaces.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Hinweise  
- Es gibt möglicherweise mehrere Namespaces mit einer angegebenen Adresse Debuggen z. B. geschachtelte Namespaces oder mehrere `using`\-Anweisungen zugeordnet sind.  
+## <a name="remarks"></a>Remarks  
+ There may be several namespaces associated with a given debug address, for example, nested namespaces or multiple `using` statements.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

@@ -1,66 +1,83 @@
 ---
-title: "Member-Abschluss in einer Legacy-Sprachdienst | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IntelliSense, QuickInfo Member Abschluss"
-  - "Member-Abschluss, Unterstützung in Sprachdienste [Verwaltetes Paketframework]"
-  - "Sprachdienste [Verwaltetes Paketframework], IntelliSense-Member-Vervollständigung"
+title: Member Completion in a Legacy Language Service | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IntelliSense, Member Completion tool tip
+- Member Completion, supporting in language services [managed package framework]
+- language services [managed package framework], IntelliSense Member Completion
 ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
 caps.latest.revision: 21
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 21
----
-# Member-Abschluss in einer Legacy-Sprachdienst
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 36dcb076c0a7e1f8448eebf9a0ff18ff3c199183
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
-Die IntelliSense\-Vervollständigung Member ist eine QuickInfo, die eine Liste der möglichen Elemente eines bestimmten Bereichs wie z. B. eine Klasse, Struktur, Enumeration oder Namespace angezeigt. Z. B. in c\#, wird Wenn der Benutzer "this gibt" gefolgt von einem Punkt, eine Liste aller Member der Klasse oder Struktur im aktuellen Bereich in einer Liste angezeigt aus der der Benutzer auswählen kann.  
+---
+# <a name="member-completion-in-a-legacy-language-service"></a>Member Completion in a Legacy Language Service
+The IntelliSense Member Completion is a tool tip that displays a list of possible members of a particular scope such as a class, structure, enumeration, or namespace. For example, in C#, if the user types "this" followed by a period, a list of all members of the class or structure at the current scope is presented in a list from which the user can select.  
   
- Das verwaltete Package Framework \(MPF\) bietet Unterstützung für die QuickInfo und die Verwaltung der Liste in der QuickInfo. erforderlich ist, ist die Zusammenarbeit vom Parser zum Bereitstellen der Daten, die in der Liste angezeigt wird.  
+ The managed package framework (MPF) provides support for the tool tip and managing the list in the tool tip; all that is needed is cooperation from the parser to supply the data that appears in the list.  
   
- Ältere Sprache Services werden als Teil eines VSPackage implementiert, aber der neuere Weg zum Implementieren von Language Service ist die Verwendung von MEF\-Erweiterungen. Um weitere Informationen finden Sie unter [Erweitern der\-Editor und Sprachdienste](../../extensibility/extending-the-editor-and-language-services.md).  
+ Legacy language services are implemented as part of a VSPackage, but the newer way to implement language service features is to use MEF extensions. To find out more, see [Extending the Editor and Language Services](../../extensibility/extending-the-editor-and-language-services.md).  
   
 > [!NOTE]
->  Es wird empfohlen, dass Sie beginnen, den neuen Editor\-API so bald wie möglich zu verwenden. Dies verbessert die Leistung des Sprachdiensts und können Sie die neue Editorfunktionen nutzen.  
+>  We recommend that you begin to use the new editor API as soon as possible. This will improve the performance of your language service and let you take advantage of new editor features.  
   
-## So funktioniert es  
- Folgendes sind die beiden Methoden in denen Elementliste angezeigt wird mithilfe der MPF\-Klassen:  
+## <a name="how-it-works"></a>How It Works  
+ The following are the two ways in which a member list is shown using the MPF classes:  
   
--   Positionieren die Einfügemarke auf einen Bezeichner oder nach einem Element Abschluss\-Zeichen und auswählen **Mitglieder** aus der **IntelliSense** Menü.  
+-   Positioning the caret on an identifier or after a member completion character and selecting **List Members** from the **IntelliSense** menu.  
   
--   Die <xref:Microsoft.VisualStudio.Package.IScanner> Scanner erkennt ein Member Abschluss Zeichen und legt einen token Trigger des <xref:Microsoft.VisualStudio.Package.TokenTriggers> für das jeweilige Zeichen.  
+-   The <xref:Microsoft.VisualStudio.Package.IScanner> scanner detects a member completion character and sets a token trigger of <xref:Microsoft.VisualStudio.Package.TokenTriggers> for that character.  
   
- Ein Member Abschluss Zeichen gibt an, dass ein Member der Klasse, Struktur oder Enumeration folgen. In c\# oder Visual Basic ist das Element Abschluss Zeichen z. B. ein `.`, während in C\+\+ das Zeichen entweder ein `.` oder ein `->`. Der Triggerwert wird festgelegt, wenn das Element wählen Zeichen überprüft wird.  
+ A member completion character indicates that a member of a class, structure, or enumeration is to follow. For example, in C# or Visual Basic the member completion character is a `.`, while  in C++ the character is either a `.` or a `->`. The trigger value is set when the member select character is scanned.  
   
-### Der IntelliSense\-Member\-List\-Befehl  
- Die <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> Befehl initiiert einen Aufruf der <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> Methode für die <xref:Microsoft.VisualStudio.Package.Source> Klasse und die <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> Methode wiederum ruft die <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode Parser mit dem Grund Analyse der <xref:Microsoft.VisualStudio.Package.ParseReason>.  
+### <a name="the-intellisense-member-list-command"></a>The IntelliSense Member List Command  
+ The <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> command initiates a call to the <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> method on the <xref:Microsoft.VisualStudio.Package.Source> class and the <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> method, in turn, calls the <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> method parser with the parse reason of <xref:Microsoft.VisualStudio.Package.ParseReason>.  
   
- Der Parser bestimmt den Kontext der aktuellen Position als auch das Token unter oder unmittelbar vor der aktuellen Position. Anhand dieses Token, wird eine Liste der Deklarationen angezeigt. Wenn beispielsweise in c\#, wenn Sie die position der Einfügemarke auf einen Member der Klasse, und wählen **Mitglieder**, erhalten Sie eine Liste aller Member der Klasse. Wenn Sie die Einfügemarke nach einem bestimmten Zeitraum, die eine Objektvariable folgt positionieren, erhalten Sie eine Liste aller Member der Klasse das Objekt darstellt. Beachten Sie, wenn die Einfügemarke für ein Element positioniert ist, wenn die Memberliste angezeigt wird, ein Element aus der Liste auswählen das Element ersetzt werden, das die Einfügemarke durch die in der Liste befindet.  
+ The parser determines the context of the current position as well as the token under or immediately before the current position. Based on this token, a list of declarations is presented. For example, in C#, if you position the caret on a class member and select **List Members**, you get a list of all members of the class. If you position the caret after a period that follows an object variable, you get a list of all members of the class that object represents. Note that if the caret is positioned on a member when the member list is shown, selecting a member from the list replaces the member the caret is on with the one in the list.  
   
-### Der Token\-Trigger  
- Die <xref:Microsoft.VisualStudio.Package.TokenTriggers> Trigger initiiert einen Aufruf der <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> Methode auf die <xref:Microsoft.VisualStudio.Package.Source> Klasse und die <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> Methode wiederum ruft den Parser mit der Analyse Ursache des <xref:Microsoft.VisualStudio.Package.ParseReason> \(wenn auch der token Trigger enthalten die <xref:Microsoft.VisualStudio.Package.TokenTriggers> Flag der Grund für die Analyse ist <xref:Microsoft.VisualStudio.Package.ParseReason> kombiniert Elementauswahl und geschweifte Klammer hervorheben\).  
+### <a name="the-token-trigger"></a>The Token Trigger  
+ The <xref:Microsoft.VisualStudio.Package.TokenTriggers> trigger initiates a call to the <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> method on the <xref:Microsoft.VisualStudio.Package.Source> class and the <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> method, in turn, calls the parser with the parse reason of <xref:Microsoft.VisualStudio.Package.ParseReason> (if the token trigger also included the <xref:Microsoft.VisualStudio.Package.TokenTriggers> flag, the parse reason is <xref:Microsoft.VisualStudio.Package.ParseReason> which combines member selection and brace highlighting).  
   
- Der Parser bestimmt den Kontext der aktuellen position als auch was vor dem Auswählen des Members Zeichen eingegeben wurde. Aus diesen Informationen erstellt der Parser eine Liste aller Mitglieder der angeforderte Bereich. Diese Liste der Deklarationen wird gespeichert, der <xref:Microsoft.VisualStudio.Package.AuthoringScope> \-Objekt, das zurückgegeben wird von der <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Methode. Wenn alle Deklarationen zurückgegeben werden, wird der Member Abschluss\-QuickInfo angezeigt. Die QuickInfo wird von einer Instanz verwaltet die <xref:Microsoft.VisualStudio.Package.CompletionSet> Klasse.  
+ The parser determines the context of the current position as well as what has been typed before the member select character. From this information, the parser creates a list of all members of the requested scope. This list of declarations is stored in the <xref:Microsoft.VisualStudio.Package.AuthoringScope> object that is returned from the <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> method. If any declarations are returned, the member completion tool tip is displayed. The tool tip is managed by an instance of the <xref:Microsoft.VisualStudio.Package.CompletionSet> class.  
   
-## Aktivieren der Unterstützung für Member Abschluss  
- Sie müssen die `CodeSense` Registrierungseintrag auf 1 festgelegt werden, um alle IntelliSense\-Vorgang zu unterstützen. Dieser Registrierungseintrag kann festgelegt werden, mit einem benannten Parameter zu übergeben der <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> Benutzerattribut das Sprachpaket zugeordnet. Die Dienstklassen Sprache lesen den Wert dieses Registrierungseintrags aus der <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> \-Eigenschaft für die <xref:Microsoft.VisualStudio.Package.LanguagePreferences> Klasse.  
+## <a name="enabling-support-for-member-completion"></a>Enabling Support for Member Completion  
+ You must have the `CodeSense` registry entry set to 1 to support any IntelliSense operation. This registry entry can be set with a named parameter passed to the <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> user attribute associated with the language package. The language service classes read the value of this registry entry from the <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> property on the <xref:Microsoft.VisualStudio.Package.LanguagePreferences> class.  
   
- Wenn der Scanner den token Trigger gibt <xref:Microsoft.VisualStudio.Package.TokenTriggers>, ein Parser gibt eine Liste der Deklarationen, und die Member\-Vervollständigungsliste wird angezeigt.  
+ If your scanner returns the token trigger of <xref:Microsoft.VisualStudio.Package.TokenTriggers>, and your parser returns a list of declarations, then the member completion list is displayed.  
   
-## Member\-Abschluss unterstützen im Scanner  
- Der Scanner muss ein Member Abschluss Zeichen zu erkennen, und legen Sie den token Trigger können <xref:Microsoft.VisualStudio.Package.TokenTriggers> Wenn dieses Zeichen wird analysiert.  
+## <a name="supporting-member-completion-in-the-scanner"></a>Supporting Member Completion in the Scanner  
+ The scanner must be able to detect a member completion character and set the token trigger of <xref:Microsoft.VisualStudio.Package.TokenTriggers> when that character is parsed.  
   
-### Beispiel  
- Hier ist ein vereinfachtes Beispiel erkennen das Element Abschluss Zeichen und Festlegen der entsprechenden <xref:Microsoft.VisualStudio.Package.TokenTriggers> Flag. In diesem Beispiel wird nur zur Veranschaulichung. Es wird davon ausgegangen, dass der Scanner eine Methode enthält `GetNextToken` identifiziert wird und gibt die Token aus einer Textzeile zurück. Im Beispielcode wird einfach den Trigger, wenn es erkennt, dass die richtige Art von Zeichen.  
+### <a name="example"></a>Example  
+ Here is a simplified example of detecting the member completion character and setting the appropriate <xref:Microsoft.VisualStudio.Package.TokenTriggers> flag. This example is for illustrative purposes only. It assumes that your scanner contains a method `GetNextToken` that identifies and returns tokens from a line of text. The example code simply sets the trigger whenever it sees the right kind of character.  
   
-```c#  
+```csharp  
 using Microsoft.VisualStudio.Package;  
 using Microsoft.VisualStudio.TextManager.Interop;  
   
@@ -91,17 +108,17 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## Member\-Abschluss unterstützt im Parser  
- Für den Abschluss der Member die <xref:Microsoft.VisualStudio.Package.Source> \-Klasse ruft die <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A> Methode. Sie müssen die Liste in einer Klasse, die von abgeleitet ist implementieren die <xref:Microsoft.VisualStudio.Package.Declarations> Klasse. Finden Sie unter der <xref:Microsoft.VisualStudio.Package.Declarations> \-Klasse zu den Methoden, die Sie implementieren müssen.  
+## <a name="supporting-member-completion-in-the-parser"></a>Supporting Member Completion in the Parser  
+ For member completion, the <xref:Microsoft.VisualStudio.Package.Source> class calls the <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A> method. You must implement the list in a class that is derived from the <xref:Microsoft.VisualStudio.Package.Declarations> class. See the <xref:Microsoft.VisualStudio.Package.Declarations> class for details about the methods you must implement.  
   
- Der Parser aufgerufen wird und <xref:Microsoft.VisualStudio.Package.ParseReason> oder <xref:Microsoft.VisualStudio.Package.ParseReason> Wenn ein Element wählen Zeichen eingegeben wird. Der Speicherort der <xref:Microsoft.VisualStudio.Package.ParseRequest> \-Objekt ist, sobald das Element wählen Sie Zeichen aus. Der Parser muss die Namen aller Elemente sammeln, die in der einen bestimmten Zeitpunkt im Quellcode angezeigt werden können. Klicken Sie dann analysiert der Parser die aktuelle Zeile aus, um festzulegen, die der Benutzer das Element wählen Zeichen zugeordnet haben möchte.  
+ The parser is called with <xref:Microsoft.VisualStudio.Package.ParseReason> or <xref:Microsoft.VisualStudio.Package.ParseReason> when a member select character is typed. The location given in the <xref:Microsoft.VisualStudio.Package.ParseRequest> object is immediately after the member select character. The parser must collect the names of all members that can appear in a member list at that particular point in the source code. Then the parser must parse the current line to determine the scope the user wants associated with the member select character.  
   
- Dieser Bereich basiert auf den Typ des Bezeichners, bevor das Element auswählen Zeichen. In c\#, betrachten Sie die Membervariable `languageService` bei dem ein `LanguageService`, eingeben **LanguageService.** erzeugt eine Liste aller Member der `LanguageService` Klasse. Auch in c\# eingeben **dies.** erzeugt eine Liste aller Member der Klasse im aktuellen Bereich.  
+ This scope is based on the type of the identifier before the member select character. For example, in C#, given the member variable `languageService` that has a type of `LanguageService`, typing **languageService.** produces a list of all the members of the `LanguageService` class. Also in C#, typing **this.** produces a list of all the members of the class in the current scope.  
   
-### Beispiel  
- Das folgende Beispiel zeigt eine Möglichkeit zum Auffüllen einer <xref:Microsoft.VisualStudio.Package.Declarations> Liste. Dieser Code setzt voraus, dass der Parser eine Deklaration erstellt und durch Aufrufen der Liste hinzugefügt eine `AddDeclaration` Methode für die `TestAuthoringScope` Klasse.  
+### <a name="example"></a>Example  
+ The following example shows one way to populate a <xref:Microsoft.VisualStudio.Package.Declarations> list. This code assumes that the parser constructs a declaration and adds it to the list by calling an `AddDeclaration` method on the `TestAuthoringScope` class.  
   
-```c#  
+```csharp  
 using System.Collections;  
 using Microsoft.VisualStudio.Package;  
 using Microsoft.VisualStudio.TextManager.Interop;  

@@ -1,48 +1,64 @@
 ---
-title: "CA2137: Transparente Methoden d&#252;rfen nur &#252;berpr&#252;fbare IL enthalten | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2137"
+title: 'CA2137: Transparent methods must contain only verifiable IL | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2137
 ms.assetid: cbaeb0e1-56b6-43b4-812a-596b2859c329
 caps.latest.revision: 13
-caps.handback.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA2137: Transparente Methoden d&#252;rfen nur &#252;berpr&#252;fbare IL enthalten
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 27b23ce892bea0a45adb3d7cff0a546ee0bad25f
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2137-transparent-methods-must-contain-only-verifiable-il"></a>CA2137: Transparent methods must contain only verifiable IL
 |||  
 |-|-|  
 |TypeName|TransparentMethodsMustBeVerifiable|  
 |CheckId|CA2137|  
-|Kategorie \(Category\)|Microsoft.Security|  
-|Unterbrechende Änderung|Breaking|  
+|Category|Microsoft.Security|  
+|Breaking Change|Breaking|  
   
-## Ursache  
- Eine Methode enthält nicht überprüfbaren Code oder gibt einen Typ nach Verweis zurück.  
+## <a name="cause"></a>Cause  
+ A method contains unverifiable code or returns a type by reference.  
   
-## Regelbeschreibung  
- Diese Regel wird für Versuche durch sicherheitstransparenten Code ausgelöst, nicht überprüfbare MSIL \(Microsoft Intermediate Language\) auszuführen.  Die Regel enthält jedoch kein vollständiges IL\-Prüfmodul und verwendet stattdessen Heuristik, um die meisten Verletzungen der MSIL\-Überprüfung abzufangen.  
+## <a name="rule-description"></a>Rule Description  
+ This rule fires on attempts by security transparent code to execute unverifiable MSIL (Microsoft Intermediate Language). However, the rule does not contain a full IL verifier, and instead uses heuristics to catch most violations of MSIL verification.  
   
- Um sicher zu sein, dass der Code nur überprüfbare MSIL enthält, führen Sie [Peverify.exe \(PEVerify Tool\)](../Topic/Peverify.exe%20\(PEVerify%20Tool\).md) auf der Assembly aus.  Führen Sie PEVerify mit der **\/transparent**\-Option aus, die die Ausgabe auf ausschließlich nicht überprüfbare transparente Methoden beschränkt, die einen Fehler verursachen würden.  Wenn die \/transparent\-Option nicht verwendet wird, überprüft PEVerify auch wichtige Methoden, die nicht überprüfbaren Code enthalten können.  
+ To be certain that your code contains only verifiable MSIL, run [Peverify.exe (PEVerify Tool)](/dotnet/framework/tools/peverify-exe-peverify-tool) on your assembly. Run PEVerify with the **/transparent** option which limits the output to only unverifiable transparent methods which would cause an error. If the /transparent option is not used, PEVerify also verifies critical methods that are allowed to contain unverifiable code.  
   
-## Behandeln von Verstößen  
- Um eine Verletzung dieser Regel zu korrigieren, markieren Sie die Methode mit dem <xref:System.Security.SecurityCriticalAttribute>\-Attribut oder dem <xref:System.Security.SecuritySafeCriticalAttribute>\-Attribut, oder entfernen Sie nicht den überprüfbaren Code.  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, mark the method with the <xref:System.Security.SecurityCriticalAttribute> or <xref:System.Security.SecuritySafeCriticalAttribute> attribute, or remove the unverifiable code.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Unterdrücken Sie keine Warnung dieser Regel.  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule.  
   
-## Beispiel  
- Für die Methode in diesem Beispiel wird nicht überprüfbarer Code verwendet, und sie sollte mit dem <xref:System.Security.SecurityCriticalAttribute>\-Attribut oder dem <xref:System.Security.SecuritySafeCriticalAttribute>\-Attribut markiert werden.  
+## <a name="example"></a>Example  
+ The method in this example uses unverifiable code and should be marked with the <xref:System.Security.SecurityCriticalAttribute> or <xref:System.Security.SecuritySafeCriticalAttribute> attribute.  
   
- [!code-cs[FxCop.Security.CA2137.TransparentMethodsMustBeVerifiable#1](../code-quality/codesnippet/CSharp/ca2137-transparent-methods-must-contain-only-verifiable-il_1.cs)]
+ [!code-csharp[FxCop.Security.CA2137.TransparentMethodsMustBeVerifiable#1](../code-quality/codesnippet/CSharp/ca2137-transparent-methods-must-contain-only-verifiable-il_1.cs)]

@@ -1,41 +1,58 @@
 ---
-title: "Verlaufsbezogenes Debugging | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Historical Debugging | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 7cc5ddf2-2f7c-4f83-b7ca-58e92e9bfdd2
 caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
----
-# Verlaufsbezogenes Debugging
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 9f73ccc235c3b893b2ad8d2ddb07dd1848414734
+ms.contentlocale: de-de
+ms.lasthandoff: 08/22/2017
 
-Das verlaufsbezogene Debuggen ist ein Debug\-Modus, der von den durch IntelliTrace erfassten Informationen abhängig ist.  Dadurch können Sie die Ausführung Ihrer Anwendung rückwärts und vorwärts durchlaufen und ihren Status überprüfen.  
+---
+# <a name="historical-debugging"></a>Historical Debugging
+Historical debugging is a mode of debugging that depends on the information collected by IntelliTrace. It allows you to move backward and forward through the execution of your application and inspect its state.  
   
- Sie können IntelliTrace in der Visual Studio Enterprise Edition verwenden\(jedoch nicht in der Professional oder Community Edition\).  
+ You can use IntelliTrace in Visual Studio Enterprise edition (but not the Professional or Community editions).  
   
-## Warum verlaufsbezogenes Debugging?  
- Das Festlegen von Haltepunkten zum Auffinden von Fehlern ist eher eine unsichere Angelegenheit.  Sie legen einen Haltepunkt in der Nähe der Stelle im Code fest, an der Sie einen Fehler vermuten, führen dann die Anwendung im Debugger aus, hoffen, dass der Haltepunkt erreicht wird, und dass die Stelle, an der die Ausführung unterbrochen wurde, die Ursache des Fehlers aufdeckt.  Wenn dies nicht der Fall ist, müssen Sie versuchen, einen Haltepunkt an anderer Stelle im Code festzulegen und den Debugger erneut auszuführen. Diese Testschritte müssen Sie so oft wiederholen, bis Sie das Problem gefunden haben.  
+## <a name="why-use-historical-debugging"></a>Why use Historical Debugging?  
+ Setting breakpoints to find bugs can be a rather hit-or-miss affair. You set a breakpoint close to the place in your code where you suspect the bug to be, then run the application in the debugger and hope your breakpoint gets hit, and that the place where execution breaks can reveal the source of the bug. If not, you'll have to try setting a breakpoint somewhere else in the code and rerun the debugger, executing your test steps over and over until you find the problem.  
   
- ![Festlegen eines Haltepunkts](~/debugger/media/breakpointprocesa.png "BreakpointProcesa")  
+ ![setting a breakpoint](../debugger/media/breakpointprocesa.png "BreakpointProcesa")  
   
- Mit IntelliTrace und dem verlaufsbezogenen Debugging können Sie Ihre Anwendung durchgehen und den Status überprüfen \(Aufrufliste und lokale Variablen\), ohne Haltepunkte festzulegen, den Debugvorgang neu zu starten und  die Testschritte zu wiederholen.  Dadurch sparen Sie viel Zeit, besonders wenn der Fehler sich tief in einem Testszenario verbirgt, das azum Ausführen viel Zeit erfordert.  
+ You can use IntelliTrace and Historical Debugging to roam around in your application and inspect its state (call stack and local variables) without having to set breakpoints, restart debugging, and repeat test steps. This can save you a lot of time, especially when the bug is located deep in a test scenario that takes a long time to execute.  
   
-## Wie beginne ich mit dem verlaufsbezogenen Debuggen?  
- IntelliTrace ist standardmäßig aktiviert.  Sie müssen lediglich entscheiden, welche Ereignisse und Funktionsaufrufe für Sie von Interesse sind.  Weitere Informationen zum Definieren von Elementen, die Sie suchen möchten, finden Sie unter [IntelliTrace\-Features](../debugger/intellitrace-features.md).  Eine schrittweise Anleitung zum Debuggen mit IntelliTrace finden Sie unter [Exemplarische Vorgehensweise: Verwenden von IntelliTrace](../debugger/walkthrough-using-intellitrace.md).  
+## <a name="how-do-i-start-using-historical-debugging"></a>How do I start using Historical Debugging?  
+ IntelliTrace is on by default. All you have to do is decide which events and function calls are of interest to you. For more information about defining what you want to look for, see [IntelliTrace Features](../debugger/intellitrace-features.md). For a step-by-step account of debugging with IntelliTrace, see [Walkthrough: Using IntelliTrace](../debugger/walkthrough-using-intellitrace.md).  
   
-## Navigieren durch Ihren Code mit verlaufsbezogenem Debugging  
- Beginnen wir mit einem einfachen Programm, das einen Fehler aufweist.  Fügen Sie in einer C\#\-Konsolenanwendung folgenden Code hinzu:  
+## <a name="navigating-your-code-with-historical-debugging"></a>Navigating your code with Historical Debugging  
+ Let's start with a simple program that has a bug. In a C# console application, add the following code:  
   
-```c#  
+```CSharp  
 static void Main(string[] args)  
 {  
     int testInt = 0;  
@@ -61,28 +78,28 @@ private static int AddInt(int add)
 }  
 ```  
   
- Wir gehen davon aus, dass der erwartete Wert des `resultInt` nach dem Aufruf von `AddAll()` 20 beträgt \(das Ergebnis des Inkrementierens von `testInt` x 20\).  \(Gehen wir außerdem davon aus, dass Ihnen der Fehler in `AddInt()`\) nicht angezeigt wird, das Ergebnis jedoch tatsächlich 44 beträgt.  Wie finden wir den Fehler, ohne `AddAll()` schrittweise 10 Mal durchzugehen?  Wir können das verlaufsbezogene Debugging verwenden, um Fehler schneller und leichter zu finden.  Gehen Sie folgendermaßen vor:  
+ We'll assume that the expected value of `resultInt` after calling `AddAll()` is 20 (the result of incrementing `testInt` 20 times). (We'll also assume that you can't see the bug in `AddInt()`).But the result is actually 44. How can we find the bug without stepping through `AddAll()` 10 times? We can use Historical Debugging to find the bug faster and more easily. Here's how:  
   
-1.  Stellen Sie unter Extras \/ Optionen \/ IntelliTrace \/ Allgemein sicher, dass IntelliTrace aktiviert ist, wählen Sie die IntelliTrace\-Ereignisse aus und rufen Sie die Informationsoption auf.  Wenn Sie diese Option nicht auswählen, wird Ihnen der Navigationsbundsteg nicht angezeigt \(sie Erläuterung weitere unten\).  
+1.  In Tools > Options > IntelliTrace > General, make sure that IntelliTrace is enabled, and select the IntelliTrace events and call information option. If you do not select this option, you will not be able to see the navigation gutter (as explained below).  
   
-2.  Legen Sie einen Haltepunkt in der Zeile `Console.WriteLine(resultInt);` fest.  
+2.  Set a breakpoint on the `Console.WriteLine(resultInt);` line.  
   
-3.  Beginnen Sie mit dem Debuggen.  Der Code wird bis zum Haltepunkt ausgeführt.  Im Fenster **Lokal** wird Ihnen für `resultInt` der Wert 44 angezeigt.  
+3.  Start debugging. The code executes to the breakpoint. In the **Locals** window, you can see that the value of `resultInt` is 44.  
   
-4.  Öffnen Sie das Fenster **Diagnosetools** \(**Debuggen \/ Diagnosetools anzeigen**\).  Das Code\-Fenster sieht wie folgt aus:  
+4.  Open the **Diagnostic Tools** window (**Debug > Show Diagnostic Tools**). The code window should look like this:  
   
-     ![Codefenster am Haltepunkt](~/debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
+     ![Code window at the breakpoint](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
   
-5.  Neben dem linken Rand sollte ein doppelter Pfeil angezeigt werden, genau über dem Haltepunkt.  Dieser Bereich wird als Navigationsbundsteg bezeichnet und dient zum verlaufsbezogenen Debuggen.  Klicken Sie auf den Pfeil.  
+5.  You should see a double arrow next to the left margin, just above the breakpoint. This area is called the navigation gutter, and is used for Historical Debugging. Click the arrow.  
   
-     Im Codefenster sollte Ihnen die vorangegangene Codezeile \(`int resultInt = AddIterative(testInt);`\) rosa gefärbt angezeigt werden.  Über dem Fenster sollte eine Meldung angezeigt werden, dass Sie sich nun im verlaufsbezogenes Debugging befinden.  
+     In the code window, you should see that the preceding line of code (`int resultInt = AddIterative(testInt);`) is colored pink. Above the window, you should see a message that you are now in Historical Debugging.  
   
-     Das Codefenster sieht nun folgendermaßen aus:  
+     The code window now looks like this:  
   
-     ![Codefenster im verlaufsbezogenen Debuggingmodus](~/debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
+     ![code window in historical debugging mode](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
   
-6.  Jetzt können Sie auf die `AddAll()`\-Methode \(**F11** , oder die **Einzelschritt**\-Schaltfläche auf dem Navigationsbundsteg zugreifen.  Fahren Sie mit \(**F10**, oder **Zum nächsten Aufruf wechseln** im Navigationsbundsteg fort.  Die rosa Linie befindet sich jetzt in der `j = AddInt(j);`\-Zeile.  Durch Drücken von **F10** gelangen Sie in diesem Fall nicht in die nächste Codezeile.  Stattdessen fährt es mit dem nächsten Funktionsaufruf fort.  Das verlaufsbezogene Debugging navigiert von Aufruf zu Aufruf, und überspringt Codezeilen, die nicht in einem Funktionsaufruf enthalten sind.  
+6.  Now you can step into the `AddAll()` method (**F11**, or the **Step Into** button in the navigation gutter. Step forward (**F10**, or **Go to Next Call** in the navigation gutter. The pink line is now on the `j = AddInt(j);` line. **F10** in this case does not step to the next line of code. Instead, it steps to the next function call. Historical debugging navigates from call to call, and it skips lines of code that do not include a function call.  
   
-7.  Nun in die `AddInt()`\-Methode einsteigen.  Der Fehler in diesem Code sollte Ihnen sofort angezeigt werden.  
+7.  Now step into the `AddInt()` method. You should see the bug in this code immediately.  
   
- Dieses Verfahren behandelt die Möglichkeiten des verlaufsbezogenen Debugging nur oberflächlich.  Weitere Informationen über die unterschiedlichen Einstellungen und Auswirkungen der verschiedenen Schaltflächen auf dem Navigationsbundsteg finden Sie unter [IntelliTrace\-Features](../debugger/intellitrace-features.md).
+ This procedure just scratched the surface of what you can do with Historical Debugging. To find out more about the different settings and the effects of the different buttons in the navigation gutter, see [IntelliTrace Features](../debugger/intellitrace-features.md).

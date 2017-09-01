@@ -1,54 +1,71 @@
 ---
-title: "IDebugCoreServer3::DiagnoseWebDebuggingError | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCoreServer3::DiagnoseWebDebuggingError"
-helpviewer_keywords: 
-  - "IDebugCoreServer3::DiagnoseWebDebuggingError"
+title: IDebugCoreServer3::DiagnoseWebDebuggingError | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugCoreServer3::DiagnoseWebDebuggingError
+helpviewer_keywords:
+- IDebugCoreServer3::DiagnoseWebDebuggingError
 ms.assetid: 8c4570ca-ae55-42f2-bbaa-8d8e75d2fa19
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# IDebugCoreServer3::DiagnoseWebDebuggingError
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2c9ed64c1db1472e334333f3c2cb6d1bfb017c25
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
-Versucht, selbstklebendes zu bestimmen, warum ein Fehler aufgetreten.  
+---
+# <a name="idebugcoreserver3diagnosewebdebuggingerror"></a>IDebugCoreServer3::DiagnoseWebDebuggingError
+Attempts to determine why an auto-attach failed.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT DiagnoseWebDebuggingError(  
-   LPCWSTR pszUrl  
+```cpp  
+HRESULT DiagnoseWebDebuggingError(  
+   LPCWSTR pszUrl  
 );  
 ```  
   
-```c#  
-int DiagnoseWebDebuggingError(  
-   string pszUrl  
+```csharp  
+int DiagnoseWebDebuggingError(  
+   string pszUrl  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `pszUrl`  
- \[in\]  Derzeit nicht verwendet. muss immer auf einen NULL\-Wert festgelegt werden.  
+ [in] Not currently used; should always be set to a null value.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  Im Folgenden werden andere typische Rückgabecodes:  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code. The following are other typical return codes:  
   
-|Code|Beschreibung|  
-|----------|------------------|  
-|`S_WEBDBG_UNABLE_TO_DIAGNOSE`|Kann warum den Remoteserver, der nicht ermitteln konnte, das Debuggen begonnen wird.|  
-|`S_WEBDBG_DEBUG_VERB_BLOCKED`|Kann nicht auf Remoteserver, möglicherweise aufgrund fehlender Berechtigungen debuggen, da das DEBUG\-Verb nicht aktiviert ist.|  
-|`E_WEBDBG_DEBUG_VERB_BLOCKED`|Der Webserver ist gesperrt und das DEBUG\-Verb blockiert, das erforderlich ist, um das Debuggen zu aktivieren.|  
+|Code|Description|  
+|----------|-----------------|  
+|`S_WEBDBG_UNABLE_TO_DIAGNOSE`|Cannot determine why the remote server failed to start debugging.|  
+|`S_WEBDBG_DEBUG_VERB_BLOCKED`|Cannot debug on remote server, possibly due to insufficient permissions or because the DEBUG verb is not enabled.|  
+|`E_WEBDBG_DEBUG_VERB_BLOCKED`|The web server has been locked down and is blocking the DEBUG verb, which is required to enable debugging.|  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

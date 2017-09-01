@@ -1,118 +1,135 @@
 ---
-title: "IDebugEngineLaunch2::LaunchSuspended | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngineLaunch2::LaunchSuspended"
-helpviewer_keywords: 
-  - "IDebugEngineLaunch2::LaunchSuspended"
+title: IDebugEngineLaunch2::LaunchSuspended | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugEngineLaunch2::LaunchSuspended
+helpviewer_keywords:
+- IDebugEngineLaunch2::LaunchSuspended
 ms.assetid: 5dd2643e-c20a-470e-9024-2a423eb39856
 caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 17
----
-# IDebugEngineLaunch2::LaunchSuspended
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: eeecef65ac40231bda84b97f10eceafea1592df9
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
-Diese Methode startet einen Prozess mithilfe des Debugmoduls \(DE\).  
+---
+# <a name="idebugenginelaunch2launchsuspended"></a>IDebugEngineLaunch2::LaunchSuspended
+This method launches a process by means of the debug engine (DE).  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT LaunchSuspended (   
-   LPCOLESTR             pszMachine,  
-   IDebugPort2*          pPort,  
-   LPCOLESTR             pszExe,  
-   LPCOLESTR             pszArgs,  
-   LPCOLESTR             pszDir,  
-   BSTR                  bstrEnv,  
-   LPCOLESTR             pszOptions,  
-   LAUNCH_FLAGS          dwLaunchFlags,  
-   DWORD                 hStdInput,  
-   DWORD                 hStdOutput,  
-   DWORD                 hStdError,  
-   IDebugEventCallback2* pCallback,  
-   IDebugProcess2**      ppDebugProcess  
+```cpp  
+HRESULT LaunchSuspended (   
+   LPCOLESTR             pszMachine,  
+   IDebugPort2*          pPort,  
+   LPCOLESTR             pszExe,  
+   LPCOLESTR             pszArgs,  
+   LPCOLESTR             pszDir,  
+   BSTR                  bstrEnv,  
+   LPCOLESTR             pszOptions,  
+   LAUNCH_FLAGS          dwLaunchFlags,  
+   DWORD                 hStdInput,  
+   DWORD                 hStdOutput,  
+   DWORD                 hStdError,  
+   IDebugEventCallback2* pCallback,  
+   IDebugProcess2**      ppDebugProcess  
 );  
 ```  
   
-```c#  
+```csharp  
 int LaunchSuspended(  
-   string               pszServer,   
-   IDebugPort2          pPort,   
-   string               pszExe,   
-   string               pszArgs,   
-   string               pszDir,   
-   string               bstrEnv,   
-   string               pszOptions,   
-   enum_LAUNCH_FLAGS    dwLaunchFlags,   
-   uint                 hStdInput,   
-   uint                 hStdOutput,   
-   uint                 hStdError,  
-   IDebugEventCallback2 pCallback,   
-   out IDebugProcess2   ppProcess  
+   string               pszServer,   
+   IDebugPort2          pPort,   
+   string               pszExe,   
+   string               pszArgs,   
+   string               pszDir,   
+   string               bstrEnv,   
+   string               pszOptions,   
+   enum_LAUNCH_FLAGS    dwLaunchFlags,   
+   uint                 hStdInput,   
+   uint                 hStdOutput,   
+   uint                 hStdError,  
+   IDebugEventCallback2 pCallback,   
+   out IDebugProcess2   ppProcess  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `pszMachine`  
- \[in\]  Der Name des Computers, auf dem der Prozess gestartet werden soll.  Verwenden Sie einen NULL\-Wert, um den lokalen Computer anzugeben.  
+ [in] The name of the machine in which to launch the process. Use a null value to specify the local machine.  
   
  `pPort`  
- \[in\]  Die [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)\-Schnittstelle, die den Anschluss darstellt, den das Programm ausgeführt wird.  
+ [in] The [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) interface representing the port that the program will run in.  
   
  `pszExe`  
- \[in\]  Der Name der ausführbaren Datei ausgeführt werden soll.  
+ [in] The name of the executable to be launched.  
   
  `pszArgs`  
- \[in\]  Die zur ausführbaren Datei zu übergebenden Argumente.  Kann ein NULL\-Wert, wenn keine Argumente vorhanden sind.  
+ [in] The arguments to pass to the executable. May be a null value if there are no arguments.  
   
  `pszDir`  
- \[in\]  Der Name des Arbeitsverzeichnisses Verwendung durch die ausführbare Datei.  Kann ein NULL\-Wert, wenn kein Arbeitsverzeichnis erforderlich ist.  
+ [in] The name of the working directory used by the executable. May be a null value if no working directory is required.  
   
  `bstrEnv`  
- \[in\]  Umgebungsblock auf NULL endende Zeichenfolge, gefolgt von einem zusätzlichen NULL\-Abschlusszeichen.  
+ [in] Environment block of NULL-terminated strings, followed by an additional NULL terminator.  
   
  `pszOptions`  
- \[in\]  Die Optionen für die ausführbare Datei.  
+ [in] The options for the executable.  
   
  `dwLaunchFlags`  
- \[in\]  Gibt [LAUNCH\_FLAGS](../../../extensibility/debugger/reference/launch-flags.md) für eine Sitzung an.  
+ [in] Specifies the [LAUNCH_FLAGS](../../../extensibility/debugger/reference/launch-flags.md) for a session.  
   
  `hStdInput`  
- \[in\]  Handle für einen alternativen Eingabestream.  Kann 0, wenn Umleitungen nicht erforderlich ist.  
+ [in] Handle to an alternate input stream. May be 0 if redirection is not required.  
   
  `hStdOutput`  
- \[in\]  Handle für einen alternativen Ausgabestream.  Kann 0, wenn Umleitungen nicht erforderlich ist.  
+ [in] Handle to an alternate output stream. May be 0 if redirection is not required.  
   
  `hStdError`  
- \[in\]  Handle für einen alternativen Fehler ausgabedatenstrom.  Kann 0, wenn Umleitungen nicht erforderlich ist.  
+ [in] Handle to an alternate error output stream. May be 0 if redirection is not required.  
   
  `pCallback`  
- \[in\]  Das Objekt, das [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) Debuggerereignisse empfängt.  
+ [in] The [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) object that receives debugger events.  
   
  `ppDebugProcess`  
- \[out\]  Gibt das resultierende [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)\-Objekt zurück, das den aufgerufenen Prozess darstellt.  
+ [out] Returns the resulting [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) object that represents the launched process.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Hinweise  
- Normalerweise startet [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ein Programm mit der [LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md)\-Methode und fügt dann den Debugger an den angehaltenen Programm an.  Es gibt jedoch Umstände, unter denen das Debugmodul möglicherweise ein Programm starten muss \(beispielsweise, wenn das Debugmodul ist, ist Teil eines Interpreters und des Programms, das gedebuggt wird, eine interpretierte Sprache\). In diesem Fall [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] verwendet die `IDebugEngineLaunch2::LaunchSuspended`\-Methode.  
+## <a name="remarks"></a>Remarks  
+ Normally, [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] launches a program using the [LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md) method and then attaches the debugger to the suspended program. However, there are circumstances in which the debug engine may need to launch a program (for example, if the debug engine is part of an interpreter and the program being debugged is an interpreted language), in which case [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] uses the `IDebugEngineLaunch2::LaunchSuspended` method.  
   
- Die [ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)\-Methode wird aufgerufen, um den Prozess gestartet wird, nachdem der Vorgang erfolgreich in einem Ruhezustand gestartet wurde.  
+ The [ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md) method is called to start the process after the process has been successfully launched in a suspended state.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)   
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)   
- [LAUNCH\_FLAGS](../../../extensibility/debugger/reference/launch-flags.md)   
+ [LAUNCH_FLAGS](../../../extensibility/debugger/reference/launch-flags.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
  [LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md)   

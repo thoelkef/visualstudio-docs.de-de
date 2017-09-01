@@ -1,49 +1,72 @@
 ---
-title: "ADO.NET Entity Data Model-Tools | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
+title: Entity Data Model Tools in Visual Studio | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 1b06b573-84aa-4458-b3f5-e238df47bf45
 caps.latest.revision: 21
-caps.handback.revision: 7
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 95981f9f5ea9f80526b347544cd5d029dc8d41a0
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# ADO.NET Entity Data Model-Tools
-Die [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]\-Tools wurden entworfen, um Sie beim Erstellen von [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)]\-Anwendungen zu unterstützen.  Die vollständige Dokumentation für die [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]\-Tools finden Sie hier: [ADO.NET Entity Data Model  Tools](http://msdn.microsoft.com/de-de/91076853-0881-421b-837a-f582f36be527).  
+# <a name="entity-data-model-tools-in-visual-studio"></a>Entity Data Model Tools in Visual Studio
+Entity Framework is an object-relational mapping technology that enables .NET developers to work with relational data by using domain-specific objects. It eliminates the need for most of the data-access code that developers usually need to write. Entity Framework is the recommended object-relational mapping (ORM) modeling technology for new .NET applications.  
   
- Mit den [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]\-Tools können Sie ein *konzeptionelles Modell* aus einer vorhandenen Datenbank erstellen und das Modell anschließend grafisch darstellen und bearbeiten.  Außerdem können Sie zuerst grafisch ein konzeptionelles Modell erstellen, und anschließend eine Datenbank generieren, die dieses Modell unterstützt.  In beiden Fällen können Sie das Modell automatisch aktualisieren, wenn Änderungen an der zugrunde liegenden Datenbank vorgenommen werden, und Sie können automatisch Code auf Objektebene für die Anwendung generieren.  Die Datenbankgenerierung und die Codegenerierung auf Objektebene können vom Benutzer angepasst werden.  
+ As of March 2016, the most current released version is [Entity Framework 6](https://msdn.microsoft.com/en-us/data/ef) . [Entity Framework 7](https://docs.efproject.net/en/latest/) is in pre-release.  
   
- In der folgenden Liste werden die verschiedenen Entity Data Model\-Tools erläutert:  
+ [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Tools are designed to help you build [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] applications. The complete documentation for [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Tools is here: [Entity Framework](https://msdn.microsoft.com/en-us/data/jj590134).  
   
--   Mit dem [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]\-Designer \(Entity Designer\) können Sie visuell Entitäten, Zuordnungen und Vererbungsbeziehungen erstellen und bearbeiten.  Der Entity Designer generiert außerdem [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)]\- oder [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]\-Code auf Objektebene.  
+ With [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Tools, you can create a *conceptual model* from an existing database and then graphically visualize and edit your conceptual model. Or, you can graphically create a conceptual model first, and then generate a database that supports your model. In either case, you can automatically update your model when the underlying database changes and automatically generate object-layer code for your application. Database generation and object-layer code generation are customizable.  
   
--   Mit dem [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]\-Assistenten können Sie ein konzeptionelles Modell einer vorhandenen Datenbank generieren und Ihrer Anwendung Datenbankverbindungsinformationen hinzufügen.  
+ These are the specific tools that make up Entity Data Model Tools in Visual Studio 2015:  
   
--   Mit dem Assistenten zur Datenbankenerstellung können Sie zuerst ein konzeptionelles Modell und im Anschluss daran eine Datenbank erstellen, die dieses Modell unterstützt.  
+-   You can use the [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Designer** (**Entity Designer**) to visually create and modify entities, associations, mappings, and inheritance relationships. The **Entity Designer** also generates [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] or [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] object-layer code.  
   
--   Mit dem Modellaktualisierungs\-Assistenten können Sie das konzeptionelle Modell, das Speichermodell und die Zuordnungen aktualisieren, wenn Änderungen an der zugrunde liegenden Datenbank vorgenommen wurden.  
+-   You can use the **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Wizard** to generate a conceptual model from an existing database and add database connection information to your application.  
+  
+-   You can use the **Create Database Wizard** to create a conceptual model first and then create a database that supports the model.  
+  
+-   You can use the **Update Model Wizard** to update your conceptual model, storage model, and mappings when changes have been made to the underlying database.  
   
     > [!NOTE]
-    >  Ab Visual Studio 2010 bieten die [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]\-Tools keine Unterstützung mehr für [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)].  
+    >  Starting with Visual Studio 2010, [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Tools do not support [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)].  
   
- Die Tools generieren oder ändern die Informationen in einer EDMX\-Datei, die das konzeptionelle Modell, das Speichermodell und die Zuordnungen zwischen ihnen beschreiben.  Weitere Informationen finden Sie unter [.edmx File Overview](http://msdn.microsoft.com/de-de/f4c8e7ce-1db6-417e-9759-15f8b55155d4).  
+ The tools generate or modify an .edmx file. This file contains information that describes the conceptual model, the storage model, and the mappings between them. For more information, see  [EDMX](https://msdn.microsoft.com/en-us/data/jj650889.aspx).  
   
- Es gibt auch ein Befehlszeilentool, das entworfen wird, um Anwendungen zu erstellen, die das EDM verwenden: das EdmGen.exe\-Tool.  Dieses Tool kann ein konzeptionelles Modell generieren, ein vorhandenes Modell überprüfen, Quellcodedateien mit Objektklassen erzeugen, die auf dem konzeptionellen Modell basieren, sowie Quellcodedateien erzeugen, die vom Modell generierte Ansichten enthalten.  Ausführliche Informationen zur Verwendung dieses Befehlszeilentools finden Sie unter [EDM\-Generator \(EdmGen.exe\)](../Topic/EDM%20Generator%20\(EdmGen.exe\).md).  
+ Entity Framework Power Tools help you build applications that use the Entity Data Model. The tools can generate a conceptual model, validate an existing model, produce source-code files that contain object classes based on the conceptual model, and produce source-code files that contain views that the model generates. For detailed information, see [Pre-Generated Mapping Views](https://msdn.microsoft.com/en-us/data/dn469601.aspx).  
   
-## Verwandte Themen  
+## <a name="related-topics"></a>Related topics  
   
-|Titel|Beschreibung|  
-|-----------|------------------|  
-|[ADO.NET Entity Framework](../Topic/ADO.NET%20Entity%20Framework.md)|Beschreibt die Verwendung der [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]\-Tools, die von [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] zum Erstellen von Anwendungen bereitgestellt werden.|  
-|[Entity Data Model](../Topic/Entity%20Data%20Model.md)|Stellt Links und Informationen über die Verarbeitung von Daten bereit, die von Anwendungen verwendet werden, die auf [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] basieren.|
+|Title|Description|  
+|-----------|-----------------|  
+|[ADO.NET Entity Framework](/dotnet/framework/data/adonet/ef/index)|Describes how to use [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Tools, which [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] provides, to create applications.|  
+|[Entity Data Model](/dotnet/framework/data/adonet/entity-data-model)|Provides links and information for working with data that is used by applications built on [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)].|  
+|[Getting Started on Full .NET (Console, WinForms, WPF, etc.)](https://docs.efproject.net/en/latest/platforms/full-dotnet/getting-started.html)|Provides tutorials on how to create .NET desktop applications that use Entity Framework 7.|  
+|[ASP.NET 5 Application to New Database](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html)|Describes how to create a new ASP.NET 5 application by using Entity Framework 7.|  
+  
+## <a name="see-also"></a>See Also  
+ [Visual Studio data tools for .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

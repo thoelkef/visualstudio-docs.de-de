@@ -1,165 +1,166 @@
 ---
-title: "Exemplarische Vorgehensweise: Speichern von Daten in einer Datenbank (mehrere Tabellen) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "Daten [Visual Studio], Speichern"
-  - "Daten [Visual Studio], Aktualisieren"
-  - "Speichern von Daten, Exemplarische Vorgehensweisen"
-  - "Aktualisieren von Datasets, Exemplarische Vorgehensweisen"
+title: Save data to a database (multiple tables) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- updating datasets, walkthroughs
+- data [Visual Studio], saving
+- saving data, walkthroughs
+- data [Visual Studio], updating
 ms.assetid: 7ebe03da-ce8c-4cbc-bac0-a2fde4ae4d07
 caps.latest.revision: 24
-caps.handback.revision: 20
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 828a7800aec528dd90de946de0243b5fb0198225
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Exemplarische Vorgehensweise: Speichern von Daten in einer Datenbank (mehrere Tabellen)
-Eines der häufigsten Szenarios in der Anwendungsentwicklung ist das Anzeigen von Daten auf einem Formular in einer Windows\-Anwendung, das Bearbeiten der Daten und das Senden der aktualisierten Daten zurück an die Datenbank.  In dieser exemplarischen Vorgehensweise wird ein Formular erstellt, in dem Daten aus zwei verknüpften Tabellen angezeigt werden. Darüber hinaus wird gezeigt, wie Datensätze bearbeitet und Änderungen wieder in der Datenbank gespeichert werden.  In diesem Beispiel werden die Tabellen `Customers` und `Orders` aus der Beispieldatenbank Northwind verwendet.  
+# <a name="save-data-to-a-database-multiple-tables"></a>Save data to a database (multiple tables)
+One of the most common scenarios in application development is to display data on a form in a Windows application, edit the data, and send the updated data back to the database. This walkthrough creates a form that displays data from two related tables and shows how to edit records and save changes back to the database. This example uses the `Customers` and `Orders` tables from the Northwind sample database.  
   
- Sie können Daten in der Anwendung wieder in der Datenbank speichern, indem Sie die `Update`\-Methode eines TableAdapter aufrufen.  Wenn Sie Elemente aus dem **Datenquellenfenster** ziehen, wird Code zum Speichern von Daten automatisch für die erste auf einem Formular abgelegte Tabelle hinzugefügt.  Für alle weiteren einem Formular hinzugefügten Tabellen muss der zum Speichern von Daten erforderliche Code manuell hinzugefügt werden.  In dieser exemplarischen Vorgehensweise wird veranschaulicht, wie Code hinzugefügt wird, um Aktualisierungen aus mehreren Tabellen zu speichern.  
+ You can save data in your application back to the database by calling the `Update` method of a TableAdapter. When you drag tables from the **Data Sources** window onto a form, the code that's required to save data is automatically added.Any additional tables that are added to a form require the manual addition of this code. This walkthrough shows how to add code to save updates from more than one table.  
   
 > [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen.  Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren**, um die Einstellungen zu ändern.  Weitere Informationen finden Sie unter [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/de-de/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or the edition that you're using. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
- In dieser exemplarischen Vorgehensweise werden u. a. folgende Aufgaben veranschaulicht:  
+ Tasks illustrated in this walkthrough include:  
   
--   Erstellen eines neuen Projekts vom Typ **Windows\-Anwendung**.  
+-   Creating a new **Windows Application** project.  
   
--   Erstellen und Konfigurieren einer Datenquelle in der Anwendung mithilfe des [Assistent zum Konfigurieren von Datenquellen](../data-tools/media/data-source-configuration-wizard.png).  
+-   Creating and configuring a data source in your application with the [Data Source Configuration Wizard](../data-tools/media/data-source-configuration-wizard.png).  
   
--   Festlegen der Steuerelemente für die Elemente im [Datenquellenfenster](../Topic/Data%20Sources%20Window.md).  Weitere Informationen finden Sie unter [Festlegen des Steuerelements, das beim Ziehen aus dem Datenquellenfenster erstellt werden soll](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+-   Setting the controls of the items in the [Data Sources Window](add-new-data-sources.md). For more information, see [Set the control to be created when dragging from the Data Sources window](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
--   Erstellen datengebundener Steuerelemente durch Ziehen von Elementen aus dem **Datenquellenfenster** auf das Formular.  
+-   Creating data-bound controls by dragging items from the **Data Sources** window onto your form.  
   
--   Ändern mehrerer Datensätze in den einzelnen Tabellen im Dataset.  
+-   Modifying a few records in each table in the dataset.  
   
--   Ändern von Code zum Zurücksenden der aktualisierten Daten des Datasets an die Datenbank.  
+-   Modifying the code to send the updated data in the dataset back to the database.  
   
-## Vorbereitungsmaßnahmen  
- Für die Durchführung dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:  
+## <a name="prerequisites"></a>Prerequisites  
+ In order to complete this walkthrough, you will need:  
   
--   Zugriff auf die Beispieldatenbank Northwind.  Weitere Informationen finden Sie unter [Gewusst wie: Installieren von Beispieldatenbanken](../data-tools/how-to-install-sample-databases.md).  
+-   Access to the Northwind sample database.  For more information, see [How to: Install Sample Databases](../data-tools/installing-database-systems-tools-and-samples.md).  
   
-## Erstellen der Windows\-Anwendung  
- Im ersten Schritt wird eine **Windows\-Anwendung** erstellt.  Zu diesem Zeitpunkt ist es nicht erforderlich, dem Projekt einen Namen zuzuweisen. Wir führen diesen Schritt dennoch aus, weil wir das Projekt später speichern möchten.  
+## <a name="create-the-windows-application"></a>Create the Windows application  
+ The first step is to create a **Windows Application**. Assigning a name to the project is optional during this step, but we'll give it a name because we're planning on saving it later.  
   
-#### So erstellen Sie das neue Windows\-Anwendungsprojekt  
+#### <a name="to-create-the-new-windows-application-project"></a>To create the new Windows application project  
   
-1.  Erstellen Sie über das Menü **Datei** ein neues Projekt.  
+1.  On the **File** menu, create a new project.  
   
-2.  Nennen Sie das Projekt `UpdateMultipleTablesWalkthrough`.  
+2.  Name the project `UpdateMultipleTablesWalkthrough`.  
   
-3.  Wählen Sie **Windows\-Anwendung** aus, und klicken Sie auf **OK**.  Weitere Informationen finden Sie unter [Clientanwendungen](../Topic/Developing%20Client%20Applications%20with%20the%20.NET%20Framework.md).  
+3.  Select **Windows Application**, and then select **OK**. For more information, see [Client Applications](/dotnet/framework/develop-client-apps).  
   
-     Das Projekt **UpdateMultipleTablesWalkthrough** wird erstellt und dem **Projektmappen\-Explorer** hinzugefügt.  
+     The **UpdateMultipleTablesWalkthrough** project is created and added to **Solution Explorer**.  
   
-## Erstellen der Datenquelle  
- In diesem Schritt wird mit dem **Assistenten zum Konfigurieren von Datenquellen** eine Datenquelle aus der Northwind\-Datenbank erstellt.  Sie benötigen Zugriff auf die Beispieldatenbank Northwind, um die Verbindung herstellen zu können.  Informationen zum Einrichten der Beispieldatenbank Northwind finden Sie unter [Gewusst wie: Installieren von Beispieldatenbanken](../data-tools/how-to-install-sample-databases.md).  
+## <a name="create-the-data-source"></a>Create the data source  
+ This step creates a data source from the Northwind database using the **Data Source Configuration Wizard**. You must have access to the Northwind sample database to create the connection. For information about setting up the Northwind sample database, see [How to: Install Sample Databases](../data-tools/installing-database-systems-tools-and-samples.md).  
   
-#### So erstellen Sie die Datenquelle  
+#### <a name="to-create-the-data-source"></a>To create the data source  
   
-1.  Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**.  
+1.  On the **Data** menu, select **Show Data Sources**.  
   
-2.  Wählen Sie im **Datenquellenfenster** die Option **Neue Datenquelle hinzufügen** aus, um den **Assistenten zum Konfigurieren von Datenquellen** zu starten.  
+2.  In the **Data Sources** window, select**Add New Data Source** to start the **Data Source Configuration Wizard**.  
   
-3.  Wählen Sie auf der Seite **Datenquellentyp auswählen** die Option **Datenbank** aus, und klicken Sie auf **Weiter**.  
+3.  On the **Choose a Data Source Type** screen, select **Database**, and then select **Next**.  
   
-4.  Führen Sie auf der Seite **Wählen Sie Ihre Datenverbindung** einen der folgenden Schritte aus:  
+4.  On the **Choose your Data Connection** screen do one of the following:  
   
-    -   Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank "Northwind" verfügbar ist, wählen Sie diese aus.  
+    -   If a data connection to the Northwind sample database is available in the drop-down list, select it.  
   
-         \- oder \-  
+         -or-  
   
-    -   Wählen Sie **Neue Verbindung** aus, um das Dialogfeld **Verbindung hinzufügen\/ändern** zu öffnen.  
+    -   Select **New Connection** to open the **Add/Modify Connection** dialog box.  
   
-5.  Falls die Datenbank ein Kennwort erfordern sollte, aktivieren Sie die Option für die Einbeziehung vertraulicher Daten, und klicken Sie dann auf **Weiter**.  
+5.  If your database requires a password, select the option to include sensitive data, and then select **Next**.  
   
-6.  Klicken Sie auf der Seite **Verbindungszeichenfolge in der Programmkonfigurationsdatei speichern** auf **Weiter**.  
+6.  On the **Save connection string to the Application Configuration file**, select **Next**.  
   
-7.  Erweitern Sie auf der Seite **Datenbankobjekte auswählen** den Knoten **Tabellen**.  
+7.  On the **Choose your Database Objects**screen, expand the **Tables** node .  
   
-8.  Wählen Sie die Tabellen **Kunden** und **Bestellungen** aus, und klicken Sie dann auf **Fertig stellen**.  
+8.  Select the **Customers** and **Orders** tables, and then select **Finish**.  
   
-     **NorthwindDataSet** wird dem Projekt hinzugefügt. Die Tabellen werden im **Datenquellenfenster** angezeigt.  
+     The **NorthwindDataSet** is added to your project, and the tables appear in the **Data Sources** window.  
   
-## Festlegen der zu erstellenden Steuerelemente  
- In dieser exemplarischen Vorgehensweise befinden sich die Daten der `Customers`\-Tabelle in einem **Details**\-Layout, in dem die Daten in einzelnen Steuerelementen angezeigt werden.  Die Daten aus der Tabelle `Orders` befinden sich in einem **Rasterlayout**, das in einem <xref:System.Windows.Forms.DataGridView>\-Steuerelement angezeigt wird.  
+## <a name="set-the-controls-to-be-created"></a>Set the controls to be created  
+ For this walkthrough, the data in the `Customers` table is in a **Details** layout where data is displayed in individual controls. The data from the `Orders` table is in a **Grid** layout that's displayed in a <xref:System.Windows.Forms.DataGridView> control.  
   
-#### So legen Sie den Ablagetyp für die Elemente im Datenquellenfenster fest  
+#### <a name="to-set-the-drop-type-for-the-items-in-the-data-sources-window"></a>To set the drop type for the items in the Data Sources window  
   
-1.  Erweitern Sie im **Datenquellenfenster** den Knoten **Customers**.  
+1.  In the **Data Sources** window, expand the **Customers** node.  
   
-2.  Ändern Sie das Steuerelement der Tabelle **Customers** in einzelne Steuerelemente, indem Sie **Details** in der Steuerelementliste des Knotens **Customers** auswählen.  Weitere Informationen finden Sie unter [Festlegen des Steuerelements, das beim Ziehen aus dem Datenquellenfenster erstellt werden soll](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+2.  On the **Customers** node, select **Details** from the control list to change the control of the **Customers** table to individual controls. For more information, see [Set the control to be created when dragging from the Data Sources window](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
-## Erstellen des datengebundenen Formulars  
- Sie können die datengebundenen Steuerelemente erstellen, indem Sie Elemente aus dem **Datenquellenfenster** auf das Formular ziehen.  
+## <a name="create-the-data-bound-form"></a>Create the data-bound form  
+ You can create the data-bound controls by dragging items from the **Data Sources** window onto your form.  
   
-#### So erstellen Sie datengebundene Steuerelemente auf dem Formular  
+#### <a name="to-create-data-bound-controls-on-the-form"></a>To create data-bound controls on the form  
   
-1.  Ziehen Sie den Hauptknoten **Customers** aus dem **Datenquellenfenster** auf **Form1**.  
+1.  Drag the main **Customers** node from the **Data Sources** window onto **Form1**.  
   
-     Auf dem Formular werden datengebundene Steuerelemente mit beschreibenden Bezeichnungen sowie ein Toolstrip \(<xref:System.Windows.Forms.BindingNavigator>\) für die Navigation in den Datensätzen angezeigt.  [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), [CustomersTableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource> und <xref:System.Windows.Forms.BindingNavigator> werden auf der Komponentenleiste angezeigt.  
+     Data-bound controls with descriptive labels appear on the form, along with a tool strip (<xref:System.Windows.Forms.BindingNavigator>) for navigating records. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>, and <xref:System.Windows.Forms.BindingNavigator> appear in the component tray.  
   
-2.  Ziehen Sie den Knoten **Orders** aus dem **Datenquellenfenster** in **Form1**.  
+2.  Drag the related **Orders** node from the **Data Sources** window onto **Form1**.  
   
     > [!NOTE]
-    >  Der verknüpfte Knoten **Orders** befindet sich unter der Spalte **Fax** und ist ein untergeordneter Knoten des Knotens **Customers**.  
+    >  The related **Orders** node is located below the **Fax** column and is a child node of the **Customers** node.  
   
-     Auf dem Formular wird ein <xref:System.Windows.Forms.DataGridView>\-Steuerelement und ein Toolstrip \(<xref:System.Windows.Forms.BindingNavigator>\) für die Navigation in den Datensätzen angezeigt.  [OrdersTableAdapter](../data-tools/tableadapter-overview.md) und <xref:System.Windows.Forms.BindingSource> werden auf der Komponentenleiste angezeigt.  
+     A <xref:System.Windows.Forms.DataGridView> control and a tool strip (<xref:System.Windows.Forms.BindingNavigator>) for navigating records appear on the form. An `OrdersTableAdapter` and <xref:System.Windows.Forms.BindingSource> appear in the component tray.  
   
-## Hinzufügen von Code zum Aktualisieren der Datenbank  
- Sie können die Datenbank aktualisieren, indem Sie die `Update`\-Methoden der TableAdapters von **Customers** und **Orders** aufrufen.  Ein Ereignishandler für die <xref:System.Windows.Forms.BindingNavigator>\-Schaltfläche **Speichern** wird standardmäßig zum Code des Formulars hinzugefügt, damit Aktualisierungen an die Datenbank gesendet werden.  Mit dieser Prozedur wird der Code geändert und sichergestellt, dass Aktualisierungen in der richtigen Reihenfolge gesendet und mögliche Fehler der referenziellen Integrität verhindert werden.  Mit dem Code wird außerdem die Fehlerbehandlung implementiert, indem der Aktualisierungsaufruf mit einem Try\-Catch\-Block umschlossen wird.  Sie können den Code entsprechend den Anforderungen der Anwendung anpassen.  
+## <a name="addcode-to-update-the-database"></a>Addcode to update the database  
+ You can update the database by calling the `Update` methods of the **Customers** and **Orders** TableAdapters. By default, an event handler for the **Save** button of the<xref:System.Windows.Forms.BindingNavigator> is added to the form's code to send updates to the database. This procedure modifies the code to send updates in the correct order.This eliminates the possibility of raising referential integrity errors. The code also implements error handling by wrapping the update call in a try-catch block. You can modify the code to suit the needs of your application.  
   
 > [!NOTE]
->  Aus Gründen der Übersichtlichkeit wird in dieser exemplarischen Vorgehensweise keine Transaktion verwendet. Wenn Sie jedoch zwei oder mehr verbundene Tabellen aktualisieren, müssen Sie die gesamte Aktualisierungslogik in eine Transaktion aufnehmen.  Eine Transaktion ist ein Prozess, der sicherstellt, dass alle zugehörigen Änderungen an einer Datenbank erfolgreich sind, bevor ein Commit für eine der Änderungen ausgeführt wird.  Weitere Informationen finden Sie unter [Transaktionen und Parallelität](../Topic/Transactions%20and%20Concurrency.md).  
+>  For clarity, this walkthrough does not use a transaction.However, if you're updating two or more related tables, include all the update logic within a transaction. A transaction is a process that assures that all related changes to a database are successful before any changes are committed. For more information, see [Transactions and Concurrency](/dotnet/framework/data/adonet/transactions-and-concurrency).  
   
-#### So fügen Sie der Anwendung Aktualisierungslogik hinzu  
+#### <a name="to-add-update-logic-to-the-application"></a>To add update logic to the application  
   
-1.  Doppelklicken Sie auf dem <xref:System.Windows.Forms.BindingNavigator> auf die Schaltfläche **Speichern**, um den Code\-Editor für den `bindingNavigatorSaveItem_Click`\-Ereignishandler zu öffnen.  
+1.  Select the **Save** button on the <xref:System.Windows.Forms.BindingNavigator>.This opens the Code Editor to the `bindingNavigatorSaveItem_Click` event handler.  
   
-2.  Ändern Sie den Code im Ereignishandler, sodass die `Update`\-Methoden der verknüpften TableAdapters aufgerufen werden.  Mit folgendem Code werden zunächst drei temporäre Datentabellen zum Speichern der aktualisierten Informationen für jeden <xref:System.Data.DataRowState> \(<xref:System.Data.DataRowState>, <xref:System.Data.DataRowState> und <xref:System.Data.DataRowState>\) erstellt.  Anschließend werden die Aktualisierungen in der richtigen Reihenfolge vorgenommen.  Der Code sollte wie folgt aussehen:  
+2.  Replace the code in the event handler to call the `Update` methods of the related TableAdapters. The following code first creates three temporary data tables to hold the updated information for each <xref:System.Data.DataRowState> (<xref:System.Data.DataRowState>, <xref:System.Data.DataRowState>, and <xref:System.Data.DataRowState>). Then updates are run in the correct order. The code should look like the following:  
   
-     [!code-vb[VbRaddataSaving#10](../data-tools/codesnippet/VisualBasic/save-data-to-a-database-multiple-tables_1.vb)]
-     [!code-cs[VbRaddataSaving#10](../data-tools/codesnippet/CSharp/save-data-to-a-database-multiple-tables_1.cs)]  
+     [!code-vb[VbRaddataSaving#10](../data-tools/codesnippet/VisualBasic/save-data-to-a-database-multiple-tables_1.vb)]  [!code-csharp[VbRaddataSaving#10](../data-tools/codesnippet/CSharp/save-data-to-a-database-multiple-tables_1.cs)]  
   
-## Testen der Anwendung  
+## <a name="test-the-application"></a>Test the application  
   
-#### So testen Sie die Anwendung  
+#### <a name="to-test-the-application"></a>To test the application  
   
-1.  Drücken Sie F5.  
+1.  Select **F5**.  
   
-2.  Nehmen Sie in jeder Tabelle einige Änderungen an den Daten eines oder mehrerer Datensätze vor.  
+2.  Make some changes to the data of one or more records in each table.  
   
-3.  Klicken Sie auf die Schaltfläche **Speichern**.  
+3.  Select the **Save** button.  
   
-4.  Überprüfen Sie die Werte in der Datenbank, um sicherzustellen, dass die Änderungen gespeichert wurden.  
+4.  Check the values in the database to verify that the changes were saved.  
   
-## Nächste Schritte  
- Je nach den Anforderungen der Anwendung können nach dem Erstellen eines datengebundenen Formulars in der Windows\-Anwendung weitere Schritte sinnvoll sein.  Sie können an dieser exemplarischen Vorgehensweise beispielsweise folgende Verbesserungen vornehmen:  
   
--   Fügen Sie dem Formular Suchfunktionalität hinzu.  Weitere Informationen finden Sie unter [Gewusst wie: Hinzufügen einer parametrisierten Abfrage zu einem Formular in einer Windows Forms\-Anwendung](../Topic/How%20to:%20Add%20a%20Parameterized%20Query%20to%20a%20Windows%20Forms%20Application.md).  
-  
--   Bearbeiten der Datenquelle zum Hinzufügen oder Entfernen von Datenbankobjekten.  Weitere Informationen finden Sie unter [Gewusst wie: Bearbeiten eines Datasets](../Topic/How%20to:%20Edit%20a%20Dataset.md).  
-  
-## Siehe auch  
- [Exemplarische Vorgehensweisen zur Arbeit mit Daten](../Topic/Data%20Walkthroughs.md)   
- [Binden von Windows Forms\-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Übersicht über Datenanwendungen in Visual Studio](../data-tools/overview-of-data-applications-in-visual-studio.md)   
- [Herstellen von Datenverbindungen in Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)   
- [Vorbereiten der Anwendung auf den Empfang von Daten](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [Abrufen von Daten für die Anwendung](../data-tools/fetching-data-into-your-application.md)   
- [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Bearbeiten von Daten in der Anwendung](../data-tools/editing-data-in-your-application.md)   
- [Überprüfen von Daten](../Topic/Validating%20Data.md)   
- [Speichern von Daten](../data-tools/saving-data.md)
+## <a name="see-also"></a>See Also  
+ [Save data back to the database](../data-tools/save-data-back-to-the-database.md)

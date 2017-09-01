@@ -1,188 +1,195 @@
 ---
-title: "Exemplarische Vorgehensweise: Erstellen eines Windows Forms-Benutzersteuerelements, das eine Datenbindung beim Suchen unterst&#252;tzt | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "Datenbindung, Benutzersteuerelemente"
-  - "LookupBindingPropertiesAttribute-Klasse, Beispiele"
-  - "Benutzersteuerelemente [Visual Basic], Erstellen"
+title: Using lookup tables in data binding - Windows Forms controls| Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- data binding, user controls
+- LookupBindingPropertiesAttribute class, examples
+- user controls [Visual Basic], creating
 ms.assetid: c48b4d75-ccfc-4950-8b14-ff8adbfe4208
 caps.latest.revision: 14
-caps.handback.revision: 11
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: df0d36441585a6ad856edaf4c5bc0cf3fd65e5bc
+ms.contentlocale: de-de
+ms.lasthandoff: 08/30/2017
+
 ---
-# Exemplarische Vorgehensweise: Erstellen eines Windows Forms-Benutzersteuerelements, das eine Datenbindung beim Suchen unterst&#252;tzt
-Zum Anzeigen von Daten in Windows Forms können Sie die in der Toolbox vorhandenen Steuerelemente verwenden oder – falls die gewünschte Funktionalität in den Standardsteuerelementen nicht verfügbar ist – benutzerdefinierte Steuerelemente erstellen.  Diese exemplarische Vorgehensweise erläutert, wie Sie ein Steuerelement erstellen, das <xref:System.ComponentModel.LookupBindingPropertiesAttribute> implementiert.  Steuerelemente, die <xref:System.ComponentModel.LookupBindingPropertiesAttribute> implementieren, können drei Eigenschaften enthalten, die an Daten gebunden werden können.  Solche Steuerelemente ähneln einem <xref:System.Windows.Forms.ComboBox>\-Steuerelement.  
+# <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Create a Windows Forms user control that supports lookup data binding
+When displaying data on Windows Forms, you can choose existing controls from the **Toolbox**, or you can author custom controls if your application requires functionality not available in the standard controls. This walkthrough shows how to create a control that implements the <xref:System.ComponentModel.LookupBindingPropertiesAttribute>. Controls that implement the <xref:System.ComponentModel.LookupBindingPropertiesAttribute> can contain three properties that can be bound to data. Such controls are similar to a <xref:System.Windows.Forms.ComboBox>.  
   
- Weitere Informationen zum Erstellen von Steuerelementen finden Sie unter [Entwickeln von Windows Forms\-Steuerelementen zur Entwurfszeit](../Topic/Developing%20Windows%20Forms%20Controls%20at%20Design%20Time.md).  
+ For more information on control authoring, see [Developing Windows Forms Controls at Design Time](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).  
   
- Beim Erstellen von Steuerelementen, die in Datenbindungsszenarios verwendet werden sollen, müssen Sie eines der folgenden Datenbindungsattribute implementieren:  
+ When authoring controls for use in data-binding scenarios you need to implement one of the following data-binding attributes:  
   
-|Verwendung von Datenbindungsattributen|  
-|--------------------------------------------|  
-|Implementieren Sie <xref:System.ComponentModel.DefaultBindingPropertyAttribute> für einfache Steuerelemente, die eine einzige Spalte \(oder Eigenschaft\) von Daten anzeigen, wie das <xref:System.Windows.Forms.TextBox>\-Steuerelement.  Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Windows Forms\-Benutzersteuerelements, das einfache Datenbindung unterstützt](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).|  
-|Implementieren Sie <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> für Steuerelemente, die Listen \(oder Tabellen\) von Daten anzeigen, wie das <xref:System.Windows.Forms.DataGridView>\-Steuerelement.  Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines Windows Forms\-Benutzersteuerelements, das komplexe Datenbindung unterstützt](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).|  
-|Implementieren Sie <xref:System.ComponentModel.LookupBindingPropertiesAttribute> für Steuerelemente, die Listen \(oder Tabellen\) von Daten anzeigen, aber auch eine einzelne Spalte oder Eigenschaft darstellen müssen, wie das <xref:System.Windows.Forms.ComboBox>\-Steuerelement.  \(Dieser Prozess wird in dieser exemplarischen Vorgehensweise beschrieben.\)|  
+|Data-binding attribute usage|  
+|-----------------------------------|  
+|Implement the <xref:System.ComponentModel.DefaultBindingPropertyAttribute> on simple controls, like a <xref:System.Windows.Forms.TextBox>, that display a single column (or property) of data. For more information, see [Create a Windows Forms user control that supports simple data binding](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).|  
+|Implement the <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> on controls, like a <xref:System.Windows.Forms.DataGridView>, that display lists (or tables) of data. For more information, see [Create a Windows Forms user control that supports complex data binding](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).|  
+|Implement the <xref:System.ComponentModel.LookupBindingPropertiesAttribute> on controls, like a <xref:System.Windows.Forms.ComboBox>, that display lists (or tables) of data, but also need to present a single column or property. (This process is described in this walkthrough page.)|  
   
- In dieser exemplarischen Vorgehensweise wird ein Nachschlagesteuerelement erstellt, das an Daten aus zwei Tabellen gebunden ist.  In diesem Beispiel werden die Tabellen `Customers` und `Orders` aus der Beispieldatenbank Northwind verwendet.  Das Nachschlagesteuerelement wird an das Feld `CustomerID` der Tabelle `Orders` gebunden.  Das Steuerelement verwendet diesen Wert, um in der Tabelle `Customers` den entsprechenden Wert von `CompanyName` nachzuschlagen.  
+ This walkthrough creates a lookup control that binds to data from two tables. This example uses the `Customers` and `Orders` tables from the Northwind sample database. The lookup control will be bound to the `CustomerID` field from the `Orders` table. It will use this value to look up the `CompanyName` from the `Customers` table.  
   
- Bei dieser exemplarischen Vorgehensweise lernen Sie Folgendes:  
+ During this walkthrough, you will learn how to:  
   
--   Erstellen Sie eine neue **Windows\-Anwendung**.  
+-   Create a new **Windows Application**.  
   
--   Hinzufügen eines neuen **Benutzersteuerelements** zu einem Projekt.  
+-   Add a new **User Control** to your project.  
   
--   Entwerfen des Benutzersteuerelements im visuellen Designer.  
+-   Visually design the user control.  
   
--   Implementieren des `LookupBindingProperty`\-Attributs.  
+-   Implement the `LookupBindingProperty` attribute.  
   
--   Erstellen eines Datasets mit dem [Assistent zum Konfigurieren von Datenquellen](../data-tools/media/data-source-configuration-wizard.png).  
+-   Create a dataset with the **Data Source Configuration** wizard.  
   
--   Festlegen der Spalte **CustomerID** aus der Tabelle **Orders** auf die Verwendung des neuen Steuerelements \(im **Datenquellenfenster**\).  
+-   Set the **CustomerID** column on the **Orders** table, in the **Data Sources** window, to use the new control.  
   
--   Erstellen eines Formulars, um Daten in dem neuen Steuerelement anzuzeigen.  
+-   Create a form to display data in the new control.  
   
-## Vorbereitungsmaßnahmen  
- Für die Durchführung dieser exemplarischen Vorgehensweise benötigen Sie Folgendes:  
+## <a name="prerequisites"></a>Prerequisites  
+ In order to complete this walkthrough, you will need:  
   
--   Zugriff auf die Beispieldatenbank Northwind.  Weitere Informationen finden Sie unter [Gewusst wie: Installieren von Beispieldatenbanken](../data-tools/how-to-install-sample-databases.md).  
+-   Access to the Northwind sample database.  
   
-## Erstellen einer Windows\-Anwendung  
- Im ersten Schritt wird eine **Windows\-Anwendung** erstellt.  
+## <a name="create-a-windows-application"></a>Create a Windows Application  
+ The first step is to create a **Windows Application**.  
   
-#### So erstellen Sie ein neues Windows\-Projekt  
+#### <a name="to-create-the-new-windows-project"></a>To create the new Windows project  
   
-1.  Erstellen Sie in Visual Studio im Menü **Datei** ein neues **Projekt**.  
+1.  In Visual Studio, from the **File** menu, create a new **Project**.  
   
-2.  Geben Sie dem Projekt den Namen LookupControlWalkthrough.  
+2.  Name the project **LookupControlWalkthrough**.  
   
-3.  Wählen Sie **Windows\-Anwendung** aus, und klicken Sie auf **OK**.  Weitere Informationen finden Sie unter [Clientanwendungen](../Topic/Developing%20Client%20Applications%20with%20the%20.NET%20Framework.md).  
+3.  Select **Windows  Forms Application**, and click **OK**.  
   
-     Das Projekt **LookupControlWalkthrough** wird erstellt und dem **Projektmappen\-Explorer** hinzugefügt.  
+     The **LookupControlWalkthrough** project is created, and added to **Solution Explorer**.  
   
-## Hinzufügen eines Benutzersteuerelements zum Projekt  
- In dieser exemplarischen Vorgehensweise wird aus einem **Benutzersteuerelement** ein Nachschlagesteuerelement erstellt. Fügen Sie dem Projekt **LookupControlWalkthrough** zunächst also ein **Benutzersteuerelement** hinzu.  
+## <a name="add-a-user-control-to-the-project"></a>Add a user control to the project  
+ This walkthrough creates a lookup control from a **User Control**, so add a **User Control** item to the **LookupControlWalkthrough** project.  
   
-#### So fügen Sie dem Projekt ein Benutzersteuerelement hinzu  
+#### <a name="to-add-a-user-control-to-the-project"></a>To add a user control to the project  
   
-1.  Klicken Sie im Menü **Projekt** auf **Benutzersteuerelement hinzufügen**.  
+1.  From the **Project** menu, select **Add User Control**.  
   
-2.  Geben Sie im Bereich **Name** die Bezeichnung `LookupBox` ein, und klicken Sie auf **Hinzufügen**.  
+2.  Type `LookupBox` in the **Name** area, and then click **Add**.  
   
-     Das **LookupBox**\-Steuerelement wird dem **Projektmappen\-Explorer** hinzugefügt und im Designer geöffnet.  
+     The **LookupBox** control is added to **Solution Explorer**, and opens in the designer.  
   
-## Entwerfen des LookupBox\-Steuerelements  
+## <a name="design-the-lookupbox-control"></a>Design the LookupBox control  
   
-#### So entwerfen Sie das LookupBox\-Steuerelement  
+#### <a name="to-design-the-lookupbox-control"></a>To design the LookupBox control  
   
--   Ziehen Sie ein <xref:System.Windows.Forms.ComboBox> aus der **Toolbox** auf die Entwurfsoberfläche des Benutzersteuerelements.  
+-   Drag a <xref:System.Windows.Forms.ComboBox> from the **Toolbox** onto the user control's design surface.  
   
-## Hinzufügen des erforderlichen Datenbindungsattributs  
- Implementieren Sie für Nachschlagesteuerelemente, die Datenbindung unterstützen, das <xref:System.ComponentModel.LookupBindingPropertiesAttribute>.  
+## <a name="add-the-required-data-binding-attribute"></a>Add the required data-binding attribute  
+ For lookup controls that support data binding, you can implement the <xref:System.ComponentModel.LookupBindingPropertiesAttribute>.  
   
-#### So implementieren Sie das LookupBindingProperties\-Attribut  
+#### <a name="to-implement-the-lookupbindingproperties-attribute"></a>To implement the LookupBindingProperties attribute  
   
-1.  Wechseln Sie für das **LookupBox**\-Steuerelement zur Codeansicht.  \(Wählen Sie im Menü **Ansicht** den Befehl **Code** aus.\)  
+1.  Switch the **LookupBox** control to code view. (On the **View** menu, choose **Code**.)  
   
-2.  Ersetzen Sie den Code in `LookupBox` durch folgenden Code:  
+2.  Replace the code in the `LookupBox` with the following:  
   
-     [!code-vb[VbRaddataDisplaying#5](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-lookup-data-binding_1.vb)]
-     [!code-cs[VbRaddataDisplaying#5](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-lookup-data-binding_1.cs)]  
+     [!code-vb[VbRaddataDisplaying#5](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-lookup-data-binding_1.vb)]  [!code-csharp[VbRaddataDisplaying#5](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-lookup-data-binding_1.cs)]  
   
-3.  Wählen Sie im Menü **Erstellen** die Option **Projektmappe erstellen** aus.  
+3.  From the **Build** menu, choose **Build Solution**.  
   
-## Erstellen einer Datenquelle aus einer Datenbank  
- In diesem Schritt wird mit dem **Assistenten zum Konfigurieren von Datenquellen** eine Datenquelle erstellt, die auf den Tabellen `Customers` und `Orders` der Beispieldatenbank Northwind basiert.  Sie benötigen Zugriff auf die Beispieldatenbank Northwind, um die Verbindung herstellen zu können.  Informationen zum Einrichten der Beispieldatenbank Northwind finden Sie unter [Gewusst wie: Installieren von Beispieldatenbanken](../data-tools/how-to-install-sample-databases.md).  
+## <a name="create-a-data-source-from-your-database"></a>Create a data source from your database  
+ This step creates a data source using the **Data Source Configuration**wizard, based on the `Customers` and `Orders` tables in the Northwind sample database. You must have access to the Northwind sample database to create the connection. For information on setting up the Northwind sample database, see [Install SQL Server sample databases](../data-tools/install-sql-server-sample-databases.md).  
   
-#### So erstellen Sie die Datenquelle  
+#### <a name="to-create-the-data-source"></a>To create the data source  
   
-1.  Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**.  
+1.  On the **Data** menu, click **Show Data Sources**.  
   
-2.  Wählen Sie im **Datenquellenfenster** die Option **Neue Datenquelle hinzufügen** aus, um den **Assistenten zum Konfigurieren von Datenquellen** zu starten.  
+2.  In the **Data Sources** window, select **Add New Data Source** to start the **Data Source Configuration** wizard.  
   
-3.  Wählen Sie auf der Seite **Datenquellentyp auswählen** die Option **Datenbank** aus, und klicken Sie auf **Weiter**.  
+3.  Select **Database** on the **Choose a Data Source Type** page, and then click **Next**.  
   
-4.  Führen Sie auf der Seite **Wählen Sie Ihre Datenverbindung** einen der folgenden Schritte aus:  
+4.  On the **Choose your Data Connection** page do one of the following:  
   
-    -   Wenn in der Dropdownliste eine Datenverbindung zur Beispieldatenbank "Northwind" verfügbar ist, wählen Sie diese aus.  
+    -   If a data connection to the Northwind sample database is available in the drop-down list, select it.  
   
-         \- oder \-  
+    -   Select **New Connection** to launch the **Add/Modify Connection** dialog box.  
   
-    -   Wählen Sie **Neue Verbindung**, um das Dialogfeld **Verbindung hinzufügen\/ändern** zu öffnen.  
+5.  If your database requires a password, select the option to include sensitive data, and then click **Next**.  
   
-5.  Falls die Datenbank ein Kennwort erfordern sollte, aktivieren Sie die Option für die Einbeziehung vertraulicher Daten, und klicken Sie dann auf **Weiter**.  
+6.  On the **Save connection string to the Application Configuration file** page, click **Next**.  
   
-6.  Klicken Sie auf der Seite **Verbindungszeichenfolge in der Programmkonfigurationsdatei speichern** auf **Weiter**.  
+7.  On the **Choose your Database Objects** page, expand the **Tables** node.  
   
-7.  Erweitern Sie auf der Seite **Datenbankobjekte auswählen** den Knoten **Tabellen**.  
+8.  Select the `Customers` and `Orders` tables, and then click **Finish**.  
   
-8.  Wählen Sie die Tabellen `Customers` und `Orders` aus, und klicken Sie dann auf **Fertig stellen**.  
+     The **NorthwindDataSet** is added to your project, and the `Customers` and `Orders` tables appear in the **Data Sources** window.  
   
-     Das **NorthwindDataSet** wird Ihrem Projekt hinzugefügt, und die Tabellen `Customers` und `Orders` werden im **Datenquellenfenster** angezeigt.  
+## <a name="set-the-customerid-column-of-the-orders-table-to-use-the-lookupbox-control"></a>Set the CustomerID column of the Orders table to use the LookupBox control  
+ Within the **Data Sources** window, you can set the control to be created prior to dragging items onto your form.  
   
-## Festlegen der Spalte "CustomerID" aus der Tabelle "Orders" auf die Verwendung des LookupBox\-Steuerelements  
- Im **Datenquellenfenster** können Sie vor dem Ziehen von Elementen auf das Formular festlegen, welches Steuerelement erstellt werden soll.  
+#### <a name="to-set-the-customerid-column-to-bind-to-the-lookupbox-control"></a>To set the CustomerID column to bind to the LookupBox control  
   
-#### So legen Sie die Bindung der Spalte "CustomerID" an das LookupBox\-Steuerelement fest  
+1.  Open **Form1** in the designer.  
   
-1.  Öffnen Sie **Form1** im Designer.  
+2.  Expand the **Customers** node in the **Data Sources** window.  
   
-2.  Erweitern Sie im **Datenquellenfenster** den Knoten **Customers**.  
+3.  Expand the **Orders** node (the one in the **Customers** node below the **Fax** column).  
   
-3.  Erweitern Sie den Knoten **Orders** \(denjenigen, der sich im Knoten **Customers** unterhalb der Spalte **Fax** befindet\).  
+4.  Click the drop-down arrow on the **Orders** node, and choose **Details** from the control list.  
   
-4.  Klicken Sie im Knoten **Orders** auf den Dropdownpfeil, und wählen Sie in der Steuerelementliste die Option **Details** aus.  
+5.  Click the drop-down arrow on the **CustomerID** column (in the **Orders** node), and choose **Customize**.  
   
-5.  Klicken Sie in der Spalte **CustomerID** \(im Knoten **Orders**\) auf den Dropdownpfeil, und wählen Sie **Anpassen** aus.  
+6.  Select the **LookupBox** from the list of **Associated Controls** in the **Data UI Customization Options** dialog box.  
   
-6.  Wählen Sie im Dialogfeld **Optionen für die Anpassung der Datenbenutzeroberfläche** in der Liste **Zugeordnete Steuerelemente** den Eintrag **LookupBox** aus.  
+7.  Click **OK**.  
   
-7.  Klicken Sie auf **OK**.  
+8.  Click the drop-down arrow on the **CustomerID** column, and choose **LookupBox**.  
   
-8.  Klicken Sie in der Spalte **CustomerID** auf den Dropdownpfeil, und wählen Sie **LookupBox** aus.  
+## <a name="add-controls-to-the-form"></a>Add controls to the form  
+ You can create the data-bound controls by dragging items from the **Data Sources** window onto **Form1**.  
   
-## Hinzufügen von Steuerelementen zum Formular  
- Sie können die datengebundenen Steuerelemente erstellen, indem Sie Elemente aus dem **Datenquellenfenster** auf **Form1** ziehen.  
+#### <a name="to-create-data-bound-controls-on-the-windows-form"></a>To create data-bound controls on the Windows Form  
   
-#### So erstellen Sie datengebundene Steuerelemente auf dem Windows Form  
+-   Drag the **Orders** node from the **Data Sources** window onto the Windows Form, and verify that the **LookupBox** control is used to display the data in the `CustomerID` column.  
   
--   Ziehen Sie den Knoten **Orders** aus dem **Datenquellenfenster** auf das Windows Form, und stellen Sie sicher, dass das **LookupBox**\-Steuerelement zum Anzeigen der Daten in der Spalte `CustomerID` verwendet wird.  
+## <a name="bind-the-control-to-look-up-companyname-from-the-customers-table"></a>Bind the control to look up CompanyName from the Customers table  
   
-## Binden des Steuerelements für das Nachschlagen von CompanyName in der Tabelle Customers  
+#### <a name="to-setup-the-lookup-bindings"></a>To setup the lookup bindings  
   
-#### So richten Sie die Nachschlagebindungen ein  
+-   Select the main **Customers** node in the **Data Sources** window, and drag it onto the combo box in the **CustomerIDLookupBox** on **Form1**.  
   
--   Wählen Sie im **Datenquellenfenster** den Hauptknoten **Customers** aus, und ziehen Sie ihn auf das Kombinationsfeld in **CustomerIDLookupBox** von **Form1**.  
+     This sets up the data binding to display the `CompanyName` from the `Customers` table, while maintaining the `CustomerID` value from the `Orders` table.  
   
-     Damit wird die Datenbindung so eingerichtet, dass der Wert für `CompanyName` aus der Tabelle `Customers` angezeigt und gleichzeitig der Wert für `CustomerID` aus der Tabelle `Orders` beibehalten wird.  Weitere Informationen finden Sie unter [Gewusst wie: Erstellen von Nachschlagetabellen in Windows Forms\-Anwendungen](../data-tools/create-lookup-tables-in-windows-forms-applications.md).  
+## <a name="running-the-application"></a>Running the application  
   
-## Ausführen der Anwendung  
+#### <a name="to-run-the-application"></a>To run the application  
   
-#### So führen Sie die Anwendung aus  
+-   Press F5 to run the application.  
   
--   Drücken Sie F5, um die Anwendung auszuführen.  
+-   Navigate through some records, and verify that the `CompanyName` appears in the `LookupBox` control.  
   
--   Navigieren Sie durch einige Datensätze, und prüfen Sie, ob im `LookupBox`\-Steuerelement der Wert von `CompanyName` angezeigt wird.  
-  
-## Siehe auch  
- [Festlegen des Steuerelements, das beim Ziehen aus dem Datenquellenfenster erstellt werden soll](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)   
- [Binden von Windows Forms\-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Herstellen von Datenverbindungen in Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)   
- [Vorbereiten der Anwendung auf den Empfang von Daten](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [Abrufen von Daten für die Anwendung](../data-tools/fetching-data-into-your-application.md)   
- [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Bearbeiten von Daten in der Anwendung](../data-tools/editing-data-in-your-application.md)   
- [Überprüfen von Daten](../Topic/Validating%20Data.md)   
- [Speichern von Daten](../data-tools/saving-data.md)
+## <a name="see-also"></a>See Also  
+ [Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+

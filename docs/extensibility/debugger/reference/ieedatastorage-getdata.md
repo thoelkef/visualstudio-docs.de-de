@@ -1,62 +1,79 @@
 ---
-title: "IEEDataStorage::GetData | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEEDataStorage::GetData"
-helpviewer_keywords: 
-  - "IEEDataStorage::GetData"
+title: IEEDataStorage::GetData | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IEEDataStorage::GetData
+helpviewer_keywords:
+- IEEDataStorage::GetData
 ms.assetid: 4d384039-73d4-40b4-ace6-a2474c546397
 caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
----
-# IEEDataStorage::GetData
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: f9642911606d9bbd72382fa1209484cded9bdf74
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
-Ruft die angegebene Anzahl von Bytes aus dem Objekt ab.  
+---
+# <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
+Retrieves the specified number of bytes from the object.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetData(  
-   ULONG  dataSize,  
-   ULONG* sizeGotten,  
-   BYTE*  data  
+   ULONG  dataSize,  
+   ULONG* sizeGotten,  
+   BYTE*  data  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetData(  
-   uint     dataSize,  
-   out uint sizeGotten,  
-   byte[]   data  
+   uint     dataSize,  
+   out uint sizeGotten,  
+   byte[]   data  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `dataSize`  
- \[in\]  Die Anzahl der abzurufenden Bytes \(das `data` Array muss mindestens diese Anzahl von Bytes\) enthalten.  
+ [in] The number of bytes to retrieve (the `data` array must hold at least this number of bytes).  
   
  `sizeGotten`  
- \[out\]  Gibt die Anzahl der Bytes, die tatsächlich abgerufenen zurück.  
+ [out] Returns the number of bytes actually retrieved.  
   
  `data`  
- \[in, out\]  Bei den angeforderten Daten zu füllende Array.  
+ [in, out] Array to be filled in with the requested data.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Hinweise  
- Der empfohlene Verwendung dieser Methode besteht darin, alle Bytes der Daten in ein lokales Array abzurufen, da es keine Möglichkeit gibt, in Bytes zum Abrufen des Prozesses zu überspringen.  In diesem Fall sollte der Parameter `dataSize` der Wert sein, der von der [GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)\-Methode zurückgegeben wird.  
+## <a name="remarks"></a>Remarks  
+ The recommended use of this method is to retrieve all the data bytes into a local array, since there is no way to skip over bytes in the retrieval process. In this case, the parameter `dataSize` should be the value returned by the [GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md) method.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)   
  [GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)

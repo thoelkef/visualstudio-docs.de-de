@@ -1,56 +1,73 @@
 ---
-title: "IDebugObject::IsEqual | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugObject::IsEqual"
-helpviewer_keywords: 
-  - "IDebugObject::IsEqual-Methode"
+title: IDebugObject::IsEqual | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugObject::IsEqual
+helpviewer_keywords:
+- IDebugObject::IsEqual method
 ms.assetid: 4b76e663-ef2e-41ff-9be1-bf26d666a34a
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugObject::IsEqual
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 9780a18ff72058a90739c421061fabd9ce8520e1
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
-Vergleicht ein Objekt mit diesem Objekt.  
+---
+# <a name="idebugobjectisequal"></a>IDebugObject::IsEqual
+Compares an object with this object.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT IsEqual(   
-   IDebugObject* pObject,  
-   BOOL*         pfIsEqual  
+```cpp  
+HRESULT IsEqual(   
+   IDebugObject* pObject,  
+   BOOL*         pfIsEqual  
 );  
 ```  
   
-```c#  
+```csharp  
 int IsEqual(  
-   IDebugObject pObject,  
-   out int      pfIsEqual  
+   IDebugObject pObject,  
+   out int      pfIsEqual  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `pObject`  
- \[in\]  Ein [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)\-Objekt, das das Objekt darstellt, die verglichen werden soll.  
+ [in] An [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) object representing the object to compare to.  
   
  `pfIsEqual`  
- \[out\]  Gibt Wert ungleich 0 \(null\) zurück \(`TRUE`\), wenn die Werte der Objekte gleich sind. Andernfalls gibt Null zurück \(`FALSE`\).  
+ [out] Returns non-zero (`TRUE`) if the values of the objects are equal; otherwise, returns zero (`FALSE`).  
   
-## Rückgabewert  
- Bei Erfolg gibt S\_OK zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
-## Hinweise  
- In der Regel kann diese Methode die Adressen der Werte vergleichen, die vom `pObject`\-Parameter und dieses [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)\-Objekt dargestellt werden. Wenn die Adressen gleich sind, können die Objekte als gleich betrachtet werden.  
+## <a name="remarks"></a>Remarks  
+ Typically, this method can compare the addresses of the values represented by the `pObject` parameter and this [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) object; if the addresses are equal, then the objects can be considered equal.  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

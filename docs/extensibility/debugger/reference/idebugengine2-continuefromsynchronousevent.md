@@ -1,56 +1,73 @@
 ---
-title: "IDebugEngine2::ContinueFromSynchronousEvent | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngine2::ContinueFromSynchronousEvent"
-helpviewer_keywords: 
-  - "IDebugEngine2::ContinueFromSynchronousEvent"
+title: IDebugEngine2::ContinueFromSynchronousEvent | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugEngine2::ContinueFromSynchronousEvent
+helpviewer_keywords:
+- IDebugEngine2::ContinueFromSynchronousEvent
 ms.assetid: 9a57dfcd-df8e-4be5-b1fe-bd853e3c6bb2
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugEngine2::ContinueFromSynchronousEvent
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 422dc31356947d9856f235db8e93cb1ca5b69930
+ms.contentlocale: de-de
+ms.lasthandoff: 08/28/2017
 
-Wird vom Debugbuild Manager der Sitzung \(SDM\), um anzugeben, dass ein synchrones Debuggen Ereignis, durch das Debugmodul bereits gesendet \(SDM\), um DE, empfangen und verarbeitet wurde.  
+---
+# <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
+Called by the session debug manager (SDM) to indicate that a synchronous debug event, previously sent by the debug engine (DE) to the SDM, was received and processed.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT ContinueFromSynchronousEvent(   
-   IDebugEvent2* pEvent  
+```cpp  
+HRESULT ContinueFromSynchronousEvent(   
+   IDebugEvent2* pEvent  
 );  
 ```  
   
-```c#  
-HRESULT ContinueFromSynchronousEvent(   
-   IDebugEvent2 pEvent  
+```csharp  
+HRESULT ContinueFromSynchronousEvent(   
+   IDebugEvent2 pEvent  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameters  
  `pEvent`  
- \[in\]  Ein [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)\-Objekt, das das zuvor gesendete synchrone Ereignis darstellt, in dem der Debugger nun fortgesetzt werden soll.  
+ [in] An [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) object that represents the previously sent synchronous event from which the debugger should now continue.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## Hinweise  
- DE muss sicherstellen, dass es sich um die Quelle des Ereignisses ist, das durch den `pEvent`\-Parameter dargestellt wird.  
+## <a name="remarks"></a>Remarks  
+ The DE must verify that it was the source of the event represented by the `pEvent` parameter.  
   
-## Beispiel  
- Im folgenden Beispiel wird veranschaulicht, wie diese Methode für ein einfaches `CEngine`\-Objekt implementiert, das die [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)\-Schnittstelle implementiert.  
+## <a name="example"></a>Example  
+ The following example shows how to implement this method for a simple `CEngine` object that implements the [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CEngine::ContinueFromSynchronousEvent(IDebugEvent2* pEvent)  
 {  
    HRESULT hr;  
@@ -86,6 +103,6 @@ HRESULT CEngine::ContinueFromSynchronousEvent(IDebugEvent2* pEvent)
 }  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>See Also  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
