@@ -1,60 +1,79 @@
 ---
-title: "Vorgehensweise: Konfigurieren von Vererbung mit dem O/R-Designer | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'How to: Configure inheritance by using the O-R Designer | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
 caps.latest.revision: 4
-caps.handback.revision: 2
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: e3186eeb2d54f8c2518e645524dd915e90bfe20e
+ms.contentlocale: de-de
+ms.lasthandoff: 09/07/2017
+
 ---
-# Vorgehensweise: Konfigurieren von Vererbung mit dem O/R-Designer
-Der [!INCLUDE[vs_ordesigner_long](../data-tools/includes/vs_ordesigner_long_md.md)] \([!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]\) unterstützt das häufig in relationalen Systemen implementierte Konzept der Vererbung einer einzelnen Tabelle. Bei der Vererbung einer einzelnen Tabelle gibt es eine einzelne Datenbanktabelle, die Felder sowohl für übergeordnete Informationen als auch für untergeordnete Informationen enthält.Bei relationalen Daten enthält eine Unterscheidungsspalte den Wert, der festlegt, zu welcher Klasse ein bestimmter Datensatz gehört.  
+# <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>How to: Configure inheritance by using the O/R Designer
+The [!INCLUDE[vs_ordesigner_long](../data-tools/includes/vs_ordesigner_long_md.md)] ([!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]) supports the concept of single-table inheritance as it is often implemented in relational systems. In single-table inheritance, there is a single database table that contains fields for both parent information and child information. With relational data, a discriminator column contains the value that determines which class any record belongs to.  
   
- Betrachten Sie beispielsweise die Tabelle "Persons", die alle in einem Unternehmen beschäftigten Personen enthält.Einige Personen sind Mitarbeiter, andere Führungskräfte.Die Tabelle "Persons" enthält die Spalte `EmployeeType`, die für Führungskräfte den Wert 1 und für Mitarbeiter den Wert 2 enthält. Diese Spalte dient als Unterscheidungsspalte.In diesem Szenario können Sie eine Unterklasse von Mitarbeitern erstellen und die Klasse nur mit Datensätzen füllen, die einen `EmployeeType`\-Wert von 2 aufweisen.Sie können aus der jeweiligen Klasse auch die nicht zutreffenden Spalten entfernen.  
+ For example, consider a Persons table that contains everyone employed by a company. Some people are employees and some people are managers. The Persons table contains a column named `EmployeeType` that has a value of 1 for managers and a value of 2 for employees; this is the discriminator column. In this scenario, you can create a subclass of employees and populate the class with only records that have an `EmployeeType` value of 2. You can also remove columns that do not apply from each of the classes.  
   
- Das Erstellen eines Objektmodells, das Vererbung verwendet \(und sich auf relationale Daten bezieht\), kann etwas verwirrend sein.Im folgenden Verfahren werden die erforderlichen Schritte zum Konfigurieren von Vererbung mit dem O\/R\-Designer dargestellt.Da es möglicherweise schwierig ist, generische Schritte nachzuvollziehen, ohne sich auf eine vorhandene Tabelle und die zugehörigen Spalten zu beziehen, wird auch eine exemplarische Vorgehensweise zur Verfügung gestellt, in der echte Daten verwendet werden.Ausführliche Schritt\-für\-Schritt\-Anleitungen zur Konfiguration von Vererbung mit dem [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] finden Sie unter [Exemplarische Vorgehensweise: Erstellen von LINQ to SQL\-Klassen mithilfe von Vererbung einer einzelnen Tabelle \(O\/R\-Designer\)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md).  
+ Creating an object model that uses inheritance (and corresponds to relational data) can be somewhat confusing. The following procedure outlines the steps required for configuring inheritance with the O/R Designer. Following generic steps without referring to an existing table and columns might be difficult, so a walkthrough that uses data has been provided. For detailed step-by-step directions for configuring inheritance by using the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], see [Walkthrough: Creating LINQ to SQL Classes by Using Single-Table Inheritance (O/R Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md).  
   
-### So erstellen Sie geerbte Datenklassen  
+### <a name="to-create-inherited-data-classes"></a>To create inherited data classes  
   
-1.  Öffnen Sie den [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], indem Sie einem vorhandenen Visual Basic\- oder C\#\-Projekt ein **LINQ to SQL\-Klassen**\-Element hinzufügen.  
+1.  Open the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] by adding a **LINQ to SQL Classes** item to an existing Visual Basic or C# project.  
   
-2.  Ziehen Sie die Tabelle, die Sie als Basisklasse verwenden möchten, auf den [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
+2.  Drag the table you want to use as the base class onto the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
   
-3.  Ziehen Sie eine zweite Kopie der Tabelle auf den [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], und benennen Sie sie um.Sie dient als abgeleitete Klasse bzw. Unterklasse.  
+3.  Drag a second copy of the table onto the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] and rename it. This is the derived class, or subclass.  
   
-4.  Klicken Sie in der **Toolbox** auf der Registerkarte **O\/R\-Designer** auf **Vererbung**, klicken Sie dann auf die Unterklasse \(die umbenannte Tabelle\), und stellen Sie eine Verbindung mit der Basisklasse her.  
-  
-    > [!NOTE]
-    >  Klicken Sie in der **Toolbox** auf das Element **Vererbung**, und lassen Sie die Maustaste los. Klicken Sie auf die zweite Kopie der in Schritt 3 erstellten Klasse, und klicken Sie dann auf die erste Klasse, die Sie in Schritt 2 erstellt haben.Der Pfeil der Vererbungslinie zeigt dann auf die erste Klasse.  
-  
-5.  Löschen Sie in jeder Klasse die Objekteigenschaften, die nicht angezeigt werden sollen und die nicht für Zuordnungen verwendet werden.Der Versuch, für Zuordnungen verwendete Objekteigenschaften zu löschen, führt zu einem Fehler: [Die \<Eigenschaftenname\>\-Eigenschaft kann nicht gelöscht werden, weil sie an der Zuordnung \<Zuordnungsname\> teilnimmt](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).  
+4.  Click **Inheritance** in the **Object Relational Designer** tab of the **Toolbox**, and then click the subclass (the table you renamed) and connect it to the base class.  
   
     > [!NOTE]
-    >  Da eine abgeleitete Klasse die in der Basisklasse definierten Eigenschaften erbt, dürfen in den Klassen nicht dieselben Spalten definiert sein.\(Spalten werden als Eigenschaften implementiert.\) Sie können die Erstellung von Spalten in der abgeleiteten Klasse ermöglichen, indem Sie in der Basisklasse den Vererbungsmodifizierer für die entsprechende Eigenschaft festlegen.Weitere Informationen finden Sie unter [NOT IN BUILD: Overriding Properties and Methods](http://msdn.microsoft.com/de-de/2167e8f5-1225-4b13-9ebd-02591ba90213).  
+    >  Click the **Inheritance** item in the **Toolbox** and release the mouse button, click the second copy of the class you created in step 3, and then click the first class you created in step 2. The arrow on the inheritance line will point to the first class.  
   
-6.  Wählen Sie im [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] die Vererbungslinie aus.  
+5.  In each class, delete any object properties that you do not want to appear and that are not used for associations. You will receive an error if you attempt to delete object properties used for associations: [The property \<property name> cannot be deleted because it is participating in the association \<association name>](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).  
   
-7.  Legen Sie im Fenster **Eigenschaften** die **Unterscheidungseigenschaft** auf den Namen der Spalte fest, anhand der die Datensätze in den Klassen unterschieden werden.  
+    > [!NOTE]
+    >  Because a derived class inherits the properties defined in its base class, the same columns cannot be defined in each class. (Columns are implemented as properties.) You can enable the creation of columns in the derived class by setting the Inheritance Modifier on the property in the base class. For more information, see [NOT IN BUILD: Overriding Properties and Methods](http://msdn.microsoft.com/en-us/2167e8f5-1225-4b13-9ebd-02591ba90213).  
   
-8.  Legen Sie die Eigenschaft **Abgeleiteter Klassendiskriminatorwert** auf den Wert in der Datenbank fest, der den Datensatz als den geerbten Typ kennzeichnet.\(Dies ist der Wert, der in der Unterscheidungsspalte gespeichert und mit dem die geerbte Klasse gekennzeichnet wird.\)  
+6.  Select the inheritance line in the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
   
-9. Legen Sie die Eigenschaft **Basisklassen\-Diskriminatorwert** auf den Wert fest, der den Datensatz als Basistyp kennzeichnet.\(Dies ist der eigentliche Wert, der in der Unterscheidungsspalte gespeichert und mit dem die Basisklasse gekennzeichnet wird.\)  
+7.  In the **Properties** window, set the **Discriminator Property** to the column name that is used to distinguish the records in your classes.  
   
-10. Wahlweise können Sie auch die Eigenschaft **Vererbungsstandard** festlegen, um in einer Vererbungshierarchie einen Typ zu kennzeichnen, der beim Laden von Spalten verwendet wird, die keinem definierten Vererbungscode entsprechen.Mit anderen Worten: Wenn ein Datensatz in der Unterscheidungsspalte einen Wert enthält, der keinem der Werte in den Eigenschaften **Abgeleiteter Klassendiskriminatorwert** oder **Basisklassen\-Diskriminatorwert** entspricht, wird der Datensatz in den als **Vererbungsstandard** gekennzeichneten Typ geladen.  
+8.  Set the **Derived Class Discriminator Value** property to the value in the database that designates the record as the inherited type. (This is the value that is stored in the discriminator column and that is used to designate the inherited class.)  
   
-## Siehe auch  
- [Übersicht über den O\/R\-Designer](../Topic/LINQ%20to%20SQL%20Tools%20in%20Visual%20Studio1.md)   
- [Exemplarische Vorgehensweise: Erstellen von LINQ to SQL\-Klassen \(O\/R\-Designer\)](../Topic/Walkthrough:%20Creating%20LINQ%20to%20SQL%20Classes%20\(O-R%20Designer\).md)   
- [PAVE What's New for Data Application Development in Visual Studio 2012](http://msdn.microsoft.com/de-de/3d50d68f-5f44-4915-842f-6d42fce793f1)   
- [Zugreifen auf Daten in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
- [LINQ to SQL](../Topic/LINQ%20to%20SQL.md)   
- [Exemplarische Vorgehensweise: Erstellen von LINQ to SQL\-Klassen mithilfe von Vererbung einer einzelnen Tabelle \(O\/R\-Designer\)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)   
- [NOT IN BUILD: Inheritance in Visual Basic](http://msdn.microsoft.com/de-de/e5e6e240-ed31-4657-820c-079b7c79313c)   
- [Vererbung](/dotnet/csharp/programming-guide/classes-and-structs/inheritance)
+9. Set the **Base Class Discriminator Value** property to the value that designates the record as a base type. (This is the value that is stored in the discriminator column and that is used to designate the base class.)  
+  
+10. Optionally, you can also set the **Inheritance Default** property to designate a type in an inheritance hierarchy that is used when loading rows that do not match any defined inheritance code. In other words, if a record has a value in its discriminator column that does not match the value in either the **Derived Class Discriminator Value** or **Base Class Discriminator Value** properties, the record will load into the type designated as the **Inheritance Default**.  
+  
+## <a name="see-also"></a>See Also  
+ [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
+ [Walkthrough: Creating LINQ to SQL Classes (O-R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
+ [PAVE What's New for Data Application Development in Visual Studio 2012](http://msdn.microsoft.com/en-us/3d50d68f-5f44-4915-842f-6d42fce793f1)   
+ [Accessing data in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
+ [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)   
+ [Walkthrough: Creating LINQ to SQL Classes by Using Single-Table Inheritance (O/R Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)   
+ [NOT IN BUILD: Inheritance in Visual Basic](http://msdn.microsoft.com/en-us/e5e6e240-ed31-4657-820c-079b7c79313c)   
+ [Inheritance](/dotnet/csharp/programming-guide/classes-and-structs/inheritance)

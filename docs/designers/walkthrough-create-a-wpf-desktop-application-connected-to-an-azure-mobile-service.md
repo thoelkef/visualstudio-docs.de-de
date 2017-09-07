@@ -1,5 +1,5 @@
 ---
-title: 'Walkthrough: Create a WPF Desktop Application connected to an Azure Mobile Service | Microsoft Docs'
+title: 'Exemplarische Vorgehensweise: Erstellen einer WPF-Desktopanwendung, die mit einem Azure Mobile Service verbunden ist | Microsoft-Dokumentation'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -17,72 +17,72 @@ ms.translationtype: HT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 5027ce1affd22c88af18301d51304958c819249a
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Walkthrough: Create a WPF Desktop Application connected to an Azure Mobile Service
-You can use Windows Presentation Foundation (WPF) to quickly create a modern desktop application that uses an Azure Mobile Service to store and provide data.  
+# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Exemplarische Vorgehensweise: Erstellen einer WPF-Desktopanwendung, die mit einem Azure Mobile Service verbunden ist
+Mit Windows Presentation Foundation (WPF) können Sie schnell eine moderne Desktopanwendung erstellen, die zum Speichern und Bereitstellen von Daten eines Azure Mobile Service verwendet.  
   
-##  <a name="Requirements"></a> Prerequisites  
- You'll need the following to complete this walkthrough:  
+##  <a name="Requirements"></a> Erforderliche Komponenten  
+ Für diese exemplarische Vorgehensweise wird Folgendes benötigt:  
   
--   Visual Studio 2017 or any version that supports WPF development.  
+-   Visual Studio 2017 oder eine beliebige Version, die die WPF-Entwicklung unterstützt.  
   
--   An active Microsoft Azure account.  
+-   Ein aktives Microsoft Azure-Konto.  
   
-    -   You can sign up for a free trial account [here](http://azure.microsoft.com/en-us/pricing/free-trial/).  
+    -   Für ein kostenloses Testkonto können Sie sich [hier](http://azure.microsoft.com/en-us/pricing/free-trial/)anmelden.  
   
-    -   You can activate [MSDN subscriber benefits](https://azure.microsoft.com/en-us/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). Your MSDN subscription gives you credits every month that you can use for paid Azure services.  
+    -   Sie können [Vorteile für MSDN-Abonnenten](https://azure.microsoft.com/en-us/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F)aktivieren. Über Ihr MSDN-Abonnement erhalten Sie monatlich eine Gutschrift, die Sie für kostenpflichtige Azure-Dienste verwenden können.  
   
-## <a name="create-a-project-and-add-references"></a>Create a project and add references  
- The first step is to create a WPF project and add a NuGet package that lets you connect to Azure Mobile Services.  
+## <a name="create-a-project-and-add-references"></a>Erstellen eines neuen Projekts und Hinzufügen von Verweisen  
+ Zunächst erstellen Sie ein WPF-Projekt und fügen diesem ein NuGet-Paket hinzu, über das Sie eine Verbindung mit Azure Mobile Services herstellen können.  
   
-#### <a name="to-create-the-project"></a>To create the project  
+#### <a name="to-create-the-project"></a>So erstellen Sie das Projekt  
   
-1.  On the menu bar, choose **File**, **New**, **Project**.  
+1.  Wählen Sie in der Menüleiste **Datei**, **Neu**, **Projekt**aus.  
   
-2.  In the **New Project** dialog, expand either the **Visual C#** or **Visual Basic** node and choose the **Windows** node, and then expand the **Windows** node and choose the **Classic Desktop** node.  
+2.  Erweitern Sie im Dialogfeld **Neues Projekt** den Knoten **Visual C#** oder **Visual Basic** , und wählen Sie den Knoten **Windows** aus. Erweitern Sie dann den Knoten **Windows** , und wählen Sie den Knoten **Klassischer Desktop** aus.  
   
-3.  In the template list, choose the **WPF Application** template.  
+3.  Wählen Sie in der Vorlagenliste die Vorlage **WPF-Anwendung** aus.  
   
-4.  In the **Name** textbox enter `WPFQuickStart`, and then choose the **OK** button.  
+4.  Erweitern Sie im Dialogfeld **Name**  `WPFQuickStart`ein, und wählen Sie dann die Schaltfläche **OK** aus.  
   
-     The project is created and the project files are added to **Solution Explorer**, and the designer for the default application window named **MainWindow.xaml** is displayed.  
+     Das Projekt wird erstellt, und die Projektdateien werden dem **Projektmappen-Explorer**hinzugefügt. Zudem wird der Designer für das Standardanwendungsfenster namens **MainWindow.xaml** angezeigt.  
   
-#### <a name="to-add-a-reference-to-the-windows-azure-mobile-services-sdk"></a>To add a reference to the Windows Azure Mobile Services SDK  
+#### <a name="to-add-a-reference-to-the-windows-azure-mobile-services-sdk"></a>So fügen Sie dem Windows Azure Mobile Services SDK einen Verweis hinzu  
   
-1.  In **Solution Explorer**, open the shortcut menu for the **References** node and choose **Manage NuGet Packages**.  
+1.  Öffnen Sie im **Projektmappen-Explorer**das Kontextmenü für den Knoten **Verweise** , und wählen Sie **NuGet-Pakete verwalten**aus.  
   
-2.  In the **NuGet Package Manager**, choose the **Search** field and enter `mobileservices`.  
+2.  Erweitern Sie im Dialogfeld **NuGet-Paket-Manager**das Feld **Suche** aus, und geben Sie `mobileservices`anmelden.  
   
-3.  In the left pane, choose **WindowsAzure.MobileServices**, and then in the right pane choose the **Install** button.  
-  
-    > [!NOTE]
-    >  If a **Preview** dialog appears, review the proposed changes and then choose the **OK** button.  
-  
-4.  In the **License Acceptance** dialog, review the license terms and then accept them by choosing the **I Accept** button.  
-  
-     The necessary references will be added to **Solution Explorer**.  
+3.  Wählen Sie im linken Bereich **WindowsAzure.MobileServices**aus, und wählen Sie dann im rechten Bereich die Schaltfläche **Installieren** aus.  
   
     > [!NOTE]
-    >  If you don't agree with the license terms, choose the **I Decline** button. You won't be able to finish the rest of the walkthrough.  
+    >  Wenn ein Dialogfeld mit einer **Vorschau** angezeigt wird, prüfen Sie die vorgeschlagenen Änderungen, und wählen Sie dann die Schaltfläche **OK** aus.  
   
-## <a name="create-the-user-interface"></a>Create the user interface  
- The next step is to create the user interface for the application. First you'll create a reusable user control that displays a standard side-by-side two pane layout. You'll add the user control to the main application window and add controls to enter and display data, then write some code to define the interaction with the mobile service backend.  
+4.  Lesen Sie im Dialogfeld zum **Akzeptieren der Lizenzbedingungen** die Lizenzbedingungen, und akzeptieren Sie diese durch Klicken auf die Schaltfläche **Ich stimme den Lizenzbedingungen zu** .  
   
-#### <a name="to-add-a-user-control"></a>To add a user control  
+     Die erforderlichen Verweise werden dem **Projektmappen-Explorer**hinzugefügt.  
   
-1.  In **Solution Explorer**, open the shortcut menu for the **WPFQuickStart** node and choose **Add**, **New Folder**.  
+    > [!NOTE]
+    >  Wenn Sie die Lizenzbedingungen nicht akzeptieren, wählen Sie die Schaltfläche **Ich stimme nicht zu** aus. In diesem Fall können Sie die exemplarische Vorgehensweise nicht fortsetzen.  
   
-2.  Name the folder `Common`.  
+## <a name="create-the-user-interface"></a>Erstellen der Benutzeroberfläche  
+ Im nächsten Schritt erstellen Sie die Benutzeroberfläche für die Anwendung. Zunächst erstellen Sie ein wiederverwendbares Benutzersteuerelement, das ein nebeneinander angeordnetes, in zwei Bereiche unterteiltes Standardbereichslayout anzeigt. Dann fügen Sie das Benutzersteuerelement dem Hauptanwendungsfenster hinzu, und fügen Sie Steuerelemente zum Eingeben und Anzeigen von Daten hinzu. Anschließend schreiben Sie Code, um die Interaktion mit dem Mobile Service-Backend zu definieren.  
   
-3.  Open the shortcut menu for the **Common** folder and choose **Add**, **User Control**.  
+#### <a name="to-add-a-user-control"></a>So fügen Sie ein Benutzersteuerelement hinzu  
   
-4.  In the **Add New Item** dialog, choose the Name field and enter `QuickStartTask`, and then choose the **Add** button.  
+1.  Öffnen Sie in **Projektmappen-Explorer**das Kontextmenü des Knotens **WPFQuickStart** , und wählen Sie **Hinzufügen**, **Neuer Ordner**aus.  
   
-     The user control will be added to the project and the **QuickStartTask.xaml** file will open in the designer.  
+2.  Geben Sie dem Ordner den Namen `Common`anmelden.  
   
-5.  In the lower pane of the designer, select the `<Grid>` and `</Grid>` tags and replace them with the following XAML code:  
+3.  Öffnen Sie das Kontextmenü des Ordners **Common** , und wählen Sie **Hinzufügen**, **Benutzersteuerelement**aus.  
+  
+4.  Erweitern Sie im Dialogfeld **Neues Element hinzufügen** das Feld "Name" aus, und geben Sie `QuickStartTask`ein, und wählen Sie dann die Schaltfläche **Hinzufügen** aus.  
+  
+     Das Benutzersteuerelement wird dem Projekt hinzugefügt, und die Datei **QuickStartTask.xaml** wird im Designer geöffnet.  
+  
+5.  Wählen Sie im unteren Bereich des Designers die Tags `<Grid>` und `</Grid>` aus, und ersetzen Sie sie durch folgenden XAML-Code:  
   
     ```xaml  
     <Grid VerticalAlignment="Top">  
@@ -98,13 +98,13 @@ You can use Windows Presentation Foundation (WPF) to quickly create a modern des
         </Grid>  
     ```  
   
-     This XAML code creates a reusable layout with placeholders for number, title and description fields. At run time the placeholders can be replaced with text as shown in the following illustration.  
+     Dieser XAML-Code erstellt ein wiederverwendbares Layout mit Platzhaltern für Felder für Zahlen, Titel und Beschreibungen. Zur Laufzeit können die Platzhalter durch Text ersetzt werden, wie in der folgenden Abbildung dargestellt.  
   
-     ![The QuickStartTask user control](../designers/media/wpfquickstart1.PNG "WPFQuickStart1")  
+     ![Das Benutzersteuerelement „QuickStartTask“](../designers/media/wpfquickstart1.PNG "WPFQuickStart1")  
   
-6.  In **Solution Explorer**, expand the **QuickStartTask.xaml** node and open the **QuickStartTask.xaml.cs** or **QuickStartTask.xaml.vb** file.  
+6.  Erweitern Sie in **Projektmappen-Explorer**den Knoten **QuickStartTask.xaml** , und öffnen Sie die Datei **QuickStartTask.xaml.cs** oder **QuickStartTask.xaml.vb** .  
   
-7.  In the code editor, replace the `namespace WPFQuickStart.Common` (C#) namespace or the `Public Class QuickStartTask` (VB) method with the following code:  
+7.  Ersetzen Sie im Code-Editor den `namespace WPFQuickStart.Common` -Namespace (C#) oder die `Public Class QuickStartTask` Methode (VB) durch folgenden Code:  
   
     ```csharp  
     namespace WPFQuickStart.Common  
@@ -200,29 +200,29 @@ You can use Windows Presentation Foundation (WPF) to quickly create a modern des
         End Class  
     ```  
   
-     This code uses dependency properties to set the values for the number, title and description fields at run time.  
+     Dieser Code verwendet Abhängigkeitseigenschaften, um zur Laufzeit de Werte für die Felder für Zahlen, Titel und Beschreibungen festzulegen.  
   
-8.  On the menu bar, choose **Build**, **Build WPFQuickStart** to build the user control.  
+8.  Wählen Sie auf der Menüleiste **Erstellen**, **WPFQuickStart erstellen** aus, um das Benutzerelement zu erstellen.  
   
-#### <a name="to-create-and-modify-the-main-window"></a>To create and modify the main window  
+#### <a name="to-create-and-modify-the-main-window"></a>So erstellen und ändern Sie das Hauptfenster  
   
-1.  In **Solution Explorer**, open the **MainWindow.xaml** file.  
+1.  Öffnen Sie im **Projektmappen-Explorer**die Datei **MainWindow.xaml** .  
   
-2.  **Important**. This step is for C# only. If you are using Visual Basic, skip to the next step. In the lower pane of the designer, locate the line `xmlns:local="clr-namespace:WPFQuickStart"` and replace it with the following XAML code:  
+2.  **Wichtig**. Dieser Schritt gilt nur für C#. Wenn Sie Visual Basic verwenden, fahren Sie mit dem nächsten Schritt fort. Navigieren Sie im unteren Bereich des Designers zur Zeile `xmlns:local="clr-namespace:WPFQuickStart"` , und ersetzen Sie sie durch folgenden XAML-Code:  
   
     ```xaml  
     xmlns:local="clr-namespace:WPFQuickStart.Common"  
     ```  
   
-3.  In the **Properties** window, expand the **Common** category node and choose the **Title** property, and then enter `WPF Todo List` and press the **Enter** key.  
+3.  Erweitern Sie im Dialogfeld **Eigenschaften** den Kategorieknoten **Custom** , und wählen Sie die Eigenschaft **Title** aus. Geben Sie dann `WPF Todo List` ein, und drücken Sie die **EINGABETASTE** .  
   
-     Notice that the **Title** element in the XAML window changes to match the new value. You can modify XAML properties in either the XAML window or the **Properties** window, and the changes are synchronized.  
+     Beachten Sie, dass das **Title** -Element im XAML-Fenster nun dem neuen Wert entspricht. Sie können die XAML-Eigenschaften im XAML-Fenster oder im Fenster **Eigenschaften** bearbeiten. Die Änderungen werden synchronisiert.  
   
-4.  In the XAML window, set the value of the **Height** element to `768`, and set the value of the **Width** property to `1280`.  
+4.  Legen Sie im XAML-Fenster den Wert des Elements **Height** auf `768`fest, und legen Sie den Wert der Eigenschaft **Width** auf `1280`anmelden.  
   
-     These elements correspond to the **Height** and **Width** properties, found in the **Layout** category in the **Properties** window.  
+     Diese Elemente entsprechen den Eigenschaften **Height** und **Width** in der Kategorie **Layout** im Fenster **Eigenschaften** .  
   
-5.  Select the `<Grid>` and `</Grid>` tags and replace them with the following XAML code:  
+5.  Wählen Sie die Tags `<Grid>` und `</Grid>` aus, und ersetzen Sie sie durch folgenden XAML-Code:  
   
     ```xaml  
     <Grid>  
@@ -283,18 +283,18 @@ You can use Windows Presentation Foundation (WPF) to quickly create a modern des
         </Grid>  
     ```  
   
-     Notice that the changes are reflected in the Design window. Once again, you also could have defined the user interface by adding controls from the **Toolbox** window and setting properties in the **Properties** window. Anything that can be done in the designer can be done in XAML code, and vice versa.  
+     Beachten Sie, dass die Änderungen im Entwurfsfenster wiedergegeben werden. Auch in diesem Fall hätten Sie die Benutzeroberfläche durch Hinzufügen von Steuerelementen aus dem Fenster **Toolbox** und Festlegen der Eigenschaften im Fenster **Eigenschaften** definieren können. Alle Aufgaben, die Sie im Designer ausführen, können im XAML-Code und umgekehrt ausgeführt werden.  
   
-     At this point, the design should look like the following illustration.  
+     An diesem Punkt sollte das Design der folgenden Abbildung entsprechen:  
   
-     ![The MainWindow in the designer](../designers/media/wpfquickstart2.PNG "WPFQuickStart2")  
+     ![Das MainWindow-Element im Designer](../designers/media/wpfquickstart2.PNG "WPFQuickStart2")  
   
     > [!NOTE]
-    >  While following the next few procedures you might see errors in the **Error List** if it is open. Don't worry; these errors will go away once you complete the remaining procedures.  
+    >  Bei Ausführen der nächsten Vorgehensweisen werden möglicherweise Fehler in der **Fehlerliste** angezeigt, wenn diese geöffnet ist. Diese verschwinden wieder, während Sie die verbleibenden Vorgehensweisen ausführen.  
   
-6.  In **Solution Explorer**, expand the **MainWindow.xaml** node and open the **MainWindow.xaml.cs** or **MainWindow.xaml.vb** file.  
+6.  Erweitern Sie in **Projektmappen-Explorer**den Knoten **MainWindow.xaml** , und öffnen Sie die Datei **MainWindow.xaml.cs** oder **MainWindow.xaml.vb** .  
   
-7.  In the Code Editor, add the following `using` or `Imports` directives to the top of the file:  
+7.  Fügen Sie im Code-Editor am Anfang der Datei folgende `using` - oder `Imports` Direktive hinzu:  
   
     ```csharp  
     using Microsoft.WindowsAzure.MobileServices;  
@@ -306,7 +306,7 @@ You can use Windows Presentation Foundation (WPF) to quickly create a modern des
     Imports Newtonsoft.Json  
     ```  
   
-8.  Replace all of the code in the **WPFQuickStart** namespace (C#) or **Class MainWindow** class (VB) with the following code:  
+8.  Ersetzen Sie den gesamten Code im **WPFQuickStart** -Namespace (C#) oder in der **Class MainWindow** -Klasse (VB) durch folgenden Code:  
   
     ```csharp  
     namespace WPFQuickStart  
@@ -470,56 +470,56 @@ You can use Windows Presentation Foundation (WPF) to quickly create a modern des
     End Class  
     ```  
   
-     This code defines the interaction between the user interface and the database in the mobile service using asynchronous methods.  
+     Dieser Code definiert die Interaktion zwischen der Benutzeroberfläche und der Datenbank im mobilen Service mithilfe asynchroner Methoden.  
   
-## <a name="create-the-azure-mobile-service"></a>Create the Azure mobile service  
- The final step is to create a mobile service in Microsoft Azure, add a table to store your data, and then reference the service instance from your application.  
+## <a name="create-the-azure-mobile-service"></a>Erstellen eines mobilen Services in Azure  
+ Im letzten Schritt erstellen Sie einen mobilen Service in Microsoft Azure. Außerdem fügen Sie eine Tabelle zum Speichern Ihrer Daten hinzu und verweisen dann von Ihrer Anwendung auf die Dienstinstanz.  
   
-#### <a name="to-create-a-mobile-service"></a>To create a mobile service  
+#### <a name="to-create-a-mobile-service"></a>So erstellen Sie einen mobilen Service  
   
-1.  Open a web browser and log in to your Microsoft Azure portal, and then choose the **MOBILE SERVICES** tab.  
+1.  Öffnen Sie einen Webbrowser, und melden Sie sich bei Ihrem Microsoft Azure-Portal an. Wählen Sie dann die Registerkarte **MOBILE SERVICES** aus.  
   
-2.  Choose the **NEW** button, and in the pop up dialog choose **COMPUTE**, **MOBILE SERVICE,CREATE**.  
+2.  Wählen Sie die Schaltfläche **NEU** aus, und wählen Sie im Popupdialogfenster nacheinander **COMPUTE** (BERECHNEN), **MOBILE SERVICE, CREATE** (MOBILER SERVICE, ERSTELLEN) aus.  
   
-3.  In the **NEW MOBILE SERVICE** dialog, choose the **URL** textbox and enter `wpfquickstart01`.  
-  
-    > [!NOTE]
-    >  You may need to change the numeric portion of the URL. Microsoft Azure requires a unique URL for each mobile service.  
-  
-     This sets the URL for the service to *https://wpfquickstart01.azure-mobile.net/*.  
-  
-4.  In the **DATABASE** list, choose a database option. Since this is an application that probably won't get a lot of usage, you might want to choose the **Create a free 20MB SQL database** option, or choose the free database already associated with your subscription.  
-  
-5.  In the **REGION** list, choose the data center where you want to deploy the mobile service, and then choose the **Next** (right arrow) button.  
+3.  Wählen Sie im Dialogfeld **NEUER MOBILER SERVICE** das Textfeld **URL** aus, und geben Sie `wpfquickstart01` ein.  
   
     > [!NOTE]
-    >  For this service you will use the default **BACKEND** setting, **JavaScript**.  
+    >  Möglicherweise müssen Sie den numerischen Teil der URL zu ändern. Microsoft Azure erfordert eine eindeutige URL für jeden mobilen Service.  
   
-6.  If you are creating a new database, on the **Specify database settings** page, in the **SERVER** list choose **New SQL database server**, enter your **SQL LOGIN NAME** and **PASSWORD**, and then choose the **Complete** (checkmark) button.  
+     Dadurch wird die URL für den Service auf *https://wpfquickstart01.azure-mobile.net/*festgelegt.  
   
-7.  If you chose an existing database, on the **Database Settings** page, enter your **LOGIN PASSWORD** and then choose the **Complete** (checkmark) button.  
+4.  Wählen Sie in der Liste **DATENBANK** eine Datenbankoption aus. Da es sich dabei um eine Anwendung handelt, die nur selten verwendet wird, können Sie die Option **Create a free 20MB SQL database** (Eine kostenlose 20-MB-SQL-Datenbank erstellen) bzw. die bereits in Ihrem Abonnement enthaltene kostenlose Datenbank auswählen.  
   
-     The process of creating the mobile service will begin. Once the process is completed the status will change to **Ready** and you can move on to the next step.  
+5.  Wählen Sie in der Liste **REGION** das Rechenzentrum aus, in dem Sie den mobilen Service bereitstellen möchten, und wählen Sie dann **Weiter** (Pfeil nach rechts) aus.  
   
-8.  In the portal, select the newly created mobile service and then choose the **MANAGE KEYS** button.  
+    > [!NOTE]
+    >  Für diesen Service verwenden Sie die standardmäßige **BACKEND** -Einstellung, **JavaScript**.  
   
-9. In the **Manage Access Keys** dialog, copy the **APPLICATION KEY**.  
+6.  Wenn Sie eine neue Datenbank erstellen, wählen Sie auf der Seite **Datenbankeinstellungen angeben** in der Liste **SERVER** die Option **Neuer SQL-Datenbankserver**aus, geben Sie Ihren **SQL-ANMELDENAMEN** und Ihr **KENNWORT**ein, und wählen Sie dann die Schaltfläche **Abgeschlossen** (Häkchen) aus.  
   
-     You'll use this in the next procedure.  
+7.  Wenn Sie eine vorhandene Datenbank verwenden, geben Sie auf der Seiten **Datenbankeinstellungen** Ihr **ANMELDEKENNWORT** ein, und wählen Sie dann die Schaltfläche **Abgeschlossen** (Häkchen) aus.  
   
-#### <a name="to-create-a-table"></a>To create a table  
+     Der mobile Service wird nun erstellt. Sobald der Vorgang beendet ist, ändert sich der Status in **Bereit** , und Sie können mit dem nächsten Schritt fortfahren.  
   
-1.  In the Microsoft Azure portal, choose the right arrow next to the name of your mobile service, and on the menu bar, choose **DATA**, and then choose the **ADD A TABLE** link.  
+8.  Wählen Sie im Portal den neu erstellten mobilen Service und dann die Schaltfläche **SCHLÜSSEL VERWALTEN** aus.  
   
-2.  In the **Create New Table** dialog, in the **TABLE NAME** text box enter `TodoItem`, and then choose the **Complete** (checkmark) button.  
+9. Kopieren Sie in das Fenster **Zugriffsschlüssel verwalten** den **ANWENDUNGSSCHLÜSSEL**.  
   
-     Wait for the table to be created, and then move on to the final procedure.  
+     Sie verwenden diesen in der nächsten Vorgehensweise.  
   
-#### <a name="to-add-a-declaration-for-the-mobile-service"></a>To add a declaration for the mobile service  
+#### <a name="to-create-a-table"></a>So erstellen Sie eine Tabelle  
   
-1.  Return to Visual Studio. In **Solution Explorer**, expand the **App.xaml** (C#) or **Application.xaml** (Visual Basic) node and open the **App.xaml.cs** or **App.xaml.vb** file.  
+1.  Wählen Sie im Microsoft Azure-Portal den Pfeil nach rechts neben dem Namen Ihres mobilen Service aus, und wählen Sie auf der Menüleiste **DATEN**und dann den Link **EINE TABELLE HINZUFÜGEN** aus.  
   
-2.  In the Code Editor, add the following `using` or **Imports** directives to the top of the file:  
+2.  Erweitern Sie im Dialogfeld **Neue Tabelle erstellen** im Textfeld **TABELLENNAME**  `TodoItem`ein, und wählen Sie dann die Schaltfläche **Abgeschlossen** (Häkchen) aus.  
+  
+     Warten Sie, bis die Tabelle erstellt ist, und fahren Sie dann mit der letzten Vorgehensweise fort.  
+  
+#### <a name="to-add-a-declaration-for-the-mobile-service"></a>So fügen Sie eine Deklaration für den mobilen Service hinzu  
+  
+1.  Kehren Sie zurück zu Visual Studio. Erweitern Sie in **Projektmappen-Explorer**den Knoten **App.xaml** (C#) oder **Application.xaml** (Visual Basic), und öffnen Sie die Datei **App.xaml.cs** oder **App.xaml.vb** .  
+  
+2.  Fügen Sie im Code-Editor am Anfang der Datei folgende `using` - oder **Imports** -Direktive hinzu:  
   
     ```csharp  
     using Microsoft.WindowsAzure.MobileServices;  
@@ -529,7 +529,7 @@ You can use Windows Presentation Foundation (WPF) to quickly create a modern des
     Imports Microsoft.WindowsAzure.MobileServices  
     ```  
   
-3.  Add the following declaration to the class, replacing *YOUR-SERVICE_HERE* with the name of the URL for your service, and replacing *YOUR-KEY-HERE* with the application key that you copied in the previous procedure:  
+3.  Fügen Sie folgende Deklaration der Klasse hinzu. Dadurch wird *YOUR-SERVICE_HERE* durch den Namen der URL für Ihren Service und *YOUR-KEY-HERE* durch den Anwendungsschlüssel ersetzt, den Sie in der vorherigen Vorgehensweise kopiert haben:  
   
     ```csharp  
     public static MobileServiceClient MobileService = new MobileServiceClient(  
@@ -542,34 +542,34 @@ You can use Windows Presentation Foundation (WPF) to quickly create a modern des
     Public Shared MobileService As New MobileServiceClient("https://YOUR-SERVICE-HERE.azure-mobile.net/", "YOUR-KEY-HERE")  
     ```  
   
-     This code allows the application to access the mobile service running on Microsoft Azure.  
+     Mithilfe dieses Codes kann die Anwendung auf den mobilen Service unter Microsoft Azure zugreifen.  
   
-## <a name="test-the-application"></a>Test the application  
- That's it - you've created a WPF desktop application that accesses an Azure Mobile Service. Now all that's left is to run the application and see it in action.  
+## <a name="test-the-application"></a>Testen der Anwendung  
+ Sie haben nun eine WPF-Desktopanwendung erstellt, die auf einen mobilen Service in Azure zugreift. Nun müssen Sie die Anwendung nur noch ausführen.  
   
-#### <a name="to-run-the-application"></a>To run the application  
+#### <a name="to-run-the-application"></a>So führen Sie die Anwendung aus  
   
-1.  On the menu bar, choose **Debug**, **Start Debugging** (or press F5).  
+1.  Wählen Sie auf der Menüleiste **Debuggen**, **Debugging starten** aus (oder drücken Sie F5).  
   
-2.  In the **Insert a TodoItem** textbox, enter `Do something`, and then choose the **Save** button.  
+2.  Erweitern Sie im Dialogfeld **TodoItem einfügen**  `Do something`ein, und wählen Sie dann die Schaltfläche **Speichern** aus.  
   
-3.  Enter `Do something else`, and then choose the **Save** button again.  
+3.  EINGABETASTE `Do something else`ein, und wählen Sie dann die Schaltfläche **Speichern** aus.  
   
-     Notice that the two entries are added to the **Query and Update Data** list, as shown in the following illustration.  
+     Die beiden Einträge werden der Liste zum **Abfragen und Aktualisieren von Daten** hinzugefügt, wie in der folgenden Abbildung dargestellt.  
   
-     ![The Todo items are added to the list.](../designers/media/wpfquickstart3.PNG "WPFQuickStart3")  
+     ![Aktivitäteneinträge werden zur Liste hinzugefügt.](../designers/media/wpfquickstart3.PNG "WPFQuickStart3")  
   
-4.  Select the checkbox for the **Do something else** entry in the list.  
+4.  Aktivieren Sie das Kontrollkästchen für den Eintrag **Do something else** in der Liste.  
   
-     This calls the **UpdateCheckedTodoItem** method and removes the item from both the list and the database.  
+     Dadurch wird die **UpdateCheckedTodoItem** -Methode aufgerufen, die das Element von der Liste und aus der Datenbank entfernt.  
   
-## <a name="next-steps"></a>Next Steps  
- You've completed a fairly simplistic example of a WPF desktop application with an Azure backend. Of course, a real application is likely to be much more complex, but the same basic concepts apply. See [WPF in the .NET Framework](https://msdn.microsoft.com/en-us/library/ms754130\(v=vs.100\).aspx).  
+## <a name="next-steps"></a>Nächste Schritte  
+ Sie haben ein recht einfaches Beispiel einer WPF-Desktopanwendung mit einem Azure-Backend ausgeführt. Echte Anwendungen sind natürlich viel komplexer, aber für diese gelten einige grundlegende Konzepte. Weitere Informationen finden Sie unter [WPF in .NET Framework](https://msdn.microsoft.com/en-us/library/ms754130\(v=vs.100\).aspx).  
   
- You can make the user interface more appealing by adding color, shapes, graphics, and even animations. See [Creating a UI by using XAML Designer in Visual Studio](creating-a-ui-by-using-xaml-designer-in-visual-studio.md) and [Creating a UI by using Blend for Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md). For a comparison between the tools, see [Designing XAML in Visual Studio and Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md).  
+ Sie können eine Benutzeroberfläche viel ansprechender gestalten, indem Sie dieser Farben, Formen, Grafiken und Animationen hinzufügen. Weitere Informationen finden Sie unter [Erstellen einer Benutzeroberfläche mit dem XAML-Designer in Visual Studio](creating-a-ui-by-using-xaml-designer-in-visual-studio.md) und [Erstellen einer Benutzeroberfläche mit Blend für Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md). Einen Vergleich der Tools finden Sie unter [Designing XAML in Visual Studio and Blend for Visual Studio (Entwerfen von XAML-Code in Visual Studio und Blend für Visual Studio)](../designers/designing-xaml-in-visual-studio.md).  
 
- You can connect to existing SQL databases or other sources of data using Azure Mobile Services. See [Mobile Services documentation](http://azure.microsoft.com/en-us/services/app-service/mobile/).  
+ Sie können eine Verbindung mit vorhandenen SQL-Datenbanken oder anderen Datenquellen mit Azure Mobile Services herstellen. Weitere Informationen finden Sie unter [Mobile Services – Dokumentation](http://azure.microsoft.com/en-us/services/app-service/mobile/).  
   
-## <a name="see-also"></a>See Also  
- [Walkthrough: My First WPF Desktop Application](../designers/walkthrough-my-first-wpf-desktop-application2.md)   
- [Create Modern Desktop Applications with Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
+## <a name="see-also"></a>Siehe auch  
+ [Exemplarische Vorgehensweise: Meine erste WPF-Desktopanwendung](../designers/walkthrough-my-first-wpf-desktop-application2.md)   
+ [Erstellen von modernen Desktopanwendungen mit Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
