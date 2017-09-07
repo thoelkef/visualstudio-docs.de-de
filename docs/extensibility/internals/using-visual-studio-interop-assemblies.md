@@ -1,5 +1,5 @@
 ---
-title: Using Visual Studio Interop Assemblies | Microsoft Docs
+title: Mithilfe von Visual Studio-Interopassemblys | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,47 +34,47 @@ ms.translationtype: MT
 ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
 ms.openlocfilehash: 5d4b825b33339367ee331eb74aa2eb210c85206c
 ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="using-visual-studio-interop-assemblies"></a>Using Visual Studio Interop Assemblies
-Visual Studio interop assemblies allow managed applications to access the COM interfaces that provide Visual Studio extensibility. There are some differences between straight COM interfaces and their interop versions. For example, HRESULTs are generally represented as int values and need to be handled in the same way as exceptions, and parameters (especially out parameters) are treated differently.  
+# <a name="using-visual-studio-interop-assemblies"></a>Mithilfe von Visual Studio-Interopassemblys
+Visual Studio-Interopassemblys können verwaltete Anwendungen auf die COM-Schnittstellen, die Visual Studio-Erweiterbarkeit bereitstellen. Es gibt einige Unterschiede zwischen COM-Schnittstellen, die gerade und die Interop-Versionen. Beispielsweise HRESULTs sind in der Regel als Int-Werte dargestellt und müssen auf die gleiche Weise wie Ausnahmen behandelt werden und Parameter (insbesondere out-Parameter) unterschiedlich behandelt.  
   
-## <a name="handling-hresults-returned-to-managed-code-from-com"></a>Handling HRESULTs Returned to Managed Code from COM  
- When you call a COM interface from managed code, examine the HRESULT value and throw an exception if required. The <xref:Microsoft.VisualStudio.ErrorHandler> class contains the <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> method, which throws a COM exception, depending on the value of the HRESULT passed to it.  
+## <a name="handling-hresults-returned-to-managed-code-from-com"></a>Behandeln von HRESULTs, die von COM an verwalteten Code zurückgegeben werden  
+ Wenn Sie eine COM-Schnittstelle in verwaltetem Code aufrufen, überprüfen Sie den HRESULT-Wert, und lösen Sie ggf. eine Ausnahme aus. Die <xref:Microsoft.VisualStudio.ErrorHandler> Klasse enthält die <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> -Methode, die eine COM-, je nach dem Wert von HRESULT Ausnahme an sie übergeben.  
   
- By default, <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> throws an exception whenever it is passed an HRESULT that has a value less than zero. In cases where such HRESULTs are acceptable values and no exception should be thrown, the values of additional HRESULTS should be passed to <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> after the values are tested. If the HRESULT being tested matches any HRESULT values explicitly passed to <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>, no exception is thrown.  
-  
-> [!NOTE]
->  The <xref:Microsoft.VisualStudio.VSConstants> class contains constants for common HRESULTS, for example, <xref:Microsoft.VisualStudio.VSConstants.S_OK> and <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>, and [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] HRESULTS, for example, <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> and <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>. <xref:Microsoft.VisualStudio.VSConstants> also provides the <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> and <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> methods, which correspond to the SUCCEEDED and FAILED macros in COM.  
-  
- For example, consider the following function call, in which <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> is an acceptable return value but any other HRESULT less than zero represents an error.  
-  
- [!code-vb[VSSDKHRESULTInformation#1](../../extensibility/internals/codesnippet/VisualBasic/using-visual-studio-interop-assemblies_1.vb)] [!code-csharp[VSSDKHRESULTInformation#1](../../extensibility/internals/codesnippet/CSharp/using-visual-studio-interop-assemblies_1.cs)]  
-  
- If there are more than one acceptable return values, additional HRESULT values can just be appended to the list in the call to <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>.  
-  
- [!code-vb[VSSDKHRESULTInformation#2](../../extensibility/internals/codesnippet/VisualBasic/using-visual-studio-interop-assemblies_2.vb)] [!code-csharp[VSSDKHRESULTInformation#2](../../extensibility/internals/codesnippet/CSharp/using-visual-studio-interop-assemblies_2.cs)]  
-  
-## <a name="returning-hresults-to-com-from-managed-code"></a>Returning HRESULTS to COM from Managed Code  
- If no exception occurs, managed code returns <xref:Microsoft.VisualStudio.VSConstants.S_OK> to the COM function that called it. COM interop supports common exceptions that are strongly typed in managed code. For example, a method that receives an unacceptable `null` argument throws an <xref:System.ArgumentNullException>.  
-  
- If you are not certain which exception to throw, but you know the HRESULT you want to return to COM, you can use the <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> method to throw an appropriate exception. This works even with a nonstandard error, for example, <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>. <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> attempts to map the HRESULT passed to it to a strongly typed exception. If it cannot, it throws a generic COM exception instead. The ultimate result is that the HRESULT you pass to <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> from managed code is returned to the COM function that called it.  
+ Standardmäßig <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> löst eine Ausnahme aus, wenn sie ein HRESULT übergeben wird, die einen Wert kleiner als 0 (null) ist. In Fällen, in denen solche HRESULTs zulässige Werte sind und es werden keine Ausnahmen ausgelöst werden soll, die Werte der zusätzlichen HRESULTS an übergeben werden sollte <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> nach dem Überprüfen der Werte. Wenn das ÜBERPRÜFTE alle HRESULT-Werte, die explizit übergeben entspricht <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>, wird keine Ausnahme ausgelöst.  
   
 > [!NOTE]
->  Exceptions compromise performance and are intended to indicate abnormal program conditions. Conditions that occur often should be handled inline, instead of a thrown exception.  
+>  Die <xref:Microsoft.VisualStudio.VSConstants> -Klasse enthält Konstanten für allgemeine HRESULTS, z. B. <xref:Microsoft.VisualStudio.VSConstants.S_OK> und <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>, und [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] HRESULTS, z. B. <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> und <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>. <xref:Microsoft.VisualStudio.VSConstants>bietet außerdem die <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> und <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> Methoden, die den Makros SUCCEEDED und FAILED in COM entsprechen  
   
-## <a name="iunknown-parameters-passed-as-type-void"></a>IUnknown parameters passed as Type void**  
- Look for [out] parameters that are defined as type `void **` in the COM interface, but that are defined as `[``iid_is``]` in the [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interop assembly method prototype.  
+ Betrachten Sie beispielsweise den folgenden Funktionsaufruf, bei dem <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> ist ein zulässiger Rückgabewert aber alle anderen HRESULTs kleiner als 0 (null) einen Fehler darstellen.  
   
- Sometimes, a COM interface generates an `IUnknown` object, and the COM interface then passes it as type `void **`. These interfaces are especially important because if the variable is defined as [out] in the IDL, then the `IUnknown` object is reference-counted with the `AddRef` method. A memory leak occurs if the object is not handled correctly.  
+ [!code-vb[VSSDKHRESULTInformation Nr. 1](../../extensibility/internals/codesnippet/VisualBasic/using-visual-studio-interop-assemblies_1.vb) ] [!code-csharp [VSSDKHRESULTInformation Nr. 1](../../extensibility/internals/codesnippet/CSharp/using-visual-studio-interop-assemblies_1.cs)]  
+  
+ Wenn es mehrere zulässige Rückgabewerte sind, zusätzliche HRESULT-Werte können nur angefügt werden der Liste auf den Aufruf von <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>.  
+  
+ [!code-vb[VSSDKHRESULTInformation Nr. 2](../../extensibility/internals/codesnippet/VisualBasic/using-visual-studio-interop-assemblies_2.vb) ] [!code-csharp [VSSDKHRESULTInformation Nr. 2](../../extensibility/internals/codesnippet/CSharp/using-visual-studio-interop-assemblies_2.cs)]  
+  
+## <a name="returning-hresults-to-com-from-managed-code"></a>Von verwaltetem Code an COM zurückgegebene HRESULTS  
+ Wenn keine Ausnahme auftritt, gibt der verwaltete Code <xref:Microsoft.VisualStudio.VSConstants.S_OK> an COM-Funktion, die diese aufgerufen. COM-Interop unterstützt allgemeine Ausnahmen, die in verwaltetem Code stark typisiert sind. Angenommen, eine Methode, die ein unzulässiges empfängt `null` Argument löst eine <xref:System.ArgumentNullException>.  
+  
+ Wenn Sie nicht sicher sind welche Ausnahme ausgelöst, aber Sie wissen, dass das HRESULT zurückgegeben werden soll, COM, können Sie die <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> Methode, um eine entsprechende Ausnahme auszulösen. Dies funktioniert auch bei einem nicht standardmäßigen Fehler, z. B. <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>. <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A>versucht, ordnen Sie das HRESULT, die in eine stark typisierte Ausnahme an es übergeben werden. Wenn dies nicht möglich ist, wird stattdessen eine generische COM-Ausnahme ausgelöst. Das endgültige Ergebnis ist, dass das HRESULT an Sie übergeben <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> aus verwaltetem Code wird zurückgegeben, die COM-Funktion, die diese aufgerufen.  
   
 > [!NOTE]
->  An `IUnknown` object created by the COM interface and returned in an [out] variable causes a memory leak if it is not explicitly released.  
+>  Ausnahmen beeinträchtigen die Leistung und dienen als Hinweis auf anormale Programmbedingungen. Häufig auftretende Bedingungen sollten inline behandelt werden, statt eine Ausnahme auszulösen.  
   
- Managed methods that handle such objects should treat <xref:System.IntPtr> as a pointer to an `IUnknown` object, and call the <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> method to obtain the object. The caller should then cast the return value to whatever type is appropriate. When the object is no longer needed, call <xref:System.Runtime.InteropServices.Marshal.Release%2A> to release it.  
+## <a name="iunknown-parameters-passed-as-type-void"></a>IUnknown-Parameter übergeben, als Typ "void" **  
+ [Out]-Parameter an, die als Typ definiert werden gesucht `void **` in der COM-Schnittstelle, die jedoch als definiert sind `[``iid_is``]` in die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Prototyp der Interop-Assembly-Methode.  
   
- Following is an example of calling the <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A> method and handling the `IUnknown` object correctly:  
+ Eine COM-Schnittstelle in manchen Fällen generiert ein `IUnknown` Objekt und der COM-Schnittstelle übergibt diese als Typ `void **`. Diese Schnittstellen sind besonders wichtig, da, wenn die Variable, als definiert ist [out] ein, in der IDL-Datei und dann die `IUnknown` Objekt ist mit verweiszählung die `AddRef` Methode. Wenn das Objekt nicht ordnungsgemäß behandelt wird, tritt ein Speicherverlust auf.  
+  
+> [!NOTE]
+>  Ein `IUnknown` Objekt von der COM-Schnittstelle erstellt und zurückgegeben, die in einer Variablen [Out] bewirkt, dass einen Speicherverlust nicht explizit freigegeben wird.  
+  
+ Verwaltete Methoden, die solche Objekte behandeln sollten behandeln <xref:System.IntPtr> als Zeiger auf eine `IUnknown` -Objekt, und rufen Sie die <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> Methode, um das Objekt abzurufen. Der Aufrufer sollte dann umgewandelt, den Rückgabewert in der Typ geeignet ist. Wenn das Objekt nicht mehr benötigt wird, rufen Sie <xref:System.Runtime.InteropServices.Marshal.Release%2A> , diese freizugeben.  
+  
+ Folgt ein Beispiel eines Aufrufs der <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A> -Methode und die Behandlung der `IUnknown` Objekt ordnungsgemäß:  
   
 ```  
 MyClass myclass;  
@@ -101,7 +101,7 @@ else
 ```  
   
 > [!NOTE]
->  The following methods are known to pass `IUnknown` object pointers as type <xref:System.IntPtr>. Handle them as described in this section.  
+>  Die folgenden Methoden ist bekannt, dass übergeben `IUnknown` Zeiger-Objekt als Typ <xref:System.IntPtr>. Verarbeiten Sie diese Option aus, wie in diesem Abschnitt beschrieben.  
   
 -   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>  
   
@@ -115,36 +115,36 @@ else
   
 -   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>  
   
-## <a name="optional-out-parameters"></a>Optional [out] Parameters  
- Look for parameters that are defined as an [out] data type (`int`, `object`, and so on) in the COM interface, but that are defined as arrays of the same data type in the [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interop assembly method prototype.  
+## <a name="optional-out-parameters"></a>[Out]-Parameter optional.  
+ Suchen Sie nach Parametern, die als [Out] definiert sind-Datentyp (`int`, `object`usw.) in der COM-Schnittstelle, die jedoch als Arrays des gleichen Datentyps in definiert werden die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Prototyp der Interop-Assembly-Methode.  
   
- Some COM interfaces, such as <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgs%2A>, treat [out] parameters as optional. If an object is not required, these COM interfaces return a `null` pointer as the value of that parameter instead of creating the [out] object. This is by design. For these interfaces, `null` pointers are assumed as part of the correct behavior of the VSPackage, and no error is returned.  
+ Einige COM-Schnittstellen, wie z. B. <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgs%2A>, [out]-Parameter als optional zu behandeln. Wenn ein Objekt nicht erforderlich ist, diese COM-Schnittstellen zurückgeben einer `null` Zeiger als Wert dieses Parameters anstelle der [Out] Objekt erstellen. Dieser Fehler ist entwurfsbedingt. Diese Schnittstellen `null` Zeiger wird angenommen, dass als Teil des VSPackage das richtige Verhalten und wird kein Fehler zurückgegeben.  
   
- Because the CLR does not allow the value of an [out] parameter to be `null`, part of the designed behavior of these interfaces is not directly available within managed code. The [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interop assembly methods for affected interfaces work around the issue by defining the relevant parameters as arrays because the CLR allows the passing of `null` arrays.  
+ Da die CLR nicht den Wert, der ein [Out]-Parameter werden zulässt `null`, Teil des Verhalten dieser Schnittstellen ist nicht direkt in verwaltetem Code zur Verfügung. Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Interop-Assembly-Methoden für die betroffenen Schnittstellen umgehen das Problem, indem Sie die relevanten Parameter als Arrays definieren, da die CLR die Übergabe von ermöglicht `null` Arrays.  
   
- Managed implementations of these methods should put a `null` array into the parameter when there is nothing to be returned. Otherwise, create a one-element array of the correct type and put the return value in the array.  
+ Um verwaltete Implementierungen dieser Methoden sollten eine `null` Array, in den Parameter, wenn es ist nichts zum zurückgegeben werden. Andernfalls erstellen Sie ein Array mit Elementen einer mit dem richtigen Typ und eingefügten Sie den Rückgabewert in das Array.  
   
- Managed methods that receive information from interfaces with optional [out] parameters receive the parameter as an array. Just examine the value of the first element of the array. If it is not `null`, treat the first element as if it were the original parameter.  
+ Verwaltete Methoden, die von Schnittstellen, mit optionalen [Out] Informationen über Parameter empfängt den Parameter als Array. Überprüfen Sie nur den Wert des ersten Elements des Arrays. Ist er nicht `null`, das erste Element zu behandeln, als handele es sich um den ursprünglichen Parameter.  
   
-## <a name="passing-constants-in-pointer-parameters"></a>Passing Constants in Pointer Parameters  
- Look for parameters that are defined as [in] pointers in the COM interface, but that are defined as a <xref:System.IntPtr> type in the [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interop assembly method prototype.  
+## <a name="passing-constants-in-pointer-parameters"></a>Übergeben von Konstanten in Zeigerparameter  
+ Suchen Sie nach Parametern wie [in] Zeiger in der COM-Schnittstelle definiert sind, aber als definiert sind eine <xref:System.IntPtr> Geben Sie in der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Prototyp der Interop-Assembly-Methode.  
   
- A similar issue occurs when a COM interface passes a special value, such as 0, -1, or -2, instead of an object pointer. Unlike [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)], the CLR does not allow constants to be cast as objects. Instead, the [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interop assembly defines the parameter as a <xref:System.IntPtr> type.  
+ Ein ähnliches Problem tritt auf, wenn eine COM-Schnittstelle einen speziellen Wert, z. B. 0,-1 oder-2 zu, anstatt ein Objektzeiger übergibt. Im Gegensatz zu [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)], die CLR lässt sich nicht auf die Konstanten, mit denen Objekte umgewandelt werden. Stattdessen die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Interop-Assembly definiert den Parameter als ein <xref:System.IntPtr> Typ.  
   
- Managed implementations of these methods should take advantage of the fact that the <xref:System.IntPtr> class has both `int` and `void *` constructors to create an <xref:System.IntPtr> from either an object or an integer constant, as appropriate.  
+ Um verwaltete Implementierungen dieser Methoden sollten den Umstand nutzen, die die <xref:System.IntPtr> -Klasse verfügt über beide `int` und `void *` Konstruktoren erstellen ein <xref:System.IntPtr> über ein Objekt oder eine ganzzahlige Konstante, entsprechend den Anforderungen.  
   
- Managed methods that receive <xref:System.IntPtr> parameters of this type should use the <xref:System.IntPtr> type conversion operators to handle the results. First convert the <xref:System.IntPtr> to `int` and test it against relevant integer constants. If no values match, convert it to an object of the required type and continue.  
+ Verwaltete Methoden, die empfangen <xref:System.IntPtr> Parameter dieses Typs zu verwendende der <xref:System.IntPtr> geben Konvertierungsoperatoren, um die Ergebnisse zu verarbeiten. Konvertieren Sie zuerst die <xref:System.IntPtr> auf `int` und Testen des Dokuments anhand der entsprechenden ganzzahligen Konstanten. Wenn keine Werte zusammenpassen, konvertieren Sie ihn in ein Objekt des erforderlichen Typs und den Vorgang fortzusetzen.  
   
- For examples of this, see <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> and <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A>.  
+ Beispiele hierzu finden Sie unter <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> und <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A>.  
   
-## <a name="ole-return-values-passed-as-out-parameters"></a>OLE Return Values Passed as [out] Parameters  
- Look for methods that have a `retval` return value in the COM interface, but that have an `int` return value and an additional [out] array parameter in the [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interop assembly method prototype. It should be clear that these methods require special handling because the [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interop assembly method prototypes have one more parameter than the COM interface methods.  
+## <a name="ole-return-values-passed-as-out-parameters"></a>OLE zurückgeben Werte als übergeben [out]-Parameter  
+ Suchen Sie nach den Methoden, die über eine `retval` Rückgabewert in der COM-Schnittstelle, die jedoch eine `int` Rückgabewert und ein zusätzliches [out] Arrayparameter in die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Prototyp der Interop-Assembly-Methode. Es sollte klar, dass diese Methoden besondere Behandlung erfordern, da die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Interop-Assembly Methodenprototypen haben eine weitere Parameter als die Methoden der COM-Schnittstelle.  
   
- Many COM interfaces that deal with OLE activity send information about OLE status back to the calling program stored in the `retval` return value of the interface. Instead of using a return value, the corresponding [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interop assembly methods send the information back to the calling program stored in an [out] array parameter.  
+ Viele COM-Schnittstellen, die mit OLE-Aktivität senden Sie Informationen über OLE-Status zurück an das aufrufende Programm gespeichert, der `retval` Rückgabewert der Schnittstelle. Anstatt einen Rückgabewert der entsprechenden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Interop-Assembly senden die Informationen an das aufrufende Programm in einen [Out] gespeichert Arrayparameter.  
   
- Managed implementations of these methods should create a single-element array of the same type as the [out] parameter and put it in the parameter. The value of the array element should be the same as the appropriate COM `retval`.  
+ Um verwaltete Implementierungen dieser Methoden sollten ein Einzelelement-Array des gleichen Typs als [Out]-Parameter erstellen und speichern diese im Parameters. Der Wert des Arrayelements muss identisch mit den entsprechenden COM `retval`.  
   
- Managed methods that call interfaces of this type should pull the first element out of the [out] array. This element can be treated as if it were a `retval` return value from the corresponding COM interface.  
+ Verwaltete Methoden, die dieses Typs Schnittstellen aufzurufen, sollte das erste Element aus dem [Out] Array einziehen. Dieses Element kann behandelt werden, als wäre er eine `retval` Rückgabewert aus der entsprechenden COM-Schnittstelle.  
   
-## <a name="see-also"></a>See Also  
- [Interoperating with Unmanaged Code](/dotnet/framework/interop/index)
+## <a name="see-also"></a>Siehe auch  
+ [Interoperabilität mit nicht verwaltetem Code](/dotnet/framework/interop/index)

@@ -34,11 +34,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: e16d46d63ee6f2cac5998c84c62299bb2e909948
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugport2enumprocesses"></a>IDebugPort2::EnumProcesses
-Returns a list of all the processes running on a port.  
+Gibt eine Liste aller Prozesse, die auf einem Port ausgeführt wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -54,13 +54,13 @@ int EnumProcesses(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  `ppEnum`  
- [out] Returns an [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md) object that contains a list of all the processes running on a port.  
+ [out] Gibt eine [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md) -Objekt, das eine Liste aller Prozesse, die an einem Port enthält.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)   
  [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)

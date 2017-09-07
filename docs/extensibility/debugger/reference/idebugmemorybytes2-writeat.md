@@ -35,11 +35,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 14d5aa4fa026f27f6b083d656cd5df3f8b7d7f41
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugmemorybytes2writeat"></a>IDebugMemoryBytes2::WriteAt
-Writes the specified number of bytes of memory, starting at the specified address.  
+Schreibt die angegebene Anzahl von Bytes an Arbeitsspeicher, ab der angegebenen Adresse an.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -59,22 +59,22 @@ int WriteAt(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  `pStartContext`  
- [in] The [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) object that specifies where to start writing bytes.  
+ [in] Die [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) Objekt, das angibt, wo Sie beginnen, Schreiben von Bytes.  
   
  `dwCount`  
- [in] The number of bytes to write.  
+ [in] Die Anzahl der zu schreibenden Bytes.  
   
  `rgbMemory`  
- [in] The bytes to write. This array is assumed to be at least `dwCount` bytes in size.  
+ [in] Der zu schreibenden Bytes. Dieses Array wird davon ausgegangen, dass mindestens `dwCount` Byte lang.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns `S_FALSE` if not all bytes could be written or returns an error code (typically `E_FAIL`).  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` Wenn nicht alle Bytes geschrieben werden konnte oder wird ein Fehlercode zurückgegeben (üblicherweise `E_FAIL`).  
   
-## <a name="remarks"></a>Remarks  
- If the starting address is not within the memory window represented by this [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) object, no writing occurs and an error code of `E_FAIL` is returned — even if the amount to write overlaps into the memory space.  
+## <a name="remarks"></a>Hinweise  
+ Ist die Startadresse nicht in das Fenster "Arbeitsspeicher" dargestellt, die von diesem [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) -Objekt, ohne das Schreiben von tritt auf, und einem Fehlercode von `E_FAIL` zurückgegeben – selbst wenn der Betrag, um das Schreiben in den Speicherbereich überschneidet sich.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)   
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

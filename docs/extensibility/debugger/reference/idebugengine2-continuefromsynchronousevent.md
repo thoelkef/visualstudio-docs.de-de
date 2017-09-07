@@ -34,11 +34,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 422dc31356947d9856f235db8e93cb1ca5b69930
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
-Called by the session debug manager (SDM) to indicate that a synchronous debug event, previously sent by the debug engine (DE) to the SDM, was received and processed.  
+Wird aufgerufen, von der Sitzung Debug-Manager (SDM), um anzugeben, dass ein synchrone Debug-Ereignis, die bereits durch die Debugging-Modul (DE) an die SDM gesendet, empfangen und verarbeitet wurde.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -54,18 +54,18 @@ HRESULT ContinueFromSynchronousEvent(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  `pEvent`  
- [in] An [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) object that represents the previously sent synchronous event from which the debugger should now continue.  
+ [in] Ein [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) -Objekt, das die zuvor gesendete synchrone-Ereignis darstellt, von dem der Debugger sollte nun fortgesetzt.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Remarks  
- The DE must verify that it was the source of the event represented by the `pEvent` parameter.  
+## <a name="remarks"></a>Hinweise  
+ Die DE muss sicherstellen, dass es die Quelle des Ereignisses durch dargestellt wurde die `pEvent` Parameter.  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a simple `CEngine` object that implements the [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) interface.  
+## <a name="example"></a>Beispiel  
+ Im folgende Beispiel wird gezeigt, wie diese Methode für eine einfache implementiert `CEngine` Objekt, implementiert die [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) Schnittstelle.  
   
 ```cpp  
 HRESULT CEngine::ContinueFromSynchronousEvent(IDebugEvent2* pEvent)  
@@ -103,6 +103,6 @@ HRESULT CEngine::ContinueFromSynchronousEvent(IDebugEvent2* pEvent)
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

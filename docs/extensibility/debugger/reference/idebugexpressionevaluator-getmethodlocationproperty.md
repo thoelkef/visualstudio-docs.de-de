@@ -34,11 +34,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 592a3401d0f9712a78fcab9cf1056b05c6a746b8
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugexpressionevaluatorgetmethodlocationproperty"></a>IDebugExpressionEvaluator::GetMethodLocationProperty
-This method converts a method location and offset into a memory address.  
+Diese Methode konvertiert einen Methode Speicherort und einen Offset, in eine Speicheradresse.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -62,31 +62,31 @@ int GetMethodLocationProperty(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  `upstrFullyQualifiedMethodPlusOffset`  
- [in] The method location and offset, expressed as a string.  
+ [in] Der Speicherort der Methode und einem festen Offset, ausgedrückt als Zeichenfolge.  
   
  `pSymbolProvider`  
- [in] The symbol provider expressed as an [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) object.  
+ [in] Die Symbol-Anbieter, ausgedrückt als eine [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) Objekt.  
   
  `pAddress`  
- [in] An address within the method, expressed as an [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) object.  
+ [in] Eine Adresse innerhalb der Methode, ausgedrückt als eine [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Objekt.  
   
  `pBinder`  
- [in] The binder expressed as an [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) object.  
+ [in] Der Binder ausgedrückt als ein [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) Objekt.  
   
  `ppProperty`  
- [out] Returns an [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interface that represents the memory address.  
+ [out] Gibt eine [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) Schnittstelle, die die Speicheradresse darstellt.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Remarks  
- The returned address can be used to set a breakpoint, for example.  
+## <a name="remarks"></a>Hinweise  
+ Die zurückgegebene Adresse kann verwendet werden, z. B. einen Haltepunkt festlegen.  
   
- Despite the name `upstrFullyQualifiedMethodPlusOffset`, this parameter can be passed a partially qualified method name. In that case, the selected method is the one that encloses `pAddress`. How this parameter is interpreted is up to the implementation of the expression evaluator and the language it supports.  
+ Ungeachtet des Namens `upstrFullyQualifiedMethodPlusOffset`, dieser Parameter kann einen Methodennamen teilweise gekennzeichnete übergeben werden. In diesem Fall wird die ausgewählte Methode das Projekt, das einschließt `pAddress`. Die Interpretation dieser Parameter ist der Implementierung der ausdrucksauswertung und die jeweilige Sprache, die es unterstützt.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   

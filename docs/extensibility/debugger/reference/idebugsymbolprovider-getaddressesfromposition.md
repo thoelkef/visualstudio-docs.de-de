@@ -34,11 +34,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 957e917870e4482721b0c32e4551072fb9092044
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
-This method maps a document position into an array of debug addresses.  
+Diese Methode ordnet eine Dokumentposition in ein Array von Adressen Debuggen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -60,28 +60,28 @@ int GetAddressesFromPosition(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  `pDocPos`  
- [in] The document position.  
+ [in] Die Dokumentposition.  
   
  `fStatmentOnly`  
- [in] If TRUE, limits the debug addresses to a single statement.  
+ [in] Bei "true", schränkt die Debug-Adressen zu einer einzigen Anweisung.  
   
  `ppEnumBegAddresses`  
- [out] Returns an enumerator for the starting debug addresses associated with this statement or line.  
+ [out] Gibt einen Enumerator für die Debug-Startadressen dieser Anweisung oder der Zeile zugeordnet.  
   
  `ppEnumEndAddresses`  
- [out] Returns an [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) enumerator for the ending debug addresses associated with this statement or line.  
+ [out] Gibt eine [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) Enumerator für die Endadresse Debug-Adressen dieser Anweisung oder der Zeile zugeordnet.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Remarks  
- A document position typically indicates a range of source lines. This method provides the starting and ending debug addresses associated with these lines. Some languages allow statements that span multiple lines, or lines that contains more than one statement. This method provides a flag to limit the debug addresses to a single statement.  
+## <a name="remarks"></a>Hinweise  
+ Eine Dokumentposition gibt normalerweise an einen Bereich von Quellzeilen. Diese Methode stellt die Start- und endadressen Debug #kommentare zugeordnet. Einige Sprachen ermöglichen Anweisungen, die erstrecken sich über mehrere Zeilen oder Zeilen, die mehr als eine Anweisung enthält. Diese Methode bietet ein Flag, um der Debug-Adressen zu einer einzigen Anweisung zu beschränken.  
   
- It is possible for a single statement to have multiple debug addresses, as in the case of templates.  
+ Es ist möglich, dass eine einzelne Anweisung mehrere Debug-Adressen, wie im Fall von Vorlagen haben.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)   
  [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

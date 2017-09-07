@@ -34,11 +34,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 2be5678704e9a5899c4ce7f5caba8cec1d8a21e6
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # CONNECTION_PROTOCOL
-Indicates the protocol being used to communicate between a debug server and the debug package (DE).  
+Gibt an, das Protokoll für die Kommunikation zwischen einem Debug-Server und das debugpaket (DE) verwendet wird.  
   
 ## Syntax  
   
@@ -66,38 +66,38 @@ public enum CONNECTION_PROTOCOL {
 };  
 ```  
   
-#### Parameters  
+#### Parameter  
  CONNECTION_NONE  
- No connection has been made to a server.  
+ Mit einem Server hat keine Verbindung hergestellt wurde.  
   
  CONNECTION_UNKNOWN  
- A connection has been made, but it is of an unknown type.  
+ Eine Verbindung hergestellt wurde, jedoch einen unbekannten Typ ist.  
   
  CONNECTION_LOCAL  
- Connection is to a local server.  
+ Verbindung ist mit einem lokalen Server.  
   
  CONNECTION_PIPE  
- Connection is through a named pipe.  
+ Verbindung wird über eine named Pipe.  
   
  CONNECTION_TCPIP  
- Connection uses TCP/IP.  
+ Verbindung wird die TCP/IP verwendet.  
   
  CONNECTION_HTTP  
- Connection uses HTTP (through a Web server).  
+ Verbindung wird HTTP (über einen Webserver) verwendet.  
   
  CONNECTION_OTHER  
- Some other type of connection has been established (this value is not currently used).  
+ Eine andere Art von Verbindung hergestellt wurde (dieser Wert wird derzeit nicht verwendet).  
   
-## Remarks  
- These values are returned from the [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) method.  
+## Hinweise  
+ Diese Werte werden zurückgegeben, aus der [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) Methode.  
   
-## Requirements  
+## Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## Siehe auch  
+ [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)

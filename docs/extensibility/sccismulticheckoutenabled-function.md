@@ -1,5 +1,5 @@
 ---
-title: SccIsMultiCheckoutEnabled Function | Microsoft Docs
+title: SccIsMultiCheckoutEnabled Funktion | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,11 +34,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: a8c1a00aa923374b7833e83edde4a0d7b5b4b9b6
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="sccismulticheckoutenabled-function"></a>SccIsMultiCheckoutEnabled Function
-This function checks whether the source control plug-in allows multiple checkouts on a file.  
+# <a name="sccismulticheckoutenabled-function"></a>SccIsMultiCheckoutEnabled-Funktion
+Diese Funktion überprüft, ob die Datenquellen-Steuerelements, das plug-in auf eine Datei Mehrfaches zulässt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -49,23 +49,23 @@ SCCRTN SccIsMultiCheckoutEnabled(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
- pContext  
- [in] The source control plug-in context structure.  
+#### <a name="parameters"></a>Parameter  
+ "pContext"  
+ [in] Datenquellen-Steuerelement-Plug-in-Context-Struktur.  
   
  pbMultiCheckout  
- [out] Specifies whether multiple checkouts are enabled for this project (nonzero means that multiple checkouts are supported).  
+ [out] Gibt an, ob es sich bei Mehrfaches für dieses Projekt (ungleich NULL bedeutet, dass Mehrfaches Auschecken unterstützt werden) aktiviert sind.  
   
-## <a name="return-value"></a>Return Value  
- The source control plug-in implementation of this function is expected to return one of the following values:  
+## <a name="return-value"></a>Rückgabewert  
+ Die Source Control-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
   
-|Value|Description|  
+|Wert|Beschreibung|  
 |-----------|-----------------|  
-|SCC_OK|The check was successful.|  
-|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Nonspecific failure.|  
+|SCC_OK|Die Überprüfung war erfolgreich.|  
+|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Unspezifischen Fehlers.|  
   
-## <a name="remarks"></a>Remarks  
- The IDE makes two checks to determine if files can be checked out simultaneously by more than one user. First, the source control system must support multiple checkouts. The source control plug-in can specify this capability during initialization by specifying the `SCC_CAP_MULTICHECKOUT`. Thereafter, as a second check, the IDE calls this function to determine whether or not the current project supports multiple checkouts. If multiple checkouts are supported for the selected project, the plug-in returns a success code and sets `pbMultiCheckout` to nonzero (`TRUE`) or `FALSE`.  
+## <a name="remarks"></a>Hinweise  
+ Die IDE stellt zwei prüft, ob durch mehrere Benutzer gleichzeitig Dateien ausgecheckt werden können. Zunächst muss das Quellcodeverwaltungssystem Mehrfaches unterstützen. Die Datenquellen-Steuerelement-Plug-in kann diese Funktion während der Initialisierung angeben, durch Angeben der `SCC_CAP_MULTICHECKOUT`. Die IDE ruft anschließend eine zweite Überprüfung dieser Funktion können Sie bestimmen, ob das aktuelle Projekt Mehrfaches unterstützt. Wenn Mehrfaches für das ausgewählte Projekt unterstützt werden, gibt die eine erfolgreiche-Plug-in zurück, code, und legt `pbMultiCheckout` zu ungleich Null (`TRUE`) oder `FALSE`.  
   
-## <a name="see-also"></a>See Also  
- [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Siehe auch  
+ [API-Funktionen von Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-in-api-functions.md)

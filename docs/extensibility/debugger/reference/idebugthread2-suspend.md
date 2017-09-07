@@ -34,11 +34,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 3926456c8b625102dfc5df4d8818f3cacc3a2ce3
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugthread2suspend"></a>IDebugThread2::Suspend
-Suspends a thread.  
+Unterbricht einen Thread.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -54,18 +54,18 @@ HRESULT Suspend (
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  `pdwSuspendCount`  
- [out] Returns the suspend count after the suspend operation.  
+ [out] Gibt den Unterbrechungszähler nach dem Vorgang "Anhalten" zurück.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Remarks  
- Each call to this method increments the suspend count above 0. This suspend count is displayed in the **Threads** debug window.  
+## <a name="remarks"></a>Hinweise  
+ Jeder Aufruf dieser Methode wird den Unterbrechungszähler über 0 erhöht. Diese Unterbrechungszähler wird angezeigt, der **Threads** Debug-Fenster.  
   
- For each call to this method, there must be a later call to the [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) method.  
+ Für jeden Aufruf dieser Methode muss ein späteren Aufruf der [fortsetzen](../../../extensibility/debugger/reference/idebugthread2-resume.md) Methode.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)

@@ -34,11 +34,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 242221c8cc3ffad51fa21f71d6209208b58ae6e6
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
-This interface allows a debug engine (DE) or custom port suppliers to register programs for debugging.  
+Diese Schnittstelle ermöglicht es, ein Debugging-Modul (DE) oder benutzerdefinierte Port Lieferanten zum Debuggen von Programmen zu registrieren.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -46,35 +46,35 @@ This interface allows a debug engine (DE) or custom port suppliers to register p
 IDebugProgramPublisher2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes for Implementers  
- Visual Studio implements this interface to register programs being debugged in order to make them visible for debugging across multiple processes.  
+## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
+ Visual Studio implementiert diese Schnittstelle zum Registrieren von Programmen, die gedebuggt wird, um für mehrere Prozesse Debuggen sichtbar zu machen.  
   
-## <a name="notes-for-callers"></a>Notes for Callers  
- Call COM's `CoCreateInstance` function with `CLSID_ProgramPublisher` to obtain this interface (see the Example). A DE or a custom port supplier uses this interface to register program nodes that represent programs being debugged.  
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
+ Aufrufen von COM `CoCreateInstance` funktionieren mit `CLSID_ProgramPublisher` zum Abrufen dieser Schnittstelle (siehe Beispiel). Ein DE oder einen benutzerdefinierten Port Lieferanten verwendet diese Schnittstelle zum Registrieren von Programm-Knoten, die alle gedebuggten Programme darstellen.  
   
-## <a name="methods-in-vtable-order"></a>Methods in Vtable order  
- This interface implements the following methods:  
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
+ Diese Schnittstelle implementiert, die folgenden Methoden:  
   
-|Method|Description|  
+|Methode|Beschreibung|  
 |------------|-----------------|  
-|[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)|Makes a program node available to DEs and the session debug manager (SDM).|  
-|[UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)|Removes a program node so that it is no longer available.|  
-|[PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)|Makes a program available to DEs and the SDM.|  
-|[UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)|Removes a program so it is no longer available.|  
-|[SetDebuggerPresent](../../../extensibility/debugger/reference/idebugprogrampublisher2-setdebuggerpresent.md)|Sets a flag indicating that a debugger is present.|  
+|[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)|Stellt einen Knoten für die Anwendung zur Verfügung des- und die Sitzung Debug-Manager (SDM).|  
+|[UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)|Entfernt einen Programm-Knoten an, sodass er nicht mehr verfügbar ist.|  
+|[PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)|Stellt ein Programm des-und die SDM zur Verfügung.|  
+|[UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)|Entfernt ein Programm an, damit es nicht mehr verfügbar ist.|  
+|[SetDebuggerPresent](../../../extensibility/debugger/reference/idebugprogrampublisher2-setdebuggerpresent.md)|Setzt ein Flag gibt an, dass ein Debugger vorhanden ist.|  
   
-## <a name="remarks"></a>Remarks  
- This interface makes programs and program nodes available (that is, "publishes" them) for use by DEs and the session debug manager (SDM). To access published programs and program nodes, use the [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) interface. This is the only way Visual Studio can recognize that a program is being debugged.  
+## <a name="remarks"></a>Hinweise  
+ Diese Schnittstelle stellt Programme und Programm Knoten zur Verfügung (d. h. "veröffentlicht") für die Verwendung von des- und die Sitzung Debug-Manager (SDM). Um veröffentlichte Programme und Programm Knoten zuzugreifen, verwenden Sie die [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) Schnittstelle. Dies ist die einzige Möglichkeit, die Visual Studio erkennt, dass eine Anwendung gedebuggt wird.  
   
-## <a name="requirements"></a>Requirements  
+## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="example"></a>Example  
- This example shows how to instantiate the program publisher and register a program node. This is taken from the Tutorial, [Publishing the Program Node](http://msdn.microsoft.com/en-us/d0100e02-4e2b-4e72-9e90-f7bc11777bae).  
+## <a name="example"></a>Beispiel  
+ Dieses Beispiel zeigt, wie Instanziieren der Herausgeber des Programms und registrieren einen Programm-Knoten. Dies ist das Lernprogramm entnommen [Veröffentlichen der Anwendung Knoten](http://msdn.microsoft.com/en-us/d0100e02-4e2b-4e72-9e90-f7bc11777bae).  
   
 ```cpp  
 // This is how m_srpProgramPublisher is defined in the class definition:  
@@ -107,6 +107,6 @@ void CProgram::Start(IDebugEngine2 * pEngine)
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
- [Core Interfaces](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Core-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)

@@ -1,5 +1,5 @@
 ---
-title: Validating Breakpoints in a Legacy Language Service | Microsoft Docs
+title: "Überprüfen die Haltepunkte in einem Legacy-Sprachdienst | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -33,28 +33,28 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 2a87c22948e710a3b95ee7f79b31626794dc7708
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="validating-breakpoints-in-a-legacy-language-service"></a>Validating Breakpoints in a Legacy Language Service
-A breakpoint indicates that program execution should stop at a particular point while it is being run in a debugger. A user can place a breakpoint on any line in the source file, since the editor has no knowledge of what constitutes a valid location for a breakpoint. When the debugger is launched, all of the marked breakpoints (called pending breakpoints) are bound to the appropriate location in the running program. At the same time the breakpoints are validated to ensure that they mark valid code  locations. For example, a breakpoint on a comment is not valid, because there is no code at that location in the source code. The debugger disables invalid breakpoints.  
+# <a name="validating-breakpoints-in-a-legacy-language-service"></a>Überprüfen die Haltepunkte in einem Legacy-Sprachdienst
+Ein Haltepunkt gibt an, dass die Ausführung des Programms zu einem bestimmten Zeitpunkt beendet werden soll, während er in einem Debugger ausgeführt wird. Benutzer kann einen Haltepunkt für jede beliebige Zeile in der Quelldatei platziert werden, da der Editor keine Kenntnis hat von was einen gültigen Speicherort für einen Breakpoint ausmacht. Wenn der Debugger gestartet wird, werden alle markierten Haltepunkte (ausstehenden Haltepunkte genannt) an die gewünschte Position in der ausgeführten Anwendung gebunden. Markieren Sie zum gleichen Zeitpunkt Breakpoints überprüft werden, um sicherzustellen, dass sie gültige Codepositionen aus. Beispielsweise ist ein Breakpoint für einen Kommentar ungültig, da es an dieser Stelle im Quellcode kein Code ist. Der Debugger deaktiviert ungültige Haltepunkte.  
   
- Since the language service knows about the source code being displayed, it can validate breakpoints before the debugger is launched. You can override the <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> method to return a span specifying a valid location for a breakpoint. The breakpoint location is still validated when the debugger is launched, but the user is notified of invalid breakpoints without waiting for the debugger to load.  
+ Da der Quellcode mehr angezeigt wird der Sprachdienst kennt, können sie Haltepunkte überprüfen, bevor der Debugger gestartet wird. Sie können außer Kraft setzen die <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> Methode, um eine Spanne angeben einen gültigen Speicherort für einen Breakpoint zurückzugeben. Die Position des Haltepunkts ist immer noch überprüft werden, wenn der Debugger wird gestartet, aber der Benutzer eine ungültige Haltepunkte Benachrichtigung ohne zu warten, damit des Debuggers geladen werden.  
   
-## <a name="implementing-support-for-validating-breakpoints"></a>Implementing Support for Validating Breakpoints  
+## <a name="implementing-support-for-validating-breakpoints"></a>Implementieren der Unterstützung für die Überprüfung von Haltepunkten  
   
--   The <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> method is given the position of the breakpoint. Your implementation must decide whether or not the location is valid, and indicate this by returning a text span that identifies the code associated with the line position the breakpoint.  
+-   Die <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> -Methode erhält die Position des Haltepunkts. Ihre Implementierung muss entscheiden, unabhängig davon, ob der Speicherort gültig ist, und darauf hinweisen, dass dies wird durch Zurückgeben von einem Textabschnitt, der den Code identifiziert den Breakpoint die Position der Zeile zugeordnet.  
   
--   Return <xref:Microsoft.VisualStudio.VSConstants.S_OK> if the location is valid, or <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> if it is not valid.  
+-   Zurückgeben <xref:Microsoft.VisualStudio.VSConstants.S_OK> Wenn der Speicherort gültig ist oder <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> , wenn er ungültig ist.  
   
--   If the breakpoint is valid the text span is highlighted along with the breakpoint.  
+-   Wenn der Breakpoint gültig ist wird zusammen mit den Haltepunkt des Textabschnitts hervorgehoben.  
   
--   If the breakpoint is invalid, an error message appears in the status bar.  
+-   Wenn der Breakpoint ungültig ist, wird eine Fehlermeldung in der Statusleiste angezeigt.  
   
-### <a name="example"></a>Example  
- This example shows an implementation of the <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> method that calls the parser to obtain the span of code (if any) at the specified location.  
+### <a name="example"></a>Beispiel  
+ Dieses Beispiel zeigt eine Implementierung der <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> Methode, die den Parser, um die Spanne des Codes zu erhalten (sofern vorhanden) am angegebenen Speicherort aufruft.  
   
- This example assumes that you have added a `GetCodeSpan` method to the <xref:Microsoft.VisualStudio.Package.AuthoringSink> class that validates the text span and returns `true` if it is a valid breakpoint location.  
+ In diesem Beispiel wird davon ausgegangen, dass Sie hinzugefügt haben, eine `GetCodeSpan` Methode, um die <xref:Microsoft.VisualStudio.Package.AuthoringSink> -Klasse, die dem Textabschnitt und gibt überprüft `true` Wenn es sich um einen gültigen Breakpoint Speicherort handelt.  
   
 ```csharp  
 using Microsoft VisualStudio;  
@@ -116,5 +116,5 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
- [Legacy Language Service Features](../../extensibility/internals/legacy-language-service-features1.md)
+## <a name="see-also"></a>Siehe auch  
+ [Legacy-Dienst-Sprachfunktionen](../../extensibility/internals/legacy-language-service-features1.md)

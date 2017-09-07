@@ -31,46 +31,46 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 93641816a2186d2ac3560a1475082a65a788a812
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 8ffa88255d8f61e8908a6ec33e04e56a03ab6405
 ms.contentlocale: de-de
-ms.lasthandoff: 08/23/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
-Determines whether the current instruction pointer can be set to the given stack frame.  
+Bestimmt, ob für der aktuellen Anweisungszeiger auf den angegebenen Stapelrahmen festgelegt werden kann.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT CanSetNextStatement (   
    IDebugStackFrame2*  pStackFrame,  
    IDebugCodeContext2* pCodeContext  
 );  
 ```  
   
-```cs  
+```csharp  
 int CanSetNextStatement (   
    IDebugStackFrame2  pStackFrame,  
    IDebugCodeContext2 pCodeContext  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  `pStackFrame`  
- Reserved for future use; set to a null value. If this is a null value, use the current stack frame.  
+ Für die zukünftige Verwendung reserviert. Legen Sie auf einen null-Wert. Ist dies ein null-Wert, verwenden Sie den aktuellen Stapelrahmen.  
   
  `pCodeContext`  
- [in] An [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) object that describes the code location about to be executed and its context.  
+ [in] Ein [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) -Objekt, das den Speicherort der Code ausgeführt werden soll beschreibt und seines Kontexts.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Remarks  
- If this method returns `S_OK`, then call the [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md) method to actually set the next statement.  
+## <a name="remarks"></a>Hinweise  
+ Wenn diese Methode zurückgibt `S_OK`, rufen Sie anschließend die [nächste Anweisung festlegen](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md) Methode, um tatsächlich auf die nächste Anweisung festlegen.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
- [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)
+ [Nächste Anweisung festlegen](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)

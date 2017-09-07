@@ -1,5 +1,5 @@
 ---
-title: SccGetCommandOptions Function | Microsoft Docs
+title: SccGetCommandOptions Funktion | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,11 +34,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: df497de98463d728b5cd040415924a40fb6717b8
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions Function
-This function prompts the user for advanced options for a given command.  
+# <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions-Funktion
+Diese Funktion fordert den Benutzer für die erweiterten Optionen für einen bestimmten Befehl.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -51,48 +51,48 @@ SCCRTN SccGetCommandOptions(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  pvContext  
- [in] The source control plug-in context structure.  
+ [in] Datenquellen-Steuerelement-Plug-in-Context-Struktur.  
   
  hWnd  
- [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
+ [in] Ein Handle für die IDE-Fenster, das das Quellsteuerelement-Plug-in als übergeordnetes Element für alle Dialogfelder verwenden kann, die es bereitstellt.  
   
  iCommand  
- [in] The command for which advanced options are requested (see [Command Code](../extensibility/command-code-enumerator.md) for possible values).  
+ [in] Der Befehl für die erweiterte Optionen angefordert werden (finden Sie unter [Befehlscode](../extensibility/command-code-enumerator.md) mögliche Werte).  
   
  ppvOptions  
- [in] The option structure (can also be `NULL`).  
+ [in] Die Option-Struktur (kann auch `NULL`).  
   
-## <a name="return-value"></a>Return Value  
- The source control plug-in implementation of this function is expected to return one of the following values:  
+## <a name="return-value"></a>Rückgabewert  
+ Die Source Control-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
   
-|Value|Description|  
+|Wert|Beschreibung|  
 |-----------|-----------------|  
-|SCC_OK|Success.|  
-|SCC_I_ADV_SUPPORT|The source control plug-in supports advanced options for the command.|  
-|SCC_I_OPERATIONCANCELED|The user cancelled the source control plug-in's **Options** dialog box.|  
-|SCC_E_OPTNOTSUPPORTED|The source control plug-in does not support this operation.|  
-|SCC_E_ISCHECKEDOUT|Cannot perform this operation on a file that is currently checked out.|  
-|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues. A retry is recommended.|  
-|SCC_E_NONSPECIFICERROR|Nonspecific failure.|  
+|SCC_OK|Erfolgreich.|  
+|SCC_I_ADV_SUPPORT|Die Datenquellen-Steuerelement-Plug-in unterstützt erweiterte Optionen für den Befehl.|  
+|SCC_I_OPERATIONCANCELED|Die Datenquellen-Steuerelement-Plug-ins vom Benutzer abgebrochen. **Optionen** (Dialogfeld).|  
+|SCC_E_OPTNOTSUPPORTED|Dieser Vorgang wird von der quellcodeverwaltung-Plug-in nicht unterstützt.|  
+|SCC_E_ISCHECKEDOUT|Dieser Vorgang auf eine Datei, die zurzeit ausgecheckt ist, kann nicht ausgeführt werden.|  
+|SCC_E_ACCESSFAILURE|Es wurde ein Problem, das Zugriff auf das Quellcodeverwaltungssystem, wahrscheinlich aufgrund eines Netzwerk-oder Konflikte. Eine Wiederholung wird empfohlen.|  
+|SCC_E_NONSPECIFICERROR|Unspezifischen Fehlers.|  
   
-## <a name="remarks"></a>Remarks  
- The IDE calls this function for the first time with `ppvOptions`=`NULL` to determine if the source control plug-in supports the advanced options feature for the specified command. If the plug-in does support the feature for that command, the IDE calls this function again when the user requests advanced options (usually implemented as an **Advanced** button in a dialog box) and supplies a non-NULL pointer for `ppvOptions` that points to a `NULL` pointer. The plug-in stores any advanced options specified by the user in a private structure and returns a pointer to that structure in `ppvOptions`. This structure is then passed to all other Source Control Plug-in API functions that need to know about it, including subsequent calls to the `SccGetCommandOptions` function.  
+## <a name="remarks"></a>Hinweise  
+ Die IDE ruft diese Funktion zum ersten Mal mit `ppvOptions` = `NULL` zu bestimmen, ob die Datenquellen-Steuerelement-Plug-in die Funktion erweiterte Optionen für den angegebenen Befehl unterstützt. Wenn das plug-in die Funktion für diesen Befehl unterstützt, die IDE ruft diese Funktion erneut, wenn der Benutzer die erweiterte Optionen anfordert (implementiert in der Regel als ein **erweitert** Schaltfläche in einem Dialogfeld) und liefert einen nicht-NULL-Zeiger für `ppvOptions` , verweist auf eine `NULL` Zeiger. Das plug-in speichert alle erweiterten Optionen, die vom Benutzer in einer privaten Struktur angegeben und gibt einen Zeiger auf dieser Struktur in `ppvOptions`. Diese Struktur wird dann an andere Datenquellen-Steuerelement-Plug-in-API-Funktionen, die erfahren einschließlich nachfolgende Aufrufe müssen übergeben der `SccGetCommandOptions` Funktion.  
   
- An example may help clarify this situation.  
+ Ein Beispiel kann Ihnen helfen, diese Situation zu ermitteln.  
   
- A user chooses the **Get** command and the IDE displays a **Get** dialog box. The IDE calls the `SccGetCommandOptions` function with `iCommand` set to `SCC_COMMAND_GET` and `ppvOptions` set to `NULL`. This is interpreted by the source control plug-in as the question, "Do you have any advanced options for this command?" If the plug-in returns `SCC_I_ADV_SUPPORT`, the IDE displays an **Advanced** button in its **Get** dialog box.  
+ Ein Benutzer wählt die **abrufen** Befehl und der IDE angezeigt ein **abrufen** (Dialogfeld). Ruft die IDE die `SccGetCommandOptions` funktionieren mit `iCommand` festgelegt `SCC_COMMAND_GET` und `ppvOptions` festgelegt `NULL`. Dies wird durch die quellcodeverwaltung-Plug-in als Frage interpretiert, "Haben Sie erweiterte Optionen für diesen Befehl?" Wenn das plug-in zurückgibt `SCC_I_ADV_SUPPORT`, zeigt die IDE eine **erweitert** Schaltfläche seine **abrufen** (Dialogfeld).  
   
- The first time the user clicks the **Advanced** button, the IDE again calls the `SccGetCommandOptions` function, this time with a non-`NULL``ppvOptions` that points to a `NULL` pointer. The plug-in displays its own **Get Options** dialog box, prompts the user for information, puts that information into its own structure, and returns a pointer to that structure in `ppvOptions`.  
+ Der Benutzer klickt erstmalig den **erweitert** Schaltfläche die IDE erneut aufgerufen der `SccGetCommandOptions` funktionieren, dieses Mal mit einem nicht-`NULL``ppvOptions` , verweist auf eine `NULL` Zeiger. -Plug-in zeigt einen eigenen **Abrufoptionen** Dialogfeld fordert den Benutzer Informationen diese Information in ihre eigene Struktur und gibt einen Zeiger auf dieser Struktur in `ppvOptions`.  
   
- If the user clicks **Advanced** again in the same dialog box, the IDE calls the `SccGetCommandOptions` function again without changing `ppvOptions`, so that the structure is passed back to the plug-in. This enables the plug-in to reinitialize its dialog box to the values that the user had previously set. The plug-in modifies the structure in place before returning.  
+ Wenn der Benutzer klickt **erweitert** im gleichen Dialogfeld, ruft die IDE erneut die `SccGetCommandOptions` Funktion erneut, ohne Änderung `ppvOptions`, sodass die Struktur für das angegebene plug-in übergeben wird. Dies ermöglicht das plug-in, das ein Dialogfeld mit den Werten, die der Benutzer zuvor festgelegt wurden, erneut zu initialisieren. Das plug-in ändert die Struktur an Ort vor der Rückgabe.  
   
- Finally, when the user clicks **OK** in the IDE's **Get** dialog box, the IDE calls the [SccGet](../extensibility/sccget-function.md), passing the structure returned in `ppvOptions` that contains the advanced options.  
+ Abschließend, wenn der Benutzer klickt **OK** in der IDE **abrufen** (Dialogfeld), ruft die IDE die [SccGet](../extensibility/sccget-function.md), übergeben die Struktur zurückgegeben `ppvOptions` , enthält die Erweiterte Optionen.  
   
 > [!NOTE]
->  The command `SCC_COMMAND_OPTIONS` is used when the IDE displays an **Options** dialog box that lets the user set preferences that control how the integration works. If the source control plug-in wants to supply its own preferences dialog box, it can display it from an **Advanced** button in the IDE's preferences dialog box. The plug-in is solely responsible for getting and persisting this information; the IDE does not use it or modify it.  
+>  Der Befehl `SCC_COMMAND_OPTIONS` wird verwendet, wenn die IDE zeigt eine **Optionen** (Dialogfeld), die der Benutzer kann Voreinstellungen, die steuern, wie die Integration funktioniert. Möchte, dass die Datenquellen-Steuerelement-Plug-in ein eigenes Dialogfeld Einstellungen angeben, zeigt es aus einem **erweitert** Schaltfläche im Dialogfeld "Einstellungen" der IDE. Das plug-in ist allein verantwortlich für das Abrufen und diese Informationen beibehalten. die IDE verwenden, oder ändern Sie sie nicht.  
   
-## <a name="see-also"></a>See Also  
- [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
- [Command Code](../extensibility/command-code-enumerator.md)
+## <a name="see-also"></a>Siehe auch  
+ [Quellcodeverwaltungsfunktionen-Plug-in-API](../extensibility/source-control-plug-in-api-functions.md)   
+ [Befehls-Code](../extensibility/command-code-enumerator.md)

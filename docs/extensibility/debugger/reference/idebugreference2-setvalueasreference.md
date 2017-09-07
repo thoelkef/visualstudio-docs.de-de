@@ -34,11 +34,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: e295ad3fd09a8b5dbaa17cdd6f10f3cb8a9ff1b9
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
-Sets the value of a reference from another reference. Reserved for future use.  
+Legt den Wert eines Verweises aus eines anderen Verweises. Für zukünftige Verwendung reserviert.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -60,21 +60,21 @@ int SetValueAsReference (
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  `rgpArgs`  
- [in] An array of [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objects used to determine how to set the reference value.  
+ [in] Ein Array von [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) Objekte verwendet, um zu bestimmen, wie der Verweiswert festgelegt.  
   
  `dwArgCount`  
- [in] The number of references in the array.  
+ [in] Die Anzahl der Verweise im Array.  
   
  `pValue`  
- [in] An [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) object from which to set the property value.  
+ [in] Ein [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) Objekt aus, das den Wert der Eigenschaft festgelegt.  
   
  `dwTimeout`  
- [in] Maximum time, in milliseconds, to wait before returning from this method. Use `INFINITE` to wait indefinitely.  
+ [in] Maximale Zeit in Millisekunden, bis vor der Rückgabe dieser Methode. Verwendung `INFINITE` zum unendlichen Warten angibt.  
   
-## <a name="return-value"></a>Return Value  
- Always returns `E_NOTIMPL`.  
+## <a name="return-value"></a>Rückgabewert  
+ Gibt immer `E_NOTIMPL` zurück.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

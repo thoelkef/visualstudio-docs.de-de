@@ -35,11 +35,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: a281d92d93473dffeb8f488cd802a9cee4a779d7
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugprogramnode2detachdebuggerv7"></a>IDebugProgramNode2::DetachDebugger_V7
-DEPRECATED. DO NOT USE.  
+ALS VERALTET MARKIERT. DARF NICHT VERWENDET WERDEN.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -53,15 +53,15 @@ HRESULT DetachDebugger_V7 (
 int DetachDebugger_V7 ();  
 ```  
   
-## <a name="return-value"></a>Return Value  
- An implementation should always return `E_NOTIMPL`.  
+## <a name="return-value"></a>Rückgabewert  
+ Eine Implementierung sollte stets `E_NOTIMPL`.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Hinweise  
   
 > [!WARNING]
->  As of [!INCLUDE[vsprvslong](../../../code-quality/includes/vsprvslong_md.md)], this method is no longer used and should always return `E_NOTIMPL`.  
+>  Als der [!INCLUDE[vsprvslong](../../../code-quality/includes/vsprvslong_md.md)], diese Methode wird nicht mehr verwendet und sollten stets `E_NOTIMPL`.  
   
- This method is called when the debugger unexpectedly quits. When this method is called, the DE should resume the program as though the user detached from it. No more debug events should be sent. The program should be in a state where it is attachable from another instance of the debugger.  
+ Diese Methode wird aufgerufen, wenn der Debugger unerwartet beendet wird. Wenn diese Methode aufgerufen wird, sollte DE das Programm fortgesetzt, als ob der Benutzer von ihm getrennt. Keine weiteren Debuggingereignisse gesendet werden soll. Das Programm sollte sich in einem Zustand, wo es von einer anderen Instanz des Debuggers anfügbar ist.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

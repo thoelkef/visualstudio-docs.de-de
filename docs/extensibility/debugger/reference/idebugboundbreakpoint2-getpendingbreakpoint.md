@@ -35,11 +35,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 85c6f7650cedc9fe6136ff84a9ff7acfd82ac96a
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugboundbreakpoint2getpendingbreakpoint"></a>IDebugBoundBreakpoint2::GetPendingBreakpoint
-Gets the pending breakpoint from which the specified bound breakpoint was created.  
+Ruft den ausstehenden Haltepunkts aus dem angegebene gebundene Haltepunkt erstellt wurde.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -55,18 +55,18 @@ int GetPendingBreakpoint(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  `ppPendingBreakpoint`  
- [out] Returns the [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) object that represents the pending breakpoint that was used to create this bound breakpoint.  
+ [out] Gibt die [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) -Objekt, das die ausstehenden Haltepunkt darstellt, der verwendet wurde, zum Erstellen dieser gebundenen Haltepunkt.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Remarks  
- A pending breakpoint can be thought of as a collection of all the necessary information needed to bind a breakpoint to code that can be applied to one or many programs.  
+## <a name="remarks"></a>Hinweise  
+ Ein ausstehender Haltepunkt kann betrachtet werden als Auflistung von alle erforderlichen Informationen erforderlich, um einen Haltepunkt an Code zu binden, die auf einem oder mehreren Programmen angewendet werden können.  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a simple `CBoundBreakpoint` object that exposes the [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) interface.  
+## <a name="example"></a>Beispiel  
+ Im folgende Beispiel wird gezeigt, wie diese Methode für eine einfache implementiert `CBoundBreakpoint` -Objekt, das macht die [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) Schnittstelle.  
   
 ```  
 HRESULT CBoundBreakpoint::GetPendingBreakpoint(  
@@ -99,6 +99,6 @@ HRESULT CBoundBreakpoint::GetPendingBreakpoint(
 }    
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

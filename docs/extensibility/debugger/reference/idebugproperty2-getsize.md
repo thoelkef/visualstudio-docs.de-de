@@ -34,11 +34,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 00674430f95eed895a6564676e9d33a36795268d
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugproperty2getsize"></a>IDebugProperty2::GetSize
-Gets the size, in bytes, of the property value.  
+Ruft die Größe in Bytes, der den Wert der Eigenschaft ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -54,12 +54,12 @@ int GetSize (
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  `pdwSize`  
- [out] Returns the size, in bytes, of the property value.  
+ [out] Gibt die Größe in Bytes, der den Wert der Eigenschaft zurück.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise returns error code. Returns `S_GETSIZE_NO_SIZE` if the property has no size.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`; andernfalls wird Fehlercode zurückgegeben. Gibt `S_GETSIZE_NO_SIZE` , wenn die Eigenschaft keine Größe hat.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

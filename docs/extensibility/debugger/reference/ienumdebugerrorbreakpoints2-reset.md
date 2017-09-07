@@ -34,11 +34,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 60c48f0d9fae54b5d7f11aa71abf05d59f799dca
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="ienumdebugerrorbreakpoints2reset"></a>IEnumDebugErrorBreakpoints2::Reset
-Resets the enumeration to the first element.  
+Setzt die Enumeration auf das erste Element zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -52,11 +52,11 @@ HRESULT Reset(
 int Reset();  
 ```  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Remarks  
- After this method is called, the next call to the [Next](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-next.md) method returns the first element of the enumeration.  
+## <a name="remarks"></a>Hinweise  
+ Nachdem diese Methode wird aufgerufen, den beim nächsten Aufruf der [Weiter](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-next.md) Methode gibt das erste Element der Enumeration.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)
