@@ -34,11 +34,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: e71bb5aa2954c609cff4a3afbfba981bade3122c
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
-Determines the location of the specified managed assembly reference.  
+Bestimmt die Position des angegebenen verwalteten Assemblyverweises.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -62,29 +62,29 @@ int ResolveAssemblyRef(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  `assemName`  
- [in] Name of the assembly to resolve.  
+ [in] Der Name der Assembly auflösen.  
   
  `assemBytes`  
- [out] Returns an [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) object containing the assembly bytes associated with the reference.  
+ [out] Gibt eine [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) Objekt, das die Assemblybytes für den Verweis enthält.  
   
  `assemPdb`  
- [out] Returns an `IEEDataStorage` object containing the symbol store data associated with this reference.  
+ [out] Gibt ein `IEEDataStorage` Objekt, das das Symbol enthält dieser Verweis zugeordnete Daten zu speichern.  
   
  `assemLocation`  
- [out] Returns the path location of this reference.  
+ [out] Gibt den Pfad des Verweises zurück.  
   
  `alr`  
- [out] Returns a value from the [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) enumeration indicating the location of this reference's assembly.  
+ [out] Gibt einen Wert aus der [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) Enumeration, der angibt, des Speicherortes der Assembly des Verweises.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Remarks  
- This method is not typically implemented by a custom expression evaluator.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode ist nicht in der Regel von einem benutzerdefinierten ausdrucksauswertung implementiert.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)   
  [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)

@@ -34,11 +34,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: fa7b4f24cf215b3cab1bee47ed665d62336fb519
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="adprocessid"></a>AD_PROCESS_ID
-Specifies the process ID, which may be either a system ID or a GUID.  
+Gibt die Prozess-ID, die ein System-ID oder eine GUID an.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -62,21 +62,21 @@ public struct AD_PROCESS_ID {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Member  
  `ProcessIdType`  
- A value from the [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) enumeration specifying how to interpret the `ProcessId` union (or, for managed code, which member of the structure to access).  
+ Ein Wert aus der [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) Enumeration, die angibt, wie der zum Interpretieren der `ProcessId` union (oder für verwalteten Code, den Zugriff auf die Member der Struktur).  
   
- dwProcessId  
- The process ID as a value from the system.  
+ ist dwProcessId  
+ Die Prozess-ID als ein Wert aus dem System.  
   
  guidProcessId  
- The process ID as a GUID.  
+ Die Prozess-ID als GUID.  
   
  dwUnused  
- Padding.  
+ Auffüllung.  
   
-## <a name="remarks"></a>Remarks  
- This structure is passed to the following methods:  
+## <a name="remarks"></a>Hinweise  
+ Diese Struktur wird für die folgenden Methoden übergeben:  
   
 -   [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)  
   
@@ -86,21 +86,21 @@ public struct AD_PROCESS_ID {
   
 -   [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)  
   
- And is returned from the following methods:  
+ Und wird zurückgegeben, aus der folgenden Methoden:  
   
 -   [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)  
   
 -   [GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)  
   
-## <a name="requirements"></a>Requirements  
+## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)   
  [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)   
  [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md)   

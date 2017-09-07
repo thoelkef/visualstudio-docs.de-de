@@ -34,11 +34,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 1357a55b240872237a9c838d1387cf07f14c6f92
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
-Specifies where an assembly is located.  
+Gibt an, auf dem sich eine Assembly befindet.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -61,32 +61,32 @@ public enum enum_ASSEMBLYLOCRESOLUTION {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Member  
  ALR_NAME  
- Assembly is located in the current namespace.  
+ Assembly befindet sich im aktuellen Namespace.  
   
  ALR_USERDIR  
- Assembly is located in a user directory.  
+ Assembly befindet sich in einem Verzeichnis des Benutzers.  
   
  ALR_SHAREDDIR  
- Assembly is located in shared directory.  
+ Assembly befindet sich im freigegebenen Verzeichnis.  
   
  ALR_REMOTEDIR  
- Assembly is located in a remote directory.  
+ Assembly befindet sich in ein Remoteverzeichnis.  
   
-## <a name="remarks"></a>Remarks  
- These values are returned by the [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) and [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) methods.  
+## <a name="remarks"></a>Hinweise  
+ Diese Werte werden zurückgegeben, durch die [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) und [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) Methoden.  
   
- These values can be combined with the `OR` operation.  
+ Diese Werte können kombiniert werden, mit der `OR` Vorgang.  
   
-## <a name="requirements"></a>Requirements  
+## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)   
  [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)

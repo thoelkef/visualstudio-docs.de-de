@@ -32,11 +32,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 501acf49bec28092c7a41fee83f6dfd9fe9d11c9
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugdocumentpositionoffset2getrange"></a>IDebugDocumentPositionOffset2::GetRange
-Retrieves the range for the current document position.  
+Ruft den Bereich für die aktuelle Dokumentposition ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -54,26 +54,26 @@ public int GetRange(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  `pdwBegOffset`  
- [in, out] Offset for the start position of the range. Set this parameter to a null value if this information is not needed.  
+ [in, out] Offset für die Startposition des Bereichs. Legen Sie diesen Parameter auf den Wert null, wenn diese Informationen nicht benötigt wird.  
   
  `pdwEndOffset`  
- [in, out] Offset for the end position of the range. Set this parameter to a null value if this information is not needed.  
+ [in, out] Offset für die Endposition des Bereichs. Legen Sie diesen Parameter auf den Wert null, wenn diese Informationen nicht benötigt wird.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Remarks  
- The range specified in a document position for a location breakpoint is used by the debug engine (DE) to search ahead for a statement that actually contributes code. For example, consider the following code:  
+## <a name="remarks"></a>Hinweise  
+ In einem Dokumentposition für einen Positionshaltepunkt angegebene Bereich werden vom Debugging-Modul (DE) für eine Anweisung voraus suchen, die tatsächlich Code beiträgt. Beachten Sie z. B. folgenden Code:  
   
 ```  
 Line 5: // comment  
 Line 6: x = 1;  
 ```  
   
- Line 5 contributes no code to the program being debugged. If the debugger that sets the breakpoint on line 5 wants the DE to search forward a certain amount for the first line that contributes code, the debugger would specify a range that includes additional candidate lines where a breakpoint might be correctly placed. The DE would then search forward through those lines until it found a line that could accept a breakpoint.  
+ Zeile 5 trägt dazu bei keinen Code für das Programm, das gerade gedebuggt wird. Wenn der Debugger, der den Haltepunkt in Zeile 5 festlegt die DE möchte um eine bestimmte Menge für die erste Zeile vorwärts zu suchen, die Code beiträgt, würde der Debugger einen Bereich angeben, der weitere Kandidat Zeilen enthält, in denen ein Haltepunkt ordnungsgemäß eingefügt werden kann. DE würde dann vorwärts durch die Zeilen suchen, bis er eine Zeile gefunden, die einen Haltepunkt akzeptieren konnte.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentPositionOffset2](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2.md)   
  [GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)

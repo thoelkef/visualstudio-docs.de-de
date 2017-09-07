@@ -34,11 +34,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 03bb7bc8cbecff6b74f5ea2c2e0d95f516c8f536
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugfunctionposition2getoffset"></a>IDebugFunctionPosition2::GetOffset
-Retrieves the position of the function in the source document.  
+Ruft die Position der Funktion im Quelldokument ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -54,13 +54,13 @@ int GetOffset(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  `pPosition`  
- [in, out] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure that is filled in with the position of the function in a document.  
+ [in, out] Ein [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) -Struktur, die mit der Position der Funktion in einem Dokument ausgefüllt ist.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)   
  [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

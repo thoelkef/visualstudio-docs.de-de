@@ -34,11 +34,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: b5d4c50b407406ea9a5d878decf859b8ab70863d
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugcanstopevent2getreason"></a>IDebugCanStopEvent2::GetReason
-Gets the reason why the debug engine (DE) wants to stop.  
+Ruft den Grund, warum die Debugging-Modul (DE) beenden möchte.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -54,19 +54,19 @@ int GetReason(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  `pcr`  
- [out] Returns a value from the [CANSTOP_REASON](../../../extensibility/debugger/reference/canstop-reason.md) enumeration that describes the reason for this event.  
+ [out] Gibt einen Wert aus der [CANSTOP_REASON](../../../extensibility/debugger/reference/canstop-reason.md) -Enumeration, der den Grund für dieses Ereignis beschreibt.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Remarks  
- This method is typically called before the [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) method so the caller can determine whether to pass non-zero (`TRUE`) to the `IDebugCanStopEvent2::CanStop` method.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode wird in der Regel aufgerufen, bevor die [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) Methode, sodass der Aufrufer nicht 0 (null) übergeben ermitteln, ob kann (`TRUE`), die `IDebugCanStopEvent2::CanStop` Methode.  
   
- The reason for stopping can be either `CANSTOP_ENTRYPOINT`, which means the DE has reached an entry point, or `CANSTOP_STEPIN`, which means the DE has stepped into a function.  
+ Der Grund für Beendigung kann entweder `CANSTOP_ENTRYPOINT`, was bedeutet, dass die DE hat einen Einstiegspunkt erreicht oder `CANSTOP_STEPIN`, was bedeutet, dass die DE in eine Funktion in Einzelschritten hat.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)   
  [CANSTOP_REASON](../../../extensibility/debugger/reference/canstop-reason.md)   
  [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)

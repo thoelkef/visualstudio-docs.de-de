@@ -34,11 +34,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 8901f9fff01ecdfe21e3731df8b2d155fe250ac2
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # IDebugCoreServer3::GetConnectionProtocol
-Returns a value indicating the protocol that is being used to communicate between the server and the debug package.  
+Gibt einen Wert, der angibt, des Protokolls, das für die Kommunikation zwischen dem Server und das debugpaket verwendet wird.  
   
 ## Syntax  
   
@@ -54,13 +54,13 @@ int GetConnectionProtocol(
 );  
 ```  
   
-#### Parameters  
+#### Parameter  
  `pProtocol`  
- [out] Returns one of the values from the [CONNECTION_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md) enumeration.  
+ [out] Gibt einen der Werte aus den [CONNECTION_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md) Enumeration.  
   
-## Return Value  
- If successful, returns `S_OK`; otherwise, returns error code.  
+## Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird Fehlercode zurückgegeben.  
   
-## See Also  
+## Siehe auch  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)   
  [CONNECTION_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md)

@@ -35,11 +35,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 72f4f12aecaeb3b45af5950a9ec3bc45f37c1969
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugboundbreakpoint2sethitcount"></a>IDebugBoundBreakpoint2::SetHitCount
-Sets the hit count for the bound breakpoint.  
+Legt die Trefferanzahl für den gebundenen Haltepunkt fest.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -55,18 +55,18 @@ int SetHitCount(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  `dwHitCount`  
- [in] The hit count to set.  
+ [in] Die Trefferanzahl festgelegt.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code. Returns `E_BP_DELETED` if the state of the bound breakpoint object is set to `BPS_DELETED` (part of the [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumeration).  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` , wenn der Zustand des Objekts gebundenen Haltepunkt, um festgelegt ist `BPS_DELETED` (Teil der [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) Enumeration).  
   
-## <a name="remarks"></a>Remarks  
- The hit count is the number of times this breakpoint has fired during the current run of the session.  
+## <a name="remarks"></a>Hinweise  
+ Die Trefferanzahl ist die Anzahl der Häufigkeit, mit die dieser Haltepunkt bei der aktuellen Ausführung der Sitzung ausgelöst wurde.  
   
- This method is typically called by the debug engine to update the current hit count on this breakpoint.  
+ Diese Methode wird in der Regel durch die Debugging-Modul aktualisieren Sie die aktuelle Trefferanzahl auf diesem Breakpoint aufgerufen.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
  [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

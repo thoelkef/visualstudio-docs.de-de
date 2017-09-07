@@ -34,11 +34,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 2412503a57f42b879a7e4226acf81397c4a9a56a
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="unmanagedaddressthisrelative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
-This structure represents an address that is relative to a `this` pointer (`Me` in Visual Basic).  
+Diese Struktur stellt eine Adresse, relativ zum wird, eine `this` Zeiger (`Me` in Visual Basic).  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -58,26 +58,26 @@ public struct UNMANAGED_THIS_RELATIVE {
 }  
 ```  
   
-## <a name="terms"></a>Terms  
+## <a name="terms"></a>Begriffe  
  dwOffset  
- Byte offset from a base position (for example, start of a class vtable).  
+ Byte-offset von einer Basisklasse Position (z. B. Anfang einer Klasse Vtable).  
   
  dwBitOffset  
- Offset in bits from a base position (always 0 unless referring to a bit field).  
+ Offset in Bits aus einer Basis Position (immer 0, wenn auf ein Bitfeld verweisen).  
   
  dwBitLength  
- Number of bits representing the address (always 0 unless referring to a bit field).  
+ Anzahl von Bits, die die Adresse darstellt (immer 0, wenn auf ein Bitfeld verweisen).  
   
-## <a name="remarks"></a>Remarks  
- This structure is part of the union in the [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) structure when the `dwKind` field of the `DEBUG_ADDRESS_UNION` structure is set to `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` (a value from the [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeration).  
+## <a name="remarks"></a>Hinweise  
+ Diese Struktur ist Teil der Union der [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) Struktur, wenn die `dwKind` Feld der `DEBUG_ADDRESS_UNION` Struktur auf festgelegt ist `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` (ein Wert aus der [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) die Enumeration).  
   
-## <a name="requirements"></a>Requirements  
+## <a name="requirements"></a>Anforderungen  
  Header: sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)

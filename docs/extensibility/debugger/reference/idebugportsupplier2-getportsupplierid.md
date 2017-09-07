@@ -34,11 +34,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 2201df4c73028583667dd100d2c068b26ff86271
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugportsupplier2getportsupplierid"></a>IDebugPortSupplier2::GetPortSupplierId
-Gets the port supplier identifier.  
+Ruft die Port-Lieferanten-ID ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -54,12 +54,12 @@ HRESULT GetPortSupplierId(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  `pguidPortSupplier`  
- [out] Returns the GUID of the port supplier.  
+ [out] Gibt die GUID des Lieferanten Port zurück.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

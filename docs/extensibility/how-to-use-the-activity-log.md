@@ -1,5 +1,5 @@
 ---
-title: 'How to: Use the Activity Log | Microsoft Docs'
+title: "Vorgehensweise: Verwenden Sie das Aktivitätsprotokoll | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -33,18 +33,18 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: a1ddf51d02d9e20f6806f8bc202f8a08166876d6
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="how-to-use-the-activity-log"></a>How to: Use the Activity Log
-VSPackages can write messages to the activity log. This feature is especially useful for debugging VSPackages in retail environments.  
+# <a name="how-to-use-the-activity-log"></a>Vorgehensweise: Verwenden Sie das Aktivitätsprotokoll
+VSPackages können Meldungen im Aktivitätsprotokoll schreiben. Diese Funktion ist besonders nützlich zum Debuggen von VSPackages im Einzelhandel Umgebungen.  
   
 > [!TIP]
->  The activity log is always turned on. Visual Studio keeps a rolling buffer of the last one hundred entries as well as the first ten entries, which have general configuration information.  
+>  Das Aktivitätsprotokoll ist immer aktiviert. Visual Studio speichert einen parallelen Puffer die letzten 100 Einträge sowie die ersten zehn Einträge, die allgemeine Konfigurationsinformationen verfügen.  
   
-### <a name="to-write-an-entry-to-the-activity-log"></a>To write an entry to the activity log  
+### <a name="to-write-an-entry-to-the-activity-log"></a>Zum Schreiben eines Eintrags im Aktivitätsprotokoll  
   
-1.  Insert this code in the <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> method or in any other method except the VSPackage constructor:  
+1.  Fügen Sie diesen Code in die <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> Methode oder in eine andere Methode, mit Ausnahme der VSPackage-Konstruktor:  
   
     ```csharp  
     IVsActivityLog log = GetService(typeof(SVsActivityLog)) as IVsActivityLog;  
@@ -56,28 +56,28 @@ VSPackages can write messages to the activity log. This feature is especially us
         "Called for: {0}", this.ToString()));  
     ```  
   
-     This code gets the <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> service and casts it to an <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A> writes an informational entry into the activity log using the current cultural context.  
+     Dieser Code Ruft die <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> service und wandelt es zu einer <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> Schnittstelle. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A>Schreibt einen Eintrag zu Informationszwecken, in das Aktivitätsprotokoll mit den aktuellen kulturellen Kontext.  
   
-2.  When the VSPackage is loaded (usually when a command is invoked or a window is opened), the text is written to the activity log.  
+2.  Wenn das VSPackage geladen wird (in der Regel, wenn ein Befehl aufgerufen wird, oder ein Fenster geöffnet ist), wird der Text in das Aktivitätsprotokoll geschrieben.  
   
-### <a name="to-examine-the-activity-log"></a>To examine the activity log  
+### <a name="to-examine-the-activity-log"></a>Untersuchen Sie das Aktivitätsprotokoll  
   
-1.  Find the activity log in the subfolder for  Visual Studio data: *%AppData%*\Microsoft\VisualStudio\15.0\ActivityLog.XML..  
+1.  Suchen Sie das Aktivitätsprotokoll im Unterordner "" für Visual Studio-Daten: *%appdata%*\Microsoft\VisualStudio\15.0\ActivityLog.XML...  
   
-2.  Open the activity log with any text editor. Here is a typical entry:  
+2.  Öffnen Sie das Aktivitätsprotokoll mit einem beliebigen Texteditor. Hier ist ein typische Eintrag:  
   
     ```  
     Called for: Company.MyApp.MyAppPackage ...  
     ```  
   
-## <a name="robust-programming"></a>Robust Programming  
- Because the activity log is a service, the activity log is unavailable in the VSPackage constructor.  
+## <a name="robust-programming"></a>Stabile Programmierung  
+ Da das Aktivitätsprotokoll auf einen Dienst handelt, steht das Aktivitätsprotokoll im VSPackage-Konstruktor.  
   
- You should obtain the activity log just before writing to it. Do not cache or save the activity log for future use.  
+ Sie sollten das Aktivitätsprotokoll nur vor dem Schreiben in diese anfordern. Zwischenspeichern Sie und speichern Sie das Aktivitätsprotokoll für die zukünftige Verwendung nicht.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>   
  <xref:Microsoft.VisualStudio.Shell.Interop.__ACTIVITYLOG_ENTRYTYPE>   
- [Troubleshooting VSPackages](../extensibility/troubleshooting-vspackages.md)   
+ [Problembehandlung bei VSPackages](../extensibility/troubleshooting-vspackages.md)   
  [VSPackages](../extensibility/internals/vspackages.md)
 

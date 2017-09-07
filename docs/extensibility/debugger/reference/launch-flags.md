@@ -34,11 +34,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 2f838e559d4c33a7bb807d5b0360a51ea7ff0d74
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="launchflags"></a>LAUNCH_FLAGS
-Specifies the debug launch flags.  
+Gibt an, der die Startflags Debuggen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -61,31 +61,31 @@ public enum enum_LAUNCH_FLAGS {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Member  
  LAUNCH_DEBUG  
- Launches the process for debugging.  
+ Startet den Prozess zum Debuggen.  
   
  LAUNCH_NODEBUG  
- Launches the process without debugging it.  
+ Startet den Prozess ohne es zu debuggen.  
   
  LAUNCH_ENABLE_ENC  
- DEPRECATED, DO NOT USE.  
+ VERALTET, VERWENDEN SIE NICHT.  
   
  LAUNCH_MERGE_ENV  
- Launches the process and merges the environment with the launching host.  
+ Startet den Prozess und führt die Umgebung mit dem Host starten.  
   
-## <a name="remarks"></a>Remarks  
- These values are passed as an argument to the [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) method.  
+## <a name="remarks"></a>Hinweise  
+ Diese Werte werden als Argument übergeben der [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) Methode.  
   
- These flags may be combined with a bitwise `OR`.  
+ Diese Flags können kombiniert werden, mit einem bitweisen `OR`.  
   
-## <a name="requirements"></a>Requirements  
+## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

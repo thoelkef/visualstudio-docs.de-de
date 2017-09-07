@@ -34,11 +34,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: f9642911606d9bbd72382fa1209484cded9bdf74
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
-Retrieves the specified number of bytes from the object.  
+Ruft die angegebene Anzahl von Bytes aus dem Objekt ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -58,22 +58,22 @@ int GetData(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  `dataSize`  
- [in] The number of bytes to retrieve (the `data` array must hold at least this number of bytes).  
+ [in] Die Anzahl der abzurufenden Bytes (der `data` Array muss mindestens diese Anzahl von Bytes enthalten).  
   
  `sizeGotten`  
- [out] Returns the number of bytes actually retrieved.  
+ [out] Gibt die Anzahl der Bytes, die tatsächlich abgerufen.  
   
  `data`  
- [in, out] Array to be filled in with the requested data.  
+ [in, out] Array, mit der angeforderten Daten ausgefüllt werden soll.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Remarks  
- The recommended use of this method is to retrieve all the data bytes into a local array, since there is no way to skip over bytes in the retrieval process. In this case, the parameter `dataSize` should be the value returned by the [GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md) method.  
+## <a name="remarks"></a>Hinweise  
+ Die empfohlene Verwendung dieser Methode ist die Datenbytes in ein lokales Array abrufen, da es keine Möglichkeit gibt, zu der Bytes des Abfrageprozesses überspringen. In diesem Fall wird der Parameter `dataSize` zurückgegeben werden soll der Wert von der [GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md) Methode.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)   
  [GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)

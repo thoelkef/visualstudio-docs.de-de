@@ -33,11 +33,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: b8395849f002519d52ed1f547e92b67e35f6408e
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugcomplussymbolprovider2gettypefromtoken"></a>IDebugComPlusSymbolProvider2::GetTypeFromToken
-Retrieves a type given its token.  
+Ruft einen Typ, dessen Token erhält.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -59,24 +59,24 @@ int GetTypeFromToken(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  `appDomain`  
- [in] Identifier of the application domain.  
+ [in] Der Bezeichner der Anwendungsdomäne.  
   
  `guidModule`  
- [in] Unique identifier of the module.  
+ [in] Eindeutiger Bezeichner des Moduls.  
   
  `tdToken`  
- [in] Token of the type to be retrieved.  
+ [in] Token des Typs abgerufen werden sollen.  
   
  `ppField`  
- [out] Returns the type that is represented by the [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).  
+ [out] Gibt den Typ zurück, die durch dargestellt ist die [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a **CDebugSymbolProvider** object that exposes the [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interface.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel veranschaulicht die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) Schnittstelle.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::GetTypeFromToken(  
@@ -104,5 +104,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

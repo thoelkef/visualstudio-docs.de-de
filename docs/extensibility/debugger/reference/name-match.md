@@ -34,11 +34,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 0b978feb1b38c87c2ca7e0616953856556144f21
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="namematch"></a>NAME_MATCH
-Selects the case option for matching names.  
+Wählt die Groß-/Kleinschreibung Option für den Abgleich von Namen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -58,18 +58,18 @@ public enum NameMatchOptions {
 }  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>Member  
  nmNone  
- No options are specified.  
+ Es wurden keine Optionen angegeben.  
   
  nmCaseSensitive  
- Indicates that names to be matched are case-sensitive.  
+ Gibt an, dass die abzugleichenden Namen die Groß-/Kleinschreibung.  
   
  nmCaseInsensitive  
- Indicates that names to be matched are not case-sensitive.  
+ Gibt an, dass die Namen, die abgeglichen werden nicht zwischen Groß-und Kleinschreibung.  
   
-## <a name="remarks"></a>Remarks  
- Passed as an argument to the following methods:  
+## <a name="remarks"></a>Hinweise  
+ Als Argument übergeben, um die folgenden Methoden:  
   
 -   [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)  
   
@@ -79,15 +79,15 @@ public enum NameMatchOptions {
   
 -   [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)  
   
-## <a name="requirements"></a>Requirements  
+## <a name="requirements"></a>Anforderungen  
  Header: sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)   
  [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)   
  [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)   

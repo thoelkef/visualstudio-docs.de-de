@@ -33,11 +33,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: ce289cb350dfe285d8f2f28d0cd16ed7444fd166
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesstate"></a>IDebugSymbolProviderDirect::GetCurrentModulesState
-Retrieves information about the symbol group of which the symbol provider is a member.  
+Ruft Informationen über die Symbol-Gruppe, die der Symbol-Anbieter angehört.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -55,18 +55,18 @@ int GetCurrentModulesState(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  `pState`  
- [out] The state of the symbol provider group.  
+ [out] Der Status der Gruppe der Symbol-Anbieter.  
   
  `count`  
- [out] Number of modules in the group.  
+ [out] Die Anzahl der Module in der Gruppe.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Remarks  
- The state is changed whenever a module is added to, or removed from, the symbol group. Therefore, this method can be used to detect if a symbol group has been modified.  
+## <a name="remarks"></a>Hinweise  
+ Der Status wird geändert, wenn ein Modul hinzugefügt oder aus der Gruppe "Symbol" entfernt wird. Daher kann diese Methode verwendet werden, zu erkennen, ob eine Symbol Gruppe geändert wurde.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

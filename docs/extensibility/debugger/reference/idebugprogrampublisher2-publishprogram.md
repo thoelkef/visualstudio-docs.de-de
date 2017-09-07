@@ -34,11 +34,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 3f573f35ed0130eb020ac2e8e19a0391050ec06e
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
-This method makes a program available for debug engines (DEs) and the session debug manager.  
+Diese Methode wird ein Programm für Debugmodule (DEs) verfügbar und die Sitzungs-Debug-Manager.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -58,22 +58,22 @@ int PublishProgram(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  `Engines`  
- [in] An array of GUIDs for DEs that can launch or attach to this program.  
+ [in] Ein Array von GUIDs für DEs, die für dieses einzelne Programm anfügen bzw. starten.  
   
  `szFriendlyName`  
- [in] Friendly name for the program (this appears in menus or dialogs presented to the user).  
+ [in] Anzeigename für das Programm (Dies wird in Menüs oder Dialogfeldern, die dem Benutzer angezeigt).  
   
  `pDebuggeeInterface`  
- [in] `IUnknown` interface for the program (this value is used as a cookie to uniquely identify the program; this same value is used to "unpublish" the program)  
+ [in] `IUnknown` Schnittstelle für das Programm (dieser Wert wird als Cookie verwendet, um die Anwendung eindeutig zu identifizieren; diese derselbe Wert wird verwendet "Veröffentlichung des Programms")  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Remarks  
- To make a program no longer available for debugging, call [UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md).  
+## <a name="remarks"></a>Hinweise  
+ Um ein Programm nicht mehr für das Debuggen verfügbar zu machen, rufen [UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md).  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   
  [UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)

@@ -34,11 +34,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: fa2e97ef660c4872e234e386b5b2513551551c7c
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugexpressioncontext2getname"></a>IDebugExpressionContext2::GetName
-Retrieves the name of the evaluation context.  
+Ruft den Namen der Evaluierungskontext ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -54,19 +54,19 @@ int GetName(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  `pbstrName`  
- [out] Returns the name of the evaluation context.  
+ [out] Gibt den Namen der Evaluierungskontext zurück.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Remarks  
- The name is the description of this evaluation context. It is typically something that can be parsed by an expression evaluator that refers to this exact evaluation context. For example, in C++ the name is as follows:  
+## <a name="remarks"></a>Hinweise  
+ Der Name ist die Beschreibung des dieses Auswertungskontext. In der Regel ist es etwas, das von der ausdrucksauswertung analysiert werden kann, die auf diese genaue Evaluierungskontext verweist. Beispielsweise ist in C++ der Name wie folgt:  
   
 ```  
 "{ function-name, source-file-name, module-file-name }"  
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)

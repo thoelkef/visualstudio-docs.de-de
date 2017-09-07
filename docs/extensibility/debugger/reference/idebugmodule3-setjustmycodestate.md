@@ -34,11 +34,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: dde5762e1f37b1690c3ffafb68b43380d8203cf2
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugmodule3setjustmycodestate"></a>IDebugModule3::SetJustMyCodeState
-Marks the module as being user code or not.  
+Markiert das Modul als Benutzercode oder nicht.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -54,12 +54,12 @@ int SetJustMyCodeState(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  `fIsUserCode`  
- [in] Nonzero (`TRUE`) if the module should be considered user code, zero (`FALSE`) if it should not.  
+ [in] Ungleich Null (`TRUE`), wenn das Modul als Benutzercode angesehen werden soll, 0 (`FALSE`) Wenn nicht enthalten sein sollen.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns error code.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

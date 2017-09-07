@@ -1,5 +1,5 @@
 ---
-title: 'Walkthrough: Creating and Running Unit Tests for Managed Code | Microsoft Docs'
+title: "Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code | Microsoft-Dokumentation"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -37,75 +37,75 @@ ms.translationtype: HT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: cbde644f9248935c73bb75b8b2de9573588867f5
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Walkthrough: Creating and Running Unit Tests for Managed Code
-This walkthrough will step you through creating, running, and customizing a series of unit tests using the Microsoft unit test framework for managed code and the Visual Studio Test Explorer. You start with a C# project that is under development, create tests that exercise its code, run the tests, and examine the results. Then you can change your project code and re-run the tests.  
+# <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Exemplarische Vorgehensweise: Erstellen und Ausführen von Komponententests für verwalteten Code
+Diese exemplarische Vorgehensweise führt Sie durch das Erstellen, Ausführen und Anpassen verschiedener Komponententests mithilfe des Microsoft-Komponententest-Frameworks für verwalteten Code und mithilfe von Visual Studio-Test-Explorer. Sie beginnen mit einem C#-Projekt in der Entwicklungsphase und erstellen Tests zur Codeüberprüfung. Anschließend führen Sie die Tests aus und überprüfen die Ergebnisse. Dann können Sie Änderungen am Projektcode vornehmen und die Tests erneut ausführen.  
   
- This topic contains the following sections:  
+ Dieses Thema enthält folgende Abschnitte:  
   
- [Prepare the walkthrough](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough)  
+ [Die exemplarische Vorgehensweise vorbereiten](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough)  
   
- [Create a unit test project](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Create_a_unit_test_project)  
+ [Ein Komponententestprojekt erstellen](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Create_a_unit_test_project)  
   
- [Create the test class](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Create_the_test_class)  
+ [Die Testklasse erstellen](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Create_the_test_class)  
   
--   [Test class requirements](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Test_class_requirements)  
+-   [Testklassenanforderungen](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Test_class_requirements)  
   
- [Create the first test method](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Create_the_first_test_method)  
+ [Die erste Testmethode erstellen](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Create_the_first_test_method)  
   
--   [Test method requirements](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Test_method_requirements)  
+-   [Testmethodenanforderungen](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Test_method_requirements)  
   
- [Build and run the test](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Build_and_run_the_test)  
+ [Den Test erstellen und ausführen](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Build_and_run_the_test)  
   
- [Fix your code and rerun your tests](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Fix_your_code_and_rerun_your_tests)  
+ [Den Code korrigieren und die Tests erneut ausführen](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Fix_your_code_and_rerun_your_tests)  
   
- [Use unit tests to improve your code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Use_unit_tests_to_improve_your_code)  
-  
-> [!NOTE]
->  This walkthrough uses the Microsoft unit test framework for managed code. Test Explorer also can run tests from third party unit test frameworks that have adapters for Test Explorer. For more information, see [Install third-party unit test frameworks](../test/install-third-party-unit-test-frameworks.md)  
+ [Den Code mit Komponententests verbessern](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Use_unit_tests_to_improve_your_code)  
   
 > [!NOTE]
->  For information about how to run tests from a command line, see [Walkthrough: using the command-line test utility](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867).  
+>  In dieser exemplarischen Vorgehensweise wird das Microsoft-Komponententest-Framework für verwalteten Code verwendet. Test-Explorer kann außerdem Tests von Drittanbieter-Komponententest-Frameworks ausführen, die über Adapter für Test-Explorer verfügen. Weitere Informationen finden Sie unter [Installieren von Frameworks für Komponententests von Drittanbietern](../test/install-third-party-unit-test-frameworks.md).  
   
-## <a name="prerequisites"></a>Prerequisites  
+> [!NOTE]
+>  Informationen zum Ausführen von Tests über die Befehlszeile finden Sie unter [Exemplarische Vorgehensweise: Verwenden des Befehlszeilen-Testprogramms](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867).  
   
--   The Bank project. See [Sample Project for Creating Unit Tests](../test/sample-project-for-creating-unit-tests.md).  
+## <a name="prerequisites"></a>Erforderliche Komponenten  
   
-##  <a name="BKMK_Prepare_the_walkthrough"></a> Prepare the walkthrough  
+-   Das Projekt "Bank". Weitere Informationen finden Sie unter [Beispielprojekt zum Erstellen von Komponententests](../test/sample-project-for-creating-unit-tests.md).  
   
-1.  Open Visual Studio.  
+##  <a name="BKMK_Prepare_the_walkthrough"></a> Vorbereiten der exemplarischen Vorgehensweise  
   
-2.  On the **File** menu, point to **New** and then click **Project**.  
+1.  Öffnen Sie Visual Studio.  
   
-     The **New Project** dialog box appears.  
+2.  Zeigen Sie im Menü **Datei** auf **Neu** , und klicken Sie dann auf **Projekt**.  
   
-3.  Under **Installed Templates**, click **Visual C#**.  
+     Das Dialogfeld **Neues Projekt** wird angezeigt.  
   
-4.  In the list of application types, click **Class Library**.  
+3.  Klicken Sie unter **Installierte Vorlagen**auf **Visual C#**.  
   
-5.  In the **Name** box, type `Bank` and then click **OK**.  
+4.  Klicken Sie in der Liste der Anwendungstypen auf **Klassenbibliothek**.  
   
-    > [!NOTE]
-    >  If the name "Bank" is already used, choose another name for the project.  
-  
-     The new Bank project is created and displayed in Solution Explorer with the Class1.cs file open in the Code Editor.  
+5.  Geben Sie im Feld **Name** die Bezeichnung `Bank` , und klicken Sie dann auf **OK**.  
   
     > [!NOTE]
-    >  If the Class1.cs file is not open in the Code Editor, double-click the file Class1.cs in Solution Explorer to open it.  
+    >  Wenn der Name "Bank" bereits verwendet wird, wählen Sie einen anderen Namen für das Projekt aus.  
   
-6.  Copy the source code from the [Sample Project for Creating Unit Tests](../test/sample-project-for-creating-unit-tests.md).  
+     Das neue Bank-Projekt wird erstellt und im Projektmappen-Explorer angezeigt, wobei der Code-Editor mit der Datei Class1.cs geöffnet wird.  
   
-7.  Replace the original contents of Class1.cs with the code from the [Sample Project for Creating Unit Tests](../test/sample-project-for-creating-unit-tests.md).  
+    > [!NOTE]
+    >  Wenn die Datei Class1.cs nicht im Code-Editor geöffnet wird, doppelklicken Sie im Projektmappen-Explorer auf die Datei Class1.cs, um diese zu öffnen.  
   
-8.  Save the file as BankAccount.cs  
+6.  Kopieren Sie den Quellcode aus dem [Beispielprojekt zum Erstellen von Komponententests](../test/sample-project-for-creating-unit-tests.md).  
   
-9. On the **Build** menu, click **Build Solution**.  
+7.  Ersetzen Sie den ursprünglichen Inhalt von Class1.cs durch den Code aus dem [Beispielprojekt zum Erstellen von Komponententests](../test/sample-project-for-creating-unit-tests.md).  
   
- You now have a project named Bank. It contains source code to test and tools to test it with. The namespace for Bank, **BankAccountNS**, contains the public class **BankAccount**, whose methods you will test in the following procedures.  
+8.  Speichern Sie die Datei als BankAccount.cs.  
   
- In this quick start, we focus on the `Debit` method.The Debit method is called when money is withdrawn an account and contains the following code:  
+9. Klicken Sie im Menü **Erstellen** auf **Projektmappe erstellen**.  
+  
+ Sie haben nun ein Projekt mit dem Namen Bank erstellt. Dieses Projekt enthält zu testenden Quellcode und Tools, mit denen der Quellcode getestet werden kann. Der Namespace für Bank ( **BankAccountNS**) enthält die öffentliche **BankAccount**-Klasse, deren Methoden Sie im Folgenden testen werden.  
+  
+ Bei diesem Schnellstart konzentrieren wir uns auf die `Debit` -Methode. Diese Methode wird aufgerufen, wenn von einem Konto Geld abgebucht wird und folgender Code enthalten ist:  
   
 ```csharp  
 // method under test  
@@ -124,35 +124,35 @@ public void Debit(double amount)
   
 ```  
   
-##  <a name="BKMK_Create_a_unit_test_project"></a> Create a unit test project  
- **Prerequisite**: Follow the steps in the procedure, [Prepare the walkthrough](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough).  
+##  <a name="BKMK_Create_a_unit_test_project"></a> Ein Komponententestprojekt erstellen  
+ **Voraussetzung**: Führen Sie die im Verfahren " [Prepare the walkthrough](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough)" angegebenen Schritte aus.  
   
-#### <a name="to-create-a-unit-test-project"></a>To create a unit test project  
+#### <a name="to-create-a-unit-test-project"></a>So erstellen Sie ein Komponententestprojekt  
   
-1.  On the **File** menu, choose **Add**, and then choose **New Project ...**.  
+1.  Wählen Sie im Menü **Datei** die Option **Hinzufügen**aus, und klicken Sie auf **Neues Projekt...**.  
   
-2.  In the New Project dialog box, expand **Installed**, expand **Visual C#**, and then choose **Test**.  
+2.  Erweitern Sie im Dialogfeld "Neues Projekt" die Option **Installiert**und dann die Option **Visual C#**, und wählen Sie dann **Test**aus.  
   
-3.  From the list of templates, select **Unit Test Project**.  
+3.  Wählen Sie in der Liste der Vorlagen **Komponententestprojekt**aus.  
   
-4.  In the **Name** box, enter BankTest, and then choose **OK**.  
+4.  Geben Sie in das Feld **Name** "BankTests" ein, und klicken Sie dann auf **OK**.  
   
-     The **BankTests** project is added to the the **Bank** solution.  
+     Das Projekt **BankTests** wird der Projektmappe **Bank** hinzugefügt.  
   
-5.  In the **BankTests** project, add a reference to the **Bank** solution.  
+5.  Fügen Sie im Projekt **BankTests** einen Verweis auf die Projektmappe **Bank** ein.  
   
-     In Solution Explorer, select **References** in the **BankTests** project and then choose **Add Reference...** from the context menu.  
+     Wählen Sie im Projektmappen-Explorer im Projekt **BankTests** die Option **Verweise** aus, und klicken Sie dann im Kontextmenü auf **Verweis hinzufügen** .  
   
-6.  In the Reference Manager dialog box, expand **Solution** and then check the **Bank** item.  
+6.  Erweitern Sie im Dialogfeld "Verweis-Manager" den Eintrag **Projektmappe** , und überprüfen Sie das Element **Bank** .  
   
-##  <a name="BKMK_Create_the_test_class"></a> Create the test class  
- We need a test class for verifying the `BankAccount` class. We can use the UnitTest1.cs that was generated by the project template, but we should give the file and class more descriptive names. We can do that in one step by renaming the file in Solution Explorer.  
+##  <a name="BKMK_Create_the_test_class"></a> Die Testklasse erstellen  
+ Zum Überprüfen der `BankAccount` -Klasse wird eine Testklasse benötigt. Sie können UnitTest1.cs verwenden, die von der Projektvorlage generiert wurde, doch Datei und Klasse sollten einen aussagekräftigeren Namen erhalten. Sie können das in einem Schritt erledigen, indem Sie die Datei im Projektmappen-Explorer umbenennen.  
   
- **Renaming a class file**  
+ **Umbenennen einer Klassendatei**  
   
- In Solution Explorer, select the UnitTest1.cs file in the BankTests project. From the context menu, choose **Rename**, and then rename the file to BankAccountTests.cs. Choose **Yes** on the dialog that asks if you want to rename all references in the project to the code element 'UnitTest1'. This step changes the name of the class to `BankAccountTest`.  
+ Wählen Sie im Projektmappen-Explorer im BankTests-Projekt die Datei UnitTest1.cs aus. Wählen Sie im Kontextmenü die Option **Umbenennen**aus, und benennen Sie dann die Datei in BankAccountTests.cs um. Wenn Sie gefragt werden, ob Sie alle im Projekt enthaltenen Verweise in das Codeelement UnitTest1 umbenennen möchten, wählen Sie **Ja** aus. Dadurch wird der Name der Klasse in `BankAccountTest`geändert.  
   
- The BankAccountTests.cs file now contains the following code:  
+ Die Datei BankAccountTests.cs enthält nun den folgenden Code:  
   
 ```csharp  
 // unit test code  
@@ -172,41 +172,41 @@ namespace BankTests
 }  
 ```  
   
- **Add a using statement to the project under test**  
+ **Hinzufügen einer Using-Anweisung zum zu testenden Projekt**  
   
- We can also add a using statement to the class to let us to call into the project under test without using fully qualified names. At the top of the class file, add:  
+ Auch der Klasse kann eine Using-Anweisung hinzugefügt werden, um ohne vollqualifizierte Namen das zu testende Projekt aufrufen zu können. Fügen Sie am Anfang der Klassendatei Folgendes hinzu:  
   
 ```csharp  
 using BankAccountNS;  
 ```  
   
-###  <a name="BKMK_Test_class_requirements"></a> Test class requirements  
- The minimum requirements for a test class are the following:  
+###  <a name="BKMK_Test_class_requirements"></a> Testklassenanforderungen  
+ Die Mindestanforderungen für eine Testklasse sind die folgenden:  
   
--   The `[TestClass]` attribute is required in the Microsoft unit testing framework for managed code for any class that contains unit test methods that you want to run in Test Explorer.  
+-   Im Microsoft-Komponententest-Framework für verwalteten Code ist das `[TestClass]` -Attribut für jede Klasse erforderlich, die in Test-Explorer auszuführende Komponententestmethoden enthält.  
   
--   Each test method that you want Test Explorer to run must have the `[TestMethod]`attribute.  
+-   Jede Testmethode, die von Test-Explorer ausgeführt werden soll, muss über das `[TestMethod]`-Attribut verfügen.  
   
- You can have other classes in a unit test project that do not have the `[TestClass]` attribute, and you can have other methods in test classes that do not have the `[TestMethod]` attribute. You can use these other classes and methods in your test methods.  
+ Ein Komponententestprojekt kann auch über andere Klassen ohne das `[TestClass]` -Attribut verfügen, und Testklassen können andere Methoden ohne das `[TestMethod]` -Attribut aufweisen. Sie können diese anderen Klassen und Methoden in den Testmethoden verwenden.  
   
-##  <a name="BKMK_Create_the_first_test_method"></a> Create the first test method  
- In this procedure, we will write unit test methods to verify the behavior of the `Debit` method of the `BankAccount` class. The method is listed above.  
+##  <a name="BKMK_Create_the_first_test_method"></a> Die erste Testmethode erstellen  
+ In dieser Vorgehensweise schreiben Sie Komponententestmethoden, um das Verhalten der `Debit` -Methode der `BankAccount` -Klasse zu überprüfen. Die Methode ist weiter oben aufgeführt.  
   
- By analyzing the method under test, we determine that there are at least three behaviors that need to be checked:  
+ Anhand der Analyse der zu testenden Methode bestimmen Sie, dass mindestens drei Verhaltensweisen überprüft werden müssen:  
   
-1.  The method throws an <xref:System.ArgumentOutOfRangeException> if the debit amount is greater than the balance.  
+1.  Die Methode löst eine <xref:System.ArgumentOutOfRangeException> aus, wenn der Abbuchungsbetrag größer ist als das Guthaben.  
   
-2.  It also throws `ArgumentOutOfRangeException` if the debit amount is less than zero.  
+2.  Außerdem löst sie eine `ArgumentOutOfRangeException` aus, wenn der Abbuchungsbetrag kleiner als null ist.  
   
-3.  If the checks in 1.) and 2.) are satisfied, the method subtracts the amount from the account balance.  
+3.  Wenn die Überprüfungen unter 1. und 2. zufriedenstellend sind, zieht die Methode den Betrag vom Kontoguthaben ab.  
   
- In our first test, we verify that a valid amount (one that is less than the account balance and that is greater than zero) withdraws the correct amount from the account.  
+ Im ersten Test überprüfen Sie, ob durch einen gültigen Betrag (kleiner als das Kontoguthaben und größer als null) der richtige Betrag vom Konto abgebucht wird.  
   
-#### <a name="to-create-a-test-method"></a>To create a test method  
+#### <a name="to-create-a-test-method"></a>So erstellen Sie eine Testmethode  
   
-1.  Add a using `BankAccountNS;` statement to the BankAccountTests.cs file.  
+1.  Fügen Sie der Datei BankAccountTests.cs eine `BankAccountNS;` -Using-Anweisung hinzu.  
   
-2.  Add the following method to that `BankAccountTests` class:  
+2.  Fügen Sie dieser `BankAccountTests` -Klasse die folgende Methode hinzu.  
   
     ```csharp  
     // unit test code  
@@ -228,39 +228,39 @@ using BankAccountNS;
     }  
     ```  
   
- The method is rather simple. We set up a new `BankAccount` object with a beginning balance and then withdraw a valid amount. We use the Microsoft unit test framework for managed code <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> method to verify that the ending balance is what we expect.  
+ Die Methode ist recht einfach. Sie richten ein neues `BankAccount` -Objekt mit einem Startguthaben ein und buchen dann einen gültigen Betrag ab. Sie verwenden die <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> -Methode des Microsoft-Komponententest-Frameworks für verwalteten Code, um sicherzustellen, dass das Guthaben zum Schluss wie erwartet ausfällt.  
   
-###  <a name="BKMK_Test_method_requirements"></a> Test method requirements  
- A test method must meet the following requirements:  
+###  <a name="BKMK_Test_method_requirements"></a> Testmethodenanforderungen  
+ Eine Testmethode muss die folgenden Anforderungen erfüllen:  
   
--   The method must be decorated with the `[TestMethod]` attribute.  
+-   Die Methode muss mit dem `[TestMethod]` -Attribut ausgestattet sein.  
   
--   The method must return `void`.  
+-   Die Methode muss `void`zurückgeben.  
   
--   The method cannot have parameters.  
+-   Die Methode darf keine Parameter aufweisen.  
   
-##  <a name="BKMK_Build_and_run_the_test"></a> Build and run the test  
+##  <a name="BKMK_Build_and_run_the_test"></a> Den Test erstellen und ausführen  
   
-#### <a name="to-build-and-run-the-test"></a>To build and run the test  
+#### <a name="to-build-and-run-the-test"></a>So erstellen Sie den Test und führen ihn aus  
   
-1.  On the **Build** menu, choose **Build Solution**.  
+1.  Wählen Sie im Menü **Erstellen** die Option **Projektmappe erstellen**.  
   
-     If there are no errors, the UnitTestExplorer window appears with **Debit_WithValidAmount_UpdatesBalance** listed in the **Not Run Tests** group. If Test Explorer does not appear after a successful build, choose **Test** on the menu, then choose **Windows**, and then choose  **Test Explorer**.  
+     Wenn keine Fehler auftreten, wird das UnitTestExplorer-Fenster geöffnet, und in der Gruppe **Nicht ausgeführte Tests** wird **Debit_WithValidAmount_UpdatesBalance** aufgelistet. Wenn Test-Explorer nach einem erfolgreichen Build nicht angezeigt wird, wählen Sie im Menü **Testen** aus, wählen Sie **Fenster**aus, und wählen Sie dann  **Test-Explorer**aus.  
   
-2.  Choose **Run All** to run the test. As the test is running the status bar at the top of the window is animated. At the end of the test run, the bar turns green if all the test methods pass, or red if any of the tests fail.  
+2.  Wählen Sie **Alle ausführen** aus, um den Test auszuführen. Während der Test ausgeführt wird, gibt die Statusleiste am oberen Fensterrand den aktuellen Status an. Am Ende des Testlaufs wird die Leiste grün, wenn alle Tests erfolgreich sind, oder rot, sofern bei einem der Tests ein Fehler auftritt.  
   
-3.  In this case, the test does fail. The test method is moved to the **Failed Tests**. group. Select the method in Test Explorer to view the details at the bottom of the window.  
+3.  In diesem Fall schlägt der Test fehl. Die Testmethode wird in die Gruppe **Tests mit Fehlern** aufgelistet. Wählen Sie die Methode im Test-Explorer aus, um die Details unten im Fenster anzuzeigen.  
   
-##  <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Fix your code and rerun your tests  
- **Analyze the test results**  
+##  <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Den Code korrigieren und die Tests erneut ausführen  
+ **Analysieren der Testergebnisse**  
   
- The test result contains a message that describes the failure. For the `AreEquals` method, message displays you what was expected (the (**Expected\<*XXX*>**parameter) and what was actually received (the **Actual\<*YYY*>** parameter). We were expecting the balance to decline from the beginning balance, but instead it has increased by the amount of the withdrawal.  
+ Das Testergebnis enthält eine Meldung mit der Fehlerbeschreibung. Bei der `AreEquals`-Methode wird in der Meldung angezeigt, was erwartet wurde (Parameter **Expected\<*XXX*>**) und was tatsächlich gefunden wurde (Parameter **Actual\<*YYY*>**). Erwartet wurde, dass das neue Guthaben geringer ist als das Startguthaben. Stattdessen hat es sich um den Betrag der Abbuchung vergrößert.  
   
- A reexamination of the Debit code shows that the unit test has succeeded in finding a bug. The amount of the withdrawal is added to the account balance when it should be subtracted.  
+ Eine erneute Prüfung des Debit-Codes zeigt, dass der Komponententest einen Fehler gefunden hat. Der Abbuchungsbetrag wird dem Kontoguthaben hinzugerechnet, anstatt davon abgezogen zu werden.  
   
- **Correct the bug**  
+ **Korrigieren des Fehlers**  
   
- To correct the error, simply replace the line  
+ Um den Fehler zu beheben, ersetzen Sie die Zeile  
   
 ```csharp  
 m_balance += amount;  
@@ -272,24 +272,24 @@ m_balance += amount;
 m_balance -= amount;  
 ```  
   
- **Rerun the test**  
+ **Erneutes Ausführen des Tests**  
   
- In Test Explorer, choose **Run All** to rerun the test. The red/green bar turns green, and the test is moved to the **Passed Tests** group.  
+ Wählen Sie im Test-Explorer **Alle ausführen** aus, um den Test erneut auszuführen. Die Statusleiste wird grün, und der Test wird in die Gruppe **Bestandene Tests** verschoben.  
   
-##  <a name="BKMK_Use_unit_tests_to_improve_your_code"></a> Use unit tests to improve your code  
- This section describes how an iterative process of analysis, unit test development, and refactoring can help you make your production code more robust and effective.  
+##  <a name="BKMK_Use_unit_tests_to_improve_your_code"></a> Den Code mit Komponententests verbessern  
+ In diesem Abschnitt wird beschrieben, wie ein iterativer Prozess bestehend aus Analyse, Komponententestentwicklung und Umgestaltung helfen kann, die Robustheit und Effektivität des Produktionscodes zu verbessern.  
   
- **Analyze the issues**  
+ **Analysieren der Probleme**  
   
- After creating a test method to confirm that a valid amount is correctly deducted in the `Debit` method, we can turn to remaining cases in our original analysis:  
+ Nachdem Sie eine Testmethode erstellt haben, um zu bestätigen, dass ein gültiger Betrag ordnungsgemäß mit der `Debit` -Methode abgezogen wird, können Sie sich nun den verbleibenden Fällen in der ursprünglichen Analyse widmen:  
   
-1.  The method throws an `ArgumentOutOfRangeException` if the debit amount is greater than the balance.  
+1.  Die Methode löst eine `ArgumentOutOfRangeException` aus, wenn der Abbuchungsbetrag größer ist als das Guthaben.  
   
-2.  It also throws `ArgumentOutOfRangeException` if the debit amount is less than zero.  
+2.  Außerdem löst sie eine `ArgumentOutOfRangeException` aus, wenn der Abbuchungsbetrag kleiner als null ist.  
   
- **Create the test methods**  
+ **Erstellen der Testmethoden**  
   
- A first attempt at creating a test method to address these issues seems promising:  
+ Ein erster Versuch zum Erstellen einer Testmethode, um diese Probleme zu beheben, scheint vielversprechend:  
   
 ```csharp  
 //unit test method  
@@ -310,33 +310,33 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
   
 ```  
   
- We use the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> attribute to assert that the right exception has been thrown. The attribute causes the test to fail unless an `ArgumentOutOfRangeException` is thrown. Running the test with both positive and negative `debitAmount` values and then temporarily modifying the method under test to throw a generic <xref:System.ApplicationException> when the amount is less than zero demonstrates that test behaves correctly. To test the case when the amount withdrawn is greater than the balance, all we need to do is:  
+ Sie verwenden das <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> -Attribut, um zu bestätigen, dass die richtige Ausnahme ausgelöst wurde. Das Attribut führt zu einem Fehlschlag des Tests, es sei denn, eine `ArgumentOutOfRangeException` wird ausgelöst. Indem Sie den Test mit positiven und negativen `debitAmount` -Werten ausführen und anschließend die zu testende Methode vorübergehend so ändern, dass eine generische <xref:System.ApplicationException> ausgegeben wird, wenn der Betrag kleiner als null ist, können Sie veranschaulichen, dass der Test ordnungsgemäß funktioniert. Gehen Sie folgendermaßen vor, um das Verhalten zu testen, wenn der abzubuchende Betrag größer ist als das Guthaben:  
   
-1.  Create a new test method named `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange`.  
+1.  Erstellen Sie eine neue Testmethode mit dem Namen `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange`.  
   
-2.  Copy the method body from `Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange` to the new method.  
+2.  Kopieren Sie den Methodentext aus `Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange` in die neue Methode.  
   
-3.  Set the `debitAmount` to a number greater than the balance.  
+3.  Legen Sie `debitAmount` auf eine Zahl größer als das Guthaben fest.  
   
- **Run the tests**  
+ **Tests ausführen**  
   
- Running the two methods with different values for `debitAmount` demonstrates that the tests adequately handle our remaining cases. Running all three tests confirm that all cases in our original analysis are correctly covered.  
+ Indem Sie die beiden Methoden mit verschiedenen Werten für `debitAmount` ausführen, wird veranschaulicht, dass die Tests die verbleibenden Fälle angemessen behandeln. Durch Ausführung aller drei Tests bestätigen Sie, dass alle Fälle aus der ursprünglichen Analyse ordnungsgemäß abgedeckt werden.  
   
- **Continue the analysis**  
+ **Fortführen der Analyse**  
   
- However, the last two test methods are also somewhat troubling. We cannot be certain which condition in the code under test throws when either test runs. Some way of differentiating the two conditions would be helpful. As we think about the problem more, it becomes apparent that knowing which condition was violated would increase our confidence in the tests. This information would also very likely be helpful to the production mechanism that handles the exception when it is thrown by the method under test. Generating more information when the method throws would assist all concerned, but the `ExpectedException` attribute cannot supply this information..  
+ Die letzten beiden Testmethoden sind jedoch auch etwas beunruhigend. Sie können nicht sicher, welche Bedingung im getesteten Code ausgegeben wird, wenn einer der Tests ausgeführt wird. Daher wäre es hilfreich, die beiden Bedingungen auseinanderhalten zu können. Wenn Sie das Problem noch einmal genau durchgehen, werden Sie feststellen, dass das Vertrauen in die Tests erhöht wäre, wenn Sie wüssten, welche Bedingung missachtet wurde. Diese Information wäre sehr wahrscheinlich auch für den Produktionsmechanismus hilfreich, der die Ausnahme behandelt, wenn sie durch die zu testende Methode ausgelöst wird. Die angesprochenen Unsicherheiten könnten behoben werden, wenn beim Auslösen der Methode mehr Informationen generiert würden. Das `ExpectedException` -Attribut kann diese Informationen jedoch nicht bereitstellen.  
   
- Looking at the method under test again, we see both conditional statements use an `ArgumentOutOfRangeException` constructor that takes name of the argument as a parameter:  
+ Sehen Sie sich die zu testende Methode noch einmal an. Beide Bedingungsanweisungen verwenden einen `ArgumentOutOfRangeException` -Konstruktor, der den Namen des Arguments als Parameter übernimmt:  
   
 ```csharp  
 throw new ArgumentOutOfRangeException("amount");  
 ```  
   
- From a search of the MSDN Library, we discover that a constructor exists that reports far richer information. <xref:System.ArgumentOutOfRangeException.%23ctor%2A>`(String, Object, String)` includes the name of the argument, the argument value, and a user-defined message. We can refactor the method under test to use this constructor. Even better, we can use publicly available type members to specify the errors.  
+ Über eine Suche in der MSDN Library finden Sie einen Konstruktor, der wesentlich ausführlichere Informationen in die Berichte schreibt. <xref:System.ArgumentOutOfRangeException.%23ctor%2A>`(String, Object, String)` enthält den Namen des Arguments, den Argumentwert und eine benutzerdefinierte Meldung. Sie können die zu testende Methode so umgestalten, dass sie diesen Konstruktor verwendet. Besser noch, Sie können öffentlich verfügbare Typmitglieder verwenden, um die Fehler anzugeben.  
   
- **Refactor the code under test**  
+ **Umgestalten des zu testenden Codes**  
   
- We first define two constants for the error messages at class scope:  
+ Zunächst definieren Sie zwei Konstanten für die Fehlermeldungen im Klassengültigkeitsbereich:  
   
 ```csharp  
 // class under test  
@@ -344,7 +344,7 @@ public const string DebitAmountExceedsBalanceMessage = "Debit amount exceeds bal
 public const string DebitAmountLessThanZeroMessage = "Debit amount less than zero";  
 ```  
   
- We then modify the two conditional statements in the `Debit` method:  
+ Dann ändern Sie die beiden Bedingungsanweisungen in der `Debit` -Methode:  
   
 ```csharp  
 // method under test  
@@ -361,17 +361,17 @@ public const string DebitAmountLessThanZeroMessage = "Debit amount less than zer
 // ...  
 ```  
   
- **Refactor the test methods**  
+ **Umgestalten der Testmethoden**  
   
- In our test method, we first remove the `ExpectedException` attribute. In its place, we catch the thrown exception and verify that it was thrown in the correct condition statement. However, we must now decide between two options to verify our remaining conditions. For example in the `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` method, we can take one of the following actions:  
+ Entfernen Sie zunächst aus der Testmethode das `ExpectedException` -Attribut. An dessen Stelle erfassen Sie die ausgelöste Ausnahme, und überprüfen Sie, dass sie in der richtigen Bedingungsanweisung ausgelöst wurde. Allerdings müssen Sie sich jetzt zwischen zwei Optionen entscheiden, um die restlichen Bedingungen zu überprüfen. In der `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` -Methode können Sie beispielsweise eine der folgenden Aktionen ausführen:  
   
--   Assert that the `ActualValue` property of the exception (the second parameter of the `ArgumentOutOfRangeException` constructor) is greater than the beginning balance. This option requires that we test the `ActualValue` property of the exception against the `beginningBalance` variable of the test method, and also requires then verify that the `ActualValue` is greater than zero.  
+-   Bestätigen Sie, dass die `ActualValue` -Eigenschaft der Ausnahme (der zweite Parameter des Konstruktors `ArgumentOutOfRangeException` ) größer als das Startguthaben ist. Diese Option erfordert, dass Sie die `ActualValue` -Eigenschaft der Ausnahme gegen die `beginningBalance` -Variable der Testmethode testen und dann überprüfen, dass `ActualValue` größer als null ist.  
   
--   Assert that the message (the third parameter of the constructor) includes the `DebitAmountExceedsBalanceMessage` defined in the `BankAccount` class.  
+-   Bestätigen Sie, dass die Meldung (der dritte Parameter des Konstruktors) die `DebitAmountExceedsBalanceMessage` umfasst, die in der `BankAccount` -Klasse definiert ist.  
   
- The <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> method in the Microsoft unit test framework enables us to verify the second option without the calculations that are required of the first option.  
+ Die <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> -Methode im Microsoft-Komponententest-Framework ermöglicht es, die zweite Option ohne die Berechnungen zu überprüfen, die bei der ersten Option erforderlich sind.  
   
- A second attempt at revising `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` might look like:  
+ Ein zweiter Versuch des Überarbeitens von `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` kann folgendermaßen aussehen:  
   
 ```csharp  
 [TestMethod]  
@@ -395,19 +395,19 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 }  
 ```  
   
- **Retest, rewrite, and reanalyze**  
+ **Erneut testen, umschreiben und neu analysieren**  
   
- When we retest the test methods with different values, we encounter the following facts:  
+ Beim erneuten Testen der Testmethoden mit unterschiedlichen Werten stellen Sie Folgendes fest:  
   
-1.  If we catch the correct error by using an assert where `debitAmount` that is greater than the balance, the `Contains` assert passes, the exception is ignored, and so the test method passes. This is the behavior we want.  
+1.  Wenn Sie mithilfe einer Assertion, bei der `debitAmount` größer als das Guthaben ist, den richtigen Fehler gefunden haben, wird die `Contains` -Assertion übergeben, die Ausnahme wird ignoriert, und dadurch ist die Testmethode erfolgreich. Dies ist das gewünschte Verhalten.  
   
-2.  If we use a `debitAmount` that is less than 0, the assert fails because the wrong error message is returned. The assert also fails if we introduce a temporary `ArgumentOutOfRange` exception at another point in the method under test code path. This too is good.  
+2.  Wenn Sie einen `debitAmount` kleiner als null verwenden, schlägt die Assertion fehl, da die falsche Fehlermeldung zurückgegeben wird. Die Assertion schlägt auch fehl, wenn Sie an einem anderen Punkt im Testcodepfad der zu testenden Methode eine temporäre `ArgumentOutOfRange` -Ausnahme einführen. Auch das ist gut.  
   
-3.  If the `debitAmount` value is valid (i.e., less than the balance but greater than zero, no exception is caught, so the assert is never caught. The test method passes. This is not good, because we want the test method to fail if no exception is thrown.  
+3.  Wenn der `debitAmount` -Wert gültig ist (d. h. kleiner als das Guthaben, jedoch größer als null), wird keine Ausnahme erfasst, sodass die Assertion nie erfasst wird. Die Testmethode ist erfolgreich. Dies ist nicht gut, da bei der Testmethode ein Fehler auftreten soll, wenn keine Ausnahme ausgelöst wird.  
   
- The third fact is a bug in our test method. To attempt to resolve the issue, we add a <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> assert at the end of the test method to handle the case where no exception is thrown.  
+ Bei der dritten Erkenntnis handelt es sich um einen Fehler in der Testmethode. Um zu versuchen das Problem zu beheben, fügen Sie eine <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> -Assertion am Ende der Testmethode hinzu, um den Fall abzudecken, in dem keine Ausnahme ausgelöst wird.  
   
- But retesting shows that the test now fails if the correct exception is caught. The catch statement resets the exception and the method continues to execute, failing at the new assert. To resolve the new problem, we add a `return` statement after the `StringAssert`. Retesting confirms that we have fixed our problems. Our final version of the `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` looks like the following:  
+ Ein erneuter Test zeigt jedoch, dass der Test jetzt fehlschlägt, wenn die richtige Ausnahme erfasst wird. Die Catch-Anweisung setzt die Ausnahme zurück, und die Methode wird weiter ausgeführt, bis sie an der neuen Assertion fehlschlägt. Um das neue Problem zu beheben, fügen Sie nach `return` eine `StringAssert`-Anweisung hinzu. Ein erneuter Test bestätigt, dass Sie alle Probleme gelöst haben. Die fertige Version von `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` sieht wie folgt aus:  
   
 ```csharp  
 [TestMethod]  
@@ -434,5 +434,5 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
   
 ```  
   
- In this final section, the work that we did improving our test code led to more robust and informative test methods. But more importantly, the extra analysis also led to better code in our project under test.
+ In diesem letzten Abschnitt hat die Verbesserung des Testcodes zu robusteren und informativeren Testmethoden geführt. Noch wichtiger ist jedoch, dass die zusätzliche Analyse auch zu besserem Code im zu testenden Projekt geführt hat.
 

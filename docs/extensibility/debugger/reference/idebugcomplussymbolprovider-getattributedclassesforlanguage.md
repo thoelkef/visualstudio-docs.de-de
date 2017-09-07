@@ -33,11 +33,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 0868998a43c48bc985c4801deddcf089c73f01bf
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesforlanguage"></a>IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
-Retrieves the classes with the specified attribute that are implemented in the specified programming language.  
+Ruft die Klassen mit dem angegebenen Attribut an, die in der angegebenen Programmiersprache implementiert werden.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -59,21 +59,21 @@ int GetAttributedClassesForLanguage (
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  `guidLanguage`  
- [in] Unique identifier for the language.  
+ [in] Eindeutiger Bezeichner für die Sprache.  
   
  `pstrAttribute`  
- [in] The attribute string.  
+ [in] Die Attributzeichenfolge.  
   
  `ppEnum`  
- [out] Returns an enumeration of the attribute classes.  
+ [out] Gibt eine Enumeration von Attributklassen zurück.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a **CDebugSymbolProvider** object that exposes the [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel veranschaulicht die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::GetAttributedClassesForLanguage(  
@@ -203,5 +203,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

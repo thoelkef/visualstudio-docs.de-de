@@ -34,11 +34,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 68a5f199f389cb5bc24f0e648bb4719c1ad79545
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugenumfieldgetvaluefromstringcaseinsensitive"></a>IDebugEnumField::GetValueFromStringCaseInsensitive
-This method uses a case-insensitive search to return the value associated with the name of an enumeration constant.  
+Diese Methode verwendet eine Suche Groß-/Kleinschreibung, um den zugeordneten Wert durch den Namen einer Enumerationskonstante zurückzugeben.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -56,19 +56,19 @@ int GetValueFromStringCaseInsensitive(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  `pszValue`  
- [in] A string specifying the name for which to get the value. Note that for C++, this is a wide character string.  
+ [in] Eine Zeichenfolge, die den Namen für das Abrufen des Werts angeben. Beachten Sie, dass für C++, dies ist eine Zeichenfolge mit Breitzeichen.  
   
  `pValue`  
- [out] Returns the associated numerical value.  
+ [out] Gibt den zugeordneten numerischen Wert zurück.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns `S_FALSE`, if the name is not part of the enumeration, or an error code.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE`, wenn der Name nicht Teil der Enumeration oder einen Fehlercode ist.  
   
-## <a name="remarks"></a>Remarks  
- This method is case-insensitive. If a case-sensitive search is needed (for example, in a language such as C++ where names are case-sensitive), use [GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md).  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode ist die Groß-/Kleinschreibung. Wenn die Groß-/ Kleinschreibung (z. B. in einer anderen Sprache wie C++, in denen Groß-und Kleinschreibung) erforderlich ist, verwenden [GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md).  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)   
  [GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md)

@@ -33,11 +33,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: e5b9964dee0580fe0fbab6d817c4dc2abf56dad4
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
-Enables the expression evaluator (EE) to specify the callback interface that the debugger engine (DE) will use to read metric settings.  
+Ermöglicht die ausdrucksauswertung (EE) an die Rückrufschnittstelle, mit der der Debugger-Modul (DE) metrikeinstellungen zu lesen.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -53,18 +53,18 @@ int SetCallback (
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  `pCallback`  
- [in] Interface to use for the settings callback.  
+ [in] Die Schnittstelle für den Rückruf Einstellungen verwenden.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Remarks  
- This method provides an interface to the session debug manager that an expression evaluator can use to read metric settings. It is useful in remote debugging to read metrics on the [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] computer.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode stellt eine Schnittstelle zu dem Sitzung Debug-Manager, mit denen eine ausdrucksauswertung metrikeinstellungen zu lesen. Es eignet sich für das Remotedebuggen zum Lesen von Metriken auf der [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Computer.  
   
-## <a name="example"></a>Example  
- The following examples shows how to implement this method for a **CEE** object that exposes the [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md) interface.  
+## <a name="example"></a>Beispiel  
+ In den folgenden Beispielen wird gezeigt, wie diese Methode zum Implementieren einer **CEE** -Objekt, das macht die [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md) Schnittstelle.  
   
 ```cpp  
 HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)  
@@ -91,5 +91,5 @@ HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

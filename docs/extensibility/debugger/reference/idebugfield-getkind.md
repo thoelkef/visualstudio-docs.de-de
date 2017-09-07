@@ -34,11 +34,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: a4d5f5f96ee4d2121ed4fa8f7fc6f4504a418575
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugfieldgetkind"></a>IDebugField::GetKind
-This method gets the kind of field.  
+Diese Methode ruft die Art des Felds ab.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -54,13 +54,13 @@ int GetKind(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  `pdwKind`  
- [out] Returns the kind of field as a combination of [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) constants.  
+ [out] Gibt die Art des Felds als eine Kombination von [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) Konstanten.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)

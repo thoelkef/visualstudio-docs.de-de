@@ -34,11 +34,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 9780a18ff72058a90739c421061fabd9ce8520e1
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugobjectisequal"></a>IDebugObject::IsEqual
-Compares an object with this object.  
+Vergleicht ein Objekt mit diesem Objekt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -56,18 +56,18 @@ int IsEqual(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  `pObject`  
- [in] An [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) object representing the object to compare to.  
+ [in] Ein [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) Objekt, das zu vergleichende Objekt darstellt.  
   
  `pfIsEqual`  
- [out] Returns non-zero (`TRUE`) if the values of the objects are equal; otherwise, returns zero (`FALSE`).  
+ [out] Ungleich 0 (null) zurückgibt (`TRUE`) gibt 0 zurück, wenn die Werte der Objekte gleich; andernfalls sind, (`FALSE`).  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns S_OK; otherwise, returns an error code.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Remarks  
- Typically, this method can compare the addresses of the values represented by the `pObject` parameter and this [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) object; if the addresses are equal, then the objects can be considered equal.  
+## <a name="remarks"></a>Hinweise  
+ In der Regel kann diese Methode die Adressen der Werte, dargestellt durch Vergleichen der `pObject` -Parameter und diese [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) Objekt; Wenn die Adressen gleich sind, und klicken Sie dann die Objekte als gleich betrachtet werden können.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

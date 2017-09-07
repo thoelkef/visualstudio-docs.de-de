@@ -34,11 +34,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: f84c744eef8dab863ec9a91aec621764dfa3c266
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
-Retrieves the string associated with this property and stores it in a user-supplied buffer.  
+Ruft die Zeichenfolge, die diese Eigenschaft zugeordnet, und speichert ihn in einem vom Benutzer bereitgestellte Puffer.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -58,28 +58,28 @@ int GetStringChars(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  `buflen`  
- [in] Maximum number of characters the user-supplied buffer can hold.  
+ [in] Maximale Anzahl von Zeichen, die der Benutzer bereitgestellte Puffer aufnehmen kann.  
   
  `rgString`  
- [out] Returns the string.  
+ [out] Gibt die Zeichenfolge zurück.  
   
- [C++ only], `rgString` is a pointer to a buffer that receives the Unicode characters of the string. This buffer must be at least `buflen` characters (not bytes) in size.  
+ [Nur für C++], `rgString` ist ein Zeiger auf einen Puffer, die Unicode-Zeichen der Zeichenfolge empfängt. Dieser Puffer muss mindestens `buflen` (nicht Bytes) Zeichen lang sein.  
   
  `pceltFetched`  
- [out] Where the number of characters actually stored in the buffer is returned. (Can be `NULL` in C++.)  
+ [out] Die Anzahl der Zeichen, die tatsächlich im Puffer gespeichert, in denen zurückgegeben wird. (Kann `NULL` in C++.)  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise returns an error code.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`; andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Remarks  
- In C++, care must be taken to insure that the buffer is at least `buflen` Unicode characters long. Note that a Unicode character is 2 bytes long.  
+## <a name="remarks"></a>Hinweise  
+ In C++ muss darauf geachtet werden, stellen Sie sicher, dass der Puffer mindestens `buflen` Unicode-Zeichen lang sein. Beachten Sie, dass ein Unicode-Zeichen mit 2 Bytes lang ist.  
   
 > [!NOTE]
->  In C++, the returned string does not include a terminating null character. If given, `pceltFetched` will specify the number of characters in the string.  
+>  In C++ ist die zurückgegebene Zeichenfolge kein abschließendes Nullzeichen enthalten. Wenn angegeben, `pceltFetched` wird die Anzahl der Zeichen in der Zeichenfolge angeben.  
   
-## <a name="example"></a>Example  
+## <a name="example"></a>Beispiel  
  
 ```cpp  
 CStringW RetrievePropertyString(IDebugProperty2 *pPropInfo)  
@@ -102,7 +102,7 @@ CStringW RetrievePropertyString(IDebugProperty2 *pPropInfo)
 }
 ```    
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [GetStringCharLength](../../../extensibility/debugger/reference/idebugproperty3-getstringcharlength.md)   
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

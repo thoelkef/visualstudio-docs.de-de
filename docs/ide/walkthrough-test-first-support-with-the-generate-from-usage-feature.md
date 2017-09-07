@@ -1,5 +1,5 @@
 ---
-title: 'Walkthrough: Test-First Support with the Generate From Usage Feature | Microsoft Docs'
+title: "Exemplarische Vorgehensweise: Test-First-Unterstützung mit der Funktion „Generate From Usage“ | Microsoft-Dokumentation"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -35,170 +35,170 @@ ms.translationtype: HT
 ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
 ms.openlocfilehash: 0b7928304417df3a5b5a067720c91aedd46a457f
 ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>Walkthrough: Test-First Support with the Generate From Usage Feature
-This topic demonstrates how to use the [Generate From Usage](../ide/visual-csharp-intellisense.md#generate-from-usage) feature, which supports test-first development.  
+# <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>Exemplarische Vorgehensweise: Test-First-Unterstützung mit der Funktion „Generate From Usage“
+In diesem Thema wird die Verwendung der [Generate From Usage](../ide/visual-csharp-intellisense.md#generate-from-usage)-Funktion veranschaulicht, die die Test-First-Entwicklung unterstützt.  
   
- *Test-first development* is an approach to software design in which you first write unit tests based on product specifications, and then write the source code that is required to make the tests succeed. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] supports test-first development by generating new types and members in the source code when you first reference them in your test cases, before they are defined.  
+ Die*testgetriebene Entwicklung* ist eine Methode des Softwareentwurfs, bei der zuerst Unittests basierend auf Produktspezifikationen und dann der Quellcode geschrieben wird, der erforderlich ist, damit die Tests erfolgreich ausgeführt werden. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] unterstützt die testgetriebene Entwicklung, indem neue Typen und Member im Quellcode generiert werden, sowie Sie sie in Ihren Testfällen auf diese verweisen, noch bevor sie definiert werden.  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] generates the new types and members with minimal interruption to your workflow. You can create stubs for types, methods, properties, fields, or constructors without leaving your current location in code. When you open a dialog box to specify options for type generation, the focus returns immediately to the current open file when the dialog box closes.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] generiert die neuen Typen und Member mit nur minimaler Unterbrechung des Workflows. Sie können Stubs für Typen, Methoden, Eigenschaften, Felder oder Konstruktoren erstellen, ohne die aktuelle Position im Code zu verlassen. Wenn Sie ein Dialogfeld zum Angeben von Optionen für die Typgenerierung öffnen, kehrt der Fokus sofort zur aktuell geöffneten Datei zurück, wenn das Dialogfeld geschlossen wird.  
   
- The Generate From Usage feature can be used with test frameworks that integrate with [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. In this topic, the Microsoft Unit Testing Framework is demonstrated.  
+ Die Funktion "Aus Verwendung generieren" kann mit Testframeworks verwendet werden, die in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]integriert werden können. In diesem Thema wird das Microsoft-Unittestframework veranschaulicht.  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-### <a name="to-create-a-windows-class-library-project-and-a-test-project"></a>To create a Windows Class Library project and a Test project  
+### <a name="to-create-a-windows-class-library-project-and-a-test-project"></a>So erstellen Sie ein Projekt für eine Windows-Klassenbibliothek und ein Testprojekt  
   
-1.  In [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] or [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], create a new Windows Class Library project. Name it `GFUDemo_VB` or `GFUDemo_CS`, depending on which language you are using.  
+1.  Erstellen Sie in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] oder [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]ein neues Projekt für eine Windows-Klassenbibliothek. Nennen Sie es `GFUDemo_VB` oder `GFUDemo_CS`, je nachdem, welche Sprache Sie verwenden.  
   
-2.  In **Solution Explorer**, right-click the solution icon at the top, point to **Add**, and then click **New Project**. In the **New Project** dialog box, in the **Project Types** pane on the left, click **Test**.  
+2.  Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste oben auf das Projektmappen-Symbol, zeigen Sie auf **Hinzufügen**, und klicken Sie dann auf **Neues Projekt**. Klicken Sie im Dialogfeld **Neues Projekt** links im Bereich **Projekttypen** auf **Test**.  
   
-3.  In the **Templates** pane, click **Unit Test Project** and accept the default name of UnitTestProject1. The following illustration shows the dialog box when it appears in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. In [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], the dialog box looks similar.  
+3.  Klicken Sie im Bereich **Vorlagen** auf **Unittestprojekt** , und übernehmen Sie den Standardnamen "UnitTestProject1". Die folgende Abbildung zeigt das Dialogfeld, wenn es in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]geöffnet wird. In [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] sieht das Dialogfeld ähnlich aus.  
   
-     ![New Test Project dialog](../ide/media/newproject_test.png "NewProject_Test")  
-New Project dialog box  
+     ![Dialogfeld „Neues Testprojekt“](../ide/media/newproject_test.png "NewProject_Test")  
+Dialogfeld "Neues Projekt"  
   
-4.  Click **OK** to close the **New Project** dialog box.
+4.  Klicken Sie auf **OK** , um das Dialogfeld **Neues Projekt** zu schließen.
 
-5.  In your class project, in **Solution Explorer**, right-click the **References** entry and click **Add Reference**.
+5.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Eintrag **Verweise**, und klicken Sie dann auf **Verweis hinzufügen**.
 
-6.  In the **Reference Manager** dialog box, select **Projects** and then select your unit test project.
+6.  Wählen Sie im Dialogfeld **Verweis-Manager** die Option **Projekte** und dann das Komponententestprojekt aus.
 
-7.  Click **OK** to close the **Reference Manager** dialog box.
+7.  Klicken Sie auf **OK**, um das Dialogfeld **Verweis-Manager** zu schließen.
 
-8.  In the **Class1** file, immediately after the last of the existing **using** statements, add a **using** statement for the test project:
+8.  Fügen Sie in der Datei **Class1** direkt nach der letzten vorhandenen **using**-Anweisung eine **using**-Anweisung für das Testprojekt ein:
 
-    * In Visual Basic, add `Using UnitTestProject1`
+    * In Visual Basic fügen Sie `Using UnitTestProject1` hinzu.
     
-    * In C#, add `using UnitTestProject1;`
+    * In C# fügen Sie `using UnitTestProject1;` hinzu.
     
-9.  Save your solution. You are now ready to begin writing tests.  
+9.  Speichern Sie die Projektmappe. Sie können nun mit dem Schreiben von Tests beginnen.  
   
-### <a name="to-generate-a-new-class-from-a-unit-test"></a>To generate a new class from a unit test  
+### <a name="to-generate-a-new-class-from-a-unit-test"></a>So generieren Sie aus einem Unittest eine neue Klasse  
   
-1.  The test project contains a file that is named UnitTest1. Double-click this file in **Solution Explorer** to open it in the Code Editor. A test class and test method have been generated.  
+1.  Das Testprojekt enthält eine Datei mit dem Namen "UnitTest1". Doppelklicken Sie auf diese Datei im **Projektmappen-Explorer** , um sie im Code-Editor zu öffnen. Eine Testklasse und eine Testmethode wurden generiert.  
   
-2.  Locate the declaration for class `UnitTest1` and rename it to `AutomobileTest`. In C#, if a `UnitTest1()` constructor is present, rename it to `AutomobileTest()`.  
+2.  Suchen Sie die Deklaration für die Klasse `UnitTest1` , und benennen Sie sie um in `AutomobileTest`. Benennen Sie sie in C# bei Vorhandensein eines `UnitTest1()` -Konstruktors um in `AutomobileTest()`.  
   
     > [!NOTE]
-    >  IntelliSense now provides two alternatives for IntelliSense statement completion: *completion mode* and *suggestion mode*. Use suggestion mode for situations in which classes and members are used before they are defined. When an IntelliSense window is open, you can press CTRL+ALT+SPACEBAR to toggle between completion mode and suggestion mode. See [Using IntelliSense](../ide/using-intellisense.md) for more information. Suggestion mode will help when you are typing `Automobile` in the next step.  
+    >  IntelliSense bietet jetzt zwei Alternativen für die IntelliSense-Anweisungsvervollständigung: *Beendigungsmodus* und *Vorschlagsmodus*. Verwenden Sie den Vorschlagsmodus für Situationen, in denen Klassen und Member verwendet werden, bevor sie definiert werden. Um bei geöffnetem IntelliSense-Fenster zwischen Beendigungsmodus und Vorschlagsmodus zu wechseln, drücken Sie STRG+ALT+LEERTASTE. Weitere Informationen finden Sie unter [Using IntelliSense](../ide/using-intellisense.md) . Der Vorschlagsmodus ist hilfreich, wenn Sie im nächsten Schritt `Automobile` eingeben.  
   
-3.  Locate the `TestMethod1()` method and rename it to `DefaultAutomobileIsInitializedCorrectly()`. Inside this method, create a new instance of a class named `Automobile`, as shown in the following illustrations. A wavy underline appears, which indicates a compile-time error, and a smart tag appears under the type name. The exact location of the smart tag varies, depending on whether you are using [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] or [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
+3.  Suchen Sie die `TestMethod1()` -Methode, und benennen Sie sie um in `DefaultAutomobileIsInitializedCorrectly()`. Erstellen Sie innerhalb dieser Methode eine neue Instanz einer Klasse namens `Automobile`, wie in den folgenden Abbildungen dargestellt. Eine wellenförmige Unterstreichung wird angezeigt, die auf einen Fehler während der Kompilierung hinweist, und unter dem Typnamen wird ein Smarttag angezeigt. Die genaue Position des Smarttags variiert abhängig davon, ob Sie [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] oder [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] verwenden.  
   
-     ![Smart Tag Underline in Visual Basic](../ide/media/genclass_underlinevb.png "GenClass_UnderlineVB")  
+     ![Smarttag „Unterstreichen“ in Visual Basic](../ide/media/genclass_underlinevb.png "GenClass_UnderlineVB")  
 Visual Basic  
   
-     ![Smart Tag Underline in  C&#35;](../ide/media/genclass_underline.png "GenClass_Underline")  
-Visual C#  
+     ![Smarttag „Unterstreichen“ in C&#35;](../ide/media/genclass_underline.png "GenClass_Underline")  
+Visual C#  
   
-4.  Rest the mouse pointer over the smart tag to see an error message that states that no type named `Automobile` is defined yet. Click the smart tag or press CTRL+. (CTRL+period) to open the Generate From Usage shortcut menu, as shown in the following illustrations.  
+4.  Halten Sie den Mauszeiger auf dem Smarttag, um eine Fehlermeldung anzuzeigen, die besagt, dass noch kein Typ mit dem Namen `Automobile` definiert wurde. Klicken Sie auf das Smarttag, oder drücken Sie STRG+. (STRG+Punkt), um das Kontextmenü "Aus Verwendung generieren" zu öffnen, wie in den folgenden Abbildungen dargestellt.  
   
-     ![Smart Tag Context Menu in Visual Basic](../ide/media/genclass_smartvb.png "GenClass_SmartVB")  
+     ![Kontextmenü „Smarttag“ in Visual Basic](../ide/media/genclass_smartvb.png "GenClass_SmartVB")  
 Visual Basic  
   
-     ![Smart Tag Context Menu in C&#35;](../ide/media/genclass_smartcs.png "GenClass_SmartCS")  
-Visual C#  
+     ![Kontextmenü „Smarttag“ in C&#35;](../ide/media/genclass_smartcs.png "GenClass_SmartCS")  
+Visual C#  
   
-5.  Now you have two choices. You could click **Generate 'Class Automobile'** to create a new file in your test project and populate it with an empty class named `Automobile`. This is a quick way to create a new class in a new file that has default access modifiers in the current project. You can also click **Generate new type** to open the **Generate New Type** dialog box. This provides options that include putting the class in an existing file and adding the file to another project.  
+5.  Sie haben nun zwei Möglichkeiten: Sie können auf **“Class Automobile“ generieren** klicken, um eine neue Datei im Testprojekt zu erstellen und diese mit einer leeren Klasse mit dem Namen `Automobile`aufzufüllen. Dies ist eine schnelle Möglichkeit, um eine neue Klasse in einer neuen Datei mit standardmäßigen Zugriffsmodifizierern im aktuellen Projekt zu erstellen. Sie können auch auf **Neuen Typ generieren** klicken, um das Dialogfeld **Neuen Typ generieren** zu öffnen. Dies bietet Optionen wie das Platzieren der Klasse in einer vorhandenen Datei und das Hinzufügen der Datei zu einem anderen Projekt.  
   
-     Click **Generate new type** to open the **Generate New Type** dialog box, which is shown in the following illustration. In the **Project** list, click **GFUDemo_VB** or **GFUDemo_CS** to instruct [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] to add the file to the source code project instead of the test project.  
+     Klicken Sie auf **Neuen Typ generieren** , um das Dialogfeld **Neuen Typ generieren** zu öffnen, das in der folgenden Abbildung dargestellt ist. Klicken Sie in der Liste **Projekt** auf **GFUDemo_VB** oder **GFUDemo_CS** , um [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] anzuweisen, die Datei statt dem Testprojekt dem Quellcodeprojekt hinzuzufügen.  
   
-     ![Generate New Type dialog box](../ide/media/genotherdialog.png "GenOtherDialog")  
-Generate New Type dialog box  
+     ![Dialogfeld „Neuen Typ generieren“](../ide/media/genotherdialog.png "GenOtherDialog")  
+Dialogfeld "Neuen Typ generieren"  
   
-6.  Click **OK** to close the dialog box and create the new file.  
+6.  Klicken Sie auf **OK** , um das Dialogfeld zu schließen und die neue Datei zu erstellen.  
   
-7.  In **Solution Explorer**, look under the GFUDemo_VB or GFUDemo_CS project node to verify that the new Automobile.vb or Automobile.cs file is there. In the Code Editor, the focus is still in `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`. You can continue to write your test with a minimum of interruption.  
+7.  Überprüfen Sie im **Projektmappen-Explorer**unter dem Projektknoten "GFUDemo_VB" oder "GFUDemo_CS", ob die neue Datei "Automobile.vb" oder "Automobile.cs" vorhanden ist. Im Code-Editor befindet sich der Fokus nach wie vor in `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`. Sie können mit dem Schreiben des Tests bei minimaler Unterbrechung fortfahren.  
   
-### <a name="to-generate-a-property-stub"></a>To generate a property stub  
+### <a name="to-generate-a-property-stub"></a>So generieren Sie einen Eigenschaftsstub  
   
-1.  Assume that the product specification states that the `Automobile` class has two public properties named `Model` and `TopSpeed`. These properties must be initialized with default values of `"Not specified"` and `-1` by the default constructor. The following unit test will verify that the default constructor sets the properties to their correct default values.  
+1.  Angenommen, die Produktspezifikation gibt an, dass die `Automobile` -Klasse über zwei öffentliche Eigenschaften namens `Model` und `TopSpeed`verfügt. Diese Eigenschaften müssen mit den Standardwerten von `"Not specified"` und `-1` durch den Standardkonstruktor initialisiert werden. Im folgenden Unittest wird überprüft, ob der Standardkonstruktor die Eigenschaften auf ihre richtigen Standardwerte festlegt.  
   
-     Add the following line of code to `DefaultAutomobileIsInitializedCorrectly`.  
+     Fügen Sie `DefaultAutomobileIsInitializedCorrectly`folgende Codezeile hinzu.  
   
      [!code-csharp[VbTDDWalkthrough#1](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.cs)]  [!code-vb[VbTDDWalkthrough#1](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.vb)]  
   
-     Because the code references two undefined properties on `Automobile`, a smart tag appears. Click the smart tag for `Model` and then click **Generate property stub**. Generate a property stub for the `TopSpeed` property also.  
+     Da der Code auf zwei nicht definierte Eigenschaften in `Automobile`verweist, wird ein Smarttag angezeigt. Klicken Sie auf das Smarttag für `Model` , und klicken Sie dann auf **Eigenschaftsstub generieren**. Generieren Sie auch einen Eigenschaftsstub für die `TopSpeed` -Eigenschaft.  
   
-     In the `Automobile` class, the types of the new properties are correctly inferred from the context.  
+     In der `Automobile` -Klasse werden die Typen der neuen Eigenschaften ordnungsgemäß aus dem Kontext abgeleitet.  
   
-     The following illustration shows the smart tag shortcut menu.  
+     Die folgende Abbildung zeigt das Kontextmenü des Smarttags.  
   
-     ![Generate Property context menu in Visual Basic](../ide/media/genpropertysmarttagvb.png "GenPropertySmartTagVB")  
+     ![Kontextmenü „Eigenschaft generieren“ in Visual Basic](../ide/media/genpropertysmarttagvb.png "GenPropertySmartTagVB")  
 Visual Basic  
   
-     ![Generate Property context menu in C&#35;](../ide/media/genpropertysmarttagcs.png "GenPropertySmartTagCS")  
-Visual C#  
+     ![Kontextmenü „Eigenschaft generieren“ in C&#35;](../ide/media/genpropertysmarttagcs.png "GenPropertySmartTagCS")  
+Visual C#  
   
-### <a name="to-locate-the-source-code"></a>To locate the source code  
+### <a name="to-locate-the-source-code"></a>So finden Sie den Quellcode  
   
-1.  Use the **Navigate To** feature to navigate to the Automobile.cs or Automobile.vb source code file so that you can verify that the new properties have been generated.  
+1.  Verwenden Sie die Funktion **Navigieren zu** , um zur Quellcodedatei "Automobile.cs" oder "Automobile.vb" zu navigieren, damit Sie überprüfen können, ob die neuen Eigenschaften generiert wurden.  
   
-     The **Navigate To** feature enables you to quickly enter a text string, such as a type name or part of a name, and go to the desired location by clicking the element in the result list.  
+     Die Funktion **Navigieren zu** ermöglicht Ihnen, schnell eine Textzeichenfolge einzugeben, z. B. einen Typnamen oder einen Teil des Namens, und durch Klicken auf das Element in der Ergebnisliste zu der gewünschten Position zu wechseln.  
   
-     Open the **Navigate To** dialog box by clicking in the Code Editor and pressing CTRL+, (CTRL+comma). In the text box, type `automobile`. Click the **Automobile** class in the list, and then click **OK**.  
+     Öffnen Sie das Dialogfeld **Navigieren zu** , indem Sie im Code-Editor klicken und STRG+, (STRG+Komma) drücken. Geben Sie in das Textfeld `automobile`ein. Klicken Sie in der Liste auf die Klasse **Automobile** , und klicken Sie dann auf **OK**.  
   
-     The **Navigate To** window is shown in the following illustration.  
+     Das Fenster **Navigieren zu** wird in der folgenden Abbildung gezeigt.  
   
-     ![Navigate To dialog](../ide/media/navigate_2.png "Navigate_2")  
-Navigate To window  
+     ![Dialogfeld „Navigieren zu“](../ide/media/navigate_2.png "Navigate_2")  
+Fenster "Navigieren zu"  
   
-### <a name="to-generate-a-stub-for-a-new-constructor"></a>To generate a stub for a new constructor  
+### <a name="to-generate-a-stub-for-a-new-constructor"></a>So generieren Sie einen Stub für einen neuen Konstruktor  
   
-1.  In this test method, you will generate a constructor stub that will initialize the `Model` and `TopSpeed` properties to have values that you specify. Later, you will add more code to complete the test. Add the following additional test method to your `AutomobileTest` class.  
+1.  In dieser Testmethode generieren Sie einen Konstruktorstub, der die Eigenschaften `Model` und `TopSpeed` initialisiert, damit diese von Ihnen angegebene Werte aufweisen. Später fügen Sie weiteren Code hinzu, um den Test abzuschließen. Fügen Sie die folgende zusätzliche Testmethode zur `AutomobileTest` -Klasse hinzu.  
   
      [!code-csharp[VbTDDWalkthrough#2](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.cs)]  [!code-vb[VbTDDWalkthrough#2](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.vb)]  
   
-2.  Click the smart tag under the new class constructor and then click **Generate constructor stub**. In the `Automobile` class file, notice that the new constructor has examined the names of the local variables that are used in the constructor call, found properties that have the same names in the `Automobile` class, and supplied code in the constructor body to store the argument values in the `Model` and `TopSpeed` properties. (In [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], the `_model` and `_topSpeed` fields in the new constructor are the implicitly defined backing fields for the `Model` and `TopSpeed` properties.)  
+2.  Klicken Sie auf das Smarttag unter dem neuen Klassenkonstruktor, und klicken Sie dann auf **Konstruktorstub generieren**. In der `Automobile` -Klassendatei hat der neue Konstruktor die Namen der lokalen Variablen geprüft, die im Konstruktoraufruf verwendet werden, Eigenschaften gefunden, die die gleichen Namen in der `Automobile` -Klasse aufweisen, und Code im Konstruktortext zum Speichern der Argumentwerte in den Eigenschaften `Model` und `TopSpeed` bereitgestellt. (In [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]sind die Felder `_model` und `_topSpeed` im neuen Konstruktor implizit definierte Unterstützungsfelder für die Eigenschaften `Model` und `TopSpeed` .)  
   
-3.  After you generate the new constructor, a wavy underline appears under the call to the default constructor in `DefaultAutomobileIsInitializedCorrectly`. The error message states that the `Automobile` class has no constructor that takes zero arguments. To generate an explicit default constructor that does not have parameters, click the smart tag and then click **Generate constructor stub**.  
+3.  Nachdem Sie den neuen Konstruktor generiert haben, wird eine wellenförmige Unterstreichung unter dem Aufruf des Standardkonstruktors in `DefaultAutomobileIsInitializedCorrectly`angezeigt. Die Fehlermeldung gibt an, dass die `Automobile` -Klasse über keinen Konstruktor verfügt, der keine Argumente annimmt. Um einen expliziten Standardkonstruktor zu generieren, der nicht über Parameter verfügt, klicken Sie auf das Smarttag, und klicken Sie dann auf **Konstruktorstub generieren**.  
   
-### <a name="to-generate-a-stub-for-a-method"></a>To generate a stub for a method  
+### <a name="to-generate-a-stub-for-a-method"></a>So generieren Sie einen Stub für eine Methode  
   
-1.  Assume that the specification states that a new `Automobile` can be put into a Running state if its `Model` and `TopSpeed` properties are set to something other than the default values. Add the following lines to the `AutomobileWithModelNameCanStart` method.  
+1.  Angenommen, die Spezifikation gibt an, dass ein neues `Automobile` in einen Ausführzustand gesetzt werden kann, wenn die zugehörigen Eigenschaften `Model` und `TopSpeed` auf andere als die Standardwerte festgelegt werden. Fügen Sie der `AutomobileWithModelNameCanStart` -Methode die folgenden Zeilen hinzu.  
   
      [!code-csharp[VbTDDWalkthrough#3](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.cs)]  [!code-vb[VbTDDWalkthrough#3](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.vb)]  
   
-2.  Click the smart tag for the `myAuto.Start` method call and then click **Generate method stub**.  
+2.  Klicken Sie auf das Smarttag für den `myAuto.Start` -Methodenaufruf, und klicken Sie dann auf **Methodenstub generieren**.  
   
-3.  Click the smart tag for the `IsRunning` property and then click **Generate property stub**. The `Automobile` class now contains the following code.  
+3.  Klicken Sie auf das Smarttag für die `IsRunning` -Eigenschaft, und klicken Sie dann auf **Eigenschaftsstub generieren**. Die `Automobile` -Klasse beinhaltet nun folgenden Code:  
   
      [!code-csharp[VbTDDWalkthrough#4](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_4.cs)]  [!code-vb[VbTDDWalkthrough#4](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_4.vb)]  
   
-### <a name="to-run-the-tests"></a>To run the tests  
+### <a name="to-run-the-tests"></a>So führen Sie die Tests aus  
   
-1.  On the **Unit Test** menu, point to **Run Unit Tests**, and then click **All Tests**. This command runs all tests in all test frameworks that are written for the current solution.  
+1.  Zeigen Sie im Menü **Unittest** auf **Unittests ausführen**, und klicken Sie dann auf **Alle Tests**. Mit diesem Befehl werden alle Tests in sämtlichen Testframeworks ausgeführt, die für die aktuelle Projektmappe geschrieben werden.  
   
-     In this case, there are two tests, and they both fail, as expected. The `DefaultAutomobileIsInitializedCorrectly` test fails because the `Assert.IsTrue` condition returns `False`. The `AutomobileWithModelNameCanStart` test fails because the `Start` method in the `Automobile` class throws an exception.  
+     In diesem Fall sind zwei Tests vorhanden, und beide schlagen erwartungsgemäß fehl. Der `DefaultAutomobileIsInitializedCorrectly` -Test schlägt fehl, weil die `Assert.IsTrue` -Bedingung `False`zurückgibt. Der `AutomobileWithModelNameCanStart` -Test schlägt fehl, weil die `Start` -Methode in der `Automobile` -Klasse eine Ausnahme auslöst.  
   
-     The **Test Results** window is shown in the following illustration.  
+     Das Fenster **Testergebnisse** wird in der folgenden Abbildung gezeigt.  
   
-     ![Test results that failed](../ide/media/testsfailed.png "TestsFailed")  
-Test Results window  
+     ![Testergebnisse mit Fehlern](../ide/media/testsfailed.png "TestsFailed")  
+Testergebnisse (Fenster)  
   
-2.  In the **Test Results** window, double-click on each test result row to go to the location of each test failure.  
+2.  Doppelklicken Sie im Fenster **Testergebnisse** auf jede Testergebniszeile, um zur Position der einzelnen Testfehler zu gelangen.  
   
-### <a name="to-implement-the-source-code"></a>To implement the source code  
+### <a name="to-implement-the-source-code"></a>So implementieren Sie den Quellcode  
   
-1.  Add the following code to the default constructor so that the `Model`, `TopSpeed` and `IsRunning` properties are all initialized to their correct default values of `"Not specified"`, `-1`, and `True` (`true`).  
+1.  Fügen Sie den folgenden Code dem Standardkonstruktor hinzu, sodass die Eigenschaften `Model`, `TopSpeed` und `IsRunning` mit den richtigen Standardwerten von `"Not specified"`, `-1`, und `True` (`true`) initialisiert werden.  
   
      [!code-csharp[VbTDDWalkthrough#5](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_5.cs)]  [!code-vb[VbTDDWalkthrough#5](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_5.vb)]  
   
-2.  When the `Start` method is called, it should set the `IsRunning` flag to true only if the `Model` or `TopSpeed` properties are set to something other than their default value. Remove the `NotImplementedException` from the method body and add the following code.  
+2.  Wenn die `Start` -Methode aufgerufen wird, sollte das `IsRunning` -Flag nur auf "true" festgelegt werden, wenn die Eigenschaft `Model` oder `TopSpeed` auf einen anderen als den Standardwert festgelegt sind. Entfernen Sie die `NotImplementedException` aus dem Methodentext, und fügen Sie den folgenden Code hinzu.  
   
      [!code-csharp[VbTDDWalkthrough#6](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_6.cs)]  [!code-vb[VbTDDWalkthrough#6](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_6.vb)]  
   
-### <a name="to-run-the-tests-again"></a>To run the tests again  
+### <a name="to-run-the-tests-again"></a>So führen Sie die Tests erneut aus  
   
-1.  On the **Test** menu, point to **Run**, and then click **All Tests in Solution**. This time the tests pass. The **Test Results** window is shown in the following illustration.  
+1.  Zeigen Sie im Menü **Test** auf **Ausführen**, und klicken Sie dann auf **Alle Tests in der Projektmappe**. Dieses Mal werden die Tests bestanden. Das Fenster **Testergebnisse** wird in der folgenden Abbildung gezeigt.  
   
-     ![Test results that passed](../ide/media/testspassed.png "TestsPassed")  
-Test Results window  
+     ![Testergebnisse ohne Fehler](../ide/media/testspassed.png "TestsPassed")  
+Testergebnisse (Fenster)  
   
-## <a name="see-also"></a>See Also  
- [Generate From Usage](../ide/visual-csharp-intellisense.md#generate-from-usage)   
- [Writing Code](../ide/writing-code-in-the-code-and-text-editor.md)   
- [Using IntelliSense](../ide/using-intellisense.md)   
- [Unit Test Your Code](../test/unit-test-your-code.md)
+## <a name="see-also"></a>Siehe auch  
+ [Aus Verwendung generieren](../ide/visual-csharp-intellisense.md#generate-from-usage)   
+ [Schreiben von Code](../ide/writing-code-in-the-code-and-text-editor.md)   
+ [Verwenden von IntelliSense](../ide/using-intellisense.md)   
+ [Komponententest für Code](../test/unit-test-your-code.md)

@@ -34,11 +34,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 5ae6c92b103ce5d37a24425ec080e651a70dece4
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugexceptionevent2getexception"></a>IDebugExceptionEvent2::GetException
-Gets a detailed description of the exception that fired this event.  
+Ruft eine ausführliche Beschreibung der Ausnahme, die dieses Ereignis ausgelöst hat.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -54,17 +54,17 @@ int GetException(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  `pExceptionInfo`  
- [in, out] An [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) structure that is filled in with the description of the exception.  
+ [in, out] Ein [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) -Struktur, die mit der Beschreibung der Ausnahme ausgefüllt ist.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Remarks  
- [C++ only] The caller is responsible for freeing any strings in the [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) structure as well as releasing the [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) object in the structure.  
+## <a name="remarks"></a>Hinweise  
+ [Nur C++] Der Aufrufer ist verantwortlich für die Freigabe von Zeichenfolgen in die [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) Struktur sowie die Freigabe der [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) Objekt in der Struktur.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)   
  [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   

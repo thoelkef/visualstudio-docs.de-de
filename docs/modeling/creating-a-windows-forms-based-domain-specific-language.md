@@ -1,5 +1,5 @@
 ---
-title: Creating a Windows Forms-Based Domain-Specific Language | Microsoft Docs
+title: "Erstellen eine Windows Forms-basierten einer domänenspezifischen Sprache | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -15,173 +15,173 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 17652a19df04d016db54429ab7bc7d407768df87
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="creating-a-windows-forms-based-domain-specific-language"></a>Creating a Windows Forms-Based Domain-Specific Language
-You can use Windows Forms to display the state of a domain-specific language (DSL) model, instead of using a DSL diagram. This topic walks you through binding a Windows Form to a DSL, using the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK.  
+# <a name="creating-a-windows-forms-based-domain-specific-language"></a>Erstellen einer Windows Forms-basierten domänenspezifischen Sprache
+Sie können Windows Forms verwenden, um den Status eines Modells domänenspezifische Sprache (DSL), anstatt einen DSL-Diagramm anzuzeigen. Dieses Thema führt Sie durch ein, Binden von Windows Forms an eine DSL, indem Sie die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK.  
   
- ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
-A DSL instance, showing a Windows Form UI and the model explorer.  
+ ![DSL &#45; WPF &#45; 2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
+Eine DSL-Instanz, die eine Windows-Formular-Benutzeroberfläche und den Modell-Explorer anzeigt.  
   
-## <a name="creating-a-windows-forms-dsl"></a>Creating a Windows Forms DSL  
- The **Minimal WinForm Designer** DSL template creates a minimal DSL that you can modify to suit your own requirements.  
+## <a name="creating-a-windows-forms-dsl"></a>Erstellen einer Windows Forms DSL  
+ Die **minimale WinForm-Designer** DSL-Vorlage erstellt eine minimale DSL, die Sie ändern können, um Ihren eigenen Anforderungen anzupassen.  
   
-#### <a name="to-create-a-minimal-winforms-dsl"></a>To create a minimal WinForms DSL  
+#### <a name="to-create-a-minimal-winforms-dsl"></a>So erstellen eine minimale WinForms DSL  
   
-1.  Create a DSL from the **Minimal WinForm Designer** template.  
+1.  Erstellen Sie eine DSL aus der **minimale WinForm-Designer** Vorlage.  
   
-     In this walkthrough, the following names are assumed:  
+     In dieser exemplarischen Vorgehensweise werden die folgenden Namen angenommen:  
   
     |||  
     |-|-|  
-    |Solution and DSL name|FarmApp|  
+    |Projektmappen und DSL-name|FarmApp|  
     |Namespace|Company.FarmApp|  
   
-2.  Experiment with the initial example that the template provides:  
+2.  Experimentieren Sie mit dem ersten Beispiel, das die Vorlage bereitstellt:  
   
-    1.  Transform All Templates.  
+    1.  Transformieren Sie aller Vorlagen an.  
   
-    2.  Build and run the sample (**CTRL+F5**).  
+    2.  Erstellen und Ausführen des Beispiels (**STRG + F5**).  
   
-    3.  In the experimental instance of Visual Studio, open the `Sample` file in the debugging project.  
+    3.  Öffnen Sie in der experimentellen Instanz von Visual Studio die `Sample` Datei im Projekt debuggen.  
   
-         Notice that it is displayed in a Windows Forms control.  
+         Beachten Sie, dass er in einem Windows Forms-Steuerelement angezeigt wird.  
   
-         You can also see the elements of the model displayed in the Explorer.  
+         Sie können auch die Elemente des Modells angezeigt, die im Explorer anzeigen.  
   
-         Add some elements either in the form or the Explorer, and notice that they appear in the other display.  
+         Fügen Sie einige Elemente, die entweder im Format oder im Explorer, und beachten Sie, dass sie in der anderen Anzeige angezeigt werden.  
   
- In the main instance of [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], notice the following points about the DSL solution:  
+ In der Hauptinstanz von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], beachten Sie die folgenden Punkte bezüglich der DSL-Lösung:  
   
--   `DslDefinition.dsl` contains no diagram elements. This is because you will not use DSL diagrams to view instance models of this DSL. Instead, you will bind a Windows Form to the model, and the elements on the form will display the model.  
+-   `DslDefinition.dsl`enthält keine Diagrammelemente. Dies ist, da nicht DSL Diagramme mit der Instanz Modelle für diese DSL anzuzeigen. Stattdessen binden Sie ein Windows Form für das Modell und die Elemente auf dem Formular werden das Modell angezeigt.  
   
--   In addition to the `Dsl` and `DslPackage` projects, the solution contains a third project named `UI.`**UI** project contains the definition of a Windows Forms control. `DslPackage` depends on `UI`, and `UI` depends on `Dsl`.  
+-   Zusätzlich zu den `Dsl` und `DslPackage` Projekte, die Projektmappe enthält eine dritte Projekt mit dem Namen `UI.` **UI** Projekt enthält die Definition eines Windows Forms-Steuerelements. `DslPackage`richtet sich nach `UI`, und `UI` richtet sich nach `Dsl`.  
   
--   In the `DslPackage` project, `UI\DocView.cs` contains the code that displays the Windows Forms control that is defined in the `UI` project.  
+-   In der `DslPackage` Projekt `UI\DocView.cs` enthält den Code, in dem Windows Forms-Steuerelement angezeigt, die in definiert ist die `UI` Projekt.  
   
--   The `UI` project contains a working sample of a form control bound to the DSL. However, it will not work when you have changed the DSL Definition. The `UI` project contains:  
+-   Die `UI` Projekt enthält ein funktionstüchtiges Beispiel ein Formularsteuerelement gebunden, der DSL. Allerdings können sie nicht verwendet, wenn Sie die DSL-Definition geändert haben. Die `UI` Projekt enthält:  
   
-    -   A Windows Forms class named `ModelViewControl`.  
+    -   Eine Windows Forms-Klasse, die mit dem Namen `ModelViewControl`.  
   
-    -   A file named `DataBinding.cs` that contains an additional partial definition of `ModelViewControl`. To see its content, in **Solution Explorer**, open the shortcut menu for the file and choose **View Code**.  
+    -   Eine Datei namens `DataBinding.cs` , enthält eine zusätzliche partielle Definition der `ModelViewControl`. Um seinen Inhalt anzuzeigen **Projektmappen-Explorer**, öffnen Sie das Kontextmenü für die Datei, und wählen Sie **Code anzeigen**.  
   
-### <a name="about-the-ui-project"></a>About the UI Project  
- When you update the DSL Definition file to define your own DSL, you will have to update the control in the `UI` project to display your DSL. Unlike the `Dsl` and `DslPackage` projects, the sample `UI` project is not generated from `DslDefinitionl.dsl`. You can add .tt files to generate the code if you want, although that is not covered in this walkthrough.  
+### <a name="about-the-ui-project"></a>Über das UI-Projekt  
+ Bei der Aktualisierung der DSL-Definitionsdatei Definieren eigener DSL müssen Sie das Steuerelement im Aktualisieren der `UI` Projekt zum Anzeigen der DSL. Im Gegensatz zu den `Dsl` und `DslPackage` projiziert das Beispiel `UI` Projekt wird nicht generiert `DslDefinitionl.dsl`. Sie können hinzufügen TT-Dateien, um den Code zu generieren, wenn Sie möchten, obwohl, die in dieser exemplarischen Vorgehensweise nicht behandelt wird.  
   
-## <a name="updating-the-dsl-definition"></a>Updating the DSL Definition  
- The following the DSL definition is used in this walkthrough.  
+## <a name="updating-the-dsl-definition"></a>Aktualisieren der DSL-Definition  
+ Die folgenden DSL-Definition in dieser exemplarischen Vorgehensweise verwendet wird.  
   
- ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png "DSL-Wpf-1")  
+ ![DSL &#45; WPF &#45; 1](../modeling/media/dsl-wpf-1.png "DSL-Wpf-1")  
   
-#### <a name="to-update-the-dsl-definition"></a>To update the DSL definition  
+#### <a name="to-update-the-dsl-definition"></a>Zum Aktualisieren der DSL-definition  
   
-1.  Open DslDefinition.dsl in the DSL designer.  
+1.  DslDefinition.dsl in der DSL-Designer zu öffnen.  
   
-2.  Delete **ExampleElement**  
+2.  Löschen Sie **ExampleElement**  
   
-3.  Rename the **ExampleModel** domain class to `Farm`.  
+3.  Benennen Sie die **ExampleModel** Domänenklasse zu `Farm`.  
   
-     Give it additional domain properties named `Size` of type **Int32**, and `IsOrganic` of type **Boolean**.  
+     Geben Sie ihm Weitere Domäneneigenschaften mit dem Namen `Size` des Typs **Int32**, und `IsOrganic` des Typs **booleschen**.  
   
     > [!NOTE]
-    >  If you delete the root domain class and then create a new root, you will have to reset the Editor Root Class property. In **DSL Explorer**, select **Editor**. Then in the Properties window, set **Root Class** to `Farm`.  
+    >  Wenn Sie die Stammklasse der Domäne zu löschen und dann eine neue Stamm erstellen, müssen Sie der Stammklasse-Editor-Eigenschaft zurückgesetzt. In **Explorer für DSL**Option **Editor**. Legen Sie dann im Fenster Eigenschaften **Stammklasse** auf `Farm`.  
   
-4.  Use the **Named Domain Class** tool to create the following domain classes:  
+4.  Verwenden der **Domänenklasse namens** mit dem Tool die folgenden Domänenklassen zu erstellen:  
   
-    -   `Field` - Give this an additional domain property named `Size`.  
+    -   `Field`-Geben Sie dieser eine weitere Domäneneigenschaft, die mit dem Namen `Size`.  
   
-    -   `Animal` - In the Properties window, set **Inheritance Modifier** to **Abstract**.  
+    -   `Animal`-Im Eigenschaftenfenster festgelegt **Inheritance Modifier** auf **abstrakte**.  
   
-5.  Use the **Domain Class** tool to create the following classes:  
+5.  Verwenden der **Domänenklasse** mit dem Tool die folgenden Klassen zu erstellen:  
   
     -   `Sheep`  
   
     -   `Goat`  
   
-6.  Use the **Inheritance** tool to make `Goat` and `Sheep` inherit from `Animal`.  
+6.  Verwenden der **Vererbung** Tool vornehmen `Goat` und `Sheep` Vererben `Animal`.  
   
-7.  Use the **Embedding** tool to embed `Field` and `Animal` under `Farm`.  
+7.  Verwenden der **Embedding** Tool So betten Sie ein `Field` und `Animal` unter `Farm`.  
   
-8.  You might want to tidy the diagram. To reduce the number of duplicate elements, use the **Bring Subtree Here** command on the shortcut menu of leaf elements.  
+8.  Möglicherweise möchten das Diagramm zu leeren. Verwenden Sie zum Verringern der Anzahl von doppelten Elementen der **Teilstruktur hier schalten** Befehl im Kontextmenü der Elemente der Blattebene.  
   
-9. **Transform All Templates** in the toolbar of Solution Explorer.  
+9. **Transformieren aller Vorlagen** auf der Symbolleiste des Projektmappen-Explorer.  
   
-10. Build the **Dsl** project.  
-  
-    > [!NOTE]
-    >  At this stage, the other projects will not build without errors. However, we want to build the Dsl project so that its assembly is available to the Data Source Wizard.  
-  
-## <a name="updating-the-ui-project"></a>Updating the UI Project  
- Now you can create a new user control that will display the information that is stored in the DSL model. The easiest way to connect the user control to the model is through data bindings. The data binding adaptor type named **ModelingBindingSource** is specifically designed to connect DSLs to non-VMSDK interfaces.  
-  
-#### <a name="to-define-your-dsl-model-as-a-data-source"></a>To define your DSL model as a data source  
-  
-1.  On the **Data** menu, choose **Show Data Sources**.  
-  
-     The **Data Sources** window opens.  
-  
-     Choose **Add New Data Source**. The **Data Source Configuration Wizard** opens.  
-  
-2.  Choose **Object**, **Next**.  
-  
-     Expand **Dsl**, **Company.FarmApp**, and select **Farm**, which is the root class of your model. Choose **Finish**.  
-  
-     In Solution Explorer, the **UI** project now contains **Properties\DataSources\Farm.datasource**  
-  
-     The properties and relationships of your model class appear in the Data Sources window.  
-  
-     ![DslWpf&#45;3](../modeling/media/dslwpf-3.png "DslWpf-3")  
-  
-#### <a name="to-connect-your-model-to-a-form"></a>To connect your model to a form  
-  
-1.  In the **UI** project, delete all the existing .cs files.  
-  
-2.  Add a new **User Control** file named `FarmControl` to the **UI** project.  
-  
-3.  In the **Data Sources** window, on the drop-down menu on **Farm**, choose **Details**.  
-  
-     Leave the default settings for the other properties.  
-  
-4.  Open FarmControl.cs in the design view.  
-  
-     Drag **Farm** from the Data Sources window onto FarmControl.  
-  
-     A set of controls appears, one for each property. The relationship properties do not generate controls.  
-  
-5.  Delete **farmBindingNavigator**. This is also automatically generated in the `FarmControl` designer, but it is not useful for this application.  
-  
-6.  Using the toolbox, create two instances of **DataGridView**, and name them `AnimalGridView` and `FieldGridView`.  
+10. Erstellen der **Dsl** Projekt.  
   
     > [!NOTE]
-    >  An alternative step is to drag the Animals and Fields items from the Data Sources window onto the control. This action automatically creates data grids and bindings between the grid view and the data source. However, this binding does not work correctly for DSLs. Therefore it is better to create the data grids and bindings manually.  
+    >  In dieser Phase werden die anderen Projekte nicht fehlerfrei erstellt. Wir möchten jedoch das Dsl-Projekt erstellen, sodass die Assembly des Datenquellen-Assistenten zur Verfügung steht.  
   
-7.  If the Toolbox does not contain the **ModelingBindingSource** tool, add it. On the shortcut menu of the **Data** tab, choose **Choose Items**. In the **Choose Toolbox Items** dialog, select **ModelingBindingSource** from the **.NET Framework Tab**.  
+## <a name="updating-the-ui-project"></a>Aktualisieren des UI-Projekts  
+ Jetzt können Sie ein neues benutzerdefiniertes Steuerelement erstellen, das die Informationen anzeigt, die in der DSL-Modell gespeichert ist. Die einfachste Möglichkeit, das Benutzersteuerelement mit dem Modell herzustellen, erfolgt über datenbindungen. Die Datenbindung mit dem Namen Adaptertyp **ModelingBindingSource** ist speziell zur Verbindung mit nicht VMSDK Schnittstellen konzentriert.  
   
-8.  Using the Toolbox, create two instances of **ModelingBindingSource**, and name them `AnimalBinding` and `FieldBinding`.  
+#### <a name="to-define-your-dsl-model-as-a-data-source"></a>DSL-Modell als Datenquelle zu definieren  
   
-9. Set the **DataSource** property of each **ModelingBindingSource** to **farmBindingSource**.  
+1.  Auf der **Daten** Menü wählen **Datenquellen anzeigen**.  
   
-     Set the **DataMember** property to **Animals** or **Fields**.  
+     Die **Datenquellen** Fenster wird geöffnet.  
   
-10. Set the **DataSource** properties of `AnimalGridView` to `AnimalBinding`, and of  `FieldGridView` to `FieldBinding`.  
+     Wählen Sie **neue Datenquelle hinzufügen**. Die **Data Source Configuration Wizard** wird geöffnet.  
   
-11. Adjust the layout of the Farm control to your taste.  
+2.  Wählen Sie **Objekt**, **Weiter**.  
   
- The **ModelingBindingSource** is an adapter that performs several functions that are specific to DSLs:  
+     Erweitern Sie **Dsl**, **Company.FarmApp**, und wählen Sie **Farm**, also in der Stammklasse des Modells. Wählen Sie **Fertig stellen**.  
   
--   It wraps updates in a VMSDK Store Transaction.  
+     Im Projektmappen-Explorer die **UI** Projekt enthält jetzt **Properties\DataSources\Farm.datasource**  
   
-     For example, when the user deletes a row from the data view grid, a regular binding would result in a transaction exception.  
+     Die Eigenschaften und Beziehungen der Modellklasse werden im Fenster "Datenquellen" angezeigt.  
   
--   It ensures that, when the user selects a row, the Properties window displays the properties of the corresponding model element, instead of the data grid row.  
+     ![DslWpf &#45; 3](../modeling/media/dslwpf-3.png "DslWpf 3")  
+  
+#### <a name="to-connect-your-model-to-a-form"></a>Verbindung von Ihrem Modell zu einem Formular  
+  
+1.  In der **UI** Projekt, löschen Sie alle vorhandenen .cs-Dateien.  
+  
+2.  Fügen Sie einen neuen **Benutzersteuerelement** Datei mit dem Namen `FarmControl` auf die **UI** Projekt.  
+  
+3.  In der **Datenquellen** Fenster auf das Dropdown-Menü auf **Farm**, wählen Sie **Details**.  
+  
+     Übernehmen Sie die Standardeinstellungen für die anderen Eigenschaften aus.  
+  
+4.  Öffnen Sie in der Entwurfsansicht FarmControl.cs.  
+  
+     Ziehen Sie **Farm** aus dem Datenquellenfenster auf FarmControl.  
+  
+     Ein Satz von Steuerelementen angezeigt wird, eine für jede Eigenschaft. Die Beziehungseigenschaften generieren keine Steuerelemente.  
+  
+5.  Löschen Sie **FarmBindingNavigator**. Dies wird auch automatisch generiert, der `FarmControl` -Designer, aber es ist nicht für diese Anwendung nützlich.  
+  
+6.  Verwenden der Toolbox, erstellen Sie zwei Instanzen des **DataGridView**, und nennen Sie diese `AnimalGridView` und `FieldGridView`.  
+  
+    > [!NOTE]
+    >  Ein alternativer Schritt ist, ziehen die Elemente von Tieren und Felder aus dem Fenster "Datenquellen", auf das Steuerelement. Diese Aktion wird automatisch erstellt, Datenblätter und Bindungen zwischen der Rasteransicht und der Datenquelle. Allerdings funktioniert diese Bindung nicht für konzentriert ordnungsgemäß. Daher ist es besser, erstellen Sie die Datenblätter und Bindungen manuell.  
+  
+7.  Wenn keine die Toolbox enthält die **ModelingBindingSource** -tool, fügen Sie es hinzu. Im Kontextmenü von der **Daten** Registerkarte **Elemente auswählen**. In der **Toolboxelemente** wählen Sie im Dialogfeld **ModelingBindingSource** aus der **Registerkarte ".NET Framework"**.  
+  
+8.  Verwenden der Toolbox, erstellen Sie zwei Instanzen des **ModelingBindingSource**, und nennen Sie diese `AnimalBinding` und `FieldBinding`.  
+  
+9. Legen Sie die **DataSource** -Eigenschaft jedes **ModelingBindingSource** auf **FarmBindingSource**.  
+  
+     Legen Sie die **DataMember** Eigenschaft **Tieren** oder **Felder**.  
+  
+10. Festlegen der **DataSource** Eigenschaften des `AnimalGridView` auf `AnimalBinding`, und der `FieldGridView` auf `FieldBinding`.  
+  
+11. Passen Sie das Layout des Steuerelements Ihre Farm ein.  
+  
+ Die **ModelingBindingSource** ist ein Adapter, die mehrere Funktionen ausführt, die für konzentriert spezifisch sind:  
+  
+-   Es umschließt eine Speichertransaktion VMSDK Updates.  
+  
+     Wenn der Benutzer das Datenraster für die Sicht eine Zeile gelöscht, würde z. B. eine reguläre Bindung eine Transaktion Ausnahme führen.  
+  
+-   Dadurch wird sichergestellt, dass, wenn der Benutzer eine Zeile auswählt, werden im Eigenschaftenfenster die Eigenschaften des entsprechenden Modellelements, statt die Rasterzeile Daten angezeigt.  
   
  ![DslWpf4](../modeling/media/dslwpf4.png "DslWpf4")  
-Schema of links between data sources and views.  
+Das Schema von Links zwischen Datenquellen und Ansichten.  
   
-#### <a name="to-complete-the-bindings-to-the-dsl"></a>To complete the bindings to the DSL  
+#### <a name="to-complete-the-bindings-to-the-dsl"></a>Die Bindungen für die DSL abgeschlossen  
   
-1.  Add the following code in a separate code file in the **UI** project:  
+1.  Fügen Sie den folgenden Code in einer separaten Codedatei in der **UI** Projekt:  
   
     ```csharp  
     using System.ComponentModel;  
@@ -207,57 +207,57 @@ Schema of links between data sources and views.
     }  
     ```  
   
-2.  In the **DslPackage** project, edit **DslPackage\DocView.tt** to update the following variable definition:  
+2.  In der **DslPackage** Projekt, bearbeiten **DslPackage\DocView.tt** zum Aktualisieren der Definition der folgenden Variablen:  
   
     ```csharp  
     string viewControlTypeName = "FarmControl";  
     ```  
   
-## <a name="testing-the-dsl"></a>Testing the DSL  
- The DSL solution can now build and run, although you might want to add further improvements later.  
+## <a name="testing-the-dsl"></a>Testen der DSL  
+ DSL-Lösung kann jetzt erstellen und ausführen, obwohl Sie möglicherweise weitere Verbesserungen später hinzufügen möchten.  
   
-#### <a name="to-test-the-dsl"></a>To test the DSL  
+#### <a name="to-test-the-dsl"></a>So testen Sie die DSL  
   
-1.  Build and run the solution.  
+1.  Erstellen Sie die Projektmappe, und führen Sie sie aus.  
   
-2.  In the experimental instance of Visual Studio, open the **Sample** file.  
+2.  Öffnen Sie in der experimentellen Instanz von Visual Studio, die **Beispiel** Datei.  
   
-3.  In the **FarmApp Explorer**, open the shortcut menu on the **Farm** root node, and choose **Add New Goat**.  
+3.  In der **FarmApp Explorer**, öffnen Sie das Kontextmenü für die **Farm** Stammknoten, und wählen Sie **neue Ziege hinzufügen**.  
   
-     `Goat1` appears in the **Animals** view.  
+     `Goat1`wird angezeigt, der **Tieren** anzeigen.  
   
     > [!WARNING]
-    >  You must use the shortcut menu on the **Farm** node, not the **Animals** node.  
+    >  Verwenden Sie das Kontextmenü, auf die **Farm** Knoten nicht der **Tieren** Knoten.  
   
-4.  Select the **Farm** root node and view its properties.  
+4.  Wählen Sie die **Farm** Stammknoten und Anzeigen seiner Eigenschaften.  
   
-     In the form view, change the **Name** or **Size** of the farm.  
+     Ändern Sie in der Formularansicht die **Namen** oder **Größe** der Farm.  
   
-     When you navigate away from each field in the form, the corresponding property changes in the Properties window.  
+     Wenn Sie jedes Feld im Formular die entsprechenden eigenschaftenänderungen im Eigenschaftenfenster verlassen.  
   
-## <a name="enhancing-the-dsl"></a>Enhancing the DSL  
+## <a name="enhancing-the-dsl"></a>Verbessern der DSL  
   
-#### <a name="to-make-the-properties-update-immediately"></a>To make the properties update immediately  
+#### <a name="to-make-the-properties-update-immediately"></a>Zu den Eigenschaften, die sofort zu aktualisieren  
   
-1.  In the design view of FarmControl.cs, select a simple field such as Name, Size or IsOrganic.  
+1.  Wählen Sie in der Entwurfsansicht von FarmControl.cs einen einfachen Feldverweis z. B. Name, Größe oder IsOrganic.  
   
-2.  In the Properties window, expand **DataBindings** and open **(Advanced)**.  
+2.  Erweitern Sie im Fenster Eigenschaften **DataBindings** , und öffnen Sie **(Erweitert)**.  
   
-     In the **Formatting and Advanced Binding** dialog, under **Data Source Update Mode**, choose **OnPropertyChanged**.  
+     In der **Formatierung und erweiterte Bindung** Dialogfeld unter **Datenquellen-Aktualisierungsmodus**, wählen Sie **OnPropertyChanged**.  
   
-3.  Build and run the solution.  
+3.  Erstellen Sie die Projektmappe, und führen Sie sie aus.  
   
-     Verify that when you change the content of the field, the corresponding property of the Farm model changes immediately.  
+     Überprüfen Sie, wenn Sie den Inhalt des Felds, der entsprechenden Eigenschaft des der Farm modelländerungen sofort ändern.  
   
-#### <a name="to-provide-add-buttons"></a>To provide Add buttons  
+#### <a name="to-provide-add-buttons"></a>Zum Hinzufügen von Schaltflächen zur Verfügung stellen  
   
-1.  In the design view of FarmControl.cs, use the toolbox to create a button on the form.  
+1.  In der Entwurfsansicht von FarmControl.cs mithilfe der Toolbox um eine Schaltfläche im Formular zu erstellen.  
   
-     Edit the name and text of the button, for example to `New Sheep`.  
+     Bearbeiten Sie den Namen und den Text der Schaltfläche, z. B. `New Sheep`.  
   
-2.  Open the code behind the button (for example by double-clicking it).  
+2.  Öffnen Sie den Code hinter der Schaltfläche (z. B. durch Doppelklick).  
   
-     Edit it as follows:  
+     Bearbeiten Sie es wie folgt:  
   
     ```csharp  
     private void NewSheepButton_Click(object sender, EventArgs e)  
@@ -290,7 +290,7 @@ Schema of links between data sources and views.
   
     ```  
   
-     You will also need to insert the following directive:  
+     Sie müssen auch die folgende Anweisung einfügen:  
   
     ```csharp  
   
@@ -298,18 +298,18 @@ Schema of links between data sources and views.
   
     ```  
   
-3.  Add similar buttons for Goats and Fields.  
+3.  Fügen Sie ähnliche Ziegen und Felder hinzu.  
   
-4.  Build and run the solution.  
+4.  Erstellen Sie die Projektmappe, und führen Sie sie aus.  
   
-5.  Verify that the new button adds an item. The new item should appear in both the FarmApp Explorer and in the appropriate data grid view.  
+5.  Stellen Sie sicher, dass die Schaltfläche "Neu" ein Element hinzufügt. Das neue Element sollte in den FarmApp-Explorer und in der Rasteransicht der Daten angezeigt werden.  
   
-     You should be able to edit the name of the element in the data grid view. You can also delete it from there.  
+     Sie sollten den Namen des Elements in der Rasteransicht der Daten bearbeiten können. Sie können auch dort löschen.  
   
- ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
+ ![DSL &#45; WPF &#45; 2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
   
-### <a name="about-the-code-to-add-an-element"></a>About the code to add an element  
- For the new element buttons, the following alternative code is slightly simpler.  
+### <a name="about-the-code-to-add-an-element"></a>Über den Code zum Hinzufügen eines Elements  
+ Für das neue Element Schaltflächen ist der folgende alternative Code etwas einfacher.  
   
 ```csharp  
 private void NewSheepButton_Click(object sender, EventArgs e)  
@@ -323,11 +323,11 @@ private void NewSheepButton_Click(object sender, EventArgs e)
   
 ```  
   
- However, this code does not set a default name for the new item. It does not run any customized merge that you might have defined in the **Element Merge Directives** of the DSL, and it does not run any custom merge code that might have been defined.  
+ Dieser Code ist jedoch kein Standardname für das neue Element festlegen. Er wird nicht ausgeführt, benutzerdefinierten zusammenführen, die Sie möglicherweise im definiert haben die **Element Merge Direktiven** der DSL und er wird nicht ausgeführt, benutzerdefinierten Code, der möglicherweise definiert wurden.  
   
- Therefore we recommend that you use <xref:Microsoft.VisualStudio.Modeling.ElementOperations> to create new elements. For more information, see [Customizing Element Creation and Movement](../modeling/customizing-element-creation-and-movement.md).  
+ Daher empfehlen wir die Verwendung von <xref:Microsoft.VisualStudio.Modeling.ElementOperations> Erstellen neuer Elemente. Weitere Informationen finden Sie unter [Element erstellen anpassen und Bewegung](../modeling/customizing-element-creation-and-movement.md).  
   
-## <a name="see-also"></a>See Also  
- [How to Define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md)   
- [Writing Code to Customise a Domain-Specific Language](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
- [Modeling SDK for Visual Studio - Domain-Specific Languages](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
+## <a name="see-also"></a>Siehe auch  
+ [Gewusst wie: definieren eine domänenspezifischen Sprache](../modeling/how-to-define-a-domain-specific-language.md)   
+ [Schreiben von Code zum Anpassen einer domänenspezifischen Sprache](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
+ [Modellierungs-SDK für Visual Studio - Domänenspezifische Sprachen](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)

@@ -34,11 +34,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: df941d56a1b9baf8ffa15b022e0b9577da143fc8
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="metadataaddressarrayelem"></a>METADATA_ADDRESS_ARRAYELEM
-This structure represents an array element within an array.  
+Diese Struktur stellt ein Arrayelement innerhalb eines Arrays dar.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -56,26 +56,26 @@ public struct METADATA_ADDRESS_ARRAYELEM {
 }  
 ```  
   
-## <a name="terms"></a>Terms  
+## <a name="terms"></a>Begriffe  
  tokMethod  
- The ID of the array this element is a part of.  
+ Die ID des Arrays ist dieses Element Teil.  
   
- [C++] `_mdToken` is a `typedef` for a 32-bit `int`.  
+ [C++] `_mdToken` ist ein `typedef` für 32-Bit- `int`.  
   
- dwIndex  
- The index of this element within the array.  
+ dwIndex ab  
+ Der Index dieses Elements innerhalb des Arrays.  
   
-## <a name="remarks"></a>Remarks  
- This structure is part of the union in the [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) structure when the `dwKind` field of the `DEBUG_ADDRESS_UNION` structure is set to `ADDRESS_KIND_ARRAYELEM` (a value from the [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeration).  
+## <a name="remarks"></a>Hinweise  
+ Diese Struktur ist Teil der Union der [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) Struktur, wenn die `dwKind` Feld der `DEBUG_ADDRESS_UNION` Struktur auf festgelegt ist `ADDRESS_KIND_ARRAYELEM` (ein Wert aus der [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) die Enumeration).  
   
-## <a name="requirements"></a>Requirements  
+## <a name="requirements"></a>Anforderungen  
  Header: sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
  [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

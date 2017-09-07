@@ -34,11 +34,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: ea570fe5ab9df8ad2cc004a35113156436161dcd
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugengine2removeallsetexceptions"></a>IDebugEngine2::RemoveAllSetExceptions
-Removes the list of exceptions the IDE has set for a particular run-time architecture or language.  
+Entfernt die Liste der Ausnahmen, die für eine bestimmte Laufzeit-Architektur oder die Sprache die IDE festgelegt hat.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -54,19 +54,19 @@ int RemoveAllSetExceptions(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  `guidType`  
- [in] Either the GUID for the language or the GUID for the debug engine that is specific to a run-time architecture.  
+ [in] Die GUID für die Sprache oder die GUID für das Debugging-Modul, das spezifisch für eine Laufzeit-Architektur ist.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Remarks  
- The exceptions removed by this method were set by earlier calls to the [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) method.  
+## <a name="remarks"></a>Hinweise  
+ Die Ausnahmen, die von dieser Methode entfernt wurden von früheren aufrufen, Festlegen der [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) Methode.  
   
- To remove a specific exception, call the [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) method.  
+ Um eine bestimmte Ausnahme zu entfernen, rufen Sie die [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) Methode.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)

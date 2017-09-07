@@ -34,11 +34,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 0caebddd60fa3b61bf1471f83e827ff367ce3cc6
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugcodecontext2getdocumentcontext"></a>IDebugCodeContext2::GetDocumentContext
-Gets the document context that corresponds to this code context. The document context represents a position in the source file that corresponds to the source code that generated this instruction.  
+Ruft den Dokumentenkontext, der diesem Codekontext entspricht. Der Dokumentenkontext darstellt, eine Position in der Quelldatei, die auf den Quellcode entspricht, die diese Anweisung generiert wird.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -54,16 +54,16 @@ int GetDocumentContext(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  `ppSrcCxt`  
- [out] Returns the [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) object that corresponds to the code context.  
+ [out] Gibt die [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) Objekt, das den Codekontext entspricht.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Remarks  
- Generally, the document context can be thought of as a position in a source file while the code context is a position of a code instruction in an execution stream.  
+## <a name="remarks"></a>Hinweise  
+ Im Allgemeinen kann der Dokumentenkontext betrachtet werden als eine Position in einer Quelldatei während der Codekontext einer Position Code-Anweisung in einem Datenstrom für die Ausführung ist.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

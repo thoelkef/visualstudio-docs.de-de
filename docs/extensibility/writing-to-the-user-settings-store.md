@@ -1,5 +1,5 @@
 ---
-title: Writing to the User Settings Store | Microsoft Docs
+title: Schreiben in den Speicher des Benutzers Einstellungen | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,38 +30,38 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 8be43438312773b2e02915f963b1c68fff61e889
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="writing-to-the-user-settings-store"></a>Writing to the User Settings Store
-User settings are writeable settings like the ones in the **Tools / Options** dialog, properties windows, and certain other dialog boxes. Visual Studio extensions may use these to store small amounts of data. This walkthrough shows how to add Notepad to Visual Studio as an external tool by reading from and writing to the user settings store.  
+# <a name="writing-to-the-user-settings-store"></a>Das Schreiben in den Speicher des Benutzers-Einstellungen
+Benutzereinstellungen werden beschreibbaren Einstellungen wie den Werten in der **Extras / Optionen** Dialogfeld Eigenschaftenfenstern und bestimmte andere Dialogfelder. Visual Studio-Erweiterungen, die diese verwenden können, um kleine Mengen von Daten zu speichern. In dieser exemplarischen Vorgehensweise zeigt, wie durch Auslesen und Schreiben in den Speicher des Benutzers Einstellungen Editor in Visual Studio als ein externes Tool hinzufügen.  
   
-### <a name="backing-up-your-user-settings"></a>Backing up Your User Settings  
+### <a name="backing-up-your-user-settings"></a>Sichern Ihre Benutzereinstellungen  
   
-1.  You must be able to reset the External Tools settings so that you can debug and repeat the procedure. To do this, you must save the original settings so that you can restore them as required.  
+1.  Sie müssen die Einstellungen für externe Tools zurücksetzen, damit Sie debuggen können, und wiederholen Sie den Vorgang sein. Zu diesem Zweck müssen Sie die ursprünglichen Einstellungen speichern, sodass Sie sie nach Bedarf wiederherstellen können.  
   
-2.  Open Regedit.exe.  
+2.  Öffnen Sie Regedit.exe.  
   
-3.  Navigate to HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External Tools\\.  
+3.  Navigieren Sie zu HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External Tools\\.  
   
     > [!NOTE]
-    >  Make sure that you are looking at the key that contains \14.0Exp\ and not \14.0\\. When you run the experimental instance of Visual Studio, your user settings are in the registry hive "14.0Exp".  
+    >  Stellen Sie sicher, dass Sie den Schlüssel prüfen, die \14.0Exp\ und nicht \14.0 enthält\\. Wenn Sie die experimentelle Instanz von Visual Studio ausführen, werden die benutzereinstellungen in der Registrierungsstruktur "14.0Exp".  
   
-4.  Right-click the \External Tools\ subkey, and then click **Export**. Make sure that **Selected branch** is selected.  
+4.  Mit der rechten Maustaste des \External Tools\ Unterschlüssels, und klicken Sie dann auf **exportieren**. Stellen Sie sicher, dass **ausgewählte Teilstruktur** ausgewählt ist.  
   
-5.  Save the resulting External Tools.reg file.  
+5.  Die resultierende externe Tools.reg-Datei zu speichern.  
   
-6.  Later, when you want to reset the External Tools settings, select the HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External Tools\ registry key and click **Delete** on the context menu.  
+6.  Später, wenn Sie die externen Tools Einstellungen zurücksetzen möchten, wählen Sie den Registrierungsschlüssel HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External Tools\, und klicken Sie auf **löschen** in dem eingeblendeten Kontextmenü.  
   
-7.  When the **Confirm Key Delete** dialog box appears, click **Yes**.  
+7.  Wenn die **Schlüssel löschen bestätigen** Dialogfeld angezeigt wird, klicken Sie auf **Ja**.  
   
-8.  Right-click the External Tools.reg file that you saved earlier, click **Open with**, and then click **Registry Editor**.  
+8.  Mit der rechten Maustaste in der externe Tools.reg-Datei, die Sie zuvor gespeichert haben, klicken Sie auf **Öffnen mit**, und klicken Sie dann auf **Registrierungs-Editor**.  
   
-## <a name="writing-to-the-user-settings-store"></a>Writing to the User Settings Store  
+## <a name="writing-to-the-user-settings-store"></a>Das Schreiben in den Speicher des Benutzers-Einstellungen  
   
-1.  Create a VSIX project named UserSettingsStoreExtension and then add a custom command named UserSettingsStoreCommand. For more information about how to create a custom command, see [Creating an Extension with a Menu Command](../extensibility/creating-an-extension-with-a-menu-command.md)  
+1.  Erstellen Sie ein VSIX-Projekt mit dem Namen UserSettingsStoreExtension, und fügen Sie einen benutzerdefinierten Befehl mit dem Namen UserSettingsStoreCommand hinzu. Weitere Informationen zur Vorgehensweise beim Erstellen eines benutzerdefinierten Befehls finden Sie unter [erstellen eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
-2.  In UserSettingsStoreCommand.cs, add the following using statements:  
+2.  In UserSettingsStoreCommand.cs, fügen Sie die folgenden using-Anweisungen:  
   
     ```csharp  
     using System.Collections.Generic;  
@@ -69,7 +69,7 @@ User settings are writeable settings like the ones in the **Tools / Options** di
     using Microsoft.VisualStudio.Shell.Settings;  
     ```  
   
-3.  In MenuItemCallback, delete the body of the method and get the user settings store, as follows:  
+3.  Klicken Sie im MenuItemCallback löschen Sie den Text der Methode, und Abrufen Sie Benutzer, die Einstellungen gespeichert werden, wie folgt:  
   
     ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -79,7 +79,7 @@ User settings are writeable settings like the ones in the **Tools / Options** di
     }  
     ```  
   
-4.  Now find out whether Notepad is already set as an external tool. You need to iterate through all the external tools to determine whether the ToolCmd setting is "Notepad", as follows:  
+4.  Nun erfahren Sie, ob der Editor bereits als ein externes Tool eingerichtet ist. Sie müssen die externen Tools zu bestimmen, ob die Einstellung ToolCmd "Editor" wie folgt durchlaufen:  
   
     ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -103,7 +103,7 @@ User settings are writeable settings like the ones in the **Tools / Options** di
   
     ```  
   
-5.  If Notepad hasn't been set as an external tool, set it as follows:  
+5.  Wenn Editor nicht als ein externes Tool festgelegt wurde, legen Sie es wie folgt:  
   
     ```vb  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -139,10 +139,10 @@ User settings are writeable settings like the ones in the **Tools / Options** di
     }  
     ```  
   
-6.  Test the code. Remember that it adds Notepad as an External Tool, so you must roll back the registry before running it a second time.  
+6.  Testen Sie den Code ein. Denken Sie daran, dass er fügt Editor als ein externes Tool hinzu, damit Sie die Registrierung wiederherstellen müssen vor der Ausführung eines zweiten Mal.  
   
-7.  Build the code and start debugging.  
+7.  Erstellen Sie den Code, und starten Sie das Debuggen.  
   
-8.  On the **Tools** menu, click **Invoke UserSettingsStoreCommand**. This will add Notepad to the **Tools** menu.  
+8.  Auf der **Tools** Menü klicken Sie auf **aufrufen UserSettingsStoreCommand**. Dadurch wird hinzugefügt, Editor, um die **Tools** Menü.  
   
-9. Now you should see Notepad on the Tools / Options menu, and clicking **Notepad** should bring up an instance of Notepad.
+9. Nun Sie Notepad Extras sehen / Optionen im Menü klicken und **Editor** sollte eine Instanz von Editor öffnen.

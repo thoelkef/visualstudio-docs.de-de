@@ -1,4 +1,5 @@
 # [R Tools für Visual Studio](index.md)
+## [Arbeitsauslastung von Data Science und analytischen Anwendungen](data-science-workload.md)
 ## [Installation](installation.md)
 ## [Erste Schritte mit R](getting-started-with-r.md)
 ### [Beispiele](getting-started-samples.md)
