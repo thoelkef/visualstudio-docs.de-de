@@ -34,11 +34,11 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 3bf359535d5b11edb95910afe5a81ca048ab9c21
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugsymbolprovidergetmethodfieldsbyname"></a>IDebugSymbolProvider::GetMethodFieldsByName
-This method gets the field representing a fully qualified method name.  
+Diese Methode ruft das Feld, das einen Namen für vollständig qualifizierte Methode darstellt.  
   
 ## <a name="syntax"></a>Syntax  
   
@@ -58,22 +58,22 @@ int GetMethodFieldsByName(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  `pszFullName`  
- [in] The method name.  
+ [in] Der Methodenname.  
   
  `nameMatch`  
- [in] Selects the type of match, for example, case-sensitive.  
+ [in] Wählt den Typ der Übereinstimmung, z. B. Groß-/Kleinschreibung beachtet.  
   
  `ppEnum`  
- [out] Returns an [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) enumerator for the fields associated with this method.  
+ [out] Gibt eine [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) Enumerator für die Felder, die dieser Methode zugeordnet.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Remarks  
- A method can be associated with multiple fields if it is overloaded, for example.  
+## <a name="remarks"></a>Hinweise  
+ Eine Methode kann mehrere Felder zugeordnet werden, wenn dieser überlastet ist, z. B..  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
