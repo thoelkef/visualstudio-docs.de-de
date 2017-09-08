@@ -1,6 +1,6 @@
 ---
-title: "Installieren von Visual Studio für Mac"
-description: "Anweisungen zum Installieren von Visual Studio für Mac und zusätzlicher erforderlichen Komponenten für die plattformübergreifende Entwicklung"
+title: Install Visual Studio for Mac
+description: Instructions on how to install Visual Studio for Mac and additional components required for cross-platform development.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
@@ -8,71 +8,82 @@ ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 24d2fa5f9054e621cd5167692a2571e9275c2bae
+ms.sourcegitcommit: d4e4258ae5cd0bb564a9d9b8b731256bb39ada11
+ms.openlocfilehash: 5a89260b405ad655d331425d65a14985f4c46c11
 ms.contentlocale: de-de
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 09/08/2017
 
 ---
 
-# <a name="setup-and-install-visual-studio-for-mac"></a>Einrichten und Installieren von Visual Studio für Mac
+# <a name="setup-and-install-visual-studio-for-mac"></a>Setup and Install Visual Studio for Mac
 
 ## <a name="setup"></a>Setup
 
-Um mit der Entwicklung nativer, plattformübergreifender Apps zu beginnen, wenn Sie Visual Studio für Mac heruntergeladen haben, müssen Sie vorher verschiedene Installationen und Setups durchführen.
+To start developing native, cross-platform apps when you download Visual Studio for Mac there are a couple of things that you must install and set up in preparation.
 
-Damit Visual Studio unter iOS funktioniert, benötigen Sie Folgendes:
+For working with iOS in Visual Studio you need the following pieces:
 
-* einen Mac mit macOS Sierra 10.12 oder höher
+* a Mac with macOS Sierra 10.12 or above
 * Xcode 8.3
-* eine Apple-ID Erstellen Sie eine kostenlose Apple-ID unter https://appleid.apple.com, wenn Sie noch keine besitzen. Dies ist für die Installation von und die Anmeldung bei Xcode erforderlich.
+* An Apple ID. If you don't have an Apple ID already you can create a new one at https://appleid.apple.com. It's necessary to have an Apple ID for installing and signing into Xcode.
 
-## <a name="install"></a>Installieren
+## <a name="install"></a>Install
 
-1. Laden Sie Visual Studio für Mac unter [https://www.visualstudio.com/](https://www.visualstudio.com/) herunter.
+1. Download Visual Studio for Mac from [https://www.visualstudio.com/](https://www.visualstudio.com/)
 
-2. Wenn das Installer-Paket heruntergeladen wurde, klicken Sie auf die Datei **VisualStudioInstaller.dmg**, um den Installer einzubinden, und führen Sie in dann aus, indem Sie das Logo doppelklicken, wie in der folgenden Abbildung veranschaulicht:
+2. Once the installer package is downloaded, click the **VisualStudioInstaller.dmg** file to mount the installer and then run it by double-clicking the logo, as illustrated by the following image:
 
-  ![Dialogfeld „Installer“](media/installer-image1.png)
+  ![Installer dialog](media/installer-image1.png)
 
-3. Möglicherweise wird ein Warnungsdialogfeld wie das folgende angezeigt. Klicken Sie in einem solchen Fall auf **Öffnen**:
+3. You might be prompted with an alert dialog similar to the following image. In this case, click **Open**:
 
-  ![Warnungsdialogfeld](media/installer-image2.png)
+  ![alert dialog](media/installer-image2.png)
 
-4. Der Installer prüft Ihr System, um zu bestimmen, welche Komponenten installiert oder aktualisiert werden müssen:
+4. The installer inspects your system to verify which components need to be installed or updated:
 
-  ![Bewerten Ihres Systems](media/installer-image3.png)
+  ![Assessing your system](media/installer-image3.png)
 
-5. Dann wird ein Warnungsdialogfeld angezeigt, über das Sie aufgefordert werden, die Datenschutz- und Lizenzbedingungen zu akzeptieren. Klicken Sie auf die Schaltfläche **Weiter**, um die Bedingungen zu akzeptieren.
+5. You'll then be presented with an alert dialog asking you to acknowledge the Privacy and License terms. Press the **Continue** button to acknowledge the terms:
 
-  ![Dialogfeld „Lizenz“](media/installer-image4.png)
+  ![License dialog](media/installer-image4.png)
 
-6. Der Installer zeigt eine Liste der erforderlichen Komponenten an, die fehlen und die heruntergeladen und installiert werden müssen. Wählen Sie hier die Produkte aus, die Sie herunterladen möchten:
+6. The installer presents a list of required components that are missing and that need to be downloaded and installed. Select the products you wish to download here:
 
-  ![Auswählen von Elementen](media/installer-image5.png)
+  ![Select Items](media/installer-image5.png)
 
-  Auf dieser Installationsseite wird die Version und Größe jeder einzelnen Komponente angezeigt. Sie können auf jede Komponente klicken, um eine Liste mit deren Abhängigkeiten (für Android), zusätzliche heruntergeladenen Pakete (für .NET Core) oder zusätzliche erforderliche Anwendungen (für iOS und macOS) anzuzeigen.
+  This installation screen displays the version and size of each individual component. You can click each component to display a list of dependencies for that component (for Android), see additional packages that it downloads (for .NET Core), or view any additional applications required (for iOS and macOS):
 
-  ![Zusätzliche Abhängigkeiten von Android](media/installer-image6.png)
+  ![Android additional dependencies](media/installer-image6.png)
 
-7. Sobald Sie mit Ihrer Auswahl zufrieden sind, klicken Sie auf die Schaltfläche **Installieren und aktualisieren**, um mit dem Installationsprozess zu beginnen.
+7. Once you are happy with your selection, select the **Install and Update** button to start the installation process.
 
-8. Der Installer startet mit dem Download- und Installationsprozess der ausgewählten Elemente:
+8. The installer starts the download and install process of the selected items:
 
-  ![Starten der Installation](media/installer-image7.png)
+  ![Starting Installation](media/installer-image7.png)
 
-  ![Herunterladen von Xamarin.Mac](media/installer-image8.png)
+  ![Downloading Xamarin.Mac](media/installer-image8.png)
 
-  ![Fertigstellen der Installation](media/installer-image9.png)
+  ![Finishing Installation](media/installer-image9.png)
 
-9. Möglicherweise werden Sie dazu aufgefordert, die erforderlichen Berechtigungen für einzelne Komponenten zu erhöhen, die zum Abschluss der Installation erforderlich sind. Geben Sie hier Ihre Administratoranmeldeinformationen ein, um mit dem Installationsprozess fortzufahren:
+9. You might be prompted to elevate the permissions necessary for individual components that are needed to complete installation. Enter your administrator credentials here to continue the installation process:
 
-  ![Eingeben der Berechtigungen zum Fortfahren des Installers](media/installer-image10.png)
+  ![Enter permissions to continue with installer](media/installer-image10.png)
 
-10. Sobald die Installation erfolgreich abgeschlossen wurde, können Sie mit der Entwicklung von Apps in Visual Studio beginnen, indem Sie auf **Start** drücken.
+10. Once the installation is successful, you can start developing apps in Visual Studio by pressing **Start**:
 
-  ![Öffnen Sie Visual Studio.](media/installer-image11.png)
+  ![Open Visual Studio](media/installer-image11.png)
 
 > [!NOTE]
-Wenn Sie sich gegen die Installation einer Plattform oder eines Tools während der ursprünglichen Installation entschieden haben (indem Sie die Auswahl in Schritt 6 gelöscht haben), müssen Sie den [Installer](https://www.visualstudio.com/vs/) erneut ausführen, wenn Sie die Komponenten später hinzufügen möchten.
+If you chose not install a platform or tool during the original installation (by unselecting it in step #6), you must run the [installer](https://www.visualstudio.com/vs/) again if you wish to add the components later.
 
+## <a name="manual-installation"></a>Manual Installation
+
+If your installation fails or any single component of your installation fails, you may be able to resolve the issue through manual installation. To view the required components and download each one, take the following steps:
+
+1. On the second screen on the Visual Studio Installer, go to the menu bar and select **View Manual Installation Instructions**:
+
+    ![Option showing manual install menu item](media/installer-image12.png)
+
+2. Follow the instructions to download and install the components manually:
+
+  ![Manual installation dialog](media/installer-image13.png)
