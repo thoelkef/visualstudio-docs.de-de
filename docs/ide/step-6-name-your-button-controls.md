@@ -53,7 +53,7 @@ Es gibt nur ein PictureBox-Steuerelement im Formular. Als Sie es hinzugefügt ha
 Eigenschaftenfenster mit closeButton-Name  
   
     > [!NOTE]
-    >  If you try changing the name of your button to **closeButton**, with a space between the words close and Button, the IDE displays an error message: "Property value is not valid." Leerzeichen (und einige andere Zeichen) sind in Steuerelementnamen nicht zulässig.  
+    >  Wenn Sie versuchen, den Namen der Schaltfläche in **closeButton** zu ändern, also mit einem Leerzeichen zwischen den beiden Wörtern, zeigt die IDE eine Fehlermeldung an: "Der Eigenschaftswert ist ungültig". Leerzeichen (und einige andere Zeichen) sind in Steuerelementnamen nicht zulässig.  
   
 2.  Benennen Sie die anderen drei Schaltflächen in **backgroundButton**, **clearButton**und **showButton**um. Sie können die Namen überprüfen, indem Sie im Fenster **Eigenschaften** die Steuerelementauswahl-Dropdownliste auswählen. Die neuen Schaltflächennamen werden angezeigt.  
   
