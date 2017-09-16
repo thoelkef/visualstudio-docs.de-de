@@ -1,6 +1,6 @@
 ---
-title: Visual Studio Test Agent 2017 workload and component IDs | Microsoft Docs
-description: Use Visual Studio workload and component IDs to run automated tests and load tests remotely
+title: Arbeitsauslastungs- und Komponenten-IDs in Visual Studio Test Agent 2017 | Microsoft-Dokumentation
+description: "Verwenden Sie Arbeitsauslastungs- und Komponenten-IDs in Visual Studio, um automatisierte Tests auszuführen und diese remote zu laden"
 keywords: 
 author: TerryGLee
 ms.author: tglee
@@ -35,48 +35,48 @@ ms.translationtype: HT
 ms.sourcegitcommit: 96018963278cd1d53b226473baade41da1e98111
 ms.openlocfilehash: 78a656f32068055326567223b8ce6cd68095e647
 ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 
-# <a name="visual-studio-test-agent-2017-component-directory"></a>Visual Studio Test Agent 2017 component directory
+# <a name="visual-studio-test-agent-2017-component-directory"></a>Visual Studio Test Agent 2017-Komponentenverzeichnis
 
-The tables on this page list the IDs that you can use to install Visual Studio by using the command line. Note that we will add additional components as we release updates to Visual Studio.
+In den Tabellen auf dieser Seite sind die IDs aufgeführt, die Sie verwenden können, um Visual Studio über die Befehlszeile zu installieren. Beachten Sie, dass weitere Komponenten hinzugefügt werden, wenn wir Updates für Visual Studio veröffentlichen.
 
-Also note the following about the page:
+Beachten Sie zudem Folgendes im Hinblick auf die Seite:
 
-* Each workload has its own section, followed by the workload ID and a table of the components that are available for the workload.
-* By default, the **Required** components will be installed when you install the workload. If you choose to, you can also install the **Recommended** and **Optional** components.
-* We've also added a section that lists the additional components that are not affiliated with any workload.
+* Für jede Arbeitsauslastung gibt es einen eigenen Abschnitt, gefolgt von der Arbeitsauslastungs-ID und einer Tabelle der Komponenten, die für die Arbeitsauslastung zur Verfügung stehen.
+* Die **erforderlichen** Komponenten werden standardmäßig bei der Installation der Arbeitsauslastung installiert. Bei Bedarf können Sie auch die **empfohlenen** und **optionalen** Komponenten installieren.
+* Wir haben auch einen Abschnitt hinzugefügt, in dem die zusätzlichen Komponenten aufgeführt sind, die keiner Arbeitsauslastung zugeordnet sind.
 
-For more information about how to use these IDs, see [Use Command-Line Parameters to Install Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) page. And, for a list of workload and component IDs for other products, see [Visual Studio 2017 Workload and Component IDs](workload-and-component-ids.md) page.
+Weitere Informationen zur Verwendung dieser IDs finden Sie auf der Seite [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md). Eine Liste der Arbeitsauslastungs- und Komponenten-IDs für andere Produkte finden Sie auf der Seite [Arbeitsauslastungs- und Komponenten-IDs in Visual Studio 2017](workload-and-component-ids.md).
 
 ## <a name="test-agent"></a>Test Agent
 
 **ID:** Microsoft.VisualStudio.Workload.TestAgent
 
-**Description:** Supports running automated tests and load tests remotely
+**Beschreibung:** Unterstützt die Remoteausführung von automatisierten Tests und Auslastungstests
 
-### <a name="components-included-by-this-workload"></a>Components included by this workload
+### <a name="components-included-by-this-workload"></a>Komponenten in dieser Arbeitsauslastung
 
-Component ID | Name | Version | Dependency type
+Komponenten-ID | Name | Version | Abhängigkeitstyp
 --- | --- | --- | ---
-Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Test Agent core features | 15.0.26606.0 | Required
+Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Test Agent-Kernfeatures | 15.0.26606.0 | Erforderlich
 
-## <a name="unaffiliated-components"></a>Unaffiliated components
+## <a name="unaffiliated-components"></a>Nicht zugeordnete Komponenten
 
-These are components that are not included with any workload, but may be selected as an individual component.
+Dies sind Komponenten, die in keiner Arbeitsauslastung enthalten sind, jedoch als einzelne Komponenten ausgewählt werden können.
 
-Component ID | Name | Version
+Komponenten-ID | Name | Version
 --- | --- | ---
-n/a | n/a | n/a
+n/v | nicht verfügbar | n/v
 
 
-## <a name="see-also"></a>See also
+## <a name="see-also"></a>Siehe auch
 
-* [Visual Studio workload and component IDs](workload-and-component-ids.md)
-* [Visual Studio administrator guide](visual-studio-administrator-guide.md)
-* [Use command-line parameters to install Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-  * [Command-line parameter examples](command-line-parameter-examples.md)
-* [Create an offline installation of Visual Studio](create-an-offline-installation-of-visual-studio.md)
+* [Arbeitsauslastung und Komponenten-IDs von Visual Studio](workload-and-component-ids.md)
+* [Administratorhandbuch für Visual Studio 2017 RC](visual-studio-administrator-guide.md)
+* [Verwenden von Befehlszeilenparametern zum Installieren von Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+  * [Beispiele für Befehlszeilenparameter](command-line-parameter-examples.md)
+* [Erstellen einer Offlineinstallation von Visual Studio](create-an-offline-installation-of-visual-studio.md)
 

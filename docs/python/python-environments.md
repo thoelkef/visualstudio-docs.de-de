@@ -1,5 +1,5 @@
 ---
-title: Python-Umgebungen in Visual Studio | Microsoft-Dokumentation
+title: Python Environments in Visual Studio | Microsoft Docs
 ms.custom: 
 ms.date: 7/25/2017
 ms.prod: visual-studio-dev15
@@ -16,255 +16,255 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: e48ebcafaca37505dbcc92bce682d0c6169004e1
-ms.openlocfilehash: fa8a7616fe88f024ab299e5d115b66f8656e7cb3
+ms.sourcegitcommit: 4013eb0b251985b0984d0cbf2a723175fe91aad5
+ms.openlocfilehash: 9c0a841bf7607baa78d79245713a1fd648228f2a
 ms.contentlocale: de-de
-ms.lasthandoff: 07/26/2017
+ms.lasthandoff: 09/09/2017
 
 ---
 
-# <a name="python-environments"></a>Python-Umgebungen
+# <a name="python-environments"></a>Python environments
 
-Python in Visual Studio erleichtert das Verwalten mehrerer Python-Umgebungen und den Wechsel zwischen den Umgebungen für verschiedene Projekte. 
+Python in Visual Studio makes it easy to manage multiple Python environments and easily switch between them for different projects. 
 
-Hinweis: Wenn Sie noch nicht mit Python in Visual Studio vertraut sind, sollten Sie sich zunächst mit den folgenden Themen beschäftigen, da die aktuelle Diskussion auf ihnen basiert:
+Note: if you're new to Python in Visual Studio, see the following topics first as this present discussion relies upon them:
 
-- [Arbeiten mit Python in Visual Studio](python-in-visual-studio.md)
-- [Installieren von Python-Unterstützung für Visual Studio](installation.md)
+- [Working with Python in Visual Studio](python-in-visual-studio.md)
+- [Installing Python support in Visual Studio](installation.md)
 
-Eine Python-*Umgebung*, in der Python-Code stets ausgeführt wird, besteht aus einem Interpreter, einer Bibliothek (in der Regel die Python-Standardbibliothek) und einer Gruppe installierter Pakete. Gemeinsam bestimmen diese Komponenten, welche Sprachkonstrukte und Syntax gültig sind, auf welche Betriebssystemfunktionen Sie zugreifen können und welche Pakete Sie verwenden können.
+A Python *environment*, in which you always run Python code, consists of an interpreter, a library (typically the Python Standard Library), and a set of installed packages. Together these components determine which language constructs and syntax are valid, what operating-system functionality you can access, and which packages you can use.
 
-In Visual Studio enthält eine Umgebung auch eine IntelliSense-Datenbank für die Bibliotheken der Umgebung. Wenn Sie also eine Anweisung wie `import` im Visual Studio-Editor eingeben, wird automatisch eine Liste der verfügbaren Bibliotheken sowie der Module in diesen Bibliotheken angezeigt.
+In Visual Studio, an environment also includes an IntelliSense database for an environment's libraries, such that typing a statement like `import` in the Visual Studio editor automatically displays a list of available libraries as well as the modules within those libraries.
 
-Häufig verwenden Entwickler nur eine einzige, globale Python-Umgebung. Andere Entwickler müssen jedoch mehrere globale Umgebungen, projektspezifische Umgebungen und virtuelle Umgebungen verwalten. Dies wird in diesen Themen beschrieben:
+Oftentimes, developers use only a single, global Python environment. Other developers, however, need to manage multiple global environments, project-specific environments, and virtual environments as explained in this topic:
 
-- [Auswählen und Installieren von Python-Interpretern](#selecting-and-installing-python-interpreters)
-- [Verwalten von Python-Umgebungen in Visual Studio](#managing-python-environments-in-visual-studio)
-- [Globale Umgebungen](#global-environments)
-- [Projektspezifische Umgebungen](#project-specific-environments)
-- [Virtuelle Umgebungen](#virtual-environments)
-- [Verwalten von erforderlichen Paketen](#managing-required-packages)
-- [Suchpfade](#search-paths)
+- [Selecting and installing Python interpreters](#selecting-and-installing-python-interpreters)
+- [Managing Python environments in Visual Studio](#managing-python-environments-in-visual-studio)
+- [Global environments](#global-environments)
+- [Project-specific environments](#project-specific-environments)
+- [Virtual environments](#virtual-environments)
+- [Managing required packages](#managing-required-packages)
+- [Search paths](#search-paths)
 
-Ein Einführungsvideo finden Sie unter [Deep Dive: Python Interpreters](https://youtu.be/KY1GEOo3qy0) (youtube.com, 13 Min., 27 Sek.).
+For a video introduction, see [Deep Dive: Python Interpreters](https://youtu.be/KY1GEOo3qy0) (youtube.com, 13m27s).
 
 > [!VIDEO https://www.youtube.com/embed/KY1GEOo3qy0]
 
-## <a name="selecting-and-installing-python-interpreters"></a>Auswählen und Installieren von Python-Interpretern
+## <a name="selecting-and-installing-python-interpreters"></a>Selecting and installing Python interpreters
 
-Außer bei Visual Studio 2017 umfasst die Python-Unterstützung keinen Python-Interpreter. Sie müssen also einen der folgenden Interpreter zum Ausführen des Codes installieren. Im Allgemeinen erkennt Visual Studio neu installierte Interpreter automatisch und richtet für jeden eine Umgebung ein. Wenn dies nicht der Fall ist, finden Sie unter [Erstellen einer Umgebung für einen vorhandenen Interpreter](#creating-an-environment-for-an-existing-interpreter) weitere Informationen.
+Except with Visual Studio 2017, Python support does not come with a Python interpreter, so you need to install one of the following to run your code. In general, Visual Studio automatically detects newly installed interpreters and sets up an environment for each. If it does not detect an installed environment, see [Creating an environment for an existing interpreter](#creating-an-environment-for-an-existing-interpreter).
 
-| Interpreter | Beschreibung | 
+| Interpreter | Description | 
 | --- | --- | 
-| [CPython](https://www.python.org/) | Der „native“ und am häufigsten verwendete Interpreter, verfügbar in 32- und 64-Bit-Versionen (32-Bit wird empfohlen). Er umfasst die neuesten Sprachfeatures, die maximale Python-Paketkompatibilität, vollständige Unterstützung für das Debuggen und Interoperabilität mit [IPython](http://ipython.org/). Siehe auch: [Should I use Python 2 or Python 3?](http://wiki.python.org/moin/Python2orPython3) (Sollte ich Python 2 oder Python 3 verwenden?) |
-| [IronPython](https://github.com/IronLanguages/main) | Eine .NET-Implementierung von Python, verfügbar in 32-Bit- und 64-Bit-Versionen, die C#-/F#-/Visual Basic-Interoperabilität, Zugriff auf .NET APIs, Python-Standarddebuggen (jedoch kein C++-Debuggen im gemischten Modus) und IronPython-/C#-Debuggen im gemischten Modus bietet. IronPython unterstützt jedoch keine virtuelle Umgebungen. | 
-| [Anaconda](https://www.continuum.io) | Eine offene Data Science-Plattform, die von Python unterstützt wird und die neueste Version von CPython sowie die meisten der nicht leicht zu installierenden Pakete enthält. Wir empfehlen diesen Interpreter, wenn keine andere Entscheidung möglich ist. |
-| [PyPy](http://www.pypy.org/) | Eine leistungsstarke JIT-Implementierung für die Ablaufverfolgung von Python, die gut für Programme mit langer Ausführungszeit und Situationen, in denen Sie Leistungsprobleme identifizieren, jedoch keine anderen Lösungen finden können, geeignet ist. Der Interpreter kann mit Visual Studio verwendet werden, bietet jedoch nur eingeschränkte Unterstützung für erweiterte Debugfunktionen. |
-| [Jython](http://www.jython.org/) | Eine Implementierung von Python auf der Java Virtual Machine (JVM). Ähnlich wie bei IronPython kann in Jython ausgeführter Code mit Java-Klassen und -Bibliotheken interagieren, aber möglicherweise viele für CPython vorgesehene Bibliotheken nicht verwenden. Der Interpreter kann mit Visual Studio verwendet werden, bietet jedoch nur eingeschränkte Unterstützung für erweiterte Debugfunktionen. |
+| [CPython](https://www.python.org/) | The "native" and most commonly-used interpreter, available in 32-bit and 64-bit versions (32-bit recommended). Includes the latest language features, maximum Python package compatibility, full debugging support, and interop with [IPython](http://ipython.org/). See also: [Should I use Python 2 or Python 3?](http://wiki.python.org/moin/Python2orPython3). Note that Visual Studio 2015 and earlier do not support Python 3.6 and can give the error "Unsupported python version 3.6". Use Python 3.5 or earlier instead. |
+| [IronPython](https://github.com/IronLanguages/main) | A .NET implementation of Python, available in 32-bit and 64-bit versions, providing C#/F#/Visual Basic interop, access to .NET APIs, standard Python debugging (but not C++ mixed-mode debugging), and mixed IronPython/C# debugging. IronPython, however, does not support virtual environments. | 
+| [Anaconda](https://www.continuum.io) | An open data science platform powered by Python, and includes the latest version of CPython and most of the difficult-to-install packages. We recommend it if you can't otherwise decide. |
+| [PyPy](http://www.pypy.org/) | A high-performance tracing JIT implementation of Python that's good for long-running programs and situations where you identify performance issues but cannot find other resolutions. Works with Visual Studio but with limited support for advanced debugging features. |
+| [Jython](http://www.jython.org/) | An implementation of Python on the Java Virtual Machine (JVM). Similar to IronPython, code running in Jython can interact with Java classes and libraries, but may not be able to use many libraries intended for CPython. Works with Visual Studio but with limited support for advanced debugging features. |
 
-Wenn Sie als Entwickler neue Formen der Erkennung für Python-Umgebungen bereitstellen möchten, finden Sie unter [PTVS Environment Detection](https://github.com/Microsoft/PTVS/wiki/Extensibility-Environments) (PTVS-Umgebungserkennung, github.com) weitere Informationen.
+Developers that want to provide new forms of detection for Python environments, see [PTVS Environment Detection](https://github.com/Microsoft/PTVS/wiki/Extensibility-Environments) (github.com).
 
-## <a name="managing-python-environments-in-visual-studio"></a>Verwalten von Python-Umgebungen in Visual Studio
+## <a name="managing-python-environments-in-visual-studio"></a>Managing Python environments in Visual Studio
 
-Um das Fenster „Python-Umgebungen“ zu öffnen, führen Sie einen der folgenden Schritte aus:
+To open the Python Environments window, do one of the following:
 
-1. Wählen Sie den Menübefehl **Ansicht > Weitere Fenster > Python-Umgebungen** aus.
-1. Klicken Sie für ein Projekt im Projektmappen-Explorer mit der rechten Maustaste auf **Python-Umgebungen**, und wählen Sie **Alle Python-Umgebungen anzeigen** aus:
+1. Select the **View > Other Windows > Python Environments** menu command.
+1. Right-click the **Python Environments** for a project in Solution Explorer and select **View All Python Environments**:
 
-    ![Befehl „Alle Umgebungen anzeigen“ im Projektmappen-Explorer](media/environments-view-all.png)
+    ![View All Environments command in Solution Explorer](media/environments-view-all.png)
     
-In jedem Fall wird das Fenster „Python-Umgebungen“ als gleichgeordnete Registerkarte des Projektmappen-Explorers angezeigt:
+In either case, the Python Environments window appears as a sibling tab to Solution Explorer:
 
-![Fenster „Python-Umgebungen“](media/environments-default-view.png)
+![Python Environments window](media/environments-default-view.png)
 
-Im Beispiel oben wird Python 3.4 (32-Bit-CPython) zusammen mit den 32-Bit- und 64-Bit-Versionen von IronPython 2.7 installiert. In diesem Fall ist die fettgedruckte Standardumgebung Python 3.4, die für alle neuen Projekte verwendet wird. Wenn keine Umgebungen angezeigt werden, bedeutet dies, dass Sie Python-Tools für Visual Studio in Visual Studio 2015 oder früher installiert haben, aber noch keinen Python-Interpreter (siehe [Auswählen und Installieren von Python-Interpretern](#selecting-and-installing-python-interpreters) oben). 
+The example above shows that Python 3.4 (32-bit CPython) is installed along with 32-bit and 64-bit versions of IronPython 2.7. In this case, the default environment in boldface is Python 3.4, which is used for any new projects. If you don't see any environments listed, it means that you've installed Python Tools for Visual Studio in Visual Studio 2015 or earlier, but haven't installed a Python interpreter (see [Selecting and installing Python interpreters](#selecting-and-installing-python-interpreters) above). 
 
 > [!Tip]
-> Wenn das Fenster **Python-Umgebungen** schmal ist, wie oben dargestellt ist, werden die Umgebungen oben und die verschiedenen Registerkarten unten aufgeführt. Wenn Sie das Fenster jedoch ausreichend erweitern, wird die Ansicht in eine breite Ansicht geändert, in der Sie möglicherweise bequemer arbeiten können.
+> When the **Python Environments** window is narrow, as shown above, the environments are listed on the top and the various tabs on the bottom. Expanding the window enough, however, changes to a wide view that you may find more convenient to work with.
 >
-> ![Erweiterte Ansicht des Fensters „Python-Umgebungen“](media/environments-expanded-view.png)
+> ![Python Environments window expanded view](media/environments-expanded-view.png)
 
 > [!Note]
-> Obwohl Visual Studio die Option „system-site-packages“ beachtet, gibt es keine Möglichkeit, sie in Visual Studio zu ändern.
+> Although Visual Studio respects the system-site-packages option, it doesn't provide a way to change it from within Visual Studio.
 
-### <a name="creating-an-environment-for-an-existing-interpreter"></a>Erstellen eine Umgebung für einen vorhandenen Interpreter
+### <a name="creating-an-environment-for-an-existing-interpreter"></a>Creating an environment for an existing interpreter
 
-Visual Studio ermittelt einen installierten Python-Interpreter in der Regel durch Überprüfen der Registrierung (gemäß den Angaben unter [PEP 514 - Python registration in the Windows registry](https://www.python.org/dev/peps/pep-0514/) [PEP 514 – Registrieren von Python in der Windows-Registrierung]). Visual Studio findet den Interpreter jedoch möglicherweise nicht, wenn dieser nicht auf standardmäßige Art und Weise installiert ist. In solchen Fällen können Sie Visual Studio wie folgt direkt auf den Interpreter verweisen:
+Visual Studio normally locates an installed Python interpreter by checking the registry (following [PEP 514 - Python registration in the Windows registry](https://www.python.org/dev/peps/pep-0514/)). However, Visual Studio may not find it if the interpreter is installed in a non-standard fashion. In such cases, you can point Visual Studio directly to the interpreter as follows:
 
-1. Wählen Sie im Fenster „Python-Umgebungen“ **+ Benutzerdefiniert** aus. Damit wird eine neue Umgebung erstellt, und die [Registerkarte **Konfigurieren**](#configure-tab) wird geöffnet, die weiter unten beschrieben wird.
+1. Select **+ Custom...** in the Environments Window, which creates a new environment and opens the [**Configure** tab](#configure-tab) described below.)
 
-    ![Standardansicht für eine neue benutzerdefinierte Umgebung](media/environments-custom-1.png)
+    ![Default view for a new custom environment](media/environments-custom-1.png)
 
-1. Geben Sie einen Namen für die Umgebung in das Feld **Beschreibung** ein.
-1. Geben Sie den Pfad des Interpreters in das Feld **Präfixpfad** ein, oder navigieren Sie dahin.
-1. Wählen Sie **Automatisch erkennen** aus, damit Visual Studio die verbleibenden Felder ausfüllt, oder füllen Sie sie manuell aus.
-1. Wählen Sie **Übernehmen** aus, um die Umgebung zu speichern.
-1. Wenn Sie die Umgebung entfernen möchten, wählen Sie auf der Registerkarte **Konfigurieren** den Befehl **Entfernen** aus. Umgebungen mit automatischer Erkennung bieten diese Option nicht. Weitere Informationen finden Sie im nächsten Abschnitt.
+1. Enter a name for the environment in the **Description** field.
+1. Enter or browse to the path of the interpreter in the **Prefix path** field.
+1. Select **Auto Detect** to have Visual Studio complete the remaining fields, or complete them manually.
+1. Select **Apply** to save the environment.
+1. If you need to remove the environment, select the **Remove** command on the **Configure** tab. Auto-detected environments do not provide this option. See the next section for more information.
 
-### <a name="moving-an-existing-interpreter"></a>Verschieben eines vorhandenen Interpreters
+### <a name="moving-an-existing-interpreter"></a>Moving an existing interpreter
 
-Wenn Sie einen vorhandenen Interpreter in einen neuen Speicherort im Dateisystem verschieben, erkennt Visual Studio diese Änderung nicht automatisch. Zum Aktualisieren der Liste im Fenster „Umgebung“ sind manuelle Schritte erforderlich:
+If you move an existing interpreter to a new location on the file system, Visual Studio doesn't automatically detect the change. Manual steps are necessary to update the list in the Environment window:
 
-- Wenn Sie ursprünglich eine Umgebung für diesen Interpreter erstellt haben, bearbeiten Sie diese Umgebung, sodass diese auf den neuen Speicherort zeigt.
+- If you originally created an environment for that interpreter, edit that environment to point to the new location.
 
-- Wenn die Umgebung ursprünglich automatisch erkannt wurde, wurde sie mit einem bestimmten Installationsprogramm auf dem Computer installiert, das die von Visual Studio überprüften Registrierungseinträge erstellt hat. In diesem Fall stellen Sie den Python-Interpreter zunächst an seinem ursprünglichen Speicherort wieder her. Danach deinstallieren Sie den Interpreter mithilfe des Installationsprogramms; dabei werden die Registrierungseinträge gelöscht. Installieren Sie den Interpreter dann am gewünschten Speicherort. Starten Sie Visual Studio neu – jetzt sollte der neue Speicherort automatisch erkannt werden. Dieses Verfahren stellt sicher, dass alle Nebeneffekte des Installationsprogramms ordnungsgemäß verarbeitet werden.
+- If the environment was originally auto-detected, it was installed on the computer with a distinct installer program that created the registry entries that Visual Studio examines. In this case, first restore the Python interpreter to its original location. Then uninstall it using the installer, which clears the registry entries. Then reinstall the interpreter at the desired location. Restart Visual Studio and it should auto-detect the new location. This process ensures that any other side effects of the installer are properly applied.
 
-### <a name="overview-tab"></a>Registerkarte „Übersicht“
+### <a name="overview-tab"></a>Overview tab
 
-Bietet grundlegende Informationen und Befehle für die Umgebung:
+Provides basic information and commands for the environment:
 
-![Registerkarte „Übersicht“ von Python-Umgebungen](media/environments-overview-tab.png)
+![Python Environments overview tab](media/environments-overview-tab.png)
 
-| Befehl | Beschreibung |
+| Command | Description |
 | --- | --- |
-| Diese Umgebung zum Standard für neue Projekte machen | Legt die aktive Umgebung fest, die möglicherweise dazu führt, dass Visual Studio kurz nicht mehr reagiert, während die IntelliSense-Datenbank geladen wird. Umgebungen mit vielen Paketen reagieren möglicherweise längere Zeit nicht mehr. |
-| Website des Verteilers besuchen | Öffnen eine von der Python-Verteilung bereitgestellt URL in einem Browser. Python 3.x öffnet beispielsweise python.org. |
-| Interaktives Fenster öffnen | Öffnet das [interaktive Fenster (REPL)](interactive-repl.md) für diese Umgebung in Visual Studio und wendet alle [Startskripts (siehe unten)](#startup-scripts) an. |
-| Interaktiven IPython-Modus verwenden | Wenn diese Option aktiviert ist, wird das interaktive Fenster standardmäßig mit Python geöffnet. Dadurch sind Inline-Plots und erweiterte IPython-Syntax möglich, wie z.B. `name?` zum Anzeigen der Hilfe und `!command` für Shellbefehle. Diese Option wird empfohlen, wenn Sie eine Verteilung von Anaconda verwenden, da diese zusätzliche Pakete erfordert. Weitere Informationen finden Sie unter [Verwenden von Python im interaktiven Fenster](interactive-repl-ipython.md). |
-| In PowerShell öffnen | Öffnet den Interpreter in einem Befehlsfenster von PowerShell. |
-| (Ordnerlinks) | Bieten Ihnen schnellen Zugriff auf den Installationsordner der Umgebung und die Interpreter „python.exe“ und „pythonw.exe“. Ersterer wird im Windows Explorer geöffnet, die anderen beiden in einem Konsolenfenster. |
+| Make this environment the default for new projects | Sets the active environment, which may cause Visual Studio to briefly become non-responsive while it loads the IntelliSense database. Environments with many packages may be non-responsive for longer. |
+| Visit the distributor's website | Opens a browser to the URL provided by the Python distribution. Python 3.x, for example, goes to python.org. |
+| Open interactive window | Opens the [interactive (REPL) window](interactive-repl.md) for this environment within Visual Studio, applying any [startup scripts (see below)](#startup-scripts). |
+| Use IPython interactive mode | When set, opens the interactive window with IPython by default. This enabled inline plots as well as the extended IPython syntax such as `name?` to view help and `!command` for shell commands. This option is recommended when using an Anaconda distribution, as it requires extra packages. For more information, see [Using IPython in the Interactive Window](interactive-repl-ipython.md). |
+| Open in PowerShell | Starts the interpreter in a PowerShell command window. |
+| (Folder links) | Provide you quick access to the environment's installation folder, the python.exe interpreter, and the pythonw.exe interpreter. The first opens in Windows Explorer, the latter two open a console window. |
 
-#### <a name="startup-scripts"></a>Startskripte
+#### <a name="startup-scripts"></a>Startup scripts
 
-Beim Verwenden von interaktiven Fenstern in ihrem alltäglichen Workflow entwickeln Sie mit hoher Wahrscheinlichkeit Hilfsfunktionen, die Sie häufig verwenden. Möglicherweise erstellen Sie z.B. eine Funktion, die einen Datenrahmen in Excel öffnet. Dann können Sie den Code als Startskript speichern, sodass dieser immer über das interaktive Fenster verfügbar ist.
+As you use interactive windows in your everyday workflow, you likely develop helper functions that you use regularly. For example, you may create a function that opens a DataFrame in Excel, and then save that code as a startup script so that it's always available in the interactive window.
 
-Startskripts enthalten Code, der vom interaktiven Fenster automatisch geladen und ausgeführt wird, einschließlich Importe, Funktionsdefinitionen und vieles mehr. Auf derartige Skripts kann auf zwei Weisen verwiesen werden:
+Startup scripts contain code that the interactive window loads and runs automatically, including imports, function definitions, and literally anything else. Such scripts are referenced in two ways:
 
-1. Wenn Sie eine Umgebung installieren, erstellt Visual Studio einen Ordner `Documents\Visual Studio 2017\Python Scripts\<environment>`, in dem &lt;environment&gt' dem Namen der Umgebung entspricht. Sie können mit dem Befehl **Interaktive Skripts untersuchen** ganz leicht zum umgebungsspezifischen Ordner navigieren. Wenn Sie das interaktive Fenster für diese Umgebung starten, lädt es alle hier gefundenen `.py`-Dateien und führt diese in alphabetischer Reihenfolge aus.
+1. When you install an environment, Visual Studio creates a folder `Documents\Visual Studio 2017\Python Scripts\<environment>` where &lt;environment&gt' matches the name of the environment. You can easily navigate to the environment-specific folder with the **Explore interactive scripts** command. When you start the interactive window for that environment, it loads and runs whatever `.py` files are found here in alphabetical order.
 
-1. Das Steuerelement **Skripts** auf der Registerkarte **Extras > Optionen > Python Tools > Interaktives Fenster** (siehe [Optionen für das interaktive Fenster](options.md#interactive-windows-options)) soll einen zusätzlichen Ordner für Startskripts angeben, die in allen Umgebungen geladen und ausgeführt werden. Diese Funktion funktioniert aktuell noch nicht.
+1. The **Scripts** control in **Tools > Options > Python Tools > Interactive Windows** tab (see [Interactive windows options](options.md#interactive-windows-options)) is intended to specify an additional folder for startup scripts that are loaded and run in all environments. However, this feature doesn't work at present.
 
 
-### <a name="configure-tab"></a>Registerkarte „Konfigurieren“
+### <a name="configure-tab"></a>Configure tab
 
-Wenn sie angezeigt wird, enthält sie Details, wie die in der folgenden Tabelle beschriebenen. Wenn diese Registerkarte nicht vorhanden ist, bedeutet dies, dass alle Details von Visual Studio automatisch verwaltet werden.
+If shown, contains details as described in the table below. If this tab isn't present, it means that Visual Studio is managing all the details automatically.
 
-![Registerkarte „Konfigurieren“ von Python-Umgebungen](media/environments-configure-tab.png)
+![Python Environments configure tab](media/environments-configure-tab.png)
 
-| Feld | Beschreibung |
+| Field | Description |
 | --- | --- |
-| **Beschreibung** | Der Name für die Umgebung. |
-| **Präfixpfad** | Der Speicherort des Basisordners des Interpreters. Durch Festlegen dieses Werts und Klicken auf **Automatisch erkennen** versucht Visual Studio, die anderen Felder für Sie auszufüllen. |
-| **Interpreterpfad** | Der Pfad zur ausführbaren Datei des Interpreters, üblicherweise der Präfixpfad gefolgt von `python.exe`. |
-| **Fenstermodus-Interpreter** | Der Pfad zur ausführbaren Datei ohne Konsole, häufig der Präfixpfad gefolgt von `pythonw.exe`. |
-| **Bibliothekspfad** | Gibt den Stamm der Standardbibliothek an. Dieser Wert kann allerdings ignoriert werden, wenn Visual Studio einen genaueren Pfad vom Interpreter anfordern kann. |
-| **Sprachversion** | Wird im Dropdownmenü ausgewählt |
-| **Architektur** | Wird normalerweise automatisch erkannt und ausgefüllt, andernfalls 32-Bit oder 64-Bit. |
-| **Pfadumgebungsvariable** | Die Umgebungsvariable, die der Interpreter verwendet, um Suchpfade zu finden. Visual Studio ändert den Wert der Variablen, wenn Python gestartet wird, sodass sie die Suchpfade des Projekts enthält. In der Regel sollte diese Eigenschaft auf `PYTHONPATH` festgelegt werden, aber einige Interpreter verwenden einen anderen Wert. |
+| **Description** | The name to give the environment. |
+| **Prefix path** | The base folder location of the interpreter. By filling this value and clicking **Auto Detect**, Visual Studio attempts to fill in the other fields for you. |
+| **Interpreter path** | The path to the interpreter executable, commonly the prefix path followed by `python.exe` |
+| **Windowed interpreter** | The path to the non-console executable, often the prefix path followed by `pythonw.exe`. |
+| **Library path** | Specifies the root of the standard library, but this value may be ignored if Visual Studio is able to request a more accurate path from the interpreter. |
+| **Language version** | Selected from the drop-down menu. |
+| **Architecture** | Normally detected and filled in automatically, otherwise specifies 32-bit or 64-bit. |
+| **Path environment variable** | The environment variable that the interpreter uses to find search paths. Visual Studio changes the value of the variable when starting Python so that it contains the project's search paths. Typically this property should be set to `PYTHONPATH`, but some interpreters use a different value. |
 
-### <a name="pip-tab"></a>Registerkarte „pip“
+### <a name="pip-tab"></a>pip tab
 
-Verwaltet die in der Umgebung installierten Pakete und ermöglicht Ihnen auch, neue Pakete zu suchen und zu installieren (einschließlich der Abhängigkeiten). Das Suchen filtert Ihre aktuell installierten Pakete und [PyPI](https://pypi.python.org). Sie können auch einen `pip install`-Befehl direkt in das Suchfeld eingeben, einschließlich der Flags wie z.B. `--user` oder `--no-deps`.
+Manages the packages installed in the environment, allowing you also to and search for and install new ones (including any dependencies). Searching filters your currently installed packages and [PyPI](https://pypi.python.org). You can also directly enter any `pip install` command in the search box, including flags such as `--user` or `--no-deps`.
 
-![Registerkarte „pip“ von Python-Umgebungen](media/environments-pip-tab.png)
+![Python environments pip tab](media/environments-pip-tab.png)
 
-Durch das Installieren eines Pakets wird ein Unterordner im `Lib`-Ordner der Umgebung im Dateisystem erstellt. Wenn Sie z.B. Python 3.6 in `c:\Python36` installiert haben, werden Pakete in `c:\Python36\Lib` installiert. Wenn Sie Anaconda 3 in `c:\Program Files\Anaconda3` installiert haben, werden Pakete in `c:\Program Files\Anaconda3\Lib` installiert.
+Installing a package creates subfolders within the environment's `Lib` folder on the file system. For example, if you have Python 3.6 installed in `c:\Python36`, packages are installed in `c:\Python36\Lib`; if you have Anaconda3 installed in `c:\Program Files\Anaconda3` then packages are installed in `c:\Program Files\Anaconda3\Lib`.
 
-Im letzteren Fall muss Visual Studio `pip install` erhöht ausführen, damit es Unterordner erstellen kann, da die Umgebung sich in einem geschützten Bereich des Dateisystems befindet `c:\Program Files`. Wenn erhöhte Rechte erforderlich sind, zeigt Visual Studio folgende Aufforderung an: „Es sind möglicherweise Administratorberechtigungen erforderlich, um Pakete für diese Umgebung zu installieren, zu aktualisieren oder zu entfernen“:
+In the latter case, because the environment is located in a protected area of the file system, `c:\Program Files`, Visual Studio must run `pip install` elevated to allow it to create package subfolders. When elevation is required, Visual Studio displays the prompt, "Administrator privileges may be required to install, update or remove packages for this environment":
 
-![Eingabeaufforderung für erhöhte Rechte](media/environments-pip-elevate.png)
+![Elevation prompt for package installation](media/environments-pip-elevate.png)
 
-**Jetzt Rechte erweitern** erteilt Administratorrechte an „pip“ für einen einzigen Vorgang, auch gemäß Aufforderungen des Betriebssystems nach Berechtigungen. Wenn Sie **Ohne Administratorberechtigungen fortfahren** auswählen, wird die Installation des Pakets versucht, „pip“ schlägt allerdings beim Erstellen von Ordnern fehl. Die Ausgabe kann z.B. so aussehen: „error: could not create 'C:\Program Files\Anaconda3\Lib\site-packages\png.py': Permission denied“ (Fehler: 'C:\Programme\Anaconda3\Lib\site-packages\png.py' konnte nicht erstellt werden: Berechtigung verweigert).
+**Elevate now** grants administrative privileges to pip for a single operation, subject also to any operating system prompts for permissions. Selecting **Continue without Administrator privileges** attempts to install the package, but pip fails when trying to create folders with output such as "error: could not create 'C:\Program Files\Anaconda3\Lib\site-packages\png.py': Permission denied."
 
-Wenn Sie **Beim Installieren oder Entfernen von Paketen immer Rechte erweitern** auswählen, wird verhindert, dass das Dialogfeld für die entsprechende Umgebung angezeigt wird. Wenn Sie möchten, dass das Dialogfeld wieder angezeigt wird, gehen Sie zu **Extras > Optionen > Python Tools > Allgemein**, und klicken Sie auf die Schaltfläche **Alle dauerhaft ausgeblendeten Dialogfelder zurücksetzen**. 
+Selecting **Always elevate when installing or removing packages** prevents the dialog from appearing for the environment in question. To make the dialog appear again, go to **Tools > Options > Python Tools > General** and select the button, **Reset all permanently hidden dialogs**. 
 
-Auf der gleichen Optionsregisterkarte können Sie auf **" pip" immer als Administrator ausführen** klicken, um das Dialogfeld für alle Umgebungen zu unterdrücken. Weitere Informationen finden Sie unter [Optionen > Registerkarte „Allgemein“](options.md#general-options).
+In that same options tab, you can also select **Always run pip as administrator** to suppress the dialog for all environments. See [Options - General tab](options.md#general-options).
 
 
-### <a name="intellisense-tab"></a>Registerkarte „IntelliSense“
+### <a name="intellisense-tab"></a>IntelliSense tab
 
-Zeigt den aktuellen Status der IntelliSense-Vervollständigungsdatenbank:
+Shows the current status of the IntelliSense completion database:
 
-![Registerkarte „IntelliSense“ von Python-Umgebungen](media/environments-intellisense-tab.png)
+![Python Environments IntelliSense tab](media/environments-intellisense-tab.png)
 
-Die Datenbank enthält Metadaten für alle Bibliotheken der Umgebung, verbessert die Geschwindigkeit von IntelliSense und verringert die Speicherauslastung. Wenn Visual Studio eine neue Umgebung erkennt (oder wenn Sie eine hinzufügen), wird die Datenbank automatisch kompiliert, indem die Quelldateien der Bibliothek analysiert werden. Dieser Prozess kann eine Minute oder bis zu einer Stunde oder noch länger dauern, je nachdem, was installiert ist. (Zu Anaconda gehören z.B. viele Bibliotheken, und es dauert einige Zeit, die Datenbank zu kompilieren.) Wenn der Vorgang abgeschlossen ist, erhalten Sie detaillierte IntelliSense-Daten und müssen die Datenbank erst erneut aktualisieren (mit der Schaltfläche **DB aktualisieren**), wenn Sie weitere Bibliotheken installieren.
+The database contains metadata for all the environment's libraries and improves IntelliSense speed and reduces memory usage. When Visual Studio detects a new environment (or you add one), it automatically begins to compile the database by analyzing the library source files. This process can take anywhere from a minute to an hour or more depending on what's installed. (Anaconda, for example, comes with many libraries and takes some time to compile the database.) Once complete, you get detailed IntelliSense and don't need to refresh the database again (with the **Refresh DB** button) until you install more libraries.
 
-Bibliotheken, für die noch keine Daten kompiliert wurden, werden mit einem **!** gekennzeichnet. Wenn die Datenbank einer Umgebung nicht vollständig ist, wird daneben auch ein **!** in der Liste der wichtigsten Umgebungen angezeigt.
+Libraries for which data haven't been compiled are marked with a **!**; if an environment's database isn't complete, a **!** also appears next to it in the main environment list.
 
-## <a name="global-environments"></a>Globale Umgebungen
+## <a name="global-environments"></a>Global environments
 
-Globale (oder systemweite) Umgebungen sind für alle Projekte auf einem Computer verfügbar. Visual Studio erkennt normalerweise globale Umgebungen automatisch, und sie können im Fenster „Python-Umgebungen“ angezeigt werden. Falls nicht, können Sie eine Umgebung manuell hinzufügen, wie zuvor unter [Verwalten von Python-Umgebungen in Visual Studio](#managing-python-environments-in-visual-studio) beschrieben.
+Global (or system-wide) environments are available to all of your projects on a machine. Visual Studio usually detects global environments automatically, and they can be viewed in the Python Environments window. If not, you can add an environment manually as described earlier under [Managing Python environments in Visual Studio](#managing-python-environments-in-visual-studio).
 
-Visual Studio verwendet die Standardumgebung für alle neuen Projekte zum Ausführen, Debuggen und Überprüfen der Syntax, Anzeigen der Import- und Membervervollständigung und für andere Aufgaben, für die eine Umgebung erforderlich ist. Das Ändern der Standardumgebung wirkt sich auf alle Projekte aus, denen keine [projektspezifische Umgebung](#project-specific-environments) hinzugefügt wurde, wie im Folgenden beschrieben.
+Visual Studio uses the default environment for all new projects for executing, debugging, checking syntax, displaying import and member completions, and any other tasks that require an environment. Changing the default environment affects all projects that have not had a [project-specific environment](#project-specific-environments) added, as described next.
 
-## <a name="project-specific-environments"></a>Projektspezifische Umgebungen
+## <a name="project-specific-environments"></a>Project-specific environments
 
-Mit projektspezifischen Umgebungen stellen Sie sicher, dass ein Projekt immer in einer bestimmten Umgebung ausgeführt und die globale Standardumgebung ignoriert wird. Wenn die globale Standardumgebung beispielsweise CPython ist, aber ein Projekt IronPython und bestimmte Bibliotheken erfordert, die in der globalen Umgebung nicht installiert sind, ist eine projektspezifische-Umgebung erforderlich.
+Project-specific environments ensure that a project always runs in a particular environment, ignoring the default global environment. For example, if the global default environment is CPython but a project requires IronPython and certain libraries that aren't installed in the global environment, then a project-specific environment is necessary.
 
-Projektumgebungen werden im Projektmappen-Explorer unter dem Knoten für Python-Umgebungen aufgelistet. Der fett formatierte Eintrag ist derzeit aktiv. Visual Studio verwendet ihn für das Debugging, Import- und Membervervollständigungen, Syntaxüberprüfungen und andere Tasks, die eine Umgebung erfordern:
+Project environments are listed in Solution Explorer under the Python Environments node. The bold entry is currently active, and Visual Studio uses it for debugging, import and member completions, syntax checking, and any other tasks that require an environment:
 
-![Projektumgebungen im Projektmappen-Explorer](media/environments-project.png)
+![Project environments displayed in Solution Explorer](media/environments-project.png)
 
-Um eine andere Umgebung für das Projekt zu aktivieren, klicken Sie mit der rechten Maustaste auf die Umgebung, und wählen Sie **Umgebung aktivieren** aus.
+To activate a different environment for the project, right-click that environment and select **Activate Environment**.
 
-Jede globale Umgebung kann als Projektumgebung hinzugefügt werden, indem Sie mit der rechten Maustaste auf **Python-Umgebungen** klicken und **Python-Umgebungen hinzufügen/entfernen** auswählen. In der angezeigten Liste können Sie die Umgebungen aktivieren oder deaktivieren, die in Ihrem Projekt verfügbar sind.
+Any global environment can be added as a project environment by right-clicking **Python Environments** and selecting **Add/Remove Python Environments...**. From the displayed list you can select or deselect those environments that are available in your project.
 
-![Dialogfeld „Python-Umgebungen hinzufügen/entfernen“](media/environments-add-remove.png)
+![Add/Remove Python Environments dialog](media/environments-add-remove.png)
 
-Im Projektmappen-Explorer können Sie die Umgebung auch erweitern, um die installierten Pakete anzuzeigen (die Sie importieren und in Ihrem Code verwenden können, wenn die Umgebung aktiv ist):
+In Solution Explorer, you can also expand the environment to show its installed packages (those you can import and use in your code when the environment is active):
 
-![Python-Pakete für eine Umgebung im Projektmappen-Explorer](media/environments-installed-packages.png)
+![Python packages for an environment in Solution Explorer](media/environments-installed-packages.png)
 
-Klicken Sie zum Installieren neuer Paketen mit der rechten Maustaste auf die Umgebung, wählen Sie **Python-Paket installieren** aus, und geben Sie den Namen des gewünschten Pakets ein. Pakete (und Abhängigkeiten) werden von [Python Package Index (PyPI)](https://pypi.python.org/pypi) heruntergeladen. Dort können Sie auch nach verfügbaren Paketen suchen. Statusleiste und Ausgabefenster von Visual Studio zeigen Informationen über die Installation an. Um ein Paket zu deinstallieren, klicken Sie mit der rechten Maustaste darauf, und wählen Sie **Entfernen** aus.
+To install new packages, right-click the environment, select **Install Python Package...**, and enter the name of the desired package. Packages (and dependencies) are downloaded from the [Python Package Index (PyPI)](https://pypi.python.org/pypi), where you can also search for available packages. Visual Studio's status bar and output window shows information about the install. To uninstall a package, right-click it select **Remove**.
 
 > [!Note]
-> Die Unterstützung für die Python-Paketverwaltung wird derzeit vom zentralen Python-Entwicklungsteam bearbeitet. Die angezeigten Einträge sind nicht immer unbedingt richtig, und eine Installation oder Deinstallation ist möglicherweise nicht zuverlässig oder nicht möglich. Visual Studio verwendet den pip-Paket-Manager, falls verfügbar, und lädt ihn bei Bedarf herunter und installiert ihn. Visual Studio kann auch den easy_install-Paket-Manager verwenden. Pakete, die mit pip oder easy_install über die Befehlszeile installiert wurden, werden ebenfalls angezeigt.
+> Python's package management support is currently under development by the core Python development team. The displayed entries may not always be accurate, and installation and uninstallation may not be reliable or available. Visual Studio uses the pip package manager if available, and downloads and installs it when required. Visual Studio can also use the easy_install package manager. Packages installed using pip or easy_install from the command line are also displayed.
 
 > [!Tip]
-> Eine gängige Situation, in der pip ein Paket nicht installieren kann, liegt vor, wenn das Paket Quellcode für native Komponenten in `*.pyd`-Dateien enthält. Wenn die erforderliche Version von Visual Studio nicht installiert ist, kann pip diese Komponenten nicht kompilieren. Die Fehlermeldung, die in derartigen Situationen angezeigt wird, ist `error: Unable to find vcvarsall.bat`. `easy_install` ist häufig in der Lage, vorkompilierte Binärdateien herunterzuladen, und Sie können einen geeigneten Compiler für ältere Python-Versionen von [http://aka.ms/VCPython27](http://aka.ms/VCPython27) herunterladen. Weitere Informationen finden Sie unter [How to deal with the pain of "unable to find vcvarsallbat"](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/11/unable-to-find-vcvarsall-bat/) (Umgang mit der Fehlermeldung, dass vcvarsallbat nicht gefunden werden konnte) im Teamblog zu Python-Tools.
+> A common situation where pip fails to install a package is when the package includes source code for native components in `*.pyd` files. Without the required version of Visual Studio installed, pip cannot compile these components. The error message displayed in this situation is `error: Unable to find vcvarsall.bat`. `easy_install` is often able to download pre-compiled binaries, and you can download a suitable compiler for older versions of Python from [http://aka.ms/VCPython27](http://aka.ms/VCPython27). For more details, see [How to deal with the pain of "unable to find vcvarsallbat"](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/11/unable-to-find-vcvarsall-bat/) on the Python tools team blog.
 
 
-## <a name="virtual-environments"></a>Virtuelle Umgebungen
+## <a name="virtual-environments"></a>Virtual Environments
 
-Da in einer globalen Umgebung installierte Pakete für alle Projekte verfügbar sind, die sie verwenden, können Konflikte auftreten, wenn zwei Projekte inkompatible Pakete oder verschiedene Versionen des gleichen Pakets erfordern. Um solche Konflikte zu vermeiden, bietet Visual Studio die Möglichkeit zum Erstellen *virtueller Umgebungen*, die in der Regel für ein Projekt gelten.
+Because packages installed into a global environment are available to all projects that use it, conflicts may occur when two projects require incompatible packages or different versions of the same package. To avoid such conflicts, Visual Studio provides the ability to create *virtual environments*, which are typically specific to a project.
 
-Wie alle anderen Python-Umgebungen besteht eine virtuelle Umgebung aus einem Python-Interpreter, einer Bibliothek und einem Satz von Paketen. Die virtuelle Umgebung verwendet jedoch den Interpreter und die Bibliothek aus einer Ihrer globalen Umgebungen (vorausgesetzt, sie unterstützt virtuelle Umgebungen), die Pakete sind allerdings von den globalen und allen anderen virtuellen Umgebungen getrennt und isoliert. Diese Isolation vermeidet Konflikte, und der Speicherbedarf der virtuellen Umgebung wird auf die ungefähre Größe der Pakete minimiert. 
+Like any other Python environment, a virtual environment consists of a Python interpreter, a library, and a set of packages. In this case, though, the virtual environment uses the interpreter and library from one of your global environments (provided it supports virtual environments), but its packages are separate and isolated from the global and all other virtual environments. This isolation again avoids conflicts and minimizes the virtual environment's footprint to the approximate size of its packages. 
 
-So erstellen Sie eine neue virtuelle Umgebung
+To create a virtual environment:
 
-1. Klicken Sie mit der rechten Maustaste im Projektmappen-Explorer auf **Python-Umgebungen**, und wählen Sie **Virtuelle Umgebung hinzufügen** aus. Dann wird Folgendes angezeigt:
+1. Right-click **Python Environments** in Solution Explorer and select **Add Virtual Environment...**, which brings up the following:
 
-    ![Erstellen einer virtuellen Umgebung](media/environments-add-virtual-1.png)
+    ![Creating a virtual environment](media/environments-add-virtual-1.png)
 
-1. Geben Sie einen Namen an, um die virtuelle Umgebung im Projektpfad zu erstellen, oder einen vollständigen Pfad, um sie an anderer Stelle zu erstellen. (Um maximale Kompatibilität mit anderen Tools zu gewährleisten, verwenden Sie nur Buchstaben und Zahlen im Namen.)
+1. Specify a name to create the virtual environment in your project path, or a full path to create it elsewhere. (To ensure maximum compatibility with other tools, use only letters and numbers in the name.)
 
-1. Wählen Sie als Basisinterpreter eine globale Umgebung aus, und klicken Sie auf **Erstellen**. Wenn `pip`- und `virtualenv`- oder `venv`-Pakete nicht verfügbar sind, werden sie heruntergeladen und installiert.
+1. Select a global environment as the base interpreter and click **Create**. If `pip` and `virtualenv` or `venv` packages are not available, they are downloaded and installed.
 
-    Wenn der angegebene Pfad eine vorhandene virtuelle Umgebung ist, wird der Basisinterpreter erkannt, und die Schaltfläche „Erstellen“ ändert sich in **Hinzufügen**:
+    If the provided path is an existing virtual environment, the base interpreter is detected and the create button changes to **Add**:
 
-    ![Hinzufügen einer vorhandenen virtuellen Umgebung](media/environments-add-virtual-2.png)
+    ![Adding an existing virtual environment](media/environments-add-virtual-2.png)
 
-Eine vorhandene virtuelle Umgebung kann auch hinzugefügt werden, indem Sie im Projektmappen-Explorer mit der rechten Maustaste auf **Python-Umgebungen** klicken und **Vorhandene virtuelle Umgebung hinzufügen** auswählen. Visual Studio erkennt den Basisinterpreter anhand der Datei `orig-prefix.txt` im Verzeichnis `lib` der Umgebung automatisch.
+An existing virtual environment can also be added by right-clicking **Python Environments** in Solution Explorer and selecting **Add Existing Virtual Environment...**. Visual Studio automatically detects the base interpreter using the `orig-prefix.txt` file in the environment's `lib` directory.
 
-Sobald eine virtuelle Umgebung Ihrem Projekt hinzugefügt wurde, erscheint sie im Fenster **Python-Umgebungen**. Sie können sie wie jede andere Umgebung aktivieren, und Sie können ihre Pakete verwalten. Wenn Sie darauf mit der rechten Maustaste klicken und **Entfernen** auswählen, wird der Verweis auf die Umgebung entfernt, oder die Umgebung und alle Dateien werden vom Datenträger gelöscht (jedoch nicht der Basisinterpreter).
+Once a virtual environment is added to your project, it appears in the **Python Environments** window, you can activate it like any other environment, and you can manage its packages. Right-clicking it and selecting **Remove** either removes the reference to the environment, or deletes the environment and all its files on disk (but not the base interpreter).
 
-Beachten Sie, dass ein Nachteil von virtuellen Umgebungen darin besteht, dass sie hartcodierte Dateipfade enthalten und somit nicht problemlos freigegeben oder auf andere Entwicklungscomputer übertragen werden können. Glücklicherweise können Sie die Datei `requirements.txt` verwenden, wie im nächsten Abschnitt beschrieben.
+Note that one drawback to virtual environments is that they contain hard-coded file paths and thus cannot easily be shared or transported to other development machines. Fortunately, you can use the `requirements.txt` file as described in the next section.
 
-## <a name="managing-required-packages"></a>Verwalten von erforderlichen Paketen
+## <a name="managing-required-packages"></a>Managing required packages
 
-Wenn Sie ein Projekt über ein Buildsystem für andere Benutzer freigeben oder planen, es [in Microsoft Azure zu veröffentlichen](template-azure-cloud-service.md), müssen Sie die erforderlichen externen Pakete angeben. Der empfohlene Ansatz ist die Verwendung einer [requirements.txt-Datei](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org), die eine Liste der Befehle für pip enthält, mit denen die erforderlichen Versionen der abhängigen Pakete installiert werden.
+If you're sharing a project with others, using a build system, or plan to [publish it to Microsoft Azure](template-azure-cloud-service.md), you need to specify the external packages it requires. The recommended approach is to use a [requirements.txt file](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) that contains a list of commands for pip that installs the required versions of dependent packages.
 
-Eigentlich kann jeder Dateiname zum Nachverfolgen von Anforderungen verwendet werden (mit `-r <full path to file>` beim Installieren eines Pakets), aber Visual Studio bietet spezielle Unterstützung für `requirements.txt`:
+Technically, any filename may be used to track requirements (by using `-r <full path to file>` when installing a package), but Visual Studio provides specific support for `requirements.txt`:
 
-- Wenn Sie ein Projekt geladen haben, das `requirements.txt` enthält, und alle in der Datei aufgeführten Pakete installieren möchten, klicken Sie mit der rechten Maustaste auf das Projekt, und wählen Sie **Aus „requirements.txt“ installieren** aus:
+- If you've loaded a project that contains `requirements.txt` and wish to install all the packages listed in that file, right-click the project and select **Install from requirements.txt**:
 
-    ![Installieren aus „requirements.txt“](media/environments-requirements-txt-install.png)
+    ![Install from requirements.txt](media/environments-requirements-txt-install.png)
 
-- Wenn Sie alle erforderlichen Pakete in einem Projekt installiert haben, können Sie im Projektmappen-Explorer mit der rechten Maustaste auf das Projekt klicken und **„requirements.txt“ generieren** auswählen, um die erforderliche Datei zu erstellen. Wenn die Datei bereits vorhanden ist, werden Sie zum Aktualisieren der Datei aufgefordert:
+- When you have all the necessary packages installed in a project, you can right-click the project in Solution Explorer and select **Generate requirements.txt** to create the necessary file. If the file already exists, a prompt appears for how to update it:
 
-    ![Optionen für die Aktualisierung von „requirements.txt“](media/environments-requirements-txt-replace.png)
+    ![Update requirements.txt options](media/environments-requirements-txt-replace.png)
 
-    - **Gesamte Datei ersetzen** entfernt alle vorhandenen Elemente, Kommentare und Optionen.
-    - **Vorhandene Einträge aktualisieren** erkennt Paketanforderungen und aktualisiert die Versionsbezeichner entsprechend der derzeit installierten Version.
-    - **Aktualisieren und Einträge hinzufügen** aktualisiert alle gefundenen Anforderungen und fügt alle anderen Pakete am Ende der Datei hinzu.
+    - **Replace entire file** removes all items, comments, and options that exist.
+    - **Refresh existing entries** detects package requirements and updates the version specifiers to match the version you currently have installed.
+    - **Update and add entries** refreshes any requirements that are found, and adds all other packages to the end of the file.
 
-Da mit `requirements.txt`-Dateien die Anforderungen des Projekts fixiert werden sollen, werden alle installierten Pakete mit genauen Versionen aufgeführt. Wenn Sie genaue Versionen verwenden, wird sichergestellt, dass Sie Ihre Umgebung leicht auf einem anderen Computer reproduzieren können. Pakete werden aufgenommen, selbst wenn sie mit einem Versionsbereich, als Abhängigkeit von einem anderen Paket oder mit einen anderen Installationsprogramm als pip installiert wurden.
+Because `requirements.txt` files are intended to freeze the requirements of your project, all installed packages are written with precise versions. Using precise versions ensures that you can easily reproduce your environment on another machine. Packages are included even if they were installed with a version range, as a dependency of another package, or with an installer other than pip.
 
-Wenn Sie eine neue virtuelle Umgebung hinzufügen und eine ` requirements.txt`-Datei vorhanden ist, zeigt das Dialogfeld **Virtuelle Umgebung hinzufügen** eine Option an, um die Pakete automatisch zu installieren. Auf diese Weise kann eine Umgebung leicht auf einem anderen Computer neu erstellt werden:
+If a` requirements.txt` file exists when adding a new virtual environment, the **Add Virtual Environment** dialog displays an option to install the packages automatically, making it easy to recreate an environment on another machine:
 
-![Erstellen einer virtuellen Umgebung mit „requirements.txt“](media/environments-requirements-txt.png)
+![Create virtual environment with requirements.txt](media/environments-requirements-txt.png)
 
-Wenn ein Paket nicht von pip installiert werden kann und in einer `requirements.txt`-Datei enthalten ist, schlägt die gesamte Installation fehl. Bearbeiten Sie in diesem Fall die Datei manuell, um dieses Paket ausschließen oder [pip-Optionen](http://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) zu verwenden, um auf eine installierbare Version des Pakets zu verweisen. Sie könnten beispielsweise [`pip wheel`](http://pip.readthedocs.org/en/latest/reference/pip_wheel.html) verwenden, um eine Abhängigkeit zu kompilieren und die Option `--find-links <path>` Ihrer Datei `requirements.txt` hinzuzufügen:
+If a package cannot be installed by pip and it appears in a `requirements.txt` file, the entire installation fails. In this case, manually edit the file to exclude this package or to use [pip's options](http://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) to refer to an installable version of the package. For example, you may prefer to use [`pip wheel`](http://pip.readthedocs.org/en/latest/reference/pip_wheel.html) to compile a dependency and add the `--find-links <path>` option to your `requirements.txt`:
 
 ```output
 C:\Project>pip wheel azure
@@ -291,20 +291,20 @@ Cleaning up...
     Removing temporary dir C:\Project\env\build...
 ```
 
-## <a name="search-paths"></a>Suchpfade
+## <a name="search-paths"></a>Search paths
 
-Bei der typischen Python-Nutzung stellt die `PYTHONPATH`-Umgebungsvariable (oder `IRONPYTHONPATH` usw.) den Standardsuchpfad für Moduldateien bereit. Wenn Sie also eine `import <name>`-Anweisung verwenden, durchsucht Python zuerst die integrierten Module nach einem passenden Namen, dann Ordner mit dem Python-Code, den Sie ausführen, und dann den „Modulsuchpfad“ gemäß der Definition durch die entsprechenden Umgebungsvariablen. (Weitere Informationen finden Sie unter [The Module Search Path](https://docs.python.org/2/tutorial/modules.html#the-module-search-path) (Modulsuchpfad) und [Environment variables](https://docs.python.org/2/using/cmdline.html#envvar-PYTHONPATH) (Umgebungsvariablen) in der Python-Hauptdokumentation.)
+With typical Python usage, the `PYTHONPATH` environment variable (or `IRONPYTHONPATH`, etc.) provides the default search path for module files. That is, when you use an `import <name>` statement, Python first searches its built-in modules for a matching name, then searches folder containing the Python code you're running, then searches the "module search path" as defined by the applicable environment variable. (See [The Module Search Path](https://docs.python.org/2/tutorial/modules.html#the-module-search-path) and [Environment variables](https://docs.python.org/2/using/cmdline.html#envvar-PYTHONPATH) in the core Python documentation.)
 
-Die Umgebungsvariable für den Suchpfad wird von Visual Studio jedoch ignoriert, auch wenn sie für das gesamte System festgelegt wurde. Tatsächlich wird sie ignoriert, gerade *weil* sie für das gesamte System festgelegt wurde und sich daher bestimmte Fragen stellen, die nicht automatisch beantwortet werden können: Sind die referenzierten Module für Python 2.7 oder Python 3.3 vorgesehen? Werden sie die standardmäßigen Bibliotheksmodule überschreiben? Weiß der Entwickler das, oder handelt es sich um einen böswilligen Hijackingversuch?
+The search path environment variable, however, is ignored by Visual Studio, even when it's been set for the entire system. It's ignored, in fact, precisely *because* it's set for the entire system and thus raises certain questions that cannot be answered automatically: Are the referenced modules meant for Python 2.7 or Python 3.3? Are they going to override standard library modules? Is the developer aware of this behavior or is it a malicious hijacking attempt?
 
-Die Python-Unterstützung in Visual Studio bietet daher eine Möglichkeit, Suchpfade direkt in Umgebungen und Projekten anzugeben. Suchpfade werden als Wert von `PYTHONPATH` (oder einer entsprechenden Variablen) beim Debuggen oder Ausführen des Skripts in Visual Studio übergeben. Durch das Hinzufügen von Suchpfaden überprüft Visual Studio die Bibliotheken an diesen Speicherorten und erstellt entsprechende IntelliSense-Datenbanken (das Erstellen der Datenbank kann je nach Anzahl von Bibliotheken einige Zeit in Anspruch nehmen).
+Python support in Visual Studio thus provides a means to specify search paths directly in both environments and projects. Search paths are passed as the value of `PYTHONPATH` (or equivalent) when you debug or execute your script from Visual Studio. By adding search paths, Visual Studio inspects the libraries in those locations and builds IntelliSense databases for them (constructing the database may take some time depending on the number of libraries).
 
-Um einen Suchpfad hinzuzufügen, klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf das Element **Suchpfade**, wählen Sie **Ordner zu Suchpfad hinzufügen** aus, und wählen Sie den aufzunehmenden Ordner aus. Dieser Pfad wird für alle Umgebungen verwendet, die dem Projekt zugeordnet sind.
+To add a search path, right-click on the **Search Paths** item in Solution Explorer, select **Add Folder to Search Path...**, and select the folder to include. This path is used for any environment associated with the project.
 
-Dateien mit der Erweiterung `.zip` oder `.egg` können auch als Suchpfade hinzugefügt werden. Wählen Sie dazu **ZIP-Archiv zu Suchpfad hinzufügen** aus. Wie bei Ordnern wird der Inhalt dieser Dateien geprüft und IntelliSense zur Verfügung gestellt.
+Files with a `.zip` or `.egg` extension can also be added as search paths by selecting **Add Zip Archive to Search Path...**. As with folders, the contents of these files are scanned and made available to IntelliSense.
 
 > [!Note]
-> Es ist möglich, einen Suchpfad zu Python 2.7-Modulen hinzuzufügen, während Sie Python 3.3 verwenden. Das Ergebnis können Fehlermeldungen sein.
+> It is possible to add a search path to Python 2.7 modules while you are using Python 3.3, and you may see errors as a result.
 
-Wenn Sie regelmäßig die gleichen Suchpfade verwenden und der Inhalt nicht häufig geändert wird, kann es effizienter sein, ihn im Ordner „site-packages“ zu installieren. Dann wird es analysiert, in der IntelliSense-Datenbank gespeichert und immer der vorgesehenen Umgebung zugeordnet. So ist es nicht erforderlich, dass ein Suchpfad für jedes Projekt hinzugefügt wird.
+If you are regularly using the same search paths and the contents do not often change, it may be more efficient to install it into your site-packages folder. It's then be analyzed and stored in the IntelliSense database, is always be associated with the intended environment, and does not require a search path to be added for each project.
 

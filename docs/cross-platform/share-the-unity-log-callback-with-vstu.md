@@ -1,5 +1,5 @@
 ---
-title: Share the Unity Log Callback with VSTU | Microsoft Docs
+title: "Freigeben des Unity-Protokollrückrufs für VSTU | Microsoft-Dokumentation"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -31,16 +31,16 @@ ms.translationtype: HT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 138cd3c911d9e97e16c5fbe64a3526101cece0b2
 ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="share-the-unity-log-callback-with-vstu"></a>Share the Unity Log Callback with VSTU
-Visual Studio Tools for Unity registers a log callback with Unity to be able to stream its console to Visual Studio. If your editor scripts also register a log callback with Unity, the VSTU callback might interfere with your callback. To prevent this possibility, use the `VisualStudioIntegration.LogCallback` event to cooperate with VSTU.  
+# <a name="share-the-unity-log-callback-with-vstu"></a>Freigeben des Unity-Protokollrückrufs für VSTU
+Visual Studio-Tools für Unity registrieren einen Protokollrückruf bei Unity, damit dessen Konsole in Visual Studio gestreamt werden kann. Wenn Ihre Editorskripts auch einen Protokollrückruf bei Unity registrieren, kann der VSTU-Rückruf Ihren Rückruf stören. Um dies zu verhindern, verwenden Sie das Ereignis `VisualStudioIntegration.LogCallback` für die Zusammenarbeit mit VSTU.  
   
-## <a name="demonstrates"></a>Demonstrates  
- How to share the Unity Log Callback created by Visual Studio Tools for Unity.  
+## <a name="demonstrates"></a>Veranschaulicht  
+ Das Freigeben des von Visual Studio-Tools für Unity erstellten Unity-Protokollrückrufs.  
   
-## <a name="example"></a>Example  
+## <a name="example"></a>Beispiel  
   
 ```csharp  
 using System;  
@@ -63,5 +63,5 @@ public class LogCallbackHook
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
- [Example: Project File Generation](../cross-platform/customize-project-files-created-by-vstu.md)
+## <a name="see-also"></a>Siehe auch  
+ [Beispiel: Erstellung der Projektdatei](../cross-platform/customize-project-files-created-by-vstu.md)

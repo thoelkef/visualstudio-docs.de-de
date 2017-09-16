@@ -1,5 +1,5 @@
 ---
-title: Visual Studio for Mac Workloads
+title: "Visual Studio für Mac-Workloads"
 author: asb3993
 ms.author: amburns
 ms.date: 08/03/2017
@@ -9,35 +9,35 @@ ms.translationtype: HT
 ms.sourcegitcommit: 17defdd0b96ec1c3273fc6b845af844b031a4a17
 ms.openlocfilehash: 8870c8fa0a521ed5ac6e31aa0465f1dbe8578f63
 ms.contentlocale: de-de
-ms.lasthandoff: 08/23/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 
-# <a name="visual-studio-for-mac-workloads"></a>Visual Studio for Mac Workloads
+# <a name="visual-studio-for-mac-workloads"></a>Visual Studio für Mac-Workloads
 
-Visual Studio for Mac comes pre-installed with workloads for the following:
+Visual Studio für Mac enthält für folgende Programme vorinstallierte Workloads:
 
-* Cross-Platform Mobile apps with .NET: Android, iOS, tvOS, watchOS
-* Mac desktop apps
-* .NET Core applications
-* ASP.NET Core Web applications
-* Cross-platform Unity games
+* Plattformübergreifende mobile Apps mit .NET: Android, iOS, tvOS, watchOS
+* Mac-Desktop-Apps
+* .NET Core-Anwendungen
+* ASP.NET Core-Webanwendungen
+* Plattformübergreifende Unity-Spiele
 
 ## <a name="xamarin"></a>Xamarin
 
-Xamarin allows you to create cross-platform Mobile apps with .NET for Android, iOS, tvOS, watchOS, and Mac desktop apps.
+Mit Xamarin können Sie plattformübergreifende mobilen Apps mit .NET für Android, iOS, tvOS, watchOS und Mac-Desktop-Apps erstellen.
 
-For information on using Xamarin in Visual Studio for Mac, refer to the [Xamarin Developer Center](https://developer.xamarin.com/) and check out the Mobile apps [hands-on lab](https://github.com/Microsoft/vs4mac-labs/tree/master/Mobile/Getting-Started).
+Informationen zur Verwendung von Xamarin in Visual Studio für Mac finden Sie im [Xamarin-Entwicklercenter](https://developer.xamarin.com/), und sehen Sie sich das [praktische Lab](https://github.com/Microsoft/vs4mac-labs/tree/master/Mobile/Getting-Started) zu mobilen Apps an.
 
-## <a name="net-core-applications"></a>.NET Core applications
+## <a name="net-core-applications"></a>.NET Core-Anwendungen
 
-For more information on using .NET Core, refer to the [documentation](https://docs.microsoft.com/en-us/dotnet/core/).
+Weitere Informationen finden Sie zur Verwendung von .NET Core finden Sie in der [Dokumentation](https://docs.microsoft.com/en-us/dotnet/core/).
 
-## <a name="aspnet-core-web-applications"></a>ASP.NET Core Web Applications
+## <a name="aspnet-core-web-applications"></a>ASP.NET Core-Webanwendungen
 
-For information on getting started using ASP.NET Core in Visual Studio for Mac, refer to the [Getting Started with ASP.NET Core](~/asp-net-core.md) guide or check out the ASP.NET Core web apps [hands-on lab](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started).
+Informationen zum Einstieg in ASP.NET Core in Visual Studio für Mac finden Sie im Handbuch zu den [ersten Schritten mit ASP.NET Core](~/asp-net-core.md), oder sehen Sie sich das [praktische Lab](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started) zu Web-Apps mit ASP.NET Core an.
 
-## <a name="cross-platform-unity-game-development"></a>Cross-platform Unity Game Development
+## <a name="cross-platform-unity-game-development"></a>Plattformübergreifende Spieleentwicklung mit Unity
 
-To start building games with Unity, see the [Setup page](~/setup-vsmac-tools-unity.md) and the [guide to using Unity Tools](~/using-vsmac-tools-unity.md), or check out the Unity [hands-on lab](https://github.com/Microsoft/vs4mac-labs/tree/master/Unity/Getting-Started).
+Um Spiele mit Unity zu erstellen, sehen Sie sich sie [Setupseite](~/setup-vsmac-tools-unity.md) und die [Anleitung zur Verwendung der Unity-Tools](~/using-vsmac-tools-unity.md) an, oder werfen Sie einen Blick auf das [praktische Lab](https://github.com/Microsoft/vs4mac-labs/tree/master/Unity/Getting-Started) zu Unity.
 
