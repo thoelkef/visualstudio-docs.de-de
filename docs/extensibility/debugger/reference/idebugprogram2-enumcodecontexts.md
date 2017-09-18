@@ -1,75 +1,58 @@
 ---
-title: IDebugProgram2::EnumCodeContexts | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugProgram2::EnumCodeContexts
-helpviewer_keywords:
-- IDebugProgram2::EnumCodeContexts
+title: "IDebugProgram2::EnumCodeContexts | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugProgram2::EnumCodeContexts"
+helpviewer_keywords: 
+  - "IDebugProgram2::EnumCodeContexts"
 ms.assetid: 478e06a2-07bb-4841-8887-deab0f42ebd0
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 5d223dc90ef7f336365b41d289763895e250fdff
-ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="idebugprogram2enumcodecontexts"></a>IDebugProgram2::EnumCodeContexts
-Retrieves a list of the code contexts for a given position in a source file.  
+# IDebugProgram2::EnumCodeContexts
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Ruft eine Liste der Code für kontexte einer angegebenen Position in einer Quelldatei ab.  
   
-## <a name="syntax"></a>Syntax  
+## Syntax  
   
-```cpp  
-HRESULT EnumCodeContexts(   
-   IDebugDocumentPosition2*  pDocPos,  
-   IEnumDebugCodeContexts2** ppEnum  
+```cpp#  
+HRESULT EnumCodeContexts(   
+   IDebugDocumentPosition2*  pDocPos,  
+   IEnumDebugCodeContexts2** ppEnum  
 );  
 ```  
   
-```csharp  
-int EnumCodeContexts(   
-   IDebugDocumentPosition2     pDocPos,  
-   out IEnumDebugCodeContexts2 ppEnum  
+```c#  
+int EnumCodeContexts(   
+   IDebugDocumentPosition2     pDocPos,  
+   out IEnumDebugCodeContexts2 ppEnum  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parameter  
  `pDocPos`  
- [in] An [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) object representing an abstract position in a source file known to the IDE.  
+ \[in\]  Ein [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)\-Objekt, das eine abstrakte Position in einer Quelldatei wird die IDE darstellt.  
   
  `ppEnum`  
- [out] Returns an [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) object that contains a list of the code contexts.  
+ \[out\]  Gibt ein [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)\-Objekt zurück, das eine Liste der Codekontexte enthält.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## Rückgabewert  
+ Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
   
-## <a name="remarks"></a>Remarks  
- This method allows the session debug manager (SDM) or IDE to map a source file position into a code position. More than one code context is returned if the source generates multiple blocks of code (for example, C++ templates).  
+## Hinweise  
+ Diese Methode ermöglicht der Sitzung Debuggen von Manager \(SDM\) oder zuzuordnenden IDE eine Position in einer Quelldatei Position des Codes.  Mehrere Code Elementkontext wird zurückgegeben, wenn die Datenquelle mehrere Codeblöcke generiert \(beispielsweise C\+\+\-Vorlagen\).  
   
-## <a name="see-also"></a>See Also  
+## Siehe auch  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)   
  [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)

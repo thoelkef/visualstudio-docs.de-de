@@ -1,243 +1,219 @@
 ---
-title: Save data back to the database | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- datasets [Visual Basic], validating data
-- data validation, datasets
-- data [Visual Studio], saving
-- row version
-- updating datasets, constraints
-- datasets [Visual Basic], about datasets
-- datasets [Visual Basic], merging
-- updates, constraints in datasets
-- saving data, about saving data
-- datasets [Visual Basic], constraints
-- TableAdapters
+title: "Speichern von Daten in Datasets | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/14/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+dev_langs: 
+  - "VB"
+  - "CSharp"
+  - "C++"
+  - "aspx"
+helpviewer_keywords: 
+  - "Daten [Visual Studio], Speichern"
+  - "Datenvalidierung, Datasets"
+  - "Datasets [Visual Basic], Informationen über Datasets"
+  - "Datasets [Visual Basic], Einschränkungen"
+  - "Datasets [Visual Basic], Zusammenführen"
+  - "Datasets [Visual Basic], Validieren von Daten"
+  - "Zeilenversion"
+  - "Speichern von Daten, Informationen über das Speichern von Daten"
+  - "TableAdapters"
+  - "Aktualisierungen, Einschränkungen in Datasets"
+  - "Aktualisieren von Datasets, Einschränkungen"
 ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
 caps.latest.revision: 27
-author: gewarren
-ms.author: gewarren
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: f4b17810a2f59aeee8d6002059d65928882fd51f
-ms.openlocfilehash: 2a8553c23c805d6e8acddaf4ba264a915c2795bc
-ms.contentlocale: de-de
-ms.lasthandoff: 09/08/2017
-
+caps.handback.revision: 18
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
 ---
-# <a name="save-data-back-to-the-database"></a>Save data back to the database
-The dataset is an in-memory copy of data. If you modify that data, it's a good practice to save those changes back to the database. You do this in one of three ways:  
+# Speichern von Daten in Datasets
+Das Speichern von Daten bezeichnet den Vorgang der Sicherung geänderter Daten aus einer Anwendung in den ursprünglichen Datenspeicher, in der Regel eine relationale Datenbank wie SQL Sever.  
   
--   By calling one of the Update methods of a TableAdapter  
+ Da es sich bei einem Dataset tatsächlich um eine im Arbeitsspeicher zwischengespeicherte Kopie handelt, gibt es für das Schreiben von Informationen in die ursprüngliche Datenquelle und die Änderung von Daten im Dataset zwei völlig getrennte Verfahren.  Sie können aktualisierte Daten in Datasets an die Datenbank zurücksenden, indem Sie eine der `Update`\-Methoden eines TableAdapter oder eine der DBDirect\-Methoden des TableAdapter aufrufen.  
   
--   By calling one of DBDirect methods of the TableAdapter  
+ Weitere Informationen zum Zurücksenden der in einem Dataset vorgenommenen Änderungen an die Datenbank finden Sie unter [Gewusst wie: Aktualisieren von Daten mit einem TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md) und [Gewusst wie: Speichern von Datasetänderungen in einer Datenbank](../data-tools/how-to-save-dataset-changes-to-a-database.md).  
   
--   By calling the UpdateAll method on the TableAdapterManager that Visual Studio generates for you when the dataset contains tables that are related to other tables in the dataset  
+ Visual Studio verfügt über eine `TableAdapterManager`\-Komponente zur Unterstützung bei Speichervorgängen, wenn Daten in verknüpften Tabellen gespeichert werden.  Durch diese Komponente wird sichergestellt, dass die durchgeführten Speichervorgänge in der ordnungsgemäßen Reihenfolge auf Grundlage der in der Datenbank definierten Fremdschlüsseleinschränkungen erfolgen.  Weitere Informationen finden Sie unter [Übersicht über die hierarchische Aktualisierung](../Topic/Hierarchical%20Update%20Overview.md).  
   
-When you data bind dataset tables to controls on a Windows Form or XAML page, the data binding architecture does all the work for you.  
+ Informationen zum Ändern von Daten im Dataset finden Sie unter [Bearbeiten von Daten in der Anwendung](../data-tools/editing-data-in-your-application.md).  
   
-If you're familiar with TableAdapters, you can jump directly to one of these topics:  
+## Zweistufige Aktualisierungen  
+ Die Aktualisierung einer Datenquelle mithilfe eines Datasets umfasst zwei Schritte.  Im ersten Schritt wird das Dataset mit neuen Informationen, z. B. neuen, geänderten oder gelöschten Datensätzen, aktualisiert.  Falls die Anwendung lediglich auf das Dataset beschränkt ist – beispielsweise, wenn das Dataset nach der Aktualisierung an eine andere Anwendung gesendet und dort weiter verarbeitet wird – ist die Aktualisierung hier abgeschlossen.  
   
-|Topic|Description|  
-|-----------|-----------------|  
-|[Insert new records into a database](../data-tools/insert-new-records-into-a-database.md)|How to perform updates and inserts using TableAdapters or Command objects|  
-|[Update data by using a TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)|How to perform updates with TableAdapters|  
-|[Hierarchical update](../data-tools/hierarchical-update.md)|How to perform updates from a dataset with two or more related tables|  
-|[Handle a concurrency exception](../data-tools/handle-a-concurrency-exception.md)|How to handle exceptions when two users attempt to change the same data in a database at the same time|  
-|[How to: Save data by using a transaction](../data-tools/save-data-by-using-a-transaction.md)|How to save data in a transaction using the System.Transactions namespace and a TransactionScope object|  
-|[Walkthrough: Save data in a transaction](../data-tools/save-data-in-a-transaction.md)|Walkthrough that creates a Windows Forms application to demonstrate saving data to a database inside a transaction|  
-|[Save data to a database (multiple tables)](../data-tools/save-data-to-a-database-multiple-tables.md)|How to edit records and save changes in multiple tables back to the database|  
-|[Save data from an object to a database](../data-tools/save-data-from-an-object-to-a-database.md)|How to pass data from an object that is not in a dataset to a database by using a TableAdapter DbDirect method|  
-|[Save data with the TableAdapter DBDirect methods](../data-tools/save-data-with-the-tableadapter-dbdirect-methods.md)|How to use the TableAdapter to send SQL queries directly to the database|  
-|[Save a dataset as XML](../data-tools/save-a-dataset-as-xml.md)|How to save a dataset to an XML document|  
+> [!NOTE]
+>  In Windows Forms werden Änderungen an datengebundenen Steuerelementen aufgrund der Datenbindungsarchitektur automatisch an das Dataset gesendet, sodass es nicht explizit mit eigenem Code aktualisiert werden muss.  Weitere Informationen finden Sie unter [Datenbindung in Web Forms](../Topic/Windows%20Forms%20Data%20Binding.md).  
   
-## <a name="two-stage-updates"></a>Two-stage updates  
- Updating a data source is a two-step process. The first step is to update the dataset with new records, changed records, or deleted records. If your application never sends those changes back to the data source, then you are finished with the update.  
+ Wenn Sie eine Datenquelle \(z. B. eine Datenbank\) aktualisieren, besteht der zweite Schritt darin, die Änderungen am Dataset an die ursprüngliche Datenquelle zu senden.  Dies bedeutet, dass bei der Aktualisierung des Datasets Änderungen nicht automatisch in eine zugrunde liegende Datenquelle fortgeschrieben werden. Vielmehr muss dieser zweite Schritt explizit ausgeführt werden.  Normalerweise rufen Sie dazu die Update\-Methode des TableAdapter \(oder Datenadapters\) auf, der auch zum Auffüllen des Datasets mit Daten verwendet wurde. Sie können jedoch auch andere Adapter verwenden, z. B. zum Verschieben von Daten von einer Datenquelle in eine andere oder zum Aktualisieren mehrerer Datenquellen.  
   
- If you do send the changes back to the database, then a second step is required. If you aren't using data-bound controls, then you have to manually call the Update method of the same TableAdapter (or data adapter) that you used to populate the dataset. However, you can also use different adapters, for example, to move data from one data source to another or to update multiple data sources. If you aren't using data binding, and are saving changes for related tables, you have to manually instantiate a variable of the auto-generated TableAdapterManager class, and then call its UdpateAll method.  
+ ![Visual Basic&#45;DataSet&#45;Aktualisierungen](../data-tools/media/vbdatasetupdates.gif "vbDatasetUpdates")  
+Zweistufiger Aktualisierungsprozess und die Bedeutung von "DataRowVersion" in einer erfolgreichen Aktualisierung  
   
- ![Visual Basic Dataset Updates](../data-tools/media/vbdatasetupdates.gif "vbDatasetUpdates")  
-Two-stage update process and the role of the DataRowVersion in a successful update  
+ Strukturell gesehen stellt ein Dataset Daten in Form von Auflistungsgruppen zur Verfügung.  Datasets umfassen tabellarische Auflistungen.  Tabellen bestehen wiederum aus Rowsets.  Tabellen werden als Auflistung des <xref:System.Data.DataSet>\-Objekts verfügbar gemacht, und Datensätze sind in der <xref:System.Data.DataTable.Rows%2A>\-Auflistung von <xref:System.Data.DataTable>\-Objekten verfügbar.  Auch wenn Sie Daten in einem Dataset ändern können, indem Sie diese Auflistungen mithilfe der grundlegenden Auflistungsmethoden bearbeiten, müssen Sie für die Aktualisierung einer zugrunde liegenden Datenquelle Methoden verwenden, die speziell für die Änderung von Datasets entwickelt wurden.  
   
- A dataset contains collections of tables, which contain a collections of rows. If you intend to  update an underlying data source later, you must use the methods on the DataTable.DataRowCollection property when adding or removing rows. Those methods perform the change tracking that's needed for updating the data source. If you call the RemoveAt collection on the Rows property, the deletion won't be communicated back to the database.  
+ Um beispielsweise einen Datensatz aus einer Datentabelle zu entfernen, können Sie die [RemoveAt](https://msdn.microsoft.com/en-us/library/system.data.datarowcollection.removeat.aspx)\-Methode der tabellenspezifischen <xref:System.Data.DataTable.Rows%2A>\-Auflistung aufrufen. Bei dieser Vorgehensweise wird der Datensatz physisch aus dem Dataset gelöscht.  Falls Sie das Dataset lediglich als strukturierten Datenspeicher verwenden und keine Änderungsinformationen auf eine andere Anwendung übertragen müssen, ist diese Bearbeitungsmethode für Auflistungsdaten eine akzeptable Möglichkeit, um ein Dataset zu aktualisieren.  
   
-## <a name="merge-datasets"></a>Merge datasets  
- You can update the contents of a dataset by *merging* it with another dataset. This involves copying the contents of a *source* dataset into the calling dataset (referred to as the *target* dataset). When you merge datasets, new records in the source dataset are added to the target dataset. Additionally, extra columns in the source dataset are added to the target dataset. Merging datasets is useful when you have a local dataset and you get a second dataset from another application. It's also useful when you get a second dataset  from a component such as an XML web service, or when you need to integrate data from multiple datasets.  
+ Wenn Sie jedoch beabsichtigen, Änderungen auf eine Datenquelle oder eine andere Anwendung zu übertragen, müssen Änderungsinformationen \(d. h. Metadaten\) zu jeder Aktualisierung nachverfolgt werden.  Wenn Sie später Änderungen an die Datenquelle oder Anwendung senden, verfügt der Prozess über die Informationen, die zum Auffinden und Aktualisieren der erforderlichen Datensätze nötig sind.  Wenn Sie zum Beispiel einen Datensatz im Dataset löschen, müssen im Dataset Informationen zum gelöschten Datensatz beibehalten werden.  Auf diese Weise sind bei einem Aufruf von `DeleteCommand` des TableAdapter genügend Informationen zur Versionsgeschichte vorhanden, um den ursprünglichen Datensatz in der Datenquelle zu finden, sodass dieser gelöscht werden kann.  Weitere Informationen finden Sie unten im Abschnitt "Verwalten von Änderungsinformationen".  
   
- When merging datasets, you can pass a Boolean argument (`preserveChanges`) that tells the <xref:System.Data.DataSet.Merge%2A> method whether to retain existing modifications in the target dataset. Because datasets maintain multiple versions of records, it's important to keep in mind that more than one version of the records is being merged. The following table shows how a record in two datasets is merged:  
+## Zusammenführen von Datasets  
+ Sie können den Inhalt eines Datasets aktualisieren, indem Sie Inhalte *zusammenführen*. Dabei kopieren Sie den Inhalt eines Datasets \(des sogenannten *Quell*\-Datasets\) in das aufrufende Dataset \(das sogenannte *Ziel*\-Dataset\).  Beim Zusammenführen von Datasets werden neue Datensätze aus dem Quell\-Dataset in das Ziel\-Dataset eingefügt.  Darüber hinaus werden dem Ziel\-Dataset zusätzliche Spalten aus dem Quell\-Dataset hinzugefügt.  Das Zusammenführen von Datasets ist besonders sinnvoll, wenn ein lokales Dataset vorhanden ist und ein zweites Dataset aus einer anderen Anwendung oder einer Komponente, z. B. einem XML\-Webdienst, hinzugefügt wird.  Diese Vorgehensweise ist auch sinnvoll, wenn Sie Daten aus mehreren Datasets integrieren müssen.  
   
-|DataRowVersion|Target dataset|Source dataset|  
-|--------------------|--------------------|--------------------|  
-|Original|James Wilson|James C. Wilson|  
-|Current|Jim Wilson|James C. Wilson|  
+ Beim Zusammenführen von Datasets kann ein optionales boolesches Argument \(`preserveChanges`\) übergeben werden. Durch dieses Argument kann die <xref:System.Data.DataSet.Merge%2A>\-Methode feststellen, ob bestehende Änderungen im Ziel\-Dataset beibehalten werden sollen.  Da Datasets mehrere Datensatzversionen verwalten, darf nicht außer Acht gelassen werden, dass auch mehrere Datensatzversionen zusammengeführt werden.  In der folgenden Tabelle sehen Sie Datensätze aus zwei Datasets, die zusammengeführt werden:  
   
- Calling the <xref:System.Data.DataSet.Merge%2A> method on the previous table with `preserveChanges=false targetDataset.Merge(sourceDataset)` results in the following:  
+|DataRowVersion|Ziel\-Dataset|Quell\-Dataset|  
+|--------------------|-------------------|--------------------|  
+|Ursprünglich|James Wilson|James C.  Wilson|  
+|Aktuell|Jim Wilson|James C.  Wilson|  
   
-|DataRowVersion|Target dataset|Source dataset|  
-|--------------------|--------------------|--------------------|  
-|Original|James C. Wilson|James C. Wilson|  
-|Current|James C. Wilson|James C. Wilson|  
+ Durch den Aufruf der <xref:System.Data.DataSet.Merge%2A>\-Methode für die oben dargestellte Tabelle mit `preserveChanges=false targetDataset.Merge(sourceDataset)` erzielen Sie das folgende Ergebnis:  
   
- Calling the <xref:System.Data.DataSet.Merge%2A> method with `preserveChanges = true targetDataset.Merge(sourceDataset, true)` results in the following:  
+|DataRowVersion|Ziel\-Dataset|Quell\-Dataset|  
+|--------------------|-------------------|--------------------|  
+|Ursprünglich|James C.  Wilson|James C.  Wilson|  
+|Aktuell|James C.  Wilson|James C.  Wilson|  
   
-|DataRowVersion|Target dataset|Source dataset|  
-|--------------------|--------------------|--------------------|  
-|Original|James C. Wilson|James C. Wilson|  
-|Current|Jim Wilson|James C. Wilson|  
+ Durch den Aufruf der <xref:System.Data.DataSet.Merge%2A>\-Methode mit `preserveChanges = true targetDataset.Merge(sourceDataset, true)` erzielen Sie das folgende Ergebnis:  
+  
+|DataRowVersion|Ziel\-Dataset|Quell\-Dataset|  
+|--------------------|-------------------|--------------------|  
+|Ursprünglich|James C.  Wilson|James C.  Wilson|  
+|Aktuell|Jim Wilson|James C.  Wilson|  
   
 > [!CAUTION]
->  In the `preserveChanges = true` scenario, if the <xref:System.Data.DataSet.RejectChanges%2A> method is called on a record in the target dataset, then it reverts to the original data from the *source* dataset. This means that if you try to update the original data source with the target dataset, it might not be able to find the original row to update. You can prevent a concurrency violation by filling another dataset with the updated records from the data source and then performing a merge to prevent a concurrency violation. (A concurrency violation occurs when another user modifies a record in the data source after the dataset has been filled.)  
+>  Wenn im `preserveChanges = true`\-Szenario die <xref:System.Data.DataSet.RejectChanges%2A>\-Methode für einen Datensatz im Ziel\-Dataset aufgerufen wird, werden die Daten auf die ursprünglichen Daten im *Quell*\-Dataset zurückgesetzt.  Wenn Sie also versuchen, die ursprüngliche Datenquelle mit dem Ziel\-Dataset zu aktualisieren, wird die ursprüngliche zu aktualisierende Zeile u. U. nicht gefunden.  Sie können jedoch eine Parallelitätsverletzung vermeiden, indem Sie ein anderes Dataset mit den aktualisierten Datensätzen auffüllen und anschließend eine Zusammenführung ausführen. \(Eine Parallelitätsverletzung liegt vor, wenn ein anderer Benutzer einen Datensatz in der Datenquelle ändert, nachdem das Dataset aufgefüllt wurde.\)  
   
-## <a name="update-constraints"></a>Update constraints  
- To make changes to an existing data row,  add or update data in the individual columns. If the dataset contains constraints (such as foreign keys or non-nullable constraints), it's possible that the record can temporarily be in an error state as you update it. That is, it can be in an error state after you finish updating one column but before you get to the next one.  
+## Einschränkungen bei der Aktualisierung  
+ Um Änderungen an einer vorhandenen Datenzeile vorzunehmen, werden Daten in einzelnen Spalten hinzugefügt oder aktualisiert.  Wenn das Dataset Einschränkungen unterliegt \(z. B. Fremdschlüsseln oder Einschränkungen, die nicht auf NULL festgelegt werden können\), kann sich ein Datensatz während der Aktualisierung vorübergehend in einem Fehlerzustand befinden. Dies gilt für den Zeitpunkt, nachdem Sie eine Spalte aktualisiert haben, aber noch nicht zur nächsten Spalte gewechselt sind.  
   
- To prevent premature constraint violations you can temporarily suspend update constraints. This serves two purposes:  
+ Um vorzeitige Verletzungen dieser Einschränkungen zu vermeiden, können Sie sie vorübergehend außer Kraft setzen.  Bei diesem Verfahren werden zwei Ziele verfolgt:  
   
--   It prevents an error from being thrown after  you've finished updating one column but haven't started updating another.  
+-   Es wird verhindert, dass ein Fehler ausgelöst wird, wenn Sie eine Spalte aktualisieren, bevor Sie zur nächsten wechseln.  
   
--   It prevents certain update events from being raised (events that are often used for validation).  
-   
+-   Bestimmte \(häufig für Validierungen verwendete\) Aktualisierungsereignisse werden nicht ausgelöst.  
+  
+ Nachdem die Aktualisierung abgeschlossen ist, können Sie die Überprüfung von Einschränkungen wieder aktivieren, wodurch auch Aktualisierungsereignisse wieder aktiviert und ausgelöst werden.  
+  
 > [!NOTE]
->  In Windows Forms, the data binding architecture that's built into the datagrid suspends constraint checking until focus moves out of a row, and you do not have to explicitly call the <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A>, or <xref:System.Data.DataRow.CancelEdit%2A> methods.  
+>  In Windows Forms wird die Überprüfung von Einschränkungen durch die in das Datenraster integrierte Datenbindungsarchitektur unterbunden, bis der Fokus auf eine andere Zeile übergeht. Daher müssen die Methoden <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A> oder <xref:System.Data.DataRow.CancelEdit%2A> nicht explizit aufgerufen werden.  
   
- Constraints are automatically disabled when the <xref:System.Data.DataSet.Merge%2A> method is invoked on a dataset. When the merge is complete, if there are any constraints on the dataset that cannot be enabled,  a <xref:System.Data.ConstraintException> is thrown. In this situation, the <xref:System.Data.DataSet.EnforceConstraints%2A> property is set to `false,` and all constraint violations must be resolved before resetting the <xref:System.Data.DataSet.EnforceConstraints%2A> property to `true`.  
+ Beim Aufruf der <xref:System.Data.DataSet.Merge%2A>\-Methode für ein Dataset werden Einschränkungen automatisch deaktiviert.  Wenn nach erfolgreicher Zusammenführung weiterhin Einschränkungen für das Dataset bestehen, die nicht deaktiviert werden können, wird eine <xref:System.Data.ConstraintException> ausgelöst.  In einer solchen Situation ist die <xref:System.Data.DataSet.EnforceConstraints%2A>\-Eigenschaft auf `false` festgelegt, und alle Einschränkungsverletzungen müssen vor dem Zurücksetzen der <xref:System.Data.DataSet.EnforceConstraints%2A>\-Eigenschaft auf `true` aufgelöst werden.  
   
- After you complete an update, you can re-enable constraint checking, which also re-enables update events and raises them.  
+ Nachdem die Aktualisierung abgeschlossen ist, können Sie die Überprüfung von Einschränkungen wieder aktivieren, wodurch auch Aktualisierungsereignisse wieder aktiviert und ausgelöst werden.  
   
- For more information about suspending events, see [Turn off constraints while filling a dataset](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
+ Weitere Informationen zum Aufheben von Ereignissen finden Sie unter [Gewusst wie: Deaktivieren von Einschränkungen beim Auffüllen von Datasets](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
   
-## <a name="dataset-update-errors"></a>Dataset update errors  
- When you update a record in a dataset, there is the possibility of an error. For example, you might inadvertently write data of the wrong type to a column, or data that's too long, or data that has some other integrity problem. Or you might have application-specific validation checks that can raise custom errors during any stage of an update event. For more information, see [Validate data in datasets](../data-tools/validate-data-in-datasets.md).  
+## Fehler bei der Dataset\-Aktualisierung  
+ Bei der Aktualisierung von Datensätzen in einen Dataset können Fehler auftreten.  Beispielsweise können versehentlich Daten in eine Spalte geschrieben werden, die über den falschen Datentyp verfügt, zu lang ist oder ein anderes Integritätsproblem verursacht.  Darüber hinaus werden u. U. anwendungsspezifische Validierungen durchgeführt, die in jeder Phase eines Aktualisierungsereignisses benutzerdefinierte Fehler auslösen können.  Weitere Informationen finden Sie unter [Überprüfen von Daten in Datasets](../data-tools/validate-data-in-datasets.md).  
   
-## <a name="maintaining-information-about-changes"></a>Maintaining information about changes  
- Information about the changes in a dataset is maintained in two ways: by flagging rows that indicate that they have changed (<xref:System.Data.DataRow.RowState%2A>), and by keeping multiple copies of a record (<xref:System.Data.DataRowVersion>). By using this information, processes can determine what has changed in the dataset and can send appropriate updates to the data source.  
+## Verwalten von Änderungsinformationen  
+ Informationen zu Änderungen in einem Dataset werden auf zweifache Weise verwaltet: durch eine Zeilenkennzeichnung, die angibt, ob die Zeile geändert wurde \(<xref:System.Data.DataRow.RowState%2A>\), und durch die Speicherung mehrerer Kopien eines Datensatzes \(<xref:System.Data.DataRowVersion>\).  Mithilfe dieser Informationen können die geänderten Daten im Dataset vom Prozess ermittelt und die entsprechenden Aktualisierungen an die Datenquelle gesendet werden.  
   
-### <a name="rowstate-property"></a>RowState property  
- The <xref:System.Data.DataRow.RowState%2A> property of a <xref:System.Data.DataRow> object is a value that provides information about the status of a particular row of data.  
+### RowState\-Eigenschaft  
+ Die <xref:System.Data.DataRow.RowState%2A>\-Eigenschaft eines <xref:System.Data.DataRow>\-Objekts stellt einen Wert dar, der Informationen zum Status einer bestimmten Datenzeile bereitstellt.  
   
- The following table details the possible values of the <xref:System.Data.DataRowState> enumeration:  
+ In der folgenden Tabelle sind die möglichen Werte für die <xref:System.Data.DataRowState>\-Enumeration aufgeführt:  
   
-|DataRowState Value|Description|  
-|------------------------|-----------------|  
-|<xref:System.Data.DataRowState.Added>|The row has been added as an item to a <xref:System.Data.DataRowCollection>. (A row in this state does not have a corresponding original version since it did not exist when the last <xref:System.Data.DataRow.AcceptChanges%2A> method was called).|  
-|<xref:System.Data.DataRowState.Deleted>|The row was deleted using the <xref:System.Data.DataRow.Delete%2A> of a <xref:System.Data.DataRow> object.|  
-|<xref:System.Data.DataRowState.Detached>|The row has been created but is not part of any <xref:System.Data.DataRowCollection>. A <xref:System.Data.DataRow> object is in this state immediately after it has been created, before it has been added to a collection, and after it has been removed from a collection.|  
-|<xref:System.Data.DataRowState.Modified>|A column value in the row has changed in some way.|  
-|<xref:System.Data.DataRowState.Unchanged>|The row has not changed since <xref:System.Data.DataRow.AcceptChanges%2A> was last called.|  
+|DataRowState\-Wert|Beschreibung|  
+|------------------------|------------------|  
+|<xref:System.Data.DataRowState>|Die Zeile wurde einer <xref:System.Data.DataRowCollection> als Element hinzugefügt. \(Eine Zeile mit diesem Zustand hat keine entsprechende ursprüngliche Version, da sie beim Aufruf der letzten <xref:System.Data.DataRow.AcceptChanges%2A>\-Methode noch nicht vorhanden war\).|  
+|<xref:System.Data.DataRowState>|Die Zeile wurde mit <xref:System.Data.DataRow.Delete%2A> eines <xref:System.Data.DataRow>\-Objekts gelöscht.|  
+|<xref:System.Data.DataRowState>|Die Zeile wurde zwar erstellt, gehört aber keiner <xref:System.Data.DataRowCollection> an.  Ein <xref:System.Data.DataRow>\-Objekt befindet sich in diesem Zustand, unmittelbar nachdem es erstellt wurde und bevor es einer Auflistung hinzugefügt wird oder aber nachdem es aus einer Auflistung entfernt wurde.|  
+|<xref:System.Data.DataRowState>|Ein Spaltenwert in der Zeile wurde beliebig geändert.|  
+|<xref:System.Data.DataRowState>|Die Zeile wurde seit dem letzten Aufruf von <xref:System.Data.DataRow.AcceptChanges%2A> nicht geändert.|  
   
-### <a name="datarowversion-enumeration"></a>DataRowVersion enumeration  
-Datasets maintain multiple versions of records. The <xref:System.Data.DataRowVersion> fields can be used when retrieving the value found in a <xref:System.Data.DataRow> using the <xref:System.Data.DataRow.Item%2A> property or the <xref:System.Data.DataRow.GetChildRows%2A> method of the <xref:System.Data.DataRow> object.  
+### DataRowVersion\-Enumeration  
+ In Datasets werden mehrere Datensatzversionen verwaltet.  Die <xref:System.Data.DataRowVersion>\-Enumeration eines <xref:System.Data.DataRow>\-Objekts stellt einen Wert dar, der zum Zurückgeben einer bestimmten Version eines <xref:System.Data.DataRow>\-Objekts verwendet werden kann.  
   
-The following table details the possible values of the <xref:System.Data.DataRowVersion> enumeration:  
+ In der folgenden Tabelle sind die möglichen Werte für die <xref:System.Data.DataRowVersion>\-Enumeration aufgeführt:  
   
-|DataRowVersion Value|Description|  
-|--------------------------|-----------------|  
-|<xref:System.Data.DataRowVersion.Current>|The current version of a record contains all modifications that have been performed on the record since the last time <xref:System.Data.DataRow.AcceptChanges%2A> was called. If the row has been deleted, there is no current version.|  
-|<xref:System.Data.DataRowVersion.Default>|The default value of a record, as defined by the dataset schema or data source.|  
-|<xref:System.Data.DataRowVersion.Original>|The original version of a record is a copy of the record as it was the last time changes were committed in the dataset. In practical terms, this is typically the version of a record as read from a data source.|  
-|<xref:System.Data.DataRowVersion.Proposed>|The proposed version of a record that is available temporarily while you are in the middle of an update — that is, between the time you called the <xref:System.Data.DataRow.BeginEdit%2A> method and the <xref:System.Data.DataRow.EndEdit%2A> method. You typically access the proposed version of a record in a handler for an event such as <xref:System.Data.DataTable.RowChanging>. Invoking the <xref:System.Data.DataRow.CancelEdit%2A> method reverses the changes and deletes the proposed version of the data row.|  
+|DataRowVersion\-Wert|Beschreibung|  
+|--------------------------|------------------|  
+|<xref:System.Data.DataRowVersion>|Die aktuelle Version eines Datensatzes enthält alle Änderungen, die seit dem letzten Aufruf von <xref:System.Data.DataRow.AcceptChanges%2A> am Datensatz vorgenommen wurden.  Falls die Zeile gelöscht wurde, ist keine aktuelle Version vorhanden.|  
+|<xref:System.Data.DataRowVersion>|Der Standardwert eines Datensatzes, wie er durch das Dataset\-Schema oder die Datenquelle definiert wurde.|  
+|<xref:System.Data.DataRowVersion>|Die ursprüngliche Version eines Datensatzes ist eine Kopie des Datensatzes zu dem Zeitpunkt, zu dem zuletzt ein Commit für Dataset\-Änderungen ausgeführt wurde.  Praktisch entspricht dies meist der Version eines Datensatzes, die aus einer Datenquelle gelesen wurde.|  
+|<xref:System.Data.DataRowVersion>|Die vorläufige Version eines Datensatzes ist während der laufenden Aktualisierung vorübergehend verfügbar, d. h. nach dem Aufruf der <xref:System.Data.DataRow.BeginEdit%2A>\-Methode und vor dem Aufruf der <xref:System.Data.DataRow.EndEdit%2A>\-Methode.  Auf die vorläufige Version eines Datensatzes greifen Sie i. d. R. in einem Ereignishandler zu, z. B. <xref:System.Data.DataTable.RowChanging>.  Durch den Aufruf der <xref:System.Data.DataRow.CancelEdit%2A>\-Methode werden die Änderungen rückgängig gemacht und die vorläufige Version aus der Datenzeile gelöscht.|  
   
- The original and current versions are useful when update information is transmitted to a data source. Typically, when an update is sent to the data source, the new information for the database is in the current version of a record. Information from the original version is used to locate the record to update.  
+ Die ursprüngliche und die aktuelle Version sind hilfreich, wenn Aktualisierungsinformationen an eine Datenquelle übertragen werden.  Wenn eine Aktualisierung an die Datenquelle gesendet wird, befinden sich die neuen Informationen für die Datenbank i. d. R. in der aktuellen Version des Datensatzes.  Anhand von Informationen aus der ursprünglichen Version wird der zu aktualisierende Datensatz gesucht.  Wenn der Primärschlüssel eines Datensatzes beispielsweise geändert wird, müssen Sie eine Möglichkeit haben, den richtigen Datensatz in der Datenquelle aufzufinden, damit die Daten entsprechend den Änderungen aktualisiert werden können.  Wenn keine ursprüngliche Version vorhanden ist, wird der Datensatz höchstwahrscheinlich an die Datenquelle angefügt. Daraus resultiert dann nicht nur ein ungewollter zusätzlicher, sondern auch ungenauer und nicht mehr aktueller Datensatz.  Die beiden Versionen werden außerdem in der Parallelitätssteuerung verwendet. Sie können die ursprüngliche Version mit einem Datensatz in der Datenquelle vergleichen, um festzustellen, ob der Datensatz geändert wurde, seitdem er zuletzt in das Dataset geladen wurde.  
   
- For example, in a case where the primary key of a record is changed, you need a way to locate the correct record in the data source in order to update the changes. If no original version existed, then the record would most likely be appended to the data source, resulting not only in an extra unwanted record, but in one record that is inaccurate and out of date. The two versions are also used in concurrency control. You can compare the original version against a record in the data source to determine if the record has changed since it was loaded into the dataset.  
+ Die vorläufige Version ist von Nutzen, wenn Sie eine Validierung durchführen müssen, bevor die Änderungen am Dataset endgültig bestätigt werden.  
   
- The proposed version is useful when you need to perform validation before actually committing the changes to the dataset.  
+ Selbst wenn Datensätze geändert wurden, ist nicht immer eine ursprüngliche oder aktuelle Version der betreffenden Zeile verfügbar.  Wenn Sie eine neue Zeile in die Tabelle einfügen, existiert keine ursprüngliche, sondern nur eine aktuelle Version.  Auch wenn Sie eine Zeile durch den Aufruf der tabellenspezifischen `Delete`\-Methode löschen, ist eine ursprüngliche, aber keine aktuelle Version vorhanden.  
   
- Even if records have changed, there are not always original or current versions of that row. When you insert a new row into the table, there is no original version, only a current version. Similarly, if you delete a row by calling the table's `Delete` method, there is an original version, but no current version.  
+ Durch Abfrage der <xref:System.Data.DataRow.HasVersion%2A>\-Methode der Datenzeile können Sie überprüfen, ob eine bestimmte Version eines Datensatzes vorhanden ist.  Um auf eine der verschiedenen Datensatzversionen zuzugreifen, übergeben Sie einen <xref:System.Data.DataRowVersion>\-Enumerationswert als optionales Argument, wenn Sie den Wert einer Spalte anfordern.  
   
- You can test to see if a specific version of a record exists by querying a data row's <xref:System.Data.DataRow.HasVersion%2A> method. You can access either version of a record by passing a <xref:System.Data.DataRowVersion> enumeration value as an optional argument when you request the value of a column.  
+## Abrufen geänderter Datensätze  
+ In der Regel wird nicht jeder Datensatz in einem Dataset aktualisiert.  Beispielsweise kann ein Benutzer mit einem <xref:System.Windows.Forms.DataGridView>\-Steuerelement von Windows Forms arbeiten, durch das zahlreiche Datensätze angezeigt werden.  Der Benutzer aktualisiert jedoch vielleicht nur einige wenige Datensätze, löscht einen Datensatz und fügt einen neuen ein.  Datasets und Datentabellen bieten eine Methode \(`GetChanges`\), mit deren Hilfe ausschließlich die geänderten Zeilen zurückgegeben werden können.  
   
-## <a name="getting-changed-records"></a>Getting changed records  
- It's a common practice not to update every record in a dataset. For example, a user might be working with a Windows Forms <xref:System.Windows.Forms.DataGridView> control that displays many records. However, the user might update only a few records, delete one, and insert a new one. Datasets and data tables provide a method (`GetChanges`) for returning only the rows that have been modified.  
+ Sie können Teilmengen der geänderten Datensätze erstellen, indem Sie entweder die `GetChanges`\-Methode der Datentabelle \(<xref:System.Data.DataTable.GetChanges%2A>\) oder des Datasets selbst \(<xref:System.Data.DataSet.GetChanges%2A>\) verwenden.  Wenn Sie die Methode für die Datentabelle aufrufen, wird eine Kopie der Tabelle zurückgegeben, die lediglich die geänderten Datensätze enthält.  Ähnlich verhält es sich, wenn Sie die Methode für den Dataset aufrufen: Sie erhalten ein neues Dataset, das nur geänderte Datensätze enthält.  `GetChanges` gibt alle geänderten Datensätze zurück.  Im Gegensatz dazu können Sie durch Übergeben des gewünschten <xref:System.Data.DataRowState> als Parameter an die `GetChanges`\-Methode die gewünschte Teilmenge der geänderten Datensätze angeben: neu hinzugefügte Datensätze, zum Löschen markierte Datensätze, abgetrennte Datensätze oder geänderte Datensätze.  
   
- You can create subsets of changed records using the `GetChanges` method of either the data table (<xref:System.Data.DataTable.GetChanges%2A>) or of the dataset (<xref:System.Data.DataSet.GetChanges%2A>) itself. If you call the method for the data table, it returns a copy of the table with only the changed records. Similarly, if you call the method on the dataset, you get a new dataset with only changed records in it.  
+ Eine Teilmenge der geänderten Datensätze abzurufen, ist besonders hilfreich, wenn Datensätze zur Verarbeitung an eine andere Komponente gesendet werden sollen.  Anstatt das gesamte Dataset zu übertragen, können Sie die Kommunikation mit der anderen Komponente gering halten, indem Sie lediglich die Datensätze abrufen, die von der Komponente benötigt werden.  Weitere Informationen finden Sie unter [Gewusst wie: Abrufen von geänderten Zeilen](../Topic/How%20to:%20Retrieve%20Changed%20Rows.md).  
   
- `GetChanges` by itself  returns all changed records. In contrast, by passing the desired <xref:System.Data.DataRowState> as a parameter to the `GetChanges` method, you can specify what subset of changed records you want: newly added records, records that are marked for deletion, detached records, or modified records.  
+## Ausführen eines Commit für Änderungen in einem Dataset  
+ Während Sie Änderungen im Dataset vornehmen, wird die <xref:System.Data.DataRow.RowState%2A>\-Eigenschaft der geänderten Zeilen festgelegt.  Die ursprünglichen und aktuellen Datensatzversionen werden von der <xref:System.Data.DataRowView.RowVersion%2A>\-Eigenschaft eingerichtet, verwaltet und verfügbar gemacht.  Diese Eigenschaften stellen Änderungen dar. Die in den Eigenschaften gespeicherten Metadaten sind erforderlich, um die richtigen Aktualisierungen an die Datenquelle zu senden.  
   
- Getting a subset of changed records is useful when you want to send records to another component for processing. Instead of sending the entire dataset, you can reduce the overhead of communicating with the other component by getting only the records that the component needs.   
+ Wenn die Änderungen den aktuellen Zustand der Datenquelle widerspiegeln, müssen diese Informationen nicht länger beibehalten werden.  Es gibt in der Regel zwei Situationen, in denen das Dataset und seine Quelle synchron sind:  
   
-## <a name="committing-changes-in-the-dataset"></a>Committing changes in the dataset  
- As changes are made in the dataset, the <xref:System.Data.DataRow.RowState%2A> property of changed rows is set. The original and current versions of records are established, maintained, and made available to you by the <xref:System.Data.DataRowView.RowVersion%2A> property. The metadata that's stored in the properties of these changed rows is necessary for sending the correct updates to the data source.  
+-   Unmittelbar nach dem Laden von Informationen in das Dataset, z. B., wenn Sie Daten aus der Quelle einlesen.  
   
- If the changes reflect the current state of the data source, you no longer need to maintain this information. Typically, there are two times when the dataset and its source are in sync:  
+-   Nachdem Änderungen vom Dataset an die Datenquelle gesendet wurden \(jedoch nicht vorher, da die Änderungsinformationen, die zum Übertragen der Änderungen an die Datenbank erforderlich sind, ansonsten verloren gehen würden\).  
   
--   Immediately after you have loaded information into the dataset, such as when you read data from the source.  
+ Sie können für die ausstehenden Änderungen im Dataset ein Commit ausführen, indem Sie die <xref:System.Data.DataSet.AcceptChanges%2A>\-Methode aufrufen.  <xref:System.Data.DataSet.AcceptChanges%2A> wird i. d. R. in den folgenden Situationen in der Anwendung aufgerufen.  
   
--   After sending changes from the dataset to the data source (but not before, because you would lose the change information that's required to send changes to the database).  
-  
-You can commit the pending changes to the dataset by calling the <xref:System.Data.DataSet.AcceptChanges%2A> method. Typically, <xref:System.Data.DataSet.AcceptChanges%2A> is called at the following times:  
-  
--   After you load the dataset. If you load a dataset by calling a TableAdapter's `Fill` method, then the adapter automatically commits changes for you. However, if you load a dataset by merging another dataset into it, then you have to commit the changes manually.  
+-   Nachdem das Dataset geladen wurde.  Wenn Sie ein Dataset laden, indem Sie die `Fill`\-Methode eines TableAdapter aufrufen, führt der Adapter automatisch ein Commit für die Änderungen aus.  Wenn ein Dataset jedoch geladen wird, indem Sie ein anderes Dataset mit ihm zusammenführen, müssen Sie den Commit für die Änderungen manuell ausführen.  
   
     > [!NOTE]
-    >  You can prevent the adapter from automatically committing the changes when you call the `Fill` method by setting the `AcceptChangesDuringFill` property of the adapter to `false`. If it's set to `false`, then the <xref:System.Data.DataRow.RowState%2A> of each row that's inserted during the fill is set to <xref:System.Data.DataRowState.Added>.  
+    >  Sie können verhindern, dass der Adapter beim Aufrufen der `Fill`\-Methode den Commit für Änderungen automatisch ausführt, indem Sie die `AcceptChangesDuringFill`\-Eigenschaft des Adapters auf `false` festlegen.  Wenn sie auf `false` festgelegt ist, wird der <xref:System.Data.DataRow.RowState%2A> jeder während des Auffüllens eingefügten Zeile auf <xref:System.Data.DataRowState> festgelegt.  
   
--   After you send dataset changes to another process, such as an XML Web service.  
+-   Nachdem Datasetänderungen an einen anderen Prozess, z. B. an einen XML\-Webdienst, gesendet wurden.  
   
     > [!CAUTION]
-    >  Committing the change this way erases any change information. Do not commit changes until after you  finish performing operations that require your application to know what changes have been made in the dataset.  
+    >  Wenn ein Commit für Änderungen auf diese Weise ausgeführt wird, werden sämtliche Änderungsinformationen gelöscht.  Der Commit für Änderungen sollte erst ausgeführt werden, nachdem alle Operationen abgeschlossen sind, bei denen für die Anwendung erkennbar sein muss, welche Änderungen im Dataset vorgenommen wurden.  
   
-This method accomplishes the following:  
+ Diese Methode umfasst folgende Schritte:  
   
--   Writes the <xref:System.Data.DataRowVersion.Current> version of a record into its <xref:System.Data.DataRowVersion.Original> version and overwrites the original version.  
+-   Die <xref:System.Data.DataRowVersion>\-Version eines Datensatzes wird in seine <xref:System.Data.DataRowVersion>\-Version geschrieben, wobei die ursprüngliche Version überschrieben wird.  
   
--   Removes any row where the <xref:System.Data.DataRow.RowState%2A> property is set to <xref:System.Data.DataRowState.Deleted>.  
+-   Entfernt alle Zeilen, deren <xref:System.Data.DataRow.RowState%2A>\-Eigenschaft auf <xref:System.Data.DataRowState> festgelegt ist.  
   
--   Sets the <xref:System.Data.DataRow.RowState%2A> property of a record to <xref:System.Data.DataRowState.Unchanged>.  
+-   Legt die <xref:System.Data.DataRow.RowState%2A>\-Eigenschaft eines Datensatzes auf <xref:System.Data.DataRowState> fest.  
   
-The <xref:System.Data.DataSet.AcceptChanges%2A> method is available at three levels. You can call it on a <xref:System.Data.DataRow> object to commits changes for just that row. You can also call it on a <xref:System.Data.DataTable> object to commit all rows in a table. Finally, you can call it on the <xref:System.Data.DataSet> object to commit all pending changes in all records of all tables of the dataset.  
+ Die <xref:System.Data.DataSet.AcceptChanges%2A>\-Methode ist auf drei Ebenen verfügbar.  Sie kann für ein <xref:System.Data.DataRow>\-Objekt aufgerufen werden, wobei der für Änderungen ausgeführte Commit nur diese Zeile betrifft.  Sie können die Methode auch für ein <xref:System.Data.DataTable>\-Objekt aufrufen, um einen Commit für alle Zeilen in einer Tabelle auszuführen, oder für das <xref:System.Data.DataSet>\-Objekt, um einen Commit für alle ausstehenden Änderungen in sämtlichen Datensätzen aller im Dataset enthaltenen Tabellen auszuführen.  
   
-The following table describes which changes are committed based on what object the method is called on.  
+ In der folgenden Tabelle wird basierend auf dem Objekt, für das die Methode aufgerufen wird, beschrieben, für welche Änderungen ein Commit ausgeführt wird.  
   
-|Method|Result|  
-|------------|------------|  
-|<xref:System.Data.DataRow.AcceptChanges%2A?displayProperty=fullName>|Changes are committed only on the specific row.|  
-|<xref:System.Data.DataTable.AcceptChanges%2A?displayProperty=fullName>|Changes are committed on all rows in the specific table.|  
-|<xref:System.Data.DataSet.AcceptChanges%2A?displayProperty=fullName>|Changes are committed on all rows in all tables of the dataset.|  
+|Methode|Ergebnis|  
+|-------------|--------------|  
+|<xref:System.Data.DataRow.AcceptChanges%2A?displayProperty=fullName>|Ein Commit wird nur für Änderungen in der spezifischen Zeile ausgeführt.|  
+|<xref:System.Data.DataTable.AcceptChanges%2A?displayProperty=fullName>|Ein Commit wird für Änderungen in allen Zeilen der spezifischen Tabelle ausgeführt.|  
+|<xref:System.Data.DataSet.AcceptChanges%2A?displayProperty=fullName>|Ein Commit wird für Änderungen in allen Zeilen der Datasettabellen ausgeführt.|  
   
 > [!NOTE]
->  If you load a dataset by calling a TableAdapter's `Fill` method, you don't have to explicitly accept changes. By default, the `Fill` method calls the `AcceptChanges` method after it finishes populating the data table.  
+>  Wenn Sie ein Dataset laden, indem Sie die `Fill`\-Methode eines TableAdapter aufrufen, müssen Änderungen nicht explizit angenommen werden; die `Fill`\-Methode ruft in der Standardeinstellung die `AcceptChanges`\-Methode auf, nachdem die Datentabelle mit Daten aufgefüllt wurde.  
   
- A related method, <xref:System.Data.DataSet.RejectChanges%2A>, undoes the effect of changes by copying the <xref:System.Data.DataRowVersion.Original> version back into the <xref:System.Data.DataRowVersion.Current> version of records. It also sets the <xref:System.Data.DataRow.RowState%2A> of each record back to <xref:System.Data.DataRowState.Unchanged>.  
+ Eine verwandte Methode, `RejectChanges`, hebt die Auswirkungen der Änderungen auf, indem die <xref:System.Data.DataRowVersion>\-Version wieder in die <xref:System.Data.DataRowVersion>\-Version der Datensätze kopiert werden und der <xref:System.Data.DataRow.RowState%2A> der einzelnen Datensätze auf <xref:System.Data.DataRowState> zurückgesetzt wird.  
   
-## <a name="data-validation"></a>Data validation  
- In order to verify that the data in your application meets the requirements of the processes that it is passed to, you often have to add validation. This might involve checking that a user's entry in a form is correct, validating data that's sent to your application by another application, or even checking that information that's calculated within your component falls within the constraints of your data source and application requirements.  
+## Datenvalidierung  
+ Um sicherzustellen, dass die in der Anwendung enthaltenen Daten die Anforderungen des Prozesses erfüllen, an den sie übergeben werden, sind oftmals Validierungen erforderlich.  Dabei wird z. B. überprüft, ob die Benutzereingaben in einem Formular oder die von einer anderen Anwendung an die Anwendung gesendeten Daten korrekt sind, oder es kann auch getestet werden, ob die innerhalb der Komponente berechneten Informationen die Einschränkungen der Datenquelle sowie die Anforderungen der Anwendung erfüllen.  
   
- You can validate data in several ways:  
+ Daten können auf verschiedene Weisen überprüft werden:  
   
--   In the business layer, by adding code to your application to validate data. The dataset is one place you can do this. The dataset provides some of the advantages of back-end validation — such as the ability to validate changes as column and row values are changing. For more information, see [Validate data in datasets](../data-tools/validate-data-in-datasets.md).  
+-   In der Geschäftsschicht, indem der Anwendung Code für Datenüberprüfungen hinzugefügt wird.  Dieses Vorgehen ist nur im Dataset möglich.  Das Dataset bietet einige Vorteile der Back\-End\-Validierung, z. B. die Möglichkeit, Änderungen an Spalten\- und Zeilenwerten zu überprüfen.  Weitere Informationen finden Sie unter [Überprüfen von Daten in Datasets](../data-tools/validate-data-in-datasets.md).  
   
--   In the presentation layer, by adding validation to forms. For more information, see [User Input Validation in Windows Forms](/dotnet/framework/winforms/user-input-validation-in-windows-forms).  
+-   In der Präsentationsschicht, indem Formularen Validierungen hinzugefügt werden.  Weitere Informationen finden Sie unter [Validierung von Benutzereingaben in Windows Forms](../Topic/User%20Input%20Validation%20in%20Windows%20Forms.md).  
   
--   In the data back end, by sending data to the data source — for example, the database — and allowing it to accept or reject the data. If you are working with a database that has sophisticated facilities for validating data and providing error information, this can be a practical approach because you can validate the data no matter where it comes from. However, this approach might not accommodate application-specific validation requirements. Additionally, having the data source validate data can result in numerous round trips to the data source, depending on how your application facilitates the resolution of validation errors raised by the back end.  
+-   Im Back\-End der Datenschicht. Daten werden an die Datenquelle, z. B. die Datenbank, gesendet, und die Datenbank kann diese Daten annehmen oder ablehnen.  Bei Verwendung einer Datenbank, die hochentwickelte Datenüberprüfungsmechanismen besitzt und Fehlerinformationen bereitstellt, ist dieser Ansatz durchaus überlegenswert, da Daten unabhängig von ihrer Herkunft überprüft werden können.  Möglicherweise werden dabei jedoch keine anwendungsspezifischen Anforderungen in Bezug auf die Validierung berücksichtigt.  Darüber hinaus können aus der Datenüberprüfung durch die Datenquelle zahlreiche wiederholte Zugriffe auf die Datenquelle resultieren. Dies hängt davon ab, wie die vom Back\-End ausgelösten Validierungsfehler von der Anwendung behandelt werden.  
   
     > [!IMPORTANT]
-    >  When using data commands with a <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> property that's set to <xref:System.Data.CommandType.Text>, carefully check information that is sent from a client before passing it to your database. Malicious users might try to send (inject) modified or additional SQL statements in an effort to gain unauthorized access or damage the database. Before you transfer user input to a database, always verify that the information is valid. It's a best practice to always use parameterized queries or stored procedures when possible. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+    >  Wenn Sie Datenbefehle mit einer <xref:System.Data.SqlClient.SqlCommand.CommandType%2A>\-Eigenschaft mit dem Wert <xref:System.Data.CommandType> verwenden, müssen Sie die von einem Client gesendeten Informationen sorgfältig überprüfen, bevor Sie diese an die Datenbank übergeben.  Böswillige Benutzer könnten versuchen, veränderte oder zusätzliche SQL\-Anweisungen zu senden \(einzufügen\), um unautorisierten Zugriff zu erhalten oder die Datenbank zu beschädigen.  Bevor Sie Benutzereingaben an eine Datenbank übergeben, müssen Sie immer die Zulässigkeit der Informationen überprüfen. Es wird empfohlen, möglichst immer parametrisierte Abfragen oder gespeicherte Prozeduren zu verwenden.  Weitere Informationen finden Sie unter [Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md).  
   
-## <a name="transmitting-updates-to-the-data-source"></a>Transmitting updates to the data source  
-After changes have been made in a dataset, you can transmit the changes to a data source. Most commonly, you do this by calling the `Update` method of a TableAdapter (or data adapter). The method loops through each record in a data table, determines what type of update is required (update, insert, or delete), if any, and then runs the appropriate command.  
-
- As an illustration of how updates are made, suppose your application uses a dataset that contains a single data table. The application fetches two rows from the database. After the retrieval, the in-memory data table looks like this:  
+ Nachdem ein Dataset geändert wurde, können Sie die Änderungen an eine Datenquelle übertragen.  In den meisten Fällen rufen Sie dazu die `Update`\-Methode eines TableAdapter \(oder Datenadapters\) auf.  Die Methode führt einen Schleifendurchlauf durch jeden Datensatz in einer Datentabelle durch, ermittelt den ggf. erforderlichen Aktualisierungstyp \(Aktualisierung, Einfügung oder Löschvorgang\) und führt anschließend den geeigneten Befehl aus.  
+  
+## Übertragung einer Aktualisierung an die Datenquelle  
+ Um sich die Funktionsweise einer Aktualisierung zu vergegenwärtigen, stellen Sie sich vor, dass Ihre Anwendung ein Dataset mit einer einzelnen Datentabelle verwendet.  Die Anwendung ruft zwei Zeilen aus der Datenbank ab.  Nach dem Abruf sieht die Datentabelle im Arbeitsspeicher wie folgt aus:  
   
 ```  
 (RowState)     CustomerID   Name             Status  
@@ -245,7 +221,7 @@ After changes have been made in a dataset, you can transmit the changes to a dat
 (Unchanged)    c400         Nancy Buchanan    Pending  
 ```  
   
- Your application changes Nancy Buchanan's status to "Preferred." As a result of this change, the value of the <xref:System.Data.DataRow.RowState%2A> property for that row changes from <xref:System.Data.DataRowState.Unchanged> to <xref:System.Data.DataRowState.Modified>. The value of the <xref:System.Data.DataRow.RowState%2A> property for the first row remains <xref:System.Data.DataRowState.Unchanged>. The data table now looks like this:  
+ Die Anwendung ändert Nancy Buchanans Status in "Preferred". Durch diese Änderung wird der Wert der <xref:System.Data.DataRow.RowState%2A>\-Eigenschaft von <xref:System.Data.DataRowState> in <xref:System.Data.DataRowState> geändert.  Der Wert der <xref:System.Data.DataRow.RowState%2A>\-Eigenschaft für die erste Zeile behält den Wert <xref:System.Data.DataRowState> bei.  Die Datentabelle sieht nun wie folgt aus:  
   
 ```  
 (RowState)     CustomerID   Name             Status  
@@ -253,34 +229,57 @@ After changes have been made in a dataset, you can transmit the changes to a dat
 (Modified)     c400         Nancy Buchanan    Preferred  
 ```  
   
- Your application now calls the `Update` method to transmit the dataset to the database. The method inspects each row in turn. For the first row, the method transmits no SQL statement to the database because that row has not changed since it was originally fetched from the database.  
+ Anschließend ruft die Anwendung die `Update`\-Methode auf, um das Dataset an die Datenbank zu übertragen.  Durch die Methode werden wieder die einzelnen Zeilen untersucht.  Für die erste Zeile überträgt die Methode keine SQL\-Anweisung an die Datenbank, da diese Zeile seit dem ursprünglichen Abruf aus der Datenbank nicht geändert wurde.  
   
- For the second row, however, the `Update` method automatically invokes the correct data command and transmits it to the database. The specific syntax of the SQL statement depends on the dialect of SQL that's supported by the underlying data store. But the following general traits of the transmitted SQL statement are noteworthy:  
+ Für die zweite Zeile ruft die `Update`\-Methode jedoch automatisch den geeigneten Datenbefehl auf und überträgt ihn an die Datenbank.  Die spezifische Syntax der SQL\-Anweisung richtet sich nach der SQL\-Sprachvariante, die vom zugrunde liegenden Datenspeicher unterstützt wird.  Die folgenden allgemeinen Merkmale der übertragenen SQL\-Anweisung sollten jedoch beachtet werden:  
   
--   The transmitted SQL statement is an UPDATE statement. The adapter knows to use an UPDATE statement because the value of the <xref:System.Data.DataRow.RowState%2A> property is <xref:System.Data.DataRowState.Modified>.  
+-   Die übertragene SQL\-Anweisung ist eine **UPDATE**\-Anweisung.  Da der Wert der <xref:System.Data.DataRow.RowState%2A>\-Eigenschaft <xref:System.Data.DataRowState> ist, ist es für Adapter offensichtlich, dass sie eine UPDATE\-Anweisung verwenden müssen.  
   
--   The transmitted SQL statement includes a WHERE clause indicating that the target of the UPDATE statement is the row where `CustomerID = 'c400'`. This part of the SELECT statement distinguishes the target row from all others because the `CustomerID` is the primary key of the target table. The information for the WHERE clause is derived from the original version of the record (`DataRowVersion.Original`), in case the values that are required to identify the row have  changed.  
+-   Die übertragene SQL\-Anweisung schließt eine **WHERE**\-Klausel ein, die als Ziel der **UPDATE**\-Anweisung die Zeile angibt, deren Wert `CustomerID = 'c400'` lautet.  Durch diesen Teil der SELECT\-Anweisung wird die Zielzeile von allen anderen Zeilen unterschieden, da die `CustomerID` der Primärschlüssel der Zieltabelle ist.  Für den Fall, dass Werte erforderlich sind, um festzustellen, ob Zeilen geändert wurden, werden die Informationen für die **WHERE**\-Klausel von der ursprünglichen Datensatzversion \(`DataRowVersion.Original`\) abgeleitet.  
   
--   The transmitted SQL statement includes the SET clause, to set the new values of the modified columns.  
+-   Die übertragene SQL\-Anweisung umfasst eine **SET**\-Klausel, mit der der neue Wert geänderter Spalten festgelegt wird.  
   
     > [!NOTE]
-    >  If the TableAdapter's `UpdateCommand` property has been set to the name of a stored procedure, the adapter does not construct an SQL statement. Instead, it invokes the stored procedure with the appropriate parameters passed in.  
+    >  Wenn die `UpdateCommand`\-Eigenschaft des TableAdapter auf den Namen einer gespeicherten Prozedur festgelegt wurde, erstellt der Adapter keine SQL\-Anweisung.  Stattdessen wird die gespeicherte Prozedur mit den entsprechenden übergebenen Parametern aufgerufen.  
   
-## <a name="passing-parameters"></a>Passing parameters  
- You usually use parameters to pass the values for records that are going to be updated in the database.  When the TableAdapter's `Update` method runs an UPDATE statement, it needs to fill in the parameter values. It gets these values from the `Parameters` collection for the appropriate data command — in this case, the `UpdateCommand` object in the TableAdapter.  
+## Übergeben von Parametern  
+ Werte für die zu aktualisierenden Datensätze in der Datenbank werden in der Regel mit Parametern übergeben.  Wenn von der `Update`\-Methode des TableAdapter eine UPDATE\-Anweisung ausgeführt wird, müssen die entsprechenden Parameterwerte ausgefüllt werden.  Die benötigten Werte werden aus der `Parameters`\-Auflistung des jeweiligen Datenbefehls abgerufen, in diesem Fall ist dies das `UpdateCommand`\-Objekt im TableAdapter.  
   
- If you've used the Visual Studio tools to generate a data adapter, the `UpdateCommand` object  contains a collection of parameters that correspond to each parameter placeholder in the statement.  
+ Wenn der Datenadapter mithilfe der Visual Studio\-Tools generiert wurde, enthält das `UpdateCommand`\-Objekt eine Auflistung mit Parametern, die dem jeweiligen Parameterplatzhalter in der Anweisung entsprechen.  
   
- The <xref:System.Data.SqlClient.SqlParameter.SourceColumn%2A?displayProperty=fullName> property of each parameter points to a column in the data table. For example, the `SourceColumn` property for the `au_id` and `Original_au_id` parameters is set to whatever column in the data table contains the author id. When the adapter's `Update` method runs, it reads the author id column from the record that's being updated and fills the values into the statement.  
+ Die <xref:System.Data.SqlClient.SqlParameter.SourceColumn%2A?displayProperty=fullName>\-Eigenschaft der einzelnen Parameter zeigt auf eine Spalte in der Datentabelle.  Beispiel: Die `SourceColumn`\-Eigenschaft für den `au_id`\-Parameter und den `Original_au_id`\-Parameter wird auf die Spalte in der Datentabelle festgelegt, die die Autor\-ID enthält.  Wenn die `Update`\-Methode des Adapters ausgeführt wird, wird die Spalte mit der Autor\-ID aus dem aktualisierten Datensatz gelesen, und die Werte werden in die Anweisung eingetragen.  
   
- In an UPDATE statement, you need to specify both the new values (those that will be written to the record) as well as the old values (so that the record can be located in the database). There are therefore two parameters for each value: one for the SET clause and a different one for the WHERE clause. Both parameters read data from the record that's being updated, but they get different versions of the column value based on the parameter's [SqlParameter.SourceVersion Property](https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlparameter.sourceversion.aspx). The parameter for the SET clause gets the current version, and the parameter for the WHERE clause gets the original version.  
+ In einer **UPDATE**\-Anweisung müssen sowohl die neuen Werte \(die in den Datensatz geschrieben werden\) als auch die alten Werte angegeben werden \(damit der zu aktualisierende Datensatz in der Datenbank gefunden werden kann\).  Daher verfügt jeder Wert über zwei Parameter: einen für die **SET**\-Klausel und einen anderen für die **WHERE**\-Klausel.  Durch beide Parameter werden Daten aus dem aktualisierten Datensatz gelesen; sie erhalten jedoch unterschiedliche Versionen des Spaltenwerts, die auf der [SqlParameter.SourceVersion\-Eigenschaft](https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlparameter.sourceversion.aspx) des Parameters basieren.  Für den Parameter der **SET**\-Klausel wird die aktuelle Version und für den Parameter der **WHERE**\-Klausel die ursprüngliche Version abgerufen.  
   
 > [!NOTE]
->  You can also set values in the `Parameters` collection yourself in code, which you would typically do in an event handler for the data adapter's <xref:System.Data.DataTable.RowChanging> event.  
+>  Sie können auch selbst Werte für die `Parameters`\-Auflistung im Code festlegen. Dies erfolgt in der Regel in einem Ereignishandler für das <xref:System.Data.DataTable.RowChanging>\-Ereignis des Datenadapters.  
   
-## <a name="see-also"></a>See Also  
- [Create and Configure TableAdapters](create-and-configure-tableadapters.md)    
- [Update data by using a TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)   
- [Bind controls to data in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Validating Data](validate-data-in-datasets.md)   
- [Saving Data](../data-tools/saving-data.md)
+## Aktualisieren verknüpfter Tabellen  
+ Wenn das Dataset mehrere Tabellen umfasst, müssen Sie diese einzeln aktualisieren, indem Sie die `Update`\-Methode der einzelnen Datenadapter separat aufrufen.  Falls die Tabellen über eine Parent\-Child\-Beziehung verfügen, müssen die Aktualisierungen wahrscheinlich in einer bestimmten Reihenfolge an die Datenbank gesendet werden.  Häufig kommt es vor, dass sowohl übergeordnete als auch verknüpfte untergeordnete Datensätze in ein Dataset eingefügt werden, z. B. ein neuer Kundendatensatz und ein oder mehrere verknüpfte Bestelldatensätze.  Wenn in der Datenbank relationale Integrität erzwungen wird, werden Fehler ausgelöst, wenn die neuen untergeordneten Datensätze an die Datenbank übertragen werden, bevor der übergeordnete Datensatz überhaupt erstellt wurde.  
+  
+ Wenn Sie verknüpfte Datensätze im Dataset löschen, müssen Aktualisierungen dagegen grundsätzlich in umgekehrter Reihenfolge übertragen werden: zuerst an die untergeordnete und dann an die übergeordnete Tabelle.  Andernfalls löst die Datenbank wahrscheinlich einen Fehler aus, da die referenziellen Integritätsregeln verhindern, dass ein übergeordneter Datensatz gelöscht wird, solange untergeordnete Datensätze vorhanden sind.  
+  
+ Grundsätzlich sollte beim Übertragen von Aktualisierungen für verknüpfte Tabellen die nachstehende Reihenfolge eingehalten werden:  
+  
+1.  Untergeordnete Tabelle: Datensätze löschen.  
+  
+2.  Übergeordnete Tabelle: Datensätze einfügen, aktualisieren und löschen.  
+  
+3.  Untergeordnete Tabelle: Datensätze einfügen und aktualisieren.  
+  
+4.  Weitere Informationen finden Sie unter [Exemplarische Vorgehensweise: Speichern von Daten in einer Datenbank \(mehrere Tabellen\)](../data-tools/save-data-to-a-database-multiple-tables.md).  
+  
+## Parallelitätssteuerung  
+ Da Datasets von der Datenquelle getrennt sind, unterliegen die Datensätze in der Datenquelle keiner Sperrung.  Falls Sie die Datenbank aktualisieren möchten und die Parallelitätssteuerung für die Anwendung berücksichtigt werden muss, müssen Sie die Datensätze im Dataset daher mit denen in der Datenbank abgleichen.  Möglicherweise stellen Sie fest, dass die Datensätze in der Datenbank geändert wurden, seit das Dataset zuletzt aufgefüllt wurde.  In diesem Fall müssen Sie die anwendungsspezifische Logik ausführen, um festzulegen, wie der Datenbankdatensatz oder der geänderte Datensatz in Ihrem Dataset behandelt werden soll.  
+  
+## Siehe auch  
+ [Übersicht über TableAdapters](../data-tools/tableadapter-overview.md)   
+ [Gewusst wie: Aktualisieren von Daten mit einem TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)   
+ [Übersicht über Datenanwendungen in Visual Studio](../data-tools/overview-of-data-applications-in-visual-studio.md)   
+ [Herstellen von Datenverbindungen in Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)   
+ [Vorbereiten der Anwendung auf den Empfang von Daten](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
+ [Abrufen von Daten für die Anwendung](../data-tools/fetching-data-into-your-application.md)   
+ [Binden von Steuerelementen an Daten in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
+ [Bearbeiten von Daten in der Anwendung](../data-tools/editing-data-in-your-application.md)   
+ [Überprüfen von Daten](../Topic/Validating%20Data.md)   
+ [Speichern von Daten](../data-tools/saving-data.md)

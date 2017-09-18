@@ -1,69 +1,52 @@
 ---
-title: IDebugStackFrame3::GetUnwindCodeContext | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugStackFrame3::GetUnwindCodeContext
-helpviewer_keywords:
-- IDebugStackFrame3::GetUnwindCodeContext method
+title: "IDebugStackFrame3::GetUnwindCodeContext | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugStackFrame3::GetUnwindCodeContext"
+helpviewer_keywords: 
+  - "IDebugStackFrame3::GetUnwindCodeContext-Methode"
 ms.assetid: b25f7e7d-2b24-48e4-93b3-829e61d73ebf
 caps.latest.revision: 6
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 76ec36e4a4b09a7de5b7c627edbd5a540eb6b4b7
-ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 6
 ---
-# <a name="idebugstackframe3getunwindcodecontext"></a>IDebugStackFrame3::GetUnwindCodeContext
-Returns the code context representing a location if a stack unwind operation occurred.  
+# IDebugStackFrame3::GetUnwindCodeContext
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Gibt den Code Elementkontext zurück, der einen Speicherort darstellt, wenn ein Stapel entladungs Vorgang aufgetreten ist.  
   
-## <a name="syntax"></a>Syntax  
+## Syntax  
   
-```cpp  
+```cpp#  
 HRESULT GetUnwindCodeContext(  
-   IDebugCodeContext2 **ppCodeContext  
+   IDebugCodeContext2 **ppCodeContext  
 );  
 ```  
   
-```csharp  
+```c#  
 int GetUnwindCodeContext(  
-   out IDebugCodeContext2 ppCodeContext  
+   out IDebugCodeContext2 ppCodeContext  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parameter  
  `ppCodeContext`  
- [out] Returns an [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) object that represents the code context location if a stack unwind occurred.  
+ \[out\]  Gibt ein [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)\-Objekt zurück, das den Kontext darstellt, wenn der Code eine Stapel Entladen von aufgetreten ist.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## Rückgabewert  
+ Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
   
-## <a name="remarks"></a>Remarks  
- Even though this method might return a code context for the location after a stack unwind, it does not necessarily mean the stack unwind can actually occur in the current stack frame.  
+## Hinweise  
+ Obwohl diese Methode möglicherweise einen Speicherort für den Kontext des Codes zurückgäbe, nachdem eine Stapel Entladen von bedeutet nicht notwendigerweise, kann die Stapel Entladen von tatsächlich im aktuellen Stapelrahmen auftreten.  
   
-## <a name="see-also"></a>See Also  
+## Siehe auch  
  [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

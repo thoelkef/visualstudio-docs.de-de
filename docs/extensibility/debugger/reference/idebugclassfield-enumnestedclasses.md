@@ -1,70 +1,53 @@
 ---
-title: IDebugClassField::EnumNestedClasses | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugClassField::EnumNestedClasses
-helpviewer_keywords:
-- IDebugClassField::EnumNestedClasses method
+title: "IDebugClassField::EnumNestedClasses | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugClassField::EnumNestedClasses"
+helpviewer_keywords: 
+  - "IDebugClassField::EnumNestedClasses-Methode"
 ms.assetid: 2ba5ef0c-395e-4006-9e3c-9b06e1d711d0
 caps.latest.revision: 9
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 756d6783a7990d5ad06ed86dc243cc2c08646f7e
-ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 9
 ---
-# <a name="idebugclassfieldenumnestedclasses"></a>IDebugClassField::EnumNestedClasses
-Creates an enumerator for the classes nested in this class.  
+# IDebugClassField::EnumNestedClasses
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Erstellt einen Enumerator für Klassen, die in dieser Klasse geschachtelt werden.  
   
-## <a name="syntax"></a>Syntax  
+## Syntax  
   
-```cpp  
-HRESULT EnumNestedClasses(   
-   IEnumDebugFields** ppEnum  
+```cpp#  
+HRESULT EnumNestedClasses(   
+   IEnumDebugFields** ppEnum  
 );  
 ```  
   
-```csharp  
+```c#  
 int EnumNestedClasses(  
-   out IEnumDebugFields ppEnum  
+   out IEnumDebugFields ppEnum  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parameter  
  `ppEnum`  
- [out] Returns an [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) object representing the list of nested classes. Returns a null value if there are no nested classes.  
+ \[out\]  Gibt ein [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)\-Objekt zurück, das die Liste der geschachtelten Klasse darstellt.  Gibt einen NULL\-Wert zurück, wenn keine geschachtelten Klassen gibt.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns S_OK or returns S_FALSE if there are no nested classes. Otherwise, returns an error code.  
+## Rückgabewert  
+ Bei Erfolg gibt S\_OK zurück oder gibt S\_FALSE zurück, wenn keine geschachtelten Klassen gibt.  Andernfalls gibt einen Fehlercode zurück.  
   
-## <a name="remarks"></a>Remarks  
- Each element of the enumeration is an [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) object describing a nested class.  
+## Hinweise  
+ Jedes Element der Enumeration ist ein [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)\-Objekt, das eine geschachtelte Klasse beschreibt.  
   
- A nested class is a class defined inside another class. For example:  
+ Eine geschachtelte Klasse ist eine Klasse, die innerhalb einer anderen Klasse definiert ist.  Beispiele:  
   
 ```  
 class RootClass {  
@@ -72,8 +55,8 @@ class RootClass {
 };  
 ```  
   
- The [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) enumeration would contain one object representing the `NestedClass` class.  
+ Die [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)\-Enumeration ist ein Objekt, das die `NestedClass`\-Klasse darstellt.  
   
-## <a name="see-also"></a>See Also  
+## Siehe auch  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

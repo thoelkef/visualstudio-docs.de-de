@@ -1,82 +1,65 @@
 ---
-title: Creating a Settings Category | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- profile settings, creating categories
+title: "Erstellen einer Einstellungskategorie | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "Erstellen von Kategorien profileinstellungen"
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 caps.latest.revision: 39
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 6a5d6b839eb021bded2627241b6f7cbfdbfcbac3
-ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 39
 ---
-# <a name="creating-a-settings-category"></a>Creating a Settings Category
-In this walkthrough you create a Visual Studio settings category and use it to save values to and restore values from a settings file. A settings category is a group of related properties that appear as a "custom settings point"; that is, as a check box in the **Import and Exports Settings** Wizard. (You can find it on the **Tools** menu.) Settings are saved or restored as a category, and individual settings are not displayed in the wizard. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
+# Erstellen einer Einstellungskategorie
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+In dieser exemplarischen Vorgehensweise müssen Sie eine Visual Studio\-Einstellungen erstellen und verwenden, um Werte zu speichern und Werte aus einer Datei wiederherstellen. Einstellungskategorie ist eine Gruppe verwandter Eigenschaften, die als "Benutzerdefinierte Einstellungen Punkt;" angezeigt werden. d. h. als Kontrollkästchen in der **Einstellungen importieren und Exporte** Assistenten. \(Sie finden es auf die **Tools** Menü.\) Einstellungen gespeichert werden, oder als eine Kategorie wiederhergestellt, und einzelne Einstellungen werden nicht im Assistenten angezeigt. Weitere Informationen finden Sie unter [Anpassen der Entwicklungseinstellungen in Visual Studio](http://msdn.microsoft.com/de-de/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
- You create a settings category by deriving it from the <xref:Microsoft.VisualStudio.Shell.DialogPage> class.  
+ Erstellen Sie eine Settings\-Kategorie durch Ableitung von der <xref:Microsoft.VisualStudio.Shell.DialogPage> Klasse.  
   
- To start this walkthrough, you must first complete the first section of [Creating an Options Page](../extensibility/creating-an-options-page.md). The resulting Options property grid lets you examine and change the properties in the category. After you save the property category in a settings file, you examine the file to see how the property values are stored.  
+ Um diese exemplarische Vorgehensweise beginnen, müssen Sie zunächst den ersten Abschnitt des [Erstellen eine Optionsseite](../extensibility/creating-an-options-page.md). Die resultierende Eigenschaftenraster für Serveroptionen können Sie die überprüfen und Ändern der Eigenschaften in der Kategorie. Nachdem Sie die Kategorie in einer Datei speichern, untersuchen Sie die Datei aus, um anzuzeigen, wie Eigenschaftswerte gespeichert werden.  
   
-## <a name="prerequisites"></a>Prerequisites  
- Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## Vorbereitungsmaßnahmen  
+ Starten in Visual Studio 2015, führen Sie Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio\-Setup enthalten. Sie können auch später im Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Das Visual Studio SDK installieren](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-a-settings-category"></a>Creating a Settings Category  
- In this section, you use a custom settings point to save and restore the values of the settings category.  
+## Erstellen einer Einstellungskategorie  
+ In diesem Abschnitt verwenden Sie einen benutzerdefinierten Einstellungen zu speichern, die Werte der Einstellungskategorie wiederherstellen.  
   
-#### <a name="to-create-a-settings-category"></a>To create a settings category  
+#### Erstellen eine Einstellungskategorie  
   
-1.  Complete the [Creating an Options Page](../extensibility/creating-an-options-page.md).  
+1.  Führen Sie die [Erstellen eine Optionsseite](../extensibility/creating-an-options-page.md).  
   
-2.  Open the VSPackage.resx file and add these three string resources:  
+2.  Öffnen Sie die Datei VSPackage.resx, und fügen Sie diese drei Zeichenfolgenressourcen hinzu:  
   
-    |Name|Value|  
-    |----------|-----------|  
-    |106|My Category|  
-    |107|My Settings|  
-    |108|OptionInteger and OptionFloat|  
+    |Name|Wert|  
+    |----------|----------|  
+    |106|Meine Kategorie|  
+    |107|Meine Einstellungen|  
+    |108|OptionInteger und OptionFloat|  
   
-     This creates resources that name the category "My Category", the object "My Settings", and the category description "OptionInteger and OptionFloat".  
+     Dadurch wird die Ressourcen, Name der Kategorie "My Category", das Objekt "Meine Einstellungen" und die Beschreibung der Kategorie "OptionInteger und OptionFloat" erstellt.  
   
     > [!NOTE]
-    >  Of these three, only the category name does not appear in the Import and Export Settings wizard.  
+    >  Diese drei wird nur die Namen der Kategorie in den Assistenten zum Importieren und Exportieren von Einstellungen nicht angezeigt.  
   
-3.  In MyToolsOptionsPackage.cs, add a `float` property named `OptionFloat` to the `OptionPageGrid` class, as shown in the following example.  
+3.  Fügen Sie in MyToolsOptionsPackage.cs, eine `float` Eigenschaft mit dem Namen `OptionFloat` auf die `OptionPageGrid` Klasse, wie im folgenden Beispiel gezeigt.  
   
-    ```csharp  
-    public class OptionPageGrid : DialogPage  
+    ```c#  
+    public class OptionPageGrid : DialogPage  
     {  
-        private int optionInt = 256;  
-        private float optionFloat = 3.14F;  
+        private int optionInt = 256;  
+        private float optionFloat = 3.14F;  
   
         [Category("My Options")]  
         [DisplayName("My Integer option")]  
         [Description("My integer option")]  
-        public int OptionInteger  
+        public int OptionInteger  
         {  
             get { return optionInt; }  
             set { optionInt = value; }  
@@ -84,7 +67,7 @@ In this walkthrough you create a Visual Studio settings category and use it to s
         [Category("My Options")]  
         [DisplayName("My Float option")]  
         [Description("My float option")]  
-        public float OptionFloat  
+        public float OptionFloat  
         {  
             get { return optionFloat; }  
             set { optionFloat = value; }  
@@ -93,81 +76,81 @@ In this walkthrough you create a Visual Studio settings category and use it to s
     ```  
   
     > [!NOTE]
-    >  The `OptionPageGrid` category named "My Category" now consists of the two properties, `OptionInteger` and `OptionFloat`.  
+    >  Die `OptionPageGrid` Kategorie mit dem Namen "My Category" jetzt besteht aus zwei Eigenschaften `OptionInteger` und `OptionFloat`.  
   
-4.  Add a <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> to the `MyToolsOptionsPackage` class and give it the CategoryName "My Category", give it the ObjectName "My Settings", and set isToolsOptionPage to true. Set the categoryResourceID, objectNameResourceID, and DescriptionResourceID to the corresponding string resource IDs created earlier.  
+4.  Hinzufügen einer <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> die `MyToolsOptionsPackage` \-Klasse und weisen sie CategoryName "My Category", geben sie den Objektnamen "Meine Einstellungen" und IsToolsOptionPage auf True festgelegt. Legen Sie die CategoryResourceID, ObjectNameResourceID und DescriptionResourceID auf der entsprechenden Zeichenfolgenressource zuvor erstellten IDs.  
   
-    ```csharp  
+    ```c#  
     [ProvideProfileAttribute(typeof(OptionPageGrid),   
         "My Category", "My Settings", 106, 107, isToolsOptionPage:true, DescriptionResourceID = 108)]  
     ```  
   
-5.  Build the project and start debugging. In the experimental instance you should see that **My Grid Page** now has both integer and float values.  
+5.  Erstellen Sie das Projekt, und starten Sie das Debugging. In der experimentellen Instanz sollten angezeigt werden, **Meine Rasterseite** verfügt jetzt über Ganzzahl\-und Fließkommawerte.  
   
-## <a name="examining-the-settings-file"></a>Examining the Settings File  
- In this section, you export property category values to a settings file. You examine the file and then import the values back into the property category.  
+## Untersuchen die Einstellungsdatei  
+ In diesem Abschnitt exportieren Sie Eigenschaftswerte für die Kategorie in eine Datei. Untersuchen Sie die Datei, und importieren Sie dann die Werte wieder in der Kategorie.  
   
-1.  Start the project in debug mode by pressing F5. This starts the experimental instance.  
+1.  Starten Sie das Projekt im Debugmodus, durch Drücken von F5. Dadurch wird die experimentelle Instanz gestartet.  
   
-2.  Open the **Tools / Options** dialog.  
+2.  Öffnen Sie die **Extras \/ Optionen** Dialogfeld.  
   
-3.  In the tree view in the left pane, expand **My Category** and then click **My Grid Page**.  
+3.  Erweitern Sie in der Strukturansicht im linken Bereich **Meine Kategorie** und klicken Sie dann auf **Meine Rasterseite**.  
   
-4.  Change the value of **OptionFloat** to 3.1416 and **OptionInteger** to 12. Click **OK**.  
+4.  Ändern Sie den Wert der **OptionFloat** zu 3.1416 und **OptionInteger** 12. Klicken Sie auf **OK**.  
   
-5.  On the **Tools** menu, click **Import and Export Settings**.  
+5.  Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren**.  
   
-     The **Import and Export Settings** wizard appears.  
+     Die **Einstellungen importieren und exportieren** \-Assistent wird angezeigt.  
   
-6.  Make sure **Export selected environment settings** is selected, and then click **Next**.  
+6.  Stellen Sie sicher, dass **ausgewählte umgebungseinstellungen exportieren** ausgewählt ist, und klicken Sie dann auf **Weiter**.  
   
-     The **Choose Settings to Export** page appears.  
+     Die **Wählen Sie Einstellungen für den Export** Seite wird angezeigt.  
   
-7.  Click **My Settings**.  
+7.  Klicken Sie auf **Meine Einstellungen**.  
   
-     The **Description** changes to **OptionInteger and OptionFloat**.  
+     Die **Beschreibung** ändert sich in **OptionInteger und OptionFloat**.  
   
-8.  Make sure that **My Settings** is the only category that is selected, and then click **Next**.  
+8.  Stellen Sie sicher, dass **Meine Einstellungen** ist die einzige Kategorie, die ausgewählt ist, und klicken Sie dann auf **Weiter**.  
   
-     The **Name Your Settings File** page appears.  
+     Die **Name der Einstellungsdatei** Seite wird angezeigt.  
   
-9. Name the new settings file `MySettings.vssettings` and save it in an appropriate directory. Click **Finish**.  
+9. Nennen Sie die neue Einstellungsdatei `MySettings.vssettings` und in ein geeignetes Verzeichnis zu speichern. Klicken Sie auf **Fertig stellen**.  
   
-     The **Export Complete** page reports that your settings were successfully exported.  
+     Die **vollständige exportieren** Seite meldet, dass die Einstellungen erfolgreich exportiert wurden.  
   
-10. On the **File** menu, point to **Open**, and then click **File**. Locate `MySettings.vssettings` and open it.  
+10. Auf der **Datei** auf **Öffnen**, und klicken Sie dann auf **Datei**. Suchen Sie `MySettings.vssettings` und öffnen Sie es.  
   
-     You can find the property category you exported in the following section of the file (your GUIDs will differ).  
+     Sie finden die Kategorie, die Sie im folgenden Abschnitt der Datei exportiert \(die GUIDs werden unterscheiden\).  
   
     ```  
     <Category name="My Category_My Settings"   
-          Category="{4802bc3e-3d9d-4591-8201-23d1a05216a6}"   
-          Package="{6bb6942e-014c-489e-a612-a935680f703d}"   
-          RegisteredName="My Category_My Settings">  
-          PackageName="MyToolsOptionsPackage">  
-       <PropertyValue name="OptionFloat">3.1416</PropertyValue>   
-       <PropertyValue name="OptionInteger">12</PropertyValue>   
+          Category="{4802bc3e-3d9d-4591-8201-23d1a05216a6}"   
+          Package="{6bb6942e-014c-489e-a612-a935680f703d}"   
+          RegisteredName="My Category_My Settings">  
+          PackageName="MyToolsOptionsPackage">  
+       <PropertyValue name="OptionFloat">3.1416</PropertyValue>   
+       <PropertyValue name="OptionInteger">12</PropertyValue>   
     </Category>  
     ```  
   
-     Notice that the full category name is formed by the addition of an underscore to the category name followed by the object name. OptionFloat and OptionInteger appear in the category, together with their exported values.  
+     Beachten Sie, dass die vollständige Kategorienamen zusätzlich einen Unterstrich, den Namen der Kategorie, gefolgt vom Objektnamen gebildet wird. OptionFloat und OptionInteger werden in der Kategorie zusammen mit ihren Werten exportierten.  
   
-11. Close the settings file without changing it.  
+11. Schließen Sie die Datei ohne Änderung.  
   
-12. On the **Tools** menu, click **Options**, expand **My Category**, click **My Grid Page** and then change the value of **OptionFloat** to 1.0 and **OptionInteger** to 1. Click **OK**.  
+12. Auf der **Tools** Menü klicken Sie auf **Optionen**, erweitern Sie **Meine Kategorie**, klicken Sie auf **Meine Rasterseite** und ändern Sie den Wert der **OptionFloat** 1.0 und **OptionInteger** auf 1. Klicken Sie auf **OK**.  
   
-13. On the **Tools** menu, click **Import and Export Settings**, select **Import selected environment settings**, and then click **Next**.  
+13. Auf der **Tools** Menü klicken Sie auf **Einstellungen importieren und exportieren**, auf **ausgewählte umgebungseinstellungen importieren**, und klicken Sie dann auf **Weiter**.  
   
-     The **Save Current Settings** page appears.  
+     Die **aktuelle Einstellungen speichern** Seite wird angezeigt.  
   
-14. Select **No, just import new settings** and then click **Next**.  
+14. Wählen Sie **Nein, neue Einstellungen importieren** und klicken Sie dann auf **Weiter**.  
   
-     The **Choose a Collection of Settings to Import** page appears.  
+     Die **Wählen Sie eine Auflistung der Einstellungen für den Import** Seite wird angezeigt.  
   
-15. Select the `MySettings.vssettings` file in the **My Settings** node of the tree view. If the file does not appear in the tree view, click **Browse** and find it. Click **Next**.  
+15. Wählen Sie die `MySettings.vssettings` Datei der **Meine Einstellungen** Knoten in der Strukturansicht angezeigt. Wenn die Datei nicht in der Strukturansicht angezeigt wird, klicken Sie auf **Durchsuchen** und finden. Klicken Sie auf **Weiter**.  
   
-     The **Choose Settings to Import** dialog box appears.  
+     Die **Wählen Sie Einstellungen für den Import** das Dialogfeld wird angezeigt.  
   
-16. Make sure that **My Settings** is selected, and then click **Finish**. When the **Import Complete** page appears, click **Close**.  
+16. Stellen Sie sicher, dass **Meine Einstellungen** ausgewählt ist, und klicken Sie dann auf **Fertig stellen**. Wenn die **Importieren abgeschlossen** Seite angezeigt wird, klicken Sie auf **Schließen**.  
   
-17. On the **Tools** menu, click **Options**, expand **My Category**, click **My Grid Page** and verify that the property category values have been restored.
+17. Auf der **Tools** Menü klicken Sie auf **Optionen**, erweitern Sie **Meine Kategorie**, klicken Sie auf **Meine Rasterseite** und stellen Sie sicher, dass die Kategorie Eigenschaftswerte wiederhergestellt wurden.

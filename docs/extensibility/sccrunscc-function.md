@@ -1,91 +1,74 @@
 ---
-title: SccRunScc Function | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- SccRunScc
-helpviewer_keywords:
-- SccRunScc function
+title: "SccRunScc-Funktion | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "SccRunScc"
+helpviewer_keywords: 
+  - "SccRunScc-Funktion"
 ms.assetid: bbe7c931-b17a-4779-9cf6-59e5f9f0c172
 caps.latest.revision: 14
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: db173b2a22556c360808b93049f39fca7f95656f
-ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 14
 ---
-# <a name="sccrunscc-function"></a>SccRunScc Function
-This function invokes the source control administration tool.  
+# SccRunScc-Funktion
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Diese Funktion ruft das Datenquellen\-Steuerelement\-Verwaltungstool.  
   
-## <a name="syntax"></a>Syntax  
+## Syntax  
   
-```cpp  
+```cpp#  
 SCCRTN SccRunScc(  
-   LPVOID  pvContext,  
-   HWND    hWnd,  
-   LONG    nFiles,  
-   LPCSTR* lpFileNames  
+   LPVOID  pvContext,  
+   HWND    hWnd,  
+   LONG    nFiles,  
+   LPCSTR* lpFileNames  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parameter  
  pvContext  
- [in] The source control plug-in context structure.  
+ \[in\] Source Control\-Plug\-in Context\-Struktur.  
   
  hWnd  
- [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
+ \[in\] Ein Handle für die IDE\-Fenster, das Quellcodeverwaltungs\-Plug\-in als übergeordnetes Element für alle Dialogfelder verwenden kann, die es bereitstellt.  
   
  nFiles  
- [in] Number of files specified in the `lpFileNames` array.  
+ \[in\] Anzahl der angegebenen Dateien in den `lpFileNames` Array.  
   
  lpFileNames  
- [in] Array of selected file names.  
+ \[in\] Ein Array der ausgewählten Dateinamen.  
   
-## <a name="return-value"></a>Return Value  
- The source control plug-in implementation of this function is expected to return one of the following values:  
+## Rückgabewert  
+ Datenquellen\-Steuerelement Plug\-in\-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
   
-|Value|Description|  
-|-----------|-----------------|  
-|SCC_OK|The source control administration tool was successfully invoked.|  
-|SCC_I_OPERATIONCANCELED|The operation was cancelled.|  
-|SCC_E_INITIALIZEFAILED|Failed to initialize the source control system.|  
-|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues.|  
-|SCC_E_CONNECTIONFAILURE|Failed to connect to the source control system.|  
-|SCC_E_FILENOTCONTROLLED|The selected file is not under source control.|  
-|SCC_E_NONSPECIFICERROR|Nonspecific failure.|  
+|Wert|Beschreibung|  
+|----------|------------------|  
+|SCC\_OK|Das Datenquellen\-Steuerelement\-Verwaltungstool wurde erfolgreich aufgerufen.|  
+|SCC\_I\_OPERATIONCANCELED|Der Vorgang wurde abgebrochen.|  
+|SCC\_E\_INITIALIZEFAILED|Fehler beim Initialisieren des Quellcode\-Verwaltungssystem.|  
+|SCC\_E\_ACCESSFAILURE|Es wurde ein Problem, das Zugriff auf Quellcode\-Verwaltungssystem, möglicherweise aufgrund eines Netzwerk\-oder Konflikte.|  
+|SCC\_E\_CONNECTIONFAILURE|Fehler beim Verbinden mit dem Quellcodeverwaltungssystem.|  
+|SCC\_E\_FILENOTCONTROLLED|Die ausgewählte Datei ist nicht in einem Quellcodeverwaltungsprojekt.|  
+|SCC\_E\_NONSPECIFICERROR|Nicht spezifischen Fehler.|  
   
-## <a name="remarks"></a>Remarks  
- This function allows the caller to access the full range of features of the source control system through an external administration tool. If the source control system has no user interface, the source control plug-in can implement an interface to perform necessary administration functions.  
+## Hinweise  
+ Diese Funktion ermöglicht den Aufrufer, den vollen Umfang der Features von Quellcode\-Verwaltungssystem über ein externes Verwaltungstool zugreifen. Wenn Quellcode\-Verwaltungssystem keine Benutzeroberfläche besitzt, kann das Quellcodeverwaltungs\-Plug\-in eine Schnittstelle zum Ausführen der erforderlichen Funktionen implementieren.  
   
- This function is called with a count and an array of file names for the currently selected files. If the administration tool supports it, the list of files can be used to preselect files in the administration interface; otherwise, the list can be ignored.  
+ Diese Funktion ist mit einem Zähler und ein Array von Dateinamen für die ausgewählten Dateien aufgerufen. Wenn das Verwaltungstool unterstützt wird, kann die Liste der Dateien verwendet werden, auf die Dateien in die Verwaltungsoberfläche vorab auswählen. Andernfalls kann die Liste ignoriert werden.  
   
- This function is typically invoked when the user selects the **Launch \<Source Control Server>** from the **File** -> **Source Control** menu. This **Launch** menu option can be always disabled or even hidden by setting a registry entry. See [How to: Install a Source Control Plug-in](../extensibility/internals/how-to-install-a-source-control-plug-in.md) for details. This function is called only if [SccInitialize](../extensibility/sccinitialize-function.md) returns the `SCC_CAP_RUNSCC` capability bit (see [Capability Flags](../extensibility/capability-flags.md) for details on this and other capability bits).  
+ Diese Funktion wird in der Regel aufgerufen, wenn der Benutzer wählt die **Launch \< Quellcodeverwaltungsserver \>** aus der **Datei** \-\> **Source Control** Menü. Diese **Starten** Menüoption immer deaktiviert oder sogar durch Festlegen eines Registrierungseintrags ausgeblendet werden kann. Ausführliche Informationen finden Sie unter [Gewusst wie: Installieren Sie ein Quellcodeverwaltungs\-Plug\-in](../extensibility/internals/how-to-install-a-source-control-plug-in.md). Diese Funktion wird nur aufgerufen, wenn [SccInitialize](../extensibility/sccinitialize-function.md) Gibt die `SCC_CAP_RUNSCC` Funktion Bit \(finden Sie unter [Capability Flags](../extensibility/capability-flags.md) ausführliche Informationen über diese und andere Funktionen\).  
   
-## <a name="see-also"></a>See Also  
- [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
- [How to: Install a Source Control Plug-in](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
+## Siehe auch  
+ [Source Control\-Plug\-in\-API\-Funktionen](../extensibility/source-control-plug-in-api-functions.md)   
+ [Gewusst wie: Installieren Sie ein Quellcodeverwaltungs\-Plug\-in](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
  [Capability Flags](../extensibility/capability-flags.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)

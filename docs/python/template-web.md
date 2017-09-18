@@ -1,5 +1,5 @@
 ---
-title: Web Project Template for Python in Visual Studio | Microsoft Docs
+title: "Webprojektvorlage für Python in Visual Studio | Microsoft-Dokumentation"
 ms.custom: 
 ms.date: 7/13/2017
 ms.prod: visual-studio-dev15
@@ -16,116 +16,114 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 4013eb0b251985b0984d0cbf2a723175fe91aad5
-ms.openlocfilehash: 6a03b26b2ad01bedc4f1b0882c39ba3ad19e26d2
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: e46dd1012d220015b1840c0c50332dbe45e43a1e
 ms.contentlocale: de-de
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="python-web-project-templates"></a>Python Web Project Templates
+# <a name="python-web-project-templates"></a>Python-Webprojektvorlagen
 
-Python in Visual Studio supports developing web projects in Bottle, Flask, and Django frameworks through project templates and a debug launcher that can be configured to handle various frameworks. You can also use the generic "Web Project" template for other frameworks such as Pyramid.
+Python in Visual Studio unterstützt das Entwickeln von Webprojekten in Frameworks wie Bottle, Django und Flask mit Projektvorlagen und einem Debugstartprogramm, das so konfiguriert werden kann, dass es mehrere Frameworks behandelt kann. Visual Studio enthält jedoch nicht die Frameworks selbst. Diese müssen Sie getrennt installieren, indem Sie mit der rechten Maustaste auf das Projekt klicken und **Python > Framework installieren/aktualisieren** wählen.
 
-Visual Studio does not include the frameworks themselves. You must install frameworks separately by right-clicking the project and selecting **Python > Install/upgrade framework...**.
+Jede Vorlage (zugänglich über **Datei > Neu > Projekt**) startet einen Webserver mit einem zufällig ausgewählten lokalen Port, öffnet Ihren Standardbrowser beim Debuggen und ermöglicht eine direkte Veröffentlichung in [Microsoft Azure](http://www.azure.com). Vorlagen werden für Bottle, Flask und Django bereitgestellt und können Sie die generische Vorlage „Webprojekt“ für andere Frameworks wie Pyramid nutzen.
 
-When run, a project created from a template (as accessed through **File > New > Project...**) launches a web server with a randomly selected local port, opens your default browser when debugging, and allows direct publishing to Microsoft Azure.
+![Neue Webprojektvorlagen](media/template-web-new-project.png)
 
-![New Web Project templates](media/template-web-new-project.png)
+Die Vorlagen für Bottle, Flask und Django enthalten jeweils eine Startwebsite mit einigen Seiten und statischen Dateien. Dieser Code ist ausreichend für das lokale Ausführen und Debuggen des Servers (wobei einige Einstellungen aus der Umgebung abgerufen werden müssen) sowie für das Bereitstellen für Microsoft Azure (wobei ein [WSGI-App](http://www.python.org/dev/peps/pep-3333/)-Objekt angegeben werden muss).
 
-The Bottle, Flask, and Django templates each include a starter site with some pages and static files. This code is sufficient to run and debug the server locally (where some settings need to be obtained from the environment) and to deploy to Microsoft Azure (where a [WSGI app](http://www.python.org/dev/peps/pep-3333/) object needs to be provided).
+Wenn Sie ein Projekt über eine frameworkspezifische Vorlage erstellen, wird ein Dialogfeld angezeigt, das Ihnen bei der Installation der erforderlichen Pakete mit pip hilft. Zudem empfehlen wir die Verwendung einer [virtuellen Umgebung](python-environments.md#virtual-environments) für Webprojekte, damit beim Veröffentlichen der Website die richtigen Abhängigkeiten enthalten sind:
 
-When creating a project from a framework-specific template, a dialog appears to help you install the necessary packages using pip. We also recommend using a [virtual environment](python-environments.md#virtual-environments) for web projects so that the correct dependencies are included when you publish your web site:
+![Dialogfeld, über das die erforderlichen Pakete für eine Projektvorlage installiert werden](media/template-web-requirements-txt-wizard.png)
 
-![Dialog that installs needed packages for a project template](media/template-web-requirements-txt-wizard.png)
+Wählen Sie bei der Bereitstellung in Microsoft Azure App Service eine Version von Python als [Websiteerweiterung](https://aka.ms/PythonOnAppService), und installieren Sie Pakete manuell. Da Pakete in Azure App Service bei Bereitstellung über Visual Studio **nicht** automatisch anhand einer `requirements.txt`-Datei installiert werden, befolgen Sie außerdem die Konfigurationsdetails unter [aka.ms/PythonOnAppService](https://aka.ms/PythonOnAppService).
 
-When deploying to Microsoft Azure App Service, select a version of Python as a [site extension](https://aka.ms/PythonOnAppService) and manually install packages. Also, because Azure App Service does **not** automatically install packages from a `requirements.txt` file when deployed from Visual Studio, follow the configuration details on [aka.ms/PythonOnAppService](https://aka.ms/PythonOnAppService).
+In Microsoft Azure Cloud Services *wird* die `requirements.txt`-Datei hingegen unterstützt. Weitere Details finden Sie unter [Azure Cloud Services-Projekte](template-azure-cloud-service.md).
 
-Microsoft Azure Cloud Service *does* support the `requirements.txt` file. [Azure Cloud Service Projects](template-azure-cloud-service.md) for details.
-
-For an introduction to Python web projects, see [Getting Started with PTVS, Part 6: Web sites](https://youtu.be/FJx5mutt1uk?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (youtube.com, 3m10s).
+Eine Einführung in Python-Webprojekte finden Sie in diesem Video: [Getting Started with PTVS, Part 6: Web sites](https://youtu.be/FJx5mutt1uk?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (youtube.com, 3 Minuten, 10 Sekunden).
 
 > [!VIDEO https://www.youtube.com/embed/FJx5mutt1uk]
 
-## <a name="debugging"></a>Debugging
+## <a name="debugging"></a>Debuggen
 
-When a web project is started for debugging, Visual Studio starts the web server locally and opens your default browser to that address and port. To specify additional options, right-click the project, select **Properties**, and select the **Web Launcher** tab:
+Wenn ein Webprojekt zum Debuggen gestartet wird, startet Visual Studio den Webserver lokal und öffnet Ihren Standardbrowser mit dieser Adresse und diesem Port. Um zusätzliche Optionen anzugeben, klicken Sie mit der rechten Maustaste auf das Projekt, wählen Sie **Eigenschaften**, und wählen Sie die Registerkarte **Webstartprogramm**:
 
-  ![Web launcher properties for the generic web template](media/template-web-launcher-properties.png)
+  ![Eigenschaften des Webstartprogramms für die generische Webvorlage](media/template-web-launcher-properties.png)
 
-In the **Debug** group:
+Gruppe **Debuggen**:
 
-- **Search Paths**, **Script Arguments**, **Interpreter Arguments**, and **Interpreter Path**: these options are the same as for [normal debugging](debugging.md)
-- **Launch URL**: specifies the URL that is opened in your browser. It defaults to `localhost`.
-- **Port Number**: the port to use if none is specified in the URL (Visual Studio selects one automatically by default). This setting allows you to override the default value of the `SERVER_PORT` environment variable, which is used by the templates to configure the port the local debug server listens on.
+- **Suchpfade**, **Skriptargumente**, **Interpreterargumente** und **Interpreterpfad**: Diese Optionen stimmen mit denen für das [normale Debuggen](debugging.md) überein.
+- **Start-URL**: Gibt die URL an, die in Ihrem Browser geöffnet wird. Sie wird standardmäßig auf `localhost` festgelegt.
+- **Portnummer**: Gibt den Port an, der verwendet wird, wenn in der URL keiner angegeben ist. (Standardmäßig wird er von Visual Studio automatisch ausgewählt.) Durch diese Eigenschaft können Sie den Standardwert der `SERVER_PORT`-Umgebungsvariablen außer Kraft setzen, der von den Vorlagen zur Konfiguration des Ports verwendet wird, auf den der lokale Debugserver lauscht.
 
-The properties in the **Run Server Command** and **Debug Server Command** groups (the latter is below what's show in the image) determine how the web server is launched. Because many frameworks require the use of a script outside of the current project, the script can be configured here and the name of the startup module can be passed as a parameter.
+Durch die Eigenschaften in den Gruppen **Serverbefehl ausführen** und **Debugserverbefehl** (letzterer befindet sich weiter unten und wird in der Abbildung nicht gezeigt) wird festgelegt, wie der Webserver gestartet wird. Da für viele Frameworks die Verwendung eines Skripts außerhalb des aktuellen Projekts erforderlich ist, kann das Skript hier konfiguriert und der Name des Startmoduls als Parameter übergeben werden.
 
-- **Command**: can be a Python script (`*.py` file), a module name (as in, `python.exe -m module_name`), or a single line of code (as in, `python.exe -c "code"`). The value in the dropdown indicates which of these types is intended.
-- **Arguments**: these arguments are passed on the command line following the command.
-- **Environment**: a newline-separated list of `NAME=VALUE` pairs specifying environment variables. These variables are set after all properties that may modify the environment, such as the port number and search paths, and so may overwrite these values.
+- **Befehl**: Hierbei kann es sich um ein Python-Skript (`*.py`-Datei), einen Modulnamen (wie in `python.exe -m module_name`) oder eine einzelne Codezeile (wie in `python.exe -c "code"`) handeln. Der Wert in der Dropdownliste gibt an, welcher dieser Typen vorgesehen ist.
+- **Argumente**: Diese Argumente werden in der Befehlszeile nach dem Befehl übergeben.
+- **Umgebung**: eine durch Zeilenumbrüche getrennte Liste von `NAME=VALUE`-Paaren, durch die die Umgebungsvariablen angegeben werden. Diese Variablen werden nach allen Eigenschaften festgelegt, durch die die Umgebung möglicherweise modifiziert wird (z.B. Portnummer und Suchpfade), und können daher diese Werte überschreiben.
 
-Any project property or environment variable can be specified with MSBuild syntax, for example: `$(StartupFile) --port $(SERVER_PORT)`.
-`$(StartupFile)` is the relative path to the startup file and `{StartupModule}` is the importable name of the startup file. `$(SERVER_HOST)` and `$(SERVER_PORT)` are normal environment variables that are set by the **Launch URL** and **Port Number** properties, automatically, or by the **Environment** property.
+Jede Projekteigenschaft oder Umgebungsvariable kann mit der MSBuild-Syntax angegeben werden. Beispiel: `$(StartupFile) --port $(SERVER_PORT)`.
+`$(StartupFile)` ist der relative Pfad zur Startdatei, und `{StartupModule}` ist der importierbare Name der Startdatei. `$(SERVER_HOST)` und `$(SERVER_PORT)` sind normale Umgebungsvariablen, die durch die Eigenschaften **Start-URL** und **Portnummer**, automatisch oder durch die Eigenschaft **Umgebung** festgelegt werden.
 
 > [!Note]
-> Values in **Run Server Command** are used with the **Debug > Start Server** command or Ctrl-F5; values in the **Debug Server Command** group are used with the **Debug > Start Debug Server** command or F5.
+> Werte unter **Serverbefehl ausführen** werden mit dem Befehl **Debuggen > Server starten** oder STRG+F5 verwendet. Werte in der Gruppe **Debugserverbefehl** werden mit dem Befehl **Debuggen > Debugserver starten** oder F5 verwendet.
 
 
-### <a name="sample-bottle-configuration"></a>Sample Bottle configuration
+### <a name="sample-bottle-configuration"></a>Beispiel für eine Bottle-Konfiguration
 
-The Bottle Web Project template includes boilerplate code that does the necessary configuration. An imported bottle app may not include this code, however, in which case the following settings launch the app using the installed `bottle` module:
+Die Bottle-Webprojektvorlage enthält Codebausteine, die die erforderliche Konfiguration vornehmen. Eine importierte Bottle-App enthält diesen Code jedoch möglicherweise nicht. In diesem Fall wird die App durch die folgenden Einstellungen über das installierte `bottle`-Modul gestartet:
 
-- **Run Server Command** group:
-    - **Command**: `bottle` (module)
-    - **Arguments**: `--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+- Gruppe **Serverbefehl ausführen**:
+    - **Befehl**: `bottle` (Modul)
+    - **Argumente**: `--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
-- **Debug Server Command** group:
-    - **Command**: `bottle` (module)
-    - **Arguments** `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+- Gruppe **Debugserverbefehl**:
+    - **Befehl**: `bottle` (Modul)
+    - **Argumente**: `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
-The `--reload` option is not recommended when using Visual Studio for debugging.
+Die `--reload`-Option wird nicht empfohlen, wenn Sie Visual Studio für das Debuggen verwenden.
 
-### <a name="sample-pyramid-configuration"></a>Sample Pyramid configuration
+### <a name="sample-pyramid-configuration"></a>Beispiel für eine Pyramid-Konfiguration
 
-Pyramid apps are currently best created using the `pcreate` command-line tool. Once an app has been created, it can be imported using the [From Existing Python Code](python-projects.md#creating-a-project-from-existing-files) template. After doing so, select the **Generic Web Project** customization to configure the options. These settings assume that Pyramid is installed into a virtual environment at `..\env`.
+Pyramid-Apps werden derzeit am besten über das `pcreate`-Befehlszeilentool erstellt. Nachdem eine App erstellt wurde, kann sie mithilfe der Vorlage [Aus vorhandenem Python-Code](python-projects.md#creating-a-project-from-existing-files) importiert werden. Wählen Sie danach die Anpassung **Generisches Webprojekt**, um die Optionen zu konfigurieren. Bei diesen Einstellungen wird davon ausgegangen, dass Pyramid in einer virtuellen Umgebung unter `..\env` installiert ist.
 
-- **Debug** group:
-    - **Server Port**: 6543 (or whatever is configured in the .ini files)
+- Gruppe **Debuggen**:
+    - **Serverport**: 6543 (bzw. entsprechend der Konfiguration in den INI-Dateien)
 
-- **Run Server Command** group:
-    - Command: `..\env\scripts\pserve-script.py` (script)
-    - Arguments: `Production.ini`
+- Gruppe **Serverbefehl ausführen**:
+    - Befehl: `..\env\scripts\pserve-script.py` (Skript)
+    - Argumente: `Production.ini`
 
-- **Debug Server Command** group:
-    - Command: `..\env\scripts\pserve-script.py` (script)
-    - Arguments: `Development.ini`
+- Gruppe **Debugserverbefehl**:
+    - Befehl: `..\env\scripts\pserve-script.py` (Skript)
+    - Argumente: `Development.ini`
 
 > [!Tip]
-> You'll likely need to configure the **Working Directory** property of your project because Pyramid apps are typically one directory level deeper than the top of the source tree.
+> Sie müssen wahrscheinlich die Eigenschaft **Arbeitsverzeichnis** Ihres Projekts konfigurieren, weil Pyramid-Apps sich in der Regel eine Verzeichnisebene unterhalb der Spitze der Quellstruktur befinden.
 
 
-### <a name="other-configurations"></a>Other configurations
+### <a name="other-configurations"></a>Weitere Konfigurationen
 
-If you have settings for another framework that you would like to share, or if you'd like to request settings for another framework, open an [issue on GitHub](https://github.com/Microsoft/PTVS/issues).
+Wenn Sie Einstellungen für ein anderes Framework verwenden, die Sie teilen möchten, oder wenn Sie Einstellungen für ein anderes Framework anfordern möchten, öffnen Sie ein [Problem in GitHub](https://github.com/Microsoft/PTVS/issues).
 
-## <a name="publishing-to-azure-app-service"></a>Publishing to Azure App Service
+## <a name="publishing-to-azure-app-service"></a>Veröffentlichen in Azure App Service
 
-There are two primary ways to publish to Azure App Service. First, deployment from source control can be used in the same way as for other languages, as described in the [Azure documentation](http://azure.microsoft.com/en-us/documentation/articles/web-sites-publish-source-control/). To publish direct from Visual Studio, right-click the project and select **Publish**:
+Es gibt im Wesentlichen zwei Methoden für die Veröffentlichung in Azure App Service. Als Erstes kann die Bereitstellung über die Quellcodeverwaltung auf die gleiche Weise wie bei anderen Sprachen verwendet werden, wie beschrieben in der [Azure-Dokumentation](http://azure.microsoft.com/en-us/documentation/articles/web-sites-publish-source-control/). Zur direkten Veröffentlichung aus Visual Studio klicken Sie mit der rechten Maustaste auf das Projekt und wählen **Veröffentlichen**:
 
-![Publish command on a project's context menu](media/template-web-publish-command.png)
+![Befehl „Veröffentlichen“ im Kontextmenü eines Projekts](media/template-web-publish-command.png)
 
-After selecting the command, a wizard walks you through creating a web site or importing publish settings, previewing modified files, and publishing to a remote server.
+Nach Auswahl des Befehls werden Sie von einem Assistenten durch das Erstellen einer Website oder das Importieren von Veröffentlichungseinstellungen, das Anzeigen einer Vorschau der geänderten Dateien und das Veröffentlichen auf einem Remoteserver geleitet.
 
-When you create a site on App Service, you need to install Python and any packages your site depends upon. You can publish your site first, but it won't run until you have configured Python.
+Wenn Sie eine Website in App Service erstellen, müssen Sie Python und alle Pakete installieren, von denen Ihre Website abhängig ist. Sie können zwar zuerst Ihre Website veröffentlichen, aber sie wird erst ausgeführt, wenn Sie Python konfiguriert haben.
 
-To install Python on App Service, we recommend using the [site extensions](http://www.siteextensions.net/packages?q=Tags%3A%22python%22) (siteextensions.net). These extensions are copies of the [official releases](https://www.python.org) of Python, optimized and repackaged for Azure App Service.
+Zum Installieren von Python in App Service empfehlen wir die Verwendung der [Websiteerweiterungen](http://www.siteextensions.net/packages?q=Tags%3A%22python%22) (siteextensions.net). Bei diesen Erweiterungen handelt es sich um Kopien der [offiziellen Releases](https://www.python.org) von Python, die für Azure App Service optimiert und neu zusammengestellt wurden.
 
-A site extension can be deployed through the [Azure portal](https://portal.azure.com/). Select the **Development Tools > Extensions** blade for your App Service, select **Add**, and scroll the list to find the Python items:
+Sie können eine Websiteerweiterung über das [Azure-Portal](https://portal.azure.com/) bereitstellen. Klicken Sie auf das Blatt **Entwicklungstools** für Ihren App Service, klicken Sie auf **Hinzufügen**, und scrollen Sie durch die Liste, um die Python-Elemente zu suchen:
 
-![Add Site Extension on the Azure portal](media/template-web-site-extensions.png)
+![Hinzufügen einer Websiteerweiterung im Azure-Portal](media/template-web-site-extensions.png)
 
-If you are using JSON deployment templates, you can specify the site extension as a resource of your site:
+Wenn Sie JSON-Bereitstellungsvorlagen verwenden, können Sie die Websiteerweiterung als Ressource Ihrer Website angeben:
 
 ```json
 {
@@ -150,9 +148,9 @@ If you are using JSON deployment templates, you can specify the site extension a
 }
 ```
 
-Finally, you can log in through the [development console](https://github.com/projectkudu/kudu/wiki/Kudu-console) and install a site extension from there.
+Schließlich können Sie sich über die [Entwicklungskonsole](https://github.com/projectkudu/kudu/wiki/Kudu-console) anmelden und von dort aus eine Websiteerweiterung installieren.
 
-Currently, the recommended way to install packages is to use the development console after installing the site extension and executing pip directly. Using the full path to Python is important, or you may execute the wrong one, and there is generally no need to use a virtual environment. For example:
+Derzeit besteht die empfohlene Methode zur Installation von Paketen darin, die Entwicklungskonsole zu verwenden, nachdem die Websiteerweiterung installiert und PIP direkt ausgeführt wurde. Der vollständige Pfad zu Python muss unbedingt verwendet werden, da Sie ansonsten möglicherweise die falsche Version ausführen. Die Verwendung einer virtuellen Umgebung ist im Allgemeinen nicht erforderlich. Zum Beispiel:
 
 ```
 c:\Python35\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
@@ -160,24 +158,24 @@ c:\Python35\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
 c:\Python27\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
 ```
 
-When deployed to Azure App Service, your site runs behind Microsoft IIS. To enable your site to work with IIS, you need to add at least a `web.config` file. There are templates available for some common deployment targets available by right-clicking the project and selecting **Add > New Item...** (see dialog below), and these configurations can be easily modified for other uses. See the [IIS Configuration Reference](https://www.iis.net/configreference) for information about the available configuration settings.
+Bei Bereitstellung in Azure App Service wird Ihre Website hinter Microsoft IIS ausgeführt. Um die Zusammenarbeit Ihrer Website mit IIS zu ermöglichen, müssen Sie mindestens eine `web.config`-Datei hinzufügen. Für einige gängige Bereitstellungsziele stehen Vorlagen zur Verfügung, die Sie durch Klicken mit der rechten Maustaste auf das Projekt und durch Auswahl von **Hinzufügen > Neues Element** (wie im folgenden Dialogfeld gezeigt) aufrufen können. Diese Konfigurationen können problemlos für andere Zwecke geändert werden. Informationen zu den verfügbaren Konfigurationseinstellungen finden Sie in der [Referenz zur IIS-Konfiguration](https://www.iis.net/configreference).
 
-![Azure Item Templates](media/template-web-azure-items.png)
+![Azure-Elementvorlagen](media/template-web-azure-items.png)
 
-The available items include:
+Die folgenden Elemente sind verfügbar:
 
-- Azure web.config (FastCGI): adds a `web.config` file for when your app provides a [WSGI](https://wsgi.readthedocs.io/en/latest/) object to handle incoming connections.
-- Azure web.config (HttpPlatformHandler): adds a `web.config` file for when your app listens on a socket for incoming connections.
-- Azure Static files web.config: when you have one of the above `web.config` files, add the file to a subdirectory to exclude it from being handled by your app.
-- Azure Remote debugging web.config: adds the files necessary for remote debugging over WebSockets.
-- Web Role Support Files: contains the default deployment scripts for Cloud Service web roles.
-- Worker Role Support Files: contains the default deployment and launch scripts for Cloud Service worker roles.
+- „web.config“ für Azure (FastCGI): Fügt eine `web.config`-Datei hinzu, wenn Ihre App ein [WSGI](https://wsgi.readthedocs.io/en/latest/)-Objekt zum Behandeln eingehender Verbindungen bereitstellt.
+- „web.config“ für Azure (HttpPlatformHandler): Fügt eine `web.config`-Datei hinzu, wenn Ihre App auf einen Socket für eingehende Verbindungen lauscht.
+- „web.config“ für statische Azure-Dateien: Wenn Sie eine der oben genannten `web.config`-Dateien verwenden, fügen Sie diese einem Unterverzeichnis hinzu, um sie von der Verarbeitung durch Ihre App auszuschließen.
+- „web.config“ für das Remotedebuggen in Azure: Fügt die Dateien hinzu, die für das Remotedebuggen über WebSockets erforderlich sind.
+- Webrollen-Unterstützungsdateien: Enthält die Standardbereitstellungsskripts für Cloud Services-Webrollen.
+- Workerrollen-Unterstützungsdateien: Enthält die Standardbereitstellungsskripts und Startskripts für Cloud Services-Workerrollen.
 
-If you add the debugging `web.config` template to your project and plan to use Python remote debugging, you need to publish the site in "Debug" configuration. This setting is separate from the current active solution configuration and always defaults to "Release." To change it, open the **Settings** tab and use the **Configuration** combo box in the publish wizard (see the [Azure documentation](https://azure.microsoft.com/develop/python/) for more information on creating and deploying to Azure Web Apps):
+Wenn Sie Ihrem Projekt die `web.config`-Debuggingvorlage hinzufügen und das Remotedebuggen in Python verwenden möchten, müssen Sie die Website in der Konfiguration „Debug“ veröffentlichen. Diese Einstellung ist von der aktuellen aktiven Konfiguration der Projektmappe getrennt und lautet standardmäßig „Release“. Um sie zu ändern, öffnen Sie die Registerkarte **Einstellungen**, und verwenden Sie das Kombinationsfeld **Konfiguration** im Veröffentlichungs-Assistenten (weitere Informationen zur Erstellung und Bereitstellung in Azure-Web-Apps finden Sie in der [Azure-Dokumentation](https://azure.microsoft.com/develop/python/)):
 
-![Changing the publish configuration](media/template-web-publish-config.png)
+![Ändern der Veröffentlichungskonfiguration](media/template-web-publish-config.png)
 
-The **Convert to Microsoft Azure Cloud Service Project** command (image below) adds a Cloud Service project to your solution. This project includes the deployment settings and configuration for the virtual machines and services to be used. Use the **Publish** command on the cloud project to deploy to Cloud Service; the **Publish** command on the Python project still deploys to Web Sites. See [Azure Cloud Service Projects](template-azure-cloud-service.md) for more details.
+Mit dem Befehl **In Microsoft Azure Cloud Services-Projekt konvertieren** (Abbildung unten) wird Ihrer Projektmappe ein Cloud Services-Projekt hinzugefügt. Dieses Projekt umfasst die Bereitstellungseinstellungen und die Konfiguration für die zu verwendenden virtuellen Computer und Dienste. Verwenden Sie den Befehl **Veröffentlichen** im Cloudprojekt zur Bereitstellung in Cloud Services. Mit dem Befehl **Veröffentlichen** im Python-Projekt erfolgt die Bereitstellung weiterhin auf Websites. Weitere Details finden Sie unter [Azure Cloud Services-Projekte](template-azure-cloud-service.md).
 
-![Convert to Microsoft Azure Cloud Service Project command](media/template-web-convert-menu.png)
+![Befehl „In Microsoft Azure Cloud Services-Projekt konvertieren“](media/template-web-convert-menu.png)
 

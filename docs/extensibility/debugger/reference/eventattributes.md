@@ -1,107 +1,90 @@
 ---
-title: EVENTATTRIBUTES | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- EVENTATTRIBUTES
-helpviewer_keywords:
-- EVENTATTRIBUTES enumeration
+title: "EVENTATTRIBUTES | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "EVENTATTRIBUTES"
+helpviewer_keywords: 
+  - "EVENTATTRIBUTES-enumeration"
 ms.assetid: 04db10f7-df31-4464-98e8-b3777428179e
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: fff378260ab2136e6f8917d10d4669911dac3faa
-ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="eventattributes"></a>EVENTATTRIBUTES
-Specifies the event attributes.  
+# EVENTATTRIBUTES
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Gibt die Ereignisattribute an.  
   
-## <a name="syntax"></a>Syntax  
+## Syntax  
   
-```cpp  
-enum enum_EVENTATTRIBUTES {   
-   EVENT_ASYNCHRONOUS          = 0x0000,  
-   EVENT_SYNCHRONOUS           = 0x0001,  
-   EVENT_STOPPING              = 0x0002,  
-   EVENT_ASYNC_STOP            = 0x0002,  
-   EVENT_SYNC_STOP             = 0x0003,  
-   EVENT_IMMEDIATE             = 0x0004,  
-   EVENT_EXPRESSION_EVALUATION = 0x0008  
+```cpp#  
+enum enum_EVENTATTRIBUTES {   
+   EVENT_ASYNCHRONOUS          = 0x0000,  
+   EVENT_SYNCHRONOUS           = 0x0001,  
+   EVENT_STOPPING              = 0x0002,  
+   EVENT_ASYNC_STOP            = 0x0002,  
+   EVENT_SYNC_STOP             = 0x0003,  
+   EVENT_IMMEDIATE             = 0x0004,  
+   EVENT_EXPRESSION_EVALUATION = 0x0008  
 };  
 typedef DWORD EVENTATTRIBUTES;  
 ```  
   
-```csharp  
-public enum enum_EVENTATTRIBUTES {   
-   EVENT_ASYNCHRONOUS          = 0x0000,  
-   EVENT_SYNCHRONOUS           = 0x0001,  
-   EVENT_STOPPING              = 0x0002,  
-   EVENT_ASYNC_STOP            = 0x0002,  
-   EVENT_SYNC_STOP             = 0x0003,  
-   EVENT_IMMEDIATE             = 0x0004,  
-   EVENT_EXPRESSION_EVALUATION = 0x0008  
+```c#  
+public enum enum_EVENTATTRIBUTES {   
+   EVENT_ASYNCHRONOUS          = 0x0000,  
+   EVENT_SYNCHRONOUS           = 0x0001,  
+   EVENT_STOPPING              = 0x0002,  
+   EVENT_ASYNC_STOP            = 0x0002,  
+   EVENT_SYNC_STOP             = 0x0003,  
+   EVENT_IMMEDIATE             = 0x0004,  
+   EVENT_EXPRESSION_EVALUATION = 0x0008  
 };  
 ```  
   
-## <a name="members"></a>Members  
- EVENT_ASYNCHRONOUS  
- Indicates that the event is asynchronous and no reply to the event is needed.  
+## Mitglieder  
+ EVENT\_ASYNCHRONOUS  
+ Gibt an, dass das Ereignis asynchron ist und keine Antwort auf das Ereignis benötigt wird.  
   
- EVENT_SYNCHRONOUS  
- Indicates that the event is synchronous; reply by means of [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md).  
+ EVENT\_SYNCHRONOUS  
+ Gibt an, dass das Ereignis synchron ist. Reaktion mittels [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md).  
   
- EVENT_STOPPING  
- Indicates that this is a stopping event. Must be combined with either `EVENT_ASYNCHRONOUS` or `EVENT_SYNCHRONOUS`.  
+ EVENT\_STOPPING  
+ Gibt an, dass es sich um ein aufhörendes Ereignis ist.  Muss mit `EVENT_ASYNCHRONOUS` oder `EVENT_SYNCHRONOUS`kombiniert werden.  
   
- EVENT_ASYNC_STOP  
- Indicates an asynchronous stopping event. There is currently no such event. This flag is only a placeholder.  
+ EVENT\_ASYNC\_STOP  
+ Gibt eine asynchrone aufhörendes Ereignis an.  Es gibt derzeit kein entsprechendes Ereignis.  Dieses Flag ist nur ein Platzhalter.  
   
- EVENT_SYNC_STOP  
- Indicates a synchronous stopping event (a combination of `EVENT_SYNCHRONOUS` and `EVENT_STOPPING`). This value is used by a debug engine (DE) when it sends a stopping event. The reply is made by means of a call to [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), [Step](../../../extensibility/debugger/reference/idebugprogram2-step.md), or [Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md).  
+ EVENT\_SYNCHRONIZATION\_STOP  
+ Gibt ein synchrones aufhörendes Ereignis an \(eine Kombination aus `EVENT_SYNCHRONOUS` und `EVENT_STOPPING`\).  Dieser Wert wird von einem Modul \(Debug\) DE aufhörendes wenn ein Ereignis sendet.  Die Antwort wird mithilfe eines Aufrufs von [Ausführen](../../../extensibility/debugger/reference/idebugprogram2-execute.md), [Schritt](../../../extensibility/debugger/reference/idebugprogram2-step.md)oder [Weiter](../../../extensibility/debugger/reference/idebugprogram2-continue.md)gemacht.  
   
- EVENT_IMMEDIATE  
- Indicates an event that is sent immediately and synchronously to the IDE. This flag is combined with other flags like `EVENT_ASYNCHRONOUS`, `EVENT_SYNCHRONOUS`, or `EVENT_SYNC_STOP` to indicate the type of event and the fact that the reply mechanism (if any) is known.  
+ EVENT\_IMMEDIATE  
+ Gibt ein Ereignis an, das sofort an die IDE und synchron gesendet wird.  Dieses Flag wird mit anderen Flags wie `EVENT_ASYNCHRONOUS`, `EVENT_SYNCHRONOUS`oder `EVENT_SYNC_STOP` kombiniert, um den Typ des Ereignisses und den Fakten anzugeben, dass der Mechanismus für die Antwort \(sofern vorhanden\) bekannt ist.  
   
- EVENT_EXPRESSION_EVALUATION  
- The event is a result of expression evaluation.  
+ EVENT\_EXPRESSION\_EVALUATION  
+ Das Ereignis ist ein Ergebnis der Ausdrucksauswertung.  
   
-## <a name="remarks"></a>Remarks  
- These values are passed in the `dwAttrib` parameter of the [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) method.  
+## Hinweise  
+ Diese Werte werden in den `dwAttrib`[Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)\-Parameter der Methode übergeben.  
   
- These values may be combined with a bitwise `OR`.  
+ Diese Werte können mit bitweisen `OR`kombiniert werden.  
   
-## <a name="requirements"></a>Requirements  
+## Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## Siehe auch  
+ [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)   
- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+ [Ereignis](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

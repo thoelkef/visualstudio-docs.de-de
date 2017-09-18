@@ -1,81 +1,64 @@
 ---
-title: IDebugSymbolProvider::GetTypeByName | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugSymbolProvider::GetTypeByName
-helpviewer_keywords:
-- IDebugSymbolProvider::GetTypeByName method
+title: "IDebugSymbolProvider::GetTypeByName | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugSymbolProvider::GetTypeByName"
+helpviewer_keywords: 
+  - "IDebugSymbolProvider::GetTypeByName-Methode"
 ms.assetid: b9d88d3b-8b75-484a-b9cc-dc8c0fbb4bc8
 caps.latest.revision: 11
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 0026d816e9afb382fdc792e5fc397c03c028da17
-ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 11
 ---
-# <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
-This method maps a symbol name to a symbol type.  
+# IDebugSymbolProvider::GetTypeByName
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Diese Methode ordnet einen Symbolnamen auf ein Symbol für den Typ.  
   
-## <a name="syntax"></a>Syntax  
+## Syntax  
   
-```cpp  
-HRESULT GetTypeByName(   
-   LPCOLESTR     pszClassName,  
-   NAME_MATCH    nameMatch,  
-   IDebugField** ppField  
+```cpp#  
+HRESULT GetTypeByName(   
+   LPCOLESTR     pszClassName,  
+   NAME_MATCH    nameMatch,  
+   IDebugField** ppField  
 );  
 ```  
   
-```csharp  
+```c#  
 int GetTypeByName(  
-   string          pszClassName,   
-   NAME_MATCH      nameMatch,   
-   out IDebugField ppField  
+   string          pszClassName,   
+   NAME_MATCH      nameMatch,   
+   out IDebugField ppField  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parameter  
  `pszClassName`  
- [in] The symbol name.  
+ \[in\]  Der Symbolname.  
   
  `nameMatch`  
- [in] Selects the type of match, for example, case-sensitive. A value from the [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) enumeration.  
+ \[in\]  Wählt den Typ der Übereinstimmung aus, z. B. die Groß\-\/Kleinschreibung beachtet.  Ein Wert aus der [NAME\_MATCH](../../../extensibility/debugger/reference/name-match.md)\-Enumeration.  
   
  `ppField`  
- [out] Returns the symbol type as an [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) object.  
+ \[out\]  Gibt den Typ des Symbols als [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)\-Objekt zurück.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## Rückgabewert  
+ Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
   
-## <a name="remarks"></a>Remarks  
- This method is a generic version of [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md).  
+## Hinweise  
+ Diese Methode ist eine generische Version von [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md).  
   
-## <a name="see-also"></a>See Also  
+## Siehe auch  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
- [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)   
+ [NAME\_MATCH](../../../extensibility/debugger/reference/name-match.md)   
  [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)

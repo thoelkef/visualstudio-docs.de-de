@@ -1,110 +1,104 @@
 ---
-title: Add custom controls to the Data Sources window | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- vs.datasource.howtoaddcustomcontrol
-helpviewer_keywords:
-- Data Sources Window, adding controls
-- controls [Visual Studio], adding to Data Sources Window
-- DefaultBindingPropertyAttribute class, using
-- LookupBindingPropertiesAttribute class, using
-- ComplexBindingPropertiesAttribute class, using
-- Data Sources Window, selecting controls
+title: "Hinzuf&#252;gen benutzerdefinierter Steuerelemente zum Datenquellenfenster | Microsoft Docs"
+ms.custom: ""
+ms.date: "09/21/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vs.datasource.howtoaddcustomcontrol"
+dev_langs: 
+  - "VB"
+  - "CSharp"
+  - "C++"
+  - "aspx"
+helpviewer_keywords: 
+  - "Datenquellenfenster, Hinzufügen von Steuerelementen"
+  - "Steuerelemente [Visual Studio], Hinzufügen zum Datenquellenfenster"
+  - "DefaultBindingPropertyAttribute-Klasse, verwenden"
+  - "LookupBindingPropertiesAttribute-Klasse, verwenden"
+  - "ComplexBindingPropertiesAttribute-Klasse, verwenden"
+  - "Datenquellenfenster, Auswählen von Steuerelementen"
 ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
 caps.latest.revision: 42
-author: gewarren
-ms.author: gewarren
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 1d4298d60886d8fe8b402b59b1838a4171532ab1
-ms.openlocfilehash: 76a0405f5c13a1dbab5899a1806d8c3dc54e6e56
-ms.contentlocale: de-de
-ms.lasthandoff: 09/07/2017
-
+caps.handback.revision: 39
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
 ---
-# <a name="add-custom-controls-to-the-data-sources-window"></a>Add custom controls to the Data Sources window
-When you drag an item from the **Data Sources** window to a design surface to create a data-bound control, you can select the type of control that you create. Each item in the window has a drop-down list that displays the controls that you can choose from. The set of controls associated with each item is determined by the data type of the item. If the control that you want to create does not appear in the list, you can follow the instructions in this topic to add the control to the list.  
+# Hinzuf&#252;gen benutzerdefinierter Steuerelemente zum Datenquellenfenster
+Wenn Sie ein Element aus einem **Datenquellenfenster** in eine Designoberfläche ziehen, um ein datengebundenes Steuerelement zu erstellen, können Sie den Typ des Steuerelements auswählen, das Sie erstellen.  Jedes Element im Fenster weist eine Dropdownliste auf, die die auswählbaren Steuerelemente anzeigt.  Die den einzelnen Elementen zugeordneten Steuerelemente werden vom Datentyp des Elements bestimmt.  Wenn das gewünschte Steuerelement nicht in der Liste angezeigt wird, folgen Sie den Anweisungen in diesem Thema, um so das Steuerelement der Liste hinzuzufügen.  
   
- For more information about selecting data-bound controls to create for items in the **Data Sources** window, see [Set the control to be created when dragging from the Data Sources window](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+ Weitere Informationen zum Auswählen von datengebundenen Steuerelementen, die für Elemente im **Datenquellenfenster** erstellt werden sollen, finden Sie unter [Festlegen des Steuerelements, das beim Ziehen aus dem Datenquellenfenster erstellt werden soll](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help, depending on your active settings or edition. To change your settings, on the **Tools** menu, select **Import and Export Settings**. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
+>  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen.  Um die Einstellungen zu ändern, wählen Sie im Menü **Extras** die Option **Einstellungen importieren und exportieren** aus.  Weitere Informationen finden Sie unter [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/de-de/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
-##  <a name="customizinglist"></a> Customize the list of bindable controls for a data type  
- To add or remove controls from the list of available controls for items in the **Data Sources** window that have a specific data type, perform the following steps.  
+##  <a name="customizinglist"></a> Anpassen der Liste bindungsfähiger Steuerelemente für einen Datentyp  
+ Führen Sie die folgenden Schritte aus, um Steuerelemente aus der Liste der verfügbaren Steuerelemente für Elemente im **Datenquellenfenster** hinzuzufügen oder zu entfernen, die einen bestimmten Datentyp aufweisen.  
   
-#### <a name="to-select-the-controls-to-be-listed-for-a-data-type"></a>To select the controls to be listed for a data type  
+#### So wählen Sie die für einen Datentyp aufzulistenden Steuerelemente aus  
   
-1.  Make sure that the WPF Designer or the Windows Forms Designer is open.  
+1.  Der WPF\-Designer oder der Windows Forms\-Designer muss geöffnet sein.  
   
-2.  In the **Data Sources** window, click an item that is part of a data source you added to the window, and then click the drop-down menu for the item.  
+2.  Klicken Sie im **Datenquellenfenster** auf ein Element, das Teil einer dem Fenster hinzugefügten Datenquelle ist, und klicken Sie dann auf das Dropdownmenü für das Element.  
   
-3.  In the drop-down menu, click **Customize**. One of the following dialog boxes opens:  
+3.  Klicken Sie im Dropdownmenü auf **Anpassen**.  Eines der folgenden Dialogfelder wird geöffnet:  
   
-    -   If the Windows Forms Designer is open, the **Data UI Customization** page of the **Options** dialog box opens.  
+    -   Wenn der Windows Forms\-Designer geöffnet ist, wird die Seite **Anpassung der Datenbenutzeroberfläche** des Dialogfelds **Optionen** geöffnet.  
   
-    -   If the WPF Designer is open, the **Customize Control Binding** dialog box opens.  
+    -   Wenn der WPF\-Designer geöffnet ist, wird das Dialogfeld **Steuerelementbindung anpassen** geöffnet.  
   
-4.  In the dialog box, select a data type from the **Data type** drop-down list.  
+4.  Wählen Sie im Dialogfeld einen Datentyp aus der Dropdownliste **Datentyp** aus.  
   
-    -   To customize the list of controls for a table or object, select **[List]**.  
+    -   Wählen Sie **\[Liste\]** aus, um die Liste der Steuerelemente für eine Tabelle oder ein Objekt anzupassen.  
   
-    -   To customize the list of controls for a column of a table or a property of an object, select the data type of the column or property in the underlying data store.  
+    -   Zum Anpassen der Liste der Steuerelemente für eine Spalte einer Tabelle oder eine Eigenschaft eines Objekts wählen Sie den Datentyp der Spalte oder Eigenschaft im zugrunde liegenden Datenspeicher aus.  
   
-    -   To customize the list of controls to display data objects that have user-defined shapes, select **[Other]**. For example, select **[Other]** if your application has a custom control that displays data from more than one property of a particular object.  
+    -   Wählen Sie **\[Andere\]** aus, um die Liste der Steuerelemente so anzupassen, dass Datenobjekte mit benutzerdefinierten Formen angezeigt werden.  Wenn die Anwendung z. B. ein benutzerdefiniertes Steuerelement enthält, das Daten von mehreren Objekteigenschaften eines bestimmten Objekts anzeigt, wählen Sie **\[Andere\]** aus.  
   
-5.  In the **Associated controls** box, select each control that you want to be available for the selected data type, or clear the selection of any controls that you want to remove from the list.  
-  
-    > [!NOTE]
-    >  If the control that you want to select does not appear in the **Associated controls** box, you must add the control to the list. For more information, see [Adding Controls to the List of Associated Controls for a Data Type](#addingcontrols).  
-  
-6.  Click **OK**.  
-  
-7.  In the **Data Sources** window, click an item of the data type that you just associated one or more controls, and then click the drop-down menu for the item.  
-  
-     The controls you selected in the **Associated controls** box now appear in the drop-down menu for the item.  
-  
-##  <a name="addingcontrols"></a> Add controls to the list of associated controls for a data type  
- If you want to associate a control with a data type, but the control does not appear in the **Associated controls** box, you must add the control to the list. The control must be located in the current solution or in a referenced assembly. It must also be available in the **Toolbox**, and have an attribute that specifies the control's data binding behavior.  
-  
-#### <a name="to-add-controls-to-the-list-of-associated-controls"></a>To add controls to the list of associated controls  
-  
-1.  Add the desired control to the **Toolbox** by right-clicking the **Toolbox** and selecting **Choose Items**.  
-  
-     The control must have one of the following attributes.  
-  
-    |Attribute|Description|  
-    |---------------|-----------------|  
-    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Implement this attribute on simple controls that display a single column (or property) of data, such as a <xref:System.Windows.Forms.TextBox>.|  
-    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Implement this attribute on controls that display lists (or tables) of data, such as a <xref:System.Windows.Forms.DataGridView>.|  
-    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|Implement this attribute on controls that display lists (or tables) of data, but also need to present a single column or property, such as a <xref:System.Windows.Forms.ComboBox>.|  
-  
-2.  For Windows Forms, on the      **Options** dialog box, open the **Data UI Customization** page. Or, for WPF, open the **Customize Control Binding** dialog box. For more information, see [Customizing the List of Bindable Controls for a Data Type](#customizinglist).  
-  
-3.  In the **Associated controls** box, the control that you just added to the **Toolbox** should now appear.  
+5.  Wählen Sie im Feld **Zugeordnete Steuerelemente** die einzelnen Steuerelemente aus, die für den ausgewählten Datentyp verfügbar sein sollen, oder heben Sie die Auswahl aller Steuerelemente auf, die aus der Liste entfernt werden sollen.  
   
     > [!NOTE]
-    >  Only controls that are located within the current solution or in a referenced assembly can be added to the list of associated controls. (The controls must also implement one of the data-binding attributes in the previous table.) To bind data to a custom control that is not available in the **Data Sources** window, drag the control from the **Toolbox** onto the design surface, and then drag the item to bind to from the **Data Sources** window onto the control.  
+    >  Wenn das gewünschte Steuerelement nicht im Feld **Zugeordnete Steuerelemente** angezeigt wird, müssen Sie der Liste das Steuerelement hinzufügen.  Weitere Informationen finden Sie in [Hinzufügen von Steuerelementen zur Liste der zugeordneten Steuerelemente für einen Datentyp](#addingcontrols).  
   
-## <a name="see-also"></a>See Also  
- [Bind controls to data in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
+6.  Klicken Sie auf **OK**.  
+  
+7.  Klicken Sie im **Datenquellenfenster** auf ein Element des Datentyps, dem mindestens ein Steuerelement zugeordnet wurde, und klicken Sie dann auf das Dropdownmenü für das Element.  
+  
+     Die im Feld **Zugeordnete Steuerelemente** ausgewählten Steuerelemente werden jetzt im Dropdownmenü des Elements angezeigt.  
+  
+##  <a name="addingcontrols"></a> Hinzufügen von Steuerelementen zur Liste der zugeordneten Steuerelemente für einen Datentyp  
+ Wenn Sie einem Datentyp ein Steuerelement zuordnen möchten, aber das Steuerelement nicht im Feld **Zugeordnete Steuerelemente** angezeigt wird, müssen Sie der Liste das Steuerelement hinzufügen.  Das Steuerelement muss sich in der aktuellen Projektmappe oder einer Assembly, auf die verwiesen wird, befinden, in der **Toolbox** verfügbar sein und ein Attribut aufweisen, das das Datenbindungsverhalten des Steuerelements angibt.  
+  
+#### So fügen Sie Steuerelemente zur Liste der zugeordneten Steuerelemente hinzu  
+  
+1.  Fügen Sie das gewünschte Steuerelement zur **Toolbox** hinzu, indem Sie mit der rechten Maustaste auf die **Toolbox** klicken und **Elemente auswählen** auswählen.  
+  
+     Das Steuerelement muss eines der folgenden Attribute aufweisen.  
+  
+    |Attribut|Description|  
+    |--------------|-----------------|  
+    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Implementieren Sie dieses Attribut für einfache Steuerelemente, mit denen eine einzelne Spalte \(oder Eigenschaft\) angezeigt wird, z. B. eine <xref:System.Windows.Forms.TextBox>.|  
+    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Implementieren Sie dieses Attribut für Steuerelemente, mit denen Listen \(oder Tabellen\) von Daten angezeigt werden, z. B. eine <xref:System.Windows.Forms.DataGridView>.|  
+    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|Implementieren Sie dieses Attribut für Steuerelemente, mit denen Listen \(oder Tabellen\) von Daten angezeigt werden, die aber auch eine einzelne Spalte oder Eigenschaft darstellen müssen, z. B. eine <xref:System.Windows.Forms.ComboBox>.|  
+  
+2.  Öffnen Sie im Dialogfeld **Optionen** \(Windows Forms\) die Seite **Anpassung der Datenbenutzeroberfläche** bzw. öffnen Sie das Dialogfeld \(WPF\) **Steuerelementbindung anpassen**.  Weitere Informationen finden Sie in [Anpassen der Liste bindungsfähiger Steuerelemente für einen Datentyp](#customizinglist).  
+  
+3.  Das zur **Toolbox** hinzugefügte Steuerelement, wird jetzt im Feld **Zugeordnete Steuerelemente** angezeigt.  
+  
+    > [!NOTE]
+    >  Nur Steuerelemente, die sich in der aktuellen Projektmappe oder in einer Assembly befinden, auf die verwiesen wird \(und die eines der Datenbindungsattribute in der obigen Tabelle implementieren\), können der Liste der zugeordneten Steuerelemente hinzugefügt werden.  Wenn Sie Daten an ein benutzerdefiniertes Steuerelement binden möchten, das nicht im **Datenquellenfenster** verfügbar ist, ziehen Sie das Steuerelement aus der **Toolbox** auf die Designoberfläche, und ziehen Sie anschließend das Element, an das gebunden werden soll, aus dem **Datenquellenfenster** auf das benutzerdefinierte Steuerelement.  
+  
+## Siehe auch  
+ [Exemplarische Vorgehensweise: Anzeigen von Daten in einem Windows Form](../data-tools/walkthrough-displaying-data-on-a-windows-form.md)   
+ [Binden von Windows Forms\-Steuerelementen an Daten in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
+ [Erstellen und Bearbeiten von typisierten Datasets](../data-tools/creating-and-editing-typed-datasets.md)   
+ [Übersicht über Datenquellen](../data-tools/add-new-data-sources.md)   
+ [Festlegen des Steuerelements, das beim Ziehen aus dem Datenquellenfenster erstellt werden soll](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)   
+ [Exemplarische Vorgehensweise: Erstellen eines Windows Forms\-Benutzersteuerelements, das einfache Datenbindung unterstützt](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)   
+ [Exemplarische Vorgehensweise: Erstellen eines Windows Forms\-Benutzersteuerelements, das komplexe Datenbindung unterstützt](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)   
+ [Exemplarische Vorgehensweise: Erstellen eines Windows Forms\-Benutzersteuerelements, das eine Datenbindung beim Suchen unterstützt](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)   
+ [Dialogfeld "Steuerelementbindung anpassen"](../data-tools/customize-control-binding-dialog-box.md)

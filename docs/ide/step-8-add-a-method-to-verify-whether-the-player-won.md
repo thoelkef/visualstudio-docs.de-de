@@ -1,61 +1,46 @@
 ---
-title: 'Step 8: Add a Method to Verify Whether the Player Won | Microsoft Docs'
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+title: "Schritt 8: Hinzuf&#252;gen einer Methode zum &#220;berpr&#252;fen, ob der Spieler gewonnen hat | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-general"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
 ms.assetid: 6e317f6e-ba4c-4306-8924-300b0c2f65c6
 caps.latest.revision: 17
-author: kempb
-ms.author: kempb
-manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: ae7a07c3ecf77764907a58e8c5f87a73b22df80b
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+author: "kempb"
+ms.author: "kempb"
+manager: "ghogen"
+caps.handback.revision: 17
 ---
-# <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Step 8: Add a Method to Verify Whether the Player Won
-You've created a fun game, but it needs an additional item to finish it. The game should end when the player wins, so you need to add a `CheckForWinner()` method to verify whether the player won.  
+# Schritt 8: Hinzuf&#252;gen einer Methode zum &#220;berpr&#252;fen, ob der Spieler gewonnen hat
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Sie haben ein unterhaltsames Spiel erstellt, aber es benötigt noch eine zusätzliche Funktion.  Das Spiel soll enden, wenn der Spieler gewonnen hat. Sie müssen also eine `CheckForWinner()`\-Methode hinzufügen, mit der überprüft wird, ob der Spieler gewonnen hat.  
   
-### <a name="to-add-a-method-to-verify-whether-the-player-won"></a>To add a method to verify whether the player won  
+### So fügen Sie eine Methode hinzu, mit der überprüft wird, ob der Spieler gewonnen hat  
   
-1.  Add a `CheckForWinner()` method to the bottom of your code, below the `timer1_Tick()` event handler, as shown in the following code.  
+1.  Fügen Sie eine `CheckForWinner()`\-Methode am Ende Ihres Codes hinzu, unter dem `timer1_Tick()`\-Ereignishandler, wie im folgenden Code gezeigt.  
   
-     [!code-csharp[VbExpressTutorial4Step8#10](../ide/codesnippet/CSharp/step-8-add-a-method-to-verify-whether-the-player-won_1.cs)]  [!code-vb[VbExpressTutorial4Step8#10](../ide/codesnippet/VisualBasic/step-8-add-a-method-to-verify-whether-the-player-won_1.vb)]  
+     [!code-cs[VbExpressTutorial4Step8#10](../ide/codesnippet/CSharp/step-8-add-a-method-to-verify-whether-the-player-won_1.cs)]
+     [!code-vb[VbExpressTutorial4Step8#10](../ide/codesnippet/VisualBasic/step-8-add-a-method-to-verify-whether-the-player-won_1.vb)]  
   
-     The method uses another `foreach` loop in Visual C# or `For Each` loop in Visual Basic to go through each label in the TableLayoutPanel. It uses the equality operator (`==` in Visual C# and `=` in Visual Basic) to check each label's icon color to verify whether it matches the background. If the colors match, the icon remains invisible, and the player hasn't matched all of the icons remaining. In that case, the program uses a `return` statement to skip the rest of the method. If the loop gets through all of the labels without executing the `return` statement, that means that all of the icons on the form were matched. The program shows a MessageBox to congratulate the player on winning, and then calls the form's `Close()` method to end the game.  
+     Die Methode verwendet eine weitere `foreach`\-Schleife in Visual C\# bzw. eine weitere `For Each`\-Schleife in Visual Basic, um die einzelnen Bezeichnungen im TableLayoutPanel zu durchlaufen.  Mithilfe des Gleichheitsoperators \(`==` in Visual C\# und `=` in Visual Basic\) wird die Symbolfarbe der einzelnen Bezeichnungen darauf überprüft, ob diese mit dem Hintergrund übereinstimmt.  Wenn die Farben übereinstimmen, bleibt das Symbol sichtbar. Dies bedeutet, dass der Spieler noch nicht alle Symbolpaare gefunden hat.  Das Programm verwendet in diesem Fall eine `return`\-Anweisung, um den Rest der Methode zu überspringen.  Falls die Schleife alle Bezeichnungsfelder durchlaufen kann, ohne dass die `return`\-Anweisung ausgeführt wird, bedeutet dies, dass alle Symbole des Formulars gefunden wurden.  Das Programm zeigt eine MessageBox an, in der dem Spieler zum gewonnenen Spiel gratuliert wird, und ruft dann die `Close()`\-Methode des Formulars auf, um das Spiel zu beenden.  
   
-2.  Next, have the label's Click event handler call the new `CheckForWinner()` method. Be sure that your program checks for a winner immediately after it shows the second icon that the player chooses. Look for the line where you set the second chosen icon's color, and then call the `CheckForWinner()` method right after that, as shown in the following code.  
+2.  Legen Sie als Nächstes fest, dass der Click\-Ereignishandler der Bezeichnung die neue `CheckForWinner()`\-Methode aufruft.  Stellen Sie sicher, dass das Programm die Gewinnprüfung sofort durchführt, nachdem es das zweite Symbol angezeigt hat, das vom Spieler gewählt wurde.  Suchen Sie nach der Zeile, in der Sie die Farbe des zweiten gewählten Symbols festgelegt haben, und rufen Sie direkt danach die `CheckForWinner()`\-Methode auf. Dies ist im folgenden Code dargestellt.  
   
-     [!code-csharp[VbExpressTutorial4Step8#11](../ide/codesnippet/CSharp/step-8-add-a-method-to-verify-whether-the-player-won_2.cs)]  [!code-vb[VbExpressTutorial4Step8#11](../ide/codesnippet/VisualBasic/step-8-add-a-method-to-verify-whether-the-player-won_2.vb)]  
+     [!code-cs[VbExpressTutorial4Step8#11](../ide/codesnippet/CSharp/step-8-add-a-method-to-verify-whether-the-player-won_2.cs)]
+     [!code-vb[VbExpressTutorial4Step8#11](../ide/codesnippet/VisualBasic/step-8-add-a-method-to-verify-whether-the-player-won_2.vb)]  
   
-3.  Save and run the program. Play the game and match all of the icons. When you win, the program displays a congratulatory MessageBox (as shown in the following picture), and then closes the box.  
+3.  Speichern Sie das Programm, und führen Sie es aus.  Spielen Sie das Spiel, und finden Sie alle übereinstimmenden Symbolpaare.  Wenn Sie gewonnen haben, zeigt das Programm eine MessageBox mit einem Glückwunsch an \(wie in der folgenden Abbildung dargestellt\) und schließt diese dann.  
   
-     ![Matching game with MessageBox](../ide/media/express_tut4step8.png "Express_Tut4Step8")  
-Matching game with MessageBox  
+     ![Vergleichsspiel mit MessageBox](../ide/media/express_tut4step8.png "Express\_Tut4Step8")  
+Vergleichsspiel mit MessageBox  
   
-### <a name="to-continue-or-review"></a>To continue or review  
+### So fahren Sie fort oder überprüfen die Angaben  
   
--   To go to the next tutorial step, see [Step 9: Try Other Features](../ide/step-9-try-other-features.md).  
+-   Um zum nächsten Schritt des Lernprogramms zu wechseln, klicken Sie auf [Schritt 9: Ausprobieren weiterer Funktionen](../ide/step-9-try-other-features.md).  
   
--   To return to the previous tutorial step, see [Step 7: Keep Pairs Visible](../ide/step-7-keep-pairs-visible.md).
+-   Um zum vorherigen Schritt des Lernprogramms zurückzukehren, klicken Sie auf [Schritt 7: Beibehalten der Sichtbarkeit von Paaren](../ide/step-7-keep-pairs-visible.md).

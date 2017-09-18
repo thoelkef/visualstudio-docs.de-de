@@ -1,90 +1,73 @@
 ---
-title: IDebugProperty3::GetCustomViewerList | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugProperty3::GetCustomViewerList
-helpviewer_keywords:
-- IDebugProperty3::GetCustomViewerList
+title: "IDebugProperty3::GetCustomViewerList | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugProperty3::GetCustomViewerList"
+helpviewer_keywords: 
+  - "IDebugProperty3::GetCustomViewerList"
 ms.assetid: 74490fd8-6f44-4618-beea-dab64961bb8a
 caps.latest.revision: 11
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 084fad34ce3b6414506df23fb32777008f0f3302
-ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 11
 ---
-# <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
-Gets a list of custom viewers associated with this property.  
+# IDebugProperty3::GetCustomViewerList
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Ruft eine Liste mit den benutzerdefinierten Viewern ab, die dieser Eigenschaft zugeordnet sind.  
   
-## <a name="syntax"></a>Syntax  
+## Syntax  
   
 ```cpp  
-HRESULT GetCustomViewerList(  
-   ULONG                celtSkip,  
-   ULONG                celtRequested,  
-   DEBUG_CUSTOM_VIEWER* rgViewers,  
-   ULONG*               pceltFetched  
+HRESULT GetCustomViewerList(  
+   ULONG                celtSkip,  
+   ULONG                celtRequested,  
+   DEBUG_CUSTOM_VIEWER* rgViewers,  
+   ULONG*               pceltFetched  
 );  
 ```  
   
-```csharp  
-int GetCustomViewerList(  
-   uint                  celtSkip,  
-   uint                  celtRequested,  
-   DEBUG_CUSTOM_VIEWER[] rgViewers,  
-   out uint              pceltFetched  
+```c#  
+int GetCustomViewerList(  
+   uint                  celtSkip,  
+   uint                  celtRequested,  
+   DEBUG_CUSTOM_VIEWER[] rgViewers,  
+   out uint              pceltFetched  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parameter  
  `celtSkip`  
- [in] The number of viewers to skip over.  
+ \[in\]  Die Anzahl der zu überspringenden Viewern zu.  
   
  `celtRequested`  
- [in] The number of viewers to retrieve (also specifies the size of the `rgViewers` array).  
+ \[in\]  Die Anzahl der abzurufenden Viewern \(gibt außerdem die Größe des Arrays `rgViewers` \).  
   
  `rgViewers`  
- [in, out] Array of [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) structures to be filled in.  
+ \[in, out\]  Array von Strukturen, [DEBUG\_CUSTOM\_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) ausgefüllt werden soll.  
   
  `pceltFetched`  
- [out] The actual number of viewers returned.  
+ \[out\]  Die tatsächliche Anzahl von Viewern zurückgegeben.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## Rückgabewert  
+ Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
   
-## <a name="remarks"></a>Remarks  
- To support type visualizers, this method forwards the call to the [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) method. If the expression evaluator also supports custom viewers for this property's type, this method can append the appropriate custom viewers to the list.  
+## Hinweise  
+ Um Typschnellansichten zu unterstützen, leitet diese Methode den Aufruf an die [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)\-Methode weiter.  Wenn die Ausdrucksauswertung auch benutzerdefinierte Viewer für den jeweiligen Typ der Eigenschaft unterstützt, kann diese Methode die entsprechenden benutzerdefinierten Viewer an die Liste angefügt werden.  
   
- See [Type Visualizer and Custom Viewer](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) for details on the differences between type visualizers and custom viewers.  
+ Weitere Informationen finden Sie unter [Typ\-Schnellansicht und benutzerdefinierten Viewer](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) Einzelheiten über die Unterschiede zwischen Typ und schnellansichten benutzerdefinierten Viewern.  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a **CProperty** object that exposes the [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interface.  
+## Beispiel  
+ Im folgenden Beispiel wird veranschaulicht, wie diese Methode für ein **CProperty\-Objekt** implementiert, das die [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)\-Schnittstelle verfügbar macht.  
   
-```cpp  
+```cpp#  
 STDMETHODIMP CProperty::GetCustomViewerList(ULONG celtSkip, ULONG celtRequested, DEBUG_CUSTOM_VIEWER* prgViewers, ULONG* pceltFetched)  
 {  
     if (NULL == prgViewers)  
@@ -103,8 +86,8 @@ STDMETHODIMP CProperty::GetCustomViewerList(ULONG celtSkip, ULONG celtRequested,
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## Siehe auch  
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
- [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)   
+ [DEBUG\_CUSTOM\_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)   
  [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)   
- [Type Visualizer and Custom Viewer](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
+ [Typ\-Schnellansicht und benutzerdefinierten Viewer](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

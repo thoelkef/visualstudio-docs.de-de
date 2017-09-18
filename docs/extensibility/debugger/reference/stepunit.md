@@ -1,84 +1,67 @@
 ---
-title: STEPUNIT | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- STEPUNIT
-helpviewer_keywords:
-- STEPUNIT enumeration
+title: "STEPUNIT | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "STEPUNIT"
+helpviewer_keywords: 
+  - "STEPUNIT-enumeration"
 ms.assetid: cb8441f2-f744-4e73-acfe-ae8542df9649
 caps.latest.revision: 8
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: dfa4ba22c8d56de8948c86fb6133f30e938564d8
-ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 8
 ---
-# <a name="stepunit"></a>STEPUNIT
-Specifies the step unit for stepping.  
+# STEPUNIT
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Gibt das Schritt, für die schrittweise Ausführung an.  
   
-## <a name="syntax"></a>Syntax  
+## Syntax  
   
-```cpp  
-enum enum_STEPUNIT {   
-   STEP_STATEMENT   = 0,  
-   STEP_LINE        = 1,  
-   STEP_INSTRUCTION = 2  
+```cpp#  
+enum enum_STEPUNIT {   
+   STEP_STATEMENT   = 0,  
+   STEP_LINE        = 1,  
+   STEP_INSTRUCTION = 2  
 };  
 typedef DWORD STEPUNIT;  
 ```  
   
-```csharp  
-enum enum_STEPUNIT {   
-   STEP_STATEMENT   = 0,  
-   STEP_LINE        = 1,  
-   STEP_INSTRUCTION = 2  
+```c#  
+enum enum_STEPUNIT {   
+   STEP_STATEMENT   = 0,  
+   STEP_LINE        = 1,  
+   STEP_INSTRUCTION = 2  
 };  
 ```  
   
-## <a name="members"></a>Members  
- STEP_STATEMENT  
- Steps by statement.  
+## Mitglieder  
+ STEP\_STATEMENT  
+ Schritte nach Anweisung.  
   
- STEP_LINE  
- Steps by line.  
+ STEP\_LINE  
+ Schritte nach Zeile.  
   
- STEP_INSTRUCTION  
- Steps by instruction.  
+ STEP\_INSTRUCTION  
+ Schritte nach Anweisung.  
   
-## <a name="remarks"></a>Remarks  
- Passed as an argument to the [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md) method.  
+## Hinweise  
+ Übergabe als Argument an die [Schritt](../../../extensibility/debugger/reference/idebugprocess3-step.md)\-Methode.  
   
-## <a name="requirements"></a>Requirements  
+## Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)
+## Siehe auch  
+ [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [Schritt](../../../extensibility/debugger/reference/idebugprocess3-step.md)

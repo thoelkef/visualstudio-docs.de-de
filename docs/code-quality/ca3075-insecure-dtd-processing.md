@@ -1,101 +1,83 @@
 ---
-title: 'CA3075: Insecure DTD Processing | Microsoft Docs'
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: 
-ms.topic: article
+title: "CA3075: Unsichere DTD-Verarbeitung | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/14/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-devops-test"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
 ms.assetid: 65798d66-7a30-4359-b064-61a8660c1eed
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 7c56479174f6189a17f657af4919416d7b0a6951
-ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
-
+caps.handback.revision: 17
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
-# <a name="ca3075-insecure-dtd-processing"></a>CA3075: Insecure DTD Processing
+# CA3075: Unsichere DTD-Verarbeitung
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
 |||  
 |-|-|  
 |TypeName|InsecureDTDProcessing|  
 |CheckId|CA3075|  
-|Category|Microsoft.Security|  
-|Breaking Change|Non Breaking|  
+|Kategorie|Microsoft.Security|  
+|Unterbrechende Änderung|Nicht unterbrechende Änderung|  
   
-## <a name="cause"></a>Cause  
- If you use insecure <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> instances or reference external entity sources, the parser may accept untrusted input and disclose sensitive information to attackers.  
+## Ursache  
+ Wenn Sie unsichere <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>\-Instanzen oder externe Entitätsquellen verweisen, kann der Parser unter Umständen nicht vertrauenswürdige Eingaben akzeptieren und Angreifern vertrauliche Informationen offenlegen.  
   
-## <a name="rule-description"></a>Rule Description  
- A [Document Type Definition (DTD)](https://msdn.microsoft.com/en-us/library/aa468547.aspx) is one of two ways an XML parser can determine the validity of a document, as defined by the  [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). This rule seeks properties and instances where untrusted data is accepted to warn developers about potential [Information Disclosure](/dotnet/framework/wcf/feature-details/information-disclosure) threats, which may lead to [Denial of Service (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) attacks. This rule triggers when:  
+## Regelbeschreibung  
+ Eine [Document Type Definition \(DTD\)](https://msdn.microsoft.com/en-us/library/aa468547.aspx) ist eine von zwei Methoden, mit denen ein XML\-Parser die Gültigkeit eines Dokuments gemäß [World Wide Web Consortium \(W3C\) Extensible Markup Language \(XML\) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/) bestimmen kann. Diese Regel sucht Eigenschaften und Instanzen, die nicht vertrauenswürdige Daten akzeptieren, um Entwickler vor potenziellen [Veröffentlichung von Informationen](../Topic/Information%20Disclosure.md)\-Bedrohungen zu warnen, die zu [Denial\-of\-Service\-Angriffen \(DoS\)](../Topic/Denial%20of%20Service.md) führen können. Diese Regel wird  in folgenden Fällen ausgelöst:  
   
--   DtdProcessing is enabled on the <xref:System.Xml.XmlReader> instance, which resolves external XML entities using <xref:System.Xml.XmlUrlResolver>.  
+-   DtdProcessing wird in der <xref:System.Xml.XmlReader>\-Instanz aktiviert, die externe XML\-Entitäten mit <xref:System.Xml.XmlUrlResolver> auflöst.  
   
--   The <xref:System.Xml.XmlNode.InnerXml%2A> property in the XML is set.  
+-   Die <xref:System.Xml.XmlNode.InnerXml%2A>\-Eigenschaft in XML wird festgelegt.  
   
--   <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> property is set  to Parse    .  
+-   Die <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>\-Eigenschaft wird auf „Parse“ festgelegt.  
   
--   Untrusted input is processed using <xref:System.Xml.XmlResolver> instead of <xref:System.Xml.XmlSecureResolver> .  
+-   Die Verarbeitung einer nicht vertrauenswürdigen Eingabe erfolgt mit <xref:System.Xml.XmlResolver> anstelle von <xref:System.Xml.XmlSecureResolver> .  
   
--   The XmlReader.<xref:System.Xml.XmlReader.Create%2A> method is invoked with an insecure <xref:System.Xml.XmlReaderSettings> instance or no instance at all.  
+-   Die XmlReader.<xref:System.Xml.XmlReader.Create%2A>\-Methode wird mit einer unsicheren <xref:System.Xml.XmlReaderSettings> Instanz oder ohne Instanz aufgerufen.  
   
--   <xref:System.Xml.XmlReader> is created with insecure default settings or values    .  
+-   <xref:System.Xml.XmlReader> wird mit unsicheren Standardeinstellungen oder Werten erstellt.  
   
- In each of these cases, the outcome is the same: the contents from either the file system or network shares from the machine where the XML is processed will be exposed to the attacker, which may then be used as a DoS vector.  
+ In jedem dieser Fälle ist das Ergebnis identisch: Der Inhalt aus dem Dateisystem oder von Netzwerkfreigaben auf dem Computer, auf dem der XML\-Code verarbeitet wird, wird dem Angreifer offengelegt und kann dann als DoS\-Vektor verwendet werden.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
+## Behandeln von Verstößen  
   
--   Catch and process all XmlTextReader exceptions properly to avoid path information disclosure    .  
+-   Alle XmlTextReader\-Ausnahmen müssen ordnungsgemäß abgefangen und verarbeitet werden, um die Offenlegung von Pfadinformationen zu vermeiden.  
   
--   Use the <xref:System.Xml.XmlSecureResolver> to restrict the resources      that the XmlTextReader can access.  
+-   Verwenden Sie <xref:System.Xml.XmlSecureResolver> , um die Ressourcen zu beschränken, auf die XmlTextReader zugreifen kann.  
   
--   Do not allow the <xref:System.Xml.XmlReader> to open any external resources by setting the <xref:System.Xml.XmlResolver> property to **null**.  
+-   Legen Sie die <xref:System.Xml.XmlResolver>\-Eigenschaft auf **null** fest, um zu verhindern, dass <xref:System.Xml.XmlReader> externe Ressourcen öffnen kann.  
   
--   Ensure that the <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> property of <xref:System.Data.DataViewManager> is assigned from a trusted source.  
+-   Stellen Sie sicher, dass die <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A>\-Eigenschaft von <xref:System.Data.DataViewManager> von einer vertrauenswürdigen Quelle aus zugewiesen wird.  
   
- .NET 3.5 and earlier  
+ .NET 3.5 und früher  
   
--   Disable DTD processing if you are dealing with untrusted sources by setting the <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> property to **true** .  
+-   Deaktivieren Sie die DTD\-Verarbeitung, wenn Sie mit nicht vertrauenswürdigen Quellen arbeiten, indem Sie die <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A>\-Eigenschaft auf  **true** festlegen.  
   
--   XmlTextReader class has a full trust inheritance demand. See [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9) for more information    .  
+-   Die XmlTextReader\-Klasse verfügt über die Vererbungsanforderung „volle Vertrauenswürdigkeit“. Weitere Informationen finden Sie unter [Vererbungsanforderungen](http://msdn.microsoft.com/de-de/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
   
- .NET 4 and later  
+ .NET 4 und höher  
   
--   Avoid enabling DtdProcessing if you're dealing with untrusted sources by setting the DtdProcessing  property to [Prohibit or Ignore](https://msdn.microsoft.com/en-us/library/system.xml.dtdprocessing.aspx)  
+-   Verhindern Sie die Aktivierung von DtdProcessing, wenn Sie mit nicht vertrauenswürdigen Quellen arbeiten, indem Sie die DtdProcessing\-Eigenschaft auf [Nicht zulassen](https://msdn.microsoft.com/en-us/library/system.xml.dtdprocessing.aspx) oder „Ignorieren“ festlegen.  
   
--   Ensure that the Load() method takes an XmlReader instance in all InnerXml cases.  
+-   Stellen Sie sicher, dass die Load\(\)\-Methode in allen InnerXml\-Fällen eine XmlReader\-Instanz annimmt.  
   
 > [!NOTE]
->  This rule might report false positives on some valid XmlSecureResolver instances. We're working on solving this issue by mid 2016.  
+>  Diese Regel meldet möglicherweise für einige gültige XmlSecureResolver\-Instanzen falsch positive Ergebnisse. Wir arbeiten an der Lösung dieses Problems bis Mitte 2016.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Unless you're sure that the input is known to be from a trusted source, do not suppress a rule from this warning.  
+## Wann sollten Warnungen unterdrückt werden?  
+ Unterdrücken Sie eine Regel aus dieser Warnung niemals, es sei denn, Sie sind ganz sicher, dass die Eingabe von einer vertrauenswürdigen Quelle stammt.  
   
-## <a name="pseudo-code-examples"></a>Pseudo-code Examples  
+## Pseudocodebeispiele  
   
-### <a name="violation"></a>Violation  
+### Verletzung  
   
-```csharp  
+```c#  
 using System.IO;   
 using System.Xml.Schema;   
   
@@ -114,9 +96,9 @@ class TestClass
 }  
 ```  
   
-### <a name="solution"></a>Solution  
+### Lösung  
   
-```csharp  
+```c#  
 using System.IO;   
 using System.Xml;   
 using System.Xml.Schema;   
@@ -137,9 +119,9 @@ class TestClass
 }  
 ```  
   
-### <a name="violation"></a>Violation  
+### Verletzung  
   
-```csharp  
+```c#  
 using System.Xml;   
   
 namespace TestNamespace   
@@ -155,9 +137,9 @@ namespace TestNamespace
 }  
 ```  
   
-### <a name="solution"></a>Solution  
+### Lösung  
   
-```csharp  
+```c#  
 using System.Xml;   
   
 namespace TestNamespace   
@@ -177,9 +159,9 @@ namespace TestNamespace
 }  
 ```  
   
-### <a name="violations"></a>Violations  
+### Verletzungen  
   
-```csharp  
+```c#  
 using System.Xml;   
   
 namespace TestNamespace   
@@ -195,7 +177,7 @@ namespace TestNamespace
 }  
 ```  
   
-```csharp  
+```c#  
 using System.Xml;   
   
 namespace TestNamespace   
@@ -211,9 +193,9 @@ namespace TestNamespace
 }  
 ```  
   
-### <a name="solution"></a>Solution  
+### Lösung  
   
-```csharp  
+```c#  
 using System.Xml;   
   
 public static void TestMethod(string xml)   
@@ -225,9 +207,9 @@ public static void TestMethod(string xml)
 }  
 ```  
   
-### <a name="violation"></a>Violation  
+### Verletzung  
   
-```csharp  
+```c#  
 using System.IO;   
 using System.Xml;   
 using System.Xml.Serialization;   
@@ -245,9 +227,9 @@ namespace TestNamespace
 }  
 ```  
   
-### <a name="solution"></a>Solution  
+### Lösung  
   
-```csharp  
+```c#  
 using System.IO;   
 using System.Xml;   
 using System.Xml.Serialization;   
@@ -266,9 +248,9 @@ namespace TestNamespace
 }  
 ```  
   
-### <a name="violation"></a>Violation  
+### Verletzung  
   
-```csharp  
+```c#  
 using System.Xml;   
 using System.Xml.XPath;   
   
@@ -284,9 +266,9 @@ namespace TestNamespace
 }  
 ```  
   
-### <a name="solution"></a>Solution  
+### Lösung  
   
-```csharp  
+```c#  
 using System.Xml;   
 using System.Xml.XPath;   
   
@@ -303,9 +285,9 @@ namespace TestNamespace
 }  
 ```  
   
-### <a name="violation"></a>Violation  
+### Verletzung  
   
-```csharp  
+```c#  
 using System.Xml;   
   
 namespace TestNamespace   
@@ -317,9 +299,9 @@ namespace TestNamespace
 }  
 ```  
   
-### <a name="solution"></a>Solution  
+### Lösung  
   
-```csharp  
+```c#  
 using System.Xml;   
   
 namespace TestNamespace   
@@ -331,9 +313,9 @@ namespace TestNamespace
 }  
 ```  
   
-### <a name="violations"></a>Violations  
+### Verletzungen  
   
-```csharp  
+```c#  
 using System.Xml;   
   
 namespace TestNamespace   
@@ -349,7 +331,7 @@ namespace TestNamespace
 }  
 ```  
   
-```csharp  
+```c#  
 using System.Xml;   
   
 namespace TestNamespace   
@@ -364,7 +346,7 @@ namespace TestNamespace
 }  
 ```  
   
-```csharp  
+```c#  
 using System.Xml;   
   
 namespace TestNamespace   
@@ -383,9 +365,9 @@ namespace TestNamespace
 }  
 ```  
   
-### <a name="solution"></a>Solution  
+### Lösung  
   
-```csharp  
+```c#  
 using System.Xml;   
   
 namespace TestNamespace   

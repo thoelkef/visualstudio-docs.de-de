@@ -1,50 +1,33 @@
 ---
-title: Changing the Text of a Menu Command | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- menus, changing text
-- text, menus
-- commands, changing text
+title: "&#196;ndern des Texts eines Men&#252;befehls | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "Menüs, Ändern von text"
+  - "Text, Menüs"
+  - "Befehle, Ändern von text"
 ms.assetid: 5cb676a0-c6e2-47e5-bd2b-133dc8842e46
 caps.latest.revision: 25
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 5cff9c7a8f834478e9ba414491c193c7a485c936
-ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 25
 ---
-# <a name="changing-the-text-of-a-menu-command"></a>Changing the Text of a Menu Command
-The following steps show how to change the text label of a menu command by using the <xref:System.ComponentModel.Design.IMenuCommandService> service.  
+# &#196;ndern des Texts eines Men&#252;befehls
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Die folgenden Schritte zeigen, wie ändern Sie die Beschriftung eines Menübefehls mithilfe der <xref:System.ComponentModel.Design.IMenuCommandService> Service.  
   
-## <a name="changing-a-menu-command-label-with-the-imenucommandservice"></a>Changing a menu command label with the IMenuCommandService  
+## Eine Bezeichnung im Menü Befehl, mit dem IMenuCommandService ändern  
   
-1.  Create a VSIX project named `MenuText` with a menu command named **ChangeMenuText**. For more information, see [Creating an Extension with a Menu Command](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1.  Erstellen Sie ein VSIX\-Projekt mit dem Namen `MenuText` einen Befehl mit dem Namen **ChangeMenuText**. Weitere Informationen finden Sie unter [Erstellen eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  In the .vstc file, add the `TextChanges` flag to your menu command, as shown in the following example.  
+2.  Fügen Sie in der Datei .vstc die `TextChanges` flag auf den Menübefehl, wie im folgenden Beispiel gezeigt.  
   
     ```xml  
     <Button guid="guidChangeMenuTextPackageCmdSet" id="ChangeMenuTextId" priority="0x0100" type="Button">  
@@ -57,26 +40,26 @@ The following steps show how to change the text label of a menu command by using
     </Button>  
     ```  
   
-3.  In the ChangeMenuText.cs file, create an event handler that will be called before the menu command is displayed.  
+3.  Erstellen Sie einen Ereignishandler, der aufgerufen wird, bevor der Menübefehl angezeigt wird, in der Datei ChangeMenuText.cs.  
   
-    ```csharp  
+    ```c#  
     private void OnBeforeQueryStatus(object sender, EventArgs e)  
     {  
         var myCommand = sender as OleMenuCommand;  
         if (null != myCommand)  
         {  
             myCommand.Text = "New Text";  
-        }  
+                    }  
     }  
     ```  
   
-     You can also update the status of the menu command in this method by changing the <xref:System.ComponentModel.Design.MenuCommand.Visible%2A>, <xref:System.ComponentModel.Design.MenuCommand.Checked%2A>, and <xref:System.ComponentModel.Design.MenuCommand.Enabled%2A> properties on the <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> object.  
+     Sie können auch den Status des Menübefehls in dieser Methode aktualisieren, durch Ändern der <xref:System.ComponentModel.Design.MenuCommand.Visible%2A>, <xref:System.ComponentModel.Design.MenuCommand.Checked%2A>, und <xref:System.ComponentModel.Design.MenuCommand.Enabled%2A> Eigenschaften für die <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> Objekt.  
   
-4.  In the ChangeMenuText constructor, replace the original command initialization and placement code with code that creates a <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> (rather than a `MenuCommand`) that represents the menu command, adds the <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> event handler, and gives the menu command to the menu command service.  
+4.  Ersetzen Sie den ursprünglichen Befehl Initialisierung und Platzierung der Code im Konstruktor ChangeMenuText mit Code, der erstellt ein <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> \(anstelle eines `MenuCommand`\), die den Befehl darstellt, fügt die <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> \-Ereignishandler und bietet den Menübefehl zum Dienst Befehl im Menü.  
   
-     Here is what it should look like:  
+     Hier wird es aussehen sollte:  
   
-    ```csharp  
+    ```c#  
     private ChangeMenuText(Package package)  
     {  
         if (package == null)  
@@ -99,9 +82,8 @@ The following steps show how to change the text label of a menu command by using
     }  
     ```  
   
-5.  Build the project and start debugging. The experimental instance of Visual Studio appears.  
+5.  Erstellen Sie das Projekt, und starten Sie das Debugging. Die experimentelle Instanz von Visual Studio wird angezeigt.  
   
-6.  On the **Tools** menu you should see a command named **Invoke ChangeMenuText**.  
+6.  Auf der **Tools** Menü sollte einen Befehl mit dem Namen **aufrufen ChangeMenuText**.  
   
-7.  Click the command. You should see the message box announcing that MenuItemCallback has been called. When you dismiss the message box, you should see that the name of the command on the Tools menu is now **New Text**.
-
+7.  Klicken Sie auf den Befehl. Daraufhin sollte die Nachricht an, das angibt, dass es sich bei MenuItemCallback aufgerufen wurde. Wenn Sie das Meldungsfeld schließen, sollten Sie sehen, dass jetzt der Name des Befehls im Menü Extras ist **neuen Text**.

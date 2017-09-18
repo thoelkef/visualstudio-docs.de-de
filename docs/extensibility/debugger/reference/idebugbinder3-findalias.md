@@ -1,74 +1,57 @@
 ---
-title: IDebugBinder3::FindAlias | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugBinder3::FindAlias
-helpviewer_keywords:
-- IDebugBinder3::FindAlias method
+title: "IDebugBinder3::FindAlias | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugBinder3::FindAlias"
+helpviewer_keywords: 
+  - "IDebugBinder3::FindAlias-Methode"
 ms.assetid: b8333701-2718-4983-8513-0875fb7cb730
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 277b755c5dae6061ae224e4541683c4524df0a84
-ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="idebugbinder3findalias"></a>IDebugBinder3::FindAlias
-This method locates an alias, given a name. This will search all aliases in the program.  
+# IDebugBinder3::FindAlias
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Diese Methode sucht einen Alias, wenn ein Name.  Dies findet alle Aliase im Programm.  
   
-## <a name="syntax"></a>Syntax  
+## Syntax  
   
 ```cpp  
-HRESULT FindAlias(  
-   LPCOLESTR     pcstrName,  
-   IDebugAlias** ppAlias  
+HRESULT FindAlias(  
+   LPCOLESTR     pcstrName,  
+   IDebugAlias** ppAlias  
 );  
 ```  
   
-```csharp  
-int FindAlias(  
-   string          pcstrName,  
-   out IDebugAlias ppAlias  
+```c#  
+int FindAlias(  
+   string          pcstrName,  
+   out IDebugAlias ppAlias  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parameter  
  `pcstrName`  
- [in] Name of alias to find.  
+ \[in\]  Name des Alias.  
   
  `ppAlias`  
- [out] Alias found (if any) represented by the [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) interface.  
+ \[out\]  Alias hat \(sofern vorhanden\), dargestellt durch die [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)\-Schnittstelle.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns `S_FALSE` (if alias is not found) or an error code.  
+## Rückgabewert  
+ Bei Erfolg gibt `S_OK`zurück. Andernfalls gibt `S_FALSE` zurück \(falls Alias nicht gefunden\) oder ein Fehlercode.  
   
-## <a name="remarks"></a>Remarks  
- This method initializes the destination object to null before calling; then it tests for a null value afterward to determine whether or not the alias was found.  
+## Hinweise  
+ Diese Methode initialisiert das Zielobjekt NULL, bevor sie aufgerufen wird. Testen Sie anschließend einen NULL\-Wert für diese anschließend, um zu bestimmen, ob der Alias gefunden wurde.  
   
-## <a name="see-also"></a>See Also  
+## Siehe auch  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)
