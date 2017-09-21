@@ -1,73 +1,56 @@
 ---
-title: IDebugBinder3::GetExceptionObjectAndType | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugBinder3::GetExceptionObjectAndType
-helpviewer_keywords:
-- IDebugBinder3::GetExceptionObjectAndType method
+title: "IDebugBinder3::GetExceptionObjectAndType | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugBinder3::GetExceptionObjectAndType"
+helpviewer_keywords: 
+  - "IDebugBinder3::GetExceptionObjectAndType-Methode"
 ms.assetid: 2a313fe1-4ee1-4f01-af86-382d6c661a8f
 caps.latest.revision: 7
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: a2464bd638f57c059755fbe2659a4317af0ec0de
-ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 7
 ---
-# <a name="idebugbinder3getexceptionobjectandtype"></a>IDebugBinder3::GetExceptionObjectAndType
-This method retrieves the exception associated with an object, if any.  
+# IDebugBinder3::GetExceptionObjectAndType
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Diese Methode ruft die Ausnahme ab, die einem Objekt zugeordnet ist \(sofern zutreffend\).  
   
-## <a name="syntax"></a>Syntax  
+## Syntax  
   
 ```cpp  
-HRESULT GetExceptionObjectAndType(  
-   IDebugObject** ppException,  
-   IDebugField**  ppField  
+HRESULT GetExceptionObjectAndType(  
+   IDebugObject** ppException,  
+   IDebugField**  ppField  
 );  
 ```  
   
-```csharp  
-int GetExceptionObjectAndType(  
-   out IDebugObject ppException,  
-   out IDebugField  ppField  
+```c#  
+int GetExceptionObjectAndType(  
+   out IDebugObject ppException,  
+   out IDebugField  ppField  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parameter  
  `ppException`  
- [out] Returns the object representing the exception.  
+ \[out\]  Gibt das Objekt zurück, das die Ausnahme darstellt.  
   
  `ppField`  
- [out] Returns the object representing a specific field that may have caused the exception (this may be a null value).  
+ \[out\]  Gibt das Objekt zurück, das ein bestimmtes Feld darstellt, das die Ausnahme verursacht hat \(dies ist ein NULL\-Wert.\)  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## Rückgabewert  
+ Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
   
 > [!NOTE]
->  To verify whether there is an exception, check the value returned by `ppException`: if it is a null value, then no exception is associated with this object.  
+>  Um sicherzustellen, dass es eine Ausnahme vorhanden sind, überprüfen Sie den Wert, der von `ppException`zurückgegeben wird: wenn ein NULL\-Wert ist, wird keine Ausnahme mit diesem Objekt verknüpft.  
   
-## <a name="see-also"></a>See Also  
+## Siehe auch  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

@@ -1,68 +1,51 @@
 ---
-title: IEnumCodePaths2::Skip | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IEnumCodePaths2::Skip
-helpviewer_keywords:
-- IEnumCodePaths2::Skip
+title: "IEnumCodePaths2::Skip | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IEnumCodePaths2::Skip"
+helpviewer_keywords: 
+  - "IEnumCodePaths2::Skip"
 ms.assetid: 356472d8-68b2-4b7e-b5f0-1f16d4ee80af
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 2362c2da3d62ac2cced2c2ce4283bed85960ecc6
-ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="ienumcodepaths2skip"></a>IEnumCodePaths2::Skip
-Skips over the specified number of elements.  
+# IEnumCodePaths2::Skip
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Überspringt die angegebene Anzahl von Elementen.  
   
-## <a name="syntax"></a>Syntax  
+## Syntax  
   
-```cpp  
+```cpp#  
 HRESULT Skip(  
-   ULONG celt  
+   ULONG celt  
 );  
 ```  
   
-```csharp  
+```c#  
 int Skip(  
-   uint celt  
+   uint celt  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parameter  
  `celt`  
- [in] Number of elements to skip.  
+ \[in\]  Die Anzahl der zu überspringenden Elemente.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`. Returns `S_FALSE` if `celt` is greater than the number of remaining elements; otherwise, returns an error code.  
+## Rückgabewert  
+ Bei Erfolg gibt `S_OK`zurück.  Gibt `S_FALSE` , wenn `celt` größer als die Anzahl der verbleibenden Elemente zurück. andernfalls gibt einen Fehlercode zurück.  
   
-## <a name="remarks"></a>Remarks  
- If `celt` specifies a value greater than the number of remaining elements, the enumeration is set to the end and `S_FALSE` is returned.  
+## Hinweise  
+ Wenn `celt` einen Wert angibt, der von verbleibenden Elemente größer als die Anzahl ist, wird die Enumeration auf das Ende festgelegt und `S_FALSE` wird zurückgegeben.  
   
-## <a name="see-also"></a>See Also  
+## Siehe auch  
  [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)

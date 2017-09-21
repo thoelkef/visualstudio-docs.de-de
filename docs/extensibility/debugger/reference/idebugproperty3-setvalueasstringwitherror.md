@@ -1,88 +1,71 @@
 ---
-title: IDebugProperty3::SetValueAsStringWithError | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugProperty3::SetValueAsStringWithError
-helpviewer_keywords:
-- IDebugProperty3::SetValueAsStringWithError
+title: "IDebugProperty3::SetValueAsStringWithError | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugProperty3::SetValueAsStringWithError"
+helpviewer_keywords: 
+  - "IDebugProperty3::SetValueAsStringWithError"
 ms.assetid: b378368f-4a45-4b2f-8e3d-3bff7a18ab17
 caps.latest.revision: 11
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: cec26257ab5c283c82846ff477b3e929e40194f1
-ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 11
 ---
-# <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
-Sets the value of this property and returns an error message, if necessary.  
+# IDebugProperty3::SetValueAsStringWithError
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Legt den Wert der Eigenschaft fest und gibt ggf. eine Fehlermeldung zurück.  
   
-## <a name="syntax"></a>Syntax  
+## Syntax  
   
 ```cpp  
-HRESULT SetValueAsStringWithError(  
-   LPCOLESTR pszValue,  
-   DWORD     dwRadix,  
-   DWORD     dwTimeout,  
-   BSTR*     errorString  
+HRESULT SetValueAsStringWithError(  
+   LPCOLESTR pszValue,  
+   DWORD     dwRadix,  
+   DWORD     dwTimeout,  
+   BSTR*     errorString  
 );  
 ```  
   
-```csharp  
-int SetValueAsStringWithError(  
-   string     pszValue,  
-   uint       dwRadix,  
-   uint       dwTimeout,  
-   out string errorString  
+```c#  
+int SetValueAsStringWithError(  
+   string     pszValue,  
+   uint       dwRadix,  
+   uint       dwTimeout,  
+   out string errorString  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parameter  
  `pszValue`  
- [in] Value to set.  
+ \[in\]  Der festzulegende Wert.  
   
  `dwRadix`  
- [in] The radix of the value being set.  
+ \[in\]  Die Basis des Werts, der festgelegt wird.  
   
  `dwTimeout`  
- [in] The length of time to wait for the value to be set (`INFINITE` means wait forever).  
+ \[in\]  Die Zeitdauer zum Festlegen des Werts zu warten \(`INFINITE` bedeutet Wartevorgang für immer\).  
   
  `errorString`  
- [out] If there was an error setting the value, this holds the reason for the failure.  
+ \[out\]  Wenn ein Fehler, der den angegebenen Wert festgelegt wird, hält es den Grund für den Fehler an.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## Rückgabewert  
+ Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
   
-## <a name="remarks"></a>Remarks  
- The incoming value could be an expression to be evaluated.  
+## Hinweise  
+ Der eingehende Wert kann ein Ausdruck sein, der ausgewertet werden soll.  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a **CProperty** object that exposes the [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interface.  
+## Beispiel  
+ Im folgenden Beispiel wird veranschaulicht, wie diese Methode für ein **CProperty\-Objekt** implementiert, das die [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)\-Schnittstelle verfügbar macht.  
   
-```cpp  
+```cpp#  
 HRESULT CProperty::SetValueAsStringWithError(   
     LPCOLESTR in_szValue,  
     DWORD in_RADIX,  
@@ -184,5 +167,5 @@ HRESULT CProperty::SetValueAsStringWithError(
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## Siehe auch  
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

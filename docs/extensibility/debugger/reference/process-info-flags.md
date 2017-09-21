@@ -1,91 +1,74 @@
 ---
-title: PROCESS_INFO_FLAGS | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- PROCESS_INFO_FLAGS
-helpviewer_keywords:
-- PROCESS_INFO_FLAGS enumeration
+title: "PROCESS_INFO_FLAGS | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "PROCESS_INFO_FLAGS"
+helpviewer_keywords: 
+  - "PROCESS_INFO_FLAGS-enumeration"
 ms.assetid: 696951ce-701a-40c2-ac8c-b897f3aae6e2
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: f1bd6e203424bdc53e6af0aa97d320b80ee9d911
-ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="processinfoflags"></a>PROCESS_INFO_FLAGS
-Describes or specifies properties of a process.  
+# PROCESS_INFO_FLAGS
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Beschreibt oder gibt Eigenschaften eines Prozesses an.  
   
-## <a name="syntax"></a>Syntax  
+## Syntax  
   
-```cpp  
-enum enum_PROCESS_INFO_FLAGS {   
-   PIFLAG_SYSTEM_PROCESS    = 0x00000001,  
-   PIFLAG_DEBUGGER_ATTACHED = 0x00000002,  
-   PIFLAG_PROCESS_STOPPED   = 0x00000004,  
-   PIFLAG_PROCESS_RUNNING   = 0x00000008,  
+```cpp#  
+enum enum_PROCESS_INFO_FLAGS {   
+   PIFLAG_SYSTEM_PROCESS    = 0x00000001,  
+   PIFLAG_DEBUGGER_ATTACHED = 0x00000002,  
+   PIFLAG_PROCESS_STOPPED   = 0x00000004,  
+   PIFLAG_PROCESS_RUNNING   = 0x00000008,  
 };  
 typedef DWORD PROCESS_INFO_FLAGS;  
 ```  
   
-```csharp  
-enum enum_PROCESS_INFO_FLAGS {   
-   PIFLAG_SYSTEM_PROCESS    = 0x00000001,  
-   PIFLAG_DEBUGGER_ATTACHED = 0x00000002,  
-   PIFLAG_PROCESS_STOPPED   = 0x00000004,  
-   PIFLAG_PROCESS_RUNNING   = 0x00000008,  
+```c#  
+enum enum_PROCESS_INFO_FLAGS {   
+   PIFLAG_SYSTEM_PROCESS    = 0x00000001,  
+   PIFLAG_DEBUGGER_ATTACHED = 0x00000002,  
+   PIFLAG_PROCESS_STOPPED   = 0x00000004,  
+   PIFLAG_PROCESS_RUNNING   = 0x00000008,  
 };  
 ```  
   
-## <a name="members"></a>Members  
- PIFLAG_SYSTEM_PROCESS  
- Indicates that the process is a system process.  
+## Mitglieder  
+ PIFLAG\_SYSTEM\_PROCESS  
+ Gibt an, dass der Prozess ein Systemprozess handelt.  
   
- PIFLAG_DEBUGGER_ATTACHED  
- Indicates that the process is being debugged by a debugger. It may be a [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] debugger, or it may be some other debugger, for example, WinDbg.  
+ PIFLAG\_DEBUGGER\_ATTACHED  
+ Gibt an, dass der Prozess von einem Debugger gedebuggt wird.  Es kann ein [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Debugger, oder es ist möglicherweise einen anderen Debugger z. B. WinDbg  
   
- PIFLAG_PROCESS_STOPPED  
- Indicates the process is stopped. Valid only if `PIFLAG_DEBUGGER_ATTACHED` is also specified. Available in [!INCLUDE[vsprvslong](../../../code-quality/includes/vsprvslong_md.md)] and later.  
+ PIFLAG\_PROCESS\_STOPPED  
+ Gibt den Prozess wird beendet.  Gültig nur, wenn `PIFLAG_DEBUGGER_ATTACHED` ebenfalls angegeben wird.  Verfügbar in [!INCLUDE[vsprvslong](../../../code-quality/includes/vsprvslong_md.md)] und höher.  
   
- PIFLAG_PROCESS_RUNNING  
- Indicates the process is running. Valid only if `PIFLAG_DEBUGGER_ATTACHED` is also specified. Available in [!INCLUDE[vsprvslong](../../../code-quality/includes/vsprvslong_md.md)] and later.  
+ PIFLAG\_PROCESS\_RUNNING  
+ Gibt den Prozess ausgeführt wird.  Gültig nur, wenn `PIFLAG_DEBUGGER_ATTACHED` ebenfalls angegeben wird.  Verfügbar in [!INCLUDE[vsprvslong](../../../code-quality/includes/vsprvslong_md.md)] und höher.  
   
-## <a name="remarks"></a>Remarks  
- Used for the `Flags` member of the [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) structure.  
+## Hinweise  
+ Wird für den `Flags`\-Member der [PROCESS\_INFO](../../../extensibility/debugger/reference/process-info.md) Struktur.  
   
- These flags may be combined with a bitwise `OR`.  
+ Diese Flags werden mit bitweisen `OR`kombiniert werden.  
   
-## <a name="requirements"></a>Requirements  
+## Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)
+## Siehe auch  
+ [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [PROCESS\_INFO](../../../extensibility/debugger/reference/process-info.md)

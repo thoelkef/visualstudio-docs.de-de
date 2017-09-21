@@ -1,132 +1,128 @@
 ---
-title: 'Walkthrough: Outlining | Microsoft Docs'
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- editors [Visual Studio SDK], new - outlining
+title: "Exemplarische Vorgehensweise: Gliedern | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "Editoren [Visual Studio SDK] neue - Gliederung"
 ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
 caps.latest.revision: 30
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: a8288452954ee0969f2a358ccdcca9f5dc6b7b07
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 30
 ---
-# <a name="walkthrough-outlining"></a>Walkthrough: Outlining
-You can implement language-based features such as outlining by defining the kinds of text regions you want to expand or collapse. You can define regions in the context of a language service, or you can define your own file name extension and content type and apply the region definition to only that type, or you can apply the region definitions to an existing content type (such as "text"). This walkthrough shows how to define and display outlining regions.  
+# Exemplarische Vorgehensweise: Gliedern
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Sie können\-basierter Funktionen wie z. B. Gliederung durch Definieren der Arten von Textbereiche, die Sie erweitern oder reduzieren möchten, implementieren. Sie können Bereiche definieren, im Kontext eines Sprachdiensts können eigene Erweiterung und Inhalt Dateinamentyp und definiert den Bereich Definition nur diesem Typ oder können Sie die Definitionen der Region auf einem vorhandenen Inhaltstyp \(z. B. "Text"\) anwenden. In dieser exemplarischen Vorgehensweise veranschaulicht das Definieren und Gliederungsbereiche anzeigen.  
   
-## <a name="prerequisites"></a>Prerequisites  
- Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## Vorbereitungsmaßnahmen  
+ Starten in Visual Studio 2015, führen Sie Sie nicht Visual Studio SDK aus dem Downloadcenter installieren. Er ist als optionales Feature in Visual Studio\-Setup enthalten. Sie können auch später im Visual Studio SDK installieren. Weitere Informationen finden Sie unter [Das Visual Studio SDK installieren](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Creating a Managed Extensibility Framework (MEF) Project  
+## Erstellen eines MEF\-Projekts \(Managed Extensibility Framework\)  
   
-#### <a name="to-create-a-mef-project"></a>To create a MEF project  
+#### So erstellen Sie ein MEF\-Projekt  
   
-1.  Create an VSIX project. Name the solution `OutlineRegionTest`.  
+1.  Erstellen Sie ein VSIX\-Projekt. Nennen Sie die Projektmappe `OutlineRegionTest`.  
   
-2.  Add an Editor Classifier item template to the project. For more information, see [Creating an Extension with an Editor Item Template](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2.  Fügen Sie dem Projekt eine Classifier\-Editor\-Elementvorlage hinzu. Weitere Informationen finden Sie unter [Erstellen eine Erweiterung mit einer Elementvorlage\-Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Delete the existing class files.  
+3.  Löschen Sie die vorhandenen Klassendateien.  
   
-## <a name="implementing-an-outlining-tagger"></a>Implementing an Outlining Tagger  
- Outlining regions are marked by a kind of tag (<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>). This tag provides the standard outlining behavior. The outlined region can be expanded or collapsed. The outlined region is marked by a PLUS SIGN if it is collapsed or a MINUS SIGN if it is expanded, and the expanded region is demarcated by a vertical line.  
+## Implementieren eine Gliederung Tagger  
+ Gliederungsbereiche markiert wurde, eine Art von Tag \(<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>\). Dieses Tag enthält die Standard\-Verhalten gliedern. Die gegliederte Bereich kann erweitert oder reduziert werden. Gegliederte Bereich wird durch ein Pluszeichen \(\+\), wenn es ausgeblendet ist oder ein Minuszeichen markiert, wenn er erweitert und erweiterte Bereich durch eine vertikale Linie abgegrenzt wird.  
   
- The following steps show how to define a tagger that creates outlining regions for all the regions that are delimited by "[" and "]".  
+ Die folgenden Schritte zeigen, wie eine Tagger definiert, die Gliederungsbereiche für alle Regionen erstellt werden, die durch getrennt sind "\[" und "\]".  
   
-#### <a name="to-implement-an-outlining-tagger"></a>To implement an outlining tagger  
+#### Um eine Gliederung Tagger zu implementieren.  
   
-1.  Add a class file and name it `OutliningTagger`.  
+1.  Fügen Sie eine Klassendatei hinzu, und nennen Sie es `OutliningTagger`.  
   
-2.  Import the following namespaces.  
+2.  Importieren Sie die folgenden Namespaces.  
   
-     [!code-csharp[VSSDKOutlineRegionTest#1](../extensibility/codesnippet/CSharp/walkthrough-outlining_1.cs)]  [!code-vb[VSSDKOutlineRegionTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_1.vb)]  
+     [!code-cs[VSSDKOutlineRegionTest#1](../extensibility/codesnippet/CSharp/walkthrough-outlining_1.cs)]
+     [!code-vb[VSSDKOutlineRegionTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_1.vb)]  
   
-3.  Create a class named `OutliningTagger`, and have it implement <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>:  
+3.  Erstellen Sie eine Klasse mit dem Namen `OutliningTagger`, und implementieren Sie <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>:  
   
-     [!code-csharp[VSSDKOutlineRegionTest#2](../extensibility/codesnippet/CSharp/walkthrough-outlining_2.cs)]  [!code-vb[VSSDKOutlineRegionTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_2.vb)]  
+     [!code-cs[VSSDKOutlineRegionTest#2](../extensibility/codesnippet/CSharp/walkthrough-outlining_2.cs)]
+     [!code-vb[VSSDKOutlineRegionTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_2.vb)]  
   
-4.  Add some fields to track the text buffer and snapshot and to accumulate the sets of lines that should be tagged as outlining regions. This code includes a list of Region objects (to be defined later) that represent the outlining regions.  
+4.  Fügen Sie einige Felder, die Textpuffer und die Momentaufnahme nachverfolgt und die Sätze von Zeilen zu sammeln, die als Gliederungsbereiche markiert werden sollen. Dieser Code enthält eine Liste der Regionsobjekte \(später definiert\), die Gliederungsbereiche darstellen.  
   
-     [!code-csharp[VSSDKOutlineRegionTest#3](../extensibility/codesnippet/CSharp/walkthrough-outlining_3.cs)]  [!code-vb[VSSDKOutlineRegionTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_3.vb)]  
+     [!code-cs[VSSDKOutlineRegionTest#3](../extensibility/codesnippet/CSharp/walkthrough-outlining_3.cs)]
+     [!code-vb[VSSDKOutlineRegionTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_3.vb)]  
   
-5.  Add a tagger constructor that initializes the fields, parses the buffer, and adds an event handler to the <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> event.  
+5.  Fügen Sie einen Tagger\-Konstruktor, der die Felder initialisiert den Puffer analysiert und fügt einen Ereignishandler für das <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> Ereignis.  
   
-     [!code-csharp[VSSDKOutlineRegionTest#4](../extensibility/codesnippet/CSharp/walkthrough-outlining_4.cs)]  [!code-vb[VSSDKOutlineRegionTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_4.vb)]  
+     [!code-cs[VSSDKOutlineRegionTest#4](../extensibility/codesnippet/CSharp/walkthrough-outlining_4.cs)]
+     [!code-vb[VSSDKOutlineRegionTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_4.vb)]  
   
-6.  Implement the <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> method, which instantiates the tag spans. This example assumes that the spans in the <xref:Microsoft.VisualStudio.Text.NormalizedSpanCollection> passed in to the method are contiguous, although this may not always be the case. This method instantiates a new tag span for each of the outlining regions.  
+6.  Implementieren der <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> \-Methode, die das Tag instanziiert umfasst. In diesem Beispiel wird vorausgesetzt, dass die Spannen in der <xref:Microsoft.VisualStudio.Text.NormalizedSpanCollection> an die Methode übergebenen sind zusammenhängend, obwohl dies möglicherweise nicht immer der Fall. Diese Methode erstellt eine neues Tagspanne aller Gliederungsbereiche.  
   
-     [!code-csharp[VSSDKOutlineRegionTest#5](../extensibility/codesnippet/CSharp/walkthrough-outlining_5.cs)]  [!code-vb[VSSDKOutlineRegionTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_5.vb)]  
+     [!code-cs[VSSDKOutlineRegionTest#5](../extensibility/codesnippet/CSharp/walkthrough-outlining_5.cs)]
+     [!code-vb[VSSDKOutlineRegionTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_5.vb)]  
   
-7.  Declare a `TagsChanged` event handler.  
+7.  Deklarieren Sie eine `TagsChanged` \-Ereignishandler.  
   
-     [!code-csharp[VSSDKOutlineRegionTest#6](../extensibility/codesnippet/CSharp/walkthrough-outlining_6.cs)]  [!code-vb[VSSDKOutlineRegionTest#6](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_6.vb)]  
+     [!code-cs[VSSDKOutlineRegionTest#6](../extensibility/codesnippet/CSharp/walkthrough-outlining_6.cs)]
+     [!code-vb[VSSDKOutlineRegionTest#6](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_6.vb)]  
   
-8.  Add a `BufferChanged` event handler that responds to <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> events by parsing the text buffer.  
+8.  Hinzufügen einer `BufferChanged` \-Ereignishandler, auf die reagiert <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> Ereignisse durch das Analysieren des Textpuffers.  
   
-     [!code-csharp[VSSDKOutlineRegionTest#7](../extensibility/codesnippet/CSharp/walkthrough-outlining_7.cs)]  [!code-vb[VSSDKOutlineRegionTest#7](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_7.vb)]  
+     [!code-cs[VSSDKOutlineRegionTest#7](../extensibility/codesnippet/CSharp/walkthrough-outlining_7.cs)]
+     [!code-vb[VSSDKOutlineRegionTest#7](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_7.vb)]  
   
-9. Add a method that parses the buffer. The example given here is for illustration only. It synchronously parses the buffer into nested outlining regions.  
+9. Fügen Sie eine Methode, die den Puffer analysiert. Das hier gezeigte Beispiel dient nur zur Veranschaulichung. Synchron Puffer in geschachtelten Gliederungsbereiche eingelesen.  
   
-     [!code-csharp[VSSDKOutlineRegionTest#8](../extensibility/codesnippet/CSharp/walkthrough-outlining_8.cs)]   [!code-vb[VSSDKOutlineRegionTest#8](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_8.vb)]  
+     [!code-cs[VSSDKOutlineRegionTest#8](../extensibility/codesnippet/CSharp/walkthrough-outlining_8.cs)]
+     [!code-vb[VSSDKOutlineRegionTest#8](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_8.vb)]  
   
-10. The following helper method gets an integer that represents the level of the outlining, such that 1 is the leftmost brace pair.  
+10. Die folgende Hilfsmethode Ruft eine Ganzzahl, die Zugriffsebene der Gliederung darstellt, 1, der am weitesten links stehende Geschwungene Klammern ist.  
   
-     [!code-csharp[VSSDKOutlineRegionTest#9](../extensibility/codesnippet/CSharp/walkthrough-outlining_9.cs)]  [!code-vb[VSSDKOutlineRegionTest#9](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_9.vb)]  
+     [!code-cs[VSSDKOutlineRegionTest#9](../extensibility/codesnippet/CSharp/walkthrough-outlining_9.cs)]
+     [!code-vb[VSSDKOutlineRegionTest#9](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_9.vb)]  
   
-11. The following helper method translates a Region (defined later in this topic) into a SnapshotSpan.  
+11. Die folgende Hilfsmethode übersetzt eine Region \(weiter unten in diesem Thema definiert\) in eine SnapshotSpan ab.  
   
-     [!code-csharp[VSSDKOutlineRegionTest#10](../extensibility/codesnippet/CSharp/walkthrough-outlining_10.cs)]  [!code-vb[VSSDKOutlineRegionTest#10](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_10.vb)]  
+     [!code-cs[VSSDKOutlineRegionTest#10](../extensibility/codesnippet/CSharp/walkthrough-outlining_10.cs)]
+     [!code-vb[VSSDKOutlineRegionTest#10](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_10.vb)]  
   
-12. The following code is for illustration only. It defines a PartialRegion class that contains the line number and offset of the start of an outlining region, and also a reference to the parent region (if any). This enables the parser to set up nested outlining regions. A derived Region class contains a reference to the line number of the end of an outlining region.  
+12. Der folgende Code dient nur zur Veranschaulichung. Es definiert eine PartialRegion\-Klasse, die Zeilennummer und den Offset vom Anfang des einen Gliederungsbereich sowie einen Verweis auf den übergeordneten Bereich \(sofern vorhanden\) enthält. Dies ermöglicht den Parser einrichten Gliederungsbereiche geschachtelt. Eine abgeleitete Klasse für die Region enthält einen Verweis auf die Nummer der am Ende einen Gliederungsbereich.  
   
-     [!code-csharp[VSSDKOutlineRegionTest#11](../extensibility/codesnippet/CSharp/walkthrough-outlining_11.cs)]  [!code-vb[VSSDKOutlineRegionTest#11](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_11.vb)]  
+     [!code-cs[VSSDKOutlineRegionTest#11](../extensibility/codesnippet/CSharp/walkthrough-outlining_11.cs)]
+     [!code-vb[VSSDKOutlineRegionTest#11](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_11.vb)]  
   
-## <a name="implementing-a-tagger-provider"></a>Implementing a Tagger Provider  
- You must export a tagger provider for your tagger. The tagger provider creates an `OutliningTagger` for a buffer of the "text" content type, or else returns an `OutliningTagger` if the buffer already has one.  
+## Implementieren eines Anbieters Tagger  
+ Sie müssen einen Anbieter Tagger für Ihre Tagger exportieren. Erstellt der Anbieter Tagger ein `OutliningTagger` für einen Puffer der Inhaltstyp "Text" oder andere gibt einen `OutliningTagger` wenn der Puffer vorhanden ist.  
   
-#### <a name="to-implement-a-tagger-provider"></a>To implement a tagger provider  
+#### Implementierung eines Anbieters tagger  
   
-1.  Create a class named `OutliningTaggerProvider` that implements <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider>, and export it with the ContentType and TagType attributes.  
+1.  Erstellen Sie eine Klasse mit dem Namen `OutliningTaggerProvider` implementiert <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider>, und es mit den Attributen ContentType und TagType exportieren.  
   
-     [!code-csharp[VSSDKOutlineRegionTest#12](../extensibility/codesnippet/CSharp/walkthrough-outlining_12.cs)]  [!code-vb[VSSDKOutlineRegionTest#12](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_12.vb)]  
+     [!code-cs[VSSDKOutlineRegionTest#12](../extensibility/codesnippet/CSharp/walkthrough-outlining_12.cs)]
+     [!code-vb[VSSDKOutlineRegionTest#12](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_12.vb)]  
   
-2.  Implement the <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider.CreateTagger%2A> method by adding an `OutliningTagger` to the properties of the buffer.  
+2.  Implementieren der <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider.CreateTagger%2A> Methode durch Hinzufügen einer `OutliningTagger` auf die Eigenschaften des Puffers.  
   
-     [!code-csharp[VSSDKOutlineRegionTest#13](../extensibility/codesnippet/CSharp/walkthrough-outlining_13.cs)]  [!code-vb[VSSDKOutlineRegionTest#13](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_13.vb)]  
+     [!code-cs[VSSDKOutlineRegionTest#13](../extensibility/codesnippet/CSharp/walkthrough-outlining_13.cs)]
+     [!code-vb[VSSDKOutlineRegionTest#13](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_13.vb)]  
   
-## <a name="building-and-testing-the-code"></a>Building and Testing the Code  
- To test this code, build the OutlineRegionTest solution and run it in the experimental instance.  
+## Erstellen und Testen des Codes  
+ Um diesen Code zu testen, erstellen Sie die Projektmappe OutlineRegionTest, und führen Sie es in der experimentellen Instanz.  
   
-#### <a name="to-build-and-test-the-outlineregiontest-solution"></a>To build and test the OutlineRegionTest solution  
+#### So erstellen und Testen der Lösung OutlineRegionTest  
   
-1.  Build the solution.  
+1.  Erstellen Sie die Projektmappe.  
   
-2.  When you run this project in the debugger, a second instance of Visual Studio is instantiated.  
+2.  Wenn Sie dieses Projekt im Debugger ausführen, wird eine zweite Instanz von Visual Studio instanziiert.  
   
-3.  Create a text file. Type some text that includes both the opening brace and the closing brace.  
+3.  Erstellen einer Textdatei Geben Sie Text, der der öffnenden geschweiften Klammer und der schließenden Klammer enthält.  
   
     ```  
     [  
@@ -134,7 +130,7 @@ You can implement language-based features such as outlining by defining the kind
     ]  
     ```  
   
-4.  There should be an outlining region that includes both braces. You should be able to click the MINUS SIGN to the left of the open brace to collapse the outlining region. When the region is collapsed, the ellipsis symbol (...) should appear to the left of the collapsed region, and a popup containing the text **hover text** should appear when you move the pointer over the ellipsis.  
+4.  Es sollte ein Gliederungsbereich, der beiden geschweiften Klammern enthält. Sie sollten das Minuszeichen links neben die öffnende geschweifte Klammer zum Reduzieren des Gliederungsbereichs klicken können. Wenn der Bereich reduziert wird, wird das Symbol mit den Auslassungspunkten \(...\) erscheint links neben den reduzierten Bereich, und ein Popup\-Fenster mit dem Text **auf Text zeigen** sollte angezeigt werden, wenn Sie den Mauszeiger über die Schaltfläche bewegen.  
   
-## <a name="see-also"></a>See Also  
- [Walkthrough: Linking a Content Type to a File Name Extension](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+## Siehe auch  
+ [Exemplarische Vorgehensweise: Verknüpfen eines Inhaltstyps mit Erweiterung](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

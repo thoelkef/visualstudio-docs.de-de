@@ -1,68 +1,51 @@
 ---
-title: IDebugObject::GetMemoryContext | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugObject::GetMemoryContext
-helpviewer_keywords:
-- IDebugObject::GetMemoryContext method
+title: "IDebugObject::GetMemoryContext | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugObject::GetMemoryContext"
+helpviewer_keywords: 
+  - "IDebugObject::GetMemoryContext-Methode"
 ms.assetid: 6760a0d3-a898-4e81-b68f-c45c584b225b
 caps.latest.revision: 9
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: dd4c9a72faec7d5b5142a8d10dd3ad6723e8fa64
-ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 9
 ---
-# <a name="idebugobjectgetmemorycontext"></a>IDebugObject::GetMemoryContext
-Gets the memory context that represents the address of the value of the object.  
+# IDebugObject::GetMemoryContext
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Ruft den Arbeitsspeicher Elementkontext ab, der die Adresse des Werts des Objekts darstellt.  
   
-## <a name="syntax"></a>Syntax  
+## Syntax  
   
-```cpp  
-HRESULT GetMemoryContext(   
-   IDebugMemoryContext2** pContext  
+```cpp#  
+HRESULT GetMemoryContext(   
+   IDebugMemoryContext2** pContext  
 );  
 ```  
   
-```csharp  
+```c#  
 int GetMemoryContext(  
-   ref IDebugMemoryContext2 pContext  
+   ref IDebugMemoryContext2 pContext  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parameter  
  `pContext`  
- [out] Returns an [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) object representing the address of the value of the object.  
+ \[out\]  Gibt ein [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)\-Objekt zurück, das die Adresse des Werts des Objekts darstellt.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns S_OK; otherwise, returns an error code.  
+## Rückgabewert  
+ Bei Erfolg gibt S\_OK zurück. andernfalls gibt einen Fehlercode zurück.  
   
-## <a name="remarks"></a>Remarks  
- The returned memory context specifies the address of the value as represented by this [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) object.  
+## Hinweise  
+ Der zurückgegebene Arbeitsspeicher Elementkontext gibt die Adresse des Werts veranschaulicht, wie durch diese [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)\-Objekt dargestellt.  
   
-## <a name="see-also"></a>See Also  
+## Siehe auch  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

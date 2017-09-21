@@ -1,56 +1,37 @@
 ---
-title: You have selected a database object from an unsupported database provider | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+title: "Sie haben ein Datenbankobjekt von einem nicht unterst&#252;tzten Datenbankanbieter ausgew&#228;hlt | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/14/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "article"
 ms.assetid: c0f1298e-31aa-471e-ae19-1bafffd2ae40
 caps.latest.revision: 3
-author: gewarren
-ms.author: gewarren
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: 80fa49a711987b4f5c8f7542a5eeb8771de77f2c
-ms.contentlocale: de-de
-ms.lasthandoff: 09/07/2017
-
+caps.handback.revision: 1
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
 ---
-# <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>You have selected a database object from an unsupported database provider
-The [!INCLUDE[vs_ordesigner_long](../data-tools/includes/vs_ordesigner_long_md.md)] ([!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]) supports only the .NET Framework Data Provider for SQL Server (<xref:System.Data.SqlClient>). Although you can click **OK** and continue to work with objects from unsupported database providers, you may experience unexpected behavior at run time.  
+# Sie haben ein Datenbankobjekt von einem nicht unterst&#252;tzten Datenbankanbieter ausgew&#228;hlt
+Der [!INCLUDE[vs_ordesigner_long](../data-tools/includes/vs_ordesigner_long_md.md)] \([!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]\) unterstützt nur den .NET Framework\-Datenbankanbieter für SQL Server \(<xref:System.Data.SqlClient>\).Obwohl Sie auf **OK** klicken können und die Arbeit an Objekten von nicht unterstützten Datenbankanbietern fortsetzen können, kann zur Laufzeit unerwartetes Verhalten auftreten.  
   
 > [!NOTE]
->  Only data connections that use the .NET Framework Data Provider for SQL Server are supported.  
+>  Es werden nur Datenverbindungen unterstützt, die den .NET Framework\-Datenanbieter für SQL Server verwenden.  
   
-### <a name="to-correct-this-error"></a>To correct this error  
+### So beheben Sie diesen Fehler  
   
--   Click **OK** to continue designing the entity classes that map to the connection that uses the unsupported database provider. You might experience unexpected behavior when you use unsupported database providers.  
+-   Klicken Sie auf **OK**, um mit dem Entwerfen der Entitätsklassen fortzufahren, die der Verbindung zugeordnet sind, die den nicht unterstützten Datenbankanbieter verwendet.Es kann unerwartetes Verhalten auftreten, wenn nicht unterstützte Datenbankanbieter verwendet werden.  
   
-     -or-  
+     \- oder \-  
   
--   Click **Cancel**.  
+-   Klicken Sie auf **Abbrechen**.  
   
-     The action is stopped. Create or use a data connection that uses the .NET Framework Provider for SQL Server.  
+     Die Aktion wird beendet.Erstellen oder verwenden Sie eine Datenverbindung, die .NET Framework\-Anbieter für SQL Server verwendet.  
   
-## <a name="see-also"></a>See Also  
- [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)   
- [.NET Framework Data Providers](/dotnet/framework/data/adonet/data-providers)   
- [Accessing data in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
+## Siehe auch  
+ [Object Relational Designer \(O\/R\-Designer\)](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
+ [LINQ to SQL](../Topic/LINQ%20to%20SQL.md)   
+ [.NET Framework\-Datenanbieter](../Topic/.NET%20Framework%20Data%20Providers.md)   
+ [Herstellen von Datenverbindungen in Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)

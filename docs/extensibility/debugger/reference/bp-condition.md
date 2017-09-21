@@ -1,100 +1,83 @@
 ---
-title: BP_CONDITION | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- BP_CONDITION
-helpviewer_keywords:
-- BP_CONDITION structure
+title: "BP_CONDITION | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "BP_CONDITION"
+helpviewer_keywords: 
+  - "BP_CONDITION-Struktur"
 ms.assetid: 407f87a3-2878-429b-8c65-b68feb36622a
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 7913b12a72ac269f543fcaa3ac7a8ca355b969ce
-ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="bpcondition"></a>BP_CONDITION
-Describes the conditions under which a breakpoint fires.  
+# BP_CONDITION
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Beschreibt die Bedingungen, unter denen ein Haltepunkt auslöst.  
   
-## <a name="syntax"></a>Syntax  
+## Syntax  
   
-```cpp  
-typedef struct _BP_CONDITION {   
-   IDebugThread2* pThread;  
-   BP_COND_STYLE  styleCondition;  
-   BSTR           bstrContext;  
-   BSTR           bstrCondition;  
-   UINT           nRadix;  
+```cpp#  
+typedef struct _BP_CONDITION {   
+   IDebugThread2* pThread;  
+   BP_COND_STYLE  styleCondition;  
+   BSTR           bstrContext;  
+   BSTR           bstrCondition;  
+   UINT           nRadix;  
 } BP_CONDITION;  
 ```  
   
-```csharp  
-public struct BP_CONDITION {   
-   public IDebugThread2 pThread;  
-   public uint          styleCondition;  
-   public string        bstrContext;  
-   public string        bstrCondition;  
-   public uint          nRadix;  
+```c#  
+public struct BP_CONDITION {   
+   public IDebugThread2 pThread;  
+   public uint          styleCondition;  
+   public string        bstrContext;  
+   public string        bstrCondition;  
+   public uint          nRadix;  
 };  
 ```  
   
-## <a name="members"></a>Members  
+## Mitglieder  
  `pThread`  
- The [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) object that represents the active thread for the application that contains the breakpoint.  
+ Das [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)\-Objekt, das den aktiven Thread für die Anwendung darstellt, die den Haltepunkt enthält.  
   
  `styleCondition`  
- A value from the [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) enumeration describing the style of this breakpoint condition.  
+ Ein Wert aus der [BP\_COND\_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md)\-Enumeration, die das Format dieser Haltepunkt zustandes beschreibt.  
   
  `bstrContext`  
- The location of the breakpoint.  
+ Die Position des Haltepunkts.  
   
  `bstrCondition`  
- The firing condition of the breakpoint.  
+ Die Auslösung Zustand des Haltepunkts.  
   
  `nRadix`  
- Radix to be used in evaluating any numerical information.  
+ Wenn zu verwendende Basisklasse, die alle numerischen Daten ausgewertet werden.  
   
-## <a name="remarks"></a>Remarks  
- This structure is a member of the [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) and [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) structures.  
+## Hinweise  
+ Diese Struktur ist ein Mitglied der [BP\_REQUEST\_INFO](../../../extensibility/debugger/reference/bp-request-info.md) und [BP\_REQUEST\_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) Strukturen.  
   
- This structure is also passed as a parameter to the [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) and [SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md) methods.  
+ Diese Struktur wird auch als Parameter an die [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) und [SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md)\-Methode übergeben.  
   
-## <a name="requirements"></a>Requirements  
+## Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)   
- [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)   
+## Siehe auch  
+ [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [BP\_REQUEST\_INFO](../../../extensibility/debugger/reference/bp-request-info.md)   
+ [BP\_REQUEST\_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)   
  [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md)   
  [SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md)
+ [BP\_COND\_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md)

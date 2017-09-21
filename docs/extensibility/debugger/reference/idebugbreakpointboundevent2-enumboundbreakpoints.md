@@ -1,73 +1,56 @@
 ---
-title: IDebugBreakpointBoundEvent2::EnumBoundBreakpoints | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugBreakpointBoundEvent2::EnumBoundBreakpoints
-helpviewer_keywords:
-- IDebugBreakpointBoundEvent2::EnumBoundBreakpoints
+title: "IDebugBreakpointBoundEvent2::EnumBoundBreakpoints | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugBreakpointBoundEvent2::EnumBoundBreakpoints"
+helpviewer_keywords: 
+  - "IDebugBreakpointBoundEvent2::EnumBoundBreakpoints"
 ms.assetid: 1f588feb-522e-488d-be92-7bc19b9e3688
 caps.latest.revision: 13
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: a6aab22201f38048433f5d3ae30b931bfed70f63
-ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 13
 ---
-# <a name="idebugbreakpointboundevent2enumboundbreakpoints"></a>IDebugBreakpointBoundEvent2::EnumBoundBreakpoints
-Creates an enumerator of breakpoints that were bound on this event.  
+# IDebugBreakpointBoundEvent2::EnumBoundBreakpoints
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Erstellt einen Enumerator von Haltepunkten, die für dieses Ereignis gebunden wurden.  
   
-## <a name="syntax"></a>Syntax  
+## Syntax  
   
-```cpp  
-HRESULT EnumBoundBreakpoints(   
-   IEnumDebugBoundBreakpoints2** ppEnum  
+```cpp#  
+HRESULT EnumBoundBreakpoints(   
+   IEnumDebugBoundBreakpoints2** ppEnum  
 );  
 ```  
   
-```csharp  
-int EnumBoundBreakpoints(   
-   out IEnumDebugBoundBreakpoints2 ppEnum  
+```c#  
+int EnumBoundBreakpoints(   
+   out IEnumDebugBoundBreakpoints2 ppEnum  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parameter  
  `ppEnum`  
- [out] Returns an [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) object that enumerates all the breakpoints bound from this event.  
+ \[out\]  Gibt ein [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)\-Objekt zurück, das alle Haltepunkte aufgelistet, die von diesem Ereignis gebunden sind.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`. Returns `S_FALSE` if there are no bound breakpoints; otherwise, returns an error code.  
+## Rückgabewert  
+ Bei Erfolg gibt `S_OK`zurück.  Gibt `S_FALSE` zurück, wenn keine gebundenen Haltepunkte vorhanden ist. andernfalls gibt einen Fehlercode zurück.  
   
-## <a name="remarks"></a>Remarks  
- The list of bound breakpoints is for those bound to this event and might not be the entire list of breakpoints bound from a pending breakpoint. To get a list of all breakpoints bound to a pending breakpoint, call the [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) method to get the associated [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) object and then call the [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) method to get an [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) object which contains all the bound breakpoints for the pending breakpoint.  
+## Hinweise  
+ Die Liste der gebundenen Haltepunkte ist für diese Beschränkung auf dieses Ereignis, und ist möglicherweise nicht die gesamte Liste der Haltepunkte, die von einem anstehenden Haltepunkt gebunden sind.  Um eine Liste aller Haltepunkte abzurufen, die einem anstehenden Haltepunkt gebunden sind, rufen Sie die [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md)\-Methode auf, um das zugeordnete [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)\-Objekt zu erhalten, und rufen Sie dann die [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)\-Methode [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) um ein Objekt abzurufen, das alle gebundenen Haltepunkte für den anstehenden Haltepunkt enthält.  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a **CBreakpointSetDebugEventBase** object that exposes the [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) interface.  
+## Beispiel  
+ Im folgenden Beispiel wird veranschaulicht, wie diese Methode für ein **CBreakpointSetDebugEventBase\-Objekt** implementiert, das die [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)\-Schnittstelle verfügbar macht.  
   
-```cpp  
+```cpp#  
 STDMETHODIMP CBreakpointSetDebugEventBase::EnumBoundBreakpoints(  
     IEnumDebugBoundBreakpoints2 **ppEnum)  
 {  
@@ -92,7 +75,7 @@ STDMETHODIMP CBreakpointSetDebugEventBase::EnumBoundBreakpoints(
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## Siehe auch  
  [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)   
  [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)   
  [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md)   

@@ -20,8 +20,8 @@ helpviewer_keywords:
 - IntelliTrace
 ms.assetid: 4bd80d2f-f680-4bf4-81c3-f14e8185f6a4
 caps.latest.revision: 27
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 ms.translationtype: HT
 ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
@@ -90,7 +90,7 @@ ms.lasthandoff: 08/23/2017
     Private webUrl As String = "/"  
     ```  
   
-    ```cs  
+    ```csharp  
     // SharePoint site and subsite.  
     private string siteUrl = "http://localhost";  
     private string webUrl = "/";  
@@ -127,7 +127,7 @@ ms.lasthandoff: 08/23/2017
     End Sub  
     ```  
   
-    ```cs  
+    ```csharp  
     public override void FeatureActivated(SPFeatureReceiverProperties properties)  
     {  
         try  
@@ -205,7 +205,7 @@ ms.lasthandoff: 08/23/2017
     End Sub  
     ```  
   
-    ```cs  
+    ```csharp  
     public override void FeatureDeactivating(SPFeatureReceiverProperties properties)  
     {  
         // The following line induces an error to demonstrate debugging.  

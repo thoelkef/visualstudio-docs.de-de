@@ -1,85 +1,68 @@
 ---
-title: IDebugEngine3::SetSymbolPath | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugEngine3::SetSymbolPath
-helpviewer_keywords:
-- IDebugEngine3::SetSymbolPath
+title: "IDebugEngine3::SetSymbolPath | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugEngine3::SetSymbolPath"
+helpviewer_keywords: 
+  - "IDebugEngine3::SetSymbolPath"
 ms.assetid: 47b48f84-8a96-401f-84df-0baa8a96d26e
 caps.latest.revision: 12
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 63c68eab87ec26d3cf20c66e7a53061e8be79186
-ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 12
 ---
-# <a name="idebugengine3setsymbolpath"></a>IDebugEngine3::SetSymbolPath
-Sets the path or paths that are searched for debugging symbols.  
+# IDebugEngine3::SetSymbolPath
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Legt den Pfad oder die Pfade ab, die für die Debugsymbole gefunden werden.  
   
-## <a name="syntax"></a>Syntax  
+## Syntax  
   
-```cpp  
+```cpp#  
 HRESULT SetSymbolPath (  
-   LPOLESTR            szSymbolSearchPath,  
-   LPOLESTR            szSymbolCachePath,  
-   LOAD_SYMBOLS_FLAGS  Flags  
+   LPOLESTR            szSymbolSearchPath,  
+   LPOLESTR            szSymbolCachePath,  
+   LOAD_SYMBOLS_FLAGS  Flags  
 );  
 ```  
   
-```csharp  
+```c#  
 int SetSymbolPath(  
-   string                    szSymbolSearchPath,   
-   string                    szSymbolCachePath,   
-   enum_LOAD_SYMBOLS_FLAGS   Flags  
+   string                    szSymbolSearchPath,   
+   string                    szSymbolCachePath,   
+   enum_LOAD_SYMBOLS_FLAGS   Flags  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parameter  
   
-|Parameter|Description|  
-|---------------|-----------------|  
-|`szSymbolSearchPath`|[in] String containing the symbol search path or paths. See "Remarks" for details. Cannot be null.|  
-|`szSymbolCachePath`|[in] String containing the local path where symbols can be cached. Cannot be null.|  
-|`Flags`|[in] Not used; always set to 0.|  
+|Parameter|Beschreibung|  
+|---------------|------------------|  
+|`szSymbolSearchPath`|\[in\]  Eine Zeichenfolge, die den Symbolsuchpfad oder die Pfade enthält.  Weitere Informationen finden Sie im Abschnitt „Hinweise“.  Darf nicht NULL sein.|  
+|`szSymbolCachePath`|\[in\]  Eine Zeichenfolge, die den lokalen Pfad enthält, wobei Symbole zwischengespeichert werden können.  Darf nicht NULL sein.|  
+|`Flags`|\[in\]  Wird nicht verwendet. immer auf 0 festgelegt.|  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns S_OK; otherwise returns an error code.  
+## Rückgabewert  
+ Bei Erfolg gibt S\_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Remarks  
- The string `szSymbolSearchPath` is a list of one or more paths, separated by semicolons, to search for symbols. These paths can be a local path, a UNC-style path, or a URL. These paths can also be a mix of different types. If the path is UNC (for example, \\\Symserver\Symbols), then the debug engine should determine if the path is to a symbol server and should be able to load symbols from that server, caching them in the path specified by `szSymbolCachePath`.  
+## Hinweise  
+ Die Zeichenfolge`szSymbolSearchPath` ist eine Liste mit einer oder mehrerer Pfade durch Semikolons getrennt, um nach Symbolen sucht.  Diese Pfade können ein lokaler Pfad, ein UNC\-Format Pfad oder eine URL handeln.  Diese Pfade können eine Mischung verschiedener Typen werden.  Wenn der Pfad einen UNC\-Pfad \(z. B. \\ \\ Symserver \\ symbols\) ist, sollte das Debugmodul ermitteln, ob der Pfad zu einem Symbolserver und in der Lage ist, Symbole von diesem Server zu laden und diese im Pfad zwischenspeichern, der von `szSymbolCachePath`angegeben wird.  
   
- The symbol path can also contain one or more cache locations. Caches are listed in priority order, with the highest priority cache first, and separated by * symbols. For example:  
+ Der Symbolpfad kann einen oder mehrere Speicherorte Cache enthalten.  Cache werden in der Reihenfolge der Priorität, mit der höchsten Priorität zuerst Cache und in getrennten durch \* Symbole aufgelistet.  Beispiele:  
   
 ```  
 \\symbols\symbols;\\someotherserver\symbols;c:\symbols\httpsymbols*http://msdl.microsoft.com  
 ```  
   
- The [LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md) method performs the actual load of the symbols.  
+ Die [LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)\-Methode führt die eigentliche Auslastung der Symbole aus.  
   
-## <a name="see-also"></a>See Also  
+## Siehe auch  
  [LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)   
  [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)

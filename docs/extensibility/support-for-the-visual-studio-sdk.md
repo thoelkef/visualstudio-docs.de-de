@@ -1,86 +1,68 @@
 ---
-title: Support for the Visual Studio SDK | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- Visual Studio SDK, support options
-- support, Visual Studio SDK
-- Help, Visual Studio SDK
-- newsgroups, Visual Studio SDK support
-- Web sites, Visual Studio SDK support
+title: "Unterst&#252;tzung f&#252;r das Visual Studio SDK | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "Visual Studio-SDK, Support-Optionen"
+  - "Visual Studio SDK-Unterstützung"
+  - "Visual Studio SDK-Hilfe"
+  - "Newsgroups und Visual Studio SDK-Unterstützung"
+  - "Websites, Visual Studio SDK-Unterstützung"
 ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
 caps.latest.revision: 22
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: bc8f895d87b6d76e2894aad799d1e12e687fc80c
-ms.openlocfilehash: ea6ca9b6157c956e9471285d7010368f0dee86be
-ms.contentlocale: de-de
-ms.lasthandoff: 09/09/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 22
 ---
-# <a name="support-for-the-visual-studio-sdk"></a>Support for the Visual Studio SDK
-Several support options are available for customers who have questions about how to extend the Visual Studio integrated development environment (IDE).  
-  
-## <a name="free-support"></a>Free Support  
-  
-### <a name="msdn-development-center"></a>MSDN Development Center  
- The [Visual Studio Extensibility Developer Center](http://go.microsoft.com/fwlink/?LinkID=84381) on MSDN contains resources that help answer questions about how to extend Visual Studio. For example, there are several links to VSIP developer blogs.  
-  
-### <a name="microsoft-newsgroups"></a>Microsoft Newsgroups  
- Members of the Visual Studio development team and other developers who extend Visual Studio often participate in the microsoft.public.vstudio.extensibility newsgroup. This newsgroup is a managed newsgroup. If you are an MSDN Universal Subscriber, make sure that you register a no-spam alias to make it possible for Microsoft to respond.  
-  
-### <a name="msdn-forums"></a>MSDN Forums  
- The [MSDN Forums](http://go.microsoft.com/fwlink/?LinkID=76632) provide another way to chat with peers and experts. The graphical user interface (UI) of the forums is designed to make them easier to use than newsgroups. The [Visual Studio Extensibility Forum](http://go.microsoft.com/fwlink/?LinkID=121964) is a good place to start to search for answers to extensibility questions. Always search before you ask a question because someone else may already have asked the same question.  
-  
-### <a name="visual-studio-gallery"></a>Visual Studio Gallery  
- The [Visual Studio Gallery](http://visualstudiogallery.msdn.microsoft.com/) is the place for extensions and sample code. You can find tools that improve your productivity and user experience with Visual Studio, sample applications that show how to use VSPackages and the Managed Extensibility Framework (MEF), and other kinds of samples.  
-  
-### <a name="visual-studio-sdk-samples"></a>Visual Studio SDK Samples
+# Unterst&#252;tzung f&#252;r das Visual Studio SDK
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
-You can find open source examples of VS SDK extensions on GitHub at [Visual Studio Samples](https://github.com/Microsoft/VSSDK-Extensibility-Samples). This GitHub repository contains samples that illustrate various extensible features in Visual Studio.
-
-## <a name="included-support"></a>Included Support  
+Mehrere Support\-Optionen stehen für Kunden Fragen zur Verwendung der integrierten Entwicklungsumgebung \(IDE\) von Visual Studio zu erweitern.  
   
-### <a name="visual-studio-product-support"></a>Visual Studio Product Support  
- Some support is included with the purchase of [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] products. For more information, see [Visual Studio Support](http://msdn.microsoft.com/vstudio/cc136615.aspx). Microsoft maintains a dedicated support team to answer questions about [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensibility.  
+## Kostenlosen Support  
   
-### <a name="msdn-subscription-support"></a>MSDN Subscription Support  
- MSDN subscription packages may also include some support. For more information, see [MSDN Subscriber Support](https://msdn.microsoft.com/subscriptions/aa718661.aspx).  
+### MSDN Development Center  
+ Die [Visual Studio Extensibility Developer Center](http://go.microsoft.com/fwlink/?LinkID=84381) auf MSDN enthält Ressourcen, mit denen beantworten Sie Fragen dazu, wie Sie Visual Studio erweitern. Es gibt beispielsweise mehrere Links zu VSIP\-Entwickler\-Blogs.  
   
-## <a name="paid-support"></a>Paid Support  
+### Microsoft\-Newsgroups  
+ Mitglieder der Visual Studio\-Entwicklungsteam und andere Entwickler, die Visual Studio, häufig erweitern beteiligt microsoft.public.vstudio.extensibility Newsgroup. Diese Newsgroup ist eine verwaltete Newsgroups. Wenn Sie MSDN Universal\-Abonnenten sind, stellen Sie sicher, registrieren Sie einen Alias e\-Mails, damit Microsoft reagieren können.  
   
-### <a name="developer-tools-support"></a>Developer Tools Support  
- Support can also be purchased. A variety of support offerings are available under the Developer Tools category at [Microsoft Help and Support Centers](http://go.microsoft.com/fwlink/?LinkID=82383).  
+### MSDN\-Foren  
+ Die [MSDN\-Foren](http://go.microsoft.com/fwlink/?LinkID=76632) eine andere Möglichkeit zum Chatten mit Gleichgesinnten und Experten. Die grafische Benutzeroberfläche \(UI\) der Foren ist leichter zu verwenden als Newsgroups entwickelt. Die [Visual Studio Extensibility Forum](http://go.microsoft.com/fwlink/?LinkID=121964) ist ein guter Ausgangspunkt, um Antworten auf Fragen der Erweiterbarkeit zu starten. Bevor Sie eine Frage stellen, da eine andere Person bereits die gleiche Frage gestellt haben, kann immer zu suchen.  
   
- Customers who want to use the [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] to develop complex packages can consider purchasing a Premier Support contract with Microsoft. For more information, see [Microsoft Premier Support](http://go.microsoft.com/fwlink/?LinkID=76660). For small companies, [Partner Advantage Support](http://www.microsoft.com/services/microsoftservices/srv_mspa.mspx) may be an attractive alternative to a traditional Premier Support offering.  
+### Visual Studio Gallery  
+ Die [Visual Studio Gallery](http://visualstudiogallery.msdn.microsoft.com/) ist der Ort für Erweiterungen und der Beispielcode. Finden Sie Tools, mit die zu und Ihre Produktivität und Benutzer verbessern mit Visual Studio und Beispielanwendungen kommen, die zeigen, wie VSPackages und das Managed Extensibility Framework \(MEF\) und andere Arten von Beispielen verwendet.  
+  
+### CodePlex  
+ [CodePlex](http://go.microsoft.com/fwlink/?LinkId=76627) ist die Microsoft open\-Source\-Projekt\-hosting\-Website. Sie können CodePlex verwenden, erstellen und neue Projekte freigeben, zu vorhandenen Projekten beitragen, oder verwenden die Anwendung auf der Website und Bereitstellen von Feedback. Alle PowerToys \(und ihre Dokumentation\), die mit früheren Versionen von enthalten waren die [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] sind jetzt auf CodePlex verfügbar.  
+  
+## Unterstützung  
+  
+### Produktsupport für Visual Studio  
+ Einige unterstützt wird mit dem Kauf des [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Produkte. Weitere Informationen finden Sie unter [Visual Studio\-Unterstützung](http://msdn.microsoft.com/vstudio/cc136615.aspx). Microsoft stellt einen dedizierten Support\-Team, um Fragen zu beantworten [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Erweiterbarkeit.  
+  
+### Unterstützung für MSDN\-Abonnement  
+ MSDN\-Abonnement\-Pakete können auch eine Unterstützung enthalten. Weitere Informationen finden Sie unter [Support für MSDN\-Abonnenten](https://msdn.microsoft.com/subscriptions/aa718661.aspx).  
+  
+## Kostenpflichtigen Support  
+  
+### Support für Entwickler\-Tools  
+ Unterstützung kann auch erworben werden. Eine Vielzahl von Support\-Angebote finden Sie unter der Kategorie "Entwicklertools" auf [Microsoft Help und Support\-Center](http://go.microsoft.com/fwlink/?LinkID=82383).  
+  
+ Kunden, die verwendet werden soll die [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] komplexe Pakete entwickeln, können sollten einen Premier Support\-Vertrag mit Microsoft erwerben. Weitere Informationen finden Sie unter [Microsoft Premier Support](http://go.microsoft.com/fwlink/?LinkID=76660). Für kleine Unternehmen [Support für Partner nutzen](http://www.microsoft.com/services/microsoftservices/srv_mspa.mspx) möglicherweise eine attraktive Alternative zu einer herkömmlichen Premier Support anbieten.  
   
 > [!NOTE]
->  Standard support cannot be used for consultation or to obtain advice.  
+>  Standard\-Unterstützung kann für Serveradministratoren oder erhalten Ratschläge verwendet werden.  
   
- Questions about Premier Support offerings in conjunction with the VSIP program can be sent to [vsipsvs@microsoft.com](mailto:vsipsvs@microsoft.com). Questions about the new Partner Advantage program can be sent to [advantg@microsoft.com](mailto:advantg@microsoft.com).  
+ Fragen zu Premier Support\-Angebote in Verbindung mit dem VSIP\-Programm gesendet werden können, um [vsipsvs@microsoft.com](mailto:vsipsvs@microsoft.com). Fragen des Partner Advantage\-Programms gesendet werden können, um [advantg@microsoft.com](mailto:advantg@microsoft.com).  
   
- Information about individual support requests can be found at [Individual Support Requests](http://go.microsoft.com/fwlink/?LinkID=82385).  
+ Informationen über einzelne Support\-Anfragen finden Sie unter [einzelne Support\-Anfragen](http://go.microsoft.com/fwlink/?LinkID=82385).  
   
-## <a name="see-also"></a>See Also  
- [Talk to Us](../ide/talk-to-us.md)
+## Siehe auch  
+ [Sprechen Sie mit uns](../ide/talk-to-us.md)

@@ -1,61 +1,43 @@
 ---
-title: Getting Started with Visual C# and Visual Basic using Visual Studio | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
-helpviewer_keywords:
-- C# tutorial
-- Visual Basic tutorial
-- learn VB
-- VB tutorial
-- learn C#
-- learn Visual Basic
+title: "Erste Schritte mit Visual C# und Visual Basic | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-general"
+ms.tgt_pltfrm: ""
+ms.topic: "get-started-article"
+helpviewer_keywords: 
+  - "C#-Lernprogramm"
+  - "Erlernen von C#"
+  - "Erlernen von VB"
+  - "Erlernen von Visual Basic"
+  - "VB-Lernprogramm"
+  - "Visual Basic-Lernprogramm"
 ms.assetid: d57bb19f-58d6-48cc-96cb-ab1c540a25d0
 caps.latest.revision: 13
-author: kempb
-ms.author: kempb
-manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 3ce2d22a82f81db35575275a99d193066068e127
-ms.openlocfilehash: 562e94fb9881bc1844b78466d52611fc51a90a27
-ms.contentlocale: de-de
-ms.lasthandoff: 09/07/2017
-
+author: "kempb"
+ms.author: "kempb"
+manager: "ghogen"
+caps.handback.revision: 13
 ---
-# <a name="getting-started-with-visual-c-and-visual-basic-using-visual-studio"></a>Getting Started with Visual C# and Visual Basic using Visual Studio
-Whether you are new to Visual C# or Microsoft Visual Basic, this is the place to start. Getting Started Help is a series of sequential lessons that introduces you to Visual C# and Visual Basic. Have fun, and write some great software.  
-  
- To learn about Visual C++, see [Visual C++ resources](http://msdn.microsoft.com/vstudio/hh386302.aspx).  
-  
-## <a name="in-this-section"></a>In This Section  
- [Walkthrough: Create a Simple Application](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
- Identify the basic windows in the Visual Studio IDE, optimize your development experience by configuring a setting, and then build a simple program.  
-  
- [Tutorial 1: Create a Picture Viewer](../ide/tutorial-1-create-a-picture-viewer.md)  
- Build a program that loads a picture from a file and displays it in a window. Learn how to drag controls like buttons and picture boxes on your form, set their properties, and use containers to smoothly resize the form. Get started writing code.  
-  
- [Tutorial 2: Create a Timed Math Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md)  
- Build a timed math quiz game, where the player must answer four random arithmetic problems within a specified time. Learn how to generate random numbers using the `Random` class, trigger events using a `Timer` control, control program flow using `if else` statements, and perform basic arithmetic operations.  
-  
- [Tutorial 3: Create a Matching Game](../ide/tutorial-3-create-a-matching-game.md)  
- Build a matching game, where the player must match pairs of hidden icons. Learn how to hold objects using a `List` object, use a `foreach` loop, keep track of a form's state using reference variables, build an event handler that you can use with multiple objects, and make a timer fire exactly once when started.
+# Erste Schritte mit Visual C# und Visual Basic
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
 
+Auch wenn Sie noch keine Erfahrung mit Visual C\# oder Microsoft Visual Basic besitzen, ist hier der richtige Ausgangspunkt für Sie.  Die Reihe "Erste Schritte" umfasst eine Folge von aufeinander aufbauenden Lektionen, die Sie mit Visual C\# und Visual Basic vertraut machten.  Viel Spaß und viel Erfolg beim Entwickeln Ihrer Software.  
+  
+ Informationen zu Visual C\+\+ finden Sie in den [Visual C\+\+\-Ressourcen](http://msdn.microsoft.com/vstudio/hh386302.aspx).  
+  
+## In diesem Abschnitt  
+ [Exemplarische Vorgehensweise: Erstellen einer einfachen Anwendung](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
+ Lernen Sie die grundlegenden Fenster in der Visual Studio\-IDE kennen, passen Sie die Entwicklungsumgebung an Ihre Erfordernisse an, indem Sie Einstellungen konfigurieren, und erstellen Sie dann ein einfaches Programm.  
+  
+ [Lernprogramm 1: Erstellen eines Bildanzeigeprogramms](../ide/tutorial-1-create-a-picture-viewer.md)  
+ Erstellen Sie ein Programm, das ein Bild aus einer Datei lädt und es in einem Fenster anzeigt.  Erfahren Sie, wie Sie Steuerelemente, z. B. Schaltflächen und Bildfelder, auf das Formular ziehen, ihre Eigenschaften festlegen und mithilfe von Containern die Größe des Formulars stufenlos ändern können.  Erste Schritte beim Schreiben von Code  
+  
+ [Lernprogramm 2: Erstellen eines Mathequiz mit Zeitmessung](../ide/tutorial-2-create-a-timed-math-quiz.md)  
+ Erstellen Sie ein zeitgesteuertes mathematisches Quizspiel, bei dem der Spieler vier zufällige mathematische Aufgaben innerhalb einer angegebenen Zeit lösen muss.  Erfahren Sie, wie Zufallszahlen mithilfe der `Random`\-Klasse generiert werden, Ereignisse mit einem `Timer`\-Steuerelement ausgelöst werden, der Programmablauf mit `if else`\-Anweisungen gesteuert wird und grundlegende arithmetische Operationen ausgeführt werden.  
+  
+ [Lernprogramm 3: Erstellen eines Vergleichsspiels](../ide/tutorial-3-create-a-matching-game.md)  
+ Erstellen Sie ein Vergleichsspiel, bei dem der Spieler ausgeblendete Symbolpaare finden müssen.  Erfahren Sie, wie Sie folgende Aufgaben ausführen können: Objekte in ein `List`\-Objekt aufnehmen, eine `foreach`\-Schleife verwenden, den Formularstatus mit Verweisvariablen nachverfolgen, einen Ereignishandler erstellen, der für mehrere Objekten verwendet werden kann und einen Zeitgeber beim Start genau einmal auslösen.

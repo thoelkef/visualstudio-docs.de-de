@@ -1,68 +1,51 @@
 ---
-title: IDebugObject2::IsEncOutdated | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugObject2::IsEncOutdated
-helpviewer_keywords:
-- IDebugObject2::IsEncOutdated method
+title: "IDebugObject2::IsEncOutdated | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugObject2::IsEncOutdated"
+helpviewer_keywords: 
+  - "IDebugObject2::IsEncOutdated-Methode"
 ms.assetid: d3a8c02d-895b-478c-9957-d663130f308e
 caps.latest.revision: 8
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 7161f3e608390e5a513faf86b2e0b7ed2459deed
-ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 8
 ---
-# <a name="idebugobject2isencoutdated"></a>IDebugObject2::IsEncOutdated
-This method determines whether the Edit and Continue status of this object or of the parent container is out of date. A custom expression evaluator does not implement this method and always returns `E_NOTIMPL`.  
+# IDebugObject2::IsEncOutdated
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Diese Methode bestimmt, ob die Bearbeitung und setzt Status dieses Objekts fort, oder des übergeordneten Containers ist veraltet.  Ein benutzerdefinierter Ausdrucksauswertung diese Methode nicht implementiert und gibt immer `E_NOTIMPL`zurück.  
   
-## <a name="syntax"></a>Syntax  
+## Syntax  
   
 ```cpp  
-HRESULT IsEncOutdated(  
-   BOOL* pfEncOutdated  
+HRESULT IsEncOutdated(  
+   BOOL* pfEncOutdated  
 );  
 ```  
   
-```csharp  
-int IsEncOutdated(  
-   out int pfEncOutdated  
+```c#  
+int IsEncOutdated(  
+   out int pfEncOutdated  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parameter  
  `pfEncOutdated`  
- [out] Nonzero (`TRUE`) if the Edit and Continue state is out of date, zero (`FALSE`) if it is not.  
+ \[out\]  Ein Wert ungleich 0 \(`TRUE`\), wenn das Bearbeiten und Fortfahren Zustand ist veraltet,`FALSE`fort \(null\), wenn dies nicht der Fall ist.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## Rückgabewert  
+ Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
   
 > [!NOTE]
->  A custom expression evaluator should always return `E_NOTIMPL`.  
+>  Ein benutzerdefinierter Ausdrucksauswertung sollte immer `E_NOTIMPL`zurückgeben.  
   
-## <a name="see-also"></a>See Also  
+## Siehe auch  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

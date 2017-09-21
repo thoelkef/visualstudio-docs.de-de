@@ -1,93 +1,76 @@
 ---
-title: SccUncheckout Function | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- SccUncheckout
-helpviewer_keywords:
-- SccUncheckout function
+title: "SccUncheckout-Funktion | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "SccUncheckout"
+helpviewer_keywords: 
+  - "SccUncheckout-Funktion"
 ms.assetid: 6d498b70-29c7-44b7-ae1c-7e99e488bb09
 caps.latest.revision: 12
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 5db90c033a03605369c19bf358b0642f9f80163b
-ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 12
 ---
-# <a name="sccuncheckout-function"></a>SccUncheckout Function
-This function undoes a previous checkout operation, thereby restoring the contents of the selected file or files to the state prior to the checkout. All changes made to the file since the checkout are lost.  
+# SccUncheckout-Funktion
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Diese Funktion wird eine vorherige Auschecken, wiederherstellen und den Inhalt der ausgewählten Datei oder Dateien in den Zustand vor dem Auschecken rückgängig gemacht. Alle Änderungen, die in die Datei seit dem Auschecken gehen verloren.  
   
-## <a name="syntax"></a>Syntax  
+## Syntax  
   
-```cpp  
+```cpp#  
 SCCRTN SccUncheckout (  
-   LPVOID    pvContext,  
-   HWND      hWnd,  
-   LONG      nFiles,  
-   LPCSTR*   lpFileNames,  
-   LONG      fOptions,  
-   LPCMDOPTS pvOptions  
+   LPVOID    pvContext,  
+   HWND      hWnd,  
+   LONG      nFiles,  
+   LPCSTR*   lpFileNames,  
+   LONG      fOptions,  
+   LPCMDOPTS pvOptions  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parameter  
  pvContext  
- [in] The source control plug-in context structure.  
+ \[in\] Source Control\-Plug\-in Context\-Struktur.  
   
  hWnd  
- [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
+ \[in\] Ein Handle für die IDE\-Fenster, das Quellcodeverwaltungs\-Plug\-in als übergeordnetes Element für alle Dialogfelder verwenden kann, die es bereitstellt.  
   
  nFiles  
- [in] Number of files specified in the `lpFileNames` array.  
+ \[in\] Anzahl der angegebenen Dateien in den `lpFileNames` Array.  
   
  lpFileNames  
- [in] Array of fully qualified local path names of files for which to undo a checkout.  
+ \[in\] Array der Namen von voll gekennzeichneter lokaler Pfad der Dateien für das Auschecken rückgängig gemacht.  
   
- fOptions  
- [in] Command flags (not used).  
+ Bestanden  
+ \[in\] Befehl Flags \(nicht verwendet\).  
   
  pvOptions  
- [in] Source control plug-in-specific options.  
+ \[in\] Quellcodeverwaltungs\-plug\-in spezifischen Optionen.  
   
-## <a name="return-value"></a>Return Value  
- The source control plug-in implementation of this function is expected to return one of the following values:  
+## Rückgabewert  
+ Datenquellen\-Steuerelement Plug\-in\-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
   
-|Value|Description|  
-|-----------|-----------------|  
-|SCC_OK|Undo checkout was successful.|  
-|SCC_E_FILENOTCONTROLLED|The selected file is not under source code control.|  
-|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues. A retry is recommended.|  
-|SCC_E_NONSPECIFICERROR|Nonspecific failure. Undo checkout did not succeed.|  
-|SCC_E_NOTCHECKEDOUT|The user does not have the file checked out.|  
-|SCC_E_NOTAUTHORIZED|The user is not allowed to perform this operation.|  
-|SCC_E_PROJNOTOPEN|The project has not been opened from source control.|  
-|SCC_I_OPERATIONCANCELED|The operation was cancelled before completion.|  
+|Wert|Beschreibung|  
+|----------|------------------|  
+|SCC\_OK|"Auschecken rückgängig" war erfolgreich.|  
+|SCC\_E\_FILENOTCONTROLLED|Die ausgewählte Datei ist nicht vom Quellcode gesteuert.|  
+|SCC\_E\_ACCESSFAILURE|Es wurde ein Problem, das Zugriff auf Quellcode\-Verwaltungssystem, möglicherweise aufgrund eines Netzwerk\-oder Konflikte. Eine Wiederholung wird empfohlen.|  
+|SCC\_E\_NONSPECIFICERROR|Nicht spezifischen Fehler. Rückgängig: Auschecken nicht erfolgreich war.|  
+|SCC\_E\_NOTCHECKEDOUT|Der Benutzer besitzt nicht die Datei ausgecheckt haben.|  
+|SCC\_E\_NOTAUTHORIZED|Der Benutzer ist nicht zulässig, um diesen Vorgang auszuführen.|  
+|SCC\_E\_PROJNOTOPEN|Das Projekt wurde nicht vom Datenquellen\-Steuerelement geöffnet.|  
+|SCC\_I\_OPERATIONCANCELED|Der Vorgang wurde vor dem Abschluss abgebrochen.|  
   
-## <a name="remarks"></a>Remarks  
- After this operation, the `SCC_STATUS_CHECKEDOUT` and `SCC_STATUS_MODIFIED` flags will both be cleared for the files on which the undo checkout was performed.  
+## Hinweise  
+ Nach diesem Vorgang die `SCC_STATUS_CHECKEDOUT` und `SCC_STATUS_MODIFIED` Flags werden sowohl für die Dateien auf dem das Auschecken rückgängig ausgeführt wurde gelöscht werden.  
   
-## <a name="see-also"></a>See Also  
- [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)
+## Siehe auch  
+ [Source Control\-Plug\-in\-API\-Funktionen](../extensibility/source-control-plug-in-api-functions.md)

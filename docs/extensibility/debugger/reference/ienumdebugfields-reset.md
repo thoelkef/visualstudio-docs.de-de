@@ -1,64 +1,47 @@
 ---
-title: IEnumDebugFields::Reset | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IEnumDebugFields::Reset
-helpviewer_keywords:
-- IEnumDebugFields::Reset method
+title: "IEnumDebugFields::Reset | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IEnumDebugFields::Reset"
+helpviewer_keywords: 
+  - "IEnumDebugFields::Reset-Methode"
 ms.assetid: 38ff61e4-0120-42e8-971a-16be6050b425
 caps.latest.revision: 6
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 76a27409e517117fc0d0e62aa96b2c83776f2930
-ms.contentlocale: de-de
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 6
 ---
-# <a name="ienumdebugfieldsreset"></a>IEnumDebugFields::Reset
-This method resets the enumeration to the first element.  
+# IEnumDebugFields::Reset
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+Diese Methode setzt die Enumeration auf das erste Element zurück.  
   
-## <a name="syntax"></a>Syntax  
+## Syntax  
   
-```cpp  
+```cpp#  
 HRESULT Reset(void);  
 ```  
   
-```csharp  
+```c#  
 int Reset();  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### Parameter  
  None  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## Rückgabewert  
+ Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
   
-## <a name="remarks"></a>Remarks  
- After this method is called, the next call to [Next](../../../extensibility/debugger/reference/ienumdebugfields-next.md) returns the first element of the enumeration.  
+## Hinweise  
+ Nachdem diese Methode aufgerufen wird, wird der nächste Aufruf von [Weiter](../../../extensibility/debugger/reference/ienumdebugfields-next.md) das erste Element der Enumeration zurück.  
   
-## <a name="see-also"></a>See Also  
+## Siehe auch  
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
- [Next](../../../extensibility/debugger/reference/ienumdebugfields-next.md)
+ [Weiter](../../../extensibility/debugger/reference/ienumdebugfields-next.md)
