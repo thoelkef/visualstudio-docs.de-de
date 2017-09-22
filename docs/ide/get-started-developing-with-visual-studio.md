@@ -5,15 +5,15 @@ ms.date: 11/16/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology:
-- vs-ide-general
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Visual Studio, getting started
 ms.assetid: 041ef726-f117-4a91-9c18-fef043bf2529
 caps.latest.revision: 65
-author: kempb
-ms.author: kempb
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -30,9 +30,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: 4b2952b9233c7c4571ad4509cc7c4beda7ee2338
+ms.contentlocale: de-de
+ms.lasthandoff: 02/22/2017
 
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Get Started Developing with Visual Studio
@@ -83,9 +85,4 @@ Willkommen bei Visual Studio! Nach dem [Download](http://www.visualstudio.com/co
 |[Erste Schritte mit Visual C# und Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)|[Schreiben von JavaScript-Code](https://msdn.microsoft.com/library/cte3c772.aspx)|  
 |[Visual C++ für plattformübergreifende Mobile-Entwicklung](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md)|[Einführung in die funktionale Programmierung mit F#](http://msdn.microsoft.com/library/vstudio/dd233147.aspx)|  
 |[Erste Schritte mit C++](../ide/getting-started-with-cpp-in-visual-studio.md)|[Erste Schritte beim Debuggen in Visual Studio](../ide/getting-started-with-debugging-in-visual-studio.md)|
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 

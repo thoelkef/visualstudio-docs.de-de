@@ -1,5 +1,5 @@
 ---
-title: 'Vorgehensweise: Anzeigen und Bearbeiten von Code mithilfe von &quot;Definition einsehen&quot; (Alt+F12) | Microsoft-Dokumentation'
+title: 'Vorgehensweise: Anzeigen und Bearbeiten von Code mithilfe von "Definition einsehen" (Alt+F12) | Microsoft-Dokumentation'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -10,8 +10,8 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: 45f3dd20-902a-4047-8cca-9f18216123f4
 caps.latest.revision: 16
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - cs-cz
@@ -50,7 +50,7 @@ Mit dem Befehl **Definition einsehen** können Sie Code anzeigen und bearbeiten,
   
      Diese Abbildung zeigt das Fenster **Definition einsehen** für eine Methode mit dem Namen `Print()`:  
   
-     ![Peek-Fenster](~/ide/media/peekwindow.png "PeekWindow")  
+     ![Peek-Fenster](../ide/media/peekwindow.png "PeekWindow")  
   
      Das Definitionsfenster wird unter der `printer.Print("Hello World!")`-Zeile in der ursprünglichen Datei angezeigt. Das Fenster blendet keinen Code in der ursprünglichen Datei aus. Die Zeilen, die dem Aufruf `printer.Print("Hello World!")` folgen, werden im Definitionsfenster angezeigt.  
   
@@ -64,13 +64,13 @@ Mit dem Befehl **Definition einsehen** können Sie Code anzeigen und bearbeiten,
   
 -   Wenn bereits ein Fenster **Definition einsehen** geöffnet ist, können Sie **Definition ansehen** für den Code in diesem Fenster erneut aufrufen. Ein weiteres Definitionsfenster wird geöffnet. Ein Satz von Breadcrumbpunkten wird neben der Definitionsfensterregisterkarte, die Sie zum Navigieren zwischen Definitionsfenstern verwenden können, angezeigt. Die QuickInfo für die einzelnen Punkte zeigt jeweils den Namen und den Pfad der von den Punkten dargestellten Definitionsdatei an.  
   
-     ![Peek-Fenster innerhalb eines Peek-Fensters](~/ide/media/peekwithinpeek.png "PeekWithinPeek")  
+     ![Peek-Fenster innerhalb eines Peek-Fensters](../ide/media/peekwithinpeek.png "PeekWithinPeek")  
   
 #### <a name="to-use-peek-definition-with-multiple-results"></a>So verwenden Sie die Peek-Definition mit mehreren Ergebnissen  
   
 -   Wenn Sie **Definition einsehen** für Code verwenden, für den mehrere Definitionen vorliegen, (z.B. bei partiellen Klassen), wird rechts neben dem Codedefinitionsfenster eine Ergebnisliste angezeigt. Sie können jedes Ergebnis in der Liste auswählen, um dessen Definition anzuzeigen.  
   
-     ![Peek-Fenster aus verschiedenen Ergebnissen](~/ide/media/peekmultiple.png "PeekMultiple")  
+     ![Peek-Fenster aus verschiedenen Ergebnissen](../ide/media/peekmultiple.png "PeekMultiple")  
   
 #### <a name="to-edit-inside-the-peek-definition-window"></a>So bearbeiten Sie innerhalb des Fensters "Definition einsehen"  
   
