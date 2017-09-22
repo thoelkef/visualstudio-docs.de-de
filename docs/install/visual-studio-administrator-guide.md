@@ -3,7 +3,6 @@ title: "Administratorhandbuch für Visual Studio | Microsoft-Dokumentation"
 description: Erfahren Sie mehr zur Bereitstellung von Visual Studio in einer Unternehmensumgebung.
 ms.custom: 
 ms.date: 05/15/2017
-ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:

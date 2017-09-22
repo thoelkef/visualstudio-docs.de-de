@@ -2,7 +2,6 @@
 title: "Übertragung, Migration und Upgrade der Visual Studio-Projekte | Microsoft-Dokumentation"
 ms.custom: 
 ms.date: 7/24/2017
-ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
