@@ -10,8 +10,8 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 caps.latest.revision: 30
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 ms.translationtype: HT
 ms.sourcegitcommit: c3521e1de25854db012cb91bbe09d9463ecb42c7
@@ -47,7 +47,7 @@ Sie können Ihre Bereitstellungsumgebung in Visual Studio personalisieren und op
 
  Nach Angabe der Einstellungen wird Visual Studio gestartet. Sie sind nun registriert und können beginnen. Um sicherzustellen, dass Sie angemeldet sind, suchen Sie in der rechten oberen Ecke der Visual Studio-Umgebung nach Ihrem Namen.  
 
- ![Aktuell angemeldeter Benutzer in VS2017](~/ide/media/vs2017_username.png)
+ ![Aktuell angemeldeter Benutzer in VS2017](../ide/media/vs2017_username.png)
 
  Sofern Sie sich nicht abmelden, sind Sie automatisch angemeldet, wenn Sie Visual Studio starten. Alle Änderungen an synchronisierten Einstellungen werden automatisch übernommen. Wählen Sie zum Abmelden den Pfeil nach unten neben Ihrem Profilnamen in der Visual Studio-Umgebung, wählen Sie den Befehl **Kontoeinstellungen** , und wählen Sie dann den Link **Abmelden** . Für eine erneute Anmeldung wählen Sie den Befehl **Anmelden** in der rechten oberen Ecke der Visual Studio-Umgebung.  
 

@@ -16,8 +16,8 @@ helpviewer_keywords:
 - code comments
 ms.assetid: f36b46af-443a-4fa6-a2c3-0c4962bbd4aa
 caps.latest.revision: 21
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - cs-cz
@@ -40,8 +40,7 @@ ms.contentlocale: de-de
 ms.lasthandoff: 05/30/2017
 
 ---
-# Anzeigen von XML-Codekommentaren
-<a id="supplying-xml-code-comments" class="xliff"></a>
+# <a name="supplying-xml-code-comments"></a>Anzeigen von XML-Codekommentaren
 Sie können die Kommentare in Quellcodedateien als IntelliSense zur Verfügung stellen. Wenn Sie der Visual Basic-, C#- oder C++-Compilerbefehlszeile den Schalter „/doc“ hinzufügen, wird eine XML-Datei generiert, die als Basis für die IntelliSense-Dokumentation dient.  
   
  Weitere Informationen über das Dokumentieren von Code in Visual Basic finden Sie unter [Vorgehensweise: Erstellen einer XML-Dokumentation](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation).  
@@ -50,6 +49,5 @@ Sie können die Kommentare in Quellcodedateien als IntelliSense zur Verfügung s
   
  Weitere Informationen über das Dokumentieren von Code in C++ finden Sie unter [Kommentare](/cpp/cpp/comments-cpp) und [XML-Dokumentation](/cpp/ide/xml-documentation-visual-cpp).  
   
-## Siehe auch
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Siehe auch  
  [Verwenden von IntelliSense](../ide/using-intellisense.md)

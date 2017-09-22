@@ -10,8 +10,8 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: 9d7c6414-4e6c-4889-a74c-a6033795eccc
 caps.latest.revision: 7
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - cs-cz
@@ -40,7 +40,7 @@ In Visual Studio 2015 steht IntelliSense für einzelne Codedateien sowie für Da
 ## <a name="intellisense-features-in-c"></a>IntelliSense-Funktionen in C++  
  IntelliSense ist ein Name für eine Gruppe von Funktionen, die die Codierung erleichtern. Da verschiedene Personen unterschiedliche Vorstellungen dazu haben, was praktisch ist, können im Prinzip alle IntelliSense-Funktionen auf der Eigenschaftenseite im **Text-Editor, C/C++, Erweitert** aktiviert oder deaktiviert werden .  
   
- ![Extras, Optionen, Text-Editor, C&#47;C&#43;&#43;, erweitert](~/ide/media/sintellisensecpptoolsoptions.PNG "sIntelliSenseCppToolsOptions")  
+ ![Extras, Optionen, Text-Editor, C&#47;C&#43;&#43;, erweitert](../ide/media/sintellisensecpptoolsoptions.PNG "sIntelliSenseCppToolsOptions")  
   
  Sie können die in der folgenden Abbildung aufgeführten Menüelemente und Tastenkombinationen für den Zugriff auf IntelliSense verwenden.  
   
@@ -51,21 +51,21 @@ In Visual Studio 2015 steht IntelliSense für einzelne Codedateien sowie für Da
   
  Eine Liste der Symbole und ihrer Bedeutungen finden Sie unter [Symbole in der Klassenansicht und im Objektbrowser](../ide/class-view-and-object-browser-icons.md).  
   
- ![Visual C&#43;&#43; vollständiges Word-Fenster](~/ide/media/vs2015_cpp_complete_word.png "vs2015_cpp_complete_word")  
+ ![Visual C&#43;&#43; vollständiges Word-Fenster](../ide/media/vs2015_cpp_complete_word.png "vs2015_cpp_complete_word")  
   
  Wenn zum ersten Mal die Memberliste aufgerufen wird, zeigt sie nur Member am, auf die für den aktuellen Kontext zugegriffen werden kann. Wenn Sie danach **STRG+J** verwenden, werden alle Member unabhängig vom Zugriff angezeigt. Wenn Sie sie ein drittes Mal aufrufen, wird eine noch größere Liste der Programmelemente angezeigt. Sie können die Anweisungsvervollständigung auf der Seite **C/C++ Allgemeine Optionen** deaktivieren.  
   
- ![Visual C&#43;&#43- Memberliste](~/ide/media/vs2015_cpp_list_members.png "vs2015_cpp_list_members")  
+ ![Visual C&#43;&#43- Memberliste](../ide/media/vs2015_cpp_list_members.png "vs2015_cpp_list_members")  
   
 ### <a name="parameter-help"></a>Parameterhilfe  
  Wenn Sie eine öffnende geschweifte Klammer eines Funktionsaufrufs oder spitze Klammer in einer Variablendeklaration einer Klassenvorlage eingeben, zeigt der Editor ein kleines Fenster mit den Parametertypen für jede Überladung der Funktion oder des Konstruktors an. Der „current“-Parameter, der auf der Cursorposition basiert, wird in Fettschrift angezeigt. Sie können die Anweisungsvervollständigung auf der Seite **C/C++ Allgemeine Optionen** deaktivieren.  
   
- ![Visual C&#43;&#43;-Parameterhilfe](~/ide/media/vs_2015_cpp_param_help.png "vs_2015_cpp_param_help")  
+ ![Visual C&#43;&#43;-Parameterhilfe](../ide/media/vs_2015_cpp_param_help.png "vs_2015_cpp_param_help")  
   
 ### <a name="quick-info"></a>QuickInfo  
  Wenn Sie mit dem Mauszeiger auf eine Variable zeigen, wird ein kleines Fenster angezeigt, in dem die Informationen und der Header, in dem der Typ definiert wird, angezeigt werden. Zeigen Sie auf einen Funktionsaufruf, um die Signatur der Funktion anzuzeigen. Sie können die QuickInfo auf der Seite **Text-Editor, C/C++, Erweitert** deaktivieren.  
   
- ![Visual C&#43;&#43;-QuickInfo](~/ide/media/vs2015_cpp_quickinfo.png "vs2015_cpp_quickInfo")  
+ ![Visual C&#43;&#43;-QuickInfo](../ide/media/vs2015_cpp_quickinfo.png "vs2015_cpp_quickInfo")  
   
 ## <a name="error-squiggles"></a>Fehlerwellenlinien  
  Wellenlinien unter einem Programmelement (Variable, Schlüsselwort, geschweifte Klammer, Typname usw.) weisen auf einen Fehler oder einen möglichen Fehler im Code hin. Beim Schreiben einer Vorwärtsdeklaration wird eine grüne Wellenlinie eingeblendet, um Sie daran zu erinnern, dass Sie immer noch die Implementierung schreiben müssen. Eine violette Wellenlinie wird in einem freigegebenen Projekt eingeblendet, wenn ein Fehler im Code vorliegt, der gerade nicht aktiv ist, z. B. wenn Sie im Windows-Kontext arbeiten, aber etwas eingeben, das in einem Android-Kontext einen Fehler auslösen würde. Eine rote Wellenlinie weist auf einen Compilerfehler oder eine Warnung im aktiven Code hin, den bzw. die Sie behandeln müssen.  
@@ -80,7 +80,7 @@ In Visual Studio 2015 steht IntelliSense für einzelne Codedateien sowie für Da
   
  Hier ist eine OpenGLES-Anwendung, die zum Erstellen für Android und iOS konfiguriert ist. Die Abbildung veranschaulicht den bearbeiteten freigegebenen Code. In der ersten Abbildung stellt Android das aktive Projekt dar:  
   
- ![Das Android-Projekt ist das aktive Projekt.](~/ide/media/intellisensecppcrossplatform.png "IntelliSenseCppCrossPlatform")  
+ ![Das Android-Projekt ist das aktive Projekt.](../ide/media/intellisensecppcrossplatform.png "IntelliSenseCppCrossPlatform")  
   
  Beachten Sie Folgendes:  
   
@@ -92,7 +92,7 @@ In Visual Studio 2015 steht IntelliSense für einzelne Codedateien sowie für Da
   
  Ändern Sie nun das aktive Projekt in iOS.StaticLibrary, und achten Sie auf die Änderungen an den Wellenlinien.  
   
- ![iOS ist als aktives Projekt ausgewählt.](~/ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")  
+ ![iOS ist als aktives Projekt ausgewählt.](../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")  
   
  Beachten Sie Folgendes:  
   
