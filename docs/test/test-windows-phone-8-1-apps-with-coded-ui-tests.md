@@ -31,7 +31,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 01b31305ba4ed3706e6368a2b8d9963e524c9c1a
 ms.contentlocale: de-de
-ms.lasthandoff: 09/06/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Testen von Windows UWP- und 8.1 -Phone-Apps mit Tests der programmierten UI

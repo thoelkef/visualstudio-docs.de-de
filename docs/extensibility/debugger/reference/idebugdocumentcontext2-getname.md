@@ -31,48 +31,48 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 4757514b39149953ebd45beeb9d57a48de2f8ab8
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 5d0edefb96d481de2dc7166f78767c2154f0d160
 ms.contentlocale: de-de
-ms.lasthandoff: 08/23/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="idebugdocumentcontext2getname"></a>IDebugDocumentContext2::GetName
-Gets the displayable name of the document that contains this document context.  
+Ruft den angezeigten Namen des Dokuments, das Dokumentenkontext dieses enthält.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetName(   
    GETNAME_TYPE gnType,  
    BSTR*        pbstrFileName  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetName(   
    enum_GETNAME_TYPE  gnType,  
    out string         pbstrFileName  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  `gnType`  
- [in] A value from the [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) enumeration that specifies the type of name to return.  
+ [in] Ein Wert aus der [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) -Enumeration, der den Typ des zurückzugebenden Namen angibt.  
   
  `pbstrFileName`  
- [out] Returns the name of the file.  
+ [out] Gibt den Namen der Datei zurück.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Remarks  
- This method typically forwards the call to the [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md) method, unless the document context is written to store the document name itself (as the Example show).  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode in der Regel leitet den Aufruf der [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md) -Methode, es sei denn, der Dokumentenkontext geschrieben wird, um den Namen des Dokuments selbst (wie im Beispiel) zu speichern.  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a simple `CDebugContext` object that exposes the [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) interface.  
+## <a name="example"></a>Beispiel  
+ Im folgende Beispiel wird gezeigt, wie diese Methode für eine einfache implementiert `CDebugContext` -Objekt, das macht die [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) Schnittstelle.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugContext::GetName(GETNAME_TYPE gnType, BSTR* pbstrFileName)    
 {    
    HRESULT hr;    
@@ -109,6 +109,6 @@ HRESULT CDebugContext::GetName(GETNAME_TYPE gnType, BSTR* pbstrFileName)
 }    
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
  [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)

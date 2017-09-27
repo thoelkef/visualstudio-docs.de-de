@@ -1,7 +1,7 @@
 ---
 title: Optionen, Text-Editor, C/C++, Experimentell | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 08/02/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -12,8 +12,8 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C\C++.Experimental
 ms.assetid: b9e9dda2-350c-460d-b368-37d6c5342eee
 caps.latest.revision: 10
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -30,11 +30,13 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 77c4408fcd93a776468cf5fb23b3807a2b8d594d
+ms.technology:
+- vs-ide-general
+ms.translationtype: HT
+ms.sourcegitcommit: ea1e787c1d509123a650cf2bd20e5fa8bffd5b4e
+ms.openlocfilehash: faa37f88995f232f1198d3738ac5fba99d2970bd
 ms.contentlocale: de-de
-ms.lasthandoff: 05/24/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="options-text-editor-cc-experimental"></a>Optionen, Text-Editor, C/C++, Experimentell
@@ -48,9 +50,10 @@ Wenn Sie diese Optionen ändern, können Sie beim Programmieren in C oder C++ da
 >  Auf Ihrem Computer werden möglicherweise andere Namen oder Speicherorte für die Benutzeroberflächenelemente von Visual Studio angezeigt als die in den folgenden Anweisungen aufgeführten. Diese Elemente sind von der jeweiligen Visual Studio-Version und den verwendeten Einstellungen abhängig. Weitere Informationen finden Sie unter [Personalisieren der Visual Studio-IDE](../../ide/personalizing-the-visual-studio-ide.md)  
   
 ## <a name="enable-predictive-intellisense"></a>Predictive IntelliSense aktivieren
-Predictive IntelliSense beschränkt die Anzahl von angezeigten Ergebnissen in der Dropdownliste in IntelliSense, sodass nur für Ihren Kontext relevante Ergebnisse angezeigt werden. Wenn Sie <code>int x =</code> eingeben und das Dropdownmenü in IntelliSense aufrufen, werden Ihnen nur ganze Zahlen oder Funktionen, die ganze Zahlen zurückgeben, angezeigt. Standardmäßig ist Predictive IntelliSense deaktiviert.
+Predictive IntelliSense beschränkt die Anzahl von angezeigten Ergebnissen in der Dropdownliste in IntelliSense, sodass nur für Ihren Kontext relevante Ergebnisse angezeigt werden. Wenn Sie z.B. <code>int x =</code> eingeben und das Dropdownmenü in IntelliSense aufrufen, werden Ihnen nur Integer oder Funktionen angezeigt, die Integer zurückgeben. Standardmäßig ist Predictive IntelliSense deaktiviert.
 
-## <a name="enable-faster-project-load"></a>„Schnelleres Laden von Projekten“ aktivieren
+## <a name="enable-faster-project-load"></a>„Schnelleres Laden von Projekten“ aktivieren 
+**Visual Studio 2017 15,3 und höher**: Diese Funktion heißt jetzt **Zwischenspeichern des Projekts aktivieren** und wurde auf die Eigenschaftenseite [VC++-Projekteinstellungen](vcpp-project-settings-projects-and-solutions-options-dialog-box.md) verschoben.
 Durch diese Option kann Visual Studio Projektdaten zwischenspeichern, damit es, wenn Sie die Projekte das nächste Mal öffnen, die zwischengespeicherten Daten abrufen kann, statt sie erneut aus den Projektdateien berechnen zu müssen. Durch zwischengespeicherte Daten kann die Projektladezeit deutlich verringert werden.  
 
 ## <a name="additional-features-in-the-visual-studio-gallery"></a>Zusätzliche Features in der Visual Studio Gallery

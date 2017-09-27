@@ -31,38 +31,38 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: aa6cda0d1dec04b46b6cf91012e30604a57201ba
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: cfee19f77e2839be9e4ad51ce26e92975d2295e3
 ms.contentlocale: de-de
-ms.lasthandoff: 08/23/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="ienumdebugmodules2clone"></a>IEnumDebugModules2::Clone
-Returns a copy of the current enumeration as a separate object.  
+Gibt eine Kopie der aktuellen Enumeration als separates Objekt zurück.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Clone(  
    IEnumDebugModules2** ppEnum  
 );  
 ```  
   
-```cs  
+```csharp  
 int Clone(  
    out IEnumDebugModules2 ppEnum  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  `ppEnum`  
- [out] Returns a copy of this enumeration as a separate object.  
+ [out] Gibt eine Kopie dieser Enumeration als separates Objekt zurück.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="remarks"></a>Remarks  
- The copy of the enumeration has the same state as the original at the time this method is called. However, the copy's and the original's states are separate and can be changed individually.  
+## <a name="remarks"></a>Hinweise  
+ Die Kopie der Enumeration enthält denselben Status an wie die ursprüngliche, zu dem Zeitpunkt, die diese Methode aufgerufen wird. Allerdings wird der Kopie und den ursprünglichen Zustand getrennt sind und können einzeln geändert werden.  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

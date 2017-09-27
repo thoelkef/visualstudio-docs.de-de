@@ -15,10 +15,10 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 6dbf4f2bfabbfe5dc780eb4e973c6fae7ca6b1d9
+ms.sourcegitcommit: d0a5b44962b0cfbe549453b1760a38237de7e6ab
+ms.openlocfilehash: 420af3d78a514a7e6b6ded186c204ad8301c4c85
 ms.contentlocale: de-de
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 
@@ -44,7 +44,7 @@ Die Python-Unterstützung in Visual Studio umfasst eine Reihe von [Projektvorlag
 1. Wählen Sie die Vorlage „Python-Anwendung“, geben Sie einen Ordner für das Projekt an, und wählen Sie **OK**. (Wenn Sie sofort ein lokales Repository für das Projekt erstellen möchten, wählen Sie auch die Option **Zur Quellcodeverwaltung hinzufügen**).
 
     > [!Tip]
-    > Mit der Vorlage „From exiting Python Code“ können Sie schnell aus einem Ordner ein Visual Studio-Projekt erstellen, das bereits Python-Code enthält, anstatt ein neues leeres Projekt zu erstellen und vorhandenen Code dahin zu importieren.
+    > Mit der Vorlage „Aus vorhandenem Python-Code“ können Sie schnell aus einem Ordner ein Visual Studio-Projekt erstellen, das bereits Python-Code enthält, anstatt ein neues leeres Projekt zu erstellen und vorhandenen Code in dieses zu importieren.
 
 1. Nach einigen Augenblicken wird das Projekt im Projektmappen-Explorer-Fenster von Visual Studio geöffnet. Hier können Sie die Dateien und Ordner in Ihrem Projekt durchsuchen sowie Umgebungen verwalten.
 

@@ -1,7 +1,7 @@
 ---
 title: "VC++-Projekteinstellungen, Projekte und Projektmappen, Dialogfeld „Optionen“ | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 08/02/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -20,8 +20,8 @@ helpviewer_keywords:
 - BuildLog.htm
 ms.assetid: 56420efd-6a95-464e-b890-e2b38c48d66a
 caps.latest.revision: 15
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -38,14 +38,15 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: fbe834e4e8178a129f68cec1c4a78ffea3c9fd7c
-ms.lasthandoff: 04/25/2017
+ms.translationtype: HT
+ms.sourcegitcommit: ea1e787c1d509123a650cf2bd20e5fa8bffd5b4e
+ms.openlocfilehash: 2581fdecd9a26c8d4500f83b9abd0e1f967e2ee6
+ms.contentlocale: de-de
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>VC++-Projekteinstellungen, Projekte und Projektmappen, Dialogfeld "Optionen"
-In diesem Dialogfeld können Sie [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]-Projekteinstellungen definieren, die für die Buildprotokollierung sowie unterstützende Dateitypen relevant sind.  
+In diesem Dialogfeld können Sie [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]-Build- und Projekteinstellungen definieren, die für die Protokollierung, die Leistung sowie unterstützende Dateitypen relevant sind.  
   
 ### <a name="to-access-this-dialog-box"></a>So öffnen Sie das Dialogfeld  
   
@@ -53,46 +54,58 @@ In diesem Dialogfeld können Sie [!INCLUDE[vcprvc](../../code-quality/includes/v
   
 2.  Wählen Sie **Projekte und Projektmappen** aus, und wählen Sie dann **VC++-Projekteinstellungen** aus.  
   
-## <a name="build-customization-search-path"></a>Suchpfad für die Buildanpassung  
- Gibt die Liste der Verzeichnisse mit RULES-Dateien an, die Sie bei der Definition von Buildregeln für Projekte unterstützen.  
-  
+ 
 ## <a name="build-logging"></a>Buildprotokollierung  
  **Ja**  
- Aktiviert die Generierung der Buildprotokolldatei. Durch diese Option wird die Datei "BuildLog.htm" generiert, die sich im Zwischendateiverzeichnis des Projekts befindet. Durch jedes neue Build wird die vorherige Datei "BuildLog.htm" überschrieben.  
+  Aktiviert die Generierung der Buildprotokolldatei. Durch diese Option wird die Datei "BuildLog.htm" generiert, die sich im Zwischendateiverzeichnis des Projekts befindet. Durch jedes neue Build wird die vorherige Datei "BuildLog.htm" überschrieben.  
   
  **No**  
- Deaktiviert die Generierung der Buildprotokolldatei.  
-  
-## <a name="build-timing"></a>Buildzeitgeber  
- **Ja**  
- Aktiviert die Zeitnahme für das Build. Wenn diese Option ausgewählt ist, wird die Dauer der Builderstellung im Ausgabefenster ausgegeben. Weitere Informationen finden Sie im [Ausgabefenster](../../ide/reference/output-window.md).  
-  
- **No**  
- Deaktiviert die Zeitnahme für das Build.  
-  
-## <a name="extensions-to-hide"></a>Auszublendende Erweiterungen  
- Gibt die Dateierweiterungen der Dateien an, die nicht im **Projektmappen-Explorer** angezeigt werden, wenn die Option **Alle Dateien anzeigen** aktiviert ist.  
-  
-## <a name="extensions-to-include"></a>Einzuschließende Erweiterungen  
- Gibt die Dateinamenerweiterungen der Dateien an, die in das Projekt portiert werden können.  
-  
-## <a name="maximum-concurrent-c-compilations"></a>Maximale Anzahl gleichzeitiger C++-Kompilierungen  
- Gibt die maximale Anzahl von CPU-Kernen an, die für parallele C++-Kompilierungen verwendet werden können.  
-  
+  Deaktiviert die Generierung der Buildprotokolldatei.  
+
 ## <a name="show-environment-in-log"></a>Umgebung in Protokoll anzeigen  
  **Ja**  
  Listet Umgebungsvariablen in der Buildprotokolldatei auf. Diese Option gibt an, dass während der Erstellung von [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]-Projekten alle Umgebungsvariablen als Echo in die Buildprotokolldatei aufgenommen werden.  
   
  **No**  
  Schließt Umgebungsvariablen aus der Buildprotokolldatei aus.  
+
+## <a name="build-timing"></a>Buildzeitgeber  
+ **Ja**  
+  Aktiviert die Zeitnahme für das Build. Wenn diese Option ausgewählt ist, wird die Dauer der Builderstellung im Ausgabefenster ausgegeben. Weitere Informationen finden Sie im [Ausgabefenster](../../ide/reference/output-window.md).  
   
-## <a name="solution-explorer-mode"></a>Projektmappen-Explorer-Modus  
+ **No**  
+ Deaktiviert die Zeitnahme für das Build.  
+   
+## <a name="maximum-concurrent-c-compilations"></a>Maximale Anzahl gleichzeitiger C++-Kompilierungen  
+  Gibt die maximale Anzahl von CPU-Kernen an, die für parallele C++-Kompilierungen verwendet werden können.  
+  
+## <a name="extensions-to-include"></a>Einzuschließende Erweiterungen  
+  Gibt die Dateinamenerweiterungen der Dateien an, die in das Projekt portiert werden können.  
+
+## <a name="extensions-to-hide"></a>Auszublendende Erweiterungen  
+  Gibt die Dateierweiterungen der Dateien an, die nicht im **Projektmappen-Explorer** angezeigt werden, wenn die Option **Alle Dateien anzeigen** aktiviert ist.  
+
+ ## <a name="build-customization-search-path"></a>Suchpfad für die Buildanpassung  
+  Gibt die Liste der Verzeichnisse mit RULES-Dateien an, die Sie bei der Definition von Buildregeln für Projekte unterstützen.  
+
+# <a name="solution-explorer-mode"></a>Projektmappen-Explorer-Modus  
  **Nur Dateien im Projekt anzeigen**  
- Konfiguriert den **Projektmappen-Explorer** so, dass nur Dateien im Projekt angezeigt werden.  
+  Konfiguriert den **Projektmappen-Explorer** so, dass nur Dateien im Projekt angezeigt werden.  
   
  **Alle Dateien anzeigen**  
- Konfiguriert den **Projektmappen-Explorer** so, dass Dateien im Projekt und Dateien auf dem Datenträger im Projektordner angezeigt werden.  
+  Konfiguriert den **Projektmappen-Explorer** so, dass Dateien im Projekt und Dateien auf dem Datenträger im Projektordner angezeigt werden.  
+
+
+## <a name="enable-project-caching"></a>Aktivieren der Projektzwischenspeicherung
+**Ja** Ermöglicht das Zwischenspeichern von Projektdaten in Visual Studio, damit die zwischengespeicherten Daten beim nächsten Öffnen des Projekts abrufen werden können, und Sie sie nicht erneut aus den Projektdateien berechnen müssen. Durch zwischengespeicherte Daten kann die Projektladezeit deutlich verringert werden.   
+
+**Nein** Verwenden Sie keine zwischengespeicherten Projektdaten. Analysieren Sie die Projektdateien jedes Mal, wenn das Projekt geladen wird.
+
+
   
+
+  
+#
 ## <a name="see-also"></a>Siehe auch  
  [Erstellen von C/C++-Programmen](/cpp/build/building-c-cpp-programs)   
  [Referenz zur C/C++-Erstellung](/cpp/build/reference/c-cpp-building-reference)

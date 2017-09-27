@@ -23,7 +23,7 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 5bfeb8ea94b457114d7ba6ab74b783972e64350c
 ms.contentlocale: de-de
-ms.lasthandoff: 09/06/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Exemplarische Vorgehensweise: Verbinden eines Hosts mit einem generierten Direktivenprozessor
@@ -96,7 +96,7 @@ Sie können einen eigenen Host schreiben, der Textvorlagen verarbeitet. Ein einf
   
 1.  Öffnen Sie die Projektmappe "CustomHost".  
   
-2.  Auf der **Projekt** Menü klicken Sie auf **Verweis hinzufügen**.  
+2.  Klicken Sie im Menü **Projekt** auf **Verweis hinzufügen** .  
   
      Die **Verweis hinzufügen** Dialogfeld wird geöffnet, mit der **.NET** Registerkarte angezeigt.  
   

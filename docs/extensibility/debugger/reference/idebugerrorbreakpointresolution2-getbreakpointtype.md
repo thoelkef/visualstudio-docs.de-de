@@ -1,54 +1,71 @@
 ---
-title: "IDebugErrorBreakpointResolution2::GetBreakpointType | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugErrorBreakpointResolution2::GetBreakpointType"
-helpviewer_keywords: 
-  - "IDebugErrorBreakpointResolution2::GetBreakpointType"
+title: IDebugErrorBreakpointResolution2::GetBreakpointType | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugErrorBreakpointResolution2::GetBreakpointType
+helpviewer_keywords:
+- IDebugErrorBreakpointResolution2::GetBreakpointType
 ms.assetid: 0bdb1152-4752-4464-ae7c-6d666dc293b7
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugErrorBreakpointResolution2::GetBreakpointType
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: ca89ded5a6d66f000525941671ffeee8365961d8
+ms.contentlocale: de-de
+ms.lasthandoff: 09/26/2017
 
-Ruft den Typ des Haltepunkts ab.  
+---
+# <a name="idebugerrorbreakpointresolution2getbreakpointtype"></a>IDebugErrorBreakpointResolution2::GetBreakpointType
+Ruft den Haltepunkt ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetBreakpointType(   
-   BP_TYPE* pBPType  
+```cpp  
+HRESULT GetBreakpointType(   
+   BP_TYPE* pBPType  
 );  
 ```  
   
-```c#  
-int GetBreakpointType(   
-   out enum_BP_TYPE pBPType  
+```csharp  
+int GetBreakpointType(   
+   out enum_BP_TYPE pBPType  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pBPType`  
- \[out\]  Gibt einen Wert aus der [BP\_TYPE](../../../extensibility/debugger/reference/bp-type.md)\-Enumeration zurück, die den Typ des Haltepunkts beschreibt.  
+ [out] Gibt einen Wert aus der [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) -Enumeration, der den Typ des Haltepunkts beschreibt.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Diese Methode gibt den Typ des Haltepunkts zurück, der fehlgeschlagenen binden, ein Fehler breakpoint \- Ereignis so benötigend.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode gibt den Typ des Breakpoints, den Fehler beim Binden, muss ein Fehlerereignis der Haltepunkt.  
   
-## Beispiel  
- Im folgenden Beispiel wird veranschaulicht, wie diese Methode für ein einfaches `CDebugErrorBreakpointResolution`\-Objekt implementiert, das die [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)\-Schnittstelle verfügbar macht.  
+## <a name="example"></a>Beispiel  
+ Im folgende Beispiel wird gezeigt, wie diese Methode für eine einfache implementiert `CDebugErrorBreakpointResolution` -Objekt, das macht die [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) Schnittstelle.  
   
 ```  
 HRESULT CDebugErrorBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)    
@@ -81,6 +98,6 @@ HRESULT CDebugErrorBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)
 }    
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)   
- [BP\_TYPE](../../../extensibility/debugger/reference/bp-type.md)
+ [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)

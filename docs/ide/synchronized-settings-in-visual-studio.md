@@ -12,8 +12,8 @@ f1_keywords:
 - VS.ToolsOptionsPages.Environment.RoamingSettings
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
 caps.latest.revision: 10
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - cs-cz
@@ -29,47 +29,62 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 6bf0181e49d8390eed8f750d16b706780d71f08a
+ms.translationtype: HT
+ms.sourcegitcommit: ea1e787c1d509123a650cf2bd20e5fa8bffd5b4e
+ms.openlocfilehash: 1882e191caa027e7a6e2b52c766135b240b309a1
 ms.contentlocale: de-de
-ms.lasthandoff: 05/24/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="synchronize-your-settings-in-visual-studio"></a>Synchronisieren der Einstellungen in Visual Studio
+
 Wenn Sie sich auf mehreren Computern mit demselben Personalisierungskonto bei Visual Studio anmelden, werden Ihre Einstellungen standardmäßig auf allen Computern synchronisiert.
 
-## <a name="synchronized-settings"></a>Synchronisierte Einstellungen  
- Standardmäßig werden die folgenden Einstellungen synchronisiert:  
+## <a name="synchronized-settings"></a>Synchronisierte Einstellungen
 
--   Entwicklungseinstellungen (Sie müssen eine Reihe von Einstellungen auswählen, wenn Sie Visual Studio zum ersten Mal ausführen; die Auswahl kann jedoch jederzeit geändert werden. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).)  
+Standardmäßig werden die folgenden Einstellungen synchronisiert:
 
--   Im Folgenden finden Sie die Optionen auf den Seiten **Tools &#124; Optionen**:  
+- Entwicklungseinstellungen (Sie müssen eine Reihe von Einstellungen auswählen, wenn Sie Visual Studio zum ersten Mal ausführen; die Auswahl kann jedoch jederzeit geändert werden. Weitere Informationen finden Sie unter [Personalisieren von Visual Studio-IDE](../ide/personalizing-the-visual-studio-ide.md).)
 
-    -   **Design** und Menüleisten-Schreibweiseneinstellungen auf der Optionsseite **Umgebung** > **Allgemein**  
+- Im Folgenden finden Sie die Optionen auf den Seiten **Tools &#124; Optionen**:
 
-    -   Alle Einstellungen auf der Optionsseite **Umgebung** > **Schriftarten und Farben**  
+    - **Design** und Menüleisten-Schreibweiseneinstellungen auf der Optionsseite **Umgebung** > **Allgemein**
 
-    -   Alle Tastenkombinationen auf der Optionsseite **Umgebung** > **Tastatur**  
+    - Alle Einstellungen auf der Optionsseite **Umgebung** > **Schriftarten und Farben**
 
-    -   Alle Einstellungen auf der Optionsseite **Umgebung, Registerkarten und Fenster**  
+    - Alle Tastenkombinationen auf der Optionsseite **Umgebung** > **Tastatur**
 
-    -   Alle Einstellungen auf der Optionsseite **Umgebung** > **Start**  
+    - Alle Einstellungen auf der Optionsseite **Umgebung, Registerkarten und Fenster**
 
-    -   Alle Einstellungen auf den Optionsseiten des **Text-Editors**  
+    - Alle Einstellungen auf der Optionsseite **Umgebung** > **Start**
 
--   Alle Einstellungen auf den Optionsseiten für den XAML-Designer  
+    - Alle Einstellungen auf den Optionsseiten des **Text-Editors**
 
--   Benutzerdefinierte Befehlsaliase. Weitere Informationen zur Definition von Befehlsaliasen finden Sie unter [Visual Studio-Befehlsaliase](../ide/reference/visual-studio-command-aliases.md).  
+    - Alle Einstellungen auf den Optionsseiten für den **XAML-Designer**
 
--   Benutzerdefinierte Fensterlayouts auf der Seite **Fenster &#124; Fensterlayouts verwalten**  
+- Benutzerdefinierte Befehlsaliase. Weitere Informationen zur Definition von Befehlsaliasen finden Sie unter [Visual Studio-Befehlsaliase](../ide/reference/visual-studio-command-aliases.md).
 
-## <a name="turn-off-synchronized-settings-on-a-particular-computer"></a>Deaktivieren der synchronisierten Einstellungen auf einem bestimmten Computer  
- Die synchronisierten Einstellungen für Visual Studio sind standardmäßig aktiviert. Sie können die synchronisierten Einstellungen auf einem Computer deaktivieren, indem Sie zur Seite **Tools &#124; Optionen &#124; Umgebung &#124; Synchronisierte Einstellungen** wechseln und das Kontrollkästchen deaktivieren.  Angenommen, Sie möchten, dass die Einstellungen von Visual Studio auf Computer A nicht synchronisiert werden. So werden alle auf Computer A vorgenommenen Änderungen weder auf Computer B noch auf Computer C angezeigt. Computer B und Computer C nehmen weiterhin eine Synchronisierung miteinander vor, jedoch nicht mit Computer A.  
+- Benutzerdefinierte Fensterlayouts auf der Seite **Fenster &#124; Fensterlayouts verwalten**
 
-## <a name="synchronize-settings-across-visual-studio-family-products-and-editions"></a>Synchronisieren von Einstellungen mit allen Produkten und Editionen der Visual Studio-Familie  
- Einstellungen können mit allen Editionen von Visual Studio synchronisiert werden, einschließlich der Edition Community. Einstellungen werden auch mit allen Produkten der Visual Studio-Familie synchronisiert. Jedes dieser Familienprodukte weist jedoch möglicherweise eigene Einstellungen auf, die nicht für Visual Studio freigegeben werden. Beispielsweise werden für ein Produkt spezifische Einstellungen auf Computer A für ein anderes Produkt auf Computer B freigegeben, jedoch nicht für Visual Studio auf Computer A oder B.  
+## <a name="turn-off-synchronized-settings-on-a-particular-computer"></a>Deaktivieren der synchronisierten Einstellungen auf einem bestimmten Computer
 
-## <a name="see-also"></a>Siehe auch  
- [Personalisieren der IDE](../ide/personalizing-the-visual-studio-ide.md)
+Die synchronisierten Einstellungen für Visual Studio sind standardmäßig aktiviert. Sie können die synchronisierten Einstellungen auf einem Computer deaktivieren, indem Sie zur Seite **Tools &#124; Optionen &#124; Umgebung &#124; Synchronisierte Einstellungen** wechseln und das Kontrollkästchen deaktivieren.  Angenommen, Sie möchten, dass die Einstellungen von Visual Studio auf Computer A nicht synchronisiert werden. So werden alle auf Computer A vorgenommenen Änderungen weder auf Computer B noch auf Computer C angezeigt. Computer B und Computer C nehmen weiterhin eine Synchronisierung miteinander vor, jedoch nicht mit Computer A.
+
+## <a name="synchronize-settings-across-visual-studio-family-products-and-editions"></a>Synchronisieren von Einstellungen mit allen Produkten und Editionen der Visual Studio-Familie
+
+Einstellungen können mit allen Editionen von Visual Studio synchronisiert werden, einschließlich der Edition Community. Einstellungen werden auch mit allen Produkten der Visual Studio-Familie synchronisiert. Jedes dieser Familienprodukte weist jedoch möglicherweise eigene Einstellungen auf, die nicht für Visual Studio freigegeben werden. Beispielsweise werden für ein Produkt spezifische Einstellungen auf Computer A für ein anderes Produkt auf Computer B freigegeben, jedoch nicht für Visual Studio auf Computer A oder B.
+
+## <a name="side-by-side-synchronized-settings"></a>Parallel synchronisierte Einstellungen
+
+In Visual Studio 15.3 und höher teilen wir bestimmte Einstellungen wie das Layout des Toolfensters nicht mehr zwischen verschiedenen Parallelinstallationen von Visual Studio 2017, indem der Speicherort der Datei `CurrentSettings.vssettings` in `%userprofile%\Documents\Visual Studio 2017\Settings` in einen installationsspezifischen Ordner geändert wird, der `%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx\Settings` ähnelt.
+
+**HINWEIS:** Um die neuen installationsspezifischen Einstellungen zu nutzen, müssen Sie eine neuen Installation durchführen. Wenn ein Upgrade einer vorhandenen Installation von Visual Studio 2017 auf das aktuellste Update durchgeführt wird, verwendet es den vorhandenen freigegebenen Speicherort. Wenn Sie derzeit über Parallelinstallationen von Visual Studio 2017 verfügen und sich dafür entscheiden, ein Upgrade durchzuführen, und möchten, dass der neue installationsspezifische Speicherort verwendet wird, führen Sie folgende Schritte aus:
+
+1. Verwenden Sie nach dem Upgrade den Assistenten zum Importieren/Exportieren von Einstellungen, um alle unsere vorhandenen Einstellungen in einen Speicherort außerhalb des Ordners `%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx` zu exportieren.
+2. Öffnen Sie die **Entwicklereingabeaufforderung für Visual Studio 2017** der upgegradeten Visual Studio-Installation, und führen Sie darüber `devenv /resetuserdata` aus.
+3. Starten Sie Visual Studio, und importieren Sie die gespeicherten Einstellungen aus der exportierten Einstellungsdatei.
+
+## <a name="see-also"></a>Siehe auch
+
+[Personalisieren der IDE](../ide/personalizing-the-visual-studio-ide.md)
 

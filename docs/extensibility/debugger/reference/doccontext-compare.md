@@ -1,74 +1,91 @@
 ---
-title: "DOCCONTEXT_COMPARE | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DOCCONTEXT_COMPARE"
-helpviewer_keywords: 
-  - "DOCCONTEXT_COMPARE-enumeration"
+title: DOCCONTEXT_COMPARE | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- DOCCONTEXT_COMPARE
+helpviewer_keywords:
+- DOCCONTEXT_COMPARE enumeration
 ms.assetid: ed947c34-b07e-4b69-8381-b6e7cb842862
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# DOCCONTEXT_COMPARE
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 77c810bb6e4791fbc0c3cf787f340a8d996ce037
+ms.contentlocale: de-de
+ms.lasthandoff: 09/26/2017
 
-Gibt die Kriterien zum Vergleichen von zwei Dokumenten kontexten an.  
+---
+# <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
+Gibt die Kriterien zum Vergleichen von zwei Dokument Kontexten.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-enum enum_DOCCONTEXT_COMPARE {   
-   DOCCONTEXT_EQUAL         = 0x0001,  
-   DOCCONTEXT_LESS_THAN     = 0x0002,  
-   DOCCONTEXT_GREATER_THAN  = 0x0003,  
-   DOCCONTEXT_SAME_DOCUMENT = 0x0004  
+```cpp  
+enum enum_DOCCONTEXT_COMPARE {   
+   DOCCONTEXT_EQUAL         = 0x0001,  
+   DOCCONTEXT_LESS_THAN     = 0x0002,  
+   DOCCONTEXT_GREATER_THAN  = 0x0003,  
+   DOCCONTEXT_SAME_DOCUMENT = 0x0004  
 };  
 typedef DWORD DOCCONTEXT_COMPARE;  
 ```  
   
-```c#  
-enum enum_DOCCONTEXT_COMPARE {   
-   DOCCONTEXT_EQUAL         = 0x0001,  
-   DOCCONTEXT_LESS_THAN     = 0x0002,  
-   DOCCONTEXT_GREATER_THAN  = 0x0003,  
-   DOCCONTEXT_SAME_DOCUMENT = 0x0004  
+```csharp  
+enum enum_DOCCONTEXT_COMPARE {   
+   DOCCONTEXT_EQUAL         = 0x0001,  
+   DOCCONTEXT_LESS_THAN     = 0x0002,  
+   DOCCONTEXT_GREATER_THAN  = 0x0003,  
+   DOCCONTEXT_SAME_DOCUMENT = 0x0004  
 };  
 ```  
   
-## Mitglieder  
- DOCCONTEXT\_EQUAL  
- Suchen Sie den ersten Dokumentenkontext in der Liste, die gleich dem Ziel Dokumente Elementkontext vorhanden ist.  
+## <a name="members"></a>Member  
+ DOCCONTEXT_EQUAL  
+ Finden Sie den ersten Dokumentenkontext, in der Liste, die das Dokument Zielkontext gleich ist.  
   
- DOCCONTEXT\_LESS\_THAN  
- Suchen Sie den ersten Dokumentenkontext in der Liste, die kleiner ist als der Kontext auf Dokumente.  
+ DOCCONTEXT_LESS_THAN  
+ Finden Sie den ersten Dokumentenkontext, in der Liste, die kleiner als der Zielkontext Dokument ist.  
   
- DOCCONTEXT\_GREATER\_THAN  
- Suchen Sie den ersten Dokumentenkontext in der Liste, die größer ist als der Kontext auf Dokumente.  
+ DOCCONTEXT_GREATER_THAN  
+ Finden Sie den ersten Dokumentenkontext, in der Liste, die größer als die Zielkontext Dokument ist.  
   
- DOCCONTEXT\_SAME\_DOCUMENT  
- Suchen Sie den ersten Dokumentenkontext in der Liste, die im selben Dokument wie das Ziel Dokumente Elementkontext vorhanden ist.  
+ DOCCONTEXT_SAME_DOCUMENT  
+ Finden Sie den ersten Dokumentenkontext, in der Liste, die im selben Dokument wie das Dokument Zielkontext ist.  
   
-## Hinweise  
- Übergabe als Argument an die [Vergleichen](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)\-Methode.  
+## <a name="remarks"></a>Hinweise  
+ Übergeben als Argument an die [vergleichen](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md) Methode.  
   
- Diese Werte werden verwendet, um Kriterien eines Vergleichs zum Suchen des ersten kontexts Dokumente in einer Liste anzugeben.  Ein Dokumentenkontext ist eine Liste von Dokumenten kontexten angegeben, um sich durch die gegen `IDebugDocumentContext2::Compare`\-Methode verglichen werden soll.  Der erste Dokumentenkontext in der Liste, für die der Vergleichsoperator `true` ist, wird anschließend zurückgegeben.  
+ Diese Werte werden verwendet, eine Vergleichskriterien für die Suche nach den ersten Dokumentenkontext in einer Liste angeben. Ein Dokumentenkontext empfängt eine Liste von Kontexten Dokument selbst gegen durch Vergleichen der `IDebugDocumentContext2::Compare` Methode. Die ersten Dokumentenkontext in der Liste aus, für die der Vergleichsoperator ist `true` wird zurückgegeben.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Vergleichen](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)
+ [Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)

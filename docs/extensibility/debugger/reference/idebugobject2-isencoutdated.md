@@ -1,51 +1,68 @@
 ---
-title: "IDebugObject2::IsEncOutdated | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugObject2::IsEncOutdated"
-helpviewer_keywords: 
-  - "IDebugObject2::IsEncOutdated-Methode"
+title: IDebugObject2::IsEncOutdated | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugObject2::IsEncOutdated
+helpviewer_keywords:
+- IDebugObject2::IsEncOutdated method
 ms.assetid: d3a8c02d-895b-478c-9957-d663130f308e
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# IDebugObject2::IsEncOutdated
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 7161f3e608390e5a513faf86b2e0b7ed2459deed
+ms.contentlocale: de-de
+ms.lasthandoff: 09/26/2017
 
-Diese Methode bestimmt, ob die Bearbeitung und setzt Status dieses Objekts fort, oder des übergeordneten Containers ist veraltet.  Ein benutzerdefinierter Ausdrucksauswertung diese Methode nicht implementiert und gibt immer `E_NOTIMPL`zurück.  
+---
+# <a name="idebugobject2isencoutdated"></a>IDebugObject2::IsEncOutdated
+Diese Methode bestimmt, ob die bearbeiten und Fortfahren Status dieses Objekts "oder" des übergeordneten Containers veraltet ist. Diese Methode und gibt immer eine benutzerdefinierte ausdrucksauswertung nicht implementiert `E_NOTIMPL`.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT IsEncOutdated(  
-   BOOL* pfEncOutdated  
+HRESULT IsEncOutdated(  
+   BOOL* pfEncOutdated  
 );  
 ```  
   
-```c#  
-int IsEncOutdated(  
-   out int pfEncOutdated  
+```csharp  
+int IsEncOutdated(  
+   out int pfEncOutdated  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pfEncOutdated`  
- \[out\]  Ein Wert ungleich 0 \(`TRUE`\), wenn das Bearbeiten und Fortfahren Zustand ist veraltet,`FALSE`fort \(null\), wenn dies nicht der Fall ist.  
+ [out] Ungleich Null (`TRUE`) ist der Status bearbeiten und Fortfahren nicht mehr aktuell, 0 (null) (`FALSE`) wird jedoch nicht.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
 > [!NOTE]
->  Ein benutzerdefinierter Ausdrucksauswertung sollte immer `E_NOTIMPL`zurückgeben.  
+>  Eine benutzerdefinierte ausdrucksauswertung sollte stets `E_NOTIMPL`.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

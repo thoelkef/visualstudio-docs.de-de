@@ -1,56 +1,73 @@
 ---
-title: "IDebugProviderProgramNode2::UnmarshalDebuggeeInterface | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProviderProgramNode2::UnmarshalDebuggeeInterface"
-helpviewer_keywords: 
-  - "IDebugProviderProgramNode2::UnmarshalDebuggeeInterface"
+title: IDebugProviderProgramNode2::UnmarshalDebuggeeInterface | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
+helpviewer_keywords:
+- IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
 ms.assetid: 2e4653c5-10f1-493c-9973-f31d266c5d48
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 1801f2df2dfff7667e8a9991892b3218dc3bb71a
+ms.contentlocale: de-de
+ms.lasthandoff: 09/26/2017
 
-Ruft eine angegebene Schnittstelle über Prozessgrenzen hinweg.  
+---
+# <a name="idebugproviderprogramnode2unmarshaldebuggeeinterface"></a>IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
+Ruft eine angegebene Schnittstelle über Prozessgrenzen hinweg ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT UnmarshalDebuggeeInterface(  
-   REFIID riid,  
-   void** ppvObject  
+HRESULT UnmarshalDebuggeeInterface(  
+   REFIID riid,  
+   void** ppvObject  
 );  
 ```  
   
-```c#  
-int UnmarshalDebuggeeInterface(  
-   ref Guid   riid,  
-   out IntPtr ppvObject  
+```csharp  
+int UnmarshalDebuggeeInterface(  
+   ref Guid   riid,  
+   out IntPtr ppvObject  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `riid`  
- \[in\]  GUID der Schnittstelle abzurufen.  
+ [in] Die GUID der Schnittstelle zum Abrufen.  
   
  `ppvObject`  
- \[out\]  Gibt das Objekt zurück, das die gewünschte Schnittstelle implementiert.  \[C\+\+\] kann es sich direkt auf die gewünschte Schnittstellentyp umgewandelt werden.  \[C\#\] Verwenden Sie die <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A>\-Methode, um die gewünschte Schnittstelle abzurufen.  
+ [out] Gibt das Objekt, das die gewünschte Schnittstelle implementieren. [C++] diese direkt in die gewünschte Schnittstellentyp umgewandelt werden kann. [C#] verwenden die <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> Methode, um die gewünschte Schnittstelle abzurufen.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Diese Methode wird verwendet, wenn das Debugmodul in den [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Prozessbereich ausgeführt wird und das Programm, das gedebuggt wird, in seinen eigenen Prozessbereich ausgeführt wird.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode wird verwendet, wenn die Debugging-Modul, in ausgeführt wird der [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Prozessbereich und das derzeit debuggte Programm im eigenen Prozessbereich ausgeführt wird.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugProviderProgramNode2](../../../extensibility/debugger/reference/idebugproviderprogramnode2.md)

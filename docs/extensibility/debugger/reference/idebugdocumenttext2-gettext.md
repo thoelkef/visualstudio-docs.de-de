@@ -31,18 +31,18 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: d961a2a873254aa94df8d6903bd16b03ef170325
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a7e950fbf8667ee85f992ab8406dfdd9d7442555
 ms.contentlocale: de-de
-ms.lasthandoff: 08/23/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
-Retrieves the text from the specified position in the document.  
+Ruft den Text aus der angegebenen Position im Dokument ab.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetText(   
    TEXT_POSITION pos,  
    ULONG         cMaxChars,  
@@ -51,7 +51,7 @@ HRESULT GetText(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetText(   
    eumn_TEXT_POSITION pos,  
    uint               cMaxChars,  
@@ -60,26 +60,26 @@ int GetText(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>Parameter  
  `pos`  
- [in] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure that indicates the location of the text to be retrieved.  
+ [in] Ein [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) -Struktur, die den Speicherort des Texts abgerufen werden sollen.  
   
  `cMaxChars`  
- [in] The maximum number of characters of the text to be retrieved.  
+ [in] Die maximale Anzahl von Zeichen des Texts abgerufen werden sollen.  
   
  `pText`  
- [in, out] A pointer to a buffer that is to be filled in with the desired text. This buffer must be able to contain at least `cMaxChars` number of wide characters.  
+ [in, out] Ein Zeiger auf einen Puffer, der mit den gewünschten Text ausgefüllt. Dieser Puffer muss in der Lage, mindestens enthalten `cMaxChars` Anzahl von Breitzeichen.  
   
  `pcNumChars`  
- [out] Returns the number of characters actually retrieved.  
+ [out] Gibt die Anzahl der tatsächlich abgerufenen Zeichen zurück.  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## <a name="example"></a>Example  
- This example shows how this method can be called from C#.  
+## <a name="example"></a>Beispiel  
+ Dieses Beispiel zeigt, wie diese Methode in c# aufgerufen werden kann.  
   
-```cs  
+```csharp  
 using System.Runtime.Interop.Services;  
 using Microsoft.VisualStudio;  
 using Microsoft.VisualStudio.Debugger.Interop;  
@@ -115,6 +115,6 @@ namespace Mynamespace
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)   
  [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

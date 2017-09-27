@@ -12,7 +12,6 @@
 
 # [Customizing the IDE (Anpassen der IDE)](customizing-the-ide.md)
 ## [Extending Visual Studio for Mac (Erweitern von Visual Studio für Mac)](extending-visual-studio-mac.md)
-### [Extending Visual Studio for Mac Walkthrough (Exemplarische Vorgehensweise: Erweitern von Visual Studio für Mac)](extending-visual-studio-mac-walkthrough.md)
 
 
 # [Projects and Solutions (Projekte und Projektmappen)](projects-and-solutions.md)
@@ -54,6 +53,8 @@
 ## [Unity Game Development (Spieleentwicklung mit Unity)](unity-tools.md)
 ### [Setup (Einrichtung)](setup-vsmac-tools-unity.md)
 ### [Using Unity Tools (Verwenden von Unity-Tools)](using-vsmac-tools-unity.md)
+
+# [Barrierefreiheit](accessibility.md)
 
 # [Problembehandlung](troubleshooting.md)
 ## [Report a Problem (Melden eines Problems)](report-a-problem.md)
