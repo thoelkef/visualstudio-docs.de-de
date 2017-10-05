@@ -7,10 +7,10 @@ ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 836c4995feb8f24214eac81cc50836863a6931da
+ms.sourcegitcommit: f6c7e290f0abc2c32456e076420a7695ae868ba6
+ms.openlocfilehash: ffbd08a4a6765c2cc38329325e91f4aed12d88d5
 ms.contentlocale: de-de
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 
@@ -24,7 +24,7 @@ Visual Studio für Mac ist eine moderne, anspruchsvolle IDE mit vielen Features 
 * ASP.NET Core-Webanwendungen
 * Plattformübergreifende Unity-Spiele
 
-Es beinhaltet einen umfangreichen Editor, Debuggen, native Plattformintegration mit iOS, Mac und Android und integrierte Quellcodeverwaltung, um nur einige seiner zahlreichen Features zu nennen.
+Es umfasst einen umfangreichen Editor, Debugfunktionen, native Plattformintegration in iOS, Mac und Android und integrierte Quellcodeverwaltung, um nur einige der zahlreichen Features zu nennen.
 
 Dieses Thema behandelt verschiedene Abschnitte von Visual Studio für Mac, um einen Einblick in einige der Features zu geben, die es zu einem leistungsstarken Tool zur Erstellung von plattformübergreifenden Anwendungen macht.
 

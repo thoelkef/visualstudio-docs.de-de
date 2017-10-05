@@ -1,52 +1,69 @@
 ---
-title: "IDebugEngine2::SetException | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngine2::SetException"
-helpviewer_keywords: 
-  - "IDebugEngine2::SetException"
+title: IDebugEngine2::SetException | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugEngine2::SetException
+helpviewer_keywords:
+- IDebugEngine2::SetException
 ms.assetid: e6f5ec48-09e8-4b9b-9dc9-55f8d883f1b7
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugEngine2::SetException
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2d7d1631c1b5179d51a80b2094766c4ed053ac36
+ms.contentlocale: de-de
+ms.lasthandoff: 09/26/2017
 
-Gibt an, wie das Debugmodul \(DE\) eine bestimmte Ausnahme behandeln soll.  
+---
+# <a name="idebugengine2setexception"></a>IDebugEngine2::SetException
+Gibt an, wie die Debugging-Modul (DE) eine bestimmte Ausnahme behandeln soll.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT SetException(   
-   EXCEPTION_INFO* pException  
+```cpp  
+HRESULT SetException(   
+   EXCEPTION_INFO* pException  
 );  
 ```  
   
-```c#  
-int SetException(   
-   EXCEPTION_INFO[] pException  
+```csharp  
+int SetException(   
+   EXCEPTION_INFO[] pException  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pException`  
- \[in\]  Eine [EXCEPTION\_INFO](../../../extensibility/debugger/reference/exception-info.md) Struktur, in der die Ausnahme beschrieben wird und wie sie gedebuggt.  
+ [in] Ein [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) -Struktur, die die Ausnahme und zum Debuggen beschrieben.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- DE kann angewiesen werden, um das Programm anzuhalten, eine Ausnahme an die erste Möglichkeit zur zweiten Chance zu generieren oder überhaupt nicht.  
+## <a name="remarks"></a>Hinweise  
+ Ein DE kann angewiesen werden, beenden Sie das Programm generiert bei der ersten Chance wurde eine Ausnahme, die zweite Möglichkeit, oder gar nicht.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
- [EXCEPTION\_INFO](../../../extensibility/debugger/reference/exception-info.md)
+ [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)

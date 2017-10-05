@@ -30,7 +30,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: f68221fd37da500993e5afb9d3ee7e847f794a28
 ms.contentlocale: de-de
-ms.lasthandoff: 09/06/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Codegenerierung, Kompilierung und Benennungskonventionen in Microsoft Fakes
@@ -300,7 +300,7 @@ attribute of the Assembly element in the .fakes:
 |Ein **Typ**`T`|T<br /><br /> Der Namespace, die geschachtelte Struktur und die generischen Tics werden verworfen.|  
 |Ein **out-Parameter**`out T`|`TOut`|  
 |Ein **ref-Parameter**`ref T`|`TRef`|  
-|Ein **Arraytyp** `T[]`|`TArray`|  
+|Ein **Arraytyp **`T[]`|`TArray`|  
 |Ein **mehrdimensionales Array**, Typ `T[ , , ]`|`T3`|  
 |Ein **Zeiger**, Typ `T*`|`TPtr`|  
 |Ein **generischer Typ**`T<R1, ...>`|`TOfR1`|  

@@ -1,33 +1,50 @@
 ---
-title: "Problembehandlung f&#252;r Codemetrikfehler | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Problembehandlung für Codemetrikfehler | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: f2fdb995-4888-4246-85dc-7bacadd45968
 caps.latest.revision: 4
-author: "erickson-doug"
-ms.author: "douge"
-manager: "douge"
-caps.handback.revision: 4
----
-# Problembehandlung f&#252;r Codemetrikfehler
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: ea1e787c1d509123a650cf2bd20e5fa8bffd5b4e
+ms.openlocfilehash: 9f3f41548412d84cd1219aae45b7c87ea5383de9
+ms.contentlocale: de-de
+ms.lasthandoff: 09/26/2017
 
-Beim Sammeln von Codemetrikdaten treten unter Umständen einige der folgenden Probleme auf:  
+---
+# <a name="troubleshooting-code-metrics-issues"></a>Problembehandlung für Codemetrikfehler
+Sie können beim Sammeln von Codemetrik einige der folgenden Probleme auftreten:  
   
--   [Änderungen in den Visual Studio 2010\-Berechnungen für die Codekomplexität](#Changes_in_Visual_Studio_2010_code_complexity_calculations)  
+-   [Änderungen in Visual Studio 2010 Code Komplexität Berechnungen](#Changes_in_Visual_Studio_2010_code_complexity_calculations)  
   
-##  <a name="Changes_in_Visual_Studio_2010_code_complexity_calculations"></a> Änderungen in den Visual Studio 2010\-Berechnungen für die Codekomplexität  
- In den folgenden Situationen kann sich die in [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] berechnete Codekomplexitätsmetrik einer Funktion von der Berechnung in älteren [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]\-Versionen unterscheiden:  
+##  <a name="Changes_in_Visual_Studio_2010_code_complexity_calculations"></a>Änderungen in Visual Studio 2010 Code Komplexität Berechnungen  
+ Für die gleiche Funktion berechnet den Code Komplexität Metrik [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] kann von der Berechnung von früheren Versionen von anderen [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] für den folgenden Situationen:  
   
--   Die Funktion enthält mindestens einen Catch\-Block.  In älteren Versionen von [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] wurden Catch\-Blöcke bei der Berechnung nicht berücksichtigt.  In [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] wird die Komplexität jedes Catch\-Blocks der Komplexität der Funktion hinzugefügt.  
+-   Die Funktion enthält ein oder mehrere catch-Blöcke. In früheren Versionen von [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], Catch-Blöcke nicht in die Berechnung eingeschlossen. In [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)], die Komplexität der einzelnen Catch-Block um die Komplexität der Funktion hinzugefügt wird.  
   
--   Die Funktion enthält eine Switch\-Anweisung \("Select Case" in VB\).  Aufgrund von Compilerunterschieden zwischen [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] und älteren Versionen wird für einige Switch\-Anweisungen mit FallThrough unter Umständen unterschiedlicher MSIL\-Code generiert.  
+-   Die Funktion enthält eine Switch (Select Case in VB)-Anweisung. Compilerfehler Unterschiede zwischen [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] und frühere Versionen können unterschiedlichen MSIL-Code für einige Switch-Anweisungen, die fallen über Fälle enthalten generieren.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Messen von Komplexität und Verwaltbarkeit verwalteten Codes](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

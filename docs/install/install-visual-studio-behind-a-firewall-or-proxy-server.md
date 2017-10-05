@@ -2,8 +2,7 @@
 title: Installieren von Visual Studio hinter einer Firewall oder einem Proxyserver | Microsoft-Dokumentation
 description: 
 ms.custom: 
-ms.date: 07/18/2017
-ms.prod: visual-studio-dev15
+ms.date: 08/01/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -20,10 +19,10 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: ddbbda1069749e2ce685507d55a070f1dec27c17
-ms.openlocfilehash: 48fd143f917d6e13c18f6913bea625b2e8cf5ce8
+ms.sourcegitcommit: 1e017806ca7bf3d23410ba3a2f999dca0b78f240
+ms.openlocfilehash: cb2ef641cb5b9b6efbd1aeb539154da1e4082b51
 ms.contentlocale: de-de
-ms.lasthandoff: 07/19/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="install-visual-studio-behind-a-firewall-or-proxy-server"></a>Installieren von Visual Studio hinter einer Firewall oder einem Proxyserver
@@ -43,8 +42,13 @@ Wenn es für Ihre Umgebung möglich ist, fügen Sie eventuell die folgenden Dom�
 | dl.xamarin.com | Einrichten des Speicherorts für den Paketdownload |
 | visualstudiogallery.msdn.microsoft.com | Speicherort des Downloads der Visual Studio-Erweiterungen |
 | www.visualstudio.com | Speicherort der Dokumentation |
+| docs.microsoft.com | Speicherort der Dokumentation |
 | msdn.microsoft.com | Speicherort der Dokumentation |
 | www.microsoft.com | Speicherort der Dokumentation |
+| *.windows.net | Anmeldeort |
+| *.microsoftonline.com | Anmeldeort |
+| *.live.com | Anmeldeort |
+
 
 ## <a name="non-microsoft-domains"></a>Nicht-Microsoft-Domänen
 | Domäne | Installieren dieser Workloads |

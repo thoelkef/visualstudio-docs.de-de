@@ -37,7 +37,7 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 13910907c6041884cc0a1414fd0bfd82757a7639
 ms.contentlocale: de-de
-ms.lasthandoff: 09/06/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="localizing-menu-commands"></a>Lokalisieren von Menübefehlen
@@ -52,11 +52,11 @@ Können Sie lokalisierte Text angeben, für die Menüs und Symbolleiste Befehle 
   
 2.  Erstellen Sie eine Kopie der *Filename*.en-US.vsct für jede lokalisierte Sprache.  
   
-     Benennen Sie jede Kopie *Filename*. *Gebietsschema*VSCT, wobei *Gebietsschema* ist der Name für eine bestimmte Kultur. Eine Liste der Namenswerte Kultur, finden Sie unter [von Microsoft zugewiesene Gebietsschema-IDs](https://msdn.microsoft.com/en-us/library/windows/apps/jj657969.aspx).  
+     Benennen Sie jede Kopie *Filename*.* Gebietsschema*VSCT, wobei *Gebietsschema* ist der Name für eine bestimmte Kultur. Eine Liste der Namenswerte Kultur, finden Sie unter [von Microsoft zugewiesene Gebietsschema-IDs](https://msdn.microsoft.com/en-us/library/windows/apps/jj657969.aspx).  
   
-     Diese *Filename*. *Gebietsschema*VSCT-Dateien enthält die lokalisierten Menütext für Ihr Paket.  
+     Diese *Filename*.* Gebietsschema*VSCT-Dateien enthält die lokalisierten Menütext für Ihr Paket.  
   
-3.  Öffnen der einzelnen *Filename*. *Gebietsschema*VSCT-Datei zum Lokalisieren von Text.  
+3.  Öffnen der einzelnen *Filename*.* Gebietsschema*VSCT-Datei zum Lokalisieren von Text.  
   
     1.  Ändern der [ButtonText](../extensibility/buttontext-element.md) Elementen Werte nach Bedarf für die jeweilige Sprache.  
   

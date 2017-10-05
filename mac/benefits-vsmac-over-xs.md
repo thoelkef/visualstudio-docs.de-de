@@ -6,10 +6,10 @@ ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 6ACF5FD4-D5C1-4050-95E3-467C753F25F1
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: bccf6e4fdb3983c3fbfd937817b558d4b61a8a44
+ms.sourcegitcommit: f6c7e290f0abc2c32456e076420a7695ae868ba6
+ms.openlocfilehash: 655795fd64958805e0137d7e231391c59f676776
 ms.contentlocale: de-de
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 
@@ -150,16 +150,16 @@ Während die plattformübergreifenden Features von Xamarin schon immer ein erstk
 
 ### <a name="android"></a>Android 
 
-* [Android SDK-Manager](https://developer.xamarin.com/guides/android/application_fundamentals/using-the-sdk-manager/) (**Vorschauversion**) 
+* [Android-SDK-manager](https://developer.xamarin.com/guides/android/application_fundamentals/using-the-sdk-manager/)  
 * Android O wird nur in Visual Studio für Mac und nicht in Xamarin Studio unterstützt. 
 
 ### <a name="ios-and-mac"></a>iOS und Mac 
 
 * [Aktualisierungen des Signierungsworkflows unter iOS](https://developer.xamarin.com/guides/cross-platform/macios/apple-account-management/) 
     * Erstellen Sie neue Signierungsidentitäten und installieren Sie diese im lokalen Schlüsselbund. 
-    * Erstellen Sie Bereitstellungsprofile. (**Vorschauversion**)
-    * Fügen Sie eine neue Signierungsidentitäten zu einem vorhandenen Profil hinzu. (**Vorschauversion**)
-    *  Stellen Sie Geräte bereit: Registrieren Sie ein Gerät im Apple-Entwicklerportal, und fügen Sie diese einem Bereitstellungsprofil hinzu. (**Vorschauversion**)
+    * Erstellen Sie Bereitstellungsprofile. 
+    * Fügen Sie eine neue Signierungsidentitäten zu einem vorhandenen Profil hinzu.
+    *  Stellen Sie Geräte bereit: Registrieren Sie ein Gerät im Apple-Entwicklerportal, und fügen Sie diese einem Bereitstellungsprofil hinzu.
 * iOS 11, watchOS 4 und tvOS 2 werden nur in Visual Studio für Mac und nicht in Xamarin Studio unterstützt. 
 * MacOS High Sierra wird nur in Visual Studio für Mac und nicht in Xamarin Studio unterstützt. 
 

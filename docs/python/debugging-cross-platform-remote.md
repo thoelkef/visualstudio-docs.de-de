@@ -2,7 +2,6 @@
 title: "Plattformübergreifendes Remotedebuggen mit Python in Visual Studio | Microsoft-Dokumentation"
 ms.custom: 
 ms.date: 7/12/2017
-ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -16,10 +15,10 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: b18efd1fb488c0d07b9a0ffa41f9b4e3613ef17c
+ms.sourcegitcommit: 1e017806ca7bf3d23410ba3a2f999dca0b78f240
+ms.openlocfilehash: 2711238ccc6d90b34df748c6b59e4130c74de69b
 ms.contentlocale: de-de
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 
@@ -49,26 +48,26 @@ Weitere Informationen zum Erstellen einer Firewallregel für einen virtuellen Az
 1. Erstellen Sie auf dem Remotecomputer eine Python-Datei mit dem Namen `guessing-game.py` mit dem folgenden Code:
 
   ```python
-    import random
+  import random
 
-    guesses_made = 0
-    name = input('Hello! What is your name?\n')
-    number = random.randint(1, 20)
-    print('Well, {0}, I am thinking of a number between 1 and 20.'.format(name))
+  guesses_made = 0
+  name = input('Hello! What is your name?\n')
+  number = random.randint(1, 20)
+  print('Well, {0}, I am thinking of a number between 1 and 20.'.format(name))
 
-    while guesses_made < 6:
-    guess = int(input('Take a guess: '))
-    guesses_made += 1
-    if guess < number:
-        print('Your guess is too low.')
-    if guess > number:
-        print('Your guess is too high.')
-    if guess == number:
-        break
-    if guess == number:
-    print('Good job, {0}! You guessed my number in {1} guesses!'.format(name, guesses_made))
-    else:
-    print('Nope. The number I was thinking of was {0}'.format(number))
+  while guesses_made < 6:
+      guess = int(input('Take a guess: '))
+      guesses_made += 1
+      if guess < number:
+          print('Your guess is too low.')
+      if guess > number:
+          print('Your guess is too high.')
+      if guess == number:
+          break
+  if guess == number:
+      print('Good job, {0}! You guessed my number in {1} guesses!'.format(name, guesses_made))
+  else:
+      print('Nope. The number I was thinking of was {0}'.format(number))
   ```
  
 1. Installieren Sie mithilfe von `pip3 install ptvsd` das `ptvsd`-Paket in Ihrer Umgebung. (Hinweis: Es ist eine gute Idee, die Version von ptvsd zu erfassen, die installiert wird, falls Sie sie für die Problembehandlung benötigen; die [ptvsd-Liste](https://pypi.python.org/pypi/ptvsd) zeigt auch die verfügbaren Versionen.)
@@ -129,7 +128,9 @@ In diesen Schritten legen wir einen einfachen Haltepunkt fest, um den Remoteproz
 
     | Visual Studio-Version | Python-Tools/ptvsd-Version |
     | --- | --- |
-    | 2017 | 3.0.0 |
+    | 2017 15.3 | 3.2.0 |
+    | 2017 15.2 | 3.1.0 |
+    | 2017 15.0, 15.1 | 3.0.0 |
     | 2015 | 2.2.6 |
     | 2013 | 2.2.2 |
     | 2012, 2010 | 2.1 |

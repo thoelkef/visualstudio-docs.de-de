@@ -37,11 +37,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 7ec5dd2249f67a2aa23dc42b1f4065bc5d9a318c
+ms.translationtype: HT
+ms.sourcegitcommit: 1c2afd23f9f6a7444b723a0f7d93ababad2624e7
+ms.openlocfilehash: 15e453ace87993aae4ecf80e37cf97e4afce2f28
 ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="common-msbuild-project-properties"></a>Gemeinsame MSBuild-Projekteigenschaften
@@ -78,6 +78,7 @@ In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, di
 |DefineTrace|Ein boolescher Wert, der angibt, ob die TRACE-Konstante definiert werden soll.|  
 |DebugType|Definiert den Umfang der zu generierenden Debuginformationen. Gültige Werte sind "full", "pdbonly" und "none".|  
 |DelaySign|Ein boolescher Wert, der angibt, ob Sie die Assembly verzögert oder voll signieren möchten.|  
+|Deterministic|Ein boolescher Wert, der angibt, ob der Compiler identische Assemblys für identische Eingaben erzeugen sollte. Dieser Parameter entspricht dem `/deterministic`-Schalter der Compiler `vbc.exe` und `csc.exe`.|
 |DisabledWarnings|Unterdrückt die angegebenen Warnungen. Lediglich der numerische Teil des Warnungsbezeichners muss angegeben werden. Mehrere Warnungen werden durch Semikolons getrennt. Dieser Parameter entspricht dem `/nowarn`-Schalter des Compilers "vbc.exe".|  
 |DisableFastUpToDateCheck|Ein boolescher Wert, der nur für [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] gilt. Der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Build-Manager stellt mithilfe des "FastUpToDateCheck"-Prozesses fest, ob ein Projekt neu erstellt werden muss, damit es aktuell ist. Dieser Prozess ist schneller als die Verwendung von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Durch Festlegen der „DisableFastUpToDateCheck“-Eigenschaft auf `true` können Sie den [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Build-Manager umgehen und die Verwendung von [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zum Bestimmen der Aktualität des Projekts erzwingen.|  
 |DocumentationFile|Der Name der Datei, die als XML-Dokumentationsdatei generiert wird. Dieser Name umfasst nur den Dateinamen und weist keine Pfadinformationen auf.|  
@@ -85,7 +86,7 @@ In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, di
 |ExcludeDeploymentUrl|Dem Bereitstellungsmanifest wird durch die [GenerateDeploymentManifest-Aufgabe](../msbuild/generatedeploymentmanifest-task.md) ein „deploymentProvider“-Tag hinzugefügt, wenn die Projektdatei eines der folgenden Elemente enthält:<br /><br /> – UpdateUrl<br />– InstallUrl<br />– PublishUrl<br /><br /> Sie können mithilfe von „ExcludeDeploymentUrl“ jedoch verhindern, dass das „deploymentProvider“-Tag zum Bereitstellungsmanifest hinzugefügt wird, auch wenn eine der vorgenannten URLs angegeben wird. Fügen Sie der Projektdatei zu diesem Zweck die folgende Eigenschaft hinzu:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` **Hinweis:** „ExcludeDeploymentUrl“ wird in der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-IDE nicht verfügbar gemacht und kann nur festgelegt werden, indem die Projektdatei manuell bearbeitet wird. Das Festlegen dieser Eigenschaft hat keine Auswirkung auf die Veröffentlichung in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Das bedeutet, dass das Tag "deploymentProvider" weiterhin zu der durch "PublishUrl" angegebenen URL hinzugefügt wird.|  
 |FileAlignment|Gibt die Ausrichtung der Abschnitte der Ausgabedatei in Bytes an. Gültige Werte sind 512, 1024, 2048, 4096 und 8192. Diese Eigenschaft entspricht dem `/filealignment`-Compilerschalter.|  
 |FrameworkPathOverride|Gibt den Speicherort von "mscorlib.dll" und "microsoft.visualbasic.dll" an. Dieser Parameter entspricht dem `/sdkpath`-Schalter des Compilers "vbc.exe".|  
-|GenerateDocumentation|Ein boolescher Parameter, der angibt, ob eine Dokumentation vom Build generiert wird. Wenn der Wert `true` lautet, werden Dokumentationsinformationen vom Build generiert und zusammen mit dem Namen der ausführbaren Datei oder der Bibliothek, die von der Buildaufgabe erstellt wurde, in einer XML-Datei gespeichert.|  
+|GenerateDocumentation|Nur Visual Basic .NET: Ein boolescher Parameter, der angibt, ob eine Dokumentation vom Build generiert wird. Wenn der Wert `true` lautet, werden Dokumentationsinformationen vom Build generiert und zusammen mit dem Namen der ausführbaren Datei oder der Bibliothek, die von der Buildaufgabe erstellt wurde, in einer XML-Datei gespeichert.|
 |IntermediateOutputPath|Der vollständige Zwischenausgabepfad wie von `BaseIntermediateOutputPath` abgeleitet, wenn kein Pfad angegeben wird. Beispiel: „\obj\debug\\“. Wenn diese Eigenschaft überschrieben wird, hat das Festlegen von `BaseIntermediateOutputPath` keine Auswirkungen.|  
 |KeyContainerName|Der Name des Containers mit dem Schlüssel für einen starken Namen.|  
 |KeyOriginatorFile|Der Name der Datei mit dem Schlüssel für einen starken Namen.|  
@@ -105,6 +106,7 @@ In der folgenden Tabelle werden häufig verwendete Eigenschaften aufgelistet, di
 |OverwriteReadOnlyFiles|Ein boolescher Wert, der angibt, ob schreibgeschützte Dateien vom Build überschrieben werden sollen oder ob ein Fehler ausgelöst werden soll.|  
 |PdbFile|Der Dateiname der PDB-Datei, die Sie ausgeben. Diese Eigenschaft entspricht dem `/pdb`-Schalter des Compilers "csc.exe".|  
 |Plattform|Das Betriebssystem, für das Sie erstellen. Gültige Werte sind "Beliebige CPU", "x86" und "x64".|  
+|ProduceReferenceAssembly|Ein boolescher Wert, der auf `true` festgelegt wurde, ermöglicht die Produktion von [Verweisassemblys](https://github.com/dotnet/roslyn/blob/master/docs/features/refout.md) für die aktuelle Assembly. `Deterministic` sollte beim Verwenden dieser Funktion `true` entsprechen. Diese Eigenschaft entspricht dem `/refout`-Schalter der Compiler `vbc.exe` und `csc.exe`.|
 |RemoveIntegerChecks|Ein boolescher Wert, der angibt, ob Überprüfungen auf Ganzzahlüberlauf-Fehler deaktiviert werden sollen. Der Standardwert ist `false`. Diese Eigenschaft entspricht dem `/removeintchecks`-Schalter des Compilers "vbc.exe".|  
 |SGenUseProxyTypes|Ein boolescher Wert, der angibt, ob Proxytypen von "SGen.exe" generiert werden sollen.<br /><br /> Das SGen-Ziel verwendet diese Eigenschaft, um das "UseProxyTypes"-Flag festzulegen. Diese Eigenschaft wird standardmäßig auf "true" festgelegt. Es ist keine Benutzeroberfläche verfügbar, um diesen Wert zu ändern. Fügen Sie diese Eigenschaft der Projektdatei hinzu, und legen Sie sie auf "False" fest, bevor Sie "Microsoft.Common.Targets" oder "C#/VB.targets" importieren, um die Serialisierungsassembly für nicht webdienstbezogene Typen zu generieren.|  
 |SGenToolPath|Ein optionaler Toolpfad, der angibt, von wo "SGen.exe" abgerufen werden kann, wenn die aktuelle Version von "SGen.exe" überschrieben wurde.|  
