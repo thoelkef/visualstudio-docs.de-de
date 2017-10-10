@@ -16,20 +16,6 @@ manager: ghogen
 dev_langs:
 - CSharp
 - VB
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 8bf0b097be929b30627e0f1139c6e0b145933ab4
 ms.openlocfilehash: ec2ae70312c7cb5f26630246046cadc7c210e1c2
@@ -62,7 +48,7 @@ Dies sind einige der am häufigsten vorkommenden schnellen Aktionen, die sowohl 
 ### <a name="add-missing-casesdefault-caseboth"></a>Fügen Sie fehlende Fälle/einen Standardfall/beides hinzu
 Wenn Sie eine `switch`-Anweisung in C# oder eine `Select Case`-Anweisung in Visual Basic erstellen, können Sie mit einer Codeaktion automatisch fehlende Fallelemente, eine Standardfallanweisung oder beides hinzufügen.  Für eine leere Anweisung, wie die folgende:
 
-```CSharp
+```csharp
 enum MyEnum
 {
     Item1,
@@ -78,8 +64,7 @@ switch(myEnum)
 {
 }
 ```
-
-```VB
+```vb
 Enum MyEnum
     Item1
     Item2
@@ -96,7 +81,7 @@ End Select
 
 Durch die schnelle Aktion **Add Both** (Beides hinzufügen) für das Ausfüllen sowohl fehlender Fälle und als auch eines Standardfalls wird Folgendes erstellt:
 
-```CSharp
+```csharp
 switch(myEnum)
 {
     case MyEnum.Item1:
@@ -109,8 +94,7 @@ switch(myEnum)
         break;
 }
 ```
-
-```VB
+```vb
 Select Case myEnum
     Case MyEnum.Item1
         Exit Select
@@ -124,7 +108,7 @@ End Select
 ### <a name="correct-misspelled-type"></a>Korrigieren eines falsch geschriebener Typs
 Wenn Sie aus Versehen einen Typ in Visual Studio falsch schreiben, korrigiert diese schnelle Aktion den Fehler für Sie automatisch.  Sie sehen diese Elemente im Glühbirnenmenü als **„Ändern des‚*Falsch geschriebenen Typ*‘ in ‚*korrekten Typ*‘**.  Zum Beispiel:
 
-```CSharp
+```csharp
 // Before
 private viod MyMethod()
 {
@@ -137,8 +121,7 @@ private void MyMethod()
 {
 }
 ```
-
-```VB
+```vb
 ' Before
 Function MyFunction as Intger
 End Function
@@ -153,7 +136,7 @@ End Function
 ### <a name="remove-unnecessary-cast"></a>Nicht benötigte Umwandlung entfernen
 Wenn Sie einen Typ in einen anderen Typ umwandeln, der keine Umwandlung benötigt, entfernt das Element der schnellen Aktion **Remove Unnecessary Cast** (Nicht benötigte Umwandlung entfernen) die Umwandlung aus Ihrem Code.
 
-```CSharp
+```csharp
 // before
 int number = (int)3;
 
@@ -162,8 +145,7 @@ int number = (int)3;
 // after
 int number = 3;
 ```
-
-```VB
+```vb
 ' Before
 Dim number as Integer = CType(3, Integer)
 
@@ -176,7 +158,7 @@ Dim number as Integer = 3
 ### <a name="replace-method-with-property--replace-property-with-method"></a>Eine Methode durch eine Eigenschaft ersetzen/eine Eigenschaft durch eine Methode ersetzen
 Diese schnellen Aktionen konvertieren eine Methode in eine Eigenschaft und andersherum.  Das unten stehende Beispiel veranschaulicht die Änderung von einer Methode in eine Eigenschaft.  Tauschen Sie im anderen Fall einfach die Bereiche *Vorher* und *Nachher* miteinander.
 
-```CSharp
+```csharp
 private int MyValue;
 
 // Before
@@ -193,8 +175,7 @@ public int MyValue
     get { return MyValue; }
 }
 ```
-
-```VB
+```vb
 Dim MyValue As Integer
 
 ' Before
@@ -215,7 +196,7 @@ End Property
 ### <a name="make-method-synchronous"></a>Methode als synchron deklarieren
 Wenn Sie das Schlüsselwort `async`/`Async` für eine Methode verwenden, wird erwartet, dass das Schlüsselwort `await`/`Await` auch irgendwo innerhalb der Methode verwendet wird.  Sollte dies nicht der Fall sein, erscheint eine schnelle Aktion, die es Ihnen ermöglicht, die Methode als synchron zu deklarieren, indem Sie das Schlüsselwort `async`/`Async` entfernen und den Rückgabetyp anpassen.  Verwenden Sie die Option **Make Method Synchronous** (Methode als synchron deklarieren) aus dem Menü für schnelle Aktionen.
 
-```CSharp
+```csharp
 // Before
 async Task<int> MyAsyncMethod()
 {
@@ -230,8 +211,7 @@ int MyAsyncMethod()
     return 3;
 }
 ```
-
-```VB
+```vb
 ' Before
 Async Function MyAsyncMethod() As Task(Of Integer)
     Return 3
@@ -248,7 +228,7 @@ End Function
 ### <a name="make-method-asynchronous"></a>Methode als asynchron deklarieren
 Wenn Sie das Schlüsselwort `await`/`Await` innerhalb einer Methode verwenden, wird erwartet, dass die Methode selbst mit dem Schlüsselwort `async`/`Async` gekennzeichnet ist.  Sollte dies allerdings nicht der Fall sein, erscheint eine schnelle Aktion, die es Ihnen ermöglicht, die Methode als asynchron zu deklarieren.  Verwenden Sie die Option **Make method/Function asynchronous** (Methode/Funktion als asynchron deklarieren) aus dem Menü für schnelle Aktionen.
 
-```CSharp
+```csharp
 // Before
 int MyAsyncMethod()
 {
@@ -263,8 +243,7 @@ async Task<int> MyAsyncMethod()
     return await Task.Run(...);
 }
 ```
-
-```VB
+```vb
 ' Before
 Function MyAsyncMethod() as Integer
     Return  Await Task.Run(...)
@@ -289,7 +268,7 @@ Using-Typen in anderen Projekten in Ihrer Projektmappe zeigen die schnelle Aktio
 
 Wenn dies aktiviert ist, wird die using/import-Anweisung erstellt, wenn Sie einen Typ in einem Namespace verwenden, der zu diesem Zeitpunkt nicht importiert ist, aber in einer Verweisassembly oder einem NuGet-Paket vorhanden ist.
 
-```CSharp
+```csharp
 // Before
 Debug.WriteLine("Hello");
 
@@ -300,8 +279,7 @@ using System.Diagnostics;
 
 Debug.WriteLine("Hello");
 ```
-
-```VB
+```vb
 ' Before
 Debug.WriteLine("Hello")
 
@@ -316,7 +294,7 @@ Debug.WriteLine("Hello")
 ### <a name="convert-to-interpolated-string"></a>Konvertieren in eine interpolierte Zeichenfolge
 [Interpolierte Zeichenfolgen](/dotnet/csharp/language-reference/keywords/interpolated-strings) sind eine einfache Möglichkeit, Zeichenfolgen mit eingebetteten Variablen auszudrücken, ähnlich wie mit der **[String.Format](https://msdn.microsoft.com/library/system.string.format.aspx)**-Methode.  Diese schnelle Aktion erkennt Fälle, in denen Zeichenfolgen verkettet sind oder **String.Format** verwenden, und ändert die Verwendung in eine interpolierte Zeichenfolge.
 
-```CSharp
+```csharp
 // Before
 int num = 3;
 string s = string.Format("My string with {0} in the middle", num);
@@ -327,8 +305,7 @@ string s = string.Format("My string with {0} in the middle", num);
 int num = 3;
 string s = $"My string with {num} in the middle";
 ```
-
-```VB
+```vb
 ' Before
 Dim num as Integer = 3
 Dim s as String = String.Format("My string with {0} in the middle", num)
@@ -382,7 +359,7 @@ Mithilfe dieser schnellen Aktion können Sie Zifferntrennzeichen in Literale ein
 ### <a name="convert-if-construct-to-switch"></a>Konvertieren von **if**-Konstrukt in **switch**
 Mit dieser schnellen Aktionen können Sie ein **if-then-else**-Konstrukt in ein **switch**-Konstrukt konvertieren. (Nur in Visual Studio 2017 [Version 15.3 - Preview] verfügbar.)
 
-```CSharp
+```csharp
 // Before
 if (obj is string s)
 {
@@ -407,8 +384,7 @@ switch (obj)
     break;
 }
 ```
-
-```VB
+```vb
 ' Before
 If TypeOf obj Is String s Then
     Console.WriteLine("obj is a string: " + s)
