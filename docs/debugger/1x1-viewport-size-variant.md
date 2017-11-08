@@ -1,42 +1,9 @@
 ---
-title: "1x1-Viewportgr&#246;&#223;envariante | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-ms.assetid: 3dbc3247-00f5-4644-8ff9-72e9febcf09a
-caps.latest.revision: 6
-caps.handback.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# 1x1-Viewportgr&#246;&#223;envariante
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+redirect_url: /visualstudio/debugger/graphics/1x1-viewport-size-variant
+ms.translationtype: HT
+ms.sourcegitcommit: 9b332c2a5fdb1cd14b28a2280a5d0b109f2abc11
+ms.openlocfilehash: 952dddcfa059e28e21f033c774d2844f7a6a0b6f
+ms.contentlocale: de-de
+ms.lasthandoff: 11/08/2017
 
-Reduziert die Viewport\-Dimensionen auf allen Renderzielen auf 1x1 Pixel.  
-  
-## Interpretation  
- Ein kleinerer Viewport reduziert die Anzahl der Pixel, die schattiert werden müssen, jedoch nicht die Anzahl der Scheitelpunkte, die verarbeitet werden müssen.  Die Einstellung der Viewport\-Dimensionen auf 1x1 Pixel eliminiert praktisch die Pixelschattierung aus Ihrer App.  
-  
- Wenn diese Variante zu einer Leistungssteigerung führt, kann dies ein Zeichen dafür sein, dass Ihre App zu viel Füllrate verbraucht.  Dies kann ein Zeichen dafür sein, dass die gewählte Auflösung für die Zielplattform zu hoch ist oder dass Ihre App sehr viel Zeit für die Schattierung von Pixeln verwendet, die später überschrieben \(überzeichnet\) werden.  Dieses Ergebnis legt nahe, dass eine Senkung der Größe Ihres Framepuffers oder der Menge von Überzeichnungen die Leistung Ihrer App erhöht.  
-  
-## Hinweise  
- Die Viewport\-Dimensionen werden mit jedem Aufruf von `ID3D11DeviceContext::OMSetRenderTargets` oder `ID3D11DeviceContext::RSSetViewports` auf 1x1 Pixel gesetzt.  
-  
-## Beispiel  
- Diese Variante kann durch einen Code reproduziert werden, der dem folgenden ähnlich ist:  
-  
-```  
-D3D11_VIEWPORT viewport;  
-viewport.TopLeftX = 0;  
-viewport.TopLeftY = 0;  
-viewport.Width = 1;  
-viewport.Height = 1;  
-d3d_context->RSSetViewports(1, &viewport);  
-```
+---

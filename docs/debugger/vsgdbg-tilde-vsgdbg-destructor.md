@@ -1,31 +1,9 @@
 ---
-title: "VsgDbg::~VsgDbg (Destruktor) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-ms.assetid: 7a3b97fb-d344-4df7-b195-9347d1edfcf7
-caps.latest.revision: 4
-caps.handback.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# VsgDbg::~VsgDbg (Destruktor)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+redirect_url: /visualstudio/debugger/graphics/vsgdbg-tilde-vsgdbg-destructor
+ms.translationtype: HT
+ms.sourcegitcommit: 9b332c2a5fdb1cd14b28a2280a5d0b109f2abc11
+ms.openlocfilehash: 289bf3f2e0917ae79e6712729999a74abc3c9647
+ms.contentlocale: de-de
+ms.lasthandoff: 11/08/2017
 
-Zerstört eine Instanz der `VsgDbg`\-Klasse.  Wenn Grafikinformationen aktiv aufgezeichnet werden, wird die Grafikprotokolldatei abgeschlossen und geschlossen, und die Ressourcen, die während der aktiven Erfassung der Grafikinformationen verwendet wurden, werden freigegeben.  
-  
-## Syntax  
-  
-```cpp  
-~VsgDbg();  
-```  
-  
-## Siehe auch  
- [VsgDbg::VsgDbg \(Konstruktor\)](../debugger/vsgdbg-vsgdbg-constructor.md)
+---
