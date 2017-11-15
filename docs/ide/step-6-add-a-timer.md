@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 09e7930b-cab6-4a22-9a6f-72e23f489585
-caps.latest.revision: 21
-author: kempb
-ms.author: kempb
+caps.latest.revision: "21"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: d4a31cd461f470c7b510be02c33dd1744f7ed616
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 0ab82e9962871d6dd5da724a7a72677c387e9a53
-ms.contentlocale: de-de
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="step-6-add-a-timer"></a>Schritt 6: Hinzufügen eines Timers
 Als Nächstes fügen Sie dem Spiel ein **Timer**-Steuerelement hinzu. Ein solcher Timer wartet eine angegebene Anzahl von Millisekunden und löst anschließend ein Ereignis aus, das als *Tick* bezeichnet wird. Dies ist nützlich für den Start einer Aktion oder die regelmäßige Wiederholung eine Aktion. In diesem Fall verwenden Sie einen Zeitgeber, um dem Spieler zu ermöglichen, zwei Symbole auszuwählen, und um die beiden Symbole nach einer kurzen Zeit wieder auszublenden, sofern sie nicht übereinstimmen.  
@@ -51,7 +35,8 @@ Zeitgeber
   
 3.  Wählen Sie das Symbol des Timer-Steuerelements im Windows Forms-Designer und dann die EINGABETASTE, oder doppelklicken Sie auf den Timer, um einen leeren **Tick**-Ereignishandler hinzuzufügen. Ersetzen Sie entweder den Code durch den folgenden Code, oder geben Sie den folgenden Code manuell in den Ereignishandler ein.  
   
-     [!code-csharp[VbExpressTutorial4Step6#7](../ide/codesnippet/CSharp/step-6-add-a-timer_1.cs)]  [!code-vb[VbExpressTutorial4Step6#7](../ide/codesnippet/VisualBasic/step-6-add-a-timer_1.vb)]  
+     [!code-csharp[VbExpressTutorial4Step6#7](../ide/codesnippet/CSharp/step-6-add-a-timer_1.cs)]
+     [!code-vb[VbExpressTutorial4Step6#7](../ide/codesnippet/VisualBasic/step-6-add-a-timer_1.vb)]  
   
      Der Tick-Ereignishandler bewirkt drei Dinge. Zuerst beendet er den Zeitgeber, indem er die `Stop()`-Methode aufruft. Anschließend verwendet er die beiden Verweisvariablen `firstClicked` und `secondClicked`, um die Symbole für die zwei Bezeichnungsfelder, die der Spieler gewählt hat, wieder unsichtbar zu machen. Zuletzt setzt er die Verweisvariablen `firstClicked` und `secondClicked` in Visual C# auf `null` und in Visual Basic auf `Nothing` zurück. Dieser Schritt ist wichtig, weil sich das Programm auf diese Weise selbst zurücksetzt. In diesem Zustand werden keine `Label`-Steuerelemente überwacht, und das Programm ist wieder für eine Auswahl des Spielers bereit.  
   
@@ -60,7 +45,8 @@ Zeitgeber
   
 4.  Um den neuen Zeitgeber in Aktion zu sehen, wechseln Sie zum Code-Editor und fügen am Anfang und Ende der `label_Click()`-Ereignishandlermethode den folgenden Code hinzu. (Sie fügen am Anfang eine `if`-Anweisung und am Ende drei Anweisungen hinzu. Der Rest der Methode bleibt unverändert.)  
   
-     [!code-csharp[VbExpressTutorial4Step6#8](../ide/codesnippet/CSharp/step-6-add-a-timer_2.cs)]  [!code-vb[VbExpressTutorial4Step6#8](../ide/codesnippet/VisualBasic/step-6-add-a-timer_2.vb)]  
+     [!code-csharp[VbExpressTutorial4Step6#8](../ide/codesnippet/CSharp/step-6-add-a-timer_2.cs)]
+     [!code-vb[VbExpressTutorial4Step6#8](../ide/codesnippet/VisualBasic/step-6-add-a-timer_2.vb)]  
   
      Der Code am Anfang der Methode ermittelt durch Überprüfung des Werts der **Enabled**-Eigenschaft, ob der Timer gestartet wurde. Wenn der Spieler also das erste und zweite `Label`-Steuerelement wählt und der Timer gestartet wird, hat die Auswahl eines dritten Steuerelements keinerlei Auswirkungen.  
   

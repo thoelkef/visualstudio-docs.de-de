@@ -1,49 +1,49 @@
 ---
-title: "Befehl &quot;Wurzel setzen&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "debug.setradix"
-helpviewer_keywords: 
-  - "Debug.SetRadix-Befehl"
-  - "Basis festlegen (Befehl)"
+title: "Befehl „Wurzel setzen“ | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: debug.setradix
+helpviewer_keywords:
+- Set Radix command
+- Debug.SetRadix command
 ms.assetid: 6ffd1554-7530-4da4-b5f5-e276a5034f3b
-caps.latest.revision: 11
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 060221e5abe0ff9082a04f8b75561a7e4dec9f64
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Befehl &quot;Wurzel setzen&quot;
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Legt die numerische Basis zum Anzeigen ganzzahliger Werte fest bzw. gibt diese zurück.  
+# <a name="set-radix-command"></a>Befehl "Wurzel setzen"
+Legt die zum Anzeigen von ganzzahligen Werten verwendete numerische Basis fest bzw. gibt sie zurück.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 Debug.SetRadix [10 | 16 | hex | dec]  
 ```  
   
-## Argumente  
+## <a name="arguments"></a>Argumente  
  `10` oder `16` oder `hex` oder `dec`  
- Optional.  Gibt eine dezimale \(10 oder dec\) oder hexadezimale \(16 oder hex\) Notation an.  Wenn ein Argument ausgelassen wird, wird der Wert der aktuellen Basis zurückgegeben.  
+ Dies ist optional. Legt „dezimal“ (10 bzw. dec) oder „hexadezimal“ (16 bzw. hex) als Format fest. Wird ein Argument weggelassen, wird der aktuelle Wert der Wurzel zurückgegeben.  
   
-## Beispiel  
- In diesem Beispiel wird die Umgebung festgelegt, um ganzzahlige Werte im Hexadezimalformat anzuzeigen.  
+## <a name="example"></a>Beispiel  
+ In diesem Beispiel wird die Umgebung zum Anzeigen ganzzahliger Werte im Hexadezimalformat konfiguriert.  
   
 ```  
 >Debug.SetRadix hex  
 ```  
   
-## Siehe auch  
- [Visual Studio\-Befehle](../../ide/reference/visual-studio-commands.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)   
  [Befehlsfenster](../../ide/reference/command-window.md)   
- [Such\/Befehlsfeld](../../ide/find-command-box.md)   
- [Visual Studio\-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)
+ [Such-/Befehlsfeld](../../ide/find-command-box.md)   
+ [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)

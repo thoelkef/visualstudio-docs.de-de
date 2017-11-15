@@ -1,30 +1,31 @@
 ---
-title: "Filtern von Knoten | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Filtern von Knoten | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-designers
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: f7cae2dc-e9a7-49d4-8be5-58b79868624e
-caps.latest.revision: 12
-author: "BrianPeek"
-ms.author: "brpeek"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: b11e18af13cc0fc60812a036174c52105ac08a7d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Filtern von Knoten
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Im Shader\-Designer wird von den Filterknoten eine Eingabe umgewandelt, z. B. ein Farb\- oder Texturmuster in einen bildlichen Farbwert.  Diese bildlichen Farbwerte werden in der Regel beim nicht fotorealistischen Rendering oder als Komponenten für andere visuelle Effekte verwendet.  
+# <a name="filter-nodes"></a>Filtern von Knoten
+Filterknoten wandeln im Shader-Designer Eingabe, z.B. ein Farb- oder Texturbeispiel, in einen figurativen Farbwert. Diese figurativen Farbwerte werden häufig für nicht fotorealistisches Rendering oder als Komponenten in anderen visuellen Effekten verwendet.  
   
-## Filterknotenverweis  
+## <a name="filter-node-reference"></a>Referenz zu Filterknoten  
   
 |Knoten|Details|Eigenschaften|  
-|------------|-------------|-------------------|  
-|**Weichzeichner**|Zeichnet Pixel in einer Textur mithilfe einer Gaußsche Funktion unterstützt.<br /><br /> Sie können dieses verwenden, um Farbdetails oder einem Geräusch versehen in einer Textur zu reduzieren.<br /><br /> **Eingabe:**<br /><br /> `UV`: `float2`<br /> Die Koordinaten des zu testenden Texels.<br /><br /> **Ausgabe:**<br /><br /> `Output`: `float4`<br /> Der unscharfe Farbwert.|**Textur**<br /> Das Texturregister, das dem Sampler zugeordnet ist, der während des Weichzeichnens verwendet wird.|  
-|**Entsättigen**|Reduziert die Farbmenge in der angegebenen Farbe.<br /><br /> Beim Entfernen der Farbe nähert sich der Farbwert seinem Graustufenäquivalent.<br /><br /> **Eingabe:**<br /><br /> `RGB`: `float3`<br /> Die zu entsättigende Farbe.<br /><br /> `Percent`: `float`<br /> Der Prozentsatz der zu entfernenden Farbe, ausgedrückt wie ein normalisierter Wert im Bereich \[0, 1\].<br /><br /> **Ausgabe:**<br /><br /> `Output`: `float3`<br /> Die entsättigte Farbe.|**Sättigung**<br /> Die Gewichtungen, die der Rot\-, Grün\- und Blau\-Farbkomponente zugeordnet sind.|  
-|**Kantenerkennung**|Erkennt Kanten in einer Textur mithilfe eines Canny\-Algorithmus.  Kantenpixel werden als weiß ausgegeben, alle anderen als schwarz.<br /><br /> Damit können Sie Kanten in einer Textur identifizieren, sodass auf Kantenpixel zusätzliche Effekte angewendet werden können.<br /><br /> **Eingabe:**<br /><br /> `UV`: `float2`<br /> Die Koordinaten des zu testenden Texels.<br /><br /> **Ausgabe:**<br /><br /> `Output`: `float4`<br /> Weiß, wenn das Texel auf einer Kante liegt, andernfalls schwarz.|**Textur**<br /> Das Texturregister, das dem Sampler zugeordnet ist, der während der Kantenerkennung verwendet wird.|  
-|**Scharfzeichnen**|Schärft eine Textur.<br /><br /> Sie können dieses verwenden, um feine Details in einer Textur hervorzuheben.<br /><br /> **Eingabe:**<br /><br /> `UV`: `float2`<br /> Die Koordinaten des zu testenden Texels.<br /><br /> **Ausgabe:**<br /><br /> `Output`: `float4`<br /> Der unscharfe Farbwert.|**Textur**<br /> Das Texturregister, das dem Sampler zugeordnet ist, der während des Schärfens verwendet wird.|
+|----------|-------------|----------------|  
+|**Blur**|Zeichnet die Pixel in einer Textur mit einer Gauß-Funktion weich.<br /><br /> Damit können Sie die Farbdetails oder das Rauschen in einer Textur reduzieren.<br /><br /> **Eingabe:**<br /><br /> `UV`: `float2`<br /> Die Koordinaten für das zu testende Texel<br /><br /> **Ausgabe:**<br /><br /> `Output`: `float4`<br /> Der weichgezeichnete Farbwert|**Textur**<br /> Das Texturregister, das dem Sampler zugeordnet ist, der während der Weichzeichnung verwendet wird|  
+|**Desaturate**|Verringert die Farbintensität der angegebenen Farbe.<br /><br /> Beim Entsättigen der Farbe nähert sich der Farbwert seinem Graustufenäquivalent.<br /><br /> **Eingabe:**<br /><br /> `RGB`: `float3`<br /> Die zu entsättigende Farbe<br /><br /> `Percent`: `float`<br /> Der Prozentsatz, um den die Farbsättigung verringert werden soll, ausgedrückt als normalisierter Wert im Bereich [0, 1].<br /><br /> **Ausgabe:**<br /><br /> `Output`: `float3`<br /> Die entsättigte Farbe|**Sättigung**<br /> Die Gewichtungen, die den Rot-, Grün- und Blau-Farbkomponenten zugeordnet sind|  
+|**Edge Detection**|Erkennt Kanten in einer Textur mit dem Canny-Algorithmus. Kantenpixel werden als weiß ausgegeben, Nicht-Kantenpixel als schwarz.<br /><br /> Dadurch können Sie Kanten in einer Textur identifizieren und zusätzliche Effekte verwenden, um auf diese Kanten anzuwenden.<br /><br /> **Eingabe:**<br /><br /> `UV`: `float2`<br /> Die Koordinaten für das zu testende Texel<br /><br /> **Ausgabe:**<br /><br /> `Output`: `float4`<br /> Die Ausgabe ist weiß, wenn sich das Texel auf einer Kante befindet, andernfalls ist sie schwarz.|**Textur**<br /> Das Texturregister, das dem Sampler zugeordnet ist, der während der Kantenerkennung verwendet wird.|  
+|**Sharpen**|Zeichnet eine Textur scharf.<br /><br /> Damit können Sie genaue Details in einer Textur hervorheben.<br /><br /> **Eingabe:**<br /><br /> `UV`: `float2`<br /> Die Koordinaten für das zu testende Texel<br /><br /> **Ausgabe:**<br /><br /> `Output`: `float4`<br /> Der weichgezeichnete Farbwert|**Textur**<br /> Das Texturregister, das dem Sampler zugeordnet ist, der während der Scharfzeichnung verwendet wird.|

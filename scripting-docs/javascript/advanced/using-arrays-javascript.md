@@ -5,8 +5,7 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-javascript
+ms.technology: devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,16 +16,15 @@ helpviewer_keywords:
 - arrays [JavaScript]
 - arrays [JavaScript], objects
 ms.assetid: 785c5acd-b8b3-4152-af9a-dd42ecdd75ba
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
 ms.openlocfilehash: 4c5218a8353a796128d8b672ecc781665c6bde20
-ms.contentlocale: de-de
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="using-arrays-javascript"></a>Verwenden von Arrays (JavaScript)
 Bei Arrays in [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] handelt es sich um *Sparse*-Arrays. Dies bedeutet Folgendes: Wenn Sie ein Array mit drei Elementen erstellen, die mit 0, 1 und 2 nummeriert sind, können Sie das 50. Element erstellen, ohne sich um die Elemente 3 bis 49 kümmern zu müssen. Wenn das Array eine automatisch festgelegte Längenvariable besitzt (weitere Informationen zur automatischen Überwachung der Arraylänge finden Sie unter [Systeminterne Objekte](../../javascript/intrinsic-objects-javascript.md)), wird dieser Variablen nicht der Wert 4, sondern 51 zugewiesen. Sie können selbstverständlich Arrays erstellen, die keine lückenhafte Elementnummerierung aufweist, aber dies ist nicht erforderlich.  

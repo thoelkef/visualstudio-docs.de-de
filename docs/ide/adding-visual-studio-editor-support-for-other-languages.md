@@ -15,16 +15,16 @@ helpviewer_keywords:
 - TextMate language grammar
 - language support
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
-caps.latest.revision: 13
-author: kempb
-ms.author: kempb
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 65cb324c1a7ed91ad5209da7826a1899657a414f
-ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
-
+ms.technology: vs-ide-general
+ms.openlocfilehash: 2dfdf4f5a722bf4fea0c4bd3175e33799aa8b8df
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Hinzufügen von Visual Studio-Editor-Unterstützung für andere Sprachen
 Erfahren Sie mehr dazu, wie der Visual Studio-Editor das Lesen von und Navigieren in verschiedenen Computersprachen unterstützt und wie Sie dem Visual Studio-Editor Unterstützung für weitere Sprachen hinzufügen können.  
@@ -32,7 +32,7 @@ Erfahren Sie mehr dazu, wie der Visual Studio-Editor das Lesen von und Navigiere
 ## <a name="syntax-colorization-statement-completion-and-navigate-to-support"></a>Farbige Syntaxhervorhebung, Anweisungsvervollständigung und Unterstützung von Navigieren zu  
  Funktionen wie farbige Syntaxhervorhebung, Anweisungsvervollständigung und Navigieren zu im Visual Studio-Editor können Ihnen helfen, Ihren Code leichter zu lesen, zu erstellen und zu bearbeiten. Der folgende Screenshot zeigt ein Beispiel für die Bearbeitung eines Perl-Skripts in Visual Studio. Die Syntax wird automatisch farbig hervorgehoben. Beispielsweise sind Anmerkungen im Code grün eingefärbt, Code ist schwarz, Pfade sind rot und Anweisungen blau. Der Visual Studio-Editor wendet die farbige Syntaxhervorhebung automatisch auf jede unterstützte Sprache an. Darüber hinaus zeigt die Anweisungsvervollständigung eine Liste der möglichen Anweisungen und Objekte an, sobald Sie mit der Eingabe eines bekannten Sprachschlüsselworts oder -objekts beginnen. Die Anweisungsvervollständigung kann Ihnen helfen, schnell und einfach mehr Code zu erstellen.  
   
- ![Farbige Syntaxhervorhebung in einem Perl-Skript](~/ide/media/vside_perledit.png "VSIDE_PerlEdit")  
+ ![Farbige Syntaxhervorhebung in einem Perl-Skript](../ide/media/vside_perledit.png "VSIDE_PerlEdit")  
   
  Visual Studio bietet aktuell farbige Syntaxhervorhebung und Unterstützung für Anweisungsvervollständigung mithilfe von [TextMate Grammatiken](https://manual.macromates.com/en/language_grammars) für die folgenden Sprachen. Wenn sich Ihre bevorzugte Sprache nicht in der Liste findet, braucht Sie das trotzdem nicht zu beunruhigen – Sie können sie hinzufügen.  
   

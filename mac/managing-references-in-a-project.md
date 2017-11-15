@@ -5,14 +5,12 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
-ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
 ms.openlocfilehash: 30f6c99c6ac827b7da94fd228a7034e9ce0b0fac
-ms.contentlocale: de-de
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-
 # <a name="managing-references-in-a-project"></a>Verwalten von Verweisen in einem Projekt
 
 Visual Studio für Mac bietet drei Möglichkeit zum Hinzufügen von zusätzlichen Verweisen zu Ihrem Projekt:
@@ -44,4 +42,3 @@ NuGet ist der beliebteste Paket-Manager für die .NET-Entwicklung. Die NuGet-Unt
 Klicken Sie dazu mit der rechten Maustaste auf den Ordner **Pakete** im Projektmappenpad, und klicken Sie dann auf „Pakete hinzufügen“.
 
 Weitere Informationen zur Verwendung eines NuGet-Pakets finden Sie in der exemplarischen Vorgehensweise [Including a NuGet package in your Project (Einfügen eines NuGet-Pakets in Ihr Projekt)](~/nuget-walkthrough.md).
-

@@ -4,37 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - automation [Visual Studio], controlling Tools Options
 - Tools Options settings, Environment node properties
 ms.assetid: 26dca41f-91fc-4ca7-9103-3da402baa1d5
-caps.latest.revision: 18
-author: kempb
-ms.author: kempb
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: ac450b7e414596632d56117813907ee4406ad69d
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: ae50f2d537836501ec4c9c29e50d86aa3e325661
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="options-page-environment-node-properties"></a>Optionsseite, Eigenschaften des Knotens "Umgebung"
 In diesem Dokument werden die Seiten (oder Eigenschaftenauflistungen) beschrieben, die der Kategorie **Umgebung**, `DTE.Properties("Environment", <Property Page>)`, des Dialogfelds **Optionen** zugeordnet sind. Den Titel für jeden Unterabschnitt bildet der Aufruf zum Zugriff auf die Properties-Auflistung, und die Tabelle in jedem Unterabschnitt führt die Eigenschaften in der Auflistung auf.  
@@ -50,7 +35,7 @@ In diesem Dokument werden die Seiten (oder Eigenschaftenauflistungen) beschriebe
 |Animations|Get/Set (boolesch)|Bestimmt, ob die integrierte Entwicklungsumgebung (Integrated Development Environment – IDE) in der Statusleiste Animation verwendet.|  
 |AnimationSpeed|Get/Set (kurzer Name)||  
 |AutoAdjustExperience|Get/Set (boolesch)|Passt automatisch die visuelle Darstellung entsprechend der Clientleistung an.|  
-|RichClientExperienceOptions|Get/Set (Enumeration)|Aktiviert die umfassende visuelle Clientdarstellung mit Werten in <xref:EnvDTE100.vsRichClientExperienceOptions>.|  
+|RichClientExperienceOptions|Get/Set (Enumeration)|Ermöglicht mit Werten in <xref:EnvDTE100.vsRichClientExperienceOptions> eine umfassende visuelle Darstellung auf dem Client.|  
 |CloseButtonActiveTabOnly|Get/Set (boolesch)|Bestimmt, ob die Schaltfläche **Schließen** nur auf der aktiven Registerkarte angezeigt wird.|  
 |AutohidePinActiveTabOnly|Get/Set (boolesch)|Bestimmt, ob die Schaltfläche **Automatisch im Hintergrund** nur auf die aktive Registerkarte angewendet wird.|  
   
@@ -71,7 +56,7 @@ In diesem Dokument werden die Seiten (oder Eigenschaftenauflistungen) beschriebe
 |ReuseSavedActiveDocWindow|Get/Set (boolesch)|Bestimmt, ob zum Öffnen einer neuen Datei das aktuelle Dokumentfenster verwendet wird, wenn das aktuelle Dokument gespeichert wird. `false` bedeutet, dass für jedes geöffnete Dokument immer ein neues Dokumentfenster verwendet wird.|  
 |DetectFileChangesOutsideIDE|Get/Set (boolesch)|Bestimmt, ob die Umgebung in der IDE geöffnete Dateien automatisch neu lädt, wenn das Betriebssystem die IDE benachrichtigt, dass die Dateien auf der Festplatte geändert wurden.|  
 |AutoloadExternalChanges|Get/Set (boolesch)|Bestimmt, ob erkannte externe Änderungen an geöffneten Dokumenten zu einem automatischen Neuladen der geänderten Datei führen, wenn am geöffneten Dokument keine Änderungen vorgenommen wurden. Wenn das geöffnete Dokument geändert wurde und diese Eigenschaft auf `true` festgelegt ist, verhält sich die IDE, als ob die Eigenschaft auf `false` festgelegt wäre.|  
-|InitializeOpenFileFromCurrentDocument|Get/Set (boolesch)|Bestimmt, ob der <xref:EnvDTE.DTEClass.OpenFile%2A>-Befehl auf dem Verzeichnis und Dateinamen des letzten aktiven Dokuments oder auf dem letzten Speicherort basiert, von dem eine Datei geöffnet wurde.|  
+|InitializeOpenFileFromCurrentDocument|Get/Set (boolesch)|Bestimmt, ob der Befehl <xref:EnvDTE.DTEClass.OpenFile%2A> auf dem Verzeichnis und Dateinamen des letzten aktiven Dokuments oder auf dem letzten Speicherort basiert, von dem eine Datei geöffnet wurde.|  
 |MiscFilesProjectSavesLastNItems|Get/Set (kurzer Name)|Bestimmt die Anzahl der Dateien, die im Projekt Verschiedene Dateien erfasst wird. Das bedeutet, dass beim nächsten Öffnen der IDE angezeigt wird, welche Datei aus dem Projekt Verschiedene Dateien auf der Festplatte geöffnet war.|  
 |ShowMiscFilesProject|Get/Set (boolesch)|Bestimmt, ob das Projekt Verschiedene Dateien angezeigt wird.|  
 |CheckForConsisentLineEndings|Get/Set (boolesch)|Überprüft beim Laden der Datei Zeilenenden auf Konsistenz.|  
@@ -150,7 +135,7 @@ In diesem Dokument werden die Seiten (oder Eigenschaftenauflistungen) beschriebe
   
 |Eigenschaftenelementname|Wert|Beschreibung|  
 |------------------------|-----------|-----------------|  
-|OnStartUp|Get/Set (Enumeration)|Beim Start auszuführende Aktion aus <xref:EnvDTE.vsStartUp> mit Werten von 0 bis 5:<br /><br /> -   0: Startseite öffnen<br />-   1: Letzte Projektmappe laden<br />-   2: Dialogfeld **Projekt öffnen** anzeigen<br />-   3: Dialogfeld **Neues Projekt** anzeigen<br />-   4: Leere Umgebung anzeigen<br />-   5: Startseite anzeigen|  
+|OnStartUp|Get/Set (Enumeration)|Beim Starten auszuführende Aktion aus <xref:EnvDTE.vsStartUp> mit Werten von 0 bis 5:<br /><br /> -   0: Startseite öffnen<br />-   1: Letzte Projektmappe laden<br />-   2: Dialogfeld **Projekt öffnen** anzeigen<br />-   3: Dialogfeld **Neues Projekt** anzeigen<br />-   4: Leere Umgebung anzeigen<br />-   5: Startseite anzeigen|  
 |StartPageRSSUrl|Get/Set (Zeichenfolge)|Die URL für den RSS-Feed, der beim Starten verwendet wird.|  
 |StartPageRefreshDownloadedContent|Get/Set (boolesch)|Aktualisiert die Startseite nach jedem Ablauf des in StartPageRefreshInterval angegebenen Intervalls.|  
 |StartPageRefreshInterval|Get/Set (kurzer Name)|Das Intervall in Minuten, in dem die Startseite aktualisiert wird.|  
@@ -163,7 +148,7 @@ In diesem Dokument werden die Seiten (oder Eigenschaftenauflistungen) beschriebe
 |ConfirmTaskDeletion|Get/Set (boolesch)|Gibt an, ob beim Löschen von Aufgaben aus der **Aufgabenliste** ein Bestätigungsdialogfeld angezeigt wird.|  
 |WarnOnAddingHiddenItem|Get/Set (boolesch)|Gibt an, ob beim Hinzufügen einer Benutzeraufgabe, die nicht angezeigt wird, eine Warnung angezeigt wird.|  
 |DontShowFilePaths|Get/Set (boolesch)|Gibt an, ob in der Aufgabenliste vollständige Dateipfade angezeigt werden.|  
-|CommentTokens|SafeArray|Gibt ein SafeArray von Kommentartokenwerten zurück. Jede verfügt über die Felder `Name` (Zeichenfolge) und `Priority` (<xref:EnvDTE.vsTaskPriority>, hoch, mittel oder niedrig).|  
+|CommentTokens|SafeArray|Gibt ein SafeArray von Kommentartokenwerten zurück. Es sind jeweils die folgenden Felder enthalten: `Name` (Zeichenfolge) und `Priority` (<xref:EnvDTE.vsTaskPriority>, High, Medium oder Low).|  
   
 ## <a name="web-browser"></a>Webbrowser  
  `DTE.Properties("Environment", "WebBrowser")`  

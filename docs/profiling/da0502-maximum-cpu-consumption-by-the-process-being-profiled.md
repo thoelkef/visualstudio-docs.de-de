@@ -1,39 +1,40 @@
 ---
-title: "DA0502: Maximale CPU-Auslastung durch den Prozess, f&#252;r den die Profilerstellung ausgef&#252;hrt wird | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.rules.DA0502"
-  - "vs.performance.DA0502"
-  - "vs.performance.502"
+title: "DA0502: Maximale CPU-Auslastung durch den Prozess, für den die Profilerstellung ausgeführt wird | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.performance.rules.DA0502
+- vs.performance.DA0502
+- vs.performance.502
 ms.assetid: 1ee53df5-b0dc-4265-9d4f-527830d08725
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 3d1cd5fbe91b125c00fe617f03711ea52cdf458f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# DA0502: Maximale CPU-Auslastung durch den Prozess, f&#252;r den die Profilerstellung ausgef&#252;hrt wird
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="da0502-maximum-cpu-consumption-by-the-process-being-profiled"></a>DA0502: Maximale CPU-Auslastung durch den Prozess, für den die Profilerstellung ausgeführt wird
 |||  
 |-|-|  
-|Regel\-ID|DA0502|  
-|Kategorie \(Category\)|Ressourcenüberwachung|  
+|Regel-ID|DA0502|  
+|Kategorie|Ressourcenüberwachung|  
 |Profilerstellungsmethode|Alle|  
-|Meldung|Diese Regel dient nur als Information.  Der Leistungsindikator für die Process\(\)\\%\-Prozessorzeit dient zum Messen der CPU\-Auslastung des Prozesses, für den die Profilerstellung ausgeführt wird.  Bei dem gemeldeten Wert handelt es sich um den Maximalwert aus allen Messintervallen.|  
+|Meldung|Diese Regel dient nur als Information. Der Leistungsindikator für die Process()\\%-Prozessorzeit dient zum Messen der CPU-Auslastung des Prozesses, für den die Profilerstellung ausgeführt wird. Bei dem gemeldeten Wert handelt es sich um den Maximalwert aus allen Messintervallen.|  
 |Regeltyp|Information|  
   
- Wenn Sie mit der Sampling\-, .NET\-Arbeitsspeicher\- oder Ressourcenkonfliktmethode Profile erstellen, müssen mindestens 10 Samplings erfasst werden, damit diese Regel ausgelöst wird.  
+ Wenn Sie Profile mithilfe der Sampling-, .NET-Arbeitsspeicher- oder Ressourcenkonfliktmethode Profile erstellen, müssen mindestens 10 Samplings erfasst werden, damit diese Regel ausgelöst wird.  
   
-## Regelbeschreibung  
- In dieser Meldung wird der maximale Prozentsatz der Zeit gemeldet, die ein Prozessor mit dem Ausführen von Anweisungen aus der Anwendung beschäftigt war.  Bei dem gemeldeten Wert handelt es sich um den Maximalwert aller Messintervalle, in denen der Prozess, dessen Profil erstellt wird, aktiv war.  Bei einem Computer mit mehreren Prozessoren kann der Prozentsatz 100 Prozent übersteigen.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ In dieser Meldung wird der maximale Prozentsatz der Zeit angegeben, die ein Prozessor mit dem Ausführen von Anweisungen aus der Anwendung beschäftigt war. Bei dem gemeldeten Wert handelt es sich um den Maximalwert aller Messintervalle, in denen der Prozess, dessen Profil erstellt wird, aktiv war. Bei einem Computer mit mehreren Prozessoren kann der Prozentsatz 100 Prozent übersteigen.  
   
-## Verwenden der Regeldaten  
- Mithilfe des Regelwerts können Sie die Leistung anderer Versionen oder Builds des Programms vergleichen oder die Leistung der Anwendung in unterschiedlichen Profilerstellungsszenarien nachvollziehen.
+## <a name="how-to-use-the-rule-data"></a>Verwenden der Regeldaten  
+ Mithilfe des Regelwerts können Sie die Leistung anderer Versionen oder Builds des Programms vergleichen oder die Leistung der Anwendung in unterschiedlichen Profilerstellungsszenarios nachvollziehen.

@@ -1,33 +1,32 @@
 ---
-title: "C++-Bibliotheksreferenz | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Concurrency Visualizer SDK, C++-Bibliotheksreferenz"
+title: C++-Bibliotheksreferenz| Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Concurrency Visualizer SDK, C++ Library Reference
 ms.assetid: c9f8eea2-c964-485d-9ad0-55a4bf425ae7
-caps.latest.revision: 3
-caps.handback.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 4f477577f7c1ef95f03f5f68bf93e11a0f8b6488
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# C++-Bibliotheksreferenz
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Dieser Abschnitt enthält Referenzinformationen zum Parallelitätsschnellansicht SDK.  
+# <a name="c-library-reference"></a>C++-Bibliotheksreferenz
+Dieser Abschnitt enthält Referenzinformationen für das Nebenläufigkeitsschnellansichts-SDK.  
   
 > [!NOTE]
->  In der C\+\+\-Standardprogrammiersprache ist die Verwendung von Bezeichnern, die mit einem Unterstrich \(`_`\) beginnen, auf Implementierungen wie Bibliotheken beschränkt.  Verwenden Sie keine Namen, die mit einem Unterstrich im Code beginnen.  Die Eindeutigkeit des Verhaltens von Codeelementen mit Namen dieser Art kann nicht gewährleistet werden, und für zukünftige Versionen muss mit Änderungen gerechnet werden.  Aus diesen Gründen werden solche Codeelemente in dieser Dokumentation nicht beschrieben.  
+>  In der C++-Standardprogrammiersprache ist die Verwendung von Bezeichnern, die mit einem Unterstrich (`_`) beginnen, auf Implementierungen wie Bibliotheken beschränkt. Verwenden Sie keine Namen, die mit einem Unterstrich im Code beginnen. Die Eindeutigkeit des Verhaltens von Codeelementen mit Namen dieser Art kann nicht gewährleistet werden, und für zukünftige Versionen muss mit Änderungen gerechnet werden. Aus diesen Gründen werden solche Codeelemente in dieser Dokumentation nicht beschrieben.  
   
-## In diesem Abschnitt  
- [Concurrency\-Namespace \(Parallelitätsschnellansicht\)](../profiling/concurrency-namespace-concurrency-visualizer.md)  
+## <a name="in-this-section"></a>In diesem Abschnitt  
+ [Concurrency-Namespace (Nebenläufigkeitsschnellansicht)](../profiling/concurrency-namespace-concurrency-visualizer.md)  
   
-## Siehe auch  
- [Parallelitätsschnellansichts\-SDK](../profiling/concurrency-visualizer-sdk.md)
+## <a name="see-also"></a>Siehe auch  
+ [Parallelitätsschnellansichts-SDK](../profiling/concurrency-visualizer-sdk.md)

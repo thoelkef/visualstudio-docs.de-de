@@ -1,48 +1,49 @@
 ---
-title: "Aktuellen Prozess festlegen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Debug.SetCurrentProcess-Befehl"
-  - "Aktuellen Prozess festlegen (Befehl)"
+title: Aktuellen Prozess festlegen | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Debug.SetCurrentProcess command
+- Set Current Process command
 ms.assetid: 1e016ebd-aadd-411f-a606-03bf69d3f8aa
-caps.latest.revision: 5
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 6bd4ab27a36e37e31ec348b80327b6046c5ecbd3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Aktuellen Prozess festlegen
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="set-current-process"></a>Aktuellen Prozess festlegen
 Legt den angegebenen Prozess als aktiven Prozess im Debugger fest.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 Debug.SetCurrentProcess index  
 ```  
   
-## Argumente  
+## <a name="arguments"></a>Argumente  
  `index`  
- Erforderlich.  Der Index des Prozesses.  
+ Erforderlich. Der Index des Prozesses.  
   
-## Hinweise  
- Sie können beim Debuggen mit mehreren Prozessen verbunden sein, es ist jedoch jeweils nur ein Prozess im Debugger aktiv.  Zum Festlegen des aktiven Prozesses können Sie den Befehl `SetCurrentProcess` verwenden.  
+## <a name="remarks"></a>Hinweise  
+ Sie können beim Debuggen mit mehreren Prozessen verbunden sein, es ist jedoch jeweils nur ein Prozess im Debugger aktiv. Zum Festlegen des aktiven Prozesses können Sie den Befehl `SetCurrentProcess` verwenden.  
   
-## Beispiel  
+## <a name="example"></a>Beispiel  
   
 ```  
 >Debug.SetCurrentProcess 1  
 ```  
   
-## Siehe auch  
- [Visual Studio\-Befehle](../../ide/reference/visual-studio-commands.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Visual Studio-Befehle](../../ide/reference/visual-studio-commands.md)   
  [Befehlsfenster](../../ide/reference/command-window.md)   
- [Visual Studio\-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio-Befehlsaliase](../../ide/reference/visual-studio-command-aliases.md)

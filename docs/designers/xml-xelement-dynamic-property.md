@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-csharp
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
-apiname:
-- XElement.Xml
+apiname: XElement.Xml
 ms.assetid: 69ab2a33-4fe7-4cfa-97f8-eaf063decb18
-caps.latest.revision: 2
-author: kempb
-ms.author: kempb
+caps.latest.revision: "2"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 9044821c2bfee0dba8ffa91f3d91afd565b8d957
-ms.openlocfilehash: 3bd6e84a3e59033aeb5050c172439bccbd096082
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: ed9aaee4e227627cf9ef5030863701445671444b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="xml-xelement-dynamic-property"></a>Xml (dynamische XElement-Eigenschaft)
 Ruft den unformatierten XML-Inhalt des Elements ab.  
@@ -45,10 +29,10 @@ elem.Xml
 ```  
   
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert  
- Ein <xref:System.String>, der den unformatierten XML-Inhalt des Elements darstellt.  
+ <xref:System.String>, die den unformatierten XML-Inhalt des Elements darstellt.  
   
 ## <a name="remarks"></a>Hinweise  
- Diese Eigenschaft entspricht der <xref:System.Xml.Linq.XNode.ToString(System.Xml.Linq.SaveOptions)>-Methode der <xref:System.Xml.Linq.XNode?displayProperty=fullName>-Klasse, wobei der `SaveOptions`-Parametersatz auf <xref:System.Xml.Linq.SaveOptions> festgelegt ist.  
+ Diese Eigenschaft ist identisch mit der <xref:System.Xml.Linq.XNode.ToString(System.Xml.Linq.SaveOptions)>-Methode der <xref:System.Xml.Linq.XNode?displayProperty=fullName>-Klasse, wobei der `SaveOptions`-Parameter auf <xref:System.Xml.Linq.SaveOptions> festgelegt ist.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Dynamische Eigenschaften der XElement-Klasse](../designers/xelement-class-dynamic-properties.md)   

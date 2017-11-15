@@ -1,63 +1,64 @@
 ---
-title: "Gewusst wie: Erstellen eines standardm&#228;&#223;igen Farbshaders | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Vorgehensweise: Erstellen eines standardmäßigen Farbshaders | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-designers
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: c301328a-079a-49e8-b688-4749c01657c0
-caps.latest.revision: 24
-author: "BrianPeek"
-ms.author: "brpeek"
-manager: "ghogen"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 1bb3ee7a4b646e39e22752d336d5414f64551ce0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Erstellen eines standardm&#228;&#223;igen Farbshaders
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-In diesem Dokument wird die Verwendung des Shader\-Designers und der Directed Graph Shader Language \(DGSL\) zur Erstellung eines einfachen Farb\-Shaders veranschaulicht.  Dieser Shader legt die endgültige Farbe auf einen konstanten RGB\-Farbwert fest.  
+# <a name="how-to-create-a-basic-color-shader"></a>Gewusst wie: Erstellen eines standardmäßigen Farbshaders
+In diesem Dokument wird gezeigt, wie der Shader-Designer und die Directed Graph Shader Language (DGSL) zum Erstellen eines flachen Farbshaders verwendet wird. Dieser Shader legt die endgültige Farbe auf einen konstanten RGB-Farbwert fest.  
   
  In diesem Dokument werden die folgenden Aktivitäten veranschaulicht:  
   
--   Knoten aus einem Diagramm entfernen  
+-   Entfernen von Knoten aus einem Diagramm  
   
--   Knoten einem Diagramm hinzufügen  
+-   Hinzufügen von Knoten in ein Diagramm  
   
--   Knoteneigenschaften festlegen  
+-   Einstellen der Knoteneigenschaften  
   
--   Knoten verbinden  
+-   Verbinden der Knoten  
   
-## Erstellen eines einfachen Farb\-Shaders  
- Sie können einen einfachen Farb\-Shader implementieren, indem Sie den Farbwert einer RGB\-Farbkonstante in die endgültige Ausgabefarbe schreiben.  
+## <a name="creating-a-flat-color-shader"></a>Erstellen eines flachen Farbshaders  
+ Sie können einen flachen Farbshader implementieren, indem Sie die Farbwerte einer RGB-Farbkonstante in die endgültige Ausgabefarbe schreiben.  
   
- Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** und der **Werkzeugkasten** angezeigt werden.  
+ Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** und die **Toolbox** angezeigt werden.  
   
-#### So erstellen Sie einen einfachen Farb\-Shader  
+#### <a name="to-create-a-flat-color-shader"></a>So erstellen Sie einen flachen Farbshader  
   
-1.  Erstellen Sie einen DGSL\-Shader, mit dem Sie arbeiten können.  Wie Sie dem Projekt einen DGSL\-Shader hinzufügen, erfahren Sie im Abschnitt "Erste Schritte" in [Shader\-Designer](../designers/shader-designer.md).  
+1.  Erstellen Sie einen DGSL-Shader, mit dem Sie arbeiten können. Wie Sie dem Projekt einen DGSL-Shader hinzufügen, erfahren Sie im Abschnitt „Erste Schritte“ unter [Shader-Designer](../designers/shader-designer.md)  
   
-2.  Löschen Sie den Knoten **Punktfarbe**.  Wählen Sie mit dem Tool **Auswahl** den Knoten **Punktfarbe** aus, und wählen Sie dann in der Menüleiste **Bearbeiten** und anschließend **Löschen** aus.  
+2.  Löschen Sie den Knoten **Punktfarbe**. Verwenden Sie das Tool **Auswählen**, um den Knoten **Punktfarbe** auszuwählen, und klicken Sie anschließend in der Menüleiste auf **Bearbeiten** > **Entfernen**.  
   
-3.  Fügen Sie dem Diagramm einen Knoten **Farbkonstante** hinzu.  Wählen Sie im **Werkzeugkasten** unter **Konstanten** die Option **Farbkonstante** aus und verschieben Sie den Knoten auf die Entwurfsoberfläche.  
+3.  Fügen Sie einen Knoten **Farbkonstante** zum Diagramm hinzu. Klicken Sie in der **Toolbox** unter **Konstanten** auf **Farbkonstante**, und verschieben Sie es auf die Entwurfsoberfläche.  
   
-4.  Geben Sie für den Knoten **Farbkonstante** einen Farbwert an.  Verwenden Sie das Tool **Auswählen**, um den Knoten **Farbkonstante** auszuwählen. Geben Sie dann im Fenster **Eigenschaften** in der Eigenschaft **Ausgabe** einen Farbwert an.  Geben Sie für Orange einen Wert von \(1,0, 0,5, 0,2, 1,0\) an.  
+4.  Geben Sie einen Farbwert für den Knoten **Farbkonstante** an. Verwenden Sie das Tool **Auswählen**, um den Knoten **Farbkonstante** auszuwählen, und geben Sie anschließend im Fenster **Eigenschaften** unter der Eigenschaft **Ausgabe** einen Farbwert an. Geben Sie für Orange einen Wert von (1.0, 0,5, 0,2, 1.0) an.  
   
-5.  Verbinden Sie die Farbkonstante mit der endgültigen Farbe.  Verschieben Sie zum Erstellen der Verbindungen das **RGB**\-Terminal des Knotens **Farbkonstante** in das **RGB**\-Terminal des Knotens **Endgültige Farbe**, und verschieben Sie das **Alpha**\-Terminal des Knotens **Farbkonstante** anschließend zum **Alpha**\-Terminal des Knotens **Endgültige Farbe**.  Diese Verbindungen legen die endgültige Farbe auf die im vorherigen Schritt definierte Farbkonstante fest.  
+5.  Verbinden Sie die Farbkonstante mit der endgültigen Farbe. Verschieben Sie das Terminal **RGB** des Knotens **Farbkonstante** auf das Terminal **RGB** des Knotens **Endgültige Farbe**, um die Verbindungen zu herzustellen. Verschieben Sie anschließend das Terminal **Alpha** des Knotens **Farbkonstante** auf das Terminal **Alpha** des Knotens **Endgültige Farbe**. Diese Verbindungen legen die endgültige Farbe auf die Farbkonstante fest, die im vorherigen Schritt definiert wurde.  
   
- Die folgende Abbildung zeigt das endgültige Shaderdiagramm und eine Vorschau des auf einen Würfel angewendeten Shaders.  
+ In der folgenden Abbildung wird das fertige Shader-Diagramm sowie eine Vorschau eines Würfels gezeigt, auf dem der Shader angewandt wurde.  
   
 > [!NOTE]
->  In der Abbildung wurde eine orangefarbene Farbe verwendet, um die Auswirkungen des Shaders besser zu veranschaulichen.  
+>  In der Abbildung wurde eine orangene Farbe angegeben, um den Effekt des Shaders besser zu veranschaulichen.  
   
- ![Shader&#45;Diagramm und seine Ergebnisse in einem 3D&#45;Modell](../designers/media/digit-flat-color-effect.png "Digit\-Flat\-Color\-Effect")  
+ ![Shader-Diagramm und seine Ergebnisse in einem 3D-Modell](../designers/media/digit-flat-color-effect.png "Digit-Flat-Color-Effect")  
   
- Für einige Shader erzielen Sie mit bestimmte Formen möglicherweise bessere Vorschauen.  Weitere Informationen über die Vorschau von Shadern im Shader\-Designer finden Sie unter [Shader\-Designer](../designers/shader-designer.md)  
+ Bestimmte Formen sorgen vielleicht für bessere Vorschauen für einige Shader. Weitere Informationen zur Verwendung der Vorschau von Shadern im Shader-Designer finden Sie unter [Shader-Designer](../designers/shader-designer.md).  
   
-## Siehe auch  
- [Gewusst wie: Anwenden eines Shaders auf ein 3D\-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
- [Gewusst wie: Exportieren eines Shaders](../designers/how-to-export-a-shader.md)   
- [Shader\-Designer](../designers/shader-designer.md)   
- [Shader\-Designer\-Knoten](../designers/shader-designer-nodes.md)
+## <a name="see-also"></a>Siehe auch  
+ [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
+ [Vorgehensweise: Exportieren eines Shaders](../designers/how-to-export-a-shader.md)   
+ [Shader-Designer](../designers/shader-designer.md)   
+ [Shader-Designer-Knoten](../designers/shader-designer-nodes.md)

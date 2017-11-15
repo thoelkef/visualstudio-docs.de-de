@@ -3,38 +3,20 @@ title: "Tipps und Tricks für die Leistung von Visual Studio | Microsoft-Dokumen
 ms.date: 08/31/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- debugger
+helpviewer_keywords: debugger
 ms.assetid: 2fbcb59e-e981-4b40-8b7a-c1140d31ec4b
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: 173811a4f2d9974755e2432822c801388403ab7c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 4306111cd49a5299bfa5d4e5e22b212bc7799fe2
-ms.openlocfilehash: fbaa543564506a99d3ed6833ec4d1f692fae43f7
-ms.contentlocale: de-de
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Tipps und Tricks für die Leistung von Visual Studio
 
@@ -61,7 +43,7 @@ Wenn sie eine sehr große Projektmappe mit vielen Projekten haben, können Sie v
 
     Um den **Lightweight-Ladevorgang für Projektmappen** zu aktivieren, wählen Sie **Tools > Optionen > Projekte und Projektmappen > Lightweight-Ladevorgang für Projektmappen** aus.
 
-    Einige IDE-Funktionen sind in diesem Modus nicht aktiviert. Um die Nützlichkeit dieser Option zu ermitteln, sollten Sie die Artikel [Shorter solution load time](https://blogs.msdn.microsoft.com/visualstudio/2016/10/11/shorter-solution-load-time-in-visual-studio-15/) (Kürzere Ladezeit für Projektmappen) und [Optimize Solution Loading in Visual Studio](../ide/optimize-solution-loading-in-visual-studio) (Optimieren des Ladens von Projektmappen in Visual Studio) lesen.
+    Einige IDE-Funktionen sind in diesem Modus nicht aktiviert. Um die Nützlichkeit dieser Option zu ermitteln, sollten Sie die Artikel [Shorter solution load time](https://blogs.msdn.microsoft.com/visualstudio/2016/10/11/shorter-solution-load-time-in-visual-studio-15/) (Kürzere Ladezeit für Projektmappen) und [Optimize Solution Loading in Visual Studio](../ide/optimize-solution-loading-in-visual-studio.md) (Optimieren des Ladens von Projektmappen in Visual Studio) lesen.
 
 - **Projekte entladen**
 
@@ -152,4 +134,3 @@ Eine ausführliche Beschreibung des CLR-Garbage Collectors finden Sie unter [Fun
 
 ## <a name="see-also"></a>Siehe auch  
  [Visual Studio-IDE](../ide/index.md)
-

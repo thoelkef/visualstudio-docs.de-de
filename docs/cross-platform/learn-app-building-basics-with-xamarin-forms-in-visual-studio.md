@@ -7,31 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: d428f340cd1c0c990ec196c3c9d84e6f22093805
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 157b900964afc33690b696a08f047c5dd1c2d70d
-ms.contentlocale: de-de
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Erlernen von Grundlagen der App-Erstellung mit Xamarin.Forms in Visual Studio
 Nachdem Sie die Schritte in [Setup and install](../cross-platform/setup-and-install.md) und [Verify your Xamarin environment](../cross-platform/verify-your-xamarin-environment.md)ausgeführt haben, veranschaulicht diese exemplarische Vorgehensweise das Erstellen einer einfachen App (siehe unten) mit Xamarin.Forms. Mit Xamarin.Forms wird Ihr gesamter UI-Code einmal in eine portable Klassenbibliothek (portable class library; PCL) geschrieben. Xamarin rendert dann automatisch die nativen UI-Steuerelemente für iOS-, Android- und Windows-Plattformen. Dieser Ansatz wird empfohlen, da die PCL-Option am besten die Verwendung nur derjenigen .NET-APIs unterstützt, die auf allen Zielplattformen unterstützt werden, und da Xamarin.Forms plattformübergreifend die gemeinsame Nutzung des UI-Codes ermöglicht.  

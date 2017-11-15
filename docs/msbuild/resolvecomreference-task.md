@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/msbuild/2003#ResolveComReference
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#ResolveComReference
 dev_langs:
 - VB
 - CSharp
@@ -19,36 +17,21 @@ helpviewer_keywords:
 - MSBuild, ResolveCOMReference task
 - ResolveCOMReference task [MSBuild]
 ms.assetid: c9bf5fcf-6453-40ea-b50f-a212adc3e9b5
-caps.latest.revision: 26
+caps.latest.revision: "26"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 11a9cee75f912c5fb31cf4a031644abe9c63d744
-ms.openlocfilehash: 2448ac7c838c9ee1a22e7923e130688d24c398f0
-ms.contentlocale: de-de
-ms.lasthandoff: 06/03/2017
-
+ms.openlocfilehash: bb95d43af71a7860f239c56ab3db46a2e3c5e238
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference-Aufgabe
 Akzeptiert eine Liste aus mindestens einem Typbibliotheksnamen oder mindestens einer TLB-Datei und löst diese Bibliotheken an Speicherorten auf Datenträgern auf  
   
 ## <a name="parameters"></a>Parameter  
- In der folgenden Tabelle werden die Parameter der `ResolveCOMReference`-Aufgabe beschrieben.  
+ In der folgenden Tabelle werden die Parameter der `ResolveCOMReference` -Aufgabe beschrieben.  
   
 |Parameter|Beschreibung|  
 |---------------|-----------------|  

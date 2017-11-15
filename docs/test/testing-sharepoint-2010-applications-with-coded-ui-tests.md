@@ -4,35 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
-caps.latest.revision: 30
+caps.latest.revision: "30"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: d3ba0b9ce4366efd386d0b5c1b4d9c3f0094511b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 9364f111bc310b9d57bec88611b795ec22ee2ec7
-ms.contentlocale: de-de
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Testen von SharePoint 2010-Anwendungen mit Tests der programmierten UI
 Durch das Einbeziehen von Tests der programmierten UI in einer SharePoint-Anwendung können Sie sicherstellen, dass die gesamte Anwendung, einschließlich der zugehörigen Benutzeroberflächen-Steuerelemente, richtig funktioniert. Tests der programmierten UI können zudem Werte und Logik auf der Benutzeroberfläche validieren .  
@@ -167,4 +150,3 @@ uiGridKeyboardInputEdit.Text=value;
  [Überprüfen und Debuggen von SharePoint-Code](/office-dev/office-dev/verifying-and-debugging-sharepoint-code)   
  [Erstellen und Debuggen von SharePoint-Lösungen](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)   
  [Profilerstellung für die Leistung von SharePoint-Anwendungen](/office-dev/office-dev/profiling-the-performance-of-sharepoint-applications)
-

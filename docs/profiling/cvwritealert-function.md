@@ -1,36 +1,37 @@
 ---
-title: "CvWriteAlert-Funktion | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "cvmarkers/CvWriteAlertVA"
-  - "cvmarkers/CvWriteAlertVW"
-  - "cvmarkers/CvWriteAlertA"
-  - "cvmarkers/CvWriteAlertW"
-helpviewer_keywords: 
-  - "CvWriteAlertVW-Methode"
-  - "CvWriteAlertA-Methode"
-  - "CvWriteAlertVA-Methode"
-  - "CvWriteAlertW-Methode"
+title: CvWriteAlert-Funktion | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- cvmarkers/CvWriteAlertVA
+- cvmarkers/CvWriteAlertVW
+- cvmarkers/CvWriteAlertA
+- cvmarkers/CvWriteAlertW
+helpviewer_keywords:
+- CvWriteAlertVW method
+- CvWriteAlertA method
+- CvWriteAlertVA method
+- CvWriteAlertW method
 ms.assetid: 937aa9d6-278a-4df3-bef7-151441df16d5
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6a9faf31dea1eeb7b7a613b8e0c963620bc644af
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CvWriteAlert-Funktion
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Schreibt eine Warnung in die Parallelitätsschnellansichts\-Ablaufverfolgungsdatei.  
+# <a name="cvwritealert-function"></a>CvWriteAlert-Funktion
+Schreibt eine Warnung in die Ablaufverfolgungsdatei der Nebenläufigkeitsschnellansicht.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT CvWriteAlertW(  
@@ -56,25 +57,25 @@ HRESULT CvWriteAlertVA(
     _In_ va_list argList);  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `argList`  
- Liste der Argumente.  
+ Liste mit Argumenten.  
   
  `pMarkerSeries`  
- Gültiger Marker\-Reihenkontext.  Darf nicht NULL sein.  
+ Gültiger Markerreihenkontext. Darf nicht NULL sein.  
   
  `pMessage`  
- Nachrichtenformatzeichenfolge.  Darf nicht NULL sein.  
+ Formatzeichenfolge für die Meldung. Darf nicht NULL sein.  
   
-## Rückgabewert  
- S\_OK, wenn die Meldung erfolgreich geschrieben wird.  Fehlercode, sofern dieses alle Fehler auftritt.  Makros der Verwendung SUCCEEDED\/FAILED, auf dem Fehlerzustand zu überprüfen.  
+## <a name="return-value"></a>Rückgabewert  
+ S_OK, wenn die Meldung erfolgreich geschrieben wurde. Fehlercode, wenn Fehler aufgetreten sind. Prüfen Sie mit den Makros SUCCEEDED bzw. FAILED, ob Fehler vorliegen.  
   
-## Anforderungen  
- **Header:**  cvmarkers.h  
+## <a name="requirements"></a>Anforderungen  
+ **Header:** cvmarkers.h  
   
  **Unicode:** CvWriteAlertW, CvWriteAlertVW  
   
  **ANSI:** CvWriteAlertA, CvWriteAlertVA  
   
-## Siehe auch  
- [C\+\+\-Bibliotheksreferenz](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>Siehe auch  
+ [C++-Bibliotheksreferenz](../profiling/cpp-library-reference.md)

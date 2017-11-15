@@ -4,34 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
-caps.latest.revision: 22
+caps.latest.revision: "22"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 0d9e28ee58dde41703f2149534f542b08d55b9ec
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 00f7cd1d45bca63387acc7f38b39b1cb51b4b2be
-ms.contentlocale: de-de
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Aktivieren von Tests der programmierten UI Ihrer Steuerelemente
 Steuerelemente können einfacher getestet werden, wenn Sie Unterstützung für das Framework für den Test der programmierten UI implementieren. Der Umfang der Unterstützung kann schrittweise erweitert werden. Sie können zunächst mit der Unterstützung von Aufzeichnung und Wiedergabe sowie Eigenschaftenvalidierung beginnen. Darauf aufbauend können Sie dem Test-Generator für programmierte UI ermöglichen, die benutzerdefinierten Eigenschaften des Steuerelements zu erkennen, und benutzerdefinierte Klassen bereitstellen, um mit generiertem Code auf diese Eigenschaften zuzugreifen. Außerdem können Sie dazu beitragen, dass Aktionen vom Test-Generator der programmierten UI auf eine Art aufgezeichnet werden, die den Zweck der jeweiligen Aktion genauer widerspiegelt.  
@@ -238,4 +222,3 @@ Steuerelemente können einfacher getestet werden, wenn Sie Unterstützung für d
 ## <a name="see-also"></a>Siehe auch  
  <xref:System.Windows.Forms.AccessibleObject>   
  [Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)
-

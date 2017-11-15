@@ -6,12 +6,11 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
-ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
 ms.openlocfilehash: 366e2c0df83a3e04f5f226a2a24ddced8c85dd2b
-ms.contentlocale: de-de
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="projects-and-solutions"></a>Projekte und Projektmappen
 
@@ -24,7 +23,6 @@ Weitere Informationen zum Erstellen eines neuen Projekts oder einer neuen Projek
 ## <a name="project-and-solution-options"></a>Projekt- und Projektmappenoptionen
 
 Sie können die Eigenschaften von Projekten und Projektmappen verwalten, indem Sie auf den Namen des Projekts oder der Projektmappe doppelklicken, oder indem Sie mit der rechten Maustaste klicken und zu **Optionen** navigieren. Weitere Informationen zu diesen Optionen finden Sie im Thema [Managing Solutions and Project Properties (Verwalten von Projektmappen und Projekteigenschaften)](~/managing-solutions-and-project-properties.md).
-
 
 
 

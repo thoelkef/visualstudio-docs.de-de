@@ -4,40 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- C++
+dev_langs: C++
 ms.assetid: aaea6b8d-55eb-4427-8185-c050f855c257
-caps.latest.revision: 15
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "15"
+author: corob-msft
+ms.author: corob
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: d284309b0243f8d551d06c53d50d5df5de8f3f3c
-ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: b2d86a6025e2ec9c2ba92870939248cf2dffb5b5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="install-visual-c-for-cross-platform-mobile-development"></a>Install Visual C++ for Cross-Platform Mobile Development
+# <a name="install-visual-c-for-cross-platform-mobile-development"></a>Installieren von Visual C++ für die plattformübergreifende mobile Entwicklung
 [Visual C++ für die plattformübergreifende mobile Entwicklung](http://go.microsoft.com/fwlink/p/?LinkId=536383) ist eine installierbare Komponente in Visual Studio 2015. Sie enthält plattformübergreifende Visual Studio-Vorlagen und installiert die plattformübergreifenden Tools und SDKs für den Schnelleinstieg, ohne dass Sie diese suchen, herunterladen und selbst konfigurieren müssen. Mit diesen Tools in Visual Studio können Sie mühelos plattformübergreifende Projekte erstellen, bearbeiten, debuggen und testen. In diesem Thema wird beschrieben, wie Sie die Tools und Drittanbietersoftware installieren, die zum Entwickeln plattformübergreifender Apps mit Visual Studio benötigt werden. Einen Überblick über die Komponente finden Sie unter [Visual Studio C++ – Plattformübergreifende mobile Entwicklung](http://go.microsoft.com/fwlink/p/?LinkId=536387)  
   
  [Anforderungen](#Requirements)   
@@ -99,7 +81,7 @@ ms.lasthandoff: 05/13/2017
     > [!NOTE]
     >  Wenn Ihr Computer oder die Version Ihres Windows-Betriebssystems Hyper-V nicht unterstützt, können Sie die Komponente „Microsoft Visual Studio-Emulator für Android“ verwenden. Die Home Edition der Windows-Betriebssysteme unterstützt Hyper-V nicht.  
   
-5.  Öffnen Sie Visual Studio. Wenn Sie Visual Studio zum ersten Mal ausführen, kann es einige Zeit dauern, bis die Konfiguration abgeschlossen ist und Sie angemeldet werden. Wenn Visual Studio bereit ist, klicken Sie im Menü **Extras** auf **Erweiterungen und Updates**> **Updates**. Wenn Visual Studio-Updates für Visual C++ für die plattformübergreifende mobile Entwicklung oder für den Microsoft Visual Studio-Emulator für Android verfügbar sind, installieren Sie diese.  
+5.  Öffnen Sie Visual Studio. Wenn Sie Visual Studio zum ersten Mal ausführen, kann es einige Zeit dauern, bis die Konfiguration abgeschlossen ist und Sie angemeldet werden. Wenn Visual Studio bereit ist, klicken Sie im Menü **Extras** auf **Erweiterungen und Updates**&gt; **Updates**. Wenn Visual Studio-Updates für Visual C++ für die plattformübergreifende mobile Entwicklung oder für den Microsoft Visual Studio-Emulator für Android verfügbar sind, installieren Sie diese.  
   
 ##  <a name="InstallForiOS"></a> Install tools for iOS  
  Sie können Visual C++ für die plattformübergreifende mobile Entwicklung verwenden, um iOS-Code für den iOS-Simulator oder ein iOS-Gerät zu bearbeiten, zu debuggen und bereitzustellen. Aufgrund von Lizenzeinschränkungen muss der Code jedoch remote auf einem Mac erstellt werden. Zum Erstellen und Ausführen von iOS-Apps mithilfe von Visual Studio müssen Sie den Remote-Agent auf Ihrem Mac einrichten und konfigurieren. Detaillierte Informationen zur Installation, Voraussetzungen und Konfigurationsoptionen finden Sie unter [Install And Configure Tools to Build using iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md). Wenn Sie keinen Code für iOS erstellen, können Sie diesen Schritt überspringen.  
@@ -140,7 +122,7 @@ ms.lasthandoff: 05/13/2017
   
 #### <a name="to-set-the-paths-for-third-party-tools"></a>So legen Sie die Pfade für Drittanbietertools fest  
   
-1.  Wählen Sie in der Menüleiste von Visual Studio **Extras**> **Optionen**aus.  
+1.  Wählen Sie in der Menüleiste von Visual Studio **Extras**&gt; **Optionen**aus.  
   
 2.  Erweitern Sie im Dialogfeld **Optionen** die Option **Plattformübergreifend**&gt; **C++**und wählen Sie **Android**aus.  
   

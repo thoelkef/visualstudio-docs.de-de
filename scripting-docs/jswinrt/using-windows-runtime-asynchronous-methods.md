@@ -5,23 +5,20 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- javascript
+ms.technology: javascript
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- JavaScript, Windows Runtime asynchronous methods
+helpviewer_keywords: JavaScript, Windows Runtime asynchronous methods
 ms.assetid: 70756833-44f7-4383-827f-2ac781558082
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 215a04a2f3f875743a7fbf910a3a565cf34fb558
-ms.contentlocale: de-de
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="using-windows-runtime-asynchronous-methods"></a>Verwenden von asynchronen Methoden von Windows-Runtime
 Viele Windows-Runtime-Methoden, speziell solche, deren Ausführung viel Zeit in Anspruch nimmt, sind asynchron. Die Methoden geben im Allgemeinen eine asynchrone Aktion oder Operation zurück (z. B. `Windows.Foundation.IAsyncAction`, `Windows.Foundation.IAsyncOperation`, `Windows.Foundation.IAsyncActionWithProgress` oder `Windows.Foundation.IAsyncOperationWithProgress`). Diese Methoden werden in JavaScript mithilfe des Musters [CommonJS/Promises/A](http://go.microsoft.com/fwlink/p/?LinkId=244434) dargestellt. Das heißt, dass sie ein Promise-Objekt mit einer [then](https://msdn.microsoft.com/en-us/library/windows/apps/br229728.aspx)-Funktion zurückgeben, für das Sie eine `completed`-Funktion bereitstellen müssen, die das Ergebnis verarbeitet, wenn der Vorgang erfolgreich ist. Wenn Sie keinen Fehlerhandler bereitstellen möchten, sollten Sie statt der `then`-Funktion die [done](https://msdn.microsoft.com/en-us/library/windows/apps/hh701079.aspx)-Funktion verwenden.  

@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 06/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VS.ProjectDependenciesDlg
+f1_keywords: VS.ProjectDependenciesDlg
 helpviewer_keywords:
 - vs.build.projectdependencies
 - project dependencies
@@ -18,30 +16,15 @@ helpviewer_keywords:
 - dependencies, project
 - projects [Visual Studio], dependencies
 ms.assetid: e2a0a8ff-dae7-40a8-b774-b88aa5235183
-caps.latest.revision: 12
-author: kempb
-ms.author: kempb
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d2f4eba36e9069a35cf279ccf1c78f72a51d77a1
-ms.openlocfilehash: 896da11aa3bc92d153608dc09778817a77eaf7d6
-ms.contentlocale: de-de
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: 9762bf8905ad162bd6059fae9ed1b7be06ca7919
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Gewusst wie: Erstellen und Entfernen von Projektabhängigkeiten
 Beim Erstellen einer Projektmappe, die mehrere Projekte enthält, kann es erforderlich sein, bestimmte Projekte zuerst zu erstellen, um Code zu generieren, der von anderen Projekten verwendet wird. Wenn ein Projekt ausführbaren Code verarbeitet, der von einem anderen Projekt generiert wurde, wird auf das generierende Projekt als Projektabhängigkeit des verarbeitenden Projekts verwiesen. Solche Abhängigkeitsbeziehungen können im Dialogfeld **Projektabhängigkeiten** definiert werden.  
@@ -83,5 +66,4 @@ Beim Erstellen einer Projektmappe, die mehrere Projekte enthält, kann es erford
  [Kompilieren und Erstellen](../ide/compiling-and-building-in-visual-studio.md)   
  [Grundlagen der Buildkonfiguration](../ide/understanding-build-configurations.md)   
  [Verwalten von Projekt- und Projektmappeneigenschaften](managing-project-and-solution-properties.md)
-
 

@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,31 +12,17 @@ helpviewer_keywords:
 - run-time errors, warnings
 - warnings, configuring
 ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
-caps.latest.revision: 35
-author: kempb
-ms.author: kempb
+caps.latest.revision: "35"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 89ce216f1273678adf9b97ff789c7d48f3130d77
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 4df81a0d5f6faee7a272abd13ca6e046681b045d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="configuring-warnings-in-visual-basic"></a>Configuring Warnings in Visual Basic
+# <a name="configuring-warnings-in-visual-basic"></a>Konfigurieren von Warnungen in Visual Basic
 Der [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Compiler enthält eine Reihe von Warnungen zu Code, der möglicherweise Laufzeitfehler verursacht. Mithilfe dieser Informationen können Sie saubereren, schnelleren und besseren Code mit weniger Fehlern schreiben. So gibt der Compiler z.B. eine Warnung aus, wenn der Benutzer versucht, einen Member einer nicht zugewiesenen Objektvariablen aufzurufen, eine Funktion ohne Angabe eines Rückgabewerts zu beenden oder einen `Try`-Block auszuführen, der Programmfehler im Code für das Abfangen von Ausnahmen enthält.  
   
  In einigen Fällen stellt der Compiler auch zusätzliche Funktionen bereit, die es dem Benutzer ermöglichen, sich auf die konkrete Aufgabe zu konzentrieren, statt sich um möglicherweise auftretende Fehler zu kümmern. In früheren Versionen von [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] wurde `Option Strict` verwendet, um die zusätzlichen Funktionen einzuschränken, die der [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]-Compiler bietet. Durch die Konfiguration von Warnungen können Sie diese Funktionalität auf der Ebene der einzelnen Warnungen und somit wesentlich genauer kontrollieren.  

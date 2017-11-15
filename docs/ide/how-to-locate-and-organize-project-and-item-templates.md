@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 06/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -16,30 +15,15 @@ helpviewer_keywords:
 - project templates [Visual Studio], displaying
 - templates [Visual Studio], locations
 ms.assetid: 71f9ed52-c9c9-4818-9bce-c279ffaa0438
-caps.latest.revision: 25
-author: kempb
-ms.author: kempb
+caps.latest.revision: "25"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 07ff2413503209d6ade252ac89dbfbe2589e7e85
-ms.openlocfilehash: 2ca380e99f820f99fbcd5059e271fa34c8ce1a72
-ms.contentlocale: de-de
-ms.lasthandoff: 06/02/2017
-
+ms.openlocfilehash: 1846b145833a7474e8662442313d0e39a262e67c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Gewusst wie: Suchen und Organisieren von Projekt- und Elementvorlagen
 Vorlagendateien müssen an einem Speicherort abgelegt werden, an dem Visual Studio nach den Vorlagen sucht, damit sie im Dialogfeld **Neues Projekt** und **Neues Element hinzufügen** angezeigt werden können. Sie können benutzerdefinierte Unterkategorien für Vorlagen erstellen, damit die Unterkategorien auch auf der Benutzeroberfläche angezeigt werden.  
@@ -153,7 +137,7 @@ Vorlagendateien müssen an einem Speicherort abgelegt werden, an dem Visual Stud
 
 3.  Erstellen Sie ein Projekt, oder öffnen Sie ein vorhandenes Projekt.  
 
-4.  Klicken Sie im Menü Projekt auf Neues Element hinzufügen.  
+4.  Klicken Sie im Menü **Projekt** auf **Neues Element hinzufügen**.  
 
 5.  Stellen Sie sicher, dass die Kategorie „HelloWorld“ im Dialogfeld **Neues Element hinzufügen** im Bereich **Projekttypen** angezeigt wird.  
 
@@ -194,4 +178,3 @@ Vorlagendateien müssen an einem Speicherort abgelegt werden, an dem Visual Stud
  [NumberOfParentCategoriesToRollUp (Visual Studio-Vorlagen)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)   
  [Vorgehensweise: Erstellen von Projektvorlagen](../ide/how-to-create-project-templates.md)   
  [Gewusst wie: Erstellen von Elementvorlagen](../ide/how-to-create-item-templates.md)
-

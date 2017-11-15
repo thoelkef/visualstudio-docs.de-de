@@ -1,45 +1,12 @@
 ---
-title: Erste Schritte mit Visual Studio | Microsoft-Dokumentation
-description: Lernen Sie die Grundlagen zum Einstieg in Visual Studio kennen
-ms.custom: 
-ms.date: 03/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- Visual Studio, getting started
-ms.assetid: 38e90339-1da5-410c-8ba4-437fc556cba7
-caps.latest.revision: 65
-author: kempb
-ms.author: kempb
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 078619c93e18fd25dfbc728d75835f5af58988fe
-ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
-
+redirect_url: ../ide/visual-studio-ide
+ms.openlocfilehash: a615a3a6da289f265e350d529349f1fb6ba6865f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="get-started-with-visual-studio"></a>Erste Schritte mit Visual Studio
-
 Visual Studio ist ein leistungsstarkes Tool zum Entwickeln von Apps. Wenn Sie es noch nicht getan haben, sollten Sie gleich loslegen und [Visual Studio](https://www.visualstudio.com/vs/) herunterladen und installieren. Weitere Informationen zum Herunterladen von Visual Studio und zum Vornehmen der gewünschten Konfigurationen finden Sie im Video [Getting Started with Visual Studio – Setting up your IDE](https://www.youtube.com/watch?v=xLCedknQkN0&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=1) (Erste Schritte mit Visual Studio: Einrichten der IDE).
 
 ## <a name="visual-studio-tour"></a>Visual Studio-Tour
@@ -48,32 +15,31 @@ Visual Studio weist eine Reihe von Toolfenstern, Menüs und Symbolleisten auf, d
 ### <a name="code-editor"></a>Code-Editor
 Eins der besonders intensiv verwendeten Toolfenster in Visual Studio – dies ist der Ort, an dem Sie Ihren Code erstellen, anzeigen und in ihm navigieren.
 
-![Code-Editor](~/ide/media/VSIDE_CodeWindow.png)
+![Code-Editor](../ide/media/VSIDE_CodeWindow.png)
 
 Wenn Sie Code eingeben, hilft Ihnen der Code-Editor mithilfe von Features wie Anweisungsvervollständigung, farbiger Syntaxhervorhebung, Zuordnungsmodus und mehr, Ihren Code schneller und einfacher zu erstellen und zu finden. Weitere Informationen finden Sie im Video [Getting Started with Visual Studio - Editing and navigating your code](https://www.youtube.com/watch?v=4glwwioCVjA&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=5) (Erste Schritte mit Visual Studio: Bearbeiten von und Navigieren in Code)
 
 Einige Projektmappentypen enthalten möglicherweise als *Formulare* bezeichnete Fenster, z.B. Formulare für Windows Presentation Foundation (WPF), Windows-Formulare, Formulare für Extensible Application Markup Language (XAML) und andere. In diesen Fällen finden Sie in diesem Bereich auch einen visuellen Designer, in dem Sie Steuerelemente wie Schaltflächen und Listenfelder auf das Formular, mit dem Benutzer bei der Ausführung Ihrer App interagieren können, ziehen und dort ablegen können.
 
 ### <a name="solution-explorer"></a>Projektmappen-Explorer
-
 Ein Toolfenster mit dem Namen **Projektmappen-Explorer** listet Ihre sämtlichen Codedateien auf. Der Projektmappen-Explorer kann Sie beim Ordnen Ihres Codes unterstützen, indem er dessen Dateien in Projektmappen und Projekte gruppiert. Das fett formatierte Projekt wird als *Startprojekt* bezeichnet. Das ist der erste Code, der beim Starten Ihrer Projektmappe ausgeführt wird. Sie können das Startprojekt ändern. Weitere Informationen finden Sie im Video [Getting Started with Visual Studio – Building blocks of the IDE](https://www.youtube.com/watch?v=JHc3_gsCmZg&index=2&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK) (Erste Schritte mit Visual Studio: Bausteine der IDE)
 
-![Zugeklappte Knoten im Projektmappen-Explorer](~/ide/media/VSIDE_SolutionExplorer2_callouts.png)
+![Zugeklappte Knoten im Projektmappen-Explorer](../ide/media/VSIDE_SolutionExplorer2_callouts.png)
 
  Über Projektmappen und Projekte hinaus sind im Projektmappen-Explorer alle Dateien in den einzelnen Projekten aufgelistet, wenn Sie den Knoten des jeweiligen Projekts aufklappen. Jedes Projekt enthält mindestens eine Datei, meistens aber mehrere, wie etwa Quellcodedateien und Ressourcendateien, so etwa Bilder und Bibliotheken.
 
-![Projektmappen-Explorer](~/ide/media/VSIDE_SolutionExplorer3.png)
+![Projektmappen-Explorer](../ide/media/VSIDE_SolutionExplorer3.png)
 
 Um Eigenschaften für Projektmappen, Projekte und Dateien anzuzeigen, wählen Sie im Kontextmenü (das Sie über die rechte Maustaste erreichen) den Befehl **Eigenschaften** aus, oder wählen Sie im Menü **Ansicht > Eigenschaftenfenster** aus.
 
-![Eigenschaftenfenster](~/ide/media/VSIDE_SolutionExplorer4.png)
+![Eigenschaftenfenster](../ide/media/VSIDE_SolutionExplorer4.png)
 
 Sie brauchen aber keine Projektmappe und kein Projekt zu erstellen, um mit der Codeerstellung zu beginnen. Sie können einfach direkt einsteigen und Codedateien in Visual Studio öffnen, z. B. aus einem Git-Repository geklonte Dateien, und direkt mit der Bearbeitung beginnen. Die Dateien werden im Projektmappen-Explorer angezeigt und erhalten farbige Syntaxhervorhebung, einfache Anweisungsvervollständigung und mehr, ganz wie herkömmliche Projektmappen. Weitere Informationen finden Sie unter [Entwickeln von Code in Visual Studio ohne Projekte oder Projektmappen](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
 
 ### <a name="toolbar-and-menus"></a>Symbolleisten und Menüs
 Um Ihr Projekt auszuführen, neue Projektmappen zu erstellen, Dateien zu speichern und mehr, verwenden Sie die Symbolleiste und die Menübefehle von Visual Studio. Sobald Ihr Code beispielsweise zur Ausführung zum Debuggen bereit ist, können Sie die Schaltfläche **Start** auf der Symbolleiste oder im Menü **Debuggen > Debuggen starten** auswählen. Um eine neue Projektmappe zu erstellen, wählen Sie die Schaltfläche **Neues Projekt** oder im Menü **Datei > Neues Projekt** usw. aus.
 
-![Visual Studio-Symbolleiste](~/ide/media/VSIDE_SolutionExplorer5_callouts.png)
+![Visual Studio-Symbolleiste](../ide/media/VSIDE_SolutionExplorer5_callouts.png)
 
 Beachten Sie, dass sich die Symbole der Symbolleiste und die in Menüs verfügbaren Befehle abhängig vom Kontext – das ist das aktuell ausgewählte Element – ändern können. Fast alle Befehle können sowohl über Tastenkombinationen als auch per Maus aufgerufen werden.
 
@@ -87,7 +53,7 @@ Weitere Informationen finden Sie in den Videos [Getting Started with Visual Stud
 ### <a name="output-window"></a>Ausgabefenster
 Das Fenster **Ausgabe** ist der Ort, an den Visual Studio Benachrichtigungen sendet, z. B. Debug- und Fehlermeldungen, Compilerwarnungen, Nachrichten zum Veröffentlichungsstatus und mehr. Jeder Nachrichtentyp verfügt über eine eigene Registerkarte.
 
-![Ausgabefenster](~/ide/media/VSIDE_OutputWindow.png)
+![Ausgabefenster](../ide/media/VSIDE_OutputWindow.png)
 
 Weitere Informationen zum Verwenden des Ausgabefensters beim Debuggen finden Sie unter [The Output window while debugging with Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2015/02/09/the-output-window-while-debugging-with-visual-studio/) (Das Ausgabefenster beim Debuggen mit Visual Studio).
 
@@ -100,12 +66,11 @@ Weitere Informationen zum Verwenden des Ausgabefensters beim Debuggen finden Sie
 - **Videos**: Mehr Informationen über weitere Features und Aspekte von Visual Studio finden Sie in den Videos im [Microsoft Visual Studio-Kanal](https://www.youtube.com/user/VisualStudio/videos) auf YouTube, den Visual Studio-Videos auf [Channel 9](https://channel9.msdn.com/Tags/visual+studio) oder in der [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!jobf=Developer).
 
 ## <a name="access-cloud-based-resources"></a>Zugriff auf cloudbasierte Ressourcen
-
 Wenn Sie cloudbasierte Ressourcen in Ihrer App oder Ihrem Spiel verwenden möchten, können Sie dies durch die Aufnahme von [Azure-Diensten](https://azure.microsoft.com/en-us/services/) erreichen. Sie können das Azure SDK für .NET nutzen, indem Sie mithilfe des neuen Visual Studio-Installationsprogramms die Arbeitsauslastung für **Azure-Entwicklung** installieren. Die Pakete, die installiert werden, befinden sich auf der gleichen Funktionsebene wie die 2.9.5-Version des SDKs. Bei dieser und allen zukünftigen Versionen von Visual Studio ist das Azure SDK für .NET nur vom Visual Studio-Installer aus verfügbar.
 
 Nach dem Installieren der Arbeitsauslastung für Azure-Entwicklung ist in Visual Studio ein neues Toolfenster mit dem Namen **Cloud-Explorer** verfügbar. Mit Cloud-Explorer können Sie Ihre Azure-Objekte und Ressourcen aus Visual Studio heraus durchsuchen und verwalten. Wenn für einen bestimmten Vorgang das Azure-Portal erforderlich ist, stellt Cloud-Explorer Verknüpfungen bereit, mit denen Sie an den richtigen Ort im Azure-Portal gelangen.
 
-![Cloud-Explorer](~/ide/media/VSIDE_CloudExplorer.png)
+![Cloud-Explorer](../ide/media/VSIDE_CloudExplorer.png)
 
 Weitere Informationen zur Verwendung von Cloud-Explorer finden Sie unter [Verwalten von Azure-Ressourcen mit dem Cloud-Explorer](https://azure.microsoft.com/en-us/documentation/articles/vs-azure-tools-resources-managing-with-cloud-explorer/).
 Durch das Installieren der Arbeitsauslastung für Azure-Entwicklung erhalten Sie außerdem Zugriff auf die [Visual Studio Tools für Azure](https://www.visualstudio.com/vs/azure-tools/) sowie auf weitere zugehörige Tools.
@@ -118,4 +83,3 @@ Abkürzungen und praktische Tipps und Tricks, mit denen Sie Visual Studio besser
 - [C++ Debugging Tips and Tricks](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/C-Plus-Plus-Debugging-Tips-and-Tricks) (Tipps und Tricks zum Debuggen in C++)
 - [Äußerst nützliche (und viel zu wenig genutzte) Tipps zu Visual Studio [Blog von Scott Hanselman]](https://www.hanselman.com/blog/VisualStudiosMostUsefulAndUnderusedTips.aspx)
 - [Getting Started with Visual Studio - Installing Visual Studio extensions](https://www.youtube.com/watch?v=MWLLQaknRZY&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=7) (Erste Schritte mit Visual Studio: Installieren von Visual Studio Extensions)
-

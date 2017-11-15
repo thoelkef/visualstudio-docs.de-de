@@ -1,60 +1,60 @@
 ---
-title: "Gewusst wie: Vergleichen der Profilerdatendateien | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vsperf.choosediffbinaries"
-helpviewer_keywords: 
-  - "Profilerergebnisdateien, Gewusst wie: Vergleichen"
-  - "Profilerstellungstools, Gewusst wie: Vergleichen der Profilerergebnisdateien"
+title: 'Vorgehensweise: Vergleichen von Leistungsdatendateien | Microsoft-Dokumentation'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vsperf.choosediffbinaries
+helpviewer_keywords:
+- profiling tools, how to compare profiler result files
+- profiler result files, how to compare
 ms.assetid: 1905b45d-c6b3-43c8-87b1-1aee734f37f9
-caps.latest.revision: 20
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 20
+caps.latest.revision: "20"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b045646ffb5771d40cd7531d01ed33181dff9cc9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Vergleichen der Profilerdatendateien
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Sie können die Ergebnisse aus zwei unterschiedlichen Profilerdatendateien \(.vsp oder .vsps\) vergleichen, indem Sie einen Vergleichsbericht \("Diff"\) oder eine Vergleichsansicht erstellen.  Der Vergleich zeigt die Unterschiede, Leistungsregressionen und Verbesserungen an, die zwischen beiden Profilerstellungssitzungen aufgetreten sind.  
+# <a name="how-to-compare-performance-data-files"></a>Vorgehensweise: Vergleichen von Leistungsdatendateien
+Sie können die Ergebnisse von zwei unterschiedlichen Profilerdatendateien (.vsp oder .vsps) vergleichen, indem Sie einen Vergleichsbericht („Diff“) oder eine Ansicht erstellen. Der Vergleich zeigt die Unterschiede, Leistungsabnahmen und -verbesserungen, die von einer Profilerstellungssitzung in die andere aufgetreten sind.  
   
- Der Unterschiedsbericht enthält eine Tabellenansicht der Daten.  In der Tabelle wird das Delta bzw. die Abweichung von der Baseline dargestellt.  Zur Berechnung wird der Unterschied zwischen dem alten Wert, dem Baselinewert, und dem Ergebniswert aus der neuen Analyse ermittelt.  
+ Der Unterschiedsbericht enthält eine Tabellenansicht der Daten. In der Tabelle wird das Delta bzw. die Abweichung von der Baseline dargestellt. Zur Berechnung wird der Unterschied zwischen dem alten Wert, dem Baselinewert und dem Ergebniswert aus der neuen Analyse ermittelt.  
   
- Vergleiche der Profilerdaten können auf den Funktionen im Code, den Modulen in der Anwendung, Zeilen, Anweisungszeigern \(IPs\) und Typen basieren.  
+ Vergleiche der Profilerdaten können auf den Funktionen im Code, den Modulen in der Anwendung, Zeilen, Anweisungszeigern (IPs) und Typen basieren.  
   
- Ein Schwellenwert kann festgelegt werden, um Störungen zu reduzieren und alle Daten in der Tabellenansicht der Zeilen herauszufiltern, bei denen keine Änderung um einen bestimmten Wert feststellbar ist.  
+ Es kann ein Schwellenwert festgelegt werden, um Störungen zu reduzieren und alle Daten in der Tabellenansicht der Zeilen herauszufiltern, bei denen keine Änderung um einen bestimmten Wert feststellbar ist.  
   
-### So erstellen Sie für ein Projekt eine Vergleichsdateiansicht im Leistungs\-Explorer  
+### <a name="to-create-comparison-file-view-for-a-project-in-performance-explorer"></a>So erstellen Sie eine Vergleichsdatei für ein Projekt im Leistungs-Explorer.  
   
-1.  Wählen Sie im **Leistungs\-Explorer** unter **Berichte** die VSP\- oder VSPS\-Berichtsdatei aus, die die Baselinewerte für den Vergleich liefern soll.  
+1.  Wählen Sie im **Leistungs-Editor** unter **Berichte** die VSP- oder VSPS-Berichtsdatei aus, die Sie als Baselinewert für den Vergleich verwenden möchten.  
   
-2.  Wählen Sie die VSP\- oder VSPS\-Berichtsdateien aus, die Sie vergleichen möchten.  
+2.  Wählen Sie die VSP- oder VSPS-Berichtsdateien, die Sie vergleichen möchten.  
   
-3.  Klicken Sie mit der rechten Maustaste auf eine der ausgewählten Dateien, und klicken Sie dann auf **Berichte vergleichen**.  
+3.  Klicken Sie mit der rechten Maustaste auf ausgewählten Dateien, und wählen Sie **Berichte vergleichen** aus.  
   
-### So vergleichen Sie Werte  
+### <a name="to-compare-values"></a>So vergleichen Sie Werte  
   
-1.  Wählen Sie die Registerkarte **Vergleichsbericht** im Berichtsansichtsfenster.  
+1.  Wählen Sie im Fenster „Berichtsansicht“ die Registerkarte **Vergleichsbericht**.  
   
-2.  Wählen Sie in der Dropdownliste **Tabelle** entweder die Funktion oder die Module für den Vergleich aus.  
+2.  Wählen Sie in der Dropdownliste **Tabelle** entweder Funktionen oder Module für den Vergleich.  
   
 3.  Wählen Sie in der Dropdownliste **Spalte** den Wert aus, den Sie vergleichen möchten.  
   
-4.  \(optional\) Geben Sie einen Wert für **Schwellenwert** ein.  
+4.  (Optional) Geben Sie einen Wert für **Schwellenwert** ein.  
   
 5.  Klicken Sie auf **Übernehmen**.  
   
-### So vergleichen Sie Berichtsdateien  
+### <a name="to-compare-report-files"></a>So vergleichen Sie Berichtsdateien  
   
-1.  Wählen Sie im Menü **Analyse Leistungsberichte vergleichen** aus.  
+1.  Klicken Sie im Menü **Analysieren** auf **Leistungsberichte vergleichen**.  
   
-2.  Wählen Sie im Fenster **Analysedateien für Vergleich auswählen** die Analysedatei **Baselinedatei** \(.vsp oder .vsps\) und die **Vergleichsdatei** \(.vsp oder .vsps\) aus.  
+2.  Durchsuchen und wählen Sie im Fenster **Analysedateien für Vergleich auswählen** die Analysedatei **Baselinedatei** und **Vergleichsdatei** (.vsp oder .vsps) aus.  
   
 3.  Klicken Sie auf **OK**.

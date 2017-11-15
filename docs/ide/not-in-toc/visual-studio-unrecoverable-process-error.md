@@ -11,23 +11,20 @@ dev_langs:
 - CSharp
 - C++
 - aspx
-helpviewer_keywords:
-- editor
+helpviewer_keywords: editor
 ms.assetid: 2263956f-3ae0-4bdc-9d3a-4991dfaf4ddb
-caps.latest.revision: 29
+caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.technology:
-- vs-ide-general
-ms.translationtype: Human Translation
-ms.sourcegitcommit: b5f39ea962f6b4dcc0e2c6947b2eeabf53d3329a
-ms.openlocfilehash: ba0a0aacc68e2eb9a5cd9b5b672808a71e8c09eb
-ms.contentlocale: de-de
-ms.lasthandoff: 03/01/2017
-
+ms.technology: vs-ide-general
+ms.openlocfilehash: 8750d16a485de062e66041e66e28fa591e957efd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="visual-studio-unrecoverable-process-error"></a>Nicht behebbare Prozessfehler in Visual Studio
+# Nicht behebbare Prozessfehler in Visual Studio
 
 Visual Studio 2017 verwendet mehrere Out-of-Proc-Prozesse, um die erforderlichen Hintergrundaufgaben, wie z.B. Live-Komponententests, Code-Analyzer und mehr auszuführen. Diese Prozesse werden Out-of-Proc ausgeführt, um Leistungsvorteile von Visual Studio zu nutzen, z.B. dass Visual Studio schneller reagieren kann, wenn ressourcenintensive, langfristige Jobs ausgeführt werden. Da Visual Studio ein 32-Bit-Prozess ist, bietet die Out-of-Proc-Ausführung von Prozessen anspruchsvollen speicherintensiven Arbeiten einen größeren Speicherplatz, in dem ausgeführt werden soll.
 
@@ -37,7 +34,7 @@ Wenn einer dieser erforderlichen Prozesse aus irgendeinem Grund endet, wird eine
 
 Wenn diese Meldung angezeigt wird, müssen Sie Ihre Arbeit sofort speichern, und anschließend Visual Studio schließen und neu starten. Wenn Sie dies nicht tun, kann Visual Studio jederzeit abstürzen.
 
-## <a name="list-of-processes"></a>Liste der Prozesse
+## Liste der Prozesse
 
 Es folgt eine Liste der von Visual Studio verwendeten Out-of-Proc-Prozesse, die ausgeführt werden müssen, sodass Visual Studio ordnungsgemäß arbeitet.
 
@@ -53,4 +50,3 @@ Es folgt eine Liste der von Visual Studio verwendeten Out-of-Proc-Prozesse, die 
 - WindowsAzureGuestAgent.exe
 - WindowsAzureTelemetryService.exe
 - WaAppAgent.exe
-

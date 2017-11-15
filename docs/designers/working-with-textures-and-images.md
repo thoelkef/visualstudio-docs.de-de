@@ -4,42 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-designers
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: b9fbc8fa-66d1-4055-8460-24d8b8fbe43e
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 2cb4836ae868d56147a82fcefa0c5546bfcf8cad
-ms.contentlocale: de-de
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 92d133d688ad009dae1b4e518bdd8c749ebc329f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="working-with-textures-and-images"></a>Arbeiten mit Texturen und Bildern
 Sie können die Bildbearbeitung in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zum Erstellen und Bearbeiten von Texturen und Bildern verwenden. Die Bildverarbeitung unterstützt aufwändige Textur- und Bildformate, wie solche, die in der Entwicklung von DirectX-Apps zum Einsatz kommen.  
   
 > [!NOTE]
->  Die Bildverarbeitung unterstützt keine Bilder mit geringer Farbtiefe, wie Symbole oder Cursor. Zum Erstellen oder Ändern dieses Typs Bilder können Sie die [Bildbearbeitung für Symbole](/cpp/windows/image-editor-for-icons) verwenden.  
+>  Die Bildverarbeitung unterstützt keine Bilder mit geringer Farbtiefe, wie Symbole oder Cursor. Zum Erstellen oder Ändern dieses Typs Bilder können Sie den [Image Editor for Icons](/cpp/windows/image-editor-for-icons)verwenden.  
   
 ## <a name="textures-and-images"></a>Texturen und Bilder  
  Texturen und Bilder sind, grundlegend betrachtet, nur Tabellen von Daten, die dazu dienen, visuelle Details in Apps mit grafischer Benutzeroberfläche bereitzustellen. Die Art von Detail, die von einer Textur oder einem Bild bereitgestellt wird, hängt vom Einsatzzweck ab, aber Farbmuster, Alphawerte (Transparenz), Oberflächennormale und Höhenwerte stellen gängige Beispiele dar. Der wichtigste Unterschied zwischen einer Textur und einem Bild besteht darin, dass eine Textur für die Verwendung in Kombination mit der Darstellung einer Form bestimmt ist – normalerweise einem 3D-Modell –, um ein vollständiges Objekt oder eine Szene darzustellen, während ein Bild normalerweise eine eigenständige Darstellung des Objekts oder der Szene ist.  

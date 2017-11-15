@@ -1,77 +1,78 @@
 ---
-title: "Gewusst wie: Erstellen eines standardm&#228;&#223;igen Phong-Shaders | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Vorgehensweise: Erstellen eines standardmäßigen Phong-Shaders | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-designers
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
-caps.latest.revision: 13
-author: "BrianPeek"
-ms.author: "brpeek"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 29def0d3aef8a097f5b956bd43df7d8b53abebb9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Erstellen eines standardm&#228;&#223;igen Phong-Shaders
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Dieses Dokument veranschaulicht, wie Sie den Shader\-Designer und die Directed Graph Shader Language \(DGSL\) verwenden, um einen Beleuchtungs\-Shader zu erstellen, der das klassische Phong\-Beleuchtungsmodell implementiert.  
+# <a name="how-to-create-a-basic-phong-shader"></a>Gewusst wie: Erstellen eines standardmäßigen Phong-Shaders
+In diesem Dokument wird gezeigt, wie der Shader-Designer und die Directed Graph Shader Language (DGSL) zum Erstellen eines Beleuchtungsshaders, der das klassische Phong-Beleuchtungsmodell implementiert, verwendet wird.  
   
  In diesem Dokument werden die folgenden Aktivitäten veranschaulicht:  
   
--   Hinzufügen von Knoten einem Shaderdiagramm  
+-   Hinzufügen von Knoten in ein Shader-Diagramm  
   
--   Trennen von Knoten  
+-   Trennen der Knoten  
   
--   Knoten verbinden  
+-   Verbinden der Knoten  
   
-## Das Phong\-Beleuchtungsmodell  
- Das Phong\-Beleuchtungsmodell erweitert das Lambert\-Beleuchtungsmodell um Glanzlichter, die die reflektierenden Eigenschaften einer Oberfläche simulieren.  Die Glanzlichtkomponente bietet eine zusätzliche Beleuchtung aus denselben direktionalen Lichtquellen, die im Lambert\-Beleuchtungsmodell verwendet werden, jedoch ist sein Beitrag zur endgültigen Farbe ist anders verarbeitet.  Glanzlichter hat auf jede Oberfläche in der Szene anders, je nach Beziehung zwischen der Ansichtsrichtung, der Richtung der Lichtquellen und Ausrichtung der Oberfläche.  Sie ergeben sich aus der Glanzlichtfarbe, der Glanzlichtstärke und der Ausrichtung der Oberfläche und der Farbe, Intensität und Richtung der Lichtquellen.  Oberflächen, die die Lichtquelle direkt beim Betrachter reflektieren, erhalten die maximale Spiegelbeitrag und Oberflächen, die die Lichtquelle weg vom Betrachter reflektieren, erhalten keine Glanzlichter.  Im Phong\-Beleuchtungsmodell werden eine oder mehrere Glanzlichterkomponenten kombiniert, um die Farbe und die Intensität der Glanzlichter an jedem Punkt auf dem Objekt zu ermitteln und sie zum Ergebnis des Lambert\-Beleuchtungsmodells hinzuzufügen, um die endgültige Farbe des Pixels zu erzeugen.  
+## <a name="the-phong-lighting-model"></a>Das Phong-Beleuchtungsmodell  
+ Das Phong-Beleuchtungsmodell erweitert das Lambert-Beleuchtungsmodell, indem es Glanzlichter hinzufügt, die die reflektierenden Eigenschaften einer Oberfläche simulieren. Die glänzende Komponente sorgt für zusätzliche Beleuchtung aus den gleichen diffusen Lichtquellen, die im Lambert-Beleuchtungsmodell verwendet werden. Jedoch wird sein Beitrag zur endgültigen Farbe unterschiedlich verarbeitet. Aufgrund der Beziehung zwischen der Blickrichtung, der Richtung der Lichtquellen und der Ausrichtung der Oberfläche, wirken sich Glanzlichter auf jede Oberfläche in der Szene unterschiedlich aus. Es ist ein Produkt aus der glänzenden Farbe, der Glanzkraft und Ausrichtung der Oberfläche sowie der Farbe, Intensität und Ausrichtung der Lichtquelle. Oberflächen, die die Lichtquelle direkt auf den Betrachter reflektieren, erhalten die maximale Glanzwirkung, während Oberflächen, die die Lichtquelle vom Betrachter weglenken, keine Wirkung erhalten. Unter dem Phong-Beleuchtungsmodell werden eine oder mehrere glänzende Komponenten kombiniert, um die Farbe und Intensität des Glanzlichts für jeden Punkt auf dem Objekt festzulegen und werden anschließend zum Ergebnis des Lambert-Beleuchtungsmodells hinzugefügt, um die endgültige Farbe des Pixels zu erzeugen.  
   
- Weitere Informationen zum Lambert\-Beleuchtungsmodell finden Sie unter [Gewusst wie: Erstellen eines Lambert\-Shaders](../designers/how-to-create-a-basic-lambert-shader.md).  
+ Weitere Informationen zum Lambert-Beleuchtungsmodell finden Sie unter [Vorgehensweise: Erstellen eines standardmäßigen Lambert-Shaders](../designers/how-to-create-a-basic-lambert-shader.md).  
   
- Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** und der **Werkzeugkasten** angezeigt werden.  
+ Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** und die **Toolbox** angezeigt werden.  
   
-#### So erstellen Sie einen Phong\-Shader  
+#### <a name="to-create-a-phong-shader"></a>So erstellen Sie einen Phong-Shader  
   
-1.  Erstellen Sie einen Lambert\-Shader, wie in [Gewusst wie: Erstellen eines Lambert\-Shaders](../designers/how-to-create-a-basic-lambert-shader.md) beschrieben.  
+1.  Erstellen Sie einen Lambert-Shader wie es unter [Vorgehensweise: Erstellen eines standardmäßigen Lambert-Shaders](../designers/how-to-create-a-basic-lambert-shader.md) beschrieben wird.  
   
-2.  Trennen Sie den Knoten **Lambert** vom Knoten **Endgültige Farbe**.  Wählen Sie das **RGB** Terminal des Knotens **Lambert**, und dann **Zeilen umbrechen** aus.  Dadurch wird Platz für den Knoten geschaffen, der im nächsten Schritt hinzugefügt wird.  
+2.  Trennen Sie den Knoten **Lambert** vom Knoten **Endgültige Farbe**. Klicken Sie auf das Terminal **RGB** des Knotens **Lambert** und anschließend auf **Link aufheben**. Dadurch wird Platz für den Knoten geschaffen, der im nächsten Schritt hinzugefügt wird.  
   
-3.  Fügen Sie einem Knoten **Hinzufügen** Diagramm hinzu.  In **Werkzeugkasten** unter **Berechnungen**, wählen Sie **Hinzufügen** aus und verschieben Sie es auf die Entwurfsoberfläche.  
+3.  Fügen Sie einen Knoten **Hinzufügen** in das Diagramm ein. Klicken Sie in der **Toolbox** unter **Mathematik** auf **Hinzufügen**, und verschieben Sie es auf die Entwurfsoberfläche.  
   
-4.  Fügen Sie dem Diagramm den Knoten **Glanz** hinzu.  Wählen Sie im **Werkzeugkasten** unter **Hilfsprogramm** das Werkzeug **Glanz** aus, und verschieben Sie es auf die Entwurfsoberfläche.  
+4.  Fügen Sie einen Knoten **Glanz** in das Diagramm ein. Klicken Sie in der **Toolbox** unter **Hilfsprogramme** auf **Glanz**, und verschieben Sie es auf die Entwurfsoberfläche.  
   
-5.  Fügen Sie Glanzlichter hinzu.  Verschieben Sie das **Ausgabe** Terminal des Knotens **Glanz** auf das Terminal **X** des Knotens **Hinzufügen**, und verschieben Sie das **Ausgabe** Terminal des Knotens **Lambert** auf das Terminal **Y** des Knotens **Hinzufügen**.  Diese Verbindungen kombinieren sich Rechnen diffuse die auf und Glanzfarbenbeiträge zum Pixel.  
+5.  Fügen Sie die Glanzwirkung hinzu. Verschieben Sie das Terminal **Ausgabe** des Knotens **Glanz** auf das Terminal **X** des Knotens **Hinzufügen**. Verschieben Sie anschließend das Terminal **Ausgabe** des Knotens **Lambert** auf das Terminal **Y** des Knotens **Hinzufügen**. Diese Verbindungen kombinieren die gesamten diffusen und glänzenden Farbeinwirkungen für das Pixel.  
   
-6.  Verbinden Sie den berechneten Farbwert mit der endgültigen Farbe.  Verschieben Sie das **Ausgabe** Terminal des Knotens **Hinzufügen** auf das Terminal **RGB** des Knotens **Endgültige Farbe**.  
+6.  Verbinden Sie den berechneten Farbwert mit der endgültige Farbe. Verschieben Sie das Terminal **Ausgabe** des Knotens **Hinzufügen** auf das Terminal **RGB** des Knotens **Endgültige Farbe**.  
   
- Die folgende Abbildung zeigt das endgültige Shaderdiagramm und eine Vorschau des auf das Teekannenmodell angewendeten Shaders.  
-  
-> [!NOTE]
->  Um die Wirkung des Shaders in dieser Abbildung besser zu veranschaulichen, wurde eine orangefarbene Farbe verwendet wurde mit dem Parameter **MaterialDiffuse** des Shader verwendete, und ein metallisch\-aussehendes Ende angegeben wurde indem die **MaterialSpecular** und **MaterialSpecularPower**\-Parameter verwendet.  Informationen zu passen Parameter, finden Sie Befehlsvorschau Shaderabschnitt in [Shader\-Designer](../designers/shader-designer.md).  
-  
- ![Shader&#45;Diagramm und eine Vorschau seiner Effekte](../designers/media/digit-lighting-graph.png "Digit\-Lighting\-Graph")  
-  
- Für einige Shader erzielen Sie mit bestimmte Formen möglicherweise bessere Vorschauen.  Weitere Informationen dazu, wie von Shadern im Shader\-Designer, finden Sie Befehlsvorschau Shaderabschnitt in [Shader\-Designer](../designers/shader-designer.md) in der Vorschau angezeigt  
-  
- Die folgende Abbildung zeigt den in diesem Dokument beschriebenen Shader, der auf ein 3D\-Modell angewendet wurde.  Die Eigenschaft **MaterialSpecular** ist auf \(1.00, 0.50, 0.20, 0.00\) festgelegt und die Eigenschaft **MaterialSpecularPower** auf 16.  
+ In der folgenden Abbildung wird das fertige Shader-Diagramm sowie eine Vorschau eines Teekannenmodells gezeigt, auf dem der Shader angewandt wurde.  
   
 > [!NOTE]
->  Die Eigenschaft **MaterialSpecular** bestimmt die Art des dargestellten Oberflächenmaterials.  Eine Hochglanzoberfläche wie Glas oder Plastik hat eine helle, weiße Glanzfarbe.  Eine metallische Oberfläche hat eine Glanzfarbe, die ihrer diffusen Farbe ähnlich ist.  Eine Satin\-ähnliche Oberfläche hat eine dunkelgraue Glanzfarbe.  
+>  Es wurde eine orangene Farbe durch die Verwendung des Parameters **MaterialDiffuse** des Shaders sowie ein metallfarbenes Finish durch die Verwendung der Parameter **MaterialSpecular** und **MaterialSpecularPower** angegeben, um den Effekt des Shaders in dieser Abbildung besser zu veranschaulichen. Weitere Informationen zu Materialparameter finden Sie im Abschnitt „Vorschau von Shader verwenden“ unter [Shader-Designer](../designers/shader-designer.md).  
+  
+ ![Shader-Diagramm und eine Vorschau seiner Effekte](../designers/media/digit-lighting-graph.png "Digit-Lighting-Graph")  
+  
+ Bestimmte Formen sorgen vielleicht für bessere Vorschauen für einige Shader. Weitere Informationen zur Verwendung der Vorschau von Shadern im Shader-Designer finden Sie im Abschnitt „Vorschau von Shadern verwenden“ unter [Shader-Designer](../designers/shader-designer.md).  
+  
+ In der folgenden Abbildung wird der Shader gezeigt, der, wie in diesem Dokument beschrieben, auf ein 3D-Modell angewandt wurde. Die Eigenschaft **MaterialSpecular** ist auf (1,00, 0,50, 0,20, 0,00) festgelegt und seine Eigenschaft **MaterialSpecularPower** auf 16.  
+  
+> [!NOTE]
+>  Die Eigenschaft **MaterialSpecular** bestimmt das erkennbare Finish des Oberflächenmaterials. Eine hochglänzende Oberfläche wie Glas oder Kunststoff besitzt tendenziell eine helle weiß glänzende Farbe. Eine Oberfläche aus Metall hat tendenziell eine glänzende Farbe ähnlich ihrer diffusen Farbe. Eine Oberfläche mit Satin-Finish hat tendenziell eine dunkelgrau glänzende Farbe.  
 >   
->  Die Eigenschaft **MaterialSpecularPower** bestimmt, wie intensiv die Glanzlichter sind.  Hohe Werte simulieren stumpfere, lokalisierte Glanzlichter.  Sehr niedrig die Werte simulieren intensive, auffällige Glanzlichter, die oversaturate und Farbe der Ganzoberfläche zu reduzieren können.  
+>  Die Eigenschaft **MaterialSpecularPower** bestimmt, wie intensiv die Glanzlichter sind. Hohe Glanzkräfte simulieren stumpfere, lokalisiertere Glanzlichter. Sehr niedrige Glanzkräfte simulieren intensive, auffällige Glanzlichter, die die Farbe der ganzen Oberfläche übersättigen und verbergen können.  
   
- ![Phong&#45;Beleuchtung in einem Modell](../designers/media/digit-lighting-model.png "Digit\-Lighting\-Model")  
+ ![Phong-Beleuchtung in einem Modell](../designers/media/digit-lighting-model.png "Digit-Lighting-Model")  
   
- Weitere Informationen zum Anwenden eines Schaders in einem 3D\-Modell finden Sie unter [Gewusst wie: Anwenden eines Shaders auf ein 3D\-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
+ Weitere Informationen zum Anwenden eines Shaders auf ein 3D-Modell finden Sie unter [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
   
-## Siehe auch  
- [Gewusst wie: Anwenden eines Shaders auf ein 3D\-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
- [Gewusst wie: Exportieren eines Shaders](../designers/how-to-export-a-shader.md)   
- [Gewusst wie: Erstellen eines Lambert\-Shaders](../designers/how-to-create-a-basic-lambert-shader.md)   
- [Shader\-Designer](../designers/shader-designer.md)   
- [Shader\-Designer\-Knoten](../designers/shader-designer-nodes.md)
+## <a name="see-also"></a>Siehe auch  
+ [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
+ [Vorgehensweise: Exportieren eines Shaders](../designers/how-to-export-a-shader.md)   
+ [Vorgehensweise: Erstellen eines Lambert-Shaders](../designers/how-to-create-a-basic-lambert-shader.md)   
+ [Shader-Designer](../designers/shader-designer.md)   
+ [Shader-Designer-Knoten](../designers/shader-designer-nodes.md)

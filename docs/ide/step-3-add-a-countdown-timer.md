@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 62670a2b-efdc-45c6-9646-9b17eeb33dcb
-caps.latest.revision: 23
-author: kempb
-ms.author: kempb
+caps.latest.revision: "23"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: b2d9a565300dabd4212695d62c01a415d0e11012
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 1719ed1feb1caa38644550322484d2ba519c1be2
-ms.contentlocale: de-de
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Schritt 3: Hinzufügen eines Countdowntimers
 Im dritten Teil dieses Tutorials fügen Sie einen Countdowntimer hinzu, mit dem die Anzahl von Sekunden verfolgt wird, die verbleiben, bis der Quizteilnehmer das Quiz beendet.  
@@ -45,7 +28,8 @@ Im dritten Teil dieses Tutorials fügen Sie einen Countdowntimer hinzu, mit dem 
   
 1.  Fügen Sie wie in der vorherigen Prozedur eine Ganzzahlvariable mit dem Namen **timeLeft** hinzu. Der Code sollte wie folgt aussehen.  
   
-     [!code-vb[VbExpressTutorial3Step3#5](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_1.vb)]  [!code-csharp[VbExpressTutorial3Step3#5](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_1.cs)]  
+     [!code-vb[VbExpressTutorial3Step3#5](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_1.vb)]
+     [!code-csharp[VbExpressTutorial3Step3#5](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_1.cs)]  
   
      Jetzt benötigen Sie eine Methode, die die Sekunden zählt, z. B. einen Timer, der nach Ablauf der angegebenen Zeit ein Ereignis auslöst.  
   
@@ -63,7 +47,8 @@ Im dritten Teil dieses Tutorials fügen Sie einen Countdowntimer hinzu, mit dem 
   
 5.  Fügen Sie der neuen Ereignishandlermethode die folgenden Anweisungen hinzu.  
   
-     [!code-vb[VbExpressTutorial3Step3#6](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_2.vb)]  [!code-csharp[VbExpressTutorial3Step3#6](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_2.cs)]  
+     [!code-vb[VbExpressTutorial3Step3#6](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_2.vb)]
+     [!code-csharp[VbExpressTutorial3Step3#6](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_2.cs)]  
   
      Basierend auf den hinzugefügten Anweisungen ermittelt der Timer jede Sekunde, ob die Zeit abgelaufen ist. Dazu wird geprüft, ob die Ganzzahlvariable **timeLeft** größer als „0“ ist. Ist dies der Fall, verbleibt noch Zeit. Zuerst subtrahiert der Timer den Wert 1 von timeLeft und aktualisiert dann die **Text**-Eigenschaft des `timeLabel`-Steuerelements, damit für den Quizteilnehmer die Anzahl von verbleibenden Sekunden angezeigt wird.  
   
@@ -99,7 +84,8 @@ Im dritten Teil dieses Tutorials fügen Sie einen Countdowntimer hinzu, mit dem 
   
      Sehen Sie sich die Anweisung zum Anzeigen der Antwort auf die Additionsaufgabe, die Sie dem `else`-Block hinzugefügt haben, genauer an.  
   
-     [!code-vb[VbExpressTutorial3Step3#24](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_3.vb)]  [!code-csharp[VbExpressTutorial3Step3#24](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_3.cs)]  
+     [!code-vb[VbExpressTutorial3Step3#24](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_3.vb)]
+     [!code-csharp[VbExpressTutorial3Step3#24](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_3.cs)]  
   
      Die Anweisung `addend1 + addend2` fügt die Werte in den beiden Variablen zusammen hinzu. Im ersten Teil (`sum.Value`) wird die **Value**-Eigenschaft des `NumericUpDown`-Steuerelements "sum" verwendet, um die richtige Antwort anzuzeigen. Später verwenden Sie die gleiche Eigenschaft, um die Antworten für das Quiz zu überprüfen.  
   
@@ -107,7 +93,8 @@ Im dritten Teil dieses Tutorials fügen Sie einen Countdowntimer hinzu, mit dem 
   
 6.  Fügen Sie dem Ende der `StartTheQuiz()`-Methode drei Zeilen hinzu, damit der Code wie folgt aussieht.  
   
-     [!code-vb[VbExpressTutorial3Step3#7](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_4.vb)]  [!code-csharp[VbExpressTutorial3Step3#7](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_4.cs)]  
+     [!code-vb[VbExpressTutorial3Step3#7](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_4.vb)]
+     [!code-csharp[VbExpressTutorial3Step3#7](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_4.cs)]  
   
      Wenn Sie das Quiz jetzt starten, wird die Variable **timeLeft** auf 30 und die **Text**-Eigenschaft des `timeLabel`-Steuerelements auf 30 Sekunden festgelegt. Dann wird der Countdown mit der `Start()`-Methode des `Timer`-Steuerelements gestartet. (Die Antwort wird noch nicht im Quiz geprüft – dies ist der nächste Schritt.)  
   

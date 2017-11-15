@@ -1,30 +1,29 @@
 ---
-title: "CvReleaseMarkerSeries-Funktion | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "cvmarkers/CvReleaseMarkerSeries"
-helpviewer_keywords: 
-  - "CvReleaseMarkerSeries-Methode"
+title: CvReleaseMarkerSeries-Funktion | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: cvmarkers/CvReleaseMarkerSeries
+helpviewer_keywords: CvReleaseMarkerSeries method
 ms.assetid: 3b4711ee-e534-411d-9128-f69cd7932a48
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d295d73560a560caa7f374965a280cf48ad66c2d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CvReleaseMarkerSeries-Funktion
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Gibt Marker\-Reihe frei.  Verwenden Sie nicht Marker\-Reihe, die möglicherweise Objekt, nachdem es andernfalls die Anwendung freigegeben wurde, Ausführen.  Fehler, Marker\-Reihe freizugeben verursacht einen Speicherverlust.  
+# <a name="cvreleasemarkerseries-function"></a>CvReleaseMarkerSeries-Funktion
+Gibt Markerreihen frei. Verwenden Sie keine freigegebenen Markerreihenobjekte, da die Anwendung andernfalls möglicherweise abstürzt. Wenn Markerreihen nicht freigegeben werden, führt dies zu einem Arbeitsspeicherverlust.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT CvReleaseMarkerSeries(  
@@ -32,15 +31,15 @@ HRESULT CvReleaseMarkerSeries(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pMarkerSeries`  
- Adresse der Anbieterobjektvariable.  Adresse kann NULL sein, die Variable kann keinen Wert verfügen.  
+ Adresse der Anbieterobjektvariable. Die Adresse darf nicht NULL sein. Die Variable kann einen beliebigen Wert aufweisen.  
   
-## Rückgabewert  
- S\_OK, wenn Marker\-Reihe erfolgreich freigegeben werden oder Fehlercode, sofern dieses alle Fehler auftritt.  Makros der Verwendung SUCCEEDED\/FAILED, auf dem Fehlerzustand zu überprüfen.  
+## <a name="return-value"></a>Rückgabewert  
+ S_OK, wenn Markerreihen erfolgreich freigegeben wurden, oder Fehlercode, wenn Fehler aufgetreten sind. Prüfen Sie mit den Makros SUCCEEDED bzw. FAILED, ob Fehler vorliegen.  
   
-## Anforderungen  
- **Header:**  cvmarkers.h  
+## <a name="requirements"></a>Anforderungen  
+ **Header:** cvmarkers.h  
   
-## Siehe auch  
- [C\+\+\-Bibliotheksreferenz](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>Siehe auch  
+ [C++-Bibliotheksreferenz](../profiling/cpp-library-reference.md)

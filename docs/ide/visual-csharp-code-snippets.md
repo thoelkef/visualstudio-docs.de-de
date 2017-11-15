@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 06/05/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -15,31 +14,15 @@ helpviewer_keywords:
 - Code Snippet Inserter [C#]
 - Visual C#, default snippets
 ms.assetid: dbea3dd6-e650-4190-b874-c9f097d7de6e
-caps.latest.revision: 33
-author: kempb
-ms.author: kempb
+caps.latest.revision: "33"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5f996aff0c247db658f3b9f1fec666792751ae11
-ms.openlocfilehash: 407ef81649de1c62d91d5a79535a8f9c67feb97c
-ms.contentlocale: de-de
-ms.lasthandoff: 06/06/2017
-
+ms.openlocfilehash: 72e0e00fb5495946adcd7f47de8cdc2d6e0d32dc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="visual-c-code-snippets"></a>Visual C#-Codeausschnitte
 Codeausschnitte sind vorgefertigte Ausschnitte aus Code, die Sie schnell in Ihren Code einfügen können. Beispielsweise erstellt der `for`-Codeausschnitt eine leere `for`-Schleife. Einige Codeausschnitte sind umschließende Codeausschnitte, mit deren Hilfe Sie Codezeilen markieren und dann einen Codeausschnitt auswählen können, der die markierten Codezeilen einschließt. Durch das Markieren von Codezeilen und das anschließende Aktivieren des `for`-Codeausschnitts wird beispielsweise eine `for`-Schleife erstellt, die die markierten Codezeilen innerhalb des Schleifenblocks enthält. Durch Codeausschnitte kann das Erstellen von Programmcode schneller, einfacher und zuverlässiger werden.  
@@ -97,4 +80,3 @@ Codeausschnitte sind vorgefertigte Ausschnitte aus Code, die Sie schnell in Ihre
  [Codeausschnitte](../ide/code-snippets.md)   
  [Vorlagenparameter](../ide/template-parameters.md)   
  [Gewusst wie: Verwenden von umschließenden Codeausschnitten](../ide/how-to-use-surround-with-code-snippets.md)   
-

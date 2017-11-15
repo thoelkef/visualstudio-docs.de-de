@@ -13,29 +13,12 @@ ms.assetid: e0846d4d-2ce1-48e3-b219-674ff070bf4e
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.technology:
-- vs-acquisition
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 99d1cfc816d5fd64367ff4524de89776ef25a4b8
-ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
-
+ms.technology: vs-acquisition
+ms.openlocfilehash: 7759e67a4ce886388b9a7afea531448edeefac54
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="talk-to-us"></a>Talk to Us
 Wir würden gern Ihre Ideen zur Verbesserung unserer Produkte und unserer Dokumentation kennenlernen. Wir können nicht immer persönlich antworten, aber wir werden sicherstellen, dass Ihr Feedback an die richtige Person oder das richtige Team weitergeleitet wird.  
@@ -71,4 +54,3 @@ Der Microsoft-Produktsupport unterliegt den jeweils aktuellen Preisen und Vertra
 
 ## <a name="see-also"></a>Siehe auch  
  [Melden eines Problems mit Visual Studio](how-to-report-a-problem-with-visual-studio-2017.md)
-

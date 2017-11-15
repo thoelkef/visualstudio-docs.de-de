@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 05/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- automated testing, lab management, test lab
+helpviewer_keywords: automated testing, lab management, test lab
 ms.assetid: F34B0D19-B430-4C01-B402-62A861007E71
-caps.latest.revision: 56
+caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 45d36934cf1c46902cac566203cddf4a118b7fe4
-ms.openlocfilehash: 77a0339e1aae3036990f0d9d133a1fcb68844486
-ms.contentlocale: de-de
-ms.lasthandoff: 06/02/2017
-
+ms.openlocfilehash: 8d843800666ae53a686a18fcab28d02eb4c16743
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>Verwenden von Build und Release Management anstelle von Lab Management für automatische Tests
 
@@ -61,7 +44,7 @@ Zu den Vorteilen der Verwendung von Build oder Release Management für dieses Sz
 
 * Sie benötigen keinen Buildcontroller oder Testcontroller.
 * Der Test-Agent wird über einen Task als Teil des Builds oder des Releases installiert.
-* Es ist einfach, die Bereitstellungsschritte anzupassen. Sie sind nicht mehr auf die Verwendung eines einzelnen Skripts beschränkt. Sie können außerdem die vielen Tasks nutzen, die innerhalb des Produkts und in Visual Studio Marketplace verfügbar sind.
+* Sie können die Bereitstellungsschritte leicht anpassen. Sie sind nicht mehr auf die Verwendung eines einzelnen Skripts beschränkt. Sie können außerdem die vielen Tasks nutzen, die innerhalb des Produkts und in Visual Studio Marketplace verfügbar sind.
 * Sie müssen keine Testsammlungen verwalten. Sie können Tests direkt aus den Binärdateien ausführen.
 * Sie erhalten eine umfangreichere Inline-Berichterstattung für die Tests, die in jedem Build oder Release ausgeführt werden.
 * Sie können nachverfolgen, welche Objekte (Release, Build, Arbeitstasks, Commits) derzeit bereitgestellt und in jeder Umgebung getestet werden.
@@ -102,4 +85,3 @@ Die folgenden Alternativen werden für die Netzwerkisolation empfohlen:
 * Eine Motivation für die Netzwerkisolation war die einfache Konfiguration von mehreren Klonen. Da jeder Klon ein exaktes Replikat des Originals ist, werden Computernamen und die Konfigurationseinstellungen unverändert beibehalten, was die Einrichtung einer neuen Umgebung vereinfacht. Dieser Vorteil verursacht jedoch auch Probleme an einem späteren Zeitpunkt im Lebenszyklus (z.B. in der Produktion), da die Art, in der Anwendungen letztendlich bereitgestellt werden, nicht die gleiche ist. **Stattdessen** sollten Sie in Betracht ziehen, neue Umgebungen auf die gleiche Weise einzurichten, mit der Sie die Produktion eingerichtet haben, und die Verwendung der Netzwerkisolation zu vermeiden.
 
 * Verwenden Sie eine öffentliche Cloud-Infrastruktur wie z.B. [Microsoft Azure](https://azure.microsoft.com/) für Ihre benötigten Tests. Sie können problemlos [Azure Resource Manager-Vorlagen](https://azure.microsoft.com/documentation/templates/) aus [Azure Marketplace](https://azure.microsoft.com/marketplace/) oder aus [Azure-Schnellstartvorlagen](https://azure.microsoft.com/documentation/templates/) verwenden, um Gruppen von virtuellen Computern einzurichten, die über ein privates Netzwerk verbunden sind, und im öffentlichen Netzwerk nur mit einem Proxy oder einer „Jumpbox“ verfügbar gemacht werden.
-

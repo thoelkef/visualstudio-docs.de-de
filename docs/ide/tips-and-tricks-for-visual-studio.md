@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 06/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 20489db9-7441-4f8b-97de-c72070d569b1
-caps.latest.revision: 10
-author: kempb
-ms.author: kempb
+caps.latest.revision: "10"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d2f4eba36e9069a35cf279ccf1c78f72a51d77a1
-ms.openlocfilehash: 27dc4d56a0608ddf031b47775bd9aaef20e24194
-ms.contentlocale: de-de
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: 40172defbd56f31de9aedbb4cc422c10d1a68dfd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Tipps und Tricks für Visual Studio
 Sie können in [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] einfacher navigieren, indem Sie die Tastenkombinationen aus diesem Thema verwenden. Dieses Thema zeigt nur eine Teilmenge der verfügbaren Tastenkombinationen. Eine vollständige Liste finden Sie unter [Standardtastenkombinationen in Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md). Informationen über die Optimierung der Barrierefreiheit von Visual Studio finden Sie unter [Tipps und Tricks zur Barrierefreiheit](../ide/reference/accessibility-tips-and-tricks.md).  
@@ -90,19 +73,18 @@ Sie können in [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] ei
 |-|-|  
 |IntelliSense-Vorschlagsmodus|STRG+ALT+LEERTASTE (Umschaltfläche)|  
 |Anzeigen von IntelliSense erzwingen|STRG+J|  
-|Smarttags|STRG+.|  
+|Schnelle Aktionen|STRG+.|  
 |Codeausschnittauswahl|STRG+K, X oder ?, Registerkarte (VB)|  
 |Umgeben mit|Strg+K, S|  
 |Anzeigen der QuickInfo|STRG+K, I|  
 |Navigieren zu|Strg+,|  
-|Gehe zu Definition|F12|  
-|Peek-Definition|Alt+F12|  
-|Gehe zu Definition-Stapel|STRG+UMSCHALT+8 (zurück), STRG+UMSCHALT+7 (vorwärts)|  
 |Navigieren in markierten Verweisen|STRG+UMSCHALT+NACH-OBEN (vorheriger), STRG+UMSCHALT+NACH-UNTEN (nächster)|  
 |Editor-Zoom|STRG+UMSCHALT+> (vergrößern), STRG+UMSCHALT+< (verkleinern)|  
 |Blockauswahl|ALT-TASTE gedrückt halten und die Maus ziehen, UMSCHALT+ALT+PFEILTASTEN|  
 |Eine Zeile nach oben/unten verschieben|ALT+BILD-AUF/ALT+BILD-AB|  
+|Gehe zu Definition|F12|  
 |Peek-Definition|Alt+F12|  
+|Gehe zu Definition-Stapel|STRG+UMSCHALT+8 (zurück), STRG+UMSCHALT+7 (vorwärts)|  
 |Schließen des Peek-Definitionsfensters|Esc|  
 |Höherstufen des Peek-Definitionsfensters auf eine reguläre Dokumentregisterkarte|STRG+ALT+POS1|  
 |Zwischen mehreren Fenstern der "Peek-Definition" navigieren|STRG+ALT+- und STRG+ALT+=|  
@@ -146,4 +128,3 @@ Sie können in [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] ei
  [Visual Studio Toolbox auf Channel 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)   
  [Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)   
  [Visual Studio-Verbindungsfehler](http://connect.microsoft.com/VisualStudio)
-

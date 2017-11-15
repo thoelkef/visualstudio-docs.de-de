@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: b4ed14f43316dc02ef8d039c590cd2f93b3060e5
-ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 469a8298122abdc96c69f13ed96a893b02575fc9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
 Der Visual Studio Emulator für Android wird in Hyper-V als virtueller Computer ausgeführt, die Virtualisierungstechnologie für Windows 8 und höhere Versionen. Um den Emulator ausführen, muss der Computer die in diesem Thema beschriebenen Voraussetzungen zum Ausführen von Hyper-V erfüllen.  
@@ -101,7 +84,7 @@ Der Visual Studio Emulator für Android wird in Hyper-V als virtueller Computer 
   
  Zum Überprüfen der Anforderungen an RAM und Windows wählen Sie in der Systemsteuerung die System- und Sicherheitseinstellungen, und anschließend System.  
   
- ![Überprüfung der Systemanforderungen](~/cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")  
+ ![Überprüfung der Systemanforderungen](../cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")  
   
 ##  <a name="Network"></a> Netzwerkanforderungen  
  Ihr Netzwerk muss folgende Anforderungen erfüllen:  
@@ -147,7 +130,7 @@ Der Visual Studio Emulator für Android wird in Hyper-V als virtueller Computer 
 > [!IMPORTANT]
 >  Nachdem Sie der Gruppe beigetreten sind, melden Sie sich ab und starten Sie den Computer neu, damit die Änderung wirksam wird.  
   
- ![Beitritt zur Hyper&#45;V-Administratorsicherheitsgruppe](~/cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")  
+ ![Beitritt zur Hyper&#45;V-Administratorsicherheitsgruppe](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")  
   
  Um sich selbst manuell zu einer Gruppe hinzuzufügen, öffnen Sie das Snap-In für lokale Benutzer und Gruppen. Weitere Informationen finden Sie unter [Hinzufügen eines Benutzerkontos zu einer Gruppe](http://windows.microsoft.com/en-us/windows/add-user-account-to-group#1TC=windows-7). (Dieses Windows 7-Thema gilt auch für Windows 8).  
   

@@ -6,14 +6,12 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: CC1B72D6-12FF-4CCC-A9D4-00F2DC14589F
-ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
 ms.openlocfilehash: 0cce820d76660124838307cc231b379c449b58a7
-ms.contentlocale: de-de
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-
 # <a name="creating-and-editing-build-configurations"></a>Erstellen und Bearbeiten von Buildkonfigurationen
 
 Buildkonfigurationen können für einzelne Projekte oder auf projektmappenweiter Basis erstellt werden. Diese Konfigurationen ermöglichen Ihnen eine präzise Steuerung des Builds.
@@ -62,4 +60,3 @@ Wenn Sie eine Konfiguration umbenennen möchten, wählen Sie diese aus der Konfi
 Klicken Sie auf die Schaltfläche **Umbenennen**.
 
 ![Dialogfeld „Umbenennen“](media/create-and-edit-configurations-image5.png) 
-

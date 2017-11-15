@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -16,30 +15,14 @@ helpviewer_keywords:
 - unit tests, data-driven
 - data-driven unit tests
 ms.assetid: a0322bc5-02c8-4f9f-af43-100a60b1bd28
-caps.latest.revision: 33
+caps.latest.revision: "33"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 2eaf4aa44fdc1bec56bb513af54ea7db72dcf3db
-ms.contentlocale: de-de
-ms.lasthandoff: 05/19/2017
-
+ms.openlocfilehash: ec1c20ae334e81724af1b8d4e2b25d755a024bdc
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Gewusst wie: Erstellen eines datengesteuerten Komponententests
 Sie können mithilfe des Microsoft Komponententestframework für verwaltenden Code eine Komponententestmethode erstellen, um Werte zu abzurufen, die in einer Testmethode von einer Datenquelle verwendet wird. Die Methode wird nacheinander für jede Zeile in der Datenquelle ausgeführt, die mithilfe einer einzelnen Methode das Testen von einer Vielzahl von Eingaben vereinfacht.  
@@ -106,7 +89,7 @@ public int AddIntegers(int first, int second)
 |1|1|2|  
 |2|-3|-1|  
   
-##  <a name="BKMK_Adding_a_TestContext_to_the_test_class"></a>Hinzufügen eines TestContext zu einer Testklasse  
+##  <a name="BKMK_Adding_a_TestContext_to_the_test_class">Hinzufügen eines TestContext zu einer Testklasse</a>  
  Das Komponententestframework erstellt ein Objekt `TestContext`, um die Informationen der Datenquelle für einen datengesteuerten Test zu speichern. Das Framework legt anschließend dieses Objekt als Wert für die Eigenschaft `TestContext` fest, die wir erstellen.  
   
 ```  
@@ -208,4 +191,3 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
  [Komponententest Ihres Code](../test/unit-test-your-code.md)   
  [Ausführen von Komponententests mit dem Test-Explorer](../test/run-unit-tests-with-test-explorer.md)   
  [Schreiben von Komponententests für .NET Framework mit dem Microsoft-Komponententestframework für verwalteten Code](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
-

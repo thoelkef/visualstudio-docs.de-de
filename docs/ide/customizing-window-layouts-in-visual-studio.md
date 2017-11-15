@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 01/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -24,31 +23,15 @@ helpviewer_keywords:
 - debug mode
 - custom layouts
 ms.assetid: 7517ff13-76de-4ecf-9c1b-eb9b7ff4d718
-caps.latest.revision: 27
-author: kempb
-ms.author: kempb
+caps.latest.revision: "27"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 8ab795965dc205cd783f469d134d64fb2b5dacf6
-ms.contentlocale: de-de
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: 85881bf35fb89f753eb4110d7b1128b4761a73a3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Anpassen von Fensterlayouts in Visual Studio
 In Visual Studio können Sie Position, Größe und Verhalten von Fenstern anpassen, um Fensterlayouts zu erstellen, die für unterschiedliche Entwicklungsworkflows am besten geeignet sind. Wenn Sie das Layout anpassen, wird dies in der IDE gespeichert. Wenn Sie z. B. die Andockposition des **Projektmappen-Explorers** ändern und Visual Studio dann schließen, ist der **Projektmappen-Explorer** nach dem nächsten Start an derselben Position angedockt, selbst wenn Sie an einem anderen Computer arbeiten. Sie können ein benutzerdefiniertes Layout auch benennen und speichern und dann mit einem einzelnen Befehl zwischen den Layouts wechseln. Beispielsweise können Sie ein Layout für die Bearbeitung und ein anderes für das Debuggen erstellen und zwischen diesen mithilfe des Menübefehls **Fenster &#124; Fensterlayout anwenden** wechseln.  
@@ -105,22 +88,22 @@ In Visual Studio können Sie Position, Größe und Verhalten von Fenstern anpass
 
  Die folgende Abbildung veranschaulicht das Diamant-Führungssymbol für Dokumentfenster, das nur im Bearbeitungsrahmen angedockt werden kann:  
 
- ![Dokumentfenster-Rautenführungssymbol](~/ide/media/documentwindowguidediamonds.png "Documentwindowguidediamonds")  
+ ![Dokumentfenster-Rautenführungssymbol](../ide/media/documentwindowguidediamonds.png "Documentwindowguidediamonds")  
 
  Toolfenster können an einer Seite eines Frames in der IDE oder innerhalb des Bearbeitungsrahmens angebunden werden. Ein Diamant-Führungssymbol wird angezeigt, wenn Sie ein Toolfenster an eine andere Position ziehen, damit Sie das Fenster problemlos neu andocken können.  
 
  Diamant-Führungssymbol für Toolfenster  
 
- ![Toolfenster-Rautenführungssymbol](~/ide/media/vs10guidediamond.png "VS10GuideDiamond")  
+ ![Toolfenster-Rautenführungssymbol](../ide/media/vs10guidediamond.png "VS10GuideDiamond")  
 
  In der folgenden Abbildung ist der Projektmappen-Explorer an einer neuen Position angedockt, die durch den blauen schattierten Bereich dargestellt wird:  
 
- ![Andocken des Projektmappen-Explorers an einer neuen Position](~/ide/media/vs2015_dock_diamond.png "VS2017_Dock_diamond")  
+ ![Andocken des Projektmappen-Explorers an einer neuen Position](../ide/media/vs2015_dock_diamond.png "VS2017_Dock_diamond")  
 
 ### <a name="close-and-auto-hide-tool-windows"></a>Schließen und automatisches Ausblenden von Toolfenstern  
  Sie können ein Toolfenster schließen, indem Sie auf das X in der Titelleiste oben rechts klicken; Verwenden Sie zum erneuten Öffnen des Fensters die entsprechende Tastenkombination oder den Menübefehl. Toolfenster unterstützen eine Funktion mit dem Namen „Automatisch im Hintergrund“, mit der ein Fenster bei Verwendung eines anderen Fensters in den Hintergrund versetzt wird und ist somit nicht mehr sichtbar ist. Wenn ein Fenster automatisch in den Hintergrund versetzt wird, wird sein Name auf einer Registerkarte am Rand der IDE angezeigt. Um das Fenster wieder zu verwenden, zeigen Sie auf die Registerkarte, damit das Fenster wieder angezeigt wird.  
 
- ![Automatisches Ausblenden](~/ide/media/vs2015_auto_hide.png "vs2017_auto_hide")  
+ ![Automatisches Ausblenden](../ide/media/vs2015_auto_hide.png "vs2017_auto_hide")  
 
 > [!NOTE]
 >  Um festzulegen, ob die Funktion "Automatisch im Hintergrund" in Toolfenstern einzeln oder als angedockte Gruppen ausgeführt wird, wählen Sie im Dialogfeld **Optionen** die Option **Schaltfläche "Automatisch ausblenden" bezieht sich nur auf aktives Toolfenster** aus. Weitere Informationen finden Sie unter [General, Environment, Options Dialog Box](../ide/reference/general-environment-options-dialog-box.md).  
@@ -195,4 +178,3 @@ In Visual Studio können Sie Position, Größe und Verhalten von Fenstern anpass
 ## <a name="related-topics"></a>Verwandte Themen  
 
 [Vorgehensweise: Navigieren in der IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)
-

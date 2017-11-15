@@ -1,39 +1,40 @@
 ---
-title: "Anpassen von Berichtsansichten der Profilerstellungstools | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Profilerstellungstools, Anpassen von Berichtsansichten"
-  - "Berichte, Anpassen von Profilerberichtsansichten"
+title: Anpassen von Berichtsansichten von Leistungstools | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- profiling tools, customizing report views
+- reports, customizing profiling report views
 ms.assetid: 5224ac52-0fc2-4269-8eb2-ead7fda3afd4
-caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: da35bb6f685455e280609252561c8a676f37230c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Anpassen von Berichtsansichten der Profilerstellungstools
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-In diesem Abschnitt wird das Anpassen von Berichten beschrieben, die mit den [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-Profilerstellungstools generiert wurden.  
+# <a name="customizing-performance-tools-report-views"></a>Anpassen von Berichtsansichten von Leistungstools
+In diesem Abschnitt wird die Anpassung von Berichten beschrieben, die mit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools generiert werden.  
   
-## Allgemeine Aufgaben  
+## <a name="common-tasks"></a>Allgemeine Aufgaben  
   
 |Aufgabe|Verwandter Inhalt|  
-|-------------|-----------------------|  
-|**Hinzufügen, Entfernen und Sortieren nach Spalten in einer Berichtsansicht**: Sie können die Spalten angeben, die in tabellenbasierten Ansichten angezeigt werden sollen, und Sie können die Reihenfolge angeben, in der die Spalten angezeigt werden.  Sie können auch die Zeilen der Berichtstabelle nach den Spaltenwerten sortieren.|-   [Gewusst wie: Anpassen von Spalten in Berichtsansichten](../profiling/how-to-customize-report-view-columns.md)|  
-|**Ausschließen von kleinen Funktionen aus dem Bericht**: Sie können Funktionen, deren Größe einen angegebenen Schwellenwert unterschreitet, aus Berichten ausschließen.|-   [Gewusst wie: Konfigurieren der Rauschunterdrückung in Berichtsansichten](../profiling/how-to-configure-noise-reduction-in-report-views.md)|  
-|**Filtern des Datums in einer Berichtsansicht**: Sie können die Daten, die in einem Bericht angezeigt werden, auf ein Zeitsegment der Profilerstellung einschränken.  Sie können ein Zeitsegment im Zeitachsendiagramm der Zusammenfassungsansicht angeben, oder Sie können das Zeitsegment in einer Abfrage angeben, die Sie im Filter für die Berichtsansicht definieren.  Sie können auch die Berichte filtern, um nur Funktionen anzuzeigen, die in den Codedateien definiert sind.|-   [Filtern von Berichtsansichten](../profiling/filtering-report-views.md)<br />-   [Gewusst wie: Filtern von Berichtsansichten aus der Zeitachsenübersicht](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)<br />-   [Gewusst wie: Filtern der Berichtsansichten, um nur eigenen Code anzuzeigen](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)<br />-   [Filter für die Berichtsansicht der Profilerstellungstools](../profiling/performance-report-view-filter.md)|  
+|----------|---------------------|  
+|**Hinzufügen, Entfernen und Sortieren nach Spalten in einer Berichtsansicht:** Sie können festlegen, welche Spalten in welcher Reihenfolge in tabellenbasierten Ansichten angezeigt werden sollen. Darüber hinaus können Sie die Zeilen der Berichtstabelle auch nach Spaltenwerten sortieren.|-   [How to: Customize Report View Columns (Vorgehensweise: Anpassen von Spalten in Berichtsansichten)](../profiling/how-to-customize-report-view-columns.md)|  
+|**Entfernen kleiner Funktionen aus dem Bericht:** Sie können aus Berichten Funktionen entfernen, die kleiner sind als ein festgelegter Schwellenwert.|-   [How to: Configure Noise Reduction in Report Views (Vorgehensweise: Konfigurieren der Rauschunterdrückung in Berichtsansichten)](../profiling/how-to-configure-noise-reduction-in-report-views.md)|  
+|**Filtern des Datums in einer Berichtsansicht**: Sie können die Daten in einem Bericht auf ein Zeitsegment der Profilerstellungsausführung begrenzen. Sie können ein Zeitsegment im Zeitachsendiagramm der Zusammenfassungsansicht oder in einer Abfrage festlegen, die Sie im Filter der Berichtsansicht definieren. Zudem können Sie die Berichte filtern, sodass nur Funktionen angezeigt werden, die in Ihren Codedateien definiert sind.|-   [Filtern von Berichtsansichten](../profiling/filtering-report-views.md)<br />-   [How to: Filter Report Views from the Summary Timeline (Vorgehensweise: Filtern von Berichtsansichten aus der Zeitachsenübersicht)](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)<br />-   [How to: Filter Profiling Tools Report Views to Display Just My Code (Vorgehensweise: Filtern der Berichtsansichten der Profilerstellungstools, um nur eigenen Code anzuzeigen)](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)<br />-   [Filter für die Leistungsberichtansicht](../profiling/performance-report-view-filter.md)|  
   
-## Verwandte Abschnitte  
- [Berichtsansichten für Profilerstellungstools](../profiling/performance-report-views.md)  
- Beschreibt die Ansichten, mit denen Sie Profilerstellungsdaten analysieren können.  
+## <a name="related-sections"></a>Verwandte Abschnitte  
+ [Leistungsberichtansichten](../profiling/performance-report-views.md)  
+ Beschreibt die Ansichten, die Sie zum Analysieren von Profilerstellungsdaten verwenden können.  
   
-## Siehe auch  
- [Analysieren der durch Profilerstellungstools erstellten Daten](../profiling/analyzing-performance-tools-data.md)
+## <a name="see-also"></a>Siehe auch  
+ [Analysieren der durch Leistungstools erstellten Daten](../profiling/analyzing-performance-tools-data.md)

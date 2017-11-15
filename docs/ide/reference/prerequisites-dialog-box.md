@@ -4,53 +4,32 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- Microsoft.VisualStudio.Publish.BaseProvider.Dialog.Bootstrapper
+f1_keywords: Microsoft.VisualStudio.Publish.BaseProvider.Dialog.Bootstrapper
 dev_langs:
 - VB
 - CSharp
 - C++
-helpviewer_keywords:
-- Prerequisites dialog box
+helpviewer_keywords: Prerequisites dialog box
 ms.assetid: 53ac863c-77a0-409b-91e5-7a4bd8b8474e
-caps.latest.revision: 75
-author: kempb
-ms.author: kempb
+caps.latest.revision: "75"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 8bf0b097be929b30627e0f1139c6e0b145933ab4
-ms.openlocfilehash: 5a8237e5c437878b22bd3c67a3a4ba2cdc3fa126
-ms.contentlocale: de-de
-ms.lasthandoff: 05/26/2017
-
+ms.openlocfilehash: 68e326d8045733fc4f491c51405ed51414a92afd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Prerequisites Dialog Box
-<a id="prerequisites-dialog-box" class="xliff"></a>
+# <a name="prerequisites-dialog-box"></a>Prerequisites Dialog Box
 In diesem Dialogfeld wird angegeben, welche erforderlichen Komponenten installiert werden, wie die Installation ausgeführt wird, und in welcher Reihenfolge die Pakete installiert werden.  
   
  Wählen Sie zum Aufrufen des Dialogfelds im **Projektmappen-Explorer** einen Projektknoten aus, und klicken Sie anschließend im Menü **Projekt** auf **Eigenschaften**. Sobald der **Projekt-Designer** angezeigt wird, klicken Sie auf die Registerkarte **Veröffentlichen** . Klicken Sie auf der Seite **Veröffentlichen** auf **Erforderliche Komponenten**. Klicken Sie bei Setupprojekten im Menü **Projekt** auf **Eigenschaften**. Wenn das Dialogfeld **Eigenschaftenseiten** angezeigt wird, klicken Sie auf **Erforderliche Komponenten**.  
   
-## UIElement-Liste
-<a id="uielement-list" class="xliff"></a>  
+## <a name="uielement-list"></a>UIElement-Liste  
   
 |Element|Beschreibung|  
 |-------------|-----------------|  
@@ -61,8 +40,7 @@ In diesem Dialogfeld wird angegeben, welche erforderlichen Komponenten installie
 |**Erforderliche Komponenten von demselben Speicherort wie Anwendung herunterladen**|Dies gibt an, dass die erforderlichen Komponenten vom gleichen Speicherort wie die Anwendung installiert werden müssen. Dadurch werden alle erforderlichen Pakete an den Speicherort für die Veröffentlichung kopiert. Damit diese Option funktioniert, müssen sich die erforderlichen Pakete auf dem Entwicklungscomputer befinden.|  
 |**Erforderliche Komponenten von folgendem Speicherort herunterladen**|Dies gibt an, dass die erforderlichen Komponenten vom ausgewählten Speicherort aus installiert werden müssen. Mithilfe der Schaltfläche **Durchsuche**n können Sie einen Speicherort auswählen.|  
   
-## Informationen über erforderliche Komponenten
-<a id="prerequisites-information" class="xliff"></a>  
+## <a name="prerequisites-information"></a>Informationen über erforderliche Komponenten  
  Die im Dialogfeld **Erforderliche Komponenten** aufgeführten erforderlichen Komponenten können von den in der folgenden Liste genannten abweichen. Die im Dialogfeld **Erforderliche Komponenten** aufgelisteten Pakete mit erforderlichen Komponenten werden automatisch festgelegt, wenn Sie das Dialogfeld zum ersten Mal öffnen. Wenn im Nachhinein Änderungen am Zielframework des Projekts vorgenommen werden, müssen die erforderlichen Komponenten manuell ausgewählt werden, um dem neuen Zielframework zu entsprechen.  
   
 |Element|Beschreibung|  
@@ -85,8 +63,7 @@ In diesem Dialogfeld wird angegeben, welche erforderlichen Komponenten installie
 |**Windows Installer 3.1**|Mit diesem Paket wird die verteilbare Version 3.1 von Microsoft Windows Installer für die Installation von Windows Installer-Setupprojekten installiert. Es ist unter Windows Server 2003 mit SP1 und höher vorinstalliert.<br /><br /> Dieses Element ist standardmäßig ausgewählt.|  
 |**Windows Installer 4.5**|Mit diesem Paket wird die verteilbare Version 4.5 von Microsoft Windows Installer für die Installation von Windows Installer-Setupprojekten installiert.|  
   
-## Siehe auch
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>Siehe auch  
  [Seite „Veröffentlichen“, Projekt-Designer](../../ide/reference/publish-page-project-designer.md)   
  [Vorbedingungen für die Anwendungsbereitstellung](../../deployment/application-deployment-prerequisites.md)   
  [Verteilen des .NET Framework](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287)   

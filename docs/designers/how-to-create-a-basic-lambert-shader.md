@@ -1,68 +1,69 @@
 ---
-title: "Gewusst wie: Erstellen eines Lambert-Shaders | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'Vorgehensweise: Erstellen eines Lambert-Shaders | Microsoft-Dokumentation'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-designers
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
-caps.latest.revision: 20
-author: "BrianPeek"
-ms.author: "brpeek"
-manager: "ghogen"
-caps.handback.revision: 20
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: b2852c673f00234629450803d1c5d860c8646cd7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Erstellen eines Lambert-Shaders
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Dieses Dokument veranschaulicht, wie Sie den Shader\-Designer und die Directed Graph Shader Language \(DGSL\) verwenden, um einen Beleuchtungs\-Shader zu erstellen, der das klassische Lambert\-Beleuchtungsmodell implementiert.  
+# <a name="how-to-create-a-basic-lambert-shader"></a>Gewusst wie: Erstellen eines Lambert-Shaders
+In diesem Dokument wird gezeigt, wie der Shader-Designer und die Directed Graph Shader Language (DGSL) zum Erstellen eines Beleuchtungsshaders, der das klassische Lambert-Beleuchtungsmodell implementiert, verwendet wird.  
   
  In diesem Dokument werden die folgenden Aktivitäten veranschaulicht:  
   
--   Hinzufügen von Knoten einem Shaderdiagramm  
+-   Hinzufügen von Knoten in ein Shader-Diagramm  
   
--   Trennen von Knoten  
+-   Trennen der Knoten  
   
--   Knoten verbinden  
+-   Verbinden der Knoten  
   
-## Das Lambert\-Beleuchtungsmodell  
- Das Lambert\-Beleuchtungsmodell umfasst Umgebungslicht und gerichtetes Licht, um Objekte in einer 3D\-Szene zu schattieren.  Die Umgebungsfarbe Komponenten stellen ein für eine grundlegende Beleuchtung in der 3D\-Szene.  Die direktionalen Komponenten stellen zusätzliche Beleuchtung aus den direktionalen \(weit entfernten\) Lichtquellen.  Die Umgebungsbeleuchtung hat die gleichen Auswirkungen auf alle Oberflächen in der Szene, unabhängig von ihrer Ausrichtung.  Für eine bestimmte Oberfläche ist dies das Produkt der Umgebungsfarbe der Oberfläche und der Farbe und Intensität des Umgebungslichts in der Szene.  Das gerichtete Licht hat auf jede Oberfläche in der Szene andere Auswirkungen, je nach Ausrichtung der Oberfläche im Verhältnis zur Richtung der Lichtquelle.  Es ist ein Produkt der diffusen Farbe und Ausrichtung der Oberfläche und der Farbe, Intensität und Richtung der Lichtquellen.  Oberflächen, die direkt in Richtung der Lichtquelle zeigen, erhalten die maximale Lichteinwirkung, und Oberflächen, die sich von der Lichtquelle abwenden, erhalten keine Lichteinwirkung.  unter dem Lambert\-Beleuchtungsmodell werden die Umgebungskomponente und eine oder mehrere Komponenten des gerichteten Lichts kombiniert, um festzustellen sich Rechnen auf diffusen Farbeinwirkung für jeden Punkt auf dem Objekt.  
+## <a name="the-lambert-lighting-model"></a>Das Lambert-Beleuchtungsmodell  
+ Das Lambert-Beleuchtungsmodell umfasst gerichtete und Umgebungsbeleuchtung, um Objekte in einer 3D-Szene zu schattieren. Die Umgebungskomponenten sorgen für die Basis der Beleuchtung in der 3D-Szene. Die Richtungskomponente sorgen für zusätzliche Beleuchtung von einer gerichteten (weit entfernten) Lichtquelle. Umgebungsbeleuchtung wirkt sich auf alle Oberflächen in der Szene gleich aus, unabhängig von deren Ausrichtung. Für eine bestimmte Oberfläche ist es ein Produkt aus der Umgebungsfarbe der Oberfläche sowie der Farbe und Intensität des Umgebungslichts in der Szene. Gerichtete Beleuchtung wirkt sich auf jede Oberfläche in der Szene unterschiedlich aus, je nach Ausrichtung der Oberfläche in Bezug auf die Richtung der Lichtquelle. Es ist ein Produkt aus der diffusen Farbe und Ausrichtung der Oberfläche sowie der Farbe, Intensität und Ausrichtung der Lichtquelle. Oberflächen, die direkt auf die Lichtquelle zeigen, erhalten die maximale Einwirkung, während Oberflächen, die direkt weg zeigen, keine Einwirkung erhalten. Unter dem Lambert-Beleuchtungsmodell werden die Umgebungskomponente und eine oder mehrere Richtungskomponenten kombiniert, um die gesamte diffuse Farbeinwirkung für jeden Punkt am Objekt festzulegen.  
   
- Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** und der **Werkzeugkasten** angezeigt werden.  
+ Bevor Sie beginnen, stellen Sie sicher, dass das Fenster **Eigenschaften** und die **Toolbox** angezeigt werden.  
   
-#### So erstellen Sie einen Lambert\-Shader  
+#### <a name="to-create-a-lambert-shader"></a>So erstellen Sie einen Lambert-Shader  
   
-1.  Erstellen Sie einen DGSL\-Shader, mit dem Sie arbeiten können.  Wie Sie dem Projekt einen DGSL\-Shader hinzufügen, erfahren Sie im Abschnitt "Erste Schritte" in [Shader\-Designer](../designers/shader-designer.md).  
+1.  Erstellen Sie einen DGSL-Shader, mit dem Sie arbeiten können. Wie Sie dem Projekt einen DGSL-Shader hinzufügen, erfahren Sie im Abschnitt „Erste Schritte“ unter [Shader-Designer](../designers/shader-designer.md)  
   
-2.  Trennen Sie den Knoten **Punktfarbe** vom Knoten **Endgültige Farbe**.  Wählen Sie das **RGB** Terminal des Knotens **Punktfarbe**, und dann **Zeilen umbrechen** aus.  Lassen Sie das **Alpha** Terminal verbunden.  
+2.  Trennen Sie den Knoten **Farbpunkt** vom Knoten **Endgültige Farbe**. Klicken Sie auf das Terminal **RGB** des Knotens **Farbpunkt** und anschließend auf **Link aufheben**. Lassen Sie das Terminal **Alpha** verbunden.  
   
-3.  Fügen Sie dem Diagramm einen **Lambert**\-Knoten hinzu.  Wählen Sie im **Werkzeugkasten** unter **Hilfsprogramm** die Option **Lambert** aus, und verschieben Sie sie auf die Entwurfsoberfläche.  Der Lambert\-Knoten berechnet das gesamte Materials Farbeinwirkung des Pixels, auf Grundlage Umgebungslicht und Materials Beleuchtungsparameter.  
+3.  Fügen Sie einen Knoten **Lambert** in das Diagramm ein. Klicken Sie in der **Toolbox** unter **Hilfsprogramme** auf **Lambert**, und verschieben Sie es auf die Entwurfsoberfläche. Der Lambert-Knoten berechnet anhand der Umgebungs- und diffusen Lichtparameter die gesamte diffuse Lichteinwirkung des Pixels.  
   
-4.  Schließen Sie den Knoten **Punktfarbe** an den Knoten **Lambert** an.  Im Modus **Auswählen** verschieben Sie das **RGB** Terminal des Knotens **Punktfarbe** auf das Terminal **Diffuse Farbe** des Knotens **Lambert**.  Diese Verbindung stellt dem Lambert\-Knoten mit der interpolierten diffusen Farbe des Pixels.  
+4.  Verbinden Sie den Knoten **Farbpunkt** mit dem Knoten **Lambert**. Verschieben Sie im Modus **Auswählen** das Terminal **RGB** des Knotens **Farbpunkt** auf das Terminal **Diffuses Licht** des Knotens **Lambert**. Diese Verbindung versorgt den Lambert-Knoten mit der interpolierten diffusen Farbe des Pixels.  
   
-5.  Verbinden Sie den berechneten Farbwert mit der endgültigen Farbe.  Verschieben Sie das **Ausgabe** Terminal des Knotens **Lambert** auf das Terminal **RGB** des Knotens **Endgültige Farbe**.  
+5.  Verbinden Sie den berechneten Farbwert mit der endgültige Farbe. Verschieben Sie das Terminal **Ausgabe** des Knotens **Lambert** auf das Terminal **RGB** des Knotens **Endgültige Farbe**.  
   
- Die folgende Abbildung zeigt das endgültige Shaderdiagramm und eine Vorschau des auf das Teekannenmodell angewendeten Shaders.  
+ In der folgenden Abbildung wird das fertige Shader-Diagramm sowie eine Vorschau eines Teekannenmodells gezeigt, auf dem der Shader angewandt wurde.  
   
 > [!NOTE]
->  Um die Wirkung des Shaders in dieser Abbildung besser zu veranschaulichen, wurde eine orangefarbene Farbe verwendet wurde mit dem Parameter **MaterialDiffuse** des Shader verwendet.  Ein Spiel oder eine App können diesen Parameter verwenden, um einen eindeutigen Farbwert für jedes Objekt zu erzeugen.  Informationen zu passen Parameter, finden Sie Befehlsvorschau Shaderabschnitt in [Shader\-Designer](../designers/shader-designer.md).  
+>  Es wurde eine orangene Farbe durch die Verwendung des Parameters **MaterialDiffuse** des Shaders angegeben, um den Effekt des Shaders in dieser Abbildung besser veranschaulichen. Ein Spiel oder eine Anwendung kann diesen Parameter verwenden, um für jedes Objekt einen eindeutigen Farbwert bereitzustellen. Weitere Informationen zu Materialparameter finden Sie im Abschnitt „Vorschau von Shadern verwenden“ unter [Shader-Designer](../designers/shader-designer.md).  
   
- ![Shader&#45;Diagramm und eine Vorschau seiner Effekte](../designers/media/digit-lambert-effect-graph.png "Digit\-Lambert\-Effect\-Graph")  
+ ![Shader-Diagramm und eine Vorschau seiner Effekte.](../designers/media/digit-lambert-effect-graph.png "Digit-Lambert-Effect-Graph")  
   
- Für einige Shader erzielen Sie mit bestimmte Formen möglicherweise bessere Vorschauen.  Weitere Informationen dazu, wie von Shadern im Shader\-Designer, finden Sie Befehlsvorschau Shaderabschnitt in [Shader\-Designer](../designers/shader-designer.md) in der Vorschau angezeigt.  
+ Bestimmte Formen sorgen vielleicht für bessere Vorschauen für einige Shader. Weitere Informationen zur Verwendung der Vorschau von Shadern im Shader-Designer finden Sie im Abschnitt „Vorschau von Shadern verwenden“ unter [Shader-Designer](../designers/shader-designer.md).  
   
- Die folgende Abbildung zeigt den in diesem Dokument beschriebenen Shader, der auf ein 3D\-Modell angewendet wurde.  
+ In der folgenden Abbildung wird der Shader gezeigt, der, wie in diesem Dokument beschrieben, auf ein 3D-Modell angewandt wurde.  
   
- ![Lambert&#45;Beleuchtung in einem Modell](../designers/media/digit-lambert-effect-result.png "Digit\-Lambert\-Effect\-Result")  
+ ![Lambert-Beleuchtung in einem Modell.](../designers/media/digit-lambert-effect-result.png "Digital-Lambert-Effect-Result")  
   
- Weitere Informationen zum Anwenden eines Schaders in einem 3D\-Modell finden Sie unter [Gewusst wie: Anwenden eines Shaders auf ein 3D\-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
+ Weitere Informationen zum Anwenden eines Shaders auf ein 3D-Modell finden Sie unter [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
   
-## Siehe auch  
- [Gewusst wie: Anwenden eines Shaders auf ein 3D\-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
- [Gewusst wie: Exportieren eines Shaders](../designers/how-to-export-a-shader.md)   
- [Gewusst wie: Erstellen eines standardmäßigen Phong\-Shaders](../designers/how-to-create-a-basic-phong-shader.md)   
- [Shader\-Designer](../designers/shader-designer.md)   
- [Shader\-Designer\-Knoten](../designers/shader-designer-nodes.md)
+## <a name="see-also"></a>Siehe auch  
+ [Vorgehensweise: Anwenden eines Shaders auf ein 3D-Modell](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
+ [Vorgehensweise: Exportieren eines Shaders](../designers/how-to-export-a-shader.md)   
+ [Vorgehensweise: Erstellen eines standardmäßigen Phong-Shaders](../designers/how-to-create-a-basic-phong-shader.md)   
+ [Shader-Designer](../designers/shader-designer.md)   
+ [Shader-Designer-Knoten](../designers/shader-designer-nodes.md)

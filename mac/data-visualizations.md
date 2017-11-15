@@ -7,14 +7,12 @@ ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
 ms.openlocfilehash: 5f1eda5ccf6f308c626d525bbe7069a84ce3154b
-ms.contentlocale: de-de
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-
 # <a name="data-visualizations"></a>Datenvisualisierungen
 
 Visual Studio für Mac beinhaltet eine UI-Unterstützung für den Debugger, durch die Visualisierungen der Werte einer Variable, eines Felds oder einer Eigenschaft während des Debuggens ermöglicht werden. Diese Daten-Schnellansichten zeigen eine erweiterte Version der Daten an und ermöglichen es Entwicklern, bekannte Strukturen zu überprüfen, zum Beispiel das Anzeigen der Farbe einer Color-Struktur.
@@ -106,4 +104,3 @@ Einige andere Typen, die ebenfalls über ihre eigenen Inline-Schnellansichten ve
     *   Dadurch wird ein anklickbarer Link angezeigt.
 *   **IntPtr**
     *   Dadurch wird eine hexadezimale Darstellung des IntPtr angezeigt.
-

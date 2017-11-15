@@ -4,33 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 7d08de69-c32e-4f0b-89aa-75347b15fb82
-caps.latest.revision: 11
+caps.latest.revision: "11"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: badc5d3077ddfe8f76f24cbbf7a52869fde8f318
-ms.lasthandoff: 04/04/2017
-
+ms.openlocfilehash: 665e16720466faff5dd52635066198e36d58d117
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="unit-testing-existing-c-applications-with-test-explorer"></a>Ausführen von Unittests für vorhandene C++-Anwendungen mit dem Test-Explorer
 Es wird empfohlen, vor der Änderung einer vorhandenen Anwendung zu überprüfen, ob sie gut mit Komponententests abgedeckt ist. So können Sie sichergehen, dass durch die Änderungen keine Fehler eingeführt werden. Wenn die Anwendung noch nicht über Komponententests verfügt, können Sie diese hinzufügen, indem Sie die in diesem Thema beschriebenen Methoden verwenden. In diesem Thema wird beschrieben, wie Sie Komponententests für vorhandenen Visual C++-Code hinzufügen. Zunächst entscheiden Sie, wie Sie Ihren Code testen möchten. Dann fahren Sie mit dem Erstellen, Schreiben und Ausführen der Tests fort.  
@@ -182,4 +167,3 @@ Es wird empfohlen, vor der Änderung einer vorhandenen Anwendung zu überprüfen
 2.  Wählen Sie im Test-Explorer **Alle ausführen**aus.  
   
  Weitere Informationen finden Sie unter [Testgesteuerte Entwicklung mit dem Test-Explorer](../test/quick-start-test-driven-development-with-test-explorer.md).
-

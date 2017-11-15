@@ -8,16 +8,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: cbc7df6c-0bc9-48f5-b9ad-b9ed31c42f92
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
 ms.openlocfilehash: 50947cbd619f086daecc1e09f88a4b238a36ee41
-ms.contentlocale: de-de
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="targeting-edge-vs-legacy-engines-in-jsrt-apis"></a>Ansteuern des Edgemodus im Vergleich zu Legacy-Modulen in JsRT-APIs
 Ab Windows 10 besteht eine der Änderungen, die wir an dem JavaScript-Modul Chakra, das auf die Windows 10-Browserstrategie zur Unterstützung eines neuen Edge-Renderingmoduls ausgerichtet ist, darin, zwei unterschiedliche Chakra-Module zu unterstützen:  

@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,31 +12,17 @@ helpviewer_keywords:
 - unit tests, walkthrough
 - data sources, defining with configuration files
 ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
-caps.latest.revision: 32
+caps.latest.revision: "32"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 212b8bd6e6c6e695bcc7a4486cbcde59e7309446
-ms.lasthandoff: 04/04/2017
-
+ms.openlocfilehash: 3f7ea8032efa4b35603568afd8b17107c293f2e6
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Exemplarische Vorgehensweise: Verwenden einer Konfigurationsdatei zum Definieren einer Datenquelle
-Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei „app.config“ definierte Datenquelle für Unittests verwendet wird. Sie erfahren, wie Sie eine „app.config“-Datei erstellen können, die eine Datenquelle definiert, die von der <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>-Klasse verwendet wird. Die folgenden Aufgaben werden in dieser exemplarischen Vorgehensweise vorgestellt:  
+Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei „app.config“ definierte Datenquelle für Unittests verwendet wird. Sie erfahren, wie die Datei „app.config“ zum Definieren einer Datenquelle erstellt wird, die von der <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>-Klasse verwendet werden kann. Die folgenden Aufgaben werden in dieser exemplarischen Vorgehensweise vorgestellt:  
   
 -   Erstellen der Datei „app.config“  
   
@@ -47,7 +32,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei „app
   
 -   Definieren der Datenquellen  
   
--   Zugreifen auf die Datenquelle mithilfe der <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>-Klasse  
+-   Zugreifen auf die Datenquellen über die <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>-Klasse  
   
 ## <a name="prerequisites"></a>Erforderliche Komponenten  
  Um die exemplarische Vorgehensweise nachzuvollziehen, benötigen Sie Folgendes:  
@@ -127,7 +112,7 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei „app
 ## <a name="define-data-sources"></a>Definieren von Datenquellen  
  Der Abschnitt „Datenquellen“ enthält vier Attribute, die vom Testmodul zum Abrufen von Daten aus einer Datenquelle verwendet werden.  
   
--   `name`definiert die Identität, die vom <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>-Element verwendet wird, um anzugeben, welche Datenquelle verwendet werden soll.  
+-   `name` definiert die von <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> verwendete Identität, um die zu verwendende Datenquelle anzugeben.  
   
 -   `connectionString` bezeichnet die im vorhergehenden Abschnitt „Definieren von Verbindungszeichenfolgen“ erstellte Verbindungszeichenfolge.  
   
@@ -288,4 +273,3 @@ Diese exemplarische Vorgehensweise veranschaulicht, wie eine in der Datei „app
  [Erstellen und Ausführen von Komponententests für vorhandenen Code](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
  [Testen der Anwendung](/devops-test-docs/test/test-apps-early-and-often)   
  [Gewusst wie: Erstellen eines datengesteuerten Komponententests](../test/how-to-create-a-data-driven-unit-test.md)
-

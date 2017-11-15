@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 03/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/msbuild/2003#Choose
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#Choose
 dev_langs:
 - VB
 - CSharp
@@ -20,29 +18,15 @@ helpviewer_keywords:
 - <Choose> Element [MSBuild]
 - Choose Element [MSBuild]
 ms.assetid: 7b8b025a-d944-4f5c-9018-c89fc2ef146d
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 0e5a449ef396e7b9fd23a2c018bdc7f8791b7b38
-ms.openlocfilehash: a1165b0f8b0563abca99b8febc9479ce94030000
-ms.lasthandoff: 03/13/2017
-
+ms.openlocfilehash: e199dbfc171688cd0970cf340aef0dfd3584155a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="choose-element-msbuild"></a>Choose-Element (MSBuild)
 Bewertet untergeordnete Elemente, um einen Satz von auszuwertenden `ItemGroup`-Elementen und/oder `PropertyGroup`-Elementen auszuwählen.  
@@ -87,10 +71,10 @@ Bewertet untergeordnete Elemente, um einen Satz von auszuwertenden `ItemGroup`-E
 |[When](../msbuild/when-element-msbuild.md)|Gibt einen möglichen Codeblock an, den das `Choose`-Element auswählen kann.|  
 
 ## <a name="remarks"></a>Hinweise  
- Die `Choose`-, `When`- und `Otherwise`-Elemente werden zusammen verwendet, um eine Möglichkeit zu bieten, einen Codeabschnitt aus einer Reihe von möglichen Alternativen zur Ausführung auszuwählen. Weitere Informationen finden Sie unter [Bedingte Konstrukte](../msbuild/msbuild-conditional-constructs.md).  
+ Die `Choose`-, `When`- und `Otherwise`-Elemente werden zusammen verwendet, um eine Möglichkeit zu bieten, einen Codeabschnitt aus einer Reihe von möglichen Alternativen zur Ausführung auszuwählen. Weitere Informationen finden Sie unter [MSBuild Conditional Constructs](../msbuild/msbuild-conditional-constructs.md).  
 
 ## <a name="example"></a>Beispiel  
- Das folgende Projekt verwendet das `Choose`-Element, um auszuwählen, welche Gruppe von Eigenschaftswerten in den `When`-Elementen festgelegt werden soll. Wenn die `Condition`-Attribute von beiden `When`-Elementen als `false` ausgewertet werden, werden die Eigenschaftswerte im `Otherwise`-Element festgelegt.  
+ Das folgende Projekt verwendet das `Choose`-Element, um auszuwählen, welche Gruppe von Eigenschaftswerten in den `When`-Elementen festgelegt werden soll. Wenn die `Condition`-Attribute beider `When`-Elemente `false` ergeben, werden die Eigenschaftswerte im `Otherwise`-Element festgelegt.  
 
 ```xml  
 <Project  
@@ -140,4 +124,3 @@ Bewertet untergeordnete Elemente, um einen Satz von auszuwertenden `ItemGroup`-E
 ## <a name="see-also"></a>Siehe auch  
  [Conditional Constructs](../msbuild/msbuild-conditional-constructs.md)  (Bedingte Konstrukte in MSBuild)  
  [Referenz zum MSBuild-Projektdateischema](../msbuild/msbuild-project-file-schema-reference.md)
-

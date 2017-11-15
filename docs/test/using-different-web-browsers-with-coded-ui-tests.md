@@ -4,34 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
-caps.latest.revision: 23
+caps.latest.revision: "23"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 28ce78165492b6f74cdd85ba79eae26e4d68d32c
-ms.contentlocale: de-de
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 6c8e2cac9d6f2622bacae0b27cecc8f074ea3a15
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Verwenden verschiedener Webbrowser mit Tests der programmierten UI
 Tests der programmierten UI können Tests für Webanwendungen durch Aufzeichnen Ihrer Tests mit Internet Explorer automatisieren. Sie können den Test anschließend anpassen und diesen entweder mit Internet Explorer oder anderen Browsertypen für diese Webanwendungen wiedergeben.  
@@ -117,17 +101,17 @@ Tests der programmierten UI können Tests für Webanwendungen durch Aufzeichnen 
  *Was sollte ich noch wissen?*  
  **Notizen**  
   
--   ![Erforderliche Komponente](~/test/media/prereq.png "Prereq") Der Webbrowser Apple Safari wird nicht unterstützt.  
+-   ![Erforderliche Komponente](../test/media/prereq.png "Prereq") Der Webbrowser Apple Safari wird nicht unterstützt.  
   
--   ![Prerequsite](~/test/media/prereq.png "Prereq") Die Aktion zum Starten des Webbrowsers muss Teil des Tests der programmierten UI sein.  
+-   ![Prerequsite](../test/media/prereq.png "Prereq") Die Aktion zum Starten des Webbrowsers muss Teil des Tests der programmierten UI sein.  
   
      Wenn Sie einen Webbrowser bereits geöffnet haben und Schritte darin ausführen möchten, schlägt die Wiedergabe fehl, sofern Sie nicht Internet Explorer verwenden. Eine bewährte Methode ist daher, den Start des Webbrowsers in die Tests der programmierten UI einzubinden.  
   
--   ![Prerequsite](~/test/media/prereq.png "Prereq") Das Automatisieren von browserspezifischen UI-Aktionen, wie Maximieren, Minimieren und Wiederherstellen wird nicht unterstützt.  
+-   ![Prerequsite](../test/media/prereq.png "Prereq") Das Automatisieren von browserspezifischen UI-Aktionen, wie Maximieren, Minimieren und Wiederherstellen wird nicht unterstützt.  
   
  **Tipps**  
   
--   ![Tipp](~/test/media/tip.png "Tip") Sie können die Ausgabe so konfigurieren, dass Screenshots in den Coded UI-Protokollen enthalten sind. Hierzu müssen einige Konfigurationseinstellungen in der Datei "QTAgent32.exe.config" festgelegt werden. Standardmäßig wird diese Datei an folgendem Speicherort installiert:  
+-   ![Tipp](../test/media/tip.png "Tip") Sie können die Ausgabe so konfigurieren, dass Screenshots in den Coded UI-Protokollen enthalten sind. Hierzu müssen einige Konfigurationseinstellungen in der Datei "QTAgent32.exe.config" festgelegt werden. Standardmäßig wird diese Datei an folgendem Speicherort installiert:  
   
      **C:\Programme (x86)\Microsoft Visual Studio 11.0\Common7\IDE“**  
   
@@ -171,4 +155,3 @@ Tests der programmierten UI können Tests für Webanwendungen durch Aufzeichnen 
  [Verwenden von Benutzeroberflächenautomatisierung zum Testen des Codes](../test/use-ui-automation-to-test-your-code.md)   
  [Unterstützte Konfigurationen und Plattformen für Tests der programmierten UI und Aktionsaufzeichnungen](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
  [Analysieren von Tests der programmierten UI mithilfe der Testprotokolle der programmierten UI](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)
-

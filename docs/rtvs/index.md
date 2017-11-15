@@ -1,27 +1,24 @@
 ---
 title: "R Tools für Visual Studio | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 6/29/2017
+ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: hero-article
 ms.assetid: 11324501-ceb6-47a2-ae13-e9e992d3603e
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 693b070974c86babcfb57f71d37aa7eb030aac90
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: 80a10c710aac8413bd59b53bb61de7a982c09952
-ms.contentlocale: de-de
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="working-with-r-in-visual-studio"></a>Arbeiten mit R in Visual Studio
 
 R ist eine hochgradig erweiterbare Sprache und Umgebung für die statistische Berechnungen und Grafiken. Die Sprache wird kostenlos unter der GNU General Public License (GNU GPL) bereitgestellt, wird von einer starken Community unterstützt und ist für ihre Fähigkeit bekannt, hochwertige Plots einschließlich mathematischer Symbole und Formeln zu erzeugen. Weitere Informationen zu R erhalten Sie unter [r-project.org](https://www.r-project.org/about.html) und [An Introduction to R](https://cran.r-project.org/doc/manuals/r-release/R-intro.html) (Einführung in R).
@@ -126,4 +123,3 @@ A. Nein, Visual Studio unterstützt nicht das Laden von Projekten aus einer Netz
 1. **Ein Lächeln oder ein Stirnrunzeln senden**: Das Menü **R Tools > Feedback** bietet eine schnelle Möglichkeit, Feedback zu senden und RTVS-Protokolldateien anzufügen, die bei der Diagnose Ihres Problems helfen können. (Protokolle werden in `%temp%/RTVSlogs.zip` geschrieben, falls Sie sie separat senden möchten.) Die Protokollierung ist deaktiviert, falls Sie die Visual Studio-Telemetrie über den Menübefehl **Hilfe > Feedback > Einstellungen** oder während der Installation deaktiviert haben.
 
 1. **E-Mail**: Sie können unter *rtvsuserfeedback (at) microsoft.com* direktes Feedback an das Team senden.
-
