@@ -1,1 +1,1 @@
-Internet Explorer 9 \(Standardmodus\), Internet Explorer 10 \(Standardmodus\), Internet Explorer 11 \(Standardmodus\) und Windows Store\-Apps
+Internet Explorer 9 (Standardmodus), Internet Explorer 10 (Standardmodus), Internet Explorer 11 (Standardmodus) und Windows Store-Apps
