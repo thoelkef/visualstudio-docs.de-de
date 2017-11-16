@@ -1,50 +1,51 @@
 ---
-title: "VSPerfCLREnv | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Befehlszeilentools, VSPerfCLREnv"
-  - "Befehlszeile, Tools"
-  - "Leistungstools, VSPerfCLREnv"
-  - "Profilerstellungstools, VSPerfCLREnv"
-  - "VSPerfCLREnv-Tool"
+title: VSPerfCLREnv | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- command-line tools, VSPerfCLREnv
+- command line, tools
+- performance tools, VSPerfCLREnv
+- profiling tools,VSPerfCLREnv
+- VSPerfCLREnv tool
 ms.assetid: 4bc9dd6e-379c-4930-9bba-59a4faa93303
-caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 580d3b5f1dab03e34dac7c452da08e00e453a503
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# VSPerfCLREnv
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Das VSPerfCLREnv\-Tool wird verwendet, um Umgebungsvariablen festzulegen, die erforderlich sind, um eine .NET Framework\-Anwendung ein Profil zu erstellen.  Es verwendet die folgende Syntax:  
+# <a name="vsperfclrenv"></a>VSPerfCLREnv
+Das VSPerfCLREnv-Tool wird verwendet, um Umgebungsvariablen festzulegen, die für die Profilerstellung einer .NET Framework-Anwendung erforderlich sind. Es verwendet die folgende Syntax:  
   
 ```  
 VsPerfCLREnv [/option]  
 ```  
   
- Die Auswahl der Option hängt davon ab, welchen der drei Profilerstellungstypen Sie verwenden: Sampling, Instrumentation oder Global.  Eine separate Option ist erforderlich, um Ebeneninteraktionsdaten in die Profilerstellungsdaten einzuschließen.  Die Syntax für die einzelnen Optionen wird in den folgenden Tabellen beschrieben.  
+ Die Option, die Sie auswählen, hängt davon ab, welche der drei Typen der Profilerstellung Sie verwenden: Sampling, Instrumentierung oder die globale Profilerstellung. Eine separate Option ist erforderlich, um Ebeneninteraktionsdaten in die Profilerstellungsdaten einzuschließen. Die Syntax für jede Option wird in den folgenden Tabellen beschrieben.  
   
 > [!NOTE]
->  Wenn Sie die Profilerstellung abgeschlossen haben, führen Sie **VSPerfCLREnv** mit der **\/off**\-Option oder der **\/globaloff**\-Option aus, um die für die Profilerstellung erforderlichen Umgebungsvariablen zu löschen.  Weitere Informationen finden Sie unter "VSPerfCLREnv\-Optionen zum Löschen von Umgebungseinstellungen".  
+>  Wenn Sie mit der Profilerstellung fertig sind, führen Sie **VSPerfCLREnv** mit der Option **/off** oder **/globaloff** aus, um die für die Profilerstellung erforderlichen Umgebungsvariablen zu löschen. Weitere Informationen finden Sie in den hier dargestellten VSPerfCLREnv-Optionen zum Löschen von Umgebungseinstellungen.  
   
- **VSPerfCLREnv\-Optionen zum Einschließen von Daten zur Ebeneninteraktion**  
+ **VSPerfCLREnv-Optionen zum Einschließen von Ebeneninteraktionsdaten**  
   
 > [!WARNING]
->  Profilerstellungsdaten für die Ebeneninteraktion können mit [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] oder [!INCLUDE[vs_pro_current_short](../profiling/includes/vs_pro_current_short_md.md)] erfasst werden.  Allerdings können Profilerstellungsdaten für die Ebeneninteraktion nur in [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)] und [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] angezeigt werden.  
+>  Profilerstellungsdaten für die Ebeneninteraktion können mit [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] oder [!INCLUDE[vs_pro_current_short](../profiling/includes/vs_pro_current_short_md.md)] erfasst werden. Allerdings können Profilerstellungsdaten für die Ebeneninteraktion nur in [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)] und [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] angezeigt werden.  
   
- Ebeneninteraktionsprofilerstellung stellt weitere Informationen zu ADO.NET\-Abfragen in Anwendungen mit mehreren Ebenen bereit.  Es werden nur Daten für synchrone Funktionsaufrufe gesammelt.  Jeder Profilerstellungsausführung können mit einer beliebigen Profilerstellungsmethode Interaktionsdaten hinzugefügt werden.  
+ Die Profilerstellung für die Ebeneninteraktion bietet zusätzliche Informationen zu ADO.NET-Abfragen in mehrstufigen Anwendungen. Es werden nur Daten für synchrone Funktionsaufrufe gesammelt. Interaktionsdaten können zu jeder Profilerstellung hinzugefügt werden, unabhängig von der Profilerstellungsmethode.  
   
- Die **InteractionOn**\-Option und die **GlobalInteractionOn**\-Option ermöglichen das Sammeln von Ebeneninteraktionsdaten.  Die Interaktionsoption muss nach der Umgebungsvariable VSPerfCLREnv festgelegt werden, die zum Erstellen eines Profils für eine Anwendung erforderlich ist.  
+ Die Optionen **InteractionOn** und **GlobalInteractionOn** aktivieren die Sammlung von Ebeneninteraktionsdaten. Die Interaktionsoption muss festgelegt werden, nachdem die Umgebungsvariable VSPerfCLREnv festgelegt wurde, die für die Profilerstellung einer Anwendung benötigt wird.  
   
- Im folgenden Beispiel werden Daten zur Ebeneninteraktion in eine Profilerstellungsausführung aufgenommen, die die Samplingmethode verwendet:  
+ Das folgende Beispiel schließt Ebeneninteraktionsdaten in eine Profilerstellung ein, die die Samplingmethode verwendet:  
   
 ```  
 VSPerfCLREnv /SampleOn  
@@ -52,7 +53,7 @@ VSPerfCLREnv /InteractionOn
 VSPerfCmd /Start:Sample /Output:MyApp.exe.vsp /Launch:MyApp.exe  
 ```  
   
- Im folgenden Beispiel werden Daten zur Ebeneninteraktion in eine Profilerstellungsausführung für einen Windows\-Dienst aufgenommen:  
+ Das folgende Beispiel schließt Ebeneninteraktionsdaten in eine Profilerstellung für einen Windows-Dienst ein:  
   
 ```  
 VSPerfCLREnv /GlobalSampleOn  
@@ -62,53 +63,53 @@ VSPerfCmd /Start:Sample /Output:MyService.exe.vsp
 VSPerfCmd /Attach:MyService.exe  
 ```  
   
- **VSPerfCLREnv\-Optionen für die instrumentierte Profilerstellung**  
+ **VSPerfCLREnv-Optionen zum Verarbeiten der Instrumentierungsprofilerstellung**  
   
- In der folgenden Tabelle werden VSPerfCLREnv\-Optionen für die instrumentierte Profilerstellung beschrieben:  
+ Die folgende Tabelle beschreibt VSPerfCLREnv-Optionen für die Instrumentierungsprofilerstellung:  
   
-|Option|**Beschreibung**|  
-|------------|----------------------|  
-|**TraceOn**|Aktiviert die Profilerstellung mit der Instrumentationsmethode  Aktiviert die Speicherbelegungsprofilerstellung oder das Auflisten von Objektlebensdauerdaten nicht.|  
-|**TraceGC**|Aktiviert die Speicherbelegungsprofilerstellung mit der Instrumentationsmethode.  Aktiviert das Auflisten von Objektlebensdauerdaten nicht.|  
-|**TraceGCLife**|Aktiviert die Speicherbelegungsprofilerstellung und das Sammeln von Daten zur Objektlebensdauer mithilfe der Instrumentationsmethode.|  
+|Option|Beschreibung|  
+|------------|-----------------|  
+|**TraceOn**|Aktiviert die Profilerstellung mithilfe der Instrumentierungsmethode. Aktiviert nicht die Profilerstellung für die Speicherreservierung oder die Sammlung von Objektlebensdauerdaten.|  
+|**TraceGC**|Aktiviert die Profilerstellung für die Speicherreservierung mithilfe der Instrumentierungsmethode. Aktiviert nicht die Sammlung von Objektlebensdauerdaten.|  
+|**TraceGCLife**|Aktiviert die Profilerstellung für die Speicherreservierung und die Sammlung von Objektlebensdauerdaten mithilfe der Instrumentierungsmethode.|  
   
- **VSPerfCLREnv\-Optionen für die Sampling\-Profilerstellung**  
+ **VSPerfCLREnv-Optionen zum Verarbeiten der Sampling-Profilerstellung**  
   
- In der folgenden Tabelle werden VSPerfCLREnv\-Optionen für die Sampling\-Profilerstellung beschrieben:  
+ Die folgende Tabelle beschreibt VSPerfCLREnv-Optionen für die Sampling-Profilerstellung:  
   
-|Option|**Beschreibung**|  
-|------------|----------------------|  
-|**SampleOn**|Aktiviert die Profilerstellung mit der Samplingmethode.  Aktiviert die Speicherbelegungsprofilerstellung oder das Auflisten von Objektlebensdauerdaten nicht.|  
-|**SampleGC**|Aktiviert die Speicherbelegungsprofilerstellung mit der Samplingmethode.  Aktiviert das Auflisten von Objektlebensdauerdaten nicht.|  
-|**SampleGCLife**|Aktiviert die Speicherbelegungsprofilerstellung mit der Samplingmethode.  Aktiviert auch das Auflisten von Objektlebensdauerdaten.|  
-|**SampleLineOff**|Deaktiviert der Auflistung von .NET\-Profilerstellungsdaten auf Zeilenebene.|  
+|Option|Beschreibung|  
+|------------|-----------------|  
+|**SampleOn**|Aktiviert die Profilerstellung mithilfe der Samplingmethode. Aktiviert nicht die Profilerstellung für die Speicherreservierung oder die Sammlung von Objektlebensdauerdaten.|  
+|**SampleGC**|Aktiviert die Profilerstellung für die Speicherreservierung mithilfe der Samplingmethode. Aktiviert nicht die Sammlung von Objektlebensdauerdaten.|  
+|**SampleGCLife**|Aktiviert die Profilerstellung für die Speicherreservierung mithilfe der Samplingmethode. Aktiviert zudem die Sammlung von Objektlebensdauerdaten.|  
+|**SampleLineOff**|Deaktiviert die Sammlung von .NET-Profilerstellungsdaten auf Zeilenebene.|  
   
- **VSPerfCLREnv\-Optionen für die globale Profilerstellung**  
+ **VSPerfCLREnv-Optionen für die globale Profilerstellung**  
   
- Um ein Profil für einen verwalteten Dienst, wie z. B. eine ASP.NET\-Webanwendung, zu erstellen, der vom Betriebssystem und nicht vom Benutzer gestartet wird, verwenden Sie die VSPerfCLREnv\-Optionen für die globale Profilerstellung.  In der folgenden Tabelle werden die globalen Varianten der VSPerfCLREnv\-Optionen beschrieben.  Durch diese Optionen werden die entsprechenden Umgebungsvariablen in der Registrierung festgelegt.  
+ Um die Profilerstellung für einen verwalteten Dienst wie die ASP.NET-Webanwendung auszuführen, die vom Betriebssystem anstatt vom Benutzer gestartet wird, verwenden Sie Optionen für die globale Profilerstellung der VSPerfCLREnv-Optionen. Die folgende Tabelle beschreibt die globalen Versionen der VSPerfCLREnv-Optionen. Diese Optionen legen die geeigneten Umgebungsvariablen bei der Registrierung fest.  
   
-|Option|**Beschreibung**|  
-|------------|----------------------|  
-|**GlobalTraceOn**|Aktiviert die globale Profilerstellung mit der Instrumentationsmethode  Erfasst keine Speicherbelegungsereignisse oder Objektlebensdauerdaten.|  
-|**GlobalTraceGC**|Aktiviert die globale Speicherbelegungsprofilerstellung mit der Instrumentationsmethode.  Aktiviert das Auflisten von Objektlebensdauerdaten nicht.|  
-|**GlobalTraceGCLife**|Aktiviert die globale Speicherbelegungsprofilerstellung mit der Instrumentationsmethode.  Aktiviert auch die Auflistung von Objektlebensdauerdaten.|  
-|**GlobalSampleOn**|Aktiviert die globale Profilerstellung mit der Samplingmethode.  Aktiviert nicht die Erfassung von Speicherbelegungsereignissen oder Objektlebensdauerdaten.|  
-|**GlobalSampleGC**|Aktiviert die globale Speicherbelegungsprofilerstellung mit der Samplingmethode.  Aktiviert das Auflisten von Objektlebensdauerdaten nicht.|  
-|**GlobalSampleGCLife**|Aktiviert die globale Speicherbelegungsprofilerstellung mit der Samplingmethode.  Aktiviert auch das Auflisten von Objektlebensdauerdaten.|  
+|Option|Beschreibung|  
+|------------|-----------------|  
+|**GlobalTraceOn**|Aktiviert die globale Profilerstellung mithilfe der Instrumentierungsmethode. Sammelt keine Speicherreservierungsereignisse oder Objektlebensdauerdaten.|  
+|**GlobalTraceGC**|Aktiviert die globale Profilerstellung für die Speicherreservierung mithilfe der Instrumentierungsmethode. Aktiviert nicht die Sammlung von Objektlebensdauerdaten.|  
+|**GlobalTraceGCLife**|Aktiviert die globale Profilerstellung für die Speicherreservierung mithilfe der Instrumentierungsmethode. Aktiviert zudem die Sammlung von Objektlebensdauerdaten.|  
+|**GlobalSampleOn**|Aktiviert die globale Profilerstellung mithilfe der Samplingmethode. Aktiviert nicht die Sammlung von Speicherreservierungsereignissen oder Objektlebensdauerdaten.|  
+|**GlobalSampleGC**|Aktiviert die globale Profilerstellung für die Speicherreservierung mithilfe der Samplingmethode. Aktiviert nicht die Sammlung von Objektlebensdauerdaten.|  
+|**GlobalSampleGCLife**|Aktiviert die globale Profilerstellung für die Speicherreservierung mithilfe der Samplingmethode. Aktiviert zudem die Sammlung von Objektlebensdauerdaten.|  
   
- **VSPerfCLREnv\-Optionen zum Löschen von Umgebungseinstellungen**  
+ **VSPerfCLREnv-Optionen zum Löschen von Umgebungseinstellungen**  
   
- Nachdem Sie das Profil der verwalteten Anwendung erstellt haben, verwenden Sie eine der folgenden Optionen, um die Umgebungsvariablen zu löschen, die von VSPerfCLREnv hinzugefügt wurden.  In der folgenden Tabelle wird beschrieben, wie sowohl standardmäßige als auch globale Umgebungsvariablen gelöscht werden:  
+ Wenn Sie mit der Profilerstellung für die verwaltete Anwendung fertig sind, verwenden Sie eine der folgenden Optionen zum Löschen der Umgebungsvariablen, die von VSPerfCLREnv hinzugefügt wurden. In der folgenden Tabelle wird beschrieben, wie sowohl Standard- als auch globale Umgebungsvariablen gelöscht werden:  
   
-|Option|**Beschreibung**|  
-|------------|----------------------|  
-|**Off**|Löscht die Umgebungsvariablen für die standardmäßige .NET\-Profilerstellung.  Verwenden Sie diese Option, wenn die nicht globalen VSPerfClrEnv\-Optionen verwendet wurden, um die Profilerumgebungsvariablen festzulegen.|  
-|**GlobalOff**|Löscht Umgebungsvariablen für die globale .NET\-Profilerstellung.  Verwenden Sie diese Option, wenn die Anwendung vom Betriebssystem und nicht vom Profiler gestartet wurde.|  
+|Option|Beschreibung|  
+|------------|-----------------|  
+|**Off**|Löscht Umgebungsvariablen für die Standard-.NET-Profilerstellung. Verwenden Sie diese Option, wenn die nicht globalen VSPerfClrEnv-Optionen zum Festlegen der Profiler-Umgebungsvariablen verwendet wurden.|  
+|**GlobalOff**|Löscht Umgebungsvariablen für die globale .NET-Profilerstellung. Verwenden Sie diese Option, wenn die Anwendung vom Betriebssystem anstatt vom Profiler gestartet wurde.|  
   
-## Hinweise  
- Diese Optionen sind nicht erforderlich, um ein Profil einer verwalteten Anwendung zu erstellen, wenn die Anwendung über den Leistungs\-Explorer in der IDE gestartet wurde.  Der Leistungs\-Explorer legt alle erforderlichen Umgebungseinstellungen für Sie fest.  
+## <a name="remarks"></a>Hinweise  
+ Diese Optionen sind für die Profilerstellung einer verwalteten Anwendung nicht erforderlich, wenn die Anwendung mithilfe des Leistungs-Explorers in der IDE gestartet wurde. Der Leistungs-Explorer legt alle erforderlichen Umgebungseinstellungen für Sie fest.  
   
- Wenn während der Profilerstellung nicht die richtige Umgebung festgelegt wurde, wird bei der Analyse eine Warnung ausgegeben, und die Namen der verwalteten Funktionen können nicht korrekt aufgelöst werden.  
+ Wenn während der Profilerstellung nicht die richtige Umgebung festgelegt wurde, wird während der Analyse eine Warnung ausgegeben und die Namen der verwalteten Funktionen werden nicht ordnungsgemäß aufgelöst.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Profilerstellung mithilfe der Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md)

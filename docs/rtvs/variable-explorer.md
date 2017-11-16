@@ -1,27 +1,24 @@
 ---
 title: "Variablen-Explorer in R Tools für Visual Studio | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 6/30/2017
+ms.date: 06/30/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 6c669434-40d8-4970-92cc-502a98c8b5ab
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 1d86bca24d9e8d4d1bde8d62cd0be25c485b9253
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: 92396808161886cf3b15f7e8e0ab23a0a35e26b9
-ms.contentlocale: de-de
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="variable-explorer"></a>Variablen-Explorer
 
 Das Fenster **Variablen-Explorer**, das über **R Tools > Windows > Variablen-Explorer** (oder STRG+8, wenn Sie **R Tools > Data Science-Einstellungen** verwendet haben) geöffnet wird, zeigt alle Variablen in einem bestimmten Bereich in der aktuellen R-Sitzung. Wenn Sie beispielsweise den Variablen-Explorer geöffnet haben und die folgenden Zeilen im [interaktiven Fenster](interactive-repl.md) eingeben:
@@ -82,4 +79,3 @@ Es gibt zwei Befehle auf der Symbolleiste des Variablen-Explorers, die auch übe
 Wenn Sie die zu importierende CSV-Datei ermittelt haben, zeigt Visual Studio das Dialogfeld **Dataset importieren** an, in dem Sie mit Optionen steuern können, wie eine Datendatei analysiert wird (d.h. wie der Feldseparator definiert ist und wie Anführungszeichen behandelt werden). Sie können auch eine Vorschauversion des importierten Datenrahmens und der ursprünglichen Datendatei anzeigen lassen:
 
 ![Dialogfeld „Dataset importieren“](media/variable-explorer-import-dataset-dialog.png)
-

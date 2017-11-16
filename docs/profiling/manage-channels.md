@@ -1,66 +1,65 @@
 ---
-title: "Verwalten von Kan&#228;len | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.cv.threads.tools.managechannels"
-helpviewer_keywords: 
-  - "Nebenläufigkeitsschnellansicht, Verwalten von Kanälen"
+title: "Verwalten von Kanälen | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.cv.threads.tools.managechannels
+helpviewer_keywords: Concurrency Visualizer, Manage Channels
 ms.assetid: 507b06e9-bb56-4a72-8fd5-f91f958da6fc
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 794b34365dfa025c6ade7f2d7a2f1216c2b4e4ff
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Verwalten von Kan&#228;len
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-In **Threadansicht** in der Parallelitätsschnellansicht, können Sie den aktuellen Channels für den Prozess verwalten, damit Sie bestimmte Muster erkennen können.  Sie können sie sortieren, Channels aufwärts und abwärts verschieben und sie anzeigen oder ausblenden.  
+# <a name="manage-channels"></a>Verwalten von Kanälen
+In der **Threadansicht** in der Parallelitätsschnellansicht können Sie die Kanäle für den Prozess so organisieren, dass Sie bestimmte Muster untersuchen können. Sie können Kanäle sortieren, sie nach oben und unten verschieben oder sie ausblenden und wieder einblenden.  
   
-## Sortieren nach  
- Sie können die Sortiervorgänge nach Steuerelement verwenden, um die Threads nach unterschiedlichen Kriterien, auf Grundlage der aktuellen Zoomstufe zu sortieren.  Dies ist besonders nützlich, wenn Sie nach einem bestimmten Muster suchen.  Sie können durch diese Kriterien sortieren:  
+## <a name="sort-by"></a>Sortieren nach  
+ Mit dem „Sortieren nach“-Steuerelement können Sie Threads nach verschiedenen Kriterien basierend auf dem aktuellen Zoomfaktor sortieren. Dies ist besonders nützlich, wenn Sie nach einem bestimmten Muster suchen. Sie können nach folgenden Kriterien sortieren:  
   
 |Kriterien|Definition|  
-|---------------|----------------|  
-|Startzeit|Sortiert Threads nach ihrer Startzeit.  Dies ist die Standardsortierreihenfolge.|  
-|Endzeit|Sortiert Threads nach ihrer Beendigungszeit.|  
-|Ausführung|Sortiert Threads nach dem Prozentsatz der Zeitspanne, die für die Ausführung aufgebracht wurde.|  
-|Synchronisierung|Sortiert Threads nach dem Prozentsatz der Zeit, die in die Synchronisierung aufgebracht wurde.|  
-|E\/A|Sortiert Threads nach dem Prozentsatz der Zeit, die in der E\/A entfällt \(das Lesen und Schreiben von Daten\).|  
-|Sleep|Sortiert Threads nach dem Prozentsatz der Zeitspanne, die im Standbymodus verbracht wurde.|  
-|Paging|Sortiert Threads nach dem Prozentsatz der Zeit, die Auslagerung.|  
-|Vorzeitige Entfernung|Sortiert Threads nach dem Prozentsatz der Zeit, die vorzeitige Entfernung.|  
-|Benutzeroberflächenverarbeitung|Sortiert Threads nach dem Prozentsatz der Zeit, die beim Benutzeroberflächenverarbeiten entfällt.|  
+|--------------|----------------|  
+|Startzeit|Sortiert Threads nach ihren Startzeiten. Dies ist die standardmäßige Sortierreihenfolge.|  
+|Endzeit|Sortiert Threads nach ihren Endzeiten.|  
+|Ausführung|Sortiert Threads nach dem Prozentsatz der verstrichenen Zeit, die für die Ausführung benötigt wird.|  
+|Synchronisierung|Sortiert Threads nach dem Prozentsatz der verstrichenen Zeit, die für die Synchronisierung benötigt wird.|  
+|E/A|Sortiert Threads nach dem Prozentsatz der verstrichenen Zeit, die für die E/A (Lesen und Schreiben von Daten) benötigt wird.|  
+|Sleep|Sortiert Threads nach dem Prozentsatz der verstrichenen Zeit, die für den Standbymodus benötigt wird.|  
+|Paging|Sortiert Threads nach dem Prozentsatz der verstrichenen Zeit, die für das Paging benötigt wird.|  
+|Vorzeitige Entfernung|Sortiert Threads nach dem Prozentsatz der verstrichenen Zeit, die für die vorzeitige Entfernung benötigt wird.|  
+|Benutzeroberflächenverarbeitung|Sortiert Threads nach dem Prozentsatz der verstrichenen Zeit, die für die Benutzeroberflächenverarbeitung benötigt wird.|  
   
-## Verschiebung ausgewählter Kanal auf oder ab  
- Sie können diese Steuerelemente verwenden, um eines Kanals in der Liste oben oder unten zu verschieben.  Beispielsweise können Sie verwandte Kanal nebeneinander anordnen, um Ihnen helfen, ein bestimmtes Muster oder eine bestimmte Beziehung zu überprüfen.  
+## <a name="move-selected-channel-up-or-down"></a>Ausgewählten Kanal nach oben oder unten verschieben  
+ Diese Steuerelemente können Sie verwenden, um einen Kanal in der Liste nach oben oder unten zu verschieben. Beispielsweise können Sie verknüpfte Kanäle nebeneinander positionieren, damit Sie ein bestimmtes Muster oder eine threadübergreifende Beziehung untersuchen können.  
   
-## Verschiebung ausgewählter Channel zu überschreiten an den Anfang verschieben oder  
- Sie können ausgewählte Kanal an den Anfang oder das Ende der Liste verschieben, dass Sie ein bestimmtes Muster überprüfen können, oder verschieben einige Kanäle, wenn Sie andere überprüfen.  
+## <a name="move-selected-channel-to-top-or-bottom"></a>Ausgewählten Kanal nach oben oder unten verschieben  
+ Sie können ausgewählte Kanäle nach oben oder unten in der Liste verschieben, damit Sie ein bestimmtes Muster untersuchen können, oder einige Kanäle aus dem Weg schieben, wenn Sie andere Kanäle überprüfen.  
   
-## Ausblenden ausgewählte Kanal  
- Aktivieren Sie dieses Steuerelement, wenn Sie Channels ausblenden möchten.  Wenn ein Thread eine für die Lebensdauer des verwalteten Prozesses zu ist, können Sie sie ausblenden, während Sie andere Threads analysieren.  
+## <a name="hide-selected-channels"></a>Ausblenden ausgewählter Kanäle  
+ Wählen Sie dieses Steuerelement aus, wenn Sie Kanäle ausblenden möchten. Wenn ein Thread z.B. eine hundertprozentige Synchronisierung für die Dauer Ihres verwalteten Prozesses darstellt, können sie ihn verbergen, während Sie andere Threads analysieren.  
   
 > [!NOTE]
->  Durch das Ausblenden eines Threads wird, dieser auch aus der berechneten Zeit entfernt, die in der aktiven Legende und in den Profilberichten angezeigt wird.  
+>  Ein Thread wird auch durch Ausblenden aus der Berechnungszeit entfernt, die in der aktiven Legende und in den Profilberichten angezeigt wird.  
   
-## Alle Kanäle anzeigen  
- Dieses Steuerelement ist aktiv, wenn mindestens Kanal ausgeblendet werden.  Wenn Sie sie auswählen, werden alle ausgeblendeten Elemente angezeigt und werden mit den Berechnungen der Zeit zurückgegeben.  
+## <a name="show-all-channels"></a>Alle Kanäle anzeigen  
+ Dieses Steuerelement ist aktiv, wenn ein Kanal oder mehrere Kanäle ausgeblendet sind. Wenn Sie dieses auswählen, werden alle ausgeblendeten Elemente angezeigt und werden an die Zeitberechnung zurückgegeben.  
   
-## Marker nach oben verschieben  
- Wenn eine Ablaufverfolgung Markerereignisse enthält, können Sie diesen Befehl verwenden, die Markerchannel auf die obere der Zeitachse zu verschieben.  Die relative Position wird beibehalten.  
+## <a name="move-markers-to-top"></a>Marker nach oben verschieben  
+ Wenn eine Ablaufverfolgung Markerereignisse enthält, können Sie diesen Befehl zum Verschieben der Markerkanäle in den oberen Bereich der Zeitachse verwenden. Die relative Reihenfolge wird beibehalten.  
   
-## Gruppen\-Marker nach Thread  
- Wenn eine Ablaufverfolgung Markerereignisse enthält, können Sie diesen Befehl verwenden, Markerchannel unter dem Thread zu gruppieren, der die Markerereignisse generierte.  Die Datenträgerchannels werden auf den Anfang der Channelliste verschoben und GPU\-Channel werden auf den unteren Rand verschoben.  
+## <a name="group-markers-by-thread"></a>Marker nach Threads gruppieren  
+ Wenn die Ablaufverfolgung Markerereignisse enthält, können Sie diesen Befehl verwenden, um Markerkanäle unter dem Thread, der die Markerereignisse generiert hat, zu gruppieren.  Die Datenträgerkanäle werden an das obere Ende der Kanalliste verschoben, und GPU-Kanäle werden ganz nach unten verschoben.  
   
-## Siehe auch  
- [Zoomsteuerelement \(Threadansicht\)](../profiling/zoom-control-threads-view.md)   
- [Messmodus aktivieren\/deaktivieren](../profiling/measure-mode-on-off.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Zoomsteuerelement (Threadansicht)](../profiling/zoom-control-threads-view.md)   
+ [Messmodus aktivieren/deaktivieren](../profiling/measure-mode-on-off.md)   
  [Threadansicht](../profiling/threads-view-parallel-performance.md)

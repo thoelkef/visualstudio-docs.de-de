@@ -1,44 +1,44 @@
 ---
-title: "Gewusst wie: Starten und Beenden der Profilerstellung | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.wizard.summarypage"
-helpviewer_keywords: 
-  - "Profilerstellungstools, Aufrufen von Sitzungen"
-  - "Leistungssitzungen, Starten"
-  - "Leistungssitzungen, Beenden"
-  - "Profilerstellungstools, Beenden von Sitzungen"
+title: 'Vorgehensweise: Starten und Beenden der Sammlung von Leistungsdaten | Microsoft-Dokumentation'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.performance.wizard.summarypage
+helpviewer_keywords:
+- profiling tools, launching sessions
+- performance sessions, launching
+- performance sessions, ending
+- profiling tools, ending sessions
 ms.assetid: 9f6eb0d5-d9e9-4bec-b627-445065610bce
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 01870b4b687fc353c2e94d8e08ce57555cfc31f4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Starten und Beenden der Profilerstellung
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Sie müssen die Zielbinärdatei, für die Sie ein Profil erstellen möchten, zur Leistungssitzung hinzufügen, bevor Sie die Profilerstellung starten.  Klicken Sie dazu im **Leistungs\-Explorer** mit der rechten Maustaste auf **Ziele**, und klicken Sie dann auf **Zielbinärdatei hinzufügen**.  Wählen Sie im Dialogfeld **Zielbinärdatei hinzufügen** den Dateinamen aus, und klicken Sie dann auf **Öffnen**.  Eine neue Binärdatei wird hinzugefügt.  
+# <a name="how-to-start-and-end-performance-data-collection"></a>Vorgehensweise: Starten und Beenden der Sammlung von Leistungsdaten
+Sie müssen die Zielbinärdatei, für die Sie ein Profil erstellen möchten, vor Beginn der Profilerstellung zur Leistungssitzung hinzufügen. Klicken Sie mit der rechten Maustaste auf **Ziele** im **Leistungs-Explorer** und anschließend auf **Zielbinärdatei hinzufügen**, um ein Ziel hinzuzufügen. Wählen Sie im Dialogfeld **Zielbinärdatei hinzufügen** den Dateinamen aus und klicken Sie anschließend auf **Öffnen**. Es wird eine neue Binärdatei hinzugefügt.  
   
-### So starten Sie die Profilerstellung  
+### <a name="to-start-profiling"></a>So starten Sie die Profilerstellung  
   
-1.  Klicken Sie im Fenster **Leistungs\-Explorer** mit der rechten Maustaste auf den Namen der Leistungssitzung, und wählen Sie eine der folgenden Optionen:  
+1.  Klicken Sie mit der rechten Maustaste auf den Namen der Leistungssitzung im Fenster **Leistungs-Explorer** und wählen Sie eine der folgenden Optionen:  
   
-    -   **Mit Profilerstellung starten** \- startet die Anwendung und startet sofort die Profilerstellung.  
+    -   **Mit Profilerstellung starten** – die Anwendung wird gestartet und beginnt sofort mit der Profilerstellung.  
   
-    -   **Mit angehaltener Profilerstellung starten** \- startet die Anwendung, jedoch nicht die Profilerstellung.  Sie können die Profilerstellung starten, indem Sie **Auflistung wiederaufnehmen** im Fenster **Steuerung der Datenauflistung** auswählen.  Weitere Informationen finden Sie unter [Gewusst wie: Anhalten und Fortsetzen der Profilerstellung](../profiling/how-to-pause-and-resume-performance-data-collection.md).  
+    -   **Mit angehaltener Profilerstellung starten** – die Anwendung wird gestartet, aber beginnt nicht mit der Profilerstellung. Sie können die Profilerstellung starten, indem Sie **Auflistung wiederaufnehmen** im Fenster **Steuerung der Datensammlung** auswählen. Weitere Informationen finden Sie unter [Vorgehensweise: Anhalten und Fortsetzen der Sammlung von Leistungsdaten](../profiling/how-to-pause-and-resume-performance-data-collection.md).  
   
-### So beenden Sie die Profilerstellung  
+### <a name="to-end-profiling"></a>So beenden Sie die Profilerstellung  
   
--   Um eine Profilerstellungssitzung zu beenden, wird bevorzugt die Anwendung beendet.  Um die Profilerstellung sofort zu beenden, klicken Sie auf der Symbolleiste **Leistungs\-Explorer** auf **Beenden**.  
+-   Die bevorzugte Methode zum Beenden einer Profilerstellungssitzung ist das Beenden der Anwendung. Klicken Sie auf der Symbolleiste **Leistungs-Explorer** auf **Stop**, um die Profilerstellung sofort zu beenden.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Steuern der Datensammlung](../profiling/controlling-data-collection.md)   
- [Gewusst wie: Anhalten und Fortsetzen der Profilerstellung](../profiling/how-to-pause-and-resume-performance-data-collection.md)
+ [Vorgehensweise: Anhalten und Fortsetzen der Sammlung von Leistungsdaten](../profiling/how-to-pause-and-resume-performance-data-collection.md)

@@ -1,50 +1,49 @@
 ---
-title: "marker_importance-Enumeration | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "cvmarkersobj/Concurrency::diagnostic::marker_importance"
-helpviewer_keywords: 
-  - "Concurrency::diagnostic::marker_importance-Enumeration"
+title: marker_importance Enumeration | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: cvmarkersobj/Concurrency::diagnostic::marker_importance
+helpviewer_keywords: Concurrency::diagnostic::marker_importance enumeration
 ms.assetid: d5524ea0-0227-4d8e-9122-332291042df5
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d09138f90b94d3b37c4a20fbe53f311fa29a36e9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# marker_importance-Enumeration
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Stellt die Wichtigkeitsstufe eines Parallelitätsschnellansichtsmarkers dar.  
+# <a name="markerimportance-enumeration"></a>marker_importance-Enumeration
+Stellt die Wichtigkeitsstufe eines Markers für die Nebenläufigkeitsschnellansicht dar.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 enum marker_importance;  
 ```  
   
-## Member  
+## <a name="members"></a>Mitglieder  
   
-### Werte  
+### <a name="values"></a>Werte  
   
-|Name|**Beschreibung**|  
-|----------|----------------------|  
-|`critical_importance`|Gibt an, dass der Marker von entscheidender Wichtigkeit ist.|  
-|`high_importance`|Gibt an, dass der Marker von hoher Wichtigkeit ist.|  
-|`low_importance`|Gibt an, dass der Marker von niedriger Wichtigkeit ist.|  
-|`normal_importance`|Gibt an, dass der Marker von normaler Wichtigkeit ist.|  
+|Name|Beschreibung|  
+|----------|-----------------|  
+|`critical_importance`|Gibt an, dass der Marker kritisch wichtig ist|  
+|`high_importance`|Gibt an, dass der Marker hoch wichtig ist|  
+|`low_importance`|Gibt an, dass der Marker weniger wichtig ist|  
+|`normal_importance`|Gibt an, dass der Marker normal wichtig ist|  
   
-## Anforderungen  
- **Header:**  cvmarkersobj.h  
+## <a name="requirements"></a>Anforderungen  
+ **Header:** cvmarkersobj.h  
   
- **Namespace:**  Concurrency::diagnostic  
+ **Namespace:** Concurrency::diagnostic  
   
-## Siehe auch  
- [diagnostic\-Namespace](../profiling/diagnostic-namespace.md)
+## <a name="see-also"></a>Siehe auch  
+ [diagnostic-Namespace](../profiling/diagnostic-namespace.md)

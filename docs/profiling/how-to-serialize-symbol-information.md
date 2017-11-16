@@ -1,31 +1,31 @@
 ---
-title: "Gewusst wie: Serialisieren von Symbolinformationen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.ToolsOptionsPages.Performance.General"
-helpviewer_keywords: 
-  - "Profilerstellungstools, Serialisieren von Symbolinformationen"
-  - "Leistungstools, Serialisieren von Symbolinformationen"
+title: 'Vorgehensweise: Serialisieren von Symbolinformationen | Microsoft-Dokumentation'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.ToolsOptionsPages.Performance.General
+helpviewer_keywords:
+- profiling tools, serializing symbol information
+- performance tools, serializing symbol information
 ms.assetid: 9e0da706-6325-4073-83d1-aeab3b7c137a
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7c91fcc01fd14883c927f5e84a7f2444b768c0ea
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Serialisieren von Symbolinformationen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Sie können Symbole serialisieren, die zum Analysieren der Anwendung erforderlich sind.  Bei der Serialisierung von Symbolen werden der VSP\-Datei Symbole hinzugefügt.  Durch das Hinzufügen von Symbolinformationen zur VSP\-Datei können andere Personen den Leistungsbericht analysieren, ohne auf die ursprünglichen Symbole zugreifen zu müssen.  Falls die Symbole nicht serialisiert werden, benötigen Sie zum Analysieren der VSP\-Datei instrumentierte EXE\- und PDB\-Dateien.  
+# <a name="how-to-serialize-symbol-information"></a>Gewusst wie: Serialisieren von Symbolinformationen
+Sie können Symbole serialisieren, die zum Analysieren Ihrer Anwendung erforderlich sind. Die Serialisierung von Symbolen fügt Symbole in die VSP-Datei ein. Durch das Einfügen von Symbolinformationen in die VSP-Datei können andere Personen einen Leistungsbericht analysieren, ohne Zugriff auf die Originalsymbole zu haben. Wenn Symbole nicht serialisiert werden, müssen Sie die instrumentierte EXE- und PDB-Dateien zum Analysieren der VSP-Datei haben.  
   
-### So serialisieren Sie automatisch Symbolinformationen  
+### <a name="to-automatically-serialize-symbol-information"></a>So serialisieren Sie automatisch Symbolinformationen  
   
 1.  Klicken Sie im Menü **Extras** auf **Optionen**.  
   
@@ -33,9 +33,9 @@ Sie können Symbole serialisieren, die zum Analysieren der Anwendung erforderlic
   
 2.  Klicken Sie auf **Leistungstools**.  
   
-3.  Wählen Sie unter **Allgemeine Einstellungen** die Option **Symbolinformationen automatisch serialisieren** aus.  
+3.  Wählen Sie unter **Allgemeine Einstellungen** **Symbolinformationen automatisch serialisieren** aus.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)   
- [Gewusst wie: Verweisen auf Windows\-Symbolinformationen](../profiling/how-to-reference-windows-symbol-information.md)   
- [How to: Save Analyzed Report Files](http://msdn.microsoft.com/de-de/0340ddde-caf4-48ac-8af3-d15dcdade556)
+ [Vorgehensweise: Verweisen auf Windows-Symbolinformationen](../profiling/how-to-reference-windows-symbol-information.md)   
+ [Vorgehensweise: Speichern von analysierten Berichten](http://msdn.microsoft.com/en-us/0340ddde-caf4-48ac-8af3-d15dcdade556)

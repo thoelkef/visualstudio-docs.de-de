@@ -1,27 +1,28 @@
 ---
-title: "Grundlagen zu Ressourcenkonflikt-Datenwerten in Profilerstellungstools | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Parallelitätsmethode zur Profilerstellung"
-  - "Profilerstellungstools, Parallelitätsmethode"
+title: Grundlagen zu Ressourcenkonflikt-Datenwerten| Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- concurrency profiling method
+- Profiling Tools, concurrency method
 ms.assetid: 071c0f0f-1eba-4dc8-ae87-0810e4086dd0
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b4e128fa9a557569eb737a2b0a70ce60687d0830
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Grundlagen zu Ressourcenkonflikt-Datenwerten in Profilerstellungstools
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Ressourcenkonflikt\-Profilerstellung werden ausführliche konkurrierende Threads der Ressourcenkonflikt\-Profilerstellung werden immer dann in einer Anwendung werden erzwungen, auf Zugriff auf eine freigegebene Ressource gewartet.  
+# <a name="understanding-resource-contention-data-values"></a>Grundlagen zu Ressourcenkonflikt-Datenwerten
+Bei der Profilerstellung für Ressourcenkonflikte werden immer dann ausführliche Aufruflisteninformationen gesammelt, wenn konkurrierende Threads in einer Anwendung auf den Zugriff auf eine gemeinsam genutzte Ressource warten müssen.  
   
  **Voraussetzungen**  
   
@@ -29,11 +30,11 @@ Ressourcenkonflikt\-Profilerstellung werden ausführliche konkurrierende Threads
   
  Ressourcenkonfliktberichte enthalten für die Module, Funktionen, Quellcodezeilen und Anweisungen, in denen die Verzögerung aufgetreten ist, die Gesamtanzahl von Konflikten sowie die Gesamtwartezeit für eine Ressource.  
   
--   Inklusive Werte geben Aufschluss über die Gesamtanzahl von Konflikten \(sortiert nach Ressourcenkonflikten\), aufgrund derer die Verzögerung für die Funktion aufgetreten ist, sowie über die Gesamtwartezeit der Funktion.  In den inklusiven Werten sind auch durch untergeordnete, von der Funktion aufgerufene Funktionen verursachte Konflikte enthalten.  
+-   Inklusive Werte geben Aufschluss über die Gesamtanzahl von Konflikten (sortiert nach Ressourcenkonflikten), aufgrund derer die Verzögerung für die Funktion aufgetreten ist, sowie über die Gesamtwartezeit der Funktion.  In den inklusiven Werten sind auch Konflikte enthalten, die durch untergeordnete, von der Funktion aufgerufene Funktionen verursacht wurden.  
   
--   Exklusive Werte geben nur Aufschluss über die Anzahl von Konflikten, die die Verzögerung einer Funktion zur Folge hatten und durch Code im Text der Funktion verursacht wurden.  Von untergeordneten Funktionen verursachte Konflikte werden nicht berücksichtigt.  Die exklusive Zeit für die Funktion umfasst ebenfalls nur die Wartezeiten, die durch Anweisungen im Funktionstext verursacht wurden.  
+-   Exklusive Werte geben nur Aufschluss über die Anzahl von Konflikten, die die Verzögerung einer Funktion zur Folge hatten und durch Code im Funktionstext verursacht wurden. Von untergeordneten Funktionen verursachte Konflikte werden nicht berücksichtigt. Die exklusive Zeit für die Funktion enthält auch nur die Wartezeiten, die von Anweisungen im Funktionsrumpf verursacht wurden.  
   
- Die Ansichten des Ressourcenkonfliktberichts enthalten auch Zeitachsendiagramme mit den einzelnen Konfliktereignissen im Zeitverlauf und die Aufruflisten, von denen das Ereignis erstellt wurde.  Weitere Informationen finden Sie in einem der folgenden Themen:  
+ Die Ansichten des Ressourcenkonfliktberichts enthalten auch Zeitachsendiagramme mit den einzelnen Konfliktereignissen im Zeitverlauf und die Aufruflisten, von denen das Ereignis erstellt wurde. Weitere Informationen finden Sie in einem der folgenden Themen:  
   
 -   [Threaddetailansicht](../profiling/thread-details-view-contention-data.md)  
   

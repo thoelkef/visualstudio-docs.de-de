@@ -1,27 +1,24 @@
 ---
 title: "Beispielprojekte für R Tools für Visual Studio | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 6/29/2017
+ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 ms.assetid: aa52ed0e-cdb5-4fb2-814c-c94cac2ffc6f
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 6ceedfff067f245de4b159728bd34a3a849fe9dc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: ec9862f9e7fcbd084d5e12c0467c8b608a5b4956
-ms.contentlocale: de-de
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="r-tools-for-visual-studio-sample-projects"></a>Beispielprojekte für R Tools für Visual Studio
 
 Mit dieser Sammlung von Beispielen können Sie mit R, R Tools für Visual Studio (RTVS) und Microsoft R Server beginnen:
@@ -93,4 +90,3 @@ Einen technischen Vergleich von R mit MRO und MRS finden Sie in der [detailliert
 In der folgenden Abbildung wird dann die verstrichene Zeit in Sekunden verglichen, die zum Erstellen von logistischen Regressionsmodellen verwendet wird, um Flugverspätungen von mehr als 15 Minuten vorherzusagen.  Die verstrichene Zeit, die in CRAN R verwendet wird, erhöht sich signifikant, wenn eine niedrige Anzahl von Zeilen erhöht wird, während MRS nur etwa zweimal erhöht wird. Informationen zu diesem Benchmark finden Sie im `Benchmarks/rxGlm_benchmark.R`-Beispiel.
 
 ![„rxGlm“-Benchmark](media/samples-rxGLM-benchmark.png)
-

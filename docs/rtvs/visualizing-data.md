@@ -1,27 +1,24 @@
 ---
 title: "Visualisieren von Daten mit R Tools für Visual Studio | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 6/29/2017
+ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 496619c9-4005-4c20-baf6-80b4bb1ceb56
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 48aaf1c8e02c1de84c36d8bff7d9b73eb4bd3af7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: af9627ba4eb245f4c4947b5d365449fce76c166c
-ms.contentlocale: de-de
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="creating-visual-data-plots-with-r"></a>Erstellen von visuellen Datenplots mit R
 
 Das Erstellen von Grafiken ist ein wichtiger Bestandteil der Arbeit von Datenanalysten. In R Tools für Visual Studio (RTVS) wird in mindestens einem Plotfenster gezeichnet, das Ihre Produktivität bei dieser entscheidenden Tätigkeit verbessern soll.
@@ -103,4 +100,3 @@ Sie können Plotfenster programmgesteuert über den R-Code mithilfe der Geräten
 - `dev.new()`: Erstellt ein neues Grafikgerät (ein neues Plotfenster)
 - `dev.set(<device number>)`: Legen das aktive Grafikgerät fest
 - `dev.off()`: Löscht das aktive Gerät
-

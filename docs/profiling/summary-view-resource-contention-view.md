@@ -1,49 +1,49 @@
 ---
-title: "Zusammenfassungsansicht - Profiler-Ansicht f&#252;r Ressourcenkonflikte | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Zusammenfassungsansicht"
+title: "Zusammenfassungsansicht – Ansicht für Ressourcenkonflikte | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Summary view
 ms.assetid: 6da57b83-7b42-4d7c-9aea-8e0a830faf6b
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 99865ecf81fbc7873fef43c51f543f224e281928
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Zusammenfassungsansicht - Profiler-Ansicht f&#252;r Ressourcenkonflikte
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-In der Zusammenfassungsansicht werden Informationen zu den Ereignissen in der Anwendung angezeigt, in der ein Thread oder ein Prozess angehalten wurde, während er auf Zugriff auf eine Ressource gewartet hat.  
+# <a name="summary-view---resource-contention-view"></a>Zusammenfassungsansicht – Ansicht für Ressourcenkonflikte
+Die Zusammenfassung zeigt Informationen zu den Ereignissen in der Anwendung an, in der ein Thread oder Prozess angehalten wurde, während er auf den Zugriff auf eine Ressource gewartet hat.  
   
  Weitere Informationen, einschließlich einer Beschreibung der Benachrichtigungslinks und Berichtslisten, finden Sie unter [Zusammenfassungsansicht](../profiling/summary-view.md).  
   
-## Zeitachsendiagramm  
- Das Zeitachsendiagramm in der Zusammenfassungsansicht zeigt die Anzahl von Konfliktereignissen der profilierten Anwendung über den Zeitraum der Profilerstellung an.  Sie können die Ansicht mithilfe des Zeitachsendiagramms nach einem ausgewählten Zeitraum filtern.  Weitere Informationen finden Sie unter [Gewusst wie: Filtern von Berichtsansichten aus der Zeitachsenübersicht](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
+## <a name="timeline-graph"></a>Zeitachsendiagramm  
+ Die Zeitachsendiagramm in der Zusammenfassungsansicht zeigt die Auslastung des Prozessors (CPU) durch die profilierte Anwendung während des Zeitraums an, in dem die Profilerstellung stattgefunden sind. Sie können das Zeitachsendiagramm zum Filtern der Ansicht in einem ausgewählten Zeitraum verwenden. Weitere Informationen finden Sie unter [Vorgehensweise: Filtern von Berichtsansichten aus der Zeitachsenübersicht](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
   
-## Ressourcen mit den meisten Konflikten  
- Unter **Ressourcen mit den meisten Konflikten** sind die Ressourcen in der Anwendung aufgeführt, die die meisten Konfliktereignisse verursachten.  Sie können auf einen Ressourcennamen klicken, um die Konfliktansicht anzuzeigen.  Die Konfliktansicht stellt eine detaillierte Zeitachse der Ressourcenkonflikte nach Thread bereit.  
+## <a name="most-contended-resources"></a>Ressourcen mit den meisten Konflikten  
+ **Ressourcen mit den meisten Konflikten** listet die Ressourcen in der Anwendung auf, die die meisten Konfliktereignisse verursacht haben. Sie können auf einen Ressourcennamen klicken, um die Ansicht „Konflikte“ anzuzeigen. Die Ansicht „Konflikte“ bietet eine detaillierte Zeitachse der Ressourcenkonflikte nach Thread.  
   
- **Ressourcen mit den meisten Konflikten** umfasst die folgenden Daten für die einzelnen Ressourcen:  
+ **Ressourcen mit den meisten Konflikten** umfasst die folgenden Daten für jede Ressource.  
   
-|Spalte|**Beschreibung**|  
-|------------|----------------------|  
+|Spalte|Beschreibung|  
+|------------|-----------------|  
 |**Name**|Der Name der Ressource.|  
-|**Konflikte %**|Der Prozentsatz aller Konfliktereignisse in den Profilerstellungsdaten, die Konflikte über dieser Ressource waren.|  
+|**Konflikte %**|Der Prozentsatz aller Konfliktereignisse in den Profilerstellungsdaten, die Konflikte für die Ressource waren.|  
   
-## Threads mit den meisten Konflikten  
- Unter **Threads mit den meisten Konflikten** sind die Threads in der Anwendung mit der größten Anzahl von Konfliktereignissen aufgeführt.  Sie können auf einen Threadnamen klicken, um die Konfliktansicht anzuzeigen, die eine detaillierte Zeitachse der Ressourcenkonflikte nach Thread bereitstellt.  
+## <a name="most-contended-thread"></a>Threads mit den meisten Konflikten  
+ **Threads mit den meisten Konflikten** listet die Threads in der Anwendung, die die größte Anzahl von Konfliktereignissen aufgewiesen hat. Sie können auf einen Threadnamen klicken, um die Ansicht „Konflikte“ anzuzeigen, die eine detaillierte Zeitachse der Ressourcenkonflikte nach Thread bereitstellt.  
   
- **Threads mit den meisten Konflikten** umfasst die folgenden Daten für die einzelnen Threads:  
+ **Ressourcen mit den meisten Konflikten** umfasst die folgenden Daten für jeden Thread.  
   
-|Spalte|**Beschreibung**|  
-|------------|----------------------|  
+|Spalte|Beschreibung|  
+|------------|-----------------|  
 |**ID**|Der Threadbezeichner.|  
 |**Name**|Der Name des Prozesses, der den Thread besitzt.|  
-|**Konflikte %**|Der Prozentsatz aller Konfliktereignisse in den Profilerstellungsdaten, die Konflikte über dieser Ressource waren.|
+|**Konflikte %**|Der Prozentsatz aller Konfliktereignisse in den Profilerstellungsdaten, die Konflikte für die Ressource waren.|

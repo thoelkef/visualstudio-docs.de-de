@@ -1,71 +1,71 @@
 ---
-title: "Gewusst wie: Sammeln von CPU-Indikatordaten mit der Instrumentationsmethode | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.property.cpucounters"
-helpviewer_keywords: 
-  - "Profilerstellungstools, Verwenden von portablen CPU-Indikatoren"
-  - "Leistungstools, portable CPU-Indikatoren"
+title: 'Vorgehensweise: Sammeln von CPU-Indikatordaten | Microsoft-Dokumentation'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.performance.property.cpucounters
+helpviewer_keywords:
+- profiling tools, using portable CPU counters
+- performance tools, portable CPU counters
 ms.assetid: 102fb6ca-5fbf-4b05-925f-56912ce3f44b
-caps.latest.revision: 21
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 856ffdc2bc2e33dec6e7ff531b9ce5582fc9b3db
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Sammeln von CPU-Indikatordaten mit der Instrumentationsmethode
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Ein CPU\-Ereigniszähler wird verwendet, um hardware\-spezifische Leistungsdaten zu erfassen.  Dieses Thema veranschaulicht, wie Ereigniszählerdaten erfasst, wenn Sie die Instrumentationsmethode zur Profilerstellung verwenden.  
+# <a name="how-to-collect-cpu-counter-data"></a>Gewusst wie: Sammeln von CPU-Indikatordaten
+Ein CPU-Ereignisindikator wird zum Sammeln von hardwarespezifischen Leistungsdaten verwendet. In diesem Thema erfahren Sie, wie Sie Ereignisindikatordaten sammeln, wenn Sie die Instrumentierungs-Profilerstellungs-Methode verwenden.  
   
- **Voraussetzungen**  
+ **Anforderungen**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
- Zwei Typen von CPU\-Leistungsindikatorereignissen können auftreten:  
+ Es treten zwei Typen von CPU-Indikatorereignissen auf:  
   
--   Portable Ereignisse – CPU\-Ereignisse, die unabhängig von der jeweiligen CPU erfasst werden können.  
+-   Portable Ereignisse: CPU-Ereignisse, die unabhängig des bestimmten CPUs gesammelt werden.  
   
--   Plattformereignisse – CPU\-Ereignisse, die mit einer bestimmten CPU verknüpft sind.  
+-   Plattformereignisse: CPU-Ereignisse, die mit einem bestimmten CPU verbunden sind.  
   
- Portable Ereignisse umfassen allgemeine Ereignisse, z. B. zurückgezogene Anweisungen und nicht angehaltene Zyklen, CPU\-Puffereignisse, Verzweigungsereignisse und L2\-Cacheereignisse.  Die verfügbaren Plattformereigniszähler werden durch den Prozessorhersteller festgelegt.  
+ Portable Ereignisse enthalten allgemeine Ereignisse, z.B. zurückgezogene Anweisungen und nicht angehaltene Zyklen, CPU-Pufferereignisse, verzweigte Ereignisse sowie L2-Cache-Ereignisse. Die verfügbaren Plattformereignisindikatoren werden durch den Hersteller des Prozessors bestimmt.  
   
- Kategorien von Ereignissen können zwischen portablen Zählern und Plattformzählern gemeinsam genutzt werden.  Beispielsweise sind die folgenden Datenkategorien häufig beiden Typen gemeinsam:  
+ Ereigniskategorien können von portablen und Plattfomindikatoren gemeinsam genutzt werden. Die folgenden Datenkategorien gelten z.B. häufig für beide Typen:  
   
--   Speicherereignisse.  
+-   Speicherereignisse  
   
--   Front\-End\-Ereignisse.  
+-   Front-End-Ereignisse  
   
--   Verzweigungsereignisse.  
+-   Verzweigungsereignisse  
   
- Sie haben zwei Möglichkeiten, um Leistungsindikatordaten im Profiler zusammenzustellen:  
+ Sie können die Leistungsindikatordaten auf Zwei Arten im Profiler sammeln:  
   
--   Stellen Sie bei der Profilerstellung mit der Instrumentationsmethode Daten aus einem oder mehreren Zählern zusammen.  
+-   Sammeln Sie Daten aus einem oder mehrere Leistungsindikatoren, wenn Sie ein Profil durch Instrumentation erstellen.  
   
--   Geben Sie bei der Profilerstellung mit der Samplingmethode ein Zählerereignis als Samplingintervall an.  Weitere Informationen finden Sie unter [Gewusst wie: Auswählen von Samplingereignissen](../profiling/how-to-choose-sampling-events.md).  
+-   Geben Sie ein Leistungsindikatorereignis als Samplingintervall an, wenn Sie das Profil durch Sampling erstellen. Weitere Informationen finden Sie unter [Vorgehensweise: Auswählen von Samplingereignissen](../profiling/how-to-choose-sampling-events.md)  
   
-### So sammeln Sie bei der Profilerstellung mit der Instrumentationsmethode CPU\-Leistungsindikatordaten  
+### <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>So sammeln Sie CPU-Leistungsindikatordaten, wenn Sie ein Profil durch Instrumentation erstellen.  
   
-1.  Klicken Sie in den **Eigenschaftenseiten** der Leistungssitzung auf **CPU\-Indikatoren**.  
+1.  Klicken Sie auf der Leistungssitzung **Eigenschaftenseiten** auf **CPU-Indikatoren.**  
   
-2.  Aktivieren Sie das Kontrollkästchen **CPU\-Indikatoren auflisten**.  
+2.  Wählen Sie das Kontrollkästchen **CPU-Indikatoren auflisten** aus.  
   
-3.  Erweitern Sie die Struktur **Verfügbare Leistungsindikatoren**, bis Sie die Samplingereignisse gefunden haben, die Sie sammeln möchten.  
+3.  Erweitern Sie die Struktur **Verfügbaren Leistungsindikatoren**, bis Sie die Beispielereignisse finden, die Sie sammeln möchten.  
   
-4.  Wählen Sie für jedes Ereignis, das Sie auflisten möchten, das Ereignis aus, und klicken Sie dann auf den Pfeil nach rechts, um das Ereignis der Liste **Ausgewählte Indikatoren** hinzuzufügen.  
+4.  Wählen Sie für jedes Ereignis, das Sie erfassen möchten, das Ereignis aus, und klicken Sie dann auf den Pfeil nach rechts, um das Ereignis zur Liste **Ausgewählte Indikatoren** hinzuzufügen.  
   
     > [!NOTE]
-    >  **Verfügbare Leistungsindikatoren** ist nur aktiviert, wenn Sie das Kontrollkästchen **CPU\-Indikatoren auflisten** aktivieren.  
+    >  **Verfügbare Leistungsindikatoren** ist nur aktiviert, wenn Sie das Kontrollkästchen **CPU-Indikatoren auflisten** auswählen.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)   
  [Eigenschaften von Leistungssitzungen](../profiling/performance-session-properties.md)   
- [CPU\- und Windows\-Indikatoren](../profiling/cpu-and-windows-counters.md)   
- [Gewusst wie: Auswählen von Samplingereignissen](../profiling/how-to-choose-sampling-events.md)
+ [CPU- und Windows-Indikatoren](../profiling/cpu-and-windows-counters.md)   
+ [Vorgehensweise: Auswählen von Samplingereignissen](../profiling/how-to-choose-sampling-events.md)

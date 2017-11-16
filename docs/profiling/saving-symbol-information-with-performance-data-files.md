@@ -1,69 +1,70 @@
 ---
-title: "Speichern von symbolischen Informationen mittels Profilerstellungsdatendateien | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Packsymbols, in Berichten für Profilerstellungstools"
-  - "Profilerstellungstools, Packsymbols"
+title: Speichern von symbolischen Informationen mittels Leistungsdatendateien | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- packsymbols, in profiling tools reports
+- profiling tools, packsymbols
 ms.assetid: 8b802505-e94d-4ee0-83e4-fdd790a332c1
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 89913922d4c806e591d6a488f35242444d16ceb0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Speichern von symbolischen Informationen mittels Profilerstellungsdatendateien
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Wenn Sie die integrierte Entwicklungsumgebung \(IDE\) von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zum Analysieren von Dateien verwenden und beabsichtigen, die VSP\-Datei auf einen anderen Computer zu verschieben, müssen die Einstellungen des Leistungsberichtsprojekts so festgelegt werden, dass Symbole in der Berichtsdatei gespeichert oder *serialisiert* werden.  Dadurch erhöht sich die Größe einer Berichtsdatei.  Die Serialisierung von Symbolen ist aus zwei Gründen notwendig:  
+# <a name="saving-symbol-information-with-performance-data-files"></a>Speichern von symbolischen Informationen mittels Profilerstellungsdatendateien
+Wenn Sie das Integrated Development Environment (IDE) von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verwenden, um Dateien zu analysieren, und Ihre VSP-Datei auf einen anderen Computer verschieben möchten, müssen Sie die Leistungsprojekteinstellungen festlegen, um Symbol in Ihrer Berichtsdatei zu speichern oder zu *serialisieren*. Dadurch vergrößert sich die Berichtsdatei. Die Serialisierung von Symbolen ist aus zwei Gründen erforderlich:  
   
--   Zum Einbetten von Codesymbolen in einen Leistungsbericht, bevor die Position der Zielassemblys im temporären Speicher verloren geht.  
+-   Einbetten von Codesymbolen in einen Leistungsbericht, bevor die Zielassemblys an ihrem Speicherort im temporären Speicher verloren gehen.  
   
--   Damit Symbole erhalten bleiben, sodass der Leistungsbericht von dem für die Profilerstellung verwendeten Computer portiert werden kann und dieselben Informationen ausgibt, wenn der Bericht zur Analyse auf einem anderen Computer geöffnet wird, der möglicherweise über abweichende Symbole verfügt.  
+-   Beibehalten von Symbolen, sodass der Leistungsbericht vom profilierten Computer portierbar ist und die gleichen Informationen ausgibt, wenn der Bericht zur Analyse auf einem anderen Computer geöffnet wird, der andere Symbole haben kann.  
   
- **Voraussetzungen**  
+ **Anforderungen**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
- Sie können Symbole über die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-IDE oder an der Befehlszeile serialisieren:  
+ Sie können Symbole vom [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-IDE oder von der Befehlszeile serialisieren;  
   
--   Um Symbole in der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-IDE zu serialisieren, zeigen Sie in der Menüleiste auf **Extras**, und klicken Sie dann auf **Optionen**.  Wählen Sie im Fenster **Optionen** die Option **Leistungstools** aus, und aktivieren Sie dann das Kontrollkästchen **Symbolinformationen automatisch serialisieren**.  
+-   Zum Serialisieren von Symbolen im [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-IDE zeigen Sie auf **Extras** in der Menüleiste, und klicken Sie dann auf **Optionen**. Wählen Sie im Fenster **Optionen** **Leistungstools** aus, und aktivieren Sie das Kontrollkästchen **Symbolinformationen automatisch serialisieren**.  
   
--   PACKSYMBOLS ist die entsprechende Befehlszeilenoption, wenn Sie Berichtsdateien speichern.  Um Symbole zu serialisieren, geben Sie vsperfreport \/summary:all \/packsymbols filename.vsp ein.  
+-   PACKSYMBOLS ist die entsprechende Befehlszeilenoption, wenn Sie Berichtsdateien speichern. Zum Serialisieren von Symbolen geben Sie **vsperfreport /summary:all /packsymbols filename.vsp** ein.  
   
-## Beheben von Symbolproblemen  
- Wenn im eigenen Code keine Symbole zu sehen sind, gibt es einige allgemeine Lösungsmöglichkeiten:  
+## <a name="troubleshooting-symbol-problems"></a>Problembehandlung bei Symbolen  
+ Wenn Sie im eigenen Code keine Symbole sehen, sind einige allgemeine Lösungen verfügbar:  
   
--   Führen Sie vsperfreport \/debugsympath an einer Befehlszeile aus, um eine vollständige Liste der Speicherorte anzuzeigen, unter denen Symbolinformationen von Profilerkomponenten geladen werden, und um festzustellen, ob die verwendeten Symboldateien mit den von Ihrem Projekt verwendeten Dateien übereinstimmen.  
+-   Führen Sie vsperfreport /debugsympath auf einer Befehlszeile aus, um eine vollständige Liste der Speicherorte, in die Profilerkomponenten Symbolinformationen laden, und Informationen dazu anzuzeigen, ob die verwendeten Symboldateien mit den Dateien übereinstimmen, die Ihr Projekt verwendet.  
   
--   Achten Sie darauf, dass vsperfreport mit dem \/PACKSYMBOLS\-Flag ausgeführt wird bzw. dass Sie in der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-IDE in den allgemeinen Optionen für den Leistungs\-Explorer die Option zum Serialisieren von Symbolinformationen aktiviert haben.  
+-   Stellen Sie sicher, dass Sie vsperfreport mit dem Flag /PACKSYMBOLS ausführen, bzw. dass Sie im [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-IDE die Option für die Serialisierung von Symbolinformationen in den allgemeinen Leistungs-Explorer-Optionen ausgewählt haben.  
   
--   Wenn Typdaten erfasst wurden, fügen Sie \/SUMMARY:TYPE in die vsperfreport\-Befehlszeile ein.  
+-   Wenn Sie Typdaten erfasst haben, fügen Sie der vsperfreport-Befehlszeile /SUMMARY:TYPE hinzu.  
   
- Wenn Sie keine Symbole von Windows oder anderen Microsoft\-Programmen sehen:  
+ Wenn Symbole von Windows oder anderen Microsoft-Programmen nicht angezeigt werden:  
   
--   Stellen Sie sicher, dass Sie den Pfad zum Windows\-Symbolcache festgelegt haben.  Führen Sie einen der folgenden Schritte aus, um den Symbolcachepfad festzulegen:  
+-   Stellen Sie sicher, dass Sie den Pfad des Windows-Symbolcaches festgelegt haben. Führen Sie eine der folgenden Schritte durch, um den Symbolcachepfad festzulegen:  
   
-    -   Legen Sie die Debugger\-Symboloption \>in der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] \- IDE auf den richtigen Pfad fest.  
+    -   Legen Sie die Debugger-> Symbole-Option im [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-IDE auf den richtigen Pfad fest.  
   
-    -   Fügen Sie die \- symbolpath\-Option zur VSPerfReport\-Befehlszeile hinzu, um die Symbole einzuschließen.  
+    -   Fügen Sie der VSPerfReport-Befehlszeile die Option -symbolpath hinzu, um Ihre Symbole einzuschließen.  
   
--   Wenn in [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] keine Symbole angezeigt werden, sollten Sie sicherstellen, dass der Symbolserver ordnungsgemäß für den ASP\-Server eingerichtet wurde.  
+-   Wenn keine Symbole in [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] angezeigt werden, stellen Sie sicher, dass Sie den Symbolserver ordnungsgemäß für den ASP-Server eingerichtet haben.  
   
-## Erneutes Packen von Symbolen  
- Wenn Sie Symbole erneut in einen Bericht packen möchten, können Sie dazu das Befehlszeilentool VsPerfReport verwenden.  Verwenden Sie die folgenden Befehlszeilen:  
+## <a name="repacking-symbols"></a>Erneutes Packen von Symbolen  
+ Wenn Sie Symbole erneut in einen Bericht packen möchten, können Sie dazu das Befehlszeilentool VsPerfReport verwenden. Verwenden Sie folgende Befehlszeilen:  
   
- VsPerfReport \- clearpackedsymbols Dateiname.vsp  
+ VsPerfReport -clearpackedsymbols filename.vsp  
   
- VsPerfReport \-packsymbols \-summary:all Dateiname.vsp  
+ VsPerfReport -packsymbols -summary:all filename.vsp  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Speichern und Exportieren von Daten aus Leistungstools](../profiling/saving-and-exporting-performance-tools-data.md)   
- [Gewusst wie: Verweisen auf Windows\-Symbolinformationen](../profiling/how-to-reference-windows-symbol-information.md)   
+ [Vorgehensweise: Verweisen auf Windows-Symbolinformationen](../profiling/how-to-reference-windows-symbol-information.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

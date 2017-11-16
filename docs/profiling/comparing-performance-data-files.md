@@ -1,37 +1,38 @@
 ---
-title: "Vergleichen der durch Profilerstellungstools erstellten Datendateien | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Profilerstellungstools, Vergleichen der durch Profilerstellungstools erstellten Berichtdateien"
-  - "Berichte für Profilerstellungstools, Vergleichen"
+title: Vergleichen von Leistungsdatendateien | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- profiling tools, comparing profiling tools report files
+- profiling tools reports, comparing
 ms.assetid: e6fda144-f21d-4912-9d16-1b8d3555a210
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 586665565126dc67fe3fbeb7d3eda3e7061e4650
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Vergleichen der durch Profilerstellungstools erstellten Datendateien
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Mit der Funktion der Profilerstellungstools zum Vergleichen von Datendateien können Sie zwei Berichtsdateien \(VSP\- oder VSPS\-Dateien\) auswählen und einen Bericht generieren, in dem Unterschiede, Leistungsabfälle und Verbesserungen zwischen beiden Profilerstellungssitzungen angezeigt werden.  
+# <a name="comparing-performance-data-files"></a>Vergleichen von Leistungsdatendateien
+Mit der Datendateivergleichsfunktion der Profilerstellungstools können Sie zwei Berichtsdateien (VSP bzw. VSPS) auswählen und einen Bericht generieren, der die Unterschiede, Leistungsregressionen und Verbesserungen zeigt, die zwischen den beiden Profilerstellungssitzungen aufgetreten sind.  
   
- Die Ergebnisse der Analyse in einer Profilerstellungs\-Datendatei werden mithilfe eines Vergleichsberichts von Datendateien der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-Profilerstellungstools mit den Ergebnissen einer Baselineanalyse in einer anderen Datendatei verglichen.  Beide Datendateien müssen mit derselben Profilerstellungsmethode generiert worden sein.  Der Bericht über die Vergleichsanalysen wird als VSPS\-Datei gespeichert.  
+ Ein Vergleichsbericht von Datendateien aus [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools vergleicht die Ergebnisse einer Analyse in einer Profilerstellungs-Datendatei mit den Ergebnissen einer Baseline-Analyse in einer anderen Datendatei. Beide Datendateien müssen mit derselben Profilerstellungsmethode erstellt worden sein. Der Bericht der analysierten Vergleiche wird als VSPS-Datei gespeichert.  
   
- Der Vergleichsbericht zeigt eine Tabellenansicht der geänderten Daten.  In der Tabelle wird das Delta bzw. die Abweichung von der Baseline dargestellt.  Zur Berechnung der Differenz wird der Unterschied zwischen dem alten Wert, dem Baselinewert und dem Ergebniswert aus der neuen Analyse ermittelt.  
+ Die Vergleichsberichtsansicht enthält eine Tabellenansicht der geänderten Daten. In der Tabelle wird das Delta bzw. die Abweichung von der Baseline dargestellt. Zur Berechnung des Deltas wird der Unterschied zwischen dem alten Wert, dem Baselinewert und dem Ergebniswert aus der neuen Analyse ermittelt.  
   
- Vergleiche der Profilerdaten können auf den Funktionen im Code, den Modulen in der Anwendung, Zeilen, Anweisungszeigern \(IPs\) und Typen basieren.  
+ Vergleiche der Profilerdaten können auf den Funktionen im Code, den Modulen in der Anwendung, Zeilen, Anweisungszeigern (IPs) und Typen basieren.  
   
- Die für Vergleiche verfügbaren Profilerstellungsdaten umfassen die in den Spalten angezeigten Informationen.  Definitionen dieser Spaltennamen finden Sie unter [Berichtsansichten für Profilerstellungstools](../profiling/performance-report-views.md).  
+ Profilerstellungsdaten, die für den Vergleich verfügbar sind, umfassen die Informationen, die in den Spalten angezeigt werden. Definitionen dieser Spaltennamen finden Sie unter [Berichtsansichten für Profilerstellungstools](../profiling/performance-report-views.md).  
   
- Ein Schwellenwert kann festgelegt werden, um Störungen zu reduzieren und um in der Vergleichstabelle alle Datenzeilen herauszufiltern, die einen bestimmten Differenzwert nicht übersteigen.  
+ Es kann ein Schwellenwert festgelegt werden, um Störungen zu reduzieren und alle Daten in der Vergleichstabellenansicht der Zeilen herauszufiltern, bei denen keine Änderung um einen bestimmten Wert feststellbar ist.  
   
-## In diesem Abschnitt  
- [Gewusst wie: Vergleichen der Profilerdatendateien](../profiling/how-to-compare-performance-data-files.md)
+## <a name="in-this-section"></a>In diesem Abschnitt  
+ [Vorgehensweise: Vergleichen der Profilerdatendateien](../profiling/how-to-compare-performance-data-files.md)

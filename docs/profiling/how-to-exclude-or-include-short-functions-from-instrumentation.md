@@ -1,45 +1,46 @@
 ---
-title: "Gewusst wie: Ausschlie&#223;en oder Einschlie&#223;en kurzer Funktionen in die Instrumentation | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Profilerstellungstools, Instrumentationsereignisse"
-  - "Profilerstellungstools, Einschließen von kurzen Funktionen"
-  - "Profilerstellungstools, Ausschließen von kurzen Funktionen"
+title: "Vorgehensweise: Ausschließen oder Einschließen kurzer Funktionen in die Instrumentierung | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- profiling tools, instrument events
+- profiling tools, include short functions
+- profiling tools, exclude short functions
 ms.assetid: eaeead79-aafe-4490-86ff-6ed4cad9c15f
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 22b6705c295a8a738645d163dd982b22061cabf2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Ausschlie&#223;en oder Einschlie&#223;en kurzer Funktionen in die Instrumentation
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-*Kleine Funktionen* werden standardmäßig aus der Instrumentation ausgeschlossen.  Kleine Funktionen sind kurze Funktionen, die keine Funktionsaufrufe ausführen.  Bei Ausschluss kleinen Funktionen verringert sich der Instrumentation\-Mehraufwand, was zu einer verbesserten Instrumentationsgeschwindigkeit führt.  Durch den Ausschluss kleiner Funktionen wird auch die Größe der VSP\-Datendatei für die Erstellung von Leistungsprofilen sowie die für die Analyse erforderliche Zeit reduziert.  Wenn kleine Funktionen ausgeschlossen werden, wird die in den kleinen Funktionen aufgewendete Zeit auf die exklusive und inklusive Zeit der übergeordneten Funktionen angerechnet.  Kleine Funktionen können, wie im folgenden Verfahren beschrieben, in die Instrumentation eingeschlossen oder daraus ausgeschlossen werden.  
+# <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>Gewusst wie: Ausschließen oder Einschließen kurzer Funktionen in die Instrumentierung
+Die Profilerstellungstools schließen standardmäßig *Kleine Funktionen* von der Instrumentation aus. Kleine Funktionen sind kurze Funktionen, die keine Funktionsaufrufe ausführen. Das Ausschließen dieser kleinen Funktionen sorgt für weniger Instrumentation-Overhead und verbessert dadurch die Instrumentierungsgeschwindigkeit. Der Ausschluss kleiner Funktionen reduziert auch die Größe der Leistungsprofilerstellungsdatendatei (.vsp) und die Zeit, die für die Analyse erforderlich ist. Wenn kleine Funktionen ausgeschlossen werden, zählt die Zeit, die in den kleinen Funktionen verbracht wird, gegen die exklusive und inklusive Zeit der übergeordneten Funktionen. Kleine Funktionen können in die Instrumentation ausgeschlossen oder eingeschlossen werden, wie im folgenden Verfahren beschrieben wird.  
   
-### So schließen Sie kurze Funktionen in die Instrumentation ein oder davon aus  
+### <a name="to-exclude-or-include-short-functions-from-instrumentation"></a>So schließen Sie kurze Funktionen in die Instrumentierung ein oder aus  
   
-1.  Wählen Sie im **Leistungs\-Explorer** die Option **Leistungssitzung**, klicken Sie dann mit der rechten Maustaste, und wählen Sie **Eigenschaften** aus.  
+1.  Klicken Sie im **Leistungs-Explorer** mit der rechten Maustaste auf **Leistungssitzung**, und wählen Sie **Eigenschaften** aus.  
   
      Das Dialogfeld **Eigenschaftenseiten** wird angezeigt.  
   
-2.  Klicken Sie in den **Eigenschaftenseiten** auf die Eigenschaft **Instrumentation**.  
+2.  Klicken Sie auf den **Eigenschaftenseiten** auf die Eigenschaften von **Instrumentierung**.  
   
-3.  Um kurze Funktionen aus der Instrumentation auszuschließen, aktivieren Sie **Kurze Funktionen aus Instrumentation ausschließen**.  Dies ist die Standardeinstellung.  
+3.  Wählen Sie zum Ausschließen von kleinen Funktionen in die Instrumentierung **Kleine Funktionen in die Instrumentierung ausschließen** Dies ist die Standardeinstellung.  
   
-     \- oder \-  
+     - oder -   
   
-     Um kurze Funktionen in die Instrumentation einzuschließen, deaktivieren Sie **Kurze Funktionen aus Instrumentation ausschließen**.  
+     Deaktivieren Sie zum Einschließen von kleinen Funktionen in die Instrumentierung **Kleine Funktionen in die Instrumentierung ausschließen**  
   
 4.  Klicken Sie auf **OK**.  
   
-## Siehe auch  
- [Steuern der Datensammlung](../profiling/controlling-data-collection.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Steuern der Datenauflistung](../profiling/controlling-data-collection.md)   
  [Eigenschaften von Leistungssitzungen](../profiling/performance-session-properties.md)

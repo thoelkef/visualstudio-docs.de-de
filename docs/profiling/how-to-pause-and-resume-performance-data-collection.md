@@ -1,44 +1,44 @@
 ---
-title: "Gewusst wie: Anhalten und Fortsetzen der Profilerstellung | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Profilerstellungstools, Remoteprofilerstellung"
+title: 'Vorgehensweise: Anhalten und Fortsetzen der Sammlung von Leistungsdaten | Microsoft-Dokumentation'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: profiling tools, remote profiling
 ms.assetid: b8e76363-65cd-424d-8173-3e2b5f54203b
-caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d80aa5c71651fc6540711dc23ee2f9c8d45415b9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Anhalten und Fortsetzen der Profilerstellung
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Im Fenster der Profilerstellungs\-Sitzungsseite können Sie die Erfassung der Profilerstellungsdaten interaktiv steuern.  
+# <a name="how-to-pause-and-resume-performance-data-collection"></a>Vorgehensweise: Anhalten und Fortsetzen der Sammlung von Leistungsdaten
+Im Fenster der Profilerstellungs-Sitzungsseite können Sie die Erfassung der Profilerstellungsdaten interaktiv steuern.  
   
- Durch Steuerung der Datensammlung können Sie die Größe der Profildatendatei reduzieren sowie Daten nur für relevante Vorgänge sammeln.  Sie können die Profilerstellung in einer Leistungssitzung mehrmals anhalten und fortsetzen.  
+ Durch Steuerung der Datensammlung können Sie die Größe der Profildatendatei reduzieren sowie Daten nur für relevante Vorgänge sammeln. Sie können die Profilerstellung in einer Leistungssitzung mehrmals anhalten und fortsetzen.  
   
- ![Seite einer Profilerstellungssitzung](../profiling/media/prof_profilingsessionpage.png "PROF\_ProfilingSessionPage")  
+ ![Profilerstellungs-Sitzungsseite](../profiling/media/prof_profilingsessionpage.png "PROF_ProfilingSessionPage")  
   
 > [!NOTE]
->  Sie können die Leistungssitzung auch mit angehaltener Profilerstellung starten und die Profilaustellung zu einem späteren Zeitpunkt in der Programmausführung fortsetzen.  Wählen Sie zum Starten der Leistungssitzung bei angehaltener Profilerstellung im Menü **Debuggen** den Befehl **Leistungsanalyse mit angehaltener Profilerstellung starten** aus.  
+>  Sie können die Leistungssitzung auch mit angehaltener Profilerstellung starten und die Profilaustellung zu einem späteren Zeitpunkt in der Programmausführung fortsetzen. Wählen Sie zum Starten der Leistungssitzung bei angehaltener Profilerstellung im Menü **Debuggen** den Befehl **Leistungsanalyse mit angehaltener Profilerstellung starten** aus.  
   
-### So können Sie die Profilerstellung anhalten, fortsetzen oder beenden  
+### <a name="to-pause--resume-or-stop-profiling"></a>So können Sie die Profilerstellung anhalten, fortsetzen oder beenden  
   
--   Gehen Sie auf der Profilerstellungs\-Sitzungsseite folgendermaßen vor:  
+-   Gehen Sie auf der Profilerstellungs-Sitzungsseite folgendermaßen vor:  
   
-    -   Wählen **Auflistung anhalten**, um die Datensammlung anzuhalten.  
+    -   Wählen Sie **Auflistung anhalten** aus, um die Datensammlung anzuhalten.  
   
-    -   Wählen **Auflistung wiederaufnehmen**, um die Datensammlung neu zu starten, nachdem sie angehalten wurde.  
+    -   Wählen Sie **Auflistung wiederaufnehmen** aus, um die Datensammlung neu zu starten, nachdem sie angehalten wurde.  
   
-    -   Wählen **Profilerstellung beenden**, um die Profilerstellungssitzung zu beenden und Berichte zu generieren.  
+    -   Wählen Sie **Profilerstellung beenden** aus, um die Profilerstellungssitzung zu beenden und Berichte zu generieren.  
   
-## Siehe auch  
- [Steuern der Datensammlung](../profiling/controlling-data-collection.md)   
- [Gewusst wie: Starten und Beenden der Profilerstellung](../profiling/how-to-start-and-end-performance-data-collection.md)
+## <a name="see-also"></a>Siehe auch  
+ [Steuern der Datenauflistung](../profiling/controlling-data-collection.md)   
+ [Vorgehensweise: Starten und Beenden der Sammlung von Leistungsdaten](../profiling/how-to-start-and-end-performance-data-collection.md)

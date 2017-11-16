@@ -1,36 +1,37 @@
 ---
-title: "CvWriteFlag-Funktion | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "cvmarkers/CvWriteFlagExVA"
-  - "cvmarkers/CvWriteFlagExW"
-  - "cvmarkers/CvWriteFlagExVW"
-  - "cvmarkers/CvWriteFlagExA"
-helpviewer_keywords: 
-  - "CvWriteFlagExW-Methode"
-  - "CvWriteFlagExVA-Methode"
-  - "CvWriteFlagExA-Methode"
-  - "CvWriteFlagExVW-Methode"
+title: CvWriteFlag-Funktion | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- cvmarkers/CvWriteFlagExVA
+- cvmarkers/CvWriteFlagExW
+- cvmarkers/CvWriteFlagExVW
+- cvmarkers/CvWriteFlagExA
+helpviewer_keywords:
+- CvWriteFlagExW method
+- CvWriteFlagExVA method
+- CvWriteFlagExA method
+- CvWriteFlagExVW method
 ms.assetid: ee9da1e2-7b34-4cba-81e2-215d25d32e4d
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8b93fc7f8ce9b031b4ddb650c09b570ecb29a727
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CvWriteFlag-Funktion
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Schreibt ein Flag in die Parallelitätsschnellansichts\-Ablaufverfolgungsdatei.  
+# <a name="cvwriteflag-function"></a>CvWriteFlag-Funktion
+Schreibt ein Flag in die Ablaufverfolgungsdatei der Nebenläufigkeitsschnellansicht.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT CvWriteFlagExW(  
@@ -64,9 +65,9 @@ HRESULT CvWriteFlagExVA(
     _In_ va_list argList);  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `argList`  
- Liste der Argumente.  
+ Liste mit Argumenten.  
   
  `category`  
  Kategorie.  
@@ -75,20 +76,20 @@ HRESULT CvWriteFlagExVA(
  Wichtigkeitsstufe.  
   
  `pMarkerSeries`  
- Gültiger Marker\-Reihenkontext.  Darf nicht NULL sein.  
+ Gültiger Markerreihenkontext. Darf nicht NULL sein.  
   
  `pMessage`  
- Nachrichtenformatzeichenfolge.  Darf nicht NULL sein.  
+ Formatzeichenfolge für die Meldung. Darf nicht NULL sein.  
   
-## Rückgabewert  
- S\_OK, wenn die Meldung erfolgreich geschrieben wird.  Fehlercode, sofern dieses alle Fehler auftritt.  Makros der Verwendung SUCCEEDED\/FAILED, auf dem Fehlerzustand zu überprüfen.  
+## <a name="return-value"></a>Rückgabewert  
+ S_OK, wenn die Meldung erfolgreich geschrieben wurde. Fehlercode, wenn Fehler aufgetreten sind. Prüfen Sie mit den Makros SUCCEEDED bzw. FAILED, ob Fehler vorliegen.  
   
-## Anforderungen  
- **Header:**  cvmarkers.h  
+## <a name="requirements"></a>Anforderungen  
+ **Header:** cvmarkers.h  
   
  **Unicode:** CvWriteFlagExW, CvWriteFlagExVW  
   
- **ANSI:** CvWriteFlagExA, CvWriteFlagExVA  
+ **ANSI:**CvWriteFlagExA, CvWriteFlagExVA  
   
-## Siehe auch  
- [C\+\+\-Bibliotheksreferenz](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>Siehe auch  
+ [C++-Bibliotheksreferenz](../profiling/cpp-library-reference.md)

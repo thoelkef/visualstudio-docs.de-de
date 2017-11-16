@@ -1,30 +1,29 @@
 ---
-title: "marker_series::write_message-Methode | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "cvmarkersobj/Concurrency::diagnostic::marker_series::write_message"
-helpviewer_keywords: 
-  - "Concurrency::diagnostic::marker_series::write_message-Methode"
+title: marker_series::write_message-Methode | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: cvmarkersobj/Concurrency::diagnostic::marker_series::write_message
+helpviewer_keywords: Concurrency::diagnostic::marker_series::write_message method
 ms.assetid: 546121bc-67e0-4a5a-a456-12bd78fd6de2
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c322fb6f4419aad732db3aa02940edeab6850f10
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# marker_series::write_message-Methode
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Schreibt eine Meldung in die Parallelitätsschnellansichts\-Ablaufverfolgungsdatei.  
+# <a name="markerserieswritemessage-method"></a>marker_series::write_message-Methode
+Schreibt eine Meldung in die Ablaufverfolgungsdatei der Nebenläufigkeitsschnellansicht  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 void write_message(  
@@ -49,20 +48,20 @@ void write_message(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `_Format`  
- Eine kombinierte Formatzeichenfolge, die Text vermischte mit null\) enthält oder mehr Formatelementen, die den Objekten in der Argumentliste entsprechen.  
+ Eine zusammengesetzte Formatzeichenfolge mit Text, der 0 oder mehr Formatelemente enthält, die Objekten in der Argumentliste entsprechen.  
   
  `_Importance`  
  Wichtigkeitsstufe.  
   
  `_Category`  
- Category.Importance\-Ebene.  
+ Kategorie.Wichtigkeitsstufe  
   
-## Anforderungen  
- **Header:**  cvmarkersobj.h  
+## <a name="requirements"></a>Anforderungen  
+ **Header:** cvmarkersobj.h  
   
- **Namespace:**  Concurrency::diagnostic  
+ **Namespace:** Concurrency::diagnostic  
   
-## Siehe auch  
- [marker\_series\-Klasse](../profiling/marker-series-class.md)
+## <a name="see-also"></a>Siehe auch  
+ [marker_series-Klasse](../profiling/marker-series-class.md)

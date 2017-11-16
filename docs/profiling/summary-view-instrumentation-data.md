@@ -1,51 +1,51 @@
 ---
-title: "Zusammenfassungsansicht – Profiler-Instrumentationsdaten | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Zusammenfassungsansicht"
+title: "Zusammenfassungsansicht – Instrumentationsdaten | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Summary view
 ms.assetid: 0a3b3a1f-e22b-4ac8-b46e-71694e9b2cf1
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 296faf330e23d65ae0ab7e9f434ab831ee520ac5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Zusammenfassungsansicht – Profiler-Instrumentationsdaten
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Die Zusammenfassungsansicht zeigt Informationen zu den leistungsintensivsten Funktionen während einer Profilerstellung an.  Weitere Informationen, einschließlich einer Beschreibung der Benachrichtigungslinks und Berichtslisten, finden Sie unter [Zusammenfassungsansicht](../profiling/summary-view.md).  
+# <a name="summary-view---instrumentation-data"></a>Zusammenfassungansicht – Instrumentationsdaten
+Die Zusammenfassungsansicht zeigt Informationen über die leistungsintensivsten Funktionen in einem Profilerstellungslauf. Weitere Informationen, einschließlich einer Beschreibung der Benachrichtigungslinks und Berichtslisten, finden Sie unter [Zusammenfassungsansicht](../profiling/summary-view.md).  
   
-## Zeitachsendiagramm  
- Das Zeitachsendiagramm in der Zusammenfassungsansicht zeigt die CPU\-Auslastung \(Prozessorauslastung\) durch die profilierte Anwendung über den Zeitraum der Profilerstellung an.  Sie können die Ansicht mithilfe des Zeitachsendiagramms nach einem ausgewählten Zeitraum filtern.  Weitere Informationen finden Sie unter [Gewusst wie: Filtern von Berichtsansichten aus der Zeitachsenübersicht](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
+## <a name="timeline-graph"></a>Zeitachsendiagramm  
+ Die Zeitachse in der Zusammenfassungsansicht zeigt die Auslastung des Prozessors (CPU) durch die profilierte Anwendung während des Zeitraums an, in dem die Profilerstellung stattgefunden sind. Sie können das Zeitachsendiagramm zum Filtern der Ansicht in einem ausgewählten Zeitraum verwenden. Weitere Informationen finden Sie unter [Vorgehensweise: Filtern von Berichtsansichten aus der Zeitachsenübersicht](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
   
-## Langsamster Pfad  
- Unter **Langsamster Pfad** wird der Ausführungspfad angezeigt, für den die meiste Zeit aufgewendet wurde.  Sie können auf eine Funktion klicken, um die Ansicht "Funktionsdetails" für die Funktion anzuzeigen.  Klicken Sie mit der rechten Maustaste auf eine Funktion, und klicken Sie danach auf eine Ansicht in der Liste, um andere Ansichten für die Funktion anzuzeigen.  
+## <a name="hot-path"></a>Langsamster Pfad  
+ Die Option **Langsamster Pfad** zeigt den Ausführungspfad an, der die meiste Zeit beansprucht hat. Sie können auf eine Funktion klicken, um die Ansicht „Funktionsdetails“ für die Funktion anzuzeigen. Zum Anzeigen anderer Ansichten für die Funktion klicken Sie mit rechten Maustaste auf die Funktion, und klicken Sie dann auf eine Ansicht in der Liste.  
   
  **Langsamster Pfad** umfasst die folgenden Daten für jede Funktion:  
   
-|Spalte|**Beschreibung**|  
-|------------|----------------------|  
+|Spalte|Beschreibung|  
+|------------|-----------------|  
 |**Name**|Der Name der Funktion.|  
-|**Verstrichene inklusive Zeit in %**|Der Prozentsatz der gesamten Zeit für Profilerstellungsdaten, die die Funktion zur Ausführung von Code im Funktionstext und in den von der Funktion aufgerufenen Funktionen aufgewendet hat.|  
-|**Verstrichene exklusive Zeit in %**|Der Prozentsatz der gesamten Zeit für Profilerstellungsdaten, die die Funktion zur Ausführung von Code im Funktionstext aufgewendet hat.  Die Zeit, die für von der Funktion aufgerufene Funktionen aufgewendet wurde, ist nicht enthalten.|  
+|**verstrichene inklusive Zeit %**|Der Prozentsatz der gesamten Zeit in den Profilerstellungsdaten, die die Funktion für die Ausführung von Code im Funktionsrumpf und in den von ihr aufgerufenen Funktionen aufgewendet hat.|  
+|**verstrichene exklusive Zeit %**|Der Prozentsatz der gesamten Zeit in den Profilerstellungsdaten, die die Funktion für die Ausführung von Code im Funktionsrumpf verwendet hat. In Funktionen, die von der Funktion aufgerufen wurden, aufgewendete Zeit wurde nicht berücksichtigt.|  
   
-## Funktionen mit den meisten einzelnen Aufgaben  
- Eine Liste der Funktionen, die die meiste Zeit für das Ausführen von Code im Funktionstext und nicht für aufgerufene Funktionen aufgewendet haben.  
+## <a name="functions-with-most-individual-work"></a>Funktionen mit den meisten einzelnen Aufgaben  
+ Eine Liste der Funktionen, die die meiste Zeit für die Ausführung von Code im Rumpf der Funktion und nicht in von ihr aufgerufenen Funktionen aufgewendet hat.  
   
- **Funktionen mit den meisten einzelnen Aufgaben** enthält folgende Daten für jede Funktion:  
+ **Funktionen mit den meisten einzelnen Aufgaben** umfasst die folgenden Daten für jede Funktion:  
   
-|Spalte|**Beschreibung**|  
-|------------|----------------------|  
+|Spalte|Beschreibung|  
+|------------|-----------------|  
 |**Name**|Der Name der Funktion.|  
-|**Exklusive Zeit %**|Der Prozentsatz der gesamten Zeit für Profilerstellungsdaten, die die Funktion zur Ausführung von Code im Funktionstext aufgewendet hat.  Die Zeit, die für von der Funktion aufgerufene Funktionen aufgewendet wurde, ist nicht enthalten.|  
+|**Exklusive Zeit %**|Der Prozentsatz der gesamten Zeit in den Profilerstellungsdaten, die die Funktion für die Ausführung von Code im Funktionsrumpf verwendet hat. In Funktionen, die von der Funktion aufgerufen wurden, aufgewendete Zeit wurde nicht berücksichtigt.|  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Zusammenfassungsansicht](../profiling/summary-view-sampling-data.md)   
  [Zusammenfassungsansicht](../profiling/summary-view-dotnet-memory-data.md)

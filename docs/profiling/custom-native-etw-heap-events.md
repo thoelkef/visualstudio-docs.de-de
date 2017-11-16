@@ -4,39 +4,21 @@ ms.custom:
 ms.date: 02/24/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
-caps.latest.revision: 8
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
 manager: ghogen
-dev_langs:
-- C++
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+dev_langs: C++
+ms.openlocfilehash: 10d4ab630132d8ce4191978de669436ca7ba5852
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 7c87490f8e4ad01df8761ebb2afee0b2d3744fe2
-ms.openlocfilehash: f2a659347823fee4b933463011c0b69c07fa937f
-ms.contentlocale: de-de
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="custom-native-etw-heap-events"></a>Ereignisse für benutzerdefinierte native ETW-Heap
 
 Visual Studio enthält eine Vielzahl von [profiling and diagnostic tools (Profilerstellungs- und Diagnosetools)](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools), einschließlich einer nativen Speicherprofilerstellung.  Dieser Profiler hängt sich an [ETW-Ereignisse](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) vom Heap-Anbieter, und bietet eine Analyse, wie Speicher zugeordnet und verwendet wird.  Dieses Tool kann standardmäßig nur aus dem standardmäßigen Windows-Heap vorgenommene Zuordnungen analysieren. Zuordnungen außerhalb dieses nativen Heap werden nicht angezeigt.
@@ -176,6 +158,5 @@ Wie bei dem standardmäßigen Windows-Heap, können Sie dieses Tool auch verwend
 > Visual Studio enthält auch ein **Speicherauslastungs**tool im **Leistungsprofilerstellungs**-Toolset, das in der Menüoption **Debuggen > Leistungsprofilerstellung** oder über die Tastenkombination **Alt+F2** aktiviert wird.  Diese Funktion enthält keine Heap-Nachverfolgung und wird Ihren benutzerdefinierten Heap nicht wie hier beschrieben anzeigen.  Nur das **Diagnosetools**-Fenster, das im Menü **Debuggen > Windows > Diagnosetools anzeigen** oder mit der Tastenkombination **STRG+Alt+F2** aktiviert werden kann, enthält diese Funktion.
 
 ## <a name="see-also"></a>Siehe auch
-* [Profilerstellungstools](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools)
-* [Speicherauslastung](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)
-
+[Profilerstellungstools](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools)  
+[Speicherauslastung](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)

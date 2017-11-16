@@ -1,23 +1,24 @@
 ---
-title: "Behandeln von Problemen bei Profilerstellungstools | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Problembehandlung bei Leistungstools | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 0b61cdf7-75b7-4abd-aff2-7bd997717626
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 4dc0567a9bd51c7f7cb5051a4e5086310a5a86ac
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Behandeln von Problemen bei Profilerstellungstools
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="troubleshooting-performance-tools-issues"></a>Problembehandlung bei Leistungstools
 Bei der Verwendung der Profilerstellungstools tritt möglicherweise eines der folgenden Probleme auf:  
   
 -   [Von den Profilerstellungstools werden keine Daten gesammelt](#NoDataCollected)  
@@ -25,26 +26,26 @@ Bei der Verwendung der Profilerstellungstools tritt möglicherweise eines der fo
 -   [Leistungsansichten und Berichte zeigen Nummern für Funktionsnamen an](#NoSymbols)  
   
 ##  <a name="NoDataCollected"></a> Von den Profilerstellungstools werden keine Daten gesammelt  
- Wenn Sie ein Profil für eine Anwendung erstellt haben, wird keine Profilerstellungsdatendatei \(.vsp\) erstellt, und Sie erhalten im Ausgabefenster oder im Befehlsfenster die folgende Warnung:  
+ Nachdem Sie ein Profil für eine Anwendung erstellt haben, wird keine Profilerstellungsdatendatei (.vsp) erstellt, und Sie erhalten im Ausgabefenster oder im Befehlsfenster die folgende Warnung:  
   
- PRF0025: Es wurden keine Daten aufgeführt.  
+ PRF0025: Es wurden keine Daten gesammelt.  
   
- Für dieses Problem kommen mehrere Ursachen in Frage:  
+ Dieses Problem kann mehrere Ursachen haben:  
   
--   Prozesse, die mit der Sampling\- oder der .NET\-Arbeitsspeichermethode profiliert wurden, starten einen untergeordneten Prozess, von dem die Anwendungsarbeit ausgeführt wird.  Manche Anwendungen lesen z. B. die Befehlszeile, um zu bestimmen, ob sie als Windows\-Anwendung oder Befehlszeilenanwendung gestartet wurden.  Wenn eine Windows\-Anwendung angefordert wurde, startet der ursprüngliche Prozess einen neuen, als Windows\-Anwendung konfigurierten Prozess, und der ursprüngliche Prozess wird dann beendet.  Da die Profilerstellungstools Daten für untergeordnete Prozesse nicht automatisch sammeln, werden keine Daten gesammelt.  
+-   Ein Prozess, der mit der Sampling- oder der .NET-Arbeitsspeichermethode profiliert wurde, startet einen untergeordneten Prozess, der die Anwendungsarbeit ausführt. Einige Anwendungen lesen z.B. die Befehlszeile, um festzustellen, ob sie als Windows-Anwendung oder Befehlszeilenanwendung gestartet wurden. Wenn eine Windows-Anwendung angefordert wurde, startet der ursprüngliche Prozess einen neuen, als Windows-Anwendung konfigurierten Prozess, und der ursprüngliche Prozess wird beendet. Da die Profilerstellungstools nicht automatisch Daten für untergeordnete Prozesse erfassen, werden keine Daten gesammelt.  
   
-     Zum Sammeln von Profilerstellungsdaten in einer solchen Situation starten Sie die Anwendung nicht mit dem Profiler, sondern fügen Sie den Profiler an den untergeordneten Prozess an.  Weitere Informationen finden Sie unter [Gewusst wie: Anfügen eines Profilers an einen laufenden Prozess und Trennen eines Profilers von einem laufenden Prozess](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md) und [Attach \(VSPerfCmd\)](../profiling/attach.md).  
+     Zum Sammeln von Profilerstellungsdaten in einem solchen Fall starten Sie die Anwendung nicht mit dem Profiler, sondern fügen Sie den Profiler an den untergeordneten Prozess an. Weitere Informationen finden Sie unter [Vorgehensweise: Anfügen von Leistungstools an einen laufenden Prozess und Trennen von Leistungstools von einem laufenden Prozess](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md) und [Attach (VSPerfCmd)](../profiling/attach.md).  
   
 ##  <a name="NoSymbols"></a> Leistungsansichten und Berichte zeigen Nummern für Funktionsnamen an  
- Wenn Sie für eine Anwendung ein Profil erstellt haben, werden in Berichten und Ansichten statt der Funktionsnamen Nummern angezeigt.  
+ Nachdem Sie für eine Anwendung ein Profil erstellt haben, werden in Berichten und Ansichten statt der Funktionsnamen Nummern angezeigt.  
   
- Dieses Problem wird durch das Analysemodul des Profilerstellungstools verursacht, das die PDB\-Dateien mit den Symbolinformationen nicht finden kann, durch die Quellcodeinformationen, z. B. Funktionsnamen und Zeilennummern, der kompilierten Datei zugeordnet werden.  Standardmäßig erstellt der Compiler die PDB\-Datei beim Build der Anwendungsdatei.  Ein Verweis auf das lokale Verzeichnis der PDB\-Datei wird in der kompilierten Anwendung gespeichert.  Das Analysemodul sucht nach der PDB\-Datei in dem Verzeichnis, auf das verwiesen wird, und dann in der Datei, die derzeit die Anwendungsdatei enthält.  Wenn die PDB\-Datei nicht gefunden wird, werden vom Analysemodul statt der Funktionsnamen die Funktionsoffsets verwendet.  
+ Dieses Problem wird durch das Analysemodul des Profilerstellungstools verursacht, das die PDB-Dateien mit den Symbolinformationen nicht finden kann, durch die Quellcodeinformationen wie z.B. Funktionsnamen und Zeilennummern der kompilierten Datei zugeordnet werden. Standardmäßig erstellt der Compiler bei der Erstellung der Anwendungsdatei die PDB-Datei. Ein Verweis auf das lokale Verzeichnis der PDB-Datei wird in der kompilierten Anwendung gespeichert. Das Analysemodul sucht nach der PDB-Datei in dem Verzeichnis, auf das verwiesen wird, und dann in der Datei, die derzeit die Anwendungsdatei enthält. Wenn die PDB-Datei nicht gefunden wird, verwendet das Analysemodul statt der Funktionsnamen die Funktionsoffsets.  
   
- Sie können das Problem mit zwei Methoden beheben:  
+ Sie können das Problem auf zwei Arten beheben:  
   
--   Suchen Sie die PDB\-Dateien, und fügen Sie diese in demselben Verzeichnis wie die Anwendungsdateien ein.  
+-   Suchen Sie die PDB-Dateien und platzieren Sie sie im selben Verzeichnis wie die Anwendungsdateien.  
   
--   Betten Sie die Symbolinformationen in die Profilerstellungsdatendatei \(.vsp\) ein.  Weitere Informationen finden Sie unter [Speichern von symbolischen Informationen mittels Profilerstellungsdatendateien](../profiling/saving-symbol-information-with-performance-data-files.md).  
+-   Betten Sie die Symbolinformationen in die Profilerstellungsdatendatei (.vsp) ein. Weitere Informationen finden Sie unter [Speichern von Symbolinformationen mittels Leistungsdatendateien](../profiling/saving-symbol-information-with-performance-data-files.md).  
   
 > [!NOTE]
->  Für das Analysemodul muss die PDB\-Datei die gleiche Version wie die kompilierte Anwendungsdatei aufweisen.  PDB\-Dateien aus einem früheren oder späteren Build der Anwendungsdatei können nicht verwendet werden.
+>  Für das Analysemodul muss die PDB-Datei die gleiche Version wie die kompilierte Anwendungsdatei aufweisen. Eine PDB-Datei aus einem früheren oder späteren Build der Anwendungsdatei kann nicht verwendet werden.

@@ -1,40 +1,39 @@
 ---
-title: "Ressourcendetailansicht - Profiler-Konfliktdaten | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.view.resourcedetails"
-helpviewer_keywords: 
-  - "Ressourcendetailansicht"
+title: "Ressourcendetailansicht – Konfliktdaten | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.performance.view.resourcedetails
+helpviewer_keywords: Resource Details view
 ms.assetid: a4ecfe1c-abbc-4fb3-9ab2-34de50486901
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: eaf87be0e921d0e86818c29c078d8b214591418d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Ressourcendetailansicht - Profiler-Konfliktdaten
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Die Ressourcendetailansicht präsentiert ein Zeitachsendiagramm der blockierenden Ereignisse, die von Konflikten bei einer ausgewählten Ressource verursacht wurden.  Ein blockierendes Ereignis tritt auf, wenn ein Thread gezwungen wird, die Ausführung anzuhalten, da ein anderer Thread den Zugriff auf die Ressource gesperrt hat.  
+# <a name="resource-details-view---contention-data"></a>Ressourcendetailansicht – Konfliktdaten
+Die Ansicht Ressourcendetails enthält ein Zeitachsendiagramm der blockierenden Ereignisse, die von Konflikten ausgewählter Ressourcen ausgelöst wurden. Ein blockierendes Ereignis tritt auf, wenn der Thread gezwungen wird, die Ausführung anzuhalten, da ein anderer Thread den Zugriff auf die Ressource gesperrt hat.  
   
- Diese Ansicht stellt die Ausführungszeitachse jedes Threads als horizontale Leiste dar und stellt jedes Blockierungsereignis als senkrechten Strich auf der Threadzeitachse dar.  Falls notwendig können Sie einen Abschnitt der Zeitachse vergrößern, um einzelne Ereignisse anzuzeigen.  Um den Ausführungspfad \(Aufrufliste\) der Funktionen anzuzeigen, die zum Ereignis geführt haben, klicken Sie auf die Ereignisleiste.  Die Funktionen werden im Fenster **Aufrufliste** angezeigt.  Wenn der Quellcode für eine Funktion verfügbar ist, können Sie auf den Funktionsnamen klicken, um die Quelldatei in der Schnittstelle für [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zu bearbeiten.  
+ Diese Ansicht stellt die Ausführungszeitachse jedes Threads als horizontalen Balken und die blockierenden Ereignisse als senkrechten Balken für den Thread dar. Bei Bedarf können Sie einen Teil eines Zeitachsenbereichs vergrößern, um die einzelnen Ereignisse anzuzeigen. Um den Ausführungspfad (Aufrufliste) der Funktionen anzuzeigen, die zum Ereignis geführt haben, klicken Sie auf die Ereignisleiste. Die Funktionen werden im Fenster **Aufrufliste** angezeigt. Wenn der Quellcode für eine Funktion verfügbar ist, können Sie auf den Funktionsnamen klicken, um die Quelldatei in der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Oberfläche zu bearbeiten.  
   
-## Prozeduren  
+## <a name="procedures"></a>Verfahren  
   
-#### So vergrößern Sie ein Zeitachsensegment  
+#### <a name="to-magnify-a-timeline-segment"></a>So vergrößern Sie ein Zeitachsensegment  
   
--   Ziehen Sie den Mauszeiger über einen Bereich der Zeitachse.  
+-   Wählen Sie mit gedrückter Maustaste einen Bereich auf der Zeitachse aus.  
   
-     Wenn Sie die Maustaste loslassen, wird die Ansicht des ausgewählten Zeitsegments vergrößert.  Sie können den Prozess wiederholen, um das Segment weiter zu vergrößern.  Das Bildlauffeld auf der Zeitbildlaufleiste stellt die relative Größe des Zeitsegments dar, das in der Ansicht angezeigt wird.  
+     Wenn Sie die Maustaste loslassen, wird die Ansicht des ausgewählten Zeitsegments vergrößert. Sie können den Prozess wiederholen, um das Segment weiter zu vergrößern. Das Bildlauffeld auf der Zeitbildlaufleiste stellt die relative Größe des Zeitsegments dar, das in der Ansicht angezeigt wird.  
   
-#### So verkleinern Sie die Ansicht einer Zeitachse  
+#### <a name="to-zoom-out-on-a-timeline"></a>So verkleinern Sie die Ansicht einer Zeitachse  
   
 -   Führen Sie einen der folgenden Schritte aus:  
   
@@ -42,24 +41,24 @@ Die Ressourcendetailansicht präsentiert ein Zeitachsendiagramm der blockierende
   
     -   Klicken Sie auf **Zurücksetzen des Zooms**, um die ganze Zeitachse in der Ansicht anzuzeigen.  
   
-#### So zeigen Sie die Aufrufliste eines Ereignisses an  
+#### <a name="to-view-the-call-stack-of-an-event"></a>So zeigen Sie die Aufrufliste eines Ereignisses an  
   
 -   Klicken Sie im Zeitachsendiagramm auf die Ereignisleiste.  
   
-#### So zeigen Sie den Quellcode für eine Funktion in der Aufrufliste an oder bearbeiten diesen  
+#### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>So zeigen Sie den Quellcode für eine Funktion in der Aufrufliste an oder bearbeiten diesen  
   
 -   Klicken Sie im Fenster **Aufrufliste** auf den Funktionsnamen.  
   
  Der Funktionsquellcode muss Teil des aktuellen Projekts sein.  
   
-#### So zeigen Sie die Aufrufstruktur von Konfliktereignissen für die Ressource an  
+#### <a name="to-view-the-call-tree-of-contention-events-for-the-resource"></a>So zeigen Sie die Aufrufstruktur von Konfliktereignissen für die Ressource an  
   
 -   Klicken Sie im Zeitachsendiagramm auf **Gesamt**.  
   
-     Die Ansicht "Konflikte" wird für die Ressource angezeigt.  Weitere Informationen finden Sie unter [Ressourcenkonfliktansicht](../profiling/resource-contentions-view-contention-data.md)  
+     Die Konflikte für die Ressource werden angezeigt. Weitere Informationen finden Sie unter [Ressourcenkonfliktansicht](../profiling/resource-contentions-view-contention-data.md).  
   
-#### So zeigen Sie alle Konfliktereignisse eines Threads an  
+#### <a name="to-view-all-the-contention-events-of-a-thread"></a>So zeigen Sie alle Konfliktereignisse eines Threads an  
   
 -   Klicken Sie im Zeitachsendiagramm auf den Namen oder die ID des Threads.  
   
-     Die Threaddetailansicht wird für den ausgewählten Thread angezeigt.  Weitere Informationen finden Sie unter [Threaddetailansicht](../profiling/thread-details-view-contention-data.md).
+     Die Detailansicht des Threads wird für den ausgewählten Thread angezeigt. Weitere Informationen finden Sie unter [Threaddetailansicht](../profiling/thread-details-view-contention-data.md).

@@ -1,37 +1,36 @@
 ---
-title: "Leeres Zeitachsensegment | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.cv.threads.timeline.empty"
-helpviewer_keywords: 
-  - "Concurrency Visualizer, leeres Zeitachsensegment"
+title: Leeres Zeitachsensegment | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.cv.threads.timeline.empty
+helpviewer_keywords: Concurrency Visualizer, empty timeline segment
 ms.assetid: f37b301f-3edc-4e56-8084-feec2dc5a9b1
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b8cc25d03d4565f33ff42267ea0af1c7c31cbfd8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Leeres Zeitachsensegment
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-In der Parallelitätsschnellansicht verfügt der Grund, dass ein Abschnitt der Zeitachse leer ist \(einen weißen Hintergrund\) hängt von der Art des Kanals.  
+# <a name="empty-timeline-segment"></a>Leeres Zeitachsensegment
+In der Nebenläufigkeitsschnellansicht hängt der Grund dafür, dass ein Abschnitt der Zeitachse leer ist (einen weißen Hintergrund aufweist) von der Art des Kanals ab.  
   
--   Für einen CPU\-Threadchannel Dies bedeutet, dass der Thread während dieser Zeit nicht vorhanden war.  Wenn Sie am Thread interessieren, können Sie den Abschnitt finden, indem Sie horizontal das Zoomsteuerelement verwenden oder einen Bildlauf durchführen.  
+-   Bei einem CPU-Threadkanal ist der Grund der, dass der Thread in diesem Teil der Zeitachse nicht vorhanden war. Wenn Sie nach Informationen zu dem Thread suchen, finden Sie den Ausführungsabschnitt mithilfe des Zoomsteuerelements oder indem Sie horizontal scrollen.  
   
--   Für einen Ein\-\/Ausgabekanal bedeutet, dass kein Festplattenspeicher einzutauschen im Namen des Zielprozesses zum betreffenden Zeitpunkt aufgetreten ist.  
+-   Bei einem E/A-Kanal ist der Grund der, dass zu diesem Zeitpunkt für den Zielprozess kein Datenträgerzugriff durchgeführt wurde.  
   
--   Für einen DirectX\-Channel bedeutet, dass keine GPU\-Arbeit im Namen des Zielprozesses während dieses Teils der Zeitachse ausgeführt wurde.  
+-   Bei einem DirectX-Kanal ist der Grund der, dass in diesem Teil der Zeitachse für den Zielprozess keine GPU-Arbeiten durchgeführt wurden.  
   
--   Für einen Markerchannel bedeutet, dass keine Markierungen generiert wurden.  
+-   Bei einem Markerkanal ist der Grund der, dass keine Marker generiert wurden.  
   
-## Siehe auch  
- [Threadansicht](../profiling/threads-view-parallel-performance.md)   
- [Zoomsteuerelement \(Threadansicht\)](../profiling/zoom-control-threads-view.md)
+## <a name="see-also"></a>Siehe auch  
+ [Threads View (Threadansicht)](../profiling/threads-view-parallel-performance.md)   
+ [Zoom Control (Threads View) (Zoomsteuerelement (Threadansicht))](../profiling/zoom-control-threads-view.md)

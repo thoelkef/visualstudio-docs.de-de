@@ -1,27 +1,24 @@
 ---
 title: "Erste Schritte mit R für Visual Studio | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 6/29/2017
+ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 ms.assetid: 39228cf0-8d21-43bb-a2ce-5e5fdc81ec41
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 616b39cdd355e6a795a4b4e2929586ba233ab8da
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: b9fb38bf7e21924d7fbece72978e99d298a42b74
-ms.contentlocale: de-de
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="getting-started-with-r-tools-for-visual-studio"></a>Erste Schritte mit R Tools für Visual Studio
 
 Sobald Sie R Tools für Visual Studio (RTVS) installiert haben (siehe [Installation](installation.md)), erhalten Sie schnell einen Vorgeschmack der Funktionalität, die diese Tools bieten. In den folgenden Abschnitten werden Sie näher an das Thema herangeführt:
@@ -183,4 +180,3 @@ In dieser exemplarischen Vorgehensweise haben Sie die Grundlagen von R-Projekten
 - [Debuggen](debugging.md)
 - [Arbeitsbereiche](workspaces.md)
 - [Visualisieren von Daten](visualizing-data.md)
-

@@ -1,74 +1,74 @@
 ---
-title: "Gewusst wie: Beschr&#228;nken der Instrumentation auf bestimmte DLLs | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Profilerstellungstools, Laufzeit-Profilerstellungssteuerung (Fenster)"
+title: "Vorgehensweise: Beschränken der Instrumentierung auf bestimmte DLLs | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: performance tools, runtime profiling control window
 ms.assetid: 17c5996f-e3d0-4e44-b175-52b401b0f2d5
-caps.latest.revision: 19
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 59d24a6cc67429fb6c0231f9487d80abe91de965
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Beschr&#228;nken der Instrumentation auf bestimmte DLLs
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Mit der Instrumentationsmethode zur Profilerstellung können Sie die Auflistung von Profilerstellungsdaten auf eine oder mehrere DLLs in einer Anwendung beschränken.  Um ein Profil für eine oder mehrere DLLs in einer Anwendung zu erstellen, können Sie eine Leistungssitzung erstellen, die die .dll\-Dateien als Ziele enthält.  Sie können die DLLs, für die Sie ein Profil erstellen möchten, als Projekte in einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-Projektmappe oder als unabhängige binäre Dateien angeben.  
+# <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Gewusst wie: Beschränken der Instrumentierung auf bestimmte DLLs
+Mithilfe der Instrumentierungs-Profilerstellungsmethode können Sie die Auflistung von Profilerstellungsdaten auf eine oder mehrere DLLs in einer Anwendung beschränken. Erstellen Sie eine Leistungssitzung, die die DLL-Datei als Ziel enthält, um das Profil von einer oder mehreren DLLs in einer Anwendung zu erstellen. Sie können die DLLS, für die Sie ein Profil erstellen möchten, als Projekt in einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projektmappe oder als unabhängige Binärdateien angeben.  
   
-### So beschränken Sie die Instrumentation auf bestimmte DLLs in einer Visual Studio\-Projektmappe  
+### <a name="to-limit-instrumentation-to-specific-dlls-in-a-visual-studio-solution"></a>So beschränken Sie die Instrumentation auf bestimme DLLS in einer Visual Studio-Projektmappe  
   
-1.  Öffnen Sie die Projektmappe, die die DLL in [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] enthält.  
+1.  Öffnen Sie die Projektmappe, die die DLL enthält, in [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)].  
   
-2.  Klicken Sie im Menü **Analyse** auf **Leistungs\-Assistenten starten**.  
+2.  Klicken Sie im Menü **Analysieren** auf **Leistungs-Assistenten starten**.  
   
-3.  Wählen Sie **Instrumentation** als Profilerstellungsmethode aus, und klicken Sie dann auf **Weiter**.  
+3.  Wählen Sie **Instrumentation** als Profilerstellungsmethode aus, und klicken Sie anschließend auf **Weiter**.  
   
-4.  Wählen Sie in der Dropdownliste **Für welches der folgenden verfügbaren Ziele möchten Sie ein Profil erstellen?** den Namen des DLL\-Projekts aus, und klicken Sie dann auf **Weiter**.  
+4.  Wählen Sie aus **Für welches der folgenden verfügbaren Ziele möchten Sie ein Profil erstellen?** den Namen des DLL-Projekts aus, und klicken Sie anschließend auf **Weiter**.  
   
-5.  Klicken Sie auf **Fertig stellen**, um den Assistenten zu beenden und die neue Leistungssitzung im Fenster **Leistungs\-Explorer**  anzuzeigen.  
+5.  Klicken Sie auf **Fertig stellen**, um den Assistenten zu beenden und um im Fenster **Leistungs-Explorer** die neue Leistungssitzung anzuzeigen.  
   
-6.  Klicken Sie mit der rechten Maustaste auf **Ziele**, und wählen Sie dann **Zielprojekt hinzufügen** aus.  
+6.  Klicken Sie mit der rechten Maustaste auf **Ziele**, und wählen Sie **Zielprojekt hinzufügen** aus.  
   
-7.  Wählen Sie in der Liste **Zielprojekt hinzufügen** das ausführbare Projekt aus, das Sie zum Ausführen der DLL verwenden möchten.  
+7.  Wählen Sie aus der Liste **Zielprojekt hinzufügen** das ausführbare Projekt aus, das Sie zum Ausführen der DLL verwenden möchten.  
   
-     Optional.  Sie können alle DLL\-Projekte hinzufügen, für die Sie ein Profil erstellen möchten.  
+     Optional. Sie können alle DLL-Projekte hinzufügen, für die Sie ein Profil erstellen möchten.  
   
-8.  Um die Datenauflistung für ein hinzugefügtes Projekt zu verhindern, klicken Sie mit der rechten Maustaste auf den Namen des Projekts, und deaktivieren Sie dann das Kontrollkästchen **Instrument**.  
+8.  Klicken Sie mit der rechten Maustaste auf den Projektnamen, und deaktivieren Sie das Kontrollkästchen **Instrumentieren**, um die Datensammlung für ein zusätzliches Projekt zu verhindern.  
   
-### So geben Sie bestimmte DLLs für die Profilerstellung als unabhängige Binärdateien an  
+### <a name="to-specify-specific-dlls-to-profile-as-independent-binaries"></a>So geben Sie bestimmte DLLs als unabhängige Binärdateien zur Profilerstellung an  
   
 1.  Öffnen Sie [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)].  
   
-2.  Klicken Sie im Menü **Analyse** auf **Leistungs\-Assistenten starten**.  
+2.  Klicken Sie im Menü **Analysieren** auf **Leistungs-Assistenten starten**.  
   
-3.  Wählen Sie in der Dropdownliste **Für welches der folgenden verfügbaren Ziele möchten Sie ein Profil erstellen?** die Option **Profil einer Dynamik Link Library \(.DLL\) erstellen** aus, und klicken Sie dann auf **Weiter**.  
+3.  Wählen Sie aus **Für welches der folgenden verfügbaren Ziele möchten Sie ein Profil erstellen?** **Profil einer Dynamic Link Library (.DLL) erstellen** aus und klicken Sie anschließend auf **Weiter**.  
   
 4.  Führen Sie auf der zweiten Seite des Assistenten die folgenden Schritte aus:  
   
-    -   Geben Sie den Pfad und den Dateinamen der .dll\-Datei, für die Sie ein Profil erstellen möchten, in das Feld **DLL\-Pfad** ein.  Sie können auch auf die Schaltfläche mit den Auslassungszeichen \(...\) klicken, um die Datei im Dialogfeld **Dynamic Link Library, für die ein Profil erstellt werden soll** zu suchen.  Beachten Sie, dass Sie die Kopie der DLL\-Datei angeben müssen, die durch die ausführbare Datei \(.exe\) gestartet wird, die Sie als Nächstes auswählen.  
+    -   Geben Sie den Pfad und den Namen der DLL-Datei an, deren Profil Sie im **DLL-Pfad** erstellen möchten. Sie können auch auf die Schaltfläche mit den Auslassungspunkten (...) klicken, um die Datei im Dialogfeld **Dynamic Link Library, für die ein Profil erstellt werden soll** zu suchen. Beachten Sie, dass Sie die Kopie der DLL-Datei angeben müssen, die durch die ausführbare Datei (.exe) gestartet wird, die Sie als Nächstes auswählen.  
   
-    -   Geben Sie den Pfad und den Dateinamen der ausführbaren Datei \(.exe\), die die .dll ausführt, in das Feld **Pfad für ausführbare Datei** ein.  Sie können auch auf die Schaltfläche mit den Auslassungszeichen \(...\) klicken, um die Datei im Dialogfeld **Zu startende ausführbare Datei** zu suchen.  
+    -   Geben Sie im **Pfad der ausführbaren Datei** den Pfad und den Namen der ausführbaren Datei (.exe) an, die in der DLL-Datei ausgeführt wird. Sie können auch auf die Schaltfläche mit den Auslassungspunkten (...) klicken, um die Datei im Dialogfeld **Zu startende ausführbare Datei** zu suchen.  
   
-    -   Optional.  Geben Sie im Feld **Befehlszeilenargumente** alle Befehlszeilenargumente ein, die Sie an die ausführbare Datei übergeben möchten.  Falls notwendig, geben Sie das Arbeitsverzeichnis für die Anwendung in **Arbeitsverzeichnis** an.  
+    -   Optional. Geben Sie in **Befehlszeilenargumente** Befehlszeilenargumente an, die an die ausführbare Datei übergeben werden sollen. Geben Sie ggf. in **Arbeitsverzeichnis** das Arbeitsverzeichnis für die Anwendung an.  
   
     -   Klicken Sie auf **Weiter**.  
   
-5.  Wählen Sie **Instrumentation** als Profilerstellungsmethode aus, und klicken Sie dann auf **Weiter**.  
+5.  Wählen Sie **Instrumentation** als Profilerstellungsmethode aus, und klicken Sie anschließend auf **Weiter**.  
   
-6.  Klicken Sie auf **Fertig stellen**, um den Assistenten zu beenden und die neue Leistungssitzung im Fenster **Leistungs\-Explorer**  anzuzeigen.  
+6.  Klicken Sie auf **Fertig stellen**, um den Assistenten zu beenden und um im Fenster **Leistungs-Explorer** die neue Leistungssitzung anzuzeigen.  
   
-7.  Optional.  Um weitere DLL\-Dateien hinzuzufügen, klicken Sie mit der rechten Maustaste auf **Ziele**, und wählen Sie dann **Zielbinärdatei hinzufügen** aus.  Wählen Sie die Dateien im Dialogfeld **Zielbinärdatei hinzufügen** aus.  
+7.  Optional. Klicken Sie mit der rechten Maustaste auf **Ziele** und wählen Sie anschließend **Zielbinärdatei hinzufügen** aus, um weitere DLL-Dateien hinzuzufügen. Wählen Sie die Dateien vom Dialogfeld **Zielbinärdateien hinzufügen** aus.  
   
     > [!NOTE]
-    >  Geben Sie nicht die ausführbare Datei \(EXE\) an, die die DLLs ausführt.  
+    >  Geben Sie nicht die ausführbare Datei (.exe) an, die die DLLs ausführt.  
   
-## Siehe auch  
- [Steuern der Datensammlung](../profiling/controlling-data-collection.md)   
- [Gewusst wie: Beschränken der Instrumentation auf bestimmte Funktionen](../profiling/how-to-limit-instrumentation-to-specific-functions.md)
+## <a name="see-also"></a>Siehe auch  
+ [Steuern der Datenauflistung](../profiling/controlling-data-collection.md)   
+ [Vorgehensweise: Beschränken der Instrumentierung auf bestimmte Funktionen](../profiling/how-to-limit-instrumentation-to-specific-functions.md)

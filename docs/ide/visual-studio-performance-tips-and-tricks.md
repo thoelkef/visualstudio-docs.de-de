@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 173811a4f2d9974755e2432822c801388403ab7c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 936d0df8c838227c5d6c99b0f04f1069eae8a277
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Tipps und Tricks für die Leistung von Visual Studio
 
@@ -36,14 +36,6 @@ Diese die Leistung von Visual Studio betreffenden Empfehlungen sind für Situati
 ## <a name="configure-solution-and-projects"></a>Konfigurieren von Projektmappen und Projekten
 
 Wenn sie eine sehr große Projektmappe mit vielen Projekten haben, können Sie von den folgenden Optimierungen profitieren:
-
-- **Aktivieren des Lightweight-Ladevorgangs für Projektmappen**
-
-    Der **Lightweight-Ladevorgang für Projektmappen** kann die Leistung des Arbeitsspeichers und der CPU verbessern, indem das Laden von einigen Projekten innerhalb einer Projektmappe verzögert wird. Sie können diese Funktion auch projektmappenweise aktivieren. Diese Option ist standardmäßig deaktiviert.
-
-    Um den **Lightweight-Ladevorgang für Projektmappen** zu aktivieren, wählen Sie **Tools > Optionen > Projekte und Projektmappen > Lightweight-Ladevorgang für Projektmappen** aus.
-
-    Einige IDE-Funktionen sind in diesem Modus nicht aktiviert. Um die Nützlichkeit dieser Option zu ermitteln, sollten Sie die Artikel [Shorter solution load time](https://blogs.msdn.microsoft.com/visualstudio/2016/10/11/shorter-solution-load-time-in-visual-studio-15/) (Kürzere Ladezeit für Projektmappen) und [Optimize Solution Loading in Visual Studio](../ide/optimize-solution-loading-in-visual-studio.md) (Optimieren des Ladens von Projektmappen in Visual Studio) lesen.
 
 - **Projekte entladen**
 

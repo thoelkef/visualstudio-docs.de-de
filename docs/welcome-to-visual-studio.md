@@ -4,39 +4,24 @@ ms.custom:
 ms.date: 03/02/2017
 ms.reviewer: 
 ms.suite: 
+ms.technology:
+- vs-ide-general
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- msdnstart
+f1_keywords: msdnstart
 helpviewer_keywords:
 - Visual Studio
 - Visual Studio 2017
 ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
-caps.latest.revision: 125
-author: kempb
-ms.author: kempb
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 8bf0b097be929b30627e0f1139c6e0b145933ab4
-ms.openlocfilehash: 2cf7d1e79ccf79b652dbb730e7ac7fd6a9c984b5
-ms.contentlocale: de-de
-ms.lasthandoff: 05/26/2017
-
+ms.openlocfilehash: 81942228cd8ee30ac8ea990af072ace0ce626c5b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="welcome-to-visual-studio-2017"></a>Willkommen bei Visual Studio 2017!
 Hier finden Sie alles, was Sie zum Erstellen hervorragender Geräte- oder Desktop-Apps für das Web und in der Cloud benötigen. Schreiben Sie Code für iOS, Android, Linux, Windows und andere Plattformen in einer integrierten Entwicklungsumgebung (IDE). Nutzen Sie die interaktive Codehilfe (*IntelliSense*), einfache Codenavigation und Debugging, schnelle Builds und rasche Bereitstellung. Visual Studio steigert Ihre Produktivität und erleichtert Ihre Arbeit allein oder als Teil eines größeren Teams.  
@@ -120,4 +105,3 @@ Unter [Visual Studio SDK](extensibility/visual-studio-sdk.md)finden Sie die neue
 Sie können die .NET Compiler Platform (Roslyn) zum Schreiben eigener Code-Analyzer und Code-Generatoren verwenden. Unter [Roslyn](https://github.com/dotnet/Roslyn)finden Sie alles Nötige.  
 
 Suchen Sie nach [vorhandenen Erweiterungen für die Visual Studio-IDE](https://visualstudiogallery.msdn.microsoft.com/) , die von Microsoft-Entwicklern sowie unserer Entwicklungs-Community erstellt wurden.  
-

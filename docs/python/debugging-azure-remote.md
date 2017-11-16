@@ -1,27 +1,24 @@
 ---
 title: Azure-Remotedebuggen mit Python in Visual Studio | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 7/12/2017
+ms.date: 07/12/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: d68fdc53-65a1-423c-8964-9815dbb3387e
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 1ce80ecdc38075b048c8ae0a7f5773de965355f5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: a4ddd2d52aa1a1e4437c0d1f7821761700c2a91e
-ms.contentlocale: de-de
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="remotely-debugging-python-code-on-azure"></a>Remotedebuggen von Python-Code in Azure
 
 [Die Python-Unterstützung in Visual Studio](installation.md) umfasst die Möglichkeit, Python-Code, der in Azure App Service ausgeführt wird, remote zu debuggen. Anders als beim einfachen Remotedebuggen kann in diesem Szenario nicht direkt über TCP auf den Zielcomputer zugegriffen werden. Daher stellt Visual Studio einen Proxy bereit, der das Debuggerprotokoll über HTTP verfügbar macht. Projekte, die mithilfe der Webvorlage erstellt wurden, konfigurieren diesen Proxy automatisch in der generierten `web.debug.config`-Datei. Das Remotedebuggen wird auch aktiviert, wenn Sie eine Debugkonfiguration Ihres Projekts veröffentlichen, wie unter [Veröffentlichen in Azure App Service](template-web.md#publishing-to-azure-app-service) beschrieben.
@@ -55,4 +52,3 @@ Die nun benötigte URL weist die Form `wss://<secret>@<site_name>.azurewebsites.
 Um den Debugger anzufügen, wählen Sie **Debuggen > An den Prozess anhängen** aus, wählen Sie in der Dropdownliste **Transport** die Option **Python-Remotedebuggen** aus, geben Sie die URL in das Textfeld **Qualifizierer** ein, und drücken Sie die EINGABETASTE. Wenn Visual Studio eine Verbindung mit App Service herstellen kann, wird in der Liste ein einzelner Python-Prozess angezeigt. Wählen Sie den Prozess aus, und klicken Sie auf **Anfügen**, um das Debuggen zu starten:
 
 ![Verwenden des Dialogfelds „An den Prozess anhängen“ zum Anfügen an eine Azure-Website](media/azure-remote-debugging-manual-attach.png)
-

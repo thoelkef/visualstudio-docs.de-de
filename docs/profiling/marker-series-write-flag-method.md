@@ -1,30 +1,29 @@
 ---
-title: "marker_series::write_flag-Methode | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "cvmarkersojb/Concurrency::diagnostic::marker_series::write_flag"
-helpviewer_keywords: 
-  - "Concurrency::diagnostic::marker_series::write_flag-Methode"
+title: marker_series::write_flag-Methode | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: cvmarkersojb/Concurrency::diagnostic::marker_series::write_flag
+helpviewer_keywords: Concurrency::diagnostic::marker_series::write_flag method
 ms.assetid: ca07f388-e5d5-46fd-b991-fe6e9029a68f
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c50ce91ca1759d6d4768dec2a487e2ca169b2d64
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# marker_series::write_flag-Methode
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Schreibt ein Flag in die Parallelitätsschnellansichts\-Ablaufverfolgungsdatei.  
+# <a name="markerserieswriteflag-method"></a>marker_series::write_flag-Methode
+Schreibt ein Flag in die Ablaufverfolgungsdatei der Nebenläufigkeitsschnellansicht  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 void write_flag(  
@@ -49,9 +48,9 @@ void write_flag(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `_Format`  
- Eine kombinierte Formatzeichenfolge, die Text vermischte mit null\) enthält oder mehr Formatelementen, die den Objekten in der Argumentliste entsprechen.  
+ Eine zusammengesetzte Formatzeichenfolge mit Text, der 0 oder mehr Formatelemente enthält, die Objekten in der Argumentliste entsprechen.  
   
  `_Importance`  
  Wichtigkeitsstufe.  
@@ -59,10 +58,10 @@ void write_flag(
  `_Category`  
  Kategorie.  
   
-## Anforderungen  
- **Header:**  cvmarkersobj.h  
+## <a name="requirements"></a>Anforderungen  
+ **Header:** cvmarkersobj.h  
   
- **Namespace:**  Concurrency::diagnostic  
+ **Namespace:** Concurrency::diagnostic  
   
-## Siehe auch  
- [marker\_series\-Klasse](../profiling/marker-series-class.md)
+## <a name="see-also"></a>Siehe auch  
+ [marker_series-Klasse](../profiling/marker-series-class.md)

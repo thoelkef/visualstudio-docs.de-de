@@ -1,59 +1,59 @@
 ---
-title: "Das Fenster &quot;Leistungs-Explorer&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performanceexplorer"
-  - "vs.performance.explorer"
-helpviewer_keywords: 
-  - "Leistungstools, Leistungs-Explorer"
+title: "Das Fenster „Leistungs-Explorer“ | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.performanceexplorer
+- vs.performance.explorer
+helpviewer_keywords: performance tools, Performance Explorer
 ms.assetid: cb6a6efc-93a5-49a2-8d03-6969b5f3b6d7
-caps.latest.revision: 20
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 20
+caps.latest.revision: "20"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e6fc3be33c332d643e5feb48f4a3733395c2a608
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Das Fenster &quot;Leistungs-Explorer&quot;
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Das Fenster **Leistungs\-Explorer** der in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung \(IDE\), können Sie Leistungssitzungen zu konfigurieren und starten, indem die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] \- Profilerstellungstools verwendet.  
+# <a name="performance-explorer-window"></a>Das Fenster "Leistungs-Explorer"
+Im Fenster **Leistungs-Explorer** in der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-integrierten Entwicklungsumgebung (IDE) können Sie mit den [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools Leistungssitzungen konfigurieren und starten.  
   
- **Voraussetzungen**  
+ **Anforderungen**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
-## Symbolleiste des Leistungs\-Explorers  
- Die folgenden Optionen sind auf der Symbolleiste **Leistungs\-Explorer** verfügbar:  
+## <a name="performance-explorer-toolbar"></a>Die Symbolleiste „Leistungs-Explorer“  
+ Die folgenden Optionen sind auf der Symbolleiste **Leistungs-Explorer** verfügbar:  
   
--   **Leistungs\-Assistenten starten** \- Öffnet den Leistungs\-Assistenten, um dem Fenster Leistungs\-Explorer eine neue Leistungssitzung hinzuzufügen.  
+-   **Leistung-Assistenten starten**: Zeigt die Leistung-Assistenten an, um eine neue Leistungssitzung zum Leistungs-Explorer-Fenster hinzuzufügen.  
   
--   **Neue Leistungssitzung** \- fügt dem Fenster Leistungs\-Explorer eine leere Leistungssitzung hinzu.  
+-   **New Performance Session**: Fügt dem Leistungs-Explorer-Fenster eine leere Leistungssitzung hinzu.  
   
--   **Starten** – Mit der Befehlsschaltflächenliste **Starten** können Sie die Zielanwendung starten, für die die Profilerstellung sofort aktiviert \(**Mit Profilerstellung starten**\) oder angehalten \(**Mit angehaltener Profilerstellung starten**\) wird.  
+-   **Start**: Mit der **Start** Befehlsschaltfläche können Sie die Anwendung starten, die die Profilerstellung sofort aktiviert (**Mit Profilerstellung starten**) oder sie anhält (**Mit angehaltener Profilerstellung starten**).  
   
--   **Methode** \- gibt an, ob die Profilerstellungsmethode der Sitzung Sampling oder Instrumentation ist.  
+-   **Methode**: Gibt an, ob die Profilerstellungsmethode der Sitzung Eine Beispiel- oder Instrumentierungsmethode ist.  
   
--   **Beenden** \- beendet die Zielanwendung und den Profiler sofort.  
+-   **Beenden Sie**: Beendet die Anwendung und den Profiler sofort.  
   
--   **Anfügen\/Trennen** \- öffnet das Dialogfeld **Profiler an Prozess anfügen**, in dem Sie einen laufenden Prozess auswählen können, an den der Profiler angefügt werden soll.  
+-   **Anfügen/Trennen**: Zeigt das Dialogfeld **Profiler an Prozess anfügen** an, damit Sie einen laufenden Prozess auswählen können, an den Sie den Profiler anfügen.  
   
-## Das Fenster "Leistungs\-Explorer"  
- Das Fenster **Leistungs\-Explorer** enthält eine Strukturansicht, in der die Binärdateien und Berichtsdatendateien einer oder mehrerer Leistungssitzungen angezeigt werden.  
+## <a name="performance-explorer-window"></a>Das Fenster "Leistungs-Explorer"  
+ Das Fenster **Leistungs-Explorer** enthält eine Strukturansicht, in dem die Binärdateien und Berichtsatendateien von einer oder mehreren Leistungssitzungen angezeigt werden.  
   
--   **Sitzungsname** \- Der Stamm der Strukturansicht enthält den Namen der Sitzung.  Klicken Sie mit der rechten Maustaste auf den Sitzungsnamen, um die Sitzungseigenschaften festzulegen oder die Zielanwendung und den Profiler zu starten.  
+-   **Der Sitzungsname**: Der Stamm der Strukturansicht enthält den Namen der Sitzung. Mit der rechten Maustaste auf den Sitzungsnamen klicken, um die Sitzungseigenschaften einzurichten, oder die Zielanwendung und den Profiler zu starten.  
   
--   **Ziele** \- Zeigt die Namen der Binärdateien an, für die in der Sitzung ein Profil erstellt werden soll.  Klicken Sie mit der rechten Maustaste auf **Ziele**, um eine Binärdatei, ein [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-Projekt oder eine Website hinzuzufügen oder zu entfernen.  Klicken Sie mit der rechten Maustaste auf einen Zielnamen, um Eigenschaften für die jeweilige Binärdatei festzulegen.  
+-   **Ziele**: Zeigt die Namen der Binärdateien an, für die in der Sitzung ein Profil erstellt werden. Klicken Sie mit der rechten Maustaste auf **Ziele**, um eine Binärdatei, ein [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projekt oder eine Website hinzufügen oder entfernen. Klicken Sie mit der rechten Maustaste auf einen Zielnamen, um Eigenschaften für die jeweilige Binärdatei festzulegen.  
   
--   **Berichte** \- zeigt die Namen von Profiler\-Datendateien an, die für die Sitzung generiert werden.  Klicken Sie mit der rechten Maustaste auf **Berichte**, um einen vorhandenen Bericht hinzuzufügen oder zwei Profiler\-Datendateien zu vergleichen.  Klicken Sie mit der rechten Maustaste auf einen Berichtsnamen, um eine Profiler\-Datendatei zu öffnen, zu entfernen oder zu exportieren.  
+-   **Berichte**: Zeigt die Namen von Profilerstellungsdatendateien an, die für die Sitzung generiert werden. Klicken Sie mit der rechten Maustaste auf **Berichte**, um einen vorhandenen Bericht hinzuzufügen oder zwei Profiler-Datendateien zu vergleichen. Klicken Sie mit der rechten Maustaste auf einen Berichtsnamen, um eine Profilerstellungsdatendatei zu öffnen, entfernen oder exportieren.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Übersichten](../profiling/overviews-performance-tools.md)   
  [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)   
- [Steuern der Datensammlung](../profiling/controlling-data-collection.md)
+ [Steuern der Datenauflistung](../profiling/controlling-data-collection.md)

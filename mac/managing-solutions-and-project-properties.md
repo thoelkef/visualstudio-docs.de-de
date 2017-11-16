@@ -1,20 +1,19 @@
 ---
-title: Verwalten von Projekt- und Projektmappeneigenschaften
+title: Verwalten von Projekt- und Projektmappeneigenschaften | Microsoft-Dokumentation
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 75247EB8-323A-4AFD-A451-6703A03D5D1F
+ms.openlocfilehash: 8871ab002a94a9c0bbc0063a25b4dea9cb271142
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: fefb6c5e67b21907150611b3639cc16c05812e1a
-ms.contentlocale: de-de
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="managing-project-and-solution-properties"></a>Verwalten von Projekt- und Projektmappeneigenschaften
 
-## <a name="project-options"></a>Projektoptionen 
+## <a name="project-options"></a>Projektoptionen
 
 Die Projektoptionen sind für jedes Projekt spezifisch und beeinflussen, wie das Projekt geschrieben, erstellt und ausgeführt wird. Dies steht im Gegensatz zu den Einstellungen für Visual Studio für Mac, die benutzerdefinierte Optionen festlegen und zu den Projektmappenoptionen, die Optionen für die gesamte Projektmappe festlegen. Projektoptionen werden in der Projektdatei (.csproj) gespeichert, sodass andere Entwickler das Projekt ordnungsgemäß erstellen und ausführen können. Dadurch können viele Entwickler am gleichen Dokument arbeiten, ohne die Formatierung der Datei zu beeinträchtigen.
 
@@ -45,4 +44,3 @@ Xamarin.iOS enthält Optionen, die sich auf die Bundlesignierung beziehen, zum B
 Projektmappenoptionen sind wie Projektoptionen, sie decken jedoch den Bereich ganzer Projektmappen ab. Sie stellen Möglichkeiten zum Festlegen von Autorinformationen, Erstellen von Einstellungen sowie Formatierungsstile für Code und Versionskontrolle bereit. Außerdem ermöglichen Sie das Zuweisen des Startprojekts zur Projektmappe.  Auf das Dialogfeld für Projektmappenoptionen kann über das Menüelement **Project > Solution Options** (Projekt > Projektmappenoptionen) , über das Kontextmenüelement **Optionen** im Projektmappenpad der Projektmappe oder durch Doppelklicken auf die Projektmappe im Projektmappenpad zugegriffen werden:
 
  ![Projektmappenoptionen](media/projects-and-solutions-image7.png)
-

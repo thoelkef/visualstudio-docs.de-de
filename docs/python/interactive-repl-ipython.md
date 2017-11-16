@@ -1,27 +1,24 @@
 ---
 title: IPython-REPL in Visual Studio | Microsoft-Dokumentation
 ms.custom: 
-ms.date: 7/13/2017
+ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c9bd06b0-2021-4e55-b933-8346476224a8
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: fce859ff47d28a7de44c63f5dd4e52cfb58478f1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 9553aa4944f652c7b8505b0d99d5c2b88167f872
-ms.contentlocale: de-de
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="using-ipython-in-the-interactive-window"></a>Verwenden von IPython im interaktiven Fenster
 
 Das interaktive Visual Studio-Fenster im IPython-Modus ist eine erweiterte, dennoch benutzerfreundliche interaktive Entwicklungsumgebung, die über Interactive Parallel Computing-Features verfügt. Dieses Thema führt Sie durch die Verwendung von IPython im interaktiven Visual Studio-Fenster. In diesem sind alle regulären Funktionen von [interactive windows (interaktiven Fenster)](interactive-repl.md) ebenfalls verfügbar.
@@ -87,4 +84,3 @@ IPython verfügt über viele weitere nützliche Features, wie z.B. Escapevorgang
 - Wenn Sie Jupyter einfach und ohne Installation verwenden möchten, testen Sie den [Azure Notebooks hosted service (gehosteten Azure-Dienst für Notebooks)](https://notebooks.azure.com/), um Ihre Notebooks zu verwalten und mit anderen zu teilen.
 
 - Sie können Jupyter (ehemals IPython) auch auf Ihrem eigenen virtuellen Computer (Windows oder Linux) auf Azure ausführen. Weitere Informationen finden Sie unter [Creating an Azure VM. installing Jupyter, and running Jupyter Notebook on Azure (Erstellen einer Azure-VM, Installieren von Jupyter und Ausführen von Jupyter-Notebook in Azure)](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-jupyter-notebook).
-

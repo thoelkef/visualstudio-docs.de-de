@@ -1,226 +1,226 @@
 ---
-title: "Gewusst wie: Bearbeiten von Web.Config-Dateien zur Instrumentierung und Profilerstellung f&#252;r dynamisch kompilierte ASP.NET-Webanwendungen | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Vorgehensweise: Bearbeiten von Web.Config-Dateien zur Instrumentierung und Profilerstellung für dynamisch kompilierte ASP.NET-Webanwendungen | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: a92e5692-2183-4ae3-9431-b067c6a7aab4
-caps.latest.revision: 13
-caps.handback.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6b6556c2b1dc486754bb4dff0dc73e6f19263a6c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Bearbeiten von Web.Config-Dateien zur Instrumentierung und Profilerstellung f&#252;r dynamisch kompilierte ASP.NET-Webanwendungen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Sie können die Instrumentationsmethode der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-Profilerstellungstools zum Sammeln ausführlicher Zeitsteuerungsdaten, .NET\-Speicherbelegungsdaten und .NET\-Objektlebensdauerdaten aus dynamisch kompilierten [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]\-Webanwendungen verwenden.  
+# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Gewusst wie: Bearbeiten von Web.Config-Dateien zur Instrumentierung und Profilerstellung für dynamisch kompilierte ASP.NET-Webanwendungen
+Sie können die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungs-Instrumentierungsmethode verwenden, um detaillierte Zeitsteuerdaten, .NET-Speicherbelegungsdaten und .NET-Objektlebensdauerdaten von dynamisch kompilierten [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendungen zu sammeln.  
   
- In diesem Thema wird beschrieben, wie die Konfigurationsdatei "web.config" geändert wird, um die Instrumentation und die Profilerstellung von [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]\-Webanwendungen zu aktivieren.  
+ In diesem Thema wird beschrieben, wie die Konfigurationsdatei „web.config“ zum Aktivieren der Instrumentierung und Profilerstellung von [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendungen geändert werden kann.  
   
 > [!NOTE]
->  Es ist nicht erforderlich, die Datei "web.config" zu ändern, wenn Sie die Samplingprofilerstellungsmethode verwenden oder wenn Sie ein vorkompiliertes [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]\-Modul instrumentieren möchten.  
+>  Wenn Sie die Profilerstellungsmethode durch Sampling verwenden oder Sie ein vorkompiliertes Modul [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] instrumentieren möchten, brauchen Sie die web.config-Datei nicht zu ändern.  
   
- Das Stammelement einer web.config\-Datei ist das **configuration**\-Element.  Zum Instrumentieren und Profilieren einer dynamisch kompilierten [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]\-Webanwendung, müssen Sie die folgenden Elemente hinzufügen oder ändern:  
+ Der Stamm einer web.config-Datei ist das Element **configuration**. Sie müssen zum Instrumentieren und Erstellen eines Profils von einer dynamisch kompilierten [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendung folgende Elemente ändern oder hinzufügen:  
   
--   Ein **configuration\/runtime\/assemblyBinding\/dependentAssembly**\-Element, das die Microsoft.VisualStudio.Enterprise.ASPNetHelper\-Assembly identifiziert, die die Profilerstellung steuert.  Das **dependentAssembly**\-Element enthält zwei untergeordnete Elemente: **assemblyIdentity** und **codeBase**.  
+-   Ein Element **configuration/runtime/assemblyBinding/dependentAssembly**, das das Microsoft.VisualStudio.Enterprise.ASPNetHelper-Assembly identifiziert, das die Profilerstellung steuert. Das Element **dependentAssembly** enthält zwei untergeordnete Elemente: **assemblyIdentity** und **codeBase**.  
   
--   Ein **configuration\/system.web\/compilation**\-Element, das den Nachbearbeitungskompilierungsschritt des Profilers für die Zielassembly identifiziert.  
+-   Ein Element **configuration/system.web/compilation**, das den Schritt der Profilernachbearbeitungskompilierung für die Ziel-Assembly identifiziert.  
   
--   Dem Abschnitt **configuration\/appSettings** werden zwei **add**\-Elemente hinzugefügt, die den Speicherort der Profilerstellungstools identifizieren.  
+-   Zwei Elemente **add**, die den Speicherort der Tools „Profilerstellungstools“ identifizieren, werden zum Abschnitt **configuration/appSettings** hinzugefügt.  
   
- Es empfiehlt sich, eine Kopie der ursprünglichen web.config\-Datei zu erstellen, mit der Sie die Konfiguration der Anwendung wiederherstellen können.  
+ Sie sollten eine Kopie der originalen web.config-Datei erstellen, mit der Sie die Konfiguration der Anwendung wiederherstellen können.  
   
-### So fügen Sie die ASPNetHelper\-Assembly als configuration\/runtime\/assemblyBinding\/dependentAssembly\-Element hinzu  
+### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>So fügen Sie die ASPNetHelper-Assembly als Element „configuration/runtime/assemblyBinding/dependentAssembly“ ein  
   
-1.  Fügen Sie das **runtime**\-Element als untergeordnetes Element des **configuration**\-Elements hinzu, falls notwendig; wechseln Sie andernfalls zum nächsten Schritt.  
+1.  Fügen Sie, wenn notwendig, das Element **Runtime** als untergeordnetes Element des Elements **configuration** ein. Ansonsten fahren Sie mit dem nächsten Schritt fort.  
   
-     Das **runtime**\-Element weist keine Attribute auf.  Das **configuration**\-Element darf nur ein untergeordnetes **runtime**\-Element enthalten.  
+     Das Element **Runtime** weist keine Attribute auf. Das Element **configuration** kann nur ein untergeordnetes Element **Runtime** haben.  
   
-2.  Fügen Sie ggf. das **assemblyBinding**\-Element als untergeordnetes Element des **runtime**\-Elements hinzu; fahren Sie andernfalls mit dem nächsten Schritt fort.  
+2.  Fügen Sie, wenn notwendig, das Element **assemblyBinding** als untergeordnetes Element des Elements **Runtime** ein. Ansonsten fahren Sie mit dem nächsten Schritt fort.  
   
-     Das **runtime**\-Element darf nur ein **assemblyBinding**\-Element enthalten.  
+     Das Element **Runtime** kann nur ein Element **assemblyBinding** haben.  
   
-3.  Fügen Sie dem **assemblyBinding**\-Element den folgenden Attributnamen und \-wert hinzu:  
-  
-    |Attributname|Attributwert|  
-    |------------------|------------------|  
-    |**Xmlns**|**urn:schemas\-microsoft\-com:asm.v1**|  
-  
-4.  Fügen Sie ein **dependentAssembly**\-Element als untergeordnetes Element des **assemblyBinding**\-Elements hinzu.  
-  
-     Das **dependentAssembly**\-Element weist keine Attribute auf.  
-  
-5.  Fügen Sie ein **assemblyIdentity**\-Element als untergeordnetes Element des **dependentAssembly**\-Elements hinzu.  
-  
-6.  Fügen Sie dem **assemblyIdentity**\-Element die folgenden Attributnamen und \-werte hinzu:  
+3.  Fügen Sie den folgenden Attributnamen und -wert zum Element **assemblyBinding** hinzu:  
   
     |Attributname|Attributwert|  
-    |------------------|------------------|  
+    |--------------------|---------------------|  
+    |**Xmlns**|**urn:schemas-microsoft-com:asm.v1**|  
+  
+4.  Fügen Sie ein Element **dependentAssembly** als untergeordnetes Element des Elements **assemblyBinding** ein.  
+  
+     Das Element **dependentAssembly** weist keine Attribute auf.  
+  
+5.  Fügen Sie ein Element **assemblyIdentity** als untergeordnetes Element des Elements **dependentAssembly** ein.  
+  
+6.  Fügen Sie den folgenden Attributnamen und -wert zum Element **assemblyIdentity** hinzu:  
+  
+    |Attributname|Attributwert|  
+    |--------------------|---------------------|  
     |**name**|**Microsoft.VisualStudio.Enterprise.ASPNetHelper**|  
     |**PublicKeyToken**|**b03f5f7f11d50a3a**|  
     |**culture**|**Neutral**|  
   
-7.  Fügen Sie ein **codeBase**\-Element als untergeordnetes Element des **dependentAssembly**\-Elements hinzu.  
+7.  Fügen Sie ein Element **codeBase** als untergeordnetes Element des Elements **dependentAssembly** ein.  
   
-8.  Fügen Sie dem **codeBase**\-Element die folgenden Attributnamen und \-werte hinzu:  
+8.  Fügen Sie den folgenden Attributnamen und -wert zum Element **codeBase** hinzu:  
   
     |Attributname|Attributwert|  
-    |------------------|------------------|  
+    |--------------------|---------------------|  
     |**version**|**10.0.0.0**|  
     |**href**|`PathToASPNetHelperDll`|  
   
-     `PathToASPNetHelperDll` ist die Datei\-URL von Microsoft.VisualStudio.Enterprise.ASPNetHelper.dll.  Wenn [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] am Standardspeicherort installiert ist, sollte der **href**\-Wert `C:/Program%20Files/Microsoft%20Visual%20Studio%202010.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.Enterprise.ASPNetHelper.DLL` lauten.  
+     `PathToASPNetHelperDll` ist die Datei-URL von Microsoft.VisualStudio.Enterprise.ASPNetHelper.dll. Wenn [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] am Standardspeicherort installiert ist, sollte der Wert **href** `C:/Program%20Files/Microsoft%20Visual%20Studio%202010.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.Enterprise.ASPNetHelper.DLL` entsprechen  
   
 ```  
-    <configuration>  
-        <runtime>  
-            <assemblyBinding   
-                xmlns="urn:schemas-microsoft-com:asm.v1"  
-            >  
-                <dependentAssembly>  
-                    <assemblyIdentity                         name="Microsoft.VisualStudio.Enterprise.ASPNetHelper"   
-                        publicKeyToken="b03f5f7f11d50a3a"                         culture="neutral"   
-                    />  
-                    <codeBase   
-                        version="10.0.0.0"  
-                        href="file:///C:/Program%20Files/Microsoft%20Visual%20Studio%2010.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.Enterprise.ASPNetHelper.DLL"   
-                    />  
-                </dependentAssembly>  
-            </assemblyBinding>  
-        </runtime>  
+    <configuration>  
+        <runtime>  
+            <assemblyBinding   
+                xmlns="urn:schemas-microsoft-com:asm.v1"  
+            >  
+                <dependentAssembly>  
+                    <assemblyIdentity                         name="Microsoft.VisualStudio.Enterprise.ASPNetHelper"   
+                        publicKeyToken="b03f5f7f11d50a3a"                         culture="neutral"   
+                    />  
+                    <codeBase   
+                        version="10.0.0.0"  
+                        href="file:///C:/Program%20Files/Microsoft%20Visual%20Studio%2010.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.Enterprise.ASPNetHelper.DLL"   
+                    />  
+                </dependentAssembly>  
+            </assemblyBinding>  
+        </runtime>  
 ```  
   
-### So fügen Sie dem configuration\/system.web\/compilation\-Element den Nachbearbeitungsschritt des Profilers hinzu  
+### <a name="to-add-the-profiler-post-process-step-to-the-configurationsystemwebcompilation-element"></a>So fügen Sie den Profilernachbearbeitungsschritt zum Element „configuration/system.web/compilation“ hinzu  
   
-1.  Fügen Sie das **system.web**\-Element als untergeordnetes Element des **configuration**\-Elements hinzu, falls notwendig; wechseln Sie andernfalls zum nächsten Schritt.  
+1.  Fügen Sie, wenn notwendig, das Element **system.web** als untergeordnetes Element des Elements **configuration** ein. Ansonsten fahren Sie mit dem nächsten Schritt fort.  
   
-     Das **system.web**\-Element weist keine Attribute auf.  Das **configuration**\-Element darf nur ein untergeordnetes **system.web**\-Element enthalten.  
+     Das Element **system.web** weist keine Attribute auf. Das Element **configuration** kann nur ein untergeordnetes Element **system.web** haben.  
   
-2.  Fügen Sie ggf. das **compilation**\-Element als untergeordnetes Element des **system.web**\-Elements hinzu; fahren Sie andernfalls mit dem nächsten Schritt fort.  
+2.  Fügen Sie, wenn notwendig, das Element **compilation** als untergeordnetes Element des Elements **system.web** ein. Ansonsten fahren Sie mit dem nächsten Schritt fort.  
   
-     Das **system.web**\-Element darf nur ein untergeordnetes **compilation**\-Element enthalten.  
+     Das Element **system.web** kann nur ein untergeordnetes Element **compilation** haben.  
   
-3.  Entfernen Sie alle vorhandenen Attribute aus dem **compilation**\-Element, und fügen Sie den folgenden Attributnamen und \-wert hinzu:  
+3.  Entfernen Sie alle vorhandenen Attribute aus dem Element **compilation**, und fügen Sie den folgenden Attributnamen und -wert hinzu:  
   
     |Attributname|Attributwert|  
-    |------------------|------------------|  
-    |**assemblyPostProcessorType**|**Microsoft.VisualStudio.Enterprise.Common.AspPerformanceInstrumenter, Microsoft.VisualStudio.Enterprise.ASPNetHelper, Version\=10.0.0.0, Culture\=neutral, PublicKeyToken\=b03f5f7f11d50a3a**|  
+    |--------------------|---------------------|  
+    |**assemblyPostProcessorType**|**Microsoft.VisualStudio.Enterprise.Common.AspPerformanceInstrumenter, Microsoft.VisualStudio.Enterprise.ASPNetHelper, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a**|  
   
 ```  
-    <configuration>  
-        <runtime>  
-        . . .  
-        </runtime>  
-        <system.web>  
-            <compilation  
-                assemblyPostProcessorType="Microsoft.VisualStudio.Enterprise.Common.AspPerformanceInstrumenter,  
-                    Microsoft.VisualStudio.Enterprise.ASPNetHelper,  
-                    Version=10.0.0.0,  
-                    Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"   
-            />  
-        </system.web>  
-    <configuration>  
+    <configuration>  
+        <runtime>  
+        . . .  
+        </runtime>  
+        <system.web>  
+            <compilation  
+                assemblyPostProcessorType="Microsoft.VisualStudio.Enterprise.Common.AspPerformanceInstrumenter,  
+                    Microsoft.VisualStudio.Enterprise.ASPNetHelper,  
+                    Version=10.0.0.0,  
+                    Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"   
+            />  
+        </system.web>  
+    <configuration>  
 ```  
   
-### So fügen Sie dem configuration\/appSettings\-Element Profilerspeicherorteinstellungen hinzu  
+### <a name="to-add-profiler-location-settings-to-the-configurationappsettings-element"></a>So fügen Sie Profiler-Speicherorteinstellungen zum Element „configuration/appSettings“ hinzu  
   
-1.  Fügen Sie ggf. das **appSettings**\-Element als untergeordnetes Element des **configuration**\-Elements hinzu; fahren Sie andernfalls mit dem nächsten Schritt fort.  
+1.  Fügen Sie, wenn notwendig, das Element **appSettings** als untergeordnetes Element des Elements **configuration** ein. Ansonsten fahren Sie mit dem nächsten Schritt fort.  
   
-     Das **appSettings**\-Element weist keine Attribute auf.  Das **configuration**\-Element darf nur ein untergeordnetes **appSettings**\-Element enthalten.  
+     Das Element **appSettings** weist keine Attribute auf. Das Element **configuration** kann nur ein untergeordnetes Element **appSettings** haben.  
   
-2.  Fügen Sie ein **add**\-Element als untergeordnetes Element des **appSettings**\-Elements hinzu.  
+2.  Fügen Sie ein Element **add** als untergeordnetes Element des Elements **appSettings** hinzu.  
   
-3.  Fügen Sie dem **add**\-Element die folgenden Attributnamen und \-werte hinzu:  
+3.  Fügen Sie den folgenden Attributnamen und -wert zum Element **add** hinzu:  
   
     |Attributname|Attributwert|  
-    |------------------|------------------|  
+    |--------------------|---------------------|  
     |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation**|  
-    |**value**|`PerformanceToolsFolder` **\\VSInstr.Exe**|  
+    |**value**|`PerformanceToolsFolder` **\VSInstr.Exe**|  
   
-4.  Fügen Sie ein anderes **add**\-Element als untergeordnetes Element des **appSettings**\-Elements hinzu.  
+4.  Fügen Sie ein weiteres Element **add** als untergeordnetes Element des Elements **appSettings** hinzu.  
   
-5.  Fügen Sie diesem **add**\-Element die folgenden Attributnamen und \-werte hinzu:  
+5.  Fügen Sie den folgenden Attributnamen und -wert zu diesem Element **add** hinzu:  
   
     |Attributname|Attributwert|  
-    |------------------|------------------|  
+    |--------------------|---------------------|  
     |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|  
     |**value**|`PerformanceToolsFolder`|  
   
-     `PerformanceToolsFolder` ist der Pfad der ausführbaren Profilerdateien.  Wenn [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] am Standardspeicherort installiert ist, lautet der Wert **C:\\Program Files\\Microsoft Visual Studio 10.0\\Team Tools\\Performance Tools**  
+     `PerformanceToolsFolder` ist der Pfad der ausführbaren Profilerdatei. Wenn [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] installiert ist im Standardspeicherort installiert ist, entspricht der Wert **C:\Program Files\Microsoft Visual Studio 10.0 \Team Tools\Performance Tools**  
   
 ```  
-    <configuration>  
-        <runtime>  
-        . . .  
-        </runtime>  
-        . . .  
-        <system.web>  
-        </system.web>  
-        <appSettings>  
-            <add  
-                key="Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation"  
-                value="C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\vsinstr.exe"  
-        />  
-            <add  
-                key="Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools"  
-                value="C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\"  
-            />  
-        </appSettings>  
-    </configuration>  
+    <configuration>  
+        <runtime>  
+        . . .  
+        </runtime>  
+        . . .  
+        <system.web>  
+        </system.web>  
+        <appSettings>  
+            <add  
+                key="Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation"  
+                value="C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\vsinstr.exe"  
+        />  
+            <add  
+                key="Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools"  
+                value="C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\"  
+            />  
+        </appSettings>  
+    </configuration>  
 ```  
   
-## Beispiel  
- Im Folgenden ist eine vollständige web.config\-Datei dargestellt, die die Instrumentation und Profilerstellung dynamisch kompilierter [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]\-Webanwendungen ermöglicht.  In diesem Beispiel wird davon ausgegangen, dass keine anderen Einstellungen in der Datei vor der Änderung vorhanden waren.  
+## <a name="example"></a>Beispiel  
+ Im Folgenden finden Sie eine vollständige web.config-Datei, die die Instrumentierung und Profilerstellung von dynamisch kompilierten [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Webanwendungen ermöglicht. In diesem Beispiel wird davon ausgegangen, dass es keine anderen Einstellungen in der Datei vor der Änderung gab.  
   
 ```  
 <?xml version="1.0"?>  
-    <configuration>  
-        <runtime>  
-            <assemblyBinding   
-                xmlns="urn:schemas-microsoft-com:asm.v1"  
-            >  
-                <dependentAssembly>  
-                    <assemblyIdentity   
-                        name="Microsoft.VisualStudio.Enterprise.ASPNetHelper"   
-                        publicKeyToken="b03f5f7f11d50a3a"  
-                        culture="neutral"   
-                    />  
-                    <codeBase   
-                        version="10.0.0.0"  
-                        href="file:///C:/Program%20Files/Microsoft%20Visual%20Studio%2010.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.Enterprise.ASPNetHelper.DLL"   
-                    />  
-                </dependentAssembly>  
-            </assemblyBinding>  
-        </runtime>  
-        <system.web>  
-            <compilation  
-                assemblyPostProcessorType="Microsoft.VisualStudio.Enterprise.Common.AspPerformanceInstrumenter,  
-                    Microsoft.VisualStudio.Enterprise.ASPNetHelper,  
-                    Version=10.0.0.0,  
-                    Culture=neutral,  
-                    PublicKeyToken=b03f5f7f11d50a3a"   
-            />  
-        </system.web>  
-        <appSettings>  
-            <add  
-                key="Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation"  
-                value="C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\vsinstr.exe"  
-            />  
-            <add  
-                key="Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools"  
-                value="C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\"  
-            />  
-        </appSettings>  
-    </configuration>  
+    <configuration>  
+        <runtime>  
+            <assemblyBinding   
+                xmlns="urn:schemas-microsoft-com:asm.v1"  
+            >  
+                <dependentAssembly>  
+                    <assemblyIdentity   
+                        name="Microsoft.VisualStudio.Enterprise.ASPNetHelper"   
+                        publicKeyToken="b03f5f7f11d50a3a"  
+                        culture="neutral"   
+                    />  
+                    <codeBase   
+                        version="10.0.0.0"  
+                        href="file:///C:/Program%20Files/Microsoft%20Visual%20Studio%2010.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.Enterprise.ASPNetHelper.DLL"   
+                    />  
+                </dependentAssembly>  
+            </assemblyBinding>  
+        </runtime>  
+        <system.web>  
+            <compilation  
+                assemblyPostProcessorType="Microsoft.VisualStudio.Enterprise.Common.AspPerformanceInstrumenter,  
+                    Microsoft.VisualStudio.Enterprise.ASPNetHelper,  
+                    Version=10.0.0.0,  
+                    Culture=neutral,  
+                    PublicKeyToken=b03f5f7f11d50a3a"   
+            />  
+        </system.web>  
+        <appSettings>  
+            <add  
+                key="Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation"  
+                value="C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\vsinstr.exe"  
+            />  
+            <add  
+                key="Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools"  
+                value="C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\"  
+            />  
+        </appSettings>  
+    </configuration>  
   
 ```  
   
-## Siehe auch  
- [Gewusst wie: Instrumentieren einer dynamisch kompilierten ASP.NET\-Anwendung und Sammeln von ausführlichen Zeitsteuerungsdaten](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)   
- [Gewusst wie: Instrumentieren einer dynamisch kompilierten ASP.NET\-Anwendung und Sammeln von Speicherdaten](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)
+## <a name="see-also"></a>Siehe auch  
+ [Vorgehensweise: Instrumentieren einer dynamisch kompilierten ASP.NET-Anwendung und Sammeln von ausführlichen Zeitsteuerungsdaten](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)   
+ [Vorgehensweise: Instrumentieren einer dynamisch kompilierten ASP.NET-Anwendung und Sammeln von Speicherdaten](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)

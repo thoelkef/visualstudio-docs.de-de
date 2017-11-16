@@ -1,53 +1,54 @@
 ---
-title: "&#220;bersichten (Profilerstellungstools) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Übersichten (Leistungstools) | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: b877802d-c736-4047-821a-bd7733fff6de
-caps.latest.revision: 22
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 22
+caps.latest.revision: "22"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 48e733a49617b55d2f09f7782c87c9160124ccd6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# &#220;bersichten (Profilerstellungstools)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Dieser Abschnitt enthält Begriffs\- und Terminologieübersichten für die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-Profilerstellungstools, mit deren Hilfe die Leistungsmerkmale von Anwendungen ermittelt werden können, die sich noch in der Entwicklung befinden.  
+# <a name="overviews-performance-tools"></a>Übersichten (Leistungstools)
+Dieser Abschnitt enthält konzeptionelle und terminologische Übersichten für [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]- Profilerstellungstools, die Sie verwenden können, um die Leistungsmerkmale einer Anwendung in der Entwicklung zu messen.  
   
-## In diesem Abschnitt  
+## <a name="in-this-section"></a>In diesem Abschnitt  
  [Übersicht über Leistungssitzungen](../profiling/performance-session-overview.md)  
- Informationen zu den Grundlagen der Leistungsprofilerstellung mit den [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-Profilerstellungstools.  
+ Grundlagen der Leistungsprofilerstellung mit den [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools.  
   
  [Eigenschaften von Leistungssitzungen](../profiling/performance-session-properties.md)  
- Beschreibt die Eigenschaften, die zum Konfigurieren einer Leistungssitzung verwendet werden können.  
+ Beschreibt die Eigenschaften, die verwendet werden können, um eine Leistungssitzung zu konfigurieren.  
   
- [Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)  
- Informationen zu den Datenwerten, die gemeldet werden, wenn Sie die Samplingmethode zur Profilerstellung verwenden.  
+ [Grundlagen zu Beispieldatenwerten](../profiling/understanding-sampling-data-values.md)  
+ Informationen zu den Datenwerten, die gemeldet werden, wenn Sie die Beispielprofilerstellungsmethode verwenden.  
   
- [Grundlagen zu Instrumentationsdatenwerten](../profiling/understanding-instrumentation-data-values.md)  
- Informationen zu den Datenwerten, die gemeldet werden, wenn Sie die Instrumentationsmethode zur Profilerstellung verwenden.  
+ [Grundlagen zu Instrumentierungsdatenwerten](../profiling/understanding-instrumentation-data-values.md)  
+ Informationen zu den Datenwerten, die gemeldet werden, wenn Sie die Instrumentierungsprofilerstellungsmethode verwenden.  
   
  [Datenwerte zur Speicherbelegung und Objektlebensdauer](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)  
- Informationen zu den Datenwerten, die gemeldet werden, wenn Sie die Methode zur .NET\-Arbeitsspeicher\-Profilerstellung verwenden.  
+ Informationen zu den Datenwerten, die gemeldet werden, wenn Sie die .NET-Speichermethode zur Profilerstellung verwenden.  
   
- [Grundlagen zu Ressourcenkonflikt\-Datenwerten](../profiling/understanding-resource-contention-data-values.md)  
+ [Grundlagen zu Datenwerten der Ressourcenkonflikten](../profiling/understanding-resource-contention-data-values.md)  
  Informationen zu den Datenwerten, die gemeldet werden, wenn Sie die Parallelitätsmethode zur Profilerstellung verwenden.  
   
- [Das Fenster "Leistungs\-Explorer"](../profiling/performance-explorer-window.md)  
+ [Leistungs-Explorer-Fenster](../profiling/performance-explorer-window.md)  
  Beschreibt das Fenster, das zum Konfigurieren und Starten von Leistungssitzungen verwendet wird.  
   
- [CPU\- und Windows\-Indikatoren](../profiling/cpu-and-windows-counters.md)  
- Informationen zu den CPU\- und Windows\-Leistungsindikatoren, die zusätzliche Leistungsdaten in einer Leistungssitzung bereitstellen können.  
+ [CPU- und Windows-Indikatoren](../profiling/cpu-and-windows-counters.md)  
+ Informationen zu den CPU- und Windows-Leistungsindikatoren, die zusätzliche Leistungsdaten in einer Leistungssitzung bereitstellen können.  
   
  [Profilerstellung und Sicherheit in Windows Vista](../profiling/profiling-and-windows-vista-security.md)  
- Informationen zu den Überlegungen und Schritten, die beim Erfassen von Samplingdaten und bei der Profilerstellung mit sitzungsübergreifenden Anwendungen in [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] erforderlich sind.  
+ Informationen zu Problemen und den erforderlichen Schritte zum Sammeln von Beispieldaten und zum Erstellen von sitzungsübergreifenden Profilen für Anwendungen auf [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)].  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Erste Schritte](../profiling/getting-started-with-performance-tools.md)   
- [Verwenden von Profilerstellungstools](../profiling/performance-explorer.md)
+ [Leistungs-Explorer](../profiling/performance-explorer.md)

@@ -1,53 +1,54 @@
 ---
-title: "Gewusst wie: Verweisen auf Windows-Symbolinformationen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Leistungstools, Symbolserver"
-  - "Server, Symbolserver"
-  - "Profilerstellungstools, Symbolserver"
-  - "Symbolserver"
+title: 'Vorgehensweise: Verweisen auf Windows-Symbolinformationen | Microsoft-Dokumentation'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- performance tools, symbol servers
+- servers, symbol servers
+- profiling tools, symbol servers
+- symbol servers
 ms.assetid: b7c67318-6be2-4b1e-a161-077b1f4a7c30
-caps.latest.revision: 21
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 09e17cc1e28ad520f76d60c3411de4803a2b4b96
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Verweisen auf Windows-Symbolinformationen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Die Visual Studio\-Profilerstellungstools verwenden Symboldateien \(.pdb\), um symbolische Namen wie Funktionsnamen in den B aufzulösen.  Sie können diese Schritte ausführen, um die korrekten PDB\-Dateien für die Windows\-Version auf dem lokalen Computer automatisch herunterzuladen und zu aktualisieren.  
+# <a name="how-to-reference-windows-symbol-information"></a>Gewusst wie: Verweisen auf Windows-Symbolinformationen
+Der Visual Studio-Profilerstellungstools verwenden Symboldateien (.pdb), um symbolische Namen wie Funktionsnamen in Programmbinärdateien aufzulösen. Sie können diese Schritte befolgen, um automatisch die richtigen PDB-Dateien für die Windows-Version auf dem lokalen Computer herunterzuladen und zu aktualisieren.  
   
 > [!NOTE]
->  Diese Einstellung wirkt sich nicht auf vorhandene Berichte aus.  Nur Berichte, die nach Angabe des Symbolservers erstellt werden, weisen Symbolinformationen auf.  
+>  Diese Einstellung wirkt sich nicht auf vorhandene Berichte aus. Nur Berichte, die nach Angabe des Symbolservers erstellt wurden, werden die Symbolinformationen haben.  
   
- Weitere Informationen finden Sie unter [Angeben von Symbol\(PDB\)\- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+ Weitere Informationen finden Sie unter [Angeben von Symbol (.pdb)- und Quelldateien](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
-### So verwenden Sie den Symbolserver von Microsoft  
+### <a name="to-use-the-microsoft-symbol-server"></a>So verwenden Sie den Microsoft-Symbolserver  
   
-1.  Erstellen Sie einen Ordner für die Symboldateiinformationen, z. B. C:\\SymbolCache.  
+1.  Erstellen Sie einen Ordner, um die Symboldateiinformationen aufzubewahren, wie z.B. C:\SymbolCache.  
   
 2.  Klicken Sie im Menü **Extras** auf **Optionen**.  
   
      Das Dialogfeld **Optionen** wird angezeigt.  
   
-3.  Erweitern Sie die Struktur **Debuggen**, und klicken Sie dann auf **Symbole**.  
+3.  Erweitern Sie die Struktur **Debuggen**, und klicken Sie anschließend auf **Symbole**.  
   
-4.  Wählen Sie im **Orte für Symboldateien \(.pdb\)Microsoft\-Symbolserver** aus  
+4.  Wählen Sie in **Speicherort für Symboldateien (.pdb)** **Microsoft-Symbolserver** aus  
   
-5.  Geben Sie unter **Symbole vom Symbolserver in diesem Verzeichnis zwischenspeichern** den Pfad des in Schritt 1 erstellten Ordners ein, z. B.:  
+5.  Geben Sie in **Symbole vom Symbolserver zwischenspeichern** den Ordnerpfad ein, der in Schritt 1 erstellt wurde. Beispiel:  
   
-     C:\\SymbolCache  
+     **C:\SymbolCache**  
   
-     Sie können auf die Schaltfläche mit den Auslassungspunkten \(**...**\) klicken und ein Verzeichnis aus dem Dialogfeld **Ordner suchen** auswählen.  
+     Sie können auch die Schaltfläche mit den Auslassungszeichen (**...**) anklicken und anschließend ein Verzeichnis vom Dialogfeld **Nach Ordner suchen** auswählen.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)   
- [Gewusst wie: Serialisieren von Symbolinformationen](../profiling/how-to-serialize-symbol-information.md)
+ [Vorgehensweise: Serialisieren von Symbolinformationen](../profiling/how-to-serialize-symbol-information.md)

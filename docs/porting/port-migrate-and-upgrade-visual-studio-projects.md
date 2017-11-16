@@ -1,11 +1,10 @@
 ---
 title: "Übertragung, Migration und Upgrade der Visual Studio-Projekte | Microsoft-Dokumentation"
 ms.custom: 
-ms.date: 7/24/2017
+ms.date: 07/24/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -22,14 +21,12 @@ ms.assetid: bee759bd-6ff5-4c2e-913a-ea7d3c906c29
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: ef005f6456c532ade108299f556c8ef7211e6055
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
-ms.openlocfilehash: d637dc2b0349bfe1efbcf55417d4f4bf5817b303
-ms.contentlocale: de-de
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="port-migrate-and-upgrade-visual-studio-projects"></a>Übertragung, Migration und Upgrade der Visual Studio-Projekte
 
 Jede neue Version von Visual Studio unterstützt im Allgemeinen die meisten vorherigen Typen von Projekten, Dateien und anderen Objekten. Sie können [wie gewohnt](../ide/solutions-and-projects-in-visual-studio.md) mit ihnen arbeiten, vorausgesetzt, Sie sind nicht von neueren Features abhängig. Visual Studio behält die Abwärtskompatibilität mit vorherigen Versionen wie Visual Studio 2015, Visual Studio 2013 und Visual Studio 2012 bei. Informationen dazu, welche Features für welche Versionen spezifisch sind, finden Sie in den [Anmerkungen zu dieser Version](https://www.visualstudio.com/vs/release-notes/).
@@ -75,4 +72,3 @@ Wenn ein Projekt oder Dateityp hier nicht angezeigt wird, den Sie eigentlich seh
 | Windows Communication Foundation und Windows Workflow Foundation | Sie können dieses Projekt in Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 und Visual Studio 2012 öffnen. |
 | Windows Presentation Foundation | Sie können dieses Projekt in Visual Studio 2013, Visual Studio 2012 und Visual Studio 2010 SP1 öffnen. |
 | Windows Store/Phone-Apps | Projekte für Windows Store 8.1 und 8.0 sowie für Windows Phone 8.1 und 8.0 werden in Visual Studio 2017 nicht unterstützt. Um diese Apps zu verwalten, verwenden Sie weiterhin Visual Studio 2015. Zum Verwalten von Windows Phone 7.x-Projekten verwenden Sie Visual Studio 2012. |
-

@@ -1,43 +1,44 @@
 ---
-title: "Gewusst wie: Dateinamenoptionen f&#252;r Profilerstellungsdaten | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Vorgehensweise: Dateinamenoptionen für Profilerstellungsdaten | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: d7a8d6b9-ab23-46fb-98ed-774781157860
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 308766c1a4fbe5194f1330bd74c81f6d9d41b36f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Dateinamenoptionen f&#252;r Profilerstellungsdaten
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Standardmäßig speichern Sie mit der folgenden Syntax eine Profilerstellungs\-Datendatei \(.vsp\):  
+# <a name="how-to-set-performance-data-file-name-options"></a>Vorgehensweise: Dateinamenoptionen für Profilerstellungsdaten
+Standardmäßig speichern Sie eine Profilerstellungs-Datendatei (.vsp) mithilfe der folgenden Syntax:  
   
- *Path\\VSP\-File\\YYMMDD\(N\)* **.vsp**  
+ *Path\VSP-File\YYMMDD(N)* **.vsp**  
   
- Sie können auf der Seite Allgemein des Eigenschaftendialogfelds für die Leistungssitzung jeden beliebigen Namensparameter ändern.  
+ Sie können auf der Seite „Allgemein“ im Dialogfeld „Eigenschaften“ für die Leistungssitzung jeden Namensparameter ändern.  
   
- **Voraussetzungen**  
+ **Anforderungen**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
 |||  
 |-|-|  
-|*Path*|Das Verzeichnis, das den Bericht enthält.  Der Standardspeicherort ist der Projektmappenordner oder der Standardspeicherort der Projekte und Projektmappen des Benutzers.|  
-|*VSP\-File*|Der Name der Profilerstellungs\-Datendatei.  Der Standardname ist der Name der Projektmappe oder der ausführbaren Datei, die profiliert wird.|  
-|*YYMMDD*|Ein Datumsstempel, der das Jahr, den Monat und den Tag anzeigt, an dem die Profilerstellungsdaten gesammelt wurden.|  
-|*\(N\)*|Wenn es mehr als eine Profilerstellungs\-Datendatei gibt, wird dem Dateinamen zwischen Klammern eine inkrementierte Zahl hinzugefügt.|  
+|*Pfad*|Das Verzeichnis mit dem Bericht. Der Standardspeicherort ist der Projektmappenordner oder der Standardspeicherort für Projekte und Projektmappen des Benutzers.|  
+|*VSP-Datei*|Der Name der Profilerstellungs-Datendatei. Der Standardname ist der Name der Projektmappe oder der ausführbaren Datei, für die ein Profil erstellt wird.|  
+|*JJMMTT*|Ein Datumsstempel, der Jahr, Monat und Tag anzeigt, an dem die Profilerstellungsdaten gesammelt wurden.|  
+|*(N)*|Wenn mehr als eine Profilerstellungsdatendatei vorhanden ist, wird dem Dateinamen eine inkrementierte Zahl in Klammern hinzugefügt.|  
   
-### So ändern Sie die Namenssyntax der Profilerstellungs\-Datendateien einer Leistungssitzung  
+### <a name="to-change-the-naming-syntax-of-the-profiling-data-files-of-a-performance-session"></a>So ändern Sie die Benennungssyntax der Profilerstellungs-Datendateien einer Leistungssitzung  
   
-1.  Klicken Sie im **Leistungs\-Explorer** mit der rechten Maustaste auf den Namen der Leistungssitzung, und klicken Sie dann auf **Eigenschaften**.  
+1.  Klicken Sie im **Leistungs-Explorer** mit der rechten Maustaste auf den Namen der Leistungssitzung und anschließend auf **Eigenschaften**.  
   
 2.  Klicken Sie auf **Allgemein**.  
   
@@ -45,8 +46,8 @@ Standardmäßig speichern Sie mit der folgenden Syntax eine Profilerstellungs\-D
   
     |||  
     |-|-|  
-    |**Berichtsspeicherort**|Geben Sie ein Verzeichnis an, um die Profilerstellungs\-Datendateien zu speichern.|  
+    |**Berichtsspeicherort**|Geben Sie ein Verzeichnis zum Speichern der Profilerstellungs-Datendateien an.|  
     |**Berichtsname**|Geben Sie einen Basisnamen für die Dateien an.|  
-    |**Neue Berichte automatisch zur Sitzung hinzufügen**|Aktivieren Sie das Kontrollkästchen, um der Leistungssitzung die Datendatei automatisch hinzuzufügen.|  
-    |**Generierte Berichte mit inkrementeller Nummer versehen**|Aktivieren Sie dieses Kontrollkästchen, um dem Dateinamen eine inkrementelle Nummer hinzuzufügen, wenn mehr als eine Datei mit dem gleichen Namen vorhanden ist.  Deaktivieren Sie das Kontrollkästchen, um eine vorhandene Datei zu überschreiben.|  
-    |**Timestamp für Nummer verwenden**|Aktivieren Sie das Kontrollkästchen, um dem Dateinamen einen Datumsstempel hinzuzufügen.|
+    |**Neue Berichte automatisch zur Sitzung hinzufügen**|Wählen Sie das Kontrollkästchen aus, um die Datendatei der Leistungssitzung automatisch hinzuzufügen.|  
+    |**Generierte Berichte mit inkrementeller Nummer versehen**|Wählen Sie das Kontrollkästchen aus, um eine inkrementelle Nummer an den Dateinamen hinzuzufügen, wenn mehr als eine Datei mit demselben Namen vorhanden ist. Deaktivieren Sie das Kontrollkästchen, um eine vorhandene Datei zu überschreiben.|  
+    |**Zeitstempel für die Nummer verwenden**|Wählen Sie das Kontrollkästchen aus, um dem Dateinamen einen Datumsstempel hinzuzufügen.|

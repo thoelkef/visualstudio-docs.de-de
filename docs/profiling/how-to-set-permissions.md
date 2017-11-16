@@ -1,65 +1,66 @@
 ---
-title: "Gewusst wie: Festlegen von Berechtigungen f&#252;r die Profilerstellung | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Profilerstellung, Festlegen von Berechtigungen"
-  - "Sicherheit [Visual Studio ALM], Festlegen von Berechtigungen"
-  - "Berechtigungen [Visual Studio ALM], Profilerstellung"
-  - "Profilerstellungstools, Festlegen von Berechtigungen für die Profilerstellung"
-  - "Leistungstools, Festlegen von Berechtigungen für die Profilerstellung"
+title: "Vorgehensweise: Festlegen von Berechtigungen für die Profilerstellung | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- profiling, setting permissions
+- security [Visual Studio ALM], setting permissions
+- permissions [Visual Studio ALM], profiling
+- profiling tools, setting profiling permissions
+- performance tools, setting profiling permissions
 ms.assetid: 69f27896-8f46-4ef3-bfb7-726d95304f3a
-caps.latest.revision: 23
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 23
+caps.latest.revision: "23"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: dcdf2ff51c0ed1aeb667c33a519d540251799c01
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Festlegen von Berechtigungen f&#252;r die Profilerstellung
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-In diesem Thema wird erläutert, wie ein Administrator eines Computers die für die Profilerstellung erforderlichen Sicherheitsberechtigungen einem Benutzer oder einer Gruppe zuweist, der bzw. die auf diesem Computer nicht über Administratorberechtigungen verfügt.  
+# <a name="how-to-set-permissions"></a>Vorgehensweise: Festlegen von Berechtigungen für die Profilerstellung
+In diesem Thema wird beschrieben, wie ein Administrator eines Computers die erforderlichen Sicherheitsberechtigungen für die Profilerstellung für einen Benutzer oder eine Gruppe, die keine Administratorberechtigungen auf diesem Computer haben, gewährt.  
   
- Einem grundlegenden Sicherheitsprinzip zufolge sollen Anwendungen nur mit den erforderlichen Berechtigungen ausgeführt werden.  Dieses Prinzip gilt auch für Benutzer.  Wenn ein Benutzer absolut effizient arbeiten kann, wenn er als Mitglied der Gruppe Benutzer statt als Mitglied der Gruppe Administratoren angemeldet ist, sollten ihm auch keine Administratorberechtigungen erteilt werden.  In der ersten Vorgehensweise, "So erstellen Sie ein Benutzerkonto mit Benutzerberechtigungen", wird das Erstellen eines Benutzerkontos für ein Mitglied der Gruppe Benutzer beschrieben.  
+ Ein grundlegendes Sicherheitsprinzip gibt an, dass die Anwendung mit nicht mehr als den Berechtigungen ausgeführt werden soll, die sie benötigen. Dieses Prinzip gilt auch für Benutzer. Wenn Benutzer vollständig wirksam werden können, wenn sie als Mitglieder der Benutzergruppe anstelle der Administratorgruppe angemeldet sind, sollten sie keine Administratorberechtigungen erteilt bekommen. Die erste Prozedur, "So erstellen Sie ein Benutzerkonto mit Benutzerberechtigungen", beschreibt das Erstellen eines Benutzerkontos für ein Mitglied der Benutzergruppe.  
   
- **Voraussetzungen**  
+ **Anforderungen**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
- Mitglieder der Gruppe Benutzer müssen auf die Ordner und Dateien auf der Festplatte zugreifen können, die mit anderen Teammitglieder gemeinsam genutzt werden.  In der zweiten Vorgehensweise, "So erteilen Sie den Zugriff auf gemeinsam genutzte Projektdateien", wird das Erteilen des Zugriffs beschrieben.  
+ Mitglieder der Benutzergruppe benötigen Zugriff auf die Ordner und Dateien auf dem Datenträger, die mit anderen Mitgliedern des Teams gemeinsam verwendet werden. Die zweite Prozedur, „So erteilen Sie den Zugriff auf gemeinsam genutzte Projektdateien“, beschreibt, wie Sie diesen Zugriff gewähren.  
   
- Mitglieder der Benutzergruppe können die Profilerstellungstools ausführen, wenn ein Administrator ihnen den Zugriff auf den Softwaretreiber für die Profilierungstools gewährt.  In der letzten Vorgehensweise, "So erteilen Sie den Zugriff auf den Treiber für die Profilerstellung", wird das Erteilen des Zugriffs auf den Treiber beschrieben.  
+ Mitglieder der Benutzergruppe können die Profilerstellungstools ausführen, wenn ein Administrator ihnen Zugriff auf die Softwaretreiber für die Profilerstellungsgstools erteilt. Die letzte Prozedur, „So erteilen Sie den Zugriff auf den Treiber für die Profilerstellung“, beschreibt, wie Sie den Zugriff auf diesen Treiber gewähren.  
   
 > [!NOTE]
->  Sie benötigen Administratorberechtigungen, um die Schritte in diesen Vorgehensweisen ausführen zu können.  
+>  Sie benötigen Administratorberechtigungen, um die Schritte in diesen Prozeduren ausführen zu können.  
   
-### So erstellen Sie ein Benutzerkonto mit Benutzerberechtigungen  
+### <a name="to-create-a-user-account-that-has-user-permissions"></a>So erstellen Sie ein Benutzerkonto mit Benutzerberechtigungen  
   
-1.  Klicken Sie mit der rechten Maustaste auf **Arbeitsplatz**, und klicken Sie auf **Verwalten**.  
+1.  Klicken Sie mit der rechten Maustaste auf **Arbeitsplatz** und anschließend auf **Verwalten**.  
   
-     Das Dialogfeld **Computerverwaltung** wird geöffnet.  
+     Das Fenster **Computerverwaltung** wird geöffnet.  
   
-2.  Erweitern Sie den Knoten **Lokale Benutzer und Gruppen**.  
+2.  Erweitern Sie **Lokale Benutzer und Gruppen**.  
   
-3.  Klicken Sie mit der rechten Maustaste auf den Ordner **Benutzer**, und klicken Sie dann auf **Neuer Benutzer**.  
+3.  Klicken Sie mit der rechten Maustaste auf den Ordner **Benutzer** und anschließend auf **Neuer Benutzer**.  
   
      Das Dialogfeld **Neuer Benutzer** wird angezeigt.  
   
-4.  Geben Sie in die Felder dieses Dialogfelds die Informationen zu dem Benutzerkonto ein, das Sie gerade erstellen.  Legen Sie ein Kennwort fest.  Aktivieren Sie optional das Kontrollkästchen, das festlegt, dass der Benutzer bei der nächsten Anmeldung das Kennwort ändern muss.  
+4.  Füllen Sie die Felder im Dialogfeld mit den Informationen für das Benutzerkonto aus, das Sie gerade erstellen. Geben Sie ein Passwort ein. Optional: Wählen Sie das Kontrollkästchen aus, das erfordert, dass der Benutzer das Passwort bei der nächsten Anmeldung ändert.  
   
 5.  Klicken Sie auf **Erstellen** und anschließend auf **Schließen**.  
   
-     Der neue Benutzer wird in der Gruppe Benutzer angezeigt, einer Gruppe von Benutzern, die nicht über Administratorberechtigungen verfügen.  
+     Der neue Benutzer wird in der Benutzergruppe erscheinen, eine Gruppe von Benutzern, die nicht über Administratorberechtigungen verfügen.  
   
-### So erteilen Sie den Zugriff auf gemeinsam genutzte Projektdateien  
+### <a name="to-grant-access-to-shared-project-files"></a>So erteilen Sie den Zugriff auf gemeinsam genutzte Projektdateien  
   
-1.  In Windows Explorer \(oder im Datei\-Explorer\), suchen Sie den Stamm der Ordnerstruktur für die Projektdateien, die von diesem Benutzer und dem Projektteam gemeinsam genutzt werden.  
+1.  Suchen Sie in Windows Explorer (oder Datei-Explorer) nach den Stamm der Ordnerstruktur für die Projektdateien, von diesem Benutzer verwendet und vom Projektteam freigegeben werden.  
   
      Der Pfad dieses Ordners könnte folgendermaßen aussehen:  
   
@@ -67,21 +68,21 @@ In diesem Thema wird erläutert, wie ein Administrator eines Computers die für 
     D:\ourProject  
     ```  
   
-2.  Klicken Sie mit der rechten Maustaste auf den Ordner, und klicken Sie dann auf **Eigenschaften**.  
+2.  Klicken Sie mit der rechten Maustaste auf den Ordner und anschließend auf **Eigenschaften**.  
   
-     Das Dialogfeld **\<Ordnername\>\-Eigenschaften** wird.  
+     Das Dialogfeld **\<Ordnername> Eigenschaften** wird angezeigt.  
   
-3.  Klicken Sie auf die Registerkarte **Sicherheit**.  
+3.  Klicken Sie auf die Registerkarte **Sicherheit** .  
   
-4.  Klicken Sie im Feld **Gruppen\- oder Benutzernamen** auf den Namen für das Konto des Benutzers.  
+4.  Klicken Sie auf den Namen eines Benutzerkontos im Feld **Gruppen- oder Benutzernamen**.  
   
-5.  Im Feld **Berechtigungen für \<Benutzername\>** wählen Sie das Kontrollkästchen für **Vollzugriff**.  
+5.  Im Feld **Berechtigungen für \<Benutzername >** wählen Sie das Kontrollkästchen für **Vollzugriff**.  
   
 6.  Klicken Sie auf **OK**.  
   
-     So wird dem Benutzer der Zugriff auf die gemeinsam genutzte Ordnerstruktur erteilt, an deren Anfang sich der in Schritt 5 ausgewählte Ordner befindet.  
+     Erteilt dem Benutzer die Berechtigung für die freigegebene Ordnerstruktur, die mit dem in Schritt 5 ausgewählten Ordner beginnt.  
   
-### So erteilen Sie den Zugriff auf den Treiber für die Profilerstellung  
+### <a name="to-grant-access-to-the-profiling-driver"></a>So erteilen Sie den Zugriff auf den Treiber für die Profilerstellung  
   
 1.  Öffnen Sie eine Eingabeaufforderung als Administrator.  
   
@@ -97,35 +98,35 @@ In diesem Thema wird erläutert, wie ein Administrator eines Computers die für 
     vsperfcmd /admin:driver,start /admin:service,start  
     ```  
   
-     Mithilfe dieses Befehls wird der Treiber für die Profilerstellungstools installiert und gestartet.  
+     Dieser Befehl installiert und startet den Treiber für die Profilerstellungstools.  
   
-     Durch diesen Befehl werden Treiber und Dienst für die Profilerstellung gestartet, sodass die Profilerstellungsfeatures auch Benutzern ohne Administratorrechte im Benutzerprozessbereich zur Verfügung stehen.  Der Befehl kann nur von einem Administrator ausgeführt werden und schlägt bei Benutzern ohne Administratorrechte fehl.  
+     Dieser Befehl startet den Profilerstellungstreiber und -dienst so, dass Benutzer ohne Administratorrechte Profilerstellungsfunktionen verwenden können, die in ihrem Benutzerprozessbereich verfügbar sind. Nur ein Administrator kann den Befehl ausführen; und es wird bei Benutzern ohne Administratorrechte fehlschlagen.  
   
-     Damit die Auswirkungen der Ausführung dieses Schritts bei einem Neustart des Computers nicht rückgängig gemacht werden, müssen Sie den letzten Schritt in dieser Vorgehensweise ausführen.  
+     Beachten Sie, dass die Effekte in diesem Schritt nach dem Neustart des Computers rückgängig gemacht werden, es sei denn, Sie führen auch den letzten Schritt in dieser Prozedur aus.  
   
-4.  Führen Sie den Befehl aus, um den Zugriff auf Treiberfunktionen für die Profilerstellung durch einen Benutzer oder eine Gruppe zu ermöglichen, der bzw. die keinen Administratorzugriff auf den Computer hat.  
+4.  Führen Sie den Befehl aus, um den Zugriff auf die Funktionalität des Profilerstellungstreibers durch einen Benutzer oder eine Gruppe zu gewähren, die keinen Administratorzugriff auf den Computer haben:  
   
     ```  
     vsperfcmd /admin:security,allow,<right[,right],<user name|group name>  
     ```  
   
-     Dieser Befehl gewährt den \<Benutzername\> oder \<Gruppennamenkontozugriff\> für die Profilerstellungstools.  Die \<rechte\> Option bestimmt die Profilerstellungsfunktionalität fest, auf die der Benutzer zugreifen kann.  Die \<rechte\> Option kann eine oder mehrere der folgenden Werte sein:  
+     Dieser Befehl erteilt den \<Benutzernamen> oder \<Gruppennamen> -Kontozugriff auf die Profilerstellungstools. Die \<rechts> Option bestimmt die Profilerstellungsfunktionalität, auf die der Benutzer zugreifen kann. Die \<rechts> Option kann eine oder mehrere der folgenden Werte sein:  
   
-    -   FullAccess – ermöglicht den Zugriff auf alle Profilerstellungsmethoden, einschließlich der Erfassung von Leistungsdaten aus Services, Sampling und der sitzungsübergreifenden Profilerstellung.  
+    -   FullAccess – ermöglicht den Zugriff auf alle Profilerstellungsmethoden, einschließlich dem Erfassen von Leistungsdaten von Diensten, dem Sampling und der sitzungsübergreifenden Profilerstellung.  
   
-    -   SampleProfiling \- ermöglicht den Zugriff auf Sampling\-Profilerstellungsmethoden.  
+    -   SampleProfiling – ermöglicht den Zugriff auf Sampling-Profilerstellungsmethoden.  
   
     -   CrossSession – ermöglicht den Zugriff auf die sitzungsübergreifende Profilerstellung, die für Profilerstellungsdienste erforderlich ist.  
   
-5.  \(Optional\) Damit die Ergebnisse der Ausführung eines der vorherigen Schritte nach einem Neustart des Computers erhalten bleiben, müssen Sie den folgenden Befehl ausführen:  
+5.  Optional: Um die Ergebnisse der vorherigen Schritte nach dem Computerneustart zu erhalten, führen Sie den folgenden Befehl ein:  
   
     ```  
     vsperfcmd /admin:driver,autostart,on  
     ```  
   
- Der angegebene Benutzer kann nun, sobald er angemeldet ist, die Profilerstellungstools ohne Administratorberechtigungen verwenden.  
+ Die angegebenen Benutzer werden nun nach der Anmeldung in der Lage sein, die Profilerstellungstools ohne Administratorberechtigungen zu verwenden.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilerstellung und Sicherheit in Windows Vista](../profiling/profiling-and-windows-vista-security.md)

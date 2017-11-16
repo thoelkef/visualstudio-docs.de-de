@@ -1,101 +1,102 @@
 ---
-title: "Gewusst wie: Ausw&#228;hlen von Sammlungsmethoden | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Leistungstools, Auswählen einer Auflistungsmethode"
-  - "Profilerstellungstools, Auswählen einer Auflistungsmethode"
-  - "Leistungsauflistungsmethoden"
+title: "Vorgehensweise: Auswählen von Sammlungsmethoden | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- performance tools, choosing collection method
+- profiling tools, choosing collection method
+- performance collection methods
 ms.assetid: c87cfd3a-0fc7-49ae-9c05-d8480891cc63
-caps.latest.revision: 34
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 34
+caps.latest.revision: "34"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b94b842566c3f8bf5ad5374acda0ccc9e9b50cbe
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Ausw&#228;hlen von Sammlungsmethoden
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-Profilerstellungstools unterstützen drei Methoden, Leistungsdaten zu sammeln: Sampling, Instrumentation und Parallelität.  Zudem können Sie die Sampling\- oder die Instrumentationsmethode auch zum Sammeln von .NET\-Speicherbelegungs\- und Lebensdauerdaten verwenden.  
+# <a name="how-to-choose-collection-methods"></a>Gewusst wie: Auswählen von Sammlungsmethoden
+Die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Profilerstellungstools unterstützen drei Methoden zum Sammeln von Leistungsdaten: Sampling, Instrumentierung und Parallelität. Sie können zum Sammeln von Daten zur .NET-Speicherbelegung und Lebensdauerdaten entweder die Sampling- oder Instrumentierungsmethode verwenden.  
   
- **Voraussetzungen**  
+ **Anforderungen**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
- Mithilfe der **Method**\-Eigenschaft der Leistungssitzung können Sie die für die Anwendung geeignete Sammlungsmethode angeben.  Sie können die Auflistungsmethode im Leistungs\-Assistenten, im Leistungs\-Explorer oder auf den Eigenschaftenseiten einer Leistungssitzung festlegen.  Bei Verwendung von Befehlszeilentools finden Sie im Abschnitt [Profilerstellung mithilfe der Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md) weitere Informationen.  
+ Sie können die die Eigenschaft **Methode** der Leistungssitzung verwenden, um die geeignetste Sammlungsmethode für Ihre Anwendung anzugeben. Sie können die Sammelmethode vom Leistungs-Assistent, Leistungs-Explorer oder von den Eigenschaftenseiten der Leistungssitzung festlegen. Wenn Sie die Befehlszeilentools verwenden, finden Sie weitere Informationen unter [Profilerstellung mithilfe der Befehlszeile](../profiling/using-the-profiling-tools-from-the-command-line.md).  
   
-## Leistungs\-Assistent  
+## <a name="performance-wizard"></a>Leistungs-Assistent  
   
-#### So wählen Sie eine Sammlungsmethode mit dem Leistungs\-Assistenten aus  
+#### <a name="to-select-a-collection-method-using-the-performance-wizard"></a>So wählen Sie eine Sammlungsmethode mithilfe des Leistungs-Assistent aus  
   
--   Auf der ersten Seite des Assistenten wählen Sie eine der folgenden Optionen aus:  
+-   Wählen Sie auf der ersten Seite des Assistenten eine der folgenden Optionen aus:  
   
-|Option|**Beschreibung**|  
-|------------|----------------------|  
-|**CPU\-Sampling**|Sammelt Anwendungsstatistiken, die für ursprüngliche Analyse und zum Analysieren von CPU\-Auslastungsproblemen nützlich sind.|  
-|**Instrumentation**|Sammelt ausführliche Zeitsteuerungsdaten, die für fokussierte Analysen und zum Analysieren von Leistungsproblemen bei der Eingabe\/Ausgabe nützlich sind.|  
-|**.NET\-Speicherbelegung**|Sammelt [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]\-Speicherbelegungsdaten mit der Sampling\-Profilerstellungsmethode.|  
-|**Parallelität**|Sammelt numerische Ressourcenkonfliktdaten.|  
+|Option|Beschreibung|  
+|------------|-----------------|  
+|**CPU-Sampling**|Sammelt Anwendungsstatistiken, die für die erste Analyse und zum Analysieren von CPU-Auslastungsproblemen nützlich sind.|  
+|**Instrumentation**|Sammelt ausführliche Zeitsteuerungsdaten, die zur gezielten Analyse und zur Analyse von Eingabe/Ausgabe-Leistungsproblemen nützlich sind.|  
+|**.NET-Speicherbelegung**|Sammelt [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Speicherbelegungsdaten mithilfe der Sampling-Profilerstellungsmethode.|  
+|**Parallelität**|Sammelt numerischen Ressourcenkonfliktdaten.|  
   
-## Leistungs\-Explorer  
+## <a name="performance-explorer"></a>Leistungs-Explorer  
   
-#### So wählen Sie eine Erfassungsmethode mit dem Leistungs\-Explorer aus  
+#### <a name="to-select-a-collection-method-using-performance-explorer"></a>So wählen Sie eine Sammelmethode mithilfe des Leistungs-Explorers aus  
   
-1.  Klicken Sie auf der Symbolleiste **Leistungs\-Explorer** auf den Pfeil neben der Dropdownliste **Methode**.  
+1.  Klicken Sie auf der Symbolleiste **Leistungs-Explorer** auf den Pfeil neben der Dropdownliste **Methode**  
   
-2.  Klicken Sie auf die bevorzugte Sammlungsmethode.  
+2.  Klicken Sie auf die Sammlungsmethode, die Sie bevorzugen.  
   
-## Eigenschaftenseiten für Leistungssitzungen  
+## <a name="performance-session-property-pages"></a>Eigenschaftenseiten der Leistungssitzung  
   
-#### So wählen Sie die Sampling\- oder Instrumentationsmethode mit Leistungssitzungseigenschaften aus  
+#### <a name="to-select-the-sampling-or-instrumentation-method-using-performance-session-properties"></a>So wählen Sie die Sampling- und Instrumentationsmethode mithilfe den Eigenschaften der Leistungssitzung aus  
   
-1.  Wählen Sie im **Leistungs\-Explorer** die Leistungssitzung aus.  
+1.  Klicken Sie im **Leistungs-Explorer** auf die Leistungssitzung.  
   
-     Der Dateiname einer Leistungssitzung weist die Erweiterung .psess auf.  
+     Ein Dateiname einer Leistungssitzung hat die Dateiendung „.psess“.  
   
-2.  Klicken Sie mit der rechten Maustaste auf die Leistungssitzung, und klicken Sie dann auf **Eigenschaften**.  
+2.  Klicken Sie im mit der rechten Maustaste auf die Leistungssitzung, und klicken Sie anschließend auf **Eigenschaften**.  
   
-3.  Klicken Sie auf den **Eigenschaftenseiten** auf **Allgemein**.  
+3.  Klicken Sie in den **Eigenschaftenseiten** auf **Allgemein**.  
   
-4.  Klicken Sie auf die bevorzugte Sammlungsmethode.  
+4.  Klicken Sie auf die Sammlungsmethode, die Sie bevorzugen.  
   
     -   Informationen zu den anderen Optionen, die beim Sammeln von Samplingdaten verfügbar sind, finden Sie unter [Sammeln von Leistungsstatistiken durch Sampling](../profiling/collecting-performance-statistics-by-using-sampling.md)  
   
-    -   Informationen zu den anderen Optionen, die beim Sammeln von Samplingdaten verfügbar sind, finden Sie unter [Sammeln ausführlicher Zeitsteuerungsdaten mithilfe der Instrumentation](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md).  
+    -   Informationen zu den anderen Optionen, die beim Sammeln von Samplingdaten verfügbar sind, finden Sie unter [Sammeln von ausführlichen Zeitsteuerdaten durch Instrumentation](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)  
   
-#### So wählen Sie die .NET\-Speicherdatensammlung mit Leistungssitzungseigenschaften aus  
+#### <a name="to-select-net-memory-data-collection-by-using-performance-session-properties"></a>So wählen Sie die Datensammlung des .NET-Speichers mithilfe der Eigenschaften der Leistungssitzung aus.  
   
-1.  Wählen Sie im **Leistungs\-Explorer** die Leistungssitzung aus.  
+1.  Klicken Sie im **Leistungs-Explorer** auf die Leistungssitzung.  
   
-     Der Dateiname einer Leistungssitzung weist die Erweiterung .psess auf.  
+     Ein Dateiname einer Leistungssitzung hat die Dateiendung „.psess“.  
   
-2.  Klicken Sie mit der rechten Maustaste auf die Leistungssitzung, und klicken Sie dann auf **Eigenschaften**.  
+2.  Klicken Sie im mit der rechten Maustaste auf die Leistungssitzung, und klicken Sie anschließend auf **Eigenschaften**.  
   
-3.  Klicken Sie auf den **Eigenschaftenseiten** auf **Allgemein**.  
+3.  Klicken Sie in den **Eigenschaftenseiten** auf **Allgemein**.  
   
 4.  Klicken Sie auf **Sampling** oder **Instrumentation**.  
   
-5.  Klicken Sie auf **.NET\-Objektzuordnungsinformationen auflisten**, um die Größe und Anzahl von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]\-Objektzuordnungen zu sammeln.  
+5.  Klicken Sie zum Sammeln von der Größe und Anzahl von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-Objektzuweisungen auf **.NET-Objektzuweisungsinformationen auflisten**.  
   
-6.  \(Optional\) Klicken Sie auf **Lebensdauerinformationen für .NET\-Objekt auflisten**, um Daten über die Garbage Collection\-Generierungen zu sammeln, in denen der Objektarbeitsspeicher freigegeben wurde.  
+6.  (Optional) Klicken Sie auf **Lebensdauerinformation für .NET-Objekte auflisten** zum Sammeln von Daten über die Generierung der automatische Speicherbereinigung, in dem der Objektspeicher freigegeben wurde.  
   
-     Informationen zu den anderen Optionen, die beim Sammeln von .NET\-Speicherdaten verfügbar sind, finden Sie unter [Sammeln von Daten zur .NET\-Speicherbelegung und Lebensdauer](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md).  
+     Informationen zu den anderen Optionen, die beim Sammeln von .NET-Speicherdaten verfügbar sind, finden Sie unter [Sammeln von Daten zur .NET-Speicherbelegung und Lebensdauer](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md).  
   
-#### So wählen Sie die Parallelitätsdatensammlung mit Leistungssitzungseigenschaften aus  
+#### <a name="to-select-concurrency-data-collection-by-using-performance-session-properties"></a>So wählen Sie die Sammlung von Parallelitätsdaten mithilfe der Eigenschaften der Leistungssitzung aus.  
   
-1.  Klicken Sie im **Leistungs\-Explorer** mit der rechten Maustaste auf die Leistungssitzung, und klicken Sie dann auf **Eigenschaften**.  
+1.  Klicken Sie im **Leistungs-Explorer**mit der rechten Maustaste auf die Leistungssitzung, und klicken Sie dann auf **Eigenschaften**.  
   
-2.  Klicken Sie auf den **Eigenschaftenseiten** auf **Allgemein**.  
+2.  Klicken Sie in den **Eigenschaftenseiten** auf **Allgemein**.  
   
 3.  Klicken Sie auf **Parallelität**.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)   
  [Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)   
  [Eigenschaften von Leistungssitzungen](../profiling/performance-session-properties.md)

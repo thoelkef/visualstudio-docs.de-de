@@ -1,60 +1,59 @@
 ---
-title: "marker_series-Klasse | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "cvmarkersobj/Concurrency::diagnostic::marker_series"
-helpviewer_keywords: 
-  - "Concurrency::diagnostic::marker_series-Klasse"
+title: marker_series -Klasse | Microsoft-Dokumentation
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: cvmarkersobj/Concurrency::diagnostic::marker_series
+helpviewer_keywords: Concurrency::diagnostic::marker_series class
 ms.assetid: b8445ed0-c512-4f92-b6b4-3d05c044f939
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b326e88e18e3a7c5515cc11bfda7e5c35ae4a063
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# marker_series-Klasse
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Stellt einen seriellen Kanal von Ereignissen dar, die durch einen einzelnen Anbieter generiert werden.  
+# <a name="markerseries-class"></a>marker_series-Klasse
+Stellt einen seriellen Kanal mit Ereignissen dar, die von einem einzelnen Anbieter generiert werden.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 class marker_series;  
 ```  
   
-## Member  
+## <a name="members"></a>Mitglieder  
   
-### Öffentliche Konstruktoren  
+### <a name="public-constructors"></a>Öffentliche Konstruktoren  
   
-|Name|**Beschreibung**|  
-|----------|----------------------|  
-|[marker\_series::marker\_series\-Konstruktor](../profiling/marker-series-marker-series-constructor.md)|Initialisiert eine neue Instanz der `marker_series`\-Klasse.|  
-|[marker\_series::~marker\_series\-Destruktor](../profiling/marker-series-tilde-marker-series-destructor.md)|Zerstört marker\_series\-Objekt und alle Versionen zugeordnete Ressourcen.|  
+|Name|Beschreibung|  
+|----------|-----------------|  
+|[marker_series::marker_series-Konstruktor](../profiling/marker-series-marker-series-constructor.md)|Initialisiert eine neue Instanz der `marker_series`-Klasse.|  
+|[marker_series::~marker_series-Destruktor](../profiling/marker-series-tilde-marker-series-destructor.md)|Zerstört das marker_series-Objekt und gibt alle zugewiesenen Ressourcen frei|  
   
-### Öffentliche Methoden  
+### <a name="public-methods"></a>Öffentliche Methoden  
   
-|Name|**Beschreibung**|  
-|----------|----------------------|  
-|[marker\_series::is\_enabled\-Methode](../profiling/marker-series-is-enabled-method.md)|Bestimmt wenn eine Sitzung ist aktiviert den Anbieter.|  
-|[marker\_series::write\_alert\-Methode](../profiling/marker-series-write-alert-method.md)|Schreibt eine Warnung in die Parallelitätsschnellansichts\-Ablaufverfolgungsdatei.|  
-|[marker\_series::write\_flag\-Methode](../profiling/marker-series-write-flag-method.md)|Schreibt ein Flag in die Parallelitätsschnellansichts\-Ablaufverfolgungsdatei.|  
-|[marker\_series::write\_message\-Methode](../profiling/marker-series-write-message-method.md)|Schreibt eine Meldung in die Parallelitätsschnellansichts\-Ablaufverfolgungsdatei.|  
+|Name|Beschreibung|  
+|----------|-----------------|  
+|[marker_series::is_enabled-Methode](../profiling/marker-series-is-enabled-method.md)|Bestimmt, ob eine Sitzung den Anbieter aktiviert hat|  
+|[marker_series::write_alert-Methode](../profiling/marker-series-write-alert-method.md)|Schreibt eine Warnung in die Ablaufverfolgungsdatei der Nebenläufigkeitsschnellansicht|  
+|[marker_series::write_flag-Methode](../profiling/marker-series-write-flag-method.md)|Schreibt ein Flag in die Ablaufverfolgungsdatei der Nebenläufigkeitsschnellansicht|  
+|[marker_series::write_message-Methode](../profiling/marker-series-write-message-method.md)|Schreibt eine Meldung in die Ablaufverfolgungsdatei der Nebenläufigkeitsschnellansicht|  
   
-## Vererbungshierarchie  
+## <a name="inheritance-hierarchy"></a>Vererbungshierarchie  
  `marker_series`  
   
-## Anforderungen  
- **Header:**  cvmarkersobj.h  
+## <a name="requirements"></a>Anforderungen  
+ **Header:** cvmarkersobj.h  
   
- **Namespace:**  Concurrency::diagnostic  
+ **Namespace:** Concurrency::diagnostic  
   
-## Siehe auch  
- [diagnostic\-Namespace](../profiling/diagnostic-namespace.md)
+## <a name="see-also"></a>Siehe auch  
+ [diagnostic-Namespace](../profiling/diagnostic-namespace.md)

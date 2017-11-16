@@ -1,40 +1,40 @@
 ---
-title: "DA0501: Durchschnittliche CPU-Auslastung durch den Prozess, f&#252;r den die Profilerstellung ausgef&#252;hrt wird. | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.rules.DA0501"
-  - "vs.performance.DA0501"
-  - "vs.performance.501"
+title: "DA0501: Durchschnittliche CPU-Auslastung durch den Prozess, für den die Profilerstellung ausgeführt wird. | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.performance.rules.DA0501
+- vs.performance.DA0501
+- vs.performance.501
 ms.assetid: b01946b4-75e3-47d5-a1a1-cebfae66a3af
-caps.latest.revision: 7
-caps.handback.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5de803a82110720a78b5b80cada7dad1c39c46c1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# DA0501: Durchschnittliche CPU-Auslastung durch den Prozess, f&#252;r den die Profilerstellung ausgef&#252;hrt wird.
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501: Durchschnittliche CPU-Auslastung durch den Prozess, für den die Profilerstellung ausgeführt wird.
 |||  
 |-|-|  
-|Regel\-ID|DA501|  
-|Kategorie \(Category\)|Ressourcenüberwachung|  
+|Regel-ID|DA501|  
+|Kategorie|Ressourcenüberwachung|  
 |Profilerstellungsmethode|Alle|  
-|Meldung|Durchschnittliche CPU\-Auslastung durch den Prozess, für den die Profilerstellung ausgeführt wird.|  
+|Meldung|Durchschnittliche CPU-Auslastung durch den Prozess, für den die Profilerstellung ausgeführt wird.|  
 |Regeltyp|Information|  
   
- Wenn Sie mit der Sampling\-, .NET\-Arbeitsspeicher\- oder Ressourcenkonfliktmethode Profile erstellen, müssen mindestens 10 Samplings erfasst werden, damit diese Regel ausgelöst wird.  
+ Wenn Sie Profile mithilfe der Sampling-, .NET-Arbeitsspeicher- oder Ressourcenkonfliktmethode Profile erstellen, müssen mindestens 10 Samplings erfasst werden, damit diese Regel ausgelöst wird.  
   
-## Regelbeschreibung  
- In dieser Meldung wird der Prozentsatz der Zeit gemeldet, die ein Prozessor mit dem Ausführen von Anweisungen aus der Anwendung beschäftigt war.  Bei dem gemeldeten Wert handelt es sich um den Durchschnittswert aller Messintervalle, in denen der Prozess, dessen Profil erstellt wird, aktiv war.  Bei einem Computer mit mehreren Prozessoren kann der Wert 100 Prozent übersteigen.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ In dieser Meldung wird der Prozentsatz der Zeit angegeben, die ein Prozessor mit dem Ausführen von Anweisungen aus der Anwendung beschäftigt war. Bei dem gemeldeten Wert handelt es sich um den Durchschnittswert aller Messintervalle, in denen der Prozess, dessen Profil erstellt wird, aktiv war. Bei einem Computer mit mehreren Prozessoren kann der Wert 100 Prozent übersteigen.  
   
-## Verwenden von Regeldaten  
- Mithilfe des Regelwerts können Sie die Leistung anderer Versionen oder Builds des Programms vergleichen oder die Leistung der Anwendung in unterschiedlichen Testszenarien nachvollziehen.
+## <a name="how-to-use-rule-data"></a>Verwenden von Regeldaten  
+ Mithilfe des Regelwerts können Sie die Leistung anderer Versionen oder Builds des Programms vergleichen oder die Leistung der Anwendung in unterschiedlichen Testszenarios nachvollziehen.

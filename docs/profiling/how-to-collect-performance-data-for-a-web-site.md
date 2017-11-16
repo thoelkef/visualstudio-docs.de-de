@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -19,31 +18,15 @@ helpviewer_keywords:
 - web sites, performance profiling
 - ASP.NET, performance profilng
 ms.assetid: a62d27fd-a966-4065-bebe-6874195a71fb
-caps.latest.revision: 33
+caps.latest.revision: "33"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: 6acfbee87e64e71ae85290ba74f1464af7181228
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 7fe6230d86e79b6540b35d358ac9af2a3b4760a7
-ms.contentlocale: de-de
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Vorgehensweise: Sammeln von Leistungsdaten für eine Website
 Sie können den **Leistungs-Assistenten** zum Sammeln von Leistungsdaten einer [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web-Anwendung verwenden. Sie können ein Profil einer Webanwendung erstellen, die in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]geöffnet ist, oder Sie können ein Profil einer [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] -Website erstellen, die sich auf dem lokalen Computer befindet und nicht in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE geöffnet ist.  
@@ -124,4 +107,3 @@ Sie können den **Leistungs-Assistenten** zum Sammeln von Leistungsdaten einer [
  [Konfigurieren von Leistungssitzungen](../profiling/configuring-performance-sessions.md)   
  [Grundlagen zu Instrumentierungsdatenwerten](../profiling/understanding-instrumentation-data-values.md)   
  [Grundlagen zu Samplingdatenwerten](../profiling/understanding-sampling-data-values.md)
-

@@ -1,35 +1,34 @@
 ---
-title: "Ausf&#252;hrungszeit (Threadansicht) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.cv.threads.timeline.execution"
-helpviewer_keywords: 
-  - "Nebenläufigkeitsschnellansicht, Ausführungszeit (Threadansicht)"
+title: "Ausführungszeit (Threadansicht) | Microsoft-Dokumentation"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.cv.threads.timeline.execution
+helpviewer_keywords: Concurrency Visualizer, Execution Time (Threads View)
 ms.assetid: 80c100f8-2502-4613-bfef-4f4f2e09cc8d
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 626f6b0eb9d20685c0b8f71f8dea6f4f02e27254
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Ausf&#252;hrungszeit (Threadansicht)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Diese Segmente auf der Zeitachse der Threadansicht stellen die Ausführungszeit dar, wenn der Thread aktiv Aufgaben mit einem logischen Kern des Systems ausführt.  
+# <a name="execution-time-threads-view"></a>Ausführungszeit (Threadansicht)
+Diese Segmente auf der Zeitachse der Threadansicht stellen die Ausführungszeit dar, wenn der Thread aktiv an einem logischen Kern im System arbeitet.  
   
- Änderungen des Threadstatus werden anhand von Kontextwechselereignissen des Kernels erkannt.  Von der Ereignisablaufverfolgung für Windows \(Event Tracing for Windows, ETW\) werden jede Millisekunde Beispielstapel aufzeichnet.  Es ist möglich, dass in einem sehr kurzen grünen Segment kein Beispiel aufgezeichnet wird.  Daher wird für einige kurze Ausführungssegmente möglicherweise keine Aufrufliste angezeigt.  
+ Änderungen am Threadstatus werden durch Kernel-Kontextwechselereignisse erkannt. Beispielstapel werden im Millisekundentakt durch die Ereignisablaufverfolgung für Windows (ETW) erfasst. In einem sehr kurzen grünen Segment ist es möglich, dass kein Beispiel erfasst wird. Daher zeigen einige kurze Ausführungssegmente möglicherweise keine Aufrufliste an.  
   
- Wenn Sie auf ein Ausführungssegment klicken, zeigt der Parallelitätsschnellansicht der Beispielstapel an, der den Speicherort des Klickens am nächsten ist.  Die Position dieses Beispielstapels wird durch einen schwarzen Pfeil oder ein Caretzeichen über der Zeitachse, der Beispielstapel selbst auf der Registerkarte **Aktuell** angezeigt.  
+ Wenn Sie auf ein Ausführungssegment klicken, zeigt die Nebenläufigkeitsschnellansicht den Beispielstapel an, der sich am nächsten zur Position des Klicks befindet. Der Speicherort des Beispielstapels wird durch einen schwarzen Pfeil oder ein Caretzeichen über der Zeitachse angezeigt. Der Beispielstapel erscheint dann auf der Registerkarte **Aktuell**.  
   
- Um ein herkömmliches Samplingprofil für alle Ausführungssegmente in der aktuellen Ansicht zu sehen, klicken Sie im sichtbaren Zeitachsenprofils auf **Ausführung**.  
+ Um ein herkömmliches Samplingprofil für alle Ausführungssegmente in der aktuellen Ansicht anzuzeigen, klicken Sie auf **Ausführung** im sichtbaren Zeitachsenprofil.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Ausführungsprofilbericht](../profiling/execution-profile-report.md)   
  [Threadansicht](../profiling/threads-view-parallel-performance.md)
