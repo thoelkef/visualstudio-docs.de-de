@@ -1,33 +1,33 @@
 ---
-title: "&lt;Package&gt;-Element (Bootstrapper) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<package>-Element [Bootstrapper]"
+title: '&lt;Paket&gt; Element (Bootstrapper) | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <package> element [bootstrapper]
 ms.assetid: ecd06658-ad02-4440-bccd-88437b7fb816
-caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 469024d48b1c145210aa518f10647d04315a0471
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# &lt;Package&gt;-Element (Bootstrapper)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Das `Package`\-Element ist das XML\-Element der obersten Ebene innerhalb einer Paketdatei.  
+# <a name="ltpackagegt-element-bootstrapper"></a>&lt;Paket&gt; Element (Bootstrapper)
+Die `Package` Element ist das XML-Element der obersten Ebene innerhalb einer Paketdatei.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <Package  
@@ -142,17 +142,17 @@ Das `Package`\-Element ist das XML\-Element der obersten Ebene innerhalb einer P
 </Package>  
 ```  
   
-## Elemente und Attribute  
- Das `Package`\-Element ist erforderlich.  Es verfügt über folgende Attribute.  
+## <a name="elements-and-attributes"></a>Elemente und Attribute  
+ Die `Package` Element ist erforderlich. Es weist folgende Attribute.  
   
 |Attribut|Beschreibung|  
-|--------------|------------------|  
-|`Culture`|Erforderlich.  Definiert die Kultur für dieses Paket. Diese bestimmt die Sprache, die verwendet werden soll.  Dieses Attribut ist ein Schlüssel für das `Strings`\-Element, in dem kulturspezifische Zeichenfolgen für Produktnamen und Installationsfehlermeldungen aufgelistet werden.|  
-|`Name`|Erforderlich.  Der Name des Pakets, der dem Entwickler in einem Tool wie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] angezeigt wird.  Dieses Attribut ist ein Schlüssel für das `Strings`\-Element, das ein `String`\-Element enthalten sollte, dessen `Name`\-Eigenschaft und `Culture`\-Eigenschaft entsprechend der `Name`\-Eigenschaft und der `Culture`\-Eigenschaft von `Package` festgelegt sind.|  
-|`LicenseAgreement`|Optional.  Gibt den Namen der Datei im Verteilungspaket an, die den Endbenutzer\-Lizenzvertrag \(EULA\) enthält.  Diese Datei kann entweder im Nur\-Text \(.txt\)\- oder Rich\-Text\-Format vorliegen.  \(.rtf\)|  
+|---------------|-----------------|  
+|`Culture`|Erforderlich. Definiert die Kultur für dieses Paket, das bestimmt, die zu verwendende Sprache an. Dieses Attribut ist ein Schlüssel für die `Strings` -Element, das kulturspezifische Zeichenfolgen für Produktnamen und Fehlermeldungen während der Installation aufgelistet.|  
+|`Name`|Erforderlich. Der Name des Pakets angezeigt, die Entwickler in einem Tool wie z. B. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Dieses Attribut ist ein Schlüssel in der `Strings` -Element, das enthalten soll eine `String` Element mit der `Name` und `Culture` Eigenschaften festgelegt werden, entsprechend der `Name` und `Culture` Eigenschaften des `Package`.|  
+|`LicenseAgreement`|Dies ist optional. Gibt den Namen der Datei im Verteilungspaket an die der Endbenutzer-Lizenzvertrag (EULA) enthält.  Diese Datei kann nur-Text (txt) oder Rich-Text-Format sein. (RTF)|  
   
-## Beispiel  
- Im folgenden Codebeispiel wird eine vollständige Paketdatei für das Verteilen von [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] veranschaulicht.  
+## <a name="example"></a>Beispiel  
+ Das folgende Codebeispiel zeigt eine vollständige Paketdatei für das Verteilen von der [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -189,5 +189,5 @@ Das `Package`\-Element ist das XML\-Element der obersten Ebene innerhalb einer P
 </Package>  
 ```  
   
-## Siehe auch  
- [Referenz zum Produkt\- und Paketschema](../deployment/product-and-package-schema-reference.md)
+## <a name="see-also"></a>Siehe auch  
+ [Referenz zum Produkt- und Paketschema](../deployment/product-and-package-schema-reference.md)

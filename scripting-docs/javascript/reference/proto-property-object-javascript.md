@@ -1,54 +1,56 @@
 ---
-title: "__proto__-Eigenschaft (Object) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "__proto__"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: __proto__-Eigenschaft (Objekt) (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: __proto__
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 97c3f84d-125e-4905-b921-b021264964ee
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e38669c400acba6f4ed3c4ee3fb5836c31b1bc00
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# __proto__-Eigenschaft (Object) (JavaScript)
+# <a name="proto-property-object-javascript"></a>__Proto__ -Eigenschaft (Objekt) (JavaScript)
 Enthält einen Verweis auf den internen Prototyp des angegebenen Objekts.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 object.__proto__  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `object`  
- Erforderlich.  Das Objekt, für das der Prototyp festgelegt werden soll.  
+ Erforderlich. Das Objekt, für das der Prototyp festgelegt werden soll.  
   
-## Hinweise  
- Mit der `__proto__`\-Eigenschaft kann der Prototyp für ein Objekt festgelegt werden.  
+## <a name="remarks"></a>Hinweise  
+ Mit der `__proto__`-Eigenschaft kann der Prototyp für ein Objekt festgelegt werden.  
   
- Das Objekt oder die Funktion erbt alle Methoden und Eigenschaften des neuen Prototyps und alle Methoden und Eigenschaften in der Prototypenkette neuen des Prototyps.  Ein Objekt kann nur einen einzigen Prototypen aufweisen \(geerbte Prototypen in der Prototypenkette zählen nicht\), wenn Sie daher die `__proto__`\-Eigenschaft aufrufen, ersetzen Sie den vorherigen Prototypen.  
+ Das Objekt oder die Funktion erbt alle Methoden und Eigenschaften des neuen Prototyps und alle Methoden und Eigenschaften in der Prototypenkette neuen des Prototyps. Ein Objekt kann nur einen einzigen Prototypen aufweisen (geerbte Prototypen in der Prototypenkette zählen nicht), wenn Sie daher die `__proto__`-Eigenschaft aufrufen, ersetzen Sie den vorherigen Prototypen.  
   
- Sie können den Prototyp nur für ein erweiterbares Objekt festlegen.  Weitere Informationen hierzu finden Sie unter [Object.preventExtensions\-Funktion](../../javascript/reference/object-preventextensions-function-javascript.md).  
+ Sie können den Prototyp nur für ein erweiterbares Objekt festlegen. Weitere Informationen finden Sie unter [Object.preventExtensions-Funktion](../../javascript/reference/object-preventextensions-function-javascript.md).  
   
 > [!NOTE]
->  Der `__proto__`\-Eigenschaftenname beginnt und endet mit zwei Unterstrichen.  
+>  Der `__proto__`-Eigenschaftenname beginnt und endet mit zwei Unterstrichen.  
   
-## Beispiel  
+## <a name="example"></a>Beispiel  
  Das folgende Codebeispiel veranschaulicht, wie der Prototyp für ein Objekt festgelegt wird.  
   
-```javascript  
+```JavaScript  
 function Rectangle() {  
 }  
   
@@ -61,10 +63,10 @@ if (console && console.log) {
 }  
 ```  
   
-## Beispiel  
+## <a name="example"></a>Beispiel  
  Im folgenden Codebeispiel wird veranschaulicht, wie Eigenschaften einem Objekt hinzugefügt werden, indem sie dem Prototypen hinzugefügt werden.  
   
-```javascript  
+```JavaScript  
 var proto = { y: 2 };  
   
 var obj = { x: 10 };  
@@ -80,10 +82,10 @@ if (console && console.log) {
 }  
 ```  
   
-## Beispiel  
- Im folgenden Codebeispiel werden dem `String`\-Objekt Eigenschaften hinzugefügt, indem ein neuer Prototyp dafür festgelegt wird.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Codebeispiel werden dem `String`-Objekt Eigenschaften hinzugefügt, indem ein neuer Prototyp dafür festgelegt wird.  
   
-```javascript  
+```JavaScript  
 var stringProp = { desc: "description" };  
   
 String.__proto__ = stringProp;  
@@ -104,8 +106,8 @@ if (console && console.log) {
 }  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Prototypen und Prototypvererbung](../../javascript/advanced/prototypes-and-prototype-inheritance.md)

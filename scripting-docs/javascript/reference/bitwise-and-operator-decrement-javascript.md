@@ -1,67 +1,69 @@
 ---
-title: "Bitweiser AND-Operator (&amp;) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "&"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Zuweisungsoperatoren, bitweise [JavaScript]"
-  - "&-Operator, Informationen über den &-Operator"
-  - "AND-Operator"
-  - "& (Operator)"
-  - "Bitweise Operatoren, AND-Operator"
-  - "&-Operator, bitweise Operatoren"
+title: Bitweiser AND-Operator (&amp;) (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: '&'
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- assignment operators, bitwise [JavaScript]
+- '& operator, about & operator'
+- AND operator
+- '& operator'
+- bitwise operators, AND operator
+- '& operator, bitwise operators'
 ms.assetid: a8c17a55-2599-4518-98d7-671699f4d5f3
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fa8b3eec0cbd7c172d08b16120fb54f3be3c6a48
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Bitweiser AND-Operator (&amp;) (JavaScript)
-Führt eine bitweise AND\-Operation für zwei 32\-Bit\-Ausdrücke durch.  
+# <a name="bitwise-and-operator-amp-javascript"></a>Bitweiser AND-Operator (&amp;) (JavaScript)
+Führt eine bitweise AND-Operation für zwei 32-Bit-Ausdrücke.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
 result = expression1 & expression2  
 ```  
   
-## Parameter  
+## <a name="parameters"></a>Parameter  
  `result`  
- Das Ergebnis der Operation.  
+ Das Ergebnis des Vorgangs.  
   
  `expression1`  
- Ein beliebiger Ausdruck.  
+ Beliebiger Ausdruck.  
   
  `expression2`  
- Ein beliebiger Ausdruck.  
+ Beliebiger Ausdruck.  
   
-## Hinweise  
- Der Operator `&` führt eine bitweise AND\-Operation mit jedem der Bits von zwei 32\-Bit\-Ausdrücken aus.  Wenn beide der Bits 1 sind, ist das Ergebnis 1.  Andernfalls ist das Ergebnis 0.  
+## <a name="remarks"></a>Hinweise  
+ Die `&` führt eine bitweise AND‑Operation für jede der Bits von zwei 32-Bit-Ausdrücken. Wenn beide Bits 1 sind, ist das Ergebnis 1. Das Ergebnis ist, andernfalls 0.  
   
-|Bit1|Bit2|mit AND verknüpfter Wert|  
-|----------|----------|------------------------------|  
+|Bit1|Bit2|And-Wert|  
+|----------|----------|-----------------|  
 |0|0|0|  
 |1|1|1|  
 |1|0|0|  
 |0|1|0|  
   
- Im den folgenden Beispielen wird die Verwendung des `&`\-Operators gezeigt.  
+ Den folgenden Beispielen wird veranschaulicht, wie die `&` Operator.  
   
-```javascript  
+```JavaScript  
 // 9 is 00000000000000000000000000001001  
 var expr1 = 9;  
   
@@ -75,10 +77,10 @@ document.write(result);
 // Output: 1  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## Siehe auch  
- [Bitweiser AND\-Zuweisungsoperator \(&\=\)](../../javascript/reference/bitwise-and-assignment-operator-decrement-equal-javascript.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Bitweise AND-Zuweisungsoperator (& =)](../../javascript/reference/bitwise-and-assignment-operator-decrement-equal-javascript.md)   
  [Operatorrangfolge](../../javascript/operator-subtractprecedence-javascript.md)   
- [Zusammenfassung der Operatoren \(JavaScript\)](../../javascript/misc/operator-subtractsummary-javascript.md)
+ [Zusammenfassung der Operatoren (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)

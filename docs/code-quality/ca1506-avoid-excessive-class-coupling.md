@@ -1,50 +1,51 @@
 ---
-title: "CA1506: &#220;berm&#228;&#223;ige Klassenkopplungen vermeiden | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "AvoidExcessiveClassCoupling"
-  - "CA1506"
-helpviewer_keywords: 
-  - "AvoidExcessiveClassCoupling"
-  - "CA1506"
+title: "CA1506: Übermäßige Klassenkopplungen vermeiden | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- AvoidExcessiveClassCoupling
+- CA1506
+helpviewer_keywords:
+- AvoidExcessiveClassCoupling
+- CA1506
 ms.assetid: 9f0943c0-e802-4e3f-8798-2ab8653ddc80
-caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 8192868aa7c5d79039a5e94a2aa13c47ada5d47c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CA1506: &#220;berm&#228;&#223;ige Klassenkopplungen vermeiden
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506: Übermäßige Klassenkopplungen vermeiden
 |||  
 |-|-|  
 |TypeName|AvoidExcessiveClassCoupling|  
 |CheckId|CA1506|  
-|Kategorie \(Category\)|Microsoft.Maintainability|  
+|Kategorie|Microsoft.Maintainability|  
 |Unterbrechende Änderung|Breaking|  
   
-## Ursache  
- Ein Typ oder eine Methode ist mit vielen anderen Typen gekoppelt.  
+## <a name="cause"></a>Ursache  
+ Ein Typ oder eine Methode ist mit vielen anderen Knotentypen gekoppelt.  
   
-## Regelbeschreibung  
+## <a name="rule-description"></a>Regelbeschreibung  
  Durch diese Regel wird die Klassenkopplung gemessen, indem die eindeutigen Typverweise, die ein Typ oder eine Methode enthält, gezählt werden.  
   
- Typen und Methoden mit einem hohen Grad an Klassenkopplung können schwer verwaltbar sein.  Es empfiehlt sich, Typen und Methoden zu verwenden, die lose Kopplung und hohe Kohäsion aufweisen.  
+ Typen und Methoden, die einen hohen Grad an Klassenkopplungen aufweisen können schwierig zu verwalten sein. Es wird empfohlen, Typen und Methoden, die lose Kopplung und hohe Kohäsion aufweisen.  
   
-## Behandeln von Verstößen  
- Um diesen Verstoß zu behandeln, gestalten Sie den Typ oder die Methode um, um die Anzahl der Typen zu reduzieren, mit denen sie gekoppelt sind.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Um diese Verstoß zu beheben, versuchen Sie, gestalten Sie den Typ oder eine Methode zum Verringern der Anzahl von Typen, mit denen er verknüpft ist.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Schließen Sie diese Warnung aus, wenn ein Typ oder eine Methode trotz der großen Anzahl von Abhängigkeiten von anderen Typen als verwaltbar angesehen wird.  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Schließen Sie diese Warnung, wenn der Typ oder Methode noch verwaltbar trotz der großen Anzahl von Abhängigkeiten von anderen Typen betrachtet wird.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Verwaltbarkeitswarnungen](../code-quality/maintainability-warnings.md)   
  [Messen von Komplexität und Verwaltbarkeit verwalteten Codes](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

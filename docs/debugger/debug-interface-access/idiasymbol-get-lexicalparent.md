@@ -1,52 +1,51 @@
 ---
-title: "IDiaSymbol::get_lexicalParent | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_lexicalParent-Methode"
+title: 'Idiasymbol:: Get_lexicalparent | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_lexicalParent method
 ms.assetid: 4d119965-33a8-474c-9c64-95c5218c389c
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0964fd67555166b6b1de0869177fa5c1fd25d754
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_lexicalParent
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft einen Verweis auf den lexikalischen übergeordneten Element des Symbols ab.  
+# <a name="idiasymbolgetlexicalparent"></a>IDiaSymbol::get_lexicalParent
+Ruft einen Verweis auf den übergeordneten lexikalischen des Symbols ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT get_lexicalParent (   
-   IDiaSymbol** pRetVal  
+```C++  
+HRESULT get_lexicalParent (   
+   IDiaSymbol** pRetVal  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pRetVal`  
- \[out\]  Gibt ein [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)\-Objekt zurück, das die lexikalische übergeordnete Element des Symbols darstellt.  
+ [out] Gibt eine [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das den übergeordneten lexikalischen des Symbols darstellt.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt `S_FALSE` oder Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
+>  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
-## Hinweise  
- Die lexikalische übergeordnete Element eines Symbols ist die einschließende Funktion oder dem Modul.  Beispielsweise ist die lexikalische übergeordnete Element eines Funktionsparameters oder einer lokalen Variablen der Funktion selbst, während die lexikalische übergeordnete Element der Funktion das Modul handelt, das sie definiert ist.  
+## <a name="remarks"></a>Hinweise  
+ Lexikalische das übergeordnete Element eines Symbols wird die einschließende Funktion oder dem Modul. Lexikalische übergeordnet Funktionsparameter oder als lokale Variable ist z. B. die Funktion selbst, während lexikalische das übergeordnete Element der Funktion das Modul ist, dem sie in definiert ist.  
   
- Die möglichen Symbole, die angezeigt werden können, während lexikalische übergeordnete Elemente in [Lexikalische Hierarchie der Symboltypen](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)dokumentiert sind.  
+ Die möglichen Symbole, die angezeigt werden können, wie im übergeordneten lexikalischen Elemente werden [lexikalische Hierarchie der Symboltypen](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md).  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Lexikalische Hierarchie der Symboltypen](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

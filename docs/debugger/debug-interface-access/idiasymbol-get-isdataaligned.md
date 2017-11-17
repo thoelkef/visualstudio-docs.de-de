@@ -1,56 +1,55 @@
 ---
-title: "IDiaSymbol::get_isDataAligned | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_isDataAligned-Methode"
+title: 'Idiasymbol:: Get_isdataaligned | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_isDataAligned method
 ms.assetid: ddd11a41-6c00-4829-acf4-aa1ace8c21a7
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9a654db4e9da3490950e390d74fa0148a974fdd2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_isDataAligned
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft ein Flag ab, das angibt, ob der benutzerdefinierte Typ \(UDT\) zu einer bestimmten Speicher Grenze ausgerichtet wurde.  
+# <a name="idiasymbolgetisdataaligned"></a>IDiaSymbol::get_isDataAligned
+Ruft ein Flag, das angibt, ob es sich bei der benutzerdefinierten Typ (UDT) auf einigen bestimmten Speicher-Begrenzung ausgerichtet wurde ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp  
+```C++  
 HRESULT get_isDataAligned(  
-   BOOL *pFlag  
+   BOOL *pFlag  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pFlag`  
- \[out\]  Gibt `TRUE` zurück, wenn der UDT in einer Grenze ausgerichtet wurde, Speicherplatz andernfalls gibt `FALSE`zurück.  
+ [out] Gibt `TRUE` , wenn der UDT auf einige Begrenzung des Arbeitsspeichers; ausgerichtet wurden, andernfalls `FALSE`.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt `S_FALSE` oder Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
+>  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
   
-## Hinweise  
- Diese Eigenschaft wird im Allgemeinen festgelegt, wenn die ausführbare Datei mit Ausrichtung von Daten standardmäßig nicht kompiliert wird.  Beispielsweise kann der Microsoft C\+\+\-Compiler die Daten annäherung an die Befehlszeilenoption \/Zp*\#*ändern, wo *\#* einen Bytewert darstellt.  
+## <a name="remarks"></a>Hinweise  
+ Diese Eigenschaft wird im Allgemeinen festgelegt, wenn die ausführbare Datei mit nicht standardmäßigen datenausrichtung kompiliert wird. Z. B. Microsoft C++-Compiler kann ändern, die datenausrichtung mit der Befehlszeilenoption/Zp*#*, wobei  *#*  ist ein Byte-Wert.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
   
 |Anforderung|Beschreibung|  
-|-----------------|------------------|  
+|-----------------|-----------------|  
 |Header:|dia2.h|  
-|Version:|DIA SDK v8.0|  
+|Version:|DIA-SDK 8.0|  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,60 +1,63 @@
 ---
-title: "bind-Methode (Funktion) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Argumente [JavaScript], bind-Methode"
-  - "bind-Methode [JavaScript]"
-  - "Parameter [JavaScript], bind-Methode"
-  - "this-Schlüsselwort [JavaScript], bind-Methode"
+title: BIND-Methode (Funktion) (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- parameters [JavaScript], bind method
+- arguments [JavaScript], bind method
+- bind method [JavaScript]
+- this keyword [JavaScript], bind method
 ms.assetid: 28946f47-b758-48cf-b508-610a0f2f6e19
-caps.latest.revision: 21
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: dd7fc752df9bd41f8625ac2cb484486dfd19558d
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# bind-Methode (Funktion) (JavaScript)
-Eine gegebene Funktion erstellt eine gebundene Funktion, die über den gleichen Text wie die ursprüngliche Funktion verfügt.  In der gebundenen Funktion wird das `this`\-Objekt in das übergebene Objekt aufgelöst.  Die gebundene Funktion weist die angegebenen ursprünglichen Parameter auf.  
+# <a name="bind-method-function-javascript"></a>bind-Methode (Funktion) (JavaScript)
+Eine gegebene Funktion erstellt eine gebundene Funktion, die über den gleichen Text wie die ursprüngliche Funktion verfügt. In der gebundenen Funktion wird das `this`-Objekt in das übergebene Objekt aufgelöst. Die gebundene Funktion weist die angegebenen ursprünglichen Parameter auf.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
 function.bind(thisArg[,arg1[,arg2[,argN]]])  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `function`  
- Erforderlich.  Ein Funktionsobjekt.  
+ Erforderlich. Ein Funktionsobjekt.  
   
  `thisArg`  
- Erforderlich.  Ein Objekt, auf das das `this`\-Schlüsselwort in der neuen Funktion verweisen kann.  
+ Erforderlich. Ein Objekt, auf das das `this`-Schlüsselwort in der neuen Funktion verweisen kann.  
   
- `arg1`\[,`arg2`\[,`argN`\]\]\]  
- Dies ist optional.  Eine Liste von Argumenten, die an die neue Funktion übergeben werden.  
+ `arg1`[,`arg2`[,`argN`]]]  
+ Dies ist optional. Eine Liste von Argumenten, die an die neue Funktion übergeben werden.  
   
-## Rückgabewert  
- Eine neue Funktion, die der `function`\-Funktion entspricht, mit Ausnahme des `thisArg`\-Objekts und des ursprünglichen Arguments.  
+## <a name="return-value"></a>Rückgabewert  
+ Eine neue Funktion, die der `function`-Funktion entspricht, mit Ausnahme des `thisArg`-Objekts und des ursprünglichen Arguments.  
   
-## Ausnahmen  
- Wenn die angegebene `function` keine Funktion ist, wird eine `TypeError`\-Ausnahme ausgelöst.  
+## <a name="exceptions"></a>Ausnahmen  
+ Wenn die angegebene `function` keine Funktion ist, wird eine `TypeError`-Ausnahme ausgelöst.  
   
-## Beispiel  
- Im folgenden Code wird die Verwendung der `bind`\-Methode veranschaulicht.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Code wird die Verwendung der `bind`-Methode veranschaulicht.  
   
-```javascript  
+```JavaScript  
 // Define the original function.  
 var checkNumericRange = function (value) {  
     if (typeof value !== 'number')  
@@ -76,10 +79,10 @@ document.write(result);
 // Output: true  
 ```  
   
-## Beispiel  
- Im folgenden Beispiel unterscheidet sich das `thisArg`\-Objekt vom Objekt, das die ursprüngliche Methode enthält.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel unterscheidet sich das `thisArg`-Objekt vom Objekt, das die ursprüngliche Methode enthält.  
   
-```javascript  
+```JavaScript  
 // Create an object that contains the original function.  
 var originalObject = {  
     minimum: 50,  
@@ -109,10 +112,10 @@ document.write(result);
 // Output: true  
 ```  
   
-## Beispiel  
- Im folgenden Code wird die Verwendung der `arg1[,arg2[,argN]]]`\-Argumente veranschaulicht.  Die Funktion verwendet die Parameter, die in der `bind`\-Methode als erster und zweiter Parameter angegeben sind.  Alle beim Aufruf der gebundenen Funktion angegebenen Parameter werden als dritter und vierter \(usw.\) Parameter verwendet.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Code wird die Verwendung der `arg1[,arg2[,argN]]]`-Argumente veranschaulicht. Die Funktion verwendet die Parameter, die in der `bind`-Methode als erster und zweiter Parameter angegeben sind. Alle beim Aufruf der gebundenen Funktion angegebenen Parameter werden als dritter und vierter (usw.) Parameter verwendet.  
   
-```javascript  
+```JavaScript  
 // Define the original function with four parameters.  
 var displayArgs = function (val1, val2, val3, val4) {  
     document.write(val1 + " " + val2 + " " + val3 + " " + val4);  
@@ -130,11 +133,11 @@ displayArgs2("b", "c");
 // Output: 12 a b c   
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
-## Siehe auch  
- [Function\-Objekt](../../javascript/reference/function-object-javascript.md)   
- [filter\-Methode \(Array\)](../../javascript/reference/filter-method-array-javascript.md)   
- [Verwenden der bind\-Methode](../../javascript/advanced/using-the-bind-method-javascript.md)   
- [Beispiel\-App für Hilo JavaScript \(Windows Store\)](http://hilojs.codeplex.com/SourceControl/latest)
+## <a name="see-also"></a>Siehe auch  
+ [Function-Objekt](../../javascript/reference/function-object-javascript.md)   
+ [Filter-Methode (Array)](../../javascript/reference/filter-method-array-javascript.md)   
+ [Verwenden der Bind-Methode](../../javascript/advanced/using-the-bind-method-javascript.md)   
+ [HiLo JavaScript-Beispiel-app (Windows Store)](http://hilojs.codeplex.com/SourceControl/latest)

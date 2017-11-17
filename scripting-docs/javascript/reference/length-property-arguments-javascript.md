@@ -1,48 +1,50 @@
 ---
-title: "length-Eigenschaft (Arguments) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "length Property"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Length-Eigenschaft"
-  - "length-Eigenschaft (Arguments)"
+title: Length-Eigenschaft (Arguments) (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: length Property
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- length property (arguments)
+- Length property
 ms.assetid: 3cf36823-15bc-489b-a951-24c4923d9dba
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: cede75a91244442f5f28ec9f71b7128814bed5d2
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# length-Eigenschaft (Arguments) (JavaScript)
+# <a name="length-property-arguments-javascript"></a>length-Eigenschaft (arguments) (JavaScript)
 Gibt die tatsächliche Anzahl der Argumente zurück, die von der aufrufenden Routine an eine Funktion übergeben wurden.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 [function.]arguments.length  
 ```  
   
-## Hinweise  
- Das optionale *function*\-Argument ist der Name des `Function`\-Objekts, das derzeit ausgeführt wird.  
+## <a name="remarks"></a>Hinweise  
+ Das optionale *Funktion* -Argument ist der Name der derzeit ausgeführten `Function` Objekt.  
   
- Die **length**\-Eigenschaft des **arguments**\-Objekts wird vom Skriptmodul mit der tatsächlichen Anzahl von Argumenten, die an ein `Function`\-Objekt übergeben wurden, zu Beginn der Ausführung dieser Funktion initialisiert.  
+ Die **Länge** Eigenschaft von der **Argumente** Objekt wird initialisiert, indem dem Skriptmodul in die tatsächliche Anzahl der Argumente an eine `Function` Objekt, wenn die Ausführung in dieser Funktion beginnt.  
   
-## Beispiel  
- Das folgende Beispiel veranschaulicht die Verwendung der **length**\-Eigenschaft des **arguments**\-Objekts.  Um das Beispiel besser zu verstehen, können Sie zusätzlich zu den zwei erwarteten Argumenten weitere Argumente an die Funktion übergeben:  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel veranschaulicht die Verwendung von der **Länge** Eigenschaft von der **Argumente** Objekt. Um das Beispiel vollständig zu verstehen, übergeben Sie mehrere Argumente an die Funktion als 2 Argumente erwartet:  
   
-```javascript  
+```JavaScript  
 function ArgTest(a, b){  
    var s = "";  
   
@@ -54,12 +56,12 @@ function ArgTest(a, b){
 }  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
- **Gilt für**: [arguments\-Objekt](../../javascript/reference/arguments-object-javascript.md)&#124; [Function\-Objekt](../../javascript/reference/function-object-javascript.md)  
+ **Gilt für**: [Arguments-Objekt](../../javascript/reference/arguments-object-javascript.md)&#124; [Objekt-Funktion](../../javascript/reference/function-object-javascript.md)  
   
-## Siehe auch  
- [arguments\-Eigenschaft \(Funktion\)](../../javascript/reference/arguments-property-function-javascript.md)   
- [length\-Eigenschaft \(Array\)](../../javascript/reference/length-property-array-javascript.md)   
- [length\-Eigenschaft \(String\)](../../javascript/reference/length-property-string-javascript.md)
+## <a name="see-also"></a>Siehe auch  
+ [Arguments-Eigenschaft (Funktion)](../../javascript/reference/arguments-property-function-javascript.md)   
+ [Length-Eigenschaft (Array)](../../javascript/reference/length-property-array-javascript.md)   
+ [length-Eigenschaft (String)](../../javascript/reference/length-property-string-javascript.md)

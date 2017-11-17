@@ -1,51 +1,53 @@
 ---
-title: "&quot;continue&quot; ist au&#223;erhalb der Schleife unzul&#228;ssig | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.WebClient.Help.SCRIPT1020"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Kann &#39; haben t &#39; weiterhin &#39; außerhalb der Schleife | Microsoft Docs"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.WebClient.Help.SCRIPT1020
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: d2d95259-b2bc-4069-9876-60c30ad600a3
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8760eef1bb69f5f3ad18791dde8e25ce16776735
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# &quot;continue&quot; ist au&#223;erhalb der Schleife unzul&#228;ssig
-Sie haben versucht, die **continue**\-Anweisung außerhalb einer Schleife zu verwenden.  Die Verwendung der **continue**\-Anweisung ist nur möglich innerhalb folgender Elemente:  
+# <a name="can39t-have-39continue39-outside-of-loop"></a>Kann &#39; haben t &#39; weiterhin &#39; außerhalb der Schleife unzulässig
+Sie haben versucht, die **weiterhin** Anweisung außerhalb einer Schleife. Die **weiterhin** -Anweisung kann nur innerhalb eines Texts der a: verwendet werden  
   
--   `do-while`\-Schleife,  
+-   `do-while`Schleife  
   
--   `while`\-Schleife,  
+-   `while`Schleife  
   
--   **for**\-Schleife,  
+-   **für** -Schleife  
   
--   **for\/in**\-Schleife.  
+-   **für/** Schleife.  
   
-### So beheben Sie diesen Fehler  
+### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Stellen Sie sicher, dass die **continue**\-Anweisung innerhalb folgender Elemente angezeigt wird:  
+-   Stellen Sie sicher, dass die **weiterhin** -Anweisung angezeigt wird, innerhalb eines Texts der a:  
   
-    -   `do-while`\-Schleife,  
+    -   `do-while`Schleife  
   
-    -   `while`\-Schleife,  
+    -   `while`Schleife  
   
-    -   **for**\-Schleife,  
+    -   **für** -Schleife  
   
-    -   **for\/in**\-Schleife.  
+    -   **für/** Schleife.  
   
-## Siehe auch  
- [continue\-Anweisung](../../javascript/reference/continue-statement-javascript.md)   
+## <a name="see-also"></a>Siehe auch  
+ [continue-Anweisung](../../javascript/reference/continue-statement-javascript.md)   
  [Steuerung des Programmablaufs](../../javascript/controlling-program-flow-javascript.md)   
  [Problembehandlung bei Skripts](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

@@ -1,34 +1,36 @@
 ---
-title: "substring-Methode (String) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "substring"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Teilzeichenfolgen"
-  - "substring-Methode"
+title: substring-Methode (String) (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: substring
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- substrings
+- substring method
 ms.assetid: 9cf9a005-cbe3-42fd-828b-57a39f54224c
-caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 15ebaadc7b24fa97f531a22f6deb1453ff52b3e7
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# substring-Methode (String) (JavaScript)
-Gibt eine untergeordnete Zeichenfolge an der angegebenen Position in einem `String`\-Objekt zurück.  
+# <a name="substring-method-string-javascript"></a>substring-Methode (String) (JavaScript)
+Gibt die Teilzeichenfolge an der angegebenen Position innerhalb einer `String` Objekt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
@@ -36,28 +38,28 @@ Gibt eine untergeordnete Zeichenfolge an der angegebenen Position in einem `Stri
 "String Literal".substring(start [, end])   
 ```  
   
-## Parameter  
+## <a name="parameters"></a>Parameter  
  `start`  
- Erforderlich.  Die nullbasierte Indexganzzahl, die den Beginn der untergeordneten Zeichenfolge angibt.  
+ Erforderlich. Der nullbasierte Index ganze Zahl, die den Anfang der Teilzeichenfolge angibt.  
   
  `end`  
- Optional.  Die nullbasierte Indexganzzahl, die das Ende der untergeordneten Zeichenfolge angibt.  Die untergeordnete Zeichenfolge enthält die Zeichen bis zum, aber nicht einschließlich des von `end` angegebenen Zeichens.  
+ Dies ist optional. Der nullbasierte Index ganze Zahl, die das Ende der Teilzeichenfolge. Die Teilzeichenfolge enthält die Zeichen bis zum, aber nicht einschließlich, das Zeichen, die durch angegeben `end`.  
   
- Wenn `end` weggelassen wird, werden die Zeichen von `start` bis zum Ende der ursprünglichen Zeichenfolge zurückgegeben.  
+ Wenn `end` weggelassen wird, die Zeichen von `start` bis zum Ende der ursprünglichen Zeichenfolge zurückgegeben.  
   
-## Hinweise  
- Die `substring`\-Methode gibt eine Zeichenfolge zurück, die die untergeordnete Zeichenfolge von `start` bis, aber nicht einschließlich, `end` enthält.  
+## <a name="remarks"></a>Hinweise  
+ Die `substring` Methode gibt eine Zeichenfolge, enthält die Teilzeichenfolge aus `start` bis zur, aber nicht einschließlich `end`.  
   
- Die **substring**\-Methode verwendet den niedrigeren Wert von `start` und `end` als Ausgangspunkt für die untergeordnete Zeichenfolge.  Beispielsweise wird durch strvar.substring\(0, 3**\)** und strvar.substring\(3, 0\) dieselbe Teilzeichenfolge zurückgegeben.  
+ Die **Teilzeichenfolge** Methode verwendet den unteren Wert des `start` und `end` als Ausgangspunkt der Teilzeichenfolge. Beispielsweise strvar.substring (0, 3**)** und strvar.substring (3, 0) zurück, die gleiche Teilzeichenfolge.  
   
- Wenn entweder `start` oder `end` den Wert `NaN` oder einen negativen Wert hat, wird der entsprechende Wert durch Null \(0\) ersetzt.  
+ Wenn entweder `start` oder `end` ist `NaN` oder negativ ist, es ersetzt wird mit 0 (null).  
   
- Die Länge der untergeordneten Zeichenfolge entspricht dem absoluten Wert der Differenz zwischen `start` und `end`.  Die untergeordnete Zeichenfolge, die z. B. in strvar.substring\(0, 3\) und strvar.substring\(3, 0\) zurückgegeben wird, hat eine Länge von drei Zeichen.  
+ Die Länge der Teilzeichenfolge ist gleich dem absoluten Wert des Unterschieds zwischen `start` und `end`. Z. B. die Länge der Teilzeichenfolge in strvar.substring (0, 3) zurückgegeben und strvar.substring (3, 0) gleich 3.  
   
-## Beispiel  
- Das folgende Beispiel veranschaulicht die Verwendung der **substring**\-Methode.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel veranschaulicht die Verwendung der **Teilzeichenfolge** Methode.  
   
-```javascript  
+```JavaScript  
 var s = "The quick brown fox jumps over the lazy dog.";  
 var ss = s.substring(10, 15);  
 document.write(ss);  
@@ -67,8 +69,8 @@ document.write(ss);
   
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## Siehe auch  
- [substr\-Methode \(String\)](../../javascript/reference/substr-method-string-javascript.md)
+## <a name="see-also"></a>Siehe auch  
+ [substr-Methode (String)](../../javascript/reference/substr-method-string-javascript.md)

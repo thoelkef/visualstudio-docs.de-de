@@ -1,47 +1,46 @@
 ---
-title: "IDiaSymbol::get_udtKind | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_udtKind-Methode"
+title: 'Idiasymbol:: Get_udtkind | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_udtKind method
 ms.assetid: 4002f887-aea6-4475-b302-67c57079fe0a
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7dc4a95e3dd8752601172f268bd9b15f099182e6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_udtKind
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft die Auswahl eines benutzerdefinierten Typs \(UDT\).  
+# <a name="idiasymbolgetudtkind"></a>IDiaSymbol::get_udtKind
+Ruft die Vielfalt an einen benutzerdefinierten Typ (UDT) ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT get_udtKind (   
-   DWORD* pRetVal  
+```C++  
+HRESULT get_udtKind (   
+   DWORD* pRetVal  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pRetVal`  
- \[out\]  Gibt einen Wert aus der [UdtKind\-Enumeration](../../debugger/debug-interface-access/udtkind.md)\-Enumeration zurück, die die Art eines UDT angegeben wird: Klasse, Struktur oder Union.  
+ [out] Gibt einen Wert aus der [UdtKind-Enumeration](../../debugger/debug-interface-access/udtkind.md) -Enumeration, der den Typ des UDT angibt: Struktur, Klasse oder Union.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt `S_FALSE` oder Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
+>  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [UdtKind\-Enumeration](../../debugger/debug-interface-access/udtkind.md)
+ [UdtKind-Enumeration](../../debugger/debug-interface-access/udtkind.md)

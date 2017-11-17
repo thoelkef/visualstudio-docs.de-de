@@ -1,38 +1,41 @@
 ---
-title: "byteLength-Eigenschaft (Uint8ClampedArray) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: ByteLength-Eigenschaft (Uint8ClampedArray) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 37ae1728-8e2c-496c-bb77-f5f85b1ecbba
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a949f245b0710e4c44c7a5944869eca4ea146375
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# byteLength-Eigenschaft (Uint8ClampedArray)
-Schreibgeschützt.  Die Länge dieses Arrays vom Beginn des [ArrayBuffers](../../javascript/reference/arraybuffer-object.md) in Bytes, so wie bei der Konstruktion festgelegt.  
+# <a name="bytelength-property-uint8clampedarray"></a>byteLength-Eigenschaft (Uint8ClampedArray)
+Schreibgeschützt. Die Länge dieses Arrays vom Beginn des seine [ArrayBuffer](../../javascript/reference/arraybuffer-object.md), in Bytes, so wie bei der Konstruktion festgelegt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```javascript  
+```JavaScript  
 var arrayByteLength = uint8ClampedArray.byteLength;  
 ```  
   
-## Beispiel  
+## <a name="example"></a>Beispiel  
  Im folgenden Beispiel wird veranschaulicht, wie die Länge des Arrays abgerufen wird.  
   
-```javascript  
+```JavaScript  
 var req = new XMLHttpRequest();  
     req.open('GET', "http://www.example.com");  
     req.responseType = "arraybuffer";  
@@ -49,9 +52,9 @@ var req = new XMLHttpRequest();
   
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv11_winonly](../../javascript/reference/includes/jsv11-winonly-md.md)]  
   
-## Siehe auch  
- [ArrayBuffer\-Objekt](../../javascript/reference/arraybuffer-object.md)   
- [Uint8ClampedArray\-Objekt](../../javascript/reference/uint8clampedarray-object-javascript.md)
+## <a name="see-also"></a>Siehe auch  
+ [ArrayBuffer-Objekt](../../javascript/reference/arraybuffer-object.md)   
+ [Uint8ClampedArray-Objekt](../../javascript/reference/uint8clampedarray-object-javascript.md)

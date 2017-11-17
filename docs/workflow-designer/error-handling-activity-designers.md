@@ -1,31 +1,35 @@
 ---
-title: "Fehlerbehandlungsaktivit&#228;tsdesigner | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Fehler bei der Verarbeitung von Aktivitätsdesignern | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 ms.assetid: 9679ca32-ad7f-4089-824e-fdb931e47a30
-caps.latest.revision: 4
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: 937327ee424d374fa91db223f64e68182e47e5c3
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Fehlerbehandlungsaktivit&#228;tsdesigner
-Die Fehlerbehandlung\-Aktivitätsdesigner werden verwendet, um die Fehlerbehandlung in [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] zu verwalten.Die Themen in diesem Abschnitt enthalten Anleitungen zur Verwendung der [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]\-Aktivitäts\- und Vorlagen\-Designer.  
+# <a name="error-handling-activity-designers"></a>Fehlerbehandlungsaktivitätsdesigner
+Die Fehlerbehandlung-Aktivitätsdesigner werden verwendet, um die Fehlerbehandlung in [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] zu verwalten. Die Themen in diesem Abschnitt enthalten Anleitungen zur Verwendung der [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]-Aktivitäts- und Vorlagen-Designer.  
   
-## In diesem Abschnitt  
+## <a name="in-this-section"></a>In diesem Abschnitt  
  [Rethrow](../workflow-designer/rethrow-activity-designer.md)  
- Dient zum Erstellen und Konfigurieren einer <xref:System.Activities.Statements.Rethrow>\-Aktivität.  
+ Dient zum Erstellen und Konfigurieren einer <xref:System.Activities.Statements.Rethrow>-Aktivität.  
   
  [Throw](../workflow-designer/throw-activity-designer.md)  
- Dient zum Erstellen und Konfigurieren einer <xref:System.Activities.Statements.Throw>\-Aktivität.  
+ Dient zum Erstellen und Konfigurieren einer <xref:System.Activities.Statements.Throw>-Aktivität.  
   
  [TryCatch](../workflow-designer/trycatch-activity-designer.md)  
- Dient zum Erstellen und Konfigurieren einer <xref:System.Activities.Statements.TryCatch>\-Aktivität.  
+ Dient zum Erstellen und Konfigurieren einer <xref:System.Activities.Statements.TryCatch>-Aktivität.  
   
-## Referenz  
+## <a name="reference"></a>Verweis  
   
-## Verwandte Abschnitte
+## <a name="related-sections"></a>Verwandte Abschnitte

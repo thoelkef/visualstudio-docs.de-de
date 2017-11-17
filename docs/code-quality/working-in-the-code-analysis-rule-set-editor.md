@@ -1,77 +1,77 @@
 ---
-title: "Arbeiten mit dem Regelsatz-Editor f&#252;r die Codeanalyse | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.codeanalysis.ruleseteditor"
+title: In der Regel zur Codeanalyse Workingsets Editor | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.codeanalysis.ruleseteditor
 ms.assetid: 370c97bf-bb29-4b2f-b9ae-ba125bce7b2d
-caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: d5a0fc10230c4c2b7638e1be75770872e0dcf4aa
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Arbeiten mit dem Regelsatz-Editor f&#252;r die Codeanalyse
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Der Regelsatz\-Editor für die Codeanalyse ermöglicht es Ihnen, die Regeln in einem benutzerdefinierten Regelsatz und die Aktion anzugeben.  Sie können auch die Aktion angeben, die ausgeführt werden soll, wenn die Codeanalyse einen Verstoß gegen die Regel feststellt.  
+# <a name="working-in-the-code-analysis-rule-set-editor"></a>Arbeiten mit dem Regelsatz-Editor für die Codeanalyse
+Die Codeanalyse Regelsatz-Editor können Sie die Regeln an, die in einem benutzerdefinierten Regelsatz enthalten sind und die Aktion an. Sie können auch angeben, dass die Aktion an, bei der Codeanalyse einen Verstoß gegen diese Regel erkennt.  
   
-|Aktion|**Beschreibung**|  
-|------------|----------------------|  
-|**Warning**|Generiert eine Warnung im Fenster **Fehlerliste**.|  
-|**Error**|Generiert einen Fehler im Fenster **Fehlerliste**.|  
-|**None**|Deaktiviert die Regel.|  
+|Aktion|Beschreibung|  
+|------------|-----------------|  
+|**Warnung**|Generiert eine Warnung in der **Fehlerliste** Fenster.|  
+|**Fehler**|Generiert einen Fehler in der **Fehlerliste** Fenster.|  
+|**Keine**|Deaktiviert die Regel.|  
   
- Der Editor zeigt die Regeln in einer Struktur an, in der die Regeln nach dem von Ihnen angegebenen Regelsatzfeld gruppiert werden.  Führen Sie einen oder mehrere der folgenden Schritte aus, um Regeln einem Regelsatz hinzuzufügen oder daraus zu entfernen:  
+ Der Editor zeigt die Regeln in einer Baumstruktur, die Gruppen der Regeln nach Feld festlegen, die Sie angeben. Zum Hinzufügen oder Entfernen von Regeln aus einem Regelsatz, können führen Sie eine oder mehrere der folgenden Schritte aus:  
   
--   Aktivieren oder deaktivieren Sie das Kontrollkästchen des Gruppenknotens, um alle Regeln der Gruppe hinzuzufügen oder zu entfernen.  Wenn Sie eine Gruppe auswählen, wird für alle Regeln die Warnaktion festgelegt.  
+-   Aktivieren Sie oder deaktivieren Sie das Kontrollkästchen für den Gruppenknoten hinzufügen oder entfernen alle Regeln in der Gruppe. Wenn Sie eine Gruppe auswählen, werden alle Regeln festgelegt, dass Sie die **Warnung** Aktion.  
   
--   Klicken Sie auf das Feld **Aktion** einer Gruppe, und geben Sie dann die Aktion an, die für alle Regeln in der Gruppe gelten soll.  
+-   Klicken Sie auf die **Aktion** Feld einer Gruppe, und geben Sie dann die Aktion für alle Regeln in der Gruppe angewendet.  
   
--   Aktivieren oder deaktivieren Sie das Kontrollkästchen einer einzelnen Regel.  Wenn Sie das Kontrollkästchen für eine Regel aktivieren, wird die Regel auf die Warnaktion festgelegt.  
+-   Aktivieren Sie oder deaktivieren Sie das Kontrollkästchen für eine einzelne Regel. Wenn Sie das Kontrollkästchen für eine Regel auswählen, wird die Regel auf die Warnaktion festgelegt.  
   
-## Symbolleiste des Regelsatz\-Editors  
- Mit der Symbolleiste des Regelsatz\-Editors können Sie die Daten, die im Regelsatzraster angezeigt werden, gruppieren, filtern und durchsuchen.  
+## <a name="rule-set-editor-toolbar"></a>Regelsatz-Editor-Symbolleiste  
+ Sie können die Symbolleiste des Regelsatz-Editor verwenden, zu gruppieren, Filtern und suchen die angezeigten Daten im Raster Gruppe "Regel".  
   
- In der folgenden Tabelle werden die Steuerelemente der Symbolleiste des Regelsatz\-Editors beschrieben.  
+ Die folgende Tabelle beschreibt die Steuerelemente auf der Symbolleiste des Regelsatz-Editor.  
   
-|Steuerelement der Symbolleiste|**Beschreibung**|  
-|------------------------------------|----------------------|  
-|**Alle erweitern**|Zeigt die Regeln in allen Gruppen an.|  
-|**Alle reduzieren**|Blendet die Regeln in allen Gruppen aus.|  
-|**Group By**|Gibt das Feld an, nach dem Regeln gruppiert werden.  Klicken auf **\<Keine\>**, um die Regeln ohne Gruppen anzuzeigen.|  
-|**Spaltenoptionen**|Gibt die Regelfelder an, die angezeigt werden sollen.|  
-|**Regeln ausblenden, die auf die aktuelle Projektmappe nicht zutreffen**|Zeigt Regeln an, die nicht dem gleichen Zieltyp wie die Projektmappe entsprechen, oder blendet diese aus.|  
-|**Regeln anzeigen, die Codeanalysefehler generieren können**|Zeigt Regeln an, denen die Fehleraktion zugewiesen wurde, oder blendet diese aus.|  
-|**Regeln anzeigen, die Codeanalysewarnungen generieren können**|Zeigt Regeln an, denen die Warnaktion zugewiesen wurde, oder blendet diese aus.|  
-|**Nicht aktivierte Regeln anzeigen**|Zeigt Regeln an, denen die Aktion "Keine" zugewiesen wurde, oder blendet diese aus.|  
-|**Untergeordnete Regelsätze hinzufügen oder entfernen**|Fügt die Regeln den ausgewählten Regelsätzen hinzu oder entfernt sie.|  
-|**Suchregeln**|Sucht in allen Feldwerten nach der Zeichenfolge, die Sie angeben.|  
+|ToolBar-Steuerelement|Beschreibung|  
+|---------------------|-----------------|  
+|**Alle Ebenen erweitern**|Zeigt die Regeln in allen Gruppen an.|  
+|**Alle Ebenen reduzieren**|Blendet die Regeln in allen Gruppen an.|  
+|**Group By**|Gibt das Feld mit dem Regeln gruppiert werden. Klicken Sie auf  **\<None >** die Regeln ohne Gruppen anzuzeigen.|  
+|**Spaltenoptionen**|Gibt die Regelfelder angezeigt.|  
+|**Regeln ausblenden, die nicht für die aktuelle Projektmappe gelten**|Anzeigen oder ausblenden Regeln, die nicht von den gleichen Zieltyp wie die Lösung enthalten sind.|  
+|**Regeln anzeigen, die Codeanalysefehler generieren können**|Anzeigen oder ausblenden Regeln, die die Fehleraktion zugewiesen sind.|  
+|**Regeln anzeigen, die codeanalysewarnungen generieren können**|Anzeigen oder ausblenden Regeln, die die Warnaktion zugewiesen sind.|  
+|**Regeln anzeigen, die nicht aktiviert sind**|Blendet oder Regeln, die keine zugewiesen sind Aktion.|  
+|**Hinzufügen oder Entfernen von untergeordnete Regelsätze**|Fügt oder die Regeln in der ausgewählten Regelsätze entfernt.|  
+|**Search-Regeln**|Sucht alle Feldwerte für die Zeichenfolge, die Sie angeben.|  
   
-## Regelsatzfelder  
- Regelsatzfelder zeigen Informationen zu einem Regelsatz an und können zum Sortieren und Gruppieren der Regelliste verwendet werden.  Um Felder ein\- oder auszublenden, klicken Sie auf der Symbolleiste des Regelsatz\-Editors auf **Spaltenoptionen**, und aktivieren oder deaktivieren Sie die Kontrollkästchen der Felder, die ein\- oder ausgeblendet werden sollen.  
+## <a name="rule-set-fields"></a>Regel-Set-Felder  
+ Regelsatz Felder Anzeigeinformationen zu einer Regel festlegen und zu sortieren und Gruppieren der Regelliste verwendet werden kann. Klicken Sie zum Anzeigen oder Ausblenden von Feldern, die auf **Spaltenoptionen** für die Regel-Editor-Symbolleiste, und überprüfen Sie dann aktivieren bzw. deaktivieren die Kontrollkästchen der Felder, die ein- oder auszublenden.  
   
- In der folgenden Tabelle werden die Felder eines Regelsatzes beschrieben.  
+ Die folgende Tabelle beschreibt die Felder des einen Regelsatzes.  
   
-|Feld|**Beschreibung**|  
-|----------|----------------------|  
+|Feld|Beschreibung|  
+|-----------|-----------------|  
 |**ID**|Der Bezeichner der Regel.|  
-|**Category**|Zusätzlich zu ihrer Zugehörigkeit zu Regelsätzen werden Codeanalyseregeln auch nach Kategorien gruppiert.  Weitere Informationen finden Sie unter [Warnungen bei der Analyse von verwaltetem Code](../code-quality/code-analysis-for-managed-code-warnings.md).|  
+|**Kategorie**|Zusätzlich zu ihrer Zugehörigkeit zu Regelsätzen werden Codeanalyseregeln auch nach Kategorien gruppiert. Weitere Informationen finden Sie unter [Codeanalyse für verwalteten Code (Warnungen)](../code-quality/code-analysis-for-managed-code-warnings.md).|  
 |**Name**|Der Titel der Regel.|  
 |**Namespace**|Der Namespace der Regel.|  
-|**Target Type**|Gibt an, ob die Regel für systemeigenen, verwalteten oder Datenbankcode gilt.|  
-|**Action**|Die Aktion, die bei einem Verstoß gegen die Regel während einer Codeanalyseausführung ausgeführt wird.<br /><br /> **Warning** – erzeugt eine Warnung.<br /><br /> **Error**\- erzeugt einen Fehler.<br /><br /> **None** \- deaktiviert die Regel.<br /><br /> Sie können das Aktionsfeld bearbeiten.  Wenn der Wert auf \<Keine\> festgelegt ist, hat das die gleichen Auswirkungen wie eine Deaktivierung des Kontrollkästchens für die Regel.|  
-|**Source Rule Sets**|Der Regelsatz, der die Regel enthält.|  
+|**Zieltyp**|Gibt an, ob die Regel für systemeigenen ist, verwaltet oder Datenbankcode.|  
+|**Aktion**|Die Aktion ausgeführt, wenn gegen diese Regel in der Ausführung einer Codeanalyse verstoßen wird.<br /><br /> **Warnung** -wird eine Warnung generiert.<br /><br /> **Fehler beim** -generiert einen Fehler.<br /><br /> **Keine** -deaktiviert die Regel.<br /><br /> Sie können das Aktionsfeld bearbeiten. Festlegen des Werts auf None entspricht dem Deaktivieren des Kontrollkästchens für die Regel.|  
+|**Source-Regelsätze**|Der Regelsatz, der die Regel enthält.|  
   
-## Sortieren und Filtern von Regelsätzen  
- Über die Spaltenüberschriften des Regelsatzrasters können Sie die Regeln nach den Werten des Felds sortieren und filtern.  
+## <a name="sorting-and-filtering-rule-sets"></a>Sortieren und Filtern von Regelsätzen  
+ Über die Spaltenheader des Rasters Regel festlegen können Sie sortiert und die Regeln filtern, indem Sie die Werte des Felds.  
   
--   Klicken Sie zum Sortieren der Regelsatzlisten auf die Spaltenüberschrift des Felds, nach dem sortiert werden soll.  Wenn die Regelsätze gruppiert werden, wird jede Gruppe einzeln sortiert.  
+-   Um die Regel Set-Listen zu sortieren, klicken Sie auf die Spaltenüberschrift des Felds, nach dem sortiert werden soll. Wenn die Regelsätze gruppiert werden, wird jede Gruppe einzeln sortiert.  
   
--   Klicken Sie zum Filtern der Regelsätze nach dem Wert eines Felds auf die Filterschaltfläche der Spaltenüberschrift des Felds, nach dem Sie filtern möchten.  Aktivieren Sie die Kontrollkästchen der Werte, die angezeigt werden sollen, und deaktivieren Sie die Werte der Kontrollkästchen, die ausgeblendet werden sollen.
+-   Um die Regelsätze durch den Wert eines Felds zu filtern, klicken Sie auf die Filterschaltfläche auf die Spaltenüberschrift des Felds, nach denen Sie filtern möchten. Wählen Sie die Kontrollkästchen für die Werte, die Sie anzeigen möchten, und deaktivieren Sie die Kontrollkästchen für die Werte, die Sie ausblenden möchten.

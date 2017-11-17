@@ -1,11 +1,10 @@
 ---
-title: 'CA2208: Instantiate argument exceptions correctly | Microsoft Docs'
+title: 'CA2208: Argumentausnahmen korrekt instanziieren | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,79 +14,68 @@ helpviewer_keywords:
 - InstantiateArgumentExceptionsCorrectly
 - CA2208
 ms.assetid: e2a48939-d9fa-478c-b2f9-3bdbce07dff7
-caps.latest.revision: 19
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 770dc36e002712905fc90652308bfd9a63b1b897
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "19"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 4cb25017750ee95d55f1c776dea1f062f24ec22c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2208-instantiate-argument-exceptions-correctly"></a>CA2208: Instantiate argument exceptions correctly
+# <a name="ca2208-instantiate-argument-exceptions-correctly"></a>CA2208: Argumentausnahmen korrekt instanziieren
 |||  
 |-|-|  
 |TypeName|InstantiateArgumentExceptionsCorrectly|  
 |CheckId|CA2208|  
-|Category|Microsoft.Usage|  
-|Breaking Change|Non Breaking|  
+|Kategorie|Microsoft.Usage|  
+|Unterbrechende Änderung|Nicht unterbrechende Änderung|  
   
-## <a name="cause"></a>Cause  
- Possible causes include the following situations:  
+## <a name="cause"></a>Ursache  
+ Mögliche Ursachen sind die folgenden Situationen:  
   
--   A call is made to the default (parameterless) constructor of an exception type that is, or derives from <xref:System.ArgumentException>.  
+-   Eine Puffermethode wurde der (parameterlose) Standardkonstruktor eines Ausnahmetyps wird, die ist oder davon abgeleitet wurde <xref:System.ArgumentException>.  
   
--   An incorrect string argument is passed to a parameterized constructor of an exception type that is, or derives from <xref:System.ArgumentException>.  
+-   Ein falsches Zeichenfolgenargument wird an einen parametrisierten Konstruktor eines Ausnahmetyps wird, die ist oder davon abgeleitet wurde übergeben <xref:System.ArgumentException>.  
   
-## <a name="rule-description"></a>Rule Description  
- Instead of calling the default constructor, call one of the constructor overloads that allows a more meaningful exception message to be provided. The exception message should target the developer and clearly explain the error condition and how to correct or avoid the exception.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Statt den Standardkonstruktor aufrufen, rufen Sie die Konstruktorüberladung, die eine aussagekräftigere Ausnahmemeldung bereitgestellt werden können. Die Ausnahmemeldung sollte den Entwickler ausgerichtet und klar Fehlerzustand und das korrigieren oder die Ausnahme verhindern.  
   
- The signatures of the one and two string constructors of <xref:System.ArgumentException> and its derived types are not consistent with respect to the `message` and `paramName` parameters. Make sure these constructors are called with the correct string arguments. The signatures are as follows:  
+ Die Signaturen der Konstruktoren von mit einer oder zwei Zeichenfolgen <xref:System.ArgumentException> und die abgeleiteten Typen sind nicht konsistent in Bezug auf die `message` und `paramName` Parameter. Stellen Sie sicher, dass diese Konstruktoren mit den richtigen Zeichenfolgenargumenten aufgerufen werden. Die Signaturen lauten wie folgt:  
   
- <xref:System.ArgumentException>(string `message`)  
+ <xref:System.ArgumentException>(String `message`)  
   
- <xref:System.ArgumentException>(string `message`, string `paramName`)  
+ <xref:System.ArgumentException>(String `message`, Zeichenfolge `paramName`)  
   
- <xref:System.ArgumentNullException>(string `paramName`)  
+ <xref:System.ArgumentNullException>(String `paramName`)  
   
- <xref:System.ArgumentNullException>(string `paramName`, string `message`)  
+ <xref:System.ArgumentNullException>(String `paramName`, Zeichenfolge `message`)  
   
- <xref:System.ArgumentOutOfRangeException>(string `paramName`)  
+ <xref:System.ArgumentOutOfRangeException>(String `paramName`)  
   
- <xref:System.ArgumentOutOfRangeException>(string `paramName`, string `message`)  
+ <xref:System.ArgumentOutOfRangeException>(String `paramName`, Zeichenfolge `message`)  
   
- <xref:System.DuplicateWaitObjectException>(string `parameterName`)  
+ <xref:System.DuplicateWaitObjectException>(String `parameterName`)  
   
- <xref:System.DuplicateWaitObjectException>(string `parameterName`, string `message`)  
+ <xref:System.DuplicateWaitObjectException>(String `parameterName`, Zeichenfolge `message`)  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, call a constructor that takes a message, a parameter name, or both, and make sure the arguments are proper for the type of <xref:System.ArgumentException> being called.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Um einen Verstoß gegen diese Regel zu beheben, rufen Sie einen Konstruktor, der eine Meldung, einen Parameternamen ein oder beide akzeptiert und stellen Sie sicher, dass die Argumente für den Typ des richtigen <xref:System.ArgumentException> aufgerufen werden.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule only if a parameterized constructor is called with the correct string arguments.  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Sie können ruhig zum Unterdrücken einer Warnung dieser Regel, nur, wenn Sie ein parametrisierter Konstruktor mit den richtigen Zeichenfolgenargumenten aufgerufen wird.  
   
-## <a name="example"></a>Example  
- The following example shows a constructor that incorrectly instantiates an instance of the ArgumentNullException type.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel zeigt einen Konstruktor, der eine Instanz des Typs ArgumentNullException nicht ordnungsgemäß instanziiert wird.  
   
- [!code-cpp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#1](../code-quality/codesnippet/CPP/ca2208-instantiate-argument-exceptions-correctly_1.cpp)] [!code-csharp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#1](../code-quality/codesnippet/CSharp/ca2208-instantiate-argument-exceptions-correctly_1.cs)] [!code-vb[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#1](../code-quality/codesnippet/VisualBasic/ca2208-instantiate-argument-exceptions-correctly_1.vb)]  
+ [!code-cpp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#1](../code-quality/codesnippet/CPP/ca2208-instantiate-argument-exceptions-correctly_1.cpp)]
+ [!code-csharp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#1](../code-quality/codesnippet/CSharp/ca2208-instantiate-argument-exceptions-correctly_1.cs)]
+ [!code-vb[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#1](../code-quality/codesnippet/VisualBasic/ca2208-instantiate-argument-exceptions-correctly_1.vb)]  
   
-## <a name="example"></a>Example  
- The following example fixes the above violation by switching the constructor arguments.  
+## <a name="example"></a>Beispiel  
+ Im folgende Beispiel werden der oben genannten Verstoß durch den Wechsel Konstruktorargumente korrigiert.  
   
- [!code-cpp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#2](../code-quality/codesnippet/CPP/ca2208-instantiate-argument-exceptions-correctly_2.cpp)] [!code-csharp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#2](../code-quality/codesnippet/CSharp/ca2208-instantiate-argument-exceptions-correctly_2.cs)] [!code-vb[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#2](../code-quality/codesnippet/VisualBasic/ca2208-instantiate-argument-exceptions-correctly_2.vb)]
+ [!code-cpp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#2](../code-quality/codesnippet/CPP/ca2208-instantiate-argument-exceptions-correctly_2.cpp)]
+ [!code-csharp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#2](../code-quality/codesnippet/CSharp/ca2208-instantiate-argument-exceptions-correctly_2.cs)]
+ [!code-vb[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#2](../code-quality/codesnippet/VisualBasic/ca2208-instantiate-argument-exceptions-correctly_2.vb)]

@@ -1,63 +1,63 @@
 ---
-title: "Gewusst wie: Erzwingen von wartbarem Code mit einer Eincheckrichtlinie f&#252;r die Codeanalyse | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Codeanalyse, Eincheckrichtlinien"
+title: "Vorgehensweise: Erzwingen von wartbarem Code mit einer Eincheckrichtlinie für die Analyse | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: code analysis, check-in policies
 ms.assetid: d1b3b04f-4dd9-40e6-b2d4-b414d33fb647
-caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 39d9697c7d6a216c08e34eb19287d22a76d67a55
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Erzwingen von wartbarem Code mit einer Eincheckrichtlinie f&#252;r die Codeanalyse
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Entwickler können mit dem Codemetriktool die Komplexität und Verwaltbarkeit ihres Codes messen, sie können Codemetrik jedoch nicht als Teil einer Eincheckrichtlinie aufrufen.  Ein Team kann jedoch Codeanalyseregeln aktivieren, die die Einhaltung von Codemetrikstandards überprüfen und und die Regeln über Eincheckrichtlinien durchsetzen.  Weitere Informationen zur Codemetrik finden Sie unter [Codemetrikwerte](../code-quality/code-metrics-values.md).  
+# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Gewusst wie: Erzwingen von wartbarem Code mit einer Eincheckrichtlinie für die Codeanalyse
+Entwickler können das Tool Codemetrik zum Messen von Komplexität und verwaltbarkeit des Codes verwenden, aber sie können keine Codemetrik aufrufen, als Teil einer in der Eincheckrichtlinie. Allerdings kann ein Team Codeanalyseregeln aktiviert, die überprüfen Sie die Kompatibilität des Codes mit Codemetrik-Standards und erzwingen Sie diese Regeln über Eincheckrichtlinien. Weitere Informationen zu Metriken für Code finden Sie unter der [Codemetrikwerte](../code-quality/code-metrics-values.md).  
   
- Entwickler können die Regeln zu Vererbungstiefe, Klassenkopplung, Wartbarkeitsindex und Komplexität aktivieren, um verwaltbaren Code durch Eincheckrichtlinien für die Codeanalyse zu erzwingen.  Alle vier Regeln befinden sich unter der Kategorie "Wartbarkeitsregeln" im Codeanalyserichtlinien\-Editor.  
+ Entwickler können die Vererbungstiefe, Klassenkopplung Wartbarkeitsindex und Komplexitätsregeln zum Erzwingen von wartbarem Code mit der Codeanalyse in der Eincheckrichtlinien aktivieren. Alle vier Regeln befinden sich unter der Kategorie "Verwaltbarkeit Regeln" in der Codeanalyse Gruppenrichtlinienverwaltungs-Editor.  
   
- Administratoren der [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)]\-Versionskontrolle können die Wartbarkeitsregeln der Codeanalyse zu den Anforderungen für die Eincheckrichtlinie hinzufügen.  Für diese Eincheckrichtlinien müssen Entwickler die Codeanalyse anhand dieser Regeländerungen ausführen, bevor sie einen Eincheckvorgang initiieren.  
+ Kontrolle über die Administratoren der Version für [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] können die Anforderungen in der Eincheckrichtlinie Verwaltbarkeit Codeanalyseregeln hinzufügen. Diese einchecken, müssen Sie für Richtlinien Entwickler basierend auf diese regeländerungen vor dem Initiieren eines Eincheckvorgangs Codeanalyse ausgeführt.  
   
-### So öffnen Sie den Codeanalyserichtlinien\-Editor  
+### <a name="to-open-the-code-analysis-policy-editor"></a>Um den Code Analysis-Gruppenrichtlinienverwaltungs-Editor zu öffnen  
   
-1.  Klicken Sie in **Team Explorer** mit der rechten Maustaste auf das Teamprojekt, klicken Sie auf **Teamprojekteinstellungen**, und klicken Sie dann auf **Quellcodeverwaltung**.  
+1.  In **Team Explorer**mit der rechten Maustaste auf das Teamprojekt, klicken Sie auf **Teamprojekteinstellungen**, und klicken Sie dann auf **Quellcodeverwaltung**.  
   
-     Das Dialogfeld **Quellcodeverwaltung** wird angezeigt.  
+     Die **Quellcodeverwaltung** Dialogfeld wird angezeigt.  
   
-2.  Klicken Sie auf die Registerkarte **Eincheckrichtlinien** und dann auf **Hinzufügen**.  
+2.  Auf der **Eincheckrichtlinie** Registerkarte, und klicken Sie auf **hinzufügen**.  
   
-     Das Dialogfeld **Eincheckrichtlinie hinzufügen** wird angezeigt.  
+     Die **hinzufügen in der Eincheckrichtlinie** Dialogfeld wird angezeigt.  
   
-3.  Aktivieren Sie in der Liste **Eincheckrichtlinien** das Kontrollkästchen **Codeanalyse**, und klicken Sie dann auf **OK**.  
+3.  In der **Eincheckrichtlinie** Liste der **Codeanalyse** Kontrollkästchen, und klicken Sie dann auf **OK**.  
   
-     Das Dialogfeld **Codeanalyserichtlinien\-Editor** wird angezeigt.  
+     Die **Code Analysis-Editor für Gruppenrichtlinien** Dialogfeld wird angezeigt.  
   
-### So aktivieren Sie Wartbarkeitsregeln für die Codeanalyse  
+### <a name="to-enable-code-analysis-maintainability-rules"></a>So aktivieren Sie die Verwaltbarkeit von Codeanalyseregeln  
   
-1.  Erweitern Sie im Dialogfeld **Codeanalyserichtlinien\-Editor** unter **Regeleinstellungen** den Knoten **Wartbarkeitsregeln**.  
+1.  In der **Code Analysis-Editor für Gruppenrichtlinien** Dialogfeld unter **Regeleinstellungen**, erweitern Sie die **Verwaltbarkeit Regeln** Knoten.  
   
-2.  Aktivieren Sie die Kontrollkästchen für die folgenden Regeln:  
+2.  Wählen Sie die Kontrollkästchen für die folgenden Regeln:  
   
-    -   Vererbungstiefe: **CA1501 AvoidExcessiveInheritance** \- Schwellenwert: Warnung bei einer Tiefe von mehr als fünf Ebenen  
+    -   Die Tiefe der Vererbung: **CA1501 AvoidExcessiveInheritance** -Schwellenwert: Warnung bei einer Tiefe von mehr als 5 Ebenen  
   
-    -   Komplexität: **CA1502 AvoidExcessiveComplexity** \- Schwellenwert: Warnung bei mehr als 25  
+    -   Komplexität: **CA1502 AvoidExcessiveComplexity** -Schwellenwert: Warnung bei mehr als 25  
   
-    -   Wartbarkeitsindex: **CA1505 AvoidUnmaintainableCode** \- Schwellenwert: Warnung bei Unterschreiten von 20  
+    -   Wartbarkeitsindex: **CA1505 AvoidUnmaintainableCode** -Schwellenwert: Warnung bei weniger als 20  
   
-    -   Klassenkopplung: **CA1506 AvoidExcessiveClassCoupling** \- Schwellenwert: Warnung bei Überschreiten von 80 für eine Klasse und 30 für eine Methode  
+    -   Klassenkopplungen: **CA1506 AvoidExcessiveClassCoupling** -Schwellenwert: Warnung bei mehr als 80 für eine Klasse und mehr als 30 für eine Methode  
   
-    -   Wenn Sie darüber hinaus festlegen möchten, dass ein Regelverstoß einen Build verhindert, aktivieren Sie das Kontrollkästchen **Warnung als Fehler behandeln** neben der Regelbeschreibung.  
+    -   Wenn Sie einen Verstoß gegen eine Codeanalyseregel ein Builds verhindern möchten, wählen Sie außerdem, die **Warnung als ein Fehler behandeln** das Kontrollkästchen neben der Beschreibung der Regel.  
   
-3.  Klicken Sie auf **OK**.  Die neuen Eincheckrichtlinien gelten ab sofort bei Eincheckvorgängen.  
+3.  Klicken Sie auf **OK**. Die neue Richtlinie gilt nun für Eincheckvorgängen.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Codemetrikwerte](../code-quality/code-metrics-values.md)   
  [Erstellen und Verwenden von Eincheckrichtlinien für die Codeanalyse](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

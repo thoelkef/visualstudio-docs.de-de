@@ -1,44 +1,45 @@
 ---
-title: "CA2228: Nicht freigegebene Ressourcenformate nicht ver&#246;ffentlichen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DoNotShipUnreleasedResourceFormats"
-  - "CA2228"
-helpviewer_keywords: 
-  - "CA2228"
-  - "DoNotShipUnreleasedResourceFormats"
+title: "CA2228: Führen Sie nicht freigegebene Ressourcenformate | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- DoNotShipUnreleasedResourceFormats
+- CA2228
+helpviewer_keywords:
+- CA2228
+- DoNotShipUnreleasedResourceFormats
 ms.assetid: 2c614edc-4e94-4b4f-8067-eea677a75cd9
-caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 959d88751ff250e54f6a3f89f0b4b0554add96d1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CA2228: Nicht freigegebene Ressourcenformate nicht ver&#246;ffentlichen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228: Nicht freigegebene Ressourcenformate nicht veröffentlichen
 |||  
 |-|-|  
 |TypeName|DoNotShipUnreleasedResourceFormats|  
 |CheckId|CA2228|  
-|Kategorie \(Category\)|Microsoft.Usage|  
-|Unterbrechende Änderung|Nicht unterbrechend|  
+|Kategorie|Microsoft.Usage|  
+|Unterbrechende Änderung|Nicht unterbrechende Änderung|  
   
-## Ursache  
- Eine Ressourcendatei wurde mit einer Version von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] erstellt, die derzeit nicht unterstützt wird.  
+## <a name="cause"></a>Ursache  
+ Eine Ressourcendatei erstellt wurde, mit einer Version von den [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] , der derzeit nicht unterstützt.  
   
-## Regelbeschreibung  
- Ressourcendateien, die mithilfe von Vorabversionen von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] erstellt wurden, können von den unterstützten Versionen von .NET Framework eventuell nicht verwendet werden.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Ressourcendateien, die erstellt wurden, mithilfe von Vorabversionen von der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] möglicherweise nicht von den unterstützten Versionen von .NET Framework verwendet werden.  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, erstellen Sie die Ressource mit einer unterstützten Version von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Um einen Verstoß gegen diese Regel zu beheben, erstellen Sie die Ressource mit einer unterstützten Version von den [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]k.  
   
-## Wann sollten Warnungen unterdrückt werden?  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
  Unterdrücken Sie keine Warnung dieser Regel.

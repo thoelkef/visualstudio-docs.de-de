@@ -1,74 +1,76 @@
 ---
-title: "Logischer NOT-Operator (!) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "!"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "! Operator"
-  - "! Operator, Informationen über den !-Operator"
-  - "Logischer NOT-Operator"
+title: Logischer NOT-Operator (!) (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: '!'
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- Logical NOT operator
+- '! operator'
+- '! operator, about ! operator'
 ms.assetid: 68c3dc71-ae95-4293-9155-67405846d71d
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 29c27b9cd670989eb2112de5067e68bd09d76903
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Logischer NOT-Operator (!) (JavaScript)
+# <a name="logical-not-operator--javascript"></a>Logischer NOT-Operator (!) (JavaScript)
 Führt eine logische Negation für einen Ausdruck durch.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
 result = !expression  
 ```  
   
-## Parameter  
+## <a name="parameters"></a>Parameter  
  *Ergebnis*  
  Beliebige Variable.  
   
- *expression*  
- Ein beliebiger Ausdruck.  
+ *Ausdruck*  
+ Beliebiger Ausdruck.  
   
-## Hinweise  
- Die folgende Tabelle veranschaulicht, wie *result* berechnet wird:  
+## <a name="remarks"></a>Hinweise  
+ Die folgende Tabelle veranschaulicht wie *Ergebnis* bestimmt wird.  
   
-|Wenn `expression` folgenden Wert hat|dann hat `result` den Wert|  
-|------------------------------------------|--------------------------------|  
+|Wenn `expression` ist|Klicken Sie dann `result` ist|  
+|------------------------|----------------------|  
 |True|False|  
 |False|True|  
   
- Alle unären Operatoren, wie der **\!**\-Operator, werten Ausdrücke wie folgt aus:  
+ Alle unäre Operatoren, wie z. B. die **!** Operator Auswerten von Ausdrücken wie folgt:  
   
--   Wenn der Operator auf die Ausdrücke "undefined" oder `null` angewendet wird, entsteht ein Laufzeitfehler.  
+-   Wenn undefined zugewiesen oder `null` Ausdrücke ein Laufzeitfehler ausgelöst wird.  
   
 -   Objekte werden in Zeichenfolgen konvertiert.  
   
--   Zeichenfolgen werden, sofern möglich, in Zahlen konvertiert.  Andernfalls wird ein Laufzeitfehler generiert.  
+-   Zeichenfolgen werden nach Möglichkeit in Zahlen konvertiert. Wenn dies nicht der Fall ist, wird ein Laufzeitfehler ausgelöst.  
   
--   Boolesche Werte werden wie Zahlen behandelt \(0 \= false, 1 \= true\).  
+-   Boolesche Werte werden als Zahlen (0, wenn "false", 1, wenn "true") behandelt.  
   
- Der Operator wird auf die resultierende Zahl angewendet.  
+ Der Operator wird auf die daraus resultierende Zahl angewendet.  
   
- Für den logischen Operator **\!** gilt: Ist *expression* ungleich Null, so ist *result* gleich Null.  Ist *expression* gleich Null, so ist *result* gleich 1.  
+ Für die **!** Operator, wenn *Ausdruck* ungleich NULL ist *Ergebnis* 0 (null). Wenn *Ausdruck* ist 0 (null), *Ergebnis* ist 1.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## Siehe auch  
- [Bitweiser NOT\-Operator \(~\)](../../javascript/reference/bitwise-not-operator-decrement-tilde-javascript.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Bitweiser NOT-Operator (~)](../../javascript/reference/bitwise-not-operator-decrement-tilde-javascript.md)   
  [Operatorrangfolge](../../javascript/operator-subtractprecedence-javascript.md)   
- [Zusammenfassung der Operatoren \(JavaScript\)](../../javascript/misc/operator-subtractsummary-javascript.md)
+ [Zusammenfassung der Operatoren (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)

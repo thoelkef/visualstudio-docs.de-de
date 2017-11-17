@@ -1,58 +1,58 @@
 ---
-title: "CA1026: Standardparameter sollten nicht verwendet werden | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1026"
-  - "DefaultParametersShouldNotBeUsed"
-helpviewer_keywords: 
-  - "CA1026"
-  - "DefaultParametersShouldNotBeUsed"
+title: 'CA1026: Standardparameter sollten nicht verwendet werden | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1026
+- DefaultParametersShouldNotBeUsed
+helpviewer_keywords:
+- CA1026
+- DefaultParametersShouldNotBeUsed
 ms.assetid: 09643415-36ef-4d0f-9411-5721e14e2512
-caps.latest.revision: 18
-caps.handback.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 0d7a850c959787282cdf6f9d24b392ef4684b7dd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CA1026: Standardparameter sollten nicht verwendet werden
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026: Standardparameter sollten nicht verwendet werden
 |||  
 |-|-|  
 |TypeName|DefaultParametersShouldNotBeUsed|  
 |CheckId|CA1026|  
-|Kategorie \(Category\)|Microsoft.Design|  
+|Kategorie|Microsoft.Design|  
 |Unterbrechende Änderung|Breaking|  
   
-## Ursache  
+## <a name="cause"></a>Ursache  
  Ein extern sichtbarer Typ enthält eine extern sichtbare Methode, die einen Standardparameter verwendet.  
   
-## Regelbeschreibung  
- Methoden, die Standardparameter verwenden, sind nach der Common Language Specification \(CLS\) zulässig. Die CLS lässt jedoch zu, dass die Werte, die diesen Parametern zugewiesen sind, von Compilern ignoriert werden.  In Code, der für Compiler geschrieben wurde, die Standardparameterwerte ignorieren, müssen Argumente für jeden Standardparameter explizit bereitgestellt werden.  Damit das gewünschte Verhalten in verschiedenen Programmiersprachen erhalten bleibt, müssen Methoden, die Standardparameter verwenden, durch Methodenüberladungen ersetzt werden, von denen die Standardparameter bereitgestellt werden.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Methoden, die Standardparameter verwenden unter der Common Language Specification (CLS) zulässig. die CLS lässt jedoch Compiler, um die Werte zu ignorieren, die diesen Parametern zugewiesen sind. Code, der für Compiler geschrieben wird, die Standardparameterwerte ignorieren muss die Argumente für jeden Standardparameter explizit angeben. Um das Verhalten zu verwalten, das gewünschten verschiedenen Programmiersprachen, sollte der Methoden, die Standardparameter verwenden durch methodenüberladungen ersetzt werden, die die Standardparameter bereitgestellt.  
   
- Beim Zugriff auf verwalteten Code werden die Werte von Standardparametern für Managed Extensions für C\+\+ vom Compiler ignoriert.  Der Visual Basic\-Compiler unterstützt Methoden, die über Standardparameter verfügen, die das [Optional](/dotnet/visual-basic/language-reference/modifiers/optional)\-Schlüsselwort verwenden.  
+ Der Compiler ignoriert die Werte der Standardparameter für Managed Extensions für C++, wenn sie verwalteten Code zugreift. Visual Basic-Compiler unterstützt Methoden, die Standardparameter vorhanden sind, verwenden die [Optional](/dotnet/visual-basic/language-reference/modifiers/optional) Schlüsselwort.  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, ersetzen Sie die Methode, die Standardparameter verwendet, durch Methodenüberladungen, die Standardparameter bereitstellen.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Um einen Verstoß gegen diese Regel zu beheben, ersetzen Sie die Methode, die Standardparameter mit Überladungen der Methode verwendet, die die Standardparameter angeben.  
   
-## Wann sollten Warnungen unterdrückt werden?  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
  Unterdrücken Sie keine Warnung dieser Regel.  
   
-## Beispiel  
- Das folgende Beispiel zeigt eine Methode, die Standardparameter verwendet, sowie die überladenen Methoden, die eine entsprechende Funktionalität bereitstellen.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel zeigt eine Methode, die Standardparameter verwendet, und die überladene Methoden, die eine entsprechende Funktionalität bereitzustellen.  
   
  [!code-vb[FxCop.Design.DefaultParameters#1](../code-quality/codesnippet/VisualBasic/ca1026-default-parameters-should-not-be-used_1.vb)]  
   
-## Verwandte Regeln  
+## <a name="related-rules"></a>Verwandte Regeln  
  [CA1025: Sich wiederholende Argumente durch ein Parameterarray ersetzen](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)  
   
-## Siehe auch  
- [Sprachenunabhängigkeit und sprachunabhängige Komponenten](../Topic/Language%20Independence%20and%20Language-Independent%20Components.md)
+## <a name="see-also"></a>Siehe auch  
+ [Sprachunabhängigkeit und sprachunabhängige Komponenten](http://msdn.microsoft.com/Library/4f0b77d0-4844-464f-af73-6e06bedeafc6)

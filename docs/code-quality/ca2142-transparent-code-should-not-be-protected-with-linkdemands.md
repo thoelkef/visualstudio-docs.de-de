@@ -1,64 +1,47 @@
 ---
-title: 'CA2142: Transparent code should not be protected with LinkDemands | Microsoft Docs'
+title: "CA2142: Transparenter Code sollte nicht mit LinkDemands geschützt werden | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- CA2142
+f1_keywords: CA2142
 ms.assetid: 6dc59053-5dd9-4583-bf10-5f339107e59f
-caps.latest.revision: 10
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 79889b3b9829c590162271677fafe6846147246c
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "10"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 6d0b9712ec0ed9d5ecd8e76b1ecf208505f07623
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2142-transparent-code-should-not-be-protected-with-linkdemands"></a>CA2142: Transparent code should not be protected with LinkDemands
+# <a name="ca2142-transparent-code-should-not-be-protected-with-linkdemands"></a>CA2142: Transparenter Code darf nicht mit LinkDemands geschützt werden
 |||  
 |-|-|  
 |TypeName|TransparentMethodsShouldNotBeProtectedWithLinkDemands|  
 |CheckId|CA2142|  
-|Category|Microsoft.Security|  
-|Breaking Change|Breaking|  
+|Kategorie|Microsoft.Security|  
+|Unterbrechende Änderung|Breaking|  
   
-## <a name="cause"></a>Cause  
- A transparent method requires a <xref:System.Security.Permissions.SecurityAction> or other security demand.  
+## <a name="cause"></a>Ursache  
+ Eine transparente Methode erfordert eine <xref:System.Security.Permissions.SecurityAction> oder andere sicherheitsforderung.  
   
-## <a name="rule-description"></a>Rule Description  
- This rule fires on transparent methods which require LinkDemands to access them. Security transparent code should not be responsible for verifying the security of an operation, and therefore should not demand permissions. Because transparent methods are supposed to be security neutral, they should not be making any security decisions. Additionally, safe critical code, which does make security decisions, should not be relying on transparent code to have previously made such a decision.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Diese Regel wird für transparente Methoden ausgelöst, die einen Zugriff durch LinkDemands erfordern. Sicherheitstransparenter Code sollte nicht für das Überprüfen der Sicherheit einer Operation zuständig sein und sollte daher keine Berechtigungen fordern. Da transparente Methoden werden neutrale Sicherheit sind bestimmt, sollten sie keine sicherheitsrelevanten vornehmen. Darüber hinaus sollten sichere kritischen Code, der Sicherheit Entscheidungen nicht auf transparentem Code auf eine solche Entscheidung zuvor vorgenommenen Vertrauensstellungen der vertrauenden Seite sein.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, remove the link demand on the transparent method or mark the method with <xref:System.Security.SecuritySafeCriticalAttribute> attribute if it is performing security checks, such as security demands.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie den Linkaufruf für transparente Methode, oder markieren Sie die Methode mit <xref:System.Security.SecuritySafeCriticalAttribute> Attribut, wenn Sicherheit ausgeführt wird überprüft, wie z. B. sicherheitsforderungen.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule.  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Unterdrücken Sie keine Warnung dieser Regel.  
   
-## <a name="example"></a>Example  
- In the following example, the rule fires on the method because the method is transparent and is marked with a LinkDemand <xref:System.Security.PermissionSet> that contains an <xref:System.Security.Permissions.SecurityAction>.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel die Regel für die Methode wird ausgelöst, da die Methode transparent ist und mit einem LinkDemand gekennzeichnet ist <xref:System.Security.PermissionSet> , enthält eine <xref:System.Security.Permissions.SecurityAction>.  
   
  [!code-csharp[FxCop.Security.CA2142.TransparentMethodsShouldNotBeProtectedWithLinkDemands#1](../code-quality/codesnippet/CSharp/ca2142-transparent-code-should-not-be-protected-with-linkdemands_1.cs)]  
   
- Do not suppress a warning from this rule.
+ Unterdrücken Sie keine Warnung dieser Regel.

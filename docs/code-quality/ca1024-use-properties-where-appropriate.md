@@ -1,11 +1,10 @@
 ---
-title: 'CA1024: Use properties where appropriate | Microsoft Docs'
+title: 'CA1024: Eigenschaften verwenden | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,75 +14,60 @@ helpviewer_keywords:
 - CA1024
 - UsePropertiesWhereAppropriate
 ms.assetid: 3a04f765-af7c-4872-87ad-9cc29e8e657f
-caps.latest.revision: 21
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 1a7ce15f3b5fbdb759733250467a928715f6fedf
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "21"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 42fb569dbf469ed91f96b25818b717353d53bf0b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Use properties where appropriate
+# <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Nach Möglichkeit Eigenschaften verwenden
 |||  
 |-|-|  
 |TypeName|UsePropertiesWhereAppropriate|  
 |CheckId|CA1024|  
-|Category|Microsoft.Design|  
-|Breaking Change|Breaking|  
+|Kategorie|Microsoft.Design|  
+|Unterbrechende Änderung|Breaking|  
   
-## <a name="cause"></a>Cause  
- A public or protected method has a name that starts with `Get`, takes no parameters, and returns a value that is not an array.  
+## <a name="cause"></a>Ursache  
+ Eine öffentliche oder geschützte Methode hat einen Namen, die mit beginnt `Get`nimmt keine Parameter und gibt einen Wert, der kein Array ist.  
   
-## <a name="rule-description"></a>Rule Description  
- In most cases, properties represent data and methods perform actions. Properties are accessed like fields, which makes them easier to use. A method is a good candidate to become a property if one of these conditions is present:  
+## <a name="rule-description"></a>Regelbeschreibung  
+ In den meisten Fällen Daten darstellen, Eigenschaften und Methoden Aktionen ausführen. Eigenschaften sind zugegriffen, wie Felder, sodass sie einfacher zu verwenden. Eine Methode ist, eignet sich für eine Eigenschaft zu werden, wenn eine der folgenden Bedingungen vorliegt:  
   
--   Takes no arguments and returns the state information of an object.  
+-   Akzeptiert keine Argumente und gibt die Zustandsinformationen eines Objekts zurück.  
   
--   Accepts a single argument to set some part of the state of an object.  
+-   Akzeptiert ein einzelnes Argument, um einen Teil des Zustands eines Objekts festgelegt.  
   
- Properties should behave as if they are fields; if the method cannot, it should not be changed to a property. Methods are better than properties in the following situations:  
+ Eigenschaften sollten so, als ob diese Felder sind; Wenn die Methode nicht möglich ist, sollten sie nicht auf eine Eigenschaft geändert werden. Methoden sind besser als Eigenschaften in den folgenden Situationen:  
   
--   The method performs a time-consuming operation. The method is perceivably slower than the time that is required to set or get the value of a field.  
+-   Die Methode ausführt einen zeitaufwändigen Vorgang. Die Methode ist als die Zeit, die erforderlich sind, um festzulegen, oder rufen Sie den Wert eines Felds beansprucht.  
   
--   The method performs a conversion. Accessing a field does not return a converted version of the data that it stores.  
+-   Die Methode führt eine Konvertierung. Zugriff auf ein Feld zurückgibt keinen konvertierte Version der Daten, in dem es gespeichert.  
   
--   The Get method has an observable side effect. Retrieving the value of a field does not produce any side effects.  
+-   Die Get-Methode hat einen Observable Nebeneffekt. Das Abrufen des Werts eines Felds erzeugt kein keine Nebeneffekte.  
   
--   The order of execution is important. Setting the value of a field does not rely on the occurrence of other operations.  
+-   Die Reihenfolge der Ausführung ist wichtig. Festlegen des Werts eines Felds beruht nicht auf das Vorkommen von anderen Vorgängen.  
   
--   Calling the method two times in succession creates different results.  
+-   Aufrufen der Methode zweimal hintereinander führt zu unterschiedlichen Ergebnissen.  
   
--   The method is static but returns an object that can be changed by the caller. Retrieving the value of a field does not allow the caller to change the data that is stored by the field.  
+-   Die Methode ist statisch, aber es gibt ein Objekt, das vom Aufrufer geändert werden kann. Das Abrufen des Werts eines Felds lässt keine Aufrufer zum Ändern der Daten, die nach dem Feld gespeichert wird.  
   
--   The method returns an array.  
+-   Die Methode gibt ein Array zurück.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, change the method to a property.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Um einen Verstoß gegen diese Regel zu beheben, ändern Sie die Methode einer Eigenschaft ein.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Suppress a warning from this rule if the method meets at least one of the previously listed criteria.  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Unterdrücken Sie eine Warnung dieser Regel, wenn die Methode mindestens eines der zuvor aufgeführten Kriterien erfüllt.  
   
-## <a name="controlling-property-expansion-in-the-debugger"></a>Controlling Property Expansion in the Debugger  
- One reason programmers avoid using a property is because they do not want the debugger to auto-expand it. For example, the property might involve allocating a large object or calling a P/Invoke, but it might not actually have any observable side effects.  
+## <a name="controlling-property-expansion-in-the-debugger"></a>Steuern der Erweiterung der Eigenschaft im Debugger  
+ Ein Grund, dass Programmierer vermeiden, verwenden eine Eigenschaft ist, da sie nicht, dass den Debugger automatisch erweitert möchten. Beispielsweise die Eigenschaft kann das Zuweisen eines großen Objekts oder P/Invoke aufrufen umfassen, aber es möglicherweise nicht tatsächlich keine Observable Nebeneffekte.  
   
- You can prevent the debugger from auto-expanding properties by applying <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. The following example shows this attribute being applied to an instance property.  
+ Sie können verhindern, dass den Debugger automatisch erweitert Eigenschaften durch Anwenden von <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. Das folgende Beispiel zeigt dieses Attribut auf eine Instance-Eigenschaft angewendet wird.  
   
 ```vb  
 Imports System   
@@ -132,7 +116,7 @@ namespace Microsoft.Samples
 }  
 ```  
   
-## <a name="example"></a>Example  
- The following example contains several methods that should be converted to properties, and several that should not because they do not behave like fields.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel enthält mehrere Methoden, die in Eigenschaften konvertiert werden sollte, und mehrere, die nicht verwendet werden, da kein Verhalten wie Felder aufweisen sollte.  
   
  [!code-csharp[FxCop.Design.MethodsProperties#1](../code-quality/codesnippet/CSharp/ca1024-use-properties-where-appropriate_1.cs)]

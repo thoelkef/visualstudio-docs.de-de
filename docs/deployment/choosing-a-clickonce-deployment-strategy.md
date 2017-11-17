@@ -1,31 +1,32 @@
 ---
-title: "Choosing a ClickOnce Deployment Strategy | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "ClickOnce deployment, strategies"
-  - "deploying applications, ClickOnce"
+title: "Auswählen einer Strategie für die ClickOnce-Bereitstellung | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- ClickOnce deployment, strategies
+- deploying applications, ClickOnce
 ms.assetid: 98bcab65-ab8b-4ed1-9adc-fdacf92b8106
-caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: e0f39c75620eab8e94ecd65b1ab1f41cc5e67875
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Choosing a ClickOnce Deployment Strategy
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Es gibt drei verschiedene Strategien zum Bereitstellen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Anwendung. Es hängt primär von der Art der bereitzustellenden Anwendung ab, welche Strategie Sie auswählen.  Folgende Strategien sind verfügbar:  
+# <a name="choosing-a-clickonce-deployment-strategy"></a>Auswählen einer Strategie für die ClickOnce-Bereitstellung
+Es gibt drei verschiedene Strategien zum Bereitstellen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendung. Es hängt primär von der Art der bereitzustellenden Anwendung ab, welche Strategie Sie auswählen. Folgende Strategien sind verfügbar:  
   
 -   Installation aus dem Web oder einer Netzwerkfreigabe  
   
@@ -34,47 +35,47 @@ Es gibt drei verschiedene Strategien zum Bereitstellen einer [!INCLUDE[ndpteccli
 -   Starten der Anwendung aus dem Web oder einer Netzwerkfreigabe  
   
     > [!NOTE]
-    >  Neben einer Bereitstellungsstrategie empfiehlt es sich außerdem, eine Strategie zum Bereitstellen von Anwendungsupdates auszuwählen.  Weitere Informationen finden Sie unter [Choosing a ClickOnce Update Strategy](../deployment/choosing-a-clickonce-update-strategy.md).  
+    >  Neben einer Bereitstellungsstrategie empfiehlt es sich außerdem, eine Strategie zum Bereitstellen von Anwendungsupdates auszuwählen. Weitere Informationen finden Sie unter [Auswählen einer Strategie für die ClickOnce-Aktualisierung](../deployment/choosing-a-clickonce-update-strategy.md).  
   
-## Installation aus dem Web oder einer Netzwerkfreigabe  
- Bei dieser Strategie wird die Anwendung auf einem Webserver oder in einer Dateifreigabe im Netzwerk bereitgestellt.  Benutzer installieren die Anwendung, indem sie auf ein Symbol auf einer Webseite klicken oder auf ein Symbol in der Dateifreigabe doppelklicken.  Die Anwendung wird dann auf den Computer des Endbenutzers heruntergeladen, installiert und gestartet.  Dem **Startmenü** und der **Software** in der **Systemsteuerung** werden Elemente hinzugefügt.  
+## <a name="install-from-the-web-or-a-network-share"></a>Installation aus dem Web oder einer Netzwerkfreigabe  
+ Bei dieser Strategie wird die Anwendung auf einem Webserver oder in einer Dateifreigabe im Netzwerk bereitgestellt. Benutzer installieren die Anwendung, indem sie auf ein Symbol auf einer Webseite klicken oder auf ein Symbol in der Dateifreigabe doppelklicken. Die Anwendung wird dann auf den Computer des Endbenutzers heruntergeladen, installiert und gestartet. Elemente werden hinzugefügt, um die **starten** im Menü und **Software** in **Systemsteuerung**.  
   
  Da diese Strategie von einer Netzwerkverbindung abhängt, funktioniert sie am besten bei Anwendungen, die für Benutzer bereitgestellt werden, die Zugriff auf ein lokales Netzwerk haben oder eine Internetverbindung mit hoher Geschwindigkeit besitzen.  
   
- Wenn Sie die Anwendung aus dem Web bereitstellen, können Sie Argumente in die Anwendung übergeben, wenn sie mit einer URL aktiviert wird.  Weitere Informationen finden Sie unter [Gewusst wie: Abrufen von Abfragezeichenfolgen\-Informationen in einer Online\-ClickOnce\-Anwendung](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).  Sie können keine Argumente in eine Anwendung übergeben, die mit einer der anderen in diesem Dokument beschriebenen Methoden aktiviert wird.  
+ Wenn Sie die Anwendung aus dem Web bereitstellen, können Sie Argumente in die Anwendung übergeben, wenn sie mit einer URL aktiviert wird. Weitere Informationen finden Sie unter [Vorgehensweise: Abrufen von Abfragezeichenfolgen-Informationen in einer Online-ClickOnce-Anwendung](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md). Sie können keine Argumente in eine Anwendung übergeben, die mit einer der anderen in diesem Dokument beschriebenen Methoden aktiviert wird.  
   
- Um diese Bereitstellungsstrategie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zu aktivieren, klicken Sie auf der Seite **Installationsart** des Webpublishing\-Assistenten auf **Aus dem Web** oder **Von UNC\-Pfad oder Dateifreigabe**.  
+ So aktivieren Sie diese Bereitstellungsstrategie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], klicken Sie auf **aus dem Internet** oder **von UNC-Pfad oder Dateifreigabe** auf die **Installationsart** Seite des Veröffentlichungs-Assistenten.  
   
  Dies ist die Standardbereitstellungsstrategie.  
   
-## Installation von einer CD  
- Bei dieser Strategie wird die Anwendung auf einem Wechseldatenträger bereitgestellt, z. B. auf einer CD\-ROM oder einer DVD.  Wenn ein Benutzer die Anwendung installiert, wird sie wie bei der vorausgegangenen Option installiert und gestartet, und dem **Startmenü** sowie der **Software** in der **Systemsteuerung** werden Elemente hinzugefügt.  
+## <a name="install-from-a-cd"></a>Installation von einer CD  
+ Bei dieser Strategie wird die Anwendung auf einem Wechseldatenträger bereitgestellt, z. B. auf einer CD-ROM oder einer DVD. Wie bei der vorausgegangenen Option, wenn der Benutzer entscheidet, die Anwendung zu installieren, installiert und gestartet und Elemente hinzugefügt werden die **starten** Menü und **Software** in **Steuerelement Bereich**.  
   
- Diese Strategie funktioniert am besten bei Anwendungen, die für Benutzer bereitgestellt werden, die nicht dauerhaft über eine Netzwerkverbindung oder über eine Verbindung mit niedriger Bandbreite verfügen.  Da die Anwendung von einem Wechseldatenträger installiert wird, ist bei der Installation keine Netzwerkverbindung erforderlich. Sie benötigen jedoch eine Netzwerkverbindung für Anwendungsupdates.  
+ Diese Strategie funktioniert am besten bei Anwendungen, die für Benutzer bereitgestellt werden, die nicht dauerhaft über eine Netzwerkverbindung oder über eine Verbindung mit niedriger Bandbreite verfügen. Da die Anwendung von einem Wechseldatenträger installiert wird, ist bei der Installation keine Netzwerkverbindung erforderlich. Sie benötigen jedoch eine Netzwerkverbindung für Anwendungsupdates.  
   
- Um diese Bereitstellungsstrategie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zu aktivieren, klicken Sie auf der Seite **Installationsart** des Webpublishing\-Assistenten auf **Von CD\-ROM oder DVD\-ROM**.  
+ So aktivieren Sie diese Bereitstellungsstrategie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], klicken Sie auf **von CD-ROM oder DVD-ROM** auf die **Installationsart** Seite des Veröffentlichungs-Assistenten.  
   
- Um diese Bereitstellungsstrategie manuell zu aktivieren, ändern Sie das **deploymentProvider**\-Tag im Bereitstellungsmanifest. \(In Visual Studio wird diese Eigenschaft als **Installations\-URL** auf der Seite **Veröffentlichen** des Projekt\-Designers verfügbar gemacht.  In Mage.exe lautet sie **Startspeicherort**.\)  
+ Um diese Bereitstellungsstrategie manuell zu aktivieren, Ändern der **"deploymentProvider"** -Tag im Bereitstellungsmanifest. (In Visual Studio diese Eigenschaft verfügbar gemacht wird als **Installations-URL** auf die **veröffentlichen** Seite im Projekt-Designer. In Mage.exe lautet **Startspeicherort**.)  
   
-## Starten der Anwendung aus dem Web oder einer Netzwerkfreigabe  
- Diese Strategie ähnelt der ersten Strategie. Die Anwendung verhält sich jedoch wie eine Webanwendung.  Wenn der Benutzer auf einer Webseite auf einen Link klickt \(oder in einer Dateifreigabe auf ein Symbol doppelklickt\), wird die Anwendung gestartet.  Beim Beenden der Anwendung ist diese auf dem lokalen Computer nicht mehr verfügbar. Dem **Startmenü** und der **Software** in der **Systemsteuerung** wird nichts hinzugefügt.  
+## <a name="start-the-application-from-the-web-or-a-network-share"></a>Starten der Anwendung aus dem Web oder einer Netzwerkfreigabe  
+ Diese Strategie ähnelt der ersten Strategie. Die Anwendung verhält sich jedoch wie eine Webanwendung. Wenn der Benutzer auf einer Webseite auf einen Link klickt (oder in einer Dateifreigabe auf ein Symbol doppelklickt), wird die Anwendung gestartet. Wenn Benutzer die Anwendung schließen, ist nicht mehr auf ihren lokalen Computer verfügbar. nichts hinzugefügt der **starten** Menü oder **Software** in **Systemsteuerung**.  
   
 > [!NOTE]
->  Technisch gesehen wird die Anwendung in einen Anwendungscache auf dem lokalen Computer heruntergeladen und dort installiert, genauso wie eine Webanwendung in den Webcache heruntergeladen wird.  Wie beim Webcache werden die Dateien letztendlich aus dem Anwendungscache gelöscht.  Der Benutzer empfindet es jedoch so, als ob die Anwendung aus dem Web oder der Dateifreigabe ausgeführt wird.  
+>  Technisch gesehen wird die Anwendung in einen Anwendungscache auf dem lokalen Computer heruntergeladen und dort installiert, genauso wie eine Webanwendung in den Webcache heruntergeladen wird. Wie beim Webcache werden die Dateien letztendlich aus dem Anwendungscache gelöscht. Der Benutzer empfindet es jedoch so, als ob die Anwendung aus dem Web oder der Dateifreigabe ausgeführt wird.  
   
  Diese Strategie funktioniert am besten bei Anwendungen, die selten verwendet werden, z. B. ein Tool zum Berechnen von Lohnzusatzleistungen für Angestellte, das i. d. R. nur einmal im Jahr ausgeführt wird.  
   
- Um diese Bereitstellungsstrategie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zu aktivieren, klicken Sie auf der Seite **Vom Web installieren oder ausführen** des Webpublishing\-Assistenten auf **Anwendung nicht installieren**.  
+ So aktivieren Sie diese Bereitstellungsstrategie in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], klicken Sie auf **installieren Sie die Anwendung nicht** auf die **Web installieren oder Ausführen von** Seite des Veröffentlichungs-Assistenten.  
   
- Um diese Bereitstellungsstrategie manuell zu aktivieren, ändern Sie das **install**\-Tag im Bereitstellungsmanifest. \(Sein Wert kann **true** oder **false** sein.  Verwenden Sie in Mage.exe die Option **Nur online** aus der Liste **Anwendungstyp**.\)  
+ Um diese Bereitstellungsstrategie manuell zu aktivieren, Ändern der **installieren** -Tag im Bereitstellungsmanifest. (Der Wert kann **"true"** oder **"false"**. Verwenden Sie in Mage.exe die **nur Online** -Option in der **Anwendungstyp** Liste.)  
   
-## Unterstützung für Internetbrowser  
+## <a name="web-browser-support"></a>Unterstützung für Internetbrowser  
  Anwendungen, die auf .NET Framework 3.5 ausgerichtet sind, können mit jedem Browser installiert werden.  
   
  Anwendungen, die auf .NET Framework 2.0 ausgerichtet sind, erfordern Internet Explorer.  
   
-## Siehe auch  
- [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md)   
- [Choosing a ClickOnce Update Strategy](../deployment/choosing-a-clickonce-update-strategy.md)   
- [How to: Publish a ClickOnce Application using the Publish Wizard](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
- [Sichern von ClickOnce\-Anwendungen](../deployment/securing-clickonce-applications.md)
+## <a name="see-also"></a>Siehe auch  
+ [ClickOnce-Sicherheit und -Bereitstellung](../deployment/clickonce-security-and-deployment.md)   
+ [Auswählen einer Strategie für die ClickOnce-Aktualisierung](../deployment/choosing-a-clickonce-update-strategy.md)   
+ [Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)

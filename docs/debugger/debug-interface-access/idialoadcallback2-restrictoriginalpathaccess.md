@@ -1,40 +1,39 @@
 ---
-title: "IDiaLoadCallback2::RestrictOriginalPathAccess | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaLoadCallback2::RestrictOriginalPathAccess-Methode"
+title: 'Idialoadcallback2:: Restrictoriginalpathaccess | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaLoadCallback2::RestrictOriginalPathAccess method
 ms.assetid: 31fde3af-2824-4b0f-8d0d-cee6046596f6
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 826cebba9d4eaf8e2bcf6d055a2ce524e1cf17d0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaLoadCallback2::RestrictOriginalPathAccess
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Bestimmt, ob dieses passend ist, nach einer PDB\-Datei im ursprünglichen Verzeichnis Debug zu suchen.  
+# <a name="idialoadcallback2restrictoriginalpathaccess"></a>IDiaLoadCallback2::RestrictOriginalPathAccess
+Bestimmt, ob es angemessen, eine PDB-Datei im ursprünglichen Debugverzeichnis suchen ist.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```C++  
 HRESULT RestrictOriginalPathAccess ();  
 ```  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Jeder andere als Rückgabecode `S_OK` verhindert Sucht nach einer PDB\-Datei im ursprünglichen Verzeichnis Debug.  Das ursprüngliche Debuginformationen Verzeichnis ist der Pfad zur Symboldatei, die in die ausführbare Datei kompiliert wird, wenn das Debuggen aktiviert ist.  Dieser Pfad ist nicht unbedingt derselbe wie der Pfad, in dem die ausführbare Datei vorhanden ist.  
+## <a name="remarks"></a>Hinweise  
+ Alle Rückgabecode außer `S_OK` wird verhindert, dass eine PDB-Datei im ursprünglichen Debugverzeichnis suchen. Das ursprüngliche Debugverzeichnis ist der Pfad der Symboldatei in die ausführbare Datei kompiliert werden, wenn Debuggen aktiviert ist. Dieser Pfad ist nicht unbedingt mit dem der Pfad, in dem die ausführbare Datei vorhanden ist.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

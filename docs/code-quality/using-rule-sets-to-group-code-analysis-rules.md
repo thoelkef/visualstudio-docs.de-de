@@ -1,37 +1,36 @@
 ---
-title: "Verwenden von Regels&#228;tzen zum Gruppieren von Codeanalyseregeln | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.codeanalysis.rulesets.learnmore"
-helpviewer_keywords: 
-  - "Codeanalyse, Regelsätze"
+title: Mithilfe der Regel wird auf Gruppe Codeanalyseregeln | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.codeanalysis.rulesets.learnmore
+helpviewer_keywords: code analysis, rule sets
 ms.assetid: ed0f3a2a-1516-42e2-92de-b8986dc75d42
-caps.latest.revision: 36
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 36
+caps.latest.revision: "36"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 44d64b7371f1b27afaa7796dc42d4b7864d20819
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Verwenden von Regels&#228;tzen zum Gruppieren von Codeanalyseregeln
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Beim Konfigurieren der Codeanalyse in [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] oder [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]steht Ihnen eine Liste mit integrierten *Regelsätzen* von Microsoft zur Verfügung.  Ein Regelsatz ist eine logische Gruppierung von Codeanalyseregeln, die gezielte Probleme und bestimmte Bedingungen identifizieren.  Sie können z. B. einen Regelsatz anwenden, mit dem Code auf öffentlich verfügbare APIs überprüft wird, oder einen Regelsatz, der nur die empfohlenen Mindestregeln enthält.  Sie können auch einen Regelsatz anwenden, der alle Regeln enthält.  
+# <a name="using-rule-sets-to-group-code-analysis-rules"></a>Verwenden von Regelsätzen zum Gruppieren von Codeanalyseregeln
+Beim Konfigurieren der Codeanalyse in [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], oder [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)], Sie können auswählen, aus einer Liste von integrierten Microsoft *-Regelsätze*. Ein Regelsatz ist eine logische Gruppierung von Codeanalyseregeln, die gezielte Probleme und bestimmte Bedingungen identifizieren. Beispielsweise können Sie einen Regelsatz, der mit dem Code auf öffentlich verfügbare APIs überprüft anwenden, oder Sie können einen Regelsatz, der nur die empfohlenen Mindestregeln enthält anwenden. Sie können auch einen Regelsatz anwenden, der alle Regeln enthält.  
   
- Sie können einen Regelsatz anpassen, indem Sie Regeln hinzufügen oder löschen, oder indem Sie Regeln so ändern, dass sie im Fenster **Fehlerliste** entweder als Warnungen oder als Fehler angezeigt werden.  Benutzerdefinierte Regelsätze können Sie an Ihre spezielle Entwicklungsumgebung anpassen.  Beim Anpassen eines Regelsatzes finden Sie auf der Regelsatzseite hilfreiche Such\- und Filtertools.  
+ Sie können anpassen ein Regelsatzes durch Hinzufügen oder Löschen von Regeln oder durch Ändern der Regeln angezeigt werden die **Fehlerliste** -Fenster als Warnungen oder Fehler. Benutzerdefinierte Regelsätze können Sie an Ihre spezielle Entwicklungsumgebung anpassen. Beim Anpassen eines Regelsatzes finden Sie auf der Regelsatzseite hilfreiche Such- und Filtertools.  
   
-## Allgemeine Aufgaben  
+## <a name="common-tasks"></a>Allgemeine Aufgaben  
   
 |Aufgabe|Verwandter Inhalt|  
-|-------------|-----------------------|  
-|**Praktische Übung:** Mithilfe der Codeanalysetools können Sie einen benutzerdefinierten Regelsatz angeben, um Probleme in einer einfachen .NET Framework\-Anwendung zu suchen und zu beheben.|-   [Exemplarische Vorgehensweise: Konfigurieren und Verwenden eines benutzerdefinierten Regelsatzes](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)|  
-|**Konfigurieren der Codeanalyse für ein Projekt:** Wählen Sie für ein Projekt, eine Website oder eine Projektmappe einen vorhandenen Regelsatz aus.|-   [Gewusst wie: Konfigurieren der Codeanalyse für ein Projekt mit verwaltetem Code](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)<br />-   [Verwenden von Regelsätzen zum Festlegen von C\+\+\-Regeln für die Ausführung](../code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run.md)<br />-   [Gewusst wie: Konfigurieren der Codeanalyse für eine ASP.NET\-Anwendung](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)<br />-   [Gewusst wie: Angeben von Regelsätzen für mehrere Projekte in einer Projektmappe](../code-quality/how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution.md)|  
-|**Anpassen eines Regelsatzes:** Geben Sie Regeln an, die für das Projekt übernommen werden sollen.|-   [Erstellen von benutzerdefinierten Regelsätzen](../code-quality/creating-custom-code-analysis-rule-sets.md)|  
-|**Grundlegendes zu integrierten Regelsätzen:** Zeigen Sie die Codeanalyseregeln an, aus denen die integrierten Regelsätze bestehen.|-   [Codeanalyse\-Regelsatzreferenz](../code-quality/code-analysis-rule-set-reference.md)|  
-|**Integrieren der Codeanalyse in Team Foundation Server:** Mithilfe der [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]\-Eincheckrichtlinien können Entwicklerteams sicherstellen, dass alle Eincheckvorgänge für Code allgemeinen Codeanalysestandards entsprechen.|-   [Gewusst wie: Synchronisieren der Regelsätze für Codeprojekte mit der Team Project\-Eincheckrichtlinie](../code-quality/how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md)|
+|----------|---------------------|  
+|**Praktische Erfahrung:** die Codeanalysetools Geben Sie eine benutzerdefinierte Regel legen Sie zum Suchen und Beheben von Problemen in einer einfachen .NET Framework-Anwendung verwenden.|-   [Exemplarische Vorgehensweise: Konfigurieren und Verwenden eines benutzerdefinierten Regelsatzes](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)|  
+|**Konfigurieren der Codeanalyse für ein Projekt:** wählen Sie einen vorhandenen Regelsatz für ein Projekt, eine Website oder eine Projektmappe.|-   [Vorgehensweise: Konfigurieren der Codeanalyse für ein Projekt mit verwaltetem Code](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)<br />-   [Verwenden von Regelsätzen an die C++-Regeln für die Ausführung](../code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run.md)<br />-   [Vorgehensweise: Konfigurieren der Codeanalyse für eine ASP.NET-Webanwendung](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)<br />-   [Vorgehensweise: Angeben von Regelsätzen für mehrere Projekte in einer Projektmappe](../code-quality/how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution.md)|  
+|**Anpassen eines Regelsatzes:** Geben Sie Regeln, um auf Ihr Projekt anzuwenden.|-   [Erstellen von benutzerdefinierten Regelsätzen](../code-quality/creating-custom-code-analysis-rule-sets.md)|  
+|**Verstehen der integrierten Regelsätze:** Codeanalyseregeln, aus denen die integrierten Regelsätze anzeigen.|-   [Regel zur Codeanalyse festlegen Verweis.](../code-quality/code-analysis-rule-set-reference.md)|  
+|**Codeanalyse in Team Foundation Server zu integrieren:** [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] Einchecken Richtlinien aktivieren Softwareentwicklungsteams messbar, um sicherzustellen, dass Sie Code Einchecken stets einen gemeinsamen Satz von Code Analysis-Standards zu erfüllen.|-   [Vorgehensweise: Synchronisieren der Regelsätze für Codeprojekte mit der Team Project-Eincheckrichtlinie](../code-quality/how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md)|

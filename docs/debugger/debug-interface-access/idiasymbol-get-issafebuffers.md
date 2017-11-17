@@ -1,56 +1,55 @@
 ---
-title: "IDiaSymbol::get_isSafeBuffers | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_isSafeBuffers-Methode"
+title: 'Idiasymbol:: Get_issafebuffers | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_isSafeBuffers method
 ms.assetid: f29e373d-e7bb-4181-ab9f-bf708d401d83
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5f75693fe1caa638d60d69f9ba61e15426c8f2ed
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_isSafeBuffers
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft ein Flag ab, das angibt, ob die Präprozessorausgabe Direktiven für einen sicheren Puffer verwendet werden.  Verwenden Sie diese Option, wenn [SymTagEnum\-Enumeration](../../debugger/debug-interface-access/symtagenum.md) zu `SymTagFunction`festgelegt ist.  
+# <a name="idiasymbolgetissafebuffers"></a>IDiaSymbol::get_isSafeBuffers
+Ruft ein Flag, das angibt, ob die Präprozessordirektive für einem sicheren Puffer verwendet wird. Verwenden in folgenden Fällen die [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md) festgelegt ist, um `SymTagFunction`.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT get_isSafeBuffers(   
-   BOOL* pRetVal)  
+```C++  
+HRESULT get_isSafeBuffers(   
+   BOOL* pRetVal)  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pRetVal`  
- \[out\]  Gibt `TRUE` zurück, wenn der Zeiger Präprozessordirektiven für einen sicheren Puffer verwendet. andernfalls gibt `FALSE`zurück.  
+ [out] Gibt `TRUE` Wenn Zeiger eine Präprozessordirektive für einen sicheren Puffer verwendet, andernfalls `FALSE`.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt `S_FALSE` oder einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
+>  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: Dia2.h  
   
  Bibliothek: diaguids.lib  
   
- DLLs: msdia100.dll  
+ DLL: msdia100.dll  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [strict\_gs\_check](/visual-cpp/preprocessor/strict-gs-check)
+ [strict_gs_check](/cpp/preprocessor/strict-gs-check)

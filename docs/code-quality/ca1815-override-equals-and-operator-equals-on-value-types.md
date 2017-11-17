@@ -1,11 +1,10 @@
 ---
-title: 'CA1815: Override equals and operator equals on value types | Microsoft Docs'
+title: "CA1815: Override equals und Gleichheitsoperator für Werttypen | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,74 +14,58 @@ helpviewer_keywords:
 - OverrideEqualsAndOperatorEqualsOnValueTypes
 - CA1815
 ms.assetid: 0a8ab3a3-ee8e-46f7-985d-dcf00c89363b
-caps.latest.revision: 17
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 9b4cd8ddc4d5029a81e35460fa19373e69e33330
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 20b31e4ea20fd3d1a4ec254507962bf4e8946bb4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1815-override-equals-and-operator-equals-on-value-types"></a>CA1815: Override equals and operator equals on value types
+# <a name="ca1815-override-equals-and-operator-equals-on-value-types"></a>CA1815: Equals und Gleichheitsoperator für Werttypen überschreiben
 |||  
 |-|-|  
 |TypeName|OverrideEqualsAndOperatorEqualsOnValueTypes|  
 |CheckId|CA1815|  
-|Category|Microsoft.Performance|  
-|Breaking Change|Non-breaking|  
+|Kategorie|Microsoft.Performance|  
+|Unterbrechende Änderung|Nicht unterbrechend|  
   
-## <a name="cause"></a>Cause  
- A public value type does not override <xref:System.Object.Equals%2A?displayProperty=fullName>, or does not implement the equality operator (==). This rule does not check enumerations.  
+## <a name="cause"></a>Ursache  
+ Ein öffentlicher Werttyp überschreibt nicht <xref:System.Object.Equals%2A?displayProperty=fullName>, oder den Gleichheitsoperator (==) nicht implementiert. Diese Regel überprüft die Enumerationen nicht.  
   
-## <a name="rule-description"></a>Rule Description  
- For value types, the inherited implementation of <xref:System.Object.Equals%2A> uses the Reflection library, and compares the contents of all fields. Reflection is computationally expensive, and comparing every field for equality might be unnecessary. If you expect users to compare or sort instances, or use them as hash table keys, your value type should implement <xref:System.Object.Equals%2A>. If your programming language supports operator overloading, you should also provide an implementation of the equality and inequality operators.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Bei der geerbten Implementierung von Werttypen <xref:System.Object.Equals%2A> wird die Reflection-Bibliothek verwendet, und der Inhalt aller Felder verglichen. Reflection ist rechenintensiv, und das Überprüfen eines jeden Felds auf Gleichheit ist eventuell unnötig. Wenn Sie erwarten, Benutzer mit Instanzen von vergleichen oder sortieren dass oder als Schlüssel für Hashtabellen verwenden, sollte der Werttyp implementieren <xref:System.Object.Equals%2A>. Wenn Ihre Programmiersprache Überladen von Operatoren unterstützt, sollten Sie auch eine Implementierung der Gleichheits-und Ungleichheitsoperatoren bereitstellen.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, provide an implementation of <xref:System.Object.Equals%2A>. If you can, implement the equality operator.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Um einen Verstoß gegen diese Regel zu beheben, stellen Sie eine Implementierung von <xref:System.Object.Equals%2A>. Wenn Sie den Gleichheitsoperator implementieren können.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule if instances of the value type will not be compared to each other.  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Sie können ruhig zum Unterdrücken einer Warnung dieser Regel, wenn Instanzen des Werttyps nicht miteinander verglichen werden.  
   
-## <a name="example-of-a-violation"></a>Example of a Violation  
+## <a name="example-of-a-violation"></a>Beispiel eines Verstoßes  
   
-### <a name="description"></a>Description  
- The following example shows a structure (value type) that violates this rule.  
+### <a name="description"></a>Beschreibung  
+ Das folgende Beispiel zeigt eine Struktur (Werttyp), die mit dieser Regel verletzt.  
   
 ### <a name="code"></a>Code  
  [!code-csharp[FxCop.Performance.OverrideEqualsViolation#1](../code-quality/codesnippet/CSharp/ca1815-override-equals-and-operator-equals-on-value-types_1.cs)]  
   
-## <a name="example-of-how-to-fix"></a>Example of How to Fix  
+## <a name="example-of-how-to-fix"></a>Beispiel für die Korrektur  
   
-### <a name="description"></a>Description  
- The following example fixes the previous violation by overriding <xref:System.ValueType.Equals%2A?displayProperty=fullName> and implementing the equality operators (==, !=).  
+### <a name="description"></a>Beschreibung  
+ Im folgenden Beispiel wird der vorherige Verstoß durch Überschreiben korrigiert <xref:System.ValueType.Equals%2A?displayProperty=fullName> und die Gleichheitsoperatoren (==,! =).  
   
 ### <a name="code"></a>Code  
  [!code-csharp[FxCop.Performance.OverrideEqualsFixed#1](../code-quality/codesnippet/CSharp/ca1815-override-equals-and-operator-equals-on-value-types_2.cs)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA2224: Override equals on overloading operator equals](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)  
+## <a name="related-rules"></a>Verwandte Regeln  
+ [CA2224: Equals beim Überladen von Gleichheitsoperatoren überschreiben](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)  
   
- [CA2231: Overload operator equals on overriding ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)  
+ [CA2231: Überladen Sie den Gleichheitsoperator beim Überschreiben von ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)  
   
- [CA2226: Operators should have symmetrical overloads](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)  
+ [CA2226: Operatoren sollten symmetrische Überladungen aufweisen](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>Siehe auch  
  <xref:System.Object.Equals%2A?displayProperty=fullName>

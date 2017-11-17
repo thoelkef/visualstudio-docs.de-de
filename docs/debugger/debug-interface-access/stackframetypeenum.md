@@ -1,67 +1,66 @@
 ---
-title: "StackFrameTypeEnum | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "StackFrameTypeEnum-Enumeration"
+title: StackFrameTypeEnum | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: StackFrameTypeEnum enumeration
 ms.assetid: 61e40163-eee0-4c1f-af47-cef3771bdc41
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 37d8e960d256b8746781668068978aa72f45155c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# StackFrameTypeEnum
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Gibt den Typ der Stapelrahmen an.  
+# <a name="stackframetypeenum"></a>StackFrameTypeEnum
+Gibt den Stack-Frame-Typ.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp  
+```C++  
 enum StackFrameTypeEnum {  
-   FrameTypeFPO,  
-   FrameTypeTrap,  
-   FrameTypeTSS,  
-   FrameTypeStandard,  
-   FrameTypeFrameData,  
-   FrameTypeUnknown = -1  
+   FrameTypeFPO,  
+   FrameTypeTrap,  
+   FrameTypeTSS,  
+   FrameTypeStandard,  
+   FrameTypeFrameData,  
+   FrameTypeUnknown = -1  
 };  
 ```  
   
-## Elements  
+## <a name="elements"></a>Elements  
  `FrameTypeFPO`  
- Framezeiger ausgelassen. FPO\-verfügbare Informationszwecken.  
+ Frame-Pointer ausgelassen; FPO-Informationen verfügbar.  
   
  `FrameTypeTrap`  
- Kernel\-Blockier Skinframes.  
+ Kernel-Trap-Frame.  
   
  `FrameTypeTSS`  
- Kernel\-Blockier Skinframes.  
+ Kernel-Trap-Frame.  
   
  `FrameTypeStandard`  
- Standard\-EBP\-Stapelrahmen.  
+ Standard EBP Stapelrahmen entspricht.  
   
  `FrameTypeFrameData`  
- Framezeiger ausgelassen. Feld bezugspunkt verfügbaren Informationen.  
+ Frame-Pointer ausgelassen; Frame Daten Informationen verfügbar.  
   
  `FrameTypeUnknown`  
- Felder, die keine Debuginformationen verfügt.  
+ Rahmen, die über kein Debuginformationen vorhanden wären.  
   
-## Hinweise  
- Die Werte in dieser Enumeration werden von einem Aufruf der [IDiaStackFrame::get\_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)\-Methode zurückgegeben.  
+## <a name="remarks"></a>Hinweise  
+ Die Werte in dieser Enumeration werden zurückgegeben, durch einen Aufruf der [idiastackframe:: Get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) Methode.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: cvconst.h  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Enumerationen und Strukturen](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaStackFrame::get\_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)
+ [IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)

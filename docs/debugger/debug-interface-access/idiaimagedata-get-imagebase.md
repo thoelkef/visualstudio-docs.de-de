@@ -1,46 +1,45 @@
 ---
-title: "IDiaImageData::get_imageBase | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaImageData::get_imageBase-Methode"
+title: 'Idiaimagedata:: Get_imagebase | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaImageData::get_imageBase method
 ms.assetid: 4ba3d9e4-b205-4ee6-a41d-6996972f1f85
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: daaaf26e0a33ce8e90b2b8ac621ed47d299c8276
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaImageData::get_imageBase
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft die Speicheradresse ab, in der das Bild basieren soll.  
+# <a name="idiaimagedatagetimagebase"></a>IDiaImageData::get_imageBase
+Ruft die Speicheradresse, auf dem das Image basieren soll.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT get_imageBase (   
-   ULONGLONG* pRetVal  
+```C++  
+HRESULT get_imageBase (   
+   ULONGLONG* pRetVal  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pRetVal`  
- \[out\]  Gibt den vorgeschlagenen Bild basiswert zurück.  
+ [out] Gibt den vorgeschlagene Image-Basis-Wert.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Aufgrund der Seite Bild Konflikten kann ein Bild automatisch mit einer nicht verwendeten Speicherplatz rebased, wenn es geladen wird.  Diese Methode gibt den niedrigen Hinweis zurück \(vorgeschlagene Speicheradresse\), die im Modul zur Kompilierzeit gespeichert wurde.  
+## <a name="remarks"></a>Hinweise  
+ Kann aufgrund von Image-Basis-Konflikten kann ein Abbild automatisch auf eine nicht verwendete Speicheradresse zurückgesetzt werden, wenn es geladen wird. Diese Methode gibt die Basis-Hinweis (vorgeschlagenen Speicheradresse), der im Modul zum Zeitpunkt der Kompilierung gespeichert wurde.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

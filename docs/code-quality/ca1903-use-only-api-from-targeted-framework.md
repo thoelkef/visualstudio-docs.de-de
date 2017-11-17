@@ -1,11 +1,10 @@
 ---
-title: 'CA1903: Use only API from targeted framework | Microsoft Docs'
+title: 'CA1903: Nur API aus Zielframework verwenden | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,73 +14,58 @@ helpviewer_keywords:
 - UseOnlyApiFromTargetedFramework
 - CA1903
 ms.assetid: efdb5cc7-bbd8-4fa7-9fff-02b91e59350e
-caps.latest.revision: 8
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: ec60623b651e990d77895d3c4eeef90cd69222a1
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "8"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 7caff553adfd812e671a2d8643b2352d9868ca43
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Use only API from targeted framework
+# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Nur API aus Zielframework verwenden
 |||  
 |-|-|  
 |TypeName|UseOnlyApiFromTargetedFramework|  
 |CheckId|CA1903|  
-|Category|Microsoft.Portability|  
-|Breaking Change|Breaking - when fired against the signature of an externally visible member or type.<br /><br /> Non breaking - when fired in the body of a method.|  
+|Kategorie|Microsoft.Portability|  
+|Unterbrechende Änderung|Unterbrechend – Wenn Sie mit der Signatur eines extern sichtbaren Members oder Typs ausgelöst.<br /><br /> Nicht unterbrechend – Wenn im Text einer Methode ausgelöst.|  
   
-## <a name="cause"></a>Cause  
- A member or type is using a member or type that was introduced in a service pack that was not included with the project's targeted framework.  
+## <a name="cause"></a>Ursache  
+ Ein Member oder Typ verwendet ein Member oder Typ, der in einem Servicepack eingeführt wurde, nicht in das Zielframework des Projekts enthalten ist.  
   
-## <a name="rule-description"></a>Rule Description  
- New members and types were included in .NET Framework 2.0 Service Pack 1 and 2, .NET Framework 3.0 Service Pack 1 and 2, and .NET Framework 3.5 Service Pack 1. Projects that target the major versions of the .NET Framework can unintentionally take dependencies on these new APIs. To prevent this dependency, this rule fires on usages of any new members and types that were not included by default with the project's target framework.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Neue Elemente und Typen wurden in .NET Framework 2.0 Service Pack 1 und 2, .NET Framework 3.0 Servicepack 1 und 2 und .NET Framework 3.5 Servicepack 1 enthalten. Projekte, die den Hauptversionen von .NET Framework als Ziel dauert unbeabsichtigt Abhängigkeiten auf diesen neuen APIs. Um diese Abhängigkeit zu verhindern, wird diese Regel ausgelöst, nach Verwendung eines beliebigen neue Elemente und Typen, die nicht standardmäßig mit Zielframework des Projekts enthalten sind.  
   
- **Target Framework and Service Pack Dependencies**  
+ **Zielframework und Service Pack-Abhängigkeiten**  
   
 |||  
 |-|-|  
-|When target framework is|Fires on usages of members introduced in|  
+|Wenn ist Zielframework|Wird ausgelöst, auf die Verwendungen der Elemente, die in eingeführt|  
 |.NET Framework 2.0|.NET Framework 2.0 SP1, .NET Framework 2.0 SP2|  
 |.NET Framework 3.0|.NET Framework 2.0 SP1, .NET Framework 2.0 SP2, .NET Framework 3.0 SP1, .NET Framework 3.0 SP2|  
-|.NET Framework 3.5|.NET Framework 3.5 SP1|  
-|.NET Framework 4|N/A|  
+|.NET Framework 3,5|.NET Framework 3.5 SP1|  
+|.NET Framework 4|Nicht zutreffend|  
   
- To change a project's target framework, see [Targeting a Specific .NET Framework Version](../ide/targeting-a-specific-dotnet-framework-version.md).  
+ Um das Zielframework des Projekts ändern möchten, finden Sie unter [für eine bestimmte .NET Framework-Version](../ide/targeting-a-specific-dotnet-framework-version.md).  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To remove the dependency on the service pack, remove all usages of the new member or type. If this is a deliberate dependency, either suppress the warning or turn this rule off.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Um die Abhängigkeit auf das Servicepack zu entfernen, entfernen Sie alle Verwendungen des neuen Member oder Typ aus. Ist dies eine absichtliche Abhängigkeit, die Warnung unterdrücken, oder diese Regel deaktivieren.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule if this was not a deliberate dependency on the specified service pack. In this situation, your application might fail to run on systems without this service pack installed. Suppress the warning or turn this rule off if this was a deliberate dependency.  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Unterdrücken Sie keine Warnung dieser Regel, wenn dies nicht absichtliche Abhängigkeit des angegebenen Servicepacks war. In diesem Fall möglicherweise nicht Ihrer Anwendung zur Ausführung auf Systemen ohne dieses Servicepack installiert. Unterdrückt die Warnung aus, oder diese Regel deaktivieren, wenn dies eine absichtliche Abhängigkeit wurde.  
   
-## <a name="example"></a>Example  
- The following example shows a class that uses the type DateTimeOffset that is only available in .NET 2.0 Service Pack 1. This example requires that .NET Framework 2.0 has been selected in the Target Framework drop-down list in the Project properties.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel zeigt eine Klasse, die den Datentyp "DateTimeOffset" verwendet, die nur in .NET 2.0 Service Pack 1 verfügbar ist. Dieses Beispiel erfordert, dass .NET Framework 2.0 in der Dropdownliste Zielframework in den Projekteigenschaften ausgewählt wurde.  
   
  [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_1.cs)]  
   
-## <a name="example"></a>Example  
- The following example fixes the previously described violation by replacing usages of the DateTimeOffset type with the DateTime type.  
+## <a name="example"></a>Beispiel  
+ Im folgende Beispiel werden der zuvor beschriebenen Verstoß durch Ersetzen der Verwendungen des Typs "DateTimeOffset" mit dem Typ "DateTime" korrigiert.  
   
  [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework2#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_2.cs)]  
   
-## <a name="see-also"></a>See Also  
- [Portability Warnings](../code-quality/portability-warnings.md)   
- [Targeting a Specific .NET Framework Version](../ide/targeting-a-specific-dotnet-framework-version.md)
+## <a name="see-also"></a>Siehe auch  
+ [Portabilitätswarnungen](../code-quality/portability-warnings.md)   
+ [Festlegen einer bestimmten .NET-Framework-Zielversion](../ide/targeting-a-specific-dotnet-framework-version.md)

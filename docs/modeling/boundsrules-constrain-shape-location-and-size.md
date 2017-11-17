@@ -1,28 +1,29 @@
 ---
-title: "BoundsRules schr&#228;nken Position und Gr&#246;&#223;e von Formen ein | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Domänenspezifische Sprache, Ereignisse"
+title: "BoundsRules schränken Position und Größe | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Domain-Specific Language, events
 ms.assetid: 4d08e541-fc67-4e68-bf31-30d346aa2aa0
-caps.latest.revision: 18
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 8a611bd18cb06b712f671d370bfc26d4dc8cf4f3
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# BoundsRules schr&#228;nken Position und Gr&#246;&#223;e von Formen ein
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Eine *Grenzen\-Regel* ist eine Klasse, die Begrenzungen für die Größe und Position einer Form definiert.  Sie enthält eine Methode, die wiederholt aufgerufen wird, wenn ein Benutzer eine Form oder die Ecken oder die Seiten einem Formular ziehen.  
+# <a name="boundsrules-constrain-shape-location-and-size"></a>BoundsRules schränken Position und Größe von Formen ein
+Ein *Grenzen Regel* ist eine Klasse, die Grenzwerte für die Größe und Position einer Form definiert. Es bietet eine Methode, die wiederholt aufgerufen wird, während ein Benutzer eine Form oder den Ecken oder den Seiten einer Form ziehen.  
   
- Im folgenden Beispiel wird eine rechteckige Form ein, um eine Leiste feste Größe ist entweder horizontal oder vertikal.  Wenn der Benutzer die Ecken oder Seiten, die Gliederung leichten schläge zwischen den beiden zulässigen Konfigurationen von Höhe und Breite gezogen wird.  
+ Das folgende Beispiel schränkt eine rechteckige Form aus, um eine Leiste mit fester Größe, horizontal oder vertikal sein. Wenn der Benutzer den Ecken oder den Seiten zieht, spiegelt die Gliederung zwischen zwei zulässigen Konfigurationen der Höhe und Breite.  
   
- Die Grenzen die Regel ist eine Klasse, die von <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules>abgeleitet ist.  Eine Instanz der Regel wird im Format erstellt:  
+ Die Grenzen Regel ist eine abgeleitete Klasse <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules>. Eine Instanz der Regel wird in der Form "erstellt:  
   
 ```  
 using Microsoft.VisualStudio.Modeling.Diagrams; ...  
@@ -62,8 +63,8 @@ public class BarBoundsRule: BoundsRules
 } } }  
 ```  
   
- Beachten Sie, dass der Position und Größe beschränkt werden können.  
+ Beachten Sie, dass sowohl die Position und Größe eingeschränkt werden können, wenn Sie möchten.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules>   
  [Reagieren auf und Propagieren von Änderungen](../modeling/responding-to-and-propagating-changes.md)

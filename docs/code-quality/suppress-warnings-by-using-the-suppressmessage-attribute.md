@@ -1,41 +1,42 @@
 ---
-title: "Unterdr&#252;cken von Warnungen mithilfe des SuppressMessage-Attributs | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCFxCopTool.InputAssemblyFileName"
-  - "VC.Project.VCFxCopTool.FxCopModuleSuppressionsFile"
-  - "VC.Project.VCFxCopTool.FxCopUseTypeNameInSuppression"
-  - "VC.Project.VCFxCopTool.OutputFile"
-helpviewer_keywords: 
-  - "Codeanalyse, Quellenunterdrückung"
-  - "Codeanalyse, SuppressMessage-Attribut"
-  - "Quellenunterdrückung"
-  - "SuppressMessage-Attribut"
+title: "Unterdrücken von Warnungen mithilfe des SuppressMessage-Attributs | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VC.Project.VCFxCopTool.InputAssemblyFileName
+- VC.Project.VCFxCopTool.FxCopModuleSuppressionsFile
+- VC.Project.VCFxCopTool.FxCopUseTypeNameInSuppression
+- VC.Project.VCFxCopTool.OutputFile
+helpviewer_keywords:
+- code analysis, source suppression
+- source suppression
+- SuppressMessage attribute
+- code analysis, SuppressMessage attribute
 ms.assetid: a38c57a2-d29d-43c0-84ff-3308b2484ce6
-caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: dfa752c56d26b16f1fac569ba05cfa44693c77a2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Unterdr&#252;cken von Warnungen mithilfe des SuppressMessage-Attributs
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Es ist häufig sinnvoll, eine Warnung als nicht zutreffend anzugeben. So können die Teammitglieder erkennen, dass der Code bereits überprüft wurde und dass beschlossen wurde, die Warnung zu unterdrücken.  Mit der Unterdrückung im Quellcode \(ISS\) kann das Attribut, durch das eine Warnung unterdrückt wird, nahe der Position platziert werden, an der die Warnung generiert wird.  Sie können das ISS\-Attribut direkt der Quelldatei hinzufügen oder das Kontextmenü der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-IDE verwenden.  
+# <a name="suppress-warnings-by-using-the-suppressmessage-attribute"></a>Unterdrücken von Warnungen mithilfe des SuppressMessage-Attributs
+Es ist häufig nützlich, um anzugeben, dass die Warnung wird als nicht zutreffend Teammitglieder wissen, dass der Code überprüft wurde, und es wurde festgestellt, dass die Warnung unterdrückt werden soll. Unterdrückung im Quellcode (ISS) kann einen Entwickler, um das Attribut zu konzentrieren, das eine Warnung in der Nähe der Stelle unterdrückt wird, die die Warnung generiert. Sie können das ISS-Attribut hinzufügen, direkt in der Quelldatei oder können Sie das Kontextmenü in der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.  
   
-## In diesem Abschnitt  
+## <a name="in-this-section"></a>In diesem Abschnitt  
   
 |||  
 |-|-|  
-|[Übersicht über die Unterdrückung im Quellcode](../code-quality/in-source-suppression-overview.md)|Erfahren Sie mehr über ISS und wie es im Code verwendet wird.|  
-|[Gewusst wie: Unterdrücken von Warnungen über das Menüelement](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)|Informationen zum Unterdrücken von Warnungen in der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-IDE mithilfe des Kontextmenüs.|  
+|[Übersicht über die Unterdrückung im Quellcode](../code-quality/in-source-suppression-overview.md)|Informationen Sie zu ISS und wie es in Ihrem Code verwenden.|  
+|[Gewusst wie: Unterdrücken von Warnungen über das Menüelement](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)|Informationen zum Unterdrücken von Warnungen in der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE mithilfe der Kontextmenüs.|  
   
-## Verwandte Abschnitte  
+## <a name="related-sections"></a>Verwandte Abschnitte  
  [Analysieren der Qualität von verwaltetem Code](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)

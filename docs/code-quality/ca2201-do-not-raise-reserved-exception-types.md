@@ -1,41 +1,42 @@
 ---
-title: "CA2201: Keine reservierten Ausnahmetypen ausl&#246;sen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DoNotRaiseReservedExceptionTypes"
-  - "CA2201"
-helpviewer_keywords: 
-  - "CA2201"
-  - "DoNotRaiseReservedExceptionTypes"
+title: "CA2201: Keine reservierten Ausnahmetypen auslösen | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- DoNotRaiseReservedExceptionTypes
+- CA2201
+helpviewer_keywords:
+- CA2201
+- DoNotRaiseReservedExceptionTypes
 ms.assetid: dd14ef5c-80e6-41a5-834e-eba8e2eae75e
-caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 713018b96aed70d52b1b11e75b0c2993312ef474
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CA2201: Keine reservierten Ausnahmetypen ausl&#246;sen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201: Keine reservierten Ausnahmetypen auslösen
 |||  
 |-|-|  
 |TypeName|DoNotRaiseReservedExceptionTypes|  
 |CheckId|CA2201|  
-|Kategorie \(Category\)|Microsoft.Usage|  
+|Kategorie|Microsoft.Usage|  
 |Unterbrechende Änderung|Breaking|  
   
-## Ursache  
- Eine Methode löst einen Ausnahmetyp aus, der zu allgemein oder von der Laufzeit reserviert ist.  
+## <a name="cause"></a>Ursache  
+ Eine Methode löst einen Ausnahmetyp, ist zu allgemein oder von der Laufzeit reserviert ist.  
   
-## Regelbeschreibung  
- Die folgenden Ausnahmetypen sind zu allgemein, um dem Benutzer ausreichend Informationen bereitzustellen:  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Die folgenden Ausnahmetypen sind zu Allgemein, über ausreichende Anmeldeinformationen für den Benutzer:  
   
 -   <xref:System.Exception?displayProperty=fullName>  
   
@@ -43,7 +44,7 @@ caps.handback.revision: 16
   
 -   <xref:System.SystemException?displayProperty=fullName>  
   
- Die folgenden Ausnahmetypen sind reserviert und sollten nur von der Common Language Runtime ausgelöst werden:  
+ Die folgenden Ausnahmetypen sind reserviert und sollte nur von der common Language Runtime ausgelöst werden:  
   
 -   <xref:System.ExecutionEngineException?displayProperty=fullName>  
   
@@ -53,39 +54,39 @@ caps.handback.revision: 16
   
 -   <xref:System.OutOfMemoryException?displayProperty=fullName>  
   
- **Keine allgemeinen Ausnahmen auslösen**  
+ **Lösen Sie nicht allgemeine Ausnahmen**  
   
- Wenn Sie einen allgemeinen Ausnahmetyp wie <xref:System.Exception> oder <xref:System.SystemException> in einer Bibliothek oder einem Framework auslösen, werden Consumer gezwungen, alle Ausnahmen abzufangen, einschließlich unbekannter Ausnahmen, die sie nicht behandeln können.  
+ Wenn Sie einen Typ allgemeine Ausnahme, z. B. auslösen <xref:System.Exception> oder <xref:System.SystemException> in einer Bibliothek oder einem Framework, erzwingt es Consumern, alle catch Ausnahmen, einschließlich Unbekannte Ausnahmen, die sie nicht wissen, wie behandeln.  
   
- Lösen Sie entweder einen stärker abgeleiteten Typ aus, der bereits im Framework vorhanden ist, oder erstellen Sie einen eigenen Typ, der von <xref:System.Exception> abgeleitet wird.  
+ Stattdessen entweder auslösen ein stärker abgeleiteten Typs, der bereits im Framework vorhanden ist, oder erstellen Sie einen eigene aus abgeleiteter Typ <xref:System.Exception>.  
   
  **Bestimmte Ausnahmen auslösen**  
   
- In der folgenden Tabelle sind die Parameter und Ausnahmen enthalten, die beim Validieren des Parameters ausgelöst werden, einschließlich des Wertparameters im set\-Accessor einer Eigenschaft:  
+ In der folgenden Tabelle werden die Parameter aufgeführt, und welche Ausnahmen auslösen, wenn den Parameter, einschließlich der Value-Parameter in der Set-Accessor einer Eigenschaft zu überprüfen:  
   
-|Parameterbeschreibung|Ausnahme|  
-|---------------------------|--------------|  
-|`null`\-Referenz|<xref:System.ArgumentNullException?displayProperty=fullName>|  
-|Außerhalb des zulässigen Wertebereichs \(z. B. ein Index für eine Auflistung oder eine Liste\)|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|  
-|Ungültiger `enum`\-Wert|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|  
-|Enthält ein Format, das die Parameterangaben einer Methode nicht erfüllt \(z. B. die Formatzeichenfolge für `ToString(String)`\).|<xref:System.FormatException?displayProperty=fullName>|  
+|Beschreibung des Parameters|Ausnahme|  
+|---------------------------|---------------|  
+|`null`Referenz|<xref:System.ArgumentNullException?displayProperty=fullName>|  
+|Außerhalb des zulässigen Bereichs von Werten (z. B. einen Index für eine Auflistung oder Liste)|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|  
+|Ungültige `enum` Wert|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|  
+|Enthält ein Format, das nicht den Parameterspezifikationen einer Methode entspricht (z. B. die Formatzeichenfolge für `ToString(String)`)|<xref:System.FormatException?displayProperty=fullName>|  
 |Andernfalls ungültig|<xref:System.ArgumentException?displayProperty=fullName>|  
   
- Wenn eine Operation ungültig für den aktuellen Objektzustand ist, wird <xref:System.InvalidOperationException?displayProperty=fullName> ausgelöst.  
+ Wenn ein Vorgang für den aktuellen Status ausgelöst ungültige ist.<xref:System.InvalidOperationException?displayProperty=fullName>  
   
- Wenn eine Operation für ein verworfenes Objekt ausgeführt wird, wird <xref:System.ObjectDisposedException?displayProperty=fullName> ausgelöst.  
+ Wenn ein Vorgang für ein Objekt ausgeführt wird, das verworfen wurde ausgelöst<xref:System.ObjectDisposedException?displayProperty=fullName>  
   
- Wenn eine Operation nicht unterstützt wird \(wie in einem überschriebenen **Stream.Write** in einem zum Lesen geöffneten Stream\), wird <xref:System.NotSupportedException?displayProperty=fullName> ausgelöst.  
+ Wenn ein Vorgang wird nicht unterstützt (z. B. in eine überschriebene **Stream.Write** in einen Stream, der zum Lesen geöffnet) auslösen<xref:System.NotSupportedException?displayProperty=fullName>  
   
- Wenn eine Konvertierung zu einem Überlauf führt \(wie in einer expliziten Umwandlungsoperatorüberladung\), wird <xref:System.OverflowException?displayProperty=fullName> ausgelöst.  
+ Wenn eine Konvertierung zu einem Überlauf (z. B. in eine explizite Umwandlung operatorüberladung) bedingt auslösen<xref:System.OverflowException?displayProperty=fullName>  
   
- In allen anderen Situationen sollten Sie erwägen, Ihren eigenen Typ zu erstellen, der von <xref:System.Exception> abgeleitet wird, und diesen auslösen.  
+ Für alle anderen Situationen Estellen Sie einen eigene aus abgeleiteter Typ <xref:System.Exception> und diesen auslösen.  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Typ der Ausnahme, die ausgelöst wird, in einen speziellen Typ, der kein reservierter Typ ist.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Typ der ausgelösten Ausnahme für einen bestimmten Typ, der nicht zu den reservierten Typen ist.  
   
-## Wann sollten Warnungen unterdrückt werden?  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
  Unterdrücken Sie keine Warnung dieser Regel.  
   
-## Verwandte Regeln  
+## <a name="related-rules"></a>Verwandte Regeln  
  [CA1031: Allgemeine Ausnahmetypen nicht auffangen](../code-quality/ca1031-do-not-catch-general-exception-types.md)

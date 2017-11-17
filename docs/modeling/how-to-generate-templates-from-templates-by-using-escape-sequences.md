@@ -1,28 +1,29 @@
 ---
-title: "How to: Generate Templates from Templates By Using Escape Sequences | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "text templates, generating templates from templates"
+title: 'Vorgehensweise: Generieren von Vorlagen aus Vorlagen mithilfe von Escapesequenzen | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: text templates, generating templates from templates
 ms.assetid: 4126156a-7cea-48b8-925e-7790806cfe6c
-caps.latest.revision: 35
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 35
+caps.latest.revision: "35"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 421b8a8bde2bb383889bcb58915fa8a3acb027cf
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# How to: Generate Templates from Templates By Using Escape Sequences
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Sie können eine Textvorlage erstellen, die eine andere Textvorlage als generierte Textausgabe erstellt.  Dazu müssen Sie die Textvorlagentags mit Escapesequenzen abgrenzen.  Wenn Sie keine Escapesequenzen verwenden, hat die generierte Textvorlage eine vordefinierte Bedeutung.  Weitere Informationen zur Verwendung von Escapesequenzen in Textvorlagen finden Sie unter [Using Escape Sequences in Text Templates](../modeling/using-escape-sequences-in-text-templates.md).  
+# <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>Gewusst wie: Generieren von Vorlagen aus Vorlagen mithilfe von Escapesequenzen
+Sie können eine Textvorlage erstellen, die eine andere Textvorlage als die generierte Textausgabe wird erstellt. Zu diesem Zweck müssen Sie Escapesequenzen verwenden, die Text Vorlagentags abgrenzen. Wenn Sie keine Escapesequenzen verwenden, wird die generierte Textvorlage eine vordefinierte Bedeutung haben. Weitere Informationen zum Verwenden von Escapesequenzen in Textvorlagen finden Sie unter [mithilfe von Escapesequenzen in Textvorlagen](../modeling/using-escape-sequences-in-text-templates.md).  
   
-### So generieren Sie innerhalb einer Textvorlage eine Textvorlage  
+### <a name="to-generate-a-text-template-from-within-a-text-template"></a>Eine Textvorlage in einer Textvorlage generieren  
   
--   Verwenden Sie den umgekehrten Schrägstrich \(\\\) als Escapezeichen, um die erforderlichen Markuptags in der Textvorlage für Direktiven, Anweisungen, Ausdrücke und Klassenfunktionen in einer separaten Textvorlagendatei zu erzeugen.  
+-   Verwenden Sie den umgekehrten Schrägstrich (\\) als Escapezeichen zum Erzeugen der erforderlichen Markuptags innerhalb der Vorlage "Text" für Richtlinien, Anweisungen, Ausdrücke und Funktionen in einer separaten Textvorlagendatei Klasse.  
   
     ```  
     \<#@ directive \#>  
@@ -31,10 +32,10 @@ Sie können eine Textvorlage erstellen, die eine andere Textvorlage als generier
     \<#+ classfeature \#>  
     ```  
   
-## Beispiel  
- Im folgenden Beispiel werden Escapezeichen verwendet, um aus einer Textvorlage eine Textvorlage zu erzeugen.  Die `output`\-Direktive legt den Zieldateityp auf den Textvorlagendateityp \(.tt\) fest.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel wird die Escape-Zeichen eine Textvorlage in einer Textvorlage erzeugt. Die `output` Richtlinie legt den Zieltyp für die Datei auf den Dateityp des Text-Vorlage (TT).  
   
-```c#  
+```csharp  
 \<#@ output extension=".tt" \#>  
 \<#@ assembly name="System.Xml.dll" \#>  
 \<#@ import namespace="System.Xml" \#>  
@@ -53,7 +54,7 @@ XmlDocument xDoc = new XmlDocument();
 \#>  
 ```  
   
- Die generierte Textausgabe ist eine Textvorlage.  
+ Die generierte Textausgabe wird eine Textvorlage.  
   
 ```  
 <#@ output extension=".tt" #>  

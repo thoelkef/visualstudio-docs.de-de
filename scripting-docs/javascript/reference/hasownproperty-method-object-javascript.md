@@ -1,55 +1,56 @@
 ---
-title: "hasOwnProperty-Methode (Objekt) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "hasOwnProperty"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "hasOwnProperty-Methode"
+title: HasOwnProperty-Methode (Objekt) (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: hasOwnProperty
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: hasOwnProperty method
 ms.assetid: 3eb69d69-486f-4792-9518-4452aef369ca
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 397b68fc87bf730886c928e099037ff0183a7f63
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# hasOwnProperty-Methode (Objekt) (JavaScript)
+# <a name="hasownproperty-method-object-javascript"></a>hasOwnProperty-Methode (Objekt) (JavaScript)
 Ermittelt, ob ein Objekt über eine Eigenschaft mit dem angegebenen Namen verfügt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
 object.hasOwnProperty(proName)  
 ```  
   
-## Parameter  
+## <a name="parameters"></a>Parameter  
  `object`  
- Erforderlich.  Instanz eines Objekts.  
+ Erforderlich. Instanz eines Objekts.  
   
  `proName`  
- Erforderlich.  Zeichenfolgenwert eines Eigenschaftennamens.  
+ Erforderlich. Zeichenfolgenwert eines Eigenschaftennamens.  
   
-## Hinweise  
- Die `hasOwnProperty`\-Methode gibt `true` zurück, wenn `object` über eine Eigenschaft des angegebenen Namens verfügt, andernfalls `false`.  Diese Methode überprüft nicht die Eigenschaften in der Prototypenkette des Objekts; die Eigenschaft muss ein Member des Objekts selbst sein.  
+## <a name="remarks"></a>Hinweise  
+ Die `hasOwnProperty`-Methode gibt `true` zurück, wenn `object` über eine Eigenschaft des angegebenen Namens verfügt, andernfalls `false`. Diese Methode überprüft nicht die Eigenschaften in der Prototypenkette des Objekts; die Eigenschaft muss ein Member des Objekts selbst sein.  
   
  Diese Eigenschaft wird von Hostobjekten für Internet Explorer 8 und ältere Versionen nicht unterstützt.  
   
-## Beispiel  
- Im folgenden Beispiel nutzen alle `String`\-Objekte eine gemeinsame split\-Methode.  Der folgenden Code zeigt **false** und **true** an.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel nutzen alle `String`-Objekte eine gemeinsame split-Methode. Der folgende Code zeigt **"false"** und **"true"**.  
   
-```javascript  
+```JavaScript  
 var s = new String("Sample");  
 document.write(s.hasOwnProperty("split"));  
 document.write("<br/>");  
@@ -61,8 +62,8 @@ document.write(String.prototype.hasOwnProperty("split"));
   
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
-## Siehe auch  
- [in\-Operator](../../javascript/reference/in-operator-decrementjavascript.md)
+## <a name="see-also"></a>Siehe auch  
+ [in-Operator](../../javascript/reference/in-operator-decrementjavascript.md)

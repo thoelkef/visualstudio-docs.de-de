@@ -1,49 +1,50 @@
 ---
-title: "CA1005: &#220;berm&#228;&#223;ige Anzahl von Parametern in generischen Typen vermeiden | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "AvoidExcessiveParametersOnGenericTypes"
-  - "CA1005"
-helpviewer_keywords: 
-  - "AvoidExcessiveParametersOnGenericTypes"
-  - "CA1005"
+title: "CA1005: Übermäßige Anzahl von Parametern in generischen Typen vermeiden Sie | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- AvoidExcessiveParametersOnGenericTypes
+- CA1005
+helpviewer_keywords:
+- AvoidExcessiveParametersOnGenericTypes
+- CA1005
 ms.assetid: 372b2f28-5c59-4815-9753-6c65b2bb3589
-caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: b5fad132dfdda0ef12e6d74c503c5d27024a8382
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CA1005: &#220;berm&#228;&#223;ige Anzahl von Parametern in generischen Typen vermeiden
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1005-avoid-excessive-parameters-on-generic-types"></a>CA1005: Übermäßige Anzahl von Parametern in generischen Typen vermeiden
 |||  
 |-|-|  
 |TypeName|AvoidExcessiveParametersOnGenericTypes|  
 |CheckId|CA1005|  
-|Kategorie \(Category\)|Microsoft.Design|  
+|Kategorie|Microsoft.Design|  
 |Unterbrechende Änderung|Breaking|  
   
-## Ursache  
- Ein extern sichtbarer generischer Typ hat mehr als zwei Typparameter.  
+## <a name="cause"></a>Ursache  
+ Ein extern sichtbarer generischen Typ verfügt über mehr als zwei Typparameter.  
   
-## Regelbeschreibung  
- Je mehr Typparameter ein generischer Typ enthält, desto schwieriger ist es, zu wissen und zu behalten, was die einzelnen Typparameter darstellen.  In der Regel ist dies offensichtlich bei einem Typparameter, wie in `List<T>`, und in bestimmten Fällen auch bei zwei Typparametern, wie in `Dictionary<TKey, TValue>`.  Wenn mehr als zwei Typparameter vorhanden sind, wird die Schwierigkeit für die meisten Benutzer zu groß \(z. B. `TooManyTypeParameters<T, K, V>` in C\# oder `TooManyTypeParameters(Of T, K, V)` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]\).  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Je mehr Typparameter ein generischer Typ enthält, desto schwieriger ist es, zu wissen und zu behalten, was die einzelnen Typparameter darstellen. Ist in der Regel mit einem Typparameter, wie im offensichtlich `List<T>`, und in bestimmten Fällen mit zwei Typparametern, wie im `Dictionary<TKey, TValue>`. Wenn mehr als zwei Typparameter vorhanden sind, wird die Schwierigkeit zu groß für die meisten Benutzer (z. B. `TooManyTypeParameters<T, K, V>` in c# oder `TooManyTypeParameters(Of T, K, V)` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie das Design dahingehend, dass nicht mehr als zwei Typparameter verwendet werden.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den Entwurf an nicht mehr als zwei Typparameter verwenden.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Unterdrücken Sie keine Warnung dieser Regel, es sei denn, für das Design sind unbedingt mehr als zwei Typparameter erforderlich.  Durch die Bereitstellung von Generika in einer einfach zu verstehenden und verwendenden Syntax wird die Zeit, die Sie zum Erlernen benötigen, reduziert und die Übernahmerate neuer Bibliotheken erhöht.  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Unterdrücken Sie keine Warnung dieser Regel, es sei denn, der Berichtsentwurf mehr als zwei Typparameter absolut erfordert. Bereitstellen von Generika in eine Syntax, die leicht zu verstehen und zu verwenden ist, verringert sich die Zeit, die ist erforderlich, um zu erfahren und erhöht die Annahme-Rate der neue Bibliotheken aus.  
   
-## Verwandte Regeln  
+## <a name="related-rules"></a>Verwandte Regeln  
  [CA1010: Auflistungen müssen eine generische Schnittstelle implementieren](../code-quality/ca1010-collections-should-implement-generic-interface.md)  
   
  [CA1000: Statische Member nicht in generischen Typen deklarieren](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)  
@@ -58,5 +59,5 @@ caps.handback.revision: 18
   
  [CA1007: Nach Möglichkeit Generika verwenden](../code-quality/ca1007-use-generics-where-appropriate.md)  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Generika](/dotnet/csharp/programming-guide/generics/index)

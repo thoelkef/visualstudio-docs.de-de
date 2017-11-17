@@ -1,70 +1,69 @@
 ---
-title: "NameSearchOptions | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "NameSearchOptions-Enumeration"
+title: NameSearchOptions | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: NameSearchOptions enumeration
 ms.assetid: 67dfbede-2678-47df-b664-5c49841d0b9b
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7ceadd085a3099721e73e04dd09ea5a0b81ad1d6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# NameSearchOptions
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Gibt die Suchoptionen für Symbol und Dateinamen an.  
+# <a name="namesearchoptions"></a>NameSearchOptions
+Gibt die Suchoptionen für Symbol und den Dateinamen an.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-enum NameSearchOptions {   
-   nsNone,  
-   nsfCaseSensitive     = 0x1,  
-   nsfCaseInsensitive   = 0x2,  
-   nsfFNameExt          = 0x4,  
-   nsfRegularExpression = 0x8,  
-   nsfUndecoratedName   = 0x10,  
+```C++  
+enum NameSearchOptions {   
+   nsNone,  
+   nsfCaseSensitive     = 0x1,  
+   nsfCaseInsensitive   = 0x2,  
+   nsfFNameExt          = 0x4,  
+   nsfRegularExpression = 0x8,  
+   nsfUndecoratedName   = 0x10,  
   
 // For backward compatibility:  
-   nsCaseSensitive           = nsfCaseSensitive,  
-   nsCaseInsensitive         = nsfCaseInsensitive,  
-   nsFNameExt                = nsfCaseInsensitive | nsfFNameExt,  
-   nsRegularExpression       = nsfRegularExpression | nsfCaseSensitive,  
-   nsCaseInRegularExpression = nsfRegularExpression | nsfCaseInsensitive  
+   nsCaseSensitive           = nsfCaseSensitive,  
+   nsCaseInsensitive         = nsfCaseInsensitive,  
+   nsFNameExt                = nsfCaseInsensitive | nsfFNameExt,  
+   nsRegularExpression       = nsfRegularExpression | nsfCaseSensitive,  
+   nsCaseInRegularExpression = nsfRegularExpression | nsfCaseInsensitive  
 };  
 ```  
   
-## Elements  
+## <a name="elements"></a>Elements  
  `nsNone`  
  Es wurden keine Optionen angegeben.  
   
  `nsfCaseSensitive`  
- Wendet eine Übereinstimmung des Namens unter Berücksichtigung von Groß\- und Kleinschreibung.  
+ Wendet eine Übereinstimmung Groß-/Kleinschreibung beachtet.  
   
  `nsfCaseInsensitive`  
- Wendet eine Übereinstimmung Name der Groß\- und Kleinschreibung.  
+ Wendet eine Übereinstimmung der Groß-/Kleinschreibung Namen an.  
   
  `nsfFNameExt`  
- Behandelt Namen als Pfade und wendet eine Übereinstimmung filename.ext\-Name.  
+ Namen behandelt, als Pfade und eine kurzen Namen Übereinstimmung gilt.  
   
  `nsfRegularExpression`  
- Wendet eine Übereinstimmung des Namens unter Berücksichtigung von Groß\- und Kleinschreibung unter Verwendung von Sternchen \(\*\) und Fragezeichen \(?\) als Platzhalter.  
+ Wendet ein Sternchen (*) und Fragezeichen (?) als Platzhalterzeichen mit der Groß-/Kleinschreibung beachtet Name übereinstimmen.  
   
  `nsfUndecoratedName`  
- Gilt nur für Symbole, die ergänzten Namen und die Ergänzung rückgängig gemacht haben.  
+ Gilt nur für Symbole, die sowohl undekorierten und Namen ergänzte.  
   
-## Hinweise  
- Die Werte dieser Enumeration werden mit den folgenden Methoden übergeben:  
+## <a name="remarks"></a>Hinweise  
+ Die Werte aus dieser Enumeration werden für die folgenden Methoden übergeben:  
   
 -   [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
   
@@ -72,11 +71,11 @@ enum NameSearchOptions { 
   
 -   [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: dia2.h  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Enumerationen und Strukturen](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
- [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)   
+ [Idiasession:: Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
+ [Idiasession:: FindFile](../../debugger/debug-interface-access/idiasession-findfile.md)   
  [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)

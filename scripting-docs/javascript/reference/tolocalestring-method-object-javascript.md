@@ -1,57 +1,58 @@
 ---
-title: "toLocaleString-Methode (Objekt) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "toLocaleString"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "toLocaleString-Methode"
+title: ToLocaleString-Methode (Objekt) (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: toLocaleString
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: toLocaleString method
 ms.assetid: 0901afcb-126b-4ed7-bd6a-2301d50e2326
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 3f88e1c702cd8a7d702630ae90ef840c4af88f30
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# toLocaleString-Methode (Objekt) (JavaScript)
-Gibt ein Datum zurück, das unter Verwendung des aktuellen Gebietsschemas in eine Zeichenfolge konvertiert wurde.  
+# <a name="tolocalestring-method-object-javascript"></a>toLocaleString-Methode (Objekt) (JavaScript)
+Gibt ein Datum zurück, die in eine Zeichenfolge, die anhand des aktuellen Gebietsschemas konvertiert werden.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
 dateObj.toLocaleString()   
 ```  
   
-## Hinweise  
- Das erforderliche `dateObj` ist ein beliebiges `Date`\-Objekt.  
+## <a name="remarks"></a>Hinweise  
+ Die erforderliche `dateObj` ist "any" `Date` Objekt.  
   
- Die `toLocaleString`\-Methode gibt ein `String`\-Objekt zurück, in dem das Datum im langen Standardformat des aktuellen Gebietsschemas enthalten ist.  
+ Die `toLocaleString` Methode gibt ein `String` -Objekt, das Datum im langen Standardformat des aktuellen Gebietsschemas enthält.  
   
--   Daten zwischen 1601 und 1999 werden entsprechend den regionalen Einstellungen des Benutzers in der Systemsteuerung formatiert.  
+-   Für Tage zwischen 1601 und 1999 n. Chr. wird das Datum gemäß den regionalen Einstellungen des Benutzers der Systemsteuerung formatiert.  
   
--   Für Daten außerhalb dieses Zeitraums wird das Standardformat der **toString**\-Methode verwendet.  
+-   Für Datumsangaben außerhalb dieses Bereichs liegen, das Standardformat der **ToString** Methode verwendet wird.  
   
- Beispielsweise gibt `toLocaleString` in den USA für den 5. Januar "01\/05\/96 00:00:00" zurück.  In Europa wird für dasselbe Datum "05\/01\/96 00:00:00" zurückgegeben, da der Tag im europäischen Gebrauch vor dem Monat angegeben wird.  
+ Beispielsweise ist in den USA `toLocaleString` gibt "01/05/96 00:00:00" für den 5. Januar. In Europa Längenwert "05/01/96 00:00:00" für das gleiche Datum als Europäischen Konvention wird den Tag vor dem Monat.  
   
 > [!NOTE]
->  `toLocaleString` sollte nur zum Anzeigen der Ergebnisse für den Benutzer verwendet werden und nie als Grundlage zur Berechnung in einem Skript, da das zurückgegebene Ergebnis computerspezifisch ist.  
+>  `toLocaleString`sollte nur verwendet werden, um die Ergebnisse für einen Benutzer angezeigt; Er sollte nie als Grundlage für die Berechnung in einem Skript verwendet werden wie das zurückgegebene Ergebnis computerspezifisch ist.  
   
-## Beispiel  
- Im folgenden Beispiel wird die Verwendung der `toLocaleString`\-Methode veranschaulicht.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel wird die Verwendung der `toLocaleString`-Methode veranschaulicht.  
   
-```javascript  
+```JavaScript  
 function toLocaleStrDemo(){     
    var d, s;                      //Declare variables.  
    d = new Date();                //Create Date object.  
@@ -61,10 +62,10 @@ function toLocaleStrDemo(){
 }  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
- **Gilt für**: [Array\-Objekt](../../javascript/reference/array-object-javascript.md)&#124; [Date\-Objekt](../../javascript/reference/date-object-javascript.md)&#124; [Number\-Objekt](../../javascript/reference/number-object-javascript.md)&#124; [Object\-Objekt](../../javascript/reference/object-object-javascript.md)  
+ **Gilt für**: [Array-Objekt](../../javascript/reference/array-object-javascript.md)&#124; [Datum Objekt](../../javascript/reference/date-object-javascript.md)&#124; [Zahl Objekt](../../javascript/reference/number-object-javascript.md)&#124; [Object-Objekt](../../javascript/reference/object-object-javascript.md)  
   
-## Siehe auch  
- [toLocaleDateString\-Methode \(Datum\)](../../javascript/reference/tolocaledatestring-method-date-javascript.md)
+## <a name="see-also"></a>Siehe auch  
+ [toLocaleDateString-Methode (Datum)](../../javascript/reference/tolocaledatestring-method-date-javascript.md)

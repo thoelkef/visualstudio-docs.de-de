@@ -1,67 +1,66 @@
 ---
-title: "IDiaSession::findLinesByLinenum | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSession::findLinesByLinenum-Methode"
+title: 'Idiasession:: Findlinesbylinenum | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSession::findLinesByLinenum method
 ms.assetid: 76d5622d-9a91-4c2a-a98f-263af5d1daef
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: bb1538aedd1846e164301238262cfb9378973dfc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findLinesByLinenum
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Bestimmt die Zeilennummern der Kompiliereinheit sicher, dass die angegebene Zeilennummer in einer Quelldatei Elemente befindet oder nähert.  
+# <a name="idiasessionfindlinesbylinenum"></a>IDiaSession::findLinesByLinenum
+Bestimmt die Zeilennummern der Kompiliereinheit, der die angegebene Zeilennummer in einer Quelldatei in oder in der Nähe liegt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT findLinesByLinenum (   
-   IDiaSymbol*           compiland,  
-   IDiaSourceFile*       file,  
-   DWORD                 linenum,  
-   DWORD                 column,  
-   IDiaEnumLineNumbers** ppResult  
+```C++  
+HRESULT findLinesByLinenum (   
+   IDiaSymbol*           compiland,  
+   IDiaSourceFile*       file,  
+   DWORD                 linenum,  
+   DWORD                 column,  
+   IDiaEnumLineNumbers** ppResult  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `compiland`  
- \[in\]  Ein [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)\-Objekt, das die Kompiliereinheit darstellt, in der für die Zeilennummern suchen.  Dieser Parameter darf nicht `NULL` sein.  
+ [in] Ein [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das der Kompiliereinheit zu durchsuchende für die Zeilennummern darstellt. Dieser Parameter darf nicht sein `NULL`.  
   
  `file`  
- \[in\]  Ein [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)\-Objekt, das die Quelldatei darstellt, das gesucht werden soll.  Dieser Parameter darf nicht `NULL` sein.  
+ [in] Ein [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) Objekt, das die Quelldatei durchsucht darstellt. Dieser Parameter darf nicht sein `NULL`.  
   
  `linenum`  
- \[in\]  Gibt eine 1\-basierte Zeilennummer an.  
+ [in] Gibt eine Zeile eins an.  
   
 > [!NOTE]
->  Sie können keine nicht verwenden, um alle Zeilen anzugeben \(verwenden Sie die [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)\-Methode, um alle Zeilen zu suchen\).  
+>  Sie können nicht 0 (null) verwenden, um alle Zeilen angeben (verwenden Sie die [idiasession:: Findlines](../../debugger/debug-interface-access/idiasession-findlines.md) Methode, um alle Zeilen zu suchen).  
   
  `column`  
- \[in\]  Gibt die Nummer der Spalte an.  Verwendung von Nullen, alle Spalten anzugeben.  Eine Spalte ist ein Byteoffset in eine Zeile.  
+ [in] Gibt die Nummer der Spalte an. Verwenden Sie 0 (null), um alle Spalten anzugeben. Eine Spalte ist ein Byte-Offset in einer Zeile.  
   
  `ppResult`  
- \[out\]  Gibt ein [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objta zurück, das eine Liste der abgerufenen Zeilennummern enthält.  
+ [out] Gibt eine [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) Objta, die eine Liste mit den Zeilennummern enthält abgerufen.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Beispiel  
- Im folgenden Beispiel wird gezeigt, wie eine Quelldatei öffnet, die Kompiliereinheiten auflistet, die durch diese Datei bereitgestellt werden und die Zeilennummern in der Quelldatei in der jeder Kompiliereinheit beginnt.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel wird veranschaulicht, öffnen Sie eine Quelldatei, Auflisten der Compilands, die von dieser Datei beigetragen haben, und suchen Sie die Zeilennummern, in der Quelldatei, in jeder Kompiliereinheit beginnt.  
   
-```cpp#  
+```C++  
 void ShowLinesInCompilands(IDiaSession *pSession, LPCOLESTR filename)  
 {  
     IDiaEnumSourceFiles* pEnum;  
@@ -98,9 +97,9 @@ void ShowLinesInCompilands(IDiaSession *pSession, LPCOLESTR filename)
 }  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)   
+ [Idiasession:: Findlinesbyaddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)   
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

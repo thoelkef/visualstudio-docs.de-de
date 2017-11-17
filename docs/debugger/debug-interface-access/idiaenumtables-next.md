@@ -1,52 +1,51 @@
 ---
-title: "IDiaEnumTables::Next | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumTables::Next-Methode"
+title: 'Idiaenumtables:: Next | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumTables::Next method
 ms.assetid: 8d7bd359-d33e-4317-9674-d89283efd7de
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7d62394ae19d62ad5cdd58b95110442bf33cda8c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumTables::Next
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idiaenumtablesnext"></a>IDiaEnumTables::Next
 Ruft eine angegebene Anzahl von Tabellen in der Enumerationsfolge ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT Next (   
-   ULONG       celt,  
-   IDiaTable** rgelt,  
-   ULONG*      pceltFetched  
+```C++  
+HRESULT Next (   
+   ULONG       celt,  
+   IDiaTable** rgelt,  
+   ULONG*      pceltFetched  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `celt`  
- \[in\]  Die Anzahl der Tabellen im Enumerator abgerufen werden sollen.  
+ [in] Die Anzahl der Tabellen in der Enumerator abgerufen werden sollen.  
   
  `rgelt`  
- \[out\]  Ein Array, das den [IDiaTable](../../debugger/debug-interface-access/idiatable.md)\-Objekten gefüllt werden soll, die die gewünschte Tabelle darstellen.  
+ [out] Ein Array, das mit ausgefüllt werden die [IDiaTable](../../debugger/debug-interface-access/idiatable.md) Objekte, die die gewünschten Tabellen darstellen.  
   
  `pceltFetched`  
- \[out\]  Gibt die Anzahl der abgerufenen Tabellen im Enumerator zurück.  
+ [out] Gibt die Anzahl der Tabellen in der abgerufenen Enumerator zurück.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück.  Gibt `S_FALSE` zurück, wenn keine weiteren Tabellen vorhanden sind.  Andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` , wenn keine weitere Tabellen vorhanden sind. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)   
  [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

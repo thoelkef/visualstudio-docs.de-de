@@ -1,45 +1,48 @@
 ---
-title: "Vorgehensweise: Erstellen einer Dienstanwendung f&#252;r WCF-Workflows | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Vorgehensweise: erstellen eine Dienstanwendung für WCF-Workflow | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 ms.assetid: 12d675ac-27d8-4d86-ba16-6f7688f8c841
-caps.latest.revision: 14
-caps.handback.revision: 14
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
+caps.latest.revision: "14"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: 62eeab72ab88094f7986bb29bd6f3a55ad6aeff6
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Vorgehensweise: Erstellen einer Dienstanwendung f&#252;r WCF-Workflows
-[!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)]\-Workflowdienstanwendungen sind verteilte Kommunikationsdienste, die prozessübergreifend Nachrichten zwischen Clients und untereinander übergeben.Die Implementierung des Dienstvertrags auf der Dienstseite erfolgt deklarativ über Workflowaktivitäten in [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)], analog zu den früheren Workflowdiensten in .NET Framework 3.5.  
+# <a name="how-to-create-a-wcf-workflow-service-application"></a>Vorgehensweise: Erstellen einer Dienstanwendung für WCF-Workflows
+[!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)]-Workflowdienstanwendungen sind verteilte Kommunikationsdienste, die prozessübergreifend Nachrichten zwischen Clients und untereinander übergeben. Die Implementierung des Dienstvertrags auf der Dienstseite erfolgt deklarativ über Workflowaktivitäten in [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)], analog zu den früheren Workflowdiensten in .NET Framework 3.5.  
   
-### So erstellen Sie eine WCF\-Workflowdienstanwendung  
+### <a name="to-create-a-wcf-workflow-service-application"></a>So erstellen Sie eine WCF-Workflowdienstanwendung  
   
-1.  Starten Sie [!INCLUDE[vs2010](../modeling/includes/vs2010_md.md)].  
+1.  Starten Sie [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)].  
   
-2.  Zeigen Sie im Menü **Datei** auf **Neu**, und klicken Sie dann auf **Projekt**.  
+2.  Auf der **Datei** Sie im Menü **neu**, und wählen Sie dann **Projekt...** .  
   
      Das Dialogfeld **Neues Projekt** wird angezeigt.  
   
-3.  Wählen Sie im Bereich **Installierte Vorlagen** die Option **WCF** oder **Workflow** aus der **Visual C\#**\- oder **Visual Basic**\-Gruppe \(je nach bevorzugter Sprache\) aus.  
+3.  In der **installierte Vorlagen** klicken Sie im Bereich **WCF** oder **Workflow** entweder aus der **Visual C#-** oder **Visual Basic** Gruppierungen je nach bevorzugter Sprache.  
   
-4.  Wählen Sie im mittleren Bereich **WCF\-Workflowdienstanwendung**.  
+4.  Wählen Sie im mittleren Bereich **WCF-Workflowdienstanwendung**.  
   
-5.  Geben Sie im Feld **Name** einen beschreibenden Namen für das Projekt ein, um es einfach identifizieren zu können.  
+5.  In der **Namen** Geben Sie einen beschreibenden Namen für das Projekt in der es einfach identifizieren zu können.  
   
-6.  Geben Sie im Feld **Speicherort** das Verzeichnis ein, in dem das Projekt gespeichert werden soll, oder klicken Sie auf **Durchsuchen**, um zu dem Verzeichnis zu navigieren.  
+6.  In der **Speicherort** Geben Sie das Verzeichnis, in dem Sie das Projekt gespeichert werden soll, oder klicken möchten **Durchsuchen** navigieren.  
   
-7.  Wählen Sie im Feld **Projektmappe** aus, ob eine neue Projektmappe erstellt werden soll, und klicken Sie dann auf **OK**.  
+7.  In der **Lösung** Feld aus, wählen Sie entweder eine neue Projektmappe erstellen, und klicken Sie dann auf **OK**.  
   
     > [!NOTE]
-    >  Wenn Sie einer vorhandenen Projektmappe eine Workflowkonsolenanwendung hinzufügen möchten, öffnen Sie diese Projektmappe in [!INCLUDE[vs2010](../modeling/includes/vs2010_md.md)], klicken Sie mit der rechten Maustaste im **Projektmappen\-Explorer** auf die Projektmappe, und wählen Sie **Hinzufügen** und dann **Neues Projekt** aus, um das Dialogfeld **Neues Projekt** zu öffnen.Fahren Sie wie oben in dieser Prozedur beschrieben fort.  
+    >  Wenn Sie einer vorhandenen Projektmappe eine workflowkonsolenanwendung hinzufügen möchten, öffnen Sie die Projektmappe in [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], klicken Sie mit der mit der rechten Maustaste auf die Projektmappe in **Projektmappen-Explorer**, und wählen Sie **hinzufügen**, klicken Sie dann  **Neues Projekt...**  So öffnen die **neues Projekt** (Dialogfeld). Fahren Sie wie oben in dieser Prozedur beschrieben fort.  
   
-8.  Die Projektvorlage erstellt eine Dienstdefinition im XAML\-Format.Der [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] wird in der Entwurfsansicht mit einer <xref:System.Activities.Statements.Sequence>\-Aktivität geöffnet, die einen Satz von <xref:System.ServiceModel.Activities.Receive>\-Aktivitäten und <xref:System.ServiceModel.Activities.SendReply>\-Aktivitäten enthält.  
+8.  Die Projektvorlage erstellt eine Dienstdefinition im XAML-Format. Der [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] wird in der Entwurfsansicht mit einer <xref:System.Activities.Statements.Sequence>-Aktivität geöffnet, die einen Satz von <xref:System.ServiceModel.Activities.Receive>-Aktivitäten und <xref:System.ServiceModel.Activities.SendReply>-Aktivitäten enthält.  
   
-## Siehe auch  
- [Vorgehensweise: Erstellen einer Aktivität](../Topic/How%20to:%20Create%20an%20Activity.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Vorgehensweise: Erstellen Sie eine Aktivität](/dotnet/framework/windows-workflow-foundation/how-to-create-an-activity)   
  [Erstellen eines Workflowprojekts](../workflow-designer/creating-a-workflow-project.md)

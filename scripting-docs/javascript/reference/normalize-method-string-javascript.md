@@ -1,56 +1,59 @@
 ---
-title: "normalize-Methode (String) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: normalize-Methode (String) (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: d50077c1-b5fa-4e7a-9c9d-dc66cfc423ac
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: aece38339ea1ce8924f404938b2d35d07504d539
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# normalize-Methode (String) (JavaScript)
-Gibt die Unicode\-Normalisierungsform einer angegebenen Zeichenfolge zurück.  
+# <a name="normalize-method-string-javascript"></a>normalize-Methode (String) (JavaScript)
+Gibt die Unicode-Normalisierungsform einer angegebenen Zeichenfolge zurück.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 stringObj.normalize([form]);  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `stringObj`  
- Erforderlich.  Das string\-Objekt für den Test.  
+ Erforderlich. Das string-Objekt für den Test.  
   
  `form`  
- Dies ist optional.  Der Unicode\-Normalisierungsformwert.  
+ Dies ist optional. Der Unicode-Normalisierungsformwert.  
   
-## Rückgabewert  
- Die Unicode\-Normalisierungsform einer angegebenen Zeichenfolge.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Unicode-Normalisierungsform einer angegebenen Zeichenfolge.  
   
-## Ausnahmen  
+## <a name="exceptions"></a>Ausnahmen  
  Wenn `form` kein unterstützter Wert ist, wird ein `RangeError` ausgelöst.  
   
-## Hinweise  
- Wenn `stringObj` keine Zeichenfolge ist, erfolgt eine Konvertierung in eine Zeichenfolge, bevor die Methode versucht, die Unicode\-Normalisierungsform der Zeichenfolge zurückzugeben.  
+## <a name="remarks"></a>Hinweise  
+ Wenn `stringObj` keine Zeichenfolge ist, erfolgt eine Konvertierung in eine Zeichenfolge, bevor die Methode versucht, die Unicode-Normalisierungsform der Zeichenfolge zurückzugeben.  
   
- `form` muss ein Unicode\-Normalisierungsformwert \("NFC", "NFD", "NFKC" oder "NFKD"\) entsprechend den Werten sein, die für [Unicode Standard Annex \#15](http://www.unicode.org/reports/tr15/) angegeben sind.  Der Standardwert von `form` ist "NFC".  
+ `form`muss werden ein Unicode-Normalisierungsform-Wert "NFC", "NFD", "NFKC" oder "NFKD", entsprechend den Werten für angegebene [Unicode Standard Annex #15](http://www.unicode.org/reports/tr15/). Der Standardwert von `form` ist "NFC".  
   
-## Beispiel  
+## <a name="example"></a>Beispiel  
  Die folgenden Codebeispiele veranschaulichen die Verwendung der `normalize`Methode.  
   
-```javascript  
+```JavaScript  
 // ANGSTORM SIGN and LATIN CAPITAL A WITH RING ABOVE is canonically equivalent  
 "\u212b".normalize("NFC") === "\u00c5";  
   
@@ -71,5 +74,5 @@ stringObj.normalize([form]);
 "fi".normalize("NFKC") === "fi";  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv12](../../javascript/reference/includes/jsv12-md.md)]

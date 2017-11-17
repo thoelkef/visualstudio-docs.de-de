@@ -1,56 +1,59 @@
 ---
-title: "Zuweisungsoperator (=) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "="
-  - "Assign"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "=-Operator, Informationen über den =-Operator"
-  - "=-Operator, Zuweisungsoperatoren"
-  - "=-Operator"
-  - "Zuweisungsoperatoren, JavaScript"
+title: Zuweisungsoperator (=) (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords:
+- =
+- Assign
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- = operator, about = operator
+- = operator, assignment operators
+- = operator
+- assignment operators, JavaScript
 ms.assetid: 1c46a560-ec8d-41c5-a806-30c4843789c4
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b1b89e444d55f5a0a05cbb444b182dac27627d9b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Zuweisungsoperator (=) (JavaScript)
+# <a name="assignment-operator--javascript"></a>Zuweisungsoperator (=) (JavaScript)
 Weist einer Variablen einen Wert zu.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
 result = expression  
 ```  
   
-## Parameter  
+## <a name="parameters"></a>Parameter  
  `result`  
  Beliebige Variable.  
   
  `expression`  
- Beliebiger numerischer Ausdruck.  
+ Ein beliebiger numerischer Ausdruck.  
   
-## Hinweise  
- Der Operator \= verhält sich wie andere Operatoren, sodass Ausdrücke, die ihn enthalten, einen Wert haben.  Somit können Zuweisungsoperatoren wie folgt verkettet werden: `j = k = l = 0`.  In diesem Fall sind `j`, `k` und `l` gleich 0 \(null\).  
+## <a name="remarks"></a>Hinweise  
+ Den =-Operator verhält sich wie andere Operatoren kann, damit die Ausdrücke, die sie enthalten einen Wert aufweisen. Dies bedeutet, dass Zuweisungsoperatoren wie folgt verkettet werden können: `j = k = l = 0`. In diesem Fall `j`, `k`, und `l` gleich 0 (null).  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Operatorrangfolge](../../javascript/operator-subtractprecedence-javascript.md)   
- [Zusammenfassung der Operatoren \(JavaScript\)](../../javascript/misc/operator-subtractsummary-javascript.md)
+ [Zusammenfassung der Operatoren (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)

@@ -1,11 +1,14 @@
 ---
-title: Windows Communication Foundation Services and WCF Data Services in Visual Studio | Microsoft Docs
+title: Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
+dev_langs:
+- VB
+- CSharp
 helpviewer_keywords:
 - services, WCF Data
 - WCF services, binding to
@@ -31,235 +34,223 @@ helpviewer_keywords:
 - WCF services, endpoints
 - service method, called asynchronously[Visual Studio]
 ms.assetid: d56f12cb-e139-4fec-b3e4-488383356642
-caps.latest.revision: 26
-author: mikeblome
-ms.author: mblome
+caps.latest.revision: "26"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 50cb8e237165ddd27d6b98c9bc403ad7debea81c
-ms.contentlocale: de-de
-ms.lasthandoff: 08/22/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 39c9ac7b1cbed8c64ee3b87fde4c990f998157a4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Windows Communication Foundation Services and WCF Data Services in Visual Studio
-Visual Studio provides tools for working with Windows Communication Foundation (WCF) and [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], Microsoft technologies for creating distributed applications. This topic provides an introduction to services from a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] perspective. For the full documentation, see [WCF Data Services 4.5](/dotnet/framework/data/wcf/index).  
+# <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio
+Visual Studio enthält Tools zum Arbeiten mit der Windows Communication Foundation (WCF) und [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], Microsoft-Technologien zum Erstellen von verteilten Anwendungen. Dieses Thema enthält eine Einführung in die Dienste aus einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Perspektive. Die vollständige Dokumentation finden Sie unter [WCF Data Services 4.5](/dotnet/framework/data/wcf/index).  
   
-## <a name="what-is-wcf"></a>What Is WCF?  
- [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] is a unified framework for creating secure, reliable, transacted, and interoperable distributed applications. It replaces older interprocess communication technologies such as ASMX Web services, .NET Remoting, Enterprise Services (DCOM), and MSMQ. WCF brings together the functionality of all those technologies under a unified programming model. This simplifies the experience of developing distributed applications.  
+## <a name="what-is-wcf"></a>Was ist WCF?  
+ [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)]ist ein einheitliches Framework zum Erstellen von sicheren, zuverlässigen transaktive und interoperabler verteilte Anwendungen. Er ersetzt die ältere prozessübergreifende Kommunikation-Technologien wie ASMX-Webdienste, .NET Remoting, Enterprise Services (DCOM) und MSMQ. WCF vereint die Funktionen dieser Technologien für die unter ein einheitliches Programmiermodell. Dies vereinfacht die Erfahrung der Entwicklung von verteilten Anwendungen.  
   
-#### <a name="what-are-wcf-data-services"></a>What are WCF Data Services  
- [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] is an implementation of the Open Data (OData) Protocol standard.  WCF Data Services lets you expose tabular data as a set of REST APIs, allowing you to return data using standard HTTP verbs such as GET, POST, PUT or DELETE. On the server side, WCF Data Services are being superseded by [ASP.NET Web API](http://www.asp.net/web-api) for creating new OData services. The WCF Data Services client library continues to be a good choice for consuming OData services in a .NET application from Visual Studio (**Project &#124; Add Service Reference**) . For more information, see [WCF Data Services 4.5](http://go.microsoft.com/fwlink/?LinkID=119952).  
+#### <a name="what-are-wcf-data-services"></a>Was sind WCF Data Services  
+ [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]ist eine Implementierung des Open Data (OData)-Protokolls standard.  WCF Data Services können, die Sie Tabellendaten als Satz von REST-APIs, sodass Sie zum Zurückgeben von Daten mithilfe von standardmäßigen HTTP-Verben wie GET, POST, PUT oder Löschen verfügbar machen. Auf der Serverseite werden von WCF Data Services abgelöst wird [ASP.NET Web API](http://www.asp.net/web-api) zum Erstellen von neuer OData-Diensten. Die WCF Data Services-Clientbibliothek weiterhin eine gute Wahl für die Nutzung von OData-Dienste in einer .NET-Anwendung aus Visual Studio (**Projekt &#124; Hinzufügen eines Dienstverweises**). Weitere Informationen finden Sie unter [WCF Data Services 4.5](http://go.microsoft.com/fwlink/?LinkID=119952).  
   
-### <a name="wcf-programming-model"></a>WCF Programming Model  
- The WCF Programming model is based on communication between two entities: a WCF service and a WCF client. The programming model is encapsulated in the <xref:System.ServiceModel> namespace in the [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
+### <a name="wcf-programming-model"></a>WCF-Programmiermodell  
+ Das WCF-Webprogrammiermodell basiert darauf, dass die Kommunikation zwischen zwei Entitäten: einen WCF-Dienst und einem WCF-Client. Das Programmiermodell gekapselt ist, der <xref:System.ServiceModel> Namespace in der [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
-#### <a name="wcf-service"></a>WCF Service  
- A WCF service is based on an interface that defines a contract between the service and the client. It is marked with a <xref:System.ServiceModel.ServiceContractAttribute> attribute, as shown in the following code:  
+#### <a name="wcf-service"></a>WCF-Dienst  
+ Ein WCF-Dienst basiert auf einer Schnittstelle, die ein Vertrag zwischen dem Dienst und dem Client definiert. Sie wird markiert, mit einem <xref:System.ServiceModel.ServiceContractAttribute> Attribut, wie im folgenden Code dargestellt:  
   
- [!code-cs[WCFWalkthrough#6](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_1.cs)] [!code-vb[WCFWalkthrough#6](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_1.vb)]  
+ [!code-csharp[WCFWalkthrough#6](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_1.cs)]
+ [!code-vb[WCFWalkthrough#6](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_1.vb)]  
   
- [!code-cs[WCFWalkthrough#1](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_2.cs)] [!code-vb[WCFWalkthrough#1](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_2.vb)]  
+ [!code-csharp[WCFWalkthrough#1](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_2.cs)]
+ [!code-vb[WCFWalkthrough#1](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_2.vb)]  
   
- You define functions or methods that are exposed by a WCF service by marking them with a <xref:System.ServiceModel.OperationContractAttribute> attribute. In addition, you can expose serialized data by marking a composite type with a <xref:System.Runtime.Serialization.DataContractAttribute> attribute. This enables data binding in a client.  
+ Sie definieren, Funktionen oder Methoden, die von einem WCF-Dienst verfügbar gemacht werden, durch die Markierung mit einem <xref:System.ServiceModel.OperationContractAttribute> Attribut. Darüber hinaus können Sie serialisierte Daten verfügbar machen, durch die Markierung eines zusammengesetzten Typs mit einem <xref:System.Runtime.Serialization.DataContractAttribute> Attribut. Dies ermöglicht die Datenbindung in einem Client.  
   
- After an interface and its methods are defined, they are encapsulated in a class that implements the interface. A single WCF service class can implement multiple service contracts.  
+ Nachdem eine Schnittstelle und seine Methoden definiert sind, werden sie in einer Klasse gekapselt, die die Schnittstelle implementiert. Eine einzelne WCF-Dienstklasse kann mehrere Dienstverträge implementieren.  
   
- A WCF service is exposed for consumption through what is known as an *endpoint*. The endpoint provides the only way to communicate with the service; you cannot access the service through a direct reference as you would with other classes.  
+ Ein WCF-Dienst wird verfügbar gemacht, für Sie Verbrauch durch was genannt wird ein *Endpunkt*. Der Endpunkt stellt die einzige Möglichkeit, mit dem Dienst kommunizieren; Sie können nicht den Dienst über keinen direkten Verweis zugreifen, wie bei anderen Klassen aus.  
   
- An endpoint consists of an address, a binding, and a contract. The address defines where the service is located; this could be a URL, an FTP address, or a network or local path. A binding defines the way that you communicate with the service. WCF bindings provide a versatile model for specifying a protocol such as HTTP or FTP, a security mechanism such as Windows Authentication or user names and passwords, and much more. A contract includes the operations that are exposed by the WCF service class.  
+ Ein Endpunkt besteht aus einer Adresse, einer Bindung und einem Vertrag. Die Adresse definiert, in dem der Dienst befindet. Dies kann eine URL, eine FTP-Adresse, Netzwerk oder ein lokaler Pfad sein. Eine Bindung definiert die Möglichkeit, die Sie mit dem Dienst kommunizieren. WCF-Bindungen bieten eine vielseitige Modell für ein Protokoll wie z. B. HTTP oder FTP, einen Sicherheitsmechanismus wie Windows-Authentifizierung oder Benutzernamen und Kennwörter angeben und vieles mehr. Ein Vertrag enthält die Vorgänge, die von der WCF-Dienstklasse verfügbar gemacht werden.  
   
- Multiple endpoints can be exposed for a single WCF service. This enables different clients to communicate with the same service in different ways. For example, a banking service might provide one endpoint for employees and another for external customers, each using a different address, binding, and/or contract.  
+ Mehrere Endpunkte können für einen einzelnen WCF-Dienst verfügbar gemacht werden. Dadurch wird anderen Clients die Kommunikation mit dem gleichen Dienst auf unterschiedliche Weise. Beispielsweise könnte ein Banking-Dienst geben Sie einen Endpunkt für Mitarbeiter und ein anderes für externe Kunden jeweils mit einer anderen Adresse, Bindung, und/oder Vertrag.  
   
-#### <a name="wcf-client"></a>WCF Client  
- A WCF client consists of a *proxy* that enables an application to communicate with a WCF service, and an endpoint that matches an endpoint defined for the service. The proxy is generated on the client side in the app.config file and includes information about the types and methods that are exposed by the service. For services that expose multiple endpoints, the client can select the one that best fits its needs, for example, to communicate over HTTP and use Windows Authentication.  
+#### <a name="wcf-client"></a>WCF-Client  
+ Ein WCF-Client besteht aus einem *Proxy* mit der eine Anwendung für die Kommunikation mit einem WCF-Dienst und ein Endpunkt, der einen Endpunkt übereinstimmt, die für den Dienst definierten. Der Proxy wird in der Datei "App.config" auf dem Client generiert und enthält Informationen über die Typen und Methoden, die vom Dienst verfügbar gemacht werden. Für Dienste, die mehrere Endpunkte verfügbar machen, kann der Client das Zertifikat auszuwählen, die am besten der Anforderungen, z. B. über HTTP kommunizieren und Windows-Authentifizierung verwenden.  
   
- After a WCF client has been created, you reference the service in your code just as you would any other object. For example, to call the `GetData` method shown earlier, you would write code that resembles the following:  
+ Nachdem ein WCF-Client erstellt wurde, verweisen Sie den Dienst in Ihrem Code genau wie ein anderes Objekt. Beispielsweise rufen Sie die `GetData` -Methode, Schreiben Sie Code, der die folgenden ähnelt:  
   
- [!code-cs[WCFWalkthrough#3](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_3.cs)] [!code-vb[WCFWalkthrough#3](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_3.vb)]  
+ [!code-csharp[WCFWalkthrough#3](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_3.cs)]
+ [!code-vb[WCFWalkthrough#3](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_3.vb)]  
   
-## <a name="wcf-tools-in-visual-studio"></a>WCF Tools in Visual Studio  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] provides tools to help you create both WCF services and WCF clients. For a walkthrough that demonstrates the tools, see [Walkthrough: Creating a simple WCF Service in Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md).  
+## <a name="wcf-tools-in-visual-studio"></a>WCF-Tools in Visual Studio  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]bietet Tools, mit denen Sie die WCF-Dienste und WCF-Clients zu erstellen. Eine exemplarische Vorgehensweise, die die Tools veranschaulicht, finden Sie unter [Exemplarische Vorgehensweise: Erstellen eines einfachen WCF-Diensts in Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md).  
   
-### <a name="creating-and-testing-wcf-services"></a>Creating and Testing WCF Services  
- You can use the WCF [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] templates as a foundation to quickly create your own service. You can then use WCF Service Auto Host and WCF Test Client to debug and test the service. These tools together provide a fast and convenient debug and testing cycle, and eliminate the requirement to commit to a hosting model at an early stage.  
+### <a name="creating-and-testing-wcf-services"></a>Erstellen und Testen von WCF-Dienste  
+ Sie können die WCF [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Vorlagen als Grundlage verwenden, um schnell einen eigenen Dienst zu erstellen. Sie können dann WCF-Dienst-Auto-Host und WCF-Testclient verwenden, Debuggen und Testen Sie den Dienst. Diese Tools bieten eine schnelle und bequeme Debug- und Testzyklus zusammen und die Anforderung an, für eine hosting-Modell in einem frühen Stadium zu übernehmen.  
   
-#### <a name="wcf-templates"></a>WCF Templates  
- WCF [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] templates provide a basic class structure for service development. Several WCF templates are available in the **Add New Project** dialog box. These include WCF Service Library projects, WCF Service Web Sites, and WCF Service Item templates.  
+#### <a name="wcf-templates"></a>WCF-Vorlagen  
+ WCF [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Vorlagen stellen eine grundlegende Klassenstruktur zur Dienstentwicklung bereit. Es stehen mehrere WCF-Vorlagen in der **neues Projekt hinzufügen** (Dialogfeld). Dazu gehören WCF-Dienstbibliotheksprojekte, WCF-Dienst-Websites und WCF-Dienst-Elementvorlagen.  
   
- When you select a template, files are added for a service contract, a service implementation, and a service configuration. All necessary attributes are already added, creating a simple "Hello World" type of service, and you did not have to write any code. You will, of course, want to add code to provide functions and methods for your real world service, but the templates provide the basic foundation.  
+ Wenn Sie eine Vorlage auswählen, werden die Dateien für einen Dienstvertrag, einer dienstimplementierung und eine Dienstkonfiguration hinzugefügt. Alle erforderlichen Attribute wurden bereits hinzugefügt, erstellen einen einfache "Hello World"-Typ des Diensts, und Sie keinen Code schreiben. Sie werden natürlich Code hinzufügen, um Funktionen und-Methoden für Ihren Dienst realen bereitstellen möchten, aber die Vorlagen bieten die grundlegenden Foundation.  
   
- To learn more about WCF templates, see [WCF Visual Studio Templates](/dotnet/framework/wcf/wcf-vs-templates).  
+ Weitere Informationen zu WCF-Vorlagen finden Sie unter [WCF Visual Studio-Vorlagen](/dotnet/framework/wcf/wcf-vs-templates).  
   
-#### <a name="wcf-service-host"></a>WCF Service Host  
- When you start the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugger (by pressing F5) for a WCF service project, the WCF Service Host tool is automatically started to host the service locally. WCF Service Host enumerates the services in a WCF service project, loads the project's configuration, and instantiates a host for each service that it finds.  
+#### <a name="wcf-service-host"></a>WCF-Diensthost  
+ Beim Starten der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugger (durch Drücken von F5) für eine WCF-Dienstprojekt, die WCF-Diensthost-Tool automatisch gestartet wird, um den Dienst lokal zu hosten. WCF-Diensthost listet die Dienste in einem WCF-Dienstprojekt, lädt die Projektkonfiguration und instanziiert einen Host für jeden gefundenen Dienst.  
   
- By using WCF Service Host, you can test a WCF service without writing extra code or committing to a specific host during development.  
+ Mithilfe von WCF-Diensthost können Sie einen WCF-Dienst testen, ohne zusätzlichen Code schreiben oder an einen bestimmten Host bei der Entwicklung bereitstellen.  
   
- To learn more about WCF Service Host, see [WCF Service Host (WcfSvcHost.exe)](/dotnet/framework/wcf/wcf-service-host-wcfsvchost-exe).  
+ Weitere Informationen zu WCF-Diensthost finden Sie unter [WCF-Diensthost (WcfSvcHost.exe)](/dotnet/framework/wcf/wcf-service-host-wcfsvchost-exe).  
   
-#### <a name="wcf-test-client"></a>WCF Test Client  
- The WCF Test Client tool enables you to input test parameters, submit that input to a WCF service, and view the response that the service sends back. It provides a convenient service testing experience when you combine it with WCF Service Host. The tool can be found in the \Common7\IDE folder, which for Visual Studio 2015 installed in drive C: is here: **C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\\**.  
+#### <a name="wcf-test-client"></a>WCF-Testclient  
+ Der WCF-Testclient-Tool können Sie Testparameter, übermitteln, die Eingabe an einen WCF-Dienst, und zeigen Sie an die Antwort, die der Dienst zurücksendet. Es bietet es sich um einen geeigneten Dienst testen Sie sie mit WCF-Diensthost kombinieren. Das Tool finden Sie in den Ordner \Common7\IDE, die für Visual Studio 2015 installiert in Laufwerk "c:" sieht: **C:\Program Files (x86) \Microsoft Visual Studio 14.0\Common7\IDE\\**.  
   
- When you press F5 to debug a WCF service project, WCF Test Client opens and displays a list of service endpoints that are defined in the configuration file. You can test the parameters and start the service, and repeat this process to continuously test and validate your service.  
+ Drücken von F5 zum Debuggen eines WCF-Dienst wird von WCF-Testclient wird geöffnet und zeigt eine Liste der Endpunkte, die in der Konfigurationsdatei definiert sind. Sie können die Parameter testen und starten Sie den Dienst und wiederholen Sie diesen Vorgang, um kontinuierlich zu testen und überprüfen den Dienst.  
   
- To learn more about WCF Test Client, see [WCF Test Client (WcfTestClient.exe)](/dotnet/framework/wcf/wcf-test-client-wcftestclient-exe).  
+ Weitere Informationen zu WCF-Testclient finden Sie unter [WCF-Testclient (WcfTestClient.exe)](/dotnet/framework/wcf/wcf-test-client-wcftestclient-exe).  
   
-### <a name="accessing-wcf-services-in-visual-studio"></a>Accessing WCF Services in Visual Studio  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] simplifies the task of creating WCF clients, automatically generating a proxy and an endpoint for services that you add by using the **Add Service Reference** dialog box. All necessary configuration information is added to the app.config file. Most of the time, all that you have to do is instantiate the service in order to use it.  
+### <a name="accessing-wcf-services-in-visual-studio"></a>Zugreifen auf WCF-Dienste in Visual Studio  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]vereinfacht die Aufgabe des Erstellens von WCF-Clients, generieren automatisch einen Proxy und einen Endpunkt für Dienste, die Sie hinzufügen, indem Sie mit der **Hinzufügen eines Dienstverweises** (Dialogfeld). Alle erforderlichen Konfigurationsinformationen wird die Datei "App.config" hinzugefügt. Die meisten Fällen ist, müssen Sie, den Dienst instanziieren, um es verwenden.  
   
- The **Add Service Reference** dialog box enables you to enter the address for a service or to search for a service that is defined in your solution. The dialog box returns a list of services and the operations provided by those services. It also enables you to define the namespace by which you will reference the services in code.  
+ Die **Hinzufügen eines Dienstverweises** Dialogfeld können Sie die Adresse für einen Dienst eingeben oder nach einem Dienst zu suchen, die in der Projektmappe definiert wird. Das Dialogfeld gibt eine Liste von Diensten und die Vorgänge, die von diesen Diensten bereitgestellt werden. Darüber hinaus können Sie den Namespace definieren, mit dem Sie die Dienste im Code verweist.  
   
- The **Configure Service References** dialog box enables you to customize the configuration for a service. You can change the address for a service, specify access level, asynchronous behavior, and message contract types, and configure type reuse.  
+ Die **Dienstverweis** Dialogfeld können Sie die Konfiguration für einen Dienst anzupassen. Sie können die Adresse für einen Dienst ändern, Zugriffsebene, asynchrones Verhalten und Nachrichtenvertragstypen angeben und Wiederverwendung von konfigurieren.  
   
-## <a name="how-to-select-a-service-endpoint"></a>How to: Select a Service Endpoint  
- Some Windows Communication Foundation (WCF) services expose multiple endpoints through which a client may communicate with the service. For example, a service might expose one endpoint that uses an HTTP binding and user name / password security and a second endpoint that uses FTP and Windows Authentication. The first endpoint might be used by applications that access the service from outside a firewall, whereas the second might be used on an intranet.  
+## <a name="how-to-select-a-service-endpoint"></a>Vorgehensweise: Auswählen eines Dienstendpunkts  
+Einige Windows Communication Foundation (WCF)-Dienste verfügbar machen mehrere Endpunkte, die über die ein Client mit dem Dienst kommunizieren kann. Z. B. ein Dienst ist zur Verfügung stellt einen Endpunkt, der ein HTTP-Bindung und ein beispielbenutzername verwendet / kennwortsicherheit und einen zweiten Endpunkt, der FTP- und Windows-Authentifizierung verwendet. Der erste Endpunkt kann von Anwendungen, die Zugriff auf den Dienst aus außerhalb einer Firewall verwendet werden, während das zweite in einem Intranet verwendet werden kann.  
   
- In such a case, you can specify the `endpointConfigurationName` as a parameter to the constructor for a service reference.  
+In diesem Fall können Sie angeben der `endpointConfigurationName` als Parameter an den Konstruktor für einen Dienstverweis.  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-#### <a name="to-select-a-service-endpoint"></a>To select a service endpoint  
+#### <a name="to-select-a-service-endpoint"></a>Wählen Sie einen Dienstendpunkt  
   
-1.  Add a reference to a WCF service by right-clicking the project node in Solution Explorer and choosing **Add service reference**.
+1.  Einen Verweis auf einen WCF-Dienst hinzufügen, indem Sie mit der rechten Maustaste im Projektmappen-Explorer des Projektknoten und **Hinzufügen eines Dienstverweises**.
   
-2.  In the Code Editor, add a constructor for the service reference:  
+2.  Fügen Sie im Code-Editor einen Konstruktor für den Dienstverweis hinzu:  
   
-    ```vb#  
+    ```vb  
     Dim proxy As New ServiceReference.Service1Client(  
     ```  
   
-    ```c#  
+    ```csharp  
     ServiceReference.Service1Client proxy = new ServiceReference.Service1Client(  
     ```  
   
     > [!NOTE]
-    >  Replace *ServiceReference* with the namespace for the service reference and replace *Service1Client* with the name of the service.  
+    >  Ersetzen Sie *ServiceReference* mit dem Namespace für den Dienstverweis und Ersetzen *Service1Client* mit dem Namen des Diensts.  
   
-3.  An IntelliSense list will be displayed with the overloads for the constructor. Select the `endpointConfigurationName As String` overload.  
+3.  Eine IntelliSense-Liste wird mit den Überladungen des Konstruktors angezeigt. Wählen Sie die `endpointConfigurationName As String` überladen.  
   
-4.  Following the overload, type `=` *ConfigurationName*, where *ConfigurationName* is the name of the endpoint that you want to use.  
+4.  Geben Sie nach der Überladung `=` *ConfigurationName*, wobei *ConfigurationName* ist der Name des Endpunkts, den Sie verwenden möchten.  
   
     > [!NOTE]
-    >  If you do not know the names of the available endpoints, you can find them in the app.config file.  
+    >  Wenn Sie die Namen der verfügbaren Endpunkte nicht kennen, können Sie diese in der Datei "App.config" suchen.  
   
-#### <a name="to-find-the-available-endpoints-for-a-wcf-service"></a>To find the available endpoints for a WCF service  
+#### <a name="to-find-the-available-endpoints-for-a-wcf-service"></a>Um die verfügbaren Endpunkte für einen WCF-Dienst gefunden werden.  
   
-1.  In **Solution Explorer**, right-click the app.config file for the project that contains the service reference and then click **Open**. The file will appear in the Code Editor.  
+1.  In **Projektmappen-Explorer**mit der rechten Maustaste auf die Datei "App.config" für das Projekt, das den Dienstverweis enthält, und klicken Sie dann auf **öffnen**. Die Datei wird im Code-Editor angezeigt.  
   
-2.  Search for the `<Client>` tag in the file.  
+2.  Suchen Sie nach der `<Client>` -Tag in der Datei.  
   
-3.  Search underneath the `<Client>` tag for a tag that starts with `<Endpoint>`.  
+3.  Suchen Sie unterhalb der `<Client>` Tag für ein Tag, die mit beginnt `<Endpoint>`.  
   
-     If the service reference provides multiple endpoints, there will be two or more `<Endpoint` tags.  
+     Wenn der Dienstverweis mehrere Endpunkte enthält, werden zwei oder mehr `<Endpoint` Tags.  
   
-4.  Inside the `<EndPoint>` tag you will find a `name="`*SomeService*`"` parameter (where *SomeService* represents an endpoint name). This is the name for the endpoint that can be passed to the `endpointConfigurationName As String` overload of a constructor for a service reference.  
+4.  Innerhalb der `<EndPoint>` Tag Sie finden eine `name="` *SomeService* `"` Parameter (, in denen *SomeService* einen Endpunktnamen darstellt). Dies ist der Name für den Endpunkt, der übergeben werden kann die `endpointConfigurationName As String` Überladung für einen Konstruktor für einen Dienstverweis.  
   
-## <a name="how-to-call-a-service-method-asynchronously"></a>How to: Call a Service Method Asynchronously  
- Most methods in Windows Communication Foundation (WCF) services may be called either synchronously or asynchronously. Calling a method asynchronously enables your application to continue to work while the method is being called when it operates over a slow connection.  
+## <a name="how-to-call-a-service-method-asynchronously"></a>Vorgehensweise: Asynchrones Aufrufen eine Dienstmethode  
+Die meisten Methoden in Windows Communication Foundation (WCF)-Dienste können synchron oder asynchron aufgerufen werden. Eine Methode asynchron aufrufen, kann die Anwendung weiterhin funktionsfähig, während die Methode aufgerufen wird, wenn er über eine langsame Verbindung verwendet wird.  
   
- By default, when a service reference is added to a project it is configured to call methods synchronously. You can change the behavior to call methods asynchronously by changing a setting in the **Configure Service Reference** dialog box.  
+Standardmäßig Wenn ein Projekt ein Dienstverweis hinzugefügt wird ist es so konfiguriert, dass synchron Aufrufen von Methoden. Sie können das Verhalten ändern zum Aufrufen von Methoden asynchron durch Ändern einer Einstellung in der **Dienstverweis konfigurieren** (Dialogfeld).  
   
 > [!NOTE]
->  This option is set on a per-service basis. If one method for a service is called asynchronously, all methods must be called asynchronously.  
+>  Diese Option wird auf einer pro-Dienst-Basis festgelegt. Wenn eine Methode für einen Dienst asynchron aufgerufen wird, müssen alle Methoden asynchron aufgerufen werden.  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-#### <a name="to-call-a-service-method-asynchronously"></a>To call a service method asynchronously  
+#### <a name="to-call-a-service-method-asynchronously"></a>Eine Dienstmethode asynchron aufrufen.  
   
-1.  In **Solution Explorer**, select the service reference.  
+1.  In **Projektmappen-Explorer**, wählen Sie den Dienstverweis.  
   
-2.  On the **Project** menu, click **Configure Service Reference**.  
+2.  Auf der **Projekt** Menü klicken Sie auf **Dienstverweis konfigurieren**.  
   
-3.  In the **Configure Service Reference** dialog box, select the **Generate asynchronous operations** check box.  
+3.  In der **Dienstverweis konfigurieren** wählen Sie im Dialogfeld die **asynchrone Vorgänge generieren** Kontrollkästchen.  
   
-## <a name="how-to-bind-data-returned-by-a-service"></a>How to: Bind Data Returned by a Service  
- You can bind data returned by a Windows Communication Foundation (WCF) service to a control just as you can bind any other data source to a control. When you add a reference to a WCF service, if the service contains composite types that return data, they are automatically added to the **Data Sources** window.  
+## <a name="how-to-bind-data-returned-by-a-service"></a>Vorgehensweise: Binden von Daten, die von einem Dienst zurückgegeben werden.  
+Sie können Daten von einem Windows Communication Foundation (WCF)-Dienst an ein Steuerelement zurückgegeben wird, ebenso wie jede andere Datenquelle an ein Steuerelement gebunden werden kann, binden. Wenn Sie einen Verweis auf einen WCF-Dienst hinzufügen, wenn der Dienst zusammengesetzte Typen enthält, die Daten zurückgeben, werden sie automatisch hinzugefügt die **Datenquellen** Fenster.  
   
-#### <a name="to-bind-a-control-to-single-data-field-returned-by-a-wcf-service"></a>To bind a control to single data field returned by a WCF service  
+#### <a name="to-bind-a-control-to-single-data-field-returned-by-a-wcf-service"></a>Ein Steuerelement für einen WCF-Dienst zurückgegebenes einzelnes Datenfeld gebunden.  
   
-1.  On the **Data** menu, click **Show Data Sources**. The **Data Sources** window will appear.  
+1.  Klicken Sie im Menü **Daten** auf **Datenquellen anzeigen**. Die **Datenquellen** Fenster wird angezeigt.  
   
-2.  In the **Data Sources** window, expand the node for your service reference. Any composite types returned by the service will be displayed.  
+2.  In der **Datenquellen** Fenster, erweitern Sie den Knoten für den Dienstverweis. Alle zusammengesetzten Typen, die vom Dienst zurückgegeben werden angezeigt.  
   
-3.  Expand a node for a type. The data fields for that type will be displayed.  
+3.  Erweitern Sie den Knoten für einen Typ aus. Die Datenfelder für diesen Typ werden angezeigt.  
   
-4.  Select a field and click the drop-down arrow to display a list of controls that are available for the data type.  
+4.  Wählen Sie ein Feld aus, und klicken Sie auf den Dropdown-Pfeil, um eine Liste der Steuerelemente anzuzeigen, die für den Datentyp verfügbar sind.  
   
-5.  Click the type of control that you want to bind to.  
+5.  Klicken Sie auf den Typ des Steuerelements, das Sie binden möchten.  
   
-6.  Drag the field onto a form. The control will be added to the form together with a <xref:System.Windows.Forms.BindingSource> component and a <xref:System.Windows.Forms.BindingNavigator> component.  
+6.  Ziehen Sie das Feld auf das Formular. Das Steuerelement wird dem Formular zusammen mit hinzugefügt werden eine <xref:System.Windows.Forms.BindingSource> Komponente und eine <xref:System.Windows.Forms.BindingNavigator> Komponente.  
   
-7.  Repeat steps 4 though 6 for any other fields that you want to bind.  
+7.  Wiederholen Sie Schritt 4, obwohl 6 für alle anderen, die Felder Sie binden möchten.  
   
-#### <a name="to-bind-a-control-to-composite-type-returned-by-a-wcf-service"></a>To bind a control to composite type returned by a WCF service  
+#### <a name="to-bind-a-control-to-composite-type-returned-by-a-wcf-service"></a>So binden Sie ein Steuerelement an zusammengesetzter Typ zurückgegeben, die von einem WCF-Dienst  
   
-1.  On the **Data** menu, select **Show Data Sources**. The **Data Sources** window will appear.  
+1.  Auf der **Daten** klicken Sie im Menü **Datenquellen anzeigen**. Die **Datenquellen** Fenster wird angezeigt.  
   
-2.  In the **Data Sources** window, expand the node for your service reference. Any composite types returned by the service will be displayed.  
+2.  In der **Datenquellen** Fenster, erweitern Sie den Knoten für den Dienstverweis. Alle zusammengesetzten Typen, die vom Dienst zurückgegeben werden angezeigt.  
   
-3.  Select a node for a type and click the drop-down arrow to display a list of available options.  
+3.  Wählen Sie einen Knoten für einen Typ aus, und klicken Sie auf den Dropdown-Pfeil, um eine Liste der verfügbaren Optionen anzuzeigen.  
   
-4.  Click either **DataGridView** to display the data in a grid or **Details** to display the data in individual controls.  
+4.  Klicken Sie auf **DataGridView** zum Anzeigen der Daten in einem Raster oder **Details** zum Anzeigen der Daten in einzelnen Steuerelementen.  
   
-5.  Drag the node onto the form. The controls will be added to the form together with a <xref:System.Windows.Forms.BindingSource> component and a <xref:System.Windows.Forms.BindingNavigator> component.  
+5.  Ziehen Sie den Knoten auf das Formular. Werden die Steuerelemente hinzugefügt werden, auf dem Formular zusammen mit einem <xref:System.Windows.Forms.BindingSource> Komponente und eine <xref:System.Windows.Forms.BindingNavigator> Komponente.  
   
-## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>How to: Configure a Service to Reuse Existing Types  
- When a service reference is added to a project, any types defined in the service are generated in the local project. In many cases, this creates duplicate types when a service uses common [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] types or when types are defined in a shared library.  
+## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>Vorgehensweise: Konfigurieren eines Diensts zum Wiederverwenden vorhandener Typen  
+Wenn ein Projekt ein Dienstverweis hinzugefügt wird, werden alle im Dienst definierten Typen im lokalen Projekt generiert. In vielen Fällen dabei doppelte Typen erstellt, wenn ein Dienst verwendet allgemeine [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Typen oder wenn die Typen in einer freigegebenen Bibliothek definiert wurden.  
   
- To avoid this problem, types in referenced assemblies are shared by default. If you want to disable type sharing for one or more assemblies, you can do so in the **Configure Service References** dialog box.  
+Um dieses Problem zu vermeiden, werden die Typen in referenzierten Assemblys standardmäßig freigegeben. Wenn Sie die Typfreigabe für eine oder mehrere Assemblys deaktivieren möchten, Sie können dazu die **Dienstverweis** (Dialogfeld).  
   
-#### <a name="to-disable-type-sharing-in-a-single-assembly"></a>To disable type sharing in a single assembly  
+#### <a name="to-disable-type-sharing-in-a-single-assembly"></a>Zum Deaktivieren der Typfreigabe in einer einzelnen assembly  
   
-1.  In **Solution Explorer**, select the service reference.  
+1.  In **Projektmappen-Explorer**, wählen Sie den Dienstverweis.  
   
-2.  On the **Project** menu, click **Configure Service Reference**.  
+2.  Auf der **Projekt** Menü klicken Sie auf **Dienstverweis konfigurieren**.  
   
-3.  In the **Configure Service References** dialog box, select **Reuse types in specified referenced assemblies**.  
+3.  In der **Dienstverweis** wählen Sie im Dialogfeld **Typen in Assemblys, auf die verwiesen wird, wiederverwenden**.  
   
-4.  Select the check box for each assembly in which you want to enable type sharing. To disable type sharing for an assembly, leave the check box cleared.  
+4.  Wählen Sie das Kontrollkästchen für jede Assembly, in dem Sie die Typfreigabe aktivieren möchten. Zum Deaktivieren der Typfreigabe für eine Assembly lassen Sie das Kontrollkästchen deaktiviert.  
   
-#### <a name="to-disable-type-sharing-in-all-assemblies"></a>To disable type sharing in all assemblies  
+#### <a name="to-disable-type-sharing-in-all-assemblies"></a>Zum Deaktivieren der Typfreigabe in allen Assemblys  
   
-1.  In **Solution Explorer**, select the service reference.  
+1.  In **Projektmappen-Explorer**, wählen Sie den Dienstverweis.  
   
-2.  On the **Project** menu, click **Configure Service Reference**.  
+2.  Auf der **Projekt** Menü klicken Sie auf **Dienstverweis konfigurieren**.  
   
-3.  In the **Configure Service References** dialog box, clear the **Reuse types in referenced assemblies** check box.  
+3.  In der **Dienstverweis** deaktivieren Sie im Dialogfeld die **Typen in Assemblys verwiesen wird, wiederverwenden** Kontrollkästchen.  
   
-## <a name="related-topics"></a>Related Topics  
+## <a name="related-topics"></a>Verwandte Themen  
   
-|Title|Description|  
+|Titel|Beschreibung|  
 |-----------|-----------------|  
-|[Walkthrough: Creating a simple WCF Service in Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|Provides a step-by-step demonstration of creating and using WCF services in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
-|[Walkthrough: Creating a WCF Data Service with WPF and Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|Provides a step-by-step demonstration of how to create and use [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
-|[Using the WCF Development Tools](/dotnet/framework/wcf/using-the-wcf-development-tools)|Discusses how to create and test WCF services in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
-||[How to: Add, Update, or Remove a WCF Data Service Reference](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|Discusses how to reference and use [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
-|[Troubleshooting Service References](../data-tools/troubleshooting-service-references.md)|Presents some common errors that can occur with service references and how to prevent them.|  
-|[Debugging WCF Services](../debugger/debugging-wcf-services.md)|Describes common debugging problems and techniques you might encounter when debugging WCF services.|  
-|[Windows Communication Foundation Authentication Service Overview](http://msdn.microsoft.com/Library/6e121a28-89e8-4974-88a8-70aaa6a7d52b)|Describes how to use WCF to provide a role service for a Web site.|  
-|[Walkthrough: Creating an N-Tier Data Application](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|Provides step-by-step instructions for creating a typed dataset and separating the TableAdapter and dataset code into multiple projects.|  
-|[Configure Service Reference Dialog Box](../data-tools/configure-service-reference-dialog-box.md)|Describes the user interface elements of the **Configure Service Reference** dialog box.|  
+|[Exemplarische Vorgehensweise: Erstellen eines einfachen WCF-Diensts in Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|Enthält eine schrittweise Demonstration erstellen und Verwenden von WCF-Diensten in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
+|[Exemplarische Vorgehensweise: Erstellen von und Zugreifen auf einen WCF-Datendienst in Visual Studio](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|Enthält eine schrittweise Demonstration zum Erstellen und Verwenden von [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
+|[Verwenden der WCF-Entwicklungstools](/dotnet/framework/wcf/using-the-wcf-development-tools)|Erläutert das Erstellen und Testen von WCF-Diensten in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
+||[Gewusst wie: Hinzufügen, Aktualisieren oder Entfernen eines WCF-Datendienstverweises](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|Erläutert, wie zum Verweisen auf und verwenden Sie [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
+|[Problembehandlung bei Dienstverweisen](../data-tools/troubleshooting-service-references.md)|Zeigt Dienstverweise sowie ihre Verwendung zu verhindern, dass einige häufige Fehler, die auftreten können.|  
+|[Debuggen von WCF-Diensten](../debugger/debugging-wcf-services.md)|Beschreibt allgemeine Debugprobleme und Techniken, die beim Debuggen von WCF-Dienste auftreten können.|  
+|[Übersicht über den Windows Communication Foundation-Authentifizierung](http://msdn.microsoft.com/Library/6e121a28-89e8-4974-88a8-70aaa6a7d52b)|Beschreibt, wie WCF verwenden, um einen Rollendienst für eine Website bereitzustellen.|  
+|[Exemplarische Vorgehensweise: Erstellen einer N-Tier-Datenanwendung](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|Liefert eine Schritt-für-Schritt-Anleitung für das Erstellen eines typisierten Datasets und das Aufteilen des Codes für TableAdapter und Dataset in mehrere Projekte.|  
+|[Dienstverweis konfigurieren (Dialogfeld)](../data-tools/configure-service-reference-dialog-box.md)|Beschreibt die Elemente der Benutzeroberfläche von der **Dienstverweis konfigurieren** (Dialogfeld).|  
   
-## <a name="reference"></a>Reference  
+## <a name="reference"></a>Verweis  
  <xref:System.ServiceModel>  
   
  <xref:System.Data.Services>  
   
-## <a name="see-also"></a>See Also  
- [Visual Studio data tools for .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
+## <a name="see-also"></a>Siehe auch  
+ [Visual Studio-Datentools für .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

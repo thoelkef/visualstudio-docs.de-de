@@ -1,55 +1,55 @@
 ---
-title: "Eigenschaften von Verantwortlichkeitsbereichen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.dsltools.dsldesigner.swimlane"
-helpviewer_keywords: 
-  - "Domänenspezifische Sprache, Verantwortlichkeitsbereich"
+title: Eigenschaften von Verantwortlichkeitsbereichen | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.dsltools.dsldesigner.swimlane
+helpviewer_keywords: Domain-Specific Language, swimlane
 ms.assetid: 47edbc2d-09e4-48ac-b4d1-5268a06a27e6
-caps.latest.revision: 24
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 1b8eacf8fdd74fc9fe0703dc50beb46a2442e939
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Eigenschaften von Verantwortlichkeitsbereichen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Sie können Verantwortlichkeitsbereiche einem Diagramm hinzufügen.  Swimlanes\-Verteilung ein Diagramm in die horizontale oder vertikale Bereiche.  Sie können innerhalb der Verantwortlichkeitsbereiche Formen angezeigt werden, andere definieren.  Weitere Informationen finden Sie unter [So definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md).  Weitere Informationen zum Verwenden dieser Eigenschaften finden Sie unter [Anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md)verwendet.  
+# <a name="properties-of-swimlanes"></a>Eigenschaften von Verantwortlichkeitsbereichen
+Sie können ein Diagramm Verantwortlichkeitsbereiche hinzufügen. Verantwortlichkeitsbereiche werden ein Diagramm in vertikale oder horizontale Bereiche unterteilt. Sie können andere Formen innerhalb Verantwortlichkeitsbereiche anzuzeigende definieren. Weitere Informationen finden Sie unter [zum Definieren einer domänenspezifischen Sprache](../modeling/how-to-define-a-domain-specific-language.md). Weitere Informationen zum Verwenden dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
- Swimlanes verfügen über Eigenschaften, die in der folgenden Tabelle aufgelistet sind.  
+ Verantwortlichkeitsbereiche haben Eigenschaften, die in der folgenden Tabelle aufgeführt sind.  
   
-|Property|Beschreibung|Standardwert|  
-|--------------|------------------|------------------|  
-|Text\-Füllfarbe|Die Füllfarbe für den Text des swimlane.|Weiß|  
-|Header\-Füllfarbe|Die Füllfarbe für den Header des swimlane.|Dunkelgrau|  
-|Trennzeichen\-Farbe|Die Farbe der Trennlinie.|Hellgrau|  
-|Trennlinien\-Format|Das Format der Trennlinie \(`Solid`, `Dash`, `Dot`, `DashDot`, `DashDotDot`oder `Custom`\).|`Dash`|  
-|Trennzeichen\-Stärke|Die Stärke der Trennlinie in Zoll.|0.03125|  
-|Textfarbe|Die Farbe, die für Text decorator\-elemente verwendet wird, die mit diesem swimlane zugeordnet sind.|Black|  
-|Zugriffsmodifizierer|Die Zugriffsebene der Klasse \(`public` oder `internal`\).|Public|  
-|Benutzerdefinierte Attribute|Wird verwendet, um Attribute der Codeklasse hinzugefügt werden soll, die von diesem swimlane generiert wird.|\<Keine\>|  
-|Generiert doppeltes abgeleitetes|Wenn `True`, eine Basisklasse und eine partielle Klasse \(Anpassung von Überschreibungen unterstützen\) generiert wird.  Weitere Informationen finden Sie unter [Überschreiben und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
-|Hat benutzerdefinierten Konstruktor|Wenn `True`, ein benutzerdefinierter Konstruktor im Quellcode bereitgestellt wird.  Weitere Informationen finden Sie unter [Überschreiben und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
-|Vererbungsmodifizierer|Beschreibt die Art der Vererbung der Quellcode Klasse, die vom swimlane generiert wird \(`none`, `abstract` oder `sealed`\).|Keine|  
-|Niedriges Swimlane|Die Basisklasse dieser swimlane.|\(kein\)|  
-|Name|Der Name dieses swimlane.|Aktueller Name|  
-|Namespace|Der Namespace, der diesem swimlane verbunden ist.|Aktueller Namespace|  
-|QuickInfo\-Typ|Wie die QuickInfo definiert ist \(`fixed`, `variable`oder `none`\).  Wenn `fixed`, wird der Wert der `Fixed Tooltip Text`\-Eigenschaft verwendet wird. `variable`, wenn die QuickInfo dann im benutzerdefinierten Code definiert ist.|\<Keine\>|  
-|Hinweise|Informelle Anmerkungen, die diesem swimlane zugeordnet sind.|\<Keine\>|  
-|Ausrichtung|Horizontal oder vertikale Ausrichtung.|Vertikal|  
-|Der anfängliche Höhe|Die Ausgangshöhe des swimlane, in Zoll.  Anwendbar nur den horizontalen Verantwortlichkeitsbereiche.|0|  
-|Der anfängliche Breite|Die ursprüngliche Breite dieses swimlane, in Zoll.  Anwendbar auf den vertikalen Verantwortlichkeitsbereiche.|0|  
-|Exposee\-Textfarbe|Wenn `True`, der Benutzer die Farbe eines swimlane im generierten Designer festlegen können.  Wenn Sie dies mit der rechten Maustaste auf die swimlane Form, und klicken Sie auf **Verfügbar gemacht hinzufügen**festlegen.|False|  
-|Beschreibung|Ein Dokument den generierten Designer verwenden.|\<Keine\>|  
-|Angezeigter Name|Der Name, der im generierten Designer angezeigt wird, um diese swimlane Klasse zuzugreifen.|\<Keine\>|  
-|Fester QuickInfo\-Text|Der Text, der für eine feste QuickInfo verwendet wird.|\<Keine\>|  
-|Hilfeschlüsselwort|Das Schlüsselwort, das dem Index F1\-Hilfe für dieses swimlane verwendet wird.|\<Keine\>|  
+|Eigenschaft|Beschreibung|Standard|  
+|--------------|-----------------|-------------|  
+|Füllfarbe Text|Die Füllfarbe für den Hauptteil der Verantwortlichkeitsbereich.|Weiß|  
+|Header-Füllfarbe|Die Füllfarbe für den die Verantwortlichkeitsbereich-Header.|DarkGray|  
+|Trennzeichenfarbe|Die Farbe der Linie als Trennzeichen.|LightGray|  
+|Linienart Trennzeichen|Der Stil der Linie als Trennzeichen (`Solid`, `Dash`, `Dot`, `DashDot`, `DashDotDot`, oder `Custom`).|`Dash`|  
+|Trennzeichen Stärke|Die Stärke der Linie als Trennzeichen in Zoll.|0.03125|  
+|Textfarbe|Die Farbe, die für Text Decorator-Elementen verwendet wird, die diese Verantwortlichkeitsbereich zugeordnet sind.|Schwarz|  
+|Zugriffsmodifizierer|Die Zugriffsebene der Klasse (`public` oder `internal`).|Public|  
+|Benutzerdefinierte Attribute|Verwendet, um die Attribute der Klasse Code hinzuzufügen, die von diesem Verantwortlichkeitsbereich generiert wird.|\<keine >|  
+|Doppelter generiert abgeleitet|Wenn `True`, eine Basisklasse und eine partielle Klasse (zur Unterstützung von Anpassung außer Kraft) generiert werden. Weitere Informationen finden Sie unter [überschreiben und erweitern die generierte Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
+|Verfügt über benutzerdefinierte-Konstruktor|Wenn `True`, ein benutzerdefinierter Konstruktor im Quellcode bereitgestellt werden. Weitere Informationen finden Sie unter [überschreiben und erweitern die generierte Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
+|Inheritance Modifier|Beschreibt die Art der Vererbung der Source-Code-Klasse, die aus dem Verantwortlichkeitsbereich generiert wird (`none`, `abstract` oder `sealed`).|Keine|  
+|Basis Verantwortlichkeitsbereich|Die Basisklasse von diesem Verantwortlichkeitsbereich.|(keine)|  
+|Name|Der Name der dieser Verantwortlichkeitsbereich.|Aktuelle name|  
+|Namespace|Der Namespace, der diese Verantwortlichkeitsbereich zugeordnet ist.|Aktuellen namespace|  
+|QuickInfo-Typ|Wie die QuickInfo definiert ist (`fixed`, `variable`, oder `none`). Wenn `fixed`, klicken Sie dann den Wert von der `Fixed Tooltip Text` Eigenschaft verwendet wird, wenn `variable`, und klicken Sie dann die QuickInfo in benutzerdefiniertem Code definiert ist.|\<keine >|  
+|Hinweise|Informelle Hinweise, die diese Verantwortlichkeitsbereich zugeordnet sind.|\<keine >|  
+|Ausrichtung|Horizontale oder vertikale Ausrichtung.|Vertikal|  
+|Anfängliche Höhe|Die anfängliche Höhe dieses Verantwortlichkeitsbereich, in Zoll. Gilt nur für horizontale Verantwortlichkeitsbereiche.|0|  
+|Anfängliche Breite|Die anfängliche Breite von diesem Verantwortlichkeitsbereich, in Zoll. Gilt nur für vertikale Verantwortlichkeitsbereiche.|0|  
+|Macht die Textfarbe|Wenn `True`, der Benutzer kann die Farbe des ein Verantwortlichkeitsbereich im generierten-Designer festlegen. Um dies festzulegen, mit der rechten Maustaste in der Form "Verantwortlichkeitsbereich", und klicken Sie auf **hinzufügen verfügbar gemachten**.|False|  
+|Beschreibung|So dokumentieren Sie den generierten-Designer verwendet.|\<keine >|  
+|Anzeigename|Der Name, der in der generierten Designer zum Verweisen auf diese Klasse Verantwortlichkeitsbereich angezeigt wird.|\<keine >|  
+|Feste QuickInfo-Text|Der Text, der für eine feste QuickInfo verwendet wird.|\<keine >|  
+|Hilfsschlüsselwort|Das Schlüsselwort, das zum Indizieren der F1-Hilfe für diese Verantwortlichkeitsbereich verwendet wird.|\<keine >|  
   
-## Siehe auch  
- [Domain\-Specific Language Tools Glossary](http://msdn.microsoft.com/de-de/ca5e84cb-a315-465c-be24-76aa3df276aa)
+## <a name="see-also"></a>Siehe auch  
+ [Domänenspezifische Sprache Tools Glossar](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

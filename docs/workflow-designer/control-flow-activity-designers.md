@@ -1,53 +1,57 @@
 ---
-title: "Ablaufsteuerungsaktivit&#228;tsdesigner | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Fluss Aktivitäts-Designer steuern | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 ms.assetid: ba74af23-5398-4e62-bd90-c50612e3bfef
-caps.latest.revision: 7
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: 45ffc19d3ede7af9d32e4599f17ecde9bd097bb7
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Ablaufsteuerungsaktivit&#228;tsdesigner
-[!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] umfasst eine Reihe von vom System bereitgestellten Aktivitäten, die Sie zum Erstellen von Workflows verwenden können.Dieser Abschnitt enthält die vom System bereitgestellten Aktivitäten, die zur Flusssteuerung innerhalb eines Workflows dienen.In den folgenden Themen werden diese Aktivitäten beschrieben und Anleitungen zu ihrer Verwendung bereitgestellt.  
+# <a name="control-flow-activity-designers"></a>Ablaufsteuerungsaktivitätsdesigner
+[!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] umfasst eine Reihe von vom System bereitgestellten Aktivitäten, die Sie zum Erstellen von Workflows verwenden können. Dieser Abschnitt enthält die vom System bereitgestellten Aktivitäten, die zur Flusssteuerung innerhalb eines Workflows dienen. In den folgenden Themen werden diese Aktivitäten beschrieben und Anleitungen zu ihrer Verwendung bereitgestellt.  
   
-## In diesem Abschnitt  
+## <a name="in-this-section"></a>In diesem Abschnitt  
  [DoWhile](../workflow-designer/dowhile-activity-designer.md)  
- Führt die im Text enthaltene Aktivität mindestens einmal aus, bis eine angegebene Bedingung **true** ergibt.  
+ Führt die Aktivität enthaltenen in ihrem Text mindestens einmal auf, bis eine angegebene Bedingung ergibt **"true"**.  
   
- [ForEach\<T\>](http://msdn.microsoft.com/de-de/a680cddd-2760-497a-b27b-c023fcbc6f33)  
+ [ForEach\<T >](http://msdn.microsoft.com/en-us/a680cddd-2760-497a-b27b-c023fcbc6f33)  
  Führt die im Text enthaltene Aktivität für jedes Element einer angegebenen Auflistung aus.  
   
  [If](../workflow-designer/if-activity-designer.md)  
  Wertet eine Bedingung aus und führt eine Aktivität abhängig von den Ergebnissen dieser Auswertung aus.  
   
- [Parallel](../workflow-designer/parallel-activity-designer.md)  
+ [Parallele](../workflow-designer/parallel-activity-designer.md)  
  Führt eine Auflistung untergeordneter Aktivitäten gleichzeitig aus.  
   
- [ParallelForEach\<T\>](../workflow-designer/parallelforeach-t-activity-designer.md)  
+ [ParallelForEach\<T >](../workflow-designer/parallelforeach-t-activity-designer.md)  
  Zählt die Elemente einer Auflistung auf und führt parallel eine eingebettete Anweisung für jedes Element der Auflistung aus.  
   
- [Pick](../workflow-designer/pick-activity-designer.md)  
- Führt eine von mehreren Verzweigungen als Reaktion auf ein Ereignis aus, das eine ereignisbasierte Flusssteuerung bereitstellt.  
+ [Wählen Sie](../workflow-designer/pick-activity-designer.md)  
+ Führt einen von mehreren Branches als Reaktion auf ein Ereignis aus, das eine ereignisbasierte Flusssteuerung bereitstellt.  
   
  [PickBranch](../workflow-designer/pickbranch-activity-designer.md)  
- Stellt einen potenziellen Ausführungspfad innerhalb einer <xref:System.Activities.Statements.Pick>\-Aktivität bereit.  
+ Stellt einen potenziellen Ausführungspfad innerhalb einer <xref:System.Activities.Statements.Pick>-Aktivität bereit.  
   
- [Sequence](../workflow-designer/sequence-activity-designer.md)  
+ [Sequenz](../workflow-designer/sequence-activity-designer.md)  
  Enthält eine geordnete Auflistung von untergeordneten Aktivitäten, die in der angegebenen Reihenfolge ausgeführt werden.  
   
- [Switch\<T\>](http://msdn.microsoft.com/de-de/ce1aa634-c4db-4475-a1c8-a88478a57212)  
+ [Switch\<T >](http://msdn.microsoft.com/en-us/ce1aa634-c4db-4475-a1c8-a88478a57212)  
  Wertet einen angegebenen Ausdruck aus und führt diejenige Aktivität aus einer Auflistung von Aktivitäten aus, deren zugeordneter Schlüssel dem Wert entspricht, der aus der Auswertung hervorging.  
   
  [While](../workflow-designer/while-activity-designer.md)  
- Führt die im Text enthaltene Aktivität solange aus, solange die Auswertung einer angegebenen Bedingung den Wert **true** ergibt.  
+ Führt die während eine angegebene Bedingung ergibt im Text enthaltene Aktivität **"true"**.  
   
-## Referenz  
+## <a name="reference"></a>Verweis  
  <xref:System.Activities.Activity>  
   
  <xref:System.Activities.Statements.DoWhile>  
@@ -70,7 +74,7 @@ caps.handback.revision: 7
   
  <xref:System.Activities.Statements.While>  
   
-## Verwandte Abschnitte  
+## <a name="related-sections"></a>Verwandte Abschnitte  
  Andere Typen von Aktivitätsdesignern werden in den folgenden Themen behandelt.  
   
  [Verwenden der Aktivitätsdesigner](../workflow-designer/using-the-activity-designers.md)  
@@ -89,5 +93,5 @@ caps.handback.revision: 7
   
  [Fehlerbehandlung](../workflow-designer/error-handling-activity-designers.md)  
   
-## Externe Ressourcen  
+## <a name="external-resources"></a>Externe Ressourcen  
  [Verwenden der Aktivitätsdesigner](../workflow-designer/using-the-activity-designers.md)

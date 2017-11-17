@@ -1,97 +1,97 @@
 ---
-title: "CA1710: Bezeichner sollten ein richtiges Suffix aufweisen | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1710"
-  - "IdentifiersShouldHaveCorrectSuffix"
-helpviewer_keywords: 
-  - "IdentifiersShouldHaveCorrectSuffix"
-  - "CA1710"
+title: 'CA1710: Bezeichner sollten richtiges Suffix aufweisen | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1710
+- IdentifiersShouldHaveCorrectSuffix
+helpviewer_keywords:
+- IdentifiersShouldHaveCorrectSuffix
+- CA1710
 ms.assetid: 2b8e6dce-b4e8-4a66-ba9a-6b79be5bfe8c
-caps.latest.revision: 20
-caps.handback.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 4fd4f23ab77e2b810d5064bd45e9f7d530e9844e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CA1710: Bezeichner sollten ein richtiges Suffix aufweisen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Bezeichner sollten ein richtiges Suffix aufweisen
 |||  
 |-|-|  
 |TypeName|IdentifiersShouldHaveCorrectSuffix|  
 |CheckId|CA1710|  
-|Kategorie \(Category\)|Microsoft.Naming|  
+|Kategorie|Microsoft.Naming|  
 |Unterbrechende Änderung|Breaking|  
   
-## Ursache  
- Ein Bezeichner verfügt nicht über das richtige Suffix.  
+## <a name="cause"></a>Ursache  
+ Ein Bezeichner muss nicht das richtige Suffix.  
   
-## Regelbeschreibung  
- Die Namen von Typen, die bestimmte Basistypen erweitern oder bestimmte Schnittstellen implementieren, bzw. von diesen Typen abgeleitete Typen weisen stets ein Suffix auf, das mit dem Basistyp oder der Schnittstelle verknüpft ist.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Gemäß der Konvention werden die Namen von Typen, die bestimmte Basistypen erweitern oder bestimmte Schnittstellen bzw. von diesen Typen abgeleitete Typen implementieren, ein Suffix aufweisen, das mit dem Basistyp oder der Schnittstelle verknüpft ist.  
   
- Durch Benennungskonventionen erhalten Bibliotheken, die auf die Common Language Runtime abzielen, ein einheitliches Erscheinungsbild.  Dadurch wird der Lernaufwand für neue Softwarebibliotheken verringert. Zudem wird das Kundenvertrauen dahingehend gestärkt, dass die Bibliothek von einem erfahrenen Entwickler für verwalteten Code erstellt wurde.  
+ Durch Benennungskonventionen erhalten Bibliotheken, die auf die Common Language Runtime abzielen, ein einheitliches Erscheinungsbild. Dadurch wird der Lernaufwand für neue Softwarebibliotheken verringert. Zudem wird das Kundenvertrauen dahingehend gestärkt, dass die Bibliothek von einem erfahrenen Entwickler für verwalteten Code erstellt wurde.  
   
- In der folgenden Tabelle werden die Basistypen und Schnittstellen aufgeführt, denen Suffixe zugeordnet sind.  
+ Die folgende Tabelle enthält die Basistypen und Schnittstellen, die Suffixe zugeordnet sind.  
   
-|Basistyp\/Schnittstelle|Suffix|  
-|-----------------------------|------------|  
-|<xref:System.Attribute?displayProperty=fullName>|Attribute|  
+|Basistyp/Schnittstelle|Suffix|  
+|--------------------------|------------|  
+|<xref:System.Attribute?displayProperty=fullName>|Attribut|  
 |<xref:System.EventArgs?displayProperty=fullName>|EventArgs|  
 |<xref:System.Exception?displayProperty=fullName>|Ausnahme|  
 |<xref:System.Collections.ICollection?displayProperty=fullName>|Auflistung|  
 |<xref:System.Collections.IDictionary?displayProperty=fullName>|Dictionary|  
 |<xref:System.Collections.IEnumerable?displayProperty=fullName>|Auflistung|  
-|<xref:System.Collections.Queue?displayProperty=fullName>|Collection oder Queue|  
-|<xref:System.Collections.Stack?displayProperty=fullName>|Collection oder Stack|  
+|<xref:System.Collections.Queue?displayProperty=fullName>|Auflistung oder eine Warteschlange|  
+|<xref:System.Collections.Stack?displayProperty=fullName>|Auflistung oder den Stapel|  
 |<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|Auflistung|  
 |<xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|Dictionary|  
 |<xref:System.Data.DataSet?displayProperty=fullName>|DataSet|  
-|<xref:System.Data.DataTable?displayProperty=fullName>|Collection oder DataTable|  
+|<xref:System.Data.DataTable?displayProperty=fullName>|Auflistung oder eine Datentabelle|  
 |<xref:System.IO.Stream?displayProperty=fullName>|Stream|  
 |<xref:System.Security.IPermission?displayProperty=fullName>|Berechtigung|  
 |<xref:System.Security.Policy.IMembershipCondition?displayProperty=fullName>|Bedingung|  
 |Ein Ereignishandlerdelegat.|EventHandler|  
   
- Für Typen, die <xref:System.Collections.ICollection> implementieren und bei denen es sich um einen verallgemeinerten Datenstrukturtyp handelt, etwa um ein Wörterbuch, einen Stapel oder eine Warteschlange, sind Namen zulässig, aus denen die beabsichtigte Verwendung des Typs hervorgeht.  
+ Typen implementiert, <xref:System.Collections.ICollection> und sind ein generalisiertes Datenstruktur, z. B. ein Wörterbuch, Stapel oder Warteschlange zulässig sind Namen, die aussagekräftige Informationen über die beabsichtigte Verwendung des Typs bereitstellen.  
   
- Typen, die <xref:System.Collections.ICollection> implementieren und bei denen es sich um eine Auflistung bestimmter Elemente handelt, haben Namen, die mit dem Wort "Collection" enden.  Zum Beispiel hätte eine Auflistung von <xref:System.Collections.Queue>\-Objekten den Namen "QueueCollection".  Das Suffix "Collection" signalisiert, dass die Member der Auflistung mithilfe der `foreach`\-Anweisung \(`For Each` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]\) aufgelistet werden können.  
+ Typen implementiert, <xref:System.Collections.ICollection> und eine Auflistung von bestimmten Elementen verfügen über Namen, die mit dem Wort "Sammlung" enden. Angenommen, eine Auflistung von <xref:System.Collections.Queue> Objekte müssten den Namen "QueueCollection". Das Suffix "Collection" gibt an, dass die Elemente der Auflistung aufgelistet werden können, mithilfe der `foreach` (`For Each` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) Anweisung.  
   
- Typen, die <xref:System.Collections.IDictionary> implementieren, haben Namen, die mit dem Wort "Dictionary" enden, auch wenn der Typ zusätzlich <xref:System.Collections.IEnumerable> oder <xref:System.Collections.ICollection> implementiert.  Durch die Namenskonventionen für die Suffixe "Collection" und "Dictionary" können die Benutzer zwischen den beiden folgenden Enumerationsmustern unterscheiden.  
+ Typen implementiert, <xref:System.Collections.IDictionary> haben Namen, die mit dem Wort "Wörterbuch" enden, auch wenn der Typ auch implementiert <xref:System.Collections.IEnumerable> oder <xref:System.Collections.ICollection>. Durch die Benennungskonventionen für die Suffix "Collection" und "Wörterbuch" können Benutzer die folgenden zwei Enumeration Muster unterscheiden.  
   
- Typen mit dem Suffix "Collection" weisen folgendes Enumerationsmuster auf:  
+ Typen mit dem Suffix "Collection" Enumerationsmuster auf.  
   
 ```  
 foreach(SomeType x in SomeCollection) { }  
 ```  
   
- Typen mit dem Suffix "Dictionary" weisen folgendes Enumerationsmuster auf:  
+ Typen mit dem Suffix "Wörterbuch" Enumerationsmuster auf.  
   
 ```  
 foreach(SomeType x in SomeDictionary.Values) { }  
 ```  
   
- Ein <xref:System.Data.DataSet>\-Objekt besteht aus einer Auflistung von <xref:System.Data.DataTable>\-Objekten, die sich wiederum u. a. aus Auflistungen von <xref:System.Data.DataColumn?displayProperty=fullName>\-Objekten und <xref:System.Data.DataRow?displayProperty=fullName>\-Objekten zusammensetzen.  Diese Auflistungen implementieren <xref:System.Collections.ICollection> durch die <xref:System.Data.InternalDataCollectionBase?displayProperty=fullName>\-Basisklasse.  
+ Ein <xref:System.Data.DataSet> Objekt besteht aus einer Auflistung von <xref:System.Data.DataTable> Objekte, die Auflistungen von umfassen <xref:System.Data.DataColumn?displayProperty=fullName> und <xref:System.Data.DataRow?displayProperty=fullName> u. a. die Objekte. Diese Auflistungen implementieren <xref:System.Collections.ICollection> mithilfe der <xref:System.Data.InternalDataCollectionBase?displayProperty=fullName> Klasse.  
   
-## Behandeln von Verstößen  
- Benennen Sie den Typ um, damit er mit dem richtigen Suffix versehen wird.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Benennen Sie den Typ, sodass er mit dem richtigen Formatangabe ist.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Eine Warnung zur Verwendung des Suffix "Collection" kann gefahrlos unterdrückt werden, wenn es sich bei dem Typ um eine verallgemeinerte Datenstruktur handelt, die erweitert werden kann oder die einen beliebigen Satz verschiedener Elemente enthält.  In diesem Fall ist es unter Umständen sinnvoll, einen Namen zu verwenden, der aussagekräftige Informationen hinsichtlich der Implementierung, Leistung oder anderer Eigenschaften der Datenstruktur enthält \(z. B. BinaryTree\).  Wenn der Typ eine Auflistung eines bestimmten Typs \(z. B. StringCollection\) darstellt, sollten Sie keine Warnung dieser Regel unterdrücken, da das Suffix angibt, dass der Typ mit einer `foreach`\-Anweisung aufgelistet werden kann.  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Sie können ruhig zum Unterdrücken einer Warnung, um das Suffix "Collection" verwenden, wenn der Typ eine verallgemeinerte Datenstruktur ist, die erweitert werden kann, oder, die in einer beliebigen Gruppe von verschiedenen Elementen gespeichert werden. In diesem Fall könnte ein Namen, der aussagekräftige Informationen über die Implementierung, Leistung oder andere Merkmale der Datenstruktur bereitstellt (z. B. BinaryTree) sinnvoll. In Fällen, in denen der Typ stellt eine Auflistung eines bestimmten Typs (z. B. StringCollection) dar, unterdrücken Sie keine Warnung dieser Regel, weil das Suffix gibt an, dass der Typ mit aufgelistet werden, kann eine `foreach` Anweisung.  
   
- Unterdrücken Sie bei anderen Suffixen keine Warnung dieser Regel.  Dank des Suffix geht die beabsichtigte Verwendung aus dem Typnamen hervor.  
+ Unterdrücken Sie für andere Suffixe keine Warnung dieser Regel. Das Suffix ermöglicht die beabsichtigte Verwendung aus dem Typnamen offensichtlich sein.  
   
-## Verwandte Regeln  
+## <a name="related-rules"></a>Verwandte Regeln  
  [CA1711: Bezeichner sollten kein falsches Suffix aufweisen](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)  
   
-## Siehe auch  
- [Attribute](../Topic/Attributes1.md)   
- [Ereignisse und Delegaten](http://msdn.microsoft.com/de-de/d98fd58b-fa4f-4598-8378-addf4355a115)
+## <a name="see-also"></a>Siehe auch  
+ [Attribute](/dotnet/standard/design-guidelines/attributes)   
+ [Behandeln und Auslösen von Ereignissen](/dotnet/standard/events/index)  

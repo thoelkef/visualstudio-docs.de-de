@@ -1,33 +1,33 @@
 ---
-title: "&lt;PackageFiles&gt;-Element (Bootstrapper) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<PackageFiles>-Element [Bootstrapper]"
+title: '&lt;PackageFiles&gt; Element (Bootstrapper) | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <PackageFiles> element [bootstrapper]
 ms.assetid: 3ea252d7-18a3-47d8-af83-47feebcfe82b
-caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: a85b06bfc5c82e7d4bd08bef8f768ad2e28a2ab0
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# &lt;PackageFiles&gt;-Element (Bootstrapper)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Das `PackageFiles`\-Element enthält `PackageFile`\-Elemente, die die als Ergebnis des `Command`\-Elements ausgeführten Installationspakete definieren.  
+# <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; Element (Bootstrapper)
+Die `PackageFiles` Element enthält `PackageFile` -Elemente, die die als Ergebnis des ausgeführten Installationspakete definieren die `Command` Element.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <PackageFiles  
@@ -43,28 +43,28 @@ Das `PackageFiles`\-Element enthält `PackageFile`\-Elemente, die die als Ergebn
 </PackageFiles>  
 ```  
   
-## Elemente und Attribute  
- Das `PackageFiles`\-Element verfügt über das folgende Attribut.  
+## <a name="elements-and-attributes"></a>Elemente und Attribute  
+ Die `PackageFiles` Element hat das folgende Attribut.  
   
 |Attribut|Beschreibung|  
-|--------------|------------------|  
-|`CopyAllPackageFiles`|Optional.  Wenn dies auf `false` festgelegt ist, lädt das Installationsprogramm nur Dateien herunter, auf die vom `Command`\-Element verwiesen wird.  Wenn dies auf `true` festgelegt ist, werden alle Dateien heruntergeladen.<br /><br /> Wenn dies auf `IfNotHomesite` festgelegt ist, verhält sich das Installationsprogramm so wie bei der Einstellung `False`, sofern `ComponentsLocation` auf `HomeSite` festgelegt, andernfalls so wie bei der Einstellung `True`.  Diese Einstellung kann hilfreich sein, damit Pakete, bei denen es sich um Bootstrapper handelt, ihr eigenes Verhalten einem HomeSite\-Szenario ausführen können.<br /><br /> Der Standardwert ist `true`.|  
+|---------------|-----------------|  
+|`CopyAllPackageFiles`|Dies ist optional. Wenn auf festgelegt `false`, Installationsprogramm wird nur Dateien aus dem Herunterladen der `Command` Element. Wenn auf festgelegt `true`, alle Dateien werden heruntergeladen.<br /><br /> Wenn auf festgelegt `IfNotHomesite`, Installationsprogramm wird weisen das gleiche Verhalten wie `False` Wenn `ComponentsLocation` auf festgelegt ist `HomeSite`, und andernfalls verhält als `True`. Diese Einstellung kann hilfreich sein, können Pakete, die selbst werden Bootstrapper ihr eigenes Verhalten in einem Szenario HomeSite ausgeführt.<br /><br /> Die Standardeinstellung ist `true`.|  
   
-## PackageFile  
- Das `PackageFile`\-Element ist ein untergeordnetes Element des `PackageFiles`\-Elements.  Ein `PackageFiles`\-Element muss über mindestens ein `PackageFile`\-Element verfügen.  
+## <a name="packagefile"></a>PackageFile  
+ Die `PackageFile` Element ist ein untergeordnetes Element von der `PackageFiles` Element. Ein `PackageFiles` -Element muss mindestens eine aufweisen `PackageFile` Element.  
   
- `PackageFile` verfügt über die folgenden Attribute.  
+ `PackageFile`verfügt über die folgenden Attribute aus.  
   
 |Attribut|Beschreibung|  
-|--------------|------------------|  
-|`Name`|Erforderlich.  Der Name der Paketdatei.  Dies ist der Name, auf den das `Command`\-Element verweist, wenn es die Bedingungen definiert, unter denen ein Paket installiert wird.  Dieser Wert wird auch als Schlüsselwert für die `Strings`\-Tabelle verwendet, um den lokalisierten Namen abzurufen, mit dem Tools wie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] das Paket beschreiben.|  
-|`HomeSite`|Optional.  Der Speicherort des Pakets auf dem Remoteserver, wenn es im Installationsprogramm nicht enthalten ist.|  
-|`CopyOnBuild`|Optional.  Gibt an, ob der Bootstrapper die Paketdatei zur Buildzeit auf den Datenträger kopieren soll.  Der Standardwert ist true.|  
-|`PublicKey`|Der verschlüsselte öffentliche Schlüssel vom Zertifikatssignaturgeber des Pakets.  Erforderlich, wenn `HomeSite` verwendet wird, andernfalls optional.|  
-|`Hash`|Optional.  Ein SHA1\-Hash der Paketdatei.  Er wird verwendet, um die Integrität der Datei bei der Installation zu überprüfen.  Wenn der identische Hash nicht von der Paketdatei berechnet werden kann, wird das Paket nicht installiert.|  
+|---------------|-----------------|  
+|`Name`|Erforderlich. Der Name der Paketdatei. Dies ist der Name, der `Command` Element verweist, wenn sie die Bedingungen definiert, unter dem ein Paket wird installiert. Dieser Wert dient auch als Schlüssel in der `Strings` Tabelle, um den lokalisierten Namen abzurufen, die tools wie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verwendet, um das Paket beschreiben.|  
+|`HomeSite`|Dies ist optional. Der Speicherort des Pakets auf dem Remoteserver, wenn er nicht mit dem Installationsprogramm enthalten ist.|  
+|`CopyOnBuild`|Dies ist optional. Gibt an, ob der Bootstrapper die Paketdatei auf dem Datenträger während des Buildvorgangs kopieren soll. Der Standardwert ist "True".|  
+|`PublicKey`|Der verschlüsselte öffentliche Schlüssel des Signaturgebers für das Paket-Zertifikat. Erforderlich, wenn `HomeSite` verwendet, andernfalls optional.|  
+|`Hash`|Dies ist optional. Ein SHA1-Hash der Paketdatei. Dies wird verwendet, um die Integrität der Datei zum Zeitpunkt der Installation zu überprüfen. Wenn die identische Hash aus der Paketdatei berechnet werden kann, wird das Paket nicht installiert werden.|  
   
-## Beispiel  
- Im folgenden Codebeispiel werden Pakete für das verteilbare Paket von [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] und die entsprechenden Abhängigkeiten, z. B. Windows Installer, definiert.  
+## <a name="example"></a>Beispiel  
+ Das folgende Codebeispiel definiert die Pakete für die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] verteilbare Paket und seine Abhängigkeiten, z. B. Windows Installer.  
   
 ```  
 <PackageFiles>  
@@ -75,7 +75,7 @@ Das `PackageFiles`\-Element enthält `PackageFile`\-Elemente, die die als Ergebn
 </PackageFiles>  
 ```  
   
-## Siehe auch  
- [\<Product\>\-Element](../deployment/product-element-bootstrapper.md)   
- [\<Package\>\-Element](../deployment/package-element-bootstrapper.md)   
- [Referenz zum Produkt\- und Paketschema](../deployment/product-and-package-schema-reference.md)
+## <a name="see-also"></a>Siehe auch  
+ [\<Product >-Element](../deployment/product-element-bootstrapper.md)   
+ [\<Package >-Element](../deployment/package-element-bootstrapper.md)   
+ [Referenz zum Produkt- und Paketschema](../deployment/product-and-package-schema-reference.md)

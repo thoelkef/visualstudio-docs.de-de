@@ -1,58 +1,61 @@
 ---
-title: "filter-Methode (Array) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Arrays [JavaScript], Filtermethode"
-  - "Filtermethode [JavaScript]"
+title: Filter-Methode (Array) (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- arrays [JavaScript], filter method
+- filter method [JavaScript]
 ms.assetid: 1d260370-9e6e-43fc-870f-2d35850db7ee
-caps.latest.revision: 32
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 32
+caps.latest.revision: "32"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 33a08fdba38de558dabc749a634fb9b69c52c98a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# filter-Methode (Array) (JavaScript)
-Gibt die Elemente eines Arrays zurück, welche die Bedingung erfüllen, die in einer Rückruffunktion angegeben sind.  
+# <a name="filter-method-array-javascript"></a>filter-Methode (Array) (JavaScript)
+Gibt die Elemente eines Arrays, die in einer Rückruffunktion angegebene Bedingung erfüllen.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
 array1.filter(callbackfn[, thisArg])  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
   
 |Parameter|Definition|  
 |---------------|----------------|  
-|`array1`|Erforderlich.  Ein Arrayobjekt.|  
-|`callbackfn`|Erforderlich.  Eine Funktion, die bis zu drei Argumente akzeptiert.  Die `filter`\-Methode ruft einmal für jedes Element im Array die `callbackfn`\-Funktion auf.|  
-|`thisArg`|Optional.  Ein Objekt, auf welches das `this`\-Schlüsselwort in der `callbackfn`\-Funktion verweisen kann.  Wird `thisArg` nicht angegeben, wird `undefined` als `this`\-Wert verwendet.|  
+|`array1`|Erforderlich. Ein Arrayobjekt.|  
+|`callbackfn`|Erforderlich. Eine Funktion, die bis zu drei Argumente akzeptiert. Die `filter`-Methode ruft die `callbackfn`-Funktion einmal für jedes Element im Array auf.|  
+|`thisArg`|Dies ist optional. Ein Objekt, auf welches das `this`-Schlüsselwort in der `callbackfn`-Funktion verweisen kann. Wird `thisArg` nicht angegeben, wird `undefined` als `this`-Wert verwendet.|  
   
-## Rückgabewert  
- Ein neues Array, das alle Werte enthält, für welche die Rückruffunktion `true` zurückgibt.  Wenn die Rückruffunktion für alle Elemente von `array1` den Wert `false` zurückgibt, ist die Länge des neuen Arrays 0 \(null\).  
+## <a name="return-value"></a>Rückgabewert  
+ Ein neues Array, das alle Werte enthält, für das die Rückruffunktion zurückgibt `true`. Wenn die Rückruffunktion zurückgegeben `false` für alle Elemente des `array1`, die Länge des neuen Arrays ist 0.  
   
-## Ausnahmen  
- Wenn es sich beim `callbackfn`\-Argument nicht um ein Funktionsobjekt handelt, wird eine `TypeError`\-Ausnahme ausgelöst.  
+## <a name="exceptions"></a>Ausnahmen  
+ Wenn es sich beim `callbackfn`-Argument nicht um ein Funktionsobjekt handelt, wird eine `TypeError`-Ausnahme ausgelöst.  
   
-## Hinweise  
- Die `filter`\-Methode ruft die `callbackfn`\-Funktion einmal für jedes Element im Array in aufsteigender Indexreihenfolge auf.  Die Rückruffunktion wird nicht für fehlende Elemente des Arrays aufgerufen.  
+## <a name="remarks"></a>Hinweise  
+ Die `filter`-Methode ruft die `callbackfn`-Funktion einmal für jedes Element im Array in aufsteigender Indexreihenfolge auf. Die Rückruffunktion wird nicht für fehlende Elemente des Arrays aufgerufen.  
   
- Außer für Arrayobjekte kann die `filter`\-Methode für jedes Objekt verwendet werden, das über eine `length`\-Eigenschaft und numerisch indizierte Eigenschaftennamen verfügt.  
+ Außer für Arrayobjekte kann die `filter`-Methode für jedes Objekt verwendet werden, das über eine `length`-Eigenschaft und numerisch indizierte Eigenschaftennamen verfügt.  
   
-## Syntax der Rückruffunktion  
+## <a name="callback-function-syntax"></a>Syntax der Rückruffunktion  
  Die Syntax der Rückruffunktion lautet wie folgt:  
   
  `function callbackfn(value, index, array1)`  
@@ -62,25 +65,25 @@ array1.filter(callbackfn[, thisArg])
  In der folgenden Tabelle werden die Parameter für die Rückruffunktion aufgeführt.  
   
 |Rückrufargument|Definition|  
-|---------------------|----------------|  
+|-----------------------|----------------|  
 |`value`|Der Wert des Arrayelements.|  
 |`index`|Der numerische Index des Arrayelements.|  
 |`array1`|Das Arrayobjekt, in dem das Element enthalten ist.|  
   
-## Ändern des Arrayobjekts  
- Die `filter`\-Methode ändert das Originalarray nicht direkt, dies ist jedoch über die Rückruffunktion möglich.  In der folgenden Tabelle werden die Ergebnisse der Änderung des Arrayobjekts nach dem Start der `filter`\-Methode beschrieben.  
+## <a name="modifying-the-array-object"></a>Ändern des Arrayobjekts  
+ Die `filter`-Methode ändert das Originalarray nicht direkt, dies ist jedoch über die Rückruffunktion möglich. In der folgenden Tabelle werden die Ergebnisse der Änderung des Arrayobjekts nach dem Start der `filter`-Methode beschrieben.  
   
-|Bedingung nach dem Start der `filter`\-Methode|Wurde das Element an die Rückruffunktion übergeben?|  
-|----------------------------------------------------|---------------------------------------------------------|  
-|Element wird der ursprünglichen Länge des Arrays hinzugefügt.|Nein.|  
-|Ein Element wird hinzugefügt, um ein fehlendes Element des Arrays zu ersetzen.|Ja, wenn dieser Index noch nicht an die Rückruffunktion übergeben wurde.|  
+|Bedingung nach dem Start der `filter`-Methode|Wurde das Element an die Rückruffunktion übergeben?|  
+|------------------------------------------------|------------------------------------------|  
+|Das Element wird der ursprünglichen Länge des Arrays hinzugefügt.|Nein.|  
+|Das Element wird hinzugefügt, um ein fehlendes Element des Arrays zu ersetzen.|Ja, wenn dieser Index noch nicht an die Rückruffunktion übergeben wurde.|  
 |Das Element wird geändert.|Ja, wenn dieses Element noch nicht an die Rückruffunktion übergeben wurde.|  
 |Das Element wird aus dem Array gelöscht.|Nein, es sei denn, dieses Element wurde bereits an die Rückruffunktion übergeben.|  
   
-## Beispiel  
- Im folgenden Beispiel wird die Verwendung der `filter`\-Methode veranschaulicht.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel wird die Verwendung der `filter`-Methode gezeigt.  
   
-```javascript  
+```JavaScript  
 // Define a callback function.  
 function CheckIfPrime(value, index, ar) {  
     high = Math.floor(Math.sqrt(value)) + 1;  
@@ -103,10 +106,10 @@ document.write(primes);
 // Output: 31,37,41,43,47,53  
 ```  
   
-## Beispiel  
- Im folgenden Beispiel enthält das `callbackfn`\-Argument den Code der Rückruffunktion.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel enthält das `callbackfn`-Argument den Code der Rückruffunktion.  
   
-```javascript  
+```JavaScript  
 // Create the original array.  
 var arr = [5, "element", 10, "the", true];  
   
@@ -122,10 +125,10 @@ document.write(result);
 // Output: element, the  
 ```  
   
-## Beispiel  
- Im folgenden Beispiel werden die Namen von Eigenschaften angezeigt, die im `window`\-DOM\-Objekt mit den Buchstaben "css" beginnen.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel zeigt die Namen von Eigenschaften, die mit dem Buchstaben "Css", in beginnen der `window` DOM-Objekt.  
   
-```javascript  
+```JavaScript  
 var filteredNames = Object.getOwnPropertyNames(window).filter(IsC);  
   
     for (i in filteredNames)  
@@ -154,10 +157,10 @@ function IsC(value) {
   
 ```  
   
-## Beispiel  
- Im folgenden Beispiel wird die Verwendung des `thisArg`\-Arguments veranschaulicht, mit dem ein Objekt angegeben wird, auf das das `this`\-Schlüsselwort verweisen kann.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel wird die Verwendung des `thisArg`-Arguments veranschaulicht, mit dem ein Objekt angegeben wird, auf das das `this`-Schlüsselwort verweisen kann.  
   
-```javascript  
+```JavaScript  
 var checkNumericRange = function(value) {  
     if (typeof value !== 'number')  
         return false;  
@@ -178,10 +181,10 @@ document.write(result);
   
 ```  
   
-## Beispiel  
- Die `filter`\-Methode kann anstelle eines Arrays auf eine Zeichenfolge angewendet werden.  Im folgenden Beispiel wird erläutert, wie Sie hierzu vorgehen:  
+## <a name="example"></a>Beispiel  
+ Die `filter` -Methode kann in eine Zeichenfolge anstelle eines Arrays angewendet werden. Das folgende Beispiel zeigt die dazu erforderliche Vorgehensweise.  
   
-```javascript  
+```JavaScript  
 // Define a callback function that returns true  
 // if the current array element follows a space  
 // or is the first character.  
@@ -193,7 +196,7 @@ function CheckValue(value, index, ar) {
 }  
   
 // Create a string.  
-var sentence = "The quick brown fox jumps over the lazy dog.";   
+var sentence = "The quick brown fox jumps over the lazy dog.";   
   
 // Create an array that contains all characters that follow a space.  
 var subset = [].filter.call(sentence, CheckValue);   
@@ -206,11 +209,11 @@ document.write(subset);
   
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
-## Siehe auch  
- [Array\-Objekt](../../javascript/reference/array-object-javascript.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Array-Objekt](../../javascript/reference/array-object-javascript.md)   
  [Verwenden von Arrays](../../javascript/advanced/using-arrays-javascript.md)   
- [map\-Methode \(Array\)](../../javascript/reference/map-method-array-javascript.md)   
- [forEach\-Methode \(Array\)](../../javascript/reference/foreach-method-array-javascript.md)
+ [Map-Methode (Array)](../../javascript/reference/map-method-array-javascript.md)   
+ [forEach-Methode (Array)](../../javascript/reference/foreach-method-array-javascript.md)

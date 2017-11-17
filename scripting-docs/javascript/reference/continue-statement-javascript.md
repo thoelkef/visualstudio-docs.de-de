@@ -1,55 +1,57 @@
 ---
-title: "continue-Anweisung (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "continue_JavaScriptKeyword"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "continue-Anweisung"
-  - "do...while-Anweisung"
-  - "Schleifenstruktur, continue-Anweisung"
+title: continue-Anweisung (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: continue_JavaScriptKeyword
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- do...while statement
+- continue statement
+- loop structures, continue statement
 ms.assetid: f8a30d9f-e2de-4e1f-8668-4e4cf95f7df9
-caps.latest.revision: 21
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 391f919c4d06a6c529bfee34e21ca7238b3c63b7
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# continue-Anweisung (JavaScript)
+# <a name="continue-statement-javascript"></a>continue-Anweisung (JavaScript)
 Beendet die aktuelle Iteration einer Schleife und beginnt eine neue Iteration.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 continue [label];  
 ```  
   
-## Hinweise  
- Das optionale Argument `label` legt die Anweisung fest, für die `continue` gilt.  
+## <a name="remarks"></a>Hinweise  
+ Das optionale `label` Argument gibt die Anweisung an die `continue` gilt.  
   
- Sie können die Anweisung nur innerhalb einer `continue` statement only inside a `while`, `do...while`, **for** oder `for...in`\-Schleife verwenden.  Die Ausführung der `continue`\-Anweisung beendet die laufende Iteration und setzt den Programmablauf mit dem Beginn der nächsten Schleife fort.  Dies hat die folgenden Auswirkungen auf die verschiedenen Schleifenarten:  
+ Sie können die `continue` Anweisung nur innerhalb einer `while`, `do...while`, **für**, oder `for...in` Schleife. Ausführen der `continue` -Anweisung beendet die aktuelle Iteration der Schleife und Programmablauf mit dem Anfang der Schleife fortgesetzt. Dies hat folgenden Auswirkungen auf die verschiedenen Typen von Schleifen:  
   
--   Bei den Schleifen `while` und `do...while` wird die Bedingung überprüft. Ist diese "true", wird die Schleife erneut ausgeführt.  
+-   `while`und `do...while` Schleifen, deren Bedingung testen und bei "true", die Schleife erneut ausgeführt.  
   
--   Bei `for`\-Schleifen wird der Inkrementausdruck und, sofern der Testausdruck true ergibt, die Schleife erneut ausgeführt.  
+-   `for`Schleifen führen ihre Inkrementausdruck, und wenn der Testausdruck "true" wird die Schleife erneut ausgeführt.  
   
--   `for...in`\-Schleifen springen zum nächsten Feld der angegebenen Variablen und führen die Schleife erneut aus.  
+-   `for...in`Schleifen, fahren Sie mit der nächsten Feld der angegebenen Variablen und die Schleife erneut ausgeführt.  
   
-## Beispiele  
- In diesem Beispiel durchläuft eine Schleife den Bereich 1 bis 9.  Die Anweisungen zwischen `continue` und dem Ende des `for`\-Texts werden wegen der Verwendung der `continue`\-Anweisung zusammen mit dem Ausdruck `(i < 5)` übersprungen.  
+## <a name="examples"></a>Beispiele  
+ In diesem Beispiel durchlaufen eine Schleife von 1 bis 9 aus. Die Anweisungen zwischen `continue` und das Ende der `for` Text werden ausgelassen, aufgrund der Verwendung von der `continue` Anweisung zusammen mit dem Ausdruck `(i < 5)`.  
   
-```javascript  
+```JavaScript  
 for (var i = 1; i < 10; i++) {  
     if (i < 5) {  
         continue;  
@@ -61,9 +63,9 @@ for (var i = 1; i < 10; i++) {
 // Output: 5 6 7 8 9  
 ```  
   
- Im folgenden Code verweist die `continue`\-Anweisung auf die `for`\-Schleife, der die `Inner:`\-Bezeichnung vorangestellt ist.  Wenn `j` gleich 24 ist, führt die `continue`\-Anweisung dazu, dass die `for`\-Schleife zur nächsten Iteration wechselt.  Die Zahlen 21 bis 23 und 25 bis 30 werden auf jeder Zeile ausgegeben.  
+ Im folgenden Code wird die `continue` Anweisung verweist auf die `for` Schleife, in der vorangestellt ist die `Inner:` Bezeichnung. Wenn `j` 24, ist die `continue` Anweisung verursacht, die `for` -Schleife zur nächsten Iteration wechseln. Die Zahlen 21 bis 23 und 25 bis 30 Drucken in jeder Zeile.  
   
-```javascript  
+```JavaScript  
 Outer:  
 for (var i = 1; i <= 10; i++) {  
     document.write ("<br />");  
@@ -92,13 +94,13 @@ Inner:
 //i: 10 j: 21 22 23 25 26 27 28 29 30  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## Siehe auch  
- [break\-Anweisung](../../javascript/reference/break-statement-javascript.md)   
- [do...while\-Anweisung](../../javascript/reference/do-dot-dot-dot-while-statement-javascript.md)   
- [for\-Anweisung](../../javascript/reference/for-statement-javascript.md)   
- [for...in\-Anweisung](../../javascript/reference/for-dot-dot-dot-in-statement-javascript.md)   
- [Anweisung mit Marke](../../javascript/reference/labeled-statement-javascript.md)   
- [while\-Anweisung](../../javascript/reference/while-statement-javascript.md)
+## <a name="see-also"></a>Siehe auch  
+ [break-Anweisung](../../javascript/reference/break-statement-javascript.md)   
+ [Do...While-Anweisung](../../javascript/reference/do-dot-dot-dot-while-statement-javascript.md)   
+ [für die Anweisung](../../javascript/reference/for-statement-javascript.md)   
+ [for... in-Anweisung](../../javascript/reference/for-dot-dot-dot-in-statement-javascript.md)   
+ [Anweisung mit Bezeichnung](../../javascript/reference/labeled-statement-javascript.md)   
+ [while-Anweisung](../../javascript/reference/while-statement-javascript.md)

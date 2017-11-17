@@ -1,48 +1,49 @@
 ---
-title: "CA2212: ServicedComponents nicht mit WebMethod markieren | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2212"
-  - "DoNotMarkServicedComponentsWithWebMethod"
-helpviewer_keywords: 
-  - "CA2212"
-  - "DoNotMarkServicedComponentsWithWebMethod"
+title: 'CA2212: ServicedComponents mit WebMethod nicht markieren | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2212
+- DoNotMarkServicedComponentsWithWebMethod
+helpviewer_keywords:
+- CA2212
+- DoNotMarkServicedComponentsWithWebMethod
 ms.assetid: 774bc55d-e588-48ee-8f38-c228580feca2
-caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 44c29215301212a12c5652fbf1fe91af23db1082
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CA2212: ServicedComponents nicht mit WebMethod markieren
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2212-do-not-mark-serviced-components-with-webmethod"></a>CA2212: ServicedComponents nicht mit WebMethod markieren
 |||  
 |-|-|  
 |TypeName|DoNotMarkServicedComponentsWithWebMethod|  
 |CheckId|CA2212|  
-|Kategorie \(Category\)|Microsoft.Usage|  
+|Kategorie|Microsoft.Usage|  
 |Unterbrechende Änderung|Breaking|  
   
-## Ursache  
- Eine Methode in einem Typ, der von <xref:System.EnterpriseServices.ServicedComponent?displayProperty=fullName> erbt, wird mit <xref:System.Web.Services.WebMethodAttribute?displayProperty=fullName> markiert.  
+## <a name="cause"></a>Ursache  
+ Eine Methode in einem Typ, der von erbt <xref:System.EnterpriseServices.ServicedComponent?displayProperty=fullName> mit RuntimeCompatibility <xref:System.Web.Services.WebMethodAttribute?displayProperty=fullName>.  
   
-## Regelbeschreibung  
- <xref:System.Web.Services.WebMethodAttribute> wird auf Methoden in einem XML\-Webdienst angewendet, die mit ASP.NET erstellt wurden. Dadurch kann die Methode durch Remotewebclients aufgerufen werden.  Die Methode und die Klasse müssen öffentlich sein und in einer ASP.NET\-Webanwendung ausgeführt werden.  <xref:System.EnterpriseServices.ServicedComponent>\-Typen werden von COM\+\-Anwendungen gehostet und können COM\+\-Dienste verwenden.  <xref:System.Web.Services.WebMethodAttribute> wird nicht für <xref:System.EnterpriseServices.ServicedComponent>\-Typen übernommen, da sie nicht für die gleichen Szenarios vorgesehen sind.  Insbesondere bewirkt das Hinzufügen des Attributs zur <xref:System.EnterpriseServices.ServicedComponent>\-Methode nicht, dass die Methode von Remotewebclients aufgerufen werden kann.  Da das Verhalten von <xref:System.Web.Services.WebMethodAttribute> und einer <xref:System.EnterpriseServices.ServicedComponent>\-Methode sowie deren Anforderungen an den Kontext sowie den Transaktionsablauf zu Konflikten führen, ist das Verhalten der Methode in bestimmten Szenarien fehlerhaft.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ <xref:System.Web.Services.WebMethodAttribute>gilt für Methoden in einem XML-Webdienst, die mithilfe von ASP.NET erstellt wurden. Es wird die Methode von Remotewebclients aufgerufen werden kann. Die Methode und die Klasse müssen öffentlich sein und in einer ASP.NET Web-Anwendung ausgeführt werden. <xref:System.EnterpriseServices.ServicedComponent>Typen von COM+-Anwendungen gehostet werden und COM+-Dienste verwenden können. <xref:System.Web.Services.WebMethodAttribute>gilt nicht für <xref:System.EnterpriseServices.ServicedComponent> Typen, da sie nicht den gleichen Fällen bestimmt sind. Insbesondere das-Attribut hinzufügen der <xref:System.EnterpriseServices.ServicedComponent> -Methode nicht, dass die Methode aufgerufen werden kann von remote-Web-Clients. Da <xref:System.Web.Services.WebMethodAttribute> und eine <xref:System.EnterpriseServices.ServicedComponent> Methode verfügen, in Konflikt stehenden Verhalten und Anforderungen für den Kontext, die einen Transaktionsfluss und das Verhalten der Methode werden in einigen Szenarien falsch sein.  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie das Attribut aus der <xref:System.EnterpriseServices.ServicedComponent>\-Methode.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Um einen Verstoß gegen diese Regel zu beheben, entfernen Sie das Attribut aus der <xref:System.EnterpriseServices.ServicedComponent> Methode.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Unterdrücken Sie keine Warnung dieser Regel.  Es gibt keine Szenarien, in denen eine Kombination dieser Elemente richtig ist.  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Unterdrücken Sie keine Warnung dieser Regel. Es gibt keine Szenarien, in dem eine Kombination dieser Elemente richtig ist.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  <xref:System.EnterpriseServices.ServicedComponent?displayProperty=fullName>   
  <xref:System.Web.Services.WebMethodAttribute?displayProperty=fullName>

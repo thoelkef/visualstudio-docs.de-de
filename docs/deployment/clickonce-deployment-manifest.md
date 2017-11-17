@@ -1,60 +1,61 @@
 ---
-title: "ClickOnce Deployment Manifest | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "ClickOnce, deployment manifests"
-  - "deployment manifests [ClickOnce]"
+title: ClickOnce-Bereitstellungsmanifest | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- ClickOnce, deployment manifests
+- deployment manifests [ClickOnce]
 ms.assetid: 8457e615-e3b6-4990-8dcf-11bc590e4e9b
-caps.latest.revision: 23
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 23
+caps.latest.revision: "23"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 4e0734079cc3a54666c7e9b736ec1f3284ad891a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# ClickOnce Deployment Manifest
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Ein Bereitstellungsmanifest ist eine XML\-Datei, die eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Bereitstellung beschreibt, einschließlich der Bestimmung der aktuellen [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Anwendungsversion für die Bereitstellung.  
+# <a name="clickonce-deployment-manifest"></a>ClickOnce-Bereitstellungsmanifest
+Ein Bereitstellungsmanifest ist eine XML-Datei, die eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Bereitstellung beschreibt, einschließlich der Bestimmung der aktuellen [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendungsversion für die Bereitstellung.  
   
  Bereitstellungsmanifeste verfügen über die folgenden Elemente und Attribute.  
   
 |Element|Beschreibung|Attribute|  
-|-------------|------------------|---------------|  
-|[\<Assembly\>\-Element](../deployment/assembly-element-clickonce-deployment.md)|Erforderlich.  Ein Element der obersten Ebene.|`manifestVersion`|  
-|[\<assemblyIdentity\>\-Element](../deployment/assemblyidentity-element-clickonce-deployment.md)|Erforderlich.  Identifiziert das Anwendungsmanifest für die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Bereitstellung.|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture`|  
-|[\<description\>\-Element](../deployment/description-element-clickonce-deployment.md)|Erforderlich.  Identifiziert Anwendungsinformationen, die zum Erstellen eines Shell\-Eintrags und des Elements **Software** in der Systemsteuerung verwendet werden.|`publisher`<br /><br /> `product`<br /><br /> `supportUrl`|  
-|[\<deployment\>\-Element](../deployment/deployment-element-clickonce-deployment.md)|Dies ist optional.  Identifiziert die Attribute, die für die Bereitstellung von Updates und zum Verfügbarmachen für das System verwendet werden.|`install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters`|  
-|[\<compatibleFrameworks\> Element](../deployment/compatibleframeworks-element-clickonce-deployment.md)|Erforderlich.  Identifiziert die Versionen von .NET Framework, mit denen diese Anwendung installiert und ausgeführt werden kann.|`SupportUrl`|  
-|[\<dependency\>\-Element](../deployment/dependency-element-clickonce-deployment.md)|Erforderlich.  Identifiziert die Version der Anwendung, die für die Bereitstellung installiert werden soll, und den Speicherort des Anwendungsmanifests.|`preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size`|  
-|[\<publisherIdentity\> Element](../deployment/publisheridentity-element-clickonce-deployment.md)|Für signierte Manifeste erforderlich.  Enthält Informationen zum Herausgeber, der dieses Bereitstellungsmanifest signiert hat.|`Name`<br /><br /> `issuerKeyHash`|  
-|[\<Signature\>\-Element](../deployment/signature-element-clickonce-deployment.md)|Dies ist optional.  Enthält die notwendigen Informationen, um dieses Bereitstellungsmanifest digital zu signieren.|Keine|  
-|[\<customErrorReporting\> Element](../deployment/customerrorreporting-element-clickonce-deployment.md)|Dies ist optional.  Gibt einen URI an, der bei einem Fehler angezeigt wird.|URI|  
+|-------------|-----------------|----------------|  
+|[\<Assembly >-Element](../deployment/assembly-element-clickonce-deployment.md)|Erforderlich. Ein Element der obersten Ebene.|`manifestVersion`|  
+|[\<AssemblyIdentity >-Element](../deployment/assemblyidentity-element-clickonce-deployment.md)|Erforderlich. Identifiziert das Anwendungsmanifest für die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Bereitstellung.|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture`|  
+|[\<Description >-Element](../deployment/description-element-clickonce-deployment.md)|Erforderlich. Identifiziert Anwendungsinformationen, die zum Erstellen eines Shell-Eintrags verwendet und die **Software** Element in der Systemsteuerung.|`publisher`<br /><br /> `product`<br /><br /> `supportUrl`|  
+|[\<Deployment >-Element](../deployment/deployment-element-clickonce-deployment.md)|Dies ist optional. Identifiziert die Attribute, die für die Bereitstellung von Updates und zum Verfügbarmachen für das System verwendet werden.|`install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters`|  
+|[\<CompatibleFrameworks >-Element](../deployment/compatibleframeworks-element-clickonce-deployment.md)|Erforderlich. Identifiziert die Versionen von .NET Framework, mit denen diese Anwendung installiert und ausgeführt werden kann.|`SupportUrl`|  
+|[\<Dependency >-Element](../deployment/dependency-element-clickonce-deployment.md)|Erforderlich. Identifiziert die Version der Anwendung, die für die Bereitstellung installiert werden soll, und den Speicherort des Anwendungsmanifests.|`preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size`|  
+|[\<PublisherIdentity >-Element](../deployment/publisheridentity-element-clickonce-deployment.md)|Für signierte Manifeste erforderlich. Enthält Informationen zum Herausgeber, der dieses Bereitstellungsmanifest signiert hat.|`Name`<br /><br /> `issuerKeyHash`|  
+|[\<Signatur >-Element](../deployment/signature-element-clickonce-deployment.md)|Dies ist optional. Enthält die notwendigen Informationen, um dieses Bereitstellungsmanifest digital zu signieren.|Keine|  
+|[\<CustomErrorReporting >-Element](../deployment/customerrorreporting-element-clickonce-deployment.md)|Dies ist optional. Gibt einen URI an, der bei einem Fehler angezeigt wird.|URI|  
   
-## Hinweise  
- Die Bereitstellungsmanifestdatei identifiziert eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Anwendungsbereitstellung einschließlich der aktuellen Version und anderer Bereitstellungseinstellungen.  Sie verweist auf das Anwendungsmanifest, in dem die aktuelle Version der Anwendung und alle in der Bereitstellung enthaltenen Dateien beschrieben werden.  
+## <a name="remarks"></a>Hinweise  
+ Die Bereitstellungsmanifestdatei identifiziert eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]-Anwendungsbereitstellung einschließlich der aktuellen Version und anderer Bereitstellungseinstellungen. Sie verweist auf das Anwendungsmanifest, in dem die aktuelle Version der Anwendung und alle in der Bereitstellung enthaltenen Dateien beschrieben werden.  
   
  Weitere Informationen finden Sie unter [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).  
   
-## Dateiort  
- Die Bereitstellungsmanifestdatei verweist auf das richtige Anwendungsmanifest für die aktuelle Version der Anwendung.  Wenn Sie eine neue Version einer Anwendungsbereitstellung verfügbar machen, müssen Sie das Bereitstellungsmanifest zum Verweisen auf das neue Anwendungsmanifest aktualisieren.  
+## <a name="file-location"></a>Dateiort  
+ Die Bereitstellungsmanifestdatei verweist auf das richtige Anwendungsmanifest für die aktuelle Version der Anwendung. Wenn Sie eine neue Version einer Anwendungsbereitstellung verfügbar machen, müssen Sie das Bereitstellungsmanifest zum Verweisen auf das neue Anwendungsmanifest aktualisieren.  
   
  Die Bereitstellungsmanifestdatei muss über einen starken Namen verfügen und kann auch Zertifikate für die Herausgeberüberprüfung enthalten.  
   
-## Dateinamensyntax  
+## <a name="file-name-syntax"></a>Dateinamensyntax  
  Der Name einer Bereitstellungsmanifestdatei muss mit der Erweiterung .application enden.  
   
-## Beispiele  
+## <a name="examples"></a>Beispiele  
  Das folgende Codebeispiel veranschaulicht ein Bereitstellungsmanifest.  
   
 ```  
@@ -115,9 +116,9 @@ Ein Bereitstellungsmanifest ist eine XML\-Datei, die eine [!INCLUDE[ndptecclick]
     </dependentAssembly>  
   </dependency>  
 <publisherIdentity name="CN=DOMAIN\MyUsername" issuerKeyHash="18312a18a21b215ecf4cdb20f5a0e0b0dd263c08" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#">  
-…  
+...  
 </Signature></asmv1:assembly>  
 ```  
   
-## Siehe auch  
- [Publishing ClickOnce Applications](../deployment/publishing-clickonce-applications.md)
+## <a name="see-also"></a>Siehe auch  
+ [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)

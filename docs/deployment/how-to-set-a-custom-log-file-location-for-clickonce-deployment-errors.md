@@ -1,52 +1,53 @@
 ---
-title: "How to: Set a Custom Log File Location for ClickOnce Deployment Errors | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "troubleshooting ClickOnce deployments"
-  - "ClickOnce deployment, troubleshooting"
-  - "ClickOnce deployment, error logging"
+title: "Vorgehensweise: Festlegen einer benutzerdefinierten Protokolldateispeicherorts für ClickOnce-Bereitstellungsfehler | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- troubleshooting ClickOnce deployments
+- ClickOnce deployment, troubleshooting
+- ClickOnce deployment, error logging
 ms.assetid: 77424414-7f0e-4b99-94bb-ea130de92d09
-caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 4a8ed7ebbd3fc2fc35e9145509ebf335652c4bbd
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# How to: Set a Custom Log File Location for ClickOnce Deployment Errors
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] verwaltet Aktivierungsprotokolldateien für alle Bereitstellungen.  Diese Protokolle dokumentieren alle Fehler, die das Installieren und das Initialisieren einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Bereitstellung betreffen.  Standardmäßig erstellt [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] eine Protokolldatei für jede Bereitstellungsaktivierung.  Es speichert diese Protokolldateien im Ordner Temporäre Internetdateien.  Die Protokolldatei für eine Bereitstellung wird angezeigt, wenn ein Fehler bei der Aktivierung auftritt und in dem daraufhin angezeigten Fehlerdialogfeld auf **Details** geklickt wird.  
+# <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>Gewusst wie: Festlegen eines benutzerdefinierten Protokolldateispeicherorts für ClickOnce-Bereitstellungsfehler
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]verwaltet die Aktivierung von Protokolldateien für alle Bereitstellungen an. Diese Protokolle dokumentieren Fehler bezieht sich auf installieren, und Initialisieren einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellung. Standardmäßig [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] erstellt eine einzige Protokolldatei für jede Bereitstellung-Aktivierung. Sie speichert diese Protokolldateien im Ordner "temporäre Internetdateien". Die Protokolldatei für eine Bereitstellung wird dem Benutzer angezeigt, wenn ein Aktivierungsfehler tritt auf, und der Benutzer klickt auf **Details** im Dialogfeld resultierenden Fehler.  
   
- Sie können dieses Verhalten für einen bestimmten Client ändern und dazu mit dem Registrierungs\-Editor \(**regedit.exe**\) einen benutzerdefinierten Protokolldateipfad festlegen.  In diesem Fall protokolliert [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] erfolgreiche und nicht erfolgreiche Aktivierungen für alle Bereitstellungen in einer einzelnen Datei.  
+ Sie können dieses Verhalten für einen bestimmten Client ändern, indem Sie mithilfe des Registrierungs-Editor (**regedit.exe**) einen benutzerdefinierten Protokollpfad Datei festlegen. In diesem Fall [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Aktivierung Erfolge und Fehler für alle Bereitstellungen in einer einzelnen Datei protokolliert.  
   
 > [!CAUTION]
->  Die unsachgemäße Verwendung des Registrierungs\-Editors kann ernste Probleme verursachen und u. U. eine Neuinstallation des Betriebssystems erforderlich machen.  Die Verwendung des Registrierungs\-Editors erfolgt auf eigenes Risiko.  
+>  Falsch Verwendung des Registrierungs-Editors können zu schwerwiegende Problemen führen, die möglicherweise eine Neuinstallation des Betriebssystems erforderlich sind. Sie verwenden den Registrierungs-Editor auf eigene Gefahr.  
   
 > [!NOTE]
->  Sie müssen die Protokolldatei gelegentlich verkürzen oder löschen, damit sie nicht zu groß wird.  
+>  Sie benötigen zum Abschneiden oder löschen die Protokolldatei gelegentlich, um zu verhindern, dass es zu groß.  
   
- Im folgenden Verfahren wird beschrieben, wie ein benutzerdefinierter Protokolldateispeicherort für einen einzelnen Client festgelegt wird.  
+ Das folgende Verfahren beschreibt, wie einem benutzerdefinierten Protokolldateispeicherorts für einen einzelnen Client festgelegt.  
   
-### So legen Sie einen benutzerdefinierten Protokolldateispeicherort fest  
+### <a name="to-set-a-custom-log-file-location"></a>Festlegen einer benutzerdefinierten Protokolldateispeicherorts  
   
-1.  Öffnen Sie **Regedit.exe**.  
+1.  Open **Regedit.exe**.  
   
 2.  Navigieren Sie zum Knoten `HKCU\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment`.  
   
-3.  Legen Sie für den Zeichenfolgenwert `LogFilePath` den vollständigen Pfad und Dateinamen des von Ihnen bevorzugten benutzerdefinierten Protokollspeicherorts fest.  
+3.  Legen Sie den Zeichenfolgenwert `LogFilePath` auf den vollständigen Pfad und Dateiname der Ihre bevorzugte benutzerdefinierten Protokollspeicherort.  
   
-     Dieser Speicherort muss in einem Verzeichnis sein, auf das Benutzer Schreibzugriff haben.  Erstellen Sie unter Windows Vista z. B. die folgende Ordnerstruktur, und legen Sie `LogFilePath` auf "C:\\Users\\\<Benutzername\>\\Documents\\Logs\\ClickOnce\\installation.log" fest.  
+     Dieser Speicherort muss sich in einem Verzeichnis auf die der Benutzer Schreibzugriff hat. Beispielsweise unter Windows Vista, erstellen Sie die folgende Ordnerstruktur und die legen `LogFilePath` zu C:\Users\\< Benutzername\>\Documents\Logs\ClickOnce\installation.log.  
   
-## Siehe auch  
- [Troubleshooting ClickOnce Deployments](../deployment/troubleshooting-clickonce-deployments.md)
+## <a name="see-also"></a>Siehe auch  
+ [Problembehandlung bei ClickOnce-Bereitstellungen](../deployment/troubleshooting-clickonce-deployments.md)

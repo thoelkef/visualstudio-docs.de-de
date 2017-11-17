@@ -1,58 +1,61 @@
 ---
-title: "Object.keys-Funktion (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "keys-Methode [JavaScript]"
-  - "Object.keys-Methode [JavaScript]"
+title: Object.Keys-Funktion (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- Object.keys method [JavaScript]
+- keys method [JavaScript]
 ms.assetid: cf4a7daf-cf28-4467-bc6b-f7f106ec3876
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0e725c3ab7206b04d9a900cb614b57c37dfc4351
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Object.keys-Funktion (JavaScript)
+# <a name="objectkeys-function-javascript"></a>Object.keys-Funktion (JavaScript)
 Gibt die Namen der aufzählbaren Eigenschaften und Methoden eines Objekts zurück.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```javascript  
+```JavaScript  
 Object.keys(object)  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
   
 |Parameter|Definition|  
 |---------------|----------------|  
-|`object`|Erforderlich.  Das Objekt, das die Eigenschaften und Methoden enthält.  Dies kann ein von Ihnen erstelltes Objekt oder ein vorhandenes Objekt des Dokumentobjektmodells \(Document Object Model, DOM\) sein.|  
+|`object`|Erforderlich. Das Objekt, das die Eigenschaften und Methoden enthält. Dies kann ein Objekt, das Sie erstellt haben oder ein vorhandenes (DOKUMENTOBJEKTMODELL)-Objekt sein.|  
   
-## Rückgabewert  
+## <a name="return-value"></a>Rückgabewert  
  Ein Array, das die Namen der aufzählbaren Eigenschaften und Methoden des Objekts enthält.  
   
-## Ausnahmen  
- Wenn der Wert, der für das `object`\-Argument angegeben wird, nicht der Name eines Objekts ist, wird eine Ausnahme vom Typ `TypeError` ausgelöst.  
+## <a name="exceptions"></a>Ausnahmen  
+ Wenn der Wert für die angegebene der `object` Argument ist nicht der Name eines Objekts ein `TypeError` Ausnahme wird ausgelöst.  
   
-## Hinweise  
- Die `keys`\-Methode gibt nur die Namen von aufzählbaren Eigenschaften und Methoden zurück.  Um die Namen von aufzählbaren und nicht aufzählbaren Eigenschaften und Methoden zurückzugeben, können Sie [Object.getOwnPropertyNames\-Funktion](../../javascript/reference/object-getownpropertynames-function-javascript.md) verwenden.  
+## <a name="remarks"></a>Hinweise  
+ Die `keys` -Methode gibt nur die Namen der aufzählbaren Eigenschaften und Methoden zurück. Damit die Namen der enumerable-Typs und nicht aufzählbare Eigenschaften und Methoden zurückgegeben werden, können Sie [Object.getOwnPropertyNames-Funktion](../../javascript/reference/object-getownpropertynames-function-javascript.md).  
   
- Informationen zum `enumerable`\-Attribut einer Eigenschaft finden Sie unter [Object.defineProperty\-Funktion](../../javascript/reference/object-defineproperty-function-javascript.md) und [Object.getOwnPropertyDescriptor\-Funktion](../../javascript/reference/object-getownpropertydescriptor-function-javascript.md).  
+ Informationen zu den `enumerable` Attribut einer Eigenschaft finden Sie unter [Object.defineProperty-Funktion](../../javascript/reference/object-defineproperty-function-javascript.md) und [Object.getOwnPropertyDescriptor-Funktion](../../javascript/reference/object-getownpropertydescriptor-function-javascript.md).  
   
-## Beispiel  
- Im folgenden Beispiel wird ein Objekt erstellt, das drei Eigenschaften und eine Methode verfügt.  Sie verwendet anschließend die `keys`\-Methode, um die Eigenschaften und Methoden des Objekts abzurufen.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel erstellt ein Objekt, das drei Eigenschaften und eine Methode verfügt. Es verwendet dann die `keys` Methode, um die Eigenschaften und Methoden des Objekts abzurufen.  
   
-```javascript  
+```JavaScript  
 // Create a constructor function.  
 function Pasta(grain, width, shape) {  
     this.grain = grain;  
@@ -76,10 +79,10 @@ document.write (arr);
 // grain,width,shape,toString  
 ```  
   
-## Beispiel  
- Im folgenden Beispiel werden die Namen aller aufzählbaren Eigenschaften angezeigt, die mit dem Buchstaben "g" im Pasta\-Objekt beginnen.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel zeigt die Namen aller aufzählbare Eigenschaften, die mit dem Buchstaben "g" in dem Objekt Nudeln beginnen.  
   
-```javascript  
+```JavaScript  
 // Create a constructor function.  
 function Pasta(grain, width, shape) {  
     this.grain = grain;  
@@ -105,8 +108,8 @@ function CheckKey(value) {
 // grain  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
-## Siehe auch  
- [Object.getOwnPropertyNames\-Funktion](../../javascript/reference/object-getownpropertynames-function-javascript.md)
+## <a name="see-also"></a>Siehe auch  
+ [Object.getOwnPropertyNames-Funktion](../../javascript/reference/object-getownpropertynames-function-javascript.md)

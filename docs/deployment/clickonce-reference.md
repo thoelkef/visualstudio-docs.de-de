@@ -1,53 +1,54 @@
 ---
-title: "ClickOnce Reference | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "ClickOnce, reference"
-  - "manifests [ClickOnce]"
+title: ClickOnce-Referenz | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- ClickOnce, reference
+- manifests [ClickOnce]
 ms.assetid: 2a7d5704-5e8c-452c-9ef3-5e8ec5e952fe
-caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 4cfe5caa65246773759c4de7512fd41aa9e88023
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# ClickOnce Reference
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Auf den folgenden Seiten wird die Struktur der XML\-Dateien erläutert, die zum Darstellen von ClickOnce\-Anwendungen verwendet werden.  
+# <a name="clickonce-reference"></a>ClickOnce-Referenz
+Die folgenden Seiten beschreiben die Struktur der XML-Dateien verwendet, um die ClickOnce-Anwendung darstellen.  
   
-## In diesem Abschnitt  
- [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)  
- Auflistung und Erläuterung der Elemente und Attribute eines Anwendungsmanifests.  
+## <a name="in-this-section"></a>In diesem Abschnitt  
+ [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md)  
+ Aufgelistet und beschrieben, die Elemente und Attribute, die ein Anwendungsmanifest bilden.  
   
- [ClickOnce Deployment Manifest](../deployment/clickonce-deployment-manifest.md)  
- Auflistung und Erläuterung der Elemente und Attribute eines Bereitstellungsmanifests.  
+ [ClickOnce-Bereitstellungsmanifest](../deployment/clickonce-deployment-manifest.md)  
+ Aufgelistet und beschrieben, die Elemente und Attribute, die ein Bereitstellungsmanifest bilden.  
   
- [Referenz zum Produkt\- und Paketschema](../deployment/product-and-package-schema-reference.md)  
- Auflistung der Produkt\- und Paketdateielemente.  
+ [Referenz zum Produkt- und Paketschema](../deployment/product-and-package-schema-reference.md)  
+ Produkt- und Paketdateien Dateielemente aufgeführt.  
   
- [ClickOnce Unmanaged API Reference](../deployment/clickonce-unmanaged-api-reference.md)  
- Listet nicht verwaltete öffentliche APIs aus "dfshim.dll" auf.  
+ [Referenz zur nicht verwalteten API für ClickOnce](../deployment/clickonce-unmanaged-api-reference.md)  
+ Listen nicht verwaltete öffentliche APIs aus dfshim.dll.  
   
-## Referenz  
+## <a name="reference"></a>Verweis  
   
-## Verwandte Abschnitte  
- [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md)  
- Liefert ausführliche grundlegende Informationen zur ClickOnce\-Bereitstellung.  
+## <a name="related-sections"></a>Verwandte Abschnitte  
+ [ClickOnce-Sicherheit und Bereitstellung](../deployment/clickonce-security-and-deployment.md)  
+ Enthält ausführliche grundlegende Informationen zur ClickOnce-Bereitstellung.  
   
  <xref:System.Deployment.Application>  
- Enthält Links zur Referenzdokumentation der öffentlichen Klassen, die ClickOnce innerhalb des verwalteten Codes unterstützen.  
+ Enthält Links zur Referenzdokumentation der öffentlichen Klassen, die ClickOnce in verwaltetem Code zu unterstützen.  
   
- [Publishing ClickOnce Applications](../deployment/publishing-clickonce-applications.md)  
- Stellt exemplarische Vorgehensweisen und Gewusst wie\-Themen bereit, in denen ClickOnce\-Aufgaben ausgeführt werden.
+ [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)  
+ Stellt Exemplarische Vorgehensweisen und wie-auf der, die ClickOnce-Aufgaben ausführen.

@@ -1,51 +1,52 @@
 ---
-title: "CA1707: Bezeichner sollten keine Unterstriche enthalten | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IdentifiersShouldNotContainUnderscores"
-  - "CA1707"
-helpviewer_keywords: 
-  - "CA1707"
-  - "IdentifiersShouldNotContainUnderscores"
+title: 'CA1707: Bezeichner sollten keine Unterstriche enthalten | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IdentifiersShouldNotContainUnderscores
+- CA1707
+helpviewer_keywords:
+- CA1707
+- IdentifiersShouldNotContainUnderscores
 ms.assetid: 5fb539ef-c304-4323-90c0-b14386da9774
-caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 437085b76e1f9595c6db70fce798942df85a0292
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CA1707: Bezeichner sollten keine Unterstriche enthalten
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707: Bezeichner sollten keine Unterstriche enthalten
 |||  
 |-|-|  
 |TypeName|IdentifiersShouldNotContainUnderscores|  
 |CheckId|CA1707|  
-|Kategorie \(Category\)|Microsoft.Naming|  
-|Unterbrechende Änderung|Unterbrechend – Wenn für Assemblys ausgelöst<br /><br /> Nicht unterbrechend – Wenn für Typparameter ausgelöst|  
+|Kategorie|Microsoft.Naming|  
+|Unterbrechende Änderung|Unterbrechend – Wenn auf Assemblys ausgelöst<br /><br /> Nicht unterbrechend – Wenn für Typparameter ausgelöst|  
   
-## Ursache  
- Der Name eines Bezeichners enthält einen Unterstrich \(\_\).  
+## <a name="cause"></a>Ursache  
+ Der Name eines Bezeichners enthält den Unterstrich (_) enthalten.  
   
-## Regelbeschreibung  
- Bezeichnernamen dürfen keinen Unterstrich \(\_\) enthalten.  Namespaces, Typen, Member und Parameter werden von der Regel dahingehend überprüft.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Bezeichnernamen dürfen keinen Unterstrich (_) enthalten. Die Regel wird überprüft, Namespaces, Typen, Member und Parameter.  
   
- Durch Benennungskonventionen erhalten Bibliotheken, die auf die Common Language Runtime abzielen, ein einheitliches Erscheinungsbild.  Dadurch wird der Lernaufwand für neue Softwarebibliotheken verringert. Zudem wird das Kundenvertrauen dahingehend gestärkt, dass die Bibliothek von einem erfahrenen Entwickler für verwalteten Code erstellt wurde.  
+ Durch Benennungskonventionen erhalten Bibliotheken, die auf die Common Language Runtime abzielen, ein einheitliches Erscheinungsbild. Dadurch wird der Lernaufwand für neue Softwarebibliotheken verringert. Zudem wird das Kundenvertrauen dahingehend gestärkt, dass die Bibliothek von einem erfahrenen Entwickler für verwalteten Code erstellt wurde.  
   
-## Behandeln von Verstößen  
- Entfernen Sie alle Unterstriche aus dem Namen.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Entfernen Sie alle Unterstrichzeichen aus dem Namen ein.  
   
-## Wann sollten Warnungen unterdrückt werden?  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
  Unterdrücken Sie keine Warnung dieser Regel.  
   
-## Verwandte Regeln  
- [CA1709: Bei Bezeichnern sollte die Groß\-\/Kleinschreibung beachtet werden](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
+## <a name="related-rules"></a>Verwandte Regeln  
+ [CA1709: Bei Bezeichnern sollte die Groß-/Kleinschreibung beachtet werden](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
- [CA1708: Bezeichner sollten sich nicht nur durch die Groß\-\/Kleinschreibung unterscheiden](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708: Bezeichner sollten sich nicht nur durch die Groß-/Kleinschreibung unterscheiden](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

@@ -1,24 +1,26 @@
 ---
-title: "Exemplarische Vorgehensweise: Generieren von Code mithilfe von Textvorlagen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Exemplarische Vorgehensweisen [Textvorlagen], Generieren von Anwendungscode"
-  - "Exemplarische Vorgehensweisen [Textvorlagen]"
+title: 'Exemplarische Vorgehensweise: Generieren von Code mithilfe von Textvorlagen | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- walkthroughs [text templates], generating application code
+- walkthroughs [text templates]
 ms.assetid: 24602ade-baca-425e-a6ce-be09a2c7f7e1
-caps.latest.revision: 11
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: b39d142a44a99cc0fde362249d5717ee75c09323
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Exemplarische Vorgehensweise: Generieren von Code mithilfe von Textvorlagen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="walkthrough-generating-code-by-using-text-templates"></a>Exemplarische Vorgehensweise: Generieren von Code mithilfe von Textvorlagen
 Durch Codegenerierung können Sie Programmcode erstellen, der stark typisiert ist und problemlos geändert werden, wenn sich das Quellmodell ändert. Vergleichen Sie dies mit der alternativen Technik für ein vollkommen generisches Programm, das eine Konfigurationsdatei akzeptiert, was flexibler ist, aber zu Code führt, der nicht so einfach zu lesen und zu ändern ist und keine so gute Leistung aufweist. In dieser exemplarischen Vorgehensweise wird dieser Vorteil veranschaulicht.  
   
 ## <a name="typed-code-for-reading-xml"></a>Typisierter Code zum Lesen von XML  
@@ -102,7 +104,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 4.  In dieser exemplarischen Vorgehensweise benennen Sie die Datei `exampleXml.xml`. Legen Sie als Inhalt der Datei die im vorherigen Abschnitt gezeigten XML-Daten fest.  
   
- ..  
+ .  
   
 ### <a name="add-a-test-code-file"></a>Fügen Sie eine Testcodedatei hinzu  
  Fügen Sie eine C#-Datei dem Projekt hinzu und schreiben Sie darin ein Beispiel für Code, den Sie schreiben können möchten. Zum Beispiel:  

@@ -1,67 +1,68 @@
 ---
-title: "Gewusst wie: Debuggen einer ClickOnce-Anwendung mit eingeschr&#228;nkten Berechtigungen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Debuggen [Visual Studio], ClickOnce-Anwendungen"
-  - "ClickOnce-Bereitstellung, Debuggen"
-  - "ClickOnce-Anwendungen, Debuggen"
+title: "Vorgehensweise: Debuggen eine ClickOnce-Anwendung mit eingeschränkten Berechtigungen | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- debugging [Visual Studio], ClickOnce applications
+- ClickOnce deployment, debugging
+- ClickOnce applications, debugging
 ms.assetid: 6991ea91-5253-451b-923d-22273a3d38b1
-caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: aa51d29a1d5703f4fd02ee023eb1180da8031ac4
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Gewusst wie: Debuggen einer ClickOnce-Anwendung mit eingeschr&#228;nkten Berechtigungen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Als Entwickler führen Sie wahrscheinlich Ihre Entwicklungscomputer mit der Berechtigungen „Voll vertrauenswürdig“ aus, daher werden Sie nicht die gleichen Sicherheitsausnahmen beim Debuggen einer ClickOnce\-Anwendung sehen, die der Endbenutzer möglicherweise sieht, wenn sie mit eingeschränkten Berechtigungen ausgeführt wird.  
+# <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>Gewusst wie: Debuggen einer ClickOnce-Anwendung mit eingeschränkten Berechtigungen
+Als Entwickler führen Sie wahrscheinlich Ihre Entwicklungscomputer mit der Berechtigungen „Voll vertrauenswürdig“ aus, daher werden Sie nicht die gleichen Sicherheitsausnahmen beim Debuggen einer ClickOnce-Anwendung sehen, die der Endbenutzer möglicherweise sieht, wenn sie mit eingeschränkten Berechtigungen ausgeführt wird.  
   
- Um diese Ausnahmen zu erfassen, müssen Sie die Anwendung mit genau den Berechtigungen debuggen, die ein Endbenutzer hat. Debuggen mit eingeschränkten Berechtigungen kann im **Projekt\-Designer** auf der Seite **Sicherheit** aktiviert werden.  
+ Um diese Ausnahmen zu erfassen, müssen Sie die Anwendung mit genau den Berechtigungen debuggen, die ein Endbenutzer hat. Debuggen mit eingeschränkten Berechtigungen kann im **Projekt-Designer** auf der Seite **Sicherheit**aktiviert werden.  
   
  Wenn Sie darüber hinaus Anwendungen entwickeln, die Webdienste aufrufen, befinden sich diese Webdienste häufig auf Ihrem Entwicklungscomputer. Nach der Bereitstellung greift der Endbenutzer auf diese Webdienste von einer anderen URL aus zu. Zum Emulieren der Endbenutzererfahrung während des Debuggens können Sie eine URL angeben, und der Debugger wird die Webdienste daraufhin so behandeln, als würden Sie von dieser URL aufgerufen werden.  
   
-### So aktivieren Sie das Debuggen mit eingeschränkten Berechtigungen  
+### <a name="to-enable-debugging-with-restricted-permissions"></a>So aktivieren Sie das Debuggen mit eingeschränkten Berechtigungen  
   
-1.  Klicken Sie bei ausgewähltem Projekt im **Projektmappen\-Explorer** im Menü **Projekt** auf **Eigenschaften**.  
+1.  Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
   
-2.  Klicken Sie im **Projekt\-Designer** auf die Registerkarte **Sicherheit**.  
+2.  Klicken Sie im **Projekt-Designer**auf die Registerkarte **Sicherheit** .  
   
-3.  Wählen Sie das Kontrollkästchen **Enable ClickOnce Security Setting** \(ClickOnce\-Sicherheitseinstellung aktivieren\) aus, und klicken Sie dann auf das Optionsfeld **Teilweise vertrauenswürdige Anwendung**.  
+3.  Wählen Sie das Kontrollkästchen **Enable ClickOnce Security Setting** (ClickOnce-Sicherheitseinstellung aktivieren) aus, und klicken Sie dann auf das Optionsfeld **Teilweise vertrauenswürdige Anwendung** .  
   
-4.  Klicken Sie auf die Schaltfläche **Erweitert**.  
+4.  Klicken Sie auf die Schaltfläche **Erweitert** .  
   
-5.  Wählen Sie das Kontrollkästchen **Diese Anwendung mit dem ausgewählten Berechtigungssatz &debuggen** aus, und klicken Sie dann auf **OK**.  
+5.  Wählen Sie das Kontrollkästchen **Diese Anwendung mit dem ausgewählten Berechtigungssatz &amp;debuggen** aus, und klicken Sie dann auf **OK**.  
   
      Wenn Sie die Anwendung debuggen, lösen alle Zugriffsversuche auf eine Berechtigung, die nicht Teil des Berechtigungssatzes ist, eine Sicherheitsausnahme aus.  
   
-### So geben Sie eine URL für das Debuggen an  
+### <a name="to-specify-a-url-for-debugging"></a>So geben Sie eine URL für das Debuggen an  
   
-1.  Klicken Sie bei ausgewähltem Projekt im **Projektmappen\-Explorer** im Menü **Projekt** auf **Eigenschaften**.  
+1.  Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
   
-2.  Klicken Sie im **Projekt\-Designer** auf die Registerkarte **Sicherheit**.  
+2.  Klicken Sie im **Projekt-Designer**auf die Registerkarte **Sicherheit** .  
   
-3.  Wählen Sie das Kontrollkästchen **Enable ClickOnce Security Setting** \(ClickOnce\-Sicherheitseinstellung aktivieren\) aus, und klicken Sie dann auf das Optionsfeld **Teilweise vertrauenswürdige Anwendung**.  
+3.  Wählen Sie das Kontrollkästchen **Enable ClickOnce Security Setting** (ClickOnce-Sicherheitseinstellung aktivieren) aus, und klicken Sie dann auf das Optionsfeld **Teilweise vertrauenswürdige Anwendung** .  
   
-4.  Klicken Sie auf die Schaltfläche **Erweitert**.  
+4.  Klicken Sie auf die Schaltfläche **Erweitert** .  
   
-5.  Wählen Sie das Kontrollkästchen **Diese Anwendung mit dem ausgewählten Berechtigungssatz &debuggen** aus, und klicken Sie dann auf **OK**.  
+5.  Wählen Sie das Kontrollkästchen **Diese Anwendung mit dem ausgewählten Berechtigungssatz &amp;debuggen** aus, und klicken Sie dann auf **OK**.  
   
 6.  Geben Sie im Textfeld **Diese Anwendung debuggen, als ob sie von folgender URL heruntergeladen würde:** eine URL oder einen Netzwerkpfad ein.  
   
-## Siehe auch  
- [Gewusst wie: Festlegen benutzerdefinierter Berechtigungen für eine ClickOnce\-Anwendung](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [Sichern von ClickOnce\-Anwendungen](../deployment/securing-clickonce-applications.md)   
- [Codezugriffssicherheit für ClickOnce\-Anwendungen](../deployment/code-access-security-for-clickonce-applications.md)   
- [Sichern von ClickOnce\-Anwendungen](../deployment/securing-clickonce-applications.md)
+## <a name="see-also"></a>Siehe auch  
+ [How to: Set Custom Permissions for a ClickOnce Application](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)   
+ [Codezugriffssicherheit für ClickOnce-Anwendungen](../deployment/code-access-security-for-clickonce-applications.md)   
+ [Sichern von ClickOnce-Anwendungen](../deployment/securing-clickonce-applications.md)

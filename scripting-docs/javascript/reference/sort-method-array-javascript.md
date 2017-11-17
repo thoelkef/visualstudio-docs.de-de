@@ -1,64 +1,65 @@
 ---
-title: "sort-Methode (Array) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "sort"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Sort-Methode"
+title: Sort-Methode (Array) (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: sort
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: Sort method
 ms.assetid: 9bd8b54a-c838-4806-85c8-62eebe6bc48c
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2d098b47591ca7bbb4e3e8da5e5c14f8c0e9b255
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# sort-Methode (Array) (JavaScript)
-Sortiert ein `Array`.  
+# <a name="sort-method-array-javascript"></a>sort-Methode (Array) (JavaScript)
+Sortiert eine `Array`.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
 arrayobj.sort(sortFunction)   
 ```  
   
-## Parameter  
+## <a name="parameters"></a>Parameter  
  `arrayObj`  
- Erforderlich.  Ein `Array`\-Objekt.  
+ Erforderlich. Ein `Array`-Objekt.  
   
  `sortFunction`  
- Dies ist optional.  Der Name der Funktion zur Bestimmung der Reihenfolge der Elemente.  Wenn die Angabe ausgelassen wird, werden die Elemente aufsteigend in ASCII\-Zeichenreihenfolge sortiert.  
+ Dies ist optional. Der Name der Funktion verwendet, um die Reihenfolge der Elemente zu bestimmen. Wenn nicht angegeben, werden die Elemente in aufsteigender ASCII-Zeichen sortiert.  
   
-## Rückgabewert  
+## <a name="return-value"></a>Rückgabewert  
  Das sortierte Array.  
   
-## Hinweise  
- Die `sort`\-Methode sortiert innerhalb des `Array`\-Objekts. Während der Ausführung wird kein neues `Array`\-Objekt erstellt.  
+## <a name="remarks"></a>Hinweise  
+ Die `sort` -Methode sortiert die `Array` -Objekts; Nein neue `Array` -Objekt wird erstellt, während der Ausführung.  
   
- Wenn Sie eine Funktion im `sortFunction`\-Argument angeben, muss diese einen der folgenden Werte zurückgeben:  
+ Wenn Sie angeben, dass eine Funktion in der `sortFunction` Argument, es muss zurückgegeben werden die folgenden Werte:  
   
--   Einen negativen Wert, wenn das erste übergebene Argument kleiner als das zweite ist.  
+-   Ein negativer Wert, wenn das erste übergebene Argument ist kleiner als das zweite Argument ist.  
   
--   Null, wenn beide Argumente gleichwertig sind.  
+-   NULL, wenn die beiden Argumente sind gleichwertig.  
   
--   Einen positiven Wert, wenn das erste Argument größer als das zweite ist.  
+-   Ein positiver Wert, wenn das erste Argument größer als das zweite Argument ist.  
   
-## Beispiel  
- Im folgenden Beispiel wird die Verwendung der `sort`\-Methode gezeigt.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel wird die Verwendung der `sort`-Methode gezeigt.  
   
-```javascript  
+```JavaScript  
 var a = new Array(4, 11, 2, 10, 3, 1);  
   
 var b = a.sort();  
@@ -86,5 +87,5 @@ function CompareForSort(first, second)
 }  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]

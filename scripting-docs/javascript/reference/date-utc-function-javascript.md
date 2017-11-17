@@ -1,71 +1,73 @@
 ---
-title: "Date.UTC-Funktion (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "UTC"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "UTC-Funktion [JavaScript]"
-  - "UTC-Datumsangaben, Zurückgeben"
-  - "Date.UTC-Funktion [JavaScript]"
+title: Date.UTC-Funktion (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: UTC
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- UTC function [JavaScript]
+- UTC dates, returning
+- Date.UTC function [JavaScript]
 ms.assetid: c0d67ce1-a47e-4dfd-bbf4-21619c406a0f
-caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a6a7c5622b74699e3d718ceb65e96638bdb6c3c5
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Date.UTC-Funktion (JavaScript)
-Gibt die Anzahl von Millisekunden zwischen Mitternacht des 1. Januar 1970 UTC \(Universal Coordinated Time, koordinierte Weltzeit\) bzw. GMT und dem angegebenen Datum zurück.  
+# <a name="dateutc-function-javascript"></a>Date.UTC-Funktion (JavaScript)
+Gibt die Anzahl der Millisekunden zwischen Mitternacht des 1. Januar 1970, koordinierte Weltzeit (UTC) (oder GMT) und dem angegebenen Datum.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 Date.UTC(year, month, day[, hours[, minutes[, seconds[,ms]]]])   
 ```  
   
-## Parameter  
+## <a name="parameters"></a>Parameter  
  `year`  
- Erforderlich.  Die vollständige Jahresangabe ist für die Genauigkeit bei jahrhundertübergreifenden Datumsangaben erforderlich.  Wird für `year` ein Wert zwischen 0 und 99 verwendet, wird `year` als 1900 \+ `year` interpretiert.  
+ Erforderlich. Die vollständige Jahr Bezeichnung ist erforderlich für die übergreifende Jahrhunderts in Sachen Datum Genauigkeit. Wenn `year` liegt zwischen 0 und 99 verwendet wird, klicken Sie dann `year` wird davon ausgegangen, dass 1900 + `year`.  
   
  `month`  
- Erforderlich.  Der Monat als ganze Zahl zwischen 0 und 11 \(Januar bis Dezember\).  
+ Erforderlich. Der Monat als ganze Zahl zwischen 0 und 11 (Januar bis Dezember).  
   
  `day`  
- Erforderlich.  Das Datum als ganze Zahl zwischen 1 und 31.  
+ Erforderlich. Das Datum als ganze Zahl zwischen 1 und 31.  
   
  `hours`  
- Optional.  Muss angegeben werden, wenn `minutes` angegeben wird.  Eine ganze Zahl zwischen 0 und 23 \(Mitternacht bis 23 Uhr\), die die Stunde angibt.  
+ Dies ist optional. Muss angegeben werden, wenn auch `minutes` angegeben wird. Eine ganze Zahl zwischen 0 und 23 (Mitternacht bis 23 Uhr), die die Stunde angibt.  
   
  `minutes`  
- Optional.  Muss angegeben werden, wenn `seconds` angegeben wird.  Eine ganze Zahl zwischen 0 und 59, die die Minuten angibt.  
+ Dies ist optional. Muss angegeben werden, wenn auch `seconds` angegeben wird. Eine ganze Zahl zwischen 0 und 59, die die Minuten angibt.  
   
  `seconds`  
- Optional.  Muss angegeben werden, wenn `milliseconds` angegeben wird.  Eine ganze Zahl zwischen 0 und 59, die die Sekunden angibt.  
+ Dies ist optional. Muss angegeben werden, wenn auch `milliseconds` angegeben wird. Eine ganze Zahl zwischen 0 und 59, die die Sekunden angibt.  
   
  `ms`  
- Optional.  Eine ganze Zahl zwischen 0 und 999, die die Millisekunden angibt.  
+ Dies ist optional. Eine ganze Zahl zwischen 0 und 999, die die Millisekunden angibt.  
   
-## Hinweise  
- Die `Date.UTC`\-Funktion gibt die Anzahl der Millisekunden zwischen dem 1. Januar 1970, Mitternacht, und dem angegebenen Datum gemäß koordinierter Weltzeit \(Universal Coordinated Time, UTC\) zurück.  Dieser Rückgabewert kann in der `setTime`\-Methode und im `Date`\-Objektkonstruktor verwendet werden.  Ist der Wert eines Arguments größer als dessen Bereich bzw. eine negative Zahl, werden andere gespeicherte Werte entsprechend geändert.  Wenn Sie z. B. 150 Sekunden angeben, macht [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] daraus 2 Minuten und 30 Sekunden.  
+## <a name="remarks"></a>Hinweise  
+ Die `Date.UTC` Funktion gibt die Anzahl der Millisekunden zwischen Mitternacht, 1. Januar 1970 UTC und dem angegebenen Datum zurück. Dieser Rückgabewert kann verwendet werden, der `setTime` Methode und in der `Date` Objektkonstruktor. Wenn der Wert eines Arguments größer als dessen Bereich ist bzw. eine negative Zahl, werden andere gespeicherte Werte entsprechend geändert. Wenn Sie z. B. 150 Sekunden angeben, macht [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] daraus 2 Minuten und 30 Sekunden.  
   
- Der Unterschied zwischen der `Date.UTC`\-Funktion und dem `Date`\-Objektkonstruktor, der ein Datum akzeptiert, liegt darin, dass die `Date.UTC`\-Funktion von UTC und der `Date`\-Objektkonstruktor von der Ortszeit ausgeht.  
+ Der Unterschied zwischen der `Date.UTC` Funktion und die `Date` Objektkonstruktors, der ein Datum akzeptiert wird, die die `Date.UTC` Funktion davon ausgeht, UTC, und die `Date` Objektkonstruktor Ortszeit.  
   
-## Beispiel  
- Das folgende Beispiel veranschaulicht die Verwendung der `Date.UTC`\-Funktion.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel veranschaulicht die Verwendung der `Date.UTC`-Funktion.  
   
-```javascript  
+```JavaScript  
 // Determine the milliseconds per day.  
  var MinMilli = 1000 * 60;  
 var HrMilli = MinMilli * 60;  
@@ -92,8 +94,8 @@ document.write(days);
 // Output: 10848  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## Siehe auch  
- [setTime\-Methode \(Datum\)](../../javascript/reference/settime-method-date-javascript.md)
+## <a name="see-also"></a>Siehe auch  
+ [setTime-Methode (Datum)](../../javascript/reference/settime-method-date-javascript.md)

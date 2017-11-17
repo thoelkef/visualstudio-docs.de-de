@@ -1,43 +1,42 @@
 ---
-title: "IDiaEnumFrameData::Skip | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumFrameData::Skip-Methode"
+title: 'Idiaenumframedata:: Skip | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumFrameData::Skip method
 ms.assetid: 67140b4c-7125-4895-932d-42412326da29
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 3284b550d2c55780fa4cc840645113d5c48df09f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumFrameData::Skip
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Überspringt eine angegebene Anzahl von Rahmen datenelemente in der Enumerationsfolge.  
+# <a name="idiaenumframedataskip"></a>IDiaEnumFrameData::Skip
+Überspringt eine angegebene Anzahl von Datenelementen in einer Enumerationsfolge Frame.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT Skip (   
-   ULONG celt  
+```C++  
+HRESULT Skip (   
+   ULONG celt  
 );  
 ```  
   
-#### Parameter  
- Celt  
- \[in\]  Die Anzahl von Rahmen übersprungen werden sollen datenelementen in der Enumerationsfolge.  
+#### <a name="parameters"></a>Parameter  
+ celt  
+ [in] Die Anzahl von Datenelementen in die Enumerationsfolge zu überspringenden Frames.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. Andernfalls gibt `S_FALSE` zurück, wenn keine weiteren zu überspringen, Datensätze vorhanden sind.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` , wenn es keine weiteren Datensätze zu überspringen sind.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)

@@ -1,53 +1,53 @@
 ---
-title: "CA2220: Finalizer sollten Basisklassen-Finalizer aufrufen | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2220"
-  - "FinalizersShouldCallBaseClassFinalizer"
-helpviewer_keywords: 
-  - "CA2220"
-  - "FinalizersShouldCallBaseClassFinalizer"
+title: 'CA2220: Finalizer sollten Basisklassen-Finalizer aufrufen | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2220
+- FinalizersShouldCallBaseClassFinalizer
+helpviewer_keywords:
+- CA2220
+- FinalizersShouldCallBaseClassFinalizer
 ms.assetid: 48329f42-170d-45ee-a381-e33f55a240c5
-caps.latest.revision: 14
-caps.handback.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: aa5ed3329d4168a0781243a4faf021de3488e77c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CA2220: Finalizer sollten Basisklassen-Finalizer aufrufen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2220-finalizers-should-call-base-class-finalizer"></a>CA2220: Finalizer sollten Basisklassen-Finalizer aufrufen
 |||  
 |-|-|  
 |TypeName|FinalizersShouldCallBaseClassFinalizer|  
 |CheckId|CA2220|  
-|Kategorie \(Category\)|Microsoft.Usage|  
-|Unterbrechende Änderung|Nicht unterbrechend|  
+|Kategorie|Microsoft.Usage|  
+|Unterbrechende Änderung|Nicht unterbrechende Änderung|  
   
-## Ursache  
- Ein Typ, der <xref:System.Object.Finalize%2A?displayProperty=fullName> überschreibt, ruft die <xref:System.Object.Finalize%2A>\-Methode in seiner Basisklasse nicht auf.  
+## <a name="cause"></a>Ursache  
+ Ein Typ, der überschreibt <xref:System.Object.Finalize%2A?displayProperty=fullName> nicht aufgerufen, die <xref:System.Object.Finalize%2A> Methode in der Basisklasse.  
   
-## Regelbeschreibung  
- Der Abschluss muss durch die Vererbungshierarchie weitergegeben werden.  Um dies sicherzustellen, müssen die Typen die <xref:System.Object.Finalize%2A>\-Methode ihrer Basisklasse innerhalb ihrer eigenen <xref:System.Object.Finalize%2A>\-Methode aufrufen.  Der C\#\-Compiler fügt den Aufruf automatisch dem Basisklassenfinalizer hinzu.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Der Abschluss muss durch die Vererbungshierarchie weitergegeben werden. Um dies sicherzustellen, müssen die Typen aufrufen ihrer Basisklasse <xref:System.Object.Finalize%2A> Methode innerhalb ihrer eigenen <xref:System.Object.Finalize%2A> Methode. Der C#-Compiler fügt den Aufruf von den Basisklassen-Finalizer automatisch hinzu.  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, rufen Sie die <xref:System.Object.Finalize%2A>\-Methode des Basistyps in der <xref:System.Object.Finalize%2A>\-Methode auf.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Um einen Verstoß gegen diese Regel zu beheben, rufen Sie den Basistyp <xref:System.Object.Finalize%2A> Methode aus Ihrer <xref:System.Object.Finalize%2A> Methode.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Unterdrücken Sie keine Warnung dieser Regel.  Einige Compiler, die auf die Common Language Runtime abzielen, fügen in die Microsoft Intermediate Language \(MSIL\) einen Aufruf des Finalizers des Basistyps ein.  Wenn eine Warnung dieser Regel gemeldet wird, fügt der Compiler den Aufruf nicht ein, sodass Sie ihn in Ihren Code einfügen müssen.  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Unterdrücken Sie keine Warnung dieser Regel. Einige Compiler, die die common Language Runtime abzielen fügen Sie einen Aufruf der Basistyp Finalizer in Microsoft intermediate Language (MSIL). Wenn eine Warnung dieser Regel gemeldet wird, Compiler kein Aufruf eingefügt, und Sie müssen diese für Ihren Code hinzufügen.  
   
-## Beispiel  
- Das folgende Visual Basic\-Beispiel zeigt den Typ `TypeB`, durch den die <xref:System.Object.Finalize%2A>\-Methode in seiner Basisklasse ordnungsgemäß aufgerufen wird.  
+## <a name="example"></a>Beispiel  
+ Im folgende Visual Basic-Beispiel zeigt einen Typen `TypeB` ordnungsgemäß aufruft die <xref:System.Object.Finalize%2A> Methode in der Basisklasse.  
   
  [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../code-quality/codesnippet/VisualBasic/ca2220-finalizers-should-call-base-class-finalizer_1.vb)]  
   
-## Siehe auch  
- [Dispose\-Muster](../Topic/Dispose%20Pattern.md)
+## <a name="see-also"></a>Siehe auch  
+ [Dispose-Muster](/dotnet/standard/design-guidelines/dispose-pattern)

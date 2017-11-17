@@ -1,143 +1,144 @@
 ---
-title: "Troubleshooting Specific Errors in ClickOnce Deployments | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "Microsoft.VisualStudio.Publish.ClickOnceProvider.ErrorPrompt.UncRequired"
-  - "Microsoft.VisualStudio.Publish.ClickOnceProvider.ErrorPrompt.NoInstallUrl"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "deploying applications, ClickOnce"
-  - "troubleshooting ClickOnce deployments"
-  - "ClickOnce deployment, troubleshooting"
+title: Beheben von spezifischen Fehlern in ClickOnce-Bereitstellungen | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- Microsoft.VisualStudio.Publish.ClickOnceProvider.ErrorPrompt.UncRequired
+- Microsoft.VisualStudio.Publish.ClickOnceProvider.ErrorPrompt.NoInstallUrl
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- deploying applications, ClickOnce
+- troubleshooting ClickOnce deployments
+- ClickOnce deployment, troubleshooting
 ms.assetid: 22dfe8f1-8271-4708-9c25-6bbb13920ac8
-caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 40c679811f137e77909395042d91d0458c874d90
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Troubleshooting Specific Errors in ClickOnce Deployments
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-In diesem Thema werden die folgenden häufigen Fehler aufgelistet, die beim Bereitstellen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Anwendung auftreten können. Darüber hinaus werden Schritte zum Lösen der einzelnen Probleme beschrieben.  
+# <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>Beheben von spezifischen Fehlern in ClickOnce-Bereitstellungen
+Dieses Thema listet die folgenden allgemeinen Fehler, die auftreten können, während der Bereitstellung einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung, und beschreibt die Schritte, um jedes Problem zu beheben.  
   
-## Allgemeine Fehler  
+## <a name="general-errors"></a>Allgemeine Fehler  
   
-#### Wenn Sie eine APPLICATION\-Datei suchen, geschieht nichts, oder in Internet Explorer wird XML gerendert, oder das Dialogfeld Ausführen oder Speichern unter wird angezeigt.  
- Dieser Fehler wird wahrscheinlich durch Inhaltstypen \(auch als MIME\-Typen bekannt\) verursacht, die nicht richtig auf dem Server oder Client registriert werden.  
+#### <a name="when-you-try-to-locate-an-application-file-nothing-occurs-or-xml-renders-in-internet-explorer-or-you-receive-a-run-or-save-as-dialog-box"></a>Wenn Sie versuchen, eine Application-Datei zu finden, geschieht nichts, oder in Internet Explorer XML gerendert oder erhalten Sie ein Dialogfeld Ausführen oder Speichern unter  
+ Dieser Fehler wird wahrscheinlich durch nicht korrekt auf dem Server oder Client registriert Inhaltstypen (auch bekannt als MIME-Typen) verursacht.  
   
- Stellen Sie zunächst sicher, dass der Server so konfiguriert ist, dass dem Inhaltstyp "application\/x\-ms\-application" die Erweiterung .application zugeordnet wird.  
+ Stellen Sie zunächst sicher, dass der Server konfiguriert ist, um die Erweiterung .application Inhaltstyp "Application/X-ms-Application" zuzuordnen.  
   
- Stellen Sie bei ordnungsgemäßer Konfiguration des Servers sicher, dass [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] auf dem Computer installiert ist.  Wenn [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] installiert ist und das Problem weiterhin auftritt, versuchen Sie es mit einer Deinstallation und anschließenden Neuinstallation von [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]. Dadurch wird der Inhaltstyp auf dem Client neu registriert.  
+ Wenn der Server ordnungsgemäß konfiguriert ist, stellen Sie sicher, dass die [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] auf Ihrem Computer installiert ist. Wenn die [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] installiert ist, und Sie werden weiterhin angezeigt wird dieses Problem deinstallieren und Neuinstallieren von der [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] den Inhaltstyp auf dem Client erneut zu registrieren.  
   
-#### In der Fehlermeldung wird angegeben, dass die Anwendungsdateien nicht abgerufen werden konnten,da die Bereitstellungsdateien fehlen oder der Anwendungsdownload unterbrochen wurde. Sie werden aufgefordert, auf Netzwerkfehler zu überprüfen und es später erneut zu versuchen.  
- Diese Meldung bedeutet, dass eine oder mehrere Dateien, auf die in den [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Manifesten verwiesen wird, nicht heruntergeladen werden können.  Versuchen Sie zur Behebung dieses Fehlers, die URL herunterzuladen, die von [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nicht heruntergeladen werden kann.  Mögliche Ursachen:  
+#### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>Fehlermeldung lautet: "kann nicht zum Abrufen der Anwendung. Dateien fehlt in der Bereitstellung"oder"Anwendungsdownloads wurde unterbrochen, überprüfen Sie Netzwerkfehler und versuchen Sie es später"  
+ Diese Meldung gibt an, dass eine oder mehrere Dateien, die darauf verweist die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Manifeste können nicht heruntergeladen werden. Die einfachste Möglichkeit zum Debuggen dieses Fehlers ist die URL übertragen, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] heruntergeladen werden kann. Hier sind einige möglichen Ursachen:  
   
--   Wenn die Protokolldatei den Fehler "403 \(Verboten\)" oder "404 \(Nicht gefunden\)" enthält, stellen Sie sicher, dass die Konfiguration des Webservers das Herunterladen dieser Datei zulässt.  Weitere Informationen finden Sie unter [Server and Client Configuration Issues in ClickOnce Deployments](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
+-   Wenn die Protokolldatei "(403) unzulässig" den Text oder "(404) nicht gefunden," Überprüfen Sie, ob der Webserver ist so konfiguriert, dass es Herunterladen dieser Datei nicht blockiert. Weitere Informationen finden Sie unter [Probleme mit der Server- und Clientkonfiguration in ClickOnce-Bereitstellungen](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
   
--   Wenn die CONFIG\-Datei vom Server blockiert wird, finden Sie weiter unten in diesem Thema im Abschnitt "Downloadfehler beim Versuch, eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Anwendung mit einer CONFIG\-Datei zu installieren" weitere Informationen.  
+-   Wenn Sie die config-Datei vom Server blockiert wird, finden Sie im Abschnitt "Fehler herunterladen, wenn Sie versuchen, installieren eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung mit einer .config-Datei" weiter unten in diesem Thema.  
   
--   Bestimmen Sie, ob der Fehler aufgetreten ist, weil die `deploymentProvider`\-URL im Bereitstellungsmanifest auf einen anderen Speicherort zeigt als die für die Aktivierung verwendete URL.  
+-   Bestimmen, ob dies aufgetreten ist, da die `deploymentProvider` URL im Bereitstellungsmanifest verweist auf einen anderen Speicherort als die URL für die Aktivierung verwendet.  
   
--   Überprüfen Sie das [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Protokoll auf fehlende Dateien, und stellen Sie sicher, dass alle Dateien auf dem Server vorhanden sind.  
+-   Stellen Sie sicher, dass alle Dateien auf dem Server vorhanden sind; die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Protokoll sollte Aufschluss darüber, welche Datei nicht gefunden wurde.  
   
--   Überprüfen Sie, ob Netzwerkverbindungsfehler aufgetreten sind. Diese Fehler können darauf zurückzuführen sein, dass die Verbindung während des Downloads vom Clientcomputer getrennt wurde.  
+-   Sehen Sie, ob Probleme mit der Netzwerkkonnektivität vorhanden sind; Diese Meldung kann angezeigt werden, wenn Ihre Clientcomputer während des Downloads offline geschaltet.  
   
-#### Downloadfehler beim Versuch, eine ClickOnce\-Anwendung mit einer CONFIG\-Datei zu installieren  
- Eine Visual Basic\-Anwendung für Windows enthält standardmäßig die Datei App.config.  Wenn ein Benutzer versucht, eine Installation von einem Webserver auszuführen, auf dem Windows Server 2003 ausgeführt wird, tritt ein Problem auf, da dieses Betriebssystem die Installation von CONFIG\-Dateien aus Sicherheitsgründen blockiert.  Damit die CONFIG\-Datei installiert werden kann, klicken Sie im Dialogfeld **Veröffentlichungsoptionen** auf **Dateierweiterung ".deploy" verwenden**.  
+#### <a name="download-error-when-you-try-to-install-a-clickonce-application-that-has-a-config-file"></a>Herunterladen Sie Fehler, wenn Sie versuchen, eine ClickOnce-Anwendung zu installieren, die eine config-Datei  
+ Standardmäßig enthält eine Visual Basic-Windows-basierte Anwendung eine Datei "App.config". Wenn ein Benutzer versucht, die von einem Webserver, der mithilfe von Windows Server 2003 installiert werden, da das Betriebssystem die Installation der config-Dateien aus Sicherheitsgründen blockiert werden ein Problem vor. Damit kann die config-Datei installiert werden, klicken Sie auf **Dateierweiterung ".deploy" verwenden** in der **Veröffentlichungsoptionen** (Dialogfeld).  
   
- Sie müssen auch für Dateien mit den Erweiterungen .application, .manifest und .deploy die entsprechenden Inhaltstypen \(auch als MIME\-Typen bekannt\) festlegen.  Weitere Informationen finden Sie in der Webserverdokumentation.  
+ Sie müssen die Inhaltstypen (auch bekannt als MIME-Typen) auch für .application, Manifest und Dateien ".deploy" entsprechend festlegen. Weitere Informationen finden Sie in der Dokumentation zu Ihrem Webserver.  
   
- Weitere Informationen finden Sie unter "Windows Server 2003: Gesperrte Inhaltstypen" in [Server and Client Configuration Issues in ClickOnce Deployments](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
+ Weitere Informationen finden Sie unter "Windows Server 2003: Gesperrte Inhaltstypen" im [Server- und Client-Konfigurationsprobleme in ClickOnce-Bereitstellungen](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
   
-#### Fehlermeldung: "Anwendung ist nicht korrekt formatiert" wird ausgegeben, und die Protokolldatei enthält den Eintrag "XML signature is invalid".  
- Stellen Sie sicher, dass Sie die Manifestdatei aktualisiert und neu signiert haben.  Veröffentlichen Sie die Anwendung erneut mit Hilfe von [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], oder verwenden Sie MAGE, um die Anwendung neu zu signieren.  
+#### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>Fehlermeldung: "Der Anwendung ist nicht ordnungsgemäß formatiert." Protokolldatei enthält "XML-Signatur ist ungültig."  
+ Stellen Sie sicher, dass Sie die Manifestdatei aktualisiert und erneut signiert. Veröffentlichen Sie die Anwendung mit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oder verwenden Sie Mage zum Signieren der Anwendung erneut aus.  
   
-#### Die Anwendung wurde auf dem Server aktualisiert, das Update wird jedoch vom Client nicht heruntergeladen.  
- Dieses Problem kann eventuell gelöst werden, indem Sie eine der folgenden Aufgaben ausführen:  
+#### <a name="you-updated-your-application-on-the-server-but-the-client-does-not-download-the-update"></a>Die Anwendung auf dem Server aktualisiert, aber der Client wird das Update nicht heruntergeladen  
+ Dieses Problem möglicherweise gelöst werden, indem Sie eines der folgenden Aufgaben:  
   
--   Überprüfen Sie die `deploymentProvider`\-URL im Bereitstellungsmanifest.  Stellen Sie sicher, dass Sie die Daten am gleichen Speicherort aktualisieren, auf den `deploymentProvider` zeigt.  
+-   Überprüfen Sie die `deploymentProvider` URL im Bereitstellungsmanifest. Stellen Sie sicher, dass Sie die Bits am gleichen Speicherort aktualisiert werden, die `deploymentProvider` verweist auf.  
   
--   Überprüfen Sie das Updateintervall im Bereitstellungsmanifest.  Wenn es sich um ein periodisches Intervall handelt, z. B. alle sechs Stunden, überprüft [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vor Ablauf dieser Zeit nicht auf Updates.  Sie können das Manifest ändern, sodass bei jedem Anwendungsstart auf Updates überprüft wird.  Das Ändern des Updateintervalls eignet sich als Option für die Entwicklungszeit, um die Installation von Updates sicherzustellen, beeinträchtigt jedoch die Anwendungsaktivierung.  
+-   Überprüfen Sie das Updateintervall im Bereitstellungsmanifest. Wenn dieses Intervall auf einem regelmäßigen Intervall aus, z. B. einmal alle sechs Stunden festgelegt ist [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wird nicht für ein Update überprüft, bis dieses Intervall verstrichen ist. Sie können ändern, das Manifest, um ein Update jedes Mal überprüft, die die Anwendung gestartet wird. Ändern das Updateintervall ist eine praktische Möglichkeit während der Entwicklungszeit Updates installiert sind, aber er verlangsamt anwendungsaktivierung überprüfen.  
   
--   Versuchen Sie, die Anwendung über das Menü "Start" neu zu starten.  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] hat das Update möglicherweise im Hintergrund erkannt, fordert Sie jedoch erst bei der nächsten Aktivierung zum Installieren der Daten auf.  
+-   Wiederholen Sie dann die Anwendung im Startmenü erneut zu starten. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]hat das Update möglicherweise im Hintergrund erkannt, jedoch werden Sie aufgefordert, die Bits auf die nächste Aktivierung zu installieren.  
   
-#### Während des Updates tritt ein Fehler mit folgendem Protokolleintrag auf: "Der Verweis in der Bereitstellung stimmt nicht mit der im Anwendungsmanifest definierten Identität überein."  
- Möglicherweise tritt dieser Fehler auf, weil Sie das Bereitstellungs\- und Anwendungsmanifest manuell bearbeitet haben, und dies hat dazu geführt, dass die Beschreibung der Identität einer Assembly in einem Manifest nicht mehr mit der entsprechenden Beschreibung in dem anderen Manifest synchron ist.  Die Identität einer Assembly besteht aus ihrem Namen, ihrer Version, ihrer Kultur und ihrem Token des öffentlichen Schlüssels.  Untersuchen Sie die Identitätsbeschreibungen in den Manifesten, und beseitigen Sie ggf. Abweichungen.  
+#### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>Während der Aktualisierung tritt einen Fehler mit dem folgenden Protokolleintrag: "der Verweis in der Bereitstellung entspricht nicht die Identität, die im Manifest Anwendung definiert"  
+ Dieser Fehler kann auftreten, da Sie die bereitstellungs- und Anwendungsmanifeste manuell bearbeitet haben, und die Beschreibung der Identität einer Assembly in einem Manifest synchron mit den anderen sind verursacht haben. Die Identität einer Assembly, besteht der Name, Version, Kultur und öffentliches Schlüsseltoken ab. Überprüfen Sie die Identität Beschreibungen in den Manifesten, und beheben Sie etwaige Unterschiede.  
   
-#### Die erste Aktivierung von einer lokalen Festplatte oder CD\-ROM ist erfolgreich, jede weitere Aktivierung über das Startmenü schlägt jedoch fehl.  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] verwendet die Deployment Provider\-URL, um Updates für die Anwendung abzurufen.  Stellen Sie sicher, dass die URL auf den richtigen Speicherort zeigt.  
+#### <a name="first-time-activation-from-local-disk-or-cd-rom-succeeds-but-subsequent-activation-from-start-menu-does-not-succeed"></a>Erstmaligen Aktivierung von lokalen Datenträger oder CD-ROM ist erfolgreich, aber nachfolgende Aktivierung aus dem Startmenü nicht erfolgreich ist  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]verwendet die Bereitstellungsanbieter-URL zum Empfangen von Updates für die Anwendung an. Stellen Sie sicher, dass der Speicherort, dem die URL verweist richtig ist.  
   
-#### Fehler: "Die Anwendung kann nicht gestartet werden."  
- Diese Fehlermeldung gibt normalerweise an, dass bei der Installation der Anwendung im [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Speicher ein Problem aufgetreten ist.  Entweder liegt ein Fehler in der Anwendung vor, oder der Speicher ist beschädigt.  Möglicherweise wird in der Protokolldatei angegeben, wo der Fehler aufgetreten ist.  
+#### <a name="error-cannot-start-the-application"></a>Fehler: "kann nicht die Anwendung gestartet."  
+ Diese Fehlermeldung gibt normalerweise an, dass es liegt ein Problem mit dem Installieren dieser Anwendung in der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zu speichern. Entweder die Anwendung einen Fehler aufweist, oder der Speicher ist beschädigt. Die Protokolldatei möglicherweise Aufschluss darüber, wo der Fehler aufgetreten ist.  
   
- Gehen Sie wie folgt vor:  
+ Sie sollten die folgenden Schritte ausführen:  
   
--   Stellen Sie sicher, dass die Identität des Bereitstellungsmanifests, des Anwendungsmanifests und der Hauptanwendungsdatei \(EXE\-Datei\) eindeutig ist.  
+-   Stellen Sie sicher, dass die Identität des Bereitstellungsmanifests, die Identität des Anwendungsmanifests und die Identität der EXE-Datei der Anwendung alle eindeutig sind.  
   
--   Stellen Sie sicher, dass die Dateipfade nicht länger als 100 Zeichen sind.  Wenn die Anwendung Dateipfade enthält, die zu lang sind, überschreiten Sie möglicherweise die Längenbegrenzung für zu speichernde Pfade.  Verringern Sie die Pfadlänge, und wiederholen Sie die Installation.  
+-   Stellen Sie sicher, dass die Dateipfade nicht länger als 100 Zeichen sind. Wenn Ihre Anwendung Dateipfade enthält, die zu lang sind, können Sie die Einschränkungen für die maximale Pfadlänge überschreiten, gespeichert werden können. Verkürzen Sie die Pfade, und installieren.  
   
-#### PrivatePath\-Einstellungen in der CONFIG\-Datei der Anwendung werden nicht berücksichtigt.  
- Um PrivatePath \(Fusionsüberprüfungspfade\) zu verwenden, muss die Anwendung volle Vertrauenswürdigkeit anfordern.  Ändern Sie das Anwendungsmanifest, sodass volle Vertrauenswürdigkeit angefordert wird, und wiederholen Sie den Vorgang.  
+#### <a name="privatepath-settings-in-application-config-file-are-not-honored"></a>PrivatePath-Einstellungen in der Konfigurationsdatei der Anwendung werden nicht berücksichtigt.  
+ Um PrivatePath (Prüfpfade Fusion) zu verwenden, muss die Anwendung volle Vertrauenswürdigkeit anfordern. Versuchen Sie, das Anwendungsmanifest, um die volle Vertrauenswürdigkeit anfordern, und wiederholen Sie den Vorgang zu ändern.  
   
-#### Während der Deinstallation wird in einer Meldung angezeigt, dass die Anwendung nicht deinstalliert werden konnte.  
- Diese Meldung bedeutet i. d. R., dass die Anwendung bereits entfernt wurde oder der Speicher beschädigt ist.  Nachdem Sie auf **OK** geklickt haben, wird der Eintrag für die Anwendung im Dialogfeld **Software** entfernt.  
+#### <a name="during-uninstall-a-message-appears-saying-failed-to-uninstall-application"></a>Während der Deinstallation eine Meldung angezeigt, dass "Fehler beim Deinstallieren der Anwendung"  
+ Diese Meldung gibt normalerweise an, dass die Anwendung bereits entfernt wurde oder der Speicher ist beschädigt. Nachdem Sie auf **OK**, **Systemsteuerungsoption** Eintrag wird entfernt.  
   
-#### Während der Installation wird die Meldung angezeigt, dass die Plattformabhängigkeiten nicht installiert sind.  
- Im GAC \(Global Assembly Cache\) fehlt eine zur Ausführung der Anwendung erforderliche Komponente.  
+#### <a name="during-installation-a-message-appears-that-says-that-the-platform-dependencies-are-not-installed"></a>Während der Installation wird eine Meldung angezeigt, die besagt, dass die plattformabhängigkeiten nicht installiert werden  
+ Sie sind eine Voraussetzung im globalen Assemblycache (global Assemblycache) fehlt, die die Anwendung ausführen erforderliches Sitzungsverzeichnis.  
   
-## Veröffentlichen mit Visual Studio  
+## <a name="publishing-with-visual-studio"></a>Veröffentlichen mit Visual Studio  
   
-#### Die Veröffentlichung in Visual Studio schlägt fehl  
- Stellen Sie sicher, dass Sie über die Berechtigung verfügen, auf dem Zielserver zu veröffentlichen.  Wenn Sie beispielsweise an einem Terminalservercomputer nicht als Administrator, sondern als normaler Benutzer angemeldet sind, haben Sie vermutlich keine Berechtigung, auf dem lokalen Webserver zu veröffentlichen.  
+#### <a name="publishing-in-visual-studio-fails"></a>Veröffentlichung in Visual Studio schlägt fehl  
+ Stellen Sie sicher, dass Sie das Recht zum Veröffentlichen auf dem Server verfügen, die das Ziel. Z. B. Wenn Sie bei einer terminal Server-Computer als normaler Benutzer, nicht als Administrator angemeldet sind müssen wahrscheinlich nicht die erforderlichen Benutzerrechten zum Veröffentlichen auf dem lokalen Webserver Sie.  
   
- Wenn Sie mit einer URL veröffentlichen, stellen Sie sicher, dass auf dem Zielcomputer FrontPage\-Servererweiterungen aktiviert sind.  
+ Wenn Sie mit einer URL veröffentlichen, stellen Sie sicher, dass der Zielcomputer die FrontPage-Servererweiterungen aktiviert wurde.  
   
-#### Fehlermeldung: Die Website '\<Site\>' kann nicht erstellt werden.Die Komponenten zur Kommunikation mit den FrontPage\-Servererweiterungen sind nicht installiert.  
- Vergewissern Sie sich, dass auf dem Computer, von dem aus Sie veröffentlichen, Microsoft Visual Studio Web Authoring Component installiert ist.  Unter Express wird diese Komponente in der Standardeinstellung nicht installiert.  Weitere Informationen finden Sie unter [http:\/\/go.microsoft.com\/fwlink\/?LinkId\=102310](http://go.microsoft.com/fwlink/?LinkId=102310).  
+#### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Fehlermeldung: Kann nicht zum Erstellen der Website "\<Site >". Die Komponenten für die Kommunikation mit FrontPage-Servererweiterungen sind nicht installiert.  
+ Stellen Sie sicher, dass Sie die Microsoft Visual Studio Web Authoring-Komponente auf dem Computer, dem Sie veröffentlichen aus installiert haben. Für Express-Benutzer wird diese Komponente nicht standardmäßig installiert. Weitere Informationen finden Sie unter [http://go.microsoft.com/fwlink/?LinkId=102310](http://go.microsoft.com/fwlink/?LinkId=102310).  
   
-#### Fehlermeldung: Die Datei „Microsoft.Windows.Common\-Controls, Version\= 6.0.0.0, Culture\=\*, PublicKeyToken\=6595b64144ccf1df, ProcessorArchitecture\=\*, Type\=win32“ wurde nicht gefunden  
- Diese Fehlermeldung wird ausgegeben, wenn Sie versuchen, eine WPF\-Anwendung mit aktivierten visuellen Stilen zu veröffentlichen.  Zum Beheben dieses Problems finden Sie unter [How to: Publish a WPF Application with Visual Styles Enabled](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).  
+#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Fehlermeldung: Die Datei nicht gefunden "Microsoft.Windows.Common-Steuerelemente, Version 6.0.0.0, Culture = = *, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture =\*, Typ = win32"  
+ Diese Fehlermeldung wird angezeigt, wenn Sie versuchen, eine WPF-Anwendung mit aktivierten visuellen Stilen zu veröffentlichen. Um dieses Problem zu beheben, finden Sie unter [Vorgehensweise: Veröffentlichen einer WPF-Anwendung mit visuelle Stile aktiviert](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).  
   
-## Verwenden von MAGE  
+## <a name="using-mage"></a>Verwenden von Mage  
   
-#### Beim Versuch, mit einem Zertifikat aus dem Zertifikatspeicher zu signieren, wird ein leeres Meldungsfeld ausgegeben.  
- Führen Sie im Dialogfeld **Signierung** die folgenden Schritte aus:  
+#### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>Sie haben versucht, sich mit einem Zertifikat in Ihrem Zertifikatspeicher und eine leere Meldung  
+ In der **Signierung** (Dialogfeld), müssen Sie:  
   
--   Wählen Sie **Mit gespeichertem Zertifikat signieren** aus.  
+-   Wählen Sie **mit gespeichertem Zertifikat signieren**, und  
   
--   Wählen Sie ein Zertifikat aus der Liste aus. Das erste Zertifikat ist nicht die Standardauswahl.  
+-   Wählen Sie ein Zertifikat aus der Liste aus. das erste Zertifikat ist nicht die Standardauswahl.  
   
-#### Wenn Sie das Signieren abbrechen, tritt eine Ausnahme auf.  
- Dies ist ein bekanntes Problem.  Alle [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Manifeste müssen signiert werden.  Wählen Sie einfach eine der Signierungsoptionen aus, und klicken Sie auf **OK**.  
+#### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>Klicken auf die Schaltfläche "Signieren" bewirkt, dass eine Ausnahme  
+ Dieses Problem ist ein bekanntes Problem. Alle [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] -Manifeste signiert werden müssen. Wählen Sie einfach eine der Optionen signieren, und klicken Sie dann auf **OK**.  
   
-## Weitere Fehler  
- Die folgende Tabelle enthält einige häufige Fehlermeldungen, die ein Benutzer bei der Installation einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Anwendung auf dem Clientcomputer erhalten kann.  Neben jeder Fehlermeldung wird eine Beschreibung mit der wahrscheinlichen Fehlerursache aufgelistet.  
+## <a name="additional-errors"></a>Weitere Fehler  
+ Die folgende Tabelle zeigt einige allgemeine Fehlermeldungen, die ein Client-Computerbenutzer erhalten kann, wenn der Benutzer installiert eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung. Jede Fehlermeldung ist neben einer Beschreibung, der die wahrscheinlichste Ursache für den Fehler aufgeführt.  
   
 |Fehlermeldung|Beschreibung|  
-|-------------------|------------------|  
-|Die Anwendung kann nicht gestartet werden.  Wenden Sie sich an den Herausgeber der Anwendung.<br /><br /> Die Anwendung kann nicht gestartet werden.  Wenden Sie sich an den Hersteller der Anwendung, um Unterstützung zu erhalten.|Hierbei handelt es sich um generische Fehlermeldungen, die ausgegeben werden, wenn die Anwendung nicht gestartet werden kann und keine weitere Ursache gefunden wird.  Häufig bedeutet dies, dass die Anwendung in irgendeiner Weise beschädigt ist bzw. dass der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Speicher defekt ist.|  
-|Vorgang kann nicht fortgesetzt werden.  Die Anwendung ist nicht ordnungsgemäß formatiert.  Wenden Sie sich an den Herausgeber der Anwendung, um Unterstützung zu erhalten.<br /><br /> Fehler bei der Validierung der Anwendung.  Der Vorgang kann nicht fortgesetzt werden.<br /><br /> Anwendungsdateien können nicht abgerufen werden.  Die Dateien in der Bereitstellung sind beschädigt.|Eine der Manifestdateien in der Bereitstellung enthält eine ungültige Syntax oder einen Hash, die bzw. der mit der entsprechenden Datei nicht abgestimmt werden kann.  Dieser Fehler kann auch darauf hinweisen, dass das in einer Assembly eingebettete Manifest beschädigt ist.  Erstellen Sie die Bereitstellung neu, und kompilieren Sie die Anwendung erneut, oder suchen Sie die Fehler in den Manifesten, und beheben Sie sie manuell.|  
-|Anwendung kann nicht abgerufen werden.  Authentifizierungsfehler.<br /><br /> Die Anwendung konnte nicht installiert werden.  Die Anwendungsdateien wurden auf dem Server nicht gefunden.  Wenden Sie sich an den Herausgeber der Anwendung oder den Administrator, um Unterstützung zu erhalten.|Mindestens eine Datei in der Bereitstellung kann nicht heruntergeladen werden, da Sie keine Zugriffsberechtigung besitzen.  Die Ursache kann ein vom Webserver zurückgegebener Fehler 403 \(Unzulässig\) sein, der u. U. ausgegeben wird, wenn eine der Dateien in der Bereitstellung über eine Dateinamenerweiterung verfügt, durch die sie vom Webserver als geschützte Datei eingestuft wird.  Außerdem kann für den Zugriff auf ein Verzeichnis, in dem eine oder mehrere Anwendungsdateien enthalten sind, ein Benutzername und Kennwort erforderlich sein.|  
-|Die Anwendung kann nicht heruntergeladen werden.  Der Anwendung fehlen erforderliche Dateien.  Wenden Sie sich an den Hersteller der Anwendung oder den Systemadministrator, um Unterstützung zu erhalten.|Mindestens eine der im Anwendungsmanifest aufgelisteten Dateien kann nicht auf dem Server gefunden werden.  Überprüfen Sie, ob Sie alle abhängigen Dateien der Bereitstellung hochgeladen haben, und wiederholen Sie den Vorgang.|  
-|Die Anwendung konnte nicht heruntergeladen werden.  Überprüfen Sie die Netzwerkverbindung, oder wenden Sie sich an den Systemadministrator oder Netzwerk\-Dienstanbieter.|[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] kann keine Netzwerkverbindung zum Server herstellen.  Überprüfen Sie die Verfügbarkeit des Servers und den Netzwerkzustand.|  
-|URLDownloadToCacheFile\-Fehler mit HRESULT' '\<number\>'.  Beim Download von '\<file\>' ist ein Fehler aufgetreten.|Wenn auf dem Bereitstellungszielcomputer die erweiterte Sicherheitseinstellung im Internet Explorer  auf "Beim Wechsel zwischen sicherem und nicht sicherem Modus warnen" eingestellt ist und wenn die Setup\-URL der zu installierenden ClickOnce\-Anwendung von einer nicht sicheren zu einer sichern Site \(oder umgekehrt\) umgeleitet wird, tritt bei der Installation ein Fehler auf, da sie von der Warnmeldung des Internet Explorers unterbrochen wird.<br /><br /> Zum Vermeiden dieser Warnung bestehen folgende Möglichkeiten:<br /><br /> -   Deaktivieren Sie die Sicherheitsoption.<br />-   Stellen Sie sicher, dass beim Umleiten der Setup\-URL nicht die Sicherheitsmodi geändert werden.<br />-   Entfernen Sie die Umleitung völlig, und verweisen Sie auf die tatsächliche Setup\-URL.|  
-|Beim Schreiben auf die Festplatte ist ein Fehler aufgetreten.  Möglicherweise ist nicht genügend Speicherplatz auf dem Datenträger verfügbar.  Wenden Sie sich an den Hersteller der Anwendung oder den Systemadministrator, um Unterstützung zu erhalten.|Dies kann bedeuten, dass nicht genügend Festplattenspeicher zum Speichern der Anwendung verfügbar ist. Es kann jedoch auch ein allgemeiner E\/A\-Fehler vorliegen, der beim Speichern der Anwendungsdateien auf dem Laufwerk auftritt.|  
-|Die Anwendung kann nicht gestartet werden.  Nicht genügend Speicherplatz auf dem Datenträger vorhanden.|Die Festplatte ist voll.  Geben Sie Speicherplatz frei, und versuchen Sie erneut, die Anwendung auszuführen.|  
-|Es wird versucht, zu viele bereitgestellte Aktivierungen gleichzeitig zu laden.|Unter [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ist die Anzahl unterschiedlicher Anwendungen, die gleichzeitig gestartet werden können, eingeschränkt.  Hierdurch sollen hauptsächlich böswillige Denial\-of\-Service\-Angriffe auf den lokalen [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Dienst verhindert werden. Benutzer, die versuchen, dieselbe Anwendung mehrmals kurz hintereinander zu starten, erhalten immer nur eine einzige Instanz der Anwendung.|  
-|Verknüpfungen können nicht über das Netzwerk aktiviert werden.|Verknüpfungen mit einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Anwendung können nur über die lokale Festplatte gestartet werden.  Sie können nicht gestartet werden, indem Sie eine URL öffnen, die auf eine Verknüpfungsdatei auf einem Remoteserver verweist.|  
-|Die Anwendung ist zu groß für die Onlineausführung mit teilweiser Vertrauenswürdigkeit.  Wenden Sie sich an den Hersteller der Anwendung oder den Systemadministrator, um Unterstützung zu erhalten.|Die Größe einer mit teilweiser Vertrauenswürdigkeit ausgeführten Anwendung darf 50 % des Kontingents für Onlineanwendungen \(standardmäßig 250 MB\) nicht überschreiten.|  
+|-------------------|-----------------|  
+|Anwendung kann nicht gestartet werden. Wenden Sie sich an den Herausgeber der Anwendung.<br /><br /> Die Anwendung kann nicht gestartet werden. Wenden Sie sich an den Anwendungshersteller, um Unterstützung zu erhalten.|Hierbei handelt es sich um generische Fehlermeldungen, die auftreten, wenn die Anwendung kann nicht gestartet werden und keine weitere Ursache gefunden werden kann. Häufig bedeutet dies, dass die Anwendung aus irgendeinem Grund beschädigt ist oder dass die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Speicher ist beschädigt.|  
+|Kann nicht fortgesetzt werden. Die Anwendung ist falsch formatiert. Wenden Sie sich an den Herausgeber der Anwendung, um Unterstützung zu erhalten.<br /><br /> Validierung der Anwendung war nicht erfolgreich. Kann nicht fortgesetzt werden.<br /><br /> Fehler beim Abrufen der Anwendungsdateien. Dateien in der Bereitstellung beschädigt.|Einer der in der Bereitstellung die Manifestdateien jedoch Abfragesyntax ist ungültig oder enthält einen Hash, der mit der entsprechenden Datei abgestimmt werden kann. Dieser Fehler kann auch angeben, das in einer Assembly eingebettete Manifest beschädigt ist. Neuerstellen der Bereitstellung und die Anwendung neu kompilieren oder suchen und beheben Sie die Fehler manuell in den Manifesten.|  
+|Anwendung kann nicht abgerufen werden. Authentifizierungsfehler.<br /><br /> Schlägt die Installation war nicht erfolgreich. Anwendungsdateien auf dem Server wurde nicht gefunden. Wenden Sie sich an den Herausgeber der Anwendung oder an Ihren Administrator, um Unterstützung zu erhalten.|Eine oder mehrere Dateien in der Bereitstellung können nicht heruntergeladen werden, da Sie nicht für den Zugriff berechtigt sind. Dies kann verursacht werden, von einem 403 Forbidden-Fehler zurückgegeben wird, von einem Webserver, die auftreten können, wenn eine der Dateien in Ihrer Bereitstellung mit der Erweiterung endet, die der Web-Server als eine geschützte Datei behandelt wird. Außerdem kann ein Verzeichnis, das eine oder mehrere Dateien der Anwendung enthält einen Benutzernamen und ein Kennwort erfordern, Zugriff auf.|  
+|Die Anwendung kann nicht heruntergeladen werden. Die Anwendung fehlen die erforderlichen Dateien. Wenden Sie sich an den Hersteller der Anwendung oder sich an den Systemadministrator, um Unterstützung zu erhalten.|Eine oder mehrere der im Anwendungsmanifest aufgelisteten Dateien kann nicht auf dem Server gefunden werden. Stellen Sie sicher, dass Sie alle abhängigen Bereitstellungsdateien hochgeladen haben, und wiederholen Sie den Vorgang.|  
+|Herunterladen der Anwendung war nicht erfolgreich. Überprüfen Sie Ihre Netzwerkverbindung, oder wenden Sie sich an Ihren Systemadministrator oder den Netzwerkdienstanbieter.|[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]eine Netzwerkverbindung mit dem Server kann nicht erstellt werden. Überprüfen Sie die Verfügbarkeit des Servers und der Status des Netzwerks.|  
+|URLDownloadToCacheFile mit HRESULT-Fehler "\<Anzahl >". Fehler beim Herunterladen "\<Datei >".|Wenn ein Benutzer Erweiterte Sicherheitskonfiguration für Internet Explorer-Option festgelegt hat "Warnen, wenn zwischen sicherem und nicht sicheren Modus" auf dem Zielcomputer für die Bereitstellung und die Setup-URL der ClickOnce-Anwendung installiert wird, eines sicheren Standorts aus einer nicht sicheren umgeleitet wird (oder umgekehrt), schlägt die Installation fehl, da die Internet Explorer-Warnung er unterbricht.<br /><br /> Zum Beheben dieses Problems können Sie eine der folgenden Aktionen ausführen:<br /><br /> -Deaktivieren Sie die Sicherheitsoption.<br />-Stellen Sie sicher, dass die Setup-URL nicht so umgeleitet wird, die von Sicherheitsmodi ändert.<br />-Entfernen Sie die Umleitung vollständig, und zeigen Sie auf die tatsächliche Setup-URL.|  
+|Das Schreiben in die Festplatte Fehler. Es gibt möglicherweise nicht genügend Speicherplatz verfügbar auf dem Datenträger. Wenden Sie sich an den Hersteller der Anwendung oder sich an den Systemadministrator, um Unterstützung zu erhalten.|Dies kann darauf hindeuten, nicht genügend Speicherplatz zum Speichern von der Anwendung, aber einen Weitere allgemeinen e/a-Fehler können auch angeben, wenn Sie die Anwendungsdateien auf dem Laufwerk speichern möchten.|  
+|Die Anwendung kann nicht gestartet werden. Es ist nicht genügend Speicherplatz auf dem Datenträger.|Die Festplatte ist voll. Sie Speicherplatz frei, und führen Sie die Anwendung erneut aus.|  
+|Zu viele bereitgestellte Aktivierungen versuchen, gleichzeitig geladen werden.|[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Schränkt die Anzahl von anderen Anwendungen, die zur selben Zeit gestartet werden kann. Dies wird hauptsächlich zum Schutz vor böswilligen Versuche sollen Denial-of-Service-Angriffe auf den lokalen [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Service; Benutzer, die versuchen, dieselbe Anwendung wiederholt in rascher zu starten, wird nur am Ende einer einzelnen Instanz von der die Anwendung.|  
+|Verknüpfungen können nicht über das Netzwerk aktiviert werden.|Verknüpfungen zu einem [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung nur auf der lokalen Festplatte gestartet werden kann. Sie können nicht gestartet werden, öffnen Sie eine URL, die auf eine Verknüpfungsdatei auf einem Remoteserver verweist.|  
+|Die Anwendung ist zu groß, um Sie online unter teilweiser Vertrauenswürdigkeit ausführen. Wenden Sie sich an den Hersteller der Anwendung oder sich an den Systemadministrator, um Unterstützung zu erhalten.|Größer als die Hälfte der Größe der Quote für die online-Anwendung eine Anwendung, die unter teilweiser Vertrauenswürdigkeit ausgeführt wird dürfen nicht sein standardmäßig 250 MB.|  
   
-## Siehe auch  
- [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md)   
- [Troubleshooting ClickOnce Deployments](../deployment/troubleshooting-clickonce-deployments.md)
+## <a name="see-also"></a>Siehe auch  
+ [ClickOnce-Sicherheit und -Bereitstellung](../deployment/clickonce-security-and-deployment.md)   
+ [Problembehandlung bei ClickOnce-Bereitstellungen](../deployment/troubleshooting-clickonce-deployments.md)

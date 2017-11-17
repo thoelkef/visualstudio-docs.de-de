@@ -1,41 +1,42 @@
 ---
-title: "CA1002: Generische Listen nicht verf&#252;gbar machen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DoNotExposeGenericLists"
-  - "CA1002"
-helpviewer_keywords: 
-  - "CA1002"
-  - "DoNotExposeGenericLists"
+title: 'CA1002: Machen Sie generische Listen nicht | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- DoNotExposeGenericLists
+- CA1002
+helpviewer_keywords:
+- CA1002
+- DoNotExposeGenericLists
 ms.assetid: 5caac810-1a79-47df-a27b-c46c5040bf34
-caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 20
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 08092243699e58bd6bc4d737d31c60e5b3c3dd0b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CA1002: Generische Listen nicht verf&#252;gbar machen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1002-do-not-expose-generic-lists"></a>CA1002: Generische Listen nicht verfügbar machen
 |||  
 |-|-|  
 |TypeName|DoNotExposeGenericLists|  
 |CheckId|CA1002|  
-|Kategorie \(Category\)|Microsoft.Design|  
+|Kategorie|Microsoft.Design|  
 |Unterbrechende Änderung|Breaking|  
   
-## Ursache  
- Ein Typ enthält einen extern sichtbaren Member, der ein <xref:System.Collections.Generic.List%601?displayProperty=fullName>\-Typ ist, einen <xref:System.Collections.Generic.List%601?displayProperty=fullName>\-Typ zurückgibt oder dessen Signatur einen <xref:System.Collections.Generic.List%601?displayProperty=fullName>\-Parameter enthält.  
+## <a name="cause"></a>Ursache  
+ Ein Typ enthält, die extern sichtbaren Members eine <xref:System.Collections.Generic.List%601?displayProperty=fullName> eingeben, gibt eine <xref:System.Collections.Generic.List%601?displayProperty=fullName> Typ oder enthält, dessen Signatur ein <xref:System.Collections.Generic.List%601?displayProperty=fullName> Parameter.  
   
-## Regelbeschreibung  
- <xref:System.Collections.Generic.List%601?displayProperty=fullName> ist eine generische Auflistung, die für eine möglichst hohe Leistung und nicht für Vererbung optimiert wurde.  <xref:System.Collections.Generic.List%601?displayProperty=fullName> enthält keine virtuellen Member, die Änderungen am Verhalten einer geerbten Klasse erleichtern würden.  Die folgenden generischen Auflistungen wurden mit Blick auf Vererbung entworfen und sollten anstelle von <xref:System.Collections.Generic.List%601?displayProperty=fullName> verfügbar gemacht werden.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ <xref:System.Collections.Generic.List%601?displayProperty=fullName>ist eine generische Auflistung, die für Leistung und nicht Vererbung entwickelt wurde. <xref:System.Collections.Generic.List%601?displayProperty=fullName>enthält keine virtuellen Member, die so ändern Sie das Verhalten von einer geerbten Klasse zu vereinfachen. Die folgenden generischen Auflistungen für die Vererbung entworfen werden und verfügbar gemacht werden sollen, anstelle von <xref:System.Collections.Generic.List%601?displayProperty=fullName>.  
   
 -   <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>  
   
@@ -43,13 +44,13 @@ caps.handback.revision: 20
   
 -   <xref:System.Collections.ObjectModel.KeyedCollection%602?displayProperty=fullName>  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie den <xref:System.Collections.Generic.List%601?displayProperty=fullName>\-Typ in eine der mit Blick auf Vererbung entworfenen generischen Auflistungen.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Um einen Verstoß gegen diese Regel zu beheben, ändern Sie die <xref:System.Collections.Generic.List%601?displayProperty=fullName> Typ auf einen der generischen Auflistungen, die für die Vererbung entworfen wurde.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Unterdrücken Sie keine Warnung dieser Regel, es sei denn, die Assembly, die diese Warnung auslöst, ist nicht als wiederverwendbare Bibliothek bestimmt.  Es wäre z. B. sicher, die Warnung in einer leistungsoptimierten Anwendung zu unterdrücken, in der durch die Verwendung generischer Listen Leistungsvorteile erzielt werden können.  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Unterdrücken Sie keine Warnung dieser Regel, es sei denn, die Assembly, die diese Warnung auslöst keiner wiederverwendbaren Bibliothek werden soll. Beispielsweise wäre es unterdrückt die Warnung in einer Anwendung für die Leistung optimiert, in denen auf ein Leistungsvorteil aus der Verwendung von generische Listen erworben wurde.  
   
-## Verwandte Regeln  
+## <a name="related-rules"></a>Verwandte Regeln  
  [CA1005: Übermäßige Anzahl von Parametern in generischen Typen vermeiden](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)  
   
  [CA1010: Auflistungen müssen eine generische Schnittstelle implementieren](../code-quality/ca1010-collections-should-implement-generic-interface.md)  
@@ -64,5 +65,5 @@ caps.handback.revision: 20
   
  [CA1007: Nach Möglichkeit Generika verwenden](../code-quality/ca1007-use-generics-where-appropriate.md)  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Generika](/dotnet/csharp/programming-guide/generics/index)

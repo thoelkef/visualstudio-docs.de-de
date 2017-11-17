@@ -1,68 +1,70 @@
 ---
-title: "Boolean-Objekt (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "boolean_JavaScriptKeyword"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Boolean-Datentyp, Boolean-Objekt"
-  - "Boolean-Objekt"
+title: Boolean-Objekt (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: boolean_JavaScriptKeyword
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- Boolean object
+- Boolean data type, Boolean object
 ms.assetid: d67748f2-7bf5-4889-8269-e777616cc5f0
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 20695376e4935cf6ddc34f30e373df19575ece3f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Boolean-Objekt (JavaScript)
+# <a name="boolean-object-javascript"></a>Boolean-Objekt (JavaScript)
 Erstellt einen neuen booleschen Wert.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
 boolObj = new Boolean([boolValue])  
 ```  
   
-## Parameter  
+## <a name="parameters"></a>Parameter  
  `boolObj`  
- Erforderlich.  Der Variablenname, dem das `Boolean`\-Objekt zugewiesen wird.  
+ Erforderlich. Der Variablenname, dem das `Boolean`-Objekt zugewiesen wird.  
   
  `boolValue`  
- Optional.  Der anfängliche Boolesche Wert des neuen Objekts.  Ist `boolvalue` nicht vorhanden oder `false`, 0, `null`, `NaN` oder eine leere Zeichenfolge, ist der anfängliche Wert des Boolean\-Objekts `false`.  Andernfalls ist der anfängliche Wert `true`.  
+ Dies ist optional. Der anfängliche boolesche Wert für das neue Objekt. Wenn `boolvalue` weggelassen wird, oder `false`, 0, `null`, `NaN`, oder eine leere Zeichenfolge, die der anfängliche Wert des Boolean-Objekt ist `false`. Andernfalls ist der Anfangswert `true`.  
   
-## Hinweise  
- Das `Boolean`\-Objekt ist ein Wrapper für den Booleschen Datentyp.  [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] verwendet implizit das `Boolean`\-Objekt, wenn ein Boolescher Datentyp in ein `Boolean`\-Objekt konvertiert wird.  
+## <a name="remarks"></a>Hinweise  
+ Die `Boolean` Objekt ist ein Wrapper für den Boolean-Datentyp. [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]implizit verwendet die `Boolean` Objekt immer ein Boolean-Datentyp, um konvertiert wird eine `Boolean` Objekt.  
   
- Das `Boolean`\-Objekt wird selten explizit instanziiert.  
+ Instanziieren Sie selten die `Boolean` Objekt explizit.  
   
-## Eigenschaften  
- In der folgenden Tabelle werden die Eigenschaften des `Boolean`\-Objekts aufgelistet.  
+## <a name="properties"></a>Eigenschaften  
+ In der folgenden Tabelle werden die Eigenschaften des `Boolean`-Objekts aufgelistet.  
   
 |Eigenschaft|Beschreibung|  
-|-----------------|------------------|  
-|[constructor\-Eigenschaft](../../javascript/reference/constructor-property-boolean.md)|Gibt die Funktion an, mit der ein Boolean\-Objekt erstellt wird.|  
-|[prototype\-Eigenschaft](../../javascript/reference/prototype-property-boolean.md)|Gibt einen Verweis auf den Prototyp einen Booleschen Wert zurück.|  
+|--------------|-----------------|  
+|[Constructor-Eigenschaft](../../javascript/reference/constructor-property-boolean.md)|Gibt die Funktion, die einen booleschen Wert erstellt.|  
+|[Prototype-Eigenschaft](../../javascript/reference/prototype-property-boolean.md)|Gibt einen Verweis auf den Prototyp für einen booleschen Wert zurück.|  
   
 <a name="js56jsobjarraymeth"></a>   
-## Methoden  
- In der folgenden Tabelle werden die Methoden des `Boolean`\-Objekts aufgelistet.  
+## <a name="methods"></a>Methoden  
+ In der folgenden Tabelle werden die Methoden des `Boolean`-Objekts aufgelistet.  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[toString\-Methode](../../javascript/reference/tostring-method-boolean-1.md)|Gibt eine Zeichenfolgendarstellung eines Boolean\-Objekts zurück.|  
-|[valueOf\-Methode](../../javascript/reference/valueof-method-boolean.md)|Ruft einen Verweis auf das Boolean\-Objekt ab.|  
+|------------|-----------------|  
+|[ToString-Methode](../../javascript/reference/tostring-method-boolean-1.md)|Gibt eine Zeichenfolgendarstellung der einen booleschen Wert zurück.|  
+|[ValueOf-Methode](../../javascript/reference/valueof-method-boolean.md)|Ruft einen Verweis auf den booleschen Wert ab.|  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]

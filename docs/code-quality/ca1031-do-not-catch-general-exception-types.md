@@ -1,11 +1,10 @@
 ---
-title: 'CA1031: Do not catch general exception types | Microsoft Docs'
+title: 'CA1031: Allgemeine Ausnahmetypen nicht auffangen | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,59 +14,45 @@ helpviewer_keywords:
 - CA1031
 - DoNotCatchGeneralExceptionTypes
 ms.assetid: cbc283ae-2a46-4ec0-940e-85aa189b118f
-caps.latest.revision: 20
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: c42f8d7207d87fa10c1dc6f87893015fc492654b
-ms.contentlocale: de-de
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 681785bad04a9f16ca68a1f619700e143c01cb58
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031: Do not catch general exception types
+# <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031: Allgemeine Ausnahmetypen nicht auffangen
 |||  
 |-|-|  
 |TypeName|DoNotCatchGeneralExceptionTypes|  
 |CheckId|CA1031|  
-|Category|Microsoft.Design|  
-|Breaking Change|Non-breaking|  
+|Kategorie|Microsoft.Design|  
+|Unterbrechende Änderung|Nicht unterbrechend|  
   
-## <a name="cause"></a>Cause  
- A general exception such as <xref:System.Exception?displayProperty=fullName> or <xref:System.SystemException?displayProperty=fullName> is caught in a `catch` statement, or a general catch clause such as `catch()` is used.  
+## <a name="cause"></a>Ursache  
+ Eine allgemeine Ausnahme wie z. B. <xref:System.Exception?displayProperty=fullName> oder <xref:System.SystemException?displayProperty=fullName> aufgetreten ist, in eine `catch` -Anweisung oder einer allgemeinen Catch-Klausel, z. B. `catch()` verwendet wird.  
   
-## <a name="rule-description"></a>Rule Description  
- General exceptions should not be caught.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Allgemeine Ausnahmen sollten nicht abgefangen werden.  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, catch a more specific exception, or rethrow the general exception as the last statement in the `catch` block.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Um einen Verstoß gegen diese Regel zu beheben, fangen Sie eine spezifischere Ausnahme oder der letzten Anweisung in die allgemeine Ausnahme erneut ausgelöst der `catch` Block.  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule. Catching general exception types can hide run-time problems from the library user and can make debugging more difficult.  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Unterdrücken Sie keine Warnung dieser Regel. Allgemeine Ausnahmetypen abfangen können zur Laufzeit Probleme aus der Bibliotheksbenutzer ausblenden und können Debuggen erschweren.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)], the common language runtime (CLR) no longer delivers corrupted state exceptions that occur in the operating system and managed code, such as access violations in [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)], to be handled by managed code. If you want to compile an application in the [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] or later versions and maintain handling of corrupted state exceptions, you can apply the <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> attribute to the method that handles the corrupted state exception.  
+>  Beginnend mit der [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)], die common Language Runtime (CLR) bietet mehr beschädigten Zustandsausnahmen, die auftreten, in das Betriebssystem und verwalteten Code, z. B. zugriffsverletzungen in [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)], von verwaltetem Code behandelt werden. Wenn Sie eine Anwendung kompilieren möchten die [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] oder höheren Versionen und Verwalten von Behandlung von beschädigten Zustandsausnahmen die, Sie anwenden können die <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> -Attribut auf die Methode, die beschädigten Zustandsausnahme verarbeitet.  
   
-## <a name="example"></a>Example  
- The following example shows a type that violates this rule and a type that correctly implements the `catch` block.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel zeigt ein Typ, der mit dieser Regel verletzt und einen Typ, ordnungsgemäß implementiert, die `catch` Block.  
   
- [!code-cpp[FxCop.Design.ExceptionAndSystemException#1](../code-quality/codesnippet/CPP/ca1031-do-not-catch-general-exception-types_1.cpp)] [!code-vb[FxCop.Design.ExceptionAndSystemException#1](../code-quality/codesnippet/VisualBasic/ca1031-do-not-catch-general-exception-types_1.vb)] [!code-csharp[FxCop.Design.ExceptionAndSystemException#1](../code-quality/codesnippet/CSharp/ca1031-do-not-catch-general-exception-types_1.cs)]  
+ [!code-cpp[FxCop.Design.ExceptionAndSystemException#1](../code-quality/codesnippet/CPP/ca1031-do-not-catch-general-exception-types_1.cpp)]
+ [!code-vb[FxCop.Design.ExceptionAndSystemException#1](../code-quality/codesnippet/VisualBasic/ca1031-do-not-catch-general-exception-types_1.vb)]
+ [!code-csharp[FxCop.Design.ExceptionAndSystemException#1](../code-quality/codesnippet/CSharp/ca1031-do-not-catch-general-exception-types_1.cs)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA2200: Rethrow to preserve stack details](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)
+## <a name="related-rules"></a>Verwandte Regeln  
+ [CA2200: Erneut ausführen, um Stapeldetails beizubehalten](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)

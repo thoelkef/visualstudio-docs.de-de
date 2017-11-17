@@ -1,40 +1,41 @@
 ---
-title: "&lt;file&gt; Element (ClickOnce Application) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://www.w3.org/2000/09/xmldsig#Transform"
-  - "urn:schemas-microsoft-com:asm.v2#file"
-  - "http://www.w3.org/2000/09/xmldsig#DigestValue"
-  - "http://www.w3.org/2000/09/xmldsig#DigestMethod"
-  - "http://www.w3.org/2000/09/xmldsig#Transforms"
-  - "urn:schemas-microsoft-com:asm.v2#hash"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<file> element [ClickOnce application manifest]"
-  - "manifests [ClickOnce], file element"
+title: '&lt;Datei&gt; Element (ClickOnce-Anwendung) | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- http://www.w3.org/2000/09/xmldsig#Transform
+- urn:schemas-microsoft-com:asm.v2#file
+- http://www.w3.org/2000/09/xmldsig#DigestValue
+- http://www.w3.org/2000/09/xmldsig#DigestMethod
+- http://www.w3.org/2000/09/xmldsig#Transforms
+- urn:schemas-microsoft-com:asm.v2#hash
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- <file> element [ClickOnce application manifest]
+- manifests [ClickOnce], file element
 ms.assetid: 56e3490c-eed5-4841-b1bf-eefe778b6ac9
-caps.latest.revision: 24
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: f448b7455bcbe13b7257a58a0eafbadd1165b197
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# &lt;file&gt; Element (ClickOnce Application)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Identifiziert alle Nichtassemblydateien, die von der Anwendung heruntergeladen und verwendet werden.  
+# <a name="ltfilegt-element-clickonce-application"></a>&lt;Datei&gt; Element (ClickOnce-Anwendung)
+Identifiziert alle Nichtassemblydateien heruntergeladen und von der Anwendung verwendet.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <file  
@@ -85,108 +86,108 @@ Identifiziert alle Nichtassemblydateien, die von der Anwendung heruntergeladen u
 </file>  
 ```  
   
-## Elemente und Attribute  
- Das `file`\-Element ist optional.  Das Element verfügt über die folgenden Attribute.  
+## <a name="elements-and-attributes"></a>Elemente und Attribute  
+ Das `file`-Element ist optional. Das Element weist folgende Attribute.  
   
 |Attribut|Beschreibung|  
-|--------------|------------------|  
-|`name`|Erforderlich.  Identifiziert den Namen der Datei.|  
-|`size`|Erforderlich.  Gibt die Größe der Datei in Bytes an.|  
-|`group`|Optional, wenn das `optional`\-Attribut nicht angegeben oder auf `false` festgelegt wird; erforderlich, wenn `optional``true` ist.  Der Name der Gruppe, zu der diese Datei gehört.  Der Name kann eine vom Entwickler gewählte Unicode\-Zeichenfolge sein. Er wird verwendet, um Dateien bei Bedarf mit der <xref:System.Deployment.Application.ApplicationDeployment>\-Klasse herunterzuladen.|  
-|`optional`|Optional.  Gibt an, ob diese Datei bei der ersten Ausführung der Anwendung heruntergeladen werden muss oder ob sie auf dem Server verbleiben soll, bis die Anwendung sie bei Bedarf anfordert.  Wenn das Attribut den Wert `false` aufweist oder nicht definiert ist, wird die Datei bei der ersten Ausführung oder der Installation der Anwendung heruntergeladen.  Wenn `true` gilt, muss eine `group` angegeben werden, damit das Anwendungsmanifest gültig ist.  `optional` kann nicht gültig sein, wenn `writeableType` mit dem Wert `applicationData` angegeben ist.|  
-|`writeableType`|Optional.  Gibt an, dass es sich bei dieser Datei um eine Datendatei handelt.  Derzeit lautet der einzige gültige Wert `applicationData`.|  
+|---------------|-----------------|  
+|`name`|Erforderlich. Identifiziert den Namen der Datei.|  
+|`size`|Erforderlich. Gibt die Größe in Byte der Datei an.|  
+|`group`|Optional, wenn die `optional` Attribut nicht angegeben oder auf gesetzt `false`; erforderlich, wenn `optional` ist `true`. Der Name der Gruppe, zu der diese Datei gehört. Der Name kann eine Unicode-Zeichenfolge, die vom Entwickler ausgewählt werden und dient zum Herunterladen von Dateien bei Bedarf mit der <xref:System.Deployment.Application.ApplicationDeployment> Klasse.|  
+|`optional`|Dies ist optional. Gibt an, ob diese Datei muss es herunterladen, wenn die Anwendung zuerst ausgeführt, oder gibt an, ob Sie nur auf dem Server verbleiben soll, bis die Anwendung bei Bedarf anfordert. Wenn `false` oder nicht definiert ist, die Datei wird heruntergeladen, wenn die Anwendung zuerst ausgeführt oder installiert wird. Wenn `true`ein `group` muss angegeben werden, für das Anwendungsmanifest, um gültig zu sein. `optional`nicht mit "true" Wenn `writeableType` wird angegeben, mit dem Wert `applicationData`.|  
+|`writeableType`|Dies ist optional. Gibt an, dass diese Datei eine Datendatei ist. Zurzeit der einzige gültige Wert ist `applicationData`.|  
   
-## typelib  
- Das `typelib`\-Element ist ein optionales untergeordnetes Element des Dateielements.  Das Element beschreibt die zur COM\-Komponente gehörige Typbibliothek.  Das Element verfügt über die folgenden Attribute.  
-  
-|Attribut|Beschreibung|  
-|--------------|------------------|  
-|`tlbid`|Erforderlich.  Die der Typbibliothek zugewiesene GUID.|  
-|`version`|Erforderlich.  Die Versionsnummer der Typbibliothek.|  
-|`helpdir`|Erforderlich.  Das Verzeichnis, das die Hilfedateien für die Komponente enthält.  Kann die Länge 0 \(null\) haben.|  
-|`resourceid`|Optional.  Die hexadezimale Zeichenfolgendarstellung des Gebietsschemabezeichners \(LCID\).  Dieser besteht aus bis zu vier Hexadezimalziffern ohne das Präfix 0x und ohne führende Nullen \(0\).  Die LCID hat möglicherweise einen neutralen Sprachvariantenbezeichner.|  
-|`flags`|Optional.  Die Zeichenfolgendarstellung der Typbibliothekflags für diese Typbibliothek.  Sollte insbesondere "RESTRICTED", "CONTROL", "HIDDEN" oder "HASDISKIMAGE" entsprechen.|  
-  
-## comClass  
- Das `comClass`\-Element ist ein optionales untergeordnetes Element des `file`\-Elements. Es ist jedoch erforderlich, wenn die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Anwendung eine COM\-Komponente enthält, die über COM ohne Registrierung bereitgestellt werden soll.  Das Element verfügt über die folgenden Attribute.  
+## <a name="typelib"></a>der Typbibliothek  
+ Die `typelib` Element ist ein optionales untergeordnetes Element des File-Elements. Das-Element beschreibt die Typbibliothek, die COM-Komponente gehört. Das Element weist folgende Attribute.  
   
 |Attribut|Beschreibung|  
-|--------------|------------------|  
-|`clsid`|Erforderlich.  Die Klassen\-ID der als GUID ausgedrückten COM\-Komponente.|  
-|`description`|Optional.  Der Klassenname.|  
-|`threadingModel`|Optional.  Das von prozessinternen COM\-Klassen verwendete Threadmodell.  Wenn diese Eigenschaft NULL ist, wird kein Threadmodell verwendet.  Die Komponente wird im Hauptthread des Clients erstellt, und Aufrufe von anderen Threads werden an diesen Thread gemarshallt.  Die folgende Liste zeigt die gültigen Werte:<br /><br /> `Apartment`, `Free`, `Both` und `Neutral`.|  
-|`tlbid`|Optional.  GUID für die Typbibliothek dieser COM\-Komponente.|  
-|`progid`|Optional.  Versionsabhängiger programmgesteuerter Bezeichner dieser COM\-Komponente.  Das Format von `ProgID` entspricht `<vendor>.<component>.<version>`.|  
-|`miscStatus`|Optional.  Dupliziert im Assemblymanifest die vom `MiscStatus`\-Registrierungsschlüssel bereitgestellten Informationen.  Wenn für die Attribute `miscStatusIcon`, `miscStatusContent`, `miscStatusDocprint` oder `miscStatusThumbnail` keine Werte gefunden werden, wird der entsprechende unter `miscStatus` aufgeführte Standardwert für die fehlenden Attribute verwendet.  Der Wert kann einer durch Kommas getrennten Liste der Attributwerte aus der folgenden Tabelle entsprechen.  Dieses Attribut kann verwendet werden, wenn die COM\-Klasse einer OCX\-Klasse entspricht, die `MiscStatus`\-Registrierungsschlüsselwerte erfordert.|  
-|`miscStatusIcon`|Optional.  Dupliziert im Assemblymanifest die von DVASPECT\_ICON bereitgestellten Informationen.  Dabei kann ein Symbol eines Objekts bereitgestellt werden.  Der Wert kann einer durch Kommas getrennten Liste der Attributwerte aus der folgenden Tabelle entsprechen.  Dieses Attribut kann verwendet werden, wenn die COM\-Klasse einer OCX\-Klasse entspricht, die `Miscstatus`\-Registrierungsschlüsselwerte erfordert.|  
-|`miscStatusContent`|Optional.  Dupliziert im Assemblymanifest die von DVASPECT\_CONTENT bereitgestellten Informationen.  Dabei kann es sich um ein Verbunddokument handeln, das auf einem Bildschirm oder Drucker ausgegeben werden kann.  Der Wert kann einer durch Kommas getrennten Liste der Attributwerte aus der folgenden Tabelle entsprechen.  Dieses Attribut kann verwendet werden, wenn die COM\-Klasse einer OCX\-Klasse entspricht, die `MiscStatus`\-Registrierungsschlüsselwerte erfordert.|  
-|`miscStatusDocPrint`|Optional.  Dupliziert im Assemblymanifest die von DVASPECT\_DOCPRINT bereitgestellten Informationen.  Dabei kann eine Objektdarstellung bereitgestellt werden, die auf dem Bildschirm angezeigt werden kann und der Ausgabe auf dem Drucker entspricht.  Der Wert kann einer durch Kommas getrennten Liste der Attributwerte aus der folgenden Tabelle entsprechen.  Dieses Attribut kann verwendet werden, wenn die COM\-Klasse einer OCX\-Klasse entspricht, die `MiscStatus`\-Registrierungsschlüsselwerte erfordert.|  
-|`miscStatusThumbnail`|Optional.  Dupliziert im Assemblymanifest die von DVASPECT\_THUMBNAIL bereitgestellten Informationen.  Dabei kann eine Miniaturansicht eines Objekts bereitgestellt werden, die in einem Browsertool dargestellt werden kann.  Der Wert kann einer durch Kommas getrennten Liste der Attributwerte aus der folgenden Tabelle entsprechen.  Dieses Attribut kann verwendet werden, wenn die COM\-Klasse einer OCX\-Klasse entspricht, die `MiscStatus`\-Registrierungsschlüsselwerte erfordert.|  
+|---------------|-----------------|  
+|`tlbid`|Erforderlich. Auf die Typbibliothek zugewiesene GUID.|  
+|`version`|Erforderlich. Die Versionsnummer der Typbibliothek.|  
+|`helpdir`|Erforderlich. Das Verzeichnis, das die Hilfedateien für die Komponente enthält. Kann mit der Länge Null sein.|  
+|`resourceid`|Dies ist optional. Die hexadezimale Zeichenfolgendarstellung des Gebietsschemabezeichners (LCID). Es ist ein bis vier hexadezimale Ziffern ohne Präfix 0 X und ohne führende Nullen. Die LCID möglicherweise eine neutrale untersprachen-ID an.|  
+|`flags`|Dies ist optional. Die Zeichenfolgendarstellung der Flags der Typbibliothek für diese Typbibliothek. Insbesondere sollten sie eine der "RESTRICTED", "CONTROL", "HIDDEN" und "HASDISKIMAGE" sein.|  
   
-## comInterfaceExternalProxyStub  
- Das `comInterfaceExternalProxyStub`\-Element ist ein optionales untergeordnetes Element des `file`\-Elements. Es ist jedoch möglicherweise erforderlich, wenn die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Anwendung eine COM\-Komponente enthält, die über COM ohne Registrierung bereitgestellt werden soll.  Das Element verfügt über die folgenden Attribute.  
+## <a name="comclass"></a>comClass  
+ Die `comClass` Element ist ein optionales untergeordnetes Element von der `file` Element, jedoch ist erforderlich, wenn die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung enthält eine COM-Komponente, die die Bereitstellung über registrierungsfreies werden soll Das Element weist folgende Attribute.  
   
 |Attribut|Beschreibung|  
-|--------------|------------------|  
-|`iid`|Erforderlich.  Die Schnittstellen\-ID \(IID\), die von diesem Proxy verarbeitet wird.  Die IID muss in geschweiften Klammern stehen.|  
-|`baseInterface`|Optional.  Die IID der Schnittstelle, von der die Schnittstelle abgeleitet wird, auf die durch `iid` verwiesen wird.|  
-|`numMethods`|Optional.  Die Anzahl der von der Schnittstelle implementierten Methoden.|  
-|`name`|Optional.  Der Name der Schnittstelle, wie im Code verwendet.|  
-|`tlbid`|Optional.  Die Typbibliothek, die die Beschreibung der vom `iid`\-Attribut angegebenen Schnittstelle enthält.|  
-|`proxyStubClass32`|Optional.  Ordnet einer CLSID in 32\-Bit\-Proxy\-DLLs eine IID zu.|  
+|---------------|-----------------|  
+|`clsid`|Erforderlich. Die Klassen-ID der COM-Komponente, ausgedrückt als GUID.|  
+|`description`|Dies ist optional. Der Klassenname.|  
+|`threadingModel`|Dies ist optional. Das Threadingmodell von in-Process-COM-Klassen verwendet. Wenn diese Eigenschaft null ist, wird kein Threadmodell verwendet. Die Komponente wird auf den Hauptthread des Clients erstellt und Aufrufe von anderen Threads werden an diesen Thread gemarshallt. Die folgende Liste zeigt die gültigen Werte:<br /><br /> `Apartment`, `Free`, `Both` und `Neutral`.|  
+|`tlbid`|Dies ist optional. GUID für die Typbibliothek der COM-Komponente.|  
+|`progid`|Dies ist optional. Versionsabhängige programmatischen Bezeichner der COM-Komponente zugeordnet. Das Format einer `ProgID` ist `<vendor>.<component>.<version>`.|  
+|`miscStatus`|Dies ist optional. Duplikate in der Assembly manifest den Angaben von der `MiscStatus` Registrierungsschlüssel. Wenn Werte für die `miscStatusIcon`, `miscStatusContent`, `miscStatusDocprint`, oder `miscStatusThumbnail` Attribute nicht gefunden werden, wird der zugehörige Standardwert aufgeführt, `miscStatus` wird für die fehlenden Attribute verwendet. Der Wert kann eine durch Trennzeichen getrennte Liste der Attributwerte aus der folgenden Tabelle sein. Sie können dieses Attribut verwenden, wenn die COM-Klasse eine OCX-Klasse ist, die erforderlich sind `MiscStatus` Registrierungsschlüsselwerte.|  
+|`miscStatusIcon`|Dies ist optional. Duplikate in der Assembly manifest von DVASPECT_ICON bereitgestellten Informationen. Es kann ein Symbol eines Objekts bereitstellen. Der Wert kann eine durch Trennzeichen getrennte Liste der Attributwerte aus der folgenden Tabelle sein. Sie können dieses Attribut verwenden, wenn die COM-Klasse eine OCX-Klasse ist, die erforderlich sind `Miscstatus` Registrierungsschlüsselwerte.|  
+|`miscStatusContent`|Dies ist optional. Duplikate in der Assembly manifest von DVASPECT_CONTENT bereitgestellten Informationen. Es kann ein Verbunddokument handeln für einen Bildschirm oder Drucker bereitstellen. Der Wert kann eine durch Trennzeichen getrennte Liste der Attributwerte aus der folgenden Tabelle sein. Sie können dieses Attribut verwenden, wenn die COM-Klasse eine OCX-Klasse ist, die erforderlich sind `MiscStatus` Registrierungsschlüsselwerte.|  
+|`miscStatusDocPrint`|Dies ist optional. Duplikate in der Assembly manifest von DVASPECT_DOCPRINT bereitgestellten Informationen. Es kann auf dem Bildschirm eine objektdarstellung anzeigbaren bereitstellen, als ob Sie an einen Drucker gedruckt. Der Wert kann eine durch Trennzeichen getrennte Liste der Attributwerte aus der folgenden Tabelle sein. Sie können dieses Attribut verwenden, wenn die COM-Klasse eine OCX-Klasse ist, die erforderlich sind `MiscStatus` Registrierungsschlüsselwerte.|  
+|`miscStatusThumbnail`|Dies ist optional. Duplikate in einer Assembly manifest von DVASPECT_THUMBNAIL bereitgestellten Informationen. Es kann eine Miniaturansicht eines Objekts in einem anzeigbaren bereitstellen. Der Wert kann eine durch Trennzeichen getrennte Liste der Attributwerte aus der folgenden Tabelle sein. Sie können dieses Attribut verwenden, wenn die COM-Klasse eine OCX-Klasse ist, die erforderlich sind `MiscStatus` Registrierungsschlüsselwerte.|  
   
-## comInterfaceProxyStub  
- Das `comInterfaceProxyStub`\-Element ist ein optionales untergeordnetes Element des `file`\-Elements. Es ist jedoch möglicherweise erforderlich, wenn die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Anwendung eine COM\-Komponente enthält, die über COM ohne Registrierung bereitgestellt werden soll.  Das Element verfügt über die folgenden Attribute.  
-  
-|Attribut|Beschreibung|  
-|--------------|------------------|  
-|`iid`|Erforderlich.  Die Schnittstellen\-ID \(IID\), die von diesem Proxy verarbeitet wird.  Die IID muss in geschweiften Klammern stehen.|  
-|`baseInterface`|Optional.  Die IID der Schnittstelle, von der die Schnittstelle abgeleitet wird, auf die durch `iid` verwiesen wird.|  
-|`numMethods`|Optional.  Die Anzahl der von der Schnittstelle implementierten Methoden.|  
-|`Name`|Optional.  Der Name der Schnittstelle, wie im Code verwendet.|  
-|`Tlbid`|Optional.  Die Typbibliothek, die die Beschreibung der vom `iid`\-Attribut angegebenen Schnittstelle enthält.|  
-|`proxyStubClass32`|Optional.  Ordnet einer CLSID in 32\-Bit\-Proxy\-DLLs eine IID zu.|  
-|`threadingModel`|Optional.  Optional.  Das von prozessinternen COM\-Klassen verwendete Threadmodell.  Wenn diese Eigenschaft NULL ist, wird kein Threadmodell verwendet.  Die Komponente wird im Hauptthread des Clients erstellt, und Aufrufe von anderen Threads werden an diesen Thread gemarshallt.  Die folgende Liste zeigt die gültigen Werte:<br /><br /> `Apartment`, `Free`, `Both` und `Neutral`.|  
-  
-## windowClass  
- Das `windowClass`\-Element ist ein optionales untergeordnetes Element des `file`\-Elements. Es ist jedoch möglicherweise erforderlich, wenn die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Anwendung eine COM\-Komponente enthält, die über COM ohne Registrierung bereitgestellt werden soll.  Das Element verweist auf eine von der COM\-Komponente definierte Fensterklasse, auf die eine Version angewendet werden muss.  Das Element verfügt über die folgenden Attribute.  
+## <a name="cominterfaceexternalproxystub"></a>comInterfaceExternalProxyStub  
+ Die `comInterfaceExternalProxyStub` Element ist ein optionales untergeordnetes Element von der `file` Element, jedoch möglicherweise erforderlich sind, wenn die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung enthält eine COM-Komponente, die die Bereitstellung über registrierungsfreies werden soll Das Element enthält die folgenden Attribute.  
   
 |Attribut|Beschreibung|  
-|--------------|------------------|  
-|`versioned`|Optional.  Steuert, ob der in der Registrierung verwendete interne Name der Fensterklasse die Version der Assembly aufweist, in der die Fensterklasse enthalten ist.  Der Wert dieses Attributs kann `yes` oder `no` sein.  Der Standardwert lautet `yes`.  Der Wert `no` sollte nur verwendet werden, wenn dieselbe Fensterklasse von einer parallelen Komponente und einer entsprechenden nicht parallelen Komponente definiert wurde und diese als identische Fensterklasse behandelt werden sollen.  Ansonsten sind die üblichen Regeln zur Registrierung von Fensterklassen zu beachten: Die Fensterklasse kann nur von der ersten Komponente registriert werden, die die Registrierung ausführt, da auf die Klasse keine Version angewendet wurde.|  
+|---------------|-----------------|  
+|`iid`|Erforderlich. Die Schnittstelle-ID (IID) werden durch diesen Proxy verarbeitet wird. Die IID muss geschweiften Klammern stehen.|  
+|`baseInterface`|Dies ist optional. Die IID der Schnittstelle, von dem die Schnittstelle verweist `iid` abgeleitet ist.|  
+|`numMethods`|Dies ist optional. Die Anzahl der Methoden, die durch die Schnittstelle implementiert.|  
+|`name`|Dies ist optional. Der Name der Schnittstelle, wie sie wird im Code angezeigt.|  
+|`tlbid`|Dies ist optional. Die Typbibliothek, die die Beschreibung der die angegebene Schnittstelle enthält die `iid` Attribut.|  
+|`proxyStubClass32`|Dies ist optional. Ordnet eine IID CLSID in 32-Bit-Proxy-DLLs.|  
   
-## hash  
- Das `hash`\-Element ist ein optionales untergeordnetes Element des `file`\-Elements.  Das `hash`\-Element weist keine Attribute auf.  
-  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] verwendet als Sicherheitsüberprüfung einen algorithmischen Hash aller Dateien in einer Anwendung, um sicherzustellen, dass keine der Dateien nach der Bereitstellung geändert wurde.  Wenn das `hash`\-Element nicht enthalten ist, wird diese Überprüfung nicht ausgeführt. Daher wird das Auslassen des `hash`\-Elements nicht empfohlen.  
-  
- Wenn ein Manifest eine nicht gehashte Datei enthält, kann es nicht digital signiert werden, da Benutzer die Inhalte nicht gehashter Dateien nicht überprüfen können.  
-  
-## dsig:Transforms  
- Das `dsig:Transforms`\-Element ist ein erforderliches untergeordnetes Element des `hash`\-Elements.  Das `dsig:Transforms`\-Element weist keine Attribute auf.  
-  
-## dsig:Transform  
- Das `dsig:Transform`\-Element ist ein erforderliches untergeordnetes Element des `dsig:Transforms`\-Elements.  Das `dsig:Transform`\-Element verfügt über die folgenden Attribute.  
+## <a name="cominterfaceproxystub"></a>comInterfaceProxyStub  
+ Die `comInterfaceProxyStub` Element ist ein optionales untergeordnetes Element von der `file` Element, jedoch möglicherweise erforderlich sind, wenn die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung enthält eine COM-Komponente, die die Bereitstellung über registrierungsfreies werden soll Das Element enthält die folgenden Attribute.  
   
 |Attribut|Beschreibung|  
-|--------------|------------------|  
-|`Algorithm`|Der Algorithmus, der zum Berechnen des Digests für diese Datei verwendet wird.  Derzeit wird von [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nur ein Wert verwendet, nämlich `urn:schemas-microsoft-com:HashTransforms.Identity`.|  
+|---------------|-----------------|  
+|`iid`|Erforderlich. Die Schnittstelle-ID (IID) werden durch diesen Proxy verarbeitet wird. Die IID muss geschweiften Klammern stehen.|  
+|`baseInterface`|Dies ist optional. Die IID der Schnittstelle, von dem die Schnittstelle verweist `iid` abgeleitet ist.|  
+|`numMethods`|Dies ist optional. Die Anzahl der Methoden, die durch die Schnittstelle implementiert.|  
+|`Name`|Dies ist optional. Der Name der Schnittstelle, wie sie wird im Code angezeigt.|  
+|`Tlbid`|Dies ist optional. Die Typbibliothek, die die Beschreibung der die angegebene Schnittstelle enthält die `iid` Attribut.|  
+|`proxyStubClass32`|Dies ist optional. Ordnet eine IID CLSID in 32-Bit-Proxy-DLLs.|  
+|`threadingModel`|Dies ist optional. Dies ist optional. Das Threadingmodell von in-Process-COM-Klassen verwendet. Wenn diese Eigenschaft null ist, wird kein Threadmodell verwendet. Die Komponente wird auf den Hauptthread des Clients erstellt und Aufrufe von anderen Threads werden an diesen Thread gemarshallt. Die folgende Liste zeigt die gültigen Werte:<br /><br /> `Apartment`, `Free`, `Both` und `Neutral`.|  
   
-## dsig:DigestMethod  
- Das `dsig:DigestMethod`\-Element ist ein erforderliches untergeordnetes Element des `hash`\-Elements.  Das `dsig:DigestMethod`\-Element verfügt über die folgenden Attribute.  
+## <a name="windowclass"></a>windowClass  
+ Die `windowClass` Element ist ein optionales untergeordnetes Element von der `file` Element, jedoch möglicherweise erforderlich sind, wenn die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung enthält eine COM-Komponente, die die Bereitstellung über registrierungsfreies werden soll Das Element bezieht sich auf eine Fensterklasse, die von der COM-Komponente, die eine Version angewendet haben, muss definiert. Das Element enthält die folgenden Attribute.  
   
 |Attribut|Beschreibung|  
-|--------------|------------------|  
-|`Algorithm`|Der Algorithmus, der zum Berechnen des Digests für diese Datei verwendet wird.  Derzeit wird von [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nur ein Wert verwendet, nämlich `http://www.w3.org/2000/09/xmldsig#sha1`.|  
+|---------------|-----------------|  
+|`versioned`|Dies ist optional. Steuert, ob der interne Name der Fensterklasse in Registrierung verwendet die Version der Assembly enthält, der die Fensterklasse enthalten. Der Wert dieses Attributs kann `yes` oder `no`. Die Standardeinstellung ist `yes`. Der Wert `no` sollte nur verwendet werden, wenn die gleichen Fensterklasse durch eine Seite-an-Seite-Komponente und einer entsprechenden nicht-Seite-an-Seite-Komponente definiert wird und diese als der gleichen Fensterklasse behandelt werden sollen. Beachten Sie, die die üblichen Regeln zur fensterklassenregistrierung gelten – nur die erste Komponente, der die Fensterklasse registriert, registrieren kann, da sie nicht über eine Version angewendet verfügt.|  
   
-## dsig:DigestValue  
- Das `dsig:DigestValue`\-Element ist ein erforderliches untergeordnetes Element des `hash`\-Elements.  Das `dsig:DigestValue`\-Element weist keine Attribute auf.  Sein Textwert ist der berechnete Hash für die angegebene Datei.  
+## <a name="hash"></a>hash  
+ Die `hash` Element ist ein optionales untergeordnetes Element von der `file` Element. Die `hash` -Element weist keine Attribute.  
   
-## Hinweise  
- Dieses Element identifiziert alle Nichtassemblydateien, aus denen die Anwendung besteht, und besonders die Hashwerte für die Dateiüberprüfung.  Dieses Element kann auch der Datei zugeordnete COM\-Isolationsdaten \(Component Object Model\) umfassen.  Wenn eine Datei geändert wird, muss die Anwendungsmanifestdatei auch entsprechend aktualisiert werden.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]einen algorithmischen Hash aller Dateien in einer Anwendung verwendet als eine sicherheitsüberprüfung, um sicherzustellen, dass keine der Dateien nach der Bereitstellung geändert wurden. Wenn die `hash` Element nicht enthalten ist, wird diese Überprüfung nicht ausgeführt werden. Daher wird das Auslassen der `hash` Element wird nicht empfohlen.  
   
-## Beispiel  
- Im folgenden Codebeispiel werden `file`\-Elemente in einem Anwendungsmanifest für eine mit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] bereitgestellte Anwendung veranschaulicht.  
+ Ein Manifest enthält eine Datei, die nicht in der Hashwert berechnet wird, Manifest nicht digital signiert werden, da Benutzer den Inhalt der gehashter Dateien überprüft werden können.  
+  
+## <a name="dsigtransforms"></a>dsig: Transforms  
+ Die `dsig:Transforms` Element ist ein erforderliches untergeordnetes Element des dem `hash` Element. Die `dsig:Transforms` -Element weist keine Attribute.  
+  
+## <a name="dsigtransform"></a>dsig  
+ Die `dsig:Transform` Element ist ein erforderliches untergeordnetes Element des dem `dsig:Transforms` Element. Die `dsig:Transform` Element weist folgende Attribute.  
+  
+|Attribut|Beschreibung|  
+|---------------|-----------------|  
+|`Algorithm`|Der Algorithmus zum Berechnen des Digests für diese Datei verwendet wird. Zurzeit der einzige Wert von verwendete [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ist `urn:schemas-microsoft-com:HashTransforms.Identity`.|  
+  
+## <a name="dsigdigestmethod"></a>DigestMethod  
+ Die `dsig:DigestMethod` Element ist ein erforderliches untergeordnetes Element des dem `hash` Element. Die `dsig:DigestMethod` Element weist folgende Attribute.  
+  
+|Attribut|Beschreibung|  
+|---------------|-----------------|  
+|`Algorithm`|Der Algorithmus zum Berechnen des Digests für diese Datei verwendet wird. Zurzeit der einzige Wert von verwendete [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ist `http://www.w3.org/2000/09/xmldsig#sha1`.|  
+  
+## <a name="dsigdigestvalue"></a>dsig: DigestValue  
+ Die `dsig:DigestValue` Element ist ein erforderliches untergeordnetes Element des dem `hash` Element. Die `dsig:DigestValue` -Element weist keine Attribute. Der Textwert ist der berechnete Hash für die angegebene Datei.  
+  
+## <a name="remarks"></a>Hinweise  
+ Dieses Element identifiziert alle Nichtassemblydateien, aus denen die Anwendung besteht, und insbesondere die Hashwerte für die Überprüfung der Datei. Dieses Element kann auch mit der Datei verknüpfte Component Object Model (COM)-Isolationsdaten einschließen. Wenn eine Datei geändert wird, muss die Anwendungsmanifestdatei ebenfalls aktualisiert werden, um die Änderung zu übernehmen.  
+  
+## <a name="example"></a>Beispiel  
+ Im folgenden Codebeispiel wird veranschaulicht, `file` Elemente in einer Anwendung für eine Anwendung mit bereitgestellte manifest [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].  
   
 ```  
 <file name="Icon.ico" size="9216">  
@@ -200,5 +201,5 @@ Identifiziert alle Nichtassemblydateien, die von der Anwendung heruntergeladen u
 </file>  
 ```  
   
-## Siehe auch  
- [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
+## <a name="see-also"></a>Siehe auch  
+ [ClickOnce-Anwendungsmanifest](../deployment/clickonce-application-manifest.md)

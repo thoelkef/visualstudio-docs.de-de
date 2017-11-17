@@ -1,56 +1,56 @@
 ---
-title: "CA1409: F&#252;r COM sichtbare Typen m&#252;ssen erstellt werden k&#246;nnen | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ComVisibleTypesShouldBeCreatable"
-  - "CA1409"
-helpviewer_keywords: 
-  - "ComVisibleTypesShouldBeCreatable"
-  - "CA1409"
+title: "CA1409: Für Com sichtbare Typen sollten erstellbar sein | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- ComVisibleTypesShouldBeCreatable
+- CA1409
+helpviewer_keywords:
+- ComVisibleTypesShouldBeCreatable
+- CA1409
 ms.assetid: 9f59569b-de15-4a38-b7cb-cff152972243
-caps.latest.revision: 18
-caps.handback.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: c8d9fe357142cf8b95be0298797c4a18e9ee0df7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CA1409: F&#252;r COM sichtbare Typen m&#252;ssen erstellt werden k&#246;nnen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409: Für COM sichtbare Typen müssen erstellt werden können
 |||  
 |-|-|  
 |TypeName|ComVisibleTypesShouldBeCreatable|  
 |CheckId|CA1409|  
-|Kategorie \(Category\)|Microsoft.Interoperability|  
+|Kategorie|Microsoft.Interoperability|  
 |Unterbrechende Änderung|Nicht unterbrechend|  
   
-## Ursache  
- Ein Verweistyp, der speziell als für COM \(Component Object Model\) sichtbar gekennzeichnet ist, enthält einen öffentlichen parametrisierten Konstruktor, jedoch keinen öffentlichen \(parameterlosen\) Standardkonstruktor.  
+## <a name="cause"></a>Ursache  
+ Ein Verweistyp, der speziell für Component Object Model (COM) als sichtbar markiert ist, enthält einen öffentlichen parametrisierten Konstruktor jedoch enthält keinen öffentlichen (parameterlosen) Standardkonstruktor.  
   
-## Regelbeschreibung  
- Ein Typ ohne öffentlichen Standardkonstruktor kann nicht von COM\-Clients erstellt werden.  COM\-Clients können dennoch auf den Typ zugreifen, wenn der Typ auf andere Weise erstellt und an den Client übergeben werden kann, z. B. durch den Rückgabewert eines Methodenaufrufs.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Ein Typ ohne einen öffentlichen Standardkonstruktor kann nicht durch COM-Clients erstellt werden. Der Typ kann jedoch immer noch durch COM-Clients zugegriffen werden, wenn andere Weise erstellen Sie den Typ und übergibt ihn dann an dem Client (z. B. durch den Rückgabewert eines Methodenaufrufs) verfügbar ist.  
   
- Die Regel ignoriert Typen, die von <xref:System.Delegate?displayProperty=fullName> abgeleitet sind.  
+ Die Regel ignoriert die von der abgeleiteten Typen <xref:System.Delegate?displayProperty=fullName>.  
   
- Standardmäßig sind folgende Programmierelemente für COM sichtbar: Assemblys, öffentliche Typen, öffentliche Instanzmember in öffentlichen Typen und alle Member öffentlicher Werttypen.  
+ Standardmäßig sind die folgenden für COM sichtbar: Assemblys, öffentliche Typen, öffentliche Instanzmember in öffentlichen Typen und alle Member von öffentlichen Werttypen.  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, fügen Sie einen Standardkonstruktor hinzu, oder entfernen Sie das <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> von dem Typ.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Um einen Verstoß gegen diese Regel zu beheben, fügen Sie einen öffentlichen Standardkonstruktor hinzu, oder entfernen Sie die <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> vom Typ.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Eine Warnung dieser Regel kann gefahrlos unterdrückt werden, wenn es andere Möglichkeiten gibt, das Objekt zu erstellen und an den COM\-Client zu übergeben.  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Sie können ruhig zum Unterdrücken einer Warnung dieser Regel, wenn andere Möglichkeiten zum Erstellen und übergeben das Objekt an dem COM-Client bereitgestellt werden.  
   
-## Verwandte Regeln  
+## <a name="related-rules"></a>Verwandte Regeln  
  [CA1017: Assemblys mit ComVisibleAttribute markieren](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)  
   
-## Siehe auch  
- [Qualifying .NET Types for Interoperation](../Topic/Qualifying%20.NET%20Types%20for%20Interoperation.md)   
- [Interoperating with Unmanaged Code](../Topic/Interoperating%20with%20Unmanaged%20Code.md)
+## <a name="see-also"></a>Siehe auch  
+ [Qualifizieren von .NET-Typen für die Interoperation](/dotnet/framework/interop/qualifying-net-types-for-interoperation)   
+ [Interoperabilität mit nicht verwaltetem Code](/dotnet/framework/interop/index)

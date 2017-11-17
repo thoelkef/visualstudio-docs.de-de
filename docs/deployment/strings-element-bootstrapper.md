@@ -1,36 +1,36 @@
 ---
-title: "&lt;Strings&gt;-Element (Bootstrapper) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "MSBuild.GenerateBootstrapper.NoStringsForCulture"
-  - "MSBuild.GenerateBootstrapper.ProductCultureNotFound"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<Strings>-Element [Bootstrapper]"
+title: '&lt;Zeichenfolgen&gt; Element (Bootstrapper) | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- MSBuild.GenerateBootstrapper.NoStringsForCulture
+- MSBuild.GenerateBootstrapper.ProductCultureNotFound
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <Strings> element [bootstrapper]
 ms.assetid: d5ea3613-5fc9-4a11-bef3-46a01178bf60
-caps.latest.revision: 4
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 19c4c961dd226ada84fe825643af6d1c7eacc925
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# &lt;Strings&gt;-Element (Bootstrapper)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Definiert lokalisierte Zeichenfolgen für Produktnamen, Paketnamen und Installationsfehlermeldungen.  
+# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Zeichenfolgen&gt; Element (Bootstrapper)
+Definiert die lokalisierte Zeichenfolgen für Produktnamen, Paketnamen und Installationsfehlermeldungen.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <Strings>  
@@ -41,20 +41,20 @@ Definiert lokalisierte Zeichenfolgen für Produktnamen, Paketnamen und Installat
 </Strings>  
 ```  
   
-## Elemente und Attribute  
- Das `Strings`\-Element ist ein untergeordnetes Element des `Package`\-Elements.  Es sind keine Attribute vorhanden.  
+## <a name="elements-and-attributes"></a>Elemente und Attribute  
+ Die `Strings` Element ist ein untergeordnetes Element von der `Package` Element. Es wurden keine Attribute.  
   
-## Zeichenfolge  
- Das `String`\-Element ist ein untergeordnetes Element des `Strings`\-Elements.  Ein `Strings`\-Element kann über ein oder mehrere `String`\-Elemente verfügen.  
+## <a name="string"></a>Zeichenfolge  
+ Die `String` Element ist ein untergeordnetes Element von der `Strings` Element. Ein `Strings` Element möglicherweise eine oder mehrere `String` Elemente.  
   
- `String` verfügt über das folgende Attribut.  
+ `String`hat das folgende Attribut.  
   
 |Attribut|Beschreibung|  
-|--------------|------------------|  
-|`Name`|Erforderlich.  Der Name der Zeichenfolge.|  
+|---------------|-----------------|  
+|`Name`|Erforderlich. Der Name der Zeichenfolge.|  
   
-## Beispiel  
- Im folgenden Codebeispiel werden alle englischen Zeichenfolgen für das [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]\-Installationsprogramm angegeben.  
+## <a name="example"></a>Beispiel  
+ Das folgende Codebeispiel gibt alle englischen Zeichenfolgen für die [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Installer.  
   
 ```  
 <Strings>  
@@ -75,5 +75,5 @@ Definiert lokalisierte Zeichenfolgen für Produktnamen, Paketnamen und Installat
 </Strings>  
 ```  
   
-## Siehe auch  
- [\<Package\>\-Element](../deployment/package-element-bootstrapper.md)
+## <a name="see-also"></a>Siehe auch  
+ [\<Package >-Element](../deployment/package-element-bootstrapper.md)

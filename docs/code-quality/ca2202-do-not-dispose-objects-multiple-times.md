@@ -1,56 +1,55 @@
 ---
-title: "CA2202: Objekte nicht mehrmals verwerfen | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2202"
-  - "Do not dispose objects multiple times"
-  - "DoNotDisposeObjectsMultipleTimes"
-helpviewer_keywords: 
-  - "CA2202"
+title: ': CA2202 Objekte nicht mit mehrmals | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2202
+- Do not dispose objects multiple times
+- DoNotDisposeObjectsMultipleTimes
+helpviewer_keywords: CA2202
 ms.assetid: fa85349a-cf1e-42c8-a86b-eacae1f8bd96
-caps.latest.revision: 20
-caps.handback.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: ab5acc92df96c416cd614ac18ac66ff34d142a22
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CA2202: Objekte nicht mehrmals verwerfen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: Objekte nicht mehrmals verwerfen
 |||  
 |-|-|  
 |TypeName|DoNotDisposeObjectsMultipleTimes|  
 |CheckId|CA2202|  
-|Kategorie \(Category\)|Microsoft.Usage|  
-|Unterbrechende Änderung|Nicht unterbrechend|  
+|Kategorie|Microsoft.Usage|  
+|Unterbrechende Änderung|Nicht unterbrechende Änderung|  
   
-## Ursache  
- Eine Methodenimplementierung enthält Codepfade, die möglicherweise mehrere Aufrufe von <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> oder einer Entsprechung von Dispose, z. B. einer Close\(\)\-Methode für bestimmte Typen, für dasselbe Objekt verursachen.  
+## <a name="cause"></a>Ursache  
+ Eine methodenimplementierung enthält Codepfade, die mehrere Aufrufe von verursachen können <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> oder einer Entsprechung von Dispose, z. B. einer Close()-Methode für bestimmte Typen, die für dasselbe Objekt.  
   
-## Regelbeschreibung  
- Eine ordnungsgemäß implementierte <xref:System.IDisposable.Dispose%2A>\-Methode kann mehrmals aufgerufen werden, ohne dass eine Ausnahme ausgelöst wird.  Da dies jedoch nicht gewährleistet ist, sollten Sie <xref:System.IDisposable.Dispose%2A> nicht mehr als einmal für ein Objekt aufrufen, um zu vermeiden, dass <xref:System.ObjectDisposedException?displayProperty=fullName> generiert wird.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Eine ordnungsgemäß implementierte <xref:System.IDisposable.Dispose%2A> Methode kann mehrfach aufgerufen werden, ohne eine Ausnahme auszulösen. Allerdings ist dies nicht garantiert und zum Generieren von vermeiden einer <xref:System.ObjectDisposedException?displayProperty=fullName> rufen Sie nicht <xref:System.IDisposable.Dispose%2A> mehr als ein Mal für ein Objekt.  
   
-## Verwandte Regeln  
+## <a name="related-rules"></a>Verwandte Regeln  
  [CA2000: Objekte verwerfen, bevor Bereich verloren geht](../code-quality/ca2000-dispose-objects-before-losing-scope.md)  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie die Implementierung so, dass <xref:System.IDisposable.Dispose%2A> unabhängig vom Codepfad nur einmal für das Objekt aufgerufen wird.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Um einen Verstoß gegen diese Regel zu beheben, ändern Sie die Implementierung so, dass unabhängig von der Codepfad <xref:System.IDisposable.Dispose%2A> wird nur ein Mal für das Objekt aufgerufen.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Unterdrücken Sie keine Warnung dieser Regel.  Auch wenn bekannt ist, dass <xref:System.IDisposable.Dispose%2A> für das Objekt gefahrlos mehrfach aufgerufen werden kann, ist es möglich, dass die Implementierung sich zu einem späteren Zeitpunkt ändert.  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Unterdrücken Sie keine Warnung dieser Regel. Auch wenn <xref:System.IDisposable.Dispose%2A> für das Objekt sicher aufgerufen werden können mehrere Male bekannt ist, die Implementierung kann sich in Zukunft ändern.  
   
-## Beispiel  
- Geschachtelte `using`\-Anweisungen \(`Using` in Visual Basic\) können Verletzungen der CA2202\-Warnung verursachen.  Wenn die IDisposable\-Ressource der geschachtelten inneren `using`\-Anweisung die Ressource der äußeren `using`\-Anweisung enthält, gibt die `Dispose`\-Methode der geschachtelten Ressource die enthaltene Ressource frei.  Wenn diese Situation auftritt, versucht die `Dispose`\-Methode der äußeren `using`\-Anweisung, ihre Ressource zu einem zweiten Mal freizugeben.  
+## <a name="example"></a>Beispiel  
+ Geschachtelte `using` Anweisungen (`Using` in Visual Basic) können dazu führen, dass Verstöße gegen die CA2202-Warnung. Wenn die IDisposable-Ressource der geschachtelten inneren `using` -Anweisung enthält, die Ressource des äußeren `using` -Anweisung, die `Dispose` Methode der geschachtelten Ressource frei, die der enthaltene Ressource. Wenn in diesem Fall die `Dispose` Methode des äußeren `using` Anweisung versucht, auf die Ressource ein zweites Mal freizugeben.  
   
- Im folgenden Beispiel wird ein <xref:System.IO.Stream>\-Objekt, das in einer äußeren using\-Anweisung erstellt wurde, am Ende der inneren using\-Anweisung in der Dispose\-Methode des <xref:System.IO.StreamWriter>\-Objekts freigegeben, das das `stream`\-Objekt enthält.  Am Ende der äußeren `using`\-Anweisung wird das `stream`\-Objekt ein zweites Mal freigegeben.  Die zweite Freigabe ist eine Verletzung von CA2202.  
+ Im folgenden Beispiel ein <xref:System.IO.Stream> -Objekt, das in einer äußeren erstellt wird mit-Anweisung am Ende der inneren using-Anweisung in der Dispose-Methode freigegeben ist die <xref:System.IO.StreamWriter> -Objekt, enthält die `stream` Objekt. Am Ende des äußeren `using` -Anweisung, die `stream` Objekt wird ein zweites Mal freigegeben. Die zweite Version ist eine Verletzung von CA2202.  
   
 ```  
 using (Stream stream = new FileStream("file.txt", FileMode.OpenOrCreate))  
@@ -63,14 +62,14 @@ using (Stream stream = new FileStream("file.txt", FileMode.OpenOrCreate))
   
 ```  
   
-## Beispiel  
- Um dieses Problem zu beheben, verwenden Sie einen `try`\/`finally`\-Block statt der äußeren `using`\-Anweisung.  Stellen Sie im `finally`\-Block sicher, dass die `stream`\-Ressource nicht NULL ist.  
+## <a name="example"></a>Beispiel  
+ Verwenden Sie zum Beheben dieses Problems eine `try` / `finally` Block anstelle der äußeren `using` Anweisung. In der `finally` blockieren, stellen Sie sicher, dass die `stream` Ressource ist nicht null.  
   
 ```  
 Stream stream = null;  
 try  
 {  
-    stream = new FileStream("file.txt", FileMode.OpenOrCreate);  
+    stream = new FileStream("file.txt", FileMode.OpenOrCreate);  
     using (StreamWriter writer = new StreamWriter(stream))  
     {  
         stream = null;  
@@ -79,12 +78,12 @@ try
 }  
 finally  
 {  
-    if(stream != null)  
-        stream.Dispose();  
+    if(stream != null)  
+        stream.Dispose();  
 }  
   
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  <xref:System.IDisposable?displayProperty=fullName>   
- [Dispose\-Muster](../Topic/Dispose%20Pattern.md)
+ [Dispose-Muster](/dotnet/standard/design-guidelines/dispose-pattern)

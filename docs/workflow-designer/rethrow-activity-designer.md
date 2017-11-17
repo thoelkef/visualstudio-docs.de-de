@@ -1,39 +1,42 @@
 ---
-title: "Rethrow-Aktivit&#228;tsdesigner | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "System.Activities.Statements.Rethrow.UI"
+title: "Rethrow-Aktivitätsdesigner | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: System.Activities.Statements.Rethrow.UI
 ms.assetid: 9cfa2eda-395f-4cf3-9154-83fadd4f7452
-caps.latest.revision: 5
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: 1a41dd3b640b53689f8eb3ef3c0a02cd3e191df7
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Rethrow-Aktivit&#228;tsdesigner
-Der **Rethrow**\-Aktivitätsdesigner wird verwendet, um eine <xref:System.Activities.Statements.Rethrow>\-Aktivität zu erstellen und zu konfigurieren.  
+# <a name="rethrow-activity-designer"></a>Rethrow-Aktivitätsdesigner
+Die **Rethrow** Aktivitäts-Designer dient zum Erstellen und Konfigurieren einer <xref:System.Activities.Statements.Rethrow> Aktivität.  
   
-## Die Rethrow\-Aktivität  
- Die <xref:System.Activities.Statements.Rethrow>\-Aktivität löst eine zuvor ausgelöste Ausnahme aus.Diese Aktivität kann nur in einem <xref:System.Activities.Statements.Catch>\-Handler in der <xref:System.Activities.Statements.TryCatch> \-Aktivität verwendet werden.  
+## <a name="the-rethrow-activity"></a>Die Rethrow-Aktivität  
+ Die <xref:System.Activities.Statements.Rethrow>-Aktivität löst eine zuvor ausgelöste Ausnahme aus. Diese Aktivität kann nur in einem <xref:System.Activities.Statements.Catch>-Handler in der <xref:System.Activities.Statements.TryCatch> -Aktivität verwendet werden.  
   
-### Verwenden des Rethrow\-Aktivitätsdesigners  
- Der **Rethrow**\-Aktivitätsdesigner befindet sich in der Kategorie **Fehlerbehandlung** der **Toolbox**, auf die Sie zugreifen können, indem Sie auf der linken Seite von [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] auf die Registerkarte **Toolbox** klicken. \(Sie können auch im Menü **Ansicht** den Befehl **Toolbox** auswählen oder STRG\+ALT\+X drücken.\)  
+### <a name="using-the-rethrow-activity-designer"></a>Verwenden des Rethrow-Aktivitätsdesigners  
+ Die **Rethrow** Aktivitäts-Designer finden Sie in der **Fehlerbehandlung** Kategorie von der **Toolbox**, die erfolgt durch Klicken auf die **Toolbox**auf der linken Seite der Registerkarte die [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (Wählen Sie alternativ **Symbolleiste** aus der **Ansicht** Menüs oder STRG + ALT + X.)  
   
- Der **Rethrow**\-Aktivitätsdesigner kann aus der **Toolbox** gezogen und auf der [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]\-Oberfläche dort abgelegt werden, wo Aktivitäten normalerweise platziert werden, etwa innerhalb einer <xref:System.Activities.Statements.Sequence>.Daraufhin wird eine <xref:System.Activities.Statements.Rethrow>\-Aktivität mit dem **DisplayName**\-Standardwert Rethrow erstellt.Der <xref:System.Activities.Activity.DisplayName%2A>\-Wert kann im Header des **Rethrow**\-Aktivitätsdesigners oder im Feld **DisplayName** des Eigenschaftenrasters bearbeitet werden.  
+ Die **Rethrow** Aktivitäts-Designer gezogen werden kann, aus der **Toolbox** gezogen und auf die [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] -Oberfläche ablegen, wo Aktivitäten normalerweise platziert werden, z. B. in einer <xref:System.Activities.Statements.Sequence>. Dies erstellt eine <xref:System.Activities.Statements.Rethrow> -Aktivität mit dem standardmäßigen **DisplayName** -Standardwert Rethrow. Die <xref:System.Activities.Activity.DisplayName%2A> Wert kann im Header des bearbeitet werden die **Rethrow** Aktivitäts-Designer oder in der **DisplayName** Feld des Eigenschaftenrasters.  
   
-### Die Rethrow\-Eigenschaften  
- In der folgenden Tabelle werden die <xref:System.Activities.Statements.Rethrow>\-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden.  
+### <a name="the-rethrow-properties"></a>Die Rethrow-Eigenschaften  
+ In der folgenden Tabelle werden die <xref:System.Activities.Statements.Rethrow>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden.  
   
 |Eigenschaftenname|Erforderlich|Verwendung|  
-|-----------------------|------------------|----------------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Gibt den optionalen Anzeigenamen der <xref:System.Activities.Statements.ReThrow>\-Aktivität an.Der Standardwert lautet Rethrow.|  
+|-------------------|--------------|-----------|  
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Gibt den optionalen Anzeigenamen der <xref:System.Activities.Statements.Rethrow>-Aktivität an. Der Standardwert lautet Rethrow.|  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Auflistung](../workflow-designer/collection-activity-designers.md)   
  [Throw](../workflow-designer/throw-activity-designer.md)   
  [TryCatch](../workflow-designer/trycatch-activity-designer.md)

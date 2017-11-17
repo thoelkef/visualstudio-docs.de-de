@@ -1,98 +1,99 @@
 ---
-title: "GetObject-Funktion (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "GetObject"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "GetObject-Funktion"
+title: GetObject-Funktion (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: GetObject
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: GetObject function
 ms.assetid: 62efcdbc-8b86-491d-9000-ef38aa9942a9
-caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0d8bad127a0f260395a1ec19f44ff2d495006024
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# GetObject-Funktion (JavaScript)
-Gibt einen Verweis auf ein Automatisierungsobjekt aus einer Datei zurück.  
+# <a name="getobject-function-javascript"></a>GetObject-Funktion (JavaScript)
+Gibt einen Verweis auf ein Automatisierungsobjekt aus einer Datei.  
   
 > [!NOTE]
->  Diese Funktion wird in Internet Explorer 9 \(Standardmodus\) oder höher nicht unterstützt.  
+>  Diese Funktion wird nicht in Internet Explorer 9 (Standardmodus) oder höher unterstützt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 GetObject([pathname] [, class])  
 ```  
   
-## Parameter  
+## <a name="parameters"></a>Parameter  
  `pathname`  
- Dies ist optional.  Der vollständige Pfad und Name der Datei, die das abzurufende Objekt enthält.  Wenn `pathname` nicht angegeben wird, ist `class` erforderlich.  
+ Dies ist optional. Vollständiger Pfad und Name der Datei mit dem Objekt abrufen. Wenn `pathname` weggelassen wird, `class` ist erforderlich.  
   
  `class`  
- Dies ist optional.  Klasse des Objekts.  
+ Dies ist optional. Die Klasse des Objekts.  
   
- Das `class`\-Argument verwendet die Syntax `appname.objectype` und verfügt über die folgenden Teile:  
+ Die `class` Argument verwendet die Syntax `appname.objectype` und besteht aus folgenden Teilen:  
   
  `appname`  
- Erforderlich.  Name der Anwendung, die das Objekt bereitstellt.  
+ Erforderlich. Der Name der Anwendung, die das Objekt bereitstellt.  
   
  `objectype`  
- Erforderlich.  Typ oder Klasse des zu erstellenden Objekts.  
+ Erforderlich. Typ oder die Klasse des Objekts zu erstellen.  
   
-## Hinweise  
- Die `GetObject`\-Funktion wird in [!INCLUDE[jsv9text](../../javascript/includes/jsv9text-md.md)] und höher nicht unterstützt.  
+## <a name="remarks"></a>Hinweise  
+ Die `GetObject` Funktion wird nicht unterstützt, [!INCLUDE[jsv9text](../../javascript/includes/jsv9text-md.md)] oder höher.  
   
- Verwenden Sie die `GetObject`\-Funktion, um auf ein Automatisierungsobjekt aus einer Datei zuzugreifen.  Weisen Sie der Objektvariablen das durch `GetObject` zurückgegebene Objekt zu.  Beispiel:  
+ Verwenden der `GetObject` Funktion auf ein Automatisierungsobjekt aus einer Datei zuzugreifen. Weisen Sie das zurückgegebene Objekt `GetObject` Objektvariablen. Zum Beispiel:  
   
-```javascript  
+```JavaScript  
 var CADObject;  
 CADObject = GetObject("C:\\CAD\\SCHEMA.CAD");  
 ```  
   
- Wenn dieser Code ausgeführt wird, wird die in `pathname` angegebene Anwendung gestartet, und das Objekt in der angegebenen Datei wird aktiviert.  Ist `pathname` eine Zeichenfolge mit der Länge 0 \(""\), gibt `GetObject` eine neue Objektinstanz des angegebenen Typs zurück.  Wird das `pathname`\-Argument nicht angegeben, gibt `GetObject` ein gegenwärtig aktives Objekt des angegebenen Typs zurück.  Wenn kein Objekt des angegebenen Typs vorhanden ist, tritt ein Fehler auf.  
+ Wenn dieser Code ausgeführt wird, die Anwendung mit dem angegebenen `pathname` gestartet wird, und das Objekt in der angegebenen Datei aktiviert ist. Wenn `pathname` ist eine leere Zeichenfolge (""), `GetObject` gibt eine neue Objektinstanz des angegebenen Typs zurück. Wenn die `pathname` Argument nicht angegeben wird, `GetObject` gibt ein derzeit aktive Objekt des angegebenen Typs zurück. Wenn kein Objekt des angegebenen Typs vorhanden ist, tritt ein Fehler auf.  
   
- Einige Anwendungen bieten die Möglichkeit, eine Datei teilweise zu aktivieren.  Dazu fügen Sie hinter dem Dateinamen ein Ausrufezeichen \(\!\) ein, gefolgt von der Zeichenfolge, die den zu aktivierenden Teil der Datei identifiziert.  Weitere Informationen über das Erstellen dieser Zeichenfolge finden Sie in der Dokumentation der Anwendung, mit der das Objekt erstellt wurde.  
+ Einige Anwendungen können Sie Teil einer Datei zu aktivieren. Zu diesem Zweck fügen Sie am Ende des Dateinamens ein Ausrufezeichen (!), und führen Sie es mit der eine Zeichenfolge, die Teil der Datei identifiziert, die Sie aktivieren möchten. Informationen zum Erstellen dieser Zeichenfolge finden in der Dokumentation für die Anwendung, die das Objekt erstellt.  
   
- Möglicherweise haben Sie z. B. in einem Zeichenprogramm mehrere Ebenen einer Zeichnung in einer Datei gespeichert.  Mit folgendem Code können Sie eine Ebene in einer Zeichnung mit dem Namen `SCHEMA.CAD` aktivieren:  
+ Möglicherweise haben in einem Zeichenprogramm mehrere Ebenen einer Zeichnung in einer Datei gespeichert. Können Sie den folgenden Code zum Aktivieren einer Ebene innerhalb einer Zeichnung namens `SCHEMA.CAD`:  
   
-```javascript  
+```JavaScript  
 var LayerObject = GetObject("C:\\CAD\\SCHEMA.CAD!Layer3");  
 ```  
   
- Wenn Sie die Objektklasse nicht angeben, bestimmt die Automatisierung anhand des von Ihnen angegebenen Dateinamens, welche Anwendung gestartet und welches Objekt aktiviert wird.  Einige Dateien unterstützen u. U. jedoch auch mehrere Objektklassen.  Eine Zeichnung kann z. B. drei unterschiedliche Objekttypen unterstützen: Ein Anwendungsobjekt, ein Zeichenobjekt und ein Symbolleistenobjekt, die sich alle in derselben Datei befinden.  Um anzugeben, welches Objekt in einer Datei aktiviert werden soll, verwenden Sie das optionale `class`\-Argument.  Beispiel:  
+ Wenn Sie die Klasse des Objekts nicht angeben, bestimmt die Automatisierung basierend auf den Dateinamen ein, den Sie bereitstellen, welche die Anwendung gestartet und welches Objekt aktiviert wird. Einige Dateien unterstützen möglicherweise jedoch mehr als eine Klasse des Objekts. Eine Zeichnung könnte z. B. drei verschiedene Typen von Objekten unterstützen: ein Anwendungsobjekt, ein Zeichnungsobjekt und ein Symbolleistenobjekt, die Teil der gleichen Datei sind. Um anzugeben, welches Objekt in einer Datei, die Sie aktivieren möchten, verwenden Sie das optionale `class` Argument. Zum Beispiel:  
   
-```javascript  
+```JavaScript  
 var MyObject;  
 MyObject = GetObject("C:\\DRAWINGS\\SAMPLE.DRW", "FIGMENT.DRAWING");  
 ```  
   
- Im vorherigen Beispiel ist `FIGMENT` der Name des Zeichenprogramms, und `DRAWING` ist einer der vom Programm unterstützten Objekttypen.  Sobald ein Objekt aktiviert ist, wird im Code über die definierte Objektvariable darauf verwiesen.  Im vorherigen Beispiel greifen Sie über die `MyObject`\-Objektvariable auf Eigenschaften und Methoden des neuen Objekts zu.  Beispiel:  
+ Im vorherigen Beispiel `FIGMENT` ist der Name des eine zeichenanwendung und `DRAWING` ist eines der Objekttypen, die es unterstützt. Sobald ein Objekt aktiviert ist, verweisen Sie ihn im Code mithilfe von Object-Variablen, die Sie definiert. Im vorherigen Beispiel aus, den Sie Eigenschaften und Methoden des neuen Objekts, wobei die Objektvariable zugreifen `MyObject`. Zum Beispiel:  
   
-```javascript  
+```JavaScript  
 MyObject.Line(9, 90);  
 MyObject.InsertText(9, 100, "Hello, world.");  
 MyObject.SaveAs("C:\\DRAWINGS\\SAMPLE.DRW");  
 ```  
   
 > [!NOTE]
->  Verwenden Sie die `GetObject`\-Funktion, wenn eine aktuelle Instanz des Objekts vorhanden ist oder Sie das Objekt mit einer bereits geladenen Datei erstellen möchten.  Falls keine aktuelle Instanz vorhanden ist und das Objekt nicht mit einer geladenen Datei erstellt werden soll, verwenden Sie das `ActiveXObject`\-Objekt.  
+>  Verwenden der `GetObject` -Funktion, wenn eine aktuelle Instanz des Objekts vorhanden ist oder wenn Sie möchten, zum Erstellen des Objekts mit eine Datei bereits geladen. Wenn keine aktuelle Instanz vorhanden ist und Sie möchten schließlich nicht das Objekt mit eine Datei geladen wurde, verwenden Sie die `ActiveXObject` Objekt.  
   
- Wenn sich ein Objekt als Einzelinstanzobjekt registriert hat, wird nur eine einzige Instanz dieses Objekts erstellt, unabhängig davon, wie oft `ActiveXObject` ausgeführt wird.  Bei einem Einzelinstanzobjekt gibt `GetObject` bei einem Aufruf mit der Syntax für eine Zeichenfolge der Länge 0 \(""\) stets dieselbe Instanz zurück, und es tritt ein Fehler auf, wenn das `pathname`\-Argument nicht angegeben wird.  
+ Wenn ein Objekt als ein Einzelinstanz-Objekt registriert hat, nur eine Instanz des Objekts wird erstellt, unabhängig davon, wie oft `ActiveXObject` ausgeführt wird. Bei einem Einzelinstanz-Objekt `GetObject` immer die gleiche Instanz bei einem Aufruf mit der Zeichenfolge der Länge 0 (null) zurück ("")-Syntax, und es tritt einen Fehler auf, wenn die `pathname` Argument nicht angegeben wird.  
   
-## Anforderungen  
- Wird in den folgenden Dokumentmodi unterstützt: Quirksmodus, Internet Explorer 6 \(Standardmodus\), Internet Explorer 7 \(Standardmodus\) und Internet Explorer 8 \(Standardmodus\).  Siehe [Versionsinformationen](../../javascript/reference/javascript-version-information.md).  
+## <a name="requirements"></a>Anforderungen  
+ In den folgenden Dokumentmodi unterstützt: Quirksmodus, Internet Explorer 6-Standardmodus, Internet Explorer 7-Standardmodus und Internet Explorer 8 (Standardmodus). Siehe [Versionsinformationen](../../javascript/reference/javascript-version-information.md).  
   
-## Siehe auch  
- [ActiveXObject\-Objekt](../../javascript/reference/activexobject-object-javascript.md)
+## <a name="see-also"></a>Siehe auch  
+ [ActiveXObject-Objekt](../../javascript/reference/activexobject-object-javascript.md)

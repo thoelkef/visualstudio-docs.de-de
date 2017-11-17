@@ -1,50 +1,51 @@
 ---
-title: "CA1505: Nicht wartbaren Code vermeiden | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "AvoidUnmaintainableCode"
-  - "CA1505"
-helpviewer_keywords: 
-  - "AvoidUnmaintainableCode"
-  - "CA1505"
+title: 'CA1505: Nicht wartbaren Code vermeiden | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- AvoidUnmaintainableCode
+- CA1505
+helpviewer_keywords:
+- AvoidUnmaintainableCode
+- CA1505
 ms.assetid: 8292b268-5929-4221-b699-f9c414bcec5d
-caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 3f31e213d621b64143f17735874238432118fe57
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CA1505: Nicht wartbaren Code vermeiden
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1505-avoid-unmaintainable-code"></a>CA1505: Nicht wartbaren Code vermeiden
 |||  
 |-|-|  
 |TypeName|AvoidUnmantainableCode|  
 |CheckId|CA1505|  
-|Kategorie \(Category\)|Microsoft.Maintainability|  
+|Kategorie|Microsoft.Maintainability|  
 |Unterbrechende Änderung|Nicht unterbrechend|  
   
-## Ursache  
+## <a name="cause"></a>Ursache  
  Ein Typ oder eine Methode verfügt über einen niedrigen Wartbarkeitsindexwert.  
   
-## Regelbeschreibung  
- Der Wartbarkeitsindex wird auf der Grundlage der folgenden Metriken berechnet: Codezeilen, Programmumfang und zyklomatische Komplexität.  Der Programmumfang ist ein Maßstab für die Schwierigkeit, einen Typ oder eine Methode zu verstehen, und basiert auf der Anzahl von Operatoren und Operanden im Code.  Zyklomatische Komplexität ist ein Maß der strukturellen Komplexität des Typs oder der Methode.  Sie können mehr zur Codemetrik unter [Messen von Komplexität und Verwaltbarkeit verwalteten Codes](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md) erfahren.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Der Wartbarkeitsindex wird berechnet, indem Sie die folgenden Metriken: Codezeilen, Programm Volume und zyklomatische Komplexität. Programm-Volume ist ein Maß für die Schwierigkeit Kenntnisstand eines Typs oder einer Methode, die basierend auf der Anzahl von Operatoren und Operanden in den Code. Zyklomatische Komplexität ist ein Maß der strukturellen Komplexität des Typs oder der Methode. Weitere Informationen finden Sie Informationen zu Codemetrik am [Messen von Komplexität und verwaltbarkeit von verwaltetem Code](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md).  
   
- Ein niedriger Wartbarkeitsindex zeigt an, dass ein Typ oder eine Methode wahrscheinlich schwer zu verwalten ist und geeignet für einen Neuentwurf wäre.  
+ Ein niedriger Wartbarkeitsindex zeigt an, dass ein Typ oder eine Methode wahrscheinlich schwer zu verwalten und Umgestalten geeignet wäre.  
   
-## Behandeln von Verstößen  
- Um diesen Verstoß zu behandeln, gestalten Sie den Typ oder die Methode um und unterteilen sie in kleinere präzisere Typen oder Methoden.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Um diese Verstoß zu beheben, gestalten Sie den Typ oder die Methode aus, und versuchen Sie es verkleinern und genauer spezifizieren Typen oder Methoden aufgeteilt.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Schließen Sie diese Warnung aus, wenn ein Typ oder eine Methode trotz der umfangreichen Größe weiterhin als verwaltbar angesehen wird oder wenn der Typ oder die Methode nicht unterteilt werden kann.  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Schließen Sie diese Warnung, wenn ein Typ oder eine Methode weiterhin als verwaltbar angesehen wird trotz seiner Größe oder wenn der Typ oder Methode unterteilt werden kann.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Verwaltbarkeitswarnungen](../code-quality/maintainability-warnings.md)   
  [Messen von Komplexität und Verwaltbarkeit verwalteten Codes](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

@@ -1,53 +1,52 @@
 ---
-title: "IDiaSession::findLinesByVA | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSession::findLinesByVA-Methode"
+title: 'Idiasession:: Findlinesbyva | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSession::findLinesByVA method
 ms.assetid: f647eee9-a73c-483b-9fe9-21f42e560a7b
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ba8c06066c78505d915834f2ffcc1d8c634a1c73
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findLinesByVA
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft die Zeilennummerninformationen für die Zeilen ab, die in einem angegebenen Bereich enthaltenen der virtuellen Adresse \(VA\).  
+# <a name="idiasessionfindlinesbyva"></a>IDiaSession::findLinesByVA
+Ruft die Zeilennummerninformationen für Zeilen, die in einem angegebenen virtuellen Adresse ("VA" ist) Bereich enthalten sind.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT findLinesByVA (   
-   ULONGLONG             va,  
-   DWORD                 length,  
-   IDiaEnumLineNumbers** ppResult  
+```C++  
+HRESULT findLinesByVA (   
+   ULONGLONG             va,  
+   DWORD                 length,  
+   IDiaEnumLineNumbers** ppResult  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `va`  
- \[in\]  Gibt die Adresse als VA an.  
+ [in] Gibt die Adresse als eine VA.  
   
  `length`  
- \[in\]  Gibt die Anzahl der Bytes Adressbereich an, die mit dieser Abfrage abzudecken.  
+ [in] Gibt die Anzahl der Bytes der Adressbereich aus, um mit dieser Abfrage abzudecken.  
   
  `ppResult`  
- \[out\]  Gibt ein [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)\-Objekt zurück, das eine Liste aller Zeilennummern enthält, die mit dem angegebenen Adressbereich enthalten.  
+ [out] Gibt eine [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) -Objekt, das eine Liste aller Einzelposten enthält Zahlen, deckt der angegebene Adressbereich.  
   
-## Beispiel  
- In diesem Beispiel wird eine Funktion veranschaulicht, die alle Zeilennummern erhält, die in einer Funktion mit virtuellen Adresse der Funktion und der Länge.  
+## <a name="example"></a>Beispiel  
+ Dieses Beispiel zeigt eine Funktion, die alle in einer Funktion mit der virtuellen Adresse der Funktion und die Länge enthaltene Zeilennummern abruft.  
   
-```cpp#  
+```C++  
 IDiaEnumLineNumbers *GetLineNumbersByVA(IDiaSymbol *pFunc, IDiaSession *pSession)  
 {  
     IDiaEnumLineNumbers* pEnum = NULL;  
@@ -63,6 +62,6 @@ IDiaEnumLineNumbers *GetLineNumbersByVA(IDiaSymbol *pFunc, IDiaSession *pSession
 }  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

@@ -1,54 +1,55 @@
 ---
-title: "CA2219: Keine Ausnahmen in Ausnahmeklauseln ausl&#246;sen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DoNotRaiseExceptionsInExceptionClauses"
-  - "CA2219"
-helpviewer_keywords: 
-  - "CA2219"
-  - "DoNotRaiseExceptionsInExceptionClauses"
+title: "CA2219: Keine Ausnahmen in Ausnahmeklauseln auslösen | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- DoNotRaiseExceptionsInExceptionClauses
+- CA2219
+helpviewer_keywords:
+- DoNotRaiseExceptionsInExceptionClauses
+- CA2219
 ms.assetid: 7b9b0bee-4e8e-49a4-8c40-52142b49061f
-caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: da4b337ad0efb3a4876857bd07efb391dc040405
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CA2219: Keine Ausnahmen in Ausnahmeklauseln ausl&#246;sen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2219-do-not-raise-exceptions-in-exception-clauses"></a>CA2219: Keine Ausnahmen in Ausnahmeklauseln auslösen
 |||  
 |-|-|  
 |TypeName|DoNotRaiseExceptionsInExceptionClauses|  
 |CheckId|CA2219|  
-|Kategorie \(Category\)|Microsoft.Usage|  
-|Unterbrechende Änderung|Nicht unterbrechend, unterbrechend|  
+|Kategorie|Microsoft.Usage|  
+|Unterbrechende Änderung|Wichtige nicht unterbrechende Änderung|  
   
-## Ursache  
- Von `finally`, einem Filter oder einer fault\-Klausel wird eine Ausnahme ausgelöst.  
+## <a name="cause"></a>Ursache  
+ Eine Ausnahme wird ausgelöst, aus einer `finally`, Filter- oder Fault-Klausel.  
   
-## Regelbeschreibung  
- Wenn eine Ausnahme in einer Ausnahmeklausel ausgelöst wird, wird das Debuggen deutlich erschwert.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Wenn eine Ausnahme in einer Ausnahmeklausel ausgelöst wird, wird die Schwierigkeit des Debuggens erheblich erhöht.  
   
- Wenn eine Ausnahme in einer `finally`\- oder fault\-Klausel ausgelöst wird, wird die aktive Ausnahme, falls vorhanden, von der neuen Ausnahme verdeckt.  Dadurch ist der ursprüngliche Fehler nur schwer zu erkennen und zu debuggen.  
+ Wenn eine Ausnahme ausgelöst wird, einem `finally` oder Fault-Klausel, der neuen Ausnahme verdeckt die aktive Ausnahme, falls vorhanden. Dies ist der ursprüngliche Fehler schwer zu erkennen und zu debuggen.  
   
- Wenn in einer Filterklausel eine Ausnahme ausgelöst wird, wird die Ausnahme durch die Laufzeit automatisch abgefangen, wodurch der Filter mit false ausgewertet wird.  Es kann nicht unterschieden werden, ob der Filter mit false ausgewertet wird oder ob eine Ausnahme von einem Filter ausgelöst wurde.  Dadurch können Fehler in der Filterlogik nur schwer ermittelt und debuggt werden.  
+ Wenn eine Ausnahme in einer Filterklausel ausgelöst wird, die Laufzeit automatisch fängt die Ausnahme ab, und bewirkt, dass den Filter auf "false" ausgewertet. Es gibt keine Möglichkeit, um den Unterschied zwischen der Filter auswerten auf "false" und eine Ausnahme, die von einem Filter ausgelöst wird. Dies ist schwer zu erkennen und Debuggen von Fehlern in die Filterlogik.  
   
-## Behandeln von Verstößen  
- Um diesen Verstoß gegen diese Regel zu beheben, lösen Sie keine explizite Ausnahme von `finally`, einem Filter oder einer fault\-Klausel aus.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Um diese Verstoß gegen diese Regel zu beheben, führen Sie nicht explizit löst eine Ausnahme aus einer `finally`, Filter- oder Fault-Klausel.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Unterdrücken Sie keine Warnung dieser Regel.  Es gibt keine Szenarien, in denen eine durch eine Ausnahmeklausel ausgelöste Ausnahme einen Vorteil gegenüber dem ausführenden Code darstellt.  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Unterdrücken Sie keine Warnung dieser Regel. Es gibt keine Szenarien, die unter denen eine Ausnahme ausgelöst, die in einer Ausnahmeklausel an einen Vorteil gegenüber dem ausgeführten Code enthält.  
   
-## Verwandte Regeln  
+## <a name="related-rules"></a>Verwandte Regeln  
  [CA1065: Keine Ausnahmen an unerwarteten Speicherorten auslösen](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Entwurfswarnungen](../code-quality/design-warnings.md)

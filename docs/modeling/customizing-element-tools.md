@@ -1,33 +1,35 @@
 ---
-title: "Anpassen von Elementtools | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Anpassen von Elementtools | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 6dac48b6-db68-4bcd-8aa2-422c2ad5d28b
-caps.latest.revision: 6
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 2555fe2be42ed58482cdacf174a6cb035a8d7bd5
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Anpassen von Elementtools
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-In einigen DSL\-Definitionen stellen Sie ein einzelnes Konzept als eine Gruppe von Elementen dar. Wenn Sie ein Modell, in dem eine Komponente einen festen Satz von Ports erstellen, z. B. Sie immer die Ports, die zur gleichen Zeit wie die übergeordnete Komponente erstellt werden. Daher müssen Sie das Element Creation\-Tool so anpassen, dass es sich um eine Gruppe von Elementen statt einem erstellt. Um dies zu erreichen, können Sie anpassen, wie das Tool zur Erstellung von Element initialisiert wird.  
+# <a name="customizing-element-tools"></a>Anpassen von Elementtools
+In einigen DSL-Definitionen stellen Sie ein einzelnes Konzept als eine Gruppe von Elementen dar. Wenn Sie ein Modell, in dem eine Komponente einen festen Satz von Ports erstellen, möchten Sie z. B. immer die Ports, die zur gleichen Zeit wie die übergeordnete Komponente erstellt werden. Aus diesem Grund müssen Sie die Element-Creation-Tool anpassen, sodass es sich um eine Gruppe von Elementen, die statt einem erstellt. Um dies zu erreichen, können Sie anpassen, wie das Tool zur Erstellung von Element initialisiert wird.  
   
  Sie können auch überschreiben, was geschieht, wenn das Tool auf das Diagramm oder ein Element gezogen wird.  
   
-## Anpassen des Inhalts eines Elementtools  
- Jedes Elementtool speichert eine Instanz einer <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> \(EGP\), die eine serialisierte Version des einen oder mehrere Modellelemente und Links enthält. Standardmäßig enthält die EGP eines Elementtools eine Instanz der Klasse, die Sie für das Tool angeben. Sie können dies ändern, indem Sie überschreiben *Ihresprache*`ToolboxHelper.CreateElementToolPrototype`. Diese Methode wird aufgerufen, wenn die DSL\-Paket geladen wird.  
+## <a name="customizing-the-content-of-an-element-tool"></a>Anpassen des Inhalts der Elementtool  
+ Jedes Elementtool speichert eine Instanz von einem <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP), die eine serialisierte Version ist eine oder mehrere Modellelemente und Links enthält. Standardmäßig enthält die EGP eine Element-Tools eine Instanz der Klasse, die Sie für das Tool angeben. Sie können ändern, indem überschreiben *YourLanguage*`ToolboxHelper.CreateElementToolPrototype`. Diese Methode wird aufgerufen, wenn der DSL-Paket geladen wird.  
   
- Ein Parameter der Methode ist die ID der Klasse, die Sie in der DSL\-Definition angegeben. Wenn die Methode mit der Klasse, die Sie interessiert sind aufgerufen wird, können Sie zusätzliche Elemente, die in der EGP hinzufügen.  
+ Ein Parameter der Methode ist die ID der Klasse, die Sie in der DSL-Definition angegeben. Wenn die Methode mit der Klasse, die Sie interessiert sind aufgerufen wird, können Sie zusätzliche Elemente in der EGP hinzufügen.  
   
- Die EGP muss einbetten Links von einem Haupt\-Element an die untergeordnete Elemente enthalten. Er kann auch Ressourcenlinks enthalten.  
+ Die EGP muss das Einbetten von Links von einem Haupt Element an die untergeordnete Elemente enthalten. Er kann auch Links zu Referenzen enthalten.  
   
- Das folgende Beispiel erstellt ein Hauptelement und zwei eingebettete Elemente. Die Hauptklasse Widerstand bezeichnet wird, und es hat zwei einbettende Beziehungen zu Elementen, die mit dem Namen Terminal. Die Einbetten von Rolleneigenschaften heißen Terminal1 und Terminal2, und beide verfügen über eine Multiplizität von 1..1.  
+ Das folgende Beispiel erstellt eine main-Element und zwei eingebetteten Elemente. Die Hauptklasse wird Widerstand aufgerufen, und er verfügt über zwei Einbetten von Beziehungen zu Elementen, die mit dem Namen Terminaldienste. Einbetten von Rolleneigenschaften heißen Terminal1 und Terminal2, und beide verfügen über eine Multiplizität von 1..1.  
   
 ```  
 using Microsoft.VisualStudio.Modeling; ...    
@@ -59,5 +61,5 @@ public partial class CircuitDiagramToolboxHelper
 }  
 ```  
   
-## Siehe auch  
- [Anpassen der Elementerstellung und \-verschiebung](../modeling/customizing-element-creation-and-movement.md)
+## <a name="see-also"></a>Siehe auch  
+ [Anpassen der Elementerstellung und -verschiebung](../modeling/customizing-element-creation-and-movement.md)

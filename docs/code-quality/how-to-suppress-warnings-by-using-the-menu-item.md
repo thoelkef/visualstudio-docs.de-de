@@ -1,44 +1,45 @@
 ---
-title: "Gewusst wie: Unterdr&#252;cken von Warnungen &#252;ber das Men&#252;element | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Warnungen, unterdrücken"
-  - "Codeanalyse, Unterdrücken von Warnungen"
+title: "Vorgehensweise: Unterdrücken von Warnungen über das Menüelement | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- warnings, suppressing
+- code analysis, suppressing warnings
 ms.assetid: 36bd1850-dcde-4ed0-9bc3-0b83df434362
-caps.latest.revision: 24
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: a197170285a8f8a9d3f0cc01638557f30fd1f126
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Unterdr&#252;cken von Warnungen &#252;ber das Men&#252;element
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="how-to-suppress-warnings-by-using-the-menu-item"></a>Gewusst wie: Unterdrücken von Warnungen über das Menüelement
 > [!NOTE]
->  In der Unterdrückung im Quellcode wird für Websiteprojekte nicht unterstützt.  
+>  In der Quelle ist die Unterdrückung für Websiteprojekte nicht unterstützt.  
   
- Sie können das Codeanalysefenster verwenden, um Codeanalysewarnungen zu unterdrücken.  Eine Warnung zu unterdrücken ist nicht identisch, es deaktivieren.  Wenn Sie eine Warnung unterdrücken, gilt dies nur für eine bestimmte Instanz der Regelverletzung.  Andere Verletzungen, auf die mit der gleichen Warnung hingewiesen wird, werden weiterhin im Fenster Fehlerliste aufgeführt.  
+ Codeanalysefenster können zum Unterdrücken der codeanalysewarnungen. Unterdrücken eine Warnung ist nicht identisch mit der Deaktivierung. Wenn Sie eine Warnung zu unterdrücken, gilt er nur für eine bestimmte Instanz des Verstoßes. Weiteren Verletzungen der gleichen Warnung werden weiterhin in das Fenster "Fehlerliste" angezeigt.  
   
- Nachdem Sie eine Codeanalyse ausführen, stellen Sie möglicherweise fest, dass eine oder mehrere der Codeanalysewarnungen, die im Codeanalysefenster angezeigt werden, nicht in der Anwendung auf.  Sie kommen möglicherweise zu dem Schluss, dass der Code im aktuellen Zustand richtig ist.  Oder vielleicht liegen Regelverletzungen vor, die aber eine so geringe Priorität haben, dass sie im aktuellen Entwicklungszyklus nicht korrigiert werden.  Unabhängig vom jeweiligen Grund anzugeben ist häufig nützlich, dass die Warnung nicht zutreffend ist, die Teammitglieder erkennen, dass der Code bereits überprüft wurde und dass es bestimmt wurde, die Warnung zu unterdrücken.  In der Unterdrückung im Quellcode ist hilfreich, da Sie setzen können Unterdrückung eng an, der die Warnung generiert wird.  
+ Nachdem Sie die Codeanalyse ausführen, können Sie ermitteln, dass eine oder mehrere der Warnungen der Codeanalyse im codeanalysefenster angezeigt werden nicht für Ihre Anwendung gelten. Beispielsweise können Sie ermitteln, dass der Code korrekt ist. Alternativ ist es möglicherweise der Fall, dass einige Verstöße mit niedriger Priorität und werden nicht in der aktuellen Entwicklungszyklus behoben. Unabhängig von der Ursache ist es häufig nützlich, um anzugeben, dass die Warnung ist nicht anwendbar, lassen die Teammitglieder, die wissen, dass der Code überprüft wurde und festgestellt wurde, dass die Warnung unterdrückt werden konnte. Im Quellcode ist Unterdrückung nützlich, da es ermöglicht eine Unterdrückung in der Nähe, wo die Warnung generiert wird.  
   
- Sie können auswählen, ob die Unterdrückung im Quellcode oder in der globalen Unterdrückungsdatei angezeigt wird.  Einige Unterdrückungen müssen in die globale Unterdrückungsdatei eingefügt werden.  In diesem Fall wird die Option **In Quelle** deaktiviert.  
+ Sie können auswählen, ob die Unterdrückung im Quellcode oder in der globalen Unterdrückungsdatei angezeigt wird. Einige Unterdrückungen müssen in der globalen Unterdrückungsdatei eingefügt werden. Wenn dies der Fall ist die **In Quelle** die Option deaktiviert.  
   
-### So unterdrücken Sie eine Warnung über das Menüelement  
+### <a name="to-suppress-a-warning-by-using-menu-item"></a>Zum Unterdrücken einer Warnung mithilfe von Menüelement  
   
-1.  Klicken Sie im Menü **Analysieren** wählen Sie **Fenster** und wählen Sie dann **Codeanalyse** aus.  
+1.  Auf der **analysieren** Menü wählen **Windows** und wählen Sie dann **Codeanalyse**.  
   
-2.  Im Fenster **Codeanalyse** wählen Sie die Warnung unterdrücken aus.  
+2.  In der **Codeanalyse** Fenster, wählen Sie die Warnung unterdrücken.  
   
-3.  Wählen Sie Aktionen aus, wählen Sie **Meldung unterdrücken** und wählen Sie dann entweder **In Quelle** oder **In Projektunterdrückungsdatei**.  
+3.  Wählen Sie die Aktionen, und wählen Sie dann **Meldung(en) unterdrücken**, und wählen Sie dann entweder **In Quelle** oder **im Projektunterdrückungsdatei**.  
   
-     Die betreffende Warnung wird unterdrückt, und die Warnung wird im Codeanalysefenster durchgestrichen.  
+     Die betreffende Warnung wird unterdrückt, und die Warnung wird im Fenster "Codeanalyse" durchgestrichen angezeigt.  
   
 > [!NOTE]
->  Unterdrückungen ohne Ziel werden in der globalen Unterdrückungsdatei angezeigt.
+>  Unterdrückungen, die nicht über ein Ziel verfügen werden in der globalen Unterdrückungsdatei angezeigt.

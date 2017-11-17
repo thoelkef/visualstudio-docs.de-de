@@ -1,38 +1,41 @@
 ---
-title: "Persist-Aktivit&#228;tsdesigners | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "System.Activities.Statements.Persist.UI"
+title: "Persist-Aktivitätsdesigners | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: System.Activities.Statements.Persist.UI
 ms.assetid: be8648dd-3eb9-4a50-8ec1-57a8be804692
-caps.latest.revision: 6
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: 0fa7868d814b1ee5079cba69b9d54665ad1e4a47
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Persist-Aktivit&#228;tsdesigners
-Der **Persist**\-Aktivitätsdesigner wird verwendet, um eine <xref:System.Activities.Statements.Persist>\-Aktivität zu erstellen und zu konfigurieren.  
+# <a name="persist-activity-designer"></a>Persist-Aktivitätsdesigners
+Die **Persist** Aktivitäts-Designer dient zum Erstellen und Konfigurieren einer <xref:System.Activities.Statements.Persist> Aktivität.  
   
-## Die Persist\-Aktivität  
- Wenn möglich, speichert die <xref:System.Activities.Statements.Persist>\-Aktivität einen Workflow auf dem Datenträger.Die <xref:System.Activities.Statements.Persist>\-Aktivität kann nicht in einem Bereich ohne Persistenz ausgeführt werden, z. B. innerhalb einer <xref:System.Activities.Statements.TransactionScope>\-Aktivität.Wenn Sie eine <xref:System.Activities.Statements.Persist>\-Aktivität in einem Bereich ohne Persistenz verwenden, wird zur Laufzeit eine Ausnahme ausgelöst.  
+## <a name="the-persist-activity"></a>Die Persist-Aktivität  
+ Wenn möglich, speichert die <xref:System.Activities.Statements.Persist>-Aktivität einen Workflow auf dem Datenträger. Die <xref:System.Activities.Statements.Persist>-Aktivität kann nicht in einem Bereich ohne Persistenz ausgeführt werden, z. B. innerhalb einer <xref:System.Activities.Statements.TransactionScope>-Aktivität. Wenn Sie eine <xref:System.Activities.Statements.Persist>-Aktivität in einem Bereich ohne Persistenz verwenden, wird zur Laufzeit eine Ausnahme ausgelöst.  
   
-### Verwenden des Persist\-Aktivitätsdesigners  
- Der **Persist**\-Aktivitätsdesigner befindet sich in der Kategorie **Laufzeit** der **Toolbox**, auf die Sie durch Klicken auf die Registerkarte **Toolbox** zugreifen. \(Sie können stattdessen auch im Menü **Ansicht** die Option **Toolbox** auswählen oder STRG\+ALT\+X drücken.\)  
+### <a name="using-the-persist-activity-designer"></a>Verwenden des Persist-Aktivitätsdesigners  
+ Die **Persist** Aktivitäts-Designer finden Sie in der **Runtime** Kategorie von der **Toolbox**, die erfolgt durch Klicken auf die **Toolbox** Registerkarte "(Wählen Sie alternativ **Toolbox** aus der **Ansicht** Menüs oder STRG + ALT + X.)  
   
- Der **Persist**\-Aktivitätsdesigner kann aus der **Toolbox** gezogen und auf der [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]\-Oberfläche dort abgelegt werden, wo Aktivitäten normalerweise platziert werden, etwa innerhalb einer <xref:System.Activities.Statements.Sequence>.Daraufhin wird eine <xref:System.Activities.Statements.Persist>\-Aktivität mit dem **DisplayName**\-Standardwert Persist erstellt.Der <xref:System.Activities.Activity.DisplayName%2A>\-Wert kann im Header des **Persist**\-Aktivitätsdesigners oder im Feld **DisplayName** des Eigenschaftenrasters bearbeitet werden.  
+ Die **Persist** Aktivitäts-Designer gezogen werden kann, aus der **Toolbox** gezogen und auf die [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] -Oberfläche ablegen, wo Aktivitäten normalerweise platziert werden, z. B. in einem <xref:System.Activities.Statements.Sequence>. Dies erstellt eine <xref:System.Activities.Statements.Persist> -Aktivität mit dem standardmäßigen **DisplayName** -Standardwert Persist. Die <xref:System.Activities.Activity.DisplayName%2A> kann im Header des bearbeitet werden die **Persist** Aktivitäts-Designer oder in der **DisplayName** Feld des Eigenschaftenrasters.  
   
-### Die Persist\-Eigenschaften  
- In der folgenden Tabelle werden die <xref:System.Activities.Statements.Persist>\-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden.Diese Eigenschaften können im Eigenschaftenraster bearbeitet werden, einige davon können auch auf der [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]\-Oberfläche bearbeitet werden.  
+### <a name="the-persist-properties"></a>Die Persist-Eigenschaften  
+ In der folgenden Tabelle werden die <xref:System.Activities.Statements.Persist>-Eigenschaften aufgeführt, und es wird beschrieben, wie sie im Designer verwendet werden. Diese Eigenschaften können im Eigenschaftenraster bearbeitet werden, einige davon können auch auf der [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]-Oberfläche bearbeitet werden.  
   
 |Eigenschaftenname|Erforderlich|Verwendung|  
-|-----------------------|------------------|----------------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Gibt den Anzeigenamen der <xref:System.Activities.Statements.Persist>\-Aktivität an.Der Standardwert lautet Persist.Obwohl der Anzeigename nicht unbedingt erforderlich ist, ist es eine Best Practice, einen Anzeigenamen zu verwenden.|  
+|-------------------|--------------|-----------|  
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Der Anzeigename der <xref:System.Activities.Statements.Persist>-Aktivität. Der Standardwert lautet Persist. Obwohl der Anzeigename nicht unbedingt erforderlich ist, wird empfohlen, einen Anzeigenamen zu verwenden.|  
   
-## Siehe auch  
- [Laufzeit](../workflow-designer/runtime-activity-designers.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Common Language Runtime](../workflow-designer/runtime-activity-designers.md)   
  [TerminateWorkflow](../workflow-designer/terminateworkflow-activity-designer.md)

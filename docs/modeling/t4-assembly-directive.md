@@ -1,29 +1,31 @@
 ---
-title: "T4 Assembly Directive | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: T4-Assemblydirektive | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 44949749-ce3c-4fb5-8690-a17f1564ac2f
-caps.latest.revision: 4
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 458fc4b2f96480c1f41efd8b80050fd0911b3e85
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# T4 Assembly Directive
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-In einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-Entwurfszeittextvorlage wird mit der `assembly`\-Direktive eine Assembly geladen, damit im Vorlagencode die Typen der Vorlage verwendet werden können.  Der Effekt ist mit dem Hinzufügen eines Assemblyverweises in einem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-Projekt vergleichbar.  
+# <a name="t4-assembly-directive"></a>T4-Assemblyanweisung
+In einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Entwurfszeittextvorlage wird mit der `assembly`-Direktive eine Assembly geladen, damit im Vorlagencode die Typen der Vorlage verwendet werden können. Der Effekt ist mit dem Hinzufügen eines Assemblyverweises in einem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Projekt vergleichbar.  
   
- Eine allgemeine Übersicht über das Schreiben von Textvorlagen finden Sie unter [Writing a T4 Text Template](../modeling/writing-a-t4-text-template.md).  
+ Eine allgemeine Übersicht über Textvorlagen schreiben, finden Sie unter [Schreiben einer T4-Textvorlage](../modeling/writing-a-t4-text-template.md).  
   
 > [!NOTE]
->  Die `assembly`\-Direktive ist in einer Laufzeitvorlage \(vorverarbeiteten Vorlage\) nicht erforderlich.  Fügen Sie den **Verweisen** des [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-Projekts stattdessen die notwendigen Assemblys hinzu.  
+>  Die `assembly`-Direktive ist in einer Laufzeitvorlage (vorverarbeiteten Vorlage) nicht erforderlich. Fügen Sie stattdessen die notwendigen Assemblys hinzu. die **Verweise** von Ihrem [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projekt.  
   
-## Verwenden der Assemblydirektive  
+## <a name="using-the-assembly-directive"></a>Verwenden der Assemblyanweisung  
  Die Syntax der Direktive lautet wie folgt:  
   
 ```  
@@ -32,20 +34,20 @@ In einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-Entwurfszeit
   
  Folgende Optionen stehen zum Angeben des Assemblynamens zur Verfügung:  
   
--   Der starke Name einer Assembly im GAC, z. B. `System.Xml.dll`.  Sie können auch das lange Formular verwenden, z. B. `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`.  Weitere Informationen finden Sie unter <xref:System.Reflection.AssemblyName>.  
+-   Der starke Name einer Assembly im GAC, z. B. `System.Xml.dll`. Sie können auch das lange Formular verwenden, z. B. `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`. Weitere Informationen finden Sie unter <xref:System.Reflection.AssemblyName>.  
   
 -   Absoluter Pfad der Assembly  
   
- Sie können mit der `$(variableName)`\-Syntax auf [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-Variablen wie `$(SolutionDir)` und mit `%VariableName%` auf Umgebungsvariablen verweisen.  Beispiel:  
+ Sie können mit der `$(variableName)`-Syntax auf [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-Variablen wie `$(SolutionDir)` und mit `%VariableName%` auf Umgebungsvariablen verweisen. Zum Beispiel:  
   
 ```  
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>  
 ```  
   
- Die assembly\-Direktive hat in einer vorverarbeiteten Textvorlage keinerlei Auswirkungen.  Schließen Sie stattdessen die notwendigen Verweise in den Abschnitt **Verweise** des [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-Projekts ein.  Weitere Informationen finden Sie unter [Run\-Time Text Generation with T4 Text Templates](../modeling/run-time-text-generation-with-t4-text-templates.md).  
+ Die assembly-Anweisung hat in einer vorverarbeiteten Textvorlage keinerlei Auswirkungen. Stattdessen enthalten die notwendigen Verweise in der **Verweise** Teil Ihrer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projekt. Weitere Informationen finden Sie unter [Run-Time-Textgenerierung mithilfe von T4-Textvorlagen](../modeling/run-time-text-generation-with-t4-text-templates.md).  
   
-## Standardassemblys  
- Die folgenden Assemblys werden automatisch geladen, damit Sie keine Assemblydirektiven dafür schreiben müssen:  
+## <a name="standard-assemblies"></a>Standardassemblys  
+ Die folgenden Assemblys werden automatisch geladen, damit Sie keine Assemblyanweisungen dafür schreiben müssen:  
   
 -   `Microsoft.VisualStudio.TextTemplating.1*.dll`  
   
@@ -53,7 +55,7 @@ In einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-Entwurfszeit
   
 -   `WindowsBase.dll`  
   
- Wenn Sie eine benutzerdefinierte Direktive verwenden, lädt der Direktivenprozessor möglicherweise zusätzliche Assemblys.  Wenn Sie z. B. Vorlagen für eine domänenspezifische Sprache \(DSL\) schreiben, müssen Sie keine Assemblydirektiven für die folgenden Assemblys schreiben:  
+ Wenn Sie eine benutzerdefinierte Anweisung verwenden, lädt der Anweisungsprozessor möglicherweise zusätzliche Assemblys. Wenn Sie z. B. Vorlagen für eine domänenspezifische Sprache (DSL) schreiben, müssen Sie keine Assemblydirektiven für die folgenden Assemblys schreiben:  
   
 -   `Microsoft.VisualStudio.Modeling.Sdk.1*.dll`  
   
@@ -63,10 +65,10 @@ In einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-Entwurfszeit
   
 -   Die Assembly mit der DSL.  
   
-##  <a name="msbuild"></a> Verwenden von Projekteigenschaften in MSBuild und Visual Studio  
- Visual Studio\-Makros wie $ \(SolutionDir\) funktionieren nicht in MSBuild.  Wenn Sie Vorlagen im Buildcomputer transformieren möchten, müssen Sie dies mithilfe von Projekteigenschaften tun.  
+##  <a name="msbuild"></a>Verwenden von Projekteigenschaften in MSBuild und Visual Studio  
+ Visual Studio-Makros wie $ (SolutionDir) funktionieren nicht in MSBuild. Wenn Sie Vorlagen im Buildcomputer transformieren möchten, müssen Sie dies mithilfe von Projekteigenschaften tun.  
   
- Bearbeiten Sie die CSPROJ\- oder VBPROJ\-Datei, und definieren Sie eine Projekteigenschaft.  In folgendem Beispiel wird eine Eigenschaft mit dem Namen `myLibFolder` definiert:  
+ Bearbeiten Sie die CSPROJ- oder VBPROJ-Datei, und definieren Sie eine Projekteigenschaft. In folgendem Beispiel wird eine Eigenschaft mit dem Namen `myLibFolder` definiert:  
   
 ```xml  
 <!-- Define a project property, myLibFolder: -->  
@@ -89,5 +91,5 @@ In einer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-Entwurfszeit
 <#@ assembly name="$(myLibFolder)\MyLib.dll" #>  
 ```  
   
-## Siehe auch  
- [T4 Include Directive](../modeling/t4-include-directive.md)
+## <a name="see-also"></a>Siehe auch  
+ [T4-Include-Direktive](../modeling/t4-include-directive.md)

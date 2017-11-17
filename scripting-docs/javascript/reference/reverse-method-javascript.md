@@ -1,59 +1,61 @@
 ---
-title: "reverse-Methode (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "reverse"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Arrays [Visual Studio], Umkehren von Elementen"
-  - "reverse-Methode"
-  - "Vertauschen von Elementen"
+title: Reverse-Methode (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: reverse
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- arrays [Visual Studio], reversing elements
+- reverse method
+- transposing elements
 ms.assetid: 02ab051b-79b8-4646-b502-381671e78c12
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9a34385ccf89557688698b50384b3dfe359478df
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# reverse-Methode (JavaScript)
-Kehrt die Elemente in ein `Array` um.  
+# <a name="reverse-method-javascript"></a>reverse-Methode (JavaScript)
+Kehrt die Elemente in einer `Array`.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
 arrayObj.reverse()   
 ```  
   
-## Parameter  
+## <a name="parameters"></a>Parameter  
  `arrayObj`  
- Erforderlich.  Ein `Array`\-Objekt.  
+ Erforderlich. Ein `Array`-Objekt.  
   
-## Rückgabewert  
- Das umgekehrte Array.  
+## <a name="return-value"></a>Rückgabewert  
+ Umgekehrten Arrays.  
   
-## Hinweise  
- Der erforderliche `arrayObj`\-Verweis ist ein `Array`\-Objekt.  
+## <a name="remarks"></a>Hinweise  
+ Die erforderliche `arrayObj` Verweis ist ein `Array` Objekt.  
   
- Mit der `reverse`\-Methode kann die Reihenfolge der Elemente eines `Array`\-Objekts umgekehrt werden.  Bei der Ausführung der Methode wird kein neues `Array`\-Objekt erstellt.  
+ Die `reverse` Methode kehrt die Elemente einer `Array` -Objekts. Werden keine erstellt ein neues `Array` Objekts während der Ausführung.  
   
- Ist das Array nicht zusammenhängend, werden durch die `reverse`\-Methode Elemente erstellt, die die Lücken im Array füllen.  Jedes dieser so erstellten Elemente hat den Wert `undefined`.  
+ Wenn das Array nicht zusammenhängend ist, ist die `reverse` Methode Elemente im Array, das Füllen der Lücken in das Array erstellt. Jedes dieser Elemente erstellt hat den Wert `undefined`.  
   
-## Beispiel  
- Im folgenden Beispiel wird die Verwendung der `reverse`\-Methode veranschaulicht.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel wird die Verwendung der `reverse`-Methode veranschaulicht.  
   
-```javascript  
+```JavaScript  
 var arr = new Array(0,1,2,3,4);   
 var reverseArr = arr.reverse();  
 document.write(reverseArr);  
@@ -63,8 +65,8 @@ document.write(reverseArr);
   
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]  
   
-## Siehe auch  
- [concat\-Methode \(Array\)](../../javascript/reference/concat-method-array-javascript.md)
+## <a name="see-also"></a>Siehe auch  
+ [concat-Methode (Array)](../../javascript/reference/concat-method-array-javascript.md)

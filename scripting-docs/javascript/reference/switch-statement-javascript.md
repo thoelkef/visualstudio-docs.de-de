@@ -1,35 +1,37 @@
 ---
-title: "switch-Anweisung (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "switch_JavaScriptKeyword"
-  - "default_JavaScriptKeyword"
-  - "case_JavaScriptKeyword"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "switch-Anweisung"
+title: Switch-Anweisung (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords:
+- switch_JavaScriptKeyword
+- default_JavaScriptKeyword
+- case_JavaScriptKeyword
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: switch statement
 ms.assetid: 61f80e8b-3739-4146-a893-c2832d92b28c
-caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a301fc8bcc72b48c6ba8e999c0ebb70fe9d92b41
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# switch-Anweisung (JavaScript)
-Ermöglicht die Ausführung einer oder mehrerer Anweisungen, wenn der Wert eines festgelegten Ausdrucks einer Bezeichnung entspricht.  
+# <a name="switch-statement-javascript"></a>switch-Anweisung (JavaScript)
+Aktiviert die Ausführung einer oder mehrerer Anweisungen, wenn der Wert eines festgelegten Ausdrucks einer Marke entspricht.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 switch (expression) {  
@@ -41,37 +43,37 @@ switch (expression) {
 }   
 ```  
   
-## Parameter  
+## <a name="parameters"></a>Parameter  
  `expression`  
- Der auszuwertende Ausdruck.  
+ Der Ausdruck ausgewertet werden soll.  
   
  `label`  
- Ein Bezeichner, der mit `expression` verglichen werden soll.  Wenn `label` ein `expression` ist, wird die Ausführung mit der `statementlist` unmittelbar nach dem Doppelpunkt begonnen und solange fortgesetzt, bis entweder eine optionale `break`\-Anweisung oder das Ende der `switch`\-Anweisung erreicht wird.  
+ Ein Bezeichner, mit dem verglichen werden `expression`. Wenn `label` ist ein `expression`, Ausführung beginnt mit der `statementlist` unmittelbar hinter dem Doppelpunkt und wird fortgesetzt, bis er entweder trifft eine `break` -Anweisung, die optional ist, oder das Ende der `switch` Anweisung.  
   
  `statementlist`  
  Eine oder mehrere auszuführende Anweisungen.  
   
-## Hinweise  
- Mithilfe der `default`\-Klausel können Sie eine Anweisung bereitstellen, die ausgeführt werden soll, wenn keiner der Werte der Bezeichnungen mit `expression` übereinstimmt.  Die Klausel kann an einer beliebigen Stelle im `switch`\-Codeblock stehen.  
+## <a name="remarks"></a>Hinweise  
+ Verwenden der `default` -Klausel, um eine Anweisung, die ausgeführt werden, wenn keines der Bezeichnung Übereinstimmungen Werte `expression`. Sie können überall innerhalb der `switch` Codeblock.  
   
- Es können keine oder mehrere `label`\-Blöcke angegeben werden.  Falls keine Entsprechung zwischen `label` und dem Wert von `expression` gefunden wird und kein `default`\-Fall angegeben worden ist, werden keine Anweisungen ausgeführt.  
+ NULL oder mehr `label` Blöcke können angegeben werden. Wenn kein `label` entspricht dem Wert `expression`, und ein `default` Fall nicht angegeben ist, wird keine Anweisungen ausgeführt werden.  
   
- Die Ausführung einer `switch`\-Anweisung verläuft wie folgt:  
+ Ausführung durchläuft eine `switch` Anweisung wie folgt:  
   
--   Zunächst wird `expression` ausgewertet und ein sequenzieller Vergleich mit `label` durchgeführt, bis eine Entsprechung gefunden wird.  
+-   Auswerten `expression` und sehen Sie sich `label` in der Reihenfolge, bis eine Übereinstimmung gefunden wird.  
   
--   Wenn ein `label`\-Wert `expression` entspricht, wird die zugehörige `statementlist`\-Anweisungsliste ausgeführt.  
+-   Wenn eine `label` Wert einem `expression`, führen Sie die zugehörigen `statementlist`.  
   
-     Die Ausführung wird fortgesetzt, bis eine `break`\-Anweisung gefunden wird oder die `switch`\-Anweisung endet.  Dies bedeutet, dass mehrere `label`\-Blöcke ausgeführt werden, wenn keine `break` \-Anweisung verwendet wird.  
+     Fortsetzen der Ausführung, bis eine `break` Anweisung festgestellt wird, oder die `switch` -Anweisung endet. Dies bedeutet, dass mehrere `label` -Blöcke werden ausgeführt, wenn eine `break` Anweisung wird nicht verwendet.  
   
--   Wenn kein `label`\-Wert `expression` entspricht, wird zum `default`\-Fall gewechselt.  Ist kein `default`\-Fall vorhanden, wird der letzte Schritt ausgeführt.  
+-   Wenn kein `label` gleich `expression`, wechseln Sie zu der `default` Fall. Es ist keine `default` Fall müssen Sie zum letzten Schritt.  
   
--   Die Ausführung wird mit der Anweisung fortgesetzt, die auf das Ende des `switch`\-Codeblocks folgt.  
+-   Fortsetzen der Ausführung an die Anweisung nach dem Ende der `switch` Codeblock.  
   
-## Beispiel  
- Im folgenden Beispiel soll der Typ eines Objekts ermittelt werden.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel testet ein Objekt für seinen Typ.  
   
-```javascript  
+```JavaScript  
 function MyObjectType(obj) {  
     switch (obj.constructor) {  
         case Date:  
@@ -102,10 +104,10 @@ function MyObjectType(obj) {
   
 ```  
   
-## Beispiel  
- Der folgende Code zeigt, was geschieht, wenn keine `break`\-Anweisung angegeben wird.  
+## <a name="example"></a>Beispiel  
+ Der folgende code zeigt, was geschieht, wenn Sie nicht verwenden, eine `break` Anweisung.  
   
-```javascript  
+```JavaScript  
 function MyObjectType(obj) {  
     switch (obj.constructor) {  
         case Date:  
@@ -133,9 +135,9 @@ function MyObjectType(obj) {
   
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
-## Siehe auch  
- [break\-Anweisung](../../javascript/reference/break-statement-javascript.md)   
- [if...else\-Anweisung](../../javascript/reference/if-dot-dot-dot-else-statement-javascript.md)
+## <a name="see-also"></a>Siehe auch  
+ [break-Anweisung](../../javascript/reference/break-statement-javascript.md)   
+ [if...else-Anweisung](../../javascript/reference/if-dot-dot-dot-else-statement-javascript.md)

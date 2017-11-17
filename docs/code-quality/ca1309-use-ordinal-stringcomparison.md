@@ -1,50 +1,51 @@
 ---
-title: "CA1309: Ordinal-StringComparison verwenden | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "UseOrdinalStringComparison"
-  - "CA1309"
-helpviewer_keywords: 
-  - "UseOrdinalStringComparison"
-  - "CA1309"
+title: 'CA1309: Ordinal-StringComparison verwenden | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- UseOrdinalStringComparison
+- CA1309
+helpviewer_keywords:
+- UseOrdinalStringComparison
+- CA1309
 ms.assetid: 19be0854-cb6e-4efd-a4c8-a5c1fc6f7a71
-caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: ba777ea4cd272a1392413a2ecbb52b9f45a3d71b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CA1309: Ordinal-StringComparison verwenden
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309: Ordinal-StringComparison verwenden
 |||  
 |-|-|  
 |TypeName|UseOrdinalStringComparison|  
 |CheckId|CA1309|  
-|Kategorie \(Category\)|Microsoft.Globalization|  
+|Kategorie|Microsoft.Globalization|  
 |Unterbrechende Änderung|Nicht unterbrechend|  
   
-## Ursache  
- Durch einen nicht linguistischen Zeichenfolgenvergleich wird der <xref:System.StringComparison>\-Parameter weder auf **Ordinal** noch auf **OrdinalIgnoreCase** festgelegt.  
+## <a name="cause"></a>Ursache  
+ Die durch einen nicht linguistischen Zeichenfolgenvergleich wird nicht festgelegt. die <xref:System.StringComparison> Parameter entweder **Ordnungszahl** oder **OrdinalIgnoreCase**.  
   
-## Regelbeschreibung  
- Viele Zeichenfolgenoperationen, vor allem die <xref:System.String.Compare%2A?displayProperty=fullName>\-Methode und die <xref:System.String.Equals%2A?displayProperty=fullName>\-Methode, bieten jetzt eine Überladung, durch die ein <xref:System.StringComparision?displayProperty=fullName>\-Enumerationswert als Parameter akzeptiert wird.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Viele Zeichenfolgenoperationen, vor allem die <xref:System.String.Compare%2A?displayProperty=fullName> und <xref:System.String.Equals%2A?displayProperty=fullName> Methoden bieten jetzt eine Überladung, die akzeptiert eine <xref:System.StringComparison?displayProperty=fullName> -Enumerationswert als Parameter.  
   
- Wenn Sie **StringComparison.Ordinal** oder **StringComparison.OrdinalIgnoreCase** festlegen, ist der Zeichenfolgenvergleich nicht linguistisch.  Die für die natürliche Sprache spezifischen Features werden also ignoriert, wenn Vergleichsentscheidungen getroffen werden.  Die Entscheidungen basieren folglich auf einfachen Bytevergleichen, wobei Groß\-\/Kleinschreibung oder nach Kultur parametrisierte Entsprechungstabellen ignoriert werden.  Wenn der Parameter explizit auf **StringComparison.Ordinal** oder **StringComparison.OrdinalIgnoreCase** festgelegt wird, werden die Codeausführung beschleunigt sowie Richtigkeit und Zuverlässigkeit gesteigert.  
+ Wenn Sie entweder angeben **StringComparison.Ordinal** oder **StringComparison.OrdinalIgnoreCase**, einen nicht linguistischen Zeichenfolgenvergleich werden. D. h. werden die Funktionen, die spezifisch für natürliche Sprache sind beim Vergleich Entscheidungen getroffen werden ignoriert. Dies bedeutet, dass die Entscheidungen basieren auf einfache bytevergleiche und ignorieren die Groß-/Kleinschreibung oder Äquivalenz Tabellen, die nach Kultur parametrisierten entsprechungstabellen. Daher durch explizites Festlegen des Parameters auf entweder dem **StringComparison.Ordinal** oder **StringComparison.OrdinalIgnoreCase**, des Codes häufig Geschwindigkeit erlangt, erhöht die Richtigkeit, und wird zuverlässiger.  
   
-## Behandeln von Verstößen  
- Um einen Verstoß gegen diese Regel zu beheben, ändern Sie die Zeichenfolgenvergleichsmethode in eine Überladung, die die <xref:System.StringComparison?displayProperty=fullName>\-Enumeration als Parameter akzeptiert, und geben entweder **Ordinal** oder **OrdinalIgnoreCase** an.  Ändern Sie beispielsweise `String.Compare(str1, str2)` zu `String.Compare(str1, str2, StringComparison.Ordinal)`.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Um einen Verstoß gegen diese Regel zu beheben, ändern Sie die Methode zum Zeichenfolgenvergleich an eine Überladung, die akzeptiert die <xref:System.StringComparison?displayProperty=fullName> -Enumeration als Parameter, und geben Sie entweder **Ordnungszahl** oder **OrdinalIgnoreCase**. Ändern Sie beispielsweise `String.Compare(str1, str2)` zu `String.Compare(str1, str2, StringComparison.Ordinal)`.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Eine Warnung dieser Regel kann gefahrlos unterdrückt werden, wenn die Bibliothek oder Anwendung für eine begrenzte lokale Zielgruppe bestimmt ist bzw. die Semantik der aktuellen Kultur verwendet werden sollte.  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Sie können ruhig auf eine Warnung dieser Regel zu unterdrücken, wenn die Bibliothek oder Anwendung vorgesehen ist, für eine begrenzte lokale Zielgruppe oder wenn die Semantik der aktuellen Kultur verwendet werden soll.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Globalisierungswarnungen](../code-quality/globalization-warnings.md)   
  [CA1307: StringComparison angeben](../code-quality/ca1307-specify-stringcomparison.md)

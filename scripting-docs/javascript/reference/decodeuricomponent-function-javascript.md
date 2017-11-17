@@ -1,49 +1,50 @@
 ---
-title: "decodeURIComponent-Funktion (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "decodeURIComponent"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "decodeURIComponent-Methode"
+title: DecodeURIComponent-Funktion (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: decodeURIComponent
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: decodeURIComponent method
 ms.assetid: 486ccee2-afd7-4863-97ce-4adb50cf39c0
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ef7bdcd374a328bad632381d19e9823853d37f01
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# decodeURIComponent-Funktion (JavaScript)
-Ruft die decodierte Version einer codierten Komponente eines URIs \(Uniform Resource Identifier\) ab.  
+# <a name="decodeuricomponent-function-javascript"></a>decodeURIComponent-Funktion (JavaScript)
+Ruft ab, der nicht codierte Version einer codierten Komponente Uniform Resource Identifier (URI).  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 decodeURIComponent(encodedURIString)  
 ```  
   
-## Hinweise  
- Das erforderliche `encodedURIString`\-Argument ist ein Wert, der eine codierte URI\-Komponente darstellt.  
+## <a name="remarks"></a>Hinweise  
+ Die erforderliche `encodedURIString` Argument ist ein Wert, der eine codierte URI-Komponente darstellt.  
   
- Eine URI\-Komponente ist Teil eines vollständigen URIs.  
+ Eine URI-Komponente ist Teil einer vollständigen URI.  
   
- Wenn `encodedURIString` ungültig ist, tritt ein Fehler vom Typ URIError auf.  
+ Wenn die `encodedURIString` ist ungültig, URIError auftritt.  
   
-## Beispiel  
- Der folgende Code codiert zuerst und decodiert dann einen URI.  
+## <a name="example"></a>Beispiel  
+ Der folgende Code zuerst codiert und decodiert dann einen URI.  
   
-```javascript  
+```JavaScript  
 var uriEncode = encodeURI ("http://www.Not a URL.com");  
 var uriDecode = decodeURIComponent(uriEncode);  
   
@@ -56,9 +57,9 @@ document.write (uriDecode);
 // http://www.Not a URL.com  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
-## Siehe auch  
- [decodeURI\-Funktion](../../javascript/reference/decodeuri-function-javascript.md)   
- [encodeURI\-Funktion](../../javascript/reference/encodeuri-function-javascript.md)
+## <a name="see-also"></a>Siehe auch  
+ [DecodeURI-Funktion](../../javascript/reference/decodeuri-function-javascript.md)   
+ [encodeURI-Funktion](../../javascript/reference/encodeuri-function-javascript.md)

@@ -1,35 +1,36 @@
 ---
-title: "Gewusst wie: Anzeigen von Fehlern in verwaltetem Code | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Verwalteter Code, Analysieren"
-  - "Codeanalyse, Anzeigen von Fehlern in verwaltetem Code"
-  - "Code, Anzeigen von Fehlern"
+title: 'Vorgehensweise: Anzeigen von Fehlern in verwaltetem Code | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- managed code, analyzing
+- code analysis, viewing managed code defects
+- code, viewing defects
 ms.assetid: 58aa6c23-d0b3-414d-930d-82e676cb7e5f
-caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: cab0c6607865f82fab0320d171ba0a7671b01ea1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Anzeigen von Fehlern in verwaltetem Code
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-In der Codeanalyse werden Fehler, Warnungen und Meldungen im Codeanalysefenster gemeldet.  Das Codeanalysefenster wird automatisch angezeigt, wenn Sie die Codeanalyse in einem Projekt oder einer Projektmappe aus.  
+# <a name="how-to-view-managed-code-defects"></a>Gewusst wie: Anzeigen von Fehlern in verwaltetem Code
+Codeanalyse Fehler, Warnungen und Meldungen, die im codeanalysefenster gemeldet werden. Codeanalysefenster wird automatisch angezeigt, wenn Sie auf ein Projekt oder eine Projektmappe Codeanalyse ausführen.  
   
- Im Codeanalysefenster können Sie:  
+ Im Codeanalysefenster angezeigt können Sie folgende Aktionen ausführen:  
   
--   **Wählen Sie den Titel Warnungen aus.**  
+-   **Wählen Sie den Titel der Warnung.**  
   
-     Zusätzliche Informationen zur Warnung wird im Codeanalysefenster.  Die Zeile in der Quelldatei, die die Warnung ausgelöst wurde, wird im Quellcode\-Editor angezeigt und hervorgehoben.  
+     Weitere Informationen zur Warnung wird im codeanalysefenster angezeigt. Die Zeile in der Quelldatei, die die Warnung ausgelöst wird angezeigt, und der Quellcode-Editor hervorgehoben.  
   
--   **Wählen Sie die Warnregel ID aus** Warnende IDs werden durch **CA** vorangestellt und eine vierstellige Zahl einschließen.  Beispielsweise CA1234.  
+-   **Id der Warnung auswählen.** Warnung-Ids vorangestellt **Zertifizierungsstelle** und enthalten eine vierstellige Zahl. Beispielsweise CA1234.  
   
-     Das Library\-Hilfethema MSDN für die Warnung wird angezeigt.  Das Hilfethema enthält ausführliche Informationen über die Ursache der Warnung und enthält Beispiele, die veranschaulichen, wie Warnungen das Problem auftritt und aufgelöst wird.
+     Die MSDN Library-Hilfethema für die Warnung wird angezeigt. Das Hilfethema enthält detaillierte Informationen über die Ursache der Warnung und enthält Beispiele, die veranschaulichen, wie die genannten Problems tritt auf, und wird aufgelöst.

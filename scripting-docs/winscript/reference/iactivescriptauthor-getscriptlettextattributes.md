@@ -1,27 +1,30 @@
 ---
-title: "IActiveScriptAuthor::GetScriptletTextAttributes | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScriptAuthor::GetScriptletTextAttributes | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptAuthor.GetScriptletTextAttributes
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScriptAuthor::GetScriptletTextAttributes"
+helpviewer_keywords: IActiveScriptAuthor::GetScriptletTextAttributes
 ms.assetid: 082edfce-6c5b-4e5e-b942-31b423a4fa1d
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b01fba7d0e8eb80fed51b1ff0ebd3a8816bacb01
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptAuthor::GetScriptletTextAttributes
-Gibt die Textattribute eines Skriptlets zurück.  
+# <a name="iactivescriptauthorgetscriptlettextattributes"></a>IActiveScriptAuthor::GetScriptletTextAttributes
+Gibt den Textattribute des Scriptlet.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT GetScriptletTextAttributes(  
@@ -33,38 +36,38 @@ HRESULT GetScriptletTextAttributes(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pszCode`  
- \[in, size\_is \(`cch`\)\] Der Skriptlettext.  Diese Zeichenfolge muss nicht NULL sein beendet.  
+ [in Size_is (`cch`)] Scriptlet-Texts. Diese Zeichenfolge keine null-terminiert.  
   
  `cch`  
- \[in\] Die verwendete Größe für die `pszCode` und `pattr`\-Parameter.  
+ [in] Die Größe des für die `pszCode` und `pattr` Parameter.  
   
  `pszDelimiter`  
- \[in\] Die Adresse des Ende\-vonSkriptlet Trennzeichens.  Wenn `pszCode` aus einem Stream des Texts analysiert wird, verwendet der Host in der Regel ein Trennzeichen \(wie zwei einfache Anführungszeichen\), um das Ende des Skriptlets zu erkennen.  Legen Sie diesen Parameter auf fest, um auf NULL, wenn kein Trennzeichen verwendet wird, um das Ende des Skriptlets zu identifizieren.  
+ [in] Die Adresse des End-of-Scriptlet-Trennzeichens. Wenn `pszCode` wird analysiert, die aus einem Stream des Texts, verwendet der Host in der Regel ein Trennzeichen (z. B. zwei einfache Anführungszeichen), um das Ende des Scriptlets zu erkennen. Legen Sie diesen Parameter auf NULL, wenn kein Trennzeichen verwendet wird, um das Ende des Scriptlets zu identifizieren.  
   
  `dwFlags`  
- \[in\] Die Flags, die mit den Textattributen des Skriptlets zugeordnet werden.  Kann eine Kombination der folgenden Werte.  
+ [in] Die Flags, die Textattributen des Scriptlets zugeordnet sind. Eine Kombination der folgenden Werte kann sein.  
   
-|Konstante|Wert|Description|  
-|---------------|----------|-----------------|  
-|GETATTRTYPE\_DEPSCAN|0x0001|Identifizieren Sie Bezeichner, die das SOURCETEXT\_ATTR\_IDENTIFIER\-Attribut haben, und identifizieren Sie Punktoperatoren, die das SOURCETEXT\_ATTR\_MEMBERLOOKUP\-Attribut haben.|  
-|GETATTRFLAG\_THIS|0x0100|Identifizieren Sie das aktuelle Objekt, das das SOURCETEXT\_ATTR\_THIS\-Attribut verfügt.|  
-|GETATTRFLAG\_HUMANTEXT|0x8000|Identifizieren Sie Zeichenfolgeninhalt und Kommentartext, der das SOURCETEXT\_ATTR\_HUMANTEXT\-Attribut verfügt.|  
+|Konstante|Wert|Beschreibung|  
+|--------------|-----------|-----------------|  
+|GETATTRTYPE_DEPSCAN|0 x 0001|Identifizieren Sie Bezeichner, die mit dem SOURCETEXT_ATTR_IDENTIFIER-Attribut enthalten, und identifizieren Sie Punktoperatoren, die das SOURCETEXT_ATTR_MEMBERLOOKUP-Attribut aufweisen.|  
+|GETATTRFLAG_THIS|0 x 0100|Identifizieren Sie das aktuelle Objekt, das das SOURCETEXT_ATTR_THIS-Attribut aufweist.|  
+|GETATTRFLAG_HUMANTEXT|0 x 8000|Identifizieren Sie die Zeichenfolge Inhalt und einen Kommentar Text, der das SOURCETEXT_ATTR_HUMANTEXT-Attribut aufweist.|  
   
  `pattr`  
- \[out in size\_is \(`cch`\)\] Die Farbinformationen für den Skriptletcode.  
+ [in, out Size_is (`cch`)] die Farbinformationen für den Scriptlet-Code.  
   
-## Rückgabewert  
- Ein `HRESULT`.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
   
-## Siehe auch  
- [IActiveScriptAuthor\-Schnittstelle](../../winscript/reference/iactivescriptauthor-interface.md)   
+## <a name="see-also"></a>Siehe auch  
+ [IActiveScriptAuthor-Schnittstelle](../../winscript/reference/iactivescriptauthor-interface.md)   
  [IActiveScriptAuthor::GetScriptTextAttributes](../../winscript/reference/iactivescriptauthor-getscripttextattributes.md)   
- [SOURCE\_TEXT\_ATTR\-Enumeration](../../winscript/reference/source-text-attr-enumeration.md)
+ [SOURCE_TEXT_ATTR-Enumeration](../../winscript/reference/source-text-attr-enumeration.md)

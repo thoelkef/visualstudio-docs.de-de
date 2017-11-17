@@ -1,46 +1,45 @@
 ---
-title: "IDiaSession::put_loadAddress | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSession::put_loadAddress-Methode"
+title: 'Idiasession:: Put_loadaddress | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSession::put_loadAddress method
 ms.assetid: b157b245-1ea0-4b80-8962-d8b278dbc742
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 3b12ef6fa6da9338346aa997ba16cb023548f138
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::put_loadAddress
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Legt die Ladeadresse für die ausführbare Datei fest, die auf Symbole in diesem Symbolspeicher entspricht.  
+# <a name="idiasessionputloadaddress"></a>IDiaSession::put_loadAddress
+Legt die Adresse des für die entsprechende ausführbare Datei auf die Symbole in dieser Symbolspeicher fest.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT put_loadAddress (   
-   ULONGLONG NewVal  
+```C++  
+HRESULT put_loadAddress (   
+   ULONGLONG NewVal  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `NewVal`  
- \[in\]  Ladeadresse für die ausführbare Datei.  
+ [in] Lädt die Adresse für die ausführbare Datei.  
   
-## Hinweise  
- Eigenschaften von virtuellen Adresse des Symbols \(VA\) werden mithilfe des Werts dieser Methode berechnet.  Virtuelle Adressen werden nicht berechnet, es sei denn, diese Eigenschaft auf den Wert ungleich 0 \(null\) festgelegt ist.  
+## <a name="remarks"></a>Hinweise  
+ Symboleigenschaften für die virtuelle Adresse ("VA" ist) werden mit dem Wert dieser Methode berechnet. Virtuelle Adressen sind nicht berechnet werden, es sei denn, diese Eigenschaft nicht 0 (null), um festgelegt ist.  
   
 > [!NOTE]
->  Sie müssen diese Methode aufrufen, wenn Sie das [IDiaSession](../../debugger/debug-interface-access/idiasession.md)\-Objekt abrufen und bevor Sie die Verwendung des Objekts beginnen, wenn Sie alle virtuellen Eigenschaften für Symbole verwenden müssen.  
+>  Sie müssen diese Methode aufrufen, wenn Sie erhalten die [IDiaSession](../../debugger/debug-interface-access/idiasession.md) Objekt, und bevor Sie beginnen mit dem Objekt aus, wenn Sie virtuelle Eigenschaften verwenden, auf die Symbole müssen.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

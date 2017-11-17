@@ -1,43 +1,46 @@
 ---
-title: "prototype-Eigenschaft (String) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: Prototype-Eigenschaft (String) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 437ce478-9c45-45f7-8952-bd71856cfcd8
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: df8c6abbd64fce9172d805c2e22dee51f4fbbee4
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# prototype-Eigenschaft (String)
-Gibt einen Verweis auf den Prototyp einer Zeichenfolgenklasse zurück.  
+# <a name="prototype-property-string"></a>prototype-Eigenschaft (String)
+Gibt einen Verweis auf den Prototyp einer Objektklasse Zeichenfolge zurück.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
 string.prototype  
 ```  
   
-## Hinweise  
- Das `string`\-Argument ist der Name einer Zeichenfolge.  
+## <a name="remarks"></a>Hinweise  
+ Die `string` -Argument ist der Name einer Zeichenfolge.  
   
- Mit der `prototype`\-Eigenschaft können Sie einer Objektklasse grundlegende Funktionen zur Verfügung stellen.  Neue Instanzen eines Objekts "erben" das Verhalten des Prototyps, der diesem Objekt zugewiesen ist.  
+ Mit der `prototype`-Eigenschaft können Sie einer Objektklasse grundlegende Funktionen zur Verfügung stellen. Neue Instanzen eines Objekts "erben" das Verhalten des Prototyps, der diesem Objekt zugewiesen ist.  
   
- Um beispielsweise dem `String`\-Objekt eine Methode hinzuzufügen, die den Wert des letzten Elements der Zeichenfolge zurückgibt, deklarieren Sie die Funktion, fügen sie zu `String.prototype` hinzu und verwenden sie dann.  
+ Beispielsweise, um eine Methode zum Hinzufügen der `String` -Objekt, das den Wert des letzten Elements der Zeichenfolge zurückgibt, deklarieren Sie die Funktion, fügen Sie diese `String.prototype`, und verwenden.  
   
-```javascript  
+```JavaScript  
 function string_last( ){  
     return this.charAt(this.length - 1);  
 }  
@@ -49,9 +52,9 @@ document.write(myString.last());
 // e  
 ```  
   
- Alle systeminternen [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]\-Objekte verfügen über eine `prototype`\-Eigenschaft, die schreibgeschützt ist.  Dem Prototyp können Eigenschaften und Methoden hinzugefügt werden, dem Objekt kann jedoch kein anderer Prototyp zugewiesen werden.  Benutzerdefinierten Objekten kann jedoch ein neuer Prototyp zugewiesen werden.  
+ Alle systeminternen [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Objekte verfügen über eine `prototype` -Eigenschaft, die schreibgeschützt ist. Eigenschaften und Methoden auf den Prototyp hinzugefügt werden, aber das Objekt möglicherweise nicht anderen Prototyp zugewiesen werden. Jedoch können benutzerdefinierte Objekte als einen neuen Prototyp zugewiesen werden.  
   
- In den Methoden\- und Eigenschaftenlisten für jedes systeminterne Objekt in diesem Sprachverzeichnis wird angegeben, welche Bestandteil des Objektprototyps sind und welche nicht.  
+ Der Methoden- und Listen für jede systeminterne Objekt in dieser Sprachreferenz anzugeben, welche Teil der Prototyp des Objekts sind und welche ignoriert werden.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]

@@ -1,44 +1,45 @@
 ---
-title: "Versionskompatibilit&#228;t f&#252;r die Eincheckrichtlinien der Codeanalyse | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Eincheckrichtlinien, Versionskompatibilität für die Codeanalyse"
-  - "Versionskompatibilität, Eincheckrichtlinie für die Codeanalyse"
+title: "Versionskompatibilität für die Eincheckrichtlinien für die Analyse | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- version compatibility, code analysis check-in policy
+- check-in policies, version compatibility for code analysis
 ms.assetid: 1af376e3-3be7-4445-803b-76a858567a5b
-caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 3b4504d723ed527c53827a5d4035b610e696abae
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Versionskompatibilit&#228;t f&#252;r die Eincheckrichtlinien der Codeanalyse
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Wenn Sie Eincheckrichtlinien für die Codeanalyse mit verschiedenen Versionen von [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] erstellen und auswerten müssen, ist es erforderlich, die Unterschiede bei der Auswertung von Eincheckrichtlinien mit [!INCLUDE[vstsTfsOrcasLong](../code-quality/includes/vststfsorcaslong_md.md)] und mit [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] zu kennen.  
+# <a name="version-compatibility-for-code-analysis-check-in-policies"></a>Versionskompatibilität für die Eincheckrichtlinien der Codeanalyse
+Wenn Sie auswerten und erstellen Einchecken Codeanalyserichtlinien mit verschiedenen Versionen des müssen [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)], benötigen Sie die Unterschiede bei der Art [!INCLUDE[vstsTfsOrcasLong](../code-quality/includes/vststfsorcaslong_md.md)] und [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] Eincheckrichtlinien auswerten.  
   
-## Versionskompatibilität für die Auswertung von Eincheckrichtlinien  
+## <a name="version-compatibility-for-evaluating-check-in-policies"></a>Versionskompatibilität für die Bewertung von Eincheckrichtlinien  
   
--   Bei der Auswertung von Eincheckrichtlinien für die Codeanalyse in [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] werden alle Regeln, die in [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] vorhanden waren, in [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] jedoch nicht vorhanden sind, ignoriert.  
+-   Bei der Auswertung von Eincheckrichtlinien für die Analyse in [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)], alle Regeln, die im befanden, [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] aber nicht vorhanden [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] werden ignoriert.  
   
--   Bei der Auswertung von Eincheckrichtlinien für die Codeanalyse in [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] werden alle neuen Regeln, die nur in [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] vorhanden sind, ignoriert.  
+-   Bei der Auswertung von Eincheckrichtlinien für die Analyse in [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)], alle neue Regeln, die exklusiv zugewiesen sind [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] werden ignoriert.  
   
--   Wenn die Eincheckrichtlinie für die Codeanalyse Regelassemblys angibt, ignoriert [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] alle mit Assemblys angegebenen Regeln, die vom Programm nicht erkannt werden.  
+-   Wenn die Eincheckrichtlinie für die Analyse Regelassemblys, gibt [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] ignoriert alle Regeln, die von Assemblys angegeben sind, dass er nicht erkennt.  
   
--   Wenn die Eincheckrichtlinie für die Codeanalyse Regelassemblys angibt, die von [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] nicht erkannt werden, wird eine entsprechende Meldung angezeigt.  
+-   Wenn die Eincheckrichtlinie für die Analyse Regelassemblys angibt, die [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] nicht erkennt, wird eine Meldung angezeigt.  
   
-## Versionskompatibilität für die Erstellung von Eincheckrichtlinien  
+## <a name="version-compatibility-for-authoring-check-in-policies"></a>Versionskompatibilität für die Erstellung von Eincheckrichtlinien  
   
--   Eincheckrichtlinien für die Codeanalyse, die mit der [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)]\-Version von [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] erstellt wurden, können mit der [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)]\-Version von [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] nicht geändert werden.  Außerdem kann die Richtlinie von [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] nicht ausgewertet werden.  
+-   Wenn Sie mit einer Eincheckrichtlinie für die Analyse erstellt die [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] Version des [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)], können Sie keine der [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] Version von [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] , diese zu ändern. Aber auch [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] die Richtlinie kann nicht ausgewertet werden.  
   
--   Wenn Sie eine Eincheckrichtlinie für die Codeanalyse mit [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] erstellt haben, können Sie [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] verwenden, um diese zu ändern. Die Auswertung der Richtlinie kann ebenfalls mit [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] erfolgen.  Nach dem Speichern der Richtlinie ändern, indem Sie [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)][!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] verwenden, können Sie diese nicht mehr bearbeiten, indem Sie [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] in [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] verwenden.  [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] kann die Richtlinien ohne Probleme mit nicht übereinstimmende starken Namen ausgewertet werden.  
+-   Wenn Sie mit einer Eincheckrichtlinie für die Analyse erstellt [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] in [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)], können Sie [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] in [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] zu ändern, und die Richtlinie können auch von ausgewertet werden [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)]. Nach dem Ändern der Richtlinie mit [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] in [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)], die Richtlinie kann nicht mehr bearbeitet werden, mithilfe von [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] in [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)]. [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)]Richtlinien ohne Probleme mit starken Namen können ausgewertet werden.  
   
--   Um eine Eincheckrichtlinie für die Codeanalyse mit Regeleinstellungen zu erstellen, die sowohl für [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] als auch für [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] gelten, müssen Sie die Richtlinie in [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] erstellen, alle erforderlichen Änderungen vornehmen und die Richtlinie speichern.  Wenn die Regeländerungen nur in [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] vorhanden sind, ändern und speichern Sie die Richtlinie in [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)].  
+-   So erstellen Sie eine Eincheckrichtlinie für die Analyse mit regeleinstellungen, die gelten für beide [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] und [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)], müssen Sie die Richtlinie in erstellen [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)], alle erforderlichen Änderungen vornehmen und speichern Sie die Richtlinie. Wenn die Änderungen an Regeln, nur in vorhanden [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)], ändern und speichern Sie die Richtlinie in [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)].  
   
-     Nach dem Speichern der Richtlinie in [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] können Regeleinstellungen, die nur in [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] vorhanden sind, nicht mehr geändert werden.
+     Nach dem Speichern der Richtlinie in [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)], Sie können Einstellungen für Regeln, die in nicht mehr ändern [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] nur.

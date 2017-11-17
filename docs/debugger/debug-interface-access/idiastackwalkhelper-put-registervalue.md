@@ -1,51 +1,50 @@
 ---
-title: "IDiaStackWalkHelper::put_registerValue | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaStackWalkHelper2::put_registerValue-Methode"
+title: IDiaStackWalkHelper::put_registerValue | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaStackWalkHelper2::put_registerValue method
 ms.assetid: 8f02ce54-ef59-455f-8aa6-dc26761c7aff
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8abfd209e5c2f59a0c55128eb235fda868f4bfd5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaStackWalkHelper::put_registerValue
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Legt den Wert eines Registers festgelegt.  
+# <a name="idiastackwalkhelperputregistervalue"></a>IDiaStackWalkHelper::put_registerValue
+Legt den Wert eines Registers.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT put_registerValue (   
-   DWORD     index,  
-   ULONGLONG NewVal  
+```C++  
+HRESULT put_registerValue (   
+   DWORD     index,  
+   ULONGLONG NewVal  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `index`  
- \[in\]  Ein Wert aus der [CV\_HREG\_e\-Enumeration](../../debugger/debug-interface-access/cv-hreg-e.md)\-Enumeration, der das Register angibt, in die geschrieben werden soll.  
+ [in] Ein Wert aus der [CV_HREG_e-Enumeration](../../debugger/debug-interface-access/cv-hreg-e.md) -Enumeration, die Registrierung zum Schreiben in angibt.  
   
  `NewVal`  
- \[in\]  Der neue Wert des Registers.  
+ [in] Der neue Wert der registrieren.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Trotz der Größe des Werts, sollte eine Implementierung nur gespeichert werden, was das Register normalerweise enthält.  Beispielsweise wird ein 8\-Bit\-Register nur das niedrigste 8\-Bit des angegebenen Werts enthalten.  
+## <a name="remarks"></a>Hinweise  
+ Trotz der Größe des Werts sollte eine Implementierung speichern nur was normalerweise die Registrierung enthält. Eine 8-Bit-Register würde z. B. nur die niedrigsten 8 Bits des angegebenen Werts enthalten.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
- [CV\_HREG\_e\-Enumeration](../../debugger/debug-interface-access/cv-hreg-e.md)
+ [CV_HREG_e-Enumeration](../../debugger/debug-interface-access/cv-hreg-e.md)

@@ -1,46 +1,45 @@
 ---
-title: "IDiaSectionContrib::get_informational | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSectionContrib::get_informational-Methode"
+title: 'Idiasectioncontrib:: Get_informational | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSectionContrib::get_informational method
 ms.assetid: 5351e89f-7db1-4f8e-9e57-2dd1c74002e0
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a6f3c664b670625b36f25d7ff582afccb7f155c0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSectionContrib::get_informational
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft ein Flag ab, das angibt, ob ein Abschnitt Kommentare oder ähnliche Informationen enthält.  
+# <a name="idiasectioncontribgetinformational"></a>IDiaSectionContrib::get_informational
+Ruft ein Flag, das angibt, ob ein Abschnitt Kommentare oder ähnliche Informationen enthält.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```C++  
 HRESULT get_informational(  
-   BOOL* pRetVal  
+   BOOL* pRetVal  
 };  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pRetVal`  
- \[out\]  Gibt `TRUE` zurück, wenn der Abschnitt Kommentare oder andere Informationen enthält. Andernfalls wird `FALSE`zurück.  
+ [out] Gibt `TRUE` , wenn der Abschnitt Kommentare oder andere Informationen; enthält andernfalls `FALSE`.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück.  Gibt `S_FALSE` zurück, wenn diese Eigenschaft nicht unterstützt wird.  Andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` Wenn diese Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- In der Regel enthält der .directive\-Abschnitt Informationen.  
+## <a name="remarks"></a>Hinweise  
+ In der Regel enthält der Abschnitt .directive Informationen.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

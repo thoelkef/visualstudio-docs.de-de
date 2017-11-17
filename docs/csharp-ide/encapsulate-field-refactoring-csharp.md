@@ -1,44 +1,42 @@
 ---
-title: "Encapsulate Field Refactoring (C#) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.csharp.refactoring.encapsulatefield"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "Encapsulate Field refactoring operation [C#]"
-  - "refactoring [C#], Encapsulate Field"
+redirect_url: /visualstudio/csharp-ide/refactoring/encapsulate-field
+title: Umgestaltung (c#) Feld kapseln | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: CSharp
+helpviewer_keywords:
+- Encapsulate Field refactoring operation [C#]
+- refactoring [C#], Encapsulate Field
 ms.assetid: bf714a04-ab1e-49ce-99ce-dda1ebb1a17f
-caps.latest.revision: 26
-caps.handback.revision: 26
-author: "BillWagner"
-ms.author: "wiwagn"
-manager: "wpickett"
+caps.latest.revision: "26"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 7bd9e255b35ffb843c15d5ffa9c1547891bf437d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Encapsulate Field Refactoring (C#)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Mit dem Umgestaltungsvorgang **Feld kapseln** können Sie schnell und einfach eine Eigenschaft aus einem vorhandenen Feld erstellen und den Code unmittelbar danach mit Verweisen auf die neue Eigenschaft aktualisieren.  
+# <a name="encapsulate-field-refactoring-c"></a>Refactoring „Feld kapseln“ (C#)
+Die **Feld kapseln** (refactoringvorgang) ermöglicht es Ihnen, schnell eine Eigenschaft aus einem vorhandenen Feld erstellen, und den Code dann nahtlos mit Verweisen auf die neue Eigenschaft zu aktualisieren.  
   
- Wenn ein Feld den Typ [öffentlich](/dotnet/csharp/language-reference/keywords/public) hat, können andere Objekte direkt auf das [Feld](/dotnet/csharp/programming-guide/classes-and-structs/fields) zugreifen und es ändern. Dies bleibt von dem Objekt unbemerkt, das dieses Feld besitzt.  Sie können den Direktzugriff auf Felder verhindern, indem Sie dieses Feld mithilfe von [Eigenschaften](/dotnet/csharp/programming-guide/classes-and-structs/properties) kapseln.  
+ Wenn eine [Feld](/dotnet/csharp/programming-guide/classes-and-structs/fields) ist [öffentlichen](/dotnet/csharp/language-reference/keywords/public), andere Objekte haben Sie direkten Zugriff auf dieses Feld und ändern können, durch das Objekt, das dieses Feld besitzt unentdeckt bleiben. Mithilfe von [Eigenschaften](/dotnet/csharp/programming-guide/classes-and-structs/properties) zum Kapseln von diesem Felds können Sie direkten Zugriff auf Felder unterbinden.  
   
- Um die neue Eigenschaft zu erstellen, wird der Zugriffsmodifizierer des zu kapselnden Felds über den Vorgang **Feld kapseln** in [privat](/dotnet/csharp/language-reference/keywords/private) geändert und anschließend ein [get](/dotnet/csharp/language-reference/keywords/get)\-Accessor und ein [set](/dotnet/csharp/language-reference/keywords/set)\-Accessor für das Feld generiert.  In einigen Fällen wird nur ein `get`\-Accessor generiert, beispielsweise wenn das Feld schreibgeschützt deklariert wird.  
+ Um die neue Eigenschaft erstellen die **Feld kapseln** Vorgang ändert den Zugriffsmodifizierer für das Feld, das Sie zum kapseln möchten [private](/dotnet/csharp/language-reference/keywords/private), und generiert dann [abrufen](/dotnet/csharp/language-reference/keywords/get)und [festgelegt](/dotnet/csharp/language-reference/keywords/set) Accessoren für dieses Feld. In einigen Fällen wird nur ein `get`-Accessor generiert, beispielsweise wenn das Feld schreibgeschützt deklariert wird.  
   
- Das Umgestaltungsmodul aktualisiert den Code in den Bereichen, die im Abschnitt **Verweise aktualisieren** des Dialogfelds **Feld kapseln** angegeben sind, mit Verweisen auf die neue Eigenschaft.  
+ Die Umgestaltung Engine aktualisiert den Code durch Verweise auf die neue Eigenschaft in den Bereichen, die im angegebenen der **Verweise aktualisieren** Teil der **Feld kapseln** (Dialogfeld).  
   
-### So erstellen Sie eine Eigenschaft aus einem Feld  
+### <a name="to-create-a-property-from-a-field"></a>So erstellen Sie eine Eigenschaft aus einem Feld  
   
 1.  Erstellen Sie eine Konsolenanwendung mit dem Namen `EncapsulateFieldExample`, und ersetzen Sie `Program` durch den folgenden Beispielcode.  
   
-    ```c#  
+    ```csharp  
     class Square  
     {  
         // Select the word 'width' and then use Encapsulate Field.  
@@ -58,29 +56,29 @@ Mit dem Umgestaltungsvorgang **Feld kapseln** können Sie schnell und einfach ei
     }  
     ```  
   
-2.  Platzieren Sie im [Code\-Editor](../ide/writing-code-in-the-code-and-text-editor.md) den Cursor in der Deklaration auf den Namen des Felds, das Sie kapseln möchten.  Setzen Sie den Cursor im Beispiel unten auf den Begriff `width`:  
+2.  In der [Code-Editor](../ide/writing-code-in-the-code-and-text-editor.md), platzieren Sie den Cursor in der Deklaration auf den Namen des Felds, das gekapselt werden soll. Setzen Sie den Cursor im Beispiel unten auf den Begriff `width`:  
   
-    ```c#  
+    ```csharp  
     public int width, height;  
     ```  
   
-3.  Klicken Sie im Menü **Umgestalten** auf **Feld kapseln**.  
+3.  Auf der **Umgestalten** Menü klicken Sie auf **Feld kapseln**.  
   
-     Das Dialogfeld **Feld kapseln** wird angezeigt.  
+     Die **Feld kapseln** Dialogfeld wird angezeigt.  
   
-     Sie können auch die Tastenkombination STRG\+R, STRG\+E drücken, um das Dialogfeld **Feld kapseln** anzuzeigen.  
+     Sie können auch die Tastenkombination STRG + R, anzuzeigende eingeben der **Feld kapseln** (Dialogfeld).  
   
-     Sie können auch mit der rechten Maustaste klicken, im Kontextmenü auf **Umgestalten** zeigen und dann auf **Feld kapseln** klicken, um das Dialogfeld **Feld kapseln** anzuzeigen.  
+     Sie können auch mit der rechten Maustaste des Mauszeiger, zeigen Sie auf **Umgestalten**, und klicken Sie dann auf **Feld kapseln** zum Anzeigen der **Feld kapseln** (Dialogfeld).  
   
 4.  Geben Sie Einstellungen an.  
   
-5.  Drücken Sie die EINGABETASTE, oder klicken Sie auf die Schaltfläche **OK**.  
+5.  Drücken Sie EINGABETASTE, oder klicken Sie auf die **OK** Schaltfläche.  
   
-6.  Wenn Sie die Option **Vorschau der Verweisänderungen** aktiviert haben, wird das Fenster **Vorschau der Verweisänderungen** geöffnet.  Klicken Sie auf die Schaltfläche **Übernehmen**.  
+6.  Bei Auswahl der **Verweis Vorschau der Änderungen** Option, und klicken Sie dann die **Verweis Vorschau der Änderungen** Fenster wird geöffnet. Klicken Sie auf die **übernehmen** Schaltfläche.  
   
-     Folgender `get`\- und `set`\-Accessorcode wird in der Quelldatei angezeigt:  
+     Folgender `get`- und `set`-Accessorcode wird in der Quelldatei angezeigt:  
   
-    ```c#  
+    ```csharp  
     public int Width  
     {  
         get { return width; }  
@@ -88,9 +86,9 @@ Mit dem Umgestaltungsvorgang **Feld kapseln** können Sie schnell und einfach ei
     }  
     ```  
   
-     Der Code in der `Main`\-Methode wird ebenfalls auf den neuen Namen der `Width`\-Eigenschaften aktualisiert.  
+     Der Code in der `Main`-Methode wird ebenfalls auf den neuen Namen der `Width`-Eigenschaften aktualisiert.  
   
-    ```c#  
+    ```csharp  
     Square mySquare = new Square();  
     mySquare.Width = 110;  
     mySquare.height = 150;  
@@ -98,13 +96,13 @@ Mit dem Umgestaltungsvorgang **Feld kapseln** können Sie schnell und einfach ei
     Console.WriteLine("width = {0}", mySquare.Width);  
     ```  
   
-## Hinweise  
- Der Vorgang **Feld kapseln** kann nur ausgeführt werden, wenn sich der Cursor in derselben Zeile wie die Felddeklaration befindet.  
+## <a name="remarks"></a>Hinweise  
+ Die **Feld kapseln** Vorgang ist nur möglich, wenn der Cursor in derselben Zeile wie die Felddeklaration positioniert ist.  
   
- Bei Deklarationen, in denen mehrere Felder deklariert werden, verwendet **Feld kapseln** das Komma als Trennzeichen zwischen Feldern und initialisiert die Umgestaltung für das Feld, das sich in derselben Zeile und am nächsten zum Cursor befindet.  Sie können das zu kapselnde Feld auch angeben, indem Sie den Namen des Feldes in der Deklaration auswählen.  
+ Für Deklarationen, die mehrere Felder deklarieren **Feld kapseln** verwendet das Komma als Trennzeichen zwischen Feldern und initialisiert die Umgestaltung auf das Feld, das am nächsten liegt der Cursor ist und auf derselben Zeile wie der Cursor. Sie können das zu kapselnde Feld auch angeben, indem Sie den Namen des Feldes in der Deklaration auswählen.  
   
- Der durch diesen Umgestaltungsvorgang generierte Code wird durch das Codeausschnittsfeature des Vorgangs „Feld kapseln“ modelliert.  Codeausschnitte können geändert werden.  Weitere Informationen finden Sie unter [Codeausschnitte](../ide/code-snippets.md).  
+ Der durch diesen Umgestaltungsvorgang generierte Code wird durch das Codeausschnittsfeature des Vorgangs „Feld kapseln“ modelliert. Codeausschnitte können geändert werden. Weitere Informationen finden Sie unter [Codeausschnitte](../ide/visual-csharp-code-snippets.md).  
   
-## Siehe auch  
- [Refactoring \(C\#\)](../csharp-ide/refactoring-csharp.md)   
- [Visual C\#\-Codeausschnitte](../ide/visual-csharp-code-snippets.md)
+## <a name="see-also"></a>Siehe auch  
+ [Umgestaltung (c#)](refactoring-csharp.md)   
+ [Visual C#-Codeausschnitte](../ide/visual-csharp-code-snippets.md)

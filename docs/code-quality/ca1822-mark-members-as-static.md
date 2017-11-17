@@ -1,49 +1,50 @@
 ---
-title: "CA1822: Member als statisch markieren | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "MarkMembersAsStatic"
-  - "CA1822"
-helpviewer_keywords: 
-  - "MarkMethodsAsStatic"
-  - "CA1822"
+title: 'CA1822: Member als statisch markieren | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- MarkMembersAsStatic
+- CA1822
+helpviewer_keywords:
+- MarkMembersAsStatic
+- CA1822
 ms.assetid: 743f0af7-41d1-4852-8d97-af0688b31118
-caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 160b263bde66496bad4f4fcb363852bdb174ff62
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CA1822: Member als statisch markieren
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1822-mark-members-as-static"></a>CA1822: Member als statisch markieren
 |||  
 |-|-|  
-|TypeName|MarkMembersAsStatic|  
+|TypeName|MarkMethodsAsStatic|  
 |CheckId|CA1822|  
-|Kategorie \(Category\)|Microsoft.Performance|  
-|Unterbrechende Änderung|Nicht unterbrechend – Wenn der Member unabhängig von der vorgenommenen Änderung außerhalb der Assembly nicht sichtbar ist.  Nicht unterbrechend – Wenn Sie nur den Member mit dem `this`\-Schlüsselwort in einen Instanzmember ändern.<br /><br /> Unterbrechend – Wenn Sie den Member von einem Instanzmember in einen statischen Member ändern und er außerhalb der Assembly sichtbar ist.|  
+|Kategorie|Microsoft.Performance|  
+|Unterbrechende Änderung|Nicht unterbrechend – Wenn der Member nicht außerhalb der Assembly sichtbar ist müssen unabhängig von der Änderung. Nicht unterbrechend – Wenn Sie nur das Element auf ein Instanzmember mit ändern die `this` Schlüsselwort.<br /><br /> Unterbrechend – Wenn Sie das Element über einen Instanzmember in ein statisches Element ändern, und er außerhalb der Assembly sichtbar ist.|  
   
-## Ursache  
- Ein Member, der nicht auf Instanzdaten zugreift, ist nicht als statisch markiert \(Shared in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]\).  
+## <a name="cause"></a>Ursache  
+ Ein Element, das nicht auf Instanzdaten zugreift, ist nicht als static markiert (Shared in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).  
   
-## Regelbeschreibung  
- Member, die nicht auf Instanzdaten zugreifen oder keine Instanzmethoden aufrufen, können als static markiert werden \(Shared in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]\).  Danach gibt der Compiler nicht virtuelle Aufrufsites an diese Member aus.  wodurch eine Überprüfung zur Laufzeit aller Aufrufe verhindert wird, die sicherstellt, dass der aktuelle Objektzeiger ungleich NULL ist.  Dies kann zu einer messbaren Leistungssteigerung für leistungsabhängigen Code führen.  In manchen Fällen stellt es ein Problem mit der Richtigkeit dar, wenn nicht auf die aktuelle Objektinstanz zugegriffen werden kann.  
+## <a name="rule-description"></a>Regelbeschreibung  
+ Member, die nicht auf Instanzdaten zugreifen oder keine Instanzmethoden aufrufen, können als static markiert werden (Shared in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]). Danach gibt der Compiler nicht virtuelle Aufrufsites an diese Member aus. Ausgeben von Aufrufsites verhindert eine Überprüfung zur Laufzeit für jeden Aufruf, der sicherstellt, dass der aktuelle Objektzeiger ungleich Null ist. Dies kann zu eine messbaren Leistungssteigerung für leistungsabhängigen Code erreichen. In einigen Fällen stellt der Fehler auf die aktuelle Objektinstanz ein Problem auf Richtigkeit.  
   
-## Behandeln von Verstößen  
- Markieren Sie den Member als statisch \(oder Shared in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]\), oder verwenden Sie im Methodentext ggf. 'this'\/'Me'.  
+## <a name="how-to-fix-violations"></a>Behandeln von Verstößen  
+ Markieren Sie den Member als statisch (oder im freigegebenen [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) oder verwenden Sie "this" / "Me" in der Methode Anforderungstext, falls zutreffend.  
   
-## Wann sollten Warnungen unterdrückt werden?  
- Eine Warnung dieser Regel kann bei zuvor veröffentlichtem Code, für den die Korrektur eine unterbrechende Änderung wäre, gefahrlos unterdrückt werden.  
+## <a name="when-to-suppress-warnings"></a>Wann sollten Warnungen unterdrückt werden?  
+ Sie können ruhig zum Unterdrücken einer Warnung dieser Regel für zuvor gelieferten Code, für den die Lösung eine unterbrechende Änderung wäre.  
   
-## Verwandte Regeln  
+## <a name="related-rules"></a>Verwandte Regeln  
  [CA1811: Nicht aufgerufenen privaten Code vermeiden](../code-quality/ca1811-avoid-uncalled-private-code.md)  
   
  [CA1812: Nicht instanziierte interne Klassen vermeiden](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  

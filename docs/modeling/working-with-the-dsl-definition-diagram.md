@@ -1,75 +1,77 @@
 ---
-title: "Arbeiten mit dem DSL-Definitionsdiagramm | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.dsltools.dsldesigner.diagram"
-  - "vs.dsltools.dsldesigner.dsldiagram"
-helpviewer_keywords: 
-  - "Domänenspezifische Sprachtools, Bring Tree Here"
-  - "Domänenspezifische Sprachtools, Diagramm"
-  - "Domänenspezifische Sprachtools, Show As-Klasse"
-  - "Domänenspezifische Sprachtools, Show Map Lines"
-  - "Domänenspezifische Sprachtools, Split Tree"
+title: Arbeiten mit der DSL-Definitionsdiagramm | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.dsltools.dsldesigner.diagram
+- vs.dsltools.dsldesigner.dsldiagram
+helpviewer_keywords:
+- Domain-Specific Language Tools, diagram
+- Domain-Specific Language Tools, Split Tree
+- Domain-Specific Language Tools, Show Map Lines
+- Domain-Specific Language Tools, Show As Class
+- Domain-Specific Language Tools, Bring Tree Here
 ms.assetid: 1a4c7a58-e134-438e-848e-efd98f92bf10
-caps.latest.revision: 21
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: f8a60f9c4ca91ff9aac516d21b3a502a2898aff1
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Arbeiten mit dem DSL-Definitionsdiagramm
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Das Diagramm einer [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]\-Definition ist ein wichtiges Tool zum Festlegen der domänenspezifischen Sprache.  Sie können Ihrem Domänenmodell Elemente hinzufügen und Beziehungen im Diagramm festlegen. Darüber hinaus können Sie das Layout des Diagramms ändern, um dieses besser lesbar zu machen.  
+# <a name="working-with-the-dsl-definition-diagram"></a>Arbeiten mit dem DSL-Definitionsdiagramm
+Das Diagramm eine [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Definition ist ein wichtiges Tool für die Definition einer domänenspezifischen Sprache. Sie können Ihrem Domänenmodell Elemente hinzufügen und Beziehungen im Diagramm festlegen. Darüber hinaus können Sie das Layout des Diagramms ändern, um dieses besser lesbar zu machen.  
   
-## Das Layout des Diagramms  
- Das [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]\-Definitionsdiagramm verfügt über zwei Partitionen: die Partition **Klassen und Beziehungen** und die Partition **Diagrammelemente**.  Die Partition **Klassen und Beziehungen** zeigt Domänenklassen, Domänenbeziehungen und die Vererbung an. Die Partition **Diagrammelemente** zeigt Formklassen, Konnektorklassen, Klassen für Verantwortlichkeitsbereiche und das generierte Designerdiagramm an.  
+## <a name="the-layout-of-the-diagram"></a>Das Layout des Diagramms  
+ Die [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Definitionsdiagramm weist zwei Partitionen, die **Klassen und Beziehungen** Partition und die **Diagrammelemente** Partition. Die **Klassen und Beziehungen** Partition Domänenklassen, zwischen Domänen und Vererbung angezeigt. Die **Diagrammelemente** Partition Zeigt Formklassen, konnektorklassen Verantwortlichkeitsbereich Klassen und Designer generierten Diagramm.  
   
- Domänenklassen können in der Partition **Klassen und Beziehungen** in verschiedenen Speicherorten vorhanden sein.  Eine Domänenklassendefinition zeigt eine Vererbungsstruktur an, wenn es sich um die Basisklasse für andere Domänenklassen handelt. Eine Beziehungsstruktur wird angezeigt, wenn es sich um die Quelle von einbettenden Beziehungen oder Verweisbeziehungen handelt.  Domänenklassenplatzhalter werden als die Ziele der einbettenden Beziehung oder der Verweisbeziehung angezeigt.  Platzhalterelemente werden standardmäßig im reduzierten Depot **Domäneneigenschaften** angezeigt.  Die Vererbung sowie einbettende Beziehungen oder Verweisbeziehungen werden nicht angezeigt.  
+ Domänenklassen stehen an mehreren Speicherorten in der **Klassen und Beziehungen** Partitionen. Eine Domänenklassendefinition zeigt eine Vererbungsstruktur an, wenn es sich um die Basisklasse für andere Domänenklassen handelt. Eine Beziehungsstruktur wird angezeigt, wenn es sich um die Quelle von einbettenden Beziehungen oder Verweisbeziehungen handelt. Domänenklassenplatzhalter werden als die Ziele der einbettenden Beziehung oder der Verweisbeziehung angezeigt. Standardmäßig werden Platzhalter Elemente angezeigt, mit der **Domäneneigenschaften** Depot reduziert. Die Vererbung sowie einbettende Beziehungen oder Verweisbeziehungen werden nicht angezeigt.  
   
- Beim Hinzufügen einer Domänenklasse erscheint diese im unteren Bereich der Partition **Klassen und Beziehungen**.  Wenn Sie eine einbettende Beziehung oder eine Verweisbeziehung hinzufügen, wird diese unterhalb und rechts neben der Quelldomänenklasse gezeichnet.  
+ Wenn Sie eine Domänenklasse hinzufügen, wird im unteren Teil der **Klassen und Beziehungen** Partition. Wenn Sie eine einbettende Beziehung oder eine Verweisbeziehung hinzufügen, wird diese unterhalb und rechts neben der Quelldomänenklasse gezeichnet.  
   
- Wenn Sie Domänenklassen und Beziehungen hinzufügen, kann das Suchen nach einer bestimmten Domänenklasse unter Umständen schwierig werden.  Sie können nach einer Domänenklasse suchen, indem Sie mit der rechten Maustaste in den **DSL\-Explorer** klicken und anschließend **Im Diagramm suchen** auswählen.  
+ Wenn Sie Domänenklassen und Beziehungen hinzufügen, kann das Suchen nach einer bestimmten Domänenklasse unter Umständen schwierig werden. Finden Sie eine Domänenklasse, indem Sie mit der rechten Maustaste in die **Explorer für DSL** und dann auf **suchen im Diagramm**.  
   
  In den folgenden Abschnitten wird beschrieben, wie Sie die Darstellung des Diagramms ändern können, sodass dieses besser lesbar ist.  
   
-## Kopieren von Elementen  
- Sie können die Elemente im DSL\-Definitionsdiagramm kopieren, ausschneiden und einfügen.  
+## <a name="copying-elements"></a>Kopieren von Elementen  
+ Sie können die Elemente im DSL-Definitionsdiagramm kopieren, ausschneiden und einfügen.  
   
-## Verkleinern oder Vergrößern im Diagramm  
- Mithilfe der **DSL Designer**\-Symbolleiste können Sie im Diagramm eine Verkleinerung oder Vergrößerung vornehmen, da Sie mit dieser Symbolleiste den Zoomfaktor festlegen.  
+## <a name="zooming-in-or-out-on-the-diagram"></a>Verkleinern oder Vergrößern im Diagramm  
+ Sie können vergrößern oder Verkleinern im Diagramm mit den **DSL-Designer** Symbolleiste, um die Zoomstufe festzulegen.  
   
-## Ausblenden von Zuordnungslinien  
- Bei Zuordnungslinien handelt es sich um Linien, die zwischen einer Domänenklasse oder Domänenbeziehung und der entsprechend zugeordneten Form oder dem zugeordneten Konnektor gezeichnet werden.  Sie können die Zuordnungslinien ausblenden, wenn Sie in der **DSL Designer**\-Symbolleiste auf die Schaltfläche **Zuordnungslinien anzeigen** klicken.  Klicken Sie erneut auf die Schaltfläche, um die Linien anzuzeigen.  
+## <a name="hiding-map-lines"></a>Ausblenden von Zuordnungslinien  
+ Bei Zuordnungslinien handelt es sich um Linien, die zwischen einer Domänenklasse oder Domänenbeziehung und der entsprechend zugeordneten Form oder dem zugeordneten Konnektor gezeichnet werden. Sie können kartenlinien ausblenden, indem Sie auf die **Kartenlinien anzeigen** auf die Schaltfläche der **DSL-Designer** Symbolleiste. Klicken Sie erneut auf die Schaltfläche, um die Linien anzuzeigen.  
   
-## Ändern des Diagrammlayouts  
- Sie können das Layout der Partition **Klassen und Beziehungen** folgendermaßen ändern:  
+## <a name="changing-the-diagram-layout"></a>Ändern des Diagrammlayouts  
+ Sie können das Layout ändern die **Klassen und Beziehungen** wie folgt zu partitionieren.  
   
-### Erweitern\/Reduzieren  
- Sie können die Größe eines Depotformelements, das eine Domänenklasse oder eine Form darstellt, reduzieren, indem Sie mit der rechten Maustaste darauf klicken und anschließend **Reduzieren** auswählen.  Daraufhin wird das Depot **Domäneneigenschaften** der Form ausgeblendet.  Wenn Sie das Depot **Domäneneigenschaften** erneut anzeigen möchten, klicken Sie mit der rechten Maustaste auf die Form und anschließend auf **Erweitern**.  
+### <a name="expandcollapse"></a>Erweitern/Reduzieren  
+ Sie können die Größe eines Elements der Depot-Form, die eine Domänenklasse oder eine Form vom Typ darstellt, indem sie mit der rechten Maustaste, und dann auf verringern **reduzieren**. Dies Blendet die **Domäneneigenschaften** Depot der Form. Zum Anzeigen der **Domäneneigenschaften** -Fach erneut aus, mit der rechten Maustaste der Form, und klicken Sie dann auf **erweitern**.  
   
-### Nach oben\/unten verschieben  
- Sie können eine Domänenklasse oder ein Diagrammelement in der Partition nach oben oder nach unten verschieben, wenn Sie mit der rechten Maustaste auf das Element klicken und anschließend **Nach oben** oder **Nach unten** auswählen.  Wenn Sie ein Platzhalterelement verschieben, das als das Ziel einer einbettenden Beziehung oder einer Verweisbeziehung angezeigt wird, wird die Beziehung ebenfalls verschoben.  
+### <a name="move-updown"></a>Nach oben/unten verschieben  
+ Sie können eine Klasse oder ein Diagramm Domänenelement nach oben oder unten in der Partition verschieben, indem das Element mit der rechten Maustaste, und klicken Sie dann auf **nach oben** oder **nach unten**. Wenn Sie ein Platzhalterelement verschieben, das als das Ziel einer einbettenden Beziehung oder einer Verweisbeziehung angezeigt wird, wird die Beziehung ebenfalls verschoben.  
   
-### Beziehungsstruktur erweitern\/reduzieren  
- Falls eine Domänenklasse der Quellrolleninhaber bei einer einbettenden Beziehung oder einer Verweisbeziehung mit anderen Domänenklassen ist, können Sie die Beziehungen ausblenden, indem Sie mit der rechten Maustaste auf die Domänenklassendefinition klicken und anschließend **Beziehungsstruktur reduzieren** auswählen.  Damit die Beziehungen wieder angezeigt werden, klicken Sie mit der rechten Maustaste auf das Definitionselement, und wählen Sie anschließend **Beziehungsstruktur erweitern** aus.  
+### <a name="expandcollapse-relationships-tree"></a>Beziehungsstruktur erweitern/reduzieren  
+ Wenn eine Domänenklasse Quellrolle einbetten oder Verweis Beziehungen mit anderen Domänenklassen wiedergegeben wird, können Sie die Beziehungen ausblenden, indem Sie die Definition der Klasse mit der rechten Maustaste, und klicken Sie dann auf **reduzieren Beziehungen Struktur**. Um die Beziehungen anzuzeigen, mit der rechten Maustaste in der Definition-Element, und klicken Sie dann auf **Beziehungen-Struktur erweitern**.  
   
-### Vererbungsstruktur erweitern\/reduzieren  
- Wenn es sich bei einer Domänenklasse um die Basisklasse anderer Domänenklassen handelt, können Sie die Vererbungsstruktur ausblenden, indem Sie mit der rechten Maustaste auf die Domänenklassendefinition klicken und anschließend **Vererbungsstruktur reduzieren** auswählen.  Damit die Vererbungsstruktur wieder angezeigt wird, klicken Sie mit der rechten Maustaste auf das Definitionselement, und wählen Sie anschließend **Vererbungsstruktur erweitern** aus.  
+### <a name="expandcollapse-inheritance-tree"></a>Vererbungsstruktur erweitern/reduzieren  
+ Wenn eine Domänenklasse die Basisklasse anderer Klassen für die Domäne ist, können Sie die Vererbungsstruktur ausblenden, indem Sie die Definition der Klasse mit der rechten Maustaste, und klicken Sie dann auf **reduzieren Vererbungsstruktur**. Klicken Sie zum Anzeigen der Vererbungsstruktur mit der rechten Maustaste in der Definition-Element, und klicken Sie dann auf **Vererbungsstruktur erweitern**.  
   
-### Struktur verschieben  
- Sie können das Diagramm konsolidieren, wenn Sie mit der rechten Maustaste auf eine Platzhalter\-Domänenklasse klicken und anschließend **Struktur verschieben** auswählen.  Die Platzhalter\-Domänenklasse wird zu einem Definitionselement und zeigt die Vererbungs\- und Beziehungsstrukturen an.  Das frühere Definitionselement wird zu einem Platzhalterelement, wenn es sich dabei um das Ziel einer Beziehung oder um das untergeordnete Element einer Vererbungsbeziehung handelt. Ansonsten wird es nicht länger angezeigt.  
+### <a name="bring-tree-here"></a>Struktur verschieben  
+ Sie können das Diagramm konsolidieren, indem Sie mit der rechten Maustaste einer Platzhalter-Domain-Klasse, und klicken Sie dann auf **Struktur hier schalten**. Die Platzhalter-Domänenklasse wird zu einem Definitionselement und zeigt die Vererbungs- und Beziehungsstrukturen an. Das frühere Definitionselement wird zu einem Platzhalterelement, wenn es sich dabei um das Ziel einer Beziehung oder um das untergeordnete Element einer Vererbungsbeziehung handelt. Ansonsten wird es nicht länger angezeigt.  
   
-### Struktur teilen  
- Sie können Vererbungs\- oder Beziehungsstrukturen aufteilen, indem Sie mit der rechten Maustaste auf die Domänenklassendefinition klicken, die diese Strukturen anzeigt. Klicken Sie anschließend auf **Struktur teilen**.  Das Definitionselement wird zu einem Platzhalterelement, und die Definitionsdomänenklasse wird nun zusammen mit den entsprechenden Vererbungs\- und Beziehungsstrukturen unten in der Partition angezeigt.  
+### <a name="split-tree"></a>Struktur teilen  
+ Sie können out vererbungs- oder Beziehungen Strukturen unterbrechen, indem mit der rechten Maustaste der Domänendefinition für die Klasse, die sie anzeigen und dann auf **Teilung Struktur**. Das Definitionselement wird zu einem Platzhalterelement, und die Definitionsdomänenklasse wird nun zusammen mit den entsprechenden Vererbungs- und Beziehungsstrukturen unten in der Partition angezeigt.  
   
-### Als Klasse anzeigen  
- Wenn eine Domänenbeziehung über abgeleitete Beziehungen verfügt oder eine einbettende Beziehung oder eine Verweisbeziehung bei anderen Domänenbeziehungen vorhanden ist, können Sie die Beziehung als Klasse anzeigen, indem Sie mit der rechten Maustaste auf die Beziehung klicken und dann die Option **Als Klasse anzeigen** auswählen.  Die Beziehung wird mit dem Depot **Domäneneigenschaften** angezeigt, sodass die Vererbungs\- und Beziehungsstrukturen sichtbar sind.  
+### <a name="show-as-class"></a>Als Klasse anzeigen  
+ Wenn einer domänenbeziehung Beziehungen abgeleitet wurde, oder wenn einbetten oder Verweis Beziehungen mit anderen zwischen Domänen bestehen, Sie die Beziehung als eine Klasse anzeigen können, indem die Beziehung mit der rechten Maustaste, und klicken Sie dann auf **als Klasse anzeigen** . Erscheint die Beziehung mit einer **Domäneneigenschaften** -Fach und die Strukturen Vererbung und Beziehungen angezeigt werden.  
   
-## Siehe auch  
- [Domain\-Specific Language Tools Glossary](http://msdn.microsoft.com/de-de/ca5e84cb-a315-465c-be24-76aa3df276aa)
+## <a name="see-also"></a>Siehe auch  
+ [Domänenspezifische Sprache Tools Glossar](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

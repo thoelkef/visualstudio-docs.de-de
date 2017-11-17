@@ -1,101 +1,102 @@
 ---
-title: "Troubleshooting Service References | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "msvse_wcf.Err.ReferenceGroup_NamespaceConflictsOther"
-  - "msvse_wcf.Err.AddSvcRefDlg_NothingSelectedOnGo"
-  - "msvse_wcf.Err.ErrorOnOK"
-  - "msvse_wcf.cfg.ConfigurationErrorsException"
-helpviewer_keywords: 
-  - "service references [Visual Studio], troubleshooting"
-  - "WCF services, troubleshooting"
+title: Problembehandlung bei Dienstverweisen | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- msvse_wcf.Err.ReferenceGroup_NamespaceConflictsOther
+- msvse_wcf.Err.AddSvcRefDlg_NothingSelectedOnGo
+- msvse_wcf.Err.ErrorOnOK
+- msvse_wcf.cfg.ConfigurationErrorsException
+helpviewer_keywords:
+- service references [Visual Studio], troubleshooting
+- WCF services, troubleshooting
 ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
-caps.latest.revision: 22
-caps.handback.revision: 20
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+caps.latest.revision: "22"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.technology: vs-data-tools
+ms.openlocfilehash: e46c8bf778ff18ea25096e524716bcb44916f460
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Troubleshooting Service References
-In diesem Thema sind allgemeine Probleme aufgelistet, die bei der Arbeit mit [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)]\- oder [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]\-Verweisen in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] auftreten können.  
+# <a name="troubleshooting-service-references"></a>Problembehandlung bei Dienstverweisen
+Dieses Thema listet häufige Probleme, die auftreten können, bei der Arbeit mit [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] oder [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] -Verweise [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-## Fehler beim Zurückgeben von Daten von einem Dienst  
- Wenn ein `DataSet` oder eine `DataTable` von einem Dienst zurückgegeben wird, erhalten Sie möglicherweise den Ausnahmefehler "Die maximale Kontingentgröße für eingehende Nachrichten wurde überschritten".  Die `MaxReceivedMessageSize`\-Eigenschaft für einige Bindungen ist standardmäßig auf einen verhältnismäßig kleinen Wert festgelegt, um die Gefahr von Denial\-of\-Service\-Angriffen zu verringern.  Sie können diesen Wert erhöhen, um den Ausnahmefehler zu verhindern.  Weitere Informationen finden Sie unter <xref:System.ServiceModel.BasicHttpBinding.MaxReceivedMessageSize%2A>.  
+## <a name="error-returning-data-from-a-service"></a>Fehler beim Zurückgeben von Daten von einem Dienst  
+ Wenn Sie zurückkehren, eine `DataSet` oder `DataTable` von einem Dienst möglicherweise eine Ausnahme "Kontingent für die maximale Nachrichtengröße für eingehende Nachrichten wurde überschritten". Wird standardmäßig die `MaxReceivedMessageSize` -Eigenschaft für einige Bindungen auf einen relativ kleinen Wert festgelegt, um die Anfälligkeit für Denial-of-Service-Angriffe zu verringern. Sie können diesen Wert, um die Ausnahme zu verhindern, erhöhen. Weitere Informationen finden Sie unter <xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A>.  
   
- So beheben Sie diesen Fehler:  
+ Um diesen Fehler zu beheben:  
   
-1.  Doppelklicken Sie im **Projektmappen\-Explorer** auf die Datei app.config, um sie zu öffnen.  
+1.  In **Projektmappen-Explorer**, doppelklicken Sie auf die Datei "App.config", um ihn zu öffnen.  
   
-2.  Suchen Sie die `MaxReceivedMessageSize`\-Eigenschaft und erhöhen Sie deren Wert.  
+2.  Suchen Sie die `MaxReceivedMessageSize` Eigenschaft, und ändern Sie ihn in einen größeren Wert.  
   
-## Ein Dienst in Meine Projektmappe kann nicht gefunden werden  
- Wenn Sie im Dialogfeld **Dienstverweis hinzufügen** auf die Schaltfläche **Ermitteln** klicken, werden ein oder mehrere WCF\-Dienstbibliotheksprojekte der Projektmappe nicht in der Diensteliste angezeigt.  Dies kann passieren, wenn der Projektmappe eine noch nicht kompilierte Dienstbibliothek hinzugefügt wurde.  
+## <a name="cannot-find-a-service-in-my-solution"></a>Einen Dienst in meiner Lösung wurde nicht gefunden.  
+ Beim Klicken auf die **Discover** Schaltfläche der **Dienstverweise hinzufügen** (Dialogfeld), ein oder mehrere WCF-Dienstbibliothek-Projekte in der Projektmappe werden in der Liste der Dienste nicht angezeigt. Dies kann auftreten, wenn eine Dienstbibliothek zur Projektmappe hinzugefügt wurde, aber noch nicht kompiliert.  
   
- So beheben Sie diesen Fehler:  
+ Um diesen Fehler zu beheben:  
   
--   Klicken Sie im **Projektmappen\-Explorer** mit der rechten Maustaste auf das WCF\-Dienstbibliotheksprojekt, und klicken Sie dann auf **Erstellen**.  
+-   In **Projektmappen-Explorer**mit der rechten Maustaste auf den WCF-Dienstbibliotheksprojekt, und klicken Sie auf **erstellen**.  
   
-## Fehler beim Zugriff auf einen Dienst über einen Remotedesktop  
- Wenn ein Benutzer über eine Remotedesktopverbindung auf einen im Web gehosteten WCF\-Dienst ohne Administratorberechtigungen zugreift, wird die NTLM\-Authentifizierung verwendet.  Wenn der Benutzer nicht über Administratorberechtigungen verfügt, erhält er möglicherweise die folgende Fehlermeldung: "Die HTTP\-Anforderung ist für das Clientauthentifizierungsschema 'Anonym' nicht autorisiert.  Der vom Server empfangene Authentifizierungsheader lautet 'NTLM'."  
+## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Fehler beim Zugriff auf einen Dienst über einen Remotedesktop  
+ Wenn ein Benutzer greift auf ein im Internet gehosteten WCF-Dienst über eine Remotedesktopverbindung und der Benutzer verfügt nicht über administrative Berechtigungen, NTLM-Authentifizierung verwendet wird. Wenn der Benutzer nicht über Administratorberechtigungen verfügt, kann der Benutzer empfangen die folgende Fehlermeldung angezeigt: "die HTTP-Anforderung ist mit Client-Authentifizierungsschema"Anonymous"nicht autorisiert. Vom Server empfangene Authentifizierungsheader wurde "NTLM"."  
   
- So beheben Sie diesen Fehler:  
+ Um diesen Fehler zu beheben:  
   
-1.  Öffnen Sie im Websiteprojekt die Seite **Eigenschaften**.  
+1.  Öffnen Sie im Website-Projekt die **Eigenschaften** Seiten.  
   
-2.  Deaktivieren Sie auf der Registerkarte **Startoptionen** das Kontrollkästchen **NTLM\-Authentifizierung**.  
+2.  Auf der **Startoptionen** Registerkarte Deaktivieren der **NTLM-Authentifizierung** Kontrollkästchen.  
   
     > [!NOTE]
-    >  Sie sollten NTLM\-Authentifizierung nur für Websites ausschalten, die ausschließlich WCF\-Dienste enthalten.  Die Sicherheit für WCF\-Dienste wird durch die Konfiguration in der Datei web.config verwaltet.  Dies macht NTLM\-Authentifizierung unnötig.  
+    >  Sie sollten die NTLM-Authentifizierung nur für Websites deaktivieren, die ausschließlich WCF-Dienste enthalten. Sicherheit für WCF-Diensten wird durch die Konfiguration in der Datei "Web.config" verwaltet. Dadurch wird die NTLM-Authentifizierung nicht erforderlich.  
   
- Weitere Informationen finden Sie unter [Problembehandlung bei Ausnahmen: System.ServiceModel.Security.MessageSecurityException](../misc/troubleshooting-exceptions-system-servicemodel-security-messagesecurityexception.md).  
+## <a name="access-level-for-generated-classes-setting-has-no-effect"></a>Zugriffsebene für generierte Klassen Einstellung hat keine Auswirkung  
+ Festlegen der **Zugriffsebene für generierte Klassen** -Option in der **Dienstverweise konfigurieren** Dialogfelds **intern** oder **"Friend"** funktioniert möglicherweise nicht immer. Obwohl die Option angezeigt wird, klicken Sie im Dialogfeld festgelegt werden, die sich ergebenden Unterstützungsklassen generiert werden mit einer Zugriffsebene `Public`.  
   
-## Zugriffsebene für Generierte Klassen\-Einstellung hat keine Auswirkungen  
- Das Festlegen der Option **Zugriffsebene für generierte Klassen** im Dialogfeld **Dienstverweis konfigurieren** auf **Intern** oder **Friend** funktioniert unter Umständen nicht.  Obwohl die Option im Dialogfeld festgelegt zu sein scheint, werden in diesem Fall die resultierenden Unterstützungsklassen mit der Zugriffsebene `Public` erstellt.  
+ Dies ist eine bekannte Einschränkung bestimmter Typen, z. B. solche mit serialisiert die <xref:System.Xml.Serialization.XmlSerializer>.  
   
- Dies ist eine bekannte Einschränkung bestimmter Typen, wie beispielsweise die die unter Verwendung von <xref:System.Xml.Serialization.XmlSerializer> serialisiert wurden.  
+## <a name="error-debugging-service-code"></a>Fehler beim Debuggen der Dienstcode  
+ Wenn Sie in den Code für einen WCF-Dienst aus dem Clientcode schrittweise, wird möglicherweise einen Fehler im Zusammenhang mit fehlenden Symbole erhalten. Dies kann auftreten, wenn ein Dienst, der Teil der Projektmappe wurde aus der Projektmappe entfernt oder verschoben wurde.  
   
-## Fehler beim Debuggen von Dienstcode  
- Wenn Sie den Code für einen WCF\-Dienst vom Clientcode aus in Einzelschritten ausführen, wird ggf. ein Fehler aufgrund von fehlenden Symbolen ausgegeben.  Dieser Fehler tritt auf, wenn ein Dienst, der Bestandteil der Projektmappe war, verschoben oder aus der Projektmappe entfernt wurde.  
+ Wenn Sie zunächst einen Verweis auf einen WCF-Dienst, die Teil der aktuellen Projektmappe ist hinzufügen, wird eine explizite Buildabhängigkeit zwischen dem Dienstprojekt und das Dienst-Client-Projekt hinzugefügt. Dadurch wird sichergestellt, die der Client immer auf dem neuesten Stand Dienstbinärdateien, greift auf die ist besonders wichtig für Debugszenarios beschrieben, wie z. B. aus dem Clientcode Einzelschritt Dienstcode.  
   
- Wenn Sie einen Verweis auf einen WCF\-Dienst in der aktuellen Projektmappe zum ersten Mal hinzufügen, wird eine explizite Buildabhängigkeit zwischen dem Dienstprojekt und dem Dienstclientprojekt eingefügt.  Hierdurch wird gewährleistet, dass der Client immer auf aktuelle Dienstbinärdateien zugreift, was vor allem in Debugging\-Szenarios wichtig ist, z. B. bei schrittweisen Wechseln von Clientcode zu Dienstcode.  
-  
- Wenn das Dienstprojekt aus der Projektmappe entfernt wird, wird diese explizite Buildabhängigkeit ungültig.  Visual Studio kann dann nicht mehr garantieren, dass das Dienstprojekt den Anforderungen entsprechend neu erstellt wird.  
+ Wenn das Dienstprojekt aus der Projektmappe entfernt wird, wird diese explizite Buildabhängigkeit ungültig. Visual Studio nicht mehr garantieren kann, dass das Dienstprojekt neu erstellt, wird nach Bedarf.  
   
  Um diesen Fehler zu beheben, müssen Sie das Dienstprojekt manuell neu erstellen:  
   
 1.  Klicken Sie im Menü **Extras** auf **Optionen**.  
   
-2.  Erweitern Sie im Dialogfeld **Optionen** die Option **Projekte und Projektmappen**, und wählen Sie dann **Allgemein** aus.  
+2.  In der **Optionen** Dialogfeld erweitern Sie **Projekte und Projektmappen**, und wählen Sie dann **allgemeine**.  
   
-3.  Stellen Sie sicher, dass das Kontrollkästchen **Erweiterte Buildkonfigurationen anzeigen** aktiviert ist, und klicken Sie dann auf **OK**.  
+3.  Stellen Sie sicher, dass die **Erweiterte Buildkonfigurationen anzeigen** Kontrollkästchen ausgewählt ist, und klicken Sie dann auf **OK**.  
   
-4.  Laden Sie das WCF\-Dienstprojekt.  Weitere Informationen hierzu finden Sie unter [Gewusst wie: Erstellen von Projektmappen mit mehreren Projekten](http://msdn.microsoft.com/de-de/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).  
+4.  Laden Sie das Projekt für den WCF-Dienst.  
   
-5.  Legen Sie im Dialogfeld **Konfigurations\-Manager** für **Konfiguration der aktuellen Projektmappe** die Option **Debuggen** fest.  Weitere Informationen hierzu finden Sie unter [Gewusst wie: Erstellen und Bearbeiten von Konfigurationen](../ide/how-to-create-and-edit-configurations.md).  
+5.  In der **Configuration Manager** (Dialogfeld), legen die **aktive Projektmappenkonfiguration** auf **Debuggen**. Weitere Informationen finden Sie unter [Vorgehensweise: Erstellen und Bearbeiten von Konfigurationen](../ide/how-to-create-and-edit-configurations.md).  
   
-6.  Wählen Sie im **Projektmappen\-Explorer** das WCF\-Dienstprojekt aus.  
+6.  In **Projektmappen-Explorer**, wählen Sie das Projekt für den WCF-Dienst.  
   
-7.  Klicken Sie im Menü **Erstellen** auf **Neu erstellen**, um das WCF\-Dienstprojekt neu zu erstellen.  
+7.  Auf der **erstellen** Menü klicken Sie auf **Rebuild** So erstellen Sie das Projekt für den WCF-Dienst neu.  
   
-## WCF Data Services werden nicht im Browser angezeigt  
- Beim Versuch, eine XML\-Darstellung von Daten in einem [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] anzuzeigen, interpretiert Internet Explorer die Daten u. U. fälschlicherweise als RSS\-Feed.  Sie müssen sicherstellen, dass die Option zum Anzeigen von RSS\-Feeds deaktiviert ist.  
+## <a name="wcf-data-services-do-not-display-in-the-browser"></a>WCF Data Services werden nicht im Browser angezeigt.  
+ Wenn es versucht, Anzeigen von Daten in eine XML-Darstellung einer [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)], Internet Explorer möglicherweise fehlinterpretiert werden die Daten als ein RSS-Feed. Sie müssen sicherstellen, dass die Option zum Anzeigen von RSS-Feeds deaktiviert ist.  
   
- Um diesen Fehler zu beheben, deaktivieren Sie RSS\-Feeds:  
+ Um diesen Fehler zu beheben, deaktivieren Sie RSS-Feeds:  
   
-1.  Klicken Sie in Internet Explorer im Menü **Extras** auf **Internetoptionen**.  
+1.  In Internet Explorer auf die **Tools** Menü klicken Sie auf **Internetoptionen**.  
   
-2.  Klicken Sie auf der Registerkarte **Inhalte** im Abschnitt **Feeds** auf **Einstellungen**.  
+2.  Auf der **Content** Registerkarte die **Feeds** auf **Einstellungen**.  
   
-3.  Deaktivieren Sie im Dialogfeld **Feedeinstellungen** das Kontrollkästchen **Feedleseanzeige einschalten**, und klicken Sie dann auf **OK**.  
+3.  In der **Feedeinstellungen** deaktivieren Sie im Dialogfeld die **Feedleseanzeige einschalten** Kontrollkästchen, und klicken Sie dann auf **OK**.  
   
-4.  Klicken Sie auf **OK**, um das Dialogfeld **Internetoptionen** zu schließen.  
+4.  Klicken Sie auf **OK** schließen die **Internetoptionen** (Dialogfeld).  
   
-## Siehe auch  
- [Windows Communication Foundation Services and WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)   
- [Consuming ASMX and WCF Services Sample](http://msdn.microsoft.com/de-de/788ddf2c-2ac1-416b-8789-2fbb1e29b8fe)
+## <a name="see-also"></a>Siehe auch  
+ [Windows Communication Foundation-Dienste und WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

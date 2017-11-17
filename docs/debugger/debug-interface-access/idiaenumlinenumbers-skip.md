@@ -1,43 +1,42 @@
 ---
-title: "IDiaEnumLineNumbers::Skip | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumLineNumbers::Skip-Methode"
+title: 'Idiaenumlinenumbers:: Skip | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumLineNumbers::Skip method
 ms.assetid: d182c269-8c76-4d8b-8275-c6807c5ae4e1
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 96b1d63a0a76bb0fe2217cc0dedc18e3c66dc2ea
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumLineNumbers::Skip
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Überspringt eine angegebene Anzahl von Zeilennummern in der Enumerationsfolge.  
+# <a name="idiaenumlinenumbersskip"></a>IDiaEnumLineNumbers::Skip
+Überspringt eine angegebene Anzahl von Zeilennummern im ein Enumerationsfolge an.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT Skip (   
-   ULONG celt  
+```C++  
+HRESULT Skip (   
+   ULONG celt  
 );  
 ```  
   
-#### Parameter  
- Celt  
- \[in\]  Die Anzahl der zu überspringenden Zeilennummern in der Enumerationsfolge.  
+#### <a name="parameters"></a>Parameter  
+ celt  
+ [in] Die Anzahl der Zeilennummern in die Enumerationsfolge überspringen.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. Andernfalls gibt `S_FALSE` zurück, wenn keine weiteren zu überspringen, Zeilennummern vorhanden ist.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` treten keine weitere Zeilennummern zu überspringen.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

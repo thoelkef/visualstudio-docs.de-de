@@ -1,49 +1,50 @@
 ---
-title: "How to: Specify the Location Where End Users Will Install From | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "deploying applications [ClickOnce], specifying an installation URL"
-  - "URLs, specifying an installation URL"
-  - "installation, specifying installation an URL"
-  - "Installation URL property"
+title: 'Vorgehensweise: Angeben des Speicherorts, in dem Endbenutzer von installieren | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- deploying applications [ClickOnce], specifying an installation URL
+- URLs, specifying an installation URL
+- installation, specifying installation an URL
+- Installation URL property
 ms.assetid: 04a804bf-ed55-4a7a-a1e6-f63ed99c0276
-caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 41a601febff80b002512a3783d8405dc42e5d766
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# How to: Specify the Location Where End Users Will Install From
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Wenn Sie eine [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Anwendung veröffentlichen, ist der Speicherort zum Herunterladen und Installieren der Anwendung durch die Benutzer nicht unbedingt der Speicherort, an dem Sie die Anwendung ursprünglich veröffentlichen.  In manchen Unternehmen veröffentlicht ein Entwickler eine Anwendung z. B. auf einem Stagingserver, und ein Administrator verschiebt diese anschließend auf einen Webserver.  
+# <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Gewusst wie: Angeben des Speicherorts für die Installation durch Endbenutzer
+Beim Veröffentlichen einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung, der Speicherort, in dem Benutzer zum Herunterladen und Installieren der Anwendung ist nicht unbedingt der Speicherort, in dem Sie zunächst die Anwendung veröffentlichen. Beispielsweise in einigen Organisationen kann ein Entwickler eine Anwendung auf einem Testserver veröffentlichen, und klicken Sie dann die Anwendung auf einem Webserver ein Administrator verschiebt.  
   
- In diesem Fall können Sie die `Installation URL`\-Eigenschaft verwenden, um einen Webserver anzugeben, von dem aus Benutzer die Anwendung herunterladen können.  Dies ist notwendig, damit dem Anwendungsmanifest der Speicherort für Updates bekannt ist.  
+ In diesem Fall können Sie die `Installation URL` -Eigenschaft auf den Webserver festzulegen, wo Benutzer werden die Anwendung herunterladen. Dies ist erforderlich, damit das Anwendungsmanifest weiß, wo nach Updates gesucht werden soll.  
   
- Die `Installation URL`\-Eigenschaft kann im **Projekt\-Designer** auf der Seite **Veröffentlichen** festgelegt werden.  
+ Die `Installation URL` Eigenschaft kann festgelegt werden, auf die **veröffentlichen** auf der Seite der **Projekt-Designer**.  
   
- **Hinweis** Die `Installation URL`\-Eigenschaft kann auch mit dem **Webpublishing \-Assistenten** festgelegt werden.  Weitere Informationen finden Sie unter [How to: Publish a ClickOnce Application using the Publish Wizard](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+ **Hinweis** der `Installation URL` Eigenschaft kann auch festgelegt werden mithilfe der **PublishWizard**. Weitere Informationen finden Sie unter [Vorgehensweise: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
-### So geben Sie eine Installations\-URL an  
+### <a name="to-specify-an-installation-url"></a>Ein Installations-URL an  
   
-1.  Wählen Sie im **Projektmappen\-Explorer** ein Projekt aus, und klicken Sie im Menü **Projekt** auf **Eigenschaften**.  
+1.  Klicken Sie bei ausgewähltem Projekt im **Projektmappen-Explorer**im Menü **Projekt** auf **Eigenschaften**.  
   
-2.  Klicken Sie auf die Registerkarte **Veröffentlichen**.  
+2.  Klicken Sie auf die **veröffentlichen** Registerkarte.  
   
-3.  Geben Sie im Feld URL für Installation als Installationspfad eine voll qualifizierte URL im Format http:\/\/www.microsoft.com\/Anwendungsname ein, oder verwenden Sie einen UNC\-Pfad im Format \\\\Server\\Anwendungsname.  
+3.  Geben Sie im Installations-URL-Feld den Installationsspeicherort an, die über eine vollqualifizierte URL mit dem Format http://www.microsoft.com/ApplicationName oder einen UNC-Pfad im Format \\\Server\ApplicationName.  
   
-## Siehe auch  
- [How to: Specify Where Visual Studio Copies the Files](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   
- [Publishing ClickOnce Applications](../deployment/publishing-clickonce-applications.md)   
- [How to: Publish a ClickOnce Application using the Publish Wizard](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+## <a name="see-also"></a>Siehe auch  
+ [Vorgehensweise: angeben, auf dem Visual Studio die Dateien kopiert](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   
+ [Veröffentlichen von ClickOnce-Anwendungen](../deployment/publishing-clickonce-applications.md)   
+ [Gewusst wie: Veröffentlichen einer ClickOnce-Anwendung mit dem Webpublishing-Assistenten](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

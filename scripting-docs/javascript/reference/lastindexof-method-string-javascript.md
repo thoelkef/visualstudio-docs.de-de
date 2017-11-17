@@ -1,60 +1,62 @@
 ---
-title: "lastIndexOf-Methode (String) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "lastIndexOf"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "lastIndexOf-Methode, String"
-  - "String, lastIndexOf-Methode"
+title: LastIndexOf-Methode (String) (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: lastIndexOf
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- lastIndexOf method, string
+- string, lastIndexOf method
 ms.assetid: 1ed36ccd-0f0b-4f16-be45-0567207670af
-caps.latest.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0fa0f35e970435a4d0296493c20afdeaac128cae
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# lastIndexOf-Methode (String) (JavaScript)
-Gibt die letzte Position einer Teilzeichenfolge in der Zeichenfolge zurück.  
+# <a name="lastindexof-method-string-javascript"></a>lastIndexOf-Methode (String) (JavaScript)
+Gibt das letzte Vorkommen einer Teilzeichenfolge in der Zeichenfolge zurück.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
 strObj.lastIndexOf(substring[, startindex])  
 ```  
   
-## Parameter  
+## <a name="parameters"></a>Parameter  
  `strObj`  
- Erforderlich.  Ein `String`\-Objekt oder Zeichenfolgenliteral.  
+ Erforderlich. Ein `String`-Objekt oder Zeichenfolgenliteral.  
   
  `substring`  
- Erforderlich.  Die zu suchende Teilzeichenfolge.  
+ Erforderlich. Die zu suchende Teilzeichenfolge.  
   
  `startindex`  
- Optional.  Der Index, ab dem mit der Suche begonnen werden soll.  Wenn die Angabe fehlt, beginnt die Suche am Ende der Zeichenfolge.  
+ Dies ist optional. Der Index, an dem die Suche beginnen soll. Wenn nicht angegeben ist, beginnt die Suche am Ende der Zeichenfolge.  
   
-## Hinweise  
- Die **lastIndexOf**\-Methode gibt einen ganzzahligen Wert zurück, der den Beginn der untergeordneten Zeichenfolge innerhalb des `String`\-Objekts angibt.  Wird die untergeordnete Zeichenfolge nicht gefunden, ist der Rückgabewert \-1.  
+## <a name="remarks"></a>Hinweise  
+ Die **LastIndexOf** Methode gibt eine ganze Zahl für den Anfang der Teilzeichenfolge innerhalb der `String` Objekt. Wenn die Teilzeichenfolge nicht gefunden wird, wird-1 zurückgegeben.  
   
- Wenn `startindex` negativ ist, wird für `startindex` der Wert 0 \(null\) verwendet.  Ist er größer als der größte Zeichenpositionsindex, wird er wie der größtmögliche Index behandelt.  
+ Wenn `startindex` negativ ist, wird für `startindex` der Wert 0 (null) verwendet. Ist er größer als der größte Position Zeichenindex, wird er als der größtmögliche Index behandelt.  
   
- Der Suchvorgang beginnt mit beim letzten Zeichen der Zeichenfolge.  Ansonsten ist diese Methode mit **indexOf** identisch.  
+ Die Suche erfolgt das letzte Zeichen in der Zeichenfolge ab. Diese Methode ist, andernfalls mit **IndexOf**.  
   
- Das folgende Beispiel veranschaulicht die Verwendung der **lastIndexOf**\-Methode.  
+ Das folgende Beispiel veranschaulicht die Verwendung der **LastIndexOf** Methode.  
   
-```javascript  
+```JavaScript  
 var str = "time, time";  
   
 var s = "";  
@@ -69,10 +71,10 @@ document.write(s);
 // abc is at position -1  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
- **Gilt für**: [String\-Objekt](../../javascript/reference/string-object-javascript.md)  
+ **Gilt für**: [String-Objekt](../../javascript/reference/string-object-javascript.md)  
   
-## Siehe auch  
- [indexOf\-Methode \(String\)](../../javascript/reference/indexof-method-string-javascript.md)
+## <a name="see-also"></a>Siehe auch  
+ [indexOf-Methode (String)](../../javascript/reference/indexof-method-string-javascript.md)

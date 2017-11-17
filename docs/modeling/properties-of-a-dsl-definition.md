@@ -1,47 +1,48 @@
 ---
-title: "Eigenschaften einer DSL-Definition | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Domänenspezifische Sprache, Definitionsdatei"
+title: Eigenschaften der Definition eines DSL | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Domain-Specific Language, definition file
 ms.assetid: 38debcfe-e1a6-4a3f-9d69-3ab07520f2b6
-caps.latest.revision: 13
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 7a8fc0474f624785a47a4ba9f970b5a1ca54dd9c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Eigenschaften einer DSL-Definition
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Definieren DslDefinitions\-Eigenschaften *domänenspezifische Sprachen* wie Eigenschaften für Versionsnummer.  Die DslDefinitions\-Eigenschaften werden im Fenster **Eigenschaften** , wenn Sie an einem geöffneten Feld des Diagramms im *domänenspezifischen Sprachdesigner*klicken.  
+# <a name="properties-of-a-dsl-definition"></a>Eigenschaften einer DSL-Definition
+DslDefinition Eigenschaften definieren *einer domänenspezifischen Sprache* Definitionseigenschaften z. B. versionsnummerierung. DslDefinition Eigenschaften werden in der **Eigenschaften** Fenster, wenn Sie auf einen offenen Bereich des Diagramms in die *einer domänenspezifischen Sprachdesigner*.  
   
- Weitere Informationen finden Sie unter [So definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md).  Weitere Informationen zum Verwenden dieser Eigenschaften finden Sie unter [Anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md)verwendet.  
+ Weitere Informationen finden Sie unter [zum Definieren einer domänenspezifischen Sprache](../modeling/how-to-define-a-domain-specific-language.md). Weitere Informationen zum Verwenden dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
- DslDefinition Eigenschaft besitzt die in der folgenden Tabelle:  
+ DslDefinition verfügt über die Eigenschaften in der folgenden Tabelle:  
   
-|Property|Beschreibung|Standardwert|  
-|--------------|------------------|------------------|  
-|Zugriffsmodifizierer|Bestimmt, ob der Zugriffsmodifizierer für die Domänenklasse intern oder öffentlich ist.|public|  
-|Benutzerdefinierte Attribute|definierten benutzerdefinierten Attributen für die Domänenklasse.<br /><br /> **Hinweis** verwenden Sie die Schaltfläche Durchsuchen, um ein Attribut hinzuzufügen.|\<Keine\>|  
-|Unternehmensname|Der Name des aktuellen Firmennamens in der Systemregistrierung.|Aktueller Firmenname|  
-|Name|Der Name dieser Domänenklasse.|Aktueller Name|  
-|Namespace|Der Namespace mit dieser Domänenklasse.|Aktueller Namespace|  
-|Paket\-Guid|Die GUID für das Paket [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] generiert für dieses DSL.|\<Keine\>|  
-|Paket\-Namespace|Der Namespace für das [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Paket generiert für dieses DSL.|\<Keine\>|  
-|Produktname|Der Name des Produkts, das zum [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Paket registriert wurde, generierte für dieses DSL.|\<Keine\>|  
-|Hinweise|Domänenklasse dieser zugeordneten Hinweise.|\<Keine\>|  
-|Beschreibung|Beschreibung für diese Domänenklasse.|\<Keine\>|  
-|Angezeigter Name|Der Name, der im generierten Designer für diese Domänenklasse angezeigt wird.|\<Keine\>|  
-|Hilfeschlüsselwort|Das Hilfeschlüsselwort Domänenklasse dieser zugeordnet ist.|\<Keine\>|  
-|Build|Die inkrementelle Buildnummer für diese Definition domänenspezifische Sprachen.|0|  
-|Hauptversion|Die inkrementelle zentrale Buildnummer für diese Definition domänenspezifische Sprachen.|1|  
-|Nebenversion|Die inkrementelle kleine Buildnummer für diese Definition domänenspezifische Sprachen.|0|  
-|Revision|Die inkrementelle Revisions buildnummer Definition für diese domänenspezifische Sprachen.|0|  
+|Eigenschaft|Beschreibung|Standard|  
+|--------------|-----------------|-------------|  
+|Zugriffsmodifizierer|Bestimmt, ob der Zugriffsmodifizierer für die Domänenklasse öffentliche oder eine interne ist.|public|  
+|Benutzerdefinierte Attribute|Benutzerdefinierte definiert die Attribute für die Domänenklasse.<br /><br /> **Hinweis** verwenden Sie die Schaltfläche zum Durchsuchen, um ein Attribut hinzuzufügen.|\<keine >|  
+|Firmenname|Der Name des aktuellen Unternehmensnamens in der systemregistrierung.|Aktuelle Firmenname|  
+|Name|Der Name dieser Domäne-Klasse.|Aktuelle name|  
+|Namespace|Der Namespace zugeordnet ist diese Domänenklasse.|Aktuellen namespace|  
+|Paket-Guid|Die Guid für die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Paket für diese DSL generiert.|\<keine >|  
+|Paket-Namespace|Der Namespace für die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Paket für diese DSL generiert.|\<keine >|  
+|Produktname|Der Name des Produkts, das für die zu registrierende der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Paket für diese DSL generiert.|\<keine >|  
+|Hinweise|Anmerkungen im Zusammenhang mit dieser Domänenklasse.|\<keine >|  
+|Beschreibung|Beschreibung für diese Domänenklasse.|\<keine >|  
+|Anzeigename|Der Name, der in der generierten Designer für diese Domänenklasse angezeigt wird.|\<keine >|  
+|Hilfsschlüsselwort|Das Hilfeschlüsselwort dieser Domänenklasse zugeordnet.|\<keine >|  
+|Build|Die Anzahl der inkrementellen Build für diese Definition einer domänenspezifischen Sprache.|0|  
+|Hauptversion|Die inkrementelle Hauptbuildnummer für diese Definition einer domänenspezifischen Sprache.|1|  
+|Nebenversion|Die Anzahl der inkrementellen Nebenversionsnummer des Builds für diese Definition einer domänenspezifischen Sprache.|0|  
+|Revision|Die inkrementelle Revision Buildnummer für diese Definition einer domänenspezifischen Sprache.|0|  
   
-## Siehe auch  
- [Domain\-Specific Language Tools Glossary](http://msdn.microsoft.com/de-de/ca5e84cb-a315-465c-be24-76aa3df276aa)
+## <a name="see-also"></a>Siehe auch  
+ [Domänenspezifische Sprache Tools Glossar](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

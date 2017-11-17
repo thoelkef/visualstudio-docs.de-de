@@ -1,59 +1,58 @@
 ---
-title: "IDiaStackWalkFrame | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaStackWalkFrame-Schnittstelle"
+title: IDiaStackWalkFrame | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaStackWalkFrame interface
 ms.assetid: 42d82845-d6f6-4846-9ecd-9dd169216077
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: be50964aaadad30aa13d6627be2ad1637e6123b3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaStackWalkFrame
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Behält Stapel Elementkontext zwischen den Aufrufen der [IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)\-Methode bei.  
+# <a name="idiastackwalkframe"></a>IDiaStackWalkFrame
+Stapel Kontext zwischen den Aufrufen des verwaltet die [idiaframedata:: Execute](../../debugger/debug-interface-access/idiaframedata-execute.md) Methode.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
-IDiaStackWalkFrame : IUnknown  
+IDiaStackWalkFrame : IUnknown  
 ```  
   
-## Methoden in die Vtable\-Reihenfolge  
- In der folgenden Tabelle werden die Methoden von `IDiaStackWalkFrame`an.  
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
+ Die folgende Tabelle zeigt die Methoden der `IDiaStackWalkFrame`.  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[IDiaStackWalkFrame::get\_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)|Ruft den Wert eines Registers ab.|  
-|[IDiaStackWalkFrame::put\_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)|Legt den Wert eines Registers festgelegt.|  
-|[IDiaStackWalkFrame::readMemory](../../debugger/debug-interface-access/idiastackwalkframe-readmemory.md)|Liest Speicher im Abbild.|  
-|[IDiaStackWalkFrame::searchForReturnAddress](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddress.md)|Sucht den angegebenen Stapelrahmen für die nächste Funktion rückgabeadresse.|  
-|[IDiaStackWalkFrame::searchForReturnAddressStart](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddressstart.md)|Sucht den angegebenen Stapelrahmen für eine Rückgabeadresse nah an der angegebenen Adresse.|  
+|------------|-----------------|  
+|[IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)|Ruft den Wert eines Registers.|  
+|[IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)|Legt den Wert eines Registers.|  
+|[IDiaStackWalkFrame::readMemory](../../debugger/debug-interface-access/idiastackwalkframe-readmemory.md)|Liest Arbeitsspeicher aus Image an.|  
+|[IDiaStackWalkFrame::searchForReturnAddress](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddress.md)|Sucht den angegebenen Stapelrahmen für die nächste Funktion Absenderadresse an.|  
+|[IDiaStackWalkFrame::searchForReturnAddressStart](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddressstart.md)|Sucht den angegebenen Stapelrahmen für eine Absenderadresse Beginn oder kurz vor der angegebenen Adresse an.|  
   
-## Hinweise  
- Diese Schnittstelle wird während der Programmausführung zum Lesen und Schreiben von Registern sowie Informationen über Zugriffsdatum und \- arbeitsspeicher\- Suchen rückgabeadressen.  
+## <a name="remarks"></a>Hinweise  
+ Diese Schnittstelle wird verwendet, während der Ausführung des Programms zum Lesen und Schreiben von Registern als auch auf Arbeitsspeicher zugreifen und return Adressen suchen.  
   
-## Hinweise für Aufrufer  
- Die Clientanwendung implementiert diese Schnittstelle und führt eine Instanz der Schnittstelle zur [IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)\-Methode.  Die gleiche Instanz dieser Schnittstelle wird immer wieder verwendet, um den Zustand der Register bei jedem Aufruf der `execute`\-Methode aufrechtzuerhalten.  Die `execute`\-Methode verwendet ebenfalls diese Schnittstelle, um die Rückgabeadresse zu bestimmen.  
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
+ Die Clientanwendung implementiert diese Schnittstelle und übergibt eine Instanz der Schnittstelle an, die [idiaframedata:: Execute](../../debugger/debug-interface-access/idiaframedata-execute.md) Methode. Die gleiche Instanz dieser Schnittstelle wird wieder verwendet, um den Status der Register bei jedem Aufruf beibehalten der `execute` Methode. Die `execute` Methode verwendet auch diese Schnittstelle, um die Rücksprungadresse zu ermitteln.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: Dia2.h  
   
  Bibliothek: diaguids.lib  
   
- DLLs: msdia80.dll  
+ DLL: "MSDIA80.dll"  
   
-## Siehe auch  
- [Schnittstellen \(Debug Interface Access SDK\)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Schnittstellen (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)

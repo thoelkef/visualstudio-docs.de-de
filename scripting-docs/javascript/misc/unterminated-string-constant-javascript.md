@@ -1,37 +1,39 @@
 ---
-title: "Nicht abgeschlossene Zeichenfolgenkonstante (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.WebClient.Help.SCRIPT1015"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: Nicht abgeschlossene Zeichenfolgenkonstante (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.WebClient.Help.SCRIPT1015
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 5083809e-9828-4aea-b9b0-80f46d6f3812
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0fd4dc6ff9008b03c3e8cc81385d6ebe0fe89396
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Nicht abgeschlossene Zeichenfolgenkonstante (JavaScript)
-Sie haben die Zeichenfolgenkonstante nicht mit einem schließenden Anführungszeichen beendet.  Zeichenfolgenkonstanten müssen in Anführungszeichen gesetzt werden.  
+# <a name="unterminated-string-constant-javascript"></a>Nicht abgeschlossene Zeichenfolgenkonstante (JavaScript)
+Die Zeichenfolgenkonstante mit ein schließendes Anführungszeichen wurde nicht beendet. Zeichenfolgenkonstanten müssen in ein Paar von Anführungszeichen eingeschlossen sein.  
   
 > [!NOTE]
->  Sie können Paare von einfachen oder doppelten Anführungszeichen verwenden.  Doppelte Anführungszeichen können in Zeichenfolgen enthalten sein, die von einfachen Anführungszeichen eingeschlossen sind, und einfache Anführungszeichen können in Zeichenfolgen enthalten sein, die von doppelten Anführungszeichen eingeschlossen sind.  
+>  Können Sie übereinstimmende Paare von einfache oder doppelte Anführungszeichen ein. Doppelte Anführungszeichen innerhalb von Zeichenfolgen, die in einfache Anführungszeichen eingeschlossene enthalten sein können, und einfache Anführungszeichen können innerhalb von Zeichenfolgen in doppelte Anführungszeichen eingeschlossene enthalten sein.  
   
-### So beheben Sie diesen Fehler  
+### <a name="to-correct-this-error"></a>So beheben Sie diesen Fehler  
   
--   Fügen Sie am Ende der Zeichenfolge das schließende Anführungszeichen hinzu.  
+-   Fügen Sie das schließende Anführungszeichen am Ende der Zeichenfolge.  
   
-## Siehe auch  
- [String\-Objekt](../../javascript/reference/string-object-javascript.md)   
- [toString\-Methode \(Objekt\)](../../javascript/reference/tostring-method-object-javascript.md)
+## <a name="see-also"></a>Siehe auch  
+ [String-Objekt](../../javascript/reference/string-object-javascript.md)   
+ [toString-Methode (Objekt)](../../javascript/reference/tostring-method-object-javascript.md)

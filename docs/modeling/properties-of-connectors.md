@@ -1,53 +1,54 @@
 ---
-title: "Eigenschaften von Konnektoren | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Domänenspezifische Sprache, Verbindungen"
+title: Eigenschaften von Connectors | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Domain-Specific Language, connectors
 ms.assetid: b1f24e8d-cdd7-4a5d-af37-1038f43b45c7
-caps.latest.revision: 21
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 503f171b2af5e06fd3c890caf07525ba880d0658
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# Eigenschaften von Konnektoren
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Domänen\-Verhältnisse stellen Verbindungen in einem generierten Designer dar.  
+# <a name="properties-of-connectors"></a>Eigenschaften von Konnektoren
+Verbinder repräsentieren domänenbeziehungen in einem generierten Designer.  
   
- Weitere Informationen finden Sie unter [So definieren Sie eine domänenspezifische Sprache](../modeling/how-to-define-a-domain-specific-language.md).  Weitere Informationen zum Verwenden dieser Eigenschaften finden Sie unter [Anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md)verwendet.  
+ Weitere Informationen finden Sie unter [zum Definieren einer domänenspezifischen Sprache](../modeling/how-to-define-a-domain-specific-language.md). Weitere Informationen zum Verwenden dieser Eigenschaften finden Sie unter [anpassen und Erweitern einer domänenspezifischen Sprache](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
- Verbindungen verfügen über Eigenschaften, die in der folgenden Tabelle aufgelistet sind.  
+ Connectors wurden die Eigenschaften, die in der folgenden Tabelle aufgeführt sind.  
   
-|Property|Beschreibung|Standardwert|  
-|--------------|------------------|------------------|  
-|Farbe|Die Farbe des Konnektors.|Black|  
-|Bindestrich\-Format|Das Bindestriche Format für die Zeile für den Konnektor \(Durchgezogen, Bindestriche, zeigen, DashDot, DashDotDot oder benutzerdefiniert\).|Durchgezogen|  
-|Quell\-Enden\-Format|Das Format für diesen Connector Beenden Sources \(HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond FilledDiamond, oder None\).|None|  
-|Ziel\-Enden\-Format|Das Ziel beenden HollowArrow Format für den Konnektor \(EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond, oder None\).|None|  
-|Textfarbe|Die Farbe, die für Text decorator\-elemente verwendet wird, die mit diesem Konnektor zugeordnet sind.|Black|  
-|Thickness|Die Stärke der Linie für diesen Connector, gemessen in Zoll.|0.03125|  
-|Zugriffsmodifizierer|Die Zugriffsebene der Klasse \(`public` oder `internal`\).|Public|  
-|Benutzerdefinierte Attribute|Wird verwendet, um Attribute der Quellcode Klasse hinzufügen, die von diesen Connector generiert wird.|\<Keine\>|  
-|Generiert doppeltes abgeleitetes|Wenn `True`, eine Basisklasse und eine partielle Klasse \(Anpassung von Überschreibungen unterstützen\) generiert wird.  Weitere Informationen finden Sie unter [Überschreiben und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
-|Hat benutzerdefinierten Konstruktor|Wenn `True`, ein benutzerdefinierter Konstruktor im Quellcode bereitgestellt wird.  Weitere Informationen finden Sie unter [Überschreiben und Erweitern der generierten Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
-|Vererbungsmodifizierer|Beschreibt die Art der Vererbung der Quellcode Klasse, die vom Konnektor \(`none`generiert wird, oder `abstract``sealed`\).|Keine|  
-|Niedriger Konnektor|Die Basisklasse des Konnektors.|\(kein\)|  
-|Name|Der Name des Konnektors.|Aktueller Name|  
-|Namespace|Der Namespace, der diesen Connector verbunden ist.|Aktueller Namespace|  
-|QuickInfo\-Typ|Wie die QuickInfo definiert ist \(korrigiert, Variablen oder keine\).  Wenn er korrigiert, und anschließend wird, wird der Wert der `Fixed Tooltip Text`\-Eigenschaft als QuickInfo verwendet. Variablen\-, wenn die QuickInfo dann im benutzerdefinierten Code definiert ist.|\<Keine\>|  
-|Hinweise|Informelle Hinweise, die diesem Konnektor zugeordnet sind.|\<Keine\>|  
-|Routing\-Format|Die Formatvorlage, die zum Weiterleiten des Konnektors verwendet wird.  Ein `Rectilinear` Konnektor führt nach Bedarf rechtwinklig gedreht wird. `Straight` ein Konnektor, jedoch nicht.|Geradlinig|  
-|Farbe als Eigenschaft verfügbar gemachte<br /><br /> Bindestrich\-Format als Eigenschaft verfügbar gemachte<br /><br /> Stärke als Eigenschaft verfügbar gemachte<br /><br /> Exposee\-Textfarbe|Wenn `True`, der Benutzer die angegebene Eigenschaft ein Formular festlegen kann.  Wenn Sie dies mit der rechten Maustaste auf die Form, und klicken Sie auf Definition **Verfügbar gemacht hinzufügen**festlegen.|False|  
-|Beschreibung|Ein Dokument den generierten Designer verwenden.|\<Keine\>|  
-|Angezeigter Name|Der Name, der im generierten Designer für den Konnektor angezeigt wird.|\<Keine\>|  
-|Fester QuickInfo\-Text|Der Text, der für eine feste QuickInfo verwendet wird.|\<Keine\>|  
-|Hilfeschlüsselwort|Das Schlüsselwort, das dem Index F1\-Hilfe für dieses Element verwendet wird.|\<Keine\>|  
+|Eigenschaft|Beschreibung|Standard|  
+|--------------|-----------------|-------------|  
+|Farbe|Die Farbe der diesen Connector.|Schwarz|  
+|Strichformat|Das Strichformat für die Zeile für diesen Connector (durchgezogen, Bindestrich, Punkt, DashDot, Strich oder Benutzerdefiniert).|Basis|  
+|Source-End-Stil|Die Quelle End Formatvorlage für diesen Connector (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond oder keine).|Keine|  
+|Ziel-End-Stil|Der Ziel-End-Stil für diesen Connector (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond oder keine).|Keine|  
+|Textfarbe|Die Farbe, die für Text Decorator-Elementen verwendet wird, die mit diesem Connector verknüpft sind.|Schwarz|  
+|Stärke|Die Stärke der Linie für diesen Connector, gemessen in Zoll.|0.03125|  
+|Zugriffsmodifizierer|Die Zugriffsebene der Klasse (`public` oder `internal`).|Public|  
+|Benutzerdefinierte Attribute|Verwendet, um den Code Quellklasse Attribute hinzuzufügen, die von diesem Connector generiert wird.|\<keine >|  
+|Doppelter generiert abgeleitet|Wenn `True`, eine Basisklasse und eine partielle Klasse (zur Unterstützung von Anpassung außer Kraft) generiert werden. Weitere Informationen finden Sie unter [überschreiben und erweitern die generierte Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
+|Verfügt über benutzerdefinierte-Konstruktor|Wenn `True`, ein benutzerdefinierter Konstruktor im Quellcode bereitgestellt werden. Weitere Informationen finden Sie unter [überschreiben und erweitern die generierte Klassen](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
+|Inheritance Modifier|Beschreibt die Art der Vererbung von der Quellklasse für Code, der vom Connector generiert wird (`none`, `abstract` oder `sealed`).|Keine|  
+|Basis-Connector|Die Basisklasse dieses Connectors.|(keine)|  
+|Name|Der Name dieses Connectors.|Aktuelle name|  
+|Namespace|Der Namespace, der dieser Verbindung zugeordnet ist.|Aktuellen namespace|  
+|QuickInfo-Typ|Wie die QuickInfo definiert ist (fest, Variable oder keine). Wenn behoben, den Wert der `Fixed Tooltip Text` Eigenschaft wird als QuickInfo verwendet wird und wenn die Variable ist, klicken Sie dann die QuickInfo definiert ist in benutzerdefiniertem Code.|\<keine >|  
+|Hinweise|Informelle Hinweise, die mit diesem Connector verknüpft sind.|\<keine >|  
+|Routing-Stil|Das Format, das für das routing des Connectors verwendet wird. Ein `Rectilinear` Connector macht Rechtwinklige schaltet nach Bedarf; eine `Straight` Connector nicht.|Achtzackiger geradliniger|  
+|Als Eigenschaft verfügbar gemachte Farbe<br /><br /> Als Eigenschaft verfügbar gemachte Strichformat<br /><br /> Als Eigenschaft verfügbar gemachte Stärke<br /><br /> Macht die Textfarbe|Wenn `True`, der Benutzer kann die angegebene Eigenschaft einer Form festlegen. Um dies festzulegen, mit der rechten Maustaste der Form "Definition, und klicken Sie auf **hinzufügen verfügbar gemachten**.|False|  
+|Beschreibung|So dokumentieren Sie den generierten-Designer verwendet.|\<keine >|  
+|Anzeigename|Der Name, der in der generierten Designer für diesen Connector angezeigt wird.|\<keine >|  
+|Feste QuickInfo-Text|Der Text, der für eine feste QuickInfo verwendet wird.|\<keine >|  
+|Hilfsschlüsselwort|Das Schlüsselwort, das zum Indizieren der F1-Hilfe für dieses Element verwendet wird.|\<keine >|  
   
-## Siehe auch  
- [Domain\-Specific Language Tools Glossary](http://msdn.microsoft.com/de-de/ca5e84cb-a315-465c-be24-76aa3df276aa)
+## <a name="see-also"></a>Siehe auch  
+ [Domänenspezifische Sprache Tools Glossar](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

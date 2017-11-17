@@ -1,39 +1,38 @@
 ---
-title: "&lt;assemblyIdentity&gt; Element (ClickOnce Deployment) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "urn:schemas-microsoft-com:asm.v2#assemblyIdentity"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<assemblyIdentity> element [ClickOnce deployment manifest]"
+title: '&lt;AssemblyIdentity&gt; Element (ClickOnce-Bereitstellung) | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: urn:schemas-microsoft-com:asm.v2#assemblyIdentity
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <assemblyIdentity> element [ClickOnce deployment manifest]
 ms.assetid: f4a3bb83-c800-47d0-9905-9a5ae2486838
-caps.latest.revision: 23
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 23
+caps.latest.revision: "23"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 26debb7d29458ab6452a2063e8e5c7e2f43fa7d0
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# &lt;assemblyIdentity&gt; Element (ClickOnce Deployment)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Identifiziert die primäre Assembly der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Anwendung.  
+# <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;AssemblyIdentity&gt; Element (ClickOnce-Bereitstellung)
+Identifiziert die primäre Assembly von der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Anwendung.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
-      <assemblyIdentity    
-   name   
+      <assemblyIdentity    
+   name   
    version  
    publicKeyToken  
    processorArchitecture  
@@ -41,21 +40,21 @@ Identifiziert die primäre Assembly der [!INCLUDE[ndptecclick](../deployment/inc
 />  
 ```  
   
-## Elemente und Attribute  
- Das `assemblyIdentity`\-Element ist erforderlich.  Es enthält keine untergeordneten Elemente und verfügt über die folgenden Attribute.  
+## <a name="elements-and-attributes"></a>Elemente und Attribute  
+ Die `assemblyIdentity` Element ist erforderlich. Es enthält keine untergeordneten Elemente und weist folgende Attribute.  
   
 |Attribut|Beschreibung|  
-|--------------|------------------|  
-|`name`|Erforderlich.  Identifiziert den lesbaren Namen der Bereitstellung für Informationszwecke.<br /><br /> Wenn `name` Sonderzeichen, z. B. einzelne oder doppelte Anführungszeichen, enthält, wird die Anwendung möglicherweise nicht aktiviert.|  
-|`version`|Erforderlich.  Gibt die Versionsnummer der Assembly im folgenden Format an: `Hauptversion.Nebenversion.Build.Revision`.<br /><br /> Dieser Wert muss in einem aktualisierten Manifest inkrementiert werden, um ein Anwendungsupdate auszulösen.|  
-|`publicKeyToken`|Erforderlich.  Gibt eine aus 16 Zeichen bestehende hexadezimale Zeichenfolge an, die die letzten 8 Bytes des SHA\-1\-Hashwerts des öffentlichen Schlüssels darstellt, der zum Signieren des Bereitstellungsmanifests verwendet wird.  Der öffentliche Schlüssel, der zum Signieren verwendet wird, muss mindestens 2048 Bits groß sein.<br /><br /> Obwohl das Signieren einer Assembly optional empfohlen wird, ist dieses Attribut erforderlich.  Wenn eine Assembly nicht signiert ist, sollten Sie den Wert einer selbst signierten Assembly kopieren oder einen ausschließlich aus 0\-Werten bestehenden "Dummy"\-Wert verwenden.|  
-|`processorArchitecture`|Erforderlich.  Gibt den Prozessor an.  Die gültigen Werte sind `msil` für alle Prozessoren, `x86` für 32\-Bit\-Windows, `IA64` für 64\-Bit\-Windows und `Itanium` für Intel 64\-Bit\-Itanium\-Prozessoren.|  
-|`type`|Erforderlich.  Für die Kompatibilität mit der Windows\-Technologie für parallele Installationen.  Der einzig zulässige Wert ist `win32`.|  
+|---------------|-----------------|  
+|`name`|Erforderlich. Identifiziert den lesbaren Namen der Bereitstellung für Informationszwecke an.<br /><br /> Wenn `name` Sonderzeichen enthält, z. B. einfache oder doppelte Anführungszeichen, die Anwendung möglicherweise nicht aktiviert.|  
+|`version`|Erforderlich. Gibt die Versionsnummer der Assembly im folgenden Format an: `major.minor.build.revision`.<br /><br /> Dieser Wert muss in einem aktualisierten Manifest ein Anwendungsupdate auslösen erhöht.|  
+|`publicKeyToken`|Erforderlich. Gibt eine hexadezimale Zeichenfolge von 16-Zeichen, die die letzten 8 Bytes des SHA-1-Hash-Wert des öffentlichen Schlüssels darstellt, unter dem das Bereitstellungsmanifest signiert wurde. Die öffentliche Schlüssel, der zum Signieren verwendet wird, muss 2048 Bits betragen.<br /><br /> Obwohl das Signieren einer Assembly wird empfohlen, aber dies ist optional, dieses Attribut ist erforderlich. Wenn eine Assembly nicht signiert ist, sollten Sie Kopieren eines Werts aus einem selbst signierten Assembly oder verwenden Sie den Wert "dummy" Nullen.|  
+|`processorArchitecture`|Erforderlich. Gibt den Prozessor. Gültige Werte sind `msil` für alle Prozessoren `x86` für 32-Bit-Windows `IA64` für 64-Bit-Windows und `Itanium` für Intel 64-Bit-Itanium-Prozessoren.|  
+|`type`|Erforderlich. Um die Kompatibilität mit Windows-Seite-an-Seite-Installationsverfahrens. Der einzige zulässige Wert ist `win32`.|  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
   
-## Beispiel  
- Im folgenden Codebeispiel wird ein `assemblyIdentity`\-Element in einem [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Bereitstellungsmanifest veranschaulicht.  Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels, das für das Thema [ClickOnce Deployment Manifest](../deployment/clickonce-deployment-manifest.md) bereitgestellt wird.  
+## <a name="example"></a>Beispiel  
+ Das folgende Codebeispiel veranschaulicht eine `assemblyIdentity` Element in einer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellungsmanifest. Dieses Codebeispiel ist Teil eines umfangreicheren Beispiels für die [ClickOnce-Bereitstellungsmanifest](../deployment/clickonce-deployment-manifest.md) Thema.  
   
 ```  
 <!-- Identify the deployment. -->  
@@ -68,6 +67,6 @@ Identifiziert die primäre Assembly der [!INCLUDE[ndptecclick](../deployment/inc
   xmlns="urn:schemas-microsoft-com:asm.v1" />  
 ```  
   
-## Siehe auch  
- [ClickOnce Deployment Manifest](../deployment/clickonce-deployment-manifest.md)   
- [\<assemblyIdentity\> Element](../deployment/assemblyidentity-element-clickonce-application.md)
+## <a name="see-also"></a>Siehe auch  
+ [ClickOnce-Bereitstellungsmanifest](../deployment/clickonce-deployment-manifest.md)   
+ [\<AssemblyIdentity >-Element](../deployment/assemblyidentity-element-clickonce-application.md)

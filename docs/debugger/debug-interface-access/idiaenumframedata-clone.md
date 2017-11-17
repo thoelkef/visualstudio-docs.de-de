@@ -1,43 +1,42 @@
 ---
-title: "IDiaEnumFrameData::Clone | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumFrameData::Clone-Methode"
+title: 'Idiaenumframedata:: Clone | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumFrameData::Clone Method
 ms.assetid: 28a17300-1626-422f-a17a-3a4d3872c37c
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 3738a0f68141d6ca05f35317d163d987013975e1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumFrameData::Clone
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Erstellt einen Enumerator, der den gleichen Enumerationszustand wie der aktuelle Enumerator enthält.  
+# <a name="idiaenumframedataclone"></a>IDiaEnumFrameData::Clone
+Erstellt einen Enumerator, der den gleichen Enumeration Status als der aktuelle Enumerator enthält.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT Clone(   
-   IDiaEnumFrameData** ppenum  
+```C++  
+HRESULT Clone(   
+   IDiaEnumFrameData** ppenum  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  ppenum  
- \[out\]  Gibt ein [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)\-Objekt zurück, das ein Duplikat des Enumerators enthält.  Die Frames von Daten wird nicht nur der Enumerator dupliziert.  
+ [out] Gibt eine [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md) Objekt, das ein Duplikat des Enumerators enthält. Der Frame, die Daten sind doppelt vorhanden, nur den Enumerator.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)

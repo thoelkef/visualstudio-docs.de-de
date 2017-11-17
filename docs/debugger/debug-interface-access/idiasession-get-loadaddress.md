@@ -1,47 +1,46 @@
 ---
-title: "IDiaSession::get_loadAddress | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSession::get_loadAddress-Methode"
+title: 'Idiasession:: Get_loadaddress | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSession::get_loadAddress method
 ms.assetid: 5162ae1a-38e3-4571-8995-4ed9be1dec3e
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 131ad3ffdcaae554f6892119755de840023de154
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::get_loadAddress
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft die Ladeadresse der ausführbaren Datei ab, die den Symbolen in diesem Symbolspeicher entspricht.  
+# <a name="idiasessiongetloadaddress"></a>IDiaSession::get_loadAddress
+Ruft die Adresse des für die ausführbare Datei, die die Symbole in diesem Symbolspeicher entspricht.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT get_loadAddress (   
-   ULONGLONG* pRetVal  
+```C++  
+HRESULT get_loadAddress (   
+   ULONGLONG* pRetVal  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pRetVal`  
- \[out\]  Gibt eine virtuelle Adresse \(VA\), in der eine EXE\-Datei oder DLL\-Datei geladen wird.  
+ [out] Gibt eine virtuelle Adresse ("VA" ist), in denen eine .exe-Datei oder DLL-Datei geladen wird.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Die zurückgegebene Ladeadresse ist immer Nullen, es sei denn, speziell mit den [IDiaSession::put\_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)\-Methode festgelegt.  
+## <a name="remarks"></a>Hinweise  
+ Adresse des zurückgegebenen ist immer 0 (null), es sei denn, insbesondere legen Sie mithilfe der [idiasession:: Put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) Methode.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSession::put\_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)
+ [IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)

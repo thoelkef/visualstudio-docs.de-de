@@ -1,70 +1,69 @@
 ---
-title: "&lt;compatibleFrameworks&gt; Element (ClickOnce Deployment) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<compatibleFrameworks> element [ClickOnce deployment manifest]"
+title: '&lt;CompatibleFrameworks&gt; Element (ClickOnce-Bereitstellung) | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <compatibleFrameworks> element [ClickOnce deployment manifest]
 ms.assetid: f6c3ee55-9e65-403d-8664-3ebde872c7d4
-caps.latest.revision: 15
-caps.handback.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "15"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: bb8c31d37bd37f4e2db8415ef1815caec0ec185a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# &lt;compatibleFrameworks&gt; Element (ClickOnce Deployment)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Identifiziert die Versionen von .NET Framework, in denen die Anwendung installiert und ausgeführt werden kann.  
+# <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;CompatibleFrameworks&gt; Element (ClickOnce-Bereitstellung)
+Identifiziert die Versionen von .NET Framework, mit denen diese Anwendung installiert und ausgeführt werden kann.  
   
 > [!NOTE]
->  [MageUI.exe](../Topic/MageUI.exe%20\(Manifest%20Generation%20and%20Editing%20Tool,%20Graphical%20Client\).md) unterstützt nicht das `compatibleFrameworks`\-Element, sofern es ein Anwendungsmanifest speichert, das bereits mit einem Zertifikat mit [MageUI.exe](../Topic/MageUI.exe%20\(Manifest%20Generation%20and%20Editing%20Tool,%20Graphical%20Client\).md)signiert wurde.  Stattdessen müssen Sie [Mage.exe](../Topic/Mage.exe%20\(Manifest%20Generation%20and%20Editing%20Tool\).md)verwenden.  
+>  [MageUI.exe](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client) unterstützt nicht die `compatibleFrameworks` -Element, wenn ein Anwendungsmanifest speichern, die bereits mit einem Zertifikat signiert wurde [MageUI.exe](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client). Stattdessen müssen Sie [Mage.exe](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool) verwenden.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <compatibleFrameworks  
-      SupportUrl>   
+      SupportUrl>   
    <framework  
       targetVersion  
       profile  
       supportedRuntime  
-   />   
+   />   
 </ compatibleFrameworks>  
 ```  
   
-## Elemente und Attribute  
- Das `compatibleFrameworks`\-Element ist für Bereitstellungsmanifeste erforderlich, die für die von [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] oder höher bereitgestellte [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Laufzeit vorgesehen sind.  Das `compatibleFrameworks`\-Element enthält ein oder mehrere `framework`\-Elemente, die die .NET Framework\-Versionen angeben, in denen die Anwendung ausgeführt werden kann.  Die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Laufzeit führt die Anwendung im ersten verfügbaren `framework` in dieser Liste aus.  
+## <a name="elements-and-attributes"></a>Elemente und Attribute  
+ Die `compatibleFrameworks` Element ist erforderlich, für die Bereitstellungsmanifeste der [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Runtime gebotenen [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] oder höher. Die `compatibleFrameworks` Element enthält eine oder mehrere `framework` Elemente, die .NET Framework-Versionen angeben, auf denen diese Anwendung ausgeführt werden kann. Die [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Runtime wird die Anwendung auszuführen, auf dem ersten verfügbaren `framework` in dieser Liste.  
   
- In der folgenden Tabelle werden die Attribute aufgeführt, die vom `compatibleFrameworks`\-Element unterstützt werden.  
-  
-|Attribut|Beschreibung|  
-|--------------|------------------|  
-|`S` `upportUrl`|Optional.  Gibt eine URL an, von der die bevorzugte kompatible .NET Framework\-Version heruntergeladen werden kann.|  
-  
-## framework  
- Erforderlich.  In der folgenden Tabelle werden die Attribute aufgeführt, die vom `framework`\-Element unterstützt werden.  
+ In der folgenden Tabelle werden die Attribute aufgeführt, die die `compatibleFrameworks` Element unterstützt.  
   
 |Attribut|Beschreibung|  
-|--------------|------------------|  
-|`targetVersion`|Erforderlich.  Gibt die Versionsnummer des .NET Framework\-Ziels an.|  
-|`profile`|Erforderlich.  Gibt das Profil des .NET Framework\-Ziels an.|  
-|`supportedRuntime`|Erforderlich.  Gibt die Versionsnummer der Laufzeit an, die dem .NET Framework\-Ziel zugeordnet ist.|  
+|---------------|-----------------|  
+|`S` `upportUrl`|Dies ist optional. Gibt eine URL, in dem die bevorzugte kompatible .NET Framework-Version heruntergeladen werden kann.|  
   
-## Hinweise  
+## <a name="framework"></a>Framework  
+ Erforderlich. In der folgenden Tabelle werden die Attribute aufgelistet, die die `framework` Element unterstützt.  
   
-## Beispiel  
- Im folgenden Codebeispiel wird ein `compatibleFrameworks`\-Element in einem [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]\-Bereitstellungsmanifest veranschaulicht.  Diese Bereitstellung kann in [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] ausgeführt werden.  Sie kann auch in [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] ausgeführt werden, da es sich um eine Obermenge von [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] handelt.  
+|Attribut|Beschreibung|  
+|---------------|-----------------|  
+|`targetVersion`|Erforderlich. Gibt die Versionsnummer von .NET Framework-Zielversion.|  
+|`profile`|Erforderlich. Gibt das Profil des .NET Framework-Zielversion.|  
+|`supportedRuntime`|Erforderlich. Gibt die Versionsnummer der Common Language Runtime das Ziel-.NET Framework zugeordnet.|  
+  
+## <a name="remarks"></a>Hinweise  
+  
+## <a name="example"></a>Beispiel  
+ Das folgende Codebeispiel zeigt eine `compatibleFrameworks` Element in einem [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Bereitstellungsmanifest. Diese Bereitstellung ausgeführt werden kann, auf die [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)]. Es kann auch ausgeführt, auf die [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] ist eine Obermenge von der [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)].  
   
 ```  
 <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">  
@@ -75,5 +74,5 @@ Identifiziert die Versionen von .NET Framework, in denen die Anwendung installie
 </compatibleFrameworks>  
 ```  
   
-## Siehe auch  
- [ClickOnce Deployment Manifest](../deployment/clickonce-deployment-manifest.md)
+## <a name="see-also"></a>Siehe auch  
+ [ClickOnce-Bereitstellungsmanifest](../deployment/clickonce-deployment-manifest.md)

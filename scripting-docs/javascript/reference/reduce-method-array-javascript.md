@@ -1,114 +1,117 @@
 ---
-title: "reduce-Methode (Array) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Arrays [JavaScript], reduce-Methode"
-  - "Rückruffunktion, reduce-Methode [JavaScript]"
-  - "reduce-Methode [JavaScript]"
+title: reduce-Methode (Array) (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- callback function, reduce method [JavaScript]
+- arrays [JavaScript], reduce method
+- reduce method [JavaScript]
 ms.assetid: 48d069e0-e083-494f-86d5-d459d2377dc5
-caps.latest.revision: 21
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 76279f66f8e3180fdebd73b83eb31c7368cefc75
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# reduce-Methode (Array) (JavaScript)
-Ruft die angegebene Rückruffunktion für alle Elemente in einem Array auf.  Der Rückgabewert der Rückruffunktion ist das akkumulierte Ergebnis und wird als Argument im folgenden Aufruf der Rückruffunktion bereitgestellt.  
+# <a name="reduce-method-array-javascript"></a>reduce-Methode (Array) (JavaScript)
+Ruft die angegebene Rückruffunktion für alle Elemente in einem Array an. Der Rückgabewert der Rückruffunktion ist das akkumulierte Ergebnis und wird als Argument im folgenden Aufruf der Rückruffunktion bereitgestellt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
   
 array1.reduce(callbackfn[, initialValue])  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
   
 |Parameter|Definition|  
 |---------------|----------------|  
-|`array1`|Erforderlich.  Ein Arrayobjekt.|  
-|`callbackfn`|Erforderlich.  Eine Funktion, die bis zu vier Argumente akzeptiert.  Die `reduce`\-Methode ruft die `callbackfn`\-Funktion einmal für jedes Element im Array auf.|  
-|`initialValue`|Optional.  Wenn der `initialValue`\-Parameter angegeben wird, wird er als Anfangswert der Akkumulation verwendet.  Der erste Aufruf der `callbackfn`\-Funktion stellt diesen Wert statt eines Arraywerts als Argument bereit.|  
+|`array1`|Erforderlich. Ein Arrayobjekt.|  
+|`callbackfn`|Erforderlich. Eine Funktion, die bis zu vier Argumente akzeptiert. Die `reduce`-Methode ruft die `callbackfn`-Funktion einmal für jedes Element im Array auf.|  
+|`initialValue`|Dies ist optional. Wenn `initialValue` angegeben wird, es wird als Anfangswert verwendet, um die Kumulation zu starten. Der erste Aufruf der `callbackfn` -Funktion bietet dieser Wert als Argument anstelle eines Arraywerts.|  
   
-## Rückgabewert  
- Das akkumulierte Ergebnis vom letzten Aufruf der Rückruffunktion.  
+## <a name="return-value"></a>Rückgabewert  
+ Das akkumulierte Ergebnis aus dem letzten Aufruf der Rückruffunktion.  
   
-## Ausnahmen  
- Eine `TypeError` Ausnahme wird ausgelöst, wenn eine der folgenden Bedingungen zutrifft:  
+## <a name="exceptions"></a>Ausnahmen  
+ Ein `TypeError` Ausnahme wird ausgelöst, wenn eine der folgenden Bedingungen zutrifft:  
   
--   Das `callbackfn`\-Argument ist kein Funktionsobjekt.  
+-   Die `callbackfn` -Argument nicht um ein Funktionsobjekt handelt.  
   
--   Das Array enthält keine Elemente, und `initialValue` wird nicht bereitgestellt.  
+-   Das Array enthält keine Elemente und `initialValue` wird nicht bereitgestellt.  
   
-## Hinweise  
- Wenn `initialValue` angegeben wird, ruft die `reduce`\-Methode die `callbackfn`\-Funktion einmal für jedes im Array vorhandene Element in aufsteigender Indexreihenfolge auf.  Wenn `initialValue` nicht angegeben wird, ruft die `reduce`\-Methode die `callbackfn`\-Funktion für jedes Element ab dem zweiten Element auf.  
+## <a name="remarks"></a>Hinweise  
+ Wenn ein `initialValue` angegeben ist, die `reduce` Methodenaufrufe der `callbackfn` -Funktion einmal für jedes Element im Array in aufsteigender Indexreihenfolge. Wenn ein `initialValue` nicht angegeben wird, die `reduce` Methodenaufrufe der `callbackfn` Funktion auf jedes Element, das zweite Element ab.  
   
- Der Rückgabewert der Rückruffunktion wird als `previousValue`\-Argument für den nächsten Aufruf der Rückruffunktion bereitgestellt.  Der Rückgabewert des letzten Aufrufs der Rückruffunktion ist der Rückgabewert der Methode `reduce`.  
+ Der Rückgabewert der Rückruffunktion bereitgestellt wird, als die `previousValue` Argument, das beim nächsten Aufruf der Rückruffunktion. Der Rückgabewert der dem letzten Aufruf der Rückruffunktion ist der Rückgabewert von der `reduce` Methode.  
   
  Die Rückruffunktion wird nicht für fehlende Elemente des Arrays aufgerufen.  
   
 > [!NOTE]
->  Die [reduceRight\-Methode \(Array\)](../../javascript/reference/reduceright-method-array-javascript.md) verarbeitet die Elemente in absteigender Indexreihenfolge.  
+>  Die [ReduceRight-Methode (Array)](../../javascript/reference/reduceright-method-array-javascript.md) verarbeitet die Elemente in absteigender Reihenfolge des Index.  
   
-## Syntax der Rückruffunktion  
+## <a name="callback-function-syntax"></a>Syntax der Rückruffunktion  
  Die Syntax der Rückruffunktion lautet wie folgt:  
   
  `function callbackfn(previousValue, currentValue, currentIndex, array1)`  
   
- Sie können die Rückruffunktion deklarieren, indem Sie bis vier Parameter angeben.  
+ Sie können die Rückruffunktion deklarieren, indem Sie bis zu vier Parameter.  
   
  In der folgenden Tabelle werden die Parameter für die Rückruffunktion aufgeführt.  
   
 |Rückrufargument|Definition|  
-|---------------------|----------------|  
-|`previousValue`|Der Wert des vorherigen Aufrufs der Rückruffunktion.  Wenn `initialValue` für die `reduce`\-Methode angegeben wird, dann entspricht `previousValue` dem `initialValue`\-Wert des Elements, für das die Funktion zum ersten Mal aufgerufen wird.|  
+|-----------------------|----------------|  
+|`previousValue`|Der Wert aus dem vorherigen Aufruf der Rückruffunktion. Wenn ein `initialValue` wird bereitgestellt, um die `reduce` -Methode, die `previousValue` ist `initialValue` zum ersten Mal die Funktion aufgerufen wird.|  
 |`currentValue`|Der Wert des aktuellen Arrayelements.|  
 |`currentIndex`|Der numerische Index des aktuellen Arrayelements.|  
 |`array1`|Das Arrayobjekt, in dem das Element enthalten ist.|  
   
-## Der erste Aufruf der Rückruffunktion  
- Die Werte, die beim ersten Aufruf der Rückruffunktion als Argumente bereitgestellt werden, hängen davon ab, ob die `reduce`\-Methode über ein `initialValue`\-Argument verfügt.  
+## <a name="first-call-to-the-callback-function"></a>Ersten Aufruf der Rückruffunktion  
+ Zum ersten Mal die Rückruffunktion aufgerufen wird, die als Argumente bereitgestellten Werte abhängig, ob die `reduce` Methode verfügt über ein `initialValue` Argument.  
   
- Wenn für die reduce\-Methode ein `initialValue`\-Argument angegeben wird:  
+ Wenn ein `initialValue` wird bereitgestellt, um die Reduce-Methode:  
   
--   Das `previousValue`\-Argument ist `initialValue`.  
+-   Das `previousValue`-Argument lautet `initialValue`.  
   
--   Das `currentValue`\-Argument ist der Wert des ersten Elements, das im Array vorhanden ist.  
+-   Die `currentValue` Argument ist der Wert des ersten Elements im Array vorhanden.  
   
- Wenn `initialValue` nicht angegeben wird:  
+ Wenn ein `initialValue` nicht zur Verfügung gestellt:  
   
--   Das `previousValue`\-Argument ist der Wert des ersten Elements, das im Array vorhanden ist.  
+-   Die `previousValue` Argument ist der Wert des ersten Elements im Array vorhanden.  
   
--   Das `currentValue`\-Argument ist der Wert des zweiten Elements, das im Array vorhanden ist.  
+-   Die `currentValue` Argument ist der Wert des zweiten Elements im Array vorhanden.  
   
-## Ändern des Arrayobjekts  
+## <a name="modifying-the-array-object"></a>Ändern des Arrayobjekts  
  Das Arrayobjekt kann durch die Rückruffunktion geändert werden.  
   
- In der folgenden Tabelle werden die Ergebnisse der Änderung des Arrayobjekts nach dem Start der `reduce`\-Methode beschrieben.  
+ In der folgenden Tabelle werden die Ergebnisse der Änderung des Arrayobjekts nach dem Start der `reduce`-Methode beschrieben.  
   
-|Bedingung nach dem Start der `reduce`\-Methode|Wurde das Element an die Rückruffunktion übergeben?|  
-|----------------------------------------------------|---------------------------------------------------------|  
-|Element wird der ursprünglichen Länge des Arrays hinzugefügt.|Nein.|  
-|Ein Element wird hinzugefügt, um ein fehlendes Element des Arrays zu ersetzen.|Ja, wenn dieser Index noch nicht an die Rückruffunktion übergeben wurde.|  
+|Bedingung nach dem Start der `reduce`-Methode|Wurde das Element an die Rückruffunktion übergeben?|  
+|------------------------------------------------|------------------------------------------|  
+|Das Element wird der ursprünglichen Länge des Arrays hinzugefügt.|Nein.|  
+|Das Element wird hinzugefügt, um ein fehlendes Element des Arrays zu ersetzen.|Ja, wenn dieser Index noch nicht an die Rückruffunktion übergeben wurde.|  
 |Das Element wird geändert.|Ja, wenn dieses Element noch nicht an die Rückruffunktion übergeben wurde.|  
 |Das Element wird aus dem Array gelöscht.|Nein, es sei denn, dieses Element wurde bereits an die Rückruffunktion übergeben.|  
   
-## Beispiel  
- Im folgenden Beispiel werden Arraywerte zu einer Zeichenfolge verkettet und die Werte durch "::" voneinander getrennt.  Da kein Anfangswert für die `reduce`\-Methode bereitgestellt wird, wird im ersten Aufruf der Rückruffunktion "abc" als `previousValue`\-Argument und "def" als `currentValue`\-Argument verwendet.  
+## <a name="example"></a>Beispiel  
+ Im folgende Beispiel wird Arraywerte in eine Zeichenfolge, die einzelnen Werte mit "::". Da kein Anfangswert, um bereitgestellt wird die `reduce` Methode, hat der erste Aufruf der Rückruffunktion wie "Abc" die `previousValue` Argument und "Def" als die `currentValue` Argument.  
   
-```javascript  
+```JavaScript  
 // Define the callback function.  
 function appendCurrent (previousValue, currentValue) {  
     return previousValue + "::" + currentValue;  
@@ -128,10 +131,10 @@ document.write(result);
   
 ```  
   
-## Beispiel  
- Im folgenden Beispiel werden die Werte eines Arrays hinzugefügt, nachdem sie gerundet wurden.  Die `reduce`\-Methode wird mit dem Anfangswert 0 aufgerufen.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel wird die Werte eines Arrays aus, nachdem sie haben gerundet wurde. Die `reduce` Methode mit einem Anfangswert von 0 aufgerufen wird.  
   
-```javascript  
+```JavaScript  
 // Define the callback function.  
 function addRounded (previousValue, currentValue) {  
     return previousValue + Math.round(currentValue);  
@@ -147,10 +150,10 @@ document.write (result);
 // Output: 27  
 ```  
   
-## Beispiel  
- Im folgenden Beispiel werden die Werte in einem Array hinzugefügt.  Die Parameter `currentIndex` und `array1` werden in der Rückruffunktion verwendet.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel fügt die Werte in einem Array. Die `currentIndex` und `array1` Parameter werden in der Rückruffunktion verwendet.  
   
-```javascript  
+```JavaScript  
 function addDigitValue(previousValue, currentDigit, currentIndex, array) {  
     var exponent = (array.length - 1) - currentIndex;  
     var digitValue = currentDigit * Math.pow(10, exponent);  
@@ -166,10 +169,10 @@ document.write (result);
 // Output: 4125  
 ```  
   
-## Beispiel  
- Im folgenden Beispiel wird ein Array abgerufen, das nur die Werte enthält, die in einem anderen Array zwischen 1 und 10 sind.  Als Anfangswert wird für die `reduce`\-Methode ein leeres Array angegeben.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel wird ein Array, das nur die Werte enthält, die zwischen 1 und 10 in einem anderen Array sind. Der Anfangswert bereitgestellt, um die `reduce` Methode ist ein leeres Array.  
   
-```javascript  
+```JavaScript  
 function Process(previousArray, currentValue) {  
     // If currentValue is between 1 and 10,   
     // append currentValue to the array.  
@@ -199,8 +202,8 @@ document.write("result array=" + resultArray);
 // result array=1,6,3  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
-## Siehe auch  
- [reduceRight\-Methode \(Array\)](../../javascript/reference/reduceright-method-array-javascript.md)
+## <a name="see-also"></a>Siehe auch  
+ [reduceRight-Methode (Array)](../../javascript/reference/reduceright-method-array-javascript.md)
