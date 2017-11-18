@@ -1,41 +1,43 @@
 ---
-title: "Benutzeroberfl&#228;chenautomatisierungs-Unterst&#252;tzung f&#252;r Optionen (Seiten) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Optionen (Seiten) Tools [Visual Studio SDK] Benutzeroberflächenautomatisierungs-Unterstützung"
-  - "Automatisierung [Visual Studio SDK] Optionsseiten im Menü Extras erstellen"
+title: "-Unterstützung für Optionsseiten | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Tools Options pages [Visual Studio SDK], automation support
+- automation [Visual Studio SDK], creating Tools Options pages
 ms.assetid: 0b25b82c-7432-4e0a-9e84-350269ba8260
-caps.latest.revision: 29
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 29
+caps.latest.revision: "29"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 8ca9031e623ec7009d4f489931871f093f4c05d5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Benutzeroberfl&#228;chenautomatisierungs-Unterst&#252;tzung f&#252;r Optionen (Seiten)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-VSPackages bieten benutzerdefinierte **Optionen** Dialogfelder die **Tools** Menü \(Optionsseiten im Menü Extras\) in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] und können für verfügbar machen das Automatisierungsmodell.  
+# <a name="automation-support-for-options-pages"></a>-Unterstützung für Optionsseiten
+VSPackages, bieten benutzerdefinierte **Optionen** Dialogfelder, um die **Tools** (Optionsseiten (Tools)) im Menü [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] und können zur Verfügung stellen, das Automatisierungsmodell.  
   
-## Tools\-Optionen \(Seiten\)  
- Erstellen einer **Tooloptionen** Seite ein VSPackage Implementierung bereitstellen muss eine Benutzer\-Steuerelement an die Umgebung über das VSPackage\-Implementierung von zurückgegeben der <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> \-Methode \(oder verwaltetem Code die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> Methode\).  
+## <a name="tools-options-pages"></a>Optionsseiten (Tools)  
+ Zum Erstellen einer **Extras – Optionen** Seite muss eine VSPackage eine-Implementierung von Benutzersteuerelementen zurückgegeben, mit der Umgebung über die VSPackage Implementierung von Bereitstellen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> -Methode (oder verwaltetem Code die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> die Methode).  
   
- Es ist zwar optional, wird jedoch dringend empfohlen, diese neue Seite über das Automatisierungsmodell erlauben. Sie können dies durch die folgenden Schritte ausführen:  
+ Es ist optional, jedoch dringend empfohlen, den Zugriff auf diese neue Seite über das Automatisierungsmodell. Sie erreichen dies durch die folgenden Schritte aus:  
   
-1.  Erweitern der <xref:EnvDTE._DTE.Properties%2A> Objekt durch die Implementierung eines Objekts IDispatch abgeleitet.  
+1.  Erweitern der <xref:EnvDTE._DTE.Properties%2A> Objekt über die Implementierung eines Objekts IDispatch abgeleitet.  
   
-2.  Eine Implementierung der Zurückgeben der <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> Methode \(oder für verwalteten Code die <xref:Microsoft.VisualStudio.Shell.Package.GetAutomationObject%2A> Methode\) auf die IDispatch abgeleitetes Objekt.  
+2.  Eine Implementierung der Zurückgeben der <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> Methode (oder für verwalteten Code die <xref:Microsoft.VisualStudio.Shell.Package.GetAutomationObject%2A> Methode) auf das Objekt IDispatch abgeleitet.  
   
-3.  Wenn ein Consumer Automation aufruft die <xref:EnvDTE._DTE.Properties%2A> Methode in einem benutzerdefinierten **Option** auf der Seite die Umgebung verwendet die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> \-Methode erhalten eine benutzerdefinierte **Tooloptionen** Seite Automation\-Implementierung.  
+3.  Wenn ein Consumer Automation aufruft der <xref:EnvDTE._DTE.Properties%2A> Methode in einer benutzerdefinierten **Option** Eigenschaftenseite, um die Umgebung verwendet die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> Methode, um eine benutzerdefinierte abzurufen **Extras – Optionen** Seite Automatisierung -Implementierung.  
   
-4.  Das Automatisierungsobjekt des VSPackage wird dann zum jedes <xref:EnvDTE.Property> zurückgegebene <xref:EnvDTE._DTE.Properties%2A>.  
+4.  Das Automatisierungsobjekt des VSPackage wird dann verwendet, um jedes <xref:EnvDTE.Property> zurückgegebenes <xref:EnvDTE._DTE.Properties%2A>.  
   
- Ein Beispiel eine benutzerdefinierte Tools\-Optionen\-Seite zu implementieren, finden Sie unter [VSSDK\-Beispiele](../../misc/vssdk-samples.md).  
+ Ein Beispiel für eine benutzerdefinierte Seite "Extras – Optionen" zu implementieren, finden Sie unter [VSSDK-Beispiele](http://aka.ms/vs2015sdksamples).  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Verfügbarmachen von Projektobjekten](../../extensibility/internals/exposing-project-objects.md)

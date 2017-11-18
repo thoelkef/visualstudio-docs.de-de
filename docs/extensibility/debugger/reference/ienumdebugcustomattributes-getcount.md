@@ -1,51 +1,51 @@
 ---
-title: "IEnumDebugCustomAttributes::GetCount | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumCustomAttributes::GetCount"
-helpviewer_keywords: 
-  - "IEnumDebugCustomAttributes::GetCount"
+title: IEnumDebugCustomAttributes::GetCount | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumCustomAttributes::GetCount
+helpviewer_keywords: IEnumDebugCustomAttributes::GetCount
 ms.assetid: fafe826f-4ebf-4572-b2a3-d5dd2916c12f
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 492fada19483d8c03c23f540e8fa0fb90e2525ba
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumDebugCustomAttributes::GetCount
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft die Anzahl von benutzerdefinierten Attributen in einem Enumerator ab.  
+# <a name="ienumdebugcustomattributesgetcount"></a>IEnumDebugCustomAttributes::GetCount
+Ruft die Anzahl der benutzerdefinierten Attribute in einen Enumerator ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetCount(   
-   ULONG* pcelt  
+```cpp  
+HRESULT GetCount(   
+   ULONG* pcelt  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetCount(  
-   out uint pcelt  
+   out uint pcelt  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pcelt`  
- \[out\]  Gibt die Anzahl der Elemente in der Enumeration zurück.  
+ [out] Gibt die Anzahl der Elemente in der Enumeration zurück.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Diese Methode ist nicht Teil der üblichen COM\-Enumerations Oberfläche, die dies nur `Next`, `Clone`, und `Skip`Anforderung angibt `Reset` implementiert werden.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode ist nicht Teil der üblichen COM-Enumerationsschnittstelle, die angibt, dass nur `Next`, `Clone`, `Skip`, und `Reset` implementiert werden müssen.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

@@ -1,41 +1,42 @@
 ---
-title: "Bestimmen, ob ein Datenquellen-Steuerelement VSPackage implementieren | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Quellcode-Verwaltungspaketen zum Quellcode-Verwaltungspaketen"
+title: Bestimmen, ob eine Datenquellen-Steuerelement VSPackage implementiert | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: source control packages, about source control packages
 ms.assetid: 60b3326e-e7e2-4729-95fc-b682e7ad5c99
-caps.latest.revision: 24
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 808f2fda26046962eada377f8a204351adef19bf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Bestimmen, ob ein Datenquellen-Steuerelement VSPackage implementieren
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Dieser Abschnitt arbeitt die Auswahlmöglichkeiten von VSPackages und Quellcodeverwaltung steckverbindungen Quellcodeverwaltung zum Erweitern von Office\-Projektmappen Quellcodeverwaltung aus und gibt die Grundzüge zum Auswählen eines geeigneten Speicherpfad Integrations.  
+# <a name="determining-whether-to-implement-a-source-control-vspackage"></a>Bestimmen, ob eine Datenquellen-Steuerelement VSPackage implementieren
+In diesem Abschnitt werden die Optionen des Datenquellen-Steuerelement-Plug-ins und quellcodeverwaltung VSPackages zum Erweitern der quellcodeverwaltung Projektmappen und bietet umfassende Richtlinien zum Auswählen eines geeigneten Integration Pfads näher erläutert.  
   
-## Kleine Quellcodeverwaltungs\-Projektmappe mit beschränkten Ressourcen  
- Wenn Sie begrenzte Ressourcen verfügen und nicht zum Mehraufwand zum Schreiben eines pakets Quellcodeverwaltung belastet werden können, können Sie API\-basierte Quellcodeverwaltungs\-Plug\-In des Plug\-Ins erstellen.  Dies ermöglicht es Ihnen, mit paketen Quellcodeverwaltung nebeneinander zu arbeiten, und Sie können zwischen Paketen und steckverbindungen Quellcodeverwaltung bei Bedarf wechseln.  Weitere Informationen finden Sie unter [Auswahl und Registrierung](../../extensibility/internals/registration-and-selection-source-control-vspackage.md).  
+## <a name="small-source-control-solution-with-limited-resources"></a>Kleine Source Control-Lösung mit eingeschränkten Ressourcen  
+ Wenn Sie nur Ressourcen begrenzte über und können nicht mit den Aufwand für das Schreiben von einem Steuerelement Quellpaket belastet werden, können Sie die Datenquellen-Steuerelement-Plug-in-API-basierte-Plug-ins erstellen. Dies ermöglicht Ihnen, parallel Quellpakete-Steuerelements zu arbeiten, und Sie können zwischen Source Control-Plug-ins und -Paketen nach Bedarf wechseln. Weitere Informationen finden Sie unter [Registrierung und Auswahl](../../extensibility/internals/registration-and-selection-source-control-vspackage.md).  
   
-## Große Quellcodeverwaltungs\-Projektmappe mit einem umfangreichen Funktionsumfang  
- Wenn Sie eine Projektmappe implementieren möchten, die Quellcodeverwaltung ein Fundgrube steuerelementmodell bereitstellt, das nicht angemessen aufgezeichnet wird, indem das Quellcodeverwaltungs\-Plug\-In API verwendet, halten Sie möglicherweise ein Paket Quellcodeverwaltung Integrations für den Pfad.  Dies gilt besonders, wenn Sie nicht das Quellcodeverwaltungs\-Adapter\-Paket \(d steckverbindungen Quellcodeverwaltung befindet und eine grundlegende Quellcodeverwaltung Benutzeroberfläche bereitstellt\) verfügen, können von ersetzen, um die Ereignisse für Quellcodeverwaltung auf eine benutzerdefinierte Weise behandeln können.  Wenn Sie bereits eine zufrieden stellende Quellcodeverwaltung Benutzeroberfläche aufweisen und dies in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]beibehalten möchten, können Sie die Option Quellcodeverwaltung derzeit das Paket auszuführen.  Das Paket ist nicht generisch Quellcodeverwaltung und ist nur für die Verwendung mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE vorgesehen.  
+## <a name="large-source-control-solution-with-a-rich-feature-set"></a>Große Source Control-Lösung mit einem Satz von Rich-Funktion  
+ Wenn eine Source Control-Lösung zu implementieren, die eine umfangreiche Steuerelement Quellmodell, die bereitstellt mithilfe der Datenquellen-Steuerelement-Plug-in-API nicht adäquat erfasst werden sollen, könnten Sie ein Steuerelement Source-Paket als Pfad der Integration. Dies gilt besonders, wenn stattdessen das Adapter Quellcodeverwaltungspaket ersetzen würde (der kommuniziert mit Source Control-Plug-ins und bietet eine grundlegende quellcodeverwaltung UI) mit Ihren eigenen, damit Sie die Quelle Steuerelementereignisse auf benutzerdefinierte Weise behandeln können. Falls Sie noch eine zufriedenstellende Quelle UI steuern und diesen Erfahrungen in beibehalten möchten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], den Quellcodeverwaltungs-Paket-Option können Sie nur diese Aufgaben ausführen. Das Quellcodeverwaltungspaket ist nicht generisch und dient ausschließlich zur Verwendung mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  
   
- Wenn Sie eine Projektmappe implementieren möchten, die Quellcodeverwaltung Flexibilität und umfangreicheres Kontrolle über die Benutzeroberfläche der Quellcodeverwaltung und Anwendungslogik bereitstellt, können Sie auch die Quellcodeverwaltung Paket integrations route.  Sie haben folgende Möglichkeiten:  
+ Wenn Sie möchten eine Source Control-Lösung zu implementieren, die Flexibilität und umfangreichere Steuerung der Quelle steuernder Logik und die Benutzeroberfläche bereitstellt, empfiehlt die Datenquellen-Steuerelement Paket Integration Route. Sie haben folgende Möglichkeiten:  
   
-1.  Registrieren Sie besitzen \(siehe VSPackage Quellcodeverwaltung [Auswahl und Registrierung](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)\).  
+1.  Registrieren Ihrer eigenen quellcodeverwaltung VSPackage (finden Sie unter [Registrierung und Auswahl](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)).  
   
-2.  Ersetzen Sie die standardmäßigen über die Benutzeroberfläche der Quellcodeverwaltung benutzerdefinierte Benutzeroberfläche \(siehe [Benutzerdefinierte Benutzeroberfläche](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)\).  
+2.  Ersetzen Sie die Standard-Datenquellen-Steuerelements UI durch die benutzerdefinierte Benutzeroberfläche (siehe [benutzerdefinierte Benutzeroberfläche](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)).  
   
-3.  Geben Sie die zu verwendenden Symbole angezeigt, und behandeln Sie Ereignisse Projektmappen\-Explorer\-Symbol \(siehe [Symbol\-Steuerelement](../../extensibility/internals/glyph-control-source-control-vspackage.md)\).  
+3.  Angeben von Glyphen verwendet werden, und Behandeln von Ereignissen der Projektmappen-Explorer-Symbol (finden Sie unter [Glyphe Steuerelement](../../extensibility/internals/glyph-control-source-control-vspackage.md)).  
   
-4.  Handle\-Abfragen\-Bearbeitung und Abfragen\-Abwehr Events \(siehe [Bearbeiten der Abfragen speichern](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)\).  
+4.  Abfrage bearbeiten und speichern Sie die Abfrage Ereignisse zu behandeln (finden Sie unter [Abfrage bearbeiten die Abfrage speichern](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)).  
   
-## Siehe auch  
- [Erstellen ein Quellcodeverwaltungs\-Plug\-in](../../extensibility/internals/creating-a-source-control-plug-in.md)
+## <a name="see-also"></a>Siehe auch  
+ [Erstellen eines Quellcodeverwaltungs-Plug-Ins](../../extensibility/internals/creating-a-source-control-plug-in.md)

@@ -1,34 +1,35 @@
 ---
-title: "Debug-Paket | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Debuggen [Debugging-SDK] Pakete"
+title: Debug-Paket | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: debugging [Debugging SDK], packages
 ms.assetid: 99947fd4-fb87-4c69-b26c-65634e17d285
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: eccd258476f82871732ef7b16f0282d2f945b9ee
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Debug-Paket
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Das Debuggen von in die Visual Studio\-Shell Paket ausgeführt wird, und behandelt alle Benutzeroberfläche.  Es nutzt die Visual Studio\-Debugschnittstellen den Debug\- und die Kommunikation mit der Sitzung Manager \(SDM\).  
+# <a name="debug-package"></a>Debug-Paket
+Das debugpaket in der Visual Studio-Shell ausgeführt und verarbeitet alle der Benutzeroberfläche. Verarbeitet die Visual Studio Debugschnittstellen und kommuniziert mit der Sitzungs-Manager (SDM).  
   
- Unterteilen Sie die Ereignisse, die vom SDM gesendet werden, den Debugger von Ausführmodus zu wechseln und Unterbrechungsmodus bearbeiten den Fokus auf das Programm, in dem die Unterbrechung aufgetreten ist.  Das Debuggen von Paket verfolgt den Stapelrahmen und den Thread aus den Informationen, die von den Ereignissen gesendet werden.  
+ Break-Ereignisse, die durch die SDM gesendeten wechseln Sie den Debugger aus Ausführungsmodus Unterbrechungsmodus und ändern Sie den Fokus an das Programm, in dem die Unterbrechung aufgetreten ist. Das debugpaket verfolgt den Stapelrahmen und den Thread aus den Informationen, die an ihn gesendet werden, indem Sie die Ereignisse an.  
   
- Das Debuggen von Paket enthält keine Momentaufnahme für die Sprach\- oder von Abhängigkeiten.  Es ist nicht notwendig, das Debuggen Paket zu implementieren oder zu ändern.  
+ Das debugpaket verfügt über keine Sprache oder Abhängigkeiten-Laufzeitumgebung. Es ist nicht erforderlich, das debugpaket zu implementieren.  
   
- Das Debuggen von Paket wird vsdebug.dll implementiert.  
+ Das debugpaket wird vom vsdebug.dll implementiert.  
   
-## Siehe auch  
- [Session\-Debug\-Manager](../../extensibility/debugger/session-debug-manager.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Sitzungs-Debug-Manager](../../extensibility/debugger/session-debug-manager.md)   
  [Stapelrahmen](../../extensibility/debugger/stack-frames.md)   
  [Threads](../../extensibility/debugger/threads.md)   
  [Debuggerkomponenten](../../extensibility/debugger/debugger-components.md)

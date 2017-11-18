@@ -1,63 +1,63 @@
 ---
-title: "IDebugProperty2::SetValueAsString | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProperty2::SetValueAsString"
-helpviewer_keywords: 
-  - "IDebugProperty2::SetValueAsString"
+title: IDebugProperty2::SetValueAsString | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProperty2::SetValueAsString
+helpviewer_keywords: IDebugProperty2::SetValueAsString
 ms.assetid: 9e6a5054-41b7-4223-b509-b93689d366a5
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 4046bfccac12e79992805e7abec7dfda65b5a658
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProperty2::SetValueAsString
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Legt den Wert einer Eigenschaft einer angegebenen Zeichenfolge fest.  
+# <a name="idebugproperty2setvalueasstring"></a>IDebugProperty2::SetValueAsString
+Legt den Wert einer Eigenschaft aus einer angegebenen Zeichenfolge fest.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT SetValueAsString (   
-   LPCOLESTR pszValue,  
-   UINT      nRadix,  
-   DWORD     dwTimeout  
+```cpp  
+HRESULT SetValueAsString (   
+   LPCOLESTR pszValue,  
+   UINT      nRadix,  
+   DWORD     dwTimeout  
 );  
 ```  
   
-```c#  
-int SetValueAsString (   
-   string pszValue,  
-   uint   nRadix,  
-   uint   dwTimeout  
+```csharp  
+int SetValueAsString (   
+   string pszValue,  
+   uint   nRadix,  
+   uint   dwTimeout  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pszValue`  
- \[in\]  Eine Zeichenfolge, die den festzulegenden Wert enthält.  
+ [in] Eine Zeichenfolge mit dem Wert, der festgelegt werden.  
   
  `nRadix`  
- \[in\]  Eine Basisklasse verwendet werden soll, wenn alle numerischen Daten interpretiert werden.  Dies kann 0 sein, die Basis automatisch bestimmt werden soll.  
+ [in] Eine Basis interpretieren alle numerischen Daten verwendet werden sollen. Dies kann 0 versucht, die die Basis automatisch zu bestimmen sein.  
   
  `dwTimeout`  
- \[in\]  Bevor der Rückgabe dieser Methode gibt die maximale Zeit in Millisekunden an, zu warten.  `INFINITE` verwenden, um unbegrenzt zu warten.  
+ [in] Gibt die maximale Zeit in Millisekunden, bis vor der Rückgabe dieser Methode. Verwendung `INFINITE` zum unendlichen Warten angibt.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. gibt andernfalls Fehlercode zurück.  In der folgenden Tabelle werden weitere mögliche Werte an.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`; andernfalls wird Fehlercode zurückgegeben. Die folgende Tabelle zeigt weitere mögliche Werte.  
   
 |Wert|Beschreibung|  
-|----------|------------------|  
-|`E_SETVALUE_VALUE_CANNOT_BE_SET`|Die Zeichenfolge kann nicht in einen Eigenschaftswert konvertiert werden, oder der Eigenschaftswert kann nicht festgelegt werden.|  
+|-----------|-----------------|  
+|`E_SETVALUE_VALUE_CANNOT_BE_SET`|Die Zeichenfolge konnte nicht in einem Eigenschaftswert konvertiert werden, oder der Eigenschaftswert konnte nicht festgelegt werden.|  
 |`E_SETVALUE_VALUE_IS_READONLY`|Die Eigenschaft ist schreibgeschützt.|  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

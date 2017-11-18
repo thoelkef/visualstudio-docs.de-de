@@ -1,48 +1,48 @@
 ---
-title: "Projekte | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Projektmappen [Visual Studio]"
-  - "Benutzerdefinierte Tools [Visual Studio SDK]"
-  - "Projekt-Untertypen [Visual Studio SDK]"
-  - "Projekte [Visual Studio SDK]"
-  - "Typen [Visual Studio SDK]"
+title: Projekte | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- solutions [Visual Studio]
+- custom tools [Visual Studio SDK]
+- project subtypes [Visual Studio SDK]
+- projects [Visual Studio SDK]
+- project types [Visual Studio SDK]
 ms.assetid: 237742e4-a638-4d5b-a9b3-6a69d627763c
-caps.latest.revision: 43
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 43
+caps.latest.revision: "43"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: c175d85b55734df841f30d131639c3bfeed40361
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Projekte
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], Projekte sind Container, mit denen Entwickler zum Organisieren von Quellcodedateien und anderen Ressourcen, die in **Projektmappen\-Explorer**. Projekte sind in der Regel Dateien, z. B. eine CSPROJ\-Datei für ein [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] Projekt, in denen Verweise auf Quellcodedateien und Ressourcen, wie die Bitmap\-Dateien gespeichert. Projekte können Sie organisieren, erstellen, Debuggen und Bereitstellen von Quellcode, Verweise auf Webdienste und Datenbanken und anderen Ressourcen. VSPackages erweitern die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Projektsystem auf drei verschiedene Arten: *Projekttypen*, *Projekt Untertypen*, und *benutzerdefinierte Tools*.  
+# <a name="projects"></a>Projekte
+In Visual Studio-Projekte sind Container, mit denen Entwickler zum Organisieren von Quellcodedateien und anderen Ressourcen, die in angezeigt werden **Projektmappen-Explorer**. Projekte werden in der Regel Dateien (z. B. eine CSPROJ-Datei für ein C#-Projekt), in denen Verweise auf Quellcodedateien und Ressourcen, wie mithilfe einer Bitmapdateien gespeichert. Projekte können Sie zu organisieren, erstellen, Debuggen und Bereitstellen von Quellcode, Verweise auf Webdienste und Datenbanken und anderen Ressourcen. VSPackages können die Visual Studio-Projektsystem erweitern, in drei verschiedene Arten: *-Projekttypen*, *Projektuntertypen*, und *benutzerdefinierte Tools*.  
   
- Ein End\-to\-End\-Beispiel für ein Projektsystem Sprache, finden Sie in der Visual Studio IronPython Beispiel tiefer in die [VSSDK\-Beispiele](../../misc/vssdk-samples.md).  
-  
-## In diesem Abschnitt  
+## <a name="in-this-section"></a>In diesem Abschnitt  
  [Projekttypen](../../extensibility/internals/project-types.md)  
- *Projekttypen* Hinzufügen von Unterstützung für neue Arten von Projekten, z. B. Programmiersprachen. Z. B. jede Sprache, die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterstützt hat seinen eigenen Projekttyp und die IronPython\-Integration\-Beispiel enthält ein Projekt für die Sprache IronPython. Erstellen Sie ein Projekt für Sprachen außer [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] und [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], um anzupassen, wie Elemente werden erstellt, Debuggen, bereitgestellt und im angezeigten **Projektmappen\-Explorer**. Weitere Informationen finden Sie unter [Projekttypen](../../extensibility/internals/project-types.md) und [VSSDK\-Beispiele](../../misc/vssdk-samples.md).  
+ *Projekttypen* Hinzufügen der Unterstützung für neue Arten von Projekten, z. B. Programmiersprachen zu vergleichen. Beispielsweise jede Sprache, Visual Studio unterstützt, verfügt über einen eigenen Projekttyp und IronPython-Integration-Beispiel enthält ein Projekt für die IronPython-Sprache. Sie müssen einen Projekttyp für andere Sprachen als C#- oder Visual Basic anpassen, wie Elemente werden erstellt, debuggt, bereitgestellt und im angezeigten erstellen **Projektmappen-Explorer**. Weitere Informationen finden Sie unter [Projekttypen](../../extensibility/internals/project-types.md).  
   
- [Projekt\-Untertypen](../../extensibility/internals/project-subtypes.md)  
- *Projekt Untertypen* basieren auf Projekttypen und kann verwendet werden, die Art und Weise anpassen, Projekte erstellt, gedebuggt und bereitgestellt werden.[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] verwendet Projekt Untertypen mit Projekten für intelligente Geräte. Anpassen sie der Bereitstellung durch Kopieren einer neu erstellten Anwendung von einem Entwicklungscomputer auf das Zielgerät. Die [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] und [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Projekttypen dienen als Grundlage für Projekt Untertypen; [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] Projekttypen nicht möglich. Eigene Projekttypen können auch als Grundlage für Projekt Untertypen verwendet werden. Weitere Informationen finden Sie unter [Projekt\-Untertypen](../../extensibility/internals/project-subtypes.md).  
+ [Projektuntertypen](../../extensibility/internals/project-subtypes.md)  
+ *Projektuntertypen* basieren auf Projekttypen und genutzt werden, wie Projekte erstellt, gedebuggt und bereitgestellt werden. Visual Studio verwendet Projekt Untertypen mit Projekte für intelligente Geräte. Sie passen Sie die Bereitstellung durch Kopieren einer neu erstellten Anwendung auf einem Entwicklungscomputer auf dem Zielgerät. Die C#- und Visual Basic-Projekttypen können als Grundlage für das Projekt Untertypen verwendet werden; C++-Projekttypen ist nicht möglich. Eigene Projekttypen können auch als Grundlage für das Projekt Untertypen verwendet werden. Weitere Informationen finden Sie unter [Projekt Untertypen](../../extensibility/internals/project-subtypes.md).  
   
  [Webprojekte](../../extensibility/internals/web-projects.md)  
- Erläutert die Webprojekt, die wiederum von ASP.NET\-Webanwendungen erstellen.  
+ Erläutert die Webprojekt, die wiederum Webanwendungen erstellen.  
   
- [Neue Project\-Generierung: Hinter den Kulissen, Teil 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) und [Neue Project\-Generierung: Hinter den Kulissen, Teil 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)  
+ [Neue Projektgenerierung: Hinter den Kulissen Teil einer](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) und [neue Projekterstellung: hinter den Kulissen Teil 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)  
  Erläutert, was tatsächlich geschieht, wenn Sie ein neues Projekt erstellen.  
   
- [VSSDK\-Beispiele](../../misc/vssdk-samples.md)  
- Beschreibt die Beispiele in der [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] das Arbeiten mit Projekten und Projektmappen.  
+ [VSSDK-Beispiele](http://aka.ms/vs2015sdksamples)  
+ Enthält die Beispiele in VSSDK, die mit Projekten und Projektmappen.  
   
-## Verwandte Abschnitte  
- [NIB: Projekte als Container](http://msdn.microsoft.com/de-de/87d40f63-f487-4767-8963-64beec27ba1b)  
- Beschreibt die Beziehung zwischen Projekten und Projektelementen.
+## <a name="related-sections"></a>Verwandte Abschnitte  
+ [Im Visual Studio SDK](../../extensibility/internals/inside-the-visual-studio-sdk.md)  
+ Erläutert verschiedene Aspekte der Visual Studio-Erweiterbarkeit.

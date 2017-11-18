@@ -1,40 +1,41 @@
 ---
-title: "Anf&#252;gen an das Programm | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Debugmodule, Anhängen an Programme"
+title: "Anfügen an das Programm | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: debug engines, attaching to programs
 ms.assetid: 9a3f5b83-60b5-4ef0-91fe-a432105bd066
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 7dd4baed877bd5d0262e966edf006dea80596b47
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Anf&#252;gen an das Programm
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Nachdem Sie die Programme mit dem geeigneten Anschluss registriert haben, müssen Sie den Debugger an das Programm anhängen, das Sie debuggen möchten.  
+# <a name="attaching-to-the-program"></a>Anfügen an die Anwendung
+Nachdem Sie Ihre Programme mit den entsprechenden Port registriert haben, müssen Sie den Debugger an das Programm anfügen, die Sie debuggen möchten.  
   
-## Auswählen, wie anhängt  
- Es gibt drei Möglichkeiten, in denen der Debug\- Manager der Sitzung \(SDM\) versucht, auf das Programm anzufügen, das gedebuggt wird.  
+## <a name="choosing-how-to-attach"></a>Auswählen des Verfahrens zum Anfügen  
+ Es gibt drei Möglichkeiten, die in denen Sitzung Debug-Manager (SDM) versucht, das derzeit debuggte Programm an.  
   
-1.  Für Programme, die durch das Debugmodul von der [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)\-Methode gestartet werden \(typisch von interpretierten Sprachen, z\), erhält das SDM die [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md)\-Schnittstelle aus dem [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)\-Objekt, das mit dem Programm verknüpft ist, das angefügt wird.  Wenn das SDM erhalten kann die `IDebugProgramNodeAttach2`\-Schnittstelle, ruft das SDM dann die [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)\-Methode auf.  Die `IDebugProgramNodeAttach2::OnAttach`\-Methode gibt `S_OK` zurück, um anzugeben, dass sie nicht auf das Programm angefügt haben und dass andere Tests ausgeführt werden können, um dem Programm anzufügen.  
+1.  Für Programme, die durch die Debugging-Modul über gestartet sind die [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) -Methode (typisch für interpretierte Sprachen, z. B.), das SDM erhält die [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md) -Schnittstelle aus die [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) Objekt zugewiesen ist, mit dem Programm, die daran angefügt werden. Wenn die SDM abrufen kann die `IDebugProgramNodeAttach2` -Schnittstelle, die SDM ruft dann die [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) Methode. Die `IDebugProgramNodeAttach2::OnAttach` -Methode zurückkehrt `S_OK` , um anzugeben, dass es nicht an das Programm angefügt und andere Versuche unternommen werden können, an die Anwendung angefügt.  
   
-2.  Wenn das SDM die [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md)\-Schnittstelle vom Programm abgerufen werden können, das angefügt wird, ruft das SDM die [Anfügen](../../extensibility/debugger/reference/idebugprogramex2-attach.md)\-Methode auf.  Dieser Ansatz ist typisch für Programme, die remote des Anschlusslieferanten gestartet wurden.  
+2.  Wenn die SDM abrufen kann die [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md) Schnittstelle aus dem Programm, die daran angefügt werden, die SDM-Aufrufe der [Anfügen](../../extensibility/debugger/reference/idebugprogramex2-attach.md) Methode. Dieser Ansatz ist typisch für Programme, die durch den Port Lieferanten Remote gestartet wurden.  
   
-3.  Wenn das Programm nicht von der `IDebugProgramNodeAttach2::OnAttach` oder `IDebugProgramEx2::Attach`\-Methode angefügt werden kann, wird die Auslastung SDM das Debugmodul \(sofern dies nicht bereits geladen wurde\), indem sie die `CoCreateInstance`\-Funktion aufrufen und dann die [Anfügen](../../extensibility/debugger/reference/idebugengine2-attach.md)\-Methode auf.  Dieser Ansatz ist für Programme, die lokal durch einen Anschlusslieferanten typisch.  
+3.  Wenn das Programm nicht werden, über angefügt kann die `IDebugProgramNodeAttach2::OnAttach` oder `IDebugProgramEx2::Attach` Methoden, die SDM lädt die Debugging-Modul (sofern noch nicht geladen) durch Aufrufen der `CoCreateInstance` -Funktion und ruft dann die [Anfügen](../../extensibility/debugger/reference/idebugengine2-attach.md) Methode. Dieser Ansatz ist typisch für Programme, die lokal ein Lieferant Port gestartet.  
   
-     Es ist auch möglich, für einen benutzerdefinierten Anschlusslieferanten, die `IDebugEngine2::Attach`\-Methode in der benutzerdefinierten Implementierung des Anschlusslieferanten der `IDebugProgramEx2::Attach`\-Methode aufzurufen.  In der Regel in diesem Fall löst der benutzerdefinierten Port lieferant das Debugmodul auf dem Remotecomputer.  
+     Es ist auch möglich, für einen benutzerdefinierten Port Lieferanten zum Aufrufen der `IDebugEngine2::Attach` in den benutzerdefinierten Port Lieferanten Implementierung der Methode der `IDebugProgramEx2::Attach` Methode. In diesem Fall startet der benutzerdefinierten Port Lieferanten in der Regel die Debugging-Modul auf dem Remotecomputer.  
   
- Anlage wird erreicht, wenn der Debug\- Manager der Sitzung \(SDM\), die [Anfügen](../../extensibility/debugger/reference/idebugengine2-attach.md)\-Methode aufruft.  
+ Anlage wird erzielt, wenn die Sitzung Debug-Manager (SDM) Ruft die [Anfügen](../../extensibility/debugger/reference/idebugengine2-attach.md) Methode.  
   
- Wenn Sie DE im gleichen Prozess der die Anwendung gedebuggt werden soll, dann müssen Sie die folgenden Methoden ausführen: Implementieren von [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)  
+ Wenn Sie Ihre DE in demselben Prozess wie die Anwendung, die debuggt werden ausgeführt, müssen Sie die folgenden Methoden implementieren [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md):  
   
 -   [GetHostName](../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md),  
   
@@ -42,24 +43,24 @@ Nachdem Sie die Programme mit dem geeigneten Anschluss registriert haben, müsse
   
 -   [GetProgramName](../../extensibility/debugger/reference/idebugprogramnode2-getprogramname.md)  
   
- Nachdem die `IDebugEngine2::Attach`\-Methode aufgerufen wird, führen Sie die folgenden Schritte in der Implementierung der `IDebugEngine2::Attach`\-Methode:  
+ Nach der `IDebugEngine2::Attach` -Methode aufgerufen wird, befolgen Sie diese Schritte in der Implementierung von der `IDebugEngine2::Attach` Methode:  
   
-1.  Senden Sie ein [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) SDM auf das Ereignisobjekt.  Weitere Informationen finden Sie unter [Senden von Ereignissen](../../extensibility/debugger/sending-events.md).  
+1.  Senden einer [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) Ereignisobjekt, das SDM. Weitere Informationen finden Sie unter [Ereignisse senden](../../extensibility/debugger/sending-events.md).  
   
-2.  Rufen Sie die [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)\-Methode für das [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)\-Objekt an, das zur `IDebugEngine2::Attach`\-Methode übergeben wurde.  
+2.  Rufen Sie die [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) Methode auf die [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) -Objekt, das übergeben wurde die `IDebugEngine2::Attach` Methode.  
   
-     Dies gibt `GUID` zurück, das verwendet wird, um das Programm zu identifizieren.  `GUID` muss im Objekt gespeichert, das das lokale Programm DE darstellt, und es muss zurückgegeben werden, wenn die von der `IDebugProgram2`\-Schnittstelle `IDebugProgram2::GetProgramId`\-Methode aufgerufen wird.  
-  
-    > [!NOTE]
-    >  Wenn Sie die `IDebugProgramNodeAttach2`\-Schnittstelle implementieren, wird `GUID` des Programms zur `IDebugProgramNodeAttach2::OnAttach`\-Methode übergeben.  Dieses `GUID` wird für `GUID` des Programms verwendet, das von der `IDebugProgram2::GetProgramId`\-Methode zurückgegeben wird.  
-  
-3.  Senden Sie ein [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)\-Ereignisobjekt, um das SDM zu benachrichtigen, dass das lokale `IDebugProgram2`\-Objekt erstellt wurde, um das Programm zu präsentieren. DE  Ausführlichere Informationen finden Sie unter [Senden von Ereignissen](../../extensibility/debugger/sending-events.md).  
+     Dies gibt eine `GUID` dient außerdem zur Identifizierung des Programms. Die `GUID` müssen gespeichert werden, in dem Objekt, stellt die lokale Programm, de, und es werden, wenn zurückgegeben muss die `IDebugProgram2::GetProgramId` Methode wird aufgerufen, auf die `IDebugProgram2` Schnittstelle.  
   
     > [!NOTE]
-    >  Dies ist nicht dasselbe `IDebugProgram2`\-Objekt, das in die `IDebugEngine2::Attach`\-Methode übergeben wurde.  Das zuvor erfolgreich `IDebugProgram2`\-Objekt wird nur durch den Anschluss erkannt und stellt ein separates Objekt.  
+    >  Bei Implementierung die `IDebugProgramNodeAttach2` Netzwerkschnittstelle, die des Programms `GUID` übergeben wird, um die `IDebugProgramNodeAttach2::OnAttach` Methode. Dies `GUID` wird verwendet, für des Programms `GUID` zurückgegebenes die `IDebugProgram2::GetProgramId` Methode.  
   
-## Siehe auch  
- [Launch\-basierte Anlage](../../extensibility/debugger/launch-based-attachment.md)   
+3.  Senden einer [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) Ereignisobjekt, das SDM benachrichtigen, die der lokalen `IDebugProgram2` Objekt, das Sie erstellt wurde, um das Programm de darstellen. Weitere Informationen finden Sie unter [Ereignisse senden](../../extensibility/debugger/sending-events.md).  
+  
+    > [!NOTE]
+    >  Dies entspricht nicht dem `IDebugProgram2` -Objekt, das übergeben wurde, die `IDebugEngine2::Attach` Methode. Die zuvor übergebene `IDebugProgram2` Objekt wird von den Port nur erkannt, und ist ein separates Objekt.  
+  
+## <a name="see-also"></a>Siehe auch  
+ [Start-basierte Anlage](../../extensibility/debugger/launch-based-attachment.md)   
  [Senden von Ereignissen](../../extensibility/debugger/sending-events.md)   
  [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)   
  [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)   

@@ -1,26 +1,28 @@
 ---
-title: "Verf&#252;gbarmachen von Ereignissen in Visual Studio SDK | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Ereignisse [Visual Studio], bereitstellen"
-  - "Automatisierung [Visual Studio SDK], Ereignisse verfügbar machen"
+title: "Verfügbarmachen von Ereignissen in Visual Studio SDK | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- events [Visual Studio], exposing
+- automation [Visual Studio SDK], exposing events
 ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
-caps.latest.revision: 16
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: c7b392ac841a50d835186e79a383e404e7fba190
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Verf&#252;gbarmachen von Ereignissen in Visual Studio SDK
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] können Sie mithilfe der Automatisierung Ereignissen der Datenquelle. Es wird empfohlen, dass die Quelle von Ereignissen für Projekte und Projektelemente.  
+# <a name="exposing-events-in-the-visual-studio-sdk"></a>Verfügbarmachen von Ereignissen in Visual Studio SDK
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]können Sie mithilfe der Automatisierung Ereignissen der Datenquelle. Es wird empfohlen, dass die Quelle von Ereignissen für Projekte und Projektelemente.  
   
  Ereignisse werden abgerufen, indem Automation Consumer aus der <xref:EnvDTE.DTEClass.Events%2A> Objekt oder <xref:EnvDTE.DTEClass.GetObject%2A> ("EventObjectName"). Die Umgebung ruft `IDispatch::Invoke` mithilfe der `DISPATCH_METHOD` oder `DISPATCH_PROPERTYGET` Flags an, die ein Ereignis zurück.  
   
@@ -42,7 +44,7 @@ caps.handback.revision: 16
   
 8.  Die `get_` Methode erstellt ein anderes IDispatch-basierte-Ereignisobjekt, das sowohl implementiert die `IConnectionPointContainer` Schnittstelle und die `IConnectionPoint` -Schnittstelle und eine IDispatchpointer für das Objekt zurückgegeben.  
   
- Um ein Ereignis verfügbar zu machen, mithilfe der Automatisierung, muss die Reaktion auf einen <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> "und" überwachen, für die Zeichenfolgen, die Sie an der Registrierung hinzufügen. Im Beispiel für den Basic-Projekts sind die Zeichenfolgen "BscProjectsEvents" und "BscProjectItemsEvents".  
+ Um ein Ereignis verfügbar zu machen, mithilfe der Automatisierung, muss die Reaktion auf einen <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> und "überwachen" für die Zeichenfolgen, die Sie an der Registrierung hinzufügen. Im Beispiel für den Basic-Projekts sind die Zeichenfolgen "BscProjectsEvents" und "BscProjectItemsEvents".  
   
 ## <a name="registry-entries-from-the-basic-project-sample"></a>Registrierungseinträge aus dem Beispiel Basic-Projekts  
  Dieser Abschnitt zeigt, wo Automation Ereigniswerte zur Registrierung hinzugefügt.  
@@ -55,13 +57,13 @@ caps.handback.revision: 16
   
 |Name|Typ|Bereich|Beschreibung|  
 |----------|----------|-----------|-----------------|  
-|Standardwert (@)|REG_SZ|Nicht verwendete|Nicht verwendet. Sie können das Feld "Daten" Dokumentation verwenden.|  
+|Standard (@)|REG_SZ|Nicht verwendete|Nicht verwendet. Sie können das Feld "Daten" Dokumentation verwenden.|  
 |AutomationProjectsEvents|REG_SZ|Name des Ereignisobjekts.|Nur der Schlüsselname ist relevant. Sie können das Feld "Daten" Dokumentation verwenden.<br /><br /> In diesem Beispiel stammen aus dem grundlegenden projektbeispiel.|  
 |AutomationProjectItemEvents|REG_SZ|Name des Ereignisobjekts|Nur der Schlüsselname ist relevant. Sie können das Feld "Daten" Dokumentation verwenden.<br /><br /> In diesem Beispiel stammen aus dem grundlegenden projektbeispiel.|  
   
- Wenn keines der Objekte von einem Consumer Automatisierung angefordert werden, erstellen Sie ein Stammobjekt, die Methoden für jedes Ereignis enthält, die das VSPackage unterstützt. Die Umgebung Ruft die entsprechende `get_` Methode für dieses Objekt. Z. B. wenn `DTE.Events.AutomationProjectsEvents` aufgerufen wird, die `get_AutomationProjectsEvents` Methode für das Stammobjekt aufgerufen wird.  
+ Wenn keines der Objekte von einem Consumer Automation angefordert werden, erstellen Sie ein Stammobjekt, die Methoden für jedes Ereignis enthält, die das VSPackage unterstützt. Die Umgebung Ruft die entsprechende `get_` Methode für dieses Objekt. Z. B. wenn `DTE.Events.AutomationProjectsEvents` aufgerufen wird, die `get_AutomationProjectsEvents` Methode für das Stammobjekt aufgerufen wird.  
   
- ![Ereignisse in Visual Studio-Projekt](~/extensibility/internals/media/projectevents.gif "ProjectEvents")  
+ ![Visual Studio-Projektereignisse](../../extensibility/internals/media/projectevents.gif "ProjectEvents")  
 Automatisierungsmodell für Ereignisse  
   
  Die Klasse `CProjectEventsContainer` stellt das Quellobjekt für BscProjectsEvents, während `CProjectItemsEventsContainer` das Quellobjekt für BscProjectItemsEvents darstellt.  
@@ -77,7 +79,7 @@ Automatisierungsmodell für Ereignisse
   
  Im folgenden Codebeispiel wird veranschaulicht, wie für die Reaktion auf eine Anforderung für ein Ereignisobjekt.  
   
-```cpp#  
+```cpp  
 STDMETHODIMP CVsPackage::GetAutomationObject(  
     /* [in]  */ LPCOLESTR       pszPropName,   
     /* [out] */ IDispatch **    ppIDispatch)  
@@ -106,10 +108,10 @@ STDMETHODIMP CVsPackage::GetAutomationObject(
 }  
 ```  
   
- Im obigen Code `g_wszAutomationProjects` ist der Name, der die Projektsammlung ("FigProjects"), `g_wszAutomationProjectsEvents` ("FigProjectsEvents") und `g_wszAutomationProjectItemsEvents` ("FigProjectItemEvents") sind die Namen der Projektereignisse und Projektelemente Ereignisse, die von der VSPackage-Implementierung bezogen werden.  
+ Im obigen Code `g_wszAutomationProjects` ist der Name, der die Projektsammlung ("FigProjects"), `g_wszAutomationProjectsEvents` ("FigProjectsEvents") und `g_wszAutomationProjectItemsEvents` ("FigProjectItemEvents") sind die Namen der Projektereignisse und Projektelemente Ereignisse, die von bezogen werden Ihre VSPackage-Implementierung.  
   
  Ereignisobjekte werden abgerufen, an dem zentralen Speicherort, der `DTE.Events` Objekt. Auf diese Weise werden alle Objekte zusammengefasst, damit ein Endbenutzer nicht unbedingt das gesamte Objektmodell zum Suchen eines bestimmten Ereignisses zu durchsuchen. Dies können Sie bereitstellen, die bestimmte VSPackage-Objekte, anstatt Sie Ihren eigenen Code für eine systemweite Ereignisse zu implementieren. Für den Endbenutzer, die muss finden jedoch ein Ereignis für Ihre `ProjectItem` -Schnittstelle, es ist nicht sofort klar, von dem das Ereignisobjekt abgerufen wird.  
   
 ## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>   
- [VSSDK-Beispiele](../../misc/vssdk-samples.md)
+ [VSSDK-Beispiele](http://aka.ms/vs2015sdksamples)

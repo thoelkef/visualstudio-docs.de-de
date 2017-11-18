@@ -1,54 +1,55 @@
 ---
-title: "IDebugProgramNode2::GetHostMachineName_V7 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgramNode2::GetHostMachineName"
-helpviewer_keywords: 
-  - "IDebugProgramNode2::GetHostMachineName_V7"
-  - "IDebugProgramNode2::GetHostMachineNameIDebugProgramNode2::GetHostMachineName"
+title: IDebugProgramNode2::GetHostMachineName_V7 | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProgramNode2::GetHostMachineName
+helpviewer_keywords:
+- IDebugProgramNode2::GetHostMachineName_V7
+- IDebugProgramNode2::GetHostMachineNameIDebugProgramNode2::GetHostMachineName
 ms.assetid: a992f2c9-f68b-4146-8cc2-027753bf7ce6
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 536fc9d8b83f21141abb1db05066232ea48382de
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgramNode2::GetHostMachineName_V7
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-VERALTET.  NOT TUN USE.  
+# <a name="idebugprogramnode2gethostmachinenamev7"></a>IDebugProgramNode2::GetHostMachineName_V7
+ALS VERALTET MARKIERT. DARF NICHT VERWENDET WERDEN.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetHostMachineName_V7 (   
-   BSTR* pbstrHostMachineName  
+```cpp  
+HRESULT GetHostMachineName_V7 (   
+   BSTR* pbstrHostMachineName  
 );  
 ```  
   
-```c#  
-int GetHostMachineName_V7 (   
-   out string pbstrHostMachineName  
+```csharp  
+int GetHostMachineName_V7 (   
+   out string pbstrHostMachineName  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pbstrHostMachineName`  
- \[out\]  Gibt den Namen des Computers zurück, auf dem das Programm ausgeführt wird.  
+ [out] Gibt den Namen des Computers an, in dem das Programm ausgeführt wird.  
   
-## Rückgabewert  
- Eine Implementierung sollte immer `E_NOTIMPL`zurückgeben.  
+## <a name="return-value"></a>Rückgabewert  
+ Eine Implementierung sollte stets `E_NOTIMPL`.  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
   
 > [!WARNING]
->  Ab [!INCLUDE[vsprvslong](../../../code-quality/includes/vsprvslong_md.md)]wird diese Methode nicht mehr verwendet und sollte immer `E_NOTIMPL`zurückgeben.  
+>  Als der [!INCLUDE[vsprvslong](../../../code-quality/includes/vsprvslong_md.md)], diese Methode wird nicht mehr verwendet und sollten stets `E_NOTIMPL`.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

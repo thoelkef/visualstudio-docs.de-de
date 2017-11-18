@@ -1,29 +1,30 @@
 ---
-title: "FIELD_KIND_EX | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "FIELD_KIND_EX-enumeration"
+title: FIELD_KIND_EX | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: FIELD_KIND_EX enumeration
 ms.assetid: 922c3208-1e94-485f-b70a-3bc96affeff8
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 700eae83a53cf9ef88c81d33a07f9a79bd77a4b8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# FIELD_KIND_EX
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Listet zusätzliche Arten von Feldern, die ein [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)\-Objekt enthalten kann.  Diese Enumeration wird die [FIELD\_KIND](../../../extensibility/debugger/reference/field-kind.md)\-Enumeration.  
+# <a name="fieldkindex"></a>FIELD_KIND_EX
+Listet weitere Arten von Feldern, die eine [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) -Objekt enthalten kann. Diese Enumeration erweitert die [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) Enumeration.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_FIELD_KIND_EX  
 {  
    FIELD_KIND_EX_NONE = 0,  
@@ -33,7 +34,7 @@ enum enum_FIELD_KIND_EX
 typedef DWORD FIELD_KIND_EX;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_FIELD_KIND_EX  
 {  
    FIELD_KIND_EX_NONE = 0,  
@@ -42,23 +43,23 @@ public enum enum_FIELD_KIND_EX
 };  
 ```  
   
-## Mitglieder  
- FIELD\_KIND\_EX\_NONE  
- Feld enthält keinen erweiterten Typ.  
+## <a name="members"></a>Member  
+ FIELD_KIND_EX_NONE  
+ Feld sind keinen erweiterten Typ enthalten.  
   
- FIELD\_TYPE\_EX\_METHODVAR  
- Feld enthält eine Variable Methoden.  
+ FIELD_TYPE_EX_METHODVAR  
+ Feld enthält eine Methode-Variable.  
   
- FIELD\_TYPE\_EX\_CLASSVAR  
- Feld enthält eine Klassenvariablen.  
+ FIELD_TYPE_EX_CLASSVAR  
+ Feld enthält eine Klassenvariable.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: Sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)

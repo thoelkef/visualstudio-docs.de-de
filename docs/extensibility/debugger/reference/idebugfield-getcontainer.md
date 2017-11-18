@@ -1,52 +1,52 @@
 ---
-title: "IDebugField::GetContainer | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugField::GetContainer"
-helpviewer_keywords: 
-  - "IDebugField::GetContainer-Methode"
+title: IDebugField::GetContainer | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugField::GetContainer
+helpviewer_keywords: IDebugField::GetContainer method
 ms.assetid: 6d6c8213-6181-4adf-9584-3e4cac163dd8
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0049ebeb51d385850105d65d5db624829005d7d7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugField::GetContainer
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugfieldgetcontainer"></a>IDebugField::GetContainer
 Diese Methode ruft den Container eines Felds ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetContainer(   
-   IDebugContainerField** ppContainerField  
+```cpp  
+HRESULT GetContainer(   
+   IDebugContainerField** ppContainerField  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetContainer(  
-   out IDebugContainerField ppContainerField  
+   out IDebugContainerField ppContainerField  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `ppContainerField`  
- \[out\]  Gibt den Container zurück, der durch die [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)\-Schnittstelle dargestellt.  
+ [out] Gibt den Container zurück, dargestellt durch die [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) Schnittstelle.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Wenn dieses Feld keinen Container verfügt, ist das zurückgegebene `ppContainerField` ein NULL\-Wert.  
+## <a name="remarks"></a>Hinweise  
+ Wenn dieses Feld keinen Container, der das zurückgegebene `ppContainerField` ein null-Wert.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

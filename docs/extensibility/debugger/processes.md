@@ -1,46 +1,47 @@
 ---
-title: "Prozesse | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Debuggen [Debugging-SDK] verarbeitet"
+title: Prozesse | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: debugging [Debugging SDK], processes
 ms.assetid: a6a1efdc-b243-40c8-a778-6f69f6b018be
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f295dd93580caee4b6288febf7e83c09736b6080
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Prozesse
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Im Hinblick auf die Architektur der Debugger ein **Prozess**:  
+# <a name="processes"></a>Prozesse
+Im Hinblick auf die Architektur des Debuggers einen **Prozess**:  
   
--   Ist ein Container für eine Gruppe von Programmen.  Es ist eng mit einem Fenster Prozess, der ein Container für eine Gruppe von Threads ist.  
+-   Ist ein Container für eine Gruppe von Programmen. Es ist eng an einen Windows-Prozess, der einen Container für eine Gruppe von Threads darstellt.  
   
--   Kann sich, Bezeichner oder physischen Bezeichner des Namens identifizieren.  
+-   Können sich nach Name, Bezeichner oder physischen Bezeichner identifizieren.  
   
--   Es können alle laufenden Programme \(und ihre Threads\) auflisten.  
+-   Alle ausgeführten Programme (und deren Threads) können aufgelistet werden.  
   
--   Kann den Anschluss, die er ausgeführt wird und der Computer beschreiben, der er enthalten ist.  
+-   Beschreiben, durch selbst, den Port an, den es ausgeführt wird und dem Computer, der es enthält.  
   
--   Kann eine oder mehrere Programme erstellen, eines der Programme zu beenden, die sie erstellt oder bewirkt ein Programm anzuhalten.  
+-   Können, erstellen Sie eine oder mehrere Programme beenden eines der Programme, die sie erstellt oder dazu führen, dass ein Programm zu beenden.  
   
--   Wird von einer [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)\-Schnittstelle dargestellt, die erstellt wird, wenn der Prozess gestartet wurde.  Ein Vorgang wird von jedem der Debug\- Manager der Sitzung \(SDM\) oder [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)gestartet.  
+-   Dargestellt durch eine [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md) -Schnittstelle, die erstellt wird, wenn der Prozess gestartet wird. Ein Prozess wird gestartet, indem entweder der Sitzungs-Manager (SDM) oder [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md).  
   
- Das Debuggen kann ein Paket debuggen DE \(Modul\) an einen Prozess anfügen, indem [Anfügen](../../extensibility/debugger/reference/idebugprocess2-attach.md)aufruft.  Dies bedeutet, dass für alle DE Programme, die in den Prozess anfügt, die er verarbeiten kann.  Wenn z. B. die Common Language Runtime DE an einen Prozess anfügt, wird sie nur für Programme, die verwalteten Code ausführen.  
+ Das debugpaket kann ein Debugging-Modul (DE) an einen Prozess anfügen, durch den Aufruf [Anfügen](../../extensibility/debugger/reference/idebugprocess2-attach.md). Dies bedeutet, dass die DE fügt alle möglichen Programme, die im Prozess, den er behandeln kann ausgeführt. Wenn die common Language Runtime DE an einen Prozess angehängt wird, fügt ihn z. B. nur für Programme, die verwalteten Code ausgeführt werden.  
   
-## Siehe auch  
- [Programs](../../extensibility/debugger/programs.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Programme](../../extensibility/debugger/programs.md)   
  [Threads](../../extensibility/debugger/threads.md)   
- [Debugger\-Konzepte](../../extensibility/debugger/debugger-concepts.md)   
- [Debug\-Paket](../../extensibility/debugger/debug-package.md)   
- [Debug\-Modul](../../extensibility/debugger/debug-engine.md)   
+ [Debugger-Konzepte](../../extensibility/debugger/debugger-concepts.md)   
+ [Debug-Paket](../../extensibility/debugger/debug-package.md)   
+ [Debuggen des Datenbankmoduls](../../extensibility/debugger/debug-engine.md)   
  [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)   
  [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)   
  [Anfügen](../../extensibility/debugger/reference/idebugprocess2-attach.md)

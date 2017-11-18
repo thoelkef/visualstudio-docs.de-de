@@ -1,41 +1,43 @@
 ---
-title: "IDebugFirewallConfigurationCallback2::EnsureDCOMUnblocked | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "EnsureDCOMUnblocked"
-  - "IDebugFirewallConfigurationCallback2::EnsureDCOMUnblocked"
+title: IDebugFirewallConfigurationCallback2::EnsureDCOMUnblocked | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- EnsureDCOMUnblocked
+- IDebugFirewallConfigurationCallback2::EnsureDCOMUnblocked
 ms.assetid: acf54d27-32a6-47e7-aba6-3cc0004edc7f
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 466e9bacf70b698380f6ceb17835bb0db9477a2e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugFirewallConfigurationCallback2::EnsureDCOMUnblocked
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Fordert das remotedebugging der Firewall nicht blockieren.  
+# <a name="idebugfirewallconfigurationcallback2ensuredcomunblocked"></a>IDebugFirewallConfigurationCallback2::EnsureDCOMUnblocked
+Fordert an, dass der Firewall kein Remotedebuggen blockiert.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT EnsureDCOMUnblocked(   
-    Void  
+    Void  
 );  
 ```  
   
-```c#  
+```csharp  
 public int EnsureDCOMUnblocked();  
 ```  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugFirewallConfigurationCallback2](../../../extensibility/debugger/reference/idebugfirewallconfigurationcallback2.md)

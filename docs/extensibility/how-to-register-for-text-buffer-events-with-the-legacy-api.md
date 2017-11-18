@@ -1,39 +1,40 @@
 ---
-title: "Gewusst wie: Registrieren f&#252;r Ereignisse Puffer mit der Legacy-API | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Editoren [Visual Studio SDK] legacy - registrieren Text-Puffer-Ereignisse"
+title: "Vorgehensweise: Registrieren Sie sich für Text-Puffer-Ereignisse mit der Legacy-API | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], legacy - register for text buffer events
 ms.assetid: 5fc00ced-882c-4b48-b46c-1fa5a2469f94
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: fabdf30480666ee3bc24bf3d68af4cc0dcc1ccb6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Registrieren f&#252;r Ereignisse Puffer mit der Legacy-API
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Wenn Sie den Textpuffer zugreifen, indem Sie das Legacy APIs verwenden, sollten Sie für Textpuffer Ereignisse wie in der folgenden Prozedur gezeigt registrieren.  
+# <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>Vorgehensweise: Registrieren Sie sich für Text-Puffer-Ereignisse mit der Legacy-API
+Wenn Sie den Textpuffer mithilfe der legacy-API zugreifen, sollten Sie für Ereignisse des Text-Puffer wie im folgenden Verfahren gezeigt registrieren.  
   
-### So Textpuffer Events anmelden  
+### <a name="to-advise-text-buffer-events"></a>Um Text Puffer Ereignisse darüber zu informieren.  
   
-1.  Aus einem Zeiger auf eine der Schnittstellen für <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>, rufen Sie `QueryInterface` für einen Zeiger auf <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>.  
+1.  Von einem Zeiger auf eine der Schnittstellen auf <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>, rufen Sie `QueryInterface` für einen Zeiger auf <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>.  
   
-2.  Rufen Sie die <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer.FindConnectionPoint%2A>\-Methode auf, und übergeben Sie die Schnittstellen\-ID der Ereignisse, für die Sie registrieren möchten.  
+2.  Rufen Sie die <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer.FindConnectionPoint%2A> Methode und übergeben der Schnittstellen-ID der Ereignisse, die für die Sie registrieren möchten.  
   
-     Wenn Sie beispielsweise für <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents>registrieren möchten, übergeben Sie IID\_IVsTextLinesEvents der Schnittstellen\-ID.  
+     Angenommen, Sie registrieren möchten <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents>, klicken Sie dann in einer Schnittstelle-ID des IID_IVsTextLinesEvents übergeben.  
   
-     Der Textpuffer gibt einen Zeiger auf die <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint>\-Schnittstelle für das entsprechende Verbindungspunktobjekt zurück.  
+     Die Textpuffer gibt einen Zeiger auf die <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> Schnittstelle für das entsprechende Objekt.  
   
-3.  Mithilfe des Zeigers rufen Sie die <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Advise%2A>\-Methode aufrufen und einen Zeiger auf die Implementierung der Schnittstelle Ereignis übergeben, für die Sie zum Beispiel die `IVsTextLinesEvents`\-Schnittstelle registrieren möchten.  
+3.  Rufen Sie mithilfe der this-Zeiger der <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Advise%2A> -Methode auf und übergibt einen Zeiger auf Ihre Implementierung die Ereignisschnittstelle, die für die Sie registrieren z. B., möchten die `IVsTextLinesEvents` Schnittstelle.  
   
-     Die Umgebung wird ein Cookie zurück, das Sie verwenden können, um Ereignisse zu überwachen, zu beenden, indem Sie die <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Unadvise%2A>\-Methode aufrufen.  
+     Die Umgebung gibt ein Cookie, mit denen Sie können dann beenden Überwachen von Ereignissen durch Aufrufen der <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Unadvise%2A> Methode.  
   
-## Siehe auch  
- [Text\-Puffer\-Ereignisse in der Legacy\-API](../extensibility/text-buffer-events-in-the-legacy-api.md)
+## <a name="see-also"></a>Siehe auch  
+ [Text-Puffer-Ereignisse in die Legacy-API](../extensibility/text-buffer-events-in-the-legacy-api.md)

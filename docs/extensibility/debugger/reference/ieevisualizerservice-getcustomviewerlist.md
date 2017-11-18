@@ -1,72 +1,72 @@
 ---
-title: "IEEVisualizerService::GetCustomViewerList | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEEVisualizerService::GetCustomViewerList"
-helpviewer_keywords: 
-  - "IEEVisualizerService::GetCustomViewerList-Methode"
+title: IEEVisualizerService::GetCustomViewerList | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEEVisualizerService::GetCustomViewerList
+helpviewer_keywords: IEEVisualizerService::GetCustomViewerList method
 ms.assetid: 249d26ca-914f-43af-a400-8162477223f4
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 733c4886fb1bc714526b655e5b4c3b395254e310
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IEEVisualizerService::GetCustomViewerList
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Diese Methode gibt eine Liste der Typ schnellansichten zurück, die dieser Dienst weiß Info.  
+# <a name="ieevisualizerservicegetcustomviewerlist"></a>IEEVisualizerService::GetCustomViewerList
+Diese Methode gibt eine Liste von Typ-Schnellansichten, denen diesen Dienst bekannt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT GetCustomViewerList(  
-   ULONG                celtSkip,  
-   ULONG                celtRequested,  
-   DEBUG_CUSTOM_VIEWER* rgViewers,  
-   ULONG*               pceltFetched  
+HRESULT GetCustomViewerList(  
+   ULONG                celtSkip,  
+   ULONG                celtRequested,  
+   DEBUG_CUSTOM_VIEWER* rgViewers,  
+   ULONG*               pceltFetched  
 );  
 ```  
   
-```c#  
-int GetCustomViewerList(  
-   uint                  celtSkip,  
-   uint                  celtRequested,  
-   DEBUG_CUSTOM_VIEWER[] rgViewers,  
-   out uint              pceltFetched  
+```csharp  
+int GetCustomViewerList(  
+   uint                  celtSkip,  
+   uint                  celtRequested,  
+   DEBUG_CUSTOM_VIEWER[] rgViewers,  
+   out uint              pceltFetched  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `celtSkip`  
- \[in\]  Zahl, Schnellansichten nach zu überspringen.  
+ [in] Die Anzahl von Schnellansichten, zu überspringen.  
   
  `celRequested`  
- \[in\]  Zahl abzurufen \(Schnellansichten sind außerdem Größe des Arrays `rgViewers` \).  
+ [in] Anzahl der abzurufenden Schnellansichten (gibt auch die Größe des an die `rgViewers` Array).  
   
  `rgViewers`  
- \[in, out\]  Array von Strukturen, [DEBUG\_CUSTOM\_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) ausgefüllt werden soll.  
+ [in, out] Array von [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) Strukturen ausgefüllt werden.  
   
  `pceltFetched`  
- \[out\]  Die Anzahl der tatsächlich abgerufenen Visualizers.  
+ [out] Die Anzahl von Schnellansichten tatsächlich abgerufen.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) führt die Anforderung an diese Methode als Teil ihrer Unterstützung für den Typ schnellansichten.  Wenn die vom benutzerdefinierten Viewer Ausdrucksauswerters, auch für denselben Typ, er ausgefüllte\-heraus [DEBUG\_CUSTOM\_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) Strukturen für diese benutzerdefinierten Viewer zur Liste anfügen können.  Überprüfen Sie, ob [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) diese zusätzlichen Viewer aus.  
+## <a name="remarks"></a>Hinweise  
+ [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) übergibt die Anforderung an diese Methode als Teil der Unterstützung für die Typ-Schnellansichten. Wenn die ausdrucksauswertung auch benutzerdefinierten Viewer für den gleichen Typ stellt kann es entsprechend ausgefüllte Anfügen [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) Strukturen für diesen benutzerdefinierten Viewer zur Liste. Stellen Sie sicher, dass [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) diese zusätzliche Viewer widerspiegelt.  
   
- Weitere Informationen finden Sie unter [Typ\-Schnellansicht und benutzerdefinierten Viewer](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) Einzelheiten über die Unterschiede zwischen Viewern und Visualizers.  
+ Finden Sie unter [Typ Schnellansicht und den benutzerdefinierten Viewer](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) Weitere Informationen zu den Unterschieden zwischen Schnellansichten und Viewern.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)   
- [DEBUG\_CUSTOM\_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)   
+ [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)   
  [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)   
  [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)   
- [Typ\-Schnellansicht und benutzerdefinierten Viewer](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
+ [Typschnellansicht und benutzerdefinierter Viewer](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

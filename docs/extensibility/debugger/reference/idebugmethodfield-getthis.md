@@ -1,52 +1,52 @@
 ---
-title: "IDebugMethodField::GetThis | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugMethodField::GetThis"
-helpviewer_keywords: 
-  - "IDebugMethodField::GetThis-Methode"
+title: IDebugMethodField::GetThis | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugMethodField::GetThis
+helpviewer_keywords: IDebugMethodField::GetThis method
 ms.assetid: cc235bea-e909-4d8c-ab54-936736c803fc
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 91c4e2b693ffcca1a88cde1372197026758eb7d3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugMethodField::GetThis
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft den Zeiger `this` \(`Me` in [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]\) des Objekts ab, das die Methode enthält.  
+# <a name="idebugmethodfieldgetthis"></a>IDebugMethodField::GetThis
+Ruft die `this` (`Me` in [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]) Zeiger, der das Objekt, das die Methode enthält.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetThis(   
-   IDebugClassField** ppClass  
+```cpp  
+HRESULT GetThis(   
+   IDebugClassField** ppClass  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetThis(  
-   out IDebugClassField ppClass  
+   out IDebugClassField ppClass  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `ppClass`  
- \[out\]  Gibt ein Objekt zurück, das den [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) „this“ \- Zeiger darstellt.  
+ [out] Gibt eine [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) Objekt, das den "this" Zeiger darstellt.  
   
-## Rückgabewert  
- Bei Erfolg gibt S\_OK zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- In objektorientierten Sprachen gibt es normalerweise keinen impliziten Zeiger auf die aktuelle Instanziierung einer Klasse.  Dies wird auch als `this` in C\#\/C\+\+ und als `Me` in [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)].  
+## <a name="remarks"></a>Hinweise  
+ In objektorientierten Sprachen wird in der Regel ein impliziter Zeiger auf die aktuelle Instanziierung einer Klasse. Dies bezeichnet man `this` in C#-/ C++ und als `Me` in [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)].  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

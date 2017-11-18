@@ -1,49 +1,50 @@
 ---
-title: "&#196;ndern die Ansicht mit der Legacy-API | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Editoren [Visual Studio SDK] legacy - ändern die Ansicht"
+title: "Ändern Einstellungen anzeigen, über die Legacy-API | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], legacy - changing view settings
 ms.assetid: 12c9b300-0894-4124-96a1-764326176d77
-caps.latest.revision: 18
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: fe5bd3b149981ca8183e9311185ef5d6ed19e48f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# &#196;ndern die Ansicht mit der Legacy-API
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Einstellungen für Kern des Editors, wie Zeilenumbruch, Auswahlrand Virtuellen Bereich und können vom Benutzer mithilfe des Dialogfelds **Optionen** geändert werden.  Es ist jedoch auch möglich, diese Einstellungen programmgesteuert ändern.  
+# <a name="changing-view-settings-by-using-the-legacy-api"></a>Ändern Einstellungen anzeigen, über die Legacy-API
+Einstellungen für Core-Editor-Funktionen, z. B. Zeilenumbruch, Auswahlrahmen und virtuellen Adressraum können geändert werden, vom Benutzer über die **Optionen** (Dialogfeld). Es ist jedoch auch möglich, zum Ändern der Einstellungen programmgesteuert.  
   
-## Einstellungen mithilfe des Legacy API ändern  
- Die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer>\-Schnittstelle macht einen Satz Text\-Editor\-Eigenschaften.  Die Textansicht enthält eine Kategorie Properties \(GUID\_EditPropCategory\_View\_MasterSettings\), die die Gruppe von programmgesteuert geänderten Einstellungen für die Textansicht darstellt.  Sobald die Ansicht sind auf diese Weise sie können nicht geändert werden **Optionen** im Dialogfeld geändert wurde, bis sie zurückgesetzt werden.  
+## <a name="changing-settings-by-using-the-legacy-api"></a>Ändern von Einstellungen über die Legacy-API  
+ Die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> Schnittstelle verfügbar macht, einen Satz von Eigenschaften des Text-Editor. Die Textansicht enthält eine Kategorie von Eigenschaften (GUID_EditPropCategory_View_MasterSettings), die die Gruppe der programmgesteuert geänderte Einstellungen für die Textansicht darstellt. Sobald die ansichtseinstellungen auf diese Weise geändert wurden, nicht geändert werden der **Optionen** (Dialogfeld), bis sie zurückgesetzt werden.  
   
- Im Folgenden ist der übliche Verfahren zum Ändern von Einstellungen anzeigen für eine Instanz des zentralen editors.  
+ Es folgt der übliche Vorgang zum Ändern der Einstellungen für eine Instanz des Editors Core anzeigen.  
   
-1.  Rufen Sie `QueryInterface` \(<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>\) für die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer>\-Schnittstelle an.  
+1.  Rufen Sie `QueryInterface` auf der (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>) für die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> Schnittstelle.  
   
-2.  Rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A>\-Methode auf und einen Wert von GUID\_EditPropCategory\_View\_MasterSettings für den `rguidCategory`\-Parameter angeben.  
+2.  Rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> Methode, die Angabe des Werts GUID_EditPropCategory_View_MasterSettings für die `rguidCategory` Parameter.  
   
-     Dies gibt einen Zeiger auf die zu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer>\-Schnittstelle zurück, die den Satz der erzwungenen Eigenschaften für die Sicht enthält.  Einstellungen in dieser Gruppe werden dauerhaft erzwungen.  Wenn eine Einstellung nicht in dieser Gruppe ist, dann folgt sie den Optionen, die im **Optionen** Dialogfeld oder in Befehlen des Benutzers angegeben werden.  
+     Dies gibt einen Zeiger auf die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> -Schnittstelle, die den Satz der erzwungenen Eigenschaften für die Sicht enthält. Alle Einstellungen in dieser Gruppe werden dauerhaft erzwungen. Wenn eine Einstellung nicht in dieser Gruppe ist, es im angegebenen Optionen befolgen wird Sie die **Optionen** Dialogfeld oder die Befehle des Benutzers.  
   
-3.  Rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A>\-Methode auf und den entsprechenden Wert für die Einstellung im `idprop`\-Parameter angeben.  
+3.  Rufen Sie die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> Methode, dabei werden die entsprechenden Einstellungswert in der `idprop` Parameter.  
   
-     Zum Beispiel verwendet und <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> Aufrufs, Zeilenumbruch einen Wert VSEDITPROPID\_ViewLangOpt\_WordWrap, `vt` angeben `idprop` für den Parameter.  In diesem Aufruf ist `vt` VARIANT des Typs VT\_BOOL und `vt.boolVal` ist VARIANT\_TRUE sein.  
+     Beispielsweise rufen Sie zum Erzwingen der Zeilenumbruch <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> und geben Sie den Wert VSEDITPROPID_ViewLangOpt_WordWrap, `vt` für die `idprop` Parameter. In diesem Aufruf `vt` ist eine Variante des Typs VT_BOOL und `vt.boolVal` auf VARIANT_TRUE festgelegt ist.  
   
-## Geänderte Ansichts\-Einstellungen zurücksetzen  
- So erstellen Sie eine geänderte Einstellung für die Ansicht für eine Instanz des zentralen editors zurücksetzen, die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A>\-Methode aufrufen und den entsprechenden Einstellungswert im `idprop`\-Parameter angeben.  
+## <a name="resetting-changed-view-settings"></a>Zurücksetzen des geänderten Ansichtseinstellungen  
+ Aufrufen, um alle geänderten anzeigen, die Einstellung für eine Instanz des Editors Core zurückzusetzen, die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A> Methode, und geben Sie den Einstellungswert der entsprechenden in der `idprop` Parameter.  
   
- Um beispielsweise Zeilenumbrüche zu ermöglichen, frei zu schwimmen, können Sie ihn von der Eigenschaft durch den Aufruf von <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A> Kategorie und das Angeben eines Werts aus VSEDITPROPID\_ViewLangOpt\_WordWrap für den Parameter `idprop` entfernen.  
+ Beispielsweise um Zeilenumbruch schweben zu ermöglichen, möchten, entfernen sie aus "Eigenschaft" durch den Aufruf <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A> und dabei den Wert VSEDITPROPID_ViewLangOpt_WordWrap für die `idprop` Parameter.  
   
- Um alle geänderten Einstellungen für den Kern des Editors gleichzeitig zu entfernen, geben Sie einen Wert von VSEDITPROPID\_ViewComposite\_AllCodeWindowDefaults, vt für den `idprop`\-Parameter an.  In diesem Aufruf ist vt VARIANT des Typs VT\_BOOL und vt.boolVal ist VARIANT\_TRUE sein.  
+ Um alle geänderten Einstellungen für den Core-Editor auf einmal zu entfernen, geben Sie den Wert VSEDITPROPID_ViewComposite_AllCodeWindowDefaults, vt für die `idprop` Parameter. In diesem Aufruf vt ist eine Variante des Typs VT_BOOL und vt.boolVal ist auf VARIANT_TRUE festgelegt.  
   
-## Siehe auch  
- [In der Core\-Editor](../extensibility/inside-the-core-editor.md)   
- [Zugreifen auf Dietext Ansicht mithilfe der Legacy\-API](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)   
- [Dialogfeld "Optionen"](../ide/reference/options-dialog-box-visual-studio.md)
+## <a name="see-also"></a>Siehe auch  
+ [In der Core-Editor](../extensibility/inside-the-core-editor.md)   
+ [Zugreifen auf TheText Ansicht über die Legacy-API](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)   
+ [Optionen (Dialogfeld)](../ide/reference/options-dialog-box-visual-studio.md)

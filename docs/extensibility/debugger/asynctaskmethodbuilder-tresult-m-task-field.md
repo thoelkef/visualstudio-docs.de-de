@@ -1,39 +1,39 @@
 ---
-title: "AsyncTaskMethodBuilder &lt; TResult &gt; .m_task-Feld | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/03/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "M_task Feld AsyncTaskMethodBuilder < TResult > Struktur [Debugmodule [.NET Framework]"
+title: AsyncTaskMethodBuilder&lt;TResult&gt;.m_task Feld | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: m_task field, AsyncTaskMethodBuilder<TResult> structure [.NET Framework debug engines]
 ms.assetid: 649abf0e-0fec-49d9-93b2-8953521f7ba5
-caps.latest.revision: 4
-caps.handback.revision: 4
-ms.author: "gregvanl"
-manager: "ghogen"
+caps.latest.revision: "4"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9786f022fe85ebf99d4da49c866c24b67f130902
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# AsyncTaskMethodBuilder &lt; TResult &gt; .m_task-Feld
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Stellt die verzögert initialisierte Aufgabe erstellt.  
+# <a name="asynctaskmethodbuilderlttresultgtmtask-field"></a>AsyncTaskMethodBuilder&lt;TResult&gt;.m_task-Feld
+Stellt den verzögert initialisierten Aufgabe erstellt.  
   
- **Namespace:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
+ **Namespace:**<xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
- **Assembly:** Mscorlib \(in "mscorlib.dll"\)  
+ **Assembly:** "mscorlib" (in "mscorlib.dll")  
   
- Da Sie diesen internen Member von .NET Framework zugreifen können, wird die folgende Syntax gemeinsam Intermediate Language \(CIL\) bereitgestellt.  
+ Da dieses interne Member von .NET Framework zugegriffen werden kann, wird die folgende Syntax gemeinsame Intermediate Language (CIL) bereitgestellt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 .field private class System.Threading.Tasks.Task`1<!TResult> m_task  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>   
- [Parallelen Erweiterung Internals für .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+ [Interne Elemente der parallelen Erweiterung für das .NET-Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

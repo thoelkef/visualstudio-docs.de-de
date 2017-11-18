@@ -1,57 +1,57 @@
 ---
-title: "IDebugCoreServer3::GetServerFriendlyName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCoreServer3::GetServerFriendlyName"
-helpviewer_keywords: 
-  - "IDebugCoreServer3::GetServerFriendlyName"
+title: IDebugCoreServer3::GetServerFriendlyName | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugCoreServer3::GetServerFriendlyName
+helpviewer_keywords: IDebugCoreServer3::GetServerFriendlyName
 ms.assetid: 7035b904-b3d7-4d9b-98d9-65714b8a8b9f
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9ad20c8b71132b87efae6f2b4d27b7339e574cc4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugCoreServer3::GetServerFriendlyName
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft einen angezeigten Namen für den Server ab.  
+# <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
+Ruft einen Anzeigenamen für den Server ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetServerFriendlyName(  
-   BSTR* pbstrName  
+```cpp  
+HRESULT GetServerFriendlyName(  
+   BSTR* pbstrName  
 );  
 ```  
   
-```c#  
-int GetServerFriendlyName(  
-   out string pbstrName  
+```csharp  
+int GetServerFriendlyName(  
+   out string pbstrName  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pbstrName`  
- \[out\]  Gibt einen Anzeigenamen für den Server zurück.  
+ [out] Gibt einen Anzeigenamen für den Server zurück.  
   
 > [!NOTE]
->  Der Aufrufer ist für das Freigeben der Zeichenfolge verantwortlich.  
+>  Der Aufrufer ist verantwortlich für die Freigabe der Zeichenfolge.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. Gibt andernfalls Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird Fehlercode zurückgegeben.  
   
-## Hinweise  
- Für USER\-gestartete Server ist der Name, der von dieser Methode zurückgegeben wird, der vollständige Name des Servers.  Für gestartete Server ist der Name des Computers, auf dem der Server ausgeführt wird.  
+## <a name="remarks"></a>Hinweise  
+ Bei Servern Benutzer gestartet werden ist der Name, die von dieser Methode zurückgegebene den vollständigen Namen des Servers. Bei Servern automatisch gestartet werden ist der Name des Computers an den Server ausgeführt wird, auf.  
   
- Für einen maschinenorientierten Namen rufen Sie die [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)\-Methode auf.  
+ Rufen Sie für den Namen eines Computers orientierten der [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md) Methode.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)   
  [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)

@@ -1,45 +1,46 @@
 ---
-title: "Verwaltung der Inhaber Dokument | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Editoren [Visual Studio SDK] benutzerdefinierte - Dokument sperren"
+title: Lock-Inhaber dokumentverwaltung | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], custom - document locking
 ms.assetid: fa1ce513-eb7d-42bc-b6e8-cb2433d051d5
-caps.latest.revision: 21
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d4bd487bd3f5a6978af9f79eb9e0a00866b5df52
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Verwaltung der Inhaber Dokument
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Die ausgeführte Drehtransformator Tabelle aktiver Dokumente \(\) verwaltet eine Anzahl geöffnete Dokumente und jede Bearbeitung gesperrt haben.  Sie können eine sperre Bearbeiten auf einem Dokument in Drehtransformator platzieren, wenn dies programmgesteuert im Hintergrund ohne den Benutzer bearbeitet wird, der einem geöffneten Dokument in einem Dokumentfenster anzuzeigen.  Diese Funktionalität wird häufig verwendet, um die vom Designer mehrere Dateien über eine grafische Benutzeroberfläche ändern.  
+# <a name="document-lock-holder-management"></a>Inhaber von Dokumentverwaltung-Sperre
+Ausgeführt Dokument Tabelle (RDT) verwaltet die Anzahl der geöffneten Dokumente und Sperren bearbeiten, die sie besitzen. Sie können eine Bearbeiten-Sperre für ein Dokument in der RDT platzieren, wenn es programmgesteuert im Hintergrund ohne dass der Benutzer sehen ein geöffnetes Dokument in einem Dokumentfenster bearbeitet wird. Diese Funktionalität wird häufig von Entwicklern verwendet, die mehrere Dateien über eine grafische Benutzeroberfläche zu ändern.  
   
-## Dokumenten\-Sperren\-Halter\-Szenarien  
+## <a name="document-lock-holder-scenarios"></a>Dokument Inhaber-Szenarien  
   
-### Datei „a“ hat eine Abhängigkeit für die Datei „b“  
- Betrachten Sie eine Situation, in der Sie einen standardmäßigen Editor „A“ für Dateityp „a“ implementieren, und jede Datei vom Typ „a“ weist einen Verweis auf \(oder Abhängigkeit\) einer Datei vom Typ „b“.  Ein Standardwert des Editors „B“ ist für Dateien vom Typ „b“.  Wenn Editor „A“ Datei „a“ öffnet, kann sie den Verweis auf die entsprechende Datei „b“ ab.  Datei „b“ wird nicht angezeigt, aber Editor „A“ kann sie ändern.  Editor „A“ wird ein Verweis auf den Dokumenten von Daten aus Datei „b“ aus der <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A>\-Methode und wartet auf sperre Bearbeiten außerdem die Datei „b“.  Nach dem Editor „A“ wird die Datei „b“ ändern, können Sie die sperrenanzahl Bearbeiten auf die Datei „b“ verringern, indem Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnlockDocument%2A>\-Methode aufrufen.  Sie können diesen Schritt auslassen, wenn Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A>\-Methode mit dem Parameter `dwRDTLockType` festgelegt <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS>aufgerufen hätten.  
+### <a name="file-a-has-a-dependence-on-file-b"></a>Datei "a" hat eine Abhängigkeit von der Datei "b"  
+ Betrachten Sie eine Situation, in dem Sie eine standard-Editors "A" für den Dateityp implementieren "a", und jede Datei vom Typ "a" ist ein Verweis auf (oder die Abhängigkeit) eine Datei des Typs "b". Für Dateien vom Typ "b" ist ein standard-Editors "B" vorhanden. Beim Öffnen von Editor "A"-Datei Ruft den Verweis auf die entsprechende Datei "b" von "a" It ab. Datei "b" wird nicht angezeigt, aber "A"-Editor ändern kann. -Editor "ein" erhält einen Verweis auf die Daten der Datei "b" aus der <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> Methode und verwaltet auch eine Bearbeiten-Sperre für die Datei "b". Nach Abschluss der Editor "A" ändern die Datei "b" können Sie die Sperre bearbeiten Dekrementieren Verweiszählers für Datei "b" durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnlockDocument%2A> Methode. Sie können diesen Schritt auslassen, wenn Sie aufgerufen hätten die <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> Methode mit dem Parameter `dwRDTLockType` festgelegt <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS>.  
   
-### Datei „b“ wird von einem anderen Editor geöffnet  
- Im Fall, dass die Datei „b“ Editor „B“ bereits durch geöffnet wird, wenn Editor „A“ wird versucht, diesen zu öffnen, gibt es zwei verschiedene Szenarios behandelt:  
+### <a name="file-b-is-opened-by-a-different-editor"></a>Die Datei "b" wird von einem anderen Editor geöffnet.  
+ Wenn die Datei "b" bereits geöffnet wird, vom Editor "B" Wenn-Editor "A" versucht, ihn zu öffnen, es gibt zwei separate Szenarien behandelt:  
   
--   Wenn die Datei „b“ in einen kompatiblen Editor geöffnet ist, müssen Sie zum Registrieren des Editors „A“ eine Dokumenten bearbeitungs sperre auf die Datei „b“ mit der <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.RegisterDocumentLockHolder%2A>\-Methode verfügen.  Nachdem der Editor „A“ wird die Datei „b“ UN Ändern sperre bearbeitungs die Register mithilfe der <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnregisterDocumentLockHolder%2A>\-Methode.  
+-   Wenn die Datei "b" in einen kompatiblen Editor geöffnet ist, benötigen Sie Editor "A" registrieren Sie eine Dokument bearbeiten-Sperre für die Datei "b" mit der <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.RegisterDocumentLockHolder%2A> Methode. Nachdem der Editor "A" Ändern von Datei "b" erfolgt ist, Aufheben der Registrierung des Dokuments bearbeiten Sperre mit der <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnregisterDocumentLockHolder%2A> Methode.  
   
--   Wenn die Datei „b“ auf eine nicht kompatible Weise geöffnet ist, können Sie können die versuchte Öffnen der Datei „b“ durch „A“ Fail des Editors, oder Sie können die Ansicht, die mit teilweiser Editor „A“ eine entsprechende Fehlermeldung zu öffnen und anzeigen.  Die Fehlermeldung sollte den Benutzer anweisen, Datei „b“ in nicht kompatiblen Editor zu schließen und die Datei mit „a“ Editor „A“ anschließend erneut zu öffnen.  Sie können das [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]\-Methoden <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable2.QueryCloseRunningDocument%2A> ebenfalls implementieren, um den Benutzer aufzufordern, Datei „b“ zu schließen, die in nicht kompatiblen Editor geöffnet ist.  Wenn der Benutzer die Datei „b“ umfasst, wird die Start\- Datei „a“ in Editor „A“ normalerweise fort.  
+-   Wenn die Datei "b" in eine nicht kompatible Weise geöffnet ist, können Sie entweder das versuchte Öffnen der Datei "b" vom Editor lassen "A" fehl, oder Sie die zugeordnete-Editor lassen "A" teilweise öffnen und Anzeigen einer entsprechenden Fehlermeldung an. Die Fehlermeldung sollte den Benutzer anweisen, schließen Sie die Datei "b" in der nicht kompatiblen Editor, und öffnen die Datei mithilfe von "a" klicken Sie dann erneut Editor "A". Sie können auch implementieren die [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] Methode <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable2.QueryCloseRunningDocument%2A> abgefragt, die Datei "b" zu schließen, die in der nicht kompatiblen Editor geöffnet ist. Wenn der Benutzer die Datei "b", das Öffnen der Datei schließt wird "a" in Editor "A" normal fortgesetzt.  
   
-## Weitere Dokumenten\-Bearbeitungs\-Sperren\-Überlegungen  
- Rufen Sie ein anderes Verhalten ab, wenn Editor „A“ ist der einzige Editor Dokumente, der eine bearbeitungs sperre auf die Datei „b“ hat, als Sie wurden, wenn Editor „B“ auch eine bearbeitungs Dokumente sperre auf die Datei „b“ enthält.  In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]**Klassen\-Designer** ist ein Beispiel eines visuellen Designers, der keine sperre Bearbeiten auf der zugeordneten Codedatei enthält.  Das heißt, wenn der Benutzer ein Klassendiagramm enthält, das in der Entwurfsansicht geöffnet sind und die zugeordnete Codedatei, die gleichzeitig geöffnet ist und der Benutzer die Codedatei ändert, jedoch nicht die Änderungen gespeichert werden sollen, sind auch die Änderungen an der Klassendiagrammdatei \(CD\-Datei\) verloren.  Wenn **Klassen\-Designer** die einzige Dokumenten bearbeitungs sperre in der Codedatei wurde, wird der Benutzer nicht aufgefordert, die Änderungen zu speichern, wenn Sie die Codedatei schließt.  Die IDE fordert den Benutzer Änderungen zu speichern, die erst nach der Benutzer **Klassen\-Designer**geschlossen wird.  Die gespeicherten Änderungen werden in beiden Dateien wiedergibt.  Wenn **Klassen\-Designer** und der Codedatei des Editors reservierten Bearbeiten von Dokumenten, Sperren auf die Codedatei, wird der Benutzer aufgefordert zu speichern, wenn entweder die Codedatei oder das Formular geschlossen wird.  An diesem Punkt werden die gespeicherten Änderungen in der Form und in der Codedatei wiedergegeben.  Weitere Informationen zu Klassendiagrammen finden Sie unter [Working with Class Diagrams \(Class Designer\)](../ide/working-with-class-diagrams-class-designer.md).  
+## <a name="additional-document-edit-lock-considerations"></a>Zusätzliche Dokument bearbeiten Sperre Überlegungen  
+ Erhalten Sie unterschiedliches Verhalten, wenn Editor "A" der einzige Editor, der ein Dokument, die Sperre für die Datei "b" zu bearbeiten ist, als würden Editor "B" enthält auch ein Dokument hat bearbeiten Sperre für die Datei "b". In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], **Klassen-Designer** ist ein Beispiel eines visuellen Designers, der eine Sperre für die Bearbeitung nicht auf der zugeordneten Codedatei enthält. D. h. gehen verloren, wenn der Benutzer muss ein Klassendiagramm öffnen Sie in der Entwurfsansicht und die zugeordneten Codedatei gleichzeitig öffnen, und wenn der Benutzer ändert die Codedatei, aber die Änderungen nicht gespeichert, die Änderungen auch in der Klassendatei für die Klassendiagrammdatei (). Wenn die **Klassen-Designer** hat nur Sperren auf die Codedatei zu bearbeiten, der Benutzer wird nicht aufgefordert, die Änderungen zu speichern, schließen Sie die Codedatei. Die IDE fordert den Benutzer auf die Änderungen zu speichern, nachdem der Benutzer schließt den **Klassen-Designer**. Die gespeicherten Änderungen werden in beiden Dateien angezeigt. Wenn beide die **Klassen-Designer** und der Code-Editor auf die Codedatei Dokument bearbeiten Sperren aufrechterhalten, und der Benutzer aufgefordert wird, um beim Schließen der Codedatei oder das Formular zu speichern. An diesem Punkt werden die Änderungen gespeicherten, in das Formular und die Codedatei wiedergegeben. Weitere Informationen in Klassendiagrammen finden Sie unter [arbeiten mit Klassendiagrammen (Klassen-Designer)](../ide/working-with-class-diagrams-class-designer.md).  
   
- Beachten Sie, dass, wenn Sie eine sperre Bearbeiten auf einem Dokument für einen nicht Editor einfügen müssen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder>\-Schnittstelle implementieren müssen.  
+ Beachten Sie, dass wenn Sie eine Bearbeiten-Sperre für ein Dokument für einen Editor platzieren möchten, müssen Sie implementieren die <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> Schnittstelle.  
   
- Viele Mal wird ein Benutzeroberfläche\-Designer, Codedateien programmgesteuert geändert wird, Änderungen an mehr als einer Datei vor.  In einem solchen Fall behandelt die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell2.SaveItemsViaDlg%2A>\-Methode die Speichern eines oder mehrerer Dokumente mithilfe des Dialogfelds **Möchten Sie die Änderungen für die folgenden Elemente speichern?** .  
+ Oft ein UI-Designer, der die Codedateien programmgesteuert ändert nimmt Änderungen an mehr als eine Datei. In solchen Fällen das <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell2.SaveItemsViaDlg%2A> Methode behandelt das Speichern von einem oder mehreren Dokumenten mithilfe von der **möchten Sie die folgenden Elemente speichern?** (Dialogfeld).  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Dokumenttabelle der ausgeführten](../extensibility/internals/running-document-table.md)   
- [Persistenz und der Document\-Tabelle ausgeführt wird](../extensibility/internals/persistence-and-the-running-document-table.md)
+ [Persistenz und die aktive Dokumenttabelle](../extensibility/internals/persistence-and-the-running-document-table.md)

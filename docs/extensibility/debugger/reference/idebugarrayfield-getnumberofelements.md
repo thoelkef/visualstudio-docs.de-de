@@ -1,51 +1,51 @@
 ---
-title: "IDebugArrayField::GetNumberOfElements | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugArrayField::GetNumberOfElements"
-helpviewer_keywords: 
-  - "IDebugArrayField::GetNumberOfElements-Methode"
+title: IDebugArrayField::GetNumberOfElements | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugArrayField::GetNumberOfElements
+helpviewer_keywords: IDebugArrayField::GetNumberOfElements method
 ms.assetid: a1961ef3-d69d-4022-b8c9-b9cfb9811345
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 30b85f22a433a457eb9813790eb0456ba7275c0b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugArrayField::GetNumberOfElements
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugarrayfieldgetnumberofelements"></a>IDebugArrayField::GetNumberOfElements
 Ruft die Anzahl der Elemente im Array ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetNumberOfElements(   
-   DWORD* pdwNumElements  
+```cpp  
+HRESULT GetNumberOfElements(   
+   DWORD* pdwNumElements  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetNumberOfElements(  
-   out uint pdwNumElements  
+   out uint pdwNumElements  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pdwNumElements`  
- \[out\]  Gibt die Anzahl der Elemente im Array zurück.  
+ [out] Gibt die Anzahl der Elemente im Array zurück.  
   
-## Rückgabewert  
- Bei Erfolg gibt S\_OK zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Der zurückgegebene Wert ist die Gesamtzahl der Elemente im Array, unabhängig von der Anzahl der Dimensionen.  
+## <a name="remarks"></a>Hinweise  
+ Der zurückgegebene Wert ist die Gesamtanzahl der Elemente im Array, unabhängig von der Anzahl von Dimensionen.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

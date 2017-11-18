@@ -1,79 +1,79 @@
 ---
-title: "METADATA_ADDRESS_LOCAL | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "METADATA_ADDRESS_LOCAL"
-helpviewer_keywords: 
-  - "METADATA_ADDRESS_LOCAL-Struktur"
+title: METADATA_ADDRESS_LOCAL | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: METADATA_ADDRESS_LOCAL
+helpviewer_keywords: METADATA_ADDRESS_LOCAL structure
 ms.assetid: 635f6bc5-c486-4e0e-83db-36f15e543843
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a9d5e32f6f99cddcd3d04d8c10bda958e58fbbf3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# METADATA_ADDRESS_LOCAL
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Diese Struktur enthält die Adresse einer lokalen Variable innerhalb eines Bereichs dar \(normalerweise eine Funktion oder Methode\).  
+# <a name="metadataaddresslocal"></a>METADATA_ADDRESS_LOCAL
+Diese Struktur stellt die Adresse einer lokalen Variablen in einem Bereich (in der Regel eine Funktion oder Methode) dar.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 typedef struct _tagMETADATA_ADDRESS_LOCAL {  
-   _mdToken  tokMethod;  
-   IUnknown* pLocal;  
-   DWORD     dwIndex;  
+   _mdToken  tokMethod;  
+   IUnknown* pLocal;  
+   DWORD     dwIndex;  
 } METADATA_ADDRESS_LOCAL;  
 ```  
   
-```c#  
+```csharp  
 public struct METADATA_ADDRESS_LOCAL {  
-   public int    tokMethod;  
-   public object pLocal;  
-   public uint   dwIndex;  
+   public int    tokMethod;  
+   public object pLocal;  
+   public uint   dwIndex;  
 }  
 ```  
   
-## Ausdrücke  
+## <a name="terms"></a>Begriffe  
  tokMethod  
- Die ID der Methode oder Funktion die lokale Variable ist ein Part aus.  
+ Die ID der Methode oder Funktion die lokale Variable enthalten ist.  
   
- \[C\+\+\] `_mdToken``typedef` für 32\-Bit\- `int`.  
+ [C++] `_mdToken` ist ein `typedef` für 32-Bit- `int`.  
   
  pLocal  
- Das Token, dessen Adresse dieser Struktur darstellt.  
+ Das Token, dessen Adresse, die diese Struktur darstellt.  
   
- dwIndex  
- Kann der Index dieser lokalen Variablen in der Methode oder der Funktion oder ein anderer Wert \(sprachspezifisch\).  
+ dwIndex ab  
+ Der Index dieser lokalen Variablen in der Methode oder Funktion oder ein anderer Wert (sprachspezifischen) kann sein.  
   
-## Hinweise  
- Diese Struktur ist Teil der Union in der [DEBUG\_ADDRESS\_UNION](../../../extensibility/debugger/reference/debug-address-union.md) Struktur, wenn das `dwKind` Feld der `DEBUG_ADDRESS_UNION` Struktur in `ADDRESS_KIND_LOCAL` festgelegt wird \(ein Wert aus der [ADDRESS\_KIND](../../../extensibility/debugger/reference/address-kind.md)\-Enumeration\).  
+## <a name="remarks"></a>Hinweise  
+ Diese Struktur ist Teil der Union der [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) Struktur, wenn die `dwKind` Feld der `DEBUG_ADDRESS_UNION` Struktur auf festgelegt ist `ADDRESS_KIND_LOCAL` (ein Wert aus der [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) die Enumeration).  
   
- \[C\+\+\] `Warning:`nur bei `pLocal` nicht NULL ist, müssen Sie auf dem `Release` Zeiger aufrufen \(`addr` Token ist ein Feld in der [DEBUG\_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) Struktur\):  
+ `Warning:`[Nur C++]  Wenn `pLocal` nicht null ist, dann rufen Sie müssen `Release` auf dem token Zeiger (`addr` ist ein Feld in der [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) Struktur):  
   
 ```  
 if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL &&  addr.addr.addrLocal.pLocal != NULL)  
 {  
-    addr.addr.addrLocal.pLocal->Release();  
+    addr.addr.addrLocal.pLocal->Release();  
 }  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Strukturen und Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [DEBUG\_ADDRESS\_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
- [DEBUG\_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)   
- [ADDRESS\_KIND](../../../extensibility/debugger/reference/address-kind.md)
+ [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
+ [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)   
+ [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

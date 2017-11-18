@@ -1,31 +1,31 @@
 ---
-title: "MODULE_SYMBOL_SEARCH_INFO | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "MODULE_SYMBOL_SEARCH_INFO"
-helpviewer_keywords: 
-  - "MODULE_SYMBOL_SEARCH_INFO-Struktur"
+title: MODULE_SYMBOL_SEARCH_INFO | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: MODULE_SYMBOL_SEARCH_INFO
+helpviewer_keywords: MODULE_SYMBOL_SEARCH_INFO structure
 ms.assetid: 432aff03-08a5-4c5a-b2d5-e212090fc70a
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 967da176757dbd9d1ac09b8710074f9038533734
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# MODULE_SYMBOL_SEARCH_INFO
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="modulesymbolsearchinfo"></a>MODULE_SYMBOL_SEARCH_INFO
 Enthält Statusinformationen zu Symbolsuchpfaden, die durchsucht wurden.  
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 typedef struct _tagSYMBOL_SEARCH_INFO  
 {  
    SYMBOL_SEARCH_INFO_FIELDS dwValidFields;  
@@ -33,7 +33,7 @@ typedef struct _tagSYMBOL_SEARCH_INFO
 } MODULE_SYMBOL_SEARCH_INFO;  
 ```  
   
-```c#  
+```csharp  
 public struct MODULE_SYMBOL_SEARCH_INFO {  
    public uint   dwValidFields;  
    public string bstrVerboseSearchInfo;  
@@ -50,11 +50,11 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
 ## <a name="remarks"></a>Hinweise  
  Diese Struktur wird zurückgegeben, von einem Aufruf der [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) Methode.  
   
- Wenn die `bstrVerboseSearchInfo` Feld nicht leer, wird er enthält eine Liste von Pfaden, die durchsucht und die Ergebnisse dieses Vergleichs. Die Liste wird mit einem Pfad, gefolgt von Ellipsen ("..."), gefolgt von dem Ergebnis formatiert. Wenn Sie mehrere Path-Ergebnis-Paar vorhanden ist, wird jedes Paar durch ein "\r\n" (Return – Wagenrücklauf/Zeilenvorschub) getrennt. Das Muster sieht folgendermaßen aus:  
+ Wenn die `bstrVerboseSearchInfo` Feld nicht leer, wird er enthält eine Liste von Pfaden, die durchsucht und die Ergebnisse dieses Vergleichs. Die Liste wird mit einem Pfad, gefolgt von einem Auslassungszeichen ("..."), gefolgt von dem Ergebnis formatiert. Wenn mehr als ein Paar von Path-Ergebnis vorhanden ist, wird jedes Paar durch ein Paar aus "\r\n" (Return – Wagenrücklauf/Zeilenvorschub) getrennt. Das Muster sieht wie folgt:  
   
- \< Pfad>... \< Ergebnis>\r\n \< Pfad>... \< Ergebnis>\r\n \< Pfad>... \< Ergebnis>  
+ \<Pfad >... \<Ergebnis > \r\n\<Pfad >... \<Ergebnis > \r\n\<Pfad >... \<Ergebnis >  
   
- Beachten Sie, dass der letzte Eintrag nicht nacheinander \r\n.  
+ Beachten Sie, dass der letzte Eintrag nicht mit eine Sequenz \r\n verfügt.  
   
  Hier ist ein mögliches `bstrVerboseSearchInfo` Zeichenfolge, die an die Standardausgabe gesendet wurde.  
   

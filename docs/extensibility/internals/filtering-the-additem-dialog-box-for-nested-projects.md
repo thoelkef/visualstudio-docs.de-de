@@ -1,37 +1,39 @@
 ---
-title: "Das Dialogfeld AddItem Filtern f&#252;r geschachtelte Projekte | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Filtern von geschachtelten Projekte"
-  - "geschachtelte Projekten AddItem Dialogfeld Feld filtern"
+title: "Das Dialogfeld AddItem für geschachtelte Projekte filtern | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- filtering, nested projects
+- nested projects, AddItem dialog box filtering
 ms.assetid: 5b3e352e-7f18-4f66-be16-b0ad55637ce5
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 392f2f33d792c4e8f31ff0423b68a28a68797818
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Das Dialogfeld AddItem Filtern f&#252;r geschachtelte Projekte
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Wenn Sie ein **AddItem** Dialogfeld für ein geschachteltes Projekt anzeigen, kann das übergeordnete Projekt steuern, welche Elemente im Dialogfeld angezeigt werden.  
+# <a name="filtering-the-additem-dialog-box-for-nested-projects"></a>Das Dialogfeld AddItem Filtern für geschachtelte Projekte
+Beim Anzeigen einer **AddItem** im Dialogfeld für einen geschachtelten Projekts, das übergeordnete Projekt kann steuern, welche Elemente Sie im Dialogfeld angezeigt werden.  
   
- Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>\-Schnittstelle können Sie die Knoten filtern, die in einem **AddItem** Dialogfeld sind.  Wenn das untergeordnete Projekt das **AddItem** Dialogfeld anzeigt, kann das übergeordnete Element der `IVsFilterAddProjectItemDlg`\-Schnittstelle implementieren und Elemente filtern, die andernfalls in Projekt des untergeordneten Elements angezeigt werden.  
+ Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2> Schnittstelle können Sie die Knoten zu filtern, die in einer **AddItem** (Dialogfeld). Wenn das untergeordnete Projekt zeigt die **AddItem** kann implementieren, klicken Sie im Dialogfeld das übergeordnete Element der `IVsFilterAddProjectItemDlg` Schnittstelle und Filter-Elemente, die andernfalls im das untergeordnete Projekt angezeigt werden soll.  
   
- Wenn Projekte nach Funktion bestimmte Elemente in Projekten gruppiert werden, können Sie `IVsFilterAddProjectItemDlg` implementiert werden, wenn der Benutzer im Kontextmenü **Projektelemente hinzufügen** in einem geschachtelten Projekt ausgewählt werden.  Projektelemente oder Dateien nur `IvsFilterAddProjectItemDlg displays` Implementieren dieser Gruppe bestimmt.  Projektelemente für andere Gruppen werden aus dem Dialogfeld herausgefiltert, auch wenn sie im gleichen Verzeichnis gespeichert sind.  
+ Wenn Projekte nach ihrer Funktion unter bestimmten übergeordneten Projekte gruppiert sind, implementieren Sie `IVsFilterAddProjectItemDlg` Wenn der Benutzer wählt **Projektelement hinzufügen** im Kontextmenü in einer geschachtelten Projekts. Implementieren von `IvsFilterAddProjectItemDlg displays` nur Projekt Elemente oder Dateien für diese Gruppe spezifisch. Projektelemente für andere Gruppen sind aus das Dialogfeld herausgefiltert, auch wenn sie im gleichen Verzeichnis gespeichert werden.  
   
- Wenn ein Benutzer das Dialogfeld **AddItem** für das untergeordnete Element geöffnet wird, wird die übergeordnete Implementierung des Projekts der `IVsFilterAddProjectItemDlg`\-Schnittstelle aufgerufen.  
+ Wenn ein Benutzer öffnet die **AddItem** im Dialogfeld für das untergeordnete Element des übergeordneten Projekts Implementierung von der `IVsFilterAddProjectItemDlg` -Schnittstelle aufgerufen wird.  
   
- Die `IVsFilterAddProjectItemDlg`\-Schnittstelle kann das Filtern nach Kategorie ebenfalls implementieren.  Weitere Informationen finden Sie unter [Hinzufügen von Elementen, die zum Hinzufügen neuer Elemente Dialogfelder](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md) und [Registrieren von Projekt\- und Elementvorlagen](../../extensibility/internals/registering-project-and-item-templates.md).  
+ Die `IVsFilterAddProjectItemDlg` Schnittstelle kann auch implementieren nach Kategorie filtern. Weitere Informationen finden Sie unter [Elemente hinzufügen, um das Dialogfelder Neues Element hinzufügen](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md) und [Registrieren von Projekt- und Elementvorlagen](../../extensibility/internals/registering-project-and-item-templates.md).  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>   
  [Hinzufügen von Elementen, die zum Hinzufügen neuer Elemente Dialogfelder](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
- [Registrieren von Projekt\- und Elementvorlagen](../../extensibility/internals/registering-project-and-item-templates.md)   
- [Die Schachtelung von Projekten](../../extensibility/internals/nesting-projects.md)
+ [Registrieren von Projekt- und Elementvorlagen](../../extensibility/internals/registering-project-and-item-templates.md)   
+ [Schachteln von Projekten](../../extensibility/internals/nesting-projects.md)

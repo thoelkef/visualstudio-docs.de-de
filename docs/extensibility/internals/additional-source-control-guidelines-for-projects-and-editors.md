@@ -1,38 +1,39 @@
 ---
-title: "Richtlinien f&#252;r zus&#228;tzliche Quelle f&#252;r Projekte und Editoren | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Datenquellen-Steuerelement [Visual Studio SDK], Richtlinien für Projekte und Editoren"
+title: "Richtlinien für zusätzliche Quelle für Projekte und Editoren | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: source control [Visual Studio SDK], guidelines for projects and editors
 ms.assetid: 2483cce5-321c-4d3c-9c5c-ee8385263f74
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 4ed84b4b1bf6c974f22682dcb8d899208c653ebc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Richtlinien f&#252;r zus&#228;tzliche Quelle f&#252;r Projekte und Editoren
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Es gibt einige Richtlinien, die Projekte und Editoren befolgen sollten, um die Quellcodeverwaltung zu unterstützen.  
+# <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Richtlinien für zusätzliche Quelle für Projekte und Editoren
+Es gibt diverse Richtlinien, denen Projekte und Editoren folgen soll um Datenquellen-Steuerelements unterstützen.  
   
-## Richtlinien  
- Das Projekt oder der Editor können auch Folgendes tun, um die Quellcodeverwaltung zu unterstützen:  
+## <a name="guidelines"></a>Richtlinien  
+ Das Projekt oder Editor sollte auch Folgendes ein, um die Datenquellen-Steuerelements unterstützen Aktionen ausführen:  
   
-|Bereich|Project|Editor|Details|  
-|-------------|-------------|------------|-------------|  
-|Private Kopien von Dateien|X||Die Umgebung unterstützt private Kopien von Dateien.  Das heißt, verfügt jede Person, die im Projekt eingetragen wird, dessen\/eigene private Kopie der Dateien in diesem Projekt.|  
-|ANSI\-\/Unicode Dauerhaftigkeit|X|X|Wenn Sie die Persistenz von Code schreiben, behalten Sie die Dateien in der ANSI\-Form bei, da die meisten Sources kontrollprogramme Unicode nicht unterstützen.|  
-|Auflisten von Dateien|X||Das Projekt muss eine bestimmte Liste aller Dateien darin enthalten und muss in der Lage sein, die Liste der Dateien mit <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2> oder <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> \(VSH\_PROPID\_First\_Child\/Next\_Sibling\) aufzulisten.  Das Projekt sollte Elementnamen über seine <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.GetMkDocument%2A> Implementation und Support \(einschließlich\) Gerätedateien Name der durch seine Implementierung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A> auch verfügbar machen.|  
-|Textstil|X|X|Sofern möglich, sollten Dateien im Textformat sein, damit der Zusammenführung der verschiedenen Versionen zu unterstützen.  Dateien, die nicht im Textformat wurden, können nicht mit anderen Versionen der Datei später zusammengeführt werden.  Das bevorzugte Textstil ist XML.|  
-|Verweisbasiert|X||Bereit zur Quellcodeverwaltung Verweisbasierte Projekte werden unterstützt.  verzeichnisbasierte Projekte werden jedoch auch über die Quellcodeverwaltung unterstützt, solange das Projekt eine Liste der Dateien bei Bedarf vorlegen kann, unabhängig davon, ob diese Dateien auf dem Datenträger vorhanden sind.  Wenn Sie ein Projekt aus der Quellcodeverwaltung öffnen, wird die Projektdatei vor allen zugehörigen Dateien zunächst gesenkt.|  
-|Beibehalten von Objekten und Eigenschaften in der Reihenfolge bei vorhersagbaren|X|X|Behalten Sie die Dateien auf vorhersehbare Reihenfolge zusammenführen, z. B. alphabetischer Reihenfolge zu erleichtern.|  
-|Lädt|X|X|Wenn eine Datei auf dem Datenträger geändert wird, muss der Editor in der Lage sein, diese erneut zu laden.  Wenn Sie eine Verbindung mit der Quellcodeverwaltung beteiligt sind, die Umgebung erneut lädt, indem Sie Daten für die <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> Implementierung aufgerufen wird.  Der schwierigste Lädt kasten ist, wenn ein Auschecken erfolgt, wenn Sie IVsQueryEditQuerySave: aufgerufen haben:<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> und verarbeitet Informationen.  Allerdings muss der erneuten Laden von Code in der Lage sein, in dieser Situation ausgeführt werden.<br /><br /> In der Umgebung von Projektdateien automatisch neu.  Allerdings muss ein Projekt <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2> implementieren, wenn es Hierarchien geschachtelt wurde, um das erneute Laden von geschachtelten Projektdateien zu unterstützen.|  
+|Bereich|Projekt|Editor|Details|  
+|----------|-------------|------------|-------------|  
+|Private Kopien von Dateien|X||Die Umgebung unterstützt private Kopien der Dateien. Jede Person, die im Projekt eingetragen wurde, also seine eigenen privaten Kopie der Dateien in diesem Projekt.|  
+|ANSI/Unicode-Persistenz|X|X|Wenn Sie die Persistenzcode zu schreiben, beibehalten Sie, Dateien in das ANSI-Format, da die meisten quellcodeverwaltungsprogrammen zurzeit nicht Unicode unterstützen.|  
+|Auflisten von Dateien|X||Das Projekt muss eine bestimmte Liste aller Dateien darin enthalten und muss in der Lage, Aufzählen die Liste der Dateien, die mit der <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2> oder <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (VSH_PROPID_First_Child/Next_Sibling). Das Projekt sollte auch verfügbar machen Elementnamen über seine <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.GetMkDocument%2A> Implementierung und Unterstützung Namenssuche (einschließlich spezielle Dateien) über seine <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A> Implementierung.|  
+|Text-format|X|X|Wenn möglich, sollten die Dateien im Text-Format unterstützt das Zusammenführen mit unterschiedlichen Versionen sein. Dateien, die nicht im Text-Format können nicht mit anderen Versionen der Datei später zusammengeführt werden. Die bevorzugten Textformat ist XML.|  
+|Anhand von verweisen|X||Verweisbasierten Projekten werden sofort in der quellcodeverwaltung unterstützt. Directory-basierte Projekte werden jedoch auch von Datenquellen-Steuerelement unterstützt, solange das Projekt werden, eine Liste der Dateien bei Bedarf erstellt kann, unabhängig davon, ob diese Dateien auf dem Datenträger vorhanden sind. Wenn Sie ein Projekt aus der quellcodeverwaltung öffnen, wird die Projektdatei zuerst, bevor Sie eine der Dateien geschaltet.|  
+|Objekte und Eigenschaften in vorhersagbaren Reihenfolge beibehalten|X|X|Behalten Sie die Dateien in einer vorhersagbaren Reihenfolge, z. B. alphabetischer Reihenfolge an, um das Zusammenführen zu ermöglichen.|  
+|zum erneuten Laden|X|X|Wenn eine Datei ändert auf dem Datenträger, muss der Editor können sie erneut geladen. Wenn Sie in der quellcodeverwaltung teilnehmen, laden die Umgebung Daten für Sie durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> Implementierung. Die schwierigste Reload Groß-/Kleinschreibung wird beim Auschecken tritt auf, wenn Sie IVsQueryEditQuerySave aufgerufen haben::<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> und Informationen zu Verarbeitungsfehlern sind. Zum erneuten Laden Code muss in dieser Situation ausführen.<br /><br /> Die Umgebung lädt automatisch die Projektdateien. Allerdings muss ein Projekt implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2> sie geschachtelte geschachtelte Hierarchien, um erneuten Laden zu unterstützen Projektdateien.|  
   
-## Siehe auch  
- [Unterstützung von Datenquellen\-Steuerelement](../../extensibility/internals/supporting-source-control.md)
+## <a name="see-also"></a>Siehe auch  
+ [Unterstützen der Quellcodeverwaltung](../../extensibility/internals/supporting-source-control.md)

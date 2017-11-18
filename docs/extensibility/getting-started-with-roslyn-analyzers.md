@@ -1,38 +1,40 @@
 ---
-title: "Erste Schritte mit Roslyn-Analyzer | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Erste Schritte mit Roslyn-Analyzern | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 367c2ec8-3059-46a5-9d1c-57bead0419e7
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 962023733d2d746e0acb584e3dcbdc1a5e369012
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Erste Schritte mit Roslyn-Analyzer
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Mit live\-projektbasierte Code\-Analyzer in Visual Studio können die API\-Autoren domänenspezifische Codeanalyse als Teil ihrer NuGet\-Pakete ausgeliefert werden.  Da diese Analysen von .NET Compiler Platform \(mit dem Codenamen "Roslyn"\) unterstützt werden, können sie Warnungen in Ihrem Code erzeugen, während der Eingabe, bevor Sie die Zeile \(nicht mehr darauf warten, erstellen Sie den Code, um Probleme zu ermitteln\) abgeschlossen haben.  Analyzer können auch einen automatischen Codefix über Visual Studio\-Glühbirne gefragt werden, ob Sie sofort Bereinigen von Code können Oberfläche.  
+# <a name="getting-started-with-roslyn-analyzers"></a>Erste Schritte mit Roslyn-Analyzern
+Mit live-projektbasierten Code-Analyzer in Visual Studio können API Autoren domänenspezifische Codeanalyse in ihre NuGet-Pakete enthalten sind.  Da diese Analyzer durch die .NET Compiler Platform (mit dem Codenamen "Roslyn") unterstützt werden, können sie Warnungen in Ihrem Code erzeugen, während der Eingabe, bevor Sie die Zeile (nicht mehr wartet auf den Code zum Ermitteln von Problemen zu erstellen) abgeschlossen haben.  Analysen können auch über die Visual Studio Glühbirne Eingabeaufforderung, um Ihnen das Bereinigen von Code ermöglichen, sofort eine automatische Codekorrektur Oberfläche.  
   
-## Erste Schritte  
- [Live\-Codeanalysemodule Roslyn Einführung und exemplarische Vorgehensweise](https://msdn.microsoft.com/en-us/magazine/dn879356.aspx)  
+## <a name="getting-started"></a>Erste Schritte  
+ [Roslyn Live Code-Analyzer – Einführung und exemplarische Vorgehensweise](https://msdn.microsoft.com/en-us/magazine/dn879356.aspx)  
   
- [Code, exemplarische Vorgehensweise behebt hinzufügen: Geben Sie Benutzer Korrekturen für Analyzer Probleme](https://msdn.microsoft.com/en-us/magazine/dn904670.aspx)  
+ [Hinzufügen, Dass Code Walkthrough behebt: Geben Sie Benutzer Korrekturen für Analyzer-Probleme](https://msdn.microsoft.com/en-us/magazine/dn904670.aspx)  
   
- [Einführung und exemplarische Vorgehensweise der realen Welt Analyzer sprechen](http://channel9.msdn.com/events/Build/2015/3-725)  
+ [Einführung und exemplarische Vorgehensweise der realen Welt Analyzer Talk](http://channel9.msdn.com/events/Build/2015/3-725)  
   
- [Praktische Roslyn\-Analyzer](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md) das Sie können auch überwachen, wie eine [sprechen](http://channel9.msdn.com/events/Build/2015/3-725)  
+ [Real World Roslyn Analyzer](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md) , die Sie können außerdem sehen Sie sich als ein [sprechen](http://channel9.msdn.com/events/Build/2015/3-725)  
   
- [Einige Beispiele für Github, gruppiert nach drei Arten von Analysen](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)  
+ [Beispielen auf Github, die in drei Arten von Analysen gruppiert](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)  
   
- [Einführung und Überblick über einige Analysen zu kommunizieren.](http://channel9.msdn.com/Events/dotnetConf/2015/NET-Compiler-Platform-Roslyn-Analyzers-and-the-Rise-of-Code-Aware-Libraries)  
+ [Einführung und Überblick über einige Analysen zu sprechen.](http://channel9.msdn.com/Events/dotnetConf/2015/NET-Compiler-Platform-Roslyn-Analyzers-and-the-Rise-of-Code-Aware-Libraries)  
   
-## Weitere Ressourcen  
- [Weitere Dokumentationen auf der Github OSS\-Website](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)  
+## <a name="other-resources"></a>Weitere Ressourcen  
+ [Weitere Dokumente auf Github OSS-Website](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)  
   
- [FxCop\-Regeln, die mit Roslyn\-Analyzer auf Github implementiert](https://github.com/dotnet/roslyn/tree/master/src/Diagnostics/FxCop)
+ [Implementiert mit Roslyn-Analyzer auf Github FxCop-Regeln](https://github.com/dotnet/roslyn/tree/master/src/Diagnostics/FxCop)

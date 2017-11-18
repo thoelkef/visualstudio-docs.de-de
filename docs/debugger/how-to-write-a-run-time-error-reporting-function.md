@@ -1,40 +1,38 @@
 ---
-title: "Gewusst wie: Schreiben einer Berichtsfunktion f&#252;r Laufzeitfehler | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Berichtsfunktion"
-  - "Laufzeitfehler, Berichtsfunktionen"
+title: 'Vorgehensweise: Schreiben einer Berichtsfunktion Laufzeitfehler | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+- JScript
+helpviewer_keywords:
+- run-time errors, reporting functions
+- reporting function
 ms.assetid: 989bf312-5038-44f3-805f-39a34d18760e
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 4d140606382367d5968871f65034db619fb9325e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Schreiben einer Berichtsfunktion f&#252;r Laufzeitfehler
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Eine benutzerdefinierte Berichtsfunktion für Laufzeitfehler muss die gleiche Deklaration wie `_CrtDbgReportW` aufweisen.  Die Funktion muss den Wert 1 an den Debugger zurückgeben.  
+# <a name="how-to-write-a-run-time-error-reporting-function"></a>Gewusst wie: Schreiben einer Berichtsfunktion für Laufzeitfehler
+Eine benutzerdefinierte Berichtsfunktion für Laufzeitfehler muss die gleiche Deklaration wie `_CrtDbgReportW` aufweisen. Die Funktion muss den Wert 1 an den Debugger zurückgeben.  
   
  Im folgenden Beispiel wird das Definieren einer benutzerdefinierten Berichtsfunktion dargestellt.  
   
-## Beispiel  
+## <a name="example"></a>Beispiel  
   
 ```  
 #include <stdio.h>  
@@ -65,8 +63,8 @@ int MyErrorFunc(int errorType, const wchar_t *filename,
 }  
 ```  
   
-## Beispiel  
- Im folgenden Beispiel wird eine komplexere benutzerdefinierte Berichtsfunktion dargestellt.  In diesem Beispiel behandelt die `switch`\-Anweisung entsprechend der Definition durch den `reportType`\-Parameter von `_CrtDbgReportW` verschiedene Fehlertypen.  Da Sie `_CrtDbgReportW` ersetzen, können Sie `_CrtSetReportMode` nicht verwenden.  Die Funktion muss die Ausgabe behandeln.  Das erste Variablenargument in dieser Funktion nimmt eine Laufzeitfehlernummer an.  Weitere Informationen finden Sie unter [\_RTC\_SetErrorType](/visual-cpp/c-runtime-library/reference/rtc-seterrortype).  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel wird eine komplexere benutzerdefinierte Berichtsfunktion dargestellt. In diesem Beispiel behandelt die `reportType`-Anweisung entsprechend der Definition durch den `_CrtDbgReportW`-Parameter von  verschiedene Fehlertypen. Da Sie `_CrtDbgReportW` ersetzen, können Sie `_CrtSetReportMode` nicht verwenden. Die Funktion muss die Ausgabe behandeln. Das erste Variablenargument in dieser Funktion nimmt eine Laufzeitfehlernummer an. Weitere Informationen finden Sie unter [_RTC_SetErrorType](/cpp/c-runtime-library/reference/rtc-seterrortype).  
   
 ```  
 #include <windows.h>  
@@ -110,8 +108,8 @@ int Catch_RTC_Failure(int errType, const wchar_t *file, int line,
 #pragma runtime_checks("", restore)  
 ```  
   
-## Beispiel  
- Um anstelle von `_CrtDbgReportW` die benutzerdefinierte Funktion zu installieren, verwenden Sie `_RTC_SetErrorFuncW`.  Weitere Informationen finden Sie unter [\_RTC\_SetErrorFuncW](/visual-cpp/c-runtime-library/reference/rtc-seterrorfuncw).  Der Rückgabewert von `_RTC_SetErrorFuncW` ist die vorherige Berichtsfunktion, die Sie bei Bedarf speichern und wiederherstellen können.  
+## <a name="example"></a>Beispiel  
+ Um anstelle von `_RTC_SetErrorFuncW` die benutzerdefinierte Funktion zu installieren, verwenden Sie `_CrtDbgReportW`. Weitere Informationen finden Sie unter [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw). Der Rückgabewert von `_RTC_SetErrorFuncW` ist die vorherige Berichtsfunktion, die Sie bei Bedarf speichern und wiederherstellen können.  
   
 ```  
 #include <rtcapi.h>  
@@ -126,5 +124,5 @@ int main()
 }  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Anpassen der systemeigenen Laufzeitüberprüfung](../debugger/native-run-time-checks-customization.md)

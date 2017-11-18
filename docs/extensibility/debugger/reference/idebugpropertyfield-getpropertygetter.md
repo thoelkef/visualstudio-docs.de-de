@@ -1,53 +1,53 @@
 ---
-title: "IDebugPropertyField::GetPropertyGetter | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPropertyField::GetPropertyGetter"
-helpviewer_keywords: 
-  - "IDebugPropertyField::GetPropertyGetter-Methode"
+title: IDebugPropertyField::GetPropertyGetter | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugPropertyField::GetPropertyGetter
+helpviewer_keywords: IDebugPropertyField::GetPropertyGetter method
 ms.assetid: ab9f861a-42ad-4a82-9ae6-2606176f755a
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 41754cbd9ddbf5864db12ad777c2c93fbee0da7b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPropertyField::GetPropertyGetter
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft die Methode ab, mit der die Eigenschaft abgerufen werden soll.  
+# <a name="idebugpropertyfieldgetpropertygetter"></a>IDebugPropertyField::GetPropertyGetter
+Ruft die Methode ab, die die Eigenschaft abruft.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetPropertyGetter(   
-   IDebugMethodField** ppField  
+```cpp  
+HRESULT GetPropertyGetter(   
+   IDebugMethodField** ppField  
 );  
 ```  
   
-```cpp#  
+```cpp  
 int GetPropertyGetter(  
-   out IDebugMethodField ppField  
+   out IDebugMethodField ppField  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `ppField`  
- \[out\]  Gibt ein [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)\-Objekt zurück, das die Methode darstellt, für die die Eigenschaft abgerufen werden soll.  
+ [out] Gibt eine [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) Objekt, das die Methode, die die Eigenschaft ruft darstellt.  
   
-## Rückgabewert  
- Bei Erfolg gibt S\_OK zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Um die Methode abrufen, die die Eigenschaft festlegt, [GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md) Aufruf der Methode.  
+## <a name="remarks"></a>Hinweise  
+ Zum Abrufen der Methode, die die Eigenschaft festlegt [GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md) rufen Sie die Methode.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md)   
  [GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md)   
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

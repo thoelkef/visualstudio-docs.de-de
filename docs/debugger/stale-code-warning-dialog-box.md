@@ -1,41 +1,40 @@
 ---
-title: "Dialogfeld &quot;Warnung: Veralteter Code&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.ENC.stalecode"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Warnung: Veralteter Code (Dialogfeld)"
-  - "Code, „Warnung: Veralteter Code“"
-  - "Warnungen, Warnung: Veralteter Code (Dialogfeld)"
-  - "Bearbeiten und Fortfahren, veralteter Code"
+title: Veralteter Code Warndialogfeld | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.ENC.stalecode
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- Stale Code Warning dialog box
+- code, stale code warning
+- warnings, Stale Code Warning dialog box
+- Edit and Continue, stale code
 ms.assetid: 594b894c-e652-4e13-a980-9909473d5712
-caps.latest.revision: 13
-caps.handback.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 54ff550719f1b0bbea12f3b64b49fc9792f63ee6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Dialogfeld &quot;Warnung: Veralteter Code&quot;
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Dieses Dialogfeld wird angezeigt, wenn Sie Änderungen an systemeigenem Code vorgenommen haben, die von der **Bearbeiten und Fortfahren**\-Funktion nicht sofort übernommen werden konnten.  Dadurch ist ein Teil des systemeigenen Codes im aktuellen Stapelrahmen nicht mehr aktuell \(veraltet\).  Weitere Informationen finden Sie unter [How to: Work with Stale Code](http://msdn.microsoft.com/de-de/c7536e95-66a6-44a0-995d-3fe5035250b4).  
+# <a name="stale-code-warning-dialog-box"></a>Warnung: Veralteter Code (Dialogfeld)
+Dieses Dialogfeld wird angezeigt, wenn Sie vorgenommen haben Änderungen an systemeigenem code, der **bearbeiten und Fortfahren** konnte nicht sofort übernommen werden. Dadurch ist ein Teil des nativen Codes im aktuellen Stapelrahmen nicht mehr aktuell (veraltet). Weitere Informationen finden Sie unter [Vorgehensweise: Arbeiten mit veraltetem Code](http://msdn.microsoft.com/en-us/c7536e95-66a6-44a0-995d-3fe5035250b4).  
   
  **Dieses Dialogfeld nicht mehr anzeigen**  
- Wenn Sie dieses Kontrollkästchen aktivieren, werden Codeänderungen zukünftig ohne Rückfrage von "Bearbeiten und Fortfahren" übernommen.  Sie können diese Warnung erneut aktivieren, indem Sie im Dialogfeld **Optionen** den Ordner **Debuggen** öffnen, auf die Seite **Bearbeiten und Fortfahren** klicken und die Option **Warnung bei veraltetem Code** auswählen.  
+ Wenn Sie dieses Kontrollkästchen aktivieren, werden Codeänderungen zukünftig ohne Rückfrage von "Bearbeiten und Fortfahren" übernommen. Sie können diese Warnung erneut aktivieren möchten die **Optionen** (Dialogfeld), öffnen die **Debuggen** Ordner, auf die **bearbeiten und Fortfahren** Seite, und wählen Sie **Warnung bei veraltetem Code**.  
   
-## Siehe auch  
- [Unterstützte Codeänderungen und \-einschränkungen \(C\+\+\)](../debugger/supported-code-changes-cpp.md)   
- [Bearbeiten und Fortfahren, Debuggen, Dialogfeld "Optionen"](../Topic/Edit%20and%20Continue,%20Debugging,%20Options%20Dialog%20Box.md)
+## <a name="see-also"></a>Siehe auch  
+ [Unterstützte Codeänderungen (C++)](../debugger/supported-code-changes-cpp.md)   
+ [Bearbeiten Sie und fortfahren Sie, Debuggen, Optionen (Dialogfeld)](http://msdn.microsoft.com/Library/009d225f-ef65-463f-a146-e4c518f86103)

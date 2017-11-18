@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugDocumentTextEvents2
-helpviewer_keywords:
-- IDebugDocumentTextEvents2 interface
+f1_keywords: IDebugDocumentTextEvents2
+helpviewer_keywords: IDebugDocumentTextEvents2 interface
 ms.assetid: a10cbb6b-11a8-4056-b42a-2ecebf0e690d
-caps.latest.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 242c15cc456c3a27ba7b7da45a11031b026c02d3
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: bd875edda076035d5c243fc4bfe83dceda61ac42
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugdocumenttextevents2"></a>IDebugDocumentTextEvents2
 Diese Schnittstelle wird verwendet, um Visual Studio zu Änderungen an das Quelldokument zu benachrichtigen, die durch die Debugging-Modul bereitgestellt werden.  
@@ -49,7 +33,7 @@ IDebugDocumentTextEvents2 : IUnknown
  DE implementiert diese Schnittstelle, um dadurch Änderungen auf den Quellcode zu unterstützen. Diese Schnittstelle wird in der Regel implementiert, auf das gleiche Objekt, implementiert die [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) Schnittstelle.  
   
 ## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]Ruft diese Schnittstelle über einen Aufruf der <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A>-Methode.</xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A> Die <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>Schnittstelle wird abgerufen, von einem Aufruf der <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.EnumConnectionPoints%2A>Methode.</xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.EnumConnectionPoints%2A> </xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> Die <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>Schnittstelle durch den Aufruf abgerufen wird die [QueryInterface](/cpp/atl/queryinterface) Methode auf eine [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) Schnittstelle.</xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>  
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]Ruft diese Schnittstelle über einen Aufruf der <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A> Methode. Die <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> Schnittstelle wird abgerufen, von einem Aufruf der <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.EnumConnectionPoints%2A> Methode. Die <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> Schnittstelle durch den Aufruf abgerufen wird die [QueryInterface](/cpp/atl/queryinterface) Methode auf eine [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) Schnittstelle.  
   
 ## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
  Die folgende Tabelle zeigt die Methoden der `IDebugDocumentTextEvents2`.  

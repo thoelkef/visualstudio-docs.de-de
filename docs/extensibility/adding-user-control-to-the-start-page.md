@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,29 +12,15 @@ helpviewer_keywords:
 - custom start page
 - start page assembly
 ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
-caps.latest.revision: 16
+caps.latest.revision: "16"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 16be8f494b5e8709244568afeb654ae02ca85899
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: ed511fa58ca0d98d38ed2ab1ed3bc24bed642170
-ms.contentlocale: de-de
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Hinzufügen des Benutzersteuerelements an die Startseite
 In dieser exemplarischen Vorgehensweise wird gezeigt, wie einen DLL-Verweis auf eine benutzerdefinierte Startseite hinzufügen. Im Beispiel wird ein Benutzersteuerelement der Lösung auf das Benutzersteuerelement erstellt und anschließend verweist auf die erstellte Assembly aus der Startseite auf XAML-Datei hinzugefügt. Eine neue Registerkarte hostet das Benutzersteuerelement, das Funktionen, wie eine grundlegende Webbrowser.  
@@ -190,7 +175,7 @@ In dieser exemplarischen Vorgehensweise wird gezeigt, wie einen DLL-Verweis auf 
   
 ## <a name="testing-a-manually-created-custom-start-page"></a>Testen einer manuell erstellten benutzerdefinierten Startseite  
   
-1.  Kopieren der XAML-Datei, und alle unterstützenden Textdateien oder Markup, zu der **%USERPROFILE%\My Dateien\Visual Studio 2015\StartPages\\ ** Ordner.  
+1.  Kopieren der XAML-Datei, und alle unterstützenden Textdateien oder Markup, zu der **%USERPROFILE%\My Dateien\Visual Studio 2015\StartPages\\**  Ordner.  
   
 2.  Wenn Ihre Startseite verweist auf keine Steuerelemente oder die Typen in Assemblys, die von Visual Studio nicht installiert sind, kopieren Sie die Assemblys, und fügen Sie diese in *Visual Studio-Installationsordner***\Common7\IDE\ PrivateAssemblies\\**.  
   

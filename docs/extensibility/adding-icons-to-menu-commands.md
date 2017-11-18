@@ -1,51 +1,53 @@
 ---
-title: "Hinzuf&#252;gen von Symbolen zu Men&#252;befehlen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Symbole [Visual Studio], hinzufügen zu Symbolleisten"
-  - "Symbolleisten [Visual Studio], Hinzufügen von Symbolen zu Befehlen"
-  - "Befehle [Visual Studio], Hinzufügen von Symbolen"
+title: "Hinzufügen von Symbolen zu Menübefehlen | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- icons [Visual Studio], adding to toolbars
+- toolbars [Visual Studio], adding icons to commands
+- commands [Visual Studio], adding icons
 ms.assetid: 362a0c7e-5729-4297-a83f-1aba1a37fd44
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 1cdf521228a1878fa94343418bd6a182f9707a2b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Hinzuf&#252;gen von Symbolen zu Men&#252;befehlen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Befehle können in Menüs und Symbolleisten angezeigt werden. Auf Symbolleisten ist es üblich, für einen Befehl mit nur einem Symbol \(um Speicherplatz zu sparen\) und in Menüs angezeigt werden, dass ein Befehl in der Regel mit einem Symbol und der Text angezeigt wird.  
+# <a name="adding-icons-to-menu-commands"></a>Hinzufügen von Symbolen zu Menübefehlen
+Befehle können in Menüs oder Symbolleisten angezeigt werden. Auf der Symbolleiste wird häufig für einen Befehl mit nur einem Symbol (um Platz zu sparen) beim in Menüs angezeigt werden, dass ein Befehl in der Regel mit einem Symbol und der Text angezeigt.  
   
- Symbole sind 16 Pixel breit und 16 Pixel hoch und 8\-Bit\-Farbtiefe \(256 Farben\) oder 32\-Bit\-Farbtiefe \(true Color\) sein können. 32\-Bit\-Farbsymbole werden bevorzugt. Symbole sind normalerweise in einer einzelnen horizontalen Zeile in einer einzelnen Bitmap, angeordnet, obwohl mehrere Bitmaps zulässig sind. Diese Bitmap ist in der VSCT\-Datei sowie die einzelnen Symbole in der Bitmap verfügbar deklariert. Finden Sie in der Referenz für die [Bitmaps\-Element](../extensibility/bitmaps-element.md) für weitere Details.  
+ Symbole sind 16 Pixel breit und 16 Pixel hoch und eine 8-Bit-Farbtiefe (256 Farben) oder 32-Bit-Farbtiefe ("true" Farbe). 32-Bit-Farbsymbole werden bevorzugt. Symbole sind normalerweise in einer einzelnen horizontalen Reihe in eine einzelne Bitmap angeordnet, obwohl mehrere Bitmaps zulässig sind. Diese Bitmap wird in der VSCT-Datei zusammen mit die einzelnen Symbole in der Bitmap verfügbar deklariert. Finden Sie in der Referenz für die [Bitmaps Element](../extensibility/bitmaps-element.md) Weitere Details.  
   
-## Hinzufügen eines Symbols zu einem Befehl  
- Das folgende Verfahren wird davon ausgegangen, dass Sie ein vorhandenes VSPackage\-Projekt mit einem Menübefehl verfügen. Informationen hierzu finden Sie unter [Erstellen eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).  
+## <a name="adding-an-icon-to-a-command"></a>Ein Symbol hinzufügen für einen Befehl  
+ Das folgende Verfahren wird davon ausgegangen, dass Sie ein vorhandenes VSPackage-Projekt mit einem Menübefehl verfügen. Informationen hierzu finden Sie unter [erstellen eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-1.  Erstellen einer Bitmap mit einer Farbtiefe von 32 Bits. Ein Symbol ist immer 16 x 16, sodass diese Bitmap 16 Pixel hoch sein muss und ein Vielfaches von 16 Pixel breit.  
+1.  Erstellen Sie eine Bitmap mit einer Farbtiefe von 32-Bit. Ein Symbol ist immer 16 x 16, sodass diese Bitmap 16 Pixel hoch sein muss und ein Vielfaches von 16 Pixel breit.  
   
-     Jedes Symbol wird in der Bitmap nebeneinander in einer einzelnen Zeile platziert. Verwenden Sie den alpha\-Kanal, um Positionen in der Transparenz in jedes Symbol anzugeben.  
+     Jedes Symbol wird auf die Bitmap nebeneinander in einer einzelnen Zeile platziert. Verwenden Sie den alpha-Kanal, um Positionen in der Transparenz in jedes Symbol anzuzeigen.  
   
-     Wenn Sie eine Farbtiefe von 8\-Bit verwenden, verwenden Sie Magenta, `RGB(255,0,255)`, wie die Transparenz. Allerdings werden die 32\-Bit\-Farbsymbole bevorzugt.  
+     Wenn Sie eine 8-Bit-Farbtiefe verwenden, verwenden Sie Magenta `RGB(255,0,255)`, als die Transparenz. Allerdings werden die 32-Bit-Farbsymbole bevorzugt.  
   
-2.  Kopieren Sie die Symboldatei für das Ressourcenverzeichnis in VSPackage\-Projekt. Fügen Sie im Projektmappen\-Explorer das Symbol zum Projekt hinzu. \(Wählen Sie Ressourcen aus, und klicken Sie im Kontextmenü auf Hinzufügen, und klicken Sie dann auf Vorhandenes Element, und wählen Sie die Symboldatei.\)  
+2.  Kopieren Sie die Symboldatei, zu dem Verzeichnis "Resources" in Ihrem VSPackage-Projekt. Fügen Sie im Projektmappen-Explorer das Symbol zum Projekt hinzu. (Wählen Sie Ressourcen aus, und klicken Sie im Kontextmenü auf Hinzufügen, und klicken Sie dann auf Vorhandenes Element, und wählen Sie die Symboldatei.)  
   
-3.  Öffnen Sie die VSCT\-Datei im Editor.  
+3.  Öffnen Sie die VSCT-Datei im Editor.  
   
-4.  Hinzufügen einer `GuidSymbol` Element mit dem Namen **TestIcon**. Erstellen Sie eine GUID \(**Extras \/ erstellen GUID**, und wählen Sie dann **Registrierungsformat** und klicken Sie auf Kopieren\), und fügen Sie ihn in die `value` Attribut. Das Ergebnis sollte wie folgt aussehen:  
+4.  Hinzufügen einer `GuidSymbol` Element mit dem Namen **TestIcon**. Erstellen Sie eine GUID (**Extras / erstellen GUID**, und wählen Sie dann **Registrierungsformat** , und klicken Sie auf Kopieren), und fügen Sie ihn in die `value` Attribut. Das Ergebnis sollte wie folgt aussehen:  
   
     ```xml  
     <!-- Create your own GUID -->  
     <GuidSymbol name="testIcon" value="{00000000-0000-0000-0000-0000}">  
     ```  
   
-5.  Hinzufügen einer `<IDSymbol>` für das Symbol. Das `name` \-Attribut ist das Symbol\-ID und die `value` Gibt die Position auf der Leiste an, ob alle. Wenn nur ein Symbol vorhanden ist, fügen Sie 1 hinzu. Das Ergebnis sollte wie folgt aussehen:  
+5.  Hinzufügen einer `<IDSymbol>` für das Symbol. Die `name` Attribut ist das Symbol-ID und die `value` seiner Position auf der Leiste zeigt an, sofern vorhanden. Wenn nur ein Symbol vorhanden ist, fügen Sie 1 hinzu. Das Ergebnis sollte wie folgt aussehen:  
   
     ```xml  
     <!-- Create your own GUID -->  
@@ -54,21 +56,21 @@ Befehle können in Menüs und Symbolleisten angezeigt werden. Auf Symbolleisten 
     </GuidSymbol>  
     ```  
   
-6.  Erstellen einer `<Bitmap>` in der `<Bitmaps>` \-Abschnitt der VSCT\-Datei zur Darstellung der Bitmap, die die Symbole enthält.  
+6.  Erstellen einer `<Bitmap>` in die `<Bitmaps>` Abschnitt der VSCT-Datei zum Darstellen der Bitmap, die die Symbole enthält.  
   
-    -   Festlegen der `guid` Wert, der den Namen der `<GuidSymbol>` Element, die Sie im vorherigen Schritt erstellt haben.  
+    -   Legen Sie die `guid` Wert, der den Namen des der `<GuidSymbol>` Element, die Sie im vorherigen Schritt erstellt haben.  
   
-    -   Festlegen der `href` Wert, der den relativen Pfad der Bitmap\-Datei \(in diesem Fall **Ressourcen\\ \< Symboldateinamen \>**.  
+    -   Legen Sie die `href` Wert, der den relativen Pfad der Bitmapdatei mithilfe einer (in diesem Fall **Ressourcen\\< Dateiname des Symbols\>**.  
   
-    -   Festlegen der `usedList` Wert, der die IDSymbol, die Sie zuvor erstellt haben. Dieses Attribut gibt eine durch Kommas getrennte Liste der Symbole in das VSPackage verwendet werden. Die Symbole nicht in der Liste sind ausgeschlossene Formularkompilierung.  
+    -   Legen Sie die `usedList` Wert, der die IDSymbol, die Sie zuvor erstellt haben. Dieses Attribut gibt eine durch Trennzeichen getrennte Liste der Symbole im VSPackage verwendet werden. Ausgeschlossene Formularkompilierung werden die Symbole nicht in der Liste.  
   
-         Die Bitmap\-Block sollte wie folgt aussehen:  
+         Die Bitmap-Block sollte wie folgt aussehen:  
   
         ```xml  
         <Bitmap guid="testIcon" href="Resources\<icon file name>" usedList="testIcon1"/>  
         ```  
   
-7.  In der vorhandenen `<Button>` \-Element die `Icon` Element an die GUIDSymbol und IDSymbol\-Werte, die Sie zuvor erstellt haben. Hier ist ein Beispiel für ein Button\-Element mit diesen Werten:  
+7.  In der vorhandenen `<Button>` -Elementgruppe, die `Icon` Element auf die GUIDSymbol und IDSymbol-Werte, die Sie zuvor erstellt haben. Hier ist ein Beispiel für ein Button-Element mit diesen Werten:  
   
     ```xml  
     <Button guid="guidAddIconCmdSet" id="cmdidMyCommand" priority="0x0100" type="Button">  
@@ -80,8 +82,8 @@ Befehle können in Menüs und Symbolleisten angezeigt werden. Auf Symbolleisten 
     </Button>  
     ```  
   
-8.  Testen Sie das Symbol. Erstellen Sie das Projekt, und starten Sie das Debugging. Suchen Sie in der experimentellen Instanz den Befehl. Es sollte dem Symbol angezeigt werden, dass Sie hinzugefügt.  
+8.  Testen Sie das Symbol. Erstellen Sie das Projekt, und starten Sie das Debugging. Suchen Sie in der experimentellen Instanz den Befehl ein. Es sollte dem Symbol angezeigt werden, dass Sie hinzugefügt.  
   
-## Siehe auch  
- [Erweitern von Menüs und Befehlen](../extensibility/extending-menus-and-commands.md)   
- [VSCT XML\-Schemareferenz](../extensibility/vsct-xml-schema-reference.md)
+## <a name="see-also"></a>Siehe auch  
+ [Erweitern von Menüs und Befehle](../extensibility/extending-menus-and-commands.md)   
+ [VSCT-XML-Schemareferenz](../extensibility/vsct-xml-schema-reference.md)

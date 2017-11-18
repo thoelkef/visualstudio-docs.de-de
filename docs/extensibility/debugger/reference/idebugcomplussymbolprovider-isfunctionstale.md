@@ -1,51 +1,52 @@
 ---
-title: "IDebugComPlusSymbolProvider::IsFunctionStale | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugComPlusSymbolProvider::IsFunctionStale"
+title: IDebugComPlusSymbolProvider::IsFunctionStale | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugComPlusSymbolProvider::IsFunctionStale
 ms.assetid: dcffc090-4ed8-47b2-ba51-bce1a6b6428d
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 107eb5b3d33fcba0e06a015e2859342786cc7d2c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugComPlusSymbolProvider::IsFunctionStale
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Bestimmt, ob das Feature Debuggen an der angegebenen Adresse als veraltet betrachtet wird.  
+# <a name="idebugcomplussymbolproviderisfunctionstale"></a>IDebugComPlusSymbolProvider::IsFunctionStale
+Bestimmt, ob die Funktion bei der die angegebene Debug-Adresse als veraltet angesehen wird.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT IsFunctionStale(  
-   IDebugAddress* pAddress  
+   IDebugAddress* pAddress  
 );  
 ```  
   
-```c#  
+```csharp  
 int IsFunctionStale(  
-   IDebugAddress pAddress  
+   IDebugAddress pAddress  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pAddress`  
- \[in\]  Die Debuginformationen Adresse, die von einer [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)\-Schnittstelle dargestellt wird.  Diese Adresse muss ein METHOD\_ADDRESS sein.  
+ [in] Die Debug-Adresse, die durch dargestellt wird ein [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Schnittstelle. Diese Adresse muss eine METHOD_ADDRESS sein.  
   
-## Rückgabewert  
- Wenn die Funktion als veraltet betrachtet wird, gibt `S_OK`zurück.  Wenn die Funktion nicht veraltet ist, gibt `S_FALSE`zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Wenn die Funktion als veraltet angesehen wird, gibt `S_OK`. Wenn die Funktion nicht veraltet ist, gibt `S_FALSE`.  
   
-## Beispiel  
- Im folgenden Beispiel wird veranschaulicht, wie diese Methode für ein **CDebugSymbolProvider\-Objekt** implementiert, das die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)\-Schnittstelle verfügbar macht.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel veranschaulicht die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::IsFunctionStale(  
     IDebugAddress* pAddress  
 )  
@@ -89,5 +90,5 @@ Error:
 }  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

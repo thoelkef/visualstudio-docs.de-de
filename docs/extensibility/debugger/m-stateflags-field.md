@@ -1,52 +1,53 @@
 ---
-title: "M_stateFlags-Feld | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "M_stateFlags-Feld, Task-Klasse [Debugmodule [.NET Framework]"
+title: M_stateFlags Feld | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: m_stateFlags field, Task class [.NET Framework debug engines]
 ms.assetid: 82b20efc-08f2-4cd2-91f6-4e01e3da906b
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 624f9ef2f5cf2d44b565e8dd16c46938819a5df0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# M_stateFlags-Feld
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="mstateflags-field"></a>M_stateFlags Feld
 Speichert Informationen über den aktuellen Status des der <xref:System.Threading.Tasks.Task> Objekt.  
   
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Namespace:**<xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly:** Mscorlib \(in "mscorlib.dll"\)  
+ **Assembly:** "mscorlib" (in "mscorlib.dll")  
   
- Da Sie diesen internen Member von .NET Framework zugreifen können, wird die folgende Syntax gemeinsam Intermediate Language \(CIL\) bereitgestellt.  
+ Da dieses interne Member von .NET Framework zugegriffen werden kann, wird die folgende Syntax gemeinsame Intermediate Language (CIL) bereitgestellt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 .field assembly int32 modreq(System.Runtime.CompilerServices.IsVolatile) m_stateFlags  
 ```  
   
-## Hinweise  
- In der Regel die <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> \-Eigenschaft auf diesen Wert zugreifen.  
+## <a name="remarks"></a>Hinweise  
+ In der Regel die <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> Eigenschaft auf diesen Wert zugreifen.  
   
  Dieser Member kann eine beliebige Kombination der folgenden Werte sein:  
   
--   [TASK\_STATE\_EXECUTED](../../extensibility/debugger/task-state-executed-field.md)  
+-   [TASK_STATE_EXECUTED](../../extensibility/debugger/task-state-executed-field.md)  
   
--   [TASK\_STATE\_FAULTED](../../extensibility/debugger/task-state-faulted-field.md)  
+-   [TASK_STATE_FAULTED](../../extensibility/debugger/task-state-faulted-field.md)  
   
--   [TASK\_STATE\_CANCELED](../../extensibility/debugger/task-state-canceled-field.md)  
+-   [TASK_STATE_CANCELED](../../extensibility/debugger/task-state-canceled-field.md)  
   
--   [TASK\_STATE\_WAITING\_ON\_CHILDREN](../../extensibility/debugger/task-state-waiting-on-children-field.md)  
+-   [TASK_STATE_WAITING_ON_CHILDREN](../../extensibility/debugger/task-state-waiting-on-children-field.md)  
   
--   [TASK\_STATE\_RAN\_TO\_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)  
+-   [TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)  
   
-## Siehe auch  
- [Task\-Klasse](../../extensibility/debugger/task-class-internal-members.md)
+## <a name="see-also"></a>Siehe auch  
+ [Task-Klasse](../../extensibility/debugger/task-class-internal-members.md)

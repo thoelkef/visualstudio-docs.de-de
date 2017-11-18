@@ -1,31 +1,31 @@
 ---
-title: "Registerkarte &quot;Auslagerungsdatei&quot;, Dialogfeld &quot;Prozesseigenschaften&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Prozesseigenschaften für Windows NT"
+title: Registerkarte "Auslagerungsdatei", Prozess-Eigenschaftendialogfeld | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Process properties for Windows NT
 ms.assetid: daf41a06-8a55-48f6-95f5-49a8416bd308
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0bf5215e7a6d4c4a4a0dac37a9bde2b15fb8f19a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Registerkarte &quot;Auslagerungsdatei&quot;, Dialogfeld &quot;Prozesseigenschaften&quot;
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Verwenden Sie die Registerkarte **Auslagerungsdatei**, um die Auslagerungsdatei eines Prozesses zu untersuchen.  Um das Dialogfeld [Prozesseigenschaften](../debugger/process-properties-dialog-box.md) anzuzeigen, verschieben Sie den Fokus auf ein [Prozessansichtsfenster](../debugger/processes-view.md).  Wählen Sie in der Struktur einen Prozessknoten und dann **Eigenschaften** im Menü **Ansicht** aus.  
+# <a name="page-file-tab-process-properties-dialog-box"></a>Registerkarte "Auslagerungsdatei", Dialogfeld "Prozesseigenschaften"
+Verwenden der **Auslagerungsdatei** Tab, um die Auslagerungsdatei eines Prozesses zu untersuchen. Zum Anzeigen der [verarbeiten Eigenschaften (Dialogfeld)](../debugger/process-properties-dialog-box.md), Verschieben des Fokus auf ein [Prozessansicht](../debugger/processes-view.md) Fenster. Wählen Sie in der Struktur einen Prozessknoten aus, und wählen Sie dann **Eigenschaften** aus der **Ansicht** Menü.  
   
- Auf der Registerkarte **Auslagerungsdatei** sind die folgenden Einstellungen verfügbar:  
+ Die folgenden Einstellungen sind verfügbar, auf die **Auslagerungsdatei** Registerkarte:  
   
-|Eintrag|Beschreibung|  
-|-------------|------------------|  
-|**Bytes für Auslagerungsdatei**|Die aktuelle Anzahl von Seiten, die von dem Prozess in der Auslagerungsdatei verwendet werden.  In der Auslagerungsdatei werden Seiten von Daten gespeichert, die vom Prozess verwendet werden, jedoch nicht in anderen Dateien enthalten sind.  Die Auslagerungsdatei wird von allen Prozessen verwendet, und mangelnder Speicher in der Auslagerungsdatei kann Fehler während der Ausführung anderer Prozesse verursachen.|  
-|**Max. Bytes für Auslagerungsdatei**|Die maximale Anzahl von Seiten in der Auslagerungsdatei, die von dem Prozess verwendet wurden.|  
-|**Seitenfehler**|Die Anzahl der Seitenfehler durch die in dem Prozess ausgeführten Threads.  Ein Seitenfehler tritt auf, wenn ein Thread auf eine Seite des virtuellen Speichers verweist, die nicht im zugehörigen Workingset des Hauptspeichers enthalten ist.  Somit wird die Seite nicht vom Datenträger abgerufen, wenn sie in der Standbyliste aufgeführt wird und daher bereits im Hauptspeicher enthalten ist, oder wenn sie von einem anderen Prozess verwendet wird, für den die Seite freigegeben ist.|
+|Eingabe|Beschreibung|  
+|-----------|-----------------|  
+|**Auslagerungsdatei-Bytes**|Die aktuelle Anzahl der Seiten, die diesen Prozess in der Auslagerungsdatei verwendet wird. Die Auslagerungsdatei speichert Datenseiten vom Prozess verwendet wird, aber nicht in anderen Dateien enthalten. Die Auslagerungsdatei wird von allen Prozessen verwendet, und nicht genügend Speicherplatz in der Auslagerungsdatei kann zu Fehlern führen, während andere Prozesse ausgeführt werden.|  
+|**Peak Auslagerungsdatei Bytes**|Die maximale Anzahl der Seiten, die diesen Prozess in der Auslagerungsdatei verwendet hat.|  
+|**Seitenfehler**|Die Anzahl der Seitenfehler durch die in diesem Prozess ausgeführten Threads. Ein Seitenfehler tritt auf, wenn ein Thread auf eine virtuelle Speicherseite verweist, die nicht in seinem Arbeitssatz im Hauptspeicher befindet. Daher wird die Seite nicht vom Datenträger abgerufen, ist er auf der Standbyliste und somit bereits im Hauptspeicher befindet oder wenn sie durch eine andere verwendet wird verarbeitet, mit denen die Seite freigegeben ist.|

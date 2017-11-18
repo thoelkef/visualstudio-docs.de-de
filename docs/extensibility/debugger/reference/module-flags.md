@@ -1,84 +1,84 @@
 ---
-title: "MODULE_FLAGS | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "MODULE_FLAGS"
-helpviewer_keywords: 
-  - "MODULE_FLAGS-enumeration"
+title: MODULE_FLAGS | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: MODULE_FLAGS
+helpviewer_keywords: MODULE_FLAGS enumeration
 ms.assetid: 0e555b42-b846-4dbb-812e-8e3d11c85b2d
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: bd55076df559b83c4bf4f3ed98fdea0e8bfd423a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# MODULE_FLAGS
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Wird verwendet, um ein Modul zu beschreiben.  
+# <a name="moduleflags"></a>MODULE_FLAGS
+Dient zum Beschreiben eines Moduls.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-enum enum_MODULE_FLAGS {   
-   MODULE_FLAG_NONE        = 0x0000,  
-   MODULE_FLAG_SYSTEM      = 0x0001,  
-   MODULE_FLAG_SYMBOLS     = 0x0002,  
-   MODULE_FLAG_64BIT       = 0x0004,  
-   MODULE_FLAG_OPTIMIZED   = 0x0008,  
-   MODULE_FLAG_UNOPTIMIZED = 0x0010  
+```cpp  
+enum enum_MODULE_FLAGS {   
+   MODULE_FLAG_NONE        = 0x0000,  
+   MODULE_FLAG_SYSTEM      = 0x0001,  
+   MODULE_FLAG_SYMBOLS     = 0x0002,  
+   MODULE_FLAG_64BIT       = 0x0004,  
+   MODULE_FLAG_OPTIMIZED   = 0x0008,  
+   MODULE_FLAG_UNOPTIMIZED = 0x0010  
 };  
 typedef DWORD MODULE_FLAGS;  
 ```  
   
-```c#  
-public enum enum_MODULE_FLAGS {   
-   MODULE_FLAG_NONE        = 0x0000,  
-   MODULE_FLAG_SYSTEM      = 0x0001,  
-   MODULE_FLAG_SYMBOLS     = 0x0002,  
-   MODULE_FLAG_64BIT       = 0x0004,  
-   MODULE_FLAG_OPTIMIZED   = 0x0008,  
-   MODULE_FLAG_UNOPTIMIZED = 0x0010  
+```csharp  
+public enum enum_MODULE_FLAGS {   
+   MODULE_FLAG_NONE        = 0x0000,  
+   MODULE_FLAG_SYSTEM      = 0x0001,  
+   MODULE_FLAG_SYMBOLS     = 0x0002,  
+   MODULE_FLAG_64BIT       = 0x0004,  
+   MODULE_FLAG_OPTIMIZED   = 0x0008,  
+   MODULE_FLAG_UNOPTIMIZED = 0x0010  
 };  
 ```  
   
-## Mitglieder  
- MODULE\_FLAG\_NONE  
+## <a name="members"></a>Member  
+ MODULE_FLAG_NONE  
  Gibt kein Modul an.  
   
- MODULE\_FLAG\_SYSTEM  
- Gibt ein Modul System an.  
+ MODULE_FLAG_SYSTEM  
+ Gibt ein Systemmodul an.  
   
- MODULE\_FLAG\_SYMBOLS  
- Gibt ein Symbol Modul an.  
+ MODULE_FLAG_SYMBOLS  
+ Gibt ein Symbol-Modul an.  
   
- MODULE\_FLAG\_64BIT  
- Gibt ein 64\-Bit\-Modul an.  
+ MODULE_FLAG_64BIT  
+ Gibt einen 64-Bit-Modul an.  
   
- MODULE\_FLAG\_OPTIMIZED  
- Gibt das Modul optimiert ist.  Dieser Zustand wird im **Module** Fenster reflektiert.  
+ MODULE_FLAG_OPTIMIZED  
+ Gibt an, dass das Modul optimiert wurde. Dieser Status wird wiedergegeben, der **Module** Fenster.  
   
- MODULE\_FLAG\_UNOPTIMIZED  
- Gibt das Modul ist nicht optimiert wurde.  Dieser Zustand wird im **Module** Fenster reflektiert.  Dies ist der Standardzustand.  
+ MODULE_FLAG_UNOPTIMIZED  
+ Gibt an, dass das Modul nicht optimiert wurden. Dieser Status wird wiedergegeben, der **Module** Fenster. Dies ist der Standardzustand zurückgesetzt.  
   
-## Hinweise  
- Wird für den `m_dwModuleFlags`\-Member der [MODULE\_INFO](../../../extensibility/debugger/reference/module-info.md) Struktur.  
+## <a name="remarks"></a>Hinweise  
+ Verwendet für die `m_dwModuleFlags` Mitglied der [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) Struktur.  
   
- Diese Flags werden mit bitweisen `OR`kombiniert werden.  
+ Diese Flags können kombiniert werden, mit einem bitweisen `OR`.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [MODULE\_INFO](../../../extensibility/debugger/reference/module-info.md)
+ [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)

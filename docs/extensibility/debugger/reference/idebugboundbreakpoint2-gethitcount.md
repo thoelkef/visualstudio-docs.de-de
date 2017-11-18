@@ -1,53 +1,54 @@
 ---
-title: "IDebugBoundBreakpoint2::GetHitCount | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBoundBreakpoint2::GetHitCount"
-helpviewer_keywords: 
-  - "GetHitCount-Methode"
-  - "IDebugBoundBreakpoint2::GetHitCount-Methode"
+title: IDebugBoundBreakpoint2::GetHitCount | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugBoundBreakpoint2::GetHitCount
+helpviewer_keywords:
+- GetHitCount method
+- IDebugBoundBreakpoint2::GetHitCount method
 ms.assetid: 23481f37-047c-41d2-8286-4da1f4084961
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 5341a6c953a91d34f83421b620a7078a2250864d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugBoundBreakpoint2::GetHitCount
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft die aktuelle Trefferanzahl für diese Bindung Haltepunkt ab.  
+# <a name="idebugboundbreakpoint2gethitcount"></a>IDebugBoundBreakpoint2::GetHitCount
+Ruft die aktuelle Trefferanzahl für diese gebundenen Haltepunkt an.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetHitCount(   
-   DWORD* pdwHitCount  
+```cpp  
+HRESULT GetHitCount(   
+   DWORD* pdwHitCount  
 );  
 ```  
   
-```c#  
-int GetHitCount(   
-   out uint pdwHitCount  
+```csharp  
+int GetHitCount(   
+   out uint pdwHitCount  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pdwHitCount`  
- \[out\]  Gibt die Trefferanzahl zurück.  
+ [out] Gibt die Trefferanzahl zurück.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  Gibt `E_BP_DELETED` zurück, wenn sich der Zustand des Objekts `BPS_DELETED` gebundenen Haltepunkt festgelegt ist \(Teil der [BP\_STATE](../../../extensibility/debugger/reference/bp-state.md)\-Enumeration\).  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` , wenn der Zustand des Objekts gebundenen Haltepunkt, um festgelegt ist `BPS_DELETED` (Teil der [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) Enumeration).  
   
-## Hinweise  
- Die Trefferanzahl ist, wieoft dieser Haltepunkt während der aktuelle Reihe der Sitzung ausgelöst hat.  
+## <a name="remarks"></a>Hinweise  
+ Die Trefferanzahl ist die Anzahl der Häufigkeit, mit die dieser Haltepunkt bei der aktuellen Ausführung der Sitzung ausgelöst wurde.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
- [BP\_STATE](../../../extensibility/debugger/reference/bp-state.md)
+ [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

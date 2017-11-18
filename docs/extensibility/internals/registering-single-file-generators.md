@@ -1,30 +1,32 @@
 ---
-title: "Registrieren von Einzeldatei-Generatoren | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Benutzerdefinierte Tools-Registrierung"
-  - "Benutzerdefinierte Tools, definieren Einstellungen in der Registrierung"
+title: Einzeldatei-Generatoren zu registrieren | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- registration, custom tools
+- custom tools, defining registry settings
 ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
-caps.latest.revision: 16
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f9c75258f24ba86b1ff8d2f3fcd4a16cc4faf5c1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Registrieren von Einzeldatei-Generatoren
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ein benutzerdefiniertes Tool in zur Verfügung gestellt [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], Sie müssen ihn also registrieren [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] können instanziieren und einen bestimmten Projekttyp zugeordnet.  
+# <a name="registering-single-file-generators"></a>Registrieren von Einzeldatei-Generatoren
+Um ein benutzerdefiniertes Tool in verfügbar zu machen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], müssen Sie ihn so registrieren [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] können instanziiert und ordnet sie einen bestimmten Projekttyp.  
   
-### Registrieren Sie ein benutzerdefiniertes tool  
+### <a name="to-register-a-custom-tool"></a>So registrieren ein benutzerdefiniertes tool  
   
-1.  Registrieren Sie das benutzerdefinierte Tool DLL entweder in der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] lokale Registrierung oder in der Registrierung, unter HKEY\_CLASSES\_ROOT.  
+1.  Registrieren Sie das benutzerdefinierte Tool DLL entweder in die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] lokale Registrierung oder in der systemregistrierung unter HKEY_CLASSES_ROOT.  
   
      Hier ist z. B. die Registrierungsinformationen für das verwaltete MSDataSetGenerator benutzerdefinierte Tool, das im Lieferumfang [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]:  
   
@@ -37,24 +39,24 @@ Ein benutzerdefiniertes Tool in zur Verfügung gestellt [!INCLUDE[vsprvs](../../
     "Assembly"="Microsoft.VSDesigner, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a"  
     ```  
   
-2.  Erstellen Sie einen Registrierungsschlüssel in der gewünschten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Hive unter Generators\\*GUID* *GUID* ist die GUID vom Projektsystem der jeweilige Sprache oder vom Dienst definiert. Der Name des Schlüssels wird der programmgesteuerte Name des benutzerdefinierten Tools. Der benutzerdefinierte Tool Schlüssel hat die folgenden Werte:  
+2.  Erstellen Sie einen Registrierungsschlüssel in der gewünschten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Hive unter Generatoren\\*GUID* , in denen *GUID* ist die GUID, die vom Projektsystem der spezifischen Sprache oder vom Dienst definiert. Der Name des Schlüssels wird der programmgesteuerte Name des benutzerdefinierten Tools. Der Schlüssel des benutzerdefinierten Tools hat die folgenden Werte:  
   
-    -   \(Standard\)  
+    -   (Standard)  
   
-         Optional. Bietet eine benutzerfreundliche Beschreibung des benutzerdefinierten Tools. Dieser Parameter ist optional, jedoch empfohlen.  
+         Dies ist optional. Bietet eine benutzerfreundliche Beschreibung des benutzerdefinierten Tools. Dieser Parameter ist optional, jedoch empfohlen.  
   
     -   CLSID  
   
-         Erforderlich. Gibt den Bezeichner der COM\-Komponente, implementiert der Klassenbibliothek <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.  
+         Erforderlich. Gibt den Bezeichner der COM-Komponente, die implementiert der Klassenbibliothek <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.  
   
     -   GeneratesDesignTimeSource  
   
-         Erforderlich. Gibt an, ob Typen von Dateien, die von diesem benutzerdefinierten Tool visuellen Designern zur Verfügung gestellt werden. Der Wert dieses Parameters muss \(null\) 0 für Typen, die für visuelle Designer nicht verfügbar sind oder für Typen, die visuellen Designern zur Verfügung \(1\) 1 sein.  
+         Erforderlich. Gibt an, ob die Typen von Dateien, die von diesem benutzerdefinierten Tool visuellen Designern zur Verfügung gestellt werden. Der Wert dieses Parameters muss (0) NULL für Typen, die für visuelle Designer nicht verfügbar sind oder für Typen, die visuellen Designern zur Verfügung (1) 1 sein.  
   
     > [!NOTE]
-    >  Sie müssen das benutzerdefinierte Tool für jede Sprache einzeln registrieren, für die das benutzerdefinierte Tool verfügbar sein soll.  
+    >  Sie müssen das benutzerdefinierte Tool separat für jede Sprache registrieren, für die benutzerdefinierten Tools verfügbar sein soll.  
   
-     Zum Beispiel registriert die MSDataSetGenerator selbst einmal für jede Sprache:  
+     Zum Beispiel registriert der MSDataSetGenerator selbst einmal für jede Sprache:  
   
     ```  
     [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\Generators\{164b10b9-b200-11d0-8c61-00a0c91e29d5}\MSDataSetGenerator]  
@@ -73,9 +75,8 @@ Ein benutzerdefiniertes Tool in zur Verfügung gestellt [!INCLUDE[vsprvs](../../
     "GeneratesDesignTimeSource"=dword:00000001  
     ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>   
- [Implementieren von Einzeldatei\-Generatoren](../../extensibility/internals/implementing-single-file-generators.md)   
- [Ermitteln des Standardnamespaces eines Projekts](../../misc/determining-the-default-namespace-of-a-project.md)   
- [\-Typen für visuelle Designer verfügbar gemacht](../../extensibility/internals/exposing-types-to-visual-designers.md)   
- [Einführung in das BuildManager\-Objekt](http://msdn.microsoft.com/de-de/50080ec2-c1c9-412c-98ef-18d7f895e7fa)
+ [Implementieren von Einzeldatei Generatoren](../../extensibility/internals/implementing-single-file-generators.md)   
+ [Verfügbarmachen von Typen in visuellen Designern](../../extensibility/internals/exposing-types-to-visual-designers.md)   
+ [Einführung in das BuildManager-Objekt](http://msdn.microsoft.com/en-us/50080ec2-c1c9-412c-98ef-18d7f895e7fa)

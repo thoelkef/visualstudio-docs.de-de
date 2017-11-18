@@ -1,38 +1,38 @@
 ---
-title: "Registerkarte &quot;Allgemein&quot;, Dialogfeld &quot;Fenstereigenschaften&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Fenstereigenschaften (Dialogfeld), Registerkarte „Allgemein“"
+title: Registerkarte "Allgemein", Fenstereigenschaften (Dialogfeld) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Window Properties dialog box, General Tab
 ms.assetid: 19142c60-9b32-46ba-a556-b62fd77568c1
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5b26896ce119e49ec2d001a0b09bc7b563bd7cac
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Registerkarte &quot;Allgemein&quot;, Dialogfeld &quot;Fenstereigenschaften&quot;
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Verwenden Sie die Registerkarte **Allgemein**, um Informationen zum ausgewählten Fenster anzuzeigen.  Um das Dialogfeld [Fenstereigenschaften](../debugger/window-properties-dialog-box.md) anzuzeigen, verschieben Sie den Fokus auf das [Fensteransichtsfenster](../debugger/windows-view.md).  Wählen Sie in der Struktur einen Fensterknoten und dann **Eigenschaften** im Menü **Ansicht** aus.  
+# <a name="general-tab-window-properties-dialog-box"></a>Registerkarte "Allgemein", Dialogfeld "Fenstereigenschaften"
+Verwenden der **allgemeine** Registerkarte ", um Informationen über das ausgewählte Fenster anzuzeigen. Zum Anzeigen der [Fenstereigenschaften (Dialogfeld)](../debugger/window-properties-dialog-box.md), den Fokus auf die [Fensteransicht](../debugger/windows-view.md) Fenster. Wählen Sie einen beliebigen Knoten im Fenster in der Struktur aus, und wählen Sie dann **Eigenschaften** aus der **Ansicht** Menü.  
   
- Auf der Registerkarte **Allgemein** sind die folgenden Einstellungen verfügbar:  
+ Die folgenden Einstellungen sind verfügbar, auf die **allgemeine** Registerkarte:  
   
-|Eintrag|Beschreibung|  
-|-------------|------------------|  
-|**Fensterbeschriftung**|Der Text der Fensterbeschriftung oder Text in einem Fenster, wenn es sich um ein Steuerelement handelt.|  
-|**Fensterhandle**|Die eindeutige ID des Fensters.  Fensterhandlenummern werden wiederverwendet. Sie identifizieren ein Fenster nur während dessen Lebensdauer.|  
-|**Fensterprozedur**|Die virtuelle Adresse der Fensterprozedurfunktion für dieses Fenster.  Dieses Feld gibt auch an, ob das Fenster ein Unicode\-Fenster ist und ob es als Unterklasse definiert ist.|  
-|**Rechteck**|Das umschließende Rechteck für das Fenster.  Die Größe des Rechtecks wird ebenfalls angezeigt.  Die Einheiten sind Pixel in Bildschirmkoordinaten.|  
-|**Wiederherg. Rechteck**|Das umschließende Rechteck für das wiederhergestellte Fenster.  Die Größe des Rechtecks wird ebenfalls angezeigt.  "Wiederherg. Rechteck" unterscheidet sich nur von "Rechteck", wenn das Fenster maximiert oder minimiert wurde.  Die Einheiten sind Pixel in Bildschirmkoordinaten.|  
-|**Clientrechteck**|Das umschließende Rechteck für den Fensterclientbereich.  Die Größe des Rechtecks wird ebenfalls angezeigt.  Die Einheiten sind Pixel relativ zur linken oberen Ecke des Fensterclientbereichs.|  
-|**Instanzenhandle**|Das Instanzenhandle der Anwendung.  Instanzenhandles sind nicht eindeutig.|  
-|**"Steuerelement\-ID" oder "Menühandle"**|Wenn das angezeigte Fenster ein untergeordnetes Fenster ist, wird die Bezeichnung "Steuerelement\-ID" angezeigt.  "Steuerelement\-ID" ist eine ganze Zahl, die die Steuerelement\-ID des untergeordneten Fensters angibt.  Wenn das angezeigte Fenster kein untergeordnetes Fenster ist, wird die Bezeichnung "Menühandle" angezeigt.  "Menühandle" ist eine ganze Zahl, die das Handle des diesem Fenster zugeordneten Menüs angibt.|  
-|**Benutzerdaten**|Anwendungsspezifische Daten, die dieser Fensterstruktur zugeordnet sind.|  
-|**Fensterbytes**|Die Anzahl von zusätzlichen Bytes, die diesem Fenster zugeordnet sind.  Die Bedeutung dieser Bytes hängt von der Anwendung ab.  Erweitern Sie das Listenfeld, um die Bytewerte im DWORD\-Format anzuzeigen.|
+|Eingabe|Beschreibung|  
+|-----------|-----------------|  
+|**Fenstertitel**|Der Text in die fensterbeschriftung, oder in einem Fenster enthalten sind, wenn es sich um ein Steuerelement handelt.|  
+|**Das Fensterhandle**|Die eindeutige ID dieses Fensters. Fenster Nummern werden wiederverwendet. Identifizieren ein Fensters nur für die Lebensdauer des Fensters.|  
+|**Fensterprozedur**|Die virtuelle Adresse der Fensterprozedurfunktion für dieses Fenster. Dieses Feld zeigt auch an, ob dieses Fenster ein Unicode-Fenster ist, und gibt an, ob es als Unterklasse definiert ist.|  
+|**Rechteck**|Das umschließende Rechteck für das Fenster. Die Größe des Rechtecks wird ebenfalls angezeigt. Einheiten werden Pixel in Bildschirmkoordinaten.|  
+|**Wiederhergestellte Rect**|Das umschließende Rechteck für das wiederhergestellte Fenster. Die Größe des Rechtecks wird ebenfalls angezeigt. Wiederhergestellte Rect datenträgeren Rechteck aus, nur, wenn das Fenster maximiert oder minimiert wird. Einheiten werden Pixel in Bildschirmkoordinaten.|  
+|**Clientrechteck**|Das umschließende Rechteck für den Clientbereich des Fensters. Die Größe des Rechtecks wird ebenfalls angezeigt. Zeiten werden in Pixel relativ zur oberen linken Ecke des Fensterclientbereichs.|  
+|**Instanzhandle**|Der Instanzhandle der Anwendung. Instanzenhandles sind nicht eindeutig.|  
+|**Steuerelement-ID oder im Menü-Handle**|Wenn das angezeigte Fenster ein untergeordnetes Fenster ist, wird die Steuerelement-ID-Bezeichnung angezeigt. Steuerelement-ID ist eine ganze Zahl, die identifiziert dieses untergeordneten Fenster Steuerelement-ID. Wenn das angezeigte Fenster nicht um ein untergeordnetes Fenster ist, wird die Bezeichnung verarbeiten im Menü angezeigt. Menü-Handle ist eine ganze Zahl, die das Handle des Menüs, die diesem Fenster zugeordneten identifiziert.|  
+|**Benutzerdaten**|Anwendungsspezifische Daten, die diese Fensterstruktur angefügt ist.|  
+|**Fenster Bytes**|Die Anzahl der in diesem Fenster zugeordneten zusätzlichen Bytes. Die Bedeutung dieser Bytes wird von der Anwendung bestimmt. Erweitern Sie im Listenfeld aus, um die Bytewerte im DWORD-Format anzuzeigen.|

@@ -1,51 +1,51 @@
 ---
-title: "IDebugProgram2::GetName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgram2::GetName"
-helpviewer_keywords: 
-  - "IDebugProgram2::GetName"
+title: IDebugProgram2::GetName | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProgram2::GetName
+helpviewer_keywords: IDebugProgram2::GetName
 ms.assetid: a54cbf13-b3e3-4c9f-8b8d-13573232dfb0
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: bea739c8c2d62893422e46f3d75e2f12224f8d18
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgram2::GetName
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft den Namen des Programms ab.  
+# <a name="idebugprogram2getname"></a>IDebugProgram2::GetName
+Ruft den Namen des Programms.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetName(   
-   BSTR* pbstrName  
+```cpp  
+HRESULT GetName(   
+   BSTR* pbstrName  
 );  
 ```  
   
-```c#  
-int GetName(   
-   out string pbstrName  
+```csharp  
+int GetName(   
+   out string pbstrName  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pbstrName`  
- \[out\]  Gibt den Namen des Programms zurück.  
+ [out] Der Name des Programms zurückgegeben.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Der Name, der von dieser Methode zurückgegeben wird, ist immer ein benutzerfreundlicher, USER\-anzeigbarer Name, durch den das Programm beschreibt.  
+## <a name="remarks"></a>Hinweise  
+ Der Name, der von dieser Methode zurückgegebene ist immer einen Anzeigenamen, Benutzer angezeigten Namen, der die Anwendung beschreibt.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

@@ -1,58 +1,58 @@
 ---
-title: "IDebugStackFrame2::GetPhysicalStackRange | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugStackFrame2::GetPhysicalStackRange"
-helpviewer_keywords: 
-  - "IDebugStackFrame2::GetPhysicalStackRange"
+title: IDebugStackFrame2::GetPhysicalStackRange | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugStackFrame2::GetPhysicalStackRange
+helpviewer_keywords: IDebugStackFrame2::GetPhysicalStackRange
 ms.assetid: 2f6992e2-ac1c-433f-83b7-a7f83a4ce63d
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a2b57cc7b5959f82b5f02c4939d6645c30c1c706
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugStackFrame2::GetPhysicalStackRange
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft eine Darstellung des abhängigen MACHINE des Bereichs der physikalischen Adressen ab, die einem Stapelrahmen zugeordnet sind.  
+# <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
+Ruft eine rechnerabhängige Darstellung des Bereichs von physischen Adressen, die einen Stapelrahmen zugeordnet.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetPhysicalStackRange (   
-   UINT64* paddrMin,  
-   UINT64* paddrMax  
+```cpp  
+HRESULT GetPhysicalStackRange (   
+   UINT64* paddrMin,  
+   UINT64* paddrMax  
 );  
 ```  
   
-```c#  
-int GetPhysicalStackRange (   
-   out ulong paddrMin,  
-   out ulong paddrMax  
+```csharp  
+int GetPhysicalStackRange (   
+   out ulong paddrMin,  
+   out ulong paddrMax  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `paddrMin`  
- \[out\]  Gibt die niedrigste physische Adresse zurück, die diesem Stapelrahmen zugeordnet ist.  
+ [out] Gibt die niedrigste physischen Adresse dieses Stapelrahmens zugeordnet.  
   
  `paddrMax`  
- \[out\]  Gibt die höchste physische Adresse zurück, die diesem Stapelrahmen zugeordnet ist.  
+ [out] Gibt die höchste physischen Adresse dieses Stapelrahmens zugeordnet.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Die Informationen, die von dieser Methode zurückgegeben werden, werden vom Manager der Sitzung \(SDM Debuggen\) im Stapelrahmen zu sortieren.  
+## <a name="remarks"></a>Hinweise  
+ Die Informationen, die von dieser Methode zurückgegebene Sitzungs-Debug-Manager (SDM) wird von Stapelrahmen zu sortieren.  
   
- Es wird davon ausgegangen, dass die Aufrufliste unten wächst das heißt dass neue Stapelrahmen an den in zunehmendem Maße unteren Speicherorte hinzugefügt werden.  Eine Architektur der Laufzeit muss physischen Stapel Bereiche bereitstellen, die diese Annahme übereinstimmen.  
+ Es wird davon ausgegangen, dass die Aufrufliste nach unten, d. h. vergrößert wird, dass neue Stapelrahmen in zunehmend niedrigeren Speicheradressen hinzugefügt werden. Eine Laufzeit-Architektur muss physischen Stapel Bereiche angeben, die diese Annahme entsprechen.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

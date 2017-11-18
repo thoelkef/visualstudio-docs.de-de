@@ -1,56 +1,56 @@
 ---
-title: "IDebugEnumField::GetStringFromValue | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEnumField::GetStringFromValue"
-helpviewer_keywords: 
-  - "IDebugEnumField::GetStringFromValue-Methode"
+title: IDebugEnumField::GetStringFromValue | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugEnumField::GetStringFromValue
+helpviewer_keywords: IDebugEnumField::GetStringFromValue method
 ms.assetid: 5f95fd0c-fdce-497f-9f54-2ad8749494e9
-caps.latest.revision: 5
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ed010734ec09af01c4a7abe6f8ceab0a93fdb482
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugEnumField::GetStringFromValue
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Diese Methode ruft der Name aus dem angegebenen konstanten Wert der Enumeration handeln.  
+# <a name="idebugenumfieldgetstringfromvalue"></a>IDebugEnumField::GetStringFromValue
+Diese Methode ruft den Namen der Enumerationskonstante, dessen Wert zugewiesen.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetStringFromValue(  
-   ULONGLONG value,  
-   BSTR*     pbstrValue  
+   ULONGLONG value,  
+   BSTR*     pbstrValue  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetStringFromValue(  
-   ulong      value,  
-   out string pbstrValue  
+   ulong      value,  
+   out string pbstrValue  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `value`  
- \[in\]  Der Wert, der den Namen der Enumerationskonstante abruft.  
+ [in] Der Wert für den der Name der Enumeration Konstante abgerufen werden soll.  
   
  `pbstrValue`  
- \[out\]  Gibt den Namen der Enumerationskonstante zurück.  
+ [out] Der Name der Enumerationskonstante zurückgegeben.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. Andernfalls gibt `S_FALSE` , wenn der Wert über keinen zugeordneten Namen zurück oder gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` ist der Wert keinen zugeordneten Namen hat bzw. wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Wenn mehr als einen Namen vorhanden ist, der mit demselben Wert zugeordnet wird, wird der Vorname, der in der Enumeration definiert ist, zurückgegeben.  
+## <a name="remarks"></a>Hinweise  
+ Wenn mehr als einen Namen, die den gleichen Wert zugeordnet ist, wird der Vorname in der Enumeration definierten zurückgegeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

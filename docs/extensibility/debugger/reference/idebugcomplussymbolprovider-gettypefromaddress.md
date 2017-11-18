@@ -1,57 +1,59 @@
 ---
-title: "IDebugComPlusSymbolProvider::GetTypeFromAddress | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugComPlusSymbolProvider::GetTypeFromAddress"
-  - "GetTypeFromAddress"
+title: IDebugComPlusSymbolProvider::GetTypeFromAddress | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugComPlusSymbolProvider::GetTypeFromAddress
+- GetTypeFromAddress
 ms.assetid: 01f21ff9-e8a5-4e5f-9f7b-1b6de8b1432f
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d5045dd9061fc932c02c85a3e9b858ef33dd41fe
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugComPlusSymbolProvider::GetTypeFromAddress
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft den Typ des Symbols auf einen bestimmten Adresse Debuggen in Punkt ab oder legt diese fest.  
+# <a name="idebugcomplussymbolprovidergettypefromaddress"></a>IDebugComPlusSymbolProvider::GetTypeFromAddress
+Ruft ab, wenn seine Adresse Debug-Symboltyp.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetTypeFromAddress(  
-   IDebugAddress* pAddress,  
-   IDebugField**  ppField  
+   IDebugAddress* pAddress,  
+   IDebugField**  ppField  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetTypeFromAddress(  
-   IDebugAddress   pAddress,  
-   out IDebugField ppField  
+   IDebugAddress   pAddress,  
+   out IDebugField ppField  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pAddress`  
- \[in\]  Die Debuginformationen Adresse, die von einer [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)\-Schnittstelle dargestellt wird.  
+ [in] Die Debug-Adresse, die durch dargestellt wird ein [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) Schnittstelle.  
   
  `ppField`  
- \[out\]  Gibt den Arraytyp zurück, der durch eine [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)\-Schnittstelle dargestellt wird.  
+ [out] Gibt den Arraytyp zurück, dargestellt durch eine [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) Schnittstelle.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Beispiel  
- Im folgenden Beispiel wird veranschaulicht, wie diese Methode für ein **CDebugSymbolProvider\-Objekt** implementiert, das die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)\-Schnittstelle verfügbar macht.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel veranschaulicht die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::GetTypeFromAddress(  
     IDebugAddress *pAddress,  
     IDebugField **ppField)  
@@ -116,5 +118,5 @@ Error:
 }  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

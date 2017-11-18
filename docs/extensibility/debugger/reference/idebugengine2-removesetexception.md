@@ -1,54 +1,54 @@
 ---
-title: "IDebugEngine2::RemoveSetException | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngine2::RemoveSetException"
-helpviewer_keywords: 
-  - "IDebugEngine2::RemoveSetException"
+title: IDebugEngine2::RemoveSetException | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugEngine2::RemoveSetException
+helpviewer_keywords: IDebugEngine2::RemoveSetException
 ms.assetid: bdd25097-0e9d-4218-b417-0497ea48d2e8
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ba231a0545bc1e94e8cf793194efb27962d8e137
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugEngine2::RemoveSetException
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Entfernt die angegebene Ausnahme, sodass sie nicht mehr durch das Debugmodul behandelt.  
+# <a name="idebugengine2removesetexception"></a>IDebugEngine2::RemoveSetException
+Entfernt die angegebene Ausnahme an, sodass es nicht mehr durch die Debugging-Modul verarbeitet wird.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT RemoveSetException(   
-   EXCEPTION_INFO* pException  
+```cpp  
+HRESULT RemoveSetException(   
+   EXCEPTION_INFO* pException  
 );  
 ```  
   
-```c#  
-int RemoveSetException(   
-   EXCEPTION_INFO[] pException  
+```csharp  
+int RemoveSetException(   
+   EXCEPTION_INFO[] pException  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pException`  
- \[in\]  Eine [EXCEPTION\_INFO](../../../extensibility/debugger/reference/exception-info.md) Struktur, die die Ausnahme beschreibt, das entfernt werden soll.  
+ [in] Ein [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) -Struktur, die die Ausnahme zu entfernenden beschreibt.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Die Ausnahme, die entfernt wird, muss durch einen vorherigen Aufruf der [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)\-Methode bereits festgelegt worden sein.  
+## <a name="remarks"></a>Hinweise  
+ Die Ausnahme, die entfernt werden muss zuvor festgelegt wurden durch einen früheren Aufruf der [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) Methode.  
   
- Um alle festgelegten Ausnahmen sofort zu entfernen, rufen Sie die [RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md)\-Methode auf.  
+ Um alle Ausnahmen, die Menge gleichzeitig zu entfernen, rufen Sie die [RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md) Methode.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
- [EXCEPTION\_INFO](../../../extensibility/debugger/reference/exception-info.md)
+ [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)

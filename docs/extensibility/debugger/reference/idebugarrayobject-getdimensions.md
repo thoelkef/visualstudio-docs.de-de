@@ -1,56 +1,56 @@
 ---
-title: "IDebugArrayObject::GetDimensions | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugArrayObject::GetDimensions"
-helpviewer_keywords: 
-  - "IDebugArrayObject::GetDimensions-Methode"
+title: IDebugArrayObject::GetDimensions | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugArrayObject::GetDimensions
+helpviewer_keywords: IDebugArrayObject::GetDimensions method
 ms.assetid: 113e0aff-9028-49d6-b104-9fe7be4772d7
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d516032e458bcc0f85c73c75a9147ff53fc0fff2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugArrayObject::GetDimensions
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugarrayobjectgetdimensions"></a>IDebugArrayObject::GetDimensions
 Ruft die Dimensionen des Arrays ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetDimensions(   
-   DWORD dwCount,  
-   DWORD dwDimensions[]  
+```cpp  
+HRESULT GetDimensions(   
+   DWORD dwCount,  
+   DWORD dwDimensions[]  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetDimensions(  
-   [In] uint    dwCount,   
-   [Out] uint[] dwDimensions  
+   [In] uint    dwCount,   
+   [Out] uint[] dwDimensions  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `dwCount`  
- \[in\]  Die Anzahl der abzurufenden Dimensionen.  
+ [in] Die Anzahl der Dimensionen abgerufen.  
   
  `dwDimensions`  
- \[in, out\]  Ein Array, das die Größe jeder Dimension gefüllt wird.  `dwCount` gibt die maximale Größe des `dwDimensions` Arrays an.  
+ [in, out] Ein Array, das mit der Größe der einzelnen Dimensionen ausgefüllt ist. `dwCount`Gibt die maximale Größe der `dwDimensions` Array.  
   
-## Rückgabewert  
- Bei Erfolg gibt S\_OK zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Ein mehrdimensionales Array kann unterschiedliche Größen für jede Dimension aufweisen.  Beispielsweise würde das dreidimensionale Array `myarray[3][2][6]`diese Methode 3, 2 und 6 im `dwDimensions`\-Parameter in dieser Reihenfolge zurückgeben.  
+## <a name="remarks"></a>Hinweise  
+ Ein mehrdimensionales Array kann andere Größen für jede Dimension sein. Angenommen, das dreidimensionale Array `myarray[3][2][6]`, würde dieser Methode zurückgeben, 3, 2 und 6 in der `dwDimensions` Parameter in dieser Reihenfolge.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

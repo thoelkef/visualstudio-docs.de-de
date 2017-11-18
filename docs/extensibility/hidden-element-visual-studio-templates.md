@@ -1,61 +1,65 @@
 ---
-title: "Hidden-Element (Visual Studio-Vorlagen) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#Hidden"
-helpviewer_keywords: 
-  - "Hidden-Element [Visual Studio-Projektvorlage]"
+title: Ausgeblendet-Element (Visual Studio-Vorlagen) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#Hidden
+helpviewer_keywords: Hidden element [Visual Studio project template]
 ms.assetid: f37406b0-52e7-4f2c-aacf-bc8d7a4117b3
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b40343b3269a83854259cae80418a2c5154a78fd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Hidden-Element (Visual Studio-Vorlagen)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Gibt an, ob die Vorlage in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.  
+# <a name="hidden-element-visual-studio-templates"></a>Hidden-Element (Visual Studio-Vorlagen)
+Gibt an, ob die Vorlage angezeigt, entweder in wird der **neues Projekt** oder **neues Element hinzufügen** (Dialogfeld).  
   
-## Syntax  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<Ausgeblendet >  
+  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <Hidden> true/false </Hidden>  
 ```  
   
-## Attribute und Elemente  
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
-### Attribute  
+### <a name="attributes"></a>Attribute  
  Keine.  
   
-### Untergeordnete Elemente  
- Keine.  
+### <a name="child-elements"></a>Untergeordnete Elemente  
+ Keine  
   
-### Übergeordnete Elemente  
+### <a name="parent-elements"></a>Übergeordnete Elemente  
   
-|Element|Description|  
+|Element|Beschreibung|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|  
   
-## Textwert  
+## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich.  
   
- Der Text muss `true` oder `false` lauten. Dadurch wird angegeben, ob die Vorlage in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird oder nicht.  
+ Der Text muss entweder `true` oder `false`, wodurch angegeben wird, davon, ob die Vorlage angezeigt wird, in der **neues Projekt** oder **neues Element hinzufügen** Dialogfelder.  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
  `Hidden` ist ein optionales Element.  
   
- Falls angegeben, werden keine anderen untergeordneten Elemente des `TemplateData`\-Elements benötigt.  
+ Wenn angegeben, keine weiteren untergeordneten Elemente von der `TemplateData` Element sind erforderlich.  
   
-## Beispiel  
- Im folgenden Beispiel werden die Metadaten für eine Vorlage in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] veranschaulicht.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel werden die Metadaten für eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Vorlage veranschaulicht.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -82,6 +86,6 @@ Gibt an, ob die Vorlage in den Dialogfeldern **Neues Projekt** oder **Neues Elem
 </VSTemplate>  
 ```  
   
-## Siehe auch  
- [Schemareferenz zu Visual Studio\-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von benutzerdefinierten Projekt\- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>Siehe auch  
+ [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

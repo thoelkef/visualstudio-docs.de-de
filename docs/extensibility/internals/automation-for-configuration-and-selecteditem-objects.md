@@ -1,36 +1,38 @@
 ---
-title: "Automatisierung f&#252;r die Konfiguration und SelectedItem-Objekte | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Automatisierung [Visual Studio SDK] SelectedItem-Objekt"
-  - "Automatisierung [Visual Studio SDK] erstellt."
+title: "Automatisierung für die Konfiguration und \"SelectedItem\" Objekte | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- automation [Visual Studio SDK], SelectedItem object
+- automation [Visual Studio SDK], builds
 ms.assetid: 120377f1-51aa-4445-b2f7-06ab7fc2b47f
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 42a3b8bdd8930c9006ba49fd0f2e2dd2491b38cb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Automatisierung f&#252;r die Konfiguration und SelectedItem-Objekte
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Sie können die Erstellung und die ausgewählte Element in Serialisierungsprozessen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]automatisieren.  
+# <a name="automation-for-configuration-and-selecteditem-objects"></a>Automatisierung für die Konfiguration und "SelectedItem"-Objekte
+Können automatisiert werden, die Build- und ausgewählte Element Prozesse in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
-## Automatisierung für Builds  
- Build\- oder Konfiguration verfügt über ein Automatisierungsmodell, das bereitgestellt wird, wenn Sie <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider>implementieren.  Weitere Informationen finden Sie unter [Grundlagen der Buildkonfiguration](../../ide/understanding-build-configurations.md).  
+## <a name="automation-for-builds"></a>Automatisierung für Builds  
+ Erstellung oder Konfiguration verfügt über ein Automatisierungsmodell, das bereitgestellt wird, bei der Implementierung <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider>. Weitere Informationen finden Sie unter [Grundlagen der Buildkonfiguration](../../ide/understanding-build-configurations.md).  
   
- Wenn Sie ein VSPackage erstellen und zu den Optionen konfigurations Steuerelements möchten, müssen Sie das Automatisierungsmodell verwenden.  
+ Wenn Sie eine VSPackage erstellen und Konfigurationsoptionen steuern möchten, müssen Sie das Automatisierungsmodell verwenden.  
   
-## Automatisierung für SelectedItem  
- Sie müssen eine Implementierung nicht für das `SelectedItem`\-Objekt bereitstellen, da Visual Studio eine Standardimplementierung enthält.  Sie können jedoch das `SelectedItem`\-Objekt implementieren, wenn Sie es vorziehen.  Sie müssen ein Objekt implementieren, das die `SelectedItem`\-Schnittstelle enthält, und geben eine Antwort zu einem Aufruf der <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A>\-Methode mit VSITEMID zurück, das <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>festgelegt ist.  
+## <a name="automation-for-selecteditem"></a>Automatisierung für "SelectedItem"  
+ Sie müssen keine Geben Sie eine Implementierung für die `SelectedItem` Objekt, da Visual Studio eine standard-Implementierung enthält. Sie können jedoch implementieren die `SelectedItem` Objekt, falls gewünscht. Müssen Sie ein Objekt, das enthält implementieren die `SelectedItem` -Schnittstelle und eine Antwort auf einen Aufruf der <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> mit VSITEMID festgelegt ist, <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A>   
  [Das Automatisierungsmodell beitragen.](../../extensibility/internals/contributing-to-the-automation-model.md)   
  [Grundlagen der Buildkonfiguration](../../ide/understanding-build-configurations.md)

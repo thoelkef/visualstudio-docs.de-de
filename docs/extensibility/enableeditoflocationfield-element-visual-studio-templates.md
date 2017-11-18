@@ -1,59 +1,64 @@
 ---
-title: "EnableEditOfLocationField-Element (Visual Studio-Vorlagen) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "EnableEditOfLocationField (Visual Studio-Projektvorlagen)"
+title: EnableEditOfLocationField-Element (Visual Studio-Vorlagen) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: EnableEditOfLocationField (Visual Studio project templates)
 ms.assetid: 51a91963-8a3f-4741-928e-bc90c11473bb
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 99916d3affa41d90c9fcfb912e2d3f94c743d87c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# EnableEditOfLocationField-Element (Visual Studio-Vorlagen)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="enableeditoflocationfield-element-visual-studio-templates"></a>EnableEditOfLocationField-Element (Visual Studio-Vorlagen)
 Gibt an, ob der Benutzer das Feld "Speicherort" bearbeiten kann.  
   
-## Syntax  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<EnableEditOfLocationField >  
+  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <EnableEditOfLocationField> true/false </EnableEditOfLocationField>  
 ```  
   
-## Attribute und Elemente  
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
-### Attribute  
- Kein  
+### <a name="attributes"></a>Attribute  
+ Keine  
   
-### Untergeordnete Elemente  
- Kein  
+### <a name="child-elements"></a>Untergeordnete Elemente  
+ Keine  
   
-### Übergeordnete Elemente  
+### <a name="parent-elements"></a>Übergeordnete Elemente  
   
 |Element|Beschreibung|  
-|-------------|------------------|  
+|-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Erforderliches Element.<br /><br /> Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|  
   
-## Textwert  
+## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich.  
   
- Der Text muss entweder `true` oder `false` lauten. Dadurch wird angegeben, ob der Benutzer das Textfeld **Speicherort** im Dialogfeld **Neues Projekt** bearbeiten kann oder nicht.  
+ Der Text muss entweder `true` oder `false`, wodurch angegeben wird, davon, ob der Benutzer nicht bearbeiten kann die **Speicherort** Textfeld auf die **neues Projekt** (Dialogfeld).  
   
-## Hinweise  
- `EnableEditOfLocationField` ist ein optionales Element.  Der Standardwert ist `true`, dadurch kann der Benutzer den Wert im Textfeld **Speicherort** im Dialogfeld **Neues Projekt** bearbeiten.  
+## <a name="remarks"></a>Hinweise  
+ `EnableEditOfLocationField` ist ein optionales Element. Der Standardwert ist `true`, dadurch kann der Benutzer so bearbeiten Sie den Wert in der **Speicherort** Textfeld in der **neues Projekt** (Dialogfeld).  
   
- Im Dialogfeld **Neues Projekt** wird durch das Textfeld **Speicherort** das Verzeichnis angegeben, in dem neue Projekte gespeichert werden.  
+ In der **neues Projekt** (Dialogfeld), die **Speicherort** Textfeld gibt das Verzeichnis, in dem ein neues Projekt gespeichert ist.  
   
-## Beispiel  
- Im folgenden Beispiel werden die Metadaten für eine Windows\-Anwendung in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] veranschaulicht.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel werden die Metadaten für eine Windows-Anwendung in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] veranschaulicht.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -81,6 +86,6 @@ Gibt an, ob der Benutzer das Feld "Speicherort" bearbeiten kann.
 </VSTemplate>  
 ```  
   
-## Siehe auch  
- [Schemareferenz zu Visual Studio\-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von benutzerdefinierten Projekt\- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>Siehe auch  
+ [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

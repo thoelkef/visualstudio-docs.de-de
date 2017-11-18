@@ -1,37 +1,38 @@
 ---
-title: "Automatisierte f&#252;r Code | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "CodeModel-Objekt"
+title: "Bereitstellen von Automation für Code | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: CodeModel object
 ms.assetid: 21cb3e63-f25c-404b-bc1d-a32ad0fdd4d5
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: aa1c2fa5d0da738057e59cdac007c499a834bc0a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Automatisierte f&#252;r Code
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ein Automatisierungsmodell für das Schreiben von Code ist nicht erforderlich.  Das Umgebungs\-SDK stellt ein Beispiel hierfür nicht zur Verfügung.  Für Einblicke in Codemodelle finden Sie unter <xref:EnvDTE.CodeModel>\-Objekt.  
+# <a name="providing-automation-for-code"></a>Bereitstellen von Automation für Code
+Erstellen ein Automatisierungsmodell für Ihren Code ist nicht erforderlich. Das SDK-Umgebung bietet kein Beispiel hierfür. Einblick in Codemodelle, finden Sie unter der <xref:EnvDTE.CodeModel> Objekt.  
   
- Um ein Codemodell zu implementieren, müssen Sie alle Schnittstellen implementieren die von der internen Datenstruktur ermittelt werden.  Die Objekte müssen in der `IDispatch`Klasse abgeleitet sein.  
+ Um ein Codemodell zu implementieren, müssen Sie keine Schnittstellen implementieren, die von der internen Datenstruktur bestimmt werden. Die Objekte aus abgeleitet werden die `IDispatch` Klasse.  
   
- Die Objekte, die Sie erweitern, <xref:EnvDTE.CodeModel> und <xref:EnvDTE.FileCodeModel>, sind vom <xref:EnvDTE.Project>\-Objekt verfügbar und sehen wie folgt aus:  
+ Die Objekte, die Sie erweitern, <xref:EnvDTE.CodeModel> und <xref:EnvDTE.FileCodeModel>, stehen über die <xref:EnvDTE.Project> -Objekt, und wie folgt aussehen:  
   
  <xref:EnvDTE.Project.CodeModel%2A>  
   
  <xref:EnvDTE.ProjectItem.FileCodeModel%2A>  
   
- Sie können wählen, um nur `CodeModel` oder die `FileCodeModel`\-Schnittstelle im Objekt zu implementieren, auf die Sie von den `Project` und <xref:EnvDTE.ProjectItem>\-Objekte zurückgeben.  Stellen Sie jede beliebige Funktionalität von dieser Schnittstelle bereit, die für das Projektsystem geeignet ist.  
+ Sie können festlegen, ob die implementieren nur die `CodeModel` oder die `FileCodeModel` Schnittstelle im zurückgegebenen Objekt Ihre `Project` und <xref:EnvDTE.ProjectItem> Objekte. Geben Sie keine Funktionen aus dieser Schnittstelle, die für Ihr Projektsystem geeignet ist.  
   
- Wenn Sie Funktionen hinzufügen möchten, wie Methoden oder Eigenschaften, die nicht standardmäßiger `CodeModel` und `FileCodeModel`\-Schnittstellen verfügbar sind, erstellen Sie besitzen Schnittstelle, die vom Standardwert erbt.  Stellen Sie dem Dokument er mit dem Projektsystem sicher, sodass Endbenutzer bekannt sein, um im Anschluss zu suchen.  Sie geben die Standardschnittstelle zurück, aber der Benutzer kann die `QueryInterface`\-Methode oder eine Umwandlung in die Schnittstelle aufrufen, sofern bekannt, um vorhanden sind.  
+ Wenn Sie Funktionen wie Methoden oder Eigenschaften, hinzufügen möchten, die stehen nicht vom Standard `CodeModel` und `FileCodeModel` Schnittstellen, erstellen Sie eine eigene Schnittstelle, die vom Standard erbt. Achten Sie darauf, dass Sie mit Ihrem Projektsystem zu dokumentieren, und Endbenutzer vertraut sind, um dafür zu suchen. Sie geben die standard-Schnittstelle zurück, aber der Benutzer kann das Aufrufen der `QueryInterface` -Methode oder Cast auf Ihre Schnittstelle, wenn es bekannt ist, vorhanden sein.  
   
-## Siehe auch  
- [Übersicht über die Benutzeroberflächenautomatisierungs\-Modell](../../extensibility/internals/automation-model-overview.md)
+## <a name="see-also"></a>Siehe auch  
+ [Übersicht über das Automatisierungsmodell](../../extensibility/internals/automation-model-overview.md)

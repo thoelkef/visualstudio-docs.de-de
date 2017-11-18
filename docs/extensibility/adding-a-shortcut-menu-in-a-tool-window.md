@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,29 +13,15 @@ helpviewer_keywords:
 - shortcut menus, adding to tool windows
 - tool windows, adding context menus
 ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
-caps.latest.revision: 37
+caps.latest.revision: "37"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 81e944d73ae45de1a786a6df27652949a38eec81
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 661e31f32f176e48ea69ae92f23ecdde7911456b
-ms.contentlocale: de-de
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>Hinzufügen eines Kontextmenüs in einem Toolfenster
 In dieser exemplarischen Vorgehensweise wird ein Kontextmenü in einem Toolfenster. Ein Kontextmenü ist ein Menü, das angezeigt wird, wenn ein Benutzer eine Schaltfläche, das Textfeld oder Fenster im Hintergrund klickt. Befehle im Kontextmenü Verhalten sich wie die Befehle in anderen Menüs oder Symbolleisten. Um ein Kontextmenü zu unterstützen, geben sie in der VSCT-Datei, und zeigen Sie es als Reaktion auf der rechten Maustaste.  

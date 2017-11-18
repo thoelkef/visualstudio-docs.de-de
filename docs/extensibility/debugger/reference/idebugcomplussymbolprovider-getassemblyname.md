@@ -1,64 +1,66 @@
 ---
-title: "IDebugComPlusSymbolProvider::GetAssemblyName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugComPlusSymbolProvider::GetAssemblyName"
-  - "GetAssemblyName"
+title: IDebugComPlusSymbolProvider::GetAssemblyName | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugComPlusSymbolProvider::GetAssemblyName
+- GetAssemblyName
 ms.assetid: a08cd609-b9b9-47bd-bf73-cbf851285907
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 7fd4239f3cad937354ebbba2b5a28fc5e5006724
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugComPlusSymbolProvider::GetAssemblyName
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft den Namen der angegebenen Assembly sein Modul und Anwendungsdomäne ab.  
+# <a name="idebugcomplussymbolprovidergetassemblyname"></a>IDebugComPlusSymbolProvider::GetAssemblyName
+Ruft den Namen der Assembly bei Angabe seiner Domäne Modul- und Anwendungsdomänennamen ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 [C++]  
 HRESULT GetAssemblyName(  
-   ULONG32 ulAppDomainID,  
-   GUID    guidModule,  
-   BSTR*   pbstrName  
+   ULONG32 ulAppDomainID,  
+   GUID    guidModule,  
+   BSTR*   pbstrName  
 );  
 ```  
   
 ```  
 [C#]  
 int GetAssemblyName(  
-   uint   ulAppDomainID,  
-   Guid   guidModule,  
-   string pbstrName  
+   uint   ulAppDomainID,  
+   Guid   guidModule,  
+   string pbstrName  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `ulAppDomainID`  
- \[in\]  Bezeichner der Anwendungsdomäne.  
+ [in] Der Bezeichner für die Anwendungsdomäne.  
   
  `guidModule`  
- \[in\]  Eindeutiger Bezeichner für das Modul.  
+ [in] Eindeutiger Bezeichner für das Modul.  
   
  `pbstrName`  
- \[out\]  Gibt den Namen der Assembly zurück.  
+ [out] Gibt den Namen der Assembly zurück.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Beispiel  
- Im folgenden Beispiel wird veranschaulicht, wie diese Methode für ein **CDebugSymbolProvider\-Objekt** implementiert, das die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)\-Schnittstelle verfügbar macht.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel veranschaulicht die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::GetAssemblyName(  
     ULONG32 ulAppDomainID,  
     GUID guidModule,  
@@ -84,5 +86,5 @@ Error:
 }  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

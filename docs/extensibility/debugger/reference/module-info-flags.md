@@ -1,57 +1,57 @@
 ---
-title: "MODULE_INFO_FLAGS | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "MODULE_INFO_FLAGS"
-helpviewer_keywords: 
-  - "MODULE_INFO_FLAGS-enumeration"
+title: MODULE_INFO_FLAGS | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: MODULE_INFO_FLAGS
+helpviewer_keywords: MODULE_INFO_FLAGS enumeration
 ms.assetid: e22d3723-b4d4-4524-8a2f-3adb55bbd273
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 37c607089b548486e1df23f64f60d45f37f23978
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# MODULE_INFO_FLAGS
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Gibt den Zustand von Symbolen für ein Modul an.  
+# <a name="moduleinfoflags"></a>MODULE_INFO_FLAGS
+Gibt den Status der Symbole für ein Modul.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_MODULE_INFO_FLAGS {  
-   MIF_SYMBOLS_LOADED = 0x0001  
+   MIF_SYMBOLS_LOADED = 0x0001  
 };  
 typedef DWORD MODULE_INFO_FLAGS;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_MODULE_INFO_FLAGS {  
-   MIF_SYMBOLS_LOADED = 0x0001  
+   MIF_SYMBOLS_LOADED = 0x0001  
 };  
 ```  
   
-## Mitglieder  
- MIF\_SYMBOLS\_LOADED  
- Mindestens eine Reihe von Symbolen wurde durch das Modul geladen wurden \(andernfalls keine Symbole geladen.\)  
+## <a name="members"></a>Member  
+ MIF_SYMBOLS_LOADED  
+ Mindestens ein Satz von Symbolen durch das Modul geladen wurde (andernfalls keine Symbole geladen wurden).  
   
-## Hinweise  
- Dieser Wert wird von der [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)\-Methode zurückgegeben.  
+## <a name="remarks"></a>Hinweise  
+ Dieser Wert wird zurückgegeben, durch die [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) Methode.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)

@@ -1,40 +1,42 @@
 ---
-title: "Erweitern von Benutzereinstellungen und Optionen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Benutzereinstellungen"
-  - "benutzereinstellungen [Visual Studio SDK]"
-  - "Optionen (Dialogfeld), mit dem Visual Studio SDK steuern"
-  - "VSPackages, Voreinstellungen des Benutzers"
+title: Erweitern von Benutzereinstellungen und Optionen | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- user preferences
+- user settings [Visual Studio SDK]
+- Options dialog box, controlling with the Visual Studio SDK
+- VSPackages, user preferences
 ms.assetid: 5bb6277a-8c9d-48c8-9b4e-1cb3052caded
-caps.latest.revision: 22
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 22
+caps.latest.revision: "22"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e8378114348e2cb384ab88c83e36bafc7294d871
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Erweitern von Benutzereinstellungen und Optionen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Es gibt zwei Hauptmethoden, die Pflege der benutzereinstellungen, in Visual Studio. Die **Extras \/ Optionen** Seiten können Benutzer ihre eigenen Werte für viele verschiedene Arten von Einstellungen, die sowohl allgemeine als auch sprachspezifische festlegen. Benutzer können Benutzer allgemeine Visual Studio\-Konfigurationseigenschaften angeben. Weitere Informationen zu Optionen \(Seiten\), finden Sie unter [Optionen und Optionen \(Seiten\)](../extensibility/internals/options-and-options-pages.md). Weitere Informationen zu den benutzereinstellungen finden Sie unter [Unterstützung für Benutzereinstellungen](../extensibility/internals/support-for-user-settings.md).  
+# <a name="extending-user-settings-and-options"></a>Erweitern von Benutzereinstellungen und Optionen
+Sind in Visual Studio gibt es zwei Hauptmethoden, um die Pflege der benutzereinstellungen. Die **Extras / Optionen** Seiten können Benutzer ihre eigenen Werte für viele verschiedene Arten von Einstellungen, die sowohl allgemeine als auch sprachspezifische festlegen. Benutzereinstellungen ermöglichen Benutzern die Angabe der allgemeine Eigenschaften für die Konfiguration von Visual Studio. Weitere Informationen zu Optionsseiten finden Sie unter [Optionen und Seiten für Optionen](../extensibility/internals/options-and-options-pages.md). Weitere Informationen zu den benutzereinstellungen finden Sie unter [Unterstützung für Benutzereinstellungen](../extensibility/internals/support-for-user-settings.md).  
   
- [Erstellen eine Optionsseite](../extensibility/creating-an-options-page.md)  
- Erstellen Sie eine Optionsseite erläutert.  
+ [Erstellen einer Optionsseite](../extensibility/creating-an-options-page.md)  
+ Erläutert das Erstellen einer Optionsseite.  
   
  [Erstellen einer Einstellungskategorie](../extensibility/creating-a-settings-category.md)  
- Erstellen von Einstellungskategorie erläutert.  
+ Erläutert das Erstellen einer Einstellungskategorie.  
   
- [Verwenden die Einstellungen speichern](../extensibility/using-the-settings-store.md)  
- Erläutert, wie die Einstellungen speichern.  
+ [Verwenden des Einstellungsspeichers](../extensibility/using-the-settings-store.md)  
+ Erklärt, wie die Einstellungen speichern.  
   
- [Abrufen von Dienstinformationen aus dem Speicher\-Einstellungen](../extensibility/getting-service-information-from-the-settings-store.md)  
- Erläutert, wie die verfügbaren Dienste aus dem einstellungsspeicher abgerufen.  
+ [Abrufen von Dienstinformationen aus dem Einstellungsspeicher](../extensibility/getting-service-information-from-the-settings-store.md)  
+ Erläutert die verfügbaren Dienste aus dem Store Einstellungen zu erhalten.  
   
- [Das Schreiben in die Benutzereinstellungsspeicher](../extensibility/writing-to-the-user-settings-store.md)  
- Erläutert, wie zum Schreiben in den Speicher des Benutzers Einstellungen.
+ [Schreiben in den Speicher für Benutzereinstellungen](../extensibility/writing-to-the-user-settings-store.md)  
+ Erläutert das Schreiben in den Speicher des Benutzers Einstellungen.

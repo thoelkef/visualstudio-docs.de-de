@@ -1,57 +1,57 @@
 ---
-title: "IDebugDocument2::GetName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDocument2::GetName"
-helpviewer_keywords: 
-  - "IDebugDocument2::GetName"
+title: IDebugDocument2::GetName | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugDocument2::GetName
+helpviewer_keywords: IDebugDocument2::GetName
 ms.assetid: 6f09ff09-b0cf-4472-8fc8-143991f0ceb1
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 717a1eb794e3712427d6b905851c32796c3865c5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugDocument2::GetName
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft den Namen des Dokuments in einem von mehreren Formularen ab.  
+# <a name="idebugdocument2getname"></a>IDebugDocument2::GetName
+Ruft den Namen des Dokuments in einer der verschiedenen Formen ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetName(   
-   GETNAME_TYPE gnType,  
-   BSTR*        pbstrFileName  
+```cpp  
+HRESULT GetName(   
+   GETNAME_TYPE gnType,  
+   BSTR*        pbstrFileName  
 );  
 ```  
   
-```c#  
-int GetName(   
-   enum_GETNAME_TYPE gnType,  
-   out string        pbstrFileName  
+```csharp  
+int GetName(   
+   enum_GETNAME_TYPE gnType,  
+   out string        pbstrFileName  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `gnType`  
- \[in\]  Ein Wert aus der [GETNAME\_TYPE](../../../extensibility/debugger/reference/getname-type.md)\-Enumeration, der den Typ des Titels bestimmt, die zurückgegeben werden soll.  
+ [in] Ein Wert aus der [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) -Enumeration, der den Typ des zurückzugebenden Namen bestimmt.  
   
  `pbstrFileName`  
- \[out\]  Gibt eine Zeichenfolge zurück, die den Dokumentnamen enthält.  
+ [out] Gibt eine Zeichenfolge, die den Namen des Dokuments enthält.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Diese Methode kann den Namen des Dokuments als Name oder als Dateiname oder sogar Teil eines Dateinamens zurückgeben, z.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode kann, z. B. den Namen des Dokuments als einen Titel oder einen Dateinamen oder sogar Teil eines Dateinamens zurück.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)   
- [GETNAME\_TYPE](../../../extensibility/debugger/reference/getname-type.md)
+ [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)

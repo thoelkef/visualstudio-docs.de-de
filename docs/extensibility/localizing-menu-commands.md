@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -16,29 +15,15 @@ helpviewer_keywords:
 - localize visual studio
 - localize vsct
 ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 586f087e4c0cbd087bd06d7dc54a524b09ae21c3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 13910907c6041884cc0a1414fd0bfd82757a7639
-ms.contentlocale: de-de
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="localizing-menu-commands"></a>Lokalisieren von Menübefehlen
 Können Sie lokalisierte Text angeben, für die Menüs und Symbolleiste Befehle durch Erstellen von lokalisierten VSCT-Dateien und RESX-Dateien für Ihr VSPackage, und klicken Sie dann die Projektdateien aktualisieren die Änderungen einzubeziehen lokalisiert.  
@@ -52,11 +37,11 @@ Können Sie lokalisierte Text angeben, für die Menüs und Symbolleiste Befehle 
   
 2.  Erstellen Sie eine Kopie der *Filename*.en-US.vsct für jede lokalisierte Sprache.  
   
-     Benennen Sie jede Kopie *Filename*.* Gebietsschema*VSCT, wobei *Gebietsschema* ist der Name für eine bestimmte Kultur. Eine Liste der Namenswerte Kultur, finden Sie unter [von Microsoft zugewiesene Gebietsschema-IDs](https://msdn.microsoft.com/en-us/library/windows/apps/jj657969.aspx).  
+     Benennen Sie jede Kopie *Filename*. *Gebietsschema*VSCT, wobei *Gebietsschema* ist der Name für eine bestimmte Kultur. Eine Liste der Namenswerte Kultur, finden Sie unter [von Microsoft zugewiesene Gebietsschema-IDs](https://msdn.microsoft.com/en-us/library/windows/apps/jj657969.aspx).  
   
-     Diese *Filename*.* Gebietsschema*VSCT-Dateien enthält die lokalisierten Menütext für Ihr Paket.  
+     Diese *Filename*. *Gebietsschema*VSCT-Dateien enthält die lokalisierten Menütext für Ihr Paket.  
   
-3.  Öffnen der einzelnen *Filename*.* Gebietsschema*VSCT-Datei zum Lokalisieren von Text.  
+3.  Öffnen der einzelnen *Filename*. *Gebietsschema*VSCT-Datei zum Lokalisieren von Text.  
   
     1.  Ändern der [ButtonText](../extensibility/buttontext-element.md) Elementen Werte nach Bedarf für die jeweilige Sprache.  
   

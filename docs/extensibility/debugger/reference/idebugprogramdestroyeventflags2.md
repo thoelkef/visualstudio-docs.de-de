@@ -1,46 +1,47 @@
 ---
-title: "IDebugProgramDestroyEventFlags2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugProgramDestroyEventFlags2-Schnittstelle"
+title: IDebugProgramDestroyEventFlags2 | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugProgramDestroyEventFlags2 interface
 ms.assetid: d384ff71-dc71-40b9-a871-801f8b6a3418
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: bee4fe04f22bd9afbff8e2d26ef9d699b0226241
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgramDestroyEventFlags2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Aktiviert eine Debug\- Modul, das Standardverhalten des [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Benutzeroberfläche zu überschreiben, wenn Sie eine Debugsitzung beenden.  
+# <a name="idebugprogramdestroyeventflags2"></a>IDebugProgramDestroyEventFlags2
+Ermöglicht ein Debugmodul an das Standardverhalten außer Kraft setzen die [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] UI, wenn Sie eine Debugsitzung zu beenden.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugProgramDestroyEventFlags2 : IUnknown  
 ```  
   
-## Hinweise für Implementierer  
- Diese Schnittstelle wird von Debugsymbolinformationen auf Module implementiert.  Es ist für Hosts hilfreich, die möglicherweise mehrere Programme über die Lebensdauer eines Prozesses erstellen und zerstörten.  
+## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
+ Diese Schnittstelle wird von Debugmodule implementiert. Es ist hilfreich für Hosts, die möglicherweise erstellen und Zerstören von mehreren Programmen über die Lebensdauer eines Prozesses.  
   
-## Methoden  
- In der folgenden Tabelle werden die Methoden von `IDebugProgramDestroyEventFlags2`an.  
+## <a name="methods"></a>Methoden  
+ Die folgende Tabelle zeigt die Methoden der `IDebugProgramDestroyEventFlags2`.  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|Ruft das Programm zerstören Flags ab.|  
+|------------|-----------------|  
+|[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|Ruft ab, das Programm Flags zu zerstören.|  
   
-## Hinweise  
- Das Standardverhalten des [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Benutzeroberfläche ist, auf Programme im Entwurfsmodus zu wechseln, nachdem alle eines Programms zerstört Ereignis gesendet hat.  Diese Schnittstelle ermöglicht eine Debug\- Modul, um dieses Verhalten zu ändern.  
+## <a name="remarks"></a>Hinweise  
+ Das Standardverhalten der [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] Benutzeroberfläche ist, um zurück in den Entwurfsmodus zu wechseln, nachdem alle Programme, ein Programm gesendet haben Ereignis zu zerstören. Diese Schnittstelle ermöglicht ein Debugging-Modul, um dieses Verhalten zu ändern.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: Msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  

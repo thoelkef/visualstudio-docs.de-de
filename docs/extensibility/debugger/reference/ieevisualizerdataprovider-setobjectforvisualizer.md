@@ -1,62 +1,62 @@
 ---
-title: "IEEVisualizerDataProvider::SetObjectForVisualizer | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEEVisualizerDataProvider::SetObjectForVisualizer"
-helpviewer_keywords: 
-  - "IEEVisualizerDataProvider::SetObjectForVisualizer-Methode"
+title: IEEVisualizerDataProvider::SetObjectForVisualizer | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEEVisualizerDataProvider::SetObjectForVisualizer
+helpviewer_keywords: IEEVisualizerDataProvider::SetObjectForVisualizer method
 ms.assetid: 40dad2be-57ff-4f74-9d82-c48039c125c4
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 76a901401e854611cc987ac5c0cf8eeabb8dfd53
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IEEVisualizerDataProvider::SetObjectForVisualizer
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 Diese Methode ändert das Objekt, das die Schnellansicht darstellt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT SetObjectForVisualizer(  
-   IDebugObject*  pNewObject,  
-   BSTR*          error,  
-   IDebugObject** pException  
+HRESULT SetObjectForVisualizer(  
+   IDebugObject*  pNewObject,  
+   BSTR*          error,  
+   IDebugObject** pException  
 );  
 ```  
   
-```c#  
-int SetObjectForVisualizer(  
-   IDebugObject     pNewObject,  
-   out string       error,  
-   out IDebugObject pException  
+```csharp  
+int SetObjectForVisualizer(  
+   IDebugObject     pNewObject,  
+   out string       error,  
+   out IDebugObject pException  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pNewObject`  
- \[in\]  Das festzulegende Objekt.  
+ [in] Das Objekt festgelegt werden soll.  
   
  `error`  
- \[out\]  Wenn ein Fehler, der das angegebene Objekt festgelegt wird, verhindert diese Zeichenfolge der Fehlermeldung.  
+ [out] Wenn Fehler bei der Festlegung des Objekts, enthält diese Zeichenfolge die Fehlermeldung.  
   
  `pException`  
- \[out\]  Wenn es einen Fehler enthält, ist dieses Objekt die Ausnahmeinformationen.  
+ [out] Wenn ein Fehler aufgetreten ist, enthält dieses Objekt die Ausnahmeinformationen.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Es ist von der Implementierung, um zu bestimmen, wie Fehlerinformationen zurückgegeben werden.  Es ist jedoch möglich, dass einige Aufrufer nur überprüfen, um zu ermitteln, ob ein Ausnahmeobjekt zurückgegeben wurde, um zu wissen, dass ein Fehler gegeben hat, sollte daher immer ein Ausnahmeobjekt diese Methode zurückgeben, wenn ein Fehler aufgetreten ist.  Die Fehlerzeichenfolge muss auch angegeben werden, wenn der Aufrufer sie verwenden möchte.  
+## <a name="remarks"></a>Hinweise  
+ Es wird vom Implementierer um zu bestimmen, wie Fehlerinformationen zurückgegeben wird. Es ist jedoch möglich, dass einige Aufrufer möglicherweise nur suchen, um festzustellen, ob ein Exception-Objekt zurückgegeben wurde, um zu wissen, es ist ein Fehler aufgetreten, damit diese Methode immer ein Exception-Objekt zurückgeben soll, wenn ein Fehler aufgetreten. Die Fehlerzeichenfolge sollte auch angegeben werden, für den Fall, dass der Aufrufer möchte überprüfen, verwenden.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)   
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

@@ -1,39 +1,41 @@
 ---
-title: "Hierarchien in Visual Studio | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Visual Studio-IDE-Hierarchien"
-  - "Hierarchien-IDE"
+title: Hierarchien in Visual Studio | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- hierarchies, Visual Studio IDE
+- IDE, hierarchies
 ms.assetid: 0a029a7c-79fd-4b54-bd63-bd0f21aa8d30
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 4a651267ed279fa5efaf14efb4f1f866794c5cc3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Hierarchien in Visual Studio
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierte Entwicklungsumgebung \(IDE\) zeigt ein Projekt als *Hierarchie an*.  In der IDE ist eine Hierarchie eine Struktur von Knoten, in der jeder Knoten einen Satz zugeordneter Eigenschaften verfügt.  Eine *Projekthierarchie* ist ein Container, der die Elemente des Projekts die Beziehungen der Elemente und zugeordneten Eigenschaften und die Befehle Elemente enthält.  
+# <a name="hierarchies-in-visual-studio"></a>Hierarchien in Visual Studio
+Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (IDE) zeigt an, ein Projekt als eine *Hierarchie*. In der IDE ist eine Hierarchie eine Struktur der Knoten, wobei jeder Knoten einen Satz von zugeordnete Eigenschaften aufweist. Ein *Projekt Hierarchie* ist ein Container, der Projektelemente angezeigt, die Elemente Beziehungen, und die Elemente zugeordnete Eigenschaften und Befehle enthält.  
   
- In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]hierarchien Projekt verwalten, indem Sie die Hierarchien Oberfläche, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>verwenden.  Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>\-Schnittstelle wird von Befehlen, die Sie von den Projektelementen auf das entsprechende Fenster Hierarchie Befehls anstelle des standardmäßigen handlers aufrufen.  
+ In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], Verwalten von Hierarchien Projekt mithilfe der Benutzeroberfläche Hierarchie <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>. Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> Schnittstelle leitet Befehle, die Sie an der entsprechenden Hierarchiefenster anstelle der standardmäßigen Befehlshandler von Projektelementen aufrufen.  
   
-## Projekt\-Hierarchien  
- Jede Projekthierarchie enthält Elemente, die Sie anzeigen und bearbeiten können.  Diese Elemente unterscheiden sich je nach Projekttyp.  Zum Beispiel könnte ein Datenbankprojekt gespeicherte Prozeduren, Datenbankansichten und Datenbanktabellen.  Ein Datenbankprojekt enthält hingegen Programmiersprachen sich Quelldateien und Ressourcendateien für Bitmap und Dialogfelder.  Hierarchien können geschachtelt werden, sodass Sie einige weitere gibt eine größere Flexibilität beim Erstellen einer Projekthierarchie erstellt werden.  
+## <a name="project-hierarchies"></a>Projekt-Hierarchien  
+ Jedes Projekthierarchie enthält Elemente, die Sie anzeigen und bearbeiten können. Diese Elemente hängen vom Projekttyp ab. Ein Datenbankprojekt kann z. B. gespeicherte Prozeduren, Ansichten und Datenbanktabellen enthalten. Eine Programmiersprache Projekt umfasst wahrscheinlich andererseits, Quelldateien und Ressourcendateien für Bitmaps und zu den Dialogfeldern. Hierarchien können geschachtelt werden, wo Sie einige zusätzliche Flexibilität bei der Erstellung einer Projekthierarchie.  
   
- Wenn Sie ein neuer Projekttyp erstellen, steuert der Projekttyp den vollständigen Satz von Elementen, die dort bearbeitet werden können.  Projekte können jedoch Elemente enthalten, für die sie keine Unterstützung für das Bearbeiten.  Visual C\+\+\-Projekten können z. B. HTML\-Dateien enthalten, obwohl Visual C\+\+ keinen benutzerdefinierten Editor für den HTML\-Datei\-Typ bereitstellt.  
+ Wenn Sie einen neuen Projekttyp erstellen, steuert der Projekttyp den vollständigen Satz von Elementen, die Sie bearbeitet werden kann. Projekte können jedoch Elemente enthalten, für die keine Bearbeitung. Visual C++-Projekten können z. B. HTML-Dateien enthalten, obwohl Visual C++ keine benutzerdefinierten Editor für den HTML-Dateityp bietet.  
   
- Hierarchien verwalten die Dauerhaftigkeit von Elementen, die sie enthalten.  Die Implementierung der Hierarchie muss alle speziellen Eigenschaften steuern, die die Beibehaltung der Elemente in der Hierarchie auswirken.  Wenn beispielsweise die übergeordnete Objekte in einem Repository anstelle von Dateien darstellen, muss die Implementierung der Hierarchie die Beibehaltung dieser Objekte steuern.  Die IDE selbst verweist auf die Hierarchie, um Elemente der gemäß Benutzereingaben zu speichern, aber keine steuert die IDE, um Aktionen, die zum Speichern dieser Elemente erforderlich sind.  Stattdessen wird das Projekt im Steuerelement.  
+ Hierarchien verwalten die Persistenz der darin enthaltenen Elemente. Die Implementierung der Hierarchie muss keine besonderen Eigenschaften steuern, die die Persistenz der Elemente innerhalb der Hierarchie auswirken. Z. B. muss Elemente Objekte in einem Repository anstelle von Dateien darzustellen, die Hierarchie-Implementierung die Persistenz dieser Objekte steuern. Die IDE selbst leitet die Hierarchie der Elemente in Übereinstimmung mit Benutzereingaben zu speichern, aber die IDE steuert keine Aktionen erforderlich, um diese Elemente zu speichern. Stattdessen wird das Projekt im Steuerelement ein.  
   
- Wenn ein Benutzer ein Element in einem Editor geöffnet wird, wird die Hierarchie, die dieses Element ausgewählt und steuert, wird die aktive Hierarchie.  Die ausgewählte Hierarchie bestimmt den Satz von Befehlen, die Sie nach dem Element zu behandeln.  Nachverfolgen Fokus Benutzer können auf diese Weise die Hierarchie, um den aktuellen Kontext des Benutzers zu entsprechen.  
+ Wenn ein Benutzer ein Element in einem Editor geöffnet wird, wird die Hierarchie, die dieses Element steuert ausgewählt ist, und wird von der aktiven Hierarchie. Die ausgewählte Hierarchie bestimmt den Satz von Befehlen verfügbar, das für das Element fungiert. Nachverfolgen der den Benutzerfokus auf diese Weise kann die Hierarchie, um den aktuellen Kontext des Benutzers entsprechen.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Projekttypen](../../extensibility/internals/project-types.md)   
  [Auswahl und Währung, in der IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)   
- [VSSDK\-Beispiele](../../misc/vssdk-samples.md)
+ [VSSDK-Beispiele](http://aka.ms/vs2015sdksamples)

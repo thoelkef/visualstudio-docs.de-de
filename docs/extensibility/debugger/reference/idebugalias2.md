@@ -1,49 +1,50 @@
 ---
-title: "IDebugAlias2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugAlias2-Schnittstelle"
+title: IDebugAlias2 | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugAlias2 interface
 ms.assetid: 5252dcbb-8bfe-4d8a-a8e5-b022b194df19
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e77f4fed0bee4451b12463787bc2dd491ffc09c9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugAlias2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugalias2"></a>IDebugAlias2
 > [!IMPORTANT]
->  In Visual Studio 2015 ist diese Art der Implementierung von ausdrucksauswertungen veraltet. Informationen über das Implementieren von CLR\-ausdrucksauswertungen finden Sie unter [CLR\-Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  In Visual Studio 2015 wird diese Möglichkeit zum Implementieren von ausdruckauswertung veraltet. Informationen zu CLR-ausdrucksauswertungen implementieren, finden Sie unter [CLR-Ausdrucksauswertungen](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) und [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Stellt einen numerischen Alias für eine Variable dar und ermöglicht eine Auswertung eines Ausdrucks \(EE\), um die Anwendungsdomäne für den Alias zu erhalten.  
+ Stellt einen numerische Alias für eine Variable dar und ermöglicht eine ausdrucksauswertung (EE), um die Anwendungsdomäne für den Alias zu erhalten.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugAlias2 : IDebugAlias  
 ```  
   
-## Hinweise für Implementierer  
- Diese Schnittstelle ist das verwaltete Debugging\-Modul \(DE\) implementiert.  
+## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
+ Diese Schnittstelle wird von der verwalteten Debugging-Modul (DE) implementiert.  
   
-## Methoden  
- Zusätzlich zu den Methoden für die [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) \-Schnittstelle, diese Schnittstelle implementiert, die folgende Methode:  
+## <a name="methods"></a>Methoden  
+ Zusätzlich zu den Methoden für die [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) diese Schnittstelle implementiert, die folgende Methode:  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[GetAppDomainId](../../../extensibility/debugger/reference/idebugalias2-getappdomainid.md)|Ruft den Bezeichner für die Anwendungsdomäne.|  
+|------------|-----------------|  
+|[GetAppDomainId](../../../extensibility/debugger/reference/idebugalias2-getappdomainid.md)|Ruft den Bezeichner für die Anwendungsdomäne ab.|  
   
-## Hinweise  
- Ein Alias ist eine Dezimalzahl in Form einer Zeichenfolge gefolgt von dem \#\-Zeichen, z. B. 1001\#.  
+## <a name="remarks"></a>Hinweise  
+ Ein Alias ist eine Dezimalzahl in Form einer Zeichenfolge gefolgt vom #-Zeichen, z. B. 1001#.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: Ee.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  

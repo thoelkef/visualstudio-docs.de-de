@@ -1,57 +1,59 @@
 ---
-title: "IDebugSymbolProviderDirect::GetMetaDataImport | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "GetMetaDataImport"
-  - "IDebugSymbolProviderDirect::GetMetaDataImport"
+title: IDebugSymbolProviderDirect::GetMetaDataImport | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- GetMetaDataImport
+- IDebugSymbolProviderDirect::GetMetaDataImport
 ms.assetid: b51a492c-af00-4b08-93fb-6c19ee4916aa
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f35e76579a93dfc83454322699325e1dfec09734
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugSymbolProviderDirect::GetMetaDataImport
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft die Metadaten import Informationen ab.  
+# <a name="idebugsymbolproviderdirectgetmetadataimport"></a>IDebugSymbolProviderDirect::GetMetaDataImport
+Ruft die Metadaten-Import-Informationen ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetMetaDataImport (  
-    GUID*      guid,  
-    DWORD      appID,  
-    IUnknown** ppImport  
+    GUID*      guid,  
+    DWORD      appID,  
+    IUnknown** ppImport  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetMetaDataImport (  
-    Guid       guid,  
-    uint       appID,  
-    out object ppImport  
+    Guid       guid,  
+    uint       appID,  
+    out object ppImport  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `guid`  
- \[in\]  Eindeutiger Bezeichner für das Modul.  
+ [in] Eindeutiger Bezeichner für das Modul.  
   
  `appID`  
- \[in\]  Bezeichner der Anwendungsdomäne.  
+ [in] Der Bezeichner für die Anwendungsdomäne.  
   
  `ppImport`  
- \[out\]  Gibt ein Objekt zurück, das die import Metadaten.  
+ [out] Gibt ein Objekt, das Metadaten enthält, Informationen zu importieren.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

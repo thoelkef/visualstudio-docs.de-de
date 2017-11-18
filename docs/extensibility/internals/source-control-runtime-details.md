@@ -1,30 +1,31 @@
 ---
-title: "Details zur Datenquelle Steuerelement-Laufzeit | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Datenquellen-Steuerelement [Visual Studio SDK], Common Language Runtime-details"
+title: Source Control Runtime Details | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: source control [Visual Studio SDK], runtime details
 ms.assetid: 1acd30e0-f98c-4bde-b9cd-4076845887df
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f9647f1f399b0d6516fe6475e6245c6834a0ea2b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Details zur Datenquelle Steuerelement-Laufzeit
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ein Projekt wird der Quellcodeverwaltung, wenn der Benutzer eine Datei im Projekt Quellcodeverwaltung hinzugefügt wird, oder durch einen Automatisierung controller, z. B. einen Assistenten hinzugefügt.  Ein Projekt wird nicht für sich selbst an, dass es unter Quellcodeverwaltung steht. Quellcodeverwaltung unterstützt es ihm, muss jedoch manuell hinzugefügt werden.  
+# <a name="source-control-runtime-details"></a>Details zur Datenquelle Steuerelement-Laufzeit
+Ein Projekt wird zur quellcodeverwaltung hinzugefügt, wenn der Benutzer eine Datei im Projekt zur quellcodeverwaltung oder durch eine-Automatisierungscontrollers, wie z. B. einen Assistenten hinzufügt. Ein Projekt ist nicht für sich selbst angeben, dass sie sich unter quellcodeverwaltung befindet; Datenquellen-Steuerelement unterstützt, aber müssen, manuell hinzugefügt werden.  
   
-## Mit einem Quellcodeverwaltungs\-Paket registrieren  
- Wenn eine Datei im Projekt zur Quellcodeverwaltung hinzugefügt wird, wird die Umgebung <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2.SetSccLocation%2A> auf, damit vier nicht transparente Zeichenfolge bereitstellen, die als Cookies vom Quellcodeverwaltungssystem verwendet werden.  Speichern Sie diese Zeichenfolgen in der Projektdatei.  Diese Zeichenfolgen können zum Quellcodeverwaltungs\-Stub \(die Visual Studio\-Komponente, die Lösungspaketen Quellcodeverwaltung verwaltet\) beim Starten des Projekttyps durch Aufrufen von <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.RegisterSccProject%2A>übergeben werden.  Dies wiederum lädt das entsprechende Paket Quellcodeverwaltung und leitet den Aufruf an die Implementierung von `IVsSccManager2::RegisterSccProject`weiter.  
+## <a name="registering-with-a-source-control-package"></a>Registrieren mit einem Steuerelement Quellpaket  
+ Wenn eine Datei in Ihrem Projekt zur quellcodeverwaltung hinzugefügt wird, ruft die Umgebung <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2.SetSccLocation%2A> stellen vier opake Zeichenfolgen, die als Cookies von dem Quellcodeverwaltungssystem verwendet werden. Speichern Sie diese Zeichenfolgen in der Projektdatei an. Diese Zeichenfolgen übergeben werden sollte an die Quelle Steuerelement Stub (die Visual Studio-Komponente, Steuerelement Quellpakete verwaltet) beim Start des Project-Typs durch Aufrufen von <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.RegisterSccProject%2A>. Dies wiederum lädt das Paket der entsprechenden Quelle-Steuerelement, und leitet den Aufruf von seiner Implementierung von `IVsSccManager2::RegisterSccProject`.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.RegisterSccProject%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2.SetSccLocation%2A>   
- [Unterstützung von Datenquellen\-Steuerelement](../../extensibility/internals/supporting-source-control.md)
+ [Unterstützen der Quellcodeverwaltung](../../extensibility/internals/supporting-source-control.md)

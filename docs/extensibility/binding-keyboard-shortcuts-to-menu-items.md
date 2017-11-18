@@ -1,97 +1,112 @@
 ---
-title: "Bindung-Tastenkombinationen f&#252;r Men&#252;elemente | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Tastaturbefehl"
-  - "Tastaturen"
-  - "Befehlstaste"
-  - "Tastenkombinationen"
-  - "Menüelemente"
+title: "Binden von Tastenkombinationen auf Menüelemente | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- keyboard command
+- keyboards
+- command key
+- keyboard shortcuts
+- menu items
 ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
-caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 1fe1c0bb9c3028c70e1be9df9af1de3b0804844e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Bindung-Tastenkombinationen f&#252;r Men&#252;elemente
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Um eine Tastenkombination auf einen benutzerdefinierten Menübefehl zu binden, fügen Sie einen Eintrag nur auf die VSCT\-Datei für das Paket. In diesem Thema wird erläutert, wie eine benutzerdefinierte Schaltfläche, Menüelement oder Symbolleistenbefehl eine Tastenkombination zugeordnet, und wie Sie in der Standard\-Editor das Tastaturzuordnungsschema anwenden oder nur für einen benutzerdefinierten Editor.  
+# <a name="binding-keyboard-shortcuts-to-menu-items"></a>Bindung von Tastenkombinationen auf Menüelemente
+Um eine Tastenkombination zu einem benutzerdefinierten Menübefehl zu binden, fügen Sie nur einen Eintrag zur VSCT-Datei für das Paket. In diesem Thema wird erläutert, wie eine benutzerdefinierte Schaltfläche, Menüelement oder Befehle der Hilfesymbolleiste eine Tastenkombination zugeordnet, und wie Sie das Tastaturzuordnungsschema im Standardeditor anwenden oder nur für einen benutzerdefinierten Editor.  
   
- Vorhandene Visual Studio\-Menüelemente Tastenkombinationen zuweisen möchten, finden Sie unter [Identifizieren und Anpassen von Tastenkombinationen](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
+ Vorhandene Visual Studio-Menüelemente Tastenkombinationen zuweisen möchten, finden Sie unter [identifizieren und Anpassen von Tastenkombinationen](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
   
-## Wählen eine Tastenkombination  
- Viele Tastenkombinationen sind in Visual Studio bereits verwendet. Sie sollten mehr als einen Befehl nicht dieselbe Tastenkombination zuweisen, da doppelte Bindungen schwer sind zu erkennen und können ebenfalls zu unvorhersehbare Ergebnissen führen. Daher ist es eine gute Idee, überprüfen die Verfügbarkeit einer Tastenkombination, damit Sie zugewiesen werden.  
+## <a name="choosing-a-key-combination"></a>Wählen eine Tastenkombination  
+ Viele Tastenkombinationen sind in Visual Studio bereits verwendet. Sie sollten mehrere Befehle nicht das gleiche abgekürzte Verfahren zuweisen, da doppelte Bindungen schwer sind zu erkennen und möglicherweise auch zu unvorhersehbaren Ergebnissen führt. Aus diesem Grund ist es ratsam, überprüfen die Verfügbarkeit einer Verknüpfung aus, bevor Sie es zuweisen.  
   
-#### So überprüfen die Verfügbarkeit einer Tastenkombination  
+#### <a name="to-verify-the-availability-of-a-keyboard-shortcut"></a>Um die Verfügbarkeit einer Tastenkombination überprüfen  
   
-1.  In der **Extras \/ Optionen \/ Umgebung** wählen Sie im Fenster **Tastatur**.  
+1.  In der **Extras / Optionen / Umgebung** wählen **Tastatur**.  
   
-2.  Stellen Sie sicher, dass **Neue Tastenkomb in** Wert **Global**.  
+2.  Stellen Sie sicher, dass **Neue Tastenkomb in** festgelegt ist, um **Global**.  
   
-3.  In der **Tastenkombination** Geben Sie die Tastenkombination, die Sie verwenden möchten.  
+3.  In der **Tastenkombination** geben die Tastenkombination, die Sie verwenden möchten.  
   
-     Wenn die Tastenkombination bereits in Visual Studio verwendet wird die **Kontextmenü aktuell verwendete** Feld zeigt den Befehl, der die Verknüpfung derzeit aufruft.  
+     Die Verknüpfung, die bereits in Visual Studio verwendet die **Kontextmenü momentan verwendet von** Feld zeigt die Befehle, die die Verknüpfung derzeit aufrufen.  
   
 4.  Probieren Sie verschiedene Kombinationen von Schlüsseln, bis Sie eine gefunden, die nicht zugeordnet ist.  
   
     > [!NOTE]
-    >  Tastenkombinationen, die ALT\-Taste verwenden möglicherweise ein Menü zu öffnen und nicht direkt einen Befehl ausführen. Aus diesem Grund die **Kontextmenü aktuell verwendete** Feld kann leer sein, wenn Sie eine Verknüpfung eingeben, die ALT\-Taste enthält. Überprüfen, ob die Verknüpfung ein Menü nicht schließende geöffnet wird die **Optionen** \(Dialogfeld\), und drücken die Tasten.  
+    >  Tastenkombinationen aufgeführt, die ALT-Taste verwenden möglicherweise ein Menü zu öffnen und einen Befehl nicht direkt ausführen. Aus diesem Grund die **Kontextmenü momentan verwendet von** Feld möglicherweise leer, wenn Sie eine Verknüpfung eingeben, die ALT-Taste enthält. Sie können überprüfen, ob die Verknüpfung ein Menüs nicht schließende öffnen lässt die **Optionen** (Dialogfeld), und drücken die Schlüssel.  
   
- Das folgende Verfahren wird davon ausgegangen, dass Sie eine vorhandene VSPackage mit Menübefehl verfügen. Wenn Sie hierzu Hilfe benötigen, sehen Sie sich [Erstellen eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).  
+ Das folgende Verfahren wird davon ausgegangen, dass Sie eine vorhandene VSPackage mit einem Menübefehl verfügen. Wenn Sie auf diese Weise Hilfe benötigen, sehen Sie sich [erstellen eine Erweiterung mit einem Menübefehl](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-#### Ein Befehl eine Tastenkombination zuweisen  
+#### <a name="to-assign-a-keyboard-shortcut-to-a-command"></a>Ein Befehl eine Tastenkombination zuweisen  
   
-1.  Öffnen Sie die VSCT\-Datei für das Paket.  
+1.  Öffnen Sie die VSCT-Datei für Ihr Paket.  
   
-2.  Erstellen Sie eine leere `<KeyBindings>` im Abschnitt nach der `<Commands>` wenn er nicht bereits vorhanden ist.  
+2.  Erstellen Sie eine leere `<KeyBindings>` nach dem Abschnitt der `<Commands>` , wenn er nicht bereits vorhanden ist.  
   
     > [!WARNING]
-    >  Weitere Informationen zu Tastenkombinationen finden Sie unter [Keybinding](../extensibility/keybinding-element.md).  
+    >  Weitere Informationen zu tastenbindungen, finden Sie unter [Keybinding](../extensibility/keybinding-element.md).  
   
-     In der `<KeyBindings>` im Abschnitt, erstellen Sie eine `<KeyBinding>` Eintrag.  
+     In der `<KeyBindings>` Abschnitt, erstellen Sie eine `<KeyBinding>` Eintrag.  
   
-     Legen Sie die `guid`  und  `id` Attribute, die denen des Befehls, die Sie aufrufen möchten.  
+     Legen Sie die `guid` und `id` Attribute, mit denen des Befehls, die Sie aufrufen möchten.  
   
-     Legen Sie das `mod1` \-Attribut **Steuerelement**, **Alt**, oder **UMSCHALT**.  
+     Legen Sie die `mod1` -Attribut **Steuerelement**, **Alt**, oder **UMSCHALT**.  
   
-     Abschnitt KeyBindings sollte etwa wie folgt aussehen:  
+     Der Abschnitt Schlüsselbindungen sollte etwa wie folgt aussehen:  
   
     ```xml  
-    <KeyBindings> <KeyBinding guid="<name of command set>" id="<name of command id>" editor="guidVSStd97" key1="1" mod1="CONTROL"/> </KeyBindings>  
+    <KeyBindings>  
+        <KeyBinding guid="<name of command set>" id="<name of command id>"  
+            editor="guidVSStd97" key1="1" mod1="CONTROL"/>  
+    </KeyBindings>  
   
     ```  
   
- Wenn die Tastenkombination mit mehr als zwei Schlüssel erforderlich ist, legen Sie die `mod2` und `key2` Attribute.  
+ Wenn die Tastenkombination mehr als zwei Schlüssel erforderlich ist, legen Sie die `mod2` und `key2` Attribute.  
   
- In den meisten Fällen **UMSCHALT** sollten nicht ohne einen zweiten Modifizierer verwendet werden, da es bereits drücken führt dazu, dass die meisten Buchstaben ein Großbuchstabe oder ein Symbol.  
+ In den meisten Situationen **UMSCHALT** sollten nicht ohne einen zweiten Modifizierer verwendet werden, da es bereits drücken führt dazu, die meisten alphanumerische Schlüssel dass, ein Großbuchstabe oder ein Symbol einzugeben.  
   
- Virtuelle Tastencodes können Sie die speziellen Schlüssel zuzugreifen, die nicht mit einem Zeichen zugeordnet werden, z. B. Funktionstasten verfügen und die **RÜCKTASTE** Schlüssel. Weitere Informationen finden Sie unter [virtuellen Tastencodes](http://go.microsoft.com/fwlink/?LinkID=105932).  
+ Virtuelle Tastencodes können Sie die spezielle Schlüssel zugreifen, die nicht mit einem Zeichen zugeordnet werden, z. B. Funktionstasten verfügen und die **RÜCKTASTE** Schlüssel. Weitere Informationen finden Sie unter [virtuellen Tastencodes](http://go.microsoft.com/fwlink/?LinkID=105932).  
   
- Um den Befehl in Visual Studio\-Editor verwenden, legen Sie das `editor` \-Attribut `guidVSStd97`.  
+ Um den Befehl Editor in Visual Studio verfügbar machen, legen Sie die `editor` -Attribut `guidVSStd97`.  
   
- Um den Befehl nur in einem benutzerdefinierten Editor verfügbar zu machen, legen Sie das `editor` \-Attribut auf den Namen des benutzerdefinierten Editors, die von generiert wurde die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Paketvorlage, wenn Sie das VSPackage erstellt enthält den benutzerdefinierten Editor. Um die Name\-Wert zu suchen, suchen Sie in der `<Symbols>` im Abschnitt für eine `<GuidSymbol>` Knoten, deren `name` Attribut endet in "`editorfactory`." Dies ist der Name der benutzerdefinierten Editor.  
+ Um den Befehl nur in einen benutzerdefinierten Editor verfügbar zu machen, legen Sie die `editor` -Attribut auf den Namen des benutzerdefinierten Editors, die von generiert wurde die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Paket-Vorlage, wenn Sie das VSPackage erstellt schließt den benutzerdefinierten Editor. Um die Name-Wert zu finden, suchen Sie in der `<Symbols>` im Abschnitt für eine `<GuidSymbol>` Knoten, deren `name` Attribut endet in "`editorfactory`." Dies ist der Name des benutzerdefinierten Editors.  
   
-## Beispiel  
- In diesem Beispiel wird die Tastenkombination STRG \+ ALT \+ C an einen Befehl mit dem Namen bindet `cmdidMyCommand` in einem Paket mit dem Namen `MyPackage`.  
+## <a name="example"></a>Beispiel  
+ In diesem Beispiel bindet die Tastenkombination STRG + ALT + C an einen Befehl mit dem Namen `cmdidMyCommand` in einem Paket mit dem Namen `MyPackage`.  
   
 ```  
-<CommandTable> . . . <Commands> . . . </Commands> <KeyBindings> <KeyBinding guid="guidMyPackageCmdSet" id="cmdidMyCommand" key1="C" mod1="CONTROL" mod2="ALT" editor="guidVSStd97" /> </KeyBindings> . . . </CommandTable>  
+<CommandTable>  
+. . .  
+<Commands>  
+. . .  
+</Commands>  
+<KeyBindings>  
+  <KeyBinding guid="guidMyPackageCmdSet" id="cmdidMyCommand"   
+      key1="C" mod1="CONTROL" mod2="ALT" editor="guidVSStd97" />  
+</KeyBindings>  
+. . .  
+</CommandTable>  
 ```  
   
-## Beispiel  
- In diesem Beispiel bindet die Tastenkombination STRG \+ B, um einen Befehl mit dem Namen `cmdidBold` in einem Projekt namens `TestEditor`. Der Befehl ist nur in den benutzerdefinierten Editor und nicht in anderen Editoren verfügbar.  
+## <a name="example"></a>Beispiel  
+ In diesem Beispiel bindet die Tastenkombination STRG + B, um einen Befehl mit dem Namen `cmdidBold` in einem Projekt mit dem Namen `TestEditor`. Der Befehl ist nur in den benutzerdefinierten Editor und nicht in anderen Editoren verfügbar.  
   
 ```xml  
 <KeyBinding guid="guidVSStd97" id="cmdidBold" editor="guidTestEditorEditorFactory" key1="B" mod1="Control" />  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Erweitern von Menüs und Befehlen](../extensibility/extending-menus-and-commands.md)

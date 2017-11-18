@@ -1,82 +1,80 @@
 ---
-title: "Gewusst wie: Wiederherstellen von ausgeblendeten Debuggerbefehlen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Befehle, Debugger"
-  - "Debugger, Wiederherstellen von Befehlen"
-  - "Debuggen [Visual Studio], Wiederherstellen von Befehlen"
+title: 'Vorgehensweise: Wiederherstellen von ausgeblendeten Debuggerbefehlen | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+- JScript
+helpviewer_keywords:
+- debugger, restoring commands
+- debugging [Visual Studio], restoring commands
+- commands, debugger
 ms.assetid: 76ac9b77-f536-43b5-a9fc-984854b1c566
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 561fa92e9797bd3a4343a4f2c6e23bd1e91ccab0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Wiederherstellen von ausgeblendeten Debuggerbefehlen
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Beim Einrichten von Visual Studio werden Sie aufgefordert, die IDE\-Standardeinstellungen für Ihre bevorzugte Programmiersprache festzulegen.  Möglicherweise blenden die IDE\-Standardeinstellungen für einige Sprachen bestimmte Debuggerbefehle aus.  
+# <a name="how-to-restore-hidden-debugger-commands"></a>Gewusst wie: Wiederherstellen von ausgeblendeten Debuggerbefehlen
+Beim Einrichten von Visual Studio werden Sie aufgefordert, die IDE-Standardeinstellungen für Ihre bevorzugte Programmiersprache festzulegen. Möglicherweise blenden die IDE-Standardeinstellungen für einige Sprachen bestimmte Debuggerbefehle aus.  
   
- Falls Sie ein Debuggerfeature verwenden möchten, das durch Ihre IDE\-Standardeinstellungen ausgeblendet ist, können Sie dem Menü den Befehl durch folgende Prozedur wieder hinzufügen.  
+ Falls Sie ein Debuggerfeature verwenden möchten, das durch Ihre IDE-Standardeinstellungen ausgeblendet ist, können Sie dem Menü den Befehl durch folgende Prozedur wieder hinzufügen.  
   
-### So stellen Sie ausgeblendete Debuggerbefehle wieder her  
+### <a name="to-restore-hidden-debugger-commands"></a>So stellen Sie ausgeblendete Debuggerbefehle wieder her  
   
-1.  Klicken Sie in einem geöffneten Projekt im Menü **Extras** auf **Anpassen**.  
+1.  Ein Projekt geöffnet ist, auf die **Tools** Menü klicken Sie auf **anpassen**.  
   
-2.  Klicken Sie im Dialogfeld **Anpassen** auf die Registerkarte **Befehle**.  
+2.  In der **anpassen** (Dialogfeld), klicken Sie auf die **Befehle** Registerkarte.  
   
-3.  Wählen Sie im Dropdownfeld **Menüleiste:** das Menü **Debuggen** aus, dass den wiederhergestellten Befehl enthalten soll.  
+3.  In der **Menüleiste:** Dropdownliste, wählen die **Debuggen** Menü, das den wiederhergestellten Befehl enthalten soll.  
   
-4.  Klicken Sie auf die Schaltfläche **Befehl hinzufügen...**.  
+4.  Klicken Sie auf die **Befehl hinzufügen...**  Schaltfläche.  
   
-5.  Wählen Sie im Feld **Befehl hinzufügen** den Befehl aus, den Sie hinzufügen möchten, und klicken Sie auf **OK**.  
+5.  In der **Befehl hinzufügen** Feld, wählen Sie den Befehl, die Sie hinzufügen möchten, und klicken Sie auf **OK**.  
   
 6.  Wiederholen Sie den vorigen Schritt, um einen weiteren Befehl hinzuzufügen.  
   
-7.  Klicken Sie auf **Schließen**, wenn Sie dem Menü keine weiteren Befehle hinzufügen möchten.  
+7.  Klicken Sie auf **schließen** nach Abschluss des Hinzufügen von Befehlen zum Menü.  
   
     > [!WARNING]
-    >  Einige Menüelemente sind nur in bestimmten Debuggermodi sichtbar, etwa im Ausführmodus oder im Unterbrechungsmodus.  Deshalb ist ein Element, das Sie hinzugefügt haben, nicht notwendigerweise sofort nach Ausführung dieser Schritte sichtbar.  
+    >  Einige Menüelemente sind nur in bestimmten Debuggermodi sichtbar, etwa im Ausführmodus oder im Unterbrechungsmodus. Deshalb ist ein Element, das Sie hinzugefügt haben, nicht notwendigerweise sofort nach Ausführung dieser Schritte sichtbar.  
   
-## Wiederherstellen von Befehlen, die im Dialogfeld Anpassen nicht verfügbar sind  
- Einige Befehle, besonders solche in hierarchischen Menüs, können nicht im Dialogfeld **Anpassen** wiederhergestellt werden.  Um diese Befehle wiederherzustellen, müssen Sie eine neue Auflistung von IDE\-Einstellungen importieren.  
+## <a name="restoring-commands-not-available-from-the-customize-dialog-box"></a>Wiederherstellen von Befehlen, die im Dialogfeld Anpassen nicht verfügbar sind  
+ Einige Befehle, besonders solche in hierarchischen Menüs, können nicht wiederhergestellt werden, aus der **anpassen** (Dialogfeld). Um diese Befehle wiederherzustellen, müssen Sie eine neue Auflistung von IDE-Einstellungen importieren.  
   
-#### So importieren Sie neue IDE\-Einstellungen  
+#### <a name="to-import-new-ide-settings"></a>So importieren Sie neue IDE-Einstellungen  
   
-1.  Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren**.  
+1.  Auf der **Tools** Menü klicken Sie auf **Einstellungen importieren und exportieren**.  
   
-2.  Klicken Sie auf der Seite **Willkommen beim Assistenten zum Importieren und Exportieren von Einstellungen** auf **Ausgewählte Umgebungseinstellungen importieren** und dann auf **Weiter**.  
+2.  Auf der **Willkommen bei den Import / Export-Assistent** auf **ausgewählte umgebungseinstellungen importieren**, und klicken Sie dann auf **Weiter**.  
   
-3.  Auf der Seite **Aktuelle Einstellungen speichern** können Sie entscheiden, ob Sie die bestehenden Einstellungen speichern möchten. Klicken Sie anschließend auf **Weiter**.  
+3.  Auf der **aktuelle Einstellungen speichern** Seite erstellen, entscheiden, ob die bestehenden Einstellungen speichern, und klicken Sie dann auf **Weiter**.  
   
-4.  Wählen Sie auf der Seite **Auflistung von Einstellungen für den Import auswählen** aus dem Ordner **Standardeinstellungen** eine Auflistung von Entwicklungseinstellungen, in der die gewünschten Befehle enthalten sind.  Wenn Sie nicht wissen, für welche Auflistung Sie sich entscheiden sollen, wählen Sie **Allgemeine Entwicklungseinstellungen** oder **Visual C\+\+\-Entwicklungseinstellungen**. Darin sind die meisten Debuggerbefehle enthalten.  
+4.  Auf der **wählen Sie eine Auflistung von Einstellungen für den import** Seite der **Standardeinstellungen** Ordner, wählen Sie eine Auflistung von entwicklungseinstellungen, die Befehle sind Sie verwenden möchten. Wenn Sie die Sammlung, wählen nicht wissen, versuchen Sie es **allgemeine Entwicklungseinstellungen** oder **Visual C++-Entwicklungseinstellungen**, die die meisten Debuggerbefehle bereitstellen.  
   
 5.  Klicken Sie auf **Weiter**.  
   
-6.  Stellen Sie auf der Seite **Einstellungen für den Import auswählen** unter **Optionen** sicher, dass **Debuggen** ausgewählt ist.  Deaktivieren Sie die anderen Kontrollkästchen, sofern Sie nicht noch weitere Einstellungen importieren möchten.  
+6.  Auf der **wählen Sie die Einstellungen für den import** Seite **Optionen**, stellen Sie sicher, dass **Debuggen** ausgewählt ist. Deaktivieren Sie die anderen Kontrollkästchen, sofern Sie nicht noch weitere Einstellungen importieren möchten.  
   
 7.  Klicken Sie auf **Fertig stellen**.  
   
-8.  Überprüfen Sie auf der Seite **Importvorgang abgeschlossen** den Bereich **Details** auf Fehler, die beim Wiederherstellen der Einstellungen aufgetreten sein könnten.  
+8.  Auf der **Importvorgang abgeschlossen** überprüfen Sie alle Fehler im Zusammenhang mit beim Zurücksetzen der Einstellungen unter **Details**.  
   
 9. Klicken Sie auf **Schließen**.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Debuggersicherheit](../debugger/debugger-security.md)   
  [Debugger – Grundlagen](../debugger/debugger-basics.md)

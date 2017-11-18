@@ -1,60 +1,65 @@
 ---
-title: "BuildProjectOnLoad (Visual Studio-Vorlagen) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#BuildOnLoad"
-helpviewer_keywords: 
-  - "<BuildOnLoad>-Element [Visual Studio-Vorlagen]"
-  - "BuildOnLoad-Element [Visual Studio-Vorlagen]"
+title: BuildProjectOnLoad (Visual Studio-Vorlagen) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#BuildOnLoad
+helpviewer_keywords:
+- <BuildOnLoad> element [Visual Studio Templates]
+- BuildOnLoad element [Visual Studio Templates]
 ms.assetid: 950f5fc1-d041-4090-9a5c-60844768a4cc
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ab3744d81f99c394a2633854a0ec24b76e665ecd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# BuildProjectOnLoad (Visual Studio-Vorlagen)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Gibt an, ob das Projekt erstellt, nachdem sie erstellt hat.  
+# <a name="buildprojectonload-visual-studio-templates"></a>BuildProjectOnLoad (Visual Studio-Vorlagen)
+Gibt an, ob das Projekt zu erstellen, unmittelbar nachdem er erstellt wurde.  
   
-## Syntax  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<BuildProjectOnLoad >  
+  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <BuildProjectOnLoad> true/false </BuildProjectOnLoad>  
 ```  
   
-## Attribute und Elemente  
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
-### Attribute  
+### <a name="attributes"></a>Attribute  
  Keine.  
   
-### Untergeordnete Elemente  
- Keine.  
+### <a name="child-elements"></a>Untergeordnete Elemente  
+ Keine  
   
-### Übergeordnete Elemente  
+### <a name="parent-elements"></a>Übergeordnete Elemente  
   
 |Element|Beschreibung|  
-|-------------|------------------|  
+|-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|  
   
-## Textwert  
+## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich.  
   
- Es muss entweder oder `true``false` sein und angeben, ob das Projekt erstellt, sobald er erstellt hat.  
+ Der Text muss entweder `true` oder `false`, der angibt, ob das Projekt zu erstellen, unmittelbar nachdem er erstellt wurde.  
   
-## Hinweise  
- `BuildProjectOnLoad` ist ein optionales Attribut.  Der Standardwert ist `false`.  
+## <a name="remarks"></a>Hinweise  
+ `BuildProjectOnLoad` ist ein optionales Attribut. Der Standardwert ist `false`.  
   
-## Beispiel  
- Im folgenden Beispiel werden die Metadaten für eine Vorlage in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] veranschaulicht.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel werden die Metadaten für eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Vorlage veranschaulicht.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -81,7 +86,7 @@ Gibt an, ob das Projekt erstellt, nachdem sie erstellt hat.
 </VSTemplate>  
 ```  
   
-## Siehe auch  
- [TemplateContent\-Element \(Visual Studio\-Vorlagen\)](../extensibility/templatecontent-element-visual-studio-templates.md)   
- [Erstellen von benutzerdefinierten Projekt\- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   
- [Schemareferenz zu Visual Studio\-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>Siehe auch  
+ [TemplateContent-Element (Visual Studio-Vorlagen)](../extensibility/templatecontent-element-visual-studio-templates.md)   
+ [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   
+ [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)

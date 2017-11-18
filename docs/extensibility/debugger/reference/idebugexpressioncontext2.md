@@ -1,61 +1,61 @@
 ---
-title: "IDebugExpressionContext2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugExpressionContext2"
-helpviewer_keywords: 
-  - "IDebugExpressionContext2-Schnittstelle"
+title: IDebugExpressionContext2 | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugExpressionContext2
+helpviewer_keywords: IDebugExpressionContext2 interface
 ms.assetid: 577fdaae-4b2d-4112-9839-ab899535fa6f
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: cfeede9a99a31acefb5fdf34afd8d6258c9f1019
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugExpressionContext2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Diese Schnittstelle stellt einen Kontext für die Ausdrucksauswertung dar  
+# <a name="idebugexpressioncontext2"></a>IDebugExpressionContext2
+Diese Schnittstelle stellt einen Kontext für die Auswertung von Ausdrücken dar.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugExpressionContext2 : IUnknown  
 ```  
   
-## Hinweise für Implementierer  
- Das Debugmodul \(DE\) implementiert diese Schnittstelle, um einen Kontext darstellt, in dem ein Ausdruck ausgewertet werden kann.  
+## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
+ Die Debugging-Modul (DE) implementiert diese Schnittstelle, um einen Kontext darstellen, in dem ein Ausdruck ausgewertet werden kann.  
   
-## Hinweise für Aufrufer  
- Ein Aufruf von [GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) gibt die diese Schnittstelle zurück.  Diese Schnittstelle ist nur verfügbar, wenn das Programm, das gedebuggt wird, angehalten wurde und ein Stapelrahmen verfügbar ist.  
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
+ Ein Aufruf von [GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) gibt diese Schnittstelle. Diese Schnittstelle ist zugegriffen werden kann, nur, wenn das Programm, der debuggt angehalten wurde und ein Stapelrahmen verfügbar ist.  
   
-## Methoden in die Vtable\-Reihenfolge  
- In der folgenden Tabelle werden die Methoden von `IDebugExpressionContext2`an.  
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
+ Die folgende Tabelle zeigt die Methoden der `IDebugExpressionContext2`.  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[GetName](../../../extensibility/debugger/reference/idebugexpressioncontext2-getname.md)|Ruft den Namen des Auswertungskontexts ab.|  
-|[ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)|Analysiert einen textbasierten Ausdruck für die Auswertung.|  
+|------------|-----------------|  
+|[GetName](../../../extensibility/debugger/reference/idebugexpressioncontext2-getname.md)|Ruft den Namen der Evaluierungskontext ab.|  
+|[ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)|Analysiert einen textbasierter Ausdruck zur Auswertung an.|  
   
-## Hinweise  
- Ein Auswertungs Elementkontext kann für einen Bereich für das Ausführen von Ausdrucksauswertung angesehen werden.  
+## <a name="remarks"></a>Hinweise  
+ Ein Evaluierungskontext kann als Bereich für die Auswertung von Ausdrücken betrachtet werden.  
   
- Wenn ein Programm angehalten wurde, erhält der Debug\- Manager der Sitzung \(SDM\) ein Stapelrahmen von DE mit einem Aufruf von [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md).  Das SDM ruft dann [GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) auf, um die `IDebugExpressionContext2`\-Schnittstelle abzurufen.  Dies wird bei einem Aufruf von [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) befolgt, um eine [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)\-Schnittstelle zu erstellen, die den analysierten Ausdruck darstellt, der ausgewertet werden kann.  
+ Ein Programm angehalten wurde, erhält der Sitzungs-Manager (SDM) einen Stapelrahmen aus DE mit einem Aufruf von [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md). Ruft die SDM dann [GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) zum Abrufen der `IDebugExpressionContext2` Schnittstelle. Durch einen Aufruf von darauf [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) zum Erstellen einer [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) -Schnittstelle, die zur Auswertung bereiter analysierten Ausdrucks darstellt.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
- [Core\-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Core-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
  [GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)   
  [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)

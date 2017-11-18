@@ -1,73 +1,75 @@
 ---
-title: "Message-Enumerator | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Message-enumerator"
-  - "Source Control-Plug-ins Nachricht-enumeration"
+title: Nachricht Enumerator | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- message enumerator
+- source control plug-ins, message enumeration
 ms.assetid: 4a4faa0d-d352-40ea-a21d-c09ea286a8e1
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 000b853c1f25d8b68ccdda87e6c0496aeeaaca0e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Message-Enumerator
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Folgende Flags werden verwendet, für die `TEXTOUTPROC` \-Funktion, die eine Callback\-Funktion, die die IDE beim Aufrufen bietet der [SccOpenProject](../extensibility/sccopenproject-function.md) \(finden Sie unter [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) ausführliche Informationen über die Callback\-Funktion\).  
+# <a name="message-enumerator"></a>Message-Enumerator
+Folgende Flags werden verwendet, für die `TEXTOUTPROC` Funktion, die eine Rückruffunktion, die die IDE beim Aufrufen bietet der [SccOpenProject](../extensibility/sccopenproject-function.md) (finden Sie unter [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) Einzelheiten zu den Rückruf (Funktion).  
   
- Wenn die IDE gestellt wird, um den Vorgang abzubrechen, kann es einen Abbrechen Nachrichten erhalten. In diesem Fall die Quellcode\-Plug\-in verwendet `SCC_MSG_STARTCANCEL` Fragen die IDE zum Anzeigen der **Abbrechen** Schaltfläche. Danach kann eine beliebige Anzahl von normale Nachrichten gesendet werden. Wenn eine der folgenden gibt `SCC_MSG_RTN_CANCEL`, das plug\-in wird den Vorgang beendet und gibt zurück. Das plug\-in auch fragt `SCC_MSG_DOCANCEL` in regelmäßigen Abständen, um festzustellen, ob den Vorgang wurde vom Benutzer abgebrochen wurde. Wenn alle Vorgänge erfolgen, oder wenn der Benutzer abgebrochen, das plug\-in sendet `SCC_MSG_STOPCANCEL`. Die `SCC_MSG_INFO`, SCC\_MSG\_WARNING, und SCC\_MSG\_ERROR Typen dienen für Nachrichten, die in der Liste von Nachrichten mit Bildlaufleiste angezeigt.`SCC_MSG_STATUS` ist ein spezieller Typ, der angibt, dass der Text in einer Statusleiste oder temporäre Anzeigebereich angezeigt werden sollen. Es nicht dauerhaft in der Liste verbleiben.  
+ Die IDE gestellt, um den Prozess abzubrechen, erhalten sie möglicherweise eine der Meldungen "Abbrechen". In diesem Fall die Quelle-Plug-in verwendet steuern `SCC_MSG_STARTCANCEL` , Fragen Sie die IDE anzuzeigen die **"Abbrechen"** Schaltfläche. Hiernach kann einen beliebigen Satz von normalen Nachrichten gesendet werden. Wenn keines dieser gibt `SCC_MSG_RTN_CANCEL`, und klicken Sie dann das plug-in wird den Vorgang beendet und gibt zurück. Das plug-in auch fragt `SCC_MSG_DOCANCEL` in regelmäßigen Abständen, um festzustellen, ob der Benutzer den Vorgang abgebrochen wurde. Wenn alle Vorgänge ausgeführt werden, oder wenn der Benutzer abgebrochen wurde, das plug-in sendet `SCC_MSG_STOPCANCEL`. Die `SCC_MSG_INFO`, SCC_MSG_WARNING, und SCC_MSG_ERROR Typen dienen für Nachrichten, die in der bildlauffähigen Liste mit Nachrichten angezeigt werden sollen. `SCC_MSG_STATUS`ist ein spezieller Typ, der angibt, dass der Text in einer Statusleiste oder temporäre Anzeigebereich angezeigt sollten. Es nicht dauerhaft bleiben in der Liste.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
-enum {   
-   SCC_MSG_RTN_CANCEL = -1,   
-   SCC_MSG_RTN_OK = 0,   
-   SCC_MSG_INFO = 1   
-   SCC_MSG_WARNING,   
-   SCC_MSG_ERROR,   
-   SCC_MSG_STATUS,   
-   SCC_MSG_DOCANCEL,   
-   SCC_MSG_STARTCANCEL,   
-   SCC_MSG_STOPCANCEL   
+enum {   
+   SCC_MSG_RTN_CANCEL = -1,   
+   SCC_MSG_RTN_OK = 0,   
+   SCC_MSG_INFO = 1   
+   SCC_MSG_WARNING,   
+   SCC_MSG_ERROR,   
+   SCC_MSG_STATUS,   
+   SCC_MSG_DOCANCEL,   
+   SCC_MSG_STARTCANCEL,   
+   SCC_MSG_STOPCANCEL   
 };  
 ```  
   
-## Mitglieder  
- SCC\_MSG\_RTN\_CANCEL  
- Zurückgeben von Rückruf Abbrechen an.  
+## <a name="members"></a>Member  
+ SCC_MSG_RTN_CANCEL  
+ Zurückgeben von Rückruf an, dass "Abbrechen".  
   
- SCC\_MSG\_RTN\_OK  
+ SCC_MSG_RTN_OK  
  Zurückgeben von Rückruf, um den Vorgang fortzusetzen.  
   
- SCC\_MSG\_INFO  
+ SCC_MSG_INFO  
  Meldung dient nur zu Informationszwecken.  
   
- SCC\_MSG\_WARNING  
+ SCC_MSG_WARNING  
  Nachricht ist eine Warnung.  
   
- SCC\_MSG\_ERROR  
+ SCC_MSG_ERROR  
  Nachricht ist ein Fehler.  
   
- SCC\_MSG\_STATUS  
+ SCC_MSG_STATUS  
  Nachricht ist für die Statusleiste vorgesehen.  
   
- SCC\_MSG\_DOCANCEL  
- Kein Text. IDE gibt `SCC_MSG_RTN_OK` oder `SCC_MSG_RTN_CANCEL`.  
+ SCC_MSG_DOCANCEL  
+ Kein Text; Gibt IDE `SCC_MSG_RTN_OK` oder `SCC_MSG_RTN_CANCEL`.  
   
- SCC\_MSG\_STARTCANCEL  
- Startet eine Schleife abbrechen.  
+ SCC_MSG_STARTCANCEL  
+ Startet eine Schleife "Abbrechen".  
   
- SCC\_MSG\_STOPCANCEL  
- Beendet die Schleife abbrechen.  
+ SCC_MSG_STOPCANCEL  
+ Beendet die Schleife "Abbrechen".  
   
-## Siehe auch  
- [Source Control\-Plug\-ins](../extensibility/source-control-plug-ins.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Datenquellen-Steuerelement-Plug-ins](../extensibility/source-control-plug-ins.md)   
  [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)

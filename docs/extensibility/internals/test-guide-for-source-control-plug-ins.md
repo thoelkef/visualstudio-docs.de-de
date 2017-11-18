@@ -1,110 +1,112 @@
 ---
-title: "Test-Handbuch f&#252;r Source Control-Plug-ins | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Plug-ins und Datenquellen-Steuerelement"
-  - "Test-Plug-ins der Datenquellen-Steuerelement [Visual Studio SDK]"
-  - "Tests, Source Control-Plug-ins"
-  - "Prüfung, Source Control-Plug-ins"
-  - "Source Control-Plug-ins Testhandbuch"
+title: "Handbuch für die Datenquellen-Steuerelement-Plug-ins | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- plug-ins, source control
+- source control [Visual Studio SDK], testing plug-ins
+- tests, source control plug-ins
+- testing, source control plug-ins
+- source control plug-ins, test guide
 ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
-caps.latest.revision: 26
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 26
+caps.latest.revision: "26"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 55783b604e929d2e5d4cdc613befa2fbec42aec4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Test-Handbuch f&#252;r Source Control-Plug-ins
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Dieser Abschnitt enthält Hinweise zum Testen des Quellcodeverwaltungs\-Plug\-In mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  Eine ausführliche Übersicht über die gängigsten testenden Bereiche sowie einige der verwickelteren Bereiche, die möglicherweise problematisch ist, wird bereitgestellt.  In dieser Übersicht wird nicht um eine vollständige Liste von Testfällen handeln.  
+# <a name="test-guide-for-source-control-plug-ins"></a>Testhandbuch für die Datenquellen-Steuerelement-Plug-ins
+Dieser Abschnitt enthält Anweisungen zum Testen als Quellcodeverwaltungs-Plug-in mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Eine umfassende Übersicht über die am häufigsten verwendeten Testbereiche sowie einige mehr komplizierte Bereiche, die möglicherweise problematisch wird bereitgestellt. Diese Übersicht ist nicht vorgesehen, um eine vollständige Liste der Testfälle.  
   
 > [!NOTE]
->  Einige Fehlerkorrekturen und Verbesserungen auf das neueste [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE anordnen können Probleme mit vorhandenen steckverbindungen Quellcodeverwaltung auf, die zuvor nicht bei der Verwendung von früheren Versionen von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]aufgetreten sind.  Es wird dringend empfohlen, dass Sie das vorhandene Quellcodeverwaltungs\-Plug\-In für die Bereiche testen, die in diesem Abschnitt aufgelistet werden, auch wenn keine Änderungen am Plug\-In seit der vorherigen Version von [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]vorgenommen wurden.  
+>  Einige Fehlerbehebungen und Verbesserungen auf die neueste [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE möglicherweise Probleme mit vorhandenen Datenquellen-Steuerelement-Plug-ins, die bei der Verwendung von früheren Versionen von zuvor nicht gefunden wurden aufdecken [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Es wird dringend empfohlen, dass Sie vorhandene Quellcodeverwaltungs-Plug-In für die Bereiche, die in diesem Abschnitt aufgelisteten testen, auch wenn keine Änderungen seit der vorherigen Version von an das plug-in vorgenommen wurden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
-## Allgemeine Vorbereitung  
- Ein Computer mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] und das Zielquellcodeverwaltungs\-plug\-in, das installiert wird, ist erforderlich.  Ein zweiter auf ähnliche Weise konfigurierter Computer kann für einige der Quellcodeverwaltung aus dem geöffneten Tests verwendet werden.  
+## <a name="common-preparation"></a>Allgemeine Vorbereitung  
+ Ein Computer mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] und das Ziel-Datenquellen-Steuerelement-Plug-In installiert ist, ist erforderlich. Ein zweiter Computer entsprechend konfiguriert, kann für die Benutzeroberflächenelemente von der Open Source Control Tests verwendet werden.  
   
-## Definition von Ausdrücken  
- Um diesen Test handbuch, die Definitionen der folgenden Ausdruck:  
+## <a name="definition-of-terms"></a>Begriffsdefinition  
+ Verwenden Sie in dieser Anleitung die folgenden Begriffsdefinitionen:  
   
- Clientprojekt  
- Jeder Projekttyp verfügbar in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , der Quellcodeverwaltungsintegration unterstützt \(z. B. [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]oder [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]\).  
+ Client-Projekt  
+ Ein Projekt in verfügbaren [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , die Integration der quellcodeverwaltung unterstützt (z. B. [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], oder [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]).  
   
  Webprojekt  
- Es gibt vier Typen von Webprojekten: Dateisystem, Lokale IIS, Remotewebsites und FTP.  
+ Es gibt vier Arten von Webprojekten: File System, lokaler IIS Remotestandorten und FTP.  
   
--   Dateisystem Projekte werden in einem lokalen Pfad erstellt, aber sie müssen nicht die Internetinformationsdienste \(IIS\) installiert, während sie intern über einen UNC\-Pfad zugegriffen werden kann und der IDE aus der Quellcodeverwaltung ausgecheckt, ähnlich wie bei Clientprojekte platziert werden.  
+-   Datei-System-Projekte werden in einem lokalen Verzeichnis erstellt, aber die IIS (Internetinformationsdienste) installiert werden, wie sie werden intern über einen UNC-Pfad zugegriffen, und in der quellcodeverwaltung aus der IDE, ähnlich wie clientprojekten platziert werden können, nicht erforderlich.  
   
--   Lokale IIS\-Projekt Arbeit mit IIS, das auf dem gleichen Computer installiert ist und mit einer URL zugegriffen wird, das dem lokalen Computer verweist.  
+-   Lokale IIS-Projekte können mit IIS, die auf dem gleichen Computer installiert ist und erfolgt mit einer URL auf dem lokalen Computer verweist.  
   
--   Außerdem werden von Projekten Remotesite unter einem IIS\-Dienstleistungen erstellt, sie werden jedoch unter Quellcodeverwaltung auf dem IIS\-Server Computer und nicht aus dem [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE Bereichs platziert.  
+-   Entfernten Standorten Projekte werden auch unter IIS-Dienste erstellt, jedoch werden sie platziert, in der quellcodeverwaltung auf dem IIS-Servercomputer und nicht von innerhalb der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  
   
--   FTP\-Projekte werden durch einen Remote FTP\-Server zugegriffen, nicht jedoch in einem Quellcodeverwaltungssystem gespeichert werden.  
+-   FTP-Projekte erfolgt über eine FTP-Remoteserver, aber sie können nicht in der quellcodeverwaltung platziert werden.  
   
  Eintragung  
- Ein anderer Ausdruck für die Projektmappe oder Projekt in die Quellcodeverwaltung einbezogen.  
+ Eine andere Bezeichnung für die Projektmappe oder das Projekt unter quellcodeverwaltung.  
   
- Versions\-Speicher  
- Die Quellcodeverwaltungs\-Datenbank, die durch das Quellcodeverwaltungs\-Plug\-In API zugegriffen wird.  
+ Versionsspeicher  
+ Der Quellcode-Verwaltungsdatenbank, die über die Quelle Steuerelement-Plug-in-API zugegriffen wird.  
   
-## Testbereiche in diesem Abschnitt beschriebenen  
+## <a name="test-areas-covered-in-this-section"></a>In diesem Abschnitt behandelten Testbereiche  
   
--   [Testbereich 1: Fügen Sie und Öffnen von Datenquellen\-Steuerelement hinzu](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
+-   [Testbereich 1: Fügen Sie hinzu, / Open-aus der Quellcodeverwaltung](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
   
-    -   1a Fall: Fügen Sie der Projektmappe zur Quellcodeverwaltung hinzufügen  
+    -   Case-1a: Hinzufügen von Projektmappen zur Quellcodeverwaltung  
   
-    -   1b Fall: Öffnen Sie die Projektmappe aus der Quellcodeverwaltung  
+    -   Fall 1 b: Öffnen Sie die Projektmappe aus der Quellcodeverwaltung  
   
-    -   1c Fall: Fügen Sie der Projektmappe aus der Quellcodeverwaltung hinzufügen  
+    -   Fall 1c: Hinzufügen von Projektmappen aus der Quellcodeverwaltung  
   
--   [Testbereich 2: Abrufen von Datenquellen\-Steuerelement](../../extensibility/internals/test-area-2-get-from-source-control.md)  
+-   [Testbereich 2: Abrufen aus der Quellcodeverwaltung](../../extensibility/internals/test-area-2-get-from-source-control.md)  
   
--   [Testbereich 3: Auschecken \/ Auschecken rückgängig machen](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
+-   [Testbereich 3: Auschecken / rückgängig: Auschecken](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
   
-    -   Fall 3: Stellen Sie sicher, out\/Rückgängig Auschecken  
+    -   Fall 3: Auschecken / rückgängig: Auschecken  
   
-    -   Fall 3a: Auschecken  
+    -   Case-3a: Auschecken  
   
-    -   Fall: 3b Nicht verbundenen Auschecken  
+    -   Fall 3 b: Auschecken getrennt  
   
-    -   Fall: 3c Abfragen\-Bearbeitung\/Abfragen\-Abwehr \(QEQS\)  
+    -   Fall 3c: Abfrage bearbeiten/Abfrage speichern (QEQS.)  
   
-    -   Fall: 3D Automatisches Auschecken  
+    -   Fall 3d: Automatische Auschecken  
   
-    -   Fall 3e: Auschecken rückgängig  
+    -   Case-3e: Auschecken rückgängig machen  
   
--   [Testbereich 4: Überprüfen Sie im](../../extensibility/internals/test-area-4-check-in.md)  
+-   [Testbereich 4: Einchecken](../../extensibility/internals/test-area-4-check-in.md)  
   
-    -   4a Fall: Der geänderte Elemente  
+    -   Case-4a: geänderten Elemente  
   
-    -   Fall 4b: Hinzufügen von Dateien  
+    -   Fall 4: Hinzufügen von Dateien  
   
-    -   4c Fall: Hinzufügen von Projekten  
+    -   Fall 4c: Hinzufügen von Projekten  
   
--   [Testbereich 5: Change\-Datenquellen\-Steuerelement](../../extensibility/internals/test-area-5-change-source-control.md)  
+-   [Testbereich 5: Ändern der Quellcodeverwaltung](../../extensibility/internals/test-area-5-change-source-control.md)  
   
-    -   Fall: 5a Bindung  
+    -   Fall 5a: Binden  
   
-    -   Fall: 5b Befreien von  
+    -   Fall 5 b: Aufheben der Bindung  
   
-    -   Fall: 5c Binden Sie erneut  
+    -   Case-5c: erneut binden  
   
 -   [Testbereich 6: Löschen](../../extensibility/internals/test-area-6-delete.md)  
   
--   [Testbereich 7: Freigabe](../../extensibility/internals/test-area-7-share.md)  
+-   [Testbereich 7: Freigeben](../../extensibility/internals/test-area-7-share.md)  
   
--   [Testbereich 8: Plug\-In\-Umschaltung](../../extensibility/internals/test-area-8-plug-in-switching.md)  
+-   [Testbereich 8: Plug-In-Wechsel](../../extensibility/internals/test-area-8-plug-in-switching.md)  
   
-    -   Fall 8a: Automatische Änderung  
+    -   Fall 8a: automatisch ändern  
   
-    -   Fall 8b: Projektmappe\-basierte Änderung  
+    -   Case-8 b: Change basierten Lösung  
   
-## Siehe auch  
- [Source Control\-Plug\-ins](../../extensibility/source-control-plug-ins.md)
+## <a name="see-also"></a>Siehe auch  
+ [Quellcodeverwaltungs-Plug-Ins](../../extensibility/source-control-plug-ins.md)

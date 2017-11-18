@@ -1,65 +1,65 @@
 ---
-title: "IDebugDisassemblyStream2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDisassemblyStream2"
-helpviewer_keywords: 
-  - "IDebugDisassemblyStream2-Schnittstelle"
+title: IDebugDisassemblyStream2 | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugDisassemblyStream2
+helpviewer_keywords: IDebugDisassemblyStream2 interface
 ms.assetid: b03cab0c-3f0b-4cc6-88dc-acb3b48c567a
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d3c15e358a415bd3efc95b81daa2058320d79478
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugDisassemblyStream2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugdisassemblystream2"></a>IDebugDisassemblyStream2
 Diese Schnittstelle stellt einen Datenstrom von Anweisungen dar.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugDisassemblyStream2 : IUnknown  
 ```  
   
-## Hinweise für Implementierer  
- Ein Debuggen Modul implementiert diese Schnittstelle, um die Disassembly des Codes eines Programms zu unterstützen.  
+## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
+ Ein Debugmodul implementiert diese Schnittstelle, um die Disassembly von einem Programm-Codes zu unterstützen.  
   
-## Hinweise für Aufrufer  
- Ein Aufruf der [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)\-Methode gibt diese Schnittstelle zurück.  
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
+ Ein Aufruf der [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) Methodenrückgabe diese Schnittstelle.  
   
-## Methoden in die Vtable\-Reihenfolge  
- In der folgenden Tabelle werden die Methoden von `IDebugDisassemblyStream2`an.  
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
+ Die folgende Tabelle zeigt die Methoden der `IDebugDisassemblyStream2`.  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[Lesen](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)|Liest die Anweisungen, die von der aktuellen Position im Disassemblys datenstrom.|  
-|[Suchen](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)|Verschiebt den Zeiger im Disassemblys lesen datenstrom eine festgelegte Anzahl von Anweisungen im Verhältnis zu einer angegebenen Position.|  
-|[GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)|Gibt einen Speicherort des Codes Bezeichner für einen bestimmten Code Elementkontext zurück.|  
-|[GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)|Gibt ein Code für die gemäß einem angegebenen Speicherort des Codes Bezeichner zurück.|  
-|[GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)|Gibt einen Speicherort des Codes Bezeichner zurück, der den aktuellen Speicherort des Codes darstellt.|  
-|[GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md)|Ruft das Quelldokument ab, das diesem Disassemblys datenstrom zugeordnet ist.|  
-|[GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)|Ruft den Bereich dieses Disassemblysdatenstroms ab.|  
-|[GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)|Ruft die Größe dieses Disassemblysdatenstroms ab.|  
+|------------|-----------------|  
+|[Lesen](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)|Liest die Anweisungen, die von der aktuellen Position im Disassemblyfenster Datenstrom ab.|  
+|[Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)|Verschiebt den schreibgeschützten Zeiger im Disassembly-Datenstrom einer bestimmten Anzahl von Anweisungen relativ zu einer angegebenen Position.|  
+|[GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)|Gibt die ID für den Standort einen Code für einen bestimmten Code-Kontext zurück.|  
+|[GetCodeContext](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodecontext.md)|Gibt ein Kontextobjekt für Code, eine ID für den Standort angegebenen Code entspricht.|  
+|[GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)|Gibt einen Code Position-Bezeichner, der die aktuelle Codeposition darstellt.|  
+|[GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md)|Ruft das Quelldokument, dem dieser Stream Disassembly zugeordnet ist.|  
+|[GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)|Ruft den Bereich dieses Streams Disassembly ab.|  
+|[GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)|Ruft die Größe dieses Streams Disassembly ab.|  
   
-## Hinweise  
- Der Disassemblys datenstrom kann erstellt werden, um den gesamten Adressraum oder nur eine Funktion oder ein Modul innerhalb des Leerraums darzustellen.  Jede Anweisung wird von einer [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) Struktur dargestellt, die durch einen Aufruf der [Lesen](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)\-Methode zurückgegeben wird.  
+## <a name="remarks"></a>Hinweise  
+ Die Disassembly Stream kann erstellt werden, im gesamten Adressraum oder nur eine Funktion oder dem Modul innerhalb des Bereichs darstellt. Jede Anweisung wird dargestellt, indem eine [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) Struktur zurückgegeben, die durch einen Aufruf der [lesen](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) Methode.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
- [Core\-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Core-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
  [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)   
  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

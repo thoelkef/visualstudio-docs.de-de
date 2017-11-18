@@ -1,28 +1,29 @@
 ---
-title: "Zu den im Dialogfeld Neues Element hinzuf&#252;gen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Fügen Sie zu Dialogfeld Neues Element hinzu"
+title: "Zu den im Dialogfeld Neues Element hinzufügen | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Add New Item dialog box, contributing to
 ms.assetid: b2e53175-9372-4d17-8c2b-9264c9e51e9c
-caps.latest.revision: 18
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 13f4d254027fe168018fe597f772518bd8ac6b94
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Zu den im Dialogfeld Neues Element hinzuf&#252;gen
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ein Projekt untertyp kann ein vollständiges neues Verzeichnis von Elementen für das **Neues Element hinzufügen** Dialogfeld über Registrieren von **Element hinzufügen** Vorlagen unter dem `Projects` Registrierungsunterschlüssel bereitstellen.  
+# <a name="contributing-to-the-add-new-item-dialog-box"></a>Zu den im Dialogfeld Neues Element hinzufügen
+Ein Projektuntertyp bietet ein vollständiges neues Verzeichnis von Elementen für die **neues Element hinzufügen** (Dialogfeld), indem Sie registrieren **Element hinzufügen** Vorlagen unter dem `Projects` Registrierungsunterschlüssel.  
   
-## Das Registrieren Sie Neues Element hinzufügen Vorlagen  
- Dieser Abschnitt befindet sich unter **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\VisualStudio\\8.0\\Projects** in der Registrierung.  In den nachfolgenden Registrierungseinträge ein [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Projekt enthalten sind, das durch einen hypothetischen Projekt untertyp aggregiert wird.  Die Einträge für das [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Projekts werden im Folgenden aufgeführt.  
+## <a name="registering-add-new-item-templates"></a>Registrieren zum Hinzufügen neuer Elemente Vorlagen  
+ Dieser Abschnitt befindet sich unter **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Projects** in der Registrierung. Die folgenden Registrierungseinträge angenommen ein [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Projekt wird durch einen hypothetischen Projektuntertyp aggregiert. Die Einträge für die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Projekt sind unten aufgeführt.  
   
 ```  
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Projects\{F184B08F-C81C-45F6-A57F-5ABD9991F28F}]  
@@ -36,12 +37,12 @@ Ein Projekt untertyp kann ein vollständiges neues Verzeichnis von Elementen fü
 "TemplatesDir"="projectSubTypeTemplatesDir\\VBProjectItems"  
 ```  
   
- Der `AddItemTemplates\TemplateDirs` Unterschlüssel enthält die Registrierungseinträge mit dem Pfad des Verzeichnisses ab, in dem die Elemente bereitgestellt **Neues Element hinzufügen** im Dialogfeld platziert werden.  
+ Die `AddItemTemplates\TemplateDirs` Unterschlüssel enthält Einträge in der Registrierung durch den Pfad zu dem Verzeichnis, in dem Elemente im zur Verfügung gestellt, der **neues Element hinzufügen** Dialogfeld platziert werden.  
   
- Die Umgebung wird automatisch alle `AddItemTemplates` Daten mit dem `Projects` Registrierungsunterschlüssel.  Dies kann die Daten für niedrige Projektdurchführungen sowie die Daten für Typen untertyp bestimmtes Projekt einschließen.  Jeder Projektuntertyp wird durch einen Projekttyp `GUID`identifiziert.  Der Projekt untertyp kann angeben, dass eine alternative Gruppe `Add Item` Vorlagen für eine bestimmte Projektinstanz mit dem Typ verwendet werden sollte, indem er die `VSHPROPID_ AddItemTemplatesGuid`\-Enumeration von <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> in <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> Implementierung unterstützt, um den GUID\-Wert des Projekts untertyps zurückzugeben.  Wenn `VSHPROPID_AddItemTemplatesGuid`\-Eigenschaft nicht angegeben ist, wird die Projekt\-GUID verwendet.  
+ Die Umgebung lädt automatisch alle von der `AddItemTemplates` Daten unter der `Projects` Registrierungsunterschlüssel. Dies kann die Daten für Basisprojekt Implementierungen sowie die Daten für bestimmte Untertyp Projekttypen einschließen. Jedes Projektuntertyp wird durch einen Projekttyp identifiziert `GUID`. Untertyp des Projekts kann angeben, dass alternative Satz `Add Item` Vorlagen sollte für einen bestimmten Flavor-Projektsystem Projektinstanz verwendet werden, durch die Unterstützung der `VSHPROPID_ AddItemTemplatesGuid` Enumeration von <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> in <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> -Implementierung, die die GUID zurück der Wert der Untertyp des Projekts. Wenn `VSHPROPID_AddItemTemplatesGuid` Eigenschaft nicht angegeben wird, das Basisprojekt GUID verwendete.  
   
- Sie können Elemente im Dialogfeld **Neues Element hinzufügen** filtern, indem Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg>\-Schnittstelle im Projekt untertyp\-Aggregator Objekt implementieren.  Beispielsweise kann ein Projekt untertyp, der ein Datenbankprojekt durchführt, indem ein [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Projekt aggregiert, die einzelnen Elemente im Dialogfeld **Neues Element hinzufügen**[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] filtern, indem er die Filterung implementiert und kann wiederum des Datenbankprojekts indem die Unterstützung von `VSHPROPID_ AddItemTemplatesGuid` in <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>bestimmte Elemente hinzufügen.  Weitere Informationen zu Filtern und Hinzufügen von Elementen zum **Neues Element hinzufügen** Dialogfeld finden Sie unter [Hinzufügen von Elementen, die zum Hinzufügen neuer Elemente Dialogfelder](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md).  
+ Sie können Elemente in Filtern die **neues Element hinzufügen** (Dialogfeld), durch die Implementierung der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg> Schnittstelle für das Projekt Untertyp Aggregator-Objekt. Z. B. ein Projektuntertyp, der ein Datenbankprojekt durch aggregieren implementiert eine [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Projekt, Filtern können der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] spezifischen Elemente aus der **neues Element hinzufügen** Dialogfeld durch Filterung implementieren, und aktivieren, können hinzufügen Datenbank-Projekt bestimmte Elemente durch die Unterstützung `VSHPROPID_ AddItemTemplatesGuid` in <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>. Weitere Informationen zu filtern und Hinzufügen von Elementen der **neues Element hinzufügen** (Dialogfeld), finden Sie unter [Elemente hinzufügen, um das Dialogfelder Neues Element hinzufügen](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md).  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>   
- [CATIDs für Objekte, die in der Regel verwendet werden, um Projekte zu erweitern.](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
+ [CATIDs für Objekte, die in der Regel zum Erweitern von Projekten verwendet werden](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

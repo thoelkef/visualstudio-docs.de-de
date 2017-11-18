@@ -1,29 +1,31 @@
 ---
-title: "VSCT-Compiler-Befehlszeilen-Flags | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "VSCT-Dateien, kompilieren"
-  - "Datei Befehlstabelle Kompilierung (VSCT-Dateien)"
+title: VSCT-Compiler-Befehlszeilen-Flags | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- VSCT files, compiling
+- command-table file compilation (VSCT files)
 ms.assetid: 9dc6c33f-e6cf-4cf2-9b05-e8f7bfac1cfb
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: fd18d04adfbf3acd0ca50c1e75bd2a1694b28721
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# VSCT-Compiler-Befehlszeilen-Flags
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="vsct-compiler-command-line-flags"></a>VSCT-Compiler-Befehlszeilen-Flags
 Der Visual Studio Befehl Tabelle (VSCT)-Compiler bietet Befehlszeilenschalter, um sicherzustellen, dass erfolgreichen Kompilierung VSCT-Dateien.  
   
 ## <a name="command-line-parameters"></a>Befehlszeilenparameter  
- Zum Anzeigen der grundlegenden VSCT-Hilfe aus eine [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Befehl** Fenster, navigieren Sie zu der *Visual Studio SDK-Installationspfad*\VisualStudioIntegration\Tools\Bin\-Ordner, und geben:  
+ Grundlegende VSCT-Hilfe aus Anzeigen einer [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Befehl** Fenster, navigieren Sie zu der *Visual Studio SDK-Installationspfad*\VisualStudioIntegration\Tools\Bin\ Ordner, und geben:  
   
 ```  
 vsct /?  
@@ -60,7 +62,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 |-D|Geben Sie zusätzliche definierten Symbole.|  
 |-I:|Geben Sie die zusätzliche Pfade enthalten, die beim Auflösen von Dateiverweisen verwendet werden soll.|  
 |-L|Geben Sie die <xref:System.Globalization.CultureInfo> Kulturnamen, z. B. "En-US".|  
-|– E|Ausgeben von C#-Objekte im angegebenen Namespace für Befehl Elemente, gefolgt von [C &#124; H &#124; N]:*Filename*in dem C = C#-, H = C++-Header, N = Namespace. Der Namespace ist für c# erforderlich.|  
+|– E|Ausgeben von C#-Objekte im angegebenen Namespace für Befehl Elemente, gefolgt von [C &#124; H &#124; N]:*Filename*, in dem C = C#-, H = C++-Header, N = Namespace. Der Namespace ist für c# erforderlich.|  
 |-v|Eine ausführliche Ausgabe.|  
   
  Der -L-Switch weist den Compiler, wählen Sie eine Gruppe von Zeichenfolgen, die den binären CTO-Datei erzeugen, das entspricht, dem angegebenen <xref:System.Globalization.CultureInfo> Kulturname. Der angegebene Kulturname übereinstimmen, die Language-Attribut aus einem oder mehreren [Zeichenfolgen Element](../../extensibility/strings-element.md) in der VSCT-Datei. Wenn ein Zeichenfolgen-Element kein Language-Attribut verfügt, wird Sie aus dem entsprechenden geerbt [CommandTable Element](../../extensibility/commandtable-element.md).  
@@ -71,11 +73,11 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
   
  Der Switch -E kann verwendet werden, eine Headerdatei für die C-Format ausgeben, die die Symbole enthält, die von der Befehlstabelle verwendet werden oder eine C#-Datei ausgeben, die Objekte für die Symbole Befehl enthält.  
   
- -D "und" – I Switches verwenden, die Syntax der Präprozessor Cl.exe C-Flags, die den gleichen Namen haben. – D Definitionen, die das Format X = Y aufweisen, werden verwendet, für die Erweiterung des XML-basierte \< benutzerdefinierte> testet `Condition` Attribute. – Ich Includepfaden werden zum Auflösen von \< Include>, \< "extern"> und \< Bitmap> Dateiverweise. Weitere Informationen finden Sie unter der [VSCT-XML-Schemareferenz](../../extensibility/vsct-xml-schema-reference.md).  
+ -D "und"-I Switches verwenden, die Syntax der Präprozessor Cl.exe C-Flags, die den gleichen Namen haben. D - Definitionen, die das Format X = Y aufweisen, werden verwendet, für die Erweiterung des XML-basierte \<definierte > testet auf `Condition` Attribute. -I: Includepfaden werden zum Auflösen von \<Include >, \<"extern" > und \<Bitmap > Dateiverweise. Weitere Informationen finden Sie unter der [VSCT-XML-Schemareferenz](../../extensibility/vsct-xml-schema-reference.md).  
   
- VSCT-Compiler kann auch eine vorher erstellte binäre Datei dekompilieren. Zu diesem Zweck geben Sie eine Binärdatei für das \< Infile>.   Wenn die Binärdatei, die von der VSCT-Compiler erstellt wurde, müssen die Symbole bereits eingebettet und erzeugt die Ausgabe mit den symbolischen Namen in einem \< Symbole> Abschnitt der Ausgabe. Wenn die Binärdatei, die von der CTC-Compiler erstellt wurde, wird die Ausgabe der tatsächlichen-GUIDs und IDs enthalten. Wenn die *.ctsym-Datei, die vom aktuellen Versionen der Ctc.exe erzeugt wird im gleichen Ordner wie die binäre Eingabedatei ist, wird die Symbole aus dieser Datei geladen und für die Ausgabe verwendet.  
+ VSCT-Compiler kann auch eine vorher erstellte binäre Datei dekompilieren. Zu diesem Zweck geben Sie eine binäre Datei für die \<Infile >.   Wenn die Binärdatei, die von der VSCT-Compiler erstellt wurde, müssen die Symbole bereits eingebettet und erzeugt die Ausgabe mit den symbolischen Namen in einem \<Symbole > Abschnitt der Ausgabe. Wenn die Binärdatei, die von der CTC-Compiler erstellt wurde, wird die Ausgabe der tatsächlichen-GUIDs und IDs enthalten. Wenn die *.ctsym-Datei, die vom aktuellen Versionen der Ctc.exe erzeugt wird im gleichen Ordner wie die binäre Eingabedatei ist, wird die Symbole aus dieser Datei geladen und für die Ausgabe verwendet.  
   
 ## <a name="see-also"></a>Siehe auch  
  [Visual Studio-Befehlstabelle (. VSCT)-Dateien](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [VSCT-XML-Schemareferenz](../../extensibility/vsct-xml-schema-reference.md)   
- [Wie VSPackages Elemente der Benutzeroberfläche hinzufügen](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+ [Hinzufügen von Benutzeroberflächenelementen mit VSPackages](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

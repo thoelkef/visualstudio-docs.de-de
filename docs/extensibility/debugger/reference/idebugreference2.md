@@ -1,80 +1,80 @@
 ---
-title: "IDebugReference2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugReference2"
-helpviewer_keywords: 
-  - "IDebugReference2-Schnittstelle"
+title: IDebugReference2 | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugReference2
+helpviewer_keywords: IDebugReference2 interface
 ms.assetid: 3cfed312-f532-4bce-84a5-1677c14567d7
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 27e880dbf5b602c1bd0b98c6ce5ccc2fdf88e37a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugReference2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Diese Schnittstelle stellt einen Verweis auf eine Stapelrahmen \- Eigenschaft oder einer anderen Eigenschaft dar.  
+# <a name="idebugreference2"></a>IDebugReference2
+Diese Schnittstelle stellt einen Verweis auf eine Stack-Frame-Eigenschaft oder eine andere Eigenschaft dar.  
   
 > [!NOTE]
->  `IDebugReference2` ist für eine zukünftige Verwendung reserviert und alle zugehörigen Methoden sollten `E_NOTIMPL`zurückgeben.  
+>  `IDebugReference2`ist reserviert für zukünftige Verwendung, und alle seine Methoden zurückgeben sollte `E_NOTIMPL`.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugReference2 : IUnknown  
 ```  
   
-## Hinweise für Implementierer  
- DE implementiert diese Schnittstelle, um einen Verweis auf eine bestimmte Weise Wert darstellt.  Beispielsweise könnte der Wert eines numerischen Werts aufgrund einer Ausdrucksauswertung, einem Speicher, der für die Anzeige des Arbeitsspeichers verwendet wurden, oder eine Liste von Registern und deren Werte sein.  
+## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
+ Die DE implementiert diese Schnittstelle, um einen Verweis auf eine bestimmte Art von Wert darstellen. Der Wert kann z. B. einen numerischen Wert als Ergebnis eine Auswertung von Ausdrücken, eine Speicherkontext zum Anzeigen von Arbeitsspeicher oder eine Liste von Registern und deren Werten sein.  
   
-## Hinweise für Aufrufer  
- [\[GetReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md) Aufruf zum Abrufen dieser Schnittstelle.  [GetParent](../../../extensibility/debugger/reference/idebugreference2-getparent.md) und [GetDerivedMostReference](../../../extensibility/debugger/reference/idebugreference2-getderivedmostreference.md) hinaus geben diese Schnittstelle zurück.  
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
+ Rufen Sie [GetReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md) beim Abrufen dieser Schnittstelle. [GetParent](../../../extensibility/debugger/reference/idebugreference2-getparent.md) und [GetDerivedMostReference](../../../extensibility/debugger/reference/idebugreference2-getderivedmostreference.md) diese Schnittstelle auch zurück.  
   
-## Methoden in die Vtable\-Reihenfolge  
- In der folgenden Tabelle werden die Methoden von `IDebugReference2`an.  
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
+ Die folgende Tabelle zeigt die Methoden der `IDebugReference2`.  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)|Ruft die [DEBUG\_REFERENCE\_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) Struktur ab, die diesen Verweis beschreibt.|  
-|[SetValueAsString](../../../extensibility/debugger/reference/idebugreference2-setvalueasstring.md)|Legt den Wert dieses Verweises aus einer Zeichenfolge fest.|  
-|[SetValueAsReference](../../../extensibility/debugger/reference/idebugreference2-setvalueasreference.md)|Legt den Wert dieses Verweises auf einen anderen Verweis fest.|  
-|[EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)|Listet die untergeordneten Elemente dieses Verweises auf.|  
-|[GetParent](../../../extensibility/debugger/reference/idebugreference2-getparent.md)|Ruft das übergeordnete Element dieses Verweises ab.|  
-|[GetDerivedMostReference](../../../extensibility/debugger/reference/idebugreference2-getderivedmostreference.md)|Ruft den höchst\-abgeleiteten Verweis dieses Verweises ab.|  
-|[GetMemoryBytes](../../../extensibility/debugger/reference/idebugreference2-getmemorybytes.md)|Ruft die Bytes an Arbeitsspeicher ab, auf den dieser Verweis verweist.|  
-|[GetMemoryContext](../../../extensibility/debugger/reference/idebugreference2-getmemorycontext.md)|Ruft einen Speicher als Elementkontext dieser Referenz ab.|  
-|[GetSize](../../../extensibility/debugger/reference/idebugreference2-getsize.md)|Ruft die Größe \(in Bytes\) des Verweises ab.|  
-|[SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)|Legt den Referenztyp fest.|  
-|[Vergleichen](../../../extensibility/debugger/reference/idebugreference2-compare.md)|Vergleicht diesen Verweis mit einem anderen.|  
+|------------|-----------------|  
+|[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)|Ruft die [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) Struktur, die dieser Verweis beschreibt.|  
+|[SetValueAsString](../../../extensibility/debugger/reference/idebugreference2-setvalueasstring.md)|Legt den Wert des Verweises aus einer Zeichenfolge.|  
+|[SetValueAsReference](../../../extensibility/debugger/reference/idebugreference2-setvalueasreference.md)|Legt den Wert des Verweises aus eines anderen Verweises.|  
+|[EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)|Listet die untergeordneten Elemente des Verweises an.|  
+|[GetParent](../../../extensibility/debugger/reference/idebugreference2-getparent.md)|Ruft das übergeordnete Element des Verweises ab.|  
+|[GetDerivedMostReference](../../../extensibility/debugger/reference/idebugreference2-getderivedmostreference.md)|Ruft die am meisten abgeleiteten Verweis des Verweises ab.|  
+|[GetMemoryBytes](../../../extensibility/debugger/reference/idebugreference2-getmemorybytes.md)|Ruft die Speicherbytes an, zu denen diese Referenz bezieht sich, ab.|  
+|[GetMemoryContext](../../../extensibility/debugger/reference/idebugreference2-getmemorycontext.md)|Ruft eine Arbeitsspeicher-Kontext für diesen Verweis ab.|  
+|[GetSize](../../../extensibility/debugger/reference/idebugreference2-getsize.md)|Ruft die Größe in Bytes des Verweises an.|  
+|[SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)|Legt den Verweistyp fest.|  
+|[Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md)|Vergleicht diesen Verweis mit einem anderen.|  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
   
 > [!NOTE]
->  Dieser Verwendung von „Eigenschaft“ sollte nicht zu verwechseln mit dieser Bedeutung einer Membervariablen einer Klasse, obwohl `IDebugReference2` eine solche Entität darstellen kann.  
+>  Diese Verwendung von "Property" dürfen nicht mit, d. h. einer Klasse, einer Membervariable verwechselt werden, obwohl ein `IDebugReference2` können solche Entität darstellen.  
   
- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) stellt eine Eigenschaft, während `IDebugReference2` einen Verweis auf eine Eigenschaft darstellt \(in der Regel ein Verweis auf ein Objekt im Programm, das gedebuggt wird.  
+ [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) stellt eine Eigenschaft während `IDebugReference2` einen Verweis auf eine Eigenschaft, die in der Regel einen Verweis auf ein Objekt im zu debuggenden Programms darstellt.  
   
- Der Hauptunterschied zwischen einer Eigenschaft und einem Verweis ist, dass eine Eigenschaft einer benannten Instanz eines Objekts als Verweis auf eine unbenannte Instanz verweist.  Zum Beispiel kann eine Eigenschaft verweist auf ein Objekt im Heap des Programms durch `"a.b"`an.  Eine andere Eigenschaft verweist möglicherweise das gleiche Objekt wie `"c.d"`an.  Die Möglichkeit des erhöhen, auf dieser Eigenschaft erfordert dieses `"a.b"` , oder `"c.d"` ist im Bereich.  Ein Verweis auf dieses Objekt denselben namenlos ist. Es kann das verwiesen wird, sofern der Speicher für dieses Objekt gültig ist.  
+ Der Hauptunterschied zwischen einer Eigenschaft und einem Verweis ist, dass eine Eigenschaft mit einer benannten Instanz eines Objekts bezieht, während ein Verweis auf eine unbenannte Instanz verweist. Beispielsweise kann eine Eigenschaft verweisen, auf ein Objekt in das Programm Heap durch `"a.b"`. Eine andere Eigenschaft kann sich auf das gleiche Objekt wie beziehen `"c.d"`. Die Methode zum Verweisen auf diese Eigenschaft erfordert, dass `"a.b"` oder `"c.d"` im Bereich liegen. Ein Verweis auf das gleiche Objekt ist namenlos; das Objekt kann verwiesen werden, solange der Arbeitsspeicher für dieses Objekt gültig ist.  
   
- Eine `IDebugProperty2`\-Schnittstelle kann als Wert betrachtet werden mit einem Namen, einem Typ und einer angegebenen Adresse.  `IDebugReference2`kann für einen Typ und eine Adresse dagegen beibehalten werden.  
+ Ein `IDebugProperty2` Schnittstelle als einen Wert mit einem Namen, einen Typ und eine Adresse betrachtet werden kann. Ein `IDebugReference2`, auf dem anderen andererseits, können als einen Typ und eine Adresse betrachtet werden.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
- [Core\-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
- [DEBUG\_REFERENCE\_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Core-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
- [\[GetReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md)
+ [GetReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md)

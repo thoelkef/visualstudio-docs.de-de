@@ -1,34 +1,35 @@
 ---
-title: "Liste der Eigenschaften im Fenster Objekt | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Im Eigenschaftenfenster-Liste"
+title: Liste der Eigenschaften im Fenster Objekt | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Properties window, object list
 ms.assetid: 6c159c9d-345d-4b23-8ddd-9839d338b62f
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: dad79623bbc721c67c19a37436d2bf5e64b93c59
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Liste der Eigenschaften im Fenster Objekt
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Die Objektliste im **Eigenschaften** Fenster ist eine Dropdownliste. Auf diese Weise können Sie die Auswahl auf andere Objekte zu ändern, die in einer oder mehreren ausgewählten Fenster verfügbar sind.  Das Auswählen eines anderen Objekts aus dieser Liste startet einen Aufruf des <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> , um die Umgebungen zu informieren, dass ein neues Objekt ausgewählt wurde.  Die Informationen, die im **Eigenschaften** Fenster angezeigt werden, werden dann geändert, um die Eigenschaften anzuzeigen, die dem neu ausgewählte Objekt beziehen.  
+# <a name="properties-window-object-list"></a>Liste der Eigenschaften im Fenster Objekt
+In der Objektliste der **Eigenschaften** Fenster ist eine Dropdown-Liste, die Ihnen ermöglicht, ändern Sie die Auswahl auf andere Objekte in mindestens einem ausgewählten Windows verfügbar. Wählen ein anderes Objekt aus, in dieser Liste löst einen Aufruf von <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> um der Umgebung zu informieren, dass ein neues Objekt ausgewählt wurde. Die Informationen den **Eigenschaften** Fenster wird geändert, um die neu ausgewählte Objekt zugeordneten Eigenschaften anzuzeigen.  
   
-## Die Objektliste  
- Die Objektliste besteht aus zwei Feldern: Der Objektname \(in Fettschrift angezeigt\) und der Objekttyp.  
+## <a name="the-object-list"></a>Objektliste  
+ Die Objektliste besteht aus zwei Felder: den Objektnamen (in Fettschrift angezeigt) und den Objekttyp.  
   
- Der Objektname, der auf der linken Seite des Objekttyps in Fettschrift angezeigt wird, wird das Objekt selbst mit der `Name`\-Eigenschaft abgerufen, die von der <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo>\-Schnittstelle.  <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo.GetClassInfo%2A>die einzige Möglichkeit, auf <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo>, gibt <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo> für die Co\-Klasse dieser Schnittstelle zurück.  Das **Eigenschaften** Fenster verwendet <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo> , um den Namen der Co\-Klasse abzurufen, die als der Objektname in der Dropdownliste angezeigt wird.  
+ Der Objektname, der auf der linken Seite des Objekttyps in Fettdruck angezeigt wird abgerufen, aus dem Objekt selbst mit den `Name` vom bereitgestellte Eigenschaft der <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo> Schnittstelle. <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo.GetClassInfo%2A>, auf die einzige Methode <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo>, gibt <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo> für diese Schnittstelle, Co-Klasse. Die **Eigenschaften** Fenster verwendet <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo> abzurufenden den Namen der Co-Klasse, die als der Objektname in der Dropdown-Liste angezeigt wird.  
   
- Wenn das Objekt keine `Name`\-Eigenschaft verfügt, wird kein Name der Objektliste im Bereich Name angezeigt.  Sie können eine Namenseigenschaft dem Objekt hinzufügen, wenn Sie den Namen, der in der Objektliste angezeigt wird.  
+ Wenn das Objekt keine `Name` Eigenschaft, einen Namen wird die Objektliste im Bereich "Name" nicht angezeigt. Sie können eine Name-Eigenschaft auf das Objekt hinzufügen, wenn Sie den Namen in der Liste angezeigt werden soll.  
   
- Wenn das COM\-Objekt <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo>nicht implementiert, wird das **Eigenschaften** Fenster den Schnittstellennamen anstelle des Objektnamens links neben der Liste an.  
+ Wenn das COM-Objekt nicht implementiert <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo>, **Eigenschaften** Fenster werden die Namen der Schnittstelle anstelle des Objektnamens angegeben auf der linken Seite der Liste angezeigt.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Erweitern von Eigenschaften](../../extensibility/internals/extending-properties.md)

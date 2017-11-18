@@ -1,46 +1,47 @@
 ---
-title: "IDebugPortSupplierEx2::SetServer | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugPortSupplierEx2::SetServer"
+title: IDebugPortSupplierEx2::SetServer | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugPortSupplierEx2::SetServer
 ms.assetid: 0e8ef194-3a4f-4abf-8382-4607ab3005d1
-caps.latest.revision: 5
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 1750d6891cf6bec2c78212ad5c7f9137247f9147
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPortSupplierEx2::SetServer
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Legt den zentralen Server für den Anschlusslieferanten ab.  
+# <a name="idebugportsupplierex2setserver"></a>IDebugPortSupplierEx2::SetServer
+Legt die Core-Server für den Port Lieferanten fest.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT SetServer(  
-   IDebugCoreServer2* pServer  
+   IDebugCoreServer2* pServer  
 );  
 ```  
   
-```c#  
+```csharp  
 int SetServer(  
-   IDebugCoreServer2 pServer  
+   IDebugCoreServer2 pServer  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pServer`  
- Für den Anschlusslieferanten zentralen Server festzulegen.  
+ Core-Servers an, für den Lieferanten Port festgelegt.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugPortSupplierEx2](../../../extensibility/debugger/reference/idebugportsupplierex2.md)

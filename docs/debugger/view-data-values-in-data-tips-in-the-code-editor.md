@@ -1,148 +1,144 @@
 ---
-title: "Anzeigen von Datenwerten als Datentipps im Code-Editor | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "DataTips (Tool)"
-  - "Debuggen [Visual Studio], DataTips"
+title: Anzeigen von Datenwerten in DataTips im Code-Editor | Microsoft Docs
+ms.custom: 
+ms.date: 07/14/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+- JScript
+helpviewer_keywords:
+- debugging [Visual Studio], DataTips
+- DataTips tool
 ms.assetid: ffa7bd18-439b-4685-a9b3-c7884b5de41f
-caps.latest.revision: 38
-caps.handback.revision: 38
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "38"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2eb975b5d4c1f3450ca18b1ea0da3cd3b7fb6375
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Anzeigen von Datenwerten als Datentipps im Code-Editor
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+# <a name="view-data-values-in-datatips-in-the-code-editor"></a>Anzeigen von Datenwerten in DataTips, im Code-editor
+DataTips stellen eine praktische Möglichkeit dar, um beim Debuggen Informationen über Variablen im Programm anzuzeigen. Sie können DataTips nur im Unterbrechungsmodus verwenden und nur mit Variablen, die sich im aktuellen Gültigkeitsbereich der Ausführung befinden.
+  
+### <a name="to-display-a-datatip"></a>Einen DataTip angezeigt.  
+  
+1. Festlegen eines Haltepunkts und das Debuggen starten (drücken Sie **F5**).
 
-DataTips stellen eine praktische Möglichkeit dar, um beim Debuggen Informationen über Variablen im Programm anzuzeigen.  Sie können DataTips nur im Unterbrechungsmodus verwenden und nur mit Variablen, die sich im aktuellen Gültigkeitsbereich der Ausführung befinden.  
+2. Wenn im Debugger angehalten wird, platzieren Sie den Mauszeiger auf eine beliebige Variable im aktuellen Bereich.
   
- In [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] können DataTips an einer bestimmten Position in einer Quelldatei angeheftet werden, oder sie können über allen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\-Fenstern unverankert angezeigt werden.  
+     Ein DataTip wird angezeigt.
   
-### So zeigen Sie DataTips an \(nur im Unterbrechungsmodus\)  
-  
-1.  Platzieren Sie in einem Quellcodefenster den Mauszeiger auf eine beliebige Variable aus dem aktuellen Gültigkeitsbereich.  
-  
-     Ein DataTip wird angezeigt.  
-  
+3.  Der DataTip verschwindet, wenn Sie den Mauszeiger fortbewegen. Um den DataTip anzuheften, sodass dieser geöffnet bleibt, klicken Sie auf die **an Quelle heften** Symbol oder mit der rechten Maustaste auf eine Variable aus, klicken Sie dann auf **an Quelle heften**.
+
+    ![Anheften eines Datentipps](../debugger/media/dbg-tips-data-tips-pinned.png "PinningDataTip")
+
     > [!NOTE]
-    >  DataTips werden immer in dem Kontext ausgeführt, in dem die Ausführung angehalten wird, und nicht an der Stelle, auf die der Cursor zeigt.  Wenn Sie in einer anderen Funktion auf eine Variable mit dem Namen einer Variablen im aktuellen Kontext zeigen, wird der Wert der Variablen in der anderen Funktion als der Wert der Variablen im aktuellen Kontext angezeigt.  
+    > DataTips werden immer in dem Kontext ausgeführt, in dem die Ausführung angehalten wird, und nicht an der Stelle, auf die der Cursor zeigt. Wenn Sie in einer anderen Funktion auf eine Variable mit dem Namen einer Variablen im aktuellen Kontext zeigen, wird der Wert der Variablen in der anderen Funktion als der Wert der Variablen im aktuellen Kontext angezeigt.
   
-2.  Der DataTip verschwindet, wenn Sie den Mauszeiger fortbewegen.  Um den DataTip anzuheften, sodass er geöffnet bleibt, klicken Sie auf das Symbol **An Quelle heften**.  
+### <a name="to-unpin-a-datatip-and-make-it-float"></a>So lösen Sie einen DataTip und zeigen diesen unverankert an  
   
-    -   Oder klicken Sie mit der rechten Maustaste auf eine Variable, und klicken Sie dann auf **An Quelle heften**.  
+-   Klicken Sie in einem angehefteten DataTip auf das **von Quelle lösen** Symbol.  
   
-     Der angeheftete DataTip wird geschlossen, wenn die Debugsitzung endet.  
+     Das Pinsymbol ändert sich in die gelöste Position. Der DataTip wird nun unverankert über allen geöffneten Fenstern angezeigt. Der unverankerte DataTip wird geschlossen, wenn die Debugsitzung endet.  
   
-### So lösen Sie einen DataTip und zeigen diesen unverankert an  
-  
--   Klicken Sie in einem angehefteten DataTip auf das Symbol **Von Quelle lösen**.  
-  
-     Das Pinsymbol ändert sich in die gelöste Position.  Der DataTip wird nun unverankert über allen geöffneten Fenstern angezeigt.  Der unverankerte DataTip wird geschlossen, wenn die Debugsitzung endet.  
-  
-### So heften Sie einen unverankerten DataTip wieder an  
+### <a name="to-repin-a-floating-datatip"></a>So heften Sie einen unverankerten DataTip wieder an  
   
 -   Klicken Sie in einem DataTip auf das Pinsymbol.  
   
-     Das Pinsymbol ändert sich in die angeheftete Position.  Wenn sich der DataTip außerhalb eines Quellcodefensters befindet, wird das Pinsymbol deaktiviert, und der DataTip kann nicht angeheftet werden.  
+     Das Pinsymbol ändert sich in die angeheftete Position. Wenn sich der DataTip außerhalb eines Quellcodefensters befindet, wird das Pinsymbol deaktiviert, und der DataTip kann nicht angeheftet werden.  
   
-### So schließen Sie einen DataTip  
+### <a name="to-close-a-datatip"></a>So schließen Sie einen DataTip  
   
--   Platzieren Sie den Mauszeiger auf einem DataTip, und klicken Sie dann auf das Symbol **Schließen**.  
+-   Platzieren Sie den Mauszeiger über einem DataTip, und klicken Sie dann auf die **schließen** Symbol.  
   
-### So schließen Sie alle DataTips  
+### <a name="to-close-all-datatips"></a>So schließen Sie alle DataTips  
   
--   Klicken Sie im Menü **Debuggen** auf **Alle DataTips löschen**.  
+-   Auf der **Debuggen** Menü klicken Sie auf **alle DataTips löschen**.  
   
-### So schließen Sie alle DataTips für eine bestimmte Datei  
+### <a name="to-close-all-datatips-for-a-specific-file"></a>So schließen Sie alle DataTips für eine bestimmte Datei  
   
--   Klicken Sie im Menü **Debuggen** auf **Alle an** *File* angehefteten DataTips löschen.  
+-   Auf der **Debuggen** Menü klicken Sie auf **Löschen aller angehefteten DataTips an** *Datei*.  
   
-## Erweitern und Bearbeiten von Informationen  
- Mithilfe von DataTips können Sie ein Array, eine Struktur oder ein Objekt erweitern, um deren Member anzuzeigen.  Sie können mit einem DataTip auch den Wert einer Variablen bearbeiten.  
+## <a name="expand-and-edit-information"></a>Erweitern Sie Informationen anzeigen und bearbeiten  
+ Mithilfe von DataTips können Sie ein Array, eine Struktur oder ein Objekt erweitern, um deren Member anzuzeigen. Sie können mit einem DataTip auch den Wert einer Variablen bearbeiten.  
   
-#### So erweitern Sie eine Variable, um ihre Elemente anzuzeigen  
+#### <a name="to-expand-a-variable-to-see-its-elements"></a>So erweitern Sie eine Variable, um ihre Elemente anzuzeigen  
   
--   Platzieren Sie in einem DataTip den Mauszeiger auf dem **\+** Zeichen vor dem Variablennamen.  
+-   Platzieren Sie in einem DataTip den Mauszeiger über die  **+**  Zeichen vor dem Variablennamen.  
   
-     Die Variable wird erweitert, und die Elemente werden in Strukturansicht angezeigt.  
+    Die Variable wird erweitert, und die Elemente werden in Strukturansicht angezeigt.
+
+    ![Anzeigen von einem Datentipp](../debugger/media/dbg-tour-data-tips.gif "einen Datentipp anzeigen")
   
-     Bei erweiterter Variable können Sie mit den Pfeiltasten der Tastatur nach oben und unten navigieren.  Sie können auch die Maus verwenden.  
+    Bei erweiterter Variable können Sie mit den Pfeiltasten der Tastatur nach oben und unten navigieren. Sie können auch die Maus verwenden.  
   
-#### So bearbeiten Sie den Wert einer Variablen mit einem DataTip  
+#### <a name="to-edit-the-value-of-a-variable-using-a-datatip"></a>So bearbeiten Sie den Wert einer Variablen mit einem DataTip  
   
-1.  Klicken Sie in einem DataTip auf den Wert.  Für schreibgeschützte Werte ist diese Funktion deaktiviert.  
+1.  Klicken Sie in einem DataTip auf den Wert. Für schreibgeschützte Werte ist diese Funktion deaktiviert.  
   
 2.  Geben Sie einen neuen Wert ein, und drücken Sie die EINGABETASTE.  
   
-## Transparentes Darstellen eines DataTips  
- Wenn Sie den Code hinter einem DataTip sehen möchten, können Sie dazu den DataTip vorübergehend transparent machen.  Dies gilt nicht für DataTips, die angeheftet oder unverankert sind.  
+## <a name="making-a-datatip-transparent"></a>Transparentes Darstellen eines DataTips  
+ Wenn Sie den Code hinter einem DataTip sehen möchten, können Sie dazu den DataTip vorübergehend transparent machen. Dies gilt nicht für DataTips, die angeheftet oder unverankert sind.  
   
-#### So machen Sie einen DataTip transparent  
+#### <a name="to-make-a-datatip-transparent"></a>So machen Sie einen DataTip transparent  
   
 -   Drücken Sie in einem DataTip STRG.  
   
      Der DataTip bleibt so lange transparent, wie Sie STRG gedrückt halten.  
   
-## Visuelles Darstellen von komplexen Datentypen  
- Wenn in einem DataTip ein Vergrößerungsglassymbol neben dem Variablennamen angezeigt wird, stehen für diesen Variablentyp eine oder mehrere [Schnellansichten](../debugger/create-custom-visualizers-of-data.md) zur Verfügung.  Mit der Schnellansicht lassen sich Informationen noch übersichtlicher \(in der Regel über eine grafische Darstellung\) anzeigen.  
+## <a name="visualize-complex-data-types"></a>Visualisieren von komplexen Datentypen  
+ Wenn ein Lupensymbol neben einem Variablennamen in mindestens einem DataTip angezeigt wird [Schnellansichten](../debugger/create-custom-visualizers-of-data.md), wie z. B. die [Zeichenfolge Schnellansichten](../debugger/string-visualizer-dialog-box.md), stehen für die Variablen dieses Datentyps. Mit der Schnellansicht lassen sich Informationen noch übersichtlicher (in der Regel über eine grafische Darstellung) anzeigen.
   
-#### So zeigen Sie den Inhalt einer Variablen mithilfe der Schnellansicht an  
+#### <a name="to-view-the-contents-of-a-variable-using-a-visualizer"></a>So zeigen Sie den Inhalt einer Variablen mithilfe der Schnellansicht an  
   
--   Klicken Sie auf das Symbol mit dem Vergrößerungsglas, um die Standardschnellansicht für den Datentyp auszuwählen.  
+-   Klicken Sie auf das Lupensymbol ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "Schnellansicht Symbol") um die Standardschnellansicht für den Datentyp auszuwählen.  
   
-     \- oder \-  
+     - oder -   
   
-     Klicken Sie auf den Popup\-Pfeil neben der Schnellansicht, und wählen Sie aus der Liste eine dem Datentyp entsprechende Schnellansicht aus.  
+     Klicken Sie auf den Popup-Pfeil neben der Schnellansicht, und wählen Sie aus der Liste eine dem Datentyp entsprechende Schnellansicht aus.  
   
      Die Informationen werden in einer Schnellansicht angezeigt.  
   
-## Hinzufügen von Informationen zu einem Überwachungsfenster  
- Wenn Sie eine Variable weiter überwachen möchten, können Sie die Variable aus einem DataTip dem **Überwachungsfenster** hinzufügen.  
+## <a name="add-information-to-a-watch-window"></a>Hinzufügen von Daten zu einem Überwachungsfenster  
+ Wenn Sie den Vorgang fortzusetzen, um eine Variable in einer Listenansicht zu beobachten möchten, können Sie die Variable zum Hinzufügen der **Überwachen** aus einem DataTip.  
   
-#### So fügen Sie dem Überwachungsfenster eine Variable hinzu  
+#### <a name="to-add-a-variable-to-the-watch-window"></a>So fügen Sie dem Überwachungsfenster eine Variable hinzu  
   
--   Klicken Sie mit der rechten Maustaste auf einen DataTip, und klicken Sie dann auf **Überwachung hinzufügen**.  
+-   Mit der rechten Maustaste in eines DataTips, und klicken Sie dann auf **Überwachung hinzufügen**.  
   
-     Die Variable wird dem **Überwachungsfenster** hinzugefügt.  Wenn Sie mit einer Edition arbeiten, die mehrere **Überwachungsfenster** unterstützt, wird die Variable **Überwachen 1** hinzugefügt.  
+     Die Variable wird hinzugefügt, um die **Überwachen** Fenster. Wenn Sie eine Edition verwenden, die mehrere unterstützt **Überwachen** Windows, die Variable wird hinzugefügt, um **Überwachen 1.**  
   
-## Importieren und Exportieren von DataTips  
- Sie können DataTips in eine XML\-Datei exportieren, die Sie gemeinsam mit Kollegen verwenden oder in einem Text\-Editor bearbeiten können.  
+## <a name="import-and-export-datatips"></a>Importieren und Exportieren von DataTips  
+ Sie können DataTips in eine XML-Datei exportieren, die Sie gemeinsam mit Kollegen verwenden oder in einem Text-Editor bearbeiten können.  
   
-#### So exportieren Sie DataTips  
+#### <a name="to-export-datatips"></a>So exportieren Sie DataTips  
   
 1.  Klicken Sie im Menü Debuggen auf **DataTips exportieren**.  
   
-     Das Dialogfeld **DataTips exportieren** wird angezeigt.  
+     Die **DataTips exportieren** Dialogfeld wird angezeigt.  
   
-2.  Navigieren Sie mithilfe von Standarddateitechniken zu dem Verzeichnis, in dem die XML\-Datei gespeichert werden soll, geben Sie im Feld **Dateiname** einen Namen für die Datei ein, und klicken Sie dann auf **OK**.  
+2.  Mithilfe von Standarddateitechniken zu dem Speicherort navigieren Sie die XML-Datei speichern, geben Sie einen Namen für die Datei in möchten die **Dateiname** Feld, und klicken Sie dann auf **OK**.  
   
-#### So importieren Sie DataTips  
+#### <a name="to-import-datatips"></a>So importieren Sie DataTips  
   
 1.  Klicken Sie im Menü Debuggen auf **DataTips importieren**.  
   
-     Das Dialogfeld **DataTips importieren** wird angezeigt.  
+     Die **DataTips importieren** Dialogfeld wird angezeigt.  
   
-2.  Suchen Sie mithilfe des Dialogfelds nach der zu öffnenden XML\-Datei, und klicken Sie auf **OK**.  
+2.  Verwenden Sie das Dialogfeld, um die XML-Datei zu suchen, die Sie verwenden möchten, öffnen, und klicken Sie auf **OK**.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Anzeigen von Daten im Debugger](../debugger/viewing-data-in-the-debugger.md)   
- [Gewusst wie: Verwenden des Dialogfelds Schnellüberwachung](../Topic/How%20to:%20Use%20the%20QuickWatch%20Dialog%20Box.md)   
- [Schnellansichten](../debugger/create-custom-visualizers-of-data.md)   
- [Gewusst wie: Ändern des numerischen Formats von Debuggerfenstern](../Topic/How%20to:%20Change%20the%20Numeric%20Format%20of%20Debugger%20Windows.md)
+ [Überwachen "und" Schnellüberwachung Windows](../debugger/watch-and-quickwatch-windows.md)   
+ [Erstellen benutzerdefinierter Schnellansichten](../debugger/create-custom-visualizers-of-data.md)   

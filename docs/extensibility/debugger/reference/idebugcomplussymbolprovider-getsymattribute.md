@@ -1,82 +1,84 @@
 ---
-title: "IDebugComPlusSymbolProvider::GetSymAttribute | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugComPlusSymbolProvider::GetSymAttribute"
-  - "GetSymAttribute"
+title: IDebugComPlusSymbolProvider::GetSymAttribute | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugComPlusSymbolProvider::GetSymAttribute
+- GetSymAttribute
 ms.assetid: 6cbaac92-a60b-4165-a7f5-c34407770f3c
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: c03bdecdb825aadc8a2748f818e04e778dba0143
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugComPlusSymbolProvider::GetSymAttribute
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft die Programmdebuginformationen Symbole mit dem angegebenen übergeordneten Attribut für das angegebene Modul ab.  
+# <a name="idebugcomplussymbolprovidergetsymattribute"></a>IDebugComPlusSymbolProvider::GetSymAttribute
+Ruft den Debugsymbolen mit dem angegebenen übergeordneten Attribut für das angegebene Modul ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetSymAttribute (  
-   ULONG32  ulAppDomainID,  
-   GUID     guidModule,  
-   _mdToken tokParent,  
-   LPOLESTR pstrName,  
-   ULONG32  cBuffer,  
-   ULONG32* pcBuffer,  
-   BYTE*    buffer  
+   ULONG32  ulAppDomainID,  
+   GUID     guidModule,  
+   _mdToken tokParent,  
+   LPOLESTR pstrName,  
+   ULONG32  cBuffer,  
+   ULONG32* pcBuffer,  
+   BYTE*    buffer  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetSymAttribute (  
-   uint      ulAppDomainID,  
-   Guid      guidModule,  
-   int       tokParent,  
-   string    pstrName,  
-   uint      cBuffer,  
-   out uint  pcBuffer,  
-   out int[] buffer  
+   uint      ulAppDomainID,  
+   Guid      guidModule,  
+   int       tokParent,  
+   string    pstrName,  
+   uint      cBuffer,  
+   out uint  pcBuffer,  
+   out int[] buffer  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `ulAppDomainID`  
- \[in\]  Bezeichner der Anwendungsdomäne.  
+ [in] Der Bezeichner der Anwendungsdomäne.  
   
  `guidModule`  
- \[in\]  Eindeutiger Bezeichner des Moduls.  
+ [in] Eindeutiger Bezeichner des Moduls.  
   
  `tokParent`  
- \[in\]  Token für das übergeordnete Attribut.  
+ [in] Token für das übergeordnete Attribut.  
   
  `pstrName`  
- \[in\]  Name des Moduls.  
+ [in] Der Name des Moduls.  
   
  `cBuffer`  
- \[in\]  Anzahl von Bytes erforderlich für die Ausgabe `buffer`.  
+ [in] Anzahl der Bytes, die erforderlich sind, für die Ausgabe `buffer`.  
   
  `pcBuffer`  
- \[out\]  Länge der Ausgabe `buffer`.  
+ [out] Länge der Ausgabe `buffer`.  
   
  `buffer`  
- \[out\]  Array, in das die Symbole enthält.  
+ [out] Ein Array mit den Symbolen.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Beispiel  
- Im folgenden Beispiel wird veranschaulicht, wie diese Methode für ein **CDebugSymbolProvider\-Objekt** implementiert, das die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)\-Schnittstelle verfügbar macht.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel veranschaulicht die Implementierung dieser Methode für eine **CDebugSymbolProvider** -Objekt, das macht die [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) Schnittstelle.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::GetSymAttribute(  
     ULONG32 ulAppDomainID,  
     GUID guidModule,  
@@ -104,5 +106,5 @@ Error:
 }  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

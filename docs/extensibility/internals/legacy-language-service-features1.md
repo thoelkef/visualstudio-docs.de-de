@@ -1,81 +1,82 @@
 ---
-title: "&#196;ltere Sprache Service Features1 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Sprachdienste [Verwaltetes Paketframework]"
+title: "Ältere Language Service Features1 | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: language services [managed package framework]
 ms.assetid: a646e4f0-767d-4cd1-8e1a-9a2aa210a1b7
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: cc29529c7ba499cdc7291078774b9f546a3a08ca
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Legacy-Dienst-Sprachfunktionen
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ein Sprachdienst des verwalteten Paketframeworks \(MPF\) kann eine oder mehrere [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]\-Funktionen, z. B. Syntax\-Hervorhebung, IntelliSense und Validierung Haltepunkt unterstützen.  Jede implementierte Funktion kann unabhängig von den anderen sein, doch alle erfordern einen Parser und einen Scanner außer Syntax\-Hervorhebung, die nur einen Scanner erfordert.  
+# <a name="legacy-language-service-features"></a>Legacy-Dienst-Sprachfunktionen
+Mindestens ein verwalteten Package Framework (MPF)-Sprachdienst unterstützen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Funktionen, z. B. syntaxhervorhebung, IntelliSense und Validierung der Haltepunkt. Jede Funktion kann unabhängig von den anderen implementiert werden, aber alle erfordern einen Parser und einen Scanner mit Ausnahme von syntaxhervorhebung, der nur einen Scanner erforderlich ist.  
   
-## In diesem Abschnitt  
- [Zugehörige Klammer in einer Legacy\-Sprachdienst](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)  
- Beschreibt, was erforderlich ist, das abgleichende Sprachpaar zu unterstützen, abstützen auch den Vergleich.  
+## <a name="in-this-section"></a>In diesem Abschnitt  
+ [Zugehörige Klammer in einem Legacysprachdienst](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)  
+ Beschreibt, was zur Unterstützung von Sprache paarvergleich, auch bekannt als Zuordnung von geschweiften Klammern erforderlich ist.  
   
- [Kommentieren von Code in einer Legacy\-Sprachdienst](../../extensibility/internals/commenting-code-in-a-legacy-language-service.md)  
- Beschreibt, was erforderlich ist, und heben Sie die Auskommentierung des Kommentieren des ausgewählten Codes zu unterstützen.  
+ [Kommentieren von Code in einem Legacysprachdienst](../../extensibility/internals/commenting-code-in-a-legacy-language-service.md)  
+ Beschreibt, was zur Unterstützung von Kommentieren und die auskommentierung des ausgewählten Codes erforderlich ist.  
   
- [Benutzerdefinierte Dokumenteigenschaften in einer Legacy\-Sprachdienst](../../extensibility/internals/custom-document-properties-in-a-legacy-language-service.md)  
- Beschreibt, was erforderlich ist, Dokumenteigenschaften zu unterstützen, die in einer Quelldatei enthalten sind.  
+ [Benutzerdefinierte Dokumenteigenschaften in einem Legacysprachdienst](../../extensibility/internals/custom-document-properties-in-a-legacy-language-service.md)  
+ Beschreibt, was ist zur Unterstützung von Dokumenteigenschaften, die in einer Quelldatei eingebettet sind.  
   
- [Gliederung im ein Legacy\-Sprachdienst](../../extensibility/internals/outlining-in-a-legacy-language-service.md)  
- Beschreibt, was erforderlich ist, Gliederung von der Implementierung von ausgeblendeten Bereiche zu unterstützen.  
+ [Gliederung in einem Legacysprachdienst](../../extensibility/internals/outlining-in-a-legacy-language-service.md)  
+ Beschreibt, was Unterstützung durch die Implementierung des ausgeblendete Bereiche Gliederung erforderlich ist.  
   
- [Formatieren von Code in einer Legacy\-Sprachdienst](../../extensibility/internals/reformatting-code-in-a-legacy-language-service.md)  
- Beschreibt, was erforderlich ist, um die Neuformatierung von Code zu unterstützen.  
+ [Neuformatieren von Code in einem Legacysprachdienst](../../extensibility/internals/reformatting-code-in-a-legacy-language-service.md)  
+ Beschreibt, was zur Unterstützung von umformatieren Code erforderlich ist.  
   
- [Unterstützung für Codeausschnitte in einem Legacy\-Sprachdienst](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)  
- Beschreibt, was erforderlich ist, Codeausschnitte zu unterstützen, die Codesegmente sind, die eingefügt und bearbeitet werden können.  
+ [Unterstützen von Codeausschnitten in einem Legacysprachdienst](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)  
+ Beschreibt, was ist erforderlich, um Codeausschnitte, unterstützen die Segmente des Codes sind, die eingefügt werden und kann bearbeitet werden.  
   
- [ParameterInfo in einer Legacy\-Sprachdienst](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)  
- Beschreibt, was erforderlich ist, IntelliSense\-Parameterinformationens den Vorgang zum Anzeigen einer Methodensignatur zu unterstützen, da die Methode typisiert ist.  
+ [ParameterInfo in einen Legacy-Sprachdienst](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)  
+ Beschreibt, was ist zur Unterstützung des ParameterInfo IntelliSense-Vorgangs für die Signatur einer Methode anzeigen, wie die Methode eingegeben wurde.  
   
- [QuickInfo in einem Legacy\-Sprachdienst](../../extensibility/internals/quick-info-in-a-legacy-language-service.md)  
- Beschreibt, was erforderlich ist, den Vorgang IntelliSense\-QuickInfo für die Anzeige von Informationen über einen Bezeichner zu unterstützen.  
+ [QuickInfo in einem Legacysprachdienst](../../extensibility/internals/quick-info-in-a-legacy-language-service.md)  
+ Beschreibt, was zur Unterstützung des Vorgangs IntelliSense-QuickInfo für die Anzeige von Informationen über einen Bezeichner erforderlich ist.  
   
- [Member\-Abschluss in einer Legacy\-Sprachdienst](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)  
- Beschreibt, was erforderlich ist, IntelliSense\-Member\-Abschluss den Vorgang zum Auswählen eines Mitglieds eines Namespaces aus einer Liste zu unterstützen.  
+ [Membervervollständigung in einem Legacysprachdienst](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)  
+ Beschreibt, was erforderlich ist, zur Unterstützung des IntelliSense-Member-Abschluss-Vorgangs für ein Mitglied eines Namespaces aus einer Liste auswählen.  
   
- [Word\-Abschluss in einer Legacy\-Sprachdienst](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)  
- Beschreibt, was erforderlich ist, um den vollständigen Word Vorgang von IntelliSense für das Abschließen von teilweise typisierten Wörtern zu unterstützen.  
+ [Wortvervollständigung in einem Legacysprachdienst](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)  
+ Beschreibt, was zur Unterstützung des IntelliSense-Wort vervollständigen-Vorgangs für teilweise typisierte Vervollständigung erforderlich ist.  
   
- [Unterstützung für das Fenster "Auto" in eine Legacy\-Sprachdienst](../../extensibility/internals/support-for-the-autos-window-in-a-legacy-language-service.md)  
- Beschreibt, wie ein Sprachdienst ausführen kann, um das Fenster zu unterstützen **Auto** während des Debuggens.  
+ [Unterstützen des Auto-Fensters in einem Legacysprachdienst](../../extensibility/internals/support-for-the-autos-window-in-a-legacy-language-service.md)  
+ Beschreibt ein Sprachdienst Möglichkeiten zur Unterstützung der **"Auto"** Fenster, die während des Debuggens.  
   
- [Unterstützung für die Navigationsleiste in einem Legacy\-Sprachdienst](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)  
- Beschreibt, wie **Navigationsleiste** zum oberen Rand der Editoransicht verwendet, um schnelle Navigation zu einem Typ oder Member in der Datei bereitzustellen, die in dieser Ansicht. angezeigt wird.  
+ [Unterstützen der Navigationsleiste in einem Legacysprachdienst](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)  
+ Beschreibt, wie die **Navigationsleiste** am oberen Rand der Editor-Ansicht zum Bereitstellen von schnelle Navigation für Typen oder Member in der Datei, die in dieser Ansicht angezeigt...  
   
- [Farbliche Kennzeichnung von Syntax in einem Legacy\-Sprachdienst](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)  
- Beschreibt, was erforderlich ist, Syntax\-Hervorhebung des Quellcodes zu unterstützen.  
+ [Einfärben der Syntax in einem Legacysprachdienst](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)  
+ Beschreibt, was zur Unterstützung der syntaxhervorhebung des Quellcodes erforderlich ist.  
   
- [Überprüfen die Haltepunkte in einem Legacy\-Sprachdienst](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)  
- Beschreibt, wie ein Sprachdienst ausführen kann, um die Überprüfung von Haltepunkten außerhalb eines Debuggers zu unterstützen.  
+ [Überprüfen von Haltepunkten in einem Legacysprachdienst](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)  
+ Beschreibt, was ein Sprachdienst tun kann, um die Überprüfung Haltepunkte außerhalb eines Debuggers zu unterstützen.  
   
-## Verwandte Abschnitte  
- [Ältere Sprachdienstparser und Scanner](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)  
- Beschreibt den Parser und der Scanner, die erforderlich sind, um alle Funktionen des Sprachdiensts zu implementieren, der das verwaltete Paketframework verwendet.  
+## <a name="related-sections"></a>Verwandte Abschnitte  
+ [Parser und Scanner von Legacysprachdiensten](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)  
+ Beschreibt die Parser und Scanner, die erforderlich sind, um alle Funktionen eines Sprachdiensts implementiert wird, des managed Package Framework verwendet.  
   
- [Implementieren eines Sprachdiensts](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
- Beschreibt, was erforderlich ist, einen Sprachdienst zu implementieren, indem sie das MPF verwendet.  
+ [Implementieren einen Sprachdienst Legacy](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
+ Beschreibt, was zum Implementieren eines Sprachdiensts mithilfe des MPFS erforderlich ist.  
   
- [Registriert eine Sprachdienst](../../extensibility/internals/registering-a-legacy-language-service1.md)  
- Beschreibt die Schritte, die erforderlich sind, um einen MPF\-basierten Sprachdienst mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]zu registrieren.  
+ [Registrieren einen Sprachdienst Legacy](../../extensibility/internals/registering-a-legacy-language-service1.md)  
+ Beschreibt die Schritte, die erforderlich sind, registrieren Sie einen Dienst MPF-basierte Sprache, mit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
  [Verwenden von IntelliSense](../../ide/using-intellisense.md)  
- Erklärt, wie IntelliSense Sprachreferenzen sehr einfach zugegriffen wird.  
+ Erläutert, wie IntelliSense Sprachreferenzen problemlos zugegriffen wird.  
   
- [Implementieren einer Legacy\-Sprachdienst](../../extensibility/internals/implementing-a-legacy-language-service1.md)  
- Enthält Informationen darüber, wie das verwaltete Paketframework \(MPF\) verwendet wird, um einen Vollfunktions sprachendienst in verwaltetem Code zu implementieren.
+ [Implementieren einen Sprachdienst Legacy](../../extensibility/internals/implementing-a-legacy-language-service1.md)  
+ Enthält Informationen dazu, wie mithilfe des managed Package Framework (MPF) einen voll ausgestattete Sprachdienst in verwaltetem Code implementiert.

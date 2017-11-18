@@ -1,61 +1,62 @@
 ---
-title: "Gewusst wie: Implementieren von Fehler Marker | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Editoren [Visual Studio SDK] legacy - Fehler-Marker"
+title: 'Vorgehensweise: Implementieren von Fehler Marker | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], legacy - error markers
 ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d926a498549e868e478d83b7930f5e569f49ce20
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Implementieren von Fehler Marker
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Fehler \(marker oder rote wellenförmige Unterstreichungen\) sind das schwierigste der Text\-Editor\-Anpassungen zu implementieren.  Allerdings können die Vorteile, die sie den Benutzern VSPackages geben, die Kosten weit überwiegen, um sie zu ermöglichen.  marker Fehler markieren, dass der Text subtil Parser Sprachen mit einer wellenförmigen oder gewellten roten Linie für falsch hält.  Dieser Zähler wird, indem Programmierer visuell falschen Code angezeigt werden soll.  
+# <a name="how-to-implement-error-markers"></a>Vorgehensweise: Implementieren von Fehler Marker
+Fehler Marker (oder roten Wellenlinien) werden am schwierigsten der Text-Editor Anpassungen implementieren. Allerdings können die Vorteile, die sie an Benutzer Ihres VSPackage weitergeben der Kosten für die Angabe von Anmeldeinformationen weit überwiegen. Fehler-Marker markieren leicht Text, der Ihre Sprachenparser mit einer roten Wellenlinie oder wellenförmige falsch erachtet. Dieser Indikator kann Programmierer von fehlerhaftem Code visuell angezeigt.  
   
- Verwenden Sie textmarkierungen, deren rote Unterstreichung zu implementieren.  In der Regel fügen Sprachendienste rote wellenförmige Unterstreichungen den Textpuffer als Hintergrund bestanden, entweder auf der Leerlaufzeit oder in einem Hintergrundthread hinzu.  
+ Verwenden Sie Text Marker, um die roten Wellenlinien implementieren. Eine Regel hinzuzufügen Sprachdienste rote wellenförmige unterstreichungen Textpuffer als eine Übergabe Hintergrund, während der Leerlaufzeit oder in einem Hintergrundthread.  
   
-### Um die rote Funktion der wellenförmigen Unterstreichung implementieren  
+### <a name="to-implement-the-red-wavy-underline-feature"></a>Implementieren Sie die rote wellenförmige Unterstreichung-Funktion  
   
-1.  Wählen Sie den Text aus, unter dem Sie die Stelle rote wellenförmige Unterstreichung soll.  
+1.  Wählen Sie unter dem Sie den gewünschten Text platzieren Sie die rote Wellenlinie zeigen.  
   
-2.  Erstellen Sie einen Marker vom Typ `MARKER_CODESENSE_ERROR`.  Weitere Informationen finden Sie unter [Gewusst wie: Hinzufügen von Standard\-Text\-Marker](../extensibility/how-to-add-standard-text-markers.md).  
+2.  Erstellen Sie einen Marker des Typs `MARKER_CODESENSE_ERROR`. Weitere Informationen finden Sie unter [Vorgehensweise: Text-Standardmarker](../extensibility/how-to-add-standard-text-markers.md).  
   
-3.  Danach einen Schnittstellenzeiger <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> .  
+3.  Übergeben Sie danach eine <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> Schnittstellenzeiger auf.  
   
- Dieser Prozess ermöglicht Ihnen auch, um QuickInfo\-Text oder ein bestimmtes Kontextmenü zu einer bestimmten Markierung zu erstellen.  Weitere Informationen finden Sie unter [Gewusst wie: Hinzufügen von Standard\-Text\-Marker](../extensibility/how-to-add-standard-text-markers.md).  
+ Dieser Prozess ermöglicht Ihnen die Erstellung von QuickInfo-Text oder einen speziellen Kontextmenüs auf einen bestimmten Marker. Weitere Informationen finden Sie unter [Vorgehensweise: Text-Standardmarker](../extensibility/how-to-add-standard-text-markers.md).  
   
- Die folgenden Objekte sind erforderlich, bevor marker Fehler angezeigt werden können.  
+ Die folgenden Objekte sind erforderlich, damit Fehler Marker angezeigt werden können.  
   
 -   Ein Parser.  
   
--   Ein Hersteller Aufgaben \(d. h. eine Implementierung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2>\), der einen Datensatz von Änderungen in den Zeileninformationen beibehalten wird, um die erneut zu analysierende Zeilen zu identifizieren.  
+-   Einen Aufgabenanbieter (d. h. eine Implementierung von <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2>), die unterhält eine Aufzeichnung der Änderungen in Zeileninformationen um identifizieren die Zeilen, sodass erneut analysiert werden muss.  
   
--   Ein Filter, der Text von der Einfügemarke Änderung in der Ansicht mit der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents.OnChangeCaretLine%2A>\) \- Methode erfasst.  
+-   Ein Ansichtsfilter Text, der Einfügemarke erfasst Änderungsereignisse aus der Sicht mithilfe der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents.OnChangeCaretLine%2A>) Methode.  
   
- Der Parser, Aufgaben und der Filter bieten eine Infrastruktur bereit, die erforderlich ist, marker Fehler zu aktivieren.  Die folgenden Schritte bieten den Prozess zum Anzeigen von Fehlern markern bereit.  
+ Der Parser, Aufgabenanbieter und Filter Geben Sie die Infrastruktur erforderlich, mögliche Fehler Marker zu erstellen. Die folgenden Schritte bieten den Prozess für die Anzeige von markern Fehler.  
   
-1.  In einer Ansicht, die gefiltert wird, erhält der Filter ein Zeiger auf den Hersteller der Aufgaben, die mit den Daten dieser Ansicht zugeordnet ist.  
+1.  In einer Ansicht, die gefiltert wird, erhält der Filter einen Zeiger auf den Aufgabenanbieter diese Sicht Daten zugeordnet.  
   
     > [!NOTE]
-    >  Sie können denselben Befehl tipps Filter für Methoden, die Anweisungsvervollständigung, Fehler usw. verwenden marker  
+    >  Sie können den gleichen Befehlsfilter für die Methode Tipps, Anweisungsvervollständigung Fehler Marker und So weiter.  
   
-2.  Wenn der Filter einen Ereignis empfängt, die Sie zu einer anderen Zeile umgezogen sind, wird eine Aufgabe, einen Fehler zu untersuchen.  
+2.  Wenn der Filter empfängt ein Ereignis gibt an, dass Sie an eine andere Zeile verschoben haben, wird eine Aufgabe erstellt, um auf Fehler hin geprüft.  
   
-3.  Die Aufgaben Handler überprüft, wenn die Zeile geändert ist.  Wenn dies der Fall ist, analysiert er die Zeile für den Fehler.  
+3.  Der Task-Handler wird überprüft, ob die Zeile geändert wurde. Wenn dies der Fall ist, analysiert er die Zeile nach Fehlern.  
   
-4.  Wenn Fehler gefunden wurden, erstellt der Anbieter eine Aufgabenelement Aufgaben Instanz.  Diese Instanz stellt die Textmarkierung erstellt, die die Umgebung ein Fehler während marker in der Textansicht verwendet.  
+4.  Wenn Fehler gefunden werden, erstellt der Aufgabenanbieter Instanz eines Vorgangs an. Diese Instanz wird der Text-Marker, den die Umgebung verwendet wird, wie ein Fehler in der Textansicht erstellt.  
   
-## Siehe auch  
- [Verwenden von Text Marker mit der Legacy\-API](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Gewusst wie: Hinzufügen von Standard\-Text\-Marker](../extensibility/how-to-add-standard-text-markers.md)   
- [Gewusst wie: Erstellen von benutzerdefinierten Text Marken](../extensibility/how-to-create-custom-text-markers.md)   
- [Gewusst wie: Verwenden von Text\-Marker](../extensibility/how-to-use-text-markers.md)
+## <a name="see-also"></a>Siehe auch  
+ [Verwenden von Text Marker mit der Legacy-API](../extensibility/using-text-markers-with-the-legacy-api.md)   
+ [Vorgehensweise: Hinzufügen von Standard-Text-Marker](../extensibility/how-to-add-standard-text-markers.md)   
+ [Vorgehensweise: Erstellen von benutzerdefinierten Text-Marker](../extensibility/how-to-create-custom-text-markers.md)   
+ [Vorgehensweise: Verwenden von Text-Marker](../extensibility/how-to-use-text-markers.md)

@@ -1,48 +1,48 @@
 ---
-title: "IDebugProgramProvider2::SetLocale | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgramProvider2::SetLocale"
-helpviewer_keywords: 
-  - "IDebugProgramProvider2::SetLocale"
+title: IDebugProgramProvider2::SetLocale | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProgramProvider2::SetLocale
+helpviewer_keywords: IDebugProgramProvider2::SetLocale
 ms.assetid: b41d20a7-ba40-4c42-a450-16f413d6a04f
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 2698352928158bf42ec52925eeeed14fa5475530
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgramProvider2::SetLocale
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Richtet eine für alle gebietsschemaspezifischen Ressourcen ein Gebietsschema verwendet werden soll.  
+# <a name="idebugprogramprovider2setlocale"></a>IDebugProgramProvider2::SetLocale
+Richtet ein Gebietsschema für alle gebietsschemaspezifische Ressourcen verwendet werden soll.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT SetLocale(  
-   WORD wLangID  
+HRESULT SetLocale(  
+   WORD wLangID  
 );  
 ```  
   
-```c#  
-int SetLocale(  
-   ushort wLangID  
+```csharp  
+int SetLocale(  
+   ushort wLangID  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `wLangID`  
- \[in\]  Einzurichten Sprach\-ID.  Beispielsweise 1033 für Englisch.  
+ [in] Sprach-ID herstellen. Z. B. 1033 für Englisch.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)

@@ -1,51 +1,52 @@
 ---
-title: "-Typen f&#252;r visuelle Designer verf&#252;gbar gemacht | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Typen [Visual Studio SDK] für visuelle Designer verfügbar zu machen"
-  - "Designer [Visual Studio SDK]-Typen verfügbar gemacht"
-  - "Benutzerdefinierte Tools,-Typen für visuelle Designer verfügbar gemacht"
+title: "Verfügbarmachen von Typen in visuellen Designern | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- types [Visual Studio SDK], exposing to visual designers
+- designers [Visual Studio SDK], exposing types
+- custom tools, exposing types to visual designers
 ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 4e79ec644426ed5068f79bb914b1202a800982cd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# -Typen f&#252;r visuelle Designer verf&#252;gbar gemacht
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] muss der Zugriff auf die Klasse und Typdefinitionen zur Entwurfszeit haben, dass ein visueller Designer anzuzeigen.  Klassen werden von einem vordefinierten Satz von Assemblys geladen, die die komplexe Abhängigkeiten enthalten, die aus dem aktuellen Projekt festgelegt ist \(Verweise sowie die zugehörigen Abhängigkeiten\).  Es ist möglicherweise auch erforderlich für visuelle Designer, Klassen und Typen zuzugreifen, die in benutzerdefinierten Tools generierten Dateien definiert sind.  
+# <a name="exposing-types-to-visual-designers"></a>Verfügbarmachen von Typen in visuellen Designern
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]muss den Zugriff auf die Klasse und Typdefinition zur Entwurfszeit besitzen, einen visuellen Designer angezeigt. Klassen sind aus einem vordefinierten Satz von Assemblys geladen, die vollständige Abhängigkeit des aktuellen Projekts (Verweise sowie ihre Abhängigkeiten) enthalten. Es kann auch erforderlich sein für visuelle Designer zum Zugriff auf Klassen und Typen, die in von benutzerdefinierte Tools generierten definiert sind.  
   
- Die [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] und [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] Projektsysteme bieten Unterstützung für den Zugriff auf generierten Klassen und Typen durch temporäre portierbare ausführbare Dateien \(temporäre PE\-Datei\).  Jede Datei, die durch ein benutzerdefiniertes Tool generiert wird, kann in eine temporäre Assembly kompiliert werden, sodass Typen von diesen Assemblys geladen werden und Designern verfügbar gemacht werden können.  Die Ausgabe eines benutzerdefinierten Tools ist in einem separaten temporäre PE\-Datei kompiliert, und der Erfolg oder Fehler der temporären Kompilierung nur hängt davon ab, ob die generierte Datei kompiliert werden kann.  Obwohl ein Projekt möglicherweise nicht als Ganzes erstellt, ist möglicherweise einzelnes temporäre PE\-Datei es Designern verfügbar.  
+ Die [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] und [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] Projektsystemen bieten Unterstützung für den Zugriff auf generierte Klassen und Typen durch temporäre Portable ausführbare Dateien (temporäre PEs). Jede Datei, die durch ein benutzerdefiniertes Tool generiert kann in eine temporäre Assembly kompiliert werden, sodass Typen aus diesen Assemblys geladen und in Designern verfügbar gemacht werden können. Die Ausgabe der einzelnen benutzerdefinierte Tools in einen separaten temporären PE kompiliert wird, und den Erfolg oder Misserfolg von dieser temporären Kompilierung hängt nur fest, ob die generierte Datei kompiliert werden kann. Auch, wenn ein Projekt nicht als Ganzes erstellen kann, möglicherweise einzelne temporäre PEs trotzdem für Designer zur Verfügung.  
   
- Das Projektsystem bietet vollständige Unterstützung für das Verfolgen von Änderungen in der Ausgabedatei eines benutzerdefinierten Tools, vorausgesetzt, dass diese Änderungen das Ergebnis der Ausführung des benutzerdefinierten Tools sind.  Jedes Mal, wenn das benutzerdefinierte Tool ausgeführt wird, wird eine neue temporäre PE\-Datei generiert, und die entsprechenden Benachrichtigungen werden in Designern gesendet.  
+ Das Projektsystem bietet vollständige Unterstützung für das Nachverfolgen von Änderungen an die Ausgabedatei ein benutzerdefiniertes Tool, vorausgesetzt, dass diese Änderungen auf das Ergebnis der Ausführung des benutzerdefinierten Tools sind. Jedes Mal, wenn das benutzerdefinierte Tool ausgeführt wird, wird eine neue temporäre PE generiert und in Designern entsprechende Benachrichtigungen gesendet werden.  
   
 > [!NOTE]
->  Da Generierungs ausführbare Datei des temporären Programms im Hintergrund stattfindet, werden keine Fehler an den Benutzer ausgegeben, wenn die Kompilierung schlägt fehl.  
+>  Da temporäre Programmdownloads Generation ausführbare Datei im Hintergrund stattfindet, werden keine Fehler an den Benutzer ausgegeben, wenn die Kompilierung schlägt fehl.  
   
- Benutzerdefinierte Tools, die temporäre PE\-Unterstützung nutzen, müssen die folgenden Regeln einhalten:  
+ Benutzerdefinierte Tools, die temporäre PE-Unterstützung nutzen, müssen den folgenden Regeln entsprechen:  
   
--   `GeneratesDesignTimeSource` muss bis 1 in der Registrierung festgelegt werden.  
+-   `GeneratesDesignTimeSource`muss 1 in der Registrierung festgelegt werden.  
   
-     Keine ausführbaren Programms der Kompilierung ohne diese Einstellung findet statt.  
+     Keine Programm ausführbare Datei Kompilierung findet ohne diese Einstellung an.  
   
--   Der generierte Code muss in derselben Sprache wie die globale Projekteinstellung sein.  
+-   Der generierte Code muss in derselben Sprache wie die globalen projekteinstellung sein.  
   
-     Das temporäre PE\-Datei kompiliert wird, unabhängig davon, welche benutzerdefinierten Tool meldet als die angeforderte Erweiterung in <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> , vorausgesetzt, dass `GeneratesDesignTimeSource` bis 1 in der Registrierung festgelegt ist.  Die Erweiterung muss keine .cs, .vb oder .jsl sein. Es kann eine beliebige Erweiterung sein.  
+     Die temporäre PE-Datei kompiliert wird, unabhängig davon, was als erforderliche Erweiterung in das benutzerdefinierte Tool meldet <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> vorausgesetzt, dass `GeneratesDesignTimeSource` in der Registrierung auf 1 festgelegt ist. Die Erweiterung muss nicht vb, cs- oder jsl werden; Es kann eine beliebige Erweiterung sein.  
   
--   Der Code, der vom benutzerdefinierten Tool generiert wird, muss gültig sein, und er muss eigenständig nur mit dem Satz von Verweisen kompilieren, die im Projekt enthalten sind <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> zum Zeitpunkt der Beendigung ausgeführt.  
+-   Die von benutzerdefinierten Tools generierte Code muss gültig sein und es muss Kompilieren auf eigene verwendet nur die Verweise im Projekt vorhanden zum Zeitpunkt <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> Ausführung abgeschlossen ist.  
   
-     Wenn eine temporäre PE\-Datei kompiliert wird, ist die einzige Quelldatei, die den Compiler bereitgestellte die benutzerdefinierte Tools.  Daher muss ein benutzerdefiniertes Tool, das eine temporäre PE\-Datei verwendet, Ausgabedateien generiert werden, die unabhängig von anderen Dateien des Projekts kompiliert werden kann.  
+     Wenn eine temporäre PE-Datei kompiliert wird, ist die einzige Quelldatei bereitgestellt, um den Compiler die Ausgabe des benutzerdefinierten Tools. Aus diesem Grund muss ein benutzerdefiniertes Tool, das eine temporäre PE verwendet Ausgabedateien generiert, die unabhängig von anderen Dateien in das Projekt kompiliert werden kann.  
   
-## Siehe auch  
- [Introduction to the BuildManager Object](http://msdn.microsoft.com/de-de/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
- [Implementieren von Einzeldatei\-Generatoren](../../extensibility/internals/implementing-single-file-generators.md)   
- [Ermitteln des Standardnamespaces eines Projekts](../../misc/determining-the-default-namespace-of-a-project.md)   
- [Registrieren von Einzeldatei\-Generatoren](../../extensibility/internals/registering-single-file-generators.md)
+## <a name="see-also"></a>Siehe auch  
+ [Einführung in das BuildManager-Objekt](http://msdn.microsoft.com/en-us/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
+ [Implementieren von Einzeldatei Generatoren](../../extensibility/internals/implementing-single-file-generators.md)   
+ [Registrieren von Generatoren einzelner Dateien](../../extensibility/internals/registering-single-file-generators.md)

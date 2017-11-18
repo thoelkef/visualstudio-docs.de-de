@@ -1,55 +1,55 @@
 ---
-title: "IDebugMethodField::EnumArguments | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugMethodField::EnumArguments"
-helpviewer_keywords: 
-  - "IDebugMethodField::EnumArguments-Methode"
+title: IDebugMethodField::EnumArguments | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugMethodField::EnumArguments
+helpviewer_keywords: IDebugMethodField::EnumArguments method
 ms.assetid: 3ab55488-2437-4ff6-a9ae-78ea6d7b23a8
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d500e5bedbd284c15430ab65e9477d4a3a404eaf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugMethodField::EnumArguments
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Erstellt einen Enumerator für den Typ jedes Arguments, das zum Aufrufen der Methode benötigt wird.  
+# <a name="idebugmethodfieldenumarguments"></a>IDebugMethodField::EnumArguments
+Erstellt einen Enumerator für den Typ jedes Arguments erforderlich, um die Methode aufzurufen.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT EnumArguments(   
-   IEnumDebugFields** ppParams  
+```cpp  
+HRESULT EnumArguments(   
+   IEnumDebugFields** ppParams  
 );  
 ```  
   
-```c#  
+```csharp  
 int EnumArguments(  
-   out IEnumDebugFields ppParams  
+   out IEnumDebugFields ppParams  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `ppParams`  
- \[out\]  Gibt ein [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)\-Objekt zurück, das die Liste der Argumenttypen darstellt.  Gibt einen NULL\-Wert zurück, wenn keine Argumente vorhanden sind.  
+ [out] Gibt eine [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) Objekt, das die Liste der Argumenttypen darstellt. Gibt einen null-Wert zurück, wenn keine Argumente.  
   
-## Rückgabewert  
- Bei Erfolg gibt S\_OK zurück oder gibt S\_FALSE zurück, wenn keine Argumente vorhanden sind.  Andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Bei Erfolg S_OK zurückgibt, oder gibt "S_FALSE" zurück, wenn keine Argumente. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Jedes Element ist ein [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)\-Objekt, das die Typen der einzelnen Parameter darstellt.  Rufen Sie die [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)\-Methode auf, um Informationen über den Typ jedes Parameters abzurufen.  
+## <a name="remarks"></a>Hinweise  
+ Jedes Element ist ein [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) Objekt, das die Typen der einzelnen Parameter darstellt. Rufen Sie die [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) Methode zum Abrufen von Informationen über den Typ jedes Parameters.  
   
- Wenn der Name des Parameters mit dem Typ benötigt wird, und rufen Sie dann die [EnumParameters](../../../extensibility/debugger/reference/idebugmethodfield-enumparameters.md)\-Methode auf.  
+ Wenn der Name des Parameters zusammen mit dem Typ erforderlich ist, rufen Sie die [EnumParameters](../../../extensibility/debugger/reference/idebugmethodfield-enumparameters.md) Methode.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   

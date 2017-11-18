@@ -1,60 +1,65 @@
 ---
-title: "CreateInPlace (Visual Studio-Vorlagen) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#CreateInPlace"
-helpviewer_keywords: 
-  - "<CreateInPlace>-Element [Visual Studio-Vorlagen]"
-  - "CreateInPlace-Element [Visual Studio-Vorlagen]"
+title: CreateInPlace (Visual Studio-Vorlagen) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#CreateInPlace
+helpviewer_keywords:
+- CreateInPlace element [Visual Studio Templates]
+- <CreateInPlace> element [Visual Studio Templates]
 ms.assetid: 420d46ea-2470-4da9-ad8e-95165588a920
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ce445dec4ca7d09f2fb8822fa9b5632356950042
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# CreateInPlace (Visual Studio-Vorlagen)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Gibt an, ob das Projekt erstellt und die Parameterersetzung am angegebenen Speicherort ausgeführt werden soll, bzw. ob die Parameterersetzung in einem temporären Verzeichnis stattfinden und das Projekt anschließend am angegebenen Speicherort gespeichert werden soll.  
+# <a name="createinplace-visual-studio-templates"></a>CreateInPlace (Visual Studio-Vorlagen)
+Gibt an, ob das Projekt erstellen und Ausführen parameterersetzung in der angegebenen Position oder parameterersetzung in einen temporären Speicherort und speichern Sie das Projekt am angegebenen Speicherort.  
   
-## Syntax  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<CreateInPlace >  
+  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <CreateInPlace> true/false </CreateInPlace>  
 ```  
   
-## Attribute und Elemente  
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
-### Attribute  
+### <a name="attributes"></a>Attribute  
  Keine.  
   
-### Untergeordnete Elemente  
- Keine.  
+### <a name="child-elements"></a>Untergeordnete Elemente  
+ Keine  
   
-### Übergeordnete Elemente  
+### <a name="parent-elements"></a>Übergeordnete Elemente  
   
-|Element|Description|  
+|Element|Beschreibung|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|  
   
-## Textwert  
+## <a name="text-value"></a>Textwert  
  Ein Textwert ist erforderlich.  
   
- Der Text muss entweder `true` oder `false` lauten.  Falls `true`, wird das Projekt erstellt, und die Parameterersetzung wird an dem Ort ausgeführt, der im Dialogfeld **Neues Projekt** festgelegt wurde.  Falls `false`, wird die Parameterersetzung in einem temporären Verzeichnis ausgeführt und das Projekt dann an den angegebenen Speicherort kopiert.  
+ Der Text muss entweder `true` oder `false` sein. Wenn `true`, das Projekt wird erstellt und parameterersetzung erfolgt in der angegebenen Position der **neues Projekt** (Dialogfeld). Wenn `false`, parameterersetzung in ein temporäres Verzeichnis ausgeführt wird und das Projekt wird am angegebenen Speicherort kopiert.  
   
-## Hinweise  
- `CreateInPlace` ist ein optionales Element.  Der Standardwert ist `true`.  
+## <a name="remarks"></a>Hinweise  
+ `CreateInPlace` ist ein optionales Element. Der Standardwert ist `true`.  
   
-## Beispiel  
- Im folgenden Beispiel werden die Metadaten für eine Vorlage in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] veranschaulicht.  
+## <a name="example"></a>Beispiel  
+ Im folgenden Beispiel werden die Metadaten für eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]-Vorlage veranschaulicht.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -81,6 +86,6 @@ Gibt an, ob das Projekt erstellt und die Parameterersetzung am angegebenen Speic
 </VSTemplate>  
 ```  
   
-## Siehe auch  
- [Erstellen von benutzerdefinierten Projekt\- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   
- [Schemareferenz zu Visual Studio\-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)
+## <a name="see-also"></a>Siehe auch  
+ [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)   
+ [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)

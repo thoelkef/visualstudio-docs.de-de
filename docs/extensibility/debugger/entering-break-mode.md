@@ -1,46 +1,48 @@
 ---
-title: "In den Unterbrechungsmodus | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Unterbrechungsmodus"
-  - "Debuggen [Debugging-SDK], in den Unterbrechungsmodus"
+title: Wechsel in den Unterbrechungsmodus | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- break mode
+- debugging [Debugging SDK], entering break mode
 ms.assetid: e9a8a241-cd21-4d4e-999a-283554c288b1
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 33dd97cf627ae10e71a2aa2213a9763e86818b70
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# In den Unterbrechungsmodus
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Im Folgenden beschreibt den Prozess, der auftritt, wenn ein Haltepunkt erreicht wird, nachdem er auf eine Funktion aufgetreten ist, Zeile des Quellcodes ausgeführt wird, der den Cursor enthält oder einem Haltepunkt ausgeführt wird.  
+# <a name="entering-break-mode"></a>Unterbrechungsmodus
+Im folgenden wird erläutert, das auftritt, wenn ein Breakpoint erreicht wird, nach einem Einzelschritt in eine Funktion, das auf die Zeile des Quellcodes, die den Cursor enthält ausführen oder zu einem Haltepunkt ausgeführt.  
   
-## Unterbrechungsmodus\-Prozess  
+## <a name="break-mode-process"></a>Modus Prozess anhalten  
   
-1.  Das Debugmodul \(DE\) sendet [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md), [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)oder ein anderes aufhörende Ereignis, um die IDE dass in den Unterbrechungsmodus wechselt.  
+1.  Sendet die Debugging-Modul (DE) [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md), [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md), oder andere Stopping-Ereignis, das dazu führen, dass die IDE im Unterbrechungsmodus befinden.  
   
-2.  Das SDM Aufruflisteninformationen werden von der vom Thread ab, wie folgt:  
+2.  Die SDM Ruft die Aufruflisteninformationen vom Thread, wie folgt ab:  
   
     -   [IDebugThread2::EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)  
   
     -   [IEnumDebugFrameInfo2::GetCount](../../extensibility/debugger/reference/ienumdebugframeinfo2-getcount.md)  
   
-    -   [IEnumDebugFrameInfo2::Danach](../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)  
+    -   [IEnumDebugFrameInfo2::Next](../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)  
   
-    -   [IDebugStackFrame2::GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) Quellcode, um die Informationen abzurufen  
+    -   [IDebugStackFrame2::GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) zum Abrufen von Informationen zum Quellordner Code  
   
     -   [IDebugDocumentContext2::GetName](../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md) zum Abrufen des Dateinamens  
   
-    -   [IDebugDocumentContext2::GetStatementRange](../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md) , um den Anweisungstext Bereichs abrufen  
+    -   [IDebugDocumentContext2::GetStatementRange](../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md) können Sie die Anweisung Bereich abrufen  
   
-    -   [IDebugStackFrame2::GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md) zum Abrufen von Informationen über den Arbeitsspeicher  
+    -   [IDebugStackFrame2::GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md) Speicherinformationen abrufen  
   
-## Siehe auch  
- [Aufrufen von Debugger\-Ereignissen](../../extensibility/debugger/calling-debugger-events.md)
+## <a name="see-also"></a>Siehe auch  
+ [Aufrufen von Debuggerereignissen](../../extensibility/debugger/calling-debugger-events.md)

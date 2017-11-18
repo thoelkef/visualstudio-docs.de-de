@@ -1,57 +1,59 @@
 ---
-title: "IDebugSymbolProviderDirect::GetSymUnmanagedReader | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "GetSymUnmanagedReader"
-  - "IDebugSymbolProviderDirect::GetSymUnmanagedReader"
+title: IDebugSymbolProviderDirect::GetSymUnmanagedReader | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- GetSymUnmanagedReader
+- IDebugSymbolProviderDirect::GetSymUnmanagedReader
 ms.assetid: 147bacfa-f66c-43e0-8a72-e601058dc57f
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 8ccbc65919c658fac5132fa3fc9cec37b16e05e5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugSymbolProviderDirect::GetSymUnmanagedReader
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugsymbolproviderdirectgetsymunmanagedreader"></a>IDebugSymbolProviderDirect::GetSymUnmanagedReader
 Ruft einen Symbolreader für nicht verwalteten Code ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetSymUnmanagedReader (  
-   ULONG32    ulAppDomainID,  
-   GUID       guidModule,  
-   IUnknown** ppSymUnmanagedReader  
+   ULONG32    ulAppDomainID,  
+   GUID       guidModule,  
+   IUnknown** ppSymUnmanagedReader  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetSymUnmanagedReader (  
-   uint       ulAppDomainID,  
-   Guid       guidModule,  
-   out object ppSymUnmanagedReader  
+   uint       ulAppDomainID,  
+   Guid       guidModule,  
+   out object ppSymUnmanagedReader  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `ulAppDomainID`  
- \[in\]  Bezeichner der Anwendungsdomäne.  
+ [in] Der Bezeichner der Anwendungsdomäne.  
   
  `guidModule`  
- \[in\]  Eindeutiger Bezeichner des Moduls.  
+ [in] Eindeutiger Bezeichner des Moduls.  
   
  `ppSymUnmanagedReader`  
- \[out\]  Gibt ein Objekt zurück, das den Symbolreader für nicht verwalteten Code darstellt.  
+ [out] Gibt ein Objekt, das die Symbolreader für nicht verwalteten Code darstellt.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

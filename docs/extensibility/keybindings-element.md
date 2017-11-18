@@ -1,30 +1,31 @@
 ---
-title: "KeyBindings-Element | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "KeyBindings"
-helpviewer_keywords: 
-  - "VSCT XML-Schemaelemente, KeyBindings"
-  - "KeyBindings-Element (VSCT-XML-Schema)"
+title: "Schlüsselbindungen Element | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: KeyBindings
+helpviewer_keywords:
+- VSCT XML schema elements, KeyBindings
+- KeyBindings element (VSCT XML schema)
 ms.assetid: 26a15d5c-ddea-4977-af7f-d795ff09c7ad
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ff72a2a7acf63dea678aad0cda4cdca196ffc14f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# KeyBindings-Element
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-KeyBindings Element Gruppen KeyBinding\-Elementen und anderen KeyBindings Gruppierungen.  
+# <a name="keybindings-element"></a>Schlüsselbindungen-Element
+Das Element Schlüsselbindungen gruppiert KeyBinding Elemente und andere Schlüsselbindungen Gruppierungen.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <KeyBindings>  
@@ -33,34 +34,39 @@ KeyBindings Element Gruppen KeyBinding\-Elementen und anderen KeyBindings Gruppi
 </KeyBindings>  
 ```  
   
-## Attribute und Elemente  
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
-### Attribute  
+### <a name="attributes"></a>Attribute  
   
 |Attribut|Beschreibung|  
-|--------------|------------------|  
-|Bedingung|Optional. Siehe [Bedingten Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|---------------|-----------------|  
+|Bedingung|Dies ist optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
-### Untergeordnete Elemente  
-  
-|Element|Beschreibung|  
-|-------------|------------------|  
-|[KeyBinding\-Element](../extensibility/keybinding-element.md)|Gibt die Tastenkombinationen für Befehle.|  
-|[KeyBindings](../extensibility/keybindings-element.md)|Gruppen KeyBinding Elementen und anderen KeyBindings Gruppierungen.|  
-  
-### Übergeordnete Elemente  
+### <a name="child-elements"></a>Untergeordnete Elemente  
   
 |Element|Beschreibung|  
-|-------------|------------------|  
-|[CommandTable\-Element](../extensibility/commandtable-element.md)|Definiert die Elemente aus, die Befehle darstellen.|  
+|-------------|-----------------|  
+|[KeyBinding-Element](../extensibility/keybinding-element.md)|Gibt die Tastenkombinationen für Befehle.|  
+|[Schlüsselbindungen](../extensibility/keybindings-element.md)|Gruppen KeyBinding Elementen und anderen Schlüsselbindungen Gruppierungen.|  
   
-## Beispiel  
+### <a name="parent-elements"></a>Übergeordnete Elemente  
+  
+|Element|Beschreibung|  
+|-------------|-----------------|  
+|[CommandTable-Element](../extensibility/commandtable-element.md)|Definiert die Elemente aus, die Befehle darstellen.|  
+  
+## <a name="example"></a>Beispiel  
   
 ```  
-<KeyBindings> <KeyBinding guid="guidWidgetPackage" id="cmdidUpdateWidget" editor="guidWidgetEditor" key1="VK_F5"/> <KeyBinding guid="guidWidgetPackage" id="cmdidRunWidget" editor="guidWidgetEditor" key1="VK_F5" mod1="Control"/> </KeyBindings>  
+<KeyBindings>  
+  <KeyBinding guid="guidWidgetPackage" id="cmdidUpdateWidget"   
+    editor="guidWidgetEditor" key1="VK_F5"/>  
+  <KeyBinding guid="guidWidgetPackage" id="cmdidRunWidget"   
+    editor="guidWidgetEditor" key1="VK_F5" mod1="Control"/>  
+</KeyBindings>  
 ```  
   
-## Siehe auch  
- [KeyBinding\-Element](../extensibility/keybinding-element.md)   
- [Visual Studio\-Befehl\-Tabelle \(. VSCT\) Dateien](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>Siehe auch  
+ [KeyBinding-Element](../extensibility/keybinding-element.md)   
+ [VSCT-Dateien (Visual Studio Command Table)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

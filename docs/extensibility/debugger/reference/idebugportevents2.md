@@ -1,59 +1,59 @@
 ---
-title: "IDebugPortEvents2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPortEvents2"
-helpviewer_keywords: 
-  - "IDebugPortEvents2-Schnittstelle"
+title: IDebugPortEvents2 | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugPortEvents2
+helpviewer_keywords: IDebugPortEvents2 interface
 ms.assetid: 2c017094-3ba2-4067-83f9-147df1d96bce
-caps.latest.revision: 18
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 75e0b83b81c0d0d80b29c6b9ab32826402fcec99
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPortEvents2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Diese Schnittstelle wird ein Listener \(in der Regel der Debug\- Manager der Sitzung \[\] oder SDM\) \- Modul eine Debug\- und Programmierung über Prozess\- und \- zerstörung für einen bestimmten Anschluss.  Diese Informationen können verwendet werden, um eine Ansicht der Prozesse und Echtzeit Darstellung der Programme, die auf dem Port ausgeführt werden.  
+# <a name="idebugportevents2"></a>IDebugPortEvents2
+Diese Schnittstelle wird einen Listener (in der Regel der Sitzung Debug-Manager [SDM] oder ein Debugging-Modul) von Prozess- und Programm erstellen und Zerstören eines bestimmten Ports benachrichtigt. Diese Informationen können verwendet werden, um eine Echtzeitansicht von der ausgeführten Prozessen und Programmen auf den Port vorhanden.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugPortEvents2 : IUnknown  
 ```  
   
-## Hinweise für Implementierer  
- Visual Studio normalerweise implementiert diese Schnittstelle, um Benachrichtigungen über Programm und \- zerstörung zu empfangen.  Ein Debuggen Modul kann diese Schnittstelle implementieren, um auch für solche Ereignisse Port zu überwachen.  
+## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
+ Visual Studio implementiert in der Regel diese Schnittstelle, um Benachrichtigungen über die Erstellung und Zerstörung empfangen. Ein Debugmodul kann auch diese Schnittstelle zum Überwachen von Ereignissen Port implementieren.  
   
-## Hinweise für Aufrufer  
- Alle [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)\-Schnittstellen können für eine <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>\-Schnittstelle abgefragt werden.  Anschließend wird die <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.FindConnectionPoint%2A>\-Methode für `IDebugPortEvents2` in der <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>\-Schnittstelle aufgerufen, um eine <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>\-Schnittstelle abzurufen.  Schließlich wird die <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A>\-Methode in der <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>\-Schnittstelle aufgerufen, um die Ereignisse von der [Ereignis](../../../extensibility/debugger/reference/idebugportevents2-event.md)\-Methode zu senden.  
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
+ Alle [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) Schnittstellen können abgefragt werden, für eine <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> Schnittstelle. Die <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.FindConnectionPoint%2A> Methode zum `IDebugPortEvents2` wird aufgerufen, der <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> abzurufenden Schnittstelle eine <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> Schnittstelle. Schließlich die <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A> Methode in der <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> Schnittstelle aufgerufen, um die Ereignisse durch Senden der [Ereignis](../../../extensibility/debugger/reference/idebugportevents2-event.md) Methode.  
   
-## Methoden in die Vtable\-Reihenfolge  
- In der folgenden Tabelle sind die Methode von `IDebugPortEvents2`an.  
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
+ Die folgende Tabelle zeigt die Methode der `IDebugPortEvents2`.  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[Ereignis](../../../extensibility/debugger/reference/idebugportevents2-event.md)|Sendet Ereignisse, die die Erstellung und Zerstörung von Prozessen und von Programmen auf dem Port beschreiben.|  
+|------------|-----------------|  
+|[Event](../../../extensibility/debugger/reference/idebugportevents2-event.md)|Sendet Ereignisse an, die die Erstellung und Zerstörung von Prozessen und Programmen auf den Port zu beschreiben.|  
   
-## Hinweise  
- `IDebugPortEvents2` wird auch vom SDM auf Testprogrammen verwendet, die in einen Prozess ausgeführt wird, der bereits gedebuggt wird.  
+## <a name="remarks"></a>Hinweise  
+ `IDebugPortEvents2`durch die SDM dient auch zum Debuggen von Programmen, die in einem Prozess ausgeführt werden, die bereits debuggt wird.  
   
- Ereignisse werden an den Anschluss SDM über diese Schnittstelle übergeben.  
+ Portereignisse werden an die SDM von dieser Schnittstelle übergeben.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
- [Core\-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Core-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

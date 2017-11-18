@@ -1,82 +1,82 @@
 ---
-title: "SccAddFilesFromSCC-Funktion | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccAddFilesFromSCC"
-helpviewer_keywords: 
-  - "SccAddFilesFromSCC-Funktion"
+title: SccAddFilesFromSCC Funktion | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: SccAddFilesFromSCC
+helpviewer_keywords: SccAddFilesFromSCC function
 ms.assetid: f21a3500-ade8-4dd8-8647-10e2179be9c1
-caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 1764bfc503e25860326b1910c432edcf95c8f21c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# SccAddFilesFromSCC-Funktion
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Diese Funktion fügt eine Liste von Dateien aus Datenquellen\-Steuerelement dem aktuell geöffneten Projekt.  
+# <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC-Funktion
+Diese Funktion hinzugefügt zurzeit geöffneten Projekt eine Liste von Dateien aus der quellcodeverwaltung.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 SCCRTN SccAddFilesFromSCC(  
-   LPVOID  pContext,  
-   HWND    hWnd,  
-   LPSTR   lpUser,  
-   LPSTR   lpAuxProjPath,  
-   LONG    cFiles,  
-   LPCSTR* lpFilePaths,  
-   LPCSTR  lpDestination,  
-   LPCSTR  lpComment,  
-   LPBOOL  pbResults  
+   LPVOID  pContext,  
+   HWND    hWnd,  
+   LPSTR   lpUser,  
+   LPSTR   lpAuxProjPath,  
+   LONG    cFiles,  
+   LPCSTR* lpFilePaths,  
+   LPCSTR  lpDestination,  
+   LPCSTR  lpComment,  
+   LPBOOL  pbResults  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  "pContext"  
- \[in\] Der Source Control\-Plug\-in Kontextzeiger.  
+ [in] Der Datenquellen-Steuerelement-Plug-in Kontextzeiger.  
   
  hWnd  
- \[in\] Ein Handle für die IDE\-Fenster, das Quellcodeverwaltungs\-Plug\-in als übergeordnetes Element für alle Dialogfelder verwenden kann, die es bereitstellt.  
+ [in] Ein Handle für die IDE-Fenster, das das Quellsteuerelement-Plug-in als übergeordnetes Element für alle Dialogfelder verwenden kann, die es bereitstellt.  
   
  lpUser  
- \[in, out\] Der Benutzername \(bis zu SCC\_USER\_SIZE, einschließlich null\-Abschlusszeichen\).  
+ [in, out] Der Benutzername (bis zu SCC_USER_SIZE, einschließlich null-Abschlusszeichen).  
   
  lpAuxProjPath  
- \[in, out\] Zusätzliche Zeichenfolge, die zur Identifizierung des Projekts \(bis zu `SCC_PRJPATH_`Größe, einschließlich null\-Abschlusszeichen\).  
+ [in, out] Zusätzlichen Zeichenfolge, die zur Identifizierung des Projekts (bis zu `SCC_PRJPATH_`Größe, einschließlich null-Abschlusszeichen).  
   
  cFiles  
- \[in\] Anzahl der Dateien, die vom `lpFilePaths`.  
+ [in] Anzahl der Dateien, die vom `lpFilePaths`.  
   
  lpFilePaths  
- \[in, out\] Array von Dateinamen für das aktuelle Projekt hinzufügen.  
+ [in, out] Array von Dateinamen, die das aktuelle Projekt hinzufügen.  
   
  lpDestination  
- \[in\] Der Zielpfad, in dem die Dateien geschrieben werden.  
+ [in] Der Zielpfad, in dem die Dateien werden geschrieben werden.  
   
  lpComment  
- \[in\] Der Kommentar, der auf die hinzugefügte Dateien angewendet werden.  
+ [in] Der Kommentar auf einzelnen hinzugefügten Dateien angewendet werden soll.  
   
  pbResults  
- \[in, out\] Array von Flags, die auf Erfolg \(ungleich NULL oder TRUE\) oder Fehler \(0 \(null\) oder "false"\) für jede Datei \(Größe des Arrays muss mindestens `cFiles` lang\).  
+ [in, out] Array von Flags, die auf Erfolg (ungleich NULL oder "true") festgelegt ist oder Fehler (0 (null) oder "false") für jede Datei (Größe des Arrays muss mindestens `cFiles` lang).  
   
-## Rückgabewert  
- Datenquellen\-Steuerelement Plug\-in\-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
+## <a name="return-value"></a>Rückgabewert  
+ Die Source Control-Plug-in-Implementierung dieser Funktion muss einen der folgenden Werte zurückgeben:  
   
 |Wert|Beschreibung|  
-|----------|------------------|  
-|SCC\_E\_PROJNOTOPEN|Projekt ist nicht geöffnet.|  
-|SCC\_E\_OPNOTPERFORMED|Verbindung ist nicht gemäß einem Projekt `lpAuxProjPath.`|  
-|SCC\_E\_NOTAUTHORIZED|Benutzer ist nicht autorisiert, um die Datenbank zu aktualisieren.|  
-|SCC\_E\_NONSPECIFICERROR|Ein Fehler aufgetreten.|  
-|SCC\_I\_RELOADFILE|Eine Datei oder ein Projekt muss neu geladen werden.|  
+|-----------|-----------------|  
+|SCC_E_PROJNOTOPEN|Projekt ist nicht geöffnet werden.|  
+|SCC_E_OPNOTPERFORMED|Verbindung ist nicht gemäß dem gleichen Projekt`lpAuxProjPath.`|  
+|SCC_E_NOTAUTHORIZED|Benutzer ist nicht berechtigt, beim Aktualisieren der Datenbank.|  
+|SCC_E_NONSPECIFICERROR|Unbekannter Fehler.|  
+|SCC_I_RELOADFILE|Eine Datei oder ein Projekt muss erneut geladen werden.|  
   
-## Siehe auch  
- [Source Control\-Plug\-in\-API\-Funktionen](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>Siehe auch  
+ [API-Funktionen von Quellcodeverwaltungs-Plug-Ins](../extensibility/source-control-plug-in-api-functions.md)

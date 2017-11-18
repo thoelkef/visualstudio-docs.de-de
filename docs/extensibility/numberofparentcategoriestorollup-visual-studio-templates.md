@@ -1,30 +1,35 @@
 ---
-title: "NumberOfParentCategoriesToRollUp (Visual Studio-Vorlagen) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#NumberOfParentCategoriesToRollUp"
-helpviewer_keywords: 
-  - "<NumberOfParentCategoriesToRollUp>-Element [Visual Studio-Vorlagen]"
-  - "NumberOfParentCategoriesToRollUp-Element [Visual Studio-Vorlagen]"
+title: NumberOfParentCategoriesToRollUp (Visual Studio-Vorlagen) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#NumberOfParentCategoriesToRollUp
+helpviewer_keywords:
+- NumberOfParentCategoriesToRollUp element [Visual Studio Templates]
+- <NumberOfParentCategoriesToRollUp> element [Visual Studio Templates]
 ms.assetid: 6f9d36f5-ae23-4a92-8132-b11799e2c21a
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: c35a29ada0b2fe2aa23d61426868ee00bd5cfaeb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# NumberOfParentCategoriesToRollUp (Visual Studio-Vorlagen)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Gibt die Anzahl von übergeordneten Kategorien an, von denen die Vorlage im Dialogfeld **Neues Projekt** angezeigt wird.  
+# <a name="numberofparentcategoriestorollup-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp (Visual Studio-Vorlagen)
+Gibt die Anzahl von übergeordneten Kategorien, die die Vorlage in anzeigen, wird die **neues Projekt** (Dialogfeld).  
   
-## Syntax  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<NumberOfParentCategoriesToRollUp >  
+  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <NumberOfParentCategoriesToRollUp>  
@@ -32,31 +37,31 @@ Gibt die Anzahl von übergeordneten Kategorien an, von denen die Vorlage im Dial
 </NumberOfParentCategoriesToRollUp>  
 ```  
   
-## Attribute und Elemente  
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
-### Attribute  
+### <a name="attributes"></a>Attribute  
  Keine.  
   
-### Untergeordnete Elemente  
- Keine.  
+### <a name="child-elements"></a>Untergeordnete Elemente  
+ Keine  
   
-### Übergeordnete Elemente  
+### <a name="parent-elements"></a>Übergeordnete Elemente  
   
-|Element|Description|  
+|Element|Beschreibung|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Kategorisiert die Vorlage und definiert, wie diese in den Dialogfeldern **Neues Projekt** oder **Neues Element hinzufügen** angezeigt wird.|  
   
-## Textwert  
- Ein `integer`\-Wert ist erforderlich.  
+## <a name="text-value"></a>Textwert  
+ Ein `integer` Wert ist erforderlich.  
   
- Dieser Wert gibt die Anzahl von übergeordneten Kategorien an, von denen die Vorlage im Dialogfeld **Neues Projekt** angezeigt wird.  
+ Dieser Wert gibt die Anzahl von übergeordneten Kategorien, die die Vorlage in anzeigen, wird die **neues Projekt** (Dialogfeld).  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
  `NumberOfParentCategoriesToRollUp` ist ein optionales Element.  
   
-## Beispiel  
- In diesem Beispiel werden die Metadaten für eine Windows\-Anwendung in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] veranschaulicht.  Wenn eine Vorlage mit diesen Metadaten zwei Ordnerebenen unter dem obersten Knoten [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] abgelegt wird, wird sie im obersten Knoten im Dialogfeld **Neues Projekt** angezeigt.  Wenn `NumberOfParentCategoriesToRollUp` nicht festgelegt ist, wird die Vorlage nur in dem Knoten angezeigt, in dem sie sich tatsächlich befindet.  
+## <a name="example"></a>Beispiel  
+ In diesem Beispiel wird veranschaulicht, die Metadaten für eine [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows-Anwendung. Wenn eine Vorlage mit diesen Metadaten zwei Ordnerebenen unterhalb der obersten Ebene befindet [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Knoten, die Vorlage angezeigt, in der oberste Knoten in der **neues Projekt** (Dialogfeld). Wenn die `NumberOfParentCategoriesToRollUp` ist nicht festgelegt ist, wird die Vorlage wird nur angezeigt, in dem Knoten in dem sie physisch befindet.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -83,6 +88,6 @@ Gibt die Anzahl von übergeordneten Kategorien an, von denen die Vorlage im Dial
 </VSTemplate>  
 ```  
   
-## Siehe auch  
- [Schemareferenz zu Visual Studio\-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
- [Erstellen von benutzerdefinierten Projekt\- und Elementvorlagen](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>Siehe auch  
+ [Schemareferenz zu Visual Studio-Vorlagen](../extensibility/visual-studio-template-schema-reference.md)   
+ [Erstellen von Projekt- und Elementvorlagen](../ide/creating-project-and-item-templates.md)

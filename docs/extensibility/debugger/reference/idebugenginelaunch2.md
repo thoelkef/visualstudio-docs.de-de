@@ -1,56 +1,56 @@
 ---
-title: "IDebugEngineLaunch2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngineLaunch2"
-helpviewer_keywords: 
-  - "IDebugEngineLaunch2-Schnittstelle"
+title: IDebugEngineLaunch2 | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugEngineLaunch2
+helpviewer_keywords: IDebugEngineLaunch2 interface
 ms.assetid: 5eaf2ad8-3fbf-446e-b48b-5327ad3f5255
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 989bea1fc3398be376c7c2d5c41ce390e59c228f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugEngineLaunch2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Wird von einem Modul \(Debug\) DE zum Starten und Programme zu beenden.  
+# <a name="idebugenginelaunch2"></a>IDebugEngineLaunch2
+Von einer Debugging-Modul (DE) verwendet zum Starten und Beenden von Programmen.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
-IDebugEngineLaunch2 : IDebugEngine2  
+IDebugEngineLaunch2 : IDebugEngine2  
 ```  
   
-## Hinweise für Implementierer  
- Diese Schnittstelle wird von benutzerdefinierten DE implementiert, wenn sie besondere Anforderungen für Starten eines Prozesses verfügt, der nicht durch einen benutzerdefinierten Port vollständig behandelt werden kann.  Dies ist normalerweise der Fall, wenn DE Teil eines Interpreters ist und der Prozess, der gedebuggt wird, ein Skript ist: muss zuerst der Interpreter ausgeführt werden, und anschließend wird das Skript geladen und gestartet.  Ein Port kann der Interpreter starten, aber das Skript \(der eine Sonderbehandlung erfordert möglicherweise wird DE eine Rolle verfügt\).  Diese Schnittstelle wird implementiert, wenn es nur eindeutige Anforderungen für Starten eines Programms vorhanden ist, das einen benutzerdefinierten Port nicht behandeln kann.  
+## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
+ Diese Schnittstelle wird durch eine benutzerdefinierte DE implementiert, weist besondere Anforderungen für das Starten eines Prozesses, das vollständig von einem benutzerdefinierten Port nicht behandelt werden kann. Dies ist normalerweise der Fall, wenn DE Teil einer Interpreter ist und der zu debuggende Prozess ein Skript ist: der Interpreter muss zuerst gestartet werden, und klicken Sie dann das Skript geladen und gestartet wird. Ein Port den Interpreter starten kann, aber das Skript möglicherweise erfordern eine besondere Behandlung (das ist, in dem die DE eine Rolle verfügt). Diese Schnittstelle wird implementiert, nur, wenn es sind besondere Anforderungen für das Starten eines Programms, das ein benutzerdefinierter Port verarbeitet werden kann.  
   
-## Hinweise für Aufrufer  
- Diese Schnittstelle wird vom Debugbuild Manager der Sitzung \(SDM\) aufgerufen, wenn das SDM diese Schnittstelle von der Schnittstelle abrufen kann [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) \(mit QueryInterface\).  Wenn diese Schnittstelle abgerufen werden kann, weiß das SDM, dass DE besondere Anforderungen verfügt und ruft diese Schnittstelle auf, um das Programm den Port, anstatt auf Start zu öffnen.  
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
+ Diese Schnittstelle wird aufgerufen, von der Sitzung Debug-Manager (SDM) Wenn die SDM diese Schnittstelle abrufen kann aus der [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) Schnittstelle (mithilfe von QueryInterface). Wenn diese Schnittstelle abgerufen werden kann, weiß der SDM an, dass die DE besondere Anforderungen gelten, und diese Schnittstelle ruft, um das Programm, anstatt den Port, die Ausführung zu starten.  
   
-## Methoden in die Vtable\-Reihenfolge  
- In der folgenden Tabelle werden die Methoden von `IDebugEngineLaunch2`an.  
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
+ Die folgende Tabelle zeigt die Methoden der `IDebugEngineLaunch2`.  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)|Startet einen Prozess mithilfe DEs.|  
-|[ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)|Setzt Prozessausführung fort.|  
+|------------|-----------------|  
+|[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)|Startet einen Prozess mithilfe der Deutschland.|  
+|[ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)|Setzt Verarbeitung Ausführung.|  
 |[CanTerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-canterminateprocess.md)|Bestimmt, ob ein Prozess beendet werden kann.|  
-|[TerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-terminateprocess.md)|Beendet einen Prozess.|  
+|[TerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-terminateprocess.md)|Beendet einen Prozess an.|  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: Msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

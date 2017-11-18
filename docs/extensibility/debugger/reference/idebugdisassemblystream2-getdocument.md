@@ -1,57 +1,57 @@
 ---
-title: "IDebugDisassemblyStream2::GetDocument | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDisassemblyStream2::GetDocument"
-helpviewer_keywords: 
-  - "IDebugDisassemblyStream2::GetDocument"
+title: IDebugDisassemblyStream2::GetDocument | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugDisassemblyStream2::GetDocument
+helpviewer_keywords: IDebugDisassemblyStream2::GetDocument
 ms.assetid: 3d039a44-ebaa-4413-ac18-7cfd92c408bd
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9bbf3ca1c35de6ef8742d5a6dcc5fba4721dc440
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugDisassemblyStream2::GetDocument
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft das Quelldokument ab, das diesem Schwellenwert zugeordnet ist.  
+# <a name="idebugdisassemblystream2getdocument"></a>IDebugDisassemblyStream2::GetDocument
+Ruft das Quelldokument diesen Eingabedatenstrom zugeordnet.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetDocument(   
-   BSTR              bstrDocumentUrl,  
-   IDebugDocument2** ppDocument  
+```cpp  
+HRESULT GetDocument(   
+   BSTR              bstrDocumentUrl,  
+   IDebugDocument2** ppDocument  
 );  
 ```  
   
-```c#  
-int GetDocument(   
-   string              bstrDocumentUrl,  
-   out IDebugDocument2 ppDocument  
+```csharp  
+int GetDocument(   
+   string              bstrDocumentUrl,  
+   out IDebugDocument2 ppDocument  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `bstrDocumentUrl`  
- \[in\]  Das Dokument URLs.  
+ [in] Die URL des Dokuments.  
   
  `ppDocument`  
- \[out\]  Gibt ein [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)\-Objekt zurück, das das Dokument darstellt.  
+ [out] Gibt eine [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) Objekt, das das Dokument darstellt.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Diese Methode wird von Debugsymbolinformationen auf Module implementiert, die Textdokumente haben, die nicht in einer tatsächlichen Datei gespeichert werden.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode wird von Debugmodule implementiert, Textdokumente verfügen, die nicht in einer tatsächlichen-Datei gespeichert werden.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)   
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

@@ -1,54 +1,56 @@
 ---
-title: "Erstellen von Instanzen von Project mithilfe von Project-Factorys | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Projekt-Factorys"
-  - "Projekte [Visual Studio SDK], Projekt-Factorys"
+title: Erstellen von Instanzen von Project mithilfe von Projektfactorys | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- project factories
+- projects [Visual Studio SDK], project factories
 ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 7175bd4e2d0b07640dd45b38aa246c649def32ef
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Erstellen von Instanzen von Project mithilfe von Project-Factorys
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Projekttypen in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]*factory Projekt* verwenden, um Instanzen von Projektobjekten zu erstellen.  Eine Projekt factory ist mit einer standardmäßigen klassenfactory für cocreatable einen sehr ähnlich.  Projektobjekte sind jedoch nicht cocreatable: Sie können nur erstellt werden, indem eine Projekt factory verwenden.  
+# <a name="creating-project-instances-by-using-project-factories"></a>Erstellen von Instanzen von Project mithilfe von Projektfactorys
+Projekttypen in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] verwenden eine *Projekt Factory* zum Erstellen von Instanzen von Projektobjekten. Eine Factory Projekt ähnelt einer standard-Klassenfactory für cocreatable COM-Objekte. Projektobjekte sind jedoch nicht cocreatable: sie können nur mit einem Project-Factory erstellt werden.  
   
- Das [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE zeigt die Projekt factory in einem VSPackage implementieren, wenn ein Benutzer ein vorhandenes Projekt lädt oder ein neues Projekt in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]erstellt.  Das neue Projektobjekt stellt die IDE mit genügend Informationen, um Projektmappen\-Explorer zu füllen.  Das neue Projektobjekt stellt auch die erforderlichen Schnittstellen zur Unterstützung aller relevanten Benutzeroberflächenaktionen bereit, die von der IDE initiiert werden.  
+ Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE Ruft die Projekt-Factory, die in Ihrem VSPackage implementiert werden, wenn ein Benutzer ein vorhandenes Projekt geladen oder ein neues Projekt in erstellt [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Das neue Objekt stellt die IDE genügend Informationen zum Auffüllen der Projektmappen-Explorer bereit. Das neue Objekt bietet zudem die erforderlichen Schnittstellen unterstützen alle relevanten UI-Aktionen, die von der IDE initiiert.  
   
- Sie können die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>\-Schnittstelle in einer Klasse im Projekt implementieren.  In der Regel befindet sich diese in einem eigenen Moduls.  
+ Sie können implementieren die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> Schnittstelle in einer Klasse in Ihrem Projekt. In der Regel befindet sich in einem eigenen Modul.  
   
- Ein Beispiel für eine Implementierung der `IVsProjectFactory`\-Schnittstelle finden Sie in PrjFac.cpp B. [Basic Project](http://msdn.microsoft.com/de-de/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) im Verzeichnis enthalten ist.  
+ Ein Beispiel für eine Implementierung der `IVsProjectFactory` Benutzeroberfläche, siehe PrjFac.cpp, die in enthalten ist das [Basic-Projekts](http://msdn.microsoft.com/en-us/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) Beispielverzeichnis.  
   
- Projekte, die von einem Besitzer aggregiert werden, unterstützen, müssen eine Besitzers Schlüssels in der Projektdatei beibehalten werden.  Wenn die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>\-Methode die einem Projekt mit einer Besitzers Taste aufgerufen wird, konvertiert das Besitze Projekt, dessen Besitzer einer Taste factory Projekt GUID ruft dann die `CreateProject` factory Projekt für diese Methode aufrufen, um die tatsächliche Build durchzuführen.  
+ Projekte, die durch einen Besitzer aggregiert unterstützen müssen einen Besitzer Schlüssel in ihrer Projektdatei beibehalten. Wenn die <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> Methode für ein Projekt mit einem Schlüssel Besitzer aufgerufen wird, das zugehörige Projekt konvertiert seinen Besitzer Schlüssel in einem Projekt Factory GUID dann Ruft die `CreateProject` Methode in diesem Projekt Factory möchten die tatsächliche Erstellung.  
   
-## Ein Besitz Projekt erstellen  
- Ein Besitzer erstellt ein Besitz Projekt in zwei Phasen:  
+## <a name="creating-an-owned-project"></a>Erstellen eines Eigentümer-Projekts  
+ Ein Besitzer erstellt ein Eigentümer-Projekts in zwei Phasen:  
   
-1.  Durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.PreCreateForOwner%2A>\-Methode.  Dies gibt dem Besitzen Projekt eine Möglichkeit, ein aggregiertes Projektobjekt auf Grundlage der Eingaben zu erstellen, die `IUnknown`steuert.  Das Besitze Projekt führt innere `IUnknown` und das zusammengesetzte Projekt Besitzers zum Objekt zurück.  Dies gibt dem Besitzen Projekt eine Möglichkeit zur inneren `IUnknown`zu speichern.  
+1.  Durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.PreCreateForOwner%2A> Methode. Auf diese Weise können dem zugehörige Projekt zum Erstellen eines aggregierte Projektdatei-Objekts, das basierend auf der Eingabe steuern `IUnknown`. Das zugehörige Projekt übergibt die innere `IUnknown` und die aggregierten-Objekt wieder mit dem Besitzer-Projekt. Dies ermöglicht dem zugehörige Projekt Möglichkeit zum Speichern des inneren `IUnknown`.  
   
-2.  Durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A>\-Methode.  Das Besitze Projekt führt die gesamte Instanziierung, wenn diese Methode aufgerufen wird, anstatt `IVsProjectFactory::CreateProject` aufrufen, wie das Argument für Projekte, die nicht im Besitz sind.  Die Eingabe `VSOWNEDPROJECTOBJECT`\-Enumeration ist i. d. R. das aggregierte Besitze Projekt.  Das Besitze Projekt kann diese Variable verwenden, um zu ermitteln, ob das Projektobjekt bereits erstellt wurde \(Cookie entspricht nicht null\) oder gleichgestellte Cookie erstellt werden muss \(null\).  
+2.  Durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A> Methode. Das zugehörige Projekt aller seiner Instanziierung ist, wenn diese Methode, statt aufgerufen wird `IVsProjectFactory::CreateProject` wie bei Projekten der Fall wäre, die nicht im Besitz sind. Die Eingabe `VSOWNEDPROJECTOBJECT` Enumeration ist in der Regel die aggregierte Projektdatei Eigentum ist. Das zugehörige Projekt kann die Variable verwenden, um festzustellen, ob die Projektobjekt bereits erstellt wurde (Cookie nicht gleich NULL) oder (Cookie gleich NULL) erstellt werden muss.  
   
- Projekttypen werden durch eine eindeutige Projekt\-GUID identifiziert, die auf die CLSID eines cocreatable COM\-Objekts ähnelt.  In der Regel ein Projekt mit Handles factorys, die Instanzen eines bestimmten Projekttyps erstellen, obwohl es möglich ist, ein Projekt factory behandelt haben mehrere Projekttyp\-GUID.  
+ Projekttypen werden durch ein einzigartiges Projekt-GUID, ähnlich wie die CLSID des cocreatable COM-Objekt identifiziert. Ein Projekt Factory Handles Erstellen von Instanzen der einen einzelnen Projekttyp, obwohl es möglich ist, haben ein Projekt Factory verarbeiten in der Regel mehr als einem Projekttyp GUID.  
   
- Projekttypen werden mit einer bestimmten Dateinamenerweiterung zugeordnet.  Wenn ein Benutzer versucht, eine vorhandene Projektdatei öffnen oder ein neues Projekt erstellen, indem Sie eine Vorlage verwendet, klont die IDE die Erweiterung der Datei, um die entsprechende Projekt\-GUID zu bestimmen.  
+ Projekttypen sind mit einer bestimmten Dateinamenerweiterung verknüpft. Wenn ein Benutzer versucht, eine vorhandene Projektdatei an öffnen oder versucht, ein neues Projekt erstellen, indem Sie eine Vorlage klonen, verwendet die IDE die Erweiterung für die Datei zum Bestimmen von des entsprechenden Projekts-GUID an.  
   
- Sobald die IDE bestimmt, ob überhaupt ein neues Projekt erstellen oder ein vorhandenes Projekt eines bestimmten Typs geöffnet werden muss, verwendet die IDE die Informationen in der Systemregistrierung unter \[HKEY\_LOCAL\_MACHINE \\ Software \\ Microsoft \\ VisualStudio \\ 8.0 \\ Projects\] nach denen gesucht werden soll, die einem VSPackage die erforderliche Projekt factory implementiert.  Die IDE lädt diese VSPackage.  In der <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>\-Methode muss die VSPackages factory Projekt mit der IDE registriert, indem die <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes.RegisterProjectType%2A>\-Methode aufgerufen wird.  
+ Sobald die IDE stellt fest, ob er muss ein neues Projekt erstellen oder öffnen Sie ein vorhandenes Projekt eines bestimmten Typs, die IDE die Informationen in der Registrierung unter [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\8.0\Projects] verwendet, um die suchen VSPackage implementiert die erforderlichen Projekt--Factory. Die IDE lädt diese VSPackage. In der <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> -Methode, das VSPackage muss bei der IDE ab Werk Projekt registrieren, durch Aufrufen der <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes.RegisterProjectType%2A> Methode.  
   
- Die primäre Methode der `IVsProjectFactory`\-Schnittstelle ist <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> , die zwei Szenarien behandeln soll: ein vorhandenes Projekt und zum Erstellen eines neuen Projekts öffnen.  Die meisten Projekten speichern ihre Projekt Zustand in einer Projektdatei.  In der Regel werden neue Projekte erstellt, indem eine Kopie der Vorlagendatei erstellt, die auf die `CreateProject`\-Methode übergeben wird und die Kopie dann öffnet.  Vorhandene Projekte direkt instanziiert werden, indem Sie die Projektdatei öffnet, die `CreateProject`\-Methode übergeben wird.  Die `CreateProject`\-Methode kann bei Bedarf zusätzliche Benutzeroberflächenfunktionen für den Benutzer angezeigt werden.  
+ Die wichtigste Methode der `IVsProjectFactory` Schnittstelle ist <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> der beiden Szenarien behandelt werden sollen: Öffnen ein vorhandenes Projekt und Erstellen eines neuen Projekts. Die meisten Projekte speichern ihre Projektzustands in einer Projektdatei. In der Regel werden neue Projekte erstellt, durch Festlegen, dass eine Kopie der Vorlagendatei an die `CreateProject` -Methode, und klicken Sie dann die Kopie öffnen. Vorhandene Projekte sind instanziiert, indem direkt öffnen die Projektdatei übergeben `CreateProject` Methode. Die `CreateProject` Methode zusätzliche Features der Benutzeroberfläche für die Benutzer nach Bedarf anzeigen kann.  
   
- Ein Projekt kann auch keine Dateien verwenden und seinen Zustand Projekt in einem Speichermechanismus Gegensatz zum Dateisystem, z. B. eine Datenbank oder einen Webserver stattdessen auf Speichern.  In diesem Fall lautet der Dateiname `CreateProject`\-Parameter, der an die Methode übergeben wird, nicht tatsächlich ein Dateisystempfad STRING\-ein eindeutige, sondern identifiziert die URL\-zu Projektdaten.  Sie müssen keine die Vorlagendateien zu kopieren, die `CreateProject` übergeben werden, um die richtige Konstruktion sequence Ausführung auszulösen.  
+ Ein Projekt kann auch keine Dateien verwenden und stattdessen Datenbankzustands Projekt in ein Speichermechanismus als Dateisystem, z. B. eine Datenbank oder Web-Server zu speichern. In diesem Fall der File-Name-Parameter übergeben, um die `CreateProject` Methode ist nicht tatsächlich einen Dateisystempfad jedoch eine eindeutige Zeichenfolge – eine URL, um den Projektdaten zu identifizieren. Sie müssen nicht die Vorlagendateien kopieren, die übergeben werden `CreateProject` zum Auslösen der entsprechenden Konstruktion Sequenz ausgeführt werden.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes>   
- [Prüfliste: Erstellen von neuen Typen](../../extensibility/internals/checklist-creating-new-project-types.md)
+ [Prüfliste: Erstellen neuer Projekttypen](../../extensibility/internals/checklist-creating-new-project-types.md)

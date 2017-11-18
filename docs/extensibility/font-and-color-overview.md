@@ -1,83 +1,85 @@
 ---
-title: "Schriftart und Farbe (&#220;bersicht) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Editoren [Visual Studio SDK], Schriftart und Farbe"
-  - "Schriftart und Farbe-Steuerelement [Visual Studio SDK] Editoren"
+title: "Schriftart und Farbe (Übersicht) | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- editors [Visual Studio SDK], font and color
+- font and color control [Visual Studio SDK], editors
 ms.assetid: 2203e4e7-8b7f-44ec-8884-6ff718d4f278
-caps.latest.revision: 22
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 22
+caps.latest.revision: "22"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 13a2a8b584af507f8937fd6abb46c85f329de0b6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Schriftart und Farbe (&#220;bersicht)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Dieses Thema behandelt Schriftart\- und Farbeinstellungen Text in der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung \(IDE\).  Er stellt auch die Konzepte von Kategorien und vor unter Elemente anzeigen und VSPackages und es wird beschrieben, wie die Kernfunktionen des Editors simst Attribute verwenden.  
+# <a name="font-and-color-overview"></a>Schriftart und Farbe (Übersicht)
+In diesem Thema wird erläutert, Schriftart und Farbe Einstellungen für Text in die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (IDE). Es führt auch zu die Konzepten der Kategorien und Elemente anzeigen, und es wird beschrieben, wie VSPackages und die Core-Editor Textattribute.  
   
-## Die Schriftarten und Farben\-Eigenschaftenseite  
- Sie können Attribute des angezeigten Texts in der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung \(IDE\) durch die **Schriftarten und Farben**\-Eigenschaftenseite verwalten.  Um die **Schriftarten und Farben**\-Eigenschaftenseite, auf dem **Extras** Menü zu suchen, klicken Sie auf **Optionen**.  Erweitern Sie den Eintrag **Umgebung**, und klicken Sie dann auf **Schriftarten und Farben**.  
+## <a name="the-fonts-and-colors-property-page"></a>Schriftarten und Farben-Eigenschaftenseite  
+ Können Sie Attribute von angezeigtem Text in verwalten die [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (IDE) über die **Schriftarten und Farben** Eigenschaftenseite. Zum Suchen der **Schriftarten und Farben** Eigenschaftenseite auf die **Tools** im Menü klicken Sie auf **Optionen**. Erweitern Sie **Umgebung**, und klicken Sie dann auf **Schriftarten und Farben**.  
   
-## Kategorien und Anzeigen\-Elemente  
- Schriftarten und Farben werden in **Kategorien** und **Elemente anzeigen**organisiert.  
+## <a name="categories-and-display-items"></a>Kategorien und Anzeigeelemente  
+ Schriftarten und Farben werden in organisiert **Kategorien** und **Anzeigeelementen**.  
   
--   **Kategorie** ist ein logischer Container für einige oder funktionaler **Elemente anzeigen**.  
+-   Ein **Kategorie** ist ein logischer oder funktionalen Container für eine Reihe von **Anzeigeelementen**.  
   
-     Eine Liste von **Kategorien** befindet sich im **Einstellungen anzeigen für** Dropdown\-Steuerelement der **Schriftarten und Farben**\-Eigenschaftenseite.  
+     Eine Liste der **Kategorien** befindet sich in der **Einstellungen anzeigen für** im Dropdown-Feld der **Schriftarten und Farben** Eigenschaftenseite.  
   
--   **Element anzeigen** ist eine klar definierte Text entität z. B. einen Kommentar oder eine Zeichenfolge, die eine Steuerungsstruktur getönt werden soll, wenn diese angezeigt wird.  
+-   Ein **Anzeigeelements** ist eine Entität klar definierten Text z. B. einen Kommentar, eine Zeichenfolge oder eine Steuerelement-Struktur, die bei der Anzeige farbig hervorgehoben werden.  
   
- Jedes **Element anzeigen** ist eindeutig innerhalb **Kategorie** definiert, das sie enthält.  Infolgedessen kann mehr als ein **KategorieElement anzeigen** mit dem gleichen Namen haben.  
+ Jede **Anzeigeelements** ist eindeutig innerhalb definiert die **Kategorie** , die Sie enthält. Folglich mehr als eine **Kategorie** kann eine **Anzeigeelements** mit dem gleichen Namen.  
   
-## VSPackage\-Steuerelement für Schriftarten und Farben  
- [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] VSPackages zu können:  
+## <a name="vspackage-control-of-fonts-and-colors"></a>VSPackage-Steuerelement von Schriftarten und Farben  
+ Die [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] von VSPackages zu können:  
   
 -   Definieren von Schriftart und Farbe **Kategorien**.  
   
--   Geben Sie die Schriftarten und Farben an, die verwendet werden, um **Elemente anzeigen**darzustellen.  
+-   Geben Sie die verwendeten Schriftarten und Farben zum Präsentieren von **Anzeigeelementen**.  
   
--   Interagieren mit der **Schriftarten und Farben**\-Eigenschaftenseite.  
+-   Interagieren mit der **Schriftarten und Farben** Eigenschaftenseite.  
   
--   Gesamtes mehrere **Kategorien** in Gruppen.  
+-   Aggregieren mehrerer **Kategorien** gruppiert.  
   
--   Beibehalten von Änderungen in den Standardeinstellungen beibehalten.  
+-   Beibehalten der Änderungen in den Standardeinstellungen an.  
   
- Es gibt zwei Möglichkeiten, Schriftart und [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]in Farbauswahl zu interagieren.  
+ Es gibt zwei Möglichkeiten für die Interaktion mit der Schriftart und Farbe Auswahlen in den [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)].  
   
--   Eine Möglichkeit so genannte *Syntaxfarbe*.  Er wird von VSPackages mit den vorhandenen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Editor anpassen, um einen Sprachdienst zu implementieren und einen Quellcode\-Editor zu erstellen.  
+-   Eine Möglichkeit, die Verfügbarkeitsklasse *Syntax Syntaxfarben*. Er wird von einem VSPackage, das die vorhandenen passt verwendet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] -Editor, um einen Sprachdienst implementieren, und erstellen eine Datenquelle mit dem Editor.  
   
-     Nur ein **KategorieText\-Editor**nämlich diesen Mechanismus unterstützt.  
+     Nur ein **Kategorie** dieser Mechanismus nämlich unterstützt, wird die **Text-Editor**.  
   
--   Eine allgemeine Alternative unterstützt alle weiteren **Kategorien** und Benutzeroberflächenkomponenten außer den Quellcode\-Editor, wenn sie Text anzeigt.  Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>.  
+-   Eine allgemeinere Alternative unterstützt alle anderen **Kategorien** und Komponenten der Benutzeroberfläche als Quellen-Editor beim Anzeigen von Text. Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>.  
   
-## Kern\-Editor\-Text\-Einstellungen  
- Schriftart\- und Farbeinstellungen für den Kern des Editors eines Objekts werden von **Text\-EditorKategorie** Sprachdienst bestimmt, das im **Einstellungen anzeigen für** Dropdown\-Steuerelement der **Schriftarten und Farben**\-Eigenschaftenseite gefunden wird.  
+## <a name="core-editor-text-settings"></a>Core EditorText-Einstellungen  
+ Schriftart und Farbe Einstellungen für den Core-Editor eines Dienstobjekts Sprache unterliegen die **Text EditorCategory** gefunden der **Einstellungen anzeigen für** im Dropdown-Feld der **Schriftarten und Farben** Eigenschaftenseite.  
   
- Beim Arbeiten mit Editoren, sollten Sie die spezielle Schriftart und Farbe kontrollmechanismus verwenden, den der Sprachdienst bereitstellt, um die **Text\-Editor** Einstellungen zu steuern und zu erweitern.  Der Mechanismus als *Syntaxfarbe* und stellt zur Verfügung:  
+ Bei der Arbeit mit Editoren sollten Sie verwenden spezielle Schriftart und Farbe Control-Mechanismus, der der Sprachdienst bietet, um zu steuern und Erweitern der **Texteditor** Einstellungen. Der Mechanismus wird als bezeichnet *Syntaxfarben* und bietet:  
   
--   Eine vereinfachte Möglichkeit zum Verwalten der Schriftarten und Farben aus Elemente anzeigen.  
+-   Ein vereinfachtes Verfahren zum Verwalten von Schriftarten und Farben für Anzeigeelemente.  
   
      Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> und <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>.  
   
--   Ein gut definiert und optimierter Mechanismus zur Farbauftrag.  
+-   Eine klar definierte und optimierte farbliche Kennzeichnung-Mechanismus.  
   
      Weitere Informationen finden Sie unter <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>.  
   
--   Die Möglichkeit für beide verwenden **Text\-EditorKategorie** integrierte Anzeigen von Elementen und sie zu erweitern.  
+-   Die Möglichkeit, beide verwenden integrierte Anzeigeelementen aus der **Text EditorCategory** und um sie zu erweitern.  
   
-     Weitere Informationen finden Sie unter [Gewusst wie: Verwenden von integrierten Färbbare Elemente](../extensibility/internals/how-to-use-built-in-colorable-items.md) und [Benutzerdefinierte Färbbare Elemente](../extensibility/internals/custom-colorable-items.md).  
+     Weitere Informationen finden Sie unter [wie: Verwenden integrierter Färbbare Elemente](../extensibility/internals/how-to-use-built-in-colorable-items.md) und [benutzerdefinierte Färbbare Elemente](../extensibility/internals/custom-colorable-items.md).  
   
--   Die automatische Beibehaltung des aktuellen Zustands der integrierten und benutzerdefinierten Anzeige der Elemente **Text\-Editor** Kategorie.  
+-   Automatische Beibehaltung des aktuellen Status des sowohl integrierte und benutzerdefinierte Elemente mit Anzeigen der **Texteditor** Kategorie.  
   
- Weitere Informationen über Syntaxfarbe finden Sie unter [Syntaxfarben in eine Legacy\-Sprachdienst](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).  
+ Weitere Informationen zu Syntaxfarben finden Sie unter [Syntax in ein Legacy-Sprachdienst Farbgebung](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).  
   
-## Siehe auch  
- [Legacy\-Schnittstellen im Editor](../extensibility/legacy-interfaces-in-the-editor.md)   
- [Syntaxfarben in eine Legacy\-Sprachdienst](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
+## <a name="see-also"></a>Siehe auch  
+ [Legacy-Schnittstellen im Editor](../extensibility/legacy-interfaces-in-the-editor.md)   
+ [Syntaxfarben in einem Legacysprachdienst](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)

@@ -1,53 +1,54 @@
 ---
-title: "Haltepunkte (Visual Studio-SDK) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Haltepunkte"
+title: Haltepunkte (Visual Studio SDK) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: breakpoints
 ms.assetid: acfcabed-9f2f-436c-ad18-7ca2f45d631b
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b8acb93b9e079dbfc3abf5083734b9b4ec392e1e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Haltepunkte (Visual Studio-SDK)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Es gibt drei Typen von Haltepunkten: ausstehend, gebunden und Fehler.  
+# <a name="breakpoints-visual-studio-sdk"></a>Haltepunkte (Visual Studio SDK)
+Es gibt drei Typen von Haltepunkten: Ausstehend "," gebundenen und Fehler.  
   
- **Ein anstehender Haltepunkt:**  
+ **Ein ausstehender Haltepunkt:**  
   
--   Ist eine Abstraktion, die alle Informationen enthält, die benötigt werden, um einen Haltepunkt zu einem oder mehreren kontexten Code in einem oder mehreren Programmen zu binden.  Jedes Mal, wenn in einem Programm, das die gedebuggte zu laden, dass das Debugmodul ist, alle ausstehenden Haltepunkte überprüft, um festzustellen, ob diese verbunden werden können.  
+-   Ist eine Abstraktion, die alle einen Haltepunkt für eine oder mehrere Code Kontexte in eine oder mehrere Programme binden erforderlichen Informationen enthält. Jedes Mal überprüft Ursachencode zum Laden eines Programms, gedebuggt werden, das Debugmodul alle ausstehenden Haltepunkte, um festzustellen, ob sie gebunden werden können.  
   
-     Ein anstehender Haltepunkt selbst bindet, aber nie in den Code, sondern gesammelt und gesagt, alle gebundenen Haltepunkte enthalten soll, dass er generiert.  
+     Ein ausstehender Haltepunkt selbst nie bindet an Code, aber stattdessen sammelt und besitzt die gebundenen Breakpoints enthalten, die sie generiert.  
   
--   Wird von einer [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)\-Schnittstelle dargestellt.  
+-   Dargestellt durch eine [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) Schnittstelle.  
   
- **Ein gebundener Haltepunkt:**  
+ **Einen gebundenen Haltepunkt:**  
   
--   Ist eine Abstraktion eines Haltepunkts, der zugeordnet werden oder Begrenzung auf ein einzelnes Code Elementkontext.  Jeder gebundene Haltepunkt wird als Reaktion auf einen anstehenden Haltepunkt generiert.  Ein anstehender Haltepunkt kann mehr als einen gebundenen Haltepunkt jedoch generieren.  
+-   Eine Abstraktion für einen Breakpoint ist zugeordnet oder an einen einzelnen Codekontext gebunden. Jede gebundene Haltepunkt wird als Antwort auf ein ausstehender Haltepunkt generiert. Ein ausstehender Haltepunkt kann jedoch mehr als einen gebundenen Haltepunkt generieren.  
   
-     Wenn Code entladen wird, kann ein gebundener Haltepunkt und verwarf aufgehoben werden soll.  
+     Wenn Code entladen wird, kann ein gebundener Haltepunkt ungebundene und verworfen werden.  
   
--   Wird von einer [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md)\-Schnittstelle dargestellt.  
+-   Dargestellt durch eine [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md) Schnittstelle.  
   
- **Ein Fehlerbreakpoint:**  
+ **Ein Haltepunkt Fehler:**  
   
--   Ist eine Abstraktion zur Beschreibung eines Fehlers bei dem Versuch, einen anstehenden Haltepunkt zu einem Code Elementkontext zu binden.  Ein Fehler breakpoint beschreibt einen Fehler im Speicherort oder dem Haltepunkt Ausdruck selbst.  Weitere Informationen finden Sie unter [Binden von Haltepunkten](../../extensibility/debugger/binding-breakpoints.md).  
+-   Ist eine Abstraktion zum Beschreiben von eines Fehlers beim Versuch, einen ausstehenden Haltepunkt in einen Codekontext zu binden. Ein Haltepunkt auf Fehler wird einen Fehler am Standort oder an das Haltepunktausdruck selbst beschrieben. Weitere Informationen finden Sie unter [binden Haltepunkte](../../extensibility/debugger/binding-breakpoints.md).  
   
-     Der Haltepunkt Fehler kann entweder ein Fehler oder eine Warnung sein.  
+     Der Haltepunkt Fehler kann entweder eine Fehler- oder eine Warnung.  
   
--   Wird von einer [IDebugErrorBreakpoint2](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)\-Schnittstelle dargestellt.  
+-   Dargestellt durch eine [IDebugErrorBreakpoint2](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) Schnittstelle.  
   
-## Siehe auch  
- [Programs](../../extensibility/debugger/programs.md)   
- [Debugger\-Konzepte](../../extensibility/debugger/debugger-concepts.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Programme](../../extensibility/debugger/programs.md)   
+ [Debugger-Konzepte](../../extensibility/debugger/debugger-concepts.md)   
  [Codekontext](../../extensibility/debugger/code-context.md)   
  [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
  [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   

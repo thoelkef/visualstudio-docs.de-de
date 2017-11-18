@@ -1,48 +1,50 @@
 ---
-title: "IDebugWindowsComputerPort2::GetComputerInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "GetComputerInfo"
-  - "IDebugWindowsComputerPort2::GetComputerInfo"
+title: IDebugWindowsComputerPort2::GetComputerInfo | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- GetComputerInfo
+- IDebugWindowsComputerPort2::GetComputerInfo
 ms.assetid: 654910b2-c239-44c8-92fc-317680a5672f
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: aedefe4ce91840759d9289dc35c71fece7b60af6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugWindowsComputerPort2::GetComputerInfo
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft Informationen über den Computer ab, auf dem sich der Debugger im ausgeführt.  
+# <a name="idebugwindowscomputerport2getcomputerinfo"></a>IDebugWindowsComputerPort2::GetComputerInfo
+Ruft Informationen über den Computer, auf denen der Debugger beim Ausführen.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetComputerInfo(  
-   COMPUTER_INFO * pInfo  
+   COMPUTER_INFO * pInfo  
 );  
 ```  
   
-```c#  
+```csharp  
 public int GetComputerInfo(  
-   out COMPUTER_INFO[] pInfo  
+   out COMPUTER_INFO[] pInfo  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pInfo`  
- \[out\]  Verweis auf eine Struktur, die die Computerinformationen enthält.  
+ [out] Verweis auf eine Struktur, die die Computerinformationen enthält.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugWindowsComputerPort2](../../../extensibility/debugger/reference/idebugwindowscomputerport2.md)   
- [COMPUTER\_INFO](../../../extensibility/debugger/reference/computer-info.md)
+ [COMPUTER_INFO](../../../extensibility/debugger/reference/computer-info.md)

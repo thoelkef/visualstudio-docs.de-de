@@ -1,48 +1,49 @@
 ---
-title: "Verwalten von Konfigurationsoptionen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Konfigurationsoptionen"
+title: Verwalten von Konfigurationsoptionen | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: configuration options
 ms.assetid: 596c28ee-f48d-4252-a5c4-f730c43a39e6
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0e0de435dca5c2bf16d9943f353ddb72080af969
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Verwalten von Konfigurationsoptionen
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Wenn Sie ein neuer Projekttyp erstellen, müssen Sie die Projektmappenkonfiguration Projekt\- und verwalten, die bestimmen, wie das Projekt erstellt wird, gepackt, bereitgestellt und Ausführung.  In den folgenden Themen werden Projekt und Projektmappenkonfiguration.  
+# <a name="managing-configuration-options"></a>Verwalten von Konfigurationsoptionen
+Wenn Sie einen neuen Projekttyp erstellen, müssen Sie die Projekt- und Projektmappendateien Konfigurationseinstellungen verwalten, die bestimmen, wie das Projekt, App-Pakete, bereitgestellt und ausgeführt erstellt wird. Die folgenden Themen behandeln die Konfiguration von Projekt- und Projektmappendateien.  
   
-## In diesem Abschnitt  
+## <a name="in-this-section"></a>In diesem Abschnitt  
  [Übersicht](../../extensibility/internals/configuration-options-overview.md)  
- Beschreibt, wie Projekte in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mehrere Konfigurationen unterstützen können.  
+ Beschreibt, wie Projekten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] können mehrere Konfigurationen unterstützt.  
   
  [Eigenschaftenseiten](../../extensibility/internals/property-pages.md)  
- Erläutert, dass Benutzer anlagenabhängige Eigenschaften des Projekts und unabhängige Eigenschaften anzeigen und ändern können, indem sie Eigenschaftenseiten verwenden.  
+ Erläutert, dass Benutzer anzeigen und Ändern von projektkonfigurationseigenschaften abhängige und unabhängige Eigenschaften mithilfe von Eigenschaftenseiten können.  
   
  [Projektmappenkonfiguration](../../extensibility/internals/solution-configuration.md)  
- Enthält Informationen darüber, was im Projektmappen\-Explorer gespeicherte Konfigurationen und wie Projektmappenkonfigurationen das Verhalten der **Start** und **Erstellen** Befehle verweisen.  
+ Enthält Informationen über die in Konfigurationen für Projektmappenbuilds gespeicherten und wie das Verhalten von Projektmappenkonfigurationen Weiterleiten der **starten** und **erstellen** Befehle.  
   
- [Projekt\-Konfigurationsobjekt](../../extensibility/internals/project-configuration-object.md)  
- Erläutert, wie die Projektkonfiguration Objekt die Anzeige von Konfigurationsinformationen der Benutzeroberfläche verwaltet.  
+ [Projektkonfigurationsobjekt](../../extensibility/internals/project-configuration-object.md)  
+ Erläutert, wie das Projektobjekt für die Konfiguration für die Anzeige der Konfigurationsinformationen auf der Benutzeroberfläche verwaltet.  
   
- [Konfiguration zum Erstellen des Projekts](../../extensibility/internals/project-configuration-for-building.md)  
- Erklärt, wie eine Liste von Projektmappenkonfigurationen einer bestimmten Projektmappe durch das **Projektmappenkonfigurationen** Dialogfelds verwaltet wird.  
+ [Projektkonfiguration beim Erstellen](../../extensibility/internals/project-configuration-for-building.md)  
+ Erläutert, wie eine Liste der Konfigurationen für Projektmappenbuilds für eine bestimmte Lösung verwaltet wird, durch die **Projektmappenkonfigurationen** (Dialogfeld).  
   
- [Konfiguration für die Verwaltung der Bereitstellung des Projekts](../../extensibility/internals/project-configuration-for-managing-deployment.md)  
- Definiert die Aktion der Bereitstellung und der beiden Methoden [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Unterstützungsprojekt, die die Bereitstellung unterstützen.  
+ [Projektkonfiguration für die Verwaltung der Bereitstellung](../../extensibility/internals/project-configuration-for-managing-deployment.md)  
+ Der Vorgang der Bereitstellung und die beiden Arten definiert [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] unterstützt Projekte, die Bereitstellung zu unterstützen.  
   
- [Konfiguration für die Ausgabe des Projekts](../../extensibility/internals/project-configuration-for-output.md)  
- Erläutert die Buildprozesse, die jede Konfiguration unterstützt und Schnittstellen und Methoden, durch die Ausgabeelemente bereitgestellt werden können.  
+ [Projektkonfiguration für die Ausgabe](../../extensibility/internals/project-configuration-for-output.md)  
+ Erläutert die Buildprozesse, die jeder Konfiguration unterstützt werden und die Schnittstellen und Methoden, die von der, die Ausgabe Elemente zur Verfügung gestellt werden können.  
   
-## Verwandte Abschnitte  
+## <a name="related-sections"></a>Verwandte Abschnitte  
  [Projekttypen](../../extensibility/internals/project-types.md)  
- Bietet eine Übersicht über Projekte als die Grundbausteine der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung \(IDE\).  Links zu weiteren Themen bereitgestellt, in denen das Projekt steuer und Kompilieren von Code verdeutlichen.
+ Bietet eine Übersicht über Projekte als die Grundbausteine der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (IDE). Links werden zu weiteren Themen bereitgestellt, die erläutern, wie Projekte steuern, erstellen und Kompilieren von Code.

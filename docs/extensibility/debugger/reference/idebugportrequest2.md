@@ -1,58 +1,58 @@
 ---
-title: "IDebugPortRequest2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPortRequest2"
-helpviewer_keywords: 
-  - "IDebugPortRequest2-Schnittstelle"
+title: IDebugPortRequest2 | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugPortRequest2
+helpviewer_keywords: IDebugPortRequest2 interface
 ms.assetid: 556e610d-7c4b-44a8-965a-76a9d02b601a
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f494eb3a48818323eedcb958a4126857b8d7ef5a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPortRequest2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Diese Schnittstelle beschreibt einen Anschluss.  Diese Beschreibung wird verwendet, um den Anschlusslieferanten einem Port hinzufügen.  
+# <a name="idebugportrequest2"></a>IDebugPortRequest2
+Diese Schnittstelle wird beschrieben, einen Port. Diese Beschreibung wird verwendet, um den Port an einen Lieferanten Port hinzuzufügen.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugPortRequest2 : IUnknown  
 ```  
   
-## Hinweise für Implementierer  
- Visual Studio implementiert diese Schnittstelle in der Regel bei dem Abrufen eines Anschlusses Debuggen von einem Anschlusslieferanten.  
+## <a name="notes-for-implementers"></a>Hinweise für Implementierer  
+ Visual Studio implementiert in der Regel diese Schnittstelle gerade einen Debugport von einem anderen Port Lieferanten abrufen.  
   
-## Hinweise für Aufrufer  
- Diese Schnittstelle wird in [Port hinzufügen](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) übergeben, um einen Anschluss Debuggen zu erstellen.  Ein Aufruf von [GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md) gibt diese Schnittstelle zurück und stellt die Anforderung dar, die verwendet wird, um den Port an erster Stelle zu erstellen.  
+## <a name="notes-for-callers"></a>Hinweise für Aufrufer  
+ Diese Schnittstelle übergebenen [hinzufügen](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) zum Erstellen eines Ports Debuggen. Ein Aufruf von [GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md) gibt diese Schnittstelle, die die Anforderung verwendet, um die im ersten Schritt erstellen Sie den Port darstellt.  
   
-## Methoden in die Vtable\-Reihenfolge  
- In der folgenden Tabelle werden die Methoden von `IDebugPortRequest2`an.  
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
+ Die folgende Tabelle zeigt die Methoden der `IDebugPortRequest2`.  
   
 |Methode|Beschreibung|  
-|-------------|------------------|  
-|[GetPortName](../../../extensibility/debugger/reference/idebugportrequest2-getportname.md)|Ruft den Namen des Anschlusses ab, die erstellt werden soll.|  
+|------------|-----------------|  
+|[GetPortName](../../../extensibility/debugger/reference/idebugportrequest2-getportname.md)|Ruft den Namen des Ports erstellen.|  
   
-## Hinweise  
- Ein Debuggen Modul in der Regel interagiert nicht mit einem Anschlusslieferanten. Es wird keine Verwendung für diese Schnittstelle verfügen.  
+## <a name="remarks"></a>Hinweise  
+ Debugging-Modul ist in der Regel interagiert nicht mit einem Port Lieferanten und verfügt über keine Verwendung für diese Schnittstelle.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
- [Core\-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
- [Port hinzufügen](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Core-Schnittstellen](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Hinzufügen](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)   
  [GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md)

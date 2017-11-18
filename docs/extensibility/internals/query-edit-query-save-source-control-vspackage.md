@@ -1,40 +1,42 @@
 ---
-title: "Bearbeiten der Abfragen speichern (Source Control VSPackage) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "QEQS-Ereignisse"
-  - "Bearbeiten Sie die Abfrage speichern Abfrageereignissen"
-  - "Quellcode-Verwaltungspaketen, Ereignisse Abfrage bearbeiten Abfrage speichern."
+title: Fragen Sie die Abfrage speichern (Source Control VSPackage) bearbeiten | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- QEQS events
+- Query Edit Query Save events
+- source control packages, Query Edit Query Save events
 ms.assetid: c360d2ad-fe42-4d65-899d-d1588cc8a322
-caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0aeb24f52b1b6b719e81dcd1a9bd93bd5822f8e6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Bearbeiten der Abfragen speichern (Source Control VSPackage)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Editoren können Ereignisse der Abfragen\-Bearbeitungs\-Abfragen\-Abwehr übertragen \(QEQS\).  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Quellcodeverwaltungs\-Stub implementiert den QEQS\-Dienst, sodass sie die Empfänger QEQS\-Ereignissen ist.  Diese Ereignisse werden dann der derzeit aktiven Quellcodeverwaltung VSPackage delegiert.  Die aktive Quellcodeverwaltung VSPackage implementieren <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> und ihre Methoden.  Die Methoden der `IVsQueryEditQuerySave2`\-Schnittstelle werden i. d. R. aufgerufen, unmittelbar bevor ein Dokument zum ersten Mal verarbeitet wurde und gleichzeitig bevor ein Dokument gespeichert wird.  
+# <a name="query-edit-query-save-source-control-vspackage"></a>Edit-Abfrage speichern (Source Control VSPackage)
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Editoren können Ereignisse Abfrage bearbeiten Abfrage speichern (QEQS) übertragen. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Source Control Stub implementiert den Dienst QEQS, damit sie die Empfänger von QEQS Ereignissen ist. Diese Ereignisse werden dann an das derzeit aktive Quellsteuerelement VSPackage delegiert. Die aktive Datenquellen-Steuerelements, das VSPackage implementiert die <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> und die zugehörigen Methoden. Die Methoden der `IVsQueryEditQuerySave2` Schnittstelle werden in der Regel aufgerufen, unmittelbar bevor ein Dokument bearbeitet wird, zum ersten Mal und unmittelbar bevor ein Dokument gespeichert wird.  
   
-## QueryEditQuerySave\-Ereignisse  
- Die Quellcodeverwaltung VSPackage muss die QEQS\-Ereignisse behandeln, indem sie die `IVsQueryEditQuerySave2`\-Schnittstelle und die erforderlichen Methoden implementiert.  Im Folgenden finden Sie eine kurze Beschreibung der zwei Methoden, die an mindestens ein VSPackage implementieren muss.  Die tatsächliche Implementierung muss in Abhängigkeit von der Logik des modells Quellcodeverwaltung entsprechen.  
+## <a name="queryeditquerysave-events"></a>QueryEditQuerySave-Ereignisse  
+ Die Datenquellen-Steuerelements VSPackage muss die QEQS Ereignisse behandeln, durch die Implementierung der `IVsQueryEditQuerySave2` Schnittstelle und die erforderlichen Methoden. Es folgt eine kurze Beschreibung der beiden Methoden, die mindestens das VSPackage implementieren müssen. Die tatsächliche Implementierung muss gemäß der Logik des Quellmodells Steuerelement sein.  
   
-### QueryEditFiles\-Methode  
- Das <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> wird aufgerufen, wenn ein beliebiges Projekt oder Editor eine Datei bearbeiten möchte.  Im Idealfall wird diese Methode aufgerufen *zuvor* , das die Datei geändert wurde und ob eine Datei gespeichert wird.  Wenn sie aufgerufen wird, überprüft die `IVsQueryEditQuerySave2::QueryEditFiles`\-Methode, ob die angegebenen Dateien unter Quellcodeverwaltung sind, ob sie ausgecheckt werden müssen, und ob sie erneut geladen werden können.  Wenn sich die Umstände bearbeitbar verhindern, weist die `IVsQueryEditQuerySave2::QueryEditFiles`\-Methode das aufrufende Programm mit, um den Bearbeitungsvorgang abzubrechen.  Es ist auch möglich, einen Aufruf für den Aufrufer Modus anzugeben.  Im Modus“ Automatisch „führt diese Methode nur, wenn sie keine Benutzeroberfläche angezeigt wird.  Wenn Benutzeroberfläche ist unvermeidbar, muss ein Flag zurückgegeben werden, um das Problem anzugeben.  
+### <a name="queryeditfiles-method"></a>QueryEditFiles-Methode  
+ Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> wird aufgerufen, wenn einem Projekt oder Editor eine Datei bearbeiten möchte. Diese Methode wird aufgerufen, idealerweise *vor* die Datei geändert wird und wenn eine Datei gespeichert wird. Beim Aufrufen der `IVsQueryEditQuerySave2::QueryEditFiles` Methode überprüft, ob die angegebenen Dateien unter quellcodeverwaltung sind, gibt an, ob die benötigte ausgecheckt werden, und gibt an, ob sie erneut geladen werden können. Wenn Umständen verhindern, dass die Dateien bearbeitet werden, wird die `IVsQueryEditQuerySave2::QueryEditFiles` Methode teilt das aufrufende Programm die Bearbeitung abgebrochen. Es ist auch möglich, dass der Aufrufer einen Aufruf-Modus angeben. Im Modus "im Hintergrund" wird diese Methode die Aktion nur dann, wenn sie nicht über die Benutzeroberflächen angezeigt werden kann. Wenn UI unvermeidlich ist, muss ein Flag zurückgegeben werden, um das Problem hinweisen.  
   
- Die Methode verhält sich in einer transaktionalen Weise. das heißt wenn die Bearbeitung in einer einzelnen Datei abgebrochen wird, wird der Bearbeitungsvorgang für alle Dateien abgebrochen.  Wenn die Bearbeitung zulässig ist, wird sie für alle Dateien zulässt.  Wenn diese Methode einmal bearbeiten einen angegebenen Satz von Dateien zulässt, muss sie auf Bearbeiten nachfolgenden Aufrufen für den gleichen Satz von Dateien immer ermöglichen.  Die Bearbeitung ALLOW Schleife wird fortgesetzt, bis die Datei geschlossen und erneut geladen, gespeichert sind. nachdem ihre Änderung der Attribute \(Eigenschaften\); Quellcodeverwaltung ist oder bis das Paket geändert.  Wenn Fälle zu berücksichtigen, die mehrere Dateien des `IVsQueryEditQuerySave2::QueryEditFiles`\-Methoden gehören, die Gerätedateien, Löschen und Bearbeitungen durch den Benutzer im Arbeitsspeicher implementiert werden.  
+ Das Verhalten der-Methode in Form einer Transaktion; Wenn auf eine einzelne Datei die Bearbeitung abgebrochen wird, wird die Bearbeitung für alle Dateien abgebrochen. Wenn die Bearbeitung zulässig ist, ist es hingegen für alle Dateien zulässig. Wenn diese Methode ermöglicht das Bearbeiten von einmal für eine bestimmte Gruppe von Dateien, muss es immer zulässt, bei nachfolgenden Aufrufen auf den gleichen Satz von Dateien bearbeiten. Die Schleife zulassen bearbeiten wird fortgesetzt, bis die Dateien geschlossen, gespeichert und erneut geladen werden; bis Sie geändert werden, deren Attribute (Eigenschaften); oder bis das Quellcodeverwaltungspaket geändert wird. Fälle berücksichtigt bei der Implementierung der `IVsQueryEditQuerySave2::QueryEditFiles` Methode mehrere Includedateien spezielle Dateien, aus Benutzer und in-Memory-Bearbeitung abbrechen.  
   
-### QuerySaveFiles\-Methode  
- Das <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> wird aufgerufen, wenn ein beliebiges Projekt oder Editor eine Gruppe von Dateien speichern muss.  Wenn diese Methoden `IVsQueryEditQuerySave2::QuerySaveFiles` , die überprüft, ob die angegebenen Dateien schreibgeschützt sind und ob sie in der Quellcodeverwaltung aufgerufen werden.  Wenn die Dateien ausgecheckt werden müssen, wird der Aufruf an das Paket Quellcodeverwaltung delegiert.  Wenn Umständen die Dateien gespeichert sind, verhindern, muss die `IVsQueryEditQuerySave2::QuerySaveFiles`\-Methode den Editor mitteilen, um die Speicherung abzubrechen.  Wie bei der `IVsQueryEditQuerySave2::QueryEditFiles`\-Methode, kann der Aufrufer den Modus eines Aufrufs anzugeben.  Im Modus“ Automatisch „führt diese Methode nur, wenn sie keine Benutzeroberfläche angezeigt wird.  Wenn Benutzeroberfläche ist unvermeidbar, muss ein Flag zurückgegeben werden, um das Problem anzugeben.  
+### <a name="querysavefiles-method"></a>QuerySaveFiles-Methode  
+ Die <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> wird aufgerufen, wenn einem Projekt oder Editor einen Satz von Dateien zu speichern muss. Beim Aufrufen der `IVsQueryEditQuerySave2::QuerySaveFiles` Methode überprüft, wenn die angegebenen Dateien schreibgeschützt sind und ob sie in der quellcodeverwaltung sind. Wenn die Dateien werden ausgecheckt müssen, wird der Aufruf an das Quellcodeverwaltungspaket delegiert. Wenn Umständen verhindern, dass die Dateien gespeichert, die `IVsQueryEditQuerySave2::QuerySaveFiles` Methode muss Teilen Sie den Editor, um den Speichervorgang abzubrechen. Wie bei der `IVsQueryEditQuerySave2::QueryEditFiles` -Methode, es ist möglich, dass der Aufrufer einen Aufruf-Modus angeben. Im Modus "im Hintergrund" wird diese Methode die Aktion nur dann, wenn sie nicht über die Benutzeroberflächen angezeigt werden kann. Wenn UI unvermeidlich ist, muss ein Flag zurückgegeben werden, um das Problem hinweisen.  
   
- Diese Methode muss in einer transaktionalen Weise verhalten. das heißt wenn die Speicherung in einer einzigen Datei abgebrochen wird, wird die Speicherung für alle Dateien abgebrochen.  Wenn die Speicherung zugelassen ist, muss es für alle Dateien zugelassen werden.  Wie bei der `IVsQueryEditQuerySave2::QueryEditFiles`\-Methode zu fällen, die mehrere Dateien des `IVsQueryEditQuerySave2::QuerySaveFiles`\-Methoden gehören, die Gerätedateien, Löschen und Bearbeitungen durch den Benutzer im Arbeitsspeicher implementiert werden.  
+ Diese Methode muss auf transaktionale Weise Verhalten. Wenn der Speichervorgang auf eine einzelne Datei abgebrochen wird, wird speichern, also für alle Dateien abgebrochen. Umgekehrt, wenn der Speichervorgang zulässig ist, muss er für alle Dateien zulässig sein. Wie bei der `IVsQueryEditQuerySave2::QueryEditFiles` -Methode, die Fälle, die bei der Implementierung sollten die `IVsQueryEditQuerySave2::QuerySaveFiles` Methode mehrere Includedateien spezielle Dateien, aus Benutzer und in-Memory-Bearbeitung abbrechen.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>

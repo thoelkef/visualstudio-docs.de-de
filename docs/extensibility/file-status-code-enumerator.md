@@ -1,110 +1,112 @@
 ---
-title: "Dateienumerator Status-Code | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "benannte Konstanten SccStatus-enumerator"
-  - "Source Control-Plug-ins Datei Status-enumeration"
-  - "SccStatus-enumerator"
-  - "Dateienumerator Status-code"
+title: Datei Status Code Enumerator | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- named constants, SccStatus enumerator
+- source control plug-ins, file status enumeration
+- SccStatus enumerator
+- file status code enumerator
 ms.assetid: 5c37876b-c83c-4ca1-837b-57cd465a879a
-caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 25320e87bce135d442bfc25499f3c503fa529ff0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Dateienumerator Status-Code
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Die `SccStatus` Enumerator enthält benannte Konstante Werte, die den Status einer Datei im Quellcode\-Verwaltungssystem angeben. Diese Enumeration wird verwendet, indem Sie die [SccQueryInfo](../extensibility/sccqueryinfo-function.md) und die `POPLISTFUNC` Callback\-Funktion \(finden Sie unter [POPLISTFUNC](../extensibility/poplistfunc.md) Details\).  
+# <a name="file-status-code-enumerator"></a>Code-Status-Datei-Enumerator
+Die `SccStatus` Enumerator enthält benannte Konstante Werte, die den Zustand einer Datei in das Quellcodeverwaltungssystem angeben. Diese Enumeration wird verwendet, durch die [SccQueryInfo](../extensibility/sccqueryinfo-function.md) und `POPLISTFUNC` Rückruffunktion (finden Sie unter [POPLISTFUNC](../extensibility/poplistfunc.md) Einzelheiten).  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 enum SccStatus {  
-   SCC_STATUS_INVALID          = -1L,  
-   SCC_STATUS_NOTCONTROLLED    = 0x0000L,  
-   SCC_STATUS_CONTROLLED       = 0x0001L,  
-   SCC_STATUS_CHECKEDOUT       = 0x0002L,  
-   SCC_STATUS_OUTOTHER         = 0x0004L,  
-   SCC_STATUS_OUTEXCLUSIVE     = 0x0008L,  
-   SCC_STATUS_OUTMULTIPLE      = 0x0010L,  
-   SCC_STATUS_OUTOFDATE        = 0x0020L,  
-   SCC_STATUS_DELETED          = 0x0040L,  
-   SCC_STATUS_LOCKED           = 0x0080L,  
-   SCC_STATUS_MERGED           = 0x0100L,  
-   SCC_STATUS_SHARED           = 0x0200L,  
-   SCC_STATUS_PINNED           = 0x0400L,  
-   SCC_STATUS_MODIFIED         = 0x0800L,  
-   SCC_STATUS_OUTBYUSER        = 0x1000L  
-   SCC_STATUS_NOMERGE          = 0x2000L  
-   SCC_STATUS_RESERVED_1       = 0x4000L  
-   SCC_STATUS_RESERVED_2       = 0x8000L  
+   SCC_STATUS_INVALID          = -1L,  
+   SCC_STATUS_NOTCONTROLLED    = 0x0000L,  
+   SCC_STATUS_CONTROLLED       = 0x0001L,  
+   SCC_STATUS_CHECKEDOUT       = 0x0002L,  
+   SCC_STATUS_OUTOTHER         = 0x0004L,  
+   SCC_STATUS_OUTEXCLUSIVE     = 0x0008L,  
+   SCC_STATUS_OUTMULTIPLE      = 0x0010L,  
+   SCC_STATUS_OUTOFDATE        = 0x0020L,  
+   SCC_STATUS_DELETED          = 0x0040L,  
+   SCC_STATUS_LOCKED           = 0x0080L,  
+   SCC_STATUS_MERGED           = 0x0100L,  
+   SCC_STATUS_SHARED           = 0x0200L,  
+   SCC_STATUS_PINNED           = 0x0400L,  
+   SCC_STATUS_MODIFIED         = 0x0800L,  
+   SCC_STATUS_OUTBYUSER        = 0x1000L  
+   SCC_STATUS_NOMERGE          = 0x2000L  
+   SCC_STATUS_RESERVED_1       = 0x4000L  
+   SCC_STATUS_RESERVED_2       = 0x8000L  
 };  
 ```  
   
-## Mitglieder  
- SCC\_STATUS\_INVALID  
+## <a name="members"></a>Member  
+ SCC_STATUS_INVALID  
  Status konnte nicht abgerufen werden. verlassen Sie sich nicht darauf.  
   
- SCC\_STATUS\_NOTCONTROLLED  
- Datei ist nicht in einem Quellcodeverwaltungsprojekt.  
+ SCC_STATUS_NOTCONTROLLED  
+ Datei ist nicht in der quellcodeverwaltung.  
   
- SCC\_STATUS\_CONTROLLED  
- Datei wird unter Versionskontrolle.  
+ SCC_STATUS_CONTROLLED  
+ Datei wird in die quellcodeverwaltung.  
   
- SCC\_STATUS\_CHECKEDOUT  
+ SCC_STATUS_CHECKEDOUT  
  Ausgecheckt, vom aktuellen Benutzer auf dem lokalen Datenträger.  
   
- SCC\_STATUS\_OUTOTHER  
+ SCC_STATUS_OUTOTHER  
  Datei wird von einem anderen Benutzer ausgecheckt.  
   
- SCC\_STATUS\_OUTEXCLUSIVE  
+ SCC_STATUS_OUTEXCLUSIVE  
  Datei ist exklusiv ausgecheckt.  
   
- SCC\_STATUS\_OUTMULTIPLE  
+ SCC_STATUS_OUTMULTIPLE  
  Datei wird von mehr als einem Benutzer ausgecheckt.  
   
- SCC\_STATUS\_OUTOFDATE  
+ SCC_STATUS_OUTOFDATE  
  Die Datei ist nicht die aktuellste Version.  
   
- SCC\_STATUS\_DELETED  
+ SCC_STATUS_DELETED  
  Datei wurde aus dem Projekt gelöscht.  
   
- SCC\_STATUS\_LOCKED  
+ SCC_STATUS_LOCKED  
  Datei ist gesperrt. keine weitere Versionen zulässig.  
   
- SCC\_STATUS\_MERGED  
- Datei wurde zusammengeführt, aber noch nicht behoben und überprüft.  
+ SCC_STATUS_MERGED  
+ Datei zusammengeführt, aber noch nicht behoben und überprüft wurde.  
   
- SCC\_STATUS\_SHARED  
- Datei wird von Projekten gemeinsam verwendet.  
+ SCC_STATUS_SHARED  
+ Datei wird zwischen Projekten gemeinsam genutzt.  
   
- SCC\_STATUS\_PINNED  
- Eine bestimmte Version freigegeben wird.  
+ SCC_STATUS_PINNED  
+ Um eine explizite Version freigegeben wird.  
   
- SCC\_STATUS\_MODIFIED  
- Datei wurde geändert\/fehlerhafte\/verletzt.  
+ SCC_STATUS_MODIFIED  
+ Datei wurde geändert/unterteilt/verletzt.  
   
- SCC\_STATUS\_OUTBYUSER  
+ SCC_STATUS_OUTBYUSER  
  Datei wird vom aktuellen Benutzer ausgecheckt.  
   
- SCC\_STATUS\_NOMERGE  
- Datei kann nicht mit zusammengeführt werden und muss nicht gespeichert werden, bevor Sie eine GET.  
+ SCC_STATUS_NOMERGE  
+ Datei kann nie mit zusammengeführt werden und muss nicht gespeichert werden, bevor Sie einen GET-Befehl.  
   
- SCC\_STATUS\_RESERVED\_1  
+ SCC_STATUS_RESERVED_1  
  Für die interne Verwendung vorgesehen.  
   
- SCC\_STATUS\_RESERVED\_2  
+ SCC_STATUS_RESERVED_2  
  Für die interne Verwendung vorgesehen.  
   
-## Siehe auch  
- [Source Control\-Plug\-ins](../extensibility/source-control-plug-ins.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Datenquellen-Steuerelement-Plug-ins](../extensibility/source-control-plug-ins.md)   
  [SccQueryInfo](../extensibility/sccqueryinfo-function.md)   
  [POPLISTFUNC](../extensibility/poplistfunc.md)

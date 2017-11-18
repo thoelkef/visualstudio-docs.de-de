@@ -1,56 +1,56 @@
 ---
-title: "IDebugErrorBreakpointResolution2::GetResolutionInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugErrorBreakpointResolution2::GetResolutionInfo"
-helpviewer_keywords: 
-  - "IDebugErrorBreakpointResolution2::GetResolutionInfo"
+title: IDebugErrorBreakpointResolution2::GetResolutionInfo | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugErrorBreakpointResolution2::GetResolutionInfo
+helpviewer_keywords: IDebugErrorBreakpointResolution2::GetResolutionInfo
 ms.assetid: d94c4f60-8796-4848-86ee-186bbaa613f5
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 91922b09c3dff38b65473978f352f96ea12732a0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugErrorBreakpointResolution2::GetResolutionInfo
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft den Haltepunkt fehler\-Auflösungs Informationen ab.  
+# <a name="idebugerrorbreakpointresolution2getresolutioninfo"></a>IDebugErrorBreakpointResolution2::GetResolutionInfo
+Ruft den Haltepunkt Auflösung Fehlerinformationen ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetResolutionInfo(   
-   BPERESI_FIELDS            dwFields,  
-   BP_ERROR_RESOLUTION_INFO* pErrorResolutionInfo  
+```cpp  
+HRESULT GetResolutionInfo(   
+   BPERESI_FIELDS            dwFields,  
+   BP_ERROR_RESOLUTION_INFO* pErrorResolutionInfo  
 );  
 ```  
   
-```c#  
-int GetResolutionInfo(   
-   enum_BPERESI_FIELDS        dwFields,  
-   BP_ERROR_RESOLUTION_INFO[] pErrorResolutionInfo  
+```csharp  
+int GetResolutionInfo(   
+   enum_BPERESI_FIELDS        dwFields,  
+   BP_ERROR_RESOLUTION_INFO[] pErrorResolutionInfo  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `dwFields`  
- \[in\]  Eine Kombination von Flags aus der [BPERESI\_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)\-Enumeration, die bestimmen, welche Felder aus `pErrorResolutionInfo` ergänzt werden sollen.  
+ [in] Eine Kombination aus Flags aus der [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) Enumeration, die bestimmen, welche Felder der `pErrorResolutionInfo` sind ausgefüllt werden.  
   
  `pErrorResolutionInfo`  
- \[in, out\]  Die [BP\_ERROR\_RESOLUTION\_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) Struktur, die mit der Beschreibung der Haltepunkt anschließend gefüllt wird.  
+ [in, out] Die [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) -Struktur, die mit der Beschreibung der Auflösung Haltepunkt ausgefüllt ist.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Beispiel  
- Im folgenden Beispiel implementiert diese Methode für ein einfaches `CDebugErrorBreakpointResolution`\-Objekt, das die [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)\-Schnittstelle verfügbar macht.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel implementiert diese Methode für eine einfache `CDebugErrorBreakpointResolution` -Objekt, das macht die [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) Schnittstelle.  
   
 ```  
 HRESULT CDebugErrorBreakpointResolution::GetResolutionInfo(  
@@ -150,7 +150,7 @@ HRESULT CDebugErrorBreakpointResolution::CopyBP_ERROR_RESOLUTION_INFO(
 }    
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)   
- [BPERESI\_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)   
- [BP\_ERROR\_RESOLUTION\_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)
+ [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)   
+ [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)

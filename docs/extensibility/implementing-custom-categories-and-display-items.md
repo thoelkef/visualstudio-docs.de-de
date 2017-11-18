@@ -1,32 +1,34 @@
 ---
-title: "Implementieren benutzerdefinierte Kategorien und Anzeigeelemente | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Schriftart und Farbe-Steuerelement [Visual Studio SDK] Kategorien"
-  - "benutzerdefinierte Kategorien"
+title: Implementieren benutzerdefinierte Kategorien und Anzeigeelemente | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- font and color control [Visual Studio SDK], categories
+- custom categories
 ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
-caps.latest.revision: 25
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 25
+caps.latest.revision: "25"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f03dbae8b320161705c50da06d605cfc335074cc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Implementieren benutzerdefinierte Kategorien und Anzeigeelemente
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="implementing-custom-categories-and-display-items"></a>Implementieren benutzerdefinierte Kategorien und Anzeigeelemente
 Eine VSPackage bieten Kontrolle über die Schriftarten und Farben der Text der [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (IDE) durch benutzerdefinierte Kategorien und Anzeigeelemente.  
   
- Benutzerdefinierte Kategorien und Anzeigeelementen befinden sich auf die **Schriftarten und Farben** Eigenschaftenseite. So öffnen die **Schriftarten und Farben** Eigenschaftenseite auf die **Tools** Menü klicken Sie auf **Optionen**. Erweitern Sie **Umgebung** und klicken Sie dann auf **Schriftarten und Farben**.  
+ Benutzerdefinierte Kategorien und Anzeigeelementen befinden sich auf die **Schriftarten und Farben** Eigenschaftenseite. So öffnen die **Schriftarten und Farben** Eigenschaftenseite auf die **Tools** Menü klicken Sie auf **Optionen**. Erweitern Sie **Umgebung** , und klicken Sie dann auf **Schriftarten und Farben**.  
   
  VSPackages müssen implementieren, wenn Sie diesen Mechanismus verwenden, die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> Schnittstelle und die zugehörigen Schnittstellen.  
   
- Im Prinzip dieser Mechanismus verwendet werden kann, so ändern Sie alle vorhandenen **Einblenden von Elementen** und die **Kategorien** die sie enthalten. Sollte jedoch nicht so ändern Sie verwendet werden die **Text EditorCategory** oder den zugehörigen **Einblenden von Elementen**. Weitere Informationen finden Sie unter [Schriftart und Farbe (Übersicht)](../extensibility/font-and-color-overview.md).  
+ Im Prinzip dieser Mechanismus verwendet werden kann, so ändern Sie alle vorhandenen **Einblenden von Elementen** und die **Kategorien** , die sie enthalten. Sollte jedoch nicht so ändern Sie verwendet werden die **Text EditorCategory** oder den zugehörigen **Einblenden von Elementen**. Weitere Informationen finden Sie unter [Schriftart und Farbe (Übersicht)](../extensibility/font-and-color-overview.md).  
   
  Zum Implementieren von benutzerdefinierten **Kategorien** oder **Einblenden von Elementen**, ein VSPackage muss:  
   
@@ -42,13 +44,13 @@ Eine VSPackage bieten Kontrolle über die Schriftarten und Farben der Text der [
   
 -   Behandeln Sie Schriftart- und farbänderungen an.  
   
- Informationen finden Sie unter [den Zugriff auf gespeicherte Schriftart und Farbe Einstellungen](../extensibility/accessing-stored-font-and-color-settings.md).  
+ Informationen finden Sie unter [Zugriff auf gespeicherte Schriftart und Farbe Einstellungen](../extensibility/accessing-stored-font-and-color-settings.md).  
   
 ## <a name="to-create-or-identify-categories"></a>Zum Erstellen oder Identifizieren von Kategorien  
   
--   Erstellen Sie eine besondere Art von Kategorie-Registrierungseintrags unter [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\< Visual Studio-Version>*\FontAndColors\\`<Category>`]  
+-   Erstellen Sie eine besondere Art von Kategorie-Registrierungseintrags unter [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio-Version >*\FontAndColors\\`<Category>`]  
   
-     *\< Category>* der nicht lokalisierte Name der Kategorie.  
+     *\<Kategorie >* der nicht lokalisierte Name der Kategorie.  
   
 -   Füllen Sie die Registrierung mit zwei Werten:  
   
@@ -61,9 +63,9 @@ Eine VSPackage bieten Kontrolle über die Schriftarten und Farben der Text der [
   
 ## <a name="to-create-or-identify-groups"></a>Zum Erstellen oder identifizieren Gruppen  
   
--   Erstellen Sie eine besondere Art von Kategorie-Registrierungseintrags unter [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\< Visual Studio-Version>*\FontAndColors\\*\< Gruppe>*]  
+-   Erstellen Sie eine besondere Art von Kategorie-Registrierungseintrags unter [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio-Version >*\FontAndColors\\  *\<Gruppe >*]  
   
-     *\< Gruppe>* der nicht lokalisierte Name der Gruppe.  
+     *\<Gruppe >* der nicht lokalisierte Name der Gruppe.  
   
 -   Füllen Sie die Registrierung mit zwei Werten:  
   
@@ -95,7 +97,7 @@ Eine VSPackage bieten Kontrolle über die Schriftarten und Farben der Text der [
   
      Die Implementierung stellt die IDE mit:  
   
-    -   Eine Liste mit den **Kategorien** die eine bestimmte Gruppe bilden.  
+    -   Eine Liste mit den **Kategorien** , die eine bestimmte Gruppe bilden.  
   
     -   Zugriff auf Instanzen von <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> unterstützen jede **Kategorie** innerhalb der Gruppe.  
   
@@ -112,13 +114,13 @@ Eine VSPackage bieten Kontrolle über die Schriftarten und Farben der Text der [
   
 -   Behandlung von Ereignissen IDE generiert durch Implementieren der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> Schnittstelle.  
   
-     Die IDE Ruft die entsprechende Methode, die folgenden Änderungen durch den Benutzer der **Schriftarten und Farben** Seite. Beispielsweise ruft der <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents.OnFontChanged%2A> Methode, wenn eine neue Schriftart ausgewählt ist.  
+     Die IDE Ruft die entsprechende Methode, die folgenden Änderungen durch den Benutzer von der **Schriftarten und Farben** Seite. Beispielsweise ruft die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents.OnFontChanged%2A> Methode, wenn eine neue Schriftart ausgewählt ist.  
   
      - oder -   
   
 -   Abrufen der IDE nach Änderungen an.  
   
-     Dies kann erfolgen über die vom System implementierte <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Schnittstelle. Obwohl in erster Linie für die Unterstützung von Persistenz, die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> Methode kann verwendet werden, um die Schriftart und Farbe zu erhalten **Einblenden von Elementen**. Weitere Informationen finden Sie unter [den Zugriff auf gespeicherte Schriftart und Farbe Einstellungen](../extensibility/accessing-stored-font-and-color-settings.md).  
+     Dies kann erfolgen über die vom System implementierte <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Schnittstelle. Obwohl in erster Linie für die Unterstützung von Persistenz, die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> Methode kann verwendet werden, um die Schriftart und Farbe zu erhalten **Einblenden von Elementen**. Weitere Informationen finden Sie unter [Zugriff auf gespeicherte Schriftart und Farbe Einstellungen](../extensibility/accessing-stored-font-and-color-settings.md).  
   
     > [!NOTE]
     >  Um sicherzustellen, dass die Ergebnisse durch Abruf richtig sind, möglicherweise empfiehlt es sich um verwenden die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> Schnittstelle, um zu bestimmen, ob ein Cache leeren und Update benötigt werden, vor dem Aufrufen der Abrufmethoden, der die <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> Schnittstelle.  

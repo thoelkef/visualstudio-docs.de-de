@@ -1,52 +1,52 @@
 ---
-title: "IDebugEvent2::GetAttributes | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEvent2::GetAttributes"
-helpviewer_keywords: 
-  - "IDebugEvent2::GetAttributes"
+title: IDebugEvent2::GetAttributes | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugEvent2::GetAttributes
+helpviewer_keywords: IDebugEvent2::GetAttributes
 ms.assetid: 2ac5b5fb-da17-43f7-811a-313f677e60d7
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ff7b568feb2eddff3d712c494e610fc6b9a6b262
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugEvent2::GetAttributes
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft die Attribute für das Debugereignis ab.  
+# <a name="idebugevent2getattributes"></a>IDebugEvent2::GetAttributes
+Ruft die Attribute für dieses Ereignis Debuggen.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetAttribute(   
-   DWORD* pdwAttrib  
+```cpp  
+HRESULT GetAttribute(   
+   DWORD* pdwAttrib  
 );  
 ```  
   
-```c#  
-int GetAttribute(   
-   out uint pdwAttrib  
+```csharp  
+int GetAttribute(   
+   out uint pdwAttrib  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pdwAttrib`  
- \[out\]  Eine Kombination von Flags aus der [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md)\-Enumeration.  
+ [out] Eine Kombination aus Flags aus der [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) Enumeration.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)\-Schnittstelle ist auf alle Ereignisse.  Diese Methode beschreibt die Art des Ereignisses. Beispielsweise ist die synchrone oder asynchrone Ereignis und aufhörendes ist dies ein Ereignis.  
+## <a name="remarks"></a>Hinweise  
+ Die [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) Schnittstelle gilt für alle Ereignisse. Diese Methode beschreibt den Typ des Ereignisses. Beispielsweise ist das Ereignis synchron oder asynchron, und ist es eine Stopping-Ereignis.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md)

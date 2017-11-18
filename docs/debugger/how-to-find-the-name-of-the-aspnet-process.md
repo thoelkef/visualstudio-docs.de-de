@@ -1,69 +1,59 @@
 ---
-title: "Gewusst wie: Herausfinden des ASP.NET-Prozessnamens | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "ASP.NET-Debuggen, ASP.NET-Prozess"
-  - "ASP.NET-Prozess"
+title: 'Vorgehensweise: herausfinden des ASP.NET-Prozessnamens | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- ASP.NET debugging, ASP.NET process
+- ASP.NET process
 ms.assetid: 931a7597-b0f0-4a28-931d-46e63344435f
-caps.latest.revision: 29
-caps.handback.revision: 29
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "29"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 03ae4956f0e16a4fb9267266ebc6b6c335c95eac
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Herausfinden des ASP.NET-Prozessnamens
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+# <a name="how-to-find-the-name-of-the-aspnet-process"></a>Gewusst wie: Herausfinden des ASP.NET-Prozessnamens
+Für das Anhängen an eine ausgeführte [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Anwendung müssen Sie den Namen des [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]-Prozesses kennen.  
 
-Für das Anhängen an eine ausgeführte [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]\-Anwendung müssen Sie den Namen des [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]\-Prozesses kennen.  
+-   Wenn Sie ASP.NET Core unter IIS oder IIS Express ausgeführt werden, ist der Name des Prozesses dotnet.exe.
+
+-   Wenn Sie ASP.NET auf IIS 6.0 später ausführen, ist der Name w3wp.exe.  
   
--   Wenn Sie IIS 6.0 oder IIS 7.0 ausführen, lautet der Name "w3wp.exe".  
+-   Wenn Sie ASP.NET unter einer früheren Version von IIS ausführen, lautet der Name aspnet_wp.exe.
+
+-   Wenn Sie ASP.NET auf IIS Express ausgeführt werden, ist der Name iisexpress.exe.
   
--   Wenn Sie eine frühere Version von IIS ausführen, lautet der Name aspnet\_wp.exe.  
+Für Anwendungen, die mit Versionen von Visual Studio vor Visual Studio 2012 erstellt die [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Code befinden sich auf das Dateisystem und unter dem Testserver WebDev.WebServer.exe oder WebDev.WebServer40.exe ausführen kann. In diesem Fall müssen Sie WebDev.WebServer.exe oder WebDev.WebServer40.exe anstelle von Anfügen der [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Prozess. Dieses Szenario gilt nur für lokales Debuggen.
   
- Bei Anwendungen, die mit [!INCLUDE[vsprvslong](../code-quality/includes/vsprvslong_md.md)] oder höheren Versionen erstellt wurden, kann sich der [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]\-Code im Dateisystem befinden und unter dem Testserver WebDev.WebServer.exe ausgeführt werden.  In diesem Fall müssen Sie den Debugger an WebDev.WebServer.exe und nicht an den [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]\-Prozess anhängen.  Dieses Szenario gilt nur für lokales Debuggen.  
+Ältere ASP-Anwendungen werden innerhalb des IIS-Prozesses inetinfo.exe ausgeführt, sobald sie prozessintern laufen.  
+
+### <a name="to-determine-the-iis-version-under-which-the-application-is-running"></a>So stellen Sie die IIS-Version fest, unter der die Anwendung ausgeführt wird  
+
+1.  Stellen Sie sicher, dass die Anwendung ausgeführt wird, und verwenden Sie dann in Visual Studio die [an den Prozess anhängen](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md) Befehl.
+
+2.  Geben Sie den ersten Buchstaben des Namens eines Prozesses, wie w3wp.exe schnelle Auffinden von Prozessen in der **verfügbare Prozesse** Liste.
+
+    In diesem Thema in der Liste der verfügbaren Prozesse werden angegeben, welche Versionen von IIS verfügbar sind und welcher Prozess die Anwendung ausgeführt wird.
+
+    > [!NOTE]
+    > Ab Visual Studio 2017 können können das Suchfeld Sie um den Namen des Prozesses zu suchen.
   
- Ältere ASP\-Anwendungen werden innerhalb des IIS\-Prozesses inetinfo.exe ausgeführt, sobald sie prozessintern laufen.  
-  
-> [!NOTE]
->  Je nach den aktiven Einstellungen oder der Version unterscheiden sich die Dialogfelder und Menübefehle auf Ihrem Bildschirm möglicherweise von den in der Hilfe beschriebenen.  Klicken Sie im Menü **Extras** auf **Einstellungen importieren und exportieren**, um die Einstellungen zu ändern.  Weitere Informationen finden Sie unter [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/de-de/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
-  
-### So stellen Sie fest, ob sich Projektcode im Dateisystem oder auf IIS befindet  
-  
-1.  Öffnen Sie in Visual Studio den **Projektmappen\-Explorer**, sofern er noch nicht geöffnet ist.  
-  
-2.  Wählen Sie den obersten Knoten aus, der den Namen der Anwendung enthält.  
-  
-3.  Wenn der Titel des **Eigenschaftenfensters** einen Pfad zu einer Datei enthält, befindet sich der Anwendungscode im Dateisystem.  
-  
-     Andernfalls enthält der Titel des **Eigenschaftenfensters** den Namen der Website.  
-  
-### So stellen Sie die IIS\-Version fest, unter der die Anwendung ausgeführt wird  
-  
-1.  Öffnen Sie **Verwaltung**.  Je nach Ihrem Betriebssystem ist dies entweder ein Symbol in der **Systemsteuerung** oder ein Menüeintrag, der beim Klicken auf die Schaltfläche **Start** angezeigt wird.  
-  
-     In Windows XP kann die **Systemsteuerung** in der Kategorieansicht oder in der klassischen Ansicht angezeigt werden.  Klicken Sie in der Kategorieansicht auf **Zur klassischen Ansicht wechseln** oder **Leistung und Wartung**, um das Symbol **Verwaltung** anzuzeigen.  
-  
-2.  Führen Sie aus **Verwaltung** die Internetinformationsdienste aus.  Ein MMC\-Dialogfeld wird geöffnet.  
-  
-3.  Wenn im linken Bereich mehr als ein Computer aufgeführt wird, wählen Sie den Computer aus, auf dem sich der Anwendungscode befindet.  
-  
-4.  Die IIS\-Version können Sie der Spalte **Version** im rechten Bereich entnehmen.  
-  
-## Siehe auch  
- [Voraussetzungen für das Remotedebuggen von Webanwendungen](../debugger/prerequistes-for-remote-debugging-web-applications.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Anfügen an einen laufenden Prozess](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
+ [Voraussetzungen für das Remotedebuggen von ASP.NET-Webanwendungen](../debugger/prerequistes-for-remote-debugging-web-applications.md)   
  [Systemanforderungen](../debugger/aspnet-debugging-system-requirements.md)   
- [Vorbereitungen zum Debuggen von ASP.NET](../debugger/preparing-to-debug-aspnet.md)   
- [Debuggen von Webanwendungen und Skripts](../debugger/debugging-web-applications-and-script.md)
+ [Debuggen von ASP.NET-Anwendungen](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

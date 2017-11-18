@@ -1,67 +1,69 @@
 ---
-title: "GUIDs und IDs der Visual Studio-Befehle | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Befehle"
-  - "ID"
-  - "Befehl-Platzierung"
-  - "Visual Studio-Befehl"
-  - "GUID"
+title: GUIDs und IDs der Visual Studio-Befehle | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- commands
+- id
+- command placement
+- visual studio command
+- guid
 ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 3ce546f36ed93f0f42bfd548c64f2a25669e162b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# GUIDs und IDs der Visual Studio-Befehle
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Der GUID\-Wert und ID\-Werte der Befehle, die in der integrierten Entwicklungsumgebung \(IDE\) von Visual Studio enthaltenen werden in .vsct\-Dateien definiert, die als Teil von Visual Studio SDK installiert werden.  Weitere Informationen finden Sie unter [IDE\-definierte Befehle, Menüs und Gruppen](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
+# <a name="guids-and-ids-of-visual-studio-commands"></a>GUIDs und IDs der Visual Studio-Befehle
+Die GUID und ID-Werte in der integrierten Entwicklungsumgebung (IDE) von Visual Studio enthaltenen Befehle werden in der VSCT-Dateien definiert, die als Teil der Visual Studio-SDK installiert sind. Weitere Informationen finden Sie unter [IDE-Defined Befehle, Menüs und Gruppen](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
   
- Weitere Informationen zum Arbeiten mit IDE\-Objekten, die in .vsct\-Dateien definiert werden, finden Sie unter [Erweitern von Menüs und Befehlen](../../extensibility/extending-menus-and-commands.md)funktioniert.  
+ Weitere Informationen zum Arbeiten mit IDE-Objekte, die in der VSCT-Dateien definiert sind, finden Sie unter [Erweitern von Menüs und Befehlen](../../extensibility/extending-menus-and-commands.md).  
   
-## Eine Befehlsdefinition suchen  
- Da Visual Studio mehrere tausend Befehle definiert, ist es nicht empfehlenswert, alle um sie an dieser Stelle aufzulisten.  Stattdessen führen Sie die folgenden Schritte aus, um die Definition eines Befehls zu suchen.  
+## <a name="finding-a-command-definition"></a>Suchen eine Befehlsdefinition  
+ Da mehr als tausend Befehle in Visual Studio definiert wird, ist es unpraktisch, alle hier aufgelistet. Stattdessen folgendermaßen Sie vor, um die Definition eines Befehls zu suchen.  
   
-#### So erstellen Sie eine Befehlsdefinition suchen  
+#### <a name="to-locate-a-command-definition"></a>Um eine Befehlsdefinition zu suchen.  
   
-1.  Öffnen Sie in Visual Studio die folgenden Dateien in *Pfad SDK\-Installations Visual Studio*\\ VisualStudioIntegration Inc. \\ \\ Common \\ Ordner: SharedCmdDef.vsct, ShellCmdDef.vsct, VsDbgCmdUsed.vsct, Venusmenu.vsct.  
+1.  Öffnen Sie in Visual Studio die folgenden Dateien in den *Visual Studio SDK-Installationspfad*\VisualStudioIntegration\Common\Inc\ Ordner: SharedCmdDef.vsct, ShellCmdDef.vsct, VsDbgCmdUsed.vsct, Venusmenu.vsct.  
   
-     Die meisten Visual Studio\-Befehle werden in SharedCmdDef.vsct und ShellCmdDef.vsct definiert.  VsDbgCmdUsed.vsct Befehle definiert, die den Debugger beziehen, und Venusmenu.vsct Befehle definiert, die zur Webentwicklung spezifisch sind.  
+     Die meisten Visual Studio-Befehle werden in SharedCmdDef.vsct und ShellCmdDef.vsct definiert. VsDbgCmdUsed.vsct definiert Befehle, die der Debugger betreffen, und Venusmenu.vsct definiert Befehle, die für die Webentwicklung spezifisch sind.  
   
-2.  Wenn der Befehl ein Menüelement ist, notieren Sie sich den genauen Wortlaut des Menüelements.  Wenn der Befehl eine Schaltfläche auf einer Symbolleiste befindet, notieren Sie sich den QuickInfo\-Text, der angezeigt wird, wenn Sie auf darauf zeigen.  
+2.  Wenn der Befehl ein Menüelement ist, notieren Sie den genauen Text des Menüelements. Wenn der Befehl eine Schaltfläche auf einer Symbolleiste ist, beachten Sie den QuickInfo-Text, der angezeigt wird, wenn Sie darauf zeigen.  
   
-3.  Drücken Sie STRG\+F, um den **Find** Dialogfeld zu öffnen.  
+3.  Drücken Sie STRG + F, öffnen Sie die **suchen** (Dialogfeld).  
   
-4.  Geben Sie im Feld **Suchen nach** Geben Sie den Text ein, den Sie in Schritt 2 werden.  
+4.  In der **Suchen nach** geben den notierten Text in Schritt 2.  
   
-5.  Stellen Sie sicher, dass **Alle geöffneten Dokumente** im **Suchen in** Feld angezeigt wird.  
+5.  Überprüfen Sie, ob **alle geöffneten Dokumente** wird angezeigt, der **Suchen in** Feld.  
   
-6.  Klicken Sie auf die Schaltfläche **Weitersuchen** , bis der Text im `<Strings>`\-Abschnitt von [Button\-Element](../../extensibility/button-element.md)ausgewählt ist.  
+6.  Klicken Sie auf die **Weitersuchen** so lange, bis der Text ausgewählt ist, in der `<Strings>` Abschnitt eine [Schaltflächenelement](../../extensibility/button-element.md).  
   
-     Das Element, das `<Button>` aussieht, ist der Befehl in der Befehlsdefinition.  
+     Die `<Button>` Element, das in der Befehl angezeigt wird, ist der Befehlsdefinition.  
   
- Wenn Sie die Befehlsdefinition gefunden haben, können Sie eine Kopie des Befehls in ein anderes Menü oder einer Symbolleiste setzen, indem Sie [CommandPlacement\-Element](../../extensibility/commandplacement-element.md) erstellen, die gleiche `guid` und `id`\-Werte wie der Befehl verfügt.  Weitere Informationen finden Sie unter [Erstellen von wieder verwendbaren Gruppen von Schaltflächen](../../extensibility/creating-reusable-groups-of-buttons.md).  
+ Wenn Sie die Befehlsdefinition gefunden haben, können Sie eine Kopie des Befehls in einem anderen Menüs oder Symbolleisten einfügen, durch das Erstellen einer [CommandPlacement Element](../../extensibility/commandplacement-element.md) , hat die gleiche `guid` und `id` Werte wie der Befehl. Weitere Informationen finden Sie unter [erstellen Wiederverwendbarer Gruppen von Schaltflächen](../../extensibility/creating-reusable-groups-of-buttons.md).  
   
-### Besondere Fälle  
- In den folgenden Fällen gleichen der Menütext oder möglicherweise nicht genau den QuickInfo\-Text ab, was in der Befehlsdefinition ist.  
+### <a name="special-cases"></a>Sonderfälle  
+ In den folgenden Fällen kann die Menütext oder QuickInfo-Text nicht exakt Neuigkeiten in der Befehlsdefinition.  
   
--   Menüelemente, die ein unterstrichenes Zeichen, z. B. der **Drucken** Befehl im Menü **Datei** enthalten, wobei P unterstrichen ist.  
+-   Menüelemente, die ein jeweils unterstrichene Zeichen, wie z. B. enthalten die **Drucken** Befehl die **Datei** Menü, in der die P unterstrichen ist.  
   
-     Zeichen, die vom '&'Zeichen in den Namen des Menüelements vorangestellt werden, wie unterstrichen angezeigt werden.  .vsct\-Dateien werden jedoch in XML geschrieben, das das Zeichen „&verwendet, um Sonderzeichen anzugeben und erfordert, dass ein kaufmännisches Und\-Zeichen, das angezeigt werden soll, formuliert werden muss, z. B.“&amp;“.  Daher werden in einer .vsct\-Datei, wird der Befehl **Drucken**z '&amp;Print'.  
+     Zeichen, die das Zeichen "&" im Menü Elementnamen vorangestellt werden angezeigt unterstrichen angezeigt. Allerdings werden VSCT-Dateien geschrieben, in XML, das das Zeichen "&" verwendet, um Sonderzeichen anzugeben und setzt voraus, dass ein kaufmännisches und-Zeichen, die angezeigt werden soll wie folgt buchstabiert werden muss als&amp;". Deshalb in einer VSCT-Datei die **P**Rint-Befehl angezeigt wird, als "&amp;drucken".  
   
--   Befehle, die dynamischen Text, z. B. **Speichern** *Aktueller Dateiname*und dynamisch generierten Menüelemente verfügen, wie die Elemente auf der **Zuletzt geöffnete Dateien** Liste.  
+-   Befehle, die dynamischen Text, z. B. verfügen **speichern** *aktuellen Dateinamen*, und dynamisch generierte Menüelemente, z. B. die Elemente auf der **zuletzt verwendeter Dateien** Liste.  
   
-     Es gibt keine zuverlässige Möglichkeit, auf dynamischem Text zu suchen.  Stattdessen müssen Sie eine Gruppe, die als Host für den gewünschten Befehl, durch das Nachschlagen von [GUIDs und IDs der Visual Studio\-Menüs](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) oder [GUIDs und IDs der Visual Studio\-Symbolleisten](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)suchen und auf der ID dieser Gruppe.  Wenn der Befehlsdefinition die Gruppe nicht als [Parent\-Element](../../extensibility/parent-element.md), Suchen und SharedCmdPlace.vsct ShellCmdPlace.vsct \(oder VsDbgCmdPlace.vsct für Debuggerbefehle\) für ein `<CommandPlacement>`\-Element, das das übergeordnete Element des Befehls festlegen.  SharedCmdPlace.vsct, ShellCmdPlace.vsct, andVsDbgCmdPlace.vsct sind in *Pfad SDK\-Installations Visual Studio*\\ VisualStudioIntegration \\ Common \\ Inc. \\ Ordner.  
+     Es ist keine zuverlässige Möglichkeit, dynamische Text gesucht werden soll. Eine Gruppe, die den gewünschten Befehl durch consulting hostet stattdessen suchen [GUIDs und IDs der Visual Studio-Menüs](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) oder [GUIDs und IDs der Visual Studio-Symbolleisten](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md), und suchen Sie nach der ID dieser Gruppe. Verfügt der Befehlsdefinition nicht die Gruppe als seine [übergeordneten Elements](../../extensibility/parent-element.md), SharedCmdPlace.vsct und ShellCmdPlace.vsct (oder VsDbgCmdPlace.vsct für Debuggerbefehle) suchen eine `<CommandPlacement>` Element, das das übergeordnete Element des legt die -Befehl. AndVsDbgCmdPlace.vsct SharedCmdPlace.vsct ShellCmdPlace.vsct, befinden sich in der *Visual Studio SDK-Installationspfad*\VisualStudioIntegration\Common\Inc\ Ordner.  
   
-## Siehe auch  
- [MenuCommand\- und OleMenuCommand\-Objekte](../../misc/menucommands-vs-olemenucommands.md)   
- [Visual Studio\-Befehl\-Tabelle \(. VSCT\) Dateien](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
- [VSCT XML\-Schemareferenz](../../extensibility/vsct-xml-schema-reference.md)
+## <a name="see-also"></a>Siehe auch  
+ [MenuCommands im Vergleich zu OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)   
+ [Visual Studio-Befehlstabelle (. VSCT)-Dateien](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
+ [VSCT-XML-Schemareferenz](../../extensibility/vsct-xml-schema-reference.md)

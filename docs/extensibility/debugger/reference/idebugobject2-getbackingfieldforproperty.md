@@ -1,51 +1,51 @@
 ---
-title: "IDebugObject2::GetBackingFieldForProperty | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugObject2::GetBackingFieldForProperty"
-helpviewer_keywords: 
-  - "IDebugObject2::GetBackingFieldForProperty-Methode"
+title: IDebugObject2::GetBackingFieldForProperty | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugObject2::GetBackingFieldForProperty
+helpviewer_keywords: IDebugObject2::GetBackingFieldForProperty method
 ms.assetid: e72c6338-5573-4fad-8075-f3ade3435424
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 2637ddf5d50953367de66cd2ca63d7774dbc3213
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugObject2::GetBackingFieldForProperty
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft das Feld oder die Variable \(sofern vorhanden\) ab, die diese Eigenschaft unterstützen, die durch dieses Objekt dargestellt wird.  
+# <a name="idebugobject2getbackingfieldforproperty"></a>IDebugObject2::GetBackingFieldForProperty
+Ruft das Feld oder eine Variable (sofern vorhanden), die von diesem Objekt dargestellte Eigenschaft sichern.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT GetBackingFieldForProperty(  
-   IDebugObject2** ppObject  
+HRESULT GetBackingFieldForProperty(  
+   IDebugObject2** ppObject  
 );  
 ```  
   
-```c#  
-int GetBackingFieldForProperty(  
-   out IDebugObject2 ppObject  
+```csharp  
+int GetBackingFieldForProperty(  
+   out IDebugObject2 ppObject  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `ppObject`  
- \[out\]  Ein [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)\-Objekt, das das dahinter liegende Feld beschreibt.  
+ [out] Ein [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) -Objekt, das dahinter liegende Feld beschreibt.  
   
-## Rückgabewert  
- Bei Erfolg gibt S\_OK zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt S_OK zurück. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Das [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)\-Objekt stellt eine Eigenschaft Klassen von verwaltetem Code. h. eine Methode mit einem get\- und\/oder einem set\-Accessor dar.  Solche Eigenschaften müssen im Allgemeinen eine Variable, um den Wert, der von der Eigenschaft bearbeitet wird.  Diese Variable wird als das dahinter liegende Feld.  Wenn kein dahinter liegende Feld für das Objekt vorhanden ist, stellen Sie sicher, einen NULL\-Wert zurückzugeben: einige Aufrufer den Rückgabewert nicht unbedingt beachten, sondern stattdessen überprüfen, um zu ermitteln, ob ein NULL\-Wert in `ppObject`zurückgegeben wurde.  
+## <a name="remarks"></a>Hinweise  
+ Die [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) -Objekt stellt verwalteten Code Klasseneigenschaft, d. h. eine Methode mit einer Get und/oder set-Zugriffsmethode. Diese Eigenschaften erfordern in der Regel eine Variable den Wert verarbeitet, indem die Eigenschaft enthalten. Diese Variable wird als das dahinter liegende Feld bezeichnet. Wenn es ist keine dahinter liegende Feld für das Objekt aus, stellen Sie sicher, einen null-Wert zurückgegeben: Einige Aufrufer möglicherweise nicht Achten Sie darauf, den Rückgabewert jedoch sieht stattdessen um festzustellen, ob ein null-Wert in zurückgegebener `ppObject`.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

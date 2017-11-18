@@ -1,54 +1,56 @@
 ---
-title: "Gewusst wie: Registrieren eine Bibliothek mit der Objekt-Manager | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Objektmanager registriert-Bibliotheken"
-  - "Objektmanager Bibliothek registriert IVsLibrary2-Schnittstelle"
-  - "Objektmanager Bibliothek registriert IVsSimpleLibrary2-Schnittstelle"
-  - "Objektmanager Bibliothek registriert IVsObjectManager2-Schnittstelle"
-  - "Tools zum Durchsuchen von Symbol-Bibliotheken"
+title: 'Vorgehensweise: Registrieren Sie eine Bibliothek mit dem Objekt-Manager | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- libraries, registering with object manager
+- IVsLibrary2 interface, registering library with object manager
+- IVsSimpleLibrary2 interface, registering library with object manager
+- IVsObjectManager2 interface, registering library with object manager
+- libraries, symbol-browsing tools
 ms.assetid: f124dd05-cb0f-44ad-bb2a-7c0b34ef4038
-caps.latest.revision: 26
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 26
+caps.latest.revision: "26"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 6782e1cb84f4fbbe63a0e69a5c684d44ec7ccd21
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Registrieren eine Bibliothek mit der Objekt-Manager
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Symbol\-Durchsuchen Tools, z. B. **Klassenansicht**, **Objektkatalog**, **Aufrufbrowser** und **Ergebnisse der Symbolsuche**, können Sie Symbole im Projekt oder in externen Komponenten anzuzeigen.  Die Symbole umfassen Namespaces, Klassen, Schnittstellen, Methoden und anderen Sprachelemente.  Die Bibliotheken nachverfolgt werden diese Symbole und fügen sie dem [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Manager Objekt aus der Tools mit den Daten auffüllt.  
+# <a name="how-to-register-a-library-with-the-object-manager"></a>Vorgehensweise: Registrieren Sie eine Bibliothek mit dem Objekt-Manager
+Tools zum Durchsuchen von Symbolen, z. B. **Klassenansicht**, **Objektkatalog**, **Aufrufbrowser** und **Ergebnisse der Symbolsuche**, ermöglichen es Ihnen, anzeigen Symbole im Projekt oder in externen Komponenten. Die Symbole enthalten Namespaces, Klassen, Schnittstellen, Methoden und anderen Sprachelemente. Die Bibliotheken diese Symbole nachverfolgen und verfügbar zu machen, damit die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] -Objekt-Manager, die die Tools mit den Daten auffüllt.  
   
- Der Objekt Manager verwaltet alle verfügbaren Bibliotheken.  Vor dem Bereitstellen von Symbolen für die einzelnen Tools auf Browse Symbol Bibliothek muss mit dem Objekt Manager registrieren.  
+ Der Objekt-Manager der nachverfolgt aller verfügbare Bibliotheken. Jede Bibliothek muss mit dem Objektmanager registrieren, bevor Sie die Symbole für die Tools zum Durchsuchen des Symbols bereitstellt.  
   
- In der Regel VSPackage\-Lasten wenn Sie eine Bibliothek registrieren.  Es kann jedoch auf einen späteren Zeitpunkt nach Bedarf ausgeführt werden.  Markieren Sie die Bibliothek Registrierung wenn ein VSPackage herunterfahren.  
+ In der Regel, registrieren Sie eine Bibliothek aus, wenn eine VSPackage lädt. Allerdings kann es zu einem späteren Zeitpunkt erfolgen nach Bedarf. Sie Registrierung die Bibliothek aufzuheben, wenn das VSPackage wird heruntergefahren.  
   
- Um eine Bibliothek zu registrieren, verwenden Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterLibrary%2A>\-Methode.  Bei der verwalteten Codebibliothek verwenden Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A>\-Methode.  
+ Um eine Bibliothek zu registrieren, verwenden Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterLibrary%2A> Methode. Im Fall von verwaltetem Code-Bibliothek, verwenden die <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> Methode.  
   
- Zum Aufheben der Registrierung einer Bibliothek, verwenden Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A>\-Methode.  
+ Verwenden Sie zum Aufheben der Registrierung einer Bibliotheks die <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> Methode.  
   
- Um ein Verweis auf das Objekt übergeben, die <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>Manager, <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> Dienst ID `GetService`\-Methode.  
+ Um einen Verweis auf den Objekt-Manager erhalten <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>, übergeben die <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> Dienst-ID zu `GetService` Methode.  
   
-## Eine Bibliothek mit dem Objekt\-Manager registrieren und deren Registrierung aufhebend  
+## <a name="registering-and-unregistering-a-library-with-the-object-manager"></a>Registrieren und Aufheben der Registrierung einer Bibliothek mit dem Objekt-Manager  
   
-#### So erstellen Sie eine Bibliothek mit dem Objekt registrieren Manager  
+#### <a name="to-register-a-library-with-the-object-manager"></a>So registrieren eine Bibliothek mit dem Objektmanager  
   
-1.  Erstellen einer Bibliothek.  
+1.  Erstellen Sie eine Bibliothek.  
   
-    ```vb#  
+    ```vb  
     Private m_CallBrowserLibrary As CallBrowser.Library = Nothing  
     Private m_nLibraryCookie As UInteger = 0  
     ' Create Library.  
     m_CallBrowserLibrary = New CallBrowser.Library()  
     ```  
   
-    ```c#  
+    ```csharp  
     private CallBrowser.Library m_CallBrowserLibrary = null;  
     private uint m_nLibraryCookie = 0;  
     // Create Library.  
@@ -56,9 +58,9 @@ Symbol\-Durchsuchen Tools, z. B. **Klassenansicht**, **Objektkatalog**, **Aufruf
   
     ```  
   
-2.  Rufen Sie einen Verweis auf ein Objekt des Typs <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> und rufen die <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A>\-Methode veranschaulicht.  
+2.  Rufen Sie einen Verweis auf ein Objekt des der <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> geben, und rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> Methode.  
   
-    ```vb#  
+    ```vb  
     Private Sub RegisterLibrary()  
         If m_nLibraryCookie <> 0 Then  
             Throw New Exception("Library already registered with Object Manager")  
@@ -81,7 +83,7 @@ Symbol\-Durchsuchen Tools, z. B. **Klassenansicht**, **Objektkatalog**, **Aufruf
     End Sub  
     ```  
   
-    ```c#  
+    ```csharp  
     private void RegisterLibrary()  
     {  
         if (m_nLibraryCookie != 0)  
@@ -110,11 +112,11 @@ Symbol\-Durchsuchen Tools, z. B. **Klassenansicht**, **Objektkatalog**, **Aufruf
   
     ```  
   
-#### So erstellen Sie eine Bibliothek mit dem Objekt Manager Registrierung aufheben  
+#### <a name="to-unregister-a-library-with-the-object-manager"></a>Beim Aufheben der Registrierung einer Bibliotheks mit dem Objektmanager  
   
-1.  Rufen Sie einen Verweis auf ein Objekt des Typs <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> und rufen die <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A>\-Methode auf.  
+1.  Rufen Sie einen Verweis auf ein Objekt des der <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> geben, und rufen Sie die <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A> Methode.  
   
-    ```vb#  
+    ```vb  
     Private Sub UnregisterLibrary()  
         If m_nLibraryCookie <> 0 Then  
             ' Obtain a reference to IVsObjectManager2 type object.  
@@ -136,7 +138,7 @@ Symbol\-Durchsuchen Tools, z. B. **Klassenansicht**, **Objektkatalog**, **Aufruf
     End Sub  
     ```  
   
-    ```c#  
+    ```csharp  
     private void UnregisterLibrary()  
     {  
         if (m_nLibraryCookie != 0)  
@@ -165,7 +167,7 @@ Symbol\-Durchsuchen Tools, z. B. **Klassenansicht**, **Objektkatalog**, **Aufruf
   
     ```  
   
-## Siehe auch  
- [Ältere Sprache Service\-Erweiterbarkeit](../../extensibility/internals/legacy-language-service-extensibility.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Ältere Language Service-Erweiterbarkeit](../../extensibility/internals/legacy-language-service-extensibility.md)   
  [Unterstützung von Tools zum Durchsuchen des Symbols](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [Gewusst wie: Listen von Symbolen, die von der Bibliothek bereitgestellt, der Objekt\-Manager verfügbar machen](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+ [Gewusst wie: Verfügbarmachen der Listen von Symbolen, die von der Bibliothek für den Objekt-Manager bereitgestellt werden](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

@@ -1,42 +1,29 @@
 ---
-title: Isolierte Shell Einstiegspunkt-Parameter (C++) | Microsoft-Dokumentation
+redirect_url: shell/isolated-shell-entry-point-parameters-cpp
+title: Isolierte Shell Einstiegspunktparameter (C++) | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Shell [Visual Studio], isolated mode, Start entry point
 - Visual Studio shell, isolated mode, Start entry point
 ms.assetid: 18f4b18b-2173-4afa-ba0a-42fe33e61118
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 9044821c2bfee0dba8ffa91f3d91afd565b8d957
-ms.openlocfilehash: 13f05a147f0d9ab36d49b93cc91bcbaa7b002c70
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: b145207a2c74d47208df391c319f496467ae6438
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="isolated-shell-entry-point-parameters-c"></a>Isolierte Shell Einstiegspunkt-Parameter (C++)
-Wenn eine Visual Studio-Shell-basierten Anwendung startet, wird den Start-Einstiegspunkt der Visual Studio-Shell. Die folgenden Einstellungen können im Aufruf für den Einstiegspunkt der Start der Shell überschrieben werden. Eine Beschreibung der einzelnen Einstellungen, finden Sie unter [. PKGDEF-Dateien](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md).  
+# <a name="isolated-shell-entry-point-parameters-c"></a>Isolierte Shell Einstiegspunktparameter (C++)
+Wenn eine Visual Studio Shell-basierten Anwendung startet, ruft er den Ausgangspunkt der Eintrag der Visual Studio-Shell. Die folgenden Einstellungen können im Aufruf der Einstiegspunkt der Start der Shell überschrieben werden. Eine Beschreibung der einzelnen Einstellungen finden Sie [. PKGDEF Dateien](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md).  
   
 -   AddinsAllowed  
   
@@ -72,27 +59,27 @@ Wenn eine Visual Studio-Shell-basierten Anwendung startet, wird den Start-Einsti
   
 -   UserOptsFileExt  
   
- Die Visual Studio Shell Isolated Vorlage erstellt eine Quelldatei *SolutionName*cpp, *SolutionName* ist der Projektmappenname für die Anwendung. Diese Datei definiert den Haupteinstiegspunkt für die Anwendung der _tWinMain-Funktion. Diese Funktion ruft den Einstiegspunkt der Start der Shell.  
+ Die Visual Studio Shell Isolated Vorlage erstellt eine Quelldatei *SolutionName*.cpp, in denen *SolutionName* ist der Projektmappenname für die Anwendung. Diese Datei definiert den Haupteinstiegspunkt für die Anwendung, die _tWinMain-Funktion. Diese Funktion ruft den Einstiegspunkt der Start der Shell.  
   
- Sie können das Verhalten der Anwendung ändern, indem Sie diese Einstellungen ändern, beim Starten der Anwendung.  
+ Sie können das Verhalten der Anwendung ändern, indem Sie diese Einstellungen ändern, wenn die Anwendung gestartet wird.  
   
 ## <a name="parameters"></a>Parameter  
- Der Start-Einstiegspunkt der Visual Studio-Shell definiert fünf Parameter. Ändern Sie die ersten vier Parameter nicht. Der fünfte Parameter hat eine Liste der Einstellungen außer Kraft setzen. Der Einstiegspunkt der Start der Shell wird von der Haupteinstiegspunkt der Anwendung aufgerufen.  
+ Der Einstiegspunkt der Start von Visual Studio-Shell definiert fünf Parameter. Ändern Sie die ersten vier Parameter nicht. Der fünfte Parameter akzeptiert eine Liste der Einstellungen überschreiben. Der Einstiegspunkt der Start der Shell wird von den Haupteinstiegspunkt einer Anwendung aufgerufen.  
   
- Der Einstiegspunkt der Start der Shell hat folgende Signatur.  
+ Der Einstiegspunkt der Start der Shell hat die folgende Signatur.  
   
 ```  
 typedef int (__cdecl *STARTFCN)(LPSTR, LPWSTR, int, GUID *, WCHAR *pszSettings);  
 ```  
   
- Wenn Sie nicht möchten, überschreiben alle Einstellungen, lassen den Wert der Einstellungen überschreiben Sie Parameter ein null-Zeiger.  
+ Wenn Sie nicht möchten, lassen Sie den Wert der Einstellungen zum Überschreiben alle Anwendungseinstellungen Geben Sie Parameter als ein null-Zeiger.  
   
- Um eine oder mehrere Einstellungen zu überschreiben, übergeben Sie eine Unicode-Zeichenfolge mit den Einstellungen außer Kraft gesetzt werden. Die Zeichenfolge ist eine durch Semikolons getrennte Liste von Name-Wert-Paaren. Jedes Paar enthält den Namen der Einstellung überschreiben, gefolgt von einem Gleichheitszeichen (=), gefolgt vom Wert der Einstellung angewendet.  
+ Um eine oder mehrere Einstellungen zu überschreiben, übergeben Sie eine Unicodezeichenfolge, die die Einstellungen außer Kraft gesetzt werden enthält. Die Zeichenfolge ist eine durch Semikolons getrennte Liste von Name / Wert-Paaren. Jedes Paar enthält den Namen der Einstellung überschreiben, gefolgt von einem Gleichheitszeichen (=), gefolgt vom Wert der Einstellung angewendet.  
   
 > [!NOTE]
->  Leerzeichen Sie Sie keine in den Unicode-Zeichenfolgen.  
+>  Nehmen Sie Leerzeichen nicht in der Unicode-Zeichenfolgen aus.  
   
- Boolean-Einstellungen stehen für die folgenden Zeichenfolgen den Wert True; Alle anderen Zeichenfolgen darstellen, den Wert "false". Diese Zeichenfolgen die Groß-/Kleinschreibung.  
+ Für boolesche Einstellungen stehen für die folgenden Zeichenfolgen den Wert "true"; Alle anderen Zeichenfolgen darstellen, den Wert "false". Diese Zeichenfolgen Groß-/Kleinschreibung unterschieden.  
   
 -   \+  
   
@@ -107,8 +94,8 @@ typedef int (__cdecl *STARTFCN)(LPSTR, LPWSTR, int, GUID *, WCHAR *pszSettings);
 -   ja  
   
 ## <a name="example"></a>Beispiel  
- Zum Deaktivieren von Add-Ins, und Ändern des Standardspeicherorts für Projekte für Ihre Anwendung, können Sie den letzten Parameter für "AddinsAllowed=false;DefaultProjectsLocation=%USERPROFILE%\temp" festlegen.  
+ Zum Deaktivieren von-add-ins und zum Ändern des Standardspeicherorts für Projekte für die Anwendung, können Sie die letzten Parameter für "AddinsAllowed=false;DefaultProjectsLocation=%USERPROFILE%\temp" festlegen.  
   
 ## <a name="see-also"></a>Siehe auch  
- [Anpassen der isolierte Shells](../extensibility/customizing-the-isolated-shell.md)   
+ [Anpassen der isolierten Shells](../extensibility/customizing-the-isolated-shell.md)   
  [. PKGDEF-Dateien](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)

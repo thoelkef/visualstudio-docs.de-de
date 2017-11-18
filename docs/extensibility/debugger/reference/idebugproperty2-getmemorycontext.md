@@ -1,49 +1,49 @@
 ---
-title: "IDebugProperty2::GetMemoryContext | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProperty2::GetMemoryContext"
-helpviewer_keywords: 
-  - "IDebugProperty2::GetMemoryContext"
+title: IDebugProperty2::GetMemoryContext | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProperty2::GetMemoryContext
+helpviewer_keywords: IDebugProperty2::GetMemoryContext
 ms.assetid: 91793d25-790f-4881-a5c0-d0458e534514
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 5e23863e4f581e22d47117cb5efdca2d61384a6e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProperty2::GetMemoryContext
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft den Arbeitsspeicher Elementkontext des Eigenschaftswerts ab.  
+# <a name="idebugproperty2getmemorycontext"></a>IDebugProperty2::GetMemoryContext
+Ruft den Kontext Arbeitsspeicher den Wert der Eigenschaft ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetMemoryContext (   
-   IDebugMemoryContext2** ppMemory  
+```cpp  
+HRESULT GetMemoryContext (   
+   IDebugMemoryContext2** ppMemory  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetMemoryContext(  
-   out IDebugMemoryContext2 ppMemory  
+   out IDebugMemoryContext2 ppMemory  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `ppMemory`  
- \[out\]  Gibt das [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)\-Objekt zurück, das den Speicher darstellt, der dieser Eigenschaft zugeordnet ist.  
+ [out] Gibt die [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) Objekt, das diese Eigenschaft zugeordneten Arbeitsspeicher darstellt.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. gibt andernfalls Fehlercode zurück.  Gibt `S_GETMEMORYCONTEXT_NO_MEMORY_CONTEXT` zurück, wenn kein Kontext gibt Arbeitsspeicher abrufen.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`; andernfalls wird Fehlercode zurückgegeben. Gibt `S_GETMEMORYCONTEXT_NO_MEMORY_CONTEXT` Wenn es keinen Arbeitsspeicher Kontext gibt abgerufen.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

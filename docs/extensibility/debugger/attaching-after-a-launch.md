@@ -1,53 +1,54 @@
 ---
-title: "Nach einem starten Anf&#252;gen | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Debugmodule, Anhängen an Programme"
+title: "Nach einem Start Anfügen | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: debug engines, attaching to programs
 ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0a06a9b4be6cb20339c8c89f8594f290c1f6a46a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Nach einem starten Anf&#252;gen
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Nachdem ein Programm gestartet wurde, ist die Debugsitzung bereit, das Debugmodul \(DE\) besagtem Programm anzufügen.  
+# <a name="attaching-after-a-launch"></a>Nach einem Start Anfügen
+Nachdem ein Programm gestartet wurde, kann die Debugsitzung besagten Programm Debugging-Modul (DE) zuordnen.  
   
-## Entwurfs\-Entscheidungen  
- Da die Kommunikation innerhalb eines freigegebenen Adressbereichs einfacher ist, müssen Sie sich, ob sie mehr von Bedeutung, ist die Kommunikation zwischen der Debugsitzung und DE zu erleichtern, oder zwischen DE und dem Programm ermitteln.  Wählen Sie zwischen dem folgenden aus:  
+## <a name="design-decisions"></a>Entwurfsentscheidungen  
+ Da die Kommunikation in einen freigegebenen Adressenbereich einfacher ist, müssen Sie entscheiden, ob es sinnvoller zur Erleichterung der Kommunikation zwischen der Debugsitzung und die DE oder zwischen dem Code und die Anwendung ist. Wählen Sie zwischen den folgenden:  
   
--   Wenn es mehr sinnvoll ist, die Kommunikation zwischen der Debugsitzung und DE zu erleichtern, erstellt die Debugsitzung DE und fordert DE, um auf das Programm anzufügen.  Auf diese Weise können die Debugsitzung und DE in einem Adressraum und die Laufzeitumgebung und das Programm in einen anderen.  
+-   Wenn es zum Vereinfachen der Kommunikation zwischen der Debugsitzung und die DE sinnvoller, klicken Sie dann die Debugsitzung zusammen erstellt die DE, und fordert die DE an die Anwendung angefügt. Dadurch wird die Debugsitzung und "DE" zusammen einen Adressraum und der Laufzeitumgebung und Programm in einer anderen zusammen.  
   
--   Wenn es mehr sinnvoll ist, die Kommunikation zwischen DE und dem Programm zu erleichtern, erstellt die Laufzeitumgebung. DE  Dies ermöglicht das SDM in einem Adressraum und DE, die Laufzeitumgebung und das Programm in einen anderen.  Dies ist der DE typisch, das mit einem Interpreter implementiert wird, damit vorbereitete Sprachen auszuführen.  
+-   Wenn sie weitere zum Vereinfachen der Kommunikation zwischen dem Code und die Anwendung sinnvoll ist, erstellt zusammen dann die Laufzeitumgebung DE. Dadurch verbleibt die SDM in einem Adressraum, und die DE, Laufzeitumgebung und Programm in einer anderen zusammen. Dies ist typisch für die einer bereitgestellten Kompatibilitätsrichtlinie, die ein Interpreter auszuführende skriptgesteuerte Sprachen implementiert sind.  
   
     > [!NOTE]
-    >  Wie DE Programmieren anfügt, ist Implementierung abhängige Datei.  Kommunikation zwischen DE und dem Programm kann auch Implementierung abhängige Datei.  
+    >  Wie die DE an das Programm angefügt wird, ist implementierungsabhängig. Kommunikation zwischen dem Code und das Programm ist auch abhängig von der Implementierung.  
   
-## Implementierung  
- Programmgesteuert, wenn der Debug\- Manager der Sitzung \(SDM\) zuerst das [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)\-Objekt empfängt, das das Programm gestartet werden darstellt, ruft es die [Anfügen](../../extensibility/debugger/reference/idebugprogram2-attach.md)\-Methode auf und übergibt es ein [IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md)\-Objekt, das zum Debuggen von Ereignissen zurück an den SDM verwendetes neueres zu übergeben.  Die `IDebugProgram2::Attach`\-Methode ruft anschließend die [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)\-Methode auf.  Weitere Informationen darüber, wie sich das SDM die `IDebugProgram2`\-Schnittstelle erhält, finden Sie unter [Benachrichtigen den Port](../../extensibility/debugger/notifying-the-port.md).  
+## <a name="implementation"></a>Implementierung  
+ Programmgesteuert, wenn die Sitzung Debug-Manager (SDM) zuerst empfängt die [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) Objekt, das die Anwendung gestartet werden, ruft der [Anfügen](../../extensibility/debugger/reference/idebugprogram2-attach.md) -Methode, und übergeben sie ein [ IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) -Objekt, das später verwendet, um Debug-Ereignisse an die SDM zu übergeben. Die `IDebugProgram2::Attach` -Methode ruft dann die [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) Methode. Weitere Informationen zu den SDM wie empfängt die `IDebugProgram2` Benutzeroberfläche, siehe [benachrichtigen den Port](../../extensibility/debugger/notifying-the-port.md).  
   
- Wenn in den gleichen DE den Adressbereich ausgeführt werden muss das Programm, das gedebuggt wird. In der Regel werden, da DE Teil eines Interpreters handelt, der ein Skript ausgeführt wird, gibt die Methode `IDebugProgramNodeAttach2::OnAttach``S_FALSE`zurück, um anzugeben, dass sie den Anfügen Prozess abgeschlossen wurde.  
+ Wenn Ihre DE ausgeführt wird, in der gleichen Adressbereich wie der zu debuggenden Programms in der Regel ist die DE Teil ein Interpreter Ausführen eines Skripts, muss die `IDebugProgramNodeAttach2::OnAttach` -Methode zurückkehrt `S_FALSE`, gibt an, dass er den Prozess anhängen abgeschlossen.  
   
- Wenn andererseits DE im Adressbereich des SDM ausgeführt wird, gibt die Methode `IDebugProgramNodeAttach2::OnAttach``S_OK` zurück, oder [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md)\-Schnittstelle wird nicht an allen auf dem [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)\-Objekt implementiert, das mit dem Programm verknüpft ist, das gedebuggt wird.  In diesem Fall wird die [Anfügen](../../extensibility/debugger/reference/idebugengine2-attach.md) schließlich Methode aufgerufen, um den Anfügevorgang zu vervollständigen.  
+ Wenn andererseits, DE im Adressraum der SDM ausgeführt wird die `IDebugProgramNodeAttach2::OnAttach` -Methode zurückkehrt `S_OK` oder [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md) Schnittstelle wird nicht auf alle implementiert die [IDebugProgramNode2 ](../../extensibility/debugger/reference/idebugprogramnode2.md) Objekt, das derzeit debuggte Programm zugeordnet. In diesem Fall die [Anfügen](../../extensibility/debugger/reference/idebugengine2-attach.md) -Methode schließlich aufgerufen, um der Anfügevorgang abgeschlossen.  
   
- In letzterem Fall müssen Sie die [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)`IDebugProgram2`\-Methode für das Objekt aufrufen, das an die Methode übergeben, `IDebugEngine2::Attach` im lokalen `GUID` gespeichert wurde. Dieses Programm Objekt `GUID` zurückgibt, wenn die `IDebugProgram2::GetProgramId`\-Methode danach für dieses Objekt aufgerufen wird.  `GUID` wird verwendet, um das Programm zu den verschiedenen Komponenten Debuggen eindeutig zu identifizieren.  
+ In letzterem Fall, rufen Sie die [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) Methode auf der `IDebugProgram2` -Objekt, das übergeben wurde der `IDebugEngine2::Attach` -Methode, Speicher der `GUID` in der lokalen Anwendung Objekt, und dies zurückgeben `GUID` bei der `IDebugProgram2::GetProgramId` -Methode für dieses Objekt anschließend aufgerufen wird. Die `GUID` wird verwendet, um das Programm in die verschiedenen Komponenten der Debug eindeutig zu identifizieren.  
   
- Beachten Sie, dass im Falle der `IDebugProgramNodeAttach2::OnAttach`\-Methode, die `S_FALSE`zurückgibt, wird für das Programm zu verwenden `GUID` , an diese Methode übergeben und die `IDebugProgramNodeAttach2::OnAttach`\-Methode, die auf dem lokalen `GUID` Programm Objekt festgelegt werden soll.  
+ Beachten Sie, dass im Fall von der `IDebugProgramNodeAttach2::OnAttach` Methode zurückgeben `S_FALSE`, die `GUID` für das Programm an diese Methode übergeben wird, und es wird die `IDebugProgramNodeAttach2::OnAttach` Methode, die festlegt der `GUID` für das lokale Programme-Objekt.  
   
- DE wird jetzt in das Programm angefügt und vorbereitet, um alle Start von Ereignissen zu senden.  
+ Die DE ist jetzt an das Programm und alle Startereignisse senden angefügt.  
   
-## Siehe auch  
- [Anfügen an ein Programm direkt](../../extensibility/debugger/attaching-directly-to-a-program.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Anhängen an ein Programm direkt](../../extensibility/debugger/attaching-directly-to-a-program.md)   
  [Benachrichtigen den Port](../../extensibility/debugger/notifying-the-port.md)   
- [Debugging\-Aufgaben](../../extensibility/debugger/debugging-tasks.md)   
+ [Debugging-Aufgaben](../../extensibility/debugger/debugging-tasks.md)   
  [IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md)   
  [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)   
  [Anfügen](../../extensibility/debugger/reference/idebugprogram2-attach.md)   

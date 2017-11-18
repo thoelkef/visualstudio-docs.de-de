@@ -1,78 +1,78 @@
 ---
-title: "SEEK_START | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SEEK_START"
-helpviewer_keywords: 
-  - "SEEK_START-enumeration"
+title: SEEK_START | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: SEEK_START
+helpviewer_keywords: SEEK_START enumeration
 ms.assetid: 55bd8901-626e-428b-a263-23b14417f4c6
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 10937c4a5078574f7658bc54f2508b576209f9d5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# SEEK_START
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Gibt die Position an, aus der die Suche in einem Disassemblys datenstrom starten.  
+# <a name="seekstart"></a>SEEK_START
+Gibt die Position, ab dem Suchvorgänge in einem Datenstrom Disassembly beginnen.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-enum enum_SEEK_START {   
-   SEEK_START_BEGIN       = 0x0001,  
-   SEEK_START_END         = 0x0002,  
-   SEEK_START_CURRENT     = 0x0003,  
-   SEEK_START_CODECONTEXT = 0x0004,  
-   SEEK_START_CODELOCID   = 0x0005  
+```cpp  
+enum enum_SEEK_START {   
+   SEEK_START_BEGIN       = 0x0001,  
+   SEEK_START_END         = 0x0002,  
+   SEEK_START_CURRENT     = 0x0003,  
+   SEEK_START_CODECONTEXT = 0x0004,  
+   SEEK_START_CODELOCID   = 0x0005  
 };  
 typedef DWORD SEEK_START;  
 ```  
   
-```c#  
-public enum enum_SEEK_START {   
-   SEEK_START_BEGIN       = 0x0001,  
-   SEEK_START_END         = 0x0002,  
-   SEEK_START_CURRENT     = 0x0003,  
-   SEEK_START_CODECONTEXT = 0x0004,  
-   SEEK_START_CODELOCID   = 0x0005  
+```csharp  
+public enum enum_SEEK_START {   
+   SEEK_START_BEGIN       = 0x0001,  
+   SEEK_START_END         = 0x0002,  
+   SEEK_START_CURRENT     = 0x0003,  
+   SEEK_START_CODECONTEXT = 0x0004,  
+   SEEK_START_CODELOCID   = 0x0005  
 };  
 ```  
   
-## Mitglieder  
- SEEK\_START\_BEGIN  
- Beginnt die Suche am Anfang des aktuellen Dokuments.  
+## <a name="members"></a>Member  
+ SEEK_START_BEGIN  
+ Das Element beginnt am Anfang des aktuellen Dokuments Suchvorgänge.  
   
- SEEK\_START\_END  
- Beginnt die Suche am Ende des aktuellen Dokuments.  
+ SEEK_START_END  
+ Das Element beginnt am Ende des aktuellen Dokuments Suchvorgänge.  
   
- SEEK\_START\_CURRENT  
- Startet die an der aktuellen Position des aktuellen Dokuments finden.  
+ SEEK_START_CURRENT  
+ Das Element beginnt an der aktuellen Position des aktuellen Dokuments Suchvorgänge.  
   
- SEEK\_START\_CODECONTEXT  
- Startet die im angegebenen Kontext des aktuellen Dokuments Code suchen.  
+ SEEK_START_CODECONTEXT  
+ Startet die Suchvorgänge in den angegebenen Codekontext des aktuellen Dokuments.  
   
- SEEK\_START\_CODELOCID  
- Startet die am angegebenen Speicherort des Codes Bezeichner finden.  Speicherort des Codes Bezeichner werden abgerufen, indem [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)aufruft.  
+ SEEK_START_CODELOCID  
+ Das Element beginnt am angegebenen Speicherortbezeichner Suchvorgänge. Durch Aufrufen von Code Position-Bezeichner erhalten [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md).  
   
-## Hinweise  
- Übergabe als Argument an die [Suchen](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)\-Methode.  
+## <a name="remarks"></a>Hinweise  
+ Übergeben als Argument an die [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) Methode.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Suchen](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)   
+ [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)   
  [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)

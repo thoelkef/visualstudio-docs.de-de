@@ -1,52 +1,53 @@
 ---
-title: "IDebugBoundBreakpoint2::Enable | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBoundBreakpoint2::Enable"
-helpviewer_keywords: 
-  - "Enable-Methode"
-  - "IDebugBoundBreakpoint2::Enable-Methode"
+title: IDebugBoundBreakpoint2::Enable | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugBoundBreakpoint2::Enable
+helpviewer_keywords:
+- Enable method
+- IDebugBoundBreakpoint2::Enable method
 ms.assetid: 1b4e3f73-c94d-4aa3-9aa8-0d8cb8a6c5ca
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 8f08ed8088e2b068b753209f7749d330c000221f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugBoundBreakpoint2::Enable
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugboundbreakpoint2enable"></a>IDebugBoundBreakpoint2::Enable
 Aktiviert oder deaktiviert den Haltepunkt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT Enable(   
-   BOOL fEnable  
+```cpp  
+HRESULT Enable(   
+   BOOL fEnable  
 );  
 ```  
   
-```c#  
-int Enable(   
-   int fEnable  
+```csharp  
+int Enable(   
+   int fEnable  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `fEnable`  
- \[in\]  Position zu aktivieren`TRUE`als ungleich 0 \(Null\) oder \(`FALSE`\), um den Haltepunkten zu deaktivieren.  
+ [in] Ungleich 0 festgelegt (`TRUE`) zu aktivieren, oder 0 (null) (`FALSE`) um den Haltepunkt zu deaktivieren.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  Gibt `E_BP_DELETED` zurück, wenn sich der Zustand des Objekts `BPS_DELETED` gebundenen Haltepunkt festgelegt ist \(Teil der [BP\_STATE](../../../extensibility/debugger/reference/bp-state.md)\-Enumeration\).  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben. Gibt `E_BP_DELETED` , wenn der Zustand des Objekts gebundenen Haltepunkt, um festgelegt ist `BPS_DELETED` (Teil der [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) Enumeration).  
   
-## Beispiel  
- Im folgenden Beispiel wird veranschaulicht, wie diese Methode für ein einfaches `CBoundBreakpoint`\-Objekt implementiert, das die [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)\-Schnittstelle verfügbar macht.  
+## <a name="example"></a>Beispiel  
+ Im folgende Beispiel wird gezeigt, wie diese Methode für eine einfache implementiert `CBoundBreakpoint` -Objekt, das macht die [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) Schnittstelle.  
   
 ```  
 HRESULT CBoundBreakpoint::Enable(BOOL fEnable)    
@@ -95,6 +96,6 @@ HRESULT CBoundBreakpoint::Enable(BOOL fEnable)
 }    
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
- [BP\_STATE](../../../extensibility/debugger/reference/bp-state.md)
+ [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

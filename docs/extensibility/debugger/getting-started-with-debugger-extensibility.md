@@ -1,52 +1,54 @@
 ---
-title: "Erste Schritte mit dem Debugger-Erweiterbarkeit | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Erste Schritte Debugging-SDK"
-  - "Debuggen [Debuggen SDK], erste Schritte"
-  - "Debugging-SDK, erste Schritte"
+title: Erste Schritte mit Debugger-Erweiterbarkeits | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- getting started, Debugging SDK
+- debugging [Debugging SDK], getting started
+- Debugging SDK, getting started
 ms.assetid: d6ce6f43-1409-4bf7-93cd-f3464ca23504
-caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 1419f4e45aefed59aa36b249568a53a47ad3c459
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Erste Schritte mit dem Debugger-Erweiterbarkeit
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] enthält die Informationen, die der Debugger Komponenten erstellen und anpassen müssen, müssen die Testprogrammen aus der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Umgebung verwendet werden.  
+# <a name="getting-started-with-debugger-extensibility"></a>Erste Schritte mit Debugger-Erweiterbarkeits-
+Die [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] enthält Informationen, die Sie zum Erstellen und Anpassen von Debuggerkomponenten verwendet benötigen, um das Debuggen von Programmen innerhalb der [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Umgebung.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debuggen besitzt die Verbesserungen hinzugefügt, die von den Tests Benutzerfreundlichkeits umfangreichen abgeleitet sind, die auf früheren [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debugger ausgeführt werden.  Sie können [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debuggen verwenden, um eine mehrsprachige Anwendung zu durchlaufen, oder Sie können die direkte Bearbeitung von Variablen beim Debuggen von Anwendungen und mehrsprachigen Projektmappe implementieren.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Debuggen wurde hinzugefügt, Verbesserungen, die eine umfangreiche Verwendbarkeit auf vorherige durchgeführten Tests abgeleitet [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debugger. Sie können [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debuggen schrittweise Durchlaufen einer mehrsprachigen-Anwendung, oder Sie können auf dynamische Bearbeitung von Variablen beim Debuggen von Anwendungen und Lösungen von mehrsprachigen implementieren.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debuggen ist mit dem prozessexterne auf Programm, das gedebuggt wird und daher im Prozessbereich der Anwendung weniger intrusiv.  Daher ist es einfacher, Komponenten zu schreiben, die mit dem Debugger interagieren, ohne das Debugprogramm zu beeinflussen.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Debuggen ist ausgeführten Out-of-Process mit dem Programm, das gerade gedebuggt wird und daher weniger intrusiv im Prozessbereich der Anwendung. Daher ist es einfacher, Komponenten zu schreiben, die Interaktion mit dem Debugger ohne Auswirkungen auf Ihre Anwendung debuggen.  
   
- Zur optimalen Verwendung [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], sollten Sie mit folgendem vertraut sein:  
+ Die optimale Verwendung der [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], Sie sollten mit den folgenden vertraut sein:  
   
--   Die integrierte Entwicklungsumgebung \(IDE\) [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]  
+-   Die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrierten Entwicklungsumgebung (IDE)  
   
--   Die C\+\+\-Programmiersprache  
+-   Die Programmiersprache C++  
   
--   ATL  
+-   ATL COM  
   
-## In diesem Abschnitt  
+## <a name="in-this-section"></a>In diesem Abschnitt  
  [Roadmap für die Erweiterung des Debuggers](../../extensibility/debugger/roadmap-for-extending-the-debugger.md)  
- Erläutert die Schritte zum Implementieren des Debuggens im Produkt abhängig vom Compiler und seiner Ausgabe.  
+ Beschreibt den Prozess der Implementierung Ihres Produkts, je nach dem Compiler und dessen Ausgabe Debuggen.  
   
  [Debuggerkomponenten](../../extensibility/debugger/debugger-components.md)  
- Bietet eine Übersicht über [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Komponenten [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , das Debuggen, die das Debugmodul \(DE\), Ausdrucksauswertung \(Symbol\) und EE Klassenhandler \(SH\) enthalten.  
+ Bietet eine Übersicht über die [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Debuggen von Komponenten, z. B. die Debugging-Modul (DE), ausdrucksauswertung (EE) und Symbol Handler ("SH").  
   
- [Debugger\-Konzepte](../../extensibility/debugger/debugger-concepts.md)  
- Beschreibt die Architektur wichtigsten Konzepte des Debuggens.  
+ [Debuggerkonzepte](../../extensibility/debugger/debugger-concepts.md)  
+ Beschreibt die wichtigsten Konzepte für das Debuggen Architektur.  
   
- [Debugger\-Kontexte](../../extensibility/debugger/debugger-contexts.md)  
- Erläutert, wie das Debugmodul \(DE\) gleichzeitig innerhalb des Codes, der Dokumentation und den Ausdrucksauswertungs kontexte funktioniert.  Beschreibt für jede der drei Kontexten, des Speicherorts, der Position oder der Auswertung, die relevant sind.  
+ [Debuggerkontexte](../../extensibility/debugger/debugger-contexts.md)  
+ Erläutert, wie die Debugging-Modul (DE) gleichzeitig in Code, Dokumentation und ausdruckskontexten für die Auswertung ausgeführt wird. Beschreibt, für jede der drei Kontexten, Speicherort, Position oder Evaluation für sie relevant.  
   
- [Debugging\-Aufgaben](../../extensibility/debugger/debugging-tasks.md)  
- Enthält Links zu den verschiedenen Aufgaben Debuggen eines Programms starten, z und Auswerten von Ausdrücken.
+ [Debuggingaufgaben](../../extensibility/debugger/debugging-tasks.md)  
+ Enthält Links zu verschiedenen Debugaufgaben, z. B. ein Programm starten und Auswerten von Ausdrücken.

@@ -1,45 +1,45 @@
 ---
-title: "IEnumCodePaths2::Reset | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumCodePaths2::Reset"
-helpviewer_keywords: 
-  - "IEnumCodePaths2::Reset"
+title: IEnumCodePaths2::Reset | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumCodePaths2::Reset
+helpviewer_keywords: IEnumCodePaths2::Reset
 ms.assetid: 490c0e19-ff4b-4673-bd06-cdee996ac226
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 6de0a9cc46664718fbcb5dc455158df3ceabc6ea
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumCodePaths2::Reset
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="ienumcodepaths2reset"></a>IEnumCodePaths2::Reset
 Setzt die Enumeration auf das erste Element zurück.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Reset(  
-   void  
+   void  
 );  
 ```  
   
-```c#  
+```csharp  
 int Reset();  
 ```  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Nachdem diese Methode aufgerufen wurde, gibt der nächste Aufruf der [Weiter](../../../extensibility/debugger/reference/ienumcodepaths2-next.md)\-Methode das erste Element der Enumeration zurück.  
+## <a name="remarks"></a>Hinweise  
+ Nachdem diese Methode wird aufgerufen, den beim nächsten Aufruf der [Weiter](../../../extensibility/debugger/reference/ienumcodepaths2-next.md) Methode gibt das erste Element der Enumeration.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)
