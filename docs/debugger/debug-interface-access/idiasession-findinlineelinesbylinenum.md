@@ -1,64 +1,64 @@
 ---
-title: "IDiaSession::findInlineeLinesByLinenum | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: IDiaSession::findInlineeLinesByLinenum | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: cf32ae7c-a0c8-4800-bc8f-d64fdd15fb06
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c18b2919605e3b2de6f59303c304ffb3d8f05198
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findInlineeLinesByLinenum
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft eine Enumeration ab, die einem Client ermöglicht, durch die Zeilennummerninformationen aller Funktionen direkt oder indirekt zu durchlaufen, die inline sind, in der Quelldatei angegebenen und der Zeilennummer.  
+# <a name="idiasessionfindinlineelinesbylinenum"></a>IDiaSession::findInlineeLinesByLinenum
+Ruft eine Enumeration, die ermöglicht einem Client zum iterieren durch die Zeilennummerninformationen aller Funktionen, die inline erweitert wird, direkt oder indirekt in die angegebene Quelle und die Zeilennummer der Anzahl ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT findInlineeLinesByVA (   
-   IDiaSymbol*           compiland,  
+```C++  
+HRESULT findInlineeLinesByVA (   
+   IDiaSymbol*           compiland,  
    IDiaSourceFile*       file,  
    DWORD                 linenum,  
    DWORD                 column,  
-   IDiaEnumLineNumbers** ppResult  
+   IDiaEnumLineNumbers** ppResult  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `compiland`  
- \[in\] Ein [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)\-Objekt, das die Kompiliereinheit darstellt, in der nach den Zeilennummern gesucht werden soll.  Dieser Parameter darf nicht `NULL` sein.  
+ [in] Ein [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) Objekt, das der Kompiliereinheit zu durchsuchende für die Zeilennummern darstellt. Dieser Parameter darf nicht sein `NULL`.  
   
  `file`  
- \[\] [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) in ein Objekt, das die Quelldatei darstellt, in der suchen.  Dieser Parameter darf nicht `NULL` sein.  
+ [in] Ein [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) -Objekt, das die Quelldatei, in dem gesucht werden soll. Dieser Parameter darf nicht sein `NULL`.  
   
  `linenum`  
- \[in\] Gibt eine 1\-basierte Zeilennummer an.  
+ [in] Gibt eine Zeile eins an.  
   
 > [!NOTE]
->  Sie können 0 nicht verwenden, um alle Zeilen anzugeben \(verwenden Sie die [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)\-Methode, um alle Zeilen zu suchen\).  
+>  Sie können nicht 0 (null) verwenden, um alle Zeilen angeben (verwenden Sie die [idiasession:: Findlines](../../debugger/debug-interface-access/idiasession-findlines.md) Methode, um alle Zeilen zu suchen).  
   
  `column`  
- \[in\]Legt die Spaltennummer fest.  Verwenden Sie 0, um alle Spalten anzugeben.  Eine Spalte ist ein Byteoffset in eine Zeile.  
+ [in] Gibt die Nummer der Spalte an. Verwenden Sie 0 (null), um alle Spalten anzugeben. Eine Spalte ist ein Byte-Offset in einer Zeile.  
   
  `ppResult`  
- \[out\] [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) gibt ein Objekt zurück, das eine Liste der Zeilennummern enthält, die abgerufen wurden.  
+ [out] Gibt eine [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) -Objekt, das eine Liste mit den Zeilennummern enthält, die abgerufen wurden.  
   
-## Rückgabewert  
- Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum\-Enumeration](../../debugger/debug-interface-access/symtagenum.md)   
+ [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

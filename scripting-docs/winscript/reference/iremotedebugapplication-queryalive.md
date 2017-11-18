@@ -1,46 +1,49 @@
 ---
-title: "IRemoteDebugApplication::QueryAlive | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IRemoteDebugApplication::QueryAlive | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IRemoteDebugApplication.QueryAlive
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IRemoteDebugApplication::QueryAlive"
+helpviewer_keywords: IRemoteDebugApplication::QueryAlive
 ms.assetid: 08e49d3b-6fb3-4438-960e-f05395ba9b17
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 3f938ad30562cd1131e8a50077106002d33cea2b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IRemoteDebugApplication::QueryAlive
-Gibt an, ob die Anwendung reagiert weiterhin ist.  
+# <a name="iremotedebugapplicationqueryalive"></a>IRemoteDebugApplication::QueryAlive
+Gibt an, ob die Anwendung reagiert.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT QueryAlive();  
 ```  
   
-#### Parameter  
- Diese Methode verwendet keine Parameter.  
+#### <a name="parameters"></a>Parameter  
+ Diese Methode nimmt keine Parameter.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
- Diese Methode gibt an, wenn die Anwendung reagiert weiterhin ist.  Implementierungen dieser Methode sollten `S_OK` immer zurückgeben.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode gibt an, ob die Anwendung reagiert. Implementierungen dieser Methode sollte stets `S_OK`.  
   
- Wenn der Anwendungsprozess unerwartet beendet wird, gibt COM einen Fehler aus Marshallingsproxy für Aufrufe dieser Methode zurück.  
+ Der Anwendungsprozess unerwartet beendet wird, gibt COM aus dem marshalling Proxy für Aufrufe dieser Methode einen Fehler zurück.  
   
-## Siehe auch  
- [IRemoteDebugApplication\-Schnittstelle](../../winscript/reference/iremotedebugapplication-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IRemoteDebugApplication-Schnittstelle](../../winscript/reference/iremotedebugapplication-interface.md)

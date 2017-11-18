@@ -1,38 +1,38 @@
 ---
-title: "How to: Change Fonts | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "fonts, SpyHelp"
+title: "Vorgehensweise: Ändern von Schriftarten | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: fonts, SpyHelp
 ms.assetid: 3ee22eb9-978f-4efd-a5e0-f071745496ce
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f55564cc5c439d4ead88299108d3db5e10b9e11e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# How to: Change Fonts
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Sie können Schriftart, Schriftschnitt und Schriftgrad für Spy\+\+\-Fenster ändern.  
+# <a name="how-to-change-fonts"></a>Gewusst wie: Ändern von Schriftarten
+Sie können die Schriftart, Schriftschnitt und Schriftgröße für Windows Spy++ ändern.  
   
-### So ändern Sie Schriftartoptionen  
+### <a name="to-change-font-options"></a>So ändern Sie Schriftartoptionen  
   
-1.  Klicken Sie im Menü **Ansicht** auf **Schriftart**.  
+1.  Aus der **Ansicht** Menü wählen **Schriftart**.  
   
-2.  Wählen Sie eine Schriftart, einen Schriftschnitt und einen Schriftgrad aus.  
+2.  Wählen Sie eine Schriftart, Schriftschnitt und Schriftgröße aus.  
   
 3.  Klicken Sie auf **OK**.  
   
- Wenn Sie **Als Standard speichern** auswählen, wird in allen zukünftig geöffneten Spy\+\+\-Fenstern diese Schriftart verwendet.  
+ Auswählen von **als Standard speichern** führt dazu, dass alle zukünftigen Spy++ Windows diese Schriftart verwendet.  
   
-## Siehe auch  
- [Using Spy\+\+](../debugger/using-spy-increment.md)   
- [Spy\+\+ Views](../debugger/spy-increment-views.md)   
- [Spy\+\+ Reference](../debugger/spy-increment-reference.md)
+## <a name="see-also"></a>Siehe auch  
+ [Verwenden von Spy++](../debugger/using-spy-increment.md)   
+ [Spy++-Ansichten](../debugger/spy-increment-views.md)   
+ [Spy++-Referenz](../debugger/spy-increment-reference.md)

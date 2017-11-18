@@ -1,27 +1,30 @@
 ---
-title: "IDebugDocumentHelper::SetDefaultTextAttr | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugDocumentHelper::SetDefaultTextAttr | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugDocumentHelper.SetDefaultTextAttr
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugDocumentHelper::SetDefaultTextAttr"
+helpviewer_keywords: IDebugDocumentHelper::SetDefaultTextAttr
 ms.assetid: 019a4191-0019-4376-bf70-89b33e7369de
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 49b6da490e1eefe13ae21a9875952032585372f2
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugDocumentHelper::SetDefaultTextAttr
-Legt die Standardattribute fest, um für Text zu verwenden, der nicht in einem Skriptblock ist.  
+# <a name="idebugdocumenthelpersetdefaulttextattr"></a>IDebugDocumentHelper::SetDefaultTextAttr
+Legt die Standardattribute für Text verwenden, die nicht in einem Skriptblock enthalten ist.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT SetDefaultTextAttr(  
@@ -29,20 +32,20 @@ HRESULT SetDefaultTextAttr(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `staTextAttr`  
- Die Standardquelltextattribute.  
+ Die standardmäßige Quelle Textattribute.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
- Es sei denn, die Standardattribute so geändert werden, ist die Standardattribute für Text außerhalb eines Skriptblocks SOURCETEXT\_ATTR\_NONSOURCE.  Die Benutzeroberfläche kann diese Informationen verwenden, um Text außerhalb der Skriptblöcke zu markieren, als schreibgeschützt.  
+## <a name="remarks"></a>Hinweise  
+ Sofern die Standardattribute von dieser Methode nicht geändert werden, ist die Standardattribute für Text außerhalb eines Skriptblocks SOURCETEXT_ATTR_NONSOURCE. Diese Informationen können die Benutzeroberfläche um Text außerhalb Skriptblöcke als schreibgeschützt zu markieren.  
   
-## Siehe auch  
- [IDebugDocumentHelper\-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [SOURCE\_TEXT\_ATTR\-Enumeration](../../winscript/reference/source-text-attr-enumeration.md)
+## <a name="see-also"></a>Siehe auch  
+ [IDebugDocumentHelper-Schnittstelle](../../winscript/reference/idebugdocumenthelper-interface.md)   
+ [SOURCE_TEXT_ATTR-Enumeration](../../winscript/reference/source-text-attr-enumeration.md)

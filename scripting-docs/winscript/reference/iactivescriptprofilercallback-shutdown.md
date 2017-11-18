@@ -1,37 +1,41 @@
 ---
-title: "IActiveScriptProfilerCallback::Shutdown | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScriptProfilerCallback::Shutdown | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptProfilerCallback.Shutdown
 apilocation: scrobj.dll
 ms.assetid: 1281bf3c-d7d8-4ff5-9d8a-d1761fdb262e
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ec47cd5f581c36abb60b662983c6d806a4732f47
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptProfilerCallback::Shutdown
-Wird aufgerufen, um das Profilerobjekt, wenn die Profilerstellung zu informieren auf einem Skriptmodul beendet wird.  Auf diese Weise, das Profilerobjekt kann seine Bereinigungsroutinen aufrufen, nach Bedarf.  Diese Methode wird auch durch das Skriptmodul aufgerufen, wenn das Skriptmodul beendet wird oder wenn ein Aufruf [IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) fehlschlägt.  
+# <a name="iactivescriptprofilercallbackshutdown"></a>IActiveScriptProfilerCallback::Shutdown
+Wird aufgerufen, um das Profilerobjekt zu informieren, wenn für ein Skriptmodul der profilerstellung beenden. Auf diese Weise kann das Profilerobjekt seine Routinen Cleanup aufrufen, wenn erforderlich. Diese Methode wird auch vom Skriptmodul aufgerufen, wenn das Skriptmodul heruntergefahren wird oder wenn ein Aufruf von [IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) ein Fehler auftritt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT Shutdown(  
     [in] HRESULT hrReason);  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `hrReason`  
- \[in\] Der Grund für das Herunterfahren.  Wenn das Skriptmodul beendet wird, wird `S_OK` übergeben.  Wenn der Aufruf [IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) ein Fehler\-HRESULT zurückgibt, wird das HRESULT übergeben.  Andernfalls wird dieser Wert von [IActiveScriptProfilerControl::StopProfiling](../../winscript/reference/iactivescriptprofilercontrol-stopprofiling.md) abgerufen.  
+ [in] Der Grund für das Herunterfahren. Wenn das Skriptmodul heruntergefahren wird, `S_OK` übergeben wird. Wenn der Aufruf von [IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) gibt einen HRESULT-Fehler zurück, das HRESULT übergeben wird. Andernfalls wird dieser Wert abgerufen, von [IActiveScriptProfilerControl::StopProfiling](../../winscript/reference/iactivescriptprofilercontrol-stopprofiling.md).  
   
-## Rückgabewert  
- Der Rückgabewert dieser Methode wird durch das Skriptmodul ignoriert.  
+## <a name="return-value"></a>Rückgabewert  
+ Der Rückgabewert dieser Methode wird vom Skriptmodul ignoriert.  
   
-## Siehe auch  
- [IActiveScriptProfilerCallback\-Schnittstelle](../../winscript/reference/iactivescriptprofilercallback-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IActiveScriptProfilerCallback-Schnittstelle](../../winscript/reference/iactivescriptprofilercallback-interface.md)

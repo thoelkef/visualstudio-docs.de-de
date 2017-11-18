@@ -1,27 +1,30 @@
 ---
-title: "IRemoteDebugApplicationThread::EnumStackFrames | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IRemoteDebugApplicationThread::EnumStackFrames | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IRemoteDebugApplicationThread.EnumStackFrames
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IRemoteDebugApplicationThread::EnumStackFrames"
+helpviewer_keywords: IRemoteDebugApplicationThread::EnumStackFrames
 ms.assetid: 605ce83d-43d2-47ea-b066-ec8f0da50ca6
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9c754ce92a342163acc07b69c097af5df4c226cf
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IRemoteDebugApplicationThread::EnumStackFrames
-Gibt einen Enumerator für die Stapelrahmen zurück, die diesem Thread zugeordnet werden.  
+# <a name="iremotedebugapplicationthreadenumstackframes"></a>IRemoteDebugApplicationThread::EnumStackFrames
+Gibt einen Enumerator für Stapelrahmen diesem Thread zugeordnet.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT EnumStackFrames(  
@@ -29,19 +32,19 @@ HRESULT EnumStackFrames(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `ppedsf`  
- \[out\] Einen Enumerator für die Stapelrahmen zugeordnet mit diesem Thread.  
+ [out] Ein Enumerator für Stapelrahmen diesem Thread zugeordnet.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
- Diese Methode muss aus einem Haltepunkt aufgerufen werden.  Der Stapelrahmenenumerator sollte die Frames zurückgeben zuletzt beginnend am Anfang des Stapels, beginnend mit den gedrückten Frame.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode muss in einen Haltepunkt aus aufgerufen werden. Der Stack-Frame-Enumerator sollte die Frames, die beginnend am oberen Ende des Stapels zurück, beginnend mit der zuletzt abgelegte Frame.  
   
-## Siehe auch  
- [IRemoteDebugApplicationThread\-Schnittstelle](../../winscript/reference/iremotedebugapplicationthread-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IRemoteDebugApplicationThread-Schnittstelle](../../winscript/reference/iremotedebugapplicationthread-interface.md)

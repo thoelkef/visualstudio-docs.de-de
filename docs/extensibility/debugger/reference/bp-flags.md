@@ -1,71 +1,71 @@
 ---
-title: "BP_FLAGS | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "BP_FLAGS"
-helpviewer_keywords: 
-  - "BP_FLAGS-enumeration"
+title: BP_FLAGS | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: BP_FLAGS
+helpviewer_keywords: BP_FLAGS enumeration
 ms.assetid: c45dfc74-5e7f-4f1e-a147-ab2a55dccbd0
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 801ea6fb80c410b43fb8dd9c164e0c83a0f2ea8f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# BP_FLAGS
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Stellt optionale Flags bereit, die möglicherweise zusätzliche Informationen angeben, wenn Sie einen Haltepunkt festlegen.  
+# <a name="bpflags"></a>BP_FLAGS
+Bietet optionale Kennzeichen, die verwendet werden können, um zusätzliche Informationen angeben, wenn Sie einen Haltepunkt festlegen.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-enum enum_BP_FLAGS {   
-   BP_FLAG_NONE            = 0x0000,  
-   BP_FLAG_MAP_DOCPOSITION = 0x0001,  
-   BP_FLAG_DONT_STOP       = 0x0002  
+```cpp  
+enum enum_BP_FLAGS {   
+   BP_FLAG_NONE            = 0x0000,  
+   BP_FLAG_MAP_DOCPOSITION = 0x0001,  
+   BP_FLAG_DONT_STOP       = 0x0002  
 };  
 typedef DWORD BP_FLAGS;  
 ```  
   
-```c#  
-public enum enum_BP_FLAGS {   
-   BP_FLAG_NONE            = 0x0000,  
-   BP_FLAG_MAP_DOCPOSITION = 0x0001,  
-   BP_FLAG_DONT_STOP       = 0x0002  
+```csharp  
+public enum enum_BP_FLAGS {   
+   BP_FLAG_NONE            = 0x0000,  
+   BP_FLAG_MAP_DOCPOSITION = 0x0001,  
+   BP_FLAG_DONT_STOP       = 0x0002  
 };  
 ```  
   
-## Mitglieder  
- BP\_FLAG\_NONE  
- Gibt kein Haltepunkt flag an.  
+## <a name="members"></a>Member  
+ BP_FLAG_NONE  
+ Gibt kein Haltepunkt-Flag an.  
   
- BP\_FLAG\_MAP\_DOCPOSITION  
- Gibt an, dass das Debugmodul \(DE\) den Haltepunkt mit der Position der Dokumente zugeordnet werden soll.  Dies ist nur für Haltepunkte anwendbar, die in Skript\-ausgerichteten Quelldateien z. B. ASP \(Active Server Pages\) festgelegt werden.  
+ BP_FLAG_MAP_DOCPOSITION  
+ Gibt an, dass den Haltepunkt mithilfe der Dokumentposition Debugging-Modul (DE) zugeordnet werden sollen. Dies gilt nur für Haltepunkte in Skripts orientierten Quelldateien z. B. Active Server Pages (ASP).  
   
- \_STOPP BP\_FLAG\_DO NOT  
- Gibt an, dass der Haltepunkt vom Debugmodul verarbeitet werden soll, aber, dass das Debugmodul es letztlich nicht beendet werden soll \(das heißt ein [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)\-Ereignisobjekt nicht übermittelt werden soll\).  Dieses Flag ist hauptsächlich mit Ablaufverfolgungspunkten vorgesehen.  
+ BP_FLAG_DONT_STOP  
+ Gibt an, dass der Haltepunkt von Debugging-Modul verarbeitet werden sollen, aber das Debugmodul letztendlich nicht es beendet werden soll (d. h. eine [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) Ereignisobjekt nicht gesendet werden soll). Dieses Flag dient in erster Linie mit Ablaufverfolgungspunkten verwendet werden soll.  
   
-## Hinweise  
- Wird für den `dwFlags`\-Member der [BP\_REQUEST\_INFO](../../../extensibility/debugger/reference/bp-request-info.md) und [BP\_REQUEST\_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) Strukturen.  
+## <a name="remarks"></a>Hinweise  
+ Verwendet für die `dwFlags` Mitglied der [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) und [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) Strukturen.  
   
- Diese Werte können mit bitweisen `OR`kombiniert werden.  
+ Diese Werte können kombiniert werden, mit einem bitweisen `OR`.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [BP\_REQUEST\_INFO](../../../extensibility/debugger/reference/bp-request-info.md)   
- [BP\_REQUEST\_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)   
+ [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)   
+ [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)   
  [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)

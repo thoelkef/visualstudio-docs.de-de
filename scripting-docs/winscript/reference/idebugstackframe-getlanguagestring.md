@@ -1,27 +1,30 @@
 ---
-title: "IDebugStackFrame::GetLanguageString | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugStackFrame::GetLanguageString | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugStackFrame.GetLanguageString
 apilocation: jscript.dll
-helpviewer_keywords: 
-  - "IDebugStackFrame::GetLanguageString"
+helpviewer_keywords: IDebugStackFrame::GetLanguageString
 ms.assetid: 561d6306-f214-422f-abc9-b502cbfbe208
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 724ca98278eb8885d29aad1799f822ac57251597
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugStackFrame::GetLanguageString
-Gibt eine kurze oder lange Textbeschreibung der Sprache zurück.  
+# <a name="idebugstackframegetlanguagestring"></a>IDebugStackFrame::GetLanguageString
+Gibt eine kurze oder lange Text Beschreibung der Sprache zurück.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT GetLanguageString(  
@@ -30,22 +33,22 @@ HRESULT GetLanguageString(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `fLong`  
- \[in\] Gibt Flag, in dem `TRUE` eine lange Beschreibung und `FALSE` zurückgibt, eine kurze Beschreibung zurück.  
+ [in] Flag, wobei `TRUE` gibt eine lange Beschreibung und `FALSE` gibt eine kurze Beschreibung.  
   
  `pbstrLanguage`  
- \[out\] Die Beschreibung der Sprache.  
+ [out] Die Beschreibung der Sprache.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
- Normalerweise werden `fLong``FALSE` ist, gibt diese Methode nur den Namen der Sprache an, die dem Stapelrahmen zugeordnet ist.  Wenn `fLong``TRUE` ist, stellt diese Methode eine vollständige Produktbeschreibung bereit.  
+## <a name="remarks"></a>Hinweise  
+ In der Regel, wenn `fLong` ist `FALSE`, diese Methode bietet nur den Namen der Sprache, die dem Stapelrahmen zugeordnet. Wenn `fLong` ist `TRUE`, diese Methode kann eine vollständige produktbeschreibung bereitstellen.  
   
-## Siehe auch  
- [IDebugStackFrame\-Schnittstelle](../../winscript/reference/idebugstackframe-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IDebugStackFrame-Schnittstelle](../../winscript/reference/idebugstackframe-interface.md)

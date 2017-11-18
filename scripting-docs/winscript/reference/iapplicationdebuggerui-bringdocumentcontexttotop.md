@@ -1,27 +1,30 @@
 ---
-title: "IApplicationDebuggerUI::BringDocumentContextToTop | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IApplicationDebuggerUI::BringDocumentContextToTop | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IApplicationDebuggerUI.BringDocumentContextToTop
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IApplicationDebuggerUI::BringDocumentContextToTop"
+helpviewer_keywords: IApplicationDebuggerUI::BringDocumentContextToTop
 ms.assetid: 7844217d-658b-42af-8d10-2714f4eded20
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2fab017ab286957cf2c4be35832b1db877b339bd
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IApplicationDebuggerUI::BringDocumentContextToTop
-Setzt das Fenster, das den Kontext des bestimmten Dokuments zur oben in der Debuggerbenutzeroberfläche enthält und führt das Fenster den Kontext aus.  
+# <a name="iapplicationdebuggeruibringdocumentcontexttotop"></a>IApplicationDebuggerUI::BringDocumentContextToTop
+Schaltet das Fenster mit den angegebenen Dokumentenkontext in der Debugger-Benutzeroberfläche nach oben, und verschiebt das Fenster, um den Kontext.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT BringDocumentContextToTop(  
@@ -29,20 +32,20 @@ HRESULT BringDocumentContextToTop(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pddc`  
- \[in\] Dokumentieren Sie Kontext, um zur oben in der Debuggerbenutzeroberfläche einzubinden.  
+ [in] Dokumentkontext, in der Debugger-Benutzeroberfläche in den Vordergrund zu bringen.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
-|`E_INVALIDARG`|Der Kontext, der von `pddc` angegeben wird, ist nicht bekannt.|  
+|`E_INVALIDARG`|Durch angegebene Kontext `pddc` ist nicht bekannt.|  
   
-## Hinweise  
- Diese Methode wird das Fenster, das den Kontext des bestimmten Dokuments zur oben in der Debuggerbenutzeroberfläche enthält und führt das Fenster den Kontext aus.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode bringt das Fenster mit den angegebenen Dokumentenkontext oben in der Debugger-Benutzeroberfläche und verschiebt das Fenster, um den Kontext.  
   
-## Siehe auch  
- [IApplicationDebuggerUI\-Schnittstelle](../../winscript/reference/iapplicationdebuggerui-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IApplicationDebuggerUI-Schnittstelle](../../winscript/reference/iapplicationdebuggerui-interface.md)

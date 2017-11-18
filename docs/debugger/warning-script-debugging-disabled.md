@@ -1,43 +1,43 @@
 ---
-title: "Warnung: Skriptdebuggen deaktiviert | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.scriptdisabled"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
+title: 'Warnung: Skript Skriptdebuggen deaktiviert | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.scriptdisabled
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
 ms.assetid: 323d2b1d-52a4-42f7-b4ad-96b4b0c23b8d
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: baa19209af40067c4b362b88ec0c0812b80e64ad
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Warnung: Skriptdebuggen deaktiviert
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="warning-script-debugging-disabled"></a>Warnung: Skriptdebuggen deaktiviert
 Skriptdebuggen ist in Internet Explorer derzeit deaktiviert  
   
- Diese Warnung wird ausgegeben, wenn Sie versuchen, Skripts zu debuggen, ohne dass Skriptdebuggen in Internet Explorer aktiviert ist.  Das Skriptdebuggen ist in Internet Explorer aus Sicherheitsgründen standardmäßig deaktiviert.  
+ Diese Warnung wird ausgegeben, wenn Sie versuchen, Skripts zu debuggen, ohne dass Skriptdebuggen in Internet Explorer aktiviert ist. Das Skriptdebuggen ist in Internet Explorer aus Sicherheitsgründen standardmäßig deaktiviert.  
   
-### So aktivieren Sie das Skriptdebuggen in Internet Explorer  
+### <a name="to-enable-script-debugging-in-internet-explorer"></a>So aktivieren Sie das Skriptdebuggen in Internet Explorer  
   
-1.  Wählen Sie in Internet Explorer im Menü **Extras** die Option **Internetoptionen** aus.  
+1.  Internet Explorer **Tools** Menü wählen **Internetoptionen**.  
   
-2.  Klicken Sie im Dialogfeld **Internetoptionen** auf die Registerkarte **Erweitert**.  
+2.  In der **Internetoptionen** (Dialogfeld), klicken Sie auf die **erweitert** Registerkarte.  
   
-3.  Zeigen Sie auf der Registerkarte **Erweitert** unter der Kategorie **Browsen** das Feld **Einstellungen** an.  
+3.  Auf der **erweitert** Registerkarte, suchen Sie der **Einstellungen** Feld **Browsen** Kategorie.  
   
-4.  Deaktivieren Sie **Skriptdebugging deaktivieren \(Internet Explorer\)**.  
+4.  Clear **Skriptdebugging deaktivieren (Internet Explorer)**.  
   
 5.  Klicken Sie auf **OK**.  
   
@@ -45,5 +45,5 @@ Skriptdebuggen ist in Internet Explorer derzeit deaktiviert
   
      Die neuen Einstellungen sind jetzt wirksam.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Gewusst wie: Anfügen an ein Skript](../debugger/how-to-attach-to-script.md)

@@ -1,63 +1,63 @@
 ---
-title: "IDebugDocumentContext2::GetStatementRange | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDocumentContext2::GetStatementRange"
-helpviewer_keywords: 
-  - "IDebugDocumentContext2::GetStatementRange"
+title: IDebugDocumentContext2::GetStatementRange | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugDocumentContext2::GetStatementRange
+helpviewer_keywords: IDebugDocumentContext2::GetStatementRange
 ms.assetid: bc94851a-0ec4-47ea-99c7-0a585e54e726
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 503b6cb2f9242d2d73ddfbcf14e89be7ec4528ab
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugDocumentContext2::GetStatementRange
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft den Bereich für Datei kontexts Dokumente ab oder legt diese fest.  
+# <a name="idebugdocumentcontext2getstatementrange"></a>IDebugDocumentContext2::GetStatementRange
+Ruft den Datei-Anweisung Bereich der Dokumentenkontext ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetStatementRange(   
-   TEXT_POSITION* pBegPosition,  
-   TEXT_POSITION* pEndPosition  
+```cpp  
+HRESULT GetStatementRange(   
+   TEXT_POSITION* pBegPosition,  
+   TEXT_POSITION* pEndPosition  
 );  
 ```  
   
-```c#  
-int GetStatementRange(   
-   TEXT_POSITION[] pBegPosition,  
-   TEXT_POSITION[] pEndPosition  
+```csharp  
+int GetStatementRange(   
+   TEXT_POSITION[] pBegPosition,  
+   TEXT_POSITION[] pEndPosition  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pBegPosition`  
- \[in, out\]  Eine [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md) Struktur, die mit der Anfangsposition gefüllt wird.  Legen Sie dieses Argument mit einem NULL\-Wert fest, wenn diese Informationen nicht benötigt werden.  
+ [in, out] Ein [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) -Struktur, die mit der Startposition ausgefüllt ist. Legen Sie dieses Argument auf einen null-Wert, wenn diese Informationen nicht benötigt wird.  
   
  `pEndPosition`  
- \[in, out\]  Eine [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md) Struktur, die mit der Endposition gefüllt wird.  Legen Sie dieses Argument mit einem NULL\-Wert fest, wenn diese Informationen nicht benötigt werden.  
+ [in, out] Ein [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) -Struktur, die mit der Endposition ausgefüllt ist. Legen Sie dieses Argument auf einen null-Wert, wenn diese Informationen nicht benötigt wird.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Ein Bereich ist der Bereich der Anweisung Zeilen mit dem Code einbezogen wurden, an den dieser Dokumentenkontext verweist.  
+## <a name="remarks"></a>Hinweise  
+ Ein Anweisung Bereich ist der Bereich der Zeilen, die den Code beigetragen haben, auf dem diesem Dokumentenkontext verweist.  
   
- Zum Abrufen der Bereich des Quellcodes \(z. B. Kommentare\) innerhalb von Dokumenten, rufen Sie die [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)\-Methode auf.  
+ Um den Bereich des Quellcodes (einschließlich Kommentare) innerhalb dieses Kontexts Dokument abzurufen, rufen die [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md) Methode.  
   
-## Beispiel  
- Im folgenden Beispiel wird veranschaulicht, wie diese Methode für ein einfaches `CDebugContext`\-Objekt implementiert, das die [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)\-Schnittstelle verfügbar macht.  In diesem Beispiel wird die Endposition nur ausgeführt, wenn die Anfangsposition kein NULL\-Wert ist.  
+## <a name="example"></a>Beispiel  
+ Im folgende Beispiel wird gezeigt, wie diese Methode für eine einfache implementiert `CDebugContext` -Objekt, das macht die [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) Schnittstelle. In diesem Beispiel füllt die Endposition nur, wenn die Anfangsposition keinen null-Wert ist.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugContext::GetStatementRange(TEXT_POSITION* pBegPosition,  
                                          TEXT_POSITION* pEndPosition)    
 {    
@@ -86,7 +86,7 @@ HRESULT CDebugContext::GetStatementRange(TEXT_POSITION* pBegPosition,
 }    
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
  [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)   
- [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md)
+ [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

@@ -1,27 +1,30 @@
 ---
-title: "IScriptScriptlet:: GetSimpleEventName | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: 'IScriptScriptlet:: GetSimpleEventName | Microsoft Docs'
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IScriptScriptlet. GetSimpleEventName
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IScriptScriptlet::GetSimpleEventName"
+helpviewer_keywords: IScriptScriptlet::GetSimpleEventName
 ms.assetid: 012eb555-b26c-4248-bbcc-fc30e6f2b308
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2ec90d2ebdf58f60ba88b90a38830b5df329dead
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IScriptScriptlet:: GetSimpleEventName
-Gibt den einfachen Ereignisnamen zurück, der mit einem Skriptlet zugeordnet ist.  Dies ist ein Einwortname, der keine Leerzeichen enthält.  
+# <a name="iscriptscriptlet-getsimpleeventname"></a>IScriptScriptlet:: GetSimpleEventName
+Gibt den einfachen Ereignisname, der eine Scriptlet zugeordnet ist. Dies ist ein einzelnes Wort, der keine Leerzeichen enthalten.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT GetSimpleEventName(  
@@ -29,18 +32,18 @@ HRESULT GetSimpleEventName(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pbstr`  
- \[out\] Ein Puffer, der den einfachen Ereignisnamen enthält, der mit dem `IScriptScriptlet`\-Objekt zugeordnet ist.  
+ [out] Ein Puffer, der den einfachen Namen, die enthält mit zugeordnetem der `IScriptScriptlet` Objekt.  
   
-## Rückgabewert  
- Ein `HRESULT`.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
   
-## Siehe auch  
- [IScriptScriptlet\-Schnittstelle](../../winscript/reference/iscriptscriptlet-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IScriptScriptlet-Schnittstelle](../../winscript/reference/iscriptscriptlet-interface.md)

@@ -1,49 +1,49 @@
 ---
-title: "Registerkarte &quot;Fenster&quot;, Dialogfeld &quot;Meldungsoptionen&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Meldungsoptionen, Windows"
+title: Registerkarte "Fenster", Optionsdialogfeld | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: message options, Windows
 ms.assetid: 6e9cc5ca-24cc-49cf-aa22-c89733828f8c
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5213791f2accb83c08a7f8270f6fe920f59cd5a4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Registerkarte &quot;Fenster&quot;, Dialogfeld &quot;Meldungsoptionen&quot;
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Verwenden Sie die Registerkarte **Fenster**, um den Bereich der in der [Meldungsansicht](../debugger/messages-view.md) aufgeführten Meldungen festzulegen.  Klicken Sie im Menü **Spy** auf **Meldungen protokollieren**, um das Dialogfeld [Meldungsoptionen](../debugger/message-options-dialog-box.md) anzuzeigen.  
+# <a name="windows-tab-message-options-dialog-box"></a>Registerkarte "Fenster", Dialogfeld "Meldungsoptionen"
+Verwenden der **Windows** Registerkarte beim Festlegen des Bereichs der Nachrichten in aufgeführten [Ansicht "Nachrichten"](../debugger/messages-view.md). Zum Anzeigen der [Nachricht Optionen (Dialogfeld)](../debugger/message-options-dialog-box.md), wählen Sie **Protokollmeldungen** aus der **Spy++** Menü.  
   
- Auf der Registerkarte **Fenster** sind die folgenden Einstellungen verfügbar:  
+ Die folgenden Einstellungen sind verfügbar, auf die **Windows** Registerkarte:  
   
- **Suchtool**  
- Das zum Auswählen eines Fensters verwendete Drag & Drop\-Tool.  
+ **Suchtools**  
+ Die Drag & Drop-Tool verwendet, um ein Fenster auszuwählen.  
   
- **Spy\+\+ ausblenden**  
- Entfernt das Spy\+\+\-Hauptfenster, und das Dialogfeld **Meldungsoptionen** bleibt über den anderen Anwendungen sichtbar.  
+ **Ausblenden von Spy++**  
+ Entfernt das Hauptfenster Spy++ und behält die **MessageOptions** (Dialogfeld), die zusätzlich zu anderen Anwendungen sichtbar.  
   
  **Übergeordnetes Fenster**  
- Zeigt Meldungen für das ausgewählte Fenster und das unmittelbar übergeordnete Fenster an.  
+ Meldungen für das ausgewählte Fenster und seinem unmittelbar übergeordneten Fenster angezeigt werden.  
   
  **Untergeordnete Fenster**  
- Zeigt Meldungen für das ausgewählte Fenster und alle untergeordneten Fenster, einschließlich geschachtelter untergeordneter Fenster, an.  
+ Meldungen für das ausgewählte Fenster und alle zugehörigen untergeordneten-Fenster, einschließlich geschachtelte untergeordnete Fenster angezeigt werden.  
   
- **Fenster des gleichen Threads**  
- Zeigt Meldungen für das ausgewählte Fenster und alle anderen Fenster im Besitz des gleichen Threads an.  
+ **Windows von demselben Thread**  
+ Meldungen für das ausgewählte Fenster und anderen Fenstern, die im Besitz von dem gleichen Thread angezeigt werden.  
   
  **Fenster des gleichen Prozesses**  
- Zeigt Meldungen für das ausgewählte Fenster und alle anderen Fenster im Besitz des gleichen Prozesses an.  
+ Für das ausgewählte Fenster und alle anderen Fenstern, die im Besitz desselben Prozesses Meldungen angezeigt werden.  
   
  **Alle Fenster im System**  
- Zeigt Meldungen für alle Fenster an.  
+ Meldungen für alle Fenster angezeigt werden.  
   
- **Als Voreinstellung speichern**  
- Speichert die vorangehenden Einstellungen für neue Meldungsstreamfenster.  Diese Einstellungen werden auch beim Beenden von Spy\+\+ gespeichert.
+ **Einstellungen als Standard speichern**  
+ Speichern Sie die vorherigen Einstellungen für neue Fenster des Nachrichten-Datenstrom. Diese Einstellungen werden beim Beenden von Spy++-ebenfalls gespeichert.

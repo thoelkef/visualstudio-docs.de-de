@@ -1,54 +1,54 @@
 ---
-title: "IDebugProcess2::GetName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProcess2::GetName"
-helpviewer_keywords: 
-  - "IDebugProcess2::GetName"
+title: IDebugProcess2::GetName | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProcess2::GetName
+helpviewer_keywords: IDebugProcess2::GetName
 ms.assetid: a2f66ab5-53e5-4cdc-a1b5-3b8afa8ee646
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 7d8382cf5e356725f5ca50348d422290b4363c35
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProcess2::GetName
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft den Titel des Anzeigenamens, oder der Dateiname des Prozesses ab.  
+# <a name="idebugprocess2getname"></a>IDebugProcess2::GetName
+Ruft den Titel, den Anzeigenamen oder den Dateinamen des Prozesses an.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetName(   
-   GETNAME_TYPE  gnType,  
-   BSTR*         pbstrName  
+```cpp  
+HRESULT GetName(   
+   GETNAME_TYPE  gnType,  
+   BSTR*         pbstrName  
 );  
 ```  
   
-```c#  
-int GetName(   
-   enum_GETNAME_TYPE  gnType,  
-   out string         pbstrName  
+```csharp  
+int GetName(   
+   enum_GETNAME_TYPE  gnType,  
+   out string         pbstrName  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `gnType`  
- \[in\]  Ein Wert aus der [GETNAME\_TYPE](../../../extensibility/debugger/reference/getname-type.md)\-Enumeration, die angibt, welcher Typ des Namens, das zurückgegeben werden soll.  
+ [in] Ein Wert aus der [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) Enumeration, der angibt, welche Art von Namen zurückgegeben.  
   
  `pbstrName`  
- \[out\]  Gibt den Namen des Prozesses zurück.  
+ [out] Gibt den Namen des Prozesses zurück.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
- [GETNAME\_TYPE](../../../extensibility/debugger/reference/getname-type.md)
+ [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)

@@ -1,34 +1,35 @@
 ---
-title: "How to: Control Messages View | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Spy++, Messages View"
-  - "Messages view, controlling"
+title: 'Vorgehensweise: Steuern der Meldungsansicht | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Spy++, Messages View
+- Messages view, controlling
 ms.assetid: 32685ab2-6c5b-41fc-b429-29260caef585
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2b3d3e56a99c7ab688910c956538a9c38c67becc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# How to: Control Messages View
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Mit Spy\+\+ können Sie den Inhalt eines [Meldungsansichtsfensters](../debugger/messages-view.md) in beträchtlichem Umfang steuern.  Sie können das Anzeigen der Meldungen jederzeit [starten und beenden](../debugger/how-to-start-and-stop-the-message-log-display.md), und Sie können Folgendes angeben:  
+# <a name="how-to-control-messages-view"></a>Gewusst wie: Steuern der Meldungsansicht
+Mit Spy++, haben Sie erhebliche Kontrolle über den Inhalt einer [Ansicht "Nachrichten"](../debugger/messages-view.md) Fenster. Sie können [starten und beenden](../debugger/how-to-start-and-stop-the-message-log-display.md) Anzeigen von Nachrichten an einem beliebigen Zeitpunkt, und Sie können angeben:  
   
--   Welche Meldungstypen angezeigt werden sollen.  
+-   Welche Nachrichtentypen, die Sie anzeigen möchten.  
   
--   Welche Fenster überwacht werden sollen.  
+-   Welche Windows, die Sie überwachen möchten.  
   
--   Das Anzeigeformat für Meldungszeilen.  
+-   Das Anzeigeformat für Nachricht Zeilen.  
   
- Diese Einstellungen sind im Dialogfeld [Meldungsoptionen](../debugger/message-options-dialog-box.md) verfügbar, und sie gelten nur für das aktive [Meldungsansichtsfenster](../debugger/messages-view.md).  Um dieses Dialogfeld zu öffnen, wählen Sie **Meldungen protokollieren** im Menü **Spy** aus.  
+ Diese Einstellungen sind verfügbar, von der [Nachricht Optionen (Dialogfeld)](../debugger/message-options-dialog-box.md), und sie gelten nur für den aktiven [Ansicht "Nachrichten"](../debugger/messages-view.md) Fenster. Wählen Sie zum Öffnen dieses Dialogfelds **Protokollmeldungen** aus der **Spy++** Menü.  
   
- Es sind drei Seiten im Registerkartenformat mit Meldungsoptionen verfügbar.  Weitere Informationen finden Sie unter [Registerkarte "Fenster", Dialogfeld "Meldungsoptionen"](../debugger/windows-tab-message-options-dialog-box.md), [Registerkarte "Meldungen", Dialogfeld "Meldungsoptionen"](../debugger/messages-tab-message-options-dialog-box.md) und [Registerkarte "Ausgabe", Dialogfeld "Meldungsoptionen"](../debugger/output-tab-message-options-dialog-box.md).
+ Es sind drei Bereiche im Registerkartenformat Meldungsoptionen verfügbar. Weitere Informationen finden Sie unter [Registerkarte "Fenster", Dialogfeld Optionen](../debugger/windows-tab-message-options-dialog-box.md), [Registerkarte "Meldungen", Dialogfeld Optionen](../debugger/messages-tab-message-options-dialog-box.md), und [Registerkarte "Ausgabe", Dialogfeld Optionen](../debugger/output-tab-message-options-dialog-box.md).

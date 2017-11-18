@@ -1,59 +1,58 @@
 ---
-title: "IDiaStackWalker::getEnumFrames2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaStackWalker2::getEnumFrames2-Methode"
+title: IDiaStackWalker::getEnumFrames2 | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaStackWalker2::getEnumFrames2 method
 ms.assetid: 73196d3f-112c-4b3a-997b-7c6b815d4afc
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fac3dc85542ecf5f86eb40be111533ee5e5a4211
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaStackWalker::getEnumFrames2
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft einen Stapelrahmen enumerator für einen bestimmten Plattform des Arrays ab.  
+# <a name="idiastackwalkergetenumframes2"></a>IDiaStackWalker::getEnumFrames2
+Ruft eine Stack-Frame-Enumerator für eine bestimmte Plattform-Typ ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```C++  
   
-      HRESULT getEnumFrames2(   
-   enum  CV_CPU_TYPE_e    cpuid,  
-   IDiaStackWalkHelper*   pHelper,  
-   IDiaEnumStackFrames**  ppEnum  
+      HRESULT getEnumFrames2(   
+   enum  CV_CPU_TYPE_e    cpuid,  
+   IDiaStackWalkHelper*   pHelper,  
+   IDiaEnumStackFrames**  ppEnum  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `cpuid`  
- \[in\]  Ein Wert aus der Enumeration, [CV\_CPU\_TYPE\_e Enumeration](../../debugger/debug-interface-access/cv-cpu-type-e.md) den Typ der Plattform angibt.  
+ [in] Ein Wert aus der [CV_CPU_TYPE_e-Enumeration](../../debugger/debug-interface-access/cv-cpu-type-e.md) Enumeration, die den Plattformtyp angeben.  
   
  `pHelper`  
- \[in\]  Das Hilfe [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)\-Objekt.  
+ [in] Das Hilfsobjekt [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) Objekt.  
   
  `ppEnum`  
- \[out\]  Gibt ein [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)\-Objekt zurück, das eine Liste von [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)\-Objekten enthält.  
+ [out] Gibt eine [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) mit einer Liste von Objekt [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) Objekte.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Zum Abrufen einer Liste der Stapelrahmen für nur die x86\-Plattform, rufen Sie die [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)\-Methode auf.  
+## <a name="remarks"></a>Hinweise  
+ Eine Liste der Stapel Frame nur die X86 abrufen Plattform, rufen die [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) Methode.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaStackWalker](../../debugger/debug-interface-access/idiastackwalker.md)   
- [CV\_CPU\_TYPE\_e Enumeration](../../debugger/debug-interface-access/cv-cpu-type-e.md)   
+ [CV_CPU_TYPE_e-Enumeration](../../debugger/debug-interface-access/cv-cpu-type-e.md)   
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)   
  [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)

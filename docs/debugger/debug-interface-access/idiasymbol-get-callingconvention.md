@@ -1,54 +1,53 @@
 ---
-title: "IDiaSymbol::get_callingConvention | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_callingConvention-Methode"
+title: 'Idiasymbol:: Get_callingconvention | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_callingConvention method
 ms.assetid: 355d3877-b6b6-45fd-a1d8-baed428d8f96
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d44002f239c42635b154b574bfbd580b809107b5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_callingConvention
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Gibt einen Indikator einer Methode aufrufkonvention zurück.  
+# <a name="idiasymbolgetcallingconvention"></a>IDiaSymbol::get_callingConvention
+Gibt einen Indikator für eine Aufrufkonvention Methoden zurück.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT get_callingConvention (   
-   DWORD* pRetVal  
+```C++  
+HRESULT get_callingConvention (   
+   DWORD* pRetVal  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pRetVal`  
- \[out\]  Gibt einen Wert aus der [CV\_call\_e\-Enumeration](../../debugger/debug-interface-access/cv-call-e.md)\-Enumeration zurück, die die Aufrufkonvention der Methode angibt.  
+ [out] Gibt einen Wert aus der [CV_call_e-Enumeration](../../debugger/debug-interface-access/cv-call-e.md) -Enumeration, der eine Methode gibt die Aufrufkonvention.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt `S_FALSE` oder einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
+>  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft ist nicht verfügbar für das Symbol.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
   
 |Anforderung|Beschreibung|  
-|-----------------|------------------|  
+|-----------------|-----------------|  
 |Header:|dia2.h|  
-|Version:|DIA SDK v7.0|  
+|Version:|DIA-SDK Version 7.0|  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [CV\_call\_e\-Enumeration](../../debugger/debug-interface-access/cv-call-e.md)
+ [CV_call_e-Enumeration](../../debugger/debug-interface-access/cv-call-e.md)

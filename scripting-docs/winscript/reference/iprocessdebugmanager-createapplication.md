@@ -1,27 +1,30 @@
 ---
-title: "IProcessDebugManager::CreateApplication | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IProcessDebugManager::CreateApplication | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IProcessDebugManager.CreateApplication
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IProcessDebugManager::CreateApplication"
+helpviewer_keywords: IProcessDebugManager::CreateApplication
 ms.assetid: d6b646f2-8af0-445c-ae7e-a9772042b3a1
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a051462f32acae238ca5843e283fe6001ec43fc1
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IProcessDebugManager::CreateApplication
-Erstellt ein neues Debug\- Anwendungsobjekt für diese Anwendung.  
+# <a name="iprocessdebugmanagercreateapplication"></a>IProcessDebugManager::CreateApplication
+Erstellt ein neues Objekt der Debug-Anwendung für diese Anwendung an.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT CreateApplication(  
@@ -29,20 +32,20 @@ HRESULT CreateApplication(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `ppda`  
- \[out\] Die Debug\- Anwendungsobjekt für diese Anwendung.  
+ [out] Das Debug-Application-Objekt für diese Anwendung.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
- Das Objekt, das ein erstellt wird, hat keinen Namen und wird nicht zur Liste der laufenden Anwendung hinzugefügt.  Verwenden Sie `IProcessDebugManager::AddApplication`, um die MFC\-Debugbuilds der Anwendung Anwendungsliste hinzuzufügen.  
+## <a name="remarks"></a>Hinweise  
+ Das von dieser Methode erstellte Objekt hat keinen Namen und nicht mit der Ausführung hinzugefügt Anwendungsliste. Verwenden der `IProcessDebugManager::AddApplication` die Debuganwendung, die Liste der Anwendungen hinzufügen.  
   
-## Siehe auch  
- [IProcessDebugManager\-Schnittstelle](../../winscript/reference/iprocessdebugmanager-interface.md)   
+## <a name="see-also"></a>Siehe auch  
+ [IProcessDebugManager-Schnittstelle](../../winscript/reference/iprocessdebugmanager-interface.md)   
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

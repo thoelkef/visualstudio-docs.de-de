@@ -1,58 +1,58 @@
 ---
-title: "IDebugDocumentText2::GetSize | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDocumentText2::GetSize"
-helpviewer_keywords: 
-  - "IDebugDocumentText2::GetSize"
+title: IDebugDocumentText2::GetSize | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugDocumentText2::GetSize
+helpviewer_keywords: IDebugDocumentText2::GetSize
 ms.assetid: bf515a8f-dcee-4004-8f81-543d547ceaae
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 25bf0a7c570c2c11e09c9e6d98d1f4be05d7adb5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugDocumentText2::GetSize
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugdocumenttext2getsize"></a>IDebugDocumentText2::GetSize
 Ruft die Größe des Texts an dieser Position im Dokument ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetSize(   
-   ULONG* pcNumLines,  
-   ULONG* pcNumChars  
+```cpp  
+HRESULT GetSize(   
+   ULONG* pcNumLines,  
+   ULONG* pcNumChars  
 );  
 ```  
   
-```c#  
-int GetSize(   
-   ref uint pcNumLines,  
-   ref uint pcNumChars  
+```csharp  
+int GetSize(   
+   ref uint pcNumLines,  
+   ref uint pcNumChars  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pcNumLines`  
- \[out\]  Gibt die Anzahl von Textzeilen zurückgegeben.  
+ [out] Gibt die Anzahl der Textzeilen zurück.  
   
  `pcNumChars`  
- \[out\]  Gibt die Anzahl der Zeichen des Texts zurück.  
+ [out] Gibt die Anzahl der Zeichen des Texts zurück.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- \[C\+\+\] Es wenn ein bestimmter Wert nicht erwünscht ist, führen Sie NULL für den Parameter.  
+## <a name="remarks"></a>Hinweise  
+ [Nur C++] Wenn Sie ein bestimmter Wert nicht erwünscht ist, übergeben Sie NULL für den Parameter an.  
   
- \[Nur C\#\] müssen beide Parameter angegeben werden.  
+ [C#] Beide Parameter müssen angegeben werden.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)

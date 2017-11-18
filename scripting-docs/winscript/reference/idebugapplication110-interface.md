@@ -1,32 +1,35 @@
 ---
-title: "IDebugApplication110-Schnittstelle | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "IDebugApplication110-Schnittstelle"
+title: IDebugApplication110-Schnittstelle | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords: IDebugApplication110 Interface
 ms.assetid: ae943133-eb65-4ddc-a29f-9280a82dd8d6
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: cd7c283e925db5b42b4d04bfc42ea087ecc22b6f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugApplication110-Schnittstelle
-Die `IDebugApplication110`\-Schnittstelle erweitert die Funktionalität [IDebugApplication\-Schnittstelle](../../winscript/reference/idebugapplication-interface.md).  Sie können eine Instanz dieser Schnittstelle abrufen, indem Sie entweder QueryInterface auf einer Implementierung von [IDebugApplication\-Schnittstelle](../../winscript/reference/idebugapplication-interface.md) aufrufen.  
+# <a name="idebugapplication110-interface"></a>IDebugApplication110-Schnittstelle
+Die `IDebugApplication110` -Schnittstelle erweitert die Funktionalität der [IDebugApplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md). Sie erhalten eine Instanz dieser Schnittstelle durch den Aufruf von QueryInterface bei der Implementierung der [IDebugApplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md).  
   
 > [!IMPORTANT]
->  Diese Schnittstelle wird von PDM v11.0 und höher implementiert.  Fundumgebung activdbg100.h.  
+>  Diese Schnittstelle wird von PDM v11.0 und höher implementiert. Gefunden in activdbg100.h.  
   
-## Methoden  
- Die `IDebugApplication110`\-Schnittstelle macht die folgenden Methoden verfügbar:  
+## <a name="methods"></a>Methoden  
+ Die `IDebugApplication110`-Schnittstelle macht die folgenden Methoden verfügbar:  
   
-|Methode|Description|  
-|-------------|-----------------|  
-|[IDebugApplication110::SynchronousCallInMainThread](../../winscript/reference/idebugapplication110-synchronouscallinmainthread.md)|Führt einen synchronen Aufruf im Hauptausführungsthread auf.|  
-|[IDebugApplication110::AsynchronousCallInMainThread](../../winscript/reference/idebugapplication110-asynchronouscallinmainthread.md)|Führt einen asynchronen Aufruf im Hauptausführungsthread auf.|  
-|[IDebugApplication110::CallableWaitForHandles](../../winscript/reference/idebugapplication110-callablewaitforhandles.md)|Wartung eines der angegebenen Handles beim Ermöglichen des den threadübergreifenden zu diesem Thread zu sendende Aufrufen signalisiert wird.  Diese Methode muss vom Debuggerthread aufgerufen werden.|
+|Methode|Beschreibung|  
+|------------|-----------------|  
+|[IDebugApplication110::SynchronousCallInMainThread](../../winscript/reference/idebugapplication110-synchronouscallinmainthread.md)|Stellt einen synchronen Aufruf im Hauptthread an.|  
+|[IDebugApplication110::AsynchronousCallInMainThread](../../winscript/reference/idebugapplication110-asynchronouscallinmainthread.md)|Stellt einen asynchronen Aufruf im Hauptthread an.|  
+|[IDebugApplication110::CallableWaitForHandles](../../winscript/reference/idebugapplication110-callablewaitforhandles.md)|Wartet, bis eines der angegebenen Handles signalisiert wird, während gleichzeitig threadübergreifende Aufrufe an diesen Thread bereitgestellt werden. Diese Methode muss von dem Debuggerthread aufgerufen werden.|

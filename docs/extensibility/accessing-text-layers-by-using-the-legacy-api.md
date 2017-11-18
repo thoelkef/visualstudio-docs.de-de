@@ -1,52 +1,53 @@
 ---
-title: "Zugreifen auf Textebenen mithilfe der Legacy-API | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Editoren [Visual Studio SDK] legacy - Textebenen"
+title: "Zugreifen auf Textebenen über die Legacy-API | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], legacy - text layers
 ms.assetid: 2258fcdd-38d1-479d-b8f8-1d4e6525f72c
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 54a981a57605ccb93062ac0678b1e8b5673c6d1a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Zugreifen auf Textebenen mithilfe der Legacy-API
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Eine Text der Ebene kapselt normalerweise alle Aspekte der Textlayouts.  Zum Beispiel simsen Felle einer „FUNCTION\-an\-ein TIMEs“ Ebene vor und nach einer Funktion, die die Einfügemarke enthält \(Texteinfügemarke\).  
+# <a name="accessing-text-layers-by-using-the-legacy-api"></a>Zugreifen auf Textebenen über die Legacy-API
+Eine Ebene kapselt normalerweise einige Aspekte der TextLayout. Eine Ebene "-Funktion-am-a-Time" Blendet z. B. Text, vor und nach einer Funktion, die das Caretzeichen (Texteinfügemarke) enthält.  
   
- Eine Text der Ebene befindet sich zwischen einem Puffer und einer Ansicht und ändert die Art und Weise die Ansicht der Inhalt des Puffers anzuzeigen.  
+ Eine Ebene zwischen einen Puffer und einer Ansicht befindet, und ändert die Möglichkeit, die die Sicht der Pufferinhalt angezeigt.  
   
-## Text\-Ebenen\-Informationen  
- In der folgenden Liste wird beschrieben, wie Text in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Ebenen arbeiten:  
+## <a name="text-layer-information"></a>Textinformationen-Ebene  
+ Die folgende Liste beschreibt die Funktionsweise von Ebenen [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]:  
   
--   Der Text in a Text der Ebene kann mit Markern und Syntaxfarbe verziert werden.  
+-   Der Text in einem Textebene kann mit Syntaxfarben und Marker gestaltet werden.  
   
--   Sie können nicht nur implementieren, Ebenen verfügen.  
+-   Sie dürfen keine eigene Ebenen derzeit implementieren.  
   
--   Eine Ebene verfügbar macht <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>, die von <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>abgeleitet ist.  Der Textpuffer selbst wird auch als Stufe implementiert, die eine Ansicht ermöglicht, polymorphically zugrunde liegenden Ebenen zu arbeiten.  
+-   Stellt eine Ebene <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>, abgeleitet aus <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>. Die Textpuffer selbst wird auch als eine Schicht implementiert, dadurch kann eine Ansicht, um die darunter liegenden Ebenen polymorph zu verarbeiten.  
   
--   Beliebige Anzahl von Ebenen befindet sich zwischen der Ansicht und dem Puffer.  Jede Ebene behandelt nur die Ebene unterhalb sie, und die Ansicht verarbeitet größtenteils die oberste Ebene.  \(Die Ansicht enthält einige Informationen über den Puffer.\)  
+-   Zwischen der Ansicht und der Puffer kann eine beliebige Anzahl von Ebenen liegen. Jede Ebene betrifft nur die Ebene darunter, und die Ansicht befasst sich größtenteils mit der obersten Ebene. Einige Informationen über den Puffer (es ist erforderlich.)  
   
--   Eine Ebene kann nur Ebenen auswirken, die unter sie sind.  Es kann die Ebenen darüber über das Auslösen von Ereignissen Standard nicht hinaus auswirken.  
+-   Eine Ebene kann nur Ebenen auswirken, die darunter liegenden sind. Sie haben keine Auswirkungen der darüber liegenden Ebenen hinter Standardereignissen Ursprung auf.  
   
--   Im Editor wird ausgeblendeter Text, synthetischer Text und Zeilenvorschub als Ebenen implementiert.  Sie können auch ausgeblendeter Text synthetischen implementieren, ohne direkt mit den Ebenen zu interagieren.  Weitere Informationen finden Sie unter [Gliederung im ein Legacy\-Sprachdienst](../extensibility/internals/outlining-in-a-legacy-language-service.md) und <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSyntheticTextSession>.  
+-   Im Editor werden ausgeblendetem Text, synthetischen Text und Zeilenumbruch als Ebenen implementiert. Sie können ausgeblendete und synthetische Text implementieren, ohne direkte Interaktion mit den Ebenen. Weitere Informationen finden Sie unter [Gliederung im ein Legacy-Sprachdienst](../extensibility/internals/outlining-in-a-legacy-language-service.md) und <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSyntheticTextSession>.  
   
--   Jede Text Anwendungsebene hat ein eigenes lokales Koordinatensystem, das von der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>\-Schnittstelle verfügbar gemacht wird.  Die Zeile Umbruch Ebene könnte beispielsweise zwei Zeilen, während der zugrunde liegenden Textpuffer möglicherweise nur eine Zeile enthält.  
+-   Jede Ebene weist ein eigenen lokale Koordinatensystem, die durch verfügbar gemacht wird die <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer> Schnittstelle. Die Zeilenumbruch Ebene kann z. B. zwei Zeilen enthalten, während die zugrunde liegenden Textpuffer möglicherweise nur eine Zeile enthalten.  
   
--   Die Ansicht wird mit Ebenen von der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView>\-Schnittstelle.  Verwenden Sie diese Schnittstelle, um Puffer mit Koordinaten Ansicht Koordinaten zuzuordnen.  
+-   Die Ansicht kommuniziert mit den Ebenen über der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView> Schnittstelle. Verwenden Sie diese Schnittstelle, um Koordinaten mit Puffer Koordinaten abstimmen.  
   
--   Jede Ebene wie die synthetische Text der Ebene, die Text auslöst, muss eine lokale Implementierung des <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.CreateTrackingPoint%2A>bereitstellen.  
+-   Eine Ebene, z. B. die synthetische Textebene, die Text stammt eine lokale Implementierung bereitstellen muss <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.CreateTrackingPoint%2A>.  
   
--   Neben <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>muss eine Text der Ebene <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> implementieren und die Ereignisse in der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents>\-Schnittstelle auslösen.  
+-   Neben <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>, eine Ebene muss implementieren <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> und das Auslösen der Ereignisse in der <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents> Schnittstelle.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Syntaxfarben in benutzerdefinierten Editoren](../extensibility/syntax-coloring-in-custom-editors.md)   
- [Verwenden von Text Marker mit der Legacy\-API](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Anpassen von Editor\-Steuerelemente und Menüs mit der Legacy\-API](../extensibility/customizing-editor-controls-and-menus-by-using-the-legacy-api.md)
+ [Verwenden von Text Marker mit der Legacy-API](../extensibility/using-text-markers-with-the-legacy-api.md)   
+ [Anpassen von Editor-Steuerelemente und Menüs, über die Legacy-API](../extensibility/customizing-editor-controls-and-menus-by-using-the-legacy-api.md)

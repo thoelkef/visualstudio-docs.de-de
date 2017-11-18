@@ -1,56 +1,56 @@
 ---
-title: "IDiaSession::findInlineeLinesByRVA | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: IDiaSession::findInlineeLinesByRVA | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: 7a74d5ee-0dbf-47c0-92b4-47ec03b13ce9
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5210616573d2d1e0248c189095c8f10e192eab80
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findInlineeLinesByRVA
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft eine Enumeration ab, die einem Client ermöglicht, durch die Zeilennummerninformationen aller Funktionen direkt oder indirekt zu durchlaufen, die inline sind, durch das angegebene Symbol und Elemente innerhalb der angegebenen relativen virtuellen Adresse RVA \(\) enthalten ist.  
+# <a name="idiasessionfindinlineelinesbyrva"></a>IDiaSession::findInlineeLinesByRVA
+Ruft eine Enumeration, die ermöglicht einem Client zu durchlaufen und die Zeilennummerninformationen aller Funktionen, die inline erweitert wird, direkt oder indirekt mit dem angegebenen übergeordneten Symbol und befinden sich innerhalb der angegebenen relativen virtuellen Adresse (RVA) ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT findInlineeLinesByRVA (   
-   IDiaSymbol*           parent,  
+```C++  
+HRESULT findInlineeLinesByRVA (   
+   IDiaSymbol*           parent,  
    DWORD                 rva,  
    DWORD                 length,  
-   IDiaEnumLineNumbers** ppResult  
+   IDiaEnumLineNumbers** ppResult  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `parent`  
- \[in \]Ein `IDiaSymbol`\-Objekt, das das übergeordnete Objekt darstellt.  
+ [in] Ein `IDiaSymbol` Objekt, das das übergeordnete Element darstellt.  
   
  `rva`  
- \[\] in gibt die Adresse als RVA an.  
+ [in] Gibt die Adresse als eine RVA an.  
   
  `length`  
- \[in\] gibt den Adressbereich, in Anzahl von Bytes an, die mit dieser Abfrage abzudecken.  
+ [in] Gibt an, der Adressbereich in Anzahl von Bytes, die mit dieser Abfrage abzudecken.  
   
  `ppResult`  
- \[out\] `IDiaEnumLineNumbers` enthält ein Objekt, das die Liste von Zeilennummern enthält, die abgerufen werden.  
+ [out] Enthält eine `IDiaEnumLineNumbers` -Objekt, das die Liste der Zeilennummern enthält, die abgerufen werden.  
   
-## Rückgabewert  
- Wenn die Ausführung erfolgreich ist, wird `S_OK`, andernfalls ein Fehlercode zurückgegeben.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum\-Enumeration](../../debugger/debug-interface-access/symtagenum.md)   
+ [SymTagEnum-Enumeration](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

@@ -1,73 +1,72 @@
 ---
-title: "IDiaSymbol::get_baseType | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_baseType-Methode"
+title: 'Idiasymbol:: Get_basetype | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_baseType method
 ms.assetid: 5c69a241-a8d3-48ed-8b36-27463a196572
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 62f7ce0d29ec1b5bf997917a74e650a446a468ae
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_baseType
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
 Ruft den Basistyp für dieses Symbol ab*.*  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT get_baseType (   
-   DWORD* pRetVal  
+```C++  
+HRESULT get_baseType (   
+   DWORD* pRetVal  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pRetVal`  
- \[out\]  Gibt einen Wert aus der [BasicType\-Enumeration](../../debugger/debug-interface-access/basictype.md)\-Enumeration zurück, der den Basistyp des Symbols angibt.  
+ [out] Gibt einen Wert aus der [BasicType-Enumeration](../../debugger/debug-interface-access/basictype.md) -Enumeration, der den Basistyp des Symbols angibt.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt `S_FALSE` oder einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls gibt `S_FALSE` oder ein Fehlercode.  
   
 > [!NOTE]
->  Der Rückgabewert `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
+>  Ein Rückgabewert von `S_FALSE` bedeutet, dass die Eigenschaft nicht für das Symbol verfügbar ist.  
   
-## Hinweise  
- Der einfache Typ für ein Symbol kann bestimmt werden, indem zuerst den Typ des Symbols abgerufen und dann das zurückgegebener Typ für den Basistyp verhört.  Beachten Sie, dass einige Symbole kann eine Basis TYPE\-für Beispiel einen Strukturnamen enthalten.  
+## <a name="remarks"></a>Hinweise  
+ Der Basistyp für ein Symbol kann zuerst Abrufen des Typs des Symbols, und klicken Sie dann befragen zurückgegebenen Typ für den Basistyp ermittelt werden. Beachten Sie, dass einige Symbole möglicherweise nicht über ein Basistyp – z. B. einen ein.  
   
-## Beispiel  
+## <a name="example"></a>Beispiel  
   
-```cpp#  
+```C++  
 IDiaSymbol* pType;  
 CComPtr<IDiaSymbol> pBaseType;  
 if (pType->get_type( &pBaseType ) == S_OK)  
 {  
-    BasicType btBaseType;  
-    if (pBaseType->get_baseType((DWORD *)&btBaseType) == S_OK)  
+    BasicType btBaseType;  
+    if (pBaseType->get_baseType((DWORD *)&btBaseType) == S_OK)  
     {  
-        // Do something with basic type.  
-    }  
+        // Do something with basic type.  
+    }  
 }  
 ```  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
   
 |Anforderung|Beschreibung|  
-|-----------------|------------------|  
+|-----------------|-----------------|  
 |Header:|dia2.h|  
-|Version:|DIA SDK v7.0|  
+|Version:|DIA-SDK Version 7.0|  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [BasicType\-Enumeration](../../debugger/debug-interface-access/basictype.md)   
- [IDiaSymbol::get\_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)
+ [BasicType-Enumeration](../../debugger/debug-interface-access/basictype.md)   
+ [IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)

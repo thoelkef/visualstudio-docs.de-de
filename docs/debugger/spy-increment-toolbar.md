@@ -1,50 +1,49 @@
 ---
-title: "Spy++ Toolbar | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Spy++ toolbar"
+title: Spy++-Symbolleiste | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Spy++ toolbar
 ms.assetid: 949c18fb-bb25-42ed-9130-c4a47869f24d
-caps.latest.revision: 8
-caps.handback.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: db8a6cd6832b2fa427cea539bc03add5d330e06e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Spy++ Toolbar
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Die Symbolleiste wird unter der Menüleiste in Spy\+\+ angezeigt.  Um die Symbolleiste zu deaktivieren oder auszublenden, klicken Sie im Menü **Ansicht** auf **Symbolleiste**.  
+# <a name="spy-toolbar"></a>Spy++-Symbolleiste
+Die Symbolleiste wird unterhalb der Menüleiste in Spy++ angezeigt. Zum Anzeigen oder Ausblenden der Symbolleiste auf die **Ansicht** Menü klicken Sie auf **Symbolleiste**.  
   
- Die folgenden Steuerelemente sind auf der Symbolleiste verfügbar.  
+ Die folgenden Steuerelemente werden auf der Symbolleiste verfügbar.  
   
-## UIElement-Liste  
+## <a name="uielement-list"></a>UIElement-Liste  
   
-|Button|Effect|  
+|Schaltfläche|Effekt|  
 |------------|------------|  
-|![Spy&#43;&#43;&#45;Schaltfläche "Fenster"](~/debugger/media/icon_spy--_windows.gif "Icon\_Spy\+\+\_Windows")|Zeigt eine Strukturansicht der Fenster und Steuerelemente im System an.  Weitere Informationen finden Sie unter [Windows View](../debugger/windows-view.md).|  
-|![Spy&#43;&#43;&#45;Schaltfläche "Prozesse"](~/debugger/media/icon_spy--_processes.gif "Icon\_Spy\+\+\_Processes")|Zeigt eine Strukturansicht der Prozesse im System an.  Weitere Informationen finden Sie unter [Processes View](../debugger/processes-view.md).|  
-|![Spy&#43;&#43;&#45;Schaltfläche "Threads"](~/debugger/media/icon_spy--_threads.gif "Icon\_Spy\+\+\_Threads")|Zeigt eine Strukturansicht der Threads im System an.  Weitere Informationen finden Sie unter [Threads View](../debugger/threads-view.md).|  
-|![Spy&#43;&#43;&#45;Schaltfläche "Meldungen"](~/debugger/media/icon_spy--_messages.gif "Icon\_Spy\+\+\_Messages")|Erstellt ein Fenster zum Anzeigen von Fenstermeldungen und öffnet das Dialogfeld **Meldungsoptionen**, sodass das Fenster, dessen Meldungen angezeigt werden, und weitere Optionen ausgewählt werden können.  Weitere Informationen finden Sie unter [Messages View](../debugger/messages-view.md).|  
-|![Spy&#43;&#43;&#45;Schaltfläche „Protokollierung starten“](~/debugger/media/icon_spy--_startlog.gif "Icon\_Spy\+\+\_StartLog")|Startet die Meldungsprotokollierung und zeigt den Meldungsstream an.  Dieses Steuerelement ist nur verfügbar, wenn das Fenster **Meldungen** das aktive Fenster ist.  Weitere Informationen finden Sie unter [How to: Start and Stop the Message Log Display](../debugger/how-to-start-and-stop-the-message-log-display.md).|  
-|![Spy&#43;&#43;&#45;Schaltfläche „Protokollierung beenden“](~/debugger/media/icon_spy--_stoplog.gif "Icon\_Spy\+\+\_StopLog")|Beendet die Meldungsprotokollierung und die Anzeige des Meldungsstreams.  Dieses Steuerelement ist nur verfügbar, wenn das Fenster **Meldungen** das aktive Fenster ist.  Weitere Informationen finden Sie unter [How to: Start and Stop the Message Log Display](../debugger/how-to-start-and-stop-the-message-log-display.md).|  
-|![Spy&#43;&#43;&#45;Schaltfläche „Protokolloptionen“](~/debugger/media/icon_spy--_logoptions.gif "Icon\_Spy\+\+\_LogOptions")|Zeigt das Dialogfeld [Meldungsoptionen](../debugger/message-options-dialog-box.md) an.  Verwenden Sie dieses Dialogfeld, um Fenster und Meldungstypen zum Anzeigen auszuwählen.  Dieses Steuerelement ist nur verfügbar, wenn das Fenster **Meldungen** das aktive Fenster ist.|  
-|![Spy&#43;&#43;&#45;Schaltfläche "Protokoll löschen"](~/debugger/media/spy--_clearlog.gif "Spy\+\+\_ClearLog")|Löscht den Inhalt des aktiven Fensters **Meldungen**.  Dieses Steuerelement ist nur verfügbar, wenn das Fenster **Meldungen** das aktive Fenster ist.|  
-|![Spy&#43;&#43;&#45;Schaltfläche "Fenster suchen"](~/debugger/media/icon_spy--_findwindow.gif "Icon\_Spy\+\+\_FindWindow")|Öffnet das Dialogfeld [Fenster suchen](../debugger/find-window-dialog-box.md), in dem Sie Fenstersuchkriterien festlegen und Eigenschaften oder Meldungen anzeigen können.  Weitere Informationen finden Sie unter [How to: Use the Finder Tool](../debugger/how-to-use-the-finder-tool.md).|  
-|![Spy&#43;&#43;&#45;Schaltfläche "Erstes Fenster suchen"](~/debugger/media/icon_spy--_window.gif "Icon\_Spy\+\+\_Window")|Sucht in der aktuellen Ansicht ein entsprechendes Fenster, einen entsprechenden Prozess, einen entsprechenden Thread oder eine entsprechende Meldung.|  
-|![Spy&#43;&#43;&#45;Schaltfläche "Nächstes Fenster suchen"](~/debugger/media/icon_spy--_nextwindow.gif "Icon\_Spy\+\+\_NextWindow")|Sucht in der aktuellen Ansicht das nächste entsprechende Fenster, den nächsten entsprechenden Prozess, den nächsten entsprechenden Thread bzw. die nächste entsprechende Meldung.  Dieses Steuerelement \(und der zugehörige Menübefehl\) ist nur verfügbar, wenn ein gültiges Suchergebnis nicht eindeutig ist.  Wenn Sie beispielsweise ein Fensterhandle als Suchkriterium in der Fensterstruktur verwenden, erzeugt es eindeutige Ergebnisse, da nur ein Fenster in der Fensterstruktur über ein Handle verfügt. In dieser Instanz ist **Weitersuchen** nicht verfügbar.|  
-|![Spy&#43;&#43; Schaltfläche "Vorheriges Fenster suchen"](~/debugger/media/icon_spy--_prevwindow.gif "Icon\_Spy\+\+\_PrevWindow")|Sucht in der aktuellen Ansicht das vorherige entsprechende Fenster, den vorherigen entsprechenden Prozess, den vorherigen entsprechenden Thread bzw. die vorherige entsprechende Meldung.  Dieses Steuerelement \(und der zugehörige Menübefehl\) ist nur verfügbar, wenn ein gültiges Suchergebnis nicht eindeutig ist.  Wenn Sie beispielsweise ein Fensterhandle als Suchkriterium in der Fensterstruktur verwenden, erzeugt es eindeutige Ergebnisse, da nur ein Fenster in der Fensterstruktur über ein Handle verfügt. In dieser Instanz ist **Vorheriges suchen** nicht verfügbar.|  
-|![Spy&#43;&#43;&#45;Schaltfläche "Eigenschaften&#45;Explorer"](~/debugger/media/icon_spy--_propexp.gif "Icon\_Spy\+\+\_PropExp")|Zeigt die Eigenschaften des Fensters an, das in der Fensteransicht ausgewählt ist.|  
-|![Spy&#43;&#43;&#45;Schaltfläche „Aktualisieren“](~/debugger/media/icon_spy--_refresh.gif "Icon\_Spy\+\+\_Refresh")|Aktualisiert die Systemansichten.|  
+|![Spy++ &#43; &#43; Windows-Taste](../debugger/media/icon_spy--_windows.gif "Icon_Spy ++ _Windows")|Zeigt eine Strukturansicht der Steuerelemente für Windows und im System an. Weitere Informationen finden Sie unter [Fensteransicht](../debugger/windows-view.md).|  
+|![Spy++ &#43; &#43; Schaltfläche verarbeitet](../debugger/media/icon_spy--_processes.gif "Icon_Spy ++ _Processes")|Zeigt eine Strukturansicht der Prozesse im System an. Weitere Informationen finden Sie unter [Prozessansicht](../debugger/processes-view.md).|  
+|![Spy++ &#43; &#43; Schaltfläche Threads](../debugger/media/icon_spy--_threads.gif "Icon_Spy ++ _Threads")|Zeigt eine Strukturansicht der Threads im System an. Weitere Informationen finden Sie unter [Threadansicht](../debugger/threads-view.md).|  
+|![Spy++ &#43; &#43; Schaltfläche Nachrichten](../debugger/media/icon_spy--_messages.gif "Icon_Spy ++ _Messages")|Erstellt ein Fenster zum Anzeigen von fenstermeldungen und öffnet die **Meldungsoptionen** Dialogfeld, sodass Sie das Fenster auswählen können, deren Meldungen werden angezeigt, und wählen Sie auch andere Optionen. Weitere Informationen finden Sie unter [Ansicht "Nachrichten"](../debugger/messages-view.md).|  
+|![Spy++ &#43; &#43; Starten Sie die Schaltfläche "Protokoll"](../debugger/media/icon_spy--_startlog.gif "Icon_Spy ++ _StartLog")|Startet die nachrichtenprotokollierung und zeigt den Nachrichtenstream an. Dieses Steuerelement ist nur verfügbar, wenn eine **Nachrichten** Fenster das aktive Fenster ist. Weitere Informationen finden Sie unter [Vorgehensweise: Starten und Beenden der Meldungsprotokollanzeige](../debugger/how-to-start-and-stop-the-message-log-display.md).|  
+|![Spy++ &#43; &#43; Beenden Sie die Schaltfläche "Protokoll"](../debugger/media/icon_spy--_stoplog.gif "Icon_Spy ++ _StopLog")|Beendet Nachricht protokollieren und die Anzeige des nachrichtendatenstroms. Dieses Steuerelement ist nur verfügbar, wenn eine **Nachrichten** Fenster das aktive Fenster ist. Weitere Informationen finden Sie unter [Vorgehensweise: Starten und Beenden der Meldungsprotokollanzeige](../debugger/how-to-start-and-stop-the-message-log-display.md).|  
+|![Spy++ &#43; &#43; Protokollieren Sie die Schaltfläche "Optionen"](../debugger/media/icon_spy--_logoptions.gif "Icon_Spy ++ _LogOptions")|Zeigt die [Meldungsoptionen](../debugger/message-options-dialog-box.md) (Dialogfeld). Verwenden Sie dieses Dialogfeld zum Auswählen von Windows und Nachrichtentypen für die Anzeige. Dieses Steuerelement ist nur verfügbar, wenn eine **Nachrichten** Fenster das aktive Fenster ist.|  
+|![Spy++ &#43; &#43; Deaktivieren Sie die Schaltfläche "Protokoll"](../debugger/media/spy--_clearlog.gif "Spy++ ++ _ClearLog")|Löscht den Inhalt des aktiven **Nachrichten** Fenster. Dieses Steuerelement ist nur verfügbar, wenn eine **Nachrichten** Fenster das aktive Fenster ist.|  
+|![Spy++ &#43; &#43; Fensterschaltfläche "Suchen"](../debugger/media/icon_spy--_findwindow.gif "Icon_Spy ++ _FindWindow")|Öffnet die ["Fenster Suchen"](../debugger/find-window-dialog-box.md) (Dialogfeld), können Sie die Fenster Suchkriterien festlegen und Anzeigen von Eigenschaften oder Nachrichten. Weitere Informationen finden Sie unter [wie: Verwenden des Suchtools](../debugger/how-to-use-the-finder-tool.md).|  
+|![Spy++ &#43; &#43; Erste Fensterschaltfläche "Suchen"](../debugger/media/icon_spy--_window.gif "Icon_Spy ++ _Window")|Durchsucht die aktuelle Ansicht für eine entsprechendes Fenster, Prozess, Thread oder Nachricht.|  
+|![Spy++ &#43; &#43; Nächste Fensterschaltfläche "Suchen"](../debugger/media/icon_spy--_nextwindow.gif "Icon_Spy ++ _NextWindow")|Durchsucht die aktuelle Ansicht für den nächsten übereinstimmenden Fenster, Prozess, Thread oder Nachricht. Dieses Steuerelement (und der zugehörige Menübefehl) ist verfügbar, nur, wenn ein gültiges Suchergebnis, das nicht eindeutig ist. Beispielsweise bei Verwendung von ein Fensterhandle als Suchkriterium in der Fensterstruktur im eindeutige Ergebnisse erzeugt, da nur ein Fenster, in dem Fenster dieses Handle hat vorhanden ist; in dieser Instanz **Weitersuchen** ist nicht verfügbar.|  
+|![Spy++ &#43; &#43; Vorherigen Fensterschaltfläche "Suchen"](../debugger/media/icon_spy--_prevwindow.gif "Icon_Spy ++ _PrevWindow")|Durchsucht die aktuelle Ansicht für die vorherigen übereinstimmenden Fenster, Prozess, Thread oder Nachricht. Dieses Steuerelement (und der zugehörige Menübefehl) ist verfügbar, nur, wenn ein gültiges Suchergebnis, das nicht eindeutig ist. Beispielsweise bei Verwendung von ein Fensterhandle als Suchkriterium in der Fensterstruktur im eindeutige Ergebnisse erzeugt, da nur ein Fenster, in dem Fenster dieses Handle hat vorhanden ist; in dieser Instanz **Vorheriges suchen** ist nicht verfügbar.|  
+|![Spy++ &#43; &#43; Schaltfläche "Explorer"-Eigenschaft](../debugger/media/icon_spy--_propexp.gif "Icon_Spy ++ _PropExp")|Zeigt die Eigenschaften des Fensters, das in der Ansicht ausgewählt ist.|  
+|![Spy++ &#43; &#43; Schaltfläche "Aktualisieren"](../debugger/media/icon_spy--_refresh.gif "Icon_Spy ++ _Refresh")|Aktualisiert die Systemsichten.|  
   
-## Siehe auch  
- [Using Spy\+\+](../debugger/using-spy-increment.md)   
- [Spy\+\+ Views](../debugger/spy-increment-views.md)   
- [Spy\+\+ Reference](../debugger/spy-increment-reference.md)
+## <a name="see-also"></a>Siehe auch  
+ [Verwenden von Spy++](../debugger/using-spy-increment.md)   
+ [Spy++-Ansichten](../debugger/spy-increment-views.md)   
+ [Spy++-Referenz](../debugger/spy-increment-reference.md)

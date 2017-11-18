@@ -1,43 +1,42 @@
 ---
-title: "IDiaStackFrame::get_maxStack | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaStackFrame::get_maxStack-Methode"
+title: 'Idiastackframe:: Get_maxstack | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaStackFrame::get_maxStack method
 ms.assetid: 6352e972-7105-4d0e-aeba-b8fc16d62dec
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 33dc48e1753595c54e535813a27f70f1b0f9920f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaStackFrame::get_maxStack
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft die maximale Anzahl von Bytes ab, die in den Frames auf dem Stapel abgelegt werden.  
+# <a name="idiastackframegetmaxstack"></a>IDiaStackFrame::get_maxStack
+Ruft die maximale Anzahl von Bytes, die auf dem Stapel im Frame abgelegt.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT get_maxStack (   
-   DWORD* pRetVal  
+```C++  
+HRESULT get_maxStack (   
+   DWORD* pRetVal  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pRetVal`  
- \[out\]  Gibt die maximale Anzahl von Bytes zurück, die auf dem Stapel abgelegt werden.  
+ [out] Gibt die maximale Anzahl von Bytes, die auf dem Stapel abgelegt.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück.  Gibt `S_FALSE` zurück, wenn die Eigenschaft nicht unterstützt wird.  Andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` , wenn die Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

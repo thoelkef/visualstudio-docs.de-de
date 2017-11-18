@@ -1,25 +1,29 @@
 ---
-title: "ISetNextStatement::CanSetNextStatement | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: ISetNextStatement::CanSetNextStatement | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: ISetNextStatement.CanSetNextStatement
 apilocation: scrobj.dll
 ms.assetid: e2a54634-31ec-4d16-84e8-2b123845d876
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5bd32ddf73076f9e29ca3377186ff64be256b8fc
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# ISetNextStatement::CanSetNextStatement
-Diese Methode bestimmt, ob sich der Ausführungspunkt, der die folgende Anweisung des auszuführenden Code bestimmt, festgelegt werden kann der angegebenen Position.  
+# <a name="isetnextstatementcansetnextstatement"></a>ISetNextStatement::CanSetNextStatement
+Diese Methode bestimmt, ob es sich bei der Ausführungspunkt an, der die nächste auszuführende codeanweisung-Anweisung bestimmt, auf den angegebenen Speicherort festgelegt werden kann.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT CanSetNextStatement(  
@@ -28,22 +32,22 @@ HRESULT CanSetNextStatement(
 )  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pStackFrame`  
- \[in\] Zeiger auf einen Stapelrahmenobjekt.  
+ [in] Ein Zeiger auf ein Stack-Frame-Objekt.  
   
  `pCodeContext`  
- \[in\] Zeiger auf einen Codekontextobjekt.  
+ [in] Ein Zeiger auf ein Codeobjekt-Kontext.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
-|`S_OK`|Die folgende Anweisung kann zum angegebenen Codekontext aktualisiert werden.|  
-|`S_FALSE`|Die folgende Anweisung kann nicht auf den angegebenen Codekontext aktualisiert werden.|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
+|`S_OK`|Die nächste Anweisung kann in den angegebenen Kontext aktualisiert werden.|  
+|`S_FALSE`|Die nächste Anweisung kann nicht auf den angegebenen Kontext aktualisiert werden.|  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
   
-## Siehe auch  
- [ISetNextStatement\-Schnittstelle](../../winscript/reference/isetnextstatement-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [ISetNextStatement-Schnittstelle](../../winscript/reference/isetnextstatement-interface.md)

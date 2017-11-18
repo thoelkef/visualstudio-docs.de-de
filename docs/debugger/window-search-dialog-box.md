@@ -1,67 +1,67 @@
 ---
-title: "Dialogfeld &quot;Fenstersuche&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Fenstersuche"
+title: Fenster-Dialogfeld "Fenstersuche" | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Window Search
 ms.assetid: 9c30390d-dc3c-4c27-ae1a-9d92dc076d2b
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: abc4ea7ee1445c0d1846fadb5319f17d98d3afcd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Dialogfeld &quot;Fenstersuche&quot;
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Verwenden Sie dieses Dialogfeld, um den Knoten für ein bestimmtes Fenster in der [Fensteransicht](../debugger/windows-view.md) zu suchen und auszuwählen.  Verschieben Sie den Fokus auf das Fensteransichtsfenster, um dieses Dialogfeld anzuzeigen.  Klicken Sie dann im Menü **Suchen** auf **Fenster suchen**.  
+# <a name="window-search-dialog-box"></a>Dialogfeld "Fenstersuche"
+Mithilfe dieses Dialogfelds zu suchen, und wählen Sie den Knoten für ein bestimmtes Fenster in [Fensteransicht](../debugger/windows-view.md). Um dieses Dialogfeld anzuzeigen, den Fokus auf das Windows-Fenster an. Wählen Sie dann **"Fenster Suchen"** aus der **Suche** Menü.  
   
- Sie können mit dem **Suchtool** ein Fenster auswählen, Sie können das Fensterhandle eingeben, oder Sie können das Fenster anhand von Beschriftung und Klasse identifizieren.  
+ Können Sie die **Suchtools** , wählen Sie ein Fenster, oder Sie können Geben Sie das Fensterhandle, oder das Fenster von Beschriftung und Klasse identifizieren.  
   
  Die folgenden Einstellungen sind verfügbar:  
   
- **Suchtool**  
- Das zum Auswählen eines Fensters verwendete Drag & Drop\-Tool.  
+ **Suchtools**  
+ Die Drag & Drop-Tool verwendet, um ein Fenster auszuwählen.  
   
- **Spy\+\+ ausblenden**  
- Entfernt das Spy\+\+\-Hauptfenster, und das Dialogfeld **Fenstersuche** bleibt über den anderen Anwendungen sichtbar.  
+ **Ausblenden von Spy++**  
+ Entfernt das Hauptfenster Spy++ und behält die **WindowSearch** (Dialogfeld), die zusätzlich zu anderen Anwendungen sichtbar.  
   
  **Handle**  
- Die eindeutige ID des zu suchenden Fensters.  
+ Die eindeutige ID des Fensters zum Suchen.  
   
  **Beschriftung**  
- Der Text der Beschriftung des zu suchenden Fensters.  
+ Der Text in die fensterbeschriftung gesucht.  
   
  **Klasse**  
  Die Klasse des zu suchenden Fensters.  
   
- **Suchrichtung: Nach oben\/Nach unten**  
+ **Suchrichtung nach oben oder unten**  
  Die anfängliche Richtung der Suche.  
   
-## Verwandte Abschnitte  
+## <a name="related-sections"></a>Verwandte Abschnitte  
  [Suchen nach einem Fenster in der Fensteransicht](../debugger/how-to-search-for-a-window-in-windows-view.md)  
- Erklärt, wie Sie ein bestimmtes Fenster in der Fensteransicht finden.  
+ Erläutert, wie ein bestimmtes Fenster in der Fensteransicht gefunden.  
   
  [Fensteransicht](../debugger/windows-view.md)  
- Zeigt eine Strukturansicht der verfügbaren Fenster und Steuerelemente an.  
+ Zeigt eine Strukturansicht der verfügbaren Fenster und Steuerelemente.  
   
- [Spy\+\+\-Ansichten](../debugger/spy-increment-views.md)  
- Erklärt die Spy\+\+\-Strukturansichten von Fenstern, Meldungen, Prozessen und Threads.  
+ [Spy++-Ansichten](../debugger/spy-increment-views.md)  
+ Erläutert die Spy++-Strukturansichten von Windows, Nachrichten, Prozesse und Threads an.  
   
- [Verwenden von Spy\+\+](../debugger/using-spy-increment.md)  
- Stellt das Tool Spy\+\+ vor und erläutert die Verwendung.  
+ [Verwenden von Spy++](../debugger/using-spy-increment.md)  
+ Führt das Tool Spy++ und erläutert, wie sie verwendet werden kann.  
   
  [Dialogfeld "Fenster suchen"](../debugger/find-window-dialog-box.md)  
- Wird verwendet, um die Eigenschaften oder Meldungen aus einem bestimmten Fenster anzuzeigen.  
+ Zum Anzeigen der Eigenschaften oder Nachrichten von einem bestimmten Fenster verwendet.  
   
- [Dialogfeld "Fenstereigenschaften"](../debugger/window-properties-dialog-box.md)  
- Wird verwendet, um die Eigenschaften eines in der Fensteransicht ausgewählten Fensters anzuzeigen.  
+ [Fenstereigenschaften (Dialogfeld)](../debugger/window-properties-dialog-box.md)  
+ Verwendet zum Anzeigen der Eigenschaften eines Fensters, in der Fensteransicht ausgewählt.  
   
- [Spy\+\+\-Referenz](../debugger/spy-increment-reference.md)  
- Enthält Abschnitte mit Beschreibungen der einzelnen Spy\+\+\-Menüs und \-Dialogfelder.
+ [Spy++-Referenz](../debugger/spy-increment-reference.md)  
+ Enthält Abschnitte beschreiben die einzelnen Spy++-Menü und das Dialogfeld.

@@ -1,27 +1,30 @@
 ---
-title: "IEnumDebugStackFrames::Clone | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IEnumDebugStackFrames::Clone | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IEnumDebugStackFrames.Clone
 apilocation: jscript.dll
-helpviewer_keywords: 
-  - "IEnumDebugStackFrames::Clone"
+helpviewer_keywords: IEnumDebugStackFrames::Clone
 ms.assetid: 9d9e01a3-0be3-4336-832a-f065af388571
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 910b05024efcde8614882e0c95cdfab2ffe9be3e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IEnumDebugStackFrames::Clone
+# <a name="ienumdebugstackframesclone"></a>IEnumDebugStackFrames::Clone
 Erstellt einen Enumerator, der den gleichen Zustand wie der aktuelle Enumerator enthält.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT Clone(  
@@ -29,19 +32,19 @@ HRESULT Clone(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `ppedsf`  
- \[out\] Gibt die `IEnumDebugStackFrames`\-Schnittstelle des Klons des Enumerators zurück.  
+ [out] Gibt die `IEnumDebugStackFrames` Schnittstelle des Klons des Enumerators.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
- Diese Methode erstellt einen Enumerator, der denselben Zustand wie der aktuelle Enumerator enthält.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode erstellt einen Enumerator, der den gleichen Zustand wie der aktuelle Enumerator enthält.  
   
-## Siehe auch  
- [IEnumDebugStackFrames\-Schnittstelle](../../winscript/reference/ienumdebugstackframes-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IEnumDebugStackFrames-Schnittstelle](../../winscript/reference/ienumdebugstackframes-interface.md)

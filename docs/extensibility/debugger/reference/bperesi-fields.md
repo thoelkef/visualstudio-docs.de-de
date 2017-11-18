@@ -1,87 +1,87 @@
 ---
-title: "BPERESI_FIELDS | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "BPERESI_FIELDS"
-helpviewer_keywords: 
-  - "BPERESI_FIELDS-enumeration"
+title: BPERESI_FIELDS | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: BPERESI_FIELDS
+helpviewer_keywords: BPERESI_FIELDS enumeration
 ms.assetid: dd7dd89c-1043-46a1-a929-099cc039c344
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e758309c10f9d5dace6a95337130599f34fdb76d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# BPERESI_FIELDS
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Gibt die über eine fehlgeschlagene Auflösung eines Haltepunkts Informationen abgerufen werden sollen.  
+# <a name="bperesifields"></a>BPERESI_FIELDS
+Gibt die Informationen über eine fehlgeschlagene Auflösung eines Haltepunkts abgerufen werden sollen.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-enum enum_BPERESI_FIELDS {   
-   PERESI_BPRESLOCATION = 0x0001,  
-   BPERESI_PROGRAM      = 0x0002,  
-   BPERESI_THREAD       = 0x0004,  
-   BPERESI_MESSAGE      = 0x0008,  
-   BPERESI_TYPE         = 0x0010,  
-   BPERESI_ALLFIELDS    = 0xffffffff  
+```cpp  
+enum enum_BPERESI_FIELDS {   
+   PERESI_BPRESLOCATION = 0x0001,  
+   BPERESI_PROGRAM      = 0x0002,  
+   BPERESI_THREAD       = 0x0004,  
+   BPERESI_MESSAGE      = 0x0008,  
+   BPERESI_TYPE         = 0x0010,  
+   BPERESI_ALLFIELDS    = 0xffffffff  
 };  
 typedef DWORD BPERESI_FIELDS;  
 ```  
   
-```c#  
-public enum enum_BPERESI_FIELDS {   
-   PERESI_BPRESLOCATION = 0x0001,  
-   BPERESI_PROGRAM      = 0x0002,  
-   BPERESI_THREAD       = 0x0004,  
-   BPERESI_MESSAGE      = 0x0008,  
-   BPERESI_TYPE         = 0x0010,  
-   BPERESI_ALLFIELDS    = 0xffffffff  
+```csharp  
+public enum enum_BPERESI_FIELDS {   
+   PERESI_BPRESLOCATION = 0x0001,  
+   BPERESI_PROGRAM      = 0x0002,  
+   BPERESI_THREAD       = 0x0004,  
+   BPERESI_MESSAGE      = 0x0008,  
+   BPERESI_TYPE         = 0x0010,  
+   BPERESI_ALLFIELDS    = 0xffffffff  
 };  
 ```  
   
-## Mitglieder  
- PERESI\_BPRESLOCATION  
- Initialisieren Sie das Feld\/verwenden, `bpResLocation` \(Haltepunkt auflösungs\) der Speicherort [BP\_ERROR\_RESOLUTION\_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) Struktur.  
+## <a name="members"></a>Member  
+ PERESI_BPRESLOCATION  
+ Initialisieren/verwenden die `bpResLocation` (breakpointposition Auflösung) Feld der [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) Struktur.  
   
- BPERESI\_PROGRAM  
- Initialisieren Sie `pProgram` \/verwenden das Feld `BP_ERROR_RESOLUTION_INFO` Struktur.  
+ BPERESI_PROGRAM  
+ Die Initialisierung/verwenden die `pProgram` Feld der `BP_ERROR_RESOLUTION_INFO` Struktur.  
   
- BPERESI\_THREAD  
- Initialisieren Sie `pThread` \/verwenden das Feld `BP_ERROR_RESOLUTION_INFO` Struktur.  
+ BPERESI_THREAD  
+ Die Initialisierung/verwenden die `pThread` Feld der `BP_ERROR_RESOLUTION_INFO` Struktur.  
   
- BPERESI\_MESSAGE  
- Initialisieren Sie `bstrMessage` \/verwenden das Feld `BP_ERROR_RESOLUTION_INFO` Struktur.  
+ BPERESI_MESSAGE  
+ Die Initialisierung/verwenden die `bstrMessage` Feld der `BP_ERROR_RESOLUTION_INFO` Struktur.  
   
- BPERESI\_TYPE  
- Initialisieren Sie das Feld\/verwenden, `dwType`\-Typ der Haltepunkt \(\), der `BP_ERROR_RESOLUTION_INFO` Struktur.  
+ BPERESI_TYPE  
+ Initialisieren/verwenden die `dwType` (Haltepunkt Type)-Feld der `BP_ERROR_RESOLUTION_INFO` Struktur.  
   
- BPERESI\_ALLFIELDS  
- Initialisieren Sie `BP_ERROR_RESOLUTION_INFO` \/verwenden alle Felder der Struktur.  
+ BPERESI_ALLFIELDS  
+ Alle Felder des initialisieren/verwenden die `BP_ERROR_RESOLUTION_INFO` Struktur.  
   
-## Hinweise  
- Übergabe als Parameter an die [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)\-Methode, um anzugeben, welche Felder der [BP\_ERROR\_RESOLUTION\_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) Struktur initialisiert werden sollen.  
+## <a name="remarks"></a>Hinweise  
+ Übergeben als Parameter an die [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) Methode, um anzugeben, welche Felder von der [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) Struktur initialisiert werden, sind.  
   
- Diese Werte werden auch verwendet, um anzugeben, welche Felder in der `BP_ERROR_RESOLUTION_INFO` Struktur verwendet und gültig sind, wenn diese Struktur zurückgegeben wird.  
+ Diese Werte werden auch verwendet, um anzugeben, welche Felder in der `BP_ERROR_RESOLUTION_INFO` Struktur verwendet und gültig sind, wenn dieser Struktur zurückgegeben wird.  
   
- Diese Werte können mit bitweisen `OR`kombiniert werden.  
+ Diese Werte können kombiniert werden, mit einem bitweisen `OR`.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [BP\_ERROR\_RESOLUTION\_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)   
+ [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)   
  [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)

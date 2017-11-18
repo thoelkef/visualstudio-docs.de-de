@@ -1,27 +1,30 @@
 ---
-title: "IScriptNode::GetLanguage | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IScriptNode::GetLanguage | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IScriptNode.GetLanguage
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IScriptNode::GetLanguage"
+helpviewer_keywords: IScriptNode::GetLanguage
 ms.assetid: 089715fd-6746-474e-94ed-2e57ee4bc0da
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 10bab879574f378a1000c398a8f566eea7dd9b4b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IScriptNode::GetLanguage
-Gibt die Skriptsprache zurück, die vom aktuellen Skripts\-Knoten verwendet wird.  
+# <a name="iscriptnodegetlanguage"></a>IScriptNode::GetLanguage
+Gibt die Skriptsprache, die vom aktuellen Knoten Skript verwendet wird.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT GetLanguage(  
@@ -29,18 +32,18 @@ HRESULT GetLanguage(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pbstr`  
- \[out\] Gibt "JScript" zurück, wenn der Skripts\-Knoten JScript verwendet, oder "VBScript", wenn der Skripts\-Knoten Visual Basic Scripting Edition \(VBScript\) verwendet.  
+ [out] Gibt "JScript" zurück, wenn das Skriptknoten JScript oder "VBScript" verwendet, wenn das Skriptknoten Visual Basic Scripting Edition (VBScript) verwendet.  
   
-## Rückgabewert  
- Ein `HRESULT`.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
   
-## Siehe auch  
- [IScriptNode\-Schnittstelle](../../winscript/reference/iscriptnode-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IScriptNode-Schnittstelle](../../winscript/reference/iscriptnode-interface.md)

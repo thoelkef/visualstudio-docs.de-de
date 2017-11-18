@@ -1,29 +1,32 @@
 ---
-title: "IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptSiteDebugEx.OnCanNotJITScriptErrorDebug
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug"
+helpviewer_keywords: IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug
 ms.assetid: 83f81476-bf12-47f2-897d-1d37d21137d4
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e428f12b3d199603ac341a5e069fcc5ce5d36f93
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug
-Informiert den Host über einen Skriptlaufzeitfehler, wenn der Prozessdebug\-Manager keinen Just\-in\-timeskriptdebugger sucht.  
+# <a name="iactivescriptsitedebugexoncannotjitscripterrordebug"></a>IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug
+Informiert, dass der Host über ein Skript zur Laufzeit Fehler beim Debuggen des Prozesses Manager einen JIT-Skriptdebugger nicht finden kann.  
   
- Um einen Debugger im Host zu implementieren, sollten Sie [IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md) behandeln.  Auf Grundlage eine Benutzeraktion Host kann entweder den Debugger und die Rückgabe anfügen, oder geben Sie das Starten des Debuggers im Parameter OnScriptErrorDebug `pfEnterDebugger` zurück.  Sie sollten diese Schnittstelle implementieren, um die Benachrichtigung über den Laufzeitfehler abzurufen, auch wenn keine externen Debugger gibt, die vom Prozessdebug\-Manager interpretiert werden.  
+ Um einen Debugger in Ihrem Host zu implementieren, sollten Sie behandeln [IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md). Basierend auf eine Benutzeraktion kann der Host kann entweder den Debugger Anfügen und, oder zurückgeben das Starten des Debuggers in der OnScriptErrorDebug `pfEnterDebugger` Parameter. Sie sollten auch implementieren diese Schnittstelle, um die Benachrichtigung über den Fehler zur Laufzeit zu erhalten, selbst wenn es sind keine externen Debugger, die von der Debug-Prozess-Manager interpretiert werden können.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT OnCanNotJITScriptErrorDebug(  
@@ -32,22 +35,22 @@ HRESULT OnCanNotJITScriptErrorDebug(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pErrorDebug`  
- \[in\] Der Laufzeitfehler, der aufgetreten ist.  
+ [in] Die Laufzeitfehler, die aufgetreten sind.  
   
  `pfCallOnScriptErrorWhenContinuingt`  
- \[out\] ob [IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md) aufruft, wenn der Benutzer entscheidet, um fortzufahren, ohne Debuggen.  
+ [out] Ob Aufrufen [IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md) , wenn der Benutzer entscheidet, ohne Debuggen zu fortfahren.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
- Sie sollten diese Schnittstelle implementieren, um eine Benachrichtigung abzurufen.  
+## <a name="remarks"></a>Hinweise  
+ Sie sollten auch diese Schnittstelle, um eine Benachrichtigung erhalten implementieren.  
   
-## Siehe auch  
- [IActiveScriptSiteDebugEx\-Schnittstelle](../../winscript/reference/iactivescriptsitedebugex-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IActiveScriptSiteDebugEx-Schnittstelle](../../winscript/reference/iactivescriptsitedebugex-interface.md)

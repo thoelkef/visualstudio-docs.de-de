@@ -1,27 +1,30 @@
 ---
-title: "IActiveScriptParseProcedureOld::ParseProcedureText | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScriptParseProcedureOld::ParseProcedureText | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptParseProcedureOld.ParseProcedureText
 apilocation: jscript.dll
-helpviewer_keywords: 
-  - "IActiveScriptParseProcedureOld::ParseProcedureText"
+helpviewer_keywords: IActiveScriptParseProcedureOld::ParseProcedureText
 ms.assetid: 21a21313-35ce-432d-b9a6-7999065f19ac
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: cab546deb390535fa8ff71e116a0ad42d33cc104
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptParseProcedureOld::ParseProcedureText
-Analysiert die angegebene Kennzahlprozedur und eine anonyme Prozedur dem Namespace hinzu.  
+# <a name="iactivescriptparseprocedureoldparseproceduretext"></a>IActiveScriptParseProcedureOld::ParseProcedureText
+Die Prozedur angegebenen Code analysiert, und fügt eine anonyme Prozedur Namespace hinzu.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT ParseProcedureText(  
@@ -37,58 +40,58 @@ HRESULT ParseProcedureText(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pstrCode`  
- \[in\] Der Prozedurtext auszuwerten.  Die Interpretation dieser Zeichenfolge hängt von der Skriptsprache ab.  
+ [in] Der Text der Prozedur um auszuwerten. Die Darstellung dieser Zeichenfolge hängt von der Skriptsprache ab.  
   
  `pstrFormalParams`  
- \[in\] Namen des formalen Parameters für die Prozedur.  Die Parameternamen müssen mit den entsprechenden Trennzeichen für das Skriptmodul getrennt werden.  Die Namen dürfen nicht in Klammern eingeschlossen werden.  
+ [in] Formale Parameternamen für die Prozedur. Die Parameternamen müssen mit den entsprechenden Trennzeichen für das Skriptmodul getrennt werden. Die Namen sollten nicht in Klammern eingeschlossen werden.  
   
  `pstrItemName`  
- \[in\] Der Name des benannten Elements, das den Kontext gibt, in der die Prozedur ausgewertet werden soll.  Wenn dieser Parameter `NULL` ist, wird der Code in den globalen Kontext des Skriptmoduls ausgewertet.  
+ [in] Der Name des benannten Elements, das den Kontext angibt, in dem die Prozedur ausgewertet werden. Wenn dieser Parameter ist `NULL`, der Code im globalen Kontext des Skriptmoduls ausgewertet wird.  
   
  `punkContext`  
- \[in\] Das Kontextobjekt.  Dieses Objekt ist für die Verwendung in einer Debugumgebung reserviert, in der ein solches Kontext möglicherweise vom Debugger bereitgestellt wird, um einen aktiven Laufzeitkontext darzustellen.  Wenn dieser Parameter `NULL` ist, verwendet das Modul `pstrItemName`, um den Kontext zu identifizieren.  
+ [in] Das Context-Objekt. Dieses Objekt ist für die Verwendung in einer Debugumgebung reserviert, in der ein solcher Kontext möglicherweise vom Debugger bereitgestellt wird, um einen aktiven Laufzeitkontext darzustellen. Wenn dieser Parameter ist `NULL`, verwendet das Modul `pstrItemName` an den Kontext zu identifizieren.  
   
  `pstrDelimiter`  
- \[in\] Das Ende\-vonProzedur Trennzeichen.  Wenn `pstrCode` aus einem Stream des Texts analysiert wird, verwendet der Host in der Regel ein Trennzeichen, wie zwei einfache Anführungszeichen \("\), um das Ende der Prozedur zu erkennen.  Dieser Parameter gibt das Trennzeichen an, den der Host verwendet, das Skriptmodul zulassen, um eine bedingte, primitive Vorverarbeitung bereitzustellen, \(beispielsweise ein einfaches Anführungszeichen \['\] mit zwei einfache Anführungszeichen zur Verwendung als Trennzeichen\) ersetzt wird.  Genauer gesagt, wie \(und ob\) das Skriptmodul verwendet, sind diese Informationen im Skriptmodul ab.  Legen Sie diesen Parameter auf `NULL` fest, wenn der Host kein Trennzeichen verwendet, um das Ende der Prozedur zu markieren.  
+ [in] Das Ende der Prozedur-Trennzeichen. Wenn `pstrCode` analysiert aus einem Stream des Texts und ein Trennzeichen vom Host in der Regel verwendet, z. B. zwei einfache von Anführungszeichen ("), um das Ende der Prozedur zu erkennen. Dieser Parameter gibt das Trennzeichen an, die vom Host verwendete, sodass dem Skriptmodul einige bedingte bereitstellen, primitive vorverarbeitung (beispielsweise die Ersetzung von einem einfachen Anführungszeichens ['] durch zwei einfache Anführungszeichen zur Verwendung als Trennzeichen). Genau wie (und ob) das scripting Modul verwendet diese Informationen hängen von dem Skriptmodul. Legen Sie diesen Parameter zu `NULL` Wenn der Host ein Trennzeichen nicht verwendet haben, um das Ende der Prozedur zu kennzeichnen.  
   
  `dwSourceContextCookie`  
- \[in\] Anwendung festgelegten Wert, der zum Debuggen verwendet wird.  
+ [in] Anwendungsdefinierten Wert, der für Debugzwecke verwendet wird.  
   
  `ulStartingLineNumber`  
- \[in\] nullbasierter Wert, der angibt, welcher Zeile an die Analyse beginnt.  
+ [in] Nullbasierter Wert, der angibt, in welcher Zeile die Analyse beginnen soll.  
   
  `dwFlags`  
- \[in\] Flags zugeordnete der Prozedur.  Kann eine Kombination dieser Werte.  
+ [in] Flags, die die Prozedur zugeordnet werden. Eine Kombination dieser Werte kann sein.  
   
 |Konstante|Wert|Bedeutung|  
-|---------------|----------|---------------|  
-|SCRIPTPROC\_ISEXPRESSION|0x00000020|Gibt an, dass der Code in `pstrCode` ein Ausdruck ist, der den Rückgabewert der Prozedur darstellt.|  
-|SCRIPTPROC\_IMPLICIT\_THIS|0x00000100|Gibt an, dass der `this` Zeiger im Kontext der Prozedur enthalten ist.|  
-|SCRIPTPROC\_IMPLICIT\_PARENTS|0x00000200|Gibt an, dass die übergeordneten Elemente des `this` Zeigers im Kontext der Prozedur enthalten sind.|  
+|--------------|-----------|-------------|  
+|SCRIPTPROC_ISEXPRESSION|0x00000020|Gibt an, dass der Code in `pstrCode` ist ein Ausdruck, den Rückgabewert der Prozedur darstellt.|  
+|SCRIPTPROC_IMPLICIT_THIS|0x00000100|Gibt an, dass die `this` Zeiger in den Bereich der Prozedur enthalten ist.|  
+|SCRIPTPROC_IMPLICIT_PARENTS|0x00000200|Gibt an, die den übergeordneten Elementen von der `this` Zeiger in den Bereich der Prozedur enthalten sind.|  
   
  `ppdisp`  
- \[out\] Gibt einen Dispatchwrapper zurück, in dem die Standardmethode der Prozedur ist, die von analysiert wird.  
+ [out] Gibt einen Dispatch-Wrapper zurück, in dem die Prozedur analysiert, die von dieser Methode ist die Standardmethode.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
 |`E_INVALIDARG`|Ein Argument war ungültig.|  
-|`E_POINTER`|Ein ungültiger Zeiger wurde angegeben.|  
-|`E_NOTIMPL`|Diese Methode wird nicht unterstützt.  Das Skriptmodul unterstützt Ablaufeinführung von Prozeduren nicht auf den Namespace.|  
-|`E_UNEXPECTED`|Der Aufruf wurde nicht erwartet \(beispielsweise, ist das Skriptmodul im nicht initialisierten oder geschlossenen Zustand\).|  
-|`OLESCRIPT_E_SYNTAX`|Ein nicht spezifizierter Syntaxfehler trat in der Prozedur auf.|  
-|`S_FALSE`|Das Skriptmodul unterstützt kein Dispatchobjekt; der `ppdisp`\-Parameter wird in `NULL` festgelegt.|  
+|`E_POINTER`|Es wurde ein ungültiger Zeiger angegeben.|  
+|`E_NOTIMPL`|Diese Methode wird nicht unterstützt. Das Skriptmodul wird zur Laufzeit-hinzufügen von Prozeduren, damit der Namespace nicht unterstützt.|  
+|`E_UNEXPECTED`|Der Aufruf wurde nicht erwartet (z. B. das Skriptmodul im nicht initialisierten oder geschlossenen Zustand ist).|  
+|`OLESCRIPT_E_SYNTAX`|Ein nicht spezifizierter Syntaxfehler trat in der Prozedur.|  
+|`S_FALSE`|Das Skriptmodul unterstützt keine Dispatch-Objekt; die `ppdisp`Parametersatz auf `NULL`.|  
   
-## Hinweise  
- Kein Skriptcode wird während dieses Aufrufs ausgewertet, Sie wird die Prozedur in einer Methode für `ppdisp` kompiliert, in dem sie durch das Skript später aufgerufen werden kann.  
+## <a name="remarks"></a>Hinweise  
+ Kein Skriptcode wird während dieses Aufrufs ausgewertet; stattdessen das Verfahren auf in eine Methode kompiliert wird `ppdisp` , in denen es kann aufgerufen werden vom Skript später erneut.  
   
- Diese Schnittstelle wird zugunsten der `IActiveScriptParseProcedure`\-Schnittstelle veraltet.  Die `IActiveScriptParseProcedure::ParseProcedureText`\-Methode ist an diese Methode ähnlich, allerdings können den Prozedurnamen, angegeben werden.  unter allen Umständen sollte `IActiveScriptParseProcedure::ParseProcedureText` verwendet werden.  
+ Diese Schnittstelle ist veraltet die `IActiveScriptParseProcedure` Schnittstelle. Die `IActiveScriptParseProcedure::ParseProcedureText` Methode ist vergleichbar mit dieser Methode, aber sie können den Namen der Prozedur angegeben werden. In allen Fällen `IActiveScriptParseProcedure::ParseProcedureText` verwendet werden soll.  
   
-## Siehe auch  
- [IActiveScriptParseProcedureOld\-Schnittstelle](../../winscript/reference/iactivescriptparseprocedureold-interface.md)   
+## <a name="see-also"></a>Siehe auch  
+ [IActiveScriptParseProcedureOld-Schnittstelle](../../winscript/reference/iactivescriptparseprocedureold-interface.md)   
  [IActiveScriptParseProcedure::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedure-parseproceduretext.md)

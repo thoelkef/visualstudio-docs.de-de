@@ -1,33 +1,31 @@
 ---
-title: "Fehler: Die Verbindung mit dem Computer &lt;Name&gt; konnte nicht hergestellt werden. Der Computer kann im Netzwerk nicht gefunden werden. | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.remote.dcom_disabled"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "DCOM, Verbindung kann nicht hergestellt werden (Fehler)"
+title: 'Fehler: Es konnte keine Verbindung mit dem Computer &lt;Namen&gt;. Der Computer kann nicht im Netzwerk gefunden werden. | Microsoft-Dokumentation'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.remote.dcom_disabled
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords: DCOM, unable to connect error
 ms.assetid: b584b5db-ef52-45ed-8561-1314da3cc5b8
-caps.latest.revision: 12
-caps.handback.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e8ed30ca3baeb29f92c4d5f02b64c581ef9a37a7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Fehler: Die Verbindung mit dem Computer &lt;Name&gt; konnte nicht hergestellt werden. Der Computer kann im Netzwerk nicht gefunden werden.
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>Fehler: Es konnte keine Verbindung mit dem Computer &lt;Namen&gt;. Der Computer kann nicht im Netzwerk gefunden werden.
 Dieses Verhalten tritt auf, wenn eine der folgenden Bedingungen erfüllt ist:  
   
 -   Die Verbindung zum Remotecomputer ist unterbrochen.  
@@ -36,9 +34,9 @@ Dieses Verhalten tritt auf, wenn eine der folgenden Bedingungen erfüllt ist:
   
 -   Das Kennwort auf dem Remotecomputer ist abgelaufen.  
   
-### So beheben Sie dieses Verhalten  
+### <a name="to-resolve-this-behavior"></a>So beheben Sie dieses Verhalten  
   
--   Stellen Sie sicher, dass der lokale Computer und der Remotecomputer im gleichen Netzwerk sind.  Tun Sie dies, indem Sie mit dem Microsoft Windows Explorer \(oder File Explorer\) versuchen, auf den Remotecomputer zuzugreifen.  
+-   Stellen Sie sicher, dass der lokale Computer und der Remotecomputer im gleichen Netzwerk sind. Tun Sie dies, indem Sie mit dem Microsoft Windows Explorer (oder File Explorer) versuchen, auf den Remotecomputer zuzugreifen.  
   
      – und –  
   
@@ -48,6 +46,6 @@ Dieses Verhalten tritt auf, wenn eine der folgenden Bedingungen erfüllt ist:
   
 -   Stellen Sie sicher, dass das Kennwort, das Sie verwenden, um eine Verbindung mit dem Remotecomputer herzustellen, gültig und nicht abgelaufen ist.  
   
-## Siehe auch  
- [Einrichten der Remotetools auf dem Gerät](../Topic/Set%20Up%20the%20Remote%20Tools%20on%20the%20Device.md)   
- [Einstellungen und Vorbereitung für das Debuggen](../debugger/debugger-settings-and-preparation.md)
+## <a name="see-also"></a>Siehe auch  
+ [Remotedebuggen](../debugger/remote-debugging.md)   
+ [Debuggereinstellungen und -vorbereitung](../debugger/debugger-settings-and-preparation.md)

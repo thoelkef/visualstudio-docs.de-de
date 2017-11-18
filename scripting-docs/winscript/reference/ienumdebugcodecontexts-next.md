@@ -1,27 +1,30 @@
 ---
-title: "IEnumDebugCodeContexts::Next | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IEnumDebugCodeContexts::Next | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IEnumDebugCodeContexts.Next
 apilocation: jscript.dll
-helpviewer_keywords: 
-  - "IEnumDebugCodeContexts::Next"
+helpviewer_keywords: IEnumDebugCodeContexts::Next
 ms.assetid: 844cc353-ae0b-45e1-84a6-32b0bb67f57f
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 00a3a5765f5b5a62753653d24cf27e4667a5647f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IEnumDebugCodeContexts::Next
-Ruft eine angegebene Anzahl von Segmenten in der Enumerationssequenz ab.  
+# <a name="ienumdebugcodecontextsnext"></a>IEnumDebugCodeContexts::Next
+Ruft eine angegebene Anzahl von Segmenten in die Enumerationsfolge ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT Next(  
@@ -31,25 +34,25 @@ HRESULT Next(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `celt`  
- \[in\] Die Anzahl von Segmenten abzurufen.  
+ [in] Die Anzahl der Segmente abgerufen werden soll.  
   
  `pscc`  
- \[out\] Gibt ein Array `IDebugCodeContext`\-Schnittstellen zurück, das die Segmente darstellt, die abgerufen werden.  
+ [out] Gibt ein Array von `IDebugCodeContext` Schnittstellen, die die abgerufenen Segmente darstellt.  
   
  `pceltFetched`  
- \[out\] Die tatsächliche Anzahl von Segmenten abgerufen vom Enumerator.  
+ [out] Die tatsächliche Anzahl von Segmenten, die vom Enumerator abgerufen werden soll.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
- Diese Methode ruft eine angegebene Anzahl von Segmenten in der Enumerationsfolge ab.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode ruft eine angegebene Anzahl von Segmenten in die Enumerationsfolge ab.  
   
-## Siehe auch  
- [IEnumDebugCodeContexts\-Schnittstelle](../../winscript/reference/ienumdebugcodecontexts-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IEnumDebugCodeContexts-Schnittstelle](../../winscript/reference/ienumdebugcodecontexts-interface.md)

@@ -1,27 +1,30 @@
 ---
-title: "IActiveScriptProperty::GetProperty | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScriptProperty::GetProperty | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptProperty.GetProperty
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "GetProperty-Methode, IActiveScriptProperty-Schnittstelle"
+helpviewer_keywords: GetProperty method, IActiveScriptProperty interface
 ms.assetid: a43383db-b148-4d76-83bd-4f0e899b7cb1
-caps.latest.revision: 24
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d55fb2d816931a74827d318e13860b3f97f0fd23
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptProperty::GetProperty
-Ruft die Eigenschaft ab, die vom Parameter angegeben wird.  
+# <a name="iactivescriptpropertygetproperty"></a>IActiveScriptProperty::GetProperty
+Ruft die Eigenschaft, die durch den Parameter angegeben wird.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT GetProperty(  
@@ -34,40 +37,40 @@ HRESULT GetProperty(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `dwProperty`  
- Der Eigenschaftswert abzurufen.  
+ Der Eigenschaftswert abgerufen werden soll.  
   
  `pvarIndex`  
- Wird nicht verwendet.  
+ Nicht verwendet.  
   
  `pvarValue`  
  Der Wert der Eigenschaft.  
   
- Die Werte, die für `dwProperty` zulässig sind, werden in der folgenden Tabelle beschrieben.  
+ Die Werte für zulässige `dwProperty` werden in der folgenden Tabelle beschrieben.  
   
 |Konstante|Wert|Bedeutung|  
-|---------------|----------|---------------|  
-|SCRIPTPROP\_INTEGERMODE|0x00003000|Erzwingt das Skriptmodul, um im Modus anstelle des Gleitkommamodus aufzuteilen.|  
-|SCRIPTPROP\_STRINGCOMPAREINSTANCE|0x00003001|Ermöglicht die Zeichenfolgencompare\-funktion des Skriptmoduls, ersetzt werden.|  
-|SCRIPTPROP\_ABBREVIATE\_GLOBALNAME\_RESOLUTION|0x70000002|Informiert das Skriptmodul, dass keine anderen Skriptmodule vorhanden sein, um im globalen Objekt beizutragen.|  
-|SCRIPTPROP\_INVOKEVERSIONING|0x00004000|Erzwingt das [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skriptmodul, um einen Satz von unterstützt werden, Sprachfunktionen auszuwählen.  Der Standardsatz von den Sprachfunktionen, die vom [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skriptmodul unterstützt werden, ist zur festgelegten Sprachfunktion entsprechend, die in Version 5.7 des [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skriptmoduls angezeigt.|  
+|--------------|-----------|-------------|  
+|SCRIPTPROP_INTEGERMODE|0x00003000|Erzwingt, dass das Skriptmodul im Modus ganze Zahl, anstelle von unverankerten Modus aufteilen.|  
+|SCRIPTPROP_STRINGCOMPAREINSTANCE|0x00003001|Kann die Zeichenfolge vergleichen-Funktion des verwendeten Skriptmoduls ersetzt werden.|  
+|SCRIPTPROP_ABBREVIATE_GLOBALNAME_RESOLUTION|0x70000002|Informiert das Skriptmodul, das keine anderen Skriptmodule vorhanden sein, um auf das globale Objekt beitragen.|  
+|SCRIPTPROP_INVOKEVERSIONING|0x00004000|Erzwingt, dass die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skriptmodul zum Auswählen eines Satzes von Funktionen der Programmiersprache unterstützt werden müssen. Der Standardsatz von Sprachfunktionen, die von unterstützt die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skriptmodul entspricht den Satz von Sprache, die in Version 5.7 angezeigt wurden die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skriptmodul.|  
   
-## Rückgabewert  
- Gibt eine der folgenden Werte:  
+## <a name="return-value"></a>Rückgabewert  
+ Gibt einen der folgenden Werte zurück:  
   
 |Rückgabewert|Bedeutung|  
-|------------------|---------------|  
+|------------------|-------------|  
 |`S_OK`|Erfolgreich.|  
 |`E_INVALIDARG`|Ein Argument ist ungültig.|  
-|`E_UNEXPECTED`|Der Aufruf wurde nicht erwartet \(beispielsweise, ist das Skriptmodul noch nicht geladen wurde oder initialisiert wurden\).|  
+|`E_UNEXPECTED`|Der Aufruf wurde nicht erwartet (z. B. das Skriptmodul wurde noch kein geladen oder initialisiert).|  
   
-## Hinweise  
- Der Host kann die SCRIPTPROP\_ABBREVIATE\_GLOBALNAME\_RESOLUTIONS\-Eigenschaft verwenden, um ein Skriptmodul mitzuteilen, dass keine anderen Skriptmodule vorhanden sein, um im globalen Objekt beizutragen.  Beispielsweise kann das Internet Explorer [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Modul darüber, dass die Seite, die gerendert wird, nur [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skripts enthält.  Deshalb wird nur das [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Modul kann neue Eigenschaften zum globalen Objektfenster hinzufügen, und es gibt kein Modul der Visual Basic Scripting Edition \(VBScript\), das gleiche durchzuführen.  Das Modul kann dieses Flag ignorieren oder kann es verwenden, um die Verwaltung von neuen Member zu optimieren, die dem globalen Objekt hinzugefügt werden.  
+## <a name="remarks"></a>Hinweise  
+ Die SCRIPTPROP_ABBREVIATE_GLOBALNAME_RESOLUTION-Eigenschaft können der Host um ein Skriptmodul zu informieren, die keine anderen Skriptmodule vorhanden sein, um auf das globale Objekt beitragen. Z. B. Internet Explorer können Sie bestimmen, die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] -Modul, das die gerenderte Seite nur enthält [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skripts. Daher nur die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Modul kann neue Eigenschaften hinzufügen, für das globale Objektfenster, und es gibt kein Visual Basic Scripting Edition (VBScript)-Modul, um diesen Vorgang auszuführen. Das Modul kann ignorieren dieses Flag oder verwenden, um die Verwaltung der neuen Mitglieder zu optimieren, die auf das globale Objekt hinzugefügt werden.  
   
- Der Host kann die SCRIPTPROP\_INVOKEVERSIONING\-Eigenschaft verwenden, um den von unterstützt werden Sprachfunktionen auszuwählen, wenn das [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skriptmodul gestartet wird.  Wenn diese Eigenschaft auf 1 \(SCRIPTLANGUAGEVERSION\_5\_7\) festgelegt ist, sind die verfügbaren Sprachfunktionen identisch, die die, die in Version 5.7 des [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skriptmoduls angezeigt.  Wenn es auf 2 \(SCRIPTLANGUAGEVERSION\_5\_8\) festgelegt ist, sind die verfügbaren Sprachfeatures, die in Version 5.7 zusätzlich zu den Funktionen angezeigt, die in Version 5.8 hinzugefügt wurden.  Diese Eigenschaft ist standardmäßig auf 0 \(SCRIPTLANGUAGEVERSION\_DEFAULT\) festgelegt, das der festgelegten Sprachfunktion entspricht, die in Version 5.7 ist, es sei denn, der Host ein anderes Standardverhalten unterstützt.  Beispielsweise entscheidet Internet Explorer 8 in die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Sprachfunktionen, die standardmäßig durch das [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skriptmodul der Version 5.8 unterstützt werden, wenn der Dokumente für Internet Explorer 8 "Internet Explorer 8\-Standard" Modus ist.  
+ Der Host kann mithilfe der Eigenschaft SCRIPTPROP_INVOKEVERSIONING wählen Sie den Satz von Sprachfunktionen, um werden unterstützt, wenn die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skriptmodul gestartet wird. Wenn diese Eigenschaft auf 1 (SCRIPTLANGUAGEVERSION_5_7) festgelegt ist, die verfügbaren Sprachfunktionen sind identisch mit denen, die in Version 5.7 angezeigt wurden die [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skriptmodul. Wenn es auf 2 (SCRIPTLANGUAGEVERSION_5_8) festgelegt ist, werden die verfügbaren Sprachen-Funktionen, die in Version 5.7 zusätzlich zu den Funktionen angezeigt, die in Version 5.8 hinzugefügt wurden. Standardmäßig ist diese Eigenschaft auf 0 (SCRIPTLANGUAGEVERSION_DEFAULT), festgelegt Dies entspricht den Satz von Sprache, der in Version 5.7, angezeigt wurden, wenn der Host einem anderen Standardverhalten unterstützt. Z. B. Internet Explorer 8 "OPTS" in der [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Sprachfunktionen, die von der Version 5.8 unterstützt [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] Skriptmodul Standard, wenn der Dokumentmodus für Internet Explorer 8-Modus "Internet Explorer 8 (Standardmodus)" ist.  
   
-## Siehe auch  
- [Definieren von Dokumenten\-Kompatibilität](http://msdn.microsoft.com/library/cc288325)   
+## <a name="see-also"></a>Siehe auch  
+ [Definieren der Dokumentkompatibilität](http://msdn.microsoft.com/library/cc288325)   
  [IActiveScriptProperty](../../winscript/reference/iactivescriptproperty.md)   
  [Versionsinformationen](../../javascript/reference/javascript-version-information.md)

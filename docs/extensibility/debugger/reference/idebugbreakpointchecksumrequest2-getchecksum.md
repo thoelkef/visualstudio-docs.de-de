@@ -1,56 +1,57 @@
 ---
-title: "IDebugBreakpointChecksumRequest2::GetChecksum | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugBreakpointChecksumRequest2::GetChecksum"
+title: IDebugBreakpointChecksumRequest2::GetChecksum | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugBreakpointChecksumRequest2::GetChecksum
 ms.assetid: ec434882-e5c0-4d76-a58b-22c260d8626e
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 98ffcebd4070f86ff065e9eb3e4a1b06493cab20
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugBreakpointChecksumRequest2::GetChecksum
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Ruft die prüfsumme für eine gegebene Haltepunkt Anforderungen der eindeutige Bezeichner des Prüfsummenalgorithmus ab, der verwendet werden soll.  
+# <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
+Ruft die Prüfsumme Dokument für eine Anforderung Haltepunkt zu verwenden, erhält den eindeutigen Bezeichner des Prüfsummenalgorithmus ab.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetChecksum(   
-   REFGUID        guidAlgorithm,  
-   CHECKSUM_DATA *pChecksumData  
+   REFGUID        guidAlgorithm,  
+   CHECKSUM_DATA *pChecksumData  
 );  
 ```  
   
-```c#  
+```csharp  
 public int GetChecksum(   
-   ref Guid               guidAlgorithm,  
-   out enum_CHECKSUM_DATA pChecksumData  
+   ref Guid               guidAlgorithm,  
+   out enum_CHECKSUM_DATA pChecksumData  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `guidAlgorithm`  
- \[in\]  Eindeutiger Bezeichner des Prüfsummenalgorithmus.  
+ [in] Eindeutiger Bezeichner des Prüfsummenalgorithmus.  
   
  `pChecksumData`  
- \[out\]  Dokumenten prüfsumme Haltepunkt für die Anforderung.  
+ [out] Dokument-Prüfsumme für die Anforderung Haltepunkt.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Beispiel  
- Im folgenden Beispiel wird eine Funktion veranschaulicht, die überprüft, ob die Prüfsumme eines Dokuments, das gebunden ist, ein vom Benutzeroberfläche entspricht.  
+## <a name="example"></a>Beispiel  
+ Das folgende Beispiel zeigt eine Funktion, die überprüft, ob die Prüfsumme eines Dokuments, also ungefähr gebunden werden, über die Benutzeroberfläche übereinstimmt.  
   
-```cpp#  
+```cpp  
 bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCodeContext *pContext)  
 {  
     bool fRet = false;  
@@ -102,5 +103,5 @@ bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCo
 }  
 ```  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugBreakpointChecksumRequest2](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2.md)

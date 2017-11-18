@@ -1,27 +1,30 @@
 ---
-title: "IRemoteDebugApplicationEvents::OnBreakFlagChange | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IRemoteDebugApplicationEvents::OnBreakFlagChange | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IRemoteDebugApplicationEvents.OnBreakFlagChange
 apilocation: jscript.dll
-helpviewer_keywords: 
-  - "IRemoteDebugApplicationEvents::OnBreakFlagChange"
+helpviewer_keywords: IRemoteDebugApplicationEvents::OnBreakFlagChange
 ms.assetid: 25684454-a0d8-47e0-85f5-2217069a9f45
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a8b4caac89897f015fec7ac483b967f9b42676aa
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IRemoteDebugApplicationEvents::OnBreakFlagChange
-Behandelt ein Ereignis, wenn die Unterbrechungsflags ändern.  
+# <a name="iremotedebugapplicationeventsonbreakflagchange"></a>IRemoteDebugApplicationEvents::OnBreakFlagChange
+Verarbeitet ein Ereignis, wenn die Unterbrechung Flags ändern.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT OnBreakFlagChange(  
@@ -30,23 +33,23 @@ HRESULT OnBreakFlagChange(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `abf`  
- \[in\] Die aktuellen Unterbrechungsflags für die Anwendung.  
+ [in] Die aktuelle Break-Flags für die Anwendung.  
   
  `prdatSteppingThread`  
- \[in\] Der momentan ausgeführten Thread.  
+ [in] Der derzeit ausgeführten Thread.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
- Diese Methode behandelt das Ereignis wenn die Unterbrechungsflagsänderung.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode behandelt das Ereignis, wenn das Flag für die Unterbrechung ändern.  
   
-## Siehe auch  
- [IRemoteDebugApplicationEvents\-Schnittstelle](../../winscript/reference/iremotedebugapplicationevents-interface.md)   
- [APPBREAKFLAGS\-Enumeration](../../winscript/reference/appbreakflags-enumeration.md)
+## <a name="see-also"></a>Siehe auch  
+ [IRemoteDebugApplicationEvents-Schnittstelle](../../winscript/reference/iremotedebugapplicationevents-interface.md)   
+ [APPBREAKFLAGS-Enumeration](../../winscript/reference/appbreakflags-enumeration.md)

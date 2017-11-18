@@ -1,27 +1,30 @@
 ---
-title: "IDebugApplication::FireDebuggerEvent | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IDebugApplication::FireDebuggerEvent | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugApplication.FireDebuggerEvent
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugApplication::FireDebuggerEvent"
+helpviewer_keywords: IDebugApplication::FireDebuggerEvent
 ms.assetid: fd1f602e-fc15-4158-a6e7-497ff5b4a509
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c4cb02390602b6b93b8c233f245ede395833d67e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugApplication::FireDebuggerEvent
-Löst ein generisches Ereignis zur `IApplicationDebugger`\-Schnittstelle des Debuggers aus.  
+# <a name="idebugapplicationfiredebuggerevent"></a>IDebugApplication::FireDebuggerEvent
+Löst ein Ereignis aus, die im Debuggers generische `IApplicationDebugger` Schnittstelle.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT FireDebuggerEvent(  
@@ -30,28 +33,28 @@ HRESULT FireDebuggerEvent(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `riid`  
- \[in\] Ein GUID für das Objekt.  
+ [in] Eine GUID für das Objekt.  
   
  `punk`  
- \[in\] Ein Ereignisobjekt übergeben Sie an den Debugger.  
+ [in] Ein Ereignisobjekt für die Übergabe an den Debugger.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
 |`E_NOTIMPL`|Die Methode wird derzeit nicht implementiert.|  
   
-## Hinweise  
- Die Semantik des GUID und `IUnknown` sind vollständig Anwendung\/der definierte Debugger.  
+## <a name="remarks"></a>Hinweise  
+ Die Semantik der GUID und die `IUnknown` vollständig Anwendung/Debugger definiert sind.  
   
- Mit dieser Methode können benutzerdefinierte Erweiterungen des Debuggermodells zu; sie wird derzeit implementiert.  
+ Diese Methode ermöglicht für benutzerdefinierte Erweiterungen des Modells Debugger; Es ist derzeit nicht implementiert.  
   
- Diese Methode wird `IApplicationDebugger::onDebuggerEvent` aufgerufen werden.  
+ Diese Methode bewirkt, dass `IApplicationDebugger::onDebuggerEvent` aufgerufen werden.  
   
-## Siehe auch  
- [IDebugApplication\-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)   
+## <a name="see-also"></a>Siehe auch  
+ [IDebugApplication-Schnittstelle](../../winscript/reference/idebugapplication-interface.md)   
  [IApplicationDebugger::onDebuggerEvent](../../winscript/reference/iapplicationdebugger-ondebuggerevent.md)

@@ -1,27 +1,30 @@
 ---
-title: "IMachineDebugManagerCookie::EnumApplications | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IMachineDebugManagerCookie::EnumApplications | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IMachineDebugManagerCookie.EnumApplications
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IMachineDebugManagerCookie::EnumApplications"
+helpviewer_keywords: IMachineDebugManagerCookie::EnumApplications
 ms.assetid: 03f863cf-fa7f-4ec4-b1a1-1ae0ad296c39
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 927457fca1972148798b543dceefa19e107f45d6
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IMachineDebugManagerCookie::EnumApplications
-Gibt einen Enumerator der aktuellen Liste der ausgeführten Anwendungen zurück.  
+# <a name="imachinedebugmanagercookieenumapplications"></a>IMachineDebugManagerCookie::EnumApplications
+Gibt einen Enumerator, der die aktuelle Liste von ausgeführten Anwendungen.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT EnumApplications(  
@@ -29,19 +32,19 @@ HRESULT EnumApplications(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `ppeda`  
- \[out\] Enumerator, der die aktuelle Liste der ausgeführten Anwendungen enthält.  
+ [out] Der Enumerator, der die aktuelle Liste von ausgeführten Anwendungen enthält.  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
- Diese Methode gibt einen Enumerator der aktuellen Liste der ausgeführten Anwendungen zurück.  Der Debugger IDE verwendet diese Methode, um Anwendungen zu Debugzwecken anzuzeigen und anzufügen.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode gibt einen Enumerator für die aktuelle Liste von ausgeführten Anwendungen. Der Debugger IDE verwendet diese Methode zum Anzeigen und Anfügen von Anwendungen für Debugzwecke an.  
   
-## Siehe auch  
- [IMachineDebugManagerCookie\-Schnittstelle](../../winscript/reference/imachinedebugmanagercookie-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IMachineDebugManagerCookie-Schnittstelle](../../winscript/reference/imachinedebugmanagercookie-interface.md)

@@ -1,70 +1,70 @@
 ---
-title: "Dialogfeld &quot;Meldungseigenschaften&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Meldungsoptionen"
-  - "Meldungsoptionen, allgemein"
+title: Im Dialogfeld Eigenschaften von Nachrichten | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- message options
+- message options, General
 ms.assetid: 58e9dc24-baf6-4ab8-916c-aea28b72e3b0
-caps.latest.revision: 4
-caps.handback.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e4a1516219df404b6447a9e95ae676d482cea7f7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Dialogfeld &quot;Meldungseigenschaften&quot;
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Verwenden Sie dieses Dialogfeld, um weitere Informationen über eine bestimmte Meldung zu erhalten.  Um dieses Dialogfeld anzuzeigen, verschieben Sie den Fokus auf ein [Meldungsansichtsfenster](../debugger/messages-view.md).  Wählen Sie in der Struktur einen Meldungsknoten und dann **Eigenschaften** im Menü **Ansicht** aus.  
+# <a name="message-properties-dialog-box"></a>Dialogfeld "Meldungseigenschaften"
+Verwenden Sie dieses Dialogfeld, um weitere Informationen zu einer bestimmten Nachricht suchen. Um dieses Dialogfeld anzuzeigen, verschieben Sie den Fokus auf ein [Ansicht "Nachrichten"](../debugger/messages-view.md) Fenster. Wählen Sie einen beliebigen nachrichtenknoten in der Struktur aus, und wählen Sie dann **Eigenschaften** aus der **Ansicht** Menü.  
   
- Als einzige Registerkarte wird die Registerkarte **Allgemein** angezeigt.  Die folgenden Einstellungen sind verfügbar:  
+ Die **allgemeine** Registerkarte ist die einzige Registerkarte angezeigt. Die folgenden Einstellungen sind verfügbar:  
   
- **Fensterhandle**  
- Die eindeutige ID des Fensters.  Fensterhandlenummern werden wiederverwendet. Sie identifizieren ein Fenster nur während dessen Lebensdauer.  Klicken Sie auf diesen Wert, um die Eigenschaften des Fensters anzuzeigen.  
+ **Das Fensterhandle**  
+ Die eindeutige ID dieses Fensters. Fenster Nummern werden wiederverwendet. Identifizieren ein Fensters nur für die Lebensdauer des Fensters. Klicken Sie auf diesen Wert, um die Eigenschaften dieses Fenster anzuzeigen.  
   
  **Schachtelungsebene**  
- Die Schachtelungstiefe der Meldung, wobei 0 angibt, dass die Meldung nicht geschachtelt ist.  
+ Die Tiefe der Schachtelung dieser Nachricht, wobei 0 keine Schachtelung ist.  
   
- **Nachricht**  
- Nummer, Status und Name der ausgewählten Fenstermeldung.  
+ **Meldung**  
+ Anzahl, Status und der Name der ausgewählten Windows-Meldung.  
   
  **lResult**  
- Der Wert des *lResult*\-Parameters, sofern vorhanden.  
+ Der Wert, der die *lResult* Parameter, sofern vorhanden.  
   
  **wParam**  
- Der Wert des *wParam*\-Parameters, sofern vorhanden.  
+ Der Wert, der die *wParam* Parameter, sofern vorhanden.  
   
  **lParam**  
- Der Wert des *IParam*\-Parameters, sofern vorhanden.  Dieser Wert wird decodiert, wenn es sich um einen Zeiger auf eine Zeichenfolge oder Struktur handelt.  
+ Der Wert, der die *lParam* Parameter, sofern vorhanden. Dieser Wert wird decodiert, wenn es sich um einen Zeiger auf eine Zeichenfolge oder eine Struktur ist.  
   
-## Verwandte Abschnitte  
+## <a name="related-sections"></a>Verwandte Abschnitte  
  [Dialogfeld "Meldungsoptionen"](../debugger/message-options-dialog-box.md)  
- Wird verwendet, um auszuwählen, welche Meldungen in der aktiven Meldungsansicht aufgeführt werden.  
+ Verwendet, um auszuwählen, welche Nachrichten in die aktive Ansicht "Nachrichten" aufgeführt sind.  
   
- [Dialogfeld "Meldungssuche"](../debugger/message-search-dialog-box.md)  
- Wird verwendet, um in der Meldungsansicht den Knoten für eine bestimmte Meldung zu suchen.  
+ [Meldungssuche (Dialogfeld)](../debugger/message-search-dialog-box.md)  
+ So suchen Sie den Knoten für eine bestimmte Nachricht in der Ansicht "Nachrichten" verwendet.  
   
- [Spy\+\+\-Referenz](../debugger/spy-increment-reference.md)  
- Enthält Abschnitte mit Beschreibungen der einzelnen Spy\+\+\-Menüs und \-Dialogfelder.  
+ [Spy++-Referenz](../debugger/spy-increment-reference.md)  
+ Enthält Abschnitte beschreiben die einzelnen Spy++-Menü und das Dialogfeld.  
   
- [Öffnen der Meldungsansicht aus "Fenster suchen"](_asug_choosing_message_options)  
- Erklärt, wie Sie die Meldungsansicht im Dialogfeld "Fenster suchen" öffnen.  
+ [Öffnen der Meldungsansicht aus "Fenster Suchen"](../debugger/how-to-open-messages-view-from-find-window.md)  
+ Erläutert die Ansicht "Nachrichten" im Dialogfeld "Fenster Suchen" zu öffnen.  
   
- [Suchen nach einer Meldung in der Meldungsansicht](../debugger/how-to-search-for-a-message-in-messages-view.md)  
- Erklärt, wie Sie eine bestimmte Meldung in der Meldungsansicht finden.  
+ [Suchen nach einer Nachricht in der Ansicht "Nachrichten"](../debugger/how-to-search-for-a-message-in-messages-view.md)  
+ Erläutert, wie eine bestimmte Nachricht in der Ansicht "Nachrichten" gefunden.  
   
  [Meldungsansicht](../debugger/messages-view.md)  
- Zeigt den einem Fenster, Prozess oder Thread zugeordneten Meldungsstream an.  
+ Zeigt den Nachrichtenstream, der ein Fenster, Prozess oder Thread zugeordnet.  
   
- [Spy\+\+\-Ansichten](../debugger/spy-increment-views.md)  
- Erklärt die Spy\+\+\-Strukturansichten von Fenstern, Meldungen, Prozessen und Threads.  
+ [Spy++-Ansichten](../debugger/spy-increment-views.md)  
+ Erläutert die Spy++-Strukturansichten von Windows, Nachrichten, Prozesse und Threads an.  
   
- [Verwenden von Spy\+\+](../debugger/using-spy-increment.md)  
- Stellt das Tool Spy\+\+ vor und erläutert die Verwendung.
+ [Verwenden von Spy++](../debugger/using-spy-increment.md)  
+ Führt das Tool Spy++ und erläutert, wie sie verwendet werden kann.

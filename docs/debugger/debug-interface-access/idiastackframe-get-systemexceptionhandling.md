@@ -1,49 +1,48 @@
 ---
-title: "IDiaStackFrame::get_systemExceptionHandling | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaStackFrame::get_systemExceptionHandling"
+title: IDiaStackFrame::get_systemExceptionHandling | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaStackFrame::get_systemExceptionHandling
 ms.assetid: c76cf265-dea0-4159-883f-32b50bbef044
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 29fb7d0493991e2cfcfe60b474bce1ff749c38e6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaStackFrame::get_systemExceptionHandling
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Ruft ein Flag ab, das angibt, ob das System ausnahmebehandlung gültig ist.  
+# <a name="idiastackframegetsystemexceptionhandling"></a>IDiaStackFrame::get_systemExceptionHandling
+Ruft ein Flag, das angibt, ob die Behandlung von Ausnahmen aktiviert ist.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT get_systemExceptionHandling (   
-   BOOL* pRetVal  
+```C++  
+HRESULT get_systemExceptionHandling (   
+   BOOL* pRetVal  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pRetVal`  
- \[out\]  Gibt `TRUE` zurück, wenn das System ausnahmebehandlung für diese Frame ist. andernfalls gibt `FALSE`zurück.  
+ [out] Gibt `TRUE` Wenn System Ausnahmebehandlung für diesen Rahmen; gültig ist, andernfalls `FALSE`.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück.  Gibt `S_FALSE` zurück, wenn die Eigenschaft nicht unterstützt wird.  Andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`. Gibt `S_FALSE` , wenn die Eigenschaft nicht unterstützt wird. Andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- System ausnahmebehandlung wird auch als strukturierte Ausnahmebehandlung.  Dies ist nicht die gleiche Aufgabe wie die C\+\+\-Ausnahmebehandlung.  
+## <a name="remarks"></a>Hinweise  
+ System-Ausnahmebehandlung ist auch bekannt als strukturierte Ausnahmebehandlung. Dies ist nicht identisch mit der C++-Ausnahmebehandlung.  
   
- Um zu bestimmen, wenn die C\+\+\-Ausnahmebehandlung aktiviert ist, rufen Sie die [IDiaStackFrame::get\_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)\-Methode auf.  
+ Um zu bestimmen, wenn die C++-Ausnahmebehandlung gültig ist, rufen Sie die [idiastackframe:: Get_cplusplusexceptionhandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md) Methode.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)   
- [IDiaStackFrame::get\_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)
+ [IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)

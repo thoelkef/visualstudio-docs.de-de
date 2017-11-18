@@ -1,72 +1,72 @@
 ---
-title: "BP_STATE | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "BP_STATE"
-helpviewer_keywords: 
-  - "BP_STATE-enumeration"
+title: BP_STATE | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: BP_STATE
+helpviewer_keywords: BP_STATE enumeration
 ms.assetid: 08aa6a3f-3e5f-4c83-8eca-7b7b5f8e208d
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 51574fd91a338f7d05d38755884412202d33637b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# BP_STATE
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Gibt das Vorhandensein eines gebundenen Haltepunkte an und gibt außerdem an, wenn er aktiviert ist.  
+# <a name="bpstate"></a>BP_STATE
+Gibt an, das Vorhandensein des einen gebundenen Haltepunkt, und gibt außerdem an, wenn diese Option aktiviert ist.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-enum enum_BP_STATE {   
-   BPS_NONE     = 0x0000,  
-   BPS_DELETED  = 0x0001,  
-   BPS_DISABLED = 0x0002,  
-   BPS_ENABLED  = 0x0003  
+```cpp  
+enum enum_BP_STATE {   
+   BPS_NONE     = 0x0000,  
+   BPS_DELETED  = 0x0001,  
+   BPS_DISABLED = 0x0002,  
+   BPS_ENABLED  = 0x0003  
 };  
 typedef DWORD BP_STATE;  
 ```  
   
-```c#  
-public enum enum_BP_STATE {   
-   BPS_NONE     = 0x0000,  
-   BPS_DELETED  = 0x0001,  
-   BPS_DISABLED = 0x0002,  
-   BPS_ENABLED  = 0x0003  
+```csharp  
+public enum enum_BP_STATE {   
+   BPS_NONE     = 0x0000,  
+   BPS_DELETED  = 0x0001,  
+   BPS_DISABLED = 0x0002,  
+   BPS_ENABLED  = 0x0003  
 };  
 ```  
   
-## Mitglieder  
- BPS\_NONE  
+## <a name="members"></a>Member  
+ BPS_NONE  
  Gibt an, dass kein Haltepunkt vorhanden ist.  
   
- BPS\_DELETED  
+ BPS_DELETED  
  Gibt an, dass der Haltepunkt gelöscht wurde.  
   
- BPS\_DISABLED  
+ BPS_DISABLED  
  Gibt an, dass der Haltepunkt deaktiviert ist.  
   
- BPS\_ENABLED  
+ BPS_ENABLED  
  Gibt an, dass der Haltepunkt aktiviert ist.  
   
-## Hinweise  
- Wird zurückgegeben von der [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)\-Methode.  
+## <a name="remarks"></a>Hinweise  
+ Zurückgegeben von der [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) Methode.  
   
-## Anforderungen  
+## <a name="requirements"></a>Anforderungen  
  Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Enumerationen](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)

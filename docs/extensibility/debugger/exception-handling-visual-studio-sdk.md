@@ -1,53 +1,54 @@
 ---
-title: "Ausnahmebehandlung (Visual Studio-SDK) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Debuggen [Debugging-SDK]-Ausnahmebehandlung"
+title: Ausnahmebehandlung (Visual Studio SDK) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: debugging [Debugging SDK], exception handling
 ms.assetid: 7279dc16-db14-482c-86b8-7b3da5a581d2
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 4a0d950de8e9f91232e3526064561a7508c133b4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Ausnahmebehandlung (Visual Studio-SDK)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-Im Folgenden beschreibt den Prozess, der auftritt, wenn Ausnahmen ausgelöst werden.  
+# <a name="exception-handling-visual-studio-sdk"></a>Ausnahmebehandlung (Visual Studio SDK)
+Im folgenden wird erläutert, das auftritt, wenn Ausnahmen ausgelöst werden.  
   
-## Ausnahmebehandlungs\-Prozess  
+## <a name="exception-handling-process"></a>Ausnahme behandeln Prozess  
   
-1.  Wenn zuerst eine Ausnahme ausgelöst wurde, aber bevor sie vom Ausnahmehandler im Programm behandelt wird, das gedebuggt wird, sendet das Debugmodul \(Debuggen\) DE [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) auf den Manager der Sitzung \(SDM\) als aufhörendes Ereignis.  `IDebugExceptionEvent2` wird gesendet, wenn nur die Einstellungen für die Ausnahme angegeben wird \(im Dialogfeld Ausnahmen Debug Paket\) angeben, dass der Benutzer für Ausnahmebenachrichtigungen \(erste Chance\) beendet werden soll.  
+1.  Wenn wird zuerst eine Ausnahme ausgelöst, aber bevor er vom Ausnahmehandler in der gedebuggten Anwendung behandelt wird, der Debugging-Modul (DE sendet) eine [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) Sitzung Debug-Manager (SDM) als eine Stopping-Ereignis. Die `IDebugExceptionEvent2` wird gesendet, wenn nur die Einstellungen für die Ausnahme (angegeben in das Dialogfeld "Ausnahmen" in das debugpaket) angeben, dass der Benutzer auf die erste Chance ausnahmebenachrichtigungen beenden möchte.  
   
-2.  Das SDM ruft [IDebugExceptionEvent2::GetException](../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) an, dass die Eigenschaft der Ausnahme ab.  
+2.  Ruft die SDM [IDebugExceptionEvent2::GetException](../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) zum Abrufen der Eigenschaft der Ausnahme.  
   
-3.  Das Debuggen von Paket wird [IDebugExceptionEvent2::CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) an, um festzustellen, welche Optionen, um sich dem Benutzer anzuzeigen.  
+3.  Ruft die Debug-Paket [IDebugExceptionEvent2::CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) um zu bestimmen, welche Optionen für den Benutzer anzuzeigen.  
   
-4.  Das Debuggen von Paket fragt den Benutzer, wie die Ausnahme behandelt, indem ein Dialogfeld Ausnahmen der ersten Chance geöffnet.  
+4.  Das debugpaket wird der Benutzer gefragt, wie die Ausnahme behandelt, durch eine Ausnahme der ersten Chance-Dialogfeld zu öffnen.  
   
-5.  Wenn Benutzer beschließt, um fortzufahren, ruft das SDM [IDebugExceptionEvent2::CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)an.  
+5.  Wenn der Benutzer entscheidet, den Vorgang fortzusetzen, ruft die SDM [IDebugExceptionEvent2::CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md).  
   
-    -   Wenn die Methode S\_OK zurückgibt, ruft [IDebugExceptionEvent2::PassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md)an.  
+    -   Wenn die Methode gibt S_OK zurück, ruft [IDebugExceptionEvent2::PassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md).  
   
-         \- oder \-  
+         - oder -   
   
-         Wenn die Methode S\_FALSE zurückgegeben wird, kann das Programm, das gedebuggt wird, eine zweiten Chance, die Ausnahme zu behandeln.  
+         Wenn die Methode gibt "S_FALSE", das Programm zurück, der debuggt wird eine zweite Möglichkeit zur Behandlung von Ausnahmen erhält.  
   
-6.  Wenn das Programm, das gedebuggt wird, keinen Handler für eine Ausnahme der zweiten Chance hat, sendet DE `IDebugExceptionEvent2` um SDM als **EVENT\_SYNCHRONIZATION\_STOP**.  
+6.  Verfügt das derzeit debuggte Programm kein Handler für eine zweite Chance-Ausnahme, die DE sendet eine `IDebugExceptionEvent2` , das SDM als **EVENT_SYNC_STOP**.  
   
-7.  Das Debuggen von Paket fragt den Benutzer, wie die Ausnahme behandelt, indem ein Dialogfeld Ausnahmen der ersten Chance geöffnet.  
+7.  Das debugpaket wird der Benutzer gefragt, wie die Ausnahme behandelt, durch eine Ausnahme der ersten Chance-Dialogfeld zu öffnen.  
   
-8.  Das Debuggen von Paket wird [IDebugExceptionEvent2::CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) an, um festzustellen, welche Optionen, um sich dem Benutzer anzuzeigen.  
+8.  Ruft die Debug-Paket [IDebugExceptionEvent2::CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) um zu bestimmen, welche Optionen für den Benutzer anzuzeigen.  
   
-9. Das Debuggen von Paket fragt den Benutzer, wie die Ausnahme behandelt, indem eine Ausnahme der zweiten Chance Dialogfeld geöffnet.  
+9. Das debugpaket fordert den Benutzer wie die Ausnahme behandelt, durch Öffnen einer zweiten Chance Ausnahmedialogfeld an.  
   
-10. Wenn die Methode S\_OK zurückgibt, ruft `IDebugExceptionEvent2::PassToDebuggee`an.  
+10. Wenn die Methode gibt S_OK zurück, ruft `IDebugExceptionEvent2::PassToDebuggee`.  
   
-## Siehe auch  
- [Aufrufen von Debugger\-Ereignissen](../../extensibility/debugger/calling-debugger-events.md)
+## <a name="see-also"></a>Siehe auch  
+ [Aufrufen von Debuggerereignissen](../../extensibility/debugger/calling-debugger-events.md)

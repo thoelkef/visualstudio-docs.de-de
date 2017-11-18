@@ -1,40 +1,36 @@
 ---
-title: "Dialogfeld &quot;Bearbeiten und Fortfahren&quot; | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/02/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.ENC.welcome"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "VB"
-  - "C++"
-helpviewer_keywords: 
-  - "Dialogfeld „Bearbeiten und Fortsetzen“"
+title: Bearbeiten und Fortfahren (Dialogfeld) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.ENC.welcome
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords: Edit and Continue dialog box
 ms.assetid: 4390c09c-fc73-4cc3-ab8e-6f07a7d70be2
-caps.latest.revision: 9
-caps.handback.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 04b5bdb609c6c4914e8eb1e5abcd0bd0270946cb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Dialogfeld &quot;Bearbeiten und Fortfahren&quot;
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-\(Nur systemeigen\) Dieses Dialogfeld wird angezeigt, wenn Sie während des Debuggens Code bearbeitet haben und die Codeänderungen von der Funktion **Bearbeiten und Fortfahren** übernommen werden können.  Weitere Informationen hierzu finden Sie unter [Bearbeiten und Fortfahren](../debugger/edit-and-continue.md).  
+# <a name="edit-and-continue-dialog-box"></a>Dialogfeld „Bearbeiten und Fortsetzen“
+(Nur systemeigen) Dieses Dialogfeld wird angezeigt, wenn Sie während des Debuggens Code bearbeitet haben und **bearbeiten und Fortfahren** erkennt, dass Änderungen am Code angewendet werden kann. Weitere Informationen finden Sie unter [bearbeiten und Fortfahren](../debugger/edit-and-continue.md).  
   
- **Dieses Dialogfeld nicht mehr anzeigen**  
- Wenn Sie dieses Kontrollkästchen aktivieren, werden Codeänderungen zukünftig ohne Rückfrage von **Bearbeiten und Fortfahren** übernommen.  Sie können diese Warnmeldung erneut aktivieren, indem Sie im Dialogfeld **Optionen** im Ordner **Debuggen** auf der Seite **Bearbeiten und Fortfahren** die Optionen **Von Debugbefehlen aufgerufen** und **Zuerst fragen** auswählen.  
+ **Nie me dieses Dialogfeld anzeigen**  
+ Wenn Sie dieses Kontrollkästchen aktivieren, **bearbeiten und Fortfahren** Änderungen am Code ohne Rückfrage in der Zukunft angewendet wird. Sie können diese Warnung erneut aktivieren möchten die **Optionen** (Dialogfeld), öffnen die **Debuggen** Ordner, auf die **bearbeiten und Fortfahren** Seite, und wählen Sie **Von Debugbefehlen aufgerufen** und **zuerst Fragen**.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [Debuggersicherheit](../debugger/debugger-security.md)   
- [Bearbeiten und Fortfahren, Debuggen, Dialogfeld "Optionen"](../Topic/Edit%20and%20Continue,%20Debugging,%20Options%20Dialog%20Box.md)
+ [Bearbeiten Sie und fortfahren Sie, Debuggen, Optionen (Dialogfeld)](http://msdn.microsoft.com/Library/009d225f-ef65-463f-a146-e4c518f86103)

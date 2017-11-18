@@ -1,27 +1,30 @@
 ---
-title: "IScriptEntry::GetBody | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IScriptEntry::GetBody | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IScriptEntry.GetBody
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IScriptEntry::GetBody"
+helpviewer_keywords: IScriptEntry::GetBody
 ms.assetid: 419c8c11-a1f8-4b97-ab00-e8af2b2f9bfc
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9daa04009cf7088cbd21a2d3dfa185f581c157a3
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IScriptEntry::GetBody
-Gibt den Text zurück, der dem Text eines `IScriptEntry` Skriptblocks, des Funktionsblocks oder des Skriptlets entspricht.  
+# <a name="iscriptentrygetbody"></a>IScriptEntry::GetBody
+Den Text, entspricht dem Nachrichtentext gibt eine `IScriptEntry` Skriptblock Funktionsblocks oder Scriptlet.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT GetBody(  
@@ -29,24 +32,24 @@ HRESULT GetBody(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pbstr`  
- \[out\] Der Text, der im Text eines der folgenden ist:  
+ [out] Der Text im Hauptteil eines der folgenden:  
   
 -   Ein `IScriptEntry` Skriptblock  
   
--   Eine `IScriptEntry`\-Funktion in einem Klassenfunktionsblock  
+-   Ein `IScriptEntry` Funktion in einem Funktionsblock  
   
--   Ein `IScriptEntry` Skriptletereignishandler  
+-   Ein `IScriptEntry` Scriptlet-Ereignishandler  
   
-## Rückgabewert  
- Ein `HRESULT`.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
   
-## Siehe auch  
- [IScriptEntry\-Schnittstelle](../../winscript/reference/iscriptentry-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IScriptEntry-Schnittstelle](../../winscript/reference/iscriptentry-interface.md)

@@ -1,29 +1,32 @@
 ---
-title: "IApplicationDebuggerUI-Schnittstelle | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "IApplicationDebuggerUI-Schnittstelle"
+title: IApplicationDebuggerUI-Schnittstelle | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords: IApplicationDebuggerUI interface
 ms.assetid: b8828817-ca24-4012-802c-7dcaeea65dc8
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: dbaa04f6790ffc4d80447a6745ca82cc8dba6802
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IApplicationDebuggerUI-Schnittstelle
-Wird von der Debuggerintegrierte Entwicklungsumgebung \(IDE\) \(zusätzlich zu `IApplicationDebugger`\) von einer externen Komponente mehr Kontrolle über die Benutzeroberfläche des Debuggers zu geben.  
+# <a name="iapplicationdebuggerui-interface"></a>IApplicationDebuggerUI-Schnittstelle
+Von der integrierten Entwicklungsumgebung (IDE) von Debugger implementiert (zusätzlich zum `IApplicationDebugger`) auf einer externen Komponente mehr Kontrolle über die Benutzeroberfläche (UI) des Debuggers erhalten.  
   
- Zusätzlich zu den von `IUnknown` geerbten Methoden macht die `IApplicationDebuggerUI`\-Schnittstelle die folgenden Methoden verfügbar.  
+ Zusätzlich zu den von geerbten Methoden `IUnknown`, `IApplicationDebuggerUI` Schnittstelle macht die folgenden Methoden verfügbar.  
   
-## Methoden in Vtable\-Reihenfolge  
+## <a name="methods-in-vtable-order"></a>Methoden in Vtable-Reihenfolge  
   
-|Methode|Description|  
-|-------------|-----------------|  
-|[IApplicationDebuggerUI::BringDocumentToTop](../../winscript/reference/iapplicationdebuggerui-bringdocumenttotop.md)|Setzt das Fenster, das das angegebene enthält, debuggen Dokument zur oben in der Debuggerbenutzeroberfläche.|  
-|[IApplicationDebuggerUI::BringDocumentContextToTop](../../winscript/reference/iapplicationdebuggerui-bringdocumentcontexttotop.md)|Setzt das Fenster, das den Kontext des bestimmten Dokuments zur oben in der Debuggerbenutzeroberfläche enthält und führt das Fenster den Kontext aus.|
+|Methode|Beschreibung|  
+|------------|-----------------|  
+|[IApplicationDebuggerUI::BringDocumentToTop](../../winscript/reference/iapplicationdebuggerui-bringdocumenttotop.md)|Schaltet das Fenster mit dem die angegebene Debug-Dokument in der Debugger nach oben Benutzeroberfläche.|  
+|[IApplicationDebuggerUI::BringDocumentContextToTop](../../winscript/reference/iapplicationdebuggerui-bringdocumentcontexttotop.md)|Schaltet das Fenster mit den angegebenen Dokumentenkontext in der Debugger-Benutzeroberfläche nach oben, und verschiebt das Fenster, um den Kontext.|

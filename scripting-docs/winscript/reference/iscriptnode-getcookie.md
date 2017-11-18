@@ -1,27 +1,30 @@
 ---
-title: "IScriptNode::GetCookie | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IScriptNode::GetCookie | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IScriptNode.GetCookie
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IScriptNode::GetCookie"
+helpviewer_keywords: IScriptNode::GetCookie
 ms.assetid: 007339c6-a73a-4147-b3c0-cc041e467ecd
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fa68f528aeb405ca150cff717ab5e4bebb82027a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IScriptNode::GetCookie
-Gibt einen anwendungsdefinierten Wert zurück, der verwendet wird, um ein Skriptlet mit dem Hostobjekt zuzuordnen.  
+# <a name="iscriptnodegetcookie"></a>IScriptNode::GetCookie
+Gibt einen anwendungsdefinierten Wert, der verwendet wird, das Hostobjekt, das Scriptlet zugeordnet werden soll.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT GetCookie(  
@@ -29,20 +32,20 @@ HRESULT GetCookie(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pdwCookie`  
- \[out\] Gibt für ein `IScriptEntry`\-Objekt den anwendungsdefinierten Cookiewert zurück.  
+ [out] Für ein `IScriptEntry` Objekt, das anwendungsspezifische Cookiewert zurückgegeben.  
   
- Ein `IScriptNode`\-Objekt, das eine Webseite darstellt, gibt 0 zurück.  
+ Für ein `IScriptNode` Objekt, das eine Webseite darstellt. gibt 0 zurück.  
   
-## Rückgabewert  
- Ein `HRESULT`.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Eine `HRESULT`. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
+## <a name="remarks"></a>Hinweise  
   
-## Siehe auch  
- [IScriptNode\-Schnittstelle](../../winscript/reference/iscriptnode-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IScriptNode-Schnittstelle](../../winscript/reference/iscriptnode-interface.md)

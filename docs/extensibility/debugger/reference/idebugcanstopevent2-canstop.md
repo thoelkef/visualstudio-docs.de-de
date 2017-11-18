@@ -1,55 +1,55 @@
 ---
-title: "IDebugCanStopEvent2::CanStop | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCanStopEvent2::CanStop"
-helpviewer_keywords: 
-  - "IDebugCanStopEvent2::CanStop"
+title: IDebugCanStopEvent2::CanStop | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugCanStopEvent2::CanStop
+helpviewer_keywords: IDebugCanStopEvent2::CanStop
 ms.assetid: 7d61adbe-6b3d-41f3-86a1-45d9cc01a7f8
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d9008410831d3c2c7b6e93d4f35a1d08914a5336
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugCanStopEvent2::CanStop
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Benachrichtigt das Debugmodul \(DE\) ob am aktuellen Speicherort des Codes beendet oder nur die Ausführung fortsetzt.  
+# <a name="idebugcanstopevent2canstop"></a>IDebugCanStopEvent2::CanStop
+Benachrichtigt die Debugging-Modul (DE) ob an der aktuellen Codeposition beenden oder Fortsetzen der Ausführung.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT CanStop (   
-   BOOL fCanStop  
+```cpp  
+HRESULT CanStop (   
+   BOOL fCanStop  
 );  
 ```  
   
-```c#  
-int CanStop (   
-   int fCanStop  
+```csharp  
+int CanStop (   
+   int fCanStop  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `fCanStop`  
- \[in\]  Ein Wert ungleich 0 \(`TRUE`\), wenn DE am aktuellen Speicherort des Codes beendet. Andernfalls Null \(`FALSE`\).  
+ [in] Ungleich 0 (`TRUE`) Wenn DE an der aktuellen Position des Codes; beendet werden soll, andernfalls 0 (null) (`FALSE`).  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- Der Empfänger dieses Ereignisses wird i. d. R. die [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)\-Methode auf, um die Ursache zu bestimmen, welche DE beenden möchte und ruft dann die `IDebugCanStopEvent2::CanStop`\-Methode mit der entsprechenden Antwort an.  
+## <a name="remarks"></a>Hinweise  
+ Ruft der Empfänger der dieses Ereignis in der Regel die [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) -Methode, um die Ursache zu ermitteln, die DE beenden möchte, und ruft dann die `IDebugCanStopEvent2::CanStop` -Methode durch die entsprechende Antwort.  
   
- DE Wenn ein Ereignis beendet wird, sendet es die die Ursache für das Beenden beschreibt.  Es gibt in der Regel zwei Ereignisse gesendet werden, die einen Benutzer oder eine Signal\-Unterbrechung, die von der [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)\-Schnittstelle dargestellt werden, und ein Haltepunkt für Auswahlereignisse, das von der [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)\-Schnittstelle dargestellt wird.  
+ Wenn die DE beendet wird, sendet er ein Ereignis, das den Grund für Beendigung beschreibt. In der Regel werden zwei Ereignisse, die eine Benutzer- oder Signal-Unterbrechung dargestellte gesendet, werden die [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) -Schnittstelle, und ein Haltepunktereignis dargestellte der [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) Schnittstelle.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)   
  [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)   
  [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)   

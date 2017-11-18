@@ -1,56 +1,55 @@
 ---
-title: "Gewusst wie: Verwenden von &quot;Bearbeiten und Fortfahren&quot; (C#) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "Bearbeiten und Fortfahren [C#], Informationen über Bearbeiten und Fortfahren"
+title: 'Vorgehensweise: Verwenden von bearbeiten und Fortfahren (c#) | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords: Edit and Continue [C#], about Edit and Continue
 ms.assetid: 40e136d8-a08c-43bd-b313-fb821c55eb3c
-caps.latest.revision: 19
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ec66bd21eb119c348391f191f23570e66119122f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Gewusst wie: Verwenden von &quot;Bearbeiten und Fortfahren&quot; (C#)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Mit Bearbeiten und Fortfahren für C\# können Sie beim Debuggen Codeänderungen im Unterbrechungsmodus vornehmen.  Die Änderungen können übernommen werden, ohne die Debugsitzung anhalten und neu starten zu müssen.  
+# <a name="how-to-use-edit-and-continue-c"></a>Gewusst wie: Verwenden von "Bearbeiten und Fortfahren" (C#)
+Mit Bearbeiten und Fortfahren für C# können Sie beim Debuggen Codeänderungen im Unterbrechungsmodus vornehmen. Die Änderungen können übernommen werden, ohne die Debugsitzung anhalten und neu starten zu müssen.  
   
- Bearbeiten und Fortfahren wird automatisch aufgerufen, wenn Sie im Unterbrechungsmodus Änderungen vornehmen und anschließend einen Ausführungsbefehl des Debuggers wählen, wie beispielsweise **Weiter**, **Schritt** oder **Nächste Anweisung festlegen**, oder wenn Sie im Debuggerfenster eine Funktion auswerten.  
+ Bearbeiten und Fortfahren wird automatisch aufgerufen, wenn Sie im Unterbrechungsmodus Änderungen vornehmen, und wählen Sie dann eine Debugger die Ausführung Befehl, wie z. B. **Fortfahren**, **Schritt**, oder **nächste Anweisung festlegen**, oder eine Funktion in einem Debuggerfenster auswerten.  
   
 > [!NOTE]
->  Die Funktion "Bearbeiten und Fortfahren" wird beim Debuggen von Compact Framework, optimiertem Code, gemischtem systemeigenem\/verwaltetem Code und SQL Server Common Language Runtime \(CLR\)\-Integrationscode nicht unterstützt.  Bei dem Versuch, in einem solchen Szenario Codeänderungen vorzunehmen, wird im Debugger ein Dialogfeld mit dem Hinweis angezeigt, dass Bearbeiten und Fortfahren nicht unterstützt wird.  
+>  Bearbeiten und Fortfahren wird nicht unterstützt, beim Debuggen von Code, gemischtem systemeigenem/verwaltetem Code oder SQL Server common Language Runtime (CLR) Integration Code optimieren. Informationen zu anderen nicht unterstützten Szenarien finden Sie unter [unterstützte Codeänderungen (C#- und Visual Basic)](../debugger/supported-code-changes-csharp.md). Wenn Sie versuchen, Anwenden von Änderungen am Code in einem solchen Szenario, zeigt der Debugger ein Dialogfeld mit dem Hinweis angezeigt, die bearbeiten und Fortfahren nicht unterstützt.  
   
-### So rufen Sie Bearbeiten und Fortfahren automatisch auf  
+### <a name="to-invoke-edit-and-continue-automatically"></a>So rufen Sie Bearbeiten und Fortfahren automatisch auf  
   
 1.  Nehmen Sie im Unterbrechungsmodus eine Änderung am Quellcode vor.  
   
-2.  Klicken Sie im Menü **Debuggen** auf **Weiter**, **Schritt** oder **Nächste Anweisung festlegen**, oder werten Sie eine Funktion in einem Debuggerfenster aus.  
+2.  Aus der **Debuggen** Menü klicken Sie auf **Fortfahren**, **Schritt**, oder **nächste Anweisung festlegen** oder Werten Sie eine Funktion in einem Debuggerfenster.  
   
-     Der neue Code wird kompiliert, und das Debuggen wird mit neuem Code fortgesetzt.  Einige Änderungen werden von Bearbeiten und Fortfahren nicht unterstützt.  Weitere Informationen finden Sie unter [Unterstützte Codeänderungen \(C\#\)](../debugger/supported-code-changes-csharp.md).  
+     Der neue Code wird kompiliert, und das Debuggen wird mit neuem Code fortgesetzt. Einige Änderungen werden von Bearbeiten und Fortfahren nicht unterstützt. Weitere Informationen finden Sie unter [unterstützte Codeänderungen (C#- und Visual Basic)](../debugger/supported-code-changes-csharp.md).  
   
-### So aktivieren bzw. deaktivieren Sie "Bearbeiten und Fortfahren"  
+### <a name="to-enabledisable-edit-and-continue"></a>So aktivieren bzw. deaktivieren Sie "Bearbeiten und Fortfahren"  
   
 1.  Klicken Sie im Menü **Extras** auf **Optionen**.  
   
-2.  Erweitern Sie im Dialogfeld **Optionen** den Knoten **Debuggen**, und klicken Sie auf **Bearbeiten und Fortfahren**.  
+2.  In der **Optionen** Dialogfeld erweitern Sie die **Debuggen** Knoten, und wählen **bearbeiten und Fortfahren**.  
   
-3.  Aktivieren bzw. deaktivieren Sie im Dialogfeld **Optionen** auf der Seite **Bearbeiten und Fortfahren** das Kontrollkästchen **Bearbeiten und Fortfahren aktivieren**.  
+3.  In der **Optionen** Dialogfeld **bearbeiten und Fortfahren** aktivieren oder Deaktivieren der **bearbeiten und Fortfahren aktivieren** Kontrollkästchen.  
   
      Die Einstellungen werden beim Neustarten der Debugsitzung aktiv.  
   
-## Siehe auch  
- [Bearbeiten und Fortfahren \(Visual C\#\)](../debugger/edit-and-continue-visual-csharp.md)   
- [Unterstützte Codeänderungen \(C\#\)](../debugger/supported-code-changes-csharp.md)   
- [Bearbeiten und Fortfahren: Fehlermeldungen und Warnungen \(C\#\)](../misc/edit-and-continue-errors-and-warnings-csharp.md)
+## <a name="see-also"></a>Siehe auch  
+ [Bearbeiten Sie und fortfahren Sie (Visual c#)](../debugger/edit-and-continue-visual-csharp.md)   
+ [Unterstützte Codeänderungen (C#- und Visual Basic)](../debugger/supported-code-changes-csharp.md)   

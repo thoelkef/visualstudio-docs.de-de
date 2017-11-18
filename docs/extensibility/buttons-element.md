@@ -1,28 +1,30 @@
 ---
-title: "Schaltfl&#228;chen-Element | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Schaltflächen-Element (VSCT-XML-Schema)"
-  - "VSCT XML-Schemaelemente, Schaltflächen"
+title: "Schaltflächen Element | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Buttons element (VSCT XML schema)
+- VSCT XML schema elements, Buttons
 ms.assetid: 9f2cf94d-dec5-4776-a836-9a89c75f0c87
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 8b2933f82c4088735f4203d947bad66c71aeb3e1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# Schaltfl&#228;chen-Element
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Gruppen [Schaltfläche](../extensibility/button-element.md) \-Elemente, die einzelnen Befehle darstellen.  
+# <a name="buttons-element"></a>Schaltflächen-Element
+Gruppen [Schaltfläche](../extensibility/button-element.md) -Elemente, die einzelnen Befehle darstellen.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 <Buttons>  
@@ -31,34 +33,42 @@ Gruppen [Schaltfläche](../extensibility/button-element.md) \-Elemente, die einz
 </Buttons>  
 ```  
   
-## Attribute und Elemente  
+## <a name="attributes-and-elements"></a>Attribute und Elemente  
  In den folgenden Abschnitten werden Attribute sowie untergeordnete und übergeordnete Elemente beschrieben.  
   
-### Attribute  
+### <a name="attributes"></a>Attribute  
   
 |Attribut|Beschreibung|  
-|--------------|------------------|  
-|Bedingung|Optional. Siehe [Bedingten Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|---------------|-----------------|  
+|Bedingung|Dies ist optional. Finden Sie unter [bedingte Attribute](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
-### Untergeordnete Elemente  
-  
-|Element|Beschreibung|  
-|-------------|------------------|  
-|[Buttons Element](../extensibility/buttons-element.md)|Gruppen\-Button\-Elemente.|  
-|[Button\-Element](../extensibility/button-element.md)|Definiert einen Befehl, mit dem der Benutzer interagieren kann.|  
-  
-### Übergeordnete Elemente  
+### <a name="child-elements"></a>Untergeordnete Elemente  
   
 |Element|Beschreibung|  
-|-------------|------------------|  
-|[Commands\-Element](../extensibility/commands-element.md)|Stellt die Auflistung von Befehlen auf der Symbolleiste des VSPackage.|  
+|-------------|-----------------|  
+|[Buttons-Element](../extensibility/buttons-element.md)|Gruppiert die Elemente der Schaltfläche.|  
+|[Button-Element](../extensibility/button-element.md)|Definiert einen Befehl, dem der Benutzer interagieren kann.|  
   
-## Beispiel  
+### <a name="parent-elements"></a>Übergeordnete Elemente  
+  
+|Element|Beschreibung|  
+|-------------|-----------------|  
+|[Commands-Element](../extensibility/commands-element.md)|Stellt die Auflistung von Befehlen auf der Symbolleiste des VSPackage.|  
+  
+## <a name="example"></a>Beispiel  
   
 ```  
-<Buttons> <Button guid="guidMenuAndCommandsCmdSet" id="cmdidMyCommand"     priority="0x100" type="Button"> <Parent guid="guidMenuAndCommandsCmdSet" id="MyMenuGroup"/> <Icon guid="guidGenericCmdBmp" id="bmpArrow"/> <Strings> <ButtonText>C# Command Sample</ButtonText> </Strings> </Button> </Buttons>  
+<Buttons>  
+  <Button guid="guidMenuAndCommandsCmdSet" id="cmdidMyCommand"     priority="0x100" type="Button">  
+    <Parent guid="guidMenuAndCommandsCmdSet" id="MyMenuGroup"/>  
+    <Icon guid="guidGenericCmdBmp" id="bmpArrow"/>  
+    <Strings>  
+      <ButtonText>C# Command Sample</ButtonText>  
+    </Strings>  
+  </Button>  
+</Buttons>  
 ```  
   
-## Siehe auch  
- [Wie VSPackages Benutzeroberflächenelemente hinzufügen](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+## <a name="see-also"></a>Siehe auch  
+ [Wie VSPackages Elemente der Benutzeroberfläche hinzufügen](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Befehle, Menüs und Symbolleisten](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -1,27 +1,30 @@
 ---
-title: "ISimpleConnectionPoint::Advise | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: ISimpleConnectionPoint::Advise | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: ISimpleConnectionPoint.Advise
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "ISimpleConnectionPoint::Advise"
+helpviewer_keywords: ISimpleConnectionPoint::Advise
 ms.assetid: 59ded60d-b938-4110-aca3-e69ba234ca9a
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7ec43d135401386a3f54f2c047040897f038ba19
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# ISimpleConnectionPoint::Advise
-Richtet eine Verbindung zwischen dem einfachen Verbindungspunktobjekt und der Senke des Clients ein.  
+# <a name="isimpleconnectionpointadvise"></a>ISimpleConnectionPoint::Advise
+Herstellen einer Verbindung zwischen der einfachen Verbindungspunktobjekt und der Client-Senke.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT Advise(  
@@ -30,23 +33,23 @@ HRESULT Advise(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `pdisp`  
- \[in\] Zeiger auf die `IDispatch`\-Schnittstelle der Advise\-Senke des Clients.  Die Senke des Clients empfängt gehende Gespräche vom einfachen Verbindungspunkt.  
+ [in] Zeiger auf die `IDispatch` Schnittstelle auf dem Client die advise-Senke. Die Senke des Clients empfängt die ausgehende Aufrufe vom einfachen Verbindungspunkt.  
   
  `pdwCookie`  
- \[out\] Zeiger auf einen zurückgegebenen Token, das diese Verbindung eindeutig identifiziert.  Der Aufrufer verwendet dieses Token später, um die Verbindung zu löschen, indem er es an die `ISimpleConnectionPoint::Unadvise`\-Methode übergibt.  Wenn die Verbindung nicht erfolgreich hergestellt wurde, ist dieser Wert Null.  
+ [out] Ein Zeiger auf ein zurückgegebene Token, das diese Verbindung eindeutig identifiziert. Der Aufrufer verwendet dieses Token später löschen die Verbindung durch Übergabe an die `ISimpleConnectionPoint::Unadvise` Methode. Wenn die Verbindung nicht erfolgreich hergestellt wurde, ist dieser Wert 0 (null).  
   
-## Rückgabewert  
- Die Methode gibt ein `HRESULT` zurück.  Zu den möglichen Werten zählen, aber nicht zu, die in der folgenden Tabelle beschränkt.  
+## <a name="return-value"></a>Rückgabewert  
+ Die Methode gibt ein `HRESULT` zurück. Mögliches Werte (aber nicht die Einzigen) sind die in der folgenden Tabelle.  
   
-|Wert|Description|  
-|----------|-----------------|  
+|Wert|Beschreibung|  
+|-----------|-----------------|  
 |`S_OK`|Die Methode war erfolgreich.|  
   
-## Hinweise  
- Diese Methode wird eine Verbindung zwischen dem einfachen Verbindungspunktobjekt und der Senke des Clients ein.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode wird eine Verbindung zwischen der einfachen Verbindungspunktobjekt und der Client-Senke.  
   
-## Siehe auch  
- [ISimpleConnectionPoint\-Schnittstelle](../../winscript/reference/isimpleconnectionpoint-interface.md)   
+## <a name="see-also"></a>Siehe auch  
+ [ISimpleConnectionPoint-Schnittstelle](../../winscript/reference/isimpleconnectionpoint-interface.md)   
  [ISimpleConnectionPoint::Unadvise](../../winscript/reference/isimpleconnectionpoint-unadvise.md)

@@ -1,52 +1,52 @@
 ---
-title: "IDebugDefaultPort2::GetServer | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDefaultPort2::GetServer"
-helpviewer_keywords: 
-  - "IDebugDefaultPort2::GetServer"
+title: IDebugDefaultPort2::GetServer | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugDefaultPort2::GetServer
+helpviewer_keywords: IDebugDefaultPort2::GetServer
 ms.assetid: cacb4b74-0f39-471c-af38-54b73f5b2868
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 8c1d5839db305c1395edc24a95de706cfc2072d8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugDefaultPort2::GetServer
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Diese Methode ruft eine Schnittstelle zum Server, die diesen Port aktiviert ist.  
+# <a name="idebugdefaultport2getserver"></a>IDebugDefaultPort2::GetServer
+Diese Methode ruft eine Schnittstelle mit dem Server, dem diesem Port ist.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT GetServer(  
-   IDebugCoreServer3** ppServer  
+HRESULT GetServer(  
+   IDebugCoreServer3** ppServer  
 );  
 ```  
   
-```c#  
-int GetServer(  
-   out IDebugCoreServer3 ppServer  
+```csharp  
+int GetServer(  
+   out IDebugCoreServer3 ppServer  
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `ppServer`  
- \[out\]  Gibt ein Objekt zurück, das die [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)\-Schnittstelle implementiert.  
+ [out] Gibt ein Objekt, durch die [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) Schnittstelle.  
   
-## Rückgabewert  
- Bei Erfolg gibt `S_OK`zurück. andernfalls gibt einen Fehlercode zurück.  
+## <a name="return-value"></a>Rückgabewert  
+ Im Erfolgsfall gibt `S_OK`ist, andernfalls wird ein Fehlercode zurückgegeben.  
   
-## Hinweise  
- [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) wird von Visual Studio implementiert und den Server darstellt, dass der Port an befindet.  
+## <a name="remarks"></a>Hinweise  
+ Die [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) wird von Visual Studio implementiert und steht für den Server, der der Port auf befindet.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)   
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

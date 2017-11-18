@@ -1,27 +1,30 @@
 ---
-title: "IActiveScriptStringCompare::StrComp | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: IActiveScriptStringCompare::StrComp | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptStringCompare.StrComp
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "StrComp-Methode, IActiveScriptStringCompare-Schnittstelle"
+helpviewer_keywords: StrComp method, IActiveScriptStringCompare interface
 ms.assetid: 124d1281-8037-4766-a2a1-61244ac1f114
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1b92b29f4e40f5e8de567337957aabbcb3c057fd
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptStringCompare::StrComp
-Definiert die Zeichenfolgenvergleichsmethode für das Skriptmodul.  
+# <a name="iactivescriptstringcomparestrcomp"></a>IActiveScriptStringCompare::StrComp
+Definiert die Methode zum Zeichenfolgenvergleich für das Skriptmodul.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
 ```  
 HRESULT StrComp(  
@@ -34,7 +37,7 @@ HRESULT StrComp(
 );  
 ```  
   
-#### Parameter  
+#### <a name="parameters"></a>Parameter  
  `bszStr1`  
  Die erste Zeichenfolge.  
   
@@ -42,22 +45,22 @@ HRESULT StrComp(
  Die zweite Zeichenfolge.  
   
  `iRet`  
- Das Ergebnis des Vergleichs.  0, wenn  `bszStr1` und `bszStr2` identisch sind; \-1, wenn `bszStr1` \< `bszStr2`; 1, wenn `bszStr1` \> `bszStr2`.  
+ Das Ergebnis des Vergleichs. 0, wenn `bszStr1` und `bszStr2`identisch sind; 1, wenn `bszStr1`  <  `bszStr2`; 1, wenn `bszStr1`  >  `bszStr2`.  
   
-## Rückgabewert  
- Gibt eine der folgenden Werte:  
+## <a name="return-value"></a>Rückgabewert  
+ Gibt einen der folgenden Werte zurück:  
   
 |Rückgabewert|Bedeutung|  
-|------------------|---------------|  
+|------------------|-------------|  
 |`S_OK`|Erfolgreich.|  
 |`E_INVALIDARG`|Ein Argument ist ungültig.|  
-|`E_UNEXPECTED`|Der Aufruf wurde nicht erwartet \(beispielsweise, ist das Skriptmodul noch nicht geladen wurde oder initialisiert wurden\).|  
+|`E_UNEXPECTED`|Der Aufruf wurde nicht erwartet (z. B. das Skriptmodul wurde noch kein geladen oder initialisiert).|  
   
-## Hinweise  
- Diese Methode wird jedes Mal aufgerufen, dass ein Zeichenfolgenvergleich ausgeführt wird.  
+## <a name="remarks"></a>Hinweise  
+ Diese Methode wird jedes Mal aufgerufen, die ein Zeichenfolgenvergleich ausgeführt wird.  
   
-## Beispiel  
- Im folgenden Beispiel wird gezeigt, wie die Zeichenfolgenvergleichsfunktion überladen werden.  Überladen ist zulässig, wenn Sie [IActiveScriptProperty::SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md) verwenden, um SCRIPTPROP\_STRINGCOMPAREINSTANCE festzulegen.  
+## <a name="example"></a>Beispiel  
+ Im folgende Beispiel wird gezeigt, wie die Funktion zum Zeichenfolgenvergleich überladen wird. Überladen ist zulässig, bei der Verwendung [IActiveScriptProperty::SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md) SCRIPTPROP_STRINGCOMPAREINSTANCE festlegen.  
   
 ```cpp#  
 cpp_quote("// {58562769-ED52-42f7-8403-4963514E1F11}")  
@@ -94,5 +97,5 @@ interface IActiveScriptStringCompare : IUnknown
 }  
 ```  
   
-## Siehe auch  
- [IActiveScriptStringCompare\-Schnittstelle](../../winscript/reference/iactivescriptstringcompare-interface.md)
+## <a name="see-also"></a>Siehe auch  
+ [IActiveScriptStringCompare-Schnittstelle](../../winscript/reference/iactivescriptstringcompare-interface.md)

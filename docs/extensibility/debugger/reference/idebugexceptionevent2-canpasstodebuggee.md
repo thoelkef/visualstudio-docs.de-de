@@ -1,46 +1,46 @@
 ---
-title: "IDebugExceptionEvent2::CanPassToDebuggee | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugExceptionEvent2::CanPassToDebuggee"
-helpviewer_keywords: 
-  - "IDebugExceptionEvent2::CanPassToDebuggee"
+title: IDebugExceptionEvent2::CanPassToDebuggee | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugExceptionEvent2::CanPassToDebuggee
+helpviewer_keywords: IDebugExceptionEvent2::CanPassToDebuggee
 ms.assetid: ae4bbe0a-fbe1-49be-a310-ea64279a434b
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ef10fd3ca7f41c2afd1c827fb71ca2178782e3d4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugExceptionEvent2::CanPassToDebuggee
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-Bestimmt, ob das Debugmodul \(DE\) die Übergabe dieser Ausnahme in das Programm, das gedebuggt wird unterstützt, wenn die Ausführung fortgesetzt wird.  
+# <a name="idebugexceptionevent2canpasstodebuggee"></a>IDebugExceptionEvent2::CanPassToDebuggee
+Legt fest, ob die Debugging-Modul (DE) die Möglichkeit, diese Ausnahme an die Anwendung gedebuggt wird unterstützt, wenn die Ausführung fortsetzt übergeben.  
   
-## Syntax  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT CanPassToDebuggee(  
-   void  
+```cpp  
+HRESULT CanPassToDebuggee(  
+   void  
 );  
 ```  
   
-```c#  
-int CanPassToDebuggee();  
+```csharp  
+int CanPassToDebuggee();  
 ```  
   
-## Rückgabewert  
- Gibt entweder `S_OK` \(die Ausnahme kann an das Programm übergeben werden\) oder `S_FALSE` zurück \(die Ausnahme kann keine Verbindung übergeben werden.\)  
+## <a name="return-value"></a>Rückgabewert  
+ Gibt entweder `S_OK` (die Ausnahme kann an das Programm übergeben werden) oder `S_FALSE` (die Ausnahme kann nicht auf übergeben werden).  
   
-## Hinweise  
- DE muss eine Standardaktion für die Übergabe zu debuggende Komponente verfügen.  Die IDE das [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)\-Ereignis empfangen und ruft die [Weiter](../../../extensibility/debugger/reference/idebugprocess3-continue.md)\-Methode aufrufen, ohne die `CanPassToDebuggee`\-Methode aufzurufen.  Deshalb sollte DE einem Standardargument oder für die Ausnahme an.  
+## <a name="remarks"></a>Hinweise  
+ Die DE muss es sich um eine Standardaktion für die Übergabe an die zu debuggende Komponente verfügen. Die IDE möglicherweise die [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md) Ereignis, und rufen die [Fortfahren](../../../extensibility/debugger/reference/idebugprocess3-continue.md) Methode ohne Aufruf der `CanPassToDebuggee` Methode. Aus diesem Grund müssen die DE diesbezügliche Standardeinstellung für die auf die Ausnahme übergeben, oder nicht.  
   
-## Siehe auch  
+## <a name="see-also"></a>Siehe auch  
  [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)   
- [Weiter](../../../extensibility/debugger/reference/idebugprocess3-continue.md)
+ [Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)
